@@ -1,20 +1,22 @@
 {
-  "rtmp_cdn" : {
-    "0": "DEFAULT",
-    "1": "UCLOUD",
-    "2": "QINIU",
-    "3": "QCLOUD",
-    "4": "WANSU"
-  },
-  "stream_type" : {
-    "0":"chunk",
-    "1":"rtmp",
-    "2":"webrtc",
-    "3":"blab"
-  },
-  "defaultType" : {
-    "rtmp_cdn" : 0,
-    "stream_type" : 1
-  },
-  "providerWeight" : [0,0,1,0,9]
-}
+	"rtmp_cdn" : [{
+		"name" : "DEFAULT",
+		"weight": 0
+	  },{
+		"name" : "UCLOUD",
+		"weight": 0
+	  },{
+		"name" : "QINIU",
+		"weight": 1
+	  },{
+		"name" : "QCLOUD",
+		"weight": 0
+	  },{
+		"name" : "WANSU",
+		"weight": 9
+	  }],
+	"stream_type" : ["chunk","rtmp","webrtc","blab"],
+	"default_type" : {
+		"rtmp_cdn" : 0,
+		"stream_type" : 1
+	}}
