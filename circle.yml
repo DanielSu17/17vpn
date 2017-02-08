@@ -34,5 +34,5 @@ deployment:
             -e ENVID=prod \
             -e PROJID=17app \
             -e COMMITID="$(git rev-parse --short HEAD)" \
-            -e ENSEMBLE=$PROD_ENSEMBLE \
+            -e ENSEMBLE=$PUSHER_ENSEMBLE_PROD \
            $PUSHER_IMAGE
