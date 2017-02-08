@@ -16,6 +16,12 @@ test:
   override:
     # YAML & JSON sytax verify
     - ./circle/syntax_checker.py
+
+notify:
+  # Notify phabricator about result
+  webhooks:
+    - url: https://media17.phacility.com/harbormaster/hook/circleci/
+
 deployment:
   master:
     branch: master
