@@ -1,0 +1,36 @@
+## circle.yml configs circle CI
+machine:
+  python:
+    version: 2.7.5
+
+dependencies:
+  override:
+    - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+
+    # Install python dependencies
+    - sudo pip install -r ./circle/requirements.txt
+
+test:
+  override:
+    # YAML & JSON sytax verify
+    - ./circle/syntax_checker.py
+deployment:
+  master:
+    branch: feature/automate-config-service-flow # FIXME: testing
+    # branch: master
+    commands:
+      # Push configs to Staging etcd
+      - >
+         docker run --rm \
+            -e ENVID=sta \
+            -e PROJID=17app \
+            -e COMMITID="$(git rev-parse --short HEAD)" \
+            -e ENSEMBLE=$PUSHER_ENSEMBLE_STA \
+           $PUSHER_IMAGE
+      # - >
+      #   docker run --rm \
+      #       -e ENVID=prod \
+      #       -e PROJID=17app \
+      #       -e COMMITID="$(git rev-parse --short HEAD)" \
+      #       -e ENSEMBLE=$PROD_ENSEMBLE \
+      #      $PUSHER_IMAGE
