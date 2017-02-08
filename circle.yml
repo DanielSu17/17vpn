@@ -18,8 +18,7 @@ test:
     - ./circle/syntax_checker.py
 deployment:
   master:
-    branch: feature/automate-config-service-flow # FIXME: testing
-    # branch: master
+    branch: master
     commands:
       # Push configs to Staging etcd
       - >
@@ -29,10 +28,11 @@ deployment:
             -e COMMITID="$(git rev-parse --short HEAD)" \
             -e ENSEMBLE=$PUSHER_ENSEMBLE_STA \
            $PUSHER_IMAGE
-      # - >
-      #   docker run --rm \
-      #       -e ENVID=prod \
-      #       -e PROJID=17app \
-      #       -e COMMITID="$(git rev-parse --short HEAD)" \
-      #       -e ENSEMBLE=$PROD_ENSEMBLE \
-      #      $PUSHER_IMAGE
+      # Push configs to Production etcd
+      - >
+        docker run --rm \
+            -e ENVID=prod \
+            -e PROJID=17app \
+            -e COMMITID="$(git rev-parse --short HEAD)" \
+            -e ENSEMBLE=$PROD_ENSEMBLE \
+           $PUSHER_IMAGE
