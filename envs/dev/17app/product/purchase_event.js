@@ -1,0 +1,20 @@
+{
+    "TW": {
+        "startTime": 1486656000,
+        "endTime": 1486915200,
+        "countdownSec": 600,
+        "bgPic": "",
+        "topLeftPic": "",
+        "topRightPic": "",
+        "markPic": "",
+        "message": "wtf wtf wtf XXX wtf wtf wtf i am so long so definitely exceed two lines",
+        "bonus": {
+            "media17_points_100": 5,
+            "media17_points_500": 30,
+            "media17_points_1100": 100,
+            "media17_points_2400": 280,
+            "media17_points_6500": 1000,
+            "media17_points_14000": 2500
+        }
+    }
+}
