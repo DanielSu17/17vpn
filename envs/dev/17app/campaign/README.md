@@ -16,7 +16,7 @@
 ```
 
 * showTimer : 0 is off, 1 is on
-* pageSize : 1 is half, 2 is full
+* pageSize : 1 is half, 2 is full, 3 is button
 * hStartTime : "26 Jan 17 00:00 +0800", human readable time, please using two digit format for hour, minute and date
 
 
