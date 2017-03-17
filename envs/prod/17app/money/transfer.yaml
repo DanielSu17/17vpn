@@ -2,16 +2,20 @@
 #   - Currency_POINT:  1
 #   - Currency_CHIP :  2
 - from: 1
+  fromFeeCoefficient: 0
+  fromFeeConstant: 0
   to: 2
+  toFeeCoefficient: 0
+  toFeeConstant: 0
   exchageRate: 100
-  fromFeeRatio: 0
-  toFeeRatio: 0
   allowToSelf: true
   allowToOthers: false
 - from: 2
+  fromFeeCoefficient: 0.05
+  fromFeeConstant: 0
   to: 2
+  toFeeCoefficient: 0
+  toFeeConstant: 0
   exchageRate: 1
-  fromFeeRatio: 0.05
-  toFeeRatio: 0
   allowToSelf: false
   allowToOthers: true
