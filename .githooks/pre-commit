@@ -1,0 +1,201 @@
+#!/usr/bin/env python
+# coding:utf-8
+import os
+import re
+import subprocess
+import sys
+import requests
+import json
+import yaml
+
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
+modified = re.compile('^[MA]\s+envs\/(?P<env>(prod|sta))\/(?P<filename>.*)$')
+access_token = 'BAf9qBQPVG.yA<b(q2xBF5gLhc5cGp5QF3JMu0'
+api = {'prod': 'https://api-dsa.17app.co', 'sta': 'https://sta-api.17app.co'}
+result, warring, syntax_error_count = 0, 0, 0
+
+
+def query_yes_no(question, default="yes"):
+
+    valid = {"yes": True, "y": True, "ye": True,
+             "no": False, "n": False}
+    if default is None:
+        prompt = " [y/n] "
+    elif default == "yes":
+        prompt = " [Y/n] "
+    elif default == "no":
+        prompt = " [y/N] "
+    else:
+        raise ValueError("invalid default answer: '%s'" % default)
+
+    while True:
+        sys.stdout.write(question + prompt)
+        sys.stdin = open('/dev/tty')
+        choice = raw_input().strip().lower()
+        if default is not None and choice == '':
+            return valid[default]
+        elif choice in valid:
+            return valid[choice]
+        else:
+            sys.stdout.write("Please respond with 'yes' or 'no' "
+                             "(or 'y' or 'n').\n")
+
+
+def highlight(text, status):
+    attrs = []
+    colors = {
+        'green': '32',
+        'red': '31',
+        'yellow': '33',
+        'dark_gray': '90',
+        'light_gray': '39'
+    }
+    if not sys.stdout.isatty():
+        return text
+    attrs.append(colors.get(status, 'red'))
+    attrs.append('1')
+    return '\x1b[%sm%s\x1b[0m' % (';'.join(attrs), text)
+
+
+def system(*args, **kwargs):
+    kwargs.setdefault('stdout', subprocess.PIPE)
+    proc = subprocess.Popen(args, **kwargs)
+    out, err = proc.communicate()
+    return out, err
+
+
+def main():
+    global result
+    # Stash any changes to the working tree that are not going to be committed
+    subprocess.call(['git', 'stash', '-u', '--keep-index'],
+                    stdout=subprocess.PIPE)
+
+    tmp_files = {}
+    out, err = system('git', 'status', '--porcelain')
+    print(highlight("\n>>>>>>>> [{}]:".format(
+        "Local Configs Syntax Checking"), 'green'))
+
+    for line in out.splitlines():
+        match = modified.match(str(line))
+        if match:
+            local_syntax_checker(
+                "envs/{}/{}".format(match.group('env'), match.group('filename')))
+            tmp_files.setdefault(match.group('env'), [])
+            tmp_files[match.group('env')].append(match.group('filename'))
+
+    if syntax_error_count == 0:
+        print(highlight("\n>>>>>>>> [{}]:".format(
+            "Remote Configs Checking"), 'green'))
+        for env, fs in tmp_files.iteritems():
+            if len(fs) >= 1:
+                print(highlight("# <<{}>> ".format(env.upper()), 'green'))
+            remote_check_configs(env, fs)
+        skip_or_abort()
+    else:
+        result = 1
+
+    # Unstash changes to the working tree that we had stashed
+    subprocess.call(['git', 'reset', '--hard'], stdout=subprocess.PIPE,
+                    stderr=subprocess.PIPE)
+    subprocess.call(['git', 'stash', 'pop', '--quiet', '--index'],
+                    stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    sys.exit(result)
+
+
+def local_syntax_checker(filepath):
+    global syntax_error_count
+    with open(filepath, 'r') as stream:
+        try:
+            if filepath.endswith('.yaml') or filepath.endswith('yml'):
+                yaml.load(stream)
+            if filepath.endswith('.json'):
+                json.load(stream)
+            print "  {} ==> {}".format(filepath, highlight('succeed', 'green'))
+        except yaml.YAMLError as exc:
+            print "  {} ==> failure ({})".format(filepath, highlight(exc, 'red'))
+            syntax_error_count += 1
+        except ValueError as exc:
+            print "  {} ==> failure ({})".format(filepath, highlight(exc, 'red'))
+            syntax_error_count += 1
+        finally:
+            stream.close()
+
+
+def remote_check_configs(env, files_list):
+    headers = {'accesstoken': access_token}
+    metadata = {}
+    files = {}
+    for idx, file in enumerate(files_list):
+        key = "file%s" % str(idx + 1)
+        files[key] = open("envs/%s/%s" % (env, file))
+        metadata[key] = {"path": file}
+
+    rp_metadata = {"metadata": json.dumps(metadata)}
+    response = requests.request("POST",
+                                "%s/api/v1/config/check" % api[env],
+                                headers=headers,
+                                data=rp_metadata,
+                                files=files)
+    jsonObject = json.loads(response.text)
+    print(display_response(env, jsonObject))
+    set_result(jsonObject)
+
+
+def skip_or_abort():
+    global result
+    if (result != 1
+        and warring == 1
+            and (query_yes_no("\nHas configs Warning do you want continue?") == False)):
+        result = 1
+
+
+def set_result(massages):
+    global warring
+    global result
+    if len(massages['error']) > 0:
+        result = 1
+    if len(massages['warning']) > 0:
+        warring = 1
+
+
+def display_response(env, response):
+    s = ""
+    for status in response:
+        for filepath in response[status]:
+            s += highlight("  [{}]\n".format(status.upper()),
+                           status_color(status))
+            s += "    <envs/{}/{}>:\n".format(env, filepath)
+            s += pretty_message(filepath, response[status][filepath])
+    return s
+
+
+def status_color(status):
+    if status == 'error':
+        return 'red'
+    else:
+        return 'yellow'
+
+
+def pretty_message(status, messages):
+    s = ""
+    for idx, text in enumerate(messages):
+        first_line = 1
+        for line in text.splitlines():
+            str_chr = "  "
+            if first_line == 1:
+                str_chr, first_line = "- ", 0
+            s += highlight("      {}{}\n".format(str_chr,
+                                                 str(line)), line_color(idx))
+    return s
+
+
+def line_color(idx):
+    if idx % 2 == 0:
+        return 'light_gray'
+    else:
+        return 'dark_gray'
+
+if __name__ == '__main__':
+    main()

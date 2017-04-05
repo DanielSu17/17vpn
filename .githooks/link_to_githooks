@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+# coding:utf-8
+import os
+import shutil
+import stat
+from pathlib2 import Path
+
+src_filepath = '.githooks/pre-commit'
+dst_filepath = '.git/hooks/pre-commit'
+old_filepath = '.git/hooks/pre-commit.old'
+
+def main():
+    old_file = Path(old_filepath)
+    dst_file = Path(dst_filepath)
+    if (old_file.is_file() == False) and (dst_file.is_file() == True):
+        shutil.move(dst_filepath, old_filepath)
+    shutil.copyfile(src_filepath, dst_filepath)
+    os.chmod(dst_filepath, 0755)
+
+if __name__ == '__main__':
+    main()
