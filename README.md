@@ -8,3 +8,5 @@ repository of configure files for 17 apps
 ```
 make install
 ```
+
+Current `pre-commit` is not compatible with Python3, so make sure Python2 is used. And there will be three Python packages installed by this command. Make a virtual environment before installing if you do not want them be installed in your global environment.
