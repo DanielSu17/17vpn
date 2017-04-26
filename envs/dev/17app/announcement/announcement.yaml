@@ -2,13 +2,23 @@
 # regionPriority: 0 is lowest
 # coolDownHour could be float
 
-- id: hello_world
+- id: TW_0416
+  regionMode: exclude
+  regions: [ID]
+  regionPriority: 0
+  image: ig_event_popup_0416.jpg
+  start: 16 Apr 17 00:00 +0800
+  end: 01 May 17 00:00 +0800
+  url: http://17.media/event/easterneurope
+  displaySecond: 5
+  coolDownHour: 0.5
+- id: ID_0416
   regionMode: include
-  regions: [TW,ID]
+  regions: [ID]
   regionPriority: 0
   image: ia_hello_world_0417.png
-  start: 01 Apr 17 00:00 +0800
+  start: 16 Apr 17 00:00 +0800
   end: 01 May 17 00:00 +0800
-  url: http://17.media
+  url: http://17.media/event/redcarpet
   displaySecond: 5
-  coolDownHour: 1
+  coolDownHour: 0.5
