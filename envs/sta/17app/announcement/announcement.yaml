@@ -2,33 +2,33 @@
 # regionPriority: 0 is lowest
 # coolDownHour could be float
 
-- id: TW_0416
+- id: TW_0501
+  regionMode: exclude
+  regions: [ID]
+  regionPriority: 0
+  image: ig_event_popup_0501.png
+  start: 01 May 17 00:00 +0800
+  end: 05 May 17 00:00 +0800
+  url: http://17.media/event/redcarpet
+  displaySecond: 5
+  coolDownHour: 12
+- id: TW_0427
   regionMode: exclude
   regions: [ID]
   regionPriority: 0
   image: ig_event_popup_0416.jpg
-  start: 27 Apr 17 11:30 +0800
+  start: 27 Apr 17 00:00 +0800
   end: 01 May 17 00:00 +0800
   url: http://17.media/event/easterneurope
-  displaySecond: 10
-  coolDownHour: 0.05
-- id: ID_0427
-  regionMode: exclude
-  regions: [ID]
-  regionPriority: 0
-  image: event_Indo_cruise_ship_enter_0426.png
-  start: 16 Apr 17 00:00 +0700
-  end: 01 May 17 00:00 +0700
-  url: https://17.media/event/cruise
-  displaySecond: 10
-  coolDownHour: 0.05
-- id: ID_0416
+  displaySecond: 5
+  coolDownHour: 12
+- id: ID_0501
   regionMode: include
   regions: [ID]
   regionPriority: 0
   image: event_Indo_cruise_ship_enter_0426.png
-  start: 16 Apr 17 00:00 +0700
-  end: 01 May 17 00:00 +0700
+  start: 01 May 17 00:00 +0700
+  end: 15 May 17 00:00 +0700
   url: https://17.media/event/cruise
   displaySecond: 10
   coolDownHour: 0.05
