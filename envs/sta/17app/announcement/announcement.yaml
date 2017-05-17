@@ -2,6 +2,16 @@
 # regionPriority: 0 is lowest
 # coolDownHour could be float
 
+- id: TW_0518
+  regionMode: exclude
+  regions: [ID]
+  regionPriority: 0
+  image: beautiful_skin_ad.png
+  start: 18 May 17 00:00 +0800
+  end: 28 May 17 00:00 +0800
+  url: http://17.media/event/beautifulskin
+  displaySecond: 5
+  coolDownHour: 12
 - id: TW_0515
   regionMode: exclude
   regions: [ID]
@@ -12,6 +22,16 @@
   url: http://17.media/event/relax2
   displaySecond: 5
   coolDownHour: 12
+- id: ID_0522
+  regionMode: include
+  regions: [ID]
+  regionPriority: 0
+  image: guardians_ad.png
+  start: 22 May 17 00:00 +0700
+  end: 26 May 17 00:00 +0700
+  url: http://17.media/event/guardianknight
+  displaySecond: 10
+  coolDownHour: 0.05
 - id: ID_0515
   regionMode: include
   regions: [ID]
@@ -20,55 +40,5 @@
   start: 15 May 17 00:00 +0700
   end: 01 Jun 17 00:00 +0700
   url: http://17.media/event/goldenflower
-  displaySecond: 10
-  coolDownHour: 0.05
-- id: TW_0514
-  regionMode: exclude
-  regions: [ID]
-  regionPriority: 0
-  image: cinderella_ad.png
-  start: 11 May 17 00:00 +0800
-  end: 15 May 17 00:00 +0800
-  url: http://17.media/event/goshopping2
-  displaySecond: 5
-  coolDownHour: 12
-- id: TW_0508
-  regionMode: exclude
-  regions: [ID]
-  regionPriority: 0
-  image: goldenfeather_ad.png
-  start: 08 May 17 00:00 +0800
-  end: 11 May 17 00:00 +0800
-  url: http://17.media/event/goldenfeather
-  displaySecond: 5
-  coolDownHour: 12
-- id: TW_0505
-  regionMode: exclude
-  regions: [ID]
-  regionPriority: 0
-  image: diamond_p2_ad.png
-  start: 06 May 17 00:00 +0800
-  end: 08 May 17 00:00 +0800
-  url: http://17.media/event/diamondnightclub
-  displaySecond: 5
-  coolDownHour: 12
-- id: TW_0501
-  regionMode: exclude
-  regions: [ID]
-  regionPriority: 0
-  image: ig_event_popup_0501.png
-  start: 01 May 17 00:00 +0800
-  end: 06 May 17 00:00 +0800
-  url: http://17.media/event/redcarpet
-  displaySecond: 5
-  coolDownHour: 12
-- id: ID_0501
-  regionMode: include
-  regions: [ID]
-  regionPriority: 0
-  image: event_Indo_cruise_ship_enter_0426.png
-  start: 01 May 17 00:00 +0700
-  end: 15 May 17 00:00 +0700
-  url: https://17.media/event/cruise
   displaySecond: 10
   coolDownHour: 0.05
