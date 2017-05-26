@@ -1,6 +1,6 @@
 # isInternal: determin who can see this badge. If the flag is true, only admin user can see this badge.
 # wildOpen: determin where owning information comes from.
-# If the flag is true, users are listed in the users field owning this badge. Otherwise, checking owning flag from db.
+# If the flag is false, users are listed in the users field owning this badge. Otherwise, checking owning flag from db.
 # Threre two exceptions: verify and celebrity will be effected by BOTH db and config.
 
 verify:
@@ -16,9 +16,9 @@ celebrity:
     description: "BADGE_CELEBRITY_DESC"
     name: "BADGE_CELEBRITY_NAME"
     order: 1
-    isInternal: false
+    isInternal: true
     users: []
-    wildOpen: false
+    wildOpen: true
     #official:
     #iconURL: "http://cdn.17app.co/icBdgOfficial.png" 
     #description: "BADGE_OFFICIAL_DESC" 
@@ -35,19 +35,43 @@ dangerous:
     isInternal: true
     users: []
     wildOpen: false
-goldenFeatherNo1:
-    iconURL: "http://cdn.17app.co/icBdgVerify.png"
+goldenFeather:
+    iconURL: "http://cdn.17app.co/icGfe.png"
     description: "BADGE_GOLDENFEATHER1_DESC"
     name: "BADGE_GOLDENFEATHER1_NAME"
     order: 3
     isInternal: false
-    users: [f4430848-1b8d-4460-a836-a93d412027cf,4f0e77e0-636f-4832-ad67-b1bfca1406d2]
+    users: []
     wildOpen: false
-goldenFeatherNo2:
-    iconURL: "http://cdn.17app.co/icBdgDangerous.png" 
-    description: "BADGE_GOLDENFEATHER2_DESC"
-    name: "BADGE_GOLDENFEATHER2_NAME"
+yearClangBaChi:
+    iconURL: "http://cdn.17app.co/icClanWiiner1.png"
+    description: "BADGE_YEAR_BA_CHI_DESC"
+    name: "BADGE_YEAR_BA_CHI_NAME"
     order: 4
     isInternal: false
-    users: [f4430848-1b8d-4460-a836-a93d412027cf,4f0e77e0-636f-4832-ad67-b1bfca1406d2]
+    users: []
+    wildOpen: false
+yearClangHauChi:
+    iconURL: "http://cdn.17app.co/icClanWiiner2.png"
+    description: "BADGE_YEAR_HAU_CHI_DESC"
+    name: "BADGE_YEAR_HAU_CHI_NAME"
+    order: 7
+    isInternal: false
+    users: []
+    wildOpen: false
+yearClangYiChi:
+    iconURL: "http://cdn.17app.co/icClanWiiner3.png"
+    description: "BADGE_YEAR_YI_CHI_DESC"
+    name: "BADGE_YEAR_YI_CHI_NAME"
+    order: 8
+    isInternal: false
+    users: []
+    wildOpen: false
+yearMengJu:
+    iconURL: "http://cdn.17app.co/icFirstTen.png"
+    description: "BADGE_YEAR_MENG_JU_DESC"
+    name: "BADGE_YEAR_MENG_JU_NAME"
+    order: 9
+    isInternal: false
+    users: []
     wildOpen: false
