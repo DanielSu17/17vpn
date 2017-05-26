@@ -1,3 +1,8 @@
+# isInternal: determin who can see this badge. If the flag is true, only admin user can see this badge.
+# wildOpen: determin where owning information comes from.
+# If the flag is true, users are listed in the users field owning this badge. Otherwise, checking owning flag from db.
+# Threre two exceptions: verify and celebrity will be effected by BOTH db and config.
+
 verify:
     iconURL: "http://cdn.17app.co/icBdgVerify.png"
     description: "BADGE_VERIFY_DESC"
