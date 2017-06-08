@@ -1,0 +1,8 @@
+# <message> should be returned as the response of enterLiveStream when a viewer checks in a streamer's consecutive
+# lives <count> times.
+#
+# <minDuration> is the min duration in terms of seconds that a stream will be counted in consecutive streams.
+enable: true
+count: 5
+message: "STREAM_CHECKIN_MESSAGE"
+minDuration: 600
