@@ -1,6 +1,10 @@
 # configs
 repository of configure files for 17 apps
 
+## Add new configs
+
+When you add new configs, remember to add them to stag and prod folder even in developmemt.
+
 ## git hook
 
 ### install pre-commit
