@@ -1,0 +1,13 @@
+# mode: 1: ping, 2: http
+# users: userID list
+# regions: TW/CN/JP/ID,...etc. "ALL" for all regions
+
+- mode: 1
+  host: www.google.com
+  intervalSecs: 60
+  target:
+      users:
+          - dd40c211-48be-439e-b0b1-47ba44e0b1bf
+      regions:
+          - TW
+          - JP
