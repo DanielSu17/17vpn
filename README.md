@@ -26,5 +26,5 @@ When you add new configs, remember to add them to stag and prod folder even in d
 It'll pull i18n translations from lokalise
 
 ```
-./tools/update_i18n.py [-h] {dev,sta,prod,all}
+cd tools; ./update_i18n.py [-h] {dev,sta,prod,all}; cd -
 ```
