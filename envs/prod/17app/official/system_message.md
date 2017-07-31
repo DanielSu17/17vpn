@@ -1,3 +1,4 @@
+# TODO deprecated version > v0.6.15
 # System message configuration
 
 This config file stores system messages.
