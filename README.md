@@ -23,7 +23,12 @@ When you add new configs, remember to add them to stag and prod folder even in d
 
 ## Update i18n files
 
-It'll pull i18n translations from lokalise
+### install requirement
+```
+cd tools;pip install -r pip.require;cd -
+```
+
+### Pull i18n translations from lokalise
 
 ```
 cd tools; ./update_i18n.py [-h] {dev,sta,prod,all}; cd -
