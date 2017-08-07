@@ -9,7 +9,7 @@ import requests
 import argparse
 
 TOKEN = "ba191bb29040d4a32a6263886986dc8e4c07920f"
-ENVS = ["dev", "sta", "prod", "all"]
+ENVS = ["dev", "sta", "prod"]
 
 class I18nJsonWriter:
 
@@ -130,11 +130,11 @@ class LokaliseClient:
 
 if __name__=="__main__":
     parser = argparse.ArgumentParser(description='Pull i18n from Lokalise.')
-    parser.add_argument('env', choices=ENVS, default=ENVS, help='')
+    parser.add_argument('env', choices=ENVS+["all"], default=ENVS, help='')
     args = parser.parse_args()
 
     if args.env == "all":
-        env = ENV
+        env = ENVS
     else:
         env = [args.env]
     lc = LokaliseClient(TOKEN)
