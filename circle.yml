@@ -22,7 +22,4 @@ deployment:
   master:
     branch: master
     commands:
-      # ref: https://github.com/17media/api/blob/master/infra/deploy/configs/pushToEtcd.go
-      - wget https://s3-us-west-2.amazonaws.com/17scripts/configs_push_to_etcd/pushToEtcd-linux
-      - chmod +x pushToEtcd-linux
-      - ./pushToEtcd-linux --commit_id "$(git rev-parse --short HEAD)"
+      - curl "${DEPLOY_URL}&REVISION=${CIRCLE_SHA1}"
