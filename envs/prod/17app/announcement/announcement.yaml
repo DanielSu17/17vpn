@@ -2,6 +2,36 @@
 # regionPriority: 0 is lowest
 # coolDownHour could be float
 
+- id: ID_0901
+  regionMode: include
+  regions: [ID]
+  regionPriority: 0
+  image: f687e024-4b56-41ae-ba8d-07ddb9765ea5.png
+  start: 01 Sep 17 00:00 +0700
+  end: 16 Sep 17 00:00 +0700
+  url: http://17.media/event/splendid-dubai
+  displaySecond: 10
+  coolDownHour: 0.05
+- id: TW_0906
+  regionMode: exclude
+  regions: [ID,JP]
+  regionPriority: 0
+  image: d2848ecd-84d0-45c7-8200-8944399e318c.png
+  start: 06 Sep 17 00:00 +0800
+  end: 07 Sep 17 00:00 +0800
+  url: http://17.media/event/trends
+  displaySecond: 5
+  coolDownHour: 3
+- id: TW_0904
+  regionMode: exclude
+  regions: [ID,JP]
+  regionPriority: 0
+  image: e62db7b5-34ad-435a-839e-af345f6c876c.png
+  start: 04 Sep 17 00:00 +0800
+  end: 05 Sep 17 00:00 +0800
+  url: http://17.media/event/bearpower
+  displaySecond: 5
+  coolDownHour: 3
 - id: TW_0902
   regionMode: exclude
   regions: [ID,JP]
@@ -40,26 +70,6 @@
   start: 30 Aug 17 00:00 +0800
   end: 31 Aug 17 00:00 +0800
   url: http://17.media/event/17video
-  displaySecond: 5
-  coolDownHour: 3
-- id: TW_0829
-  regionMode: exclude
-  regions: [ID,JP]
-  regionPriority: 0
-  image: d2848ecd-84d0-45c7-8200-8944399e318c.png
-  start: 29 Aug 17 00:00 +0800
-  end: 30 Aug 17 00:00 +0800
-  url: http://17.media/event/trends
-  displaySecond: 5
-  coolDownHour: 3
-- id: TW_0828
-  regionMode: exclude
-  regions: [ID,JP]
-  regionPriority: 0
-  image: e62db7b5-34ad-435a-839e-af345f6c876c.png
-  start: 28 Aug 17 00:00 +0800
-  end: 29 Aug 17 00:00 +0800
-  url: http://17.media/event/bearpower
   displaySecond: 5
   coolDownHour: 3
 - id: JP_0827
