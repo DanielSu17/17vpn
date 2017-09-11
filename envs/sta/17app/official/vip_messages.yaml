@@ -1,0 +1,42 @@
+# VIP messages
+# Template:
+# - msg: 恭喜你成為17VIP，想了解更多好處，快加入17VIP LINE:@17vip
+#   startTime: 2017-07-31T00:00:00+08:00
+#   endTime: 2018-07-25T00:00:00+08:00
+#   region: TW
+#   language: TW
+#   type: 0
+#   threshold: 0 
+#   renewHour: 1h0m0s
+#   
+#   
+# - msg: send to user's content
+#   startTime: vaild start time
+#   endTime: vaild end time
+#   region: TW (who's streamer in tw will receive it)
+#   language: TW (who's phone setting lang is TW will receive it )msg send if region or language match
+#   type: 0 (type for different level vip)
+#   threshold: 0 (threshold is the minimum USD user purchase from 17 IAP)
+#   renewHour: 1h0m0s (1 hour send once)
+#   traceTime: 240000h0m0s (240000hour purchase product)
+
+
+- msg: 恭喜你成為17VIP，想了解更多好處，快加入17VIP LINE:@17vip
+  startTime: 2017-07-31T00:00:00+08:00
+  endTime: 2018-07-25T00:00:00+08:00
+  region: TW
+  language: TW
+  type: 0
+  threshold: 0 
+  renewHour: 1h0m0s
+  traceTime: 24h0m0s
+
+- msg: 恭喜你成為17尊榮VIP，想了解更多好處，快加入17VIP LINE:@17vip
+  startTime: 2017-07-31T00:00:00+08:00
+  endTime: 2018-07-25T00:00:00+08:00
+  region: TW
+  language: TW
+  type: 1
+  threshold: 10000 
+  renewHour: 1h0m0s
+  traceTime: 240000h0m0s
