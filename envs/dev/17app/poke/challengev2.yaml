@@ -5,6 +5,8 @@
 # `pointGain` is the required point received at least
 # `duration` is the required time(seconds) at least
 # `viewers` is the required viewer number at least, this shoule be the real value
+# `repeatable` indicate that wheter player can play several times in the same day
+# `include17k` include 17k stream
 
 enable: true
 goal:
@@ -18,5 +20,7 @@ timeLimit: 60
 
 filterStreamRule:
     pointGain: 0
-    duration: 5
+    duration: 0
     viewers: 0
+    repeatable: true
+    include17k: true
