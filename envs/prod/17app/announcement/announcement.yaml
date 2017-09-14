@@ -2,10 +2,20 @@
 # regionPriority: 0 is lowest
 # coolDownHour could be float
 
+- id: TW_0914
+  regionMode: exclude
+  regions: [ID,JP]
+  regionPriority: 0
+  image: 345f90dd-82a4-498f-b3f7-99895e6b9c00.png
+  start: 14 Sep 17 00:00 +0800
+  end: 15 Sep 17 00:00 +0800
+  url: http://17.media/event/mylifestyle
+  displaySecond: 5
+  coolDownHour: 3
 - id: HK_0909
   regionMode: include
   regions: [HK]
-  regionPriority: 0
+  regionPriority: 1
   image: 9dccbab4-0aff-4fe8-bc71-5cfae25465d7.png
   start: 09 Sep 17 00:00 +0800
   end: 23 Sep 17 00:00 +0800
@@ -40,16 +50,6 @@
   start: 10 Sep 17 00:00 +0800
   end: 11 Sep 17 00:00 +0800
   url: http://17.media/event/island
-  displaySecond: 5
-  coolDownHour: 3
-- id: TW_0909
-  regionMode: exclude
-  regions: [ID,JP]
-  regionPriority: 0
-  image: 345f90dd-82a4-498f-b3f7-99895e6b9c00.png
-  start: 09 Sep 17 00:00 +0800
-  end: 10 Sep 17 00:00 +0800
-  url: http://17.media/event/mylifestyle
   displaySecond: 5
   coolDownHour: 3
 - id: TW_0908
