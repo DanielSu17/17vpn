@@ -4,6 +4,9 @@
 # - 1: NO_LABEL
 # - 2: LUCKY_BAG
 # - 3: SLOT
+# - 4: Poke
+# - 5: Poll
+# - 6: Newbie
 # ex:
 # - id: "example"
 #   type: 1
@@ -12,7 +15,11 @@
 #     TW: "範例"
 #     CN: "範例"
 #     ID: "Example"
-#   lessThanPoint: 1632
+#   lessThanPoint: 1632  // lessThanPoint should be replaced with maxPoint
+#   maxPoint: 2000
+#   minPoint: 200
+#   maxLevel: 50
+#   minLevel: 10
 - id: "Newbie"
   type: 6
   name:
