@@ -9,6 +9,15 @@
 # `viewers` is the required viewer number at least, this shoule be the real value
 # `repeatable` indicate that wheter player can play several times in the same day
 # `include17k` include 17k stream
+#
+# `cronBomb`
+#   `enable`: enable the feature or not
+#   `startHour`: Start hour of cronBomb (0~23)
+#   `endHour`: End hour of cronBomb (1~24)
+#   `period`: In the period of `startHour` to `endHour`, execute the job every `period` seconds
+#   `number`: Decide the number of bombs throw at a time
+#   The range can be: 0~2, 18~24, 18~2..., etc.
+#   For 0~2, this will be executed at 00:xx and 01:yy.
 
 enable: true
 goal:
@@ -28,3 +37,10 @@ filterStreamRule:
     viewers: 0
     repeatable: false
     include17k: true
+
+cronBomb:
+    enable: true
+    startHour: 18
+    endHour: 24
+    period: 1800
+    number: 5
