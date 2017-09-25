@@ -3,6 +3,8 @@
 # `gameDelay` is the possible network delay of game
 # `pendingTimeout` is the period from player reading msg to the game starting
 #
+# `broadcastThreshold` broadcast the global pubnub when number of player in a challenge achieve any of the threshould
+#
 # `filterStreamRule` is the filter rule for choosing the next stream
 # `pointGain` is the required point received at least
 # `duration` is the required time(seconds) at least
@@ -30,6 +32,10 @@ goal:
 timeLimit: 180
 gameDelay: 5
 pendingTimeout: 15
+
+broadcastThreshold:
+    - 5
+    - 10
 
 filterStreamRule:
     pointGain: 5000
