@@ -15,11 +15,11 @@
 # `cronBomb`
 #   `enable`: enable the feature or not
 #   `startHour`: Start hour of cronBomb (0~23)
-#   `endHour`: End hour of cronBomb (1~24)
+#   `endHour`: End hour of cronBomb (0~23)
 #   `period`: In the period of `startHour` to `endHour`, execute the job every `period` seconds
 #   `number`: Decide the number of bombs throw at a time
 #   The range can be: 0~2, 18~24, 18~2..., etc.
-#   For 0~2, this will be executed at 00:xx and 01:yy.
+#   For 0~2, this will be executed at 00:xx, 01:yy and 02:zz, total 3 times.
 
 enable: true
 goal:
