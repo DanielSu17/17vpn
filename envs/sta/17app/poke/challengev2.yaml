@@ -1,4 +1,5 @@
 # `goal` is the required number of gifts of specific gift IDs should be sent to complete the challenge
+# `weightBonus` if the player pass, the bonus will be added to the weight of his stream
 # `timeLimit` is the coundown(seconds) of a game
 # `gameDelay` is the possible network delay of game
 # `pendingTimeout` is the period from player reading msg to the game starting
@@ -30,7 +31,9 @@ goal:
       num: 1
     - giftID: challenge_lovely_poke
       num: 1
+weightBonus: 10
 timeLimit: 180
+
 gameDelay: 5
 pendingTimeout: 25
 
