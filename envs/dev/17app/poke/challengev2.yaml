@@ -14,7 +14,7 @@
 #
 # `cronBomb`
 #   `enable`: enable the feature or not
-#   `enableHourRanges`: Execute the job in the hour ranges
+#   `hourRanges`: Execute the job in the hour ranges
 #     `startHour`: Start hour of cronBomb (0~23)
 #     `endHour`: End hour of cronBomb (0~23)
 #   `period`: In the period of `startHour` to `endHour`, execute the job every `period` seconds
@@ -47,7 +47,7 @@ filterStreamRule:
 
 cronBomb:
     enable: true
-    enableHourRanges:
+    hourRanges:
         - startHour: 0
           endHour: 23
     period: 60
