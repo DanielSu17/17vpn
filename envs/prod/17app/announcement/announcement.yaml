@@ -2,6 +2,26 @@
 # regionPriority: 0 is lowest
 # coolDownHour could be float
 
+- id: ID_1001
+  regionMode: include
+  regions: [ID]
+  regionPriority: 0
+  image: 6cd51caf-33af-4342-a140-b2607f092761.png
+  start: 01 Oct 17 00:00 +0700
+  end: 01 Nov 17 00:00 +0700
+  url: https://17.media/event/getaway
+  displaySecond: 10
+  coolDownHour: 0.05
+- id: TW_1001
+  regionMode: exclude
+  regions: [ID,JP,HK]
+  regionPriority: 0
+  image: e042f629-34c9-40d7-9fab-029e0fd31692.png
+  start: 01 Oct 17 00:00 +0800
+  end: 02 Oct 17 00:00 +0800
+  url: http://17.media/event/hungrygames
+  displaySecond: 5
+  coolDownHour: 3
 - id: TW_0930
   regionMode: exclude
   regions: [ID,JP,HK]
