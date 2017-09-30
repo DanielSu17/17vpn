@@ -22,6 +22,9 @@
 #   `number`: Decide the number of bombs throw at a time
 #   The range can be: 0~2, 18~24, 18~2..., etc.
 #   For 0~2, this will be executed at 00:xx, 01:yy and 02:zz, total 3 times.
+#
+#  `curVersion`: current version of poke challenge
+#  `appVersions`: minimum version of client apps that support poke challenge
 
 enable: true
 goal:
@@ -55,3 +58,9 @@ cronBomb:
           endHour: 23
     period: 1800
     number: 5
+
+curVersion: 1
+appVersions:
+  1:
+    ios: "1.85"
+    android: "2.2.38"
