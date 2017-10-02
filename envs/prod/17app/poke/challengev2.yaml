@@ -52,10 +52,12 @@ filterStreamRule:
 cronBomb:
     enable: false
     hourRanges:
-        - startHour: 18
-          endHour: 23
+        - startHour: 12
+          endHour: 14
+        - startHour: 17
+          endHour: 0
     period: 1800
-    number: 5
+    number: 10
 
 curVersion: 1
 appVersions:
