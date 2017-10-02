@@ -20,7 +20,7 @@ class I18nJsonWriter:
 
     # file related
     path = "../envs/%s/17app/i18n/%s/%s.json"
-    
+
     def __init__(self, i18n_dict):
         self.i18n_dict = i18n_dict
 
@@ -33,6 +33,8 @@ class I18nJsonWriter:
         data_str = json.dumps(data, indent=self.indent, sort_keys=self.sort_keys, separators=self.separators, ensure_ascii=False).encode('utf8')
 
         if param_prefix is not None:
+            # We need to escape '%' or client may crash
+            data_str = re.sub(r'%', r'%%', data_str)
             data_str = re.sub(r'\$([0-9]+)', param_prefix, data_str)
 
         return data_str
