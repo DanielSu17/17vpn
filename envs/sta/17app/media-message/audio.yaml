@@ -10,11 +10,15 @@
 # In this case, gift ids audio_message_4999 and audio_message_6999 must exist in table `Product`
 # popupCount is used only for user experience. no logic here
 durationPrices:
+  - duration: 3
+    price: 100
   - duration: 5
     price: 500
   - duration: 15
     price: 2999
   - duration: 30
     price: 4999
+  - duration: 60
+    price: 7999
 giftIDTemplate: 'audio_message_{{.Price}}'
 popupCount: 5
