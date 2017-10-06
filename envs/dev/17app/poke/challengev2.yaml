@@ -23,6 +23,9 @@
 #   The range can be: 0~2, 18~24, 18~2..., etc.
 #   For 0~2, this will be executed at 00:xx, 01:yy and 02:zz, total 3 times.
 #
+#   `enablePokeAll`: enable poke-all action
+#   `pokeAllRemainingSeconds`: trigger poke-all action when the remaining seconds <= `pokeAllRemainingSeconds`
+#
 #  `curVersion`: current version of poke challenge
 #  `appVersions`: minimum version of client apps that support poke challenge
 
@@ -58,6 +61,9 @@ cronBomb:
           endHour: 23
     period: 3600
     number: 2
+
+enablePokeAll: true
+pokeAllRemainingSeconds: 40
 
 curVersion: 1
 appVersions:
