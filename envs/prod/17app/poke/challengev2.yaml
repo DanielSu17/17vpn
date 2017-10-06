@@ -53,11 +53,11 @@ filterStreamRule:
 
 cronBomb:
     enable: true
-    hourRanges:
-        - startHour: 12
-          endHour: 14
-        - startHour: 17
-          endHour: 0
+    hourRanges: # TODO: Fix with timezone
+        - startHour: 4
+          endHour: 6
+        - startHour: 9
+          endHour: 16
     period: 1800
     number: 10
 
