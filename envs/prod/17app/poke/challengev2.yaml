@@ -29,7 +29,7 @@
 #  `curVersion`: current version of poke challenge
 #  `appVersions`: minimum version of client apps that support poke challenge
 
-enable: true
+enable: false
 goal:
     - giftID: challenge_poke
       num: 1
@@ -55,7 +55,7 @@ filterStreamRule:
     include17k: true
 
 cronBomb:
-    enable: true
+    enable: false
     hourRanges: # TODO: Fix with timezone
         - startHour: 4
           endHour: 6
