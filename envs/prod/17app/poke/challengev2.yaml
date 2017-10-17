@@ -56,13 +56,13 @@ filterStreamRule:
 
 cronBomb:
     enable: false
-    hourRanges: # TODO: Fix with timezone
-        - startHour: 4
-          endHour: 6
-        - startHour: 9
-          endHour: 16
+    hourRanges:
+        - startHour: 12
+          endHour: 14
+        - startHour: 17
+          endHour: 0
     period: 180
-    number: 20
+    number: 1
 
 enablePokeAll: false
 pokeAllRemainingSeconds: 160
