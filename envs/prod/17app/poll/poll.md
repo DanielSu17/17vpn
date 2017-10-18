@@ -1,3 +1,3 @@
-# Modify the poll setting
+# Poll Setting
 
-This is the setting for polls.
+This is the setting for polls. Please modify the `userPrice` section only.
