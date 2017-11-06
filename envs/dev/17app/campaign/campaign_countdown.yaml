@@ -1,0 +1,25 @@
+# animationTimer: show animation when the remaining time is less than it, -1 means disable
+# textTimers: Decide the showing msg when the remaining time is equal to the number, ex: 300, 60, 10 here
+# `token` is for the i18n struct
+
+animationTimer: 300
+timers:
+    300:
+        token:
+            key: ""
+            params:
+                - value: 300
+                  needMap: false
+    60:
+        token:
+            key: ""
+            params:
+                - value: 60
+                  needMap: false
+    10:
+        token:
+            key: ""
+            params:
+                - value: 10
+                  needMap: false
+
