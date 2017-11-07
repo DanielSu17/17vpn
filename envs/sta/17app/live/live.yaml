@@ -1,6 +1,33 @@
 # autoEnterTime is in terms of seconds and used to take an idle user to a live.
 # promotion interval is a promotion to all live stream and its unit is mins
+#
+# animationTimer: show animation when the remaining time is less than it, -1 means disable
+# textTimers: Decide the showing msg when the remaining time is equal to the number, ex: 300, 60, 10 here
+# `token` is for the i18n struct
+
 autoEnterTimer: 15
 idleTimer: 60
 promotionInterval:
   vip: 1m0s
+
+animationTimer: 300
+timers:
+    300:
+        token:
+            key: ""
+            params:
+                - value: 300
+                  needMap: false
+    60:
+        token:
+            key: ""
+            params:
+                - value: 60
+                  needMap: false
+    10:
+        token:
+            key: ""
+            params:
+                - value: 10
+                  needMap: false
+
