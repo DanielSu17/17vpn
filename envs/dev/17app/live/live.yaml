@@ -2,8 +2,7 @@
 # promotion interval is a promotion to all live stream and its unit is mins
 #
 # animationTimer: show animation when the remaining time is less than it, 0 means disable
-# textTimers: Decide the showing msg when the remaining time is equal to the number, ex: 300, 60, 10 here
-# `token` is for the i18n struct
+# eventTimers: Decide the showing msg when the remaining time is equal to the number, ex: 300, 60, 10 here
 
 autoEnterTimer: 60
 idleTimer: 60
@@ -12,6 +11,13 @@ promotionInterval:
 
 campaignCountdown:
     animationTimer: 30
+    eventTimers:
+        30: {}
+        20: {}
+        10: {}
+        0: {}
+
+    # Deprecated settings
     timers:
         30:
             token: "final_countdown_dropdown_start_sec"
