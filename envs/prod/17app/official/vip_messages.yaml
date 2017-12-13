@@ -34,6 +34,10 @@
   threshold: 0 
   renewHour: 48h0m0s
   traceTime: 24h0m0s
+  excludeProductIDs: [web_points_spgateway,bank_,web_points_]
+  renewHourForDeactiveUser: 100h0m0s
+
+
 
 - msg: "親愛的17用戶您好：
 恭喜你成為17 VIP的用戶嘍，我們有針對VIP客戶提供更多的服務及優惠方案呢~
@@ -54,3 +58,4 @@
   threshold: 1000 
   renewHour: 48h0m0s
   traceTime: 240000h0m0s
+  excludeProductIDs: [bank_,web_points_]
