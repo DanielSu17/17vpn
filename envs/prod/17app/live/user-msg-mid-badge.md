@@ -1,0 +1,1 @@
+middle badge setting
