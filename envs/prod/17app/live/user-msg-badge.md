@@ -1,4 +1,4 @@
-# Badge used in DispalyUserMsg
+# Badge for 17k producer and 17show
 # <userID>: <badgeURL>
 
 # 17K Producer

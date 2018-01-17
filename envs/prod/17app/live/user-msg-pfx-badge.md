@@ -1,3 +1,3 @@
-# Badge used in DispalyUserMsg
+# Badge in back of openid
 # <userID>: <badgeURL>
 #
