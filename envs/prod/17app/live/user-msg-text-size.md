@@ -1,1 +1,0 @@
-text size setting

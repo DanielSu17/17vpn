@@ -1,1 +1,0 @@
-attendance badge setting
