@@ -4,8 +4,8 @@
 # - 3: EXCLUDE
 region_mode: 3
 regions: ["JP"]
-countdown_time: 60
-event_time: 10
+countdown_time: 60 # for display in notice only
+event_time: 10 # deprecated
 creation_by_streamer: false
 redenvelopes:
 - id: redenvelope_no_1
@@ -13,6 +13,8 @@ redenvelopes:
   name_token: redenvelope_name_no_1
   point: 888888
   announceable: true
+  countdown_time: 60
+  event_time: 10
   fee: 44444
   package_list:
     - amount: 1
@@ -32,6 +34,8 @@ redenvelopes:
   name_token: redenvelope_name_no_2
   point: 88888
   announceable: true
+  countdown_time: 30
+  event_time: 10
   fee: 4444
   package_list:
     - amount: 1
@@ -49,6 +53,8 @@ redenvelopes:
   name_token: redenvelope_name_no_3
   point: 8888
   announceable: false
+  countdown_time: 15
+  event_time: 10
   fee: 444
   package_list:
     - amount: 1
@@ -66,6 +72,8 @@ redenvelopes:
   name_token: redenvelope_name_no_4
   point: 888
   announceable: false
+  countdown_time: 5
+  event_time: 10
   fee: 44
   package_list:
     - amount: 1
