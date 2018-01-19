@@ -1,1 +1,1 @@
-popup announce
+活動公告推播
