@@ -1,2 +1,1 @@
-middle badge setting
-2017 儲值VIP盾牌徽章，直播間留言區
+# 直播間留言openid後方徽章(新)
