@@ -1,3 +1,3 @@
-# Modify the cover girl [TW + Others]
+# cover girl(TW+Other)
 
 This file describes cover girl images for multiple devices
