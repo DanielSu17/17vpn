@@ -1,3 +1,3 @@
-# Modify the owners of OBS badge
+# 可使用OBS開播
 
 This list describes who can create stream via OBS

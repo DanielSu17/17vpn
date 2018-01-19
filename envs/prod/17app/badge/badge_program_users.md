@@ -1,3 +1,3 @@
-# Modify the owners of program badge
+# 節目帳號
 
 This list describes who can create program

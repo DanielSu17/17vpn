@@ -1,1 +1,1 @@
-HK celebrity list
+主播推薦設定(HK)

@@ -1,1 +1,1 @@
-event sticker
+活動寶寶
