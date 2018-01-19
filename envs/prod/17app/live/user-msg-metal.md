@@ -1,1 +1,1 @@
-metal frame setting
+金屬外框

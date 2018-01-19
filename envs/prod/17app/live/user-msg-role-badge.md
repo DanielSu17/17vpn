@@ -1,1 +1,3 @@
-role badge setting
+# 音樂製作人徽章設定
+
+17show 節目帳號不用再新增，系統會判斷

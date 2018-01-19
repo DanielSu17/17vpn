@@ -1,3 +1,1 @@
-# Badge in back of openid
-# <userID>: <badgeURL>
-#
+# 直播間openid前方徽章
