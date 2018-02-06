@@ -1,3 +1,3 @@
-# Dirtyword
+# HK Dirtyword
 
-This file include the TW dirtywords
+This file include the HK dirtywords
