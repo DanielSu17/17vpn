@@ -1,4 +1,15 @@
-showInvitationDialog: true
-url: https://goo.gl/YCra72
-url2: https://goo.gl/YCra72
-showCheckBoxThreshold: 100
+showInvitationDialog: true # deprecated
+url: http://www.google.com.tw # deprecated #FIXME
+params:
+  # baby vip group
+  - showInvitationDialog: true
+    vipGroupType: 1
+    threshold: 0
+    url: http://www.google.com.tw #FIXME
+    showCheckBoxThreshold: 100
+  # big vip group
+  - showInvitationDialog: true
+    vipGroupType: 2
+    threshold: 4000
+    url: https://goo.gl/YCra72
+    showCheckBoxThreshold: 100
