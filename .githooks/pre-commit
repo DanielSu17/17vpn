@@ -14,7 +14,7 @@ sys.setdefaultencoding('utf-8')
 modified = re.compile('^[MA]\s+envs\/(?P<env>(prod|sta))\/(?P<filename>.*)$')
 access_token = 'BAf9qBQPVG.yA<b(q2xBF5gLhc5cGp5QF3JMu0'
 api = {'prod': 'https://api-dsa.17app.co', 'sta': 'https://sta-api.17app.co'}
-result, warring, syntax_error_count = 0, 0, 0
+result, warning, syntax_error_count = 0, 0, 0
 
 
 def query_yes_no(question, default="no"):
@@ -146,18 +146,18 @@ def remote_check_configs(env, files_list):
 def skip_or_abort():
     global result
     if (result != 1
-        and warring == 1
+        and warning == 1
             and (query_yes_no("\nHas configs Warning do you want continue?") == False)):
         result = 1
 
 
-def set_result(massages):
-    global warring
+def set_result(messages):
+    global warning
     global result
-    if len(massages['error']) > 0:
+    if 'error' in messages and len(messages['error']) > 0:
         result = 1
-    if len(massages['warning']) > 0:
-        warring = 1
+    if 'warning' in messages and len(messages['warning']) > 0:
+        warning = 1
 
 
 def display_response(env, response):
