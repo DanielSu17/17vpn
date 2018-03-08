@@ -15,7 +15,7 @@ def main():
     if (old_file.is_file() == False) and (dst_file.is_file() == True):
         shutil.move(dst_filepath, old_filepath)
     shutil.copyfile(src_filepath, dst_filepath)
-    os.chmod(dst_filepath, 0755)
+    os.chmod(dst_filepath, 0o755)
 
 if __name__ == '__main__':
     main()

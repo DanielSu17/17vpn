@@ -7,9 +7,18 @@ import sys
 import requests
 import json
 import yaml
+import importlib
 
-reload(sys)
-sys.setdefaultencoding('utf-8')
+# python3 sys doesn't have setdefaultencoding
+if hasattr(sys, 'setdefaultencoding'):
+    reload(sys)
+    sys.setdefaultencoding('utf-8')
+
+# Compatible with python3
+try:
+    input = raw_input
+except NameError:
+    pass
 
 modified = re.compile('^[MA]\s+envs\/(?P<env>(prod|sta))\/(?P<filename>.*)$')
 access_token = 'BAf9qBQPVG.yA<b(q2xBF5gLhc5cGp5QF3JMu0'
@@ -33,7 +42,7 @@ def query_yes_no(question, default="no"):
     while True:
         sys.stdout.write(question + prompt)
         sys.stdin = open('/dev/tty')
-        choice = raw_input().strip().lower()
+        choice = input().strip().lower()
         if default is not None and choice == '':
             return valid[default]
         elif choice in valid:
@@ -88,7 +97,7 @@ def main():
     if syntax_error_count == 0:
         print(highlight("\n>>>>>>>> [{}]:".format(
             "Remote Configs Checking"), 'green'))
-        for env, fs in tmp_files.iteritems():
+        for env, fs in tmp_files.items():
             if len(fs) >= 1:
                 print(highlight("# <<{}>> ".format(env.upper()), 'green'))
             remote_check_configs(env, fs)
@@ -112,12 +121,12 @@ def local_syntax_checker(filepath):
                 yaml.load(stream)
             if filepath.endswith('.json'):
                 json.load(stream)
-            print "  {} ==> {}".format(filepath, highlight('succeed', 'green'))
+            print("  {} ==> {}".format(filepath, highlight('succeed', 'green')))
         except yaml.YAMLError as exc:
-            print "  {} ==> failure ({})".format(filepath, highlight(exc, 'red'))
+            print("  {} ==> failure ({})".format(filepath, highlight(exc, 'red')))
             syntax_error_count += 1
         except ValueError as exc:
-            print "  {} ==> failure ({})".format(filepath, highlight(exc, 'red'))
+            print("  {} ==> failure ({})".format(filepath, highlight(exc, 'red')))
             syntax_error_count += 1
         finally:
             stream.close()
