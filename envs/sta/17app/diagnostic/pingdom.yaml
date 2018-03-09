@@ -6,4 +6,18 @@
 # regions: TW/CN/JP/ID,...etc. "ALL" for all regions
 
 intervalSecs: 60
-rules: []
+rules:
+  - mode: 2
+    host: https://api-dsa.17app.co/health
+    target:
+      users:
+        - b056a857-dc0f-42f8-8429-1915c7664048
+        - d5ca8ed1-8ead-4be4-a1bc-69db5c1bed80
+        - 913fb7e6-10b9-4c68-ab0b-41a84847be2e
+      regions: []
+  - mode: 2
+    host: https://api-17.peibupei.com/health
+    target:
+      users:
+        - b056a857-dc0f-42f8-8429-1915c7664048
+      regions: []

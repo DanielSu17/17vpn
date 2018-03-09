@@ -34,36 +34,38 @@ goal:
     - giftID: challenge_poke
       num: 1
     - giftID: challenge_friendly_poke
-      num: 0
+      num: 1
     - giftID: challenge_lovely_poke
-      num: 0
+      num: 1
 weightBonus: 10
-timeLimit: 60
+timeLimit: 180
 
-gameDelay: 5
+gameDelay: 15
 pendingTimeout: 25
 
 broadcastThreshold:
     - 3
-    - 10
+    - 5
 
 filterStreamRule:
-    pointGain: 0
-    duration: 0
+    pointGain: 5000
+    duration: 1200
     viewers: 0
-    repeatable: true
+    repeatable: false
     include17k: true
 
 cronBomb:
-    enable: false
+    enable: true
     hourRanges:
-        - startHour: 18
-          endHour: 23
-    period: 1800
-    number: 5
+        - startHour: 12
+          endHour: 14
+        - startHour: 17
+          endHour: 0
+    period: 180
+    number: 1
 
 enablePokeAll: true
-pokeAllRemainingSeconds: 40
+pokeAllRemainingSeconds: 160
 
 curVersion: 1
 appVersions:
