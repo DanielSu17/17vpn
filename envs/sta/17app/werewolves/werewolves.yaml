@@ -1,7 +1,7 @@
 admissionPoint:
   contractor:
-    min: 0
-    default: 0
+    min: 1000
+    default: 1000
   normal:
     min: 0
     default: 0
@@ -15,151 +15,38 @@ periodTimer:
   'lastwords': 20
   'daytalk': 20
   'dayvote': 20
-  'buffer' : 3
+  'buffer' : 5
 enableWhitelist: false
 #userID list
 whilelist:
-  # testing userID
-  - "e3c4c804-8a9c-4b7c-8026-0a8ed602b42c" # jen87go
-  - "3128adcd-ea2c-438d-93cf-00baf1d7374a" # jen87
-  - "e9a1701b-02e0-4fb8-a75c-25ed5c3a9051" # momomi
-  - "2a091777-b06d-4cad-9b02-70193365e1e3" # ftcy0118
-  - "cfa48648-928e-410b-9af6-c24dd62f9c78" # sssssugo
-  - "567e0b5d-1516-4ce0-b4e8-bec4e756d5ae" # kevinmh
-  - "ab713974-0018-4095-9f18-d98c41624004" # dixentw
-  - "0b32cef6-4bcf-4461-bd51-3e40b46562a9" # jenn31
-  - "3799d926-2ae2-4942-a510-847a017921cc" # kevinmh01
-  - "b1e571ee-fce8-4ed2-add0-39f6a2844955" # momoisgood
-  - "c9692e9a-d6af-4c3b-b2ba-9954f2fb748d" # momoiscool
+  #jen87
+  - "3128adcd-ea2c-438d-93cf-00baf1d7374a"
+  #momomi
+  - "e9a1701b-02e0-4fb8-a75c-25ed5c3a9051"
+  #ftcy0118
+  - "2a091777-b06d-4cad-9b02-70193365e1e3"
+  #sssssugo
+  - "cfa48648-928e-410b-9af6-c24dd62f9c78"
+  #kevinmh
+  - "567e0b5d-1516-4ce0-b4e8-bec4e756d5ae"
+  #jen87go
+  - "e3c4c804-8a9c-4b7c-8026-0a8ed602b42c"
   - "2e723e40-5ddf-438a-8d2d-4c0ad57c5921" # james10121
-  - "b1ef8dd4-b8f9-40bb-ad73-6302d34eb090" # racing0401
-  - "4f0e77e0-636f-4832-ad67-b1bfca1406d2" # chingsan
-  - "dbcd30a7-4f27-4209-8703-3bd28c780d7a" # sam73719
-  - "023a4a29-4613-42f6-b17f-757b03dfc258"
-  - "07edc9a5-2673-4c7e-b914-0d565215d009"
-  - "0c155468-a0ed-4bb1-ba70-6207496de1ff"
-  - "0c9ccc17-fb3f-40d8-bac5-427ba1f7683e"
-  - "0c9e5352-6c6f-45d9-afbe-3d8362d09a38"
-  - "0d25b48d-7df9-45cb-abb9-87635fafcb5f"
-  - "109f741c-61b1-4b35-83aa-8ed4ca039b37"
-  - "110f53b9-8820-4345-9e2a-a106eb0a61ad"
-  - "136720bf-af68-4d58-ac99-7705d91cb62b"
-  - "1501d9c4-f366-4202-87ea-c4a33141f1f6"
-  - "17747922-b844-4d26-8a10-ec6688e23458"
-  - "182949f9-2b91-40f8-91d1-513c9cf01197"
-  - "19607c3e-8991-4d2e-a6f7-3994ee2aae05"
-  - "1a01f77e-3239-4c56-a196-f601cc438833"
-  - "1a91aea2-632b-4e93-b13a-135df0c5381a"
-  - "1abdd248-89a5-43e1-9d5f-92fe06ffbd8c"
-  - "1b8188e6-9147-4739-8d33-8e69f482e170"
-  - "21280e9c-e07d-4d1b-83b7-e591bc3b1056"
-  - "2196310e-4197-41a1-954f-06d7fd13d98f"
-  - "21def628-47bc-48aa-b517-32705d681e9a"
-  - "226fca02-a3ca-4e99-8b0b-8866525e9468"
-  - "22f1fcb8-b03b-4b30-b603-1f39d2d23f4b"
-  - "239bed56-689c-4abd-abfe-96a5ddc7b38c"
-  - "24e9c78e-2004-4dab-b39c-8dec0f955a8c"
-  - "255f8e62-6158-46cc-b505-c013d83ea3f4"
-  - "2567a761-f03a-4bb7-9f66-b7ca76a83f57"
-  - "267d6704-7eda-4f45-86c4-4919f65b05e7"
-  - "26bde76d-5c07-4dc8-af2f-f14aaee83374"
-  - "2766223f-9cda-4f87-9ba3-9038e4c534d3"
-  - "2d055efd-97ce-4528-9aae-2a70f3cb3f31"
-  - "2db30775-7be4-4857-854b-821c704ad2e3"
-  - "2ff82763-913d-484a-b95c-171d5c2056de"
-  - "300b236f-b899-450b-8792-f224557ac920"
-  - "3450b519-b28b-4b7c-9128-d22f66f6a289"
-  - "3632bfd8-3e12-461d-8177-b5e573b8ac44"
-  - "369a152f-06cb-4902-b3fc-329cb1ad44ca"
-  - "377d7702-1ca5-4a11-9ebf-1ad871a0c61c"
-  - "384c9da3-5c13-45e2-a19d-b9df845ff079"
-  - "387225d2-1f54-411a-97d6-ff80e5359f75"
-  - "394d81ac-5479-4134-6d3f-6dd93254444a"
-  - "3aa9a593-c4f9-4679-b364-b0ce2b2f1171"
-  - "3ca64e67-5747-4cd7-b590-139e3b388859"
-  - "40431dcc-4797-4688-8e22-af1d142d60ee"
-  - "47b720a2-0529-4d95-b00a-d031145f9270"
-  - "4a054ffd-00f2-4d18-bb44-de4c7603e9b8"
-  - "4a148607-e176-42ed-bb5d-4d9ec2e48354"
-  - "4b86c168-0b9c-4ef6-847c-f57aea8f1617"
-  - "4ef2d8fb-1e38-42f6-73db-daab9347bc35"
-  - "50ddbb0b-f44c-4d6f-ac4c-02b13578f2be"
-  - "515ac192-a8d2-4162-9a19-0c1b3fb115af"
-  - "529065d2-f98e-4233-8a05-7e7e413635dc"
-  - "53f14e82-c4c9-4517-8589-fac85ea95a83"
-  - "558a96ab-4113-4c3c-99f3-e0e2df258ec8"
-  - "567f5751-b2bf-45cd-9607-26c1e902c89a"
-  - "57138ee5-1386-4cfe-7eb6-8a615ea23e24"
-  - "5897176d-acb9-4a3a-ab3c-cf9c20951e0b"
-  - "59c15000-ce73-457b-7678-3bfaf9a4d338"
-  - "5a61d0cf-c303-4775-a671-08bd7519c8f8"
-  - "5a94abfc-587b-4166-876a-d4333301c58b"
-  - "5c7fd04e-1ee9-4781-a330-580639424533"
-  - "5e7f806a-f0ad-48fa-899f-bcbc0fc791c5"
-  - "5ea964e2-dd80-47d1-af8a-8a99f8650bef"
-  - "604ec832-4884-47d6-beed-cf178cad1caa"
-  - "60602fef-d6ee-4fb6-a38c-1ffd15b16c6f"
-  - "6086140b-3ab3-40b1-b18e-e8f78f369222"
-  - "64528387-4c29-434c-a6de-720761c9ea73"
-  - "764adbb5-ea72-4ee8-bbeb-62c6c53af099"
-  - "7db24214-9067-4c32-887a-3cbc76f6b11a"
-  - "7fd6e296-d0a3-4e0d-8fa9-c0c2cf3d7e0e"
-  - "803fc58f-656c-402f-bf69-a61dfcd72953"
-  - "8057fdeb-2be5-44c9-be5f-c48874c0a493"
-  - "8133f196-9f04-47dd-8572-4811e8b0eb59"
-  - "81817ad7-c8a4-44d0-b398-dc1b66c85e55"
-  - "81bb8d64-06d3-4365-bb57-1c223d6e09cd"
-  - "8573ccee-1cb6-4a81-a6b2-ded6d00ce82a"
-  - "867aaaab-ba2b-4ff6-9d6e-18cc69feac27"
-  - "8a1cb33e-09c0-431f-8ae3-6a9d2d7a18a8"
-  - "8a98e0ec-d2bc-4a4e-aee8-17ba61856755"
-  - "8bb3d414-37e4-44cf-96ef-427d823ffdfd"
-  - "8d3fa40c-d583-415e-8f63-0243019cf0d6"
-  - "90cb3257-dee8-4467-a2d5-75410e5da63a"
-  - "924d274e-ef7d-4449-8942-38c47bbb49b4"
-  - "9386265b-6160-44a4-82ba-9c05200ed4fc"
-  - "95c1277b-deaf-4bb0-816f-f11dde948660"
-  - "97daf7ee-9aa7-402c-b8d9-e1c6c31097ce"
-  - "99db850f-3271-4a7b-950f-e442a262f2fc"
-  - "9b3ece42-045e-4f93-b5f2-8fcc85ab4154"
-  - "9e59e2bd-1fed-4f19-ba8d-a0a4bac6fe97"
-  - "9e63b1f0-430e-49fb-adc1-d56300c89f68"
-  - "a039d426-ef15-4db0-898f-b04590fb0969"
-  - "a15f882d-8b51-48dc-b5d7-d6657c91a482"
-  - "a522c246-fb79-46e4-be4b-30867d1bd167"
-  - "abb710ce-80af-4030-9b63-d1a8133921bd"
-  - "af10e373-537b-44f8-b44e-039825b357b3"
-  - "b9f63221-08d2-41f8-b530-4fe4782658f8"
-  - "bc2d373b-61b7-46dd-95e0-e8658e549132"
-  - "bd949414-c8a6-48e6-af3b-a4db1c6385f5"
-  - "c1fc9912-21b8-4d93-9da4-6ca6c307022c"
-  - "c3a919d9-6696-4421-996f-b2ec982aab69"
-  - "c443b473-2162-4a05-83f5-410d55b49379"
-  - "c50860bd-60ff-4fa1-9785-bbfd1b83e5f9"
-  - "c5194f3e-fc64-49a6-a539-58a0e4c7cb57"
-  - "c800728d-2925-4202-824e-8694084e4d76"
-  - "c8848af0-f2fb-473d-a8c1-cf998747c9c1"
-  - "c900c476-a24c-4af1-5d32-98596f86085f"
-  - "cb32e46c-7612-41c3-8d0f-9dbdbf861a9a"
-  - "cda137dd-9d2b-4408-a401-4c9508278a2f"
-  - "ce4770d8-bbc9-4da7-b416-a16320cd5803"
-  - "d1f3e3d1-3f80-41b2-895c-ceeb2a61fcfe"
-  - "d254e6c7-4950-40ef-8d56-471e41075e63"
-  - "da132553-8a4c-46f0-8d0f-74b342f6e06d"
-  - "ddcaa655-a1e9-4040-b8d5-b09e02927d61"
-  - "e0ab171a-3cd4-4d92-902d-03c0c927927b"
-  - "e38f8f65-e7cb-44d4-befd-1d3863dabd53"
-  - "e42f7314-ef2f-4ed5-8b34-01a28da3c8e4"
-  - "e7f163f3-21d9-471f-9368-f223a81167c6"
-  - "ece781ef-80f9-4a8e-93d8-b1c6c9f6b487"
-  - "ed139d5d-27fb-42a4-ba4a-7955521ee97d"
-  - "ee97d12a-3849-4ca8-acdd-0f90d9d4ef2e"
-  - "f671f86d-0045-4438-898d-194fdd2969e2"
-  - "f6acb140-1b70-41b5-a48c-7a64812eb61a"
-  - "f847e3cd-9ea0-458f-a38d-feaed32c0e74"
-  - "fa788afa-b609-48a4-89bb-1998fd28b717"
-  - "ff239a83-465e-4bb8-841f-0e0bd22dc5c6"
 roleCountMap:
+  4:
+    'villager': 1
+    'werewolf': 1
+    'witch': 1
+    'seer': 1
+    'hunter': 0
+    'cupid': 0
+  5:
+    'villager': 1
+    'werewolf': 1
+    'witch': 1
+    'seer': 1
+    'hunter': 1
+    'cupid': 0
   8:
     'villager': 4
     'werewolf': 2
@@ -182,4 +69,4 @@ roleCountMap:
     'hunter': 1
     'cupid': 0
 seatReservedTime: 10
-notReadyReservedTime: 60
+notReadyReservedTime: 30

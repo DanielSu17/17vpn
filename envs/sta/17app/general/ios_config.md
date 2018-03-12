@@ -1,4 +1,4 @@
-# IOS config
+# IOS general configuration
 
 This config file stores ios-related configuration files.
 

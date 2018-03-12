@@ -1,4 +1,4 @@
-# 直播間內公告訊息
+# System message configuration
 
 This config file stores system messages.
 
