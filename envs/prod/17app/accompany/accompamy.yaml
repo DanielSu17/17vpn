@@ -1,0 +1,30 @@
+# categories
+# type: 1(唱歌), 2(聊天), 3(舞蹈), Note: The type should from DB
+# duration: duration of the order (seconds)
+# tokens: i18n key, ex: singing for 唱歌, singing_unit for [%s]點/首
+
+categories:
+    - type: 1
+      point: 500
+      duration: 300
+      tokens:
+          name:
+              key: singing
+          unit:
+              key: singing_unit
+    - type: 2
+      point: 500
+      duration: 300
+      tokens:
+          name:
+              key: chat
+          unit:
+              key: chat_unit
+    - type: 3
+      point: 500
+      duration: 300
+      tokens:
+          name:
+              key: dance
+          unit:
+              key: dance_unit
