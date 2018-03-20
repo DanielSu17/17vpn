@@ -1,0 +1,10 @@
+# docker_num is the number of docker container
+docker_num: 1
+# For example: 
+#     any request match the regular expression "/v1/abc/[0-9]*/def" will be under ratelimiting
+#     with QPS 100, and burst QPS = 200
+rate_limits:
+- url: "/v1/abc/[0-9]*/def"
+  method: "GET"
+  flow_per_second: 100
+  reservoir_size: 200
