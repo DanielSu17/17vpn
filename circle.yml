@@ -24,4 +24,4 @@ deployment:
     branch: master
     commands:
       - curl "${DEPLOY_URL}&REVISION=${CIRCLE_SHA1}"
-      # - curl "${DEPLOY_TO_GCP_URL}&REVISION=${CIRCLE_SHA1}"
+      - curl "${DEPLOY_TO_GCP_URL}&REVISION=${CIRCLE_SHA1}"
