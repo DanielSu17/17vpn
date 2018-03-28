@@ -6,13 +6,10 @@
 #   afterStartLive: reminder after time streamer expected start live stream but not start.
 #   setSchedule: pop a dialog after end stream if there's no schedule in <setSchedule> period.
 #   onExit: pop a toast if viewer want to leave live and stay over <onExit> period.
-# forbidden:
-#   setSchedule: streamer cannot update schedule which is coming in <setSchedule> period.
+#   updateDeadline: streamer cannot update schedule which is coming in <setSchedule> period.
 PNCoolDown: 600  # 10 mins
 reminder:
   beforeSchedule: 1800  # 30 mins
-  afterSchedule: 900  # 15 mins
   setSchedule: 86400  # 1 day
   onExit: 180  # 3 mins
-forbidden:
-  setSchedule: 3600  # 1 hr
+  updateDeadline: 3600  # 1 hr
