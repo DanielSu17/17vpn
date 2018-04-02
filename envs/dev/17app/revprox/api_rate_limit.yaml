@@ -2,9 +2,12 @@
 docker_num: 1
 # For example: 
 #     any request match the regular expression "/v1/abc/[0-9]*/def" will be under ratelimiting
-#     with QPS 100, and burst QPS = 200
+#     with QPS 1, and burst QPS = 5
+# Remarks: 
+#     reservoir_size must be non-zero. Otherwise the leakybucket algorithm will fail.
+#     reservoir_size should be larger than flow_per_second, otherwise the actual allowed QPS may be lower than specified flow_per_second
 rate_limits:
 - url: "/v1/abc/[0-9]*/def"
   method: "GET"
-  flow_per_second: 100
-  reservoir_size: 200
+  flow_per_second: 1
+  reservoir_size: 5
