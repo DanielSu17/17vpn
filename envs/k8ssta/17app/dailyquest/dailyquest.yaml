@@ -1,0 +1,54 @@
+# switch for daily sign-in reward
+enable: true
+
+# 0: available for all level. Otherwise, apply it for users below the level
+level: 0
+
+# daily sign-in reward for each day: [1st, 2nd, 3rd, 4th, 5th, 6th, 7th]
+rewards: [10, 15, 20, 25, 30, 35, 40]
+
+# time interval for resetting daily quest counter
+questInterval: 60
+
+# newbie_days defines who is newbie
+newbieDays: 1
+
+# newbie_rewards defines newbie quest rewards
+# type are defined as following
+# - 1: DAILY_CHECK_IN
+# - 2: ENTER_LIVE
+# - 3: FOLLOW_STREAMER
+# - 4: WATCH_CLIP
+# - 5: JOIN_17Q
+# - 6: LIVE_CHECK_IN_SIX
+# - 7: LIVE_CHECK_IN_SEVEN
+# ex:
+#   - type: 1
+#     point: 25
+#     exp: 0
+#     required: 1
+newbieRewards:
+    - type: 2
+      point: 25
+      exp: 0
+      required: 1
+    - type: 3
+      point: 25
+      exp: 0
+      required: 3
+    - type: 4
+      point: 25
+      exp: 0
+      required: 1
+    - type: 5
+      point: 25
+      exp: 0
+      required: 1
+    - type: 6
+      point: 35
+      exp: 0
+      required: 6
+    - type: 7
+      point: 40
+      exp: 0
+      required: 7

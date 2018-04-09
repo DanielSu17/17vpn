@@ -1,0 +1,20 @@
+# This config is for audio message setting
+#
+# durationPrices MUST be ordered by durations
+# Meaning of following durationPrices is:
+#   0 < duration <= 5 seconds: 500
+#   5 < duration <= 15 seconds: 2999
+#   15 < duration <= 30 seconds: 4999
+#
+# giftIDTemplate is used for giftID format
+# In this case, gift ids audio_message_4999 and audio_message_6999 must exist in table `Product`
+# popupCount is used only for user experience. no logic here
+durationPrices:
+  - duration: 5
+    price: 500
+  - duration: 15
+    price: 2999
+  - duration: 30
+    price: 4999
+giftIDTemplate: 'audio_message_{{.Price}}'
+popupCount: 5
