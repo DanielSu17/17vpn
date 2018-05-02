@@ -1,0 +1,24 @@
+# FORMAT
+# ------------------------------------------------
+# windows:
+#     <windowID1>:
+#         windowPeriod: <duation in minutes>
+#         windowResolution: <duration in minutes>
+#         shardingNum: <number of shards>
+#     <windowID2>:
+#         windowPeriod: <duation in minutes>
+#         windowResolution: <duration in minutes>
+#         shardingNum: <number of shards>
+# ------------------------------------------------
+#
+# DEFINITION
+# windowID: Window's id, should be unique. Be careful to modify because goapi might still using the window.
+# windowPeriod: Time duration of a window. The unit is in minute.
+# windowResolution: Window's smallest unit of time duration. The unit is in minute.
+# shardingNum: Sharding number of a window. Increase this number to avoid hot access to one specifix hash key.
+
+windows:
+  point_weight:
+    windowPeriod: 60
+    windowResolution: 1
+    shardingNum: 16
