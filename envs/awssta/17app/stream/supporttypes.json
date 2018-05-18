@@ -80,4 +80,12 @@
 	"default_type" : {
 		"rtmp_cdn" : 0,
 		"stream_type" : 1
-	}}
+	},
+	"message_provider" : [{
+		"name" : "PUBNUB",
+		"weight": 100
+	},{
+		"name" : "WANSU",
+		"weight": 0
+	}]
+}
