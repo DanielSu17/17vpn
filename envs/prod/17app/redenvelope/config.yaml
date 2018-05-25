@@ -10,12 +10,15 @@ regions: []
 countdown_time: 60 # deprecated
 event_time: 10 # for display in notice only
 creation_by_streamer: false
+custom_min_point: 1000
+custom_max_point: 99999999
 redenvelopes:
 - id: redenvelope_no_1
   img_URL: http://cdn.17app.co/fb3bd824-1f79-4e9d-bc7d-9fcc7c3dc4f1.png
   name_token: redenvelope_name_no_1
   point: 888888
   announceable: true
+  announce_threshold: 1
   countdown_time: 60
   event_time: 10
   fee: 44444
@@ -41,6 +44,7 @@ redenvelopes:
   name_token: redenvelope_name_no_2
   point: 88888
   announceable: true
+  announce_threshold: 1
   countdown_time: 30
   event_time: 10
   fee: 4444
@@ -64,6 +68,7 @@ redenvelopes:
   name_token: redenvelope_name_no_3
   point: 8888
   announceable: true
+  announce_threshold: 1
   countdown_time: 30
   event_time: 10
   fee: 444
@@ -87,6 +92,7 @@ redenvelopes:
   name_token: redenvelope_name_no_4
   point: 888
   announceable: false
+  announce_threshold: 1
   countdown_time: 30
   event_time: 10
   fee: 44
