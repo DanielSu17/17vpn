@@ -11,12 +11,14 @@ countdown_time: 20 # deprecated
 event_time: 20 # for display in notice only
 creation_by_streamer: true # for easy to test
 custom_min_point: 1000
-custom_max_point: 99999999
+custom_max_point: 9999999
 redenvelopes:
 - id: redenvelope_no_custom
   img_URL: http://cdn.17app.co/fb3bd824-1f79-4e9d-bc7d-9fcc7c3dc4f1.png
-  name_token: redenvelope_name_no_custom
+  name_token: redenvelope_customize_name
   point: 0 # unchangeable
+  min_point: 1000
+  max_point: 9999999
   announceable: true
   announce_threshold: 88888
   countdown_time: 60
@@ -49,6 +51,8 @@ redenvelopes:
   img_URL: http://cdn.17app.co/6d431729-c43c-4ba4-963f-ccab88cd0b78.png
   name_token: cny_redenvelope_no_2 
   point: 188888
+  min_point: 188888
+  max_point: 188888
   announceable: true
   announce_threshold: 1
   countdown_time: 30
@@ -75,6 +79,8 @@ redenvelopes:
   img_URL: http://cdn.17app.co/2d8b4063-0ef1-4bb8-b663-474e82b64789.png
   name_token: cny_redenvelope_no_3
   point: 18888
+  min_point: 18888
+  max_point: 18888
   announceable: false
   announce_threshold: 1
   countdown_time: 15
@@ -99,6 +105,8 @@ redenvelopes:
   img_URL: http://cdn.17app.co/5e43b968-713e-44ff-ad8d-90e31f6000e6.png
   name_token: cny_redenvelope_no_4
   point: 1888
+  min_point: 1888
+  max_point: 1888
   announceable: false
   announce_threshold: 1
   countdown_time: 5
@@ -121,6 +129,8 @@ redenvelopes:
   img_URL: http://cdn.17app.co/fb3bd824-1f79-4e9d-bc7d-9fcc7c3dc4f1.png
   name_token: redenvelope_name_no_1
   point: 888888
+  min_point: 888888
+  max_point: 888888
   announceable: true
   announce_threshold: 1
   countdown_time: 60
@@ -143,6 +153,8 @@ redenvelopes:
   img_URL: http://cdn.17app.co/970fe736-1bb5-4bd2-9041-a0f14e057278.png
   name_token: redenvelope_name_no_2
   point: 88888
+  min_point: 88888
+  max_point: 88888
   announceable: true
   announce_threshold: 1
   countdown_time: 60
@@ -165,6 +177,8 @@ redenvelopes:
   img_URL: http://cdn.17app.co/7d0fd036-3869-42a7-9168-057388f9e232.png
   name_token: redenvelope_name_no_3
   point: 8888
+  min_point: 8888
+  max_point: 8888
   announceable: false
   announce_threshold: 1
   countdown_time: 15
@@ -187,6 +201,8 @@ redenvelopes:
   img_URL: http://cdn.17app.co/a30cf4a7-9867-4a4c-9acc-a808ed14f3c5.png
   name_token: redenvelope_name_no_4
   point: 888
+  min_point: 888
+  max_point: 888
   announceable: false
   announce_threshold: 1
   countdown_time: 15
