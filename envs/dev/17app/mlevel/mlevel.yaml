@@ -1,50 +1,152 @@
 
 # level / point mapping table
 # level 0 is only for giving the imageURL
+# msgBadgeURL will be shown in comment msg
 levelRules:
     - level: 0
       imageURL:
       msgBadgeURL: 
+      permissions:
     - level: 1
       minPoint:  10
       imageURL:
       msgBadgeURL: http://cdn.17app.co/02b03f2d-42a6-4dda-ac80-8826bc94ed6c.png
+      permissions:
+          ENTER_NOTIF: NOTIF_BASIC
+          CARD: CARD_NONE
+          GIFT: GIFT_NONE
+          ENTER_ANIMATION: ANIMATION_NONE
+          STEALTH_FOLLOW: STEALTH_FOLLOW_NONE
+          MARQUEE: MARQUEE_NONE
+          CARD_BORDER: BORDER_NONE
+          STEALTH_LEADERBOARD: STEALTH_LB_NONE
+          PRIVATE_MSG: PRIVATE_MSG_NONE
     - level: 2
       minPoint:  20
       imageURL:
       msgBadgeURL: http://cdn.17app.co/d27f61f6-3dc5-44ef-8c1e-52cf98a0647f.png
+      permissions:
+          ENTER_NOTIF: NOTIF_BASIC
+          CARD: CARD_ELEMENTARY
+          GIFT: GIFT_NONE
+          ENTER_ANIMATION: ANIMATION_NONE
+          STEALTH_FOLLOW: STEALTH_FOLLOW_NONE
+          MARQUEE: MARQUEE_NONE
+          CARD_BORDER: BORDER_NONE
+          STEALTH_LEADERBOARD: STEALTH_LB_NONE
+          PRIVATE_MSG: PRIVATE_MSG_NONE
     - level: 3
       minPoint:  30
       imageURL:
       msgBadgeURL: http://cdn.17app.co/94342607-3303-4bb8-838b-6e417ebdc370.png
+      permissions:
+          ENTER_NOTIF: NOTIF_BASIC
+          CARD: CARD_ELEMENTARY
+          GIFT: GIFT_ELEMENTARY
+          ENTER_ANIMATION: ANIMATION_NONE
+          STEALTH_FOLLOW: STEALTH_FOLLOW_NONE
+          MARQUEE: MARQUEE_NONE
+          CARD_BORDER: BORDER_NONE
+          STEALTH_LEADERBOARD: STEALTH_LB_NONE
+          PRIVATE_MSG: PRIVATE_MSG_NONE
     - level: 4
       minPoint:  40
       imageURL:
       msgBadgeURL: http://cdn.17app.co/390f10b5-4932-43e6-b4a8-d887c3d04247.png
+      permissions:
+          ENTER_NOTIF: NOTIF_BASIC
+          CARD: CARD_ELEMENTARY
+          GIFT: GIFT_ELEMENTARY
+          ENTER_ANIMATION: ANIMATION_ELEMENTARY
+          STEALTH_FOLLOW: STEALTH_FOLLOW_BASIC
+          MARQUEE: MARQUEE_NONE
+          CARD_BORDER: BORDER_NONE
+          STEALTH_LEADERBOARD: STEALTH_LB_NONE
+          PRIVATE_MSG: PRIVATE_MSG_NONE
     - level: 5
       minPoint:  50
       imageURL:
       msgBadgeURL: http://cdn.17app.co/76ae055a-e801-4389-8b47-c92beec93be7.png 
+      permissions:
+          ENTER_NOTIF: NOTIF_BASIC
+          CARD: CARD_ELEMENTARY
+          GIFT: GIFT_ELEMENTARY
+          ENTER_ANIMATION: ANIMATION_ELEMENTARY
+          STEALTH_FOLLOW: STEALTH_FOLLOW_BASIC
+          MARQUEE: MARQUEE_BASIC
+          CARD_BORDER: BORDER_ELEMENTARY
+          STEALTH_LEADERBOARD: STEALTH_LB_NONE
+          PRIVATE_MSG: PRIVATE_MSG_NONE
     - level: 6
       minPoint:  60
       imageURL:
       msgBadgeURL: http://cdn.17app.co/715fe167-7e42-411f-b806-3804c73acf14.png
+      permissions:
+          ENTER_NOTIF: NOTIF_BASIC
+          CARD: CARD_ELEMENTARY
+          GIFT: GIFT_INTERMIDIATE
+          ENTER_ANIMATION: ANIMATION_INTERMIDIATE
+          STEALTH_FOLLOW: STEALTH_FOLLOW_BASIC
+          MARQUEE: MARQUEE_BASIC
+          CARD_BORDER: BORDER_ELEMENTARY
+          STEALTH_LEADERBOARD: STEALTH_LB_NONE
+          PRIVATE_MSG: PRIVATE_MSG_NONE
     - level: 7
       minPoint:  70
       imageURL:
       msgBadgeURL: http://cdn.17app.co/1d6c3713-d186-4399-9a56-96155ec48622.png
+      permissions:
+          ENTER_NOTIF: NOTIF_BASIC
+          CARD: CARD_INTERMIDIATE
+          GIFT: GIFT_INTERMIDIATE
+          ENTER_ANIMATION: ANIMATION_INTERMIDIATE
+          STEALTH_FOLLOW: STEALTH_FOLLOW_BASIC
+          MARQUEE: MARQUEE_BASIC
+          CARD_BORDER: BORDER_INTERMIDIATE
+          STEALTH_LEADERBOARD: STEALTH_LB_BASIC
+          PRIVATE_MSG: PRIVATE_MSG_NONE
     - level: 8
       minPoint:  80
       imageURL:
       msgBadgeURL: http://cdn.17app.co/f12f8a25-e363-499c-999d-fbc1017c8334.png 
+      permissions:
+          ENTER_NOTIF: NOTIF_BASIC
+          CARD: CARD_INTERMIDIATE
+          GIFT: GIFT_INTERMIDIATE
+          ENTER_ANIMATION: ANIMATION_INTERMIDIATE
+          STEALTH_FOLLOW: STEALTH_FOLLOW_BASIC
+          MARQUEE: MARQUEE_BASIC
+          CARD_BORDER: BORDER_INTERMIDIATE
+          STEALTH_LEADERBOARD: STEALTH_LB_BASIC
+          PRIVATE_MSG: PRIVATE_MSG_BASIC
     - level: 9
       minPoint:  90
       imageURL:
       msgBadgeURL: http://cdn.17app.co/17f4cf94-fe15-4c63-a2cc-e12c07229192.png
+      permissions:
+          ENTER_NOTIF: NOTIF_BASIC
+          CARD: CARD_ADVANCED
+          GIFT: GIFT_ADVANCED
+          ENTER_ANIMATION: ANIMATION_ADVANCED
+          STEALTH_FOLLOW: STEALTH_FOLLOW_BASIC
+          MARQUEE: MARQUEE_BASIC
+          CARD_BORDER: BORDER_ADVANCED
+          STEALTH_LEADERBOARD: STEALTH_LB_BASIC
+          PRIVATE_MSG: PRIVATE_MSG_BASIC
     - level: 10
       minPoint:  100
       imageURL:
       msgBadgeURL: http://cdn.17app.co/c4636bad-1e38-42e4-98a0-2ce53641855b.png
+      permissions:
+          ENTER_NOTIF: NOTIF_BASIC
+          CARD: CARD_ADVANCED
+          GIFT: GIFT_ADVANCED
+          ENTER_ANIMATION: ANIMATION_ADVANCED
+          STEALTH_FOLLOW: STEALTH_FOLLOW_BASIC
+          MARQUEE: MARQUEE_BASIC
+          CARD_BORDER: BORDER_ADVANCED
+          STEALTH_LEADERBOARD: STEALTH_LB_BASIC
+          PRIVATE_MSG: PRIVATE_MSG_BASIC
 rules:
     - mlevel_rule_content_1
     - mlevel_rule_content_2
