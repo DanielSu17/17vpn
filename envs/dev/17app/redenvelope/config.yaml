@@ -13,6 +13,30 @@ creation_by_streamer: true # for easy to test
 custom_min_point: 1000
 custom_max_point: 9999999
 redenvelopes:
+- id: redenvelope_no_recommend
+  img_URL: http://cdn.17app.co/5e43b968-713e-44ff-ad8d-90e31f6000e6.png # use other to temp 
+  name_token: redenvelope_recommend_name
+  point: 1000
+  min_point: 1000
+  max_point: 1000
+  announceable: false
+  announce_threshold: -171717
+  countdown_time: 5
+  event_time: 10
+  fee: 50
+  theme: 1
+  is_offline: false
+  region_mode: 2
+  regions: ["TW"]
+  package_list:
+    - amount: 1
+      point: 204
+    - amount: 1
+      point: 158
+    - amount: 1
+      point: 137
+    - amount: 5
+      point: 100
 - id: redenvelope_no_custom
   img_URL: http://cdn.17app.co/203fb9b5-9d97-4b15-bcdf-2dcb2cc76b1a.png
   name_token: redenvelope_customize_name
