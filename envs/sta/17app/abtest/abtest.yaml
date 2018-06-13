@@ -1,9 +1,9 @@
 - testName: newbieFocus
-  enableABtest: false
-  enableRegion: ["TW"]
+  enableABtest: true
+  enableRegion: ["JP"]
   expiredSecond: 259200 # 3 days
   lastCharGroup:
-    # for easily test, 1 group a, 15 group b
+    # for easily test, 0 group a, 16 group b
     "0": "b"
     "1": "b"
     "2": "b"
@@ -22,10 +22,10 @@
     "f": "b"
 - testName: newbieGuidance
   enableABtest: true
-  enableRegion: ["TW"]
+  enableRegion: ["TW", "JP"]
   expiredSecond: 259200 # 3 days
   lastCharGroup:
-    # for easily test, 1 group a, 15 group b
+    # for easily test, 0 group a, 16 group b
     "0": "b"
     "1": "b"
     "2": "b"
