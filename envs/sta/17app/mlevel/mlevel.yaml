@@ -11,6 +11,65 @@ backgroundSetting:
     url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDdIgRgi0stpfKG209TbsT2MhYbuNE08U_ZNJ7PYsjDroL6HxHT4H9pSJz"
     textColor: "#9F88FF"
     bgColor: "#E8CCFF" 
+
+permissions:
+    enterNotif:
+        - level: 1
+          name: NOTIF_BASIC
+          key: mlevel_privilege_A
+    card:
+        - level: 2
+          name: CARD_ELEMENTARY
+          key: mlevel_privilege_B
+        - level: 7
+          name: CARD_INTERMIDIATE
+          key: mlevel_privilege_E
+        - level: 9
+          name: CARD_ADVANCED
+          key: mlevel_privilege_M
+    gift:
+        - level: 3
+          name: GIFT_ELEMENTARY
+          key: mlevel_privilege_C
+        - level: 6
+          name: GIFT_INTERMIDIATE
+          key: mlevel_privilege_H
+        - level: 9
+          name: GIFT_ADVANCED
+          key: mlevel_privilege_N
+    enterAnimation:
+        - level: 4
+          name: ANIMATION_ELEMENTARY
+          key: mlevel_privilege_D
+        - level: 6
+          name: ANIMATION_INTERMIDIATE
+          key: mlevel_privilege_I
+        - level: 9
+          name: ANIMATION_ADVANCED
+          key: mlevel_privilege_O
+    marquee:
+        - level: 5
+          name: MARQUEE_NORMAL
+          key: mlevel_privilege_F
+    cardBorder:
+        - level: 5
+          name: BORDER_ELEMENTARY
+          key: mlevel_privilege_G
+        - level: 7
+          name: BORDER_INTERMIDIATE
+          key: mlevel_privilege_K
+        - level: 9
+          name: BORDER_ADVANCED
+          key: mlevel_privilege_P
+    stealthLeaderboard:
+        - level: 7
+          name: STEALTH_LB_BASIC
+          key: mlevel_privilege_J
+    privateMsg:
+        - level: 8
+          name: PRIVATE_MSG_BASIC
+          key: mlevel_privilege_L
+
 # level / point mapping table
 # level 0 is only for giving the imageURL
 # msgBadgeURL will be shown in comment msg
