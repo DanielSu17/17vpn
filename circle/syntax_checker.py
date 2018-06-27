@@ -3,6 +3,7 @@
 import os
 import yaml
 import json
+from ruamel.yaml import YAML
 import sys
 
 check_file_count = 0
@@ -14,7 +15,9 @@ for dirpath, dirnames, filenames in os.walk("."):
         with open(full_filename, 'r') as stream:
             try:
                 if full_filename.endswith('.yaml') or full_filename.endswith('yml'):
-                    yaml.load(stream)
+                    # YAML(typ='safe') accomplishes the same as what yaml.safe_load() did
+                    yamll=YAML(typ='safe')
+                    yamll.load(stream)
                 if full_filename.endswith('.json'):
                     json.load(stream)
             except yaml.YAMLError as exc:

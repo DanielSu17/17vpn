@@ -23,7 +23,7 @@ jobs:
           name: syntax check
           command: |
             sudo pip install -r ./circle/requirements.txt
-            # ./circle/syntax_checker.py
+            ./circle/syntax_checker.py
             echo "ok"
   deploy:
     <<: *default
