@@ -7,7 +7,6 @@ import sys
 import requests
 import json
 import yaml
-from ruamel.yaml import YAML
 import importlib
 
 # python3 sys doesn't have setdefaultencoding
@@ -121,9 +120,7 @@ def local_syntax_checker(filepath):
     with open(filepath, 'r') as stream:
         try:
             if filepath.endswith('.yaml') or filepath.endswith('yml'):
-                # YAML(typ='safe') accomplishes the same as what yaml.safe_load() did
-                yamll=YAML(typ='safe')
-                yamll.load(stream)
+                yaml.load(stream)
             if filepath.endswith('.json'):
                 json.load(stream)
             print("  {} ==> {}".format(filepath, highlight('succeed', 'green')))
