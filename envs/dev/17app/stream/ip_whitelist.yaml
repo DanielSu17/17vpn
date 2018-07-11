@@ -1,15 +1,18 @@
 enabled: false
 appVersion:  # app from this version should support handling generic errors
-        ios: 2.39.0
-        android: 2.2.95
-viewer:
-        restricted_ips:
-                - 61.216.89.10
-        whitelist:
-                - 885c16fb-4d2b-4722-a323-295aa5788574
-streamer: 
-        restricted_ips:
-                - 42.77.106.44
-                - 61.216.89.10
-        whitelist:
-                - 2a091777-b06d-4cad-9b02-70193365e1e3
+    ios: 2.39.0
+    android: 2.2.95
+viewer_rules:
+    - restricted_ips:
+        - "61.216.89.10"
+      whitelist: 
+        - "885c16fb-4d2b-4722-a323-295aa5788574"
+streamer_rules: 
+    - restricted_ips:
+        - "42.77.106.44"
+      whitelist:
+        - "2a091777-b06d-4cad-9b02-70193365e1e3"
+    - restricted_ips:
+        - "61.216.89.10"
+      whitelist:
+        - "2a091777-b06d-4cad-9b02-70193365e1e3"
