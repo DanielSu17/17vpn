@@ -1,6 +1,6 @@
 missions:
   - type: 1 #17Q答題白天場
-    category: 1
+    category: 1 # reward count depends on multiple of goal value
     reward:
       rewardType: 1
       rewardID: "1805_tw_summer_party_pop"
@@ -17,21 +17,26 @@ missions:
         endTime: "2018-06-28 04:59:59 (GMT+0800)"
   
   - type: 2 #17Q答題晚上場
-    category: 1
+    category: 1 # reward count depends on multiple of goal value
     reward:
       rewardType: 1
-      rewardID: "1805_tw_summer_party_pop"
+      rewardID: "1807_tw_3rd_anniv_bp_17"
       amount: 1
       expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_trivia_night_reward_title"
-    i18nContent: "baggage_mission_trivia_night_reward_desc"
+    i18nTitle: "baggage_mission_trivia_correct_answered_x_get_y_reward_title"
+    i18nTitleParams:
+      - needMap: false
+        value: "2"
+      - needMap: false
+        value: "1"
+    i18nContent: "baggage_mission_trivia_correct_answered_x_get_y_reward_desc"
     i18nContentParams:
       - needMap: true
-        value: gift_1805_tw_summer_party_pop
+        value: 1807_tw_3rd_anniv_bp_17
     goalValue: 2
     enableTimeRange:
-      - startTime: "2018-06-10 00:00:00 (GMT+0800)"
-        endTime: "2018-06-28 04:59:59 (GMT+0800)"
+      - startTime: "2018-07-12 00:00:00 (GMT+0800)"
+        endTime: "2018-07-22 21:35:59 (GMT+0800)"
   
   - type: 7 #17Q參與
     reward:
