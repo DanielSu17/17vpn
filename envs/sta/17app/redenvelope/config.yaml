@@ -5,6 +5,12 @@
 # theme are defined as following
 # - 1: normal
 # - 2: chinese new year 2018
+# - 3: system reward
+# type are definded as following
+# - 1: normal
+# - 2: custom
+# - 3: system
+# - 4: recommend
 region_mode: 1
 regions: []
 countdown_time: 60 # deprecated
@@ -26,10 +32,11 @@ redenvelopes:
   max_point: 888
   announceable: false
   announce_threshold: -171717
-  countdown_time: 100
+  countdown_time: 25
   event_time: 10
   fee: 0
   theme: 3
+  type: 3
   is_offline: false
   region_mode: 2
   regions: ["TW"]
@@ -48,6 +55,7 @@ redenvelopes:
   event_time: 10
   fee: 250
   theme: 1
+  type: 4
   is_offline: false
   region_mode: 2
   regions: ["TW"]
@@ -82,6 +90,7 @@ redenvelopes:
   event_time: 10
   fee: 50 # workaround, it is percentage * 10
   theme: 1
+  type: 2
   is_offline: false
   region_mode: 1
   regions: []
@@ -114,6 +123,7 @@ redenvelopes:
   event_time: 10
   fee: 94444
   theme: 2
+  type: 1
   is_offline: false
   region_mode: 2
   regions: ["TW", "HK", "SG", "MY"]
@@ -140,6 +150,7 @@ redenvelopes:
   event_time: 10
   fee: 9444
   theme: 2
+  type: 1
   is_offline: false
   region_mode: 2
   regions: ["TW", "HK", "SG", "MY"]
@@ -166,6 +177,7 @@ redenvelopes:
   event_time: 10
   fee: 944
   theme: 2
+  type: 1
   is_offline: false
   region_mode: 2
   regions: ["TW", "HK", "SG", "MY"]
@@ -190,6 +202,7 @@ redenvelopes:
   event_time: 10
   fee: 94
   theme: 2
+  type: 1
   is_offline: false
   region_mode: 2
   regions: ["TW", "HK", "SG", "MY"]
@@ -212,6 +225,7 @@ redenvelopes:
   event_time: 10
   fee: 44444
   theme: 1
+  type: 1
   is_offline: false
   region_mode: 1
   regions: []
@@ -238,6 +252,7 @@ redenvelopes:
   event_time: 10
   fee: 4444
   theme: 1
+  type: 1
   is_offline: false
   region_mode: 1
   regions: []
@@ -262,6 +277,7 @@ redenvelopes:
   event_time: 10
   fee: 444
   theme: 1
+  type: 1
   is_offline: false
   region_mode: 1
   regions: []
@@ -286,6 +302,7 @@ redenvelopes:
   event_time: 10
   fee: 44
   theme: 1
+  type: 1
   is_offline: false
   region_mode: 1
   regions: []
