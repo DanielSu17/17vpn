@@ -21,10 +21,11 @@ try:
 except NameError:
     pass
 
-modified = re.compile('^[MA]\s+envs\/(?P<env>(prod|sta|awssta))\/(?P<filename>.*)$')
+modified = re.compile('^[MA]\s+envs\/(?P<env>(prod|sta|awssta|dev))\/(?P<filename>.*)$')
 access_token = 'BAf9qBQPVG.yA<b(q2xBF5gLhc5cGp5QF3JMu0'
 api = { 'prod': 'https://api-dsa.17app.co',
         'sta': 'https://sta-api.17app.co',
+        'dev': 'https://sta-api.17app.co',
         'awssta': 'https://17smart-sta.17app.co'}
 result, warning, syntax_error_count = 0, 0, 0
 
