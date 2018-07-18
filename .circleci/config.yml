@@ -28,10 +28,10 @@ jobs:
   deploy:
     <<: *default
     steps:
-      - run:
-          name: deliver configuration to AWS
-          command: |
-            curl "${DEPLOY_URL}&REVISION=${CIRCLE_SHA1}"
+      # - run:
+      #     name: deliver configuration to AWS
+      #     command: |
+      #       curl "${DEPLOY_URL}&REVISION=${CIRCLE_SHA1}"
       - run:
           name: deliver configuration to GCP
           command: |
