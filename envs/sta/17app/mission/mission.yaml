@@ -8,7 +8,7 @@ missions:
     i18nTitle: "baggage_mission_send_any_gifts_reward_title"
     i18nTitleParams:
       - needMap: false
-        value: "5"
+        value: "10"
     i18nContent: "baggage_mission_send_any_gifts_reward_desc"
     i18nContentParams:
       - needMap: true
@@ -21,13 +21,13 @@ missions:
       rewardID: "1805_tw_summer_party_pop"
       amount: 5
       expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_send_any_gifts_reward_title"
+    i18nTitle: "baggage_mission_send_specific_gifts_reward_title"
     i18nTitleParams:
       - needMap: false
-        value: "5"
+        value: "3"
       - needMap: false
         value: "蛋糕"
-    i18nContent: "baggage_mission_send_any_gifts_reward_desc"
+    i18nContent: "baggage_mission_send_specific_gifts_reward_desc"
     i18nContentParams:
       - needMap: true
         value: gift_1805_tw_summer_party_pop
@@ -118,6 +118,7 @@ missions:
       - needMap: true
         value: gift_1805_tw_summer_party_pop
     goalValue: 1
+  
   - type: 1 #17Q答題白天
     category: 1 # reward count depends on multiple of goal value
     reward:
@@ -139,6 +140,7 @@ missions:
     enableTimeRange:
       - startTime: "2018-07-12 00:00:00 (GMT+0800)"
         endTime: "2018-08-22 21:35:59 (GMT+0800)"
+  
   - type: 2 #17Q答題晚上場
     category: 1 # reward count depends on multiple of goal value
     reward:
