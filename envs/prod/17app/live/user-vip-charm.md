@@ -1,2 +1,1 @@
-# <user ID>: <vip charm url>
-
+# VIP 搖滾區吊飾
