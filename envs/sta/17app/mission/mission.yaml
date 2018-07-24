@@ -1,4 +1,40 @@
 missions:
+  - type: 4 #17show留言
+    reward:
+      rewardType: 1
+      rewardID: "1805_tw_summer_party_pop"
+      amount: 5
+      expireTimeSecs: 86400
+    i18nTitle: "baggage_mission_leave_comment_any_program_reward_title"
+    i18nTitleParams:
+      - needMap: false
+        value: "10"
+    i18nContent: "baggage_mission_leave_comment_any_program_reward_desc"
+    i18nContentParams:
+      - needMap: true
+        value: gift_1805_tw_summer_party_pop
+    goalValue: 10
+
+  - type: 4 #17show留言(綁roomID)
+    reward:
+      rewardType: 1
+      rewardID: "1807_tw_3rd_anniv_bp_17"
+      amount: 10
+      expireTimeSecs: 86400
+    i18nTitle: "baggage_mission_leave_comment_certain_program_reward_title"
+    i18nTitleParams:
+      - needMap: false
+        value: "jen87go"
+      - needMap: false
+        value: "20"
+    i18nContent: "baggage_mission_leave_comment_certain_program_reward_desc"
+    i18nContentParams:
+      - needMap: true
+        value: 1807_tw_3rd_anniv_bp_17
+    goalValue: 20
+    refIDs:
+      - "171324"
+
   - type: 3 #送禮(不綁禮物ID)
     reward:
       rewardType: 1
