@@ -1,13 +1,76 @@
+# Type 0: MARQUEE_NORMAL
+# Type 1: MARQUEE_ICON
+# Type 2: MARQUEE_AVATAR
+
 # For marquee comment feature
 marquees:
   - type: 0
     point: 19999
     enabled: true
 
-marqueeSettings:
-  - type: 0
+typeSettings:
+  - type: MARQUEE_NORMAL
     disabledRegions: []
-  - type: 1
+  - type: MARQUEE_ICON
     disabledRegions: []
-  - type: 2
-    disabledRegions: ["JP"]
+  - type: MARQUEE_AVATAR
+    disabledRegions: [JP]
+
+featureTypeSettings:
+  - featureType: DEFAULT
+    type: MARQUEE_NORMAL
+    priority: 1
+  - featureType: SYSTEM
+    type: MARQUEE_NORMAL
+    priority: 1
+  - featureType: OPERATION
+    type: MARQUEE_NORMAL
+    priority: 3
+  - featureType: POKE_CHALLENGE_SUCCESS
+    type: MARQUEE_NORMAL
+    priority: -1
+  - featureType: LEADERBOARD_DAILY_RANK
+    type: MARQUEE_NORMAL
+    priority: -1
+  - featureType: LUCKYBAG
+    type: MARQUEE_ICON
+    priority: 1
+  - featureType: RED_ENVELOP_NOTICE
+    type: MARQUEE_ICON
+    priority: 1
+  - featureType: RED_ENVELOP_PROMOTE
+    type: MARQUEE_ICON
+    priority: 1
+  - featureType: RED_ENVELOP_CUSTOM
+    type: MARQUEE_ICON
+    priority: 1
+  - featureType: GIFT_SLOT
+    type: MARQUEE_ICON
+    priority: 1
+  - featureType: SPORTS_CAR_STREAMER
+    type: MARQUEE_NORMAL
+    priority: -1
+  - featureType: SPORTS_CAR_X50_PRIZE
+    type: MARQUEE_NORMAL
+    priority: -1
+  - featureType: MARQUEE_COMMENT
+    type: MARQUEE_ICON
+    priority: 2
+  - featureType: GIFT_PRODUCER
+    type: MARQUEE_ICON
+    priority: 3
+  - featureType: GIFT_BARRAGE
+    type: MARQUEE_AVATAR
+    priority: 1
+  - featureType: GIFT_MARQUEE
+    type: MARQUEE_AVATAR
+    priority: 2
+  - featureType: POINT_ACHIEVEMENT
+    type: MARQUEE_NORMAL
+    priority: -1
+  - featureType: MONSTER_BATTLE_SUCCESS
+    type: MARQUEE_AVATAR
+    priority: 1
+  - featureType: SUPERSTAR
+    type: MARQUEE_NORMAL
+    priority: 1
