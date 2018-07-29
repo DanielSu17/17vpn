@@ -3,6 +3,17 @@ topics:
     name: "all"
     eventIDLimitation:
     eventLimitationErrorMsg:
+  - nameToken: "subtab_live_stream_option_bronze"
+    name: "bronze"
+    eventIDLimitation:
+      - 350
+    eventLimitationErrorMsg:
+      key: "subtab_config_setting_error_message" 
+      params:
+        - needMap: true
+          value: "subtab_live_stream_option_bronze"
+        - needMap: true
+          value: "event_bronze"
   - nameToken: "subtab_live_stream_option_olympic"
     name: "olympic"
     eventIDLimitation:
