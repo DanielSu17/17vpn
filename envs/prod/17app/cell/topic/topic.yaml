@@ -14,17 +14,37 @@ topics:
           value: "subtab_live_stream_option_chatroom"
         - needMap: true
           value: "event_chatroom"
-  - nameToken: "subtab_live_stream_option_olympic"
-    name: "olympic"
+    timeRange:
+        - startTime: "2018-07-30 00:00:00 (GMT+0800)"
+          endTime: "2018-07-30 23:59:59 (GMT+0800)"
+  - nameToken: "subtab_live_stream_option_twinklestar"
+    name: "twinklestar"
     eventIDLimitation:
-      - 321
+      - 306
     eventLimitationErrorMsg:
       key: "subtab_config_setting_error_message" 
       params:
         - needMap: true
-          value: "subtab_live_stream_option_olympic"
+          value: "subtab_live_stream_option_twinklestar"
         - needMap: true
-          value: "event_olympic"
+          value: "event_twinklestar"
+    timeRange:
+        - startTime: "2018-07-31 00:00:00 (GMT+0800)"
+          endTime: "2018-07-31 23:59:59 (GMT+0800)"
+  - nameToken: "subtab_live_stream_option_londonfashionweek"
+    name: "londonfashionweek"
+    eventIDLimitation:
+      - 352
+    eventLimitationErrorMsg:
+      key: "subtab_config_setting_error_message" 
+      params:
+        - needMap: true
+          value: "subtab_live_stream_option_londonfashionweek"
+        - needMap: true
+          value: "event_londonfashionweek"
+    timeRange:
+        - startTime: "2018-07-30 18:00:00 (GMT+0800)"
+          endTime: "2018-08-25 23:59:59 (GMT+0800)"
   - nameToken: "subtab_live_stream_option1"
     name: "chat"
     eventIDLimitation:
