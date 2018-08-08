@@ -1,93 +1,137 @@
 platform:
   ios:
     default:
-      17:
-        enable: true
-        features:
-          - id: skin
-            enable: true
-            min: 0
-            max: 1
-            default: 0
-            toggle: true
-      360:
-        enable: false
-        features:
-          - id: bigEye
-            enable: true
-            min: 0
-            max: 50
-            default: 0
-          - id: thinFace
-            enable: true
-            min: 0
-            max: 50
-            default: 0
-          - id: skinPinking
-            enable: true
-            min: 0
-            max: 100
-            default: 50
-          - id: skinRedden
-            enable: true
-            min: 0
-            max: 100
-            default: 50
-          - id: skinWhitening
-            enable: true
-            min: 0
-            max: 100
-            default: 50
-          - id: skinSoften
-            enable: true
-            min: 0
-            max: 100
-            default: 50
-    iPhone1,3:
-    iPhone2,3:
-    iPhone3,3:
-    iPhone4,3:
+      enable: false
+      features:
+        - id: bigEye
+          enable: true
+          min: 0
+          max: 100
+          default: 50
+          adjustMode: slider
+          displayName: 12345
+          iconUrl: abc
+          type: 360
+        - id: thinFace
+          enable: true
+          min: 1
+          max: 99
+          default: 49
+          adjustMode: slider
+          displayName: 12345
+          iconUrl: abc
+          type: 360
+        - id: skinPinking
+          enable: true
+          min: 2
+          max: 98
+          default: 48
+          adjustMode: slider
+          displayName: 12345
+          iconUrl: abc
+          type: 360
+        - id: skinRedden
+          enable: true
+          min: 3
+          max: 97
+          default: 47
+          adjustMode: slider
+          displayName: 12345
+          iconUrl: abc
+          type: 360
+        - id: skinWhitening
+          enable: true
+          min: 4
+          max: 96
+          default: 46
+          adjustMode: slider
+          displayName: 12345
+          iconUrl: abc
+          type: 360
+        - id: skinSoften
+          enable: true
+          min: 5
+          max: 95
+          default: 45
+          adjustMode: slider
+          displayName: 12345
+          iconUrl: abc
+          type: 360
+        - id: 17skin
+          enable: true
+          min: 0
+          max: 1
+          default: 0
+          adjustMode: toggle
+          displayName: 12345
+          iconUrl: abc
+          type: 17
+    iPhone5,3:
   android:
     default:
-      17:
-        enable: true
-        features:
-          - id: skin
-            enable: true
-            min: 0
-            max: 1
-            default: 0
-            toggle: true
-      360:
-        enable: false
-        features:
-          - id: bigEye
-            enable: true
-            min: 0
-            max: 50
-            default: 0
-          - id: thinFace
-            enable: true
-            min: 0
-            max: 50
-            default: 0
-          - id: skinPinking
-            enable: true
-            min: 0
-            max: 100
-            default: 50
-          - id: skinRedden
-            enable: true
-            min: 0
-            max: 100
-            default: 50
-          - id: skinWhitening
-            enable: true
-            min: 0
-            max: 100
-            default: 50
-          - id: skinSoften
-            enable: true
-            min: 0
-            max: 100
-            default: 50
+      enable: false
+      features:
+        - id: bigEye
+          enable: true
+          min: 0
+          max: 100
+          default: 50
+          adjustMode: slider
+          displayName: 12345
+          iconUrl: abc
+          type: 360
+        - id: thinFace
+          enable: true
+          min: 1
+          max: 99
+          default: 49
+          adjustMode: slider
+          displayName: 12345
+          iconUrl: abc
+          type: 360
+        - id: skinPinking
+          enable: true
+          min: 2
+          max: 98
+          default: 48
+          adjustMode: slider
+          displayName: 12345
+          iconUrl: abc
+          type: 360
+        - id: skinRedden
+          enable: true
+          min: 3
+          max: 97
+          default: 47
+          adjustMode: slider
+          displayName: 12345
+          iconUrl: abc
+          type: 360
+        - id: skinWhitening
+          enable: true
+          min: 4
+          max: 96
+          default: 46
+          adjustMode: slider
+          displayName: 12345
+          iconUrl: abc
+          type: 360
+        - id: skinSoften
+          enable: true
+          min: 5
+          max: 95
+          default: 45
+          adjustMode: slider
+          displayName: 12345
+          iconUrl: abc
+          type: 360
+        - id: 17skin
+          enable: true
+          min: 0
+          max: 1
+          default: 0
+          adjustMode: toggle
+          displayName: 12345
+          iconUrl: abc
+          type: 17
+    Pixel 2:
