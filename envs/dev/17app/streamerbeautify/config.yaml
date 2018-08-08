@@ -3,47 +3,29 @@ platform:
     default:
       enable: true
       features:
-        - id: bigEye
-          enable: true
-          min: 0
-          max: 100
-          default: 50
-          adjustMode: slider
-          displayName: 大眼
-          iconUrl: http://cdn.17app.co/producer-badge-starrchen-38x38px.png
-          type: 360
-        - id: thinFace
-          enable: true
-          min: 1
-          max: 99
-          default: 49
-          adjustMode: slider
-          displayName: 瘦臉
-          iconUrl: http://cdn.17app.co/producer-badge-roger-38x38px.png
-          type: 360
         - id: skinPinking
           enable: true
-          min: 2
-          max: 98
-          default: 48
+          min: 0
+          max: 1
+          default: 0,2
           adjustMode: slider
           displayName: 粉
           iconUrl: http://cdn.17app.co/producer-badge-skot-38x38px.png
           type: 360
         - id: skinRedden
           enable: true
-          min: 3
-          max: 97
-          default: 47
+          min: 0
+          max: 1
+          default: 0.4
           adjustMode: slider
           displayName: 12345
           iconUrl: http://cdn.17app.co/producer-badge-razor-38x38px.png
           type: 360
         - id: skinWhitening
           enable: true
-          min: 4
-          max: 96
-          default: 46
+          min: 0
+          max: 1
+          default: 0.6
           adjustMode: slider
           displayName: 白
           iconUrl: http://cdn.17app.co/producer-badge-tower-38x38px.png
@@ -65,53 +47,53 @@ platform:
           adjustMode: toggle
           displayName: 美肌
           iconUrl: http://cdn.17app.co/producer-badge-jerryc-38x38px.png
+         - id: bigEye
+          enable: true
+          min: 0
+          max: 100
+          default: 50
+          adjustMode: slider
+          displayName: 大眼
+          iconUrl: http://cdn.17app.co/producer-badge-starrchen-38x38px.png
+          type: 360
+        - id: thinFace
+          enable: true
+          min: 1
+          max: 99
+          default: 49
+          adjustMode: slider
+          displayName: 瘦臉
+          iconUrl: http://cdn.17app.co/producer-badge-roger-38x38px.png
+          type: 360
           type: 17
     iPhone5,3:
   android:
     default:
       enable: true
       features:
-        - id: bigEye
+       - id: skinPinking
           enable: true
           min: 0
-          max: 100
-          default: 50
-          adjustMode: slider
-          displayName: 大眼
-          iconUrl: http://cdn.17app.co/producer-badge-starrchen-38x38px.png
-          type: 360
-        - id: thinFace
-          enable: true
-          min: 1
-          max: 99
-          default: 49
-          adjustMode: slider
-          displayName: 瘦臉
-          iconUrl: http://cdn.17app.co/producer-badge-roger-38x38px.png
-          type: 360
-        - id: skinPinking
-          enable: true
-          min: 2
-          max: 98
-          default: 48
+          max: 1
+          default: 0.2
           adjustMode: slider
           displayName: 粉
           iconUrl: http://cdn.17app.co/producer-badge-skot-38x38px.png
           type: 360
         - id: skinRedden
           enable: true
-          min: 3
-          max: 97
-          default: 47
+          min: 0
+          max: 1
+          default: 0.4
           adjustMode: slider
           displayName: 12345
           iconUrl: http://cdn.17app.co/producer-badge-razor-38x38px.png
           type: 360
         - id: skinWhitening
           enable: true
-          min: 4
-          max: 96
-          default: 46
+          min: 0
+          max: 1
+          default: 0.6
           adjustMode: slider
           displayName: 白
           iconUrl: http://cdn.17app.co/producer-badge-tower-38x38px.png
@@ -133,5 +115,23 @@ platform:
           adjustMode: toggle
           displayName: 美肌
           iconUrl: http://cdn.17app.co/producer-badge-jerryc-38x38px.png
+         - id: bigEye
+          enable: true
+          min: 0
+          max: 100
+          default: 50
+          adjustMode: slider
+          displayName: 大眼
+          iconUrl: http://cdn.17app.co/producer-badge-starrchen-38x38px.png
+          type: 360
+        - id: thinFace
+          enable: true
+          min: 1
+          max: 99
+          default: 49
+          adjustMode: slider
+          displayName: 瘦臉
+          iconUrl: http://cdn.17app.co/producer-badge-roger-38x38px.png
+          type: 360
           type: 17
     Pixel 2:
