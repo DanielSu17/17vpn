@@ -4,28 +4,157 @@ enable: true
 # 0: available for all level. Otherwise, apply it for users below the level
 level: 0
 
-# daily sign-in reward for each day: [1st, 2nd, 3rd, 4th, 5th, 6th, 7th]
-rewards: [10, 15, 20, 25, 30, 35, 40]
-
 # disable auto sign in hottest
 disableSignInHottest: false
 
 # daily for sign-in reward for voucher version
 enableSignInReward: true
 signInRewards:
-  - exp: 10
-  - exp: 15
-  - exp: 20
-  - exp: 25
   - exp: 30
   - exp: 35
+    voucherReward:
+      type: 1
+      itemID: "voucher_gift_wave"
+      tokenName: "voucher_daily_reward12"
+      amount: 2
+      intervalSec: 28800
   - exp: 40
+  - exp: 45
+    voucherReward:
+      type: 1
+      itemID: "voucher_gift_wave"
+      tokenName: "voucher_daily_reward12"
+      amount: 2
+      intervalSec: 28800
+  - exp: 50
+  - exp: 55
+    voucherReward:
+      type: 1
+      itemID: "voucher_gift_wave"
+      tokenName: "voucher_daily_reward12"
+      amount: 2
+      intervalSec: 28800
+  - exp: 60
+    voucherReward:
+      type: 1
+      itemID: "1805_tw_summer_party_pop"
+      tokenName: "voucher_daily_gift_partyking"
+      amount: 2
+      intervalSec: 28800
+  - exp: 30
+  - exp: 35
+    voucherReward:
+      type: 1
+      itemID: "voucher_gift_wave"
+      tokenName: "voucher_daily_reward12"
+      amount: 2
+      intervalSec: 28800
+  - exp: 40
+  - exp: 45
+    voucherReward:
+      type: 1
+      itemID: "voucher_gift_wave"
+      tokenName: "voucher_daily_reward12"
+      amount: 2
+      intervalSec: 28800
+  - exp: 50
+  - exp: 55
+    voucherReward:
+      type: 1
+      itemID: "voucher_gift_wave"
+      tokenName: "voucher_daily_reward12"
+      amount: 2
+      intervalSec: 28800
+  - exp: 60
+    voucherReward:
+      type: 1
+      itemID: "voucher_gift_wave"
+      tokenName: "voucher_daily_reward12"
+      amount: 5
+      intervalSec: 28800
+  - exp: 30
+  - exp: 35
+    voucherReward:
+      type: 1
+      itemID: "voucher_gift_wave"
+      tokenName: "voucher_daily_reward12"
+      amount: 2
+      intervalSec: 28800
+  - exp: 40
+  - exp: 45
+    voucherReward:
+      type: 1
+      itemID: "voucher_gift_wave"
+      tokenName: "voucher_daily_reward12"
+      amount: 2
+      intervalSec: 28800
+  - exp: 50
+  - exp: 55
+    voucherReward:
+      type: 1
+      itemID: "voucher_gift_wave"
+      tokenName: "voucher_daily_reward12"
+      amount: 2
+      intervalSec: 28800
+  - exp: 60
+    voucherReward:
+      type: 1
+      itemID: "1805_tw_summer_party_pop"
+      tokenName: "voucher_daily_gift_partyking"
+      amount: 5
+      intervalSec: 28800
+  - exp: 30
+  - exp: 35
+    voucherReward:
+      type: 1
+      itemID: "voucher_gift_wave"
+      tokenName: "voucher_daily_reward12"
+      amount: 2
+      intervalSec: 28800
+  - exp: 40
+  - exp: 45
+    voucherReward:
+      type: 1
+      itemID: "voucher_gift_wave"
+      tokenName: "voucher_daily_reward12"
+      amount: 2
+      intervalSec: 28800
+  - exp: 50
+  - exp: 55
+    voucherReward:
+      type: 1
+      itemID: "voucher_gift_wave"
+      tokenName: "voucher_daily_reward12"
+      amount: 2
+      intervalSec: 28800
+  - exp: 60
+    voucherReward:
+      type: 1
+      itemID: "voucher_gift_wave"
+      tokenName: "voucher_daily_reward12"
+      amount: 10
+      intervalSec: 28800
+
+# daily for showing bigRewards UI, must be 4 elements
+bigRewards:
+  - amount: 2
+    tokenName: "voucher_daily_gift_partyking"
+    days: 7
+  - amount: 5
+    tokenName: "voucher_daily_reward12"
+    days: 14
+  - amount: 5
+    tokenName: "voucher_daily_gift_partyking"
+    days: 21
+  - amount: 10
+    tokenName: "voucher_daily_reward12"
+    days: 28
 
 # time interval for resetting daily quest counter
 questInterval: 60
 
 # newbie_days defines who is newbie
-newbieDays: 240
+newbieDays: 1
 
 # newbie_rewards defines newbie quest rewards
 # type are defined as following
@@ -46,6 +175,10 @@ newbieDays: 240
 #     exp: 0
 #     required: 1
 newbieRewards:
+    - type: 1
+      point: 50
+      exp: 0
+      required: 2
     - type: 2
       point: 20
       exp: 0
@@ -58,19 +191,19 @@ newbieRewards:
       point: 30
       exp: 0
       required: 1
-    - type: 8
-      point: 20
-      exp: 0
-      required: 1
+#    - type: 8
+#      point: 20
+#      exp: 0
+#      required: 1
     - type: 9
       point: 20
       exp: 0
-      required: 1
+      required: 3
     - type: 10
       point: 30
       exp: 0
       required: 1
-    - type: 11
-      point: 100
-      exp: 0
-      required: 1
+#    - type: 11
+#      point: 100
+#      exp: 0
+#      required: 1
