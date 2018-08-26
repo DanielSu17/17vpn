@@ -27,48 +27,6 @@
 # // | NON_IAP | 2 |
 
 missions:
-  - ID: 6e19c295-f86a-4d8c-8bc1-199c7430100d
-    type: 8 #IAP
-    reward:
-      rewardType: 1
-      rewardID: "1808_tw_taxi_bonus_20"
-      amount: 1
-      expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_first_time_IAP_reward_title"
-    i18nTitleParams:
-      - needMap: false
-        value: "1"
-    i18nContent: "baggage_mission_first_time_IAP_reward_desc"
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: "gift_1808_tw_taxi_bonus_20"
-    goalValue: 1
-    enableTimeRange:
-      - startTime: "2018-08-12 18:00:00 (GMT+0800)"
-        endTime: "2018-08-21 23:59:59 (GMT+0800)"
-
-  - ID: 8f857940-dcf3-4a24-8a3a-0e17a4e581f0
-    type: 9 #觀看直播
-    reward:
-      rewardType: 1
-      rewardID: "1808_tw_teacher_king_10"
-      amount: 1
-      expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_watch_streams_time_in_total_reward_title"
-    i18nTitleParams:
-      - needMap: false
-        value: "30"
-    i18nContent: "baggage_mission_watch_streams_time_in_total_reward_desc"
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: gift_1808_tw_teacher_king_10
-    goalValue: 1800
-    enableTimeRange:
-      - startTime: "2018-08-16 18:00:00 (GMT+0800)"
-        endTime: "2018-08-25 23:59:59 (GMT+0800)"
-
   - ID: f7f9394f-4695-48da-9aa1-7ec65db08ad6
     type: 9 #觀看直播
     reward:
@@ -90,6 +48,96 @@ missions:
       - startTime: "2018-08-23 18:00:00 (GMT+0800)"
         endTime: "2018-08-31 23:59:59 (GMT+0800)"
 
+  - ID: bc581dea-d5a5-4e2d-8cde-62c8051ba278
+    type: 3 #送禮
+    reward:
+      rewardType: 1
+      rewardID: "1808_tw_summer_festival_45000"
+      amount: 1
+      expireTimeSecs: 86400
+    i18nTitle: "baggage_mission_send_specific_gifts_reward_title"
+    i18nTitleParams:
+      - needMap: false
+        value: "20"
+      - needMap: true
+        mapOption: 1
+        value: gift_1808_tw_sf_ll
+      - needMap: true
+        mapOption: 1
+        value: gift_1808_tw_summer_festival_z_30000
+    i18nContent: "baggage_mission_send_specific_gifts_reward_desc"
+    i18nContentParams:
+      - needMap: true
+        mapOption: 1
+        value: gift_1808_tw_summer_festival_45000
+    goalValue: 20
+    enableTimeRange:
+      - startTime: "2018-08-27 18:00:00 (GMT+0800)"
+        endTime: "2018-09-01 23:59:59 (GMT+0800)"
+    refIDs:
+      - 1808_tw_sf_ll
+      - 1808_tw_summer_festival_z_30000
+
+  - ID: c375a802-9529-43bb-927c-bce007986d5b
+    type: 3 #送禮
+    reward:
+      rewardType: 1
+      rewardID: "1808_tw_summer_festival_4500"
+      amount: 1
+      expireTimeSecs: 86400
+    i18nTitle: "baggage_mission_send_specific_gifts_reward_title"
+    i18nTitleParams:
+      - needMap: false
+        value: "20"
+      - needMap: true
+        mapOption: 1
+        value: gift_1808_tw_sf_lm
+      - needMap: true
+        mapOption: 1
+        value: gift_1808_tw_summer_festival_z_3000
+    i18nContent: "baggage_mission_send_specific_gifts_reward_desc"
+    i18nContentParams:
+      - needMap: true
+        mapOption: 1
+        value: gift_1808_tw_summer_festival_4500
+    goalValue: 20
+    enableTimeRange:
+      - startTime: "2018-08-27 18:00:00 (GMT+0800)"
+        endTime: "2018-09-01 23:59:59 (GMT+0800)"
+    refIDs:
+      - 1808_tw_sf_lm
+      - 1808_tw_summer_festival_z_3000
+
+  - ID: 5a21793a-9509-4583-9a55-5d4d7c4a249b
+    type: 3 #送禮
+    reward:
+      rewardType: 1
+      rewardID: "1808_tw_summer_festival_450"
+      amount: 1
+      expireTimeSecs: 86400
+    i18nTitle: "baggage_mission_send_specific_gifts_reward_title"
+    i18nTitleParams:
+      - needMap: false
+        value: "20"
+      - needMap: true
+        mapOption: 1
+        value: gift_1808_tw_sf_ls
+      - needMap: true
+        mapOption: 1
+        value: gift_1808_tw_summer_festival_z_300
+    i18nContent: "baggage_mission_send_specific_gifts_reward_desc"
+    i18nContentParams:
+      - needMap: true
+        mapOption: 1
+        value: gift_1808_tw_summer_festival_450
+    goalValue: 20
+    enableTimeRange:
+      - startTime: "2018-08-27 18:00:00 (GMT+0800)"
+        endTime: "2018-09-01 23:59:59 (GMT+0800)"
+    refIDs:
+      - 1808_tw_sf_ls
+      - 1808_tw_summer_festival_z_300
+
 #tagInfos
 tagInfos:
   0: # Daily
@@ -106,3 +154,28 @@ refreshHour: 5 # 5:00AM(GMT+8)
 supportedVersion:
   android: "2.3.17"
   ios: "3.8.0"
+
+#History
+# - ID: 6e19c295-f86a-4d8c-8bc1-199c7430100d
+#   type: 8 #IAP
+#   reward:
+#     rewardType: 1
+#     rewardID: "1808_tw_taxi_bonus_20"
+#     amount: 1
+#     expireTimeSecs: 86400
+#   goalValue: 1
+#   enableTimeRange:
+#     - startTime: "2018-08-12 18:00:00 (GMT+0800)"
+#       endTime: "2018-08-21 23:59:59 (GMT+0800)"
+
+# - ID: 8f857940-dcf3-4a24-8a3a-0e17a4e581f0
+#   type: 9 #觀看直播
+#   reward:
+#     rewardType: 1
+#     rewardID: "1808_tw_teacher_king_10"
+#     amount: 1
+#     expireTimeSecs: 86400
+#   goalValue: 1800
+#   enableTimeRange:
+#     - startTime: "2018-08-16 18:00:00 (GMT+0800)"
+#       endTime: "2018-08-25 23:59:59 (GMT+0800)"
