@@ -69,6 +69,54 @@ missions:
       - startTime: "2018-08-16 18:00:00 (GMT+0900)"
         endTime: "2018-08-31 23:59:59 (GMT+0900)"
 
+  - ID: f0b6be1b-cc62-45c1-bb93-4283d47f009c
+    type: 1 #白天場答題
+    category: 1 #按比例給reward
+    reward:
+      rewardType: 1
+      rewardID: "1808_jp_17q_quizking"
+      amount: 1
+      expireTimeSecs: 86400
+    i18nTitle: "baggage_mission_trivia_correct_answered_x_get_y_reward_jp_first_trivia_title"
+    i18nTitleParams:
+      - needMap: false
+        value: "2"
+      - needMap: false
+        value: "1"
+    i18nContent: "baggage_mission_trivia_correct_answered_x_get_y_reward_jp_desc"
+    i18nContentParams:
+      - needMap: true
+        mapOption: 1
+        value: gift_1808_jp_17q_quizking
+    goalValue: 2
+    enableTimeRange:
+      - startTime: "2018-08-27 18:00:00 (GMT+0900)"
+        endTime: "2018-09-30 23:59:59 (GMT+0900)"
+
+  - ID: 5023270b-7980-42a9-a34f-486dc5ae0444
+    type: 2 #晚上場答題
+    category: 1 #按比例給reward
+    reward:
+      rewardType: 1
+      rewardID: "1808_jp_17q_quizking"
+      amount: 1
+      expireTimeSecs: 86400
+    i18nTitle: "baggage_mission_trivia_correct_answered_x_get_y_reward_jp_second_trivia_title"
+    i18nTitleParams:
+      - needMap: false
+        value: "2"
+      - needMap: false
+        value: "1"
+    i18nContent: "baggage_mission_trivia_correct_answered_x_get_y_reward_jp_desc"
+    i18nContentParams:
+      - needMap: true
+        mapOption: 1
+        value: gift_1808_jp_17q_quizking
+    goalValue: 2
+    enableTimeRange:
+      - startTime: "2018-08-27 18:00:00 (GMT+0900)"
+        endTime: "2018-09-30 23:59:59 (GMT+0900)"
+
 #tagInfos
 tagInfos:
   0: # Daily
