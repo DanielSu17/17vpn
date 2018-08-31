@@ -27,6 +27,28 @@
 # // | NON_IAP | 2 |
 
 missions:
+  - ID: 8976bf68-c563-419c-a68d-c76b61b08867
+    type: 8 #IAP
+    lifeCycle: 1 #ONETIME
+    reward:
+      rewardType: 1
+      rewardID: "1809_my_mrt_bag"
+      amount: 1
+      expireTimeSecs: 86400
+    i18nTitle: "baggage_mission_first_time_IAP_reward_my_title"
+    i18nTitleParams:
+      - needMap: false
+        value: "1"
+    i18nContent: "baggage_mission_first_time_IAP_reward_my_desc"
+    i18nContentParams:
+      - needMap: true
+        mapOption: 1
+        value: "gift_1809_my_mrt_bag"
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2018-09-03 19:00:00 (GMT+0800)"
+        endTime: "2018-09-23 23:59:59 (GMT+0800)"
+
   - ID: f7f9394f-4695-48da-9aa1-7ec65db08ad6
     type: 9 #觀看直播
     reward:
