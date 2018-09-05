@@ -30,7 +30,6 @@ missions:
   - ID: 77f6740c-700b-4e34-9d74-bc080a27c38e
     type: 8 #IAP
     lifeCycle: 1 #ONETIME
-    targetAudience: 2 #NON_IAP
     reward:
       rewardType: 1
       rewardID: "picnic"
@@ -38,6 +37,8 @@ missions:
       expireTimeSecs: 86400
     i18nTitle: "baggage_mission_first_time_IAP_reward_title"
     i18nTitleParams:
+      - needMap: false
+        value: "1"
     i18nContent: "baggage_mission_first_time_IAP_reward_desc"
     i18nContentParams:
       - needMap: true
