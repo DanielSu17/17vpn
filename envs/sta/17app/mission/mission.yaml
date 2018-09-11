@@ -49,26 +49,26 @@ missions:
       - startTime: "2018-09-04 18:00:00 (GMT+0800)"
         endTime: "2018-09-11 23:59:59 (GMT+0800)"
 
-  - ID: f7f9394f-4695-48da-9aa1-7ec65db08ad6
-    type: 9 #觀看直播
-    levelRange:
-      min: 10
-      max: 30
+  - ID: 7360ef1e-611c-43c2-a039-38ed4ddd0af6
+    type: 1 #答題17Q
+    category: 1
     reward:
       rewardType: 1
       rewardID: "1808_tw_hot_support"
       amount: 1
       expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_watch_streams_time_in_total_reward_crossregion_title"
+    i18nTitle: "baggage_mission_trivia_correct_answered_x_get_y_reward_title"
     i18nTitleParams:
       - needMap: false
-        value: "3"
-    i18nContent: "baggage_mission_watch_streams_time_in_total_reward_crossregion_desc"
+        value: "2"
+      - needMap: false
+        value: "1"
+    i18nContent: "baggage_mission_trivia_correct_answered_x_get_y_reward_desc"
     i18nContentParams:
       - needMap: true
         mapOption: 1
         value: gift_1808_tw_hot_support
-    goalValue: 180
+    goalValue: 2
     enableTimeRange:
       - startTime: "2018-08-16 18:00:00 (GMT+0800)"
         endTime: "2018-09-30 23:59:59 (GMT+0800)"
