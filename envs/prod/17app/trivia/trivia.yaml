@@ -40,7 +40,10 @@ medalActivity:
 hosts:
   TRIVIA:
     "6e9af721-55c5-41d7-91a4-387aceec94a6": # 17Q
-      showBannerTime: # if not giving values, means always show it
+      showBannerTime:
+        weekdays: [1,2,3,4,5,6,7] # 1 ~ 7 means Monday ~ Sunday
+        hourFrom: 0 # GMT+8
+        hourTo: 23 # GMT+8
       disclaimerTitle:
         key: "trivia_disclaimer_title"
       disclaimerText:
