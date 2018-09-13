@@ -27,137 +27,24 @@
 # // | NON_IAP | 2 |
 
 missions:
-  - ID: f7f9394f-4695-48da-9aa1-7ec65db08ad6
-    type: 9 #觀看直播
+  - ID: d82d5a40-d1da-4f3c-b33c-1e8321a1b0a5
+    type: 8 #IAP
     reward:
       rewardType: 1
-      rewardID: "1808_tw_hot_support"
+      rewardID: "1809_hk_magical_bp"
       amount: 1
       expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_watch_streams_time_in_total_reward_crossregion_title"
+    i18nTitle: "baggage_mission_first_time_IAP_reward_hk_title"
     i18nTitleParams:
-      - needMap: false
-        value: "3"
-    i18nContent: "baggage_mission_watch_streams_time_in_total_reward_crossregion_desc"
+    i18nContent: "baggage_mission_first_time_IAP_reward_hk_desc"
     i18nContentParams:
       - needMap: true
         mapOption: 1
-        value: gift_1808_tw_hot_support
-    goalValue: 180
+        value: "gift_1809_hk_magical_bp"
+    goalValue: 1
     enableTimeRange:
-      - startTime: "2018-08-23 18:00:00 (GMT+0800)"
-        endTime: "2018-08-31 23:59:59 (GMT+0800)"
-
-  - ID: bc581dea-d5a5-4e2d-8cde-62c8051ba278
-    type: 3 #送禮
-    reward:
-      rewardType: 1
-      rewardID: "1808_tw_summer_festival_45000"
-      amount: 1
-      expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_send_specific_gifts_reward_title"
-    i18nTitleParams:
-      - needMap: false
-        value: "20"
-      - needMap: true
-        mapOption: 1
-        value: gift_1808_tw_sf_ll
-      - needMap: true
-        mapOption: 1
-        value: gift_1808_tw_summer_festival_z_30000
-    i18nContent: "baggage_mission_send_specific_gifts_reward_desc"
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: gift_1808_tw_summer_festival_45000
-    goalValue: 20
-    enableTimeRange:
-      - startTime: "2018-08-27 18:00:00 (GMT+0800)"
-        endTime: "2018-09-01 23:59:59 (GMT+0800)"
-    refIDs:
-      - 1808_tw_sf_ll
-      - 1808_tw_summer_festival_z_30000
-
-  - ID: c375a802-9529-43bb-927c-bce007986d5b
-    type: 3 #送禮
-    reward:
-      rewardType: 1
-      rewardID: "1808_tw_summer_festival_4500"
-      amount: 1
-      expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_send_specific_gifts_reward_title"
-    i18nTitleParams:
-      - needMap: false
-        value: "20"
-      - needMap: true
-        mapOption: 1
-        value: gift_1808_tw_sf_lm
-      - needMap: true
-        mapOption: 1
-        value: gift_1808_tw_summer_festival_z_3000
-    i18nContent: "baggage_mission_send_specific_gifts_reward_desc"
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: gift_1808_tw_summer_festival_4500
-    goalValue: 20
-    enableTimeRange:
-      - startTime: "2018-08-27 18:00:00 (GMT+0800)"
-        endTime: "2018-09-01 23:59:59 (GMT+0800)"
-    refIDs:
-      - 1808_tw_sf_lm
-      - 1808_tw_summer_festival_z_3000
-
-  - ID: 5a21793a-9509-4583-9a55-5d4d7c4a249b
-    type: 3 #送禮
-    reward:
-      rewardType: 1
-      rewardID: "1808_tw_summer_festival_450"
-      amount: 1
-      expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_send_specific_gifts_reward_title"
-    i18nTitleParams:
-      - needMap: false
-        value: "20"
-      - needMap: true
-        mapOption: 1
-        value: gift_1808_tw_sf_ls
-      - needMap: true
-        mapOption: 1
-        value: gift_1808_tw_summer_festival_z_300
-    i18nContent: "baggage_mission_send_specific_gifts_reward_desc"
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: gift_1808_tw_summer_festival_450
-    goalValue: 20
-    enableTimeRange:
-      - startTime: "2018-08-27 18:00:00 (GMT+0800)"
-        endTime: "2018-09-01 23:59:59 (GMT+0800)"
-    refIDs:
-      - 1808_tw_sf_ls
-      - 1808_tw_summer_festival_z_300
-
-  - ID: 12fe366f-117c-4329-9c28-1ad84150fa00
-    type: 5 #直播留言
-    reward:
-      rewardType: 1
-      rewardID: "1808_tw_haunted_house_10"
-      amount: 1
-      expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_leave_comment_reward_title"
-    i18nTitleParams:
-      - needMap: false
-        value: "10"
-    i18nContent: "baggage_mission_leave_comment_reward_desc"
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: gift_1808_tw_haunted_house_10
-    goalValue: 10
-    enableTimeRange:
-      - startTime: "2018-08-28 18:00:00 (GMT+0800)"
-        endTime: "2018-08-31 23:59:59 (GMT+0800)"
+      - startTime: "2018-09-16 18:00:00 (GMT+0800)"
+        endTime: "2018-09-27 23:59:59 (GMT+0800)"
         
 #tagInfos
 tagInfos:
@@ -175,3 +62,136 @@ refreshHour: 5 # 5:00AM(GMT+8)
 supportedVersion:
   android: "2.3.17"
   ios: "3.8.0"
+
+#History
+# - ID: f7f9394f-4695-48da-9aa1-7ec65db08ad6
+#   type: 9 #觀看直播
+#   reward:
+#     rewardType: 1
+#     rewardID: "1808_tw_hot_support"
+#     amount: 1
+#     expireTimeSecs: 86400
+#   i18nTitle: "baggage_mission_watch_streams_time_in_total_reward_crossregion_title"
+#   i18nTitleParams:
+#     - needMap: false
+#       value: "3"
+#   i18nContent: "baggage_mission_watch_streams_time_in_total_reward_crossregion_desc"
+#   i18nContentParams:
+#     - needMap: true
+#       mapOption: 1
+#       value: gift_1808_tw_hot_support
+#   goalValue: 180
+#   enableTimeRange:
+#     - startTime: "2018-08-23 18:00:00 (GMT+0800)"
+#       endTime: "2018-08-31 23:59:59 (GMT+0800)"
+
+# - ID: bc581dea-d5a5-4e2d-8cde-62c8051ba278
+#   type: 3 #送禮
+#   reward:
+#     rewardType: 1
+#     rewardID: "1808_tw_summer_festival_45000"
+#     amount: 1
+#     expireTimeSecs: 86400
+#   i18nTitle: "baggage_mission_send_specific_gifts_reward_title"
+#   i18nTitleParams:
+#     - needMap: false
+#       value: "20"
+#     - needMap: true
+#       mapOption: 1
+#       value: gift_1808_tw_sf_ll
+#     - needMap: true
+#       mapOption: 1
+#       value: gift_1808_tw_summer_festival_z_30000
+#   i18nContent: "baggage_mission_send_specific_gifts_reward_desc"
+#   i18nContentParams:
+#     - needMap: true
+#       mapOption: 1
+#       value: gift_1808_tw_summer_festival_45000
+#   goalValue: 20
+#   enableTimeRange:
+#     - startTime: "2018-08-27 18:00:00 (GMT+0800)"
+#       endTime: "2018-09-01 23:59:59 (GMT+0800)"
+#   refIDs:
+#     - 1808_tw_sf_ll
+#     - 1808_tw_summer_festival_z_30000
+
+# - ID: c375a802-9529-43bb-927c-bce007986d5b
+#   type: 3 #送禮
+#   reward:
+#     rewardType: 1
+#     rewardID: "1808_tw_summer_festival_4500"
+#     amount: 1
+#     expireTimeSecs: 86400
+#   i18nTitle: "baggage_mission_send_specific_gifts_reward_title"
+#   i18nTitleParams:
+#     - needMap: false
+#       value: "20"
+#     - needMap: true
+#       mapOption: 1
+#       value: gift_1808_tw_sf_lm
+#     - needMap: true
+#       mapOption: 1
+#       value: gift_1808_tw_summer_festival_z_3000
+#   i18nContent: "baggage_mission_send_specific_gifts_reward_desc"
+#   i18nContentParams:
+#     - needMap: true
+#       mapOption: 1
+#       value: gift_1808_tw_summer_festival_4500
+#   goalValue: 20
+#   enableTimeRange:
+#     - startTime: "2018-08-27 18:00:00 (GMT+0800)"
+#       endTime: "2018-09-01 23:59:59 (GMT+0800)"
+#   refIDs:
+#     - 1808_tw_sf_lm
+#     - 1808_tw_summer_festival_z_3000
+
+# - ID: 5a21793a-9509-4583-9a55-5d4d7c4a249b
+#   type: 3 #送禮
+#   reward:
+#     rewardType: 1
+#     rewardID: "1808_tw_summer_festival_450"
+#     amount: 1
+#     expireTimeSecs: 86400
+#   i18nTitle: "baggage_mission_send_specific_gifts_reward_title"
+#   i18nTitleParams:
+#     - needMap: false
+#       value: "20"
+#     - needMap: true
+#       mapOption: 1
+#       value: gift_1808_tw_sf_ls
+#     - needMap: true
+#       mapOption: 1
+#       value: gift_1808_tw_summer_festival_z_300
+#   i18nContent: "baggage_mission_send_specific_gifts_reward_desc"
+#   i18nContentParams:
+#     - needMap: true
+#       mapOption: 1
+#       value: gift_1808_tw_summer_festival_450
+#   goalValue: 20
+#   enableTimeRange:
+#     - startTime: "2018-08-27 18:00:00 (GMT+0800)"
+#       endTime: "2018-09-01 23:59:59 (GMT+0800)"
+#   refIDs:
+#     - 1808_tw_sf_ls
+#     - 1808_tw_summer_festival_z_300
+
+# - ID: 12fe366f-117c-4329-9c28-1ad84150fa00
+#   type: 5 #直播留言
+#   reward:
+#     rewardType: 1
+#     rewardID: "1808_tw_haunted_house_10"
+#     amount: 1
+#     expireTimeSecs: 86400
+#   i18nTitle: "baggage_mission_leave_comment_reward_title"
+#   i18nTitleParams:
+#     - needMap: false
+#       value: "10"
+#   i18nContent: "baggage_mission_leave_comment_reward_desc"
+#   i18nContentParams:
+#     - needMap: true
+#       mapOption: 1
+#       value: gift_1808_tw_haunted_house_10
+#   goalValue: 10
+#   enableTimeRange:
+#     - startTime: "2018-08-28 18:00:00 (GMT+0800)"
+#       endTime: "2018-08-31 23:59:59 (GMT+0800)"
