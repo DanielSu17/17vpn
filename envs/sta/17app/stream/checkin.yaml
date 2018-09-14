@@ -1,9 +1,10 @@
 # A viewer is full attendance at a stream when he checks in a streamer's consecutive lives <count> times.
 #
 # <minDuration> is the min duration in terms of seconds that a stream will be counted in consecutive streams.
+# MinDuration should be larger than 300 seconds
 enable: true
 count: 5
-minDuration: 60
+minDuration: 360
 levelToRock: 2
 levels:
   # level / check in count mapping table
