@@ -3,13 +3,11 @@
 # - 0: NORMAL
 # - 1: NO_LABEL
 # - 2: LUCKY_BAG
-# - 3: SLOT
+# - 3: SLOT  merge into TreasureChest, need to modify DB
 # - 4: Poke
 # - 5: Poll
 # - 6: Newbie
 # - 7: Event # this one is for pushed event
-# - 8: Army
-# - 9: Voucher
 # ex:
 # - id: "example"
 #   type: 1
@@ -40,6 +38,7 @@
     CN: "最近送出"
     ID: "Recent"
     JP: "履歴"
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" ]
 - id: "Newbie"
   type: 6
   inRecent: true
@@ -50,7 +49,8 @@
     ID: "Pemula"
     JP: "初心者"
   maxPoint: 200
-  maxLevel: 60
+  maxLevel: 100
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" ]
 - id: "Event"
   type: 7
   inRecent: true
@@ -60,16 +60,7 @@
     CN: "活動禮"
     ID: "Event"
     JP: "Event"
-- id: "TreasureChest"
-  type: 3
-  inRecent: false
-  name:
-    EN: "Lucky Draw"
-    TW: "好運禮"
-    CN: "好运礼"
-    ID: "Peti Kebahagiaan"
-    JP: "宝のツボ"
-  layout: "treasureChest"
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" ]
 - id: "Baggage"
   type: 10
   inRecent: true
@@ -77,17 +68,19 @@
     EN: "Baggage"
     TW: "背包"
     CN: "背包"
-    ID: "Baggage"
-    JP: "Baggage"
+    ID: "Ransel"
+    JP: "ギフト箱"
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" ]
 - id: "Voucher"
   type: 9
   inRecent: false
   name:
-    EN: "Limited-time Gift"
-    TW: "限時禮"
-    CN: "限时礼"
-    ID: "Gift Sementara"
-    JP: "時間限定ギフト"
+    EN: "Baggage"
+    TW: "背包"
+    CN: "背包"
+    ID: "Ransel"
+    JP: "ギフト箱"
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" ]
 - id: "default"
   type: 1
   inRecent: true
@@ -125,6 +118,7 @@
         EN: "https://assets-17app.akamaized.net/0dac8595-2070-4cc9-8545-72effea14ccb.png"
         TW: "https://assets-17app.akamaized.net/0b866145-0128-4d40-ac5e-58b33c321ed9.png"
         JP: "https://assets-17app.akamaized.net/ea6c8131-6b61-42e0-9a1c-1814d8311ccd.png"
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" ]
 - id: "Texture"
   type: 14
   inRecent: true
@@ -132,8 +126,39 @@
     EN: "Filter"
     TW: "濾鏡禮"
     CN: "滤镜礼"
-    ID: "Upacara penyaringan"
-    JP: "フィルター"
+    ID: "Filter"
+    JP: "エフェクト"
+  allowLabelType: [ "event", "new" ]
+- id: "TreasureChest"
+  type: 3
+  inRecent: true
+  name:
+    EN: "Lucky Draw"
+    TW: "好運禮"
+    CN: "好运礼"
+    ID: "Peti Kebahagiaan"
+    JP: "宝のツボ"
+  layout: "treasureChest"
+  allowLabelType: [ "event", "new" ]
+- id: "GFA"
+  type: 0
+  inRecent: true
+  name:
+    EN: "GFA Voting"
+    TW: "金羽獎投票"
+    CN: "金羽奖投票"
+    ID: "GFA Voting"
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" ]
+- id: "Audio"
+  type: 0
+  inRecent: true
+  name:
+    EN: "Audio Gift"
+    TW: "音效禮"
+    CN: "音效礼"
+    ID: "Gift Suara"
+    JP: "音付きギフト"
+  allowLabelType: [ "event", "new" ]
 - id: "luckyBag"
   type: 2
   inRecent: true
@@ -142,17 +167,8 @@
     TW: "隨機禮"
     CN: "随机礼"
     ID: "Surprise"
-    JP: "ランダムプレゼント"
-- id: "Popular"
-  type: 0
-  inRecent: true
-  name:
-    EN: "Popular"
-    TW: "普普風"
-    CN: "普普风"
-    ID: "Basic"
-  lessThanPoint: 499
-  maxPoint: 499
+    JP: "ランダム"
+  allowLabelType: [ "event", "new" ]
 - id: "Heavenly"
   type: 0
   inRecent: true
@@ -165,6 +181,7 @@
   lessThanPoint: 2147483647
   maxPoint: 2147483647
   minPoint: 10000
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" ]
 - id: "Extravagant"
   type: 0
   inRecent: true
@@ -172,11 +189,11 @@
     EN: "Classic"
     TW: "經典"
     CN: "经典"
-    ID: "Premium"
+    ID: "Classic"
     JP: "定番"
   lessThanPoint: 9999
   maxPoint: 9999
-  minPoint: 500
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" ]
 - id: "Birthday"
   type: 12
   inRecent: true
@@ -185,7 +202,8 @@
     TW: "生日禮"
     CN: "生日礼"
     ID: "Birthday"
-    JP: "誕生日プレゼント"
+    JP: "お誕生日"
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" ]
 - id: "PokeBack"
   type: 4
   inRecent: false
@@ -194,6 +212,7 @@
     TW: "回戳禮"
     CN: "回戳禮"
     ID: "PokeBack"
+  allowLabelType: []
 - id: "Poll"
   type: 5
   inRecent: false
@@ -202,13 +221,4 @@
     TW: "投票"
     CN: "投票"
     ID: "Poll"
-- id: "Level"
-  type: 12
-  inRecent: true
-  name:
-    EN: "Level"
-    TW: "升級禮"
-    CN: "升級禮"
-    ID: "Level"
-  layout: "level"
-  
+  allowLabelType: [ "event", "new" ]

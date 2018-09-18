@@ -13,27 +13,62 @@ labelTypeToKey:
     elite3: "gift_tag_elite_three"
     elite7: "gift_tag_elite_seven"
     elite10: "gift_tag_elite_ten"
+    face: "giftbox_label_face"
+    antiprofit: "giftbox_label_antiprofit"
+    random: "giftbox_label_random"
+    redenvelope: "giftbox_label_redenvelop"
+    combo: "giftbox_label_combo"
 labelInfo:
   - labelI18nKey: "gift_tag_event"
-    tagColor: "#FFCC00"
-    anchorColor: "#996600"
-    fontColor: "#FFFFFF"
+    tagColor: "#FFFFFF"
+    anchorColor: "#6f6777"
+    fontColor: "#f69355"
+    boarderColor: "#d2d2d7"
   - labelI18nKey: "gift_tag_new"
-    tagColor: "#00CCFF"
-    anchorColor: "#006666"
-    fontColor: "#FFFFFF"
+    tagColor: "#FFFFFF"
+    anchorColor: "#f5487d"
+    fontColor: "#f69355"
+    boarderColor: "#d2d2d7"
   - labelI18nKey: "gift_tag_elite_three"
-    tagColor: "#E6A45F"
-    anchorColor: "#975A16"
-    fontColor: "#FFFFFF"
+    tagColor: "#FFFFFF"
+    anchorColor: "#f5487d"
+    fontColor: "#525252"
+    boarderColor: "#d2d2d7"
   - labelI18nKey: "gift_tag_elite_seven"
-    tagColor: "#E6A45F"
-    anchorColor: "#975A16"
-    fontColor: "#FFFFFF" 
+    tagColor: "#FFFFFF"
+    anchorColor: "#f5487d"
+    fontColor: "#525252"
+    boarderColor: "#d2d2d7"
   - labelI18nKey: "gift_tag_elite_ten"
-    tagColor: "#E6A45F"
-    anchorColor: "#975A16"
-    fontColor: "#FFFFFF"
+    tagColor: "#FFFFFF"
+    anchorColor: "#f5487d"
+    fontColor: "#525252"
+    boarderColor: "#d2d2d7"
+  - labelI18nKey: "giftbox_label_face"
+    tagColor: "#FFFFFF"
+    anchorColor: "#f5487d"
+    fontColor: "#525252"
+    boarderColor: "#d2d2d7"
+  - labelI18nKey: "giftbox_label_antiprofit"
+    tagColor: "#FFFFFF"
+    anchorColor: "#f5487d"
+    fontColor: "#525252"
+    boarderColor: "#d2d2d7"
+  - labelI18nKey: "giftbox_label_random"
+    tagColor: "#FFFFFF"
+    anchorColor: "#f5487d"
+    fontColor: "#525252"
+    boarderColor: "#d2d2d7"
+  - labelI18nKey: "giftbox_label_redenvelop"
+    tagColor: "#FFFFFF"
+    anchorColor: "#f5487d"
+    fontColor: "#525252"
+    boarderColor: "#d2d2d7"
+  - labelI18nKey: "giftbox_label_combo"
+    tagColor: "#FFFFFF"
+    anchorColor: "#f5487d"
+    fontColor: "#525252"
+    boarderColor: "#d2d2d7"
 mlevelMapping:
     elite3: 3
     elite7: 7
@@ -42,3 +77,24 @@ blackList:
   - elite3
   - elite7
   - elite10
+giftTypeLabelAllow:
+  - type: 0 # normal
+    labelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" ]
+  - type: 1 # lucky bag
+    labelType: [ "event", "new"]
+  - type: 2 # slot
+    labelType: [ "event", "new"]
+  - type: 3 # dummy
+    labelType: [ "event", "new"]
+  - type: 4 # poke
+    labelType: [ "event", "new"]
+  - type: 5 # poll
+    labelType: [ "event", "new"]
+  - type: 6 # music producer
+    labelType: [ "event", "new"]
+  - type: 7 # texture
+    labelType: [ "event", "new"]
+  - type: 8 # army
+    labelType: [ "event", "new"]
+  - type: 9 # elite
+    labelType: [ "elite3", "elite7", "elite10" ]
