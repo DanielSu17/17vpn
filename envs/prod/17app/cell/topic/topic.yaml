@@ -3,6 +3,20 @@ topics:
     name: "all"
     eventIDLimitation:
     eventLimitationErrorMsg:
+  - nameToken: "subtab_live_stream_option_mitsui"
+    name: "mitsui"
+    eventIDLimitation:
+      - 426
+    eventLimitationErrorMsg:
+      key: "subtab_config_setting_error_message" 
+      params:
+        - needMap: true
+          value: "subtab_live_stream_option_mitsui"
+        - needMap: true
+          value: "event_mitsui"
+    timeRange:
+        - startTime: "2018-09-19 00:00:00 (GMT+0800)"
+          endTime: "2018-09-19 23:59:59 (GMT+0800)"
   - nameToken: "subtab_live_stream_option_classparty"
     name: "classparty"
     eventIDLimitation:
@@ -169,4 +183,3 @@ topics:
     name: "talent"
     eventIDLimitation:
     eventLimitationErrorMsg:
-
