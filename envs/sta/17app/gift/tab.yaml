@@ -77,6 +77,18 @@
   allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
   marqueeDescs:
     - giftbox_event_define
+- id: "luckyBag"
+  type: 2
+  inRecent: true
+  name:
+    EN: "Surprise"
+    TW: "隨機禮"
+    CN: "随机礼"
+    ID: "Surprise"
+    JP: "ランダム"
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
+  marqueeDescs:
+    - giftbox_surprise_define      
 - id: "Baggage"
   type: 10
   inRecent: true
@@ -87,6 +99,8 @@
     ID: "Ransel"
     JP: "ギフト箱"
   allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
+  marqueeDescs:
+    - giftbox_baggage_define     
 - id: "Voucher"
   type: 9
   inRecent: false
@@ -97,16 +111,86 @@
     ID: "Ransel"
     JP: "ギフト箱"
   allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
-- id: "default"
-  type: 1
+  marqueeDescs:
+    - giftbox_baggage_define     
+- id: "Heavenly"
+  type: 0
   inRecent: true
   name:
-    EN: "Featured"
-    TW: "推薦"
-    CN: "推荐"
-    ID: "New"
-    JP: "おすすめ"
+    EN: "Fancy"
+    TW: "奢華"
+    CN: "奢华"
+    ID: "Fancy"
+    JP: "デラックス"
+  lessThanPoint: 2147483647
+  maxPoint: 2147483647
+  minPoint: 10000
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]    
+  marqueeDescs:
+    - giftbox_baggage_define     
+- id: "Extravagant"
+  type: 0
+  inRecent: true
+  name:
+    EN: "Classic"
+    TW: "經典"
+    CN: "经典"
+    ID: "Classic"
+    JP: "定番"
+  lessThanPoint: 9999
+  maxPoint: 9999
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]    
+  marqueeDescs:
+    - giftbox_classic_define     
+- id: "TreasureChest"
+  type: 3
+  inRecent: true
+  name:
+    EN: "Lucky Draw"
+    TW: "好運禮"
+    CN: "好运礼"
+    ID: "Peti Kebahagiaan"
+    JP: "宝のツボ"
+  layout: "treasureChest"
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]    
+  marqueeDescs:
+    - giftbox_luckydraw_define      
+- id: "Birthday"
+  type: 12
+  inRecent: true
+  name:
+    EN: "Birthday"
+    TW: "生日禮"
+    CN: "生日礼"
+    ID: "Birthday"
+    JP: "お誕生日"
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]    
+  marqueeDescs:
+    - giftbox_birthday_define        
+- id: "Texture"
+  type: 14
+  inRecent: true
+  name:
+    EN: "Filter"
+    TW: "濾鏡禮"
+    CN: "滤镜礼"
+    ID: "Filter"
+    JP: "エフェクト"
   allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
+  marqueeDescs:
+    - giftbox_filter_define 
+- id: "Audio"
+  type: 0
+  inRecent: true
+  name:
+    EN: "Audio Gift"
+    TW: "音效禮"
+    CN: "音效礼"
+    ID: "Gift Suara"
+    JP: "音付きギフト"
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
+  marqueeDescs:
+    - giftbox_audio_define     
 - id: "army"
   type: 8
   inRecent: true
@@ -136,27 +220,8 @@
         TW: "https://assets-17app.akamaized.net/0b866145-0128-4d40-ac5e-58b33c321ed9.png"
         JP: "https://assets-17app.akamaized.net/ea6c8131-6b61-42e0-9a1c-1814d8311ccd.png"
   allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
-- id: "Texture"
-  type: 14
-  inRecent: true
-  name:
-    EN: "Filter"
-    TW: "濾鏡禮"
-    CN: "滤镜礼"
-    ID: "Filter"
-    JP: "エフェクト"
-  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
-- id: "TreasureChest"
-  type: 3
-  inRecent: true
-  name:
-    EN: "Lucky Draw"
-    TW: "好運禮"
-    CN: "好运礼"
-    ID: "Peti Kebahagiaan"
-    JP: "宝のツボ"
-  layout: "treasureChest"
-  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
+  marqueeDescs:
+    - giftbox_exclusive_define
 - id: "GFA"
   type: 0
   inRecent: true
@@ -165,61 +230,6 @@
     TW: "金羽獎投票"
     CN: "金羽奖投票"
     ID: "GFA Voting"
-  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
-- id: "Audio"
-  type: 0
-  inRecent: true
-  name:
-    EN: "Audio Gift"
-    TW: "音效禮"
-    CN: "音效礼"
-    ID: "Gift Suara"
-    JP: "音付きギフト"
-  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
-- id: "luckyBag"
-  type: 2
-  inRecent: true
-  name:
-    EN: "Surprise"
-    TW: "隨機禮"
-    CN: "随机礼"
-    ID: "Surprise"
-    JP: "ランダム"
-  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
-- id: "Heavenly"
-  type: 0
-  inRecent: true
-  name:
-    EN: "Fancy"
-    TW: "奢華"
-    CN: "奢华"
-    ID: "Fancy"
-    JP: "デラックス"
-  lessThanPoint: 2147483647
-  maxPoint: 2147483647
-  minPoint: 10000
-  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
-- id: "Extravagant"
-  type: 0
-  inRecent: true
-  name:
-    EN: "Classic"
-    TW: "經典"
-    CN: "经典"
-    ID: "Classic"
-    JP: "定番"
-  lessThanPoint: 9999
-  maxPoint: 9999
-  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
-- id: "Birthday"
-  type: 12
-  inRecent: true
-  name:
-    EN: "Birthday"
-    TW: "生日禮"
-    CN: "生日礼"
-    ID: "Birthday"
-    JP: "お誕生日"
   allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
 - id: "PokeBack"
   type: 4
