@@ -5,7 +5,11 @@
 type:
   lit:          "go"
   lit-worker:   "go"
+  lit-web:      "webapp"
 settings:
   go:
     k8sprod:
-      endpoint: 'lit-k8sprod-deployment-goapi/buildWithParameters?token=gz6E0latrZOse6awWP1ynWmQ6y9ug27yh2T98Nyi'
+      endpoint: 'lit-k8sprod-deployment-goapi/buildWithParameters?token=gz6E0latrZOse6awWP1ynWmQ6y9ug27yh2T98Nyi&ENV=prod'
+  webapp:
+    prod:
+      endpoint: 'k8s-webapp-deployment/buildWithParameters?token=uceacpKX7Xk37tHAmrWCPpPGEUEK4dvndRMQYdMz&ENV=prod'
