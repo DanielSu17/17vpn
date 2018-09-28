@@ -27,32 +27,36 @@
 # // | NON_IAP | 2 |
 
 missions:
-  - ID: 77f6740c-700b-4e34-9d74-bc080a27c38e
+  - ID: f0da6a8d-d63e-482d-84ae-f28ae6f32dcf
     type: 8 #IAP
-    lifeCycle: 1 #ONETIME
+    levelRange:
+      min: 20
+      max: 999
     reward:
       rewardType: 1
-      rewardID: "picnic"
+      rewardID: "1809_tw_nulife_bp_10"
       amount: 1
       expireTimeSecs: 86400
     i18nTitle: "baggage_mission_first_time_IAP_reward_title"
     i18nTitleParams:
     i18nContent: "baggage_mission_first_time_IAP_reward_desc"
     i18nContentParams:
+      - needMap: false
+        value: "20"
       - needMap: true
         mapOption: 1
-        value: "gift_picnic"
+        value: "gift_1809_tw_nulife_bp_10"
     goalValue: 1
     enableTimeRange:
-      - startTime: "2018-09-04 18:00:00 (GMT+0800)"
-        endTime: "2018-09-11 23:59:59 (GMT+0800)"
+      - startTime: "2018-09-28 18:00:00 (GMT+0800)"
+        endTime: "2018-10-07 23:59:59 (GMT+0800)"
 
-  - ID: 7360ef1e-611c-43c2-a039-38ed4ddd0af6
-    type: 1 #答題17Q
+  - ID: e0e26aaa-a057-455e-bf13-9a3bc0163856
+    type: 2 #答題17Q
     category: 1
     reward:
       rewardType: 1
-      rewardID: "1808_tw_hot_support"
+      rewardID: "1810_tw_live_bp_10"
       amount: 1
       expireTimeSecs: 86400
     i18nTitle: "baggage_mission_trivia_correct_answered_x_get_y_reward_title"
@@ -65,35 +69,66 @@ missions:
     i18nContentParams:
       - needMap: true
         mapOption: 1
-        value: gift_1808_tw_hot_support
+        value: gift_1810_tw_live_bp_10
     goalValue: 2
     enableTimeRange:
-      - startTime: "2018-08-16 18:00:00 (GMT+0800)"
-        endTime: "2018-09-30 23:59:59 (GMT+0800)"
+      - startTime: "2018-09-28 18:00:00 (GMT+0800)"
+        endTime: "2018-10-27 23:59:59 (GMT+0800)"
+    refIDs:
+      - 0e671b10-1660-419c-67f9-9983ebdbad38
 
-  - ID: f0ffa620-6761-46ea-93c1-a92bb7ee8d7a
-    type: 9 #觀看直播
-    levelRange:
-     min: 1
-     max: 90
+  - ID: d9a26993-29bf-4a87-b071-c04f90fb4c09
+    type: 2 #答題17好聰明
+    category: 1
     reward:
       rewardType: 1
-      rewardID: "1808_tw_teacher_king_10"
+      rewardID: "1810_tw_live_bp_10"
       amount: 1
       expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_watch_streams_time_in_total_reward_title"
+    i18nTitle: "baggage_mission_trivia_on_tv_correct_answered_x_get_y_reward_title"
     i18nTitleParams:
       - needMap: false
-        value: "3"
-    i18nContent: "baggage_mission_watch_streams_time_in_total_reward_desc"
+        value: "2"
+      - needMap: false
+        value: "1"
+    i18nContent: "baggage_mission_trivia_on_tv_correct_answered_x_get_y_reward_desc"
     i18nContentParams:
       - needMap: true
         mapOption: 1
-        value: gift_1808_tw_teacher_king_10
-    goalValue: 180
+        value: gift_1810_tw_live_bp_10
+    goalValue: 2
     enableTimeRange:
-      - startTime: "2018-08-16 18:00:00 (GMT+0800)"
-        endTime: "2018-09-25 23:59:59 (GMT+0800)"
+      - startTime: "2018-09-28 18:00:00 (GMT+0800)"
+        endTime: "2018-10-27 23:59:59 (GMT+0800)"
+    refIDs:
+      - 94b56df0-336b-4968-7c41-88ec85246024
+
+  - ID: 9a63d303-7fb6-4631-baca-77ce5672d38f
+    type: 9 #觀看直播
+    levelRange:
+      min: 20
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: "1810_tw_live_bp_10"
+      amount: 1
+      expireTimeSecs: 86400
+    i18nTitle: "baggage_mission_watch_streams_time_in_total_reward_crossregion_title"
+    i18nTitleParams:
+      - needMap: false
+        value: "5"
+    i18nContent: "baggage_mission_watch_streams_time_in_total_reward_crossregion_desc"
+    i18nContentParams:
+      - needMap: false
+        value: "20"
+      - needMap: true
+        mapOption: 1
+        value: gift_1810_tw_live_bp_10
+    goalValue: 300
+    enableTimeRange:
+      - startTime: "2018-09-28 18:00:00 (GMT+0800)"
+        endTime: "2018-10-27 23:59:59 (GMT+0800)"
+
 
 #tagInfos
 tagInfos:
