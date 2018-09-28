@@ -25,7 +25,6 @@
 # // | REGIONAL | 0 |
 # // | IAP | 1 |
 # // | NON_IAP | 2 |
-
 missions:
   - ID: c314bde2-c5f8-4de3-8cd4-02a13f79d3b9
     type: 3 #送禮
@@ -36,6 +35,17 @@ missions:
       expireTimeSecs: 86400
     i18nTitle: "baggage_mission_send_specific_gifts_reward_title"
     i18nTitleParams:
+      - needMap: false
+        value: "10"
+      - needMap: true
+        mapOption: 1
+        value: "gift_1810_my_deluxe_hotel_100"
+      - needMap: true
+        mapOption: 1
+        value: "gift_1810_my_deluxe_hotel_1000"
+      - needMap: true
+        mapOption: 1
+        value: "gift_1810_my_deluxe_hotel_10000"
     i18nContent: "baggage_mission_send_specific_gifts_reward_desc"
     i18nContentParams:
       - needMap: true
