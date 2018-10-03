@@ -3,7 +3,7 @@
 # - 0: NORMAL
 # - 1: NO_LABEL
 # - 2: LUCKY_BAG
-# - 3: SLOT
+# - 3: SLOT  merge into TreasureChest, need to modify DB
 # - 4: Poke
 # - 5: Poll
 # - 6: Newbie
@@ -16,7 +16,7 @@
 #     TW: "範例"
 #     CN: "範例"
 #     ID: "Example"
-#   lessThanPoint: 1632
+#   lessThanPoint: 1632  // lessThanPoint should be replaced with maxPoint
 #   maxPoint: 2000
 #   minPoint: 200
 #   maxLevel: 50
@@ -39,6 +39,20 @@
     ID: "Recent"
     JP: "履歴"
   allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
+  marqueeDescs:
+    - giftbox_recent_define 
+- id: "Goods"
+  type: 15
+  inRecent: false
+  name:
+    EN: "Limited Edition Gift"
+    TW: "限量禮物"
+    CN: "限量礼物"
+    ID: ""
+    JP: ""
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
+  marqueeDescs:
+    - giftbox_limitgift_define
 - id: "Newbie"
   type: 6
   inRecent: true
@@ -49,8 +63,10 @@
     ID: "Pemula"
     JP: "初心者"
   maxPoint: 200
-  maxLevel: 30
+  maxLevel: 100
   allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
+  marqueeDescs:
+    - giftbox_fresh_define
 - id: "Event"
   type: 7
   inRecent: true
@@ -61,104 +77,8 @@
     ID: "Event"
     JP: "Event"
   allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
-- id: "Baggage"
-  type: 10
-  inRecent: false
-  name:
-    EN: "Baggage"
-    TW: "背包"
-    CN: "背包"
-    ID: "Ransel"
-    JP: "ギフト箱"
-- id: "Voucher"
-  type: 9
-  inRecent: false
-  name:
-    EN: "Baggage"
-    TW: "背包"
-    CN: "背包"
-    ID: "Ransel"
-    JP: "ギフト箱"
-- id: "default"
-  type: 1
-  inRecent: true
-  name:
-    EN: "Featured"
-    TW: "推薦"
-    CN: "推荐"
-    ID: "New"
-    JP: "おすすめ"
-  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
-- id: "army"
-  type: 8
-  inRecent: true
-  name:
-    EN: "Exclusive"
-    TW: "專屬禮"
-    CN: "专属礼"
-    ID: "Exclusive"
-    JP: "専用"
-  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
-  giftBanner: # for old version
-    EN: "https://assets-17app.akamaized.net/7e8fd3ac-ea26-4d81-9513-d7ed236a1e32.png"
-    TW: "http://cdn.17app.co/989c8312-e406-4be1-ad95-e4963e4c1d8a.png"
-    JP: "http://cdn.17app.co/e2c85fb3-34dd-4594-adbd-9c1a700d0473.png"
-  giftBannerTitle: # for old version
-    TW: "戰隊說明"
-    JP: "ルール説明"
-  giftBannerURL: # for old version
-    TW: "https://17.live/army/about"
-    JP: "https://17.live/army/about?lang=ja"
-  giftBanners:
-    - actionType: 2
-      giftBanner:
-        EN: "https://assets-17app.akamaized.net/7e8fd3ac-ea26-4d81-9513-d7ed236a1e32.png"
-        TW: "https://assets-17app.akamaized.net/717ddd12-eff1-4304-a08e-10a3068d2096.png"
-        JP: "https://assets-17app.akamaized.net/b7aa9fd9-f839-4cb4-84c5-cf07e32cd2da.png"
-    - actionType: 4
-      giftBanner:
-        EN: "https://assets-17app.akamaized.net/0dac8595-2070-4cc9-8545-72effea14ccb.png"
-        TW: "https://assets-17app.akamaized.net/0b866145-0128-4d40-ac5e-58b33c321ed9.png"
-- id: "Texture"
-  type: 14
-  inRecent: true
-  name:
-    EN: "Filter"
-    TW: "濾鏡禮"
-    CN: "滤镜礼"
-    ID: "Filter"
-    JP: "エフェクト"
-  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
-- id: "TreasureChest"
-  type: 3
-  inRecent: true
-  name:
-    EN: "Lucky Draw"
-    TW: "好運禮"
-    CN: "好运礼"
-    ID: "Peti Kebahagiaan"
-    JP: "宝のツボ"
-  layout: "treasureChest"
-  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
-- id: "GFA"
-  type: 0
-  inRecent: true
-  name:
-    EN: "GFA Voting"
-    TW: "金羽獎投票"
-    CN: "金羽奖投票"
-    ID: "GFA Voting"
-  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
-- id: "Audio"
-  type: 0
-  inRecent: true
-  name:
-    EN: "Audio Gift"
-    TW: "音效禮"
-    CN: "音效礼"
-    ID: "Gift Suara"
-    JP: "音付きギフト"
-  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
+  marqueeDescs:
+    - giftbox_event_define
 - id: "luckyBag"
   type: 2
   inRecent: true
@@ -169,6 +89,32 @@
     ID: "Surprise"
     JP: "ランダム"
   allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
+  marqueeDescs:
+    - giftbox_surprise_define      
+- id: "Baggage"
+  type: 10
+  inRecent: false
+  name:
+    EN: "Baggage"
+    TW: "背包"
+    CN: "背包"
+    ID: "Ransel"
+    JP: "ギフト箱"
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
+  marqueeDescs:
+    - giftbox_baggage_define     
+- id: "Voucher"
+  type: 9
+  inRecent: false
+  name:
+    EN: "Baggage"
+    TW: "背包"
+    CN: "背包"
+    ID: "Ransel"
+    JP: "ギフト箱"
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
+  marqueeDescs:
+    - giftbox_baggage_define     
 - id: "Heavenly"
   type: 0
   inRecent: true
@@ -181,7 +127,9 @@
   lessThanPoint: 2147483647
   maxPoint: 2147483647
   minPoint: 10000
-  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]    
+  marqueeDescs:
+    - giftbox_fancy_define     
 - id: "Extravagant"
   type: 0
   inRecent: true
@@ -193,7 +141,22 @@
     JP: "定番"
   lessThanPoint: 9999
   maxPoint: 9999
-  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]    
+  marqueeDescs:
+    - giftbox_classic_define     
+- id: "TreasureChest"
+  type: 3
+  inRecent: true
+  name:
+    EN: "Lucky Draw"
+    TW: "好運禮"
+    CN: "好运礼"
+    ID: "Peti Kebahagiaan"
+    JP: "宝のツボ"
+  layout: "treasureChest"
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]    
+  marqueeDescs:
+    - giftbox_luckydraw_define      
 - id: "Birthday"
   type: 12
   inRecent: true
@@ -203,6 +166,72 @@
     CN: "生日礼"
     ID: "Birthday"
     JP: "お誕生日"
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]    
+  marqueeDescs:
+    - giftbox_birthday_define        
+- id: "Texture"
+  type: 14
+  inRecent: true
+  name:
+    EN: "Filter"
+    TW: "濾鏡禮"
+    CN: "滤镜礼"
+    ID: "Filter"
+    JP: "エフェクト"
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
+  marqueeDescs:
+    - giftbox_filter_define 
+- id: "Audio"
+  type: 0
+  inRecent: true
+  name:
+    EN: "Audio Gift"
+    TW: "音效禮"
+    CN: "音效礼"
+    ID: "Gift Suara"
+    JP: "音付きギフト"
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
+  marqueeDescs:
+    - giftbox_audio_define     
+- id: "army"
+  type: 8
+  inRecent: true
+  name:
+    EN: "Exclusive"
+    TW: "專屬禮"
+    CN: "专属礼"
+    ID: "Exclusive"
+    JP: "専用"
+  giftBanner: # for old version
+    EN: "https://assets-17app.akamaized.net/7e8fd3ac-ea26-4d81-9513-d7ed236a1e32.png"
+    TW: "https://assets-17app.akamaized.net/717ddd12-eff1-4304-a08e-10a3068d2096.png"
+    JP: "https://assets-17app.akamaized.net/b7aa9fd9-f839-4cb4-84c5-cf07e32cd2da.png"
+  giftBannerTitle: # for old version
+    TW: "戰隊說明"
+  giftBannerURL: # for old version
+    TW: "https://17.live/army/about"
+  giftBanners:
+    - actionType: 2
+      giftBanner:
+        EN: "https://assets-17app.akamaized.net/7e8fd3ac-ea26-4d81-9513-d7ed236a1e32.png"
+        TW: "https://assets-17app.akamaized.net/717ddd12-eff1-4304-a08e-10a3068d2096.png"
+        JP: "https://assets-17app.akamaized.net/b7aa9fd9-f839-4cb4-84c5-cf07e32cd2da.png"
+    - actionType: 4
+      giftBanner:
+        EN: "https://assets-17app.akamaized.net/0dac8595-2070-4cc9-8545-72effea14ccb.png"
+        TW: "https://assets-17app.akamaized.net/0b866145-0128-4d40-ac5e-58b33c321ed9.png"
+        JP: "https://assets-17app.akamaized.net/ea6c8131-6b61-42e0-9a1c-1814d8311ccd.png"
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
+  marqueeDescs:
+    - giftbox_exclusive_define
+- id: "GFA"
+  type: 0
+  inRecent: true
+  name:
+    EN: "GFA Voting"
+    TW: "金羽獎投票"
+    CN: "金羽奖投票"
+    ID: "GFA Voting"
   allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
 - id: "PokeBack"
   type: 4
