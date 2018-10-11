@@ -27,7 +27,7 @@
 # // | NON_IAP | 2 |
 
 missions:
-  - ID: fd00b4f8-f1a2-4a33-a3c3-c50874d397de
+  - ID: 17f63ed7-d379-4e8d-bb90-884c8f73615a
     type: 8 #IAP
     lifeCycle: 1 #ONETIME
     reward:
@@ -43,10 +43,10 @@ missions:
         value: gift_picnic
     goalValue: 1
     enableTimeRange:
-      - startTime: "2018-09-26 00:00:00 (GMT+0800)"
-        endTime: "2018-10-02 23:59:59 (GMT+0800)"
+      - startTime: "2018-10-10 00:00:00 (GMT+0800)"
+        endTime: "2018-10-16 23:59:59 (GMT+0800)"
 
-  - ID: a35519f3-f99e-49be-a442-68c786e17471
+  - ID: f2ef4220-c211-4201-86a0-344790a0c1f8
     type: 8 #IAP
     lifeCycle: 1 #ONETIME
     reward:
@@ -62,8 +62,27 @@ missions:
         value: gift_picnic
     goalValue: 1
     enableTimeRange:
-      - startTime: "2018-10-03 00:00:00 (GMT+0800)"
-        endTime: "2018-10-09 23:59:59 (GMT+0800)"
+      - startTime: "2018-10-17 00:00:00 (GMT+0800)"
+        endTime: "2018-10-23 23:59:59 (GMT+0800)"
+
+  - ID: 79ec4726-8d40-49a8-8d11-106900dd802a
+    type: 8 #IAP
+    lifeCycle: 1 #ONETIME
+    reward:
+      rewardType: 1
+      rewardID: "picnic"
+      amount: 1
+      expireTimeSecs: 86400
+    i18nTitle: "baggage_mission_weekly_first_time_IAP_reward_title"
+    i18nContent: "baggage_mission_weekly_first_time_IAP_reward_desc"
+    i18nContentParams:
+      - needMap: true
+        mapOption: 1
+        value: gift_picnic
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2018-10-24 00:00:00 (GMT+0800)"
+        endTime: "2018-10-30 23:59:59 (GMT+0800)"
 
   - ID: 9a63d303-7fb6-4631-baca-77ce5672d38f
     type: 9 #觀看直播
@@ -316,3 +335,29 @@ supportedVersion:
 #   enableTimeRange:
 #     - startTime: "2018-09-12 00:00:00 (GMT+0800)"
 #       endTime: "2018-09-18 23:59:59 (GMT+0800)"
+
+# - ID: fd00b4f8-f1a2-4a33-a3c3-c50874d397de
+#   type: 8 #IAP
+#   lifeCycle: 1 #ONETIME
+#   reward:
+#     rewardType: 1
+#     rewardID: "picnic"
+#     amount: 1
+#     expireTimeSecs: 86400
+#   goalValue: 1
+#   enableTimeRange:
+#     - startTime: "2018-09-26 00:00:00 (GMT+0800)"
+#       endTime: "2018-10-02 23:59:59 (GMT+0800)"
+
+# - ID: a35519f3-f99e-49be-a442-68c786e17471
+#   type: 8 #IAP
+#   lifeCycle: 1 #ONETIME
+#   reward:
+#     rewardType: 1
+#     rewardID: "picnic"
+#     amount: 1
+#     expireTimeSecs: 86400
+#   goalValue: 1
+#   enableTimeRange:
+#     - startTime: "2018-10-03 00:00:00 (GMT+0800)"
+#       endTime: "2018-10-09 23:59:59 (GMT+0800)"
