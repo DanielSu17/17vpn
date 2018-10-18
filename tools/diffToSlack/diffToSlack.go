@@ -259,5 +259,5 @@ func sendSlack(attachments []slack.Attachment) {
 	options := []slack.MsgOption{
 		slack.MsgOptionAttachments(attachments...),
 	}
-	api.PostMessage(slackUserID, options)
+	api.PostMessage(slackUserID, options...)
 }
