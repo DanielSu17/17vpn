@@ -10,7 +10,6 @@ import (
 	"strings"
 
 	"github.com/nlopes/slack"
-
 	"github.com/urfave/cli"
 )
 
@@ -211,7 +210,10 @@ func mergePush() {
 		log.Fatal("data miss, bye")
 	}
 	execCommand(folder, "git", []string{"add", "."})
-	commitMsg := fmt.Sprintf("'[Misc] Update i18n\nslackUserID: %s\nslackUserEmail: %s'", slackUserID, slackUserEmail)
+	// setting commit message
+	// slackUserID is used to metion user in slack deployment message at pushToEctd.go
+	// nslackUserEmail is used to let people know who did this commit
+	commitMsg := fmt.Sprintf("[Misc] Update i18n\nslackUserID: %s\nslackUserEmail: %s", slackUserID, slackUserEmail)
 	execCommand(folder, "git", []string{"commit", "-m", commitMsg})
 
 	execCommand(folder, "git", []string{"checkout", "master"})
@@ -254,10 +256,8 @@ func execCommand(dir, commands string, args []string) (string, string) {
 
 func sendSlack(attachments []slack.Attachment) {
 	api := slack.New(slackToken)
-	params := slack.PostMessageParameters{
-		AsUser:      true,
-		Channel:     slackUserID,
-		Attachments: attachments,
+	options := []slack.MsgOption{
+		slack.MsgOptionAttachments(attachments...),
 	}
-	api.PostMessage(slackUserID, "", params)
+	api.PostMessage(slackUserID, options)
 }
