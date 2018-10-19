@@ -99,14 +99,17 @@ func checkDiff(removed, added string) []string {
 		// IOS
 		if !checkParamCount("%[0-9]*\\$@", oldVal, val) {
 			checkFailKeys = append(checkFailKeys, key)
+			continue
 		}
 		// ANDROID
 		if !checkParamCount("%[0-9]*\\$s", oldVal, val) {
 			checkFailKeys = append(checkFailKeys, key)
+			continue
 		}
 		// Backend
 		if !checkParamCount("\\$[0-9]*", oldVal, val) {
 			checkFailKeys = append(checkFailKeys, key)
+			continue
 		}
 	}
 	return checkFailKeys
@@ -180,7 +183,7 @@ func gitDiff() {
 			if len(failKeys) != 0 {
 				attachments := []slack.Attachment{slack.Attachment{
 					Fallback: fmt.Sprintf("key: %s validate failed", strings.Join(failKeys, ", ")),
-					Text:     fmt.Sprintf("key: %s validate failed", strings.Join(failKeys, ", "))
+					Text:     fmt.Sprintf("key: %s validate failed", strings.Join(failKeys, ", ")),
 					Color:    colorDanger,
 				}}
 				sendSlack(attachments)
