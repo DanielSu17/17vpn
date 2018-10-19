@@ -81,6 +81,61 @@ func main() {
 	app.Run(os.Args)
 }
 
+func checkDiff(removed, added string) []string {
+	checkFailKeys := []string{}
+	addedMap := parseKeyVal(added)
+	removedMap := parseKeyVal(removed)
+	for key, val := range addedMap {
+		oldVal, exists := removedMap[key]
+		// not exists, new key, pass
+		if !exists {
+			continue
+		}
+		// if oldval is empty string
+		// always happend when new created key, pass
+		if oldVal == "" {
+			continue
+		}
+		// IOS
+		if !checkParamCount("%[0-9]*\\$@", oldVal, val) {
+			checkFailKeys = append(checkFailKeys, key)
+		}
+		// ANDROID
+		if !checkParamCount("%[0-9]*\\$s", oldVal, val) {
+			checkFailKeys = append(checkFailKeys, key)
+		}
+		// Backend
+		if !checkParamCount("\\$[0-9]*", oldVal, val) {
+			checkFailKeys = append(checkFailKeys, key)
+		}
+	}
+	return checkFailKeys
+}
+
+func checkParamCount(re, oldVal, val string) bool {
+	reParam := regexp.MustCompile(re)
+	oldParam := reParam.FindAllStringSubmatch(oldVal, -1)
+	newParam := reParam.FindAllStringSubmatch(val, -1)
+	if len(oldParam) != len(newParam) {
+		return false
+	}
+	return true
+}
+
+func parseKeyVal(input string) map[string]string {
+	result := map[string]string{}
+	list := strings.Split(input, "\n")
+	reKeyVal := regexp.MustCompile("\"([^\"]*)\": \"([^\"]*)\"")
+	for _, item := range list {
+		match := reKeyVal.FindStringSubmatch(item)
+		if match == nil {
+			continue
+		}
+		result[match[1]] = match[2]
+	}
+	return result
+}
+
 func gitDiff() {
 
 	folder := fmt.Sprintf("configs_%s", slackUserID)
@@ -120,6 +175,17 @@ func gitDiff() {
 
 		// Next File send slack and reset
 		if lastFilename != filename {
+			// Check diff for this file
+			failKeys := checkDiff(removed, added)
+			if len(failKeys) != 0 {
+				attachments := []slack.Attachment{slack.Attachment{
+					Fallback: fmt.Sprintf("key: %s validate failed", strings.Join(failKeys, ", ")),
+					Text:     fmt.Sprintf("key: %s validate failed", strings.Join(failKeys, ", "))
+					Color:    colorDanger,
+				}}
+				sendSlack(attachments)
+				log.Fatal("validate failed")
+			}
 			pretext := lastFilename
 			if removed != "" {
 				attachments = append(attachments, slack.Attachment{
@@ -153,18 +219,20 @@ func gitDiff() {
 
 		lastFilename = filename
 	}
+	pretext := lastFilename
 	// Handel last file
 	if removed != "" {
 		attachments = append(attachments, slack.Attachment{
-			Pretext:  lastFilename,
+			Pretext:  pretext,
 			Fallback: removed,
 			Text:     removed,
 			Color:    colorDanger,
 		})
+		pretext = ""
 	}
 	if added != "" {
 		attachments = append(attachments, slack.Attachment{
-			Pretext:  lastFilename,
+			Pretext:  pretext,
 			Fallback: added,
 			Text:     added,
 			Color:    colorGood,
