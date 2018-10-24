@@ -10,6 +10,9 @@ disableSignInHottest: false
 # can get sign-in reward and newbie reward simultaneously
 enableSignInAndNewbieRewardAtSameTime: true
 
+# do not dailySignIn reward after register midnight
+noAnimationTTLAfterRegister: 86400
+
 # daily for sign-in reward for voucher version
 enableSignInReward: true
 signInRewards:
@@ -189,7 +192,7 @@ bigRewards:
 questInterval: 60
 
 # newbie_days defines who is newbie
-newbieDays: 1
+newbieDays: 2
 
 # newbie_rewards defines newbie quest rewards
 # type are defined as following
