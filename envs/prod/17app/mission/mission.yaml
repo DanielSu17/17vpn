@@ -27,44 +27,6 @@
 # // | NON_IAP | 2 |
 
 missions:
-  - ID: 17f63ed7-d379-4e8d-bb90-884c8f73615a
-    type: 8 #IAP
-    lifeCycle: 1 #ONETIME
-    reward:
-      rewardType: 1
-      rewardID: "picnic"
-      amount: 1
-      expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_weekly_first_time_IAP_reward_title"
-    i18nContent: "baggage_mission_weekly_first_time_IAP_reward_desc"
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: gift_picnic
-    goalValue: 1
-    enableTimeRange:
-      - startTime: "2018-10-10 00:00:00 (GMT+0800)"
-        endTime: "2018-10-16 23:59:59 (GMT+0800)"
-
-  - ID: f2ef4220-c211-4201-86a0-344790a0c1f8
-    type: 8 #IAP
-    lifeCycle: 1 #ONETIME
-    reward:
-      rewardType: 1
-      rewardID: "picnic"
-      amount: 1
-      expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_weekly_first_time_IAP_reward_title"
-    i18nContent: "baggage_mission_weekly_first_time_IAP_reward_desc"
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: gift_picnic
-    goalValue: 1
-    enableTimeRange:
-      - startTime: "2018-10-17 00:00:00 (GMT+0800)"
-        endTime: "2018-10-23 23:59:59 (GMT+0800)"
-
   - ID: 79ec4726-8d40-49a8-8d11-106900dd802a
     type: 8 #IAP
     lifeCycle: 1 #ONETIME
@@ -83,6 +45,9 @@ missions:
     enableTimeRange:
       - startTime: "2018-10-24 00:00:00 (GMT+0800)"
         endTime: "2018-10-30 23:59:59 (GMT+0800)"
+    platforms:
+      - android
+      - ios
 
   - ID: 9a63d303-7fb6-4631-baca-77ce5672d38f
     type: 9 #觀看直播
@@ -109,30 +74,9 @@ missions:
     enableTimeRange:
       - startTime: "2018-10-02 18:00:00 (GMT+0800)"
         endTime: "2018-10-27 23:59:59 (GMT+0800)"
-
-  - ID: f0da6a8d-d63e-482d-84ae-f28ae6f32dcf
-    type: 8 #IAP
-    levelRange:
-      min: 20
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: "1809_tw_nulife_bp_10"
-      amount: 1
-      expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_first_time_IAP_reward_title"
-    i18nTitleParams:
-    i18nContent: "baggage_mission_first_time_IAP_reward_desc"
-    i18nContentParams:
-      - needMap: false
-        value: "20"
-      - needMap: true
-        mapOption: 1
-        value: "gift_1809_tw_nulife_bp_10"
-    goalValue: 1
-    enableTimeRange:
-      - startTime: "2018-10-02 00:00:00 (GMT+0800)"
-        endTime: "2018-10-07 23:59:59 (GMT+0800)"
+    platforms:
+      - android
+      - ios
 
   - ID: e0e26aaa-a057-455e-bf13-9a3bc0163856
     type: 2 #答題17Q
@@ -159,6 +103,9 @@ missions:
         endTime: "2018-10-27 23:59:59 (GMT+0800)"
     refIDs:
       - 6e9af721-55c5-41d7-91a4-387aceec94a6
+    platforms:
+      - android
+      - ios
 
   - ID: d9a26993-29bf-4a87-b071-c04f90fb4c09
     type: 2 #答題17好聰明
@@ -185,6 +132,9 @@ missions:
         endTime: "2018-10-27 23:59:59 (GMT+0800)"
     refIDs:
       - 8f95a285-104e-4ea5-ae58-00cca785247a
+    platforms:
+      - android
+      - ios
 
 #tagInfos
 tagInfos:
@@ -361,3 +311,44 @@ supportedVersion:
 #   enableTimeRange:
 #     - startTime: "2018-10-03 00:00:00 (GMT+0800)"
 #       endTime: "2018-10-09 23:59:59 (GMT+0800)"
+
+# - ID: 17f63ed7-d379-4e8d-bb90-884c8f73615a
+#   type: 8 #IAP
+#   lifeCycle: 1 #ONETIME
+#   reward:
+#     rewardType: 1
+#     rewardID: "picnic"
+#     amount: 1
+#     expireTimeSecs: 86400
+#   goalValue: 1
+#   enableTimeRange:
+#     - startTime: "2018-10-10 00:00:00 (GMT+0800)"
+#       endTime: "2018-10-16 23:59:59 (GMT+0800)"
+
+# - ID: f2ef4220-c211-4201-86a0-344790a0c1f8
+#   type: 8 #IAP
+#   lifeCycle: 1 #ONETIME
+#   reward:
+#     rewardType: 1
+#     rewardID: "picnic"
+#     amount: 1
+#     expireTimeSecs: 86400
+#   goalValue: 1
+#   enableTimeRange:
+#     - startTime: "2018-10-17 00:00:00 (GMT+0800)"
+#       endTime: "2018-10-23 23:59:59 (GMT+0800)"
+
+# - ID: f0da6a8d-d63e-482d-84ae-f28ae6f32dcf
+#   type: 8 #IAP
+#   levelRange:
+#     min: 20
+#     max: 999
+#   reward:
+#     rewardType: 1
+#     rewardID: "1809_tw_nulife_bp_10"
+#     amount: 1
+#     expireTimeSecs: 86400
+#   goalValue: 1
+#   enableTimeRange:
+#     - startTime: "2018-10-02 00:00:00 (GMT+0800)"
+#       endTime: "2018-10-07 23:59:59 (GMT+0800)"
