@@ -57,7 +57,7 @@ class I18nJsonWriter:
         for env in envs:
             for lang, value in self.i18n_dict.iteritems():
                 data_str = self.prepare_data(value, param_prefix)
-                full_path = self.path % (env, lang, base_name)
+                full_path = self.path % (env, lang.lower(), base_name)
 
                 self.write_file(full_path, data_str)
 
