@@ -54,6 +54,9 @@ filterStreamRule:
     repeatable: true
     include17k: true
 
+clientConfig:
+    enable: false
+
 cronBomb:
     enable: false
     hourRanges:
@@ -70,3 +73,7 @@ appVersions:
   1:
     ios: "1.85"
     android: "2.2.38"
+
+regionSetting:
+  regionMode: 3   # EXCLUDE
+  regions: ["US"]
