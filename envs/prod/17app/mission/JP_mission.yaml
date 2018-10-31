@@ -51,6 +51,28 @@ missions:
       - android
       - ios
 
+  - ID: 3574f1ae-9c76-4f0b-9d3d-1d74bd364165
+    type: 8 #IAP
+    reward:
+      rewardType: 1
+      rewardID: "1811_jp_new_livers_bp_10"
+      amount: 1
+      expireTimeSecs: 86400
+    i18nTitle: "baggage_mission_first_time_IAP_reward_jp_event_title"
+    i18nTitleParams:
+    i18nContent: "baggage_mission_first_time_IAP_reward_jp_event_des"
+    i18nContentParams:
+      - needMap: true
+        mapOption: 1
+        value: "gift_1811_jp_new_livers_bp_10"
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2018-11-01 19:00:00 (GMT+0900)"
+        endTime: "2018-11-14 23:59:59 (GMT+0900)"
+    platforms:
+      - android
+      - ios
+
   - ID: f0b6be1b-cc62-45c1-bb93-4283d47f009c
     type: 1 #白天場答題
     category: 1 #按比例給reward
