@@ -1,14 +1,14 @@
 max: 11	# 0 means disable feature
 check_interval: 1m00s
 big_brother_prefix: "big_brother"
-ccu: 100
+ccu: 0
 streamDuration: 0h0m01s
 animations : ["yeti","big_brother"]
 monsters:
 - id: monster_1
   hit_consume: 10
   duration: 30s
-  stream_alive_threshold: 1m00s
+  stream_alive_threshold: 0m01s
   animation: "yeti"
   appear_durations:
   - start_time: 00h00m00s
@@ -25,11 +25,13 @@ monsters:
   rule4Token: {key: monster_battle_rule4}
   countdownToken: {key: monster_battle_countdown}
   failureToken: {key: monster_battle_failure}
+  
+  
 - id: monster_2
   animation: "give_me_five"
   hit_consume: 10
   duration: 30s
-  stream_alive_threshold: 1m00s
+  stream_alive_threshold: 0m01s
   appear_durations:
   - start_time: 00h00m00s
     end_time: 24h00m00s
@@ -51,7 +53,7 @@ monsters:
   animation: "give_me_five"
   hit_consume: 10
   duration: 30s
-  stream_alive_threshold: 1m00s
+  stream_alive_threshold: 0m01s
   appear_durations:
   - start_time: 00h00m00s
     end_time: 24h00m00s
@@ -73,7 +75,7 @@ monsters:
   hit_consume: 10
   duration: 30s
   animation: "give_me_five"
-  stream_alive_threshold: 1m00s
+  stream_alive_threshold: 0m01s
   appear_durations:
   - start_time: 00h00m00s
     end_time: 24h00m00s
@@ -95,7 +97,7 @@ monsters:
   hit_consume: 10
   duration: 30s
   animation: "yeti"
-  stream_alive_threshold: 1m00s
+  stream_alive_threshold: 0m01s
   appear_durations:
   - start_time: 00h00m00s
     end_time: 24h00m00s
@@ -117,7 +119,7 @@ monsters:
   hit_consume: 10
   duration: 30s
   animation: "yeti"
-  stream_alive_threshold: 1m00s
+  stream_alive_threshold: 0m01s
   appear_durations:
   - start_time: 00h00m00s
     end_time: 24h00m00s
@@ -139,7 +141,7 @@ monsters:
   hit_consume: 10
   duration: 30s
   animation: "yeti"
-  stream_alive_threshold: 1m00s
+  stream_alive_threshold: 0m01s
   appear_durations:
   - start_time: 00h00m00s
     end_time: 24h00m00s
