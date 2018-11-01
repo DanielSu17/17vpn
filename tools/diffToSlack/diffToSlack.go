@@ -167,6 +167,7 @@ func gitDiff() {
 	added := ""
 	removed := ""
 	attachments := []slack.Attachment{}
+	failKeysList := map[string][]string{}
 	// Scan diff content
 	for _, line := range lines {
 		// Get filename
@@ -179,16 +180,7 @@ func gitDiff() {
 		// Next File send slack and reset
 		if lastFilename != filename {
 			// Check diff for this file
-			failKeys := checkDiff(removed, added)
-			if len(failKeys) != 0 {
-				attachments := []slack.Attachment{slack.Attachment{
-					Fallback: fmt.Sprintf("key: %s validate failed", strings.Join(failKeys, ", ")),
-					Text:     fmt.Sprintf("key: %s validate failed", strings.Join(failKeys, ", ")),
-					Color:    colorDanger,
-				}}
-				sendSlack(attachments)
-				log.Fatal("validate failed")
-			}
+			failKeysList[lastFilename] = checkDiff(removed, added)
 			pretext := lastFilename
 			if removed != "" {
 				attachments = append(attachments, slack.Attachment{
@@ -249,21 +241,51 @@ func gitDiff() {
 			Color:    colorGood,
 		})
 	} else {
-		// Append button
-		attachments = append(attachments, slack.Attachment{
-			Fallback:   "You are unable to continue",
-			Text:       "commit this diff?",
-			CallbackID: "updateI18n",
-			Color:      "#3AA3E3",
-			Actions: []slack.AttachmentAction{
-				slack.AttachmentAction{
-					Name:  "i18n confirm",
-					Text:  "Update",
-					Type:  "button",
-					Value: "update",
+		validateFail := false
+		for filename, failKeys := range failKeysList {
+			if len(failKeys) != 0 {
+				validateFail = true
+				attachments = append(attachments, slack.Attachment{
+					Pretext:  filename,
+					Fallback: fmt.Sprintf("key: %s validate failed\nnumber of params mismatch", strings.Join(failKeys, ", ")),
+					Text:     fmt.Sprintf("key: %s validate failed\nnumber of params mismatch", strings.Join(failKeys, ", ")),
+					Color:    colorDanger,
+				})
+			}
+		}
+		if validateFail {
+			// Append button
+			attachments = append(attachments, slack.Attachment{
+				Fallback:   "You are unable to continue",
+				Text:       "Are you sure to *FORCE* update this diff?",
+				CallbackID: "updateI18n",
+				Color:      colorDanger,
+				Actions: []slack.AttachmentAction{
+					slack.AttachmentAction{
+						Name:  "i18n confirm",
+						Text:  "*FORCE* Update",
+						Type:  "button",
+						Value: "update",
+					},
 				},
-			},
-		})
+			})
+		} else {
+			// Append button
+			attachments = append(attachments, slack.Attachment{
+				Fallback:   "You are unable to continue",
+				Text:       "commit this diff?",
+				CallbackID: "updateI18n",
+				Color:      "#3AA3E3",
+				Actions: []slack.AttachmentAction{
+					slack.AttachmentAction{
+						Name:  "i18n confirm",
+						Text:  "Update",
+						Type:  "button",
+						Value: "update",
+					},
+				},
+			})
+		}
 	}
 	sendSlack(attachments)
 }
@@ -284,7 +306,7 @@ func mergePush() {
 	// setting commit message
 	// slackUserID is used to metion user in slack deployment message at pushToEctd.go
 	// nslackUserEmail is used to let people know who did this commit
-	commitMsg := fmt.Sprintf("[Misc] Update i18n\nslackUserID: %s\nslackUserEmail: %s", slackUserID, slackUserEmail)
+	commitMsg := fmt.Sprintf("[Misc] Update i18n\nslackUserEmail: %s\nslackUserID: %s", slackUserEmail, slackUserID)
 	execCommand(folder, "git", []string{"commit", "-m", commitMsg})
 
 	execCommand(folder, "git", []string{"checkout", "master"})
@@ -315,8 +337,8 @@ func execCommand(dir, commands string, args []string) (string, string) {
 	cmd.Stderr = &stderr
 	if err := cmd.Run(); err != nil {
 		attachments := []slack.Attachment{slack.Attachment{
-			Fallback: "failed at " + strings.Join(displayCmd, " ") + "\nError: " + stderr.String(),
-			Text:     "failed at " + strings.Join(displayCmd, " ") + "\nError: " + stderr.String(),
+			Fallback: "Update fail, please try restart again.\nfailed at " + strings.Join(displayCmd, " ") + "\nError: " + stderr.String(),
+			Text:     "Update fail, please try restart again.\nfailed at " + strings.Join(displayCmd, " ") + "\nError: " + stderr.String(),
 			Color:    colorDanger,
 		}}
 		sendSlack(attachments)
