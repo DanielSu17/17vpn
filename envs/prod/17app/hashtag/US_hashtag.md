@@ -1,1 +1,1 @@
-US Officail recommended hashtags
+US Official recommended hashtags

@@ -1,1 +1,1 @@
-MO Officail recommended hashtags
+MO Official recommended hashtags

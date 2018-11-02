@@ -1,1 +1,1 @@
-OTHERS Officail recommended hashtags
+OTHERS Official recommended hashtags

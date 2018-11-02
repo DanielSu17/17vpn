@@ -1,1 +1,1 @@
-SG Officail recommended hashtags
+SG Official recommended hashtags

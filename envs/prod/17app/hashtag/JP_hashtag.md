@@ -1,1 +1,1 @@
-JP Officail recommended hashtags
+JP Official recommended hashtags

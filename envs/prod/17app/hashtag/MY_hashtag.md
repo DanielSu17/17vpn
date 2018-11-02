@@ -1,1 +1,1 @@
-MY Officail recommended hashtags
+MY Official recommended hashtags
