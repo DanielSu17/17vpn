@@ -160,7 +160,8 @@ func gitDiff() {
 	diff, _ := execCommand(folder, "git", []string{"diff"})
 
 	// Prepare variable
-	reFilename := regexp.MustCompile("^diff --git a/([a-zA-Z0-9./]*)")
+	// parse filename from `diff --git a/envs/prod/17app/i18n/en_us/android.json b/envs/prod/17app/i18n/en_us/android.json`
+	reFilename := regexp.MustCompile("^diff --git a/([a-zA-Z0-9./_]*)")
 	lines := strings.Split(diff, "\n")
 	filename := ""
 	lastFilename := ""
