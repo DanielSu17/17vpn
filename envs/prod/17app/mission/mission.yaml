@@ -27,28 +27,6 @@
 # // | NON_IAP | 2 |
 
 missions:
-  - ID: c729cc22-fba1-4683-affe-31ee008d1fed
-    type: 8 #IAP
-    lifeCycle: 1 #ONETIME
-    reward:
-      rewardType: 1
-      rewardID: "picnic"
-      amount: 1
-      expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_weekly_first_time_IAP_reward_title"
-    i18nContent: "baggage_mission_weekly_first_time_IAP_reward_desc"
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: gift_picnic
-    goalValue: 1
-    enableTimeRange:
-      - startTime: "2018-11-07 00:00:00 (GMT+0800)"
-        endTime: "2018-11-13 23:59:59 (GMT+0800)"
-    platforms:
-      - android
-      - ios
-
   - ID: 29f04824-7f82-4806-8722-34c0654bc85e
     type: 8 #IAP
     lifeCycle: 1 #ONETIME
@@ -70,6 +48,30 @@ missions:
     platforms:
       - android
       - ios
+
+  - ID: ab94884e-c25d-4f5a-945d-900e2ecdd44d
+    type: 9 #View_Stream_X_Seconds
+    lifeCycle: 1 #ONETIME
+    reward:
+      rewardType: 1
+      rewardID: "1808_tw_hot_support"
+      amount: 1
+      expireTimeSecs: 86400
+    i18nTitle: "baggage_mission_watch_streams_time_in_total_reward_title"
+    i18nTitleParams:
+      - needMap: false
+        value: "10"
+    i18nContent: "baggage_mission_watch_streams_time_in_total_reward_desc"
+    i18nContentParams:
+      - needMap: true
+        mapOption: 1
+        value: gift_1808_tw_hot_support
+    goalValue: 600
+    enableTimeRange:
+      - startTime: "2018-11-26 12:00:00 (GMT+0800)"
+        endTime: "2018-12-10 23:59:59 (GMT+0800)"
+    platforms:
+      - web
 
   - ID: b61968cd-8d6f-4706-8234-5c2b70bdc99d
     type: 9 #View_Stream_X_Seconds
@@ -426,3 +428,19 @@ supportedVersion:
 #   platforms:
 #     - android
 #       - ios
+
+# - ID: c729cc22-fba1-4683-affe-31ee008d1fed
+#   type: 8 #IAP
+#   lifeCycle: 1 #ONETIME
+#   reward:
+#     rewardType: 1
+#     rewardID: "picnic"
+#     amount: 1
+#     expireTimeSecs: 86400
+#   goalValue: 1
+#   enableTimeRange:
+#     - startTime: "2018-11-07 00:00:00 (GMT+0800)"
+#       endTime: "2018-11-13 23:59:59 (GMT+0800)"
+#   platforms:
+#     - android
+#     - ios
