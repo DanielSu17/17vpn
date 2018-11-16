@@ -17,13 +17,6 @@ topics:
     timeRange:
         - startTime: "2018-11-12 00:00:00 (GMT+0800)"
           endTime: "2018-11-27 23:59:59 (GMT+0800)"
-  - nameToken: "subtab_live_stream_option_gossip"
-    name: "gossip"
-    eventIDLimitation:
-    eventLimitationErrorMsg:
-    timeRange:
-        - startTime: "2018-11-02 19:00:00 (GMT+0800)"
-          endTime: "2018-11-02 20:30:00 (GMT+0800)"
   - nameToken: "subtab_live_stream_option_xmas"
     name: "xmas"
     eventIDLimitation:
@@ -38,6 +31,64 @@ topics:
     timeRange:
         - startTime: "2018-11-05 18:00:00 (GMT+0800)"
           endTime: "2018-11-24 23:59:59 (GMT+0800)"
+  - nameToken: "subtab_live_stream_option_singing"
+    name: "singing"
+    eventIDLimitation:
+      - 544
+    eventLimitationErrorMsg:
+      key: "subtab_config_setting_error_message" 
+      params:
+        - needMap: true
+          value: "subtab_live_stream_option_singing"
+        - needMap: true
+          value: "event_singing"
+    timeRange:
+        - startTime: "2018-11-13 18:00:00 (GMT+0800)"
+          endTime: "2018-12-17 23:59:59 (GMT+0800)"
+  - nameToken: "subtab_live_stream_option_singleday"
+    name: "singleday"
+    eventIDLimitation:
+      - 549
+    eventLimitationErrorMsg:
+      key: "subtab_config_setting_error_message" 
+      params:
+        - needMap: true
+          value: "subtab_live_stream_option_singleday"
+        - needMap: true
+          value: "event_singleday"
+    timeRange:
+        - startTime: "2018-11-17 00:00:00 (GMT+0800)"
+          endTime: "2018-11-17 23:59:59 (GMT+0800)"
+        - startTime: "2018-11-23 00:00:00 (GMT+0800)"
+          endTime: "2018-11-23 23:59:59 (GMT+0800)"
+  - nameToken: "subtab_live_stream_option_livestation"
+    name: "livestation"
+    eventIDLimitation:
+      - 534
+    eventLimitationErrorMsg:
+      key: "subtab_config_setting_error_message" 
+      params:
+        - needMap: true
+          value: "subtab_live_stream_option_livestation"
+        - needMap: true
+          value: "event_livestation"
+    timeRange:
+        - startTime: "2018-11-20 00:00:00 (GMT+0800)"
+          endTime: "2018-11-20 23:59:59 (GMT+0800)"
+  - nameToken: "subtab_live_stream_option_coffeeschool"
+    name: "coffeeschool"
+    eventIDLimitation:
+      - 560
+    eventLimitationErrorMsg:
+      key: "subtab_config_setting_error_message" 
+      params:
+        - needMap: true
+          value: "subtab_live_stream_option_coffeeschool"
+        - needMap: true
+          value: "event_coffeeschool"
+    timeRange:
+        - startTime: "2018-11-22 00:00:00 (GMT+0800)"
+          endTime: "2018-11-22 23:59:59 (GMT+0800)"
   - nameToken: "subtab_live_stream_option_beauty"
     name: "beauty"
     eventIDLimitation:
@@ -50,8 +101,8 @@ topics:
         - needMap: true
           value: "event_beauty"
     timeRange:
-        - startTime: "2018-11-15 00:00:00 (GMT+0800)"
-          endTime: "2018-11-15 23:59:59 (GMT+0800)"
+        - startTime: "2018-11-21 00:00:00 (GMT+0800)"
+          endTime: "2018-11-21 23:59:59 (GMT+0800)"
   - nameToken: "subtab_live_stream_option_talentchef"
     name: "talentchef"
     eventIDLimitation:
@@ -84,52 +135,6 @@ topics:
           endTime: "2018-11-05 23:59:59 (GMT+0800)"
         - startTime: "2018-11-10 00:00:00 (GMT+0800)"
           endTime: "2018-11-10 23:59:59 (GMT+0800)"
-  - nameToken: "subtab_live_stream_option_warrior"
-    name: "warrior"
-    eventIDLimitation:
-      - 517
-    eventLimitationErrorMsg:
-      key: "subtab_config_setting_error_message" 
-      params:
-        - needMap: true
-          value: "subtab_live_stream_option_warrior"
-        - needMap: true
-          value: "event_warrior"
-    timeRange:
-        - startTime: "2018-11-06 00:00:00 (GMT+0800)"
-          endTime: "2018-11-06 23:59:59 (GMT+0800)"
-        - startTime: "2018-11-14 00:00:00 (GMT+0800)"
-          endTime: "2018-11-14 23:59:59 (GMT+0800)"
-  - nameToken: "subtab_live_stream_option_goldenticket"
-    name: "goldenticket"
-    eventIDLimitation:
-      - 489
-    eventLimitationErrorMsg:
-      key: "subtab_config_setting_error_message" 
-      params:
-        - needMap: true
-          value: "subtab_live_stream_option_goldenticket"
-        - needMap: true
-          value: "event_goldenticket"
-    timeRange:
-        - startTime: "2018-11-09 00:00:00 (GMT+0800)"
-          endTime: "2018-11-09 23:59:59 (GMT+0800)"
-        - startTime: "2018-11-12 00:00:00 (GMT+0800)"
-          endTime: "2018-11-12 23:59:59 (GMT+0800)"
-  - nameToken: "subtab_live_stream_option_dance"
-    name: "dance"
-    eventIDLimitation:
-      - 481
-    eventLimitationErrorMsg:
-      key: "subtab_config_setting_error_message" 
-      params:
-        - needMap: true
-          value: "subtab_live_stream_option_dance"
-        - needMap: true
-          value: "event_dance"
-    timeRange:
-        - startTime: "2018-11-02 00:00:00 (GMT+0800)"
-          endTime: "2018-11-02 23:59:59 (GMT+0800)"
   - nameToken: "subtab_live_stream_option_sevencasino"
     name: "sevencasino"
     eventIDLimitation:
@@ -142,10 +147,8 @@ topics:
         - needMap: true
           value: "event_sevencasino"
     timeRange:
-        - startTime: "2018-11-06 00:00:00 (GMT+0800)"
-          endTime: "2018-11-06 23:59:59 (GMT+0800)"
-        - startTime: "2018-11-13 00:00:00 (GMT+0800)"
-          endTime: "2018-11-13 23:59:59 (GMT+0800)"
+        - startTime: "2018-11-20 00:00:00 (GMT+0800)"
+          endTime: "2018-11-20 23:59:59 (GMT+0800)"
   - nameToken: "subtab_live_stream_option_davidsangels"
     name: "davidsangels"
     eventIDLimitation:
@@ -158,24 +161,8 @@ topics:
         - needMap: true
           value: "event_davidsangels"
     timeRange:
-        - startTime: "2018-11-08 00:00:00 (GMT+0800)"
-          endTime: "2018-11-08 23:59:59 (GMT+0800)"
-        - startTime: "2018-11-15 00:00:00 (GMT+0800)"
-          endTime: "2018-11-15 23:59:59 (GMT+0800)"
-  - nameToken: "subtab_live_stream_option_scorpio"
-    name: "scorpio"
-    eventIDLimitation:
-      - 506
-    eventLimitationErrorMsg:
-      key: "subtab_config_setting_error_message" 
-      params:
-        - needMap: true
-          value: "subtab_live_stream_option_scorpio"
-        - needMap: true
-          value: "event_scorpio"
-    timeRange:
-        - startTime: "2018-11-07 00:00:00 (GMT+0800)"
-          endTime: "2018-11-07 23:59:59 (GMT+0800)"
+        - startTime: "2018-11-22 00:00:00 (GMT+0800)"
+          endTime: "2018-11-22 23:59:59 (GMT+0800)"
   - nameToken: "subtab_live_stream_option_hotspring"
     name: "hotspring"
     eventIDLimitation:
