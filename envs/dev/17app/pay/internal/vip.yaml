@@ -18,12 +18,17 @@
    # - BY_KGI_BANK = 19; // 凱基銀行
    # - BY_SCSB_BANK = 20; // 上海銀行
    # - BY_WEST_BANK = 22; // Bank of the West
-# "Currency" follows ISO 4217 standard:
+   # - BY_BNB = 23 // 幣安
+    # "Currency" follows ISO 4217 standard:   
    #https://zh.wikipedia.org/wiki/ISO_4217#%E7%8E%B0%E8%A1%8C%E4%BB%A3%E7%A0%81
    # duplicateUniformInvoice // 許可開立二聯式發票的payChannel
    # triplicateUniformInvoice // 許可開立三聯式發票的payChannel
    # orderUpperConstrain // 訂單每金售價上限(超過需review)
-TW:
+   # XPT => Mith
+   # XPD => BNB
+   # minMith / maxMith / minBnb / maxBnb shows BNB & Mith to local currency exchange rate
+   # 1mith / 1 bnb can exchange rate range
+TW:   
   payChannel: 
     - 1
     - 2
@@ -37,6 +42,7 @@ TW:
     - 18
     - 19
     - 20
+    - 23
   duplicateUniformInvoice:
     - 1
     - 2
@@ -54,6 +60,7 @@ TW:
     - SGD
     - MYR
     - XPT
+    - XPD
   localCurrency:
     - TWD
   maxMith:
@@ -64,6 +71,11 @@ TW:
     0.02
   minRange:
     0.02
+  maxBnb:
+    256.4125641
+  minBnb:
+    212.7659574
+
 
 JP:
   payChannel:
@@ -92,10 +104,6 @@ ID:
     - IDR
   localCurrency:
     - IDR
-  maxMith:
-    15
-  minMith:
-    5
   maxRange:
     0.02
   minRange:
@@ -111,10 +119,6 @@ US:
     - USD
   orderUpperConstrain:
     1000
-  maxMith:
-    15
-  minMith:
-    5
   maxRange:
     0.02
   minRange:
