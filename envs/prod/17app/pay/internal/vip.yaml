@@ -19,7 +19,7 @@
    # - BY_SCSB_BANK = 20; // 上海銀行
    # - BY_WEST_BANK = 22; // Bank of the West
    # - BY_BNB = 23 // 幣安
-# "Currency" follows ISO 4217 standard:   
+    # "Currency" follows ISO 4217 standard:   
    #https://zh.wikipedia.org/wiki/ISO_4217#%E7%8E%B0%E8%A1%8C%E4%BB%A3%E7%A0%81
    # duplicateUniformInvoice // 許可開立二聯式發票的payChannel
    # triplicateUniformInvoice // 許可開立三聯式發票的payChannel
@@ -66,7 +66,7 @@ TW:
   maxMith:
     15
   minMith:
-    5
+    1
   maxRange:
     0.02
   minRange:
@@ -74,14 +74,14 @@ TW:
   maxBnb:
     256.4125641
   minBnb:
-    212.7659574
+    50
 
 JP:
   payChannel:
     - 2
     - 8
     - 9
-    - 10  
+    - 10
     - 13
   currency:
     - JPY
