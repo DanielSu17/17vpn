@@ -16,6 +16,7 @@
 # - 13: Recent
 # - 14: Texture
 # - 15: Goods
+# - 16: LEVEL_UP
 # ex:
 # - id: "example"
 #   type: 1
@@ -97,6 +98,18 @@
     ID: "Ransel"
     JP: "ギフト箱"
   allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo", "elite3", "elite7", "elite10" ]
+- id: "LevelUp"
+  type: 16
+  inRecent: true
+  name:
+    EN: "Level Up Gift"
+    TW: "升級禮"
+    CN: "升级礼"
+    ID: "Level Up Gift"
+    JP: "アップグレードギフト"
+  allowLabelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" , "elite3", "elite7", "elite10"]
+  marqueeDescs:
+    - giftbox_levelup_define
 - id: "Voucher"
   type: 9
   inRecent: false
