@@ -3,6 +3,10 @@ topics:
     name: "all"
     eventIDLimitation:
     eventLimitationErrorMsg:  
+  - nameToken: "subtab_live_stream_option_recommand"
+    name: "all"
+    eventIDLimitation:
+    eventLimitationErrorMsg:
   - nameToken: "subtab_live_stream_option_focusstreamer"
     name: "focusstreamer"
     eventIDLimitation:
@@ -17,6 +21,34 @@ topics:
     timeRange:
         - startTime: "2018-11-28 00:00:00 (GMT+0800)"
           endTime: "2018-11-28 23:59:59 (GMT+0800)"
+  - nameToken: "subtab_live_stream_option_superchef"
+    name: "superchef"
+    eventIDLimitation:
+      - 566
+    eventLimitationErrorMsg:
+      key: "subtab_config_setting_error_message" 
+      params:
+        - needMap: true
+          value: "subtab_live_stream_option_superchef"
+        - needMap: true
+          value: "event_superchef"
+    timeRange:
+        - startTime: "2018-11-27 00:00:00 (GMT+0800)"
+          endTime: "2018-11-27 23:59:59 (GMT+0800)"
+  - nameToken: "subtab_live_stream_option_milkshop"
+    name: "milkshop"
+    eventIDLimitation:
+      - 565
+    eventLimitationErrorMsg:
+      key: "subtab_config_setting_error_message" 
+      params:
+        - needMap: true
+          value: "subtab_live_stream_option_milkshop"
+        - needMap: true
+          value: "event_milkshop"
+    timeRange:
+        - startTime: "2018-11-30 00:00:00 (GMT+0800)"
+          endTime: "2018-11-30 23:59:59 (GMT+0800)"
   - nameToken: "subtab_live_stream_option_glorious"
     name: "glorious"
     eventIDLimitation:
@@ -31,20 +63,6 @@ topics:
     timeRange:
         - startTime: "2018-11-12 00:00:00 (GMT+0800)"
           endTime: "2018-11-27 23:59:59 (GMT+0800)"
-  - nameToken: "subtab_live_stream_option_xmas"
-    name: "xmas"
-    eventIDLimitation:
-      - 526
-    eventLimitationErrorMsg:
-      key: "subtab_config_setting_error_message" 
-      params:
-        - needMap: true
-          value: "subtab_live_stream_option_xmas"
-        - needMap: true
-          value: "event_xmas"
-    timeRange:
-        - startTime: "2018-11-05 18:00:00 (GMT+0800)"
-          endTime: "2018-11-25 23:59:59 (GMT+0800)"
   - nameToken: "subtab_live_stream_option_xmas"
     name: "xmas"
     eventIDLimitation:
@@ -87,52 +105,6 @@ topics:
     timeRange:
         - startTime: "2018-11-29 00:00:00 (GMT+0800)"
           endTime: "2018-11-29 23:59:59 (GMT+0800)"
-  - nameToken: "subtab_live_stream_option_beauty"
-    name: "beauty"
-    eventIDLimitation:
-      - 537
-    eventLimitationErrorMsg:
-      key: "subtab_config_setting_error_message" 
-      params:
-        - needMap: true
-          value: "subtab_live_stream_option_beauty"
-        - needMap: true
-          value: "event_beauty"
-    timeRange:
-        - startTime: "2018-11-21 00:00:00 (GMT+0800)"
-          endTime: "2018-11-21 23:59:59 (GMT+0800)"
-  - nameToken: "subtab_live_stream_option_talentchef"
-    name: "talentchef"
-    eventIDLimitation:
-      - 510
-    eventLimitationErrorMsg:
-      key: "subtab_config_setting_error_message" 
-      params:
-        - needMap: true
-          value: "subtab_live_stream_option_talentchef"
-        - needMap: true
-          value: "event_talentchef"
-    timeRange:
-        - startTime: "2018-11-04 00:00:00 (GMT+0800)"
-          endTime: "2018-11-04 23:59:59 (GMT+0800)"
-        - startTime: "2018-11-08 00:00:00 (GMT+0800)"
-          endTime: "2018-11-08 23:59:59 (GMT+0800)"
-  - nameToken: "subtab_live_stream_option_icon"
-    name: "icon"
-    eventIDLimitation:
-      - 410
-    eventLimitationErrorMsg:
-      key: "subtab_config_setting_error_message" 
-      params:
-        - needMap: true
-          value: "subtab_live_stream_option_icon"
-        - needMap: true
-          value: "event_icon"
-    timeRange:
-        - startTime: "2018-11-05 00:00:00 (GMT+0800)"
-          endTime: "2018-11-05 23:59:59 (GMT+0800)"
-        - startTime: "2018-11-10 00:00:00 (GMT+0800)"
-          endTime: "2018-11-10 23:59:59 (GMT+0800)"
   - nameToken: "subtab_live_stream_option_sevencasino"
     name: "sevencasino"
     eventIDLimitation:
@@ -161,22 +133,6 @@ topics:
     timeRange:
         - startTime: "2018-11-29 00:00:00 (GMT+0800)"
           endTime: "2018-11-29 23:59:59 (GMT+0800)"
-  - nameToken: "subtab_live_stream_option_hotspring"
-    name: "hotspring"
-    eventIDLimitation:
-      - 518
-    eventLimitationErrorMsg:
-      key: "subtab_config_setting_error_message" 
-      params:
-        - needMap: true
-          value: "subtab_live_stream_option_hotspring"
-        - needMap: true
-          value: "event_hotspring"
-    timeRange:
-        - startTime: "2018-11-10 00:00:00 (GMT+0800)"
-          endTime: "2018-11-10 23:59:59 (GMT+0800)"
-        - startTime: "2018-11-16 00:00:00 (GMT+0800)"
-          endTime: "2018-11-16 23:59:59 (GMT+0800)"
   - nameToken: "subtab_live_stream_option_campus"
     name: "campus"
     eventIDLimitation:
