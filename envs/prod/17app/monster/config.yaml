@@ -1,6 +1,6 @@
-max: 5	# 0 means disable feature
+max: 10	# 0 means disable feature
 animations: ["yeti"]
-big_brother_prefix: "big_brother"
+big_brother_prefix: "give_me_five"
 check_interval: 1m00s
 monsters:
 - id: monster_1
@@ -16,7 +16,7 @@ monsters:
     end_time: 24h00m00s
   share_ratio: 50 # percentage
   profit_ratio: 24 # percentage
-  bonus: 2000
+  bonus: 3000
   infoPageiconURL: https://assets-17app.akamaized.net/d1d67cab-3f7b-439f-86d8-aed1cf327fdb.png
   winnerPageiconURL: https://assets-17app.akamaized.net/9b0cf5bc-8289-4af0-b7d4-41869506db6a.png
   hintToken: {key: monster_battle_hint}
@@ -45,14 +45,17 @@ monsters:
   bonus: 3000
   infoPageiconURL: https://assets-17app.akamaized.net/d1d67cab-3f7b-439f-86d8-aed1cf327fdb.png
   winnerPageiconURL: https://assets-17app.akamaized.net/9b0cf5bc-8289-4af0-b7d4-41869506db6a.png
-  hintToken: {key: monster_battle_hint}
-  rule1Token: {key: monster_battle_rule1}
-  rule2Token: {key: monster_battle_rule2}
-  rule3Token: {key: monster_battle_rule3} 
-  rule4Token: {key: monster_battle_rule4}
-  countdownToken: {key: monster_battle_countdown}
-  failureToken: {key: monster_battle_failure}
-  animation: "yeti" 
+  hintToken: {key: monster_battle_hint_bbro}
+  rule1Token: {key: monster_battle_rule1_bbro}
+  rule2Token: {key: monster_battle_rule2_bbro}
+  rule3Token: {key: monster_battle_rule3_bbro} 
+  rule4Token: {key: monster_battle_rule4_bbro}
+  countdownToken: {key: monster_battle_countdown_bbro}
+  failureToken: {key: monster_battle_failure_bbro}
+  animation: "give_me_five" 
+
+
+
   
 animationLoader:
 - url: https://assets-17app.akamaized.net/98b26445-2625-49a5-a541-ddf6a0256c00.zip
