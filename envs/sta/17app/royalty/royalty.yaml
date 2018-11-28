@@ -1,6 +1,4 @@
-enable: true # this config will be deprecated, use achievement_enable
-
-achievement_enable:
+achievement_enable: # the config will be deprecated, use achievement
   0: true  # 1-0 初始任務
   1: true  # 1-1 進入直播間
   2: true  # 1-2 直播間時長
@@ -16,6 +14,64 @@ achievement_enable:
   12: false # 2-4 陪伴使用次數
   13: true # 2-5 彈幕留言使用次數
 
+# if enable set to false, there will be no aggregation for achievements
+achievement:
+  0: # 1-0 初始任務
+    enable: true
+    regionMode: 3 
+    regions: []
+  1: # 1-1 進入直播間
+    enable: true
+    regionMode: 3
+    regions: []
+  2: # 1-2 直播間時長
+    enable: true
+    regionMode: 3
+    regions: []
+  3: # 1-3 留言次數 
+    enable: true
+    regionMode: 3 
+    regions: []
+  4: # 1-4 在不同直播間留言
+    enable: true
+    regionMode: 3 
+    regions: []
+  5: # 1-5 分享次數 
+    enable: true
+    regionMode: 3 
+    regions: []
+  6: # 1-6 分享不同主播
+    enable: true
+    regionMode: 3 
+    regions: []
+  7: # 1-7 視直播為生命
+    enable: true
+    regionMode: 3 
+    regions: []
+  8: # 1-8 成為直播間第一個
+    enable: true
+    regionMode: 3 
+    regions: []
+  9: # 2-1 搶紅包次數
+    enable: true
+    regionMode: 3 
+    regions: []
+  10: # 2-2 搶紅包累積點數
+    enable: true
+    regionMode: 3 
+    regions: []
+  11: # 2-3 子母畫面使用次數
+    enable: true
+    regionMode: 3 
+    regions: []
+  12: # 2-4 陪伴使用次數
+    enable: false
+    regionMode: 3 
+    regions: []
+  13: # 2-5 彈幕留言使用次數
+    enable: true
+    regionMode: 3 
+    regions: []
 
 i18n:
   "loyalty_program_title_name1.0": "loyalty_program_title_name1.0"
