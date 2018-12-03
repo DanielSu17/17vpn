@@ -1,25 +1,8 @@
-achievement_enable: # the config will be deprecated, use achievement
-  0: true  # 1-0 初始任務
-  1: true  # 1-1 進入直播間
-  2: true  # 1-2 直播間時長
-  3: true  # 1-3 留言次數 
-  4: true  # 1-4 在不同直播間留言
-  5: true  # 1-5 分享次數
-  6: true  # 1-6 分享不同主播
-  7: true  # 1-7 視直播為生命
-  8: true  # 1-8 成為直播間第一個
-  9: true  # 2-1 搶紅包次數
-  10: true # 2-2 搶紅包累積點數
-  11: true # 2-3 子母畫面使用次數
-  12: false # 2-4 陪伴使用次數
-  13: true # 2-5 彈幕留言使用次數
-
-  
 # if enable set to false, there will be no aggregation for achievements
 achievement:
   0: # 1-0 初始任務
     enable: true
-    regionMode: 3 
+    regionMode: 3
     regions: ["JP"]
   1: # 1-1 進入直播間
     enable: true
@@ -31,48 +14,68 @@ achievement:
     regions: []
   3: # 1-3 留言次數 
     enable: true
-    regionMode: 3 
+    regionMode: 3
     regions: []
   4: # 1-4 在不同直播間留言
     enable: true
-    regionMode: 3 
+    regionMode: 3
     regions: []
   5: # 1-5 分享次數 
     enable: true
-    regionMode: 3 
+    regionMode: 3
     regions: []
   6: # 1-6 分享不同主播
     enable: true
-    regionMode: 3 
+    regionMode: 3
     regions: []
   7: # 1-7 視直播為生命
     enable: true
-    regionMode: 3 
+    regionMode: 3
     regions: []
   8: # 1-8 成為直播間第一個
     enable: true
-    regionMode: 3 
+    regionMode: 3
     regions: []
   9: # 2-1 搶紅包次數
     enable: true
-    regionMode: 3 
+    regionMode: 3
     regions: []
   10: # 2-2 搶紅包累積點數
     enable: true
-    regionMode: 3 
+    regionMode: 3
     regions: []
   11: # 2-3 子母畫面使用次數
     enable: true
-    regionMode: 3 
+    regionMode: 3
     regions: []
   12: # 2-4 陪伴使用次數
-    enable: false
-    regionMode: 3 
-    regions: []
+    enable: true
+    regionMode: 2
+    regions: ["TW"]
   13: # 2-5 彈幕留言使用次數
     enable: true
-    regionMode: 3 
+    regionMode: 3
     regions: []
+  14: # 2-6 語音留言使用次數
+    enable: false
+    regionMode: 3
+    regions: []
+  15: # 2-7 送生日禮次數
+    enable: false
+    regionMode: 3
+    regions: []
+  16: # 2-8 守護騎士
+    enable: false
+    regionMode: 3
+    regions: []
+  17: # 2-9 戳戳
+    enable: false
+    regionMode: 3
+    regions: []
+  18: # 2-10 黃金票卷贈送張數
+    enable: true
+    regionMode: 2
+    regions: ["TW"]
 
 
 i18n:
