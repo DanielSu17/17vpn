@@ -45,11 +45,11 @@ throttling_max_sync: 5
 #     reservoir_size must be non-zero. Otherwise the leakybucket algorithm will fail.
 #     reservoir_size should be larger than flow_per_second, otherwise the actual
 #     allowed QPS may be lower than specified flow_per_second
-rate_limits:
-- url: "/v1/abc/[0-9]*/def"
-  method: "GET"
-  flow_per_second: 100
-  reservoir_size: 200
+# rate_limits:
+# - url: "/v1/abc/[0-9]*/def"
+#   method: "GET"
+#   flow_per_second: 100
+#   reservoir_size: 200
 
 # FIXME
 # The code above should be removed after token bucket helper is integrated into revprox.
