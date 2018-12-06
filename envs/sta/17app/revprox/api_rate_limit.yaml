@@ -51,3 +51,8 @@ rate_limits:
   method: "GET"
   flow_per_second: 1
   reservoir_size: 5
+
+# FIXME
+# The code above should be removed after token bucket helper is integrated into revprox.
+# And the file should be filled in the new api rate limit content, which will be checked
+# and applied by service/tokenbucket/helper.
