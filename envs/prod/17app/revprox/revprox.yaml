@@ -2,6 +2,16 @@
 # - 1: On Mode
 # - 2: Whitelist-Only Mode
 # access_whitelist is a list of IP address can access on Whitelist-Only mode
+# allowed_origins is a list of regular expressions of all allowed origins for CORS
 access_mode: 1
 access_whitelist:
  - 61.216.89.10
+allowed_origins:
+ - "^https://17\\.live$"
+ - "^https://\\w+\\.17\\.live$"
+ - "^https://\\w+--17live\\.netlify.com$"
+ - "^https?://17\\.media$"
+ - "^https?://\\w+\\.17\\.media$"
+ - "^https?://\\w+\\.17app\\.co(:\\d+)?$"
+ - "^http://17\\.local(:\\d+)?$"
+ - "^http://localhost(:\\d+)?$"
