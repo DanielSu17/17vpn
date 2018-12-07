@@ -1,7 +1,8 @@
 max: 10	# 0 means disable feature
-animations: ["yeti"]
-big_brother_prefix: "give_me_five"
 check_interval: 1m00s
+big_brother_prefix: "give_me_five"
+ccu: 0
+streamDuration: 0h00m00s
 alertMembers: ["angus"]
 alertChannels: ["testformonsteralert"]
 monsters:
@@ -16,6 +17,7 @@ monsters:
     end_time: 14h30m00s
   - start_time: 17h00m00s
     end_time: 24h00m00s
+  type: 0
   share_ratio: 50 # percentage
   profit_ratio: 24 # percentage
   bonus: 3000
@@ -42,6 +44,7 @@ monsters:
     end_time: 14h30m00s
   - start_time: 17h00m00s
     end_time: 24h00m00s
+  type: 0
   share_ratio: 50 # percentage
   profit_ratio: 24 # percentage
   bonus: 3000
