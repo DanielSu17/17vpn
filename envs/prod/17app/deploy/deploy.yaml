@@ -28,11 +28,11 @@ settings:
       endpoint: 'k8s-webapp-deployment/buildWithParameters?token=uceacpKX7Xk37tHAmrWCPpPGEUEK4dvndRMQYdMz&ENV=prod'
   go:
     k8sstaqa:
-      endpoint: 'k8sstaqa-deployment-goapi/buildWithParameters?token=egxVYNaBdHqKWMnJV72EQsG7xtX2UYiYHsLNUWVe'
+      endpoint: 'k8sstaqa-deployment-goapi/buildWithParameters?token=egxVYNaBdHqKWMnJV72EQsG7xtX2UYiYHsLNUWVe&ENVIRONMENT=k8sstaqa'
     k8ssta:
-      endpoint: 'k8ssta-deployment-goapi/buildWithParameters?token=qLnZFhgbtDwYHq3bpqdsfHkXqEbMS7VAuTshkBrQ'
+      endpoint: 'k8ssta-deployment-goapi/buildWithParameters?token=qLnZFhgbtDwYHq3bpqdsfHkXqEbMS7VAuTshkBrQ&ENVIRONMENT=k8ssta'
     k8sprod:
-      endpoint: 'k8sprod-deployment-goapi/buildWithParameters?token=WPZgd7ag4Q7ksL3nSqLW2QVq6aaDK5apguCvR23M'
+      endpoint: 'k8sprod-deployment-goapi/buildWithParameters?token=WPZgd7ag4Q7ksL3nSqLW2QVq6aaDK5apguCvR23M&ENVIRONMENT=k8sprod'
   nodejs:
     dev:
       endpoint: 'dev-deployment-nodejs/buildWithParameters?token=GaFJ9yVbWusyzqs9babWxJGTJUukHFxLRLULZdYH'
