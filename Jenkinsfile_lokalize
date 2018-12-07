@@ -1,0 +1,89 @@
+// NOTE:
+//   we are now using a legacy Jenkins feature `Trigger builds remotely`
+//   but is NOT supported by Jenkinsfile, need to configure it manually
+//   DO remember to check if the paramter is set correctly after apply.
+//
+//   also, any change within the block of `properties()` might result in next
+//   build failure, it's limitation of Jenkins WebUI limitation by design,
+//   it's not a bug, don't report it as bug!!!
+
+properties([
+    buildDiscarder(
+        logRotator(
+            numToKeepStr: '30'
+        )
+    ),
+    disableConcurrentBuilds(),
+    parameters([
+        choice(
+            choices: ['all', 'dev', 'sta', 'prod'],
+            description: '',
+            name: 'OPERATION'
+        ),
+        string(
+            defaultValue: '',
+            description: '',
+            name: 'SLACK_TOKEN',
+            trim: false
+        ),
+        string(
+            defaultValue: '',
+            description: '',
+            name: 'SLACK_USER_ID',
+            trim: false
+        ),
+        string(
+            defaultValue: '',
+            description: '',
+            name: 'SLACK_USER_EMAIL',
+            trim: false
+        ),
+        string(
+            defaultValue: '',
+            description: 'empty for new job, fill anything to push job diff',
+            name: 'CONFIRM',
+            trim: false
+        )]
+    )
+])
+
+
+node { timestamps { ansiColor('xterm') {
+  // setup environment variables
+  env.GOPATH = "${WORKSPACE}/gowork"
+  env.PATH = "${WORKSPACE}/go/bin:${env.GOPATH}/bin:${WORKSPACE}/bin:${env.PATH}"
+
+  stage('Setup Environment') {
+    if (! fileExists("${env.GOPATH}")) {
+      // setup binary output directory
+      sh("mkdir -p ${WORKSPACE}/bin")
+      sh("mkdir -p ${env.GOPATH}")
+
+      // setup environment for golang
+      def goVersion = "1.11.1"
+      def goBinary = "go${goVersion}.linux-amd64.tar.gz"
+      def goURL = "https://storage.googleapis.com/golang/${goBinary}"
+      sh("curl ${goURL} | tar zxf - -C ${WORKSPACE}")
+      sh("go version")
+
+      // setup govendor
+      sh("go get -u github.com/kardianos/govendor")
+    }
+  } // end of stage
+
+  stage('Git Checkout') {
+    sh("mkdir -p gowork/src/configs")
+    dir("gowork/src/configs") {
+      git url: 'git@github.com:17media/configs.git',
+          branch: 'master'
+
+      dir("tools/diffToSlack") {
+        sh("govendor sync")
+      }
+    }
+  } // end of stage
+
+  stage('Command Execute') {
+    sh("go run gowork/src/configs/tools/diffToSlack/diffToSlack.go")
+  } // end of stage
+} /* end of ansiColor */ } /* end of timestamps */ } /* end of node */
