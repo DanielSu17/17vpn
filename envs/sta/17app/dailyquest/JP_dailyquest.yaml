@@ -194,7 +194,7 @@ bigRewards:
 questInterval: 60
 
 # newbie_days defines who is newbie
-newbieDays: 1
+newbieDays: 7
 
 # newbie_rewards defines newbie quest rewards
 # type are defined as following
@@ -247,3 +247,30 @@ newbieRewards:
 #      point: 100
 #      exp: 0
 #      required: 1
+    - type: 12
+      point: 0
+      exp: 0
+      required: 10
+      voucherReward:
+        type: 1
+        itemID: "great"
+        amount: 1
+        intervalSec: 28800
+    - type: 13
+      point: 0
+      exp: 0
+      required: 30
+      voucherReward:
+        type: 1
+        itemID: "bravo"
+        amount: 2
+        intervalSec: 28800
+    - type: 14
+      point: 0
+      exp: 0
+      required: 2
+      voucherReward:
+        type: 1
+        itemID: "socute"
+        amount: 3
+        intervalSec: 28800
