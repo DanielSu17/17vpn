@@ -18,7 +18,7 @@ properties([
         choice(
             choices: ['all', 'dev', 'sta', 'prod'],
             description: '',
-            name: 'OPERATION'
+            name: 'ENV'
         ),
         string(
             defaultValue: '',
