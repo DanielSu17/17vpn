@@ -167,6 +167,7 @@ func gitDiff() {
 	lastFilename := ""
 	added := ""
 	removed := ""
+	fileEnv := ""
 	attachments := []slack.Attachment{}
 	failKeysList := map[string][]string{}
 	// Scan diff content
@@ -176,12 +177,12 @@ func gitDiff() {
 		if match != nil {
 			filename = match[1]
 			fmt.Println(filename)
-			if env == "all" {
-				// only process prod if we update all envs
-				fileEnv := strings.Split(filename, "/")[1]
-				if fileEnv != "prod" {
-					continue
-				}
+			fileEnv = strings.Split(filename, "/")[1]
+		}
+		if env == "all" {
+			// only process prod if we update all envs
+			if fileEnv != "prod" {
+				continue
 			}
 		}
 
