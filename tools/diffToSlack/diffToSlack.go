@@ -176,6 +176,13 @@ func gitDiff() {
 		if match != nil {
 			filename = match[1]
 			fmt.Println(filename)
+			if env == "all" {
+				// only process prod if we update all envs
+				fileEnv := strings.Split(filename, "/")[1]
+				if fileEnv != "prod" {
+					continue
+				}
+			}
 		}
 
 		// Next File send slack and reset
