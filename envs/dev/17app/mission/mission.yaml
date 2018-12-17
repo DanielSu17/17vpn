@@ -27,87 +27,219 @@
 # // | NON_IAP | 2 |
 
 missions:
-  - ID: f0da6a8d-d63e-482d-84ae-f28ae6f32dcf
+  - ID: ed6c2ccd-a9de-4751-8332-3d862c25bb92
+    type: 8 #IAP
+    lifeCycle: 1 #ONETIME
+    targetAudience: 2 #NON_IAP
+    reward:
+      rewardType: 1
+      rewardID: "jp_first_charge_1"
+      amount: 5
+      expireTimeSecs: 2592000 # 30 days
+    i18nTitle: "baggage_mission_first_time_IAP_reward_jp_title"
+    i18nTitleParams:
+    i18nContent: "baggage_mission_first_time_IAP_reward_jp_desc"
+    i18nContentParams:
+      - needMap: true
+        mapOption: 1
+        value: "gift_jp_first_charge_1"
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2018-08-14 12:00:00 (GMT+0900)"
+        endTime: "2018-12-31 23:59:59 (GMT+0900)"
+    platforms:
+      - android
+      - ios
+
+  - ID: 5b4c84a4-8f28-439b-a8b6-6e9f94996a22
     type: 8 #IAP
     reward:
       rewardType: 1
-      rewardID: "1809_tw_nulife_bp_10"
+      rewardID: "1808_tw_hot_support"
       amount: 1
       expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_first_time_IAP_reward_title"
+    i18nTitle: "baggage_mission_first_time_IAP_reward_jp_event_title"
     i18nTitleParams:
-    i18nContent: "baggage_mission_first_time_IAP_reward_desc"
+    i18nContent: "baggage_mission_first_time_IAP_reward_jp_event_des"
     i18nContentParams:
-      - needMap: false
-        value: "20"
       - needMap: true
         mapOption: 1
-        value: "gift_1809_tw_nulife_bp_10"
+        value: "gift_1808_tw_hot_support"
     goalValue: 1
     enableTimeRange:
-      - startTime: "2018-09-28 18:00:00 (GMT+0800)"
-        endTime: "2018-11-07 23:59:59 (GMT+0800)"
-    platforms:
-      - android
-      - ios
-      - web
-
-  - ID: e0e26aaa-a057-455e-bf13-9a3bc0163856
-    type: 2 #答題17Q
-    category: 1
-    reward:
-      rewardType: 1
-      rewardID: "1810_tw_live_bp_10"
-      amount: 1
-      expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_trivia_correct_answered_x_get_y_reward_title"
-    i18nTitleParams:
-      - needMap: false
-        value: "2"
-      - needMap: false
-        value: "1"
-    i18nContent: "baggage_mission_trivia_correct_answered_x_get_y_reward_desc"
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: gift_1810_tw_live_bp_10
-    goalValue: 2
-    enableTimeRange:
-      - startTime: "2018-09-28 18:00:00 (GMT+0800)"
-        endTime: "2018-11-27 23:59:59 (GMT+0800)"
-    refIDs:
-      - 0e671b10-1660-419c-67f9-9983ebdbad38
+      - startTime: "2018-10-19 19:00:00 (GMT+0900)"
+        endTime: "2018-11-27 23:59:59 (GMT+0900)"
     platforms:
       - android
       - ios
 
-  - ID: d9a26993-29bf-4a87-b071-c04f90fb4c09
-    type: 2 #答題17好聰明
-    category: 1
+  - ID: bcbc4bcc-59e1-488d-a087-26b54fa3bf10
+    type: 5 #Comment_In_Livestream
     reward:
       rewardType: 1
-      rewardID: "1810_tw_live_bp_10"
+      rewardID: "1808_tw_hot_support"
       amount: 1
       expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_trivia_on_tv_correct_answered_x_get_y_reward_title"
+    i18nTitle: "baggage_mission_leave_comment_reward_title"
     i18nTitleParams:
       - needMap: false
-        value: "2"
-      - needMap: false
-        value: "1"
-    i18nContent: "baggage_mission_trivia_on_tv_correct_answered_x_get_y_reward_desc"
+        value: "3"
+    i18nContent: "baggage_mission_leave_comment_reward_desc"
     i18nContentParams:
       - needMap: true
         mapOption: 1
-        value: gift_1810_tw_live_bp_10
-    goalValue: 2
+        value: "gift_1808_tw_hot_support"
+    goalValue: 3
     enableTimeRange:
-      - startTime: "2018-09-28 18:00:00 (GMT+0800)"
-        endTime: "2018-11-27 23:59:59 (GMT+0800)"
-    refIDs:
-      - 94b56df0-336b-4968-7c41-88ec85246024
+      - startTime: "2018-10-26 12:00:00 (GMT+0900)"
+        endTime: "2019-02-03 23:59:59 (GMT+0900)"
     platforms:
       - android
+      - ios
+
+  - ID: dd1f1ec6-4c7d-496f-a2db-65887af900d2
+    type: 9 #View_Stream_X_Seconds
+    reward:
+      rewardType: 1
+      rewardID: "1808_tw_hot_support"
+      amount: 1
+      expireTimeSecs: 86400
+    i18nTitle: "baggage_mission_watch_streams_time_in_total_reward_jp_title"
+    i18nTitleParams:
+      - needMap: false
+        value: "5"
+    i18nContent: "baggage_mission_watch_streams_time_in_total_reward_jp_desc"
+    i18nContentParams:
+      - needMap: true
+        mapOption: 1
+        value: "gift_1808_tw_hot_support"
+    goalValue: 300
+    enableTimeRange:
+      - startTime: "2018-10-26 12:00:00 (GMT+0900)"
+        endTime: "2019-02-03 23:59:59 (GMT+0900)"
+    platforms:
+      - android
+      - ios
+
+  - ID: 9194f9ea-6268-4403-9d0d-53f1475d7f46
+    type: 5 #Comment_In_Livestream
+    lifeCycle: 1 #ONETIME
+    reward:
+      rewardType: 1
+      rewardID: "1808_tw_hot_support"
+      amount: 1
+      expireTimeSecs: 86400
+    i18nTitle: "baggage_mission_weekly_leave_comment_reward_jp_title"
+    i18nTitleParams:
+      - needMap: false
+        value: "50"
+    i18nContent: "baggage_mission_weekly_leave_comment_reward_jp_desc"
+    i18nContentParams:
+      - needMap: true
+        mapOption: 1
+        value: "gift_1808_tw_hot_support"
+    goalValue: 50
+    enableTimeRange:
+      - startTime: "2018-11-17 12:00:00 (GMT+0900)"
+        endTime: "2018-12-23 23:59:59 (GMT+0900)"
+    platforms:
+      - android
+      - ios
+
+  - ID: edf4481d-d088-43ea-b44c-aa56156bfa18
+    type: 9 #View_Stream_X_Seconds
+    lifeCycle: 1 #ONETIME
+    reward:
+      rewardType: 1
+      rewardID: "1808_tw_hot_support"
+      amount: 1
+      expireTimeSecs: 86400
+    i18nTitle: "baggage_mission_weekly_watch_streams_time_in_total_reward_jp_title"
+    i18nTitleParams:
+      - needMap: false
+        value: "60"
+    i18nContent: "baggage_mission_weekly_watch_streams_time_in_total_reward_jp_desc"
+    i18nContentParams:
+      - needMap: true
+        mapOption: 1
+        value: "gift_1808_tw_hot_support"
+    goalValue: 3600
+    enableTimeRange:
+      - startTime: "2018-11-17 12:00:00 (GMT+0900)"
+        endTime: "2018-12-23 23:59:59 (GMT+0900)"
+    platforms:
+      - android
+      - ios
+
+  - ID: d4ff0ac6-4fe0-4af7-8699-0a92d319786f
+    type: 3 #Send_Gift
+    lifeCycle: 1 #ONETIME
+    reward:
+      rewardType: 1
+      rewardID: "1808_tw_hot_support"
+      amount: 1
+      expireTimeSecs: 86400
+    i18nTitle: "baggage_mission_weekly_send_any_gifts_reward_jp_title"
+    i18nTitleParams:
+      - needMap: false
+        value: "7"
+    i18nContent: "baggage_mission_weekly_send_any_gifts_reward_jp_desc"
+    i18nContentParams:
+      - needMap: true
+        mapOption: 1
+        value: "gift_1808_tw_hot_support"
+    goalValue: 7
+    enableTimeRange:
+      - startTime: "2018-11-17 12:00:00 (GMT+0900)"
+        endTime: "2018-12-23 23:59:59 (GMT+0900)"
+    platforms:
+      - android
+      - ios
+
+  - ID: 24e0bbed-a4b4-495c-a9cf-778747c1160c
+    type: 8 #IAP
+    lifeCycle: 1 #ONETIME
+    reward:
+      rewardType: 1
+      rewardID: "1808_tw_hot_support"
+      amount: 1
+      expireTimeSecs: 86400
+    i18nTitle: "baggage_mission_weekly_first_time_IAP_reward_jp_title"
+    i18nTitleParams:
+    i18nContent: "baggage_mission_weekly_first_time_IAP_reward_jp_des"
+    i18nContentParams:
+      - needMap: true
+        mapOption: 1
+        value: "gift_1808_tw_hot_support"
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2018-11-17 12:00:00 (GMT+0900)"
+        endTime: "2018-12-23 23:59:59 (GMT+0900)"
+    platforms:
+      - android
+      - ios
+
+  - ID: a1238d71-bbc6-4594-bdf3-68ac7c1ea2d7
+    type: 8 #IAP
+    reward:
+      rewardType: 1
+      rewardID: "1808_tw_hot_support"
+      amount: 1
+      expireTimeSecs: 86400
+    i18nTitle: "baggage_mission_first_time_IAP_reward_jp_event_title"
+    i18nTitleParams:
+    i18nContent: "baggage_mission_first_time_IAP_reward_jp_event_des"
+    i18nContentParams:
+      - needMap: true
+        mapOption: 1
+        value: "gift_1808_tw_hot_support"
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2018-11-17 19:00:00 (GMT+0900)"
+        endTime: "2018-12-29 23:59:59 (GMT+0900)"
+    platforms:
+      - android
+      - ios
 
 #tagInfos
 tagInfos:
