@@ -101,6 +101,7 @@ node { timestamps { ansiColor('xterm') {
     // source code of the `pushToEtcd-linux` could be found under the following path
     // - https://github.com/17media/api/blob/master/infra/deploy/configs/pushToEtcd.go
     sh("wget https://s3-us-west-2.amazonaws.com/17scripts/configs_push_to_etcd/pushToEtcd-linux -o ./pushToEtcd-linux")
+    sh("chmod +x ./pushToEtcd-linux")
     sh("cp ./pushToEtcd-linux ./configs/")
 
     dir('configs') {
