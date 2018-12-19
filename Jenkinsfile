@@ -100,7 +100,7 @@ node { timestamps { ansiColor('xterm') {
     // always pull the latest `pushToEtcd-linux` executable binary from s3
     // source code of the `pushToEtcd-linux` could be found under the following path
     // - https://github.com/17media/api/blob/master/infra/deploy/configs/pushToEtcd.go
-    sh("wget https://s3-us-west-2.amazonaws.com/17scripts/configs_push_to_etcd/pushToEtcd-linux -O ./pushToEtcd-linux")
+    sh("wget --quiet https://s3-us-west-2.amazonaws.com/17scripts/configs_push_to_etcd/pushToEtcd-linux -O ./pushToEtcd-linux")
     sh("chmod +x ./pushToEtcd-linux")
     sh("cp ./pushToEtcd-linux ./configs/")
 
