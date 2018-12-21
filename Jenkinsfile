@@ -133,7 +133,7 @@ node { timestamps { ansiColor('xterm') {
       if ((! fileExists("pushToEtcd-linux") || params.REFRESH_EXECUTABLE_BINARY)) {
         sh("wget --quiet https://s3-us-west-2.amazonaws.com/17scripts/configs_push_to_etcd/pushToEtcd-linux -O ./pushToEtcd-linux")
       } else {
-        echo("[skip download]"
+        echo("[skip download]")
       }
       sh("chmod +x ./pushToEtcd-linux")
       sh("./pushToEtcd-linux --version")
