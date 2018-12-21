@@ -47,63 +47,100 @@ properties([
             defaultValue: '',
             description: 'Commit ID of the Configs Changes',
             name: 'REVISION',
-            trim: false
+            trim: true
         ),
         string(
             defaultValue: slackWebhook,
             description: 'Slack Webhook for Notification',
             name: 'SLACK_URL',
-            trim: false
+            trim: true
         ),
         string(
             defaultValue: etcdServiceEndpointsStag.join(','),
             description: 'ETCD Service Endpoints List for the 17App Service (Staging)',
             name: 'ENSEMBLEIPS_STA',
-            trim: false
+            trim: true
         ),
         string(
             defaultValue: etcdServiceEndpointsProd.join(','),
             description: 'ETCD Service Endpoints List for the 17App Service (Production)',
             name: 'ENSEMBLEIPS_PROD',
-            trim: false
+            trim: true
         ),
         string(
             defaultValue: etcdServiceEndpointsStagLit.join(','),
             description: 'ETCD Service Endpoints List for the Lit Service (Staging)',
             name: 'ENSEMBLEIPS_LIT_STA',
-            trim: false
+            trim: true
         ),
         string(
             defaultValue: etcdServiceEndpointsProdLit.join(','),
             description: 'ETCD Service Endpoints List for the Lit Service (Production)',
             name: 'ENSEMBLEIPS_LIT_PROD',
-            trim: false
+            trim: true
+        ),
+        booleanParam(
+            defaultValue: false,
+            description: 'Refresh pushToEtcd-linux?',
+            name: 'REFRESH_EXECUTABLE_BINARY'
         )]
     )
 ])
 
 
 node { timestamps { ansiColor('xterm') {
+  stage('Input Validation') {
+    // cleanup before start
+    deleteDir()
 
-  stage('Get configs from git') {
-    sh('mkdir -p configs')
-    dir('configs') {
-      // cleanup before clone
-      deleteDir()
+    // basic validation for the input values
+    if (params.REVISION.length() <= 0) {
+        error('invalid revision input')
+    }
 
-      git url: 'git@github.com:17media/configs.git',
-          branch: 'master'
-    } // end of dir
+    if (params.SLACK_URL.length() <= 0) {
+        error('invalid slack webhook')
+    }
+
+    if (params.ENSEMBLEIPS_STA.length() <= 0) {
+        error('invalid etcd cluster endpoints input (17app stag)')
+    }
+
+    if (params.ENSEMBLEIPS_PROD.length() <= 0) {
+        error('invalid etcd cluster endpoints input (17app prod)')
+    }
+
+    if (params.ENSEMBLEIPS_LIT_STA.length() <= 0) {
+        error('invalid etcd cluster endpoints input (lit stag)')
+    }
+
+    if (params.ENSEMBLEIPS_LIT_PROD.length() <= 0) {
+        error('invalid etcd cluster endpoints input (lit prod)')
+    }
   } // end of stage
 
-  stage('Get pushToEtcd-linux from S3') {
-    // always pull the latest `pushToEtcd-linux` executable binary from s3
-    // source code of the `pushToEtcd-linux` could be found under the following path
-    // - https://github.com/17media/api/blob/master/infra/deploy/configs/pushToEtcd.go
-    sh("wget --quiet https://s3-us-west-2.amazonaws.com/17scripts/configs_push_to_etcd/pushToEtcd-linux -O ./pushToEtcd-linux")
-    sh("chmod +x ./pushToEtcd-linux")
-    sh("cp ./pushToEtcd-linux ./configs/")
+  stage('Setup Environment') {
+    sh('mkdir -p configs')
+    dir('configs') {
+      // FIXME: defined `credentialsId` explicitly
+      git url: 'git@github.com:17media/configs.git',
+          branch: 'master'
 
+      // if `pushToEtcd-linux` not exist, or explicitly download enabled
+      // download latest `pushToEtcd-linux` executable binary from AWS S3
+      // source code of the `pushToEtcd-linux` could be found under the following path
+      // - https://github.com/17media/api/blob/master/infra/deploy/configs/pushToEtcd.go
+      if ((! fileExists("pushToEtcd-linux") || params.REFRESH_EXECUTABLE_BINARY)) {
+        sh("wget --quiet https://s3-us-west-2.amazonaws.com/17scripts/configs_push_to_etcd/pushToEtcd-linux -O ./pushToEtcd-linux")
+      } else {
+        echo("[skip download]"
+      }
+      sh("chmod +x ./pushToEtcd-linux")
+      sh("./pushToEtcd-linux --version")
+    }
+  } // end of stage
+
+  stage('Push Changes to ETCD Clusters') {
     dir('configs') {
       // get DOCKER_USER/DOCKER_PASS from Jenkins credential provider
       withCredentials([
@@ -113,15 +150,6 @@ node { timestamps { ansiColor('xterm') {
               usernameVariable: 'DOCKER_USER'
           )
       ]) {
-          // basic validation for the input values
-          if (params.REVISION.length() <= 0) {
-              error('revision validation failed')
-          }
-
-          // check version before execute
-          sh("./pushToEtcd-linux --version")
-
-          // push to etcd with specific commit
           sh("./pushToEtcd-linux --commit_id \"" + params.REVISION + "\"")
       }
     } // end of dir
