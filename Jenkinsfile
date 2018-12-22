@@ -99,9 +99,6 @@ node { timestamps { ansiColor('xterm') {
             ]]
     )
 
-    // temporary debug output
-    sh("ls -lsa")
-
     // basic validation for the input values
     if (params.REVISION.length() <= 0) {
         error('invalid revision input')
