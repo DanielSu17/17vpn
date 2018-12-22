@@ -91,7 +91,12 @@ properties([
 node { timestamps { ansiColor('xterm') {
   stage('Input Validation') {
     // cleanup before start
-    deleteDir()
+    cleanWs(notFailBuild: true,
+            patterns: [[
+                pattern: 'pushToEtcd-linux',
+                type: 'EXCLUDE'
+            ]]
+    )
 
     // basic validation for the input values
     if (params.REVISION.length() <= 0) {
