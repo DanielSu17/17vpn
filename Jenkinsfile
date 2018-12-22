@@ -91,7 +91,8 @@ properties([
 node { timestamps { ansiColor('xterm') {
   stage('Input Validation') {
     // cleanup before start
-    cleanWs(notFailBuild: true,
+    cleanWs(deleteDirs: true,
+            notFailBuild: true,
             patterns: [[
                 pattern: 'pushToEtcd-linux',
                 type: 'EXCLUDE'
@@ -100,7 +101,6 @@ node { timestamps { ansiColor('xterm') {
 
     // temporary debug output
     sh("ls -lsa")
-    sh("ls -lsa configs || true")
 
     // basic validation for the input values
     if (params.REVISION.length() <= 0) {
