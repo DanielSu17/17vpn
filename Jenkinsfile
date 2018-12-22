@@ -138,8 +138,8 @@ node { timestamps { ansiColor('xterm') {
 
     sh('mkdir -p configs')
     dir('configs') {
-      // FIXME: defined `credentialsId` explicitly
       git url: 'git@github.com:17media/configs.git',
+          credentialsId: '3dc01492-01f6-4be5-8073-8de5f458ed1e',
           branch: 'master'
 
       sh("cp ../pushToEtcd-linux .")

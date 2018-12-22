@@ -75,6 +75,7 @@ node { timestamps { ansiColor('xterm') {
     sh("mkdir -p gowork/src/configs")
     dir("gowork/src/configs") {
       git url: 'git@github.com:17media/configs.git',
+          credentialsId: '3dc01492-01f6-4be5-8073-8de5f458ed1e',
           branch: 'master'
 
       dir("tools/diffToSlack") {
