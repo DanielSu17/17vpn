@@ -125,21 +125,23 @@ node { timestamps { ansiColor('xterm') {
   } // end of stage
 
   stage('Setup Environment') {
+    // if `pushToEtcd-linux` not exist, or explicitly download enabled
+    // download latest `pushToEtcd-linux` executable binary from AWS S3
+    // source code of the `pushToEtcd-linux` could be found under the following path
+    // - https://github.com/17media/api/blob/master/infra/deploy/configs/pushToEtcd.go
+    if ((! fileExists("pushToEtcd-linux") || params.REFRESH_EXECUTABLE_BINARY)) {
+      sh("wget --quiet https://s3-us-west-2.amazonaws.com/17scripts/configs_push_to_etcd/pushToEtcd-linux -O ./pushToEtcd-linux")
+    } else {
+      echo("[skip download]")
+    }
+
     sh('mkdir -p configs')
     dir('configs') {
       // FIXME: defined `credentialsId` explicitly
       git url: 'git@github.com:17media/configs.git',
           branch: 'master'
 
-      // if `pushToEtcd-linux` not exist, or explicitly download enabled
-      // download latest `pushToEtcd-linux` executable binary from AWS S3
-      // source code of the `pushToEtcd-linux` could be found under the following path
-      // - https://github.com/17media/api/blob/master/infra/deploy/configs/pushToEtcd.go
-      if ((! fileExists("pushToEtcd-linux") || params.REFRESH_EXECUTABLE_BINARY)) {
-        sh("wget --quiet https://s3-us-west-2.amazonaws.com/17scripts/configs_push_to_etcd/pushToEtcd-linux -O ./pushToEtcd-linux")
-      } else {
-        echo("[skip download]")
-      }
+      sh("cp ../pushToEtcd-linux .")
       sh("chmod +x ./pushToEtcd-linux")
       sh("./pushToEtcd-linux --version")
     }
