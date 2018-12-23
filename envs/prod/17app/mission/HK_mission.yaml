@@ -27,6 +27,30 @@
 # // | NON_IAP | 2 |
 
 missions:
+  - ID: 798cf11e-d087-45ad-bd08-cbd7c58f5b98
+    type: 5 #Comment_In_Livestream
+    reward:
+      rewardType: 1
+      rewardID: "1812_tw_spa_bp"
+      amount: 1
+      expireTimeSecs: 86400
+    i18nTitle: "baggage_mission_leave_comment_reward_cn_title"
+    i18nTitleParams:
+      - needMap: false
+        value: "5"
+    i18nContent: "baggage_mission_leave_comment_reward_cn_desc"
+    i18nContentParams:
+      - needMap: true
+        mapOption: 1
+        value: gift_1812_tw_spa_bp
+    goalValue: 5
+    enableTimeRange:
+      - startTime: "2018-12-23 18:00:00 (GMT+0800)"
+        endTime: "2019-01-04 23:59:59 (GMT+0800)"
+    platforms:
+      - android
+      - ios
+
   - ID: 5a5152ae-7df2-4750-941f-9f93ad77ae30
     type: 8 #IAP
     reward:
