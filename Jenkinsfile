@@ -148,16 +148,6 @@ node { timestamps { ansiColor('xterm') {
     }
   } // end of stage
 
-  stage("Syntax Validation") {
-    // TODO: cache python requirements in cache (priority: low, it can only save 5 seconds)
-    sh '''
-      virtualenv venv
-      source venv/bin/activate
-      pip install -r circle/requirements.txt
-      python ./circle/syntax_checker.py
-    '''
-  } // end of stage
-
   stage('Push Changes to ETCD Clusters') {
     dir('configs') {
       // get DOCKER_USER/DOCKER_PASS from Jenkins credential provider
@@ -168,7 +158,7 @@ node { timestamps { ansiColor('xterm') {
               usernameVariable: 'DOCKER_USER'
           )
       ]) {
-        sh("./pushToEtcd-linux --commit_id \"" + params.REVISION + "\"")
+          sh("./pushToEtcd-linux --commit_id \"" + params.REVISION + "\"")
       }
     } // end of dir
   } // end of stage
