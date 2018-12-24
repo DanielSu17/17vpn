@@ -1,13 +1,17 @@
 #!/usr/bin/env python
 
-import os
-import yaml
-import json
+from __future__ import print_function
 from ruamel.yaml import YAML
+
+import json
+import os
 import sys
+import yaml
+
 
 check_file_count = 0
 sytax_failed_count = 0
+
 for dirpath, dirnames, filenames in os.walk("."):
     for filename in [f for f in filenames if f.endswith(('.yaml', '.json', 'yml'))]:
         check_file_count += 1
@@ -21,14 +25,16 @@ for dirpath, dirnames, filenames in os.walk("."):
                 if full_filename.endswith('.json'):
                     json.load(stream)
             except yaml.YAMLError as exc:
-                print '%s => %s' % (full_filename, exc)
+                print('{0} => {1}'.format(full_filename, exc))
                 sytax_failed_count += 1
             except ValueError as exc:
-                print '%s => %s' % (full_filename, exc)
+                print('{0} => {1}'.format(full_filename, exc))
                 sytax_failed_count += 1
             finally:
                 stream.close()
-print 'Need Syntax Check Files Count: %s, Failed Files Count: %s' % (check_file_count, sytax_failed_count)
+
+print('Total File Count: {0}'.format(check_file_count))
+print('Syntax Check Failed Count: {0}'.format(sytax_failed_count))
 
 if sytax_failed_count > 0:
     sys.exit(1)
