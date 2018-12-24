@@ -153,7 +153,7 @@ node { timestamps { ansiColor('xterm') {
     sh '''
       virtualenv venv
       source venv/bin/activate
-      pip install -r ${WORKSPACE}/configs/circle/requirements.txt
+      pip install -r circle/requirements.txt
       python ./circle/syntax_checker.py
     '''
   } // end of stage
