@@ -3,11 +3,10 @@ applyTaskQueue: true
 # sendTaskQueueRate: 50 means send by task queue probability is 50/100
 sendTaskQueueRate: 100
 taskQueueWhitelist:
-  - 04a780e1-c3bd-4736-b2df-4b14ab31158c
   - 30cce050-86e7-4ee0-6efb-a96f0e4f660b
 bigQueryEnabled: true
 userNeedDirectBigquery:
-  - "04a780e1-c3bd-4736-b2df-4b14ab31158c"  #hdc331
+  - "3128adcd-ea2c-438d-93cf-00baf1d7374a" #jen87
 enableRetry: false
 retryCount: 3
 waitingCycle: 10
@@ -15,5 +14,5 @@ waitingCycle: 10
 redisCounter:
   enable: true
   targetUsers:
-    - "04a780e1-c3bd-4736-b2df-4b14ab31158c"  #hdc331
+    - "3128adcd-ea2c-438d-93cf-00baf1d7374a" #jen87
   dayOfLifeCycle: 7
