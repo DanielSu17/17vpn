@@ -1,33 +1,39 @@
-# Pay channels
-   # - 台灣企銀帳戶 : 1
-   # - PAYPAL : 2
-   # - 智付通 : 3
-   # - 玉山台灣外幣帳戶 : 4
-   # - 玉山香港帳戶 : 5
-   # - 支付寶 : 6
-   # - 馬來西亞帳戶 : 7
-   # - GMO : 8
-   # - Bank : 9
-   # - LinePay : 10
-   # - RESELLER: 11
-   # - 17Pay: 12, 17支付，只能用在2%折扣
-   # - CASH: 13 現金支付
-   # - BY_INDONESIA_BANK: 14; //印尼銀行
-   # - BY_WEIXIN = 15; // WeChat
-   # - BY_MITH = 18; //秘銀
-   # - BY_KGI_BANK = 19; // 凱基銀行
-   # - BY_SCSB_BANK = 20; // 上海銀行
-   # - BY_WEST_BANK = 22; // Bank of the West
-   # - BY_BNB = 23 // 幣安
-    # "Currency" follows ISO 4217 standard:   
-   #https://zh.wikipedia.org/wiki/ISO_4217#%E7%8E%B0%E8%A1%8C%E4%BB%A3%E7%A0%81
-   # duplicateUniformInvoice // 許可開立二聯式發票的payChannel
-   # triplicateUniformInvoice // 許可開立三聯式發票的payChannel
-   # orderUpperConstrain // 訂單每金售價上限(超過需review)
-   # XPT => Mith
-   # XPD => BNB
-   # minMith / maxMith / minBnb / maxBnb shows BNB & Mith to local currency exchange rate
-   # 1mith / 1 bnb can exchange rate range
+# `paychannel`
+  # - 台灣企銀帳戶 : 1
+  # - PAYPAL : 2
+  # - 智付通 : 3
+  # - 玉山台灣外幣帳戶 : 4
+  # - 玉山香港帳戶 : 5
+  # - 支付寶 : 6
+  # - 馬來西亞帳戶 : 7
+  # - GMO : 8
+  # - Bank : 9
+  # - LinePay : 10
+  # - RESELLER: 11
+  # - 17Pay: 12, 17支付，只能用在2%折扣
+  # - CASH: 13 現金支付
+  # - BY_INDONESIA_BANK: 14; //印尼銀行
+  # - BY_WEIXIN = 15; // WeChat
+  # - BY_MITH = 18; //秘銀
+  # - BY_KGI_BANK = 19; // 凱基銀行
+  # - BY_SCSB_BANK = 20; // 上海銀行
+  # - BY_WEST_BANK = 22; // Bank of the West
+  # - BY_BNB = 23 // 幣安
+  # - BY_SUMITOMO_MITSUI_BANK_USD = 24; // 三井住友銀行美金帳戶
+  # - BY_SUMITOMO_MITSUI_BANK_SGD = 25; // 三井住友銀行新幣帳戶
+  # - BY_SUMITOMO_MITSUI_BANK_CNY = 26; // 三井住友銀行人民幣帳戶
+  # - BY_YUANTA_BANK = 27; // 元大商業銀行
+  # - BY_TAISHIN_BANK = 28; // 台新國際商業銀行
+  # - BY_OCBC_BANK = 29; // 華僑銀行
+# `duplicateUniformInvoice` // 許可開立二聯式發票的payChannel
+# `triplicateUniformInvoice` // 許可開立三聯式發票的payChannel
+# `currency` follows ISO 4217 standard:   
+  # https://zh.wikipedia.org/wiki/ISO_4217#%E7%8E%B0%E8%A1%8C%E4%BB%A3%E7%A0%81
+  # XPT => Mith
+  # XPD => BNB
+# `orderUpperConstrain` // 訂單美金售價上限(超過需review)
+# `minMith` / `maxMith` / `minBnb` / `maxBnb` shows BNB & Mith to local currency exchange rate
+  # 1mith / 1 bnb can exchange rate range
 TW:   
   payChannel: 
     - 1
