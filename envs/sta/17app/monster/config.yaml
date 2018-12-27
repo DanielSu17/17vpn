@@ -7,7 +7,7 @@ animations: ["yeti"]
 monsters:
 - id: monster_1
   hit_consume: 10
-  duration: 30s
+  duration: 5s
   stream_alive_threshold: 1m00s
   animation: "yeti"
   appear_durations:
@@ -17,7 +17,7 @@ monsters:
     end_time: 24h00m00s
   type: 0
   share_ratio: 50 # percentage
-  profit_ratio: 24 # percentage
+  profit_ratio: 35 # percentage
   bonus: 200
   infoPageiconURL: https://assets-17app.akamaized.net/d1d67cab-3f7b-439f-86d8-aed1cf327fdb.png
   winnerPageiconURL: https://assets-17app.akamaized.net/9b0cf5bc-8289-4af0-b7d4-41869506db6a.png
@@ -37,12 +37,10 @@ monsters:
   stream_alive_threshold: 1m00s
   appear_durations:
   - start_time: 00h00m00s
-    end_time: 15h00m00s
-  - start_time: 18h00m00s
-    end_time: 24h00m00s
+    end_time: 01h00m00s
   type: 0
   share_ratio: 50 # percentage
-  profit_ratio: 24 # percentage
+  profit_ratio: 35 # percentage
   bonus: 400
   infoPageiconURL: https://assets-17app.akamaized.net/0e302f14-4bc4-4031-8f10-1623bd311c00.png
   winnerPageiconURL: https://assets-17app.akamaized.net/724adf04-816f-484d-bd8b-ddb0346e8513.png
@@ -56,7 +54,7 @@ monsters:
 
 - id: summon_monster_1
   hit_consume: 10
-  duration: 30s
+  duration: 300s
   stream_alive_threshold: 1m00s
   animation: "yeti"
   appear_durations:
@@ -65,7 +63,7 @@ monsters:
   type: 1
   summonGifts:
   - giftID: "gift_lightstick_r"
-    probability: 100 # n / 10000 * 100%
+    probability: 1000 # n / 10000 * 100%
   share_ratio: 50 # percentage
   profit_ratio: 24 # percentage
   bonus: 200
