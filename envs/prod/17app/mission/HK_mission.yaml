@@ -51,52 +51,29 @@ missions:
       - android
       - ios
 
-  - ID: 5a5152ae-7df2-4750-941f-9f93ad77ae30
-    type: 8 #IAP
-    reward:
-      rewardType: 1
-      rewardID: "1811_tw_17care_bp_1"
-      amount: 1
-      expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_daily_first_time_IAP_reward_title"
-    i18nContent: "baggage_mission_daily_first_time_IAP_reward_des"
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: gift_1811_tw_17care_bp_1
-    goalValue: 1
-    enableTimeRange:
-      - startTime: "2018-11-28 18:00:00 (GMT+0800)"
-        endTime: "2018-12-08 23:59:59 (GMT+0800)"
-    platforms:
-      - android
-      - ios
-      
-  - ID: c4bf778f-8185-497f-a306-76290e069850
-    type: 9 #View_Stream_X_Seconds
+  - ID: db2eabd5-1f8a-42d3-a50d-3ffa9529e695
+    type: 9 #觀看直播
     levelRange:
       min: 20
       max: 999
     reward:
       rewardType: 1
-      rewardID: "1811_tw_live_bp_10"
+      rewardID: "1901_tw_jazz_xs"
       amount: 1
       expireTimeSecs: 86400
     i18nTitle: "baggage_mission_watch_streams_time_in_total_reward_crossregion_title"
-    i18nTitleParams:  
+    i18nTitleParams:
       - needMap: false
-        value: "5"
+        value: "10"
     i18nContent: "baggage_mission_watch_streams_time_in_total_reward_crossregion_desc"
     i18nContentParams:
-      - needMap: false
-        value: "20"
       - needMap: true
         mapOption: 1
-        value: gift_1811_tw_live_bp_10
-    goalValue: 300
+        value: gift_1901_tw_jazz_xs
+    goalValue: 600
     enableTimeRange:
-      - startTime: "2018-11-13 18:00:00 (GMT+0800)"
-        endTime: "2018-12-17 23:59:59 (GMT+0800)"
+      - startTime: "2019-01-06 18:00:00 (GMT+0800)"
+        endTime: "2019-01-18 23:59:59 (GMT+0800)"
     platforms:
       - android
       - ios
@@ -312,4 +289,36 @@ supportedVersion:
 #   platforms:
 #     - android
 #     - ios
-    
+  
+# - ID: 5a5152ae-7df2-4750-941f-9f93ad77ae30
+#   type: 8 #IAP
+#   reward:
+#     rewardType: 1
+#     rewardID: "1811_tw_17care_bp_1"
+#     amount: 1
+#     expireTimeSecs: 86400
+#   goalValue: 1
+#   enableTimeRange:
+#     - startTime: "2018-11-28 18:00:00 (GMT+0800)"
+#       endTime: "2018-12-08 23:59:59 (GMT+0800)"
+#   platforms:
+#     - android
+#     - ios
+      
+# - ID: c4bf778f-8185-497f-a306-76290e069850
+#   type: 9 #View_Stream_X_Seconds
+#   levelRange:
+#     min: 20
+#     max: 999
+#   reward:
+#     rewardType: 1
+#     rewardID: "1811_tw_live_bp_10"
+#     amount: 1
+#     expireTimeSecs: 86400
+#   goalValue: 300
+#   enableTimeRange:
+#     - startTime: "2018-11-13 18:00:00 (GMT+0800)"
+#       endTime: "2018-12-17 23:59:59 (GMT+0800)"
+#   platforms:
+#     - android
+#     - ios
