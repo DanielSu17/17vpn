@@ -247,12 +247,15 @@ newbieRewards:
 #      point: 100
 #      exp: 0
 #      required: 1
+# - 12: DailyQuestType_WATCH_LIVE_10_CONTINUE
+# - 13: DailyQuestType_WATCH_LIVE_30_TOTAL
+# - 14: DailyQuestType_LIVE_CHECK_IN_TWO_TOTAL
     - type: 12
       point: 0
       exp: 0
       required: 10
       voucherReward:
-        type: 1
+        type: 3 # type 3 is for newbiequest voucher reward
         itemID: "great"
         amount: 1
         intervalSec: 28800
@@ -261,7 +264,7 @@ newbieRewards:
       exp: 0
       required: 30
       voucherReward:
-        type: 1
+        type: 3
         itemID: "bravo"
         amount: 2
         intervalSec: 28800
@@ -270,7 +273,7 @@ newbieRewards:
       exp: 0
       required: 2
       voucherReward:
-        type: 1
+        type: 3
         itemID: "socute"
         amount: 3
         intervalSec: 28800
