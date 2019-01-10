@@ -1,58 +1,21 @@
-# docker_num is the number of docker container
-docker_num: 1
-
-# allowed_origins is a list of hostnames whose requests will not be rate limited
-# by system throttling or any rate limits.
-allowed_origins:
-  - dev.api.17app.co # admin in dev
-  - payment.17.media
-  - webtool.17.media
-  - skyeye.17app.co
-  - skyeyewall.17app.co
-  - event-server.17app.co
-  - event-server-sta.17app.co
-
-# it is used for system throttling
-#   throttling_measurement_period:
-#     (unit in second), the measure period for system throttling
-#   throttling_start_point:
-#     the number of number of unique access_token that will trigger system
-#     throttling
-#   throttling_end_point:
-#     if the system is under throttling mode, and the number of number of
-#     unique access_token is lower than the @throttling_end_point for some
-#     time, the system will switch back to normal state
-#   throttling_rotation_num:
-#     the number of rotation for the bloom filtering library. Higher value
-#     will provide better accuracy for length of the measurement period.
-#     Suggested value: 10 - 100
-#   throttling_block_request:
-#     if this value = 1, then the revprox will block the request of new
-#     access_token.
-#   throttling_max_sync:
-#     the max number of retry on redis sync data, should be >= 1
-
-throttling_start_point: 5
-throttling_end_point: 2
-throttling_measurement_period: 120
-throttling_rotation_num: 10
-throttling_block_enable: false
-throttling_max_sync: 5
-
-# For example:
-#     any request match the regular expression "/v1/abc/[0-9]*/def" will be under
-#     ratelimiting with QPS 1, and burst QPS = 5
-# Remarks:
-#     reservoir_size must be non-zero. Otherwise the leakybucket algorithm will fail.
-#     reservoir_size should be larger than flow_per_second, otherwise the actual
-#     allowed QPS may be lower than specified flow_per_second
-# rate_limits:
-# - url: "/v1/abc/[0-9]*/def"
-#   method: "GET"
-#   flow_per_second: 1
-#   reservoir_size: 5
-
-# FIXME
-# The code above should be removed after token bucket helper is integrated into revprox.
-# And the file should be filled in the new api rate limit content, which will be checked
-# and applied by service/tokenbucket/helper.
+rate_limits:
+- url: "/api/v1/abc"
+  method: "POST"
+  flow_per_second: 10
+  reservoir_size: 120
+  scope: by_global
+- url: "/api/v1/edf"
+  method: "GET"
+  flow_per_second: 0.015
+  reservoir_size: 120.6
+  scope: by_ip
+- url: "^/api/v1/user/[0-9]*/book"
+  method: "GET"
+  flow_per_second: 0.1
+  reservoir_size: 3
+  scope: by_access_token
+- url: "^/api/v1/users"
+  method: "GET"
+  flow_per_second: 0.1
+  reservoir_size: 3
+  scope: by_access_token
