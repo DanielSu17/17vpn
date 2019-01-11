@@ -1,5 +1,3 @@
-
-
 version: 2
 
 notify:
@@ -13,6 +11,12 @@ references:
       TZ: "/usr/share/zoneinfo/Asia/Taipei"
     docker:
       - image: circleci/python:2.7
+
+  tag_filter_pr_build: &tag_filter_pr_build
+    filters:
+      branches:
+        only:
+          - /^pull\/.*$/
 
 jobs:
   build:
@@ -37,7 +41,6 @@ jobs:
           command: |
             curl "${DEPLOY_TO_GCP_URL}&REVISION=${CIRCLE_SHA1}"
 
-# Setup workflows
 workflows:
   version: 2
   all:
@@ -50,3 +53,7 @@ workflows:
             branches:
               only:
               - master
+  pr-build:
+    jobs:
+      - build:
+          <<: *tag_filter_pr_build
