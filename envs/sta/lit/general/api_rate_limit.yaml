@@ -17,3 +17,13 @@ rate_limits:
   flow_per_second: 0.1
   reservoir_size: 3
   scope: by_access_token
+- url: "/clips/.*/like"
+  method: "POST"
+  flow_per_second: 1
+  reservoir_size: 1
+  scope: by_access_token
+- url: "/articles/.*/like"
+  method: "POST"
+  flow_per_second: 1
+  reservoir_size: 1
+  scope: by_access_token
