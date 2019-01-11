@@ -2,22 +2,12 @@
 # following are just format examples
 # details can be found in service/tokenbucket/helper
 rate_limits:
-- url: "/v1/abc"
-  method: "POST"
-  flow_per_second: 10
-  reservoir_size: 120
-  scope: by_global
-- url: "/v1/edf"
-  method: "GET"
-  flow_per_second: 0.015
-  reservoir_size: 120.6
-  scope: by_ip
-- url: "^/v1/user/[0-9]*/book"
-  method: "GET"
-  flow_per_second: 0.1
-  reservoir_size: 3
-  scope: by_access_token
 - url: "/clips/.*/like"
+  method: "POST"
+  flow_per_second: 1
+  reservoir_size: 1
+  scope: by_access_token
+- url: "/clips/.*/comments"
   method: "POST"
   flow_per_second: 1
   reservoir_size: 1
@@ -26,4 +16,14 @@ rate_limits:
   method: "POST"
   flow_per_second: 1
   reservoir_size: 1
+  scope: by_access_token
+- url: "/users/follow"
+  method: "PUT"
+  flow_per_second: 1
+  reservoir_size: 1
+  scope: by_access_token
+- url: "/users/.*/follow"
+  method: "PUT"
+  flow_per_second: 3
+  reservoir_size: 3
   scope: by_access_token
