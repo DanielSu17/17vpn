@@ -1,6 +1,7 @@
 # birthdayCountdownDays: show incoming birthday icon in the range from birthday-n to birthday-1 day
 # birthdayAfterDays: show after-birthday icon in the range from birthday+1 to birthday+n day
-# enableACL: set to true to use ACL for authorization
+# enableQueryACL: set to true to use ACL for authorization on queries
+# enableMutationACL: set to true to use ACL for authorization on mutations
 # enableBQ: set to true to get follower information from BigQuery
 
 birthdayCountdownDays: 3
@@ -8,7 +9,8 @@ birthdayAfterDays: 1
 nearOutdatedDays:
   TW: 7
   JP: 60
-enableACL: false
+enableQueryACL: false
+enableMutationACL: false
 enableBQ: true
 extendContractExcludeRegions: ["JP"]
 renewContractIncludeRegions: ["JP"]
