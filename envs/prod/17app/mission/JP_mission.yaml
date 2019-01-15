@@ -27,13 +27,11 @@
 # // | NON_IAP | 2 |
 
 missions:
-  - ID: 25be35a1-9bf1-4e2d-935a-899e7ce6dc3d
+  - ID: 37060af5-c5a8-493c-9a06-224285450e7d
     type: 8 #IAP
-    lifeCycle: 0 #Daily
-    targetAudience: 0 #REGIONAL
     reward:
       rewardType: 1
-      rewardID: "1901_jp_new_livers_bp"
+      rewardID: "1901_jp_ryumon_bp"
       amount: 1
       expireTimeSecs: 86400 # 1 day
     i18nTitle: "baggage_mission_first_time_IAP_reward_jp_event_title"
@@ -42,11 +40,11 @@ missions:
     i18nContentParams:
       - needMap: true
         mapOption: 1
-        value: "gift_1901_jp_new_livers_bp"
+        value: "gift_1901_jp_ryumon_bp"
     goalValue: 1
     enableTimeRange:
-      - startTime: "2019-01-01 19:00:00 (GMT+0900)"
-        endTime: "2019-01-13 23:59:59 (GMT+0900)"
+      - startTime: "2019-01-15 19:00:00 (GMT+0900)"
+        endTime: "2019-01-27 23:59:59 (GMT+0900)"
     platforms:
       - android
       - ios
@@ -95,56 +93,6 @@ missions:
     enableTimeRange:
       - startTime: "2018-11-26 12:00:00 (GMT+0900)"
         endTime: "2019-02-03 23:59:59 (GMT+0900)"
-    platforms:
-      - android
-      - ios
-
-  - ID: 9d6351b1-7f22-42ec-874e-26c91979396b
-    type: 5 #Comment_In_Livestream
-    lifeCycle: 1 #ONETIME
-    reward:
-      rewardType: 1
-      rewardID: "1812_jp_weeklymission3_1"
-      amount: 1
-      expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_weekly_leave_comment_reward_jp_title"
-    i18nTitleParams:
-      - needMap: false
-        value: "50"
-    i18nContent: "baggage_mission_weekly_leave_comment_reward_jp_desc"
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: "gift_1812_jp_weeklymission3_1"
-    goalValue: 50
-    enableTimeRange:
-      - startTime: "2018-12-31 00:00:00 (GMT+0900)"
-        endTime: "2019-01-06 23:59:59 (GMT+0900)"
-    platforms:
-      - android
-      - ios
-
-  - ID: 1e04c330-a64b-47cb-a4ce-47cbb748961e
-    type: 5 #Comment_In_Livestream
-    lifeCycle: 1 #ONETIME
-    reward:
-      rewardType: 1
-      rewardID: "1812_jp_weeklymission3_1"
-      amount: 1
-      expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_weekly_leave_comment_reward_jp_title"
-    i18nTitleParams:
-      - needMap: false
-        value: "50"
-    i18nContent: "baggage_mission_weekly_leave_comment_reward_jp_desc"
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: "gift_1812_jp_weeklymission3_1"
-    goalValue: 50
-    enableTimeRange:
-      - startTime: "2019-01-07 00:00:00 (GMT+0900)"
-        endTime: "2019-01-13 23:59:59 (GMT+0900)"
     platforms:
       - android
       - ios
@@ -224,56 +172,6 @@ missions:
       - android
       - ios
 
-  - ID: 5c79cf11-c899-479d-8861-146d194e70bb
-    type: 9 #View_Stream_X_Seconds
-    lifeCycle: 1 #ONETIME
-    reward:
-      rewardType: 1
-      rewardID: "1812_jp_weeklymission4_1"
-      amount: 1
-      expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_weekly_watch_streams_time_in_total_reward_jp_title"
-    i18nTitleParams:
-      - needMap: false
-        value: "60"
-    i18nContent: "baggage_mission_weekly_watch_streams_time_in_total_reward_jp_desc"
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: "gift_1812_jp_weeklymission4_1"
-    goalValue: 3600
-    enableTimeRange:
-      - startTime: "2018-12-31 00:00:00 (GMT+0900)"
-        endTime: "2019-01-06 23:59:59 (GMT+0900)"
-    platforms:
-      - android
-      - ios
-
-  - ID: 9b8b6cd2-977f-4c81-b9e6-7d1a6177503d
-    type: 9 #View_Stream_X_Seconds
-    lifeCycle: 1 #ONETIME
-    reward:
-      rewardType: 1
-      rewardID: "1812_jp_weeklymission4_1"
-      amount: 1
-      expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_weekly_watch_streams_time_in_total_reward_jp_title"
-    i18nTitleParams:
-      - needMap: false
-        value: "60"
-    i18nContent: "baggage_mission_weekly_watch_streams_time_in_total_reward_jp_desc"
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: "gift_1812_jp_weeklymission4_1"
-    goalValue: 3600
-    enableTimeRange:
-      - startTime: "2019-01-07 00:00:00 (GMT+0900)"
-        endTime: "2019-01-13 23:59:59 (GMT+0900)"
-    platforms:
-      - android
-      - ios
-
   - ID: 4074ec96-2ffa-4947-8dae-26f88fe3cf5f
     type: 9 #View_Stream_X_Seconds
     lifeCycle: 1 #ONETIME
@@ -349,56 +247,6 @@ missions:
       - android
       - ios
 
-  - ID: faa560a9-2bbb-47f5-8cac-a1de8230a728
-    type: 3 #Send_Gift
-    lifeCycle: 1 #ONETIME
-    reward:
-      rewardType: 1
-      rewardID: "1812_jp_weeklymission5_1"
-      amount: 1
-      expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_weekly_send_any_gifts_reward_jp_title"
-    i18nTitleParams:
-      - needMap: false
-        value: "7"
-    i18nContent: "baggage_mission_weekly_send_any_gifts_reward_jp_desc"
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: "gift_1812_jp_weeklymission5_1"
-    goalValue: 7
-    enableTimeRange:
-      - startTime: "2018-12-31 00:00:00 (GMT+0900)"
-        endTime: "2019-01-06 23:59:59 (GMT+0900)"
-    platforms:
-      - android
-      - ios
-
-  - ID: 5e5cabd6-a5f8-4373-b43f-97a2addb7b9a
-    type: 3 #Send_Gift
-    lifeCycle: 1 #ONETIME
-    reward:
-      rewardType: 1
-      rewardID: "1812_jp_weeklymission5_1"
-      amount: 1
-      expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_weekly_send_any_gifts_reward_jp_title"
-    i18nTitleParams:
-      - needMap: false
-        value: "7"
-    i18nContent: "baggage_mission_weekly_send_any_gifts_reward_jp_desc"
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: "gift_1812_jp_weeklymission5_1"
-    goalValue: 7
-    enableTimeRange:
-      - startTime: "2019-01-07 00:00:00 (GMT+0900)"
-        endTime: "2019-01-13 23:59:59 (GMT+0900)"
-    platforms:
-      - android
-      - ios
-
   - ID: 7edca8fa-68fa-47b7-bb9a-2d978c52b52e
     type: 3 #Send_Gift
     lifeCycle: 1 #ONETIME
@@ -470,52 +318,6 @@ missions:
     enableTimeRange:
       - startTime: "2019-01-28 00:00:00 (GMT+0900)"
         endTime: "2019-02-03 23:59:59 (GMT+0900)"
-    platforms:
-      - android
-      - ios
-
-  - ID: 41503372-9632-4b86-967b-f87383eb4893
-    type: 8 #IAP
-    lifeCycle: 1 #ONETIME
-    reward:
-      rewardType: 1
-      rewardID: "1812_jp_weeklymission6_1"
-      amount: 1
-      expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_weekly_first_time_IAP_reward_jp_title"
-    i18nTitleParams:
-    i18nContent: "baggage_mission_weekly_first_time_IAP_reward_jp_des"
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: "gift_1812_jp_weeklymission6_1"
-    goalValue: 1
-    enableTimeRange:
-      - startTime: "2018-12-31 00:00:00 (GMT+0900)"
-        endTime: "2019-01-06 23:59:59 (GMT+0900)"
-    platforms:
-      - android
-      - ios
-
-  - ID: 8f88f207-d8fb-4069-9527-4eb7e86a6ff8
-    type: 8 #IAP
-    lifeCycle: 1 #ONETIME
-    reward:
-      rewardType: 1
-      rewardID: "1812_jp_weeklymission6_1"
-      amount: 1
-      expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_weekly_first_time_IAP_reward_jp_title"
-    i18nTitleParams:
-    i18nContent: "baggage_mission_weekly_first_time_IAP_reward_jp_des"
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: "gift_1812_jp_weeklymission6_1"
-    goalValue: 1
-    enableTimeRange:
-      - startTime: "2019-01-07 00:00:00 (GMT+0900)"
-        endTime: "2019-01-13 23:59:59 (GMT+0900)"
     platforms:
       - android
       - ios
@@ -854,6 +656,151 @@ supportedVersion:
 #   enableTimeRange:
 #     - startTime: "2018-12-17 19:00:00 (GMT+0900)"
 #       endTime: "2018-12-29 23:59:59 (GMT+0900)"
+#   platforms:
+#     - android
+#     - ios
+
+# - ID: 25be35a1-9bf1-4e2d-935a-899e7ce6dc3d
+#   type: 8 #IAP
+#   lifeCycle: 0 #Daily
+#   targetAudience: 0 #REGIONAL
+#   reward:
+#     rewardType: 1
+#     rewardID: "1901_jp_new_livers_bp"
+#     amount: 1
+#     expireTimeSecs: 86400 # 1 day
+#   goalValue: 1
+#   enableTimeRange:
+#     - startTime: "2019-01-01 19:00:00 (GMT+0900)"
+#       endTime: "2019-01-13 23:59:59 (GMT+0900)"
+#   platforms:
+#     - android
+#     - ios
+
+# - ID: 9d6351b1-7f22-42ec-874e-26c91979396b
+#   type: 5 #Comment_In_Livestream
+#   lifeCycle: 1 #ONETIME
+#   reward:
+#     rewardType: 1
+#     rewardID: "1812_jp_weeklymission3_1"
+#     amount: 1
+#     expireTimeSecs: 86400
+#   goalValue: 50
+#   enableTimeRange:
+#     - startTime: "2018-12-31 00:00:00 (GMT+0900)"
+#       endTime: "2019-01-06 23:59:59 (GMT+0900)"
+#   platforms:
+#     - android
+#     - ios
+
+# - ID: 1e04c330-a64b-47cb-a4ce-47cbb748961e
+#   type: 5 #Comment_In_Livestream
+#   lifeCycle: 1 #ONETIME
+#   reward:
+#     rewardType: 1
+#     rewardID: "1812_jp_weeklymission3_1"
+#     amount: 1
+#     expireTimeSecs: 86400
+#   goalValue: 50
+#   enableTimeRange:
+#     - startTime: "2019-01-07 00:00:00 (GMT+0900)"
+#       endTime: "2019-01-13 23:59:59 (GMT+0900)"
+#   platforms:
+#     - android
+#     - ios
+
+# - ID: 5c79cf11-c899-479d-8861-146d194e70bb
+#   type: 9 #View_Stream_X_Seconds
+#   lifeCycle: 1 #ONETIME
+#   reward:
+#     rewardType: 1
+#     rewardID: "1812_jp_weeklymission4_1"
+#     amount: 1
+#     expireTimeSecs: 86400
+#   goalValue: 3600
+#   enableTimeRange:
+#     - startTime: "2018-12-31 00:00:00 (GMT+0900)"
+#       endTime: "2019-01-06 23:59:59 (GMT+0900)"
+#   platforms:
+#     - android
+#     - ios
+
+# - ID: 9b8b6cd2-977f-4c81-b9e6-7d1a6177503d
+#   type: 9 #View_Stream_X_Seconds
+#   lifeCycle: 1 #ONETIME
+#   reward:
+#     rewardType: 1
+#     rewardID: "1812_jp_weeklymission4_1"
+#     amount: 1
+#     expireTimeSecs: 86400
+#   goalValue: 3600
+#   enableTimeRange:
+#     - startTime: "2019-01-07 00:00:00 (GMT+0900)"
+#       endTime: "2019-01-13 23:59:59 (GMT+0900)"
+#   platforms:
+#     - android
+#     - ios
+
+# - ID: faa560a9-2bbb-47f5-8cac-a1de8230a728
+#   type: 3 #Send_Gift
+#   lifeCycle: 1 #ONETIME
+#   reward:
+#     rewardType: 1
+#     rewardID: "1812_jp_weeklymission5_1"
+#     amount: 1
+#     expireTimeSecs: 86400
+#   goalValue: 7
+#   enableTimeRange:
+#     - startTime: "2018-12-31 00:00:00 (GMT+0900)"
+#       endTime: "2019-01-06 23:59:59 (GMT+0900)"
+#   platforms:
+#     - android
+#     - ios
+
+# - ID: 5e5cabd6-a5f8-4373-b43f-97a2addb7b9a
+#   type: 3 #Send_Gift
+#   lifeCycle: 1 #ONETIME
+#   reward:
+#     rewardType: 1
+#     rewardID: "1812_jp_weeklymission5_1"
+#     amount: 1
+#     expireTimeSecs: 86400
+#   goalValue: 7
+#   enableTimeRange:
+#     - startTime: "2019-01-07 00:00:00 (GMT+0900)"
+#       endTime: "2019-01-13 23:59:59 (GMT+0900)"
+#   platforms:
+#     - android
+#     - ios
+
+# - ID: 41503372-9632-4b86-967b-f87383eb4893
+#   type: 8 #IAP
+#   lifeCycle: 1 #ONETIME
+#   reward:
+#     rewardType: 1
+#     rewardID: "1812_jp_weeklymission6_1"
+#     amount: 1
+#     expireTimeSecs: 86400
+#   goalValue: 1
+#   enableTimeRange:
+#     - startTime: "2018-12-31 00:00:00 (GMT+0900)"
+#       endTime: "2019-01-06 23:59:59 (GMT+0900)"
+#   platforms:
+#     - android
+#     - ios
+
+# - ID: 8f88f207-d8fb-4069-9527-4eb7e86a6ff8
+#   type: 8 #IAP
+#   lifeCycle: 1 #ONETIME
+#   reward:
+#     rewardType: 1
+#     rewardID: "1812_jp_weeklymission6_1"
+#     amount: 1
+#     expireTimeSecs: 86400
+#   goalValue: 1
+#   enableTimeRange:
+#     - startTime: "2019-01-07 00:00:00 (GMT+0900)"
+#       endTime: "2019-01-13 23:59:59 (GMT+0900)"
 #   platforms:
 #     - android
 #     - ios
