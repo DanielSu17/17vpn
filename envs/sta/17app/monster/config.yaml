@@ -67,8 +67,31 @@ monsters:
     probability: 4000 # n / 10000 * 100%
   - giftID: "gift_lightstick_g"
     probability: 1000 # n / 10000 * 100%
+  share_ratio: 50 # percentage
+  profit_ratio: 35 # percentage
+  bonus: 250
+  infoPageiconURL: https://assets-17app.akamaized.net/d976d5f7-d0f4-4637-a808-93a7fdbaa03c.png
+  winnerPageiconURL: https://assets-17app.akamaized.net/80740d0d-ffb7-40ae-94d9-2eaa4e2dda9d.png
+  hintToken: {key: monster_battle_summon_hint_nian,fontAttribute: {textColor: "#FFFFFF"}}
+  rule1Token: {key: monster_battle_summon_rule1_nian,fontAttribute: {textColor: "#FFFFFF"}}
+  rule2Token: {key: monster_battle_summon_rule2_nian,fontAttribute: {textColor: "#FFFFFF"}}
+  rule3Token: {key: monster_battle_summon_rule3_nian,fontAttribute: {textColor: "#FFFFFF"}}
+  rule4Token: {key: monster_battle_summon_rule4_nian,fontAttribute: {textColor: "#FFFFFF"}}
+  countdownToken: {key: monster_battle_summon_countdown_nian,fontAttribute: {textColor: "#FFFFFF"}}
+  failureToken: {key: monster_battle_summon_failure_nian,fontAttribute: {textColor: "#FFFFFF"}}
+
+- id: summon_monster_2
+  hit_consume: 10
+  duration: 30s
+  stream_alive_threshold: 1m00s
+  animation: nianb
+  appear_durations:
+  - start_time: 00h00m00s
+    end_time: 24h00m00s
+  type: 1
+  summonGifts:
   - giftID: "gift_lightstick_b"
-    probability: 100 # n / 10000 * 100%
+    probability: 8000 # n / 10000 * 100%
   share_ratio: 50 # percentage
   profit_ratio: 35 # percentage
   bonus: 250
@@ -157,4 +180,29 @@ animationLoader:
   webpUrl: https://assets-17app.akamaized.net/469e38b2-7f88-4ce4-8fa5-32ddfccc744b-q90-s1.webp
   animationID: nian_success
   MD5: eaefbb6da04f9400e1ab24bb887144e8
+  webpMD5: 6c2d367ae929eace2dab9d7611f21bfc
+- url: https://assets-17app.akamaized.net/5819fa91-6378-4a77-9186-8a43c14a60f9.zip 
+  webpUrl: https://assets-17app.akamaized.net/a613ead9-f33f-4347-952d-a9d69aa62c19-q90-s1.webp
+  animationID: nianb_attack
+  MD5: 4823296c65a01e6fde08f684cd12c8cf
+  webpMD5: 8c4e4812e81ca582e0dc246f3369aa65
+- url: https://assets-17app.akamaized.net/3b503ac8-8fd7-4cfb-957e-7f0a755cff23.zip
+  webpUrl: https://assets-17app.akamaized.net/96f19fd3-98e1-4b35-80d5-565b7ee93d13-q90-s1.webp
+  animationID: nianb_enter
+  MD5: 0999af412ac68545518a696f0adf2153
+  webpMD5: 771d108124663d2c304585bd63854980
+- url: https://assets-17app.akamaized.net/755182a7-86ad-4ea1-901a-4f046afcfd66.zip
+  webpUrl: https://assets-17app.akamaized.net/beea5e92-1ee4-4296-8c4a-5922e07537e3-q90-s1.webp
+  animationID: nianb_failure
+  MD5: f361b4e475ff65bc9df15a06ab5a0d1c
+  webpMD5: 83d67ab2c05c62930726f128f82ea836
+- url: https://assets-17app.akamaized.net/c7860229-6bbb-4155-bf12-eab3c22f3dd0.zip
+  webpUrl: https://assets-17app.akamaized.net/d63f1052-822e-4bc6-8fee-bc10dc4a1690-q90-s1.webp
+  animationID: nianb_idle
+  MD5: 853f513583c81eccbd32f7dfdb12e5b3
+  webpMD5: c48cf9912b0c857901498cc7b85123f1
+- url: https://assets-17app.akamaized.net/e7bfc8c5-2305-4801-a72a-8bbc2a729deb.zip
+  webpUrl: https://assets-17app.akamaized.net/469e38b2-7f88-4ce4-8fa5-32ddfccc744b-q90-s1.webp
+  animationID: nianb_success
+  MD5: eb35ba648be4ee73bf8b39581bdecbb8
   webpMD5: 6c2d367ae929eace2dab9d7611f21bfc
