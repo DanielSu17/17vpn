@@ -43,6 +43,12 @@ properties([
             description: 'empty for new job, fill anything to push job diff',
             name: 'CONFIRM',
             trim: false
+        ),
+        string(
+            defaultValue: '',
+            description: '',
+            name: 'LOKALIZE_TOKEN',
+            trim: false
         )]
     )
 ])
