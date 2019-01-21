@@ -20,11 +20,11 @@ type:
 settings:
   webapp:
     rc:
-      endpoint: 'k8s-webapp-deployment/buildWithParameters?token=uceacpKX7Xk37tHAmrWCPpPGEUEK4dvndRMQYdMz'
+      endpoint: 'stag-frontend-deployment/buildWithParameters?token=uceacpKX7Xk37tHAmrWCPpPGEUEK4dvndRMQYdMz'
     sta:
-      endpoint: 'k8s-webapp-deployment/buildWithParameters?token=uceacpKX7Xk37tHAmrWCPpPGEUEK4dvndRMQYdMz'
+      endpoint: 'stag-frontend-deployment/buildWithParameters?token=uceacpKX7Xk37tHAmrWCPpPGEUEK4dvndRMQYdMz'
     prod:
-      endpoint: 'k8s-webapp-deployment/buildWithParameters?token=uceacpKX7Xk37tHAmrWCPpPGEUEK4dvndRMQYdMz'
+      endpoint: 'prod-frontend-deployment/buildWithParameters?token=tHhPGFznbWbLcpeQZioZzewJnUPT42UmNRnDRUyh'
   go:
     k8sstaqa:
       endpoint: 'k8sstaqa-deployment-goapi/buildWithParameters?token=egxVYNaBdHqKWMnJV72EQsG7xtX2UYiYHsLNUWVe'
@@ -33,10 +33,6 @@ settings:
     k8sprod:
       endpoint: 'k8sprod-deployment-goapi/buildWithParameters?token=WPZgd7ag4Q7ksL3nSqLW2QVq6aaDK5apguCvR23M'
   nodejs:
-    dev:
-      endpoint: 'dev-deployment-nodejs/buildWithParameters?token=GaFJ9yVbWusyzqs9babWxJGTJUukHFxLRLULZdYH'
-    prod:
-      endpoint: 'prod-deployment-nodejs/buildWithParameters?token=A5GLMFgZsE7jeBySpcaj7aqHBvd2ZDHVHe24mTMD'
     k8ssta:
       endpoint: 'k8ssta-deployment-nodejs/buildWithParameters?token=ZQuygxVpytYgnanavuVkEdQsccQKr36RyLWNhgjY'
     k8sprod:
