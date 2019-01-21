@@ -8,7 +8,6 @@ import time
 import requests
 import argparse
 
-TOKEN = "ba191bb29040d4a32a6263886986dc8e4c07920f"
 ENVS = ["dev", "sta", "prod"]
 
 class I18nJsonWriter:
@@ -139,7 +138,14 @@ if __name__=="__main__":
         env = ENVS
     else:
         env = [args.env]
-    lc = LokaliseClient(TOKEN)
+
+    # get LOKALIZE_TOKEN from environment variable
+    LOKALIZE_TOKEN = os.environ['LOKALIZE_TOKEN']
+    if len(LOKALIZE_TOKEN.strip()) <= 0:
+        print('FATAL: undefined LOKALIZE_TOKEN')
+        sys.exit(1)
+
+    lc = LokaliseClient(LOKALIZE_TOKEN)
     # Write backend.json
     p_id = lc.get_project_id_by_name("17.backend")
     iw = I18nJsonWriter(lc.get_all_strings(p_id))
