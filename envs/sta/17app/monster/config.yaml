@@ -1,4 +1,4 @@
-max: 2	# 0 means disable feature
+max: 1	# 0 means disable feature
 check_interval: 5m00s
 big_brother_prefix: "give_me_five"
 nian_prefix: "nian"
@@ -65,6 +65,8 @@ monsters:
   summonGifts:
   - giftID: "gift_lightstick_r"
     probability: 5000 # n / 10000 * 100%
+  - giftID: "gift_lightstick_g"
+    probability: 1000 # n / 10000 * 100%
   share_ratio: 50 # percentage
   profit_ratio: 35 # percentage
   bonus: 336
@@ -103,7 +105,7 @@ monsters:
   countdownToken: {key: monster_battle_summon_countdown_nian,fontAttribute: {textColor: "#FFFFFF"}}
   failureToken: {key: monster_battle_summon_failure_nian,fontAttribute: {textColor: "#FFFFFF"}}
 
-- id: summon_monster_kira
+- id: monster_kira
   hit_consume: 10
   duration: 60s
   stream_alive_threshold: 1m00s
@@ -111,22 +113,19 @@ monsters:
   appear_durations:
   - start_time: 00h00m00s
     end_time: 24h00m00s
-  type: 1
-  summonGifts:
-  - giftID: "gift_lightstick_g"
-    probability: 5000 # n / 10000 * 100%
+  type: 0
   share_ratio: 50 # percentage
   profit_ratio: 35 # percentage
-  bonus: 336
+  bonus: 3000
   infoPageiconURL: https://assets-17app.akamaized.net/d976d5f7-d0f4-4637-a808-93a7fdbaa03c.png
   winnerPageiconURL: https://assets-17app.akamaized.net/80740d0d-ffb7-40ae-94d9-2eaa4e2dda9d.png
-  hintToken: {key: monster_battle_summon_hint_nian,fontAttribute: {textColor: "#FFFFFF"}}
-  rule1Token: {key: monster_battle_summon_rule1_nian,fontAttribute: {textColor: "#FFFFFF"}}
-  rule2Token: {key: monster_battle_summon_rule2_nian,fontAttribute: {textColor: "#FFFFFF"}}
-  rule3Token: {key: monster_battle_summon_rule3_nian,fontAttribute: {textColor: "#FFFFFF"}}
-  rule4Token: {key: monster_battle_summon_rule4_nian,fontAttribute: {textColor: "#FFFFFF"}}
-  countdownToken: {key: monster_battle_summon_countdown_nian,fontAttribute: {textColor: "#FFFFFF"}}
-  failureToken: {key: monster_battle_summon_failure_nian,fontAttribute: {textColor: "#FFFFFF"}}
+  hintToken: {key: monster_battle_hint_kira,fontAttribute: {textColor: "#FFFFFF"}}
+  rule1Token: {key: monster_battle_rule1_kira,fontAttribute: {textColor: "#FFFFFF"}}
+  rule2Token: {key: monster_battle_rule2_kira,fontAttribute: {textColor: "#FFFFFF"}}
+  rule3Token: {key: monster_battle_rule3_kira,fontAttribute: {textColor: "#FFFFFF"}}
+  rule4Token: {key: monster_battle_rule4_kira,fontAttribute: {textColor: "#FFFFFF"}}
+  countdownToken: {key: monster_battle_countdown_kira,fontAttribute: {textColor: "#FFFFFF"}}
+  failureToken: {key: monster_battle_success_kira,fontAttribute: {textColor: "#FFFFFF"}}
 
 animationLoader:
 - url: https://assets-17app.akamaized.net/98b26445-2625-49a5-a541-ddf6a0256c00.zip
