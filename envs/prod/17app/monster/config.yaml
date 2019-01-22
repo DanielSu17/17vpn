@@ -61,6 +61,32 @@ monsters:
   failureToken: {key: monster_battle_failure_bbro, fontAttribute: {textColor: "#FFFFFF"}}
   animation: "give_me_five" 
 
+- id: monster_kira
+  hit_consume: 10
+  duration: 60s
+  stream_alive_threshold: 1m00s
+  animation: kira
+  appear_durations:
+  - start_time: 00h00m00s
+    end_time: 2h00m00s
+  - start_time: 12h00m00s
+    end_time: 14h30m00s
+  - start_time: 17h00m00s
+    end_time: 24h00m00s
+  type: 0
+  share_ratio: 50 # percentage
+  profit_ratio: 35 # percentage
+  bonus: 3000
+  infoPageiconURL: https://assets-17app.akamaized.net/25494e91-8ef2-4653-9649-e5453f103ad3.png
+  winnerPageiconURL: https://assets-17app.akamaized.net/bce06789-551c-46c4-9f68-b0eaad5b9f1b.png
+  hintToken: {key: monster_battle_hint_kira,fontAttribute: {textColor: "#FFFFFF"}}
+  rule1Token: {key: monster_battle_rule1_kira,fontAttribute: {textColor: "#FFFFFF"}}
+  rule2Token: {key: monster_battle_rule2_kira,fontAttribute: {textColor: "#FFFFFF"}}
+  rule3Token: {key: monster_battle_rule3_kira,fontAttribute: {textColor: "#FFFFFF"}}
+  rule4Token: {key: monster_battle_rule4_kira,fontAttribute: {textColor: "#FFFFFF"}}
+  countdownToken: {key: monster_battle_countdown_kira,fontAttribute: {textColor: "#FFFFFF"}}
+  failureToken: {key: monster_battle_failure_kira,fontAttribute: {textColor: "#FFFFFF"}}
+  successToken: {key: monster_battle_success_kira,fontAttribute: {textColor: "#FFFFFF"}}
 
 
   
@@ -115,3 +141,28 @@ animationLoader:
   animationID: give_me_five_success
   MD5: c764112e6bf9c109200bf5f712963ddb     
   webpMD5: fd3ab7d2aa10dde39e118a4e9c724f7a
+- url: https://assets-17app.akamaized.net/ddfbbcd9-8a45-4579-aa45-b2c2c6184ccc.zip
+  webpUrl: https://assets-17app.akamaized.net/d0811229-b55e-40a6-a583-70ba825d6ad8-q90-s1.webp
+  animationID: kira_attack
+  MD5: 90d965d4545114d42a90eb80565a6840
+  webpMD5: f62290a61d53f16a4e678009fa6c7875
+- url: https://assets-17app.akamaized.net/1fa761c2-5d0f-4077-bb09-7d6dcfac75b1.zip
+  webpUrl: https://assets-17app.akamaized.net/81bca698-2f76-4177-8ec2-5f1efe287ce0-q90-s1.webp
+  animationID: kira_enter
+  MD5: 06fd56884407608d90b8d75f792e6d3b
+  webpMD5: a5d85d9bc7a3093663543e12c88e999a
+- url: https://assets-17app.akamaized.net/df9d74f7-99bb-4951-bba7-28163dec7e08.zip
+  webpUrl: https://assets-17app.akamaized.net/9d6dc7e9-f306-4c46-af11-939e354f9ba7-q90-s1.webp
+  animationID: kira_failure
+  MD5: 4477aae0a27af1c4b3133e665fdb4bb2
+  webpMD5: af03f74ffe82c8d669bf31361e3d58f0
+- url: https://assets-17app.akamaized.net/757ad9a0-6e75-47f2-b477-70f8c5b70c9b.zip
+  webpUrl: https://assets-17app.akamaized.net/e2f048f5-7b2e-4408-85aa-2dc2d3da580e-q90-s1.webp
+  animationID: kira_idle
+  MD5: 55ead7ba07a0c85603e6e5652fba3f45
+  webpMD5: a7e9003c1a53515efa52ff5715862c19
+- url: https://assets-17app.akamaized.net/93bb0abe-248b-4244-9214-80c16556d2b2.zip
+  webpUrl: https://assets-17app.akamaized.net/dcb1cb44-1c6d-459f-8ddf-1dfdc7ababff-q90-s1.webp
+  animationID: kira_success
+  MD5: 72c5175da5bf681e9ea290b4dd11bdae
+  webpMD5: ca68f77bc82a34e82db0d90fd57040b4
