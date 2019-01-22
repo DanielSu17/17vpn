@@ -1,19 +1,15 @@
-enabled: true
+enabled: false
 appVersion:  # app from this version should support handling generic errors
     ios: 3.2.0
     android: 2.3.11
 viewer_rules:
     - restricted_ips:
-        - "220.128.220.125"  # 20190122 TW offline event
-        - "59.124.114.74"  # 20190122 TW offline event
+        - "61.216.74.65"  # 20181223 TW offline event
+        - "61.219.41.222" # 20181223 TW offline event
       whitelist:
         - "2a091777-b06d-4cad-9b02-70193365e1e3"        # ftcy0118
         - "c9692e9a-d6af-4c3b-b2ba-9954f2fb748d"        # momoiscool
         - "3799d926-2ae2-4942-a510-847a017921cc"        # kevinmh01
-        - "567df62b-d8db-4ebe-73bc-156c3f25ce95"
-        - "9064d5f8-40e3-4e0a-70da-48b3c09e8a64"
-        - "0fee29e1-b414-4018-75c9-cd938259408b"
-        - "65797739-0841-4a59-6150-c99384ed3b4e"
 streamer_rules:
     - restricted_ips:
         - "61.216.89.9"
