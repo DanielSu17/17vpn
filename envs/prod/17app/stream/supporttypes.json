@@ -1,165 +1,216 @@
 {
-	"rtmp_cdn" : [{
-		"name" : "DEFAULT",
-		"quality_support": 0,
-		"weight": 0
-	  },{
-		"name" : "UCLOUD",
-		"quality_support": 0,
-		"weight": 0
-	  },{
-		"name" : "QINIU",
-		"weight": 30,
-		"quality_support": 0,
-		"expire_after_hours": 12,
-		"users": [
-			"008f851d-1a4c-45c7-47fa-1b9930c5fa7e",
-			"a02d7cc8-0585-490a-a143-deb307203199",
-			"050453a1-476c-4442-7dd9-26f3ae7ceda4",
-			"871f0b33-28e4-48fb-b026-3ae9642a0458",
-			"1c20346a-29fc-40c1-ad8e-7cb3737d0a9c",
-			"c958c64d-2291-49d0-87d9-2356bd454ace",
-			"6aa831d0-4dc2-42a9-9560-4e82b8dad130",
-			"5f09a798-4a80-42dc-7bc0-f5955c070381",
-			"a113ec08-7134-4010-5ea8-6c2a66db59ef",
-			"c3db002b-3930-4b7d-9953-08efb55a23ed",
-			"f21cc014-970e-4546-83fc-eec8b52fc537",
-			"eadb8cc8-1b1d-4474-a19c-24c9f4a9a065",
-			"cc72eb2e-0c17-4109-ae74-a61f5ec8760a",
-			"ad38d616-65db-4d14-a5ec-8b122f415499",
-			"f4fa6f00-1811-4b43-7b11-8d354660a704",
-			"e98053e4-23c9-42ce-65a4-bfe3e97c88fd",
-			"c46661ef-c1a4-406f-a15d-7b28791f7125",
-			"0db62cdd-4edd-4bd2-481d-5ea4630deba9",
-			"7df53229-d82f-4571-93aa-5b60c88c3668",
-			"902f858a-b44f-4dc8-71d9-25b71bb39633",
-			"dde040fd-7f98-4581-af7a-32160d321159",
-			"64cd8540-1ad1-4576-5bb6-71e9bf75c02d",
-			"f0f1bf2b-d36e-4081-5972-8e95ba86410e",
-			"9d94e184-f461-498a-ba3e-81f08d392aa0",
-			"aace1b11-43b4-4dbf-8f14-6a7ad70f3aca"
-		]
-	  },{
-		"name" : "QCLOUD",
-		"quality_support": 0,
-		"weight": 0
-	  },{
-		"name" : "WANSU",
-		"weight": 70,
-		"quality_support": 1,
-		"users": [
-			"7ca0983b-3fa3-4e2c-9ebf-093ea4b92d2a",
-			"81bb8d64-06d3-4365-bb57-1c223d6e09cd",
-			"ad9a4ee5-e7eb-47f0-8ef4-727b286aa48f",
-			"e0d68bc2-03c1-4a38-a149-ee65d0089036",
-			"ae7c1f66-1d13-469a-ba6d-8c5592778c34",
-			"0684f899-6f7c-4bba-a37b-efc5927dbbd4",
-			"09892f6e-d109-4eac-4f05-e759199f01a0",
-			"10121330-1f48-4266-56a4-d3d297421e52",
-			"1064096b-6585-4dc3-aa85-218cb2e2a8fa",
-			"16226683-73a4-4055-a536-d3bb317cb3c7",
-			"1c24a180-5550-4b19-4124-1955db510942",
-			"93e77d8a-c4b1-45f3-ae74-5ad68620e5a0",
-			"8f2b3270-6e19-4f19-b9b3-2fa8cc4f6d3f",
-			"1e07bc22-881b-48c5-a5c4-42ed0b4ba1c4",
-			"e2254b27-e60a-4969-5fca-601cdebb8f63",
-			"652351ca-e94f-412e-4f0c-fc3d6f0f728e",
-			"97af558b-7bef-407b-9c6e-617b43c77122",
-			"43f84441-e11f-4f87-6f0c-caa859475819"
-		]
-	  },{
-		"name" : "WANSU_LOW_LATENCY",
-		"quality_support": 1,
-		"weight": 0,
-		"users": [
-			"87614b98-d226-4cd8-7ef3-a6dafd15ecf6",
-			"6e9af721-55c5-41d7-91a4-387aceec94a6",
-			"bbf85355-348d-45d4-6555-cf03881171e0",
-			"c9945154-c474-44f4-533e-b14afbc36d02",
-			"052a98ec-6cb2-4b63-77de-9c98bf141be9",
-			"8f95a285-104e-4ea5-ae58-00cca785247a",
-			"9d2170f2-f7dd-4acf-4f44-9b36a7303450",
-			"91ce0188-caed-4fb1-95cb-98e0d84fa5e1",
-			"c21f1749-b48d-43fd-b3e3-32c5edf169e9"
-		]
-	  }],
-	"stream_type" : ["chunk","rtmp","webrtc","blab"],
-	"default_type" : {
-		"rtmp_cdn" : 0,
-		"stream_type" : 1,
-		"message_provider_general": 0,
-		"message_provider_17q": 0
-	},
-	"message_provider_17q" : [{
-		"name" : "PUBNUB_MESSAGE",
-		"weight": 0,
-		"users": []
-	},{
-		"name" : "WANSU_MESSAGE",
-		"weight": 100,
-		"users": []
-	}],
-	"message_provider_general": [{
-		"name": "PUBNUB_MESSAGE",
-		"weight": 0,
-		"users": [
-			"5dfce5a8-6589-4a3a-62c7-067507adee44",
-			"79985212-287e-46dc-9346-d4026f32daa4",
-			"aa6c15a2-2239-4b51-becc-cc29a8c50481",
-			"35f90aea-ea7b-4591-8eff-e61f24f7cb08",
-			"f1ad6b6f-24fa-4e35-a23a-8b5ccdd37ad4",
-			"f05b6e86-1ef6-498a-aa06-a47a10b2d61a",
-			"92ac1853-9046-44ee-9ae1-15869d92b89d",
-			"7db24214-9067-4c32-887a-3cbc76f6b11a",
-			"bddc8443-7c66-4751-a145-3502993e1e87",
-			"05c41ae6-a8f4-4ae5-b0bf-69edb3eb8975",
-			"5a519af0-8a80-449c-6e0a-2e635490df6d",
-			"26e14ce2-eff3-4c22-88fc-2af5e26872dd",
-			"e365ac0c-ce7f-4aa1-b784-e8f867c13f90",
-			"13d228a2-4d65-4fb7-9653-2ef62bad628e",
-			"8b0d4975-2433-418e-a841-126d8170e3f0",
-			"8daf16f1-9fdb-43bf-80ab-acf58acc6c61",
-			"d20762fa-bda4-4753-7440-ce6e85c96a27",
-			"d6ac3ff0-6d5b-49b0-82dc-fc722112a70c"
-		]
-	},{
-		"name": "WANSU_MESSAGE",
-		"weight": 100,
-		"users": [
-			"7ca0983b-3fa3-4e2c-9ebf-093ea4b92d2a",
-			"a474976a-4f00-4789-45a1-0027cc69386f"
-		]
-	}],
-	"message_provider_general_dynamic": [{
-		"name": "PUBNUB_MESSAGE",
-		"weight": 0,
-		"users": [
-			"5dfce5a8-6589-4a3a-62c7-067507adee44",
-			"79985212-287e-46dc-9346-d4026f32daa4",
-			"aa6c15a2-2239-4b51-becc-cc29a8c50481",
-			"35f90aea-ea7b-4591-8eff-e61f24f7cb08",
-			"f1ad6b6f-24fa-4e35-a23a-8b5ccdd37ad4",
-			"f05b6e86-1ef6-498a-aa06-a47a10b2d61a",
-			"92ac1853-9046-44ee-9ae1-15869d92b89d",
-			"7db24214-9067-4c32-887a-3cbc76f6b11a",
-			"bddc8443-7c66-4751-a145-3502993e1e87",
-			"05c41ae6-a8f4-4ae5-b0bf-69edb3eb8975",
-			"5a519af0-8a80-449c-6e0a-2e635490df6d",
-			"26e14ce2-eff3-4c22-88fc-2af5e26872dd",
-			"e365ac0c-ce7f-4aa1-b784-e8f867c13f90",
-			"13d228a2-4d65-4fb7-9653-2ef62bad628e",
-			"8b0d4975-2433-418e-a841-126d8170e3f0",
-			"8daf16f1-9fdb-43bf-80ab-acf58acc6c61",
-			"d20762fa-bda4-4753-7440-ce6e85c96a27",
-			"d6ac3ff0-6d5b-49b0-82dc-fc722112a70c"
-		]
-	},{
-		"name": "WANSU_MESSAGE",
-		"weight": 0,
-		"users": [
-			"7ca0983b-3fa3-4e2c-9ebf-093ea4b92d2a",
-			"a474976a-4f00-4789-45a1-0027cc69386f",
-			"723f1f2e-4b99-4d22-adc9-39be23c0d3ca"
-		]
-	}]
+  "rtmp_cdn" : [{
+    "name" : "DEFAULT",
+    "quality_support": 0,
+    "weight": 0
+    },{
+    "name" : "UCLOUD",
+    "quality_support": 0,
+    "weight": 0
+    },{
+    "name" : "QINIU",
+    "weight": 30,
+    "quality_support": 0,
+    "expire_after_hours": 12,
+    "users": [
+      "008f851d-1a4c-45c7-47fa-1b9930c5fa7e",
+      "a02d7cc8-0585-490a-a143-deb307203199",
+      "050453a1-476c-4442-7dd9-26f3ae7ceda4",
+      "871f0b33-28e4-48fb-b026-3ae9642a0458",
+      "1c20346a-29fc-40c1-ad8e-7cb3737d0a9c",
+      "c958c64d-2291-49d0-87d9-2356bd454ace",
+      "6aa831d0-4dc2-42a9-9560-4e82b8dad130",
+      "5f09a798-4a80-42dc-7bc0-f5955c070381",
+      "a113ec08-7134-4010-5ea8-6c2a66db59ef",
+      "c3db002b-3930-4b7d-9953-08efb55a23ed",
+      "f21cc014-970e-4546-83fc-eec8b52fc537",
+      "eadb8cc8-1b1d-4474-a19c-24c9f4a9a065",
+      "cc72eb2e-0c17-4109-ae74-a61f5ec8760a",
+      "ad38d616-65db-4d14-a5ec-8b122f415499",
+      "f4fa6f00-1811-4b43-7b11-8d354660a704",
+      "e98053e4-23c9-42ce-65a4-bfe3e97c88fd",
+      "c46661ef-c1a4-406f-a15d-7b28791f7125",
+      "0db62cdd-4edd-4bd2-481d-5ea4630deba9",
+      "7df53229-d82f-4571-93aa-5b60c88c3668",
+      "902f858a-b44f-4dc8-71d9-25b71bb39633",
+      "dde040fd-7f98-4581-af7a-32160d321159",
+      "64cd8540-1ad1-4576-5bb6-71e9bf75c02d",
+      "f0f1bf2b-d36e-4081-5972-8e95ba86410e",
+      "9d94e184-f461-498a-ba3e-81f08d392aa0",
+      "aace1b11-43b4-4dbf-8f14-6a7ad70f3aca"
+    ]
+    },{
+    "name" : "QCLOUD",
+    "quality_support": 0,
+    "weight": 0
+    },{
+    "name" : "WANSU",
+    "weight": 70,
+    "quality_support": 1,
+    "users": [
+      "7ca0983b-3fa3-4e2c-9ebf-093ea4b92d2a",
+      "81bb8d64-06d3-4365-bb57-1c223d6e09cd",
+      "ad9a4ee5-e7eb-47f0-8ef4-727b286aa48f",
+      "e0d68bc2-03c1-4a38-a149-ee65d0089036",
+      "ae7c1f66-1d13-469a-ba6d-8c5592778c34",
+      "0684f899-6f7c-4bba-a37b-efc5927dbbd4",
+      "09892f6e-d109-4eac-4f05-e759199f01a0",
+      "10121330-1f48-4266-56a4-d3d297421e52",
+      "1064096b-6585-4dc3-aa85-218cb2e2a8fa",
+      "16226683-73a4-4055-a536-d3bb317cb3c7",
+      "1c24a180-5550-4b19-4124-1955db510942",
+      "93e77d8a-c4b1-45f3-ae74-5ad68620e5a0",
+      "8f2b3270-6e19-4f19-b9b3-2fa8cc4f6d3f",
+      "1e07bc22-881b-48c5-a5c4-42ed0b4ba1c4",
+      "e2254b27-e60a-4969-5fca-601cdebb8f63",
+      "652351ca-e94f-412e-4f0c-fc3d6f0f728e",
+      "97af558b-7bef-407b-9c6e-617b43c77122",
+      "43f84441-e11f-4f87-6f0c-caa859475819",
+      "0cd9e0f9-f8d9-4fb5-a761-902df443c625",
+      "115851d0-d202-47c5-9079-71d3e7f704f7",
+      "23196238-a170-4890-b7d0-b0c517961be0",
+      "2c5b9b68-85b3-4e0c-b17c-1c16efac5b8d",
+      "2ff82763-913d-484a-b95c-171d5c2056de",
+      "321187dc-4798-402d-926e-7d4a08eae9f0",
+      "39768998-d553-47a3-6138-4bc843536cd9",
+      "47f38f47-9c44-4003-b86d-74e7ac72eddf",
+      "5beafdc1-d1bf-449b-6ff6-ba4a9fbe0139",
+      "762b0a60-e11c-4f9d-a29d-eaf4eac712c8",
+      "8573ccee-1cb6-4a81-a6b2-ded6d00ce82a",
+      "88cbd48f-a4d0-402e-be02-8e8e75b76119",
+      "8e751b1f-a168-4ea9-4fcd-5115f27ac530",
+      "925a0618-6d48-49fa-8c37-4ba587cb2fb4",
+      "a2e0bdd3-0aa0-4fc4-91c2-b8ad00d26211",
+      "ab460785-cb47-443b-a0ca-51989f0f0aa9",
+      "b3584a44-f354-4c1e-bca2-76beeeea3d03",
+      "d5c732f0-da49-4eef-a45b-16b86dcb371d",
+      "e7815f87-d57c-427d-b3ce-d959541b63bf",
+      "e7f163f3-21d9-471f-9368-f223a81167c6",
+      "f1851871-0a83-4d0e-54af-a7fcff16221b",
+      "f73ac37f-f92e-4e7e-a475-8d658380bfb8",
+      "fce5dc9a-4837-4fc2-84ae-ec5113d98cb4",
+      "133f1d37-f4aa-4882-59b7-b11851480f56",
+      "32afdaac-a83b-481f-bc5a-1e85c3188c6f",
+      "3488479e-cc97-4a4c-4820-313612b07a85",
+      "59682e26-d431-487d-91ea-1dddd4fbf8f5",
+      "5a519af0-8a80-449c-6e0a-2e635490df6d",
+      "614e8e71-322c-4122-439a-c892113a851e",
+      "637cab93-d805-48ab-9be8-dbfcd15b4439",
+      "6d64d83a-4541-436a-7cdf-77cd951f7206",
+      "6f621e1d-3b03-431b-b5a5-d2db42cf52ae",
+      "801bfb02-d36b-4218-5bea-9a31279fbc07",
+      "86874e97-fe44-4411-46a2-fb36a721c61e",
+      "8daabb59-0a5d-43b1-8f29-9965e395a1ae",
+      "931a4fe3-e835-4eb3-45e0-7e7d68d82600",
+      "97daf7ee-9aa7-402c-b8d9-e1c6c31097ce",
+      "9a3b9532-a630-4a07-46ce-5260395aed35",
+      "9b1beb8e-2be7-427d-b510-4b2624f87772",
+      "9e026a77-84f3-4be5-9d22-c645c30bf999",
+      "a15bd10e-9f7b-4fd1-a757-70007b43e774",
+      "b4c64d1a-3572-4485-ad2b-967bb7062bb5",
+      "b4ca8f35-f172-4e31-5eb4-482740057dc1",
+      "dc6ab917-5856-4c74-6822-03d860b75a6f",
+      "df529949-9efd-40ba-8d14-5f07e64c4058",
+      "e853c995-65f4-4abf-813c-cd2a06050348",
+      "fd8972a7-044a-4b23-bbe9-2b78331d576e",
+      "567df62b-d8db-4ebe-73bc-156c3f25ce95",
+      "9064d5f8-40e3-4e0a-70da-48b3c09e8a64",
+      "0fee29e1-b414-4018-75c9-cd938259408b",
+      "65797739-0841-4a59-6150-c99384ed3b4e"
+    ]
+    },{
+    "name" : "WANSU_LOW_LATENCY",
+    "quality_support": 1,
+    "weight": 0,
+    "users": [
+      "87614b98-d226-4cd8-7ef3-a6dafd15ecf6",
+      "6e9af721-55c5-41d7-91a4-387aceec94a6",
+      "bbf85355-348d-45d4-6555-cf03881171e0",
+      "c9945154-c474-44f4-533e-b14afbc36d02",
+      "052a98ec-6cb2-4b63-77de-9c98bf141be9",
+      "8f95a285-104e-4ea5-ae58-00cca785247a",
+      "9d2170f2-f7dd-4acf-4f44-9b36a7303450",
+      "91ce0188-caed-4fb1-95cb-98e0d84fa5e1",
+      "c21f1749-b48d-43fd-b3e3-32c5edf169e9"
+    ]
+    }],
+  "stream_type" : ["chunk","rtmp","webrtc","blab"],
+  "default_type" : {
+    "rtmp_cdn" : 0,
+    "stream_type" : 1,
+    "message_provider_general": 0,
+    "message_provider_17q": 0
+  },
+  "message_provider_17q" : [{
+    "name" : "PUBNUB_MESSAGE",
+    "weight": 0,
+    "users": []
+  },{
+    "name" : "WANSU_MESSAGE",
+    "weight": 100,
+    "users": []
+  }],
+  "message_provider_general": [{
+    "name": "PUBNUB_MESSAGE",
+    "weight": 0,
+    "users": [
+      "5dfce5a8-6589-4a3a-62c7-067507adee44",
+      "79985212-287e-46dc-9346-d4026f32daa4",
+      "aa6c15a2-2239-4b51-becc-cc29a8c50481",
+      "35f90aea-ea7b-4591-8eff-e61f24f7cb08",
+      "f1ad6b6f-24fa-4e35-a23a-8b5ccdd37ad4",
+      "f05b6e86-1ef6-498a-aa06-a47a10b2d61a",
+      "92ac1853-9046-44ee-9ae1-15869d92b89d",
+      "7db24214-9067-4c32-887a-3cbc76f6b11a",
+      "bddc8443-7c66-4751-a145-3502993e1e87",
+      "05c41ae6-a8f4-4ae5-b0bf-69edb3eb8975",
+      "5a519af0-8a80-449c-6e0a-2e635490df6d",
+      "26e14ce2-eff3-4c22-88fc-2af5e26872dd",
+      "e365ac0c-ce7f-4aa1-b784-e8f867c13f90",
+      "13d228a2-4d65-4fb7-9653-2ef62bad628e",
+      "8b0d4975-2433-418e-a841-126d8170e3f0",
+      "8daf16f1-9fdb-43bf-80ab-acf58acc6c61",
+      "d20762fa-bda4-4753-7440-ce6e85c96a27",
+      "d6ac3ff0-6d5b-49b0-82dc-fc722112a70c"
+    ]
+  },{
+    "name": "WANSU_MESSAGE",
+    "weight": 100,
+    "users": [
+      "7ca0983b-3fa3-4e2c-9ebf-093ea4b92d2a",
+      "a474976a-4f00-4789-45a1-0027cc69386f"
+    ]
+  }],
+  "message_provider_general_dynamic": [{
+    "name": "PUBNUB_MESSAGE",
+    "weight": 0,
+    "users": [
+      "5dfce5a8-6589-4a3a-62c7-067507adee44",
+      "79985212-287e-46dc-9346-d4026f32daa4",
+      "aa6c15a2-2239-4b51-becc-cc29a8c50481",
+      "35f90aea-ea7b-4591-8eff-e61f24f7cb08",
+      "f1ad6b6f-24fa-4e35-a23a-8b5ccdd37ad4",
+      "f05b6e86-1ef6-498a-aa06-a47a10b2d61a",
+      "92ac1853-9046-44ee-9ae1-15869d92b89d",
+      "7db24214-9067-4c32-887a-3cbc76f6b11a",
+      "bddc8443-7c66-4751-a145-3502993e1e87",
+      "05c41ae6-a8f4-4ae5-b0bf-69edb3eb8975",
+      "5a519af0-8a80-449c-6e0a-2e635490df6d",
+      "26e14ce2-eff3-4c22-88fc-2af5e26872dd",
+      "e365ac0c-ce7f-4aa1-b784-e8f867c13f90",
+      "13d228a2-4d65-4fb7-9653-2ef62bad628e",
+      "8b0d4975-2433-418e-a841-126d8170e3f0",
+      "8daf16f1-9fdb-43bf-80ab-acf58acc6c61",
+      "d20762fa-bda4-4753-7440-ce6e85c96a27",
+      "d6ac3ff0-6d5b-49b0-82dc-fc722112a70c"
+    ]
+  },{
+    "name": "WANSU_MESSAGE",
+    "weight": 0,
+    "users": [
+      "7ca0983b-3fa3-4e2c-9ebf-093ea4b92d2a",
+      "a474976a-4f00-4789-45a1-0027cc69386f",
+      "723f1f2e-4b99-4d22-adc9-39be23c0d3ca"
+    ]
+  }]
 }
