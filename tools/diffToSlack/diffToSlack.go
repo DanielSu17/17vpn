@@ -316,7 +316,7 @@ func mergePush() {
 	// slackUserID is used to metion user in slack deployment message at pushToEctd.go
 	// nslackUserEmail is used to let people know who did this commit
 	commitMsg := fmt.Sprintf("[Misc] Update i18n\nslackUserEmail: %s\nslackUserID: %s", slackUserEmail, slackUserID)
-	execCommand(folder, "git", []string{"commit", "-m", commitMsg})
+	execCommand(folder, "git", []string{"commit", "-c", "user.name='Jenkins'", "-c", "user.email='no-reply@17.media'", "-m", commitMsg})
 
 	execCommand(folder, "git", []string{"checkout", "master"})
 
