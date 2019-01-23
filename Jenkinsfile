@@ -158,7 +158,10 @@ node { timestamps { ansiColor('xterm') {
               usernameVariable: 'DOCKER_USER'
           )
       ]) {
+        // force exit if job execution time over 10 minutes
+        timeout(time: 600, unit: 'SECONDS') {
           sh("./pushToEtcd-linux --commit_id \"" + params.REVISION + "\"")
+        } // end of timeout
       }
     } // end of dir
   } // end of stage
