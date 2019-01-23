@@ -91,6 +91,8 @@ node { timestamps { ansiColor('xterm') {
   } // end of stage
 
   stage('Command Execute') {
-    sh("go run gowork/src/configs/tools/diffToSlack/diffToSlack.go")
+    sshagent(['c25cefdc-b3ab-43c1-bc99-219c3c59826a']) {
+      sh("go run gowork/src/configs/tools/diffToSlack/diffToSlack.go")
+    }
   } // end of stage
 } /* end of ansiColor */ } /* end of timestamps */ } /* end of node */
