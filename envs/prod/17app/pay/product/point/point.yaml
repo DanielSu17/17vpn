@@ -1,0 +1,63 @@
+# // example of reward
+# // | Type | Value | RefCount's meaning |
+# // | --- | --- | --- |
+# // | VIP |  1  | x 天 尊榮寶寶 |
+
+# // example of playmode
+# // | Type | Value | 
+# // | ---  | ----  | 
+# // | LimitedTime |  0  | 限時首儲
+# // | CareerFirstTime |  1  | 生涯首儲
+
+EventBasedIAP:
+
+ProductBasedIAP:
+  - startTime: "2018-12-24T15:00:00+08:00"
+    endTime: "2019-02-25T23:59:59+08:00"
+    shouldCountdown: true
+    stickerURL: "https://assets-17app.akamaized.net/c8aefddd-0191-4a4a-94bb-8020a357d833.png"
+    eventInfo:
+      eventTitle: ""
+      eventURL: ""
+    layoutInfo:
+      titlePicURL: "https://assets-17app.akamaized.net/ba4806a3-e962-48ee-8c71-3ffed74da722.png"
+      messageColor: "#FCF3ED"
+      messageShadowColor: "#710000"
+      message: # i18n key
+      descBgURL: "https://assets-17app.akamaized.net/eb30a494-14ad-4ae0-82c3-be47d654aa94.png"
+      descLeftBottomURL: "https://assets-17app.akamaized.net/4e575268-dce7-4e89-b272-1e47430d89f6.png"
+      descRightBottomURL: "https://assets-17app.akamaized.net/38a980ed-374f-47ff-bf64-4345f83c7499.png"
+      highlightPicURL:
+      highlightIconURL:
+    pointProducts:
+      - productID: "media17_points_100"
+        bonusPoint: 100
+        shouldHighlight:  true
+        reward:
+      - productID: "media17_points_500"
+        bonusPoint: 0
+        shouldHighlight:  false
+        reward:
+      - productID: "media17_points_1100"
+        bonusPoint: 0
+        shouldHighlight:  false
+        reward:
+      - productID: "media17_points_2400"
+        bonusPoint: 0
+        shouldHighlight:  false
+        reward:
+      - productID: "media17_points_6500"
+        bonusPoint: 0
+        shouldHighlight:  false
+        reward:
+      - productID: "media17_points_14000"
+        bonusPoint: 0
+        shouldHighlight:  false
+        reward:
+    playMode: 0
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 13 # 0 means no limit
+    displayRewardInfo: true
+    abtestName:
