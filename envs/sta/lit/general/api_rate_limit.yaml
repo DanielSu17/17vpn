@@ -17,6 +17,11 @@ rate_limits:
   flow_per_second: 1
   reservoir_size: 1
   scope: by_access_token
+- url: "/stories/.*/like"
+  method: "PUT"
+  flow_per_second: 1
+  reservoir_size: 1
+  scope: by_access_token
 - url: "/users/follow"
   method: "PUT"
   flow_per_second: 1
