@@ -40,7 +40,7 @@ throttling_max_sync: 5
 
 # For example:
 #     any request match the regular expression "/v1/abc/[0-9]*/def" will be under
-#     ratelimiting with QPS 1, and burst QPS = 5
+#     ratelimiting with QPS 100, and burst QPS = 200
 # Remarks:
 #     reservoir_size must be non-zero. Otherwise the leakybucket algorithm will fail.
 #     reservoir_size should be larger than flow_per_second, otherwise the actual
