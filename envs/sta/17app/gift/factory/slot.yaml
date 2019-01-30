@@ -60,10 +60,10 @@ treasurebox_golden_lotto: # giftID for this treasure chest gift
   increasePercentage: 8 # percentage of the gift point will put into jackpot
 #  # FIXME: super high expectation for QA
   drawExpectation: 95  # expectation point for each draw
-  mustHitAmount: 170000  # when jackpot amount bigger than mustHitAmount, then hit the jackpot
+  mustHitAmount: 1000000  # when jackpot amount bigger than mustHitAmount, then hit the jackpot
   i18nTokenKey: treasure_chest_global_jackpot_BE # key(string) for i18n.Tokenize
   slotTab: 2 # type: treasure chest
-  lock: false
+  lock: true
 
 treasurebox_platinum_lotto: # giftID for this treasure chest gift
   hitGiftIDs: ["treasure_box_platinum_win"]
