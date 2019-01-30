@@ -58,12 +58,14 @@ clientConfig:
     enable: true
 
 cronBomb:
-    enable: false
+    enable: true
     hourRanges:
-        - startHour: 18
-          endHour: 23
-    period: 1800
-    number: 5
+        - startHour: 9
+          endHour: 12
+        - startHour: 15
+          endHour: 18
+    period: 600
+    number: 1
 
 enablePokeAll: true
 pokeAllRemainingSeconds: 40
