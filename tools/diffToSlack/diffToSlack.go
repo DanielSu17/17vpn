@@ -151,7 +151,7 @@ func gitDiff() {
 	execCommand("./", "git", []string{"clone", gitURL, folder})
 
 	// checkout branch
-	execCommand(folder, "git", []string{"checkout", "-b", gitBranch})
+	execCommand(folder, "git", []string{"checkout", "-b", gitBranch + "_" + folder})
 
 	// Update i18n
 	execCommand(folder+"/tools", "python", []string{"update_i18n.py", env})
@@ -262,6 +262,7 @@ func gitDiff() {
 				})
 			}
 		}
+
 		if validateFail {
 			// Append button
 			attachments = append(attachments, slack.Attachment{
@@ -295,36 +296,38 @@ func gitDiff() {
 				},
 			})
 		}
+
+		execCommand(folder, "git", []string{"add", "."})
+
+		// set `user.name` and `user.email` before commit
+		execCommand(folder, "git", []string{"config", "user.name", "Jenkins"})
+		execCommand(folder, "git", []string{"config", "user.email", "no-reply@17.media"})
+
+		// setting commit message
+		// slackUserID is used to metion user in slack deployment message at pushToEctd.go
+		// slackUserEmail is used to let people know who did this commit
+		commitMsg := fmt.Sprintf("[Misc] Update i18n\nslackUserEmail: %s\nslackUserID: %s", slackUserEmail, slackUserID)
+		execCommand(folder, "git", []string{"commit", "-m", commitMsg})
+
+		// push commit change back to `17media/configs`
+		// please not that it is a **force push** command
+		execCommand(folder, "git", []string{"push", "origin", gitBranch + "_" + folder, "--force"})
 	}
+
 	sendSlack(attachments)
 }
 
 func mergePush() {
 	folder := fmt.Sprintf("configs_%s", slackUserID)
-	// if folder not exists, skip
-	if _, err := os.Stat(folder); os.IsNotExist(err) {
-		attachments := []slack.Attachment{slack.Attachment{
-			Fallback: "data miss, please restart update",
-			Text:     "data miss, please restart update",
-			Color:    colorDanger,
-		}}
-		sendSlack(attachments)
-		log.Fatal("data miss, bye")
-	}
-	execCommand(folder, "git", []string{"add", "."})
-	// setting commit message
-	// slackUserID is used to metion user in slack deployment message at pushToEctd.go
-	// nslackUserEmail is used to let people know who did this commit
-	commitMsg := fmt.Sprintf("[Misc] Update i18n\nslackUserEmail: %s\nslackUserID: %s", slackUserEmail, slackUserID)
-	execCommand(folder, "git", []string{"config", "user.name", "Jenkins"})
-	execCommand(folder, "git", []string{"config", "user.email", "no-reply@17.media"})
-	execCommand(folder, "git", []string{"commit", "-m", commitMsg})
 
 	execCommand(folder, "git", []string{"checkout", "master"})
 
-	execCommand(folder, "git", []string{"merge", gitBranch})
+	execCommand(folder, "git", []string{"merge", gitBranch + "_" + folder})
 
 	execCommand(folder, "git", []string{"push", "origin", "master"})
+
+	// cleanup remote branch after merge succeed
+	execCommand(folder, "git", []string{"push", "origin", "--delete", gitBranch + "_" + folder})
 
 	execCommand("./", "rm", []string{"-fr", folder})
 
@@ -348,8 +351,8 @@ func execCommand(dir, commands string, args []string) (string, string) {
 	cmd.Stderr = &stderr
 	if err := cmd.Run(); err != nil {
 		attachments := []slack.Attachment{slack.Attachment{
-			Fallback: "Update fail, please try restart again.\nfailed at " + strings.Join(displayCmd, " ") + "\nError: " + stderr.String(),
-			Text:     "Update fail, please try restart again.\nfailed at " + strings.Join(displayCmd, " ") + "\nError: " + stderr.String(),
+			Fallback: "Update failed, please try restart again.\nfailed at " + strings.Join(displayCmd, " ") + "\nError: " + stderr.String(),
+			Text:     "Update failed, please try restart again.\nfailed at " + strings.Join(displayCmd, " ") + "\nError: " + stderr.String(),
 			Color:    colorDanger,
 		}}
 		sendSlack(attachments)
