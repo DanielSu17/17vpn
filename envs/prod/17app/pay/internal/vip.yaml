@@ -1,5 +1,5 @@
 # `paychannel`
-  # - 台灣企銀帳戶 : 1
+  # - BY_TWBANK_C = 1; // 台灣企銀帳戶 C
   # - PAYPAL : 2
   # - 智付通 : 3
   # - 玉山台灣外幣帳戶 : 4
@@ -25,6 +25,8 @@
   # - BY_YUANTA_BANK = 27; // 元大商業銀行
   # - BY_TAISHIN_BANK = 28; // 台新國際商業銀行
   # - BY_OCBC_BANK = 29; // 華僑銀行
+  # - BY_TWBANK_A = 31; // 台灣企銀帳戶 A
+  # - BY_TWBANK_B = 32; // 台灣企銀帳戶 B
 # `duplicateUniformInvoice` // 許可開立二聯式發票的payChannel
 # `triplicateUniformInvoice` // 許可開立三聯式發票的payChannel
 # `currency` follows ISO 4217 standard:   
@@ -51,11 +53,15 @@ TW:
     - 27
     - 28
     - 29
+    - 31
+    - 32
   duplicateUniformInvoice:
     - 1
     - 3
     - 27
     - 28
+    - 31
+    - 32
   triplicateUniformInvoice:
     - 13
   currency:
