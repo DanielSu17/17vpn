@@ -1,25 +1,9 @@
 # about the usage of this file, please reference to 
 #   github.com/17media/api/service/metrics/config.go
 
-enabled_level: 5
-default_sample_rate: 1
+enabled_level: 1
+default_sample_rate: 0
 white_list:
   redis: true
-  kv: true
-  query: true
-  db: true
-  cron: true
-  relation: true
-  relationRedis: true
-  rel2: true
-  apis: true
 sample_rate:
   redis: 1
-  kv: 1
-  query: 1
-  db: 1
-  cron: 1
-  relation: 1
-  relationRedis: 1
-  rel2: 1
-  apis: 1
