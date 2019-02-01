@@ -141,19 +141,16 @@ func parseKeyVal(input string) map[string]string {
 
 func gitDiff() {
 
-	folder := fmt.Sprintf("configs_%s", slackUserID)
-
-	// git clone
-	execCommand("./", "git", []string{"clone", gitURL, folder})
+	branch_suffix := fmt.Sprintf("configs_%s", slackUserID)
 
 	// checkout branch
-	execCommand(folder, "git", []string{"checkout", "-b", gitBranch + "_" + folder})
+	execCommand("./", "git", []string{"checkout", "-b", gitBranch + "_" + branch_suffix})
 
 	// Update i18n
-	execCommand(folder+"/tools", "python", []string{"update_i18n.py", env})
+	execCommand("./tools", "python", []string{"update_i18n.py", env})
 
 	// Run git diff
-	diff, _ := execCommand(folder, "git", []string{"diff"})
+	diff, _ := execCommand("./", "git", []string{"diff"})
 
 	// Prepare variable
 	// parse filename from `diff --git a/envs/prod/17app/i18n/en_us/android.json b/envs/prod/17app/i18n/en_us/android.json`
@@ -293,37 +290,37 @@ func gitDiff() {
 			})
 		}
 
-		execCommand(folder, "git", []string{"add", "."})
+		execCommand("./", "git", []string{"add", "."})
 
 		// set `user.name` and `user.email` before commit
-		execCommand(folder, "git", []string{"config", "user.name", "Jenkins"})
-		execCommand(folder, "git", []string{"config", "user.email", "no-reply@17.media"})
+		execCommand("./", "git", []string{"config", "user.name", "Jenkins"})
+		execCommand("./", "git", []string{"config", "user.email", "no-reply@17.media"})
 
 		// setting commit message
 		// slackUserID is used to metion user in slack deployment message at pushToEctd.go
 		// slackUserEmail is used to let people know who did this commit
 		commitMsg := fmt.Sprintf("[Misc] Update i18n\nslackUserEmail: %s\nslackUserID: %s", slackUserEmail, slackUserID)
-		execCommand(folder, "git", []string{"commit", "-m", commitMsg})
+		execCommand("./", "git", []string{"commit", "-m", commitMsg})
 
 		// push commit change back to `17media/configs`
 		// please note that it is a **force push** command
-		execCommand(folder, "git", []string{"push", "origin", gitBranch + "_" + folder, "--force"})
+		execCommand("./", "git", []string{"push", "origin", gitBranch + "_" + branch_suffix, "--force"})
 	}
 
 	sendSlack(attachments)
 }
 
 func mergePush() {
-	folder := fmt.Sprintf("configs_%s", slackUserID)
+	branch_suffix := fmt.Sprintf("configs_%s", slackUserID)
 
-	execCommand(folder, "git", []string{"checkout", "master"})
+	execCommand("./", "git", []string{"checkout", "master"})
 
-	execCommand(folder, "git", []string{"merge", gitBranch + "_" + folder})
+	execCommand("./", "git", []string{"merge", gitBranch + "_" + branch_suffix})
 
-	execCommand(folder, "git", []string{"push", "origin", "master"})
+	execCommand("./", "git", []string{"push", "origin", "master"})
 
 	// cleanup remote branch after merge succeed
-	execCommand(folder, "git", []string{"push", "origin", "--delete", gitBranch + "_" + folder})
+	execCommand("./", "git", []string{"push", "origin", "--delete", gitBranch + "_" + branch_suffix})
 
 	attachments := []slack.Attachment{slack.Attachment{
 		Fallback: "i18n pushed to github\n should be apply in few minutes",
