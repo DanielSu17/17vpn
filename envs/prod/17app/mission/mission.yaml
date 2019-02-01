@@ -56,6 +56,35 @@ missions:
       - android
       - ios
 
+  - ID: 893ffbb1-ccb0-4e86-9356-45243e2b4962
+    type: 9 #觀看直播
+    levelRange:
+      min: 21
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: "1902_tw_drunk_xs"
+      amount: 1
+      expireTimeSecs: 86400
+    i18nTitle: "baggage_mission_watch_streams_time_in_total_reward_crossregion_title_b"
+    i18nTitleParams:
+      - needMap: false
+        value: "10"
+    i18nContent: "baggage_mission_watch_streams_time_in_total_reward_crossregion_desc_b"
+    i18nContentParams:
+      - needMap: false
+        value: "21"
+      - needMap: true
+        mapOption: 1
+        value: gift_1902_tw_drunk_xs
+    goalValue: 600
+    enableTimeRange:
+      - startTime: "2019-02-07 18:00:00 (GMT+0800)"
+        endTime: "2019-02-19 23:59:59 (GMT+0800)"
+    platforms:
+      - android
+      - ios
+
 #tagInfos
 tagInfos:
   0: # Daily
