@@ -142,10 +142,6 @@ func parseKeyVal(input string) map[string]string {
 func gitDiff() {
 
 	folder := fmt.Sprintf("configs_%s", slackUserID)
-	// If folder exists, remove it
-	if _, err := os.Stat(folder); !os.IsNotExist(err) {
-		execCommand("./", "rm", []string{"-fr", folder})
-	}
 
 	// git clone
 	execCommand("./", "git", []string{"clone", gitURL, folder})
@@ -310,7 +306,7 @@ func gitDiff() {
 		execCommand(folder, "git", []string{"commit", "-m", commitMsg})
 
 		// push commit change back to `17media/configs`
-		// please not that it is a **force push** command
+		// please note that it is a **force push** command
 		execCommand(folder, "git", []string{"push", "origin", gitBranch + "_" + folder, "--force"})
 	}
 
@@ -328,8 +324,6 @@ func mergePush() {
 
 	// cleanup remote branch after merge succeed
 	execCommand(folder, "git", []string{"push", "origin", "--delete", gitBranch + "_" + folder})
-
-	execCommand("./", "rm", []string{"-fr", folder})
 
 	attachments := []slack.Attachment{slack.Attachment{
 		Fallback: "i18n pushed to github\n should be apply in few minutes",

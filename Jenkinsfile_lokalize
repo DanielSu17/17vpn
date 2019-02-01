@@ -60,21 +60,22 @@ node { timestamps { ansiColor('xterm') {
   env.PATH = "${WORKSPACE}/go/bin:${env.GOPATH}/bin:${WORKSPACE}/bin:${env.PATH}"
 
   stage('Setup Environment') {
-    if (! fileExists("${env.GOPATH}")) {
-      // setup binary output directory
-      sh("mkdir -p ${WORKSPACE}/bin")
-      sh("mkdir -p ${env.GOPATH}")
+    // Cleanup workspace before job start
+    deleteDir()
 
-      // setup environment for golang
-      def goVersion = "1.11.1"
-      def goBinary = "go${goVersion}.linux-amd64.tar.gz"
-      def goURL = "https://storage.googleapis.com/golang/${goBinary}"
-      sh("curl ${goURL} | tar zxf - -C ${WORKSPACE}")
-      sh("go version")
+    // setup binary output directory
+    sh("mkdir -p ${WORKSPACE}/bin")
+    sh("mkdir -p ${env.GOPATH}")
 
-      // setup govendor
-      sh("go get -u github.com/kardianos/govendor")
-    }
+    // setup environment for golang
+    def goVersion = "1.11.1"
+    def goBinary = "go${goVersion}.linux-amd64.tar.gz"
+    def goURL = "https://storage.googleapis.com/golang/${goBinary}"
+    sh("curl ${goURL} | tar zxf - -C ${WORKSPACE}")
+    sh("go version")
+
+    // setup govendor
+    sh("go get -u github.com/kardianos/govendor")
   } // end of stage
 
   stage('Git Checkout') {
