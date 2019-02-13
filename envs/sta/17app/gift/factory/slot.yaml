@@ -8,12 +8,12 @@ gift_bag_lotto: # giftID for this slot gift
     TW: 你送禮，17幫你額外撥點抽獎！有機會獨得所有點數!
   initialAmount: 20000 # initial points in jackpot
   increasePercentage: 10 # percentage of the gift point will put into jackpot
-  drawExpectation: 50  # expectation point for each draw
+  drawExpectation: 990  # expectation point for each draw
   mustHitAmount: 3847560 # when jackpot amount bigger than mustHitAmount, then hit the jackpot
   i18nTokenKey: SLOT_JACKPOT_MSG # key(string) for i18n.Tokenize
   slotTab: 1 # type: slot
-  lock: false
-  lockCountDownAmount: 100
+  lock: true
+  lockCountDownAmount: 2
 
 treasurebox_brass_lotto: # giftID for this treasure chest gift
   hitGiftIDs: ["treasure_box_brass_win"]
