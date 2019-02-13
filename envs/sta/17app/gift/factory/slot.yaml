@@ -24,13 +24,13 @@ treasurebox_brass_lotto: # giftID for this treasure chest gift
     TW: 你送禮，17幫你額外撥點抽獎！有機會獲得所有點數！
   initialAmount: 10000 # initial points in jackpot
   increasePercentage: 6 # percentage of the gift point will put into jackpot
-  drawExpectation: 1  # expectation point for each draw
-  mustHitAmount: 9429852
+  drawExpectation: 80  # expectation point for each draw
+  mustHitAmount: 1000000
   # when jackpot amount bigger than mustHitAmount, then hit the jackpot
   i18nTokenKey: treasure_chest_global_jackpot_BE # key(string) for i18n.Tokenize
   slotTab: 2 # type: treasure chest
-  lock: false
-  lockCountDownAmount: 100
+  lock: true
+  lockCountDownAmount: 3
 
 treasurebox_bronze_lotto: # giftID for this treasure chest gift
   hitGiftIDs: ["treasure_box_bronze_win"]
@@ -75,12 +75,12 @@ treasurebox_platinum_lotto: # giftID for this treasure chest gift
   initialAmount: 1000000 # initial points in jackpot
   increasePercentage: 12 # percentage of the gift point will put into jackpot
   # FIXME: super high expectation for QA
-  drawExpectation: 1  # expectation point for each draw
-  mustHitAmount: 12482947 #30718720  # when jackpot amount bigger than mustHitAmount, then hit the jackpot
+  drawExpectation: 80  # expectation point for each draw
+  mustHitAmount: 1000000 #30718720  # when jackpot amount bigger than mustHitAmount, then hit the jackpot
   i18nTokenKey: treasure_chest_global_jackpot_BE # key(string) for i18n.Tokenize
   slotTab: 2 # type: treasure chest
   lock: true #false
-  lockCountDownAmount: 100
+  lockCountDownAmount: 1
 
 treasurebox_jp_brass_lotto: # giftID for this treasure chest gift
   hitGiftIDs: ["treasurebox_jp_brass_win"]
