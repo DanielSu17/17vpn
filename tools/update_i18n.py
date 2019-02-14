@@ -19,10 +19,11 @@ class I18nJsonWriter:
     separators=(',', ': ')
 
     # file related
-    path = "../envs/%s/17app/i18n/%s/%s.json"
+    path = "../envs/%s/%s/i18n/%s/%s.json"
 
-    def __init__(self, i18n_dict):
+    def __init__(self, i18n_dict, project):
         self.i18n_dict = i18n_dict
+        self.project = project
 
     def prepare_data(self, data, param_prefix):
         """
@@ -57,7 +58,7 @@ class I18nJsonWriter:
         for env in envs:
             for lang, value in self.i18n_dict.iteritems():
                 data_str = self.prepare_data(value, param_prefix)
-                full_path = self.path % (env, lang.lower(), base_name)
+                full_path = self.path % (env, self.project, lang.lower(), base_name)
 
                 self.write_file(full_path, data_str)
 
@@ -147,9 +148,17 @@ if __name__=="__main__":
         sys.exit(1)
 
     lc = LokaliseClient(LOKALIZE_TOKEN)
+    # Write backend.json for zoo
+    p_id = lc.get_project_id_by_name("zoo")
+    iw = I18nJsonWriter(lc.get_all_strings(p_id), "zoo")
+    iw.write_data(env, "backend")
+
+    # get_all_strings This method allows one request per 5 seconds
+    time.sleep(5)
+
     # Write backend.json
     p_id = lc.get_project_id_by_name("17.backend")
-    iw = I18nJsonWriter(lc.get_all_strings(p_id))
+    iw = I18nJsonWriter(lc.get_all_strings(p_id), "17app")
     iw.write_data(env, "backend")
 
     # get_all_strings This method allows one request per 5 seconds
@@ -157,6 +166,6 @@ if __name__=="__main__":
 
     # Write ios.json and android.json
     p_id = lc.get_project_id_by_name("17.backend(client)")
-    iw = I18nJsonWriter(lc.get_all_strings(p_id))
+    iw = I18nJsonWriter(lc.get_all_strings(p_id), "17app")
     iw.write_data(env, "ios", param_prefix=r'%\1$@')
     iw.write_data(env, "android", param_prefix=r'%\1$s')
