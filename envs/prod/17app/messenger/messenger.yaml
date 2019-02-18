@@ -1,8 +1,8 @@
 # this file is designed a add-on configuration for clients
-# to grab {{ sampleRate }} of message
+# to sampling one from {{ sampleRate }} messages
 #
 # for example, if clients define 100 messages per package,
-# then they shall sample 100 x {{ sampleRate }} and
+# then they shall sample int(100 / {{ sampleRate }}) and
 # send to backend for metrics
 
-sampleRate: 0.5
+sampleRate: 10
