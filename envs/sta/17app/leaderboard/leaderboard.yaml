@@ -11,3 +11,21 @@ regions:
   - MY
   - US
 useShardTable: false
+regionBoards: #regionBoards define each region board's order
+  TW: [1, 2, 23, 18, 15, 16, 5, 3]
+  JP: [1, 2, 23, 18, 15, 5, 3]
+  HK: [1, 2, 23, 18, 15, 5, 3]
+  MY: [1, 2, 23, 18, 15, 5, 3]
+  US: [1, 2, 23, 18, 15, 5, 3]
+  OTHERS: [1, 2, 23, 18, 5, 3]
+
+# find all region board enum in protos/models/leaderboard/leaderboard.proto
+# boards shown in app leaderboard page
+# 1:收禮
+# 2:送禮
+# 23:榮耀之路
+# 18:開播時數
+# 15:戰隊
+# 16:陪伴
+# 5:愛心
+# 3:幫派
