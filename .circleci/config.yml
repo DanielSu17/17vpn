@@ -10,7 +10,7 @@ references:
     environment:
       TZ: "/usr/share/zoneinfo/Asia/Taipei"
     docker:
-      - image: circleci/python:2.7
+      - image: circleci/python:3.7
 
   tag_filter_pr_build: &tag_filter_pr_build
     filters:
@@ -27,15 +27,12 @@ jobs:
           name: syntax check
           command: |
             sudo pip install -r ./circle/requirements.txt
+            echo "syntax check - start"
             ./circle/syntax_checker.py
-            echo "ok"
+            echo "syntax check - end"
   deploy:
     <<: *default
     steps:
-      # - run:
-      #     name: deliver configuration to AWS
-      #     command: |
-      #       curl "${DEPLOY_URL}&REVISION=${CIRCLE_SHA1}"
       - run:
           name: deliver configuration to GCP
           command: |
