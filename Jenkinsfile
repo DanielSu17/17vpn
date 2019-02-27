@@ -34,6 +34,18 @@ def etcdServiceEndpointsProdLit = [
     'http://35.194.146.236:2379',
 ]
 
+def etcdServiceEndpointsStagZoo = [
+    'http://34.80.37.202:2379',
+    'http://34.80.57.68:2379',
+    'http://34.80.57.203:2379',
+]
+
+def etcdServiceEndpointsProdZoo = [
+    'http://34.80.37.202:2379',
+    'http://34.80.57.68:2379',
+    'http://34.80.57.203:2379',
+]
+
 
 properties([
     buildDiscarder(
@@ -79,6 +91,18 @@ properties([
             name: 'ENSEMBLEIPS_LIT_PROD',
             trim: true
         ),
+        string(
+            defaultValue: etcdServiceEndpointsStagZoo.join(','),
+            description: 'ETCD Service Endpoints List for the Zoo Service (Staging)',
+            name: 'ENSEMBLEIPS_ZOO_STA',
+            trim: true
+        ),
+        string(
+            defaultValue: etcdServiceEndpointsProdZoo.join(','),
+            description: 'ETCD Service Endpoints List for the Zoo Service (Production)',
+            name: 'ENSEMBLEIPS_ZOO_PROD',
+            trim: true
+        ),
         booleanParam(
             defaultValue: false,
             description: 'Refresh pushToEtcd-linux?',
@@ -122,6 +146,14 @@ node { timestamps { ansiColor('xterm') {
 
     if (params.ENSEMBLEIPS_LIT_PROD.length() <= 0) {
         error('invalid etcd cluster endpoints input (lit prod)')
+    }
+
+    if (params.ENSEMBLEIPS_ZOO_STA.length() <= 0) {
+        error('invalid etcd cluster endpoints input (zoo stag)')
+    }
+
+    if (params.ENSEMBLEIPS_ZOO_PROD.length() <= 0) {
+        error('invalid etcd cluster endpoints input (zoo prod)')
     }
   } // end of stage
 
