@@ -9,9 +9,13 @@
 stage: 0
 
 depositFeeRatio: 0.02 # 0 ~ 1
+# contractor is eligible for being able to deduct the fee,
+# if endTime of the latest contract is over 'deductFeeEligibleMonths' than now
+deductFeeEligibleMonths: 6
+
 # i18n keys used in bbfu's deposit page
-feeDescriptionI18nKey:
-deductFeeConditionI18nKey:
+feeDescriptionI18nKey: "bbfu_transfer_amount_charge_fee_desc"
+deductFeeConditionI18nKey: "bbfu_transfer_amount_charge_fee_deduction_desc"
 
 whiteList:
   
