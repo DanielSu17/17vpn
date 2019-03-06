@@ -8,14 +8,14 @@
 #    users in whitelist and eligible streamers can see entry of bbfu
 stage: 0
 
-depositFeeRatio: 0.02 # 0 ~ 1
-# contractor is eligible for being able to deduct the fee,
-# if endTime of the latest contract is over 'deductFeeEligibleMonths' than now
-deductFeeEligibleMonths: 6
-
-# i18n keys used in bbfu's deposit page
-feeDescriptionI18nKey: "bbfu_transfer_amount_charge_fee_desc"
-deductFeeConditionI18nKey: "bbfu_transfer_amount_charge_fee_deduction_desc"
-
 whiteList:
+
+depositInfo:
+  feeRatio: 0.02 # 0 ~ 1
+  # contractor is eligible for being able to deduct the fee when depositing,
+  # if endTime of the latest contract is over 'deductFeeEligibleDays' than now
+  deductFeeEligibleDays: 180
+  # i18n keys used in bbfu's deposit page
+  feeDescriptionI18nKey: "bbfu_transfer_amount_charge_fee_desc"
+  deductFeeConditionI18nKey: "bbfu_transfer_amount_charge_fee_deduction_desc"
   
