@@ -1,0 +1,34 @@
+# Poll setting
+# MUST make sure that corresponding gift ids exist in gift database
+# In this case, they should be poll_option_{a|b|c|d|e}_{30|49|99|199|399|599|3999} by the value of giftIDTempalte
+minTTL: 5
+maxTTL: 60
+maxTitleDescLen: 20
+maxOptDescLen: 10
+minOptionCount: 2
+maxOptionCount: 5
+freeVoteEnable: false
+freeVoteWhitelist: []
+availableLimit:
+  mins: 1
+  count: 5
+freeVoteAndroidVersion: 2.3.66
+freeVoteIOSVersion: 3.43.0
+defaultPrice: 99
+availablePrice:
+  30:
+  49:
+  99:
+  199:
+  399:
+  599:
+  3999:
+availableOptionID:
+  - poll_option_a
+  - poll_option_b
+  - poll_option_c
+  - poll_option_d
+  - poll_option_e
+giftIDTemplate: '{{.OptionID}}_{{.Price}}'
+userPrice:
+  e3c4c804-8a9c-4b7c-8026-0a8ed602b42c: 49  # jen87go
