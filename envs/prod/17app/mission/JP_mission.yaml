@@ -51,50 +51,6 @@ missions:
       - android
       - ios
 
-  - ID: 4fe9a4d5-e371-4320-b492-ed14cef902cb
-    type: 8 #IAP
-    reward:
-      rewardType: 1
-      rewardID: "1902_jp_shinken4_up"
-      amount: 1
-      expireTimeSecs: 86400 # 1 day
-    i18nTitle: "baggage_mission_first_time_IAP_reward_jp_event_title"
-    i18nTitleParams:
-    i18nContent: "baggage_mission_first_time_IAP_reward_jp_event_des"
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: "gift_1902_jp_shinken4_up"
-    goalValue: 1
-    enableTimeRange:
-      - startTime: "2019-02-15 19:00:00 (GMT+0900)"
-        endTime: "2019-02-27 23:59:59 (GMT+0900)"
-    platforms:
-      - android
-      - ios
-
-  - ID: 64a2d013-0df2-4c3b-944e-34e17ad64b38
-    type: 8 #IAP
-    reward:
-      rewardType: 1
-      rewardID: "1903_jp_new_livers_bp_10"
-      amount: 1
-      expireTimeSecs: 86400 # 1 day
-    i18nTitle: "baggage_mission_first_time_IAP_reward_jp_event_title"
-    i18nTitleParams:
-    i18nContent: "baggage_mission_first_time_IAP_reward_jp_event_des"
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: "gift_1903_jp_new_livers_bp_10"
-    goalValue: 1
-    enableTimeRange:
-      - startTime: "2019-03-01 19:00:00 (GMT+0900)"
-        endTime: "2019-03-14 23:59:59 (GMT+0900)"
-    platforms:
-      - android
-      - ios
-
   - ID: f583d0c9-45a9-44d1-8698-552898e1156c
     type: 5 #Comment_In_Livestream
     reward:
@@ -531,6 +487,28 @@ missions:
     enableTimeRange:
       - startTime: "2019-03-18 00:00:00 (GMT+0900)"
         endTime: "2019-03-24 23:59:59 (GMT+0900)"
+    platforms:
+      - android
+      - ios
+
+  - ID: b52bb1ba-0d4e-4fcb-bea1-bf30e3540608
+    type: 8 #IAP
+    reward:
+      rewardType: 1
+      rewardID: "1903_jp_shinken_bp_10"
+      amount: 1
+      expireTimeSecs: 86400
+    i18nTitle: "baggage_mission_first_time_IAP_reward_jp_event_title"
+    i18nTitleParams:
+    i18nContent: "baggage_mission_first_time_IAP_reward_jp_event_des"
+    i18nContentParams:
+      - needMap: true
+        mapOption: 1
+        value: "gift_1903_jp_shinken_bp_10"
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2019-03-17 19:00:00 (GMT+0900)"
+        endTime: "2019-03-30 23:59:59 (GMT+0900)"
     platforms:
       - android
       - ios
@@ -1389,6 +1367,36 @@ supportedVersion:
 #   enableTimeRange:
 #     - startTime: "2019-02-18 00:00:00 (GMT+0900)"
 #       endTime: "2019-02-24 23:59:59 (GMT+0900)"
+#   platforms:
+#     - android
+#     - ios
+
+# - ID: 4fe9a4d5-e371-4320-b492-ed14cef902cb
+#   type: 8 #IAP
+#   reward:
+#     rewardType: 1
+#     rewardID: "1902_jp_shinken4_up"
+#     amount: 1
+#     expireTimeSecs: 86400 # 1 day
+#   goalValue: 1
+#   enableTimeRange:
+#     - startTime: "2019-02-15 19:00:00 (GMT+0900)"
+#       endTime: "2019-02-27 23:59:59 (GMT+0900)"
+#   platforms:
+#     - android
+#     - ios
+
+# - ID: 64a2d013-0df2-4c3b-944e-34e17ad64b38
+#   type: 8 #IAP
+#   reward:
+#     rewardType: 1
+#     rewardID: "1903_jp_new_livers_bp_10"
+#     amount: 1
+#     expireTimeSecs: 86400 # 1 day
+#   goalValue: 1
+#   enableTimeRange:
+#     - startTime: "2019-03-01 19:00:00 (GMT+0900)"
+#       endTime: "2019-03-14 23:59:59 (GMT+0900)"
 #   platforms:
 #     - android
 #     - ios
