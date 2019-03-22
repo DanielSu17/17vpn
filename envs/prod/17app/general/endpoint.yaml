@@ -1,8 +1,15 @@
 # https://github.com/17media/wiki/blob/master/pages/Backend/service-endpoints.md
+#
+# type is enum to distinguish the environments
+#   0: dev
+#   1: staging
+#   2: production
 - name: prod
   url: https://api-dsa.17app.co
+  type: 2
 - name: stag
   url: https://sta-api.17app.co
+  type: 1
 - name: 17q
   url: http://54.202.58.18:8001
 - name: dev5 (jonas)
