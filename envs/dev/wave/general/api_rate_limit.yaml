@@ -1,0 +1,8 @@
+# NOTE
+# details can be found in service/tokenbucket/helper
+rate_limits:
+- url: "/api/v1/playlist/.*/play"
+  method: "POST"
+  flow_per_second: 1
+  reservoir_size: 2
+  scope: by_access_token
