@@ -43,7 +43,8 @@ treasurebox_golden_lotto: # giftID for this treasure chest gift
   mustHitAmount: <SECRET_TAG>CiQAOHuFgHeA6tH4sqp6RGhsSRRJ0lVvNX+WlmYLLc2ux80iIbYSMgCdNR9A2ztRSVghncadaWeX543x6EiafxErFSfA1GhNR1R+PLv8qD0XTSI5JcTaQ2LE</SECRET_TAG> # when jackpot amount bigger than mustHitAmount, then hit the jackpot
   i18nTokenKey: treasure_chest_global_jackpot_BE # key(string) for i18n.Tokenize
   slotTab: 2 # type: treasure chest
-  lock: false
+  lock: true
+  lockCountDownAmount: 1
 
 treasurebox_platinum_lotto: # giftID for this treasure chest gift
   hitGiftIDs: ["treasure_box_platinum_win"]
