@@ -10,6 +10,8 @@
 # minHitPoints: minimum accumulated amount to pay-out (1/denominator)
 # mustHitPoints: must pay-out (100%) if accumulated amount more than mustHitPoints
 # lottoProbability: denominator of luckydraw probability, numerator is always 1, ex, 1/5000
+# topBannerSwitch: decide to enable or disable a banner with switch on top of giftbox.
+#                  be aware! this switch is only valid when luckyDraw feature is turned on.
 #
 minGiftPoints: 30
 maxGiftPoints: 1000000
@@ -40,3 +42,8 @@ disableLuckyDrawI18n:
 supportedVersion:
   android: "2.3.60"
   ios: "3.42.0"
+
+topBannerSwitch:
+  enable: false
+  descI18n:
+    key: 17_luckydraw_switch_hint
