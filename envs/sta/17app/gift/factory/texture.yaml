@@ -1,6 +1,45 @@
+# // | handGestureType | Value |
+# // | --- | --- |
+# // | Heart A | 1 |
+# // | Heart B | 2 |
+# // | Heart C | 3 |
+# // | Heart D | 4 |
+# // | OK | 5 |
+# // | Hand open | 6 |
+# // | Thumb up | 7 |
+# // | Thumb down | 8 |
+# // | Rock | 9 |
+# // | Namaste | 10 |
+# // | Palm up | 11 |
+# // | Fist | 12 |
+# // | Index finger up | 13 |
+# // | Double finger up | 14 |
+# // | Victory | 15 |
+# // | Big V | 16 |
+# // | Phonecall | 17 |
+# // | Beg | 18 |
+# // | Thanks | 19 |
+# doc: https://console.faceplusplus.com.cn/documents/10065685
+
+# // | animationDescType | Value |
+# // | --- | --- |
+# // | 全版 | 0 |
+# // | 正中間 | 1 |
+# // | 靠上 | 2 |
+# // | 靠右 | 3 |
+# // | 靠下 | 4 |
+# // | 靠左 | 5 |
+
 gestures:
   validTotalDurationMs: 20000 #millisecond
   # key is the giftID
   giftInfos:
     gift_gesture_love:
       hintI18nKey:
+      handGestureType:
+      animationDescs:
+        - type: 0
+          # clients take `referenceWidth` and `referenceHeight` as reference to decide the resolution of each animation
+          referenceWidth:
+          referenceHeight:
+      
