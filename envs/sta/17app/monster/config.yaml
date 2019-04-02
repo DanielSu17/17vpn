@@ -134,7 +134,7 @@ monsters:
   failureToken: {key: monster_battle_failure_kira,fontAttribute: {textColor: "#FFFFFF"}}
   successToken: {key: monster_battle_success_kira,fontAttribute: {textColor: "#FFFFFF"}}
 
-- id: monster_llama
+- id: monster_llama_kira
   hit_consume: 10
   duration: 60s
   stream_alive_threshold: 1m00s
@@ -154,7 +154,42 @@ monsters:
   - giftID: "1904_tw-racing_20"
     probability: 1000 # n / 10000 * 100%
   - giftID: "gift_lightstick_r"
+    probability: 10000 # n / 10000 * 100%
+  share_ratio: 50 # percentage
+  profit_ratio: 35 # percentage
+  bonus: 336
+  infoPageiconURL: https://assets-17app.akamaized.net/a0743416-7cad-43ea-b83d-4beec992c033.png
+  winnerPageiconURL: https://assets-17app.akamaized.net/617866c6-edb1-4168-b852-3515bc4f870a.png
+  hintToken: {key: monster_battle_summon_hint_llama,fontAttribute: {textColor: "#FFFFFF"}}
+  rule1Token: {key: monster_battle_summon_rule1_llama,fontAttribute: {textColor: "#FFFFFF"}}
+  rule2Token: {key: monster_battle_summon_rule2_llama,fontAttribute: {textColor: "#FFFFFF"}}
+  rule3Token: {key: monster_battle_summon_rule3_llama,fontAttribute: {textColor: "#FFFFFF"}}
+  rule4Token: {key: monster_battle_summon_rule4_llama,fontAttribute: {textColor: "#FFFFFF"}}
+  countdownToken: {key: monster_battle_summon_countdown_llama,fontAttribute: {textColor: "#FFFFFF"}}
+  failureToken: {key: monster_battle_summon_failure_llama,fontAttribute: {textColor: "#FFFFFF"}}
+  successToken: {key: monster_battle_summon_success_llama,fontAttribute: {textColor: "#FFFFFF"}}
+
+- id: monster_llama
+  hit_consume: 10
+  duration: 60s
+  stream_alive_threshold: 1m00s
+  animation: goldenalpaca
+  available_dates:
+  - start_date: "2019-01-01T00:00:00+08:00"
+    end_date: "2019-04-14T00:00:00+08:00"
+  appear_durations:
+  - start_time: 00h00m00s
+    end_time: 24h00m00s
+  type: 1
+  summonGifts:
+  - giftID: "1904_tw-racing_2000"
+    probability: 9000 # n / 10000 * 100%
+  - giftID: "1904_tw-racing_200"
     probability: 5000 # n / 10000 * 100%
+  - giftID: "1904_tw-racing_20"
+    probability: 1000 # n / 10000 * 100%
+  - giftID: "gift_lightstick_g"
+    probability: 10000 # n / 10000 * 100%
   share_ratio: 50 # percentage
   profit_ratio: 35 # percentage
   bonus: 336
@@ -304,7 +339,7 @@ animationLoader:
   webpUrl: https://assets-17app.akamaized.net/12c42efc-8d2c-454d-9b48-503781bd429f-q90-s1.webp
   animationID: goldenalpaca_enter
   MD5: 112db9ffb8185b01455e29603aae1fd3
-  webpMD5: a5d85d9bc7a3093663543e12c88e999a
+  webpMD5: 61dd7566d58935a30d1b7b07db61c2d3
 - url: https://assets-17app.akamaized.net/44775209-6b22-424f-ae00-1f0a3804a79b.zip
   webpUrl: https://assets-17app.akamaized.net/b48f5bb1-acfe-4138-a8f4-fb70e9f84263-q90-s1.webp
   animationID: goldenalpaca_failure
