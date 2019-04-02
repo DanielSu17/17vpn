@@ -21,14 +21,14 @@
 # // | Thanks | 19 |
 # doc: https://console.faceplusplus.com.cn/documents/10065685
 
-# // | animationDescType | Value |
+# // | gestureAnimDescType | Value |
 # // | --- | --- |
-# // | 全版 | 0 |
-# // | 正中間 | 1 |
-# // | 靠上 | 2 |
-# // | 靠右 | 3 |
-# // | 靠下 | 4 |
-# // | 靠左 | 5 |
+# // | FullScreen | 0 |
+# // | Center | 1 |
+# // | Align up | 2 |
+# // | Align right | 3 |
+# // | Align down | 4 |
+# // | Align left | 5 |
 
 gestures:
   validTotalDurationMs: 20000 #millisecond
@@ -37,7 +37,7 @@ gestures:
     gift_gesture_love:
       hintI18nKey:
       handGestureType:
-      animationDescs:
+      gestureAnimDescs:
         - type: 0
           # clients take `referenceWidth` and `referenceHeight` as reference to decide the resolution of each animation
           referenceWidth:
