@@ -11,9 +11,11 @@
 #                be awared, in PROD environment, this field should be wrapped by "SECRET_TAG"
 #                to protect this sensitive information
 # i18nTokenKey: key(string) for i18n.Tokenize
-# slotTab: kinds of tabs.
+# slotTab: kinds of slot gifts. main purpose is to let clients know how to represent the
+#          UI/UX according to the type of slot gifts
 #          1 means slot
 #          2 means treasure chest
+#          3 means axe treasure gifts.
 # lock: when it equals to true, then we start to count down by "lockCountDownAmount".
 #       after count down to 0, shutdown this slot gift.
 # lockCountDownAmount: how many times the gift can be winned after "lock" is turned on.
@@ -187,7 +189,7 @@ treasure_box_silver_axe:
   drawExpectation: 37
   mustHitAmount: 100000000
   i18nTokenKey: treasure_chest_global_axe_BE
-  slotTab: 2
+  slotTab: 3
   lock: false
   contributionType: 2
   poolRatio: 10
@@ -202,7 +204,7 @@ treasure_box_golden_axe:
   drawExpectation: 200
   mustHitAmount: 100000000
   i18nTokenKey: treasure_chest_global_axe_BE
-  slotTab: 2
+  slotTab: 3
   lock: false
   contributionType: 2
   poolRatio: 6
@@ -217,7 +219,7 @@ treasure_box_platinum_axe:
   drawExpectation: 490
   mustHitAmount: 100000000
   i18nTokenKey: treasure_chest_global_axe_BE
-  slotTab: 2
+  slotTab: 3
   lock: false
   contributionType: 2
   poolRatio: 12
