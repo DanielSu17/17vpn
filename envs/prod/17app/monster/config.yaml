@@ -124,6 +124,34 @@ monsters:
   countdownToken: {key: monster_battle_summon_countdown_nian,fontAttribute: {textColor: "#FFFFFF"}}
   failureToken: {key: monster_battle_summon_failure_nian,fontAttribute: {textColor: "#FFFFFF"}}
   successToken: {key: monster_battle_summon_success_nian,fontAttribute: {textColor: "#FFFFFF"}}
+
+- id: monster_llama
+  hit_consume: 10
+  duration: 60s
+  stream_alive_threshold: 1m00s
+  animation: goldenalpaca
+  appear_durations:
+  - start_time: 00h00m00s
+    end_time: 24h00m00s
+  type: 1
+  summonGifts:
+  - giftID: "1904_tw-racing_2000"
+    probability: 2000 # n / 10000 * 100%
+  - giftID: "1904_tw-racing_200"
+    probability: 200 # n / 10000 * 100%
+  share_ratio: 50 # percentage
+  profit_ratio: 35 # percentage
+  bonus: 336
+  infoPageiconURL: https://assets-17app.akamaized.net/a0743416-7cad-43ea-b83d-4beec992c033.png
+  winnerPageiconURL: https://assets-17app.akamaized.net/617866c6-edb1-4168-b852-3515bc4f870a.png
+  hintToken: {key: monster_battle_summon_hint_llama,fontAttribute: {textColor: "#FFFFFF"}}
+  rule1Token: {key: monster_battle_summon_rule1_llama,fontAttribute: {textColor: "#FFFFFF"}}
+  rule2Token: {key: monster_battle_summon_rule2_llama,fontAttribute: {textColor: "#FFFFFF"}}
+  rule3Token: {key: monster_battle_summon_rule3_llama,fontAttribute: {textColor: "#FFFFFF"}}
+  rule4Token: {key: monster_battle_summon_rule4_llama,fontAttribute: {textColor: "#FFFFFF"}}
+  countdownToken: {key: monster_battle_summon_countdown_llama,fontAttribute: {textColor: "#FFFFFF"}}
+  failureToken: {key: monster_battle_summon_failure_llama,fontAttribute: {textColor: "#FFFFFF"}}
+  successToken: {key: monster_battle_summon_success_llama,fontAttribute: {textColor: "#FFFFFF"}}
   
 animationLoader:
 - url: https://assets-17app.akamaized.net/98b26445-2625-49a5-a541-ddf6a0256c00.zip
@@ -251,3 +279,28 @@ animationLoader:
   animationID: kira_success
   MD5: 72c5175da5bf681e9ea290b4dd11bdae
   webpMD5: ca68f77bc82a34e82db0d90fd57040b4
+- url: https://assets-17app.akamaized.net/b12521bd-6018-41b6-968c-80c23f8a01f8.zip
+  webpUrl: https://assets-17app.akamaized.net/1169b458-309f-43c5-9988-1e966266886e-q90-s1.webp
+  animationID: goldenalpaca_attack
+  MD5: 21deb893a70ddd28dba47099a7e0bc03
+  webpMD5: e24007500f13002c4089f7a7a0dd2062
+- url: https://assets-17app.akamaized.net/3940e2d6-ee58-4fe2-be6a-5eee09d58532.zip
+  webpUrl: https://assets-17app.akamaized.net/12c42efc-8d2c-454d-9b48-503781bd429f-q90-s1.webp
+  animationID: goldenalpaca_enter
+  MD5: ca20a3f7f5ce26210111fef155bcdc18
+  webpMD5: 61dd7566d58935a30d1b7b07db61c2d3
+- url: https://assets-17app.akamaized.net/8b48742f-d6f5-490b-a382-aa875b854100.zip
+  webpUrl: https://assets-17app.akamaized.net/b48f5bb1-acfe-4138-a8f4-fb70e9f84263-q90-s1.webp
+  animationID: goldenalpaca_failure
+  MD5: 298e95fce1b65c06e0355597faec5771
+  webpMD5: e02ffb150e68b21b5629c74d315aaff0
+- url: https://assets-17app.akamaized.net/6a68e43e-0ad8-4465-9637-deb737c38a79.zip
+  webpUrl: https://assets-17app.akamaized.net/db5d66d9-0b5c-4247-8e1d-3008e823959e-q90-s1.webp
+  animationID: goldenalpaca_idle
+  MD5: 7aa12ebdf55122185f31af9e0f76ad42
+  webpMD5: 84a7f151b09de675aeaffa8b2b319488
+- url: https://assets-17app.akamaized.net/29d7c11b-1077-45cd-bf64-aab62173cadf.zip
+  webpUrl: https://assets-17app.akamaized.net/7b777c13-2019-4c0b-84aa-fcc73f4e1277-q90-s1.webp
+  animationID: goldenalpaca_success
+  MD5: 38c464b954b754a814d1023e0a583993
+  webpMD5: 0786e16953a715c9747e90de1c5783b1
