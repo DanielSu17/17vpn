@@ -313,6 +313,10 @@ func gitDiff() {
 func mergePush() {
 	branch_suffix := fmt.Sprintf("configs_%s", slackUserID)
 
+	// set `user.name` and `user.email` before commit
+	execCommand("./", "git", []string{"config", "user.name", "Jenkins"})
+	execCommand("./", "git", []string{"config", "user.email", "no-reply@17.media"})
+
 	execCommand("./", "git", []string{"checkout", "master"})
 
 	execCommand("./", "git", []string{"merge", "origin/" + gitBranch + "_" + branch_suffix})
