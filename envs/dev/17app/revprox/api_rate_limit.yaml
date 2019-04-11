@@ -17,3 +17,21 @@
 #   scope: by_access_token
 
 rate_limits:
+- {url: "/api/v1/legacy/unfollowUserAction",                 method: "POST",    flow_per_second: 3,       reservoir_size: 3,    scope: by_access_token}
+
+#app/api/api/clip/clip.go:62:		apis.AddRateLimit(rl, apis.RateLimitClipLike, ratelimiter.Second, clipQPS,          apis.ByUser),
+#app/api/api/clip/clip.go:67:		apis.AddRateLimit(rl, apis.RateLimitClipView, ratelimiter.Second, clipQPS, 			apis.ByUser),
+#app/api/api/clip/clip.go:72:		apis.AddRateLimit(rl, apis.RateLimitClipVote, ratelimiter.Second, clipQPS, 			apis.ByUser),
+- {url: "/api/v1/clips/[A-Za-z0-9-]+/like",                  method: "POST",    flow_per_second: 20,      reservoir_size: 20,   scope: by_access_token}
+- {url: "/api/v1/clips/[A-Za-z0-9-]+/view",                  method: "POST",    flow_per_second: 20,      reservoir_size: 20,   scope: by_access_token}
+- {url: "/api/v1/clips/[A-Za-z0-9-]+/vote",                  method: "POST",    flow_per_second: 20,      reservoir_size: 20,   scope: by_access_token}
+
+#app/api/api/live/live.go:242:	apis.Handle(grg, "POST", "/qiniu/notification", apis.AddRateLimit(rl, apis.RateLimitQiniuNotif, ratelimiter.Minute, qiniuNotificationLimit, apis.ByUser), lh.qiniuNotif)
+#app/api/api/live/live.go:336:	apis.AddRateLimit(rl, apis.RateLimitKeepStream, ratelimiter.Second, keepStreamQPS, 	apis.ByUser),
+#app/api/api/live/live.go:399:	apis.AddRateLimit(rl, apis.RateLimitLiveSuspicious, ratelimiter.Minute, 1, apis.ByUser),
+- {url: "/api/v1/liveStreams/qiniu/notification",            method: "POST",    flow_per_second: 0.05,    reservoir_size: 3,    scope: by_access_token}
+- {url: "/api/v1/liveStreams/[A-Za-z0-9-]+/alive",           method: "POST",    flow_per_second: 1,       reservoir_size: 1,    scope: by_access_token}
+- {url: "/api/v1/liveStreams/suspicious",                    method: "GET",     flow_per_second: 0.0166,  reservoir_size: 1,    scope: by_access_token}
+
+#app/api/api/vote/vote.go:45:		apis.AddRateLimit(rl, apis.RateLimitVote,     ratelimiter.Second, doVoteQPS, 		apis.ByUser),
+- {url: "/api/v1/vote",                                      method: "POST",    flow_per_second: 5,       reservoir_size: 5,    scope: by_access_token}
