@@ -299,7 +299,7 @@ func gitDiff() {
 		// setting commit message
 		// slackUserID is used to metion user in slack deployment message at pushToEctd.go
 		// slackUserEmail is used to let people know who did this commit
-		commitMsg := fmt.Sprintf("[Misc] Update i18n\nslackUserEmail: %s\nslackUserID: %s", slackUserEmail, slackUserID)
+		commitMsg := fmt.Sprintf("[Misc] Update i18n - %s\n\nslackUserID: %s", slackUserEmail, slackUserID)
 		execCommand("./", "git", []string{"commit", "-m", commitMsg})
 
 		// push commit change back to `17media/configs`
