@@ -35,3 +35,34 @@ rate_limits:
 
 #app/api/api/vote/vote.go:45:		apis.AddRateLimit(rl, apis.RateLimitVote,     ratelimiter.Second, doVoteQPS, 		apis.ByUser),
 - {url: "/api/v1/vote",                                      method: "POST",    flow_per_second: 5,       reservoir_size: 5,    scope: by_access_token}
+
+#app/api/api/post/post.go:60:		apis.AddRateLimit(rl, apis.RateLimitPostView,                   ratelimiter.TenMinutes, 1,apis.ByIP),
+#app/api/api/post/post.go:66:		apis.AddRateLimit(rl, apis.RateLimitPostLike,                   ratelimiter.Hour, 10000,  apis.ByUser),
+#app/api/api/post/post.go:67:		apis.AddRateLimit(rl, apis.RateLimitPostLike,                   ratelimiter.Hour, 10000,  apis.ByIP),
+- {url: "/api/v1/post/viewPost",                                method: "POST",    flow_per_second: 0.00166,     reservoir_size: 1,     scope: by_ip}
+- {url: "/api/v1/post/likePostBatchUpdate",                     method: "POST",    flow_per_second: 2.778,       reservoir_size: 10000, scope: by_access_token}
+- {url: "/api/v1/post/likePostBatchUpdate",                     method: "POST",    flow_per_second: 2.778,       reservoir_size: 10000, scope: by_ip}
+
+#app/api/api/auth/auth.go:116:		apis.AddRateLimit(rl, apis.RateLimitIsPhoneNumberUsed,          ratelimiter.Minute, 5,    apis.ByIP),
+#app/api/api/auth/auth.go:121:		apis.AddRateLimit(rl, apis.RateLimitIsPhoneNumberOpenIDPaired,  ratelimiter.Minute, 5,    apis.ByIP),
+#app/api/api/auth/auth.go:126:		apis.AddRateLimit(rl, apis.RateLimitSendPhoneVerificationCode,  ratelimiter.Minute, 5, apis.ByIP),
+#app/api/api/auth/auth.go:132:		apis.AddRateLimit(rl, apis.RateLimitVerifySMSCode,              ratelimiter.Minute, 5, apis.ByIP),
+#app/api/api/auth/auth.go:141:		apis.AddRateLimit(rl, apis.RateLimitRegisterByPhoneAction,      ratelimiter.Minute, 5, apis.ByIP),
+#app/api/api/auth/auth.go:148:		apis.AddRateLimit(rl, apis.RateLimitPhoneRegister,              ratelimiter.Minute, 5, apis.ByIP),
+#app/api/api/auth/auth.go:167:		apis.AddRateLimit(rl, apis.RateLimitChangePhoneNumber,          ratelimiter.Minute, 5, apis.ByIP),
+#app/api/api/auth/auth.go:172:		apis.AddRateLimit(rl, apis.RateLimitCChangePhoneNumber,         ratelimiter.Minute, 5, apis.ByIP),
+#app/api/api/auth/auth.go:183:		apis.AddRateLimit(rl, apis.RateLimitPhoneRegister,              ratelimiter.Minute, 5, apis.ByIP),
+- {url: "/api/v1/auth/isPhoneNumberUsed",                       method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
+- {url: "/api/v1/auth/isPhoneNumberOpenIDPaired",               method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
+- {url: "/api/v1/auth/sendPhoneVerificationCode",               method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
+- {url: "/api/v1/auth/sms/verify",                              method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
+- {url: "/api/v1/auth/registerByPhoneAction",                   method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
+- {url: "/api/v1/auth/phone/register",                          method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
+- {url: "/api/v1/auth/changePhoneNumber",                       method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
+- {url: "/api/v1/auth/ChangePhoneNumber",                       method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
+- {url: "/api/v1/auth/checkNeedHumanTest",                      method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
+
+#app/api/api/cryptocurrency/cryptocurrency.go:73:		apis.AddRateLimit(rl, apis.RateLimitMithSendPhoneVerificationCode, ratelimiter.Minute, 5, apis.ByIP),
+#app/api/api/cryptocurrency/cryptocurrency.go:78:		apis.AddRateLimit(rl, apis.RateLimitMithVerifySMSCode, ratelimiter.Minute, 10, apis.ByIP),
+- {url: "/api/v1/cryptocurrency/mith/sendPhoneVerificationCode", method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
+- {url: "/api/v1/cryptocurrency/mith/sms/verify",                method: "POST",    flow_per_second: 0.167,       reservoir_size: 10,    scope: by_ip}
