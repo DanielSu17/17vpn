@@ -36,7 +36,7 @@ jobs:
       - run:
           name: deliver configuration to GCP
           command: |
-            curl "${DEPLOY_TO_GCP_URL}&REVISION=${CIRCLE_SHA1}"
+            curl -sSL --fail -w "%{http_code}\n" -o /dev/null "${DEPLOY_TO_GCP_URL}&REVISION=${CIRCLE_SHA1}"
 
 workflows:
   version: 2
