@@ -2,25 +2,30 @@ topics:
   - nameToken: "subtab_live_stream_option_recommand"
     name: "all"
     eventIDLimitation:
-    eventLimitationErrorMsg:
   - nameToken: "today_hot_topic" # only available in poll
     name: "today_hot_topic"
     eventIDLimitation:
     minLevel: 9999999
     maxLevel: 9999999
-  - nameToken: "subtab_live_stream_option_gossip"
-    name: "gossip"
+  - nameToken: "subtab_live_stream_option_gf2019"
+    name: "goldenFeather"
     eventIDLimitation:
-    eventLimitationErrorMsg:
+    minLevel: 0
+    maxLevel: 9999999
   - nameToken: "subtab_live_stream_option1"
     name: "chat"
     eventIDLimitation:
-    eventLimitationErrorMsg:
+    minLevel: 1
+    maxLevel: 144
   - nameToken: "subtab_live_stream_option2"
     name: "comedy"
     eventIDLimitation:
-    eventLimitationErrorMsg:
   - nameToken: "subtab_live_stream_option3"
     name: "talent"
     eventIDLimitation:
-    eventLimitationErrorMsg:
+
+getFromAdmin:
+  android: "2.3.75"
+  ios: "3.50.0"
+cellSubtabNameFromAdmin: true
+  
