@@ -11,9 +11,9 @@
 def slackWebhook = 'https://hooks.slack.com/services/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'
 
 def etcdServiceEndpointsStag = [
-    'http://104.199.215.240:2379',
-    'http://35.185.155.122:2379',
-    'http://35.234.10.65:2379',
+    'http://35.229.178.57:2379',
+    'http://35.194.226.164:2379',
+    'http://35.229.192.119:2379',
 ]
 
 def etcdServiceEndpointsProd= [
