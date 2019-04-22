@@ -75,3 +75,7 @@ rate_limits:
 - {url: "/api/v1/hashtags/search",                              method: "POST",    flow_per_second: 5,           reservoir_size: 5,     scope: by_access_token}
 #app/api/api/accompany/accompany.go:44:                apis.AddRateLimit(rl, apis.RateLimitAccompanyOrder, ratelimiter.Minute, 5, apis.ByUser),
 - {url: "/api/v1/accompany/order",                              method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_access_token}
+
+#app/api/api/gift/gift.go:126:		apis.AddRateLimit(rl, apis.RateLimitSendGift, ratelimiter.Second, sendGiftQPS, apis.ByUser),
+- {url: "/api/v1/gift/giftbox",                                 method: "POST",    flow_per_second: 20,          reservoir_size: 20,    scope: by_access_token}
+
