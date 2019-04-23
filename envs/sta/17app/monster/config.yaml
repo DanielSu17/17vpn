@@ -169,40 +169,76 @@ monsters:
   failureToken: {key: monster_battle_summon_failure_llama,fontAttribute: {textColor: "#FFFFFF"}}
   successToken: {key: monster_battle_summon_success_llama,fontAttribute: {textColor: "#FFFFFF"}}
 
-- id: monster_llama
+
+- id: monster_sharpshooter
   hit_consume: 10
   duration: 60s
   stream_alive_threshold: 1m00s
-  animation: goldenalpaca
+  animation: cowboy
   available_dates:
   - start_date: "2019-01-01T00:00:00+08:00"
-    end_date: "2019-04-14T00:00:00+08:00"
+    end_date: "2019-05-14T00:00:00+08:00"
   appear_durations:
   - start_time: 00h00m00s
     end_time: 24h00m00s
   type: 1
   summonGifts:
-  - giftID: "1904_tw_racing_2000"
+  - giftID: "1904_tw_cowboy_20000"
     probability: 2000 # n / 10000 * 100%
-  - giftID: "1904_tw_racing_200"
+  - giftID: "1904_tw_cowboy_2000"
     probability: 200 # n / 10000 * 100%
-  - giftID: "1904_tw_racing_20"
+  - giftID: "1904_tw_cowboy_200"
     probability: 1000 # n / 10000 * 100%
   - giftID: "gift_lightstick_g"
     probability: 10000 # n / 10000 * 100%
   share_ratio: 50 # percentage
   profit_ratio: 35 # percentage
   bonus: 336
-  infoPageiconURL: https://assets-17app.akamaized.net/a0743416-7cad-43ea-b83d-4beec992c033.png
-  winnerPageiconURL: https://assets-17app.akamaized.net/617866c6-edb1-4168-b852-3515bc4f870a.png
-  hintToken: {key: monster_battle_summon_hint_llama,fontAttribute: {textColor: "#FFFFFF"}}
-  rule1Token: {key: monster_battle_summon_rule1_llama,fontAttribute: {textColor: "#FFFFFF"}}
-  rule2Token: {key: monster_battle_summon_rule2_llama,fontAttribute: {textColor: "#FFFFFF"}}
-  rule3Token: {key: monster_battle_summon_rule3_llama,fontAttribute: {textColor: "#FFFFFF"}}
-  rule4Token: {key: monster_battle_summon_rule4_llama,fontAttribute: {textColor: "#FFFFFF"}}
-  countdownToken: {key: monster_battle_summon_countdown_llama,fontAttribute: {textColor: "#FFFFFF"}}
-  failureToken: {key: monster_battle_summon_failure_llama,fontAttribute: {textColor: "#FFFFFF"}}
-  successToken: {key: monster_battle_summon_success_llama,fontAttribute: {textColor: "#FFFFFF"}}
+  infoPageiconURL: https://assets-17app.akamaized.net/2eaf753e-20d3-429e-a172-eb14c44e21dc.png
+  winnerPageiconURL: https://assets-17app.akamaized.net/bd258999-59b2-4170-91e6-649dac5a1356.png
+  hintToken: {key: monster_battle_summon_hint_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+  rule1Token: {key: monster_battle_summon_rule1_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+  rule2Token: {key: monster_battle_summon_rule2_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+  rule3Token: {key: monster_battle_summon_rule3_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+  rule4Token: {key: monster_battle_summon_rule4_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+  countdownToken: {key: monster_battle_summon_countdown_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+  failureToken: {key: monster_battle_summon_failure_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+  successToken: {key: monster_battle_summon_success_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+
+# - id: monster_llama
+#   hit_consume: 10
+#   duration: 60s
+#   stream_alive_threshold: 1m00s
+#   animation: goldenalpaca
+#   available_dates:
+#   - start_date: "2019-01-01T00:00:00+08:00"
+#     end_date: "2019-04-14T00:00:00+08:00"
+#   appear_durations:
+#   - start_time: 00h00m00s
+#     end_time: 24h00m00s
+#   type: 1
+#   summonGifts:
+#   - giftID: "1904_tw_racing_2000"
+#     probability: 2000 # n / 10000 * 100%
+#   - giftID: "1904_tw_racing_200"
+#     probability: 200 # n / 10000 * 100%
+#   - giftID: "1904_tw_racing_20"
+#     probability: 1000 # n / 10000 * 100%
+#   - giftID: "gift_lightstick_g"
+#     probability: 10000 # n / 10000 * 100%
+#   share_ratio: 50 # percentage
+#   profit_ratio: 35 # percentage
+#   bonus: 336
+#   infoPageiconURL: https://assets-17app.akamaized.net/a0743416-7cad-43ea-b83d-4beec992c033.png
+#   winnerPageiconURL: https://assets-17app.akamaized.net/617866c6-edb1-4168-b852-3515bc4f870a.png
+#   hintToken: {key: monster_battle_summon_hint_llama,fontAttribute: {textColor: "#FFFFFF"}}
+#   rule1Token: {key: monster_battle_summon_rule1_llama,fontAttribute: {textColor: "#FFFFFF"}}
+#   rule2Token: {key: monster_battle_summon_rule2_llama,fontAttribute: {textColor: "#FFFFFF"}}
+#   rule3Token: {key: monster_battle_summon_rule3_llama,fontAttribute: {textColor: "#FFFFFF"}}
+#   rule4Token: {key: monster_battle_summon_rule4_llama,fontAttribute: {textColor: "#FFFFFF"}}
+#   countdownToken: {key: monster_battle_summon_countdown_llama,fontAttribute: {textColor: "#FFFFFF"}}
+#   failureToken: {key: monster_battle_summon_failure_llama,fontAttribute: {textColor: "#FFFFFF"}}
+#   successToken: {key: monster_battle_summon_success_llama,fontAttribute: {textColor: "#FFFFFF"}}
 
 animationLoader:
 - url: https://assets-17app.akamaized.net/98b26445-2625-49a5-a541-ddf6a0256c00.zip
@@ -381,7 +417,7 @@ animationLoader:
   animationID: goldenalpaca2_success
   MD5: f0d32d883afbeff83ef1d3015fe4521d
   webpMD5: ca68f77bc82a34e82db0d90fd57040b4
-
+# goldenalpacab
 - url: https://assets-17app.akamaized.net/4b38b402-c444-48e6-bd44-7e77dba35da5.zip
   webpUrl: https://assets-17app.akamaized.net/1ce202c3-378a-4462-81ba-b0501ce327e7-q90-s1.webp
   animationID: goldenalpacab_attack
@@ -407,3 +443,29 @@ animationLoader:
   animationID: goldenalpacab_success
   MD5: fafdc76cf03580127bac2c95adc2a356
   webpMD5: 0786e16953a715c9747e90de1c5783b1
+# cowboy
+- url: https://assets-17app.akamaized.net/a9225e4a-3800-4a85-8b1f-75593a5be0f6.zip
+  webpUrl: https://assets-17app.akamaized.net/d0a968bd-40c6-47b6-8477-8d9afb532511-q90-s1.webp
+  animationID: cowboy_attack
+  MD5: 9126f934e03bc8c2a7b9cd562b89187b
+  webpMD5: c944862ff354c563fb4bbc2e4083d7bc
+- url: https://assets-17app.akamaized.net/2d38e8b1-e01b-480a-84f7-fa5abcb6b4db.zip
+  webpUrl: https://assets-17app.akamaized.net/da789cd6-6711-4046-a81c-18b4c2ec3991-q90-s1.webp
+  animationID: cowboy_enter
+  MD5: 95e067c0cc353a9c81a8e6e619c3d54f
+  webpMD5: a72bf71a3a67b719dc8c70f1bbced3e1
+- url: https://assets-17app.akamaized.net/7036ebfa-dffe-4b6f-84aa-6672149801b8.zip
+  webpUrl: https://assets-17app.akamaized.net/19b1f5b3-bfa5-4d02-b8f6-a0273ae82c03-q90-s1.webp
+  animationID: cowboy_failure
+  MD5: 472b7240906f93db4d0b89513ab02cfc
+  webpMD5: 947cf5d1f8f0115798d67875f6b48ad0
+- url: https://assets-17app.akamaized.net/30b7bcac-8759-4718-a2ef-a105bdc61151.zip
+  webpUrl: https://assets-17app.akamaized.net/7de76e00-3b2c-42f5-adbd-af8cd9edead6-q90-s1.webp
+  animationID: cowboy_idle
+  MD5: 83ecf2bcc6f6c9420605534c2afe508b
+  webpMD5: 439d927a2c1fe37737cd9031d65e3f99
+- url: https://assets-17app.akamaized.net/2367a062-15bd-45e8-932d-2ebd1bd7d5ba.zip
+  webpUrl: https://assets-17app.akamaized.net/b00cb650-b2e1-4c70-b7b2-14ba9289bbda-q90-s1.webp
+  animationID: cowboy_success
+  MD5: 4c11dfaa2ec817d54da682ce334fd5eb
+  webpMD5: 16c4e59bf328f0c3426107f5df057111
