@@ -27,7 +27,64 @@
 # // | NON_IAP | 2 |
 
 missions:
-  
+  - ID: fd64e157-0b39-42d4-8b44-1664db9740c3
+    type: 9 #View_Stream_X_Seconds
+    lifeCycle: 1 #ONETIME
+    levelRange:
+      min: 0
+      max: 2
+    reward:
+      rewardType: 1
+      rewardID: "surprise_b_us_s"
+      amount: 1
+      expireTimeSecs: 86400
+    i18nTitle: "baggage_mission_watch_streams_time_in_total_reward_us_title"
+    i18nTitleParams:
+      - needMap: false
+        value: "5"
+    i18nContent: "baggage_mission_watch_streams_time_in_total_reward_us_desc"
+    i18nContentParams:
+      - needMap: true
+        mapOption: 1
+        value: "gift_surprise_b_us_s"
+    i18nDescription: "baggage_mission_opt_watch_streams_time_in_total_reward_us_desc"
+    i18nDescriptionParams:
+    goalValue: 300
+    enableTimeRange:
+      - startTime: "2019-04-25 15:00:00 (GMT+0800)"
+        endTime: "2019-05-01 14:59:59 (GMT+0800)"
+    platforms:
+      - android
+      - ios
+
+  - ID: f95a40d1-71f7-4af7-971d-3d17a440c5b4
+    type: 8 #IAP
+    lifeCycle: 1 #ONETIME
+    levelRange:
+      min: 0
+      max: 10
+    reward:
+      rewardType: 1
+      rewardID: "surprise_b_us_s"
+      amount: 2
+      expireTimeSecs: 86400
+    i18nTitle: "baggage_mission_first_time_IAP_reward_us_title"
+    i18nTitleParams:
+    i18nContent: "baggage_mission_first_time_IAP_reward_us_des"
+    i18nContentParams:
+      - needMap: true
+        mapOption: 1
+        value: "gift_surprise_b_us_s"
+    i18nDescription: "baggage_mission_opt_first_time_IAP_reward_us_des"
+    i18nDescriptionParams:
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2019-04-25 15:00:00 (GMT+0800)"
+        endTime: "2019-05-01 14:59:59 (GMT+0800)"
+    platforms:
+      - android
+      - ios
+      
 #tagInfos
 tagInfos:
   0: # Daily
@@ -44,49 +101,3 @@ refreshHour: 5 # 5:00AM(GMT+8)
 supportedVersion:
   android: "2.3.17"
   ios: "3.8.0"
-
-# - ID: 12a4dab1-33c8-492e-b504-afe534c18e29
-#     type: 9 #View_Stream_X_Seconds
-#     reward:
-#       rewardType: 1
-#       rewardID: "1904_us_rookiechallenge_bp_10"
-#       amount: 1
-#       expireTimeSecs: 86400
-#     i18nTitle: "baggage_mission_watch_streams_time_in_total_reward_us_title"
-#     i18nTitleParams:
-#       - needMap: false
-#         value: "10"
-#     i18nContent: "baggage_mission_watch_streams_time_in_total_reward_us_desc"
-#     i18nContentParams:
-#       - needMap: true
-#         mapOption: 1
-#         value: "gift_1904_us_rookiechallenge_bp_10"
-#     goalValue: 600
-#     enableTimeRange:
-#       - startTime: "2019-04-01 15:00:00 (GMT+0800)"
-#         endTime: "2019-04-18 14:59:59 (GMT+0800)"
-#     platforms:
-#       - android
-#       - ios
-
-#   - ID: 910f7f9d-ef10-453f-9ecc-8cedf2592464
-#     type: 8 #IAP
-#     reward:
-#       rewardType: 1
-#       rewardID: "1904_us_rookiechallenge_bp_10"
-#       amount: 1
-#       expireTimeSecs: 86400
-#     i18nTitle: "baggage_mission_first_time_IAP_reward_us_title"
-#     i18nTitleParams:
-#     i18nContent: "baggage_mission_first_time_IAP_reward_us_des"
-#     i18nContentParams:
-#       - needMap: true
-#         mapOption: 1
-#         value: "gift_1904_us_rookiechallenge_bp_10"
-#     goalValue: 1
-#     enableTimeRange:
-#       - startTime: "2019-04-01 15:00:00 (GMT+0800)"
-#         endTime: "2019-04-18 14:59:59 (GMT+0800)"
-#     platforms:
-#       - android
-#       - ios

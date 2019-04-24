@@ -27,7 +27,31 @@
 # // | NON_IAP | 2 |
 
 missions:
-
+  - ID: 3e82b50a-8ff7-4061-98ec-be50b3a0d6ff
+    type: 5 #Comment_In_Livestream
+    reward:
+      rewardType: 1
+      rewardID: "1904_tw_petrestt_bp_100"
+      amount: 1
+      expireTimeSecs: 86400
+    i18nTitle: "baggage_mission_leave_comment_reward_cn_title"
+    i18nTitleParams:
+      - needMap: false
+        value: "5"
+    i18nContent: "baggage_mission_leave_comment_reward_cn_desc"
+    i18nContentParams:
+      - needMap: true
+        mapOption: 1
+        value: gift_1904_tw_petrestt_bp_100
+    i18nDescription: "baggage_mission_opt_leave_comment_reward_cn_desc"
+    i18nDescriptionParams:
+    goalValue: 5
+    enableTimeRange:
+      - startTime: "2019-04-25 18:00:00 (GMT+0800)"
+        endTime: "2019-05-03 23:59:59 (GMT+0800)"
+    platforms:
+      - android
+      - ios
         
 #tagInfos
 tagInfos:
@@ -45,322 +69,3 @@ refreshHour: 5 # 5:00AM(GMT+8)
 supportedVersion:
   android: "2.3.17"
   ios: "3.8.0"
-
-#History
-  # - ID: 1e9171c5-f5e9-4cbf-bb1c-fcc87da562bb
-  #   type: 9 #觀看直播
-  #   reward:
-  #     rewardType: 1
-  #     rewardID: "1903_hk_starrysky_bp_1"
-  #     amount: 1
-  #     expireTimeSecs: 86400
-  #   i18nTitle: "baggage_mission_watch_streams_time_in_total_reward_hk_title"
-  #   i18nTitleParams:
-  #     - needMap: false
-  #       value: "5"
-  #   i18nContent: "baggage_mission_watch_streams_time_in_total_reward_hk_desc"
-  #   i18nContentParams:
-  #     - needMap: true
-  #       mapOption: 1
-  #       value: gift_1903_hk_starrysky_bp_1
-  #   goalValue: 300
-  #   enableTimeRange:
-  #     - startTime: "2019-03-08 18:00:00 (GMT+0800)"
-  #       endTime: "2019-03-21 23:59:59 (GMT+0800)"
-  #   platforms:
-  #     - android
-  #     - ios
-# - ID: f7f9394f-4695-48da-9aa1-7ec65db08ad6
-#   type: 9 #觀看直播
-#   reward:
-#     rewardType: 1
-#     rewardID: "1808_tw_hot_support"
-#     amount: 1
-#     expireTimeSecs: 86400
-#   i18nTitle: "baggage_mission_watch_streams_time_in_total_reward_crossregion_title"
-#   i18nTitleParams:
-#     - needMap: false
-#       value: "3"
-#   i18nContent: "baggage_mission_watch_streams_time_in_total_reward_crossregion_desc"
-#   i18nContentParams:
-#     - needMap: true
-#       mapOption: 1
-#       value: gift_1808_tw_hot_support
-#   goalValue: 180
-#   enableTimeRange:
-#     - startTime: "2018-08-23 18:00:00 (GMT+0800)"
-#       endTime: "2018-08-31 23:59:59 (GMT+0800)"
-
-# - ID: bc581dea-d5a5-4e2d-8cde-62c8051ba278
-#   type: 3 #送禮
-#   reward:
-#     rewardType: 1
-#     rewardID: "1808_tw_summer_festival_45000"
-#     amount: 1
-#     expireTimeSecs: 86400
-#   i18nTitle: "baggage_mission_send_specific_gifts_reward_title"
-#   i18nTitleParams:
-#     - needMap: false
-#       value: "20"
-#     - needMap: true
-#       mapOption: 1
-#       value: gift_1808_tw_sf_ll
-#     - needMap: true
-#       mapOption: 1
-#       value: gift_1808_tw_summer_festival_z_30000
-#   i18nContent: "baggage_mission_send_specific_gifts_reward_desc"
-#   i18nContentParams:
-#     - needMap: true
-#       mapOption: 1
-#       value: gift_1808_tw_summer_festival_45000
-#   goalValue: 20
-#   enableTimeRange:
-#     - startTime: "2018-08-27 18:00:00 (GMT+0800)"
-#       endTime: "2018-09-01 23:59:59 (GMT+0800)"
-#   refIDs:
-#     - 1808_tw_sf_ll
-#     - 1808_tw_summer_festival_z_30000
-
-# - ID: c375a802-9529-43bb-927c-bce007986d5b
-#   type: 3 #送禮
-#   reward:
-#     rewardType: 1
-#     rewardID: "1808_tw_summer_festival_4500"
-#     amount: 1
-#     expireTimeSecs: 86400
-#   i18nTitle: "baggage_mission_send_specific_gifts_reward_title"
-#   i18nTitleParams:
-#     - needMap: false
-#       value: "20"
-#     - needMap: true
-#       mapOption: 1
-#       value: gift_1808_tw_sf_lm
-#     - needMap: true
-#       mapOption: 1
-#       value: gift_1808_tw_summer_festival_z_3000
-#   i18nContent: "baggage_mission_send_specific_gifts_reward_desc"
-#   i18nContentParams:
-#     - needMap: true
-#       mapOption: 1
-#       value: gift_1808_tw_summer_festival_4500
-#   goalValue: 20
-#   enableTimeRange:
-#     - startTime: "2018-08-27 18:00:00 (GMT+0800)"
-#       endTime: "2018-09-01 23:59:59 (GMT+0800)"
-#   refIDs:
-#     - 1808_tw_sf_lm
-#     - 1808_tw_summer_festival_z_3000
-
-# - ID: 5a21793a-9509-4583-9a55-5d4d7c4a249b
-#   type: 3 #送禮
-#   reward:
-#     rewardType: 1
-#     rewardID: "1808_tw_summer_festival_450"
-#     amount: 1
-#     expireTimeSecs: 86400
-#   i18nTitle: "baggage_mission_send_specific_gifts_reward_title"
-#   i18nTitleParams:
-#     - needMap: false
-#       value: "20"
-#     - needMap: true
-#       mapOption: 1
-#       value: gift_1808_tw_sf_ls
-#     - needMap: true
-#       mapOption: 1
-#       value: gift_1808_tw_summer_festival_z_300
-#   i18nContent: "baggage_mission_send_specific_gifts_reward_desc"
-#   i18nContentParams:
-#     - needMap: true
-#       mapOption: 1
-#       value: gift_1808_tw_summer_festival_450
-#   goalValue: 20
-#   enableTimeRange:
-#     - startTime: "2018-08-27 18:00:00 (GMT+0800)"
-#       endTime: "2018-09-01 23:59:59 (GMT+0800)"
-#   refIDs:
-#     - 1808_tw_sf_ls
-#     - 1808_tw_summer_festival_z_300
-
-# - ID: 12fe366f-117c-4329-9c28-1ad84150fa00
-#   type: 5 #直播留言
-#   reward:
-#     rewardType: 1
-#     rewardID: "1808_tw_haunted_house_10"
-#     amount: 1
-#     expireTimeSecs: 86400
-#   i18nTitle: "baggage_mission_leave_comment_reward_title"
-#   i18nTitleParams:
-#     - needMap: false
-#       value: "10"
-#   i18nContent: "baggage_mission_leave_comment_reward_desc"
-#   i18nContentParams:
-#     - needMap: true
-#       mapOption: 1
-#       value: gift_1808_tw_haunted_house_10
-#   goalValue: 10
-#   enableTimeRange:
-#     - startTime: "2018-08-28 18:00:00 (GMT+0800)"
-#       endTime: "2018-08-31 23:59:59 (GMT+0800)"
-
-# - ID: d82d5a40-d1da-4f3c-b33c-1e8321a1b0a5
-#   type: 8 #IAP
-#   reward:
-#     rewardType: 1
-#     rewardID: "1809_hk_magical_bp"
-#     amount: 1
-#     expireTimeSecs: 86400
-#   goalValue: 1
-#   enableTimeRange:
-#     - startTime: "2018-09-16 18:00:00 (GMT+0800)"
-#       endTime: "2018-09-27 23:59:59 (GMT+0800)"
-
-# - ID: f0da6a8d-d63e-482d-84ae-f28ae6f32dcf
-#   type: 8 #IAP
-#   levelRange:
-#     min: 20
-#     max: 999
-#   reward:
-#     rewardType: 1
-#     rewardID: "1809_tw_nulife_bp_10"
-#     amount: 1
-#     expireTimeSecs: 86400
-#   goalValue: 1
-#   enableTimeRange:
-#     - startTime: "2018-10-02 00:00:00 (GMT+0800)"
-#       endTime: "2018-10-07 23:59:59 (GMT+0800)"
-
-# - ID: 12c45e66-9ec0-41db-a34e-b27f6b6324db
-#   type: 8 #IAP
-#   lifeCycle: 1 #ONETIME
-#   targetAudience: 2 #NON_IAP
-#   reward:
-#     rewardType: 1
-#     rewardID: "hk_bp_first_deposit_bonus"
-#     amount: 1
-#     expireTimeSecs: 86400
-#   goalValue: 1
-#   enableTimeRange:
-#     - startTime: "2018-10-16 18:00:00 (GMT+0800)"
-#       endTime: "2018-10-20 23:59:59 (GMT+0800)"
-#   platforms:
-#     - android
-#     - ios
-
-# - ID: 9a63d303-7fb6-4631-baca-77ce5672d38f
-#   type: 9 #觀看直播
-#   levelRange:
-#     min: 20
-#     max: 999
-#   reward:
-#     rewardType: 1
-#     rewardID: "1810_tw_live_bp_10"
-#     amount: 1
-#     expireTimeSecs: 86400
-#   goalValue: 300
-#   enableTimeRange:
-#     - startTime: "2018-10-02 18:00:00 (GMT+0800)"
-#       endTime: "2018-10-27 23:59:59 (GMT+0800)"
-#   platforms:
-#     - android
-#     - ios
-  
-# - ID: 5a5152ae-7df2-4750-941f-9f93ad77ae30
-#   type: 8 #IAP
-#   reward:
-#     rewardType: 1
-#     rewardID: "1811_tw_17care_bp_1"
-#     amount: 1
-#     expireTimeSecs: 86400
-#   goalValue: 1
-#   enableTimeRange:
-#     - startTime: "2018-11-28 18:00:00 (GMT+0800)"
-#       endTime: "2018-12-08 23:59:59 (GMT+0800)"
-#   platforms:
-#     - android
-#     - ios
-      
-# - ID: c4bf778f-8185-497f-a306-76290e069850
-#   type: 9 #View_Stream_X_Seconds
-#   levelRange:
-#     min: 20
-#     max: 999
-#   reward:
-#     rewardType: 1
-#     rewardID: "1811_tw_live_bp_10"
-#     amount: 1
-#     expireTimeSecs: 86400
-#   goalValue: 300
-#   enableTimeRange:
-#     - startTime: "2018-11-13 18:00:00 (GMT+0800)"
-#       endTime: "2018-12-17 23:59:59 (GMT+0800)"
-#   platforms:
-#     - android
-#     - ios
-
-# - ID: 798cf11e-d087-45ad-bd08-cbd7c58f5b98
-#   type: 5 #Comment_In_Livestream
-#   reward:
-#     rewardType: 1
-#     rewardID: "1812_tw_spa_bp"
-#     amount: 1
-#     expireTimeSecs: 86400
-#   goalValue: 5
-#   enableTimeRange:
-#     - startTime: "2018-12-23 18:00:00 (GMT+0800)"
-#       endTime: "2019-01-04 23:59:59 (GMT+0800)"
-#   platforms:
-#     - android
-#     - ios
-
-# - ID: db2eabd5-1f8a-42d3-a50d-3ffa9529e695
-#   type: 9 #觀看直播
-#   levelRange:
-#     min: 20
-#     max: 999
-#   reward:
-#     rewardType: 1
-#     rewardID: "1901_tw_jazz_xs"
-#     amount: 1
-#   goalValue: 600
-#   enableTimeRange:
-#     - startTime: "2019-01-06 18:00:00 (GMT+0800)"
-#       endTime: "2019-01-18 23:59:59 (GMT+0800)"
-#   platforms:
-#     - android
-#     - ios
-
-# - ID: 86d4e3ea-ac1c-4be8-b449-24b471f5dd34
-#   type: 9 #觀看直播
-#   levelRange:
-#     min: 21
-#     max: 999
-#   reward:
-#     rewardType: 1
-#     rewardID: "1901_tw_food_bp"
-#     amount: 1
-#     expireTimeSecs: 86400
-#   goalValue: 300
-#   enableTimeRange:
-#     - startTime: "2019-02-01 00:00:00 (GMT+0800)"
-#       endTime: "2019-02-08 23:59:59 (GMT+0800)"
-#   platforms:
-#     - android
-#     - ios
-
-# - ID: 893ffbb1-ccb0-4e86-9356-45243e2b4962
-#   type: 9 #觀看直播
-#   levelRange:
-#     min: 21
-#     max: 999
-#   reward:
-#     rewardType: 1
-#     rewardID: "1902_tw_drunk_xs"
-#     amount: 1
-#     expireTimeSecs: 86400
-#   goalValue: 600
-#   enableTimeRange:
-#     - startTime: "2019-02-07 18:00:00 (GMT+0800)"
-#       endTime: "2019-02-19 23:59:59 (GMT+0800)"
-#   platforms:
-#     - android
-#     - ios
