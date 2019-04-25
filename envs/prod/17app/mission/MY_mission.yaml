@@ -29,6 +29,9 @@
 missions:
   - ID: 3e82b50a-8ff7-4061-98ec-be50b3a0d6ff
     type: 5 #Comment_In_Livestream
+    levelRange:
+      min: 21
+      max: 9999
     reward:
       rewardType: 1
       rewardID: "1904_tw_petrestt_bp_100"
@@ -40,11 +43,15 @@ missions:
         value: "5"
     i18nContent: "baggage_mission_leave_comment_reward_cn_desc"
     i18nContentParams:
+      - needMap: false
+        value: "21"
       - needMap: true
         mapOption: 1
         value: gift_1904_tw_petrestt_bp_100
     i18nDescription: "baggage_mission_opt_leave_comment_reward_cn_desc"
     i18nDescriptionParams:
+      - needMap: false
+        value: "21"
     goalValue: 5
     enableTimeRange:
       - startTime: "2019-04-25 18:00:00 (GMT+0800)"
