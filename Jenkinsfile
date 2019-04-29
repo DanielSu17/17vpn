@@ -70,43 +70,38 @@ properties([
         string(
             defaultValue: etcdServiceEndpointsStag.join(','),
             description: 'ETCD Service Endpoints List for the 17App Service (Staging)',
-            name: 'ENSEMBLEIPS_STA',
+            name: 'ENDPOINTS_17APP_STA',
             trim: true
         ),
         string(
             defaultValue: etcdServiceEndpointsProd.join(','),
             description: 'ETCD Service Endpoints List for the 17App Service (Production)',
-            name: 'ENSEMBLEIPS_PROD',
+            name: 'ENDPOINTS_17APP_PROD',
             trim: true
         ),
         string(
             defaultValue: etcdServiceEndpointsStagLit.join(','),
             description: 'ETCD Service Endpoints List for the Lit Service (Staging)',
-            name: 'ENSEMBLEIPS_LIT_STA',
+            name: 'ENDPOINTS_LIT_STA',
             trim: true
         ),
         string(
             defaultValue: etcdServiceEndpointsProdLit.join(','),
             description: 'ETCD Service Endpoints List for the Lit Service (Production)',
-            name: 'ENSEMBLEIPS_LIT_PROD',
+            name: 'ENDPOINTS_LIT_PROD',
             trim: true
         ),
         string(
             defaultValue: etcdServiceEndpointsStagZoo.join(','),
             description: 'ETCD Service Endpoints List for the Zoo Service (Staging)',
-            name: 'ENSEMBLEIPS_ZOO_STA',
+            name: 'ENDPOINTS_ZOO_STA',
             trim: true
         ),
         string(
             defaultValue: etcdServiceEndpointsProdZoo.join(','),
             description: 'ETCD Service Endpoints List for the Zoo Service (Production)',
-            name: 'ENSEMBLEIPS_ZOO_PROD',
+            name: 'ENDPOINTS_ZOO_PROD',
             trim: true
-        ),
-        booleanParam(
-            defaultValue: false,
-            description: 'Refresh pushToEtcd-linux?',
-            name: 'REFRESH_EXECUTABLE_BINARY'
         )]
     )
 ])
@@ -115,72 +110,38 @@ properties([
 node { timestamps { ansiColor('xterm') {
   stage('Input Validation') {
     // cleanup before start
-    cleanWs(deleteDirs: true,
-            notFailBuild: true,
-            patterns: [[
-                pattern: 'pushToEtcd-linux',
-                type: 'EXCLUDE'
-            ]]
-    )
+    deleteDir()
 
-    // basic validation for the input values
-    if (params.REVISION.length() <= 0) {
-        error('invalid revision input')
-    }
-
-    if (params.SLACK_URL.length() <= 0) {
-        error('invalid slack webhook')
-    }
-
-    if (params.ENSEMBLEIPS_STA.length() <= 0) {
-        error('invalid etcd cluster endpoints input (17app stag)')
-    }
-
-    if (params.ENSEMBLEIPS_PROD.length() <= 0) {
-        error('invalid etcd cluster endpoints input (17app prod)')
-    }
-
-    if (params.ENSEMBLEIPS_LIT_STA.length() <= 0) {
-        error('invalid etcd cluster endpoints input (lit stag)')
-    }
-
-    if (params.ENSEMBLEIPS_LIT_PROD.length() <= 0) {
-        error('invalid etcd cluster endpoints input (lit prod)')
-    }
-
-    if (params.ENSEMBLEIPS_ZOO_STA.length() <= 0) {
-        error('invalid etcd cluster endpoints input (zoo stag)')
-    }
-
-    if (params.ENSEMBLEIPS_ZOO_PROD.length() <= 0) {
-        error('invalid etcd cluster endpoints input (zoo prod)')
-    }
-  } // end of stage
-
-  stage('Setup Environment') {
-    // if `pushToEtcd-linux` not exist, or explicitly download enabled
-    // download latest `pushToEtcd-linux` executable binary from AWS S3
-    // source code of the `pushToEtcd-linux` could be found under the following path
-    // - https://github.com/17media/api/blob/master/infra/deploy/configs/pushToEtcd.go
-    if ((! fileExists("pushToEtcd-linux") || params.REFRESH_EXECUTABLE_BINARY)) {
-      sh("wget --quiet https://s3-us-west-2.amazonaws.com/17scripts/configs_push_to_etcd/pushToEtcd-linux -O ./pushToEtcd-linux")
-    } else {
-      echo("[skip download]")
-    }
-
+    // prepare for configs repository
     sh('mkdir -p configs')
     dir('configs') {
       git url: 'git@github.com:17media/configs.git',
           credentialsId: '3dc01492-01f6-4be5-8073-8de5f458ed1e',
           branch: 'master'
 
-      sh("cp ../pushToEtcd-linux .")
-      sh("chmod +x ./pushToEtcd-linux")
-      sh("./pushToEtcd-linux --version")
+      inputRevision = params.REVISION.trim()
+      if (inputRevision.length() > 0) {
+        // check tag existence
+        chk1 = sh(returnStdout: true, script: 'git for-each-ref refs')
+
+        // check commit existence
+        chk2 = sh(returnStdout: true, script: 'git cat-file -t "' + inputRevision + '"')
+
+        if (chk1.contains(inputRevision) || chk2.contains("commit")) {
+          sh("git reset HEAD --hard")
+          sh("git checkout $REVISION")
+        } else {
+          error "[abort] specific revision not exist?"
+        }
+      } else {
+        echo "[skip] no REVISION input, use HEAD revision"
+      }
     }
   } // end of stage
 
   stage('Push Changes to ETCD Clusters') {
+    def slack_channel = "#dev-event-configs"
+
     dir('configs') {
       // get DOCKER_USER/DOCKER_PASS from Jenkins credential provider
       withCredentials([
@@ -190,9 +151,42 @@ node { timestamps { ansiColor('xterm') {
               usernameVariable: 'DOCKER_USER'
           )
       ]) {
-        // force exit if job execution time over 300 seconds
-        timeout(time: 300, unit: 'SECONDS') {
-          sh("./pushToEtcd-linux --commit_id \"" + params.REVISION + "\"")
+        // force exit if job execution time over 180 seconds
+        timeout(time: 180, unit: 'SECONDS') {
+          // post slack message before job start
+          slackSend(
+              baseUrl: 'https://17media.slack.com/services/hooks/jenkins-ci/',
+              tokenCredentialId: '883d8435-4b52-48cb-a282-c7995cb26b69',
+              channel: slack_channel,
+              message: '17media/configs - ' + params.REVISION + ' - Job Start',
+              failOnError: true,
+              color: 'good',
+          )
+
+          try {
+            sh('./push_to_etcd.sh')
+          } catch (e) {
+            // post slack message if job failed
+            slackSend(
+                baseUrl: 'https://17media.slack.com/services/hooks/jenkins-ci/',
+                tokenCredentialId: '883d8435-4b52-48cb-a282-c7995cb26b69',
+                channel: slack_channel,
+                message: '17media/configs - ' + params.REVISION + ' - Job Failed',
+                failOnError: true,
+                color: 'danger',
+            )
+            error "failed"
+          }
+
+          // post slack message after job completed
+          slackSend(
+              baseUrl: 'https://17media.slack.com/services/hooks/jenkins-ci/',
+              tokenCredentialId: '883d8435-4b52-48cb-a282-c7995cb26b69',
+              channel: slack_channel,
+              message: '17media/configs - ' + params.REVISION + ' - Job Completed',
+              failOnError: true,
+              color: 'good',
+          )
         } // end of timeout
       }
     } // end of dir
