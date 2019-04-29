@@ -158,7 +158,7 @@ node { timestamps { ansiColor('xterm') {
               baseUrl: 'https://17media.slack.com/services/hooks/jenkins-ci/',
               tokenCredentialId: '883d8435-4b52-48cb-a282-c7995cb26b69',
               channel: slack_channel,
-              message: '17media/configs - ' + params.REVISION + ' - Job Start',
+              message: '17media/configs - Job Start\n*Commit:* ' + params.REVISION + '(<https://github.com/17media/configs/commit/' + params.REVISION + '|GitHub>)',
               failOnError: true,
               color: 'good',
           )
@@ -171,7 +171,7 @@ node { timestamps { ansiColor('xterm') {
                 baseUrl: 'https://17media.slack.com/services/hooks/jenkins-ci/',
                 tokenCredentialId: '883d8435-4b52-48cb-a282-c7995cb26b69',
                 channel: slack_channel,
-                message: '17media/configs - ' + params.REVISION + ' - Job Failed',
+                message: '17media/configs - Job Failed\n*Commit:* ' + params.REVISION + '(<https://github.com/17media/configs/commit/' + params.REVISION + '|GitHub>)',
                 failOnError: true,
                 color: 'danger',
             )
@@ -183,7 +183,7 @@ node { timestamps { ansiColor('xterm') {
               baseUrl: 'https://17media.slack.com/services/hooks/jenkins-ci/',
               tokenCredentialId: '883d8435-4b52-48cb-a282-c7995cb26b69',
               channel: slack_channel,
-              message: '17media/configs - ' + params.REVISION + ' - Job Completed',
+              message: '17media/configs - Job Completed\n*Commit:* ' + params.REVISION + '(<https://github.com/17media/configs/commit/' + params.REVISION + '|GitHub>)',
               failOnError: true,
               color: 'good',
           )
