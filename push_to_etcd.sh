@@ -29,18 +29,19 @@ for config_path in $config_paths; do
   config_env=$(echo $config_path | cut -d'/' -f2)
   config_app=$(echo $config_path | cut -d'/' -f3)
 
+  # support prod/sta only
+  if [ "${config_env}" != "sta" ] && [ "${config_env}" != "prod" ]; then
+    echo "[debug] unsupported config_env, skipped"
+    continue
+  fi
+
   # naming rule: ENDPOINTS_{{ APP_NAME }}_{{ CONFIG_ENV }}
   dynamic_endpoints="ENDPOINTS_$(echo ${config_app} | tr '[:lower:]' '[:upper:]')_$(echo ${config_env} | tr '[:lower:]' '[:upper:]')"
   endpoints=$(eval echo "\$${dynamic_endpoints}")
 
   if [ -n "${endpoints}" ]; then
     echo "[debug] ${config_env} / ${config_app} / ${endpoints}"
-
-    if [ "${config_env}" = "sta" ] || [ "${config_env}" = "prod" ]; then
-      push ${config_env} ${config_app} ${endpoints}
-    else
-      echo "[debug] unsupported config_env, skipped"
-    fi
+    push ${config_env} ${config_app} ${endpoints}
   else
     echo "abort, no endpoint defined"
     exit 1
