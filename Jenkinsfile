@@ -8,8 +8,6 @@
 //   it's not a bug, don't report it as bug!!!
 
 
-def slackWebhook = 'https://hooks.slack.com/services/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'
-
 def etcdServiceEndpointsStag = [
     'http://35.229.178.57:2379',
     'http://35.194.226.164:2379',
@@ -59,12 +57,6 @@ properties([
             defaultValue: '',
             description: 'Commit ID of the Configs Changes',
             name: 'REVISION',
-            trim: true
-        ),
-        string(
-            defaultValue: slackWebhook,
-            description: 'Slack Webhook for Notification',
-            name: 'SLACK_URL',
             trim: true
         ),
         string(
