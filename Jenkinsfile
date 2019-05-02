@@ -157,7 +157,7 @@ node { timestamps { ansiColor('xterm') {
 
           try {
             sh("docker version")
-            sh("docker login -u ${USER_ID} -p ${USER_PASSWORD}")
+            sh("docker login -u ${DOCKER_USER} -p ${DOCKER_PASS}")
             sh('./push_to_etcd.sh')
           } catch (e) {
             // post slack message if job failed
