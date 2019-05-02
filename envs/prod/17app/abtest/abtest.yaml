@@ -1,6 +1,5 @@
 - testName: autoEnterLive
   enableABtest: false
-  enableRegion: ["TW", "JP"]
   expiredSecond: 604800 # 7 day
   lastCharGroup:
     "0": "a"
@@ -21,7 +20,6 @@
     "f": "b" 
 - testName: recommendFollow
   enableABtest: true
-  enableRegion: ["TW", "JP"]
   expiredSecond: 604800 # 7 day
   lastCharGroup:
     "0": "b"
@@ -42,7 +40,6 @@
     "f": "b"
 - testName: newbieFocus # 消除雜訊
   enableABtest: false
-  enableRegion: []
   expiredSecond: 86400 # 1 day
   lastCharGroup:
     "0": "a"
@@ -63,7 +60,6 @@
     "f": "b"
 - testName: newbieGuidance # 新手引導(新手遮罩)
   enableABtest: true
-  enableRegion: ["TW", "JP", "US"]
   expiredSecond: 259200 # 3 days
   lastCharGroup:
     "0": "b"
@@ -84,7 +80,6 @@
     "f": "b"
 - testName: completeRegistration
   enableABtest: true
-  enableRegion: ["TW"]
   expiredSecond: 10 # 10 second 
   lastCharGroup:
     "0": "a"
@@ -105,7 +100,6 @@
     "f": "b"
 - testName: newbieIAP # 新手首購優惠
   enableABtest: false
-  enableRegion: ["TW"]
   expiredSecond: 604800 # 7 days
   lastCharGroup:
     "0": "a"
@@ -126,7 +120,6 @@
     "f": "b"
 - testName: streamRoomEntryTitle # 直播間入口標題
   enableABtest: false
-  enableRegion: ["ALL"]
   lastCharGroup:
     "0": "a"
     "1": "b"
@@ -146,7 +139,6 @@
     "f": "b"
 - testName: newbiePurchaseEvent # 新手首購活動
   enableABtest: false
-  enableRegion: ["TW"]
   lastCharGroup:
     "0": "b"
     "1": "b"
@@ -165,8 +157,7 @@
     "e": "b"
     "f": "b"
 - testName: newbieOnboard # 新手流程優化 (onboarding_flow_optimization)
-  enableABtest: false
-  enableRegion: []
+  enableABtest: true
   expiredSecond: 604800 # 7 day
   lastCharGroup:
     "0": "a"
