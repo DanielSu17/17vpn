@@ -97,7 +97,7 @@ properties([
             description: 'ETCD Service Endpoints List for the Zoo Service (Production)',
             name: 'ENDPOINTS_ZOO_PROD',
             trim: true
-        )]
+        ),
         string(
             defaultValue: etcdServiceEndpointsStagWave.join(','),
             description: 'ETCD Service Endpoints List for the Wave Service (Staging)',
