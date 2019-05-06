@@ -44,6 +44,9 @@ def etcdServiceEndpointsProdZoo = [
     'http://34.80.57.203:2379',
 ]
 
+def etcdServiceEndpointsStagWave = []
+def etcdServiceEndpointsProdWave = []
+
 
 properties([
     buildDiscarder(
@@ -93,6 +96,18 @@ properties([
             defaultValue: etcdServiceEndpointsProdZoo.join(','),
             description: 'ETCD Service Endpoints List for the Zoo Service (Production)',
             name: 'ENDPOINTS_ZOO_PROD',
+            trim: true
+        )]
+        string(
+            defaultValue: etcdServiceEndpointsStagWave.join(','),
+            description: 'ETCD Service Endpoints List for the Wave Service (Staging)',
+            name: 'ENDPOINTS_WAVE_STA',
+            trim: true
+        ),
+        string(
+            defaultValue: etcdServiceEndpointsProdWave.join(','),
+            description: 'ETCD Service Endpoints List for the Wave Service (Production)',
+            name: 'ENDPOINTS_WAVE_PROD',
             trim: true
         )]
     )
