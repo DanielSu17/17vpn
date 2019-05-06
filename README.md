@@ -42,6 +42,23 @@ go get -u github.com/17media/macgyver
 ```
 There're details for how to use macgyver in the [README.md](https://github.com/17media/macgyver).
 
+### [gcloud](https://cloud.google.com/sdk/gcloud/?hl=zh-TW) login
+```
+gcloud auth application-default login
+```
+
+### ensure you have KMS permission to encrypt/decrypt data
+If you see the following error when executing macgyver, it means you don't have permission to use KMS.
+
+```
+Error 403: Permission 'cloudkms.cryptoKeyVersions.useToEncrypt' denied for resource
+'projects/media17-stag/locations/global/keyRings/app/cryptoKeys/runtime'
+```
+
+[Apply for KMS permission for config encryption depends on environments](https://github.com/17media/infrastructure/issues/new/choose).  
+`staging`: `projects/media17-stag/locations/global/keyRings/app/cryptoKeys/runtime`  
+`production`: `projects/media17-prod/locations/global/keyRings/app/cryptoKeys/runtime`
+
 ### encrypt the data
 Replace the value of `--flags` in the following command.
 In this case, `bar` and `hihihi` will be encrypted in the format `<SECRET_TAG>.*</SECRET_TAG>`.
