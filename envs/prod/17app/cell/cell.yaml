@@ -49,3 +49,52 @@ entranceRooms:
     topics:
       1:
     whitelist:
+
+# labelInfos defines all label related infos including type, label(i18n), iconURL
+# - type: 1(music), 2(politics)
+labelInfos:
+  - id: "acoustic" # 彈唱歌手
+    type: 1
+    label:
+      key: "streamer_label_acoustic"
+    iconURL: "https://assets-17app.akamaized.net/10efc3de-26a3-462a-8968-10c832e71c2b.png"
+  - id: "player" # 演奏達人
+    type: 1
+    label:
+      key: "streamer_label_player"
+    iconURL: "https://assets-17app.akamaized.net/bd09208c-541a-4fb7-bb5e-646ac3bf69ec.png"
+  - id: "singer" # 實力歌手
+    type: 1
+    label:
+      key: "streamer_label_singer"
+    iconURL: "https://assets-17app.akamaized.net/14a2cae9-d4b2-4a53-aead-9739be3224d9.png"
+  - id: "pundit" # 政治名嘴
+    type: 2
+    label:
+      key: "streamer_label_pundit"
+    iconURL: "https://assets-17app.akamaized.net/500b5072-6139-4d74-80f5-e6c3f93d5d77.png"
+
+# labelWhiteList defines relation between label and user list
+labelWhiteList:
+  acoustic: # 彈唱歌手
+    - 375fcf50-8168-416e-9fa2-c9702a5ec08a # 宋少騫Zustin
+    - 558c7736-3677-4b17-8f94-1631a6870422 # 吳金隆Gino
+    - 671f4ff1-212a-4e7a-80e9-360103c3ab91 # 趙泓捷
+    - 4a771cdf-1fd6-4fcb-8186-73cc32ff5483 # 鍾鎮宇Justin
+    - 94728e88-feca-4ca9-9062-39e3d2f93467 # 小沙
+  player: # 演奏達人
+  singer: # 實力歌手
+    - 115851d0-d202-47c5-9079-71d3e7f704f7 # 亮金金
+    - 21280e9c-e07d-4d1b-83b7-e591bc3b1056 # 我叫易小魚🐟🎤
+    - 2755452a-a0ec-4a3f-a83d-6db0634f62ae # 胡利基
+    - 604ec832-4884-47d6-beed-cf178cad1caa # 篠崎泫🎤篠崎是姓泫是名
+    - 60602fef-d6ee-4fb6-a38c-1ffd15b16c6f # 張語噥sammy
+    - 83821902-75d0-4c7a-86c4-0cf8590cc7d8 # 張聖子-小露Lucia
+    - c9fafa51-ab41-407f-9bac-6b5c9e201cd5 # 徐凱希cathy
+    - 88f52a35-d951-4beb-822c-ad3d7e8f479b # 🎤鐵肺美金💰
+  pundit: # 政治名嘴
+    - 6172b2ec-dd28-4884-75fc-5415c85ba241 # astrocodeiris
+    - f72d13f1-59a4-4ac4-8958-2d64c569556f # 黃暐瀚17
+    - d62b9dcf-157f-4345-9c75-272f236573e8 # 3q陳柏惟
+    - f488e6f8-4980-4fb7-9502-f1a4a075e8b8 # 視網膜Retina
+    - 64960d5e-1631-4d55-9cd6-66c7ecfb6eef # 黃益中
