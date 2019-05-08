@@ -114,7 +114,7 @@ properties([
 ])
 
 
-node { timestamps { ansiColor('xterm') {
+node('gcp') { timestamps { ansiColor('xterm') {
   stage('Input Validation') {
     // cleanup before start
     deleteDir()

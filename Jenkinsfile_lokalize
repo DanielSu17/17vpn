@@ -54,7 +54,7 @@ properties([
 ])
 
 
-node { timestamps { ansiColor('xterm') {
+node('gcp') { timestamps { ansiColor('xterm') {
   // setup environment variables
   env.GOPATH = "${WORKSPACE}/gowork"
   env.PATH = "${WORKSPACE}/go/bin:${env.GOPATH}/bin:${WORKSPACE}/bin:${env.PATH}"
