@@ -2,6 +2,7 @@
 # If `forAllUsers` is false, then check userIDs
 # `name` is for data analytic, it should not be empty
 # `startTime` and `endTime` format example: 2018-03-31 10:00:00 (GMT+0800)
+# before set `animationID`, must set animation in files/animation.yaml"
 decoStickers:
     - style: 0
       name: sticker_17baby_classic
@@ -11,6 +12,7 @@ decoStickers:
       startTime:
       endTime:
       forAllUsers: true
+      animationID:
       userIDs: []
     - style: 1
       name: sticker_hollywood
@@ -20,6 +22,7 @@ decoStickers:
       startTime:
       endTime:
       forAllUsers: true
+      animationID:
       userIDs: []
     - style: 2
       name: sticker_comic
@@ -29,6 +32,7 @@ decoStickers:
       startTime:
       endTime:
       forAllUsers: true
+      animationID:
       userIDs: []
     - style: 3
       name: sticker_dog_and_pig
@@ -38,5 +42,16 @@ decoStickers:
       startTime: 2018-11-05 18:00:00 (GMT+0800)
       endTime: 2018-11-25 23:59:59 (GMT+0800)
       forAllUsers: false
+      animationID:
       userIDs:
           - dd40c211-48be-439e-b0b1-47ba44e0b1bf # carlcarlking
+    - style: 26
+      name: event_GFA
+      type: 0
+      imageURL: https://assets-17app.akamaized.net/9f04a36a-e8a9-4251-a4be-3a76d010f69f.png
+      textColor: "#ffffff"
+      startTime: 2019-05-05 23:10:00 (GMT+0800)
+      endTime: 2019-05-31 23:59:59 (GMT+0800)
+      forAllUsers: true
+      animationID: golden_sticker
+      userIDs:
