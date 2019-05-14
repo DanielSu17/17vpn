@@ -27,38 +27,82 @@
 # // | NON_IAP | 2 |
 
 missions:
-  - ID: 3e82b50a-8ff7-4061-98ec-be50b3a0d6ff
-    type: 5 #Comment_In_Livestream
+  - ID: 2af0a360-abc7-4bc0-a81e-d0ae1c79760d
+    type: 9 #View_Stream_X_Seconds
+    lifeCycle: 1 #ONETIME
     levelRange:
       min: 21
       max: 9999
     reward:
       rewardType: 1
-      rewardID: "1904_tw_petrestt_bp_100"
+      rewardID: "1905_tw_gang_bp_1"
       amount: 1
       expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_leave_comment_reward_cn_title"
+    i18nTitle: "baggage_mission_watch_streams_time_in_total_reward_title"
     i18nTitleParams:
       - needMap: false
-        value: "5"
-    i18nContent: "baggage_mission_leave_comment_reward_cn_desc"
+        value: "15"
+    i18nContent: "baggage_mission_watch_streams_time_in_total_reward_desc"
     i18nContentParams:
-      - needMap: false
-        value: "21"
       - needMap: true
         mapOption: 1
-        value: gift_1904_tw_petrestt_bp_100
-    i18nDescription: "baggage_mission_opt_leave_comment_reward_cn_desc"
+        value: gift_1905_tw_gang_bp_1
+    i18nDescription: "baggage_mission_opt_watch_streams_time_in_total_reward_desc"
     i18nDescriptionParams:
-      - needMap: false
-        value: "21"
-    goalValue: 5
+    goalValue: 900
     enableTimeRange:
-      - startTime: "2019-04-25 18:00:00 (GMT+0800)"
-        endTime: "2019-05-03 23:59:59 (GMT+0800)"
+      - startTime: "2019-05-25 18:00:00 (GMT+0800)"
+        endTime: "2019-05-31 23:59:59 (GMT+0800)"
     platforms:
       - android
       - ios
+      - web
+
+  - ID: 33ce8e55-f26c-4b50-9554-bf40f2815433
+    type: 3 # Send_Gift
+    levelRange:
+      min: 21
+      max: 9999
+    reward:
+      rewardType: 1
+      rewardID: "1905_tw_gary_bp_1"
+      amount: 1
+      expireTimeSecs: 259200
+    i18nTitle: "baggage_mission_send_specific_gifts_reward_title"
+    i18nTitleParams:
+      - needMap: false
+        value: "3"
+      - needMap: true
+        mapOption: 1
+        value: gift_1905_tw_gary_100
+      - needMap: true
+        mapOption: 1
+        value: gift_1905_tw_gary_1000
+      - needMap: true
+        mapOption: 1
+        value: gift_1905_tw_gary_10000
+    i18nContent: "baggage_mission_send_specific_gifts_reward_desc"
+    i18nContentParams:
+      - needMap: true
+        mapOption: 1
+        value: gift_1905_tw_gary_bp_1
+    i18nDescription: "baggage_mission_opt_send_specific_gifts_reward_desc"
+    i18nDescriptionParams:
+      - needMap: false
+        value: "21"
+    goalValue: 3
+    enableTimeRange:
+      - startTime: "2019-05-19 18:00:00 (GMT+0800)"
+        endTime: "2019-06-02 23:59:59 (GMT+0800)"
+    refIDs:
+      - 1905_tw_gary_100
+      - 1905_tw_gary_1000
+      - 1905_tw_gary_10000
+    platforms:
+      - android
+      - ios
+      - web
+
 
 #tagInfos
 tagInfos:
