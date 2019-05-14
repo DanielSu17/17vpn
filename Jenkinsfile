@@ -158,6 +158,16 @@ node('gcp') { timestamps { ansiColor('xterm') {
               usernameVariable: 'DOCKER_USER'
           )
       ]) {
+        def message_prefix = ''
+        def slackUserID = sh(returnStdout: true, "git log --format=%B -n 1 " + params.REVISION + " | awk '/slackUserID: /{print $2}'")
+        if slackUserID.length() > 0 {
+            message_prefix = '<@' + slackUserID + '>\n'
+        }
+
+        def message_started = message_prefix + '17media/configs - Job Start\n*Commit:* ' + params.REVISION + '(<https://github.com/17media/configs/commit/' + params.REVISION + '|GitHub>)'
+        def message_failure = message_prefix + '17media/configs - Job Failed\n*Commit:* ' + params.REVISION + '(<https://github.com/17media/configs/commit/' + params.REVISION + '|GitHub>)\n@sre @here'
+        def message_success = message_prefix + '17media/configs - Job Completed\n*Commit:* ' + params.REVISION + '(<https://github.com/17media/configs/commit/' + params.REVISION + '|GitHub>)'
+
         // force exit if job execution time over 180 seconds
         timeout(time: 180, unit: 'SECONDS') {
           // post slack message before job start
@@ -165,7 +175,7 @@ node('gcp') { timestamps { ansiColor('xterm') {
               baseUrl: 'https://17media.slack.com/services/hooks/jenkins-ci/',
               tokenCredentialId: '883d8435-4b52-48cb-a282-c7995cb26b69',
               channel: slack_channel,
-              message: '17media/configs - Job Start\n*Commit:* ' + params.REVISION + '(<https://github.com/17media/configs/commit/' + params.REVISION + '|GitHub>)',
+              message: message_started,
               failOnError: true,
               color: 'good',
           )
@@ -180,7 +190,7 @@ node('gcp') { timestamps { ansiColor('xterm') {
                 baseUrl: 'https://17media.slack.com/services/hooks/jenkins-ci/',
                 tokenCredentialId: '883d8435-4b52-48cb-a282-c7995cb26b69',
                 channel: slack_channel,
-                message: '17media/configs - Job Failed\n*Commit:* ' + params.REVISION + '(<https://github.com/17media/configs/commit/' + params.REVISION + '|GitHub>)\n@sre @here',
+                message: message_failure,
                 failOnError: true,
                 color: 'danger',
             )
@@ -192,7 +202,7 @@ node('gcp') { timestamps { ansiColor('xterm') {
               baseUrl: 'https://17media.slack.com/services/hooks/jenkins-ci/',
               tokenCredentialId: '883d8435-4b52-48cb-a282-c7995cb26b69',
               channel: slack_channel,
-              message: '17media/configs - Job Completed\n*Commit:* ' + params.REVISION + '(<https://github.com/17media/configs/commit/' + params.REVISION + '|GitHub>)',
+              message: message_success,
               failOnError: true,
               color: 'good',
           )
