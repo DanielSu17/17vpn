@@ -161,7 +161,7 @@ node('gcp') { timestamps { ansiColor('xterm') {
         def message_prefix = ''
         def getSlackUserId = "git log --format=%B -n 1 " + params.REVISION + " | awk '/slackUserID: /{print \$2}'"
         def slackUserID = sh(returnStdout: true, getSlackUserId)
-        if slackUserID.length() > 0 {
+        if (slackUserID.length() > 0) {
             message_prefix = '<@' + slackUserID + '>\n'
         }
 
