@@ -317,6 +317,11 @@ func mergePush() {
 	execCommand("./", "git", []string{"config", "user.name", "Jenkins"})
 	execCommand("./", "git", []string{"config", "user.email", "no-reply@17.media"})
 
+	// always try to rebase "master" before merging i18n changes, or etcd-pusher's slack notification will failed to retrieve slackUserId
+	execCommand("./", "git", []string{"checkout", "origin/" + gitBranch + "_" + branch_suffix})
+
+	execCommand("./", "git", []string{"rebase", "master"})
+
 	execCommand("./", "git", []string{"checkout", "master"})
 
 	execCommand("./", "git", []string{"merge", "origin/" + gitBranch + "_" + branch_suffix})
