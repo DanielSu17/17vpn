@@ -5,6 +5,7 @@
 # it'll fallback to and leverage disableSignInHottest setting.
 # a complete setting is like:
 # - userID:
+#   skipRewardUI: // if true, app will skip the rewardUI before entering liveStream
 #   timeSlots:
 #     - startTime:
 #       endTime:
@@ -12,7 +13,7 @@
 # "disableSignInHottest" setting is under "dailyquest.yaml"
 #
 - userID: 567e0b5d-1516-4ce0-b4e8-bec4e756d5ae # kevinmh
-  autoRedirect: true
+  skipRewardUI: true
   timeSlots:
     - startTime: 2019-02-20 00:00:00 (GMT+0800)
       endTime: 2019-02-20 01:00:00 (GMT+0800)
