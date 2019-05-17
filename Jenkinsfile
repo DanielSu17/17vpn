@@ -7,6 +7,7 @@
 //   build failure, it's limitation of Jenkins WebUI limitation by design,
 //   it's not a bug, don't report it as bug!!!
 
+// dummy change for debug
 
 def etcdServiceEndpointsStag = [
     'http://35.229.178.57:2379',
