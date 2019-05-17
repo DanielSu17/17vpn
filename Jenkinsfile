@@ -174,13 +174,14 @@ node('gcp') { timestamps { ansiColor('xterm') {
         def getSlackUserId = "git log --format=%B -n 1 " + params.REVISION + " | awk '/slackUserID: /{print \$2}'"
         def slackUserID = sh(returnStdout: true, script: getSlackUserId)
         if (slackUserID.length() > 0) {
+            echo "[debug] slackUserID: " + slackUserID
             message_prefix = '<@' + slackUserID + '>\n'
         }
 
         def githubCommitLink = 'https://github.com/17media/configs/commit/' + params.REVISION
-        def message_started = message_prefix + '17media/configs - Job Start\n*Commit:* <'     + githubCommitLink + '|' + params.REVISION + '>'
-        def message_failure = message_prefix + '17media/configs - Job Failed\n*Commit:* <'    + githubCommitLink + '|' + params.REVISION + '>\n@sre @here'
-        def message_success = message_prefix + '17media/configs - Job Completed\n*Commit:* <' + githubCommitLink + '|' + params.REVISION + '>'
+        def message_started = message_prefix + '17media/configs - Job Start\n*Commit:* <'     + githubCommitLink + '|' + params.REVISION + '> (' + env.BUILD_URL + '|Jenkins>)'
+        def message_failure = message_prefix + '17media/configs - Job Failed\n*Commit:* <'    + githubCommitLink + '|' + params.REVISION + '> (' + env.BUILD_URL + '|Jenkins>)\n@sre @here'
+        def message_success = message_prefix + '17media/configs - Job Completed\n*Commit:* <' + githubCommitLink + '|' + params.REVISION + '> (' + env.BUILD_URL + '|Jenkins>)'
 
         // force exit if job execution time over 180 seconds
         timeout(time: 180, unit: 'SECONDS') {
