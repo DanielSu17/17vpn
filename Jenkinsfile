@@ -14,7 +14,7 @@ def etcdServiceEndpointsStag = [
     'http://35.229.192.119:2379',
 ]
 
-def etcdServiceEndpointsProd= [
+def etcdServiceEndpointsProd = [
     'http://35.227.155.196:2379',
     'http://35.247.92.108:2379',
     'http://35.230.16.11:2379',
