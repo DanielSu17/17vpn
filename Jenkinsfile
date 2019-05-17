@@ -7,8 +7,6 @@
 //   build failure, it's limitation of Jenkins WebUI limitation by design,
 //   it's not a bug, don't report it as bug!!!
 
-// dummy change for debug
-
 def etcdServiceEndpointsStag = [
     'http://35.229.178.57:2379',
     'http://35.194.226.164:2379',
@@ -174,9 +172,9 @@ node('gcp') { timestamps { ansiColor('xterm') {
         def message_prefix = ''
         def getSlackUserId = "git log --format=%B -n 1 " + params.REVISION + " | awk '/slackUserID: /{print \$2}'"
         def slackUserID = sh(returnStdout: true, script: getSlackUserId)
-        if (slackUserID.length() > 0) {
-            echo "[debug] slackUserID: " + slackUserID
-            message_prefix = '<@' + slackUserID + '>\n'
+        if (slackUserID.trim().length() > 0) {
+            echo "[debug] slackUserID: " + slackUserID.trim()
+            message_prefix = '<@' + slackUserID.trim() + '>\n'
         }
 
         def githubCommitLink = 'https://github.com/17media/configs/commit/' + params.REVISION
