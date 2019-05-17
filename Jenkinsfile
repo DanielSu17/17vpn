@@ -179,9 +179,9 @@ node('gcp') { timestamps { ansiColor('xterm') {
         }
 
         def githubCommitLink = 'https://github.com/17media/configs/commit/' + params.REVISION
-        def message_started = message_prefix + '17media/configs - Job Start\n*Commit:* <'     + githubCommitLink + '|' + params.REVISION + '> (' + env.BUILD_URL + '|Jenkins>)'
-        def message_failure = message_prefix + '17media/configs - Job Failed\n*Commit:* <'    + githubCommitLink + '|' + params.REVISION + '> (' + env.BUILD_URL + '|Jenkins>)\n@sre @here'
-        def message_success = message_prefix + '17media/configs - Job Completed\n*Commit:* <' + githubCommitLink + '|' + params.REVISION + '> (' + env.BUILD_URL + '|Jenkins>)'
+        def message_started = message_prefix + '17media/configs - Job Start\n*Commit:* <'     + githubCommitLink + '|' + params.REVISION + '> (<' + env.BUILD_URL + '|Jenkins>)'
+        def message_failure = message_prefix + '17media/configs - Job Failed\n*Commit:* <'    + githubCommitLink + '|' + params.REVISION + '> (<' + env.BUILD_URL + '|Jenkins>)\n@sre @here'
+        def message_success = message_prefix + '17media/configs - Job Completed\n*Commit:* <' + githubCommitLink + '|' + params.REVISION + '> (<' + env.BUILD_URL + '|Jenkins>)'
 
         // force exit if job execution time over 180 seconds
         timeout(time: 180, unit: 'SECONDS') {
