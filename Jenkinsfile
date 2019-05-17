@@ -118,6 +118,11 @@ properties([
             description: 'ETCD Service Endpoints List for the Wave Service (Production)',
             name: 'ENDPOINTS_WAVE_PROD',
             trim: true
+        ),
+        booleanParam(
+            defaultValue: true,
+            description: 'Enable Slack Notification?',
+            name: 'SEND_SLACK'
         )]
     )
 ])
@@ -156,8 +161,6 @@ node('gcp') { timestamps { ansiColor('xterm') {
   } // end of stage
 
   stage('Push Changes to ETCD Clusters') {
-    def slack_channel = "#dev-event-configs"
-
     dir('configs') {
       // get DOCKER_USER/DOCKER_PASS from Jenkins credential provider
       withCredentials([
@@ -181,14 +184,7 @@ node('gcp') { timestamps { ansiColor('xterm') {
         // force exit if job execution time over 180 seconds
         timeout(time: 180, unit: 'SECONDS') {
           // post slack message before job start
-          slackSend(
-              baseUrl: 'https://17media.slack.com/services/hooks/jenkins-ci/',
-              tokenCredentialId: '883d8435-4b52-48cb-a282-c7995cb26b69',
-              channel: slack_channel,
-              message: message_started,
-              failOnError: true,
-              color: 'good',
-          )
+          postNotification(message_started, 'good')
 
           try {
             sh("docker version")
@@ -196,28 +192,27 @@ node('gcp') { timestamps { ansiColor('xterm') {
             sh('./push_to_etcd.sh')
           } catch (e) {
             // post slack message if job failed
-            slackSend(
-                baseUrl: 'https://17media.slack.com/services/hooks/jenkins-ci/',
-                tokenCredentialId: '883d8435-4b52-48cb-a282-c7995cb26b69',
-                channel: slack_channel,
-                message: message_failure,
-                failOnError: true,
-                color: 'danger',
-            )
+            postNotification(message_failure, 'danger')
             error "failed"
           }
 
           // post slack message after job completed
-          slackSend(
-              baseUrl: 'https://17media.slack.com/services/hooks/jenkins-ci/',
-              tokenCredentialId: '883d8435-4b52-48cb-a282-c7995cb26b69',
-              channel: slack_channel,
-              message: message_success,
-              failOnError: true,
-              color: 'good',
-          )
+          postNotification(message_success, 'good')
         } // end of timeout
       }
     } // end of dir
   } // end of stage
 } /* end of ansiColor */ } /* end of timestamps */ } /* end of node */
+
+def postNotification(message, color) {
+  if (params.SEND_SLACK) {
+    slackSend(
+      baseUrl: 'https://17media.slack.com/services/hooks/jenkins-ci/',
+      tokenCredentialId: '883d8435-4b52-48cb-a282-c7995cb26b69',
+      channel: '#dev-event-configs',
+      failOnError: true,
+      message: message,
+      color: color,
+    )
+  }
+}
