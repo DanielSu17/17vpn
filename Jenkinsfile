@@ -45,9 +45,9 @@ def etcdServiceEndpointsProdZoo = [
 ]
 
 def etcdServiceEndpointsStagWave = [
-    'http://35.221.189.46:2379',
-    'http://104.199.161.59:2379',
-    'http://34.80.98.223:2379',
+    'http://104.155.199.157:2379',
+    'http://34.80.119.114:2379',
+    'http://130.211.252.145:2379',
 ]
 
 def etcdServiceEndpointsProdWave = [
