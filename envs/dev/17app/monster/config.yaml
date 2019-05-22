@@ -75,6 +75,39 @@ monsters:
   failureToken: {key: monster_battle_summon_failure_nian,fontAttribute: {textColor: "#FFFFFF"}}
   successToken: {key: monster_battle_summon_success_nian,fontAttribute: {textColor: "#FFFFFF"}}
 
+- id: monster_wildwolf
+  hit_consume: 10
+  duration: 60s
+  stream_alive_threshold: 1m00s
+  animation: cowboy # TODO: no material now 
+  available_dates:
+  - start_date: "2019-05-28T18:00:00+08:00"
+    end_date: "2019-06-04T23:59:59+08:00"
+  appear_durations:
+  - start_time: 00h00m00s
+    end_time: 24h00m00s
+  type: 1
+  summonGifts:
+  - giftID: "1904_tw_cowboy_20000" # TODO: no material now 
+    probability: 2000 # n / 10000 * 100%
+  - giftID: "1904_tw_cowboy_2000" # TODO: no material now 
+    probability: 200 # n / 10000 * 100%
+  - giftID: "1904_tw_cowboy_200" # TODO: no material now 
+    probability: 0 # n / 10000 * 100%
+  share_ratio: 50 # percentage
+  profit_ratio: 35 # percentage
+  bonus: 336
+  infoPageiconURL: https://assets-17app.akamaized.net/2eaf753e-20d3-429e-a172-eb14c44e21dc.png # TODO: no material now 
+  winnerPageiconURL: https://assets-17app.akamaized.net/bd258999-59b2-4170-91e6-649dac5a1356.png # TODO: no material now 
+  hintToken: {key: monster_battle_wolf_hint_wolf,fontAttribute: {textColor: "#FFFFFF"}}
+  rule1Token: {key: monster_battle_summon_rule1_wolf,fontAttribute: {textColor: "#FFFFFF"}}
+  rule2Token: {key: monster_battle_summon_rule2_wolf,fontAttribute: {textColor: "#FFFFFF"}}
+  rule3Token: {key: monster_battle_summon_rule3_wolf,fontAttribute: {textColor: "#FFFFFF"}}
+  rule4Token: {key: monster_battle_summon__rule4_wolf,fontAttribute: {textColor: "#FFFFFF"}}
+  countdownToken: {key: monster_battle_wolf_countdown_wolf,fontAttribute: {textColor: "#FFFFFF"}}
+  failureToken: {key: monster_battle_wolf_failure_wolf,fontAttribute: {textColor: "#FFFFFF"}}
+  successToken: {key: monster_battle_wolf_success_wolf,fontAttribute: {textColor: "#FFFFFF"}}
+
 animationLoader:
 - url: https://assets-17app.akamaized.net/98b26445-2625-49a5-a541-ddf6a0256c00.zip
   webpUrl: https://assets-17app.akamaized.net/d679eb31-e6d9-456c-a32e-9551fed77bf6-q90-s1.webp
@@ -151,3 +184,29 @@ animationLoader:
   animationID: nian_success
   MD5: eaefbb6da04f9400e1ab24bb887144e8
   webpMD5: 6c2d367ae929eace2dab9d7611f21bfc
+# wildwolf # TODO: no material now 
+- url: https://assets-17app.akamaized.net/a9225e4a-3800-4a85-8b1f-75593a5be0f6.zip
+  webpUrl: https://assets-17app.akamaized.net/d0a968bd-40c6-47b6-8477-8d9afb532511-q90-s1.webp
+  animationID: cowboy_attack
+  MD5: 9126f934e03bc8c2a7b9cd562b89187b
+  webpMD5: c944862ff354c563fb4bbc2e4083d7bc
+- url: https://assets-17app.akamaized.net/2d38e8b1-e01b-480a-84f7-fa5abcb6b4db.zip
+  webpUrl: https://assets-17app.akamaized.net/da789cd6-6711-4046-a81c-18b4c2ec3991-q90-s1.webp
+  animationID: cowboy_enter
+  MD5: 95e067c0cc353a9c81a8e6e619c3d54f
+  webpMD5: a72bf71a3a67b719dc8c70f1bbced3e1
+- url: https://assets-17app.akamaized.net/7036ebfa-dffe-4b6f-84aa-6672149801b8.zip
+  webpUrl: https://assets-17app.akamaized.net/19b1f5b3-bfa5-4d02-b8f6-a0273ae82c03-q90-s1.webp
+  animationID: cowboy_failure
+  MD5: 472b7240906f93db4d0b89513ab02cfc
+  webpMD5: 947cf5d1f8f0115798d67875f6b48ad0
+- url: https://assets-17app.akamaized.net/30b7bcac-8759-4718-a2ef-a105bdc61151.zip
+  webpUrl: https://assets-17app.akamaized.net/6702403b-69b5-43c3-81cc-6d9a87dc2ab3-q90-s1.webp
+  animationID: cowboy_idle
+  MD5: 83ecf2bcc6f6c9420605534c2afe508b
+  webpMD5: 439d927a2c1fe37737cd9031d65e3f99
+- url: https://assets-17app.akamaized.net/2367a062-15bd-45e8-932d-2ebd1bd7d5ba.zip
+  webpUrl: https://assets-17app.akamaized.net/b00cb650-b2e1-4c70-b7b2-14ba9289bbda-q90-s1.webp
+  animationID: cowboy_success
+  MD5: 4c11dfaa2ec817d54da682ce334fd5eb
+  webpMD5: 39031c98760f4232253471624c2dc8fb
