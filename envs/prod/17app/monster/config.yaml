@@ -158,6 +158,39 @@ monsters:
   failureToken: {key: monster_battle_summon_failure_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
   successToken: {key: monster_battle_summon_success_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
 
+- id: monster_wildwolf
+  hit_consume: 10
+  duration: 60s
+  stream_alive_threshold: 1m00s
+  animation: wolf
+  available_dates:
+  - start_date: "2019-05-28T18:00:00+08:00"
+    end_date: "2019-06-04T23:59:59+08:00"
+  appear_durations:
+  - start_time: 00h00m00s
+    end_time: 24h00m00s
+  type: 1
+  summonGifts:
+  - giftID: "1905_tw_wolf_15000"
+    probability: 2000 # n / 10000 * 100%
+  - giftID: "1905_tw_wolf_1500"
+    probability: 200 # n / 10000 * 100%
+  - giftID: "1905_tw_wolf_150"
+    probability: 0 # n / 10000 * 100%
+  share_ratio: 50 # percentage
+  profit_ratio: 35 # percentage
+  bonus: 336
+  infoPageiconURL: https://assets-17app.akamaized.net/14c74f12-e37f-4d5a-87e8-bd4067bfee22.png
+  winnerPageiconURL: https://assets-17app.akamaized.net/219c3787-e8ee-4265-953d-ee471c2f5df7.png
+  hintToken: {key: monster_battle_wolf_hint_wolf,fontAttribute: {textColor: "#FFFFFF"}}
+  rule1Token: {key: monster_battle_wolf_rule1,fontAttribute: {textColor: "#FFFFFF"}}
+  rule2Token: {key: monster_battle_wolf_rule2,fontAttribute: {textColor: "#FFFFFF"}}
+  rule3Token: {key: monster_battle_wolf_rule3,fontAttribute: {textColor: "#FFFFFF"}}
+  rule4Token: {key: monster_battle_wolf_rule4,fontAttribute: {textColor: "#FFFFFF"}}
+  countdownToken: {key: monster_battle_wolf_countdown,fontAttribute: {textColor: "#FFFFFF"}}
+  failureToken: {key: monster_battle_wolf_failure,fontAttribute: {textColor: "#FFFFFF"}}
+  successToken: {key: monster_battle_wolf_success,fontAttribute: {textColor: "#FFFFFF"}}
+
 
 # - id: monster_llama
 #   hit_consume: 10
@@ -365,3 +398,29 @@ animationLoader:
   animationID: cowboy_success
   MD5: 4c11dfaa2ec817d54da682ce334fd5eb
   webpMD5: 39031c98760f4232253471624c2dc8fb
+# wolf
+- url: https://assets-17app.akamaized.net/d7cb5738-eb7f-4c87-b162-819201280fbb.zip
+  webpUrl: https://assets-17app.akamaized.net/f182304b-9ef5-43d3-8aa6-07088f032fd1-q90-s1.webp
+  animationID: wolf_attack
+  MD5: 29d7ea892c2d1eac546cd0d894abbe17
+  webpMD5: 10d12d3a80af62d884b851ca7bb5638a
+- url: https://assets-17app.akamaized.net/8213dd3d-0e0c-4335-8ce1-5b31c9ff3b46.zip
+  webpUrl: https://assets-17app.akamaized.net/95588a1f-107e-431c-8633-ea91a21a7035-q90-s1.webp
+  animationID: wolf_enter
+  MD5: a93f887c328fa5e3726245c9b1642377
+  webpMD5: f10da35aa9c18bd92eaea60cf1998aeb
+- url: https://assets-17app.akamaized.net/95e4d9ee-5ee9-43ee-b2bf-8e1d55ee0595.zip
+  webpUrl: https://assets-17app.akamaized.net/addebd8c-2c1a-44b7-91e5-a0bad29ee769-q90-s1.webp
+  animationID: wolf_failure
+  MD5: cd4fe6a08cce3d2645e16cf62a77fbc3
+  webpMD5: d8964f5c64a099005eb0b6bf54b630f5
+- url: https://assets-17app.akamaized.net/2519c37e-4e8a-4418-ae28-46cbdc1868d7.zip
+  webpUrl: https://assets-17app.akamaized.net/4fdd83cb-e284-4130-94cc-3336c86c7750-q90-s1.webp
+  animationID: wolf_idle
+  MD5: d43397ef95868b0c090862f989427ce6
+  webpMD5: 8c1068d16f58939762066b17e531b76d
+- url: https://assets-17app.akamaized.net/fb571ff0-6dba-418d-855d-84d6705dc9b8.zip
+  webpUrl: https://assets-17app.akamaized.net/97698211-4c7e-47ec-a48a-868b753db8e8-q90-s1.webp
+  animationID: wolf_success
+  MD5: 3d658057717486d8e5d7b33677631f51
+  webpMD5: be44761d22ec839cd1585fd76e7ec285
