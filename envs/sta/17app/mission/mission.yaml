@@ -28,22 +28,25 @@
 
 missions:
   - ID: 2af0a360-abc7-4bc0-a81e-d0ae1c79760d
-    type: 9 #View_Stream_X_Seconds
+    type: 9
+    lifeCycle: 0
+    targetAudience: 0
     reward:
       rewardType: 1
-      rewardID: "1810_tw_live_bp_10"
+      rewardID: 1810_tw_live_bp_10
       amount: 1
       expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_watch_streams_time_in_total_reward_title"
+    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
     i18nTitleParams:
       - needMap: false
-        value: "15"
-    i18nContent: "baggage_mission_watch_streams_time_in_total_reward_desc"
+        mapOption: 0
+        value: 15
+    i18nContent: baggage_mission_watch_streams_time_in_total_reward_desc
     i18nContentParams:
       - needMap: true
         mapOption: 1
         value: gift_1905_tw_gang_bp_1
-    i18nDescription: "baggage_mission_opt_watch_streams_time_in_total_reward_desc"
+    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
     i18nDescriptionParams:
     goalValue: 900
     enableTimeRange:
@@ -64,9 +67,9 @@ tagInfos:
     token:
       key: "baggage_mission_one_time_tag"
     color: "#F6696C"
-    
+
 i18nMissionCompleteToast: "baggage_mission_toast_claimed"
-refreshHour: 17 # 3:00AM(GMT+8)
+refreshHour: 17 # 17:00 (GMT+8)
 supportedVersion:
   android: "2.3.17"
   ios: "3.8.0"

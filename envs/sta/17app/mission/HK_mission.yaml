@@ -1,28 +1,32 @@
-missions:
-#  - ID: 12c45e66-9ec0-41db-a34e-b27f6b6324db
-#    type: 8 #IAP
-#    lifeCycle: 1 #ONETIME
-#    targetAudience: 2 #NON_IAP
-#    reward:
-#      rewardType: 1
-#      rewardID: "hk_bp_first_deposit_bonus"
-#      amount: 1
-#      expireTimeSecs: 86400
-#    i18nTitle: "baggage_mission_first_time_IAP_reward_hk_title"
-#    i18nTitleParams:
-#    i18nContent: "baggage_mission_first_time_IAP_reward_hk_desc"
-#    i18nContentParams:
-#      - needMap: true
-#        mapOption: 1
-#        value: "gift_hk_bp_first_deposit_bonus"
-#    goalValue: 1
-#    enableTimeRange:
-#      - startTime: "2018-10-14 18:00:00 (GMT+0800)"
-#        endTime: "2018-12-20 23:59:59 (GMT+0900)"
-#    platforms:
-#      - android
-#      - ios
+# // | type | Value |
+# // | --- | --- |
+# // | Trivia_DayTime_Answer | 1 |
+# // | Trivia_Night_Answer | 2 |
+# // | Send_Gift | 3 |
+# // | Comment_In_Program | 4 |
+# // | Comment_In_Livestream | 5 |
+# // | Trivia_On_TV_Play | 6 |
+# // | Trivia_Play | 7 |
+# // | IAP_Buy_Point | 8 |
+# // | View_Stream_X_Seconds | 9 |
 
+# // | category | Value |
+# // | --- | --- |
+# // | Fixed | 0 |
+# // | Ratio | 1 |
+
+# // | lifeCycle | Value |
+# // | --- | --- |
+# // | Daily | 0 |
+# // | OneTime | 1 |
+
+# // | targetAudience | Value |
+# // | --- | --- |
+# // | REGIONAL | 0 |
+# // | IAP | 1 |
+# // | NON_IAP | 2 |
+
+missions:
 #tagInfos
 tagInfos:
   0: # Daily
@@ -33,9 +37,9 @@ tagInfos:
     token:
       key: "baggage_mission_one_time_tag"
     color: "#F6696C"
-    
+
 i18nMissionCompleteToast: "baggage_mission_toast_claimed"
-refreshHour: 5 # 5:00AM(GMT+8)
+refreshHour: 5 # 5:00 (GMT+8)
 supportedVersion:
   android: "2.3.17"
   ios: "3.8.0"

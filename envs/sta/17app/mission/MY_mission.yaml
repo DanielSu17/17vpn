@@ -25,44 +25,8 @@
 # // | REGIONAL | 0 |
 # // | IAP | 1 |
 # // | NON_IAP | 2 |
-missions:
-  - ID: c314bde2-c5f8-4de3-8cd4-02a13f79d3b9
-    type: 3 #送禮
-    reward:
-      rewardType: 1
-      rewardID: "1810_my_deluxe_hotel_bag"
-      amount: 3
-      expireTimeSecs: 86400
-    i18nTitle: "baggage_mission_send_specific_gifts_reward_title"
-    i18nTitleParams:
-      - needMap: false
-        value: "10"
-      - needMap: true
-        mapOption: 1
-        value: "gift_1810_my_deluxe_hotel_100"
-      - needMap: true
-        mapOption: 1
-        value: "gift_1810_my_deluxe_hotel_1000"
-      - needMap: true
-        mapOption: 1
-        value: "gift_1810_my_deluxe_hotel_10000"
-    i18nContent: "baggage_mission_send_specific_gifts_reward_desc"
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: "gift_1810_my_deluxe_hotel_bag"
-    goalValue: 10
-    enableTimeRange:
-      - startTime: "2018-09-28 18:00:00 (GMT+0800)"
-        endTime: "2018-10-14 23:59:59 (GMT+0800)"
-    refIDs:
-      - 1810_my_deluxe_hotel_100
-      - 1810_my_deluxe_hotel_1000
-      - 1810_my_deluxe_hotel_10000
-    platforms:
-      - android
-      - ios
 
+missions:
 #tagInfos
 tagInfos:
   0: # Daily
@@ -73,9 +37,9 @@ tagInfos:
     token:
       key: "baggage_mission_one_time_tag"
     color: "#F6696C"
-    
+
 i18nMissionCompleteToast: "baggage_mission_toast_claimed"
-refreshHour: 5 # 5:00AM(GMT+8)
+refreshHour: 5 # 5:00 (GMT+8)
 supportedVersion:
   android: "2.3.17"
   ios: "3.8.0"
