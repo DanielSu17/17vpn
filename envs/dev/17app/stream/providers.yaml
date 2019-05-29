@@ -1,0 +1,92 @@
+default_provider:
+  rtmp_provider: 0
+  message_provider_general: 0
+  message_provider_17q: 0
+rtmp_providers:
+- name: DEFAULT
+  quality_support: 0
+  weight: 0
+- name: UCLOUD
+  quality_support: 0
+  weight: 0
+- name: QINIU
+  quality_support: 0
+  weight: 50
+  expire_after_hours: 3
+  users:
+  - ab713974-0018-4095-9f18-d98c41624004
+  - 7ca0983b-3fa3-4e2c-9ebf-093ea4b92d2a
+- name: QCLOUD
+  quality_support: 0
+  weight: 0
+- name: WANSU
+  quality_support: 1
+  weight: 50
+  users:
+  - 0b32cef6-4bcf-4461-bd51-3e40b46562a9
+  - 6f9e06d9-7da6-4c09-a4f2-7d9b2e234000
+  - b1e571ee-fce8-4ed2-add0-39f6a2844955
+- name: WANSU_LOW_LATENCY
+  quality_support: 1
+  weight: 0
+  users:
+  - e69c177a-e393-4993-5f4c-b2e21d95ae16
+  - 1f413748-d33d-4e26-56ce-2c3285c02fd3
+  - 32580e4a-25e6-4f29-4a0d-e46c290aeece
+  - 48ca8e9e-0ca1-4d7f-6b2c-ffd21e5a4ff6
+  - 9ac835fa-0cb7-4bbc-71fe-f6e3dfa859d5
+- name: WANSU_SPECIFIED_IP
+  quality_support: 1
+  weight: 0
+  users: []
+- name: SRS
+  quality_support: 0
+  weight: 0
+  users:
+  - e257e914-5009-48d9-5e8b-3c6da3f2026f
+  - c6e35e23-2018-47b2-afc8-adfd8ace1e22
+  - 567e0b5d-1516-4ce0-b4e8-bec4e756d5ae
+message_providers_17q:
+- name: PUBNUB_MESSAGE
+  weight: 0
+  users: []
+- name: WANSU_MESSAGE
+  weight: 100
+  users: []
+message_providers_general:
+- name: PUBNUB_MESSAGE
+  weight: 100
+  users:
+  - fdf8f01d-3d64-4fc3-5e31-6a292f5c4ef2
+  - 30cfa38d-fb31-420c-8b15-3ec76aeca8bd
+  - 304a38cd-ad43-4df1-b0bb-6e62f39248d5
+  - 1f413748-d33d-4e26-56ce-2c3285c02fd3
+  - 94b56df0-336b-4968-7c41-88ec85246024
+  - 6e9af721-55c5-41d7-91a4-387aceec94a6
+  - 2e723e40-5ddf-438a-8d2d-4c0ad57c5921
+  - 625632ad-99a5-4257-bb2c-a2eeddcbaaed
+- name: WANSU_MESSAGE
+  weight: 0
+  users:
+  - 913fb7e6-10b9-4c68-ab0b-41a84847be2e
+  - d1cd5a6a-3346-4263-85ef-c9f3a600de39
+  - 3128adcd-ea2c-438d-93cf-00baf1d7374a
+  - 9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba
+message_providers_dynamic:
+- name: PUBNUB_MESSAGE
+  weight: 0
+  users:
+  - fdf8f01d-3d64-4fc3-5e31-6a292f5c4ef2
+  - 30cfa38d-fb31-420c-8b15-3ec76aeca8bd
+  - 304a38cd-ad43-4df1-b0bb-6e62f39248d5
+  - 1f413748-d33d-4e26-56ce-2c3285c02fd3
+  - 94b56df0-336b-4968-7c41-88ec85246024
+  - 6e9af721-55c5-41d7-91a4-387aceec94a6
+  - 2e723e40-5ddf-438a-8d2d-4c0ad57c5921
+  - 625632ad-99a5-4257-bb2c-a2eeddcbaaed
+- name: WANSU_MESSAGE
+  weight: 0
+  users:
+  - 913fb7e6-10b9-4c68-ab0b-41a84847be2e
+  - d1cd5a6a-3346-4263-85ef-c9f3a600de39
+  - 9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba
