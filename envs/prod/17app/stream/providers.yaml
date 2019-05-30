@@ -11,6 +11,8 @@ rtmp_providers:
   weight: 0
 - name: QINIU
   weight: 20
+  region_weights:
+    TW: 20
   quality_support: 0
   expire_after_hours: 12
   users:
@@ -51,6 +53,8 @@ rtmp_providers:
   weight: 0
 - name: WANSU
   weight: 80
+  region_weights:
+    TW: 80
   quality_support: 1
   users:
   - 81bb8d64-06d3-4365-bb57-1c223d6e09cd
