@@ -6,3 +6,8 @@ rate_limits:
   flow_per_second: 1
   reservoir_size: 2
   scope: by_access_token
+- url: "/api/v1/storage"
+  method: "POST"
+  flow_per_second: 0.017  # 1 unit/min
+  reservoir_size: 3
+  scope: by_access_token
