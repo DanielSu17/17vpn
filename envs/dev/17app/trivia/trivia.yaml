@@ -118,21 +118,22 @@ hosts:
 
 referral:
   registerDay: 3
-  quizNo: 11
-bannerOnTV: false
-# avavil version to enter 八大金頭腦, else force udpate
+  quizNo: 7
+bannerOnTV: true
+# avavil version to enter 17Q, else force udpate
 devices:
   ios:
-    version: "2.02"
+    version: "3.53.0"
   android:
-    version: "2.2.56"
+    version: "2.3.83"
 devicesOnTV:
   ios:
-    version: "2.13"
+    version: "3.53.0"
   android:
-    version: "2.2.71"
+    version: "2.3.83"
 checkAnswerSign: false
 medalActivity:
-  countdown: 5
-  sendRateLimit: 30 # seconds
-  maxAcceptDelay: 30 # seconds
+  countdown: 10
+  sendRateLimit: 10 # seconds
+  maxAcceptDelay: 10 # seconds
+triviaOnTVSupportsMedal: true
