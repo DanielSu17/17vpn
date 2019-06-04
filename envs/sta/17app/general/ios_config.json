@@ -45,5 +45,31 @@
   },
   "debug_info": {
 	  "bugsee": 1
+  },
+  "ios_features" : {
+      "ping" : {
+          "streamer" : {
+              "enable" : 1,
+              "host" : "8.8.8.8",
+              "interval" : 10
+          },
+          "viewer" : {
+              "enable" : 0,
+              "host" : "8.8.8.8",
+              "interval" : 10
+          }
+      },
+      "traceroute" : {
+          "streamer" : {
+              "enable" : 1,
+              "host" : "",
+              "interval" : 0
+          },
+          "viewer" : {
+              "enable" : 0,
+              "host" : "",
+              "interval" : 0
+          }
+      }
   }
 }
