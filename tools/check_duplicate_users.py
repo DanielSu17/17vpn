@@ -1,20 +1,20 @@
 #!/usr/bin/env python3
 
-import json
 import os
 import platform
 import sys
+import yaml
 
 print("Python Runtime Version: {0}".format(platform.python_version()))
 
-target_file = "envs/prod/17app/stream/supporttypes.json"
+target_file = "envs/prod/17app/stream/providers.yaml"
 
 with open(target_file, 'r') as f:
-    data = json.load(f)
+    data = yaml.load(f)
 
 # construct dict of users
 users_dict = {}
-for provider_config in data['rtmp_cdn']:
+for provider_config in data['rtmp_providers']:
     # skip if no 'name' defined
     if 'name' not in provider_config.keys():
         continue
