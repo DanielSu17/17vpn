@@ -109,5 +109,20 @@
                  "devices": [
                  ]
 	},
-        "useGiftImplInViewer":true
+        "useGiftImplInViewer":true,
+        "ping" : {
+              "streamer" : {
+                  "apply_version" : "3.55.0",
+                  "host" : "8.8.8.8",
+                  "interval" : 10
+              },
+              "viewer" : {
+                  "apply_version" : "3.55.0",
+                  "host" : "8.8.8.8",
+                  "interval" : 10
+              },
+              "high_latency_threshold" : 200,
+              "low_latency_threshold" : 90,
+              "retry_times" : 5
+      }
 }
