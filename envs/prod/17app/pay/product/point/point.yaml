@@ -10,8 +10,8 @@
 # // | CareerFirstTime |  1  | 生涯首儲
 
 eventBasedIAP:
-  - startTime: "2019-05-30T00:00:00+08:00"
-    endTime: "2019-05-30T23:59:59+08:00"
+  - startTime: "2019-06-08T00:00:00+08:00"
+    endTime: "2019-06-10T23:59:59+08:00"
     showCountdownUnderSticker: true
     showCountdownInPopUp: true
     stickerURL: "https://assets-17app.akamaized.net/579c9557-8f5e-4dc9-a31a-e4328990cd2d.png"
@@ -22,7 +22,7 @@ eventBasedIAP:
       titlePicURL: "https://assets-17app.akamaized.net/33fd34d5-217a-4449-baab-1d88b3910d81.png"
       messageColor: "#FCF3ED"
       messageShadowColor: "#710000"
-      messageI18nKey: "iap_modal_premium_marquee_premium_point"
+      messageI18nKey: "iap_modal_premium_marquee_premium_baby_sales"
       descBgURL: "https://assets-17app.akamaized.net/b1f4018d-08dd-4aec-8d39-6b2a8846119a.png"
       descLeftBottomURL: "https://assets-17app.akamaized.net/bdee9097-5002-4f1c-ace6-c6fbcbf7dbb9.png"
       descRightBottomURL: "https://assets-17app.akamaized.net/499005fb-e918-4eee-aa20-5e7a0bede768.png"
@@ -35,29 +35,47 @@ eventBasedIAP:
       rewardTextColor: "#F69355"
     pointProducts:
       - productID: "media17_points_14000"
-        bonusPoint: 1500
+        bonusPoint: 0
         shouldHighlight:  true
+        reward:
+          type: 1
+          refCount: 5
       - productID: "media17_points_6500"
         bonusPoint: 0
         shouldHighlight:  false
+        reward:
+          type: 1
+          refCount: 5
       - productID: "media17_points_2400"
         bonusPoint: 0
         shouldHighlight:  false
+        reward:
+          type: 1
+          refCount: 5
       - productID: "media17_points_1100"
         bonusPoint: 0
         shouldHighlight:  false
+        reward:
+          type: 1
+          refCount: 5
       - productID: "media17_points_500"
         bonusPoint: 0
         shouldHighlight:  false
+        reward:
+          type: 1
+          refCount: 5
       - productID: "media17_points_100"
         bonusPoint: 0
         shouldHighlight:  false
+        reward:
+          type: 1
+          refCount: 5
     firstPurchaseType: 0
     taInfo:
       registerRange:
         dayStart: 0 # 0 means no limit
         dayEnd: 0 # 0 means no limit
-    displayRewardInfo: false
+    displayRewardInfo: true
     abtestName:
 
 productBasedIAP:
