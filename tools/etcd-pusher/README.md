@@ -15,8 +15,8 @@ Dockerized toolkit for pushing configs to etcd cluster
         -v $(pwd):/configs:ro                                                 \
         -it 17media/pusher:v19.4.25                                           \
           /opt/pusher                                                         \
-            -csi.config.repo.root /configs/envs/${ENVIRONMENT}/${APPLICATION} \
-            -csi.config.etcd.root /configs/envs/${ENVIRONMENT}/${APPLICATION} \
+            -csi.config.repo.root /configs/envs/${ENVIRONMENT}                \
+            -csi.config.etcd.root /configs/envs/${ENVIRONMENT}                \
             -csi.config.etcd.machines ${ENDPOINTS}
 
 # Maintainer
