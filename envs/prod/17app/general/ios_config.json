@@ -39,6 +39,35 @@
     "reset_day": 60,
     "skip_day": 7
   },
+  "ios_features" : {
+      "ping" : {
+          "streamer" : {
+              "apply_version" : "3.56.0",
+              "host" : "8.8.8.8",
+              "interval" : 10
+          },
+          "viewer" : {
+              "apply_version" : "",
+              "host" : "8.8.8.8",
+              "interval" : 10
+          },
+          "high_latency_threshold" : 200,
+          "low_latency_threshold" : 90,
+          "retry_times" : 5
+      },
+      "traceroute" : {
+          "streamer" : {
+              "apply_version" : "3.56.0",
+              "host" : "",
+              "interval" : 0
+          },
+          "viewer" : {
+              "apply_version" : "",
+              "host" : "",
+              "interval" : 0
+          }
+      }
+  },
   "apple_review_switch": {
     "version": "",
     "revenue_button_hidden": 0
