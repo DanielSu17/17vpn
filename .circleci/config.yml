@@ -43,13 +43,13 @@ workflows:
   all:
     jobs:
       - build
-      - deploy:
-          requires:
-          - build
-          filters:
-            branches:
-              only:
-              - master
+        #- deploy:
+        #    requires:
+        #    - build
+        #    filters:
+        #      branches:
+        #        only:
+        #        - master
   pr-build:
     jobs:
       - build:
