@@ -12,6 +12,9 @@ monsters:
   hit_consume: 10
   duration: 60s
   stream_alive_threshold: 10m00s
+  available_dates:
+  - start_date: "2019-06-11T9:00:00+08:00"
+    end_date: "2020-06-01T00:00:00+08:00"
   appear_durations:
   - start_time: 00h00m00s
     end_time: 2h00m00s
@@ -41,6 +44,9 @@ monsters:
   hit_consume: 10
   duration: 60s
   stream_alive_threshold: 10m00s
+  available_dates:
+  - start_date: "2019-06-11T9:00:00+08:00"
+    end_date: "2020-06-01T00:00:00+08:00"
   appear_durations:
   - start_time: 00h00m00s
     end_time: 2h00m00s
@@ -65,42 +71,14 @@ monsters:
   successToken: {key: monster_battle_success_bbro,fontAttribute: {textColor: "#FFFFFF"}}
   animation: "give_me_five" 
 
-- id: monster_kira
-  hit_consume: 10
-  duration: 60s
-  stream_alive_threshold: 1m00s
-  animation: kira
-  available_dates:
-  - start_date: "2019-01-01T00:00:00+08:00"
-    end_date: "2019-03-01T00:00:00+08:00"
-  appear_durations:
-  - start_time: 00h00m00s
-    end_time: 2h00m00s
-  - start_time: 12h00m00s
-    end_time: 14h30m00s
-  - start_time: 17h00m00s
-    end_time: 24h00m00s
-  type: 0
-  share_ratio: 50 # percentage
-  profit_ratio: 35 # percentage
-  bonus: 3000
-  weight: 0
-  infoPageiconURL: https://assets-17app.akamaized.net/25494e91-8ef2-4653-9649-e5453f103ad3.png
-  winnerPageiconURL: https://assets-17app.akamaized.net/bce06789-551c-46c4-9f68-b0eaad5b9f1b.png
-  hintToken: {key: monster_battle_hint_kira,fontAttribute: {textColor: "#FFFFFF"}}
-  rule1Token: {key: monster_battle_rule1_kira,fontAttribute: {textColor: "#FFFFFF"}}
-  rule2Token: {key: monster_battle_rule2_kira,fontAttribute: {textColor: "#FFFFFF"}}
-  rule3Token: {key: monster_battle_rule3_kira,fontAttribute: {textColor: "#FFFFFF"}}
-  rule4Token: {key: monster_battle_rule4_kira,fontAttribute: {textColor: "#FFFFFF"}}
-  countdownToken: {key: monster_battle_countdown_kira,fontAttribute: {textColor: "#FFFFFF"}}
-  failureToken: {key: monster_battle_failure_kira,fontAttribute: {textColor: "#FFFFFF"}}
-  successToken: {key: monster_battle_success_kira,fontAttribute: {textColor: "#FFFFFF"}}
-
 - id: summon_monster_1
   hit_consume: 10
   duration: 60s
   stream_alive_threshold: 1m00s
   animation: nian
+  available_dates:
+  - start_date: "2019-06-11T9:00:00+08:00"
+    end_date: "2020-06-01T00:00:00+08:00"
   appear_durations:
   - start_time: 00h00m00s
     end_time: 24h00m00s
@@ -124,6 +102,37 @@ monsters:
   countdownToken: {key: monster_battle_summon_countdown_nian,fontAttribute: {textColor: "#FFFFFF"}}
   failureToken: {key: monster_battle_summon_failure_nian,fontAttribute: {textColor: "#FFFFFF"}}
   successToken: {key: monster_battle_summon_success_nian,fontAttribute: {textColor: "#FFFFFF"}}
+
+# - id: monster_kira
+#   hit_consume: 10
+#   duration: 60s
+#   stream_alive_threshold: 1m00s
+#   animation: kira
+#   available_dates:
+#   - start_date: "2019-01-01T00:00:00+08:00"
+#     end_date: "2019-03-01T00:00:00+08:00"
+#   appear_durations:
+#   - start_time: 00h00m00s
+#     end_time: 2h00m00s
+#   - start_time: 12h00m00s
+#     end_time: 14h30m00s
+#   - start_time: 17h00m00s
+#     end_time: 24h00m00s
+#   type: 0
+#   share_ratio: 50 # percentage
+#   profit_ratio: 35 # percentage
+#   bonus: 3000
+#   weight: 0
+#   infoPageiconURL: https://assets-17app.akamaized.net/25494e91-8ef2-4653-9649-e5453f103ad3.png
+#   winnerPageiconURL: https://assets-17app.akamaized.net/bce06789-551c-46c4-9f68-b0eaad5b9f1b.png
+#   hintToken: {key: monster_battle_hint_kira,fontAttribute: {textColor: "#FFFFFF"}}
+#   rule1Token: {key: monster_battle_rule1_kira,fontAttribute: {textColor: "#FFFFFF"}}
+#   rule2Token: {key: monster_battle_rule2_kira,fontAttribute: {textColor: "#FFFFFF"}}
+#   rule3Token: {key: monster_battle_rule3_kira,fontAttribute: {textColor: "#FFFFFF"}}
+#   rule4Token: {key: monster_battle_rule4_kira,fontAttribute: {textColor: "#FFFFFF"}}
+#   countdownToken: {key: monster_battle_countdown_kira,fontAttribute: {textColor: "#FFFFFF"}}
+#   failureToken: {key: monster_battle_failure_kira,fontAttribute: {textColor: "#FFFFFF"}}
+#   successToken: {key: monster_battle_success_kira,fontAttribute: {textColor: "#FFFFFF"}}
 
 - id: monster_sharpshooter
   hit_consume: 10
