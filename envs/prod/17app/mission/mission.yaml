@@ -27,6 +27,43 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: acf3e310-66c3-4bbd-b0c5-4c575594a2d4
+    type: 3
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 21
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 1906_tw_cutepet_bp
+      amount: 1
+      expireTimeSecs: 259200
+    i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 3
+      - needMap: true
+        mapOption: 1
+        value: gift_1906_tw_cutepet_bp
+    i18nContent: baggage_mission_send_specific_gifts_reward_desc
+    i18nContentParams:
+      - needMap: true
+        mapOption: 1
+        value: gift_1906_tw_cutepet_bp
+    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
+    i18nDescriptionParams:
+    goalValue: 3
+    enableTimeRange:
+      - startTime: "2019-06-19 18:00:00 (GMT+0800)"
+        endTime: "2019-06-28 23:59:59 (GMT+0800)"
+    refIDs:
+      - 1906_tw_cutepet_15000
+    platforms:
+      - android
+      - ios
+
   - ID: 47c039c7-a574-4874-8ff2-743522adab10
     type: 9
     lifeCycle: 0
@@ -89,39 +126,6 @@ missions:
     enableTimeRange:
       - startTime: "2019-06-02 18:00:00 (GMT+0800)"
         endTime: "2019-06-23 20:29:59 (GMT+0800)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: 6b9c92fa-0e99-4f72-abfc-ee0cfc0bf0c5
-    type: 9
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 21
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1906_tw_newstar_bp_1
-      amount: 1
-      expireTimeSecs: 86400
-    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 20
-    i18nContent: baggage_mission_watch_streams_time_in_total_reward_desc
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: gift_1906_tw_newstar_bp_1
-    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-    i18nDescriptionParams:
-    goalValue: 1200
-    enableTimeRange:
-      - startTime: "2019-06-03 12:00:00 (GMT+0800)"
-        endTime: "2019-06-08 23:59:59 (GMT+0800)"
     refIDs:
     platforms:
       - android
