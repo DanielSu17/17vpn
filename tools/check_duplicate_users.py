@@ -3,7 +3,10 @@
 import os
 import platform
 import sys
-import yaml
+
+from ruamel.yaml import YAML
+
+yaml=YAML(typ="safe")
 
 print("Python Runtime Version: {0}".format(platform.python_version()))
 
