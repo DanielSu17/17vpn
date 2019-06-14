@@ -95,3 +95,72 @@ config:
   foo: bar
   other: "hihihi"
 ```
+
+
+## Push Configs via Jenkins
+
+1. Login to Jenkins Master - https://jenkins-gogo.17app.co/
+
+2. Find the Job named: `17media-config-gcp`
+
+3. Hit the button `Build with Parameters` on the left hand side panel
+
+4. Fill-in the field: `REVISION` with commit hash
+
+5. Hit the button `Build` on the middle of the page
+
+6. Done, verify the result by log output
+
+## Push Configs from Local Machine
+
+1. make sure you are connected to **PRITUNL-PROD** or **PRITUNL-STAG**
+2. pull the latest `etcd-pusher` from DockerHub
+
+```
+$ docker pull 17media/pusher:v19.4.25
+```
+
+3. Get etcd endpoints prepared
+
+```
+$ gcloud --project [media17-prod|media17-stag] compute instances list --filter='(name ~ etcd*)'
+
+NAME    ZONE        EXTERNAL_IP  STATUS
+etcd-1  us-west1-a  1.1.1.87     RUNNING
+etcd-2  us-west1-b  1.1.1.88     RUNNING
+etcd-3  us-west1-c  1.1.1.89     RUNNING
+```
+
+4. Push configs to etcd cluster
+
+```
+$ export ENDPOINTS='http://1.1.1.87:2379,http://1.1.1.88:2379,http://1.1.1.89:2379' # the endpoints should be exactly the same as the output of `step 3`
+
+$ cd /path/to/configs
+$ git checkout master
+$ git pull origin master # or rebase
+
+$ ./circle/syntax_checker.py
+
+$ git add ...
+$ git commit ...
+$ git push origin master
+
+$ docker run --rm                   \
+    -e ENVIRONMENT='sta'            \
+    -e APPLICATION='17app'          \
+    -e ENDPOINTS=${ENDPOINTS}       \
+    -v $(pwd):/configs:ro           \
+    -t 17media/pusher:v19.4.25
+```
+
+all the steps above could be found in the following script:
+- https://github.com/17media/configs/blob/master/push_to_etcd.sh
+
+5. Pitfalls
+
+!!! **BEWARE** !!! after your commit push to GitHub, it will trigger CircleCI for the syntax check automatically,
+once the syntax check is done, it will next trigger Jenkins for `configs` deployment automatically.
+
+so, it is important to stop/prevent CircleCI/Jenkins from push `configs` again,
+you push the `configs` locally, multiple times, or it might have been reverted after Jenkins push.
