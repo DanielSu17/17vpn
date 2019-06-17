@@ -1,6 +1,6 @@
 #Slack !help commandHelp
 commandHelp:
-#!admin管理者權限
+#===!admin管理者權限===
   admin:
     title: "管理者權限"
     commandsHelp:
@@ -109,7 +109,7 @@ commandHelp:
         description: |
           > 
           >
-#!army戰隊
+#===!army戰隊===
   army:
     title: "戰隊"
     commandsHelp:
@@ -133,15 +133,45 @@ commandHelp:
         title: "`查詢某個用戶的最新一筆戰隊訂閱紀錄`"
         description: |
           >
-#!baggage背包禮物
+#===!baggage背包禮物===
   baggage:
     title: "背包禮物"
+    commandsHelp:
+      send-items:
+        title: "`送特定用戶背包禮物`"
+        description: |
+          >
+#===!barrage彈幕===
   barrage:
     title: "彈幕"
+    commandsHelp:
+      get:
+        title: "`查詢用戶身上的彈幕數量`"
+        description: |
+          >
+      incr-army:
+        title: "`修改購買戰隊後取得的彈幕數量`"
+        description: |
+          >
+#===!bbfu富寶寶===
   bbfu:
     title: "富寶寶"
+    commandsHelp:
+      check-perm:
+        title: "`確認用戶是否有富寶寶權限`"
+        description: |
+          >
+      enable:
+        title: "`開啟特定用戶富寶寶權限`"
+        description: |
+          >
+      disable:
+        title: "`關閉特定用戶富寶寶權限`"
+        description: |
+          >
   bd:
     title: "BD系統相關"
+#===!butler小幫手===
   butler:
     title: "小幫手"
   cache:
