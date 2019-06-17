@@ -184,26 +184,153 @@ commandHelp:
         title: "`[發送小幫手給所有該地區所有用戶]`"
         description: |
           > 
-#===!cache清除cache===
-  cache:
-    title: "清除cache"
 #===!clip短影片===
   clip:
     title: "短影片"
+    commandsHelp:
+      post:
+        title: "`[發送短影片內容到slack channel #skyeye-clip]'"
+        description: |
+          >
+      accept:      
+        title: "`[等同按鈕的accept功能，接受此短影片內容]'"
+        description: |
+          >
+      delete:      
+        title: "`[等同按鈕的delete功能，刪除此短影片內容]'"
+        description: |
+          >
+      undelete:    
+        title: "`[復原被刪除的短影片]'"
+        description: |
+          >
+#===!contract合約資訊===
   contract:
-    title: "合約"
+    title: "合約資訊"
+    commandsHelp:
+      get-count:
+        title: "`[可得知每個地區該月份仍有效之合約數量]'"
+        description: |
+          >
+#===!coupon兌換券===
   coupon:
     title: "兌換券"
+    commandsHelp:
+      get:
+        title: "`[確認coupon資訊與使用狀況]`"
+        description: |
+          >
+      create-campaign:
+        title: "`[建立coupon campaign ID(整批coupon的unique ID)]`"
+        description: |
+          >
+      create-coupons:
+        title: "`[建立單純點數的coupon序號]`"
+        description: |
+          >
+      create-new-campaign:
+        title: "`[建立新型態的coupon]`"
+        description: |
+          >
+      patch-campaign:
+        title: "`[修改coupon設定]`"
+        description: |
+          >
+      create-new-unique-coupons:
+        title: "`[建立用完即失效的coupon]`"
+        description: |
+          >
+      create-new-shared-coupons:
+        title: "`[建立一組固定序號的coupon，一人只能換一次]`"
+        description: |
+          >
+#===!cache清除cache===
+  cache:
+    title: "清除cache"
+    commandsHelp:
+      delete:
+        title: "`[清除redis cache(engineer only)]`"
+        description: |
+          > 
+      delete-persistent:
+        title: "`[ ]`"
+        description: |
+          >
+#===!dirtyword不雅字===
   dirtyword:
     title: "不雅字"
+    commandsHelp:
+      check:
+        title: "`[查詢某一字串是否為該地區的dirtyword]`"
+        description: |
+          >
+#===!follow追蹤人數===
   follow:
     title: "追蹤人數"
+    commandsHelp:
+      delete-cache:
+        title: "`[清除follower Redis cache]`"
+        description: |
+          >
+      refresh-count:
+        title: "`[更新追蹤人數]`"
+        description: |
+          >
+      clear-accept-request:
+        title: "`[清除追蹤請求]`"
+        description: |
+          >
+      list-follow-requests:
+        title: "`[列出追蹤請求]`"
+        description: |
+          >
+      update-cache:
+        title: "`[更新follower paging cache]`"
+        description: |
+          >
+#===!gcp===
   gcp:
     title: ""
+#===!gift禮物回收===
   gift:
     title: "禮物回收"
+    commandsHelp:
+      recallGift:
+        title: "`[回收禮物]`"
+        description: |
+          >
+#===!gloryroad榮耀之路===
   gloryroad:
     title: "榮耀之路"
+    commandsHelp:
+      reward:
+        title: "`[幫特定主播增加榮耀之路經驗值(寫資料到mongo)]`"
+        description: |
+          >
+      fix:
+        title: "`[幫特定主播增加榮耀之路經驗值(不寫資料到mongo)]`"
+        description: |
+          >
+      sync:
+        title: "`[同步榮耀之路資料]`"
+        description: |
+          >
+      get:
+        title: "`[查詢主播榮耀之路等級]`"
+        description: |
+          >
+      birthday-sync:
+        title: "`[修正特定主播生日兩倍的榮耀指數]`"
+        description: |
+          >
+      birthday-sync-month:
+        title: "`[給定某個月份，修正該月生日主播的生日兩倍榮耀點數]`"
+        description: |
+          >
+      sync-global-board:
+        title: "`[同步TW/JP榜到Global榜]`"
+        description: |
+          >
   goods:
     title: "給禮物"
   i18n:
@@ -265,6 +392,6 @@ commandHelp:
   vipmarquee:
     title: "跑馬燈"
   vipstealth:
-    title: "leaderboard隱身"
+    title: "榜單隱身"
   voucher:
     title: ""
