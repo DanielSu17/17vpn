@@ -1,5 +1,6 @@
 #Slack !help commandHelp
 commandHelp:
+#!admin管理者權限
   admin:
     title: "管理者權限"
     commandsHelp:
@@ -98,6 +99,41 @@ commandHelp:
         description: |
           > 
           > 
+      addSkyeyeWeb:
+        title: "`新增skyeye web權限(登入需使用openID)`"
+        description: |
+          > 
+          > 
+      delSkyeyeWeb:
+        title: "`移除skyeye web權限`"
+        description: |
+          > 
+          >
+#!army戰隊
+  army:
+    title: "戰隊"
+    commandsHelp:
+      update-cache:
+        title: "`同步戰隊資訊(拿戰隊資料是有paging cache, 這指令可更新cache)`"
+        description: |
+          >
+      query-order:
+        title: "`查詢戰隊訂單`"
+        description: |
+          >
+      extend-order:
+        title: "`延長戰隊訂單`"
+        description: |
+          >
+      subscribe:
+        title: "`手動訂閱戰隊`"
+        description: |
+          >
+      get-history:
+        title: "`查詢某個用戶的最新一筆戰隊訂閱紀錄`"
+        description: |
+          >
+#!baggage背包禮物
   baggage:
     title: "背包禮物"
   barrage:
