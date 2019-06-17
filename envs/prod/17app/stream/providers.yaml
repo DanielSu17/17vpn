@@ -52,9 +52,9 @@ rtmp_providers:
   quality_support: 0
   weight: 0
 - name: WANSU
-  weight: 80
+  weight: 70
   region_weights:
-    TW: 90
+    TW: 80
   quality_support: 1
   users:
   - 81bb8d64-06d3-4365-bb57-1c223d6e09cd # 小雪
@@ -116,7 +116,9 @@ rtmp_providers:
   users: []
 - name: SRS
   quality_support: 0
-  weight: 0
+  weight: 10
+  region_weights:
+    TW: 10
   users:
   - 81bb8d64-06d3-4365-bb57-1c223d6e09cd # 小雪
   - 41528f0b-ecfb-45af-68a4-046ab00d0bff # 亞心nana
