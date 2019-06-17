@@ -5,6 +5,42 @@ commandHelp:
     commandsHelp:
       sysInfo:
         title: "`slackbot host info`"
+      permList:
+        title: "`列出所有權限(botperm)清單`"
+      grantGroup:
+        title: "`給予某個用戶(by mail)對應的權限組合`"
+      grantGroupByOpenID:
+        title: "`給予某個用戶(by openID)對應的權限組合`"
+      removeUserGroup:
+        title: "`移除某個用戶(by mail)對應的權限組合`"
+      grant:
+        title: "`給予某個用戶(by mail)對應的單一權限`"
+      remove:
+        title: "`移除某個用戶(by mail)對應的單一權限`"
+      create:
+        title: "`建立admin web帳戶`"
+      createForOpenID:
+        title: "`將此openID在web admin建立對應的email帳戶`"
+      getUserPerms:
+        title: "`列出此用戶所屬的所有單一權限`"
+      groupList:
+        title: "`列出某個user所有權限的清單`"
+      groupDetail:
+        title: "`列出某個權限組合(group)包含的權限清單`"
+      addGroupPerm:
+        title: "`新增某個權限到某個權限組合(group)`"
+      delGroupPerm:
+        title: "`移除某個權限到某個權限組合(group)`"
+      addGroup:
+        title: "`建立一個新的權限組合(group)`"
+      delGroup:
+        title: "`移除指定的權限組合(group)`"
+      getUserGroup:
+        title: "`列出此用戶所屬的所有權限組合(group)`"
+      getPermByCommand:
+        title: "`查詢某個指令對應的botperm`"
+      getCommandsByPerm:
+        title: "`查詢某個botperm對應的所有指令`"
   army:
     title: "戰隊"
     commandsHelp:
