@@ -296,7 +296,24 @@ commandHelp:
           >
 #===!gcp===
   gcp:
-    title: ""
+    title: "dev機相關"
+    commandsHelp:
+      create:
+        title: "`[新增dev機]`"
+        description: |
+          >
+      delete:
+        title: "`[刪除dev機]`"
+        description: |
+          >
+      list:
+        title: "`[列出dev機清單]`"
+        description: |
+          >
+      get:
+        title: "`[查看指定的dev機資訊]`"
+        description: |
+          >
 #===!gift禮物回收===
   gift:
     title: "禮物回收"
@@ -346,7 +363,7 @@ commandHelp:
         description: |
           >
       refresh:
-        title: "`[ ]`"
+        title: "`[幫用戶更新背包禮物列表]`"
         description: |
           >
 #===!i18n翻譯更新===
@@ -357,9 +374,14 @@ commandHelp:
         title: "`[更新lokalise翻譯到server config]`"
         description: |
           >
-#===!internalOrder ??===
+#===!internalOrder===
   internalOrder:
-    title: ""
+    title: "Income系統"
+    commandsHelp:
+      renewProductCache:
+        title: "`[更新product cache]`"
+        description: |
+          >
 #===!leaderboard排行榜更新===
   leaderboard:
     title: "排行榜更新"
@@ -440,7 +462,7 @@ commandHelp:
   vipinvisible:
     title: ""
   viplottery:
-    title: ""
+    title: "vip樂透"
   vipmarquee:
     title: "跑馬燈"
   vipstealth:
