@@ -510,21 +510,95 @@ commandHelp:
         title: "`[直播審核-復原]`"
         description: |
           >
-#======
+#===!marquee跑馬燈===
   marquee:
     title: "跑馬燈"
+    commandsHelp:
+      send:
+        title: "`[送指定主播區域跑馬燈]`"
+        description: |
+          >
+      list-feature:
+        title: "`[列出所有跑馬燈的類型]`"
+        description: |
+          >
+#===!mith報表===
   mith:
     title: "mith報表"
+    commandsHelp:
+      report:
+        title: "`[下載最近 n 天的分潤轉mith報表]`"
+        description: |
+          >
+#===!mlevelV等級===
   mlevel:
     title: "V等級"
+    commandsHelp:
+      set:
+        title: "`[幫指定用戶灌指定月份/點數來增加V等級]`"
+        description: |
+          >
+      get:
+        title: "`[查詢指定用戶的在某個月份累積的點數與V等級]`"
+        description: |
+          >
+      get-redis:
+        title: "`[查詢指定用戶的在某個月份累積的點數與V等級(redis)]`"
+        description: |
+          >
+#===!monster打怪獸===
   monster:
     title: "打怪獸"
+    commandsHelp:
+      list:
+        title: "`[列出各區域所有的monster所在的直播間與狀態]`"
+        description: |
+          >
+#===!notif===
   notif:
     title: ""
+    commandsHelp:
+      get-live:
+        title: "`[get-live]`"
+        description: |
+          >
+      incr-live:
+        title: "`[incr-live]`"
+        description: |
+          >
+      query:
+        title: "`[query]`"
+        description: |
+          >
+#===!oneSignal===
   oneSignal:
     title: ""
+    commandsHelp:
+      view:
+        title: "`[view]`"
+        description: |
+          >
+#===!otevent===
   otevent:
     title: ""
+    commandsHelp:
+      delete:
+        title: "`[delete]`"
+        description: |
+          >
+      delete-all:
+        title: "`[delete-all]`"
+        description: |
+          >
+      get:
+        title: "`[get]`"
+        description: |
+          >
+      get-config:
+        title: "`[get-config]`"
+        description: |
+          >
+#===!point點數給收===
   point:
     title: "點數給收"
   program:
