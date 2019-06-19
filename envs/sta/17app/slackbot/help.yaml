@@ -742,10 +742,142 @@ commandHelp:
         title: "`[設定用戶已同意用戶條款]`"
         description: |
           >
+#===!trivia17Q===
   trivia:
     title: "17Q"
+    commandsHelp:
+      get:
+        title: "`[以trivia ID(Web admin)查詢trivia資訊]`"
+        description: |
+          >
+      delete:
+        title: "`[刪除trivia(根據game id)]`"
+        description: |
+          >
+      getQuiz:
+        title: "`[以Quiz ID(Web admin)查詢Quiz資訊]`"
+        description: |
+          >
+      deleteQuiz:
+        title: "`[刪除Quiz(根據quiz id)]`"
+        description: |
+          >
+      getAnswerInfo:
+        title: "`[查用戶答題狀況]`"
+        description: |
+          >
+      getPrize:
+        title: "`[查用戶指定日期得到的獎金]`"
+        description: |
+          >
+      sendMedal:
+        title: "`[送免死金牌給用戶]`"
+        description: |
+          >
+      rewardMakeup:
+        title: "`[替用戶補獎金]`"
+        description: |
+          >
+#===!user用戶相關===
   user:
-    title: "用戶相關設定"
+    title: "用戶相關"
+    commandsHelp:
+      get-region:
+        title: "`[查詢用戶設定地區]`"
+        description: |
+          > 註解: 如果有合約則取得合約的region欄位資訊，若無合約則取得用戶app內設定的地區。
+      set-region:
+        title: "`[設定用戶app區域]`"
+        description: |
+          >
+      get-reg-region:
+        title: "`[取得用戶註冊區域]`"
+        description: |
+          >
+      set-reg-region:
+        title: "`[設定用戶註冊區域]`"
+        description: |
+          >
+      incr-exp:
+        title: "`[增加用戶的等級經驗值]`"
+        description: |
+          >
+      clear-auth:
+        title: "`[解除用戶第三方登入綁定]`"
+        description: |
+          >
+      get-auth:
+        title: "`[讓用戶帳號通過驗證]`"
+        description: |
+          >
+      relieve:
+        title: "`[解凍user account]`"
+        description: |
+          >
+      set-openID:
+        title: "`[替用戶設定openID]`"
+        description: |
+          >
+      add-openIDHistory:
+        title: "`[替用戶增加openID設定的歷史紀錄]`"
+        description: |
+          >
+      get-openIDHistory:
+        title: "`[查詢用戶設定過的openID歷史紀錄]`"
+        description: |
+          >
+      del-openIDHistory:
+        title: "`[刪除用戶設定過的openID歷史紀錄(才能重新設定)]`"
+        description: |
+          >
+      set-bio:
+        title: "`[替用戶設定profile內容]`"
+        description: |
+          >
+      id:
+        title: "`[用openID/userID反查對應的openID/userID(一次可搜尋多筆)]`"
+        description: |
+          >
+      reset-token:
+        title: "`[reset 用戶的 accessToken, 強制清除所有登入狀態(用戶被盜可以用)]`"
+        description: |
+          >
+      mute:
+        title: "`[禁言]`"
+        description: |
+          >
+      unmute:
+        title: "`[取消禁言]`"
+        description: |
+          >
+      remove:
+        title: "`[移除帳戶]`"
+        description: |
+          >
+      revert-remove:
+        title: "`[復原已移除帳戶]`"
+        description: |
+          >
+      check-remove:
+        title: "`[確認帳戶是否移除]`"
+        description: |
+          >
+      badge-list:
+        title: "`[列出系統中所有可以被設定的badge]`"
+        description: |
+          >
+      badge-add:
+        title: "`[給用戶指定的bagde]`"
+        description: |
+          >
+      badge-remove:
+        title: "`[移除用戶的bagde]`"
+        description: |
+          >
+      search-openID:
+        title: "`[以關鍵字搜尋現有的openID]`"
+        description: |
+          >
   vip:
     title: "尊榮寶寶"
   vipinvisible:
