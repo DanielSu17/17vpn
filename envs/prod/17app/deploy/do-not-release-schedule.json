@@ -1,12 +1,21 @@
 {
-  "_comment": "Do not release schedule for daily release. This document is used by 17media-release-schedule Jenkins job",
+  "_comment": "This document is used to control automatic release and canary deployment",
   "example": {
-    "blacklist": [
+    "_release_comment": "Do not release schedule",
+    "release-blacklist": [
       "2012-12-20",
       "2010-01-02"
+    ],
+    "_canary_comment": "Do not run canary deployment",
+    "canary-blacklist": [
+      "2011-11-20",
+      "2020-02-20"
     ]
   },
-  "blacklist": [
+  "release-blacklist": [
     "2019-06-10"
+  ],
+  "canary-blacklist": [
+    "2019-06-19"
   ]
 }
