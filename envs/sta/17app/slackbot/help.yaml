@@ -413,12 +413,104 @@ commandHelp:
 #===!live-checkin看播簽到===
   live-checkin:
     title: "看播簽到"
+    commandsHelp:
+      get:
+        title: "`[查詢某用戶看某主播的簽到勾勾紀錄]`"
+        description: |
+          >
+      set:
+        title: "`[設簽到勾勾天數]`"
+        description: |
+          >
+      menu:
+        title: "`[列出用戶看某主播的簽到勾勾數量，並有選單可修改其簽到天數]`"
+        description: |
+          >
+      batchUpdate:
+        title: "`[針對單一主播修復因為斷線的單則直播的所有簽到勾勾]`"
+        description: |
+          >
 #===!live-simulation模擬開播===
   live-simulation:
     title: "摸擬開播"
+    commandsHelp:
+      run:
+        title: "`[模擬開播]`"
+        description: |
+          >
+      enter:
+        title: "`[模擬開播 (進入直播間)]`"
+        description: |
+          >
+      comment:
+        title: "`[模擬開播 (留言)]`"
+        description: |
+          >
+      send-gift:
+        title: "`[模擬開播 (送禮)]`"
+        description: |
+          >
+      stop:
+        title: "`[模擬開播停止]`"
+        description: |
+          >
 #===!live開播相關===
   live:
     title: "開播相關"
+    commandsHelp:
+      log:
+        title: "`[查詢指定用戶的開播紀錄(最多100筆)]`"
+        description: |
+          >
+      log-detail:
+        title: "`[查詢某一則直播的詳細資訓]`"
+        description: |
+          >
+      log-disconnectt:
+        title: "`[查詢最近 n 筆斷線的直播]`"
+        description: |
+          >
+      set-enter-animation:
+        title: "`[給用戶一段時間的進場動畫]`"
+        description: |
+          >
+      cancel-enter-animation:
+        title: "`[取消用戶的進場動畫]`"
+        description: |
+          >
+      search-enter-animation-byUser:
+        title: "`[查詢用戶有哪些進場動畫]`"
+        description: |
+          >
+      ssearch-enter-animation-byAnimation:
+        title: "`[根據進場動畫ID查詢有哪些用戶有此動畫]`"
+        description: |
+          >
+      update-verification:
+        title: "`[開播是否出現在熱門頁]`"
+        description: |
+          >
+      videochat-list:
+        title: "`[列出直播間連麥用戶]`"
+        description: |
+          >
+      videochat-kick:
+        title: "`[將用戶踢出連麥]`"
+        description: |
+          >
+      accept:
+        title: "`[直播審核-接受]`"
+        description: |
+          >
+      disable:
+        title: "`[直播審核-關閉]`"
+        description: |
+          >
+      resume:
+        title: "`[直播審核-復原]`"
+        description: |
+          >
+#======
   marquee:
     title: "跑馬燈"
   mith:
