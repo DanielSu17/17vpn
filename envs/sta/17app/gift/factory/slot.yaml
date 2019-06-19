@@ -7,6 +7,8 @@
 # initialAmount: initial points in jackpot
 # increasePercentage: percentage of the gift point will put into jackpot
 # drawExpectation: expectation point for each draw
+# minHitAmount: when jackpot amount smaller than minHitAmount, never hit the jackpot.
+# minHitDuration: (hours)when durantion from last jackpot hit smaller than minHitAmount, never hit the jackpot.
 # mustHitAmount: when jackpot amount bigger than mustHitAmount, then hit the jackpot.
 #                be awared, in PROD environment, this field should be wrapped by "SECRET_TAG"
 #                to protect this sensitive information
@@ -55,6 +57,8 @@ gift_bag_lotto:
   initialAmount: 20000
   increasePercentage: 10
   drawExpectation: 990
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: 3847560
   i18nTokenKey: SLOT_JACKPOT_MSG
   slotTab: 1
@@ -70,6 +74,8 @@ treasurebox_brass_lotto:
   initialAmount: 10000
   increasePercentage: 6
   drawExpectation: 80
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: 1000000
   i18nTokenKey: treasure_chest_global_jackpot_BE
   slotTab: 2
@@ -85,6 +91,8 @@ treasurebox_bronze_lotto:
   initialAmount: 10000
   increasePercentage: 8
   drawExpectation: 12
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: 12482947
   i18nTokenKey: treasure_chest_global_jackpot_BE
   slotTab: 2
@@ -100,6 +108,8 @@ treasurebox_golden_lotto:
   initialAmount: 52099
   increasePercentage: 4
   drawExpectation: 80
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: 100000000
   i18nTokenKey: treasure_chest_global_jackpot_BE
   slotTab: 2
@@ -114,6 +124,8 @@ treasurebox_platinum_lotto:
   initialAmount: 1000000
   increasePercentage: 12
   drawExpectation: 80  # FIXME: super high expectation for QA
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: 1000000 #30718720
   i18nTokenKey: treasure_chest_global_jackpot_BE
   slotTab: 2
@@ -129,6 +141,8 @@ treasurebox_jp_brass_lotto:
   initialAmount: 5000
   increasePercentage: 0
   drawExpectation: 7
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: 1500000
   i18nTokenKey: treasure_chest_jp_jackpot_BE
   slotTab: 2
@@ -143,6 +157,8 @@ treasurebox_jp_bronze_lotto:
   initialAmount: 10000
   increasePercentage: 0
   drawExpectation: 13
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: 1500000
   i18nTokenKey: treasure_chest_jp_jackpot_BE
   slotTab: 2
@@ -157,6 +173,8 @@ treasurebox_jp_golden_lotto:
   initialAmount: 30000
   increasePercentage: 0
   drawExpectation: 40
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: 1500000
   i18nTokenKey: treasure_chest_jp_jackpot_BE
   slotTab: 2
@@ -171,6 +189,8 @@ treasurebox_jp_platinum_lotto:
   initialAmount: 60000
   increasePercentage: 0
   drawExpectation: 80
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: 1500000
   i18nTokenKey: treasure_chest_jp_jackpot_BE
   slotTab: 2
@@ -186,6 +206,8 @@ treasure_box_silver_axe:
   initialAmount: 10000
   increasePercentage: 0
   drawExpectation: 0.0001
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: 100000000
   i18nTokenKey: treasure_chest_global_axe_BE
   slotTab: 3
@@ -201,6 +223,8 @@ treasure_box_golden_axe:
   initialAmount: 30000
   increasePercentage: 0
   drawExpectation: 0.0001
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: 100000000
   i18nTokenKey: treasure_chest_global_axe_BE
   slotTab: 3
@@ -216,6 +240,8 @@ treasure_box_platinum_axe:
   initialAmount: 100000
   increasePercentage: 0
   drawExpectation: 0.0001
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: 100000000
   i18nTokenKey: treasure_chest_global_axe_BE
   slotTab: 3
@@ -231,6 +257,8 @@ treasure_box_lucky_axe:
   initialAmount: 10000
   increasePercentage: 0
   drawExpectation: 0.5
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: 100000000
   i18nTokenKey: treasure_chest_global_axe_BE
   slotTab: 3
@@ -247,6 +275,8 @@ treasure_box_rainbow_axe:
   initialAmount: 30000
   increasePercentage: 0
   drawExpectation: 0.5
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: 100000000
   i18nTokenKey: treasure_chest_global_axe_BE
   slotTab: 3

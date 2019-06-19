@@ -7,6 +7,8 @@
 # initialAmount: initial points in jackpot
 # increasePercentage: percentage of the gift point will put into jackpot
 # drawExpectation: expectation point for each draw
+# minHitAmount: when jackpot amount smaller than minHitAmount, never hit the jackpot.
+# minHitDuration: (hours)when durantion from last jackpot hit smaller than minHitAmount, never hit the jackpot.
 # mustHitAmount: when jackpot amount bigger than mustHitAmount, then hit the jackpot.
 #                be awared, in PROD environment, this field should be wrapped by "SECRET_TAG"
 #                to protect this sensitive information
@@ -55,6 +57,8 @@ gift_bag_lotto:
   initialAmount: 360000
   increasePercentage: 10
   drawExpectation: 0.2
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: <SECRET_TAG>CiQAOHuFgCa5oEvNOkiTc8DTg5ewhXHYRU/kfqkx4TG82HvO9x4SMgCdNR9A2C0O+meKr2IttMW+9Fkz0Mjh+ByzzUPlnSRQc4KAZI5JeKlLRUuOntBpV5AI</SECRET_TAG>
   i18nTokenKey: SLOT_JACKPOT_MSG
   slotTab: 1
@@ -70,6 +74,8 @@ treasurebox_brass_lotto:
   initialAmount: 66000
   increasePercentage: 6
   drawExpectation: 0.1
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: <SECRET_TAG>CiQAOHuFgCa5oEvNOkiTc8DTg5ewhXHYRU/kfqkx4TG82HvO9x4SMgCdNR9A2C0O+meKr2IttMW+9Fkz0Mjh+ByzzUPlnSRQc4KAZI5JeKlLRUuOntBpV5AI</SECRET_TAG>
   i18nTokenKey: treasure_chest_global_jackpot_BE
   slotTab: 2
@@ -85,6 +91,8 @@ treasurebox_bronze_lotto:
   initialAmount: 168000
   increasePercentage: 8
   drawExpectation: 95
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: <SECRET_TAG>CiQAOHuFgCa5oEvNOkiTc8DTg5ewhXHYRU/kfqkx4TG82HvO9x4SMgCdNR9A2C0O+meKr2IttMW+9Fkz0Mjh+ByzzUPlnSRQc4KAZI5JeKlLRUuOntBpV5AI</SECRET_TAG>
   i18nTokenKey: treasure_chest_global_jackpot_BE
   slotTab: 2
@@ -100,6 +108,8 @@ treasurebox_golden_lotto:
   initialAmount: 52099
   increasePercentage: 4
   drawExpectation: 0.01
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: <SECRET_TAG>CiQAOHuFgCa5oEvNOkiTc8DTg5ewhXHYRU/kfqkx4TG82HvO9x4SMgCdNR9A2C0O+meKr2IttMW+9Fkz0Mjh+ByzzUPlnSRQc4KAZI5JeKlLRUuOntBpV5AI</SECRET_TAG>
   i18nTokenKey: treasure_chest_global_jackpot_BE
   slotTab: 2
@@ -115,6 +125,8 @@ treasurebox_platinum_lotto:
   initialAmount: 880000
   increasePercentage: 12
   drawExpectation: 0.4
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: <SECRET_TAG>CiQAOHuFgCa5oEvNOkiTc8DTg5ewhXHYRU/kfqkx4TG82HvO9x4SMgCdNR9A2C0O+meKr2IttMW+9Fkz0Mjh+ByzzUPlnSRQc4KAZI5JeKlLRUuOntBpV5AI</SECRET_TAG>
   i18nTokenKey: treasure_chest_global_jackpot_BE
   slotTab: 2
@@ -130,6 +142,8 @@ treasurebox_jp_brass_lotto:
   initialAmount: 5000
   increasePercentage: 0
   drawExpectation: 7
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: <SECRET_TAG>CiQAOHuFgCa5oEvNOkiTc8DTg5ewhXHYRU/kfqkx4TG82HvO9x4SMgCdNR9A2C0O+meKr2IttMW+9Fkz0Mjh+ByzzUPlnSRQc4KAZI5JeKlLRUuOntBpV5AI</SECRET_TAG>
   i18nTokenKey: treasure_chest_jp_jackpot_BE
   slotTab: 2
@@ -144,6 +158,8 @@ treasurebox_jp_bronze_lotto:
   initialAmount: 10000
   increasePercentage: 0
   drawExpectation: 13
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: <SECRET_TAG>CiQAOHuFgCa5oEvNOkiTc8DTg5ewhXHYRU/kfqkx4TG82HvO9x4SMgCdNR9A2C0O+meKr2IttMW+9Fkz0Mjh+ByzzUPlnSRQc4KAZI5JeKlLRUuOntBpV5AI</SECRET_TAG>
   i18nTokenKey: treasure_chest_jp_jackpot_BE
   slotTab: 2
@@ -158,6 +174,8 @@ treasurebox_jp_golden_lotto:
   initialAmount: 30000
   increasePercentage: 0
   drawExpectation: 40
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: <SECRET_TAG>CiQAOHuFgCa5oEvNOkiTc8DTg5ewhXHYRU/kfqkx4TG82HvO9x4SMgCdNR9A2C0O+meKr2IttMW+9Fkz0Mjh+ByzzUPlnSRQc4KAZI5JeKlLRUuOntBpV5AI</SECRET_TAG>
   i18nTokenKey: treasure_chest_jp_jackpot_BE
   slotTab: 2
@@ -172,6 +190,8 @@ treasurebox_jp_platinum_lotto:
   initialAmount: 60000
   increasePercentage: 0
   drawExpectation: 80
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: <SECRET_TAG>CiQAOHuFgCa5oEvNOkiTc8DTg5ewhXHYRU/kfqkx4TG82HvO9x4SMgCdNR9A2C0O+meKr2IttMW+9Fkz0Mjh+ByzzUPlnSRQc4KAZI5JeKlLRUuOntBpV5AI</SECRET_TAG>
   i18nTokenKey: treasure_chest_jp_jackpot_BE
   slotTab: 2
@@ -187,6 +207,8 @@ treasure_box_silver_axe:
   initialAmount: 10000
   increasePercentage: 0
   drawExpectation: 0.0001
+  minHitAmount: 300000
+  minHitDuration: 72
   mustHitAmount: <SECRET_TAG>CiQAOHuFgCa5oEvNOkiTc8DTg5ewhXHYRU/kfqkx4TG82HvO9x4SMgCdNR9A2C0O+meKr2IttMW+9Fkz0Mjh+ByzzUPlnSRQc4KAZI5JeKlLRUuOntBpV5AI</SECRET_TAG>
   i18nTokenKey: treasure_chest_global_axe_BE
   slotTab: 3
@@ -202,6 +224,8 @@ treasure_box_golden_axe:
   initialAmount: 30000
   increasePercentage: 0
   drawExpectation: 0.0001
+  minHitAmount: 900000
+  minHitDuration: 72
   mustHitAmount: <SECRET_TAG>CiQAOHuFgCa5oEvNOkiTc8DTg5ewhXHYRU/kfqkx4TG82HvO9x4SMgCdNR9A2C0O+meKr2IttMW+9Fkz0Mjh+ByzzUPlnSRQc4KAZI5JeKlLRUuOntBpV5AI</SECRET_TAG>
   i18nTokenKey: treasure_chest_global_axe_BE
   slotTab: 3
@@ -217,6 +241,8 @@ treasure_box_platinum_axe:
   initialAmount: 100000
   increasePercentage: 0
   drawExpectation: 0.0001
+  minHitAmount: 3000000
+  minHitDuration: 72
   mustHitAmount: <SECRET_TAG>CiQAOHuFgCa5oEvNOkiTc8DTg5ewhXHYRU/kfqkx4TG82HvO9x4SMgCdNR9A2C0O+meKr2IttMW+9Fkz0Mjh+ByzzUPlnSRQc4KAZI5JeKlLRUuOntBpV5AI</SECRET_TAG>
   i18nTokenKey: treasure_chest_global_axe_BE
   slotTab: 3
@@ -232,6 +258,8 @@ treasure_box_lucky_axe:
   initialAmount: 10000
   increasePercentage: 0
   drawExpectation: 0.0001
+  minHitAmount: 300000
+  minHitDuration: 24
   mustHitAmount: <SECRET_TAG>CiQAOHuFgCa5oEvNOkiTc8DTg5ewhXHYRU/kfqkx4TG82HvO9x4SMgCdNR9A2C0O+meKr2IttMW+9Fkz0Mjh+ByzzUPlnSRQc4KAZI5JeKlLRUuOntBpV5AI</SECRET_TAG>
   i18nTokenKey: treasure_chest_global_axe_BE
   slotTab: 3
@@ -248,6 +276,8 @@ treasure_box_rainbow_axe:
   initialAmount: 30000
   increasePercentage: 0
   drawExpectation: 0.0001
+  minHitAmount: 900000
+  minHitDuration: 24
   mustHitAmount: <SECRET_TAG>CiQAOHuFgCa5oEvNOkiTc8DTg5ewhXHYRU/kfqkx4TG82HvO9x4SMgCdNR9A2C0O+meKr2IttMW+9Fkz0Mjh+ByzzUPlnSRQc4KAZI5JeKlLRUuOntBpV5AI</SECRET_TAG>
   i18nTokenKey: treasure_chest_global_axe_BE
   slotTab: 3

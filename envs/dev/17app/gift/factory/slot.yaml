@@ -7,6 +7,8 @@
 # initialAmount: initial points in jackpot
 # increasePercentage: percentage of the gift point will put into jackpot
 # drawExpectation: expectation point for each draw
+# minHitAmount: when jackpot amount smaller than minHitAmount, never hit the jackpot.
+# minHitDuration: (hours)when durantion from last jackpot hit smaller than minHitAmount, never hit the jackpot.
 # mustHitAmount: when jackpot amount bigger than mustHitAmount, then hit the jackpot.
 #                be awared, in PROD environment, this field should be wrapped by "SECRET_TAG"
 #                to protect this sensitive information
@@ -55,6 +57,8 @@ gift_bag_lotto:
   initialAmount: 1000
   increasePercentage: 10
   drawExpectation: 250 # FIXME: super high expectation for test
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: 3000000
   i18nTokenKey: SLOT_JACKPOT_MSG
   slotTab: 1
@@ -70,6 +74,8 @@ treasurebox_brass_lotto:
   initialAmount: 10000
   increasePercentage: 6
   drawExpectation: 1
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: 9429852
   i18nTokenKey: treasure_chest_global_jackpot_BE
   slotTab: 2
@@ -85,6 +91,8 @@ treasurebox_bronze_lotto:
   initialAmount: 10000
   increasePercentage: 10
   drawExpectation: 125  # FIXME: super high expectation for test
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: 3000000
   i18nTokenKey: treasure_chest_global_jackpot_BE
   slotTab: 2
@@ -100,6 +108,8 @@ treasurebox_golden_lotto:
   initialAmount: 100000
   increasePercentage: 12
   drawExpectation: 250  # FIXME: super high expectation for test
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: 3000000
   i18nTokenKey: treasure_chest_global_jackpot_BE
   slotTab: 2
@@ -115,6 +125,8 @@ treasurebox_platinum_lotto:
   initialAmount: 500000
   increasePercentage: 12
   drawExpectation: 750  # super high expectation for test
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: 3000000
   i18nTokenKey: treasure_chest_global_jackpot_BE
   slotTab: 2
@@ -130,6 +142,8 @@ treasurebox_jp_brass_lotto:
   initialAmount: 5000
   increasePercentage: 0
   drawExpectation: 7
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: 1500000
   i18nTokenKey: treasure_chest_jp_jackpot_BE
   slotTab: 2
@@ -144,6 +158,8 @@ treasurebox_jp_bronze_lotto:
   initialAmount: 10000
   increasePercentage: 0
   drawExpectation: 13
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: 1500000
   i18nTokenKey: treasure_chest_jp_jackpot_BE
   slotTab: 2
@@ -158,6 +174,8 @@ treasurebox_jp_golden_lotto:
   initialAmount: 30000
   increasePercentage: 0
   drawExpectation: 40
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: 100000000
   i18nTokenKey: treasure_chest_jp_jackpot_BE
   slotTab: 2
@@ -172,6 +190,8 @@ treasurebox_jp_platinum_lotto:
   initialAmount: 60000
   increasePercentage: 0
   drawExpectation: 80
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: 1500000
   i18nTokenKey: treasure_chest_jp_jackpot_BE
   slotTab: 2
@@ -187,6 +207,8 @@ treasure_box_silver_axe:
   initialAmount: 180000
   increasePercentage: 0
   drawExpectation: 37
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: 100000000
   i18nTokenKey: treasure_chest_global_axe_BE
   slotTab: 3
@@ -202,6 +224,8 @@ treasure_box_golden_axe:
   initialAmount: 330000
   increasePercentage: 0
   drawExpectation: 200
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: 100000000
   i18nTokenKey: treasure_chest_global_axe_BE
   slotTab: 3
@@ -217,6 +241,8 @@ treasure_box_platinum_axe:
   initialAmount: 440000
   increasePercentage: 0
   drawExpectation: 490
+  minHitAmount: 0
+  minHitDuration: 0
   mustHitAmount: 100000000
   i18nTokenKey: treasure_chest_global_axe_BE
   slotTab: 3
