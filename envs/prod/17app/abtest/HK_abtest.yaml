@@ -176,6 +176,27 @@
     "d": "b"
     "e": "b"
     "f": "b"
+# 新手流程優化p5 (Feature Guide), client只有當a才顯示 空的也是不顯示
+- testName: newbieGuide # 新手流程優化p5 (Feature Guide) b: 移除四頁landing page
+  enableABtest: false
+  expiredSecond: 60 # 1 mins, it should disappear soon.
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
 # 新手流程優化p6 - b: 移除四頁landing page, 移除新手遮罩, 移除enterLivePrompt
 - testName: newbieDismissDialog
   enableABtest: false
