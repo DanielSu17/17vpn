@@ -482,7 +482,7 @@ commandHelp:
         title: "`[查詢用戶有哪些進場動畫]`"
         description: |
           >
-      ssearch-enter-animation-byAnimation:
+      search-enter-animation-byAnimation:
         title: "`[根據進場動畫ID查詢有哪些用戶有此動畫]`"
         description: |
           >
@@ -686,16 +686,62 @@ commandHelp:
         title: "`[分潤轉點數]`"
         description: |
           >
+#===!royalty成就封號===
   royalty:
     title: "成就封號"
-  stamp:
-    title: "貼圖"
+    commandsHelp:
+      writeoff:
+        title: "`[設定成就(封號徽章)的次數]`"
+        description: |
+          >
+#===!streamerLabel主播標籤===
   streamerLabel:
     title: "主播標籤"
+    commandsHelp:
+      list:
+        title: "`[查閱label清單]`"
+        description: |
+          >
+      add:
+        title: "`[新增labe清單資料]`"
+        description: |
+          >
+#===!stamp貼圖===
+  stamp:
+    title: "貼圖"
+    commandsHelp:
+      list:
+        title: "`[列出指定地區所有的stamp]`"
+        description: |
+          >
+      add:
+        title: "`[送指定用戶免費貼圖]`"
+        description: |
+          >
+      del:
+        title: "`[刪除用戶持有的免費貼圖]`"
+        description: |
+          >
+#===!superstar小時榜===
   superstar:
     title: "小時榜"
+    commandsHelp:
+      list:
+        title: "`[手動結算小時榜，並分派獎勵]`"
+        description: |
+          >
+#===!term使用者條款===
   term:
     title: "使用者條款"
+    commandsHelp:
+      delete:
+        title: "`[清除用戶同意條款之設定]`"
+        description: |
+          >
+      set:
+        title: "`[設定用戶已同意用戶條款]`"
+        description: |
+          >
   trivia:
     title: "17Q"
   user:
