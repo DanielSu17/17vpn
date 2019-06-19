@@ -601,14 +601,91 @@ commandHelp:
 #===!point點數給收===
   point:
     title: "點數給收"
+    commandsHelp:
+      makeup:
+        title: "`[對特定IAP訂單補點(有價)]`"
+        description: |
+          >
+      rollback:
+        title: "`[對特定IAP訂單回收點數]`"
+        description: |
+          >
+      give:
+        title: "`[給指定用戶免費點數]`"
+        description: |
+          >
+      add:
+        title: "`[給內部用途免費點數]`"
+        description: |
+          >
+      refund-give:
+        title: "`[回收give的點數]`"
+        description: |
+          >
+      refund-add:
+        title: "`[回收add的點數]`"
+        description: |
+          >
+#===!program節目===
   program:
     title: "節目"
+    commandsHelp:
+      list:
+        title: "`[列出所有的節目帳號(Web Admin-TV)]`"
+        description: |
+          >
+      find:
+        title: "`[找出包含此文字的節目名稱]`"
+        description: |
+          >
+      get:
+        title: "`[查詢此節目帳號的詳細資訊]`"
+        description: |
+          >
+      delete:
+        title: "`[刪除此節目帳號]`"
+        description: |
+          >
+      undelete:
+        title: "`[取消刪除此節目帳號]`"
+        description: |
+          >
+      set-region:
+        title: "`[設定節目會出現的國家]`"
+        description: |
+          >
+#===!register建立測試帳號===
   register:
     title: "建立測試帳號"
+    commandsHelp:
+      testers:
+        title: "`[建立測試帳號]`"
+        description: |
+          >
+      contractors:
+        title: "`[建立某個地區有合約的測試帳號]`"
+        description: |
+          >
+#===!reseller經銷商===
   reseller:
-    title: ""
+    title: "經銷商"
+    commandsHelp:
+      writeoff:
+        title: "`[writeoff]`"
+        description: |
+          >
+      get-quota:
+        title: "`[get-quota]`"
+        description: |
+          >
+#===!revenue分潤轉點===
   revenue:
     title: "分潤轉點"
+    commandsHelp:
+      writeoff:
+        title: "`[分潤轉點數]`"
+        description: |
+          >
   royalty:
     title: "成就封號"
   stamp:
