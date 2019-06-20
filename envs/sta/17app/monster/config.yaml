@@ -106,141 +106,110 @@ monsters:
   countdownToken: {key: monster_battle_summon_countdown_nian,fontAttribute: {textColor: "#FFFFFF"}}
   failureToken: {key: monster_battle_summon_failure_nian,fontAttribute: {textColor: "#FFFFFF"}}
   successToken: {key: monster_battle_summon_success_nian,fontAttribute: {textColor: "#FFFFFF"}}
+  marqueeToken: {key: monster_battle_summon_marquee}
 
-- id: monster_kira
-  hit_consume: 10
-  duration: 60s
-  stream_alive_threshold: 1m00s
-  animation: kira
-  available_dates:
-  - start_date: "2019-01-01T00:00:00+08:00"
-    end_date: "2019-02-22T11:55:00+08:00"
-  appear_durations:
-  - start_time: 00h00m00s
-    end_time: 24h00m00s
-  type: 0
-  share_ratio: 50 # percentage
-  profit_ratio: 35 # percentage
-  bonus: 300
-  weight: 0.6
-  infoPageiconURL: https://assets-17app.akamaized.net/25494e91-8ef2-4653-9649-e5453f103ad3.png
-  winnerPageiconURL: https://assets-17app.akamaized.net/bce06789-551c-46c4-9f68-b0eaad5b9f1b.png
-  hintToken: {key: monster_battle_hint_kira,fontAttribute: {textColor: "#FFFFFF"}}
-  rule1Token: {key: monster_battle_rule1_kira,fontAttribute: {textColor: "#FFFFFF"}}
-  rule2Token: {key: monster_battle_rule2_kira,fontAttribute: {textColor: "#FFFFFF"}}
-  rule3Token: {key: monster_battle_rule3_kira,fontAttribute: {textColor: "#FFFFFF"}}
-  rule4Token: {key: monster_battle_rule4_kira,fontAttribute: {textColor: "#FFFFFF"}}
-  countdownToken: {key: monster_battle_countdown_kira,fontAttribute: {textColor: "#FFFFFF"}}
-  failureToken: {key: monster_battle_failure_kira,fontAttribute: {textColor: "#FFFFFF"}}
-  successToken: {key: monster_battle_success_kira,fontAttribute: {textColor: "#FFFFFF"}}
+# - id: monster_kira
+#   hit_consume: 10
+#   duration: 60s
+#   stream_alive_threshold: 1m00s
+#   animation: kira
+#   available_dates:
+#   - start_date: "2019-01-01T00:00:00+08:00"
+#     end_date: "2019-02-22T11:55:00+08:00"
+#   appear_durations:
+#   - start_time: 00h00m00s
+#     end_time: 24h00m00s
+#   type: 0
+#   share_ratio: 50 # percentage
+#   profit_ratio: 35 # percentage
+#   bonus: 300
+#   weight: 0.6
+#   infoPageiconURL: https://assets-17app.akamaized.net/25494e91-8ef2-4653-9649-e5453f103ad3.png
+#   winnerPageiconURL: https://assets-17app.akamaized.net/bce06789-551c-46c4-9f68-b0eaad5b9f1b.png
+#   hintToken: {key: monster_battle_hint_kira,fontAttribute: {textColor: "#FFFFFF"}}
+#   rule1Token: {key: monster_battle_rule1_kira,fontAttribute: {textColor: "#FFFFFF"}}
+#   rule2Token: {key: monster_battle_rule2_kira,fontAttribute: {textColor: "#FFFFFF"}}
+#   rule3Token: {key: monster_battle_rule3_kira,fontAttribute: {textColor: "#FFFFFF"}}
+#   rule4Token: {key: monster_battle_rule4_kira,fontAttribute: {textColor: "#FFFFFF"}}
+#   countdownToken: {key: monster_battle_countdown_kira,fontAttribute: {textColor: "#FFFFFF"}}
+#   failureToken: {key: monster_battle_failure_kira,fontAttribute: {textColor: "#FFFFFF"}}
+#   successToken: {key: monster_battle_success_kira,fontAttribute: {textColor: "#FFFFFF"}}
 
-- id: monster_llama_kira
-  hit_consume: 10
-  duration: 60s
-  stream_alive_threshold: 1m00s
-  animation: nian
-  available_dates:
-  - start_date: "2019-01-01T00:00:00+08:00"
-    end_date: "2019-04-14T00:00:00+08:00"
-  appear_durations:
-  - start_time: 00h00m00s
-    end_time: 24h00m00s
-  type: 1
-  summonGifts:
-  - giftID: "1904_tw-racing_2000"
-    probability: 9000 # n / 10000 * 100%
-  - giftID: "1904_tw-racing_200"
-    probability: 5000 # n / 10000 * 100%
-  - giftID: "1904_tw-racing_20"
-    probability: 1000 # n / 10000 * 100%
-  share_ratio: 50 # percentage
-  profit_ratio: 35 # percentage
-  bonus: 336
-  infoPageiconURL: https://assets-17app.akamaized.net/a0743416-7cad-43ea-b83d-4beec992c033.png
-  winnerPageiconURL: https://assets-17app.akamaized.net/617866c6-edb1-4168-b852-3515bc4f870a.png
-  hintToken: {key: monster_battle_summon_hint_llama,fontAttribute: {textColor: "#FFFFFF"}}
-  rule1Token: {key: monster_battle_summon_rule1_llama,fontAttribute: {textColor: "#FFFFFF"}}
-  rule2Token: {key: monster_battle_summon_rule2_llama,fontAttribute: {textColor: "#FFFFFF"}}
-  rule3Token: {key: monster_battle_summon_rule3_llama,fontAttribute: {textColor: "#FFFFFF"}}
-  rule4Token: {key: monster_battle_summon_rule4_llama,fontAttribute: {textColor: "#FFFFFF"}}
-  countdownToken: {key: monster_battle_summon_countdown_llama,fontAttribute: {textColor: "#FFFFFF"}}
-  failureToken: {key: monster_battle_summon_failure_llama,fontAttribute: {textColor: "#FFFFFF"}}
-  successToken: {key: monster_battle_summon_success_llama,fontAttribute: {textColor: "#FFFFFF"}}
+# - id: monster_sharpshooter
+#   hit_consume: 10
+#   duration: 60s
+#   stream_alive_threshold: 1m00s
+#   animation: cowboy
+#   available_dates:
+#   - start_date: "2019-01-01T00:00:00+08:00"
+#     end_date: "2019-05-14T00:00:00+08:00"
+#   appear_durations:
+#   - start_time: 00h00m00s
+#     end_time: 24h00m00s
+#   type: 1
+#   summonGifts:
+#   - giftID: "1904_tw_cowboy_20000"
+#     probability: 2000 # n / 10000 * 100%
+#   - giftID: "1904_tw_cowboy_2000"
+#     probability: 200 # n / 10000 * 100%
+#   - giftID: "1904_tw_cowboy_200"
+#     probability: 1000 # n / 10000 * 100%
+#   # - giftID: "gift_lightstick_g"
+#   #   probability: 10000 # n / 10000 * 100%
+#   # - giftID: "gift_lightstick_r"
+#   #   probability: 5000 # n / 10000 * 100%
+#   share_ratio: 50 # percentage
+#   profit_ratio: 35 # percentage
+#   bonus: 336
+#   infoPageiconURL: https://assets-17app.akamaized.net/2eaf753e-20d3-429e-a172-eb14c44e21dc.png
+#   winnerPageiconURL: https://assets-17app.akamaized.net/bd258999-59b2-4170-91e6-649dac5a1356.png
+#   hintToken: {key: monster_battle_summon_hint_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+#   rule1Token: {key: monster_battle_summon_rule1_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+#   rule2Token: {key: monster_battle_summon_rule2_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+#   rule3Token: {key: monster_battle_summon_rule3_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+#   rule4Token: {key: monster_battle_summon_rule4_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+#   countdownToken: {key: monster_battle_summon_countdown_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+#   failureToken: {key: monster_battle_summon_failure_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+#   successToken: {key: monster_battle_summon_success_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+#   marqueeToken: {key: monster_battle_summon_marquee}
 
-
-- id: monster_sharpshooter
-  hit_consume: 10
-  duration: 60s
-  stream_alive_threshold: 1m00s
-  animation: cowboy
-  available_dates:
-  - start_date: "2019-01-01T00:00:00+08:00"
-    end_date: "2019-05-14T00:00:00+08:00"
-  appear_durations:
-  - start_time: 00h00m00s
-    end_time: 24h00m00s
-  type: 1
-  summonGifts:
-  - giftID: "1904_tw_cowboy_20000"
-    probability: 2000 # n / 10000 * 100%
-  - giftID: "1904_tw_cowboy_2000"
-    probability: 200 # n / 10000 * 100%
-  - giftID: "1904_tw_cowboy_200"
-    probability: 1000 # n / 10000 * 100%
-  # - giftID: "gift_lightstick_g"
-  #   probability: 10000 # n / 10000 * 100%
-  # - giftID: "gift_lightstick_r"
-  #   probability: 5000 # n / 10000 * 100%
-  share_ratio: 50 # percentage
-  profit_ratio: 35 # percentage
-  bonus: 336
-  infoPageiconURL: https://assets-17app.akamaized.net/2eaf753e-20d3-429e-a172-eb14c44e21dc.png
-  winnerPageiconURL: https://assets-17app.akamaized.net/bd258999-59b2-4170-91e6-649dac5a1356.png
-  hintToken: {key: monster_battle_summon_hint_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
-  rule1Token: {key: monster_battle_summon_rule1_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
-  rule2Token: {key: monster_battle_summon_rule2_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
-  rule3Token: {key: monster_battle_summon_rule3_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
-  rule4Token: {key: monster_battle_summon_rule4_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
-  countdownToken: {key: monster_battle_summon_countdown_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
-  failureToken: {key: monster_battle_summon_failure_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
-  successToken: {key: monster_battle_summon_success_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
-
-- id: monster_wildwolf
-  hit_consume: 10
-  duration: 60s
-  stream_alive_threshold: 1m00s
-  animation: wolf
-  available_dates:
-  - start_date: "2019-05-22T15:00:00+08:00"
-    end_date: "2019-06-01T23:59:59+08:00"
-  appear_durations:
-  - start_time: 00h00m00s
-    end_time: 24h00m00s
-  type: 1
-  summonGifts:
-  - giftID: "1905_tw_wolf_15000"
-    probability: 10000 # n / 10000 * 100%
-  - giftID: "1905_tw_wolf_1500"
-    probability: 10000 # n / 10000 * 100%
-  - giftID: "1905_tw_wolf_150"
-    probability: 0 # n / 10000 * 100%
-  - giftID: "gift_lightstick_g"
-    probability: 10000 # n / 10000 * 100%
-  - giftID: "gift_lightstick_r"
-    probability: 10000 # n / 10000 * 100%
-  share_ratio: 50 # percentage
-  profit_ratio: 35 # percentage
-  bonus: 336
-  infoPageiconURL: https://assets-17app.akamaized.net/14c74f12-e37f-4d5a-87e8-bd4067bfee22.png
-  winnerPageiconURL: https://assets-17app.akamaized.net/db585130-734e-4eda-b492-9864034445bd.png
-  hintToken: {key: monster_battle_wolf_hint_wolf,fontAttribute: {textColor: "#FFFFFF"}}
-  rule1Token: {key: monster_battle_wolf_rule1,fontAttribute: {textColor: "#FFFFFF"}}
-  rule2Token: {key: monster_battle_wolf_rule2,fontAttribute: {textColor: "#FFFFFF"}}
-  rule3Token: {key: monster_battle_wolf_rule3,fontAttribute: {textColor: "#FFFFFF"}}
-  rule4Token: {key: monster_battle_wolf_rule4,fontAttribute: {textColor: "#FFFFFF"}}
-  countdownToken: {key: monster_battle_wolf_countdown,fontAttribute: {textColor: "#FFFFFF"}}
-  failureToken: {key: monster_battle_wolf_failure,fontAttribute: {textColor: "#FFFFFF"}}
-  successToken: {key: monster_battle_wolf_success,fontAttribute: {textColor: "#FFFFFF"}}
+# - id: monster_wildwolf
+#   hit_consume: 10
+#   duration: 60s
+#   stream_alive_threshold: 1m00s
+#   animation: wolf
+#   available_dates:
+#   - start_date: "2019-05-22T15:00:00+08:00"
+#     end_date: "2019-06-01T23:59:59+08:00"
+#   appear_durations:
+#   - start_time: 00h00m00s
+#     end_time: 24h00m00s
+#   type: 1
+#   summonGifts:
+#   - giftID: "1905_tw_wolf_15000"
+#     probability: 10000 # n / 10000 * 100%
+#   - giftID: "1905_tw_wolf_1500"
+#     probability: 10000 # n / 10000 * 100%
+#   - giftID: "1905_tw_wolf_150"
+#     probability: 0 # n / 10000 * 100%
+#   - giftID: "gift_lightstick_g"
+#     probability: 10000 # n / 10000 * 100%
+#   - giftID: "gift_lightstick_r"
+#     probability: 10000 # n / 10000 * 100%
+#   share_ratio: 50 # percentage
+#   profit_ratio: 35 # percentage
+#   bonus: 336
+#   infoPageiconURL: https://assets-17app.akamaized.net/14c74f12-e37f-4d5a-87e8-bd4067bfee22.png
+#   winnerPageiconURL: https://assets-17app.akamaized.net/db585130-734e-4eda-b492-9864034445bd.png
+#   hintToken: {key: monster_battle_wolf_hint_wolf,fontAttribute: {textColor: "#FFFFFF"}}
+#   rule1Token: {key: monster_battle_wolf_rule1,fontAttribute: {textColor: "#FFFFFF"}}
+#   rule2Token: {key: monster_battle_wolf_rule2,fontAttribute: {textColor: "#FFFFFF"}}
+#   rule3Token: {key: monster_battle_wolf_rule3,fontAttribute: {textColor: "#FFFFFF"}}
+#   rule4Token: {key: monster_battle_wolf_rule4,fontAttribute: {textColor: "#FFFFFF"}}
+#   countdownToken: {key: monster_battle_wolf_countdown,fontAttribute: {textColor: "#FFFFFF"}}
+#   failureToken: {key: monster_battle_wolf_failure,fontAttribute: {textColor: "#FFFFFF"}}
+#   successToken: {key: monster_battle_wolf_success,fontAttribute: {textColor: "#FFFFFF"}}
+#   marqueeToken: {key: monster_battle_summon_marquee}
 
 - id: monster_llama
   hit_consume: 10
@@ -259,7 +228,7 @@ monsters:
     probability: 2000 # n / 10000 * 100%
   - giftID: "1904_tw_racing_200"
     probability: 200 # n / 10000 * 100%
-  - giftID: "gift_lightstick_b"
+  - giftID: "gift_lightstick_g"
     probability: 10000 # n / 10000 * 100%
   share_ratio: 50 # percentage
   profit_ratio: 35 # percentage
@@ -274,6 +243,7 @@ monsters:
   countdownToken: {key: monster_battle_summon_countdown_llama,fontAttribute: {textColor: "#FFFFFF"}}
   failureToken: {key: monster_battle_summon_failure_llama,fontAttribute: {textColor: "#FFFFFF"}}
   successToken: {key: monster_battle_summon_success_llama,fontAttribute: {textColor: "#FFFFFF"}}
+  marqueeToken: {key: monster_battle_summon_marquee_llama}
 
 animationLoader:
 - url: https://assets-17app.akamaized.net/98b26445-2625-49a5-a541-ddf6a0256c00.zip
