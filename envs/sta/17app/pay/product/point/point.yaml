@@ -10,77 +10,21 @@
 # // | CareerFirstTime |  1  | 生涯首儲
   
 eventBasedIAP:
-  - startTime: "2018-12-24T15:00:00+08:00"
-    endTime: "2019-07-25T23:59:59+08:00"
-    showCountdownUnderSticker: true
-    showCountdownInPopUp: false
-    stickerURL: "https://assets-17app.akamaized.net/248e4949-b3ad-429a-8b51-666a3ef48c19.png"
-    eventInfo:
-      eventTitleI18nKey: ""
-      eventURL: "https://17.media/event/1809-tw-nulife"
-    layoutInfo:
-      titlePicURL: "https://assets-17app.akamaized.net/b2d29787-5523-47f0-94b9-789e5edc9a8a.png"
-      messageColor: "#FCF3ED"
-      messageShadowColor: "#710000"
-      messageI18nKey: "iap_modal_premium_marquee_100pts_free"
-      descBgURL: "https://assets-17app.akamaized.net/b1f4018d-08dd-4aec-8d39-6b2a8846119a.png"
-      descLeftBottomURL: "https://assets-17app.akamaized.net/bdee9097-5002-4f1c-ace6-c6fbcbf7dbb9.png"
-      descRightBottomURL: "https://assets-17app.akamaized.net/499005fb-e918-4eee-aa20-5e7a0bede768.png"
-      highlightBgURL: "https://assets-17app.akamaized.net/3bd6d470-6a98-488c-b278-2b756bf542ea.png"
-      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
-    colorInfo:
-      pointColor: "#28232D"
-      bonusPointColor: "#B36F6777"
-      priceColor: "#28232D"
-      rewardTextColor: "#F69355"
-    pointProducts:
-      - productID: "media17_points_14000"
-        bonusPoint: 1700
-        shouldHighlight:  false
-        reward:
-      - productID: "media17_points_6500"
-        bonusPoint: 1700
-        shouldHighlight:  false
-        reward:
-      - productID: "media17_points_2400"
-        bonusPoint: 1700
-        shouldHighlight:  false
-        reward:
-      - productID: "media17_points_1100"
-        bonusPoint: 170
-        shouldHighlight:  false
-        reward:
-      - productID: "media17_points_500"
-        bonusPoint: 170
-        shouldHighlight:  false
-        reward:
-      - productID: "media17_points_100"
-        bonusPoint: 17
-        shouldHighlight:  false
-        reward:
-    firstPurchaseType: 0
-    taInfo:
-      registerRange:
-        dayStart: 14 # 0 means no limit
-        dayEnd: 0 # 0 means no limit
-    displayRewardInfo: false
-    abtestName:
-
 
 productBasedIAP:
-  - startTime: "2018-12-24T15:00:00+08:00"
-    endTime: "2019-04-30T23:59:59+08:00"
-    showCountdownUnderSticker: true
+  - startTime: "2019-06-01T00:00:00+08:00"
+    endTime: "2029-06-30T23:59:59+08:00"
+    showCountdownUnderSticker: false
     showCountdownInPopUp: false
-    stickerURL: "https://assets-17app.akamaized.net/a89c40b4-9490-44a8-858c-e5ce8f4e30af.png"
+    stickerURL: "https://assets-17app.akamaized.net/579c9557-8f5e-4dc9-a31a-e4328990cd2d.png"
     eventInfo:
       eventTitleI18nKey: ""
       eventURL: ""
     layoutInfo:
-      titlePicURL: "https://assets-17app.akamaized.net/d6db58d7-83ec-4017-b1f5-26d6768744e9.png"
+      titlePicURL: "https://assets-17app.akamaized.net/ba4806a3-e962-48ee-8c71-3ffed74da722.png"
       messageColor: "#FCF3ED"
       messageShadowColor: "#710000"
-      messageI18nKey: "iap_modal_premium_marquee_premium_baby"
+      messageI18nKey: "iap_modal_premium_marquee_200pts_free"
       descBgURL: "https://assets-17app.akamaized.net/b1f4018d-08dd-4aec-8d39-6b2a8846119a.png"
       descLeftBottomURL: "https://assets-17app.akamaized.net/bdee9097-5002-4f1c-ace6-c6fbcbf7dbb9.png"
       descRightBottomURL: "https://assets-17app.akamaized.net/499005fb-e918-4eee-aa20-5e7a0bede768.png"
@@ -93,47 +37,29 @@ productBasedIAP:
       rewardTextColor: "#F69355"
     pointProducts:
       - productID: "media17_points_100"
-        bonusPoint: 100
+        bonusPoint: 200
         shouldHighlight:  true
-        reward:
-          type: 1
-          refCount: 5
       - productID: "media17_points_500"
         bonusPoint: 0
         shouldHighlight:  false
-        reward:
-          type: 1
-          refCount: 5
       - productID: "media17_points_1100"
         bonusPoint: 0
         shouldHighlight:  false
-        reward:
-          type: 1
-          refCount: 5
       - productID: "media17_points_2400"
         bonusPoint: 0
         shouldHighlight:  false
-        reward:
-          type: 1
-          refCount: 5
       - productID: "media17_points_6500"
         bonusPoint: 0
         shouldHighlight:  false
-        reward:
-          type: 1
-          refCount: 5
       - productID: "media17_points_14000"
         bonusPoint: 0
         shouldHighlight:  false
-        reward:
-          type: 1
-          refCount: 5
-    firstPurchaseType: 0
+    firstPurchaseType: 1
     taInfo:
       registerRange:
         dayStart: 0 # 0 means no limit
-        dayEnd: 13 # 0 means no limit
-    displayRewardInfo: true
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: false
     abtestName:
 
 
