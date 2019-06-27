@@ -123,6 +123,31 @@ hosts:
         key: "trivia_tv_cti_travel_vote_topic"
       shareWording:
         key: "trivia_tv_cti_travel_share_wording"
+    "f9006aac-8a81-4844-8b6d-6ee03cd73554": # 17Q正式環境測試帳號
+      pictures:
+        default: https://assets-17app.akamaized.net/b794d78d-8fbc-4aaf-a5c6-8926445e5bb2.jpg
+        prepare: https://assets-17app.akamaized.net/b794d78d-8fbc-4aaf-a5c6-8926445e5bb2.jpg
+        onLive:  https://assets-17app.akamaized.net/b794d78d-8fbc-4aaf-a5c6-8926445e5bb2.jpg
+        # default user picture for users without picture
+        user: 857dc12d-46c9-4c63-b3c4-ee8fd1a2eb57.png
+      showBannerTime:
+        weekdays: [0,1,2,3,4,5,6] # 0 ~ 6 means Sunday ~ Saturday
+        hourFrom: 0 # GMT+8
+        hourTo: 23 # GMT+8
+      showBannerPriority: 4
+      disclaimerTitle:
+        key: "trivia_tv_disclaimer_title"
+      disclaimerText:
+        key: "trivia_tv_disclaimer_text"
+      leaveGameToastText:
+        key: "trivia_tv_gamer_leave_double_confirm_text"
+      voteTopic:
+        key: "trivia_tv_vote_topic"
+      shareWording:
+        key: "trivia_tv_share_wording"
+      isMedalSupported:
+        Default: true
+        CorrectMost: true
 
 referral:
   registerDay: 3
