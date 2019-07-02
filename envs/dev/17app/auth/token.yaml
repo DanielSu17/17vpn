@@ -9,3 +9,14 @@ refreshTokenExpireMinutes: 259200
 # 1: both old access token and jwt token
 # 2: jwt token only
 stage: 1 
+
+# version check for token stage 1
+# if forceAccessToken is ture and client version < config version
+# server will process old access token
+iosVersionControl:
+  forceAccessToken: false
+  version: 3.55.0
+
+androidVersionControl:
+  forceAccessToken: false
+  version: 2.3.87
