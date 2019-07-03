@@ -15,3 +15,65 @@ allowed_origins:
  - "^https?://[-\\w]+\\.17app\\.co(:\\d+)?$"
  - "^http://17\\.local(:\\d+)?$"
  - "^http://localhost(:\\d+)?$"
+conf:
+ - url_key: "go_url"
+   white_list:
+     liveStreams: "getLiveStreamHotCountryList,commentLiveStream,\
+            isUserOnLiveStream,getSuggestedLiveStreams,\
+            getLatestLiveStreams,publishLiveStream,getLiveStreamInfo,\
+            getUserLiveStreams,getLiveStreamViewers,keepLiveStream,\
+            likeLivestreamBatchUpdate,endLiveStream,enterLiveStream,\
+            quitViewLiveStream,keepViewLiveStream,reportLiveAction,\
+            restreamLiveStream,hasRestreamedLiveStream"
+     liveStreams/admin: "pass,kill,hide,pintotop,cancelpintotop,\
+            killLiveStreamAction,passLiveStream,hideLiveStream,\
+            promoteLiveStream,getLiveStreamsForReview,\
+            removePromotedLiveStream,promoteTopLiveStream,\
+            cancelPromoteTopLiveStream,hideHotLivestreamAction"
+     api: "api"
+     feed: "getPostFeed,celebrities/all,celebrities"
+     gift: "getLiveStreamGiftLeaderboard,sendGift,\
+            getLiveStreamGiftInfo,getUnreadReceivedGift,\
+            getLiveStreamAllGifts,readGift,getGiftList,\
+            getReceivedGiftLog"
+     legacy: "getUserInfo,getUserInfoByUserID,\
+            getSelfInfo,unblockUserAction,blockUserAction,adminBlockUserAction,\
+            getBlockUserList,followUserAction,unfollowUserAction,\
+            sendFollowRequest,rejectFollowRequest,\
+            cancelFollowRequests,acceptFollowRequest,\
+            getFollowRequests,getSearchUsers,getFollowing,\
+            getFollower,getHotUsers,getGiftLeaderboard,\
+            banUserAction,freezeUserAction,updateUserInfo,\
+            checkingSandBox,securityActions,getNotif,\
+            getReviewProfile,processProfilePictureReview,\
+            getFriendNotif,adminDeleteProfilePictureAction,\
+            reportUserAction,getUserLikers,adOnAction,adOffAction,getCountry,\
+            choiceUserAction,verifyUserAction,removeVerifiedUserAction,adminBlockDirtyWordAction"
+     event: "getEventBanners"
+     pay: "purchaseProduct"
+     auth: "loginAction,loginAction2,registerAction,registerAction2,\
+            checkFacebookIDAvailable,checkOpenIDAvailable,\
+            registerByPhoneAction,sendPhoneVerificationCode,\
+            checkNeedHumanTest,isPhoneNumberUsed,verifyUserIdentity,\
+            changePassword,changePhoneNumber,ChangePhoneNumber,\
+            isPhoneNumberOpenIDPaired,\
+            eraseInternationalPhoneNumber,\
+            getResetPasswordToken,resetPassword"
+     official: "getVersionStatus"
+     post: "publishPost,viewPost,commentPost,getUserPost,unlikePost,\
+            deleteComment,likePostBatchUpdate,updatePost,deletePost,\
+            getExplorePicturesForReview,passExplorePicture,\
+            hideExplorePicture,hidePostAction,adminDeletePostAction,\
+            getPostInfo,getComments,adminPromotePost,\
+            reportCommentAction,reportPostAction,getHotPost,\
+            recoverPostAction,searchHashTag,getPostLikers,\
+            getReportPost,processReportedPostAction"
+     money: "getPointUsageLog,getPointGainLog,getRevenueReport"
+     follow: "getFriendSuggestion"
+     deadlegacy: "eventTracking,getNewestAppVersion,getSuggestedUsers,\
+            findFriends,getExploreSuggestedUsers,getLikeLeaderboard,\
+            getSystemNotif,getHotLiveStreams,getHotLiveStreams2,likePost,\
+            getLikedPost,getLiveStreamComments,recoverPassword,\
+            getPayments,uploadPhoneNumbers,uploadFacebookFriends,\
+            followAllAction,updateLiveStreamInfo,\
+            getPointProductList,getPostByHashTag,readNotif,updateOpenID"
