@@ -1,0 +1,110 @@
+# labelInfos defines all label related infos including type, label(i18n), iconURL
+# - type: 1(music), 2(politics)
+# - featured: true / false (default)
+labelInfos:
+  - id: "pundit" # 政治名嘴
+    type: 2
+    label:
+      key: "streamer_label_pundit"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+  - id: "player" # 演奏達人
+    type: 1
+    label:
+      key: "streamer_label_player"
+    iconURL: "https://assets-17app.akamaized.net/517c138d-54d9-4713-a931-06c9af7e53b9.png"
+  - id: "acoustic" # 彈唱歌手
+    type: 1
+    label:
+      key: "streamer_label_acoustic"
+    iconURL: "https://assets-17app.akamaized.net/5d8e75a0-37a7-472b-a8b5-dd8aef279e0c.png"
+  - id: "singer" # 實力歌手
+    type: 1
+    label:
+      key: "streamer_label_singer"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+
+
+# labelWhiteList defines relation between label and user list
+labelWhiteList:
+  pundit: # 政治名嘴
+    - d4fa2189-be5b-4351-8dc6-3793b3e79593 # 嘴一波
+    - 62695786-774b-46de-849f-944ba9548d35 # 韓國瑜
+    - f72d13f1-59a4-4ac4-8958-2d64c569556f # 黃暐瀚17
+    - d62b9dcf-157f-4345-9c75-272f236573e8 # 3q陳柏惟
+    - f488e6f8-4980-4fb7-9502-f1a4a075e8b8 # 視網膜Retina
+    - 64960d5e-1631-4d55-9cd6-66c7ecfb6eef # 黃益中
+    - 799bdb57-9390-46b8-9cc6-0303b68a7cb6  # 羅友志
+    - 5168cc74-3f30-4106-bbf9-5722e6f5101c # 謝龍介
+    - 6172b2ec-dd28-4884-75fc-5415c85ba241  # 星座艾莉絲
+    - fa14dee9-299d-4480-b1a9-c892e79a0e8e # 黃士修
+    - 00e4a6bd-e106-4f5e-be67-0279705b4305 # 于美人
+    # - 92c0e435-b7b3-453b-abf5-1f971db3e4ff # 李承曄
+  acoustic: # 彈唱歌手
+    - 375fcf50-8168-416e-9fa2-c9702a5ec08a # 宋少騫Zustin
+    - 558c7736-3677-4b17-8f94-1631a6870422 # 吳金隆Gino
+    - 671f4ff1-212a-4e7a-80e9-360103c3ab91 # 趙泓捷
+    - 4a771cdf-1fd6-4fcb-8186-73cc32ff5483 # 鍾鎮宇Justin
+    - 94728e88-feca-4ca9-9062-39e3d2f93467 # 小沙
+    - df74240b-2e44-4adb-a4be-2bcd990c96c4 # 瑋男Wes
+    - f54bfd6b-915e-4426-9284-10dcfa9ac8dc # 力銘🎸KROCK
+    - fd5cb358-25f2-4181-a155-dcc9a13789a4 #  蔡乙韶
+    - b5a26d25-e891-49fc-6cdb-65767aa4c8b4  #  慧慧🌻暖心吉他
+    - 00a2be1c-15c0-41da-6531-78ccf3220615  # 鯨魚🐳天籟琴姬
+    - 9b9e38fb-63eb-4e5e-63d9-e8a7206ad0c2  #  吉吉Gigi🐷💕
+    - 3fd4ab7d-2c3c-4378-9edb-66aae214f0d3   # 安狄Andrew🦅
+    - 373399cd-c746-4287-8314-c501a8417b74  #  庭軒
+    - 4b93dd17-ee33-49a2-722d-90017f19a634  #  布朗先生
+    - 3bfdc094-23f5-4593-5812-0573a11aa947   # 王翰🎸Han
+    - d971f6f8-930d-4cd2-8481-666acc6656d5 #   Mark鋼琴王子
+    - c535a844-1925-4093-9665-e33c731ffb63  #  曾曾Minnie💕
+    - 60d9fc18-ff94-42ae-b607-1b9133a9b2eb  # 吳憾Knah
+    - 3ed53cb6-3eaa-4db5-b82b-bc6781ceb7a4  # 琳貴妃
+    - 85a6ad29-4274-4379-812d-a143fe467d36  # 張小米MilletZhang
+    - 5c566e04-2b1b-496b-49ec-89c454b3ee89 # 皮筋兒🌻
+
+
+  player: # 演奏達人
+    - 4ec3b0fc-fe4c-4c67-be05-63f4b3cce9db    # 飛天創藝蕎依	
+    - 7648ed3b-ea8c-47df-a994-585786db4b36    # 飛天創藝法比
+    - 81a6aad4-6456-467f-ac61-1b7c95e1c4cf    # 飛天創藝芃芃
+    - 49462a3e-3be5-456f-985c-caabe715a63c    # 飛天創藝兔喬
+    - 9a032d30-1b90-4ac8-bcd6-aae71064fdc8   # 暖心琴人🎵士堯
+    - 892e3c6b-4284-4047-9279-86a13d2dbe71    # 楊娃兒🐼
+    - eaf30db6-b605-470a-57d2-f1ad949b7b00  #  蒲公英女孩菱菱	
+    - 24073e78-e779-41de-86f3-a70ff9a0637d #  飛天創藝佐藤🐝	
+    - 3faace8d-34ca-4787-4b5a-99b590278535 #  羊🐷兒🎻	
+    - 3ebc3443-2143-4719-5b4a-f2c839b5cd0e #  青甜馥箏❤️
+
+  singer: # 實力歌手
+    - 115851d0-d202-47c5-9079-71d3e7f704f7 # 亮金金
+    - 21280e9c-e07d-4d1b-83b7-e591bc3b1056 # 我叫易小魚🐟🎤
+    - 2755452a-a0ec-4a3f-a83d-6db0634f62ae # 胡利基
+    - 604ec832-4884-47d6-beed-cf178cad1caa # 篠崎泫🎤篠崎是姓泫是名
+    - 60602fef-d6ee-4fb6-a38c-1ffd15b16c6f # 張語噥sammy
+    - 83821902-75d0-4c7a-86c4-0cf8590cc7d8 # 張聖子-小露Lucia
+    - c9fafa51-ab41-407f-9bac-6b5c9e201cd5 # 徐凱希cathy
+    - 88f52a35-d951-4beb-822c-ad3d7e8f479b # 🎤鐵肺美金💰
+    - dafe822c-39a3-4b17-a492-c436d78cbe22 # 蕭小M🐤🐣🐔	
+    - 6f621e1d-3b03-431b-b5a5-d2db42cf52ae # 鄞芽兒😸(｡◝‿◜｡)	
+    - d40746d6-7e5a-4b2c-a9fd-79bc85e01eb1 # 跳跳🌺Arisa	
+    - 89dc3d08-8eca-42cb-aba9-849a8c271c53  # 高慧君-紅衣教主	
+    - 1b8188e6-9147-4739-8d33-8e69f482e170 # 蘿拉💕Lola🦌
+    - 57d5c6f6-40b7-4d57-98a1-9a40b72e61f6 # kaii凱伊
+    - 867aaaab-ba2b-4ff6-9d6e-18cc69feac27  # 吳是閎54Red
+    - 9b3ece42-045e-4f93-b5f2-8fcc85ab4154  # 賴芊予charmmy
+    - a161cfa1-200d-4f5f-b399-76ba528dec7c  # 甜甜✨✨	
+    - a3eaf681-c25d-4a93-ae18-96c7824efd62  # 陳昭如	
+    - e42f7314-ef2f-4ed5-8b34-01a28da3c8e4  # 祖祖
+    - 500514df-d764-44dd-7883-e1966d2ff634  # 小紫
+    - 88b67ae5-6e7c-4ce5-b44b-0f73b29fe52e  # 張域新D.O.M
+    - 735647de-547d-4d9b-7ad7-2cc98ef3999f   # 歌王Danny佑
+    - 4fb9d121-9ce0-45fd-8448-82add87cdb12  #  李宜柏YB🎤
+    - 48268cdd-4dcd-4054-97f1-69838f7cfec4  #  ❤️魅音🎤莎莎🍀
+    - 58e97481-224c-4660-93dd-51da3dbc570f #   ❤️魅音🎤火哥🔥
+    - 1b989e5c-3afc-4069-6684-e9a5d2ef4b7b  #  陳洛Lois
+    - 25f46a01-626a-43db-ab4b-cdbd668f75d8  #  依然zoey
+    - cbff36c6-419c-4687-7c9e-7eb208c2a103 #  維梃forU🚗
+    - 34c0fbcf-45d3-456e-acff-7bff29b66a3a # 晏琳Jane
+    - eb975d22-f7fc-4e14-b2c8-33af33b04db5 # 安雨晨
+    - 356bc2b6-44e6-4779-4a17-418f67eba85c # 甯甯Ning🍋
+    - d91194d4-3fe0-4cde-a873-8389a7888825 # 虎寶🐯
