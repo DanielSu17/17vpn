@@ -11,3 +11,8 @@ rate_limits:
   flow_per_second: 0.017  # 1 unit/min
   reservoir_size: 3
   scope: by_access_token
+- url: "/api/v1/lives/.*/comments"
+  method: "POST"
+  flow_per_second: 1 # 1 unit/s
+  reservoir_size: 60
+  scope: by_access_token
