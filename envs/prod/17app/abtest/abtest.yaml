@@ -219,8 +219,9 @@
     "e": "b"
     "f": "b"
 # Phase 7: 台灣強化新用戶引導
+# Note: abtestNewbieGuidance必需是B 且newbieDismissDialog不能開
 - testName: newbiePhase7
-  enableABtest: false
+  enableABtest: true
   expiredSecond: 600 # 10 mins, it should disappear soon.
   lastCharGroup:
     "0": "a"
