@@ -10,9 +10,9 @@ rtmp_providers:
   quality_support: 0
   weight: 0
 - name: QINIU
-  weight: 20
+  weight: 30
   region_weights:
-    TW: 10
+    TW: 20
   quality_support: 0
   expire_after_hours: 12
   users:
@@ -44,9 +44,10 @@ rtmp_providers:
   - 8f2b3270-6e19-4f19-b9b3-2fa8cc4f6d3f # 巴巴baba
   - 93e77d8a-c4b1-45f3-ae74-5ad68620e5a0 # 妖妖DanceQueen
   - 2aee9213-3c8c-46f2-b5ca-cad9985d09cf # 如如ruru
-  - 3faace8d-34ca-4787-4b5a-99b590278535 # 羊🐷兒🎻
-  - 3a77a6e7-b057-4329-b5c5-8f0b0b1e2c76 # 小寶弟Singing🎤
+  - 3faace8d-34ca-4787-4b5a-99b590278535 # 羊兒
+  - 3a77a6e7-b057-4329-b5c5-8f0b0b1e2c76 # 小寶弟Singing
   - 885c16fb-4d2b-4722-a323-295aa5788574 # bbhands
+  - 85c21e33-8e49-4522-b37b-cac7cc205454 # 嘿我是小昭
 - name: QCLOUD
   quality_support: 0
   weight: 0
@@ -60,12 +61,12 @@ rtmp_providers:
   - e0d68bc2-03c1-4a38-a149-ee65d0089036 # 當我們喇在一起
   - ae7c1f66-1d13-469a-ba6d-8c5592778c34 # 17indo
   - 0684f899-6f7c-4bba-a37b-efc5927dbbd4 # 搶手主打星
-  - 09892f6e-d109-4eac-4f05-e759199f01a0 # たまき🐆
+  - 09892f6e-d109-4eac-4f05-e759199f01a0 # たまき
   - 10121330-1f48-4266-56a4-d3d297421e52 # 球神問卜
   - 1064096b-6585-4dc3-aa85-218cb2e2a8fa # 77歡樂城
   - 16226683-73a4-4055-a536-d3bb317cb3c7 # 17japan
   - 1c24a180-5550-4b19-4124-1955db510942 # 于美人失控廚房在17
-  - e2254b27-e60a-4969-5fca-601cdebb8f63 # 元元小可愛✨
+  - e2254b27-e60a-4969-5fca-601cdebb8f63 # 元元小可愛
   - 652351ca-e94f-412e-4f0c-fc3d6f0f728e # haru_pon
   - 97af558b-7bef-407b-9c6e-617b43c77122 # saydaword
   - 43f84441-e11f-4f87-6f0c-caa859475819 # DJ炸彈帶你飛
@@ -87,14 +88,16 @@ rtmp_providers:
   - cc2d9337-6e93-43ec-b371-118cd5bf5e0b # 笨笨Bernice
   - 86e4a2c3-b524-4739-a65f-93874b7bb433 # 水蜜桃Peachie
   - 658b5e75-d393-4fcd-aaab-5b52a14b2421 # 烏丸結子
-  - 41be5541-c29d-40f6-a9c1-d5f0287462bf # いぐさ👻Igusa🌸妖怪
+  - 41be5541-c29d-40f6-a9c1-d5f0287462bf # いぐさ
   - 054ded55-fe45-4708-b41e-3dc41fba7619 # ねむみo
   - ccfbfd00-126d-4ceb-9006-a4d2cd17761b # リア_VTuber
   - c9692e9a-d6af-4c3b-b2ba-9954f2fb748d # momoiscool
-  - 5afe46ef-aa47-43e8-b58c-b02dbe26e0b9 # Viola👑Rufティナ💖🎠
+  - 5afe46ef-aa47-43e8-b58c-b02dbe26e0b9 # Viola
   - 2aa76dc3-6cfc-4614-bcd5-e5532361349e # 今泉佑唯
   - 62695786-774b-46de-849f-944ba9548d35 # 韓國瑜
   - 39d4223c-d2bf-45ca-92c6-d87da876831e # 梨梨仙女
+  - 81bb8d64-06d3-4365-bb57-1c223d6e09cd # 小雪
+  - 41528f0b-ecfb-45af-68a4-046ab00d0bff # 亞心nana
 - name: WANSU_LOW_LATENCY
   quality_support: 1
   weight: 0
@@ -114,13 +117,10 @@ rtmp_providers:
   users: []
 - name: SRS
   quality_support: 0
-  weight: 10
+  weight: 0
   region_weights:
-    TW: 10
+    TW: 0
   users:
-  - 81bb8d64-06d3-4365-bb57-1c223d6e09cd # Originally Bind to WANSU / 小雪
-  - 41528f0b-ecfb-45af-68a4-046ab00d0bff # Originally Bind to WANSU / 亞心nana
-  - 85c21e33-8e49-4522-b37b-cac7cc205454 # Originally Bind to QINIU / 嘿我是小昭
   - 41cd8317-e149-43a9-6027-fb0286b69d52 # Developer: kewei@17.media / integritywei
 message_providers_17q:
 - name: PUBNUB_MESSAGE
