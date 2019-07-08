@@ -1,1 +1,1 @@
-# TW Label 設定 (探索)
+# TW Label 設定
