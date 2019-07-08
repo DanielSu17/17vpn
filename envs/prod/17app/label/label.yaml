@@ -3,12 +3,24 @@
 # - featured: true / false (default)
 # - labelID: mapping for labels table id
 labelInfos:
+  - id: "singstar" # 星聲代
+    type: 1
+    featured: true
+    label:
+      key: "streamer_label_17singstar"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
   - id: "pundit" # 政治名嘴
     type: 2
     label:
       key: "streamer_label_pundit"
     iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
     labelID: 108
+  - id: "fortune_teller" # 命理小舖
+    type: 2
+    label:
+      key: "streamer_label_fortune_teller"
+    iconURL: "https://assets-17app.akamaized.net/7d40b28d-5d6b-4332-b8d7-5d6f088837e4.png"
+    labelID: 109
   - id: "player" # 演奏達人
     type: 1
     label:
@@ -39,10 +51,24 @@ labelWhiteList:
     - 64960d5e-1631-4d55-9cd6-66c7ecfb6eef # 黃益中
     - 799bdb57-9390-46b8-9cc6-0303b68a7cb6  # 羅友志
     - 5168cc74-3f30-4106-bbf9-5722e6f5101c # 謝龍介
-    - 6172b2ec-dd28-4884-75fc-5415c85ba241  # 星座艾莉絲
+
     - fa14dee9-299d-4480-b1a9-c892e79a0e8e # 黃士修
     - 00e4a6bd-e106-4f5e-be67-0279705b4305 # 于美人
-    # - 92c0e435-b7b3-453b-abf5-1f971db3e4ff # 李承曄
+    - 92c0e435-b7b3-453b-abf5-1f971db3e4ff # 李承曄
+    - 2242e3b8-2ab9-4d7f-b0d1-f4743d31a9e5 # 台灣鯛民
+  fortune_teller: # 命理小舖
+    - 2fbdc276-b4dc-433e-5080-119a69f8d644 # 大風神～鐵板神算～
+    - 48a38585-637e-486e-4853-4594a8fa3fab # 紫翎:sunny:占卜:crystal_ball
+    - a0a672af-73ea-44dd-4bd1-3c61e9ab5bfd # 神占塔羅:crystal_ball:仙仙
+    - f7850408-bf5f-4dc2-ba41-aeda90e0cb3a # 翩翩:crystal_ball:一牌解千惑
+    - 5589e654-cef3-4caf-95d1-f56831883ddd # 精油療心占卜師:crystal_ball:小米
+    - 9c52176b-5393-4805-9c9e-7ef1dafcbd17 # 萬金阿嬤:crystal_ball:解惑室
+    - 6172b2ec-dd28-4884-75fc-5415c85ba241  # 星座艾莉絲
+  singstar: # 星聲代
+  - 500514df-d764-44dd-7883-e1966d2ff634  # 小紫
+  - 1b989e5c-3afc-4069-6684-e9a5d2ef4b7b  #  陳洛Lois
+  - 83821902-75d0-4c7a-86c4-0cf8590cc7d8 # 張聖子-小露Lucia
+  - f5f76efe-49a3-40ba-9c4b-6aae96d5b3ab # 張愛愛
   acoustic: # 彈唱歌手
     - 375fcf50-8168-416e-9fa2-c9702a5ec08a # 宋少騫Zustin
     - 558c7736-3677-4b17-8f94-1631a6870422 # 吳金隆Gino
@@ -85,7 +111,6 @@ labelWhiteList:
     - 2755452a-a0ec-4a3f-a83d-6db0634f62ae # 胡利基
     - 604ec832-4884-47d6-beed-cf178cad1caa # 篠崎泫🎤篠崎是姓泫是名
     - 60602fef-d6ee-4fb6-a38c-1ffd15b16c6f # 張語噥sammy
-    - 83821902-75d0-4c7a-86c4-0cf8590cc7d8 # 張聖子-小露Lucia
     - c9fafa51-ab41-407f-9bac-6b5c9e201cd5 # 徐凱希cathy
     - 88f52a35-d951-4beb-822c-ad3d7e8f479b # 🎤鐵肺美金💰
     - dafe822c-39a3-4b17-a492-c436d78cbe22 # 蕭小M🐤🐣🐔	
@@ -99,13 +124,11 @@ labelWhiteList:
     - a161cfa1-200d-4f5f-b399-76ba528dec7c  # 甜甜✨✨	
     - a3eaf681-c25d-4a93-ae18-96c7824efd62  # 陳昭如	
     - e42f7314-ef2f-4ed5-8b34-01a28da3c8e4  # 祖祖
-    - 500514df-d764-44dd-7883-e1966d2ff634  # 小紫
     - 88b67ae5-6e7c-4ce5-b44b-0f73b29fe52e  # 張域新D.O.M
     - 735647de-547d-4d9b-7ad7-2cc98ef3999f   # 歌王Danny佑
     - 4fb9d121-9ce0-45fd-8448-82add87cdb12  #  李宜柏YB🎤
     - 48268cdd-4dcd-4054-97f1-69838f7cfec4  #  ❤️魅音🎤莎莎🍀
     - 58e97481-224c-4660-93dd-51da3dbc570f #   ❤️魅音🎤火哥🔥
-    - 1b989e5c-3afc-4069-6684-e9a5d2ef4b7b  #  陳洛Lois
     - 25f46a01-626a-43db-ab4b-cdbd668f75d8  #  依然zoey
     - cbff36c6-419c-4687-7c9e-7eb208c2a103 #  維梃forU🚗
     - 34c0fbcf-45d3-456e-acff-7bff29b66a3a # 晏琳Jane
