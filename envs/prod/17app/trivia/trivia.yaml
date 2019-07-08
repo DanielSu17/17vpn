@@ -154,6 +154,31 @@ hosts:
       isMedalSupported:
         Default: true
         CorrectMost: false
+    "3251bc72-3784-4f30-a19b-c3f0d77ac07d": # 視網膜
+      pictures:
+        default: https://assets-17app.akamaized.net/35f89256-16e2-4125-a5be-59584086b067.jpg
+        prepare: https://assets-17app.akamaized.net/35f89256-16e2-4125-a5be-59584086b067.jpg
+        onLive:  https://assets-17app.akamaized.net/35f89256-16e2-4125-a5be-59584086b067.jpg
+        # default user picture for users without picture
+        user: 857dc12d-46c9-4c63-b3c4-ee8fd1a2eb57.png
+      showBannerTime:
+        weekdays: [0,1,2,3,4,5,6] # 0 ~ 6 means Sunday ~ Saturday
+        hourFrom: 0 # GMT+8
+        hourTo: 23 # GMT+8
+      showBannerPriority: 5
+      disclaimerTitle:
+        key: "trivia_tv_eyectv_disclaimer_title"
+      disclaimerText:
+        key: "trivia_tv_eyectv_disclaimer_text"
+      leaveGameToastText:
+        key: "trivia_tv_eyectv_gamer_leave_double_confirm_text"
+      voteTopic:
+        key: "trivia_tv_eyectv_vote_topic"
+      shareWording:
+        key: "trivia_tv_eyectv_share_wording"
+      isMedalSupported:
+        Default: false
+        CorrectMost: false
 
 referral:
   registerDay: 7
