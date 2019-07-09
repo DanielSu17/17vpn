@@ -27,34 +27,28 @@
 # | NON_IAP | 2 |
 
 missions:
-  - ID: 7ce1012d-4a81-442c-8f29-6502b6ce8044
-    type: 9
-    lifeCycle: 1
+  - ID: 170826e7-19d8-4bf9-bed5-b763f9a38dc2
+    type: 8
+    lifeCycle: 0
     targetAudience: 0
     levelRange:
-      min: 0
-      max: 0
+      min: 15
+      max: 999
     reward:
       rewardType: 1
-      rewardID: 1906_my_sportparty_bp
+      rewardID: 1907_tw_tongue_bp_100
       amount: 1
-      expireTimeSecs: 86400
-    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_my_title
+      expireTimeSecs: 259200
+    i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
     i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 5
-    i18nContent: baggage_mission_watch_streams_time_in_total_reward_my_desc
+    i18nContent: 
     i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: gift_1906_my_sportparty_bp
-    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_my_desc
+    i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
     i18nDescriptionParams:
-    goalValue: 300
+    goalValue: 1
     enableTimeRange:
-      - startTime: "2019-06-01 18:00:00 (GMT+0800)"
-        endTime: "2019-06-15 23:59:59 (GMT+0800)"
+      - startTime: "2019-07-16 18:00:00 (GMT+0800)"
+        endTime: "2019-07-26 23:59:59 (GMT+0800)"
     refIDs:
     platforms:
       - android
@@ -185,39 +179,6 @@ missions:
       - gf2019_j_10000
       - gf2019_k_10000
       - gf2019_l_10000
-    platforms:
-      - android
-      - ios
-
-  - ID: 72e9b574-06ae-499c-9c66-7a6ba0e6a7e8
-    type: 5
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 21
-      max: 9999
-    reward:
-      rewardType: 1
-      rewardID: 1906_tw_wedding_bp_10
-      amount: 1
-      expireTimeSecs: 86400
-    i18nTitle: baggage_mission_leave_comment_reward_lifetime_title
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 10
-    i18nContent: baggage_mission_leave_comment_reward_lifetime_desc
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: gift_1906_tw_wedding_bp_10
-    i18nDescription: baggage_mission_opt_leave_comment_reward_lifetime_desc
-    i18nDescriptionParams:
-    goalValue: 10
-    enableTimeRange:
-      - startTime: "2019-06-02 18:00:00 (GMT+0800)"
-        endTime: "2019-06-23 20:29:59 (GMT+0800)"
-    refIDs:
     platforms:
       - android
       - ios
