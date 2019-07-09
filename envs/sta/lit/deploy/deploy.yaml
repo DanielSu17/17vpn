@@ -1,7 +1,18 @@
+# Slack bot (deployment) config
+#
+# Author: CM Chung
+# this file is deployment (alfred) for lit project
 type:
-  lit:          "go"
-  lit-worker:   "go"
+  lit:           "go"
+  lit-worker:    "go"
+  lit-web:       "webapp"
+  lit-dashboard: "webapp"
 settings:
   go:
     k8sprod:
-      endpoint: 'lit-k8sprod-deployment-goapi/buildWithParameters?token=gz6E0latrZOse6awWP1ynWmQ6y9ug27yh2T98Nyi'
+      endpoint: 'Lit/job/prod-backend-deploy/buildWithParameters?token=gz6E0latrZOse6awWP1ynWmQ6y9ug27yh2T98Nyi'
+    k8ssta:
+      endpoint: 'Lit/job/stag-backend-deploy/buildWithParameters?token=nKnqqUm2y0JlW8wek4Ae0HD1xUpUBD04T15AjmwT'
+  webapp:
+    prod:
+      endpoint: 'Lit/job/prod-frontend-deploy/buildWithParameters?token=tHhPGFznbWbLcpeQZioZzewJnUPT42UmNRnDRUyh'
