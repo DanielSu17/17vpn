@@ -10,10 +10,10 @@
 # // | CareerFirstTime |  1  | 生涯首儲
 
 eventBasedIAP:
-  - startTime: "2019-07-02T16:00:00+08:00"
-    endTime: "2019-07-08T23:59:59+08:00"
+  - startTime: "2019-07-09T14:00:00+08:00"
+    endTime: "2019-07-10T23:59:59+08:00"
     showCountdownUnderSticker: true
-    showCountdownInPopUp: false
+    showCountdownInPopUp: true
     stickerURL: "https://assets-17app.akamaized.net/14fdef5a-f96a-40e8-b264-da420ea551fc.png"
     eventInfo:
       eventTitleI18nKey: ""
@@ -35,11 +35,8 @@ eventBasedIAP:
       rewardTextColor: "#F69355"
     pointProducts:
       - productID: "media17_points_14000"
-        bonusPoint: 1400
+        bonusPoint: 1688
         shouldHighlight:  true
-        reward:
-            type: 1
-            refCount: 1
       - productID: "media17_points_6500"
         bonusPoint: 650
         shouldHighlight:  false
@@ -47,14 +44,20 @@ eventBasedIAP:
         bonusPoint: 240
         shouldHighlight:  false
       - productID: "media17_points_1100"
-        bonusPoint: 110
+        bonusPoint: 0
         shouldHighlight:  false
       - productID: "media17_points_500"
         bonusPoint: 0
         shouldHighlight:  false
+        reward:
+            type: 1
+            refCount: 3
       - productID: "media17_points_100"
         bonusPoint: 0
         shouldHighlight:  false
+        reward:
+            type: 1
+            refCount: 3
     firstPurchaseType: 2
     taInfo:
       registerRange:
