@@ -5,9 +5,16 @@
 type:
   wave-web:       "webapp"
   wave-dashboard: "webapp"
+  wave:           "go"
+  wave-slackbot:  "go"
 settings:
+  go:
+    k8sprod:
+      endpoint: 'Wave/job/prod-backend-deploy/buildWithParameters?token=gz6E0latrZOse6awWP1ynWmQ6y9ug27yh2T98Nyi'
+    k8ssta:
+      endpoint: 'Wave/job/stag-backend-deploy/buildWithParameters?token=nKnqqUm2y0JlW8wek4Ae0HD1xUpUBD04T15AjmwT'
   webapp:
     prod:
-      endpoint: 'prod-frontend-deployment/buildWithParameters?token=tHhPGFznbWbLcpeQZioZzewJnUPT42UmNRnDRUyh'
+      endpoint: 'Wave/job/prod-frontend-deploy/buildWithParameters?token=tHhPGFznbWbLcpeQZioZzewJnUPT42UmNRnDRUyh'
     sta:
-      endpoint: 'stag-frontend-deployment/buildWithParameters?token=uceacpKX7Xk37tHAmrWCPpPGEUEK4dvndRMQYdMz'
+      endpoint: 'Wave/job/stag-frontend-deploy/buildWithParameters?token=uceacpKX7Xk37tHAmrWCPpPGEUEK4dvndRMQYdMz'
