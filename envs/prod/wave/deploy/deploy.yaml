@@ -5,7 +5,14 @@
 type:
   wave-web:       "webapp"
   wave-dashboard: "webapp"
+  wave:           "go"
+  wave-slackbot:  "go"
 settings:
+  go:
+    k8ssta:
+      endpoint: 'Wave/job/wave-k8ssta-deployment-goapi/buildWithParameters?token=nKnqqUm2y0JlW8wek4Ae0HD1xUpUBD04T15AjmwT'
+    k8sprod:
+      endpoint: 'Wave/job/wave-k8sprod-deployment-goapi/buildWithParameters?token=gz6E0latrZOse6awWP1ynWmQ6y9ug27yh2T98Nyi'
   webapp:
     prod:
       endpoint: 'prod-frontend-deployment/buildWithParameters?token=tHhPGFznbWbLcpeQZioZzewJnUPT42UmNRnDRUyh'
