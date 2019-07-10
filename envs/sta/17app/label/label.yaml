@@ -2,8 +2,8 @@
 # - type: 1(music), 2(politics), 3(others)
 # - featured: true / false (default)
 # - labelID: mapping for labels table id
-typeCheckIOSVersion: 3.57.0
-typeCheckAndroidVersion: 2.3.88
+typeCheckIOSVersion: 3.59.0
+typeCheckAndroidVersion: 2.3.90
 
 exploreLabels: # 探索頁面會出現的label
   - 17tv
@@ -12,6 +12,7 @@ exploreLabels: # 探索頁面會出現的label
   - singer
   - pundit
   - street_artist
+  - model
    
 labelInfos:
   - id: "17tv" # 17看節目
@@ -31,7 +32,6 @@ labelInfos:
     label:
       key: "streamer_label_player"
     iconURL: "https://assets-17app.akamaized.net/517c138d-54d9-4713-a931-06c9af7e53b9.png"
-    featured: true
     labelID: 106
     order: 80
   - id: "singer" # 實力歌手
@@ -39,7 +39,6 @@ labelInfos:
     label:
       key: "streamer_label_singer"
     iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
-    featured: true
     labelID: 107
     order: 60
   - id: "pundit" # 政治名嘴
@@ -54,6 +53,7 @@ labelInfos:
     label:
       key: "streamer_label_street_artist"
     iconURL: "https://assets-17app.akamaized.net/0b888fc8-9d1f-4e05-8393-e1b946b554d4.png"
+    featured: true
     labelID: 52
     order: 90
   - id: "model" # 模特兒
@@ -61,6 +61,7 @@ labelInfos:
     label:
       key: "streamer_label_model"
     iconURL: "https://assets-17app.akamaized.net/c42127e4-db4f-4e98-938d-05f3afcb8b82.png"
+    featured: true
     labelID: 103
     order: 50
   - id: "dj"
@@ -87,7 +88,6 @@ labelWhiteList:
     - 671f4ff1-212a-4e7a-80e9-360103c3ab91 # 趙泓捷
     - 4a771cdf-1fd6-4fcb-8186-73cc32ff5483 # 鍾鎮宇Justin
     - 94728e88-feca-4ca9-9062-39e3d2f93467 # 小沙
-    - 73e8b839-a1ca-4b08-a51d-2b02ffdea153 # bellayayaya
     - 2e780a8e-6685-496b-824a-171a27e89613 # kevtest1
     - 115851d0-d202-47c5-9079-71d3e7f704f7 # 亮金金
     - 21280e9c-e07d-4d1b-83b7-e591bc3b1056 # 我叫易小魚🐟🎤
@@ -101,7 +101,6 @@ labelWhiteList:
     - 431720ad-470c-4c38-97c8-f195f5bddf4b # kevtest3
     - f188d0e6-0c70-49c4-8da1-e787f389bb4f # 劉子瑜的⛳任性父皇💛
     - e257e914-5009-48d9-5e8b-3c6da3f2026f # lllt.summer
-    - 73e8b839-a1ca-4b08-a51d-2b02ffdea153 # bellayayaya
     - 2c9ad019-2b31-4fb9-800d-fa518b51a74d # finn1
     - 500514df-d764-44dd-7883-e1966d2ff634 # 小紫
     - "0783d04c-6d2f-447e-81a8-db87a5d4eaa5"    # 0122w9
@@ -129,7 +128,6 @@ labelWhiteList:
     - 431720ad-470c-4c38-97c8-f195f5bddf4b # kevtest3
     - f188d0e6-0c70-49c4-8da1-e787f389bb4f # 劉子瑜的⛳任性父皇💛
     - e257e914-5009-48d9-5e8b-3c6da3f2026f # lllt.summer
-    - 73e8b839-a1ca-4b08-a51d-2b02ffdea153 # bellayayaya
     - 2c9ad019-2b31-4fb9-800d-fa518b51a74d # finn1
     - 500514df-d764-44dd-7883-e1966d2ff634 # 小紫
     - 5435ae09-00d6-42a2-9a27-a173013a6eab # 多喝水沒事
@@ -153,6 +151,7 @@ labelWhiteList:
     - ef473bc6-3232-4024-b2e1-0bb98ad5f94a # qacontractor5
     - 24c65a0b-2e5e-458a-aa3c-243fca4f2bd7 # 沒是多喝水
     - 5435ae09-00d6-42a2-9a27-a173013a6eab # 多喝水沒事
+    - ce1527f1-9498-4055-876e-16b72b1e5d50 # wani_belle
 
   cheerleader:
     - "8afee182-1b9d-4673-b4c9-bd924f3d092e"    # 0122w8
