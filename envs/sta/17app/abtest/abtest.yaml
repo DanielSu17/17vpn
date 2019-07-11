@@ -1,6 +1,5 @@
-- testName: autoEnterLive       # b: 自動進直播間
+- testName: autoEnterLive
   enableABtest: false
-  enableRegion: ["TW", "JP"]
   expiredSecond: 604800 # 7 day
   lastCharGroup:
     "0": "a"
@@ -21,7 +20,6 @@
     "f": "b" 
 - testName: recommendFollow
   enableABtest: true
-  enableRegion: ["TW", "JP"]
   expiredSecond: 604800 # 7 day
   lastCharGroup:
     "0": "b"
@@ -42,7 +40,6 @@
     "f": "b"
 - testName: newbieFocus # 消除雜訊
   enableABtest: false
-  enableRegion: []
   expiredSecond: 86400 # 1 day
   lastCharGroup:
     "0": "a"
@@ -63,7 +60,6 @@
     "f": "b"
 - testName: newbieGuidance # 新手引導(新手遮罩)
   enableABtest: true
-  enableRegion: ["TW", "JP", "US"]
   expiredSecond: 259200 # 3 days
   lastCharGroup:
     "0": "b"
@@ -83,8 +79,7 @@
     "e": "b"
     "f": "b"
 - testName: completeRegistration
-  enableABtest: true
-  enableRegion: ["TW"]
+  enableABtest: false
   expiredSecond: 10 # 10 second 
   lastCharGroup:
     "0": "a"
@@ -105,7 +100,6 @@
     "f": "b"
 - testName: newbieIAP # 新手首購優惠
   enableABtest: false
-  enableRegion: ["TW"]
   expiredSecond: 604800 # 7 days
   lastCharGroup:
     "0": "a"
@@ -126,7 +120,6 @@
     "f": "b"
 - testName: streamRoomEntryTitle # 直播間入口標題
   enableABtest: false
-  enableRegion: ["ALL"]
   lastCharGroup:
     "0": "a"
     "1": "b"
@@ -146,7 +139,6 @@
     "f": "b"
 - testName: newbiePurchaseEvent # 新手首購活動
   enableABtest: false
-  enableRegion: ["TW"]
   lastCharGroup:
     "0": "b"
     "1": "b"
@@ -164,9 +156,8 @@
     "d": "b"
     "e": "b"
     "f": "b"
-- testName: newbieOnboard # 新手流程優化 (onboarding_flow_optimization) - b: 強迫留言/送禮
-  enableABtest: false
-  enableRegion: ["TW", "JP"]
+- testName: newbieOnboard # 新手流程優化 (onboarding_flow_optimization)
+  enableABtest: true
   expiredSecond: 604800 # 7 day
   lastCharGroup:
     "0": "b"
@@ -185,9 +176,10 @@
     "d": "b"
     "e": "b"
     "f": "b"
-- testName: newbieGuide # 新手流程優化p5 (Feature Guide) - b: 移除四頁landing page
-  enableABtest: false
-  expiredSecond: 604800 # 7 day
+# 新手流程優化p5 (Feature Guide), client只有當a才顯示 空的也是不顯示
+- testName: newbieGuide # 新手流程優化p5 (Feature Guide) b: 移除四頁landing page
+  enableABtest: true
+  expiredSecond: 60 # 1 mins, it should disappear soon.
   lastCharGroup:
     "0": "a"
     "1": "a"
@@ -208,7 +200,7 @@
 # 新手流程優化p6 - b: 移除四頁landing page, 移除新手遮罩, 移除enterLivePrompt
 - testName: newbieDismissDialog
   enableABtest: false
-  expiredSecond: 259200 # 3 days
+  expiredSecond: 600 # 10 mins
   lastCharGroup:
     "0": "a"
     "1": "a"
@@ -228,7 +220,7 @@
     "f": "b"
 # Phase 7: 台灣強化新用戶引導
 - testName: newbiePhase7
-  enableABtest: true
+  enableABtest: false
   expiredSecond: 600 # 10 mins, it should disappear soon.
   lastCharGroup:
     "0": "a"
