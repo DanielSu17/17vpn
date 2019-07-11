@@ -13,6 +13,7 @@ type:
   exchange:        "go"
   data-middleware: "go"
   go-cron:         "go"
+  go-trade:        "go"
   admin:           "nodejs"
   baobaofu:        "webapp"
   event-web:       "webapp"
@@ -22,9 +23,9 @@ type:
   spinnaker:       "spinnaker"
 settings:
   spinnaker:
-    k8ssta: 
+    k8ssta:
       endpoint: '17media-trigger-spinnaker/buildWithParameters?token=qLnZFhgbtDwYHq3bpqdsfHkXqEbMS7VAuTshkBrQ'
-    k8sprod: 
+    k8sprod:
       endpoint: '17media-trigger-spinnaker/buildWithParameters?token=qLnZFhgbtDwYHq3bpqdsfHkXqEbMS7VAuTshkBrQ'
   webapp:
     rc:
@@ -52,6 +53,7 @@ settings:
     - "worker"
     - "data-middleware"
     - "go-cron"
+    - "go-trade"
     - "exchange"
     - "slackbot"
     - "alfred"
