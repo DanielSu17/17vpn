@@ -2,17 +2,6 @@
 # - type: 1(music), 2(politics), 3(others)
 # - featured: true / false (default)
 # - labelID: mapping for labels table id
-typeCheckIOSVersion: 3.59.0
-typeCheckAndroidVersion: 2.3.90
-
-exploreLabels: # 探索頁面會出現的label
-  - 17tv
-  - acoustic
-  - player
-  - singer
-  - pundit
-  - street_artist
-  - model
    
 labelInfos:
   - id: "17tv" # 17看節目
@@ -79,6 +68,21 @@ labelInfos:
     labelID: 80
     order: 30
 
+typeCheckIOSVersion: 3.59.0
+typeCheckAndroidVersion: 2.3.90
+
+# 探索頁面會出現的label
+exploreLabels:
+  - 17tv
+  - acoustic
+  - player
+  - singer
+  - pundit
+  - street_artist
+  - model
+
+# 時事話題直播列表會出現的label
+topicTabLabels: []
 
 # labelWhiteList defines relation between label and user list
 labelWhiteList:

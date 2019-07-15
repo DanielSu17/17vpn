@@ -2,13 +2,6 @@
 # - type: 1(music), 2(politics), 3(others)
 # - featured: true / false (default)
 # - labelID: mapping for labels table id
-exploreLabels: # 探索頁面會出現的label
-  - singstar
-  - pundit
-  - fortune_teller
-  - player
-  - acoustic
-  - singer
 
 labelInfos:
   - id: "singstar" # 星聲代
@@ -47,6 +40,18 @@ labelInfos:
       key: "streamer_label_singer"
     iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
     labelID: 107
+
+# 探索頁面會出現的label
+exploreLabels:
+  - singstar
+  - pundit
+  - fortune_teller
+  - player
+  - acoustic
+  - singer
+
+# 時事話題直播列表會出現的label
+topicTabLabels: []
 
 # labelWhiteList defines relation between label and user list
 labelWhiteList:
