@@ -28,6 +28,7 @@
   # - BY_TWBANK_A = 31; // 台灣企銀帳戶 A
   # - BY_TWBANK_B = 32; // 台灣企銀帳戶 B
   # - BY_DBS_BANK = 35; // 星展銀行
+  # - BY_PAYPAL_US = 52; // PayPal US Account
 # `duplicateUniformInvoice` // 許可開立二聯式發票的payChannel
 # `triplicateUniformInvoice` // 許可開立三聯式發票的payChannel
 # `currency` follows ISO 4217 standard:   
@@ -125,6 +126,7 @@ US:
   payChannel:
     - 2
     - 22
+    - 52
   currency:
     - USD
   localCurrency:
