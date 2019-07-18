@@ -27,6 +27,67 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: 1b3af0d7-983c-424f-a2f4-29267f20bc65
+    type: 3
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 21
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 1907_tw_cat_bp_2000
+      amount: 1
+      expireTimeSecs: 86400
+    i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 3
+      - needMap: false
+        mapOption: 0
+        value: 1907_tw_cat_1000
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
+    i18nDescriptionParams:
+    goalValue: 3
+    enableTimeRange:
+      - startTime: "2019-07-24 18:00:00 (GMT+0800)"
+        endTime: "2019-08-02 23:59:59 (GMT+0800)"
+    refIDs:
+      - 1907_tw_cat_1000
+    platforms:
+      - android
+      - ios
+
+  - ID: 697ec80b-b6ff-447f-8dc3-2a09091b1b0c
+    type: 8
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 15
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 1907_tw_cooking_bp_100
+      amount: 1
+      expireTimeSecs: 259200
+    i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
+    i18nTitleParams:
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
+    i18nDescriptionParams:
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2019-07-28 18:00:00 (GMT+0800)"
+        endTime: "2019-08-06 23:59:59 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
   - ID: 170826e7-19d8-4bf9-bed5-b763f9a38dc2
     type: 8
     lifeCycle: 0
