@@ -5,9 +5,9 @@
 # then they shall sample int(100 / {{ sampleRate }}) and
 # send to backend for metrics
 
-sampleRate: 10
+sampleRate: 100
 ably:
-  enable: false
+  enable: true
   startTime: "2018-06-01T15:00:00+08:00"
   endTime: "2018-06-02T15:00:00+08:00"
   samplePercentage: 1
