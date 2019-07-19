@@ -30,7 +30,7 @@ conf:
             cancelPromoteTopLiveStream,hideHotLivestreamAction"
      api: "api"
      feed: "getPostFeed,celebrities/all,celebrities"
-     gift: "getLiveStreamGiftLeaderboard,sendGift,\
+     gift: "getLiveStreamGiftLeaderboard,\
             getLiveStreamGiftInfo,getUnreadReceivedGift,\
             getLiveStreamAllGifts,readGift,getGiftList,\
             getReceivedGiftLog"
@@ -75,6 +75,9 @@ conf:
             getPayments,uploadPhoneNumbers,uploadFacebookFriends,\
             followAllAction,updateLiveStreamInfo,\
             getPointProductList,getPostByHashTag,readNotif,updateOpenID"
+ - url_key: "go_trade_url"
+   white_list:
+     gift: "sendGift"
  - url_key: "go_lives_url"
    white_list:
      liveStreams: "getSuggestedLiveStreams"
