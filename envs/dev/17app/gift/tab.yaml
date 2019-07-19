@@ -1,13 +1,13 @@
 # id is unique string
 # type are defined as following
-# - 0: NORMAL
-# - 1: NO_LABEL
-# - 2: LUCKY_BAG
-# - 3: SLOT  merge into TreasureChest, need to modify DB
-# - 4: Poke
-# - 5: Poll
-# - 6: Newbie
-# - 7: Event # this one is for pushed event
+# - 0:  NORMAL
+# - 1:  NO_LABEL
+# - 2:  LUCKY_BAG
+# - 3:  SLOT  merge into TreasureChest, need to modify DB
+# - 4:  Poke
+# - 5:  Poll
+# - 6:  Newbie
+# - 7:  Event # this one is for pushed event
 # - 8:  Army
 # - 9:  Voucher
 # - 10: Baggage
@@ -16,7 +16,8 @@
 # - 13: Recent
 # - 14: Texture
 # - 15: Goods
-# - 16: LEVEL_UP
+# - 16: LevelUp
+# - 17: HandDrawSticker
 # ex:
 # - id: "example"
 #   type: 1
@@ -28,14 +29,9 @@
 #   minPoint: 200
 #   maxLevel: 50
 #   minLevel: 10
-#   giftBanners: array of banner
-#     - actionType: 1
-#       1: EVENT, 2: ARMY 3: LINK 4: ELITE
-#       banner: "http://cdn.17app.co/989c8312-e406-4be1-ad95-e4963e4c1d8a.png"
-#       the picture of the banner
-#       bannerTitle: "戰隊說明"
-#       bannerURL: "https://17.live/army/about"
-#       the URL to jump when click banner
+#   supportedVersion:
+#     android: "2.3.60"
+#     ios: "3.39.0"
 - id: "Recent"
   type: 13
   inRecent: false
@@ -44,18 +40,6 @@
     TW: "最近送出"
     CN: "最近送出"
     JP: "履歴"
-  marqueeDescs:
-    - giftbox_recent_define
-- id: "Goods"
-  type: 15
-  inRecent: false
-  name:
-    EN: "Limited"
-    TW: "限量禮物"
-    CN: "限量礼物"
-    JP: "限定ギフト"
-  marqueeDescs:
-    - giftbox_limitgift_define
 - id: "Newbie"
   type: 6
   inRecent: true
@@ -66,8 +50,6 @@
     JP: "初心者"
   maxPoint: 200
   maxLevel: 100
-  marqueeDescs:
-    - giftbox_fresh_define
 - id: "Event"
   type: 7
   inRecent: true
@@ -76,8 +58,23 @@
     TW: "活動禮"
     CN: "活動禮"
     JP: "Event"
-  marqueeDescs:
-    - giftbox_event_define
+- id: "luckyBag"
+  type: 2
+  inRecent: true
+  name:
+    EN: "Surprise"
+    TW: "隨機禮"
+    CN: "随机礼"
+    JP: "ランダム"
+- id: "TreasureChest"
+  type: 3
+  inRecent: true
+  name:
+    EN: "Lucky Draw"
+    TW: "好運禮"
+    CN: "好运礼"
+    JP: "宝のツボ"
+  layout: "treasureChest"
 - id: "HandDrawSticker"
   type: 17
   inRecent: true
@@ -86,14 +83,12 @@
     TW: "塗鴉禮"
     CN: "涂鸦礼"
     JP: "お絵描き"
-  marqueeDescs:
-    - giftbox_handdraw_sticker_define
   supportedVersion:
-    android: "2.3.53"
-    ios: "3.37.0"
+    android: "2.3.60"
+    ios: "3.39.0"
 - id: "Baggage"
   type: 10
-  inRecent: true
+  inRecent: false
   name:
     EN: "Baggage"
     TW: "背包"
@@ -106,78 +101,7 @@
     EN: "Level Up Gift"
     TW: "升級禮"
     CN: "升级礼"
-    JP: "アップグレードギフト"
-  marqueeDescs:
-    - giftbox_levelup_define
-- id: "default"
-  type: 1
-  inRecent: true
-  name:
-    EN: "Featured"
-    TW: "推薦"
-    CN: "推荐"
-    JP: "おすすめ"
-- id: "army"
-  type: 8
-  inRecent: true
-  name:
-    EN: "Exclusive"
-    TW: "專屬禮"
-    CN: "专属礼"
-    JP: "専用"
-  giftBanners:
-    - actionType: 2
-      giftBanner:
-        EN: "https://assets-17app.akamaized.net/7e8fd3ac-ea26-4d81-9513-d7ed236a1e32.png"
-        TW: "https://assets-17app.akamaized.net/717ddd12-eff1-4304-a08e-10a3068d2096.png"
-        JP: "https://assets-17app.akamaized.net/b7aa9fd9-f839-4cb4-84c5-cf07e32cd2da.png"
-      giftBannerURL:
-        TW: "https://17.live/army/about"
-    - actionType: 4
-      giftBanner:
-        EN: "https://assets-17app.akamaized.net/0dac8595-2070-4cc9-8545-72effea14ccb.png"
-        TW: "https://assets-17app.akamaized.net/0b866145-0128-4d40-ac5e-58b33c321ed9.png"
-        JP: "https://assets-17app.akamaized.net/ea6c8131-6b61-42e0-9a1c-1814d8311ccd.png"
-- id: "Texture"
-  type: 14
-  inRecent: true
-  name:
-    EN: "Filter"
-    TW: "濾鏡禮"
-    CN: "滤镜礼"
-    JP: "エフェクト"
-- id: "TreasureChest"
-  type: 3
-  inRecent: true
-  name:
-    EN: "Lucky Draw"
-    TW: "好運禮"
-    CN: "好运礼"
-    JP: "宝のツボ"
-  layout: "treasureChest"
-- id: "GFA"
-  type: 0
-  inRecent: true
-  name:
-    EN: "GFA Voting"
-    TW: "金羽獎投票"
-    CN: "金羽奖投票"
-- id: "Audio"
-  type: 0
-  inRecent: true
-  name:
-    EN: "Audio Gift"
-    TW: "音效禮"
-    CN: "音效礼"
-    JP: "音付きギフト"
-- id: "luckyBag"
-  type: 2
-  inRecent: true
-  name:
-    EN: "Surprise"
-    TW: "隨機禮"
-    CN: "随机礼"
-    JP: "ランダム"
+    JP: "アップグレード"
 - id: "Topic"
   type: 0
   isRecent: true
@@ -186,6 +110,14 @@
     TW: "話題禮"
     CN: "话题礼"
     JP: "Topic"
+- id: "Texture"
+  type: 14
+  inRecent: true
+  name:
+    EN: "Filter"
+    TW: "濾鏡禮"
+    CN: "滤镜礼"
+    JP: "エフェクト"
 - id: "Heavenly"
   type: 0
   inRecent: true
@@ -213,6 +145,37 @@
     TW: "生日禮"
     CN: "生日礼"
     JP: "お誕生日"
+- id: "Audio"
+  type: 0
+  inRecent: true
+  name:
+    EN: "Audio Gift"
+    TW: "音效禮"
+    CN: "音效礼"
+    JP: "音付きギフト"
+- id: "army"
+  type: 8
+  inRecent: true
+  name:
+    EN: "Exclusive"
+    TW: "專屬禮"
+    CN: "专属礼"
+    JP: "専用"
+- id: "Goods"
+  type: 15
+  inRecent: false
+  name:
+    EN: "Limited"
+    TW: "限量禮物"
+    CN: "限量礼物"
+    JP: "限定ギフト"
+- id: "GFA"
+  type: 0
+  inRecent: true
+  name:
+    EN: "GFA Voting"
+    TW: "金羽獎投票"
+    CN: "金羽奖投票"
 - id: "PokeBack"
   type: 4
   inRecent: false
