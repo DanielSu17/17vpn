@@ -19,7 +19,7 @@ conf:
  - url_key: "go_url"
    white_list:
      liveStreams: "getLiveStreamHotCountryList,commentLiveStream,\
-            isUserOnLiveStream,\
+            isUserOnLiveStream,getSuggestedLiveStreams,\
             getLatestLiveStreams,publishLiveStream,getLiveStreamInfo,\
             getUserLiveStreams,getLiveStreamViewers,keepLiveStream,\
             likeLivestreamBatchUpdate,endLiveStream,enterLiveStream,\
@@ -77,6 +77,3 @@ conf:
             getPayments,uploadPhoneNumbers,uploadFacebookFriends,\
             followAllAction,updateLiveStreamInfo,\
             getPointProductList,getPostByHashTag,readNotif,updateOpenID"
- - url_key: "go_lives_url"
-   white_list:
-     liveStreams: "getSuggestedLiveStreams"
