@@ -17,7 +17,7 @@ conf:
  - url_key: "go_url"
    white_list:
      liveStreams: "getLiveStreamHotCountryList,commentLiveStream,\
-            isUserOnLiveStream,\
+            isUserOnLiveStream,getSuggestedLiveStreams,\
             getLatestLiveStreams,publishLiveStream,getLiveStreamInfo,\
             getUserLiveStreams,getLiveStreamViewers,keepLiveStream,\
             likeLivestreamBatchUpdate,endLiveStream,enterLiveStream,\
@@ -30,7 +30,7 @@ conf:
             cancelPromoteTopLiveStream,hideHotLivestreamAction"
      api: "api"
      feed: "getPostFeed,celebrities/all,celebrities"
-     gift: "getLiveStreamGiftLeaderboard,\
+     gift: "getLiveStreamGiftLeaderboard,sendGift,\
             getLiveStreamGiftInfo,getUnreadReceivedGift,\
             getLiveStreamAllGifts,readGift,getGiftList,\
             getReceivedGiftLog"
@@ -75,6 +75,3 @@ conf:
             getPayments,uploadPhoneNumbers,uploadFacebookFriends,\
             followAllAction,updateLiveStreamInfo,\
             getPointProductList,getPostByHashTag,readNotif,updateOpenID"
- - url_key: "go_lives_url"
-   white_list:
-     liveStreams: "getSuggestedLiveStreams"
