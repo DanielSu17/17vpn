@@ -1,25 +1,60 @@
 type:
-  alfred:       "go"
-  revprox:      "go"
-  goapi:        "go"
-  cronjob:      "go"
-  notif:        "go"
-  slackbot:     "go"
-  shield:       "go"
-  skyeye:       "go"
-  mktevent:     "go"
-  event-server: "go"
-  worker:       "go"
-  exchange:     "go"
+  alfred:          "go"
+  revprox:         "go"
+  goapi:           "go"
+  cronjob:         "go"
+  slackbot:        "go"
+  shield:          "go"
+  skyeye:          "go"
+  srsapi:          "go"
+  event-server:    "go"
+  worker:          "go"
+  exchange:        "go"
   data-middleware: "go"
-  admin:        "nodejs"
-  event-web:    "webapp"
-  webapp:       "webapp"
-  skyeyewall:   "webapp"
-  17live:       "webapp"
+  go-cron:         "go"
+  golives:         "go"
+  gotrade:         "go"
+  admin:           "nodejs"
+  baobaofu:        "webapp"
+  event-web:       "webapp"
+  webapp:          "webapp"
+  skyeyewall:      "webapp"
+  17live:          "webapp"
+  spinnaker:       "spinnaker"
 settings:
+  spinnaker:
+    k8ssta:
+      endpoint: '17media-trigger-spinnaker/buildWithParameters?token=qLnZFhgbtDwYHq3bpqdsfHkXqEbMS7VAuTshkBrQ'
+    k8sprod:
+      endpoint: '17media-trigger-spinnaker/buildWithParameters?token=qLnZFhgbtDwYHq3bpqdsfHkXqEbMS7VAuTshkBrQ'
+  webapp:
+    rc:
+      endpoint: 'stag-frontend-deployment/buildWithParameters?token=uceacpKX7Xk37tHAmrWCPpPGEUEK4dvndRMQYdMz'
+    sta:
+      endpoint: 'stag-frontend-deployment/buildWithParameters?token=uceacpKX7Xk37tHAmrWCPpPGEUEK4dvndRMQYdMz'
+    prod:
+      endpoint: 'prod-frontend-deployment/buildWithParameters?token=tHhPGFznbWbLcpeQZioZzewJnUPT42UmNRnDRUyh'
   go:
+    k8sstaqa:
+      endpoint: 'k8sstaqa-deployment-goapi/buildWithParameters?token=egxVYNaBdHqKWMnJV72EQsG7xtX2UYiYHsLNUWVe'
     k8ssta:
       endpoint: 'k8ssta-deployment-goapi/buildWithParameters?token=qLnZFhgbtDwYHq3bpqdsfHkXqEbMS7VAuTshkBrQ'
     k8sprod:
       endpoint: 'k8sprod-deployment-goapi/buildWithParameters?token=WPZgd7ag4Q7ksL3nSqLW2QVq6aaDK5apguCvR23M'
+  nodejs:
+    k8ssta:
+      endpoint: 'k8ssta-deployment-nodejs/buildWithParameters?token=ZQuygxVpytYgnanavuVkEdQsccQKr36RyLWNhgjY'
+    k8sprod:
+      endpoint: 'k8sprod-deployment-nodejs/buildWithParameters?token=MdfMrjx5egcQKAQMdEHP92hNACQvPemnvTWRT3fe'
+17app:
+    - "goapi"
+    - "revprox"
+    - "worker"
+    - "data-middleware"
+    - "go-cron"
+    - "golives"
+    - "gotrade"
+    - "exchange"
+    - "slackbot"
+    - "alfred"
+    - "srsapi"

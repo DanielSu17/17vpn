@@ -3,7 +3,6 @@ type:
   revprox:         "go"
   goapi:           "go"
   cronjob:         "go"
-  notif:           "go"
   slackbot:        "go"
   shield:          "go"
   skyeye:          "go"
@@ -13,7 +12,8 @@ type:
   exchange:        "go"
   data-middleware: "go"
   go-cron:         "go"
-  go-trade:        "go"
+  golives:         "go"
+  gotrade:         "go"
   admin:           "nodejs"
   baobaofu:        "webapp"
   event-web:       "webapp"
@@ -24,6 +24,8 @@ type:
 settings:
   spinnaker:
     k8ssta:
+      endpoint: '17media-trigger-spinnaker/buildWithParameters?token=qLnZFhgbtDwYHq3bpqdsfHkXqEbMS7VAuTshkBrQ'
+    k8sprod:
       endpoint: '17media-trigger-spinnaker/buildWithParameters?token=qLnZFhgbtDwYHq3bpqdsfHkXqEbMS7VAuTshkBrQ'
   webapp:
     rc:
@@ -47,11 +49,11 @@ settings:
 17app:
     - "goapi"
     - "revprox"
-    - "notif"
     - "worker"
     - "data-middleware"
     - "go-cron"
-    - "go-trade"
+    - "golives"
+    - "gotrade"
     - "exchange"
     - "slackbot"
     - "alfred"
