@@ -79,6 +79,65 @@ productBasedIAP:
         dayEnd: 13 # 0 means no limit
     displayRewardInfo: true
     abtestName:
+  
+  - startTime: "2019-07-26T20:00:00+09:00"
+    endTime: "2019-07-31T23:59:59+09:00"
+    showCountdownUnderSticker: true
+    showCountdownInPopUp: true
+    stickerURL: "https://assets-17app.akamaized.net/f606a37a-aa9a-4605-b798-160fe2cc5f01.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+    layoutInfo:
+      titlePicURL: "https://assets-17app.akamaized.net/157500e9-831d-4387-a650-4966cc735a5b.png"
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: "iap_modal_premium_marquee_premium_250pts_point"
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://assets-17app.akamaized.net/4c713730-ab2e-4f0f-928e-7fc17134406e.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_14000"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_6500"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_2400"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_1100"
+        bonusPoint: 250
+        shouldHighlight:  false
+        reward:
+            type: 1
+            refCount: 3
+      - productID: "media17_points_500"
+        bonusPoint: 0
+        shouldHighlight:  false
+        reward:
+            type: 1
+            refCount: 3
+      - productID: "media17_points_100"
+        bonusPoint: 0
+        shouldHighlight:  false
+        reward:
+            type: 1
+            refCount: 3
+    firstPurchaseType: 2
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true
+    abtestName:
 
 secretIAP:
   - ID: "retentionRewardIap"
@@ -97,13 +156,13 @@ secretIAP:
         eventURL: ""
       layoutInfo:
         titlePicURL: "https://assets-17app.akamaized.net/157500e9-831d-4387-a650-4966cc735a5b.png"
-        messageColor: "#FCF3ED"
-        messageShadowColor: "#710000"
+        messageColor: "#6F6777"
+        messageShadowColor: "#F5F5F5"
         messageI18nKey: "comeback_retention_IAP_marquee"
-        descBgURL: "https://assets-17app.akamaized.net/b1f4018d-08dd-4aec-8d39-6b2a8846119a.png"
-        descLeftBottomURL: "https://assets-17app.akamaized.net/bdee9097-5002-4f1c-ace6-c6fbcbf7dbb9.png"
-        descRightBottomURL: "https://assets-17app.akamaized.net/499005fb-e918-4eee-aa20-5e7a0bede768.png"
-        highlightBgURL: "https://assets-17app.akamaized.net/3bd6d470-6a98-488c-b278-2b756bf542ea.png"
+        descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+        descLeftBottomURL: "test.png"
+        descRightBottomURL: "test.png"
+        highlightBgURL: "https://assets-17app.akamaized.net/4c713730-ab2e-4f0f-928e-7fc17134406e.png"
         highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
         bonusLayoutType: 1 # not showing percentage
       colorInfo:
@@ -169,13 +228,13 @@ secretIAP:
         eventURL: ""
       layoutInfo:
         titlePicURL: "https://assets-17app.akamaized.net/e14c08b8-5b17-4f7a-bbbd-f04cfcc27ed6.png"
-        messageColor: "#FCF3ED"
-        messageShadowColor: "#710000"
+        messageColor: "#6F6777"
+        messageShadowColor: "#F5F5F5"
         messageI18nKey: "iap_modal_premium_marquee_secret_premium_baby"
-        descBgURL: "https://assets-17app.akamaized.net/b1f4018d-08dd-4aec-8d39-6b2a8846119a.png"
-        descLeftBottomURL: "https://assets-17app.akamaized.net/bdee9097-5002-4f1c-ace6-c6fbcbf7dbb9.png"
-        descRightBottomURL: "https://assets-17app.akamaized.net/499005fb-e918-4eee-aa20-5e7a0bede768.png"
-        highlightBgURL: "https://assets-17app.akamaized.net/3bd6d470-6a98-488c-b278-2b756bf542ea.png"
+        descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+        descLeftBottomURL: "test.png"
+        descRightBottomURL: "test.png"
+        highlightBgURL: "https://assets-17app.akamaized.net/4c713730-ab2e-4f0f-928e-7fc17134406e.png"
         highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
         bonusLayoutType: 1 # not showing percentage
       colorInfo:
@@ -229,7 +288,7 @@ secretIAP:
 
 defaultIAP:
   layoutInfo:
-    highlightBgURL: "https://assets-17app.akamaized.net/3bd6d470-6a98-488c-b278-2b756bf542ea.png"
+    highlightBgURL: "https://assets-17app.akamaized.net/4c713730-ab2e-4f0f-928e-7fc17134406e.png"
     highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
   colorInfo:
     pointColor: "#28232D"
