@@ -5,6 +5,7 @@ hostIDOnTV: "8f95a285-104e-4ea5-ae58-00cca785247a" # 17好聰明
 
 hosts:
   TRIVIA:
+  TRIVIA_ON_TV:
     "6e9af721-55c5-41d7-91a4-387aceec94a6": # 17Q
       pictures:
         default: https://assets-17app.akamaized.net/faa4aaad-db2a-4c4b-88b4-3fcf92d0ce3d.jpg
@@ -23,12 +24,13 @@ hosts:
         key: "trivia_disclaimer_text"
       leaveGameToastText:
         key: "trivia_gamer_leave_double_confirm_text"
+      voteTopic:
+        key: "trivia_tv_vote_topic"
       shareWording:
         key: "trivia_game_share_wording"
       isMedalSupported:
         Default: true
         CorrectMost: false
-  TRIVIA_ON_TV:
     "8f95a285-104e-4ea5-ae58-00cca785247a": # 台視17Q
       pictures:
         default: https://assets-17app.akamaized.net/03cc3122-34a1-4f61-9c58-2cad7a5ff43b.jpg
@@ -40,7 +42,7 @@ hosts:
         weekdays: [0,1,2,3,4,5,6] # 0 ~ 6 means Sunday ~ Saturday
         hourFrom: 0 # GMT+8
         hourTo: 23 # GMT+8
-      showBannerPriority: 0
+      showBannerPriority: 1
       disclaimerTitle:
         key: "trivia_tv_disclaimer_title"
       disclaimerText:
@@ -90,7 +92,7 @@ hosts:
         weekdays: [0,1,2,3,4,5,6] # 0 ~ 6 means Sunday ~ Saturday
         hourFrom: 0 # GMT+8
         hourTo: 23 # GMT+8
-      showBannerPriority: 1
+      showBannerPriority: 3
       disclaimerTitle:
         key: "trivia_tv_talk_show_disclaimer_title"
       disclaimerText:
@@ -115,7 +117,7 @@ hosts:
         weekdays: [0,1,2,3,4,5,6] # 0 ~ 6 means Sunday ~ Saturday
         hourFrom: 0 # GMT+8
         hourTo: 23 # GMT+8
-      showBannerPriority: 3
+      showBannerPriority: 4
       disclaimerTitle:
         key: "trivia_tv_cti_travel_disclaimer_title"
       disclaimerText:
@@ -140,7 +142,7 @@ hosts:
         weekdays: [1] # 0 ~ 6 means Sunday ~ Saturday
         hourFrom: 4 # GMT+8
         hourTo: 5 # GMT+8
-      showBannerPriority: 4
+      showBannerPriority: 5
       disclaimerTitle:
         key: "trivia_tv_disclaimer_title"
       disclaimerText:
@@ -165,7 +167,7 @@ hosts:
         weekdays: [0,1,2,3,4,5,6] # 0 ~ 6 means Sunday ~ Saturday
         hourFrom: 0 # GMT+8
         hourTo: 23 # GMT+8
-      showBannerPriority: 5
+      showBannerPriority: 6
       disclaimerTitle:
         key: "trivia_tv_eyectv_disclaimer_title"
       disclaimerText:
