@@ -36,7 +36,7 @@ monsters:
   profit_ratio: 35 # percentage, 手續費百分比：bonus * (profit/100)
   bonus: 336 # 血量: bonus * (100 + profit_ratio) / 100
   weight: 0.5 # 怪獸產生百分比 : weight / sumOfAllWeights, 招喚怪獸不適用
-  summonGifts:
+  summonGifts: # 招喚怪獸才需要填
   - giftID: "1907_tw_ghost_20000"
     probability: 2000 # n / 10000 * 100%
   - giftID: "1907_tw_ghost_2000"
@@ -522,7 +522,8 @@ animationLoader: # animationID 必須是 animationPrefix_ + attack/enter/failure
   animationID: wolf_success
   MD5: 3d658057717486d8e5d7b33677631f51
   webpMD5: be44761d22ec839cd1585fd76e7ec285
-# zombie
+
+# zombie , animationID 必須是 animationPrefix_ + attack/enter/failure/idle/success
 - url: https://assets-17app.akamaized.net/a388623a-237a-476a-9737-f54d9d430157.zip
   webpUrl: https://assets-17app.akamaized.net/25909f6a-7249-42a7-a05b-eefcb8b1a972-q90-s1.webp
   animationID: zombie_attack
