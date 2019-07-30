@@ -81,4 +81,4 @@ rate_limits:
 
 #- {url: "/api/v1/users/[A-Za-z0-9-]+/activities/income/overview",     method: "GET",    flow_per_second: 5,     reservoir_size: 5,    scope: by_global}
 
-- {url: "/api/v1/money/log/revenue",                            method: "GET",     flow_per_second: 10,          reservoir_size: 10,    scope: by_global}
+# - {url: "/api/v1/money/log/revenue",                            method: "GET",     flow_per_second: 10,          reservoir_size: 10,    scope: by_global}
