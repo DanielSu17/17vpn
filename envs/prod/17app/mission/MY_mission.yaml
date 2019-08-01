@@ -9,6 +9,7 @@
 # | Trivia_Play | 7 |
 # | IAP_Buy_Point | 8 |
 # | View_Stream_X_Seconds | 9 |
+# | IAP_X_Points | 10 |
 
 # | category | Value |
 # | --- | --- |
@@ -27,31 +28,28 @@
 # | NON_IAP | 2 |
 
 missions:
-  - ID: 87305118-902c-4979-84d2-0173ffd9574f
-    type: 5
+  - ID: b8193673-a5cf-49e4-9f8a-af873bad2714
+    type: 8
     lifeCycle: 0
     targetAudience: 0
     levelRange:
-      min: 21
+      min: 15
       max: 999
     reward:
       rewardType: 1
-      rewardID: 1907_tw_chi_love_bp_100
+      rewardID: 1908_tw_beauty_bp_100
       amount: 1
-      expireTimeSecs: 86400
-    i18nTitle: baggage_mission_leave_comment_reward_title
+      expireTimeSecs: 259200
+    i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
     i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 10
     i18nContent: 
     i18nContentParams:
-    i18nDescription: baggage_mission_opt_leave_comment_reward_desc
+    i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
     i18nDescriptionParams:
-    goalValue: 10
+    goalValue: 1
     enableTimeRange:
-      - startTime: "2019-07-22 18:00:00 (GMT+0900)"
-        endTime: "2019-07-28 23:59:59 (GMT+0900)"
+      - startTime: "2019-08-15 18:00:00 (GMT+0800)"
+        endTime: "2019-08-25 23:59:59 (GMT+0800)"
     refIDs:
     platforms:
       - android
@@ -211,33 +209,6 @@ missions:
     enableTimeRange:
       - startTime: "2019-07-28 18:00:00 (GMT+0800)"
         endTime: "2019-08-06 23:59:59 (GMT+0800)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: 170826e7-19d8-4bf9-bed5-b763f9a38dc2
-    type: 8
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 15
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1907_tw_tongue_bp_100
-      amount: 1
-      expireTimeSecs: 259200
-    i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
-    i18nTitleParams:
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
-    i18nDescriptionParams:
-    goalValue: 1
-    enableTimeRange:
-      - startTime: "2019-07-16 18:00:00 (GMT+0800)"
-        endTime: "2019-07-26 23:59:59 (GMT+0800)"
     refIDs:
     platforms:
       - android
