@@ -76,8 +76,10 @@ conf:
             getPointProductList,getPostByHashTag,readNotif,updateOpenID"
  - url_key: "go_trade_url"
    white_list:
-     gift: "gift/giftbox"
+     gift: "gift"
      redenvelope: "redenvelope"
+     sportscar: "sportscar"
+     monster: "monster"
  - url_key: "go_lives_url"
    white_list:
-     liveStreams: "getSuggestedLiveStreams"
+     liveStreams: "liveStreams,lives,getSuggestedLiveStreams,liveStreams/getSuggestedLiveStreams"
