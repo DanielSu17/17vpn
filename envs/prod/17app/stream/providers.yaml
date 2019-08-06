@@ -12,7 +12,7 @@ rtmp_providers:
 - name: QINIU
   weight: 30
   region_weights:
-    TW: 20
+    TW: 10
   quality_support: 0
   expire_after_hours: 12
   users:
@@ -55,7 +55,7 @@ rtmp_providers:
 - name: WANSU
   weight: 70
   region_weights:
-    TW: 80
+    TW: 90
   quality_support: 1
   users:
   - ad9a4ee5-e7eb-47f0-8ef4-727b286aa48f # David’s Angels
@@ -139,7 +139,7 @@ message_providers_general:
   - 1e07bc22-881b-48c5-a5c4-42ed0b4ba1c4 # 娜娜elf (CN)
   - 2aee9213-3c8c-46f2-b5ca-cad9985d09cf # 如如ruru
   - 2aa76dc3-6cfc-4614-bcd5-e5532361349e # 今泉佑唯
-  - 5f617a9e-0745-4786-b5d7-bce4741e59aa # 湘湘 
+  - 5f617a9e-0745-4786-b5d7-bce4741e59aa # 湘湘
 - name: WANSU_MESSAGE
   weight: 100
   users:
@@ -154,7 +154,7 @@ message_providers_dynamic:
   - 1e07bc22-881b-48c5-a5c4-42ed0b4ba1c4 # 娜娜elf (CN)
   - 2aee9213-3c8c-46f2-b5ca-cad9985d09cf # 如如ruru
   - 2aa76dc3-6cfc-4614-bcd5-e5532361349e # 今泉佑唯
-  - 5f617a9e-0745-4786-b5d7-bce4741e59aa # 湘湘 
+  - 5f617a9e-0745-4786-b5d7-bce4741e59aa # 湘湘
 - name: WANSU_MESSAGE
   weight: 0
   users:
