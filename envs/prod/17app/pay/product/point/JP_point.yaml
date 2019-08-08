@@ -80,19 +80,20 @@ productBasedIAP:
     displayRewardInfo: true
     abtestName:
   
-  - startTime: "2019-07-26T20:00:00+09:00"
-    endTime: "2019-07-31T23:59:59+09:00"
+  - startTime: "2019-08-10T00:00:00+09:00"
+    endTime: "2019-08-12T23:59:59+09:00"
     showCountdownUnderSticker: true
     showCountdownInPopUp: true
-    stickerURL: "https://assets-17app.akamaized.net/f606a37a-aa9a-4605-b798-160fe2cc5f01.png"
+    stickerURL: "https://assets-17app.akamaized.net/cde3739e-3a95-422e-97d9-4ac2e301cb56.png"
     eventInfo:
       eventTitleI18nKey: ""
       eventURL: ""
+      bannerImageURL: "https://assets-17app.akamaized.net/39ac4559-746e-4bb3-b89e-2587943db565.png"
     layoutInfo:
-      titlePicURL: "https://assets-17app.akamaized.net/f0051913-03f2-4c95-a74c-b3ed448c4fd2.png"
+      titlePicURL: "https://assets-17app.akamaized.net/698b17b8-8c32-4779-aa92-631aa8bd9d9d.png"
       messageColor: "#6F6777"
       messageShadowColor: "#F5F5F5"
-      messageI18nKey: "iap_modal_premium_marquee_premium_250pts_point"
+      messageI18nKey: "iap_modal_premium_marquee_premium_200pts_point"
       descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
       descLeftBottomURL: "test.png"
       descRightBottomURL: "test.png"
@@ -104,6 +105,12 @@ productBasedIAP:
       priceColor: "#28232D"
       rewardTextColor: "#F69355"
     pointProducts:
+      - productID: "media17_points_100"
+        bonusPoint: 200
+        shouldHighlight:  true
+        reward:
+            type: 1
+            refCount: 3
       - productID: "media17_points_14000"
         bonusPoint: 0
         shouldHighlight:  false
@@ -114,24 +121,12 @@ productBasedIAP:
         bonusPoint: 0
         shouldHighlight:  false
       - productID: "media17_points_1100"
-        bonusPoint: 250
-        shouldHighlight:  true
-        reward:
-            type: 1
-            refCount: 3
+        bonusPoint: 0
+        shouldHighlight:  false
       - productID: "media17_points_500"
         bonusPoint: 0
         shouldHighlight:  false
-        reward:
-            type: 1
-            refCount: 3
-      - productID: "media17_points_100"
-        bonusPoint: 0
-        shouldHighlight:  false
-        reward:
-            type: 1
-            refCount: 3
-    firstPurchaseType: 2
+    firstPurchaseType: 0
     taInfo:
       registerRange:
         dayStart: 0 # 0 means no limit
