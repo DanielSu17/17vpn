@@ -4,6 +4,49 @@ ccu: 0
 streamDuration: 0h00m00s
 animations: ["yeti"]
 monsters:
+
+- id: monster_vampire  # 怪獸id
+  hit_consume: 10 # 每次打擊耗血
+  duration: 60s # 怪獸出現時間
+  animation: "vampire" # 怪獸動畫prefix
+  type: 1 # 0: 一般怪獸, 1: 招喚怪獸
+  share_ratio: 50 # percentage, 主播分紅百分比： bonus * (share_ratio/100)
+  profit_ratio: 35 # percentage, 手續費百分比：bonus * (profit/100)
+  bonus: 336 # 血量: bonus * (100 + profit_ratio) / 100
+  weight: 0.5 # 怪獸產生百分比 : weight / sumOfAllWeights, 招喚怪獸不適用
+  summonGifts: # 招喚怪獸才需要填
+  - giftID: "1908_tw_ghost_20000"
+    probability: 2000 # n / 10000 * 100%
+  - giftID: "1908_tw_ghost_1000"
+    probability: 200 # n / 10000 * 100%
+  - giftID: "1908_tw_ghost_1000"
+    probability: 200 # n / 10000 * 100%
+  - giftID: "gift_lightstick_b"
+    probability: 10000 # n / 10000 * 100%  
+
+  infoPageiconURL: https://assets-17app.akamaized.net/5e10c073-ed9f-419a-90b9-e07903c08f14.png
+  winnerPageiconURL: https://assets-17app.akamaized.net/3c25b913-fa21-458a-9f05-e1ff98a331a3.png
+  hintToken: {key: monster_battle_summon_hint_vampire,fontAttribute: {textColor: "#FFFFFF"}}
+  rule1Token: {key: monster_battle_summon_rule1_vampire,fontAttribute: {textColor: "#FFFFFF"}}
+  rule2Token: {key: monster_battle_summon_rule2_vampire,fontAttribute: {textColor: "#FFFFFF"}}
+  rule3Token: {key: monster_battle_summon_rule3_vampire,fontAttribute: {textColor: "#FFFFFF"}}
+  rule4Token: {key: monster_battle_summon_rule4_vampire,fontAttribute: {textColor: "#FFFFFF"}}
+  countdownToken: {key: monster_battle_summon_countdown_vampire,fontAttribute: {textColor: "#FFFFFF"}}
+  failureToken: {key: monster_battle_summon_failure_vampire,fontAttribute: {textColor: "#FFFFFF"}}
+  successToken: {key: monster_battle_summon_success_vampire,fontAttribute: {textColor: "#FFFFFF"}}
+  marqueeToken: {key: ：monster_battle_summon_marquee_vampire}
+
+
+
+
+
+
+
+
+
+
+
+
 - id: monster_1  # 怪獸id
   hit_consume: 10  # 每次打擊耗血
   duration: 60s  # 怪獸出現時間
@@ -41,6 +84,7 @@ monsters:
     probability: 2000 # n / 10000 * 100%
   - giftID: "1907_tw_ghost_2000"
     probability: 200 # n / 10000 * 100%
+
 
   infoPageiconURL: https://assets-17app.akamaized.net/7ba6a3aa-5170-45f6-9faa-03cbd4849600.png
   winnerPageiconURL: https://assets-17app.akamaized.net/5cd7f3ae-3c9d-4f86-92d8-1923b777e7bd.png
@@ -267,6 +311,32 @@ monsters:
 
 
 animationLoader: # animationID 必須是 animationPrefix_ + attack/enter/failure/idle/success
+- url: https://assets-17app.akamaized.net/abf30e38-bb60-40a7-96ef-7d9a73c0ff99.zip
+  webpUrl: https://assets-17app.akamaized.net/d2de33c9-846b-4e7d-9b7f-5dc590c90e26-q90-s1.webp
+  animationID: vampire_attack
+  MD5: f3188ff459efa142ee7193434150ed49
+  webpMD5: 2d10874c99a607c149d4568d7087537b
+
+- url: https://assets-17app.akamaized.net/c4c64c88-6f94-4f0e-9fa7-742109672230.zip
+  webpUrl: https://assets-17app.akamaized.net/6c50e3d9-ea86-43cd-af64-5c149085c392-q90-s1.webp
+  animationID: vampire_enter
+  MD5: 1e2284f39e0bff90800c275165f43662 
+  webpMD5: 0436df384fc36d9160ed091bebff916e
+- url: https://assets-17app.akamaized.net/ca01e9bf-8bd2-4449-adf9-4445edbd09a8.zip
+  webpUrl: https://assets-17app.akamaized.net/edfd5916-199c-47e3-abd4-f25dccd60301-q90-s1.webp
+  animationID: vampire_failure
+  MD5: fe0ee286eb114b1426f22ed095069622
+  webpMD5: 4ad8a1028c624cc1246b369c239953e7
+- url: https://assets-17app.akamaized.net/12b96fd2-6aee-477c-8c76-8387c2f41c96.zip
+  webpUrl: https://assets-17app.akamaized.net/7d790c93-3847-4d4a-96a7-24ec548ebf65-q90-s1.webp
+  animationID: vampire_idle
+  MD5: 8f9d94b68546122506112dd964d37543
+  webpMD5: a32b4ff9b0d9b3c86b21e67bd8146ad4
+- url: https://assets-17app.akamaized.net/db1c2fbe-950d-4c6b-895c-379636aac655.zip
+  webpUrl: https://assets-17app.akamaized.net/d57d42e0-dfbc-43a9-94c5-7d5f436a9c8b-q90-s1.webp
+  animationID: vampire_success
+  MD5: b62b7b02bdc26f5236731cc7a5565486
+  webpMD5: 5d204c6eadc946588c58faddc4ebabc1
 - url: https://assets-17app.akamaized.net/98b26445-2625-49a5-a541-ddf6a0256c00.zip # android 動畫
   webpUrl: https://assets-17app.akamaized.net/d679eb31-e6d9-456c-a32e-9551fed77bf6-q90-s1.webp # ios 動畫 
   animationID: yeti_attack
