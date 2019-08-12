@@ -311,25 +311,25 @@ func gitDiff() {
 }
 
 func mergePush() {
-	branch_suffix := fmt.Sprintf("configs_%s", slackUserID)
+	branchName := fmt.Sprintf("%s_configs_%s", gitBranch, slackUserID)
 
 	// set `user.name` and `user.email` before commit
 	execCommand("./", "git", []string{"config", "user.name", "Jenkins"})
 	execCommand("./", "git", []string{"config", "user.email", "no-reply@17.media"})
 
 	// always try to rebase "master" before merging i18n changes, or etcd-pusher's slack notification will failed to retrieve slackUserId
-	execCommand("./", "git", []string{"checkout", "origin/" + gitBranch + "_" + branch_suffix})
+	execCommand("./", "git", []string{"checkout", "-b", branchName, "origin/" + branchName})
 
 	execCommand("./", "git", []string{"rebase", "master"})
 
 	execCommand("./", "git", []string{"checkout", "master"})
 
-	execCommand("./", "git", []string{"merge", gitBranch + "_" + branch_suffix})
+	execCommand("./", "git", []string{"merge", branchName})
 
 	execCommand("./", "git", []string{"push", "origin", "master"})
 
 	// cleanup remote branch after merge succeed
-	execCommand("./", "git", []string{"push", "origin", "--delete", gitBranch + "_" + branch_suffix})
+	execCommand("./", "git", []string{"push", "origin", "--delete", branchName})
 
 	attachments := []slack.Attachment{slack.Attachment{
 		Fallback: "i18n pushed to github\n should be apply in few minutes",
