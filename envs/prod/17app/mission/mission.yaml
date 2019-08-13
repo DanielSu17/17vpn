@@ -28,6 +28,99 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: 022061b8-7a85-43a5-bcd5-1af9d835b5a6
+    type: 10
+    lifeCycle: 1
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: beer
+      amount: 10
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    i18nTitle: baggage_mission_first_time_IAP_point_tw_event_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 1700
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
+    i18nDescriptionParams:
+    goalValue: 1700
+    enableTimeRange:
+      - startTime: "2019-08-13 15:00:00 (GMT+0800)"
+        endTime: "2019-08-31 00:00:00 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
+  - ID: c109eb6d-07d4-4506-abbc-b5f06c41dae5
+    type: 10
+    lifeCycle: 1
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: ice_cream
+      amount: 100
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    i18nTitle: baggage_mission_first_time_IAP_point_tw_event_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 17000
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
+    i18nDescriptionParams:
+    goalValue: 17000
+    enableTimeRange:
+      - startTime: "2019-08-13 15:00:00 (GMT+0800)"
+        endTime: "2019-08-31 00:00:00 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
+  - ID: 1bc9d281-0ce8-44dd-bd8f-1a2b9ba663ae
+    type: 10
+    lifeCycle: 1
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: heart_bubble
+      amount: 200
+      expireTimeSecs: 259200
+    requirePhoneBinding: false
+    i18nTitle: baggage_mission_first_time_IAP_point_tw_event_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 77700
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
+    i18nDescriptionParams:
+    goalValue: 77700
+    enableTimeRange:
+      - startTime: "2019-08-13 15:00:00 (GMT+0800)"
+        endTime: "2019-08-31 00:00:00 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
   - ID: f85acadb-9dcb-4480-b7fd-c64106aeba07
     type: 8
     lifeCycle: 1
@@ -192,41 +285,6 @@ missions:
       - startTime: "2019-09-09 00:00:00 (GMT+0900)"
         endTime: "2019-09-15 23:59:59 (GMT+0900)"
     refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: d5d71f66-69ba-42ec-a3bd-35000e522073
-    type: 3
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 21
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1907_tw_chi_love_bp_100
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 3
-      - needMap: false
-        mapOption: 2
-        value: 1907_tw_chi_love_bag_s
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
-    i18nDescriptionParams:
-    goalValue: 3
-    enableTimeRange:
-      - startTime: "2019-08-08 12:30:00 (GMT+0800)"
-        endTime: "2019-08-12 23:59:59 (GMT+0800)"
-    refIDs:
-      - 1907_tw_chi_love_bag_s
     platforms:
       - android
       - ios
