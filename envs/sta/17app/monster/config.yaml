@@ -4,7 +4,34 @@ ccu: 0
 streamDuration: 0h00m00s
 animations: ["yeti"]
 monsters:
+- id: monster_mummy  # 怪獸id
+  hit_consume: 10 # 每次打擊耗血
+  duration: 60s # 怪獸出現時間
+  animation: "mummy" # 怪獸動畫prefix
+  type: 1 # 0: 一般怪獸, 1: 招喚怪獸
+  share_ratio: 50 # percentage, 主播分紅百分比： bonus * (share_ratio/100)
+  profit_ratio: 35 # percentage, 手續費百分比：bonus * (profit/100)
+  bonus: 336 # 血量: bonus * (100 + profit_ratio) / 100
+  weight: 0.5 # 怪獸產生百分比 : weight / sumOfAllWeights, 招喚怪獸不適用
+  summonGifts: # 招喚怪獸才需要填
+  - giftID: "1908_tw_ghost2_20000"
+    probability: 2000 # n / 10000 * 100%
+  - giftID: "1908_tw_ghost2_1000"
+    probability: 200 # n / 10000 * 100%
+  - giftID: "gift_lightstick_b"
+    probability: 10000 # n / 10000 * 100% 
 
+  infoPageiconURL: https://assets-17app.akamaized.net/8da69adc-fd24-4c3f-a6c6-4bd4bcfa3135.png
+  winnerPageiconURL: https://assets-17app.akamaized.net/7ce482eb-8a96-448c-a92b-17b18b08ce8a.png
+  hintToken: {key: monster_battle_summon_hint_mummy,fontAttribute: {textColor: "#FFFFFF"}}
+  rule1Token: {key: monster_battle_summon_rule1_mummy,fontAttribute: {textColor: "#FFFFFF"}}
+  rule2Token: {key: monster_battle_summon_rule2_mummy,fontAttribute: {textColor: "#FFFFFF"}}
+  rule3Token: {key: monster_battle_summon_rule3_mummy,fontAttribute: {textColor: "#FFFFFF"}}
+  rule4Token: {key: monster_battle_summon_rule4_mummy,fontAttribute: {textColor: "#FFFFFF"}}
+  countdownToken: {key: monster_battle_summon_countdown_mummy,fontAttribute: {textColor: "#FFFFFF"}}
+  failureToken: {key: monster_battle_summon_failure_mummy,fontAttribute: {textColor: "#FFFFFF"}}
+  successToken: {key: monster_battle_summon_success_mummy,fontAttribute: {textColor: "#FFFFFF"}}
+  marqueeToken: {key: ：monster_battle_summon_marquee_mummy}
 - id: monster_vampire  # 怪獸id
   hit_consume: 10 # 每次打擊耗血
   duration: 60s # 怪獸出現時間
@@ -311,6 +338,33 @@ monsters:
 
 
 animationLoader: # animationID 必須是 animationPrefix_ + attack/enter/failure/idle/success
+- url: https://assets-17app.akamaized.net/05d9375f-7e60-4864-aad0-3937fd75c595.zip
+  webpUrl: https://assets-17app.akamaized.net/eb50a9bb-17b9-4f1e-bbca-d48794cda9e1-q90-s1.webp
+  animationID: mummy_attack
+  MD5: 1401df3e03c811a0cc9bd5cbedfec641
+  webpMD5: 1c7c77f76a7bf0245f5e7439ffb6083c
+- url: https://assets-17app.akamaized.net/95ae2443-5730-4f2b-811f-fb4c75066fb5.zip
+  webpUrl: https://assets-17app.akamaized.net/7fd2c57c-a0a4-472f-9bcd-2cc9e2cd2ef4-q90-s1.webp
+  animationID: mummy_enter
+  MD5: 0b2fdb9da75a984576b7dac2a210a5e2
+  webpMD5: 4bd886dc89ebd919aec7732f0390c129
+- url: https://assets-17app.akamaized.net/95847363-0d74-44b3-b62a-c6340eee425e.zip
+  webpUrl: https://assets-17app.akamaized.net/4f569def-988d-440b-8d9d-b7712a97b58a-q90-s1.webp
+  animationID: mummy_failure
+  MD5: 0a9037361af73470f594302139b726cd
+  webpMD5: 8708295f2a754e6319e8df387a7cdf02
+- url: https://assets-17app.akamaized.net/05181939-1c5d-4f25-88f6-e8e90751e776.zip
+  webpUrl: https://assets-17app.akamaized.net/4bb0e82d-3b0a-4e82-a040-b41ca8486da0-q90-s1.webp
+  animationID: mummy_idle
+  MD5: e70efe3d899084760fcbc305fd35e239
+  webpMD5: 5169f53efaf4d5acf7cbb0920f815cb5
+- url: https://assets-17app.akamaized.net/25437f09-c6d9-438b-80a0-dffec381be60.zip
+  webpUrl: https://assets-17app.akamaized.net/ecf9b509-6cc8-46ac-9d4e-6fcafa52bb24-q90-s1.webp
+  animationID: mummy_success
+  MD5: 7fdec2b7fca50f8f868bf84550eee4a4
+  webpMD5: 24758dcea2851dac06bc17f659ec738b
+
+
 - url: https://assets-17app.akamaized.net/abf30e38-bb60-40a7-96ef-7d9a73c0ff99.zip
   webpUrl: https://assets-17app.akamaized.net/d2de33c9-846b-4e7d-9b7f-5dc590c90e26-q90-s1.webp
   animationID: vampire_attack
