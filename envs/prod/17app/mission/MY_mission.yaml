@@ -28,6 +28,37 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: e4d0141f-fab4-47a9-a7dc-2a01144304a1
+    type: 5
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 21
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 1908_tw_capybara_bp_50
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    i18nTitle: baggage_mission_leave_comment_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 10
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_leave_comment_reward_desc
+    i18nDescriptionParams:
+    goalValue: 10
+    enableTimeRange:
+      - startTime: "2019-08-14 18:00:00 (GMT+0800)"
+        endTime: "2019-08-23 23:59:59 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+      
   - ID: 060caf77-0284-4e31-8087-014abf25b9ad
     type: 9
     lifeCycle: 0
