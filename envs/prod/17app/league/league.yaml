@@ -34,3 +34,17 @@ leaguePerformance:
 supportedVersion:
   android: "2.3.93"
   ios: "3.62.0"
+leagueRuleI18nTitle:
+  key: league_rule_title
+leagueRulesI18n: # 如果要改翻譯, 要換一個i18n key, 不可以直接改key的內容, 除非參數一樣
+  - key: league_rule_rule1 # 一次只能參加 1 個聯盟
+  - key: league_rule_rule2 # 聯盟上限 %1$@ 位成員（包括盟主
+    params:
+      - value: 20
+  - key: league_rule_rule3 # 只有盟主可以邀請、管理成員
+  - key: league_rule_rule4 # %1$@ 級才有特權建立聯盟，%2$@ 級或簽約主播才有特權加入聯盟
+    params:
+      - value: 60
+      - value: 60
+  - key: league_rule_rule5 # 日本用戶不可建立或加入聯盟
+  - key: league_rule_rule6 # 聯盟尊榮特權：成員直播間內互挺可享成就值加成、榮耀跑騷跑馬燈
