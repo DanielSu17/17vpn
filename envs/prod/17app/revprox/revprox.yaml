@@ -20,7 +20,7 @@ conf:
    white_list:
      liveStreams: "getLiveStreamHotCountryList,commentLiveStream,\
             isUserOnLiveStream,\
-            getLatestLiveStreams,publishLiveStream,getLiveStreamInfo,\
+            getLatestLiveStreams,publishLiveStream,\
             getUserLiveStreams,getLiveStreamViewers,keepLiveStream,\
             likeLivestreamBatchUpdate,endLiveStream,enterLiveStream,\
             quitViewLiveStream,keepViewLiveStream,reportLiveAction,\
@@ -84,4 +84,5 @@ conf:
      monster: "monsters"
  - url_key: "go_lives_url"
    white_list:
-     liveStreams: "getSuggestedLiveStreams,liveStreams/getSuggestedLiveStreams"
+     liveStreams: "getSuggestedLiveStreams,liveStreams/getSuggestedLiveStreams,\
+            getLiveStreamInfo"
