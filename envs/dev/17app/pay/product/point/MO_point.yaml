@@ -1,0 +1,43 @@
+# // example of reward
+# // | Type | Value | RefCount's meaning |
+# // | --- | --- | --- |
+# // | VIP |  1  | x 天 尊榮寶寶 |
+
+# // example of firstPurchaseType
+# // |     Type      | Value | 
+# // |    -------    |  ---  | 
+# // |  LimitedTime  |   0   | 限時1次
+# // |    Career     |   1   | 限時生涯首儲
+# // |    UnLimit    |   2   | 限時不限次數
+
+eventBasedIAP:
+
+productBasedIAP:
+
+defaultIAP:
+  layoutInfo:
+    highlightBgURL: "https://assets-17app.akamaized.net/4c713730-ab2e-4f0f-928e-7fc17134406e.png"
+    highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+  colorInfo:
+    pointColor: "#28232D"
+    bonusPointColor: "#F5487D"
+    priceColor: "#28232D"
+  pointProducts:
+    - productID: "media17_points_14000"
+      bonusPoint: 0
+      shouldHighlight:  true
+    - productID: "media17_points_6500"
+      bonusPoint: 0
+      shouldHighlight:  false
+    - productID: "media17_points_2400"
+      bonusPoint: 0
+      shouldHighlight:  false
+    - productID: "media17_points_1100"
+      bonusPoint: 0
+      shouldHighlight:  false
+    - productID: "media17_points_500"
+      bonusPoint: 0
+      shouldHighlight:  false
+    - productID: "media17_points_100"
+      bonusPoint: 0
+      shouldHighlight:  false
