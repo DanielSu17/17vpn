@@ -8,14 +8,6 @@ maxNameLength: 15
 maxDescLength: 150
 dailyLiveMarqueeTimes: 500
 numMemberTriggerLiveMarquee: 2
-leagueRuleTitle: league_rule_title
-leagueRules: 
-  - league_rule_rule1
-  - league_rule_rule2
-  - league_rule_rule3
-  - league_rule_rule4
-  - league_rule_rule5
-  - league_rule_rule6
 liveMarqueeTitle: league_mainpage_marquee_switch
 liveMarqueeRule: league_mainpage_marquee_info
 leaguePerformance:
@@ -36,15 +28,16 @@ supportedVersion:
   ios: "3.61.0"
 leagueRuleI18nTitle:
   key: league_rule_title
-leagueRulesI18n:
-  - key: league_rule_rule1
-  - key: league_rule_rule2
+leagueRulesI18n: # 如果要改翻譯, 要換一個i18n key, 不可以直接改key的內容, 除非參數一樣
+  - key: league_rule_rule7 # 聯盟為平台上主播與主播、主播與用戶組成的隊伍。團結大家的力量一起獲得更多的粉絲、更高的成就，為了聯盟榮譽而努力！
+  - key: league_rule_rule8 # 聯盟上限20位成員（包括盟主）。目前一個人只能加入一個聯盟，聯盟成立、加入後，還無法解散或退出。
     params:
       - value: 20
-  - key: league_rule_rule3
-  - key: league_rule_rule4
+  - key: league_rule_rule9 # 盟主：60級以上可以建立聯盟、管理成員
     params:
       - value: 60
+  - key: league_rule_rule10 # 盟員：60級以上或簽約主播能夠受邀加入聯盟
+    params:
       - value: 60
-  - key: league_rule_rule5
-  - key: league_rule_rule6
+  - key: league_rule_rule11 # 加入聯盟之後可享尊榮特權：...
+  - key: league_rule_rule5 # 日本用戶不可建立或加入聯盟
