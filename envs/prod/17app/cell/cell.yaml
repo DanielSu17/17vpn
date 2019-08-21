@@ -67,11 +67,11 @@ hotOptTabs:
   - id: label:acoustic
     name:
       key: streamer_label_acoustic
-    
+    highlight: true
   - id: label:singer
     name:
       key: streamer_label_singer 
- 
+    highlight: true
   - id: label:player
     name:
       key: streamer_label_player
@@ -98,15 +98,15 @@ hotOptTabs:
 hotOptSuperTopTabList: #這邊一定要有四個分類，會從每個分類拿熱一出來排。如果不想設定四個，可以設定不存在的label:a,label:b等即可
   - label:pundit
   - label:a
-  - label:b
+  - label:male
   - label:c
+
 #  - label:fortune_teller
 
 hotOptSuperTopTabExtraList: #這邊不要把男生女生拿掉。這裡會按順序，把每個分類拿光，才拿下一個
   - label:pundit
-  - label:singer
-  - label:male
   - label:player
+  - label:male
   - label:acoustic
   - label:fortune_teller
 #  - web:music
@@ -117,7 +117,6 @@ hotOptSuperTopTabBlacklist:
   - 2fbdc276-b4dc-433e-5080-119a69f8d644
   - eaf30db6-b605-470a-57d2-f1ad949b7b00
   - 25f46a01-626a-43db-ab4b-cdbd668f75d8
-  - 3ed53cb6-3eaa-4db5-b82b-bc6781ceb7a4
 
 #-----------以上skyeye可動--------------------
 
