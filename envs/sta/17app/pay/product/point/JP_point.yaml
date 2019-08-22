@@ -37,29 +37,23 @@ productBasedIAP:
       rewardTextColor: "#F69355"
     pointProducts:
       - productID: "media17_points_100"
-        bonusPoint: 100
+        bonusPoint: 0
         shouldHighlight:  true
         reward:
           type: 1
-          refCount: 5
+          refCount: 3
       - productID: "media17_points_500"
         bonusPoint: 0
         shouldHighlight:  false
         reward:
           type: 1
-          refCount: 5
+          refCount: 3
       - productID: "media17_points_1100"
         bonusPoint: 0
         shouldHighlight:  false
-        reward:
-          type: 1
-          refCount: 5
       - productID: "media17_points_2400"
         bonusPoint: 0
         shouldHighlight:  false
-        reward:
-          type: 1
-          refCount: 5
       - productID: "media17_points_6500"
         bonusPoint: 0
         shouldHighlight:  false
@@ -67,12 +61,9 @@ productBasedIAP:
           type: 1
           refCount: 5
       - productID: "media17_points_14000"
-        bonusPoint: 0
-        shouldHighlight:  false
-        reward:
-          type: 1
-          refCount: 5
-    firstPurchaseType: 0
+        bonusPoint: 1000
+        shouldHighlight:  true
+    firstPurchaseType: 2
     taInfo:
       registerRange:
         dayStart: 0 # 0 means no limit
