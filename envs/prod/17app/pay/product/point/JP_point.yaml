@@ -13,8 +13,8 @@
 eventBasedIAP:
 
 productBasedIAP:
-  - startTime: "2019-08-16T00:00:00+09:00"
-    endTime: "2019-08-18T23:59:59+09:00"
+  - startTime: "2019-08-22T19:00:00+09:00"
+    endTime: "2019-08-25T23:59:59+09:00"
     showCountdownUnderSticker: true
     showCountdownInPopUp: true
     stickerURL: "https://assets-17app.akamaized.net/30feb803-3274-42e2-8e41-187274f2314b.png"
@@ -43,6 +43,12 @@ productBasedIAP:
         shouldHighlight:  true
       - productID: "media17_points_100"
         bonusPoint: 0
+        shouldHighlight:  true
+        reward:
+            type: 1
+            refCount: 3
+      - productID: "media17_points_500"
+        bonusPoint: 0
         shouldHighlight:  false
         reward:
             type: 1
@@ -56,10 +62,7 @@ productBasedIAP:
       - productID: "media17_points_1100"
         bonusPoint: 0
         shouldHighlight:  false
-      - productID: "media17_points_500"
-        bonusPoint: 0
-        shouldHighlight:  false
-    firstPurchaseType: 0
+    firstPurchaseType: 2
     taInfo:
       registerRange:
         dayStart: 0 # 0 means no limit
