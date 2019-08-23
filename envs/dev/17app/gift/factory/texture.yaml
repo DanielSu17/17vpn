@@ -31,7 +31,6 @@
 # // | Align left | 5 |
 
 gestures:
-  validTotalDurationMs: 20000 #millisecond
   # key is the giftID
   giftInfos:
     gift_texture_gesture_babyrush:
@@ -40,8 +39,49 @@ gestures:
       gestureAnimDescs:
         - type: 0
           # clients take `referenceWidth` and `referenceHeight` as reference to decide the resolution of each animation
-          referenceWidth: 640
-          referenceHeight: 1136
+          referenceWidth: 290
+          referenceHeight: 360
           originalImageWidth: 640
           originalImageHeight: 1136
+          numOfImages: 128
+    gift_texture_gesture_hearty_candy:
+      hintI18nKey: gesture_heartD_toast_hint
+      handGestureType: 4
+      gestureAnimDescs:
+        - type: 2
+          referenceWidth: 290
+          referenceHeight: 360
+          originalImageWidth: 700
+          originalImageHeight: 700
+          numOfImages: 72
+    gift_texture_gesture_victory_fireworks:
+      hintI18nKey: gesture_victory_toast_hint
+      handGestureType: 15
+      gestureAnimDescs:
+        - type: 1
+          referenceWidth: 290
+          referenceHeight: 360
+          originalImageWidth: 640
+          originalImageHeight: 640
+          numOfImages: 71
+    gift_texture_gesture_graduate_plane:
+      hintI18nKey: gesture_bigv_toast_hint
+      handGestureType: 16
+      gestureAnimDescs:
+        - type: 2
+          referenceWidth: 290
+          referenceHeight: 360
+          originalImageWidth: 670
+          originalImageHeight: 720
+          numOfImages: 131
+    gift_texture_gesture_fist_meow:
+      hintI18nKey: gesture_fist_meow_toast_hint
+      handGestureType: 12
+      gestureAnimDescs:
+        - type: 1
+          referenceWidth: 290
+          referenceHeight: 360
+          originalImageWidth: 580
+          originalImageHeight: 720
+          numOfImages: 62
       
