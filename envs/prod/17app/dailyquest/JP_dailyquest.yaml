@@ -210,6 +210,9 @@ newbieDays: 7
 # - 9: COMMENT_LIVE
 # - 10: SEND_GIFT
 # - 11: BUY_POINT
+# - 12: DailyQuestType_WATCH_LIVE_10_CONTINUE 
+# - 13: DailyQuestType_WATCH_LIVE_30_TOTAL
+# - 14: DailyQuestType_LIVE_CHECK_IN_TWO_TOTAL  7天內有N天看直播
 # ex:
 #   - type: 1
 #     point: 25
@@ -217,11 +220,26 @@ newbieDays: 7
 #     required: 1
 #     requirePhoneBinding: false
 newbieRewards:
-#    - type: 1
-#      point: 50
-#      exp: 0
-#      required: 2
-#      requirePhoneBinding: false
+    - type: 1
+      point: 0
+      exp: 0
+      required: 2
+      requirePhoneBinding: false
+      voucherReward:
+        type: 3
+        itemID: "2019newuser"
+        amount: 3
+        intervalSec: 28800
+    - type: 14
+      point: 0
+      exp: 0
+      required: 2
+      requirePhoneBinding: false
+      voucherReward:
+        type: 3
+        itemID: "socute"
+        amount: 50
+        intervalSec: 28800
     - type: 2
       point: 20
       exp: 0
@@ -276,14 +294,4 @@ newbieRewards:
         type: 3
         itemID: "bravo"
         amount: 2
-        intervalSec: 28800
-    - type: 14
-      point: 0
-      exp: 0
-      required: 2
-      requirePhoneBinding: false
-      voucherReward:
-        type: 3
-        itemID: "socute"
-        amount: 50
         intervalSec: 28800
