@@ -1,4 +1,19 @@
 forcePromoteVirtualStream: false
+
+# porn detection
+pornDetection:
+  enable: false
+  intervalMS: 30000
+  modelVersion: 1
+  ModelLink: ""
+  LabelLink: ""
+  Threshold: 10
+  Labels:
+    - label: "porn"
+      confidence: 87.87
+    - label: "adult"
+      confidence: 87.87
+
 defaultComments:
   - specificTimeFrame: true
     startTime: "00:00:00"

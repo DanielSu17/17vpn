@@ -1,5 +1,19 @@
 forcePromoteVirtualStream: true
 
+# porn detection
+pornDetection:
+  enable: false
+  intervalMS: 30000
+  modelVersion: 1
+  ModelLink: ""
+  LabelLink: ""
+  Threshold: 10
+  Labels:
+    - label: "porn"
+      confidence: 87.87
+    - label: "adult"
+      confidence: 87.87
+
 programDefaultComments:      #全部 program 預設留言
   - commentsInfo:
     - content: "Hello😀"
