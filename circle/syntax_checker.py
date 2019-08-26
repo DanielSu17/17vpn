@@ -29,15 +29,19 @@ for dirpath, dirnames, filenames in os.walk("."):
         full_filename = os.path.join(dirpath, filename)
         with open(full_filename, 'r') as stream:
             try:
+                # FIXME: it should check json as well
+                # but `stream` will be changed after yaml.load(), json.load()
+                # so ignore it, or it will emit too much error messages
                 if full_filename.endswith(('.yaml', '.yml')):
                     # check invisible characters
                     line_number = 0
                     for line in stream.readlines():
                         line_number += 1
+                        check_line = line.split('#')[-1:]
                         for char in invalid_chars:
-                            if char in line:
-                                print('{0}: invisible character found at line {1}'
-                                        .format(full_filename, line_number))
+                            if char in check_line:
+                                print('{0}: invisible character found at line {1}\n=> {2}'
+                                        .format(full_filename, line_number, line))
                                 # TODO: should return error after stable
                                 # sys.exit(1)
 
