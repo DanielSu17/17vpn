@@ -68,7 +68,7 @@ eventBasedIAP:
 
 productBasedIAP:
   - startTime: "2018-12-24T15:00:00+08:00"
-    endTime: "2019-02-25T23:59:59+08:00"
+    endTime: "2020-02-25T23:59:59+08:00"
     showCountdownUnderSticker: true
     showCountdownInPopUp: false
     stickerURL: "https://assets-17app.akamaized.net/c8aefddd-0191-4a4a-94bb-8020a357d833.png"
@@ -85,6 +85,8 @@ productBasedIAP:
       descRightBottomURL: "https://assets-17app.akamaized.net/385aa428-ebc8-482e-8fb9-feac15ec5c3c.png"
       highlightBgURL: "https://assets-17app.akamaized.net/3bd6d470-6a98-488c-b278-2b756bf542ea.png"
       highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+        "premiumBaby": "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
     colorInfo:
       pointColor: "#28232D"
       bonusPointColor: "#B36F6777"
@@ -115,10 +117,12 @@ productBasedIAP:
         bonusPoint: 100
         shouldHighlight:  false
         reward:
-    firstPurchaseType: 0
+          type: 1
+          refCount: 5
+    firstPurchaseType: 2
     taInfo:
       registerRange:
-        dayStart: 14 # 0 means no limit
+        dayStart: 0 # 0 means no limit
         dayEnd: 0 # 0 means no limit
     displayRewardInfo: false
     abtestName:
