@@ -2,14 +2,14 @@ forcePromoteVirtualStream: true
 
 # porn detection
 pornDetection:
-  enable: false
+  enable: true
   intervalMS: 30000
   modelVersion: 1
-  modelLink: ""
-  labelLink: ""
-  threshold: 10
+  modelLink: "https://cdn.17app.co/nsfw/170619e9bc7c6eddf0929406f0e499210a3d333c.tflite"
+  labelLink: "https://cdn.17app.co/nsfw/0eb5271b056c149d00d0ecef8f91c54ac55dcb90.txt"
+  threshold: 3
   labels:
-    - label: "porn"
+    - label: "unsafe"
       confidence: 87.87
     - label: "adult"
       confidence: 87.87
