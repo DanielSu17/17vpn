@@ -19,8 +19,8 @@ conf:
  - url_key: "go_url"
    white_list:
      liveStreams: "getLiveStreamHotCountryList,commentLiveStream,\
-            isUserOnLiveStream,\
-            getLatestLiveStreams,publishLiveStream,\
+            isUserOnLiveStream,getSuggestedLiveStreams,\
+            getLatestLiveStreams,publishLiveStream,getLiveStreamInfo,\
             getUserLiveStreams,getLiveStreamViewers,keepLiveStream,\
             likeLivestreamBatchUpdate,endLiveStream,enterLiveStream,\
             quitViewLiveStream,keepViewLiveStream,reportLiveAction,\
@@ -82,7 +82,3 @@ conf:
      redenvelopes: "redenvelopes"
      sportscar: "sportscar"
      monster: "monsters"
- - url_key: "go_lives_url"
-   white_list:
-     liveStreams: "getSuggestedLiveStreams,liveStreams/getSuggestedLiveStreams,\
-            getLiveStreamInfo"
