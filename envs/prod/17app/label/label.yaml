@@ -33,6 +33,13 @@ labelInfos:
       key: "streamer_label_pundit"
     iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
     labelID: 108
+    order: 101
+  - id: "show" # 熱門節目
+    type: 2
+    label:
+      key: "streamer_label_show"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    labelID: 108
     order: 100
   - id: "fortune_teller" # 命理小舖
     type: 2
@@ -118,13 +125,44 @@ exploreLabels:
 # 時事話題直播列表會出現的label
 topicTabLabels:
   - pundit
+  - show
 
 # labelWhiteList defines relation between label and user list
 labelWhiteList:
+  show:
+    - e2f9021b-3fb6-40ae-8db5-5fe5e3e28e3c # 陳揮文
+    - eb37c363-8dc1-4cd7-6898-2deeb1ebee22 # 17綜合台
+    - 97851fd4-13be-47cd-a6f1-ddd8ceb36fd5 # 17media
+    - 80ce28d4-355b-4666-6af4-cafed6e3a07d # 17娛樂台
+    - d4fa2189-be5b-4351-8dc6-3793b3e79593 # 嘴一波
+    - 62695786-774b-46de-849f-944ba9548d35 # 韓國瑜
+    - f72d13f1-59a4-4ac4-8958-2d64c569556f # 黃暐瀚17
+    - d62b9dcf-157f-4345-9c75-272f236573e8 # 3q陳柏惟
+    - f488e6f8-4980-4fb7-9502-f1a4a075e8b8 # 視網膜Retina
+    - 64960d5e-1631-4d55-9cd6-66c7ecfb6eef # 黃益中
+    - 799bdb57-9390-46b8-9cc6-0303b68a7cb6 # 羅友志
+    - 5168cc74-3f30-4106-bbf9-5722e6f5101c # 謝龍介
+    - 8d182ed9-d02c-46c3-9dfb-bc102519f02c # 同志先生Henry
+    - fa14dee9-299d-4480-b1a9-c892e79a0e8e # 黃士修
+    - 00e4a6bd-e106-4f5e-be67-0279705b4305 # 于美人
+    - 92c0e435-b7b3-453b-abf5-1f971db3e4ff # 李承曄
+    - 2242e3b8-2ab9-4d7f-b0d1-f4743d31a9e5 # 台灣鯛民
+    - 85aa92e2-f57b-414c-95e6-f5715065932f # 羅智強
+    - ebc162ee-1235-4f6b-b0b6-d2e2e0d18721 # 學姊受不了
+    - bac3415c-f955-456e-b256-0fc653c33132 # 謝哲青
+    - dc751561-d6aa-4e6b-b842-89ec07612311 # 沈志霖
+    - e1248c81-a3a3-466b-9cd2-80d5e4f66448 # 乃哥
+    - a554106b-56a4-41b3-a7bc-ac754b229a23 # 呂文婉
+    - 6172b2ec-dd28-4884-75fc-5415c85ba241  # 星座艾莉絲
+    - 2fdb9f0f-cdc3-4eb4-a8af-ff1c261a2369 # 趣你的娛樂
+    - ad9a4ee5-e7eb-47f0-8ef4-727b286aa48f # David’s Angels
+    - e0d68bc2-03c1-4a38-a149-ee65d0089036 # 當我們喇在一起
+    - 1d264e45-0c86-4c66-b9e0-dcac051100eb # 明星製作人
+    - cef2923e-cc43-4577-a33e-ef89e619a12a # 決戰17唱   
   pundit: # 政治名嘴
     - e2f9021b-3fb6-40ae-8db5-5fe5e3e28e3c # 陳揮文
     - eb37c363-8dc1-4cd7-6898-2deeb1ebee22 # 17綜合台
-    - 97851fd4-13be-47cd-a6f1-ddd8ceb36fd5
+    - 97851fd4-13be-47cd-a6f1-ddd8ceb36fd5 # 17media
     - 80ce28d4-355b-4666-6af4-cafed6e3a07d # 17娛樂台
     - d4fa2189-be5b-4351-8dc6-3793b3e79593 # 嘴一波
     - 62695786-774b-46de-849f-944ba9548d35 # 韓國瑜
