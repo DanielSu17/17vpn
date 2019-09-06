@@ -16,7 +16,7 @@ allowed_origins:
 conf:
  - url_key: "go_url"
    white_list:
-     liveStreams: "commentLiveStream,\
+     liveStreams: "getLiveStreamHotCountryList,commentLiveStream,\
             isUserOnLiveStream,\
             getLatestLiveStreams,publishLiveStream,\
             getUserLiveStreams,getLiveStreamViewers,keepLiveStream,\
@@ -84,5 +84,4 @@ conf:
    white_list:
      # for legacy api
      liveStreams: "getSuggestedLiveStreams,liveStreams/getSuggestedLiveStreams,\
-            getLiveStreamInfo, enterLiveStream, quitViewLiveStream,\
-            getLiveStreamHotCountryList"
+            getLiveStreamInfo, enterLiveStream, quitViewLiveStream"
