@@ -17,6 +17,7 @@ conf:
  - url_key: "go_url"
    white_list:
      liveStreams: "commentLiveStream,\
+            isUserOnLiveStream,\
             getLatestLiveStreams,publishLiveStream,\
             getUserLiveStreams,getLiveStreamViewers,keepLiveStream,\
             likeLivestreamBatchUpdate,endLiveStream,\
@@ -84,4 +85,4 @@ conf:
      # for legacy api
      liveStreams: "getSuggestedLiveStreams,liveStreams/getSuggestedLiveStreams,\
             getLiveStreamInfo, enterLiveStream, quitViewLiveStream,\
-            isUserOnLiveStream, getLiveStreamHotCountryList"
+            getLiveStreamHotCountryList"
