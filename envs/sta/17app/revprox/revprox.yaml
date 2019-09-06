@@ -16,12 +16,11 @@ allowed_origins:
 conf:
  - url_key: "go_url"
    white_list:
-     liveStreams: "getLiveStreamHotCountryList,commentLiveStream,\
-            isUserOnLiveStream,\
+     liveStreams: "commentLiveStream,\
             getLatestLiveStreams,publishLiveStream,\
             getUserLiveStreams,getLiveStreamViewers,keepLiveStream,\
-            likeLivestreamBatchUpdate,endLiveStream,enterLiveStream,\
-            quitViewLiveStream,keepViewLiveStream,reportLiveAction,\
+            likeLivestreamBatchUpdate,endLiveStream,\
+            keepViewLiveStream,reportLiveAction,\
             restreamLiveStream,hasRestreamedLiveStream"
      liveStreams/admin: "pass,kill,hide,pintotop,cancelpintotop,\
             killLiveStreamAction,passLiveStream,hideLiveStream,\
@@ -84,4 +83,5 @@ conf:
    white_list:
      # for legacy api
      liveStreams: "getSuggestedLiveStreams,liveStreams/getSuggestedLiveStreams,\
-            getLiveStreamInfo"
+            getLiveStreamInfo, enterLiveStream, quitViewLiveStream,\
+            isUserOnLiveStream, getLiveStreamHotCountryList"
