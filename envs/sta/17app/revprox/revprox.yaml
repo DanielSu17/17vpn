@@ -16,12 +16,11 @@ allowed_origins:
 conf:
  - url_key: "go_url"
    white_list:
-     liveStreams: "getLiveStreamHotCountryList,commentLiveStream,\
-            isUserOnLiveStream,\
-            getLatestLiveStreams,publishLiveStream,\
+     liveStreams: "commentLiveStream,\
+            publishLiveStream,\
             getUserLiveStreams,getLiveStreamViewers,keepLiveStream,\
-            likeLivestreamBatchUpdate,endLiveStream,enterLiveStream,\
-            quitViewLiveStream,keepViewLiveStream,reportLiveAction,\
+            likeLivestreamBatchUpdate,endLiveStream,\
+            keepViewLiveStream,reportLiveAction,\
             restreamLiveStream,hasRestreamedLiveStream"
      liveStreams/admin: "pass,kill,hide,pintotop,cancelpintotop,\
             killLiveStreamAction,passLiveStream,hideLiveStream,\
@@ -82,5 +81,9 @@ conf:
      monster: "monsters"
  - url_key: "go_lives_url"
    white_list:
-     liveStreams: "liveStreams,lives,getSuggestedLiveStreams,liveStreams/getSuggestedLiveStreams,\
-            getLiveStreamInfo"
+     # v1 api
+     liveStreams: "liveStreams,lives"
+     # for legacy api
+     liveStreams: "getSuggestedLiveStreams,liveStreams/getSuggestedLiveStreams,\
+            getLatestLiveStreams, getLiveStreamInfo, enterLiveStream, quitViewLiveStream,\
+            isUserOnLiveStream, getLiveStreamHotCountryList"
