@@ -18,7 +18,7 @@ conf:
    white_list:
      liveStreams: "commentLiveStream,\
             isUserOnLiveStream,\
-            publishLiveStream,\
+            getLatestLiveStreams,publishLiveStream,\
             getUserLiveStreams,getLiveStreamViewers,keepLiveStream,\
             likeLivestreamBatchUpdate,endLiveStream,\
             keepViewLiveStream,reportLiveAction,\
@@ -84,5 +84,5 @@ conf:
    white_list:
      # for legacy api
      liveStreams: "getSuggestedLiveStreams, liveStreams/getSuggestedLiveStreams,\
-            getLatestLiveStreams, getLiveStreamInfo, enterLiveStream, quitViewLiveStream,\
+            getLiveStreamInfo, enterLiveStream, quitViewLiveStream,\
             getLiveStreamHotCountryList"
