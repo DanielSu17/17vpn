@@ -18,12 +18,12 @@ allowed_origins:
 conf:
  - url_key: "go_url"
    white_list:
-     liveStreams: "getLiveStreamHotCountryList,commentLiveStream,\
-            isUserOnLiveStream,getSuggestedLiveStreams,\
-            getLatestLiveStreams,publishLiveStream,getLiveStreamInfo,\
+     liveStreams: "commentLiveStream,\
+            isUserOnLiveStream,\
+            getLatestLiveStreams,publishLiveStream,\
             getUserLiveStreams,getLiveStreamViewers,keepLiveStream,\
-            likeLivestreamBatchUpdate,endLiveStream,enterLiveStream,\
-            quitViewLiveStream,keepViewLiveStream,reportLiveAction,\
+            likeLivestreamBatchUpdate,endLiveStream,\
+            keepViewLiveStream,reportLiveAction,\
             restreamLiveStream,hasRestreamedLiveStream"
      liveStreams/admin: "pass,kill,hide,pintotop,cancelpintotop,\
             killLiveStreamAction,passLiveStream,hideLiveStream,\
@@ -82,3 +82,9 @@ conf:
      redenvelopes: "redenvelopes"
      sportscar: "sportscar"
      monster: "monsters"
+ - url_key: "go_lives_url"
+   white_list:
+     # for legacy api
+     liveStreams: "getSuggestedLiveStreams, liveStreams/getSuggestedLiveStreams,\
+            getLiveStreamInfo, enterLiveStream, quitViewLiveStream,\
+            getLiveStreamHotCountryList"
