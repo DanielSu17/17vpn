@@ -1,75 +1,348 @@
-# - id <enum>
-# - unit <enum> : 1 (seconds), 2 (point), 3 (number)
-# - major <bool> : true / false (major index for all region)
-# - description <i18n>
+# id <enum>: 1 - 5
+levelI18n:
+  - id: 0 # 透明晶
+    name:
+      key: streamer_loyalty_rule_member
+  - id: 1 # 翡翠綠
+    name:
+      key: streamer_loyalty_rule_emerald
+  - id: 2 # 晶緻紅
+    name:
+      key: streamer_loyalty_rule_precious
+  - id: 3 # 貴賓金
+    name:
+      key: streamer_loyalty_rule_gold
+  - id: 4 # 菁英鑽
+    name:
+      key: streamer_loyalty_rule_diamond
+  - id: 5 # 尊爵黑
+    name:
+      key: streamer_loyalty_rule_monarch
+
+# 直播等級詳細規則
+ruleI18n:
+  - key: streamer_loyalty_rule_detail1
+  - key: streamer_loyalty_rule_detail2
+  - key: streamer_loyalty_rule_detail3
+  - key: streamer_loyalty_rule_detail4
+
+# id <enum>
+# unit <enum> : 1 (seconds), 2 (point), 3 (number), 4 (day)
+# major <bool> : true / false (major index for all region)
+# description <i18n>
 indexI18n:
   - id: 1 # 本月有效開播時長
     unit: 1
     major: true
+    name:
+      key: streamer_loyalty_streaming_performance_validstreamedhours
     description:
       key: streamer_loyalty_rule_definition_validstreamedhours
   - id: 2 # 本月收點總額
     unit: 2
     major: true
+    name:
+      key: streamer_loyalty_streaming_performance_points
     description:
       key: streamer_loyalty_rule_definition_points
   - id: 3 # 本月有效開播則數
     unit: 3
+    name:
+      key: streamer_loyalty_streaming_performance_validstreamerrooms
     description:
       key: streamer_loyalty_rule_definition_validstreamerrooms
   - id: 4 # 本月新增貼文數
     unit: 3
+    name:
+      key: streamer_loyalty_streaming_performance_newpost
     description:
       key: streamer_loyalty_rule_definition_newpost
   - id: 5 # 本月不重複送禮人數
     unit: 3
+    name:
+      key: streamer_loyalty_streaming_performance_uniquegiftsender
     description:
       key: streamer_loyalty_rule_definition_uniquegiftsender
   - id: 6 # 本月戰隊人數
     unit: 3
+    name:
+      key: streamer_loyalty_streaming_performance_subscriberofarmy
     description:
       key: streamer_loyalty_rule_definition_subscriberofarmy
   - id: 7 # 本月有效開播天數
-    unit: 3
+    unit: 4
+    name:
+      key: streamer_loyalty_streaming_performance_validstreameddays
     description:
       key: streamer_loyalty_rule_definition_validstreameddays
   - id: 8 # 本月新增貼文分享數
     unit: 3
+    name:
+      key: streamer_loyalty_streaming_performance_newpostshared
     description:
       key: streamer_loyalty_rule_definition_newpostshared
   - id: 9 # 本月不重複直播間觀眾
     unit: 3
+    name:
+      key: streamer_loyalty_streaming_performance_uniqueviewer
     description:
       key: streamer_loyalty_rule_definition_uniqueviewer
   - id: 10 # 本月總被觀看時長
     unit: 1
+    name:
+      key: streamer_loyalty_streaming_performance_watchinghours
     description:
       key: streamer_loyalty_rule_definition_watchinghours
   - id: 11 # 本月新增追蹤人數
     unit: 3
+    name:
+      key: streamer_loyalty_streaming_performance_newfollowers
     description:
       key: streamer_loyalty_rule_definition_newfollowers
   - id: 12 # 本月用戶平均觀看時長
     unit: 1
+    name:
+      key: streamer_loyalty_streaming_performance_averagewatchedstreamer
     description:
       key: streamer_loyalty_rule_definition_averagewatchedstreamer
 
+
+# <region>:
+#   detail:
+#     <index>:
+#       <level>: value
 indexTable:
   TW:
     enableReward: true
     indexes: [2, 1, 3, 4, 5]
+    detail:
+      2:
+        0: 0
+        1: 100000
+        2: 150000
+        3: 200000
+        4: 500000
+        5: 2500000
+      1:
+        0: 0
+        1: 20
+        2: 25
+        3: 30
+        4: 35
+        5: 40
+      3:
+        0: 0
+        1: 10
+        2: 15
+        3: 20
+        4: 25
+        5: 30
+      4:
+        0: 0
+        1: 1
+        2: 3
+        3: 5
+        4: 8
+        5: 10
+      5:
+        0: 0
+        1: 25
+        2: 50
+        3: 100
+        4: 120
+        5: 150
   JP:
     enableReward: true
     indexes: [2, 1, 7, 6, 5]
+    detail:
+      2:
+        0: 0
+        1: 100000
+        2: 150000
+        3: 200000
+        4: 500000
+        5: 2500000
+      1:
+        0: 0
+        1: 20
+        2: 25
+        3: 30
+        4: 35
+        5: 40
+      7:
+        0: 0
+        1: 10
+        2: 15
+        3: 20
+        4: 25
+        5: 30
+      6:
+        0: 0
+        1: 1
+        2: 2
+        3: 4
+        4: 7
+        5: 11
+      5:
+        0: 0
+        1: 10
+        2: 50
+        3: 100
+        4: 300
+        5: 500
   US:
     enableReward: true
     indexes: [2, 1, 10, 9, 5]
+    detail:
+      2:
+        0: 0
+        1: 100000
+        2: 150000
+        3: 200000
+        4: 500000
+        5: 2500000
+      1:
+        0: 0
+        1: 20
+        2: 25
+        3: 30
+        4: 35
+        5: 40
+      10:
+        0: 0
+        1: 1
+        2: 3
+        3: 5
+        4: 8
+        5: 10
+      9:
+        0: 0
+        1: 1000
+        2: 2500
+        3: 5000
+        4: 10000
+        5: 20000
+      5:
+        0: 0
+        1: 30
+        2: 50
+        3: 100
+        4: 200
+        5: 400
   HK:
     enableReward: true
     indexes: [2, 1, 3, 4, 5]
+    detail:
+      2:
+        0: 0
+        1: 100000
+        2: 150000
+        3: 200000
+        4: 500000
+        5: 2500000
+      1:
+        0: 0
+        1: 20
+        2: 25
+        3: 30
+        4: 35
+        5: 40
+      3:
+        0: 0
+        1: 10
+        2: 15
+        3: 20
+        4: 25
+        5: 30
+      4:
+        0: 0
+        1: 1
+        2: 4
+        3: 7
+        4: 10
+        5: 13
+      5:
+        0: 0
+        1: 25
+        2: 50
+        3: 100
+        4: 120
+        5: 150
   SG:
     enableReward: true
     indexes: [2, 1, 7, 4, 5]
+    detail:
+      2:
+        0: 0
+        1: 100000
+        2: 150000
+        3: 200000
+        4: 500000
+        5: 2500000
+      1:
+        0: 0
+        1: 20
+        2: 25
+        3: 30
+        4: 35
+        5: 40
+      7:
+        0: 0
+        1: 10
+        2: 15
+        3: 20
+        4: 25
+        5: 30
+      4:
+        0: 0
+        1: 2
+        2: 5
+        3: 8
+        4: 12
+        5: 15
+      5:
+        0: 0
+        1: 10
+        2: 20
+        3: 40
+        4: 80
+        5: 100
   MY:
     enableReward: true
     indexes: [2, 1, 7, 4, 5]
+    detail:
+      2:
+        0: 0
+        1: 100000
+        2: 150000
+        3: 200000
+        4: 500000
+        5: 2500000
+      1:
+        0: 0
+        1: 20
+        2: 25
+        3: 30
+        4: 35
+        5: 40
+      7:
+        0: 0
+        1: 10
+        2: 15
+        3: 20
+        4: 25
+        5: 30
+      4:
+        0: 0
+        1: 2
+        2: 5
+        3: 8
+        4: 12
+        5: 15
+      5:
+        0: 0
+        1: 10
+        2: 20
+        3: 40
+        4: 80
+        5: 100
