@@ -16,7 +16,7 @@ regions: ['US']
 countdown_time: 60 # deprecated
 event_time: 10 # for display in notice only
 creation_by_streamer: false
-custom_min_point: 1000
+custom_min_point: 3000
 custom_max_point: 99999999
 customized_ios_support_version: 2.38
 customized_android_support_version: 2.2.95
@@ -184,6 +184,7 @@ redenvelopes:
       point: 50
     - amount: 4
       point: 25
+
 - id: redenvelope_no_custom
   img_URL: http://cdn.17app.co/203fb9b5-9d97-4b15-bcdf-2dcb2cc76b1a.png
   zip_url: https://assets-17app.akamaized.net/595b6425-a4cc-491c-bc81-2acce956fee8.zip
@@ -193,10 +194,10 @@ redenvelopes:
   name_token: redenvelope_customize_name
   point: 0 # unchangeable
   revenuePoint: 300
-  min_point: 1000
+  min_point: 3000
   max_point: 9999999
   announceable: true
-  announce_threshold: 88888
+  announce_threshold: 1000
   countdown_time: 60
   event_time: 10
   fee: 50 # workaround, it is percentage * 10
@@ -204,7 +205,7 @@ redenvelopes:
   type: 2
   is_offline: false
   region_mode: 2
-  regions: ['TW']
+  regions: ["TW", "US", "SG"]
   package_list:
     - amount: 1
       point: 100 # workaround, it is percentage * 10
@@ -220,6 +221,7 @@ redenvelopes:
       point: 15
     - amount: 34
       point: 5
+
 - id: redenvelope_no_1
   img_URL: http://cdn.17app.co/fb3bd824-1f79-4e9d-bc7d-9fcc7c3dc4f1.png
   zip_url: https://assets-17app.akamaized.net/348f589c-e13b-43e0-bf89-90ef5b17e7de.zip
