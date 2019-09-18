@@ -9,11 +9,12 @@ birthdayAfterDays: 1
 nearOutdatedDays:
   TW: 7
   JP: 60
+  US: 60
 enableQueryACL: true
 enableMutationACL: true
 enableBQ: true
-extendContractExcludeRegions: ["JP"]
-renewContractIncludeRegions: ["JP", "TW"]
+extendContractExcludeRegions: ["JP", "US"]
+renewContractIncludeRegions: ["JP", "US", "TW"]
 enableConcurrentGetStats: true
 concurrentWorkerSize: 1
 enableSlackContractNotif: false
