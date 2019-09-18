@@ -6,6 +6,31 @@ hostIDOnTV: "8f95a285-104e-4ea5-ae58-00cca785247a" # 17好聰明
 hosts:
   TRIVIA:
   TRIVIA_ON_TV:
+    "f8b2ce67-5455-479b-9d8d-51217e0d98bb": #17Q麻將Hot
+      pictures:
+        default: https://assets-17app.akamaized.net/7c2605b0-8520-411c-b85c-7f5e97c075be.jpg
+        prepare: https://assets-17app.akamaized.net/7c2605b0-8520-411c-b85c-7f5e97c075be.jpg
+        onLive: https://assets-17app.akamaized.net/7c2605b0-8520-411c-b85c-7f5e97c075be.jpg
+        # default user picture for users without picture
+        user: 857dc12d-46c9-4c63-b3c4-ee8fd1a2eb57.png
+      showBannerTime:
+        weekdays: [5] # 0 ~ 6 means Sunday ~ Saturday
+        hourFrom: 0 # GMT+8
+        hourTo: 23 # GMT+8
+      showBannerPriority: 7
+      disclaimerTitle:
+        key: "trivia_disclaimer_title"
+      disclaimerText:
+        key: "trivia_disclaimer_text"
+      leaveGameToastText:
+        key: "trivia_gamer_leave_double_confirm_text"
+      voteTopic:
+        key: "trivia_tv_vote_topic"
+      shareWording:
+        key: "trivia_game_share_wording"
+      isMedalSupported:
+        Default: true
+        CorrectMost: false
     "6e9af721-55c5-41d7-91a4-387aceec94a6": # 17Q
       pictures:
         default: https://assets-17app.akamaized.net/7c2605b0-8520-411c-b85c-7f5e97c075be.jpg
