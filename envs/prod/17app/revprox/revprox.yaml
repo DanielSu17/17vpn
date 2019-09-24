@@ -21,10 +21,7 @@ conf:
      liveStreams: "commentLiveStream,\
             isUserOnLiveStream,\
             getLatestLiveStreams,publishLiveStream,\
-            getUserLiveStreams,getLiveStreamViewers,keepLiveStream,\
-            likeLivestreamBatchUpdate,endLiveStream,\
-            keepViewLiveStream,reportLiveAction,\
-            restreamLiveStream,hasRestreamedLiveStream"
+            getUserLiveStreams,getLiveStreamViewers,keepLiveStream"
      liveStreams/admin: "pass,kill,hide,pintotop,cancelpintotop,\
             killLiveStreamAction,passLiveStream,hideLiveStream,\
             promoteLiveStream,getLiveStreamsForReview,\
@@ -89,5 +86,11 @@ conf:
      # for legacy api
      liveStreams: "getSuggestedLiveStreams,liveStreams/getSuggestedLiveStreams,\
             getLiveStreamInfo,liveStreams/getLiveStreamInfo,\
-            enterLiveStream,quitViewLiveStream,\
-            getLiveStreamHotCountryList"
+            enterLiveStream,\
+            quitViewLiveStream,\
+            likeLivestreamBatchUpdate,\
+            getLiveStreamHotCountryList,\
+            reportLiveAction,\
+            restreamLiveStream,\
+            hasRestreamedLiveStream,\
+            endLiveStream"
