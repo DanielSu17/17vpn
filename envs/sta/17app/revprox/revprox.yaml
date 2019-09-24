@@ -17,7 +17,6 @@ conf:
  - url_key: "go_url"
    white_list:
      liveStreams: "commentLiveStream,\
-            isUserOnLiveStream,\
             getLatestLiveStreams,publishLiveStream,\
             getUserLiveStreams,getLiveStreamViewers,keepLiveStream"
      liveStreams/admin: "pass,kill,hide,pintotop,cancelpintotop,\
@@ -86,6 +85,7 @@ conf:
             getLiveStreamInfo,\
             enterLiveStream,\
             quitViewLiveStream,\
+            isUserOnLiveStream,\
             likeLivestreamBatchUpdate,\
             getLiveStreamHotCountryList,\
             reportLiveAction,\
