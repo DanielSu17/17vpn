@@ -17,13 +17,8 @@ allowed_origins:
 conf:
  - url_key: "go_url"
    white_list:
-     liveStreams: "getLiveStreamHotCountryList,commentLiveStream,\
-            isUserOnLiveStream,getSuggestedLiveStreams,\
-            getLatestLiveStreams,publishLiveStream,getLiveStreamInfo,\
-            getUserLiveStreams,getLiveStreamViewers,keepLiveStream,\
-            likeLivestreamBatchUpdate,endLiveStream,enterLiveStream,\
-            quitViewLiveStream,keepViewLiveStream,reportLiveAction,\
-            restreamLiveStream,hasRestreamedLiveStream"
+     liveStreams: "getLatestLiveStreams,publishLiveStream,\
+            getLiveStreamViewers,keepLiveStream"
      liveStreams/admin: "pass,kill,hide,pintotop,cancelpintotop,\
             killLiveStreamAction,passLiveStream,hideLiveStream,\
             promoteLiveStream,getLiveStreamsForReview,\
@@ -76,3 +71,21 @@ conf:
             getPayments,uploadPhoneNumbers,uploadFacebookFriends,\
             followAllAction,updateLiveStreamInfo,\
             getPointProductList,getPostByHashTag,readNotif,updateOpenID"
+ - url_key: "go_url"
+   white_list:
+     # v1 api
+     liveStreams: "liveStreams,lives"
+     # for legacy api
+     liveStreams: "getSuggestedLiveStreams,liveStreams/getSuggestedLiveStreams,\
+            getLiveStreamInfo,liveStreams/getLiveStreamInfo,\
+            enterLiveStream,\
+            quitViewLiveStream,\
+            isUserOnLiveStream,\
+            getUserLiveStreams,\
+            likeLivestreamBatchUpdate,\
+            getLiveStreamHotCountryList,\
+            reportLiveAction,\
+            restreamLiveStream,\
+            hasRestreamedLiveStream,\
+            endLiveStream,\
+            commentLiveStream"
