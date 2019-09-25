@@ -77,9 +77,10 @@ conf:
      monster: "monsters"
  - url_key: "go_lives_url"
    white_list:
+     # for api
+     apiv1: "liveStreams,lives"
      # for legacy api
-     liveStreams: "liveStreams,lives,\
-            getSuggestedLiveStreams,liveStreams/getSuggestedLiveStreams,\
+     liveStreams: "getSuggestedLiveStreams,liveStreams/getSuggestedLiveStreams,\
             getLiveStreamInfo,liveStreams/getLiveStreamInfo,\
             enterLiveStream,\
             quitViewLiveStream,\
