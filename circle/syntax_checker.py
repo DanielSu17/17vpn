@@ -88,6 +88,5 @@ print('Checked {0} files, Failed: {1}, Contains Invisible Characters: {2}'
 if sytax_failed_count > 0:
     sys.exit(1)
 
-# FIXME: should return error after stable, dry-run first
-# if contains_invisible > 0:
-#     sys.exit(1)
+if contains_invisible > 0:
+    sys.exit(1)
