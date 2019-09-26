@@ -7,7 +7,7 @@ pornDetection:
   modelVersion: 1
   modelLink: "https://cdn.17app.co/nsfw/model.tflite"
   labelLink: "https://cdn.17app.co/nsfw/dict.txt"
-  threshold: 3
+  threshold: 3 # PROD: 5, STAG: 3, DEV: 3
   labels:
     - label: "unsafe"
       confidence: 87.87
