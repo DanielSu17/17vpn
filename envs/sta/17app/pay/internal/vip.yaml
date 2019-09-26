@@ -31,6 +31,7 @@
   # - BY_PAYPAL_US = 52; // PayPal US Account
   # - JKOPAY = 53; // JKOPay
   # - LINEPAY_TW = 54; // LinePay TW
+  # - SC_BANK_HK = 55; // 渣打銀行香港帳戶
   # - ECPAY = 56; // ECPAY
 # `duplicateUniformInvoice` // 許可開立二聯式發票的payChannel
 # `triplicateUniformInvoice` // 許可開立三聯式發票的payChannel
@@ -140,6 +141,19 @@ SG:
     - SGD
   localCurrency:
     - SGD
+  maxRange:
+    0.02
+  minRange:
+    0.02
+
+HK:
+  payChannel:
+    - 2
+    - 55
+  currency:
+    - HKD
+  localCurrency:
+    - HKD
   maxRange:
     0.02
   minRange:
