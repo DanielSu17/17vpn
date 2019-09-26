@@ -78,6 +78,7 @@ for dirpath, dirnames, filenames in os.walk("."):
                 sytax_failed_count += 1
                 print('{0} => {1}'.format(full_filename, exc))
             except Exception as e:
+                sytax_failed_count += 1
                 print("Oops... something went wrong\nException: {0}".format(e))
             finally:
                 stream.close()
