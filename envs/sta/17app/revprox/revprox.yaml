@@ -16,7 +16,7 @@ allowed_origins:
 conf:
  - url_key: "go_url"
    white_list:
-     liveStreams: "getLatestLiveStreams,publishLiveStream,\
+     liveStreams: "publishLiveStream,\
             getLiveStreamViewers,keepLiveStream"
      liveStreams/admin: "pass,kill,hide,pintotop,cancelpintotop,\
             killLiveStreamAction,passLiveStream,hideLiveStream,\
@@ -81,6 +81,7 @@ conf:
      apiv1: "liveStreams,lives"
      # for legacy api
      liveStreams: "getSuggestedLiveStreams,liveStreams/getSuggestedLiveStreams,\
+            getLatestLiveStreams,liveStreams/getLatestLiveStreams,\
             getLiveStreamInfo,liveStreams/getLiveStreamInfo,\
             enterLiveStream,\
             quitViewLiveStream,\
