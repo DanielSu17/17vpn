@@ -7,12 +7,12 @@ pornDetection:
   modelVersion: 1
   modelLink: "https://cdn.17app.co/nsfw/model.tflite"
   labelLink: "https://cdn.17app.co/nsfw/dict.txt"
-  threshold: 3 # PROD: 5, STAG: 3, DEV: 3
+  threshold: 1 # PROD: 5, STAG: 3, DEV: 3
   labels:
     - label: "unsafe"
-      confidence: 87.87
+      confidence: 59.87
     - label: "adult"
-      confidence: 87.87
+      confidence: 59.87
 
 programDefaultComments:      #全部 program 預設留言
   - commentsInfo:
