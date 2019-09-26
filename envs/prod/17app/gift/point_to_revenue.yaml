@@ -5,8 +5,16 @@ regionRates:
     - activeMonth: 2015-01
       # 1/7(PointToTWD)/31.36(USDToTWD)
       rate: 0.004555393586005831
-
   TW:
     - activeMonth: 2019-08
       # 1/7(PointToTWD)/32(USDToTWD)
       rate: 0.004464285714285714
+  JP:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/31.36(USDToTWD)*(1.10/1.08)
+      # 1.10, the new consumption tax ratio, starts to apply on October, 1.08 is legacy
+      rate: 0.004639752726487421
+  US:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30.3(USDToTWD)
+      rate: 0.00471475719
