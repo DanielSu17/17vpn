@@ -2,17 +2,19 @@ regionRates:
   # regionRates is a list of ratio rule for specific region and the others use DEFAULT
   # NONE region is for non-contract streamers and it follows TW rule
   DEFAULT:
-    - activeMonth: 2019-06
+    - activeMonth: 2015-01
+      # 1/7(PointToTWD)/31.36(USDToTWD)
       rate: 0.004555393586005831
-
   TW:
-    - activeMonth: 2019-06
-      rate: 0.0044
-    - activeMonth: 2019-07
-      rate: 0.0043
     - activeMonth: 2019-08
-      rate: 0.0045
-
+      # 1/7(PointToTWD)/32(USDToTWD)
+      rate: 0.004464285714285714
   JP:
-    - activeMonth: 2019-07
-      rate: 0.0044
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/31.36(USDToTWD)*(1.10/1.08)
+      # 1.10, the new consumption tax ratio, starts to apply on October, 1.08 is legacy
+      rate: 0.004639752726487421
+  US:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30.3(USDToTWD)
+      rate: 0.00471475719
