@@ -1,5 +1,5 @@
 - testName: entryTitleTypeA # PROD-3617
-  enableABtest: true
+  enableABtest: false
   expiredSecond: 604800
   lastCharGroup:
     "0": "a"
@@ -19,7 +19,7 @@
     "e": "b"
     "f": "b"
 - testName: entryTitleTypeB # PROD-3617
-  enableABtest: true
+  enableABtest: false
   expiredSecond: 604800
   lastCharGroup:
     "0": "b"
@@ -197,17 +197,17 @@
     "e": "b"
     "f": "b"
 - testName: newbieOnboard # 新手流程優化 (onboarding_flow_optimization)
-  enableABtest: true
+  enableABtest: false
   expiredSecond: 604800 # 7 day
   lastCharGroup:
-    "0": "b"
-    "1": "b"
-    "2": "b"
-    "3": "b"
-    "4": "b"
-    "5": "b"
-    "6": "b"
-    "7": "b"
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
     "8": "b"
     "9": "b"
     "a": "b"
@@ -216,10 +216,10 @@
     "d": "b"
     "e": "b"
     "f": "b"
-# 新手流程優化p5 (Feature Guide), client只有當a才顯示 空的也是不顯示
-- testName: newbieGuide # 新手流程優化p5 (Feature Guide) b: 移除四頁landing page
-  enableABtest: true
-  expiredSecond: 60 # 1 mins, it should disappear soon.
+# 新手流程優化p5 (Feature Guide), client只有當a才顯示 空的會是不顯示
+- testName: newbieGuide
+  enableABtest: false
+  expiredSecond: 60 # 1 mins
   lastCharGroup:
     "0": "a"
     "1": "a"
@@ -240,7 +240,7 @@
 # 新手流程優化p6 - b: 移除四頁landing page, 移除新手遮罩, 移除enterLivePrompt
 - testName: newbieDismissDialog
   enableABtest: false
-  expiredSecond: 600 # 10 mins
+  expiredSecond: 259200 # 3 days
   lastCharGroup:
     "0": "a"
     "1": "a"
@@ -284,14 +284,14 @@
 - testName: newbieSimplifyDay0UserPhase1
   enableABtest: true
   lastCharGroup:
-    "0": "b"
-    "1": "b"
-    "2": "b"
-    "3": "b"
-    "4": "b"
-    "5": "b"
-    "6": "b"
-    "7": "b"
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
     "8": "b"
     "9": "b"
     "a": "b"
