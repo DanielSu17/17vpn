@@ -10,6 +10,8 @@
 # | IAP_Buy_Point | 8 |
 # | View_Stream_X_Seconds | 9 |
 # | IAP_X_Points | 10 |
+# | Share_Twitter | 11 |
+# | View_Stream_X_Different_Days | 13 |
 
 # | category | Value |
 # | --- | --- |
@@ -28,7 +30,7 @@
 # | NON_IAP | 2 |
 
 missions:
-  - ID: cbe4b6f4-82e4-4268-b52b-cb25680b8821
+  - ID: a850d494-0e6a-4645-8b8d-dc67e46186ad
     type: 10
     lifeCycle: 1
     targetAudience: 0
@@ -39,7 +41,7 @@ missions:
       rewardType: 1
       rewardID: 2019_jp_iap_misshion_s
       amount: 10
-      expireTimeSecs: 2106000
+      expireTimeSecs: 604800
     requirePhoneBinding: false
     i18nTitle: baggage_mission_IAP_reward_jp_monthly_title
     i18nTitleParams:
@@ -55,14 +57,14 @@ missions:
         value: 10
     goalValue: 1700
     enableTimeRange:
-      - startTime: "2019-09-06 15:00:00  (GMT+0900)"
-        endTime: "2019-09-30 23:59:59 (GMT+0900)"
+      - startTime: "2019-10-02 12:00:00 (GMT+0900)"
+        endTime: "2019-10-31 23:59:59 (GMT+0900)"
     refIDs:
     platforms:
       - android
       - ios
 
-  - ID: cd61ae8a-d889-4daa-8119-9a92f1d1aad0
+  - ID: e3848747-f242-4d3b-805e-4f3673a94176
     type: 10
     lifeCycle: 1
     targetAudience: 0
@@ -73,7 +75,7 @@ missions:
       rewardType: 1
       rewardID: 2019_jp_iap_misshion_m
       amount: 100
-      expireTimeSecs: 2106000
+      expireTimeSecs: 604800
     requirePhoneBinding: false
     i18nTitle: baggage_mission_IAP_reward_jp_monthly_title
     i18nTitleParams:
@@ -89,14 +91,14 @@ missions:
         value: 100
     goalValue: 17000
     enableTimeRange:
-      - startTime: "2019-09-06 15:00:00  (GMT+0900)"
-        endTime: "2019-09-30 23:59:59 (GMT+0900)"
+      - startTime: "2019-10-02 12:00:00 (GMT+0900)"
+        endTime: "2019-10-31 23:59:59 (GMT+0900)"
     refIDs:
     platforms:
       - android
       - ios
 
-  - ID: d427ad28-c3ec-453c-a7e6-a881183bd74a
+  - ID: 09aa78f2-be80-4ce2-ba3e-64b42762b7e0
     type: 10
     lifeCycle: 1
     targetAudience: 0
@@ -107,7 +109,7 @@ missions:
       rewardType: 1
       rewardID: 2019_jp_iap_misshion_l
       amount: 200
-      expireTimeSecs: 2106000
+      expireTimeSecs: 604800
     requirePhoneBinding: false
     i18nTitle: baggage_mission_IAP_reward_jp_monthly_title
     i18nTitleParams:
@@ -123,70 +125,8 @@ missions:
         value: 200
     goalValue: 170000
     enableTimeRange:
-      - startTime: "2019-09-06 15:00:00  (GMT+0900)"
-        endTime: "2019-09-30 23:59:59 (GMT+0900)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: b753ab41-7076-4e20-a563-5dbe9ce9ef66
-    type: 5
-    lifeCycle: 1
-    targetAudience: 0
-    levelRange:
-      min: 1
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1812_jp_weeklymission3_1
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_weekly_leave_comment_reward_jp_title
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 50
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_weekly_leave_comment_reward_jp_desc
-    i18nDescriptionParams:
-    goalValue: 50
-    enableTimeRange:
-      - startTime: "2019-09-16 00:00:00 (GMT+0900)"
-        endTime: "2019-09-22 23:59:59 (GMT+0900)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: 096f0b14-4f2e-42c6-9997-d0c796287640
-    type: 5
-    lifeCycle: 1
-    targetAudience: 0
-    levelRange:
-      min: 1
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1812_jp_weeklymission3_1
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_weekly_leave_comment_reward_jp_title
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 50
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_weekly_leave_comment_reward_jp_desc
-    i18nDescriptionParams:
-    goalValue: 50
-    enableTimeRange:
-      - startTime: "2019-09-23 00:00:00 (GMT+0900)"
-        endTime: "2019-09-29 23:59:59 (GMT+0900)"
+      - startTime: "2019-10-02 12:00:00 (GMT+0900)"
+        endTime: "2019-10-31 23:59:59 (GMT+0900)"
     refIDs:
     platforms:
       - android
@@ -254,68 +194,6 @@ missions:
       - android
       - ios
 
-  - ID: a9f7535b-5a9e-4c4a-9273-4e642d7003ba
-    type: 9
-    lifeCycle: 1
-    targetAudience: 0
-    levelRange:
-      min: 1
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1812_jp_weeklymission4_1
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_weekly_watch_streams_time_in_total_reward_jp_title
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 60
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_weekly_watch_streams_time_in_total_reward_jp_desc
-    i18nDescriptionParams:
-    goalValue: 3600
-    enableTimeRange:
-      - startTime: "2019-09-16 00:00:00 (GMT+0900)"
-        endTime: "2019-09-22 23:59:59 (GMT+0900)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: f9946906-f6e1-4898-9b1d-1d2ff2b36a5c
-    type: 9
-    lifeCycle: 1
-    targetAudience: 0
-    levelRange:
-      min: 1
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1812_jp_weeklymission4_1
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_weekly_watch_streams_time_in_total_reward_jp_title
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 60
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_weekly_watch_streams_time_in_total_reward_jp_desc
-    i18nDescriptionParams:
-    goalValue: 3600
-    enableTimeRange:
-      - startTime: "2019-09-23 00:00:00 (GMT+0900)"
-        endTime: "2019-09-29 23:59:59 (GMT+0900)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
   - ID: 0e60c4a6-a5f8-45d0-a964-2b69f9853804
     type: 9
     lifeCycle: 1
@@ -378,68 +256,6 @@ missions:
       - android
       - ios
 
-  - ID: bff4481a-7a1b-4ba8-8dbe-432bf137ca13
-    type: 3
-    lifeCycle: 1
-    targetAudience: 0
-    levelRange:
-      min: 1
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1812_jp_weeklymission5_1
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_weekly_send_any_gifts_reward_jp_title
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 7
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_weekly_send_any_gifts_reward_jp_desc
-    i18nDescriptionParams:
-    goalValue: 7
-    enableTimeRange:
-      - startTime: "2019-09-16 00:00:00 (GMT+0900)"
-        endTime: "2019-09-22 23:59:59 (GMT+0900)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: c0f33268-daaa-44d8-a48d-7e3bc83224e4
-    type: 3
-    lifeCycle: 1
-    targetAudience: 0
-    levelRange:
-      min: 1
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1812_jp_weeklymission5_1
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_weekly_send_any_gifts_reward_jp_title
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 7
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_weekly_send_any_gifts_reward_jp_desc
-    i18nDescriptionParams:
-    goalValue: 7
-    enableTimeRange:
-      - startTime: "2019-09-23 00:00:00 (GMT+0900)"
-        endTime: "2019-09-29 23:59:59 (GMT+0900)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
   - ID: 5886625a-5404-40c2-8387-d66e63b2bf1c
     type: 3
     lifeCycle: 1
@@ -497,62 +313,6 @@ missions:
     enableTimeRange:
       - startTime: "2019-10-07 00:00:00 (GMT+0900)"
         endTime: "2019-10-13 23:59:59 (GMT+0900)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: 88ad5579-c19d-4fbd-933b-e3939063793e
-    type: 8
-    lifeCycle: 1
-    targetAudience: 0
-    levelRange:
-      min: 1
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1812_jp_weeklymission6_1
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_weekly_first_time_IAP_reward_jp_title
-    i18nTitleParams:
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_weekly_first_time_IAP_reward_jp_des
-    i18nDescriptionParams:
-    goalValue: 1
-    enableTimeRange:
-      - startTime: "2019-09-16 00:00:00 (GMT+0900)"
-        endTime: "2019-09-22 23:59:59 (GMT+0900)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: 412c9a3c-6b8b-4f47-9ea9-0ceeb5a6a4fe
-    type: 8
-    lifeCycle: 1
-    targetAudience: 0
-    levelRange:
-      min: 1
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1812_jp_weeklymission6_1
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_weekly_first_time_IAP_reward_jp_title
-    i18nTitleParams:
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_weekly_first_time_IAP_reward_jp_des
-    i18nDescriptionParams:
-    goalValue: 1
-    enableTimeRange:
-      - startTime: "2019-09-23 00:00:00 (GMT+0900)"
-        endTime: "2019-09-29 23:59:59 (GMT+0900)"
     refIDs:
     platforms:
       - android
@@ -676,225 +436,6 @@ missions:
       - android
       - ios
 
-  - ID: 4c86f8b8-f28a-4fed-aac4-1ad61b7a6628
-    type: 3
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 1
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1909_jp_autumn_bp_a_1000
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 10
-      - needMap: false
-        mapOption: 2
-        value: 1909_jp_autumn_100
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
-    i18nDescriptionParams:
-    goalValue: 10
-    enableTimeRange:
-      - startTime: "2019-09-20 19:00:00 (GMT+0900)"
-        endTime: "2019-09-29 23:59:59 (GMT+0900)"
-    refIDs:
-      - 1909_jp_autumn_100
-    platforms:
-      - android
-      - ios
-
-  - ID: de8eff58-eb67-4321-bf5f-72a47a7c1fe5
-    type: 3
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 1
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1909_jp_autumn_bp_b_1000
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 1
-      - needMap: false
-        mapOption: 2
-        value: 1909_jp_autumn_1000
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
-    i18nDescriptionParams:
-    goalValue: 1
-    enableTimeRange:
-      - startTime: "2019-09-20 19:00:00 (GMT+0900)"
-        endTime: "2019-09-29 23:59:59 (GMT+0900)"
-    refIDs:
-      - 1909_jp_autumn_1000
-    platforms:
-      - android
-      - ios
-
-  - ID: a0230f89-159b-4e96-9e32-90cb233f16d9
-    type: 8
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 1
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1909_jp_shinken_bp_10
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 1
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
-    i18nDescriptionParams:
-    goalValue: 1
-    enableTimeRange:
-      - startTime: "2019-09-16 19:00:00 (GMT+0900)"
-        endTime: "2019-09-29 23:59:59 (GMT+0900)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: 91d9d812-b5c0-409b-a50b-1d095ed5c7ab
-    type: 9
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 17
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1909_jp_treasure_bb_bag
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 30
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-    i18nDescriptionParams:
-    goalValue: 1800
-    enableTimeRange:
-      - startTime: "2019-09-15 19:00:00 (GMT+0900)"
-        endTime: "2019-09-24 23:59:59 (GMT+0900)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: 3a6f84fc-615f-484c-ba2b-f2b04a325039
-    type: 9
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 17
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1908_jp_2anniv_e_bp_10
-      amount: 2
-      expireTimeSecs: 86400
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 17
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-    i18nDescriptionParams:
-    goalValue: 1020
-    enableTimeRange:
-      - startTime: "2019-08-23 19:00:00 (GMT+0900)"
-        endTime: "2019-09-27 18:29:59 (GMT+0900)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: 1bc9c599-a577-4916-a84a-69ecd056a819
-    type: 8
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 1
-      max: 10
-    reward:
-      rewardType: 1
-      rewardID: surging_heart_red
-      amount: 20
-      expireTimeSecs: 86400
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
-    i18nTitleParams:
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
-    i18nDescriptionParams:
-    goalValue: 1
-    enableTimeRange:
-      - startTime: "2019-09-16 00:00:00 (GMT+0900)"
-        endTime: "2019-09-22 23:59:59 (GMT+0900)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: 47158884-8384-47ac-8405-fff4ef115fcb
-    type: 8
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 1
-      max: 10
-    reward:
-      rewardType: 1
-      rewardID: surging_heart_red
-      amount: 20
-      expireTimeSecs: 86400
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
-    i18nTitleParams:
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
-    i18nDescriptionParams:
-    goalValue: 1
-    enableTimeRange:
-      - startTime: "2019-09-23 00:00:00 (GMT+0900)"
-        endTime: "2019-09-29 23:59:59 (GMT+0900)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
   - ID: f583d0c9-45a9-44d1-8698-552898e1156c
     type: 5
     lifeCycle: 0
@@ -963,7 +504,7 @@ missions:
       - android
       - ios
 
-#進撃チャージ10月
+# 進撃チャージ10月
   - ID: 39ae8b5b-92f9-4ae1-ae75-12ecd8e974c8
     type: 8
     lifeCycle: 0
@@ -982,7 +523,7 @@ missions:
       - needMap: false
         mapOption: 0
         value: 1
-    i18nContent:
+    i18nContent: 
     i18nContentParams:
     i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
     i18nDescriptionParams:
@@ -998,7 +539,7 @@ missions:
       - android
       - ios
 
-#ジュノン視聴時間
+# ジュノン視聴時間
   - ID: 2a04d024-8d81-45d8-b699-aaa289c0c7f8
     type: 9
     lifeCycle: 0
@@ -1017,7 +558,7 @@ missions:
       - needMap: false
         mapOption: 0
         value: 1
-    i18nContent:
+    i18nContent: 
     i18nContentParams:
     i18nDescription: baggage_mission_JUNON_watching_jp_des
     i18nDescriptionParams:
@@ -1032,7 +573,6 @@ missions:
     platforms:
       - android
       - ios
-
 
 #tagInfos
 tagInfos:
