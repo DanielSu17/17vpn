@@ -11,5 +11,40 @@ award: 100
 mode: 1
 whiteList:
   - "567e0b5d-1516-4ce0-b4e8-bec4e756d5ae" # kevinmh
+
+# NOTE: 
+# for referralMissions, we will only hanlde following fields to do business logic
+# `Type` , `Reward` , `i18n related fields` , `GoalValue` in store layer
 missions:
+  - ID: 0e5a65eb-6e14-44aa-aa2b-165dee5ccbef
+    type: 12
+    reward:
+      rewardType: 1
+      rewardID: 1810_tw_live_bp_10
+      amount: 10
+      expireTimeSecs: 86400
+    i18nTitle: invitation_mission_phone_title
+    i18nTitleParams:
+    i18nDescription: invitation_mission_phone_content
+    i18nDescriptionParams:
+    goalValue: 1
+  - ID: 76e9bf99-527f-431d-bfb4-6aca4b99f825
+    type: 13
+    reward:
+      rewardType: 1
+      rewardID: 1810_tw_live_bp_10
+      amount: 20
+      expireTimeSecs: 86400
+    i18nTitle: invitation_mission_view_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 5
+      - needMap: false
+        mapOption: 0
+        value: 3
+    i18nDescription: invitation_mission_view_content
+    i18nDescriptionParams:
+    goalValue: 3
+
 
