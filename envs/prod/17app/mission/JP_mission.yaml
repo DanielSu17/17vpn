@@ -29,6 +29,40 @@
 # | IAP | 1 |
 # | NON_IAP | 2 |
 
+share:
+  - ID: 30ae4eff-f508-4fe3-8092-1cbc1f84aca4
+    type: 11
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2019_jp_share_twitter
+      amount: 1
+      expireTimeSecs: 2433600
+    i18nTitle: baggage_mission_daily_share_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 1
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_daily_share_reward_des
+    i18nDescriptionParams:
+      - needMap: false
+        mapOption: 0
+        value: 1
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2019-10-03 19:00:00 (GMT+0900)"
+        endTime: "2019-10-31 23:59:59 (GMT+0900)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
 missions:
   - ID: a850d494-0e6a-4645-8b8d-dc67e46186ad
     type: 10
