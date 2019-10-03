@@ -1,10 +1,5 @@
 version: 2
 
-notify:
-  # Notify phabricator about result
-  webhooks:
-    - url: https://media17.phacility.com/harbormaster/hook/circleci/
-
 references:
   default: &default
     environment:
@@ -24,17 +19,30 @@ jobs:
     steps:
       - checkout
       - run:
-          name: syntax check
+          name: python requirements
           command: |
             sudo pip install -r ./circle/requirements.txt
+      - run:
+          name: syntax check
+          command: |
             echo "syntax check - start"
             ./circle/syntax_checker.py
             echo "syntax check - end"
+
+            # FIXME: should send slack notification if check failed
+      - run:
+          name: duplicate user check
+          command: |
+            echo "duplicate user check - start"
+            ./circle/check_duplicate_users.py
+            echo "duplicate user check - end"
+
+            # FIXME: should send slack notification if check failed
   deploy:
     <<: *default
     steps:
       - run:
-          name: deliver configuration to GCP
+          name: deliver configuration
           command: |
             curl -sSL --fail -w "%{http_code}\n" -o /dev/null "${DEPLOY_TO_GCP_URL}&REVISION=${CIRCLE_SHA1}"
 
