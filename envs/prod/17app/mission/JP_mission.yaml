@@ -99,6 +99,69 @@ missions:
       - android
       - ios
 
+# ジュノン視聴時間
+  - ID: 2a04d024-8d81-45d8-b699-aaa289c0c7f8
+    type: 9
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 17
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 1910_jp_junon_bp_10
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    i18nTitle: baggage_mission_JUNON_watching_reward_jp_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 1
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_JUNON_watching_jp_des
+    i18nDescriptionParams:
+      - needMap: false
+        mapOption: 0
+        value: 1
+    goalValue: 1020
+    enableTimeRange:
+      - startTime: "2019-10-01 19:00:00 (GMT+0900)"
+        endTime: "2019-10-13 23:59:59 (GMT+0900)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
+#シェアミッション3名:
+  - ID: 247cbf60-458d-44a7-85a9-3a4a02ce3828
+    type: 11
+    lifeCycle: 0
+    targetAudience: 0
+    reward:
+      rewardType: 1
+      rewardID: 2019_jp_share_3streamers
+      amount: 10
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    i18nTitle: baggage_mission_daily_share_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 1
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_daily_share_reward_des
+    i18nDescriptionParams:
+    goalValue: 3
+    enableTimeRange:
+      - startTime: "2019-10-03 20:00:00 (GMT+0900)"
+        endTime: "2019-12-31 23:59:59 (GMT+0900)"
+    platforms:
+      - ios
+      - android
+
 #視聴5分:
   - ID: eb78aedf-22ec-41ec-bea2-07a59193c6e9
     type: 9
@@ -572,42 +635,6 @@ missions:
     enableTimeRange:
       - startTime: "2019-02-18 12:00:00 (GMT+0900)"
         endTime: "2019-12-31 23:59:59 (GMT+0900)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-
-# ジュノン視聴時間
-  - ID: 2a04d024-8d81-45d8-b699-aaa289c0c7f8
-    type: 9
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 17
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1910_jp_junon_bp_10
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_JUNON_watching_reward_jp_title
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 1
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_JUNON_watching_jp_des
-    i18nDescriptionParams:
-      - needMap: false
-        mapOption: 0
-        value: 1
-    goalValue: 1020
-    enableTimeRange:
-      - startTime: "2019-10-01 19:00:00 (GMT+0900)"
-        endTime: "2019-10-13 23:59:59 (GMT+0900)"
     refIDs:
     platforms:
       - android
