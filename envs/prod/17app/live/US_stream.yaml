@@ -101,6 +101,12 @@ defaultComments:
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
 hotListOrder: ["US", "OTHERS", "SG", "TW", "JP", "HK"]
+hotCellOrder:
+  excludedOthers: ["TW", "HK", "SG", "JP", "MY"]
+  regionGroups:
+    - regions: ["US"]
+    - regions: ["OTHERS"]
+    - regions: ["SG", "TW", "JP", "HK", "MY"]
 birthdayComment:
   contentColor: "#28232D"
   backgroundColor: "#FFFFFF"
