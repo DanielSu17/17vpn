@@ -1,3 +1,55 @@
 # JP label config
+
+labelInfos:
+  - id: "jp_freetalk" # タレント
+    labelID: 20
+    label: {key: streamer_jp_freetalk}
+    order: 8
+    iconURL: "h"
+  - id: "jp_music" # 歌手
+    labelID: 13
+    label: {key: streamer_jp_music}
+    order: 7
+    iconURL: "h"
+  - id: "jp_game" # テレビゲーム
+    labelID: 26
+    label: {key: streamer_jp_game}
+    order: 6
+    iconURL: "h"
+  - id: "jp_vliver" # V-Liver1
+    labelID: 222
+    label: {key: streamer_jp_vliver}
+    order: 5
+    iconURL: "h"
+  - id: "jp_performer" # パフォーマー
+    labelID: 19
+    label: {key: streamer_jp_performer}
+    order: 4
+    iconURL: "h"
+  - id: "jp_hobby" # 声優
+    labelID: 17
+    label: {key: streamer_jp_hobby}
+    order: 3
+    iconURL: "h"
+  - id: "jp_fashion" # ファッション
+    labelID: 30
+    label: {key: streamer_jp_fashion}
+    order: 2
+    iconURL: "h"
+  - id: "jp_others" # お笑い
+    labelID: 18
+    label: {key: streamer_jp_others}
+    order: 1
+    iconURL: "h"
+
 typeCheckIOSVersion: 3.57.0
 typeCheckAndroidVersion: 2.3.88
+
+labelWhiteList:
+  jp_others:
+    - "8afee182-1b9d-4673-b4c9-bd924f3d092e"    # 0122w8
+  jp_game:
+    - "bc3f7c87-63bb-4b2e-881e-b53c6924c8a2"    # 0122w14
+    - "3715ddf0-e151-4892-92f1-6897829e9bfa"    # 0122w15
+  jp_music:
+    - "4256a3e3-f2da-456b-8363-831d699d4e34" # angusqa1
