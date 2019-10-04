@@ -145,14 +145,14 @@ missions:
       amount: 10
       expireTimeSecs: 86400
     requirePhoneBinding: false
-    i18nTitle: baggage_mission_daily_share_reward_title
+    i18nTitle: baggage_mission_daily_share_reward_3streamers_title
     i18nTitleParams:
       - needMap: false
         mapOption: 0
         value: 1
     i18nContent: 
     i18nContentParams:
-    i18nDescription: baggage_mission_opt_daily_share_reward_des
+    i18nDescription: baggage_mission_daily_share_reward_3streamers_des
     i18nDescriptionParams:
     goalValue: 3
     enableTimeRange:
@@ -161,6 +161,40 @@ missions:
     platforms:
       - ios
       - android
+
+  - ID: f583d0c9-45a9-44d1-8698-552898e1156c
+    type: 5
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 0
+      max: 0
+    reward:
+      rewardType: 1
+      rewardID: 1811_jp_dailymission1_1
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    i18nTitle: baggage_mission_leave_comment_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 3
+    i18nContent: baggage_mission_leave_comment_reward_desc
+    i18nContentParams:
+      - needMap: true
+        mapOption: 1
+        value: gift_1811_jp_dailymission1_1
+    i18nDescription: baggage_mission_opt_leave_comment_reward_desc
+    i18nDescriptionParams:
+    goalValue: 3
+    enableTimeRange:
+      - startTime: "2019-02-18 12:00:00 (GMT+0900)"
+        endTime: "2019-12-31 23:59:59 (GMT+0900)"
+    refIDs:
+    platforms:
+      - android
+      - ios
 
 #視聴5分:
   - ID: eb78aedf-22ec-41ec-bea2-07a59193c6e9
@@ -606,39 +640,6 @@ missions:
       - android
       - ios
 
-  - ID: f583d0c9-45a9-44d1-8698-552898e1156c
-    type: 5
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 0
-      max: 0
-    reward:
-      rewardType: 1
-      rewardID: 1811_jp_dailymission1_1
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_leave_comment_reward_title
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 3
-    i18nContent: baggage_mission_leave_comment_reward_desc
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: gift_1811_jp_dailymission1_1
-    i18nDescription: baggage_mission_opt_leave_comment_reward_desc
-    i18nDescriptionParams:
-    goalValue: 3
-    enableTimeRange:
-      - startTime: "2019-02-18 12:00:00 (GMT+0900)"
-        endTime: "2019-12-31 23:59:59 (GMT+0900)"
-    refIDs:
-    platforms:
-      - android
-      - ios
 
 #tagInfos
 tagInfos:
