@@ -1,4 +1,7 @@
-version: 2
+version: 2.1
+
+orbs:
+  slack: circleci/slack@3.3.0
 
 references:
   default: &default
@@ -29,7 +32,6 @@ jobs:
             ./circle/syntax_checker.py
             echo "syntax check - end"
 
-            # FIXME: should send slack notification if check failed
       - run:
           name: duplicate user check
           command: |
@@ -37,7 +39,14 @@ jobs:
             ./circle/check_duplicate_users.py
             echo "duplicate user check - end"
 
-            # FIXME: should send slack notification if check failed
+      - slack/status:
+          mentions: "S4Y7W93V1" # S4Y7W93V1 is the slack id for `@sre`
+          include_project_field: false
+          include_job_number_field: false
+          failure_message: "[CircleCI] 17media/configs - Syntax Check Failed - <https://github.com/17media/configs/commit/${CIRCLE_SHA1}|${CIRCLE_SHA1}>"
+          fail_only: true
+          webhook: $SLACK_CONFIG_WEBHOOK
+          only_for_branches: "master"
   deploy:
     <<: *default
     steps:
