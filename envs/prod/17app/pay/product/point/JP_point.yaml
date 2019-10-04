@@ -14,8 +14,8 @@ eventBasedIAP:
 
 productBasedIAP:
 
- - startTime: "2019-09-01T00:00:00+09:00"
-   endTime: "2019-09-30T23:59:59+09:00"
+ - startTime: "2019-10-01T00:00:00+09:00"
+   endTime: "2019-12-31T23:59:59+09:00"
    showCountdownUnderSticker: false
    showCountdownInPopUp: false
    stickerURL: "https://assets-17app.akamaized.net/30feb803-3274-42e2-8e41-187274f2314b.png"
@@ -70,8 +70,8 @@ productBasedIAP:
    displayRewardInfo: true
    abtestName:
 
- - startTime: "2019-09-27T00:00:00+09:00"
-   endTime: "2019-09-29T23:59:59+09:00"
+ - startTime: "2019-10-05T00:00:00+09:00"
+   endTime: "2019-10-06T23:59:59+09:00"
    showCountdownUnderSticker: true
    showCountdownInPopUp: true
    stickerURL: "https://assets-17app.akamaized.net/30feb803-3274-42e2-8e41-187274f2314b.png"
@@ -97,9 +97,6 @@ productBasedIAP:
      priceColor: "#28232D"
      rewardTextColor: "#F69355"
    pointProducts:
-     - productID: "media17_points_14000"
-       bonusPoint: 500
-       shouldHighlight:  true
      - productID: "media17_points_100"
        bonusPoint: 0
        shouldHighlight:  true
@@ -109,9 +106,6 @@ productBasedIAP:
      - productID: "media17_points_500"
        bonusPoint: 0
        shouldHighlight:  false
-       reward:
-         type: 1
-         refCount: 3
      - productID: "media17_points_1100"
        bonusPoint: 0
        shouldHighlight:  false
@@ -121,7 +115,10 @@ productBasedIAP:
      - productID: "media17_points_6500"
        bonusPoint: 0
        shouldHighlight:  false
-   firstPurchaseType: 2
+     - productID: "media17_points_14000"
+       bonusPoint: 0
+       shouldHighlight:  false
+   firstPurchaseType: 0
    taInfo:
      registerRange:
        dayStart: 0 # 0 means no limit
