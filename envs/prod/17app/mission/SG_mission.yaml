@@ -10,6 +10,8 @@
 # | IAP_Buy_Point | 8 |
 # | View_Stream_X_Seconds | 9 |
 # | IAP_X_Points | 10 |
+# | Share_Twitter | 11 |
+# | View_Stream_X_Different_Days | 13 |
 
 # | category | Value |
 # | --- | --- |
@@ -28,75 +30,82 @@
 # | NON_IAP | 2 |
 
 missions:
-  - ID: e90ad7f3-ada7-4a11-a915-e4722a0b95f6
-    type: 8
+  - ID: 94ee39eb-b4c7-4aa4-b0b2-320bfef45f62
+    type: 3
     lifeCycle: 0
     targetAudience: 0
     levelRange:
-      min: 21
+      min: 17
       max: 999
     reward:
       rewardType: 1
-      rewardID: 1908_tw_summer_bp_100
+      rewardID: 1910_sg_halloween_bp_10
       amount: 1
-      expireTimeSecs: 259200
+      expireTimeSecs: 86400
     requirePhoneBinding: false
-    i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
+    i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
     i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 3
+      - needMap: false
+        mapOption: 2
+        value: 1910_sg_halloween_a_bag
     i18nContent: 
     i18nContentParams:
-    i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
+    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
     i18nDescriptionParams:
-    goalValue: 1
+    goalValue: 3
     enableTimeRange:
-      - startTime: "2019-08-22 18:00:00 (GMT+0800)"
-        endTime: "2019-09-21 20:59:59 (GMT+0800)"
+      - startTime: "2019-10-07 18:00:00 (GMT+0800)"
+        endTime: "2019-10-18 22:59:59 (GMT+0800)"
     refIDs:
+      - 1910_sg_halloween_a_bag
     platforms:
       - android
       - ios
 
-  - ID: 060caf77-0284-4e31-8087-014abf25b9ad
+  - ID: 4a4de325-d71a-465f-b4a9-029a25d175f6
     type: 9
     lifeCycle: 0
     targetAudience: 0
     levelRange:
-      min: 21
+      min: 17
       max: 999
     reward:
       rewardType: 1
-      rewardID: 1908_tw_newstar_bp_10
+      rewardID: 1910_sg_halloween_bp_10
       amount: 1
       expireTimeSecs: 86400
     requirePhoneBinding: false
-    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title_1908_tw_newstar
+    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
     i18nTitleParams:
       - needMap: false
         mapOption: 0
-        value: 20
+        value: 10
     i18nContent: 
     i18nContentParams:
-    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc_1908_tw_newstar
+    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
     i18nDescriptionParams:
-    goalValue: 1200
+    goalValue: 600
     enableTimeRange:
-      - startTime: "2019-08-30 18:00:00 (GMT+0800)"
-        endTime: "2019-09-07 23:59:59 (GMT+0800)"
+      - startTime: "2019-10-18 23:00:00 (GMT+0800)"
+        endTime: "2019-10-22 22:59:59 (GMT+0800)"
     refIDs:
     platforms:
       - android
       - ios
 
-  - ID: e4d0141f-fab4-47a9-a7dc-2a01144304a1
+  - ID: 43fb8d47-ef24-49b1-9d42-591530396d11
     type: 5
     lifeCycle: 0
     targetAudience: 0
     levelRange:
-      min: 21
+      min: 17
       max: 999
     reward:
       rewardType: 1
-      rewardID: 1908_tw_capybara_bp_50
+      rewardID: 1910_sg_halloween_bp_10
       amount: 1
       expireTimeSecs: 86400
     requirePhoneBinding: false
@@ -111,143 +120,44 @@ missions:
     i18nDescriptionParams:
     goalValue: 10
     enableTimeRange:
-      - startTime: "2019-08-14 18:00:00 (GMT+0800)"
-        endTime: "2019-08-23 23:59:59 (GMT+0800)"
+      - startTime: "2019-10-22 23:00:00 (GMT+0800)"
+        endTime: "2019-10-26 22:59:59 (GMT+0800)"
     refIDs:
     platforms:
       - android
       - ios
 
-  - ID: 1069c74a-ad9d-4c8a-8d47-6f388f81b2a4
-    type: 9
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 31
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1906_tw_gfbaby_bp_a
-      amount: 1
-      expireTimeSecs: 259200
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 20
-    i18nContent: baggage_mission_watch_streams_time_in_total_reward_desc
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: gift_1906_tw_gfbaby_bp_a
-    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-    i18nDescriptionParams:
-    goalValue: 1200
-    enableTimeRange:
-      - startTime: "2019-06-16 18:00:00 (GMT+0800)"
-        endTime: "2019-09-07 23:59:59 (GMT+0800)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: 44bba2fd-b010-4625-aca6-152a620a0406
+  - ID: 40212bb3-c316-43f6-92ed-53692f8d89d6
     type: 3
     lifeCycle: 0
     targetAudience: 0
     levelRange:
-      min: 31
+      min: 17
       max: 999
     reward:
       rewardType: 1
-      rewardID: 1906_tw_gfbaby_bp_b
+      rewardID: 1910_sg_halloween_bp_10
       amount: 1
-      expireTimeSecs: 259200
+      expireTimeSecs: 86400
     requirePhoneBinding: false
     i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
     i18nTitleParams:
       - needMap: false
         mapOption: 0
-        value: 3
-      - needMap: true
-        mapOption: 1
-        value: gift_GF2019_s
-    i18nContent: baggage_mission_send_specific_gifts_reward_desc
-    i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: gift_1906_tw_gfbaby_bp_b
-    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
-    i18nDescriptionParams:
-    goalValue: 3
-    enableTimeRange:
-      - startTime: "2019-06-16 18:00:00 (GMT+0800)"
-        endTime: "2019-09-07 23:59:59 (GMT+0800)"
-    refIDs:
-      - gf2019_a_100
-      - gf2019_b_100
-      - gf2019_c_100
-      - gf2019_d_100
-      - gf2019_e_100
-      - gf2019_f_100
-      - gf2019_g_100
-      - gf2019_h_100
-      - gf2019_i_100
-      - gf2019_j_100
-      - gf2019_k_100
-      - gf2019_l_100
-      - gf2019_m_100
-    platforms:
-      - android
-      - ios
-
-  - ID: abf502ad-3a0a-4464-8b58-5c311838aaa4
-    type: 3
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 31
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1906_tw_gfbaby_bp_b
-      amount: 1
-      expireTimeSecs: 259200
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
-    i18nTitleParams:
+        value: 5
       - needMap: false
-        mapOption: 0
-        value: 1
-      - needMap: true
-        mapOption: 1
-        value: gift_GF2019_l
-    i18nContent: baggage_mission_send_specific_gifts_reward_desc
+        mapOption: 2
+        value: 1910_sg_halloween_a_bag
+    i18nContent: 
     i18nContentParams:
-      - needMap: true
-        mapOption: 1
-        value: gift_1906_tw_gfbaby_bp_b
     i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
     i18nDescriptionParams:
-    goalValue: 1
+    goalValue: 5
     enableTimeRange:
-      - startTime: "2019-06-16 18:00:00 (GMT+0800)"
-        endTime: "2019-09-07 23:59:59 (GMT+0800)"
+      - startTime: "2019-10-26 23:00:00 (GMT+0800)"
+        endTime: "2019-10-31 19:59:59 (GMT+0800)"
     refIDs:
-      - gf2019_a_10000
-      - gf2019_b_10000
-      - gf2019_c_10000
-      - gf2019_d_10000
-      - gf2019_e_10000
-      - gf2019_f_10000
-      - gf2019_g_10000
-      - gf2019_h_10000
-      - gf2019_i_10000
-      - gf2019_j_10000
-      - gf2019_k_10000
-      - gf2019_l_10000
-      - gf2019_m_10000
+      - 1910_sg_halloween_a_bag
     platforms:
       - android
       - ios
