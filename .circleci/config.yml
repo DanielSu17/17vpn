@@ -33,11 +33,11 @@ jobs:
             echo "syntax check - end"
 
       - run:
-          name: duplicate user check
+          name: providers check
           command: |
-            echo "duplicate user check - start"
-            ./circle/check_duplicate_users.py
-            echo "duplicate user check - end"
+            echo "providers check - start"
+            ./circle/check_providers.py
+            echo "providers check - end"
 
       - slack/status:
           mentions: "S4Y7W93V1" # S4Y7W93V1 is the slack id for `@sre`

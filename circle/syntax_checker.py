@@ -8,7 +8,7 @@ import yaml
 
 from ruamel.yaml import YAML
 
-print("Python Runtime Version: {0}".format(platform.python_version()))
+print("Python Runtime Version: {0}\n".format(platform.python_version()))
 
 invisible_chars = [
     u'\u2000', # En Quad
@@ -56,15 +56,15 @@ for dirpath, dirnames, filenames in os.walk("."):
                     for char in invisible_chars:
                         if char in check_line:
                             contains_invisible += 1
-                            print('{0}: invisible character found at line {1}\n=> {2}'
-                                    .format(full_filename, line_number, line))
+                            print('{0}: invisible character found at line {1}\n=> {2}'.format(
+                                full_filename, line_number, line))
 
                 # reset position, or yaml/json load will fail
                 stream.seek(0, 0)
 
                 if full_filename.endswith(('.yaml', '.yml')):
                     # check yaml format
-                    yamll=YAML(typ='safe')
+                    yamll = YAML(typ='safe')
                     yamll.load(stream)
 
                 if full_filename.endswith('.json'):
@@ -83,8 +83,8 @@ for dirpath, dirnames, filenames in os.walk("."):
             finally:
                 stream.close()
 
-print('Checked {0} files, Failed: {1}, Contains Invisible Characters: {2}'
-    .format(check_file_count, sytax_failed_count, contains_invisible))
+print('Checked {0} files, Failed: {1}, Contains Invisible Characters: {2}'.format(
+    check_file_count, sytax_failed_count, contains_invisible))
 
 if sytax_failed_count > 0:
     sys.exit(1)
