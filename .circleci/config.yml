@@ -43,7 +43,7 @@ jobs:
           name: remote check
           command: |
             echo "remote check - start"
-            ./.githooks/pre-commit
+            ./circle/remote_check.py
             echo "remote check - end"
 
       - slack/status:
