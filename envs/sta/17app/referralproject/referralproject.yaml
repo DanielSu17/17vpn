@@ -1,8 +1,3 @@
-# mode : defines what group is valid for this project
-#   0 no one
-#   1 whitelist
-#   2 all contracted streamers
-
 startTime: "2019-08-17 12:00:00 (GMT+0800)"
 endTime: "2020-09-17 12:00:00 (GMT+0800)"
 
@@ -11,7 +6,7 @@ endTime: "2020-09-17 12:00:00 (GMT+0800)"
 # 1. 註冊當天在『我的任務』頁面輸入邀請碼【$2】
 # 2. 在任務期限$3天內完成電話驗證、看播$4天
 # 是不是很容易呢～喜歡我的朋友趕快到17直播支持我吧！
-# 下載17直播：https://17apps.onelink.me/i7CY/f25f848b
+# 下載17直播：
 referralMsg:
   key: invite_code_text
   params:
@@ -22,6 +17,10 @@ referralMsg:
 referralURL: https://17apps.onelink.me/i7CY/f25f848b
 award: 100
 currency: "NTD"
+# mode : defines what group is valid for this project
+#   0 no one
+#   1 whitelist
+#   2 all contracted streamers
 mode: 1
 
 whiteList:
@@ -32,12 +31,33 @@ whiteList:
 
 ruleTitle:
   key: invite_rule_title
+# 【活動辦法】
+
+# 活動時間：$1
+
+# 活動期間內每邀請一位首次下載的新朋友並完成任務，您就可獲得 NTD $2獎金！完成任務的新朋友還可獲得免費禮物！
+
+# 簡單三步驟獲得邀請獎勵
+# 分享邀請碼給親朋好友
+# 提醒親朋好友完成任務
+# 新朋友完成任務，您將獲得您的獎金！
+
+# 新朋友的任務內容
+# 完成電話驗證
+# 註冊完成$3天內看播$4次
+
+
+# 【注意事項】
+# 限台灣區簽約主播參與且獎金依照活動款流程發放。
+# 實際發放獎金以17 Media官方計算數值為主。
+# 獲得之獎金依各地區「所得稅法」之規定辦理，將計入得獎者年度個人所得，並依法申報及自行負擔稅金。
+# 首次下載的新朋友指的是17的新用戶：使用新帳號、新電話及新裝置；實際新用戶認定以17 Media官方計算數值為主。
+# 本活動由17 Media 主辦且保有修改與變更活動之權利。
 rules:
   - key: invite_rule_content
     params:
       # event duration
       - value: "2019-09-17 12:00:00 ~ 2020-09-17 12:00:00"
-      # reward value
       - value: 100
       - value: 5
       - value: 3
@@ -45,7 +65,11 @@ rules:
 completeToastTitleI18nKey: invitation_mission_congra_title
 completeToastDescI18nKey: invitation_mission_congra_content
 missionTTLHrs: 120
-# NOTE: 
+
+# follow referrer automatically when binding referral code
+followWhenBinding: true
+
+# NOTE:
 # for referralMissions, we will only hanlde following fields to do business logic
 # `Type` , `Reward` , `i18n related fields` , `GoalValue` in store layer
 missions:
@@ -79,5 +103,3 @@ missions:
     i18nDescription: invitation_mission_view_content
     i18nDescriptionParams:
     goalValue: 1
-
-
