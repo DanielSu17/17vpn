@@ -39,6 +39,13 @@ jobs:
             ./circle/check_providers.py
             echo "providers check - end"
 
+      - run:
+          name: remote check
+          command: |
+            echo "remote check - start"
+            ./.githooks/pre-commit
+            echo "remote check - end"
+
       - slack/status:
           mentions: "S4Y7W93V1" # S4Y7W93V1 is the slack id for `@sre`
           include_project_field: false
