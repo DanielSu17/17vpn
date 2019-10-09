@@ -30,6 +30,76 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: 9dc38138-9330-4586-adf7-39c97312d206
+    type: 3
+    lifeCycle: 1
+    targetAudience: 0
+    levelRange:
+      min: 10
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 1910_tw_sweetheart_bp_l
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: true
+    i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 2
+      - needMap: false
+        mapOption: 2
+        value: 1910_tw_sweetheart_bp_s
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
+    i18nDescriptionParams:
+    goalValue: 2
+    enableTimeRange:
+      - startTime: "2019-10-08 18:00:00 (GMT+0800)"
+        endTime: "2019-10-13 23:59:59 (GMT+0800)"
+    refIDs:
+      - 1910_tw_sweetheart_bp_s
+    platforms:
+      - android
+      - ios
+
+  - ID: 1112ab8d-ebe5-497d-800f-081771d1742f
+    type: 3
+    lifeCycle: 1
+    targetAudience: 0
+    levelRange:
+      min: 10
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 1910_tw_sweetheart_bp_l
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: true
+    i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 4
+      - needMap: false
+        mapOption: 2
+        value: 1910_tw_sweetheart_bp_s
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
+    i18nDescriptionParams:
+    goalValue: 4
+    enableTimeRange:
+      - startTime: "2019-10-08 18:00:00 (GMT+0800)"
+        endTime: "2019-10-13 23:59:59 (GMT+0800)"
+    refIDs:
+      - 1910_tw_sweetheart_bp_s
+    platforms:
+      - android
+      - ios
+
   - ID: 205d2419-8b26-4cd7-8239-772a77b2cb0a
     type: 10
     lifeCycle: 1
@@ -118,6 +188,37 @@ missions:
     enableTimeRange:
       - startTime: "2019-10-01 00:00:00 (GMT+0800)"
         endTime: "2019-10-31 23:59:59 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
+  - ID: f49ff5fd-df70-4189-8d25-de93b75fc39d
+    type: 9
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 10
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 1910_tw_sweetheart_bp_s
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: true
+    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 30
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc_phone
+    i18nDescriptionParams:
+    goalValue: 1800
+    enableTimeRange:
+      - startTime: "2019-10-08 18:00:00 (GMT+0800)"
+        endTime: "2019-10-13 23:59:59 (GMT+0800)"
     refIDs:
     platforms:
       - android
