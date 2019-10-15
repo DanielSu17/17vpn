@@ -32,10 +32,10 @@ monsters:
   countdownToken: {key: monster_battle_summon_countdown_nian,fontAttribute: {textColor: "#FFFFFF"}}
   failureToken: {key: monster_battle_summon_failure_nian,fontAttribute: {textColor: "#FFFFFF"}}
   successToken: {key: monster_battle_summon_success_nian,fontAttribute: {textColor: "#FFFFFF"}}
-- id: monster_monster_princess2  # 怪獸id
+- id: monster_monster_princess3  # 怪獸id
   hit_consume: 10 # 每次打擊耗血
   duration: 60s # 怪獸出現時間
-  animation: "monster_princess2" # 怪獸動畫prefix
+  animation: "monster_princess3" # 怪獸動畫prefix
   type: 1 # 0: 一般怪獸, 1: 招喚怪獸
   share_ratio: 50 # percentage, 主播分紅百分比： bonus * (share_ratio/100)
   profit_ratio: 35 # percentage, 手續費百分比：bonus * (profit/100)
@@ -392,6 +392,35 @@ monsters:
 
 
 animationLoader: # animationID 必須是 animationPrefix_ + attack/enter/failure/idle/success
+- animationID: monster_princess3_attack
+  url: https://cdn.17app.co/f0ead6ed-c741-47df-ac04-c5f81a4bb724.zip
+  MD5: a7f77dc9a73c25afe01c60a730a76e6c
+  webpUrl: https://cdn.17app.co/1ca4d134-c308-4992-a7d5-1520c5db9fd2-q90-s1.webp
+  webpMD5: e2de129b487f52861df741366f5761e4
+ 
+- animationID: monster_princess3_enter
+  url: https://cdn.17app.co/61cb4095-0f02-4f8c-8c38-f9342b837f3d.zip
+  MD5: 745bbda7a49d922f1de3cce92fb8dbf1
+  webpUrl: https://cdn.17app.co/d36392de-2973-4d59-87d7-c2c009f17f2b-q90-s1.webp
+  webpMD5: 2ee529858473667e74cd5f5dac25f595
+ 
+- animationID: monster_princess3_failure
+  url: https://cdn.17app.co/05439c80-3578-44b5-883e-37021533b6f7.zip
+  MD5: 911844b232c89bfcc80fb7dddc35c686
+  webpUrl: https://cdn.17app.co/6575c4ec-3d70-40f8-adf1-1f34d4ca12da-q90-s1.webp
+  webpMD5: 212ac298d1faf7e7b0f05cae1b115351
+ 
+- animationID: monster_princess3_idle
+  url: https://cdn.17app.co/8604d1d0-09fe-4957-92ee-63230c40a6b4.zip
+  MD5: 0a5f1c0dc8ac55a3d04d2fe13e68fbc0
+  webpUrl: https://cdn.17app.co/6b78768e-e93b-411a-a3ff-1b250f54e888-q90-s1.webp
+  webpMD5: 686b571b4ed1cf1a8940547f42f951b1
+ 
+- animationID: monster_princess3_success
+  url: https://cdn.17app.co/7ad93bc2-e343-457c-8b29-c88c4eff211f.zip
+  MD5: efbead5017eccbad41c85eb7da632a9f
+  webpUrl: https://cdn.17app.co/01ad4226-5301-4aed-927b-5bf51d6197ac-q90-s1.webp
+  webpMD5: 37001307354aede9647d6a34c005ccfc
 - animationID: monster_princess2_attack
   url: https://cdn.17app.co/4fdc1d50-9b9a-46cf-b185-08caf788e7ae.zip
   MD5: 26c88d0a600dcdc3efe404c8b9f2f15a
