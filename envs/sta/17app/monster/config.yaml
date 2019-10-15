@@ -4,36 +4,11 @@ ccu: 0
 streamDuration: 0h00m00s
 animations: ["yeti"]
 monsters:
-- id: monster_monster_princess1
-  hit_consume: 10
-  duration: 60s
-  stream_alive_threshold: 1m00s
-  animation: monster_princess1
-  available_dates:
-  - start_date: "2019-06-11T9:00:00+08:00"
-    end_date: "2020-06-01T00:00:00+08:00"
-  appear_durations:
-  - start_time: 00h00m00s
-    end_time: 24h00m00s
-  type: 0
-  share_ratio: 50 # percentage
-  profit_ratio: 35 # percentage
-  bonus: 336
-  weight: 1
-  infoPageiconURL: https://assets-17app.akamaized.net/d1d67cab-3f7b-439f-86d8-aed1cf327fdb.png
-  winnerPageiconURL: https://assets-17app.akamaized.net/9b0cf5bc-8289-4af0-b7d4-41869506db6a.png
-  hintToken: {key: monster_battle_hint,fontAttribute: {textColor: "#FFFFFF"}}
-  rule1Token: {key: monster_battle_rule1,fontAttribute: {textColor: "#FFFFFF"}}
-  rule2Token: {key: monster_battle_rule2,fontAttribute: {textColor: "#FFFFFF"}}
-  rule3Token: {key: monster_battle_rule3,fontAttribute: {textColor: "#FFFFFF"}} 
-  rule4Token: {key: monster_battle_rule4,fontAttribute: {textColor: "#FFFFFF"}}
-  countdownToken: {key: monster_battle_countdown,fontAttribute: {textColor: "#FFFFFF"}}
-  failureToken: {key: monster_battle_failure,fontAttribute: {textColor: "#FFFFFF"}}
-  successToken: {key: monster_battle_success,fontAttribute: {textColor: "#FFFFFF"}}
-- id: monster_3dshark  # 怪獸id
+
+- id: monster_monster_princess1  # 怪獸id
   hit_consume: 10 # 每次打擊耗血
   duration: 60s # 怪獸出現時間
-  animation: "3dshark" # 怪獸動畫prefix
+  animation: "monster_princess1" # 怪獸動畫prefix
   type: 1 # 0: 一般怪獸, 1: 招喚怪獸
   share_ratio: 50 # percentage, 主播分紅百分比： bonus * (share_ratio/100)
   profit_ratio: 35 # percentage, 手續費百分比：bonus * (profit/100)
