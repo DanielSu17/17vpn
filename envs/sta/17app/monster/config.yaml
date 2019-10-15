@@ -1,10 +1,37 @@
 max: 3	# 0 means disable feature
-check_interval: 5m00s
+check_interval: 1m00s
 ccu: 0
 streamDuration: 0h00m00s
 animations: ["yeti"]
 monsters:
 
+
+- id: monster_monster_princess1
+  hit_consume: 10
+  duration: 60s
+  stream_alive_threshold: 1m00s
+  animation: monster_princess1
+  available_dates:
+  - start_date: "2019-06-11T9:00:00+08:00"
+    end_date: "2020-06-01T00:00:00+08:00"
+  appear_durations:
+  - start_time: 00h00m00s
+    end_time: 24h00m00s
+  type: 0
+  share_ratio: 50 # percentage
+  profit_ratio: 35 # percentage
+  bonus: 336
+  weight: 1
+  infoPageiconURL: https://assets-17app.akamaized.net/d976d5f7-d0f4-4637-a808-93a7fdbaa03c.png
+  winnerPageiconURL: https://assets-17app.akamaized.net/80740d0d-ffb7-40ae-94d9-2eaa4e2dda9d.png
+  hintToken: {key: monster_battle_summon_hint_nian,fontAttribute: {textColor: "#FFFFFF"}}
+  rule1Token: {key: monster_battle_summon_rule1_nian,fontAttribute: {textColor: "#FFFFFF"}}
+  rule2Token: {key: monster_battle_summon_rule2_nian,fontAttribute: {textColor: "#FFFFFF"}}
+  rule3Token: {key: monster_battle_summon_rule3_nian,fontAttribute: {textColor: "#FFFFFF"}}
+  rule4Token: {key: monster_battle_summon_rule4_nian,fontAttribute: {textColor: "#FFFFFF"}}
+  countdownToken: {key: monster_battle_summon_countdown_nian,fontAttribute: {textColor: "#FFFFFF"}}
+  failureToken: {key: monster_battle_summon_failure_nian,fontAttribute: {textColor: "#FFFFFF"}}
+  successToken: {key: monster_battle_summon_success_nian,fontAttribute: {textColor: "#FFFFFF"}}
 - id: monster_monster_princess1  # 怪獸id
   hit_consume: 10 # 每次打擊耗血
   duration: 60s # 怪獸出現時間
