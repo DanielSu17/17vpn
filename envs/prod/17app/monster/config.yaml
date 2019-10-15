@@ -8,6 +8,33 @@ alertMembers: ["angus"]
 alertChannels: ["testformonsteralert"]
 animations: ["yeti"]
 monsters:
+- id: monster_monster_princess1
+  hit_consume: 10
+  duration: 60s
+  stream_alive_threshold: 1m00s
+  animation: "monster_princess1"
+  available_dates:
+  - start_date: "2019-10-16T00:00:00+08:00"
+    end_date: "2019-10-25T00:00:00+08:00"
+  appear_durations:
+  - start_time: 00h00m00s
+    end_time: 24h00m00s
+  type: 0
+  share_ratio: 50 # percentage
+  profit_ratio: 35 # percentage
+  bonus: 336
+  weight: 1
+  infoPageiconURL: https://cdn.17app.co/97b013b0-5b9b-4436-a273-dfd263f95b73.png
+  winnerPageiconURL: https://cdn.17app.co/b4372c8f-3886-41ba-8a46-46eab30d19e5.png
+  hintToken: {key: monster_battle_hint_princess,fontAttribute: {textColor: "#FFFFFF"}}
+  rule1Token: {key: monster_battle_rule1_princess,fontAttribute: {textColor: "#FFFFFF"}}
+  rule2Token: {key: monster_battle_rule2_princess,fontAttribute: {textColor: "#FFFFFF"}}
+  rule3Token: {key: monster_battle_rule3_princess,fontAttribute: {textColor: "#FFFFFF"}}
+  rule4Token: {key: monster_battle_rule4_princess,fontAttribute: {textColor: "#FFFFFF"}}
+  countdownToken: {key: monster_battle_countdown_princess,fontAttribute: {textColor: "#FFFFFF"}}
+  failureToken: {key: monster_battle_failure_princess,fontAttribute: {textColor: "#FFFFFF"}}
+  successToken: {key: monster_battle_success_princess,fontAttribute: {textColor: "#FFFFFF"}}
+
 - id: monster_3dshark  # 怪獸id
   hit_consume: 10 # 每次打擊耗血
   duration: 60s # 怪獸出現時間
@@ -371,7 +398,7 @@ animationLoader:
   MD5: efbead5017eccbad41c85eb7da632a9f
   webpUrl: https://cdn.17app.co/01ad4226-5301-4aed-927b-5bf51d6197ac-q90-s1.webp
   webpMD5: 37001307354aede9647d6a34c005ccfc
-  
+
 - animationID: monster_princess2_attack
   url: https://cdn.17app.co/4fdc1d50-9b9a-46cf-b185-08caf788e7ae.zip
   MD5: 26c88d0a600dcdc3efe404c8b9f2f15a
