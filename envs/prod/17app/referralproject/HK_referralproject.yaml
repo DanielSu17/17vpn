@@ -1,21 +1,100 @@
+startTime: "2019-10-21 00:00:00 (GMT+0800)"
+endTime: "2019-11-03 23:59:59 (GMT+0800)"
+
+# --- referralMsg sample ---
+# Hi, I'm streamer $1 from 17!
+# Become a 17 member now and complete the following tasks to get a free gift and help me reach my goal!
+# 1. Enter the invitation code $2 on the day of registration
+# 2. Complete phone verification and watch $3 days of streams within $4 days of the task
+# It's super easy! Come support me on 17 if you like me!
+# Download 17 here:
+# --- end of sample ---
+referralMsg:
+  key: invite_code_text
+  params:
+      - value: "{referrerOpenID}"
+      - value: "{referralCode}"
+      - value: 5
+      - value: 3
+referralURL: https://17apps.onelink.me/i7CY/f25f848b
+
+ruleTitle:
+  key: invite_rule_title
+
+# --- rules sample ---
+# Event period: $1
+# During the event, you will earn HKD $2 for every new friend invited who downloads the app and complete the tasks. If they complete the tasks, they can get gifts as well!
+# Easy 3 Steps to Invitiation Rewards
+# Send invitation code
+# Remind them to complete the tasks
+# Upon completion you'll get your reward!
+# New Friend's Tasks
+# Complete phone verification
+# Watch $3 streams within $4 days of registration
+# --- end of sample ---
+rules:
+  - key: invite_rule_content_HK
+    params:
+      # event duration
+      - value: "2019-10-21 00:00:00 ~ 2019-11-04 00:00:00"
+      - value: 25
+      - value: 5
+      - value: 3
+
+# available ttl after register in hours
+missionTTLHrs: 120
+# follow referrer automatically when binding referral code
+followWhenBinding: true
+
+# award related
+award: 25
+currency: "HKD"
+
 # mode : defines what group is valid for this project
 #   0 no one
 #   1 whitelist
 #   2 all contracted streamers
-startTime: "2019-09-17 12:00:00 (GMT+0800)"
-endTime: "2019-09-17 12:00:00 (GMT+0800)"
-referralMsg:
-  key: ""
-  params:
-referralURL: https://17apps.onelink.me/i7CY/f25f848b
-award: 100
 mode: 1
 whiteList:
-  - "567e0b5d-1516-4ce0-b4e8-bec4e756d5ae" # kevinmh
-missionTTLHrs: 120
-
-# follow referrer automatically when binding referral code
-followWhenBinding: true
+  - "bd790e4a-e1b6-41f2-b5d6-9634a66178ca"
+  - "e88120c5-9f40-47b2-bf3a-7d088b92cb04"
+  - "184c1488-cd39-44f6-8230-47fa6df17238"
+  - "b466cfa3-cb59-4bc7-b28c-d317200614c7"
+  - "70240e23-0a7f-4722-90c0-166a21b81cc8"
+  - "d9fe2de2-9b1c-4fbe-967b-cb096906c6eb"
+  - "eff9847f-7df5-4ad1-8a85-8201f95cd830"
+  - "f091e734-4d72-4d57-9fe2-5bb0f85cf401"
+  - "882498e3-53f1-4b81-8b1a-118173b5eb6c"
+  - "3fbcd7a1-522f-4789-93f2-48c53c63ab9a"
 
 missions:
-
+  - ID: referral-project-phone-binding-hk
+    type: 12
+    reward:
+      rewardType: 1
+      rewardID: hello_2
+      amount: 5
+      expireTimeSecs: 86400
+    i18nTitle: invitation_mission_phone_title
+    i18nTitleParams:
+    i18nDescription: invitation_mission_phone_content
+    i18nDescriptionParams:
+    goalValue: 1
+  - ID: referral-project-view-x-different-day-hk
+    type: 13
+    reward:
+      rewardType: 1
+      rewardID: missyou_2
+      amount: 5
+      expireTimeSecs: 86400
+    i18nTitle: invitation_mission_view_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 5
+      - needMap: false
+        mapOption: 0
+        value: 3
+    i18nDescription: invitation_mission_view_content
+    i18nDescriptionParams:
+    goalValue: 1
