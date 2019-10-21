@@ -19,7 +19,7 @@ conf:
  - url_key: "go_url"
    white_list:
      liveStreams: "publishLiveStream,\
-            getLiveStreamViewers,keepLiveStream,getLiveStreamInfo"
+            getLiveStreamViewers,keepLiveStream"
      liveStreams/admin: "pass,kill,hide,pintotop,cancelpintotop,\
             killLiveStreamAction,passLiveStream,hideLiveStream,\
             promoteLiveStream,getLiveStreamsForReview,\
@@ -84,6 +84,7 @@ conf:
      # for legacy api
      liveStreams: "getSuggestedLiveStreams,liveStreams/getSuggestedLiveStreams,\
             getLatestLiveStreams,liveStreams/getLatestLiveStreams,\
+            getLiveStreamInfo,liveStreams/getLiveStreamInfo,\
             enterLiveStream,liveStreams/enterLiveStream,\
             quitViewLiveStream,liveStreams/quitViewLiveStream,\
             isUserOnLiveStream,liveStreams/isUserOnLiveStream,\
