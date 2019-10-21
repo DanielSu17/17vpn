@@ -30,6 +30,37 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: fcc69676-47b5-4eb8-ad70-1fd48d9de40f
+    type: 9
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 21
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 1910_tw_newcomers_bp_s
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: true
+    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 30
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc_phone
+    i18nDescriptionParams:
+    goalValue: 1800
+    enableTimeRange:
+      - startTime: "2019-10-21 18:00:00 (GMT+0800)"
+        endTime: "2019-10-25 23:59:59 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
   - ID: 62b920b8-0d66-4a81-9d66-d5e064143a8a
     type: 3
     lifeCycle: 1
@@ -398,37 +429,6 @@ missions:
     enableTimeRange:
       - startTime: "2019-10-01 00:00:00 (GMT+0800)"
         endTime: "2019-10-31 23:59:59 (GMT+0800)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: fcc69676-47b5-4eb8-ad70-1fd48d9de40f
-    type: 9
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 21
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1910_tw_newcomers_bp_s
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: true
-    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 30
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc_phone
-    i18nDescriptionParams:
-    goalValue: 1800
-    enableTimeRange:
-      - startTime: "2019-10-21 18:00:00 (GMT+0800)"
-        endTime: "2019-10-25 23:59:59 (GMT+0800)"
     refIDs:
     platforms:
       - android
