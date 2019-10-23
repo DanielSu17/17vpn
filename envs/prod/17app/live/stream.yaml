@@ -2,17 +2,19 @@ forcePromoteVirtualStream: false
 
 # porn detection
 pornDetection:
-  enable: false
+  enable: true
   intervalMS: 30000
-  modelVersion: 1
+  modelVersion: 2
   modelLink: "https://cdn.17app.co/nsfw/model.tflite"
   labelLink: "https://cdn.17app.co/nsfw/dict.txt"
   threshold: 5 # PROD: 5, STAG: 3, DEV: 3
   labels:
     - label: "unsafe"
-      confidence: 87.87
-    - label: "adult"
-      confidence: 87.87
+      confidence: 54.87 # low threshold for test
+    - label: "safe"
+      confidence: 54.87 # low threshold for test
+    - label: "empty"
+      confidence: 54.87 # low threshold for test
 
 defaultComments:
   - specificTimeFrame: true
