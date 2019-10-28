@@ -144,6 +144,12 @@ monsters:
   hit_consume: 10 # 每次打擊耗血
   duration: 60s # 怪獸出現時間
   animation: "vampire" # 怪獸動畫prefix
+  available_dates:
+  - start_date: "2019-10-16T00:00:00+08:00"
+    end_date: "2019-10-31T00:00:00+08:00"
+  appear_durations:
+  - start_time: 00h00m00s
+    end_time: 24h00m00s
   type: 0 # 0: 一般怪獸, 1: 招喚怪獸
   share_ratio: 50 # percentage, 主播分紅百分比： bonus * (share_ratio/100)
   profit_ratio: 35 # percentage, 手續費百分比：bonus * (profit/100)
