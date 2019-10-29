@@ -4,6 +4,32 @@ hostID: "48ca8e9e-0ca1-4d7f-6b2c-ffd21e5a4ff6" # 17q_jp
 
 hosts:
   TRIVIA:
+  TRIVIA_ON_TV:
+    "30bd1d48-41ee-48ec-9d07-037019698207": #チルナイトクイズ
+      pictures:
+        default: https://cdn.17app.co/f0d106f8-9d1a-457b-8daa-dfa43541acf0.jpg
+        prepare: https://cdn.17app.co/5951a3da-4e7b-4e54-a74d-3aef19d8ebff.png.jpg
+        onLive: https://cdn.17app.co/f11bce68-21e0-4aaa-9ec8-651227ffa745.jpg.jpg
+        # default user picture for users without picture
+        user: 857dc12d-46c9-4c63-b3c4-ee8fd1a2eb57.png
+      showBannerTime:
+        weekdays: [0,1,2,3,4,5,6] # 0 ~ 6 means Sunday ~ Saturday
+        hourFrom: 0 # GMT+8
+        hourTo: 23 # GMT+8
+      showBannerPriority: 1
+      disclaimerTitle:
+        key: "trivia_disclaimer_title"
+      disclaimerText:
+        key: "trivia_disclaimer_text"
+      leaveGameToastText:
+        key: "trivia_gamer_leave_double_confirm_text"
+      voteTopic:
+        key: "trivia_tv_vote_topic"
+      shareWording:
+        key: "trivia_game_share_wording"
+      isMedalSupported:
+        Default: true
+        CorrectMost: true
     "48ca8e9e-0ca1-4d7f-6b2c-ffd21e5a4ff6": # 17q_jp
       pictures:
         default: http://cdn.17app.co/31eb8ca9-3ef3-42cb-bc9d-123208b58428.png
