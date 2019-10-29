@@ -27,9 +27,19 @@ hosts:
 
 referral:
   registerDay: 3
-  quizNo: 2
-checkAnswerSign: false
+  quizNo: 6
+checkAnswerSign: true
 medalActivity:
-  countdown: 5
-  sendRateLimit: 120 # seconds
-  maxAcceptDelay: 120 # seconds
+  countdown: 10
+  sendRateLimit: 60 # seconds
+  maxAcceptDelay: 60 # seconds
+devices:
+  ios:
+    version: "3.57.0"
+  android:
+    version: "2.3.88"
+devicesOnTV:
+  ios:
+    version: "3.57.0"
+  android:
+    version: "2.3.88"
