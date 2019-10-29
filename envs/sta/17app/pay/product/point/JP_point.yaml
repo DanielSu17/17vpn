@@ -13,15 +13,15 @@ eventBasedIAP:
 
 productBasedIAP:
 
- - startTime: "2019-10-10T00:00:00+09:00"
-   endTime: "2019-10-28T23:59:59+09:00"
+ - startTime: "2019-10-15T22:00:00+09:00"
+   endTime: "2019-10-30T23:59:59+09:00"
    showCountdownUnderSticker: false
    showCountdownInPopUp: false
    stickerURL: "https://assets-17app.akamaized.net/30feb803-3274-42e2-8e41-187274f2314b.png"
    eventInfo:
      eventTitleI18nKey: ""
      eventURL: ""
-     bannerImageURL: "https://cdn.17app.co/94ddc7e1-0ede-4862-9cfc-d2ddfbbf8985.png"
+     bannerImageURL: "https://cdn.17app.co/77487d8f-aba0-4bb6-b484-14573a2a1350.png"
    layoutInfo:
      titlePicURL: "https://cdn.17app.co/a8a2761d-97fc-4beb-ba5b-3aa5eed45cfd.png"
      messageColor: "#6F6777"
@@ -39,11 +39,14 @@ productBasedIAP:
      rewardTextColor: "#F69355"
    pointProducts:
      - productID: "media17_points_14000_20191001"
-       bonusPoint: 1000
+       bonusPoint: 500
        shouldHighlight:  true
      - productID: "media17_points_130"
-       bonusPoint: 0
-       shouldHighlight:  false
+       bonusPoint: 200
+       shouldHighlight:  true
+       reward:
+           type: 1
+           refCount: 3
      - productID: "media17_points_670"
        bonusPoint: 0
        shouldHighlight:  false
@@ -63,7 +66,9 @@ productBasedIAP:
        dayEnd: 0 # 0 means no limit
    displayRewardInfo: true
    abtestName:
- 
+
+
+
 secretIAP:
   - ID: "retentionRewardIap"
     condition:
