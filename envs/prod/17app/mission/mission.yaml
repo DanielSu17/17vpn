@@ -30,6 +30,37 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: 63ef58bc-f36e-43b3-8e80-dcadb7df59db
+    type: 8
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 15
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 1911_tw_shopping_bp_100
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: true
+    i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 1
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des_phone
+    i18nDescriptionParams:
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2019-11-01 18:00:00 (GMT+0800)"
+        endTime: "2019-11-09 17:59:59 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
   - ID: 6183472b-1598-4b79-88e0-b199d7082d6c
     type: 9
     lifeCycle: 1
