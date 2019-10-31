@@ -14,10 +14,20 @@ rate_limits:
 - url: "/api/v1/lives/.*/comments"
   method: "POST"
   flow_per_second: 1 # 1 unit/s
-  reservoir_size: 60
+  reservoir_size: 5
   scope: by_access_token
 - url: "/api/v1/plays/.*/view"
   method: "POST"
   flow_per_second: 0.017  # 1 unit/min
   reservoir_size: 1
   scope: by_access_token
+- url: "/api/v1/lives/.*/like"
+  method: "POST"
+  flow_per_second: 0.017  # 1 unit/min
+  reservoir_size: 1
+  scope: by_access_token
+- url: "/api/v1/users"
+  method: "GET"
+  flow_per_second: 20
+  reservoir_size: 50
+  scope: by_global
