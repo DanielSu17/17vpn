@@ -28,6 +28,6 @@ rate_limits:
   scope: by_access_token
 - url: "/api/v1/users"
   method: "GET"
-  flow_per_second: 20
-  reservoir_size: 50
+  flow_per_second: 10
+  reservoir_size: 20
   scope: by_global
