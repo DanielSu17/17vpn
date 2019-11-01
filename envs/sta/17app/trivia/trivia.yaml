@@ -5,54 +5,6 @@ hostIDOnTV: "94b56df0-336b-4968-7c41-88ec85246024" # 17好聰明
 
 hosts:
   TRIVIA:
-    "0e671b10-1660-419c-67f9-9983ebdbad38": # triviabot1
-      pictures:
-        default: http://cdn.17app.co/db5fc998-e129-4a03-b640-9e6c06d3ddab.png
-        prepare: http://cdn.17app.co/775d8f29-dd23-4fe5-9320-9d708e77463b.png
-        onLive: http://cdn.17app.co/cb5419c5-97c4-45a6-b4b3-5f6a843ee827.png
-        # default user picture for users without picture
-        user: 857dc12d-46c9-4c63-b3c4-ee8fd1a2eb57.png
-      showBannerTime:
-        weekdays: [0,1,2,3,4,5,6] # 0 ~ 6 means Sunday ~ Saturday
-        hourFrom: 0 # GMT+8
-        hourTo: 23 # GMT+8
-      showBannerPriority: 1
-      disclaimerTitle:
-        key: "trivia_disclaimer_title"
-      disclaimerText:
-        key: "trivia_disclaimer_text"
-      leaveGameToastText:
-        key: "trivia_gamer_leave_double_confirm_text"
-      shareWording:
-        key: "trivia_game_share_wording"
-      isMedalSupported:
-        Default: true
-        CorrectMost: true        
-    "6e9af721-55c5-41d7-91a4-387aceec94a6": # 17Q限時答題搶獎金
-      pictures:
-        default: https://cdn.17app.co/00f2a636-07a7-4397-bc45-596aa4646723.png
-        prepare: https://cdn.17app.co/00f2a636-07a7-4397-bc45-596aa4646723.png
-        onLive: https://cdn.17app.co/00f2a636-07a7-4397-bc45-596aa4646723.png
-        # default user picture for users without picture
-        user: 857dc12d-46c9-4c63-b3c4-ee8fd1a2eb57.png
-      showBannerTime:
-        weekdays: [0,1,2,3,4,5,6] # 0 ~ 6 means Sunday ~ Saturday
-        hourFrom: 0 # GMT+8
-        hourTo: 23 # GMT+8
-      showBannerPriority: 0
-      disclaimerTitle:
-        key: "trivia_disclaimer_title"
-      disclaimerText:
-        key: "trivia_disclaimer_text"
-      leaveGameToastText:
-        key: "trivia_gamer_leave_double_confirm_text"
-      voteTopic:
-        key: "trivia_tv_vote_topic"
-      shareWording:
-        key: "trivia_game_share_wording"
-      isMedalSupported:
-        Default: true
-        CorrectMost: false
   TRIVIA_ON_TV:
     "94b56df0-336b-4968-7c41-88ec85246024": # 17好聰明
       pictures:
@@ -173,6 +125,54 @@ hosts:
       isMedalSupported:
         Default: true
         CorrectMost: true
+    "0e671b10-1660-419c-67f9-9983ebdbad38": # triviabot1
+      pictures:
+        default: http://cdn.17app.co/db5fc998-e129-4a03-b640-9e6c06d3ddab.png
+        prepare: http://cdn.17app.co/775d8f29-dd23-4fe5-9320-9d708e77463b.png
+        onLive: http://cdn.17app.co/cb5419c5-97c4-45a6-b4b3-5f6a843ee827.png
+        # default user picture for users without picture
+        user: 857dc12d-46c9-4c63-b3c4-ee8fd1a2eb57.png
+      showBannerTime:
+        weekdays: [0,1,2,3,4,5,6] # 0 ~ 6 means Sunday ~ Saturday
+        hourFrom: 0 # GMT+8
+        hourTo: 23 # GMT+8
+      showBannerPriority: 5
+      disclaimerTitle:
+        key: "trivia_disclaimer_title"
+      disclaimerText:
+        key: "trivia_disclaimer_text"
+      leaveGameToastText:
+        key: "trivia_gamer_leave_double_confirm_text"
+      shareWording:
+        key: "trivia_game_share_wording"
+      isMedalSupported:
+        Default: true
+        CorrectMost: true        
+    "6e9af721-55c5-41d7-91a4-387aceec94a6": # 17Q限時答題搶獎金
+      pictures:
+        default: https://cdn.17app.co/00f2a636-07a7-4397-bc45-596aa4646723.png
+        prepare: https://cdn.17app.co/00f2a636-07a7-4397-bc45-596aa4646723.png
+        onLive: https://cdn.17app.co/00f2a636-07a7-4397-bc45-596aa4646723.png
+        # default user picture for users without picture
+        user: 857dc12d-46c9-4c63-b3c4-ee8fd1a2eb57.png
+      showBannerTime:
+        weekdays: [0,1,2,3,4,5,6] # 0 ~ 6 means Sunday ~ Saturday
+        hourFrom: 0 # GMT+8
+        hourTo: 23 # GMT+8
+      showBannerPriority: 6
+      disclaimerTitle:
+        key: "trivia_disclaimer_title"
+      disclaimerText:
+        key: "trivia_disclaimer_text"
+      leaveGameToastText:
+        key: "trivia_gamer_leave_double_confirm_text"
+      voteTopic:
+        key: "trivia_tv_vote_topic"
+      shareWording:
+        key: "trivia_game_share_wording"
+      isMedalSupported:
+        Default: true
+        CorrectMost: false
 
 referral:
   registerDay: 3
