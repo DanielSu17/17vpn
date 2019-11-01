@@ -32,7 +32,7 @@
 missions:
   - ID: 6183472b-1598-4b79-88e0-b199d7082d6c
     type: 9
-    lifeCycle: 1
+    lifeCycle: 0
     targetAudience: 0
     levelRange:
       min: 21
@@ -55,8 +55,113 @@ missions:
     goalValue: 1200
     enableTimeRange:
       - startTime: "2019-11-01 18:00:00 (GMT+0800)"
-        endTime: "2019-11-27 23:59:59 (GMT+0800)"
+        endTime: "2019-11-30 23:59:59 (GMT+0800)"
     refIDs:
+    platforms:
+      - android
+      - ios
+
+  - ID: f04f8c1a-b919-49c8-90c4-9f28980a86b2
+    type: 3
+    lifeCycle: 1
+    targetAudience: 0
+    levelRange:
+      min: 21
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 1911_tw_monthly_bp_10
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: true
+    i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 7
+      - needMap: false
+        mapOption: 2
+        value: 1911_tw_monthly_bp_1
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
+    i18nDescriptionParams:
+    goalValue: 7
+    enableTimeRange:
+      - startTime: "2019-11-01 18:00:00 (GMT+0800)"
+        endTime: "2019-11-30 23:59:59 (GMT+0800)"
+    refIDs:
+      - 1911_tw_monthly_bp_1
+    platforms:
+      - android
+      - ios
+
+  - ID: 6eaeca66-f64b-4c02-aba0-20078a0492c9
+    type: 3
+    lifeCycle: 1
+    targetAudience: 0
+    levelRange:
+      min: 21
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 1911_tw_monthly_bp_go_100
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: true
+    i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 14
+      - needMap: false
+        mapOption: 2
+        value: 1911_tw_monthly_bp_1
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
+    i18nDescriptionParams:
+    goalValue: 14
+    enableTimeRange:
+      - startTime: "2019-11-01 18:00:00 (GMT+0800)"
+        endTime: "2019-11-30 23:59:59 (GMT+0800)"
+    refIDs:
+      - 1911_tw_monthly_bp_1
+    platforms:
+      - android
+      - ios
+
+  - ID: 7c8e2806-4814-4a34-9aab-5ae7c9103f48
+    type: 3
+    lifeCycle: 1
+    targetAudience: 0
+    levelRange:
+      min: 21
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 1911_tw_monthly_bp_go_1000
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: true
+    i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 28
+      - needMap: false
+        mapOption: 2
+        value: 1911_tw_monthly_bp_1
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
+    i18nDescriptionParams:
+    goalValue: 28
+    enableTimeRange:
+      - startTime: "2019-11-01 18:00:00 (GMT+0800)"
+        endTime: "2019-11-30 23:59:59 (GMT+0800)"
+    refIDs:
+      - 1911_tw_monthly_bp_1
     platforms:
       - android
       - ios
@@ -440,111 +545,6 @@ missions:
       - 1911_tw_monthly_2000
       - 1911_tw_monthly_20000
       - 1911_tw_monthly_bag
-    platforms:
-      - android
-      - ios
-
-  - ID: f04f8c1a-b919-49c8-90c4-9f28980a86b2
-    type: 3
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 21
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1911_tw_monthly_bp_10
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: true
-    i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 7
-      - needMap: false
-        mapOption: 2
-        value: 1911_tw_monthly_bp_1
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
-    i18nDescriptionParams:
-    goalValue: 7
-    enableTimeRange:
-      - startTime: "2019-11-01 18:00:00 (GMT+0800)"
-        endTime: "2019-11-27 23:59:59 (GMT+0800)"
-    refIDs:
-      - 1911_tw_monthly_bp_1
-    platforms:
-      - android
-      - ios
-
-  - ID: 6eaeca66-f64b-4c02-aba0-20078a0492c9
-    type: 3
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 21
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1911_tw_monthly_bp_go_100
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: true
-    i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 14
-      - needMap: false
-        mapOption: 2
-        value: 1911_tw_monthly_bp_1
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
-    i18nDescriptionParams:
-    goalValue: 14
-    enableTimeRange:
-      - startTime: "2019-11-01 18:00:00 (GMT+0800)"
-        endTime: "2019-11-27 23:59:59 (GMT+0800)"
-    refIDs:
-      - 1911_tw_monthly_bp_1
-    platforms:
-      - android
-      - ios
-
-  - ID: 7c8e2806-4814-4a34-9aab-5ae7c9103f48
-    type: 3
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 21
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1911_tw_monthly_bp_go_1000
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: true
-    i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 28
-      - needMap: false
-        mapOption: 2
-        value: 1911_tw_monthly_bp_1
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
-    i18nDescriptionParams:
-    goalValue: 28
-    enableTimeRange:
-      - startTime: "2019-11-01 18:00:00 (GMT+0800)"
-        endTime: "2019-11-27 23:59:59 (GMT+0800)"
-    refIDs:
-      - 1911_tw_monthly_bp_1
     platforms:
       - android
       - ios
