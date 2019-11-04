@@ -29,9 +29,9 @@ allowed_origins:
 #     access_token.
 #   throttling_max_sync:
 #     the max number of retry on redis sync data, should be >= 1
-throttling_start_point: 1
-throttling_end_point: 0
+throttling_start_point: 5
+throttling_end_point: 3
 throttling_measurement_period: 300
 throttling_rotation_num: 30
-throttling_block_enable: true
+throttling_block_enable: false
 throttling_max_sync: 5
