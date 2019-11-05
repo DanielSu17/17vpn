@@ -2,11 +2,20 @@
 #
 # Author: CM Chung
 # this file is deployment (alfred) for wave project
+# Every service belongs to a type (go, nodejs, webapp, or spinnaker)
+# Every type has its own settings like Jenkins endpoints which base on environments
 type:
   wave-web:       "webapp"
   wave-dashboard: "webapp"
   wave:           "go"
   wave-slackbot:  "go"
+groups:
+  backend:
+    wave:           "go"
+    wave-slackbot:  "go"
+  frontend:
+    wave-web:       "webapp"
+    wave-dashboard: "webapp"
 settings:
   go:
     k8sprod:

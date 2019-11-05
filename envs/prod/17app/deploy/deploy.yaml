@@ -1,3 +1,6 @@
+# Every service belongs to a type (go, nodejs, webapp, or spinnaker)
+# Every type has its own settings like Jenkins endpoints which base on environments
+
 type:
   alfred:          "go"
   revprox:         "go"
@@ -21,6 +24,34 @@ type:
   skyeyewall:      "webapp"
   17live:          "webapp"
   spinnaker:       "spinnaker"
+
+groups:
+  backend:
+    alfred:          "go"
+    revprox:         "go"
+    goapi:           "go"
+    cronjob:         "go"
+    slackbot:        "go"
+    shield:          "go"
+    srsapi:          "go"
+    worker:          "go"
+    exchange:        "go"
+    data-middleware: "go"
+    go-cron:         "go"
+    golives:         "go"
+    gotrade:         "go"
+    spinnaker:       "spinnaker"
+  frontend:
+    skyeye:          "go"
+    admin:           "nodejs"
+    baobaofu:        "webapp"
+    webapp:          "webapp"
+    skyeyewall:      "webapp"
+    17live:          "webapp"
+  event:
+    event-server:    "go"
+    event-web:       "webapp"
+
 settings:
   spinnaker:
     k8ssta:
@@ -46,6 +77,7 @@ settings:
       endpoint: 'k8ssta-deployment-nodejs/buildWithParameters?token=ZQuygxVpytYgnanavuVkEdQsccQKr36RyLWNhgjY'
     k8sprod:
       endpoint: 'k8sprod-deployment-nodejs/buildWithParameters?token=MdfMrjx5egcQKAQMdEHP92hNACQvPemnvTWRT3fe'
+
 17app:
     - "goapi"
     - "revprox"

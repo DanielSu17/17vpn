@@ -2,11 +2,20 @@
 #
 # Author: CM Chung
 # this file is deployment (alfred) for lit project
+# Every service belongs to a type (go, nodejs, webapp, or spinnaker)
+# Every type has its own settings like Jenkins endpoints which base on environments
 type:
   lit:           "go"
   lit-worker:    "go"
   lit-web:       "webapp"
   lit-dashboard: "webapp"
+groups:
+  backend:
+    lit:           "go"
+    lit-worker:    "go"
+  frontend:
+    lit-web:       "webapp"
+    lit-dashboard: "webapp"
 settings:
   go:
     k8sprod:
