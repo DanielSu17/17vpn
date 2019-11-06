@@ -1,32 +1,201 @@
-# // | type | Value |
-# // | --- | --- |
-# // | Trivia_DayTime_Answer | 1 |
-# // | Trivia_Night_Answer | 2 |
-# // | Send_Gift | 3 |
-# // | Comment_In_Program | 4 |
-# // | Comment_In_Livestream | 5 |
-# // | Trivia_On_TV_Play | 6 |
-# // | Trivia_Play | 7 |
-# // | IAP_Buy_Point | 8 |
-# // | View_Stream_X_Seconds | 9 |
+# | type | Value |
+# | --- | --- |
+# | Trivia_DayTime_Answer | 1 |
+# | Trivia_Night_Answer | 2 |
+# | Send_Gift | 3 |
+# | Comment_In_Program | 4 |
+# | Comment_In_Livestream | 5 |
+# | Trivia_On_TV_Play | 6 |
+# | Trivia_Play | 7 |
+# | IAP_Buy_Point | 8 |
+# | View_Stream_X_Seconds | 9 |
+# | IAP_X_Points | 10 |
+# | Share_Twitter | 11 |
+# | View_Stream_X_Different_Days | 13 |
 
-# // | category | Value |
-# // | --- | --- |
-# // | Fixed | 0 |
-# // | Ratio | 1 |
+# | category | Value |
+# | --- | --- |
+# | Fixed | 0 |
+# | Ratio | 1 |
 
-# // | lifeCycle | Value |
-# // | --- | --- |
-# // | Daily | 0 |
-# // | OneTime | 1 |
+# | lifeCycle | Value |
+# | --- | --- |
+# | Daily | 0 |
+# | OneTime | 1 |
 
-# // | targetAudience | Value |
-# // | --- | --- |
-# // | REGIONAL | 0 |
-# // | IAP | 1 |
-# // | NON_IAP | 2 |
+# | targetAudience | Value |
+# | --- | --- |
+# | REGIONAL | 0 |
+# | IAP | 1 |
+# | NON_IAP | 2 |
 
 missions:
+  - ID: b9791d50-437d-4848-8ee5-6c681a6029fa
+    type: 8
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 1911_hk_lucky_bp_10
+      amount: 1
+      expireTimeSecs: 259200
+    requirePhoneBinding: false
+    i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 1
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
+    i18nDescriptionParams:
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2019-11-19 18:00:00 (GMT+0800)"
+        endTime: "2019-11-30 23:59:59 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
+  - ID: 345a2fa7-5c16-466e-8814-00df6783b235
+    type: 9
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 1911_hk_lucky_bp_10
+      amount: 1
+      expireTimeSecs: 259200
+    requirePhoneBinding: false
+    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 5
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+    i18nDescriptionParams:
+    goalValue: 300
+    enableTimeRange:
+      - startTime: "2019-11-19 18:00:00 (GMT+0800)"
+        endTime: "2019-11-30 23:59:59 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
+  - ID: a23bff1a-40db-490a-bd05-8c1deb8cdacf
+    type: 3
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 1911_hk_lucky_bp_10
+      amount: 1
+      expireTimeSecs: 259200
+    requirePhoneBinding: false
+    i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 10
+      - needMap: false
+        mapOption: 2
+        value: 1911_hk_lucky_150
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
+    i18nDescriptionParams:
+    goalValue: 10
+    enableTimeRange:
+      - startTime: "2019-11-19 18:00:00 (GMT+0800)"
+        endTime: "2019-11-30 23:59:59 (GMT+0800)"
+    refIDs:
+      - 1911_hk_lucky_150
+    platforms:
+      - android
+      - ios
+
+  - ID: 9ba66821-dcdf-46dc-991c-e68a191254f9
+    type: 3
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 1911_hk_lucky_bp_10
+      amount: 1
+      expireTimeSecs: 259200
+    requirePhoneBinding: false
+    i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 5
+      - needMap: false
+        mapOption: 2
+        value: 1911_hk_lucky_1500
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
+    i18nDescriptionParams:
+    goalValue: 5
+    enableTimeRange:
+      - startTime: "2019-11-19 18:00:00 (GMT+0800)"
+        endTime: "2019-11-30 23:59:59 (GMT+0800)"
+    refIDs:
+      - 1911_hk_lucky_1500
+    platforms:
+      - android
+      - ios
+
+  - ID: d1ec60c5-ec3e-42fe-b6cc-6b4634b87162
+    type: 3
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 1911_hk_lucky_bp_10
+      amount: 1
+      expireTimeSecs: 259200
+    requirePhoneBinding: false
+    i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 1
+      - needMap: false
+        mapOption: 2
+        value: 1911_hk_lucky_15000
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
+    i18nDescriptionParams:
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2019-11-19 18:00:00 (GMT+0800)"
+        endTime: "2019-11-30 23:59:59 (GMT+0800)"
+    refIDs:
+      - 1911_hk_lucky_15000
+    platforms:
+      - android
+      - ios
 
 #tagInfos
 tagInfos:
@@ -38,55 +207,9 @@ tagInfos:
     token:
       key: "baggage_mission_one_time_tag"
     color: "#F6696C"
-    
+
 i18nMissionCompleteToast: "baggage_mission_toast_claimed"
-refreshHour: 5 # 5:00AM(GMT+8)
+refreshHour: 5 # 5:00 (GMT+8)
 supportedVersion:
   android: "2.3.17"
   ios: "3.8.0"
-
-#History
-# - ID: bc581dea-d5a5-4e2d-8cde-62c8051ba278
-#   type: 3 #送禮
-#   reward:
-#     rewardType: 1
-#     rewardID: "1808_tw_summer_festival_45000"
-#     amount: 1
-#     expireTimeSecs: 86400
-#   goalValue: 20
-#   enableTimeRange:
-#     - startTime: "2018-08-27 18:00:00 (GMT+0800)"
-#       endTime: "2018-09-01 23:59:59 (GMT+0800)"
-#   refIDs:
-#     - 1808_tw_sf_ll
-#     - 1808_tw_summer_festival_z_30000
-
-# - ID: c375a802-9529-43bb-927c-bce007986d5b
-#   type: 3 #送禮
-#   reward:
-#     rewardType: 1
-#     rewardID: "1808_tw_summer_festival_4500"
-#     amount: 1
-#     expireTimeSecs: 86400
-#   goalValue: 20
-#   enableTimeRange:
-#     - startTime: "2018-08-27 18:00:00 (GMT+0800)"
-#       endTime: "2018-09-01 23:59:59 (GMT+0800)"
-#   refIDs:
-#     - 1808_tw_sf_lm
-#     - 1808_tw_summer_festival_z_3000
-
-# - ID: 5a21793a-9509-4583-9a55-5d4d7c4a249b
-#   type: 3 #送禮
-#   reward:
-#     rewardType: 1
-#     rewardID: "1808_tw_summer_festival_450"
-#     amount: 1
-#     expireTimeSecs: 86400
-#   goalValue: 20
-#   enableTimeRange:
-#     - startTime: "2018-08-27 18:00:00 (GMT+0800)"
-#       endTime: "2018-09-01 23:59:59 (GMT+0800)"
-#   refIDs:
-#     - 1808_tw_sf_ls
-#     - 1808_tw_summer_festival_z_300
