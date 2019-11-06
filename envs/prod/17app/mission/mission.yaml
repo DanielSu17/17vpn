@@ -30,6 +30,36 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: 018ac931-9bf9-4361-b1d2-c755bd10a899
+    type: 5
+    lifeCycle: 1
+    targetAudience: 0
+    levelRange:
+      min: 3
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: dragon_baby_20191110
+      amount: 50
+      expireTimeSecs: 86400
+    requirePhoneBinding: true
+    i18nTitle: baggage_mission_leave_comment_reward_title_wei_chuan
+    i18nTitleParams: 
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_leave_comment_reward_desc_wei_chuan
+    i18nDescriptionParams:
+      - needMap: false
+        mapOption: 0
+        value: 3
+    goalValue: 3
+    enableTimeRange:
+      - startTime: "2019-11-10 00:00:00 (GMT+0800)"
+        endTime: "2019-11-10 23:59:59 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
   - ID: f04f8c1a-b919-49c8-90c4-9f28980a86b2
     type: 3
     lifeCycle: 1
