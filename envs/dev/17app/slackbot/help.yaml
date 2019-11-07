@@ -178,12 +178,36 @@ commandHelp:
         title: "`[更新BD系統合約資訊]`"
         description: |
           >
+      updateContractTerm:
+        title: "`[將指定合約條件替換成指定的template條件]`"
+        description: |
+          >
       changeAgencyAccount:
         title: "`[更新經紀公司登入帳號]`"
         description: |
           > 
       updateStreamerLabel:
         title: "`[批次更新主播label]`"
+        description: |
+          > 
+      updateContractLabel:
+        title: "`[批次更新合約label]`"
+        description: |
+          > 
+      contractInfo:
+        title: "`[查詢合約資訊]`"
+        description: |
+          > 
+      queryRTPList:
+        title: "`[查詢用戶是否在分潤禁止轉點的名單內]`"
+        description: |
+          > 
+      addRTPList:
+        title: "`[將用戶加入分潤禁止轉點的名單內]`"
+        description: |
+          > 
+      removeRTPList:
+        title: "`[將用戶移出分潤禁止轉點的名單]`"
         description: |
           > 
 #===!butler小幫手===
@@ -196,6 +220,10 @@ commandHelp:
           > 
       send-regional-message:
         title: "`[發送小幫手給所有該地區所有用戶]`"
+        description: |
+          > 
+      send-regional-contract-message:
+        title: "`[發送小幫手給所有該地區所有簽約主播]`"
         description: |
           > 
 #===!clan幫派相關===
@@ -398,6 +426,22 @@ commandHelp:
         title: "`[更新product cache]`"
         description: |
           >
+#===!league聯盟===
+  league:
+    title: "聯盟"
+    commandsHelp:
+      remove-member:
+        title: "`[移除聯盟成員]`"
+        description: |
+          >
+      disband-league:
+        title: "`[解散聯盟]`"
+        description: |
+          >
+      get-league-info:
+        title: "`[取得聯盟資訊]`"
+        description: |
+          >
 #===!leaderboard排行榜更新===
   leaderboard:
     title: "排行榜更新"
@@ -490,6 +534,10 @@ commandHelp:
         title: "`[給用戶一段時間的進場動畫]`"
         description: |
           >
+      add-achievementValue:
+        title: "`[調整成就值]`"
+        description: |
+          >
       cancel-enter-animation:
         title: "`[取消用戶的進場動畫]`"
         description: |
@@ -515,7 +563,7 @@ commandHelp:
         description: |
           >
       accept:
-        title: "`[直播審核-接受]`"
+        title: "`[直播審核-可開播]`"
         description: |
           >
       disable:
@@ -698,7 +746,7 @@ commandHelp:
   revenue:
     title: "分潤轉點"
     commandsHelp:
-      writeoff:
+      to-point:
         title: "`[分潤轉點數]`"
         description: |
           >
@@ -710,16 +758,24 @@ commandHelp:
         title: "`[設定成就(封號徽章)的次數]`"
         description: |
           >
-#===!streamerLabel主播標籤===
-  streamerLabel:
-    title: "主播標籤"
+#===!Label主播合約標籤===
+  label:
+    title: "主播合約標籤"
     commandsHelp:
-      list:
-        title: "`[查閱label清單]`"
+      listStreamer:
+        title: "`[查閱Streamerlabel清單]`"
         description: |
           >
-      add:
-        title: "`[新增labe清單資料]`"
+      addStreamer:
+        title: "`[新增Streamerlabe清單資料]`"
+        description: |
+          >
+      listContract:
+        title: "`[查閱ContractLabel清單]`"
+        description: |
+          >
+      addContract:
+        title: "`[新增ContractLabe清單資料]`"
         description: |
           >
 #===!stamp貼圖===
@@ -902,6 +958,10 @@ commandHelp:
         title: "`[設定admin等級]`"
         description: |
           >
+      get-expirypoints:
+        title: "`[查詢失效點數]`"
+        description: |
+          >
 #===!vip尊榮寶寶===
   vip:
     title: "尊榮寶寶"
@@ -970,11 +1030,27 @@ commandHelp:
         title: "`[關閉leaderboard隱身]`"
         description: |
           >
+#===!votingevent活動灌票===
+  votingevent:
+    title: "活動灌票"
+    commandsHelp:
+      list:
+        title: "`[列出活動清單]`"
+        description: |
+          >
+      addVotes:
+        title: "`[增加票數]`"
+        description: |
+          >
+      addNomineeVotes:
+        title: "`[增加指定候選人票數]`"
+        description: |
+          >
 #===!voucher送免費禮物(揮手/新手)===
   voucher:
     title: "送免費禮物"
     commandsHelp:
-      enable:
-        send: "`[送免費禮物(例:揮手/新手)]`"
+      send:
+        title: "`[送免費禮物(例:揮手/新手)]`"
         description: |
           >

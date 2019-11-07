@@ -222,6 +222,10 @@ commandHelp:
         title: "`[發送小幫手給所有該地區所有用戶]`"
         description: |
           > 
+      send-regional-contract-message:
+        title: "`[發送小幫手給所有該地區所有簽約主播]`"
+        description: |
+          > 
 #===!clan幫派相關===
   clan:
     title: "幫派"
@@ -422,6 +426,22 @@ commandHelp:
         title: "`[更新product cache]`"
         description: |
           >
+#===!league聯盟===
+  league:
+    title: "聯盟"
+    commandsHelp:
+      remove-member:
+        title: "`[移除聯盟成員]`"
+        description: |
+          >
+      disband-league:
+        title: "`[解散聯盟]`"
+        description: |
+          >
+      get-league-info:
+        title: "`[取得聯盟資訊]`"
+        description: |
+          >
 #===!leaderboard排行榜更新===
   leaderboard:
     title: "排行榜更新"
@@ -510,12 +530,12 @@ commandHelp:
         title: "`[查詢最近 n 筆斷線的直播]`"
         description: |
           >
-      add-achievementValue:
-        title: "`[調整成就值]`"
-        description: |
-          >
       set-enter-animation:
         title: "`[給用戶一段時間的進場動畫]`"
+        description: |
+          >
+      add-achievementValue:
+        title: "`[調整成就值]`"
         description: |
           >
       cancel-enter-animation:
@@ -543,7 +563,7 @@ commandHelp:
         description: |
           >
       accept:
-        title: "`[直播審核-接受]`"
+        title: "`[直播審核-可開播]`"
         description: |
           >
       disable:
@@ -936,6 +956,10 @@ commandHelp:
           >
       set-admin:
         title: "`[設定admin等級]`"
+        description: |
+          >
+      get-expirypoints:
+        title: "`[查詢失效點數]`"
         description: |
           >
 #===!vip尊榮寶寶===
