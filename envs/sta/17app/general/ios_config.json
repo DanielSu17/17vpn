@@ -94,26 +94,18 @@
         "email_for_all" : 1
       },
       "crazy_zoo" : {
-        "free" : [
-          {
-            "score" : 5,
-            "level" : 2
-          },
-          {
-            "score" : 10,
-            "level" : 3
-          }
-        ],
-        "paid" : [
-          {
-            "score" : 0,
-            "level" : 3
-          },
-          {
-            "score" : 5,
-            "level" : 999
-          }
-        ]
+        "free" : {
+          "level_pipe_indexes" : [
+            1, 5, 10
+          ],
+          "mobile_pipe_index" : 0
+        },
+        "paid" : {
+          "level_pipe_indexes" : [
+            1, 1, 1, 5
+          ],
+          "mobile_pipe_index" : 10
+        }
       }
   }
 }
