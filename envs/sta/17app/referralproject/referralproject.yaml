@@ -1,5 +1,5 @@
-startTime: "2019-08-17 12:00:00 (GMT+0800)"
-endTime: "2020-09-17 12:00:00 (GMT+0800)"
+startTime: "2019-11-08 00:00:00 (GMT+0800)"
+endTime: "2019-11-27 23:59:59 (GMT+0800)"
 
 # --- referralMsg sample ---
 # Hi, I'm streamer $1 from 17!
@@ -15,7 +15,7 @@ referralMsg:
       - value: "{referrerOpenID}"
       - value: "{referralCode}"
       - value: 5
-      - value: 3
+      - value: 2
 referralURL: https://17apps.onelink.me/i7CY/f25f848b
 
 ruleTitle:
@@ -36,10 +36,10 @@ rules:
   - key: invite_rule_content_TW
     params:
       # event duration
-      - value: "2019-10-21 00:00:00 ~ 2019-11-04 00:00:00"
+      - value: "2019-11-08 00:00:00 ~ 2019-11-28 00:00:00"
       - value: 100
       - value: 5
-      - value: 3
+      - value: 2
 
 # available ttl after register in hours
 missionTTLHrs: 120
@@ -66,18 +66,6 @@ whiteList:
 # for referralMissions, we will only hanlde following fields to do business logic
 # `Type` , `Reward` , `i18n related fields` , `GoalValue` in store layer
 missions:
-  - ID: referral-project-phone-binding-tw
-    type: 12
-    reward:
-      rewardType: 1
-      rewardID: gift_bag_love99
-      amount: 5
-      expireTimeSecs: 86400
-    i18nTitle: invitation_mission_phone_title
-    i18nTitleParams:
-    i18nDescription: invitation_mission_phone_content
-    i18nDescriptionParams:
-    goalValue: 1
   - ID: referral-project-view-x-different-day-tw
     type: 13
     reward:
@@ -92,7 +80,7 @@ missions:
         value: 5
       - needMap: false
         mapOption: 0
-        value: 3
+        value: 2
     i18nDescription: invitation_mission_view_content
     i18nDescriptionParams:
-    goalValue: 1
+    goalValue: 2
