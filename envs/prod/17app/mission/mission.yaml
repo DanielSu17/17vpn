@@ -30,36 +30,6 @@
 # | NON_IAP | 2 |
 
 missions:
-  - ID: 018ac931-9bf9-4361-b1d2-c755bd10a899
-    type: 5
-    lifeCycle: 1
-    targetAudience: 0
-    levelRange:
-      min: 3
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: dragon_baby_20191110
-      amount: 50
-      expireTimeSecs: 86400
-    requirePhoneBinding: true
-    i18nTitle: baggage_mission_leave_comment_reward_title_wei_chuan
-    i18nTitleParams: 
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_leave_comment_reward_desc_wei_chuan
-    i18nDescriptionParams:
-      - needMap: false
-        mapOption: 0
-        value: 3
-    goalValue: 3
-    enableTimeRange:
-      - startTime: "2019-11-10 00:00:00 (GMT+0800)"
-        endTime: "2019-11-10 23:59:59 (GMT+0800)"
-    refIDs:
-    platforms:
-      - android
-      - ios
   - ID: f04f8c1a-b919-49c8-90c4-9f28980a86b2
     type: 3
     lifeCycle: 1
@@ -165,72 +135,33 @@ missions:
       - android
       - ios
 
-  - ID: 275e5d66-8102-4c7e-be59-03feb243f808
-    type: 3
-    lifeCycle: 1
+  - ID: fa293453-441d-460b-b923-5367f3bbd205
+    type: 8
+    lifeCycle: 0
     targetAudience: 0
     levelRange:
-      min: 21
+      min: 15
       max: 999
     reward:
       rewardType: 1
-      rewardID: 1910_tw_newcomers_bp_l
+      rewardID: 1911_tw_countdown_bp_100
       amount: 1
       expireTimeSecs: 86400
     requirePhoneBinding: true
-    i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+    i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
     i18nTitleParams:
       - needMap: false
         mapOption: 0
-        value: 3
-      - needMap: false
-        mapOption: 2
-        value: 1910_tw_newcomers_bp_s
+        value: 1
     i18nContent: 
     i18nContentParams:
-    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
+    i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
     i18nDescriptionParams:
-    goalValue: 3
+    goalValue: 1
     enableTimeRange:
-      - startTime: "2019-11-05 00:00:00 (GMT+0800)"
-        endTime: "2019-11-09 23:59:59 (GMT+0800)"
+      - startTime: "2019-11-09 18:00:00 (GMT+0800)"
+        endTime: "2019-11-20 23:59:59 (GMT+0800)"
     refIDs:
-      - 1910_tw_newcomers_bp_s
-    platforms:
-      - android
-      - ios
-
-  - ID: 7db4c24f-f700-4c6c-8729-53ef0ecc6c00
-    type: 3
-    lifeCycle: 1
-    targetAudience: 0
-    levelRange:
-      min: 21
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1910_tw_newcomers_bp_l
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: true
-    i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 5
-      - needMap: false
-        mapOption: 2
-        value: 1910_tw_newcomers_bp_s
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
-    i18nDescriptionParams:
-    goalValue: 5
-    enableTimeRange:
-      - startTime: "2019-11-05 00:00:00 (GMT+0800)"
-        endTime: "2019-11-09 23:59:59 (GMT+0800)"
-    refIDs:
-      - 1910_tw_newcomers_bp_s
     platforms:
       - android
       - ios
@@ -555,37 +486,6 @@ missions:
       - android
       - ios
 
-  - ID: 63ef58bc-f36e-43b3-8e80-dcadb7df59db
-    type: 8
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 15
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1911_tw_shopping_bp_100
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: true
-    i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 1
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des_phone
-    i18nDescriptionParams:
-    goalValue: 1
-    enableTimeRange:
-      - startTime: "2019-11-01 18:00:00 (GMT+0800)"
-        endTime: "2019-11-09 17:59:59 (GMT+0800)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
   - ID: b89591d8-2e2d-41e3-b968-21f687febd6c
     type: 3
     lifeCycle: 0
@@ -620,37 +520,6 @@ missions:
       - 1911_tw_monthly_2000
       - 1911_tw_monthly_20000
       - 1911_tw_monthly_bag
-    platforms:
-      - android
-      - ios
-
-  - ID: 2717f0e7-ad8a-4946-8328-d837ffe7241c
-    type: 9
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 21
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1910_tw_newcomers_bp_s
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: true
-    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 30
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc_phone
-    i18nDescriptionParams:
-    goalValue: 1800
-    enableTimeRange:
-      - startTime: "2019-11-05 00:00:00 (GMT+0800)"
-        endTime: "2019-11-09 23:59:59 (GMT+0800)"
-    refIDs:
     platforms:
       - android
       - ios
