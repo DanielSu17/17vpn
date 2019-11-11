@@ -43,21 +43,21 @@ labelInfos:
   - id: "jp_game" # ゲーム,遊戲
     type: 2
     labelID: 26
-    label: {key: streamer_jp_label_game}
+    label: {key: explore_jp_label_game}
     order: 6
     iconURL: "h"
     isHide: false
   - id: "jp_vliver" # Vライバー,V-Liver
     type: 2
     labelID: 222
-    label: {key: streamer_jp_label_vliver}
+    label: {key: explore_jp_label_vliver}
     order: 5
     iconURL: "h"
     isHide: false
   - id: "jp_performer" # パフォーマー, 表演
     type: 2
     labelID: 19
-    label: {key: streamer_jp_label_performer}
+    label: {key: explore_jp_label_performer}
     order: 4
     iconURL: "h"
     isHide: false
@@ -82,19 +82,13 @@ labelInfos:
 
 # 探索頁面會出現的label
 exploreLabels:
-  - famous_streamer  # 人氣主播
-  - jp_freetalk      # 雑談
-  - jp_music         # 音樂
   - jp_recommend     # レコメンド,推薦
   - jp_singer        # シンガー,歌手
   - jp_talent        # タレント,藝人
   - jp_game          # ゲーム,遊戲
   - jp_vliver        # Vライバー,V-Liver
   - jp_performer     # パフォーマー, 表演
-  - jp_hobby         # ホビー,嗜好
-  - jp_fashion       # ファッション,時尚
-  - jp_variety       # バラエティ,綜藝
-  
+
 
 typeCheckIOSVersion: 3.57.0
 typeCheckAndroidVersion: 2.3.88
@@ -136,7 +130,21 @@ labelWhiteList:
     - "b1e571ee-fce8-4ed2-add0-39f6a2844955"    # momoisgood 
     - "24c65a0b-2e5e-458a-aa3c-243fca4f2bd7"    # 沒是多喝水
     - "5435ae09-00d6-42a2-9a27-a173013a6eab"    # 多喝水沒事
-    - 91ce0188-caed-4fb1-95cb-98e0d84fa5e1 # 17x華視午間新聞
+    - 91ce0188-caed-4fb1-95cb-98e0d84fa5e1 # 17x華視午間新聞  
+    
+  jp_talent:
+    - "25d8e5a9-94da-43bf-a160-a74856ad5c16"  # zoe_meat
+    - "ce1527f1-9498-4055-876e-16b72b1e5d50"  # wani_belle
+    - "73e8b839-a1ca-4b08-a51d-2b02ffdea153"  # bellayayaya
+    - "e257e914-5009-48d9-5e8b-3c6da3f2026f"  # lllt.summer
+    - "05443983-3a37-4348-9156-44a75a8af360"  # wtfvc5
+    - "e0bf404e-7d39-431d-93d1-868a44b324cc"  # kevtest4
+    - "c6ebb197-df5b-447c-aa5f-d0970c6b1945"    # 0122w1
+    - "f998daf7-80e1-481b-9fd1-41039066cb80"    # 0122w2
+    - "c9692e9a-d6af-4c3b-b2ba-9954f2fb748d"    # momoiscool 
+    - "b1e571ee-fce8-4ed2-add0-39f6a2844955"    # momoisgood 
+    - "24c65a0b-2e5e-458a-aa3c-243fca4f2bd7"    # 沒是多喝水
+    - "5435ae09-00d6-42a2-9a27-a173013a6eab"    # 多喝水沒事
     
   jp_game:
     - "25d8e5a9-94da-43bf-a160-a74856ad5c16"  # zoe_meat
@@ -171,20 +179,6 @@ labelWhiteList:
     - "149ae0e2-65d0-430b-a3e3-a58d012e4a43"    # 0122w4
     - "925feafc-2069-42de-8576-13c343e703f7"    # 0122w20
     - "9692933f-079c-455a-94c5-13f0336c5070"    # qacontractor4
-   
-  jp_variety:
-    - "25d8e5a9-94da-43bf-a160-a74856ad5c16"  # zoe_meat
-    - "ce1527f1-9498-4055-876e-16b72b1e5d50"  # wani_belle
-    - "73e8b839-a1ca-4b08-a51d-2b02ffdea153"  # bellayayaya
-    - "e257e914-5009-48d9-5e8b-3c6da3f2026f"  # lllt.summer
-    - "05443983-3a37-4348-9156-44a75a8af360"  # wtfvc5
-    - "e0bf404e-7d39-431d-93d1-868a44b324cc"  # kevtest4
-    - "c6ebb197-df5b-447c-aa5f-d0970c6b1945"    # 0122w1
-    - "f998daf7-80e1-481b-9fd1-41039066cb80"    # 0122w2
-    - "c9692e9a-d6af-4c3b-b2ba-9954f2fb748d"    # momoiscool 
-    - "b1e571ee-fce8-4ed2-add0-39f6a2844955"    # momoisgood 
-    - "24c65a0b-2e5e-458a-aa3c-243fca4f2bd7"    # 沒是多喝水
-    - "5435ae09-00d6-42a2-9a27-a173013a6eab"    # 多喝水沒事
     
   jp_performer:
     - "25d8e5a9-94da-43bf-a160-a74856ad5c16"  # zoe_meat
@@ -200,16 +194,4 @@ labelWhiteList:
     - "24c65a0b-2e5e-458a-aa3c-243fca4f2bd7"    # 沒是多喝水
     - "5435ae09-00d6-42a2-9a27-a173013a6eab"    # 多喝水沒事
     
-  jp_talent:
-    - "25d8e5a9-94da-43bf-a160-a74856ad5c16"  # zoe_meat
-    - "ce1527f1-9498-4055-876e-16b72b1e5d50"  # wani_belle
-    - "73e8b839-a1ca-4b08-a51d-2b02ffdea153"  # bellayayaya
-    - "e257e914-5009-48d9-5e8b-3c6da3f2026f"  # lllt.summer
-    - "05443983-3a37-4348-9156-44a75a8af360"  # wtfvc5
-    - "e0bf404e-7d39-431d-93d1-868a44b324cc"  # kevtest4
-    - "c6ebb197-df5b-447c-aa5f-d0970c6b1945"    # 0122w1
-    - "f998daf7-80e1-481b-9fd1-41039066cb80"    # 0122w2
-    - "c9692e9a-d6af-4c3b-b2ba-9954f2fb748d"    # momoiscool 
-    - "b1e571ee-fce8-4ed2-add0-39f6a2844955"    # momoisgood 
-    - "24c65a0b-2e5e-458a-aa3c-243fca4f2bd7"    # 沒是多喝水
-    - "5435ae09-00d6-42a2-9a27-a173013a6eab"    # 多喝水沒事
+
