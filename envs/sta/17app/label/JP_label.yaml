@@ -6,32 +6,56 @@ labelInfos:
     label:
       key: "streamer_label_famous_streamer"
     iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
-    isHide: false
+    isHide: true
   - id: "jp_freetalk" # 雑談
     labelID: 20
     label: {key: streamer_jp_label_freetalk}
     order: 8
     iconURL: "h"
-    isHide: false
+    isHide: true
   - id: "jp_music" # 音樂
     labelID: 13
     label: {key: streamer_jp_label_music}
     order: 7
     iconURL: "h"
+    isHide: true
+  - id: "jp_recommend" # レコメンド,推薦
+    type: 1
+    labelID: 
+    label: {key: explore_jp_label_recommend}
+    order: 9
+    iconURL: "h"
+    isHide: false
+  - id: "jp_singer" # シンガー,歌手
+    type: 1
+    labelID: 
+    label: {key: explore_jp_label_singer}
+    order: 10
+    iconURL: "h"
+    isHide: false
+  - id: "jp_talent" # タレント,藝人
+    type: 1
+    labelID: 
+    label: {key: explore_jp_label_talent}
+    order: 11
+    iconURL: "h"
     isHide: false
   - id: "jp_game" # ゲーム,遊戲
+    type: 2
     labelID: 26
     label: {key: streamer_jp_label_game}
     order: 6
     iconURL: "h"
     isHide: false
   - id: "jp_vliver" # Vライバー,V-Liver
+    type: 2
     labelID: 222
     label: {key: streamer_jp_label_vliver}
     order: 5
     iconURL: "h"
     isHide: false
   - id: "jp_performer" # パフォーマー, 表演
+    type: 2
     labelID: 19
     label: {key: streamer_jp_label_performer}
     order: 4
@@ -42,25 +66,28 @@ labelInfos:
     label: {key: streamer_jp_label_hobby}
     order: 3
     iconURL: "h"
-    isHide: false
+    isHide: true
   - id: "jp_fashion" # ファッション,時尚
     labelID: 30
     label: {key: streamer_jp_label_fashion}
     order: 2
     iconURL: "h"
-    isHide: false
+    isHide: true
   - id: "jp_variety" # バラエティ,綜藝
     labelID: 18
     label: {key: streamer_jp_label_variety}
     order: 1
     iconURL: "h"
-    isHide: false
+    isHide: true
 
 # 探索頁面會出現的label
 exploreLabels:
   - famous_streamer  # 人氣主播
   - jp_freetalk      # 雑談
   - jp_music         # 音樂
+  - jp_recommend     # レコメンド,推薦
+  - jp_singer        # シンガー,歌手
+  - jp_talent        # タレント,藝人
   - jp_game          # ゲーム,遊戲
   - jp_vliver        # Vライバー,V-Liver
   - jp_performer     # パフォーマー, 表演
