@@ -1,7 +1,7 @@
 quiz:
   bufferTime: 6
 hostID: "0e671b10-1660-419c-67f9-9983ebdbad38" # triviabot1
-hostIDOnTV: "94b56df0-336b-4968-7c41-88ec85246024" # 17好聰明
+hostIDOnTV: "94b56df0-336b-4968-7c41-88ec85246024" # 17好聰明SKODA
 
 hosts:
   TRIVIA:
@@ -194,6 +194,30 @@ hosts:
         hourFrom: 0 # GMT+8
         hourTo: 23 # GMT+8
       showBannerPriority: 7
+      disclaimerTitle:
+        key: "trivia_disclaimer_title"
+      disclaimerText:
+        key: "trivia_disclaimer_text"
+      leaveGameToastText:
+        key: "trivia_gamer_leave_double_confirm_text"
+      shareWording:
+        key: "trivia_game_share_wording"
+      isMedalSupported:
+        Default: true
+        CorrectMost: true
+        
+    "94b56df0-336b-4968-7c41-88ec85246024": # 17好聰明SKODA (e2e test用)
+      pictures:
+        default: http://cdn.17app.co/db5fc998-e129-4a03-b640-9e6c06d3ddab.png
+        prepare: http://cdn.17app.co/775d8f29-dd23-4fe5-9320-9d708e77463b.png
+        onLive: http://cdn.17app.co/cb5419c5-97c4-45a6-b4b3-5f6a843ee827.png
+        # default user picture for users without picture
+        user: 857dc12d-46c9-4c63-b3c4-ee8fd1a2eb57.png
+      showBannerTime:
+        weekdays: [0,1,2,3,4,5,6] # 0 ~ 6 means Sunday ~ Saturday
+        hourFrom: 0 # GMT+8
+        hourTo: 23 # GMT+8
+      showBannerPriority: 8
       disclaimerTitle:
         key: "trivia_disclaimer_title"
       disclaimerText:
