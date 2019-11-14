@@ -10,6 +10,8 @@
 # | IAP_Buy_Point | 8 |
 # | View_Stream_X_Seconds | 9 |
 # | IAP_X_Points | 10 |
+# | Share_Twitter | 11 |
+# | View_Stream_X_Different_Days | 13 |
 
 # | category | Value |
 # | --- | --- |
@@ -28,38 +30,7 @@
 # | NON_IAP | 2 |
 
 missions:
-  - ID: c9ae8aa8-639b-403e-8f2d-57e71f7e362a
-    type: 9
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 1
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1909_us_rookiechallenge_bp_10
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 5
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-    i18nDescriptionParams:
-    goalValue: 300
-    enableTimeRange:
-      - startTime: "2019-09-02 16:30:00  (GMT+0800)"
-        endTime: "2019-09-18 12:00:00  (GMT+0800)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: 9174ed4c-6715-4876-a32c-836762f64bd8
+  - ID: 467da53d-a5a7-437a-99be-5532c0bfe599
     type: 8
     lifeCycle: 0
     targetAudience: 0
@@ -68,8 +39,8 @@ missions:
       max: 999
     reward:
       rewardType: 1
-      rewardID: 1909_us_rookiechallenge_bp_10
-      amount: 1
+      rewardID: 1911_us_stardom_bp
+      amount: 5
       expireTimeSecs: 86400
     requirePhoneBinding: false
     i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
@@ -81,10 +52,10 @@ missions:
     i18nContentParams:
     i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
     i18nDescriptionParams:
-    goalValue: 1
+    goalValue: 6000
     enableTimeRange:
-      - startTime: "2019-09-02 16:30:00  (GMT+0800)"
-        endTime: "2019-09-18 10:00:00  (GMT+0800)"
+      - startTime: "2019-11-14 11:00:00 (GMT+0800)"
+        endTime: "2019-11-21 13:00:00 (GMT+0800)"
     refIDs:
     platforms:
       - android
