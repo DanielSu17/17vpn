@@ -1,0 +1,24 @@
+# position example: <type>_<tab>
+position:
+  # index start from 1
+  # Tab : hot
+  program_hot: [2,6,10,15,20,25]
+  beltBanner_hot: 5
+
+  # index start from 0
+  banner_tv: [2]
+  banner_clip: [0]
+# this is for setting position priority in hot cell
+priority:
+  - name: 1 # TVSHOW 
+  - name: 2 # TRIVIA_ON_TV
+  - name: 3 # TVBANNER
+  - name: 4 # TRIVIA
+  - name: 5 # WEREWOLVES
+
+# Expand the cell size to 2x2 if the number of cells less/equal than the number
+enableExpandCellSize: false
+expandCellSizeThreshold: 5
+
+# Fill streams in other region to fit the page limit in hot
+supplyOtherRegionInHot: true
