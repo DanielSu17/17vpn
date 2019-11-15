@@ -5,32 +5,7 @@ hostIDOnTV: "8f95a285-104e-4ea5-ae58-00cca785247a" # 17好聰明
 
 hosts:
   TRIVIA:
-  TRIVIA_ON_TV:
-    "f8b2ce67-5455-479b-9d8d-51217e0d98bb": #17Q麻將Hot
-      pictures:
-        default: https://cdn.17app.co/f0d106f8-9d1a-457b-8daa-dfa43541acf0.jpg
-        prepare: https://cdn.17app.co/f0d106f8-9d1a-457b-8daa-dfa43541acf0.jpg
-        onLive: https://cdn.17app.co/f0d106f8-9d1a-457b-8daa-dfa43541acf0.jpg
-        # default user picture for users without picture
-        user: 857dc12d-46c9-4c63-b3c4-ee8fd1a2eb57.png
-      showBannerTime:
-        weekdays: [5] # 0 ~ 6 means Sunday ~ Saturday
-        hourFrom: 0 # GMT+8
-        hourTo: 23 # GMT+8
-      showBannerPriority: 7
-      disclaimerTitle:
-        key: "trivia_disclaimer_title"
-      disclaimerText:
-        key: "trivia_disclaimer_text"
-      leaveGameToastText:
-        key: "trivia_gamer_leave_double_confirm_text"
-      voteTopic:
-        key: "trivia_tv_vote_topic"
-      shareWording:
-        key: "trivia_game_share_wording"
-      isMedalSupported:
-        Default: true
-        CorrectMost: false
+  TRIVIA_ON_TV:        
     "6e9af721-55c5-41d7-91a4-387aceec94a6": # 17Q
       pictures:
         default: https://cdn.17app.co/00f2a636-07a7-4397-bc45-596aa4646723.png
@@ -56,6 +31,7 @@ hosts:
       isMedalSupported:
         Default: true
         CorrectMost: false
+        
     "8f95a285-104e-4ea5-ae58-00cca785247a": # 台視17Q
       pictures:
         default: https://assets-17app.akamaized.net/91032a33-9c16-4fdc-a617-8985882a37dc.jpg
@@ -81,6 +57,7 @@ hosts:
       isMedalSupported:
         Default: true
         CorrectMost: false
+        
     "91ce0188-caed-4fb1-95cb-98e0d84fa5e1": #17QHBL知識王
       pictures:
         default: https://assets-17app.akamaized.net/1c58ea02-8a31-4d13-a70e-64e3c09d1317.png
@@ -106,6 +83,7 @@ hosts:
       isMedalSupported:
         Default: true
         CorrectMost: false
+        
     "d4fa2189-be5b-4351-8dc6-3793b3e79593": #17嘴一波
       pictures:
         default: https://assets-17app.akamaized.net/d7671531-d2de-45e4-abc4-2ba79dc206cc.jpg
@@ -131,6 +109,7 @@ hosts:
       isMedalSupported:
         Default: true
         CorrectMost: false
+        
     "c21f1749-b48d-43fd-b3e3-32c5edf169e9": # 17趣郊遊
       pictures:
         default: https://assets-17app.akamaized.net/9cf57087-d036-4e01-b9d8-a390e375f800.jpg
@@ -156,6 +135,7 @@ hosts:
       isMedalSupported:
         Default: true
         CorrectMost: false
+        
     "f9006aac-8a81-4844-8b6d-6ee03cd73554": # 17Q正式環境測試帳號
       pictures:
         default: https://assets-17app.akamaized.net/1409d241-c1b6-4071-add4-c5c14fadafcd.jpg
@@ -181,6 +161,7 @@ hosts:
       isMedalSupported:
         Default: true
         CorrectMost: false
+        
     "3251bc72-3784-4f30-a19b-c3f0d77ac07d": # 視網膜
       pictures:
         default: https://assets-17app.akamaized.net/35f89256-16e2-4125-a5be-59584086b067.jpg
@@ -205,6 +186,58 @@ hosts:
         key: "trivia_tv_eyectv_share_wording"
       isMedalSupported:
         Default: false
+        CorrectMost: false
+
+    "f8b2ce67-5455-479b-9d8d-51217e0d98bb": #17Q麻將Hot
+      pictures:
+        default: https://cdn.17app.co/f0d106f8-9d1a-457b-8daa-dfa43541acf0.jpg
+        prepare: https://cdn.17app.co/f0d106f8-9d1a-457b-8daa-dfa43541acf0.jpg
+        onLive: https://cdn.17app.co/f0d106f8-9d1a-457b-8daa-dfa43541acf0.jpg
+        # default user picture for users without picture
+        user: 857dc12d-46c9-4c63-b3c4-ee8fd1a2eb57.png
+      showBannerTime:
+        weekdays: [5] # 0 ~ 6 means Sunday ~ Saturday
+        hourFrom: 0 # GMT+8
+        hourTo: 23 # GMT+8
+      showBannerPriority: 7
+      disclaimerTitle:
+        key: "trivia_disclaimer_title"
+      disclaimerText:
+        key: "trivia_disclaimer_text"
+      leaveGameToastText:
+        key: "trivia_gamer_leave_double_confirm_text"
+      voteTopic:
+        key: "trivia_tv_vote_topic"
+      shareWording:
+        key: "trivia_game_share_wording"
+      isMedalSupported:
+        Default: true
+        CorrectMost: false
+        
+    "ff3c301a-feae-4241-9705-518b3ccab24a": #金牌17Q
+      pictures:
+        default: https://cdn.17app.co/00f2a636-07a7-4397-bc45-596aa4646723.png
+        prepare: https://cdn.17app.co/00f2a636-07a7-4397-bc45-596aa4646723.png
+        onLive: https://cdn.17app.co/00f2a636-07a7-4397-bc45-596aa4646723.png
+        # default user picture for users without picture
+        user: 857dc12d-46c9-4c63-b3c4-ee8fd1a2eb57.png
+      showBannerTime:
+        weekdays: [0,1,2,3,4,5,6] # 0 ~ 6 means Sunday ~ Saturday
+        hourFrom: 0 # GMT+8
+        hourTo: 23 # GMT+8
+      showBannerPriority: 8
+      disclaimerTitle:
+        key: "trivia_disclaimer_title"
+      disclaimerText:
+        key: "trivia_disclaimer_text"
+      leaveGameToastText:
+        key: "trivia_gamer_leave_double_confirm_text"
+      voteTopic:
+        key: "trivia_tv_vote_topic"
+      shareWording:
+        key: "trivia_game_share_wording"
+      isMedalSupported:
+        Default: true
         CorrectMost: false
 
 referral:
