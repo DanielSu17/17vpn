@@ -37,7 +37,13 @@ labelInfos:
     order: 6
     iconURL: "h"
     isHide: true
-
+  - id: "singer" # 實力歌手
+    type: 1
+    label:
+      key: "streamer_label_singer"
+    iconURL: "https://assets-17app.akamaized.net/730ee104-430c-4fd4-ad4c-df0572d14149.png"
+    order: 60
+    isHide: true
 
 # 探索頁面會出現的label
 exploreLabels:
@@ -46,12 +52,31 @@ exploreLabels:
   - jp_potential     # ポテンシャル,潛力
   - jp_game          # ゲーム,遊戲
   - jp_vliver        # Vライバー,V-Liver
-
+  - singer
 
 typeCheckIOSVersion: 3.57.0
 typeCheckAndroidVersion: 2.3.88
 
 labelWhiteList:
+  singer:
+    - "73e8b839-a1ca-4b08-a51d-2b02ffdea153"  # bellayayaya
+    - 115851d0-d202-47c5-9079-71d3e7f704f7 # 亮金金
+    - 21280e9c-e07d-4d1b-83b7-e591bc3b1056 # 我叫易小魚🐟🎤
+    - 2755452a-a0ec-4a3f-a83d-6db0634f62ae # 胡利基
+    - 604ec832-4884-47d6-beed-cf178cad1caa # 篠崎泫🎤篠崎是姓泫是名
+    - 60602fef-d6ee-4fb6-a38c-1ffd15b16c6f # 張語噥sammy
+    - 83821902-75d0-4c7a-86c4-0cf8590cc7d8 # 張聖子-小露Lucia
+    - c9fafa51-ab41-407f-9bac-6b5c9e201cd5 # 徐凱希cathy
+    - 88f52a35-d951-4beb-822c-ad3d7e8f479b # 🎤鐵肺美金💰
+    - 431720ad-470c-4c38-97c8-f195f5bddf4b # kevtest3
+    - f188d0e6-0c70-49c4-8da1-e787f389bb4f # 劉子瑜的⛳任性父皇💛
+    - e257e914-5009-48d9-5e8b-3c6da3f2026f # lllt.summer
+    - 2c9ad019-2b31-4fb9-800d-fa518b51a74d # finn1
+    - 500514df-d764-44dd-7883-e1966d2ff634 # 小紫
+    - "4f1b18c7-4d09-428c-86a4-2511c81446af"    # 0122w3
+    - "149ae0e2-65d0-430b-a3e3-a58d012e4a43"    # 0122w4
+    - "925feafc-2069-42de-8576-13c343e703f7"    # 0122w20
+    - "9692933f-079c-455a-94c5-13f0336c5070"    # qacontractor4
   jp_recommend:
     - 73e8b839-a1ca-4b08-a51d-2b02ffdea153 # bellayayaya
     - 375fcf50-8168-416e-9fa2-c9702a5ec08a # 宋少騫Zustin
