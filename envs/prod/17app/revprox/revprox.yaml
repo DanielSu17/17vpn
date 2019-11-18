@@ -28,7 +28,7 @@ conf:
             cancelPromoteTopLiveStream,hideHotLivestreamAction"
      api: "api"
      feed: "getPostFeed,celebrities/all,celebrities"
-     gift: "getLiveStreamGiftLeaderboard,sendGift,\
+     gift: "getLiveStreamGiftLeaderboard,\
             getLiveStreamGiftInfo,getUnreadReceivedGift,\
             getLiveStreamAllGifts,readGift,getGiftList,\
             getReceivedGiftLog"
@@ -78,6 +78,10 @@ conf:
      redenvelopes: "redenvelopes"
      sportscar: "sportscar"
      monster: "monsters"
+ - url_key: "go_trade_url"
+   weight: 1  # (0, 100]
+   white_list:
+     gift: "gift"
  - url_key: "go_lives_url"
    white_list:
      # v1 api
