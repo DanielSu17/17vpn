@@ -1,63 +1,154 @@
 # JP label config
 
 labelInfos:
-  - id: "famous_streamer" # 人氣主播
+ 
+  - id: "jp_recommend" # レコメンド,推薦
     type: 1
-    label:
-      key: "streamer_label_famous_streamer"
-    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
-    isHide: true
-  - id: "jp_freetalk" # 雑談
-    labelID: 365
-    label: {key: streamer_jp_label_freetalk}
-    order: 8
+    labelID: 
+    label: {key: explore_jp_label_recommend}
+    order: 9
     iconURL: "h"
     isHide: true
-  - id: "jp_music" # 音樂
-    labelID: 366
-    label: {key: streamer_jp_label_music}
-    order: 7
+  - id: "jp_music" # 音楽,音樂
+    type: 1
+    labelID: 
+    label: {key: explore_jp_label_music}
+    order: 10
     iconURL: "h"
     isHide: true
-  - id: "jp_game" # ゲーム,遊戲
-    labelID: 367
-    label: {key: streamer_jp_label_game}
-    order: 6
+  - id: "jp_potential" # ポテンシャル,潛力
+    type: 1
+    labelID: 
+    label: {key: explore_jp_label_potential}
+    order: 11
     iconURL: "h"
     isHide: true
   - id: "jp_vliver" # Vライバー,V-Liver
-    labelID: 368
-    label: {key: streamer_jp_label_vliver}
+    type: 2
+    labelID: 222
+    label: {key: explore_jp_label_vliver}
     order: 5
     iconURL: "h"
     isHide: true
-  - id: "jp_performer" # パフォーマー, 表演
-    labelID: 369
-    label: {key: streamer_jp_label_performer}
-    order: 4
+  - id: "jp_game" # ゲーム,遊戲
+    type: 2
+    labelID: 26
+    label: {key: explore_jp_label_game}
+    order: 6
     iconURL: "h"
     isHide: true
-  - id: "jp_hobby" # ホビー,嗜好
-    labelID: 370
-    label: {key: streamer_jp_label_hobby}
-    order: 3
-    iconURL: "h"
-    isHide: true
-  - id: "jp_fashion" # ファッション,時尚
-    labelID: 371
-    label: {key: streamer_jp_label_fashion}
-    order: 2
-    iconURL: "h"
-    isHide: true
-  - id: "jp_variety" # バラエティ,綜藝
-    labelID: 372
-    label: {key: streamer_jp_label_variety}
-    order: 1
-    iconURL: "h"
-    isHide: true
+
+
+# 探索頁面會出現的label
+exploreLabels:
+  - jp_recommend     # レコメンド,推薦
+  - jp_music         # 音楽,音樂
+  - jp_potential     # ポテンシャル,潛力
+  - jp_game          # ゲーム,遊戲
+  - jp_vliver        # Vライバー,V-Liver
+
 
 typeCheckIOSVersion: 3.57.0
 typeCheckAndroidVersion: 2.3.88
 
 labelWhiteList:
-  jp_freetalk:
+
+  jp_recommend:
+    - 73e8b839-a1ca-4b08-a51d-2b02ffdea153 # bellayayaya
+    - 375fcf50-8168-416e-9fa2-c9702a5ec08a # 宋少騫Zustin
+    - 558c7736-3677-4b17-8f94-1631a6870422 # 吳金隆Gino
+    - 671f4ff1-212a-4e7a-80e9-360103c3ab91 # 趙泓捷
+    - 4a771cdf-1fd6-4fcb-8186-73cc32ff5483 # 鍾鎮宇Justin
+    - 94728e88-feca-4ca9-9062-39e3d2f93467 # 小沙
+    - 2e780a8e-6685-496b-824a-171a27e89613 # kevtest1
+    - 115851d0-d202-47c5-9079-71d3e7f704f7 # 亮金金
+    - 21280e9c-e07d-4d1b-83b7-e591bc3b1056 # 我叫易小魚🐟🎤
+    - 2755452a-a0ec-4a3f-a83d-6db0634f62ae # 胡利基
+    - 7fcb2ad5-f570-41ce-4af9-1bf579cec0ae # mihyang🌼美香🌼
+    - 6daf6341-3fa7-4ee1-6d33-8b93293bf468 # ちゅま👄👩🏻CHUMA
+    - e7973d9b-f105-4649-a099-b0663128dbb9 # 虚弱ちゃん🐁🐀
+    - 409c91e9-da9c-43a9-5f8b-4623435892bc # ゆりなーる⚽🌸yurina
+    - 75abdb3f-a74f-49ae-8ac3-ecb632c0622d # けみ🐯🌈kemi💎
+    - 282bdf5b-e068-41b4-96d4-61422885dd43 # pocha🍮ぽちゃ
+    - afe6f8e5-fefc-4f7a-6b87-dcdb8f3fb5db # 🐶める❤️MEL🐶
+    - 811f9556-b97b-4a60-986c-8473df07bbe1 # 岸田直樹🌻Naoking
+    - df574cd5-7343-4c50-6933-a38647e14443 # 石原彩香🌹AYAKA
+    - 5673396a-0166-419e-686e-47419ac83e76 # もも🍑💕momo🐟
+    - 15fe1cbc-54af-41cb-7e6f-38a0882e57b4 # える🍮eru💚｡・:＋°
+    - bcb88c01-c83a-4399-a641-300903607b87 # ✨🧬🧸そうぴ🧸🧬✨
+    - a6e7fc06-962d-4bf5-6ffd-73e276c331c6 # まき🐱🎀💨MaKi
+    - d967a97f-09bf-4ffa-6951-01788d8b0b7f # SAKI🐻💉さきぽこ💕
+    - fabbc8c6-9a68-4391-6cde-ceca3d89a9e1 # はつぴー🐿️hatsupii👼💕
+    - 5a950d22-470f-46be-a4fe-85a9e449952a # りなぽよ🍖🍣Rina★
+    - da681235-3655-4966-812b-7744f361a51b # 高松あい_violin
+    - d66c72ee-5bca-4ba9-b7cd-1784302ba8f7 # 冨吉明日香🦖💙
+    - fce4dd1d-5f03-4c80-7d14-81e45c3d55ea # 明星優花🌹✨❄ゆうか
+    - f24bd54f-3a9e-4fa1-a92c-5d27e87d5bc4 # みみ🐰💘mimi
+    - 2152af65-d89b-4d2c-85b0-064af4ed4b22 # 🐼るん💖ruuuchan🐶
+    - 6ef4599c-4afb-4588-75ef-33d4266dc624 # アリエルな🧜‍♀️🌙RUNA👀
+    - f108c753-515b-45eb-a416-5089469db091 # みく🐹❤️miku
+    - f5fe1d46-368c-4fc3-7194-b720b55f87a5 # 星優紀💫🐥💛Yuuki
+    - 9c7742bc-9df2-4a59-770e-9eab2b3bc47b # みぃみ🐣myimi
+    - 83998e72-e49d-4b51-ac70-d432e0bb8a7b # ゆあ🐣🎀YUA
+    - eff9f06b-5537-4361-9e16-1c2a7da795b6 # まいまい🐼🐰🐨mai🌻
+    
+  jp_music:
+    - 74f49b6a-b6d0-4a10-81da-fbf183df7710 # harami_piano
+    - da681235-3655-4966-812b-7744f361a51b # 高松あい_violin
+    - b2470074-d0d7-4d19-99fc-d257618dcd08 # まっか🍄😆mayu🎶
+    - 017a77b5-0051-48f0-9089-0e187650455e # ユウナ🍌uuna
+    - 36a2afab-abec-420a-788d-8a1202ee6927 # suketorarin
+    - b4a74abd-7645-4369-5cab-a755caa84a12 # 詩音🐰🌼shion
+    - 43f7a8fd-aa49-4323-8515-33d95769fdae # 大空サヤ💖SAYATEA🍌
+    - a2679e9f-b971-4fce-893e-b799c47e6c1d # みさ👠MISA🌹✨
+    - fd1f5528-4e68-427b-9352-5aebcf6fa18d # しおりん🐱shiori🍓🍒
+    - 57256ad7-3660-4253-77de-004f7d82cfba # Masunari👅益生🎤✨
+    - "25d8e5a9-94da-43bf-a160-a74856ad5c16"  # zoe_meat
+    - "ce1527f1-9498-4055-876e-16b72b1e5d50"  # wani_belle
+    - "73e8b839-a1ca-4b08-a51d-2b02ffdea153"  # bellayayaya
+    - "e257e914-5009-48d9-5e8b-3c6da3f2026f"  # lllt.summer
+    - "05443983-3a37-4348-9156-44a75a8af360"  # wtfvc5
+    - "e0bf404e-7d39-431d-93d1-868a44b324cc"  # kevtest4
+    - "c6ebb197-df5b-447c-aa5f-d0970c6b1945"    # 0122w1
+    - "f998daf7-80e1-481b-9fd1-41039066cb80"    # 0122w2
+    - "c9692e9a-d6af-4c3b-b2ba-9954f2fb748d"    # momoiscool
+    - "b1e571ee-fce8-4ed2-add0-39f6a2844955"    # momoisgood
+    - "24c65a0b-2e5e-458a-aa3c-243fca4f2bd7"    # 沒是多喝水
+    - "5435ae09-00d6-42a2-9a27-a173013a6eab"    # 多喝水沒事
+
+  jp_potential:
+    - d454bde9-59c8-426c-a925-08a3ea8a0c2e # あみ💄🙈❤️amiigo
+    - 868fe8ef-0673-433c-b1ab-ad7aea73156c # みお🐙✨🦑mio🍵
+    - 484a1c29-af95-4989-9aa5-4671637d217e # りんあ_Rina💖🐥🌈
+    - fb1319ef-7668-402c-522c-c1e0b64a003a # キャノン🍣👑canon
+    - e58efa75-2fbc-427f-94ea-881355d67175 # みさ🌼🌈💕misa
+    - 19bbc12c-d5df-4a21-88a5-4a69770e5675 # しんじ👑🍼💙shinji
+    - 28708644-4556-4bd0-b294-ce4eb7b814cd # バルーンHIRO_Balloon_Art
+    - c29fbd33-bb58-4e57-b8fd-19d1d2b3bf97 # いおりん🐶✂️IORIN
+    - 104e379d-03b2-4347-ad64-9875df91bd5a # なっちん🐰🎀nuts🥜
+    - 4ebfc675-add3-4c91-945d-59c114b40756 # あんぽん5296
+    
+  jp_game:
+    - 749c76ba-2f56-4c67-89b9-f1f15e4c21be # ちびたん_17
+    - 0b67e4d7-43f3-467c-9cf6-1488bbac11f3 # re1yan
+    - 53c749f5-97f6-4d0f-980c-dcf95ed5671c # HOMIKO
+    - ef865a9a-9af6-41b5-8280-abefe277c1be # みひちゃ
+    - 75fb1e2b-d4f3-4ced-af22-8fda7aa58f83 # じゃっく_inuu
+    - 183be729-6799-43eb-91e9-32266d3ddb75 # マコティス🤤🥳
+    - 458f7a95-93f4-4fa0-bcdc-2ea33558a4c9 # ちゃろ💥🔫TV👑
+    - 84bc18e5-d91c-4a66-82e1-6306215ae2fb # ふぁずGames
+    - f6297fdb-2dab-4f5e-bb9c-4d3f35b367b1 # 兎乃はち.
+    - f35f856a-d667-44ef-8fc5-30950eade04e # 猫无🐱れおてゃん🗽🔥
+    
+  jp_vliver:  
+    - 2ccc4f7d-8d87-4b47-aa35-9252f80c80bf # 🎀Ichika😺いちか🎀
+    - a70e56ae-ec78-48a1-8464-2b610488cbda # 桜月花音🌸V-Liver🌙
+    - f9f8db04-0a7e-4ab8-9484-07b847a10f7c # くまお🐻Kumao
+    - 820bd805-fdc4-4474-a6fa-17ead3b76e02 # 月野木チロル_Vliver
+    - 05724242-8d32-4202-9b9d-7e900a0cbc0c # 瑞無るく_0214
+    - e14758d3-4386-4934-9eb7-b762c1213c15 # ろくろみ💗🖤VLiver
+    - 3b902be1-62d0-4dcb-ad69-5c7e8ff6e38e # 梅咲ちゃむ💐🐰VLiver
+    - bd027b2b-3a52-4664-b613-2d7a106abeaf # はいぴんぐ🎮💚モナカ
+    - 131f3044-8e69-4ea2-99bd-0a9e0e3b6222 # 星乃めあ
+    - 3b4e59f2-be36-4eda-8fe9-a4b625942288 # 凛音なな🦋🎗V-Liver
+    
