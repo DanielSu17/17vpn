@@ -1,0 +1,240 @@
+- testName: autoEnterLive
+  enableABtest: false
+  expiredSecond: 604800 # 7 day
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b" 
+- testName: recommendFollow
+  enableABtest: false
+  expiredSecond: 604800 # 7 day
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: newbieFocus # 消除雜訊
+  enableABtest: false
+  expiredSecond: 86400 # 1 day
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: newbieGuidance # 新手引導(新手遮罩)
+  enableABtest: false
+  expiredSecond: 259200 # 3 days
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: completeRegistration
+  enableABtest: false
+  expiredSecond: 10 # 10 second 
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a" 
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: newbieIAP # 新手首購優惠
+  enableABtest: false
+  expiredSecond: 604800 # 7 days
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: streamRoomEntryTitle # 直播間入口標題
+  enableABtest: false
+  lastCharGroup:
+    "0": "a"
+    "1": "b"
+    "2": "a"
+    "3": "b"
+    "4": "a"
+    "5": "b"
+    "6": "a"
+    "7": "b"
+    "8": "a"
+    "9": "b"
+    "a": "a"
+    "b": "b"
+    "c": "a"
+    "d": "b"
+    "e": "a"
+    "f": "b"
+- testName: newbiePurchaseEvent # 新手首購活動
+  enableABtest: false
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: newbieOnboard # 新手流程優化 (onboarding_flow_optimization)
+  enableABtest: false
+  expiredSecond: 604800 # 7 day
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: newbieGuide # 新手流程優化p5 (Feature Guide)
+  enableABtest: false
+  expiredSecond: 604800 # 7 day
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+# 新手流程優化p6 - b: 移除四頁landing page, 移除新手遮罩, 移除enterLivePrompt
+- testName: newbieDismissDialog
+  enableABtest: false
+  expiredSecond: 259200 # 3 days
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+# Phase 7: 台灣強化新用戶引導
+- testName: newbiePhase7
+  enableABtest: false
+  expiredSecond: 600 # 10 mins, it should disappear soon.
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
