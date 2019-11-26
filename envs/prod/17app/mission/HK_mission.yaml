@@ -30,19 +30,19 @@
 # | NON_IAP | 2 |
 
 missions:
-  - ID: a9e36e79-7392-438e-9204-d3e3649fdb32
+  - ID: e20a1154-3356-45e2-bc8f-72ff0188772c
     type: 8
     lifeCycle: 0
     targetAudience: 0
     levelRange:
-      min: 15
+      min: 1
       max: 999
     reward:
       rewardType: 1
-      rewardID: 1911_tw_countdown_bp_100
+      rewardID: 1912_hk_fashion_bp_250
       amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: true
+      expireTimeSecs: 259200
+    requirePhoneBinding: false
     i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
     i18nTitleParams:
       - needMap: false
@@ -54,9 +54,145 @@ missions:
     i18nDescriptionParams:
     goalValue: 1
     enableTimeRange:
-      - startTime: "2019-11-09 18:00:00 (GMT+0800)"
-        endTime: "2019-11-20 23:59:59 (GMT+0800)"
+      - startTime: "2019-12-01 18:00:00 (GMT+0800)"
+        endTime: "2019-12-31 23:59:59 (GMT+0800)"
     refIDs:
+    platforms:
+      - android
+      - ios
+
+  - ID: 7ee2ae26-8801-405c-87aa-efc858b44b44
+    type: 9
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 1912_hk_fashion_bp_250
+      amount: 1
+      expireTimeSecs: 259200
+    requirePhoneBinding: false
+    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 5
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+    i18nDescriptionParams:
+    goalValue: 300
+    enableTimeRange:
+      - startTime: "2019-12-01 18:00:00 (GMT+0800)"
+        endTime: "2019-12-31 23:59:59 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
+  - ID: 72626ab3-edad-4cdf-acba-9f95ea4e9d52
+    type: 3
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 1912_hk_fashion_bp_250
+      amount: 1
+      expireTimeSecs: 259200
+    requirePhoneBinding: false
+    i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 10
+      - needMap: false
+        mapOption: 2
+        value: 1912_hk_fashion_a_100
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
+    i18nDescriptionParams:
+    goalValue: 10
+    enableTimeRange:
+      - startTime: "2019-12-01 18:00:00 (GMT+0800)"
+        endTime: "2019-12-31 23:59:59 (GMT+0800)"
+    refIDs:
+      - 1912_hk_fashion_a_100
+    platforms:
+      - android
+      - ios
+
+  - ID: 56d6bbad-6f53-4111-b07b-0d7c37cae8ee
+    type: 3
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 1912_hk_fashion_bp_250
+      amount: 1
+      expireTimeSecs: 259200
+    requirePhoneBinding: false
+    i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 5
+      - needMap: false
+        mapOption: 2
+        value: 1912_hk_fashion_a_1000
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
+    i18nDescriptionParams:
+    goalValue: 5
+    enableTimeRange:
+      - startTime: "2019-12-01 18:00:00 (GMT+0800)"
+        endTime: "2019-12-31 23:59:59 (GMT+0800)"
+    refIDs:
+      - 1912_hk_fashion_a_1000
+    platforms:
+      - android
+      - ios
+
+  - ID: b4d28ba9-3e04-4d73-a9a3-1404136b0c10
+    type: 3
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 1912_hk_fashion_bp_250
+      amount: 1
+      expireTimeSecs: 259200
+    requirePhoneBinding: false
+    i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 1
+      - needMap: false
+        mapOption: 2
+        value: 1912_hk_fashion_a_10000
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
+    i18nDescriptionParams:
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2019-12-01 18:00:00 (GMT+0800)"
+        endTime: "2019-12-31 23:59:59 (GMT+0800)"
+    refIDs:
+      - 1912_hk_fashion_a_10000
     platforms:
       - android
       - ios
