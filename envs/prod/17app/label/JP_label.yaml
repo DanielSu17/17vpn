@@ -39,11 +39,20 @@ labelInfos:
     order: 6
     iconURL: "h"
     isHide: true
+  - id: "jp_pickup" # PICK UP
+    type: 3
+    labelID: 
+    label: {key: explore_jp_label_pickup}
+    featured: true
+    order: 12
+    iconURL: "h"
+    isHide: true
 
 
 # 探索頁面會出現的label
 exploreLabels:
   - jp_music         # 音楽,音樂
+  - jp_pickup        # PICK UP
   - jp_recommend     # レコメンド,推薦
   - jp_potential     # ポテンシャル,潛力
   - jp_game          # ゲーム,遊戲
@@ -54,6 +63,18 @@ typeCheckIOSVersion: 3.57.0
 typeCheckAndroidVersion: 2.3.88
 
 labelWhiteList:
+
+  jp_pickup:
+    - 3567a37a-54ec-4cf1-b2a4-e41252210a88
+    - 74f49b6a-b6d0-4a10-81da-fbf183df7710
+    - dc24fbf1-7bc6-41be-b744-5e6da4471e67
+    - afd6faf0-0590-4fc6-5d26-b389e6f67cb1
+    - d4ec531b-046d-44a2-a456-3bf4a75acf1b
+    - bd027b2b-3a52-4664-b613-2d7a106abeaf
+    - 9cfe98dd-719c-4ccd-5390-9b8e8d5ec54f
+    - a4bd0a1e-2c2b-4a28-9066-259c2808fccb
+    - 7fcb2ad5-f570-41ce-4af9-1bf579cec0ae
+    - ae45802e-2256-49a7-b70b-112e3924410a
 
   jp_recommend:
     - 7fcb2ad5-f570-41ce-4af9-1bf579cec0ae # mihyang🌼美香🌼
