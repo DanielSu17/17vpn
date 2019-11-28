@@ -28,10 +28,6 @@ conf:
             cancelPromoteTopLiveStream,hideHotLivestreamAction"
      api: "api"
      feed: "getPostFeed,celebrities/all,celebrities"
-     gift: "getLiveStreamGiftLeaderboard,\
-            getLiveStreamGiftInfo,getUnreadReceivedGift,\
-            getLiveStreamAllGifts,readGift,getGiftList,\
-            getReceivedGiftLog"
      legacy: "getUserInfo,getUserInfoByUserID,\
             getSelfInfo,unblockUserAction,blockUserAction,adminBlockUserAction,\
             getBlockUserList,followUserAction,unfollowUserAction,\
@@ -85,8 +81,9 @@ conf:
      # v1 api
      apiv1: "gift"
      # for legacy api
-     gift: "getLiveStreamGiftLeaderboard,gift/getLiveStreamGiftLeaderboard,\
-            getReceivedGiftLog,gift/getReceivedGiftLog"
+     gift: "getLiveStreamGiftLeaderboard,\
+            getLiveStreamAllGifts,\
+            getReceivedGiftLog"
  - url_key: "go_lives_url"
    white_list:
      # v1 api
