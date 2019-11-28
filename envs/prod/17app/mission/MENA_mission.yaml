@@ -1,0 +1,49 @@
+# | type | Value |
+# | --- | --- |
+# | Trivia_DayTime_Answer | 1 |
+# | Trivia_Night_Answer | 2 |
+# | Send_Gift | 3 |
+# | Comment_In_Program | 4 |
+# | Comment_In_Livestream | 5 |
+# | Trivia_On_TV_Play | 6 |
+# | Trivia_Play | 7 |
+# | IAP_Buy_Point | 8 |
+# | View_Stream_X_Seconds | 9 |
+# | IAP_X_Points | 10 |
+# | Share_Twitter | 11 |
+# | View_Stream_X_Different_Days | 13 |
+
+# | category | Value |
+# | --- | --- |
+# | Fixed | 0 |
+# | Ratio | 1 |
+
+# | lifeCycle | Value |
+# | --- | --- |
+# | Daily | 0 |
+# | OneTime | 1 |
+
+# | targetAudience | Value |
+# | --- | --- |
+# | REGIONAL | 0 |
+# | IAP | 1 |
+# | NON_IAP | 2 |
+
+missions:
+
+#tagInfos
+tagInfos:
+  0: # Daily
+    token:
+      key: "baggage_mission_daily_tag"
+    color: "#f5487d"
+  1: # ONETIME
+    token:
+      key: "baggage_mission_one_time_tag"
+    color: "#F6696C"
+
+i18nMissionCompleteToast: "baggage_mission_toast_claimed"
+refreshHour: 5 # 5:00 (GMT+8)
+supportedVersion:
+  android: "2.3.17"
+  ios: "3.8.0"
