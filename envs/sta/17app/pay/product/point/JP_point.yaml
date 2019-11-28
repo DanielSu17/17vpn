@@ -13,17 +13,17 @@ eventBasedIAP:
 
 productBasedIAP:
 
- - startTime: "2019-10-15T22:00:00+09:00"
-   endTime: "2019-10-30T23:59:59+09:00"
+ - startTime: "2019-10-01T00:00:00+09:00"
+   endTime: "2019-12-31T23:59:59+09:00"
    showCountdownUnderSticker: false
    showCountdownInPopUp: false
    stickerURL: "https://assets-17app.akamaized.net/30feb803-3274-42e2-8e41-187274f2314b.png"
    eventInfo:
      eventTitleI18nKey: ""
      eventURL: ""
-     bannerImageURL: "https://cdn.17app.co/77487d8f-aba0-4bb6-b484-14573a2a1350.png"
+     bannerImageURL: "https://cdn.17app.co/8bfdc36a-dbf7-459a-aff4-2233237b92d5.png"
    layoutInfo:
-     titlePicURL: "https://cdn.17app.co/a8a2761d-97fc-4beb-ba5b-3aa5eed45cfd.png"
+     titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
      messageColor: "#6F6777"
      messageShadowColor: "#F5F5F5"
      messageI18nKey: ""
@@ -32,21 +32,20 @@ productBasedIAP:
      descRightBottomURL: "test.png"
      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+     rewardIconURL:
+        premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
    colorInfo:
      pointColor: "#28232D"
      bonusPointColor: "#B36F6777"
      priceColor: "#28232D"
      rewardTextColor: "#F69355"
    pointProducts:
-     - productID: "media17_points_14000_20191001"
-       bonusPoint: 500
-       shouldHighlight:  true
      - productID: "media17_points_130"
-       bonusPoint: 200
+       bonusPoint: 300
        shouldHighlight:  true
        reward:
-           type: 1
-           refCount: 3
+         type: 1
+         refCount: 5
      - productID: "media17_points_670"
        bonusPoint: 0
        shouldHighlight:  false
@@ -59,15 +58,16 @@ productBasedIAP:
      - productID: "media17_points_6000"
        bonusPoint: 0
        shouldHighlight:  false
-   firstPurchaseType: 2
+     - productID: "media17_points_14000_20191001"
+       bonusPoint: 0
+       shouldHighlight:  false
+   firstPurchaseType: 1
    taInfo:
      registerRange:
        dayStart: 0 # 0 means no limit
        dayEnd: 0 # 0 means no limit
    displayRewardInfo: true
    abtestName:
-
-
 
 secretIAP:
   - ID: "retentionRewardIap"
