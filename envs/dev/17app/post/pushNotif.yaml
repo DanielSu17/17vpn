@@ -2,6 +2,7 @@ enable: true
 scheduler:
   period: 1 # minutes
   alarmRatio: 5
+# schedule only works using regionGroup
 schedule:
   TW:
     - 15:10:00
@@ -12,5 +13,5 @@ schedule:
   JP:
     - 12:30:00
     - 18:30:00
-  
+
 sharedPostEnable: true
