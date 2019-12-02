@@ -1,93 +1,83 @@
 forcePromoteVirtualStream: false
-
-# porn detection
-pornDetection:
-  enable: false
-  intervalMS: 30000
-  modelVersion: 2
-  modelLink: "https://cdn.17app.co/nsfw/model.tflite"
-  labelLink: "https://cdn.17app.co/nsfw/dict.txt"
-  threshold: 5 # PROD: 5, STAG: 3, DEV: 3
-  labels:
-    - label: "unsafe"
-      confidence: 54.87 # low threshold for test
-    - label: "safe"
-      confidence: 54.87 # low threshold for test
-    - label: "empty"
-      confidence: 54.87 # low threshold for test
-
 defaultComments:
   - specificTimeFrame: true
     startTime: "00:00:00"
     endTime: "03:59:59"
+    comments: ["سبعة", "👋", "👏👏👏", "😍", "😂😂😂"]
     commentsInfo:
-      - content: "初次見面😃"
+      - content: "سبعة"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
-      - content: "17玩荒唐動物園🐈"
+      - content: "👋"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
-      - content: "我誰❓❗"
+      - content: "👏👏👏"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
-      - content: "666🤙"
+      - content: "😍"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "😂😂😂"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
   - specificTimeFrame: true
     startTime: "04:00:00"
     endTime: "11:59:59"
+    comments: ["سبعة", "👋", "👏👏👏", "😍", "😂😂😂"]
     commentsInfo:
-      - content: "初次見面😃"
+      - content: "سبعة"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
-      - content: "17玩荒唐動物園🐈"
+      - content: "👋"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
-      - content: "我誰❓❗"
+      - content: "👏👏👏"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
-      - content: "我想看你穿球衣～"
+      - content: "😍"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
-      - content: "666🤙"
+      - content: "😂😂😂"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
   - specificTimeFrame: true
     startTime: "12:00:00"
     endTime: "17:59:59"
+    comments: ["سبعة", "👋", "👏👏👏", "😍", "😂😂😂"]
     commentsInfo:
-      - content: "初次見面😃"
+      - content: "سبعة"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
-      - content: "17玩荒唐動物園🐈"
+      - content: "👋"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
-      - content: "我誰❓❗"
+      - content: "👏👏👏"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
-      - content: "我想看你穿球衣～"
+      - content: "😍"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
-      - content: "666🤙"
+      - content: "😂😂😂"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
   - specificTimeFrame: true
     startTime: "18:00:00"
     endTime: "23:59:59"
+    comments: ["سبعة", "👋", "👏👏👏", "😍", "😂😂😂"]
     commentsInfo:
-      - content: "初次見面😃"
+      - content: "سبعة"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
-      - content: "17玩荒唐動物園🐈"
+      - content: "👋"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
-      - content: "我誰❓❗"
+      - content: "👏👏👏"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
-      - content: "我想看你穿球衣～"
+      - content: "😍"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
-      - content: "666🤙"
+      - content: "😂😂😂"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
 hotListOrder: ["DEFAULT", "US", "OTHERS"]
@@ -103,115 +93,8 @@ birthdayComment:
 comment:
   program:
     enableLengthCheck: true
-    maxLength: 35
+    maxLength: 30
 
-programDefaultComments:      #全部 program 預設留言
-  - commentsInfo:
-      - content: "😂😂"
-        contentColor: "#000000"
-        backgroundColor: "#b228232d"
-      - content: "👏👏"
-        contentColor: "#000000"
-        backgroundColor: "#b228232d"
-      - content: "👍👍"
-        contentColor: "#000000"
-        backgroundColor: "#b228232d"
-      - content: "🙌🙌"
-        contentColor: "#000000"
-        backgroundColor: "#b228232d"
-      - content: "😍"
-        contentColor: "#FFFFFF"
-        backgroundColor: "#b228232d"
-
-programComments:    # 指定 program 預設留言
-  5ca7d63b-2b07-40cd-a11a-d0ce1f162fda:    # 這是 programID
-    - commentsInfo:
-        - content: "晚上好"
-          contentColor: "#FFFFFF"
-          backgroundColor: "#b228232d"
-        - content: "好聽👏"
-          contentColor: "#FFFFFF"
-          backgroundColor: "#b228232d"
-        - content: "👍👍"
-          contentColor: "#FFFFFF"
-          backgroundColor: "#b228232d"
-        - content: "加油🙌"
-          contentColor: "#FFFFFF"
-          backgroundColor: "#b228232d"
-        - content: "耳朵懷孕了😳"
-          contentColor: "#FFFFFF"
-          backgroundColor: "#b228232d"
-        - content: "我來守護你🤴"
-          contentColor: "#FFFFFF"
-          backgroundColor: "#b228232d"
-  2f519817-e741-4c15-7364-b0f783ede4e4:    # 這是 programID
-    - commentsInfo:
-        - content: "晚上好"
-          contentColor: "#FFFFFF"
-          backgroundColor: "#b228232d"
-        - content: "哈囉～"
-          contentColor: "#FFFFFF"
-          backgroundColor: "#b228232d"
-        - content: "耳朵懷孕了😳"
-          contentColor: "#FFFFFF"
-          backgroundColor: "#b228232d"
-        - content: "好聽👏"
-          contentColor: "#FFFFFF"
-          backgroundColor: "#b228232d"
-        - content: "我來守護你🤴"
-          contentColor: "#FFFFFF"
-          backgroundColor: "#b228232d"
-  5ba19bf2-6f65-43a5-9a35-10ca91b4c9a5:    # 這是 17嘴一波
-    - commentsInfo:
-        - content: "哈囉～"
-          contentColor: "#FFFFFF"
-          backgroundColor: "#b228232d"
-        - content: "😂😂"
-          contentColor: "#FFFFFF"
-          backgroundColor: "#b228232d"
-        - content: "加油👍👍"
-          contentColor: "#FFFFFF"
-          backgroundColor: "#b228232d"
-        - content: "強耶👏👏"
-          contentColor: "#FFFFFF"
-          backgroundColor: "#b228232d"
-        - content: "傻眼"
-          contentColor: "#FFFFFF"
-          backgroundColor: "#b228232d"
-  5c4e8d8b-b92f-4a1e-41ed-bd0bc07bb040 :    # 這是 17Q限時答題搶獎金
-    - commentsInfo:
-        - content: "分享+追蹤抽福袋🎁"
-          contentColor: "#FFFFFF"
-          backgroundColor: "#b228232d"
-        - content: "主持人我老婆"
-          contentColor: "#FFFFFF"
-          backgroundColor: "#b228232d"
-        - content: "吼～氣氣氣氣氣"
-          contentColor: "#FFFFFF"
-          backgroundColor: "#b228232d"
-        - content: "追蹤17Q發大財💰"
-          contentColor: "#FFFFFF"
-          backgroundColor: "#b228232d"
-        - content: "衝破人數再洩題🙌🏼"
-          contentColor: "#FFFFFF"
-          backgroundColor: "#b228232d"
-  950afd4f-658e-4bc7-8675-aa6dbacbaa1a :    # 這是 明星製作人
-    - commentsInfo:
-        - content: "分享+追蹤是好寶寶💕"
-          contentColor: "#FFFFFF"
-          backgroundColor: "#b228232d"
-        - content: "鎖定明星製作人🎬"
-          contentColor: "#FFFFFF"
-          backgroundColor: "#b228232d"
-        - content: "吼～氣氣氣氣氣"
-          contentColor: "#FFFFFF"
-          backgroundColor: "#b228232d"
-        - content: "投票就可決定節目走向😎"
-          contentColor: "#FFFFFF"
-          backgroundColor: "#b228232d"
-        - content: "陪伴小編過今夜"
-          contentColor: "#FFFFFF"
-          backgroundColor: "#b228232d"
 # Don't modify infos below
 entryIcons:
   "REDENVELOPE":
@@ -257,4 +140,4 @@ layoutGiftNotif:
   nthLive: 10
 
 programCommentPin:
-  enable: true
+  enable: false
