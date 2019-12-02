@@ -5,7 +5,32 @@ streamDuration: 0h00m00s
 animations: ["yeti"]
 monsters:
 
-
+- id: monster_sasa
+  hit_consume: 10
+  duration: 60s
+  stream_alive_threshold: 1m00s
+  animation: "monster_sasa"
+  available_dates:
+  - start_date: "2019-06-11T9:00:00+08:00"
+    end_date: "2020-06-01T00:00:00+08:00"
+  appear_durations:
+  - start_time: 00h00m00s
+    end_time: 24h00m00s
+  type: 0
+  share_ratio: 50 # percentage
+  profit_ratio: 35 # percentage
+  bonus: 336
+  weight: 1
+  infoPageiconURL: https://cdn.17app.co/29250426-a947-4d47-9a60-e2ee26ffb09f.png
+  winnerPageiconURL: https://cdn.17app.co/38639596-ebf0-44a0-9c01-09c976a5daaf.png
+  hintToken: {key: monster_battle_summon_hint_nian,fontAttribute: {textColor: "#FFFFFF"}}
+  rule1Token: {key: monster_battle_summon_rule1_nian,fontAttribute: {textColor: "#FFFFFF"}}
+  rule2Token: {key: monster_battle_summon_rule2_nian,fontAttribute: {textColor: "#FFFFFF"}}
+  rule3Token: {key: monster_battle_summon_rule3_nian,fontAttribute: {textColor: "#FFFFFF"}}
+  rule4Token: {key: monster_battle_summon_rule4_nian,fontAttribute: {textColor: "#FFFFFF"}}
+  countdownToken: {key: monster_battle_summon_countdown_nian,fontAttribute: {textColor: "#FFFFFF"}}
+  failureToken: {key: monster_battle_summon_failure_nian,fontAttribute: {textColor: "#FFFFFF"}}
+  successToken: {key: monster_battle_summon_success_nian,fontAttribute: {textColor: "#FFFFFF"}}
 - id: monster_monster_princess1
   hit_consume: 10
   duration: 60s
@@ -392,6 +417,44 @@ monsters:
 
 
 animationLoader: # animationID 必須是 animationPrefix_ + attack/enter/failure/idle/success
+
+
+- animationID: sasa_attack
+  url: https://cdn.17app.co/de0c27f8-611f-415b-a46e-8db2a2bd1b2e.zip
+  MD5: 1b2721344717f02ba1cdf840c62d7167
+  webpUrl: https://cdn.17app.co/25d89289-4db4-4c61-a3f0-025b13754346-q90-s1.webp
+  webpMD5: 274fea1f3f1e7631f1de51f951c74481
+- animationID: sasa_enter
+  url: https://cdn.17app.co/2d24704d-ae66-4946-8d75-354c609e6301.zip
+  MD5: 80bee61f7627c0e69b0991b19a9b5b85
+  webpUrl: https://cdn.17app.co/c7857461-12ae-42ba-ae51-5979259bf920-q90-s1.webp
+  webpMD5: 86bdc73752c7b759e9216892ffb07e22
+- animationID: sasa_failure
+  url: https://cdn.17app.co/2b5b3dba-61c1-4a25-b5a4-b7a46a31109b.zip
+  MD5: b4dee97d5c08929d920e09a2930c1a07
+  webpUrl: https://cdn.17app.co/72c668a0-0376-4a53-91e3-4ff800c1c607-q90-s1.webp
+  webpMD5: 489e6520054f897ea83fc3233fe9f114
+- animationID: sasa_idle
+  url: https://cdn.17app.co/1aef0cdc-8331-45f1-9f9b-fe8e81ad7f91.zip
+  MD5: f982dbecfa8e8d5573e9705994b66b9c
+  webpUrl: https://cdn.17app.co/98147a1c-3ae4-4b39-aee0-79ce79f5d9c4-q90-s1.webp
+  webpMD5: 0ad1c1212cba7404895eefb6827eb825
+- animationID: sasa_success
+  url: https://cdn.17app.co/f4f6b886-4b30-4187-8495-a1025a86e02c.zip
+  MD5: f128a7ca95c34016ded479344b975ca8
+  webpUrl: https://cdn.17app.co/8e314cc9-2c5b-49b7-b176-e2b0429f3950-q90-s1.webp
+  webpMD5: 76f15705d0178e27f5c46dffba7fc2ad
+
+
+
+
+
+
+
+
+
+
+
 - animationID: monster_princess3_attack
   url: https://cdn.17app.co/f0ead6ed-c741-47df-ac04-c5f81a4bb724.zip
   MD5: a7f77dc9a73c25afe01c60a730a76e6c
