@@ -85,9 +85,12 @@ conf:
             getLiveStreamAllGifts,\
             getReceivedGiftLog"
  - url_key: "go_lives_url"
+   weight: 50  # (0, 100]
    white_list:
      # v1 api
-     # apiv1: "liveStreams"
+     apiv1: "liveStreams"
+ - url_key: "go_lives_url"
+   white_list:
      # for legacy api
      liveStreams: "getSuggestedLiveStreams,liveStreams/getSuggestedLiveStreams,\
             getLatestLiveStreams,liveStreams/getLatestLiveStreams,\
