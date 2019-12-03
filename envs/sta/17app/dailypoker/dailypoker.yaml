@@ -1,0 +1,64 @@
+startTime: "2018-12-06 18:00:00 (GMT+0800)"
+endTime: "2018-12-06 18:00:00 (GMT+0800)"
+
+# array of i18n model
+rules:
+
+# 牌的圖
+cardImages:
+
+# 首抽
+reroll:
+  numCardsGain: 5
+
+# dayFrom or dayTo = 0 表示無邊界
+signIn:
+  - dayFrom: 1
+    dayTo: 7
+    numCardsGain: 1
+  - dayFrom: 8
+    dayTo: 14
+    numCardsGain: 2
+  - dayFrom: 15
+    dayTo: 0
+    numCardsGain: 3
+
+# 獎品包設定
+# // example of requirement's type
+# // | type           | value | 
+# // | ---------      | ----- | 
+# // | HighCard       | 0 | 散牌
+# // | OnePair        | 1 | 一對
+# // | TwoPairs       | 2 | 兩對
+# // | ThreeOfaKind   | 3 | 三條
+# // | Straight       | 4 | 順子
+# // | Flush          | 5 | 同花
+# // | FullHouse      | 6 | 葫蘆
+# // | FourOfaKind    | 7 | 鐵支
+# // | StraightFlush  | 8 | 同花順
+
+# // example of reward contents' type, refData, refValue
+# // | type                       | refData     | refValue |
+# // | --------                   | --------    | -------- |
+# // | 0 experience               |             | 多少
+# // | 1 gift                     | giftID      | 幾個
+# // | 2 premiumbaby              |             | 幾小時
+# // | 3 barrage                  | barrageType | 幾個
+# // | 4 comment top right badge  | imageURL    | 幾小時
+rewardPacks:
+  - ID: "reward1"
+    requirement:
+      type: 8
+      title:
+      description:
+      imageURL:
+    reward:
+      imageURL:
+      contents:
+        - type: 0
+          refData:
+          refValue: 10
+          displayDesc:
+
+# 白名單
+whiteList:
