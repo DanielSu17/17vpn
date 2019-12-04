@@ -30,6 +30,33 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: 951646d2-e3d7-44e9-9c59-bbddc1503cc0 #粉紅派對
+    type: 9
+    lifeCycle: 1
+    targetAudience: 0
+    levelRange:
+      min: 2
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: friday_pink_party
+      amount: 50
+      expireTimeSecs: 18000
+    requirePhoneBinding: true
+    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_my_title_pink_party
+    i18nTitleParams:
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc_phone
+    goalValue: 900
+    enableTimeRange:
+      - startTime: "2019-12-06 18:00:00 (GMT+0800)"
+        endTime: "2019-12-06 23:00:00 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
   - ID: aaf73744-27be-4060-925b-28157613d4b2
     type: 5
     lifeCycle: 0
