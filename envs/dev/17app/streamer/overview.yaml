@@ -1,5 +1,8 @@
 # enableQueryACL: set to true to use ACL for authorization on queries
 # enableMutationACL: set to true to use ACL for authorization on mutations
+# asyncMode
+# 0: send async job to worker
+# 1: send async job to cronjob by redis LPush/RPop
 enableQueryACL: false 
 enableMutationACL: false 
 batch_free_OS_memory: 10
@@ -171,3 +174,4 @@ numberFields: [
 ]
 enableAsyncStats: false
 enableNewFlow: false
+asyncMode: 1
