@@ -1,5 +1,5 @@
-startTime: "2019-11-08 00:00:00 (GMT+0800)"
-endTime: "2019-11-27 23:59:59 (GMT+0800)"
+startTime: "2019-12-09 18:00:00 (GMT+0800)"
+endTime: "2019-12-20 23:59:59 (GMT+0800)"
 
 # --- referralMsg sample ---
 # Hi, I'm streamer $1 from 17!
@@ -36,7 +36,7 @@ rules:
   - key: invite_rule_content_TW
     params:
       # event duration
-      - value: "2019-11-08 00:00:00 ~ 2019-11-28 00:00:00"
+      - value: "2019-12-09 18:00:00 ~ 2019-12-21 00:00:00"
       - value: 100
       - value: 5
       - value: 2
@@ -58,12 +58,24 @@ mode: 2
 whiteList:
 
 missions:
+  - ID: referral-project-phone-binding-tw
+    type: 12
+    reward:
+      rewardType: 1
+      rewardID: 1912_tw_maji_bp_10
+      amount: 2
+      expireTimeSecs: 86400
+    i18nTitle: invitation_mission_phone_title
+    i18nTitleParams:
+    i18nDescription: invitation_mission_phone_content
+    i18nDescriptionParams:
+    goalValue: 1
   - ID: referral-project-view-x-different-day-tw
     type: 13
     reward:
       rewardType: 1
-      rewardID: 1911_tw_monthly_bp_100
-      amount: 5
+      rewardID: 1912_tw_maji_bp_10
+      amount: 2
       expireTimeSecs: 86400
     i18nTitle: invitation_mission_view_title
     i18nTitleParams:
