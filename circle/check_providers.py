@@ -45,7 +45,7 @@ def check_rtmp_providers(input_file):
         for user in users:
             if user in unique_list:
                 print(COLOR_YELLOW, end="")
-                print("* Warning: duplicate user in [{0}: {1}]: {2}".format(
+                print("* Warning: duplicate user in [{2}: {3}]: {4}".format(
                     input_file, name, user))
                 print(COLOR_RESET, end="")
                 duplicate_user_count += 1
