@@ -25,26 +25,41 @@ signIn:
 
 # 獎品包設定
 # // example of requirement's type
-# // | type           | value | 
-# // | ---------      | ----- | 
-# // | HighCard       | 0 | 散牌
-# // | OnePair        | 1 | 一對
-# // | TwoPairs       | 2 | 兩對
-# // | ThreeOfaKind   | 3 | 三條
-# // | Straight       | 4 | 順子
-# // | Flush          | 5 | 同花
-# // | FullHouse      | 6 | 葫蘆
-# // | FourOfaKind    | 7 | 鐵支
-# // | StraightFlush  | 8 | 同花順
+# // | type                | value | 
+# // | ---------           | ----- | 
+# // | HighCard            | 0 | 散牌
+# // | OnePair             | 1 | 一對
+# // | TwoPairs            | 2 | 兩對
+# // | ThreeOfaKind        | 3 | 三條
+# // | Straight            | 4 | 順子
+# // | Flush               | 5 | 同花
+# // | FullHouse           | 6 | 葫蘆
+# // | FourOfaKind         | 7 | 鐵支
+# // | StraightFlush       | 8 | 同花順
+# // | AKQJ10StraightFlush | 9 | 同花大順
 
-# // example of reward contents' type, refData, refValue
-# // | type                       | refData     | refValue |
-# // | --------                   | --------    | -------- |
-# // | 0 experience               |             | 多少
-# // | 1 gift                     | giftID      | 幾個
-# // | 2 premiumbaby              |             | 幾小時
-# // | 3 barrage                  | barrageType | 幾個
-# // | 4 comment top right badge  | imageURL    | 幾小時
+# // example of reward contents' type, and its corresponding field
+# // | type                       | refField
+# // | --------                   | --------
+# // | 0 experience               | exp
+# // | 1 gift                     | gift
+# // | 2 premiumBaby              | freePremiumBabyHrs
+# // | 3 barrage                  | barrage
+# // | 4 comment top right badge  | commentBadge
+
+# gift:
+#   giftID:
+#   amount:
+#   expireTimeSecs:
+
+# barrage:
+#   category:
+#   amount:
+
+# commentBadge:
+#   imageURL:
+#   expireTimeSecs:
+
 rewardPacks:
   - ID: "reward1"
     requirement:
@@ -56,9 +71,9 @@ rewardPacks:
       imageURL:
       contents:
         - type: 0
-          refData:
-          refValue: 10
+          exp: 10
           description:
+    exchangeToastMsg:
 
 # 白名單
 whiteList:
