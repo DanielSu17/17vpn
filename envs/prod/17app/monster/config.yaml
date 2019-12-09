@@ -8,6 +8,34 @@ alertMembers: ["angus"]
 alertChannels: ["testformonsteralert"]
 animations: ["yeti"]
 monsters:
+
+- id: monster_ugly  # 怪獸id
+  hit_consume: 10 # 每次打擊耗血
+  duration: 60s # 怪獸出現時間
+  animation: "ugly" # 怪獸動畫prefix
+  type: 1 # 0: 一般怪獸, 1: 招喚怪獸
+  share_ratio: 50 # percentage, 主播分紅百分比： bonus * (share_ratio/100)
+  profit_ratio: 35 # percentage, 手續費百分比：bonus * (profit/100)
+  bonus: 336 # 血量: bonus * (100 + profit_ratio) / 100
+  weight: 0.5 # 怪獸產生百分比 : weight / sumOfAllWeights, 招喚怪獸不適用
+  summonGifts: # 招喚怪獸才需要填
+  - giftID: "1912_hk_monster_15000"
+    probability: 2000 # n / 10000 * 100%
+  - giftID: "1912_hk_monster_1500"
+    probability: 200 # n / 10000 * 100%
+
+  infoPageiconURL: https://cdn.17app.co/911a5d5c-b74b-4a54-b9da-8ec5c329937e.png
+  winnerPageiconURL: https://cdn.17app.co/3ab056ba-b3a2-4712-98d9-66820496cae3.png
+  hintToken: {key: monster_battle_summon_hint_ugly,fontAttribute: {textColor: "#FFFFFF"}}
+  rule1Token: {key: monster_battle_summon_rule1_ugly,fontAttribute: {textColor: "#FFFFFF"}}
+  rule2Token: {key: monster_battle_summon_rule2_ugly,fontAttribute: {textColor: "#FFFFFF"}}
+  rule3Token: {key: monster_battle_summon_rule3_ugly,fontAttribute: {textColor: "#FFFFFF"}}
+  rule4Token: {key: monster_battle_summon_rule4_ugly,fontAttribute: {textColor: "#FFFFFF"}}
+  countdownToken: {key: monster_battle_summon_countdown_ugly,fontAttribute: {textColor: "#FFFFFF"}}
+  failureToken: {key: monster_battle_summon_failure_ugly,fontAttribute: {textColor: "#FFFFFF"}}
+  successToken: {key: monster_battle_summon_success_ugly,fontAttribute: {textColor: "#FFFFFF"}}
+  marqueeToken: {key: ：monster_battle_summon_marquee_ugly}
+
 - id: monster_sasa
   hit_consume: 10
   duration: 60s
@@ -458,6 +486,33 @@ monsters:
   marqueeToken: {key: monster_battle_summon_marquee_llama}
   
 animationLoader:
+
+- animationID: ugly_attack
+  url: https://cdn.17app.co/8abe41f3-596a-4f6e-b857-d90c6c887624.zip
+  MD5: 0f319e88187894234e9479a68ab928ae
+  webpUrl: https://cdn.17app.co/76756670-3f32-47ab-a355-4c3a00d90949-q90-s1.webp
+  webpMD5: 0321cfaa7697d1dadca3fe207b2d438d
+- animationID: ugly_enter
+  url: https://cdn.17app.co/f35a82af-9616-473d-bb19-ee2031d4c66a.zip
+  MD5: bfd5b579ec3a2f0b3456c1e802f23497
+  webpUrl: https://cdn.17app.co/85181d07-7447-4b53-89ae-781406373a8e-q90-s1.webp
+  webpMD5: bf48e1914c1fb8c61ecde85bb194c760
+- animationID: ugly_failure
+  url: https://cdn.17app.co/04d12b2c-b95c-4447-b383-d18d50d332bf.zip
+  MD5: d2f165247c3991930d0143b1dbb73eb1
+  webpUrl: https://cdn.17app.co/25e89577-bd3c-42bd-a3c2-587a002770a2-q90-s1.webp
+  webpMD5: 5159ee9ef18642342f59c266e8965c8a
+- animationID: ugly_idle
+  url: https://cdn.17app.co/380eb1c5-6053-4c61-96e1-c46b1a4dcb06.zip
+  MD5: a3845cfa28c266b2400057ed520a8211
+  webpUrl: https://cdn.17app.co/fcbb569a-0199-48f3-a131-76f96769e888-q90-s1.webp
+  webpMD5: 9c92019fcb6dd658b616250ace663b00
+- animationID: ugly_success
+  url: https://cdn.17app.co/d524afc2-ca5c-4f54-83e9-533079934262.zip
+  MD5: 083ce58de7ad4ad37a4ad53eb3777f30
+  webpUrl: https://cdn.17app.co/ecab42eb-842b-4b5b-8b07-eff668c1fb1f-q60-s2.webp
+  webpMD5: 3094039de89285614479d765b1e94e11
+
 
 - animationID: sasa_attack
   url: https://cdn.17app.co/de0c27f8-611f-415b-a46e-8db2a2bd1b2e.zip
