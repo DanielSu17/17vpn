@@ -102,7 +102,7 @@ rewardPacks:
       contents:
         - type: 1
           gift:
-            giftID: gift_bag_boat
+            giftID: gift_bag_kong
             amount: 1
             expireTimeSecs: 86400
           description:
@@ -110,20 +110,20 @@ rewardPacks:
             params:
               - value: 24
               - mapOption: 2
-                value: gift_bag_boat
+                value: gift_bag_kong
               - value: 1
     remindMsg: 
       key: dailypoker_confirm_gift_reward # 確定兌換限時$1hr的$2共$3個嗎？
       params:
         - value: 24
         - mapOption: 2
-          value: gift_bag_boat
+          value: gift_bag_kong
         - value: 1
     exchangeToastMsg:
       key: dailypoker_change_success_baggage_toast # 兌換$1成功！請到禮物背包查看
       params:
         - mapOption: 2
-          value: gift_bag_boat
+          value: gift_bag_kong
   
   - ID: "rewardStraightFlush"
     requirement:
