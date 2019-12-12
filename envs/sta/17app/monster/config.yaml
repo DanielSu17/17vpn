@@ -4,6 +4,37 @@ ccu: 0
 streamDuration: 0h00m00s
 animations: ["yeti"]
 monsters:
+
+
+- id: monster_zombiedog  # 怪獸id
+  hit_consume: 10 # 每次打擊耗血
+  duration: 60s # 怪獸出現時間
+  animation: "zombiedog" # 怪獸動畫prefix
+  type: 1 # 0: 一般怪獸, 1: 招喚怪獸
+  share_ratio: 50 # percentage, 主播分紅百分比： bonus * (share_ratio/100)
+  profit_ratio: 35 # percentage, 手續費百分比：bonus * (profit/100)
+  bonus: 336 # 血量: bonus * (100 + profit_ratio) / 100
+  weight: 0.5 # 怪獸產生百分比 : weight / sumOfAllWeights, 招喚怪獸不適用
+  summonGifts: # 招喚怪獸才需要填
+  - giftID: "1912_hk_monster_15000"
+    probability: 2000 # n / 10000 * 100%
+  - giftID: "1912_hk_monster_1500"
+    probability: 200 # n / 10000 * 100%
+  - giftID: "gift_lightstick_b"
+    probability: 10000 # n / 10000 * 100%
+
+  infoPageiconURL: https://cdn.17app.co/911a5d5c-b74b-4a54-b9da-8ec5c329937e.png
+  winnerPageiconURL: https://cdn.17app.co/3ab056ba-b3a2-4712-98d9-66820496cae3.png
+  hintToken: {key: monster_battle_summon_hint_ugly,fontAttribute: {textColor: "#FFFFFF"}}
+  rule1Token: {key: monster_battle_summon_rule1_ugly,fontAttribute: {textColor: "#FFFFFF"}}
+  rule2Token: {key: monster_battle_summon_rule2_ugly,fontAttribute: {textColor: "#FFFFFF"}}
+  rule3Token: {key: monster_battle_summon_rule3_ugly,fontAttribute: {textColor: "#FFFFFF"}}
+  rule4Token: {key: monster_battle_summon_rule4_ugly,fontAttribute: {textColor: "#FFFFFF"}}
+  countdownToken: {key: monster_battle_summon_countdown_ugly,fontAttribute: {textColor: "#FFFFFF"}}
+  failureToken: {key: monster_battle_summon_failure_ugly,fontAttribute: {textColor: "#FFFFFF"}}
+  successToken: {key: monster_battle_summon_success_ugly,fontAttribute: {textColor: "#FFFFFF"}}
+  marqueeToken: {key: ：monster_battle_summon_marquee_ugly}
+
 - id: monster_ugly  # 怪獸id
   hit_consume: 10 # 每次打擊耗血
   duration: 60s # 怪獸出現時間
@@ -448,6 +479,33 @@ monsters:
 
 
 animationLoader: # animationID 必須是 animationPrefix_ + attack/enter/failure/idle/success
+
+- animationID: zombiedog_attack
+  url: https://cdn.17app.co/d045e57c-2f7c-49ff-bd4d-1ba3068920a6.zip
+  MD5: 37d65041c41a5ebfc2187ee6f99173db
+  webpUrl: https://cdn.17app.co/8303aa4f-7485-46ac-9eaa-48460b135a5e-q90-s1.webp
+  webpMD5: b59a2651aa389beffcfce83aedb127ac
+- animationID: zombiedog_enter
+  url: https://cdn.17app.co/fd03e7e6-852a-4803-9889-91c99a190f73.zip
+  MD5: e26f41368638b7d7c3d619cb06574f04
+  webpUrl: https://cdn.17app.co/48ffb9e3-8234-4420-9f12-5a1afdb2db3a-q90-s1.webp
+  webMD5: d59bf8e31a528640adbe145b4413f691
+- animationID: zombiedog_failure
+  url: https://cdn.17app.co/f4267c7e-2129-48d9-a187-7408e7fa1cd4.zip
+  MD5: 9c4116c534423400471f4976b03acc28
+  webpUrl: https://cdn.17app.co/19feb653-522f-465c-a1c5-337e860cc090-q90-s1.webp
+  webMD5: 8043244d390366714246ac3e473bfa65
+- animationID: zombiedog_idle
+  url: https://cdn.17app.co/559a38d7-b994-4dbb-a055-673271c45554.zip
+  MD5: 3c96b4c26ee57f53b60df114434cc737
+  webpUrl: https://cdn.17app.co/4093781d-8e67-4cdf-bfd5-a3040500623c-q90-s1.webp
+  webpMD5: bd17dbceda0e9b18db755b84f7cf041e
+- animationID: zombiedog_success
+  url: https://cdn.17app.co/58b28e7b-cbea-4007-b81d-f31ed492894e.zip
+  MD5: c678951dd0b551201ec22aef39c3b6ea
+  webpUrl: https://cdn.17app.co/75d5edae-03d1-4a2a-97d7-2720292698a1-q90-s1.webp
+  webMD5: ca4959e9e9057c308ab7d42f29b142d7
+
 - animationID: ugly_attack
   url: https://cdn.17app.co/8abe41f3-596a-4f6e-b857-d90c6c887624.zip
   MD5: 0f319e88187894234e9479a68ab928ae
