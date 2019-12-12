@@ -30,6 +30,32 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: 5300bdb4-215b-4451-b8cb-0d99d6f547c4 #放屁
+    type: 9
+    lifeCycle: 1
+    targetAudience: 0
+    levelRange:
+      min: 2
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: fart_baby
+      amount: 50
+      expireTimeSecs: 18000
+    requirePhoneBinding: true
+    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_my_title_fart
+    i18nTitleParams:
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc_phone
+    goalValue: 1020
+    enableTimeRange:
+      - startTime: "2019-11-01 18:00:00 (GMT+0800)"
+        endTime: "2020-11-30 23:59:59 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
   - ID: 951646d2-e3d7-44e9-9c59-bbddc1503cc0 #粉紅派對
     type: 9
     lifeCycle: 1
