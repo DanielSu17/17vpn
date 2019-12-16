@@ -10,7 +10,7 @@ permanent:
     categoryID: category string
     saveAsPlay: boolean
     pullURL: URL
-    user: string (user ID, name or email)
+    user: string (user ID)
 ```
 
 Example:  
@@ -22,5 +22,5 @@ permanent:
     categoryID: shows
     saveAsPlay: false
     pullURL: https://radio.mcu.edu.tw:8080/hls/a2/index.m3u8
-    user: 巴芭珊
+    user: 7cfb7843-bec3-434c-8463-22a3aba98737
 ```
