@@ -98,32 +98,32 @@ rewardPacks:
         key: dailypoker_royal_flush_description
       imageURL: https://cdn.17app.co/4d56455a-cc44-4071-ad37-ea04a23de227.png
     info:
-      imageURL: https://cdn.17app.co/afa16d78-722a-493b-af5f-c68d882eaeca.png
+      imageURL: https://cdn.17app.co/cbe80b75-6e6e-438a-bf42-f2f261a2078e.png
       contents:
         - type: 1
           gift:
-            giftID: gift_bag_kong
-            amount: 1
+            giftID: 1912_tw_yearend_bag_s
+            amount: 3
             expireTimeSecs: 86400
           description:
             key: dailypoker_gift_reward_description # 將可兌換限時$1hr的$2共$3個獎勵
             params:
               - value: 24
               - mapOption: 2
-                value: gift_bag_kong
-              - value: 1
+                value: 1912_tw_yearend_bag_s
+              - value: 3
     remindMsg: 
       key: dailypoker_confirm_gift_reward # 確定兌換限時$1hr的$2共$3個嗎？
       params:
         - value: 24
         - mapOption: 2
-          value: gift_bag_kong
-        - value: 1
+          value: 1912_tw_yearend_bag_s
+        - value: 3
     exchangeToastMsg:
       key: dailypoker_change_success_baggage_toast # 兌換$1成功！請到禮物背包查看
       params:
         - mapOption: 2
-          value: gift_bag_kong
+          value: 1912_tw_yearend_bag_s
   
   - ID: "rewardStraightFlush"
     requirement:
