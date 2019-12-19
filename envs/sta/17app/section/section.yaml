@@ -3,7 +3,7 @@
 #     enable: false|true
 #     dedup: false|true
 #     minGrids: <int>
-#     style: <int> 1: BillboardStyle, 2: StoryTrayStyle, 3: DefaultShelfStyle, 4: CoverFlowStyle, 5: VodShelfStyle
+#     style: <int> 1: BillboardStyle, 2: StoryTrayStyle, 3: DefaultShelfStyle, 4: CoverFlowStyle, 5: VodShelfStyle, 6: DefaultLabelShelfStyle (猜你可能會喜歡)
 #     name:
 #       key: <string>
 #     labelID: <string> (optional if id is `Label`)
@@ -14,15 +14,18 @@ sections:
       key: tab_hot_2019q4_topbanner
     enable: true
     style: 1
+    optionMore: false
   - id: OffcRecomm # 官方推薦
     enable: true
     style: 2
+    optionMore: false
   - id: Suggestion # 猜你可能喜歡
     name: 
       key: tab_hot_2019q4_follow_suggestion
     enable: true
     style: 6
     minGrids: 5
+    optionMore: true
   - id: Label # 時事話題
     labelID: pundit
     name: 
@@ -31,24 +34,63 @@ sections:
     dedup: true
     minGrids: 5
     style: 3
+    optionMore: true
   - id: Show # 熱播節目
     name: 
       key: tab_hot_2019q4_program
     enable: true
-    minGrids: 1
+    minGrids: 5
     style: 4
+    optionMore: false
   - id: Vod # 熱門影音
     name:
       key: tab_hot_2019q4_vod
     enable: true
-    minGrids: 2
+    minGrids: 5
     style: 5
-  - id: RedEnvelope # 熱播節目
+    optionMore: false
+  - id: RedEnvelope # 紅包
     name: 
       key: tab_hot_2019q4_redenvelop
     enable: true
-    minGrids: 2
+    minGrids: 5
     style: 3
+    optionMore: true
+  - id: Label # 型男
+    labelID: male
+    name:
+      key: tab_hot_2019q4_male
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    optionMore: true
+  - id: Label # 正妹
+    labelID: female
+    name:
+      key: tab_hot_2019q4_female
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    optionMore: true
+  - id: Label # 歌手
+    labelID: singer
+    name:
+      key: streamer_label_singer
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    optionMore: true
+  - id: Music # legacy Music tab
+    name:
+      key: tab_hot_2019q4_music
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    optionMore: true
 
 
 officialRecommendedStreamers:
