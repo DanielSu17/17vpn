@@ -1,7 +1,8 @@
 # sections
 #   - id: TopBanner|OffcRecomm|Suggestion|Label|RedEnvelope|Show|Vod|TodayHotTopic|CrazyZoo
 #     enable: false|true
-#     dedup: false|true
+#     dedup:  false|true
+#     more:   false|true
 #     minGrids: <int>
 #     style: <int> 1: BillboardStyle, 2: StoryTrayStyle, 3: DefaultShelfStyle, 4: CoverFlowStyle, 5: VodShelfStyle, 6: DefaultLabelShelfStyle (猜你可能會喜歡)
 #     name:
@@ -14,18 +15,18 @@ sections:
       key: tab_hot_2019q4_topbanner
     enable: true
     style: 1
-    optionMore: false
+    more: false
   - id: OffcRecomm # 官方推薦
     enable: true
     style: 2
-    optionMore: false
+    more: false
   - id: Suggestion # 猜你可能喜歡
     name: 
       key: tab_hot_2019q4_follow_suggestion
     enable: true
     style: 6
     minGrids: 5
-    optionMore: true
+    more: true
   - id: Label # 時事話題
     labelID: pundit
     name: 
@@ -34,28 +35,28 @@ sections:
     dedup: true
     minGrids: 5
     style: 3
-    optionMore: true
+    more: true
   - id: Show # 熱播節目
     name: 
       key: tab_hot_2019q4_program
     enable: true
     minGrids: 5
     style: 4
-    optionMore: false
+    more: false
   - id: Vod # 熱門影音
     name:
       key: tab_hot_2019q4_vod
     enable: true
     minGrids: 5
     style: 5
-    optionMore: false
+    more: false
   - id: RedEnvelope # 紅包
     name: 
       key: tab_hot_2019q4_redenvelop
     enable: true
     minGrids: 5
     style: 3
-    optionMore: true
+    more: true
   - id: Label # 型男
     labelID: male
     name:
@@ -64,7 +65,7 @@ sections:
     dedup: true
     minGrids: 5
     style: 3
-    optionMore: true
+    more: true
   - id: Label # 正妹
     labelID: female
     name:
@@ -73,7 +74,7 @@ sections:
     dedup: true
     minGrids: 5
     style: 3
-    optionMore: true
+    more: true
   - id: Label # 歌手
     labelID: singer
     name:
@@ -82,7 +83,7 @@ sections:
     dedup: true
     minGrids: 5
     style: 3
-    optionMore: true
+    more: true
   - id: Music # legacy Music tab
     name:
       key: tab_hot_2019q4_music
@@ -90,7 +91,7 @@ sections:
     dedup: true
     minGrids: 5
     style: 3
-    optionMore: true
+    more: true
 
 
 officialRecommendedStreamers:
