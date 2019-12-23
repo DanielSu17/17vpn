@@ -6,3 +6,13 @@
     minReplicas: 20
 
 # Followings are actual schedules
+# For 郭書瑤(yaokuo)
+- startTime: "2019-12-24 21:50:00 (GMT+0800)"
+  endTime: "2019-12-24 23:30:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 80
+  - name: k8sprod-lives-main
+    minReplicas: 35
+  - name: k8sprod-gotrade-main
+    minReplicas: 30
