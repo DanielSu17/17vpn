@@ -31,7 +31,7 @@ sections:
     name:
       key: tab_hot_2019q4_music
     enable: true
-    dedup: true
+    dedup: false #重複
     minGrids: 1
     style: 3
     more: true
@@ -40,7 +40,7 @@ sections:
     name: 
       key: tab_hot_2019q4_topic
     enable: true
-    dedup: true
+    dedup: false #重複
     minGrids: 1
     style: 3
     more: true
@@ -70,7 +70,7 @@ sections:
     name:
       key: tab_hot_2019q4_male
     enable: true
-    dedup: true
+    dedup: false  #重複
     minGrids: 6
     style: 3
     more: true
@@ -79,16 +79,16 @@ sections:
     name:
       key: tab_hot_2019q4_female
     enable: true
-    dedup: true
+    dedup: false  #重複
     minGrids: 1
     style: 3
     more: true
-  - id: Label # 歌手
+  - id: Label # 實力歌手
     labelID: singer
     name:
       key: streamer_label_singer
     enable: true
-    dedup: true
+    dedup: false  #重複
     minGrids: 1
     style: 3
     more: true
