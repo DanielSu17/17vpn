@@ -33,6 +33,8 @@
   # - LINEPAY_TW = 54; // LinePay TW
   # - SC_BANK_HK = 55; // 渣打銀行香港帳戶
   # - ECPAY = 56; // ECPAY
+  # - RESELLERv2 = 57; // 經銷商系統
+  # - FIRSTDATA = 58; // First Data corporation
 # `duplicateUniformInvoice` // 許可開立二聯式發票的payChannel
 # `triplicateUniformInvoice` // 許可開立三聯式發票的payChannel
 # `currency` follows ISO 4217 standard:   
@@ -150,6 +152,7 @@ HK:
   payChannel:
     - 2
     - 55
+    - 58
   currency:
     - HKD
   localCurrency:
