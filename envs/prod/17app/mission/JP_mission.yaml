@@ -30,6 +30,7 @@
 # | NON_IAP | 2 |
 
 missions:
+#全ユーザー　130ｐｔ購入すると「サンタさん&メリクリ」3個ずつ（１日1回まで）
   - ID: 05df94a7-ca3d-4a80-9ee9-f573528efcb5
     type: 8
     lifeCycle: 0
@@ -57,6 +58,8 @@ missions:
     platforms:
       - android
       - ios
+
+#全ユーザー　130ｐｔ購入すると「サンタさん&メリクリ」3個ずつ（１日1回まで）
   - ID: 4e95e8d5-bcd2-48b7-9327-ce49beab85dd
     type: 8
     lifeCycle: 0
@@ -85,6 +88,7 @@ missions:
       - android
       - ios
 
+#全ユーザー　130ｐｔ購入すると「クリスマスツリー」3個（1日1回まで）
   - ID: f9e66ef3-8790-4375-a075-833d0aa73ab8
     type: 8
     lifeCycle: 0
@@ -113,114 +117,13 @@ missions:
     goalValue: 1
     enableTimeRange:
       - startTime: "2019-12-13 19:00:00 (GMT+0900)"
-        endTime: "2019-12-13 23:59:59 (GMT+0900)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: 53d7e36e-255e-438b-ba87-2afa8ceae4a4
-    type: 8
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 1
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: "gift_texture_xmas_treeJP"
-      amount: 3
-      expireTimeSecs: 86399
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_IAP_reward_jp_daily_xmas_name
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 1
-    i18nContent:
-    i18nContentParams:
-    i18nDescription: baggage_mission_IAP_reward_jp_daily_xmas_desc
-    i18nDescriptionParams:
-      - needMap: false
-        mapOption: 0
-        value: 1
-    goalValue: 1
-    enableTimeRange:
-      - startTime: "2019-12-14 00:00:00 (GMT+0900)"
-        endTime: "2019-12-14 23:59:59 (GMT+0900)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: 6310f134-5e32-495d-bc86-6bb4ad0f99fc
-    type: 8
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 1
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: "gift_texture_xmas_treeJP"
-      amount: 3
-      expireTimeSecs: 86399
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_IAP_reward_jp_daily_xmas_name
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 1
-    i18nContent:
-    i18nContentParams:
-    i18nDescription: baggage_mission_IAP_reward_jp_daily_xmas_desc
-    i18nDescriptionParams:
-      - needMap: false
-        mapOption: 0
-        value: 1
-    goalValue: 1
-    enableTimeRange:
-      - startTime: "2019-12-15 00:00:00 (GMT+0900)"
         endTime: "2019-12-15 23:59:59 (GMT+0900)"
     refIDs:
     platforms:
       - android
       - ios
 
-  - ID: 768da55d-67d1-42ed-9b69-f527ac1166c5
-    type: 8
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 1
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: "gift_texture_xmas_treeJP"
-      amount: 3
-      expireTimeSecs: 86399
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_IAP_reward_jp_daily_xmas_name
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 1
-    i18nContent:
-    i18nContentParams:
-    i18nDescription: baggage_mission_IAP_reward_jp_daily_xmas_desc
-    i18nDescriptionParams:
-      - needMap: false
-        mapOption: 0
-        value: 1
-    goalValue: 1
-    enableTimeRange:
-      - startTime: "2019-12-16 00:00:00 (GMT+0900)"
-        endTime: "2019-12-16 23:59:59 (GMT+0900)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
+#全ユーザー　130pt購入すると「パインちゃん」3個（1日1回まで）
   - ID: 694c7df3-1548-44d1-8fd9-ab76f57f9791
     type: 8
     lifeCycle: 0
@@ -255,73 +158,6 @@ missions:
       - android
       - ios
       
-  - ID: ba0e52ee-d46d-45b5-9b1a-665a4c8f9d9e
-    type: 8
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 1
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: "gift_texture_pineapple"
-      amount: 3
-      expireTimeSecs: 86399
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_IAP_reward_jp_daily_pineapple_name
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 1
-    i18nContent:
-    i18nContentParams:
-    i18nDescription: baggage_mission_IAP_reward_jp_daily_pineapple_desc
-    i18nDescriptionParams:
-      - needMap: false
-        mapOption: 0
-        value: 1
-    goalValue: 1
-    enableTimeRange:
-      - startTime: "2019-12-02 00:00:00 (GMT+0900)"
-        endTime: "2019-12-02 23:59:59 (GMT+0900)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-      
-  - ID: 73cbac0e-3328-4d87-a9e1-b66739073a9f
-    type: 8
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 1
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: "gift_texture_pineapple"
-      amount: 3
-      expireTimeSecs: 86399
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_IAP_reward_jp_daily_pineapple_name
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 1
-    i18nContent:
-    i18nContentParams:
-    i18nDescription: baggage_mission_IAP_reward_jp_daily_pineapple_desc
-    i18nDescriptionParams:
-      - needMap: false
-        mapOption: 0
-        value: 1
-    goalValue: 1
-    enableTimeRange:
-      - startTime: "2019-12-01 00:00:00 (GMT+0900)"
-        endTime: "2019-12-01 23:59:59 (GMT+0900)"
-    refIDs:
-    platforms:
-      - android
-      - ios
 
   - ID: 87b4577f-a3ca-4d87-b485-a8ddd209003f
     type: 5
@@ -923,35 +759,6 @@ missions:
     enableTimeRange:
       - startTime: "2019-11-25 12:00:00 (GMT+0900)"
         endTime: "2019-12-01 23:59:59 (GMT+0900)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: bda33f08-425b-4c42-9459-73e555522104
-    type: 8
-    lifeCycle: 1
-    targetAudience: 2
-    levelRange:
-      min: 0
-      max: 0
-    reward:
-      rewardType: 1
-      rewardID: gift_texture_pineapple
-      amount: 10
-      expireTimeSecs: 604800
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_first_time_IAP_reward_jp_title
-    i18nTitleParams:
-    i18nDescription: baggage_mission_opt_first_time_IAP_reward_jp_desc
-    i18nDescriptionParams:      
-      - needMap: true
-        mapOption: 1
-        value: gift_jp_first_charge_1
-    goalValue: 1
-    enableTimeRange:
-      - startTime: "2019-12-17 00:00:00 (GMT+0900)"
-        endTime: "2019-12-18 23:59:59 (GMT+0900)"
     refIDs:
     platforms:
       - android
