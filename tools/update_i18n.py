@@ -18,6 +18,7 @@ backend_internal_mapping = {
     "en":       "en",
     "en_US":    "en_US",
     "ar":       "ar",
+    "zh_HK":    "hk",
 }
 
 class I18nJsonWriter:
