@@ -182,12 +182,7 @@ rewardPacks:
                 mapOption: 1
                 value: "dailypoker_badge"
     remindMsg: 
-      key: dailypoker_confirm_badge_reward # 確定兌換限時$1hr的$2嗎？如果已有留言後方徽章者將直接被取代？
-      params:
-        - value: 168
-        - needMap: true
-          mapOption: 1
-          value: "dailypoker_badge"
+      key: dailypoker_confirm_badge_reward # 留言後方有徽章的寶寶，兌換後會直接取代。
     exchangeToastMsg:
       key: dailypoker_change_success_livestream_toast # 兌換$1成功！請到直播間確認
       params:
@@ -360,12 +355,7 @@ rewardPacks:
                 mapOption: 1
                 value: "dailypoker_badge"
     remindMsg: 
-      key: dailypoker_confirm_badge_reward # 確定兌換限時$1hr的$2嗎？如果已有留言後方徽章者將直接被取代？
-      params:
-        - value: 24
-        - needMap: true
-          mapOption: 1
-          value: "dailypoker_badge"
+      key: dailypoker_confirm_badge_reward # 留言後方有徽章的寶寶，兌換後會直接取代。
     exchangeToastMsg:
       key: dailypoker_change_success_livestream_toast # 兌換$1成功！請到直播間確認
       params:
@@ -391,7 +381,7 @@ rewardPacks:
             params:
               - value: 50
     remindMsg: 
-      key: dailypoker_exp_reward_description # 確定兌換$1經驗值嗎？
+      key: dailypoker_confirm_exp_reward # 確定兌換$1經驗值嗎？
       params:
         - value: 50
     exchangeToastMsg:
@@ -419,7 +409,7 @@ rewardPacks:
             params:
               - value: 5
     remindMsg: 
-      key: dailypoker_exp_reward_description # 確定兌換$1經驗值嗎？
+      key: dailypoker_confirm_exp_reward # 確定兌換$1經驗值嗎？
       params:
         - value: 5
     exchangeToastMsg:
