@@ -30,6 +30,38 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: 078d5180-c900-4972-8fb5-49942682fa44
+    type: 5
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 1912_tw_klook_bp
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    withReminder: false
+    i18nTitle: baggage_mission_leave_comment_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 3
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_leave_comment_reward_desc
+    i18nDescriptionParams:
+    goalValue: 3
+    enableTimeRange:
+      - startTime: "2020-01-03 18:00:00 (GMT+0800)"
+        endTime: "2020-01-16 23:59:59 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
   - ID: 1ddddcd0-ba5b-49bb-bfd1-d2688466becb
     type: 3
     lifeCycle: 0
@@ -43,6 +75,7 @@ missions:
       amount: 1
       expireTimeSecs: 86400
     requirePhoneBinding: true
+    withReminder: false
     i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
     i18nTitleParams:
       - needMap: false
@@ -81,6 +114,7 @@ missions:
       amount: 1
       expireTimeSecs: 86400
     requirePhoneBinding: true
+    withReminder: false
     i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
     i18nTitleParams:
       - needMap: false
@@ -112,6 +146,7 @@ missions:
       amount: 1
       expireTimeSecs: 86400
     requirePhoneBinding: true
+    withReminder: false
     i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
     i18nTitleParams:
       - needMap: false
@@ -143,6 +178,7 @@ missions:
       amount: 1
       expireTimeSecs: 86400
     requirePhoneBinding: true
+    withReminder: false
     i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
     i18nTitleParams:
       - needMap: false
@@ -174,6 +210,7 @@ missions:
       amount: 1
       expireTimeSecs: 86400
     requirePhoneBinding: true
+    withReminder: false
     i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
     i18nTitleParams:
       - needMap: false
@@ -205,6 +242,7 @@ missions:
       amount: 1
       expireTimeSecs: 86400
     requirePhoneBinding: true
+    withReminder: false
     i18nTitle: baggage_mission_send_specific_gifts_reward_title
     i18nTitleParams:
       - needMap: false
@@ -235,37 +273,6 @@ missions:
       - android
       - ios
 
-  - ID: aaf73744-27be-4060-925b-28157613d4b2
-    type: 5
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 1
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1912_tw_hilife_bp
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_leave_comment_reward_title
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 3
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_leave_comment_reward_desc
-    i18nDescriptionParams:
-    goalValue: 3
-    enableTimeRange:
-      - startTime: "2019-12-06 18:00:00 (GMT+0800)"
-        endTime: "2019-12-17 23:59:59 (GMT+0800)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
   - ID: 1a256079-f392-4598-940f-1f8393c0e9ec
     type: 3
     lifeCycle: 0
@@ -279,6 +286,7 @@ missions:
       amount: 1
       expireTimeSecs: 86400
     requirePhoneBinding: true
+    withReminder: false
     i18nTitle: baggage_mission_send_specific_gifts_reward_title
     i18nTitleParams:
       - needMap: false
