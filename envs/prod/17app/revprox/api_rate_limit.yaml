@@ -87,4 +87,5 @@ rate_limits:
 
 - {url: "/api/v1/money/pointUsageLog",                          method: "GET",     flow_per_second: 20,          reservoir_size: 20,    scope: by_global}
 - {url: "/api/v1/money/pointGainLog",                           method: "GET",     flow_per_second: 20,          reservoir_size: 20,    scope: by_global}
+- {url: "/api/v1/money/pointSummary",                           method: "GET",     flow_per_second: 20,          reservoir_size: 20,    scope: by_global}
 
