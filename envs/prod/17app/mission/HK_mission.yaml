@@ -30,6 +30,50 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: e5599d52-6657-408a-971d-a05d19a63788
+    type: 3
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 17
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2001_tw_food_bp
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: true
+    withReminder: false
+    i18nTitle: baggage_mission_send_specific_gifts_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 3
+      - needMap: false
+        mapOption: 2
+        value: 2001_tw_food_s
+      - needMap: false
+        mapOption: 2
+        value: 2001_tw_food_m
+      - needMap: false
+        mapOption: 2
+        value: 2001_tw_food_l
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
+    i18nDescriptionParams:
+    goalValue: 3
+    enableTimeRange:
+      - startTime: "2020-01-01 18:00:00 (GMT+0800)"
+        endTime: "2020-01-20 23:59:59 (GMT+0800)"
+    refIDs:
+      - 2001_tw_food_s
+      - 2001_tw_food_m
+      - 2001_tw_food_l
+    platforms:
+      - android
+      - ios
+
   - ID: eb8a46e2-d793-421f-92a9-4ac429d35e37
     type: 5
     lifeCycle: 0
@@ -43,6 +87,7 @@ missions:
       amount: 1
       expireTimeSecs: 259200
     requirePhoneBinding: false
+    withReminder: false
     i18nTitle: baggage_mission_leave_comment_reward_title
     i18nTitleParams:
       - needMap: false
@@ -74,6 +119,7 @@ missions:
       amount: 1
       expireTimeSecs: 259200
     requirePhoneBinding: false
+    withReminder: false
     i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
     i18nTitleParams:
       - needMap: false
@@ -109,6 +155,7 @@ missions:
       amount: 1
       expireTimeSecs: 259200
     requirePhoneBinding: false
+    withReminder: false
     i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
     i18nTitleParams:
       - needMap: false
@@ -144,6 +191,7 @@ missions:
       amount: 1
       expireTimeSecs: 259200
     requirePhoneBinding: false
+    withReminder: false
     i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
     i18nTitleParams:
       - needMap: false
@@ -179,6 +227,7 @@ missions:
       amount: 1
       expireTimeSecs: 259200
     requirePhoneBinding: false
+    withReminder: false
     i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
     i18nTitleParams:
       - needMap: false
@@ -210,6 +259,7 @@ missions:
       amount: 1
       expireTimeSecs: 259200
     requirePhoneBinding: false
+    withReminder: false
     i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
     i18nTitleParams:
       - needMap: false
@@ -241,6 +291,7 @@ missions:
       amount: 1
       expireTimeSecs: 259200
     requirePhoneBinding: false
+    withReminder: false
     i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
     i18nTitleParams:
       - needMap: false
@@ -276,6 +327,7 @@ missions:
       amount: 1
       expireTimeSecs: 259200
     requirePhoneBinding: false
+    withReminder: false
     i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
     i18nTitleParams:
       - needMap: false
@@ -311,6 +363,7 @@ missions:
       amount: 1
       expireTimeSecs: 259200
     requirePhoneBinding: false
+    withReminder: false
     i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
     i18nTitleParams:
       - needMap: false
