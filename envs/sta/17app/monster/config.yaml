@@ -1,4 +1,4 @@
-max: 5	# 0 means disable feature
+max: 15	# 0 means disable feature
 check_interval: 1m00s
 ccu: 0
 streamDuration: 0h00m00s
@@ -73,7 +73,7 @@ monsters:
   animation: "sasa"
   available_dates:
   - start_date: "2019-06-11T9:00:00+08:00"
-    end_date: "2020-01-01T00:00:00+08:00"
+    end_date: "2020-01-30T00:00:00+08:00"
   appear_durations:
   - start_time: 00h00m00s
     end_time: 24h00m00s
@@ -119,6 +119,7 @@ monsters:
   countdownToken: {key: monster_battle_summon_countdown_nian,fontAttribute: {textColor: "#FFFFFF"}}
   failureToken: {key: monster_battle_summon_failure_nian,fontAttribute: {textColor: "#FFFFFF"}}
   successToken: {key: monster_battle_summon_success_nian,fontAttribute: {textColor: "#FFFFFF"}}
+  
 - id: monster_shark  # 怪獸id
   hit_consume: 10 # 每次打擊耗血
   duration: 60s # 怪獸出現時間
