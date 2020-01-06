@@ -215,6 +215,9 @@ checkPNAfterComplete: 2
 # - 9: COMMENT_LIVE
 # - 10: SEND_GIFT
 # - 11: BUY_POINT
+# - 12: DailyQuestType_WATCH_LIVE_10_CONTINUE
+# - 13: DailyQuestType_WATCH_LIVE_30_TOTAL
+# - 14: DailyQuestType_LIVE_CHECK_IN_TWO_TOTAL
 # ex:
 #   - type: 1
 #     point: 25
@@ -223,121 +226,56 @@ checkPNAfterComplete: 2
 #     requirePhoneBinding: false
 #     requireDeviceCheck: true
 newbieRewards:
-    - type: 1
-      point: 0
-      exp: 0
-      required: 2
-      requirePhoneBinding: false
-      requireDeviceCheck: true
-      withReminder: false
-      voucherReward:
-        type: 3
-        itemID: "2019newuser"
-        amount: 3
-        intervalSec: 28800
     - type: 2
-      point: 20
+      point: 50
       exp: 0
-      required: 2
+      required: 1
       requirePhoneBinding: false
       requireDeviceCheck: true
       withReminder: true
-    # - type: 2
-    #   point: 20
-    #   exp: 0
-    #   required: 1
-    #   requirePhoneBinding: false
-    #   requireDeviceCheck: true
-    #   withReminder: true
     - type: 3
       point: 0
-      exp: 100
-      required: 1
-      requirePhoneBinding: false
-      requireDeviceCheck: true
-      withReminder: true
-#    - type: 5
-#      point: 30
-#      exp: 0
-#      required: 1
-#      requirePhoneBinding: false
-#      requireDeviceCheck: true
-#    - type: 8
-#      point: 20
-#      exp: 0
-#      required: 1
-#      requirePhoneBinding: false
-#      requireDeviceCheck: true
-#    - type: 9
-#      point: 20
-#      exp: 0
-#      required: 3
-#      requirePhoneBinding: false
-#      requireDeviceCheck: true
-#    - type: 10
-#      point: 30
-#      exp: 0
-#      required: 1
-#      requirePhoneBinding: false
-#      requireDeviceCheck: true
-    - type: 11
-      point: 100
       exp: 0
       required: 1
       requirePhoneBinding: false
       requireDeviceCheck: true
-      withReminder: false
-# - 12: DailyQuestType_WATCH_LIVE_10_CONTINUE
-# - 13: DailyQuestType_WATCH_LIVE_30_TOTAL
-# - 14: DailyQuestType_LIVE_CHECK_IN_TWO_TOTAL
-    - type: 12
-      point: 0
-      exp: 0
-      required: 10
-      requirePhoneBinding: false
-      requireDeviceCheck: true
-      withReminder: false
+      withReminder: true
       voucherReward:
-        type: 3 # type 3 is for newbiequest voucher reward
-        itemID: "great"
-        amount: 1
-        intervalSec: 28800
-    - type: 13
+        type: 3
+        itemID: tw_newuser_mission_follow
+        amount: 5
+        intervalSec: 604800
+    - type: 9
       point: 0
       exp: 0
-      required: 3
+      required: 1
       requirePhoneBinding: false
       requireDeviceCheck: true
       withReminder: true
       voucherReward:
         type: 3
-        itemID: "bravo"
-        amount: 2
-        intervalSec: 28800           
-    - type: 13
+        itemID: tw_newuser_mission_comment
+        amount: 5
+        intervalSec: 604800
+    - type: 10
       point: 0
       exp: 0
-      required: 6
+      required: 1
       requirePhoneBinding: false
       requireDeviceCheck: true
       withReminder: true
       voucherReward:
         type: 3
-        itemID: "bravo"
-        amount: 2
-        intervalSec: 28800   
-    - type: 13
-      point: 0
+        itemID: tw_newuser_mission_gift
+        amount: 5
+        intervalSec: 604800
+    - type: 1
+      point: 130
       exp: 0
-      required: 10
+      required: 2
       requirePhoneBinding: false
       requireDeviceCheck: true
       withReminder: true
-      voucherReward:
-        type: 3
-        itemID: "bravo"
-        amount: 2
-        intervalSec: 28800        
     - type: 13
       point: 0
       exp: 0
@@ -347,18 +285,13 @@ newbieRewards:
       withReminder: true
       voucherReward:
         type: 3
-        itemID: "bravo"
-        amount: 2
-        intervalSec: 28800     
+        itemID: bravo
+        amount: 50
+        intervalSec: 604800
     - type: 14
-      point: 0
+      point: 130
       exp: 0
       required: 2
       requirePhoneBinding: false
       requireDeviceCheck: true
-      withReminder: false
-      voucherReward:
-        type: 3
-        itemID: "socute"
-        amount: 50
-        intervalSec: 28800
+      withReminder: true
