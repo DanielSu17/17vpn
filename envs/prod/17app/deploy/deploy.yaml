@@ -1,32 +1,6 @@
 # Every service belongs to a type (go, nodejs, webapp, or spinnaker)
 # Every type has its own settings like Jenkins endpoints which base on environments
 
-type:
-  alfred:          "go"
-  revprox:         "go"
-  goapi:           "go"
-  cronjob:         "go"
-  slackbot:        "go"
-  shield:          "go"
-  skyeye:          "go"
-  srsapi:          "go"
-  event-server:    "go"
-  worker:          "go"
-  exchange:        "go"
-  data-middleware: "go"
-  go-cron:         "go"
-  golives:         "go"
-  gotrade:         "go"
-  eventory-worker: "go"
-  admin:           "nodejs"
-  webtool:         "nodejs"
-  baobaofu:        "webapp"
-  event-web:       "webapp"
-  webapp:          "webapp"
-  skyeyewall:      "webapp"
-  17live:          "webapp"
-  spinnaker:       "spinnaker"
-
 groups:
   backend:
     alfred:          "go"
@@ -42,6 +16,7 @@ groups:
     go-cron:         "go"
     golives:         "go"
     gotrade:         "go"
+    eventory:        "go"
     eventory-worker: "go"
     spinnaker:       "spinnaker"
   frontend:
@@ -94,4 +69,5 @@ settings:
     - "slackbot"
     - "alfred"
     - "srsapi"
+    - "eventory"
     - "eventory-worker"
