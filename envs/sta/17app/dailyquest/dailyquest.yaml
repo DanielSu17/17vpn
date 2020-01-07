@@ -212,7 +212,7 @@ checkPNAfterComplete: 2
 # - 6: LIVE_CHECK_IN_SIX
 # - 7: LIVE_CHECK_IN_SEVEN
 # - 8: LIKE_POST
-# - 9: COMMENT_LIVE
+# - 9: COMMENT_LIVE , could only be exactly 3 times due to lokalise key
 # - 10: SEND_GIFT
 # - 11: BUY_POINT
 # - 12: DailyQuestType_WATCH_LIVE_10_CONTINUE
@@ -248,7 +248,7 @@ newbieRewards:
     - type: 9
       point: 0
       exp: 0
-      required: 1
+      required: 3
       requirePhoneBinding: false
       requireDeviceCheck: true
       withReminder: true
