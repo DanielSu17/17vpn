@@ -42,7 +42,7 @@ missions:
       rewardID: fart_baby
       amount: 50
       expireTimeSecs: 18000
-    requirePhoneBinding: true
+    requirePhoneBinding: false
     withReminder: true
     i18nTitle: baggage_mission_watch_streams_time_in_total_reward_my_title_fart
     i18nTitleParams:
@@ -71,7 +71,7 @@ missions:
       rewardID: friday_pink_party
       amount: 50
       expireTimeSecs: 18000
-    requirePhoneBinding: true
+    requirePhoneBinding: false
     withReminder: true
     i18nTitle: baggage_mission_watch_streams_time_in_total_reward_my_title_pink_party
     i18nTitleParams:
@@ -83,38 +83,6 @@ missions:
     enableTimeRange:
       - startTime: "2019-11-01 18:00:00 (GMT+0800)"
         endTime: "2020-11-30 23:59:59 (GMT+0800)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: 018ac931-9bf9-4361-b1d2-c755bd10a899
-    type: 5
-    lifeCycle: 1
-    targetAudience: 0
-    levelRange:
-      min: 3
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: dragon_baby_20191110
-      amount: 50
-      expireTimeSecs: 86400
-    requirePhoneBinding: true
-    withReminder: true
-    i18nTitle: baggage_mission_leave_comment_reward_title_wei_chuan
-    i18nTitleParams:
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_leave_comment_reward_desc_wei_chuan
-    i18nDescriptionParams:
-      - needMap: false
-        mapOption: 0
-        value: 3
-    goalValue: 3
-    enableTimeRange:
-      - startTime: "2019-11-01 18:00:00 (GMT+0800)"
-        endTime: "2019-12-31 23:59:59 (GMT+0800)"
     refIDs:
     platforms:
       - android
@@ -147,131 +115,6 @@ missions:
     enableTimeRange:
       - startTime: "2019-12-25 10:00:00 (GMT+0800)"
         endTime: "2020-12-25 10:00:00 (GMT+0800)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: 04d20a65-d569-4afc-a933-7e4dae8ae240
-    type: 9
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 1
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: shirley_bird_viewer_bag
-      amount: 10
-      expireTimeSecs: 86400
-    requirePhoneBinding: true
-    withReminder: true
-    i18nTitle: baggage_mission_leave_comment_reward_title_wei_chuan
-    i18nTitleParams:
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_leave_comment_reward_desc_wei_chuan
-    i18nDescriptionParams:
-      - needMap: false
-        mapOption: 0
-        value: 1
-    goalValue: 1
-    enableTimeRange:
-      - startTime: "2019-11-01 18:00:00 (GMT+0800)"
-        endTime: "2020-11-30 23:59:59 (GMT+0800)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: c3c88d1e-2f4c-4a2d-9b87-625717aaeaf2
-    type: 9
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 1
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: shirley_bird_streamer_bag
-      amount: 10
-      expireTimeSecs: 86400
-    requirePhoneBinding: true
-    withReminder: false
-    i18nTitle: baggage_mission_leave_comment_reward_title_wei_chuan
-    i18nTitleParams:
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_leave_comment_reward_desc_wei_chuan
-    i18nDescriptionParams:
-      - needMap: false
-        mapOption: 0
-        value: 1
-    goalValue: 1
-    enableTimeRange:
-      - startTime: "2019-11-01 18:00:00 (GMT+0800)"
-        endTime: "2020-11-30 23:59:59 (GMT+0800)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: 2af0a360-abc7-4bc0-a81e-d0ae1c79760e
-    type: 11
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 0
-      max: 0
-    reward:
-      rewardType: 1
-      rewardID: 2019_jp_share_3streamers
-      amount: 10
-      expireTimeSecs: 86400
-    requirePhoneBinding: false
-    withReminder: true
-    i18nTitle: baggage_mission_daily_share_reward_title
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 1
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_daily_share_reward_des
-    i18nDescriptionParams:
-    goalValue: 3
-    enableTimeRange:
-      - startTime: "2019-04-25 18:00:00 (GMT+0800)"
-        endTime: "2019-12-31 23:59:59 (GMT+0800)"
-    refIDs:
-    platforms:
-      - ios
-      - android
-
-  - ID: 741c9049-dfca-4f0b-94c2-538bef3623aa
-    type: 10
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 1
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 1810_tw_live_bp_10
-      amount: 20
-      expireTimeSecs: 86400
-    requirePhoneBinding: false
-    withReminder: true
-    i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
-    i18nTitleParams:
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
-    i18nDescriptionParams:
-    goalValue: 1000
-    enableTimeRange:
-      - startTime: "2019-07-29 14:00:00 (GMT+0800)"
-        endTime: "2019-12-31 23:59:59 (GMT+0800)"
     refIDs:
     platforms:
       - android
