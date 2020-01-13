@@ -50,6 +50,10 @@ settings:
       endpoint: 'k8ssta-deployment-goapi/buildWithParameters?token=qLnZFhgbtDwYHq3bpqdsfHkXqEbMS7VAuTshkBrQ'
     k8sprod:
       endpoint: 'k8sprod-deployment-goapi/buildWithParameters?token=WPZgd7ag4Q7ksL3nSqLW2QVq6aaDK5apguCvR23M'
+    awssta:
+      endpoint: '17App/job/awssta-deployment-goapi/buildWithParameters?token=WPZgd7ag4Q7ksL3nSqLW2QVq6aaDK5apguCvR23M'
+    awsprod:
+      endpoint: '17App/job/awsprod-deployment-goapi/buildWithParameters?token=WPZgd7ag4Q7ksL3nSqLW2QVq6aaDK5apguCvR23M'
   nodejs:
     k8ssta:
       endpoint: 'k8ssta-deployment-nodejs/buildWithParameters?token=ZQuygxVpytYgnanavuVkEdQsccQKr36RyLWNhgjY'
@@ -69,3 +73,22 @@ settings:
     - "srsapi"
     - "eventory"
     - "eventory-worker"
+
+clouds:
+  aws:
+    deployMethods:
+      go:
+        services:
+          - "goapi"
+          - "revprox"
+      spinnaker:
+        services:
+        fallbackToMethod: "go"
+  gcp:
+    deployMethods:
+      go:
+        services:
+          - "17app"
+      spinnaker:
+        services:
+          - "17app"
