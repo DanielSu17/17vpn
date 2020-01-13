@@ -74,6 +74,14 @@ settings:
     - "eventory"
     - "eventory-worker"
 
+deployEnv:
+  allprod:
+    - "k8sprod"
+    - "awsprod"
+  allstag:
+    - "k8sprod"
+    - "awsprod"
+
 clouds:
   aws:
     deployMethods:
