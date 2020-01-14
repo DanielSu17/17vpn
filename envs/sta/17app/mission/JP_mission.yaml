@@ -699,6 +699,7 @@ missions:
       - android
       - ios
 
+#gamecenter
   - ID: b676e244-5a1a-445c-b0c6-93894ee2d0bc
     type: 3
     lifeCycle: 1
@@ -733,6 +734,41 @@ missions:
         endTime: "2020-01-30 23:59:59 (GMT+0900)"
     refIDs:
       - 2001_jp_gamecentre_xs
+    platforms:
+      - android
+      - ios
+
+#mysong
+  - ID: 1f3d608f-f87b-4fa7-a0c9-c3333aa96f6c
+    type: 9
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 10
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2001_jp_mysong_bp
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    i18nTitle: baggage_mission_watch_jp_monthly_17Musicelection
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 1
+    i18nContent:
+    i18nContentParams:
+    i18nDescription: baggage_mission_watch_jp_monthly_17Musicelection3
+    i18nDescriptionParams:
+      - needMap: false
+        mapOption: 0
+        value: 1
+    goalValue: 600
+    enableTimeRange:
+      - startTime: "2019-01-26 12:00:00 (GMT+0900)"
+        endTime: "2020-01-27 23:59:59 (GMT+0900)"
+    refIDs:
     platforms:
       - android
       - ios
