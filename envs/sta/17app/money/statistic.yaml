@@ -27,4 +27,6 @@ partitionPlan:
 
 skipUpdateDelta: false
 
-
+pointReceiverLogsPlan:
+  migrateState: 1 # 0: disable, 1: mysql, 2: mongo
+  intervalSeconds: 3600
