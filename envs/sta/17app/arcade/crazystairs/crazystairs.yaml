@@ -1,0 +1,55 @@
+supportedVersion:
+  android: "2.4.37"
+  ios: "3.85.0"
+
+#levels: 
+#  "level1": #defined by editer and cannot have same levelID in `levels`
+levels:
+  "level1":
+    role: 0
+    objPercentage:
+      normal: 0.2
+      fire: 0.2
+      spring: 0.2
+      disappear: 0.2
+      moving: 0.2
+    spikeAttackFrequency: 5
+    fogInfo:
+      concentration: 0.5
+      speed: 1
+  "level2":
+    role: 0
+    objPercentage:
+      normal: 0.2
+      fire: 0.2
+      spring: 0.2
+      disappear: 0.2
+      moving: 0.2
+    spikeAttackFrequency: 5
+    fogInfo:
+      concentration: 0.5
+      speed: 1
+
+# modes: only have 4 modes now
+# 1. easy
+# 2. pro
+# 3. funny
+# 4. general
+#  easy:
+#    0: level1 # it means when the user reaches stairs-0, it will trigger level1's seetting
+#    20: level2 # it means when the user reaches stairs-20, it will trigger level2's seetting
+modes:
+  "easy":
+    0: "level1"
+    20: "level2"
+  "pro":
+    0: "level1"
+    10: "level2"
+  "funny":
+    0: "level1"
+    5: "level2"
+
+giftIDToMode:
+  "crazyStaris_easy_streamer": "easy"
+  "crazyStaris_pro_streamer": "pro"
+  "crazyStaris_funny_streamer": "funny"
