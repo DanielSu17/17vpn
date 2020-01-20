@@ -1,6 +1,6 @@
 # newbieHours defines the newbie period in hours
 newbieHours: 24
-pokeNewbieHours: 168
+pokeNewbieHours: 72
 
 # hideArmyPromote indciates hiding army promote msg from fresh user
 # periodInHours defines the period of fresh user
@@ -12,3 +12,46 @@ hideArmyPromote:
 # after a/b testing is over, set them as the observation result
 newbieEnhanceGuidanceStyle: 0 # default style
 newbieGuidanceFocusMissionEnable: false
+displayGiftTabsToastDurationSecs: 30
+# https://17media.atlassian.net/browse/PROD-4045
+# If endTimeInHours is 0, it will be ignored
+"featureRules":
+  "ModalAd":
+    "startTimeInHours": 48
+    "endTimeInHours": 0
+  "CoverGirl":
+    "startTimeInHours": 48
+    "endTimeInHours": 0
+  "RacingCar":
+    "startTimeInHours": 240
+    "endTimeInHours": 0
+  "DynamicShareButton":
+    "startTimeInHours": 0
+    "endTimeInHours": 0
+  "Accompany":
+    "startTimeInHours": 240
+    "endTimeInHours": 0
+  "RoomComeToLifeForGiftBox":
+    "startTimeInHours": 48
+    "endTimeInHours": 0
+  "HandDrawSticker":
+    "startTimeInHours": 24
+    "endTimeInHours": 0
+  "LevelUpGift":
+    "startTimeInHours": 0
+    "endTimeInHours": 0
+  "HeavenlyGift":
+    "startTimeInHours": 24
+    "endTimeInHours": 0
+  "BirthdayGift":
+    "startTimeInHours": 0
+    "endTimeInHours": 0
+  "AudioGift":
+    "startTimeInHours": 24
+    "endTimeInHours": 0
+  "ArmyGift":
+    "startTimeInHours": 24
+    "endTimeInHours": 0
+  "LimitedGoodsGift":
+    "startTimeInHours": 240
+    "endTimeInHours": 0
