@@ -30,6 +30,38 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: 52e3e58a-1956-423b-95ef-eac906e0a3db
+    type: 5
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 21
+      max: 1000
+    reward:
+      rewardType: 1
+      rewardID: 2002_my_romance_bp
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: true
+    withReminder: false
+    i18nTitle: baggage_mission_leave_comment_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 8
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_leave_comment_reward_desc
+    i18nDescriptionParams:
+    goalValue: 8
+    enableTimeRange:
+      - startTime: "2020-02-01 18:00:00 (GMT+0800)"
+        endTime: "2020-02-14 23:59:59 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
   - ID: 11f3c61c-78fb-4597-ae57-d642a16c028b
     type: 9
     lifeCycle: 0
@@ -62,82 +94,6 @@ missions:
       - android
       - ios
 
-  - ID: 5ddf8ced-39b6-45ee-b739-b962cc9bcc6a
-    type: 5
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 21
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 2001_tw_singer_bp
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: true
-    withReminder: false
-    i18nTitle: baggage_mission_leave_comment_reward_title
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 100
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_leave_comment_reward_desc
-    i18nDescriptionParams:
-    goalValue: 10
-    enableTimeRange:
-      - startTime: "2020-01-03 18:00:00 (GMT+0800)"
-        endTime: "2020-01-16 23:59:59 (GMT+0800)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: ca783ea9-33c3-4244-9c02-4b33359004b3
-    type: 3
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 21
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 2001_tw_singer_bp
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: true
-    withReminder: false
-    i18nTitle: baggage_mission_send_specific_gifts_reward_title
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 3
-      - needMap: false
-        mapOption: 2
-        value: 2001_tw_singer_s
-      - needMap: false
-        mapOption: 2
-        value: 2001_tw_singer_m
-      - needMap: false
-        mapOption: 2
-        value: 2001_tw_singer_l
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
-    i18nDescriptionParams:
-    goalValue: 3
-    enableTimeRange:
-      - startTime: "2020-01-03 18:00:00 (GMT+0800)"
-        endTime: "2020-01-16 23:59:59 (GMT+0800)"
-    refIDs:
-      - 2001_tw_singer_s
-      - 2001_tw_singer_m
-      - 2001_tw_singer_l
-    platforms:
-      - android
-      - ios
-
   - ID: 439315a0-ee69-44b3-b101-65bca97563a6
     type: 9
     lifeCycle: 0
@@ -165,70 +121,6 @@ missions:
     enableTimeRange:
       - startTime: "2020-01-08 18:00:00 (GMT+0800)"
         endTime: "2020-01-30 23:59:59 (GMT+0800)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: 74be8559-afdc-49ec-be6c-1fcbe0d907e8
-    type: 9
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 21
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 2001_tw_universal_bp
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: true
-    withReminder: false
-    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 20
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc_phone
-    i18nDescriptionParams:
-    goalValue: 1200
-    enableTimeRange:
-      - startTime: "2020-01-11 00:00:00 (GMT+0800)"
-        endTime: "2020-01-12 23:59:59 (GMT+0800)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: 7475064b-222b-4dfe-8dec-c28485b0b9a9
-    type: 9
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 21
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 2001_tw_universal_bp
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: true
-    withReminder: false
-    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 20
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc_phone
-    i18nDescriptionParams:
-    goalValue: 1200
-    enableTimeRange:
-      - startTime: "2020-01-18 00:00:00 (GMT+0800)"
-        endTime: "2020-01-19 23:59:59 (GMT+0800)"
     refIDs:
     platforms:
       - android
