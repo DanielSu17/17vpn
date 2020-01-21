@@ -21,17 +21,44 @@ custom_max_point: 9999999
 whiteListUserIDs:
  - "d1cd5a6a-3346-4263-85ef-c9f3a600de39"
  - "5cbbcca2-b412-4872-8555-4c0f1aeed6ff"
-pointSets:
-- id: pointset_666
+redenvelopes:
+- id: redenvelope_no_superstar
+  img_URL: http://cdn.17app.co/a30cf4a7-9867-4a4c-9acc-a808ed14f3c5.png
+  name_token: redenvelope_system_bonus
   point: 666
+  min_point: 666
+  max_point: 666
+  announceable: false
+  announce_threshold: -171717
+  countdown_time: 5
+  event_time: 5
+  fee: 0
+  theme: 3
+  type: 3
+  is_offline: false
+  region_mode: 2
+  regions: ["TW"]
   package_list:
     - amount: 1
       point: 600
     - amount: 1
       point: 66
-- id: pointset_1049
+- id: redenvelope_no_recommend
+  img_URL: http://cdn.17app.co/8d27f90a-3419-4bc4-af6a-3b6a462e5aad.png
+  name_token: red_envelope_promote_name
   point: 1049
+  min_point: 1000
+  max_point: 1000
+  announceable: false
+  announce_threshold: -171717
+  countdown_time: 5
+  event_time: 10
   fee: 50
+  theme: 1
+  type: 4
+  is_offline: false
+  region_mode: 2
+  regions: ["TW"]
   package_list:
     - amount: 1
       point: 204
@@ -41,135 +68,6 @@ pointSets:
       point: 137
     - amount: 5
       point: 100
-- id: pointset_1888888
-  point: 1888888
-  fee: 94444
-  package_list:
-    - amount: 1
-      point: 18888
-    - amount: 1
-      point: 12000
-    - amount: 1
-      point: 7473
-    - amount: 146
-      point: 5373
-    - amount: 199
-      point: 3375
-    - amount: 200
-      point: 1500
-- id: pointset_188888
-  point: 188888
-  fee: 9444
-  package_list:
-    - amount: 1
-      point: 2020
-    - amount: 1
-      point: 1486
-    - amount: 1
-      point: 1218
-    - amount: 130
-      point: 650
-    - amount: 170
-      point: 400
-    - amount: 101
-      point: 220
-- id: pointset_18888
-  point: 18888
-  fee: 944
-  package_list:
-    - amount: 1
-      point: 500
-    - amount: 1
-      point: 304
-    - amount: 1
-      point: 188
-    - amount: 32
-      point: 136
-    - amount: 126
-      point: 100
-- id: pointset_1888
-  point: 1888
-  fee: 94
-  package_list:
-    - amount: 1
-      point: 199
-    - amount: 1
-      point: 158
-    - amount: 1
-      point: 137
-    - amount: 13
-      point: 100
-- id: pointset_888888
-  point: 888888
-  fee: 40000
-  package_list:
-    - amount: 1
-      point: 845000
-    - amount: 1
-      point: 1000
-    - amount: 1
-      point: 500
-    - amount: 12
-      point: 199
-- id: pointset_88888
-  point: 88888
-  fee: 4000
-  package_list:
-    - amount: 1
-      point: 81000
-    - amount: 1
-      point: 1000
-    - amount: 1
-      point: 500
-    - amount: 12
-      point: 199
-- id: pointset_8888
-  point: 8888
-  fee: 400
-  package_list:
-    - amount: 1
-      point: 5000
-    - amount: 1
-      point: 1000
-    - amount: 1
-      point: 100
-    - amount: 12
-      point: 199
-- id: pointset_888
-  point: 888
-  fee: 40
-  package_list:
-    - amount: 1
-      point: 800
-    - amount: 1
-      point: 48
-redenvelopes:
-- id: redenvelope_no_superstar
-  img_URL: http://cdn.17app.co/a30cf4a7-9867-4a4c-9acc-a808ed14f3c5.png
-  name_token: redenvelope_system_bonus
-  pointSetID: pointset_666
-  announceable: false
-  announce_threshold: -171717
-  countdown_time: 5
-  event_time: 5
-  theme: 3
-  type: 3
-  is_offline: false
-  region_mode: 2
-  regions: ["TW"]
-- id: redenvelope_no_recommend
-  img_URL: http://cdn.17app.co/8d27f90a-3419-4bc4-af6a-3b6a462e5aad.png
-  name_token: red_envelope_promote_name
-  pointSetID: pointset_1049
-  announceable: false
-  announce_threshold: -171717
-  countdown_time: 5
-  event_time: 10
-  theme: 1
-  type: 4
-  is_offline: false
-  region_mode: 2
-  regions: ["TW"]
 - id: redenvelope_no_custom
   img_URL: http://cdn.17app.co/203fb9b5-9d97-4b15-bcdf-2dcb2cc76b1a.png
   zip_url: https://assets-17app.akamaized.net/595b6425-a4cc-491c-bc81-2acce956fee8.zip
@@ -216,16 +114,30 @@ redenvelopes:
   webp_url: https://assets-17app.akamaized.net/97d9705d-5096-4e3e-b273-6cbd44a20728-q90-s1.webp
   webp_md5: 121a265463e1d608c2e2aa641958276e
   name_token: cny_redenvelope_no_1
-  pointSetID: pointset_1888888
+  point: 1888888
   announceable: true
   announce_threshold: -171717
   countdown_time: 60
   event_time: 10
+  fee: 94444
   theme: 2
   type: 1
   is_offline: false
   region_mode: 2
   regions: ["TW", "HK", "SG", "MY"]
+  package_list:
+    - amount: 1
+      point: 18888
+    - amount: 1
+      point: 12000
+    - amount: 1
+      point: 7473
+    - amount: 146
+      point: 5373
+    - amount: 199
+      point: 3375
+    - amount: 200
+      point: 1500
 - id: cny_redenvelope_no_2
   img_URL: http://cdn.17app.co/6d431729-c43c-4ba4-963f-ccab88cd0b78.png
   zip_url: https://assets-17app.akamaized.net/dd035e49-390d-455c-a4f5-f61c83878052.zip
@@ -233,16 +145,32 @@ redenvelopes:
   webp_url: https://assets-17app.akamaized.net/4680e6e6-1782-4a6b-82ce-12de0d4dbe23-q90-s1.webp
   webp_md5: 943eba361e1d45370d4e38267ee078fc
   name_token: cny_redenvelope_no_2
-  pointSetID: pointset_188888
+  point: 188888
+  min_point: 188888
+  max_point: 188888
   announceable: true
   announce_threshold: -171717
   countdown_time: 30
   event_time: 10
+  fee: 9444
   theme: 2
   type: 1
   is_offline: false
   region_mode: 2
   regions: ["TW", "HK", "SG", "MY"]
+  package_list:
+    - amount: 1
+      point: 2020
+    - amount: 1
+      point: 1486
+    - amount: 1
+      point: 1218
+    - amount: 130
+      point: 650
+    - amount: 170
+      point: 400
+    - amount: 101
+      point: 220
 - id: cny_redenvelope_no_3
   img_URL: http://cdn.17app.co/2d8b4063-0ef1-4bb8-b663-474e82b64789.png
   zip_url: https://assets-17app.akamaized.net/2c47a048-5a0b-4043-90a6-8be1eafecb6d.zip
@@ -250,16 +178,30 @@ redenvelopes:
   webp_url: https://assets-17app.akamaized.net/a27d14a0-e1d5-428f-9a2a-e2622e14f35e-q90-s1.webp
   webp_md5: f7fcf71c2cc803a70b4f9dc885b55f93
   name_token: cny_redenvelope_no_3
-  pointSetID: pointset_18888
+  point: 18888
+  min_point: 18888
+  max_point: 18888
   announceable: false
   announce_threshold: -171717
   countdown_time: 15
   event_time: 10
+  fee: 944
   theme: 2
   type: 1
   is_offline: false
   region_mode: 2
   regions: ["TW", "HK", "SG", "MY"]
+  package_list:
+    - amount: 1
+      point: 500
+    - amount: 1
+      point: 304
+    - amount: 1
+      point: 188
+    - amount: 32
+      point: 136
+    - amount: 126
+      point: 100
 - id: cny_redenvelope_no_4
   img_URL: http://cdn.17app.co/5e43b968-713e-44ff-ad8d-90e31f6000e6.png
   zip_url: https://assets-17app.akamaized.net/cb6fe4b0-4e10-4bff-9a41-f0d313b5aba1.zip
@@ -267,16 +209,28 @@ redenvelopes:
   webp_url: https://assets-17app.akamaized.net/ec70c3a6-6722-4bb3-87e3-949e89819e0e-q90-s1.webp
   webp_md5: abc3bcc244738b4acad27c5c6df783dc
   name_token: cny_redenvelope_no_4
-  pointSetID: pointset_1888
+  point: 1888
+  min_point: 1888
+  max_point: 1888
   announceable: false
   announce_threshold: -171717
   countdown_time: 5
   event_time: 10
+  fee: 94
   theme: 2
   type: 1
   is_offline: false
   region_mode: 2
   regions: ["TW", "HK", "SG", "MY"]
+  package_list:
+    - amount: 1
+      point: 199
+    - amount: 1
+      point: 158
+    - amount: 1
+      point: 137
+    - amount: 13
+      point: 100
 - id: redenvelope_no_1
   img_URL: http://cdn.17app.co/fb3bd824-1f79-4e9d-bc7d-9fcc7c3dc4f1.png
   zip_url: https://assets-17app.akamaized.net/348f589c-e13b-43e0-bf89-90ef5b17e7de.zip
@@ -284,16 +238,28 @@ redenvelopes:
   webp_url: http://cdn.17app.co/redenvelope_no_1.webp
   webp_md5: 9c2480cd580ceddf8f098d6884451468
   name_token: redenvelope_name_no_1
-  pointSetID: pointset_888888
+  point: 888888
+  min_point: 888888
+  max_point: 888888
   announceable: true
   announce_threshold: -171717
   countdown_time: 60
   event_time: 10
+  fee: 40000
   theme: 1
   type: 1
   is_offline: false
   region_mode: 1
   regions: []
+  package_list:
+    - amount: 1
+      point: 845000
+    - amount: 1
+      point: 1000
+    - amount: 1
+      point: 500
+    - amount: 12
+      point: 199
 - id: redenvelope_no_2
   img_URL: http://cdn.17app.co/970fe736-1bb5-4bd2-9041-a0f14e057278.png
   zip_url: https://assets-17app.akamaized.net/31101f1d-d3f8-4d04-8b0f-d8a2dc32e298.zip
@@ -301,16 +267,28 @@ redenvelopes:
   webp_url: http://cdn.17app.co/redenvelope_no_2.webp
   webp_md5: 4a6a3ef899c2ca4f68a8f48110f38c1b
   name_token: redenvelope_name_no_2
-  pointSetID: pointset_88888
+  point: 88888
+  min_point: 88888
+  max_point: 88888
   announceable: true
   announce_threshold: -171717
   countdown_time: 60
   event_time: 10
+  fee: 4000
   theme: 1
   type: 1
   is_offline: false
   region_mode: 1
   regions: []
+  package_list:
+    - amount: 1
+      point: 81000
+    - amount: 1
+      point: 1000
+    - amount: 1
+      point: 500
+    - amount: 12
+      point: 199
 - id: redenvelope_no_3
   img_URL: http://cdn.17app.co/7d0fd036-3869-42a7-9168-057388f9e232.png
   zip_url: https://assets-17app.akamaized.net/ccd8086b-ac89-47fa-9f7c-7784f8396f79.zip
@@ -318,16 +296,28 @@ redenvelopes:
   webp_url: http://cdn.17app.co/redenvelope_no_3.webp
   webp_md5: 1d25a18ad504375c05c8da768faa0edf
   name_token: redenvelope_name_no_3
-  pointSetID: pointset_8888
+  point: 8888
+  min_point: 8888
+  max_point: 8888
   announceable: false
   announce_threshold: -171717
   countdown_time: 15
   event_time: 10
+  fee: 400
   theme: 1
   type: 1
   is_offline: false
   region_mode: 1
   regions: []
+  package_list:
+    - amount: 1
+      point: 5000
+    - amount: 1
+      point: 1000
+    - amount: 1
+      point: 100
+    - amount: 12
+      point: 199
 - id: redenvelope_no_4
   img_URL: http://cdn.17app.co/a30cf4a7-9867-4a4c-9acc-a808ed14f3c5.png
   zip_url: https://assets-17app.akamaized.net/10354987-e72c-41d8-99c5-2f8a9fa3d3b3.zip
@@ -335,13 +325,21 @@ redenvelopes:
   webp_url: http://cdn.17app.co/redenvelope_no_4.webp
   webp_md5: 8a677e8f5115c738f0936791099df4a6
   name_token: redenvelope_name_no_4
-  pointSetID: pointset_888
+  point: 888
+  min_point: 888
+  max_point: 888
   announceable: false
   announce_threshold: -171717
   countdown_time: 15
   event_time: 10
+  fee: 40
   theme: 1
   type: 1
   is_offline: false
   region_mode: 1
   regions: []
+  package_list:
+    - amount: 1
+      point: 800
+    - amount: 1
+      point: 48
