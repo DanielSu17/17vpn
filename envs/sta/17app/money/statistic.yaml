@@ -25,8 +25,10 @@ partitionPlan:
   samplePercentage: 0
   switchToCTReportV2: true
 
-skipUpdateDelta: false
-
 pointReceiverLogsPlan:
   migrateState: 1 # 0: disable, 1: mysql, 2: mongo
   intervalSeconds: 3600
+
+updateRevenueCron:
+  enable: true
+  enableTime: 2020-01-21 11:40:00 (GMT+0800)
