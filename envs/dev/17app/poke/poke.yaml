@@ -4,5 +4,34 @@
 giftLv1ID: gift_pokepoke
 giftLv2ID: gift_pokepoke_lv2
 giftLv3ID: gift_pokepoke_lv3
-enableTimeLimit: true
-timeLimit: 300
+enableTimeLimit: false
+timeLimit: 30
+
+i18nkeys:
+  streamerPokeAll: system_poke_all_user_name
+  streamerPokeUser: poke_viewer
+  pokeAnimationTitle: poke_viewer
+  userFreePokeBack: poke_back_streamer_with_point
+  userPokeBack: poke_back_streamer
+  pokeBackMenuTitle: streamer_poke_you
+
+pokeAnimationID: poke_streamer_poke
+
+# client needs gift ids to get gift info for giftLV1/2/3
+# and requires i18nkeys to display option name for free pokes
+pokeBackMenu:
+  giftLV3:
+    ID: 2002_chocopoke_l
+    imgURL: "https://cdn.17app.co/e45a1888-0403-411e-a52b-52297705b9f4.png"
+  giftLV2:
+    ID: 2002_chocopoke_m
+    imgURL: "https://cdn.17app.co/a855cd91-d2d9-4846-b3b3-f87d1dbbd6f8.png"
+  giftLV1:
+    ID: 2002_chocopoke_s
+    imgURL: "https://cdn.17app.co/cd2ae9b4-4cd8-466e-85a2-9666646166da.png"
+  freePoke:
+    i18nKey: poke_and_follow
+    imgURL: "https://cdn.17app.co/35e9ebe1-c6c0-4d56-a410-50f1e1b82db6.png"
+  freePokeAndFollow:
+    i18nKey: poke_and_follow
+    imgURL: "https://cdn.17app.co/35e9ebe1-c6c0-4d56-a410-50f1e1b82db6.png"
