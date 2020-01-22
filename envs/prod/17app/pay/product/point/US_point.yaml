@@ -11,14 +11,15 @@
 # // |    UnLimit    |   2   | 限時不限次數
 
 eventBasedIAP:
-  - startTime: "2020-01-16T13:00:00+08:00"
-    endTime: "2020-01-22T00:00:00+08:00"
+  - startTime: "2020-01-23T07:00:00+08:00"
+    endTime: "2021-01-23T07:00:00+08:00"
     showCountdownUnderSticker: false
     showCountdownInPopUp: false
-    stickerURL: ""
+    stickerURL: "https://cdn.17app.co/dfbfe9a5-916e-431e-a561-06a348f62919.png"
     eventInfo:
       eventTitleI18nKey: ""
       eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/f4974873-d226-474d-8e15-37384164aae5.png"
     layoutInfo:
       titlePicURL: ""
       messageColor: "#6F6777"
@@ -37,21 +38,21 @@ eventBasedIAP:
         bonusPoint: 0
         shouldHighlight:  false
       - productID: "media17_points_1720"
-        bonusPoint: 0
-        shouldHighlight:  false
+        bonusPoint: 1720
+        shouldHighlight:  true
       - productID: "media17_points_3540"
-        bonusPoint: 0
-        shouldHighlight:  false
+        bonusPoint: 3540
+        shouldHighlight:  true
       - productID: "media17_points_8550"
         bonusPoint: 0
-        shouldHighlight:  true
+        shouldHighlight:  false
       - productID: "media17_points_15420"
         bonusPoint: 0
         shouldHighlight:  false
       - productID: "media17_points_35980"
         bonusPoint: 0
         shouldHighlight:  false
-    firstPurchaseType: 2
+    firstPurchaseType: 1
     taInfo:
       registerRange:
         dayStart: 0 # 0 means no limit
