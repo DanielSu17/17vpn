@@ -185,31 +185,31 @@ commandHelp:
       changeAgencyAccount:
         title: "`[更新經紀公司登入帳號]`"
         description: |
-          > 
+          >
       updateStreamerLabel:
         title: "`[批次更新主播label]`"
         description: |
-          > 
+          >
       updateContractLabel:
         title: "`[批次更新合約label]`"
         description: |
-          > 
+          >
       contractInfo:
         title: "`[查詢合約資訊]`"
         description: |
-          > 
+          >
       queryRTPList:
         title: "`[查詢用戶是否在分潤禁止轉點的名單內]`"
         description: |
-          > 
+          >
       addRTPList:
         title: "`[將用戶加入分潤禁止轉點的名單內]`"
         description: |
-          > 
+          >
       removeRTPList:
         title: "`[將用戶移出分潤禁止轉點的名單]`"
         description: |
-          > 
+          >
 #===!butler小幫手===
   butler:
     title: "小幫手"
@@ -217,15 +217,15 @@ commandHelp:
       send-message:
         title: "`[發送小幫手給特定用戶]`"
         description: |
-          > 
+          >
       send-regional-message:
         title: "`[發送小幫手給所有該地區所有用戶]`"
         description: |
-          > 
+          >
       send-regional-contract-message:
         title: "`[發送小幫手給所有該地區所有簽約主播]`"
         description: |
-          > 
+          >
 #===!clan幫派相關===
   clan:
     title: "幫派"
@@ -242,15 +242,15 @@ commandHelp:
         title: "`[發送短影片內容到slack channel #skyeye-clip]`"
         description: |
           >
-      accept:      
+      accept:
         title: "`[等同按鈕的accept功能，接受此短影片內容]`"
         description: |
           >
-      delete:      
+      delete:
         title: "`[等同按鈕的delete功能，刪除此短影片內容]`"
         description: |
           >
-      undelete:    
+      undelete:
         title: "`[復原被刪除的短影片]`"
         description: |
           >
@@ -301,7 +301,7 @@ commandHelp:
       delete:
         title: "`[清除redis cache(engineer only)]`"
         description: |
-          > 
+          >
       delete-persistent:
         title: "`[測試環境專用，清除 persistant redis (engineer only)]`"
         description: |
@@ -416,6 +416,26 @@ commandHelp:
     commandsHelp:
       update:
         title: "`[更新lokalise翻譯到server config]`"
+        description: |
+          >
+#===!incentivebonus大量配送虛擬禮物===
+  incentivebonus:
+    title: "大量配送虛擬禮物"
+    commandHelp:
+      create:
+        title: "`[建立禮物配送任務]`"
+        description: |
+          >
+      delete:
+        title: "`[取消禮物配送任務]`"
+        description: |
+          >
+      history:
+        title: "`[查詢指定用戶的禮物配送任務清單]`"
+        description: |
+          >
+      list:
+        title: "`[列出禮物配送任務清單]`"
         description: |
           >
 #===!internalOrder===
