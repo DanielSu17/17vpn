@@ -13,16 +13,16 @@ levels:
       spring: 0.2
       disappear: 0.2
       moving: 0.2
-    spikeAttackFrequency: 5
+    spikeAttackFrequency: 10
 
   "level2":
-    role: 0
+    role: 1
     objPercentage:
-      normal: 0.2
-      fire: 0.2
-      spring: 0.2
-      disappear: 0.2
-      moving: 0.2
+      normal: 0
+      fire: 0.5
+      spring: 0.1
+      disappear: 0.1
+      moving: 0.3
     spikeAttackFrequency: 5
 
 # modes: only have 4 modes now
@@ -41,7 +41,7 @@ levels:
 #       speed: n secs/percentage
 modes:
   "easy":
-    blood: 3
+    blood: 5
     gameScript:
       0: "level1"
       20: "level2"
@@ -75,6 +75,5 @@ modes:
 
 freePlayMode: "general"
 giftIDToMode:
-  "crazyStaris_easy_streamer": "easy"
-  "crazyStaris_pro_streamer": "pro"
-  "crazyStaris_funny_streamer": "funny"
+  "crazy_stairs_streamer": "easy"
+  "crazy_stairs_viewer": "funny"
