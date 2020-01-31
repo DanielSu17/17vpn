@@ -693,6 +693,78 @@ missions:
       - android
       - ios
 
+#進撃EVENT
+  - ID: 6fe70945-2522-4b6c-bb5e-587d018b7475
+    type: 8
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: "2002_jp_new_livers_bp"
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    withReminder: false
+    i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 1
+    i18nContent:
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
+    i18nDescriptionParams:
+      - needMap: false
+        mapOption: 0
+        value: 1
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2020-02-01 19:00:00 (GMT+0900)"
+        endTime: "2020-02-15 23:59:59 (GMT+0900)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
+#壁EVENT
+  - ID: c7e0b0f2-909b-4844-9051-74724c2cc7ad
+    type: 9
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 17
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: "2002_jp_newcomer21_bp"
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    withReminder: false
+    i18nTitle: baggage_mission_kabe_watching_reward_jp_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 1
+    i18nContent:
+    i18nContentParams:
+    i18nDescription: baggage_mission_kabe_watching_reward_jp_desc
+    i18nDescriptionParams:
+      - needMap: false
+        mapOption: 0
+        value: 1
+    goalValue: 1020
+    enableTimeRange:
+      - startTime: "2020-02-02 19:00:00 (GMT+0900)"
+        endTime: "2020-02-16 23:59:59 (GMT+0900)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
 #登竜門EVENT
   - ID: e553e618-796f-4baf-a87c-bd4b3ecf93fc
     type: 8
@@ -721,7 +793,7 @@ missions:
         value: 1
     goalValue: 1
     enableTimeRange:
-      - startTime: "2020-01-07 19:00:00 (GMT+0900)"
+      - startTime: "2020-01-17 19:00:00 (GMT+0900)"
         endTime: "2020-01-31 23:59:59 (GMT+0900)"
     refIDs:
     platforms:
