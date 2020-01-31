@@ -229,12 +229,17 @@ checkPNAfterComplete: 2
 #     withReminder: false
 newbieRewards:
     - type: 2
-      point: 50
+      point: 0
       exp: 0
       required: 1
       requirePhoneBinding: false
       requireDeviceCheck: true
       withReminder: true
+      voucherReward:
+        type: 3
+        itemID: tw_newuser_mission_watch
+        amount: 10
+        intervalSec: 604800
     - type: 3
       point: 0
       exp: 0
@@ -284,16 +289,26 @@ newbieRewards:
         amount: 50
         intervalSec: 604800
     - type: 1
-      point: 130
+      point: 0
       exp: 0
       required: 2
       requirePhoneBinding: false
       requireDeviceCheck: true
       withReminder: true
+      voucherReward:
+        type: 3
+        itemID: socute
+        amount: 10
+        intervalSec: 604800
     - type: 14
-      point: 130
+      point: 0
       exp: 0
       required: 2
       requirePhoneBinding: false
       requireDeviceCheck: true
       withReminder: true
+      voucherReward:
+        type: 3
+        itemID: 2019newuser
+        amount: 10
+        intervalSec: 604800
