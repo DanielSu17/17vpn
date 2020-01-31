@@ -30,6 +30,54 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: 87a4aeae-244e-4ede-ab7a-3de94b299a26
+    type: 3
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 21
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2002_tw_love_bp
+      amount: 1
+      expireTimeSecs: 604800
+    requirePhoneBinding: true
+    withReminder: false
+    i18nTitle: baggage_mission_send_specific_gifts_reward_title_four
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 3
+      - needMap: true
+        mapOption: 2
+        value: 2002_tw_love_bag_xs
+      - needMap: true
+        mapOption: 2
+        value: 2002_tw_love_bag_s
+      - needMap: true
+        mapOption: 2
+        value: 2002_tw_love_bag_m
+      - needMap: true
+        mapOption: 2
+        value: 2002_tw_love_bag_l
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
+    i18nDescriptionParams:
+    goalValue: 3
+    enableTimeRange:
+      - startTime: "2020-02-01 00:00:00 (GMT+0800)"
+        endTime: "2020-02-29 23:59:59 (GMT+0800)"
+    refIDs:
+      - 2002_tw_love_bag_xs
+      - 2002_tw_love_bag_s
+      - 2002_tw_love_bag_m
+      - 2002_tw_love_bag_l
+    platforms:
+      - android
+      - ios
+
   - ID: 29cae006-4fae-44ac-a1ea-fa01bff638aa
     type: 3
     lifeCycle: 0
