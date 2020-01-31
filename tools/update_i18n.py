@@ -242,8 +242,3 @@ if __name__=="__main__":
 
     # get_all_strings This method allows one request per 5 seconds
     time.sleep(5)
-
-    # Write backend.json for zoo
-    p_id = lc.get_project_id_by_name("zoo")
-    iw = I18nJsonWriter(lc.get_all_strings(p_id), "zoo")
-    iw.write_data(env, "backend")
