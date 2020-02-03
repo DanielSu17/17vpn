@@ -26,17 +26,17 @@
     "2": "a"
     "3": "a"
     "4": "a"
-    "5": "b"
-    "6": "b"
-    "7": "b"
-    "8": "b"
-    "9": "b"
-    "a": "b"
-    "b": "b"
-    "c": "b"
-    "d": "b"
-    "e": "b"
-    "f": "b"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
 - testName: entryTitleTypeB # PROD-3617
   enableABtest: true
   expiredSecond: 604800
@@ -46,11 +46,11 @@
     "2": "b"
     "3": "b"
     "4": "b"
-    "5": "a"
-    "6": "a"
-    "7": "a"
-    "8": "a"
-    "9": "a"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
     "a": "b"
     "b": "b"
     "c": "b"
@@ -76,7 +76,7 @@
     "c": "b"
     "d": "b"
     "e": "b"
-    "f": "b" 
+    "f": "b"
 - testName: recommendFollow
   enableABtest: true
   expiredSecond: 604800 # 7 day
@@ -139,7 +139,7 @@
     "f": "b"
 - testName: completeRegistration
   enableABtest: true
-  expiredSecond: 10 # 10 second 
+  expiredSecond: 10 # 10 second
   lastCharGroup:
     "0": "a"
     "1": "a"
@@ -147,7 +147,7 @@
     "3": "a"
     "4": "a"
     "5": "a"
-    "6": "a" 
+    "6": "a"
     "7": "a"
     "8": "b"
     "9": "b"
@@ -227,14 +227,14 @@
     "5": "a"
     "6": "a"
     "7": "a"
-    "8": "b"
-    "9": "b"
-    "a": "b"
-    "b": "b"
-    "c": "b"
-    "d": "b"
-    "e": "b"
-    "f": "b"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
 # 新手流程優化p5 (Feature Guide), client只有當a才顯示 空的會是不顯示
 - testName: newbieGuide
   enableABtest: false
@@ -248,14 +248,14 @@
     "5": "a"
     "6": "a"
     "7": "a"
-    "8": "b"
-    "9": "b"
-    "a": "b"
-    "b": "b"
-    "c": "b"
-    "d": "b"
-    "e": "b"
-    "f": "b"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
 # 新手流程優化p6 - b: 移除四頁landing page, 移除新手遮罩, 移除enterLivePrompt
 - testName: newbieDismissDialog
   enableABtest: false
@@ -319,6 +319,7 @@
     "d": "b"
     "e": "b"
     "f": "b"
+
 # 新手流程優化P10: 新手任務彈窗
 - testName: newbieP10MissionHint
   enableABtest: true
@@ -374,19 +375,19 @@
     "5": "a"
     "6": "a"
     "7": "a"
-    "8": "b"
-    "9": "b"
-    "a": "b"
-    "b": "b"
-    "c": "b"
-    "d": "b"
-    "e": "b"
-    "f": "b"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
 # 熱門頁2019Q4新手: group b時將feature hot2019Q4打開
 - testName: newbieHot2019Q4Tab
-  enableABtest: true
+  enableABtest: false
   lastCharGroup:
-    "0": "a"
+    "0": "b"
     "1": "b"
     "2": "b"
     "3": "b"
@@ -404,7 +405,7 @@
     "f": "b"
 # 熱門頁 hotOpt隱藏: group b強制關閉feature hotOpt
 - testName: newbieDismissHotOpt
-  enableABtest: true
+  enableABtest: false
   lastCharGroup:
     "0": "b"
     "1": "b"
