@@ -1,5 +1,26 @@
+## eventPopup example
+#
+#  Popoup anything you want 
+#  mode: 
+#        1: src =<URL>    NOTE: If mode == 1, YOU NEED TO FILL UP field [url] AND field [src] with the SAME url. [url] field will be removed in the furture.
+#        2: src =<userID>
+#
+#
+#eventPopup:
+#- name: Event Popup1
+#    mode: 1
+#    src: https://google.com.tw
+#    url: https://google.com.tw
+#    imageUrl: https://dummyimage.com/300x500/0000ff/fff&text=MICK+WILLS
+#    startTime: 2019-12-01 00:00:00 (GMT+0800)
+#    endTime: 2119-12-31 23:59:59 (GMT+0800)
+#    imageSize:
+#      width: 300
+#      height: 500
 eventPopup:
   - name: Event Popup1
+    mode: 1
+    src: https://google.com.tw
     url: https://google.com.tw
     imageUrl: https://dummyimage.com/300x500/0000ff/fff&text=MICK+WILLS
     startTime: 2019-12-01 00:00:00 (GMT+0800)
@@ -8,6 +29,8 @@ eventPopup:
       width: 300
       height: 500
   - name: Event Popup2
+    mode: 1
+    src: https://yahoo.com.tw
     url: https://yahoo.com.tw
     imageUrl: https://dummyimage.com/300x500/00ff00/fff&text=MICK+WILLS
     startTime: 2019-12-01 00:00:00 (GMT+0800)
@@ -16,6 +39,8 @@ eventPopup:
       width: 300
       height: 500
   - name: Event Popup3
+    mode: 1
+    src: https://bing.com
     url: https://bing.com
     imageUrl: https://dummyimage.com/300x500/f9f900/fff&text=MICK+WILLS
     startTime: 2020-01-01 00:00:00 (GMT+0800)

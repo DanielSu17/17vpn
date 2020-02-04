@@ -1,5 +1,26 @@
+## eventPopup example
+#
+#  Popoup anything you want 
+#  mode: 
+#        1: src =<URL>    NOTE: If mode == 1, YOU NEED TO FILL UP field [url] AND field [src] with the SAME url. [url] field will be removed in the furture.
+#        2: src =<userID>
+#
+#
+#eventPopup:
+#- name: Event Popup1
+#    mode: 1
+#    src: https://google.com.tw
+#    url: https://google.com.tw
+#    imageUrl: https://dummyimage.com/300x500/0000ff/fff&text=MICK+WILLS
+#    startTime: 2019-12-01 00:00:00 (GMT+0800)
+#    endTime: 2119-12-31 23:59:59 (GMT+0800)
+#    imageSize:
+#      width: 300
+#      height: 500
 eventPopup:
   - name: Wavestar
+    mode: 1
+    src: https://event.wave.com.tw/wave-20191231-wavestar/0
     url: https://event.wave.com.tw/wave-20191231-wavestar/0
     imageUrl: https://cdn.wave.com.tw/v1/bot/1578655218423537_4412997881488766_58072390645611344498037583023212_ib.png
     startTime: 2020-01-01 00:00:00 (GMT+0800)

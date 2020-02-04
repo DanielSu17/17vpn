@@ -1,5 +1,26 @@
+## eventPopup example
+#
+#  Popoup anything you want 
+#  mode: 
+#        1: src =<URL>    NOTE: If mode == 1, YOU NEED TO FILL UP field [url] AND field [src] with the SAME url. [url] field will be removed in the furture.
+#        2: src =<userID>
+#
+#
+#eventPopup:
+#- name: Event Popup1
+#    mode: 1
+#    src: https://google.com.tw
+#    url: https://google.com.tw
+#    imageUrl: https://dummyimage.com/300x500/0000ff/fff&text=MICK+WILLS
+#    startTime: 2019-12-01 00:00:00 (GMT+0800)
+#    endTime: 2119-12-31 23:59:59 (GMT+0800)
+#    imageSize:
+#      width: 300
+#      height: 500
 eventPopup:
   - name: lasergun
+    mode: 1
+    src: https://event.wave.com.tw/wave-20200127-lasergun/0
     url: https://event.wave.com.tw/wave-20200127-lasergun/0
     imageUrl: https://cdn.wave.com.tw/v1/bot/1579880459706478_1217396399609038_32251332005929831694086103579687_lr.png
     startTime: 2020-01-27 00:00:00 (GMT+0800)
@@ -8,6 +29,8 @@ eventPopup:
       width: 300
       height: 500
   - name: lasergun倒數3天
+    mode: 1
+    src: https://event.wave.com.tw/wave-20200127-lasergun/0
     url: https://event.wave.com.tw/wave-20200127-lasergun/0
     imageUrl: https://cdn.wave.com.tw/v1/bot/1579880585882156_6771921059746802_87617485718538213164942619981125_te.png
     startTime: 2020-01-31 00:00:00 (GMT+0800)
@@ -16,6 +39,8 @@ eventPopup:
       width: 300
       height: 500
   - name: lasergun倒數2天
+    mode: 1
+    src: https://event.wave.com.tw/wave-20200127-lasergun/0
     url: https://event.wave.com.tw/wave-20200127-lasergun/0
     imageUrl: https://cdn.wave.com.tw/v1/bot/1579880659814197_4774499487196004_24439408762140400113009005515951_ei.png
     startTime: 2020-02-01 00:00:00 (GMT+0800)
@@ -24,6 +49,8 @@ eventPopup:
       width: 300
       height: 500
   - name: lasergun最後1天
+    mode: 1
+    src: https://event.wave.com.tw/wave-20200127-lasergun/0
     url: https://event.wave.com.tw/wave-20200127-lasergun/0
     imageUrl: https://cdn.wave.com.tw/v1/bot/1579880716744975_7758574638141541_11857439956881706250880489620168_he.png
     startTime: 2020-02-02 00:00:00 (GMT+0800)
@@ -32,6 +59,8 @@ eventPopup:
       width: 300
       height: 500 
   - name: romantic
+    mode: 1
+    src: https://event.wave.com.tw/wave-20200201-romantic/0
     url: https://event.wave.com.tw/wave-20200201-romantic/0
     imageUrl: https://cdn.wave.com.tw/v1/bot/1580474002934624_4624472093308596_22422350548999592353885994948527_vu.png
     startTime: 2020-02-01 00:00:00 (GMT+0800)
@@ -40,6 +69,8 @@ eventPopup:
       width: 300
       height: 500 
   - name: romantic第一階段倒數2天
+    mode: 1
+    src: https://event.wave.com.tw/wave-20200201-romantic/0
     url: https://event.wave.com.tw/wave-20200201-romantic/0
     imageUrl: https://cdn.wave.com.tw/v1/bot/1580474012049587_8260761605450779_13780116564402761808009138256619_xm.png
     startTime: 2020-02-05 00:00:00 (GMT+0800)
@@ -48,6 +79,8 @@ eventPopup:
       width: 300
       height: 500
   - name: romantic第一階段最後一天
+    mode: 1
+    src: https://event.wave.com.tw/wave-20200201-romantic/0
     url: https://event.wave.com.tw/wave-20200201-romantic/0
     imageUrl: https://cdn.wave.com.tw/v1/bot/1580474024264828_8694494658197331_16652524966913142688851440021818_yb.png
     startTime: 2020-02-06 00:00:00 (GMT+0800)
@@ -56,6 +89,8 @@ eventPopup:
       width: 300
       height: 500
   - name: romantic第二階段
+    mode: 1
+    src: https://event.wave.com.tw/wave-20200201-romantic/1
     url: https://event.wave.com.tw/wave-20200201-romantic/1
     imageUrl: https://cdn.wave.com.tw/v1/bot/1580474002934624_4624472093308596_22422350548999592353885994948527_vu.png
     startTime: 2020-02-07 00:00:00 (GMT+0800)
@@ -64,6 +99,8 @@ eventPopup:
       width: 300
       height: 500
   - name: romantic第二階段倒數2天
+    mode: 1
+    src: https://event.wave.com.tw/wave-20200201-romantic/1
     url: https://event.wave.com.tw/wave-20200201-romantic/1
     imageUrl: https://cdn.wave.com.tw/v1/bot/1580474030684320_4958214629061147_84735945930838554720777780950117_lf.png
     startTime: 2020-02-11 00:00:00 (GMT+0800)
@@ -72,6 +109,8 @@ eventPopup:
       width: 300
       height: 500
   - name: romantic第二階段最後一天
+    mode: 1
+    src: https://event.wave.com.tw/wave-20200201-romantic/1
     url: https://event.wave.com.tw/wave-20200201-romantic/1
     imageUrl: https://cdn.wave.com.tw/v1/bot/1580474038727605_5262675621931849_61169729292723088899660322662444_zm.png
     startTime: 2020-02-12 00:00:00 (GMT+0800)
@@ -80,6 +119,8 @@ eventPopup:
       width: 300
       height: 500
   - name: coverpeople
+    mode: 1
+    src: https://event.wave.com.tw/wave-20200203-coverpeople/0
     url: https://event.wave.com.tw/wave-20200203-coverpeople/0
     imageUrl: https://cdn.wave.com.tw/v1/bot/1580664902108682_7299863437318094_92517089683644885741330887058037_bg.png
     startTime: 2020-02-03 00:00:00 (GMT+0800)
@@ -88,6 +129,8 @@ eventPopup:
       width: 300
       height: 500
   - name: coverpeople倒數三天
+    mode: 1
+    src: https://event.wave.com.tw/wave-20200203-coverpeople/0
     url: https://event.wave.com.tw/wave-20200203-coverpeople/0
     imageUrl: https://cdn.wave.com.tw/v1/bot/1580664962811298_5316073854383463_22644839635259686675082867821115_wn.png
     startTime: 2020-02-07 00:00:00 (GMT+0800)
@@ -96,6 +139,8 @@ eventPopup:
       width: 300
       height: 500
   - name: coverpeople倒數兩天
+    mode: 1
+    src: https://event.wave.com.tw/wave-20200203-coverpeople/0
     url: https://event.wave.com.tw/wave-20200203-coverpeople/0
     imageUrl: https://cdn.wave.com.tw/v1/bot/1580665552453805_1220145856424822_58700581761788973231046942514932_sx.png
     startTime: 2020-02-08 00:00:00 (GMT+0800)
@@ -104,6 +149,8 @@ eventPopup:
       width: 300
       height: 500
   - name: coverpeople最後一天
+    mode: 1
+    src: https://event.wave.com.tw/wave-20200203-coverpeople/0
     url: https://event.wave.com.tw/wave-20200203-coverpeople/0
     imageUrl: https://cdn.wave.com.tw/v1/bot/1580665610188975_2302993164916277_06122098343835573721503644387173_jr.png
     startTime: 2020-02-09 00:00:00 (GMT+0800)
