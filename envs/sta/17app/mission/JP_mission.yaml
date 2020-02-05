@@ -30,6 +30,35 @@
 # | NON_IAP | 2 |
 
 missions:
+#全ユーザー　2/12~2/14期間中に330c購入すると「ハッピーバレンタイン」3個（１日1回まで）
+  - ID: 044694d7-6a45-4c12-89a4-f035c43b8b0f
+    type: 8
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: "id_valentine_s"
+      amount: 3
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    i18nTitle: baggage_mission_IAP_reward_jp_daily_xmas_name
+    i18nTitleParams:
+    i18nContent:
+    i18nContentParams:
+    i18nDescription: baggage_mission_IAP_reward_jp_1224_desc
+    i18nDescriptionParams:
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2020-02-05 00:00:00 (GMT+0900)"
+        endTime: "2020-02-14 23:59:59 (GMT+0900)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
 #全ユーザー　2/1~2/3期間中に330c購入すると「もじもじラブ」3個（１日1回まで）
   - ID: 281ffd0d-644a-45f6-b9d2-e9eafe13eaf6
     type: 8
