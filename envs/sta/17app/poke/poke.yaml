@@ -18,23 +18,48 @@ i18nkeys:
   pokeBackMenuTitle: streamer_poke_you_event
   pokeBackMultiTimesMenuTitle: streamer_poke_you_many_times_event
 
-pokeAnimationID: poke_streamer_chocolate
+# animtaionID for poke
+pokeAnimationID: poke_streamer_poke
 
 # and requires i18nkeys to display option name for free pokes
 # client needs gift ids to get gift info for giftLV1/2/3
 pokeBackMenu:
   giftLV3:
-    ID: 2002_chocopoke_l_new
-    imgURL: "https://cdn.17app.co/e45a1888-0403-411e-a52b-52297705b9f4.png"
+    ID: gift_pokepoke_lv3
+    imgURL: "https://cdn.17app.co/1453c3b3-4eb8-4d8f-b265-fbd9847c1428.png"
   giftLV2:
-    ID: 2002_chocopoke_m_new
-    imgURL: "https://cdn.17app.co/a855cd91-d2d9-4846-b3b3-f87d1dbbd6f8.png"
+    ID: gift_pokepoke_lv2
+    imgURL: "https://cdn.17app.co/8fb9f7ad-5acc-417d-85fc-f3574854451d.png"
   giftLV1:
-    ID: 2002_chocopoke_s_new
-    imgURL: "https://cdn.17app.co/cd2ae9b4-4cd8-466e-85a2-9666646166da.png"
+    ID: gift_pokepoke
+    imgURL: "https://cdn.17app.co/e4fbe02a-c1e4-4683-a319-60a29c3c14e7.png"
   freePoke:
-    i18nKey: live_poke_hint_event
-    imgURL: "https://cdn.17app.co/35e9ebe1-c6c0-4d56-a410-50f1e1b82db6.png"
+    i18nKey: live_poke_hint
+    imgURL: "https://cdn.17app.co/f9058f65-317b-4242-ad56-e093e176514a.png"
   freePokeAndFollow:
-    i18nKey: streamer_newbie_poke_follow_event
-    imgURL: "https://cdn.17app.co/35e9ebe1-c6c0-4d56-a410-50f1e1b82db6.png"
+    i18nKey: streamer_newbie_poke_follow
+    imgURL: "https://cdn.17app.co/f9058f65-317b-4242-ad56-e093e176514a.png"
+  loyaltyEventID: 18
+
+timeLimitedMenus:
+  - giftLV3:
+      ID: 2002_chocopoke_l_new
+      imgURL: "https://cdn.17app.co/e45a1888-0403-411e-a52b-52297705b9f4.png"
+    giftLV2:
+      ID: 2002_chocopoke_m_new
+      imgURL: "https://cdn.17app.co/a855cd91-d2d9-4846-b3b3-f87d1dbbd6f8.png"
+    giftLV1:
+      ID: 2002_chocopoke_s_new
+      imgURL: "https://cdn.17app.co/cd2ae9b4-4cd8-466e-85a2-9666646166da.png"
+    freePoke:
+      i18nKey: live_poke_hint_event
+      imgURL: "https://cdn.17app.co/35e9ebe1-c6c0-4d56-a410-50f1e1b82db6.png"
+    freePokeAndFollow:
+      i18nKey: streamer_newbie_poke_follow_event
+      imgURL: "https://cdn.17app.co/35e9ebe1-c6c0-4d56-a410-50f1e1b82db6.png"
+    loyaltyEventID: 19
+    timeRanges: # each time range [startTime, endTime) is a recurrent period defined by MMdd and we encode it as an integer for quick comparison
+      - startTime: 206 # 0206 included
+        endTime: 215 # 0215 excluded
+      - startTime: 301 # 0301
+        endTime: 315 # 0315
