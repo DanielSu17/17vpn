@@ -216,8 +216,9 @@
     "d": "b"
     "e": "b"
     "f": "b"
-# 新手流程優化p5 (Feature Guide), client只有當a才顯示 空的也是不顯示
-- testName: newbieGuide # 新手流程優化p5 (Feature Guide) b: 移除四頁landing page
+# client只有當a才顯示 空的會是不顯示
+# 控制會不會出現首頁熱一蓋板, 跟Feature Guide 控制四頁介紹已經無關
+- testName: newbieGuide
   enableABtest: true
   expiredSecond: 60 # 1 mins, it should disappear soon.
   lastCharGroup:
