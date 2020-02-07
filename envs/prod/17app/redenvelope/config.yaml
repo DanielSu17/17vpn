@@ -1208,3 +1208,81 @@ redenvelopes:
   is_offline: false
   region_mode: 2
   regions: [TW, HK, MO, SG, MY, JP]
+
+- id: redenvelope_custom_valentine_ver
+  startTime: 1581390000 # February 11, 2020 11:00:00 GMT+08:00
+  endTime: 1582988400 # February 29, 2020 23:00:00 GMT+08:00
+  img_URL: https://cdn.17app.co/91cdfa1e-51c0-422a-a563-2a5827aae577.png
+  zip_url: https://cdn.17app.co/e76eec2f-791c-4b8b-b6e2-3e85abb37a54.zip
+  zip_md5: de69a255cb83c5f7e87794cd8bc418b0
+  webp_url: https://cdn.17app.co/8bd9fbf1-4ef6-4e94-b1fc-5d40376994fe-q90-s1.webp
+  webp_md5: 83e64dbe159dd18d87f5ac586116cee3
+  name_token: redenvelope_custom_valentine_ver
+  point: 0 # unchangeable
+  revenuePoint: 300
+  min_point: 1000
+  max_point: 50000
+  announceable: true
+  announce_threshold: 2500
+  countdown_time: 60
+  event_time: 10
+  fee: 50 # workaround, it is percentage * 10
+  theme: 1
+  type: 2
+  is_offline: false
+  region_mode: 2
+  regions: [JP]
+  package_list:
+    - amount: 1
+      point: 100 # workaround, it is percentage * 10
+    - amount: 1
+      point: 65
+    - amount: 1
+      point: 50
+    - amount: 2
+      point: 35
+    - amount: 3
+      point: 25
+    - amount: 8
+      point: 15
+    - amount: 34
+      point: 5
+
+- id: redenvelope_no_custom_JP
+  startTime: 1582988400 # February 29, 2020 23:00:00 GMT+08:00
+  endTime:
+  img_URL: http://cdn.17app.co/203fb9b5-9d97-4b15-bcdf-2dcb2cc76b1a.png
+  zip_url: https://assets-17app.akamaized.net/595b6425-a4cc-491c-bc81-2acce956fee8.zip
+  zip_md5: 7a24a00a4473ba7bf566e2acfcc793fd
+  webp_url: http://cdn.17app.co/redenvelope_no_custom.webp
+  webp_md5: 8e40537c775b436b6e0a5e54b5888f95
+  name_token: redenvelope_customize_name
+  point: 0 # unchangeable
+  revenuePoint: 300
+  min_point: 1000
+  max_point: 9999999
+  announceable: true
+  announce_threshold: 2500
+  countdown_time: 60
+  event_time: 10
+  fee: 50 # workaround, it is percentage * 10
+  theme: 1
+  type: 2
+  is_offline: false
+  region_mode: 2
+  regions: [JP]
+  package_list:
+    - amount: 1
+      point: 100 # workaround, it is percentage * 10
+    - amount: 1
+      point: 65
+    - amount: 1
+      point: 50
+    - amount: 2
+      point: 35
+    - amount: 3
+      point: 25
+    - amount: 8
+      point: 15
+    - amount: 34
+      point: 5
