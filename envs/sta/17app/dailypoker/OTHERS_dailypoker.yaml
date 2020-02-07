@@ -1,11 +1,38 @@
-startTime: "2018-12-06 18:00:00 (GMT+0800)"
-endTime: "2018-12-06 18:00:00 (GMT+0800)"
+startTime: "2019-12-10 12:00:00 (GMT+0800)"
+endTime: "2020-12-31 23:59:59 (GMT+0800)"
 
 # array of i18n model
 rules:
+  - key: dailypoker_rule1 # 首次登入將可抽取%1張撲克牌
+    params:
+      - value: 5
+  - key: dailypoker_rule2 # 首次登入後隔日登入可以抽取%1張撲克牌
+    params:
+      - value: 1
+  - key: dailypoker_rule3 # 連續登入%1日可以抽取%2張撲克牌
+    params:
+      - value: 8
+      - value: 2
+  - key: dailypoker_rule4 # 連續登入%1日可以抽取%2張撲克牌，連續登入時間越長，可以抽取的撲克
+    params:
+      - value: 15
+      - value: 3
+  - key: dailypoker_rule5 # 可兌換經典遊艇袋、尊榮寶寶、留言後方徽章等大獎，詳情請至個人頁->我的簽到確認。
+  - key: dailypoker_rule6 # 本活動僅限特定幸運的用戶參加，並非所有用戶皆可參與。
+  - key: dailypoker_rule7 # 本活動截止時間為$1。
+    params:
+      - value: "2019-12-31 23:59:59 (GMT+0800)"
+  - key: dailypoker_rule8 # 本活動由 17 Media 主辦且保有修改與變更活動之權利。蘋果公司 (Apple, Inc.) 未參與或贊助此活動。
 
 # 牌的圖
 cardImages:
+  - https://cdn.17app.co/d9fc9785-8a54-46b1-9e4c-0b16ccb9df21.png
+  - https://cdn.17app.co/6e0a4f2f-8b37-4dd4-ac65-84c659bff3d9.png
+  - https://cdn.17app.co/b579ea1e-f2f7-4546-9f6a-46d0d9f04e90.png
+  - https://cdn.17app.co/547f93d3-1be0-4746-83e5-2f725e185e1d.png
+  - https://cdn.17app.co/4940152c-bc64-4c74-aa01-703c251f3fbc.png
+  - https://cdn.17app.co/5bb00340-08ca-49ef-88fc-ec211752c2e8.png
+  - https://cdn.17app.co/d1a820df-e09b-471d-959b-86a6d1643c3e.png
 
 # 首抽
 reroll:
@@ -52,6 +79,7 @@ signIn:
 #   amount:
 #   expireTimeSecs:
 
+# NOTE: not implemented yet
 # barrage:
 #   category:
 #   amount:
@@ -61,19 +89,336 @@ signIn:
 #   expireTimeSecs:
 
 rewardPacks:
-  - ID: "reward1"
+  - ID: "rewardAKQJ10StraightFlush"
+    requirement:
+      type: 9
+      title:
+        key: dailypoker_royal_flush
+      description:
+        key: dailypoker_royal_flush_description
+      imageURL: https://cdn.17app.co/4d56455a-cc44-4071-ad37-ea04a23de227.png
+    info:
+      imageURL: https://cdn.17app.co/cbe80b75-6e6e-438a-bf42-f2f261a2078e.png
+      contents:
+        - type: 1
+          gift:
+            giftID: 1912_tw_yearend_bag_s
+            amount: 3
+            expireTimeSecs: 86400
+          description:
+            key: dailypoker_gift_reward_description # 將可兌換限時$1hr的$2共$3個獎勵
+            params:
+              - value: 24
+              - mapOption: 2
+                value: 1912_tw_yearend_bag_s
+              - value: 3
+    remindMsg: 
+      key: dailypoker_confirm_gift_reward # 確定兌換限時$1hr的$2共$3個嗎？
+      params:
+        - value: 24
+        - mapOption: 2
+          value: 1912_tw_yearend_bag_s
+        - value: 3
+    exchangeToastMsg:
+      key: dailypoker_change_success_baggage_toast # 兌換$1成功！請到禮物背包查看
+      params:
+        - mapOption: 2
+          value: 1912_tw_yearend_bag_s
+  
+  - ID: "rewardStraightFlush"
     requirement:
       type: 8
       title:
+        key: dailypoker_straight_flush
       description:
-      imageURL:
+        key: dailypoker_straight_flush_description
+      imageURL: https://cdn.17app.co/c7ef2004-38b9-4af4-bb5b-f4c5d5c870b9.png
     info:
-      imageURL:
+      imageURL: https://cdn.17app.co/0794f928-f9fe-48ff-a235-eac82df338b1.png
+      contents:
+        - type: 2
+          freePremiumBabyHrs: 72
+          description:
+            key: dailypoker_role_reward_description # 將可兌換限時$1hr的$2獎勵
+            params:
+              - value: 72
+              - needMap: true
+                mapOption: 1
+                value: dailypoker_VIP
+    remindMsg: 
+      key: dailypoker_confirm_VIP_reward # 確定兌換限時$1hr的$2嗎？如果已有尊榮寶寶將無法兌換此獎勵。
+      params:
+        - value: 72
+        - needMap: true
+          mapOption: 1
+          value: dailypoker_VIP
+    exchangeToastMsg:
+      key: dailypoker_change_success_profile_toast # 兌換$1成功！請到個人頁確認
+      params:
+        - needMap: true
+          mapOption: 1
+          value: dailypoker_VIP
+  
+  - ID: "rewardFourOfaKind"
+    requirement:
+      type: 7
+      title:
+        key: dailypoker_four_of_a_kind
+      description:
+        key: dailypoker_four_of_a_kind_description
+      imageURL: https://cdn.17app.co/ca657fb9-32b9-407f-9443-92fed8c6669a.png
+    info:
+      imageURL: https://cdn.17app.co/9cefb684-585c-4775-83d8-0f739c902991.png
+      contents:
+        - type: 4
+          commentBadge:
+            imageURL: https://cdn.17app.co/0a8cf1c4-4372-423d-ba00-388706f57a45.png
+            expireTimeSecs: 604800
+          description:
+            key: dailypoker_role_reward_description # 將可兌換限時$1hr的$2獎勵
+            params:
+              - value: 168
+              - needMap: true
+                mapOption: 1
+                value: "dailypoker_badge"
+    remindMsg: 
+      key: dailypoker_confirm_badge_reward # 留言後方有徽章的寶寶，兌換後會直接取代。
+    exchangeToastMsg:
+      key: dailypoker_change_success_livestream_toast # 兌換$1成功！請到直播間確認
+      params:
+        - needMap: true
+          mapOption: 1
+          value: "dailypoker_badge"
+  
+  - ID: "rewardFullHouse"
+    requirement:
+      type: 6
+      title:
+        key: dailypoker_full_house
+      description:
+        key: dailypoker_full_house_description
+      imageURL: https://cdn.17app.co/b177b6b1-55ad-4154-a9b5-2207b4168384.png
+    info:
+      imageURL: https://cdn.17app.co/57f2a0a3-7540-462e-be64-940552d17461.png
+      contents:
+        - type: 1
+          gift:
+            giftID: tw_daily_reward_poker
+            amount: 100
+            expireTimeSecs: 86400
+          description:
+            key: dailypoker_gift_reward_description # 將可兌換限時$1hr的$2共$3個獎勵
+            params:
+              - value: 24
+              - mapOption: 2
+                value: tw_daily_reward_poker
+              - value: 100
+    remindMsg: 
+      key: dailypoker_confirm_gift_reward # 確定兌換限時$1hr的$2共$3個嗎？
+      params:
+        - value: 24
+        - mapOption: 2
+          value: tw_daily_reward_poker
+        - value: 100
+    exchangeToastMsg:
+      key: dailypoker_change_success_baggage_toast # 兌換$1成功！請到禮物背包查看
+      params:
+        - mapOption: 2
+          value: tw_daily_reward_poker
+  
+  - ID: "rewardFlush"
+    requirement:
+      type: 5
+      title:
+        key: dailypoker_flush
+      description:
+        key: dailypoker_flush_description
+      imageURL: https://cdn.17app.co/21c6f3c1-babc-4eaa-a5c1-352c64c6fca5.png
+    info:
+      imageURL: https://cdn.17app.co/2fb3ecba-ee49-459a-98e2-d62210c72edb.png
+      contents:
+        - type: 1
+          gift:
+            giftID: tw_daily_reward_poker
+            amount: 50
+            expireTimeSecs: 86400
+          description:
+            key: dailypoker_gift_reward_description # 將可兌換限時$1hr的$2共$3個獎勵
+            params:
+              - value: 24
+              - mapOption: 2
+                value: tw_daily_reward_poker
+              - value: 50
+    remindMsg: 
+      key: dailypoker_confirm_gift_reward # 確定兌換限時$1hr的$2共$3個嗎？
+      params:
+        - value: 24
+        - mapOption: 2
+          value: tw_daily_reward_poker
+        - value: 50
+    exchangeToastMsg:
+      key: dailypoker_change_success_baggage_toast # 兌換$1成功！請到禮物背包查看
+      params:
+        - mapOption: 2
+          value: tw_daily_reward_poker
+  
+  - ID: "rewardStraight"
+    requirement:
+      type: 4
+      title:
+        key: dailypoker_straight
+      description:
+        key: dailypoker_straight_description
+      imageURL: https://cdn.17app.co/9975b4dc-83bb-483e-b1e8-b2d8c1fca620.png
+    info:
+      imageURL: https://cdn.17app.co/9a27f24f-50e8-45ea-b8eb-0d6f75ec0bc9.png
+      contents:
+        - type: 2
+          freePremiumBabyHrs: 24
+          description:
+            key: dailypoker_role_reward_description # 將可兌換限時$1hr的$2獎勵
+            params:
+              - value: 24
+              - needMap: true
+                mapOption: 1
+                value: dailypoker_VIP
+    remindMsg: 
+      key: dailypoker_confirm_VIP_reward # 確定兌換限時$1hr的$2嗎？如果已有尊榮寶寶將無法兌換此獎勵。
+      params:
+        - value: 24
+        - needMap: true
+          mapOption: 1
+          value: dailypoker_VIP
+    exchangeToastMsg:
+      key: dailypoker_change_success_profile_toast # 兌換$1成功！請到個人頁確認
+      params:
+        - needMap: true
+          mapOption: 1
+          value: dailypoker_VIP
+
+  - ID: "rewardThreeOfaKind"
+    requirement:
+      type: 3
+      title:
+        key: dailypoker_three_of_a_kind
+      description:
+        key: dailypoker_three_of_a_kind_description
+      imageURL: https://cdn.17app.co/df01b88b-e6e4-4311-9533-099aa6afa78c.png
+    info:
+      imageURL: https://cdn.17app.co/59bb77db-89ee-42f1-89b5-15940d22f79f.png
+      contents:
+        - type: 1
+          gift:
+            giftID: tw_daily_reward_poker
+            amount: 10
+            expireTimeSecs: 86400
+          description:
+            key: dailypoker_gift_reward_description # 將可兌換限時$1hr的$2共$3個獎勵
+            params:
+              - value: 24
+              - mapOption: 2
+                value: tw_daily_reward_poker
+              - value: 10
+    remindMsg: 
+      key: dailypoker_confirm_gift_reward # 確定兌換限時$1hr的$2共$3個嗎？
+      params:
+        - value: 24
+        - mapOption: 2
+          value: tw_daily_reward_poker
+        - value: 10
+    exchangeToastMsg:
+      key: dailypoker_change_success_baggage_toast # 兌換$1成功！請到禮物背包查看
+      params:
+        - mapOption: 2
+          value: tw_daily_reward_poker
+  
+  - ID: "rewardTwoPairs"
+    requirement:
+      type: 2
+      title:
+        key: dailypoker_two_pairs
+      description:
+        key: dailypoker_two_pairs_description
+      imageURL: https://cdn.17app.co/7e499ba9-1605-42ac-b7bc-81a50c9cdb67.png
+    info:
+      imageURL: https://cdn.17app.co/541f1c2a-4914-4355-92c8-604552ea8518.png
+      contents:
+        - type: 4
+          commentBadge:
+            imageURL: https://cdn.17app.co/0a8cf1c4-4372-423d-ba00-388706f57a45.png
+            expireTimeSecs: 86400
+          description:
+            key: dailypoker_role_reward_description # 將可兌換限時$1hr的$2獎勵
+            params:
+              - value: 24
+              - needMap: true
+                mapOption: 1
+                value: "dailypoker_badge"
+    remindMsg: 
+      key: dailypoker_confirm_badge_reward # 留言後方有徽章的寶寶，兌換後會直接取代。
+    exchangeToastMsg:
+      key: dailypoker_change_success_livestream_toast # 兌換$1成功！請到直播間確認
+      params:
+        - needMap: true
+          mapOption: 1
+          value: "dailypoker_badge"
+  
+  - ID: "rewardOnePair"
+    requirement:
+      type: 1
+      title:
+        key: dailypoker_one_pair
+      description:
+        key: dailypoker_one_pair_description
+      imageURL: https://cdn.17app.co/598e0d00-94ac-4022-831f-5fff064eebe5.png
+    info:
+      imageURL: https://cdn.17app.co/389b7ef0-ac21-4f99-a634-c86d66940ab9.png
       contents:
         - type: 0
-          exp: 10
+          exp: 50
           description:
+            key: dailypoker_exp_reward_description # 將可兌換$1經驗值
+            params:
+              - value: 50
+    remindMsg: 
+      key: dailypoker_confirm_exp_reward # 確定兌換$1經驗值嗎？
+      params:
+        - value: 50
     exchangeToastMsg:
+      key: dailypoker_change_success_profile_toast # 兌換$1成功！請到個人頁確認
+      params:
+        - needMap: true
+          mapOption: 1
+          value: "dailypoker_exp"
+  
+  - ID: "rewardHighCard"
+    requirement:
+      type: 0
+      title:
+        key: dailypoker_one_card
+      description:
+        key: dailypoker_one_card_description
+      imageURL: https://cdn.17app.co/f7c0091e-a499-4973-b7e2-05e9ae42e111.png
+    info:
+      imageURL: https://cdn.17app.co/c17871f3-c096-4e93-a84c-95f65e501051.png
+      contents:
+        - type: 0
+          exp: 5
+          description:
+            key: dailypoker_exp_reward_description # 將可兌換$1經驗值
+            params:
+              - value: 5
+    remindMsg: 
+      key: dailypoker_confirm_exp_reward # 確定兌換$1經驗值嗎？
+      params:
+        - value: 5
+    exchangeToastMsg:
+      key: dailypoker_change_success_profile_toast # 兌換$1成功！請到個人頁確認
+      params:
+        - needMap: true
+          mapOption: 1
+          value: "dailypoker_exp"
 
 # 白名單
 whiteList:
+  - b9cc37f1-65fd-41c4-8370-8bb8b9e53e70 # loki17_z
