@@ -30,33 +30,33 @@
 # | NON_IAP | 2 |
 
 missions:
-  - ID: 8a6a4bae-ab99-409b-94f8-4362cb0c5760
+  - ID: 61b9bdba-781c-4f68-b8d7-9e62ab965884 #到UUID Generator隨便生一個 
     type: 10
     lifeCycle: 0
     targetAudience: 0
-    levelRange:
+    levelRange: #用戶等級範圍
       min: 1
       max: 999
-    reward:
-      rewardType: 1
-      rewardID: 2001_us_stardom3_bp
+    reward: #獎勵
+      rewardType: 1 #只有1，就是禮物
+      rewardID: 2002_us_stardom3_bp #禮物ID
       amount: 5
-      expireTimeSecs: 86400
-    requirePhoneBinding: false
-    withReminder: false
-    i18nTitle: baggage_mission_first_time_IAP_point_tw_event_title
-    i18nTitleParams:
+      expireTimeSecs: 86400 #start多久會過期，換成秒
+    requirePhoneBinding: false #電話驗證
+    withReminder: false #跳toast
+    i18nTitle: baggage_mission_first_time_IAP_point_tw_event_title #背包任務標題
+    i18nTitleParams: #key裡面的變數，指定送XX禮物用到
       - needMap: false
         mapOption: 0
         value: 8550
     i18nContent: 
     i18nContentParams:
-    i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
+    i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc #背包任務內容
     i18nDescriptionParams:
-    goalValue: 8550
+    goalValue: 8550 #秒或次
     enableTimeRange:
-      - startTime: "2020-01-15 10:00:00 (GMT+0800)"
-        endTime: "2020-01-22 13:00:00 (GMT+0800)"
+      - startTime: "2020-02-24 10:00:00 (GMT+0800)"
+        endTime: "2020-03-01 13:00:00 (GMT+0800)"
     refIDs:
     platforms:
       - android
