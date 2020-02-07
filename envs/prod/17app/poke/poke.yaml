@@ -9,18 +9,21 @@ enableTimeLimit: false
 # timeLimit control how long the poke dialog will be showed to viewer in seconds
 timeLimit: 30
 
+# NOTED: i18nkey will be applied after user reopen app
 i18nkeys:
   streamerPokeAll: system_poke_all_user_name
   streamerPokeUser: poke_viewer
   pokeAnimationTitle: poke_viewer
-  userFreePokeBack: poke_back_streamer_with_point
-  userPokeBack: poke_back_streamer
+  userFreePokeBack: poke_back_streamer
+  userPokeBack: poke_back_streamer_with_point
   pokeBackMenuTitle: streamer_poke_you
   pokeBackMultiTimesMenuTitle: streamer_poke_you_many_times
 
+# NOTED: animation will be applied since config deployed
 # animtaionID for poke
 pokeAnimationID: poke_streamer_poke
 
+# NOTED: pokeback menu will be applied since config deployed
 # client needs gift ids to get gift info for giftLV1/2/3
 # and requires i18nkeys to display option name for free pokes
 pokeBackMenu:
@@ -43,19 +46,19 @@ pokeBackMenu:
 
 #timeLimitedMenus:
 #  - giftLV3:
-#      ID: 2002_chocopoke_l
+#      ID: 2002_chocopoke_l_new
 #      imgURL: "https://cdn.17app.co/e45a1888-0403-411e-a52b-52297705b9f4.png"
 #    giftLV2:
-#      ID: 2002_chocopoke_m
+#      ID: 2002_chocopoke_m_new
 #      imgURL: "https://cdn.17app.co/a855cd91-d2d9-4846-b3b3-f87d1dbbd6f8.png"
 #    giftLV1:
-#      ID: 2002_chocopoke_s
+#      ID: 2002_chocopoke_s_new
 #      imgURL: "https://cdn.17app.co/cd2ae9b4-4cd8-466e-85a2-9666646166da.png"
 #    freePoke:
-#      i18nKey: poke_and_follow
+#      i18nKey: live_poke_hint_event
 #      imgURL: "https://cdn.17app.co/35e9ebe1-c6c0-4d56-a410-50f1e1b82db6.png"
 #    freePokeAndFollow:
-#      i18nKey: poke_and_follow
+#      i18nKey: streamer_newbie_poke_follow_event
 #      imgURL: "https://cdn.17app.co/35e9ebe1-c6c0-4d56-a410-50f1e1b82db6.png"
 #    loyaltyEventID: 19
 #    timeRanges: # each time range [startTime, endTime) is a recurrent period defined by MMdd and we encode it as an integer for quick comparison
