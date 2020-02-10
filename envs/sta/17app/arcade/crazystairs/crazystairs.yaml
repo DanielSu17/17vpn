@@ -20,18 +20,18 @@ levels:
     objPercentage:
       normal: 0.65
       fire: 0.00
-      spring: 0.1
-      disappear: 0.1
-      moving: 0.15
+      spring: 0.15
+      disappear: 0.15
+      moving: 0.10
     spikeAttackFrequency: 999
 
   "level3":
     role: 2
     objPercentage:
-      normal: 0.5
+      normal: 0.4
       fire: 0.1
-      spring: 0.1
-      disappear: 0.1
+      spring: 0.15
+      disappear: 0.15
       moving: 0.2
     spikeAttackFrequency: 15
 
@@ -98,10 +98,10 @@ modes:
     blood: 5
     gameScript:
       0: "level1"
-      30: "level2"
-      80: "level3"
-      120: "level4"
-      150: "level5"
+      10: "level2"
+      20: "level3"
+      30: "level4"
+      40: "level5"
     fogInfo:
       concentration: 0.5
       speed: 10
