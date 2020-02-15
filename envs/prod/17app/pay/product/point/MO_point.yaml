@@ -13,21 +13,21 @@
 eventBasedIAP:
 
 productBasedIAP:
-#勿動, 寶寶幣上線設定
-  - startTime: "2020-01-01T00:00:00+08:00"
-    endTime: "2020-01-02T00:00:00+08:00"
-    showCountdownUnderSticker: false
-    showCountdownInPopUp: false
-    stickerURL: ""
+  - startTime: "2020-02-23T00:00:00+08:00"
+    endTime: "2020-02-29T00:00:00+08:00"
+    showCountdownUnderSticker: true
+    showCountdownInPopUp: true
+    stickerURL: "https://cdn.17app.co/22f129e6-7c04-432a-91f9-c74cc9515d69.jpg"
     eventInfo:
+      bannerImageURL: "https://cdn.17app.co/a7215e02-fac2-4033-aba3-e1c14bea5f4b.jpg"
       eventTitleI18nKey: ""
       eventURL: ""
     layoutInfo:
       titlePicURL: ""
       messageColor: "#6F6777"
       messageShadowColor: "#F5F5F5"
-      messageI18nKey: ""
-      descBgURL: ""
+      messageI18nKey: "iap_flash_HK_20200107"
+      descBgURL: "https://cdn.17app.co/02979afd-adba-4e66-93da-97625b86228b.png"
       highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
       highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
     colorInfo:
@@ -37,11 +37,11 @@ productBasedIAP:
       rewardTextColor: "#F69355"
     pointProducts:
       - productID: "media17_points_35980"
-        bonusPoint: 0
+        bonusPoint: 35980
         shouldHighlight:  true
       - productID: "media17_points_15420"
-        bonusPoint: 0
-        shouldHighlight:  false
+        bonusPoint: 15420
+        shouldHighlight:  true
       - productID: "media17_points_8550"
         bonusPoint: 0
         shouldHighlight:  false
@@ -54,7 +54,7 @@ productBasedIAP:
       - productID: "media17_points_330"
         bonusPoint: 0
         shouldHighlight:  false
-    firstPurchaseType: 2
+    firstPurchaseType: 1
     taInfo:
       registerRange:
         dayStart: 0 # 0 means no limit
