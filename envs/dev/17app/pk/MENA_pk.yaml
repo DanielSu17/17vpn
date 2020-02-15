@@ -1,4 +1,4 @@
-enable: true
+enable: false
 enableAll: true
 enableContractedStreamer: true
 defaultAcceptChallenge: true
@@ -22,6 +22,35 @@ matchingRules:
 minLevel: 10
 consecutiveRejectionCount: 3
 consecutiveRejectionNoDisturbSecond: 1800
+rules:
+  - type: 1
+    token: {key: pk_rule_title1}
+  - type: 2
+    token: {key: pk_rule_content1-1}
+  - type: 2
+    token: {key: pk_rule_content1-2}
+  - type: 2
+    token: {key: pk_rule_content1-3}
+  - type: 1
+    token: {key: pk_rule_title2}
+  - type: 2
+    token: {key: pk_rule_content2-1}
+  - type: 2
+    token: {key: pk_rule_content2-2}
+  - type: 2
+    token: {key: pk_rule_content2-3}
+  - type: 1
+    token: {key: pk_rule_title3}
+  - type: 2
+    token: {key: pk_rule_content3-1}
+  - type: 2
+    token: {key: pk_rule_content3-2}
+  - type: 2
+    token: {key: pk_rule_content3-3}
+  - type: 2
+    token: {key: pk_rule_content3-4}
+  - type: 3
+    token: {key: pk_rule_content4}
 playList:
   - id: normalOneVOne
     mode: 1
