@@ -366,6 +366,7 @@ missions:
       - android
       - ios
 
+#EVENT進撃削除禁止
   - ID: 6fe70945-2522-4b6c-bb5e-587d018b7475
     type: 8
     lifeCycle: 0
@@ -401,6 +402,7 @@ missions:
       - android
       - ios
 
+#EVENT壁削除禁止
   - ID: c7e0b0f2-909b-4844-9051-74724c2cc7ad
     type: 9
     lifeCycle: 0
@@ -431,6 +433,42 @@ missions:
     enableTimeRange:
       - startTime: "2020-02-02 19:00:00 (GMT+0900)"
         endTime: "2020-02-16 23:59:59 (GMT+0900)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
+#EVENT登竜門削除禁止
+  - ID: 319423ef-b911-45cd-9a42-446fcd685e3f
+    type: 8
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2002_jp_shinken_bp
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    withReminder: false
+    i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 1
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
+    i18nDescriptionParams:
+      - needMap: false
+        mapOption: 0
+        value: 1
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2020-02-17 19:00:00 (GMT+0900)"
+        endTime: "2020-02-29 23:59:59 (GMT+0900)"
     refIDs:
     platforms:
       - android
