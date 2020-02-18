@@ -1,0 +1,268 @@
+# id is unique string
+# type are defined as following
+# - 0:  NORMAL
+# - 1:  NO_LABEL
+# - 2:  LUCKY_BAG
+# - 3:  SLOT  merge into TreasureChest, need to modify DB
+# - 4:  Poke
+# - 5:  Poll
+# - 6:  Newbie
+# - 7:  Event # this one is for pushed event
+# - 8:  Army
+# - 9:  Voucher
+# - 10: Baggage
+# - 11: Elite
+# - 12: Birthday
+# - 13: Recent
+# - 14: Texture
+# - 15: Goods
+# - 16: LevelUp
+# - 17: HandDrawSticker
+# - 18: Game
+# - 19: Layout
+# ex:
+# - id: "example"
+#   type: 1
+#   name:
+#     EN: "Example"
+#     TW: "範例"
+#     CN: "範例"
+#   maxPoint: 2000
+#   minPoint: 200
+#   maxLevel: 50
+#   minLevel: 10
+#   supportedVersion:
+#     android: "2.3.60"
+#     ios: "3.39.0"
+
+# labelGroupingOrder used to decide gift display order
+# when groupByLabel is set to true for tab
+labelGroupingOrder:
+  - elite10
+  - elite7
+  - elite3
+  - new
+  - none
+  - event
+  - face
+  - random
+  - rednvelope
+  - combo
+  - antiprofit
+tabs:
+  - id: "Recent"
+    groupByLabel: false
+    type: 13
+    inRecent: false
+    name:
+      EN: "Recent"
+      TW: "最近送出"
+      CN: "最近送出"
+      JP: "履歴"
+  - id: "Newbie"
+    groupByLabel: false
+    type: 6
+    inRecent: true
+    name:
+      EN: "Fresh"
+      TW: "新手區"
+      CN: "新手区"
+      JP: "初心者"
+    maxPoint: 200
+    maxLevel: 100
+  - id: "Layout"
+    groupByLabel: false
+    type: 19
+    inRecent: true
+    name:
+      EN: "Scene"
+      TW: "佈景禮"
+      CN: "佈景禮"
+      JP: "模様替え"
+    supportedVersion:
+      android: "2.4.10"
+      ios: "3.65.0"
+    supportedStreamerVersion:
+      android: "2.4.10"
+      ios: "3.65.0"
+  - id: "Game"
+    groupByLabel: false
+    type: 18
+    inRecent: true
+    name:
+      EN: "Game"
+      TW: "遊戲禮"
+      CN: "遊戲禮"
+      JP: "チャレンジ"
+    supportedVersion:
+      android: "2.4.10"
+      ios: "3.67.0"
+    supportedStreamerVersion:
+      android: "2.4.10"
+      ios: "3.67.0"
+  - id: "Event"
+    groupByLabel: false
+    type: 7
+    inRecent: true
+    name:
+      EN: "Event"
+      TW: "活動禮"
+      CN: "活動禮"
+      JP: "Event"
+  - id: "Product"
+    groupByLabel: false
+    type: 0
+    minPoint: 10000
+    name:
+      EN: "Product"
+      TW: "實體商品"
+      CN: "实体商品"
+      JP: "ショッピング"
+  - id: "luckyBag"
+    groupByLabel: false
+    type: 2
+    inRecent: true
+    name:
+      EN: "Surprise"
+      TW: "隨機禮"
+      CN: "随机礼"
+      JP: "ランダム"
+  - id: "TreasureChest"
+    groupByLabel: false
+    type: 3
+    inRecent: true
+    name:
+      EN: "Lucky Draw"
+      TW: "好運禮"
+      CN: "好运礼"
+      JP: "宝のツボ"
+    layout: "treasureChest"
+  - id: "HandDrawSticker"
+    groupByLabel: false
+    type: 17
+    inRecent: true
+    name:
+      EN: "Hand-painted"
+      TW: "塗鴉禮"
+      CN: "涂鸦礼"
+      JP: "お絵描き"
+    supportedVersion:
+      android: "2.3.60"
+      ios: "3.39.0"
+  - id: "Baggage"
+    groupByLabel: false
+    type: 10
+    inRecent: false
+    name:
+      EN: "Baggage"
+      TW: "背包"
+      CN: "背包"
+      JP: "ギフト箱"
+  - id: "LevelUp"
+    groupByLabel: false
+    type: 16
+    inRecent: true
+    name:
+      EN: "Level Up Gift"
+      TW: "升級禮"
+      CN: "升级礼"
+      JP: "アップグレード"
+  - id: "Topic"
+    groupByLabel: false
+    type: 0
+    isRecent: true
+    name:
+      EN: "Topic"
+      TW: "話題禮"
+      CN: "话题礼"
+      JP: "Topic"
+  - id: "Texture"
+    groupByLabel: false
+    type: 14
+    inRecent: true
+    name:
+      EN: "Filter"
+      TW: "濾鏡禮"
+      CN: "滤镜礼"
+      JP: "エフェクト"
+  - id: "Heavenly"
+    groupByLabel: false
+    type: 0
+    inRecent: true
+    name:
+      EN: "Fancy"
+      TW: "奢華"
+      CN: "奢华"
+      JP: "デラックス"
+    maxPoint: 2147483647
+    minPoint: 10000
+  - id: "Extravagant"
+    groupByLabel: false
+    type: 0
+    inRecent: true
+    name:
+      EN: "Classic"
+      TW: "經典"
+      CN: "经典"
+      JP: "定番"
+    maxPoint: 9999
+  - id: "Birthday"
+    groupByLabel: false
+    type: 12
+    inRecent: true
+    name:
+      EN: "Birthday"
+      TW: "生日禮"
+      CN: "生日礼"
+      JP: "お誕生日"
+  - id: "Audio"
+    groupByLabel: false
+    type: 0
+    inRecent: true
+    name:
+      EN: "Audio Gift"
+      TW: "音效禮"
+      CN: "音效礼"
+      JP: "音付きギフト"
+  - id: "army"
+    groupByLabel: false
+    type: 8
+    inRecent: true
+    name:
+      EN: "Exclusive"
+      TW: "專屬禮"
+      CN: "专属礼"
+      JP: "専用"
+  - id: "Goods"
+    groupByLabel: false
+    type: 15
+    inRecent: false
+    name:
+      EN: "Limited"
+      TW: "限量禮物"
+      CN: "限量礼物"
+      JP: "限定ギフト"
+  - id: "GFA"
+    groupByLabel: false
+    type: 0
+    inRecent: true
+    name:
+      EN: "GFA Voting"
+      TW: "金羽獎投票"
+      CN: "金羽奖投票"
+  - id: "PokeBack"
+    groupByLabel: false
+    type: 4
+    inRecent: false
+    name:
+      EN: "PokeBack"
+      TW: "回戳禮"
+      CN: "回戳禮"
+  - id: "Poll"
+    groupByLabel: false
+    type: 5
+    inRecent: false
+    name:
+      EN: "Poll"
+      TW: "投票"
+      CN: "投票"
