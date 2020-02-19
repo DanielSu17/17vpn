@@ -76,11 +76,11 @@ levels:
     spikeAttackFrequency: 999
 
   "amylevel2":
-    role: 1
+    role: 5
     objPercentage:
       normal: 0.40
-      fire: 0.10
-      spring: 0.25
+      fire: 0.00
+      spring: 0.35
       disappear: 0.25
       moving: 0.00
     spikeAttackFrequency: 2
@@ -132,7 +132,7 @@ modes:
     blood: 10
     gameScript:
       0: "level1"
-      15: "level2"
+      15: "amylevel2"
       30: "level3"
       90: "level4"
       120: "level5"
