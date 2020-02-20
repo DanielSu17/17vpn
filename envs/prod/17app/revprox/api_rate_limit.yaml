@@ -85,3 +85,4 @@ rate_limits:
 
 # - {url: "/api/v1/money/log/revenue",                            method: "GET",     flow_per_second: 10,          reservoir_size: 10,    scope: by_global}
 
+- {url: "/api/v1/gift/giftbox/unread",                          method: "GET",     flow_per_second: 0.083,       reservoir_size:  5,    scope: by_global}
