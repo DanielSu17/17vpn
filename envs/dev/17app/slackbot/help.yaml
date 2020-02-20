@@ -358,12 +358,38 @@ commandHelp:
         title: "`[查看指定的dev機資訊]`"
         description: |
           >
-#===!gift禮物回收===
+#===!gift禮物設定===
   gift:
-    title: "禮物回收"
+    title: "禮物設定"
     commandsHelp:
-      recallGift:
-        title: "`[回收禮物]`"
+      help:
+        title: 臉部/手勢濾鏡禮設定
+        description: |
+          >
+      swap-sequence:
+        title: 交換兩個禮物在禮物盒的順序
+        description: |
+          >
+      get-texture:
+        title: 拿臉部/手勢濾鏡禮列表
+        description: |
+          >
+      get-texture-detail:
+        title: 查詢臉部/手勢濾鏡禮詳細資訊
+        description: |
+          >
+      get-tab:
+        title: 查詢禮物有被強制設定在哪個tab出現
+        description: |
+          >
+      add-tab:
+        title: "設定禮物強制出現在哪個tab(特殊tab不支援 ex: 好運,遊戲 等等)"
+        description: |
+          > 1. 假設 giftxx 已經設定出現在 texture
+          > 2. 這時候 add-tab giftxx game
+          > 3. giftxx 就會 texture 和 game 都會出現
+      remove-tab:
+        title: 把禮物從某個tab移除顯示
         description: |
           >
 #===!gloryroad榮耀之路===
