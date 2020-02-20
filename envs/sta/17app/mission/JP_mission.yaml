@@ -31,6 +31,36 @@
 
 missions:
 #未課金ユーザー　2/22~2/29期間中に330c購入すると「溢れるLOVE」1個（期間中1回まで）
+  - ID: 38e6e812-d5f2-4815-ad59-120e08afad50
+    type: 8
+    lifeCycle: 1
+    targetAudience: 2
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2002_jp_chargecampaign02
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    withReminder: false
+    i18nTitle: baggage_mission_IAP_reward_jp_daily_xmas_name
+    i18nTitleParams:
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_IAP_reward_jp_npu_desc
+    i18nDescriptionParams:
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2020-03-01 00:00:00 (GMT+0900)"
+        endTime: "2020-03-08 23:59:59 (GMT+0900)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
+#未課金ユーザー　2/22~2/29期間中に330c購入すると「溢れるLOVE」1個（期間中1回まで）
   - ID: cb25b7ce-65d1-4c7f-a116-290f2e066a9a
     type: 8
     lifeCycle: 1
