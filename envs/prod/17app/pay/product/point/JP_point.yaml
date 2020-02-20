@@ -11,6 +11,90 @@
 # // |    UnLimit    |   2   | 限時不限次數
 
 eventBasedIAP:
+#未課金ユーザー　3/1~3/8期間中に330c購入すると「スポーツカー」1個（期間中1回まで）
+  - ID: 58ed7bf5-4fb6-4a2f-958b-8ade754a5f9c
+    type: 8
+    lifeCycle: 1
+    targetAudience: 2
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2002_jp_chargecampaign02
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    withReminder: false
+    i18nTitle: baggage_mission_IAP_reward_jp_daily_xmas_name
+    i18nTitleParams:
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_IAP_reward_jp_npu_desc
+    i18nDescriptionParams:
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2020-03-01 00:00:00 (GMT+0900)"
+        endTime: "2020-03-08 23:59:59 (GMT+0900)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
+#未課金ユーザー 330c購入で「溢れるLOVE」1個（期間中1回のみ）
+  - startTime: "2020-02-23T00:00:00+09:00"
+    endTime: "2020-02-29T23:59:59+09:00"
+    showCountdownUnderSticker: false
+    showCountdownInPopUp: false
+    stickerURL: "https://assets-17app.akamaized.net/30feb803-3274-42e2-8e41-187274f2314b.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/64bb2c6a-dfa7-4f62-9f97-853b48c938e1.png"
+    layoutInfo:
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_3540"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight:  false
+    firstPurchaseType: 1
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true
+    abtestName:
+
 #全ユーザー 330c購入で「ハッピーバレンタイン」3個（期間中1日1回）
   - startTime: "2020-02-11T12:00:00+09:00"
     endTime: "2020-02-11T23:59:59+09:00"
