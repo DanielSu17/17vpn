@@ -30,6 +30,66 @@
 # | NON_IAP | 2 |
 
 missions:
+#未課金ユーザー　3/1~3/8期間中に330c購入すると「スポーツカー」1個（期間中1回まで）
+  - ID: c70d0d90-b45e-41f8-8f38-1f88c510a92b
+    type: 8
+    lifeCycle: 1
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2002_jp_chargecampaign02
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    withReminder: false
+    i18nTitle: baggage_mission_IAP_reward_jp_daily_xmas_name
+    i18nTitleParams:
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_IAP_reward_jp_npu_desc
+    i18nDescriptionParams:
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2020-03-01 00:00:00 (GMT+0900)"
+        endTime: "2020-03-08 23:59:59 (GMT+0900)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
+#未課金ユーザー　2/23~2/29期間中に330c購入すると「溢れるLOVE」1個（期間中1回まで）
+  - ID: eac4211d-9867-43e6-a591-20c31ad1eb6c
+    type: 8
+    lifeCycle: 1
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2002_jp_chargecampaign01
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    withReminder: false
+    i18nTitle: baggage_mission_IAP_reward_jp_daily_xmas_name
+    i18nTitleParams:
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_IAP_reward_jp_1224_desc
+    i18nDescriptionParams:
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2020-02-23 00:00:00 (GMT+0900)"
+        endTime: "2020-02-29 23:59:59 (GMT+0900)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
   - ID: 1b5b8d63-5047-42e2-87ea-7bbee18abdcc
     type: 8
     lifeCycle: 1
