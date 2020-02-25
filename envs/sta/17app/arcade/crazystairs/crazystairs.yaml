@@ -16,7 +16,7 @@ levels:
     spikeAttackFrequency: 999
 
   "level2":
-    role: 0
+    role: 1
     objPercentage:
       normal: 0.10
       fire: 0.15
@@ -46,7 +46,7 @@ levels:
     spikeAttackFrequency: 5
 
   "level5":
-    role: 3
+    role: 2
     objPercentage:
       normal: 0.10
       fire: 0.35
@@ -64,6 +64,16 @@ levels:
       disappear: 0.20
       moving: 0.10
     spikeAttackFrequency: 2
+
+  "level7":
+    role: 3
+    objPercentage:
+      normal: 0.05
+      fire: 0.40
+      spring: 0.30
+      disappear: 0.15
+      moving: 0.10
+    spikeAttackFrequency: 1
 
   "amylevel1":
     role: 0
@@ -111,8 +121,10 @@ modes:
   "pro":
     blood: 3
     gameScript:
-      0: "level1"
-      10: "level2"
+      0: "level4"
+      30: "level5"
+      60: "level6"
+      90: "level7"
     fogInfo:
       concentration: 0.5
       speed: 1
