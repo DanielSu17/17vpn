@@ -1,6 +1,13 @@
-ERPEnabled: false
+SyncAPEnabled: false
+SyncPaymentEnabled: true
+# Only send TW data to ERP automatically
 ERPSupportRegions:
-ERPSupportPayoutTypes:
+    - TW
+# Support local bank/foreign bank
+ERPSupportPaymentPayoutTypes:
+    - 3
+    - 4
+ERPSupportAPPayoutTypes:
 
 # supportRegionGroups:
 #   - TW
