@@ -8,35 +8,15 @@ levels:
   "level1":
     role: 0
     objPercentage:
-      normal: 0.25
-      fire: 0.00
-      spring: 0.25
-      disappear: 0.30
-      moving: 0.20
-    spikeAttackFrequency: 999
-
-  "level2":
-    role: 1
-    objPercentage:
-      normal: 0.10
+      normal: 0.15
       fire: 0.15
-      spring: 0.25
-      disappear: 0.30
-      moving: 0.20
-    spikeAttackFrequency: 10
-
-  "level3":
-    role: 1
-    objPercentage:
-      normal: 0.10
-      fire: 0.20
       spring: 0.30
       disappear: 0.25
       moving: 0.15
     spikeAttackFrequency: 7
 
-  "level4":
-    role: 2
+  "level2":
+    role: 1
     objPercentage:
       normal: 0.05
       fire: 0.25
@@ -45,8 +25,8 @@ levels:
       moving: 0.10
     spikeAttackFrequency: 5
 
-  "level5":
-    role: 2
+  "level3":
+    role: 1
     objPercentage:
       normal: 0.10
       fire: 0.35
@@ -55,8 +35,8 @@ levels:
       moving: 0.10
     spikeAttackFrequency: 3
 
-  "level6":
-    role: 3
+  "level4":
+    role: 2
     objPercentage:
       normal: 0.05
       fire: 0.35
@@ -65,7 +45,7 @@ levels:
       moving: 0.10
     spikeAttackFrequency: 2
 
-  "level7":
+  "level5":
     role: 3
     objPercentage:
       normal: 0.05
@@ -123,8 +103,6 @@ modes:
     gameScript:
       0: "level3"
       30: "level4"
-      60: "level5"
-      90: "level6"
     fogInfo:
       concentration: 0.5
       speed: 1
@@ -136,7 +114,6 @@ modes:
       60: "level3"
       90: "level4"
       120: "level5"
-      150: "level6"
     fogInfo:
       concentration: 0.5
       speed: 1
