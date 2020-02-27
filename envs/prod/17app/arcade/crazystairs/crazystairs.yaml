@@ -1,6 +1,6 @@
 supportedVersion:
-  android: "2.4.37"
-  ios: "3.85.0"
+  android: "2.4.43"
+  ios: "3.90.0"
 
 #levels: 
 #  "level1": #defined by editer and cannot have same levelID in `levels`
@@ -8,22 +8,92 @@ levels:
   "level1":
     role: 0
     objPercentage:
-      normal: 0.2
-      fire: 0.2
-      spring: 0.2
-      disappear: 0.2
-      moving: 0.2
-    spikeAttackFrequency: 5
+      normal: 0.25
+      fire: 0.00
+      spring: 0.25
+      disappear: 0.30
+      moving: 0.20
+    spikeAttackFrequency: 999
 
   "level2":
+    role: 1
+    objPercentage:
+      normal: 0.10
+      fire: 0.15
+      spring: 0.25
+      disappear: 0.30
+      moving: 0.20
+    spikeAttackFrequency: 10
+
+  "level3":
+    role: 1
+    objPercentage:
+      normal: 0.10
+      fire: 0.20
+      spring: 0.30
+      disappear: 0.25
+      moving: 0.15
+    spikeAttackFrequency: 7
+
+  "level4":
+    role: 2
+    objPercentage:
+      normal: 0.05
+      fire: 0.25
+      spring: 0.35
+      disappear: 0.25
+      moving: 0.10
+    spikeAttackFrequency: 5
+
+  "level5":
+    role: 2
+    objPercentage:
+      normal: 0.10
+      fire: 0.35
+      spring: 0.35
+      disappear: 0.10
+      moving: 0.10
+    spikeAttackFrequency: 3
+
+  "level6":
+    role: 3
+    objPercentage:
+      normal: 0.05
+      fire: 0.35
+      spring: 0.30
+      disappear: 0.20
+      moving: 0.10
+    spikeAttackFrequency: 2
+
+  "level7":
+    role: 3
+    objPercentage:
+      normal: 0.05
+      fire: 0.40
+      spring: 0.30
+      disappear: 0.15
+      moving: 0.10
+    spikeAttackFrequency: 1
+
+  "amylevel1":
     role: 0
     objPercentage:
-      normal: 0.2
-      fire: 0.2
-      spring: 0.2
-      disappear: 0.2
-      moving: 0.2
-    spikeAttackFrequency: 5
+      normal: 0.50
+      fire: 0.00
+      spring: 0.00
+      disappear: 0.00
+      moving: 0.50
+    spikeAttackFrequency: 999
+
+  "amylevel2":
+    role: 5
+    objPercentage:
+      normal: 0.40
+      fire: 0.00
+      spring: 0.35
+      disappear: 0.25
+      moving: 0.00
+    spikeAttackFrequency: 2
 
 # modes: only have 4 modes now
 # 1. easy
@@ -40,8 +110,8 @@ levels:
 #       concentration: format: 0.1, 0.2
 #       speed: n secs/percentage
 modes:
-  "easy":
-    blood: 3
+  "general":
+    blood: 5
     gameScript:
       0: "level1"
       20: "level2"
@@ -51,8 +121,10 @@ modes:
   "pro":
     blood: 3
     gameScript:
-      0: "level1"
-      10: "level2"
+      0: "level3"
+      30: "level4"
+      60: "level5"
+      90: "level6"
     fogInfo:
       concentration: 0.5
       speed: 1
@@ -60,21 +132,56 @@ modes:
     blood: 3
     gameScript:
       0: "level1"
-      5: "level2"
+      30: "level2"
+      60: "level3"
+      90: "level4"
+      120: "level5"
+      150: "level6"
     fogInfo:
       concentration: 0.5
       speed: 1
-  "general":
+  "easy":
     blood: 10
     gameScript:
       0: "level1"
-      50: "level2"
+      15: "level2"
+      30: "level3"
+      90: "level4"
+      120: "level5"
+      150: "level6"
     fogInfo:
-      concentration: 0.1
-      speed: 10
+      concentration: 0.8
+      speed: 0.5
 
+# this is for 全民開播 , let it always be general mode
 freePlayMode: "general"
 giftIDToMode:
-  "crazyStaris_easy_streamer": "easy"
-  "crazyStaris_pro_streamer": "pro"
-  "crazyStaris_funny_streamer": "funny"
+  #非日本(非背包禮)
+  "crazy_stairs_streamer_easy": "easy"
+  "crazy_stairs_viewer_easy": "easy"
+  "crazy_stairs_streamer_pro": "pro"
+  "crazy_stairs_viewer_pro": "pro"
+  "crazy_stairs_streamer_funny": "funny"
+  "crazy_stairs_viewer_funny": "funny"
+  #非日本(背包禮)	
+  "crazy_stairs_streamer_easy_bag": "easy"
+  "crazy_stairs_viewer_easy_bag": "easy"
+  "crazy_stairs_streamer_pro_bag": "pro"	
+  "crazy_stairs_viewer_pro_bag": "pro"
+  "crazy_stairs_streamer_funny_bag": "funny"
+  "crazy_stairs_viewer_funny_bag": "funny"
+  #日本(非背包禮)	
+  "crazy_stairs_streamer_jp_easy": "easy"
+  "crazy_stairs_viewer_jp_easy": "easy"
+  "crazy_stairs_streamer_jp_pro": "pro"	
+  "crazy_stairs_viewer_jp_pro": "pro"
+  "crazy_stairs_streamer_jp_funny": "funny"
+  "crazy_stairs_viewer_jp_funny": "funny"
+  #日本(背包禮)	
+  "crazy_stairs_streamer_jp_easy_bag": "easy"
+  "crazy_stairs_viewer_jp_easy_bag": "easy"
+  "crazy_stairs_streamer_jp_pro_bag": "pro"
+  "crazy_stairs_viewer_jp_pro_bag": "pro"
+  "crazy_stairs_streamer_jp_funny_bag": "funny"
+  "crazy_stairs_viewer_jp_funny_bag": "funny"
+
