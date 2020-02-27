@@ -78,12 +78,12 @@ levels:
   "amylevel1":
     role: 0
     objPercentage:
-      normal: 0.50
-      fire: 0.00
+      normal: 0.10
+      fire: 0.40
       spring: 0.00
-      disappear: 0.00
-      moving: 0.50
-    spikeAttackFrequency: 999
+      disappear: 0.50
+      moving: 0.00
+    spikeAttackFrequency: 2
 
   "amylevel2":
     role: 5
@@ -143,8 +143,8 @@ modes:
   "easy":
     blood: 10
     gameScript:
-      0: "level1"
-      15: "level2"
+      0: "amylevel1"
+      15: "amylevel1"
       30: "level3"
       90: "level4"
       120: "level5"
