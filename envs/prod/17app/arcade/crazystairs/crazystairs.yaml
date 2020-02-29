@@ -8,44 +8,24 @@ levels:
   "level1":
     role: 0
     objPercentage:
-      normal: 0.25
-      fire: 0.00
-      spring: 0.25
-      disappear: 0.30
-      moving: 0.20
-    spikeAttackFrequency: 999
+      normal: 0.15
+      fire: 0.15
+      spring: 0.20
+      disappear: 0.25
+      moving: 0.25
+    spikeAttackFrequency: 8
 
   "level2":
     role: 1
     objPercentage:
-      normal: 0.10
-      fire: 0.15
-      spring: 0.25
-      disappear: 0.30
-      moving: 0.20
-    spikeAttackFrequency: 10
-
-  "level3":
-    role: 1
-    objPercentage:
-      normal: 0.10
+      normal: 0.15
       fire: 0.20
-      spring: 0.30
-      disappear: 0.25
-      moving: 0.15
-    spikeAttackFrequency: 7
-
-  "level4":
-    role: 2
-    objPercentage:
-      normal: 0.05
-      fire: 0.25
       spring: 0.35
       disappear: 0.25
       moving: 0.10
-    spikeAttackFrequency: 5
+    spikeAttackFrequency: 6
 
-  "level5":
+  "level3":
     role: 2
     objPercentage:
       normal: 0.10
@@ -53,9 +33,9 @@ levels:
       spring: 0.35
       disappear: 0.10
       moving: 0.10
-    spikeAttackFrequency: 3
+    spikeAttackFrequency: 4
 
-  "level6":
+  "level4":
     role: 3
     objPercentage:
       normal: 0.05
@@ -65,7 +45,7 @@ levels:
       moving: 0.10
     spikeAttackFrequency: 2
 
-  "level7":
+  "level5":
     role: 3
     objPercentage:
       normal: 0.05
@@ -75,25 +55,6 @@ levels:
       moving: 0.10
     spikeAttackFrequency: 1
 
-  "amylevel1":
-    role: 0
-    objPercentage:
-      normal: 0.50
-      fire: 0.00
-      spring: 0.00
-      disappear: 0.00
-      moving: 0.50
-    spikeAttackFrequency: 999
-
-  "amylevel2":
-    role: 5
-    objPercentage:
-      normal: 0.40
-      fire: 0.00
-      spring: 0.35
-      disappear: 0.25
-      moving: 0.00
-    spikeAttackFrequency: 2
 
 # modes: only have 4 modes now
 # 1. easy
@@ -124,7 +85,6 @@ modes:
       0: "level3"
       30: "level4"
       60: "level5"
-      90: "level6"
     fogInfo:
       concentration: 0.5
       speed: 1
@@ -136,7 +96,6 @@ modes:
       60: "level3"
       90: "level4"
       120: "level5"
-      150: "level6"
     fogInfo:
       concentration: 0.5
       speed: 1
@@ -148,10 +107,9 @@ modes:
       30: "level3"
       90: "level4"
       120: "level5"
-      150: "level6"
     fogInfo:
       concentration: 0.8
-      speed: 0.5
+      speed: 1
 
 # this is for 全民開播 , let it always be general mode
 freePlayMode: "general"
