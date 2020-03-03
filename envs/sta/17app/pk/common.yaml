@@ -5,7 +5,7 @@ gameDurationSecond: 300
 countdownSecond: 15
 rewardSecond: 30
 readyWaitingSecond: 30
-timeoutSecond: 30
+timeoutSecond: 30 # changing [timeoutSecond] to a larger value may cause end-to-end tests to fail (please refer to api/app/api/e2e/pk_test.go)
 consecutiveRejectionPeriod: 3600
 consecutiveRejectionCount: 3
 consecutiveRejectionNoDisturbSecond: 1800
