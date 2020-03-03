@@ -5,37 +5,37 @@ gameDurationSecond: 90
 countdownSecond: 15
 rewardSecond: 30
 readyWaitingSecond: 30
-timeoutSecond: 15
+timeoutSecond: 15 # changing [timeoutSecond] to a larger value may cause end-to-end tests to fail (please refer to api/app/api/e2e/pk_test.go)
 consecutiveRejectionPeriod: 3600
 consecutiveRejectionCount: 3
 consecutiveRejectionNoDisturbSecond: 1800
 rejectionUnPairSeconds: 0 # 拒絕後幾秒內不會被同一個人配對到
 rules:
   - type: 1
-    token: {key: pk_rule_title1}
+    token: { key: pk_rule_title1 }
   - type: 2
-    token: {key: pk_rule_content1-1}
+    token: { key: pk_rule_content1-1 }
   - type: 2
-    token: {key: pk_rule_content1-2}
+    token: { key: pk_rule_content1-2 }
   - type: 2
-    token: {key: pk_rule_content1-3}
+    token: { key: pk_rule_content1-3 }
   - type: 1
-    token: {key: pk_rule_title2}
+    token: { key: pk_rule_title2 }
   - type: 2
-    token: {key: pk_rule_content2-1}
+    token: { key: pk_rule_content2-1 }
   - type: 2
-    token: {key: pk_rule_content2-2}
+    token: { key: pk_rule_content2-2 }
   - type: 2
-    token: {key: pk_rule_content2-3}
+    token: { key: pk_rule_content2-3 }
   - type: 1
-    token: {key: pk_rule_title3}
+    token: { key: pk_rule_title3 }
   - type: 2
-    token: {key: pk_rule_content3-1}
+    token: { key: pk_rule_content3-1 }
   - type: 2
-    token: {key: pk_rule_content3-2}
+    token: { key: pk_rule_content3-2 }
   - type: 2
-    token: {key: pk_rule_content3-3}
+    token: { key: pk_rule_content3-3 }
   - type: 2
-    token: {key: pk_rule_content3-4}
+    token: { key: pk_rule_content3-4 }
   - type: 3
-    token: {key: pk_rule_content4}
+    token: { key: pk_rule_content4 }
