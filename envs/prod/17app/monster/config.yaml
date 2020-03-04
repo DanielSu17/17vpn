@@ -7,7 +7,37 @@ streamDuration: 0h00m00s
 alertMembers: ["angus"]
 alertChannels: ["testformonsteralert"]
 animations: ["yeti"]
+
+
 monsters:
+
+- id: monster_chichi
+  hit_consume: 10
+  duration: 60s
+  stream_alive_threshold: 1m00s
+  animation: "monster_chichi"
+  available_dates:
+  - start_date: "2020-03-09T18:00:00+08:00"
+    end_date: "2020-04-09T18:00:00+08:00"
+  appear_durations:
+  - start_time: 00h00m00s
+    end_time: 23h59m59s
+  type: 0
+  share_ratio: 50 # percentage
+  profit_ratio: 35 # percentage
+  bonus: 336
+  weight: 0.2
+  infoPageiconURL: https://cdn.17app.co/b8be3603-0374-40a6-9cce-e966cdd6f392.png
+  winnerPageiconURL: https://cdn.17app.co/2b3dd650-ad98-4a0d-81b6-17ca38756ee4.png
+  hintToken: {key: monster_battle_summon_hint_chichi,fontAttribute: {textColor: "#FFFFFF"}}
+  rule1Token: {key: monster_battle_summon_rule1_chichi,fontAttribute: {textColor: "#FFFFFF"}}
+  rule2Token: {key: monster_battle_summon_rule2_chichi,fontAttribute: {textColor: "#FFFFFF"}}
+  rule3Token: {key: monster_battle_summon_rule3_chichi,fontAttribute: {textColor: "#FFFFFF"}}
+  rule4Token: {key: monster_battle_summon_rule4_chichi,fontAttribute: {textColor: "#FFFFFF"}}
+  countdownToken: {key: monster_battle_summon_countdown_chichi,fontAttribute: {textColor: "#FFFFFF"}}
+  failureToken: {key: monster_battle_summon_failure_chichi,fontAttribute: {textColor: "#FFFFFF"}}
+  successToken: {key: monster_battle_summon_success_chichi,fontAttribute: {textColor: "#FFFFFF"}}
+
 - id: monster_zombiedog  # 怪獸id
   hit_consume: 10 # 每次打擊耗血
   duration: 60s # 怪獸出現時間
@@ -518,6 +548,32 @@ monsters:
   marqueeToken: {key: monster_battle_summon_marquee_llama}
   
 animationLoader:
+- animationID: chichi_attack
+  url: https://cdn.17app.co/1a4e1435-315c-4659-8c43-e90f56de521f.zip
+  MD5: fbade9dedc599c34b651348fd1a76cce
+  webpUrl: https://cdn.17app.co/695809fb-a3be-40b8-bfbe-ad2872bf6d54-q90-s1.webp
+  webpMD5: 6621333994e42e724095eaf62205b6ca
+- animationID: chichi_enter
+  url: https://cdn.17app.co/6835844d-69ae-43da-91e0-9d3356358f3f.zip
+  MD5: 30eef06d5f84085e576952dc58aaf462
+  webpUrl: https://cdn.17app.co/c3835e28-d3a6-47c7-bf8d-ea5176048e56-q90-s1.webp
+  webMD5: 9fc9ad2827c82c8c00af6dfea10fc7b9
+- animationID: chichi_failure
+  url: https://cdn.17app.co/bcf1d86b-db1d-4adb-9ad6-c141e23a286c.zip
+  MD5: ae418679426bbcf472bb97411b837e0c
+  webpUrl: https://cdn.17app.co/01e5d2a2-8e2f-4ec6-b571-20d2d515eaa3-q90-s1.webp
+  webMD5: 17e6fc632f9d5342b022eeee215af91c
+- animationID: chichi_idle
+  url: https://cdn.17app.co/0af3ce7d-ae0d-4a39-8e4f-aaf03cae9c30.zip
+  MD5: 64fe57292f5d81f4a360a6698b780fdd
+  webpUrl: https://cdn.17app.co/de028a10-6c15-4466-9468-694af5b306fa-q90-s1.webp
+  webpMD5: 79ee678772266bc7e00c3911e39cd0cd
+- animationID: chichi_success
+  url: https://cdn.17app.co/87cf26ef-c52a-40e1-af78-03ae39e58a0a.zip
+  MD5: d34805a8b44abf9b4bbe9b25231bc120
+  webpUrl: https://cdn.17app.co/0eccb50f-ddf4-480a-a138-75cbda3a8827-q90-s1.webp
+  webMD5: d81af93b399273980a857ccd3aa59cdb
+
 - animationID: zombiedog_attack
   url: https://cdn.17app.co/d045e57c-2f7c-49ff-bd4d-1ba3068920a6.zip
   MD5: 37d65041c41a5ebfc2187ee6f99173db
