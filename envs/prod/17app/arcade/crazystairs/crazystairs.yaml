@@ -63,7 +63,7 @@ levels:
       spring: 0.20
       disappear: 0.25
       moving: 0.30
-    spikeAttackFrequency: 18
+    spikeAttackFrequency: 17
 
   "twlevel2":
     role: 1
@@ -75,6 +75,15 @@ levels:
       moving: 0.25
     spikeAttackFrequency: 10
 
+  "twlevel3":
+    role: 2
+    objPercentage:
+      normal: 0.10
+      fire: 0.25
+      spring: 0.30
+      disappear: 0.15
+      moving: 0.20
+    spikeAttackFrequency: 8
 
 
 # modes: only have 4 modes now
@@ -114,7 +123,7 @@ modes:
     gameScript:
       0: "twlevel1"
       30: "twlevel2"
-      60: "level3"
+      60: "twlevel3"
       90: "level4"
       120: "level5"
     fogInfo:
