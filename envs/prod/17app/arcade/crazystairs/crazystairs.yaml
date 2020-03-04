@@ -55,6 +55,25 @@ levels:
       moving: 0.10
     spikeAttackFrequency: 1
 
+  "twlevel1":
+    role: 0
+    objPercentage:
+      normal: 0.15
+      fire: 0.10
+      spring: 0.20
+      disappear: 0.25
+      moving: 0.30
+    spikeAttackFrequency: 20
+
+  "twlevel2":
+    role: 1
+    objPercentage:
+      normal: 0.15
+      fire: 0.15
+      spring: 0.25
+      disappear: 0.25
+      moving: 0.25
+    spikeAttackFrequency: 10
 
 # modes: only have 4 modes now
 # 1. easy
@@ -91,14 +110,14 @@ modes:
   "funny":
     blood: 3
     gameScript:
-      0: "level1"
-      30: "level2"
+      0: "twlevel1"
+      30: "twlevel2"
       60: "level3"
       90: "level4"
       120: "level5"
     fogInfo:
-      concentration: 0.5
-      speed: 1
+      concentration: 0.8
+      speed: 5
   "easy":
     blood: 3
     gameScript:
@@ -115,15 +134,15 @@ modes:
 freePlayMode: "general"
 giftIDToMode:
   #非日本(非背包禮)
-  "crazy_stairs_streamer_easy": "easy"
-  "crazy_stairs_viewer_easy": "easy"
+  "crazy_stairs_streamer_easy": "funny"
+  "crazy_stairs_viewer_easy": "funny"
   "crazy_stairs_streamer_pro": "pro"
   "crazy_stairs_viewer_pro": "pro"
   "crazy_stairs_streamer_funny": "funny"
   "crazy_stairs_viewer_funny": "funny"
   #非日本(背包禮)	
-  "crazy_stairs_streamer_easy_bag": "easy"
-  "crazy_stairs_viewer_easy_bag": "easy"
+  "crazy_stairs_streamer_easy_bag": "funny"
+  "crazy_stairs_viewer_easy_bag": "funny"
   "crazy_stairs_streamer_pro_bag": "pro"	
   "crazy_stairs_viewer_pro_bag": "pro"
   "crazy_stairs_streamer_funny_bag": "funny"
