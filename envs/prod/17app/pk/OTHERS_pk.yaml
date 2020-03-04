@@ -4,13 +4,6 @@ enableContractedStreamer: true
 defaultAcceptChallenge: true
 whiteList: []
 silenceList: []
-senderMatchingSecond: 120
-receiverMatchingSecond: 60
-gameDurationSecond: 300
-countdownSecond: 15
-rewardSecond: 300
-readyWaitingSecond: 30
-timeoutSecond: 30
 matchingRules:
   levelRange:
   - 10
@@ -20,37 +13,6 @@ matchingRules:
   - 0.05
   - 0.1
 minLevel: 10
-consecutiveRejectionCount: 3
-consecutiveRejectionNoDisturbSecond: 1800
-rules:
-  - type: 1
-    token: {key: pk_rule_title1}
-  - type: 2
-    token: {key: pk_rule_content1-1}
-  - type: 2
-    token: {key: pk_rule_content1-2}
-  - type: 2
-    token: {key: pk_rule_content1-3}
-  - type: 1
-    token: {key: pk_rule_title2}
-  - type: 2
-    token: {key: pk_rule_content2-1}
-  - type: 2
-    token: {key: pk_rule_content2-2}
-  - type: 2
-    token: {key: pk_rule_content2-3}
-  - type: 1
-    token: {key: pk_rule_title3}
-  - type: 2
-    token: {key: pk_rule_content3-1}
-  - type: 2
-    token: {key: pk_rule_content3-2}
-  - type: 2
-    token: {key: pk_rule_content3-3}
-  - type: 2
-    token: {key: pk_rule_content3-4}
-  - type: 3
-    token: {key: pk_rule_content4}
 playList:
   - id: normalOneVOne
     mode: 1
