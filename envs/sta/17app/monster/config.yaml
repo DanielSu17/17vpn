@@ -1,11 +1,38 @@
-max: 0	# 0 means disable feature
+max: 1	# 0 means disable feature
 check_interval: 1m00s
 ccu: 0
 streamDuration: 0h00m00s
 animations: ["yeti"]
 monsters:
 
+- id: monster_chichi  # 怪獸id
+  hit_consume: 10 # 每次打擊耗血
+  duration: 60s # 怪獸出現時間
+  animation: "chichi" # 怪獸動畫prefix
+  type: 1 # 0: 一般怪獸, 1: 招喚怪獸
+  share_ratio: 50 # percentage, 主播分紅百分比： bonus * (share_ratio/100)
+  profit_ratio: 35 # percentage, 手續費百分比：bonus * (profit/100)
+  bonus: 336 # 血量: bonus * (100 + profit_ratio) / 100
+  weight: 0.5 # 怪獸產生百分比 : weight / sumOfAllWeights, 招喚怪獸不適用
+  summonGifts: # 招喚怪獸才需要填
+  - giftID: "gift_lightstick_r"
+    probability: 2000 # n / 10000 * 100%
+  - giftID: "gift_lightstick_g"
+    probability: 200 # n / 10000 * 100%
+  - giftID: "gift_lightstick_b"
+    probability: 10000 # n / 10000 * 100%
 
+  infoPageiconURL: https://cdn.17app.co/3176957f-e62b-46a9-aada-8b0ccaaf7d78.png
+  winnerPageiconURL: https://cdn.17app.co/37f92e38-47cd-400e-8327-bb15e7f4fc25.png
+  hintToken: {key: monster_battle_summon_hint_zombiedog,fontAttribute: {textColor: "#FFFFFF"}}
+  rule1Token: {key: monster_battle_summon_rule1_zombiedog,fontAttribute: {textColor: "#FFFFFF"}}
+  rule2Token: {key: monster_battle_summon_rule2_zombiedog,fontAttribute: {textColor: "#FFFFFF"}}
+  rule3Token: {key: monster_battle_summon_rule3_zombiedog,fontAttribute: {textColor: "#FFFFFF"}}
+  rule4Token: {key: monster_battle_summon_rule4_zombiedog,fontAttribute: {textColor: "#FFFFFF"}}
+  countdownToken: {key: monster_battle_summon_countdown_zombiedog,fontAttribute: {textColor: "#FFFFFF"}}
+  failureToken: {key: monster_battle_summon_failure_zombiedog,fontAttribute: {textColor: "#FFFFFF"}}
+  successToken: {key: monster_battle_summon_success_zombiedog,fontAttribute: {textColor: "#FFFFFF"}}
+  marqueeToken: {key: monster_battle_summon_marquee_zombiedog}
 
 
 # - id: monster_3
