@@ -30,8 +30,8 @@ supplyOtherRegionInHot: true
 # - position >= 1
 # - minRoomsRequired >= 1
 # - start, end support two formats: "06:10:00" or "2019-04-01 08:22:00"
-# - topics: [(全民話題 1): topic array]
-#   (example 1: or 1:["topic1", "topic2"])
+# - topic: (全民話題 1), (PK 2)
+# - topicTitles: string array
 # - whitelist: userID array
 entranceRooms:
   - enable: true
@@ -46,7 +46,9 @@ entranceRooms:
     iconURL: "https://assets-17app.akamaized.net/8fb28053-6a8e-453b-9a65-36d1009b6894.png"
     start: "00:00:00"
     end: "23:59:00"
-    topics:
+    topic: 1
+    topicTitles:
+    topics: # deprecate soon
       1:
     whitelist: 
       - 64960d5e-1631-4d55-9cd6-66c7ecfb6eef # 黃益中
