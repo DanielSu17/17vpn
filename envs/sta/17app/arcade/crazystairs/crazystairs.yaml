@@ -58,22 +58,22 @@ levels:
   "amylevel1":
     role: 0
     objPercentage:
-      normal: 0.10
-      fire: 0.30
-      spring: 0.30
-      disappear: 0.30
+      normal: 0.60
+      fire: 0.00
+      spring: 0.40
+      disappear: 0.00
       moving: 0.00
-    spikeAttackFrequency: 2
+    spikeAttackFrequency: 8
 
   "amylevel2":
     role: 5
     objPercentage:
-      normal: 0.10
-      fire: 0.30
-      spring: 0.30
-      disappear: 0.30
+      normal: 0.50
+      fire: 0.00
+      spring: 0.50
+      disappear: 0.00
       moving: 0.00
-    spikeAttackFrequency: 2
+    spikeAttackFrequency: 8
 
 # modes: only have 4 modes now
 # 1. easy
@@ -107,7 +107,7 @@ modes:
       concentration: 0.5
       speed: 1
   "funny":
-    blood: 10
+    blood: 15
     gameScript:
       0: "amylevel1"
       30: "amylevel2"
