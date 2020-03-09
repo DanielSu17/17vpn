@@ -39,7 +39,7 @@
     "e": "b"
     "f": "b"
 - testName: autoEnterLive
-  enableABtest: false
+  enableABtest: true
   expiredSecond: 604800 # 7 day
   lastCharGroup:
     "0": "a"
@@ -50,14 +50,14 @@
     "5": "a"
     "6": "a"
     "7": "a"
-    "8": "a"
-    "9": "a"
-    "a": "a"
-    "b": "a"
-    "c": "a"
-    "d": "a"
-    "e": "a"
-    "f": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
 - testName: recommendFollow
   enableABtest: true
   expiredSecond: 604800 # 7 day
@@ -98,7 +98,7 @@
     "d": "b"
     "e": "b"
     "f": "b"
-- testName: newbieGuidance # 新手引導(新手遮罩)
+- testName: newbieGuidance # 新手引導(新手遮罩), a:關閉, b:打開
   enableABtest: true
   expiredSecond: 259200 # 3 days
   lastCharGroup:
@@ -110,14 +110,14 @@
     "5": "b"
     "6": "b"
     "7": "b"
-    "8": "b"
-    "9": "b"
-    "a": "b"
-    "b": "b"
-    "c": "b"
-    "d": "b"
-    "e": "b"
-    "f": "b"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
 - testName: completeRegistration
   enableABtest: false
   expiredSecond: 10 # 10 second
