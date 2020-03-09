@@ -13,11 +13,11 @@
 eventBasedIAP:
 
 productBasedIAP:
-  - startTime: "2019-12-25T00:00:00+08:00"
-    endTime: "2020-01-02T00:00:00+08:00"
-    showCountdownUnderSticker: false
-    showCountdownInPopUp: false
-    stickerURL: ""
+  - startTime: "2020-03-10T12:00:00+08:00"
+    endTime: "2020-03-18T23:59:59+08:00"
+    showCountdownUnderSticker: true
+    showCountdownInPopUp: true
+    stickerURL: "example.jpg"
     eventInfo:
       eventTitleI18nKey: ""
       eventURL: ""
@@ -36,23 +36,41 @@ productBasedIAP:
       rewardTextColor: "#F69355"
     pointProducts:
       - productID: "media17_points_35980"
-        bonusPoint: 0
+        bonusPoint: 35980
         shouldHighlight:  true
+        reward:
+          type: 1
+          refCount: 5
       - productID: "media17_points_15420"
-        bonusPoint: 0
-        shouldHighlight:  false
+        bonusPoint: 15420
+        shouldHighlight:  true
+        reward:
+          type: 1
+          refCount: 5
       - productID: "media17_points_8550"
-        bonusPoint: 0
+        bonusPoint: 8550
         shouldHighlight:  false
+        reward:
+          type: 1
+          refCount: 5
       - productID: "media17_points_3540"
-        bonusPoint: 0
+        bonusPoint: 3540
         shouldHighlight:  false
+        reward:
+          type: 1
+          refCount: 5
       - productID: "media17_points_1720"
-        bonusPoint: 0
+        bonusPoint: 1720
         shouldHighlight:  false
+        reward:
+          type: 1
+          refCount: 5
       - productID: "media17_points_330"
-        bonusPoint: 0
+        bonusPoint: 330
         shouldHighlight:  false
+        reward:
+          type: 1
+          refCount: 5
     firstPurchaseType: 2
     taInfo:
       registerRange:
