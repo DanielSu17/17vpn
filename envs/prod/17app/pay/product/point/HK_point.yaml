@@ -13,15 +13,15 @@
 eventBasedIAP:
 
 productBasedIAP:
-  - startTime: "2020-02-23T00:00:00+08:00"
-    endTime: "2020-02-29T23:59:59+08:00"
-    showCountdownUnderSticker: true
-    showCountdownInPopUp: true
-    stickerURL: "https://cdn.17app.co/22f129e6-7c04-432a-91f9-c74cc9515d69.jpg"
+  - startTime: "2020-03-10T00:00:00+08:00"
+    endTime: "2020-03-31T23:59:59+08:00"
+    showCountdownUnderSticker: false
+    showCountdownInPopUp: false
+    stickerURL: ""
     eventInfo:
-      bannerImageURL: "https://cdn.17app.co/a7215e02-fac2-4033-aba3-e1c14bea5f4b.jpg"
+      bannerImageURL: "https://cdn.17app.co/4325ec5e-0091-4cd7-901e-3b221aab463b.jpg"
       eventTitleI18nKey: ""
-      eventURL: ""
+      eventURL: "https://event.17.media/2003-hk-carnival/0"
     layoutInfo:
       titlePicURL: ""
       messageColor: "#6F6777"
@@ -37,11 +37,11 @@ productBasedIAP:
       rewardTextColor: "#F69355"
     pointProducts:
       - productID: "media17_points_35980"
-        bonusPoint: 35980
-        shouldHighlight:  true
+        bonusPoint: 0
+        shouldHighlight:  false
       - productID: "media17_points_15420"
-        bonusPoint: 15420
-        shouldHighlight:  true
+        bonusPoint: 0
+        shouldHighlight:  false
       - productID: "media17_points_8550"
         bonusPoint: 0
         shouldHighlight:  false
@@ -53,8 +53,8 @@ productBasedIAP:
         shouldHighlight:  false
       - productID: "media17_points_330"
         bonusPoint: 0
-        shouldHighlight:  false
-    firstPurchaseType: 1
+        shouldHighlight:  true
+    firstPurchaseType: 2
     taInfo:
       registerRange:
         dayStart: 0 # 0 means no limit
@@ -62,54 +62,6 @@ productBasedIAP:
     displayRewardInfo: false
     abtestName:
 
-  - startTime: "2020-01-04T12:00:00+08:00"
-    endTime: "2020-01-12T23:59:59+08:00"
-    showCountdownUnderSticker: false
-    showCountdownInPopUp: false
-    stickerURL: ""
-    eventInfo:
-      bannerImageURL: "https://cdn.17app.co/c770203b-c981-44bb-b50c-b7ce73226fd8.jpg"
-      eventTitleI18nKey: ""
-      eventURL: ""
-    layoutInfo:
-      titlePicURL: "https://cdn.17app.co/c33fa4b4-84e6-470e-acff-82a93068b3c0.jpg"
-      messageColor: "#6F6777"
-      messageShadowColor: "#F5F5F5"
-      messageI18nKey: "iap_flash_HK_20200107"
-      descBgURL: "https://cdn.17app.co/02979afd-adba-4e66-93da-97625b86228b.png"
-      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
-      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
-    colorInfo:
-      pointColor: "#28232D"
-      bonusPointColor: "#F5487D"
-      priceColor: "#28232D"
-      rewardTextColor: "#F69355"
-    pointProducts:
-      - productID: "media17_points_35980"
-        bonusPoint: 0
-        shouldHighlight:  false
-      - productID: "media17_points_15420"
-        bonusPoint: 0
-        shouldHighlight:  false
-      - productID: "media17_points_8550"
-        bonusPoint: 0
-        shouldHighlight:  false
-      - productID: "media17_points_3540"
-        bonusPoint: 3540
-        shouldHighlight:  true
-      - productID: "media17_points_1720"
-        bonusPoint: 0
-        shouldHighlight:  false
-      - productID: "media17_points_330"
-        bonusPoint: 330
-        shouldHighlight:  true
-    firstPurchaseType: 1
-    taInfo:
-      registerRange:
-        dayStart: 0 # 0 means no limit
-        dayEnd: 0 # 0 means no limit
-    displayRewardInfo: false
-    abtestName:
 
 defaultIAP:
   layoutInfo:
