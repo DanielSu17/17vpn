@@ -6,13 +6,15 @@
     minReplicas: 20
 
 # Followings are actual schedules
-# For JP celebrity gackt_official
-- startTime: "2020-03-06 10:00:00 (GMT+0800)"
-  endTime: "2020-03-06 12:30:00 (GMT+0800)"
+# 春酒線上活動 final run
+# 活動時間：3/10 21:00 ~ 3/10 23:00
+# 主播：300人
+- startTime: "2020-03-10 20:40:00 (GMT+0800)"
+  endTime: "2020-03-10 23:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
-    minReplicas: 40
+    minReplicas: 100
   - name: k8sprod-golives-main
-    minReplicas: 12
+    minReplicas: 55
   - name: k8sprod-gotrade-main
-    minReplicas: 12
+    minReplicas: 40
