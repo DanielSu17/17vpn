@@ -60,16 +60,17 @@ eventBasedIAP:
         dayEnd: 0 # 0 means no limit
     displayRewardInfo: false
     abtestName:
-#Premium Subsription
-  - startTime: "2020-02-26T10:24:00+08:00"
-    endTime: "2020-03-01T15:59:00+08:00"
+
+#Premium Subsription St. Patrick's Day Sale
+  - startTime: "2020-03-12T04:12:00+08:00"
+    endTime: "2020-03-18T15:00:00+08:00"
     showCountdownUnderSticker: true
     showCountdownInPopUp: true
-    stickerURL: "https://cdn.17app.co/2d657f17-95e3-4e0f-a5db-9d702716bdfe.png"
+    stickerURL: "https://cdn.17app.co/ca0ae110-9e28-40db-bebc-faa0d95a2955.png"
     eventInfo:
       eventTitleI18nKey: ""
       eventURL: ""
-      bannerImageURL: "https://cdn.17app.co/379bbeb0-2607-4413-a72d-478ddff097c2.png"
+      bannerImageURL: "https://cdn.17app.co/3c901d25-2092-4e30-9ee9-89ffb889499a.png"
     layoutInfo:
       titlePicURL: ""
       messageColor: "#6F6777"
@@ -86,16 +87,16 @@ eventBasedIAP:
     pointProducts:
       - productID: "media17_points_330"
         bonusPoint: 0
-        shouldHighlight:  true
-        reward:
-          type: 1
-          refCount: 5
+        shouldHighlight:  false
       - productID: "media17_points_1720"
         bonusPoint: 0
         shouldHighlight:  false
       - productID: "media17_points_3540"
         bonusPoint: 0
-        shouldHighlight:  false
+        shouldHighlight:  true
+        reward:
+          type: 1
+          refCount: 15
       - productID: "media17_points_8550"
         bonusPoint: 0
         shouldHighlight:  false
@@ -105,15 +106,13 @@ eventBasedIAP:
       - productID: "media17_points_35980"
         bonusPoint: 0
         shouldHighlight:  false
-    firstPurchaseType: 0
+    firstPurchaseType: 2
     taInfo:
       registerRange:
         dayStart: 0 # 0 means no limit
         dayEnd: 0 # 0 means no limit
     displayRewardInfo: false
     abtestName:
-
-
 
 defaultIAP:
   layoutInfo:
