@@ -3,6 +3,14 @@
 # - 2: Whitelist-Only Mode
 # access_whitelist is a list of IP address can access on Whitelist-Only mode
 # allowed_origins is a list of regular expressions of all allowed origins for CORS
+
+record:
+  enable: true
+  whitelist:
+    - e257e914-5009-48d9-5e8b-3c6da3f2026f
+  
+  #probability: 1
+
 access_mode: 1
 access_whitelist:
  - 61.216.89.10
