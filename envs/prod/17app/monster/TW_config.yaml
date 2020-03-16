@@ -11,6 +11,33 @@ animations: ["yeti"]
 
 monsters:
 
+- id: monster_snowcow
+  hit_consume: 10
+  duration: 60s
+  stream_alive_threshold: 1m00s
+  animation: "snowcow"
+  available_dates:
+  - start_date: "2020-03-01T18:00:00+08:00"
+    end_date: "2020-04-01T18:00:00+08:00"
+  appear_durations:
+  - start_time: 00h00m00s
+    end_time: 23h59m59s
+  type: 0
+  share_ratio: 50 # percentage
+  profit_ratio: 35 # percentage
+  bonus: 336
+  weight: 0.2
+  infoPageiconURL: 
+  winnerPageiconURL: 
+  hintToken: {key: monster_battle_hint_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
+  rule1Token: {key: monster_battle_rule1_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
+  rule2Token: {key: monster_battle_rule2_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
+  rule3Token: {key: monster_battle_rule3_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
+  rule4Token: {key: monster_battle_rule4_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
+  countdownToken: {key: monster_battle_countdown_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
+  failureToken: {key: monster_battle_failure_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
+  successToken: {key: monster_battle_success_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
+
 - id: monster_chichi
   hit_consume: 10
   duration: 60s
@@ -548,6 +575,34 @@ monsters:
   marqueeToken: {key: monster_battle_summon_marquee_llama}
   
 animationLoader:
+
+# 牛仔出任務 3/1
+- animationID: snowcow_attack
+  url: https://cdn.17app.co/4db85a84-ff00-40f7-8de9-d7d76d1ccc66.zip
+  MD5: 26540ff0938b47e4c4b644f5f85578a8
+  webpUrl: https://cdn.17app.co/6438fba1-8917-4dd1-a4a4-4a89abbfb4a5-q90-s1.webp
+  webpMD5: f00d58ccc82facca9db1c11f2a25b1ea
+- animationID: snowcow_enter
+  url: https://cdn.17app.co/7b7f1ba0-d327-4668-b2a8-cb6d1e5dc7ab.zip
+  MD5: 837748587ea80052b0a5ef2291116d6f
+  webpUrl: https://cdn.17app.co/71f592cd-d51d-4652-89c8-98ee694d4f7f-q90-s1.webp
+  webpMD5: 9e8726cb08fd229ec0d2673e5169838d
+- animationID: snowcow_failure
+  url: https://cdn.17app.co/07c0a403-b1dc-4ff2-aa0e-7ddbec955f81.zip
+  MD5: 347ee9e2876925876d23940b48a16e38
+  webpUrl: https://cdn.17app.co/8db43603-caf0-4ab6-b9ae-c0c052bbea2d-q90-s1.webp
+  webpMD5: 0b426921fc59574d0dfecc6382f618fc
+- animationID: snowcow_idle
+  url: https://cdn.17app.co/a3424dec-a1ca-4b4a-a968-33fca726ce46.zip
+  MD5: e7de0ce4c1d9afc4e12b18eb5c361c7e
+  webpUrl: https://cdn.17app.co/1ff5155d-fda3-4aa1-9b25-853eb185d4d4-q90-s1.webp
+  webpMD5: 26634797d8f1ccea9cea62960a1bf640
+- animationID: snowcow_success
+  url: https://cdn.17app.co/46c7fd72-ac89-412b-935c-6806aefed621.zip
+  MD5: f0c3175c08c6a0c5d0c5dd1ffac042cc
+  webpUrl: https://cdn.17app.co/d8f90704-5cba-4e73-8ddb-622f37cbe446-q90-s1.webp
+  webpMD5: 204a0620cdb98a29c66f2290c1a14849
+
 - animationID: chichi_attack
   url: https://cdn.17app.co/1a4e1435-315c-4659-8c43-e90f56de521f.zip
   MD5: fbade9dedc599c34b651348fd1a76cce
