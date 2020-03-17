@@ -112,7 +112,6 @@ monsters:
 #     probability: 2000 # n / 10000 * 100%
 #   - giftID: "1912_hk_monster_1500"
 #     probability: 200 # n / 10000 * 100%
-
 #   infoPageiconURL: https://cdn.17app.co/911a5d5c-b74b-4a54-b9da-8ec5c329937e.png
 #   winnerPageiconURL: https://cdn.17app.co/3ab056ba-b3a2-4712-98d9-66820496cae3.png
 #   hintToken: {key: monster_battle_summon_hint_ugly,fontAttribute: {textColor: "#FFFFFF"}}
@@ -315,31 +314,31 @@ monsters:
 #   successToken: {key: monster_battle_summon_success_vampire,fontAttribute: {textColor: "#FFFFFF"}}
 #   marqueeToken: {key: ：monster_battle_summon_marquee_vampire}
 
-# - id: monster_zombie  # 怪獸id
-#   hit_consume: 10 # 每次打擊耗血
-#   duration: 60s # 怪獸出現時間
-#   animation: "zombie" # 怪獸動畫prefix
-#   type: 1 # 0: 一般怪獸, 1: 招喚怪獸
-#   share_ratio: 50 # percentage, 主播分紅百分比： bonus * (share_ratio/100)
-#   profit_ratio: 35 # percentage, 手續費百分比：bonus * (profit/100)
-#   bonus: 336 # 血量: bonus * (100 + profit_ratio) / 100
-#   weight: 0.5 # 怪獸產生百分比 : weight / sumOfAllWeights, 招喚怪獸不適用
-#   summonGifts: # 招喚怪獸才需要填
-#   - giftID: "1907_tw_ghost_20000"
-#     probability: 2000 # n / 10000 * 100%
-#   - giftID: "1907_tw_ghost_2000"
-#     probability: 200 # n / 10000 * 100%
-#   infoPageiconURL: https://assets-17app.akamaized.net/7ba6a3aa-5170-45f6-9faa-03cbd4849600.png
-#   winnerPageiconURL: https://assets-17app.akamaized.net/5cd7f3ae-3c9d-4f86-92d8-1923b777e7bd.png
-#   hintToken: {key: monster_battle_summon_hint_zombie,fontAttribute: {textColor: "#FFFFFF"}}
-#   rule1Token: {key: monster_battle_summon_rule1_zombie,fontAttribute: {textColor: "#FFFFFF"}}
-#   rule2Token: {key: monster_battle_summon_rule2_zombie,fontAttribute: {textColor: "#FFFFFF"}}
-#   rule3Token: {key: monster_battle_summon_rule3_zombie,fontAttribute: {textColor: "#FFFFFF"}}
-#   rule4Token: {key: monster_battle_summon_rule4_zombie,fontAttribute: {textColor: "#FFFFFF"}}
-#   countdownToken: {key: monster_battle_summon_countdown_zombie,fontAttribute: {textColor: "#FFFFFF"}}
-#   failureToken: {key: monster_battle_summon_failure_zombie,fontAttribute: {textColor: "#FFFFFF"}}
-#   successToken: {key: monster_battle_summon_success_zombie,fontAttribute: {textColor: "#FFFFFF"}}
-#   marqueeToken: {key: ：monster_battle_summon_marquee_zombie}
+- id: monster_zombie  # 怪獸id
+  hit_consume: 10 # 每次打擊耗血
+  duration: 60s # 怪獸出現時間
+  animation: "zombie" # 怪獸動畫prefix
+  type: 1 # 0: 一般怪獸, 1: 招喚怪獸
+  share_ratio: 50 # percentage, 主播分紅百分比： bonus * (share_ratio/100)
+  profit_ratio: 35 # percentage, 手續費百分比：bonus * (profit/100)
+  bonus: 336 # 血量: bonus * (100 + profit_ratio) / 100
+  weight: 0.5 # 怪獸產生百分比 : weight / sumOfAllWeights, 招喚怪獸不適用
+  summonGifts: # 招喚怪獸才需要填
+  - giftID: "gift_lightstick_r"
+    probability: 10000 # n / 10000 * 100%
+  - giftID: "gift_lightstick_b"
+    probability: 10000 # n / 10000 * 100%
+  infoPageiconURL: https://assets-17app.akamaized.net/7ba6a3aa-5170-45f6-9faa-03cbd4849600.png
+  winnerPageiconURL: https://assets-17app.akamaized.net/5cd7f3ae-3c9d-4f86-92d8-1923b777e7bd.png
+  hintToken: {key: monster_battle_summon_hint_zombie,fontAttribute: {textColor: "#FFFFFF"}}
+  rule1Token: {key: monster_battle_summon_rule1_zombie,fontAttribute: {textColor: "#FFFFFF"}}
+  rule2Token: {key: monster_battle_summon_rule2_zombie,fontAttribute: {textColor: "#FFFFFF"}}
+  rule3Token: {key: monster_battle_summon_rule3_zombie,fontAttribute: {textColor: "#FFFFFF"}}
+  rule4Token: {key: monster_battle_summon_rule4_zombie,fontAttribute: {textColor: "#FFFFFF"}}
+  countdownToken: {key: monster_battle_summon_countdown_zombie,fontAttribute: {textColor: "#FFFFFF"}}
+  failureToken: {key: monster_battle_summon_failure_zombie,fontAttribute: {textColor: "#FFFFFF"}}
+  successToken: {key: monster_battle_summon_success_zombie,fontAttribute: {textColor: "#FFFFFF"}}
+  marqueeToken: {key: ：monster_battle_summon_marquee_zombie}
 
 # - id: monster_1
 #   hit_consume: 10
