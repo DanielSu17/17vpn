@@ -29,9 +29,10 @@ pointReceiverLogsPlan:
   migrateState: 2 # 0: disable, 1: mysql, 2: mongo
   startID: 85620055 # 1584356836 Monday, March 16, 2020 7:07:16 PM GMT+08:00
   intervals: 5000
-  # deprecated
-  starttime: 1577808000 # 2020年1月1日星期三 00:00:00 GMT+08:00
-  intervalSeconds: 300
+  syncPlans:
+    name: latest
+    startID: 85620055 # 1584356836 Monday, March 16, 2020 7:07:16 PM GMT+08:00
+    intervals: 5000
 
 
 updateRevenueCron:
