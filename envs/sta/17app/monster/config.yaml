@@ -314,31 +314,31 @@ monsters:
 #   successToken: {key: monster_battle_summon_success_vampire,fontAttribute: {textColor: "#FFFFFF"}}
 #   marqueeToken: {key: ：monster_battle_summon_marquee_vampire}
 
-- id: monster_zombie  # 怪獸id
-  hit_consume: 10 # 每次打擊耗血
-  duration: 60s # 怪獸出現時間
-  animation: "zombie" # 怪獸動畫prefix
-  type: 1 # 0: 一般怪獸, 1: 招喚怪獸
-  share_ratio: 50 # percentage, 主播分紅百分比： bonus * (share_ratio/100)
-  profit_ratio: 35 # percentage, 手續費百分比：bonus * (profit/100)
-  bonus: 336 # 血量: bonus * (100 + profit_ratio) / 100
-  weight: 0.5 # 怪獸產生百分比 : weight / sumOfAllWeights, 招喚怪獸不適用
-  summonGifts: # 招喚怪獸才需要填
-  - giftID: "gift_lightstick_r"
-    probability: 10000 # n / 10000 * 100%
-  - giftID: "gift_lightstick_b"
-    probability: 10000 # n / 10000 * 100%
-  infoPageiconURL: https://assets-17app.akamaized.net/7ba6a3aa-5170-45f6-9faa-03cbd4849600.png
-  winnerPageiconURL: https://assets-17app.akamaized.net/5cd7f3ae-3c9d-4f86-92d8-1923b777e7bd.png
-  hintToken: {key: monster_battle_summon_hint_zombie,fontAttribute: {textColor: "#FFFFFF"}}
-  rule1Token: {key: monster_battle_summon_rule1_zombie,fontAttribute: {textColor: "#FFFFFF"}}
-  rule2Token: {key: monster_battle_summon_rule2_zombie,fontAttribute: {textColor: "#FFFFFF"}}
-  rule3Token: {key: monster_battle_summon_rule3_zombie,fontAttribute: {textColor: "#FFFFFF"}}
-  rule4Token: {key: monster_battle_summon_rule4_zombie,fontAttribute: {textColor: "#FFFFFF"}}
-  countdownToken: {key: monster_battle_summon_countdown_zombie,fontAttribute: {textColor: "#FFFFFF"}}
-  failureToken: {key: monster_battle_summon_failure_zombie,fontAttribute: {textColor: "#FFFFFF"}}
-  successToken: {key: monster_battle_summon_success_zombie,fontAttribute: {textColor: "#FFFFFF"}}
-  marqueeToken: {key: ：monster_battle_summon_marquee_zombie}
+# - id: monster_zombie  # 怪獸id
+#   hit_consume: 10 # 每次打擊耗血
+#   duration: 60s # 怪獸出現時間
+#   animation: "zombie" # 怪獸動畫prefix
+#   type: 1 # 0: 一般怪獸, 1: 招喚怪獸
+#   share_ratio: 50 # percentage, 主播分紅百分比： bonus * (share_ratio/100)
+#   profit_ratio: 35 # percentage, 手續費百分比：bonus * (profit/100)
+#   bonus: 336 # 血量: bonus * (100 + profit_ratio) / 100
+#   weight: 0.5 # 怪獸產生百分比 : weight / sumOfAllWeights, 招喚怪獸不適用
+#   summonGifts: # 招喚怪獸才需要填
+#   - giftID: "gift_lightstick_r"
+#     probability: 10000 # n / 10000 * 100%
+#   - giftID: "gift_lightstick_b"
+#     probability: 10000 # n / 10000 * 100%
+#   infoPageiconURL: https://assets-17app.akamaized.net/7ba6a3aa-5170-45f6-9faa-03cbd4849600.png
+#   winnerPageiconURL: https://assets-17app.akamaized.net/5cd7f3ae-3c9d-4f86-92d8-1923b777e7bd.png
+#   hintToken: {key: monster_battle_summon_hint_zombie,fontAttribute: {textColor: "#FFFFFF"}}
+#   rule1Token: {key: monster_battle_summon_rule1_zombie,fontAttribute: {textColor: "#FFFFFF"}}
+#   rule2Token: {key: monster_battle_summon_rule2_zombie,fontAttribute: {textColor: "#FFFFFF"}}
+#   rule3Token: {key: monster_battle_summon_rule3_zombie,fontAttribute: {textColor: "#FFFFFF"}}
+#   rule4Token: {key: monster_battle_summon_rule4_zombie,fontAttribute: {textColor: "#FFFFFF"}}
+#   countdownToken: {key: monster_battle_summon_countdown_zombie,fontAttribute: {textColor: "#FFFFFF"}}
+#   failureToken: {key: monster_battle_summon_failure_zombie,fontAttribute: {textColor: "#FFFFFF"}}
+#   successToken: {key: monster_battle_summon_success_zombie,fontAttribute: {textColor: "#FFFFFF"}}
+#   marqueeToken: {key: ：monster_battle_summon_marquee_zombie}
 
 # - id: monster_1
 #   hit_consume: 10
@@ -435,39 +435,37 @@ monsters:
 #   failureToken: {key: monster_battle_failure_kira,fontAttribute: {textColor: "#FFFFFF"}}
 #   successToken: {key: monster_battle_success_kira,fontAttribute: {textColor: "#FFFFFF"}}
 
-# - id: monster_sharpshooter
-#   hit_consume: 10
-#   duration: 60s
-#   stream_alive_threshold: 1m00s
-#   animation: cowboy
-#   available_dates:
-#   - start_date: "2019-04-26T18:00:00+08:00"
-#     end_date: "2019-05-03T00:00:00+08:00"
-#   appear_durations:
-#   - start_time: 00h00m00s
-#     end_time: 24h00m00s
-#   type: 1
-#   summonGifts:
-#   - giftID: "1904_tw_cowboy_20000"
-#     probability: 4000 # n / 10000 * 100%
-#   - giftID: "1904_tw_cowboy_2000"
-#     probability: 500 # n / 10000 * 100%
-#   - giftID: "1904_tw_cowboy_200"
-#     probability: 100 # n / 10000 * 100%
-#   share_ratio: 50 # percentage
-#   profit_ratio: 35 # percentage
-#   bonus: 336
-#   infoPageiconURL: https://assets-17app.akamaized.net/2eaf753e-20d3-429e-a172-eb14c44e21dc.png
-#   winnerPageiconURL: https://assets-17app.akamaized.net/bd258999-59b2-4170-91e6-649dac5a1356.png
-#   hintToken: {key: monster_battle_summon_hint_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
-#   rule1Token: {key: monster_battle_summon_rule1_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
-#   rule2Token: {key: monster_battle_summon_rule2_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
-#   rule3Token: {key: monster_battle_summon_rule3_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
-#   rule4Token: {key: monster_battle_summon_rule4_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
-#   countdownToken: {key: monster_battle_summon_countdown_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
-#   failureToken: {key: monster_battle_summon_failure_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
-#   successToken: {key: monster_battle_summon_success_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
-#   marqueeToken: {key: monster_battle_summon_marquee}
+- id: monster_sharpshooter
+  hit_consume: 10
+  duration: 60s
+  stream_alive_threshold: 1m00s
+  animation: cowboy
+  available_dates:
+  - start_date: "2019-04-26T18:00:00+08:00"
+    end_date: "2019-05-03T00:00:00+08:00"
+  appear_durations:
+  - start_time: 00h00m00s
+    end_time: 24h00m00s
+  type: 1
+  summonGifts:
+  - giftID: "gift_lightstick_r"
+    probability: 10000 # n / 10000 * 100%
+  - giftID: "gift_lightstick_b"
+    probability: 10000 # n / 10000 * 100%
+  share_ratio: 50 # percentage
+  profit_ratio: 35 # percentage
+  bonus: 336
+  infoPageiconURL: https://assets-17app.akamaized.net/2eaf753e-20d3-429e-a172-eb14c44e21dc.png
+  winnerPageiconURL: https://assets-17app.akamaized.net/bd258999-59b2-4170-91e6-649dac5a1356.png
+  hintToken: {key: monster_battle_summon_hint_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+  rule1Token: {key: monster_battle_summon_rule1_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+  rule2Token: {key: monster_battle_summon_rule2_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+  rule3Token: {key: monster_battle_summon_rule3_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+  rule4Token: {key: monster_battle_summon_rule4_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+  countdownToken: {key: monster_battle_summon_countdown_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+  failureToken: {key: monster_battle_summon_failure_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+  successToken: {key: monster_battle_summon_success_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+  marqueeToken: {key: monster_battle_summon_marquee}
 
 # - id: monster_wildwolf
 #   hit_consume: 10
