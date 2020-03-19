@@ -30,6 +30,82 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: d94f96fd-5205-457e-85fb-5d5f04ff9cfe
+    type: 5
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 21
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2003_tw_dance_bp
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: true
+    withReminder: false
+    i18nTitle: baggage_mission_leave_comment_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 10
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_leave_comment_reward_desc
+    i18nDescriptionParams:
+    goalValue: 10
+    enableTimeRange:
+      - startTime: "2020-03-19 18:00:00 (GMT+0800)"
+        endTime: "2020-04-02 23:59:59 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
+  - ID: d0793c6a-06c5-4517-bbf8-2485ddb31584
+    type: 3
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 21
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2003_tw_dance_bp
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: true
+    withReminder: false
+    i18nTitle: baggage_mission_send_specific_gifts_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 3
+      - needMap: false
+        mapOption: 2
+        value: 2003_tw_dance_s
+      - needMap: false
+        mapOption: 2
+        value: 2003_tw_dance_m
+      - needMap: false
+        mapOption: 2
+        value: 2003_tw_dance_l
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
+    i18nDescriptionParams:
+    goalValue: 3
+    enableTimeRange:
+      - startTime: "2020-03-20 18:00:00 (GMT+0800)"
+        endTime: "2020-04-02 23:59:59 (GMT+0800)"
+    refIDs:
+      - 2003_tw_dance_s
+      - 2003_tw_dance_m
+      - 2003_tw_dance_l
+    platforms:
+      - android
+      - ios
+
   - ID: 15189fc3-6256-49ba-b4c3-e3fcb0948d11 #留言 10 次 可以獲得 1 次自己玩（每天解一次）
     type: 5
     lifeCycle: 0
