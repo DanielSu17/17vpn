@@ -89,12 +89,21 @@ levels:
     role: 0
     objPercentage:
       normal: 0.00
-      fire: 0.15
-      spring: 0.35
-      disappear: 0.40
-      moving: 0.10
+      fire: 0.00
+      spring: 0.70
+      disappear: 0.30
+      moving: 0.00
     spikeAttackFrequency: 0.5
 
+  "funnylevel3":
+    role: 0
+    objPercentage:
+      normal: 0.00
+      fire: 0.00
+      spring: 0.00
+      disappear: 0.00
+      moving: 1.00
+    spikeAttackFrequency: 0.5
 
 # modes: only have 4 modes now
 # 1. easy
@@ -132,6 +141,7 @@ modes:
     gameScript:
       0: "funnylevel1"
       3: "funnylevel2"
+      30: "funnylevel3"
     fogInfo:
       concentration: 0.0
       speed: 0
