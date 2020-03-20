@@ -17,8 +17,8 @@ monsters:
   stream_alive_threshold: 1m00s
   animation: "snowcow"
   available_dates:
-  - start_date: "2020-03-01T00:00:00+08:00"
-    end_date: "2020-04-01T00:00:00+08:00"
+  - start_date: "2020-03-01T18:00:00+08:00"
+    end_date: "2020-04-01T18:00:00+08:00"
   appear_durations:
   - start_time: 00h00m00s
     end_time: 23h59m59s
@@ -26,9 +26,9 @@ monsters:
   share_ratio: 50 # percentage
   profit_ratio: 35 # percentage
   bonus: 336
-  weight: 0.6
-  infoPageiconURL: 
-  winnerPageiconURL: 
+  weight: 0.2
+  infoPageiconURL: https://cdn.17app.co/8d306f62-4bcd-400b-9280-10a60abdc650.png
+  winnerPageiconURL: https://cdn.17app.co/15e37928-e326-4afa-af63-d5ca3296a5fc.png
   hintToken: {key: monster_battle_hint_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
   rule1Token: {key: monster_battle_rule1_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
   rule2Token: {key: monster_battle_rule2_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
@@ -42,10 +42,10 @@ monsters:
   hit_consume: 10
   duration: 60s
   stream_alive_threshold: 1m00s
-  animation: chichi
+  animation: "chichi"
   available_dates:
-  - start_date: "2020-03-09T00:00:00+08:00"
-    end_date: "2020-04-09T00:00:00+08:00"
+  - start_date: "2020-03-09T18:00:00+08:00"
+    end_date: "2020-04-09T18:00:00+08:00"
   appear_durations:
   - start_time: 00h00m00s
     end_time: 23h59m59s
@@ -286,22 +286,22 @@ monsters:
   successToken: {key: monster_battle_summon_success_mummy,fontAttribute: {textColor: "#FFFFFF"}}
   marqueeToken: {key: ：monster_battle_summon_marquee_mummy}
 
-#- id: monster_vampire  # 怪獸id
-#  hit_consume: 10 # 每次打擊耗血
-#  duration: 60s # 怪獸出現時間
-#  animation: "vampire" # 怪獸動畫prefix
-#  stream_alive_threshold: 1m00s
-#  available_dates:
-#  - start_date: "2019-10-16T00:00:00+08:00"
-#    end_date: "2019-10-31T00:00:00+08:00"
-#  appear_durations:
-#  - start_time: 00h00m00s
-#    end_time: 24h00m00s
-#  type: 0 # 0: 一般怪獸, 1: 招喚怪獸
-#  share_ratio: 50 # percentage, 主播分紅百分比： bonus * (share_ratio/100)
-#  profit_ratio: 35 # percentage, 手續費百分比：bonus * (profit/100)
-#  bonus: 336 # 血量: bonus * (100 + profit_ratio) / 100
-#  weight: 0.4 # 怪獸產生百分比 : weight / sumOfAllWeights, 招喚怪獸不適用
+- id: monster_vampire  # 怪獸id
+  hit_consume: 10 # 每次打擊耗血
+  duration: 60s # 怪獸出現時間
+  animation: "vampire" # 怪獸動畫prefix
+  stream_alive_threshold: 1m00s
+  available_dates:
+  - start_date: "2019-10-16T00:00:00+08:00"
+    end_date: "2019-10-31T00:00:00+08:00"
+  appear_durations:
+  - start_time: 00h00m00s
+    end_time: 24h00m00s
+  type: 0 # 0: 一般怪獸, 1: 招喚怪獸
+  share_ratio: 50 # percentage, 主播分紅百分比： bonus * (share_ratio/100)
+  profit_ratio: 35 # percentage, 手續費百分比：bonus * (profit/100)
+  bonus: 336 # 血量: bonus * (100 + profit_ratio) / 100
+  weight: 0.4 # 怪獸產生百分比 : weight / sumOfAllWeights, 招喚怪獸不適用
 #  summonGifts: # 招喚怪獸才需要填
 #  - giftID: "1908_tw_ghost_20000"
 #    probability: 2000 # n / 10000 * 100%
@@ -310,17 +310,17 @@ monsters:
 #  - giftID: "1908_tw_ghost_1000"
 #    probability: 200 # n / 10000 * 100%
 
-#  infoPageiconURL: https://assets-17app.akamaized.net/5e10c073-ed9f-419a-90b9-e07903c08f14.png
-#  winnerPageiconURL: https://assets-17app.akamaized.net/3c25b913-fa21-458a-9f05-e1ff98a331a3.png
- # hintToken: {key: monster_battle_summon_hint_vampire,fontAttribute: {textColor: "#FFFFFF"}}
- # rule1Token: {key: monster_battle_summon_rule1_vampire,fontAttribute: {textColor: "#FFFFFF"}}
- # rule2Token: {key: monster_battle_summon_rule2_vampire,fontAttribute: {textColor: "#FFFFFF"}}
-#  rule3Token: {key: monster_battle_summon_rule3_vampire,fontAttribute: {textColor: "#FFFFFF"}}
-#  rule4Token: {key: monster_battle_summon_rule4_vampire,fontAttribute: {textColor: "#FFFFFF"}}
-#  countdownToken: {key: monster_battle_summon_countdown_vampire,fontAttribute: {textColor: "#FFFFFF"}}
-#  failureToken: {key: monster_battle_summon_failure_vampire,fontAttribute: {textColor: "#FFFFFF"}}
-#  successToken: {key: monster_battle_summon_success_vampire,fontAttribute: {textColor: "#FFFFFF"}}
-#  marqueeToken: {key: ：monster_battle_summon_marquee_vampire}
+  infoPageiconURL: https://assets-17app.akamaized.net/5e10c073-ed9f-419a-90b9-e07903c08f14.png
+  winnerPageiconURL: https://assets-17app.akamaized.net/3c25b913-fa21-458a-9f05-e1ff98a331a3.png
+  hintToken: {key: monster_battle_summon_hint_vampire,fontAttribute: {textColor: "#FFFFFF"}}
+  rule1Token: {key: monster_battle_summon_rule1_vampire,fontAttribute: {textColor: "#FFFFFF"}}
+  rule2Token: {key: monster_battle_summon_rule2_vampire,fontAttribute: {textColor: "#FFFFFF"}}
+  rule3Token: {key: monster_battle_summon_rule3_vampire,fontAttribute: {textColor: "#FFFFFF"}}
+  rule4Token: {key: monster_battle_summon_rule4_vampire,fontAttribute: {textColor: "#FFFFFF"}}
+  countdownToken: {key: monster_battle_summon_countdown_vampire,fontAttribute: {textColor: "#FFFFFF"}}
+  failureToken: {key: monster_battle_summon_failure_vampire,fontAttribute: {textColor: "#FFFFFF"}}
+  successToken: {key: monster_battle_summon_success_vampire,fontAttribute: {textColor: "#FFFFFF"}}
+  marqueeToken: {key: ：monster_battle_summon_marquee_vampire}
 
 - id: monster_zombie  # 怪獸id
   hit_consume: 10 # 每次打擊耗血
