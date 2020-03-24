@@ -111,9 +111,9 @@ missions:
     platforms:
       - android
       - ios
-#全ユーザー　3/11~3/14期間中に330c購入すると「ホワイトデーのお返し」3個（期間中1日1回まで）
-  - ID: 7beb6a68-65dc-4652-8036-42a8a6ab2a75
-    type: 8
+#全ユーザー　4/8~4/14期間中に配信を10分以上視聴すると「よっしゃいくぞぉ」3個（期間中1日1回まで）
+  - ID: 3d48cfe5-24dd-4225-b0bf-0d9b5cbf0f47
+    type: 9
     lifeCycle: 0
     targetAudience: 0
     levelRange:
@@ -121,21 +121,21 @@ missions:
       max: 999
     reward:
       rewardType: 1
-      rewardID: 2003_charge_whiteday
+      rewardID: 2004_jp_idle_mission
       amount: 3
       expireTimeSecs: 86400
     requirePhoneBinding: false
     withReminder: false
-    i18nTitle: baggage_mission_IAP_reward_jp_daily_xmas_name
+    i18nTitle: baggage_mission_opt_watch_streams_time_in_total_reward_name
     i18nTitleParams:
     i18nContent: 
     i18nContentParams:
-    i18nDescription: baggage_mission_IAP_reward_jp_npu_desc
+    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc_new
     i18nDescriptionParams:
-    goalValue: 1
+    goalValue: 600
     enableTimeRange:
-      - startTime: "2020-03-11 19:00:00 (GMT+0900)"
-        endTime: "2020-03-14 23:59:59 (GMT+0900)"
+      - startTime: "2020-04-08 12:00:00 (GMT+0900)"
+        endTime: "2020-04-14 23:59:59 (GMT+0900)"
     refIDs:
     platforms:
       - android
