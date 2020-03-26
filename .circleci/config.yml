@@ -2,6 +2,9 @@ version: 2.1
 
 orbs:
   slack: circleci/slack@3.3.0
+  # To avoid disorder deployments
+  # https://circleci.com/orbs/registry/orb/eddiewebb/queue
+  queue: eddiewebb/queue@1.5.0
 
 references:
   default: &default
@@ -57,6 +60,9 @@ jobs:
   deploy:
     <<: *default
     steps:
+      - queue/until_front_of_line:
+          only-on-branch: master
+          time: '2' # 2 minutes
       - run:
           name: deliver configuration
           command: |
