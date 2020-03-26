@@ -2,6 +2,13 @@ supportedVersion:
   android: "2.4.50"
   ios: "3.92.0"
 
+pullRateLimit:
+  enable: true
+  period: 300
+  threshold: 60
+  slackThreshold: 10
+  slackChannel: "dev-pullURL-alert"
+
 # for skyeye ...etc.
 globalWhiteList:
 
