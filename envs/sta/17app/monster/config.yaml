@@ -41,6 +41,37 @@ monsters:
   - giftID: "ring"
     probability: 10000 # n / 10000 * 100%
 
+- id: monster_babyrobot_petroleum #寶寶機器人挖到石油
+  hit_consume: 10
+  duration: 60s
+  stream_alive_threshold: 1m00s
+  animation: "babyrobotpetroleum"
+  available_dates:
+  - start_date: "2020-03-01T18:00:00+08:00"
+    end_date: "2020-04-01T18:00:00+08:00"
+  appear_durations:
+  - start_time: 00h00m00s
+    end_time: 23h59m59s
+  type: 1
+  share_ratio: 50 # percentage
+  profit_ratio: 35 # percentage
+  bonus: 336
+  weight: 0.2
+  infoPageiconURL: https://cdn.17app.co/8d306f62-4bcd-400b-9280-10a60abdc650.png
+  winnerPageiconURL: https://cdn.17app.co/15e37928-e326-4afa-af63-d5ca3296a5fc.png
+  hintToken: {key: monster_battle_hint_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
+  rule1Token: {key: monster_battle_rule1_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
+  rule2Token: {key: monster_battle_rule2_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
+  rule3Token: {key: monster_battle_rule3_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
+  rule4Token: {key: monster_battle_rule4_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
+  countdownToken: {key: monster_battle_countdown_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
+  failureToken: {key: monster_battle_failure_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
+  successToken: {key: monster_battle_success_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
+  marqueeToken: {key: monster_battle_summon_marquee_zombiedog}
+  summonGifts: # 招喚怪獸才需要填
+  - giftID: "love_you"
+    probability: 10000 # n / 10000 * 100%
+
 #- id: monster_snowcow
 #  hit_consume: 10
 #  duration: 60s
@@ -625,27 +656,27 @@ animationLoader:
   webMD5: 2971dc411bef27f762211dd8b7b38045
 
 #寶寶機器人挖到石油 baby robot petroleum
-- animationID: babyrobot_petroleum_attack
+- animationID: babyrobotpetroleum_attack
   url: https://cdn.17app.co/1a4e1435-315c-4659-8c43-e90f56de521f.zip
   MD5: fbade9dedc599c34b651348fd1a76cce
   webpUrl: https://cdn.17app.co/48054aaf-3194-4a06-a8a3-9d70e527fc56-q90-s1.webp
   webpMD5: 1defe2d2f80cd910cdff97c21c5bc5a1
-- animationID: babyrobot_petroleum_enter
+- animationID: babyrobotpetroleum_enter
   url: https://cdn.17app.co/6835844d-69ae-43da-91e0-9d3356358f3f.zip
   MD5: 30eef06d5f84085e576952dc58aaf462
   webpUrl: https://cdn.17app.co/24c9c86f-f5b3-4abe-970e-4a83e70e7bd6-q90-s1.webp
   webMD5: de15f3cd82815d15cac3b10ad758354f
-- animationID: babyrobot_petroleum_failure
+- animationID: babyrobotpetroleum_failure
   url: https://cdn.17app.co/bcf1d86b-db1d-4adb-9ad6-c141e23a286c.zip
   MD5: ae418679426bbcf472bb97411b837e0c
   webpUrl: https://cdn.17app.co/abaeec92-b5aa-4d27-916f-751b04a8d000-q90-s1.webp
   webMD5: 6cb8c2f2e688574ba5e752f032ac8dff
-- animationID: babyrobot_petroleum_idle
+- animationID: babyrobotpetroleum_idle
   url: https://cdn.17app.co/0af3ce7d-ae0d-4a39-8e4f-aaf03cae9c30.zip
   MD5: 64fe57292f5d81f4a360a6698b780fdd
   webpUrl: https://cdn.17app.co/08459de4-f75f-44fa-bdbf-4ebc8da4aa75-q90-s1.webp
   webpMD5: a09724ec5251bb67ca37d3262ba57c70
-- animationID: babyrobot_petroleum_success
+- animationID: babyrobotpetroleum_success
   url: https://cdn.17app.co/87cf26ef-c52a-40e1-af78-03ae39e58a0a.zip
   MD5: d34805a8b44abf9b4bbe9b25231bc120
   webpUrl: https://cdn.17app.co/8fc5ffe4-1fee-47bd-86a3-bdeedd61e90e-q90-s1.webp
