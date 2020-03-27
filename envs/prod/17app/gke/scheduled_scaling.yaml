@@ -8,11 +8,11 @@
 # Followings are actual schedules
 # GCP Outage
 - startTime: "2020-03-27 10:00:00 (GMT+0800)"
-  endTime: "2020-03-27 17:00:00 (GMT+0800)"
+  endTime: "2020-03-28 01:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
-    minReplicas: 40
+    minReplicas: 60
   - name: k8sprod-golives-main
-    minReplicas: 15
+    minReplicas: 30
   - name: k8sprod-gotrade-main
-    minReplicas: 15
+    minReplicas: 12
