@@ -9,6 +9,15 @@
 #       key: <string>
 #     labelID: <string> (optional if id is `Label`)
 
+# style 1: Top banner + super promote
+# style 2: IG 限時動態 style （官方推薦內容）
+# style 3: Netflix default style (時事話題, ...) 
+# style 4: (熱播節目)
+# style 5: (熱門影音)
+# style 6: (猜你可能會喜歡) showing label as possible than DefaultShelfStyle
+# style 7: (新手任務)
+# style 8: (PK) used in more page
+
 sections:
   - id: TopBanner # Banner + super promote
     name: 
@@ -111,7 +120,14 @@ sections:
     minGrids: 1
     style: 3
     more: true
-
+  - id: PK # pk
+    name:
+      key: tab_hot_2019q4_pk
+    enable: true
+    dedup: false  #重複
+    minGrids: 1
+    style: 8
+    more: true
 
 
 officialRecommendedStreamers:
