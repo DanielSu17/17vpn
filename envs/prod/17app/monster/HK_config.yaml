@@ -1,4 +1,4 @@
-max: 0	# 0 means disable feature
+max: 18	# 0 means disable feature
 check_interval: 1m00s
 big_brother_prefix: "give_me_five"
 nian_prefix: "nian"
@@ -18,7 +18,7 @@ monsters:
   animation: "chichi"
   available_dates:
   - start_date: "2020-03-09T18:00:00+08:00"
-    end_date: "2020-04-09T18:00:00+08:00"
+    end_date: "2020-03-10T18:00:00+08:00"
   appear_durations:
   - start_time: 00h00m00s
     end_time: 23h59m59s
@@ -69,6 +69,7 @@ monsters:
   failureToken: {key: monster_battle_summon_failure_zombiedog,fontAttribute: {textColor: "#FFFFFF"}}
   successToken: {key: monster_battle_summon_success_zombiedog,fontAttribute: {textColor: "#FFFFFF"}}
   marqueeToken: {key: monster_battle_summon_marquee_zombiedog}
+
 - id: monster_ugly  # 怪獸id
   hit_consume: 10 # 每次打擊耗血
   duration: 60s # 怪獸出現時間
@@ -151,6 +152,7 @@ monsters:
   countdownToken: {key: monster_battle_countdown_princess,fontAttribute: {textColor: "#FFFFFF"}}
   failureToken: {key: monster_battle_failure_princess,fontAttribute: {textColor: "#FFFFFF"}}
   successToken: {key: monster_battle_success_princess,fontAttribute: {textColor: "#FFFFFF"}}
+
 - id: monster_monster_princess2
   hit_consume: 10
   duration: 60s
@@ -177,6 +179,7 @@ monsters:
   countdownToken: {key: monster_battle_countdown_princess,fontAttribute: {textColor: "#FFFFFF"}}
   failureToken: {key: monster_battle_failure_princess,fontAttribute: {textColor: "#FFFFFF"}}
   successToken: {key: monster_battle_success_princess,fontAttribute: {textColor: "#FFFFFF"}}
+
 - id: monster_monster_princess1
   hit_consume: 10
   duration: 60s
@@ -204,14 +207,14 @@ monsters:
   failureToken: {key: monster_battle_failure_princess,fontAttribute: {textColor: "#FFFFFF"}}
   successToken: {key: monster_battle_success_princess,fontAttribute: {textColor: "#FFFFFF"}}
 
-- id: monster_3dshark  # 怪獸id
+- id: monster_3dshark  # 3d鯊魚
   hit_consume: 10
   duration: 60s
   stream_alive_threshold: 1m00s
   animation: "3dshark"
   available_dates:
   - start_date: "2020-01-10T00:00:00+08:00"
-    end_date: "2020-01-31T00:00:00+08:00"
+    end_date: "2021-01-31T00:00:00+08:00"
   appear_durations:
   - start_time: 12h00m00s
     end_time: 24h00m00s
@@ -321,7 +324,8 @@ monsters:
   failureToken: {key: monster_battle_summon_failure_zombie,fontAttribute: {textColor: "#FFFFFF"}}
   successToken: {key: monster_battle_summon_success_zombie,fontAttribute: {textColor: "#FFFFFF"}}
   marqueeToken: {key: ：monster_battle_summon_marquee_zombie}
-- id: monster_1
+
+- id: monster_1 #雪怪
   hit_consume: 10
   duration: 60s
   stream_alive_threshold: 10m00s
@@ -353,13 +357,13 @@ monsters:
   animation: "yeti"
 
 
-- id: monster_2
+- id: monster_2 #大哥
   hit_consume: 10
   duration: 60s
   stream_alive_threshold: 10m00s
   available_dates:
   - start_date: "2019-06-11T9:00:00+08:00"
-    end_date: "2020-06-01T00:00:00+08:00"
+    end_date: "2020-02-01T00:00:00+08:00"
   appear_durations:
   - start_time: 00h00m00s
     end_time: 2h00m00s
@@ -384,14 +388,14 @@ monsters:
   successToken: {key: monster_battle_success_bbro,fontAttribute: {textColor: "#FFFFFF"}}
   animation: "give_me_five" 
 
-- id: summon_monster_1
+- id: summon_monster_1 #年獸
   hit_consume: 10
   duration: 60s
   stream_alive_threshold: 1m00s
   animation: nian
   available_dates:
   - start_date: "2019-06-11T9:00:00+08:00"
-    end_date: "2020-06-01T00:00:00+08:00"
+    end_date: "2020-02-01T00:00:00+08:00"
   appear_durations:
   - start_time: 00h00m00s
     end_time: 24h00m00s
