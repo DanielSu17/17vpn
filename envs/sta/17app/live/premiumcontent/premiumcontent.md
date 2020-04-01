@@ -1,1 +1,1 @@
-# 付費解鎖 (GLOBAL)
+# 付費解鎖 paid livestream (GLOBAL)
