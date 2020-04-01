@@ -2,6 +2,8 @@ supportedVersion:
   android: "2.4.50"
   ios: "3.92.0"
 
+enable: false
+
 pullRateLimit:
   enable: true
   period: 300
@@ -16,12 +18,13 @@ enableUnLockCountOnUI: true
 
 # example
 # paidStreams:
-#  - streamerID: userID1
+#  - streamerID: "userID1"
 #    period:
-#      - beginTime: 12345678
-#        endTime: 22345678
-#        previewURL: 123.mp4
+#      - beginTime: "2020-03-31 08:00:00 (GMT+0800)"
+#        endTime: "2020-03-31 23:59:59 (GMT+0800)"
+#        previewURL: "https://123.mp4"
+#        price: 5566
 #        whiteList:
-#          - userID2
+#          - "userID2"
 paidStreams:
 
