@@ -448,69 +448,68 @@ monsters:
   successToken: {key: monster_battle_success,fontAttribute: {textColor: "#FFFFFF"}}
   animation: "yeti"
 
+#- id: monster_2 #大哥
+#  hit_consume: 10
+#  duration: 60s
+#  stream_alive_threshold: 10m00s
+#  available_dates:
+#  - start_date: "2019-06-11T9:00:00+08:00"
+#    end_date: "2020-02-01T00:00:00+08:00"
+#  appear_durations:
+#  - start_time: 00h00m00s
+#    end_time: 2h00m00s
+#  - start_time: 12h00m00s
+#    end_time: 14h30m00s
+#  - start_time: 17h00m00s
+#    end_time: 24h00m00s
+#  type: 0
+#  share_ratio: 50 # percentage
+#  profit_ratio: 35 # percentage
+#  bonus: 3000
+#  weight: 0.1
+#  infoPageiconURL: https://assets-17app.akamaized.net/306c6650-0cef-49a4-8501-9f223119c4f7.png
+#  winnerPageiconURL: https://assets-17app.akamaized.net/d1523ee7-3181-47b1-825c-0f74bf679ef7.png
+#  hintToken: {key: monster_battle_hint_bbro, fontAttribute: {textColor: "#FFFFFF"}}
+#  rule1Token: {key: monster_battle_rule1_bbro, fontAttribute: {textColor: "#FFFFFF"}}
+#  rule2Token: {key: monster_battle_rule2_bbro, fontAttribute: {textColor: "#FFFFFF"}}
+#  rule3Token: {key: monster_battle_rule3_bbro, fontAttribute: {textColor: "#FFFFFF"}}
+#  rule4Token: {key: monster_battle_rule4_bbro, fontAttribute: {textColor: "#FFFFFF"}}
+#  countdownToken: {key: monster_battle_countdown_bbro, fontAttribute: {textColor: "#FFFFFF"}}
+#  failureToken: {key: monster_battle_failure_bbro, fontAttribute: {textColor: "#FFFFFF"}}
+#  successToken: {key: monster_battle_success_bbro,fontAttribute: {textColor: "#FFFFFF"}}
+#  animation: "give_me_five" 
 
-- id: monster_2 #大哥
-  hit_consume: 10
-  duration: 60s
-  stream_alive_threshold: 10m00s
-  available_dates:
-  - start_date: "2019-06-11T9:00:00+08:00"
-    end_date: "2020-02-01T00:00:00+08:00"
-  appear_durations:
-  - start_time: 00h00m00s
-    end_time: 2h00m00s
-  - start_time: 12h00m00s
-    end_time: 14h30m00s
-  - start_time: 17h00m00s
-    end_time: 24h00m00s
-  type: 0
-  share_ratio: 50 # percentage
-  profit_ratio: 35 # percentage
-  bonus: 3000
-  weight: 0.1
-  infoPageiconURL: https://assets-17app.akamaized.net/306c6650-0cef-49a4-8501-9f223119c4f7.png
-  winnerPageiconURL: https://assets-17app.akamaized.net/d1523ee7-3181-47b1-825c-0f74bf679ef7.png
-  hintToken: {key: monster_battle_hint_bbro, fontAttribute: {textColor: "#FFFFFF"}}
-  rule1Token: {key: monster_battle_rule1_bbro, fontAttribute: {textColor: "#FFFFFF"}}
-  rule2Token: {key: monster_battle_rule2_bbro, fontAttribute: {textColor: "#FFFFFF"}}
-  rule3Token: {key: monster_battle_rule3_bbro, fontAttribute: {textColor: "#FFFFFF"}}
-  rule4Token: {key: monster_battle_rule4_bbro, fontAttribute: {textColor: "#FFFFFF"}}
-  countdownToken: {key: monster_battle_countdown_bbro, fontAttribute: {textColor: "#FFFFFF"}}
-  failureToken: {key: monster_battle_failure_bbro, fontAttribute: {textColor: "#FFFFFF"}}
-  successToken: {key: monster_battle_success_bbro,fontAttribute: {textColor: "#FFFFFF"}}
-  animation: "give_me_five" 
-
-- id: summon_monster_1 #年獸
-  hit_consume: 10
-  duration: 60s
-  stream_alive_threshold: 1m00s
-  animation: nian
-  available_dates:
-  - start_date: "2019-06-11T9:00:00+08:00"
-    end_date: "2020-02-01T00:00:00+08:00"
-  appear_durations:
-  - start_time: 00h00m00s
-    end_time: 24h00m00s
-  type: 0
+#- id: summon_monster_1 #年獸
+#  hit_consume: 10
+#  duration: 60s
+#  stream_alive_threshold: 1m00s
+#  animation: nian
+#  available_dates:
+#  - start_date: "2019-06-11T9:00:00+08:00"
+#    end_date: "2020-02-01T00:00:00+08:00"
+#  appear_durations:
+#  - start_time: 00h00m00s
+#    end_time: 24h00m00s
+#  type: 0
   # summonGifts:
   # - giftID: "1901_tw_monster_l"
   #   probability: 1000 # n / 10000 * 100%
   # - giftID: "1901_tw_monster_m"
   #   probability: 100 # n / 10000 * 100%
-  share_ratio: 50 # percentage
-  profit_ratio: 35 # percentage
-  bonus: 336
-  weight: 0.4
-  infoPageiconURL: https://assets-17app.akamaized.net/d976d5f7-d0f4-4637-a808-93a7fdbaa03c.png
-  winnerPageiconURL: https://assets-17app.akamaized.net/80740d0d-ffb7-40ae-94d9-2eaa4e2dda9d.png
-  hintToken: {key: monster_battle_summon_hint_nian,fontAttribute: {textColor: "#FFFFFF"}}
-  rule1Token: {key: monster_battle_summon_rule1_nian,fontAttribute: {textColor: "#FFFFFF"}}
-  rule2Token: {key: monster_battle_summon_rule2_nian,fontAttribute: {textColor: "#FFFFFF"}}
-  rule3Token: {key: monster_battle_summon_rule3_nian,fontAttribute: {textColor: "#FFFFFF"}}
-  rule4Token: {key: monster_battle_summon_rule4_nian,fontAttribute: {textColor: "#FFFFFF"}}
-  countdownToken: {key: monster_battle_summon_countdown_nian,fontAttribute: {textColor: "#FFFFFF"}}
-  failureToken: {key: monster_battle_summon_failure_nian,fontAttribute: {textColor: "#FFFFFF"}}
-  successToken: {key: monster_battle_summon_success_nian,fontAttribute: {textColor: "#FFFFFF"}}
+#  share_ratio: 50 # percentage
+#  profit_ratio: 35 # percentage
+#  bonus: 336
+#  weight: 0.4
+#  infoPageiconURL: https://assets-17app.akamaized.net/d976d5f7-d0f4-4637-a808-93a7fdbaa03c.png
+#  winnerPageiconURL: https://assets-17app.akamaized.net/80740d0d-ffb7-40ae-94d9-2eaa4e2dda9d.png
+#  hintToken: {key: monster_battle_summon_hint_nian,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule1Token: {key: monster_battle_summon_rule1_nian,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule2Token: {key: monster_battle_summon_rule2_nian,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule3Token: {key: monster_battle_summon_rule3_nian,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule4Token: {key: monster_battle_summon_rule4_nian,fontAttribute: {textColor: "#FFFFFF"}}
+#  countdownToken: {key: monster_battle_summon_countdown_nian,fontAttribute: {textColor: "#FFFFFF"}}
+#  failureToken: {key: monster_battle_summon_failure_nian,fontAttribute: {textColor: "#FFFFFF"}}
+#  successToken: {key: monster_battle_summon_success_nian,fontAttribute: {textColor: "#FFFFFF"}}
 
 # - id: monster_kira
 #   hit_consume: 10
