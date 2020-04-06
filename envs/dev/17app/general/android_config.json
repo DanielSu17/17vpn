@@ -1,87 +1,188 @@
 {
-	"event_queue": {
-		"sqlite": {
-			"enable": false,
-			"synchornize_mode": false
-		}
-	},
-	"network_threshold": {
-		"yellow": 100,
-		"red": 50
-	},
-	"video_threshold": {
-		"fps": 20,
-		"fps_filter": 13,
-		"high_bitrate": 800,
-		"low_bitrate": 600
-	},
-	"indo_streamer": ["chingsan.tw","chingsan"],
-	"gift_reminding_start_time": 30,
-	"gift_reminding_duration": 20,
-	"rating": {
-		"open_app_count": 5,
-		"watch_stream_total_time": 150,
-		"total_open_app_day": 1,
-		"total_follow_count": 5,
-		"total_share_count": 5,
-		"total_comment_count": 5,
-		"reset_all_rating_criteria_and_ask_again_day": 3
-	},
-	"low_phone_streamers": [
-	  "ea9b0742-2709-4f8a-b308-dce7d5609dee",
-		"caf2da0e-54cb-4058-4f1c-4056eb970161",
-		"c6e35e23-2018-47b2-afc8-adfd8ace1e22"
-  ],
-	"clan": {
-		"is_chat_show": 1
-	},
-	"pubnub": {
-		"error_reset": true,
-		"retry_count": 6,
-		"hot_people": 1000
-	},
-	"new_player": true,
-	"media_decode_auto": true,
-	"show_hotPage_trivia_sticker": true,
-	"api_encode": "br",
-	"cover_girl":{
-		"default_pad": "",
-		"default_phone": "",
-		"pad": "http://cdn.17app.co/71ed1e96-f452-4159-99b4-2488594ff39a.png",
-		"phone": "http://cdn.17app.co/b0d971ac-1bc4-4c5a-8302-c817925e7d5d.png",
-		"start_time": 1508284800,
-		"end_time": 0
-	},
-	"streamerRecap": {
-		"canCreate": true
-	},
-	"idleMode": {
-		"countDownTimeSec": 300
-	},
-	"uid_whitelist": {
-		"lab": [
-			"ced931e8-0c59-4452-89c0-39caac541b91",
-			"f023ab1d-b84e-4fb8-ac92-8c0ff19a4d9c",
-			"de3008df-e24b-4007-835b-3cdd4949dc79",
-			"c5ebb115-34dd-49bd-9a16-cd861f7763fa",
-			"71b90ac9-47c4-440b-bad9-1231025c0899",
-			"55c36008-9a78-48e8-9a85-9d83f29573bb",
-			"98be12ee-1325-4655-8f50-13a55175b137",
-			"ef1f1686-79b6-4a24-a4f9-0d08320b38b2",
-			"6b55c861-5066-45c9-bf26-8c744ea88793",
-			"ea9b0742-2709-4f8a-b308-dce7d5609dee",
-			"e3c4c804-8a9c-4b7c-8026-0a8ed602b42c",
-			"f4430848-1b8d-4460-a836-a93d412027cf",
-			"c6e35e23-2018-47b2-afc8-adfd8ace1e22",
-			"ca07159c-0715-44d7-8494-4812c01b48c6",
-			"fd95910f-6b03-4c7d-bcfb-72a930794419",
-			"f2669cec-6f99-406b-9998-78744efd39f9"
-		]
-	},
-	"latest_app_version": 2319,
-	"debug_info": {
-		"bugsee": 1
-	},
-	"isGoogleBillingEnable": true,
-	"ui_testing_streamers": []
+   "event_queue":{
+      "sqlite":{
+         "enable":false,
+         "synchornize_mode":false
+      }
+   },
+   "network_threshold":{
+      "yellow":100,
+      "red":50
+   },
+   "video_threshold":{
+      "fps":20,
+      "fps_filter":13,
+      "high_bitrate":800,
+      "low_bitrate":600
+   },
+   "indo_streamer":[
+      "yucheng13579",
+      "agathamarchella"
+   ],
+   "gift_reminding_start_time":30,
+   "gift_reminding_duration":20,
+   "follow_reminder_duration":180,
+   "rating":{
+      "open_app_count":5,
+      "watch_stream_total_time":60,
+      "total_open_app_day":1,
+      "total_follow_count":10,
+      "total_share_count":5,
+      "total_comment_count":5,
+      "reset_all_rating_criteria_and_ask_again_day":7
+   },
+   "low_phone_streamers":[
+      "7ca0983b-3fa3-4e2c-9ebf-093ea4b92d2a"
+   ],
+   "clan":{
+      "is_chat_show":1
+   },
+   "pubnub":{
+      "error_reset":true,
+      "retry_count":6,
+      "hot_people":1000
+   },
+   "new_player_version":2234,
+   "media_decode_auto":true,
+   "show_hotPage_trivia_sticker":false,
+   "api_encode":"br",
+   "cover_girl":{
+      "default_pad":"",
+      "default_phone":"",
+      "pad":"http://cdn.17app.co/71ed1e96-f452-4159-99b4-2488594ff39a.png",
+      "phone":"http://cdn.17app.co/b0d971ac-1bc4-4c5a-8302-c817925e7d5d.png",
+      "start_time":1508284800,
+      "end_time":0
+   },
+   "streamerRecap":{
+      "canCreate":true
+   },
+   "idleMode":{
+      "countDownTimeSec":300
+   },
+   "uid_whitelist":{
+      "lab":[
+         "media17",
+         "vivo",
+         "zte",
+         "infocus",
+         "htc",
+         "meitu",
+         "lge",
+         "sony",
+         "oppo",
+         "samsung",
+         "xiaomi"
+      ]
+   },
+   "latest_app_version":2366,
+   "debug_info":{
+      "bugsee":1
+   },
+   "isGoogleBillingEnable":true,
+   "debug_streamers":[
+
+   ],
+   "ui_testing_streamers":[
+      "media17_on"
+   ],
+   "testing_ijkPlayer":{
+      "logOn":false,
+      "liveLogOn":true,
+      "bannerLogOn":true,
+      "devices":[
+         "sony",
+         "sharp"
+      ]
+   },
+   "useGiftImplInViewer":true,
+   "ping":{
+      "streamer":{
+         "apply_version":2392,
+         "host":"8.8.8.8",
+         "interval":10
+      },
+      "viewer":{
+         "apply_version":2392,
+         "host":"8.8.8.8",
+         "interval":10
+      },
+      "high_latency_threshold":100,
+      "low_latency_threshold":50,
+      "retry_times":5
+   },
+   "traceroute":{
+      "streamer":{
+         "apply_version":2390,
+         "host":"",
+         "interval":0
+      }
+   },
+   "batch_upload_log":{
+      "apply_version":2390,
+      "upload_interval_sec":60,
+      "max_upload_amount":20,
+      "max_retry_times":5
+   },
+   "streamer_event_log":{
+      "apply_version":2418
+   },
+   "streamer_network_status":{
+      "apply_version":2416
+   },
+   "software_encode_devices":[
+      "d-02H",
+      "SM-T285YD",
+      "SM-J320G",
+      "Pixel 3a",
+      "Pixel 3a XL",
+      "Pixel 3",
+      "Pixel 3 XL"
+   ],
+   "crazy_zoo":{
+      "free":{
+         "level_pipe_indexes":[
+            5,
+            10
+         ],
+         "mobile_pipe_index":-1
+      },
+      "paid":{
+         "level_pipe_indexes":[
+            0,
+            0
+         ],
+         "mobile_pipe_index":-1
+      }
+   },
+   "live_atmos":{
+      "apply_version":2450,
+      "snow":{
+         "apply_version":9999,
+         "trigger_message":[
+            "Xmas",
+            "聖誕快樂",
+            "🎄",
+            "メリクリ"
+         ],
+         "duration_sec":30
+      },
+      "boxes":{
+         "apply_version":9999,
+         "trigger_message":[
+            "Zatmos",
+            "❤️",
+            "Happy Valentine's Day",
+            "love you",
+            "啾💋",
+            "好き",
+            "ドキドキ",
+            "情人節快樂",
+            "愛妳",
+            "愛你"
+         ],
+         "duration_sec":30,
+         "max_total_count":35
+      }
+   }
 }
