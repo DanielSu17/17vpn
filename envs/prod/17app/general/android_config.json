@@ -1,169 +1,188 @@
 {
-	"event_queue": {
-		"sqlite": {
-			"enable": false,
-			"synchornize_mode": false
-		}
-	},
-	"network_threshold": {
-		"yellow": 100,
-		"red": 50
-	},
-	"video_threshold": {
-		"fps": 20,
-		"fps_filter": 13,
-		"high_bitrate": 800,
-		"low_bitrate": 600
-	},
-	"indo_streamer": [
-		"yucheng13579",
-		"agathamarchella"
-	],
-	"gift_reminding_start_time": 30,
-	"gift_reminding_duration": 20,
-	"follow_reminder_duration": 180,
-	"rating": {
-		"open_app_count": 5,
-		"watch_stream_total_time": 60,
-		"total_open_app_day": 1,
-		"total_follow_count": 10,
-		"total_share_count": 5,
-		"total_comment_count": 5,
-		"reset_all_rating_criteria_and_ask_again_day": 7
-	},
-	"low_phone_streamers": [
-		"7ca0983b-3fa3-4e2c-9ebf-093ea4b92d2a"
-	],
-	"clan": {
-		"is_chat_show": 1
-	},
-	"pubnub": {
-		"error_reset": true,
-		"retry_count": 6,
-		"hot_people": 1000
-	},
-	"new_player_version": 2234,
-	"media_decode_auto": true,
-	"show_hotPage_trivia_sticker": false,
-	"api_encode": "br",
-	"cover_girl": {
-		"default_pad": "",
-		"default_phone": "",
-		"pad": "http://cdn.17app.co/71ed1e96-f452-4159-99b4-2488594ff39a.png",
-		"phone": "http://cdn.17app.co/b0d971ac-1bc4-4c5a-8302-c817925e7d5d.png",
-		"start_time": 1508284800,
-		"end_time": 0
-	},
-	"streamerRecap": {
-		"canCreate": true
-	},
-	"idleMode": {
-		"countDownTimeSec": 300
-	},
-	"uid_whitelist": {
-		"lab": [
-			"media17",
-			"vivo",
-			"zte",
-			"infocus",
-			"htc",
-			"meitu",
-			"lge",
-			"sony",
-			"oppo",
-			"samsung",
-			"xiaomi"
-		]
-	},
-	"latest_app_version": 2366,
-	"debug_info": {
-		"bugsee": 1
-	},
-	"isGoogleBillingEnable": true,
-	"debug_streamers": [
-	],
-	"ui_testing_streamers": [
-           "media17_on"
-        ],
-       "testing_ijkPlayer": {
-		"logOn": false,
-                "liveLogOn":true,
-                "bannerLogOn":true,
-                 "devices": [
-                      "sony",
-                      "sharp"
-                 ]
-	},
-    "useGiftImplInViewer": true,
-	"ping" : {
-        "streamer" : {
-            "apply_version" : 2392,
-            "host" : "8.8.8.8",
-            "interval" : 10
-        },
-        "viewer" : {
-            "apply_version" : 2392,
-            "host" : "8.8.8.8",
-            "interval" : 10
-        },
-        "high_latency_threshold" : 100,
-        "low_latency_threshold" : 50,
-        "retry_times" : 5
-    },
-	"traceroute" : {
-        "streamer" : {
-            "apply_version" : 2390,
-            "host" : "",
-            "interval" : 0
-        }
-    }, 
-	"batch_upload_log": {
-          "apply_version" : 2390,
-          "upload_interval_sec" : 60,
-          "max_upload_amount" : 20,
-		  "max_retry_times" : 5
-    },
-	"streamer_event_log": {
-		"apply_version" : 2418
-	},
-	"streamer_network_status": {
-		"apply_version" : 2416
-	},
-	"software_encode_devices": [
-           "d-02H",
-		   "SM-T285YD",
-		   "SM-J320G",
-		   "Pixel 3a",
-		   "Pixel 3a XL",
-		   "Pixel 3",
-		   "Pixel 3 XL"
-	],
-	"crazy_zoo" : {
-		"free" : {
-		"level_pipe_indexes" : [
-			5, 10
-		],
-		"mobile_pipe_index" : -1
-		},
-		"paid" : {
-		"level_pipe_indexes" : [
-			0, 0
-		],
-		"mobile_pipe_index" : -1
-		}
-    },
-  	"live_atmos" : {
-    	"apply_version" :2450,
-		  "snow" : {
-    	  "apply_version" : 9999,
-    	  "trigger_message" : ["Xmas", "聖誕快樂", "🎄","メリクリ"],
-	 	  "duration_sec" : 30
-	  },	
-		"boxes" : {
-		  "apply_version" : 9999,
-		  "trigger_message" : ["Zatmos", "❤️", "Happy Valentine's Day", "love you", "啾💋", "好き", "ドキドキ", "情人節快樂", "愛妳", "愛你"],
-		  "duration_sec" : 30,
-		  "max_total_count" : 35
-	  }	
-    }
+   "event_queue":{
+      "sqlite":{
+         "enable":false,
+         "synchornize_mode":false
+      }
+   },
+   "network_threshold":{
+      "yellow":100,
+      "red":50
+   },
+   "video_threshold":{
+      "fps":20,
+      "fps_filter":13,
+      "high_bitrate":800,
+      "low_bitrate":600
+   },
+   "indo_streamer":[
+      "yucheng13579",
+      "agathamarchella"
+   ],
+   "gift_reminding_start_time":30,
+   "gift_reminding_duration":20,
+   "follow_reminder_duration":180,
+   "rating":{
+      "open_app_count":5,
+      "watch_stream_total_time":60,
+      "total_open_app_day":1,
+      "total_follow_count":10,
+      "total_share_count":5,
+      "total_comment_count":5,
+      "reset_all_rating_criteria_and_ask_again_day":7
+   },
+   "low_phone_streamers":[
+      "7ca0983b-3fa3-4e2c-9ebf-093ea4b92d2a"
+   ],
+   "clan":{
+      "is_chat_show":1
+   },
+   "pubnub":{
+      "error_reset":true,
+      "retry_count":6,
+      "hot_people":1000
+   },
+   "new_player_version":2234,
+   "media_decode_auto":true,
+   "show_hotPage_trivia_sticker":false,
+   "api_encode":"br",
+   "cover_girl":{
+      "default_pad":"",
+      "default_phone":"",
+      "pad":"http://cdn.17app.co/71ed1e96-f452-4159-99b4-2488594ff39a.png",
+      "phone":"http://cdn.17app.co/b0d971ac-1bc4-4c5a-8302-c817925e7d5d.png",
+      "start_time":1508284800,
+      "end_time":0
+   },
+   "streamerRecap":{
+      "canCreate":true
+   },
+   "idleMode":{
+      "countDownTimeSec":300
+   },
+   "uid_whitelist":{
+      "lab":[
+         "media17",
+         "vivo",
+         "zte",
+         "infocus",
+         "htc",
+         "meitu",
+         "lge",
+         "sony",
+         "oppo",
+         "samsung",
+         "xiaomi"
+      ]
+   },
+   "latest_app_version":2366,
+   "debug_info":{
+      "bugsee":1
+   },
+   "isGoogleBillingEnable":true,
+   "debug_streamers":[
+
+   ],
+   "ui_testing_streamers":[
+      "media17_on"
+   ],
+   "testing_ijkPlayer":{
+      "logOn":false,
+      "liveLogOn":true,
+      "bannerLogOn":true,
+      "devices":[
+         "sony",
+         "sharp"
+      ]
+   },
+   "useGiftImplInViewer":true,
+   "ping":{
+      "streamer":{
+         "apply_version":2392,
+         "host":"8.8.8.8",
+         "interval":10
+      },
+      "viewer":{
+         "apply_version":2392,
+         "host":"8.8.8.8",
+         "interval":10
+      },
+      "high_latency_threshold":100,
+      "low_latency_threshold":50,
+      "retry_times":5
+   },
+   "traceroute":{
+      "streamer":{
+         "apply_version":2390,
+         "host":"",
+         "interval":0
+      }
+   },
+   "batch_upload_log":{
+      "apply_version":2390,
+      "upload_interval_sec":60,
+      "max_upload_amount":20,
+      "max_retry_times":5
+   },
+   "streamer_event_log":{
+      "apply_version":2418
+   },
+   "streamer_network_status":{
+      "apply_version":2416
+   },
+   "software_encode_devices":[
+      "d-02H",
+      "SM-T285YD",
+      "SM-J320G",
+      "Pixel 3a",
+      "Pixel 3a XL",
+      "Pixel 3",
+      "Pixel 3 XL"
+   ],
+   "crazy_zoo":{
+      "free":{
+         "level_pipe_indexes":[
+            5,
+            10
+         ],
+         "mobile_pipe_index":-1
+      },
+      "paid":{
+         "level_pipe_indexes":[
+            0,
+            0
+         ],
+         "mobile_pipe_index":-1
+      }
+   },
+   "live_atmos":{
+      "apply_version":2450,
+      "snow":{
+         "apply_version":9999,
+         "trigger_message":[
+            "Xmas",
+            "聖誕快樂",
+            "🎄",
+            "メリクリ"
+         ],
+         "duration_sec":30
+      },
+      "boxes":{
+         "apply_version":9999,
+         "trigger_message":[
+            "Zatmos",
+            "❤️",
+            "Happy Valentine's Day",
+            "love you",
+            "啾💋",
+            "好き",
+            "ドキドキ",
+            "情人節快樂",
+            "愛妳",
+            "愛你"
+         ],
+         "duration_sec":30,
+         "max_total_count":35
+      }
+   }
 }
