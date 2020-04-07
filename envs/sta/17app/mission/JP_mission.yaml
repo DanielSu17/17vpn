@@ -31,7 +31,35 @@
 # | NON_IAP | 2 |
 
 missions:
-#未課金ユーザー　3/1~3/8期間中に330c購入すると「スポーツカー」1個（期間中1回まで）
+#全ユーザー　4/1~2/14期間中に330c購入すると「ハッピーバレンタイン」3個（１日1回まで）
+  - ID: f63b29fd-6515-4e00-890c-0415ad6c7d54
+    type: 8
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: "id_valentine_s"
+      amount: 3
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    i18nTitle: baggage_mission_IAP_reward_jp_daily_xmas_name
+    i18nTitleParams:
+    i18nContent:
+    i18nContentParams:
+    i18nDescription: baggage_mission_IAP_reward_jp_1224_desc
+    i18nDescriptionParams:
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2020-02-05 00:00:00 (GMT+0900)"
+        endTime: "2020-02-14 23:59:59 (GMT+0900)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
   - ID: b58a89e2-f01a-48c8-a3b2-31e503fa74f3 #送出 1 次主播玩 可以獲得 2 次自己玩（每天解一次）
     type: 3
     lifeCycle: 0
@@ -114,7 +142,7 @@ missions:
       - android
       - ios
 
-  - ID: 38e6e812-d5f2-4815-ad59-120e08afad50
+  - ID: 38e6e812-d5f2-4815-ad59-120e08afad50 #未課金ユーザー　3/1~3/8期間中に330c購入すると「スポーツカー」1個（期間中1回まで）
     type: 8
     lifeCycle: 1
     targetAudience: 0
