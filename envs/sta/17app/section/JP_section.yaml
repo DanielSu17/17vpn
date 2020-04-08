@@ -11,7 +11,7 @@
 
 sections:
   - id: TopBanner # Banner + super promote
-    name: 
+    name:
       key: tab_hot_2019q4_topbanner
     enable: true
     style: 1
@@ -22,11 +22,18 @@ sections:
     minGrids: 1
     more: false
   - id: Suggestion # 猜你可能喜歡
-    name: 
+    name:
       key: tab_hot_2019q4_follow_suggestion
     enable: true
     style: 6
     minGrids: 1
+    more: true
+  - id: Latest # 新人
+    name:
+      key: tab_hot_2019q4_newstreamer
+    dedup: true #重複
+    minGrids: 1
+    style: 3
     more: true
   - id: Music # legacy Music tab
     name:
@@ -38,7 +45,7 @@ sections:
     more: true
   - id: Label # ゲーム（電競）
     labelID: jp_game
-    name: 
+    name:
       key: tab_hot_2019q4_game
     enable: true
     dedup: false #重複
@@ -47,7 +54,7 @@ sections:
     more: true
   - id: Label # V-Liver（虛擬主播）
     labelID: jp_vliver
-    name: 
+    name:
       key: tab_hot_2019q4_vliver
     enable: true
     dedup: false #重複
@@ -56,7 +63,7 @@ sections:
     more: true
   - id: Label # ファッション（時尚）
     labelID: jp_fashion
-    name: 
+    name:
       key: tab_hot_2019q4_fashion
     enable: true
     dedup: false #重複
@@ -65,7 +72,7 @@ sections:
     more: true
   - id: Label # パフォーマー（Performer）
     labelID: jp_performer
-    name: 
+    name:
       key: tab_hot_2019q4_performer
     enable: true
     dedup: false #重複
@@ -74,7 +81,7 @@ sections:
     more: true
   - id: Label # ホビー（街頭藝人）
     labelID: jp_street_artist
-    name: 
+    name:
       key: tab_hot_2019q4_street_artist
     enable: true
     dedup: false #重複
@@ -83,7 +90,7 @@ sections:
     more: true
   - id: Label # バラエティ（variety）
     labelID: jp_variety
-    name: 
+    name:
       key: tab_hot_2019q4_variety
     enable: true
     dedup: false #重複
@@ -92,7 +99,7 @@ sections:
     more: true
   - id: Label # 雑談（談話）
     labelID: jp_chat
-    name: 
+    name:
       key: tab_hot_2019q4_chat
     enable: true
     dedup: false #重複
@@ -100,7 +107,7 @@ sections:
     style: 3
     more: true
   - id: Show # 熱播節目
-    name: 
+    name:
       key: tab_hot_2019q4_program
     enable: true
     minGrids: 1
