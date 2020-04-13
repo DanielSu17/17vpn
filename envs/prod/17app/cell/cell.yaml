@@ -16,7 +16,7 @@ position:
 priority:
   - name: 2 # TRIVIA_ON_TV
   - name: 4 # TRIVIA
-  - name: 1 # TVSHOW 
+  - name: 1 # TVSHOW
   - name: 5 # WEREWOLVES
 #  - name: 3 # TVBANNER
 
@@ -53,8 +53,8 @@ entranceRooms:
     topicTitles:
     topics: # deprecate soon
       1:
-    whitelist: 
-     
+    whitelist:
+
 
 hotOptTabs:
   - id: label:new_streamer
@@ -71,19 +71,19 @@ hotOptTabs:
    # highlight: true
   - id: label:singer
     name:
-      key: streamer_label_singer 
+      key: streamer_label_singer
   - id: label:play_and_sing_special_plan
     name:
       key: streamer_label_play_and_sing_special_plan
    # highlight: true
- 
+
  # - id: label:taiwanese_speaking_streamer
     #name:
     #  key: streamer_label_taiwanese_speaking_streamer
     #highlight: true
   - id: label:pundit
     name:
-      key: streamer_label_pundit   
+      key: streamer_label_pundit
 
 
   - id: label:acoustic
@@ -104,7 +104,7 @@ hotOptTabs:
     #highlight: true
   - id: web:music
     name:
-      key: tab_opt_music 
+      key: tab_opt_music
     highlight: true
 
   - id: label:show
@@ -119,6 +119,7 @@ hotOptTabs:
   - id: latest
     name:
       key: tab_opt_newest
+    minStreamsRequired: 5
   - id: label:handsup
     name:
       key: streamer_handsup
@@ -131,7 +132,7 @@ hotOptSuperTopTabList: #這邊一定要有四個分類，會從每個分類拿�
   - label:show
   - label:a
   - label:b
- 
+
 
 #  - label:fortune_teller
 
@@ -144,9 +145,9 @@ hotOptSuperTopTabExtraList: #這邊不要把男生女生拿掉。這裡會按順
   - label:male
   - label:female
   - label:singer
-  - label:fortune_teller 
+  - label:fortune_teller
 #  - web:music
-hotOptSuperTopTabBlacklist:  
+hotOptSuperTopTabBlacklist:
   - a23d424f-f16c-4058-9d61-0e4fd99654e4	#友騎士
   - 11e2a0c4-87ea-4c15-8e16-517575ec14b4	#鋼之塔羅🔮萊納Ryner
   - dfc2a063-b566-4edd-8881-bee21fd1c5e1	#罕病主播-小甯
@@ -183,7 +184,7 @@ hotOptSuperTopTabBlacklist:
 hotOpt:
   onlyWhitelist: false
   whitelist:
-   
+
 # VodlistPosition means 0: Highlight上, 1-n: 第1-n個highlight下, n+1: 腰帶Banner下
 vodlistPosition: 1
 vodlist: #筆記：超過第15個可能就沒人看
@@ -198,7 +199,7 @@ vodlist: #筆記：超過第15個可能就沒人看
   - c0e6c26a-d1f7-4657-bba0-d0bee30ab08e #酬庸升級成「慈庸」？ 洪慈庸進軍立院賺飽飽！
   - a67e9573-baa1-4793-ac81-2dd70839f352 #嘻哈教父大支 致敬防疫英雄 推出新歌 【台灣隊長】
 
-  - 1443aac7-0794-43b7-aa39-0721cb856d1e #小賴的新歌上線！「下次我會把你抓緊 」~小賴Lai 
+  - 1443aac7-0794-43b7-aa39-0721cb856d1e #小賴的新歌上線！「下次我會把你抓緊 」~小賴Lai
   - d568f336-23c8-463a-b0ce-f2c5d66865dc #前主播吳怡萱初次登場~一起看看專業的表現吧!
   - 8de198ab-8095-448d-b3b4-6002f517515b #零九尷尬了 自創品牌英文名子不會唸？
   - 528c0c2e-f61e-482d-b4cb-abb710c38e79 #邱鋒澤動人神曲三連發 唱進你心底
@@ -210,7 +211,7 @@ vodlist: #筆記：超過第15個可能就沒人看
   # - 15ad349d-72f9-4a77-8340-939a3146e63f #趣你的娛樂｜大來賓：吳姍儒Sandy、鼓鼓呂思緯
   # - a60e426c-3696-4898-927f-c9b8937594e2 #趣你的娛樂｜大來賓：柯佳嬿、許光漢
 
- 
+
    # - 543d5ae3-f105-4b87-9906-1650f3f34c3c #艾莉兒~觀眾點播，你們點我來唱!
  # - 36c3633b-541b-4960-840b-72988397ec0f #台視17唱|情歌王子黃品源 演唱多首經典好歌 讓你一次聽讓你一次聽個夠！
  # - aa7abb64-dc17-4df0-8d56-1dab3ad7e694 #WHO偏袒中國 甚至稱台灣為「中國台灣」？
