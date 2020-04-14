@@ -1,3 +1,6 @@
+# 開播期間必須小於3天，若超過會失效
+# 
+
 supportedVersion:
   android: "2.10.0"
   ios: "3.99.0"
@@ -21,12 +24,15 @@ enableUnLockCountOnUI: true
 # paidStreams:
 #  - streamerID: "userID1"
 #    period:
-#      - beginTime: "2020-03-31 08:00:00 (GMT+0800)"
-#        endTime: "2020-03-31 23:59:59 (GMT+0800)"
+#      - beginTime: "2020-03-31 08:00:00 (GMT+0800)" #期間1
+#        endTime: "2020-03-31 23:59:59 (GMT+0800)" #不能設超過3天的開播期間
 #        previewURL: "https://123.mp4"
 #        price: 5566
 #        whiteList:
 #          - "userID2"
+#      - beginTime: "2020-04-31 08:00:00 (GMT+0800)" #期間1
+#        endTime: "2020-04-31 23:59:59 (GMT+0800)"
+
 paidStreams:
   - streamerID: "ba6dfdc3-0c80-4a06-a7bc-364b5831565c" #holden12
     period:
