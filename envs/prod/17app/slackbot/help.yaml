@@ -321,7 +321,18 @@ commandHelp:
       check:
         title: "`[查詢某一字串是否為該地區的dirtyword]`"
         description: |
-          >
+          > 
+#===!event活動相關===
+  event:
+    title: "活動相關"
+    commandsHelp:
+      received-points:
+        title: "`[查詢活動表現]`"
+        description: |
+          > 1. 指定多個區域請使用逗號隔開，例如：TW,JP
+          > 2. 尚未支援MENA
+          > 3. `endTime` 至少要跟現在時間間隔30分鐘
+          > 4. 不支援 `24:00` 或 `25:00` 這類非正式時間表示
 #===!follow追蹤人數===
   follow:
     title: "追蹤人數"
