@@ -6,9 +6,9 @@ countdownSecond: 15 # 倒數時間閃爍icon
 rewardSecond: 30 # 遊戲結算完到最後關閉的時間
 readyWaitingSecond: 30 # 等待啟動合流sdk時間
 timeoutSecond: 30 # 主播多久沒打api判斷斷線用的時間, changing [timeoutSecond] to a larger value may cause end-to-end tests to fail (please refer to api/app/api/e2e/pk_test.go)
-consecutiveRejectionPeriod: 1800 #(累計時間) 這表示 "1" 小時內有超過3次，就會有30分鐘不會被配對到，超過一小時沒有拒絕 就會重0開始算
+consecutiveRejectionPeriod: 3600 #(累計時間) 這表示 "1" 小時內有超過3次，就會有30分鐘不會被配對到，超過一小時沒有拒絕 就會重0開始算
 consecutiveRejectionCount: 3 # 拒絕 "3" 次後，暫時不接受邀請
-consecutiveRejectionNoDisturbSecond: 3600 #(不能被配對的時間) 連續拒絕3次後，"180"秒內不會參與任何配對
+consecutiveRejectionNoDisturbSecond: 1800 #(不能被配對的時間) 連續拒絕3次後，"180"秒內不會參與任何配對
 rejectionUnPairSeconds: 60 # 拒絕後幾秒內不會被同一個人配對到
 minAndroidVersion: "2.8.1"
 minIOSVersion: "3.93.100" # 測試用，待修改
@@ -48,50 +48,50 @@ loseFilterAnimationID: filter_lose
 animationPrefix: pk
 
 animationLoader:
-  # - animationID: pk_opening
-  #   url: https://cdn.17app.co/df0be831-4a3d-411b-976f-fc830d8aa99b.zip
-  #   MD5: 0187a7175c29742e179ba3a03263818a
-  #   webpUrl: https://cdn.17app.co/85fb0d86-0fb4-4fbc-b491-cac44d9decb9-q90-s1.webp
-  #   webpMD5: a8aedf44739318cd5ed2ce91c83b8ade
-  # - animationID: pk_loading
-  #   url: https://cdn.17app.co/e7a69095-0d03-4ec1-a533-292a05acd57e.zip
-  #   MD5: c7107f1079f7ff7066b4c87ae20760ce
-  #   webpUrl: https://cdn.17app.co/df7e1b87-c6cd-4dda-a394-1445167bf0f4-q90-s1.webp
-  #   webpMD5: c2c41ddead84d00f71862ecc3d3cbea5
-  # - animationID: pk_ending
-  #   url: https://cdn.17app.co/4815ac64-3eed-4578-a45d-b20324da8562.zip
-  #   MD5: 2873bd3c21375700b2b1ee11e5a6406a
-  #   webpUrl: https://cdn.17app.co/54ac5631-cfef-4d82-b968-087359e1bebd-q90-s1.webp
-  #   webpMD5: eec3006209abb6a40eeb7b5f082a9c8e
-  # - animationID: pk_ending_score
-  #   url: https://cdn.17app.co/7e3019e8-ca10-4c08-8702-b9b2f5c68ea6.zip
-  #   MD5: 40e8a30a5f2fbd4f930aae8f5caf9ee6
-  #   webpUrl: https://cdn.17app.co/83291d71-f3e0-4629-92ec-8acc7510f515-q90-s1.webp
-  #   webpMD5: 0162bb8bf5d089319482cfe416f29965
-  # - animationID: pk_pkbar
-  #   url: https://cdn.17app.co/79c2ae5a-c032-406f-8da4-81b6b78e1d80.zip
-  #   MD5: 61c941407cca58194cfed95ed436d348
-  #   webpUrl: https://cdn.17app.co/b562dc65-755a-4694-bdce-d4bee33b39d4-q90-s1.webp
-  #   webpMD5: 3815c3a9c693de23fe23e35e99dc8b71
-  # - animationID: pk_win
-  #   url: https://cdn.17app.co/91037455-3a72-4c42-93ca-2da402014795.zip
-  #   MD5: 07051f623df0fd66cf6a2a0ce803a142
-  #   webpUrl: https://cdn.17app.co/5ddb23be-590e-4652-879f-021ea196a873-q90-s1.webp
-  #   webpMD5: cf1d83831cae41a88d287bd4e51c06fa
-  # - animationID: pk_deuce
-  #   url: https://cdn.17app.co/c77f4808-ee69-4a8c-85cb-8896d8b73ac2.zip
-  #   MD5: 37068c7dab472740c692ef9a3f5fe228
-  #   webpUrl: https://cdn.17app.co/bc83fc7e-8a68-4359-81d5-4cd0bbf46153-q90-s1.webp
-  #   webpMD5: 3ce775539f7840b7d48b2e96f76e147b
-  # - animationID: filter_win
-  #   animationType: 1
-  #   androidType: 3
-  #   iOSType: 3
-  #   url: https://cdn.17app.co/2a5a6723-55e7-46cf-a0f0-b54866331e1f.zip
-  #   MD5: 012a09d23d294774b18a63097b56959a
-  # - animationID: filter_lose
-  #   animationType: 1 # deprecated
-  #   androidType: 3
-  #   iOSType: 3
-  #   url: https://cdn.17app.co/965f43a0-9546-44c9-a516-844419b46e2d.zip
-  #   MD5: f80533f3c4b13d77a821a54155f7ca68
+  - animationID: pk_opening
+    url: https://cdn.17app.co/df0be831-4a3d-411b-976f-fc830d8aa99b.zip
+    MD5: 0187a7175c29742e179ba3a03263818a
+    webpUrl: https://cdn.17app.co/85fb0d86-0fb4-4fbc-b491-cac44d9decb9-q90-s1.webp
+    webpMD5: a8aedf44739318cd5ed2ce91c83b8ade
+  - animationID: pk_loading
+    url: https://cdn.17app.co/e7a69095-0d03-4ec1-a533-292a05acd57e.zip
+    MD5: c7107f1079f7ff7066b4c87ae20760ce
+    webpUrl: https://cdn.17app.co/df7e1b87-c6cd-4dda-a394-1445167bf0f4-q90-s1.webp
+    webpMD5: c2c41ddead84d00f71862ecc3d3cbea5
+  - animationID: pk_ending
+    url: https://cdn.17app.co/4815ac64-3eed-4578-a45d-b20324da8562.zip
+    MD5: 2873bd3c21375700b2b1ee11e5a6406a
+    webpUrl: https://cdn.17app.co/54ac5631-cfef-4d82-b968-087359e1bebd-q90-s1.webp
+    webpMD5: eec3006209abb6a40eeb7b5f082a9c8e
+  - animationID: pk_ending_score
+    url: https://cdn.17app.co/7e3019e8-ca10-4c08-8702-b9b2f5c68ea6.zip
+    MD5: 40e8a30a5f2fbd4f930aae8f5caf9ee6
+    webpUrl: https://cdn.17app.co/83291d71-f3e0-4629-92ec-8acc7510f515-q90-s1.webp
+    webpMD5: 0162bb8bf5d089319482cfe416f29965
+  - animationID: pk_pkbar
+    url: https://cdn.17app.co/79c2ae5a-c032-406f-8da4-81b6b78e1d80.zip
+    MD5: 61c941407cca58194cfed95ed436d348
+    webpUrl: https://cdn.17app.co/b562dc65-755a-4694-bdce-d4bee33b39d4-q90-s1.webp
+    webpMD5: 3815c3a9c693de23fe23e35e99dc8b71
+  - animationID: pk_win
+    url: https://cdn.17app.co/91037455-3a72-4c42-93ca-2da402014795.zip
+    MD5: 07051f623df0fd66cf6a2a0ce803a142
+    webpUrl: https://cdn.17app.co/5ddb23be-590e-4652-879f-021ea196a873-q90-s1.webp
+    webpMD5: cf1d83831cae41a88d287bd4e51c06fa
+  - animationID: pk_deuce
+    url: https://cdn.17app.co/c77f4808-ee69-4a8c-85cb-8896d8b73ac2.zip
+    MD5: 37068c7dab472740c692ef9a3f5fe228
+    webpUrl: https://cdn.17app.co/bc83fc7e-8a68-4359-81d5-4cd0bbf46153-q90-s1.webp
+    webpMD5: 3ce775539f7840b7d48b2e96f76e147b
+  - animationID: filter_win
+    animationType: 1
+    androidType: 3
+    iOSType: 3
+    url: https://cdn.17app.co/2a5a6723-55e7-46cf-a0f0-b54866331e1f.zip
+    MD5: 012a09d23d294774b18a63097b56959a
+  - animationID: filter_lose
+    animationType: 1 # deprecated
+    androidType: 3
+    iOSType: 3
+    url: https://cdn.17app.co/965f43a0-9546-44c9-a516-844419b46e2d.zip
+    MD5: f80533f3c4b13d77a821a54155f7ca68
