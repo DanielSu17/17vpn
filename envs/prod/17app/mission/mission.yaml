@@ -30,6 +30,38 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: b8091630-d576-4ca2-a477-e8afa202f1d8
+    type: 9
+    lifeCycle: 1
+    targetAudience: 0
+    levelRange:
+      min: 21
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2004_tw_mask_bp
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    withReminder: true
+    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 17
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc_phone
+    i18nDescriptionParams:
+    goalValue: 1020
+    enableTimeRange:
+      - startTime: "2020-04-17 00:00:00 (GMT+0800)"
+        endTime: "2020-04-17 23:59:59 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
   - ID: bf493310-581b-4186-a604-a5e623e89c18
     type: 3
     lifeCycle: 1
