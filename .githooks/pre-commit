@@ -22,12 +22,20 @@ try:
 except NameError:
     pass
 
-modified = re.compile('^[MA]\s+envs\/(?P<env>(prod|sta|awssta|dev))\/(?P<filename>.*)$')
+modified = re.compile('^[MA]\s+envs\/(?P<env>(prod|sta|awssta|dev))\/(?P<app>(17app|wave))\/(?P<filename>.*)$')
 access_token = 'BAf9qBQPVG.yA<b(q2xBF5gLhc5cGp5QF3JMu0'
-api = { 'prod': 'https://api-dsa.17app.co',
+api = {
+    '17app': {
+        'prod': 'https://api-dsa.17app.co',
         'sta': 'https://sta-api.17app.co',
         'dev': 'https://sta-api.17app.co',
-        'awssta': 'https://17smart-sta.17app.co'}
+    },
+    'wave': {
+        'prod': 'https://api.wave.com.tw',
+        'sta': 'https://sta-api.wave.com.tw',
+        'dev': 'https://sta-api.wave.com.tw',
+    },
+}
 result, warning, syntax_error_count = 0, 0, 0
 
 
@@ -94,18 +102,23 @@ def main():
     for line in out.splitlines():
         match = modified.match(str(line))
         if match:
+            env = match.group('env')
+            app = match.group('app')
+            filename = match.group('filename')
             local_syntax_checker(
-                "envs/{}/{}".format(match.group('env'), match.group('filename')))
-            tmp_files.setdefault(match.group('env'), [])
-            tmp_files[match.group('env')].append(match.group('filename'))
+                "envs/{}/{}/{}".format(env, app, filename))
+            tmp_files.setdefault(env, {})
+            tmp_files[env].setdefault(app, [])
+            tmp_files[env][app].append(filename)
 
     if syntax_error_count == 0:
         print(highlight("\n>>>>>>>> [{}]:".format(
             "Remote Configs Checking"), 'green'))
-        for env, fs in tmp_files.items():
-            if len(fs) >= 1:
+        for env, apps in tmp_files.items():
+            if len(apps) >= 1:
                 print(highlight("# <<{}>> ".format(env.upper()), 'green'))
-            remote_check_configs(env, fs)
+            for app, fs in apps.items():
+                remote_check_configs(env, app, fs)
         skip_or_abort()
     else:
         result = 1
@@ -139,18 +152,18 @@ def local_syntax_checker(filepath):
             stream.close()
 
 
-def remote_check_configs(env, files_list):
+def remote_check_configs(env, app, files_list):
     headers = {'accesstoken': access_token}
     metadata = {}
     files = {}
-    for idx, file in enumerate(files_list):
+    for idx, f in enumerate(files_list):
         key = "file%s" % str(idx + 1)
-        files[key] = open("envs/%s/%s" % (env, file))
-        metadata[key] = {"path": file}
+        files[key] = open("envs/%s/%s/%s" % (env, app, f))
+        metadata[key] = {"path": "{}/{}".format(app, f)}
 
     rp_metadata = {"metadata": json.dumps(metadata)}
     response = requests.request("POST",
-                                "%s/api/v1/config/check" % api[env],
+                                "%s/api/v1/config/check" % api[app][env],
                                 headers=headers,
                                 data=rp_metadata,
                                 files=files)
