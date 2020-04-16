@@ -94,8 +94,17 @@ node('gcp') { timestamps { ansiColor('xterm') {
   stage('Command Execute') {
     sshagent(['3dc01492-01f6-4be5-8073-8de5f458ed1e']) {
       dir('gowork/src/configs') {
-        sh("go run tools/diffToSlack/diffToSlack.go")
-      }
+        // enable pyenv
+        virtualEnvDirectory = env.WORKSPACE + '/venv'
+        def enterPyEnvCmd = 'source ' + virtualEnvDirectory + '/bin/activate'
+        def setupRequirementsCmd = 'pip install -U pip && pip install -r tools/pip.require'
+        sh('virtualenv ' + virtualEnvDirectory)
+        retry(3) {
+          sh(enterPyEnvCmd + " && " + setupRequirementsCmd)
+        }
+
+        sh(enterPyEnvCmd + " && go run tools/diffToSlack/diffToSlack.go")
+      } // end of dir
     }
   } // end of stage
 } /* end of ansiColor */ } /* end of timestamps */ } /* end of node */
