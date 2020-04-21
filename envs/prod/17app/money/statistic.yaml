@@ -28,16 +28,14 @@ partitionPlan:
   switchInsertTimeMs: 1586844000000
 
 pointReceiverLogsPlan:
-  migrateState: 2 # 0: disable, 1: mysql, 2: mongo
-  startID: 420356349 # 1584358315 Monday, March 16, 2020 7:33:43 PM GMT+08:00
-  intervals: 5000
+  migrateState: 1 # 0: disable, 1: mysql, 2: mongo
   syncPlans:
     - name: latest
-      startID: 420356349 # 1584356836 Monday, March 16, 2020 7:07:16 PM GMT+08:00
-      intervals: 5000
+      startID: 439411292 # 1586756602, Monday, April 13, 2020 1:43:22 PM GMT+08:00
+      intervals: 30000
     - name: init
       startID: 0
-      intervals: 5000
+      intervals: 20000
 
 pointUsageLogsPlan:
   migrateState: 2 # 0: disable, 1: mysql, 2: mongo

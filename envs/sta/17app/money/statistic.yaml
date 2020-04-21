@@ -29,15 +29,10 @@ partitionPlan:
 
 pointReceiverLogsPlan:
   migrateState: 2 # 0: disable, 1: mysql, 2: mongo
-  startID: 85620055 # 1584356836 Monday, March 16, 2020 7:07:16 PM GMT+08:00
-  intervals: 5000
   syncPlans:
     - name: latest
       startID: 85620055 # 1584356836 Monday, March 16, 2020 7:07:16 PM GMT+08:00
-      intervals: 5000
-    - name: init
-      startID: 0
-      intervals: 5000
+      intervals: 100000
 
 pointUsageLogsPlan:
   migrateState: 2
