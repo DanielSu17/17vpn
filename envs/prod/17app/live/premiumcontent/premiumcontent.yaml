@@ -8,12 +8,14 @@ supportedVersion:
 enable: false
 
 pullRateLimit:
-  enable: true
+  enable: false
   period: 300
   threshold: 60
   slackThreshold: 10
   slackChannel: "dev-pullurl-alert"
   pullUrlTTL: 30
+  deviceLimit: 5
+  slackDeviceLimit: 3
 
 # for skyeye ...etc.
 globalWhiteList:
