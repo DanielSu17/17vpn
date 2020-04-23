@@ -4,6 +4,7 @@
 groups:
   backend:
     alfred:          "go"
+    bbrich:          "go"
     revprox:         "go"
     goapi:           "go"
     cronjob:         "go"
@@ -30,6 +31,7 @@ groups:
   event:
     event-server:    "go"
     event-web:       "webapp"
+
 settings:
   spinnaker:
     k8ssta:
@@ -59,8 +61,10 @@ settings:
       endpoint: 'k8ssta-deployment-nodejs/buildWithParameters?token=ZQuygxVpytYgnanavuVkEdQsccQKr36RyLWNhgjY'
     k8sprod:
       endpoint: 'k8sprod-deployment-nodejs/buildWithParameters?token=MdfMrjx5egcQKAQMdEHP92hNACQvPemnvTWRT3fe'
+
 17app:
     - "goapi"
+    - "bbrich"
     - "revprox"
     - "worker"
     - "data-middleware"
