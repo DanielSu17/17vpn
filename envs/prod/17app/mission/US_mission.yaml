@@ -30,6 +30,38 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: e67206ee-38b5-4602-882f-1bc3fe281d3c
+    type: 10
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: gift_iap_mission_wish_pool_us
+      amount: 2
+      expireTimeSecs: 604800
+    requirePhoneBinding: false
+    withReminder: false
+    i18nTitle: baggage_mission_first_time_IAP_point_event_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 10000
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_first_time_IAP_point_us_event_desc
+    i18nDescriptionParams:
+    goalValue: 10000
+    enableTimeRange:
+      - startTime: "2020-04-25 03:00:00 (GMT+0800)"
+        endTime: "2020-04-26 09:00:00 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
   - ID: 3754886d-40cf-45b8-bbe7-70f9b421e8c5
     type: 10
     lifeCycle: 0
