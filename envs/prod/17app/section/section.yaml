@@ -11,7 +11,7 @@
 
 sections:
   - id: TopBanner # Banner + super promote
-    name: 
+    name:
       key: tab_hot_2019q4_topbanner
     enable: true
     style: 1
@@ -26,16 +26,24 @@ sections:
     style: 2
     more: false
   - id: Suggestion # 猜你可能喜歡
-    name: 
+    name:
       key: tab_hot_2019q4_follow_suggestion
     enable: true
     dedup: true
     style: 6
     minGrids: 5
     more: true
+  - id: Latest # 新人
+    name:
+      key: tab_hot_2019q4_newstreamer
+    enable: true
+    dedup: false #重複
+    minGrids: 5
+    style: 3
+    more: true
   - id: Label # 新主播
     labelID: new_streamer
-    name: 
+    name:
       key: streamer_label_new_streamer
     #enable: true
     dedup: false
@@ -44,7 +52,7 @@ sections:
     more: true
   - id: Label # 台語主播
     labelID: taiwanese_speaking_streamer
-    name: 
+    name:
       key: streamer_label_taiwanese_speaking_streamer
     #enable: true
     dedup: false
@@ -61,7 +69,7 @@ sections:
     more: true
   - id: Label # 網路名人
     labelID: online_kol
-    name: 
+    name:
       key: streamer_label_online_kol
     enable: false
     dedup: true
@@ -70,7 +78,7 @@ sections:
     more: true
   - id: Label # 彈唱 Live House
     labelID: play_and_sing_special_plan
-    name: 
+    name:
       key: streamer_label_play_and_sing_special_plan
     #enable: true
     dedup: false
@@ -79,7 +87,7 @@ sections:
     more: true
   - id: Label # 療癒寵物Party
     labelID: pets_special_plan
-    name: 
+    name:
       key: streamer_label_pets_special_plan
   #  enable: true
     dedup: false
@@ -88,7 +96,7 @@ sections:
     more: true
   - id: Label # 校園主播曝光計畫
     labelID: campus_special_plan
-    name: 
+    name:
       key: streamer_label_campus_special_plan
     enable: false
     dedup: false
@@ -99,7 +107,7 @@ sections:
 
   - id: Label #民視鳳凰直播星
     labelID: formosa_tv
-    name: 
+    name:
       key: streamer_label_formosa_tv
     enable: false
     dedup: false
@@ -117,7 +125,7 @@ sections:
 
  # - id: Label # 時事話題
   #  labelID: pundit
-  #  name: 
+  #  name:
   #    key: tab_hot_2019q4_topic
    # enable: true
    # dedup: true
@@ -126,23 +134,23 @@ sections:
    # more: true
 
   - id: Show # 熱播節目
-    name: 
+    name:
       key: tab_hot_2019q4_program
-    enable: true    
+    enable: true
     dedup: false
     minGrids: 5
     style: 4
     more: false
 
   - id: CrazyZoo # 荒唐動物園(遊戲類)
-    name: 
+    name:
       key: tab_hot_2019q4_crazy_zoo
     enable: true
     minGrids: 5
     style: 3
     more: true
   - id: TodayHotTopic # 投票
-    name: 
+    name:
       key: tab_hot_2019q4_vote
     enable: true
     minGrids: 4
@@ -178,7 +186,7 @@ sections:
     style: 3
     more: true
   - id: RedEnvelope # 紅包
-    name: 
+    name:
       key: tab_hot_2019q4_redenvelop
     enable: true
     minGrids: 5
@@ -195,7 +203,7 @@ sections:
     more: true
   - id: Label # 彈唱
     labelID: acoustic
-    name: 
+    name:
       key: streamer_label_acoustic
     enable: false
     dedup: false
@@ -227,7 +235,7 @@ officialRecommendedStreamers:
   - de1d9848-121b-4bb6-a1f3-a5de35290d5d # 婁峻碩SHOU
   - 1bd499ff-34e1-4530-91ce-a9f523afac0c # DavidsAngels_小賴兒
   - 5b30705a-0070-4262-af4f-ab79c2fb32b2 # 廖泰翔
-  - a144f481-aab2-4500-a72f-fe9fda07a2be # 守夜人nightkeepers好    
+  - a144f481-aab2-4500-a72f-fe9fda07a2be # 守夜人nightkeepers好
   - 452b29bc-99a5-4977-8e2a-68685e3f8c02 # 盧學叡
   - a9834349-2d9f-4b4a-b839-16e1febd1689 # 陳思宇
   - cea88f37-28c7-4f79-9d9c-732480a8b8e8 # 吳崢
@@ -249,7 +257,7 @@ officialRecommendedStreamers:
   - 00e4a6bd-e106-4f5e-be67-0279705b4305 # 于美人
   - 92c0e435-b7b3-453b-abf5-1f971db3e4ff # 李承曄
   - 2242e3b8-2ab9-4d7f-b0d1-f4743d31a9e5 # 台灣鯛民
-  - dd80bb41-5657-46ee-8536-294f5438635f #哈啾INU醬 
+  - dd80bb41-5657-46ee-8536-294f5438635f #哈啾INU醬
   - 7512f490-adc6-4cd4-bfe5-8a86b235a94c #羅巧倫
   - 179b9ca6-0d29-453c-b0ba-69278c8535b8 #林則希
   - d6c42af6-db74-403b-bc69-3990502e541b #蔡力允
@@ -267,7 +275,7 @@ officialRecommendedStreamers:
   - 502d5839-59e8-4f84-9416-edbc4c3192d8	#依倫ellen
   - f39ad4e1-ff13-4672-bc9d-c1f590590abb	#均_均Jiun
   - 62fe6639-ac3d-45d4-85ff-33996d7290f0	#江俊翰ricky
-  - e829ce9b-2915-4a82-b5d5-49ceec6866bd	#yuanyuan.alexia.tang 
+  - e829ce9b-2915-4a82-b5d5-49ceec6866bd	#yuanyuan.alexia.tang
   - 7831f1b0-7363-4045-8b88-8287199c14d4 #錢君仲
   - 2b68f94d-1af1-4e2a-b852-cf95dff645b9 #陳妍安rebecca
   - 5942c1cd-24f1-4601-89f2-ebf24365ccaa #簡懿佳:two_hearts:1+
@@ -275,13 +283,13 @@ officialRecommendedStreamers:
   - 7d9bb6fb-765f-40ff-9cdf-1f3e55787e71 #溜溜球達人楊元慶
   - aff311f8-c827-499a-8aaa-0f5af5c3670f #車冠德A.W.C.
   - 8d969b22-c288-4fe6-b8c9-bc59a402e53c #腦外科醫生安娜:brain:
-  - 8f604ec9-9d36-4c35-a18c-6cc4e633afd6 #吳志揚 
+  - 8f604ec9-9d36-4c35-a18c-6cc4e633afd6 #吳志揚
   - 03fc4690-a7a5-48ef-6c11-1125b40211ca #療癒女聲Angel楊淨宇
   - d8e3c8d1-e4a2-455f-ac10-f3dc2fb43da4 #賴芊合Salem
   - 54ef6c15-e23e-4e92-9267-fcbeb8d3847f #凹凹～韓忠羽:dog:
   - ee18e7e1-0d79-4b9c-854e-09a97edcfe6d #陳盈燕Lucia:unicorn_face:️
   - c6f858d5-34ae-4bf1-a93f-8b9f968e29d2 #蛋頭BG8LOCC
-  - 5c34b708-a3a3-4f4b-a4eb-1d9c5228ea46 #VigozChen  
+  - 5c34b708-a3a3-4f4b-a4eb-1d9c5228ea46 #VigozChen
   - f56d393e-c2e9-4ba7-8193-56ed7eebc332 #花響鼓樂團
   - 6ad56889-70a0-4e16-9ed5-59d82c7df896 #成亮澄harry
   - b3efca5c-e691-4f4b-9fe1-5876753a4e5d #紳士痞子xJNIF
