@@ -30,6 +30,38 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: f3627fa4-dd57-4a99-8a01-1a248ad58beb #holden話題背包任務 看播17分鐘
+    type: 9
+    lifeCycle: 1
+    targetAudience: 0
+    levelRange:
+      min: 2
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: topic_2004_social_distance
+      amount: 5
+      expireTimeSecs: 172800
+    requirePhoneBinding: false
+    withReminder: true
+    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 17
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc_phone
+    i18nDescriptionParams:
+    goalValue: 1020
+    enableTimeRange:
+      - startTime: "2020-04-25 00:00:00 (GMT+0800)"
+        endTime: "2020-04-26 23:59:59 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
   - ID: a9c0ded9-af57-41b1-90ac-8035bce6071e
     type: 9
     lifeCycle: 1
