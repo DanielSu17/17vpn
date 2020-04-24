@@ -30,6 +30,54 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: f1456520-4546-4ef7-8ac8-d51d60e96489
+    type: 3
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 21
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2005_tw_monthly_bp
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: true
+    withReminder: false
+    i18nTitle: baggage_mission_send_specific_gifts_reward_title_four
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 3
+      - needMap: false
+        mapOption: 2
+        value: 2005_tw_monthly_bag_xs
+      - needMap: false
+        mapOption: 2
+        value: 2005_tw_monthly_bag_s
+      - needMap: false
+        mapOption: 2
+        value: 2005_tw_monthly_bag_m
+      - needMap: false
+        mapOption: 2
+        value: 2005_tw_monthly_bag_l
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
+    i18nDescriptionParams:
+    goalValue: 3
+    enableTimeRange:
+      - startTime: "2020-05-01 00:00:00 (GMT+0800)"
+        endTime: "2020-05-31 23:59:59 (GMT+0800)"
+    refIDs:
+      - 2005_tw_monthly_bag_xs
+      - 2005_tw_monthly_bag_s
+      - 2005_tw_monthly_bag_m
+      - 2005_tw_monthly_bag_l
+    platforms:
+      - android
+      - ios
+
   - ID: b8091630-d576-4ca2-a477-e8afa202f1d8
     type: 9
     lifeCycle: 1
