@@ -30,6 +30,38 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: a9c0ded9-af57-41b1-90ac-8035bce6071e
+    type: 9
+    lifeCycle: 1
+    targetAudience: 0
+    levelRange:
+      min: 21
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2005_tw_city_bp
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    withReminder: true
+    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 30
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc_phone
+    i18nDescriptionParams:
+    goalValue: 1800
+    enableTimeRange:
+      - startTime: "2020-05-22 18:00:00 (GMT+0800)"
+        endTime: "2020-06-20 21:00:00 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
   - ID: f1456520-4546-4ef7-8ac8-d51d60e96489
     type: 3
     lifeCycle: 0
