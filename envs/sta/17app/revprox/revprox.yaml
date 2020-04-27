@@ -25,12 +25,17 @@ allowed_origins:
  - "^http://localhost(:\\d+)?$"
 conf:
  - url_key: "go_trade_url"
+   weight: 100
    white_list:
-     gift: "gift/giftbox,gift/goods,gift/internal,gift/sync,gift/levelUp"
+     apiv1: "gift/giftbox,gift/goods,gift/internal,gift/sync,gift/levelUp"
      redenvelopes: "redenvelopes"
      sportscar: "sportscar"
      monster: "monsters"
      baggage: "baggage"
+     # legacy
+     gift: "getLiveStreamGiftLeaderboard,\
+            getLiveStreamAllGifts,\
+            getReceivedGiftLog"
  - url_key: "go_url"
    white_list:
      liveStreams: "publishLiveStream,\
