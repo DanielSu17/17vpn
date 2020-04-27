@@ -24,6 +24,13 @@ allowed_origins:
  - "^http://17\\.local(:\\d+)?$"
  - "^http://localhost(:\\d+)?$"
 conf:
+ - url_key: "go_trade_url"
+   white_list:
+     gift: "gift/giftbox,gift/goods,gift/internal,gift/sync,gift/levelUp"
+     redenvelopes: "redenvelopes"
+     sportscar: "sportscar"
+     monster: "monsters"
+     baggage: "baggage"
  - url_key: "go_url"
    white_list:
      liveStreams: "publishLiveStream,\
@@ -79,12 +86,6 @@ conf:
             getPayments,uploadPhoneNumbers,uploadFacebookFriends,\
             followAllAction,updateLiveStreamInfo,\
             getPointProductList,getPostByHashTag,readNotif,updateOpenID"
- - url_key: "go_trade_url"
-   white_list:
-     gift: "gift"
-     redenvelopes: "redenvelopes"
-     sportscar: "sportscar"
-     monster: "monsters"
  - url_key: "go_lives_url"
    white_list:
      # for api
