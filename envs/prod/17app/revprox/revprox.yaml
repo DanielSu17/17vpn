@@ -31,6 +31,18 @@ allowed_origins:
  - "^http://localhost(:\\d+)?$"
  - "^http://usskyeye\\.s3-website-us-west-2\\.amazonaws\\.com$" # for US skyeye
 conf:
+ - url_key: "go_trade_url"
+   weight: 100
+   white_list:
+     apiv1: "gift/giftbox,gift/goods,gift/internal,gift/sync,gift/levelUp,gift/recent,gifted-producers"
+     redenvelopes: "redenvelopes"
+     sportscar: "sportscar"
+     monster: "monsters"
+     baggage: "baggage"
+     # legacy
+     gift: "getLiveStreamGiftLeaderboard,\
+            getLiveStreamAllGifts,\
+            getReceivedGiftLog"
  - url_key: "go_url"
    white_list:
      liveStreams: "publishLiveStream,\
@@ -83,21 +95,6 @@ conf:
             getPayments,uploadPhoneNumbers,uploadFacebookFriends,\
             followAllAction,updateLiveStreamInfo,\
             getPointProductList,getPostByHashTag,readNotif,updateOpenID"
- - url_key: "go_trade_url"
-   white_list:
-     redenvelopes: "redenvelopes"
-     sportscar: "sportscar"
-     monster: "monsters"
- - url_key: "go_trade_url"
-   weight: 100  # (0, 100]
-   white_list:
-     baggage: "baggage"
-     # v1 api
-     apiv1: "gift"
-     # for legacy api
-     gift: "getLiveStreamGiftLeaderboard,\
-            getLiveStreamAllGifts,\
-            getReceivedGiftLog"
  - url_key: "go_lives_url"
    weight: 100  # (0, 100]
    white_list:
