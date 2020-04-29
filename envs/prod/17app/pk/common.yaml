@@ -10,8 +10,8 @@ consecutiveRejectionPeriod: 3600 #(累計時間) 這表示 "1" 小時內有超�
 consecutiveRejectionCount: 3 # 拒絕 "3" 次後，暫時不接受邀請
 consecutiveRejectionNoDisturbSecond: 1800 #(不能被配對的時間) 連續拒絕3次後，"1800"秒(半小時)內不會參與任何配對
 rejectionUnPairSeconds: 60 # 拒絕後幾秒內不會被同一個人配對到
-minAndroidVersion: "2.8.1"
-minIOSVersion: "3.95.0" # 測試用，待修改
+minAndroidVersion: "2.10.0"
+minIOSVersion: "3.97.0"
 
 rules:
   - type: 1
@@ -84,13 +84,11 @@ animationLoader:
     webpUrl: https://cdn.17app.co/bc83fc7e-8a68-4359-81d5-4cd0bbf46153-q90-s1.webp
     webpMD5: 3ce775539f7840b7d48b2e96f76e147b
   - animationID: filter_win
-    animationType: 1
     androidType: 3
     iOSType: 3
-    url: https://cdn.17app.co/2a5a6723-55e7-46cf-a0f0-b54866331e1f.zip
+    url: https://cdn.17app.co/b8844ad9-2c7b-4da9-a546-4c6fa887acfc.zip
     MD5: 012a09d23d294774b18a63097b56959a
   - animationID: filter_lose
-    animationType: 1 # deprecated
     androidType: 3
     iOSType: 3
     url: https://cdn.17app.co/965f43a0-9546-44c9-a516-844419b46e2d.zip
