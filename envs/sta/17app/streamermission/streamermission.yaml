@@ -8,25 +8,9 @@
 # | --- | --- |
 # | Daily | 0 |
 
-# enable: true
-# whiteList: []
-# missions:
-
-# tagInfos:
-#   0: # Daily
-#     token:
-#       key: "baggage_mission_daily_tag"
-#     color: "#f5487d"
-
-# remind:
-#   remindSecs: 60
-#   toastMsg:
-#     key:
-#   toastSecs: 10
-
 enable: true
 whitelist:
-- "6d097b16-b650-4848-9e72-030e8bf37776" # vava2
+  - "6d097b16-b650-4848-9e72-030e8bf37776" # vava2
 
 i18nMissionEligibleDescription: streamer_mission_out_of_condition
 i18nCompleteComment: streamer_mission_button_go_stream
@@ -75,8 +59,8 @@ missions: # mission list
     i18nDescription: streamer_mission_stream_subtitle
     i18nDescriptionParams:
     i18nDisableDescription:
-    goalValue: 30
-    withReminder: true
+      goalValue: 30
+      withReminder: true
   - id: 88066d3c-8a0b-11ea-bc55-0242ac130003
     type: 5 # CallToActionType_GO_POKE
     lifeCycle: 0
@@ -97,8 +81,8 @@ missions: # mission list
     i18nDescription: streamer_mission_poke_subtitle
     i18nDescriptionParams:
     i18nDisableDescription:
-    goalValue: 5
-    withReminder: true
+      goalValue: 5
+      withReminder: true
   - id: 88066d3c-8a0b-11ea-bc55-0242ac130003
     type: 1 # CallToActionType_GO_POKE
     lifeCycle: 0
@@ -119,5 +103,5 @@ missions: # mission list
     i18nDescription: streamer_mission_watch_subtitle
     i18nDescriptionParams:
     i18nDisableDescription:
-    goalValue: 60
-    withReminder: true
+      goalValue: 60
+      withReminder: true
