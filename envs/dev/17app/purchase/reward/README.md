@@ -75,6 +75,7 @@ rewards:
       * execUserRegion: 建單者的區域限制的規則
         * include/exclude(`array of string`): 包含/排除的區域
       * firstPurchase: 首次購買的規則
+        * isLegacyRequirement(`bool`): 使用舊的首購規則判斷，舊的規則是使用Mongo User的`lastPurchasePointTime`欄位判斷
         * timeRange: 判斷首次購買的時間範圍，若在這段時間範圍內曾購買則不算首購
           * startTime/endTime(`RFC3339`): 開始與結束時間
         * sellingChannels: 判斷首次購買的渠道
