@@ -29,24 +29,25 @@ remind:
     key:
   toastSecs: 10
 
-# completeAnimation:
-#   url: <string>
-#   webpUrl: <string>
-#   animationID: <string>
-#   MD5: <string>
-#   webpMD5: <string>
-#   androidType: <int32>
-#   iOSType: <int32>
+completeAnimation:
+  animationID: streamer_mission_reward
+  url: https://cdn.17app.co/fd35e152-ad42-4daf-ba54-10c31cd005b1.zip
+  MD5: 5304cf6d05e387a64bbc0786a2aa1e70
+  webpUrl: https://cdn.17app.co/09118ce9-7c46-4c70-8e26-6b31fd77dbcc-q90-s1.webp
+  webpMD5: f48ab05266acbed79811aa597663f7d4
+  androidType: 0 # default
+  iOSType: 1 # webp
 
 missions: # mission list
   - id: dd4dbf3a-0641-44d1-a8e5-85ab0e080e2d
-    type: 4 # CallToActionType_GO_BROADCAST
+    type: 14 # Type_STREAMER_LIVE_X_SECONDS
     lifeCycle: 0
     levelRange:
       min: 1
-      max: 20
+      max: 999
     reward:
       type: 5 # RewardType_ACHIEVEMENT
+      iconURL: https://cdn.17app.co/cb1ad5ea-986e-4d02-ac76-9d1e9a06c099.png
       achievementValue: 8000
       i18nDescription: streamer_mission_score
       i18nDescriptionParams:
@@ -62,13 +63,14 @@ missions: # mission list
     goalValue: 30
     withReminder: true
   - id: 88066d3c-8a0b-11ea-bc55-0242ac130003
-    type: 5 # CallToActionType_GO_POKE
+    type: 15 # Type_STREAMER_POKE_X_TIMES
     lifeCycle: 0
     levelRange:
       min: 1
-      max: 20
+      max: 999
     reward:
       type: 5 # RewardType_ACHIEVEMENT
+      iconURL: https://cdn.17app.co/cb1ad5ea-986e-4d02-ac76-9d1e9a06c099.png
       achievementValue: 1500
       i18nDescription: streamer_mission_score
       i18nDescriptionParams:
@@ -84,13 +86,14 @@ missions: # mission list
     goalValue: 5
     withReminder: true
   - id: b7878b9c-8a8b-11ea-bc55-0242ac130003
-    type: 1 # CallToActionType_GO_POKE
+    type: 9 # Type_VIEW_STREAM_X_SECONDS
     lifeCycle: 0
     levelRange:
       min: 1
-      max: 20
+      max: 999
     reward:
       type: 5 # RewardType_ACHIEVEMENT
+      iconURL: https://cdn.17app.co/cb1ad5ea-986e-4d02-ac76-9d1e9a06c099.png
       achievementValue: 1500
       i18nDescription: streamer_mission_score
       i18nDescriptionParams:
