@@ -29,14 +29,16 @@
     minReplicas: 6
 
 # For TW Push Notification
-# Ref: https://17media.slack.com/archives/C466YU363/p1588236135034500
-- startTime: "2020-05-01 22:50:00 (GMT+0800)"
-  endTime: "2020-05-01 23:20:00 (GMT+0800)"
+# Ref: https://17media.slack.com/archives/C466YU363/p1588912833206200
+- startTime: "2020-05-10 19:20:00 (GMT+0800)"
+  endTime: "2020-05-10 20:20:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
-    minReplicas: 130
+    minReplicas: 85
   - name: k8sprod-golives-main
     minReplicas: 35
+  - name: k8sprod-gocells-main
+    minReplicas: 80
   - name: k8sprod-gotrade-main
     minReplicas: 6
 
