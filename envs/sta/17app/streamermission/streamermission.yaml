@@ -1,8 +1,10 @@
 # | type | Value |
 # | --- | --- |
+# | Comment_In_Livestream | 5 |
 # | View_Stream_X_Seconds | 9 |
 # | Streamer_Live_X_Seconds| 14 |
 # | Streamer_Poke_X_Times | 15 |
+
 
 # | lifeCycle | Value |
 # | --- | --- |
@@ -57,10 +59,10 @@ missions: # mission list
     lifeCycle: 0
     levelRange:
       min: 1
-      max: 999
+      max: 35
     reward:
       type: 5 # RewardType_ACHIEVEMENT
-      iconURL: https://cdn.17app.co/cb1ad5ea-986e-4d02-ac76-9d1e9a06c099.png
+      iconURL: https://cdn.17app.co/13267fcd-cfa5-4871-a6df-71d057d18131.png
       achievementValue: 8000
       i18nDescription: streamer_mission_score
       i18nDescriptionParams:
@@ -73,22 +75,22 @@ missions: # mission list
       commentColorCode: "#FFFFFF"
     i18nTitle: streamer_mission_stream_title
     i18nTitleParams:
-      - value: "30"
+      - value: "10" #單位為分鐘，顯示到標題
         needMap: false
     i18nDescription: streamer_mission_stream_subtitle
     i18nDescriptionParams:
     i18nDisableDescription:
-    goalValue: 30
+    goalValue: 600 #單位為秒，反映進度條
     withReminder: true
   - id: 88066d3c-8a0b-11ea-bc55-0242ac130003
     type: 15 # Type_STREAMER_POKE_X_TIMES
     lifeCycle: 0
     levelRange:
       min: 1
-      max: 999
+      max: 35
     reward:
       type: 5 # RewardType_ACHIEVEMENT
-      iconURL: https://cdn.17app.co/cb1ad5ea-986e-4d02-ac76-9d1e9a06c099.png
+      iconURL: https://cdn.17app.co/5133f3f2-fbd3-4d6d-b12a-d448c1d43ba3.png
       achievementValue: 1500
       i18nDescription: streamer_mission_score
       i18nDescriptionParams:
@@ -96,24 +98,24 @@ missions: # mission list
           needMap: false
       i18nComment: streamer_mission_score_comment
       i18nCommentParam:
-        - value: "2000"
+        - value: "1000"
           needMap: false
       commentColorCode: "#FFFFFF"
     i18nTitle: streamer_mission_poke_title
     i18nTitleParams:
-      - value: "5"
+      - value: "10"
         needMap: false
     i18nDescription: streamer_mission_poke_subtitle
     i18nDescriptionParams:
     i18nDisableDescription:
-    goalValue: 5
+    goalValue: 10
     withReminder: true
   - id: b7878b9c-8a8b-11ea-bc55-0242ac130003
     type: 9 # Type_VIEW_STREAM_X_SECONDS
     lifeCycle: 0
     levelRange:
       min: 1
-      max: 999
+      max: 35
     reward:
       type: 5 # RewardType_ACHIEVEMENT
       iconURL: https://cdn.17app.co/cb1ad5ea-986e-4d02-ac76-9d1e9a06c099.png
@@ -129,19 +131,19 @@ missions: # mission list
       commentColorCode: "#FFFFFF"
     i18nTitle: streamer_mission_watch_title
     i18nTitleParams:
-      - value: "60"
+      - value: "5"
         needMap: false
     i18nDescription: streamer_mission_watch_subtitle
     i18nDescriptionParams:
     i18nDisableDescription: streamer_mission_cannot_complete_now
-    goalValue: 60
+    goalValue: 300
     withReminder: true
   - id: f4f376c6-8db0-11ea-bc55-0242ac130003
     type: 5 # Type_COMMENT_IN_LIVESTREAM
     lifeCycle: 0
     levelRange:
       min: 1
-      max: 999
+      max: 35
     reward:
       type: 5 # RewardType_ACHIEVEMENT
       iconURL: https://cdn.17app.co/cb1ad5ea-986e-4d02-ac76-9d1e9a06c099.png
@@ -157,19 +159,19 @@ missions: # mission list
       commentColorCode: "#FFFFFF"
     i18nTitle: streamer_mission_comment_title
     i18nTitleParams:
-      - value: "10"
+      - value: "5"
         needMap: false
     i18nDescription: streamer_mission_comment_subtitle
     i18nDescriptionParams:
     i18nDisableDescription: streamer_mission_cannot_complete_now
-    goalValue: 10
+    goalValue: 5
     withReminder: true
   - id: 17f489d2-8e72-11ea-bc55-0242ac130003
     type: 14 # Type_STREAMER_LIVE_X_SECONDS
     lifeCycle: 0
     levelRange:
       min: 1
-      max: 999
+      max: 35
     reward:
       type: 5 # RewardType_ACHIEVEMENT
       iconURL: https://cdn.17app.co/cb1ad5ea-986e-4d02-ac76-9d1e9a06c099.png
