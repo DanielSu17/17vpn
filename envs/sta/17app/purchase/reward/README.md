@@ -15,6 +15,10 @@ rewards:
                 - 1
                 - 2
           - merchandiseID: "mockMerchandiseID"
+            sellingChannels:
+              include:
+                - 1
+                - 2
             firstPurchase:
               timeRange:
                 startTime: "2018-12-24T15:00:00+08:00"
@@ -25,15 +29,27 @@ rewards:
           - registerDayRange:
               fromDayN: 0
               toDayN: 13
+            sellingChannels:
+              include:
+                - 1
+                - 2
       - reward:
           loyaltyPoints: 5
         requirements:
           - merchandiseID: "mockMerchandiseID1"
+            sellingChannels:
+              include:
+                - 1
+                - 2
       - reward:
           premiumBaby:
             days: 3
         requirements:
           - merchandiseID: "mockMerchandiseID2"
+            sellingChannels:
+              include:
+                - 1
+                - 2
       - reward:
           bonusRatio:
             priceRatio: 0.3
@@ -46,6 +62,12 @@ rewards:
             abtest:
               name: "abtest"
               groupID: "b"
+            sellingChannels:
+              include:
+                - 1
+                - 2
+            legacyFirstPurchase:
+              enableTimeRange: false
   - onlyAvailableInSameRegion: true
     rules:
     - reward:
@@ -53,6 +75,14 @@ rewards:
       requirements:
         - secretIAP:
             ID: "mockID"
+          sellingChannels:
+            include:
+              - 1
+              - 2
+          legacyFirstPurchase:
+            enableTimeRange: true
+            timeRange:
+              startTime: "2018-12-24T15:00:00+08:00"
 ```
 
 ## 規則
@@ -75,12 +105,15 @@ rewards:
       * execUserRegion: 建單者的區域限制的規則
         * include/exclude(`array of string`): 包含/排除的區域
       * firstPurchase: 首次購買的規則
-        * isLegacyRequirement(`bool`): 使用舊的首購規則判斷，舊的規則是使用Mongo User的`lastPurchasePointTime`欄位判斷
         * timeRange: 判斷首次購買的時間範圍，若在這段時間範圍內曾購買則不算首購
           * startTime/endTime(`RFC3339`): 開始與結束時間
         * sellingChannels: 判斷首次購買的渠道
           * include/exclude(`array of number`): 包含/排除的渠道
         * merchandiseID(`string`): 指定判斷首次購買的merchandiseID
+      * legacyFirstPurchase: 舊的首次購買的規則，使用Mongo User的`lastPurchasePointTime`欄位判斷
+        * enableTimeRange(`bool`): 設為`true`代表使用時間範圍來判斷是否有首購資格，`false`則代表只判斷用戶是否曾經購買過，若曾經購買過則不算首購
+        * timeRange: 判斷首次購買的時間範圍，若在這段時間範圍內曾購買則不算首購
+          * startTime/endTime(`RFC3339`): 開始與結束時間
       * registerDayRange: 用戶註冊的day range
         * fromDayN/toDayN(`number`): 註冊後的N day範圍
       * secretIAP:
@@ -93,3 +126,4 @@ rewards:
 
 1. 不需要的條件請直接不填key
 2. `requirements`是`array of struct`，單一個struct裡定義的所有條件需要都符合，才能算是符合條件，只要array裡任一個struct符合條件就可以拿到獎勵
+3. 目前`requirements`的`sellingChannels`是一個重要的條件，所以在設定獎勵條件的時候是必填
