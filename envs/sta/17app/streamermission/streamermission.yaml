@@ -559,4 +559,34 @@ missions: # mission list
     i18nDisableDescription:
     goalValue: 1
     withReminder: true
+    
+  - id: 1a4de779-3f1c-4b6f-a20c-a659d43d850e
+    type: 14 # Type_STREAMER_LIVE_X_SECONDS
+    lifeCycle: 0
+    levelRange:
+      min: 60
+      max: 105
+    reward:
+      type: 5 # RewardType_ACHIEVEMENT
+      iconURL: https://cdn.17app.co/1a623a45-270b-4709-b45f-f6dba20b7c37.png
+      achievementValue: 1000
+      i18nDescription: streamer_mission_score
+      i18nDescriptionParams:
+        - value: "1000"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: "1000"
+          needMap: false
+      commentColorCode: "#FFFFFF"
+    i18nTitle: streamer_mission_stream_title
+    i18nTitleParams:
+      - value: "1"
+        needMap: false
+    i18nDescription: streamer_mission_stream_subtitle
+    i18nDescriptionParams:
+    i18nDisableDescription:
+    goalValue: 1
+    withReminder: true
+
 
