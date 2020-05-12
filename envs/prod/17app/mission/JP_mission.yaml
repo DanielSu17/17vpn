@@ -993,6 +993,42 @@ missions:
       - android
       - ios
 
+#プロポーズ大作戦
+  - ID: 69836d33-9695-4b5f-80ad-f28c0016fac5
+    type: 9
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 10
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2005_jp_propose_bp
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    withReminder: false
+    i18nTitle: baggage_mission_kabe_watching_reward_jp_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 1
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_stream_viewing_propose_jp
+    i18nDescriptionParams:
+      - needMap: false
+        mapOption: 0
+        value: 1
+    goalValue: 1020
+    enableTimeRange:
+      - startTime: "2020-05-12 19:00:00 (GMT+0900)"
+        endTime: "2020-05-17 23:59:59 (GMT+0900)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
 #tagInfos
 tagInfos:
   0: # Daily
