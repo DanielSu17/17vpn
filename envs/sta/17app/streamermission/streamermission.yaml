@@ -93,6 +93,7 @@ missions: # mission list
     i18nDisableDescription:
     goalValue: 600 #單位為秒，反映進度條
     withReminder: true
+    
   - id: 88066d3c-8a0b-11ea-bc55-0242ac130003
     type: 15 # Type_STREAMER_POKE_X_TIMES
     lifeCycle: 0
@@ -121,6 +122,36 @@ missions: # mission list
     i18nDisableDescription:
     goalValue: 10
     withReminder: true
+    
+  - id: d3965640-6acb-4de7-ab29-8597087640ec
+    type: 15 # Type_STREAMER_POKE_X_TIMES
+    lifeCycle: 0
+    levelRange:
+      min: 1
+      max: 35
+    reward:
+      type: 5 # RewardType_ACHIEVEMENT
+      iconURL: https://cdn.17app.co/1cfc1cdb-a9ad-4820-8781-effe238c6e10.png
+      achievementValue: 1500
+      i18nDescription: streamer_mission_score
+      i18nDescriptionParams:
+        - value: "2000"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: "1000"
+          needMap: false
+      commentColorCode: "#FFFFFF"
+    i18nTitle: streamer_mission_poke_title
+    i18nTitleParams:
+      - value: "10"
+        needMap: false
+    i18nDescription: streamer_mission_poke_subtitle
+    i18nDescriptionParams:
+    i18nDisableDescription:
+    goalValue: 10
+    withReminder: true
+    
   - id: 396fffa2-e8ba-4418-acae-25fa812edf47
     type: 15 # Type_STREAMER_POKE_X_TIMES
     lifeCycle: 0
@@ -149,6 +180,7 @@ missions: # mission list
     i18nDisableDescription:
     goalValue: 10
     withReminder: true
+    
   - id: b7878b9c-8a8b-11ea-bc55-0242ac130003
     type: 9 # Type_VIEW_STREAM_X_SECONDS
     lifeCycle: 0
@@ -177,6 +209,36 @@ missions: # mission list
     i18nDisableDescription: streamer_mission_cannot_complete_now
     goalValue: 300
     withReminder: true
+    
+  - id: c8e50010-8614-4bd0-a53a-989c690796a5
+    type: 9 # Type_VIEW_STREAM_X_SECONDS
+    lifeCycle: 0
+    levelRange:
+      min: 1
+      max: 35
+    reward:
+      type: 5 # RewardType_ACHIEVEMENT
+      iconURL: https://cdn.17app.co/dba71916-c38f-45a9-aafb-baca90e91938.png
+      achievementValue: 1500
+      i18nDescription: streamer_mission_score
+      i18nDescriptionParams:
+        - value: "1500"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: "1500"
+          needMap: false
+      commentColorCode: "#FFFFFF"
+    i18nTitle: streamer_mission_watch_title
+    i18nTitleParams:
+      - value: "5"
+        needMap: false
+    i18nDescription: streamer_mission_watch_subtitle
+    i18nDescriptionParams:
+    i18nDisableDescription: streamer_mission_cannot_complete_now
+    goalValue: 300
+    withReminder: true
+    
   - id: f4f376c6-8db0-11ea-bc55-0242ac130003
     type: 5 # Type_COMMENT_IN_LIVESTREAM
     lifeCycle: 0
@@ -205,6 +267,36 @@ missions: # mission list
     i18nDisableDescription: streamer_mission_cannot_complete_now
     goalValue: 5
     withReminder: true
+    
+  - id: 766fc4a2-f64c-4706-adde-8cb961084c5e
+    type: 5 # Type_COMMENT_IN_LIVESTREAM
+    lifeCycle: 0
+    levelRange:
+      min: 1
+      max: 35
+    reward:
+      type: 5 # RewardType_ACHIEVEMENT
+      iconURL: https://cdn.17app.co/968447b3-5092-4053-9845-22f8217f4ec4.png
+      achievementValue: 1500
+      i18nDescription: streamer_mission_score
+      i18nDescriptionParams:
+        - value: "3000"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: "3000"
+          needMap: false
+      commentColorCode: "#FFFFFF"
+    i18nTitle: streamer_mission_comment_title
+    i18nTitleParams:
+      - value: "5"
+        needMap: false
+    i18nDescription: streamer_mission_comment_subtitle
+    i18nDescriptionParams:
+    i18nDisableDescription: streamer_mission_cannot_complete_now
+    goalValue: 5
+    withReminder: true
+    
   - id: 17f489d2-8e72-11ea-bc55-0242ac130003
     type: 14 # Type_STREAMER_LIVE_X_SECONDS
     lifeCycle: 0
@@ -233,6 +325,7 @@ missions: # mission list
     i18nDisableDescription:
     goalValue: 1
     withReminder: true
+    
   - id: 4b57dd24-8e72-11ea-bc55-0242ac130003
     type: 14 # Type_STREAMER_LIVE_X_SECONDS
     lifeCycle: 0
@@ -261,6 +354,7 @@ missions: # mission list
     i18nDisableDescription:
     goalValue: 1
     withReminder: true
+    
   - id: 50922574-8e72-11ea-bc55-0242ac130003
     type: 14 # Type_STREAMER_LIVE_X_SECONDS
     lifeCycle: 0
@@ -289,6 +383,7 @@ missions: # mission list
     i18nDisableDescription:
     goalValue: 1
     withReminder: true
+    
   - id: 56c8801e-8e72-11ea-bc55-0242ac130003
     type: 14 # Type_STREAMER_LIVE_X_SECONDS
     lifeCycle: 0
@@ -317,6 +412,7 @@ missions: # mission list
     i18nDisableDescription:
     goalValue: 1
     withReminder: true
+    
   - id: 91beee1a-8e72-11ea-bc55-0242ac130003
     type: 14 # Type_STREAMER_LIVE_X_SECONDS
     lifeCycle: 0
@@ -345,6 +441,7 @@ missions: # mission list
     i18nDisableDescription:
     goalValue: 1
     withReminder: true
+    
   - id: 9792c988-8e72-11ea-bc55-0242ac130003
     type: 14 # Type_STREAMER_LIVE_X_SECONDS
     lifeCycle: 0
@@ -373,6 +470,7 @@ missions: # mission list
     i18nDisableDescription:
     goalValue: 1
     withReminder: true
+    
   - id: 9ed8f24e-8e72-11ea-bc55-0242ac130003
     type: 14 # Type_STREAMER_LIVE_X_SECONDS
     lifeCycle: 0
@@ -401,6 +499,7 @@ missions: # mission list
     i18nDisableDescription:
     goalValue: 1
     withReminder: true
+    
   - id: a5c73c0a-8e72-11ea-bc55-0242ac130003
     type: 14 # Type_STREAMER_LIVE_X_SECONDS
     lifeCycle: 0
