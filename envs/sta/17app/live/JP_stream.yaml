@@ -1,30 +1,33 @@
 pnCheckNotif: 300 # 5 mins
+minAndroidCaptionBlockVersion: "2.13.0"
+minIOSCaptionBlockVersion: "3.101.0"
 
 forcePromoteVirtualStream: true
 
-programDefaultComments:      #全部 program 預設留言
+programDefaultComments: #全部 program 預設留言
   - commentsInfo:
-    - content: "Hello😀"
-      contentColor: "#FFFFFF"
-      backgroundColor: "#b228232d"
-    - content: "😂😂😂"
-      contentColor: "#FFFFFF"
-      backgroundColor: "#b228232d"
-    - content: "👏👏"
-      contentColor: "#FFFFFF"
-      backgroundColor: "#b228232d"
-    - content: "👍👍👍"
-      contentColor: "#FFFFFF"
-      backgroundColor: "#b228232d"
-    - content: "🙌🙌"
-      contentColor: "#FFFFFF"
-      backgroundColor: "#b228232d"
+      - content: "Hello😀"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "😂😂😂"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "👏👏"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "👍👍👍"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "🙌🙌"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
 
 defaultComments:
   - specificTimeFrame: true
     startTime: "00:00:00"
     endTime: "03:59:59"
-    comments: ["こんばんは", "👏👏👏", "|ω･`)ﾁﾗ", "σ*'-'*) ﾂﾝﾂﾝ", "ｵｼﾞｬﾏｼﾏｽ (≧∇≦)"]
+    comments:
+      ["こんばんは", "👏👏👏", "|ω･`)ﾁﾗ", "σ*'-'*) ﾂﾝﾂﾝ", "ｵｼﾞｬﾏｼﾏｽ (≧∇≦)"]
     commentsInfo:
       - content: "こんばんは"
         contentColor: "#FFFFFF"
@@ -44,7 +47,8 @@ defaultComments:
   - specificTimeFrame: true
     startTime: "04:00:00"
     endTime: "11:59:59"
-    comments: ["おはよー", "👏👏👏", "|ω･`)ﾁﾗ", "σ*'-'*) ﾂﾝﾂﾝ", "ｵｼﾞｬﾏｼﾏｽ (≧∇≦)"]
+    comments:
+      ["おはよー", "👏👏👏", "|ω･`)ﾁﾗ", "σ*'-'*) ﾂﾝﾂﾝ", "ｵｼﾞｬﾏｼﾏｽ (≧∇≦)"]
     commentsInfo:
       - content: "おはよー"
         contentColor: "#FFFFFF"
@@ -64,7 +68,8 @@ defaultComments:
   - specificTimeFrame: true
     startTime: "12:00:00"
     endTime: "17:59:59"
-    comments: ["こんにちは", "👏👏👏", "|ω･`)ﾁﾗ", "σ*'-'*) ﾂﾝﾂﾝ", "ｵｼﾞｬﾏｼﾏｽ (≧∇≦)"]
+    comments:
+      ["こんにちは", "👏👏👏", "|ω･`)ﾁﾗ", "σ*'-'*) ﾂﾝﾂﾝ", "ｵｼﾞｬﾏｼﾏｽ (≧∇≦)"]
     commentsInfo:
       - content: "こんにちは"
         contentColor: "#FFFFFF"
@@ -84,7 +89,8 @@ defaultComments:
   - specificTimeFrame: true
     startTime: "18:00:00"
     endTime: "23:59:59"
-    comments: ["こんばんは", "👏👏👏", "|ω･`)ﾁﾗ", "σ*'-'*) ﾂﾝﾂﾝ", "ｵｼﾞｬﾏｼﾏｽ (≧∇≦)"]
+    comments:
+      ["こんばんは", "👏👏👏", "|ω･`)ﾁﾗ", "σ*'-'*) ﾂﾝﾂﾝ", "ｵｼﾞｬﾏｼﾏｽ (≧∇≦)"]
     commentsInfo:
       - content: "こんばんは"
         contentColor: "#FFFFFF"
@@ -113,9 +119,9 @@ birthdayComment:
   backgroundColor: "#FFFFFF"
 
 comment:
-    program:
-        enableLengthCheck: true
-        maxLength: 150
+  program:
+    enableLengthCheck: true
+    maxLength: 150
 
 entryIcons:
   "REDENVELOPE":
@@ -138,7 +144,7 @@ baggageMissionNotif:
 namecardNotif:
   period: 30
   times: 4
- 
+
 levelUpGiftNotif:
   # example:
   # gifts:

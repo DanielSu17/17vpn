@@ -1,29 +1,12 @@
 pnCheckNotif: 300 # 5 mins
+minAndroidCaptionBlockVersion: "2.13.0"
+minIOSCaptionBlockVersion: "3.101.0"
 
 forcePromoteVirtualStream: false
 
-programDefaultComments:      #全部 program 預設留言
+programDefaultComments: #全部 program 預設留言
   - commentsInfo:
-    - content: "Hello😀"
-      contentColor: "#FFFFFF"
-      backgroundColor: "#b228232d"
-    - content: "😂😂😂"
-      contentColor: "#FFFFFF"
-      backgroundColor: "#b228232d"
-    - content: "👏👏"
-      contentColor: "#FFFFFF"
-      backgroundColor: "#b228232d"
-    - content: "👍👍👍"
-      contentColor: "#FFFFFF"
-      backgroundColor: "#b228232d"
-    - content: "🙌🙌"
-      contentColor: "#FFFFFF"
-      backgroundColor: "#b228232d"
-
-programComments:    # 指定 program 預設留言
-  2b4c0f16-98f8-446e-8bc3-d819f7aea6d8:    # 這是 programID
-    - commentsInfo:
-      - content: "😀"
+      - content: "Hello😀"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
       - content: "😂😂😂"
@@ -39,6 +22,24 @@ programComments:    # 指定 program 預設留言
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
 
+programComments: # 指定 program 預設留言
+  2b4c0f16-98f8-446e-8bc3-d819f7aea6d8: # 這是 programID
+    - commentsInfo:
+        - content: "😀"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "😂😂😂"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "👏👏"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "👍👍👍"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "🙌🙌"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
 
 defaultComments:
   - specificTimeFrame: true
@@ -132,9 +133,9 @@ birthdayComment:
   backgroundColor: "#FFFFFF"
 
 comment:
-    program:
-        enableLengthCheck: true
-        maxLength: 20
+  program:
+    enableLengthCheck: true
+    maxLength: 20
 
 entryIcons:
   "REDENVELOPE":
@@ -157,7 +158,7 @@ baggageMissionNotif:
 namecardNotif:
   period: 30
   times: 4
- 
+
 levelUpGiftNotif:
   # example:
   # gifts:
