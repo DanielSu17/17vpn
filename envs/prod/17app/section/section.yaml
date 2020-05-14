@@ -58,6 +58,15 @@ sections:
     minGrids: 6 # 2個直播間一組PK，3組以上顯示
     style: 3
     more: true
+  - id: Label # 名人
+    labelID: famous_artist
+    name:
+      key: streamer_label_famous_artist
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
 
   - id: Label #生活
     labelID: smartlife
@@ -68,7 +77,9 @@ sections:
     minGrids: 5
     style: 3
     more: true
-      
+
+
+
   - id: Vod # 熱門影音
     name:
       key: tab_hot_2019q4_vod
