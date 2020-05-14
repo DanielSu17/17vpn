@@ -361,34 +361,35 @@ missions: # mission list
     i18nDisableDescription:
     goalValue: 9000 # 單位為秒，反映進度條
     withReminder: true
-  #   - id: 20951b0f-9959-4173-bce4-d390d8f8939d
-  #     type: 9 # Type_VIEW_STREAM_X_SECONDS 累計看播 X 分鐘
-  #     lifeCycle: 0
-  #     levelRange:
-  #       min: 1
-  #       max: 20
-  #     reward:
-  #       type: 5 # RewardType_ACHIEVEMENT
-  #       iconURL: https://cdn.17app.co/cb1ad5ea-986e-4d02-ac76-9d1e9a06c099.png
-  #       achievementValue: 4000
-  #       i18nDescription: streamer_mission_score
-  #       i18nDescriptionParams:
-  #         - value: "4000"
-  #           needMap: false
-  #       i18nComment: streamer_mission_score_comment
-  #       i18nCommentParam:
-  #         - value: "4000"
-  #           needMap: false
-  #       commentColorCode: "#FFFFFF"
-  #     i18nTitle: streamer_mission_watch_title
-  #     i18nTitleParams:
-  #       - value: "60"
-  #         needMap: false
-  #     i18nDescription: streamer_mission_watch_subtitle
-  #     i18nDescriptionParams:
-  #     i18nDisableDescription: streamer_mission_cannot_complete_now
-  #     goalValue: 3600
-  #     withReminder: true
+
+  - id: 20951b0f-9959-4173-bce4-d390d8f8939d
+    type: 9 # Type_VIEW_STREAM_X_SECONDS 累計看播 X 分鐘
+    lifeCycle: 0
+    levelRange:
+      min: 1
+      max: 20
+    reward:
+      type: 5 # RewardType_ACHIEVEMENT
+      iconURL: https://cdn.17app.co/cb1ad5ea-986e-4d02-ac76-9d1e9a06c099.png
+      achievementValue: 4000
+      i18nDescription: streamer_mission_score
+      i18nDescriptionParams:
+        - value: "4000"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: "4000"
+          needMap: false
+      commentColorCode: "#FFFFFF"
+    i18nTitle: streamer_mission_watch_title
+    i18nTitleParams:
+      - value: "60"
+        needMap: false
+    i18nDescription: streamer_mission_watch_subtitle
+    i18nDescriptionParams:
+    i18nDisableDescription: streamer_mission_cannot_complete_now
+    goalValue: 3600
+    withReminder: true
 
   #   - id: b7993e09-f2f4-4ec0-82b9-4cdd82478824
   #     type: 9 # Type_VIEW_STREAM_X_SECONDS 累計看播 X 分鐘
