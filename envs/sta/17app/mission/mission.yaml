@@ -30,6 +30,38 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: 12d84505-9bc2-420f-9c41-ade0b59bcd03
+    type: 9
+    lifeCycle: 1
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: hello_2
+      amount: 10
+      expireTimeSecs: 604800
+    requirePhoneBinding: false
+    withReminder: true
+    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 15
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+    i18nDescriptionParams:
+    goalValue: 900
+    enableTimeRange:
+      - startTime: "2020-05-15 00:00:00 (GMT+0800)"
+        endTime: "2020-06-30 00:00:00 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
   - ID: ec5b6d95-104f-474d-a39d-1512bb17e4f9
     type: 9
     lifeCycle: 0
