@@ -1,0 +1,20 @@
+# US label config
+# labelInfos defines all label related infos including type, label(i18n), iconURL
+# - type: 1(music,pink), 2(politics,yellow), 3(others,blue)
+# - featured: true / false (default)
+# - labelID: mapping for labels table id
+
+labelInfos:
+  - id: "exclusive" # 付費解鎖, 獨家內容
+    type: 2
+    label:
+      key: "streamer_label_exclusive"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    order: 2001
+    isHide: true    
+typeCheckIOSVersion: 3.61.0
+typeCheckAndroidVersion: 2.3.92
+
+# labelWhiteList defines relation between label and user list
+labelWhiteList:
+  exclusive:
