@@ -30,6 +30,50 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: 74877a17-5c6a-4fb6-8c62-39ac6056edf3
+    type: 3
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 21
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2005_tw_cook_bp
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: true
+    withReminder: false
+    i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 3
+      - needMap: false
+        mapOption: 2
+        value: 2005_tw_cook_s
+      - needMap: false
+        mapOption: 2
+        value: 2005_tw_cook_m
+      - needMap: false
+        mapOption: 2
+        value: 2005_tw_cook_l
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
+    i18nDescriptionParams:
+    goalValue: 3
+    enableTimeRange:
+      - startTime: "2020-05-21 18:00:00 (GMT+0800)"
+        endTime: "2020-06-04 00:00:00 (GMT+0800)"
+    refIDs:
+      - 2005_tw_cook_s
+      - 2005_tw_cook_m
+      - 2005_tw_cook_l
+    platforms:
+      - android
+      - ios
+
   - ID: a9c0ded9-af57-41b1-90ac-8035bce6071e
     type: 9
     lifeCycle: 1
