@@ -30,6 +30,38 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: 0ce85eab-076f-4187-9206-25f1aff12568
+    type: 9
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 10
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2006_hk_tri_bpa
+      amount: 1
+      expireTimeSecs: 259200
+    requirePhoneBinding: false
+    withReminder: false
+    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 10
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+    i18nDescriptionParams:
+    goalValue: 600
+    enableTimeRange:
+      - startTime: "2020-06-01 00:00:00 (GMT+0800)"
+        endTime: "2020-07-01 00:00:00 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
   - ID: d8b81d40-5138-4a6e-ae5b-ed4a1cf5755c
     type: 9
     lifeCycle: 0
