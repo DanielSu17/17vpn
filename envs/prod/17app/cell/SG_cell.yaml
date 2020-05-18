@@ -4,7 +4,7 @@ virtualStreamRegionOrder: ["JP", "TW", "HK", "MY"]
 position:
   # index start from 1
   # Tab : hot
-  program_hot: [2,9,12,15,18,21]
+  program_hot: [2, 9, 12, 15, 18, 21]
   beltBanner_hot: 3
   virtualStreamer_hot: 6
 
@@ -13,9 +13,9 @@ position:
   banner_clip: [0]
 # this is for setting position priority in hot cell
 priority:
-  - name: 1 # TVSHOW 
-#  - name: 2 # TRIVIA_ON_TV
-#  - name: 4 # TRIVIA
+  - name: 1 # TVSHOW
+  #  - name: 2 # TRIVIA_ON_TV
+  #  - name: 4 # TRIVIA
   - name: 5 # WEREWOLVES
 #  - name: 3 # TVBANNER
 
@@ -39,6 +39,7 @@ entranceRooms:
     minRoomsRequired: 7
     title: "today_hot_topic_title"
     description: "today_hot_topic_entrance_room_des_date"
+    caption: "vote_entry_title"
     vipFrameID: "FRAME_ENTRANCEROOMV2"
     vipFrameURL: "https://cdn.17app.co/29a31d62-4602-4a57-9d40-4a9fafaacf40.png"
     iosFrameURL: "https://cdn.17app.co/9042f826-c53d-45ab-87a5-861844ccb0d4.png"
@@ -50,7 +51,7 @@ entranceRooms:
     topicTitles:
     topics: # deprecate soon
       1:
-    whitelist: 
+    whitelist:
       - 64960d5e-1631-4d55-9cd6-66c7ecfb6eef # 黃益中
       - d62b9dcf-157f-4345-9c75-272f236573e8 # 3q陳柏惟
       - 6172b2ec-dd28-4884-75fc-5415c85ba241 # astrocodeiris
@@ -107,5 +108,5 @@ labelWhiteList:
     - d62b9dcf-157f-4345-9c75-272f236573e8 # 3q陳柏惟
     - f488e6f8-4980-4fb7-9502-f1a4a075e8b8 # 視網膜Retina
     - 64960d5e-1631-4d55-9cd6-66c7ecfb6eef # 黃益中
-    - 799bdb57-9390-46b8-9cc6-0303b68a7cb6  # 羅友志
+    - 799bdb57-9390-46b8-9cc6-0303b68a7cb6 # 羅友志
     - 5168cc74-3f30-4106-bbf9-5722e6f5101c # 謝龍介

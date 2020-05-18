@@ -1,11 +1,10 @@
-
 # virtual streamer region order
 virtualStreamRegionOrder: ["JP", "TW", "HK", "MY"]
 # position example: <type>_<tab>
 position:
   # index start from 1
   # Tab : hot
-  program_hot: [2,9,12,15,18,21]
+  program_hot: [2, 9, 12, 15, 18, 21]
   beltBanner_hot: 3
   virtualStreamer_hot: 6
 
@@ -42,6 +41,7 @@ entranceRooms:
     minRoomsRequired: 10
     title: "today_hot_topic_title"
     description: "today_hot_topic_entrance_room_des_date"
+    caption: "vote_entry_title"
     vipFrameID: "FRAME_ENTRANCEROOMV2"
     vipFrameURL: "https://cdn.17app.co/29a31d62-4602-4a57-9d40-4a9fafaacf40.png"
     iosFrameURL: "https://cdn.17app.co/9042f826-c53d-45ab-87a5-861844ccb0d4.png"
@@ -60,7 +60,7 @@ entranceRooms:
     start: "00:00:00"
     end: "23:59:59"
     topic: 2 # PK
-
+    caption: "PK_entry_title"
 
 hotOptTabs:
   #- id: label:new_streamer
@@ -77,10 +77,10 @@ hotOptTabs:
     name:
       key: streamer_label_formosa_tv
     highlight: false
- # - id: label:foreigner
+  # - id: label:foreigner
   #  name:
   #    key: streamer_label_foreigner
-   # highlight: true
+  # highlight: true
   - id: label:singer
     name:
       key: streamer_label_singer
@@ -95,11 +95,11 @@ hotOptTabs:
   #- id: label:play_and_sing_special_plan
   #  name:
   #    key: streamer_label_play_and_sing_special_plan
-   # highlight: true
- # - id: label:taiwanese_speaking_streamer
-    #name:
-    #  key: streamer_label_taiwanese_speaking_streamer
-    #highlight: true
+  # highlight: true
+  # - id: label:taiwanese_speaking_streamer
+  #name:
+  #  key: streamer_label_taiwanese_speaking_streamer
+  #highlight: true
   - id: label:pundit
     name:
       key: streamer_label_pundit
@@ -117,10 +117,10 @@ hotOptTabs:
     name:
       key: streamer_label_fortune_teller
 
- # - id: label:campus_special_plan
-    #name:
-    #  key: streamer_label_campus_special_plan
-    #highlight: true
+  # - id: label:campus_special_plan
+  #name:
+  #  key: streamer_label_campus_special_plan
+  #highlight: true
   - id: web:music
     name:
       key: tab_opt_music
@@ -144,7 +144,6 @@ hotOptSuperTopTabList: #這邊一定要有四個分類，會從每個分類拿�
   - label:a
   - label:b
 
-
 #  - label:fortune_teller
 
 hotOptSuperTopTabExtraList: #這邊不要把男生女生拿掉。這裡會按順序，把每個分類拿光，才拿下一個
@@ -159,36 +158,36 @@ hotOptSuperTopTabExtraList: #這邊不要把男生女生拿掉。這裡會按順
   - label:fortune_teller
 #  - web:music
 hotOptSuperTopTabBlacklist:
-  - a23d424f-f16c-4058-9d61-0e4fd99654e4	#友騎士
-  - 11e2a0c4-87ea-4c15-8e16-517575ec14b4	#鋼之塔羅🔮萊納Ryner
-  - dfc2a063-b566-4edd-8881-bee21fd1c5e1	#罕病主播-小甯
-  - 6a96cfa9-6ea4-4bd0-b7a5-6385105fc339	#西卡👑女王陛下⚜️
-  - bd818fae-cae4-486a-8caf-64d910442680	#王隆龍
-  - dc9266a9-e229-42e1-8aa0-56073a9003e9	#哈尼爾森♊Nelson
-  - 82c4b6c5-1b27-438c-ada8-630544af96a6	#🎤FB愛唱歌的魏陽陽
-  - a90d6a72-a897-4f64-4b13-552404c06c0d	#胖虎🐯Robert
-  - 2fbdc276-b4dc-433e-5080-119a69f8d644	#大風神～鐵板神算～
-  - 0b2b42ca-838c-4faa-5518-299233983e87	#🍔Hello喬治哥🍇
-  - e7f163f3-21d9-471f-9368-f223a81167c6	#倪耐斯
-  - 8522b3d8-9aa1-45fc-8da2-4f7c8aadf319	#元楷YuanKai
-  - 98be12ee-1325-4655-8f50-13a55175b137	#🐷豬哥會社🐷銘爸❤️
-  - acc9aeaf-b0a0-4f48-b359-07aa50efef0c	#瓦歷斯🎤
-  - 373399cd-c746-4287-8314-c501a8417b74	#庭軒
-  - 19cd299b-2f48-4b4b-b97e-5e92d94ccd9c	#嗨咖公主小咩
-  - dcac64e5-88fe-49ea-8a47-1ef5ef6cd473	#sandy_peiyu
-  - 5864f322-ac07-4bca-a71e-e9a453529e53	#陳泑伶yoyo
-  - 17452fbe-d7a6-47d6-a885-14e3857b8245	#love_881126
-  - a4e8307b-0c96-40e9-4b98-67408f550418	#琳達Oni🍰
-  - 6cb6c9bd-6b6d-46a3-4536-ce4f4989558c	#胖醬酪梨🥑🎤
-  - 0687b172-7521-4f00-6ba1-33bd062b9f8d	#大阪燒容容💜
-  - e50a9b62-74ce-4d64-87c2-dbbebb519882	#開心果Melody🌻🌸🌸
-  - 61d957d8-71ef-4342-be65-fcd1fcfc97b6	#黃美fanny
-  - 1028552f-29de-4cd3-aa45-cd6fcc955652	#芊芊_Sia
-  - cb84d4ce-97a5-4724-4631-6635b9cc4759	#紫色泡泡
-  - 2f655bb9-be7c-49a7-8243-674b30e2b051	#波姐🦊杜蕾絲
-  - 09c6f4c4-fd7d-4e75-bb6c-68d585f518d5	#NJ🖤恩潔
-  - 8c4b5982-72e4-4cf6-9c22-5e919d5e998e	#艾瑪兒Emma
-  - f5a95a4d-d68f-4902-6a02-3083a572f75b	#恐龍系少女🦖淇淇🦕
+  - a23d424f-f16c-4058-9d61-0e4fd99654e4 #友騎士
+  - 11e2a0c4-87ea-4c15-8e16-517575ec14b4 #鋼之塔羅🔮萊納Ryner
+  - dfc2a063-b566-4edd-8881-bee21fd1c5e1 #罕病主播-小甯
+  - 6a96cfa9-6ea4-4bd0-b7a5-6385105fc339 #西卡👑女王陛下⚜️
+  - bd818fae-cae4-486a-8caf-64d910442680 #王隆龍
+  - dc9266a9-e229-42e1-8aa0-56073a9003e9 #哈尼爾森♊Nelson
+  - 82c4b6c5-1b27-438c-ada8-630544af96a6 #🎤FB愛唱歌的魏陽陽
+  - a90d6a72-a897-4f64-4b13-552404c06c0d #胖虎🐯Robert
+  - 2fbdc276-b4dc-433e-5080-119a69f8d644 #大風神～鐵板神算～
+  - 0b2b42ca-838c-4faa-5518-299233983e87 #🍔Hello喬治哥🍇
+  - e7f163f3-21d9-471f-9368-f223a81167c6 #倪耐斯
+  - 8522b3d8-9aa1-45fc-8da2-4f7c8aadf319 #元楷YuanKai
+  - 98be12ee-1325-4655-8f50-13a55175b137 #🐷豬哥會社🐷銘爸❤️
+  - acc9aeaf-b0a0-4f48-b359-07aa50efef0c #瓦歷斯🎤
+  - 373399cd-c746-4287-8314-c501a8417b74 #庭軒
+  - 19cd299b-2f48-4b4b-b97e-5e92d94ccd9c #嗨咖公主小咩
+  - dcac64e5-88fe-49ea-8a47-1ef5ef6cd473 #sandy_peiyu
+  - 5864f322-ac07-4bca-a71e-e9a453529e53 #陳泑伶yoyo
+  - 17452fbe-d7a6-47d6-a885-14e3857b8245 #love_881126
+  - a4e8307b-0c96-40e9-4b98-67408f550418 #琳達Oni🍰
+  - 6cb6c9bd-6b6d-46a3-4536-ce4f4989558c #胖醬酪梨🥑🎤
+  - 0687b172-7521-4f00-6ba1-33bd062b9f8d #大阪燒容容💜
+  - e50a9b62-74ce-4d64-87c2-dbbebb519882 #開心果Melody🌻🌸🌸
+  - 61d957d8-71ef-4342-be65-fcd1fcfc97b6 #黃美fanny
+  - 1028552f-29de-4cd3-aa45-cd6fcc955652 #芊芊_Sia
+  - cb84d4ce-97a5-4724-4631-6635b9cc4759 #紫色泡泡
+  - 2f655bb9-be7c-49a7-8243-674b30e2b051 #波姐🦊杜蕾絲
+  - 09c6f4c4-fd7d-4e75-bb6c-68d585f518d5 #NJ🖤恩潔
+  - 8c4b5982-72e4-4cf6-9c22-5e919d5e998e #艾瑪兒Emma
+  - f5a95a4d-d68f-4902-6a02-3083a572f75b #恐龍系少女🦖淇淇🦕
   - a8babfd5-e88a-400c-88fd-edfc1e6adff3 #郭璿RayKuo
 #-----------以上skyeye可動--------------------
 
@@ -222,26 +221,18 @@ vodlist: #筆記：超過第15個可能就沒人看
   - 3c0ebc88-a46a-4698-a0d5-7fd27d60bd88 #飛機上活春宮？ 天菜小姐告訴你
   # - 15ad349d-72f9-4a77-8340-939a3146e63f #趣你的娛樂｜大來賓：吳姍儒Sandy、鼓鼓呂思緯
   # - a60e426c-3696-4898-927f-c9b8937594e2 #趣你的娛樂｜大來賓：柯佳嬿、許光漢
-
-
-   # - 543d5ae3-f105-4b87-9906-1650f3f34c3c #艾莉兒~觀眾點播，你們點我來唱!
- # - 36c3633b-541b-4960-840b-72988397ec0f #台視17唱|情歌王子黃品源 演唱多首經典好歌 讓你一次聽讓你一次聽個夠！
- # - aa7abb64-dc17-4df0-8d56-1dab3ad7e694 #WHO偏袒中國 甚至稱台灣為「中國台灣」？
+  # - 543d5ae3-f105-4b87-9906-1650f3f34c3c #艾莉兒~觀眾點播，你們點我來唱!
+  # - 36c3633b-541b-4960-840b-72988397ec0f #台視17唱|情歌王子黃品源 演唱多首經典好歌 讓你一次聽讓你一次聽個夠！
+  # - aa7abb64-dc17-4df0-8d56-1dab3ad7e694 #WHO偏袒中國 甚至稱台灣為「中國台灣」？
   #- c55669d7-f60a-4583-8f60-a37ecfb3aa71 #風田納豆配飯吃 聊起日本近況
- #-be550109-cb05-40cc-ab21-67f2668b581c #口罩日生產數量減少? 俠醫來告訴你為甚麼
+  #-be550109-cb05-40cc-ab21-67f2668b581c #口罩日生產數量減少? 俠醫來告訴你為甚麼
   #- acb324ad-7965-4317-a915-078c5383e3aa #郭書瑤的哲學小教室 愛自己是接受自己的不
   # - d37fb2b6-d736-431c-ab0e-c469fabdc0f8 #真理女神美麗妄娜 現場絲襪穿脫好性感
- # - 5d8f0b71-1b39-40c1-8353-e5689a5c9242 #杜力不搞笑 超神靈魂歌聲嚇死你
-   #- d568f336-23c8-463a-b0ce-f2c5d66865dc #前主播吳怡萱初次登場
-    #- 91dc56ea-b823-45fe-b2b0-b55f54e41258 #David's Angels｜全新遊戲獎勵上線啦！兩隊將擦出什麼火花
- # - fa327c58-f58f-4b17-ad68-fb85f9cdb7a4 #唱到累，那就一起與風田聊天吧
- # - c9e935ef-d036-41d1-ad79-84b63b79c176 #武漢肺炎病毒量的多寡
- # - fae5aa3e-7a45-47a0-956c-23f450712264 #大年初二快看九澤CP來跟寶寶們拜年囉❤️
- #-e50159c4-04a4-4044-8ae2-4c6c23f49190 #美麗的特派主播們，為電影《殺不了的他與死不了的她》拍攝宣傳短片
- #- 9d7dd748-fc8d-4338-9b12-28124fca0442 #吳崢晨報，台灣防疫不停歇!
-
-
-
-
-
-
+  # - 5d8f0b71-1b39-40c1-8353-e5689a5c9242 #杜力不搞笑 超神靈魂歌聲嚇死你
+  #- d568f336-23c8-463a-b0ce-f2c5d66865dc #前主播吳怡萱初次登場
+  #- 91dc56ea-b823-45fe-b2b0-b55f54e41258 #David's Angels｜全新遊戲獎勵上線啦！兩隊將擦出什麼火花
+  # - fa327c58-f58f-4b17-ad68-fb85f9cdb7a4 #唱到累，那就一起與風田聊天吧
+  # - c9e935ef-d036-41d1-ad79-84b63b79c176 #武漢肺炎病毒量的多寡
+  # - fae5aa3e-7a45-47a0-956c-23f450712264 #大年初二快看九澤CP來跟寶寶們拜年囉❤️
+  #-e50159c4-04a4-4044-8ae2-4c6c23f49190 #美麗的特派主播們，為電影《殺不了的他與死不了的她》拍攝宣傳短片
+  #- 9d7dd748-fc8d-4338-9b12-28124fca0442 #吳崢晨報，台灣防疫不停歇!

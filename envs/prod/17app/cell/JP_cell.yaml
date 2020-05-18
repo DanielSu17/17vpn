@@ -2,7 +2,7 @@
 position:
   # index start from 1
   # Tab : hot
-  program_hot: [4,10,15,20,25]
+  program_hot: [4, 10, 15, 20, 25]
   beltBanner_hot: 6
   virtualStreamer_hot: 3
   carouselBannerHot: 3
@@ -12,7 +12,7 @@ position:
   banner_clip: [0]
 # this is for setting position priority in hot cell
 priority:
-  - name: 1 # TVSHOW 
+  - name: 1 # TVSHOW
 
 # Expand the cell size to 2x2 if the number of cells less/equal than the number
 enableExpandCellSize: false
@@ -34,6 +34,7 @@ entranceRooms:
     minRoomsRequired: 3
     title: "today_hot_topic_title"
     description: "today_hot_topic_entrance_room_des_date"
+    caption: "vote_entry_title"
     vipFrameID: "FRAME_ENTRANCEROOMV2"
     vipFrameURL: "https://cdn.17app.co/29a31d62-4602-4a57-9d40-4a9fafaacf40.png"
     iosFrameURL: "https://cdn.17app.co/9042f826-c53d-45ab-87a5-861844ccb0d4.png"
@@ -46,11 +47,18 @@ entranceRooms:
     topics: # deprecate soon
       1:
     whitelist:
+  - enable: true
+    position: 6
+    minRoomsRequired: 6
+    start: "00:00:00"
+    end: "23:59:59"
+    topic: 2 # PK
+    caption: "PK_entry_title"
 
 # searchbarInfo indicates the detail of search bar in the cell page
 searchbarInfo:
   style: 1 # 0: LegacyStyle, 1: ExploreStyle
-vodlist: 
+vodlist:
   - d581a0bb-baed-4d08-8aaa-2dbcca66c95d # チルナイト！日曜スペシャル「財部亮治の自粛してナイト」
   - 31e9a655-7eaa-43bf-b6c6-d88c6a2ac587 # イチナナ妄想シアター配信本編
   - fda0b80f-735d-4bad-a85c-434c88215f66 # グツグツことこと煮物ガール❤️
