@@ -8,8 +8,8 @@ rate_limits:
   scope: by_access_token
 - url: "/api/v1/storage$"
   method: "POST"
-  flow_per_second: 0.017  # 1 unit/min
-  reservoir_size: 3
+  flow_per_second: 0.17  # 1 unit/min
+  reservoir_size: 10
   scope: by_access_token
 - url: "/api/v1/lives/.*/comments$"
   method: "POST"
