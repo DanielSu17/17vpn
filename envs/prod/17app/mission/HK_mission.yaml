@@ -30,6 +30,38 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: 4dc05b38-eb2b-4202-a97a-4a01a2e8c4cf
+    type: 5
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 10
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2006_hk_tri_bpb
+      amount: 1
+      expireTimeSecs: 259200
+    requirePhoneBinding: false
+    withReminder: false
+    i18nTitle: baggage_mission_leave_comment_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 15
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_leave_comment_reward_desc
+    i18nDescriptionParams:
+    goalValue: 15
+    enableTimeRange:
+      - startTime: "2020-06-01 00:00:00 (GMT+0800)"
+        endTime: "2020-07-01 00:00:00 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
   - ID: 7bfed15a-41f2-4a86-9a42-d183e6f570f7
     type: 8
     lifeCycle: 0
