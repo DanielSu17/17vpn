@@ -27,6 +27,104 @@
 # // | NON_IAP | 2 |
 
 missions:
+  - ID: 15c09490-542e-4f4b-b252-4f780cff23c2
+    type: 11
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2005_jp_mysong_bp
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    withReminder: false
+    i18nTitle: baggage_mission_daily_share_reward_title
+    i18nTitleParams:
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_daily_share_reward_des
+    i18nDescriptionParams:
+    goalValue: 3
+    enableTimeRange:
+      - startTime: "2020-05-19 00:00:00 (GMT+0800)"
+        endTime: "2020-07-01 00:00:00 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
+
+
+  - ID: ccb633f4-0680-4093-b4a9-45dda08eb39a
+    type: 5
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2005_jp_mysong_bp
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    withReminder: false
+    i18nTitle: baggage_mission_leave_comment_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 10
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_leave_comment_reward_desc
+    i18nDescriptionParams:
+    goalValue: 10
+    enableTimeRange:
+      - startTime: "2020-05-19 00:00:00 (GMT+0800)"
+        endTime: "2020-07-01 00:00:00 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
+  - ID: 6eb49b32-f00d-46d3-8c44-a9fab6b05e1e 
+    type: 9
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2005_jp_mysong_bp
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    withReminder: false
+    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 30
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+    i18nDescriptionParams:
+    goalValue: 1800
+    enableTimeRange:
+      - startTime: "2020-05-19 00:00:00 (GMT+0800)"
+        endTime: "2020-07-01 00:00:00 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
+
+
+
   # - ID: b61968cd-8d6f-4706-8234-5c2b70bdc99d
   #   type: 9 #View_Stream_X_Seconds
   #   reward:
@@ -50,7 +148,9 @@ missions:
   #   platforms:
   #     - android
   #     - ios
-      
+
+
+
 #tagInfos
 tagInfos:
   0: # Daily
