@@ -33,27 +33,19 @@ sections:
     style: 6
     minGrids: 5
     more: true
-  - id: Label # 補教
-    labelID: famous_teacher
-    name:
-      key: streamer_label_famous_teacher
-    enable: false
-    dedup: false
-    minGrids: 5
-    style: 3
-    more: true
+ 
   - id: Latest # 新人(和『最新』同邏輯)
     name:
       key: tab_hot_2019q4_newstreamer
     enable: true
-    dedup: true
+    dedup: false
     minGrids: 5
     style: 3
     more: true
   - id: Music # legacy Music tab
     name:
       key: tab_hot_2019q4_music
-    enable: true
+    enable: false
     dedup: true
     minGrids: 5
     style: 3
@@ -81,8 +73,8 @@ sections:
     labelID: smartlife
     name: 
       key: streamer_label_smartlife
-    enable: false
-    dedup: true  #重複
+    enable: true
+    dedup: false  #重複
     minGrids: 5
     style: 3
     more: true
@@ -91,12 +83,20 @@ sections:
     labelID: professional
     name:
       key: streamer_label_professional
-    enable: false
-    dedup: true
+    enable: true
+    dedup: false
     minGrids: 5
     style: 3
     more: true
-
+  - id: Label # 才藝
+    labelID: talent
+    name:
+      key: streamer_label_talent
+    enable: true
+    dedup: false
+    minGrids: 5
+    style: 3
+    more: true
   - id: Vod # 熱門影音
     name:
       key: tab_hot_2019q4_vod
@@ -104,7 +104,6 @@ sections:
     minGrids: 5
     style: 5
     more: false
-
 
 
   - id: Show # 熱播節目
@@ -145,19 +144,11 @@ sections:
     name:
       key: tab_hot_2019q4_male
     enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-  - id: Label # 才藝
-    labelID: talent
-    name:
-      key: streamer_label_talent
-    enable: true
     dedup: false
     minGrids: 5
     style: 3
     more: true
+
   - id: RedEnvelope # 紅包
     name:
       key: tab_hot_2019q4_redenvelop
