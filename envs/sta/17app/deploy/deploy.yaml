@@ -34,7 +34,6 @@ groups:
   event:
     event-server:    "go"
     event-web:       "webapp"
-
 settings:
   spinnaker:
     k8ssta:
@@ -65,21 +64,81 @@ settings:
     k8sprod:
       endpoint: 'k8sprod-deployment-nodejs/buildWithParameters?token=MdfMrjx5egcQKAQMdEHP92hNACQvPemnvTWRT3fe'
 
+# This can be removed after new alfred being release on 2020/05/26
 17app:
-    - "goapi"
-    - "bbrich"
-    - "revprox"
-    - "worker"
-    - "data-middleware"
-    - "go-cron"
-    - "golives"
-    - "gotrade"
-    - "goplatform"
-    - "exchange"
-    - "slackbot"
-    - "alfred"
-    - "srsapi"
-    - "eventory"
-    - "eventory-worker"
-    - "data-stream-worker"
-    - "gocells"
+  - "goapi"
+  - "bbrich"
+  - "revprox"
+  - "worker"
+  - "data-middleware"
+  - "go-cron"
+  - "golives"
+  - "gocells"
+  - "gotrade"
+  - "goplatform"
+  - "exchange"
+  - "slackbot"
+  - "alfred"
+  - "srsapi"
+  - "eventory"
+  - "eventory-worker"
+  - "data-stream-worker"
+
+# Original 17app group had been devided into environment based design
+# For example, 17app in k8sprod represent 17 services group but
+# for awsprod, it's only 2 services
+batchDeploy:
+  17app:
+    k8sprod:
+      - "goapi"
+      - "bbrich"
+      - "revprox"
+      - "worker"
+      - "data-middleware"
+      - "go-cron"
+      - "golives"
+      - "gocells"
+      - "gotrade"
+      - "goplatform"
+      - "exchange"
+      - "slackbot"
+      - "alfred"
+      - "srsapi"
+      - "eventory"
+      - "eventory-worker"
+      - "data-stream-worker"
+    k8ssta:
+      - "goapi"
+      - "bbrich"
+      - "revprox"
+      - "worker"
+      - "data-middleware"
+      - "go-cron"
+      - "golives"
+      - "gocells"
+      - "gotrade"
+      - "goplatform"
+      - "exchange"
+      - "slackbot"
+      - "alfred"
+      - "srsapi"
+      - "eventory"
+      - "eventory-worker"
+      - "data-stream-worker"
+    awsprod:
+      - "goapi"
+      - "revprox"
+    awssta:
+      - "goapi"
+      - "revprox"
+
+# abstractEnvs is designed for cross cloud environment,
+# deploying using allprod stands for deploying to both
+# k8sprod and awsprod
+abstractEnvs:
+  allprod:
+    - "k8sprod"
+    - "awsprod"
+  allsta:
+    - "k8ssta"
+    - "awssta"
