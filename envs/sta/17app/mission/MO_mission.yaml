@@ -1,5 +1,5 @@
 missions:
-  
+
 #tagInfos
 tagInfos:
   0: # Daily
@@ -16,9 +16,15 @@ remind:
   toastMsg:
     key: baggage_complete_toast
   toastSecs: 10
-  
+
 i18nMissionCompleteToast: ""
 refreshHour: 5 # 5:00AM(GMT+8)
 supportedVersion:
   android: "2.3.17"
   ios: "3.8.0"
+
+# checkPNAfterComplete defines how many missions be completed will request client to check PN
+checkPNAfterComplete: [1, 5, 20]
+checkPNSupportedVersion:
+  android: "3.0"
+  ios: "4.0"

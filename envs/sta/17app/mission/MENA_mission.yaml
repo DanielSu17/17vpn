@@ -44,8 +44,8 @@ missions:
       expireTimeSecs: 86400
     requirePhoneBinding: true
     i18nTitle: baggage_mission_leave_comment_reward_title_wei_chuan
-    i18nTitleParams: 
-    i18nContent: 
+    i18nTitleParams:
+    i18nContent:
     i18nContentParams:
     i18nDescription: baggage_mission_leave_comment_reward_desc_wei_chuan
     i18nDescriptionParams:
@@ -59,7 +59,7 @@ missions:
     refIDs:
     platforms:
       - android
-      - ios      
+      - ios
 
 #tagInfos
 tagInfos:
@@ -83,3 +83,9 @@ refreshHour: 5 # 5:00 (GMT+8)
 supportedVersion:
   android: "2.3.17"
   ios: "3.8.0"
+
+# checkPNAfterComplete defines how many missions be completed will request client to check PN
+checkPNAfterComplete: [1, 5, 20]
+checkPNSupportedVersion:
+  android: "3.0"
+  ios: "4.0"

@@ -10,7 +10,7 @@ missions:
       amount: 1
       expireTimeSecs: 86400
     i18nTitle: "baggage_mission_watch_streams_time_in_total_reward_crossregion_title"
-    i18nTitleParams:  
+    i18nTitleParams:
       - needMap: false
         value: "5"
     i18nContent: "baggage_mission_watch_streams_time_in_total_reward_crossregion_desc"
@@ -50,3 +50,9 @@ refreshHour: 5 # 5:00AM(GMT+8)
 supportedVersion:
   android: "2.3.17"
   ios: "3.8.0"
+
+# checkPNAfterComplete defines how many missions be completed will request client to check PN
+checkPNAfterComplete: [1, 5, 20]
+checkPNSupportedVersion:
+  android: "3.0"
+  ios: "4.0"
