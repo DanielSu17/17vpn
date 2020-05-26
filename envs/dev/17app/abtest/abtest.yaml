@@ -58,7 +58,7 @@
     "c": "b"
     "d": "b"
     "e": "b"
-    "f": "b" 
+    "f": "b"
 - testName: recommendFollow
   enableABtest: true
   enableRegion: ["TW", "JP"]
@@ -125,7 +125,7 @@
 - testName: completeRegistration
   enableABtest: true
   enableRegion: ["TW"]
-  expiredSecond: 10 # 10 second 
+  expiredSecond: 10 # 10 second
   lastCharGroup:
     "0": "a"
     "1": "a"
@@ -133,7 +133,7 @@
     "3": "a"
     "4": "a"
     "5": "a"
-    "6": "a" 
+    "6": "a"
     "7": "a"
     "8": "b"
     "9": "b"
@@ -373,6 +373,26 @@
     "f": "b"
 # 熱門頁 hotOpt隱藏: group b強制關閉feature hotOpt
 - testName: newbieDismissHotOpt
+  enableABtest: true
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+# 開播前可設定直播間入口圖片: group b 可設定圖片
+- testName: streamThumbnail
   enableABtest: true
   lastCharGroup:
     "0": "a"
