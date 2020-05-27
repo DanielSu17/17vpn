@@ -324,6 +324,12 @@ labelInfos:
     label:
       key: "streamer_label_mother_day"
     iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    isHide: true  
+  - id: "travel_expert" # 旅遊達人
+    type: 2
+    label:
+      key: "streamer_label_travel_expert"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
     isHide: true    
   - id: "famous_teacher" # 補教名師
     type: 2
@@ -388,6 +394,15 @@ topicTabLabels:
 # labelWhiteList defines relation between label and user list
 labelWhiteList:
   exclusive:
+  travel_expert:
+    - 3ad7f301-7bf8-4a65-9fd3-235185b85111 
+    - 3aead2e8-0e30-49db-988f-c3a59933e57e 
+    - 57ff5f17-0076-46fe-9960-5f31e4b78e89 
+    - 3436cdfe-a993-463f-af38-98001198761b 
+    - b4caad01-bca8-4afe-95d9-639a3638c4e6 
+    - 42af9cbe-dd81-4851-b28a-85c5e96196db 
+    - 3ad7f301-7bf8-4a65-9fd3-235185b85111 
+
   dj_night_out:
     - f1a07dc4-2ae5-4624-83f9-4f5f80530c10	#大嘴巴👄DJ宗華
     - fe3aa682-1899-4423-bdad-297631aa50c6	#DJ阿聖
