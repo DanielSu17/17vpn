@@ -61,7 +61,6 @@ rtmp_providers:
   - e1c70bd8-256d-4043-9739-b75645897533 # Rozaaan (Region: Egypt)
   - 1bfbefc0-15d5-498f-a72f-bdf503dce3db # rokia_baby (Region: Egypt)
   - 6a2b2664-6ef1-4b43-76ff-87a20cfbb394 # 龍龍:dog2:Gina
-
 - name: QCLOUD
   quality_support: 0
   weight: 0
@@ -122,7 +121,6 @@ rtmp_providers:
   - b1785cd1-8a91-4d36-ae6e-2af2391a8a8c # Rick
   - 2d072c73-4dd9-41ee-9e84-b3f61219ebbe # amyhyshen172
   - 4ee6f069-53a2-4e66-b5c5-49d20e5db36d # 青草茶公主👸麗莎
-
 - name: WANSU_LOW_LATENCY
   quality_support: 1
   weight: 0
@@ -158,7 +156,7 @@ rtmp_providers:
 - name: AWS
   quality_support: 0
   weight: 0
-  users: 
+  users:
   - 4ad0425d-b4a5-433f-9a46-6ffc4df39bd5 # va.p200501
   - 8cc6c3c0-cec1-41a5-97ec-a36c6f8f4dcc # va.p200502
 - name: QINIU_AUTH
@@ -185,6 +183,7 @@ message_providers_17q:
 - name: ABLY_MESSAGE
   weight: 0
   users: []
+
 message_providers_general:
 - name: PUBNUB_MESSAGE
   weight: 100
@@ -207,9 +206,10 @@ message_providers_general:
   users:
   - b1785cd1-8a91-4d36-ae6e-2af2391a8a8c # Rick
   - 3799d926-2ae2-4942-a510-847a017921cc # kevinmh01
+
 message_providers_dynamic:
 - name: PUBNUB_MESSAGE
-  weight: 100
+  weight: 0
   users:
   - 93e77d8a-c4b1-45f3-ae74-5ad68620e5a0 # 妖妖DanceQueen (CN)
   - 8f2b3270-6e19-4f19-b9b3-2fa8cc4f6d3f # 巴巴baba (CN)
@@ -219,18 +219,19 @@ message_providers_dynamic:
   - 109f741c-61b1-4b35-83aa-8ed4ca039b37 # 素顏怪獸茶🍵
   - 3c3a32f2-538f-4569-4b51-0c3a93ab23f5 # melody淇淇:rose:
 - name: WANSU_MESSAGE
-  weight: 0
+  weight: 50
   users:
   - 677dd3e4-ca99-4f33-97fa-e6e4af0ef14c # tobby112
   - 1d264e45-0c86-4c66-b9e0-dcac051100eb # 明星製作人 (2019/09/22)
   - 2aee9213-3c8c-46f2-b5ca-cad9985d09cf # 如如ruru
 - name: ABLY_MESSAGE
-  weight: 0
+  weight: 50
   users:
   - b1785cd1-8a91-4d36-ae6e-2af2391a8a8c # Rick
   - 3799d926-2ae2-4942-a510-847a017921cc # kevinmh01
-rtmp_provider_dynamic: 
-  users: 
+
+rtmp_provider_dynamic:
+  users:
   - 2d072c73-4dd9-41ee-9e84-b3f61219ebbe # amyhyshen172
   - 5d1baea2-5041-4008-a0a6-d0b596dbda9d # 妞妞Yuna🍮
   - 86ebfa9f-8398-4f75-8beb-82253bb9431c # 藝橙➰Pinky兒
