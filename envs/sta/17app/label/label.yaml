@@ -143,6 +143,13 @@ labelInfos:
     order: 1
     iconURL: "h"
     isHide: true
+  - id: "new_streamer_event" # Welcome Newbies to LIVIT!!- Event
+    type: 2
+    label:
+      key: "us_streamer_label_event_newstreamer"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    isHide: false
+    order: 1
 
 
 typeCheckIOSVersion: 3.57.0
@@ -165,6 +172,8 @@ topicTabLabels:
 
 # labelWhiteList defines relation between label and user list
 labelWhiteList:
+  new_streamer_event:
+    - "00c0bc02-c6df-448c-8385-114288e51d83"    #77_七七
   acoustic: # 彈唱歌手
     - "73e8b839-a1ca-4b08-a51d-2b02ffdea153"    # bellayayaya
     - "375fcf50-8168-416e-9fa2-c9702a5ec08a"    # 宋少騫Zustin
