@@ -30,6 +30,55 @@
 # | NON_IAP | 2 |
 
 missions:
+#17 Celebrate！- 寶寶生日趴起來 送x次禮物
+  - ID: 3374e87e-dc89-472b-b742-b17553d55539
+    type: 3
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 21
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2006_tw_anniversary5_b_bp
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: true
+    withReminder: false
+    i18nTitle: baggage_mission_send_specific_gifts_reward_title_four
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 3
+      - needMap: false
+        mapOption: 2
+        value: 2006_tw_anniversary5_s
+      - needMap: false
+        mapOption: 2
+        value: 2006_tw_anniversary5_l
+      - needMap: false
+        mapOption: 2
+        value: 2006_tw_anniversary5_m_bag
+      - needMap: false
+        mapOption: 2
+        value: 2006_tw_anniversary5_cake
+    i18nContent:
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
+    i18nDescriptionParams:
+    goalValue: 3
+    enableTimeRange:
+      - startTime: "2020-06-22 18:00:00 (GMT+0800)"
+        endTime: "2020-07-17 23:59:59 (GMT+0800)"
+    refIDs:
+      - 2006_tw_anniversary5_s
+      - 2006_tw_anniversary5_l
+      - 2006_tw_anniversary5_m_bag
+      - 2006_tw_anniversary5_cake
+    platforms:
+      - android
+      - ios
+
 #17 17瘋開箱＿馬祖世紀追淚之旅 x條留言
   - ID: 6ad42ea7-8cde-4233-bbf1-ec126b975fc3
     type: 5
