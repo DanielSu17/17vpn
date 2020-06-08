@@ -69,41 +69,42 @@ class I18nJsonWriter:
 
                 self.write_file(full_path, data_str)
 
-
 class LokaliseClient:
-    api_url = "https://api.lokalise.co/api/"
+    api_url = "https://api.lokalise.co/api2/"
 
     def __init__(self, api_token):
         self.api_token = api_token
 
     def get_project_id_by_name(self, project_name):
-        url = self.api_url + "project/list"
-        payload = {"api_token": self.api_token}
-        r = requests.get(url, params=payload)
+        url = self.api_url + "projects"
+        headers = {
+            'x-api-token': self.api_token
+        }
+        r = requests.get(url, headers=headers)
         if r.status_code != 200:
             raise Exception("get languages failed")
-
-        return [i['id'] for i in r.json()['projects'] if project_name == i['name']][0]
+        for i in r.json()['projects']:
+            if project_name == i['name']:
+                return i['project_id']
+        return ""
 
     def get_languages(self, project_id):
         """
         Return translated language of project id
         """
-        url = self.api_url + "language/list"
-        payload = {
-            "api_token": self.api_token,
-            "id": project_id
+        url = self.api_url + "projects/" + project_id + "/languages"
+        headers = {
+            'x-api-token': self.api_token
         }
-        r = requests.get(url, params=payload)
+        r = requests.get(url, headers=headers)
         if r.status_code != 200:
             raise Exception("get languages failed")
 
         return [i['iso'] for i in r.json()['languages']]
 
-    def get_strings(self, project_id, langs):
+    def get_translations(self, project_id):
         """
-        Get strings
-
+        Return translations of project id
         @return: {
             "en": {
                 "key": "value"
@@ -114,29 +115,45 @@ class LokaliseClient:
         }
         """
         ret = dict()
-        url = self.api_url + "string/list"
-        data = {
-            "api_token": self.api_token,
-            "id": project_id,
-            "langs": langs
+        # get languages
+        url = self.api_url + "projects/" + project_id + "/languages"
+        headers = {
+            'x-api-token': self.api_token
         }
-        r = requests.post(url, data=data)
+        r = requests.get(url, headers=headers)
         if r.status_code != 200:
-            raise Exception("get strings failed")
-        r_json = r.json()
-        if r_json['response']['code'] != '200':
-            raise Exception(r_json['response']['message'])
 
-        for lang, strings in r_json['strings'].iteritems():
-            ret[lang] = dict()
-            for string in strings:
-                ret[lang][string['key']] = string['translation']
+            raise Exception("get languages failed")
+        for lang in r.json()['languages']:
+            ret[lang['lang_iso']] = dict()
 
+        # get translations from keys api
+        url = self.api_url + "projects/" + project_id + "/keys"
+        headers = {
+            'x-api-token': self.api_token
+        }
+        count = 0
+        page = 1
+        # page > 100 means 500000 keys, should never happend just set for safe
+        while page < 100:
+            payload = {
+                'include_translations':'1',
+                'page': page,
+                'limit': 5000
+            }
+            r = requests.get(url, headers=headers, params=payload)
+            if r.status_code != 200:
+                raise Exception("get translations failed")
+
+            keys = r.json()['keys']
+            for key in keys:
+                for translation in key['translations']:
+                    ret[translation['language_iso']][key['key_name']['other']] = translation['translation']
+            count += len(keys)
+            if count >= int(r.headers['X-Pagination-Total-Count']) or len(r.json()['keys']) == 0:
+                break
+            page+=1
         return ret
-
-    def get_all_strings(self, project_id):
-        return self.get_strings(project_id, [])
-
 
 if __name__=="__main__":
     parser = argparse.ArgumentParser(description='Pull i18n from Lokalise.')
@@ -157,7 +174,7 @@ if __name__=="__main__":
     lc = LokaliseClient(LOKALIZE_TOKEN)
 
     p_id = lc.get_project_id_by_name("Wave")
-    backend_client_keys = lc.get_all_strings(p_id)
+    backend_client_keys = lc.get_translations(p_id)
 
     for k, v in backend_internal_mapping.iteritems():
       try:
