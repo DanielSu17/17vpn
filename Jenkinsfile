@@ -19,30 +19,6 @@ def etcdServiceEndpointsProd = [
     'http://35.230.16.11:2379',
 ]
 
-def etcdServiceEndpointsStagLit = [
-    'http://35.229.240.3:2379',
-    'http://35.236.170.250:2379',
-    'http://104.199.253.3:2379',
-]
-
-def etcdServiceEndpointsProdLit = [
-    'http://35.201.170.180:2379',
-    'http://35.236.170.122:2379',
-    'http://35.194.146.236:2379',
-]
-
-def etcdServiceEndpointsStagZoo = [
-    'http://34.80.37.202:2379',
-    'http://34.80.57.68:2379',
-    'http://34.80.57.203:2379',
-]
-
-def etcdServiceEndpointsProdZoo = [
-    'http://34.80.37.202:2379',
-    'http://34.80.57.68:2379',
-    'http://34.80.57.203:2379',
-]
-
 def etcdServiceEndpointsStagWave = [
     'http://104.155.199.157:2379',
     'http://34.80.119.114:2379',
@@ -80,30 +56,6 @@ properties([
             defaultValue: etcdServiceEndpointsProd.join(','),
             description: 'ETCD Service Endpoints List for the 17App Service (Production)',
             name: 'ENDPOINTS_17APP_PROD',
-            trim: true
-        ),
-        string(
-            defaultValue: etcdServiceEndpointsStagLit.join(','),
-            description: 'ETCD Service Endpoints List for the Lit Service (Staging)',
-            name: 'ENDPOINTS_LIT_STA',
-            trim: true
-        ),
-        string(
-            defaultValue: etcdServiceEndpointsProdLit.join(','),
-            description: 'ETCD Service Endpoints List for the Lit Service (Production)',
-            name: 'ENDPOINTS_LIT_PROD',
-            trim: true
-        ),
-        string(
-            defaultValue: etcdServiceEndpointsStagZoo.join(','),
-            description: 'ETCD Service Endpoints List for the Zoo Service (Staging)',
-            name: 'ENDPOINTS_ZOO_STA',
-            trim: true
-        ),
-        string(
-            defaultValue: etcdServiceEndpointsProdZoo.join(','),
-            description: 'ETCD Service Endpoints List for the Zoo Service (Production)',
-            name: 'ENDPOINTS_ZOO_PROD',
             trim: true
         ),
         string(
@@ -176,11 +128,13 @@ node('gcp') { timestamps { ansiColor('xterm') {
             echo "[debug] slackUserID: " + slackUserID.trim()
             message_prefix = '<@' + slackUserID.trim() + '>\n'
         }
+        def commit_msg_script = "git log --format=%B -n 1|head -n 1"
+        def commit_msg = sh(returnStdout: true, script: commit_msg_script)
 
         def githubCommitLink = 'https://github.com/17media/configs/commit/' + params.REVISION
-        def message_started = message_prefix + '17media/configs - Job Start\n*Commit:* <'     + githubCommitLink + '|' + params.REVISION + '> (<' + env.BUILD_URL + '|Jenkins>)'
-        def message_failure = message_prefix + '17media/configs - Job Failed\n*Commit:* <'    + githubCommitLink + '|' + params.REVISION + '> (<' + env.BUILD_URL + '|Jenkins>)\n@sre @here'
-        def message_success = message_prefix + '17media/configs - Job Completed\n*Commit:* <' + githubCommitLink + '|' + params.REVISION + '> (<' + env.BUILD_URL + '|Jenkins>)'
+        def message_started = message_prefix + '17media/configs - Job Start\n*Title:* `' + commit_msg + '`\n*Commit:* <'     + githubCommitLink + '|' + params.REVISION + '> (<' + env.BUILD_URL + '|Jenkins>)'
+        def message_failure = message_prefix + '17media/configs - Job Failed\n*Title:* `' + commit_msg + '\n*Commit:* <'    + githubCommitLink + '|' + params.REVISION + '> (<' + env.BUILD_URL + '|Jenkins>)\n@sre @here'
+        def message_success = message_prefix + '17media/configs - Job Completed\n*Title:* `' + commit_msg + '\n*Commit:* <' + githubCommitLink + '|' + params.REVISION + '> (<' + env.BUILD_URL + '|Jenkins>)'
 
         // force exit if job execution time over 360 seconds
         timeout(time: 360, unit: 'SECONDS') {
