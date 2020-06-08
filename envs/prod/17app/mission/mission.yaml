@@ -30,6 +30,39 @@
 # | NON_IAP | 2 |
 
 missions:
+#17 Celebrate！- 寶寶生日趴起來 觀看直播x秒
+  - ID: 2f9cbe14-937c-4665-a08f-17dde4413d59
+    type: 9
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 21
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2006_tw_anniversary5_a_bp
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    withReminder: false
+    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 10
+    i18nContent:
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+    i18nDescriptionParams:
+    goalValue: 600
+    enableTimeRange:
+      - startTime: "2020-06-22 00:00:00 (GMT+0800)"
+        endTime: "2020-07-03 00:00:00 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
 #17 Celebrate！- 寶寶生日趴起來 送x次禮物
   - ID: 3374e87e-dc89-472b-b742-b17553d55539
     type: 3
