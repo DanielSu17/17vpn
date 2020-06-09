@@ -30,6 +30,40 @@
 # | NON_IAP | 2 |
 
 missions:
+
+  - ID: 65561632-fc3d-40e3-b96e-237ae8590ef5
+    type: 10
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2005_us_stardom_bp
+      amount: 5
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    withReminder: false
+    i18nTitle: baggage_mission_first_time_IAP_point_event_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 8550
+    i18nContent:
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
+    i18nDescriptionParams:
+    goalValue: 8550
+    enableTimeRange:
+      - startTime: "2020-06-16 09:00:00 (GMT+0800)"
+        endTime: "2020-06-29 12:00:00 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
+
   - ID: 5fe1b96f-5b19-477d-b391-a0393d668c3a
     type: 9
     lifeCycle: 0
@@ -256,38 +290,6 @@ missions:
       - android
       - ios
 
-
-  - ID: 7a552321-7ba8-48aa-8bf3-50b0a32bbff1
-    type: 10
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 1
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 2005_us_stardom_bp
-      amount: 5
-      expireTimeSecs: 86400
-    requirePhoneBinding: false
-    withReminder: false
-    i18nTitle: baggage_mission_first_time_IAP_point_event_title
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 8550
-    i18nContent:
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
-    i18nDescriptionParams:
-    goalValue: 8550
-    enableTimeRange:
-      - startTime: "2020-05-17 09:00:00 (GMT+0800)"
-        endTime: "2020-05-31 12:00:00 (GMT+0800)"
-    refIDs:
-    platforms:
-      - android
-      - ios
 
   - ID: c9b2b4aa-e6d9-4d99-97f2-9d5714e3e557
     type: 8
