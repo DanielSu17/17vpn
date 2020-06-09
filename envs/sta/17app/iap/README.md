@@ -64,8 +64,9 @@ merchandises:
       * text(`i18n struct`):
         * key(`string`): 說明文字的i18n key
     * purchaseType(`number`): 可購買的次數
+
     | enum | times |
-    |------|-------|
+    |:------:|:-------|
     | 1    | 一次  |
     | 2    | 不限  |
     * taInfo(`struct`): 受眾
@@ -73,8 +74,9 @@ merchandises:
         * dayStart(`number`): 開始,若為0則不受限制
         * dayEnd(`number`): 結束,若為0則不受限制
       * type(`number`): 受眾群體
+
     | enum | meaning |
-    | ---- | ------- |
+    | :----: | :------- |
     | 1 | 判斷時間區段沒有購買過 |
     | 2 | 判斷時間區段有購買過 |
     | 3 | 生涯沒有購買過 |
