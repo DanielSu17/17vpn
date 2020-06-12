@@ -30,6 +30,38 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: 88db06e4-7887-4f7c-8f30-a1086bbe3fe0
+    type: 4
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 21
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2005_tw_dj_bp
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: true
+    withReminder: false
+    i18nTitle: baggage_mission_leave_comment_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 3
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_leave_comment_reward_desc
+    i18nDescriptionParams:
+    goalValue: 3
+    enableTimeRange:
+      - startTime: "2020-06-16 18:00:00 (GMT+0800)"
+        endTime: "2020-06-21 23:59:59 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
   - ID: b60936c9-848d-4c27-9fcf-f932dafb86c2
     type: 8
     lifeCycle: 1
