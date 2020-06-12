@@ -3,6 +3,15 @@
 ## 範例
 
 ```yaml
+secretIAPConditions:
+  - ID: "cond-1"
+    condition:
+      dailySignInValidDays:
+        - 3
+        - 6
+      retentionUserOnly: false
+    displayHours: 120
+
 rewardEvents:
   - eventID: "event-01"
     startTime: "2018-12-24T15:00:00+08:00"
@@ -63,7 +72,7 @@ rewardEvents:
     eventRequirements:
       - onlyAvailableInSameRegion: true
         secretIAP:
-          ID: "mockID"
+          ID: "cond-1"
         sellingChannels:
           include:
             - 1
@@ -80,7 +89,12 @@ rewardEvents:
 ```
 
 ## 規則
-
+* secretIAPConditions(`array of struct`):
+  * ID(`string`): 秘密IAP的ID
+  * condition(`struct`): 符合的條件
+    * dailySignInValidDays(`array of number`): 符合的每日登入天數
+    * retentionUserOnly(`bool`): 是不是只有 retention User 看得到
+  * displayHours(`number`): 向用戶顯示的時間，單位是小時
 * rewardEvents(`array of struct`):
   * eventID(`string`): 活動ID
   * startTime/endTime(`RFC3339`): 購買的時間必須在config中定義開始時間與結束時間之間才需要檢查下列規則
