@@ -3,7 +3,9 @@
 # <minDuration> is the min duration in terms of seconds that a stream will be counted in consecutive streams.
 enable: true
 count: 5
-minDuration: 60000
+toleranceCount: 1
+migrateV2: false
+minDuration: 60
 levelToRock: 2
 levels:
   # level / check in count mapping table
