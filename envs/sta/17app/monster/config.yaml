@@ -14,9 +14,9 @@ monsters:
   hit_consume: 10
   duration: 60s
   stream_alive_threshold: 1m00s
-  animation: "babyrobotcoin"
+  animation: "anniversary5"
   available_dates: # 一般怪獸才會看時間
-  - start_date: "2020-03-01T18:00:00+08:00"
+  - start_date: "2020-06-10T18:00:00+08:00"
     end_date: "2020-04-01T18:00:00+08:00"
   appear_durations: # 一般怪獸才會看時間
   - start_time: 00h00m00s
@@ -38,10 +38,9 @@ monsters:
   successToken: {key: monster_battle_success_babyrobot_coin,fontAttribute: {textColor: "#FFFFFF"}}
   marqueeToken: {key: monster_battle_marquee_babyrobot}
   summonGifts: # 招喚怪獸才需要填
-  - giftID: "2004_tw_gold_l"
-    probability: 3000 # n / 10000 * 100%
-  - giftID: "2004_tw_gold_m"
-    probability: 100 # n / 10000 * 100%
+  - giftID: "ring"
+    probability: 10000 # n / 10000 * 100%
+
 
 - id: monster_babyrobot_petroleum #寶寶機器人挖到石油
   hit_consume: 10
