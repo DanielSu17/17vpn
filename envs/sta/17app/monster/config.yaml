@@ -1,4 +1,4 @@
-max: 0	# 0 means disable feature
+max: 1	# 0 means disable feature
 check_interval: 1m00s
 big_brother_prefix: "give_me_five"
 nian_prefix: "nian"
@@ -42,71 +42,71 @@ monsters:
     probability: 10000 # n / 10000 * 100%
 
 
-- id: monster_babyrobot_petroleum #寶寶機器人挖到石油
-  hit_consume: 10
-  duration: 60s
-  stream_alive_threshold: 1m00s
-  animation: "babyrobotpetroleum"
-  available_dates:
-  - start_date: "2020-03-01T18:00:00+08:00"
-    end_date: "2020-04-01T18:00:00+08:00"
-  appear_durations:
-  - start_time: 00h00m00s
-    end_time: 23h59m59s
-  type: 1
-  share_ratio: 50 # percentage
-  profit_ratio: 35 # percentage
-  bonus: 336
-  weight: 0.2
-  infoPageiconURL: https://cdn.17app.co/fb329dbe-9c30-4b40-af34-8d6479a8e3ec.png
-  winnerPageiconURL: https://cdn.17app.co/d110ee5c-34a1-47ca-9319-49a2a381b3e8.png
-  hintToken: {key: monster_battle_hint_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
-  rule1Token: {key: monster_battle_rule1_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
-  rule2Token: {key: monster_battle_rule2_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
-  rule3Token: {key: monster_battle_rule3_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
-  rule4Token: {key: monster_battle_rule4_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
-  countdownToken: {key: monster_battle_countdown_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
-  failureToken: {key: monster_battle_failure_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
-  successToken: {key: monster_battle_success_babyrobot_petroleum,fontAttribute: {textColor: "#FFFFFF"}}
-  marqueeToken: {key: monster_battle_marquee_babyrobot}
-  summonGifts: # 招喚怪獸才需要填
-  - giftID: "2004_tw_gold_l"
-    probability: 3000 # n / 10000 * 100%
-  - giftID: "2004_tw_gold_m"
-    probability: 100 # n / 10000 * 100%
+#- id: monster_babyrobot_petroleum #寶寶機器人挖到石油
+#  hit_consume: 10
+#  duration: 60s
+#  stream_alive_threshold: 1m00s
+#  animation: "babyrobotpetroleum"
+#  available_dates:
+#  - start_date: "2020-03-01T18:00:00+08:00"
+#    end_date: "2020-04-01T18:00:00+08:00"
+#  appear_durations:
+#  - start_time: 00h00m00s
+#    end_time: 23h59m59s
+#  type: 1
+#  share_ratio: 50 # percentage
+#  profit_ratio: 35 # percentage
+#  bonus: 336
+#  weight: 0.2
+#  infoPageiconURL: https://cdn.17app.co/fb329dbe-9c30-4b40-af34-8d6479a8e3ec.png
+#  winnerPageiconURL: https://cdn.17app.co/d110ee5c-34a1-47ca-9319-49a2a381b3e8.png
+#  hintToken: {key: monster_battle_hint_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule1Token: {key: monster_battle_rule1_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule2Token: {key: monster_battle_rule2_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule3Token: {key: monster_battle_rule3_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule4Token: {key: monster_battle_rule4_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#  countdownToken: {key: monster_battle_countdown_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#  failureToken: {key: monster_battle_failure_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#  successToken: {key: monster_battle_success_babyrobot_petroleum,fontAttribute: {textColor: "#FFFFFF"}}
+#  marqueeToken: {key: monster_battle_marquee_babyrobot}
+#  summonGifts: # 招喚怪獸才需要填
+#  - giftID: "2004_tw_gold_l"
+#    probability: 3000 # n / 10000 * 100%
+#  - giftID: "2004_tw_gold_m"
+#    probability: 100 # n / 10000 * 100%
 
-- id: monster_babyrobot_shit #寶寶機器人挖到便便
-  hit_consume: 10
-  duration: 60s
-  stream_alive_threshold: 1m00s
-  animation: "babyrobotshit"
-  available_dates:
-  - start_date: "2020-03-01T18:00:00+08:00"
-    end_date: "2020-04-01T18:00:00+08:00"
-  appear_durations:
-  - start_time: 00h00m00s
-    end_time: 23h59m59s
-  type: 1
-  share_ratio: 50 # percentage
-  profit_ratio: 35 # percentage
-  bonus: 336
-  weight: 0.2
-  infoPageiconURL: https://cdn.17app.co/fb329dbe-9c30-4b40-af34-8d6479a8e3ec.png
-  winnerPageiconURL: https://cdn.17app.co/d185a5e8-7925-4bfd-abef-cd0b6a5c2283.png
-  hintToken: {key: monster_battle_hint_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
-  rule1Token: {key: monster_battle_rule1_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
-  rule2Token: {key: monster_battle_rule2_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
-  rule3Token: {key: monster_battle_rule3_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
-  rule4Token: {key: monster_battle_rule4_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
-  countdownToken: {key: monster_battle_countdown_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
-  failureToken: {key: monster_battle_failure_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
-  successToken: {key: monster_battle_success_babyrobot_shit,fontAttribute: {textColor: "#FFFFFF"}}
-  marqueeToken: {key: monster_battle_marquee_babyrobot}
-  summonGifts: # 招喚怪獸才需要填
-  - giftID: "2004_tw_gold_l"
-    probability: 3000 # n / 10000 * 100%
-  - giftID: "2004_tw_gold_m"
-    probability: 100 # n / 10000 * 100%
+#- id: monster_babyrobot_shit #寶寶機器人挖到便便
+#  hit_consume: 10
+#  duration: 60s
+#  stream_alive_threshold: 1m00s
+#  animation: "babyrobotshit"
+#  available_dates:
+#  - start_date: "2020-03-01T18:00:00+08:00"
+#    end_date: "2020-04-01T18:00:00+08:00"
+#  appear_durations:
+#  - start_time: 00h00m00s
+#    end_time: 23h59m59s
+#  type: 1
+#  share_ratio: 50 # percentage
+#  profit_ratio: 35 # percentage
+#  bonus: 336
+#  weight: 0.2
+#  infoPageiconURL: https://cdn.17app.co/fb329dbe-9c30-4b40-af34-8d6479a8e3ec.png
+#  winnerPageiconURL: https://cdn.17app.co/d185a5e8-7925-4bfd-abef-cd0b6a5c2283.png
+#  hintToken: {key: monster_battle_hint_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule1Token: {key: monster_battle_rule1_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule2Token: {key: monster_battle_rule2_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule3Token: {key: monster_battle_rule3_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule4Token: {key: monster_battle_rule4_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#  countdownToken: {key: monster_battle_countdown_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#  failureToken: {key: monster_battle_failure_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#  successToken: {key: monster_battle_success_babyrobot_shit,fontAttribute: {textColor: "#FFFFFF"}}
+#  marqueeToken: {key: monster_battle_marquee_babyrobot}
+#  summonGifts: # 招喚怪獸才需要填
+#  - giftID: "2004_tw_gold_l"
+#    probability: 3000 # n / 10000 * 100%
+#  - giftID: "2004_tw_gold_m"
+#    probability: 100 # n / 10000 * 100%
 
 #- id: monster_snowcow
 #  hit_consume: 10
@@ -139,71 +139,71 @@ monsters:
 #  - giftID: "ring"
 #    probability: 10000 # n / 10000 * 100%
 
-- id: monster_chichi
-  hit_consume: 10
-  duration: 60s
-  stream_alive_threshold: 1m00s
-  animation: "chichi"
-  available_dates:
-  - start_date: "2020-03-09T18:00:00+08:00"
-    end_date: "2020-05-31T18:00:00+08:00"
-  appear_durations:
-  - start_time: 00h00m00s
-    end_time: 23h59m59s
-  type: 0
-  share_ratio: 50 # percentage
-  profit_ratio: 35 # percentage
-  bonus: 336
-  weight: 1
-  infoPageiconURL: https://cdn.17app.co/b8be3603-0374-40a6-9cce-e966cdd6f392.png
-  winnerPageiconURL: https://cdn.17app.co/2b3dd650-ad98-4a0d-81b6-17ca38756ee4.png
-  hintToken: {key: monster_battle_summon_hint_chichi,fontAttribute: {textColor: "#FFFFFF"}}
-  rule1Token: {key: monster_battle_summon_rule1_chichi,fontAttribute: {textColor: "#FFFFFF"}}
-  rule2Token: {key: monster_battle_summon_rule2_chichi,fontAttribute: {textColor: "#FFFFFF"}}
-  rule3Token: {key: monster_battle_summon_rule3_chichi,fontAttribute: {textColor: "#FFFFFF"}}
-  rule4Token: {key: monster_battle_summon_rule4_chichi,fontAttribute: {textColor: "#FFFFFF"}}
-  countdownToken: {key: monster_battle_summon_countdown_chichi,fontAttribute: {textColor: "#FFFFFF"}}
-  failureToken: {key: monster_battle_summon_failure_chichi,fontAttribute: {textColor: "#FFFFFF"}}
-  successToken: {key: monster_battle_summon_success_chichi,fontAttribute: {textColor: "#FFFFFF"}}
+#- id: monster_chichi
+#  hit_consume: 10
+#  duration: 60s
+#  stream_alive_threshold: 1m00s
+#  animation: "chichi"
+#  available_dates:
+#  - start_date: "2020-03-09T18:00:00+08:00"
+#    end_date: "2020-05-31T18:00:00+08:00"
+#  appear_durations:
+# - start_time: 00h00m00s
+#    end_time: 23h59m59s
+#  type: 0
+#  share_ratio: 50 # percentage
+#  profit_ratio: 35 # percentage
+#  bonus: 336
+#  weight: 1
+#  infoPageiconURL: https://cdn.17app.co/b8be3603-0374-40a6-9cce-e966cdd6f392.png
+#  winnerPageiconURL: https://cdn.17app.co/2b3dd650-ad98-4a0d-81b6-17ca38756ee4.png
+#  hintToken: {key: monster_battle_summon_hint_chichi,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule1Token: {key: monster_battle_summon_rule1_chichi,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule2Token: {key: monster_battle_summon_rule2_chichi,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule3Token: {key: monster_battle_summon_rule3_chichi,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule4Token: {key: monster_battle_summon_rule4_chichi,fontAttribute: {textColor: "#FFFFFF"}}
+#  countdownToken: {key: monster_battle_summon_countdown_chichi,fontAttribute: {textColor: "#FFFFFF"}}
+#  failureToken: {key: monster_battle_summon_failure_chichi,fontAttribute: {textColor: "#FFFFFF"}}
+#  successToken: {key: monster_battle_summon_success_chichi,fontAttribute: {textColor: "#FFFFFF"}}
   #marqueeToken: {key: monster_battle_summon_marquee_zombiedog}
   #summonGifts: # 招喚怪獸才需要填
   #- giftID: "gift_lightstick_r" # 就愛你一個
   #  probability: 10000 # n / 10000 * 100%
 
 
-- id: monster_sharpshooter
-  hit_consume: 10
-  duration: 60s
-  stream_alive_threshold: 1m00s
-  animation: cowboy
-  available_dates:
-  - start_date: "2019-04-26T18:00:00+08:00"
-    end_date: "2022-05-03T00:00:00+08:00"
-  appear_durations:
-  - start_time: 00h00m00s
-    end_time: 24h00m00s
-  type: 1
-  summonGifts:
-  - giftID: "gift_lightstick_r"
-    probability: 10000 # n / 10000 * 100%
-  - giftID: "gift_lightstick_b"
-    probability: 10000 # n / 10000 * 100%
-  - giftID: "gift_chocolate"
-    probability: 10000 # n / 10000 * 100%
-  share_ratio: 50 # percentage
-  profit_ratio: 35 # percentage
-  bonus: 336
-  infoPageiconURL: https://assets-17app.akamaized.net/2eaf753e-20d3-429e-a172-eb14c44e21dc.png
-  winnerPageiconURL: https://assets-17app.akamaized.net/bd258999-59b2-4170-91e6-649dac5a1356.png
-  hintToken: {key: monster_battle_summon_hint_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
-  rule1Token: {key: monster_battle_summon_rule1_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
-  rule2Token: {key: monster_battle_summon_rule2_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
-  rule3Token: {key: monster_battle_summon_rule3_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
-  rule4Token: {key: monster_battle_summon_rule4_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
-  countdownToken: {key: monster_battle_summon_countdown_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
-  failureToken: {key: monster_battle_summon_failure_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
-  successToken: {key: monster_battle_summon_success_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
-  marqueeToken: {key: monster_battle_summon_marquee}
+#- id: monster_sharpshooter
+#  hit_consume: 10
+#  duration: 60s
+#  stream_alive_threshold: 1m00s
+#  animation: cowboy
+#  available_dates:
+#  - start_date: "2019-04-26T18:00:00+08:00"
+#    end_date: "2022-05-03T00:00:00+08:00"
+#  appear_durations:
+#  - start_time: 00h00m00s
+#    end_time: 24h00m00s
+#  type: 1
+#  summonGifts:
+#  - giftID: "gift_lightstick_r"
+#    probability: 10000 # n / 10000 * 100%
+#  - giftID: "gift_lightstick_b"
+#    probability: 10000 # n / 10000 * 100%
+#  - giftID: "gift_chocolate"
+#    probability: 10000 # n / 10000 * 100%
+#  share_ratio: 50 # percentage
+#  profit_ratio: 35 # percentage
+#  bonus: 336
+#  infoPageiconURL: https://assets-17app.akamaized.net/2eaf753e-20d3-429e-a172-eb14c44e21dc.png
+#  winnerPageiconURL: https://assets-17app.akamaized.net/bd258999-59b2-4170-91e6-649dac5a1356.png
+#  hintToken: {key: monster_battle_summon_hint_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule1Token: {key: monster_battle_summon_rule1_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule2Token: {key: monster_battle_summon_rule2_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule3Token: {key: monster_battle_summon_rule3_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule4Token: {key: monster_battle_summon_rule4_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+#  countdownToken: {key: monster_battle_summon_countdown_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+#  failureToken: {key: monster_battle_summon_failure_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+#  successToken: {key: monster_battle_summon_success_sharpshooter_baby,fontAttribute: {textColor: "#FFFFFF"}}
+#  marqueeToken: {key: monster_battle_summon_marquee}
 
 
 # - id: monster_chichi
@@ -667,32 +667,6 @@ monsters:
 #   marqueeToken: {key: monster_battle_summon_marquee_llama}
   
 animationLoader:
-# 5週年，只改了failure動畫，其餘為雪怪
-- animationID: anniversary5_attack
-  url: https://cdn.17app.co/4db85a84-ff00-40f7-8de9-d7d76d1ccc66.zip
-  MD5: 26540ff0938b47e4c4b644f5f85578a8
-  webpUrl: https://cdn.17app.co/6438fba1-8917-4dd1-a4a4-4a89abbfb4a5-q90-s1.webp
-  webpMD5: f00d58ccc82facca9db1c11f2a25b1ea
-- animationID: anniversary5_enter
-  url: https://cdn.17app.co/7b7f1ba0-d327-4668-b2a8-cb6d1e5dc7ab.zip
-  MD5: 837748587ea80052b0a5ef2291116d6f
-  webpUrl: https://cdn.17app.co/71f592cd-d51d-4652-89c8-98ee694d4f7f-q90-s1.webp
-  webpMD5: 9e8726cb08fd229ec0d2673e5169838d
-- animationID: anniversary5_failure
-  url: http://cdn.17app.co/7c75c36c-0708-4736-aec4-d1b478874522.zip
-  MD5: faf16df49177422d994046556fdd077e
-  webpUrl: https://cdn.17app.co/c4a1f841-e637-445d-97aa-dd4804c00284-q90-s1.webp
-  webpMD5: cd26ea7f4d69c2489fdcf5f24e386563
-- animationID: anniversary5_idle
-  url: https://cdn.17app.co/a3424dec-a1ca-4b4a-a968-33fca726ce46.zip
-  MD5: e7de0ce4c1d9afc4e12b18eb5c361c7e
-  webpUrl: https://cdn.17app.co/1ff5155d-fda3-4aa1-9b25-853eb185d4d4-q90-s1.webp
-  webpMD5: 26634797d8f1ccea9cea62960a1bf640
-- animationID: anniversary5_success
-  url: https://cdn.17app.co/46c7fd72-ac89-412b-935c-6806aefed621.zip
-  MD5: f0c3175c08c6a0c5d0c5dd1ffac042cc
-  webpUrl: https://cdn.17app.co/d8f90704-5cba-4e73-8ddb-622f37cbe446-q90-s1.webp
-  webpMD5: 204a0620cdb98a29c66f2290c1a14849
 
 #寶寶機器人挖到金幣 baby robot coint
 - animationID: babyrobotcoin_attack
