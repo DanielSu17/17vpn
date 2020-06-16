@@ -30,6 +30,72 @@
 # | NON_IAP | 2 |
 
 missions:
+#17 Model Runway2  觀看直播超過x秒
+  - ID: f8471d0f-1351-448c-8266-f9246e1ffbc6
+    type: 9
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2006_hk_model_m
+      amount: 5
+      expireTimeSecs: 259200
+    requirePhoneBinding: false
+    withReminder: false
+    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 15
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+    i18nDescriptionParams:
+    goalValue: 900
+    enableTimeRange:
+      - startTime: "2020-06-17 00:00:00 (GMT+0800)"
+        endTime: "2020-06-24 23:59:59 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
+#17 Model Runway1  直播間送x條留言
+  - ID: 03d8c06a-f895-4383-b345-5fe83fc34756
+    type: 5
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2006_hk_model_s
+      amount: 5
+      expireTimeSecs: 259200
+    requirePhoneBinding: true
+    withReminder: false
+    i18nTitle: baggage_mission_leave_comment_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 5
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_leave_comment_reward_desc
+    i18nDescriptionParams:
+    goalValue: 5
+    enableTimeRange:
+      - startTime: "2020-06-17 00:00:00 (GMT+0800)"
+        endTime: "2020-06-24 23:59:59 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
 #香港 3 周年慶典一 - 17 紅白對決音樂會-2
   - ID: 8c063790-3c83-4a88-b1ae-5b3d396032ff
     type: 8
