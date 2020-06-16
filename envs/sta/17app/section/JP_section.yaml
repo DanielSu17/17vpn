@@ -11,7 +11,7 @@
 
 sections:
   - id: TopBanner # Banner + super promote
-    name:
+    name: 
       key: tab_hot_2019q4_topbanner
     enable: true
     style: 1
@@ -21,105 +21,122 @@ sections:
     style: 7
     minGrids: 1
     more: false
+ # - id: OffcRecomm # 官方推薦
+ #   enable: true
+ #   style: 2
+ #   more: false
   - id: Suggestion # 猜你可能喜歡
-    name:
+    name: 
       key: tab_hot_2019q4_follow_suggestion
     enable: true
+    dedup: true
     style: 6
-    minGrids: 1
+    minGrids: 5
     more: true
-  - id: Latest # 新人
+  - id: Latest # 新人(和『最新』同邏輯)
     name:
       key: tab_hot_2019q4_newstreamer
     enable: true
-    dedup: true #重複
-    minGrids: 1
+    dedup: true
+    minGrids: 5
     style: 3
     more: true
-  - id: Music # legacy Music tab
+
+  - id: PK
     name:
-      key: tab_hot_2019q4_music
+      key: tab_hot_2019q4_pk
     enable: true
-    dedup: false #重複
-    minGrids: 1
+    dedup: false  #重複
+    minGrids: 6 # 2個直播間一組PK，3組以上顯示
     style: 3
     more: true
-  - id: Label # ゲーム（電競）
+
+  - id: Label 
+    labelID: jp_music
+    name: 
+      key: explore_jp_label_music
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+  - id: Label 
     labelID: jp_game
-    name:
-      key: tab_hot_2019q4_game
+    name: 
+      key: explore_jp_label_game
     enable: true
-    dedup: false #重複
-    minGrids: 1
+    dedup: true
+    minGrids: 5
     style: 3
     more: true
-  - id: Label # V-Liver（虛擬主播）
-    labelID: jp_vliver
-    name:
-      key: tab_hot_2019q4_vliver
-    enable: true
-    dedup: false #重複
-    minGrids: 1
-    style: 3
-    more: true
-  - id: Label # ファッション（時尚）
-    labelID: jp_fashion
-    name:
-      key: tab_hot_2019q4_fashion
-    enable: true
-    dedup: false #重複
-    minGrids: 1
-    style: 3
-    more: true
-  - id: Label # パフォーマー（Performer）
-    labelID: jp_performer
-    name:
-      key: tab_hot_2019q4_performer
-    enable: true
-    dedup: false #重複
-    minGrids: 1
-    style: 3
-    more: true
-  - id: Label # ホビー（街頭藝人）
-    labelID: jp_street_artist
-    name:
-      key: tab_hot_2019q4_street_artist
-    enable: true
-    dedup: false #重複
-    minGrids: 1
-    style: 3
-    more: true
-  - id: Label # バラエティ（variety）
-    labelID: jp_variety
-    name:
-      key: tab_hot_2019q4_variety
-    enable: true
-    dedup: false #重複
-    minGrids: 1
-    style: 3
-    more: true
-  - id: Label # 雑談（談話）
-    labelID: jp_chat
-    name:
-      key: tab_hot_2019q4_chat
-    enable: true
-    dedup: false #重複
-    minGrids: 1
-    style: 3
-    more: true
-  - id: Show # 熱播節目
-    name:
-      key: tab_hot_2019q4_program
-    enable: true
-    minGrids: 1
-    style: 4
-    more: false
   - id: Vod # 熱門影音
     name:
       key: tab_hot_2019q4_vod
     enable: true
-    minGrids: 1
+    minGrids: 5
     style: 5
     more: false
-
+  - id: Label 
+    labelID: jp_vliver
+    name: 
+      key: explore_jp_label_vliver
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+  - id: Label 
+    labelID: jp_fashion
+    name: 
+      key: streamer_jp_label_fashion
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+  - id: Label 
+    labelID: jp_performer
+    name: 
+      key: streamer_jp_label_performer
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+  - id: Label 
+    labelID: jp_hobby
+    name: 
+      key: streamer_jp_label_hobby
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+  - id: Label 
+    labelID: jp_variety
+    name: 
+      key: streamer_jp_label_variety
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+  - id: Label 
+    labelID: jp_freetalk
+    name: 
+      key: streamer_jp_label_freetalk
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+  - id: Label 
+    labelID: jp_show
+    name: 
+      key: streamer_label_show
+    enable: true
+    dedup: false
+    minGrids: 3
+    style: 4
+    more: true
 
