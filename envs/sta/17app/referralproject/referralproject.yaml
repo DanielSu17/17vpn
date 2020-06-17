@@ -12,10 +12,10 @@ endTime: "2020-11-27 23:59:59 (GMT+0800)"
 referralMsg:
   key: invite_code_text
   params:
-      - value: "{referrerOpenID}"
-      - value: "{referralCode}"
-      - value: 5
-      - value: 2
+    - value: "{referrerOpenID}"
+    - value: "{referralCode}"
+    - value: 5
+    - value: 2
 referralURL: https://17apps.onelink.me/i7CY/f25f848b
 
 ruleTitle:
@@ -84,4 +84,42 @@ missions:
     i18nDescription: invitation_mission_view_content
     i18nDescriptionParams:
     goalValue: 2
+    withReminder: false
+  - ID: referral-project-watch-stream-tw
+    type: 9
+    reward:
+      rewardType: 1
+      rewardID: gift_bag_love99
+      amount: 5
+      expireTimeSecs: 86400
+    i18nTitle: invitation_mission_view_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 5
+      - needMap: false
+        mapOption: 0
+        value: 2
+    i18nDescription: invitation_mission_view_content
+    i18nDescriptionParams:
+    goalValue: 10
+    withReminder: false
+  - ID: referral-project-topup-tw
+    type: 8
+    reward:
+      rewardType: 1
+      rewardID: gift_bag_love99
+      amount: 5
+      expireTimeSecs: 86400
+    i18nTitle: invitation_mission_view_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 5
+      - needMap: false
+        mapOption: 0
+        value: 2
+    i18nDescription: invitation_mission_view_content
+    i18nDescriptionParams:
+    goalValue: 1
     withReminder: false
