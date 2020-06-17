@@ -44,12 +44,14 @@
 
 # For Jordan celebrity elqaq (853cbf78-2317-417f-8d05-285a6f61ad88)
 # Ref: https://17media.slack.com/archives/C466YU363/p1588577338078200
-- startTime: "2020-06-16 20:20:00 (GMT+0800)"
-  endTime: "2020-06-16 22:30:00 (GMT+0800)"
+- startTime: "2020-06-17 20:20:00 (GMT+0800)"
+  endTime: "2020-06-17 23:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 80
   - name: k8sprod-golives-main
-    minReplicas: 50
+    minReplicas: 30
   - name: k8sprod-gotrade-main
     minReplicas: 8
+  - name: k8sprod-gocells-main
+    minReplicas: 15
