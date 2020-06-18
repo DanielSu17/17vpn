@@ -46,3 +46,30 @@ whiteList:
   - 567e0b5d-1516-4ce0-b4e8-bec4e756d5ae # kevinmh
   - 3799d926-2ae2-4942-a510-847a017921cc # kevinmh01
   - 9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba # kevinmh03
+
+# freeWithdrawFeeForAll
+# enable to allow withFee = false for all users
+# check if user can waive fee if disabled
+freeWithdrawFeeForAll: false
+# withdrawFeeRate sets the withdraw fee rate
+# ex: 0.01
+withdrawFeeRate: 0.025
+
+# maps currency to its revenue withdraw lower bound
+# ex: USD: 100.001
+revenueWithdrawLowerBound:
+  TWD: 3000
+  USD: 100
+  JPY: 10000
+  HKD: 778
+  SGD: 140
+  MYR: 435
+# maps currency to its reward withdraw lower bound
+# ex: USD: 100.001
+rewardWithdrawLowerBound:
+  TWD: 3000
+  USD: 100
+  JPY: 10000
+  HKD: 778
+  SGD: 140
+  MYR: 435

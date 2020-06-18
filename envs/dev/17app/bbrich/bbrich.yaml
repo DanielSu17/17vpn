@@ -40,3 +40,30 @@ depositSwitchOn: true
 claimSwitchOn: true
 transferSwitchOn: true
 withdrawSwitchOn: true
+
+# freeWithdrawFeeForAll
+# enable to allow withFee = false for all users
+# check if user can waive fee if disabled
+freeWithdrawFeeForAll: false
+# withdrawFeeRate sets the withdraw fee rate
+# ex: 0.01
+withdrawFeeRate: 0.025
+
+# maps currency to its revenue withdraw lower bound
+# ex: USD: 100.001
+revenueWithdrawLowerBound:
+  TWD: 3000
+  USD: 100
+  JPY: 10000
+  HKD: 778
+  SGD: 140
+  MYR: 435
+# maps currency to its reward withdraw lower bound
+# ex: USD: 100.001
+rewardWithdrawLowerBound:
+  TWD: 3000
+  USD: 100
+  JPY: 10000
+  HKD: 778
+  SGD: 140
+  MYR: 435
