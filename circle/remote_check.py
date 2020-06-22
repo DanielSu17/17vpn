@@ -25,7 +25,7 @@ def highlight(text, status):
     return '\x1b[%sm%s\x1b[0m' % (';'.join(attrs), text)
 
 def remote_check_configs(env, files_list):
-    headers = {'accesstoken': access_token}
+    headers = {'accesstoken': access_token, "origin": "config.remote.check"}
     metadata = {}
     files = {}
     for idx, file in enumerate(files_list):
