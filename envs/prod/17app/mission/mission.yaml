@@ -30,6 +30,38 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: 0209b6d5-7a1c-4631-b7cd-d6badcd9f93a
+    type: 9
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 21
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2006_tw_anniversary5_a_bp
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    withReminder: false
+    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 10
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+    i18nDescriptionParams:
+    goalValue: 600
+    enableTimeRange:
+      - startTime: "2020-06-22 18:00:00 (GMT+0800)"
+        endTime: "2020-07-03 00:00:00 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
 # 17 DJ Night Out 2  節目直播間送x條留言
   - ID: 88db06e4-7887-4f7c-8f30-a1086bbe3fe0
     type: 5
@@ -532,38 +564,6 @@ missions:
     enableTimeRange:
       - startTime: "2020-06-27 00:00:00 (GMT+0800)"
         endTime: "2020-06-30 23:59:59 (GMT+0800)"
-    refIDs:
-    platforms:
-      - android
-      - ios
-
-  - ID: 2f9cbe14-937c-4665-a08f-17dde4413d59
-    type: 9
-    lifeCycle: 0
-    targetAudience: 0
-    levelRange:
-      min: 21
-      max: 999
-    reward:
-      rewardType: 1
-      rewardID: 2006_tw_anniversary5_a_bp
-      amount: 1
-      expireTimeSecs: 86400
-    requirePhoneBinding: false
-    withReminder: false
-    i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-    i18nTitleParams:
-      - needMap: false
-        mapOption: 0
-        value: 10
-    i18nContent: 
-    i18nContentParams:
-    i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-    i18nDescriptionParams:
-    goalValue: 600
-    enableTimeRange:
-      - startTime: "2020-06-22 18:00:00 (GMT+0800)"
-        endTime: "2020-07-03 00:00:00 (GMT+0800)"
     refIDs:
     platforms:
       - android
