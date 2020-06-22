@@ -1,4 +1,4 @@
-max: 18	# 0 means disable feature
+max: 20	# 0 means disable feature
 check_interval: 1m00s
 big_brother_prefix: "give_me_five"
 nian_prefix: "nian"
@@ -140,59 +140,59 @@ monsters:
   - giftID: "2004_tw_gold_m"
     probability: 100 # n / 10000 * 100%
 
-- id: monster_snowcow
-  hit_consume: 10
-  duration: 60s
-  stream_alive_threshold: 1m00s
-  animation: "snowcow"
-  available_dates:
-  - start_date: "2020-03-01T18:00:00+08:00"
-    end_date: "2020-04-01T18:00:00+08:00"
-  appear_durations:
-  - start_time: 00h00m00s
-    end_time: 23h59m59s
-  type: 0
-  share_ratio: 50 # percentage
-  profit_ratio: 35 # percentage
-  bonus: 336
-  weight: 0.5
-  infoPageiconURL: https://cdn.17app.co/8d306f62-4bcd-400b-9280-10a60abdc650.png
-  winnerPageiconURL: https://cdn.17app.co/15e37928-e326-4afa-af63-d5ca3296a5fc.png
-  hintToken: {key: monster_battle_hint_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
-  rule1Token: {key: monster_battle_rule1_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
-  rule2Token: {key: monster_battle_rule2_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
-  rule3Token: {key: monster_battle_rule3_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
-  rule4Token: {key: monster_battle_rule4_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
-  countdownToken: {key: monster_battle_countdown_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
-  failureToken: {key: monster_battle_failure_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
-  successToken: {key: monster_battle_success_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
+#- id: monster_snowcow
+#  hit_consume: 10
+#  duration: 60s
+#  stream_alive_threshold: 1m00s
+#  animation: "snowcow"
+#  available_dates:
+#  - start_date: "2020-03-01T18:00:00+08:00"
+#    end_date: "2020-04-01T18:00:00+08:00"
+#  appear_durations:
+#  - start_time: 00h00m00s
+#    end_time: 23h59m59s
+#  type: 0
+#  share_ratio: 50 # percentage
+#  profit_ratio: 35 # percentage
+#  bonus: 336
+#  weight: 0.5
+#  infoPageiconURL: https://cdn.17app.co/8d306f62-4bcd-400b-9280-10a60abdc650.png
+#  winnerPageiconURL: https://cdn.17app.co/15e37928-e326-4afa-af63-d5ca3296a5fc.png
+#  hintToken: {key: monster_battle_hint_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule1Token: {key: monster_battle_rule1_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule2Token: {key: monster_battle_rule2_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule3Token: {key: monster_battle_rule3_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule4Token: {key: monster_battle_rule4_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
+#  countdownToken: {key: monster_battle_countdown_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
+#  failureToken: {key: monster_battle_failure_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
+#  successToken: {key: monster_battle_success_snowcow,fontAttribute: {textColor: "#FFFFFF"}}
 
-- id: monster_chichi
-  hit_consume: 10
-  duration: 60s
-  stream_alive_threshold: 1m00s
-  animation: "chichi"
-  available_dates:
-  - start_date: "2020-03-09T18:00:00+08:00"
-    end_date: "2020-05-31T18:00:00+08:00"
-  appear_durations:
-  - start_time: 00h00m00s
-    end_time: 23h59m59s
-  type: 0
-  share_ratio: 50 # percentage
-  profit_ratio: 35 # percentage
-  bonus: 336
-  weight: 0.5
-  infoPageiconURL: https://cdn.17app.co/b8be3603-0374-40a6-9cce-e966cdd6f392.png
-  winnerPageiconURL: https://cdn.17app.co/2b3dd650-ad98-4a0d-81b6-17ca38756ee4.png
-  hintToken: {key: monster_battle_summon_hint_chichi,fontAttribute: {textColor: "#FFFFFF"}}
-  rule1Token: {key: monster_battle_summon_rule1_chichi,fontAttribute: {textColor: "#FFFFFF"}}
-  rule2Token: {key: monster_battle_summon_rule2_chichi,fontAttribute: {textColor: "#FFFFFF"}}
-  rule3Token: {key: monster_battle_summon_rule3_chichi,fontAttribute: {textColor: "#FFFFFF"}}
-  rule4Token: {key: monster_battle_summon_rule4_chichi,fontAttribute: {textColor: "#FFFFFF"}}
-  countdownToken: {key: monster_battle_summon_countdown_chichi,fontAttribute: {textColor: "#FFFFFF"}}
-  failureToken: {key: monster_battle_summon_failure_chichi,fontAttribute: {textColor: "#FFFFFF"}}
-  successToken: {key: monster_battle_summon_success_chichi,fontAttribute: {textColor: "#FFFFFF"}}
+#- id: monster_chichi
+#  hit_consume: 10
+#  duration: 60s
+#  stream_alive_threshold: 1m00s
+#  animation: "chichi"
+#  available_dates:
+#  - start_date: "2020-03-09T18:00:00+08:00"
+#    end_date: "2020-05-31T18:00:00+08:00"
+#  appear_durations:
+#  - start_time: 00h00m00s
+#    end_time: 23h59m59s
+#  type: 0
+#  share_ratio: 50 # percentage
+#  profit_ratio: 35 # percentage
+#  bonus: 336
+#  weight: 0.5
+#  infoPageiconURL: https://cdn.17app.co/b8be3603-0374-40a6-9cce-e966cdd6f392.png
+#  winnerPageiconURL: https://cdn.17app.co/2b3dd650-ad98-4a0d-81b6-17ca38756ee4.png
+#  hintToken: {key: monster_battle_summon_hint_chichi,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule1Token: {key: monster_battle_summon_rule1_chichi,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule2Token: {key: monster_battle_summon_rule2_chichi,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule3Token: {key: monster_battle_summon_rule3_chichi,fontAttribute: {textColor: "#FFFFFF"}}
+#  rule4Token: {key: monster_battle_summon_rule4_chichi,fontAttribute: {textColor: "#FFFFFF"}}
+#  countdownToken: {key: monster_battle_summon_countdown_chichi,fontAttribute: {textColor: "#FFFFFF"}}
+#  failureToken: {key: monster_battle_summon_failure_chichi,fontAttribute: {textColor: "#FFFFFF"}}
+#  successToken: {key: monster_battle_summon_success_chichi,fontAttribute: {textColor: "#FFFFFF"}}
 
 #- id: monster_chichi_2
 #  hit_consume: 10
