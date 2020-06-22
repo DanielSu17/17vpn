@@ -1,0 +1,16 @@
+# for mongo table migration
+# if we want to migrate livestream to livestreamV2
+# step 1: prepare new table data
+# step 2: turn shield
+# step 3: update this config with
+#         readOnlyTables: ["livestream"]
+# step 4: wait config deployed to all pods
+# step 5: check if all writing operations stop on mongo table
+# step 6: sync new table with old one if needed
+# step 7: update this config with
+#         readOnlyTables: []
+#         tableMapping:
+#           "livestream": "livestreamV2"
+# step 8: turn off shield
+tableMapping:
+readOnlyTables: []
