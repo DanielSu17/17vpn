@@ -1,7 +1,15 @@
 # JP label config
 
 labelInfos:
- 
+
+  # Don't remove jp_chat, it's used by e2e test.
+  - id: "jp_chat" # 雑談
+    labelID: 20
+    label: {key: streamer_jp_label_freetalk} #不確定
+    order: 8
+    iconURL: "h"
+    isHide: true
+
   - id: "jp_recommend" # レコメンド,推薦
     type: 1
     labelID: 
@@ -251,4 +259,3 @@ labelWhiteList:
 
   jp_freetalk:
     - 8d8f7a87-b97b-4fa6-8a3a-f753e1c18d44 # かいひ🌏Kaihi🐠✨
-    - 8a8a5d48-6297-11ea-bc55-0242ac130003 # baas_e2e_bot_jp
