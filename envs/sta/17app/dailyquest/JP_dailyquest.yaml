@@ -18,6 +18,37 @@ enableSignInAndNewbieRewardAtSameTime: false
 # do not dailySignIn reward after register midnight
 noAnimationTTLAfterRegister: 86400
 
+continuousSignInEvent:
+  startTime: "2020-06-12 17:00:00 (GMT+0800)"
+  endTime: "2020-06-30 23:59:59 (GMT+0800)"
+  butlerImageURL: "https://i.imgur.com/KYt5U04.jpg"
+  rewards:
+    - dayMin: 1 # 連續登入幾天
+      dayMax: 6 # 連續登入幾天
+      giftID: "test_duck"
+      amount: 1 # 幾個
+      expireSecs: 43200 # 有效秒數
+    - dayMin: 7 # 連續登入幾天
+      dayMax: 13 # 連續登入幾天
+      giftID: "test_duck"
+      amount: 2 # 幾個
+      expireSecs: 43200 # 有效秒數
+    - dayMin: 14 # 連續登入幾天
+      dayMax: 20 # 連續登入幾天
+      giftID: "test_duck"
+      amount: 4 # 幾個
+      expireSecs: 43200 # 有效秒數
+    - dayMin: 21 # 連續登入幾天
+      dayMax: 27 # 連續登入幾天
+      giftID: "test_duck"
+      amount: 8 # 幾個
+      expireSecs: 43200 # 有效秒數
+    - dayMin: 28 # 連續登入幾天
+      dayMax: 99999 # 連續登入幾天, 99999 = 273years
+      giftID: "test_duck"
+      amount: 16 # 幾個
+      expireSecs: 43200 # 有效秒數
+
 # daily for sign-in reward for voucher version
 enableSignInReward: true
 signInRewards:
