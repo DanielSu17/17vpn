@@ -46,3 +46,16 @@
     minReplicas: 8
   - name: k8sprod-gocells-main
     minReplicas: 15
+
+# For 0627 Miyavi
+- startTime: "2020-06-27 18:50:00 (GMT+0800)"
+  endTime: "2020-06-27 21:30:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 90
+  - name: k8sprod-golives-main
+    minReplicas: 30
+  - name: k8sprod-gotrade-main
+    minReplicas: 6
+  - name: k8sprod-gocells-main
+    minReplicas: 40
