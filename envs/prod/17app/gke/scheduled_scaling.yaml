@@ -6,27 +6,18 @@
     minReplicas: 20
 
 # Followings are actual schedules
-# GCP Outage
-- startTime: "2020-04-01 18:00:00 (GMT+0800)"
-  endTime: "2020-04-02 01:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 60
-  - name: k8sprod-golives-main
-    minReplicas: 40
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-
 # For JP celebrity gackt_official
-- startTime: "2020-05-01 17:48:00 (GMT+0800)"
-  endTime: "2020-05-01 19:30:00 (GMT+0800)"
+- startTime: "2020-06-24 19:48:00 (GMT+0800)"
+  endTime: "2020-06-24 21:30:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
-    minReplicas: 100
+    minReplicas: 90
   - name: k8sprod-golives-main
-    minReplicas: 20
+    minReplicas: 30
   - name: k8sprod-gotrade-main
     minReplicas: 6
+  - name: k8sprod-gocells-main
+    minReplicas: 40
 
 # For TW Push Notification
 # Ref: https://17media.slack.com/archives/C466YU363/p1588912833206200
