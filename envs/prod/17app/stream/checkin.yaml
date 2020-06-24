@@ -2,12 +2,22 @@
 #
 # <minDuration> is the min duration in terms of seconds that a stream will be counted in consecutive streams.
 enable: true
+
 # 是否需要斷勾
-isResetCount: false
+isResetCount: true
+
+# 舊版的斷勾不會使用，當簽到次數等於count會出現一個 Checkin message
 count: 5
+
+# 控制允許不簽到的次數
 toleranceCount: 1
+
+# 新版的斷勾
 migrateV2: false # v2 use tolerance
+
+# 有效開播時間，秒
 minDuration: 1800
+
 levelToRock: 2
 useLocalcache: true
 streamInfoUsePagingv2: true
