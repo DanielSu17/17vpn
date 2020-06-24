@@ -74,19 +74,6 @@
 #          requirements:
 #            - merchandiseID: "mockMerchandiseID"
 #
-# TODO: remove after migrate to rewardEvents
-rewards:
-  # this rule is for e2e reward test, DO NOT REMOVE IT
-  - rules:
-      - reward:
-          points: 70
-          premiumBaby:
-            days: 1
-        requirements:
-          - sellingChannels:
-              include:
-                - 1
-            merchandiseID: "media17_points_330"
 
 secretIAPConditions:
 

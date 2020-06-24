@@ -74,28 +74,6 @@
 #          requirements:
 #            - merchandiseID: "mockMerchandiseID"
 #
-# TODO: remove after migrate to rewardEvents
-rewards:
-  - startTime: "2019-12-31T12:00:00+08:00"
-    endTime: "2020-01-12T23:59:59+08:00"
-    onlyAvailableInSameRegion: true
-    rules:
-      - reward:
-          points: 3540
-        requirements:
-          - sellingChannels:
-              include:
-                - 1
-                - 2
-            merchandiseID: "media17_points_1380"
-      - reward:
-          points: 330
-        requirements:
-          - sellingChannels:
-              include:
-                - 1
-                - 2
-            merchandiseID: "media17_points_130"
 
 secretIAPConditions:
 
