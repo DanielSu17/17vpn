@@ -1,9 +1,9 @@
 enable: true
 senderMatchingSecond: 60 # 主動方隨機配對中等待的秒數, pk.match lock time
 receiverMatchingSecond: 30 # 被動方回應的時間
-gameDurationSecond: 180 # ＰＫ遊戲時間
+gameDurationSecond: 40 # ＰＫ遊戲時間
 countdownSecond: 15 # 倒數時間閃爍icon
-rewardSecond: 30 # 遊戲結算完到最後關閉的時間
+rewardSecond: 15 # 遊戲結算完到最後關閉的時間
 readyWaitingSecond: 30 # 等待啟動合流sdk時間
 timeoutSecond: 30 # 主播多久沒打api判斷斷線用的時間, changing [timeoutSecond] to a larger value may cause end-to-end tests to fail (please refer to api/app/api/e2e/pk_test.go)
 consecutiveRejectionPeriod: 30 #(累計時間) 這表示 "1" 小時內有超過3次，就會有3分鐘不會被配對到，超過一小時沒有拒絕 就會重0開始算
