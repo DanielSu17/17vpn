@@ -30,6 +30,45 @@
 # | NON_IAP | 2 |
 
 missions:
+  - ID: a49f4773-24c2-482e-9690-69b7414280ac
+    type: 8
+    lifeCycle: 1
+    targetAudience: 2
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: gift_texture_funny_glass
+      amount: 2
+      expireTimeSecs: 86399
+    requirePhoneBinding: false
+    withReminder: false
+    i18nTitle: baggage_mission_IAP_reward_jp_daily_xmas_name
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 1
+    i18nContent:
+    i18nContentParams:
+    i18nDescription: baggage_mission_IAP_reward_jp_pigcatbeard_desc
+    i18nDescriptionParams:
+      - needMap: false
+        mapOption: 0
+        value: 1
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2020-06-26 12:00:00 (GMT+0800)"
+        endTime: "2020-06-30 23:59:59 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
+
+
+
+
   - ID: b60936c9-848d-4c27-9fcf-f932dafb86c2
     type: 8
     lifeCycle: 1
