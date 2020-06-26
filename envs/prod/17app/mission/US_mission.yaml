@@ -30,6 +30,42 @@
 # | NON_IAP | 2 |
 
 missions:
+#IAP promotion for newbies
+  - ID: 33dae081-690a-49db-90b4-f94fd55dc1fb
+    type: 8
+    lifeCycle: 1
+    targetAudience: 2
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: gift_texture_us_iap_newbie
+      amount: 2
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    withReminder: false
+    i18nTitle: baggage_mission_IAP_reward_jp_daily_xmas_name
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 1
+    i18nContent:
+    i18nContentParams:
+    i18nDescription: baggage_mission_IAP_reward_jp_pigcatbeard_desc
+    i18nDescriptionParams:
+      - needMap: false
+        mapOption: 0
+        value: 1
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2020-06-26 12:00:00 (GMT+0900)"
+        endTime: "2021-06-26 23:59:59 (GMT+0900)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
 
   - ID: 65561632-fc3d-40e3-b96e-237ae8590ef5
     type: 10
