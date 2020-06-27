@@ -85,4 +85,4 @@ rate_limits:
 
 # - {url: "/api/v1/money/log/revenue",                            method: "GET",     flow_per_second: 10,          reservoir_size: 10,    scope: by_global}
 
-# - {url: "/api/v1/logs",                                 method: "POST",    flow_per_second: 125,          reservoir_size: 250,    scope: by_global}
+- {url: "/api/v1/logs",                                 method: "POST",    flow_per_second: 2000,          reservoir_size: 2500,    scope: by_global}
