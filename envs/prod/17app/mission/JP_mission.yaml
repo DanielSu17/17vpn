@@ -30,6 +30,64 @@
 # | NON_IAP | 2 |
 
 missions:
+#全ユーザー　7/7限定 ¥120以上を購入すると「やっと会えたね」1個（1回まで）
+  - ID: 542d8ae9-e4db-4de2-90bf-c660b337b7c2 
+    type: 8
+    lifeCycle: 1
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: "2007_charge_02"
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    i18nTitle: baggage_mission_IAP_reward_jp_daily_xmas_name
+    i18nTitleParams:
+    i18nContent:
+    i18nContentParams:
+    i18nDescription: baggage_mission_IAP_reward_jp_C_desc
+    i18nDescriptionParams:
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2020-07-07 00:00:00 (GMT+0900)"
+        endTime: "2020-07-07 00:59:59 (GMT+0900)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
+#全ユーザー　7/1~ 7/31期間中に¥120以上を購入すると「海の首飾り」3個（1回まで）
+  - ID: d1c95b2d-69e5-419d-b282-db47728ad1ad 
+    type: 8
+    lifeCycle: 1
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: "2007_charge_01"
+      amount: 3
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    i18nTitle: baggage_mission_IAP_reward_jp_daily_xmas_name
+    i18nTitleParams:
+    i18nContent:
+    i18nContentParams:
+    i18nDescription: baggage_mission_IAP_reward_jp_B_desc
+    i18nDescriptionParams:
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2020-07-01 12:00:00 (GMT+0900)"
+        endTime: "2020-07-31 23:59:59 (GMT+0900)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
 #全ユーザー　6/1~ 6/30期間中に¥120以上を購入すると「ソーシャルディスタンス」3個（1回まで）
   - ID: aeceae1f-b0b2-44d5-a389-e1ed9d2f5c25
     type: 8
@@ -58,7 +116,6 @@ missions:
     platforms:
       - android
       - ios
-
 
 #全ユーザー　5/1~ 5/31期間中に330c購入すると「おうちで過ごそう」3個（1回まで）
   - ID: 07462849-16fa-48fc-b2e7-9468f75d1c1f
