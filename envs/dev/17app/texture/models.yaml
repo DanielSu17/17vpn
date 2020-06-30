@@ -1,22 +1,35 @@
+# model 上架方法
+# 1. 使用 slackbot !file upload-with-name
+#   a. 臉部濾鏡: 檔名取 megvii_facepp_model_[iOS/Android]_[現在的 Unix Timestamp]
+#       ps: 可以參考現在已經設定的檔名
+#   b. 手勢濾鏡: 檔名曲 megviiegg_model_[現在的 Unix Timestamp]
+# 2.  versionUpperBound: "3.104.0"
+#     versionLowerBound: "3.15.0"
+#   -> 代表支援這個 model 的版本是 3.15.0 <= version < 3.104.0
+
+#######################################
+# face model 到期: 2020-10-31 00:00:00 #
+#######################################
 # face texture
 devices:
   ios:
     # package name:
     # - com.machipopo.story17
     # - com.17media.Machi-17
-    # 贴纸功能 有效期至2020-04-30
-    # 瘦脸大眼 有效期至2020-09-30
-    # 基础美颜 有效期至2020-10-31
-    # key, modelURL and modelMD5 will be deprecated after 2020/4/20 and replaced by models
-    key: "+MTtVaafE1aA8tpUDDRKa24uxbROvzleR2jIN3PSIqAR8rBT+Xmw0gyae1x+m+Ga+8u/sCfqcqfNVd/A74/8uU3c86GHQtIyPwGJ0FA1iw9Nnv1nBC3Xgs5jMf7Nj/WPxlqlGdE7sFgxFQfJPCf64ZfB3uqa95Y1Vax+I2fmR+FJyvpJlmks9ezHjfzfGSJKXbph2WKFtcTDIUptdcAxv/Shxrys+8pkLW1SVINkw4ZlbclHUS8As4jou6dmhmH5rtDKTSU1Y/U2YV/dD1RCDv2qHnv9230zQATQ86QKTe5+gHlUTFY64Zfr2Lg5SmcAzQscX1SCQaXQxWR1T1MlJOsY11OqDrFcklV6BI9LrYjXHR0kOY9tQOH+JWDMF+g1vqXlitvRh2XoDtAIWTZvy8KvyUrc4jo7+U+do9qSV2JT1g9Zb9n/K9GYoW8Kx4t24pWYIStbxSO8JmqFZj0YGMss/ahXpk//obCo0vwLvPSYXIOnd5eXQ1vDlCt3hB3TGTwUPf7cK9vnrxdrk+bPNKFOELhhfLgnCKtw5yA0ewV3G54LSVW6u6EEluQzH+6Af/d+RDXzqFaIFzAxaCeQ2iBB2X1ZVsrcPVT9farvVw=="
-    modelURL: "http://cdn.17app.co/megvii_facepp_model_iOS_1559358000"
-    modelMD5: "8ef026f00d26f65d5ec943c00471b35a"
+    # 贴纸功能 有效期至2020-10-31 00:00:00
+    # 瘦脸大眼 有效期至2020-10-31 00:00:00
+    # 基础美颜 有效期至2020-10-31 00:00:00
     models:
-      - key: "+MTtVaafE1aA8tpUDDRKa24uxbROvzleR2jIN3PSIqAR8rBT+Xmw0gyae1x+m+Ga+8u/sCfqcqfNVd/A74/8uU3c86GHQtIyPwGJ0FA1iw9Nnv1nBC3Xgs5jMf7Nj/WPxlqlGdE7sFgxFQfJPCf64ZfB3uqa95Y1Vax+I2fmR+FJyvpJlmks9ezHjfzfGSJKXbph2WKFtcTDIUptdcAxv/Shxrys+8pkLW1SVINkw4ZlbclHUS8As4jou6dmhmH5rtDKTSU1Y/U2YV/dD1RCDv2qHnv9230zQATQ86QKTe5+gHlUTFY64Zfr2Lg5SmcAzQscX1SCQaXQxWR1T1MlJOsY11OqDrFcklV6BI9LrYjXHR0kOY9tQOH+JWDMF+g1vqXlitvRh2XoDtAIWTZvy8KvyUrc4jo7+U+do9qSV2JT1g9Zb9n/K9GYoW8Kx4t24pWYIStbxSO8JmqFZj0YGMss/ahXpk//obCo0vwLvPSYXIOnd5eXQ1vDlCt3hB3TGTwUPf7cK9vnrxdrk+bPNKFOELhhfLgnCKtw5yA0ewV3G54LSVW6u6EEluQzH+6Af/d+RDXzqFaIFzAxaCeQ2iBB2X1ZVsrcPVT9farvVw=="
+      - key: "0FshKS++WnHsOPxIVnEowSKlG20cJREieEahJjRKsuzd9jTIDovnlRW4qOg45kyi0v/1koPi3+mD0he/2T+UAzdUlkEJPRLaGdnl5dJfpSX4+W93v/UzEJvR/Aw1ogDOAIuQui6zgb2ul58ckyFunvpkYcLhO3oSmoxcfs0FLC5NlM5pKUJm6gWHUWGFw1vMy8RVRSRrH6bWoBodhozqxhaVQHt7bJ9KCIdAbnTti4zkGM0G4RFo9UbSdAYLq89WIw+BY6ApxT7oQJiREoFAfOgjTrSxAACawk5EUeMIETBKXs1haOp+mIrNzAGOFcpHz0+QIzzFT4M1Xgr1l3VRn8hQBJJdglb9c+zvDmxmRc66UC53wdXpKzS6M1/ExwBh3nh3KHO9RQJBykPYBqD5337u/xZfrY7K+M1Dg0AygLMXPphc9fnirzlBiyxHaAjBWLbbMHJbhfOgkFLCFwkqqXuJyDCrxmRvwPHAeeyF27/Ube7pz+nYBc+QCQfyj5eYT9apeO5ul915DdMjDGyaS505KRr4JWGMWpkg6LZTtHbMbHcEQEq8Md0Y54P6LuIFb937PZjThDhEL/RByyD4EMM+kyTB9qktEDOF88ITzdbjxHd2KZs4OsHE6X997gk="
         modelURL: "http://cdn.17app.co/megvii_facepp_model_iOS_1559358000"
         modelMD5: "8ef026f00d26f65d5ec943c00471b35a"
-        versionUpperBound: "9.99.9"
-        versionLowerBound: "0.0.0"
+        versionUpperBound: "3.104.0"
+        versionLowerBound: ""
+      - key: "0FshKS++WnHsOPxIVnEowSKlG20cJREieEahJjRKsuzd9jTIDovnlRW4qOg45kyi0v/1koPi3+mD0he/2T+UAzdUlkEJPRLaGdnl5dJfpSX4+W93v/UzEJvR/Aw1ogDOAIuQui6zgb2ul58ckyFunvpkYcLhO3oSmoxcfs0FLC5NlM5pKUJm6gWHUWGFw1vMy8RVRSRrH6bWoBodhozqxhaVQHt7bJ9KCIdAbnTti4zkGM0G4RFo9UbSdAYLq89WIw+BY6ApxT7oQJiREoFAfOgjTrSxAACawk5EUeMIETBKXs1haOp+mIrNzAGOFcpHz0+QIzzFT4M1Xgr1l3VRn8hQBJJdglb9c+zvDmxmRc66UC53wdXpKzS6M1/ExwBh3nh3KHO9RQJBykPYBqD5337u/xZfrY7K+M1Dg0AygLMXPphc9fnirzlBiyxHaAjBWLbbMHJbhfOgkFLCFwkqqXuJyDCrxmRvwPHAeeyF27/Ube7pz+nYBc+QCQfyj5eYT9apeO5ul915DdMjDGyaS505KRr4JWGMWpkg6LZTtHbMbHcEQEq8Md0Y54P6LuIFb937PZjThDhEL/RByyD4EMM+kyTB9qktEDOF88ITzdbjxHd2KZs4OsHE6X997gk="
+        modelURL: "http://cdn.17app.co/megvii_facepp_model_iOS_1580463700"
+        modelMD5: "25fe2f3e71fe85743d43682e585535d6"
+        versionUpperBound: ""
+        versionLowerBound: "3.104.0"
     version: "2.12"
     black-list:
       - "iPhone1,1"
@@ -33,19 +46,15 @@ devices:
     # package name:
     # - com.machipopo.media17
     # - com.machipopo.machi17
-    # 贴纸功能 有效期至2020-04-30
-    # 瘦脸大眼 有效期至2020-09-30
-    # 基础美颜 有效期至2020-10-31
-    # key, modelURL and modelMD5 will be deprecated after 2020/4/20 and replaced by models
-    key: "dse5WXytx21/yywEZtUuRMg7qcp4CjcImavJm+or6gwDbJ+SYLme9so+oke0mFH0o/9xKiL3XXyzlsFoEXDXnG6xex/yyyJaxomYlC/ZfG6sk+brpzxmbt4vFb8NWtaTHg8RKpsTCovvtYA36BoJxL4Vw2NHu214nk+ywZ3ZH/l32tBmkPY5jA11rw9s53qD8QHy+rs/+HpETf6x6/7r7Kui0l/CMCeD0/hEyQqpCa+yv742ST5tXMTwaPmtLCdR4IP9L+uWQ3iHsf+3G2H3GKtEqaflPT9vL9LmROG0NBzYAiULJhrY0Uxy9tMISB4AlEtmNVvDrbq9uR0mYvn+8OEmSF7qK6mWbs0wPo8irYsCmFgQ9i9WqPALVThkKdp6XT+sk/nk7RFndwRlnssXrhvxVRLxZNfa94cA9KPZJpLQfRmyofXXLjNJ5IM2JRka7eYmywIvknYPaNGnisDP+Mr5ApaV3lNoWpwoLI1Bly8i6YdO7P+2F49q+sizL7ryqPSzL27UJq7fPR/MNfvCL+37EpQBycvtVkD6TG49JBukJWJqblbudXmnabnNDmhJ9w78oM6Cst9iYcJOJx1MF4kGJuuDdjjlASNWjQm+ALQmCABCfwUH3BbbImqI+Ko="
-    modelURL: "http://cdn.17app.co/megvii_facepp_model_Android_1559358000"
-    modelMD5: "8ef026f00d26f65d5ec943c00471b35a"
+    # 贴纸功能 有效期至2020-10-31 00:00:00
+    # 瘦脸大眼 有效期至2020-10-31 00:00:00
+    # 基础美颜 有效期至2020-10-31 00:00:00
     models:
-      - key: "dse5WXytx21/yywEZtUuRMg7qcp4CjcImavJm+or6gwDbJ+SYLme9so+oke0mFH0o/9xKiL3XXyzlsFoEXDXnG6xex/yyyJaxomYlC/ZfG6sk+brpzxmbt4vFb8NWtaTHg8RKpsTCovvtYA36BoJxL4Vw2NHu214nk+ywZ3ZH/l32tBmkPY5jA11rw9s53qD8QHy+rs/+HpETf6x6/7r7Kui0l/CMCeD0/hEyQqpCa+yv742ST5tXMTwaPmtLCdR4IP9L+uWQ3iHsf+3G2H3GKtEqaflPT9vL9LmROG0NBzYAiULJhrY0Uxy9tMISB4AlEtmNVvDrbq9uR0mYvn+8OEmSF7qK6mWbs0wPo8irYsCmFgQ9i9WqPALVThkKdp6XT+sk/nk7RFndwRlnssXrhvxVRLxZNfa94cA9KPZJpLQfRmyofXXLjNJ5IM2JRka7eYmywIvknYPaNGnisDP+Mr5ApaV3lNoWpwoLI1Bly8i6YdO7P+2F49q+sizL7ryqPSzL27UJq7fPR/MNfvCL+37EpQBycvtVkD6TG49JBukJWJqblbudXmnabnNDmhJ9w78oM6Cst9iYcJOJx1MF4kGJuuDdjjlASNWjQm+ALQmCABCfwUH3BbbImqI+Ko="
+      - key: "sZzzw9wtgYJoKy8AO74a+t2TRmZpB6TE2/IUsqLXSbLSFhovirZpN3CNKiJQaYjtRP0s1BrdUx1dAN986f1jYT7ph3/+DFdwfDE5c0opzWH5l8dSjg/zxGsOsvik9EAf8iSBeWf1b4LWjGBNZlu1cUkLHcBpW5QCsx3w/OHOHfxezWnpWhSKVhAVQ6hmILt+eP3awbiS6rHbTkdkO9bj+mTP1yVvQXxgVPQVrZRtU7YKZtLG3JY9zPqAaKfqxHDhhTWh+dmTug+vCAzj+dZaBhjkAe/8CDk3tbE0HE1Qs+md4SwF7Crfc7GGAJw+sil0w29K6o+uY0/nkUJiv+NoASbV1VaiJciMHVvamx1u/t/Yd4c/wWBD9zFHKPDVu75Ta5Eo+lUScANe35y1BhvEoNu25+Pi6yPmCVmkzHSUGm6/vEe8HhiRJFqJtvZMnlt+pi21e/isSb0LnDN+xcSNbTvJ2WhOkw44UNcwQItZ+eoma+bJDmdpnIARvrT8uKDPCc23+OLKPDbnuzjKV91O0n3CJqtUw230iBKxhc/a9sNuBpJavkn89VOn+XhKkb3kMjc8lmDVEy0PRVYpOG/4cAsfT0b2CYRneC1IkcfFoTsOWVdw+k4enmRSRORtZ0I="
         modelURL: "http://cdn.17app.co/megvii_facepp_model_Android_1559358000"
         modelMD5: "8ef026f00d26f65d5ec943c00471b35a"
         versionUpperBound: "9.99.99"
-        versionLowerBound: "0.0.0"
+        versionLowerBound: ""
     version: "2.2.69"
     OS-version: "21" # 5.0
 
@@ -53,15 +62,16 @@ devices:
 gesture:
   devices:
     ios:
+      # 手勢功能 有效期至2021-05-24 00:00:00
       models:
         - modelURL: "http://cdn.17app.co/megviiegg_model_1558930234"
           modelMD5: "a0e8ddf01cb1e5beb1a8ca9c28eece16"
-          versionUpperBound: "9.99.99"
-          versionLowerBound: "0.0.0"
-      # modelURL and modelMD5 will be deprecated after 2020/4/20 and replaced by models
-      # 手勢功能 有效期至2021-05-24
-      modelURL: "http://cdn.17app.co/megviiegg_model_1558930234"
-      modelMD5: "a0e8ddf01cb1e5beb1a8ca9c28eece16"
+          versionUpperBound: "3.104.0"
+          versionLowerBound: ""
+        - modelURL: "http://cdn.17app.co/megviiegg_model_1580463700"
+          modelMD5: "579b03c45be41443f8892be2fe5647af"
+          versionUpperBound: ""
+          versionLowerBound: "3.104.0"
       version: "3.51.0"
       black-list:
         - "iPhone1,1"
@@ -75,14 +85,11 @@ gesture:
         - "iPhone5,2"
         - "iPhone5,3"
     android:
+      # 手勢功能 有效期至2021-05-24 00:00:00
       models:
         - modelURL: "http://cdn.17app.co/megviiegg_model_1558930234"
           modelMD5: "a0e8ddf01cb1e5beb1a8ca9c28eece16"
           versionUpperBound: "9.99.99"
-          versionLowerBound: "0.0.0"
-      # modelURL and modelMD5 will be deprecated after 2020/4/20 and replaced by models
-      # 手勢功能 有效期至2021-05-24
-      modelURL: "http://cdn.17app.co/megviiegg_model_1558930234"
-      modelMD5: "a0e8ddf01cb1e5beb1a8ca9c28eece16"
+          versionLowerBound: ""
       version: "2.3.78"
       OS-version: "21" # 5.0
