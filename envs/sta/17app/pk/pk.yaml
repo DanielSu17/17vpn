@@ -11,12 +11,6 @@ pkEvents:
 
 #將相同活動配對在一起的開關  
 sameEventMatchFirst: true
-matchingRules:
-  eventScores:
-    - 1
-    - 5
-    - 10
-
 
 whiteList:
   - "00c0bc02-c6df-448c-8385-114288e51d83" # 77_七七
@@ -61,6 +55,10 @@ matchingRules:
     - 0
     - 0.05
     - 0.1
+  eventScores:
+    - 1
+    - 5
+    - 10
 minLevel: 10
 playList:
   - id: normalOneVOne
