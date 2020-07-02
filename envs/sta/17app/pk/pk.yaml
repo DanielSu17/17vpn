@@ -9,6 +9,15 @@ pkEvents:
   - 10240 #TW_PK
   #- 67890
 
+#將相同活動配對在一起的開關  
+sameEventMatchFirst: true
+matchingRules:
+  eventScores:
+    - 1
+    - 5
+    - 10
+
+
 whiteList:
   - "00c0bc02-c6df-448c-8385-114288e51d83" # 77_七七
   - "d41a9c27-e033-426a-9107-ec7eb8157574" # 7794暖
