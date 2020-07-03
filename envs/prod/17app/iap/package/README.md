@@ -52,8 +52,8 @@ merchandises:
 * merchandises(`array of struct`):
   * intervalID(`string`): 禮包內部的 id
   * merchandiseID（`string`): 對google play / app store的id
-  * productsOrder(`array of string`): product的順序
-  * bonusesOrder(`array of string`): bonus的順序
+  * productsOrder(`array of string`): product的順序，product不可為0
+  * bonusesOrder(`array of string`): bonus的順序，如果只有bouns請移至productOrder
   * addons(`struct`):
     * displayCountdown(`bool`): 要不要顯示倒數計時
     * countdownSecs(`number`): 距離結束時間多少以前開始 highlight
