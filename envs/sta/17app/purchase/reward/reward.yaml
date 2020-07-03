@@ -86,3 +86,63 @@ secretIAPConditions:
       retentionUserOnly: false
     displayHours: 24
 
+#20200701 - 20200707期間購買1570方案多贈送50%寶寶幣+3天尊榮寶寶
+rewardEvents:
+  - eventID: "QAKevinReward-1"
+    startTime: "2020-07-01T00:00:00+08:00"
+    endTime: "2020-07-07T00:00:00+08:00"
+    eventRequirements:
+      - sellingChannels:
+          include:
+            - 1
+            - 2
+        onlyAvailableInSameRegion: true
+        legacyFirstPurchase:
+          enableTimeRange: true
+          timeRange: 
+            startTime: "2020-07-01T00:00:00+08:00"
+            endTime: "2020-07-07T00:00:00+08:00"
+    rules:
+      - reward:
+          points: 785
+          premiumBaby:
+            days: 3
+        requirements: 
+          - merchandiseID: "media17_points_1570"
+          
+#20200701 - 20210701生涯首儲330點送330點
+  - eventID: "QAKevinReward-2"
+    startTime: "2020-07-01T00:00:00+08:00"
+    endTime: "2021-07-01T00:00:00+08:00"
+    eventRequirements:
+      - sellingChannels:
+          include:
+            - 1
+            - 2
+        legacyFirstPurchase:
+          enableTimeRange: false
+    rules:
+      - reward:
+          points: 330
+        requirements: 
+          - merchandiseID: "media17_points_330" 
+          
+#20200701 - 20210701首次儲值且符合secretIAP QAKevinSecretIAP-1的規則可購買3480方案+7天尊榮寶寶         
+  - eventID: "QAKevinReward-3"
+    startTime: "2020-07-01T00:00:00+08:00"
+    endTime: "2021-07-01T00:00:00+08:00"
+    eventRequirements:
+      - sellingChannels:
+          include:
+            - 1
+            - 2
+        seretIAP:
+          ID: "QAKevinSecretIAP-1"
+        legacyFirstPurchase:
+          enableTimeRange: false
+    rules:
+      - reward:
+          premiumBaby:
+            days: 7
+        requirements: 
+          - merchandiseID: "media17_points_3480"
