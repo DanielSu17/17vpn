@@ -15,6 +15,7 @@ merchandises:
       - gift_lovegif_5_14
       - gift_fighting_100_14
     addons:
+      displayCountdown: true
       countdownSecs: 36000
       title:
         key: iap_store_giftpackage_newbie
@@ -54,6 +55,7 @@ merchandises:
   * productsOrder(`array of string`): product的順序
   * bonusesOrder(`array of string`): bonus的順序
   * addons(`struct`):
+    * displayCountdown(`bool`): 要不要顯示倒數計時
     * countdownSecs(`number`): 距離結束時間多少以前開始 highlight
     * title(`i18n struct`):
       * key(`string`): 標題的i18n key
