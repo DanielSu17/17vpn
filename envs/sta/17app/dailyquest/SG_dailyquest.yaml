@@ -14,15 +14,118 @@ disableSignInHottest: false
 enableSignInAndNewbieRewardAtSameTime: true
 
 # do not dailySignIn reward after register midnight
-noAnimationTTLAfterRegister: 60
+noAnimationTTLAfterRegister: 0
 
 # daily for sign-in reward for voucher version
 enableSignInReward: true
+abtestStartTime: 
+  "2020-07-01 00:00:00 (GMT+0800)"
+signInRewardsV2:
+  - exp: 30
+    url: "https://cdn.17app.co/cdae5355-7211-4b7e-a590-4d464dc6378b.png"
+    oldURL: "https://cdn.17app.co/8467135a-fae7-4ce8-8951-3e399a5b475c.png"
+    voucherReward:
+      type: 1
+      itemID: "2019newuser"
+      tokenName: "voucher_daily_reward_d1"
+      amount: 2
+      intervalSec: 28800
+  - exp: 35
+    url: "https://cdn.17app.co/1d9f33bb-b20b-440d-940f-25e91f36fd14.png"
+    oldURL: "https://cdn.17app.co/43f6e189-01e0-4522-b298-b44b2180c73a.png"
+    voucherReward:
+      type: 1
+      itemID: "hello_2"
+      tokenName: "voucher_daily_reward_d2"
+      amount: 10
+      intervalSec: 28800
+  - exp: 40
+    url: "https://cdn.17app.co/c11c5f53-30af-4b30-874b-6c73b6bbd714.png"
+    oldURL: "https://cdn.17app.co/0e190bcd-ad1a-41f9-a46c-7537e3b9c75e.png"
+    voucherReward:
+      type: 1
+      itemID: "friday_pink_party"
+      tokenName: "voucher_daily_reward_d3"
+      amount: 2
+      intervalSec: 28800
+  - exp: 45
+    url: "https://cdn.17app.co/a9046426-8fe3-407d-a85e-8c333133a1b9.png"
+    oldURL: "https://cdn.17app.co/132c3535-ab25-476b-84e3-1f37ed78cd78.png"
+    voucherReward:
+      type: 1
+      itemID: "missyou_2"
+      tokenName: "voucher_daily_reward_d4"
+      amount: 10
+      intervalSec: 28800
+  - exp: 50
+    url: "https://cdn.17app.co/52031586-0613-4bde-8951-852d77cba14e.png"
+    oldURL: "https://cdn.17app.co/e7ed3cd6-322e-44bd-a430-b1617290c91c.png"
+    voucherReward:
+      type: 1
+      itemID: "tw_daily_reward_poker"
+      tokenName: "voucher_daily_reward_d5"
+      amount: 2
+      intervalSec: 28800
+  - exp: 55
+    url: "https://cdn.17app.co/1d9f33bb-b20b-440d-940f-25e91f36fd14.png"
+    oldURL: "https://cdn.17app.co/006f315a-b3ea-4e74-a516-5af6720b0e77.png"
+    voucherReward:
+      type: 1
+      itemID: "hello_2"
+      tokenName: "voucher_daily_reward_d2"
+      amount: 10
+      intervalSec: 28800
+  - exp: 60
+    url: "https://cdn.17app.co/d58fc54a-469b-4c7e-803e-34f7c45b693a.png"
+    oldURL: "https://cdn.17app.co/f65ea95e-2b4b-486a-b368-d285a36350e0.png"
+    voucherReward:
+      type: 1
+      itemID: "daily_reward_love"
+      tokenName: "voucher_daily_reward_d6"
+      amount: 1
+      intervalSec: 28800
+signInRewardsV3Whitelist:
+  - "567e0b5d-1516-4ce0-b4e8-bec4e756d5ae" #kevinmh
+  - "c1490c08-8f51-45aa-b0d8-6bf836d1eb3a" #james.sta01
+  - "bc6295f3-84bb-4d6e-a46d-bd3f9134a140" #ericsta1
+  - "c3dfff9d-b6a5-4732-8ac1-40321b8b67b6" #erictest2
+  - "5eee8b2b-5c11-4e81-b084-858b9a958653" #lucaslu1
+signInRewardsV3: # group c rewards point
+  - exp: 30
+    url: "https://cdn.17app.co/d8348af8-991e-4196-99ff-703b26d691e4.png"
+    oldURL: "https://cdn.17app.co/81bb4397-06f1-4939-a6ad-843aa150ee6c.png"
+    point: 10
+  - exp: 35
+    url: "https://cdn.17app.co/d8348af8-991e-4196-99ff-703b26d691e4.png"
+    oldURL: "https://cdn.17app.co/a12fcf0a-d79e-4209-94a7-a2c0f5d55bc5.png"
+    point: 50
+  - exp: 40
+    url: "https://cdn.17app.co/d8348af8-991e-4196-99ff-703b26d691e4.png"
+    oldURL: "https://cdn.17app.co/14718574-9743-4fcf-93b8-315026eec52d.png"
+    point: 10
+  - exp: 45
+    url: "https://cdn.17app.co/d8348af8-991e-4196-99ff-703b26d691e4.png"
+    oldURL: "https://cdn.17app.co/10d70bdd-e67a-49d4-b916-366aac3536f2.png"
+    point: 50
+  - exp: 50
+    url: "https://cdn.17app.co/d8348af8-991e-4196-99ff-703b26d691e4.png"
+    oldURL: "https://cdn.17app.co/37538b2e-c5d2-4803-8f1f-b5486b752f66.png"
+    point: 10
+  - exp: 55
+    url: "https://cdn.17app.co/d8348af8-991e-4196-99ff-703b26d691e4.png"
+    oldURL: "https://cdn.17app.co/312d959a-4c2b-4901-bc93-651050074c9b.png"
+    point: 50
+  - exp: 60
+    url: "https://cdn.17app.co/d8348af8-991e-4196-99ff-703b26d691e4.png"
+    oldURL: "https://cdn.17app.co/778de112-1141-414e-8124-28a499de2252.png"
+    point: 100
 signInRewards:
   - exp: 30
-    url: "https://assets-17app.akamaized.net/4369bc0c-408d-4dd5-a7c2-b090e9591fb7.png"
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://cdn.17app.co/405c44b2-2077-4f46-9dab-9bbd38ad6b46.png"
   - exp: 35
-    url: "https://assets-17app.akamaized.net/0cc93db5-99ee-4731-a073-4cd47ccdde8b.png"
+    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
+    oldURL: "https://cdn.17app.co/67e08710-3354-4c6d-b343-12075e46f3cb.png"
     voucherReward:
       type: 1
       itemID: "gift_wave_update_ops"
@@ -30,9 +133,11 @@ signInRewards:
       amount: 2
       intervalSec: 28800
   - exp: 40
-    url: "https://assets-17app.akamaized.net/26ba0217-0a2a-43f8-a2a7-a4fd17b6a26b.png"
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://cdn.17app.co/029c0b86-9dc5-4e4f-8e3c-1e0bf66e8e05.png"
   - exp: 45
-    url: "https://assets-17app.akamaized.net/c994d35d-78ae-4315-b00a-7b0dbd715fad.png"
+    url: "https://cdn.17app.co/b5b41643-def9-400d-bb08-90990d3ffd9b.png"
+    oldURL: "https://cdn.17app.co/c1d16b94-818e-4a5e-b6bc-99178a3dc097.png"
     voucherReward:
       type: 1
       itemID: "gift_cat_ops"
@@ -40,9 +145,11 @@ signInRewards:
       amount: 2
       intervalSec: 28800
   - exp: 50
-    url: "https://assets-17app.akamaized.net/0c1e01c3-eb79-4e19-8bea-59272eff7a25.png"
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://cdn.17app.co/808dbc9a-19ec-42a4-a661-80ba8d340bd0.png"
   - exp: 55
-    url: "https://assets-17app.akamaized.net/942dd78f-7016-4978-abca-043f789ea111.png"
+    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
+    oldURL: "https://cdn.17app.co/c2b14c19-47d9-466b-bcc2-f94d8a4e52d8.png"
     voucherReward:
       type: 1
       itemID: "gift_wave_update_ops"
@@ -50,7 +157,8 @@ signInRewards:
       amount: 2
       intervalSec: 28800
   - exp: 60
-    url: "https://assets-17app.akamaized.net/879c28b7-5995-433a-9951-ca83f8b41e4e.png"
+    url: "https://cdn.17app.co/e87b658e-3cdf-4c45-97c5-9578b33c9959.png"
+    oldURL: "https://cdn.17app.co/fc22a990-b55a-4b52-a8d0-997778097f8f.png"
     voucherReward:
       type: 1
       itemID: "gift_hedgehog_ops"
@@ -58,9 +166,11 @@ signInRewards:
       amount: 1
       intervalSec: 28800
   - exp: 30
-    url: "https://assets-17app.akamaized.net/4369bc0c-408d-4dd5-a7c2-b090e9591fb7.png"
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://cdn.17app.co/405c44b2-2077-4f46-9dab-9bbd38ad6b46.png"
   - exp: 35
-    url: "https://assets-17app.akamaized.net/0cc93db5-99ee-4731-a073-4cd47ccdde8b.png"
+    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
+    oldURL: "https://cdn.17app.co/67e08710-3354-4c6d-b343-12075e46f3cb.png"
     voucherReward:
       type: 1
       itemID: "gift_wave_update_ops"
@@ -68,9 +178,11 @@ signInRewards:
       amount: 2
       intervalSec: 28800
   - exp: 40
-    url: "https://assets-17app.akamaized.net/26ba0217-0a2a-43f8-a2a7-a4fd17b6a26b.png"
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://cdn.17app.co/029c0b86-9dc5-4e4f-8e3c-1e0bf66e8e05.png"
   - exp: 45
-    url: "https://assets-17app.akamaized.net/3c8ac746-3fe3-464f-a2fd-d819da2b4631.png"
+    url: "https://cdn.17app.co/05e17421-568d-46d3-885e-ce21c24fa09f.png"
+    oldURL: "https://cdn.17app.co/f075190d-9ed0-4b46-bba6-8638580c049f.png"
     voucherReward:
       type: 1
       itemID: "gift_cat_2_ops"
@@ -78,9 +190,11 @@ signInRewards:
       amount: 2
       intervalSec: 28800
   - exp: 50
-    url: "https://assets-17app.akamaized.net/0c1e01c3-eb79-4e19-8bea-59272eff7a25.png"
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://cdn.17app.co/808dbc9a-19ec-42a4-a661-80ba8d340bd0.png"
   - exp: 55
-    url: "https://assets-17app.akamaized.net/942dd78f-7016-4978-abca-043f789ea111.png"
+    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
+    oldURL: "https://cdn.17app.co/c2b14c19-47d9-466b-bcc2-f94d8a4e52d8.png"
     voucherReward:
       type: 1
       itemID: "gift_wave_update_ops"
@@ -88,7 +202,8 @@ signInRewards:
       amount: 2
       intervalSec: 28800
   - exp: 60
-    url: "https://assets-17app.akamaized.net/879c28b7-5995-433a-9951-ca83f8b41e4e.png"
+    url: "https://cdn.17app.co/e87b658e-3cdf-4c45-97c5-9578b33c9959.png"
+    oldURL: "https://cdn.17app.co/fc22a990-b55a-4b52-a8d0-997778097f8f.png"
     voucherReward:
       type: 1
       itemID: "gift_hedgehog_ops"
@@ -96,9 +211,11 @@ signInRewards:
       amount: 2
       intervalSec: 28800
   - exp: 30
-    url: "https://assets-17app.akamaized.net/4369bc0c-408d-4dd5-a7c2-b090e9591fb7.png"
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://cdn.17app.co/405c44b2-2077-4f46-9dab-9bbd38ad6b46.png"
   - exp: 35
-    url: "https://assets-17app.akamaized.net/0cc93db5-99ee-4731-a073-4cd47ccdde8b.png"
+    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
+    oldURL: "https://cdn.17app.co/67e08710-3354-4c6d-b343-12075e46f3cb.png"
     voucherReward:
       type: 1
       itemID: "gift_wave_update_ops"
@@ -106,9 +223,11 @@ signInRewards:
       amount: 2
       intervalSec: 28800
   - exp: 40
-    url: "https://assets-17app.akamaized.net/26ba0217-0a2a-43f8-a2a7-a4fd17b6a26b.png"
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://cdn.17app.co/029c0b86-9dc5-4e4f-8e3c-1e0bf66e8e05.png"
   - exp: 45
-    url: "https://assets-17app.akamaized.net/c73a872a-1732-4a56-b326-203d08da7c9d.png"
+    url: "https://cdn.17app.co/8a8c8f86-230e-4c2f-a5ae-bbb52416b4ea.png"
+    oldURL: "https://cdn.17app.co/87fabf3f-276d-4f7e-bff0-706c743e7269.png"
     voucherReward:
       type: 1
       itemID: "gift_dog_ops"
@@ -116,9 +235,11 @@ signInRewards:
       amount: 2
       intervalSec: 28800
   - exp: 50
-    url: "https://assets-17app.akamaized.net/0c1e01c3-eb79-4e19-8bea-59272eff7a25.png"
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://cdn.17app.co/808dbc9a-19ec-42a4-a661-80ba8d340bd0.png"
   - exp: 55
-    url: "https://assets-17app.akamaized.net/942dd78f-7016-4978-abca-043f789ea111.png"
+    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
+    oldURL: "https://cdn.17app.co/c2b14c19-47d9-466b-bcc2-f94d8a4e52d8.png"
     voucherReward:
       type: 1
       itemID: "gift_wave_update_ops"
@@ -126,7 +247,8 @@ signInRewards:
       amount: 2
       intervalSec: 28800
   - exp: 60
-    url: "https://assets-17app.akamaized.net/930c1b3e-cf1e-40f3-8129-bdaa9bd9f8ca.png"
+    url: "https://cdn.17app.co/ffc1b509-2525-4eb1-bbcd-7d938da3d44b.png"
+    oldURL: "https://cdn.17app.co/884f1865-52f5-4529-968b-3f483c8e257a.png"
     voucherReward:
       type: 1
       itemID: "gift_rabbit_ops"
@@ -134,9 +256,11 @@ signInRewards:
       amount: 1
       intervalSec: 28800
   - exp: 30
-    url: "https://assets-17app.akamaized.net/4369bc0c-408d-4dd5-a7c2-b090e9591fb7.png"
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://cdn.17app.co/405c44b2-2077-4f46-9dab-9bbd38ad6b46.png"
   - exp: 35
-    url: "https://assets-17app.akamaized.net/0cc93db5-99ee-4731-a073-4cd47ccdde8b.png"
+    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
+    oldURL: "https://cdn.17app.co/67e08710-3354-4c6d-b343-12075e46f3cb.png"
     voucherReward:
       type: 1
       itemID: "gift_wave_update_ops"
@@ -144,9 +268,11 @@ signInRewards:
       amount: 2
       intervalSec: 28800
   - exp: 40
-    url: "https://assets-17app.akamaized.net/26ba0217-0a2a-43f8-a2a7-a4fd17b6a26b.png"
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://cdn.17app.co/029c0b86-9dc5-4e4f-8e3c-1e0bf66e8e05.png"
   - exp: 45
-    url: "https://assets-17app.akamaized.net/c73a872a-1732-4a56-b326-203d08da7c9d.png"
+    url: "https://cdn.17app.co/8a8c8f86-230e-4c2f-a5ae-bbb52416b4ea.png"
+    oldURL: "https://cdn.17app.co/87fabf3f-276d-4f7e-bff0-706c743e7269.png"
     voucherReward:
       type: 1
       itemID: "gift_dog_ops"
@@ -154,9 +280,11 @@ signInRewards:
       amount: 2
       intervalSec: 28800
   - exp: 50
-    url: "https://assets-17app.akamaized.net/0c1e01c3-eb79-4e19-8bea-59272eff7a25.png"
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://cdn.17app.co/808dbc9a-19ec-42a4-a661-80ba8d340bd0.png"
   - exp: 55
-    url: "https://assets-17app.akamaized.net/942dd78f-7016-4978-abca-043f789ea111.png"
+    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
+    oldURL: "https://cdn.17app.co/c2b14c19-47d9-466b-bcc2-f94d8a4e52d8.png"
     voucherReward:
       type: 1
       itemID: "gift_wave_update_ops"
@@ -164,7 +292,8 @@ signInRewards:
       amount: 2
       intervalSec: 28800
   - exp: 60
-    url: "https://assets-17app.akamaized.net/86b23f56-619a-4e64-b2d3-431ec55747f0.png"
+    url: "https://cdn.17app.co/956ef8ca-ca74-4a0b-9aeb-836a04fba2e2.png"
+    oldURL: "https://cdn.17app.co/b016df61-0739-4e07-ae6e-8029fe5fc491.png"
     voucherReward:
       type: 1
       itemID: "gift_hamster_ops"
