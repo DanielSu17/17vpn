@@ -30,6 +30,39 @@
 # | NON_IAP | 2 |
 
 missions:
+#17 DJ Night Out Vol.3  看播送x跳留言
+  - ID: 517698f6-074d-48d9-8f33-fad3bbfb2f08
+    type: 5
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 21
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2005_tw_dj_bp
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    withReminder: false
+    i18nTitle: baggage_mission_leave_comment_reward_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 3
+    i18nContent:
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_leave_comment_reward_desc
+    i18nDescriptionParams:
+    goalValue: 3
+    enableTimeRange:
+      - startTime: "2020-07-07 18:00:00 (GMT+0800)"
+        endTime: "2020-07-13 23:59:59 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
   - ID: 06a3ee5f-0cf8-4f9d-8424-4f205309a22c
     type: 8
     lifeCycle: 1
