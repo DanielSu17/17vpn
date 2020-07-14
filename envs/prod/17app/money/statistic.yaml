@@ -29,6 +29,7 @@ partitionPlan:
 
 pointReceiverLogsPlan:
   enableCache: false
+  cachingLimitQPS: 20
   migrateState: 2 # 0: disable, 1: mysql, 2: mongo
   dayOffset: -6
   syncPlans:
