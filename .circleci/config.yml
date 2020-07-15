@@ -15,11 +15,30 @@ references:
       branches:
         only:
           - /^pull\/.*$/
+  tag_filter_master_build: &tag_filter_master_build
+    filters:
+      branches:
+        only:
+          - master
 
 jobs:
+  cache_workspace:
+    docker:
+      - image: cimg/base:2020.01
+    steps:
+      - restore_cache:
+          key: configs_workspace-
+      - checkout
+      - save_cache:
+          name: "Save cache: workspace"
+          key: configs_workspace-{{ epoch }}
+          paths:
+            - .
   build:
     <<: *default
     steps:
+      - restore_cache:
+          key: configs_workspace-
       - checkout
       - run:
           name: python requirements
@@ -66,15 +85,18 @@ workflows:
   version: 2
   all:
     jobs:
-      - build
+      - build:
+          <<: *tag_filter_master_build
+      - cache_workspace:
+          <<: *tag_filter_master_build
       - deploy:
+          <<: *tag_filter_master_build
           requires:
           - build
-          filters:
-            branches:
-              only:
-              - master
+
   pr-build:
     jobs:
+      - cache_workspace:
+          <<: *tag_filter_pr_build
       - build:
           <<: *tag_filter_pr_build
