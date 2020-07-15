@@ -1,1 +1,1 @@
-# 新加坡禮包設定 (PM only)
+# OTHERS 禮包設定 (PM only)
