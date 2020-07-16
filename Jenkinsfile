@@ -87,10 +87,19 @@ node('gcp') { timestamps { ansiColor('xterm') {
     // prepare for configs repository
     sh('mkdir -p configs')
     dir('configs') {
-      git url: 'git@github.com:17media/configs.git',
-          credentialsId: '3dc01492-01f6-4be5-8073-8de5f458ed1e',
-          branch: 'master'
-
+      cache(caches: [[
+          $class: 'ArbitraryFileCache',
+          excludes: '',
+          includes: '**/*',
+          path: '${PWD}'
+        ]],
+        maxCacheSize: 1024
+      ) {
+        git url: 'git@github.com:17media/configs.git',
+            credentialsId: '3dc01492-01f6-4be5-8073-8de5f458ed1e',
+            branch: 'master'
+      }
+      sh("git fetch")
       inputRevision = params.REVISION.trim()
       if (inputRevision.length() > 0) {
         // check tag existence
