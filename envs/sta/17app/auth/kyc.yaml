@@ -39,7 +39,9 @@ announce: |
 
     </center>
 
-use17LiveContentStartTime: 1595797200
+use17LiveContentStartTime: 1595210400  # July 20, 2020 10:00:00 AM GMT+08:00
+verifyMailTTLInHour: 1
+# TODO: remove old key
 VerifyMailTTLInHour: 1
 verifyMailPath: "https://17.live/revenue/kyc/verify"
 verifyMailSubject: "Confirm your email address for 17LIVE - My Revenue"
@@ -83,7 +85,7 @@ verifyMailContent: |
 
 updateNotifySubject:
     TW: "17LIVE - 我的收益 個人資料修改通知"
-    JP: "17-LIVE My Revenueの個人情報を変更"
+    JP: "【お知らせ】17LIVE My Revenueの個人情報の変更通知"
     DEFAULT: "17LIVE - My Revenue personal information update notify"
 
 updateNotifyContent:
@@ -133,16 +135,17 @@ updateNotifyContent:
             }
         </style>
         <hr class="style-one" />
+                
         <br>
-        <H4>ユーザー各位：</H4>
         <p>  
-            %sでMy Revenueの個人情報を変更しました。 <br>
-            覚えのないアクティビティの場合は、速やかにパスワードをご変更ください。 <br>
+            %s にMy Revenueの個人情報が変更されました。<br>
+                            この変更に心当たりがない場合は、速やかにパスワード変更してください。<br>
+                            このメールはシステムより自動送信されています。返信は無効となりますので、ご了承ください。<br>
             <p>
-                <font color ="197DFF" size="2">このメールはシステムより自動送信されています。返信は無効となりますので、ご了承ください。<br>ご不明な点がございましたら、下記へお問合せください。support.jp@17.media
-                </font>
+                <font color ="197DFF" size="2"> ご不明な点がございましたら、下記へお問合せください。<br>support.jp@17.media </font>
             </p>
         </p>
+        
         <br>
         <style>
             hr.style-one {
