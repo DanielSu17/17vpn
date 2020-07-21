@@ -1,8 +1,8 @@
 # Poll setting
 # MUST make sure that corresponding gift ids exist in gift database
 # In this case, they should be poll_option_{a|b|c|d|e}_{30|49|99|199|399|599|3999} by the value of giftIDTempalte
-minTTL: 6
-maxTTL: 60
+minTTL: 3
+maxTTL: 55
 maxTitleDescLen: 20
 maxOptDescLen: 10
 minOptionCount: 2
@@ -23,7 +23,7 @@ enableFreePriceForOfficialTopics: true # 官方話題可選擇0點
 availablePrice:
   0:
   5:
-  30:
+  35:
   49:
   99:
   199:
@@ -68,3 +68,6 @@ topics:
   - tag: "政治,社會"
     title: "哪個參選的理由比較合理？"
     options: ["淡水阿罵的陳情", "媽祖托夢"]
+  - tag: "社會"
+    title: "三倍券好用嗎"
+    options: ["敲好用", "敲難用"]
