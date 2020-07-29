@@ -4,14 +4,20 @@
 # - labelID: mapping for labels table id
 
 labelInfos:
-
-  #- id: "17femalesinger" # 歌后之夜在17
-  #  type: 1
-  #  label:
-  #    key: "streamer_label_highlight_femalesinger"
-  #  iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
-  #  isHide: true
-  #  order: 450
+  - id: "western_music_radio" # 地獄金曲-失戀悲歌之夜
+    type: 1
+    label:
+      key: "streamer_label_highlight_westernmr"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+    isHide: true
+    order: 451
+  - id: "sad_song" # 地獄金曲-失戀悲歌之夜
+    type: 1
+    label:
+      key: "streamer_label_highlight_sadsong"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+    isHide: true
+    order: 450
   - id: "dj_night_out" # dj
     type: 1
     label:
@@ -388,9 +394,50 @@ topicTabLabels:
 
 # labelWhiteList defines relation between label and user list
 labelWhiteList:
+  western_music_radio:
+    - f481c540-bd03-4745-9421-76b310222acd	#晨晨Morning🎤
+    - 464d66fc-f860-4c2e-8f71-8ca91a200f1f	#艾恩Iron🛸
+    - b43d879d-eb80-4281-b71f-25d0fabe6b81	#小閩Nicole🎸
+    - fa5553ad-d795-45ac-8bc0-581dcbba0362	#夏季幽默☀️
+    - 1c39dd09-27b9-4a71-628e-b3b766d0884e	#Amberley咪亞🧸
+    - db451467-5263-4e6d-8572-25281b1fc0ab	#Ona🥨歐娜
+    - 73c96f71-c149-423e-9f1c-3f6d842a0ad6	#Vivian🌟涵涵
+    - 7e4cd26e-9fc5-40f0-a666-da439dcfb834	#tyler泰樂
+    - d1d08a58-9cdd-4e58-8512-b2cf9620fead	#凱娜kate
+    - 67929588-e1be-4efd-a88c-e51cb716f97f	#凱娜Shekinah
+    - 2b6331ac-9c64-487f-ad3b-8fc2f61c6dd6	#小扣拉💕
+    - 0cb8ddc8-64da-4157-84e8-920d568ba9c8	#紫花flora
+    - c72537b8-5e79-4e69-840d-0a5a1dece6c4	#格格🌈👽🌻
+    - 0d1e1300-2599-444f-424f-e49b98b0f090	#思欣🌱シキン
+    - fa29e8d8-bcc1-42b1-adc5-eaea436d97ab	#奶瓶🍼
+    - b1b9533c-cf3d-42db-bdb1-99cfcd2185d5	#艾克Boy👦🎹
+    - d4518899-4241-4715-8f17-77c9d200c326	#敲挑驕傲😈小卑鄙
+    - ef753dd7-15c8-4482-5a4d-f653359bf324	#貪吃鬼vicky
 
-  17femalesinger:
-    - 
+  sad_song:
+    - 29a79809-c6ae-45ad-b9ce-402606ba1b93	#橙米Charming🧡
+    - a607ccc0-83d0-47c3-8b3a-4c5522746aa4	#葵小娜💫
+    - 1c39dd09-27b9-4a71-628e-b3b766d0884e	#Amberley咪亞🧸
+    - fa5553ad-d795-45ac-8bc0-581dcbba0362	#夏季幽默☀️
+    - 464d66fc-f860-4c2e-8f71-8ca91a200f1f	#艾恩Iron🛸
+    - 69b59c1e-13b4-40ef-a0f2-0848b4b4cfc5	#瓏瓏🐉
+    - b43d879d-eb80-4281-b71f-25d0fabe6b81	#小閩Nicole🎸
+    - b7ee82e8-2fea-4d50-af03-912f22917d53	#東東🎸Stephen
+    - 1f5288c4-c343-4a2f-839f-24d892c73e2b	#格莉米grimmie
+    - 01d94dc7-5d99-420a-8822-b14dabec6c5a	#寶倪🌸Baoni
+    - 2c5daaed-1faa-4bc4-9ab5-18bc3d755bb9	#Sean韋翔⭐️
+    - faeeb35b-8221-411f-a806-d8941f2f8dcf	#杴杴🍀Una🍀
+    - 2aeca340-3e74-4d40-8c3b-682565966473	#914🦋Joyce
+    - eb4691b8-c895-44e3-bc79-19338692876b	#cc🍋青青
+    - c72537b8-5e79-4e69-840d-0a5a1dece6c4	#格格🌈👽🌻
+    - 84d4eebc-98f0-46d0-b9a6-139d19c53c03	#韋佳宏🌞野獸
+    - a5bd46e8-5ec7-457d-957b-36bc5dccdb53	#湯頭soooup
+    - d4a0122f-40c9-4cf4-95c7-84ce1a1d2121	#xenic轟轟
+    - 1e8f0fdf-60ed-4701-9bad-c09afab5defe	#Yumey向日葵星球🌻
+    - 6778730a-da48-4a22-8493-0be4202afd6c	#『瑜氏集團』🎙️大瑜🐟
+    - 67929588-e1be-4efd-a88c-e51cb716f97f	#凱娜Shekinah
+    - b1b9533c-cf3d-42db-bdb1-99cfcd2185d5	#艾克Boy👦🎹
+    - d05118f3-fd6e-4276-821c-d63433f4834e	#🍬思思ㄙㄙㄙ🍬
 
   travel_expert:
     - 88675b22-547f-416e-b3fc-8e9f0327ce2f
