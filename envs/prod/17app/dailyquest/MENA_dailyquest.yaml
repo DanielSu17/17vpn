@@ -360,39 +360,42 @@ newbieRewards:
       required: 1
       requirePhoneBinding: false
       requireDeviceCheck: false
+      withReminder: true
+    - type: 1
+      point: 0
+      exp: 0
+      required: 2
+      requirePhoneBinding: false
+      requireDeviceCheck: false
+      withReminder: true
+      voucherReward:
+        type: 3
+        itemID: "2019newuser"
+        amount: 3
+        intervalSec: 86400
     - type: 3
       point: 20
       exp: 0
-      required: 1
+      required: 3
       requirePhoneBinding: false
       requireDeviceCheck: false
-    - type: 5
-      point: 30
-      exp: 0
-      required: 1
-      requirePhoneBinding: false
-      requireDeviceCheck: false
-    - type: 8
-      point: 20
-      exp: 0
-      required: 1
-      requirePhoneBinding: false
-      requireDeviceCheck: false
+      withReminder: true
     - type: 9
       point: 20
       exp: 0
-      required: 1
+      required: 3
       requirePhoneBinding: false
       requireDeviceCheck: false
+      withReminder: true
+      voucherReward:
+        type: 3
+        itemID: "socute"
+        amount: 5
+        intervalSec: 86400
     - type: 10
       point: 30
       exp: 0
       required: 1
       requirePhoneBinding: false
       requireDeviceCheck: false
-    - type: 11
-      point: 100
-      exp: 0
-      required: 1
-      requirePhoneBinding: false
-      requireDeviceCheck: false
+      withReminder: true
