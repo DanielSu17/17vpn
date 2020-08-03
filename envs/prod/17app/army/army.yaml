@@ -32,6 +32,8 @@ barrage:
 showBarrageThreshold: 10001
 usePagingv2: true
 
+butlerPicture: ""
+
 levelRules:
   - level: 0
     bonus: 0
@@ -39,3 +41,66 @@ levelRules:
     minCaptains: 0
     minColonels: 0
     minGenerals: 0
+  - level: 1
+    bonus: 10000
+    minMembers: 1
+    minCaptains: 0
+    minColonels: 0
+    minGenerals: 0
+  - level: 2
+    bonus: 20000
+    minMembers: 2
+    minCaptains: 0
+    minColonels: 0
+    minGenerals: 0
+  - level: 3
+    bonus: 30000
+    minMembers: 3
+    minCaptains: 0
+    minColonels: 0
+    minGenerals: 0
+  - level: 4
+    bonus: 50000
+    minMembers: 5
+    minCaptains: 0
+    minColonels: 0
+    minGenerals: 0
+  - level: 5
+    bonus: 70000
+    minMembers: 10 
+    minCaptains: 0
+    minColonels: 0
+    minGenerals: 0
+  - level: 6
+    bonus: 100000
+    minMembers: 20 
+    minCaptains: 1
+    minColonels: 1
+    minGenerals: 0
+  - level: 7
+    bonus: 150000
+    minMembers: 30 
+    minCaptains: 3
+    minColonels: 2
+    minGenerals: 1
+  - level: 8
+    bonus: 200000
+    minMembers: 50 
+    minCaptains: 5
+    minColonels: 3
+    minGenerals: 2
+
+# watchBonus defines needed number of watching subscriber for corresponding bonus achievement value
+watchBonus:
+  - minSub: 1
+    bonus: 1000
+  - minSub: 2
+    bonus: 2000
+  - minSub: 3
+    bonus: 3000
+  - minSub: 5
+    bonus: 5000
+  - minSub: 10
+    bonus: 10000
+  - minSub: 20
+    bonus: 20000
