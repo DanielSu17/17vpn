@@ -80,3 +80,40 @@ rewards:
 secretIAPConditions:
 
 rewardEvents:
+#20200801 - 20200810期間購買15420方案多贈送50%寶寶幣+3天尊榮寶寶
+  - eventID: "QAKevinReward-1"
+    startTime: "2020-08-01T00:00:00+08:00"
+    endTime: "2020-08-10T23:59:59+08:00"
+    eventRequirements:
+      - sellingChannels:
+          include:
+            - 1
+            - 2
+        onlyAvailableInSameRegion: true
+        legacyFirstPurchase:
+          enableTimeRange: false
+    rules:
+      - reward:
+          points: 7710
+          premiumBaby:
+            days: 3
+        requirements: 
+          - merchandiseID: "media17_points_15420"
+
+          
+#20200801 - 20200810生涯首儲330點送330點
+  - eventID: "QAKevinReward-2"
+    startTime: "2020-08-01T00:00:00+08:00"
+    endTime: "2020-08-10T23:59:59+08:00"
+    eventRequirements:
+      - sellingChannels:
+          include:
+            - 1
+            - 2
+        legacyFirstPurchase:
+          enableTimeRange: false
+    rules:
+      - reward:
+          points: 330
+        requirements: 
+          - merchandiseID: "media17_points_330" 
