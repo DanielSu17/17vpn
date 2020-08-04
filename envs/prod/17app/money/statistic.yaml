@@ -45,14 +45,14 @@ pointUsageLogsPlan:
   syncPlans:
     - name: latest
       startID: 0
-      intervals: 300000
+      intervals: 100000
 
 pointGainLogsPlan:
   migrateState: 2 # 0: disable, 1: mysql, 2: mongo
   syncPlans:
     - name: latest
       startID: 0
-      intervals: 300000
+      intervals: 100000
 
 updateRevenueCron:
   enable: true
