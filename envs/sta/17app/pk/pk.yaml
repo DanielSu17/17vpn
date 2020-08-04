@@ -9,9 +9,6 @@ pkEvents:
   - 10240 
   - 10246
 
-#將相同活動配對在一起的開關  
-sameEventMatchFirst: true
-
 whiteList:
   - "00c0bc02-c6df-448c-8385-114288e51d83" # 77_七七
   - "d41a9c27-e033-426a-9107-ec7eb8157574" # 7794暖
@@ -48,6 +45,8 @@ silenceList:
   - "ae7de094-f3ae-4de6-9037-e4f190acdbf1" # qacontractor9
   - "2e95de40-7880-422b-7f3b-0af9405e3b4d" # janet.w02
 matchingRules:
+  #將相同活動配對在一起的開關  
+  sameEventMatchFirst: true
   levelRange:
     - 10
     - 20
