@@ -2,26 +2,33 @@
 #
 #  Popoup anything you want 
 #  mode: 
-#        1: src =<URL>    NOTE: If mode == 1, YOU NEED TO FILL UP field [url] AND field [src] with the SAME url. [url] field will be removed in the furture.
+#        1: src =<URL> 
 #        2: src =<userID>
 #
 #
 #eventPopup:
 #- name: Event Popup1
-#    mode: 1
-#    src: https://google.com.tw
-#    url: https://google.com.tw
-#    imageUrl: https://dummyimage.com/300x500/0000ff/fff&text=MICK+WILLS
-#    startTime: 2019-12-01 00:00:00 (GMT+0800)
-#    endTime: 2119-12-31 23:59:59 (GMT+0800)
-#    imageSize:
-#      width: 300
-#      height: 500
+#  mode: 1
+#  src: https://google.com.tw
+#  imageUrl: https://dummyimage.com/300x500/0000ff/fff&text=MICK+WILLS
+#  startTime: 2019-12-01 00:00:00 (GMT+0800)
+#  endTime: 2119-12-31 23:59:59 (GMT+0800)
+#  imageSize:
+#    width: 300
+#    height: 500
+#- name: UserID Popup1
+#  mode: 2
+#  src: 302c5eb3-9c2c-4331-9653-f9cee2615dd5  # angiechang@17.media
+#  imageUrl: https://dummyimage.com/300x500/0000ff/fff&text=MICK+WILLS
+#  startTime: 2019-12-01 00:00:00 (GMT+0800)
+#  endTime: 2119-12-31 23:59:59 (GMT+0800)
+#  imageSize:
+#    width: 300
+#    height: 500
 eventPopup:
   - name: Event URL test1
     mode: 1
     src: https://event.wave.com.tw/wave-20191231-wavestar/0
-    url: https://event.wave.com.tw/wave-20191231-wavestar/0
     imageUrl: https://cdn.wave.com.tw/v1/bot/1578655218423537_4412997881488766_58072390645611344498037583023212_ib.png
     startTime: 2020-01-01 00:00:00 (GMT+0800)
     endTime: 2022-01-31 23:59:59 (GMT+0800)
@@ -31,7 +38,6 @@ eventPopup:
   - name: UserID test1
     mode: 2
     src: 63d41470-640f-4be5-8caa-5d05be784b13 #chihkaiyu
-    url:
     imageUrl: https://cdn.wave.com.tw/v1/bot/1592994489173606_8767245042698315_25335580870983339158910972306139_mq.png
     startTime: 2020-01-01 00:00:00 (GMT+0800)
     endTime: 2022-01-31 23:59:59 (GMT+0800)
@@ -41,7 +47,6 @@ eventPopup:
   - name: coverpopup
     mode: 2
     src: f5ac4ee6-e7e5-45c5-8979-e5ec9d12c2ad
-    url: 
     imageUrl: https://cdn.wave.com.tw/v1/bot/1592994489173606_8767245042698315_25335580870983339158910972306139_mq.png
     startTime: 2020-02-17 10:00:00 (GMT+0800)
     endTime: 2020-02-20 17:59:59 (GMT+0800)
