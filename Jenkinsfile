@@ -136,8 +136,8 @@ node('gcp') { timestamps { ansiColor('xterm') {
         def message_failure = message_prefix + '17media/configs - Job Failed\n*Title:* `' + commit_msg + '`\n*Commit:* <'    + githubCommitLink + '|' + params.REVISION + '> (<' + env.BUILD_URL + '|Jenkins>)\n@sre @here'
         def message_success = message_prefix + '17media/configs - Job Completed\n*Title:* `' + commit_msg + '`\n*Commit:* <' + githubCommitLink + '|' + params.REVISION + '> (<' + env.BUILD_URL + '|Jenkins>)'
 
-        // force exit if job execution time over 360 seconds
-        timeout(time: 360, unit: 'SECONDS') {
+        // force exit if job execution time over 600 seconds
+        timeout(time: 600, unit: 'SECONDS') {
           // post slack message before job start
           postNotification(message_started, 'good')
 
