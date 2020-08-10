@@ -10,7 +10,7 @@ main(){
     echo "--- start checking ---"
     curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"Config commit:\n*<https://github.com/tig4605246/actionary/commit/$COMMIT_URL | $GIT_COMMIT>*\"}},{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"*Build URL:*\n*<${BUILD_URL}|URL>*\"}},{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"*Status:*\nTest Started\n*Commited By:*\n ${COMMITER_INFO}\n*Commit Message:*\n${COMMIT_MSG} \"}}]}" ${SLACK}
     for SCRIPT in ${CHECKER}; do
-        docker run --rm -v $(pwd):/repo tig4605246/config-checker-python:latest cd /repo && python3 /repo/${SCRIPT}
+        docker run --rm -v $(pwd):/repo tig4605246/config-checker-python:latest /bin/sh -c "/repo && python3 /repo/${SCRIPT}"
         ## get status ##
         STATUS=$?
         ## take some decision ## 
