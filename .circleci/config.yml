@@ -83,12 +83,12 @@ jobs:
 
 workflows:
   version: 2
-  all:
-    jobs:
-      - build:
-          <<: *tag_filter_master_build
-      - cache_workspace:
-          <<: *tag_filter_master_build
+  # all:
+  #   jobs:
+  #     - build:
+  #         <<: *tag_filter_master_build
+  #     - cache_workspace:
+  #         <<: *tag_filter_master_build
       # - deploy:
       #     <<: *tag_filter_master_build
       #     requires:
