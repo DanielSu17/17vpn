@@ -89,10 +89,10 @@ workflows:
           <<: *tag_filter_master_build
       - cache_workspace:
           <<: *tag_filter_master_build
-      - deploy:
-          <<: *tag_filter_master_build
-          requires:
-          - build
+      # - deploy:
+      #     <<: *tag_filter_master_build
+      #     requires:
+      #     - build
 
   pr-build:
     jobs:
