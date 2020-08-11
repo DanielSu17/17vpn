@@ -24,6 +24,14 @@ sumOfPickedTTLHours: 6 # 多少時間完全沒搶到點數才會reset, 人會休
 pickedSleepPenaltyMsecs: 250 # 處罰基本單位
 maxPenaltyMsecs: 3000 # 最多被處罰的時間
 sumOfPickedThreshold: 250 # 超過多少點才會被處罰
+pickProbabilityThresholds: # 每日累積搶到點數，對應的搶紅包機率限制(百分比)
+  2000: 15
+  2035: 10
+  3035: 7
+  4035: 5
+  5000: 0
+dailySumOfPickedRefreshHour: 5 # 每日累積點數的重置時間，台灣時間5點。
+userLockPickedSecs: 45 # 使用者搶到紅包後，多少秒內搶紅包會失敗
 whiteListUserIDs:
  - "d1cd5a6a-3346-4263-85ef-c9f3a600de39"  # ryanmachi
  - "5cbbcca2-b412-4872-8555-4c0f1aeed6ff"  # finn
