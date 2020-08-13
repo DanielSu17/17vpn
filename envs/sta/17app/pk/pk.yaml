@@ -68,3 +68,57 @@ playList:
       key: "pk_menu_mode_title_random"
     description:
       key: "pk_menu_mode_description_random"
+
+## for pk leaderboard
+pkHourLBLevel:
+  min: 30
+  max: 70
+pkStarDurations:
+- startTime: 20h00m00s
+  endTime: 24h00m00s
+regularRuleTitle: 
+  key: pk_information_regular_title
+regularRules:
+  - key: pk_information_regular_rule1
+    params:
+      - value: 3000
+  - key: pk_information_regular_rule2
+    params:
+      - value: 3
+hourRuleTitle: 
+  key: pk_information_hourly_title
+hourRules:
+  - key: pk_information_hourly_rule1
+  - key: pk_information_hourly_rule2
+  - key: pk_information_regular_rule1
+    params:
+      - value: 2000
+  - key: pk_information_hourly_rule3
+    params:
+      - value: 30
+      - value: 70
+  - key: pk_information_hourly_rule4
+    params:
+      - value: 8
+# minimum points needed to count as lb win after specific time
+# if now is before earliest start, we use 3000 as defualt.
+# please dont clear this config until start is older than one month for data consistency
+pkLBMinPoints: 
+  - start: "2020-08-12 18:00:00 (GMT+0800)"
+    minPoint: 3000
+  - start: "2020-08-14 18:00:00 (GMT+0800)"
+    minPoint: 2000
+  - start: "2020-08-17 18:00:00 (GMT+0800)"
+    minPoint: 3000
+  - start: "2020-08-18 18:00:00 (GMT+0800)"
+    minPoint: 2000
+  - start: "2020-08-19 18:00:00 (GMT+0800)"
+    minPoint: 3000
+  - start: "2020-08-20 18:00:00 (GMT+0800)"
+    minPoint: 2000
+  - start: "2020-08-21 18:00:00 (GMT+0800)"
+    minPoint: 3000
+  - start: "2020-08-22 18:00:00 (GMT+0800)"
+    minPoint: 2000
+  - start: "2020-08-23 18:00:00 (GMT+0800)"
+    minPoint: 3000
