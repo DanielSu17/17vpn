@@ -23,6 +23,7 @@ var (
 	slackUserEmail string
 	slackToken     string
 	confirm        string
+	project        string
 	env            string
 	colorDanger    = "danger"
 	colorGood      = "good"
@@ -34,6 +35,10 @@ func main() {
 		cli.StringFlag{
 			Name:   "env",
 			EnvVar: "ENV",
+		},
+		cli.StringFlag{
+			Name:   "project",
+			EnvVar: "PROJECT",
 		},
 		cli.StringFlag{
 			Name:   "slackUserID",
@@ -54,6 +59,7 @@ func main() {
 	}
 	app.Action = func(c *cli.Context) error {
 		confirm = c.String("confirm")
+		project = c.String("project")
 		env = c.String("env")
 		if env == "" {
 			log.Fatal("Repeated EnvVar: ENV")
@@ -147,7 +153,11 @@ func gitDiff() {
 	execCommand("./", "git", []string{"checkout", "-b", gitBranch + "_" + branch_suffix})
 
 	// Update i18n
-	execCommand("./tools", "python", []string{"update_i18n.py", env})
+	dir := "./tools"
+	if project != "" {
+		dir += fmt.Sprintf("/%s", project)
+	}
+	execCommand(dir, "python", []string{"update_i18n.py", env})
 
 	// Run git diff
 	diff, _ := execCommand("./", "git", []string{"diff"})

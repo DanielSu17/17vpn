@@ -15,7 +15,7 @@ backend_internal_mapping = {
     "zh_TW": "zh-hant",
     "zh_CN": "zh-hans",
     "en":    "en",
-    "zh_SG": "zh_SG",
+    "zh_SG": "zh-sg",
 }
 
 class I18nJsonWriter:
