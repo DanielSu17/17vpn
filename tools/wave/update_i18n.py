@@ -32,7 +32,7 @@ class I18nJsonWriter:
         self.i18n_dict = i18n_dict
         self.project = project
 
-    def prepare_data(self, data, param_prefix):
+    def prepare_data(self, data, base_name):
         """
         @type data: dict
         @type param_prefix: regex
@@ -40,11 +40,9 @@ class I18nJsonWriter:
         """
         data_str = json.dumps(data, indent=self.indent, sort_keys=self.sort_keys, separators=self.separators, ensure_ascii=False).encode('utf8')
 
-        if param_prefix is not None:
-            # We need to escape '%' or client may crash
-            data_str = re.sub(r'%', r'%%', data_str)
-            data_str = re.sub(r'\$([0-9]+)', param_prefix, data_str)
-
+        if base_name == 'ios':
+            data_str = re.sub(r'%([0-9]*)s', r'%\1@', data_str) 
+            data_str = re.sub(r'%([0-9]*)\$s', r'%\1$@', data_str) 
         return data_str
 
     def write_file(self, full_path, data):
@@ -57,14 +55,14 @@ class I18nJsonWriter:
         with open(full_path, 'w') as fh:
             fh.write(data)
 
-    def write_data(self, envs, base_name, param_prefix=None):
+    def write_data(self, envs, base_name):
         """
         @type base_name: string
         @type param_prefix: regex
         """
         for env in envs:
             for lang, value in self.i18n_dict.iteritems():
-                data_str = self.prepare_data(value, param_prefix)
+                data_str = self.prepare_data(value, base_name)
                 full_path = self.path % (env, self.project, lang.lower(), base_name)
 
                 self.write_file(full_path, data_str)
@@ -184,7 +182,7 @@ if __name__=="__main__":
 
     iw = I18nJsonWriter(backend_client_keys, "wave")
     # Write ios.json and android.json
-    iw.write_data(env, "ios", param_prefix=r'%\1$@')
-    iw.write_data(env, "android", param_prefix=r'%\1$s')
+    iw.write_data(env, "ios")
+    iw.write_data(env, "android")
 
     time.sleep(5)
