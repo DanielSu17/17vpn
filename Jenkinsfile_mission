@@ -54,7 +54,7 @@ node('gcp') { timestamps { ansiColor('xterm') {
         deleteDir()
 
         sh("mkdir -p gowork/config")
-        dif("gowork/config") {
+        dir("gowork/config") {
             git url: 'git@github.com:17media/configs.git',
                     credentialsId: '3dc01492-01f6-4be5-8073-8de5f458ed1e',
                     branch: 'master'
