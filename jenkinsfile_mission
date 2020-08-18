@@ -1,0 +1,101 @@
+// NOTE:
+//   we are now using a legacy Jenkins feature `Trigger builds remotely`
+//   but is NOT supported by Jenkinsfile, need to configure it manually
+//   DO remember to check if the paramter is set correctly after apply.
+//
+//   also, any change within the block of `properties()` might result in next
+//   build failure, it's limitation of Jenkins WebUI limitation by design,
+//   it's not a bug, don't report it as bug!!!
+
+properties([
+    buildDiscarder(
+        logRotator(
+            numToKeepStr: '30'
+        )
+    ),
+    disableConcurrentBuilds(),
+    parameters([
+        choice(
+            choices: ['dev', 'sta', 'prod'],
+            description: '',
+            name: 'ENV'
+        ),
+        string(
+            defaultValue: '',
+            description: '',
+            name: 'SLACK_TOKEN',
+            trim: false
+        ),
+        string(
+            defaultValue: '',
+            description: '',
+            name: 'SLACK_USER_ID',
+            trim: false
+        ),
+        string(
+            defaultValue: '',
+            description: '',
+            name: 'SLACK_USER_EMAIL',
+            trim: false
+        ),
+        string(
+            defaultValue: '',
+            description: '',
+            name: 'ROWS',
+            trim: false
+        )]
+    )
+])
+
+
+node('gcp') { timestamps { ansiColor('xterm') {
+    stage('Setup Environment') {
+        // Cleanup workspace before job start
+        deleteDir()
+
+        sh("mkdir -p gowork/config")
+        dif("gowork/config") {
+            git url: 'git@github.com:17media/configs.git',
+                    credentialsId: '3dc01492-01f6-4be5-8073-8de5f458ed1e',
+                    branch: 'master'
+        }
+
+        dir("gowork") {
+            withCredentials([
+                file(
+                    credentialsId: "baggage.spreadsheet.access.token",
+                    variable: "TOKEN"
+                ),
+                file(
+                    credentialsId: "baggage.spreadsheet.access.credential",
+                    variable: "CREDENTIAL"
+                )
+            ]) {
+                // copy credentials file 
+                sh("cp ${TOKEN} ./token.json")
+                sh("cp ${CREDENTIAL} ./credential.json")
+
+                // download binary.exe from storage
+                def storage = "http://cdn.17app.co"
+                def missionBinary = "missionGenerator.gz"
+                sh("wget ${storage}/${missionBinary}")
+                sh("tar zxvf ${missionBinary}")
+            }
+        }
+    } // end of stage
+
+    stage('Command Execute') {
+        dir("gowork") {
+            def slackChannel = "mission-slackbot-test"
+            sh("./main \
+                    -ENV=${params.ENV} \
+                    -SLACK_USER_ID=${params.SLACK_USER_ID} \
+                    -SLACK_USER_EMAIL=${params.SLACK_USER_EMAIL} \
+                    -SLACK_TOKEN=${params.SLACK_TOKEN} \
+                    -ROWS=${params.ROWS} \
+                    -SLACK_CHANNEL=${slackChannel} \
+                    -CONFIG_ROOT=${evn.WORKSPACE}/gowork/config
+            ")
+        }
+    }
+} /* end of ansiColor */ } /* end of timestamps */ } /* end of node */
