@@ -30,6 +30,72 @@
 # | NON_IAP | 2 |
 
 missions:
+# 8/21-8/26 情人節 儲值35980 贈6禮
+  - ID: 7ae1fb36-655b-49e5-a701-4835e056712c
+    type: 10
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2007_charge_02
+      amount: 6
+      expireTimeSecs: 86400
+    requirePhoneBinding: true
+    withReminder: false
+    i18nTitle: baggage_mission_first_time_IAP_point_event_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 35980
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
+    i18nDescriptionParams:
+    goalValue: 35980
+    enableTimeRange:
+      - startTime: "2020-08-18 16:00:00 (GMT+0800)"
+        endTime: "2020-08-26 23:59:59 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
+# 8/21-8/26 情人節 儲值15420 贈3禮
+  - ID: a3c4081f-d1b1-44cc-9a74-8d1bbb0718d0
+    type: 10
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2007_charge_02
+      amount: 3
+      expireTimeSecs: 86400
+    requirePhoneBinding: true
+    withReminder: false
+    i18nTitle: baggage_mission_first_time_IAP_point_event_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 15420
+    i18nContent: 
+    i18nContentParams:
+    i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
+    i18nDescriptionParams:
+    goalValue: 15420
+    enableTimeRange:
+      - startTime: "2020-08-18 16:00:00 (GMT+0800)"
+        endTime: "2020-08-26 23:59:59 (GMT+0800)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
   - ID: a49f4773-24c2-482e-9690-69b7414280ac
     type: 8
     lifeCycle: 1
