@@ -77,7 +77,7 @@ node('gcp') { timestamps { ansiColor('xterm') {
 
                 // download binary.exe from storage
                 def storage = "http://cdn.17app.co"
-                def missionBinary = "missionGenerator.gz"
+                def missionBinary = "missionGeneratorV1.gz"
                 sh("wget ${storage}/${missionBinary}")
                 sh("tar zxvf ${missionBinary}")
             }
