@@ -88,13 +88,13 @@ node('gcp') { timestamps { ansiColor('xterm') {
         dir("gowork") {
             def slackChannel = "mission-slackbot-test"
             sh("./main \
-                    -ENV=${params.ENV} \
-                    -SLACK_USER_ID=${params.SLACK_USER_ID} \
-                    -SLACK_USER_EMAIL=${params.SLACK_USER_EMAIL} \
-                    -SLACK_TOKEN=${params.SLACK_TOKEN} \
-                    -ROWS=${params.ROWS} \
-                    -SLACK_CHANNEL=${slackChannel} \
-                    -CONFIG_ROOT=${env.WORKSPACE}/gowork/config \
+                    -env=${params.ENV} \
+                    -slackUserID=${params.SLACK_USER_ID} \
+                    -slackUserEmail=${params.SLACK_USER_EMAIL} \
+                    -slackToken=${params.SLACK_TOKEN} \
+                    -rows=${params.ROWS} \
+                    -slackChannel=${slackChannel} \
+                    -configRoot=${env.WORKSPACE}/gowork/config \
             ")
         }
     }
