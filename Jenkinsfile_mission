@@ -94,8 +94,9 @@ node('gcp') { timestamps { ansiColor('xterm') {
                     -SLACK_TOKEN=${params.SLACK_TOKEN} \
                     -ROWS=${params.ROWS} \
                     -SLACK_CHANNEL=${slackChannel} \
-                    -CONFIG_ROOT=${evn.WORKSPACE}/gowork/config
+                    -CONFIG_ROOT=${env.WORKSPACE}/gowork/config \
             ")
         }
     }
 } /* end of ansiColor */ } /* end of timestamps */ } /* end of node */
+
