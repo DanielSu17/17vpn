@@ -41,8 +41,19 @@ class I18nJsonWriter:
         data_str = json.dumps(data, indent=self.indent, sort_keys=self.sort_keys, separators=self.separators, ensure_ascii=False).encode('utf8')
 
         if base_name == 'ios':
-            data_str = re.sub(r'%([0-9]*)s', r'%\1@', data_str) 
-            data_str = re.sub(r'%([0-9]*)\$s', r'%\1$@', data_str) 
+            data_str = re.sub(r'\[%([0-9]*)s\]', r'%\1@', data_str)    # [%s] [%1s] -> %@ %1@
+            data_str = re.sub(r'\[%([0-9]*)\$s\]', r'%\1$@', data_str) # [%1$s] -> %1$@
+            data_str = re.sub(r'\[%i\]', r'%i', data_str)              # [%i] -> %i
+            data_str = re.sub(r'\[%([0-9]*)d\]', r'%\1d', data_str)    # [%1d] [%02d] -> %1d %02d
+            data_str = re.sub(r'\[%([0-9]*)\$d\]', r'%\1$d', data_str) # [%1$d] -> %1$d
+        
+        if base_name == 'android':
+            data_str = re.sub(r'\[%([0-9]*)s\]', r'%\1s', data_str)    # [%s] [%1s] -> %s %1s
+            data_str = re.sub(r'\[%([0-9]*)\$s\]', r'%\1$s', data_str) # [%1$s] -> %1$@
+            data_str = re.sub(r'\[%i\]', r'%i', data_str)              # [%i] -> %i
+            data_str = re.sub(r'\[%([0-9]*)d\]', r'%\1d', data_str)    # [%1d] [%02d] -> %1d %02d
+            data_str = re.sub(r'\[%([0-9]*)\$d\]', r'%\1$d', data_str) # [%1$d] -> %1$d
+
         return data_str
 
     def write_file(self, full_path, data):

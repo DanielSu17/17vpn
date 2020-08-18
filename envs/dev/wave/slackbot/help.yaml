@@ -152,3 +152,14 @@ commandHelp:
         title: "`[查詢禮物營收表現]`"
         description: |
           > 查詢指定的禮物種類在某段時間內每日的營收表現、收禮用戶收點百分比
+  i18n:
+    title: "Lokalise (i18n) 相關"
+    commandsHelp:
+      update:
+        title: "`[與同步 Lokalise]`"
+        description: |
+          > 同步 Lokalise 上的資料，並不會更新 app 上的值。會將結果以私訊方式通知，確認無誤後再下 confirm 指令才完全更新
+      confirm:
+        title: "`[更新資料至 backend]`"
+        description: |
+          > 確認無誤後，執行此指令，便會更新 update 指令所回傳的資料
