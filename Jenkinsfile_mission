@@ -73,7 +73,7 @@ node('gcp') { timestamps { ansiColor('xterm') {
             ]) {
                 // copy credentials file 
                 sh("cp ${TOKEN} ./token.json")
-                sh("cp ${CREDENTIAL} ./credential.json")
+                sh("cp ${CREDENTIAL} ./credentials.json")
 
                 // download binary.exe from storage
                 def storage = "http://cdn.17app.co"
