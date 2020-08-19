@@ -22,6 +22,7 @@ groups:
     eventory:           "go"
     eventory-worker:    "go"
     data-stream-worker: "go"
+    ml-host:            "go"
     spinnaker:          "spinnaker"
     17app:              "spinnaker"
   frontend:
@@ -84,6 +85,7 @@ settings:
   - "eventory"
   - "eventory-worker"
   - "data-stream-worker"
+  - "ml-host"
 
 # Original 17app group had been devided into environment based design
 # For example, 17app in k8sprod represent 17 services group but
@@ -108,6 +110,7 @@ batchDeploy:
       - "eventory"
       - "eventory-worker"
       - "data-stream-worker"
+      - "ml-host"
     k8ssta:
       - "goapi"
       - "bbrich"
@@ -126,6 +129,7 @@ batchDeploy:
       - "eventory"
       - "eventory-worker"
       - "data-stream-worker"
+      - "ml-host"
     awsprod:
       - "goapi"
       - "revprox"
