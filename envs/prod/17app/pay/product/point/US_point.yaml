@@ -67,16 +67,16 @@ eventBasedIAP:
 
 
 
-#First time purchase
-  - startTime: "2020-01-23T07:00:00+08:00"
-    endTime: "2020-06-25T07:00:00+08:00"
+#Summer Gift Package promotion
+  - startTime: "2020-08-20T16:00:00-07:00"
+    endTime: "2020-08-24T23:59:00-07:00"
     showCountdownUnderSticker: false
     showCountdownInPopUp: false
-    stickerURL: "https://cdn.17app.co/823c2abd-dba5-4b10-8712-22b4e74de769.png"
+    stickerURL: 
     eventInfo:
       eventTitleI18nKey: ""
       eventURL: ""
-      bannerImageURL: "https://cdn.17app.co/f4974873-d226-474d-8e15-37384164aae5.png"
+      bannerImageURL: "https://cdn.17app.co/43fb4377-8773-4095-85dd-46c00c833113.png"
     layoutInfo:
       titlePicURL: ""
       messageColor: "#6F6777"
@@ -95,11 +95,11 @@ eventBasedIAP:
         bonusPoint: 0
         shouldHighlight:  false
       - productID: "media17_points_1720"
-        bonusPoint: 1720
-        shouldHighlight:  true
+        bonusPoint: 0
+        shouldHighlight:  false
       - productID: "media17_points_3540"
-        bonusPoint: 3540
-        shouldHighlight:  true
+        bonusPoint: 0
+        shouldHighlight:  false
       - productID: "media17_points_8550"
         bonusPoint: 0
         shouldHighlight:  false
@@ -109,7 +109,7 @@ eventBasedIAP:
       - productID: "media17_points_35980"
         bonusPoint: 0
         shouldHighlight:  false
-    firstPurchaseType: 1
+    firstPurchaseType: 2
     taInfo:
       registerRange:
         dayStart: 0 # 0 means no limit
