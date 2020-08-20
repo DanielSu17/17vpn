@@ -13,6 +13,20 @@ armyOnlySupportedVersion:
 
 armyOnlyEnabled: false
 
+
+# DO NOT EDIT THIS SECTION
+# temporary add pull rate limit back
+pullRateLimit:
+  enable: true
+  period: 300
+  threshold: 60
+  slackThreshold: 10
+  slackChannel: "dev-pullurl-alert"
+  pullUrlTTL: 15
+  deviceLimit: 5
+  slackDeviceLimit: 3
+
+
 # for skyeye ...etc.
 # Deprecated after 2020/08/10. Please use paidWhiteList instead.
 globalWhiteList:
