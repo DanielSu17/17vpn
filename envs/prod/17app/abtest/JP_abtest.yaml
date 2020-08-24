@@ -548,8 +548,10 @@
 # onboarding phase2: group b 強制直接進熱門頁，沒有 intro
 # https://17media.atlassian.net/browse/APP-12698
 - testName: onboardingIntro
-  byDeviceID: true
-  enableABtest: false
+  enableABtest: true
+  byAdvertisementID: true
+  startTime: "2020-08-25T11:00:00+08:00"
+  endTime: "2020-09-09T11:00:00+08:00"
   lastCharGroup:
     "0": "a"
     "1": "a"
@@ -559,10 +561,10 @@
     "5": "a"
     "6": "a"
     "7": "a"
-    "8": "b"
-    "9": "b"
-    "a": "b"
-    "b": "b"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
     "c": "b"
     "d": "b"
     "e": "b"
