@@ -4,67 +4,29 @@
 # - labelID: mapping for labels table id
 
 labelInfos:
-
-  - id: "brainwashmusic" #空耳洗腦神曲
+  - id: "best" #台語老歌精選
     type: 1
     label:
-      key: "streamer_label_highlight_brainwashmusic"
+      key: "streamer_label_highlight_besttwoldsongs"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+    isHide: true
+    order: 489
+
+  - id: "single" #單身情歌的逆襲
+    type: 1
+    label:
+      key: "streamer_label_highlight_singlelovesong"
     iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
     isHide: true
     order: 488
 
-  - id: "twrock" #台灣Rock音樂祭
+  - id: "sweet" #甜蜜情歌
     type: 1
     label:
-      key: "streamer_label_highlight_twrock"
+      key: "streamer_label_highlight_sweetlovesong"
     iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
     isHide: true
     order: 487
-
-
-#  - id: "ghost" #真正的大學好兄弟
-#    type: 3
-#    label:
-#      key: "streamer_label_highlight_ghost"
-#    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
-#    isHide: true 
-#    order: 486
-
-
-#  - id: "band" #心目中的神團
-#    type: 1
-#    label:
-#      key: "streamer_label_highlight_band"
-#    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
-#    isHide: true
-#    order: 485
-
-
-
-
-#  - id: "lovingsong" # 戀愛ing
-#    type: 1
-#    label:
-#      key: "streamer_label_highlight_lovingsong"
-#    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
-#    isHide: true
-#    order: 483
-
-#  - id: "17summersong" # 清涼一夏 夏日歌
-#    type: 1
-#    label:
-#      key: "streamer_label_highlight_17summersong"
-#    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
-#    isHide: true
-#    order: 482
-
-#  - id: "17playing" # 演奏饗宴
-#    type: 1
-#    label:
-#      key: "streamer_label_highlight_17playing"
-#    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
-#    isHide: true
-#    order: 481
 
   - id: "dj_night_out" # dj
     type: 1
@@ -444,62 +406,79 @@ topicTabLabels:
 labelWhiteList:
 
 
-  brainwashmusic:
-    - afbb23a5-34e3-4b3d-4911-cc35c1c2227e
-    - 201a14f5-99bb-4c29-b9fb-880d058d8ba1
-    - 53882908-1070-486e-8c70-56fb60a5f02a
-    - 8335a2ee-05ba-4b80-bc3a-a4be8b0b1adc
+  best:
+    - b8238e3c-0029-447e-9e33-91fa646ff8c6
     - 4ece72fa-3e9c-46d8-42b7-1eeeb7780c62
-    - e951c142-7524-450e-9d56-1e3da6ddf2da
-    - e6af1aaa-bb13-4574-adaa-b23456767070
-    - a5a55608-9e2c-47b6-9f7e-43d8f4e1f273
-    - 863ba925-5edc-4f6f-89a1-755e65892d23
-
-  twrock:
+    - c57fba7e-38aa-43c1-867e-96e0fb6ae366
+    - 0c746199-26c4-43f8-adf2-0fb9dee3dbab
     - a9f4623d-59e1-47e2-b9d8-54005f7535b9
-    - 115e6847-9f24-490b-a7b3-db42b5f6ca82
-    - dabe5557-6663-42d0-a32b-4dba20ee770d
-    - 3c5b64f9-c4e6-40cc-b28d-6db96e3baa05
-    - 6d512f81-4503-46a8-97e6-28d54cfde90a
-    - 464d66fc-f860-4c2e-8f71-8ca91a200f1f
-    - 84d4eebc-98f0-46d0-b9a6-139d19c53c03
-    - d4a0122f-40c9-4cf4-95c7-84ce1a1d2121
-    - a960214e-e937-49d7-9835-7cf86266b2e8
-    - 6c889517-f0d9-4f4d-b9de-5b972417a2cc
-    - b24dfa22-6aa8-4591-89c8-9168e99479b2
-    - 289b4afe-bcab-41fc-a287-9758522291b8
-    - fb7f87f6-a882-4f38-94a7-0d3fc1f60967
-
-
-
-
-
-  lovingsong:
-    - dbd00895-9a27-4a19-ac8a-55d2cd778576
-    - 5b949249-227c-468b-a25d-511078cd1f4f
-    - bf793578-a1df-4d0d-a7ec-f38e396a599e
-    - 6b94d6ae-b155-42d4-9209-7570f922ab8a
-    - 67cc15ed-1f28-4b19-9869-9c3a4810bf6c
-    - e02c7ccf-0adc-4717-aaf9-770a99688e0f
-    - 115e6847-9f24-490b-a7b3-db42b5f6ca82
-    - dabe5557-6663-42d0-a32b-4dba20ee770d
-    - f3adb228-2e7b-4f67-bec7-a46daa2cd210
     - a607ccc0-83d0-47c3-8b3a-4c5522746aa4
     - 1c39dd09-27b9-4a71-628e-b3b766d0884e
     - fa5553ad-d795-45ac-8bc0-581dcbba0362
-    - 2aee9213-3c8c-46f2-b5ca-cad9985d09cf
+    - 6d686af3-cf30-4b6d-9502-61c05271ef30
+    - 6d512f81-4503-46a8-97e6-28d54cfde90a
+    - 29a79809-c6ae-45ad-b9ce-402606ba1b93
+    - 175b3232-7349-4e59-9077-f48c1049783f
+    - d32aad80-1f7d-42ea-8ec9-042a6b6b5e8f
+    - fe95575b-8cae-42f9-88ac-f989be71fc9b
+    - 4ece72fa-3e9c-46d8-42b7-1eeeb7780c62
+    - 451f0f1b-aee4-4ab2-ae3e-4fa246a333e5
+    - e951c142-7524-450e-9d56-1e3da6ddf2da
+    - e6af1aaa-bb13-4574-adaa-b23456767070
+
+  single:
+    - c57fba7e-38aa-43c1-867e-96e0fb6ae366
+    - 0c746199-26c4-43f8-adf2-0fb9dee3dbab
+    - a9f4623d-59e1-47e2-b9d8-54005f7535b9
+    - b8ce0c9f-569a-417a-b1da-35eaa203cefa
+    - e02c7ccf-0adc-4717-aaf9-770a99688e0f
+    - dabe5557-6663-42d0-a32b-4dba20ee770d
+    - a607ccc0-83d0-47c3-8b3a-4c5522746aa4
+    - 1c39dd09-27b9-4a71-628e-b3b766d0884e
+    - fa5553ad-d795-45ac-8bc0-581dcbba0362
+    - 8d018b54-f816-4249-8564-c951109b7237
+    - 4b600c56-1afb-4d86-bbd3-e2aa98af2d5e
     - 059fe0ca-d143-45be-a0af-e6a38ecc9af9
     - 7861708b-203d-4861-bfcd-e453ec2f6e60
     - 69be87c0-6f77-4581-b0d7-73f0cfd4ca24
     - df529949-9efd-40ba-8d14-5f07e64c4058
-    - 8b3c94df-2aae-42a9-b59b-7467235e4818
+    - 6d512f81-4503-46a8-97e6-28d54cfde90a
     - aa89492f-5b87-4320-8e06-f13f61364a89
     - 29a79809-c6ae-45ad-b9ce-402606ba1b93
     - 175b3232-7349-4e59-9077-f48c1049783f
-    - e0d8cf83-aaf9-414b-9081-b1a4667cb03e
+    - 3c5b64f9-c4e6-40cc-b28d-6db96e3baa05
+    - d4518899-4241-4715-8f17-77c9d200c326
+    - 464d66fc-f860-4c2e-8f71-8ca91a200f1f
+    - e3103d5a-291c-46b1-5dd6-f58d9266380f
     - fe95575b-8cae-42f9-88ac-f989be71fc9b
     - 451f0f1b-aee4-4ab2-ae3e-4fa246a333e5
     - e951c142-7524-450e-9d56-1e3da6ddf2da
+
+  sweet:
+    - b8e75e14-df45-4ae3-accc-b05122992f38
+    - c57fba7e-38aa-43c1-867e-96e0fb6ae366
+    - 0c746199-26c4-43f8-adf2-0fb9dee3dbab
+    - e2183e23-7e55-40ca-b7fe-03f648998244
+    - 115e6847-9f24-490b-a7b3-db42b5f6ca82
+    - f3adb228-2e7b-4f67-bec7-a46daa2cd210
+    - a607ccc0-83d0-47c3-8b3a-4c5522746aa4
+    - 1c39dd09-27b9-4a71-628e-b3b766d0884e
+    - fa5553ad-d795-45ac-8bc0-581dcbba0362
+    - 109f741c-61b1-4b35-83aa-8ed4ca039b37
+    - 059fe0ca-d143-45be-a0af-e6a38ecc9af9
+    - 7861708b-203d-4861-bfcd-e453ec2f6e60
+    - df529949-9efd-40ba-8d14-5f07e64c4058
+    - 201a14f5-99bb-4c29-b9fb-880d058d8ba1
+    - 3c5b64f9-c4e6-40cc-b28d-6db96e3baa05
+    - 2d7ce852-5554-481a-a9ac-dfe1232b2b0f
+    - 29a79809-c6ae-45ad-b9ce-402606ba1b93
+    - e07bb0dd-0211-4887-b35f-addb03fa96d7
+    - 55aee916-20fe-4b21-af22-a088eeb03cd1
+    - 303bede2-f369-4df6-8148-a9683f58ba45
+    - cb104cca-2469-42d0-bd69-43f254b50ca4
+    - fe95575b-8cae-42f9-88ac-f989be71fc9b
+    - 451f0f1b-aee4-4ab2-ae3e-4fa246a333e5
+    - e6af1aaa-bb13-4574-adaa-b23456767070
 
   travel_expert:
     - 88675b22-547f-416e-b3fc-8e9f0327ce2f
