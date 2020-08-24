@@ -6,7 +6,7 @@
 #===sub command title:===
 #===sub command description:===
 commandHelp:
-#===!admin管理者權限===
+  #===!admin管理者權限===
   admin:
     title: "管理者權限"
     commandsHelp:
@@ -94,7 +94,7 @@ commandHelp:
         title: "`[移除skyeye web權限]`"
         description: |
           >
-#===!army戰隊===
+  #===!army戰隊===
   army:
     title: "戰隊"
     commandsHelp:
@@ -118,7 +118,7 @@ commandHelp:
         title: "`[查詢某個用戶的最新一筆戰隊訂閱紀錄]`"
         description: |
           >
-#===!baggage背包禮物===
+  #===!baggage背包禮物===
   baggage:
     title: "背包禮物"
     commandsHelp:
@@ -126,7 +126,7 @@ commandHelp:
         title: "`[送特定用戶背包禮物]`"
         description: |
           >
-#===!barrage彈幕===
+  #===!barrage彈幕===
   barrage:
     title: "彈幕"
     commandsHelp:
@@ -138,7 +138,7 @@ commandHelp:
         title: "`[修改購買戰隊後取得的彈幕數量]`"
         description: |
           >
-#===!bbfu富寶寶===
+  #===!bbfu富寶寶===
   bbfu:
     title: "富寶寶"
     commandsHelp:
@@ -166,12 +166,16 @@ commandHelp:
         title: "`[移除公司戶主播]`"
         description: |
           >
-#===!bd BD系統相關==
+  #===!bd BD系統相關==
   bd:
     title: "BD系統相關"
     commandsHelp:
       updateStreamer:
         title: "`[更新BD系統主播資訊]`"
+        description: |
+          >
+      createContract:
+        title: "`[建立BD系統合約]`"
         description: |
           >
       updateContract:
@@ -194,6 +198,10 @@ commandHelp:
         title: "`[批次更新合約label]`"
         description: |
           >
+      updatePayoutAccount:
+        title: "`[批次更新Payout account]`"
+        description: |
+          >
       contractInfo:
         title: "`[查詢合約資訊]`"
         description: |
@@ -210,7 +218,7 @@ commandHelp:
         title: "`[將用戶移出分潤禁止轉點的名單]`"
         description: |
           >
-#===!butler小幫手===
+  #===!butler小幫手===
   butler:
     title: "小幫手"
     commandsHelp:
@@ -226,7 +234,7 @@ commandHelp:
         title: "`[發送小幫手給所有該地區所有簽約主播]`"
         description: |
           >
-#===!clan幫派相關===
+  #===!clan幫派相關===
   clan:
     title: "幫派"
     commandsHelp:
@@ -234,7 +242,7 @@ commandHelp:
         title: "`[查詢幫派聊天記錄]`"
         description: |
           >
-#===!clip短影片===
+  #===!clip短影片===
   clip:
     title: "短影片"
     commandsHelp:
@@ -254,7 +262,7 @@ commandHelp:
         title: "`[復原被刪除的短影片]`"
         description: |
           >
-#===!contract合約資訊===
+  #===!contract合約資訊===
   contract:
     title: "合約資訊"
     commandsHelp:
@@ -262,7 +270,7 @@ commandHelp:
         title: "`[可得知每個地區該月份仍有效之合約數量]`"
         description: |
           >
-#===!coupon兌換券===
+  #===!coupon兌換券===
   coupon:
     title: "兌換券"
     commandsHelp:
@@ -294,7 +302,7 @@ commandHelp:
         title: "`[建立一組固定序號的coupon，一人只能換一次]`"
         description: |
           >
-#===!cache清除cache===
+  #===!cache清除cache===
   cache:
     title: "清除cache"
     commandsHelp:
@@ -306,7 +314,7 @@ commandHelp:
         title: "`[測試環境專用，清除 persistant redis (engineer only)]`"
         description: |
           >
-#===!dirtyword不雅字===
+  #===!dirtyword不雅字===
   dirtyword:
     title: "不雅字"
     commandsHelp:
@@ -314,7 +322,18 @@ commandHelp:
         title: "`[查詢某一字串是否為該地區的dirtyword]`"
         description: |
           >
-#===!follow追蹤人數===
+  #===!event活動相關===
+  event:
+    title: "活動相關"
+    commandsHelp:
+      received-points:
+        title: "`[查詢活動表現]`"
+        description: |
+          > 1. 指定多個區域請使用逗號隔開，例如：TW,JP
+          > 2. 尚未支援MENA
+          > 3. `endTime` 至少要跟現在時間間隔30分鐘
+          > 4. 不支援 `24:00` 或 `25:00` 這類非正式時間表示
+  #===!follow追蹤人數===
   follow:
     title: "追蹤人數"
     commandsHelp:
@@ -338,7 +357,7 @@ commandHelp:
         title: "`[更新follower paging cache]`"
         description: |
           >
-#===!gcp===
+  #===!gcp===
   gcp:
     title: "dev機相關"
     commandsHelp:
@@ -358,7 +377,7 @@ commandHelp:
         title: "`[查看指定的dev機資訊]`"
         description: |
           >
-#===!gift禮物設定===
+  #===!gift禮物設定===
   gift:
     title: "禮物設定"
     commandsHelp:
@@ -392,7 +411,7 @@ commandHelp:
         title: 把禮物從某個tab移除顯示
         description: |
           >
-#===!gloryroad榮耀之路===
+  #===!gloryroad榮耀之路===
   gloryroad:
     title: "榮耀之路"
     commandsHelp:
@@ -424,7 +443,7 @@ commandHelp:
         title: "`[同步TW/JP榜到Global榜]`"
         description: |
           >
-#===!goods給禮物===
+  #===!goods給禮物===
   goods:
     title: "給禮物"
     commandsHelp:
@@ -436,7 +455,7 @@ commandHelp:
         title: "`[幫用戶更新背包禮物列表]`"
         description: |
           >
-#===!i18n翻譯更新===
+  #===!i18n翻譯更新===
   i18n:
     title: "翻譯更新"
     commandsHelp:
@@ -444,7 +463,7 @@ commandHelp:
         title: "`[更新lokalise翻譯到server config]`"
         description: |
           >
-#===!incentivebonus大量配送虛擬禮物===
+  #===!incentivebonus大量配送虛擬禮物===
   incentivebonus:
     title: "大量配送虛擬禮物"
     commandsHelp:
@@ -464,7 +483,7 @@ commandHelp:
         title: "`[列出禮物配送任務清單]`"
         description: |
           >
-#===!internalOrder===
+  #===!internalOrder===
   internalOrder:
     title: "Income系統相關"
     commandsHelp:
@@ -472,7 +491,7 @@ commandHelp:
         title: "`[更新product cache]`"
         description: |
           >
-#===!league聯盟===
+  #===!league聯盟===
   league:
     title: "聯盟"
     commandsHelp:
@@ -488,7 +507,7 @@ commandHelp:
         title: "`[取得聯盟資訊]`"
         description: |
           >
-#===!leaderboard排行榜更新===
+  #===!leaderboard排行榜更新===
   leaderboard:
     title: "排行榜更新"
     commandsHelp:
@@ -516,7 +535,7 @@ commandHelp:
         title: "`[榜單數據修正]`"
         description: |
           >
-#===!live-checkin看播簽到===
+  #===!live-checkin看播簽到===
   live-checkin:
     title: "看播簽到"
     commandsHelp:
@@ -536,7 +555,7 @@ commandHelp:
         title: "`[針對單一主播修復因為斷線的單則直播的所有簽到勾勾]`"
         description: |
           >
-#===!live-simulation模擬開播===
+  #===!live-simulation模擬開播===
   live-simulation:
     title: "摸擬開播"
     commandsHelp:
@@ -560,7 +579,19 @@ commandHelp:
         title: "`[模擬開播停止]`"
         description: |
           >
-#===!live開播相關===
+  #===!loyalty主播忠誠度計畫相關===
+  loyalty:
+    title: "主播忠誠度計畫"
+    commandsHelp:
+      update:
+        title: "[重新計算月份資料]"
+        description: |
+          >
+      history:
+        title: "[查詢月份資料]"
+        description: |
+          >
+  #===!live開播相關===
   live:
     title: "開播相關"
     commandsHelp:
@@ -624,7 +655,7 @@ commandHelp:
         title: "`[暫停某user Replay功能]`"
         description: |
           > 註解: interrupted seconds表示中斷的秒數, 輸入0秒 表示停止中斷。
-#===!marquee跑馬燈===
+  #===!marquee跑馬燈===
   marquee:
     title: "跑馬燈"
     commandsHelp:
@@ -636,7 +667,7 @@ commandHelp:
         title: "`[列出所有跑馬燈的類型]`"
         description: |
           >
-#===!mith報表===
+  #===!mith報表===
   mith:
     title: "mith報表"
     commandsHelp:
@@ -644,7 +675,7 @@ commandHelp:
         title: "`[下載最近 n 天的分潤轉mith報表]`"
         description: |
           >
-#===!mlevelV等級===
+  #===!mlevelV等級===
   mlevel:
     title: "V等級"
     commandsHelp:
@@ -660,7 +691,7 @@ commandHelp:
         title: "`[查詢指定用戶的在某個月份累積的點數與V等級(redis)]`"
         description: |
           >
-#===!monster打怪獸===
+  #===!monster打怪獸===
   monster:
     title: "打怪獸"
     commandsHelp:
@@ -668,7 +699,7 @@ commandHelp:
         title: "`[列出各區域所有的monster所在的直播間與狀態]`"
         description: |
           >
-#===!notif===
+  #===!notif===
   notif:
     title: ""
     commandsHelp:
@@ -684,7 +715,7 @@ commandHelp:
         title: "`[query]`"
         description: |
           >
-#===!oneSignal===
+  #===!oneSignal===
   oneSignal:
     title: ""
     commandsHelp:
@@ -692,7 +723,7 @@ commandHelp:
         title: "`[view]`"
         description: |
           >
-#===!otevent===
+  #===!otevent===
   otevent:
     title: ""
     commandsHelp:
@@ -712,7 +743,7 @@ commandHelp:
         title: "`[get-config]`"
         description: |
           >
-#===!point點數給收===
+  #===!point點數給收===
   point:
     title: "點數給收"
     commandsHelp:
@@ -740,7 +771,11 @@ commandHelp:
         title: "`[回收add的點數]`"
         description: |
           >
-#===!program節目===
+      query-refund-log:
+        title: "`[查詢 Andriod 退單且回收的訂單]`"
+        description: |
+          >
+  #===!program節目===
   program:
     title: "節目"
     commandsHelp:
@@ -768,7 +803,7 @@ commandHelp:
         title: "`[設定節目會出現的國家]`"
         description: |
           >
-#===!register建立測試帳號===
+  #===!register建立測試帳號===
   register:
     title: "建立測試帳號"
     commandsHelp:
@@ -780,7 +815,7 @@ commandHelp:
         title: "`[建立某個地區有合約的測試帳號]`"
         description: |
           >
-#===!reseller經銷商===
+  #===!reseller經銷商===
   reseller:
     title: "經銷商"
     commandsHelp:
@@ -792,7 +827,7 @@ commandHelp:
         title: "`[get-quota]`"
         description: |
           >
-#===!revenue分潤轉點===
+  #===!revenue分潤轉點===
   revenue:
     title: "分潤轉點"
     commandsHelp:
@@ -800,7 +835,7 @@ commandHelp:
         title: "`[分潤轉點數]`"
         description: |
           >
-#===!royalty成就封號===
+  #===!royalty成就封號===
   royalty:
     title: "成就封號"
     commandsHelp:
@@ -808,7 +843,7 @@ commandHelp:
         title: "`[設定成就(封號徽章)的次數]`"
         description: |
           >
-#===!Label主播合約標籤===
+  #===!Label主播合約標籤===
   label:
     title: "主播合約標籤"
     commandsHelp:
@@ -828,7 +863,7 @@ commandHelp:
         title: "`[新增ContractLabe清單資料]`"
         description: |
           >
-#===!stamp貼圖===
+  #===!stamp貼圖===
   stamp:
     title: "貼圖"
     commandsHelp:
@@ -844,7 +879,7 @@ commandHelp:
         title: "`[刪除用戶持有的免費貼圖]`"
         description: |
           >
-#===!superstar小時榜===
+  #===!superstar小時榜===
   superstar:
     title: "小時榜"
     commandsHelp:
@@ -852,7 +887,7 @@ commandHelp:
         title: "`[手動結算小時榜，並分派獎勵]`"
         description: |
           >
-#===!term使用者條款===
+  #===!term使用者條款===
   term:
     title: "使用者條款"
     commandsHelp:
@@ -864,7 +899,7 @@ commandHelp:
         title: "`[設定用戶已同意用戶條款]`"
         description: |
           >
-#===!trivia17Q===
+  #===!trivia17Q===
   trivia:
     title: "17Q"
     commandsHelp:
@@ -900,7 +935,7 @@ commandHelp:
         title: "`[替用戶補獎金]`"
         description: |
           >
-#===!user用戶相關===
+  #===!user用戶相關===
   user:
     title: "用戶相關"
     commandsHelp:
@@ -934,6 +969,10 @@ commandHelp:
           >
       get-auth:
         title: "`[讓用戶帳號通過驗證]`"
+        description: |
+          >
+      freeze:
+        title: "`[凍結user account]`"
         description: |
           >
       relieve:
@@ -1024,7 +1063,7 @@ commandHelp:
         title: "`[記錄使用者移除隱藏字元的openID，當用戶openID包含表情符號且使用功能(留言標記、登入)有異常時，可以使用此指令修正]`"
         description: |
           >
-#===!vip尊榮寶寶===
+  #===!vip尊榮寶寶===
   vip:
     title: "尊榮寶寶"
     commandsHelp:
@@ -1040,7 +1079,7 @@ commandHelp:
         title: "`[替用戶設定尊榮寶寶訂閱區間]`"
         description: |
           >
-#===!vipinvisible進場隱身===
+  #===!vipinvisible進場隱身===
   vipinvisible:
     title: "進場隱身"
     commandsHelp:
@@ -1052,7 +1091,7 @@ commandHelp:
         title: "`[解除用戶隱身進場設定]`"
         description: |
           >
-#===!viplottery vip樂透 (已經沒在用)===
+  #===!viplottery vip樂透 (已經沒在用)===
   viplottery:
     title: "vip樂透"
     commandsHelp:
@@ -1068,7 +1107,7 @@ commandHelp:
         title: "`[兌換viplottery序號 (已停用)]`"
         description: |
           >
-#===!vipmarquee跑馬燈===
+  #===!vipmarquee跑馬燈===
   vipmarquee:
     title: "跑馬燈"
     commandsHelp:
@@ -1080,7 +1119,7 @@ commandHelp:
         title: "`[停用用戶跑馬燈功能]`"
         description: |
           >
-#===!vipstealth榜單隱身===
+  #===!vipstealth榜單隱身===
   vipstealth:
     title: "榜單隱身"
     commandsHelp:
@@ -1092,7 +1131,7 @@ commandHelp:
         title: "`[關閉leaderboard隱身]`"
         description: |
           >
-#===!votingevent活動灌票===
+  #===!votingevent活動灌票===
   votingevent:
     title: "活動灌票"
     commandsHelp:
@@ -1108,7 +1147,7 @@ commandHelp:
         title: "`[增加指定候選人票數]`"
         description: |
           >
-#===!voucher送免費禮物(揮手/新手)===
+  #===!voucher送免費禮物(揮手/新手)===
   voucher:
     title: "送免費禮物"
     commandsHelp:
