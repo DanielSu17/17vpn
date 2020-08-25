@@ -30,6 +30,35 @@
 # | NON_IAP | 2 |
 
 missions:
+#全ユーザー　9/1~ 9/30期間中に¥120以上を購入すると「秋の訪れ」3個（1回まで）
+  - ID: 060ffcf6-1d0a-44f1-ada5-821aee8bbb97  
+    type: 8
+    lifeCycle: 1
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: "2009_jp_charge_01"
+      amount: 3
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    i18nTitle: baggage_mission_IAP_reward_jp_daily_xmas_name
+    i18nTitleParams:
+    i18nContent:
+    i18nContentParams:
+    i18nDescription: baggage_mission_IAP_reward_jp_B_desc
+    i18nDescriptionParams:
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2020-09-01 12:00:00 (GMT+0900)"
+        endTime: "2020-09-30 23:59:59 (GMT+0900)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
 #全ユーザー　8/1~ 8/31期間中に¥120以上を購入すると「パインちゃん」3個（1回まで）
   - ID: 0771fccc-1fe2-4963-815d-b6d3cde60dec  
     type: 8
