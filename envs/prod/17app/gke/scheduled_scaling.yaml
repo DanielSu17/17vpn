@@ -60,7 +60,7 @@
   - name: k8sprod-gocells-main
     minReplicas: 40
 
- # For 2020/07/17 TW offline event
+# For 2020/07/17 TW offline event
 - startTime: "2020-07-17 18:30:00 (GMT+0800)"
   endTime: "2020-07-17 21:00:00 (GMT+0800)"
   HPAConfigs:
@@ -68,6 +68,19 @@
     minReplicas: 60
   - name: k8sprod-golives-main
     minReplicas: 30
+  - name: k8sprod-gotrade-main
+    minReplicas: 6
+  - name: k8sprod-gocells-main
+    minReplicas: 20
+
+# For 2020/08/26 TW offline event
+- startTime: "2020-08-17 18:50:00 (GMT+0800)"
+  endTime: "2020-08-17 21:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 60
+  - name: k8sprod-golives-main
+    minReplicas: 60
   - name: k8sprod-gotrade-main
     minReplicas: 6
   - name: k8sprod-gocells-main
