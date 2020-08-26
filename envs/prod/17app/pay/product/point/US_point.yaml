@@ -65,18 +65,16 @@ eventBasedIAP:
     displayRewardInfo: true
     abtestName:
 
-
-
-#Summer Gift Package promotion
-  - startTime: "2020-08-21T07:00:00+08:00"
-    endTime: "2020-08-25T02:59:00+08:00"
-    showCountdownUnderSticker: false
-    showCountdownInPopUp: false
-    stickerURL: "https://cdn.17app.co/0979bb71-68ee-4497-8869-e1a760d38854.png"
+#Summer Sale
+  - startTime: "2020-08-27T00:06:00+08:00"
+    endTime: "2020-09-01T15:00:00+08:00"
+    showCountdownUnderSticker: true
+    showCountdownInPopUp: true
+    stickerURL: "https://cdn.17app.co/11d13e0f-a5eb-4004-a2da-4937b3cc1019.png"
     eventInfo:
       eventTitleI18nKey: ""
       eventURL: ""
-      bannerImageURL: "https://cdn.17app.co/43fb4377-8773-4095-85dd-46c00c833113.png"
+      bannerImageURL: "https://cdn.17app.co/238ddba7-d6a9-4179-80a9-03c847e61830.png"
     layoutInfo:
       titlePicURL: ""
       messageColor: "#6F6777"
@@ -92,67 +90,14 @@ eventBasedIAP:
       rewardTextColor: "#F69355"
     pointProducts:
       - productID: "media17_points_330"
-        bonusPoint: 0
-        shouldHighlight:  false
-      - productID: "media17_points_1720"
-        bonusPoint: 0
-        shouldHighlight:  false
-      - productID: "media17_points_3540"
-        bonusPoint: 0
-        shouldHighlight:  false
-      - productID: "media17_points_8550"
-        bonusPoint: 0
-        shouldHighlight:  false
-      - productID: "media17_points_15420"
-        bonusPoint: 0
-        shouldHighlight:  false
-      - productID: "media17_points_35980"
-        bonusPoint: 0
-        shouldHighlight:  false
-    firstPurchaseType: 2
-    taInfo:
-      registerRange:
-        dayStart: 0 # 0 means no limit
-        dayEnd: 0 # 0 means no limit
-    displayRewardInfo: false
-    abtestName:
-
-#72 Hour Flash Sale
-  - startTime: "2020-05-06T00:00:01+08:00"
-    endTime: "2020-05-08T12:00:00+08:00"
-    showCountdownUnderSticker: true
-    showCountdownInPopUp: true
-    stickerURL: "https://cdn.17app.co/59cbc935-0920-41a3-b046-8f01f6196e1a.png"
-    eventInfo:
-      eventTitleI18nKey: ""
-      eventURL: "http://b.link/iww1334"
-      bannerImageURL: "https://cdn.17app.co/6ff416ea-77f0-46f1-9142-9cd84c7a77c3.png"
-    layoutInfo:
-      titlePicURL: ""
-      messageColor: "#6F6777"
-      messageShadowColor: "#F5F5F5"
-      messageI18nKey: ""
-      descBgURL: ""
-      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
-      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
-    colorInfo:
-      pointColor: "#28232D"
-      bonusPointColor: "#F5487D"
-      priceColor: "#28232D"
-      rewardTextColor: "#F69355"
-    pointProducts:
-      - productID: "media17_points_330"
-        bonusPoint: 0
-        shouldHighlight:  false
-      - productID: "media17_points_1720"
-        bonusPoint: 0
-        shouldHighlight:  false
-      - productID: "media17_points_3540"
-        bonusPoint: 0
+        bonusPoint: 330
         shouldHighlight:  true
-        reward:
-          type: 1
-          refCount: 7
+      - productID: "media17_points_1720"
+        bonusPoint: 1720
+        shouldHighlight:  true
+      - productID: "media17_points_3540"
+        bonusPoint: 3540
+        shouldHighlight:  true
       - productID: "media17_points_8550"
         bonusPoint: 0
         shouldHighlight:  false
@@ -162,7 +107,7 @@ eventBasedIAP:
       - productID: "media17_points_35980"
         bonusPoint: 0
         shouldHighlight:  false
-    firstPurchaseType: 2
+    firstPurchaseType: 0
     taInfo:
       registerRange:
         dayStart: 0 # 0 means no limit
