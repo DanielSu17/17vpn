@@ -4,19 +4,66 @@ event:
   registrationFormContainerID: "446c717f-20b1-428f-ad84-f81702dc1f6a"
   startTime: 1598976000 #2020/09/02 00:00:00 (GMT+8)
   canSendButler: true
-  awardI18nKeys: 
-    male: "golden_feather_2019_Nominees_for_Best_Male_Streamer"
-    female: "golden_feather_2019_Nominees_for_Best_female_Streamer"
-    dance: "golden_feather_2019_Nominees_for_Best_dance_Award"
-    sing: "golden_feather_2019_Nominees_for_Best_vocal_Award"
-    game: "golden_feather_2019_Nominees_for_stylish_Award"
-    play: "golden_feather_2019_Nominees_for_Best_Music_Award"
-    makeup: "golden_feather_2019_Nominees_for_Outstanding_Fashion_and_Beauty_Award"
-    talent: "golden_feather_2019_Nominees_for_Outstanding_performance_Award"
-    show: "golden_feather_2019_Nominees_for_Outstanding_Looking_Award"
-    charm: "golden_feather_2019_Nominees_for_Best_charming_Award"
-  butlerTextI18nKey: "2019_goldenfeather_sign_up_succeed_msg"
-  butlerImg: "https://assets-17app.akamaized.net/26f003fb-d0cd-4c24-96db-ad282b57e9ed.png"
+  butlerTextI18nKey: "GFA_apply_successfully"
+  butlerImg: 
+    jp: "https://cdn.17app.co/f611af3a-d2aa-4b16-a361-314945251cb2.png"
+    default: "https://cdn.17app.co/28fb67e2-880f-48cf-b706-03ed8f304baa.png"
+  sendButlerMaxBatchSize: 10
+  canRunResendButlerCron: false
+  onlyParticipantsCanChooseGF: true
+  awards:
+    male: 
+      giftBucketOpenName: "male"
+      i18nKeyInButler: "GFA_personal_award_male"
+      condition: 0
+    female: 
+      giftBucketOpenName: "female"
+      i18nKeyInButler: "GFA_personal_award_female"
+      condition: 0
+    dance: 
+      giftBucketOpenName: "dance"
+      i18nKeyInButler: "GFA_profession_award_dance"
+      condition: 0
+    sing: 
+      giftBucketOpenName: "sing"
+      i18nKeyInButler: "GFA_profession_award_sing"
+      condition: 0
+    game: 
+      giftBucketOpenName: "game"
+      i18nKeyInButler: "GFA_profession_award_game"
+      condition: 0
+    play: 
+      giftBucketOpenName: "play"
+      i18nKeyInButler: "GFA_profession_award_instrument"
+      condition: 0
+    makeup: 
+      giftBucketOpenName: "makeup"
+      i18nKeyInButler: "GFA_style_award_makeup"
+      condition: 0
+    talent: 
+      giftBucketOpenName: "talent"
+      i18nKeyInButler: "GFA_style_award_artist"
+      condition: 0
+    show: 
+      giftBucketOpenName: "show"
+      i18nKeyInButler: "GFA_style_award_goodlook"
+      condition: 0
+    charm: 
+      giftBucketOpenName: "charm"
+      i18nKeyInButler: "GFA_style_award_charisma"
+      condition: 0
+    army: 
+      giftBucketOpenName: "army"
+      i18nKeyInButler: "GFA_other_award_army"
+      condition: 1
+    newbie: 
+      giftBucketOpenName: "newbie"
+      i18nKeyInButler: "GFA_personal_award_newbie"
+      condition: 2
+    potential: 
+      giftBucketOpenName: "potential"
+      i18nKeyInButler: "GFA_personal_award_potential"
+      condition: 2
 
 
 # ref: https://17media.slack.com/archives/C7YHP4E3Z/p1597914601014200?thread_ts=1597806963.157900&cid=C7YHP4E3Z
