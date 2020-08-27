@@ -5,16 +5,16 @@
 # Every service belongs to a type (go, nodejs, webapp, or spinnaker)
 # Every type has its own settings like Jenkins endpoints which base on environments
 type:
-  wave-web:          "webapp"
-  wave-dashboard:    "webapp"
-  wave:              "go"
-  wave-slackbot:     "go"
-  wave-pubsub-setup: "go"
+  wave-web:       "webapp"
+  wave-dashboard: "webapp"
+  wave:           "go"
+  wave-slackbot:  "go"
+  wave-worker:    "go"
 groups:
   backend:
-    wave:              "go"
-    wave-slackbot:     "go"
-    wave-pubsub-setup: "go"
+    wave:          "go"
+    wave-slackbot: "go"
+    wave-worker:   "go"
   frontend:
     wave-web:       "webapp"
     wave-dashboard: "webapp"
