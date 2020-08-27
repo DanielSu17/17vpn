@@ -3,17 +3,36 @@
 # | promotionTypePointEvent | 1 |
 # | promotionTypePackage | 2 |
 
-silenceList: []
+dailyViewLiveXSecondsTotalForNewbies: 900 #14天新手用戶，跨直播間 累計觀看幾秒會跳彈窗
+dailyViewLiveXSecondsInSingleRoom: 10 #所有用戶，單一直播間 至少觀看幾秒會跳彈窗
 
-dailyViewLiveXSecondsTotalForNewbies: 900
-dailyViewLiveXSecondsInSingleRoom: 10
+# 要推薦的活動和禮包，
+# priority順序
+# maxPromoteCountPerMonth 每個用戶每個月看到的最高顯示次數，達到次數會跳下一組
+promotionIAPs:
+  # 2020-07-15 日本新手首儲大禮包_iOS
+  - id: "MINV-1ehxIvH0GbeoBvUrZARxIO9c5AK"
+    promotionType: 2
+    priority: 1
+    maxPromoteCountPerMonth: 3
+    topImageURL: https://cdn.17app.co/60aed428-becb-4aea-a343-9044f6b5b1ed.png
+    bannerURL: https://cdn.17app.co/142bf4d8-be65-4eda-8bf2-ab5f17793dda.png
 
-promotionIAPs: []
+  # 2020-07-15 日本新手首儲大禮包_Android
+  - id: "MINV-1ehxIs3i1mfmSSlfa1b4WIOfahy"
+    promotionType: 2
+    priority: 2
+    maxPromoteCountPerMonth: 3
+    topImageURL: https://cdn.17app.co/60aed428-becb-4aea-a343-9044f6b5b1ed.png
+    bannerURL: https://cdn.17app.co/142bf4d8-be65-4eda-8bf2-ab5f17793dda.png
 
-defaultTopImageURL: ""
-defaultBannerURL: ""
+promotionStickerURL: https://cdn.17app.co/779f8a38-4a70-4f4a-b7e0-bcb15b74484e.png
 
-promotionStickerURL: ""
+# 直播間內的禮包貼紙，所有的禮包都看這個貼紙
+defaultPackageStickerURL: https://cdn.17app.co/779f8a38-4a70-4f4a-b7e0-bcb15b74484e.png
+# 直播間內的閃購貼紙，如果活動沒有自己設貼紙，才會顯示這個貼紙
+defaultPointStickerURL: ""
 
-minAndroidVersion: ""
+# 貼紙的版控，舊版不會顯示禮包貼紙
+minAndroidVersion: "2.23.0"
 minIOSVersion: "3.110.0"
