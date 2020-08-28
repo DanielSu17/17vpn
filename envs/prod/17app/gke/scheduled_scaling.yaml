@@ -85,3 +85,16 @@
     minReplicas: 6
   - name: k8sprod-gocells-main
     minReplicas: 20
+
+# For 2020/08/28 JP celebrity
+- startTime: "2020-08-26 18:50:00 (GMT+0800)"
+  endTime: "2020-08-26 21:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 100
+  - name: k8sprod-golives-main
+    minReplicas: 60
+  - name: k8sprod-gotrade-main
+    minReplicas: 6
+  - name: k8sprod-gocells-main
+    minReplicas: 20
