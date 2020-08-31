@@ -31,6 +31,36 @@
 # | NON_IAP | 2 |
 
 missions:
+
+#全ユーザー　9/1~ 9/30期間中に¥120以上を購入すると「秋の訪れ」3個（1回まで）
+  - ID: 373d9486-81dc-41b5-bd4a-5a898562431e
+    type: 8
+    lifeCycle: 1
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: "2009_jp_charge_01"
+      amount: 3
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    i18nTitle: baggage_mission_IAP_reward_jp_1224_desc
+    i18nTitleParams:
+    i18nContent:
+    i18nContentParams:
+    i18nDescription: baggage_mission_IAP_reward_jp_A_desc
+    i18nDescriptionParams:
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2020-08-31 12:00:00 (GMT+0900)"
+        endTime: "2020-09-30 23:59:59 (GMT+0900)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
 #全ユーザー　6/1~ 6/30期間中に¥120以上を購入すると「ソーシャルディスタンス」3個（1回まで）
   - ID: aeceae1f-b0b2-44d5-a389-e1ed9d2f5c25
     type: 8
