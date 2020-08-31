@@ -30,8 +30,158 @@
 # | NON_IAP | 2 |
 
 missions:
-
-# 草泥馬35980送3禮
+- ID: 3c2e2b02-6825-4077-951a-ff88da02eade
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 21
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2009_tw_monthly_bp
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_send_specific_gifts_reward_title_four
+  i18nTitleParams:
+  - value: "3"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  - value: 2009_tw_monthly_bag_xs
+    needMap: false
+    mapOption: 2
+    fontAttribute: null
+  - value: 2009_tw_monthly_bag_s
+    needMap: false
+    mapOption: 2
+    fontAttribute: null
+  - value: 2009_tw_monthly_bag_m
+    needMap: false
+    mapOption: 2
+    fontAttribute: null
+  - value: 2009_tw_monthly_bag_l
+    needMap: false
+    mapOption: 2
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
+  i18nDescriptionParams: []
+  goalValue: 3
+  enableTimeRange:
+  - startTime: 2020-09-01 00:00:00 (GMT+0800)
+    endTime: 2020-09-30 23:59:59 (GMT+0800)
+  refIDs:
+  - 2009_tw_monthly_bag_xs
+  - 2009_tw_monthly_bag_s
+  - 2009_tw_monthly_bag_m
+  - 2009_tw_monthly_bag_l
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: false
+- ID: 70d058e2-8675-4942-81fa-dd1fcf221204
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 21
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2009_tw_monthly_bp_2
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "60"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 3600
+  enableTimeRange:
+  - startTime: 2020-09-01 00:00:00 (GMT+0800)
+    endTime: 2020-09-30 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: false
+- ID: e9caa6bf-a5ce-480f-a729-2bcd1fc8d00f
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 21
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2009_tw_monthly_bp_2
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "120"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 7200
+  enableTimeRange:
+  - startTime: 2020-09-01 00:00:00 (GMT+0800)
+    endTime: 2020-09-30 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: false
+- ID: c7ed3910-4cd9-4ebc-8b9e-6025dedfef4c
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 21
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2009_tw_monthly_bp_2
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "180"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 10800
+  enableTimeRange:
+  - startTime: 2020-09-01 00:00:00 (GMT+0800)
+    endTime: 2020-09-30 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: false
 - ID: lef4081f-d1b1-44cr-9a74-8d1bbb0718d0
   type: 10
   category: 0
@@ -65,7 +215,6 @@ missions:
   - ios
   requirePhoneBinding: true
   withReminder: false
-
 - ID: lef4081f-d1b1-44cc-9a74-8d1bbb0718d0
   type: 10
   category: 0
@@ -99,7 +248,6 @@ missions:
   - ios
   requirePhoneBinding: true
   withReminder: false
-
 - ID: 0e23fb36-655b-49e5-a701-4835e056712c
   type: 10
   category: 0
@@ -133,7 +281,6 @@ missions:
   - ios
   requirePhoneBinding: true
   withReminder: false
-
 - ID: 296900eb-626b-4252-a616-0a74f938a252
   type: 9
   category: 0
@@ -200,41 +347,6 @@ missions:
   - ios
   requirePhoneBinding: true
   withReminder: false
-  
-- ID: 9ooefb36-655b-49e5-a701-4835e056712c
-  type: 10
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2001_b2b_summer
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_first_time_IAP_point_event_title
-  i18nTitleParams:
-  - value: "8550"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
-  i18nDescriptionParams: []
-  goalValue: 8550
-  enableTimeRange:
-  - startTime: 2020-08-27 00:00:00 (GMT+0800)
-    endTime: 2020-08-31 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: false
-  
 - ID: 6f9bd15b-98cf-4df7-81ad-d04608631816
   type: 9
   category: 0
@@ -296,351 +408,6 @@ missions:
   - startTime: 2020-08-26 00:00:00 (GMT+0800)
     endTime: 2020-09-22 23:59:59 (GMT+0800)
   refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: false
-- ID: 7ae1fb36-655b-49e5-a701-4835e056712c
-  type: 10
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2007_charge_02
-    amount: 7
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_first_time_IAP_point_event_title
-  i18nTitleParams:
-  - value: "35980"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
-  i18nDescriptionParams: []
-  goalValue: 35980
-  enableTimeRange:
-  - startTime: 2020-08-21 00:00:00 (GMT+0800)
-    endTime: 2020-08-26 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: false
-- ID: a3c4081f-d1b1-44cc-9a74-8d1bbb0718d0
-  type: 10
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2007_charge_02
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_first_time_IAP_point_event_title
-  i18nTitleParams:
-  - value: "15420"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
-  i18nDescriptionParams: []
-  goalValue: 15420
-  enableTimeRange:
-  - startTime: 2020-08-21 00:00:00 (GMT+0800)
-    endTime: 2020-08-26 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: false
-- ID: 3f4f4c56-cab4-40bf-997a-f0321a33227e
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 21
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2008_tw_men_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "30"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 1800
-  enableTimeRange:
-  - startTime: 2020-08-19 18:00:00 (GMT+0800)
-    endTime: 2020-08-26 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 700b7181-1683-4300-9c8f-ddaf89b9e0b2
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 21
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2008_tw_men_bp
-    amount: 4
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "60"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 3600
-  enableTimeRange:
-  - startTime: 2020-08-19 18:00:00 (GMT+0800)
-    endTime: 2020-08-26 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: false
-- ID: 0eed5215-af4e-4885-902b-d709cb098599
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 21
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2007_tw_dream_bp
-    amount: 7
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "60"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 3600
-  enableTimeRange:
-  - startTime: 2020-08-12 00:00:00 (GMT+0800)
-    endTime: 2020-08-25 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: false
-- ID: daa15072-3993-4714-b93f-eb593ae0d6eb
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 21
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2007_tw_dream_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "10"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 600
-  enableTimeRange:
-  - startTime: 2020-08-12 00:00:00 (GMT+0800)
-    endTime: 2020-08-25 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: false
-- ID: 7b4ba48a-2d60-4a78-b92d-72c19837f9cf
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 21
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2008_tw_monthly_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "60"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 3600
-  enableTimeRange:
-  - startTime: 2020-08-01 00:00:00 (GMT+0800)
-    endTime: 2020-08-31 23:59:29 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: false
-- ID: 9e7381f9-508d-4e26-8132-facdf0c7d057
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2002_tw_weekend_bp
-    amount: 1
-    expireTimeSecs: 604800
-  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2001_tw_weekend_l
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2020-08-29 00:00:00 (GMT+0800)
-    endTime: 2020-08-30 23:59:59 (GMT+0800)
-  refIDs:
-  - 2001_tw_weekend_l
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: false
-- ID: 9ec7f1fa-101e-4c87-8d0a-da0c616875e0
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2002_tw_weekend_bp
-    amount: 1
-    expireTimeSecs: 604800
-  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
-  i18nTitleParams:
-  - value: "2"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2001_tw_weekend_l
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
-  i18nDescriptionParams: []
-  goalValue: 2
-  enableTimeRange:
-  - startTime: 2020-08-29 00:00:00 (GMT+0800)
-    endTime: 2020-08-30 23:59:59 (GMT+0800)
-  refIDs:
-  - 2001_tw_weekend_l
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: false
-- ID: 3b0987d3-07ce-486e-a62a-09124532ce66
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2002_tw_weekend_bp
-    amount: 1
-    expireTimeSecs: 604800
-  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
-  i18nTitleParams:
-  - value: "3"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2001_tw_weekend_l
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
-  i18nDescriptionParams: []
-  goalValue: 3
-  enableTimeRange:
-  - startTime: 2020-08-29 00:00:00 (GMT+0800)
-    endTime: 2020-08-30 23:59:59 (GMT+0800)
-  refIDs:
-  - 2001_tw_weekend_l
   platforms:
   - android
   - ios
