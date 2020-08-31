@@ -1,46 +1,7 @@
 senderEmail: "no-reply@17.media"
-subject: "Confirm your email address for BBRich"
-verifyURL: "https://bbrich.com/kyc/verify?"
-announce: |
-    <center style="background: #f2f2f2;">
-    <h2>親愛的 BBRich 用戶：</h2>
-    <p>請點擊以下連結以驗證您的電子信箱。<br>
-    如果您沒有在 BBRich 中輸入您的信箱，請忽略這封郵件。<br>
-    如果您有任何問題，請寄信給我們的客服： support@bbrich.com</p>
 
-    <a href="%s"
-    style="
-        text-decoration: none;
-    "
-    >
-
-    <div
-    style="
-        background-color: #7483d6;
-        color: #fff;
-        width: 184px;
-        height: 32px;
-        border-radius: 4px;
-        line-height: 32px;
-    "
-    >
-     驗證 / Confirm
-    </div>
-    </a>
-
-    <p>Please <a href="%s">click here</a> to verify your email address. <br>
-    If you didn't enter your email address in bbrich's service, please simply ignore this email.<br>
-    If you have any question, please contact our customer support at support@bbrich.com</p>
-
-    <p>この <a href="%s">url</a> をクリックしお客様のe-mailアドレス認証を進ませていただきます。<br>
-    今後とも、弊社サービスをよろしくお願いいたします。<br>
-    ※これは自動で配信されたメールです。心当たりがない場合は、何も行わないでください。<br>
-    お問い合わせ：support@bbrich.com</p>
-
-    </center>
-
-use17LiveContentStartTime: 1595797200  # July 27, 2020 5:00:00 AM GMT+08:00
-use17LiveContentAllowList:
+verifyMailContentMapStartTime: 1598889600  # Sep 1, 2020 00:00:00 AM GMT+08:00
+verifyMailContentMapAllowList:
   # a742692002
   - df4d22b8-44a3-4da5-9162-3ee3d2732fc6
   # finn1
@@ -52,8 +13,6 @@ use17LiveContentAllowList:
   # jerrylintw
   - 1c2a1cbd-a275-4af0-b377-12e246d6ce51
 verifyMailTTLInHour: 1
-# TODO: remove old key
-VerifyMailTTLInHour: 1
 verifyMailPath: "https://17.live/revenue/kyc/verify"
 verifyMailSubject: "Confirm your email address for 17LIVE - My Revenue"
 verifyMailContent: |
@@ -92,6 +51,100 @@ verifyMailContent: |
     If you didn't enter your email address in bbrich's service, please simply ignore this email.<br>
     If you have any question, please contact our customer support at support@17.media</p>
     </center>
+
+verifyMailSubjectMap:
+    JP: "【17LIVE(イチナナ)】メールアドレスを認証してください"
+    DEFAULT: "Confirm your email address for 17LIVE - My Revenue"
+verifyMailContentMap:
+    TW: |
+        <center style="background: #f2f2f2;">
+        <br>
+        <h4>親愛的用戶：</h4>
+        <p>請點擊以下按鈕以驗證您的電子信箱。<br>
+        如果您沒有在 ”17LIVE - 我的收益“ 中輸入您的信箱，請忽略這封郵件。<br>
+        如果您有任何問題，請寄信給我們的客服：support@17.media</p>
+        <a href="%s"
+        style="
+            text-decoration: none;
+        "
+        >
+        <div
+        style="
+                    background: -webkit-linear-gradient(left,#ffaead,#f650a0);
+                    background: -o-linear-gradient(right,#ffaead,#f650a0);
+                    background: -moz-linear-gradient(right,#ffaead,#f650a0);
+                    background: linear-gradient(to right,#ffaead,#f650a0);
+            color: #fff;
+            width: 184px;
+            height: 32px;
+            border-radius: 4px;
+            line-height: 32px;
+        "
+        >
+        驗證 / Confirm
+        </div>
+        <br>
+        </a>
+        </center>
+    JP: |
+        <center style="background: #f2f2f2;">
+        <br>
+        <p>下記の[認証する/Confirm]をクリックしe-mailアドレスの認証を完了してください。<br>
+            ※このメールはシステムより自動送信されています。ご不明点は以下までお問い合わせください。<br>
+            お問い合わせ：support.jp@17.media</p>
+        <a href="%s"
+        style="
+            text-decoration: none;
+        "
+        >
+        <div
+        style="
+                    background: -webkit-linear-gradient(left,#ffaead,#f650a0);
+                    background: -o-linear-gradient(right,#ffaead,#f650a0);
+                    background: -moz-linear-gradient(right,#ffaead,#f650a0);
+                    background: linear-gradient(to right,#ffaead,#f650a0);
+            color: #fff;
+            width: 184px;
+            height: 32px;
+            border-radius: 4px;
+            line-height: 32px;
+        "
+        >
+        認証する / Confirm
+        </div>
+        </a>
+        <br>
+        </center>
+    DEFAULT: |
+        <center style="background: #f2f2f2;">
+        <br>
+        <h4>Email Verification</h4>
+            <p> Please confirm your email address. <br>
+        If you did not enter your email address on 17.Live - My Revenue, please disregard this note.<br>
+        If you have any questions, please contact support@17.media</p>
+        <a href="%s"
+        style="
+            text-decoration: none;
+        "
+        >
+        <div
+        style="
+                    background: -webkit-linear-gradient(left,#ffaead,#f650a0);
+                    background: -o-linear-gradient(right,#ffaead,#f650a0);
+                    background: -moz-linear-gradient(right,#ffaead,#f650a0);
+                    background: linear-gradient(to right,#ffaead,#f650a0);
+            color: #fff;
+            width: 184px;
+            height: 32px;
+            border-radius: 4px;
+            line-height: 32px;
+        "
+        >
+        Confirm
+        </div>
+        <br>
+        </a>
+        </center>
 
 updateNotifySubject:
     TW: "17LIVE - 我的收益 個人資料修改通知"
