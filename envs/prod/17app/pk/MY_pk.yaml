@@ -68,4 +68,41 @@ playList:
     description:
       key: "pk_menu_mode_description_random"
 
-showPKStarLB: false 
+## for pk leaderboard
+pkHourLBLevel:
+  min: 30
+  max: 70
+pkStarDurations:
+regularRuleTitle: 
+  key: pk_information_regular_title
+regularRules:
+  - key: pk_information_regular_rule1
+    params:
+      - value: 3000
+  - key: pk_information_regular_rule2
+    params:
+      - value: 3
+hourRuleTitle: 
+  key: pk_information_hourly_title
+hourRules:
+  - key: pk_information_hourly_rule1
+  - key: pk_information_hourly_rule2
+  - key: pk_information_regular_rule1
+    params:
+      - value: 3000
+  - key: pk_information_hourly_rule3
+    params:
+      - value: 30
+      - value: 70
+  - key: pk_information_hourly_rule4
+    params:
+      - value: 10
+  - key: pk_information_hourly_rule5
+# minimum points needed to count as lb win after specific time
+# if now is before earliest start, we use 3000 as defualt.
+# please dont clear this config until start is older than one month for data consistency
+pkLBMinPoints: 
+  - start: "2020-09-01 00:00:00 (GMT+0800)"
+    minPoint: 3000
+weeklyLBTopCount: 0
+showPKStarLB: false
