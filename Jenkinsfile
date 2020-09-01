@@ -164,7 +164,7 @@ def postNotification(message, color) {
     slackSend(
       baseUrl: 'https://17media.slack.com/services/hooks/jenkins-ci/',
       tokenCredentialId: '883d8435-4b52-48cb-a282-c7995cb26b69',
-      channel: '#dev-event-configs',
+      channel: 'CHUGHHX0S',
       failOnError: true,
       message: message,
       color: color,
