@@ -30,6 +30,39 @@
 # | NON_IAP | 2 |
 
 missions:
+- ID: e19558b8-6ee1-4807-aa90-d73033eaefd6
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 21
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: love_you
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "180"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 12
+  enableTimeRange:
+  - startTime: 2020-09-03 00:00:00 (GMT+0800)
+    endTime: 2020-09-30 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: false
 - ID: 2a8dedc0-fae8-4cce-a6b5-e181e7cf319a
   type: 9
   category: 0
