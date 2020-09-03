@@ -3320,6 +3320,45 @@ missions:
       - android
       - ios
 
+#アーミー宇宙をあげる
+  - ID: 3b59f640-6ce7-4e65-9463-f50a31ab94ad
+    type: 3
+    lifeCycle: 0
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: 2009_jp_armysep_l
+      amount: 2
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    i18nTitle: baggage_mission_sendgift_jp_universe
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 1
+      - needMap: false
+        mapOption: 0
+        value: gift_universe
+    i18nContent:
+    i18nContentParams:
+    i18nDescription: baggage_mission_sendgift_jp_army
+    i18nDescriptionParams:
+      - needMap: false
+        mapOption: 0
+        value: 1
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2020-09-03 23:30:00 (GMT+0900)"
+        endTime: "2020-09-30 23:59:59 (GMT+0900)"
+    refIDs:
+      - gift_universe
+    platforms:
+      - android
+      - ios
+
 #tagInfos
 tagInfos:
   0: # Daily
