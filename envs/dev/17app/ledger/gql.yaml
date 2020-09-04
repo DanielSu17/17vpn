@@ -63,6 +63,44 @@ regionConfigs:
       - 60
     payMethodsForTriplicateInvoice:
       - 13
+    payMethods:
+      - 1
+      - 2
+      - 3
+      - 6
+      - 7
+      - 13
+      - 15
+      - 18
+      - 23
+      - 24
+      - 25
+      - 26
+      - 29
+      - 31
+      - 32
+      - 35
+      - 53
+      - 54
+      - 56
+      - 60
+    currencies:
+      - TWD
+      - JPY
+      - USD
+      - HKD
+      - CNY
+      - SGD
+      - MYR
+      - XPT
+      - XPD
+      - GBP
+      - EUR
+      - AUD
+      - NZD
+      - CAD
+      - CHF
+    localCurrency: TWD
     upperBoundOfDeltaRatioForExchangeRate: 0.02
     lowerBoundOfDeltaRatioForExchangeRate: 0.02
     maxMithExchangeRate: 15
@@ -71,21 +109,55 @@ regionConfigs:
     minBnbExchangeRate: 50
 
   JP:
+    payMethods:
+      - 2
+      - 8
+      - 9
+      - 10
+      - 13
+    currencies:
+      - JPY
+    localCurrency: JPY
     upperBoundOfDeltaRatioForExchangeRate: 0.02
     lowerBoundOfDeltaRatioForExchangeRate: 0.02
 
   ID:
+    payMethods:
+      - 14
+    currencies:
+      - IDR
+    localCurrency: IDR
     upperBoundOfDeltaRatioForExchangeRate: 0.02
     lowerBoundOfDeltaRatioForExchangeRate: 0.02
 
   US:
+    payMethods:
+      - 2
+      - 22
+      - 52
+      - 62
+    currencies:
+      - USD
+    localCurrency: USD
     upperBoundOfDeltaRatioForExchangeRate: 0.02
     lowerBoundOfDeltaRatioForExchangeRate: 0.02
 
   HK:
+    payMethods:
+      - 2
+      - 55
+      - 58
+    currencies:
+      - HKD
+    localCurrency: HKD
     upperBoundOfDeltaRatioForExchangeRate: 0.02
     lowerBoundOfDeltaRatioForExchangeRate: 0.02
 
   NONE:
+    payMethods:
+      - 21
+    currencies:
+      - USD
+    localCurrency: USD
     upperBoundOfDeltaRatioForExchangeRate: 0.02
     lowerBoundOfDeltaRatioForExchangeRate: 0.02
