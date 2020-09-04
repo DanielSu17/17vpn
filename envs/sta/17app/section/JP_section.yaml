@@ -25,6 +25,15 @@ sections:
   #   enable: true
   #   style: 2
   #   more: false
+  - id: Label
+    labelID: jp_music
+    name:
+      key: explore_jp_label_music
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
   - id: Suggestion # 猜你可能喜歡
     name:
       key: tab_hot_2019q4_follow_suggestion
@@ -48,16 +57,6 @@ sections:
     enable: true
     dedup: false #重複
     minGrids: 6 # 2個直播間一組PK，3組以上顯示
-    style: 3
-    more: true
-
-  - id: Label
-    labelID: jp_music
-    name:
-      key: explore_jp_label_music
-    enable: true
-    dedup: true
-    minGrids: 1
     style: 3
     more: true
   - id: Label
