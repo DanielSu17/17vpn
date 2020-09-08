@@ -90,7 +90,7 @@ secretIAPConditions:
 rewardEvents:
   - eventID: "QAKevinReward-1"
     startTime: "2020-07-01T00:00:00+08:00"
-    endTime: "2021-07-20T00:00:00+08:00"
+    endTime: "2020-09-09T00:00:00+08:00"
     eventRequirements:
       - sellingChannels:
           include:
@@ -104,12 +104,12 @@ rewardEvents:
           points: 7710
           premiumBaby:
             days: 3
-        requirements: 
+        requirements:
           - merchandiseID: "media17_points_15420"
     abtest:
         name: "iapPromotion"
         groupID: "b"
-          
+
 #20200701 - 20210701生涯首儲330點送330點
   - eventID: "QAKevinReward-2"
     startTime: "2020-07-01T00:00:00+08:00"
@@ -124,13 +124,13 @@ rewardEvents:
     rules:
       - reward:
           points: 330
-        requirements: 
-          - merchandiseID: "media17_points_330" 
+        requirements:
+          - merchandiseID: "media17_points_330"
     abtest:
         name: "iapPromotion"
         groupID: "b"
-          
-#20200701 - 20210701首次儲值且符合secretIAP QAKevinSecretIAP-1的規則可購買35980方案+7天尊榮寶寶         
+
+#20200701 - 20210701首次儲值且符合secretIAP QAKevinSecretIAP-1的規則可購買35980方案+7天尊榮寶寶
   - eventID: "QAKevinReward-3"
     startTime: "2020-07-01T00:00:00+08:00"
     endTime: "2021-07-01T00:00:00+08:00"
@@ -147,5 +147,5 @@ rewardEvents:
       - reward:
           premiumBaby:
             days: 7
-        requirements: 
+        requirements:
           - merchandiseID: "media17_points_35980"
