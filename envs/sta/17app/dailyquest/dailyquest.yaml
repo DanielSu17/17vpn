@@ -309,46 +309,22 @@ signInRewards:
       amount: 1
       intervalSec: 28800
 
-continuousSignInEvent:
-  startTime: "2020-06-01 00:00:00 (GMT+0800)"
-  endTime: "2020-07-31 23:59:59 (GMT+0800)"
-  butlerImageURL: "https://cdn.17app.co/f9996032-7af6-48a4-9cd8-691add634e50.png"
+continuousSignInEvent:                        #只能有一段參數，無法多個時間段，且每天開始時間只能為00:00 (GMT+8)
+  startTime: "2020-09-14 00:00:00 (GMT+0800)" #天天看17 MKT Joyce
+  endTime: "2020-09-21 00:08:00 (GMT+0800)"
+  butlerImageURL: "https://cdn.17app.co/3e60ad72-8871-4579-bc0b-96991623c88c.png"
   rewards:
-    - ID: "tw-event-reward1"
+    - ID: "tw-mktevent-reward1"  #活動上線後就不能改，因為會看這個ID來判斷用戶是否領過獎，同時間ID不能重複，如果活動時間已過就可以
       dayMin: 1 # 連續登入幾天
-      dayMax: 5 # 連續登入幾天
-      giftID: "test_duck1"
+      dayMax: 7 # 連續登入幾天
+      giftID: "2007_tw_marketing_bp"
       amount: 1 # 幾個
-      expireSecs: 43200 # 有效秒數
-    - ID: "tw-event-reward2"
-      dayMin: 6 # 連續登入幾天
-      dayMax: 10 # 連續登入幾天
-      giftID: "test_duck1"
-      amount: 2 # 幾個
-      expireSecs: 43200 # 有效秒數
-    - ID: "tw-event-reward3"
-      dayMin: 11 # 連續登入幾天
-      dayMax: 15 # 連續登入幾天
-      giftID: "test_duck1"
-      amount: 3 # 幾個
-      expireSecs: 43200 # 有效秒數
-    - ID: "tw-event-reward4"
-      dayMin: 16 # 連續登入幾天
-      dayMax: 20 # 連續登入幾天
-      giftID: "test_duck1"
-      amount: 4 # 幾個
-      expireSecs: 43200 # 有效秒數
-    - ID: "tw-event-reward5"
-      dayMin: 21 # 連續登入幾天
-      dayMax: 28 # 連續登入幾天
-      giftID: "test_duck1"
-      amount: 5 # 幾個
-      expireSecs: 43200 # 有效秒數
-    - ID: "tw-event-reward6"
-      dayMin: 29 # 連續登入幾天
+      expireSecs: 86400 # 有效秒數
+    - ID: "tw-mktevent-reward2"
+      dayMin: 8 # 連續登入幾天
       dayMax: 99999 # 連續登入幾天, 99999 = 273years
       giftID: "test_duck1"
-      amount: 10 # 幾個
+      amount: 1 # 幾個
       expireSecs: 43200 # 有效秒數
 
 
