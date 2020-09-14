@@ -751,8 +751,8 @@ redenvelopes:
   regions: [JP]
 
 - id: redenvelope_2020newyear_l_tw
-  startTime: 1579665600 # January 22, 2020 12:00:00 GMT+08:00
-  endTime: 1581177600 # February 9, 2020 00:00:00 GMT+08:00
+  # startTime: 1579665600 # January 22, 2020 12:00:00 GMT+08:00
+  # endTime: 1581177600 # February 9, 2020 00:00:00 GMT+08:00
   img_URL: https://cdn.17app.co/171fdc50-c8e2-4127-bf2f-3bf96b177b5d.png
   zip_url: https://cdn.17app.co/7fc99b62-875e-4dd0-b8e3-69eada9f74eb.zip
   zip_md5: fbe8d7805bc3556c76def426dd6ff5aa
@@ -772,8 +772,8 @@ redenvelopes:
   regions: [TW, HK, MO, SG, MY]
 
 - id: redenvelope_2020newyear_m_tw
-  startTime: 1579665600 # January 22, 2020 12:00:00 GMT+08:00
-  endTime: 1581177600 # February 9, 2020 00:00:00 GMT+08:00
+  # startTime: 1579665600 # January 22, 2020 12:00:00 GMT+08:00
+  # endTime: 1581177600 # February 9, 2020 00:00:00 GMT+08:00
   img_URL: https://cdn.17app.co/fa435708-f878-4db3-b545-c7bd96057423.png
   zip_url: https://cdn.17app.co/3a6c230c-5102-4c7f-a5b9-98d270e8c621.zip
   zip_md5: 4f94fb122cba3d37b2f9a335c0a79330
@@ -793,8 +793,8 @@ redenvelopes:
   regions: [TW, HK, MO, SG, MY]
 
 - id: redenvelope_2020newyear_s_tw
-  startTime: 1579665600 # January 22, 2020 12:00:00 GMT+08:00
-  endTime: 1581177600 # February 9, 2020 00:00:00 GMT+08:000
+  # startTime: 1579665600 # January 22, 2020 12:00:00 GMT+08:00
+  # endTime: 1581177600 # February 9, 2020 00:00:00 GMT+08:000
   img_URL: https://cdn.17app.co/2380d3f2-10b2-4308-8cdc-69a4501ac439.png
   zip_url: https://cdn.17app.co/72985927-471a-4e5d-9334-9a47d1101747.zip
   zip_md5: 7175d7431ddda664f1fd184362ae7790
@@ -814,8 +814,8 @@ redenvelopes:
   regions: [TW, HK, MO, SG, MY]
 
 - id: redenvelope_valentinesday_52099_tw
-  startTime: 1580486400 # February 1, 2020 00:00:00 GMT+08:0
-  endTime: 1582992000 # March 1, 2020 00:00:00 GMT+08:00
+  # startTime: 1580486400 # February 1, 2020 00:00:00 GMT+08:0
+  # endTime: 1582992000 # March 1, 2020 00:00:00 GMT+08:00
   img_URL: https://cdn.17app.co/503ccc14-f049-4967-9d3f-67307d06e6a6.png
   zip_url: https://cdn.17app.co/da081c47-d138-46d7-92c5-3dfd40242988.zip
   zip_md5: 215a7d31e07bc3612bd032687bbed5c1
@@ -835,8 +835,8 @@ redenvelopes:
   regions: [TW, HK, MO, SG, MY, JP]
 
 - id: redenvelope_valentinesday_2099_tw
-  startTime: 1580486400 # February 1, 2020 00:00:00 GMT+08:00
-  endTime: 1582992000 # March 1, 2020 00:00:00 GMT+08:00
+  # startTime: 1580486400 # February 1, 2020 00:00:00 GMT+08:00
+  # endTime: 1582992000 # March 1, 2020 00:00:00 GMT+08:00
   img_URL: https://cdn.17app.co/91cdfa1e-51c0-422a-a563-2a5827aae577.png
   zip_url: https://cdn.17app.co/e76eec2f-791c-4b8b-b6e2-3e85abb37a54.zip
   zip_md5: de69a255cb83c5f7e87794cd8bc418b0
@@ -869,48 +869,6 @@ redenvelopes:
   revenuePoint: 300
   min_point: 1000
   max_point: 50000
-  announceable: true
-  announce_threshold: 2500
-  countdown_time: 30
-  event_time: 10
-  fee: 50 # workaround, it is percentage * 10
-  theme: 1
-  type: 2
-  is_offline: false
-  region_mode: 2
-  regions: [TW]
-  package_list:
-    - amount: 1
-      point: 100 # workaround, it is percentage * 10
-    - amount: 1
-      point: 65
-    - amount: 1
-      point: 50
-    - amount: 2
-      point: 35
-    - amount: 3
-      point: 25
-    - amount: 8
-      point: 15
-    - amount: 34
-      point: 5
-
-- id: redenvelope_no_custom_JP
-  startTime:
-  endTime:
-  img_URL: http://cdn.17app.co/203fb9b5-9d97-4b15-bcdf-2dcb2cc76b1a.png
-  zip_url: https://assets-17app.akamaized.net/595b6425-a4cc-491c-bc81-2acce956fee8.zip
-  zip_md5: 7a24a00a4473ba7bf566e2acfcc793fd
-  webp_url: http://cdn.17app.co/redenvelope_no_custom.webp
-  webp_md5: 8e40537c775b436b6e0a5e54b5888f95
-  webm_url: https://cdn.17app.co/0a62b135-fee7-4f5a-a47f-1f318ca6f451.webm
-  webm_md5: 23a0e1e513398b1129f85ef55b515a31
-  name_token: redenvelope_customize_name
-  style: redenvelope_normal
-  point: 0 # unchangeable
-  revenuePoint: 300
-  min_point: 1000
-  max_point: 9999999
   announceable: true
   announce_threshold: 2500
   countdown_time: 30
