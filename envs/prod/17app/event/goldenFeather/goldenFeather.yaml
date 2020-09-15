@@ -1,2 +1,79 @@
-eventIDs:
-  - 913
+whiteList:
+
+event:
+  registrationFormContainerID: "bf8e179d-963c-46ae-89fe-cf0a38864273"
+  startTime: 1600920000 #2020/09/24 12:00:00 (GMT+8)
+  canSendButler: true
+  butlerTextI18nKey: "GFA_apply_successfully"
+  butlerImg:
+    jp: "https://cdn.17app.co/f611af3a-d2aa-4b16-a361-314945251cb2.png"
+    default: "https://cdn.17app.co/28fb67e2-880f-48cf-b706-03ed8f304baa.png"
+  sendButlerMaxBatchSize: 1000
+  canRunResendButlerCron: true
+  onlyParticipantsCanChooseGF: true
+  awards:
+    male: 
+      giftBucketOpenName: "male"
+      i18nKeyInButler: "GFA_personal_award_male"
+      condition: 0
+    female: 
+      giftBucketOpenName: "female"
+      i18nKeyInButler: "GFA_personal_award_female"
+      condition: 0
+    dance: 
+      giftBucketOpenName: "dance"
+      i18nKeyInButler: "GFA_profession_award_dance"
+      condition: 0
+    sing: 
+      giftBucketOpenName: "sing"
+      i18nKeyInButler: "GFA_profession_award_sing"
+      condition: 0
+    game: 
+      giftBucketOpenName: "game"
+      i18nKeyInButler: "GFA_profession_award_game"
+      condition: 0
+    play: 
+      giftBucketOpenName: "play"
+      i18nKeyInButler: "GFA_profession_award_instrument"
+      condition: 0
+    makeup: 
+      giftBucketOpenName: "makeup"
+      i18nKeyInButler: "GFA_style_award_makeup"
+      condition: 0
+    talent: 
+      giftBucketOpenName: "talent"
+      i18nKeyInButler: "GFA_style_award_artist"
+      condition: 0
+    show: 
+      giftBucketOpenName: "show"
+      i18nKeyInButler: "GFA_style_award_goodlook"
+      condition: 0
+    charm: 
+      giftBucketOpenName: "charm"
+      i18nKeyInButler: "GFA_style_award_charisma"
+      condition: 0
+    army: 
+      giftBucketOpenName: "army"
+      i18nKeyInButler: "GFA_other_award_army"
+      condition: 1
+    newbie: 
+      giftBucketOpenName: "newbie"
+      i18nKeyInButler: "GFA_personal_award_newbie"
+      condition: 2
+    potential: 
+      giftBucketOpenName: "potential"
+      i18nKeyInButler: "GFA_personal_award_potential"
+      condition: 2
+
+
+# ref: https://17media.slack.com/archives/C7YHP4E3Z/p1597914601014200?thread_ts=1597806963.157900&cid=C7YHP4E3Z
+# male: "最佳男主播"
+# female: "最佳女主播"
+# dance: "專業舞蹈獎"
+# sing: "專業演唱獎"
+# game: "專業電玩獎"
+# play: "專業演奏獎"
+# makeup: "直播美妝獎"
+# talent: "直播藝能獎"
+# show: "直播上鏡獎"
+# charm: "直播魅力獎"
