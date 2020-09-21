@@ -19,4 +19,48 @@
         "highQualityBitRate" : 1600
     }
   }
+  "live_atmos_v2" : {
+    "ios_apply_version" : "",
+    "android_apply_version":9999,
+    "snow" : {
+      "ios_apply_version" : "",
+      "android_apply_version":9999,
+      "apply_region" : ["ALL"],
+      "trigger_message" : [
+          "Xmas",
+          "聖誕快樂",
+          "🎄",
+          "メリクリ"
+      ],
+      "duration_sec" : 30
+      },
+    "box" : {
+      "ios_apply_version" : "",
+      "android_apply_version":9999,
+      "apply_region" : ["TW","HK","SG","MY"],
+      "trigger_message" : [
+         "情人節快樂",
+         "1314520",
+         "❤️"
+      ],
+      "boxes" : [
+         {
+             "drop_rate": 0.5,
+             "image_urls": [""]
+         },
+         {
+             "drop_rate": 0.5,
+             "image_urls": [""]
+         }
+      ],
+      "drop_count_distribution" : {
+          "3": 0.05,
+          "2": 0.15,
+          "1": 0.8
+      }
+      "duration_sec" : 30,
+      "max_total_count" : 35,
+      "cooldown_sec" : 600
+    }
+  }
 }
