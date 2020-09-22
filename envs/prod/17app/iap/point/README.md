@@ -9,10 +9,11 @@ eventIAPs:
     showCountdownUnderSticker: false
     showCountdownInPopUp: false
     stickerURL: "https://assets-17app.akamaized.net/30feb803-3274-42e2-8e41-187274f2314b.png"
+    stickerURLInGiftbox: "https://cdn.17app.co/ef819b3b-e929-4052-b164-5d7f73574ca1.png"
     eventInfo:
       eventTitleI18nKey: ""
       eventURL: ""
-      bannerImageURL: "https://cdn.17app.co/a53c6a00-3ed4-4bca-a5eb-6ffbcba53599.png" 
+      bannerImageURL: "https://cdn.17app.co/a53c6a00-3ed4-4bca-a5eb-6ffbcba53599.png"
     layoutInfo:
       titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
       messageColor: "#6F6777"
@@ -75,6 +76,7 @@ defaultIAP:
   * showCountdownUnderSticker(`bool`): 要不要在貼紙底下顯示倒數
   * showCountdownInPopUp(`bool`): 要不要在PopUp顯示倒數
   * stickerURL(`string`): 貼紙的網址
+  * stickerURLInGiftbox(`string`): 新版UI, 禮物盒內貼紙的網址
   * eventInfo(`struct`):
     * eventTitleI18nKey(`string`): event 標題文字的 i18n key
     * eventURL(`string`): event 網址
