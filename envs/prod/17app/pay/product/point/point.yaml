@@ -68,7 +68,7 @@ eventBasedIAP:
     displayRewardInfo: false
     abtestName:
     
-#閃購-買8550送660幣
+#閃購-買8550送660幣、買1720送330幣
   - startTime: "2020-09-23T10:50:00+08:00"
     endTime: "2020-09-30T23:59:59+08:00"
     showCountdownUnderSticker: true
@@ -96,6 +96,9 @@ eventBasedIAP:
       priceColor: "#28232D"
       rewardTextColor: "#F69355"
     pointProducts:
+      - productID: "media17_points_3540"
+        bonusPoint: 330
+        shouldHighlight:  true
       - productID: "media17_points_8550"
         bonusPoint: 660
         shouldHighlight:  true
@@ -103,9 +106,6 @@ eventBasedIAP:
         bonusPoint: 0
         shouldHighlight:  false
       - productID: "media17_points_1720"
-        bonusPoint: 0
-        shouldHighlight:  false
-      - productID: "media17_points_3540"
         bonusPoint: 0
         shouldHighlight:  false
       - productID: "media17_points_15420"
