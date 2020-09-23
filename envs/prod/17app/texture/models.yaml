@@ -102,8 +102,10 @@ gesture:
       OS-version: "21" # 5.0
 
 
+# 0 : we will filter out textureGifts when user's version is GTE textureV2.SupportedVersion
+# > 0 : we will filter out textureGifts when user's version is LT textureV2.SupportedVersion
+filterDirForTextureGifts: 0
 textureV2:
-  enable: false
   supportedVersion:
     android: "9.999.0"
     ios: "9.999.0"
