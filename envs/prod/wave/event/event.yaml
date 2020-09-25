@@ -1,9 +1,11 @@
 # # example
 #
 # leaderboard `id` ang `giftTag` can be empty strings if you just want to add an event
+# type 0: normal event, 1: newDJ, 2: midChallenge
 #
 # events:
 #   - id: "1"
+#     type: 0
 #     order: 1
 #     webUrl: "https://www.google.com"
 #     iconUrl: "https://cdn.wave.com.tw/v1/bot/1572240696479361_6641065527006100_60127559978620363061947399539737_hs.png"
@@ -12,8 +14,11 @@
 #     leaderboard:
 #       id: "event:wave-kungfusecret"
 #       giftTag: "event_gift_kungfusecret"
+#       startTime: "2019-12-01 15:04:05 (GMT+0800)"
+#       endTime: "2019-12-31 15:04:05 (GMT+0800)"
 events:
   - id: "newdj-20200831"
+    type: 1
     order: 1
     webUrl: "https://event.wave.com.tw/wave-20200801-newdj/0/5"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1596176074255046_7827927261630937_22075613880038014573351782123837_na.png"
@@ -29,6 +34,7 @@ events:
       startTime: "2020-08-01 00:00:00 (GMT+0800)"
       endTime: "2020-08-31 23:59:59 (GMT+0800)"
   - id: "newdj-20200901"
+    type: 1
     order: 1
     webUrl: "https://event.wave.com.tw/10397-wave-20200901-newdj/0/1"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1598870026006256_3095563732170978_88405492763157144001971887801849_zx.png"
@@ -44,6 +50,7 @@ events:
       startTime: "2020-09-01 00:00:00 (GMT+0800)"
       endTime: "2020-09-06 23:59:59 (GMT+0800)"
   - id: "newdj-20200907"
+    type: 1
     order: 1
     webUrl: "https://event.wave.com.tw/10397-wave-20200901-newdj/0/2"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1598870026006256_3095563732170978_88405492763157144001971887801849_zx.png"
@@ -59,6 +66,7 @@ events:
       startTime: "2020-09-07 00:00:00 (GMT+0800)"
       endTime: "2020-09-13 23:59:59 (GMT+0800)"
   - id: "newdj-20200914"
+    type: 1
     order: 1
     webUrl: "https://event.wave.com.tw/10397-wave-20200901-newdj/0/3"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1598870026006256_3095563732170978_88405492763157144001971887801849_zx.png"
@@ -74,6 +82,7 @@ events:
       startTime: "2020-09-14 00:00:00 (GMT+0800)"
       endTime: "2020-09-20 23:59:59 (GMT+0800)"
   - id: "newdj-20200921"
+    type: 1
     order: 1
     webUrl: "https://event.wave.com.tw/10397-wave-20200901-newdj/0/4"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1598870026006256_3095563732170978_88405492763157144001971887801849_zx.png"
@@ -89,6 +98,7 @@ events:
       startTime: "2020-09-21 00:00:00 (GMT+0800)"
       endTime: "2020-09-27 23:59:59 (GMT+0800)"
   - id: "newdj-20200901-month"
+    type: 1
     order: 1
     webUrl: "https://event.wave.com.tw/10397-wave-20200901-newdj/0/5"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1598870026006256_3095563732170978_88405492763157144001971887801849_zx.png"
@@ -104,6 +114,7 @@ events:
       startTime: "2020-09-01 00:00:00 (GMT+0800)"
       endTime: "2020-09-30 23:59:59 (GMT+0800)"
   - id: "20200907-lego"
+    type: 0
     order: 1
     webUrl: "https://event.wave.com.tw/10436-wave-20200907-legoparadise/0"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1599322322148771_0460624088541467_61659432882063361912835060541576_aj.png"
@@ -119,6 +130,7 @@ events:
       startTime: "2020-09-07 00:00:00 (GMT+0800)"
       endTime: "2020-09-13 23:59:59 (GMT+0800)"
   - id: "20200909-love99"
+    type: 0
     order: 1
     webUrl: "https://event.wave.com.tw/10447-wave-20200909-loveyou99/0"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1599550379882794_0558670894496797_79474359464772718004090211244855_ix.png"
@@ -134,6 +146,7 @@ events:
       startTime: "2020-09-09 00:00:00 (GMT+0800)"
       endTime: "2020-09-09 23:59:59 (GMT+0800)"
   - id: "20200914-ninja"
+    type: 0
     order: 1
     webUrl: "https://event.wave.com.tw/10461-wave-20200914-ninja/0"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1599813385558950_8849710730348877_15929390421190358836742958889773_ua.png"
@@ -149,6 +162,7 @@ events:
       startTime: "2020-09-14 00:00:00 (GMT+0800)"
       endTime: "2020-09-16 23:59:59 (GMT+0800)"
   - id: "20200914-ninja-fire"
+    type: 0
     order: 1
     webUrl: "https://event.wave.com.tw/10461-wave-20200914-ninja/1/0"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1599813385558950_8849710730348877_15929390421190358836742958889773_ua.png"
@@ -188,6 +202,7 @@ events:
       startTime: "2020-09-17 01:00:00 (GMT+0800)"
       endTime: "2020-09-20 23:59:59 (GMT+0800)"
   - id: "20200914-ninja-water"
+    type: 0
     order: 1
     webUrl: "https://event.wave.com.tw/10461-wave-20200914-ninja/1/1"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1599813385558950_8849710730348877_15929390421190358836742958889773_ua.png"
@@ -227,6 +242,7 @@ events:
       startTime: "2020-09-17 01:00:00 (GMT+0800)"
       endTime: "2020-09-20 23:59:59 (GMT+0800)"
   - id: "20200914-ninja-firetop"
+    type: 0
     order: 1
     webUrl: "https://event.wave.com.tw/10461-wave-20200914-ninja/1/0"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1599813385558950_8849710730348877_15929390421190358836742958889773_ua.png"
@@ -244,6 +260,7 @@ events:
       startTime: "2020-09-17 01:00:00 (GMT+0800)"
       endTime: "2020-09-20 23:59:59 (GMT+0800)"
   - id: "20200914-ninja-watertop"
+    type: 0
     order: 1
     webUrl: "https://event.wave.com.tw/10461-wave-20200914-ninja/1/0"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1599813385558950_8849710730348877_15929390421190358836742958889773_ua.png"
@@ -261,6 +278,7 @@ events:
       startTime: "2020-09-17 01:00:00 (GMT+0800)"
       endTime: "2020-09-20 23:59:59 (GMT+0800)"
   - id: "20200915-sweetsong-openaudition"
+    type: 0
     order: 1
     webUrl: "https://event.wave.com.tw/10469-wave-20200915-sweetsong/0"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1600064272018865_4534739871126500_09957443330567535090783138152150_ib.png"
@@ -276,6 +294,7 @@ events:
       startTime: "2020-09-15 00:00:00 (GMT+0800)"
       endTime: "2020-09-22 23:59:59 (GMT+0800)"
   - id: "20200915-sweetsong-showprelimilary1"
+    type: 0
     order: 1
     webUrl: "https://event.wave.com.tw/10469-wave-20200915-sweetsong/1/0"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1600064272018865_4534739871126500_09957443330567535090783138152150_ib.png"
@@ -291,6 +310,7 @@ events:
       startTime: ""
       endTime: ""
   - id: "20200915-sweetsong-prelimilary1"
+    type: 0
     order: 1
     webUrl: "https://event.wave.com.tw/10469-wave-20200915-sweetsong/1/0"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1600064272018865_4534739871126500_09957443330567535090783138152150_ib.png"
@@ -306,6 +326,7 @@ events:
       startTime: "2020-09-24 21:00:00 (GMT+0800)"
       endTime: "2020-09-24 21:49:59 (GMT+0800)"
   - id: "20200915-sweetsong-prelimilary2"
+    type: 0
     order: 1
     webUrl: "https://event.wave.com.tw/10469-wave-20200915-sweetsong/1/1"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1600064272018865_4534739871126500_09957443330567535090783138152150_ib.png"
@@ -321,6 +342,7 @@ events:
       startTime: "2020-09-24 22:00:00 (GMT+0800)"
       endTime: "2020-09-24 22:49:59 (GMT+0800)"
   - id: "20200915-sweetsong-prelimilary3"
+    type: 0
     order: 1
     webUrl: "https://event.wave.com.tw/10469-wave-20200915-sweetsong/1/2"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1600064272018865_4534739871126500_09957443330567535090783138152150_ib.png"
@@ -336,6 +358,7 @@ events:
       startTime: "2020-09-24 23:00:00 (GMT+0800)"
       endTime: "2020-09-24 23:49:59 (GMT+0800)"
   - id: "20200915-sweetsong-showprelimilary4"
+    type: 0
     order: 1
     webUrl: "https://event.wave.com.tw/10469-wave-20200915-sweetsong/1/3"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1600064272018865_4534739871126500_09957443330567535090783138152150_ib.png"
@@ -351,6 +374,7 @@ events:
       startTime: ""
       endTime: ""
   - id: "20200915-sweetsong-prelimilary4"
+    type: 0
     order: 1
     webUrl: "https://event.wave.com.tw/10469-wave-20200915-sweetsong/1/3"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1600064272018865_4534739871126500_09957443330567535090783138152150_ib.png"
@@ -366,6 +390,7 @@ events:
       startTime: "2020-09-25 21:00:00 (GMT+0800)"
       endTime: "2020-09-25 21:49:59 (GMT+0800)"
   - id: "20200915-sweetsong-prelimilary5"
+    type: 0
     order: 1
     webUrl: "https://event.wave.com.tw/10469-wave-20200915-sweetsong/1/4"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1600064272018865_4534739871126500_09957443330567535090783138152150_ib.png"
@@ -381,6 +406,7 @@ events:
       startTime: "2020-09-25 22:00:00 (GMT+0800)"
       endTime: "2020-09-25 22:49:59 (GMT+0800)"
   - id: "20200915-sweetsong-prelimilary6"
+    type: 0
     order: 1
     webUrl: "https://event.wave.com.tw/10469-wave-20200915-sweetsong/1/5"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1600064272018865_4534739871126500_09957443330567535090783138152150_ib.png"
@@ -396,6 +422,7 @@ events:
       startTime: "2020-09-25 23:00:00 (GMT+0800)"
       endTime: "2020-09-25 23:49:59 (GMT+0800)"
   - id: "20200915-sweetsong-showrematch1"
+    type: 0
     order: 1
     webUrl: "https://event.wave.com.tw/10469-wave-20200915-sweetsong/2/0"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1600064272018865_4534739871126500_09957443330567535090783138152150_ib.png"
@@ -411,6 +438,7 @@ events:
       startTime: ""
       endTime: ""
   - id: "20200915-sweetsong-rematch1"
+    type: 0
     order: 1
     webUrl: "https://event.wave.com.tw/10469-wave-20200915-sweetsong/2/0"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1600064272018865_4534739871126500_09957443330567535090783138152150_ib.png"
@@ -426,6 +454,7 @@ events:
       startTime: "2020-09-27 21:00:00 (GMT+0800)"
       endTime: "2020-09-27 21:49:59 (GMT+0800)"
   - id: "20200915-sweetsong-rematch2"
+    type: 0
     order: 1
     webUrl: "https://event.wave.com.tw/10469-wave-20200915-sweetsong/2/1"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1600064272018865_4534739871126500_09957443330567535090783138152150_ib.png"
@@ -441,6 +470,7 @@ events:
       startTime: "2020-09-27 22:00:00 (GMT+0800)"
       endTime: "2020-09-27 22:49:59 (GMT+0800)"
   - id: "20200915-sweetsong-rematch3"
+    type: 0
     order: 1
     webUrl: "https://event.wave.com.tw/10469-wave-20200915-sweetsong/2/2"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1600064272018865_4534739871126500_09957443330567535090783138152150_ib.png"
@@ -456,6 +486,7 @@ events:
       startTime: "2020-09-27 23:00:00 (GMT+0800)"
       endTime: "2020-09-27 23:49:59 (GMT+0800)"
   - id: "20200915-sweetsong-showfinal"
+    type: 0
     order: 1
     webUrl: "https://event.wave.com.tw/10469-wave-20200915-sweetsong/3"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1600064272018865_4534739871126500_09957443330567535090783138152150_ib.png"
@@ -471,6 +502,7 @@ events:
       startTime: ""
       endTime: ""
   - id: "20200915-sweetsong-final"
+    type: 0
     order: 1
     webUrl: "https://event.wave.com.tw/10469-wave-20200915-sweetsong/3"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1600064272018865_4534739871126500_09957443330567535090783138152150_ib.png"
@@ -486,6 +518,7 @@ events:
       startTime: "2020-09-29 22:00:00 (GMT+0800)"
       endTime: "2020-09-29 22:49:59 (GMT+0800)"
   - id: "20200921-camping"
+    type: 0
     order: 1
     webUrl: "https://event.wave.com.tw/10500-wave-20200921-camping/0"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1600421085752579_9291392284967598_11717006217780765747389218805062_rx.png"
@@ -501,6 +534,7 @@ events:
       startTime: "2020-09-21 00:00:00 (GMT+0800)"
       endTime: "2020-09-27 23:59:59 (GMT+0800)"
   - id: "20200921-littlelove"
+    type: 0
     order: 1
     webUrl: "http://event.wave.com.tw/10528-wave-20200921-littlelove"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1600656582601222_6533318396889858_73535028197425072800499273818570_wt.png"
@@ -519,6 +553,7 @@ events:
       startTime: "2020-09-21 21:00:00 (GMT+0800)"
       endTime: "2020-09-21 21:49:59 (GMT+0800)"
   - id: "20200921-littlelove-forlittlelove"
+    type: 0
     order: 1
     webUrl: "http://event.wave.com.tw/10528-wave-20200921-littlelove"
     iconUrl: "https://cdn.wave.com.tw/v1/bot/1600656582601222_6533318396889858_73535028197425072800499273818570_wt.png"
