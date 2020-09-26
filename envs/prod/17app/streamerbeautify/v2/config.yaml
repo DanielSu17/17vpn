@@ -12,14 +12,14 @@ platform:
     default:
       enable: true
       features:
-        - id: 17skin
+        - id: 17skin # 原始美肌
           enable: true
           min: 0
           max: 1
           default: 0
           adjustMode: 0
           displayName: streamer_beautify_homemade
-          iconUrl: https://assets-17app.akamaized.net/7038316c-9c8c-4df7-b71a-488a713235d2.png
+          iconUrl: https://cdn.17app.co/9ec3a6ef-2b84-4222-9638-eb263f05f60c.png
           type: 0
         - id: skinSoften #磨皮
           enable: true
@@ -28,7 +28,7 @@ platform:
           default: 55
           adjustMode: 1
           displayName: streamer_beautify_scrub
-          iconUrl: https://assets-17app.akamaized.net/c58a63c4-7f80-4042-a948-76b23bee0ed3.png
+          iconUrl: https://cdn.17app.co/0dad32e5-a2b2-4902-8283-97cc8536f3ae.png
           type: 1
         - id: skinWhitening #白皙
           enable: true
@@ -37,48 +37,102 @@ platform:
           default: 0.55
           adjustMode: 1
           displayName: streamer_beautify_whitening
-          iconUrl: https://assets-17app.akamaized.net/55fe437f-a129-4211-ae41-6407a85e2624.png
+          iconUrl: https://cdn.17app.co/db256af7-a3f4-4356-a830-70a626e65fe5.png
           type: 1
-        - id: skinRedden
+        - id: skinRedden # 紅潤
           enable: true
           min: 0
           max: 1
           default: 0.55
           adjustMode: 1
           displayName: streamer_beautify_rosy
-          iconUrl: https://assets-17app.akamaized.net/3022e1b2-6cbf-4d09-a5db-49f1068fa254.png
+          iconUrl: https://cdn.17app.co/beb59186-139f-4256-bc29-1b8790966239.png
           type: 1
-        - id: bigEye
+        - id: bigEye # 大眼
           enable: true
           min: 0
           max: 50
           default: 5
           adjustMode: 1
           displayName: streamer_beautify_bigeyes
-          iconUrl: https://assets-17app.akamaized.net/0b412bdd-61fd-4aaf-bc54-07465d813d5c.png
+          iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
           type: 1
-        - id: thinFace
+        - id: thinFace # 瘦臉
           enable: true
           min: 0
           max: 50
           default: 5
           adjustMode: 1
           displayName: streamer_beautify_slimface
-          iconUrl: https://assets-17app.akamaized.net/cb046032-672d-4b5d-9227-307c258da9ec.png
+          iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+          type: 1
+        - id: shrinkJaw # 小臉
+          enable: true
+          min: 0
+          max: 1
+          default: 0.1
+          adjustMode: 1
+          displayName: shrinkJaw
+          iconUrl: https://cdn.17app.co/54e9bae9-5f7e-4b95-bade-8a631db3aff8.png
+          type: 1
+        - id: contrast # 對比度
+          enable: true
+          min: 0
+          max: 1
+          default: 0.2
+          adjustMode: 1
+          displayName: contrast
+          iconUrl: https://cdn.17app.co/bbc788f5-c64b-4db3-b8fe-e44aebdf8620.png
+          type: 1
+        - id: saturation # 飽和度
+          enable: true
+          min: 0
+          max: 1
+          default: 0.3
+          adjustMode: 1
+          displayName: saturation
+          iconUrl: https://cdn.17app.co/d651522f-0ad8-488f-8171-987404979ac0.png
+          type: 1
+        - id: narrowFace # 窄臉
+          enable: true
+          min: 0
+          max: 1
+          default: 0.5
+          adjustMode: 1
+          displayName: narrowFace
+          iconUrl: https://cdn.17app.co/8eebf0fc-e8a4-41c8-a2da-bcb4d2f2124b.png
+          type: 1
+        - id: roundEyes # 圓眼
+          enable: true
+          min: 0
+          max: 1
+          default: 0.5
+          adjustMode: 1
+          displayName: roundEyes
+          iconUrl: https://cdn.17app.co/ea67c4d7-098a-4c21-b802-2172dcc602c0.png
+          type: 1
+        - id: sharpen # 銳化
+          enable: true
+          min: 0
+          max: 1
+          default: 0.5
+          adjustMode: 1
+          displayName: sharpen
+          iconUrl: https://cdn.17app.co/04783f14-6049-4c96-80c9-043f6721f6f3.png
           type: 1
 #    iPhone5,3:
   android:
     default:
       enable: true
       features:
-        - id: 17skin
+        - id: 17skin # 原始美肌
           enable: true
           min: 0
           max: 1
           default: 0
           adjustMode: 0
           displayName: streamer_beautify_homemade
-          iconUrl: https://assets-17app.akamaized.net/7038316c-9c8c-4df7-b71a-488a713235d2.png
+          iconUrl: https://cdn.17app.co/9ec3a6ef-2b84-4222-9638-eb263f05f60c.png
           type: 0
         - id: skinSoften #磨皮
           enable: true
@@ -87,7 +141,7 @@ platform:
           default: 55
           adjustMode: 1
           displayName: streamer_beautify_scrub
-          iconUrl: https://assets-17app.akamaized.net/c58a63c4-7f80-4042-a948-76b23bee0ed3.png
+          iconUrl: https://cdn.17app.co/0dad32e5-a2b2-4902-8283-97cc8536f3ae.png
           type: 1
         - id: skinWhitening #白皙
           enable: true
@@ -96,33 +150,87 @@ platform:
           default: 0.55
           adjustMode: 1
           displayName: streamer_beautify_whitening
-          iconUrl: https://assets-17app.akamaized.net/55fe437f-a129-4211-ae41-6407a85e2624.png
+          iconUrl: https://cdn.17app.co/db256af7-a3f4-4356-a830-70a626e65fe5.png
           type: 1
-        - id: skinRedden
+        - id: skinRedden # 紅潤
           enable: true
           min: 0
           max: 1
           default: 0.55
           adjustMode: 1
           displayName: streamer_beautify_rosy
-          iconUrl: https://assets-17app.akamaized.net/3022e1b2-6cbf-4d09-a5db-49f1068fa254.png
+          iconUrl: https://cdn.17app.co/beb59186-139f-4256-bc29-1b8790966239.png
           type: 1
-        - id: bigEye
+        - id: bigEye # 大眼
           enable: true
           min: 0
           max: 50
           default: 5
           adjustMode: 1
           displayName: streamer_beautify_bigeyes
-          iconUrl: https://assets-17app.akamaized.net/0b412bdd-61fd-4aaf-bc54-07465d813d5c.png
+          iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
           type: 1
-        - id: thinFace
+        - id: thinFace # 瘦臉
           enable: true
           min: 0
           max: 50
           default: 5
           adjustMode: 1
           displayName: streamer_beautify_slimface
-          iconUrl: https://assets-17app.akamaized.net/cb046032-672d-4b5d-9227-307c258da9ec.png
+          iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+          type: 1
+        - id: shrinkJaw # 小臉
+          enable: true
+          min: 0
+          max: 1
+          default: 0.1
+          adjustMode: 1
+          displayName: shrinkJaw
+          iconUrl: https://cdn.17app.co/54e9bae9-5f7e-4b95-bade-8a631db3aff8.png
+          type: 1
+        - id: contrast # 對比度
+          enable: true
+          min: 0
+          max: 1
+          default: 0.2
+          adjustMode: 1
+          displayName: contrast
+          iconUrl: https://cdn.17app.co/bbc788f5-c64b-4db3-b8fe-e44aebdf8620.png
+          type: 1
+        - id: saturation # 飽和度
+          enable: true
+          min: 0
+          max: 1
+          default: 0.3
+          adjustMode: 1
+          displayName: saturation
+          iconUrl: https://cdn.17app.co/d651522f-0ad8-488f-8171-987404979ac0.png
+          type: 1
+        - id: narrowFace # 窄臉
+          enable: true
+          min: 0
+          max: 1
+          default: 0.5
+          adjustMode: 1
+          displayName: narrowFace
+          iconUrl: https://cdn.17app.co/8eebf0fc-e8a4-41c8-a2da-bcb4d2f2124b.png
+          type: 1
+        - id: roundEyes # 圓眼
+          enable: true
+          min: 0
+          max: 1
+          default: 0.5
+          adjustMode: 1
+          displayName: roundEyes
+          iconUrl: https://cdn.17app.co/ea67c4d7-098a-4c21-b802-2172dcc602c0.png
+          type: 1
+        - id: sharpen # 銳化
+          enable: true
+          min: 0
+          max: 1
+          default: 0.5
+          adjustMode: 1
+          displayName: sharpen
+          iconUrl: https://cdn.17app.co/04783f14-6049-4c96-80c9-043f6721f6f3.png
           type: 1
 #    Pixel 2:
