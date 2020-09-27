@@ -11,8 +11,8 @@
 # // |    UnLimit    |   2   | 限時不限次數
 
 eventBasedIAP:
-#台灣生涯首次儲值活動 生涯首次儲值3540點送660點
-  - startTime: "2020-09-22T12:00:00+08:00"
+#台灣生涯首次儲值活動 生涯首次儲值330點送330點
+  - startTime: "2020-09-27T10:00:00+08:00"
     endTime: "2020-09-30T23:59:59+08:00"
     showCountdownUnderSticker: true
     showCountdownInPopUp: true
@@ -39,16 +39,16 @@ eventBasedIAP:
       priceColor: "#28232D"
       rewardTextColor: "#F69355"
     pointProducts:
-      - productID: "media17_points_3540"
-        bonusPoint: 660
-        shouldHighlight:  true
       - productID: "media17_points_330"
-        bonusPoint: 0
+        bonusPoint: 330
         shouldHighlight:  true
         reward:
           type: 1
           refCount: 10
       - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_3540"
         bonusPoint: 0
         shouldHighlight:  false
       - productID: "media17_points_8550"
@@ -68,16 +68,16 @@ eventBasedIAP:
     displayRewardInfo: false
     abtestName:
     
-#閃購-買8550送660幣
-  - startTime: "2020-09-26T00:00:00+08:00"
-    endTime: "2020-09-27T23:59:59+08:00"
+#閃購-買3540送660幣
+  - startTime: "2020-09-27T00:00:00+08:00"
+    endTime: "2020-09-28T23:59:59+08:00"
     showCountdownUnderSticker: true
     showCountdownInPopUp: true
     stickerURL: "https://cdn.17app.co/567eb9c9-8d21-456d-a41d-506d3a5488bc.png"
     eventInfo:
       eventTitleI18nKey: ""
       eventURL: ""
-      bannerImageURL: "https://cdn.17app.co/5bc44044-8226-4c3f-9776-7fb7fddabf36.png" 
+      bannerImageURL: "https://cdn.17app.co/079655dd-b455-42fd-80e0-626c0b4aa1fd.png" 
     layoutInfo:
       titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
       messageColor: "#6F6777"
@@ -96,9 +96,6 @@ eventBasedIAP:
       priceColor: "#28232D"
       rewardTextColor: "#F69355"
     pointProducts:
-      - productID: "media17_points_8550"
-        bonusPoint: 660
-        shouldHighlight:  true
       - productID: "media17_points_330"
         bonusPoint: 0
         shouldHighlight:  false
@@ -106,6 +103,9 @@ eventBasedIAP:
         bonusPoint: 0
         shouldHighlight:  false
       - productID: "media17_points_3540"
+        bonusPoint: 660
+        shouldHighlight:  true
+      - productID: "media17_points_8550"
         bonusPoint: 0
         shouldHighlight:  false
       - productID: "media17_points_15420"
