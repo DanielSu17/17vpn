@@ -91,9 +91,10 @@ node('gcp') { timestamps { ansiColor('xterm') {
           credentialsId: '3dc01492-01f6-4be5-8073-8de5f458ed1e',
           branch: 'master'
     }
-
-    dir("gowork/src/configs/tools/diffToSlack") {
-        sh("govendor sync")
+    sshagent(['3dc01492-01f6-4be5-8073-8de5f458ed1e']) {
+      dir("gowork/src/configs/tools/diffToSlack") {
+          sh("govendor sync")
+      }
     }
   } // end of stage
 
