@@ -79,9 +79,10 @@ node('gcp') { timestamps { ansiColor('xterm') {
     def goURL = "https://storage.googleapis.com/golang/${goBinary}"
     sh("curl ${goURL} | tar zxf - -C ${WORKSPACE}")
     sh("go version")
-
-    // setup govendor
-    sh("go get -u github.com/kardianos/govendor")
+    sshagent(['3dc01492-01f6-4be5-8073-8de5f458ed1e']) { // Using SSH Agent if cloning through SSH
+      // setup govendor
+      sh("go get -u github.com/kardianos/govendor")
+    }
   } // end of stage
 
   stage('Git Checkout') {
@@ -91,7 +92,7 @@ node('gcp') { timestamps { ansiColor('xterm') {
           credentialsId: '3dc01492-01f6-4be5-8073-8de5f458ed1e',
           branch: 'master'
     }
-    sshagent(['3dc01492-01f6-4be5-8073-8de5f458ed1e']) {
+    sshagent(['3dc01492-01f6-4be5-8073-8de5f458ed1e']) { // Using SSH Agent if cloning through SSH
       dir("gowork/src/configs/tools/diffToSlack") {
           sh("govendor sync")
       }
