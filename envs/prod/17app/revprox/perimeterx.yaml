@@ -1,4 +1,14 @@
 enable_perimeterx: true
+bypass_routes:
+  - "/baggage"
+  - "/cells"
+  - "/config/personal"
+  - "/event/banners"
+  - "/gift"
+  - "/gift/giftbox/unread"
+  - "/leaderboards"
+  - "/leaderboards/eventory"
+  - "/logs"
 sensitive_headers:
   - "nonce"
   - "accesstoken"
