@@ -267,40 +267,38 @@ func gitDiff() {
 			}
 		}
 
-		if project != "wave" {
-			if validateFail {
-				// Append button
-				attachments = append(attachments, slack.Attachment{
-					Fallback:   "You are unable to continue",
-					Text:       "Are you sure to *FORCE* update this diff?",
-					CallbackID: "updateI18n",
-					Color:      colorDanger,
-					Actions: []slack.AttachmentAction{
-						slack.AttachmentAction{
-							Name:  "i18n confirm",
-							Text:  "*FORCE* Update",
-							Type:  "button",
-							Value: "update",
-						},
+		if validateFail {
+			// Append button
+			attachments = append(attachments, slack.Attachment{
+				Fallback:   "You are unable to continue",
+				Text:       "Are you sure to *FORCE* update this diff?",
+				CallbackID: "updateI18n",
+				Color:      colorDanger,
+				Actions: []slack.AttachmentAction{
+					slack.AttachmentAction{
+						Name:  "i18n confirm",
+						Text:  "*FORCE* Update",
+						Type:  "button",
+						Value: "update",
 					},
-				})
-			} else {
-				// Append button
-				attachments = append(attachments, slack.Attachment{
-					Fallback:   "You are unable to continue",
-					Text:       "commit this diff?",
-					CallbackID: "updateI18n",
-					Color:      "#3AA3E3",
-					Actions: []slack.AttachmentAction{
-						slack.AttachmentAction{
-							Name:  "i18n confirm",
-							Text:  "Update",
-							Type:  "button",
-							Value: "update",
-						},
+				},
+			})
+		} else {
+			// Append button
+			attachments = append(attachments, slack.Attachment{
+				Fallback:   "You are unable to continue",
+				Text:       "commit this diff?",
+				CallbackID: "updateI18n",
+				Color:      "#3AA3E3",
+				Actions: []slack.AttachmentAction{
+					slack.AttachmentAction{
+						Name:  "i18n confirm",
+						Text:  "Update",
+						Type:  "button",
+						Value: "update",
 					},
-				})
-			}
+				},
+			})
 		}
 
 		execCommand("./", "git", []string{"add", "."})
