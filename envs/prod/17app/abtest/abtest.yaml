@@ -462,20 +462,20 @@
     "d": "b"
     "e": "b"
     "f": "b"
-# 登入獎勵: 0~4 group a
+# 登入獎勵: 0~7 group a, 8~f group b
 - testName: signInRewardAB
   enableABtest: true
-  startTime: "2020-07-31T23:59:59+08:00"
-  endTime: "2020-08-16T00:00:00+08:00"
+  startTime: "2020-10-12T12:00:00+08:00"
+  endTime: "2020-11-11T12:00:00+08:00"
   lastCharGroup:
     "0": "a"
     "1": "a"
     "2": "a"
     "3": "a"
     "4": "a"
-    "5": "b"
-    "6": "b"
-    "7": "b"
+    "5": "a"
+    "6": "a"
+    "7": "a"
     "8": "b"
     "9": "b"
     "a": "b"
@@ -484,11 +484,11 @@
     "d": "b"
     "e": "b"
     "f": "b"
-# 登入獎勵: 5~9 group b, a~f group c
+# 登入獎勵: 0~7 group a, 8~f group b
 - testName: signInRewardBC
   enableABtest: true
-  startTime: "2020-07-31T23:59:59+08:00"
-  endTime: "2020-08-16T00:00:00+08:00"
+  startTime: "2020-10-12T12:00:00+08:00"
+  endTime: "2020-11-11T12:00:00+08:00"
   lastCharGroup:
     "0": "a"
     "1": "a"
@@ -500,12 +500,12 @@
     "7": "a"
     "8": "a"
     "9": "a"
-    "a": "b"
-    "b": "b"
-    "c": "b"
-    "d": "b"
-    "e": "b"
-    "f": "b"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
 - testName: pushNotificationAfterRegistration
   enableABtest: false
   byDeviceID: true
