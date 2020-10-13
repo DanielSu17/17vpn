@@ -304,23 +304,41 @@ signInRewardsV3: # group c rewards point
     point: 100
 
 continuousSignInEvent:                        #只能有一段參數，無法多個時間段，且每天開始時間只能為00:00 (GMT+8)
-  startTime: "2020-09-15 00:00:00 (GMT+0800)" #天天看17 MKT Joyce
-  endTime: "2020-09-21 23:59:59 (GMT+0800)"
-  butlerImageURL: "https://cdn.17app.co/3e60ad72-8871-4579-bc0b-96991623c88c.png"
+  startTime: "2020-10-24 00:00:00 (GMT+0800)" #荒唐下樓梯萬聖節版
+  endTime: "2020-11-01 23:59:59 (GMT+0800)"
+  butlerImageURL: "https://cdn.17app.co/e5c8a975-d2dd-4a2f-8ba3-60965f802ee5.png"
   #小幫手key: daily_continuous_login_dialog
   rewards:
-    - ID: "tw-mktevent-reward1"  #活動上線後就不能改，因為會看這個ID來判斷用戶是否領過獎，同時間ID不能重複，如果活動時間已過就可以
-      dayMin: 1 # 連續登入幾天
-      dayMax: 7 # 連續登入幾天
-      giftID: "2009_tw_mkt2_bp"
+    - ID: "tw-ops-reward1"  #活動上線後就不能改，因為會看這個ID來判斷用戶是否領過獎，同時間ID不能重複，如果活動時間已過就可以
+      dayMin: 2 # 連續登入幾天
+      dayMax: 3 # 連續登入幾天
+      giftID: "crazy_stairs_viewer_easy_bag"
       amount: 1 # 幾個
       expireSecs: 86400 # 有效秒數
-    - ID: "tw-mktevent-reward2"
-      dayMin: 8 # 連續登入幾天
-      dayMax: 99999 # 連續登入幾天, 99999 = 273years
-      giftID: "2009_tw_mkt2_bp"
+    - ID: "tw-ops-reward2"
+      dayMin: 4 # 連續登入幾天
+      dayMax: 5 # 連續登入幾天
+      giftID: "crazy_stairs_viewer_easy_bag"
+      amount: 2 # 幾個
+      expireSecs: 86400 # 有效秒數
+    - ID: "tw-ops-reward3"
+      dayMin: 6 # 連續登入幾天
+      dayMax: 7 # 連續登入幾天
+      giftID: "crazy_stairs_streamer_easy_bag"
       amount: 1 # 幾個
-      expireSecs: 43200 # 有效秒數
+      expireSecs: 86400 # 有效秒數
+    - ID: "tw-ops-reward4"
+      dayMin: 8 # 連續登入幾天
+      dayMax: 10 # 連續登入幾天
+      giftID: "crazy_stairs_streamer_easy_bag"
+      amount: 2 # 幾個
+      expireSecs: 86400 # 有效秒數
+    - ID: "tw-ops-reward5"
+      dayMin: 11 # 連續登入幾天
+      dayMax: 99999 # 連續登入幾天
+      giftID: "crazy_stairs_streamer_easy_bag"
+      amount: 2 # 幾個
+      expireSecs: 86400 # 有效秒數
 
 #  startTime: "2020-07-02 00:00:00 (GMT+0800)"
 #  endTime: "2020-07-31 23:59:59 (GMT+0800)"
