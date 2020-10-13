@@ -1,5 +1,11 @@
-enable_perimeterx: false
-bypass_routes: []
+enable_perimeterx: true
+enable_log_block_info: false
+enable_log_block_user_id: false
+protected_routes:
+  - "/version"
+  - "/auth/.*"
+  - "/redenvlopes/.*/pick$"
+  - "/lives/.*/laborReward$"
 sensitive_headers:
   - "nonce"
   - "accesstoken"

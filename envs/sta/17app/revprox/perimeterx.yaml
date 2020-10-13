@@ -1,5 +1,7 @@
 enable_perimeterx: true
-bypass_routes:
+enable_log_block_info: false
+enable_log_block_user_id: false
+bypass_routes: # Should be removed after new px code deployed
   - "/baggage"
   - "/cells"
   - "/config/personal"
@@ -9,6 +11,11 @@ bypass_routes:
   - "/leaderboards"
   - "/leaderboards/eventory"
   - "/logs"
+protected_routes:
+  - "/version"
+  - "/auth/.*"
+  - "/redenvlopes/.*/pick$"
+  - "/lives/.*/laborReward$"
 sensitive_headers:
   - "nonce"
   - "accesstoken"
