@@ -3,6 +3,7 @@
 
 groups:
   backend:
+    aggr-gateway:       "go"
     alfred:             "go"
     bbrich:             "go"
     revprox:            "go"
@@ -96,6 +97,7 @@ batchDeploy:
   17app:
     k8sprod:
       - "goapi"
+      - "aggr-gateway"
       - "bbrich"
       - "revprox"
       - "worker"
@@ -116,6 +118,7 @@ batchDeploy:
       - "snapshot"
     k8ssta:
       - "goapi"
+      - "aggr-gateway"
       - "bbrich"
       - "revprox"
       - "worker"
