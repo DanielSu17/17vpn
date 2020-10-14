@@ -248,7 +248,6 @@ hosts:
 referral:
   registerDay: 3
   quizNo: 4
-bannerOnTV: true
 # avavil version to enter 17Q, else force udpate
 devices:
   ios:
@@ -260,9 +259,10 @@ devicesOnTV:
     version: "3.74.0"
   android:
     version: "2.4.21"
+# 防止用戶作弊的機制
 checkAnswerSign: false
+# 遊戲中發免死金牌的機制
 medalActivity:
-  countdown: 10
-  sendRateLimit: 30 # seconds
-  maxAcceptDelay: 30 # seconds
-triviaOnTVSupportsMedal: false
+  countdown: 10 # 用戶幾秒內可拿免死金牌
+  sendRateLimit: 30 # 幾秒後才能發下個免死金牌
+  maxAcceptDelay: 30 # 容許用戶拿免死金牌的延遲
