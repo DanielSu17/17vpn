@@ -5,12 +5,12 @@ hostIDOnTV: "8f95a285-104e-4ea5-ae58-00cca785247a" # 17好聰明
 
 hosts:
   TRIVIA:
-  TRIVIA_ON_TV:        
+  TRIVIA_ON_TV: #請使用TRIVIA_ON_TV(別再用TRIVIA了)
     "6e9af721-55c5-41d7-91a4-387aceec94a6": # 17Q
-      pictures:
-        default: https://cdn.17app.co/f3c9c953-b3f4-45fb-8bba-ada8fbe4a4b2.jpg
-        prepare: https://cdn.17app.co/f3c9c953-b3f4-45fb-8bba-ada8fbe4a4b2.jpg
-        onLive: https://cdn.17app.co/f3c9c953-b3f4-45fb-8bba-ada8fbe4a4b2.jpg
+      pictures: #熱門頁1*2顯示圖
+        default: https://cdn.17app.co/f3c9c953-b3f4-45fb-8bba-ada8fbe4a4b2.jpg #非開播當天顯示
+        prepare: https://cdn.17app.co/f3c9c953-b3f4-45fb-8bba-ada8fbe4a4b2.jpg #開播當天顯示
+        onLive: https://cdn.17app.co/f3c9c953-b3f4-45fb-8bba-ada8fbe4a4b2.jpg  #正在開播顯示
         # default user picture for users without picture
         user: https://cdn.17app.co/f3c9c953-b3f4-45fb-8bba-ada8fbe4a4b2.jpg
       showBannerTime:
@@ -28,7 +28,7 @@ hosts:
         key: "trivia_tv_vote_topic"
       shareWording:
         key: "trivia_game_share_wording"
-      isMedalSupported:
+      isMedalSupported: #支援免死金牌？
         Default: true
         CorrectMost: true
       leftTopDisplayStyle: 1 #這個值改成1，會顯示成就值；改成0或不設定，會顯示觀看人數       
@@ -244,10 +244,10 @@ hosts:
         CorrectMost: true
 
 referral:
-  registerDay: 7
-  quizNo: 4
-bannerOnTV: true # 台視17Q 未開播時 banner 開關
-# avavil version to enter 台視17Q, else force udpate
+  registerDay: 7  #註冊後X天輸入別人的推薦碼，可以獲得免死金牌
+  quizNo: 4  #第X題之前可以使用免死金牌
+bannerOnTV: true  # 台視17Q 未開播時 banner 開關
+# avavil version to enter 台視17Q, else force udpate(強制更新)
 devices:
   ios:
     version: "3.74.0"
@@ -260,6 +260,6 @@ devicesOnTV:
     version: "2.4.21"
 checkAnswerSign: true
 medalActivity:
-  countdown: 10
-  sendRateLimit: 60 # seconds
-  maxAcceptDelay: 60 # seconds   
+  countdown: 10   #seconds, 免死金牌dialog跳出後用戶X秒內要按
+  sendRateLimit: 60   #seconds, 發免死金牌的人X秒後可以再發
+  maxAcceptDelay: 60   #seconds, 容許用戶delay按按鈕時間
