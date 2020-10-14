@@ -28,10 +28,7 @@ partitionPlan:
   switchInsertTimeMs: 1586844000000
 
 pointReceiverLogsPlan:
-  enableCache: false
-  disableCacheWhitelist:
-    - 89cfc8bb-365d-46c5-b810-f1d38d5b565c # https://17media.atlassian.net/browse/BUG-8281
-    - 099f18c1-2245-46ca-8eb5-4d0597b15f8e # https://17media.atlassian.net/browse/BUG-8343
+  enableCache: true
   cachingLimitQPS: 20
   migrateState: 2 # 0: disable, 1: mysql, 2: mongo
   dayOffset: -16
