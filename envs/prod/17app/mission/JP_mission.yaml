@@ -990,6 +990,40 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
+#もも太郎
+- ID: debcfee8-12ac-48c1-a7f2-d92a42b5fdf6
+  type: 5
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 10
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2010_jp_peachman_bp
+    amount: 1
+    expireTimeSecs: 86400
+  requirePhoneBinding: false
+  i18nTitle: baggage_mission_comment_jp_10times
+  i18nTitleParams:
+    - needMap: false
+      mapOption: 0
+      value: 1
+  i18nContent:
+  i18nContentParams:
+  i18nDescription: baggage_mission_comment_jp_momotaro
+  i18nDescriptionParams:
+    - needMap: false
+      mapOption: 0
+      value: 1
+  goalValue: 10
+  enableTimeRange:
+    - startTime: "2020-10-15 01:45:00 (GMT+0900)"
+      endTime: "2020-10-26 23:59:59 (GMT+0900)"
+  refIDs:
+  platforms:
+    - android
+    - ios
 i18nMissionCompleteToast: baggage_mission_toast_claimed
 refreshHour: 5
 supportedVersion:
