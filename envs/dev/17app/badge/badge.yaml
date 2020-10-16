@@ -1,5 +1,5 @@
 # isInternal: determin who can see this badge. If the flag is true, only admin user can see this badge.
-# wildOpen: determin where owning information comes from.
+# wildOpen: the setting has been moved to 17app/badge/wildopen/badge.yaml  (determine where owning information comes from)
 # If the flag is false, users are listed in the users field owning this badge. Otherwise, checking owning flag from db.
 # Threre two exceptions: verify and celebrity will be effected by BOTH db and config.
 
@@ -11,7 +11,6 @@
 #    isInternal: false
 #    isReferredFile: false
 #    users: []
-#    wildOpen: true
 certificate:
     iconURL: "https://assets-17app.akamaized.net/dc151b7c-ef76-4e3a-9b68-4ad5709e95b8.png"
     description: "17_certificate_check_des"
@@ -20,7 +19,6 @@ certificate:
     isInternal: false
     isReferredFile: false
     users: []
-    wildOpen: true
 celebrity:
     iconURL: "http://cdn.17app.co/icBdgOfficial.png"
     description: "BADGE_CELEBRITY_DESC"
@@ -29,7 +27,6 @@ celebrity:
     isInternal: true
     isReferredFile: false
     users: []
-    wildOpen: true
     #official:
     #iconURL: "http://cdn.17app.co/icBdgOfficial.png"
     #description: "BADGE_OFFICIAL_DESC"
@@ -37,7 +34,6 @@ celebrity:
     #order: 2
     #isInternal: false
     #users: []
-    #wildOpen: true
 dangerous:
     iconURL: "http://cdn.17app.co/icBdgDangerous.png"
     description: "BADGE_DANGEROUS_DESC"
@@ -46,7 +42,6 @@ dangerous:
     isInternal: true
     isReferredFile: false
     users: []
-    wildOpen: false
 goldenFeather:
     iconURL: "http://cdn.17app.co/icGfe.png"
     description: "BADGE_GOLDENFEATHER1_DESC"
@@ -55,7 +50,6 @@ goldenFeather:
     isInternal: false
     isReferredFile: false
     users: []
-    wildOpen: false
 yearClangBaChi:
     iconURL: "http://cdn.17app.co/icClanWiiner1.png"
     description: "BADGE_YEAR_BA_CHI_DESC"
@@ -64,7 +58,6 @@ yearClangBaChi:
     isInternal: false
     isReferredFile: false
     users: []
-    wildOpen: false
 yearClangHauChi:
     iconURL: "http://cdn.17app.co/icClanWiiner2.png"
     description: "BADGE_YEAR_HAU_CHI_DESC"
@@ -73,7 +66,6 @@ yearClangHauChi:
     isInternal: false
     isReferredFile: false
     users: []
-    wildOpen: false
 yearClangYiChi:
     iconURL: "http://cdn.17app.co/icClanWiiner3.png"
     description: "BADGE_YEAR_YI_CHI_DESC"
@@ -82,7 +74,6 @@ yearClangYiChi:
     isInternal: false
     isReferredFile: false
     users: []
-    wildOpen: false
 yearMengJu:
     iconURL: "http://cdn.17app.co/icFirstTen.png"
     description: "BADGE_YEAR_MENG_JU_DESC"
@@ -90,22 +81,32 @@ yearMengJu:
     order: 9
     isInternal: false
     isReferredFile: false
-    users: [e42f7314-ef2f-4ed5-8b34-01a28da3c8e4,a7fbf38e-b65b-4c93-9b8b-b7814fa66d10,ec6fdc68-23dd-4538-bda2-bf5a03728447,19c2620c-d22a-4825-a01d-2c56c83e30e5,e671a0e8-f22e-42f6-82a1-7bb5cd7895e0,6086140b-3ab3-40b1-b18e-e8f78f369222,e7f163f3-21d9-471f-9368-f223a81167c6,15b0c4e1-295b-4cc7-a5d7-84769941953b,f9fe2d0a-5dbf-415d-b95c-5773149eeeee,8a1cb33e-09c0-431f-8ae3-6a9d2d7a18a8]
-    wildOpen: false
+    users:
+        [
+            e42f7314-ef2f-4ed5-8b34-01a28da3c8e4,
+            a7fbf38e-b65b-4c93-9b8b-b7814fa66d10,
+            ec6fdc68-23dd-4538-bda2-bf5a03728447,
+            19c2620c-d22a-4825-a01d-2c56c83e30e5,
+            e671a0e8-f22e-42f6-82a1-7bb5cd7895e0,
+            6086140b-3ab3-40b1-b18e-e8f78f369222,
+            e7f163f3-21d9-471f-9368-f223a81167c6,
+            15b0c4e1-295b-4cc7-a5d7-84769941953b,
+            f9fe2d0a-5dbf-415d-b95c-5773149eeeee,
+            8a1cb33e-09c0-431f-8ae3-6a9d2d7a18a8,
+        ]
 producer:
     iconURL: "http://cdn.17app.co/icBdgMicProducer.png"
     description: "BADGE_PRODUCER_DESC"
     name: "BADGE_PRODUCER_NAME"
     order: 10
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users:
-      - "a8fec41b-220d-4d98-9912-39222ab87674" # jenn19
-      - "625632ad-99a5-4257-bb2c-a2eeddcbaaed" # jenn20
-      - "f6e6911e-ef35-47df-9011-8ace3d38e9b8" # abner.chen
-      - "9e1e31c8-b1c4-46c7-bfb7-c7300c82bd27" # edentsai231
-      - "cfa48648-928e-410b-9af6-c24dd62f9c78" # sssssugo
+        - "a8fec41b-220d-4d98-9912-39222ab87674" # jenn19
+        - "625632ad-99a5-4257-bb2c-a2eeddcbaaed" # jenn20
+        - "f6e6911e-ef35-47df-9011-8ace3d38e9b8" # abner.chen
+        - "9e1e31c8-b1c4-46c7-bfb7-c7300c82bd27" # edentsai231
+        - "cfa48648-928e-410b-9af6-c24dd62f9c78" # sssssugo
 
 producer_jp:
     iconURL: "http://cdn.17app.co/icBdgMicProducer.png"
@@ -113,21 +114,19 @@ producer_jp:
     name: "BADGE_PRODUCER_NAME"
     order: 10
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users:
-      - "a8fec41b-220d-4d98-9912-39222ab87674" # jenn19
-      - "625632ad-99a5-4257-bb2c-a2eeddcbaaed" # jenn20
-      - "f6e6911e-ef35-47df-9011-8ace3d38e9b8" # abner.chen
-      - "9e1e31c8-b1c4-46c7-bfb7-c7300c82bd27" # edentsai231
-      - "cfa48648-928e-410b-9af6-c24dd62f9c78" # sssssugo
+        - "a8fec41b-220d-4d98-9912-39222ab87674" # jenn19
+        - "625632ad-99a5-4257-bb2c-a2eeddcbaaed" # jenn20
+        - "f6e6911e-ef35-47df-9011-8ace3d38e9b8" # abner.chen
+        - "9e1e31c8-b1c4-46c7-bfb7-c7300c82bd27" # edentsai231
+        - "cfa48648-928e-410b-9af6-c24dd62f9c78" # sssssugo
 kkbox:
     iconURL: "http://cdn.17app.co/94a7ba10-ac5e-41f6-8214-9c1bf830ce62.png"
     description: "BADGE_KKBOX_DESC"
     name: "BADGE_KKBOX_NAME"
     order: 11
     isInternal: false
-    wildOpen: true
     isReferredFile: false
     users: []
 music:
@@ -136,7 +135,6 @@ music:
     name: "BADGE_MUSIC_NAME"
     order: 12
     isInternal: false
-    wildOpen: false
     isReferredFile: true
     users: []
 obs:
@@ -145,7 +143,6 @@ obs:
     name: "badge_support_obs_account"
     order: 20
     isInternal: true
-    wildOpen: false
     isReferredFile: true
     users: []
 program:
@@ -154,7 +151,6 @@ program:
     name: "badge_support_program_account"
     order: 21
     isInternal: true
-    wildOpen: false
     isReferredFile: true
     users: []
 
@@ -165,7 +161,6 @@ golden:
     name: "badge_golden"
     order: 22
     isInternal: true
-    wildOpen: false
     isReferredFile: true
     users: []
 
@@ -175,7 +170,6 @@ gaming:
     name: "badge_support_gaming_account"
     order: 23
     isInternal: true
-    wildOpen: false
     isReferredFile: true
     users: []
 
@@ -185,7 +179,6 @@ youtuber:
     name: "badge_support_youtuber_account"
     order: 103
     isInternal: true
-    wildOpen: false
     isReferredFile: true
     users: []
 
@@ -195,7 +188,6 @@ mlevel_1:
     name: "BADGE_mlevel_NAME"
     order: 24
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 
@@ -205,7 +197,6 @@ mlevel_2:
     name: "BADGE_mlevel_NAME"
     order: 24
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 
@@ -215,7 +206,6 @@ mlevel_3:
     name: "BADGE_mlevel_NAME"
     order: 24
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 
@@ -225,7 +215,6 @@ mlevel_4:
     name: "BADGE_mlevel_NAME"
     order: 24
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 
@@ -235,7 +224,6 @@ mlevel_5:
     name: "BADGE_mlevel_NAME"
     order: 24
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 
@@ -245,7 +233,6 @@ mlevel_6:
     name: "BADGE_mlevel_NAME"
     order: 24
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 
@@ -255,7 +242,6 @@ mlevel_7:
     name: "BADGE_mlevel_NAME"
     order: 24
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 
@@ -265,7 +251,6 @@ mlevel_8:
     name: "BADGE_mlevel_NAME"
     order: 24
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 
@@ -275,7 +260,6 @@ mlevel_9:
     name: "BADGE_mlevel_NAME"
     order: 24
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 
@@ -285,7 +269,6 @@ mlevel_10:
     name: "BADGE_mlevel_NAME"
     order: 24
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 
@@ -295,7 +278,6 @@ virtual_streamer:
     name: "badge_support_virtual_streamer_account"
     order: 25
     isInternal: true
-    wildOpen: false
     isReferredFile: true
     users: []
 
@@ -306,8 +288,7 @@ vip_subscribe:
     name: "VIP"
     order: 99
     isInternal: false
-    wildOpen: false
-    isReferredFile: false 
+    isReferredFile: false
     users: []
 
 loyalty_program_title_name1.0:
@@ -316,7 +297,6 @@ loyalty_program_title_name1.0:
     name: "loyalty_program_title_name1.0"
     order: 0
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 loyalty_program_title_name1.1:
@@ -325,7 +305,6 @@ loyalty_program_title_name1.1:
     name: "loyalty_program_title_name1.1"
     order: 0
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 loyalty_program_title_name1.2:
@@ -334,7 +313,6 @@ loyalty_program_title_name1.2:
     name: "loyalty_program_title_name1.2"
     order: 0
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 loyalty_program_title_name1.3:
@@ -343,7 +321,6 @@ loyalty_program_title_name1.3:
     name: "loyalty_program_title_name1.3"
     order: 0
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 loyalty_program_title_name1.4:
@@ -352,7 +329,6 @@ loyalty_program_title_name1.4:
     name: "loyalty_program_title_name1.4"
     order: 0
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 loyalty_program_title_name1.5:
@@ -361,7 +337,6 @@ loyalty_program_title_name1.5:
     name: "loyalty_program_title_name1.5"
     order: 0
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 loyalty_program_title_name1.6:
@@ -370,7 +345,6 @@ loyalty_program_title_name1.6:
     name: "loyalty_program_title_name1.6"
     order: 0
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 loyalty_program_title_name1.7:
@@ -379,7 +353,6 @@ loyalty_program_title_name1.7:
     name: "loyalty_program_title_name1.7"
     order: 0
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 loyalty_program_title_name1.8:
@@ -388,7 +361,6 @@ loyalty_program_title_name1.8:
     name: "loyalty_program_title_name1.8"
     order: 0
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 loyalty_program_title_name2.1:
@@ -397,7 +369,6 @@ loyalty_program_title_name2.1:
     name: "loyalty_program_title_name2.1"
     order: 0
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 loyalty_program_title_name2.2:
@@ -406,7 +377,6 @@ loyalty_program_title_name2.2:
     name: "loyalty_program_title_name2.2"
     order: 0
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 loyalty_program_title_name2.3:
@@ -415,7 +385,6 @@ loyalty_program_title_name2.3:
     name: "loyalty_program_title_name2.3"
     order: 0
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 loyalty_program_title_name2.4:
@@ -424,7 +393,6 @@ loyalty_program_title_name2.4:
     name: "loyalty_program_title_name2.4"
     order: 0
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 loyalty_program_title_name2.5:
@@ -433,7 +401,6 @@ loyalty_program_title_name2.5:
     name: "loyalty_program_title_name2.5"
     order: 0
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 loyalty_program_title_name2.7:
@@ -442,7 +409,6 @@ loyalty_program_title_name2.7:
     name: "loyalty_program_title_name2.7"
     order: 0
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 loyalty_program_title_name2.10:
@@ -451,7 +417,6 @@ loyalty_program_title_name2.10:
     name: "loyalty_program_title_name2.10"
     order: 0
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 loyalty_program_title_name2.11:
@@ -460,7 +425,6 @@ loyalty_program_title_name2.11:
     name: "loyalty_program_title_name2.11"
     order: 0
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 
@@ -470,7 +434,6 @@ gloryroad_1:
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_2:
@@ -479,7 +442,6 @@ gloryroad_2:
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_3:
@@ -488,7 +450,6 @@ gloryroad_3:
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_4:
@@ -497,7 +458,6 @@ gloryroad_4:
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_5:
@@ -506,7 +466,6 @@ gloryroad_5:
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_6:
@@ -515,16 +474,14 @@ gloryroad_6:
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_7:
-    iconURL: "https://assets-17app.akamaized.net/44b1349e-ee1b-4b27-a506-0f9b808a57e4.png" 
+    iconURL: "https://assets-17app.akamaized.net/44b1349e-ee1b-4b27-a506-0f9b808a57e4.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_8:
@@ -533,7 +490,6 @@ gloryroad_8:
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_9:
@@ -542,7 +498,6 @@ gloryroad_9:
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_10:
@@ -551,25 +506,22 @@ gloryroad_10:
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_11:
-    iconURL:  "https://assets-17app.akamaized.net/9f6925c1-3257-46a7-ba1c-dfdf0812b3df.png"
+    iconURL: "https://assets-17app.akamaized.net/9f6925c1-3257-46a7-ba1c-dfdf0812b3df.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_12:
-    iconURL: "https://assets-17app.akamaized.net/6331e4ee-714e-4af8-b53e-1df74a08dc83.png" 
+    iconURL: "https://assets-17app.akamaized.net/6331e4ee-714e-4af8-b53e-1df74a08dc83.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_13:
@@ -578,7 +530,6 @@ gloryroad_13:
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_14:
@@ -587,16 +538,14 @@ gloryroad_14:
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_15:
-    iconURL: "https://assets-17app.akamaized.net/ad1f8ae4-3e69-4777-ba59-48d967e0b8ba.png" 
+    iconURL: "https://assets-17app.akamaized.net/ad1f8ae4-3e69-4777-ba59-48d967e0b8ba.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_16:
@@ -605,313 +554,278 @@ gloryroad_16:
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_17:
-    iconURL: "https://assets-17app.akamaized.net/4da6d706-fb9f-4b8f-9851-fe9cfa819f76.png" 
+    iconURL: "https://assets-17app.akamaized.net/4da6d706-fb9f-4b8f-9851-fe9cfa819f76.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_18:
-    iconURL:  "https://assets-17app.akamaized.net/922dd4d5-db77-4d3a-a993-0e29ebdeb224.png" 
+    iconURL: "https://assets-17app.akamaized.net/922dd4d5-db77-4d3a-a993-0e29ebdeb224.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_19:
-    iconURL:   "https://assets-17app.akamaized.net/8c1f1a2e-9478-45ce-afef-a5ddc68fe00f.png"
+    iconURL: "https://assets-17app.akamaized.net/8c1f1a2e-9478-45ce-afef-a5ddc68fe00f.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_20:
-    iconURL:  "https://assets-17app.akamaized.net/f5de67b8-82b5-4138-b438-6a9e42e68f5f.png" 
+    iconURL: "https://assets-17app.akamaized.net/f5de67b8-82b5-4138-b438-6a9e42e68f5f.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_21:
-    iconURL:   "https://assets-17app.akamaized.net/74678824-a490-4619-9fcc-35205d7359c7.png"
+    iconURL: "https://assets-17app.akamaized.net/74678824-a490-4619-9fcc-35205d7359c7.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_22:
-    iconURL:  "https://assets-17app.akamaized.net/a86e0f95-4084-4d85-9569-a35ba09d2ce2.png"
+    iconURL: "https://assets-17app.akamaized.net/a86e0f95-4084-4d85-9569-a35ba09d2ce2.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_23:
-    iconURL:  "https://assets-17app.akamaized.net/453ac009-a142-4cf4-8529-9aa9f6c8182d.png"
+    iconURL: "https://assets-17app.akamaized.net/453ac009-a142-4cf4-8529-9aa9f6c8182d.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_24:
-    iconURL:  "https://assets-17app.akamaized.net/826c340d-4f9c-4828-8c14-83fe3a4039e3.png"
+    iconURL: "https://assets-17app.akamaized.net/826c340d-4f9c-4828-8c14-83fe3a4039e3.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_25:
-    iconURL:  "https://assets-17app.akamaized.net/6d1e4ea6-2e0c-41c6-88ae-38597e4dd43e.png"
+    iconURL: "https://assets-17app.akamaized.net/6d1e4ea6-2e0c-41c6-88ae-38597e4dd43e.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_26:
-    iconURL:  "https://assets-17app.akamaized.net/8cee225f-8733-4c63-a64c-56de8f9cbbd1.png"
+    iconURL: "https://assets-17app.akamaized.net/8cee225f-8733-4c63-a64c-56de8f9cbbd1.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_27:
-    iconURL:  "https://assets-17app.akamaized.net/e67e250d-4345-4393-b480-1be5a6b2cd32.png"
+    iconURL: "https://assets-17app.akamaized.net/e67e250d-4345-4393-b480-1be5a6b2cd32.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_28:
-    iconURL:  "https://assets-17app.akamaized.net/867f8631-9882-41fa-b168-47de040af879.png"
+    iconURL: "https://assets-17app.akamaized.net/867f8631-9882-41fa-b168-47de040af879.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_29:
-    iconURL:  "https://assets-17app.akamaized.net/9f42e848-5639-4c43-b79e-1106888f814e.png"
+    iconURL: "https://assets-17app.akamaized.net/9f42e848-5639-4c43-b79e-1106888f814e.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_30:
-    iconURL:  "https://assets-17app.akamaized.net/b8d07590-dbd1-4ae0-bf46-5cf873d3c304.png"
+    iconURL: "https://assets-17app.akamaized.net/b8d07590-dbd1-4ae0-bf46-5cf873d3c304.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_31:
-    iconURL:  "https://assets-17app.akamaized.net/294707db-eded-444f-a07f-c27a004557c3.png"
+    iconURL: "https://assets-17app.akamaized.net/294707db-eded-444f-a07f-c27a004557c3.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_32:
-    iconURL:  "https://assets-17app.akamaized.net/b768e50a-8d38-47c5-bdb2-0f8f71388b63.png"
+    iconURL: "https://assets-17app.akamaized.net/b768e50a-8d38-47c5-bdb2-0f8f71388b63.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_33:
-    iconURL:  "https://assets-17app.akamaized.net/e65d73e2-2fc6-45a8-8103-f8ef97ce4fe4.png"
+    iconURL: "https://assets-17app.akamaized.net/e65d73e2-2fc6-45a8-8103-f8ef97ce4fe4.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_34:
-    iconURL:  "https://assets-17app.akamaized.net/be998081-a792-4568-b164-2932ea61bd3a.png"
+    iconURL: "https://assets-17app.akamaized.net/be998081-a792-4568-b164-2932ea61bd3a.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_35:
-    iconURL: "https://assets-17app.akamaized.net/cbe15c42-2529-4e38-a9fb-a06a8bbc36f4.png" 
+    iconURL: "https://assets-17app.akamaized.net/cbe15c42-2529-4e38-a9fb-a06a8bbc36f4.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_36:
-    iconURL:  "https://assets-17app.akamaized.net/7ecb5f8c-bfd4-4484-bd11-31934dd2abcc.png"
+    iconURL: "https://assets-17app.akamaized.net/7ecb5f8c-bfd4-4484-bd11-31934dd2abcc.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_37:
-    iconURL:  "https://assets-17app.akamaized.net/be106db1-66dd-4731-98f3-8908902cbcc8.png"
+    iconURL: "https://assets-17app.akamaized.net/be106db1-66dd-4731-98f3-8908902cbcc8.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_38:
-    iconURL:  "https://assets-17app.akamaized.net/253e7e1d-1740-41af-a8d1-95c903a432f8.png"
+    iconURL: "https://assets-17app.akamaized.net/253e7e1d-1740-41af-a8d1-95c903a432f8.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_39:
-    iconURL:  "https://assets-17app.akamaized.net/2872090b-f405-4161-a97a-8025c90a371d.png"
+    iconURL: "https://assets-17app.akamaized.net/2872090b-f405-4161-a97a-8025c90a371d.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_40:
-    iconURL:  "https://assets-17app.akamaized.net/ee3bd5f4-746e-4149-9c94-10e7269aad9d.png"
+    iconURL: "https://assets-17app.akamaized.net/ee3bd5f4-746e-4149-9c94-10e7269aad9d.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_41:
-    iconURL: "https://assets-17app.akamaized.net/072e5d76-6c02-4b5b-b7c4-806c45068fd6.png" 
+    iconURL: "https://assets-17app.akamaized.net/072e5d76-6c02-4b5b-b7c4-806c45068fd6.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_42:
-    iconURL: "https://assets-17app.akamaized.net/a5b6fd75-1b51-43c3-862b-69c9b606dd50.png" 
+    iconURL: "https://assets-17app.akamaized.net/a5b6fd75-1b51-43c3-862b-69c9b606dd50.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_43:
-    iconURL: "https://assets-17app.akamaized.net/b310cdd4-bff6-44f8-8270-6dacc4ed1b38.png" 
+    iconURL: "https://assets-17app.akamaized.net/b310cdd4-bff6-44f8-8270-6dacc4ed1b38.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_44:
-    iconURL: "https://assets-17app.akamaized.net/10d59e0d-58c6-4e4e-9fae-3f3e4746d818.png" 
+    iconURL: "https://assets-17app.akamaized.net/10d59e0d-58c6-4e4e-9fae-3f3e4746d818.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_45:
-    iconURL: "https://assets-17app.akamaized.net/ef91b910-a317-4e6a-8f17-53cae53ea615.png" 
+    iconURL: "https://assets-17app.akamaized.net/ef91b910-a317-4e6a-8f17-53cae53ea615.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_46:
-    iconURL:  "https://assets-17app.akamaized.net/5a5f9f1d-f2b3-496a-ad32-c1a6e0784285.png"
+    iconURL: "https://assets-17app.akamaized.net/5a5f9f1d-f2b3-496a-ad32-c1a6e0784285.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_47:
-    iconURL:  "https://assets-17app.akamaized.net/017e6ce5-d659-4692-82c7-73ac71737665.png"
+    iconURL: "https://assets-17app.akamaized.net/017e6ce5-d659-4692-82c7-73ac71737665.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_48:
-    iconURL:  "https://assets-17app.akamaized.net/26ce5fb6-0d2f-43ba-8d92-85468fb61851.png"
+    iconURL: "https://assets-17app.akamaized.net/26ce5fb6-0d2f-43ba-8d92-85468fb61851.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_49:
-    iconURL: "https://assets-17app.akamaized.net/932b8232-9230-44f6-8e2f-cf47c154326a.png" 
+    iconURL: "https://assets-17app.akamaized.net/932b8232-9230-44f6-8e2f-cf47c154326a.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 gloryroad_50:
-    iconURL: "https://assets-17app.akamaized.net/90c706a9-a0f4-4504-8fe9-7ed89329bed7.png" 
+    iconURL: "https://assets-17app.akamaized.net/90c706a9-a0f4-4504-8fe9-7ed89329bed7.png"
     description: "glorylevel"
     name: "glorylevel"
     order: 1
     isInternal: false
-    wildOpen: false
     isReferredFile: false
     users: []
 
@@ -921,7 +835,6 @@ gf2019_male_streamer:
     description: "golden_feather_2018_nominees_for_Best_Male_Streamer_description"
     name: "golden_feather_2019_Nominees_for_Best_Male_Streamer"
     isInternal: false
-    wildOpen: true
     isReferredFile: false
 # 最佳女主播
 gf2019_female_streamer:
@@ -929,7 +842,6 @@ gf2019_female_streamer:
     description: "golden_feather_2018_Nominees_for_Best_female_Streamer_description"
     name: "golden_feather_2019_Nominees_for_Best_female_Streamer"
     isInternal: false
-    wildOpen: true
     isReferredFile: false
 # 最佳潛力主播
 gf2019_potential:
@@ -937,7 +849,6 @@ gf2019_potential:
     description: "golden_feather_2018_Nominees_for_Up_and_Coming_Streamer_description"
     name: "golden_feather_2019_Nominees_for_Up_and_Coming_Streamer"
     isInternal: false
-    wildOpen: true
     isReferredFile: false
 # 最佳新星主播
 gf2019_new_star:
@@ -945,7 +856,6 @@ gf2019_new_star:
     description: "golden_feather_2018_Nominees_for_Best_New_Streamer_description"
     name: "golden_feather_2019_Nominees_for_Best_New_Streamer"
     isInternal: false
-    wildOpen: true
     isReferredFile: false
 # 直播魅力獎
 gf2019_charm:
@@ -953,7 +863,6 @@ gf2019_charm:
     description: "golden_feather_2018_Nominees_for_Best_charming_Award_description"
     name: "golden_feather_2019_Nominees_for_Best_charming_Award"
     isInternal: false
-    wildOpen: true
     isReferredFile: false
 # 直播風采獎
 gf2019_style:
@@ -961,7 +870,6 @@ gf2019_style:
     description: "golden_feather_2018_Nominees_for_stylish_Award_description"
     name: "golden_feather_2019_Nominees_for_stylish_Award"
     isInternal: false
-    wildOpen: true
     isReferredFile: false
 # 直播上鏡獎
 gf2019_photogenic:
@@ -969,7 +877,6 @@ gf2019_photogenic:
     description: "golden_feather_2018_Nominees_for_Outstanding_Looking_Award_description"
     name: "golden_feather_2019_Nominees_for_Outstanding_Looking_Award"
     isInternal: false
-    wildOpen: true
     isReferredFile: false
 # 最佳藝能獎
 gf2019_talent:
@@ -977,7 +884,6 @@ gf2019_talent:
     description: "golden_feather_2018_Nominees_for_Outstanding_performance_Award_description"
     name: "golden_feather_2019_Nominees_for_Outstanding_performance_Award"
     isInternal: false
-    wildOpen: true
     isReferredFile: false
 # 直播美妝獎
 gf2019_makeup:
@@ -985,7 +891,6 @@ gf2019_makeup:
     description: "golden_feather_2018_Nominees_for_Outstanding_Fashion_and_Beauty_Award_description"
     name: "golden_feather_2019_Nominees_for_Outstanding_Fashion_and_Beauty_Award"
     isInternal: false
-    wildOpen: true
     isReferredFile: false
 # 專業演奏獎
 gf2019_performer:
@@ -993,7 +898,6 @@ gf2019_performer:
     description: "golden_feather_2018_Nominees_for_Best_Music_Award_description"
     name: "golden_feather_2019_Nominees_for_Best_Music_Award"
     isInternal: false
-    wildOpen: true
     isReferredFile: false
 # 專業演唱獎
 gf2019_singer:
@@ -1001,7 +905,6 @@ gf2019_singer:
     description: "golden_feather_2018_Nominees_for_Best_vocal_Award_description"
     name: "golden_feather_2019_Nominees_for_Best_vocal_Award"
     isInternal: false
-    wildOpen: true
     isReferredFile: false
 # 專業舞蹈獎
 gf2019_dancer:
@@ -1009,5 +912,4 @@ gf2019_dancer:
     description: "golden_feather_2018_Nominees_for_Best_dance_Award_description"
     name: "golden_feather_2019_Nominees_for_Best_dance_Award"
     isInternal: false
-    wildOpen: true
     isReferredFile: false
