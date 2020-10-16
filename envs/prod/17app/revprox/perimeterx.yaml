@@ -1,16 +1,6 @@
 enable_perimeterx: true
 enable_log_block_info: false
 enable_log_block_user_id: false
-bypass_routes: # Should be removed after new px code deployed
-  - "/baggage"
-  - "/cells"
-  - "/config/personal"
-  - "/event/banners"
-  - "/gift"
-  - "/gift/giftbox/unread"
-  - "/leaderboards"
-  - "/leaderboards/eventory"
-  - "/logs"
 protected_routes:
   - "/version"
   - "/auth/.*"
