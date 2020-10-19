@@ -1,26 +1,16 @@
-# Regions are all operation regions that have their own leaderboard
-# NOTE: Move this to a more general place if any other feature needs this.
-numShownMonth: 7
-rankRange: 30
-regions:
-  - TW
-  - JP
-  - HK
-  - MY
-  - US
-  - SG
-groups:
-  - TW
-  - JP
-  - HK
-  - MY
-  - US
-  - SG
-  - MENA
-useShardTable: false
+# find all region board enum in models/leaderboard/leaderboard.go
+# boards shown in app leaderboard page
+# 1:收禮
+# 2:送禮
+# 23:榮耀之路
+# 18:開播時數
+# 15:戰隊
+# 16:陪伴
+# 5:愛心
+# 3:幫派
+boardsList: [1, 2, 51, 44, 45, 46, 43, 36, 23, 34, 35, 18, 15, 16, 5, 3]
 
-# globalSubBoards is for global subleaderboard display
-globalSubBoards:
+subBoards:
   34:
     # 33: 直播被看播時間
     - type: 33
@@ -47,7 +37,7 @@ globalSubBoards:
       iconURL: https://assets-17app.akamaized.net/743de4b0-8eab-44aa-bd2f-4171170b1b78.png
       titleI18nKey: leaderboard_diversification_giftcount_title
       layoutType: 2
-   # 32: 禮物背包（簽到禮物、背包、新手任務）獲得pt
+    # 32: 禮物背包（簽到禮物、背包、新手任務）獲得pt
     - type: 32
       iconURL: https://assets-17app.akamaized.net/9a247c76-07a7-4298-b962-fa46211a3daa.png
       titleI18nKey: leaderboard_diversification_giftboxpt_title
@@ -77,19 +67,3 @@ globalSubBoards:
       iconURL: https://cdn.17app.co/e61ae76d-b8ef-42ca-b2cf-798b6109ce2b.png
       titleI18nKey: leaderboard_diversification_sharecount_title
       layoutType: 2
-
-regionalConfigSupportedVersion:
-  android: "2.50.0"
-  ios: "3.150.0"
-
-# below configs should be deprecated
-# region board's order and region subBoards setting shold be set in regional config in regionBoard folder
-# don't delete below configs to keep older client version work
-regionBoards: #regionBoards define each region board's order
-  TW: [1, 2, 51, 44, 45, 46, 43, 36, 23, 34, 35, 18, 15, 16, 5, 3]
-  JP: [1, 2, 51, 44, 45, 46, 43, 18, 34, 23, 15, 5, 3, 36]
-  HK: [1, 2, 51, 44, 45, 46, 35, 23, 18, 34, 15, 5, 3, 36]
-  MY: [1, 2, 51, 44, 45, 46, 35, 23, 18, 34, 15, 5, 3, 36]
-  US: [1, 2, 51, 44, 45, 46, 35, 18, 34, 15, 5, 3, 36]
-  SG: [1, 2, 51, 44, 45, 46, 35, 23, 18, 34, 15, 16, 5, 3, 36]
-  OTHERS: [1, 2, 51, 44, 45, 46, 35, 23, 18, 34, 5, 3, 36]
