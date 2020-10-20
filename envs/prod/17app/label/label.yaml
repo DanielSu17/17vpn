@@ -4,12 +4,19 @@
 # - labelID: mapping for labels table id
 
 labelInfos:
+  - id: "together_EDM" #17一起EDM
+    type: 1
+    label:
+      key: "streamer_label_highlight_EDM"
+    iconURL: https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+    isHide: false
+    order: 505
+
   - id: "Dancer" #舞蹈達人
     type: 1
     label:
       key: "streamer_label_highlight_dancer"
     iconURL: "https://cdn.17app.co/b618d81c-0dd1-4b54-b022-a8418557e16b.png"
-    labelID: 469
     isHide: false
     order: 504
 
@@ -501,6 +508,17 @@ topicTabLabels:
 
 # labelWhiteList defines relation between label and user list
 labelWhiteList:
+  together_EDM: #17一起EDM
+    - 7d0ecead-e71f-4ddb-b64b-5b5c7ec56465
+    - e8f0fdf-60ed-4701-9bad-c09afab5defe
+    - bd818fae-cae4-486a-8caf-64d910442680
+    - 451f0f1b-aee4-4ab2-ae3e-4fa246a333e5
+    - af0b2865-89f4-465a-945b-b72e715c17a6
+    - 3ed53cb6-3eaa-4db5-b82b-bc6781ceb7a4
+    - 464d66fc-f860-4c2e-8f71-8ca91a200f1f
+    - e3103d5a-291c-46b1-5dd6-f58d9266380f
+    - 124df804-a9de-43ac-8a8e-25a074ae2721
+
   romantic_songs: # 每月14日情人系歌曲
     - 25f46a01-626a-43db-ab4b-cdbd668f75d8
     - e951c142-7524-450e-9d56-1e3da6ddf2da
