@@ -4,11 +4,19 @@
 # - labelID: mapping for labels table id
 
 labelInfos:
+  - id: "Best_Bands" #樂團歌曲之夜
+    type: 1
+    label:
+      key: "streamer_label_highlight_bestbands"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+    isHide: false
+    order: 506
+
   - id: "together_EDM" #17一起EDM
     type: 1
     label:
       key: "streamer_label_highlight_EDM"
-    iconURL: https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
     isHide: false
     order: 505
 
@@ -508,6 +516,28 @@ topicTabLabels:
 
 # labelWhiteList defines relation between label and user list
 labelWhiteList:
+  Best_Bands: #樂團歌曲之夜
+    - e951c142-7524-450e-9d56-1e3da6ddf2da
+    - de328680-c746-41ff-9114-0609260d9a5c
+    - 8e40188d-f6a5-4e86-ae38-7dc6adbe5af8
+    - 80b779b3-0ebf-449c-8d9d-1d9a0cc68b8c
+    - b0f384ae-1ecc-4762-94a5-8ba8f6721bb3
+    - ed65ad88-eb65-45d1-a236-70f630dcd6aa
+    - 7908a253-88e9-412e-b19e-a946cbb4565e
+    - e5f2f992-dd74-4d7e-a9c7-45803d36911e
+    - af08c730-832a-42e0-a124-bb4004ae6ba2
+    - 797a9442-348e-44b1-be5d-b85d9fd1802e
+    - 73c96f71-c149-423e-9f1c-3f6d842a0ad6
+    - 6d512f81-4503-46a8-97e6-28d54cfde90a
+    - c57fba7e-38aa-43c1-867e-96e0fb6ae366
+    - b0410a64-513c-446b-801b-22eaf7cdf93c
+    - 4339f07f-42eb-4b56-9f60-6894a969b298
+    - 751b716d-e914-4226-8eb3-3868895c9f22
+    - 29a79809-c6ae-45ad-b9ce-402606ba1b93
+    - 464d66fc-f860-4c2e-8f71-8ca91a200f1f
+    - bfdd5602-d159-4e00-baf0-d38cde0951aa
+    - 8b3c94df-2aae-42a9-b59b-7467235e4818
+
   together_EDM: #17一起EDM
     - 7d0ecead-e71f-4ddb-b64b-5b5c7ec56465
     - e8f0fdf-60ed-4701-9bad-c09afab5defe
