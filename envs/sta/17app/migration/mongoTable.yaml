@@ -13,7 +13,12 @@
 #           "LiveStream": "LiveStreamV2"
 # step 8: turn off shield
 tableMapping:
-readOnlyTables:
+readOnlyTables: []
+
+enableMultiClient: false
+
+streamTables: []
+userTables:
   - User
   - UserPreference
   - UserTerm
@@ -33,11 +38,6 @@ readOnlyTables:
   - UserFollowRequestedV2B
   - UserWatchHistoryV2
   - UserWatchHistoryV2B
-
-enableMultiClient: false
-streamTables: []
-
-userTables: []
 
 pointTables: []
 
