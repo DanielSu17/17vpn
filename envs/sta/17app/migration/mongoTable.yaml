@@ -13,18 +13,7 @@
 #           "LiveStream": "LiveStreamV2"
 # step 8: turn off shield
 tableMapping:
-readOnlyTables: []
-enableMultiClient: false
-streamTables:
-  - LiveStream
-  - UserRestream
-  - LiveRestream
-  - CheckinViewer
-  - UserWatchHistory
-  - Streamer
-  - StreamTopics
-
-userTables:
+readOnlyTables:
   - User
   - UserPreference
   - UserTerm
@@ -37,19 +26,20 @@ userTables:
   - BaasLicense
   - BaasAccountBinding
   - SMSVerificationRecord
+  - Block
+  - UserFollowV2
+  - UserFollowV2B
+  - UserFollowRequestedV2
+  - UserFollowRequestedV2B
+  - UserWatchHistoryV2
+  - UserWatchHistoryV2B
 
-pointTables:
-  - LevelGiftUset
-  - Coupon
-  - CouponCampaign
-  - CouponRewardCode
-  - CouponUsageLog
-  - PokeChallenge
-  - BettingGames
-  - BettingItems
-  - BettingRelations
-  - BettingOptionInfos
-  - WeekupReport
+enableMultiClient: false
+streamTables: []
+
+userTables: []
+
+pointTables: []
 
 defaultTables:
   - Block
