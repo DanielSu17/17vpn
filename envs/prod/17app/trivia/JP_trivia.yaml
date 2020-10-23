@@ -35,9 +35,9 @@ referral:
   quizNo: 6
 checkAnswerSign: true
 medalActivity:
-  countdown: 10
-  sendRateLimit: 60 # seconds
-  maxAcceptDelay: 60 # seconds
+  countdown: 10   #seconds, 免死金牌dialog跳出後用戶X秒內要按
+  sendRateLimit: 60 # seconds, 發免死金牌的人X秒後可以再發
+  maxAcceptDelay: 60 # seconds, 容許用戶delay按按鈕時間
 devices:
   ios:
     version: "3.74.0"
