@@ -10,11 +10,36 @@
 # step 7: update this config with
 #         readOnlyTables: []
 #         tableMapping:
-#           "LiveStream": "LiveStreamV2"
+#           LiveStream: LiveStreamV2
 # step 8: turn off shield
 tableMapping:
 
-readOnlyTables: []
+readOnlyTables:
+  - LiveStreamV2
+  - UserRestream
+  - LiveRestream
+  - CheckinViewer
+  - Streamer
+  - StreamTopics
+  - LevelGiftUset
+  - Coupon
+  - CouponCampaign
+  - CouponRewardCode
+  - CouponUsageLog
+  - PokeChallenge
+  - BettingGames
+  - BettingItems
+  - BettingRelations
+  - BettingOptionInfos
+  - WeekupReport
+  - PointReceiverLogs
+  - PointReceiverLogsHistory
+  - PointReceiverLogsCache
+  - PointReceiverLogsCacheTime
+  - PointUsageLogs
+  - PointUsageLogsHistory
+  - PointGainLogs
+  - PointGainLogsHistory
 
 enableMultiClient: true
 
