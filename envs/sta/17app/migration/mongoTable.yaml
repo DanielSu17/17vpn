@@ -14,36 +14,17 @@
 # step 8: turn off shield
 tableMapping:
 
-readOnlyTables:
+readOnlyTables: []
+
+enableMultiClient: true
+
+streamTables:
   - LiveStreamV2
   - UserRestream
   - LiveRestream
   - CheckinViewer
   - Streamer
   - StreamTopics
-  - LevelGiftUset
-  - Coupon
-  - CouponCampaign
-  - CouponRewardCode
-  - CouponUsageLog
-  - PokeChallenge
-  - BettingGames
-  - BettingItems
-  - BettingRelations
-  - BettingOptionInfos
-  - WeekupReport
-  - PointReceiverLogs
-  - PointReceiverLogsHistory
-  - PointReceiverLogsCache
-  - PointReceiverLogsCacheTime
-  - PointUsageLogs
-  - PointUsageLogsHistory
-  - PointGainLogs
-  - PointGainLogsHistory
-
-enableMultiClient: true
-
-streamTables: []
 
 userTables:
   - User
@@ -66,7 +47,26 @@ userTables:
   - UserWatchHistoryV2
   - UserWatchHistoryV2B
 
-pointTables: []
+pointTables:
+  - LevelGiftUset
+  - Coupon
+  - CouponCampaign
+  - CouponRewardCode
+  - CouponUsageLog
+  - PokeChallenge
+  - BettingGames
+  - BettingItems
+  - BettingRelations
+  - BettingOptionInfos
+  - WeekupReport
+  - PointReceiverLogs
+  - PointReceiverLogsHistory
+  - PointReceiverLogsCache
+  - PointReceiverLogsCacheTime
+  - PointUsageLogs
+  - PointUsageLogsHistory
+  - PointGainLogs
+  - PointGainLogsHistory
 
 defaultTables:
   - AccompanyUserInfo
@@ -77,10 +77,6 @@ defaultTables:
   - AvatarGrabBagPlans
   - AvatarGrabBags
   - Barrage
-  - BettingGames
-  - BettingItems
-  - BettingOptionInfos
-  - BettingRelations
   - BlabRequest
   - CSAggregator
   - CSDataContainer
@@ -90,7 +86,6 @@ defaultTables:
   - CSEventTag
   - CSGiftBucket
   - ChatThread
-  - CheckinViewer
   - ChoiceUser
   - Clan
   - ClanInvited
@@ -102,10 +97,6 @@ defaultTables:
   - ClipVoteInfo
   - CommodityBuy
   - CommoditySell
-  - Coupon
-  - CouponCampaign
-  - CouponRewardCode
-  - CouponUsageLog
   - CryptocurrencyLog
   - CryptocurrencyTicker
   - CustomEvent
@@ -143,10 +134,7 @@ defaultTables:
   - LeagueMemberActionLogs
   - LeagueMembersV2
   - LeagueMembersV2B
-  - LevelGiftUset
-  - LiveRestream
   - LiveStream
-  - LiveStreamV2
   - LogPhoneBindingOperationsV2
   - LogTaskQueueFail
   - LogTaskQueueFailV2
@@ -165,15 +153,6 @@ defaultTables:
   - Payment
   - PhoneNumberToUser
   - PmRelations
-  - PointGainLogs
-  - PointGainLogsHistory
-  - PointReceiverLogs
-  - PointReceiverLogsCache
-  - PointReceiverLogsCacheTime
-  - PointReceiverLogsHistory
-  - PointUsageLogs
-  - PointUsageLogsHistory
-  - PokeChallenge
   - Poll
   - Post
   - PostComment
@@ -199,8 +178,6 @@ defaultTables:
   - RoyaltyHistory
   - SearchHashTag
   - SectionList
-  - StreamTopics
-  - Streamer
   - StreamerLoyalty
   - SubCarbon
   - Subscription
@@ -228,7 +205,6 @@ defaultTables:
   - UserReadButlerMessageTime
   - UserReadFeedTime
   - UserReceivedLike
-  - UserRestream
   - UserRevenue
   - UserSocialActivity
   - UserSuggestion
@@ -245,7 +221,6 @@ defaultTables:
   - WatchFollowingHistoryV2
   - WechatFriend
   - WechatIDToUser
-  - WeekupReport
   - WeiboFriend
   - WeiboIDToUser
   - WeiboToUser
