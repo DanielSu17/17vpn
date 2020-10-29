@@ -7,15 +7,15 @@
 
 # Followings are actual schedules
 # For JP celebrity gackt_official
-- startTime: "2020-10-13 16:20:00 (GMT+0800)"
-  endTime: "2020-10-13 18:30:00 (GMT+0800)"
+- startTime: "2020-10-29 19:45:00 (GMT+0800)"
+  endTime: "2020-10-29 21:30:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 80
   - name: k8sprod-golives-main
-    minReplicas: 50
+    minReplicas: 80
   - name: k8sprod-gotrade-main
-    minReplicas: 8
+    minReplicas: 12
   - name: k8sprod-gocells-main
     minReplicas: 30
 
@@ -95,31 +95,5 @@
     minReplicas: 60
   - name: k8sprod-gotrade-main
     minReplicas: 6
-  - name: k8sprod-gocells-main
-    minReplicas: 20
-
-- startTime: "2020-08-29 18:15:00 (GMT+0800)"
-  endTime: "2020-08-29 20:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 100
-  - name: k8sprod-golives-main
-    minReplicas: 100
-  - name: k8sprod-gotrade-main
-    minReplicas: 6
-  - name: k8sprod-gocells-main
-    minReplicas: 20
-
-# For EXILE SHOKICHI×CrazyBoy 『KING&KING』 リリース記念特別節目
-# Ref: https://17media.slack.com/archives/C466YU363/p1602223826285500
-- startTime: "2020-10-09 17:45:00 (GMT+0800)"
-  endTime: "2020-10-09 20:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 100
-  - name: k8sprod-golives-main
-    minReplicas: 100
-  - name: k8sprod-gotrade-main
-    minReplicas: 8
   - name: k8sprod-gocells-main
     minReplicas: 20
