@@ -11,21 +11,20 @@ fittingRoomRules:
     iconURL: "https://cdn.17app.co/f0cb50b7-900e-476b-ad02-a32baebb8edc.png"
 
 backgrounds:
-  lvUpURL: ""
-  lvUpAnimationID: ""
-  rarity:
-    - rarity: 0
-      baseURL: ""
+  levelUpHintAnimationID: "avatar_levelup_hint"
+  levelUpAnimationID: "avatar_levelup"
+  grabBagBackgroundVideoURL: "https://cdn.17app.co/1d0b45ec-5126-459f-b1c9-70fe8871952d.mp4"
+  grabBagDrawVideo:
     - rarity: 1
-      baseURL: ""
+      url: "https://cdn.17app.co/54d5ceef-4630-4cd5-a0b7-a65f83749572.mp4"
     - rarity: 2
-      baseURL: ""
+      url: "https://cdn.17app.co/54d5ceef-4630-4cd5-a0b7-a65f83749572.mp4"
     - rarity: 3
-      baseURL: ""
+      url: "https://cdn.17app.co/54d5ceef-4630-4cd5-a0b7-a65f83749572.mp4"
     - rarity: 4
-      baseURL: ""
+      url: "https://cdn.17app.co/079acb24-332f-4f9e-bb2e-c745404cf8eb.mp4"
     - rarity: 5
-      baseURL: ""
+      url: "https://cdn.17app.co/c2ae4534-e577-48a8-b96f-5e00a56bcf26.mp4"
 
 onboardingGrabBag:
   id: "bag-1"
@@ -33,7 +32,7 @@ onboardingGrabBag:
   bannerURL: "https://cdn.17app.co/dcc4bbc5-7690-4fac-81d8-a5ffa0e53677.png"
   shouldCountdown: false
   endTime: 9999999999
-  plans: 
+  plans:
     - id: "plan-id-1"
       imageURL: "https://cdn.17app.co/eda63cf7-c0d0-477f-a77f-3b96ae44a049.png"
       highlight: false
@@ -56,12 +55,12 @@ rarityInfo:
   - rarity: 0
     odds: 0
     multiplier: 1.0
-    levelInfo: 
-      
+    levelInfo:
+
   - rarity: 1
     odds: 0.49
     multiplier: 1.0
-    levelInfo: 
+    levelInfo:
       - level: 1
         amount: 3
         charm: 21
@@ -105,7 +104,7 @@ rarityInfo:
   - rarity: 2
     odds: 0.30
     multiplier: 1.01
-    levelInfo: 
+    levelInfo:
       - level: 1
         amount: 5
         charm: 42
@@ -149,7 +148,7 @@ rarityInfo:
   - rarity: 3
     odds: 0.15
     multiplier: 1.03
-    levelInfo: 
+    levelInfo:
       - level: 1
         amount: 10
         charm: 165
@@ -193,7 +192,7 @@ rarityInfo:
   - rarity: 4
     odds: 0.05
     multiplier: 1.06
-    levelInfo: 
+    levelInfo:
       - level: 1
         amount: 15
         charm: 490
@@ -237,7 +236,7 @@ rarityInfo:
   - rarity: 5
     odds: 0.01
     multiplier: 1.12
-    levelInfo: 
+    levelInfo:
       - level: 1
         amount: 20
         charm: 3300
