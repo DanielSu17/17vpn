@@ -1,4 +1,6 @@
 # please checkout README.md for further instruction
+#purchaseType: 1限購一次;2不限
+#type受眾群體: 1判斷時間區段沒有購買過; 2判斷時間區段有購買過; 3生涯沒有購買過; 4生涯有購買過
 
 merchandises:
 # 新手首儲大禮包_iOS
@@ -34,12 +36,14 @@ merchandises:
           text:
             key: iap_store_giftpackage_dialog_gift_desc
     purchaseType: 1
-    taInfo:
+    taInfo: #受眾
         registerRange:
           dayStart: 0
           dayEnd: 14
         type: 3
-    abtestName: ""
+        startTime: #受眾的判斷時間開始時間, 不是禮包的有效時間,若沒有值則不受限制
+        endTime: #受眾的判斷時間結束時間, 不是禮包的結束時間,若沒有值則不受限制
+    abtestName: "" #禮包測試相關的abtest名稱, 需要 abtest.yaml也做相關的設定
 
 # 新手首儲大禮包_Android
 #  - intervalID: MINV-1eht3GNlgjVhIxuX4ljs5xdLq2o #(07/15)
