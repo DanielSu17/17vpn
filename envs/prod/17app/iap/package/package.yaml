@@ -9,14 +9,16 @@ merchandises:
     productsOrder: #product的順序，product不可為0
       - barrage_normal_20
       - premiumbaby_720_hrs
-    bonusesOrder:
+    bonusesOrder: #bonus的順序，如果只有bouns請移至productOrder
       - gift_giftpack_3d_welcome_9_30
       - gift_giftpack_jetcoaster_17_30
       - gift_giftpack_audio_gift_catkiss_17_30
       - gift_gift_texture_rabbit_hat_17_30
     addons:
       displayCountdown: false
+      #要不要顯示倒數計時
       countdownSecs: 86400
+      #距離結束時間多少以前開始 highlight
       title:
         key: iap_store_giftpackage_newbie
       titleImageURL: https://cdn.17app.co/392ead48-62dc-4321-9a86-923458ce19ab.png
