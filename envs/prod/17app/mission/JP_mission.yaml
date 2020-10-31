@@ -88,6 +88,45 @@ missions:
     - android
     - ios
 
+#アーミー銀河をあげる１回目
+- ID: f73f33ab-cf24-491c-a1a3-33ee45973cc9
+  type: 3
+  lifeCycle: 1
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2011_jp_armynov_bp_l
+    amount: 1
+    expireTimeSecs: 86400
+  requirePhoneBinding: false
+  i18nTitle: baggage_mission_gifting_jp_armyc
+  i18nTitleParams:
+    - needMap: false
+      mapOption: 0
+      value: 1
+    - needMap: false
+      mapOption: 0
+      value: gift_galaxy_bag
+  i18nContent:
+  i18nContentParams:
+  i18nDescription: baggage_mission_gifting_jp_armyno1a
+  i18nDescriptionParams:
+    - needMap: false
+      mapOption: 0
+      value: 1
+  goalValue: 1
+  enableTimeRange:
+    - startTime: "2020-11-01 15:00:00 (GMT+0900)"
+      endTime: "2020-11-07 23:59:59 (GMT+0900)"
+  refIDs:
+    - gift_galaxy_bag
+  platforms:
+    - android
+    - ios
+
 #アーミーNo.1 アーミー10回
 - ID: 9be12231-6801-42a7-8a4a-9a168ac56d1a
   type: 3
