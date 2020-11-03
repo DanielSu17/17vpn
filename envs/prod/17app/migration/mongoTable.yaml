@@ -14,36 +14,17 @@
 # step 8: turn off shield
 tableMapping:
 
-readOnlyTables:
+readOnlyTables: []
+
+enableMultiClient: true
+
+streamTables:
   - LiveStreamV2
   - UserRestream
   - LiveRestream
   - CheckinViewer
   - Streamer
   - StreamTopics
-  - LevelGiftUset
-  - Coupon
-  - CouponCampaign
-  - CouponRewardCode
-  - CouponUsageLog
-  - PokeChallenge
-  - BettingGames
-  - BettingItems
-  - BettingRelations
-  - BettingOptionInfos
-  - WeekupReport
-  - PointReceiverLogs
-  - PointReceiverLogsHistory
-  - PointReceiverLogsCache
-  - PointReceiverLogsCacheTime
-  - PointUsageLogs
-  - PointUsageLogsHistory
-  - PointGainLogs
-  - PointGainLogsHistory
-
-enableMultiClient: true
-
-streamTables: []
 
 userTables:
   - User
@@ -66,7 +47,26 @@ userTables:
   - UserWatchHistoryV2
   - UserWatchHistoryV2B
 
-pointTables: []
+pointTables:
+  - LevelGiftUset
+  - Coupon
+  - CouponCampaign
+  - CouponRewardCode
+  - CouponUsageLog
+  - PokeChallenge
+  - BettingGames
+  - BettingItems
+  - BettingRelations
+  - BettingOptionInfos
+  - WeekupReport
+  - PointReceiverLogs
+  - PointReceiverLogsHistory
+  - PointReceiverLogsCache
+  - PointReceiverLogsCacheTime
+  - PointUsageLogs
+  - PointUsageLogsHistory
+  - PointGainLogs
+  - PointGainLogsHistory
 
 defaultTables:
   - AccompanyUserInfo
