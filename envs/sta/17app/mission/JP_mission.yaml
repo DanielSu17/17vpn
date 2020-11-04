@@ -32,6 +32,35 @@
 
 missions:
 
+#全ユーザー　11/1~ 11/05 期間中に¥120以上を購入すると「【1000万DL記念】ずっと大好き♡」1個（1回まで）
+  - ID: 43a03ba0-37f9-4b63-b278-75ab77cb0876
+    type: 8
+    lifeCycle: 1
+    targetAudience: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      rewardType: 1
+      rewardID: "2011_jp_charge_01"
+      amount: 1
+      expireTimeSecs: 86400
+    requirePhoneBinding: false
+    i18nTitle: baggage_mission_IAP_reward_jp_daily_xmas_name
+    i18nTitleParams:
+    i18nContent:
+    i18nContentParams:
+    i18nDescription: baggage_mission_IAP_reward_jp_A_desc
+    i18nDescriptionParams:
+    goalValue: 1
+    enableTimeRange:
+      - startTime: "2020-11-01 12:00:00 (GMT+0900)"
+        endTime: "2020-11-05 23:59:59 (GMT+0900)"
+    refIDs:
+    platforms:
+      - android
+      - ios
+
 #全ユーザー　9/1~ 9/30期間中に¥120以上を購入すると「秋の訪れ」3個（1回まで）
   - ID: 060ffcf6-1d0a-44f1-ada5-821aee8bbb97
     type: 8
