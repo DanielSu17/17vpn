@@ -1,7 +1,7 @@
 # black list for queryv2, users trying to reach their blocked tables through queryv2
 # will receive ErrDisabled: user disabled by black list
 # key table from models.keys
-# Ex: 
+# Ex:
 # queryV2BlackList:
 #   'c52c9260-119d-423c-afc8-a2c8aa3a7a02': #jameschou01
 #     - "user"
@@ -15,6 +15,27 @@ queryV2BlackList:
 #  'e2f9adee-908d-4702-a0f6-bf164d14e763': #james.sta03
    - "stream"
   'b3307c68-8326-4b64-8572-d4211c9a9de2': #james.sta02
+   - "stream"
+  # below is for stress test, don't modify it
+  'ba108e3f-334d-4635-87a3-d40eb5db4fb7': #ag_stress_tester1
+   - "stream"
+  'c47c23f3-b72d-43f4-8b69-08a9f2ea8449': #ag_stress_tester2
+   - "stream"
+  '1a5c1b7b-fb26-4e62-9775-17797f0153dd': #ag_stress_tester3
+   - "stream"
+  'fe887139-a33b-42ad-945c-6d110c7eb63b': #ag_stress_tester4
+   - "stream"
+  '2753f9ee-d450-4d5c-a361-add0eb629251': #ag_stress_tester5
+   - "stream"
+  '3633fc09-bb8b-45dc-b502-c43843727dd7': #ag_stress_tester6
+   - "stream"
+  '0016fd84-571e-4cd4-8f96-d4d5f16a79ae': #ag_stress_tester7
+   - "stream"
+  '213ce518-5d6c-4991-8a4d-1e9807d510f9': #ag_stress_tester8
+   - "stream"
+  '70a567e1-9cb3-4e63-bb0c-5bff5c39968b': #ag_stress_tester9
+   - "stream"
+  '6a8ffd91-5c9f-40fd-83f4-be96d2f9a779': #ag_stress_tester10
    - "stream"
 
 # If a userID's table "user" is blocked, he should provide his accessToken in this blacklist so
