@@ -30,6 +30,37 @@
 # | NON_IAP | 2 |
 
 missions:
+
+#全ユーザー　11/11~ 11/20期間中に¥120以上を購入すると「青い薔薇をあなたに」×3個（期間中1回まで）
+- ID: 51b39490-bc62-4904-81ac-d042a7d72c29
+  type: 8
+  lifeCycle: 1
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: "gift_lux3d_bluerose_campaign"
+    amount: 3
+    expireTimeSecs: 86400
+  requirePhoneBinding: false
+  i18nTitle: baggage_mission_IAP_reward_jp_daily_xmas_name
+  i18nTitleParams:
+  i18nContent:
+  i18nContentParams:
+  i18nDescription: baggage_mission_IAP_reward_jp_A_desc
+  i18nDescriptionParams:
+  goalValue: 1
+  enableTimeRange:
+    - startTime: "2020-11-11 00:00:00 (GMT+0900)"
+      endTime: "2020-11-20 23:59:59 (GMT+0900)"
+  refIDs:
+  platforms:
+    - android
+    - ios
+
+
 #全ユーザー　11/1~ 11/3期間中に¥120以上を購入すると「【1000万DL記念】ずっと大好き♡」1個（1回まで）
 - ID: 81a12cc3-acb6-43ec-8027-04deed7e0e9d
   type: 8
