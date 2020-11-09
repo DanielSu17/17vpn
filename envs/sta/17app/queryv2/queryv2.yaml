@@ -20,7 +20,7 @@ queryV2BlackList:
 #   - "stream"
 #  'ad23150c-edad-426c-b889-0fa2cd108618': #james.sta06
 #   - "user"
-   
+
   # below is for stress test, don't modify it
   'ba108e3f-334d-4635-87a3-d40eb5db4fb7': #ag_stress_tester1
    - "stream"
@@ -42,6 +42,46 @@ queryV2BlackList:
    - "stream"
   '6a8ffd91-5c9f-40fd-83f4-be96d2f9a779': #ag_stress_tester10
    - "stream"
+  'a4292d33-d70a-48dc-adbf-d8b0ea566ac1': #ag_stress_tester11
+   - "user"
+  'a8fab5a1-a46a-4dac-b1d5-0c382826b761': #ag_stress_tester12
+   - "user"
+  '0e341647-4b79-4785-9ebe-a5486294c420': #ag_stress_tester13
+   - "user"
+  '5303eb40-1bc6-42f7-82cb-2993ddab102f': #ag_stress_tester14
+   - "user"
+  '289b1c73-a447-43a6-8e29-7cf6d054a426': #ag_stress_tester15
+   - "user"
+  'b6c2917f-f550-402d-9c90-1742ec9f9978': #ag_stress_tester16
+   - "user"
+  'e0ea67fe-c99d-4933-9ee3-839ffcc001f1': #ag_stress_tester17
+   - "user"
+  'c79fd156-fa47-471e-97b4-e7241d425e5d': #ag_stress_tester18
+   - "user"
+  'dc7d3d0f-6055-4e16-b589-a1ace6dfa3a6': #ag_stress_tester19
+   - "user"
+  '04ad9f22-c426-468c-945c-1152fb6a2264': #ag_stress_tester20
+   - "user"
+  '7e53f2cd-c144-4e6c-b41f-34294cb4446b': #ag_stress_tester21
+   - "default"
+  '79e44bc8-82c7-4cc1-99bc-b63ced1dce71': #ag_stress_tester22
+   - "default"
+  '24481a62-c0ef-4dd6-8bdd-e02f2b7b6ff9': #ag_stress_tester23
+   - "default"
+  'cb8abc55-2f55-4f8d-bf79-f5dd6004f072': #ag_stress_tester24
+   - "default"
+  '5661e0b3-3d77-4f97-aff5-a6fbad616bd9': #ag_stress_tester25
+   - "default"
+  'b051df2a-fcaf-4b59-a664-96c86a5a6bcd': #ag_stress_tester26
+   - "default"
+  '9cc87ad1-c906-4b5c-9d42-76dfa7e87335': #ag_stress_tester27
+   - "default"
+  'f448bca6-aebe-46fb-bfb7-c6de8988d476': #ag_stress_tester28
+   - "default"
+  'e1d3a999-69b7-4812-b907-5c44faeb90ef': #ag_stress_tester29
+   - "default"
+  '0a6a6c61-8d4b-4622-8534-94d9161426d9': #ag_stress_tester30
+   - "default"
 
 # If a userID's table "user" is blocked, he should provide his accessToken in this blacklist so
 # we can block middleware from getting his userInfo from db
@@ -51,3 +91,14 @@ queryV2BlackList:
 accessTokenBlackList:
 # - 'd625de44-93bc-40be-9271-9b06d30befbe'  #jameschou01
 # - 'b7ba0619-ea4d-43c4-a791-e37ad37ef1c3'  #james.sta06
+  # below is for stress test, don't modify it
+  - 'a4292d33-d70a-48dc-adbf-d8b0ea566ac1' #ag_stress_tester11
+  - 'a8fab5a1-a46a-4dac-b1d5-0c382826b761' #ag_stress_tester12
+  - '0e341647-4b79-4785-9ebe-a5486294c420' #ag_stress_tester13
+  - '5303eb40-1bc6-42f7-82cb-2993ddab102f' #ag_stress_tester14
+  - '289b1c73-a447-43a6-8e29-7cf6d054a426' #ag_stress_tester15
+  - 'b6c2917f-f550-402d-9c90-1742ec9f9978' #ag_stress_tester16
+  - 'e0ea67fe-c99d-4933-9ee3-839ffcc001f1' #ag_stress_tester17
+  - 'c79fd156-fa47-471e-97b4-e7241d425e5d' #ag_stress_tester18
+  - 'dc7d3d0f-6055-4e16-b589-a1ace6dfa3a6' #ag_stress_tester19
+  - '04ad9f22-c426-468c-945c-1152fb6a2264' #ag_stress_tester20
