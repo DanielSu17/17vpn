@@ -167,3 +167,17 @@ commandHelp:
         title: "`[更新資料至 backend]`"
         description: |
           > 確認無誤後，執行此指令，便會更新 update 指令所回傳的資料
+  report:
+    title: "檢舉相關"
+    commandsHelp:
+      reset:
+        title: "`[重置 user 檢舉]`"
+        description: |
+          > 重置指定 user 之指定 source 的檢舉次數
+  profile:
+    title: "Profiling 相關"
+    commandsHelp:
+      pprof:
+        title: "`[執行 pprof]`"
+        description: |
+          > 取得指定 pod 的 profiling 資料，只有 backend 能使用此指令
