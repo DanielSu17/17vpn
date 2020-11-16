@@ -31,6 +31,17 @@ def etcdServiceEndpointsProdWave = [
     'http://34.80.98.223:2379',
 ]
 
+def etcdServiceEndpointsStagEventory = [
+    'http://35.229.178.57:2379',
+    'http://35.194.226.164:2379',
+    'http://35.229.192.119:2379',
+]
+
+def etcdServiceEndpointsProdEventory = [
+    'http://35.227.155.196:2379',
+    'http://35.247.92.108:2379',
+    'http://35.230.16.11:2379',
+]
 
 properties([
     buildDiscarder(
@@ -68,6 +79,18 @@ properties([
             defaultValue: etcdServiceEndpointsProdWave.join(','),
             description: 'ETCD Service Endpoints List for the Wave Service (Production)',
             name: 'ENDPOINTS_WAVE_PROD',
+            trim: true
+        ),
+        string(
+            defaultValue: etcdServiceEndpointsStagEventory.join(','),
+            description: 'ETCD Service Endpoints List for the Eventory Service (Staging)',
+            name: 'ENDPOINTS_EVENTORY_STA',
+            trim: true
+        ),
+        string(
+            defaultValue: etcdServiceEndpointsProdEventory.join(','),
+            description: 'ETCD Service Endpoints List for the Eventory Service (Production)',
+            name: 'ENDPOINTS_EVENTORY_PROD',
             trim: true
         ),
         booleanParam(
