@@ -31,6 +31,42 @@
 
 missions:
 
+#ロンドンブーツ
+- ID: 36779c3b-7946-49c5-b5b4-38f097a3b4e0
+  type: 9
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 3
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2011_jp_londonbootsnov
+    amount: 1
+    expireTimeSecs: 86400
+  requirePhoneBinding: false
+  withReminder: false
+  i18nTitle: baggage_mission_watch_jp_ronboo1
+  i18nTitleParams:
+    - needMap: false
+      mapOption: 0
+      value: 1
+  i18nContent:
+  i18nContentParams:
+  i18nDescription: baggage_mission_watch_jp_ronboo2
+  i18nDescriptionParams:
+    - needMap: false
+      mapOption: 0
+      value: 1
+  goalValue: 300
+  enableTimeRange:
+    - startTime: "2020-11-17 15:00:00 (GMT+0900)"
+      endTime: "2020-11-21 23:59:59 (GMT+0900)"
+  refIDs:
+  platforms:
+    - android
+    - ios
+
 #無課金ユーザー　11/17~ 11/19 【いい17の日 チャージキャンペーン】期間中に¥120以上を購入すると「花火を見つけた」4個（1回まで）
 - ID: d16180d6-f08a-4c70-86b3-8f07920a1fa3
   type: 8
@@ -242,42 +278,6 @@ missions:
       endTime: "2020-12-11 23:59:59 (GMT+0900)"
   refIDs:
     - 2011_jp_xmasnov_2_xl_bag
-  platforms:
-    - android
-    - ios
-
-#ロンドンブーツ
-- ID: 36779c3b-7946-49c5-b5b4-38f097a3b4e0
-  type: 9
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 3
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2011_jp_londonbootsnov
-    amount: 1
-    expireTimeSecs: 86400
-  requirePhoneBinding: false
-  withReminder: false
-  i18nTitle: baggage_mission_watch_jp_ronboo1
-  i18nTitleParams:
-    - needMap: false
-      mapOption: 0
-      value: 1
-  i18nContent:
-  i18nContentParams:
-  i18nDescription: baggage_mission_watch_jp_ronboo2
-  i18nDescriptionParams:
-    - needMap: false
-      mapOption: 0
-      value: 1
-  goalValue: 300
-  enableTimeRange:
-    - startTime: "2020-11-17 15:00:00 (GMT+0900)"
-      endTime: "2020-11-21 23:59:59 (GMT+0900)"
-  refIDs:
   platforms:
     - android
     - ios
