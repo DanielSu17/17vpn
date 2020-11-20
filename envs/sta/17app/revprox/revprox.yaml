@@ -108,7 +108,8 @@ conf:
             endLiveStream,\
             commentLiveStream"
  - url_key: "aggr_gateway_url"
-   weight: 100
+   default_url_key: "gocells"
+   weight: 50
    white_list:
      apiv1: "cells,sections"
  - url_key: "bbrich_url"
