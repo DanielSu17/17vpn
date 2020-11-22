@@ -45,3 +45,15 @@
   - name: k8sprod-gocells-main
     minReplicas: 30
 
+# For 11-22 Golden Feather
+- startTime: "2020-11-22 15:55:00 (GMT+0800)"
+  endTime: "2020-11-22 22:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 80
+  - name: k8sprod-golives-main
+    minReplicas: 80
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 30
