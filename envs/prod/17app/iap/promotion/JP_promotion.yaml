@@ -13,10 +13,26 @@ dailyViewLiveXSecondsInSingleRoom: 10 #所有用戶，單一直播間 至少觀�
 # priority順序：不能重複，繼續往下排 (數字愈小愈早出現)
 # maxPromoteCountPerMonth 每個用戶每個月看到的最高顯示次數，達到次數會跳下一組
 promotionIAPs:
+  #B2B新手禮包_iOS 2020-11-23 ~ 2020-12-06
+  - id: MINV-1kVA0x1mlVUinam0Gafdrmk5B45
+    promotionType: 2
+    priority: 1
+    maxPromoteCountPerMonth: 4
+    topImageURL: https://cdn.17app.co/60aed428-becb-4aea-a343-9044f6b5b1ed.png
+    bannerURL: https://cdn.17app.co/52336b12-d29b-4c2f-bd09-dd12fbbb5c87.png #1016*358
+
+  # B2B新手禮包_Android 2020-11-23 ~ 2020-12-06
+  - id: MINV-1kVA0ucnBmOWvfNjZZkvmaboSLI
+    promotionType: 2
+    priority: 2
+    maxPromoteCountPerMonth: 4
+    topImageURL: https://cdn.17app.co/60aed428-becb-4aea-a343-9044f6b5b1ed.png
+    bannerURL: https://cdn.17app.co/52336b12-d29b-4c2f-bd09-dd12fbbb5c87.png
+
   # 2020-07-15 日本新手首儲大禮包_iOS
   - id: "MINV-1ehxIvft9mWgjoQXl74bQ4avb04" #禮包填interval ID;閃購填event ID (切換到pay v2才能閃購+彈窗)
     promotionType: 2
-    priority: 1
+    priority: 3
     maxPromoteCountPerMonth: 3
     topImageURL: https://cdn.17app.co/60aed428-becb-4aea-a343-9044f6b5b1ed.png
     bannerURL: https://cdn.17app.co/142bf4d8-be65-4eda-8bf2-ab5f17793dda.png
@@ -24,7 +40,7 @@ promotionIAPs:
   # 2020-07-15 日本新手首儲大禮包_Android
   - id: "MINV-1ehxIq4Z0qiw93RwPg5Esa4NGyx"
     promotionType: 2
-    priority: 2
+    priority: 4
     maxPromoteCountPerMonth: 3
     topImageURL: https://cdn.17app.co/60aed428-becb-4aea-a343-9044f6b5b1ed.png
     bannerURL: https://cdn.17app.co/142bf4d8-be65-4eda-8bf2-ab5f17793dda.png
