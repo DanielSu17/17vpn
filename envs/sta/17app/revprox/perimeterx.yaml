@@ -3,7 +3,8 @@ enable_log_block_info: false
 enable_log_block_user_id: false
 protected_routes:
   - "/version"
-  - "/auth/.*"
+  - "/auth/checkOpenIDAvailable"
+  - "/auth/checkOAuthIDAvailable"
   - "/redenvelopes/.*/pick$"
   - "/lives/.*/laborReward$"
 sensitive_headers:
