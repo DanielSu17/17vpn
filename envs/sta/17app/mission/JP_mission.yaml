@@ -31,35 +31,42 @@
 # | NON_IAP | 2 |
 
 missions:
-
-#全ユーザー　11/1~ 11/05 期間中に¥120以上を購入すると「【1000万DL記念】ずっと大好き♡」1個（1回まで）
-  - ID: a80c0fac-ec1b-4864-b5bc-aac469d941a7
-    type: 8
-    lifeCycle: 1
+#10分以上視聴でキャンペーンギフトゲット
+  - ID: 17df2f72-5cce-4b27-a84a-de9ab4ed287d
+    type: 9
+    category: 0
+    lifeCycle: 0
     targetAudience: 0
     levelRange:
       min: 1
       max: 999
-    reward:
+      reward:
       rewardType: 1
-      rewardID: "2006_jp_s_a_73be3d9e_b2413fb5"
-      amount: 3
+      rewardID: 1812_jp_weeklymission4_1
+      amount: 1
       expireTimeSecs: 86400
-    requirePhoneBinding: false
-    i18nTitle: baggage_mission_IAP_reward_jp_daily_xmas_name
+    i18nTitle: baggage_mission_jp_amazon_title
     i18nTitleParams:
-    i18nContent:
-    i18nContentParams:
-    i18nDescription: baggage_mission_IAP_reward_jp_A_desc
+    - value: "1"
+      needMap: false
+      mapOption: 0
+      fontAttribute: null
+    i18nContent: ""
+    i18nContentParams: []
+    i18nDescription: baggage_mission_jp_amazon_description
     i18nDescriptionParams:
-    goalValue: 1
+    - value: "1"
+      needMap: false
+      mapOption: 0
+      fontAttribute: null
+    goalValue: 600
     enableTimeRange:
-      - startTime: "2020-11-05 12:00:00 (GMT+0900)"
-        endTime: "2020-11-19 23:59:59 (GMT+0900)"
-    refIDs:
+    - startTime: 2020-11-30 12:00:00 (GMT+0900)
+      endTime: 2020-12-06 23:59:59 (GMT+0900)
+    refIDs: []
     platforms:
-      - android
-      - ios
+    - android
+    - ios
 
 #無課金ユーザー　11/17~ 11/19 【いい17の日 チャージキャンペーン】期間中に¥120以上を購入すると「花火を見つけた」4個（1回まで）
   - ID: d16180d6-f08a-4c70-86b3-8f07920a1fa3
