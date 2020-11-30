@@ -30,6 +30,36 @@
 # | NON_IAP | 2 |
 
 missions:
+
+#全ユーザー　12/01~ 12/03 期間中に¥120以上を購入すると「推しです...♡」3個（1回まで）
+- ID: 067e7888-ed3e-437e-8a40-c1b1dd50c7f2
+  type: 8
+  lifeCycle: 1
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: "2012_jp_charge_01"
+    amount: 3
+    expireTimeSecs: 86400
+  requirePhoneBinding: false
+  i18nTitle: baggage_mission_IAP_reward_jp_daily_xmas_name #Taishoさんお願いします①
+  i18nTitleParams:
+  i18nContent:
+  i18nContentParams:
+  i18nDescription: baggage_mission_IAP_reward_jp_A_desc　#Taishoさんお願いします②
+  i18nDescriptionParams:
+  goalValue: 1
+  enableTimeRange:
+    - startTime: "2020-12-01 12:00:00 (GMT+0900)"
+      endTime: "2020-12-03 23:59:59 (GMT+0900)"
+  refIDs:
+  platforms:
+    - android
+    - ios
+
 #10分以上視聴でキャンペーンギフトゲット
 - ID: 17df2f72-5cce-4b27-a84a-de9ab4ed287d
   type: 9
