@@ -71,11 +71,11 @@ rtmp_providers:
   quality_support: 0
   weight: 0
 - name: WANSU
-  weight: 70
+  weight: 50
   region_weights:
-    TW: 40
+    TW: 20
     EG: 100
-    HK: 40
+    HK: 20
     JP: 2
   quality_support: 1
   users:
@@ -198,10 +198,10 @@ rtmp_providers:
   - 97851fd4-13be-47cd-a6f1-ddd8ceb36fd5 # 17LIVE
 - name: WANSU_LOW_LATENCY
   quality_support: 1
-  weight: 10
+  weight: 30
   region_weights:
-    TW: 50
-    HK: 50
+    TW: 70
+    HK: 70
     JP: 2
   users:
   - 87614b98-d226-4cd8-7ef3-a6dafd15ecf6 # 17q_test
