@@ -120,9 +120,9 @@ conf:
             commentLiveStream,liveStreams/commentLiveStream"
  - url_key: "aggr_gateway_url"
    default_url_key: "go_cells_url"
-   weight: 20
+   weight: 40
    white_list:
-     apiv1: "cells"
+     apiv1: "cells,sections"
  - url_key: "go_platform_url"
    weight: 20
    white_list:
