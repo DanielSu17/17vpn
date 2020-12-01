@@ -1,2 +1,2 @@
 # 留言外框設定
-動態
+This Config is deprecated
