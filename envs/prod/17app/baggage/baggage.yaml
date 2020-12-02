@@ -20,8 +20,8 @@ archiveOption:
     - 22
     - 23
   maxExecutionSecs: 1800
-  maxDeletionRows: 100000
-  maxSecondsBehindMaster: 30
+  maxDeletionRows: 50000
+  maxSecondsBehindMaster: 1
   bqDatasetName: "ArchivedData"
   bqTableName: "MySQL_Baggage_PROD"
   batchSize: 1000
