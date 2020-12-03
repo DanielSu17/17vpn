@@ -1,1 +1,20 @@
 # MENA label config
+# labelInfos defines all label related infos including type, label(i18n), iconURL
+# - type: 1(music), 2(politics), 3(others)
+# - featured: true / false (default)
+# - labelID: mapping for labels table id
+   
+labelInfos:
+  - id: "tutor" # 民辦教師
+    type: 3
+    label:
+      key: "streamer_label_tutor"
+    iconURL: "https://cdn.17app.co/a22a6090-3dc8-4743-90c7-d6ad12831795.png"
+    isHide: false
+    order: 200
+
+# labelWhiteList defines relation between label and user list
+labelWhiteList:
+
+  tutor: # 民辦教師
+    - "c3dfff9d-b6a5-4732-8ac1-40321b8b67b6"    # erictest2
