@@ -15,7 +15,7 @@ rtmp_providers:
 - name: QINIU
   quality_support: 0
   expire_after_hours: 6
-  weight: 100
+  weight: 0
   region_weights:
     US: 0
   users:
@@ -178,7 +178,7 @@ rtmp_providers:
   - 67b7e093-ce57-45f3-9775-2826d23b3781 # readper_test1
 - name: AWS
   quality_support: 0
-  weight: 0
+  weight: 100
   region_weights:
     TW: 0
     HK: 0
