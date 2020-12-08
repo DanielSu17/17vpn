@@ -13,38 +13,83 @@ fittingRoomRules:
 fittingRoomPartsOrder:
   1:
     - part: 0  # body
-      iconURL: "https://cdn.17app.co/3693ddb0-5e0c-4f27-8f90-4c70f81ae8a5.png"
+      iconURL: "https://cdn.17app.co/be1c4a36-5f3c-46a7-8c78-006771859727.png"
     - part: 2  # eyes
-      iconURL: "https://cdn.17app.co/406a53c7-4484-4b72-b4a0-47937953ab12.png"
+      iconURL: "https://cdn.17app.co/70651c87-d32e-4fda-a6a2-e8f4a521197c.png"
     - part: 10 # eyebrow
-      iconURL: "https://cdn.17app.co/8873d63d-1ed2-49b9-a306-b3afecf72eee.png"
+      iconURL: "https://cdn.17app.co/9b6b70e7-0e01-4401-aa18-969df98b031a.png"
     - part: 7  # nose
-      iconURL: "https://cdn.17app.co/3b403f89-7bb7-4606-a7b3-48f46f33e49d.png"
+      iconURL: "https://cdn.17app.co/4de133f6-1c74-4bf8-9b0c-9c582de84d42.png"
     - part: 6  # mouth
-      iconURL: "https://cdn.17app.co/a3612a25-5940-4873-8de6-e57bca105bff.png"
-    - part: 11 # facialHair
-      iconURL: "https://cdn.17app.co/1c568bcb-c2ae-44ae-8102-1d1eaf658bf3.png"
+      iconURL: "https://cdn.17app.co/5d708ebf-a809-424d-8318-e89ee1cbeff4.png"
     - part: 13 # ears
-      iconURL: "https://cdn.17app.co/4d4440ec-6e2c-4542-9234-c81bc158b00c.png"
+      iconURL: "https://cdn.17app.co/38010752-50a2-4da3-8142-0ef9e67b0ef0.png"
     - part: 4  # hair
-      iconURL: "https://cdn.17app.co/b6d49cf5-e3b1-49ef-9549-dbaad3dce0ff.png"
+      iconURL: "https://cdn.17app.co/e14efcf2-b35c-40e7-8e4f-084c62474b68.png"
+    - part: 11 # facialHair
+      iconURL: "https://cdn.17app.co/d87ff3fe-b819-4143-a14b-492139194983.png"
   2:
-    - part: 8 # shirt
-      iconURL: "https://cdn.17app.co/b383eb0c-eda5-4f3d-9a41-ea0aa691a932.png"
-    - part: 1 # bottom
-      iconURL: "https://cdn.17app.co/83c5bf2a-abd4-40a8-8a39-b9d81cbe090e.png"
-    - part: 9 # shoes
-      iconURL: "https://cdn.17app.co/89621a7f-7aae-4233-86cd-0522fd61d5f6.png"
-    - part: 5 # hat
-      iconURL: "https://cdn.17app.co/cd35a514-6e78-425f-bf80-fe62e3346ef1.png"
-    - part: 3 # glasses
-      iconURL: "https://cdn.17app.co/e4807f6e-e953-439a-b6aa-45dc502b711e.png"
+    - part: 8  # shirt
+      iconURL: "https://cdn.17app.co/1bf1e89f-0a2c-4ec6-a1b1-f6012f65d671.png"
+    - part: 1  # bottom
+      iconURL: "https://cdn.17app.co/23e55429-cabd-4f28-964f-95e4edb779b4.png"
+    - part: 12 # coat
+      iconURL: "https://cdn.17app.co/4e0e0f60-3e71-4606-aa10-fd1f30c9e7fd.png"
+    - part: 9  # shoes
+      iconURL: "https://cdn.17app.co/563af0af-b2b1-49b4-b1bf-f0b88df6ee0f.png"
+    - part: 5  # hat
+      iconURL: "https://cdn.17app.co/8b323799-83ac-4e06-8e55-487fe412cdfc.png"
+    - part: 3  # glasses
+      iconURL: "https://cdn.17app.co/361e3cb2-96cb-4e1a-9059-5d427eb029b1.png"
+
+backgrounds:
+  levelUpHintAnimationID: "avatar_levelup_hint"
+  levelUpAnimationID: "avatar_levelup"
+  grabBagBackgroundVideoURL: "https://cdn.17app.co/1d0b45ec-5126-459f-b1c9-70fe8871952d.mp4"
+  grabBagDrawVideo:
+    - rarity: 1
+      url: "https://cdn.17app.co/54d5ceef-4630-4cd5-a0b7-a65f83749572.mp4"
+    - rarity: 2
+      url: "https://cdn.17app.co/54d5ceef-4630-4cd5-a0b7-a65f83749572.mp4"
+    - rarity: 3
+      url: "https://cdn.17app.co/54d5ceef-4630-4cd5-a0b7-a65f83749572.mp4"
+    - rarity: 4
+      url: "https://cdn.17app.co/079acb24-332f-4f9e-bb2e-c745404cf8eb.mp4"
+    - rarity: 5
+      url: "https://cdn.17app.co/c2ae4534-e577-48a8-b96f-5e00a56bcf26.mp4"
+
+onboardingGrabBag:
+  id: "free"
+  bannerType: 1
+  bannerURL: "https://cdn.17app.co/dcc4bbc5-7690-4fac-81d8-a5ffa0e53677.png"
+  stickerURL: "https://cdn.17app.co/da8bfa88-2c25-42c5-bb1c-ce6f76b38cf7.png"
+  shouldCountdown: false
+  names:
+    zh_TW: "免費"
+    en_US: "free"
+  startTime: 123
+  endTime: 9999999999
+  plans:
+    - id: "free"
+      imageURL: "https://cdn.17app.co/eda63cf7-c0d0-477f-a77f-3b96ae44a049.png"
+      highlight: false
+      piecesCount: 5
+      price: 0
 
 grabBagPlanImages:
   planAImageURL: "https://cdn.17app.co/d4836f21-2ce1-426b-b796-90b34b530144.png"
   planBImageURL: "https://cdn.17app.co/a81b42ca-b9e4-46fb-9f2a-6680c9a44928.png"
   planCImageURL: "https://cdn.17app.co/4555d9f8-f22c-4a99-b29b-82ad1b5593fe.png"
-    
+
+weeklyEventContent:
+  - title: "avatar_weekly_event_event_info"
+    description:
+      - "avatar_weekly_event_descr1"
+      - "avatar_weekly_event_descr2"
+  - title: "avatar_weekly_event_rewards"
+    description:
+      - "avatar_weekly_event_rewards_descr"
+
 rarityInfo:
   - rarity: 0
     odds: 0
