@@ -25,14 +25,6 @@ sections:
   #   enable: true
   #   style: 2
   #   more: false
-  - id: NewestStreamer # D0 new streamer
-    name:
-      key: tab_hot_d0streamer
-    enable: true
-    dedup: true
-    minGrids: 1
-    style: 3
-    more: true
   - id: Suggestion # 猜你可能喜歡
     name:
       key: tab_hot_2019q4_follow_suggestion
@@ -40,6 +32,14 @@ sections:
     dedup: true
     style: 6
     minGrids: 1
+    more: true
+  - id: NewestStreamer # D0 new streamer
+    name:
+      key: tab_hot_d0streamer
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
     more: true
   - id: Latest # 新人(和『最新』同邏輯)
     name:
