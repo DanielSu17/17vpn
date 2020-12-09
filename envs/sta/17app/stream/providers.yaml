@@ -15,7 +15,7 @@ rtmp_providers:
 - name: QINIU
   quality_support: 0
   expire_after_hours: 6
-  weight: 0
+  weight: 100
   region_weights:
     US: 0
   users:
@@ -178,9 +178,9 @@ rtmp_providers:
   
 - name: AWS
   quality_support: 0
-  weight: 100
+  weight: 0
   region_weights:
-    TW: 100
+    TW: 0
     HK: 0
     US: 0
   users:
