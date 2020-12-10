@@ -13,15 +13,16 @@
 #           "LiveStream": "LiveStreamV2"
 # step 8: turn off shield
 tableMapping:
+
 readOnlyTables: []
 
 enableMultiClient: false
+
 streamTables:
-  - LiveStream
+  - LiveStreamV2
   - UserRestream
   - LiveRestream
   - CheckinViewer
-  - UserWatchHistory
   - Streamer
   - StreamTopics
 
@@ -38,6 +39,14 @@ userTables:
   - BaasLicense
   - BaasAccountBinding
   - SMSVerificationRecord
+  - Block
+  - UserFollowV2
+  - UserFollowV2B
+  - UserFollowRequestedV2
+  - UserFollowRequestedV2B
+  - UserWatchHistoryV2
+  - UserWatchHistoryV2B
+  - UserStyles
 
 pointTables:
   - LevelGiftUset
@@ -51,95 +60,6 @@ pointTables:
   - BettingRelations
   - BettingOptionInfos
   - WeekupReport
-
-defaultTables:
-  - Block
-  - Follow
-  - UserFollow
-  - UserFollowRequested
-  - BlabRequest
-  - BlabParticipant
-  - Post
-  - PostComment
-  - PostLike
-  - PostView
-  - PostShareCount
-  - PostWithinOneMonth
-  - UserReceivedLike
-  - CommoditySell
-  - CommodityBuy
-  - MediaRepository
-  - Notif
-  - UserSocialActivity
-  - WerewolvesUserStatistics
-  - TriviaGames
-  - TriviaQuizzes
-  - TriviaRelations
-  - TriviaPersonInfo
-  - TriviaAnswers
-  - LVSnapshot
-  - QueueTasks
-  - QueueScheduler
-  - QueueSchedulerTask
-  - VOD
-  - Events
-  - CustomEvent
-  - OnceEvent
-  - Barrage
-  - ClipVoteInfo
-  - LogTaskQueueFailV2
-  - PmRelations
-  - Mission
-  - MissionIdentity
-  - Monster
-  - AnonymousLeaderboard
-  - CryptocurrencyLog
-  - CryptocurrencyTicker
-  - Hashtags
-  - RoyaltyHistory
-  - Royalty
-  - GoodsTransferLog
-  - ExchangeGoodsTransferFailLog
-  - DeletedSuggestionStreamer
-  - NoteRelations
-  - AssistantRelations
-  - HotCellSubtabs
-  - HotCellSubtabsOrder
-  - GloryRoadEventHistory
-  - VideoChatRel
-  - UserReadFeedTime
-  - UserAnimationV2
-  - CSEvent
-  - CSEventLeaderboard
-  - CSEventTag
-  - League
-  - LeagueInvitations
-  - LeagueMembers
-  - IAPBlockedDevice
-  - RecapCollectionRel
-  - VotingEvents
-  - VotingCharts
-  - VotingHistories
-  - FollowCronHistories
-  - LeagueMemberActionLogs
-  - LeagueActionLogs
-  - LeagueCustomEvents
-  - StreamerLoyalty
-  - Arcade
-  - ReferralProjectLogs
-  - VODComment
-  - LogPhoneBindingOperationsV2
-  - CSEvaluator
-  - CSAggregator
-  - UserLabelRel
-  - UserSuggestion
-  - LaborRewardLogs
-  - CSDataContainer
-  - DailyPokers
-  - DailyPokerRewardLogs
-  - WatchFollowingHistory
-  - IncentiveBonus
-  - IncentiveEvent
   - PointReceiverLogs
   - PointReceiverLogsHistory
   - PointReceiverLogsCache
@@ -148,25 +68,167 @@ defaultTables:
   - PointUsageLogsHistory
   - PointGainLogs
   - PointGainLogsHistory
-  - PK
-  - PKOnlineCandidate
-  - UserReadButlerMessageTime
-  - UserUnreadBadgeInfoWithinTwoMonths
-  - VisionRecord
-  - SectionList
-  - SuggestionSkipsRel
-  - Program
-  - Poll
+
+defaultTables:
+  - AccompanyUserInfo
+  - AnonymousLeaderboard
+  - Arcade
+  - AssistantRelations
+  - AvatarGrabBagLogs
+  - AvatarGrabBagPlans
+  - AvatarGrabBags
+  - Barrage
+  - BlabRequest
+  - CSAggregator
+  - CSDataContainer
+  - CSEvaluator
+  - CSEvent
+  - CSEventLeaderboard
+  - CSEventTag
+  - CSGiftBucket
+  - ChatThread
+  - ChoiceUser
   - Clan
-  - ClanMember
   - ClanInvited
   - ClanKicked
-  - Gaming
-  - SystemNotif
-  - SystemNotifV2
+  - ClanMember
   - ClanMemberInfo
-  - MediaMessage
-  - FBFriend
   - Clip
   - ClipComment
+  - ClipVoteInfo
+  - CommodityBuy
+  - CommoditySell
+  - CryptocurrencyLog
+  - CryptocurrencyTicker
+  - CustomEvent
+  - DailyPokerRewardLogs
+  - DailyPokers
+  - DeletedSuggestionStreamer
+  - DeletedUser
+  - Events
+  - ExchangeGoodsTransferFailLog
+  - FBFriend
+  - FacebookFriend
+  - FacebookIDToUser
+  - Follow
+  - FollowCronHistories
+  - Gaming
+  - GiftKeyword
+  - GloryRoadEventHistory
+  - GoodsTransferLog
+  - Hashtags
+  - HotCellSubtabs
+  - HotCellSubtabsOrder
+  - I18nTempStorage
+  - IAPBlockedDevice
+  - IPRequestCountRecord
+  - IncentiveBonus
+  - IncentiveEvent
+  - InstagramFriend
+  - LVSnapshot
+  - LaborRewardLogs
+  - League
+  - LeagueActionLogs
+  - LeagueCustomEvents
+  - LeagueInvitationsV2
+  - LeagueInvitationsV2B
+  - LeagueMemberActionLogs
+  - LeagueMembersV2
+  - LeagueMembersV2B
+  - LiveStream
+  - LogPhoneBindingOperationsV2
+  - LogTaskQueueFail
+  - LogTaskQueueFailV2
+  - MediaMessage
+  - MediaRepository
+  - Message
+  - Mission
+  - MissionIdentity
+  - MongoACL
+  - Monster
+  - NoteRelations
+  - Notif
+  - OnceEvent
+  - PK
+  - PKOnlineCandidate
+  - Payment
+  - PhoneNumberToUser
+  - PmRelations
+  - Poll
+  - Post
+  - PostComment
+  - PostHashTag
+  - PostHashtag
+  - PostLike
+  - PostShareCount
+  - PostUserTag
+  - PostView
+  - PostWithinOneMonth
+  - Program
+  - QQFriend
+  - QQIDToUser
+  - QueueScheduler
+  - QueueSchedulerTask
+  - QueueTasks
+  - RecapCollectionRelV2
+  - RecapCollectionRelV2B
+  - ReferralProjectLogsV2
+  - ReferralProjectLogsV2B
   - ReminderSchedule
+  - Royalty
+  - RoyaltyHistory
+  - SearchHashTag
+  - SectionList
+  - StreamerLoyalty
+  - StyleSettings
+  - SubCarbon
+  - Subscription
+  - SubscriptionGrowth
+  - SubscriptionPurchaseLog
+  - SuggestionSkipsRelV2
+  - SuggestionSkipsRelV2B
+  - SystemNotif
+  - SystemNotifV2
+  - TriviaAnswers
+  - TriviaGames
+  - TriviaPersonInfo
+  - TriviaQuizzes
+  - TriviaRelations
+  - TwitterFriend
+  - UserAnimation
+  - UserAnimationV2
+  - UserFCMToken
+  - UserFollow
+  - UserFollowRequested
+  - UserIDToUserIP
+  - UserLabelRelV2
+  - UserLiveStream
+  - UserPost
+  - UserReadButlerMessageTime
+  - UserReadFeedTime
+  - UserReceivedLike
+  - UserRevenue
+  - UserSocialActivity
+  - UserSuggestion
+  - UserUnreadBadgeInfoWithinTwoMonths
+  - VOD
+  - VODCommentV2
+  - VerifiedUser
+  - VideoChatRelV2
+  - VideoChatRelV2B
+  - VisionRecord
+  - VotingCharts
+  - VotingEvents
+  - VotingHistories
+  - WatchFollowingHistoryV2
+  - WechatFriend
+  - WechatIDToUser
+  - WeiboFriend
+  - WeiboIDToUser
+  - WeiboToUser
+  - WerewolvesUserStatistics
+  - medal_total
+  - people
+  - ref_total
+  - settings
+  - userfollow_by_month
