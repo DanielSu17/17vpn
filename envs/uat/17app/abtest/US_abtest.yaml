@@ -1,0 +1,530 @@
+- testName: entryTitleTypeA # PROD-3617
+  enableABtest: false
+  expiredSecond: 604800
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: entryTitleTypeB # PROD-3617
+  enableABtest: false
+  expiredSecond: 604800
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "a"
+    "9": "a"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: autoEnterLive
+  enableABtest: false
+  expiredSecond: 604800 # 7 day
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: recommendFollow
+  enableABtest: true
+  expiredSecond: 604800 # 7 day
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: newbieFocus # 消除雜訊
+  enableABtest: false
+  expiredSecond: 86400 # 1 day
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: newbieGuidance # 新手引導(新手遮罩)
+  enableABtest: true
+  expiredSecond: 259200 # 3 days
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: completeRegistration
+  enableABtest: false
+  expiredSecond: 10 # 10 second
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: newbieIAP # 新手首購優惠
+  enableABtest: false
+  expiredSecond: 604800 # 7 days
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: streamRoomEntryTitle # 直播間入口標題
+  enableABtest: false
+  lastCharGroup:
+    "0": "a"
+    "1": "b"
+    "2": "a"
+    "3": "b"
+    "4": "a"
+    "5": "b"
+    "6": "a"
+    "7": "b"
+    "8": "a"
+    "9": "b"
+    "a": "a"
+    "b": "b"
+    "c": "a"
+    "d": "b"
+    "e": "a"
+    "f": "b"
+- testName: newbiePurchaseEvent # 新手首購活動
+  enableABtest: false
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: newbieOnboard # 新手流程優化 (onboarding_flow_optimization)
+  enableABtest: true
+  expiredSecond: 604800 # 7 day
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+# client只有當a才顯示 空的會是不顯示
+# 控制會不會出現首頁熱一蓋板, 跟Feature Guide 控制四頁介紹已經無關
+- testName: newbieGuide
+  enableABtest: false
+  expiredSecond: 60 # 1 mins, it should disappear soon.
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
+# Phase 7: 台灣強化新用戶引導
+- testName: newbiePhase7
+  enableABtest: false
+  expiredSecond: 600 # 10 mins, it should disappear soon.
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+# 新手流程優化P10: 新手任務彈窗
+- testName: newbieP10MissionHint
+  enableABtest: false
+  expiredSecond: 604800 # 7 day
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
+# 新手流程優化P10: 新手完成特定數量後PN檢查
+- testName: newbieP10CheckPNWhenReceivedReward
+  enableABtest: false
+  expiredSecond: 604800 # 7 day
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
+# 新手流程優化P10: group b時取消新手直播間內蓋板教學
+- testName: newbieP10DisableEnterLivePrompt
+  enableABtest: false
+  expiredSecond: 604800 # 7 day
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+# group b is enabled to show caption
+- testName: streamCaption
+  enableABtest: false
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+# 開播前可設定直播間入口圖片: group b 可設定圖片
+- testName: streamThumbnail
+  enableABtest: false
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+# 登入獎勵: 0~4 group a
+- testName: signInRewardAB
+  enableABtest: false
+  startTime: "2020-07-01T00:00:00+08:00"
+  endTime: "2020-07-13T23:59:59+08:00"
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+# 登入獎勵: 5~9 group b, a~f group c
+- testName: signInRewardBC
+  enableABtest: false
+  startTime: "2020-07-01T00:00:00+08:00"
+  endTime: "2020-07-13T23:59:59+08:00"
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "a"
+    "9": "a"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+# 直播間導購abtest: group b 有直播間導購彈窗、禮包貼紙
+- testName: iapPromotion
+  enableABtest: false
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: newPushNotificationLayout
+  enableABtest: false
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+# 付費點心
+- testName: laborRewardWithPremium
+  enableABtest: false
+  startTime: "2020-08-13T11:00:00+08:00"
+  endTime: "2020-08-28T11:00:00+08:00"
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: removeDefaultComment
+  enableABtest: true
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+# 留言關鍵字建議禮物
+- testName: contextualGifting
+  enableABtest: false
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+# ml-topicModeling
+- testName: topicModeling
+  enableABtest: false
+  startTime: "2020-09-28T12:00:00+08:00"
+  endTime: "2020-10-13T11:59:59+08:00"
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"

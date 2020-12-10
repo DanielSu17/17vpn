@@ -1,0 +1,38 @@
+# allowed_origins is a list of hostnames whose requests will not be rate limited
+# by system throttling or any rate limits.
+allowed_origins:
+  - dev.api.17app.co # admin in dev
+  - admin.17.media
+  - payment.17.media
+  - webtool.17.media
+  - skyeye.17app.co
+  - skyeyewall.17app.co
+  - event-server.17app.co
+  - event-server-sta.17app.co
+  - config.remote.check # from circleci remote check
+
+# it is used for system throttling
+#   throttling_measurement_period:
+#     (unit in second), the measure period for system throttling
+#   throttling_start_point:
+#     the number of number of unique access_token that will trigger system
+#     throttling
+#   throttling_end_point:
+#     if the system is under throttling mode, and the number of number of
+#     unique access_token is lower than the @throttling_end_point for some
+#     time, the system will switch back to normal state
+#   throttling_rotation_num:
+#     the number of rotation for the bloom filtering library. Higher value
+#     will provide better accuracy for length of the measurement period.
+#     Suggested value: 10 - 100
+#   throttling_block_request:
+#     if this value = 1, then the revprox will block the request of new
+#     access_token.
+#   throttling_max_sync:
+#     the max number of retry on redis sync data, should be >= 1
+throttling_start_point: 5
+throttling_end_point: 3
+throttling_measurement_period: 300
+throttling_rotation_num: 30
+throttling_block_enable: false
+throttling_max_sync: 5

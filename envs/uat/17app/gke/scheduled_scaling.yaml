@@ -1,0 +1,13 @@
+# Example
+- startTime: "2018-12-05 18:00:00 (GMT+0800)"
+  endTime: "2018-12-05 19:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: example-target-hpa
+    minReplicas: 20
+
+# Followings are actual schedules
+- startTime: "2019-12-23 09:00:00 (GMT+0800)"
+  endTime: "2019-12-23 20:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8ssta-worker-main
+    minReplicas: 8

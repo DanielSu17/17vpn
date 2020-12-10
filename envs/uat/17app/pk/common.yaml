@@ -1,0 +1,107 @@
+enable: true
+senderMatchingSecond: 60 # 主動方隨機配對中等待的秒數, pk.match lock time
+receiverMatchingSecond: 30 # 被動方回應的時間
+gameDurationSecond: 120 # ＰＫ遊戲時間
+countdownSecond: 15 # 倒數時間閃爍icon
+rewardSecond: 15 # 遊戲結算完到最後關閉的時間
+readyWaitingSecond: 30 # 等待啟動合流sdk時間
+timeoutSecond: 30 # 主播多久沒打api判斷斷線用的時間, changing [timeoutSecond] to a larger value may cause end-to-end tests to fail (please refer to api/app/api/e2e/pk_test.go)
+consecutiveRejectionPeriod: 30 #(累計時間) 這表示 "1" 小時內有超過3次，就會有3分鐘不會被配對到，超過一小時沒有拒絕 就會重0開始算
+consecutiveRejectionCount: 3 # 拒絕 "3" 次後，暫時不接受邀請
+consecutiveRejectionNoDisturbSecond: 180 #(不能被配對的時間) 連續拒絕3次後，"180"秒內不會參與任何配對
+rejectionUnPairSeconds: 60 # 拒絕後幾秒內不會被同一個人配對到
+minAndroidVersion: "2.10.1"
+minIOSVersion: "3.97.0"
+
+rules:
+  - type: 1
+    token: { key: pk_rule_title1 }
+  - type: 2
+    token: { key: pk_rule_content1-1 }
+  - type: 2
+    token: { key: pk_rule_content1-2 }
+  - type: 2
+    token: { key: pk_rule_content1-3 }
+  - type: 1
+    token: { key: pk_rule_title2 }
+  - type: 2
+    token: { key: pk_rule_content2-1 }
+  - type: 2
+    token: { key: pk_rule_content2-2 }
+  - type: 2
+    token: { key: pk_rule_content2-3 }
+  - type: 1
+    token: { key: pk_rule_title3 }
+  - type: 2
+    token: { key: pk_rule_content3-1 }
+  - type: 2
+    token: { key: pk_rule_content3-2 }
+  - type: 2
+    token: { key: pk_rule_content3-3 }
+  - type: 2
+    token: { key: pk_rule_content3-4 }
+  - type: 3
+    token: { key: pk_rule_content4 }
+
+winFilterAnimationID: filter_win
+loseFilterAnimationID: filter_lose
+animationPrefix: pk
+
+animationLoader:
+  - animationID: pk_opening
+    url: https://cdn.17app.co/df0be831-4a3d-411b-976f-fc830d8aa99b.zip
+    MD5: 0187a7175c29742e179ba3a03263818a
+    webpUrl: https://cdn.17app.co/e35872c0-9840-4ad1-9380-ed4dac1b47b3-q60-s1.webp
+    webpMD5: 1f6ab1b2c8b57f66fc9bc44a024f4ad3
+  - animationID: pk_loading
+    url: https://cdn.17app.co/e7a69095-0d03-4ec1-a533-292a05acd57e.zip
+    MD5: c7107f1079f7ff7066b4c87ae20760ce
+    webpUrl: https://cdn.17app.co/df7e1b87-c6cd-4dda-a394-1445167bf0f4-q90-s1.webp
+    webpMD5: c2c41ddead84d00f71862ecc3d3cbea5
+  - animationID: pk_ending
+    url: https://cdn.17app.co/4815ac64-3eed-4578-a45d-b20324da8562.zip
+    MD5: 2873bd3c21375700b2b1ee11e5a6406a
+    webpUrl: https://cdn.17app.co/626b7891-2106-4dd4-aa14-62c9d8942983-q60-s1.webp
+    webpMD5: faa15f24f608f8d2e52966a5c191c2e8
+  - animationID: pk_ending_score
+    url: https://cdn.17app.co/7e3019e8-ca10-4c08-8702-b9b2f5c68ea6.zip
+    MD5: 40e8a30a5f2fbd4f930aae8f5caf9ee6
+    webpUrl: https://cdn.17app.co/83291d71-f3e0-4629-92ec-8acc7510f515-q90-s1.webp
+    webpMD5: 0162bb8bf5d089319482cfe416f29965
+  - animationID: pk_pkbar
+    url: https://cdn.17app.co/79c2ae5a-c032-406f-8da4-81b6b78e1d80.zip
+    MD5: 61c941407cca58194cfed95ed436d348
+    webpUrl: https://cdn.17app.co/b562dc65-755a-4694-bdce-d4bee33b39d4-q90-s1.webp
+    webpMD5: 3815c3a9c693de23fe23e35e99dc8b71
+  - animationID: pk_win
+    url: https://cdn.17app.co/91037455-3a72-4c42-93ca-2da402014795.zip
+    MD5: 07051f623df0fd66cf6a2a0ce803a142
+    webpUrl: https://cdn.17app.co/5ddb23be-590e-4652-879f-021ea196a873-q90-s1.webp
+    webpMD5: cf1d83831cae41a88d287bd4e51c06fa
+  - animationID: pk_deuce
+    url: https://cdn.17app.co/c77f4808-ee69-4a8c-85cb-8896d8b73ac2.zip
+    MD5: 37068c7dab472740c692ef9a3f5fe228
+    webpUrl: https://cdn.17app.co/bc83fc7e-8a68-4359-81d5-4cd0bbf46153-q90-s1.webp
+    webpMD5: 3ce775539f7840b7d48b2e96f76e147b
+  - animationID: filter_win
+    androidType: 3
+    iOSType: 3
+    url: https://cdn.17app.co/4813cff2-af9a-43b0-8dc2-7be148e444b1.zip
+    MD5: 570a53032299bc313927f40cd8baece8
+    extraAnimationLoader:
+      supportedVersion:
+        ios: "3.117.0"
+        android: "2.31.0"
+      url: https://cdn.17app.co/b74e0cec-cc85-4ae4-9955-3a36151bb136.zip
+      MD5: 5cd791e8c948c04636c7746903b860db
+  - animationID: filter_lose
+    androidType: 3
+    iOSType: 3
+    url: https://cdn.17app.co/81255842-adc9-40ef-8540-a848af2b3572.zip
+    MD5: 8cb6492b34ab09cdc946c147dec79298
+    extraAnimationLoader:
+      supportedVersion:
+        ios: "3.117.0"
+        android: "2.31.0"
+      url: https://cdn.17app.co/a426de61-4c6d-4bb7-9623-05bd2817597f.zip
+      MD5: ddbe28f1b1078da4e43af86db9624ee1

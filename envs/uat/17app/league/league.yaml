@@ -1,0 +1,81 @@
+# icon / background config example
+# leagueInfo:
+#  - iconURL: "..."
+#    backgroundColor: "..."
+#    leagueID:
+#      - "194603a0-e479-476f-ab92-7ded48dd91a9"
+#      - "def..."
+#    startTime: "2019-04-06 18:00:00 (GMT+0800)"
+#    endTime: "2019-04-06 18:00:00 (GMT+0800)"
+#  - iconURL: "..."
+#    backgroundColor: "..."
+#    leagueID:
+#      - "abc..."
+#      - "def..."
+#    startTime: "2019-04-16 18:00:00 (GMT+0800)"
+#    endTime: "2019-04-26 18:00:00 (GMT+0800)"
+leagueInfo:
+  - iconURL: "5afcb4a3-a73d-441a-8438-e15c1f36358e.png"
+    backgroundColor: "#5599FF"
+    leagueID:
+      - "194603a0-e479-476f-ab92-7ded48dd91a9" #vava.pp01
+    startTime: "2020-03-18 18:00:00 (GMT+0800)"
+    endTime: "2020-03-30 17:00:00 (GMT+0800)"
+  - iconURL: "75190e16-9a29-400d-bd95-4810673495b7.png"
+    backgroundColor: "#FF8888"
+    leagueID:
+      - "d9b4850a-6d8a-4566-bc09-344b39dfe0a9" #qacontractor1
+    startTime: "2020-03-23 12:20:00 (GMT+0800)"
+    endTime: "2020-03-30 17:00:00 (GMT+0800)"
+  - iconURL: "5afcb4a3-a73d-441a-8438-e15c1f36358e.png"
+    backgroundColor: "#5599FF"
+    leagueID:
+      - "b2523d4e-f221-4eb8-8748-9d6a68a3c935" #amyshen171
+    startTime: "2020-03-26 18:00:00 (GMT+0800)"
+    endTime: "2020-03-30 17:00:00 (GMT+0800)"
+
+
+minLevelToCreate: 1
+minLevelToJoin: 1
+maxMemberCount: 25
+hoursToRejoin: 168
+extraAchievement: 3000
+minNameLength: 1
+maxNameLength: 15
+maxDescLength: 150
+dailyLiveMarqueeTimes: 5
+numMemberTriggerLiveMarquee: 12
+liveMarqueeTitle: league_mainpage_marquee_switch
+liveMarqueeRule: league_mainpage_marquee_info
+leaguePerformance:
+  - topic: monthlyLive
+    titleKey: league_performance_live
+    scoreKey: league_performance_live_number
+    pictureURL: https://assets-17app.akamaized.net/57637a4a-d41a-4d60-a4a4-51444c23ffd6.png
+  - topic: monthlyView
+    titleKey: league_performance_watch
+    scoreKey: league_performance_watch_number
+    pictureURL: https://assets-17app.akamaized.net/29239906-0e51-4d65-be9d-aab4ae92a21f.png
+  - topic: monthlyPointGet
+    titleKey: league_performance_points
+    scoreKey: league_performance_points_number
+    pictureURL: https://assets-17app.akamaized.net/0623c91e-3aa4-47ae-ab95-7857f408d759.png
+supportedVersion:
+  android: "2.3.93"
+  ios: "3.62.0"
+leagueRuleI18nTitle:
+  key: league_rule_title
+leagueRulesI18n: # 如果要改翻譯, 要換一個i18n key, 不可以直接改key的內容, 除非參數一樣
+  - key: league_rule_rule7 # 聯盟為平台上主播與主播、主播與用戶組成的隊伍。團結大家的力量一起獲得更多的粉絲、更高的成就，為了聯盟榮譽而努力！
+  - key: league_rule_rule8 # 聯盟上限25位成員（包括盟主）。目前一個人只能加入一個聯盟，聯盟成立、加入後，還無法解散或退出。
+    params:
+      - value: 25
+  - key: league_rule_rule9 # 盟主：60級以上可以建立聯盟、管理成員
+    params:
+      - value: 60
+  - key: league_rule_rule10 # 盟員：60級以上或簽約主播能夠受邀加入聯盟
+    params:
+      - value: 60
+  - key: league_rule_rule11 # 加入聯盟之後可享尊榮特權：...
+  - key: league_rule_rule5 # 日本用戶不可建立或加入聯盟
+minMembersToCreateCustomEvent: 1

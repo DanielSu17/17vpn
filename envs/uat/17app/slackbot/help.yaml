@@ -1,0 +1,1212 @@
+#Slack !help commandHelp
+##Format:
+#=main command:=
+#=main command title:=
+#==sub command:==
+#===sub command title:===
+#===sub command description:===
+commandHelp:
+  #===!admin管理者權限===
+  admin:
+    title: "管理者權限"
+    commandsHelp:
+      sysInfo:
+        title: "`[slackbot host info]`"
+        description: |
+          >
+      permList:
+        title: "`[列出所有權限(botperm)清單]`"
+        description: |
+          >
+      grantGroup:
+        title: "`[給予某個用戶(by mail)對應的權限組合]`"
+        description: |
+          >
+      grantGroupByOpenID:
+        title: "`[給予某個用戶(by openID)對應的權限組合]`"
+        description: |
+          >
+      removeUserGroup:
+        title: "`[移除某個用戶(by mail)對應的權限組合]`"
+        description: |
+          >
+      grant:
+        title: "`[給予某個用戶(by mail)對應的單一權限]`"
+        description: |
+          >
+      remove:
+        title: "`[移除某個用戶(by mail)對應的單一權限]`"
+        description: |
+          >
+      create:
+        title: "`[建立admin web帳戶]`"
+        description: |
+          >
+      createForOpenID:
+        title: "`[將此openID在web admin建立對應的email帳戶]`"
+        description: |
+          >
+      getUserPerms:
+        title: "`[列出此用戶所屬的所有單一權限]`"
+        description: |
+          >
+      groupList:
+        title: "`[列出某個user所有權限的清單]`"
+        description: |
+          >
+      groupDetail:
+        title: "`[列出某個權限組合(group)包含的權限清單]`"
+        description: |
+          >
+      addGroupPerm:
+        title: "`[新增某個權限到某個權限組合(group)]`"
+        description: |
+          >
+      delGroupPerm:
+        title: "`[移除某個權限到某個權限組合(group)]`"
+        description: |
+          >
+      addGroup:
+        title: "`[建立一個新的權限組合(group)]`"
+        description: |
+          >
+      delGroup:
+        title: "`[移除指定的權限組合(group)]`"
+        description: |
+          >
+      getUserGroup:
+        title: "`[列出此用戶所屬的所有權限組合(group)]`"
+        description: |
+          >
+      getPermByCommand:
+        title: "`[查詢某個指令對應的botperm]`"
+        description: |
+          >
+      getCommandsByPerm:
+        title: "`[查詢某個botperm對應的所有指令]`"
+        description: |
+          >
+      addSkyeyeWeb:
+        title: "`[新增skyeye web權限(登入需使用openID)]`"
+        description: |
+          >
+      delSkyeyeWeb:
+        title: "`[移除skyeye web權限]`"
+        description: |
+          >
+  #===!army戰隊===
+  army:
+    title: "戰隊"
+    commandsHelp:
+      update-cache:
+        title: "`[同步戰隊資訊]`"
+        description: |
+          >
+      query-order:
+        title: "`[查詢戰隊訂單]`"
+        description: |
+          >
+      extend-order:
+        title: "`[延長戰隊訂單]`"
+        description: |
+          >
+      subscribe:
+        title: "`[手動訂閱戰隊]`"
+        description: |
+          >
+      get-history:
+        title: "`[查詢某個用戶的最新一筆戰隊訂閱紀錄]`"
+        description: |
+          >
+  #===!baggage背包禮物===
+  baggage:
+    title: "背包禮物"
+    commandsHelp:
+      send-items:
+        title: "`[送特定用戶背包禮物]`"
+        description: |
+          >
+  #===!barrage彈幕===
+  barrage:
+    title: "彈幕"
+    commandsHelp:
+      get:
+        title: "`[查詢用戶身上的彈幕數量]`"
+        description: |
+          >
+      incr-army:
+        title: "`[修改購買戰隊後取得的彈幕數量]`"
+        description: |
+          >
+  #===!bbfu富寶寶===
+  bbfu:
+    title: "富寶寶"
+    commandsHelp:
+      check-perm:
+        title: "`[確認用戶是否有富寶寶權限]`"
+        description: |
+          >
+      enable:
+        title: "`[開啟特定用戶富寶寶權限]`"
+        description: |
+          >
+      disable:
+        title: "`[關閉特定用戶富寶寶權限]`"
+        description: |
+          >
+      ls-companypay:
+        title: "`[列出公司戶主播清單]`"
+        description: |
+          >
+      add-companypay:
+        title: "`[新增公司戶主播]`"
+        description: |
+          >
+      rm-companypay:
+        title: "`[移除公司戶主播]`"
+        description: |
+          >
+  #===!bd BD系統相關==
+  bd:
+    title: "BD系統相關"
+    commandsHelp:
+      updateStreamer:
+        title: "`[更新BD系統主播資訊]`"
+        description: |
+          >
+      updateContract:
+        title: "`[更新BD系統合約資訊]`"
+        description: |
+          >
+      updateContractTerm:
+        title: "`[將指定合約條件替換成指定的template條件]`"
+        description: |
+          >
+      changeAgencyAccount:
+        title: "`[更新經紀公司登入帳號]`"
+        description: |
+          >
+      updateStreamerLabel:
+        title: "`[批次更新主播label]`"
+        description: |
+          >
+      updateContractLabel:
+        title: "`[批次更新合約label]`"
+        description: |
+          >
+      updatePayoutAccount:
+        title: "`[批次更新Payout account]`"
+        description: |
+          > 欄位內容:
+          > <OwnerType>
+          > STREAMER
+          > AGENCY
+          > <AccountType>
+          > LOCAL
+          > FOREIGN
+          > COMPANY
+          > PAYPAL
+          > <Field & Content>
+          > - PayeeType:
+          > OTHERS
+          > USER_LOCAL
+          > LEGAL
+          > USER_FOREIGN
+          > -HealthInsuranceType:
+          > NA
+          > WITH_HEALTH_INSURANCE
+          > WITHOUT_HEALTH_INSURANCE
+          > UNKNOWN
+          > -FeeOwnerType:
+          > UNKNOWN_PAYOUT_FEE_OWNER
+          > PAYOUT_FEE_OWNER_17
+          > PAYOUT_FEE_OWNER_USER
+      contractInfo:
+        title: "`[查詢合約資訊]`"
+        description: |
+          >
+      queryRTPList:
+        title: "`[查詢用戶是否在分潤禁止轉點的名單內]`"
+        description: |
+          >
+      addRTPList:
+        title: "`[將用戶加入分潤禁止轉點的名單內]`"
+        description: |
+          >
+      removeRTPList:
+        title: "`[將用戶移出分潤禁止轉點的名單]`"
+        description: |
+          >
+  #===!butler小幫手===
+  butler:
+    title: "小幫手"
+    commandsHelp:
+      send-message:
+        title: "`[發送小幫手給特定用戶]`"
+        description: |
+          >
+      send-regional-message:
+        title: "`[發送小幫手給所有該地區所有用戶]`"
+        description: |
+          >
+      send-regional-contract-message:
+        title: "`[發送小幫手給所有該地區所有簽約主播]`"
+        description: |
+          >
+  #===!clan幫派相關===
+  clan:
+    title: "幫派"
+    commandsHelp:
+      history:
+        title: "`[查詢幫派聊天記錄]`"
+        description: |
+          >
+  #===!clip短影片===
+  clip:
+    title: "短影片"
+    commandsHelp:
+      post:
+        title: "`[發送短影片內容到slack channel #skyeye-clip]`"
+        description: |
+          >
+      accept:
+        title: "`[等同按鈕的accept功能，接受此短影片內容]`"
+        description: |
+          >
+      delete:
+        title: "`[等同按鈕的delete功能，刪除此短影片內容]`"
+        description: |
+          >
+      undelete:
+        title: "`[復原被刪除的短影片]`"
+        description: |
+          >
+  #===!commentFrame===
+  commentFrame:
+    title: "留言外框"
+    commandsHelp:
+      create:
+        title: "`[Create a new frame style]`"
+        description: |
+          >
+      update:
+        title: "`[Update a frame style]`"
+        description: |
+          >
+      delete:
+        title: "`[Delete a frame]`"
+        description: |
+          >
+      list:
+        title: "`[Inquire active frames]`"
+        description: |
+          >
+      get:
+        title: "`[Get a frame detail by frameID]`"
+        description: |
+          >
+      sendUsers:
+        title: "`[Send a frame to user(s)]`"
+        description: |
+          >
+      removeUsers:
+        title: "`[Remove a frame from users]`"
+        description: |
+          >
+      userOwned:
+        title: "`[List the frames that a user owned]`"
+        description: |
+          >
+  #===!contract合約資訊===
+  contract:
+    title: "合約資訊"
+    commandsHelp:
+      get-count:
+        title: "`[可得知每個地區該月份仍有效之合約數量]`"
+        description: |
+          >
+  #===!coupon兌換券===
+  coupon:
+    title: "兌換券"
+    commandsHelp:
+      get:
+        title: "`[確認coupon資訊與使用狀況]`"
+        description: |
+          >
+      create-campaign:
+        title: "`[建立coupon campaign ID(整批coupon的unique ID)]`"
+        description: |
+          >
+      create-coupons:
+        title: "`[建立單純點數的coupon序號]`"
+        description: |
+          >
+      create-new-campaign:
+        title: "`[建立新型態的coupon]`"
+        description: |
+          >
+      patch-campaign:
+        title: "`[修改coupon設定]`"
+        description: |
+          >
+      create-new-unique-coupons:
+        title: "`[建立用完即失效的coupon]`"
+        description: |
+          >
+      create-new-shared-coupons:
+        title: "`[建立一組固定序號的coupon，一人只能換一次]`"
+        description: |
+          >
+  #===!cache清除cache===
+  cache:
+    title: "清除cache"
+    commandsHelp:
+      delete:
+        title: "`[清除redis cache(engineer only)]`"
+        description: |
+          >
+      delete-persistent:
+        title: "`[測試環境專用，清除 persistant redis (engineer only)]`"
+        description: |
+          >
+  #===!dirtyword不雅字===
+  dirtyword:
+    title: "不雅字"
+    commandsHelp:
+      check:
+        title: "`[查詢某一字串是否為該地區的dirtyword]`"
+        description: |
+          >
+  #===!event活動相關===
+  event:
+    title: "活動相關"
+    commandsHelp:
+      received-points:
+        title: "`[查詢活動表現]`"
+        description: |
+          > 1. 指定多個區域請使用逗號隔開，例如：TW,JP
+          > 2. 尚未支援MENA
+          > 3. `endTime` 至少要跟現在時間間隔30分鐘
+          > 4. 不支援 `24:00` 或 `25:00` 這類非正式時間表示
+  #===!follow追蹤人數===
+  follow:
+    title: "追蹤人數"
+    commandsHelp:
+      delete-cache:
+        title: "`[清除follower Redis cache]`"
+        description: |
+          >
+      refresh-count:
+        title: "`[更新追蹤人數]`"
+        description: |
+          >
+      clear-accept-request:
+        title: "`[清除追蹤請求]`"
+        description: |
+          >
+      list-follow-requests:
+        title: "`[列出追蹤請求]`"
+        description: |
+          >
+      update-cache:
+        title: "`[更新follower paging cache]`"
+        description: |
+          >
+  #===!gcp===
+  gcp:
+    title: "dev機相關"
+    commandsHelp:
+      create:
+        title: "`[新增dev機]`"
+        description: |
+          >
+      delete:
+        title: "`[刪除dev機]`"
+        description: |
+          >
+      list:
+        title: "`[列出dev機清單]`"
+        description: |
+          >
+      get:
+        title: "`[查看指定的dev機資訊]`"
+        description: |
+          >
+  #===!gift禮物設定===
+  gift:
+    title: "禮物設定"
+    commandsHelp:
+      help:
+        title: 臉部/手勢濾鏡禮設定
+        description: |
+          >
+      swap-sequence:
+        title: 交換兩個禮物在禮物盒的順序
+        description: |
+          >
+      get-texture:
+        title: 拿臉部/手勢濾鏡禮列表
+        description: |
+          >
+      get-texture-detail:
+        title: 查詢臉部/手勢濾鏡禮詳細資訊
+        description: |
+          >
+      get-tab:
+        title: 查詢禮物有被強制設定在哪個tab出現
+        description: |
+          >
+      add-tab:
+        title: "設定禮物強制出現在哪個tab(特殊tab不支援 ex: 好運,遊戲 等等)"
+        description: |
+          > 1. 假設 giftxx 已經設定出現在 texture
+          > 2. 這時候 add-tab giftxx game
+          > 3. giftxx 就會 texture 和 game 都會出現
+      remove-tab:
+        title: 把禮物從某個tab移除顯示
+        description: |
+          >
+  #===!gloryroad榮耀之路===
+  gloryroad:
+    title: "榮耀之路"
+    commandsHelp:
+      reward:
+        title: "`[幫特定主播增加榮耀之路經驗值(寫資料到mongo)]`"
+        description: |
+          >
+      fix:
+        title: "`[幫特定主播增加榮耀之路經驗值(不寫資料到mongo)]`"
+        description: |
+          >
+      sync:
+        title: "`[同步榮耀之路資料]`"
+        description: |
+          >
+      get:
+        title: "`[查詢主播榮耀之路等級]`"
+        description: |
+          >
+      birthday-sync:
+        title: "`[修正特定主播生日兩倍的榮耀指數]`"
+        description: |
+          >
+      birthday-sync-month:
+        title: "`[給定某個月份，修正該月生日主播的生日兩倍榮耀點數]`"
+        description: |
+          >
+      sync-global-board:
+        title: "`[同步TW/JP榜到Global榜]`"
+        description: |
+          >
+  #===!goods給禮物===
+  goods:
+    title: "給禮物"
+    commandsHelp:
+      add:
+        title: "`[給用戶特定禮物，一次最多10個用戶]`"
+        description: |
+          >
+      refresh:
+        title: "`[幫用戶更新背包禮物列表]`"
+        description: |
+          >
+  #===!i18n翻譯更新===
+  i18n:
+    title: "翻譯更新"
+    commandsHelp:
+      update:
+        title: "`[更新lokalise翻譯到server config]`"
+        description: |
+          >
+  #===!incentivebonus大量配送虛擬禮物===
+  incentivebonus:
+    title: "大量配送虛擬禮物"
+    commandsHelp:
+      create:
+        title: "`[建立禮物配送任務]`"
+        description: |
+          >
+      delete:
+        title: "`[取消禮物配送任務]`"
+        description: |
+          >
+      history:
+        title: "`[查詢指定用戶的禮物配送任務清單]`"
+        description: |
+          >
+      list:
+        title: "`[列出禮物配送任務清單]`"
+        description: |
+          >
+  #===!internalOrder===
+  internalOrder:
+    title: "Income系統相關"
+    commandsHelp:
+      renewProductCache:
+        title: "`[更新product cache]`"
+        description: |
+          >
+  #===!league聯盟===
+  league:
+    title: "聯盟"
+    commandsHelp:
+      remove-member:
+        title: "`[移除聯盟成員]`"
+        description: |
+          >
+      disband-league:
+        title: "`[解散聯盟]`"
+        description: |
+          >
+      get-league-info:
+        title: "`[取得聯盟資訊]`"
+        description: |
+          >
+  #===!leaderboard排行榜更新===
+  leaderboard:
+    title: "排行榜更新"
+    commandsHelp:
+      syncLifeTimePoint:
+        title: "`[榜單數據修正]`"
+        description: |
+          >
+      syncMonthPoint:
+        title: "`[榜單數據修正]`"
+        description: |
+          >
+      syncDayPoint:
+        title: "`[榜單數據修正]`"
+        description: |
+          >
+      syncReceiverLifeTimeOverallPoint:
+        title: "`[榜單數據修正]`"
+        description: |
+          >
+      syncReceiverMonthOverallPoint:
+        title: "`[榜單數據修正]`"
+        description: |
+          >
+      syncReceiverDayOverallPoint:
+        title: "`[榜單數據修正]`"
+        description: |
+          >
+  #===!live-checkin看播簽到===
+  live-checkin:
+    title: "看播簽到"
+    commandsHelp:
+      get:
+        title: "`[查詢某用戶看某主播的簽到勾勾紀錄]`"
+        description: |
+          >
+      set:
+        title: "`[設簽到勾勾天數]`"
+        description: |
+          >
+      menu:
+        title: "`[列出用戶看某主播的簽到勾勾數量，並有選單可修改其簽到天數]`"
+        description: |
+          >
+      batchUpdate:
+        title: "`[針對單一主播修復因為斷線的單則直播的所有簽到勾勾]`"
+        description: |
+          >
+  #===!live-simulation模擬開播===
+  live-simulation:
+    title: "摸擬開播"
+    commandsHelp:
+      run:
+        title: "`[模擬開播]`"
+        description: |
+          >
+      enter:
+        title: "`[模擬開播 (進入直播間)]`"
+        description: |
+          >
+      comment:
+        title: "`[模擬開播 (留言)]`"
+        description: |
+          >
+      send-gift:
+        title: "`[模擬開播 (送禮)]`"
+        description: |
+          >
+      stop:
+        title: "`[模擬開播停止]`"
+        description: |
+          >
+  #===!loyalty主播忠誠度計畫相關===
+  loyalty:
+    title: "主播忠誠度計畫"
+    commandsHelp:
+      update:
+        title: "[重新計算月份資料]"
+        description: |
+          >
+      history:
+        title: "[查詢月份資料]"
+        description: |
+          >
+  #===!live開播相關===
+  live:
+    title: "開播相關"
+    commandsHelp:
+      log:
+        title: "`[查詢指定用戶的開播紀錄(最多100筆)]`"
+        description: |
+          >
+      log-detail:
+        title: "`[查詢某一則直播的詳細資訓]`"
+        description: |
+          >
+      log-disconnectt:
+        title: "`[查詢最近 n 筆斷線的直播]`"
+        description: |
+          >
+      set-enter-animation:
+        title: "`[給用戶一段時間的進場動畫]`"
+        description: |
+          >
+      add-achievementValue:
+        title: "`[調整成就值]`"
+        description: |
+          >
+      cancel-enter-animation:
+        title: "`[取消用戶的進場動畫]`"
+        description: |
+          >
+      search-enter-animation-byUser:
+        title: "`[查詢用戶有哪些進場動畫]`"
+        description: |
+          >
+      search-enter-animation-byAnimation:
+        title: "`[根據進場動畫ID查詢有哪些用戶有此動畫]`"
+        description: |
+          >
+      update-verification:
+        title: "`[開播是否出現在熱門頁]`"
+        description: |
+          >
+      videochat-list:
+        title: "`[列出直播間連麥用戶]`"
+        description: |
+          >
+      videochat-kick:
+        title: "`[將用戶踢出連麥]`"
+        description: |
+          >
+      accept:
+        title: "`[直播審核-可開播]`"
+        description: |
+          >
+      disable:
+        title: "`[直播審核-禁播]`"
+        description: |
+          >
+      resume:
+        title: "`[直播審核-復原]`"
+        description: |
+          >
+      end-replay:
+        title: "`[暫停某user Replay功能]`"
+        description: |
+          > 註解: interrupted seconds表示中斷的秒數, 輸入0秒 表示停止中斷。
+      suggestion-list-stat:
+        title: "`[猜你喜歡排序]`"
+        description: |
+          > Sorting logics: levelAsc, levelDesc, achievementValueAsc, achievementValueDesc, uniqueViewerAsc, uniqueViewerDesc, groupA, groupB, groupC, groupD, groupE, groupF
+  #===!marquee跑馬燈===
+  marquee:
+    title: "跑馬燈"
+    commandsHelp:
+      send:
+        title: "`[送指定主播區域跑馬燈]`"
+        description: |
+          >
+      list-feature:
+        title: "`[列出所有跑馬燈的類型]`"
+        description: |
+          >
+  #===!mith報表===
+  mith:
+    title: "mith報表"
+    commandsHelp:
+      report:
+        title: "`[下載最近 n 天的分潤轉mith報表]`"
+        description: |
+          >
+  #===!mlevelV等級===
+  mlevel:
+    title: "V等級"
+    commandsHelp:
+      set:
+        title: "`[幫指定用戶灌指定月份/點數來增加V等級]`"
+        description: |
+          >
+      get:
+        title: "`[查詢指定用戶的在某個月份累積的點數與V等級]`"
+        description: |
+          >
+      get-redis:
+        title: "`[查詢指定用戶的在某個月份累積的點數與V等級(redis)]`"
+        description: |
+          >
+  #===!monster打怪獸===
+  monster:
+    title: "打怪獸"
+    commandsHelp:
+      list:
+        title: "`[列出各區域所有的monster所在的直播間與狀態]`"
+        description: |
+          >
+  #===!notif===
+  notif:
+    title: ""
+    commandsHelp:
+      get-live:
+        title: "`[get-live]`"
+        description: |
+          >
+      incr-live:
+        title: "`[incr-live]`"
+        description: |
+          >
+      query:
+        title: "`[query]`"
+        description: |
+          >
+  #===!oneSignal===
+  oneSignal:
+    title: ""
+    commandsHelp:
+      view:
+        title: "`[view]`"
+        description: |
+          >
+  #===!otevent===
+  otevent:
+    title: ""
+    commandsHelp:
+      delete:
+        title: "`[delete]`"
+        description: |
+          >
+      delete-all:
+        title: "`[delete-all]`"
+        description: |
+          >
+      get:
+        title: "`[get]`"
+        description: |
+          >
+      get-config:
+        title: "`[get-config]`"
+        description: |
+          >
+  #===!point點數給收===
+  point:
+    title: "點數給收"
+    commandsHelp:
+      makeup:
+        title: "`[對特定IAP訂單補點(有價)]`"
+        description: |
+          >
+      rollback:
+        title: "`[對特定IAP訂單回收點數]`"
+        description: |
+          >
+      give:
+        title: "`[給指定用戶免費點數]`"
+        description: |
+          >
+      add:
+        title: "`[給內部用途免費點數]`"
+        description: |
+          >
+      refund-give:
+        title: "`[回收give的點數]`"
+        description: |
+          >
+      refund-add:
+        title: "`[回收add的點數]`"
+        description: |
+          >
+  #===!program節目===
+  program:
+    title: "節目"
+    commandsHelp:
+      list:
+        title: "`[列出所有的節目帳號(Web Admin-TV)]`"
+        description: |
+          >
+      find:
+        title: "`[找出包含此文字的節目名稱]`"
+        description: |
+          >
+      get:
+        title: "`[查詢此節目帳號的詳細資訊]`"
+        description: |
+          >
+      delete:
+        title: "`[刪除此節目帳號]`"
+        description: |
+          >
+      undelete:
+        title: "`[取消刪除此節目帳號]`"
+        description: |
+          >
+      set-region:
+        title: "`[設定節目會出現的國家]`"
+        description: |
+          >
+  #===!register建立測試帳號===
+  register:
+    title: "建立測試帳號"
+    commandsHelp:
+      testers:
+        title: "`[建立測試帳號]`"
+        description: |
+          >
+      contractors:
+        title: "`[建立某個地區有合約的測試帳號]`"
+        description: |
+          >
+  #===!reseller經銷商===
+  reseller:
+    title: "經銷商"
+    commandsHelp:
+      writeoff:
+        title: "`[writeoff]`"
+        description: |
+          >
+      get-quota:
+        title: "`[get-quota]`"
+        description: |
+          >
+  #===!revenue分潤轉點===
+  revenue:
+    title: "分潤轉點"
+    commandsHelp:
+      to-point:
+        title: "`[分潤轉點數]`"
+        description: |
+          >
+  #===!royalty成就封號===
+  royalty:
+    title: "成就封號"
+    commandsHelp:
+      writeoff:
+        title: "`[設定成就(封號徽章)的次數]`"
+        description: |
+          >
+  #===!Label主播合約標籤===
+  label:
+    title: "主播合約標籤"
+    commandsHelp:
+      listStreamer:
+        title: "`[查閱Streamerlabel清單]`"
+        description: |
+          >
+      addStreamer:
+        title: "`[新增Streamerlabe清單資料]`"
+        description: |
+          >
+      listContract:
+        title: "`[查閱ContractLabel清單]`"
+        description: |
+          >
+      addContract:
+        title: "`[新增ContractLabe清單資料]`"
+        description: |
+          >
+  #===!stamp貼圖===
+  stamp:
+    title: "貼圖"
+    commandsHelp:
+      list:
+        title: "`[列出指定地區所有的stamp]`"
+        description: |
+          >
+      add:
+        title: "`[送指定用戶免費貼圖]`"
+        description: |
+          >
+      del:
+        title: "`[刪除用戶持有的免費貼圖]`"
+        description: |
+          >
+  #===!superstar小時榜===
+  superstar:
+    title: "小時榜"
+    commandsHelp:
+      list:
+        title: "`[手動結算小時榜，並分派獎勵]`"
+        description: |
+          >
+  #===!term使用者條款===
+  term:
+    title: "使用者條款"
+    commandsHelp:
+      delete:
+        title: "`[清除用戶同意條款之設定]`"
+        description: |
+          >
+      set:
+        title: "`[設定用戶已同意用戶條款]`"
+        description: |
+          >
+  #===!trivia17Q===
+  trivia:
+    title: "17Q"
+    commandsHelp:
+      get:
+        title: "`[以trivia ID(Web admin)查詢trivia資訊]`"
+        description: |
+          >
+      delete:
+        title: "`[刪除trivia(根據game id)]`"
+        description: |
+          >
+      getQuiz:
+        title: "`[以Quiz ID(Web admin)查詢Quiz資訊]`"
+        description: |
+          >
+      deleteQuiz:
+        title: "`[刪除Quiz(根據quiz id)]`"
+        description: |
+          >
+      getAnswerInfo:
+        title: "`[查用戶答題狀況]`"
+        description: |
+          >
+      getPrize:
+        title: "`[查用戶指定日期得到的獎金]`"
+        description: |
+          >
+      sendMedal:
+        title: "`[送免死金牌給用戶]`"
+        description: |
+          >
+      rewardMakeup:
+        title: "`[替用戶補獎金]`"
+        description: |
+          >
+  #===!user用戶相關===
+  user:
+    title: "用戶相關"
+    commandsHelp:
+      q:
+        title: "`[查詢用戶資訊]`"
+        description: |
+          >
+      get-region:
+        title: "`[查詢用戶設定地區]`"
+        description: |
+          > 註解: 如果有合約則取得合約的region欄位資訊，若無合約則取得用戶app內設定的地區。
+      set-region:
+        title: "`[設定用戶app區域]`"
+        description: |
+          >
+      get-reg-region:
+        title: "`[取得用戶註冊區域]`"
+        description: |
+          >
+      set-reg-region:
+        title: "`[設定用戶註冊區域]`"
+        description: |
+          >
+      incr-exp:
+        title: "`[增加用戶的等級經驗值]`"
+        description: |
+          >
+      clear-auth:
+        title: "`[解除用戶第三方登入綁定]`"
+        description: |
+          >
+      get-auth:
+        title: "`[讓用戶帳號通過驗證]`"
+        description: |
+          >
+      freeze:
+        title: "`[凍結user account]`"
+        description: |
+          >
+      relieve:
+        title: "`[解凍user account]`"
+        description: |
+          >
+      set-openID:
+        title: "`[替用戶設定openID]`"
+        description: |
+          >
+      add-openIDHistory:
+        title: "`[替用戶增加openID設定的歷史紀錄]`"
+        description: |
+          >
+      get-openIDHistory:
+        title: "`[查詢用戶設定過的openID歷史紀錄]`"
+        description: |
+          >
+      del-openIDHistory:
+        title: "`[刪除用戶設定過的openID歷史紀錄(才能重新設定)]`"
+        description: |
+          >
+      set-bio:
+        title: "`[替用戶設定profile內容]`"
+        description: |
+          >
+      id:
+        title: "`[用openID/userID反查對應的openID/userID(一次可搜尋多筆)]`"
+        description: |
+          >
+      reset-token:
+        title: "`[reset 用戶的 accessToken, 強制清除所有登入狀態(用戶被盜可以用)]`"
+        description: |
+          >
+      mute:
+        title: "`[禁言]`"
+        description: |
+          >
+      unmute:
+        title: "`[取消禁言]`"
+        description: |
+          >
+      remove:
+        title: "`[移除帳戶]`"
+        description: |
+          >
+      revert-remove:
+        title: "`[復原已移除帳戶]`"
+        description: |
+          >
+      check-remove:
+        title: "`[確認帳戶是否移除]`"
+        description: |
+          >
+      badge-list:
+        title: "`[列出系統中所有可以被設定的badge]`"
+        description: |
+          >
+      badge-add:
+        title: "`[給用戶指定的bagde]`"
+        description: |
+          >
+      badge-remove:
+        title: "`[移除用戶的bagde]`"
+        description: |
+          >
+      search-openID:
+        title: "`[以關鍵字搜尋現有的openID]`"
+        description: |
+          >
+      set-admin:
+        title: "`[設定admin等級]`"
+        description: |
+          >
+      get-expirypoints:
+        title: "`[查詢失效點數]`"
+        description: |
+          >
+      get-point-ratio-plan:
+        title: "`[查詢翻倍點數]`"
+        description: |
+          > following is an example of output:
+          >   UserID: 00000000-0000-0000-0000-000000000000
+          >   Original point: 100
+          >   Going to increase: 157
+          >   Execution time: 2020-01-01 08:10:05 (GMT+8)
+      migrate-pure-openID:
+        title: "`[記錄使用者移除隱藏字元的openID，當用戶openID包含表情符號且使用功能(留言標記、登入)有異常時，可以使用此指令修正]`"
+        description: |
+          >
+  #===!vip尊榮寶寶===
+  vip:
+    title: "尊榮寶寶"
+    commandsHelp:
+      check:
+        title: "`[確認用戶是否為VIP(尊榮寶寶訂閱)]`"
+        description: |
+          >
+      addDays:
+        title: "`[替用戶增加尊榮寶寶訂閱天數]`"
+        description: |
+          >
+      setDate:
+        title: "`[替用戶設定尊榮寶寶訂閱區間]`"
+        description: |
+          >
+  #===!vipinvisible進場隱身===
+  vipinvisible:
+    title: "進場隱身"
+    commandsHelp:
+      enable:
+        title: "`[讓用戶可以隱身進場]`"
+        description: |
+          >
+      disable:
+        title: "`[解除用戶隱身進場設定]`"
+        description: |
+          >
+  #===!viplottery vip樂透 (已經沒在用)===
+  viplottery:
+    title: "vip樂透"
+    commandsHelp:
+      revoke:
+        title: "`[註銷viplottery序號 (已停用)]`"
+        description: |
+          >
+      list:
+        title: "`[列出viplottery序號相關訊息 (已停用)]`"
+        description: |
+          >
+      exchange:
+        title: "`[兌換viplottery序號 (已停用)]`"
+        description: |
+          >
+  #===!vipmarquee跑馬燈===
+  vipmarquee:
+    title: "跑馬燈"
+    commandsHelp:
+      enable:
+        title: "`[讓用戶可以用跑馬燈功能]`"
+        description: |
+          >
+      disable:
+        title: "`[停用用戶跑馬燈功能]`"
+        description: |
+          >
+  #===!vipstealth榜單隱身===
+  vipstealth:
+    title: "榜單隱身"
+    commandsHelp:
+      enable:
+        title: "`[開啟leaderboard隱身]`"
+        description: |
+          >
+      disable:
+        title: "`[關閉leaderboard隱身]`"
+        description: |
+          >
+  #===!votingevent活動灌票===
+  votingevent:
+    title: "活動灌票"
+    commandsHelp:
+      list:
+        title: "`[列出活動清單]`"
+        description: |
+          >
+      addVotes:
+        title: "`[增加票數]`"
+        description: |
+          >
+      addNomineeVotes:
+        title: "`[增加指定候選人票數]`"
+        description: |
+          >
+  #===!voucher送免費禮物(揮手/新手)===
+  voucher:
+    title: "送免費禮物"
+    commandsHelp:
+      send:
+        title: "`[送免費禮物(例:揮手/新手)]`"
+        description: |
+          >

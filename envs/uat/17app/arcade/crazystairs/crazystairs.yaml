@@ -1,0 +1,212 @@
+supportedVersion:
+  android: "2.4.43"
+  ios: "3.90.0"
+
+#levels: 
+#  "level1": #defined by editer and cannot have same levelID in `levels`
+levels:
+  "level1":
+    role: 0
+    objPercentage:
+      normal: 0.15
+      fire: 0.15
+      spring: 0.20
+      disappear: 0.25
+      moving: 0.25
+    spikeAttackFrequency: 8
+
+  "level2":
+    role: 1
+    objPercentage:
+      normal: 0.15
+      fire: 0.20
+      spring: 0.35
+      disappear: 0.25
+      moving: 0.10
+    spikeAttackFrequency: 6
+
+  "level3":
+    role: 2
+    objPercentage:
+      normal: 0.10
+      fire: 0.35
+      spring: 0.35
+      disappear: 0.10
+      moving: 0.10
+    spikeAttackFrequency: 4
+
+  "level4":
+    role: 3
+    objPercentage:
+      normal: 0.05
+      fire: 0.35
+      spring: 0.30
+      disappear: 0.20
+      moving: 0.10
+    spikeAttackFrequency: 3
+
+  "level5":
+    role: 3
+    objPercentage:
+      normal: 0.05
+      fire: 0.40
+      spring: 0.30
+      disappear: 0.15
+      moving: 0.10
+    spikeAttackFrequency: 1
+
+  "amylevel1":
+    role: 0
+    objPercentage:
+      normal: 0.20
+      fire: 0.20
+      spring: 0.20
+      disappear: 0.20
+      moving: 0.20
+    spikeAttackFrequency: 1
+
+  "amylevel2":
+    role: 15
+    objPercentage:
+      normal: 1.00
+      fire: 0.00
+      spring: 0.00
+      disappear: 0.00
+      moving: 0.00
+    spikeAttackFrequency: 0.5
+
+  "amylevel3":
+    role: 20
+    objPercentage:
+      normal: 1.00
+      fire: 0.00
+      spring: 0.00
+      disappear: 0.00
+      moving: 0.00
+    spikeAttackFrequency: 0.1
+
+  "prolevel1":
+    role: 0
+    objPercentage:
+      normal: 0.25
+      fire: 0.00
+      spring: 0.25
+      disappear: 0.25
+      moving: 0.25
+    spikeAttackFrequency: 0.8
+
+  "prolevel2":
+    role: 1
+    objPercentage:
+      normal: 0.25
+      fire: 0.00
+      spring: 0.25
+      disappear: 0.25
+      moving: 0.25
+    spikeAttackFrequency: 0.8
+
+  "prolevel3":
+    role: 2
+    objPercentage:
+      normal: 0.15
+      fire: 0.00
+      spring: 0.35
+      disappear: 0.25
+      moving: 0.25
+    spikeAttackFrequency: 0.5
+
+  "prolevel4":
+    role: 5
+    objPercentage:
+      normal: 0.15
+      fire: 0.00
+      spring: 0.35
+      disappear: 0.25
+      moving: 0.25
+    spikeAttackFrequency: 0.5
+
+# modes: only have 4 modes now
+# 1. easy
+# 2. pro
+# 3. funny
+# 4. general
+# modes:
+#   easy:
+#     blood: 3 # 血量
+#     info:
+#       0: level1 # it means when the user reaches stairs-0, it will trigger level1's seetting
+#       20: level2 # it means when the user reaches stairs-20, it will trigger level2's seetting
+#     fogInfo:
+#       concentration: format: 0.1, 0.2
+#       speed: n secs/percentage
+modes:
+  "general":
+    blood: 5
+    gameScript:
+      0: "level1"
+      20: "level2"
+    fogInfo:
+      concentration: 0.5
+      speed: 1
+  "pro":
+    blood: 10
+    gameScript:
+      0: "prolevel1"
+      20: "prolevel2"
+      50: "prolevel3"
+      80: "prolevel4"
+    fogInfo:
+      concentration: 0.5
+      speed: 100
+  "funny":
+    blood: 10
+    gameScript:
+      0: "amylevel1"
+      10: "amylevel2"
+      20: "amylevel3"
+    fogInfo:
+      concentration: 1
+      speed: 100
+  "easy":
+    blood: 3
+    gameScript:
+      0: "level1"
+      30: "level2"
+      90: "level3"
+      120: "level4"
+      150: "level5"
+    fogInfo:
+      concentration: 0.8
+      speed: 0.5
+
+# this is for 全民開播 , let it always be general mode
+freePlayMode: "general"
+giftIDToMode:
+  #非日本(非背包禮)
+  "crazy_stairs_streamer_easy": "easy"
+  "crazy_stairs_viewer_easy": "easy"
+  "crazy_stairs_streamer_pro": "pro"
+  "crazy_stairs_viewer_pro": "pro"
+  "crazy_stairs_streamer_funny": "funny"
+  "crazy_stairs_viewer_funny": "funny"
+  #非日本(背包禮)	
+  "crazy_stairs_streamer_easy_bag": "easy"
+  "crazy_stairs_viewer_easy_bag": "easy"
+  "crazy_stairs_streamer_pro_bag": "pro"	
+  "crazy_stairs_viewer_pro_bag": "pro"
+  "crazy_stairs_streamer_funny_bag": "funny"
+  "crazy_stairs_viewer_funny_bag": "funny"
+  #日本(非背包禮)	
+  "crazy_stairs_streamer_jp_easy": "easy"
+  "crazy_stairs_viewer_jp_easy": "easy"
+  "crazy_stairs_streamer_jp_pro": "pro"	
+  "crazy_stairs_viewer_jp_pro": "pro"
+  "crazy_stairs_streamer_jp_funny": "funny"
+  "crazy_stairs_viewer_jp_funny": "funny"
+  #日本(背包禮)	
+  "crazy_stairs_streamer_jp_easy_bag": "easy"
+  "crazy_stairs_viewer_jp_easy_bag": "easy"
+  "crazy_stairs_streamer_jp_pro_bag": "pro"
+  "crazy_stairs_viewer_jp_pro_bag": "pro"
+  "crazy_stairs_streamer_jp_funny_bag": "funny"
+  "crazy_stairs_viewer_jp_funny_bag": "funny"

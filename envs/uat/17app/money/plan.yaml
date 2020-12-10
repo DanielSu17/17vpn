@@ -1,0 +1,27 @@
+# bonusMode : "plus" 直接把bonus的點數加上去, "ratio" 點數照bonus的百分比加成
+revenue_transfer_points :
+  block_manual_pay : true  # block_manual_pay: true就是關閉分潤轉點功能，false是打開
+  bonusMode: "plus"
+  from: 3
+  to: 1
+  options:
+  - fromNet: 10  # TODO deprecated after 2 weeks
+    fromNetFloat: 10
+    bonus: 112
+    productID: "revenue_transfer_points_10"
+  - fromNet: 50 # TODO deprecated after 2 weeks
+    fromNetFloat: 50
+    bonus: 1760
+    productID: "revenue_transfer_points_50"
+  - fromNet: 100 # TODO deprecated after 2 weeks
+    fromNetFloat: 100
+    bonus: 4700
+    productID: "revenue_transfer_points_100"
+  - fromNet: 500 # TODO deprecated after 2 weeks
+    fromNetFloat: 500
+    bonus: 24900
+    productID: "revenue_transfer_points_500"
+  - fromNet: 1000 # TODO deprecated after 2 weeks
+    fromNetFloat: 1000
+    bonus: 51200
+    productID: "revenue_transfer_points_1000"

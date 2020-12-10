@@ -1,0 +1,53 @@
+# here comes each field's definition:
+#
+# minGiftPoints: gift value larger or equal than it can participate
+# maxGiftPoints: gift value lower or equal than it can participate
+# extraPointsToPool: extra points to participate luckydraw
+# poolRatio: (extraPointsToPool * poolRatio%) will be put into pool
+#            (extraPointsToPool * (100 - poolRatio)%) will be recycled
+# prizeRatio: user can get (pool amount * prizeRatio%) when he/she wins
+# initPoolPoints: how many points in beginning in a new pool
+# minHitPoints: minimum accumulated amount to pay-out (1/denominator)
+# mustHitPoints: must pay-out (100%) if accumulated amount more than mustHitPoints
+# lottoProbability: denominator of luckydraw probability, numerator is always 1, ex, 1/5000
+# topBannerSwitch: decide to enable or disable a banner with switch on top of giftbox.
+#                  be aware! this switch is only valid when luckyDraw feature is turned on.
+#
+minGiftPoints: 100
+maxGiftPoints: 1000000
+extraPointsToPool: 15
+poolRatio: 100
+prizeRatio: 100
+initPoolPoints: 10000
+minHitPoints: 20000
+# this value have been reduced, ref: https://17media.slack.com/archives/C8U5D829X/p1582690345061500
+mustHitPoints: 960200
+lottoProbability: 100000000000
+
+ruleI18nKeys:
+  - key: 17_luckydraw_intro_dialog_text_1
+    params:
+      - value: "15" # be equal to extraPointsToPool
+  - key: 17_luckydraw_intro_dialog_text_2
+  - key: 17_luckydraw_intro_dialog_text_3
+    params:
+      - value: "15" # be equal to extraPointsToPool
+  - key: 17_luckydraw_intro_dialog_text_4
+
+enableLuckyDrawI18n:
+  key: 17_luckydraw_confirm_on_toast
+
+disableLuckyDrawI18n:
+  key: 17_luckydraw_confirm_off_toast
+
+supportedVersion:
+  android: "2.3.66"
+  ios: "3.43.0"
+
+topBannerSwitch:
+  enable: true
+  descI18n:
+    key: 17_luckydraw_switch_hint
+  supportedVersion:
+    android: "2.3.71"
+    ios: "3.47.0"

@@ -1,0 +1,24 @@
+# 30 days = 720 hours = 43200 minutes
+accessTokenExpireMinutes: 43200
+
+# 180 days = 4320 hours = 259200 minutes
+refreshTokenExpireMinutes: 259200
+
+
+# token stage
+# 0: old access token only
+# 1: both old access token and jwt token
+# 2: jwt token only
+stage: 1
+
+
+# version check for token stage 1
+# if forceAccessToken is ture and client version < config version
+# server will process old access token
+iosVersionControl:
+  forceAccessToken: false
+  version: 3.55.0
+
+androidVersionControl:
+  forceAccessToken: false
+  version: 2.3.87

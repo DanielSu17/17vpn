@@ -1,0 +1,19 @@
+# reminder related configs
+#
+# pushNotificaion: schedule updated notification will be ignore in <pushNotificaion> period.
+# reminder:
+#   beforeSchedule: reminder before time streamer expected start live stream.
+#   beforeScheduleClanChat: ClanChat reminder before time streamer expected start live stream.
+#   afterStartLive: reminder after time streamer expected start live stream but not start.
+#   setSchedule: pop a dialog after end stream if there's no schedule in <setSchedule> period.
+#   onExit: pop a toast if viewer want to leave live and stay over <onExit> period.
+#   updateDeadline: streamer cannot update schedule which is coming in <setSchedule> period.
+#   ScheduleDisplayDays: how many date tabs should be displayed in LiveSchedule page
+PNCoolDown: 600  # 10 mins
+reminder:
+  beforeSchedule: 1800  # 30 mins
+  beforeScheduleClanChat: 1800  # 30 mins
+  setSchedule: 604800  # 7 day
+  onExit: 30  # 30 sec
+  updateDeadline: 3600  # 1 hr
+  scheduleDisplayDays: 7

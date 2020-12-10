@@ -1,0 +1,172 @@
+supportedInvoiceTypes:
+  19: # SellingChannelWebTwSuperVip
+    - 1
+    - 2
+    - 3
+    - 4
+  29: # SellingChannelWebTw17Live
+    - 1
+    - 2
+    - 4
+  32: # SellingChannelWebTwBabyVip
+    - 1
+    - 2
+    - 4
+  33: # SellingChannelWebTw17LiveECPay
+    - 1
+    - 2
+    - 4
+  34: # SellingChannelWebTwBabyVipECPay
+    - 1
+    - 2
+    - 4
+  35: # SellingChannelWebTw17LiveJkos
+    - 1
+    - 2
+    - 4
+
+regionConfigs:
+  TW:
+    sellingChannelGroups:
+      1: # Super VIP
+        - 14 # SellingChannelVipDept (localVIPs)
+        - 19 # SellingChannelWebTwSuperVip (localVIPs)
+      2: # Baby VIP
+        - 32 # SellingChannelWebTwBabyVip
+        - 34 # SellingChannelWebTwBabyVipECPay
+      3: # 17Live
+        - 29 # SellingChannelWebTw17Live
+        - 33 # SellingChannelWebTw17LiveECPay
+        - 35 # SellingChannelWebTw17LiveJkos
+    payMethodsForDuplicateInvoice:
+      - 1
+      - 3
+      - 31
+      - 32
+      - 53
+      - 54
+      - 56
+      - 60
+    payMethodsForTriplicateInvoice:
+      - 13
+    payMethods:
+      - 1
+      - 2
+      - 3
+      - 6
+      - 7
+      - 13
+      - 15
+      - 18
+      - 23
+      - 24
+      - 25
+      - 26
+      - 29
+      - 31
+      - 32
+      - 35
+      - 53
+      - 54
+      - 56
+      - 60
+    currencies:
+      - TWD
+      - JPY
+      - USD
+      - HKD
+      - CNY
+      - SGD
+      - MYR
+      - XPT
+      - XPD
+      - GBP
+      - EUR
+      - AUD
+      - NZD
+      - CAD
+      - CHF
+    localCurrency: TWD
+    upperBoundOfDeltaRatioForExchangeRate: 0.02
+    lowerBoundOfDeltaRatioForExchangeRate: 0.02
+    maxMithExchangeRate: 15
+    minMithExchangeRate: 1
+    maxBnbExchangeRate: 286.619
+    minBnbExchangeRate: 50
+
+  JP:
+    sellingChannelGroups:
+      1: # Super VIP
+        - 14 # SellingChannelVipDept (localVIPs)
+        - 22 # SellingChannelWebJpSuperVipGMO (localVIPs)
+        - 23 # SellingChannelWebJpSuperVipPayPal
+      2: # Baby VIP
+        - 21 # SellingChannelWebJpBabyVip
+      3: # 17Live
+        - 9  # SellingChannelWebJp17Live
+    payMethods:
+      - 2
+      - 8
+      - 9
+      - 10
+      - 13
+    currencies:
+      - JPY
+    localCurrency: JPY
+    upperBoundOfDeltaRatioForExchangeRate: 0.02
+    lowerBoundOfDeltaRatioForExchangeRate: 0.02
+
+  ID:
+    sellingChannelGroups:
+      1: # Super VIP
+        - 14 # SellingChannelVipDept (localVIPs)
+    payMethods:
+      - 14
+    currencies:
+      - IDR
+    localCurrency: IDR
+    upperBoundOfDeltaRatioForExchangeRate: 0.02
+    lowerBoundOfDeltaRatioForExchangeRate: 0.02
+
+  US:
+    sellingChannelGroups:
+      1: # Super VIP
+        - 14 # SellingChannelVipDept (localVIPs)
+        - 24 # SellingChannelWebUsVip (localVIPs)
+    payMethods:
+      - 2
+      - 22
+      - 52
+      - 62
+    currencies:
+      - USD
+    localCurrency: USD
+    upperBoundOfDeltaRatioForExchangeRate: 0.02
+    lowerBoundOfDeltaRatioForExchangeRate: 0.02
+
+  HK:
+    sellingChannelGroups:
+      1: # Super VIP
+        - 14 # SellingChannelVipDept (localVIPs)
+        - 27 # SellingChannelWebHkVip (localVIPs)
+    payMethods:
+      - 2
+      - 55
+      - 58
+    currencies:
+      - HKD
+    localCurrency: HKD
+    upperBoundOfDeltaRatioForExchangeRate: 0.02
+    lowerBoundOfDeltaRatioForExchangeRate: 0.02
+
+  NONE:
+    sellingChannelGroups:
+      1: # Super VIP
+        - 14 # SellingChannelVipDept (localVIPs)
+    payMethods:
+      - 21
+    currencies:
+      - USD
+    localCurrency: USD
+    upperBoundOfDeltaRatioForExchangeRate: 0.02
+    lowerBoundOfDeltaRatioForExchangeRate: 0.02

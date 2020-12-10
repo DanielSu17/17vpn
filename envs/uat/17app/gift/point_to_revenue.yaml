@@ -1,0 +1,204 @@
+regionRates:
+  # regionRates is a list of ratio rule for specific region and the others use DEFAULT
+  # NONE region is for non-contract streamers and it follows TW rule
+  # ---------- History about this value ----------
+  # PointToRevenue at first is maxGiftPriceInUSD/maxGiftSellingPoint
+  # - maxGiftPriceInUSD is 99 USD
+  # - maxGiftSellingPoint is 14000
+  # Later, we make it to maxGiftPriceInUSD/(maxGiftSellingPoint*adjustRatio)
+  # - adjustRatio is 1.5 which let users think they have 1.5 times RevenueRatio
+  # 	# - 99/(14000*1.5) is almost equal to 1/7/30.3 so finance department treats
+  # 1/7 as PointToTWD and 30.3 is the system one USD to TWD ratio
+  DEFAULT:
+    - activeMonth: 2015-01
+      # 1/7(PointToTWD)/31.36(USDToTWD)
+      rate: 0.004555393586005831
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/31.36(USDToTWD)/2.5
+      rate: 0.0018221574
+  TW:
+    - activeMonth: 2019-08
+      # 1/7(PointToTWD)/32(USDToTWD)
+      rate: 0.004464285714285714
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30.9(USDToTWD)
+      rate: 0.004623208507
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/30.9(USDToTWD)/2.5
+      rate: 0.0018492834
+  JP:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/31.36(USDToTWD)*(1.10/1.08)
+      # 1.10, the new consumption tax ratio, starts to apply on October, 1.08 is legacy
+      rate: 0.004639752726487421
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/31.36(USDToTWD)/2.5
+      rate: 0.001822157434
+  US:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30.3(USDToTWD)
+      rate: 0.00471475719
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/30(USDToTWD)/2.5
+      rate: 0.001904761905
+  AE:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30(USDToTWD)
+      rate: 0.004761904762
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/30(USDToTWD)/2.5
+      rate: 0.001904761905
+  BH:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30(USDToTWD)
+      rate: 0.004761904762
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/30(USDToTWD)/2.5
+      rate: 0.001904761905
+  DJ:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30(USDToTWD)
+      rate: 0.004761904762
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/30(USDToTWD)/2.5
+      rate: 0.001904761905
+  DZ:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30(USDToTWD)
+      rate: 0.004761904762
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/30(USDToTWD)/2.5
+      rate: 0.001904761905
+  EG:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30(USDToTWD)
+      rate: 0.004761904762
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/30(USDToTWD)/2.5
+      rate: 0.001904761905
+  ET:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30(USDToTWD)
+      rate: 0.004761904762
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/30(USDToTWD)/2.5
+      rate: 0.001904761905
+  IL:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30(USDToTWD)
+      rate: 0.004761904762
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/30(USDToTWD)/2.5
+      rate: 0.001904761905
+  IQ:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30(USDToTWD)
+      rate: 0.004761904762
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/30(USDToTWD)/2.5
+      rate: 0.001904761905
+  IR:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30(USDToTWD)
+      rate: 0.004761904762
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/30(USDToTWD)/2.5
+      rate: 0.001904761905
+  JO:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30(USDToTWD)
+      rate: 0.004761904762
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/30(USDToTWD)/2.5
+      rate: 0.001904761905
+  KW:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30(USDToTWD)
+      rate: 0.004761904762
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/30(USDToTWD)/2.5
+      rate: 0.001904761905
+  LB:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30(USDToTWD)
+      rate: 0.004761904762
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/30(USDToTWD)/2.5
+      rate: 0.001904761905
+  LY:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30(USDToTWD)
+      rate: 0.004761904762
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/30(USDToTWD)/2.5
+      rate: 0.001904761905
+  MA:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30(USDToTWD)
+      rate: 0.004761904762
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/30(USDToTWD)/2.5
+      rate: 0.001904761905
+  MT:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30(USDToTWD)
+      rate: 0.004761904762
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/30(USDToTWD)/2.5
+      rate: 0.001904761905
+  OM:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30(USDToTWD)
+      rate: 0.004761904762
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/30(USDToTWD)/2.5
+      rate: 0.001904761905
+  PS:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30(USDToTWD)
+      rate: 0.004761904762
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/30(USDToTWD)/2.5
+      rate: 0.001904761905
+  QA:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30(USDToTWD)
+      rate: 0.004761904762
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/30(USDToTWD)/2.5
+      rate: 0.001904761905
+  SA:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30(USDToTWD)
+      rate: 0.004761904762
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/30(USDToTWD)/2.5
+      rate: 0.001904761905
+  SD:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30(USDToTWD)
+      rate: 0.004761904762
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/30(USDToTWD)/2.5
+      rate: 0.001904761905
+  SY:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30(USDToTWD)
+      rate: 0.004761904762
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/30(USDToTWD)/2.5
+      rate: 0.001904761905
+  TN:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30(USDToTWD)
+      rate: 0.004761904762
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/30(USDToTWD)/2.5
+      rate: 0.001904761905
+  YE:
+    - activeMonth: 2019-10
+      # 1/7(PointToTWD)/30(USDToTWD)
+      rate: 0.004761904762
+    - activeTimestamp: 1577808000
+      # 1/7(PointToTWD)/30(USDToTWD)/2.5
+      rate: 0.001904761905

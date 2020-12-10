@@ -1,0 +1,1 @@
+# 活動 corporation, department 設定

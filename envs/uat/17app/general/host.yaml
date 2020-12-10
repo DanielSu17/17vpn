@@ -1,0 +1,63 @@
+DEFAULT:
+  # ending with "/" for client side
+  api: "https://uat-api.17app.co/"
+  # ending with "/" for client side
+  cdn: "http://cdn.17app.co/"
+  # the followings are server side used only
+  rtmpPullWansu: "https://wansu-global-pull-rtmp.17app.co"
+  rtmpPullWansuLowLatency: "https://wansu-global-pull-rtmp-latency.17app.co"
+  rtmpPullWansuAuth: "https://wansu-global-pull-rtmp-auth-uat.17app.co"
+  rtmpPushWansu: "rtmp://wansu-global-push-rtmp.17app.co"
+  rtmpPushWansuLowLatency: "rtmp://wansu-global-push-rtmp-latency.17app.co"
+  rtmpPushWansuAuth: "rtmp://wansu-global-push-rtmp-auth-uat.17app.co"
+  rtmpPullQiniu: "https://qiniu-global-pull-rtmp.17app.co"
+  rtmpPullQiniuAuth: "https://qiniu-global-pull-rtmp-auth-uat.17app.co"
+  rtmpPushQiniu: "rtmp://qiniu-global-push-rtmp.17app.co"
+  rtmpPushQiniuAuth: "rtmp://qiniu-global-push-rtmp-auth-uat.17app.co"
+  pubnub: "ps.pndsn.com"
+  rtmpPullWansuWeb: "https://wansu-global-pull-rtmp.17app.co"
+  rtmpPullWansuWebAuth: "https://wansu-global-pull-rtmp-auth-uat.17app.co"
+  rtmpPullQiniuWeb: "https://qiniu-global-pull-rtmp.17app.co"
+  rtmpPullQiniuWebAuth: "https://qiniu-global-pull-rtmp-auth-uat.17app.co"
+  rtmpPullWansuLowLatencyWeb: "https://wansu-global-pull-rtmp-latency.17app.co"
+  #rtmpPushSrs: "rtmp://35.221.149.110:1935/app"
+  rtmpPushSrs: "rtmp://uat-streaming.handsup.dev:1935/app"
+  msgPushWansu: "17mts1.8686c.com:4000"
+  srsUrlReplacement:
+    "rtmps://live-api-s.facebook.com:443": "rtmp://127.0.0.1:19350"
+  cht:
+    serviceName: "prod"
+    apiPath: "https://api.cdn.hinet.net/cdnPortalAPI"
+    pushURL: "rtmp://sbr.publish.cdn.hinet.net/17media-prod"
+    pullURL: "http://prod-17media.cdn.hinet.net/17media-prod"
+
+CN:
+  ## ending with "/" for client side
+  api: "https://uat-api.17app.co/"
+  ## ending with "/" for client side
+  cdn: "http://cdn-17.tigafocus.com/"
+  ## the followings are server side used only
+  rtmpPullWansu: "https://wansu-china-pull-rtmp-17.tigafocus.com"
+  rtmpPullWansuLowLatency: "https://wansu-china-pull-rtmp-latency-17.tigafocus.com"
+  rtmpPullWansuAuth: "https://wansu-china-pull-rtmp-17-auth-uat.tigafocus.com"
+  rtmpPushWansu: "rtmp://wansu-china-push-rtmp-17.tigafocus.com"
+  rtmpPushWansuLowLatency: "rtmp://wansu-china-push-rtmp-latency-17.tigafocus.com"
+  rtmpPushWansuAuth: "rtmp://wansu-china-push-rtmp-17-auth-uat.tigafocus.com"
+  rtmpPullQiniu: "https://qiniu-china-pull-rtmp-17.tigafocus.com"
+  rtmpPullQiniuAuth: "https://qiniu-china-pull-rtmp-17-auth-uat.tigafocus.com"
+  rtmpPushQiniu: "rtmp://qiniu-china-push-rtmp-17.tigafocus.com"
+  rtmpPushQiniuAuth: "rtmp://qiniu-china-push-rtmp-17-auth-uat.tigafocus.com"
+  pubnub: "pubnub-17.winwinsun.com"
+  rtmpPullWansuWeb: "https://wansu-china-pull-rtmp-17.tigafocus.com"
+  rtmpPullWansuWebAuth: "https://wansu-china-pull-rtmp-17-auth-uat.tigafocus.com"
+  rtmpPullQiniuWeb: "https://qiniu-china-pull-rtmp-17.tigafocus.com"
+  rtmpPullQiniuWebAuth: "https://qiniu-china-pull-rtmp-17-auth-uat.tigafocus.com"
+  rtmpPullWansuLowLatencyWeb: "https://wansu-china-pull-rtmp-latency-17.tigafocus.com"
+  #rtmpPushSrs: "rtmp://35.221.149.110:1935/app"
+  rtmpPushSrs: "rtmp://streaming.17app.co:1935/app"
+  msgPushWansu: "17mts1.8686c.com:4000"
+  cht:
+    serviceName: "prod"
+    apiPath: "https://api.cdn.hinet.net/cdnPortalAPI"
+    pushURL: "rtmp://sbr.publish.cdn.hinet.net/17media-prod"
+    pullURL: "http://prod-17media.cdn.hinet.net/17media-prod"

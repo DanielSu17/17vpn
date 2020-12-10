@@ -1,0 +1,93 @@
+# stage
+# 0: default
+# 1: users in whitelist can see new UI of revenue
+# 2: users in whitelist and eligible streamers can see new UI of revenue
+# 3: users in whitelist and eligible streamers can see new UI of revenue
+#    users in whitelist can see entry of bbfu
+# 4: users in whitelist and eligible streamers can see new UI of revenue
+#    users in whitelist and eligible streamers can see entry of bbfu
+stage: 4
+
+whiteList:
+  - "c9692e9a-d6af-4c3b-b2ba-9954f2fb748d" # momoiscool
+  - "567e0b5d-1516-4ce0-b4e8-bec4e756d5ae" # kevinmh
+ # - "9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba" # kevinmh03
+  - "dbcd30a7-4f27-4209-8703-3bd28c780d7a" # sam73719
+  - "4a148607-e176-42ed-bb5d-4d9ec2e48354" # teddyer
+  - "cf123112-1499-407b-9013-0116aa7668dc" # 選萱
+  - "a60b54da-d15e-4d12-8b7a-fd103f8ef39f" # kaitw
+  - "37c26bf9-8720-4495-aeb4-36cbf727373e" # ychiaoli18
+  - "ea9b0742-2709-4f8a-b308-dce7d5609dee" # deanveryhandsome
+  - "ca877b41-7415-44a7-9b3c-9f56d7314e55" # bbfuTester1
+  - "0b32cef6-4bcf-4461-bd51-3e40b46562a9" # jenn31
+  - "ec18ac75-7002-46ad-bf0d-f353f72e27b4" # ardisa
+
+disableCheckVerifiedNanoUSDRecordedTime: true
+
+depositInfo:
+  feeRatio: 0.02 # 0 ~ 1
+  # contractor is eligible for being able to deduct the fee when depositing,
+  # if endTime of the latest contract is over 'deductFeeEligibleDays' than now
+  deductFeeEligibleDays: 180
+  # i18n keys used in bbfu's deposit page
+  feeDescriptionI18nKey: "bbfu_transfer_amount_charge_fee_desc"
+  deductFeeConditionI18nKey: "bbfu_transfer_amount_charge_fee_deduction_desc"
+  defaultWaiveFee: false
+
+verifiedRevenueActiveDate: 25
+verifiedRevenueActiveHour: 10
+
+dailyWithdrawCountMaximum: 10
+dailyTransferCountMaximum: 10000
+
+# 隱藏分潤轉富寶寶按鈕
+hideTransferToRichBBRegionStarttime: 1579605600 # 2020年1月21日 19:20:00 GMT+08:00
+hideTransferToRichBBRegionMode: 2
+hideTransferToRichBBRegions: [TW]
+
+# bbfu operation switch configs
+depositSwitchOn: false
+claimSwitchOn: true
+transferSwitchOn: true
+withdrawSwitchOn: true
+
+# migrate Taiwan USD wallet
+freezeTaiwanUSDWalletStartTime: 1587434400 # 2020年4月21日 10:00:00 GMT+08:00
+hideTaiwanUSDWalletStartTime: 1587448800 # 2020年4月21日 14:00:00 GMT+08:00
+
+# freeWithdrawFeeForAll
+# enable to allow withFee = false for all users
+# check if user can waive fee if disabled
+freeWithdrawFeeForAll: true
+# withdrawFeeRate sets the withdraw fee rate
+# ex: 0.01
+withdrawFeeRate: 0.025
+
+# maps currency to its revenue withdraw lower bound
+# ex: USD: 100.001
+revenueWithdrawLowerBound:
+  TWD: 3000
+  USD: 100
+  JPY: 10000
+  HKD: 778
+  SGD: 140
+  MYR: 435
+# maps currency to its reward withdraw lower bound
+# ex: USD: 100.001
+rewardWithdrawLowerBound:
+  TWD: 3000
+  USD: 100
+  JPY: 10000
+  HKD: 778
+  SGD: 140
+  MYR: 435
+
+# transferExchangeRate maps each currency to its USD exchange rate
+# ex: TWD: 30.0
+transferExchangeRate:
+  USD: 1
+  JPY: 109.76
+  HKD: 7.84
+  MYR: 4.3904
+  SGD: 1.568
+  TWD: 30

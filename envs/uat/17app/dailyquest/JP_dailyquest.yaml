@@ -1,0 +1,481 @@
+# switch for daily sign-in reward
+enable: true
+
+eventDailyRewards:
+  - startTimestamp: 1605220274
+    endTimestamp: 1605306674
+    giftID: "jp_mkt_every17"
+
+# 0: available for all level. Otherwise, apply it for users below the level
+level: 0
+
+# disable auto sign in hottest
+disableSignInHottest: false
+
+# can get sign-in reward and newbie reward simultaneously
+enableSignInAndNewbieRewardAtSameTime: true
+
+# do not dailySignIn reward after register midnight
+noAnimationTTLAfterRegister: 0
+
+continuousSignInEvent:
+  startTime: "2020-06-12 17:00:00 (GMT+0800)"
+  endTime: "2020-06-30 23:59:59 (GMT+0800)"
+  butlerImageURL: "https://cdn.17app.co/f9996032-7af6-48a4-9cd8-691add634e50.png"
+  rewards:
+    - ID: "jp-event-reward1"
+      dayMin: 1 # 連續登入幾天
+      dayMax: 6 # 連續登入幾天
+      giftID: "test_duck"
+      amount: 1 # 幾個
+      expireSecs: 43200 # 有效秒數
+    - ID: "jp-event-reward2"
+      dayMin: 7 # 連續登入幾天
+      dayMax: 13 # 連續登入幾天
+      giftID: "test_duck"
+      amount: 2 # 幾個
+      expireSecs: 43200 # 有效秒數
+    - ID: "jp-event-reward3"
+      dayMin: 14 # 連續登入幾天
+      dayMax: 20 # 連續登入幾天
+      giftID: "test_duck"
+      amount: 4 # 幾個
+      expireSecs: 43200 # 有效秒數
+    - ID: "jp-event-reward4"
+      dayMin: 21 # 連續登入幾天
+      dayMax: 27 # 連續登入幾天
+      giftID: "test_duck"
+      amount: 8 # 幾個
+      expireSecs: 43200 # 有效秒數
+    - ID: "jp-event-reward5"
+      dayMin: 28 # 連續登入幾天
+      dayMax: 99999 # 連續登入幾天, 99999 = 273years
+      giftID: "test_duck"
+      amount: 16 # 幾個
+      expireSecs: 43200 # 有效秒數
+
+# daily for sign-in reward for voucher version
+enableSignInReward: true
+abtestStartTime: 
+  "2020-07-01 00:00:00 (GMT+0800)"
+signInRewardsV2:
+  - exp: 30
+    url: "https://cdn.17app.co/512be4d1-3ccd-49d5-894f-6f520218db18.png"
+    oldURL: "https://cdn.17app.co/8467135a-fae7-4ce8-8951-3e399a5b475c.png"
+    voucherReward:
+      type: 1
+      itemID: "2019newuser"
+      tokenName: "voucher_daily_reward_d1"
+      amount: 2
+      intervalSec: 28800
+  - exp: 35
+    url: "https://cdn.17app.co/46ea7820-e2a4-48f0-b206-f08a7714df87.png"
+    oldURL: "https://cdn.17app.co/43f6e189-01e0-4522-b298-b44b2180c73a.png"
+    voucherReward:
+      type: 1
+      itemID: "hello_2"
+      tokenName: "voucher_daily_reward_d2"
+      amount: 10
+      intervalSec: 28800
+  - exp: 40
+    url: "https://cdn.17app.co/5f645919-dbd9-4a60-a573-aef1d36015c9.png"
+    oldURL: "https://cdn.17app.co/0e190bcd-ad1a-41f9-a46c-7537e3b9c75e.png"
+    voucherReward:
+      type: 1
+      itemID: "friday_pink_party"
+      tokenName: "voucher_daily_reward_d3"
+      amount: 2
+      intervalSec: 28800
+  - exp: 45
+    url: "https://cdn.17app.co/3e39b647-2ab4-425b-a087-bbdfbc367cf6.png"
+    oldURL: "https://cdn.17app.co/132c3535-ab25-476b-84e3-1f37ed78cd78.png"
+    voucherReward:
+      type: 1
+      itemID: "missyou_2"
+      tokenName: "voucher_daily_reward_d4"
+      amount: 10
+      intervalSec: 28800
+  - exp: 50
+    url: "https://cdn.17app.co/ca8f334b-c736-4615-b210-fccee72d434b.png"
+    oldURL: "https://cdn.17app.co/e7ed3cd6-322e-44bd-a430-b1617290c91c.png"
+    voucherReward:
+      type: 1
+      itemID: "tw_daily_reward_poker"
+      tokenName: "voucher_daily_reward_d5"
+      amount: 2
+      intervalSec: 28800
+  - exp: 55
+    url: "https://cdn.17app.co/46ea7820-e2a4-48f0-b206-f08a7714df87.png"
+    oldURL: "https://cdn.17app.co/006f315a-b3ea-4e74-a516-5af6720b0e77.png"
+    voucherReward:
+      type: 1
+      itemID: "hello_2"
+      tokenName: "voucher_daily_reward_d2"
+      amount: 10
+      intervalSec: 28800
+  - exp: 60
+    url: "https://cdn.17app.co/92e1d203-ee6f-4afb-82a2-3ecaf4e7fcec.png"
+    oldURL: "https://cdn.17app.co/f65ea95e-2b4b-486a-b368-d285a36350e0.png"
+    voucherReward:
+      type: 1
+      itemID: "daily_reward_love"
+      tokenName: "voucher_daily_reward_d6"
+      amount: 1
+      intervalSec: 28800
+signInRewardsV3Whitelist:
+  - "567e0b5d-1516-4ce0-b4e8-bec4e756d5ae" #kevinmh
+  - "c1490c08-8f51-45aa-b0d8-6bf836d1eb3a" #james.sta01
+  - "bc6295f3-84bb-4d6e-a46d-bd3f9134a140" #ericsta1
+  - "c3dfff9d-b6a5-4732-8ac1-40321b8b67b6" #erictest2
+  - "5eee8b2b-5c11-4e81-b084-858b9a958653" #lucaslu1
+signInRewardsV3: # group c rewards point
+  - exp: 30
+    url: "https://cdn.17app.co/d8348af8-991e-4196-99ff-703b26d691e4.png"
+    oldURL: "https://cdn.17app.co/81bb4397-06f1-4939-a6ad-843aa150ee6c.png"
+    point: 10
+  - exp: 35
+    url: "https://cdn.17app.co/d8348af8-991e-4196-99ff-703b26d691e4.png"
+    oldURL: "https://cdn.17app.co/a12fcf0a-d79e-4209-94a7-a2c0f5d55bc5.png"
+    point: 50
+  - exp: 40
+    url: "https://cdn.17app.co/d8348af8-991e-4196-99ff-703b26d691e4.png"
+    oldURL: "https://cdn.17app.co/14718574-9743-4fcf-93b8-315026eec52d.png"
+    point: 10
+  - exp: 45
+    url: "https://cdn.17app.co/d8348af8-991e-4196-99ff-703b26d691e4.png"
+    oldURL: "https://cdn.17app.co/10d70bdd-e67a-49d4-b916-366aac3536f2.png"
+    point: 50
+  - exp: 50
+    url: "https://cdn.17app.co/d8348af8-991e-4196-99ff-703b26d691e4.png"
+    oldURL: "https://cdn.17app.co/37538b2e-c5d2-4803-8f1f-b5486b752f66.png"
+    point: 10
+  - exp: 55
+    url: "https://cdn.17app.co/d8348af8-991e-4196-99ff-703b26d691e4.png"
+    oldURL: "https://cdn.17app.co/312d959a-4c2b-4901-bc93-651050074c9b.png"
+    point: 50
+  - exp: 60
+    url: "https://cdn.17app.co/d8348af8-991e-4196-99ff-703b26d691e4.png"
+    oldURL: "https://cdn.17app.co/778de112-1141-414e-8124-28a499de2252.png"
+    point: 100
+signInRewards:
+  - exp: 30
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://cdn.17app.co/405c44b2-2077-4f46-9dab-9bbd38ad6b46.png"
+  - exp: 35
+    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
+    oldURL: "https://cdn.17app.co/67e08710-3354-4c6d-b343-12075e46f3cb.png"
+    voucherReward:
+      type: 1
+      itemID: "gift_wave_update_ops"
+      tokenName: "voucher_daily_reward12"
+      amount: 2
+      intervalSec: 28800
+  - exp: 40
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://cdn.17app.co/029c0b86-9dc5-4e4f-8e3c-1e0bf66e8e05.png"
+  - exp: 45
+    url: "https://cdn.17app.co/b5b41643-def9-400d-bb08-90990d3ffd9b.png"
+    oldURL: "https://cdn.17app.co/c1d16b94-818e-4a5e-b6bc-99178a3dc097.png"
+    voucherReward:
+      type: 1
+      itemID: "gift_cat_ops"
+      tokenName: "voucher_daily_reward_cat_1"
+      amount: 2
+      intervalSec: 28800
+  - exp: 50
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://cdn.17app.co/808dbc9a-19ec-42a4-a661-80ba8d340bd0.png"
+  - exp: 55
+    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
+    oldURL: "https://cdn.17app.co/c2b14c19-47d9-466b-bcc2-f94d8a4e52d8.png"
+    voucherReward:
+      type: 1
+      itemID: "gift_wave_update_ops"
+      tokenName: "voucher_daily_reward12"
+      amount: 2
+      intervalSec: 28800
+  - exp: 60
+    url: "https://cdn.17app.co/e87b658e-3cdf-4c45-97c5-9578b33c9959.png"
+    oldURL: "https://cdn.17app.co/fc22a990-b55a-4b52-a8d0-997778097f8f.png"
+    voucherReward:
+      type: 1
+      itemID: "gift_hedgehog_ops"
+      tokenName: "voucher_daily_reward_gift_hedgehog"
+      amount: 1
+      intervalSec: 28800
+  - exp: 30
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://cdn.17app.co/405c44b2-2077-4f46-9dab-9bbd38ad6b46.png"
+  - exp: 35
+    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
+    oldURL: "https://cdn.17app.co/67e08710-3354-4c6d-b343-12075e46f3cb.png"
+    voucherReward:
+      type: 1
+      itemID: "gift_wave_update_ops"
+      tokenName: "voucher_daily_reward12"
+      amount: 2
+      intervalSec: 28800
+  - exp: 40
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://cdn.17app.co/029c0b86-9dc5-4e4f-8e3c-1e0bf66e8e05.png"
+  - exp: 45
+    url: "https://cdn.17app.co/05e17421-568d-46d3-885e-ce21c24fa09f.png"
+    oldURL: "https://cdn.17app.co/f075190d-9ed0-4b46-bba6-8638580c049f.png"
+    voucherReward:
+      type: 1
+      itemID: "gift_cat_2_ops"
+      tokenName: "voucher_daily_reward_cat_2"
+      amount: 2
+      intervalSec: 28800
+  - exp: 50
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://cdn.17app.co/808dbc9a-19ec-42a4-a661-80ba8d340bd0.png"
+  - exp: 55
+    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
+    oldURL: "https://cdn.17app.co/c2b14c19-47d9-466b-bcc2-f94d8a4e52d8.png"
+    voucherReward:
+      type: 1
+      itemID: "gift_wave_update_ops"
+      tokenName: "voucher_daily_reward12"
+      amount: 2
+      intervalSec: 28800
+  - exp: 60
+    url: "https://cdn.17app.co/e87b658e-3cdf-4c45-97c5-9578b33c9959.png"
+    oldURL: "https://cdn.17app.co/fc22a990-b55a-4b52-a8d0-997778097f8f.png"
+    voucherReward:
+      type: 1
+      itemID: "gift_hedgehog_ops"
+      tokenName: "voucher_daily_reward_gift_hedgehog"
+      amount: 2
+      intervalSec: 28800
+  - exp: 30
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://cdn.17app.co/405c44b2-2077-4f46-9dab-9bbd38ad6b46.png"
+  - exp: 35
+    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
+    oldURL: "https://cdn.17app.co/67e08710-3354-4c6d-b343-12075e46f3cb.png"
+    voucherReward:
+      type: 1
+      itemID: "gift_wave_update_ops"
+      tokenName: "voucher_daily_reward12"
+      amount: 2
+      intervalSec: 28800
+  - exp: 40
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://cdn.17app.co/029c0b86-9dc5-4e4f-8e3c-1e0bf66e8e05.png"
+  - exp: 45
+    url: "https://cdn.17app.co/8a8c8f86-230e-4c2f-a5ae-bbb52416b4ea.png"
+    oldURL: "https://cdn.17app.co/87fabf3f-276d-4f7e-bff0-706c743e7269.png"
+    voucherReward:
+      type: 1
+      itemID: "gift_dog_ops"
+      tokenName: "voucher_daily_reward_gift_dog_ops"
+      amount: 2
+      intervalSec: 28800
+  - exp: 50
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://cdn.17app.co/808dbc9a-19ec-42a4-a661-80ba8d340bd0.png"
+  - exp: 55
+    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
+    oldURL: "https://cdn.17app.co/c2b14c19-47d9-466b-bcc2-f94d8a4e52d8.png"
+    voucherReward:
+      type: 1
+      itemID: "gift_wave_update_ops"
+      tokenName: "voucher_daily_reward12"
+      amount: 2
+      intervalSec: 28800
+  - exp: 60
+    url: "https://cdn.17app.co/ffc1b509-2525-4eb1-bbcd-7d938da3d44b.png"
+    oldURL: "https://cdn.17app.co/884f1865-52f5-4529-968b-3f483c8e257a.png"
+    voucherReward:
+      type: 1
+      itemID: "gift_rabbit_ops"
+      tokenName: "voucher_daily_reward_gift_rabbit"
+      amount: 1
+      intervalSec: 28800
+  - exp: 30
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://cdn.17app.co/405c44b2-2077-4f46-9dab-9bbd38ad6b46.png"
+  - exp: 35
+    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
+    oldURL: "https://cdn.17app.co/67e08710-3354-4c6d-b343-12075e46f3cb.png"
+    voucherReward:
+      type: 1
+      itemID: "gift_wave_update_ops"
+      tokenName: "voucher_daily_reward12"
+      amount: 2
+      intervalSec: 28800
+  - exp: 40
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://cdn.17app.co/029c0b86-9dc5-4e4f-8e3c-1e0bf66e8e05.png"
+  - exp: 45
+    url: "https://cdn.17app.co/8a8c8f86-230e-4c2f-a5ae-bbb52416b4ea.png"
+    oldURL: "https://cdn.17app.co/87fabf3f-276d-4f7e-bff0-706c743e7269.png"
+    voucherReward:
+      type: 1
+      itemID: "gift_dog_ops"
+      tokenName: "voucher_daily_reward_gift_dog_ops"
+      amount: 2
+      intervalSec: 28800
+  - exp: 50
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://cdn.17app.co/808dbc9a-19ec-42a4-a661-80ba8d340bd0.png"
+  - exp: 55
+    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
+    oldURL: "https://cdn.17app.co/c2b14c19-47d9-466b-bcc2-f94d8a4e52d8.png"
+    voucherReward:
+      type: 1
+      itemID: "gift_wave_update_ops"
+      tokenName: "voucher_daily_reward12"
+      amount: 2
+      intervalSec: 28800
+  - exp: 60
+    url: "https://cdn.17app.co/956ef8ca-ca74-4a0b-9aeb-836a04fba2e2.png"
+    oldURL: "https://cdn.17app.co/b016df61-0739-4e07-ae6e-8029fe5fc491.png"
+    voucherReward:
+      type: 1
+      itemID: "gift_hamster_ops"
+      tokenName: "voucher_daily_reward_gift_hamster"
+      amount: 1
+      intervalSec: 28800
+
+rewardLoopIOSSupport: "3.25.0"
+rewardLoopAndroidSupport: "2.3.38"
+# earliest version that implements new UI layout 
+# https://docs.google.com/document/d/1p1F9Wq999F63hXfXy52LIvtq3r7hgzTOgrT-nunhXKA/
+rewardURLIOSSupport: "3.106.200"
+rewardURLAndroidSupport: "2.19.0"
+
+# daily for showing bigRewards UI, must be 4 elements
+bigRewards:
+  - amount: 1
+    tokenName: "voucher_daily_reward_gift_hedgehog"
+    days: 7
+    url: "https://assets-17app.akamaized.net/6a4cfdaf-8e51-4c3b-92c5-7ac0e82dacb5.png"
+  - amount: 2
+    tokenName: "voucher_daily_reward_gift_hedgehog"
+    days: 14
+    url: "https://assets-17app.akamaized.net/6a4cfdaf-8e51-4c3b-92c5-7ac0e82dacb5.png"
+  - amount: 1
+    tokenName: "voucher_daily_reward_gift_rabbit"
+    days: 21
+    url: "https://assets-17app.akamaized.net/85a23fee-f3a3-4840-a3da-43cf20580802.png"
+  - amount: 1
+    tokenName: "voucher_daily_reward_gift_hamster"
+    days: 28
+    url: "https://assets-17app.akamaized.net/69eafbfc-6b6b-4a99-b329-1692c10852ea.png"
+
+# time interval for resetting daily quest counter
+questInterval: 3600
+
+# newbie_days defines who is newbie
+newbieDays: 7
+
+# idleHintSec defines how long will newbie quest dialog popup after being idle
+idleHintSec: 60
+
+# checkPNAfterComplete defines how much newbie missions be completed will request client to check PN
+checkPNAfterComplete: 2
+
+# newbie_rewards defines newbie quest rewards
+# type are defined as following
+# - 1: DAILY_CHECK_IN
+# - 2: ENTER_LIVE
+# - 3: FOLLOW_STREAMER
+# - 4: WATCH_CLIP
+# - 5: JOIN_17Q
+# - 6: LIVE_CHECK_IN_SIX
+# - 7: LIVE_CHECK_IN_SEVEN
+# - 8: LIKE_POST
+# - 9: COMMENT_LIVE
+# - 10: SEND_GIFT
+# - 11: BUY_POINT
+# ex:
+#   - type: 1
+#     point: 25
+#     exp: 0
+#     required: 1
+#     requirePhoneBinding: false
+#     requireDeviceCheck: true
+newbieRewards:
+    - type: 1
+      point: 50
+      exp: 0
+      required: 2
+      requirePhoneBinding: false
+      requireDeviceCheck: true
+    - type: 2
+      point: 20
+      exp: 0
+      required: 1
+      requirePhoneBinding: false
+      requireDeviceCheck: true
+    - type: 3
+      point: 20
+      exp: 0
+      required: 1
+      requirePhoneBinding: false
+      requireDeviceCheck: true
+    - type: 5
+      point: 30
+      exp: 0
+      required: 1
+      requirePhoneBinding: false
+      requireDeviceCheck: true
+#    - type: 8
+#      point: 20
+#      exp: 0
+#      required: 1
+#      requirePhoneBinding: false
+#      requireDeviceCheck: true
+    - type: 9
+      point: 20
+      exp: 0
+      required: 3
+      requirePhoneBinding: false
+      requireDeviceCheck: true
+    - type: 10
+      point: 30
+      exp: 0
+      required: 1
+      requirePhoneBinding: false
+      requireDeviceCheck: true
+#    - type: 11
+#      point: 100
+#      exp: 0
+#      required: 1
+#      requirePhoneBinding: false
+#      requireDeviceCheck: true
+    - type: 12
+      point: 0
+      exp: 0
+      required: 10
+      requirePhoneBinding: false
+      requireDeviceCheck: true
+      voucherReward:
+        type: 3
+        itemID: "great"
+        amount: 1
+        intervalSec: 28800
+    - type: 13
+      point: 0
+      exp: 0
+      required: 30
+      requirePhoneBinding: false
+      requireDeviceCheck: true
+      voucherReward:
+        type: 3
+        itemID: "bravo"
+        amount: 2
+        intervalSec: 28800
+    - type: 14
+      point: 0
+      exp: 0
+      required: 2
+      requirePhoneBinding: false
+      requireDeviceCheck: true
+      voucherReward:
+        type: 3
+        itemID: "socute"
+        amount: 3
+        intervalSec: 28800

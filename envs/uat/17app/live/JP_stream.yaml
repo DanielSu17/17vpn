@@ -1,0 +1,177 @@
+pnCheckNotif: 300 # 5 mins
+minAndroidCaptionBlockVersion: "2.13.0"
+minIOSCaptionBlockVersion: "3.101.0"
+
+forcePromoteVirtualStream: true
+enableExtInfoTypeEvent: true
+
+followerCountTriggerEvent: 100000
+
+programDefaultComments: #全部 program 預設留言
+  - commentsInfo:
+      - content: "Hello😀"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "😂😂😂"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "👏👏"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "👍👍👍"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "🙌🙌"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+
+defaultComments:
+  - specificTimeFrame: true
+    startTime: "00:00:00"
+    endTime: "03:59:59"
+    comments:
+      ["こんばんは", "👏👏👏", "|ω･`)ﾁﾗ", "σ*'-'*) ﾂﾝﾂﾝ", "ｵｼﾞｬﾏｼﾏｽ (≧∇≦)"]
+    commentsInfo:
+      - content: "こんばんは"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "👏👏👏"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "|ω･`)ﾁﾗ"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "σ*'-'*) ﾂﾝﾂﾝ"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "ｵｼﾞｬﾏｼﾏｽ (≧∇≦)"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+  - specificTimeFrame: true
+    startTime: "04:00:00"
+    endTime: "11:59:59"
+    comments:
+      ["おはよー", "👏👏👏", "|ω･`)ﾁﾗ", "σ*'-'*) ﾂﾝﾂﾝ", "ｵｼﾞｬﾏｼﾏｽ (≧∇≦)"]
+    commentsInfo:
+      - content: "おはよー"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "👏👏👏"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "|ω･`)ﾁﾗ"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "σ*'-'*) ﾂﾝﾂﾝ"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "ｵｼﾞｬﾏｼﾏｽ (≧∇≦)"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+  - specificTimeFrame: true
+    startTime: "12:00:00"
+    endTime: "17:59:59"
+    comments:
+      ["こんにちは", "👏👏👏", "|ω･`)ﾁﾗ", "σ*'-'*) ﾂﾝﾂﾝ", "ｵｼﾞｬﾏｼﾏｽ (≧∇≦)"]
+    commentsInfo:
+      - content: "こんにちは"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "👏👏👏"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "|ω･`)ﾁﾗ"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "σ*'-'*) ﾂﾝﾂﾝ"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "ｵｼﾞｬﾏｼﾏｽ (≧∇≦)"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+  - specificTimeFrame: true
+    startTime: "18:00:00"
+    endTime: "23:59:59"
+    comments:
+      ["こんばんは", "👏👏👏", "|ω･`)ﾁﾗ", "σ*'-'*) ﾂﾝﾂﾝ", "ｵｼﾞｬﾏｼﾏｽ (≧∇≦)"]
+    commentsInfo:
+      - content: "こんばんは"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "👏👏👏"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "|ω･`)ﾁﾗ"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "σ*'-'*) ﾂﾝﾂﾝ"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "ｵｼﾞｬﾏｼﾏｽ (≧∇≦)"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+hotListOrder: ["JP", "US", "TW", "OTHERS"]
+hotCellOrder:
+  regionGroups:
+    - regions: ["JP"]
+    - regions: ["US"]
+    - regions: ["TW"]
+    - regions: ["OTHERS"]
+birthdayComment:
+  contentColor: "#28232D"
+  backgroundColor: "#FFFFFF"
+
+comment:
+  program:
+    enableLengthCheck: true
+    maxLength: 150
+
+entryIcons:
+  "REDENVELOPE":
+    iconURL: "https://assets-17app.akamaized.net/c8067d2b-f74f-4704-ab91-bec3ac550605.png"
+  "BIRTHDAY":
+    iconURL: "https://assets-17app.akamaized.net/2abf9755-e1a4-4c17-8d38-d2dabacecf40.png"
+  "MUSIC":
+    iconURL: "https://assets-17app.akamaized.net/94fdc45b-57d2-499d-80e0-d491ae0ceff3.png"
+  "ANNIVERSARY":
+    iconURL: "https://assets-17app.akamaized.net/caa36894-ec0a-4020-b982-dfc294ee9f27.png"
+  "GAMING":
+    iconURL: "https://assets-17app.akamaized.net/56b8b37d-d801-4cb9-8f37-ef32e46fe48b.png"
+  "MUSICJP":
+    iconURL: "https://cdn.17app.co/92d4cab8-8be7-4e2d-85ce-009f970fa280.png"
+
+baggageMissionNotif:
+  nthLive: 10
+  showUpSeconds: 5
+
+namecardNotif:
+  period: 30
+  times: 4
+
+levelUpGiftNotif:
+  # example:
+  # gifts:
+  #   - giftID: "test"
+  #     beginTime: 2019-01-02 15:04:05 (GMT+0800)
+  #     endTime: 2019-01-16 15:04:05 (GMT+0800)
+  gifts:
+    - giftID: "qaarpk"
+      beginTime: 2019-01-28 01:04:05 (GMT+0800)
+      endTime: 2019-02-10 15:04:05 (GMT+0800)
+  period: 15
+  nthLive: 10
+
+layoutGiftNotif:
+  gifts:
+    - giftID: "gift_layout_like"
+      beginTime: 2019-09-01 08:31:00 (GMT+0800)
+      endTime: 2019-09-30 08:31:00 (GMT+0800)
+  period: 15
+  nthLive: 10
+
+programCommentPin:
+  enable: true
+
+pkFrameID: "pk_winner_frame"
+pkFrameURL: "https://cdn.17app.co/6ae73d06-4010-4696-80a2-d20640709ccf.png"
+pkIOSFrameURL: "https://cdn.17app.co/7d5dd83d-8b8f-4acf-abdd-fb04717af49f.png"

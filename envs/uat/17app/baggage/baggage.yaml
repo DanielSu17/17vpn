@@ -1,0 +1,49 @@
+newLogicForUseItem: true
+handleExpiredValuableItems: true
+
+archiveToBQ: true
+archiveOption:
+  archiveThresholdInHours: 168
+  excludeHours:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 21
+    - 22
+    - 23
+  maxExecutionSecs: 1800
+  maxDeletionRows: 100000
+  maxSecondsBehindMaster: 30
+  bqDatasetName: "ArchivedData"
+  bqTableName: "MySQL_Baggage_STAG"
+  batchSize: 1000
+  waitSecs: 30
+
+useCacheForUsedItems: true
+cacheOption:
+  useGroupfilter: true
+  availableGroups:
+    - '0'
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    - '7'
+    - '8'
+    - '9'
+    - '0'
+    - 'a'
+    - 'b'
+    - 'c'
+    - 'd'
+    - 'e'
+    - 'f'
+  whitelist: []

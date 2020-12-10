@@ -1,0 +1,57 @@
+# Poll setting
+# MUST make sure that corresponding gift ids exist in gift database
+# In this case, they should be poll_option_{a|b|c|d|e}_{30|49|99|199|399|599|3999} by the value of giftIDTempalte
+minTTL: 1
+maxTTL: 60
+maxTitleDescLen: 20
+maxOptDescLen: 10
+minOptionCount: 2
+maxOptionCount: 5
+freeVoteEnable: true
+freeVoteWhitelist: []
+availableLimit:
+  mins: 1
+  count: 5
+freeVoteAndroidVersion: 2.3.67
+freeVoteIOSVersion: 3.44.0
+defaultPrice: 99
+enableFreePriceForOfficialTopics: true # 官方話題可選擇0點
+availablePrice:
+  5:
+  30:
+  49:
+  99:
+  199:
+  399:
+  599:
+  3999:
+availableOptionID:
+  - poll_option_a
+  - poll_option_b
+  - poll_option_c
+  - poll_option_d
+  - poll_option_e
+giftIDTemplate: '{{.OptionID}}_{{.Price}}'
+userSettings:
+  e3c4c804-8a9c-4b7c-8026-0a8ed602b42c: # jen87go
+    price: 0
+    limitMins: 1
+    limitCount: 200
+  ac1a55f1-bc59-406d-92e4-96301cc5d04e: # kevtest10
+    price: 0
+    limitMins: 1
+    limitCount: 1
+  ca6fc990-790c-49a9-9cb0-bfee75de85e1: # donkeyontheway
+    price: 0
+    limitMins: 2
+    limitCount: 1
+  774af18b-fd24-412d-929d-694d48872c90: # testCrossco
+    price: 0
+    limitMins: 2
+    limitCount: 1
+
+hotTopic: "today_hot_topic"
+topics:
+  - tag: "男女"
+    title: "選ぶならどっち？"
+    options: ["美形で性悪", "ブサイクな良い人"]

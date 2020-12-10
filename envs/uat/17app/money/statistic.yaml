@@ -1,0 +1,71 @@
+jpPaymentServiceAct:
+  enabledGroup:
+    - "0"
+    - "1"
+    - "2"
+    - "3"
+    - "4"
+    - "5"
+    - "6"
+    - "7"
+    - "8"
+    - "9"
+    - "a"
+    - "b"
+    - "c"
+    - "d"
+    - "e"
+    - "f"
+partitionPlan:
+  getLogSwitchToV2: true
+  getTradeLogSwitchToV2: true
+  getUserEarningSwithToV2: true
+  getTriviaRevenueSwitchToV2: true
+  getCTReportSwitchToV2: false
+  samplePercentage: 0
+  switchToCTReportV2: true
+  switchInsert: true
+  switchInsertTimeMs: 1586491200000
+
+pointReceiverLogsPlan:
+  enableCache: true
+  cachingLimitQPS: 20
+  maxCachingWindowSec: 2592000 # 30 days
+  dayOffset: -2
+  migrateState: 2 # 0: disable, 1: mysql, 2: mongo
+  syncPlans:
+    - name: latest
+      startID: 85620055 # 1584356836 Monday, March 16, 2020 7:07:16 PM GMT+08:00
+      intervals: 100000
+    - name: senderSync
+      startID: 0
+      intervals: 200000
+
+pointUsageLogsPlan:
+  migrateState: 2
+  syncPlans:
+    - name: latest
+      startID: 0 # 1584356836 Monday, March 16, 2020 7:07:16 PM GMT+08:00
+      intervals: 10000
+    - name: resync
+      startID: 37098934
+      intervals: 123456
+
+pointGainLogsPlan:
+  migrateState: 2 # 0: disable, 1: mysql, 2: mongo
+  syncPlans:
+    - name: latest
+      startID: 0
+      intervals: 100000
+
+updateRevenueCron:
+  enable: true
+  enableTime: 2020-01-21 11:40:00 (GMT+0800)
+  whitelist:
+    e257e914-5009-48d9-5e8b-3c6da3f2026f: 2020-02-04 11:00:00 (GMT+0800) #lllt.summer
+    2a091777-b06d-4cad-9b02-70193365e1e3: 2020-02-04 15:30:00 (GMT+0800) #ftcy0118
+    b2f9da8f-b2b6-4f06-bd28-6fbda98e4f43: 2020-02-05 15:50:00 (GMT+0800) #qacontractor1
+    5435ae09-00d6-42a2-9a27-a173013a6eab: 2020-02-05 15:50:00 (GMT+0800) #多喝水沒是
+    6fb75997-10e8-4216-9f8b-58aaa7588d61: 2020-02-05 17:30:00 (GMT+0800) #giftasync1
+  enableAllUserTime: 2020-03-19 11:30:00 (GMT+0800)
+  enableAllUser: true

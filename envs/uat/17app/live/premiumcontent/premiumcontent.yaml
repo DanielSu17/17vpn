@@ -1,0 +1,356 @@
+# 開播期間必須小於3天，若超過會失效
+#
+
+supportedVersion:
+  android: "2.10.0"
+  ios: "3.97.0"
+
+enable: true
+
+armyOnlySupportedVersion:
+  android: "2.26.2"
+  ios: "3.113.0"
+
+armyOnlyEnabled: true
+
+
+# DO NOT EDIT THIS SECTION
+# temporary add pull rate limit back
+pullRateLimit:
+  enable: true
+  period: 300
+  threshold: 60
+  slackThreshold: 10
+  slackChannel: "dev-pullurl-alert"
+  pullUrlTTL: 15
+  deviceLimit: 5
+  slackDeviceLimit: 3
+
+
+# for skyeye ...etc.
+# Deprecated after 2020/08/10. Please use paidWhiteList instead.
+globalWhiteList:
+  - 4494f23b-407f-4856-4f0f-19f2ee1694b7 #17skyeyehanna
+  - 82ab768e-c226-4274-98ac-b5460c002062 #17skyeyeyoru
+  - ed067f38-2c88-40ae-bba1-c2beb0d28b88 #17skyeyeshelly
+  - 14dde9ff-40f4-4b9d-adbf-0f1f2e162eb6 #17skyeyeelly
+  - fac45094-5f20-4045-a93a-e60be7eb1f57 #17skyeyetina
+  - 22ac1d54-10e5-4a1e-446b-d5c192f72983 #17skyeyeximer
+  - a1953b89-f975-462c-89c7-9554bd296022 #人造人17號
+  - a3321d45-424c-45a9-6b08-6cbfaf8d75bf #17skyeyequeenie.s
+  # below list are Engineering/Product colleagues for monitoring streaming status
+  # | userID                             | openID        | slack name
+  # - 51eac440-8d97-476b-97f8-05177806f6ea # eindeloos     - Alex Liao (Backend)
+  - 00c0bc02-c6df-448c-8385-114288e51d83 # 7794Q         - Chloris (PM)
+  - f2750e1d-d6c4-4486-5b4a-ab7f6ae24126 # janet.w       - janet (QA)
+  - b1eb1a0f-f37b-4386-8722-2f789240ace2 # 是凱麗兒       - KH Hsu (SRE)
+  - e2defe68-72d5-423a-bc29-58f4443c9a0d # guachi        - kuoandy (Backend)
+  - 0e7229aa-0699-41d6-7fc7-556d5ce14841 # readper       - Readper (Backend)
+  - b1785cd1-8a91-4d36-ae6e-2af2391a8a8c # forestrick    - Rick (SRE)
+  - 231435b4-e97a-4916-ad84-b2bf8a1ac910 # sammylintw20  - Sammy (SRE)
+  - 67a34ab9-359f-482e-ac77-56889e65cb56 # scotthsieh17  - Scott Hsieh (SRE)
+  - 677dd3e4-ca99-4f33-97fa-e6e4af0ef14c # tobby112      - Tobby (SRE)
+  - c6e35e23-2018-47b2-afc8-adfd8ace1e22 # iron97        - YC (Android)
+
+# users in paidWhiteList are able to see paid premium contents
+# for skyeye ...etc.
+paidWhiteList:
+  - 4494f23b-407f-4856-4f0f-19f2ee1694b7 #17skyeyehanna
+  - 82ab768e-c226-4274-98ac-b5460c002062 #17skyeyeyoru
+  - ed067f38-2c88-40ae-bba1-c2beb0d28b88 #17skyeyeshelly
+  - 14dde9ff-40f4-4b9d-adbf-0f1f2e162eb6 #17skyeyeelly
+  - fac45094-5f20-4045-a93a-e60be7eb1f57 #17skyeyetina
+  - 22ac1d54-10e5-4a1e-446b-d5c192f72983 #17skyeyeximer
+  - a1953b89-f975-462c-89c7-9554bd296022 #人造人17號
+  - a3321d45-424c-45a9-6b08-6cbfaf8d75bf #17skyeyequeenie.s
+  # below list are Engineering/Product colleagues for monitoring streaming status
+  # | userID                             | openID        | slack name
+  # - 51eac440-8d97-476b-97f8-05177806f6ea # eindeloos     - Alex Liao (Backend)
+  - 00c0bc02-c6df-448c-8385-114288e51d83 # 7794Q         - Chloris (PM)
+  - f2750e1d-d6c4-4486-5b4a-ab7f6ae24126 # janet.w       - janet (QA)
+  - b1eb1a0f-f37b-4386-8722-2f789240ace2 # 是凱麗兒       - KH Hsu (SRE)
+  - e2defe68-72d5-423a-bc29-58f4443c9a0d # guachi        - kuoandy (Backend)
+  - 0e7229aa-0699-41d6-7fc7-556d5ce14841 # readper       - Readper (Backend)
+  - b1785cd1-8a91-4d36-ae6e-2af2391a8a8c # forestrick    - Rick (SRE)
+  - 231435b4-e97a-4916-ad84-b2bf8a1ac910 # sammylintw20  - Sammy (SRE)
+  - 67a34ab9-359f-482e-ac77-56889e65cb56 # scotthsieh17  - Scott Hsieh (SRE)
+  - 677dd3e4-ca99-4f33-97fa-e6e4af0ef14c # tobby112      - Tobby (SRE)
+  - c6e35e23-2018-47b2-afc8-adfd8ace1e22 # iron97        - YC (Android)
+  - be344858-0a95-4e00-a1a2-13b26c855c5b # chyuan.tw     - Eric Lin(TW iOS)
+
+# users in armyOnlyWhiteList are able to see army only premium contents
+armyOnlyWhiteList:
+  - 4494f23b-407f-4856-4f0f-19f2ee1694b7 #17skyeyehanna
+  - 82ab768e-c226-4274-98ac-b5460c002062 #17skyeyeyoru
+  - ed067f38-2c88-40ae-bba1-c2beb0d28b88 #17skyeyeshelly
+  - 14dde9ff-40f4-4b9d-adbf-0f1f2e162eb6 #17skyeyeelly
+  - fac45094-5f20-4045-a93a-e60be7eb1f57 #17skyeyetina
+  - 22ac1d54-10e5-4a1e-446b-d5c192f72983 #17skyeyeximer
+  - a1953b89-f975-462c-89c7-9554bd296022 #人造人17號
+  - a3321d45-424c-45a9-6b08-6cbfaf8d75bf #17skyeyequeenie.s
+  # below list are Engineering/Product colleagues for monitoring streaming status
+  # | userID                             | openID        | slack name
+  - c52c9260-119d-423c-afc8-a2c8aa3a7a02 # jameschou01   - James Chou(TW QA)
+  - 1276c44e-dd76-48fb-8813-12bdfb63b727 # erickraz      - Eric Fan(TW Backend)
+  - be344858-0a95-4e00-a1a2-13b26c855c5b # chyuan.tw     - Eric Lin(TW iOS)
+enableUnLockCountOnUI: false
+
+# example
+# paidStreams:
+#  - streamerID: "userID1"
+#    period:
+#      - beginTime: "2020-03-31 08:00:00 (GMT+0800)" #期間1
+#        endTime: "2020-03-31 23:59:59 (GMT+0800)" #不能設超過3天的開播期間
+#        previewURL: "https://123.mp4"
+#        price: 5566
+#        whiteList:
+#          - "userID2"
+#      - beginTime: "2020-04-31 08:00:00 (GMT+0800)" #期間1
+#        endTime: "2020-04-31 23:59:59 (GMT+0800)"
+
+paidStreams:
+  - streamerID: "7311739d-5f76-4749-6269-9f32187609e7" # 87Band
+    period:
+      - beginTime: "2020-09-19 19:40:00 (GMT+0800)"
+        endTime: "2020-09-19 22:30:00 (GMT+0800)"
+        price: 1780
+        previewURL: ""
+        whiteList:
+          - "6f2774bb-88f1-4973-86a7-bdbfb569b431" #love書庭1314暖男
+          - "e1bdaec8-ff8b-4e83-b346-f2d464fe6df2" #MIN純
+          - "27df4f51-85f6-4c8c-ae6a-a6922e121d8e" #hitomi1001
+          - "5b1e5915-fcee-405b-a6a6-621775a7f626" #Cora拉拉
+
+  - streamerID: "e3a69570-6384-4161-4404-06d7f0680894" # 樂悠悠主打星
+    period:
+      - beginTime: "2020-08-10 20:00:00 (GMT+0800)"
+        endTime: "2020-08-10 23:30:00 (GMT+0800)"
+        price: 499
+        previewURL: ""
+        whiteList: []
+        
+  - streamerID: "68f1e4a9-aff0-4253-a282-e2c775edd0c8" # qacontractor8
+    period:
+      - beginTime: "2020-10-12 10:00:00 (GMT+0800)"
+        endTime: "2020-10-14 23:30:00 (GMT+0800)"
+        price: 49
+        previewURL: ""
+        whiteList: []
+
+  - streamerID: "2e95de40-7880-422b-7f3b-0af9405e3b4d" # janet.w02
+    period:
+      - beginTime: "2020-10-06 08:00:00 (GMT+0800)"
+        endTime: "2020-10-06 23:59:59 (GMT+0800)"
+        price: 100
+        previewURL: ""
+        whiteList:
+          - "816ec49a-58fe-4e95-bb60-4feccfbdcfd4" #janet.w08151
+          - "cd641fcf-a41b-457d-8d08-39655d5dd5d9" #janet.w08152
+
+  - streamerID: "ae7de094-f3ae-4de6-9037-e4f190acdbf1" # qacontractor9
+    period:
+      - beginTime: "2020-10-06 08:00:00 (GMT+0800)"
+        endTime: "2020-10-06 23:59:59 (GMT+0800)"
+        price: 100
+        previewURL: "http://cdn.17app.co/go-dev/clip/0wbblhPffeIfJDCazsWWGM9vvY0.mp4"
+        whiteList:
+          - "816ec49a-58fe-4e95-bb60-4feccfbdcfd4" #janet.w08151
+          - "cd641fcf-a41b-457d-8d08-39655d5dd5d9" #janet.w08152
+      - beginTime: "2020-10-07 08:00:00 (GMT+0800)"
+        endTime: "2020-10-07 23:59:59 (GMT+0800)"
+        price: 100
+        previewURL: "http://cdn.17app.co/go-dev/clip/0wbblhPffeIfJDCazsWWGM9vvY0.mp4"
+        whiteList: []
+      - beginTime: "2020-10-12 08:00:00 (GMT+0800)"
+        endTime: "2020-10-14 23:59:59 (GMT+0800)"
+        price: 100
+        previewURL: "http://cdn.17app.co/go-dev/clip/0wbblhPffeIfJDCazsWWGM9vvY0.mp4"
+        whiteList: []
+
+  - streamerID: "093e2393-4701-4980-a27b-f053708ad02e" #willyding
+    period:
+      - beginTime: "2020-06-08 14:00:00 (GMT+0800)"
+        endTime: "2020-06-08 15:00:00 (GMT+0800)"
+        previewURL: ""
+        price: 499
+        whiteList:
+          - "14c16a42-552d-4d47-ba01-166b6e0f14a3" #節目小編
+          - "9d0d1d8f-9f2e-4b6e-b5ac-5338f3f39d5c" #f19860130
+          - "d3fb0012-5ce2-4f2a-bd3e-8d5d484ea46f" #威力丁
+          - "a2892a46-8099-4d31-a74d-cdec6a8904c1" #wengchiiiii
+
+
+
+  - streamerID: "ba6dfdc3-0c80-4a06-a7bc-364b5831565c" #holden12
+    period:
+      - beginTime: "2020-05-29 13:00:00 (GMT+0800)"
+        endTime: "2020-05-29 23:59:59 (GMT+0800)"
+        previewURL: "https://cdn.17app.co/986b08ae-802b-4153-bdce-4663e25f3723.mp4"
+        price: 17
+        whiteList:
+      - beginTime: "2020-06-03 13:50:00 (GMT+0800)"
+        endTime: "2020-06-03 15:10:00 (GMT+0800)"
+        previewURL: "https://cdn.17app.co/986b08ae-802b-4153-bdce-4663e25f3723.mp4"
+        price: 48
+        whiteList:
+          - "8805502b-503f-464e-b76a-5a9e2ca60ada" #taisho918
+          #- "f4b3fe6e-0cc9-4d12-bbc1-da8554f3680d" #holdenchu
+      - beginTime: "2020-06-10 18:50:00 (GMT+0800)"
+        endTime: "2020-06-10 20:10:00 (GMT+0800)"
+        previewURL: "https://cdn.17app.co/719123a5-0178-41ea-aed3-bf7bb536f2a2.mp4"
+        price: 8
+      - beginTime: "2020-07-10 11:50:00 (GMT+0800)"
+        endTime: "2020-07-10 20:10:00 (GMT+0800)"
+        previewURL: "https://cdn.17app.co/456b1072-72ac-447f-82ee-164e8becbbc7.mp4"
+        price: 2
+      - beginTime: "2020-07-28 10:00:00 (GMT+0800)"
+        endTime: "2020-07-28 20:10:00 (GMT+0800)"
+        previewURL: "https://cdn.17app.co/456b1072-72ac-447f-82ee-164e8becbbc7.mp4"
+        price: 22
+      - beginTime: "2020-07-28 20:00:01 (GMT+0800)"
+        endTime: "2020-07-29 01:10:00 (GMT+0800)"
+        previewURL: "https://cdn.17app.co/456b1072-72ac-447f-82ee-164e8becbbc7.mp4"
+        price: 11
+      - beginTime: "2020-07-30 20:00:01 (GMT+0800)"
+        endTime: "2020-07-31 01:10:00 (GMT+0800)"
+        previewURL: "https://cdn.17app.co/456b1072-72ac-447f-82ee-164e8becbbc7.mp4"
+        price: 11
+
+
+  - streamerID: "2e5c8de5-c860-452c-ade1-6193ca08a4d5" #vivianhuang85
+    period:
+      - beginTime: "2020-05-28 17:00:00 (GMT+0800)"
+        endTime: "2020-05-28 19:59:59 (GMT+0800)"
+        price: 17
+        whiteList:
+      - beginTime: "2020-06-03 09:00:00 (GMT+0800)"
+        endTime: "2020-06-03 13:59:59 (GMT+0800)"
+        price: 17
+        whiteList:
+      - beginTime: "2020-06-03 14:00:00 (GMT+0800)"
+        endTime: "2020-06-03 18:59:59 (GMT+0800)"
+        previewURL: "https://cdn.17app.co/986b08ae-802b-4153-bdce-4663e25f3723.mp4"
+        price: 171
+        whiteList:
+      - beginTime: "2020-09-24 08:00:00 (GMT+0800)"
+        endTime: "2020-09-24 19:59:59 (GMT+0800)"
+        previewURL: "https://cdn.17app.co/986b08ae-802b-4153-bdce-4663e25f3723.mp4"
+        price: 1717
+        whiteList:
+      - beginTime: "2020-09-25 08:00:00 (GMT+0800)"
+        endTime: "2020-09-25 19:59:59 (GMT+0800)"
+        previewURL: "https://cdn.17app.co/986b08ae-802b-4153-bdce-4663e25f3723.mp4"
+        price: 1717
+        whiteList:
+
+  - streamerID: "927d5f91-5245-4d44-a924-9a4632b0d22d" #james.mena16
+    period:
+      - beginTime: "2020-12-09 08:00:00 (GMT+0800)"
+        endTime: "2020-12-09 23:00:00 (GMT+0800)"
+        price: 20000
+        whiteList:
+
+  - streamerID: "741f82c1-e431-426d-b93d-209be9ae85ae" #nealx1
+    period:
+      - beginTime: "2020-11-27 08:00:00 (GMT+0800)"
+        endTime: "2020-11-29 23:59:59 (GMT+0800)"
+        price: 99
+        whiteList:
+
+  - streamerID: "14285db8-de44-47d5-b3e6-429d3b6e9d38" #aaqqaatw02
+    period:
+      - beginTime: "2020-10-22 08:00:00 (GMT+0800)"
+        endTime: "2020-10-23 18:00:00 (GMT+0800)"
+        price: 200000
+        whiteList:
+            - "b2523d4e-f221-4eb8-8748-9d6a68a3c935" #amyshen171
+
+  - streamerID: "58569d1e-70a2-4a2a-8f36-a52c89c759e6" #aaqqaatw03
+    period:
+      - beginTime: "2020-10-22 08:00:00 (GMT+0800)"
+        endTime: "2020-10-23 18:00:00 (GMT+0800)"
+        price: 200000
+        whiteList:
+            - "b2523d4e-f221-4eb8-8748-9d6a68a3c935" #amyshen171
+
+  - streamerID: "2763799d-18cc-4532-80f1-560e39ff2420" #PA_Channel
+    period:
+      - beginTime: "2020-05-28 19:50:00 (GMT+0900)"
+        endTime: "2020-05-28 21:10:00 (GMT+0900)"
+        previewURL: "https://cdn.17app.co/79012580-d5cc-40c8-ac87-e8172851ed3d.mp4"
+        price: 1720
+        whiteList:
+            - "2763799d-18cc-4532-80f1-560e39ff2420" #PA_Channel
+            - "0386b538-24ed-4906-550d-cf378561e778" #joyful_kaye
+            - "0851b82a-55ff-430d-a9d9-31151b11810f" #山田花美
+            - "09c47135-bfff-4a6d-90f5-aca67ec96b5e"
+            - "7cd2ce12-d902-4808-b0d6-d659053e5303"
+            - "932dc59e-92f3-4ebe-8864-74a69ff0f3fe"
+            - "f8d330d2-7f37-48df-a876-0969590706d8"
+            - "db381b0a-6c0c-4da6-4e7e-c5cad986098a"
+            - "8738bbee-3066-41ed-ba6c-091fe56fae24"
+            - "c8dd1651-0100-45fa-63ab-e66c4ec7170b"
+            - "d27dceb9-bc93-4e5c-7034-a64836bcb3bf"
+            - "3f00437c-617f-463c-42ae-afa342a237f6"
+            - "5dbe17e8-984e-4ca5-832d-fa8fedbd17fb"
+            - "1af49be7-8444-4126-4b12-4bb457324709"
+            - "e2defe68-72d5-423a-bc29-58f4443c9a0d"
+
+
+  - streamerID: "0851b82a-55ff-430d-a9d9-31151b11810f" #山田花美
+    period:
+      - beginTime: "2020-06-02 12:25:00 (GMT+0900)"
+        endTime: "2020-06-04 14:30:00 (GMT+0900)"
+        previewURL: "https://cdn.17app.co/32466fb1-d932-486c-9aa4-df7e899c16ef.mp4"
+        price: 10
+        whiteList:
+            - "0386b538-24ed-4906-550d-cf378561e778" #joyful_kaye
+            - "25d8e5a9-94da-43bf-a160-a74856ad5c16" #zoe
+            - "ba6dfdc3-0c80-4a06-a7bc-364b5831565c" #holden
+
+      - beginTime: "2020-05-28 15:00:00 (GMT+0900)"
+        endTime: "2020-05-28 16:00:00 (GMT+0900)"
+        previewURL: "https://cdn.17app.co/79012580-d5cc-40c8-ac87-e8172851ed3d.mp4"
+        price: 100
+        whiteList:
+            - "0386b538-24ed-4906-550d-cf378561e778" #joyful_kaye
+            - "25d8e5a9-94da-43bf-a160-a74856ad5c16" #zoe
+            - "ba6dfdc3-0c80-4a06-a7bc-364b5831565c" #holden
+
+  - streamerID: 3799d926-2ae2-4942-a510-847a017921cc # kevinmh01
+    period:
+      - beginTime : "2020-05-29 13:00:00 (GMT+0800)"
+        endTime: "2020-05-29 23:59:59 (GMT+0800)"
+        price: 10
+        previewURL: "https://cdn.17app.co/986b08ae-802b-4153-bdce-4663e25f3723.mp4"
+
+  - streamerID: "be2e8872-ac6e-42eb-a5db-6eec9006d576" #モトタク
+    period:
+      - beginTime: "2020-06-24 20:55:00 (GMT+0900)"
+        endTime: "2020-06-24 22:10:00 (GMT+0900)"
+        previewURL: "https://cdn.17app.co/a5927494-03c2-41c5-91b2-327dd21e8a9c.mp4"
+        price: 500
+        whiteList:
+            - "5f67547d-6377-4a8e-b501-a1adb35b5f53" #
+            - "86438144-6a79-47e5-53f7-71af6bd1a744" #
+            - "de374120-4a41-4a77-afbb-44920c8270ce" #
+            - "4cbe9d9e-b855-4b3a-925f-5dc882cedf58" #
+
+  - streamerID: 51eac440-8d97-476b-97f8-05177806f6ea # alex.l17
+    period:
+      - beginTime: "2020-10-05 14:00:00 (GMT+0800)"
+        endTime: "2020-10-05 19:00:00 (GMT+0800)"
+        previewURL: ""
+        price: 2000
+        whiteList:
+            - 9588c5b3-dd56-48b1-9be3-b0fa2648d373
+
+            
+  - streamerID: 5d516e92-bbb9-40d6-a495-41ffd077b889 #ななプロ
+    period:
+      - beginTime: "2020-10-15 11:12:00 (GMT+0900)"
+        endTime: "2020-10-15 19:00:00 (GMT+0900)"
+        previewURL: ""
+        price: 4000
+        whiteList:
+            - 

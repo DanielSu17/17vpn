@@ -1,0 +1,188 @@
+# // | handGestureType | Value |
+# // | --- | --- |
+# // | Heart A | 1 |
+# // | Heart B | 2 |
+# // | Heart C | 3 |
+# // | Heart D | 4 |
+# // | OK | 5 |
+# // | Hand open | 6 |
+# // | Thumb up | 7 |
+# // | Thumb down | 8 |
+# // | Rock | 9 |
+# // | Namaste | 10 |
+# // | Palm up | 11 |
+# // | Fist | 12 |
+# // | Index finger up | 13 |
+# // | Double finger up | 14 |
+# // | Victory | 15 |
+# // | Big V | 16 |
+# // | Phonecall | 17 |
+# // | Beg | 18 |
+# // | Thanks | 19 |
+# doc: https://console.faceplusplus.com.cn/documents/10065685
+
+# // | gestureAnimDescType | Value |
+# // | --- | --- |
+# // | FullScreen | 0 |
+# // | Center | 1 |
+# // | Align up | 2 |
+# // | Align right | 3 |
+# // | Align down | 4 |
+# // | Align left | 5 |
+
+gestures:
+  # key is the giftID
+  giftInfos:
+    gift_texture_2008_tw_monthly_g2_v1: #gift ID
+      hintI18nKey: gift_texture_2008_tw_monthly_g2_v1
+      handGestureType: 2
+      gestureAnimDescs:
+        - type: 1
+          referenceWidth: 290           #hands size
+          referenceHeight: 360
+          originalImageWidth: 640       #animation size
+          originalImageHeight: 1136
+    gift_texture_2008_tw_monthly_g1_v1:
+      hintI18nKey: gift_texture_2008_tw_monthly_g1_v1
+      handGestureType: 4
+      gestureAnimDescs:
+        - type: 1
+          referenceWidth: 290
+          referenceHeight: 360
+          originalImageWidth: 425
+          originalImageHeight: 430
+
+    gift_texture_gesture_Glow_sticks:
+      hintI18nKey: gift_texture_gesture_Glow_sticks
+      handGestureType: 13
+      gestureAnimDescs:
+        - type: 0
+          referenceWidth: 290
+          referenceHeight: 360
+          originalImageWidth: 640
+          originalImageHeight: 1136
+    gift_texture_gesture_cute_poo:
+      hintI18nKey: gesture_fist_cute_poo
+      handGestureType: 11
+      gestureAnimDescs:
+        - type: 2
+          referenceWidth: 290
+          referenceHeight: 360
+          originalImageWidth: 520
+          originalImageHeight: 720
+    gift_texture_gesture_marryme:
+      hintI18nKey: gesture_fist_marry_me
+      handGestureType: 11
+      gestureAnimDescs:
+        - type: 2
+          referenceWidth: 290
+          referenceHeight: 360
+          originalImageWidth: 1000
+          originalImageHeight: 720
+    gift_texture_gesture_babyrush:
+      hintI18nKey: gesture_phonecall_toast_hint
+      handGestureType: 17
+      gestureAnimDescs:
+        - type: 0
+          # clients take `referenceWidth` and `referenceHeight` as reference to decide the resolution of each animation
+          referenceWidth: 290
+          referenceHeight: 360
+          originalImageWidth: 640
+          originalImageHeight: 1136
+          numOfImages: 128
+    gift_texture_gesture_hearty_candy:
+      hintI18nKey: gesture_heartD_toast_hint
+      handGestureType: 4
+      gestureAnimDescs:
+        - type: 2
+          referenceWidth: 290
+          referenceHeight: 360
+          originalImageWidth: 700
+          originalImageHeight: 700
+          numOfImages: 72
+    gift_texture_gesture_victory_fireworks:
+      hintI18nKey: gesture_victory_toast_hint
+      handGestureType: 15
+      gestureAnimDescs:
+        - type: 1
+          referenceWidth: 290
+          referenceHeight: 360
+          originalImageWidth: 640
+          originalImageHeight: 640
+          numOfImages: 71
+    gift_texture_gesture_graduate_plane:
+      hintI18nKey: gesture_bigv_toast_hint
+      handGestureType: 16
+      gestureAnimDescs:
+        - type: 2
+          referenceWidth: 290
+          referenceHeight: 360
+          originalImageWidth: 670
+          originalImageHeight: 720
+          numOfImages: 131
+    gift_texture_gesture_fist_meow:
+      hintI18nKey: gesture_fist_meow_toast_hint
+      handGestureType: 12
+      gestureAnimDescs:
+        - type: 1
+          referenceWidth: 290
+          referenceHeight: 360
+          originalImageWidth: 580
+          originalImageHeight: 720
+          numOfImages: 62
+    gift_texture_gesture_heart_dance:
+      hintI18nKey: gesture_heart_kiss_toast_hint
+      handGestureType: 2
+      gestureAnimDescs:
+        - type: 1
+          referenceWidth: 290
+          referenceHeight: 360
+          originalImageWidth: 358
+          originalImageHeight: 309
+    gift_texture_gesture_heart_pupu:
+      hintI18nKey: gesture_heart_pupu_toast_hint
+      handGestureType: 4
+      gestureAnimDescs:
+        - type: 1
+          referenceWidth: 290
+          referenceHeight: 360
+          originalImageWidth: 881
+          originalImageHeight: 607
+    gift_texture_gesture_heart_cockroach:
+      hintI18nKey: gesture_heart_kiss_toast_hint
+      handGestureType: 2
+      gestureAnimDescs:
+        - type: 1
+          referenceWidth: 290
+          referenceHeight: 360
+          originalImageWidth: 600
+          originalImageHeight: 600
+    gift_texture_gesture_heart_kiss:
+      hintI18nKey: gesture_heart_kiss_toast_hint
+      handGestureType: 2
+      gestureAnimDescs:
+        - type: 1
+          referenceWidth: 290
+          referenceHeight: 360
+          originalImageWidth: 401
+          originalImageHeight: 503
+    gift_texture_2005_tw_zero_box:
+      hintI18nKey: gesture_ok_toast_hint
+      handGestureType: 5
+      gestureAnimDescs:
+        - type: 1
+          referenceWidth: 290
+          referenceHeight: 360
+          originalImageWidth: 450
+          originalImageHeight: 529
+    gift_texture_gesture_kiss_free1:
+      hintI18nKey: gesture_heart_kiss_toast_hint
+      handGestureType: 2
+      gestureAnimDescs:
+        - type: 1
+          referenceWidth: 290
+          referenceHeight: 360
+          originalImageWidth: 401
+          originalImageHeight: 503
+
+

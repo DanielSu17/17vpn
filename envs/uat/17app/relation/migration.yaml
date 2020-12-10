@@ -1,0 +1,15 @@
+# Stages:
+#   0: MigrationStage // Default stage does nothing (i.e. V1 Only).
+#   1: DoubleWrite // DoubleWrite stage writes data (Set, Del, Incr) in both of v1 and v2 db
+#   2: DoubleReadBasedOnV1 // DoubleReadBasedOnV1 stage reads data (Get, GetList, GetM, Count) in both of v1 and v2, but return v1 as default
+#   3: DoubleReadBasedOnV2 // DoubleReadBasedOnV2 stage reads data (Get, GetList, GetM, Count) in both of v1 and v2, but return v2 as default
+#   4: V2Only // V2Only indicated all operation relying on V2 (final stage)
+#   5: BlockWrite // BlockWrite is used at the down time during migration (special stage in migration)
+enable: true
+tables:
+  UserFollow:
+    stage: 4
+    probability: 1 # the number N indicated the probability (1/N) to trigger read data
+  UserFollowRequested:
+    stage: 0
+    probability: 1 # the number N indicated the probability (1/N) to trigger read data

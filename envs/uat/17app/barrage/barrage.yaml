@@ -1,0 +1,31 @@
+# 0: 寶寶彈幕 / 159點 (Default)
+# 1: 普通彈幕 / 79點
+# 2: 火箭彈幕 / 799點
+# 3: 飛船彈幕 / 1599點
+# 4: 場控彈幕
+# key: 翻譯的i18n字串
+barrages:
+  - type: 1
+    point: 79
+    enabled: true
+    key: barrage_type_normal
+  - type: 0
+    point: 159
+    enabled: true
+    key: barrage_type_baby
+  - type: 2
+    point: 799
+    enabled: true
+    key: barrage_type_rocket
+  - type: 3
+    point: 1599
+    enabled: true
+    key: barrage_type_spaceship
+  - type: 4
+    point: 0
+    enabled: false
+    key: streamer_assistant_barrage
+
+newLogicSupportedVersion:
+  android: "2.4.35"
+  ios: "3.85.0"

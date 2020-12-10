@@ -1,0 +1,163 @@
+# sections
+#   - id: TopBanner|OffcRecomm|Suggestion|Label|RedEnvelope|Show|Vod|TodayHotTopic|CrazyZoo
+#     enable: false|true
+#     dedup:  false|true
+#     more:   false|true
+#     minGrids: <int>
+#     style: <int> 1: BillboardStyle, 2: StoryTrayStyle, 3: DefaultShelfStyle, 4: CoverFlowStyle, 5: VodShelfStyle, 6: DefaultLabelShelfStyle (猜你可能會喜歡)
+#     name:
+#       key: <string>
+#     labelID: <string> (optional if id is `Label`)
+
+sections:
+  - id: TopBanner # Banner + super promote
+    name:
+      key: tab_hot_2019q4_topbanner
+    enable: true
+    style: 1
+    more: false
+  - id: Newbiequest
+    enable: true
+    style: 7
+    minGrids: 1
+    more: false
+  # - id: OffcRecomm # 官方推薦
+  #   enable: true
+  #   style: 2
+  #   more: false
+  - id: NewestStreamer # D0 new streamer
+    name:
+      key: tab_hot_d0streamer
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+  - id: Suggestion # 猜你可能喜歡
+    name:
+      key: tab_hot_2019q4_follow_suggestion
+    enable: true
+    dedup: true
+    style: 6
+    minGrids: 1
+    more: true
+  - id: Latest # 新人(和『最新』同邏輯)
+    name:
+      key: tab_hot_2019q4_newstreamer
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+  - id: Label
+    labelID: jp_music
+    name:
+      key: explore_jp_label_music
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+  - id: PK
+    name:
+      key: tab_hot_2019q4_pk
+    enable: true
+    dedup: false #重複
+    minGrids: 6 # 2個直播間一組PK，3組以上顯示
+    style: 3
+    more: true
+  - id: Label
+    labelID: jp_game
+    name:
+      key: explore_jp_label_game
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+  - id: Vod # 熱門影音
+    name:
+      key: tab_hot_2019q4_vod
+    enable: true
+    minGrids: 1
+    style: 5
+    more: false
+  - id: Label
+    labelID: jp_vliver
+    name:
+      key: explore_jp_label_vliver
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+  - id: Label
+    labelID: jp_fashion
+    name:
+      key: streamer_jp_label_fashion
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+  - id: Label
+    labelID: jp_performer
+    name:
+      key: streamer_jp_label_performer
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+  - id: Label
+    labelID: jp_hobby
+    name:
+      key: streamer_jp_label_hobby
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+  - id: Label
+    labelID: jp_variety
+    name:
+      key: streamer_jp_label_variety
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+  - id: Label
+    labelID: jp_freetalk
+    name:
+      key: streamer_jp_label_freetalk
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+  - id: Label
+    labelID: jp_show
+    name:
+      key: streamer_label_show
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 4
+    more: true
+
+suggestionGroupingRules:
+  e:
+    sortLevelAsc: true
+    groupOrder:
+      - maxViewerCount: 80
+        maxLevel: 50
+      - maxViewerCount: 80
+      - minViewerCount: 80
+  f:
+    sortLevelAsc: false
+    groupOrder:
+      - maxViewerCount: 80
+        minLevel: 65
+      - maxViewerCount: 80
+      - minViewerCount: 80

@@ -1,0 +1,87 @@
+# autoEnterTime is in terms of seconds and used to take an idle user to a live.
+# promotion interval is a promotion to all live stream and its unit is mins
+#
+# animationTimer: show animation when the remaining time is less than it, 0 means disable
+# eventTimers: Decide the showing msg when the remaining time is equal to the number, like 300, 60, 10 here
+maxRockViewers: 10
+endstreamRedirectCountdown: 5
+maxPullDelayAllowed: 3
+enableVIPPromotion: true
+autoEnterTimer: 15
+idleTimer: 60
+producerAnimationID: "17rocklive_event"
+promotionInterval:
+  vip: 1m0s
+  army: 1m0s
+killLiveReason:
+  - kill_live_detail_1
+  - kill_live_detail_2
+  - kill_live_detail_3
+  - kill_live_detail_4
+  - kill_live_detail_5
+  - kill_live_detail_6
+  - kill_live_detail_7
+  - kill_live_detail_8
+
+broadcastRestriction:
+  "3128adcd-ea2c-438d-93cf-00baf1d7374a":
+    regions: ["JP"]
+
+# notif will show up after entering the `nthLive` for `seconds`
+# the setting is only for client to use
+baggageMissionNotif:
+  nthLive: 10
+  showUpSeconds: 5
+
+defaultComment:
+  - specificTimeFrame: true
+    startTime: "00:00:00"
+    endTime: "03:59:59"
+    commentI18nKeys: ["default_comment_0_3", "default_comment_1", "default_comment_2", "default_comment_3", "default_comment_4"]
+  - specificTimeFrame: true
+    startTime: "04:00:00"
+    endTime: "11:59:59"
+    commentI18nKeys: ["default_comment_0_2", "default_comment_1", "default_comment_2", "default_comment_3", "default_comment_4"]
+  - specificTimeFrame: true
+    startTime: "12:00:00"
+    endTime: "17:59:59"
+    commentI18nKeys: ["default_comment_0_1", "default_comment_1", "default_comment_2", "default_comment_3", "default_comment_4"]
+  - specificTimeFrame: true
+    startTime: "18:00:00"
+    endTime: "23:59:59"
+    commentI18nKeys: ["default_comment_0_3", "default_comment_1", "default_comment_2", "default_comment_3", "default_comment_4"]
+
+campaignCountdown:
+    animationTimer: 60
+    eventTimers:
+        60: {}
+        30: {}
+        10: {}
+        0: {}
+
+    # Deprecated settings
+    timers:
+        60:
+            token: "final_countdown_dropdown_start_min"
+            number: 1
+        30:
+            token: "final_countdown_dropdown_start_sec"
+            number: 30
+        10:
+            token: "final_countdown_dropdown_start_sec"
+            number: 10
+        0:
+            token: "final_countdown_dropdown_end"
+            number: 0
+
+hotlinkChecker:
+  enable: false
+  reportThreshold: 5
+  onLiveReportThreshold: 4000
+
+followerOnlyCommentVersionControl:
+  android: "2.28.0"
+  ios: "3.114.0"
+
+# for event sticker ranking interval
+liveInfoInterval: 10

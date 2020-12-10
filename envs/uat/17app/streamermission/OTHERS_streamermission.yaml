@@ -1,0 +1,107 @@
+# | type | Value |
+# | --- | --- |
+# | View_Stream_X_Seconds | 9 |
+# | Streamer_Live_X_Seconds| 14 |
+# | Streamer_Poke_X_Times | 15 |
+
+# | lifeCycle | Value |
+# | --- | --- |
+# | Daily | 0 |
+
+enable: true
+whiteList:
+  - "6d097b16-b650-4848-9e72-030e8bf37776" # vava2
+
+i18nMissionEligibleDescription: streamer_mission_out_of_condition
+i18nCompleteComment: streamer_mission_button_go_stream
+
+refreshHour: 5 # timezone of Taiwan
+
+tagInfos:
+  0: # Daily
+    token:
+      key: "baggage_mission_daily_tag"
+    color: "#7483d6"
+
+remind:
+  remindSecs: 60
+  toastMsg:
+    key:
+  toastSecs: 10
+
+# completeAnimation:
+#   url: <string>
+#   webpUrl: <string>
+#   animationID: <string>
+#   MD5: <string>
+#   webpMD5: <string>
+#   androidType: <int32>
+#   iOSType: <int32>
+
+missions: # mission list
+  - id: dd4dbf3a-0641-44d1-a8e5-85ab0e080e2d
+    type: 4 # CallToActionType_GO_BROADCAST
+    lifeCycle: 0
+    levelRange:
+      min: 1
+      max: 20
+    reward:
+      type: 5 # RewardType_ACHIEVEMENT
+      achievementValue: 8000
+      i18nDescription: streamer_mission_score
+      i18nDescriptionParams:
+        - value: "8000"
+          needMap: false
+    i18nTitle: streamer_mission_stream_title
+    i18nTitleParams:
+      - value: "30"
+        needMap: false
+    i18nDescription: streamer_mission_stream_subtitle
+    i18nDescriptionParams:
+    i18nDisableDescription:
+    goalValue: 30
+    withReminder: true
+  - id: 88066d3c-8a0b-11ea-bc55-0242ac130003
+    type: 5 # CallToActionType_GO_POKE
+    lifeCycle: 0
+    levelRange:
+      min: 1
+      max: 20
+    reward:
+      type: 5 # RewardType_ACHIEVEMENT
+      achievementValue: 1500
+      i18nDescription: streamer_mission_score
+      i18nDescriptionParams:
+        - value: "2000"
+          needMap: false
+    i18nTitle: streamer_mission_poke_title
+    i18nTitleParams:
+      - value: "5"
+        needMap: false
+    i18nDescription: streamer_mission_poke_subtitle
+    i18nDescriptionParams:
+    i18nDisableDescription:
+    goalValue: 5
+    withReminder: true
+  - id: b7878b9c-8a8b-11ea-bc55-0242ac130003
+    type: 1 # CallToActionType_GO_POKE
+    lifeCycle: 0
+    levelRange:
+      min: 1
+      max: 20
+    reward:
+      type: 5 # RewardType_ACHIEVEMENT
+      achievementValue: 1500
+      i18nDescription: streamer_mission_score
+      i18nDescriptionParams:
+        - value: "1500"
+          needMap: false
+    i18nTitle: streamer_mission_watch_title
+    i18nTitleParams:
+      - value: "60"
+        needMap: false
+    i18nDescription: streamer_mission_watch_subtitle
+    i18nDescriptionParams:
+    i18nDisableDescription:
+    goalValue: 60
+    withReminder: true

@@ -1,0 +1,271 @@
+# enableQueryACL: set to true to use ACL for authorization on queries
+# enableMutationACL: set to true to use ACL for authorization on mutations
+# asyncMode
+# 0: send async job to worker
+# 1: send async job to cronjob by redis LPush/RPop
+enableQueryACL: false
+enableMutationACL: false
+batch_free_OS_memory: 100
+batch_streamer: 100
+enable_log_mem_stats: false
+enable_patch_day_stats: true
+enable_export_csv: true
+cross_day_regions: ["TW", "HK", "JP", "SG", "US", "MY"]
+overviewExportFields: [
+    "ID",
+    "Streamer Region",
+    "Period",
+    "Streamer ID",
+    "Streamer Name",
+    "OpenID",
+    "UserID",
+    "Streamer Agent",
+    "Streamer Agency",
+
+    "Contract Status",
+    "Contract ID",
+    "Contract Agent",
+    "Contract Agency",
+    "Located Region",
+    "Located City",
+    "Date Start",
+    "Date End",
+    "Duration",
+    "Exclusive",
+    "Unofficial",
+
+    "Gender",
+    "Genre",
+    "Job",
+
+    "Date of Birth",
+    "Email",
+    "ID Card Number",
+    "Address",
+
+    "Revenue Payout Type",
+    "Revenue Bank Name",
+    "Revenue Bank Code",
+    "Revenue Branch Name",
+    "Revenue Branch Code",
+    "Revenue Bank Account",
+    "Revenue SWIFT Code",
+    "Revenue Payee Name",
+    "Revenue Payee ID",
+    "Revenue Payee Type",
+    "Revenue Health Insurance Type",
+    "Revenue Fee Owner Type",
+
+    "Salary Payout Type",
+    "Salary Bank Name",
+    "Salary Bank Code",
+    "Salary Branch Name",
+    "Salary Branch Code",
+    "Salary Bank Account",
+    "Salary SWIFT Code",
+    "Salary Payee Name",
+    "Salary Payee ID",
+    "Salary Payee Type",
+    "Salary Health Insurance Type",
+    "Salary Fee Owner Type",
+
+    "Event Payout Type",
+    "Event Bank Name",
+    "Event Bank Code",
+    "Event Branch Name",
+    "Event Branch Code",
+    "Event Bank Account",
+    "Event SWIFT Code",
+    "Event Payee Name",
+    "Event Payee ID",
+    "Event Payee Type",
+    "Event Health Insurance Type",
+    "Event Fee Owner Type",
+
+    "Hourly Wage",
+    "Hourly Wage: Supplemental Condition(Contracted Currency)",
+    "Revenue Ratio",
+    "Revenue Ratio: Supplemental Condition",
+    "Bonus Term(Contracted Currency)",
+    "Min. Valid Streamer Hours",
+    "Minimum Requirement Completed",
+
+    "Streamed Days",
+    "Total Streamed Hours",
+    "Valid Streamed Hours",
+    "Points",
+    "Max Follower",
+    "Follower of This Month",
+    "Follower Increased This Month",
+
+    "Salary", 
+    "Salary: Adjusted with Supplemental Condition",
+    "Bonus",
+    "Profit Sharing Currency",
+    "Profit Sharing(Contracted Currency): Income",
+    "Profit Sharing(Contracted Currency): Transferred",
+    "Profit Sharing(Contracted Currency): Net",
+    "Profit Sharing(Contracted Currency): Supplemental",
+    "Balance(Contracted Currency)",
+    "Monthly Income Total",
+
+    "Salary(17USD):",
+    "Bonus(17USD):",
+    "Profit Sharing(17USD): Income",
+    "Profit Sharing(17USD): Transferred",
+    "Profit Sharing(17USD): Net",
+    "Profit Sharing(17USD): Supplemental",
+
+    "Streamer Others",
+    "Contract Others",
+
+    "Payment Remark",
+    "Agency Contract",
+]
+dailyOverviewExportFields: [
+    "ID",
+    "Streamer Region",
+    "Period",
+    "Streamer ID",
+    "Streamer Name",
+    "OpenID",
+    "UserID",
+    "Streamer Agent",
+    "Streamer Agency",
+
+    "Contract Status",
+    "Contract ID",
+    "Contract Agent",
+    "Contract Agency",
+    "Located Region",
+    "Located City",
+    "Date Start",
+    "Date End",
+    "Duration",
+    "Exclusive",
+    "Unofficial",
+
+    "Pay To Agency",
+
+    "Revenue Ratio",
+    
+    "Streamed Days",
+    "Total Streamed Hours",
+    "Valid Streamed Hours",
+    "Points",
+    "Follower of This Month",
+
+    "Profit Sharing Currency",
+    "Profit Sharing(Contracted Currency): Income",
+    "Profit Sharing(Contracted Currency): Transferred",
+    "Profit Sharing(Contracted Currency): Net",
+    "Profit Sharing(Contracted Currency): Supplemental",
+
+    "Streamer Others",
+    "Contract Others",
+]
+periodOverviewExportFields: [
+    "ID",
+    "Streamer Region",
+    "Streamer ID",
+    "Streamer Name",
+    "OpenID",
+    "UserID",
+    "Streamer Agent",
+    "Streamer Agency",
+
+    "Contract Status",
+    "Contract ID",
+    "Contract Agent",
+    "Contract Agency",
+    "Located Region",
+    "Located City",
+    "Date Start",
+    "Date End",
+    "Duration",
+    "Exclusive",
+    "Unofficial",
+
+    "Revenue Ratio",
+
+    "Streamed Days",
+    "Total Streamed Hours",
+    "Valid Streamed Hours",
+    "Points",
+
+    "Streamer Others",
+    "Contract Others",
+]
+agencyContractMonthlyOverviewExportFields: [
+    "ID",
+    "Period",
+    "Streamer ID",
+    "Streamer Name",
+    "OpenID",
+    "UserID",
+
+    "Contract Status",
+    "Contract ID",
+    "Contract Agent",
+    "Contract Agency",
+    "Date Start",
+    "Date End",
+    "Exclusive",
+
+    "Streamed Days",
+    "Total Streamed Hours",
+    "Valid Streamed Hours",
+    "Points",
+
+    "Revenue Payout Type",
+    "Salary Payout Type",
+    "Event Payout Type",
+
+    "Agency Contract(All Streamer)",
+    "Agency Contract(By Streamer)",
+    "Agency Minimum Requirement Completed",
+
+    "Streamer-Hourly Wage",
+    "Streamer-Revenue",
+    "Streamer-Bonus",
+    "Streamer-RevenueSupplemental",
+
+    "Agency-Hourly Wage",
+    "Agency-Revenue",
+    "Agency-Bonus",
+
+    "PayToAgency-Hourly Wage",
+    "PayToAgency-Revenue",
+    "PayToAgency-Bonus",
+    "PayToAgency-RevenueSupplemental",
+    "PayToAgency-Total",
+
+    "Note for Agency",
+]
+enableContractIncomeMigration: true
+streamerLabelRegions: ["JP", "TW", "US", "HK", "MY"]
+numberFields: [
+    "ID",
+    "Streamed Days",
+    "Total Streamed Hours",
+    "Valid Streamed Hours",
+    "Points",
+]
+enableAsyncStats: false
+enableNewFlow: false
+enableStatsByContractPeriod: true
+asyncMode: 0
+injectBatchSize: 1000
+directContractAgencyIDs: [
+    0,    # default
+    525,  # 17media(TW)
+    1034, # 17Media(US)
+    1525, # 17media(TW)-NMC
+    1640, # 17Media(MENA)
+    1652, # 17Media(SG)
+    1653, # 17Media(HK)
+    846,  # Payment JP
+    205 # 博覺演藝經紀工作室
+]
+sendSupplierRecordBatchSize: 10
+sendSupplierRecordRetryDelaySecond: 1

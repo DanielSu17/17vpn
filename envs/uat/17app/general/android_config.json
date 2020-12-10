@@ -1,0 +1,260 @@
+{
+   "event_queue":{
+      "sqlite":{
+         "enable":false,
+         "synchornize_mode":false
+      }
+   },
+   "network_threshold":{
+      "yellow":100,
+      "red":50
+   },
+   "video_threshold":{
+      "fps":20,
+      "fps_filter":13,
+      "high_bitrate":800,
+      "low_bitrate":600
+   },
+   "indo_streamer":[
+      "yucheng13579",
+      "agathamarchella"
+   ],
+   "gift_reminding_start_time":30,
+   "gift_reminding_duration":20,
+   "follow_reminder_duration":30,
+   "rating":{
+      "open_app_count":5,
+      "watch_stream_total_time":60,
+      "total_open_app_day":1,
+      "total_follow_count":10,
+      "total_share_count":5,
+      "total_comment_count":5,
+      "reset_all_rating_criteria_and_ask_again_day":7
+   },
+   "low_phone_streamers":[
+      "7ca0983b-3fa3-4e2c-9ebf-093ea4b92d2a"
+   ],
+   "clan":{
+      "is_chat_show":1
+   },
+   "pubnub":{
+      "error_reset":true,
+      "retry_count":6,
+      "hot_people":1000
+   },
+   "new_player_version":2234,
+   "media_decode_auto":true,
+   "show_hotPage_trivia_sticker":false,
+   "api_encode":"br",
+   "cover_girl":{
+      "default_pad":"",
+      "default_phone":"",
+      "pad":"http://cdn.17app.co/71ed1e96-f452-4159-99b4-2488594ff39a.png",
+      "phone":"http://cdn.17app.co/b0d971ac-1bc4-4c5a-8302-c817925e7d5d.png",
+      "start_time":1508284800,
+      "end_time":0
+   },
+   "streamerRecap":{
+      "canCreate":true
+   },
+   "idleMode":{
+      "countDownTimeSec":300
+   },
+   "uid_whitelist":{
+      "lab":[
+         "media17",
+         "vivo",
+         "zte",
+         "infocus",
+         "htc",
+         "meitu",
+         "lge",
+         "sony",
+         "oppo",
+         "samsung",
+         "xiaomi"
+      ]
+   },
+   "latest_app_version":2366,
+   "debug_info":{
+      "bugsee":1
+   },
+   "isGoogleBillingEnable":true,
+   "debug_streamers":[
+
+   ],
+   "ui_testing_streamers":[
+      "media17_on"
+   ],
+   "testing_ijkPlayer":{
+      "logOn":false,
+      "liveLogOn":true,
+      "bannerLogOn":true,
+      "devices":[
+         "sony",
+         "sharp"
+      ]
+   },
+   "useGiftImplInViewer":true,
+   "ping":{
+      "streamer":{
+         "apply_version":2392,
+         "host":"8.8.8.8",
+         "interval":10
+      },
+      "viewer":{
+         "apply_version":2392,
+         "host":"8.8.8.8",
+         "interval":10
+      },
+      "high_latency_threshold":100,
+      "low_latency_threshold":50,
+      "retry_times":5
+   },
+   "traceroute":{
+      "streamer":{
+         "apply_version":2390,
+         "host":"",
+         "interval":0
+      }
+   },
+   "batch_upload_log":{
+      "apply_version":2390,
+      "upload_interval_sec":60,
+      "max_upload_amount":20,
+      "max_retry_times":5
+   },
+   "streamer_event_log":{
+      "apply_version":2418
+   },
+   "streamer_network_status":{
+      "apply_version":2416
+   },
+   "software_encode_devices":[
+      "d-02H",
+      "SM-T285YD",
+      "SM-J320G",
+      "Pixel 3a",
+      "Pixel 3a XL",
+      "Pixel 3",
+      "Pixel 3 XL",
+      "Pixel 4",
+      "Pixel 4 XL",
+      "Pixel 5"
+   ],
+   "crazy_zoo":{
+      "free":{
+         "level_pipe_indexes":[
+            5,
+            10
+         ],
+         "mobile_pipe_index":-1
+      },
+      "paid":{
+         "level_pipe_indexes":[
+            0,
+            0
+         ],
+         "mobile_pipe_index":-1
+      }
+   },
+   "live_atmos":{
+      "apply_version":2480,
+      "snow":{
+         "apply_version":2475,
+         "apply_region":["ALL"],
+         "trigger_message":[
+            "Xmas",
+            "聖誕快樂",
+            "🎄",
+            "メリクリ"
+         ],
+         "duration_sec":30
+      },
+      "boxes":{
+         "apply_version":2475,
+         "apply_region":["ALL"],
+         "trigger_message":[
+            "生日快樂",
+            "17生日快樂",
+            "happybirthday",
+            "happybday",
+            "🍰",
+            "🎂",
+            "Jan",
+            "Amy",
+            "Shirley",
+            "YC",
+            "Han"
+         ],
+         "duration_sec":30,
+         "max_total_count":35
+      }
+   },
+   "push_url_array_apply_version":2452,
+   "pk_log_enable":true,
+   "starfruitLogApplyVersion":2450,
+   "low_quality_solution" : {
+      "apply_version" : 2450,
+      "buffering_check_period_sec" : 30.0,
+      "lower_down_threshold_for_buffering_sec" : 20.0,
+      "max_buffering_record_count" : 30,
+      "check_frequency_sec": 5
+   },
+   "painter" : {
+      "apply_version" : 2479
+   },
+   "matomo_queue_dispatch_interval": 30,
+   "live_atmos_v3" : {
+    "ios_apply_version" : "3.115.0",
+    "android_apply_version":9999,
+    "snow" : {
+      "ios_apply_version" : "3.115.0",
+      "android_apply_version":9999,
+      "apply_region" : ["ALL"],
+      "trigger_message" : [
+          "Xmas",
+          "聖誕快樂",
+          "🎄",
+          "メリクリ"
+      ],
+      "duration_sec" : 30
+      },
+    "box" : {
+      "ios_apply_version" : "3.115.0",
+      "android_apply_version":9999,
+      "apply_region" : ["TW","HK","SG","MY"],
+      "trigger_message" : [
+         "情人節快樂",
+         "1314520",
+         "❤️",
+         "1"
+      ],
+      "boxes" : [
+         {
+             "drop_rate": 10,
+             "image_urls": ["https://cdn.17app.co/bc47e240-0e8f-4162-a64b-d2bc9345f257.png"],
+             "type": 0
+         },
+         {
+             "drop_rate": 190,
+             "image_urls": [
+                 "https://daily.pokecommunity.com/wp-content/uploads/2016/11/sm_pokemon_073.png",
+                 "https://daily.pokecommunity.com/wp-content/uploads/2016/11/sm_pokemon_075.png",
+                 "https://daily.pokecommunity.com/wp-content/uploads/2016/11/sm_pokemon_077.png",
+                 "https://daily.pokecommunity.com/wp-content/uploads/2016/11/sm_pokemon_079.png"
+             ],
+             "type": 2
+         }
+      ],
+      "drop_count_distribution" : {
+          "3": 10,
+          "2": 25,
+          "1": 65
+      },
+      "duration_sec" : 30,
+      "max_total_count" : 35,
+      "cooldown_sec" : 600
+    }
+  }
+}

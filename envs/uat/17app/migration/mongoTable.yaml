@@ -1,0 +1,234 @@
+# for mongo table migration
+# if we want to migrate LiveStream to LiveStreamV2
+# step 1: prepare new table data
+# step 2: turn shield
+# step 3: update this config with
+#         readOnlyTables: ["LiveStream"]
+# step 4: wait config deployed to all pods
+# step 5: check if all writing operations stop on mongo table
+# step 6: sync new table with old one if needed
+# step 7: update this config with
+#         readOnlyTables: []
+#         tableMapping:
+#           LiveStream: LiveStreamV2
+# step 8: turn off shield
+tableMapping:
+
+readOnlyTables: []
+
+enableMultiClient: true
+
+streamTables:
+  - LiveStreamV2
+  - UserRestream
+  - LiveRestream
+  - CheckinViewer
+  - Streamer
+  - StreamTopics
+
+userTables:
+  - User
+  - UserPreference
+  - UserTerm
+  - UserTermHistory
+  - SearchUser
+  - OpenIDHistory
+  - FreezedDevice
+  - Device
+  - ResetPasswordTokenRecord
+  - BaasLicense
+  - BaasAccountBinding
+  - SMSVerificationRecord
+  - Block
+  - UserFollowV2
+  - UserFollowV2B
+  - UserFollowRequestedV2
+  - UserFollowRequestedV2B
+  - UserWatchHistoryV2
+  - UserWatchHistoryV2B
+  - UserStyles
+
+pointTables:
+  - LevelGiftUset
+  - Coupon
+  - CouponCampaign
+  - CouponRewardCode
+  - CouponUsageLog
+  - PokeChallenge
+  - BettingGames
+  - BettingItems
+  - BettingRelations
+  - BettingOptionInfos
+  - WeekupReport
+  - PointReceiverLogs
+  - PointReceiverLogsHistory
+  - PointReceiverLogsCache
+  - PointReceiverLogsCacheTime
+  - PointUsageLogs
+  - PointUsageLogsHistory
+  - PointGainLogs
+  - PointGainLogsHistory
+
+defaultTables:
+  - AccompanyUserInfo
+  - AnonymousLeaderboard
+  - Arcade
+  - AssistantRelations
+  - AvatarGrabBagLogs
+  - AvatarGrabBagPlans
+  - AvatarGrabBags
+  - Barrage
+  - BlabRequest
+  - CSAggregator
+  - CSDataContainer
+  - CSEvaluator
+  - CSEvent
+  - CSEventLeaderboard
+  - CSEventTag
+  - CSGiftBucket
+  - ChatThread
+  - ChoiceUser
+  - Clan
+  - ClanInvited
+  - ClanKicked
+  - ClanMember
+  - ClanMemberInfo
+  - Clip
+  - ClipComment
+  - ClipVoteInfo
+  - CommodityBuy
+  - CommoditySell
+  - CryptocurrencyLog
+  - CryptocurrencyTicker
+  - CustomEvent
+  - DailyPokerRewardLogs
+  - DailyPokers
+  - DeletedSuggestionStreamer
+  - DeletedUser
+  - Events
+  - ExchangeGoodsTransferFailLog
+  - FBFriend
+  - FacebookFriend
+  - FacebookIDToUser
+  - Follow
+  - FollowCronHistories
+  - Gaming
+  - GiftKeyword
+  - GloryRoadEventHistory
+  - GoodsTransferLog
+  - Hashtags
+  - HotCellSubtabs
+  - HotCellSubtabsOrder
+  - I18nTempStorage
+  - IAPBlockedDevice
+  - IPRequestCountRecord
+  - IncentiveBonus
+  - IncentiveEvent
+  - InstagramFriend
+  - LVSnapshot
+  - LaborRewardLogs
+  - League
+  - LeagueActionLogs
+  - LeagueCustomEvents
+  - LeagueInvitationsV2
+  - LeagueInvitationsV2B
+  - LeagueMemberActionLogs
+  - LeagueMembersV2
+  - LeagueMembersV2B
+  - LiveStream
+  - LogPhoneBindingOperationsV2
+  - LogTaskQueueFail
+  - LogTaskQueueFailV2
+  - MediaMessage
+  - MediaRepository
+  - Message
+  - Mission
+  - MissionIdentity
+  - MongoACL
+  - Monster
+  - NoteRelations
+  - Notif
+  - OnceEvent
+  - PK
+  - PKOnlineCandidate
+  - Payment
+  - PhoneNumberToUser
+  - PmRelations
+  - Poll
+  - Post
+  - PostComment
+  - PostHashTag
+  - PostHashtag
+  - PostLike
+  - PostShareCount
+  - PostUserTag
+  - PostView
+  - PostWithinOneMonth
+  - Program
+  - QQFriend
+  - QQIDToUser
+  - QueueScheduler
+  - QueueSchedulerTask
+  - QueueTasks
+  - RecapCollectionRelV2
+  - RecapCollectionRelV2B
+  - ReferralProjectLogsV2
+  - ReferralProjectLogsV2B
+  - ReminderSchedule
+  - Royalty
+  - RoyaltyHistory
+  - SearchHashTag
+  - SectionList
+  - StreamerLoyalty
+  - StyleSettings
+  - SubCarbon
+  - Subscription
+  - SubscriptionGrowth
+  - SubscriptionPurchaseLog
+  - SuggestionSkipsRelV2
+  - SuggestionSkipsRelV2B
+  - SystemNotif
+  - SystemNotifV2
+  - TriviaAnswers
+  - TriviaGames
+  - TriviaPersonInfo
+  - TriviaQuizzes
+  - TriviaRelations
+  - TwitterFriend
+  - UserAnimation
+  - UserAnimationV2
+  - UserFCMToken
+  - UserFollow
+  - UserFollowRequested
+  - UserIDToUserIP
+  - UserLabelRelV2
+  - UserLiveStream
+  - UserPost
+  - UserReadButlerMessageTime
+  - UserReadFeedTime
+  - UserReceivedLike
+  - UserRevenue
+  - UserSocialActivity
+  - UserSuggestion
+  - UserUnreadBadgeInfoWithinTwoMonths
+  - VOD
+  - VODCommentV2
+  - VerifiedUser
+  - VideoChatRelV2
+  - VideoChatRelV2B
+  - VisionRecord
+  - VotingCharts
+  - VotingEvents
+  - VotingHistories
+  - WatchFollowingHistoryV2
+  - WechatFriend
+  - WechatIDToUser
+  - WeiboFriend
+  - WeiboIDToUser
+  - WeiboToUser
+  - WerewolvesUserStatistics
+  - medal_total
+  - people
+  - ref_total
+  - settings
+  - userfollow_by_month

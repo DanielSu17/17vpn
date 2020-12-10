@@ -1,0 +1,132 @@
+# Every service belongs to a type (go, nodejs, webapp, or spinnaker)
+# Every type has its own settings like Jenkins endpoints which base on environments
+
+groups:
+  backend:
+    aggr-gateway:       "go"
+    alfred:             "go"
+    bbrich:             "go"
+    revprox:            "go"
+    goapi:              "go"
+    cronjob:            "go"
+    slackbot:           "go"
+    shield:             "go"
+    worker:             "go"
+    exchange:           "go"
+    data-middleware:    "go"
+    go-cron:            "go"
+    golives:            "go"
+    gocells:            "go"
+    gotrade:            "go"
+    goplatform:         "go"
+    eventory:           "go"
+    eventory-worker:    "go"
+    data-stream-worker: "go"
+    ml-host:            "go"
+    snapshot:           "go"
+    spinnaker:          "spinnaker"
+    17app:              "spinnaker"
+  frontend:
+    skyeye:          "go"
+    admin:           "nodejs"
+    webtool:         "nodejs"
+    baobaofu:        "webapp"
+    webapp:          "webapp"
+    skyeyewall:      "webapp"
+    17live:          "webapp"
+    admin-v2:        "webapp"
+  event:
+    event-server:    "go"
+    event-web:       "webapp"
+settings:
+  spinnaker:
+    k8ssta:
+      endpoint: '17media-trigger-spinnaker/buildWithParameters?token=qLnZFhgbtDwYHq3bpqdsfHkXqEbMS7VAuTshkBrQ'
+    k8sprod:
+      endpoint: '17media-trigger-spinnaker/buildWithParameters?token=qLnZFhgbtDwYHq3bpqdsfHkXqEbMS7VAuTshkBrQ'
+  webapp:
+    rc:
+      endpoint: 'stag-frontend-deployment/buildWithParameters?token=uceacpKX7Xk37tHAmrWCPpPGEUEK4dvndRMQYdMz'
+    sta:
+      endpoint: 'stag-frontend-deployment/buildWithParameters?token=uceacpKX7Xk37tHAmrWCPpPGEUEK4dvndRMQYdMz'
+    prod:
+      endpoint: 'prod-frontend-deployment/buildWithParameters?token=tHhPGFznbWbLcpeQZioZzewJnUPT42UmNRnDRUyh'
+  go:
+    k8sstaqa:
+      endpoint: 'k8sstaqa-deployment-goapi/buildWithParameters?token=egxVYNaBdHqKWMnJV72EQsG7xtX2UYiYHsLNUWVe'
+    k8ssta:
+      endpoint: 'k8ssta-deployment-goapi/buildWithParameters?token=qLnZFhgbtDwYHq3bpqdsfHkXqEbMS7VAuTshkBrQ'
+    k8sprod:
+      endpoint: 'k8sprod-deployment-goapi/buildWithParameters?token=WPZgd7ag4Q7ksL3nSqLW2QVq6aaDK5apguCvR23M'
+    awssta:
+      endpoint: '17App/job/awssta-deployment-goapi/buildWithParameters?token=WPZgd7ag4Q7ksL3nSqLW2QVq6aaDK5apguCvR23M'
+    awsprod:
+      endpoint: '17App/job/awsprod-deployment-goapi/buildWithParameters?token=WPZgd7ag4Q7ksL3nSqLW2QVq6aaDK5apguCvR23M'
+  nodejs:
+    k8ssta:
+      endpoint: 'k8ssta-deployment-nodejs/buildWithParameters?token=ZQuygxVpytYgnanavuVkEdQsccQKr36RyLWNhgjY'
+    k8sprod:
+      endpoint: 'k8sprod-deployment-nodejs/buildWithParameters?token=MdfMrjx5egcQKAQMdEHP92hNACQvPemnvTWRT3fe'
+
+# Original 17app group had been devided into environment based design
+# For example, 17app in k8sprod represent 17 services group but
+# for awsprod, it's only 2 services
+batchDeploy:
+  17app:
+    k8sprod:
+      - "goapi"
+      - "aggr-gateway"
+      - "bbrich"
+      - "revprox"
+      - "worker"
+      - "data-middleware"
+      - "go-cron"
+      - "golives"
+      - "gocells"
+      - "gotrade"
+      - "goplatform"
+      - "exchange"
+      - "slackbot"
+      - "alfred"
+      - "eventory"
+      - "eventory-worker"
+      - "data-stream-worker"
+      - "ml-host"
+      - "snapshot"
+    k8ssta:
+      - "goapi"
+      - "aggr-gateway"
+      - "bbrich"
+      - "revprox"
+      - "worker"
+      - "data-middleware"
+      - "go-cron"
+      - "golives"
+      - "gocells"
+      - "gotrade"
+      - "goplatform"
+      - "exchange"
+      - "slackbot"
+      - "alfred"
+      - "eventory"
+      - "eventory-worker"
+      - "data-stream-worker"
+      - "ml-host"
+      - "snapshot"
+    awsprod:
+      - "goapi"
+      - "revprox"
+    awssta:
+      - "goapi"
+      - "revprox"
+
+# abstractEnvs is designed for cross cloud environment,
+# deploying using allprod stands for deploying to both
+# k8sprod and awsprod
+abstractEnvs:
+  allprod:
+    - "k8sprod"
+    - "awsprod"
+  allsta:
+    - "k8ssta"
+    - "awssta"

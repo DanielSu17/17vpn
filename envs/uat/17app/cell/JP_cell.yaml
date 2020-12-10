@@ -1,0 +1,76 @@
+# position example: <type>_<tab>
+position:
+  # index start from 1
+  # Tab : hot
+  program_hot: [4, 10, 15, 20, 25]
+  beltBanner_hot: 6
+  virtualStreamer_hot: 3
+  carouselBannerHot: 3
+
+  # index start from 0
+  banner_tv: [2]
+  banner_clip: [0]
+# this is for setting position priority in hot cell
+priority:
+  - name: 1 # TVSHOW
+
+# Expand the cell size to 2x2 if the number of cells less/equal than the number
+enableExpandCellSize: false
+expandCellSizeThreshold: 5
+
+# Fill streams in other region to fit the page limit in hot
+supplyOtherRegionInHot: true
+
+# entrance room setting for cells with CellType_ENTRANCE_ROOM
+# - position >= 1
+# - minRoomsRequired >= 1
+# - start, end support two formats: "06:10:00" or "2019-04-01 08:22:00"
+# - topic: (全民話題 1), (PK 2)
+# - topicTitles: string array
+# - whitelist: userID array
+entranceRooms:
+  - enable: false
+    position: 5
+    minRoomsRequired: 3
+    title: "today_hot_topic_title"
+    description: "today_hot_topic_entrance_room_des_date"
+    caption: "vote_entry_title"
+    vipFrameID: "FRAME_ENTRANCEROOMV2"
+    vipFrameURL: "https://cdn.17app.co/29a31d62-4602-4a57-9d40-4a9fafaacf40.png"
+    iosFrameURL: "https://cdn.17app.co/9042f826-c53d-45ab-87a5-861844ccb0d4.png"
+    iconID: "ICON_ENTRANCEROOM"
+    iconURL: "https://assets-17app.akamaized.net/8fb28053-6a8e-453b-9a65-36d1009b6894.png"
+    start: "06:10:00"
+    end: "18:20:00"
+    topic: 1
+    topicTitles:
+    topics: # deprecate soon
+      1:
+    whitelist:
+  - enable: true
+    position: 6
+    minRoomsRequired: 6
+    start: "00:00:00"
+    end: "23:59:59"
+    topic: 2 # PK
+    caption: "PK_entry_title"
+
+# searchbarInfo indicates the detail of search bar in the cell page
+searchbarInfo:
+  style: 1 # 0: LegacyStyle, 1: ExploreStyle
+vodlist:
+  - d581a0bb-baed-4d08-8aaa-2dbcca66c95d # チルナイト！日曜スペシャル「財部亮治の自粛してナイト」
+  - 31e9a655-7eaa-43bf-b6c6-d88c6a2ac587 # イチナナ妄想シアター配信本編
+  - fda0b80f-735d-4bad-a85c-434c88215f66 # グツグツことこと煮物ガール❤️
+  - 2b2121a3-2f0c-451b-bfa4-144ab260b6a1 # WAROTA
+  - f89d5275-4517-4ba8-ba97-de621b2f311b # 17 Night Live 12
+  - b034d1d9-061c-4cf9-8fbf-1fd15478935d # 全員ゾンビ
+  - f143b467-eda4-4ff0-ae20-b8491e931377 # 17 Night Live Vol.11
+  - 6a24145a-7858-418f-9a5a-24828f31fae7 # オードリー春日の必殺！仕掛け人！！
+  - 742cca59-c43f-4ea2-b543-4bfa2f6fc90f # 17 Live Music Studio #0
+  - 5c2934f2-6775-4dc1-8ecf-6988e0ca2aa3 # 17クイズ王
+
+# the setting of the available duration when they complete the first stream as the qualified D0 new streamer; in hour
+qualifiedFirstStreamDuration: 12
+# the setting of the minimum duration for the qualified D0 new streamer; in minute
+firstStreamForMinimumDuration: 10

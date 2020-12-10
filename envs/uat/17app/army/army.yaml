@@ -1,0 +1,106 @@
+# barrage, 1 2 3 4 means different army rank, 1 for 士官長 for example
+# P30D means 1 month, P90D means 3 months, P180D means 6 months
+# for each rank with period, assign the correspond barrage count they can use. -1 means infinite
+
+enable: true
+enableArmyPromotion: true
+enterAnimation:
+  enableBlackList: false
+  blackList:
+    - userID: 3128adcd-ea2c-438d-93cf-00baf1d7374a
+    - userID: 5463c8e2-7fbb-4936-761d-876540949149
+
+armyOnlyBroadcastLevel: 1
+
+barrage:
+    1: 
+        P30D: 3
+        P90D: 9
+        P180D: 60
+    2: 
+        P30D: 20
+        P90D: 60
+        P180D: 150
+    3: 
+        P30D: 50
+        P90D: 150
+        P180D: -1
+    4: 
+        P30D: -1
+        P90D: -1
+        P180D: -1
+
+# showBarrageThreshold defines the threshold of showing barrage when army user sending gifts
+showBarrageThreshold: 10001
+
+butlerPicture: ""
+
+levelRules:
+  - level: 0
+    bonus: 0
+    minMembers: 0
+    minCaptains: 0
+    minColonels: 0
+    minGenerals: 0
+  - level: 1
+    bonus: 10000
+    minMembers: 1
+    minCaptains: 0
+    minColonels: 0
+    minGenerals: 0
+  - level: 2
+    bonus: 20000
+    minMembers: 2
+    minCaptains: 0
+    minColonels: 0
+    minGenerals: 0
+  - level: 3
+    bonus: 30000
+    minMembers: 3
+    minCaptains: 0
+    minColonels: 0
+    minGenerals: 0
+  - level: 4
+    bonus: 50000
+    minMembers: 4
+    minCaptains: 0
+    minColonels: 0
+    minGenerals: 0
+  - level: 5
+    bonus: 70000
+    minMembers: 5 
+    minCaptains: 0
+    minColonels: 0
+    minGenerals: 0
+  - level: 6
+    bonus: 100000
+    minMembers: 6 
+    minCaptains: 1
+    minColonels: 1
+    minGenerals: 1
+  - level: 7
+    bonus: 150000
+    minMembers: 9
+    minCaptains: 2
+    minColonels: 2
+    minGenerals: 2
+  - level: 8
+    bonus: 180000
+    minMembers: 12
+    minCaptains: 3
+    minColonels: 3
+    minGenerals: 3
+# watchBonus defines needed number of watching subscriber for corresponding bonus achievement value
+watchBonus:
+  - minSub: 1
+    bonus: 1000
+  - minSub: 2
+    bonus: 2000
+  - minSub: 3
+    bonus: 3000
+  - minSub: 4
+    bonus: 5000
+  - minSub: 5
+    bonus: 10000
+  - minSub: 6
+    bonus: 20000

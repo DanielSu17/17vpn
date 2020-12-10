@@ -1,0 +1,13 @@
+# this file is designed a add-on configuration for clients
+# to sampling one from {{ sampleRate }} messages
+#
+# for example, if clients define 100 messages per package,
+# then they shall sample int(100 / {{ sampleRate }}) and
+# send to backend for metrics
+
+sampleRate: 10
+ably:
+  enable: true
+  startTime: "2019-09-25T00:00:00+08:00"
+  endTime: "2020-12-31T23:59:59+08:00"
+  samplePercentage: 100

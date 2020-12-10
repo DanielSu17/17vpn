@@ -1,0 +1,138 @@
+# black list for queryv2, users trying to reach their blocked tables through queryv2
+# will receive ErrDisabled: user disabled by black list
+# key table from models.keys
+# Ex:
+# queryV2BlackList:
+#   'c52c9260-119d-423c-afc8-a2c8aa3a7a02': #jameschou01
+#     - "user"
+#     - "stream"
+#   '741f82c1-e431-426d-b93d-209be9ae85ae': ["point"]
+queryV2BlackList:
+#  'c52c9260-119d-423c-afc8-a2c8aa3a7a02': #jameschou01
+#   - "default"
+#  'c00f530f-4e34-4e98-8a2e-61b2c822ea29': #jameschou02
+#   - "user"
+#  'e2f9adee-908d-4702-a0f6-bf164d14e763': #james.sta03
+#   - "point"
+#  'b3307c68-8326-4b64-8572-d4211c9a9de2': #james.sta02
+#   - "point"
+#  '518faee3-5fad-4318-9c25-62235fe546f0': #james.sta05
+#   - "point"
+#  'ad23150c-edad-426c-b889-0fa2cd108618': #james.sta06
+#   - "default"
+#  'fbd1c74c-788c-41ab-ab93-4da360102a68': #choudator-FB
+#   - "default"
+#  '65342ef4-beec-42c2-93ed-43875a75d775': #jameschou17-Google
+#   - "default"
+#  'b9a16df6-8644-4292-820a-3bdbdd6fae63': #ap_6139925696-AppleID
+#   - "default"
+#  'eacd002e-9741-460e-a55d-f1f915175fdb': #james_0624-Twitter
+#   - "default"
+#  '441a89b9-b682-4da5-a02c-f0ea337e52b9': #james.stage11
+#   - "user"
+#  '3f33adf0-9858-481b-81a8-78a6590f53a1': #james.stage12
+#   - "stream"
+#  'cd368c8a-0f47-4686-be42-dcd245c2e5d6': #james.stage13
+#   - "point"
+#  '14363ccc-27a4-4f75-85a0-fa9f16c80b00': #james.stage14
+#   - "default"
+#  '99a03c99-f384-4de5-8dd6-b1caeb659911': #james.stage21
+#   - "user"
+  'bfb9b994-bdb3-4551-a16b-7c4b7958c782': #james.stage22
+   - "stream"
+  '72bb0d06-83c7-4c3a-ae68-1b1209304294': #james.stage23
+   - "point"
+  'd2a211c0-8f42-4cb2-b605-6e26ec61f6a6': #james.stage24
+   - "default"
+
+  # below is for stress test, don't modify it
+  'ba108e3f-334d-4635-87a3-d40eb5db4fb7': #ag_stress_tester1
+   - "stream"
+  'c47c23f3-b72d-43f4-8b69-08a9f2ea8449': #ag_stress_tester2
+   - "stream"
+  '1a5c1b7b-fb26-4e62-9775-17797f0153dd': #ag_stress_tester3
+   - "stream"
+  'fe887139-a33b-42ad-945c-6d110c7eb63b': #ag_stress_tester4
+   - "stream"
+  '2753f9ee-d450-4d5c-a361-add0eb629251': #ag_stress_tester5
+   - "stream"
+  '3633fc09-bb8b-45dc-b502-c43843727dd7': #ag_stress_tester6
+   - "stream"
+  '0016fd84-571e-4cd4-8f96-d4d5f16a79ae': #ag_stress_tester7
+   - "stream"
+  '213ce518-5d6c-4991-8a4d-1e9807d510f9': #ag_stress_tester8
+   - "stream"
+  '70a567e1-9cb3-4e63-bb0c-5bff5c39968b': #ag_stress_tester9
+   - "stream"
+  '6a8ffd91-5c9f-40fd-83f4-be96d2f9a779': #ag_stress_tester10
+   - "stream"
+  'a4292d33-d70a-48dc-adbf-d8b0ea566ac1': #ag_stress_tester11
+   - "user"
+  'a8fab5a1-a46a-4dac-b1d5-0c382826b761': #ag_stress_tester12
+   - "user"
+  '0e341647-4b79-4785-9ebe-a5486294c420': #ag_stress_tester13
+   - "user"
+  '5303eb40-1bc6-42f7-82cb-2993ddab102f': #ag_stress_tester14
+   - "user"
+  '289b1c73-a447-43a6-8e29-7cf6d054a426': #ag_stress_tester15
+   - "user"
+  'b6c2917f-f550-402d-9c90-1742ec9f9978': #ag_stress_tester16
+   - "user"
+  'e0ea67fe-c99d-4933-9ee3-839ffcc001f1': #ag_stress_tester17
+   - "user"
+  'c79fd156-fa47-471e-97b4-e7241d425e5d': #ag_stress_tester18
+   - "user"
+  'dc7d3d0f-6055-4e16-b589-a1ace6dfa3a6': #ag_stress_tester19
+   - "user"
+  '04ad9f22-c426-468c-945c-1152fb6a2264': #ag_stress_tester20
+   - "user"
+  '7e53f2cd-c144-4e6c-b41f-34294cb4446b': #ag_stress_tester21
+   - "default"
+  '79e44bc8-82c7-4cc1-99bc-b63ced1dce71': #ag_stress_tester22
+   - "default"
+  '24481a62-c0ef-4dd6-8bdd-e02f2b7b6ff9': #ag_stress_tester23
+   - "default"
+  'cb8abc55-2f55-4f8d-bf79-f5dd6004f072': #ag_stress_tester24
+   - "default"
+  '5661e0b3-3d77-4f97-aff5-a6fbad616bd9': #ag_stress_tester25
+   - "default"
+  'b051df2a-fcaf-4b59-a664-96c86a5a6bcd': #ag_stress_tester26
+   - "default"
+  '9cc87ad1-c906-4b5c-9d42-76dfa7e87335': #ag_stress_tester27
+   - "default"
+  'f448bca6-aebe-46fb-bfb7-c6de8988d476': #ag_stress_tester28
+   - "default"
+  'e1d3a999-69b7-4812-b907-5c44faeb90ef': #ag_stress_tester29
+   - "default"
+  '0a6a6c61-8d4b-4622-8534-94d9161426d9': #ag_stress_tester30
+   - "default"
+
+# If a userID's table "user" is blocked, he should provide his accessToken in this blacklist so
+# we can block middleware from getting his userInfo from db
+# Ex:
+# accessTokenBlackList:
+#  - 'c41558af-35d8-46ab-926c-f888d741c8ee'
+accessTokenBlackList:
+#  - 'd625de44-93bc-40be-9271-9b06d30befbe'  #jameschou01
+#  - '925b465c-4830-47f2-8884-9890c2fcf2b3'  #james.sta02
+#  - 'b3c5cd31-89c1-4990-b555-c2d658b1dbc5'  #james.sta05
+#  - 'f483d50d-d35c-462a-9b02-685c0caa1cd0'  #james.sta03
+#  - 'b7ba0619-ea4d-43c4-a791-e37ad37ef1c3'  #james.sta06
+#  - 'ad0af96a-32ba-4629-8784-c26667b4d13e'  #choudator-FB
+#  - 'dffb76cd-1ceb-4d63-8371-77c1531f55df'  #jameschou17-Google
+#  - 'a909a026-1c11-4c2b-b432-d3b9ed5fc88f'  #ap_6139925696-AppleID
+#  - 'f96f3b3c-1cec-46d2-8334-994e3e06bb4a'  #james_0624-Twitter
+#  - '42d6720b-8266-41fd-b4b7-06166b3b119e'  #james.stage11
+
+
+  # below is for stress test, don't modify it
+  - 'a4292d33-d70a-48dc-adbf-d8b0ea566ac1' #ag_stress_tester11
+  - 'a8fab5a1-a46a-4dac-b1d5-0c382826b761' #ag_stress_tester12
+  - '0e341647-4b79-4785-9ebe-a5486294c420' #ag_stress_tester13
+  - '5303eb40-1bc6-42f7-82cb-2993ddab102f' #ag_stress_tester14
+  - '289b1c73-a447-43a6-8e29-7cf6d054a426' #ag_stress_tester15
+  - 'b6c2917f-f550-402d-9c90-1742ec9f9978' #ag_stress_tester16
+  - 'e0ea67fe-c99d-4933-9ee3-839ffcc001f1' #ag_stress_tester17
+  - 'c79fd156-fa47-471e-97b4-e7241d425e5d' #ag_stress_tester18
+  - 'dc7d3d0f-6055-4e16-b589-a1ace6dfa3a6' #ag_stress_tester19
+  - '04ad9f22-c426-468c-945c-1152fb6a2264' #ag_stress_tester20

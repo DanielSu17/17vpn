@@ -1,0 +1,82 @@
+# Usage:
+#     any request match the regular expression "/v1/abc/[0-9]*/def" will be under
+#     ratelimiting with QPS 100, and burst QPS = 200
+#     `scope` can be `by_global`, `by_ip` or `by_access_token` for now
+#
+# Remarks:
+#     reservoir_size must be non-zero. Otherwise the leakybucket algorithm will fail.
+#     reservoir_size should be larger than flow_per_second, otherwise the actual
+#     allowed QPS may be lower than specified flow_per_second
+#
+# Example:
+# rate_limits:
+# - url: "/v1/abc/[0-9]*/def"
+#   method: "GET"
+#   flow_per_second: 100
+#   reservoir_size: 200
+#   scope: by_access_token
+
+rate_limits:
+- {url: "/api/v1/legacy/unfollowUserAction",                 method: "POST",    flow_per_second: 3,       reservoir_size: 3,    scope: by_access_token}
+
+#app/api/api/clip/clip.go:62:		apis.AddRateLimit(rl, apis.RateLimitClipLike, ratelimiter.Second, clipQPS,          apis.ByUser),
+#app/api/api/clip/clip.go:67:		apis.AddRateLimit(rl, apis.RateLimitClipView, ratelimiter.Second, clipQPS, 			apis.ByUser),
+#app/api/api/clip/clip.go:72:		apis.AddRateLimit(rl, apis.RateLimitClipVote, ratelimiter.Second, clipQPS, 			apis.ByUser),
+- {url: "/api/v1/clips/[A-Za-z0-9-]+/like",                  method: "POST",    flow_per_second: 20,      reservoir_size: 20,   scope: by_access_token}
+- {url: "/api/v1/clips/[A-Za-z0-9-]+/view",                  method: "POST",    flow_per_second: 20,      reservoir_size: 20,   scope: by_access_token}
+- {url: "/api/v1/clips/[A-Za-z0-9-]+/vote",                  method: "POST",    flow_per_second: 20,      reservoir_size: 20,   scope: by_access_token}
+
+#app/api/api/live/live.go:242:	apis.Handle(grg, "POST", "/qiniu/notification", apis.AddRateLimit(rl, apis.RateLimitQiniuNotif, ratelimiter.Minute, qiniuNotificationLimit, apis.ByUser), lh.qiniuNotif)
+#app/api/api/live/live.go:336:	apis.AddRateLimit(rl, apis.RateLimitKeepStream, ratelimiter.Second, keepStreamQPS, 	apis.ByUser),
+#app/api/api/live/live.go:399:	apis.AddRateLimit(rl, apis.RateLimitLiveSuspicious, ratelimiter.Minute, 1, apis.ByUser),
+- {url: "/api/v1/liveStreams/qiniu/notification",            method: "POST",    flow_per_second: 0.05,    reservoir_size: 3,    scope: by_access_token}
+- {url: "/api/v1/liveStreams/[A-Za-z0-9-]+/alive",           method: "POST",    flow_per_second: 1,       reservoir_size: 1,    scope: by_access_token}
+- {url: "/api/v1/liveStreams/suspicious",                    method: "GET",     flow_per_second: 0.0166,  reservoir_size: 1,    scope: by_access_token}
+
+#app/api/api/vote/vote.go:45:		apis.AddRateLimit(rl, apis.RateLimitVote,     ratelimiter.Second, doVoteQPS, 		apis.ByUser),
+- {url: "/api/v1/vote",                                      method: "POST",    flow_per_second: 5,       reservoir_size: 5,    scope: by_access_token}
+
+#app/api/api/post/post.go:60:		apis.AddRateLimit(rl, apis.RateLimitPostView,                   ratelimiter.TenMinutes, 1,apis.ByIP),
+#app/api/api/post/post.go:66:		apis.AddRateLimit(rl, apis.RateLimitPostLike,                   ratelimiter.Hour, 10000,  apis.ByUser),
+#app/api/api/post/post.go:67:		apis.AddRateLimit(rl, apis.RateLimitPostLike,                   ratelimiter.Hour, 10000,  apis.ByIP),
+- {url: "/api/v1/post/viewPost",                                method: "POST",    flow_per_second: 0.00166,     reservoir_size: 1,     scope: by_ip}
+- {url: "/api/v1/post/likePostBatchUpdate",                     method: "POST",    flow_per_second: 2.778,       reservoir_size: 10000, scope: by_access_token}
+- {url: "/api/v1/post/likePostBatchUpdate",                     method: "POST",    flow_per_second: 2.778,       reservoir_size: 10000, scope: by_ip}
+
+#app/api/api/auth/auth.go:116:		apis.AddRateLimit(rl, apis.RateLimitIsPhoneNumberUsed,          ratelimiter.Minute, 5,    apis.ByIP),
+#app/api/api/auth/auth.go:121:		apis.AddRateLimit(rl, apis.RateLimitIsPhoneNumberOpenIDPaired,  ratelimiter.Minute, 5,    apis.ByIP),
+#app/api/api/auth/auth.go:126:		apis.AddRateLimit(rl, apis.RateLimitSendPhoneVerificationCode,  ratelimiter.Minute, 5, apis.ByIP),
+#app/api/api/auth/auth.go:132:		apis.AddRateLimit(rl, apis.RateLimitVerifySMSCode,              ratelimiter.Minute, 5, apis.ByIP),
+#app/api/api/auth/auth.go:141:		apis.AddRateLimit(rl, apis.RateLimitRegisterByPhoneAction,      ratelimiter.Minute, 5, apis.ByIP),
+#app/api/api/auth/auth.go:148:		apis.AddRateLimit(rl, apis.RateLimitPhoneRegister,              ratelimiter.Minute, 5, apis.ByIP),
+#app/api/api/auth/auth.go:167:		apis.AddRateLimit(rl, apis.RateLimitChangePhoneNumber,          ratelimiter.Minute, 5, apis.ByIP),
+#app/api/api/auth/auth.go:172:		apis.AddRateLimit(rl, apis.RateLimitCChangePhoneNumber,         ratelimiter.Minute, 5, apis.ByIP),
+#app/api/api/auth/auth.go:183:		apis.AddRateLimit(rl, apis.RateLimitPhoneRegister,              ratelimiter.Minute, 5, apis.ByIP),
+- {url: "/api/v1/auth/isPhoneNumberUsed",                       method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
+- {url: "/api/v1/auth/isPhoneNumberOpenIDPaired",               method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
+- {url: "/api/v1/auth/sendPhoneVerificationCode",               method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
+- {url: "/api/v1/auth/sms/verify",                              method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
+- {url: "/api/v1/auth/registerByPhoneAction",                   method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
+- {url: "/api/v1/auth/phone/register",                          method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
+- {url: "/api/v1/auth/changePhoneNumber",                       method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
+- {url: "/api/v1/auth/ChangePhoneNumber",                       method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
+- {url: "/api/v1/auth/checkNeedHumanTest",                      method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
+
+#app/api/api/cryptocurrency/cryptocurrency.go:73:		apis.AddRateLimit(rl, apis.RateLimitMithSendPhoneVerificationCode, ratelimiter.Minute, 5, apis.ByIP),
+#app/api/api/cryptocurrency/cryptocurrency.go:78:		apis.AddRateLimit(rl, apis.RateLimitMithVerifySMSCode, ratelimiter.Minute, 10, apis.ByIP),
+- {url: "/api/v1/cryptocurrency/mith/sendPhoneVerificationCode", method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
+- {url: "/api/v1/cryptocurrency/mith/sms/verify",                method: "POST",    flow_per_second: 0.167,       reservoir_size: 10,    scope: by_ip}
+
+#app/api/api/monster/monster.go:47:            apis.AddRateLimit(rl, apis.RateLimitHitMonster, ratelimiter.Second, hitQPS, apis.ByUser),
+- {url: "/api/v1/monsters/[A-Za-z0-9-]+/hit",                   method: "POST",    flow_per_second: 20,          reservoir_size: 20,    scope: by_access_token}
+#app/api/api/user/user.go:261:         apis.AddRateLimit(rl, apis.RateLimitGetSearchUsers, ratelimiter.Second, 10, apis.ByIP),
+- {url: "/api/v1/legacy/getSearchUsers",                        method: "POST",    flow_per_second: 10,          reservoir_size: 10,    scope: by_ip}
+#app/api/api/hashtag/hashtag.go:38:            apis.AddRateLimit(rl, apis.RateLimitHashtagSearch, ratelimiter.Second, 5, apis.ByUser),
+- {url: "/api/v1/hashtags/search",                              method: "POST",    flow_per_second: 5,           reservoir_size: 5,     scope: by_access_token}
+#app/api/api/accompany/accompany.go:44:                apis.AddRateLimit(rl, apis.RateLimitAccompanyOrder, ratelimiter.Minute, 5, apis.ByUser),
+- {url: "/api/v1/accompany/order",                              method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_access_token}
+
+#app/api/api/gift/gift.go:126:		apis.AddRateLimit(rl, apis.RateLimitSendGift, ratelimiter.Second, sendGiftQPS, apis.ByUser),
+- {url: "/api/v1/gift/giftbox",                                 method: "POST",    flow_per_second: 20,          reservoir_size: 20,    scope: by_access_token}
+
+- {url: "/api/v1/gift/giftbox/unread",                          method: "GET",    flow_per_second: 0.083,           reservoir_size:  5,    scope: by_global}

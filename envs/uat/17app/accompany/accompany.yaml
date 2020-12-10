@@ -1,0 +1,77 @@
+# categoryI18n
+# type: 1(singing), 2(chat), 3(dance), Note: The type should from DB
+# tokens: i18n key, ex: singing for 唱歌, singing_unit for [%s]點/首
+# Note: The list should not be removed.
+# If you want to remove the item from the list in app,
+# you should remove the item in `categories` instead.
+#
+# categories
+# type: choose from item type in `categoryI18n`
+# duration: duration of the order (seconds)
+# tokens: Deprecated
+
+enableAllStreamer: true
+enableWhitelist: true
+whitelist: ["efabab5e-1b8a-4179-74c8-caa9b0775aac"]
+
+maxOrderNum: 3
+
+categoryI18n:
+    - type: 4
+      tokens:
+          name:
+              key: accompany_service_order_item_D
+          description:
+              key: accompany_service_order_price
+    - type: 1
+      tokens:
+          name:
+              key: accompany_service_order_item_A
+          description:
+              key: accompany_service_order_price
+    - type: 2
+      tokens:
+          name:
+              key: accompany_service_order_item_B
+          description:
+              key: accompany_service_order_price
+    - type: 3
+      tokens:
+          name:
+              key: accompany_service_order_item_C
+          description:
+              key: accompany_service_order_price
+
+categories:
+    - type: 4
+      point: 200
+      duration: 120
+      tokens:
+          name:
+              key: accompany_service_order_item_D
+          description:
+              key: accompany_service_order_price
+    - type: 1
+      point: 500
+      duration: 300
+      tokens:
+          name:
+              key: accompany_service_order_item_A
+          description:
+              key: accompany_service_order_price
+    - type: 2
+      point: 500
+      duration: 300
+      tokens:
+          name:
+              key: accompany_service_order_item_B
+          description:
+              key: accompany_service_order_price
+    - type: 3
+      point: 500
+      duration: 300
+      tokens:
+          name:
+              key: accompany_service_order_item_C
+          description:
+              key: accompany_service_order_price

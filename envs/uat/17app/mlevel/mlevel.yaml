@@ -1,0 +1,247 @@
+enableCron: true
+isUpdatePointBySumOfPoints: true
+isUpdateRecordModelByLastMonth: true
+
+backgroundSetting:
+  - level: 2
+    url: "http://cdn.17app.co/ffafa7c0-d130-43ad-b7e1-5071a1d6340a.png"
+    textColor: "#FFFFFF"
+    bgColor: "#000000"
+    cardFrameURL: "http://cdn.17app.co/602368ce-1d94-4396-9426-c1a5fea61ced.png"
+  - level: 5
+    url: "http://cdn.17app.co/c05e775d-f29f-4c70-ba9e-954248e80547.png"
+    textColor: "#FFFFFF"
+    bgColor: "#000000"
+    cardFrameURL: "http://cdn.17app.co/99bb55f0-1246-46fd-ab5f-213b40df8096.png"
+  - level: 9
+    url: "http://cdn.17app.co/5e903f44-26c8-4946-818b-dd90cbe8a8e2.png"
+    textColor: "#FFFFFF"
+    bgColor: "#000000"
+    cardFrameURL: "http://cdn.17app.co/b0c4f848-f823-47a1-873e-edfa2252d7c4.png"
+
+permissions:
+    enterNotif:
+        - level: 1
+          name: NOTIF_BASIC
+          key: mlevel_privilege_A
+          enabledImageURL: http://cdn.17app.co/5c7b34a2-f42f-4e94-9b9a-71f151c730d3.png
+          disabledImageURL: http://cdn.17app.co/195b71cc-4375-4751-bcf4-208f25f64e8a.png
+          order: 1
+        - level: 5
+          name: NOTIF_INTERMIDIATE
+          key: mlevel_privilege_Q
+          enabledImageURL: http://cdn.17app.co/5c7b34a2-f42f-4e94-9b9a-71f151c730d3.png
+          disabledImageURL: http://cdn.17app.co/195b71cc-4375-4751-bcf4-208f25f64e8a.png
+          order: 7
+        - level: 8
+          name: NOTIF_ADVANCED
+          key: mlevel_privilege_R
+          enabledImageURL: http://cdn.17app.co/5c7b34a2-f42f-4e94-9b9a-71f151c730d3.png
+          disabledImageURL: http://cdn.17app.co/195b71cc-4375-4751-bcf4-208f25f64e8a.png
+          order: 13
+    card:
+        - level: 2
+          name: CARD_ELEMENTARY
+          key: mlevel_privilege_B
+          enabledImageURL: http://cdn.17app.co/3242e5e0-69de-455f-947c-180032fa5478.png
+          disabledImageURL: http://cdn.17app.co/538b3096-22fc-445c-9b9b-684cacc4170a.png
+          order: 3
+        - level: 5
+          name: CARD_INTERMIDIATE
+          key: mlevel_privilege_E
+          enabledImageURL: http://cdn.17app.co/3242e5e0-69de-455f-947c-180032fa5478.png
+          disabledImageURL: http://cdn.17app.co/538b3096-22fc-445c-9b9b-684cacc4170a.png
+          order: 9
+        - level: 9
+          name: CARD_ADVANCED
+          key: mlevel_privilege_M
+          enabledImageURL: http://cdn.17app.co/3242e5e0-69de-455f-947c-180032fa5478.png
+          disabledImageURL: http://cdn.17app.co/538b3096-22fc-445c-9b9b-684cacc4170a.png
+          order: 15
+    gift:
+        - level: 3
+          name: GIFT_ELEMENTARY
+          key: mlevel_privilege_C
+          enabledImageURL: http://cdn.17app.co/53952906-12e2-44e5-9aaf-6aa26159a02f.png
+          disabledImageURL: http://cdn.17app.co/e738e8a9-8b1f-4ceb-bbb7-07fa01d4b2ad.png
+          order: 5
+        - level: 6
+          name: GIFT_INTERMIDIATE
+          key: mlevel_privilege_H
+          enabledImageURL: http://cdn.17app.co/53952906-12e2-44e5-9aaf-6aa26159a02f.png
+          disabledImageURL: http://cdn.17app.co/e738e8a9-8b1f-4ceb-bbb7-07fa01d4b2ad.png
+          order: 12
+        - level: 10
+          name: GIFT_ADVANCED
+          key: mlevel_privilege_N
+          enabledImageURL: http://cdn.17app.co/53952906-12e2-44e5-9aaf-6aa26159a02f.png
+          disabledImageURL: http://cdn.17app.co/e738e8a9-8b1f-4ceb-bbb7-07fa01d4b2ad.png
+          order: 17
+    marquee:
+        - level: 6
+          name: MARQUEE_NORMAL
+          key: mlevel_privilege_F
+          enabledImageURL: http://cdn.17app.co/c9a05d7f-b187-4f08-82e2-0379760e54a4.png
+          disabledImageURL: http://cdn.17app.co/62839458-90b1-469f-8f72-4aa9a032a3c1.png
+          order: 11
+    cardBorder:
+        - level: 2
+          name: BORDER_ELEMENTARY
+          key: mlevel_privilege_G
+          enabledImageURL: http://cdn.17app.co/3a7fad31-338e-4a32-8f25-daf1d61b883b.png
+          disabledImageURL: http://cdn.17app.co/65c5ae00-4ddb-450c-83a2-b61b4d5c60e2.png
+          order: 4
+        - level: 5
+          name: BORDER_INTERMIDIATE
+          key: mlevel_privilege_K
+          enabledImageURL: http://cdn.17app.co/3a7fad31-338e-4a32-8f25-daf1d61b883b.png
+          disabledImageURL: http://cdn.17app.co/65c5ae00-4ddb-450c-83a2-b61b4d5c60e2.png
+          order: 10
+        - level: 9
+          name: BORDER_ADVANCED
+          key: mlevel_privilege_P
+          enabledImageURL: http://cdn.17app.co/3a7fad31-338e-4a32-8f25-daf1d61b883b.png
+          disabledImageURL: http://cdn.17app.co/65c5ae00-4ddb-450c-83a2-b61b4d5c60e2.png
+          order: 16
+    stealthLeaderboard:
+        - level: 4
+          name: STEALTH_LB_BASIC
+          key: mlevel_privilege_J
+          enabledImageURL: http://cdn.17app.co/9fc72242-0a95-4638-ac26-d4190d859123.png
+          disabledImageURL: http://cdn.17app.co/052a1cf4-2cd7-4e94-ab1d-23ea899e46cf.png
+          order: 6
+    privateMsg:
+    invisibleStatus:
+        - level: 8
+          name: INVISIBLE_BASIC
+          key: mlevel_privilege_invisible_status
+          enabledImageURL: https://assets-17app.akamaized.net/0b98c457-9e2d-47d5-8b08-67c36e4262aa.png 
+          disabledImageURL: https://assets-17app.akamaized.net/28da7ae0-6427-4f4a-a02b-2c3566b27845.png
+          order: 14
+
+# level / point mapping table
+# level 0 is only for giving the imageURL
+# msgBadgeURL will be shown in comment msg
+levelRules:
+    - level: 0
+      imageURL:
+      msgBadgeURL: 
+    - level: 1
+      minPoint: 20000
+      keepLevelMinPoint: 12000
+      imageURL: http://cdn.17app.co/21ad8d31-7da3-4447-820c-c8e38f3fad11.png
+      msgBadgeURL: https://assets-17app.akamaized.net/08dcd94f-6672-44ea-a698-073c09a5e66f.png
+    - level: 2
+      minPoint: 70000
+      keepLevelMinPoint: 30000
+      imageURL: http://cdn.17app.co/831bfc91-6f0c-4ad6-aecb-8988b1cf3416.png
+      msgBadgeURL: https://assets-17app.akamaized.net/3dc9b982-d280-46af-82af-9443e646969f.png
+    - level: 3
+      minPoint: 220000
+      keepLevelMinPoint: 90000
+      imageURL: http://cdn.17app.co/34ed9783-fadb-4680-bf02-a4442761556b.png
+      msgBadgeURL: https://assets-17app.akamaized.net/176c0051-c061-45cc-9c24-7b87a3879843.png
+    - level: 4
+      minPoint: 520000
+      keepLevelMinPoint: 180000
+      imageURL: http://cdn.17app.co/45fa2cda-813c-4a2a-9276-04ea2045795e.png
+      msgBadgeURL: https://assets-17app.akamaized.net/3f898589-aa43-4507-a7ad-a2c8b7fe1d13.png
+    - level: 5
+      minPoint: 1020000
+      keepLevelMinPoint: 300000
+      imageURL: http://cdn.17app.co/46723556-66ab-43e3-ba69-466dec39ab39.png
+      msgBadgeURL: https://assets-17app.akamaized.net/7102141b-e61d-425d-a9ba-5311aaedceea.png
+    - level: 6
+      minPoint: 2020000
+      keepLevelMinPoint: 600000
+      imageURL: http://cdn.17app.co/123667bd-1f4a-4b8f-899e-85a77cbcd7b9.png
+      msgBadgeURL: https://assets-17app.akamaized.net/434c5188-ad4b-4123-ae89-5743994d34ae.png
+    - level: 7
+      minPoint:  7020000
+      keepLevelMinPoint: 1200000
+      imageURL: http://cdn.17app.co/a8a94102-73cd-4225-930c-bb7952882822.png
+      msgBadgeURL: https://assets-17app.akamaized.net/45f0718e-039b-4a15-942e-81aa51745074.png
+    - level: 8
+      minPoint: 17020000
+      keepLevelMinPoint: 6000000
+      imageURL: http://cdn.17app.co/c06cc685-d64d-4ed6-b0d4-4ea0bf4ea5d0.png
+      msgBadgeURL: https://assets-17app.akamaized.net/482f9fba-4de8-4d6c-84c2-dfb2a1ae5b5a.png
+    - level: 9
+      minPoint: 47020000
+      keepLevelMinPoint: 18000000
+      imageURL: http://cdn.17app.co/355ae879-fc3a-43d9-91ab-3512510324a7.png
+      msgBadgeURL: https://assets-17app.akamaized.net/44c2c126-0cac-4cdc-ba93-71718ccb2f82.png
+    - level: 10
+      minPoint: 97020000
+      keepLevelMinPoint: 30000000
+      imageURL: http://cdn.17app.co/a11c3b54-d043-4b9c-9203-6114b570cdec.png
+      msgBadgeURL: https://assets-17app.akamaized.net/d0b047fe-3134-405a-bbcd-28e725ed71c3.png
+
+time20200101TaipeiTimestamp: 1575129600 # 20201201 UTC+8
+levelRules2020:
+    - level: 0
+      imageURL:
+      msgBadgeURL:
+    - level: 1
+      minPoint: 35200
+      keepLevelMinPoint: 21120
+      imageURL: http://cdn.17app.co/21ad8d31-7da3-4447-820c-c8e38f3fad11.png
+      msgBadgeURL: https://assets-17app.akamaized.net/08dcd94f-6672-44ea-a698-073c09a5e66f.png
+    - level: 2
+      minPoint: 123200
+      keepLevelMinPoint: 52800
+      imageURL: http://cdn.17app.co/831bfc91-6f0c-4ad6-aecb-8988b1cf3416.png
+      msgBadgeURL: https://assets-17app.akamaized.net/3dc9b982-d280-46af-82af-9443e646969f.png
+    - level: 3
+      minPoint: 387200
+      keepLevelMinPoint: 158400
+      imageURL: http://cdn.17app.co/34ed9783-fadb-4680-bf02-a4442761556b.png
+      msgBadgeURL: https://assets-17app.akamaized.net/176c0051-c061-45cc-9c24-7b87a3879843.png
+    - level: 4
+      minPoint: 915200
+      keepLevelMinPoint: 316800
+      imageURL: http://cdn.17app.co/45fa2cda-813c-4a2a-9276-04ea2045795e.png
+      msgBadgeURL: https://assets-17app.akamaized.net/3f898589-aa43-4507-a7ad-a2c8b7fe1d13.png
+    - level: 5
+      minPoint: 1795200
+      keepLevelMinPoint: 528000
+      imageURL: http://cdn.17app.co/46723556-66ab-43e3-ba69-466dec39ab39.png
+      msgBadgeURL: https://assets-17app.akamaized.net/7102141b-e61d-425d-a9ba-5311aaedceea.png
+    - level: 6
+      minPoint: 3555200
+      keepLevelMinPoint: 1056000
+      imageURL: http://cdn.17app.co/123667bd-1f4a-4b8f-899e-85a77cbcd7b9.png
+      msgBadgeURL: https://assets-17app.akamaized.net/434c5188-ad4b-4123-ae89-5743994d34ae.png
+    - level: 7
+      minPoint: 12355200
+      keepLevelMinPoint: 5280000
+      imageURL: http://cdn.17app.co/a8a94102-73cd-4225-930c-bb7952882822.png
+      msgBadgeURL: https://assets-17app.akamaized.net/45f0718e-039b-4a15-942e-81aa51745074.png
+    - level: 8
+      minPoint: 29955200
+      keepLevelMinPoint: 10560000
+      imageURL: http://cdn.17app.co/c06cc685-d64d-4ed6-b0d4-4ea0bf4ea5d0.png
+      msgBadgeURL: https://assets-17app.akamaized.net/482f9fba-4de8-4d6c-84c2-dfb2a1ae5b5a.png
+    - level: 9
+      minPoint: 82755200
+      keepLevelMinPoint: 31680000
+      imageURL: http://cdn.17app.co/355ae879-fc3a-43d9-91ab-3512510324a7.png
+      msgBadgeURL: https://assets-17app.akamaized.net/44c2c126-0cac-4cdc-ba93-71718ccb2f82.png
+    - level: 10
+      minPoint: 170755200
+      keepLevelMinPoint: 52800000
+      imageURL: http://cdn.17app.co/a11c3b54-d043-4b9c-9203-6114b570cdec.png
+      msgBadgeURL: https://assets-17app.akamaized.net/d0b047fe-3134-405a-bbcd-28e725ed71c3.png
+
+rules:
+    - mlevel_rule_content_1
+    - mlevel_rule_content_2
+    - mlevel_rule_content_3
+    - mlevel_rule_content_4
+    - mlevel_rule_content_5
+    - mlevel_rule_content_6
+
+privileges:
+    - text: mlevel_privilege_content_1
+    - text: mlevel_privilege_content_2
+    - text: mlevel_privilege_content_3

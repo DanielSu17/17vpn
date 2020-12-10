@@ -1,0 +1,31 @@
+# Currency difinitions
+#   - Currency_POINT:  1
+#   - Currency_CHIP :  2
+#   - Currency_REVENUE :  3
+- from: 1
+  fromFeeCoefficient: 0
+  fromFeeConstant: 0
+  to: 2
+  toFeeCoefficient: 0
+  toFeeConstant: 0
+  exchangeRate: 100
+  allowToSelf: true
+  allowToOthers: false
+- from: 2
+  fromFeeCoefficient: 0.05
+  fromFeeConstant: 0
+  to: 2
+  toFeeCoefficient: 0
+  toFeeConstant: 0
+  exchangeRate: 1
+  allowToSelf: false
+  allowToOthers: true
+- from: 3
+  fromFeeCoefficient: 0.00
+  fromFeeConstant: 0
+  to: 1
+  toFeeCoefficient: 0
+  toFeeConstant: 0
+  exchangeRate: 100
+  allowToSelf: true
+  allowToOthers: false

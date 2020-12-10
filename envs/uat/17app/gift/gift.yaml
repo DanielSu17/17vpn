@@ -1,0 +1,144 @@
+protoBufSampleRate: 100
+enableGiftSync: false
+unreadKeySuffix: 2
+availableVersion:
+  iOS: 2.12
+  android: 2.2.69
+forceFollow:
+  regionMode: 2
+  region: ["TW"]
+  giftID: ["voucher_gift_wave"]
+
+onlyVoucherUseGiftIDs:
+  - "voucher_gift_wave"
+  - "voucher_gift_wave_update"
+  - "voucher_daily_reward_gift_cat_2"
+  - "voucher_daily_reward_gift_cat_3"
+  - "voucher_daily_reward_nasi_lemak"
+  - "voucher_daily_reward_hibiscus"
+  - "voucher_daily_reward_newyearcat"
+
+producerGiftIDs:
+  - gift_17k_producer
+  - 1807_tw_17_avex_special_3000
+  - 1810_tw_live_bp_sing_100
+  - 1810_tw_live_bp_sing_10
+  - 1811_tw_live_bp_sing_100
+  - gift_china_talent
+  - jp_17music_prodcuer
+
+labelTypeToKey:
+    event: "gift_tag_event"
+    new: "gift_tag_new"
+    elite3: "gift_tag_elite_three"
+    elite7: "gift_tag_elite_seven"
+    elite10: "gift_tag_elite_ten"
+    level0: "gift_tag_level_0"
+    level1: "gift_tag_level_1"
+    level2: "gift_tag_level_2"
+    level3: "gift_tag_level_3"
+    face: "giftbox_label_face"
+    antiprofit: "giftbox_label_antiprofit"
+    random: "giftbox_label_random"
+    redenvelope: "giftbox_label_redenvelop"
+    combo: "giftbox_label_combo"
+labelInfo:
+  - labelI18nKey: "gift_tag_event"
+    tagColor: "#FFFFFF"
+    anchorColor: "#6f6777"
+    fontColor: "#f69355"
+    boarderColor: "#d2d2d7"
+  - labelI18nKey: "gift_tag_new"
+    tagColor: "#FFFFFF"
+    anchorColor: "#6F6777"
+    fontColor: "#f5487d"
+    boarderColor: "#d2d2d7"
+  - labelI18nKey: "gift_tag_elite_three"
+    tagColor: "#FFFFFF"
+    anchorColor: "#6F6777"
+    fontColor: "#525252"
+    boarderColor: "#d2d2d7"
+  - labelI18nKey: "gift_tag_elite_seven"
+    tagColor: "#FFFFFF"
+    anchorColor: "#6F6777"
+    fontColor: "#525252"
+    boarderColor: "#d2d2d7"
+  - labelI18nKey: "gift_tag_elite_ten"
+    tagColor: "#FFFFFF"
+    anchorColor: "#6F6777"
+    fontColor: "#525252"
+    boarderColor: "#d2d2d7"
+  - labelI18nKey: "gift_tag_level_0"
+    tagColor: "#FFFFFF"
+    anchorColor: "#6F6777"
+    fontColor: "#525252"
+    boarderColor: "#d2d2d7"
+  - labelI18nKey: "gift_tag_level_1"
+    tagColor: "#FFFFFF"
+    anchorColor: "#6F6777"
+    fontColor: "#525252"
+    boarderColor: "#d2d2d7"
+  - labelI18nKey: "gift_tag_level_2"
+    tagColor: "#FFFFFF"
+    anchorColor: "#6F6777"
+    fontColor: "#525252"
+    boarderColor: "#d2d2d7"
+  - labelI18nKey: "gift_tag_level_3"
+    tagColor: "#FFFFFF"
+    anchorColor: "#6F6777"
+    fontColor: "#525252"
+    boarderColor: "#d2d2d7"
+  - labelI18nKey: "giftbox_label_face"
+    tagColor: "#FFFFFF"
+    anchorColor: "#6F6777"
+    fontColor: "#525252"
+    boarderColor: "#d2d2d7"
+  - labelI18nKey: "giftbox_label_antiprofit"
+    tagColor: "#FFFFFF"
+    anchorColor: "#6F6777"
+    fontColor: "#525252"
+    boarderColor: "#d2d2d7"
+  - labelI18nKey: "giftbox_label_random"
+    tagColor: "#FFFFFF"
+    anchorColor: "#6F6777"
+    fontColor: "#525252"
+    boarderColor: "#d2d2d7"
+  - labelI18nKey: "giftbox_label_redenvelop"
+    tagColor: "#FFFFFF"
+    anchorColor: "#6F6777"
+    fontColor: "#525252"
+    boarderColor: "#d2d2d7"
+  - labelI18nKey: "giftbox_label_combo"
+    tagColor: "#FFFFFF"
+    anchorColor: "#6F6777"
+    fontColor: "#525252"
+    boarderColor: "#d2d2d7"
+mlevelMapping:
+    elite3: 3
+    elite7: 7
+    elite10: 10
+blackList:
+  - elite3
+  - elite7
+  - elite10
+giftTypeLabelAllow:
+  - type: 0 # normal
+    labelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo" ]
+  - type: 1 # lucky bag
+    labelType: [ "event", "new"]
+  - type: 2 # slot
+    labelType: [ "event", "new"]
+  - type: 3 # dummy
+    labelType: [ "event", "new"]
+  - type: 4 # poke
+    labelType: [ "event", "new"]
+  - type: 5 # poll
+    labelType: [ "event", "new"]
+  - type: 6 # music producer
+    labelType: [ "event", "new"]
+  - type: 7 # texture
+    labelType: [ "event", "new"]
+  - type: 8 # army
+    labelType: [ "event", "new"]
+  - type: 9 # elite
+    labelType: [ "elite3", "elite7", "elite10" ]

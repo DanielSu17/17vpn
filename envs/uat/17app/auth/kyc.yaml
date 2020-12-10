@@ -1,0 +1,258 @@
+senderEmail: "no-reply@17.media"
+
+verifyMailContentMapStartTime: 1598517600  # Aug 27, 2020 04:50:00 PM GMT+08:00
+verifyMailTTLInHour: 1
+verifyMailPath: "https://sta.17.live/revenue/kyc/verify"
+verifyMailSubject: "Confirm your email address for 17LIVE - My Revenue"
+verifyMailContent: |
+    <center style="background: #f2f2f2;">
+    <h3>親愛的用戶：</h3>
+    <p>請點擊以下連結以驗證您的電子信箱。<br>
+    如果您沒有在 ”17LIVE - 我的收益“ 中輸入您的信箱，請忽略這封郵件。<br>
+    如果您有任何問題，請寄信給我們的客服：support@17.media</p>
+    <a href="%s"
+    style="
+        text-decoration: none;
+    "
+    >
+    <div
+    style="
+                background: -webkit-linear-gradient(left,#ffaead,#f650a0);
+                background: -o-linear-gradient(right,#ffaead,#f650a0);
+                background: -moz-linear-gradient(right,#ffaead,#f650a0);
+                background: linear-gradient(to right,#ffaead,#f650a0);
+        color: #fff;
+        width: 184px;
+        height: 32px;
+        border-radius: 4px;
+        line-height: 32px;
+    "
+    >
+     驗證 / Confirm
+    </div>
+    </a>
+    <br>
+    <p>この <a href="%s">url</a> をクリックしe-mailアドレスの認証を完了してください。<br>
+    ※このメールはシステムより自動送信されています。ご不明点は以下までお問い合わせください。<br>
+    お問い合わせ：support.jp@17.media</p>
+      
+         <p>Please <a href="%s">click here</a> to verify your email address. <br>
+    If you didn't enter your email address in bbrich's service, please simply ignore this email.<br>
+    If you have any question, please contact our customer support at support@17.media</p>
+    </center>
+
+verifyMailSubjectMap:
+    JP: "【17LIVE(イチナナ)】メールアドレスを認証してください"
+    DEFAULT: "Confirm your email address for 17LIVE - My Revenue"
+verifyMailContentMap:
+    TW: |
+        <center style="background: #f2f2f2;">
+        <br>
+        <h4>親愛的用戶：</h4>
+        <p>請點擊以下按鈕以驗證您的電子信箱。<br>
+        如果您沒有在 ”17LIVE - 我的收益“ 中輸入您的信箱，請忽略這封郵件。<br>
+        如果您有任何問題，請寄信給我們的客服：support@17.media</p>
+        <a href="%s"
+        style="
+            text-decoration: none;
+        "
+        >
+        <div
+        style="
+                    background: -webkit-linear-gradient(left,#ffaead,#f650a0);
+                    background: -o-linear-gradient(right,#ffaead,#f650a0);
+                    background: -moz-linear-gradient(right,#ffaead,#f650a0);
+                    background: linear-gradient(to right,#ffaead,#f650a0);
+            color: #fff;
+            width: 184px;
+            height: 32px;
+            border-radius: 4px;
+            line-height: 32px;
+        "
+        >
+        驗證 / Confirm
+        </div>
+        </a>
+        <p> 
+        </p>
+        <small>*若無法點擊按鈕驗證身份，請點擊此<a href="%s">連結</a>進行身份驗證。</small>
+        <br>
+        <br>
+        </center>
+    JP: |
+        <center style="background: #f2f2f2;">
+        <br>
+        <p>下記の[認証する/Confirm]をクリックしe-mailアドレスの認証を完了してください。<br>
+            ※このメールはシステムより自動送信されています。ご不明点は以下までお問い合わせください。<br>
+            お問い合わせ：support.jp@17.media</p>
+        <a href="%s"
+        style="
+            text-decoration: none;
+        "
+        >
+        <div
+        style="
+                    background: -webkit-linear-gradient(left,#ffaead,#f650a0);
+                    background: -o-linear-gradient(right,#ffaead,#f650a0);
+                    background: -moz-linear-gradient(right,#ffaead,#f650a0);
+                    background: linear-gradient(to right,#ffaead,#f650a0);
+            color: #fff;
+            width: 184px;
+            height: 32px;
+            border-radius: 4px;
+            line-height: 32px;
+        "
+        >
+        認証する / Confirm
+        </div>
+        </a>
+        <p> 
+        </p>
+        <small>*認証するボタンが押せない方は<a href="%s">こちら</a>から認証を完了してください</small>
+        <br>
+        <br>
+        </center>
+    DEFAULT: |
+        <center style="background: #f2f2f2;">
+        <br>
+            <p> Please confirm your email address. <br>
+        If you did not enter your email address on 17.Live - My Revenue, please disregard this note.<br>
+        If you have any questions, please contact support@17.media</p>
+        <a href="%s"
+        style="
+            text-decoration: none;
+        "
+        >
+        <div
+        style="
+                    background: -webkit-linear-gradient(left,#ffaead,#f650a0);
+                    background: -o-linear-gradient(right,#ffaead,#f650a0);
+                    background: -moz-linear-gradient(right,#ffaead,#f650a0);
+                    background: linear-gradient(to right,#ffaead,#f650a0);
+            color: #fff;
+            width: 184px;
+            height: 32px;
+            border-radius: 4px;
+            line-height: 32px;
+        "
+        >
+        Confirm
+        </div>
+        </a>
+        <p> 
+        </p>
+        <small>*You can also press the <a href="%s">link</a> to do the verification.</small>
+        <br>
+        <br>
+        </center>
+
+updateNotifySubject:
+    TW: "17LIVE - 我的收益 個人資料修改通知"
+    JP: "【お知らせ】17LIVE マイレベニューのお客様情報の変更通知"
+    DEFAULT: "17LIVE - My Revenue personal information update notify"
+
+updateNotifyContent:
+    TW: |
+        <center style="background: #f2f2f2;">
+        <br>
+        <style>
+            hr.style-one {
+                border: 0;
+                height: 1px;
+                background: #333;
+                background-image: linear-gradient(to right, #ccc, #333, #ccc);
+            }
+        </style>
+        <hr class="style-one" />
+
+        <br>
+        <H4>親愛的用戶：</H4>
+        <p>  
+            您於 %s 已對 "17LIVE - 我的收益" 的個人資料進行修改。<br>
+            若並非您本人進行資料修改，請儘速修改您的密碼。<br>
+            <p>
+                <font color ="197DFF" size="2"> 本信件為系統自動發送請勿直接回覆，如有疑問請聯繫support@17.media。 </font>
+            </p>
+        </p>
+        <br>
+        <style>
+            hr.style-one {
+                border: 0;
+                height: 1px;
+                background: #333;
+                background-image: linear-gradient(to right, #ccc, #333, #ccc);
+            }
+        </style>
+        <hr class="style-one" />
+        <br>
+        </center>
+    JP: |
+        <center style="background: #f2f2f2;">
+        <br>
+        <style>
+            hr.style-one {
+                border: 0;
+                height: 1px;
+                background: #333;
+                background-image: linear-gradient(to right, #ccc, #333, #ccc);
+            }
+        </style>
+        <hr class="style-one" />
+                
+        <br>
+        <p>  
+            %sにマイレベニューのお客様情報が変更されました。<br>
+                            この変更に心当たりがない場合は、速やかにパスワード変更してください。<br>
+                            ※このメールはシステムより自動送信されています。ご不明点は以下までお問い合わせください。<br>
+            <p>
+                <font color ="197DFF" size="2"> お問い合わせ：support.jp@17.media </font>
+            </p>
+        </p>
+        
+        <br>
+        <style>
+            hr.style-one {
+                border: 0;
+                height: 1px;
+                background: #333;
+                background-image: linear-gradient(to right, #ccc, #333, #ccc);
+            }
+        </style>
+        <hr class="style-one" />
+        <br>
+        </center>
+    DEFAULT: |
+        <center style="background: #f2f2f2;">
+        <br>
+        <style>
+            hr.style-one {
+                border: 0;
+                height: 1px;
+                background: #333;
+                background-image: linear-gradient(to right, #ccc, #333, #ccc);
+            }
+        </style>
+        <hr class="style-one" />
+        <br>
+        <H4>Dear LIVIT user:</H4>
+        <p>  
+            You have modified personal information of "17LIVE - My Revenue" Website at %s. <br>
+            If you do not modify the information, please change your password as soon as possible。<br>
+            <p>
+                <font color ="197DFF" size="2"> This letter is automatically sent by the system. Please do not reply directly. <br>If you have any questions, please contact support@17.media
+                </font>
+            </p>
+        </p>
+        <br>
+        <style>
+            hr.style-one {
+                border: 0;
+                height: 1px;
+                background: #333;
+                background-image: linear-gradient(to right, #ccc, #333, #ccc);
+            }
+        </style>
+        <hr class="style-one" />
+        <br>
+        </center>
+

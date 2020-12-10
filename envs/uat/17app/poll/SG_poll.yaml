@@ -1,0 +1,103 @@
+# Poll setting
+# MUST make sure that corresponding gift ids exist in gift database
+# In this case, they should be poll_option_{a|b|c|d|e}_{30|49|99|199|399|599|3999} by the value of giftIDTempalte
+minTTL: 5
+maxTTL: 60
+maxTitleDescLen: 20
+maxOptDescLen: 10
+minOptionCount: 2
+maxOptionCount: 5
+freeVoteEnable: true
+freeVoteWhitelist: 
+  - "125f772d-e133-4bcb-9446-a5a07c9a9052" # 世新詞創
+  - "65b53a34-e533-45d8-880a-28fa7616aa2f" # ntubellydance
+  - "83db566e-a11a-463f-8a36-ba3fb2b1d7e1" # 兩個傻瓜
+  - "e1d8740e-2990-4532-8c7f-6a90e6d9b7e5" # 寒履Lucien
+  - "e1147338-1fe7-4e60-9df0-4e1feea19880" # 東吳食藝
+  - "e060fb54-44e8-41e6-9a48-ed61d1cc6f9d" # 美食狂潮
+  - "e2f236f1-62ba-4819-b803-152adbe3fac9" # scu音樂劇
+  - "470ddf67-d8bc-48b8-8fdb-74da4ab52066" # Chukaofann
+  - "c136d94f-7987-4df8-9405-b2f47c18989e" # stubborn_music_
+  - "43b7e34a-1513-4958-b517-1c916e1e3739" # 東吳社會
+  - "25d8e5a9-94da-43bf-a160-a74856ad5c16" # zoe_meat
+availableLimit:
+  mins: 1
+  count: 5
+freeVoteAndroidVersion: 2.3.67
+freeVoteIOSVersion: 3.44.0
+defaultPrice: 99
+enableFreePriceForOfficialTopics: true # 官方話題可選擇0點
+availablePrice:
+  5:
+  30:
+  49:
+  99:
+  199:
+  399:
+  599:
+  3999:
+availableOptionID:
+  - poll_option_a
+  - poll_option_b
+  - poll_option_c
+  - poll_option_d
+  - poll_option_e
+giftIDTemplate: '{{.OptionID}}_{{.Price}}'
+userSettings:
+  ad9a4ee5-e7eb-47f0-8ef4-727b286aa48f: # David’s Angel
+    price: 30
+  4cbcce6a-df9d-48be-780a-f04216268690: # 金光布袋戲
+    price: 30
+  ff3c301a-feae-4241-9705-518b3ccab24a: # 金麥克Rock_Live
+    price: 30
+  721fc91c-49a2-4c51-55b7-a84ab233743e: # we_are_17livers
+    price: 99
+  c06b396c-e1a8-4012-8033-dd0019467e32: # 17xB.Duck時裝派對
+    price: 199
+hotTopic: "today_hot_topic"
+topics:		
+  - tag: "復古"
+    title: "小時候迷過三立偶像劇嗎？"
+    options: ["一定要啊～週日晚必追", "劇情很瞎，沒看"]			
+  - tag: "時事"
+    title: "還有在用臉書嗎？"
+    options: ["沒有，那是老人用的", "用習慣了，每天都會刷"]
+  - tag: "17特色"
+    title: "素顏有沒有差？"
+    options: ["一樣美😍", "突然認不出來是你"]
+  - tag: "廢問,時事"
+    title: "覺得哪種情況比較可怕？"
+    options: ["遇到月底沒💵", "假打卡，真責任制"]	
+  - tag: "17特色"
+    title: "覺得我是哪系的主播？"
+    options: ["貓系🐱", "狗系🐶"]	
+  - tag: "男女"
+    title: "選愛情還是選麵包？"
+    options: ["沒有愛情會無法相處", "麵包不夠的話不能活"]
+  - tag: "廢問"
+    title: "重新投胎的話，想要？"
+    options: ["當男生", "當女生"]	
+  - tag: "政治,時事"
+    title: "同婚你的看法是？"
+    options: ["覺得感動～支持！", "不好吧......"]
+  - tag: "廢問,時事"
+    title: "地震來的話第一件事？"
+    options: ["發個地震文", "躲到桌子底下"]	
+  - tag: "廢問"
+    title: "發現戶頭裡意外多了一百萬？"
+    options: ["先睡個午覺壓壓驚", "立刻報警處理"]	
+  - tag: "17特色"
+    title: "看電影習慣怎麼選位？"
+    options: ["選中間", "只想坐你旁邊"]	
+  - tag: "男女"
+    title: "約會花費是否該平分？"
+    options: ["當然要平分吧", "賺得多的人付也不錯"]	
+  - tag: "17特色"
+    title: "覺得我這間63嗎？"
+    options: ["沒這回事😅", "極度63💩"]		
+  - tag: "17特色"
+    title: "你最喜歡的主播在哪裡？"
+    options: ["就在眼前啊～", "我出去找找再跟你說"]			
+  - tag: "廢問,17特色"
+    title: "覺得我是屬於哪種？"
+    options: ["諧星主播", "氣質主播"]

@@ -1,0 +1,180 @@
+# `paychannel`
+  # - BY_TWBANK_C = 1; // 台灣企銀帳戶 C
+  # - PAYPAL : 2
+  # - 智付通 : 3
+  # - 玉山台灣外幣帳戶 : 4
+  # - 玉山香港帳戶 : 5
+  # - 支付寶 : 6
+  # - 馬來西亞帳戶 : 7
+  # - GMO : 8
+  # - Bank : 9
+  # - LinePay : 10
+  # - RESELLER: 11
+  # - 17Pay: 12, 17支付，只能用在2%折扣
+  # - CASH: 13 現金支付
+  # - BY_INDONESIA_BANK: 14; //印尼銀行
+  # - BY_WEIXIN = 15; // WeChat
+  # - BY_MITH = 18; //秘銀
+  # - BY_KGI_BANK = 19; // 凱基銀行
+  # - BY_SCSB_BANK = 20; // 上海銀行
+  # - BY_WEST_BANK = 22; // Bank of the West
+  # - BY_BNB = 23 // 幣安
+  # - BY_SUMITOMO_MITSUI_BANK_USD = 24; // 三井住友銀行美金帳戶
+  # - BY_SUMITOMO_MITSUI_BANK_SGD = 25; // 三井住友銀行新幣帳戶
+  # - BY_SUMITOMO_MITSUI_BANK_CNY = 26; // 三井住友銀行人民幣帳戶
+  # - BY_YUANTA_BANK = 27; // 元大商業銀行
+  # - BY_TAISHIN_BANK = 28; // 台新國際商業銀行
+  # - BY_OCBC_BANK = 29; // 華僑銀行
+  # - BY_TWBANK_A = 31; // 台灣企銀帳戶 A
+  # - BY_TWBANK_B = 32; // 台灣企銀帳戶 B
+  # - BY_DBS_BANK = 35; // 星展銀行
+  # - BY_PAYPAL_US = 52; // PayPal US Account
+  # - JKOPAY = 53; // JKOPay
+  # - LINEPAY_TW = 54; // LinePay TW
+  # - SC_BANK_HK = 55; // 渣打銀行香港帳戶
+  # - ECPAY = 56; // ECPAY
+  # - RESELLERv2 = 57; // 經銷商系統
+  # - FIRSTDATA = 58; // First Data corporation
+  # - SPGMPG = 60;
+  # - STRIPE = 62;
+# `duplicateUniformInvoice` // 許可開立二聯式發票的payChannel
+# `triplicateUniformInvoice` // 許可開立三聯式發票的payChannel
+# `currency` follows ISO 4217 standard:   
+  # https://zh.wikipedia.org/wiki/ISO_4217#%E7%8E%B0%E8%A1%8C%E4%BB%A3%E7%A0%81
+  # XPT => Mith
+  # XPD => BNB
+# `orderUpperConstrain` // 訂單美金售價上限(超過需review)
+# `minMith` / `maxMith` / `minBnb` / `maxBnb` shows BNB & Mith to local currency exchange rate
+  # 1mith / 1 bnb can exchange rate range
+TW:   
+  payChannel: 
+    - 1
+    - 2
+    - 3
+    - 6
+    - 7
+    - 13
+    - 15
+    - 18
+    - 23
+    - 24
+    - 25
+    - 26
+    - 29
+    - 31
+    - 32
+    - 35
+    - 53
+    - 54
+    - 56
+    - 60
+  duplicateUniformInvoice:
+    - 1
+    - 3
+    - 31
+    - 32
+    - 53
+    - 54
+    - 56
+    - 60
+  triplicateUniformInvoice:
+    - 13
+  currency:
+    - TWD
+    - JPY
+    - USD
+    - HKD
+    - CNY
+    - SGD
+    - MYR
+    - XPT
+    - XPD
+    - GBP
+    - EUR
+    - AUD
+    - NZD
+    - CAD
+    - CHF
+  localCurrency:
+    - TWD
+  maxMith:
+    15
+  minMith:
+    1
+  maxRange:
+    0.02
+  minRange:
+    0.02
+  maxBnb:
+    286.619
+  minBnb:
+    50
+
+JP:
+  payChannel:
+    - 2
+    - 8
+    - 9
+    - 10
+    - 13
+  currency:
+    - JPY
+  localCurrency:
+    - JPY
+  maxRange:
+    0.02
+  minRange:
+    0.02
+
+ID:
+  payChannel:
+    - 14
+  currency:
+    - IDR
+  localCurrency:
+    - IDR
+  maxRange:
+    0.02
+  minRange:
+    0.02
+
+HK:
+  payChannel:
+    - 2
+    - 55
+    - 58
+  currency:
+    - HKD
+  localCurrency:
+    - HKD
+  maxRange:
+    0.02
+  minRange:
+    0.02
+
+US:
+  payChannel:
+    - 2
+    - 22
+    - 52
+    - 62
+  currency:
+    - USD
+  localCurrency:
+    - USD
+  maxRange:
+    0.02
+  minRange:
+    0.02
+
+NONE:
+  payChannel:
+    - 21
+  currency:
+    - USD
+  localCurrency:
+    - USD
+  maxRange:
+    0.02
+  minRange:
+    0.02

@@ -1,0 +1,163 @@
+SyncAPEnabled: false
+SyncPaymentEnabled: false
+ERPSupportRegions:
+ERPSupportPaymentPayoutTypes:
+ERPSupportAPPayoutTypes:
+
+# supportRegionGroups:
+#   - TW
+#   - JP
+#   - MENA
+#   - NONE
+# use default region groups if supportRegionGroups is not specified or is empty
+# default region groups: TW, HK, JP, US, MY, SG, NONE
+supportRegionGroups:
+    - TW
+    - HK
+    - JP
+    - US
+    - MY
+    - SG
+    - MENA
+    - NONE
+PushBillChangedMessage: true
+availableAccountType:
+    TW:
+        - 1
+        - 2
+        - 4
+        - 5
+        - 6
+    HK: 
+        - 1
+        - 2
+        - 4
+        - 6
+    JP: 
+        - 1
+        - 4
+        - 6
+    US:
+        - 1
+        - 2
+        - 4
+        - 6
+    MY:
+        - 1
+        - 2
+        - 4
+        - 6
+    SG:
+        - 1
+        - 2
+        - 4
+        - 6
+    MENA:
+        - 1
+        - 2
+        - 4
+        - 6
+    NONE:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 6
+
+## payment action enums
+# SUBMIT_TO_PAY
+# DOWNLOAD_REPORT
+# DOWNLOAD_PAYOUT_FILE
+# UPLOAD_FILE_TO_BALANCE
+# UPLOAD_FILE_TO_BALANCE_BATCH
+# UPDATE_RECEIPT
+# IMPORT_BANK_BALANCE
+# MARK_AS_REFUND
+# MARK_AS_WRITTEN_OFF
+# SET_PAYOUT_RATE
+# PAY_BBRICH_BY_MONEY
+# RETURN_BILL
+payoutBillPaymentAction: 
+  BANK_TBB:
+    - SUBMIT_TO_PAY
+    - DOWNLOAD_REPORT
+    - DOWNLOAD_PAYOUT_FILE
+    - UPLOAD_FILE_TO_BALANCE
+    - UPLOAD_FILE_TO_BALANCE_BATCH
+    - UPDATE_RECEIPT
+    - MARK_AS_REFUND
+    - MARK_AS_WRITTEN_OFF
+  BANK_ESUN:
+    - SUBMIT_TO_PAY
+    - DOWNLOAD_REPORT
+    - DOWNLOAD_PAYOUT_FILE
+    - UPLOAD_FILE_TO_BALANCE
+    - UPLOAD_FILE_TO_BALANCE_BATCH
+    - UPDATE_RECEIPT
+    - MARK_AS_REFUND
+    - MARK_AS_WRITTEN_OFF
+  BANK_SMBC:
+    - SUBMIT_TO_PAY
+    - DOWNLOAD_REPORT
+    - DOWNLOAD_PAYOUT_FILE
+    - UPLOAD_FILE_TO_BALANCE
+    - UPLOAD_FILE_TO_BALANCE_BATCH
+    - UPDATE_RECEIPT
+    - MARK_AS_REFUND
+    - MARK_AS_WRITTEN_OFF
+  OFFLINE:
+    - SUBMIT_TO_PAY
+    - DOWNLOAD_REPORT
+    - UPLOAD_FILE_TO_BALANCE
+    - UPLOAD_FILE_TO_BALANCE_BATCH
+    - UPDATE_RECEIPT
+    - MARK_AS_REFUND
+    - MARK_AS_WRITTEN_OFF
+  BBFU:
+    - SUBMIT_TO_PAY
+    - DOWNLOAD_REPORT
+    - MARK_AS_WRITTEN_OFF
+    - PAY_BBRICH_BY_MONEY
+    - RETURN_BILL
+  DEFAULT:
+    - DOWNLOAD_REPORT
+
+walletBillPaymentAction:
+  BANK_TBB:
+    - SUBMIT_TO_PAY
+    - DOWNLOAD_REPORT
+    - DOWNLOAD_PAYOUT_FILE
+    - IMPORT_BANK_BALANCE
+    - MARK_AS_REFUND
+    - MARK_AS_WRITTEN_OFF
+    - SET_PAYOUT_RATE
+  BANK_ESUN:
+    - SUBMIT_TO_PAY
+    - DOWNLOAD_REPORT
+    - DOWNLOAD_PAYOUT_FILE
+    - IMPORT_BANK_BALANCE
+    - MARK_AS_REFUND
+    - MARK_AS_WRITTEN_OFF
+    - SET_PAYOUT_RATE
+  BANK_SMBC:
+    - SUBMIT_TO_PAY
+    - DOWNLOAD_REPORT
+    - DOWNLOAD_PAYOUT_FILE
+    - UPLOAD_FILE_TO_BALANCE
+    - UPLOAD_FILE_TO_BALANCE_BATCH
+    - UPDATE_RECEIPT
+    - MARK_AS_REFUND
+    - MARK_AS_WRITTEN_OFF
+    - SET_PAYOUT_RATE
+  OFFLINE:
+    - SUBMIT_TO_PAY
+    - DOWNLOAD_REPORT
+    - UPLOAD_FILE_TO_BALANCE
+    - UPLOAD_FILE_TO_BALANCE_BATCH
+    - UPDATE_RECEIPT
+    - MARK_AS_REFUND
+    - MARK_AS_WRITTEN_OFF
+    - SET_PAYOUT_RATE
+  DEFAULT:
+    - DOWNLOAD_REPORT
+activeDateOfBillingV2: "2020-08-01"

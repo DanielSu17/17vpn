@@ -7,6 +7,12 @@
 //   build failure, it's limitation of Jenkins WebUI limitation by design,
 //   it's not a bug, don't report it as bug!!!
 
+def etcdServiceEndpointsUAT = [
+    'http://35.185.151.95:2379',
+    'http://35.194.230.16:2379',
+    'http://35.189.172.39:2379',
+]
+
 def etcdServiceEndpointsStag = [
     'http://35.229.178.57:2379',
     'http://35.194.226.164:2379',
@@ -29,6 +35,12 @@ def etcdServiceEndpointsProdWave = [
     'http://35.221.189.46:2379',
     'http://104.199.161.59:2379',
     'http://34.80.98.223:2379',
+]
+
+def etcdServiceEndpointsUATEventory = [
+    'http://35.185.151.95:2379',
+    'http://35.194.230.16:2379',
+    'http://35.189.172.39:2379',
 ]
 
 def etcdServiceEndpointsStagEventory = [
@@ -58,6 +70,12 @@ properties([
             trim: true
         ),
         string(
+            defaultValue: etcdServiceEndpointsUAT.join(','),
+            description: 'ETCD Service Endpoints List for the 17App Service (UAT)',
+            name: 'ENDPOINTS_17APP_UAT',
+            trim: true
+        ),
+        string(
             defaultValue: etcdServiceEndpointsStag.join(','),
             description: 'ETCD Service Endpoints List for the 17App Service (Staging)',
             name: 'ENDPOINTS_17APP_STA',
@@ -79,6 +97,12 @@ properties([
             defaultValue: etcdServiceEndpointsProdWave.join(','),
             description: 'ETCD Service Endpoints List for the Wave Service (Production)',
             name: 'ENDPOINTS_WAVE_PROD',
+            trim: true
+        ),
+        string(
+            defaultValue: etcdServiceEndpointsUATEventory.join(','),
+            description: 'ETCD Service Endpoints List for the Eventory Service (UAT)',
+            name: 'ENDPOINTS_EVENTORY_UAT',
             trim: true
         ),
         string(

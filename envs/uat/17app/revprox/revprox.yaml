@@ -1,0 +1,118 @@
+# access_mode are defined as following
+# - 1: On Mode
+# - 2: Whitelist-Only Mode
+# access_whitelist is a list of IP address can access on Whitelist-Only mode
+# allowed_origins is a list of regular expressions of all allowed origins for CORS
+
+record:
+  enable: true
+  whitelist:
+    - e257e914-5009-48d9-5e8b-3c6da3f2026f
+  probability: 1
+
+access_mode: 1
+access_whitelist:
+ - 61.216.89.10
+access_blacklist:
+ - 61.216.89.9
+allowed_origins:
+ - "^https://[-\\w]+\\.17\\.live$"
+ - "^https://[-\\w]+--17live\\.netlify\\.com$"
+ - "^https://[-\\w]+--17livef2e\\.netlify\\.com$"
+ - "^https?://[-\\w]+\\.17\\.media(:\\d+)?$"
+ - "^https?://[-\\w]+\\.17app\\.co(:\\d+)?$"
+ - "^http://17\\.local(:\\d+)?$"
+ - "^http://localhost(:\\d+)?$"
+ - "^http://172.16.5.10(:\\d+)?$" # frontend dev
+conf:
+ - url_key: "go_trade_url"
+   weight: 100
+   white_list:
+     apiv1: "gift/giftbox,gift/goods,gift/internal,gift/sync,gift/levelUp,gift/gifted-producers"
+     redenvelopes: "redenvelopes"
+     sportscar: "sportscar"
+     monster: "monsters"
+     baggage: "baggage"
+     # legacy
+     gift: "getLiveStreamGiftLeaderboard,\
+            getLiveStreamAllGifts,\
+            getReceivedGiftLog"
+ - url_key: "go_url"
+   white_list:
+     liveStreams: "publishLiveStream,\
+            getLiveStreamViewers,keepLiveStream"
+     liveStreams/admin: "pass,kill,hide,pintotop,cancelpintotop,\
+            killLiveStreamAction,passLiveStream,hideLiveStream,\
+            promoteLiveStream,getLiveStreamsForReview,\
+            removePromotedLiveStream,promoteTopLiveStream,\
+            cancelPromoteTopLiveStream,hideHotLivestreamAction"
+     feed: "getPostFeed,celebrities/all,celebrities"
+     legacy: "getUserInfo,getUserInfoByUserID,\
+            getSelfInfo,unblockUserAction,blockUserAction,adminBlockUserAction,\
+            getBlockUserList,followUserAction,unfollowUserAction,\
+            sendFollowRequest,rejectFollowRequest,\
+            cancelFollowRequests,acceptFollowRequest,\
+            getFollowRequests,getSearchUsers,getFollowing,\
+            getFollower,getHotUsers,getGiftLeaderboard,\
+            banUserAction,freezeUserAction,updateUserInfo,\
+            checkingSandBox,securityActions,getNotif,\
+            getReviewProfile,processProfilePictureReview,\
+            getFriendNotif,adminDeleteProfilePictureAction,\
+            reportUserAction,getUserLikers,adOnAction,adOffAction,getCountry,\
+            choiceUserAction,verifyUserAction,removeVerifiedUserAction,adminBlockDirtyWordAction"
+     event: "getEventBanners"
+     pay: "purchaseProduct"
+     auth: "loginAction,loginAction2,registerAction,registerAction2,\
+            checkFacebookIDAvailable,checkOpenIDAvailable,\
+            registerByPhoneAction,sendPhoneVerificationCode,\
+            checkNeedHumanTest,isPhoneNumberUsed,verifyUserIdentity,\
+            changePassword,changePhoneNumber,ChangePhoneNumber,\
+            isPhoneNumberOpenIDPaired,\
+            eraseInternationalPhoneNumber,\
+            getResetPasswordToken,resetPassword"
+     official: "getVersionStatus"
+     post: "publishPost,viewPost,commentPost,getUserPost,unlikePost,\
+            deleteComment,likePostBatchUpdate,updatePost,deletePost,\
+            getExplorePicturesForReview,passExplorePicture,\
+            hideExplorePicture,hidePostAction,adminDeletePostAction,\
+            getPostInfo,getComments,adminPromotePost,\
+            reportCommentAction,reportPostAction,getHotPost,\
+            recoverPostAction,searchHashTag,getPostLikers,\
+            getReportPost,processReportedPostAction"
+     money: "getPointUsageLog,getPointGainLog,getRevenueReport"
+     follow: "getFriendSuggestion"
+     deadlegacy: "eventTracking,getNewestAppVersion,getSuggestedUsers,\
+            findFriends,getExploreSuggestedUsers,getLikeLeaderboard,\
+            getSystemNotif,getHotLiveStreams,getHotLiveStreams2,likePost,\
+            getLikedPost,getLiveStreamComments,recoverPassword,\
+            getPayments,uploadPhoneNumbers,uploadFacebookFriends,\
+            followAllAction,updateLiveStreamInfo,\
+            getPointProductList,getPostByHashTag,readNotif,updateOpenID"
+ - url_key: "go_lives_url"
+   white_list:
+     # for api
+     apiv1: "liveStreams,lives"
+     # for legacy api
+     liveStreams: "getSuggestedLiveStreams,liveStreams/getSuggestedLiveStreams,\
+            getLatestLiveStreams,liveStreams/getLatestLiveStreams,\
+            getLiveStreamInfo,liveStreams/getLiveStreamInfo,\
+            enterLiveStream,\
+            quitViewLiveStream,\
+            isUserOnLiveStream,\
+            getUserLiveStreams,\
+            likeLivestreamBatchUpdate,\
+            getLiveStreamHotCountryList,\
+            reportLiveAction,\
+            restreamLiveStream,\
+            hasRestreamedLiveStream,\
+            endLiveStream,\
+            commentLiveStream"
+ - url_key: "aggr_gateway_url"
+   default_url_key: "go_cells_url"
+   weight: 100
+   white_list:
+     apiv1: "cells,sections"
+ - url_key: "bbrich_url"
+   weight: 100
+   white_list:
+     apiv1: "bbrich"
