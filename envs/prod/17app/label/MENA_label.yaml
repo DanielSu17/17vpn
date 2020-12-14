@@ -5,6 +5,13 @@
 # - labelID: mapping for labels table id
 
 labelInfos:
+  - id: "tutor" # 民辦教師
+    type: 3
+    label:
+      key: "streamer_label_tutor"
+    iconURL: "https://cdn.17app.co/a22a6090-3dc8-4743-90c7-d6ad12831795.png"
+    isHide: false
+    order: 2010
   - id: "exclusive" # 付費解鎖, 獨家內容
     type: 2
     label:
@@ -12,9 +19,10 @@ labelInfos:
     iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
     order: 2001
     isHide: true    
-typeCheckIOSVersion: 3.61.0
-typeCheckAndroidVersion: 2.3.92
+# typeCheckIOSVersion: 3.61.0
+# typeCheckAndroidVersion: 2.3.92
 
 # labelWhiteList defines relation between label and user list
 labelWhiteList:
+  tutor: # 民辦教師
   exclusive:
