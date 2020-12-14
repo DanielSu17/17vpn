@@ -15,9 +15,9 @@ rtmp_providers:
 - name: QINIU
   weight: 20
   region_weights:
-    TW: 20
+    TW: 15
     EG: 0
-    HK: 20
+    HK: 15
     JP: 1
   quality_support: 0
   expire_after_hours: 15
@@ -73,10 +73,10 @@ rtmp_providers:
 - name: WANSU
   weight: 50
   region_weights:
-    TW: 10
+    TW: 0
     EG: 100
-    HK: 10
-    JP: 2
+    HK: 0
+    JP: 1
   quality_support: 1
   users:
 #  - ad9a4ee5-e7eb-47f0-8ef4-727b286aa48f # David’s Angels
@@ -200,9 +200,9 @@ rtmp_providers:
   quality_support: 1
   weight: 30
   region_weights:
-    TW: 70
-    HK: 70
-    JP: 2
+    TW: 85
+    HK: 85
+    JP: 3
   users:
   - 87614b98-d226-4cd8-7ef3-a6dafd15ecf6 # 17q_test
   - 6e9af721-55c5-41d7-91a4-387aceec94a6 # 17Q限時答題搶獎金
