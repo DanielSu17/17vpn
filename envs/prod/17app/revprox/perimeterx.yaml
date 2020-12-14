@@ -14,6 +14,13 @@ ip_headers:
   - "X-Forwarded-For"
 blocking_score: 100
 sensitive_routes: []
+whitelist_routes: []
+enforced_routes:
+  - "/api/v1/redenvelopes"
+monitored_routes: 
+  - "/api/v1/version"
+  - "/api/v1/auth"
+  - "/api/v1/lives"
 s2s_timeout: 1000
 debug_mode: false
 monitor_mode: true
