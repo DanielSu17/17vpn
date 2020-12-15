@@ -30,78 +30,6 @@
 # | NON_IAP | 2 |
 
 missions:
-#登竜門vol.26
-- ID: 4573da4d-0430-4212-a209-c1dfc6c54b44
-  type: 8
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2012_jp_dragon_bp
-    amount: 1
-    expireTimeSecs: 86400
-  requirePhoneBinding: false
-  withReminder: false
-  i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
-  i18nTitleParams:
-    - needMap: false
-      mapOption: 0
-      value: 1
-  i18nContent:
-  i18nContentParams:
-  i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
-  i18nDescriptionParams:
-    - needMap: false
-      mapOption: 0
-      value: 1
-  goalValue: 1
-  enableTimeRange:
-    - startTime: "2020-12-16 15:00:00 (GMT+0900)"
-      endTime: "2020-12-31 23:59:59 (GMT+0900)"
-  refIDs:
-  platforms:
-    - android
-    - ios
-
-#mini(10以下)
-- ID: a1349f4d-0926-416a-87c4-98bf73498976
-  type: 9
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 3
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2012_jp_minidec_bp
-    amount: 1
-    expireTimeSecs: 86400
-  requirePhoneBinding: false
-  withReminder: false
-  i18nTitle: baggage_mission_watch_jp_annmi
-  i18nTitleParams:
-    - needMap: false
-      mapOption: 0
-      value: 1
-  i18nContent:
-  i18nContentParams:
-  i18nDescription: baggage_mission_watch_jp_mini1
-  i18nDescriptionParams:
-    - needMap: false
-      mapOption: 0
-      value: 1
-  goalValue: 180
-  enableTimeRange:
-    - startTime: "2020-12-16 15:00:00 (GMT+0900)"
-      endTime: "2021-01-06 23:59:59 (GMT+0900)"
-  refIDs:
-  platforms:
-    - android
-    - ios
-
 - ID: 0315278c-7fce-44b6-a311-a7c31cde0291
   type: 6
   category: 0
@@ -115,7 +43,36 @@ missions:
     rewardID: 1810_jp_17q_fight
     amount: 1
     expireTimeSecs: 86400
-  i18nTitle: baggage_mission_trivia_correct_answered_x_get_y_reward_title
+  i18nTitle: baggage_mission_trivia_correct_answered_x_get_y_reward_title 1
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_trivia_correct_answered_x_get_y_reward_jp_desc
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2020-12-16 00:00:00 (GMT+0900)
+    endTime: 2020-12-22 23:59:59 (GMT+0900)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: 4573da4d-0430-4212-a209-c1dfc6c54b44
+  type: 8
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2012_jp_dragon_bp
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
   i18nTitleParams:
   - value: "1"
     needMap: false
@@ -123,12 +80,53 @@ missions:
     fontAttribute: null
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: baggage_mission_trivia_correct_answered_x_get_y_reward_desc
-  i18nDescriptionParams: []
+  i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
+  i18nDescriptionParams:
+  - value: "1"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
   goalValue: 1
   enableTimeRange:
-  - startTime: 2020-12-16 00:00:00 (GMT+0900)
-    endTime: 2020-12-22 23:59:59 (GMT+0900)
+  - startTime: 2020-12-16 15:00:00 (GMT+0900)
+    endTime: 2020-12-31 23:59:59 (GMT+0900)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: a1349f4d-0926-416a-87c4-98bf73498976
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 3
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2012_jp_minidec_bp
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_jp_annmi
+  i18nTitleParams:
+  - value: "1"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_watch_jp_mini1
+  i18nDescriptionParams:
+  - value: "1"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  goalValue: 180
+  enableTimeRange:
+  - startTime: 2020-12-16 15:00:00 (GMT+0900)
+    endTime: 2021-01-06 23:59:59 (GMT+0900)
   refIDs: []
   platforms:
   - android
