@@ -30,6 +30,39 @@
 # | NON_IAP | 2 |
 
 missions:
+- ID: 85afe0ba-176d-455b-9bdd-c72aff00a09f
+  type: 5
+  category: 0
+  lifeCycle: 1
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2012_hk_most_bp
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_leave_comment_reward_title
+  i18nTitleParams:
+  - value: "2"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_leave_comment_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 2
+  enableTimeRange:
+  - startTime: 2020-12-16 18:00:00 (GMT+0800)
+    endTime: 2020-12-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
 - ID: 1bacba04-893e-41ef-96be-fbbf6b002bf5
   type: 3
   category: 0
