@@ -36,7 +36,6 @@ missions:
 #全ユーザー　12/21~ 12/25 期間中に¥120以上のチャージで「プレゼント、あげる！」3個（1回まで）
   - ID: 1ad8f585-8d7f-4c15-8633-cc4b2655df97
     type: 8
-    category: 0
     lifeCycle: 1
     targetAudience: 0
     levelRange:
@@ -44,29 +43,24 @@ missions:
       max: 999
     reward:
       rewardType: 1
-      rewardID: 2012_jp_charge_02
+      rewardID: "2012_jp_charge_02"
       amount: 3
       expireTimeSecs: 86400
-    i18nTitle: baggage_mission_trivia_correct_answered_x_get_y_reward_title
+    requirePhoneBinding: false
+    i18nTitle: baggage_mission_IAP_reward_jp_daily_pineapple_name
     i18nTitleParams:
-    - value: "1"
-      needMap: false
-      mapOption: 0
-      fontAttribute: null
-    i18nContent: ""
-    i18nContentParams: []
-    i18nDescription: baggage_mission_trivia_correct_answered_x_get_y_reward_jp_desc
-    i18nDescriptionParams: []
+    i18nContent:
+    i18nContentParams:
+    i18nDescription: baggage_mission_IAP_reward_jp_daily_pineapple_desc
+    i18nDescriptionParams:
     goalValue: 1
     enableTimeRange:
-    - startTime: 2020-12-16 12:00:00 (GMT+0900)
-      endTime: 2020-12-25 23:59:59 (GMT+0900)
-    refIDs: []
+      - startTime: "2020-12-16 12:00:00 (GMT+0900)"
+        endTime: "2020-12-25 23:59:59 (GMT+0900)"
+    refIDs:
     platforms:
-    - android
-    - ios
-    requirePhoneBinding: false
-    withReminder: false
+      - android
+      - ios
 
 #全ユーザー　12/01~ 12/03 期間中に¥120以上を購入すると「推しです...♡」3個（1回まで）
   - ID: 137fd847-74be-464c-afce-e1ff5cd0f321
