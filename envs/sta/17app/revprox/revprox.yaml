@@ -60,7 +60,6 @@ conf:
             getFriendNotif,adminDeleteProfilePictureAction,\
             reportUserAction,getUserLikers,adOnAction,adOffAction,getCountry,\
             choiceUserAction,verifyUserAction,removeVerifiedUserAction,adminBlockDirtyWordAction"
-     event: "getEventBanners"
      pay: "purchaseProduct"
      auth: "loginAction,loginAction2,registerAction,registerAction2,\
             checkFacebookIDAvailable,checkOpenIDAvailable,\
@@ -112,6 +111,11 @@ conf:
    weight: 100
    white_list:
      apiv1: "cells,sections"
+ - url_key: "aggr_gateway_url"
+   default_url_key: "go_url"
+   weight: 100
+   white_list:
+     apiv1: "event"
  - url_key: "bbrich_url"
    weight: 100
    white_list:
