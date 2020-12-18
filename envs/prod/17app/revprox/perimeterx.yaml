@@ -11,7 +11,7 @@ protected_routes_with_methods:
   - route: "/auth/.*"
   - route: "/redenvelopes/.*/pick$"
   - route: "/lives/.*/laborReward$"
-    methods: ["GET"]
+    methods: ["POST"]
 sensitive_headers:
   - "nonce"
   - "accesstoken"
