@@ -16,14 +16,6 @@ sections:
     enable: true
     style: 1
     more: false
-  - id: Suggestion # 猜你可能喜歡
-    name:
-      key: tab_hot_2019q4_follow_suggestion
-    enable: true
-    dedup: true
-    style: 6
-    minGrids: 5
-    more: true
   - id: Newbiequest
     enable: true
     style: 7
@@ -32,11 +24,27 @@ sections:
   - id: OffcRecomm # 官方推薦
     enable: false
     style: 2
-    more: false 
+    more: false
+  - id: Suggestion # 猜你可能喜歡
+    name:
+      key: tab_hot_2019q4_follow_suggestion
+    enable: true
+    dedup: true
+    style: 6
+    minGrids: 5
+    more: true 
   - id: Latest # 新人(和『最新』同邏輯)
     name:
       key: tab_hot_2019q4_newstreamer
     enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+  - id: Music # legacy Music tab
+    name:
+      key: tab_hot_2019q4_music
+    enable: false
     dedup: true
     minGrids: 5
     style: 3
@@ -49,20 +57,12 @@ sections:
     minGrids: 6 # 2個直播間一組PK，3組以上顯示
     style: 3
     more: true
-  - id: Music # legacy Music tab
-    name:
-      key: tab_hot_2019q4_music
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
   - id: Label #實力歌手
     labelID: singer
     name: 
       key: streamer_label_singer
     enable: true
-    dedup: true 
+    dedup: false 
     minGrids: 5
     style: 3
     more: true
@@ -80,7 +80,7 @@ sections:
     name: 
       key: streamer_label_player
     enable: true
-    dedup: true 
+    dedup: false 
     minGrids: 5
     style: 3
     more: true 
@@ -89,7 +89,7 @@ sections:
     name: 
       key: streamer_label_game
     enable: true
-    dedup: true 
+    dedup: false 
     minGrids: 5
     style: 3
     more: true
@@ -98,7 +98,7 @@ sections:
     name: 
       key: streamer_label_highlight_visual_artists
     enable: true
-    dedup: true 
+    dedup: false 
     minGrids: 5
     style: 3
     more: true
@@ -107,7 +107,7 @@ sections:
     name:
       key: streamer_label_professional
     enable: true
-    dedup: true
+    dedup: false
     minGrids: 5
     style: 3
     more: true 
@@ -123,7 +123,7 @@ sections:
     name:
       key: tab_hot_2019q4_male
     enable: true
-    dedup: true
+    dedup: false
     minGrids: 5
     style: 3
     more: true
@@ -132,7 +132,7 @@ sections:
     name:
       key: tab_hot_2019q4_female
     enable: true
-    dedup: true
+    dedup: false
     minGrids: 5
     style: 3
     more: true
