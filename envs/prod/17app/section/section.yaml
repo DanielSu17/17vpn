@@ -16,15 +16,6 @@ sections:
     enable: true
     style: 1
     more: false
-  - id: Newbiequest
-    enable: true
-    style: 7
-    minGrids: 1
-    more: false
-  - id: OffcRecomm # 官方推薦
-    enable: false
-    style: 2
-    more: false
   - id: Suggestion # 猜你可能喜歡
     name:
       key: tab_hot_2019q4_follow_suggestion
@@ -33,7 +24,15 @@ sections:
     style: 6
     minGrids: 5
     more: true
- 
+  - id: Newbiequest
+    enable: true
+    style: 7
+    minGrids: 1
+    more: false
+  - id: OffcRecomm # 官方推薦
+    enable: false
+    style: 2
+    more: false 
   - id: Latest # 新人(和『最新』同邏輯)
     name:
       key: tab_hot_2019q4_newstreamer
@@ -42,21 +41,20 @@ sections:
     minGrids: 5
     style: 3
     more: true
-  - id: Music # legacy Music tab
-    name:
-      key: tab_hot_2019q4_music
-    enable: false
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-
   - id: PK # pk
     name:
       key: tab_hot_2019q4_pk
     enable: true
     dedup: false  #重複
     minGrids: 6 # 2個直播間一組PK，3組以上顯示
+    style: 3
+    more: true
+  - id: Music # legacy Music tab
+    name:
+      key: tab_hot_2019q4_music
+    enable: false
+    dedup: true
+    minGrids: 5
     style: 3
     more: true
   - id: Label #實力歌手
