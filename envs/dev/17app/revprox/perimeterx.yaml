@@ -6,6 +6,12 @@ protected_routes:
   - "/auth/.*"
   - "/redenvelopes/.*/pick$"
   - "/lives/.*/laborReward$"
+protected_routes_with_methods:
+  - route: "/version"
+  - route: "/auth/.*"
+  - route: "/redenvelopes/.*/pick$"
+  - route: "/lives/.*/laborReward$"
+    methods: ["GET"]
 sensitive_headers:
   - "nonce"
   - "accesstoken"
