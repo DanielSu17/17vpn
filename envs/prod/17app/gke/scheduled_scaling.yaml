@@ -18,3 +18,16 @@
     minReplicas: 12
   - name: k8sprod-gocells-main
     minReplicas: 30
+
+# For JP offline event
+- startTime: "2020-12-18 18:20:00 (GMT+0800)"
+  endTime: "2020-12-18 20:30:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 80
+  - name: k8sprod-golives-main
+    minReplicas: 80
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 30
