@@ -59,34 +59,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-
-- ID: 6491a392-1d5e-47cf-bce8-b089f67814c7
-  type: 17
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: "2020q4_jp_comment"
-    amount: 3
-    expireTimeSecs: 604800
-  requirePhoneBinding: false
-  i18nTitle: baggage_mission_leave_comment_new_streamer_title
-  i18nTitleParams:
-  i18nContent:
-  i18nContentParams:
-  i18nDescription: baggage_mission_leave_comment_new_streamer_description
-  i18nDescriptionParams:
-  goalValue: 3
-  enableTimeRange:
-    - startTime: "2020-12-01 00:00:00 (GMT+0800)"
-      endTime: "2021-12-01 23:59:59 (GMT+0800)"
-  refIDs:
-  platforms:
-    - android
-    - ios
 - ID: 1ad8f585-8d7f-4c15-8633-cc4b2655df97
   type: 8
   category: 0
@@ -250,6 +222,68 @@ missions:
   enableTimeRange:
   - startTime: 2020-10-14 17:00:00 (GMT+0800)
     endTime: 2099-12-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: cc1393b9-6f15-41d2-ac31-e398bc360612
+  type: 6
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 1810_jp_17q_fight
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_trivia_correct_answered_x_get_y_reward_title
+  i18nTitleParams:
+  - value: "1"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_trivia_correct_answered_x_get_y_reward_jp_desc
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2020-12-21 00:00:00 (GMT+0900)
+    endTime: 2020-12-28 00:00:00 (GMT+0900)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: 6491a392-1d5e-47cf-bce8-b089f67814c7
+  type: 17
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2020q4_jp_comment
+    amount: 3
+    expireTimeSecs: 604800
+  i18nTitle: baggage_mission_leave_comment_new_streamer_title
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_leave_comment_new_streamer_description
+  i18nDescriptionParams: []
+  goalValue: 3
+  enableTimeRange:
+  - startTime: 2020-12-01 00:00:00 (GMT+0800)
+    endTime: 2021-12-01 23:59:59 (GMT+0800)
   refIDs: []
   platforms:
   - android
@@ -475,85 +509,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-- ID: dabe0ea3-3a05-46ba-81f7-1ccd08afefb6
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 10
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2011_jp_xmasnov_3_l_bag
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_gifting_jp_christmas1
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2011_jp_xmasnov_2_xl_bag
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_gifting_jp_christmas2
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2020-11-17 11:00:00 (GMT+0900)
-    endTime: 2020-12-17 11:59:59 (GMT+0900)
-  refIDs:
-  - 2011_jp_xmasnov_2_xl_bag
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: cb0da71e-db74-4632-882c-3db4e946e482
-  type: 8
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2012_jp_new_livers_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2020-12-01 11:30:00 (GMT+0900)
-    endTime: 2020-12-16 23:59:59 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
 - ID: f11cd278-423a-4b21-8b55-333b3a97f290
   type: 9
   category: 0
@@ -717,43 +672,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-- ID: 5e240c47-bdc2-4644-9d63-91b969c14f28
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 7
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2012_jp_winterrosedec_a_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_jp_ronboo1
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_watch_jp_Winterrose1
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 300
-  enableTimeRange:
-  - startTime: 2020-12-10 19:00:00 (GMT+0900)
-    endTime: 2020-12-20 23:59:59 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
 - ID: 8ca82773-2573-47d8-8cac-4dfd8203034a
   type: 3
   category: 0
@@ -791,48 +709,6 @@ missions:
     endTime: 2020-12-28 12:59:59 (GMT+0900)
   refIDs:
   - 2012_jp_winterrosedec_s_bag
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: bb59da67-9c19-4517-981f-8d92a023b625
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 10
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2011_jp_xmasnov_3_l_bag
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_jp_xmas1
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2011_jp_xmasnov_l
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_watch_jp_xmas2
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 2
-  enableTimeRange:
-  - startTime: 2020-12-10 19:00:00 (GMT+0900)
-    endTime: 2020-12-17 11:59:59 (GMT+0900)
-  refIDs:
-  - 2011_jp_xmasnov_l
   platforms:
   - android
   - ios
@@ -912,7 +788,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-#トップライバーの星
 - ID: 16709a0e-0206-4644-96f4-88f484add310
   type: 11
   category: 0
@@ -944,6 +819,8 @@ missions:
   platforms:
   - ios
   - android
+  requirePhoneBinding: false
+  withReminder: false
 i18nMissionCompleteToast: baggage_mission_toast_claimed
 refreshHour: 5
 supportedVersion:
