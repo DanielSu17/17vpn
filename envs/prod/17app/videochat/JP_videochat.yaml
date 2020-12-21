@@ -1,5 +1,3 @@
-whiteList: []
-freeWhiteList: []
 pointMinUnit: 100
 minPointPay: 100
 maxPointPay: 10000
@@ -14,6 +12,19 @@ appKey: "/OhqKHHCyKr5fn2GWiB6ViYK074WgYc1pUObNhRcw0Dj+S/nhc3Fqjti9pbS8fyd"
 
 # client用來判斷視訊連線結束後多久該切回原本的sdk
 timeoutSeconds: 300
+
+
+whiteList: #在名單內的人可以使用視訊連線
+
+freeWhiteList: #在名單內的人可以在使用視訊連線的時候開啟「免費連線」
+  - "567e0b5d-1516-4ce0-b4e8-bec4e756d5ae" # kevinmh
+  - "25d8e5a9-94da-43bf-a160-a74856ad5c16" # zoe_meat
+  - "e77f978d-fa92-4720-7bd4-5cdeb6883e42" # …パパイヤ…
+  - "41b7198c-5857-4549-ad4e-0b4ecbbcdc69" # yua2206
+  - "edf4e566-cabd-4857-9998-8029fbe9f091" # rk34
+  - "34ebcc01-bf78-4a2d-824c-33db209578f3" # ベビベビ_baby
+  - "8133322f-4d23-485d-aba7-fe00be5141dd" # sayakamofy
+
 
 # 開放給所有人
 enableAll: false
