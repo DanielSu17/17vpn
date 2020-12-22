@@ -13,11 +13,11 @@ rtmp_providers:
   quality_support: 0
   weight: 0
 - name: QINIU
-  weight: 20
+  weight: 15
   region_weights:
-    TW: 15
+    TW: 5
     EG: 0
-    HK: 15
+    HK: 5
     JP: 1
   quality_support: 0
   expire_after_hours: 15
@@ -71,7 +71,7 @@ rtmp_providers:
   quality_support: 0
   weight: 0
 - name: WANSU
-  weight: 50
+  weight: 25
   region_weights:
     TW: 0
     EG: 100
@@ -198,10 +198,10 @@ rtmp_providers:
   - 97851fd4-13be-47cd-a6f1-ddd8ceb36fd5 # 17LIVE
 - name: WANSU_LOW_LATENCY
   quality_support: 1
-  weight: 30
+  weight: 60
   region_weights:
-    TW: 85
-    HK: 85
+    TW: 95
+    HK: 95
     JP: 3
   users:
   - 87614b98-d226-4cd8-7ef3-a6dafd15ecf6 # 17q_test
