@@ -1,0 +1,6 @@
+
+# LegacyPayRedirectionURL is the URL used to redirect page back to frontend site in legacy pay.
+#   when user finished their payment, ECPay will redirect page to backend api endpoint `/ecpay/legacyResult`,
+#   backend will try to get LegacyPayRedirectionURL from config and redirect browser to LegacyPayRedirectionURL.
+#   NOTE: this redirection url is used by legacy pay army subscription only
+LegacyPayRedirectionURL: "https://17.live/"
