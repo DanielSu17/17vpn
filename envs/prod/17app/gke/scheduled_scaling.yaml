@@ -5,23 +5,9 @@
   - name: example-target-hpa
     minReplicas: 20
 
-# Followings are actual schedules
-# For JP celebrity gackt_official
-- startTime: "2020-12-18 20:45:00 (GMT+0800)"
-  endTime: "2020-12-18 22:30:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 80
-  - name: k8sprod-golives-main
-    minReplicas: 80
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 30
-
-# For JP offline event
-- startTime: "2020-12-18 18:20:00 (GMT+0800)"
-  endTime: "2020-12-18 20:30:00 (GMT+0800)"
+# 12/23 Xmas Offline event 
+- startTime: "2020-12-23 17:20:00 (GMT+0800)"
+  endTime: "2020-12-23 21:30:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 80
