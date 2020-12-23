@@ -13,7 +13,8 @@ main(){
         docker run --rm -v $(pwd):/repo tig4605246/config-checker-python:latest /bin/sh -c "cd /repo && python3 /repo/${SCRIPT}"
         ## get output status ##
         STATUS=$?
-        ## take some decision ## 
+        ## take some decision ##
+        
         if [ ${STATUS} -eq 0 ] 
         then
             echo "${SCRIPT} command was successful" 
