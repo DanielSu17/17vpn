@@ -1,17 +1,14 @@
 enable_perimeterx: true
 enable_log_block_info: true
 enable_log_block_user_id: true
-protected_routes:
-  - "/auth/checkOpenIDAvailable"
-  - "/auth/checkOAuthIDAvailable"
-  - "/redenvelopes/.*/pick$"
-  - "/lives/.*/laborReward$"
 protected_routes_with_methods:
-  - route: "/auth/checkOpenIDAvailable"
-  - route: "/auth/checkOAuthIDAvailable"
-  - route: "/redenvelopes/.*/pick$"
+  - route: "/auth/.*"
+  - route: "/cells.*"
   - route: "/lives/.*/laborReward$"
     methods: ["POST"]
+  - route: "/redenvelopes/.*/pick$"
+  - route: "/sections.*"
+  - route: "/version"
 sensitive_headers:
   - "nonce"
   - "accesstoken"

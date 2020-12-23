@@ -1,12 +1,9 @@
 enable_perimeterx: false
 enable_log_block_info: false
 enable_log_block_user_id: false
-protected_routes:
-  - "/version"
-  - "/auth/.*"
-  - "/redenvelopes/.*/pick$"
-  - "/lives/.*/laborReward$"
 protected_routes_with_methods:
+  - route: "/cells.*"
+  - route: "/sections.*"
   - route: "/version"
   - route: "/auth/.*"
   - route: "/redenvelopes/.*/pick$"
