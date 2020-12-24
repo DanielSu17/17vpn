@@ -31,6 +31,12 @@ allowed_origins:
  - "^http://localhost(:\\d+)?$"
  - "^http://usskyeye\\.s3-website-us-west-2\\.amazonaws\\.com$" # for US skyeye
  - "^http://172.16.5.10(:\\d+)?$" # frontend dev
+regexConf:
+  - url_key: "aggr_gateway_url"
+    default_url_key: "go_url"
+    weight: 10
+    regex_paths:
+      - ^/api/v1/event$
 conf:
  - url_key: "go_trade_url"
    weight: 100
