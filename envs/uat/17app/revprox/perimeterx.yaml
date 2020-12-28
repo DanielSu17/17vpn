@@ -1,17 +1,14 @@
 enable_perimeterx: true
 enable_log_block_info: true
 enable_log_block_user_id: true
-protected_routes:
-  - "/auth/checkOpenIDAvailable"
-  - "/auth/checkOAuthIDAvailable"
-  - "/redenvelopes/.*/pick$"
-  - "/lives/.*/laborReward$"
 protected_routes_with_methods:
-  - route: "/auth/checkOpenIDAvailable"
-  - route: "/auth/checkOAuthIDAvailable"
-  - route: "/redenvelopes/.*/pick$"
+  - route: "/auth/.*"
+  - route: "/cells.*"
   - route: "/lives/.*/laborReward$"
     methods: ["POST"]
+  - route: "/redenvelopes/.*/pick$"
+  - route: "/sections.*"
+  - route: "/version"
 sensitive_headers:
   - "nonce"
   - "accesstoken"
@@ -20,8 +17,17 @@ ip_headers:
   - "X-Forwarded-For"
 blocking_score: 100
 sensitive_routes: []
+whitelist_routes: []
+enforced_routes: []
+monitored_routes:
+  - "/api/v1/redenvelopes/.*/pick$"
+  - "/api/v1/auth/.*"
+  - "/api/v1/cells.*"
+  - "/api/v1/lives/.*/laborReward$"
+  - "/api/v1/sections.*"
+  - "/api/v1/version"  
 s2s_timeout: 1000
-debug_mode: true
+debug_mode: false
 monitor_mode: false
 testing_mode: false
 send_page_activities: true

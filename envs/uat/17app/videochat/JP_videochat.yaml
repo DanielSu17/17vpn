@@ -1,5 +1,3 @@
-whiteList: []
-freeWhiteList: []
 pointMinUnit: 100
 minPointPay: 100
 maxPointPay: 10000
@@ -13,7 +11,17 @@ appKey: "/OhqKHHCyKr5fn2GWiB6ViYK074WgYc1pUObNhRcw0Dj+S/nhc3Fqjti9pbS8fyd"
 # client用來判斷視訊連線結束後多久該切回原本的sdk
 timeoutSeconds: 300
 
+
+whiteList: 
+
+freeWhiteList: 
+  - "d5ae4e8f-e379-4aff-aa99-9663f745508b" # ホリプロ１
+  - "1b296ea6-64cd-4811-a10b-ed96b3ed0ca9" # ホリプロ２
+  - "0386b538-24ed-4906-550d-cf378561e778" # Kaye_zaza
+
 # 開放給所有人
-enableAll: true
+enableAll: false
 # 開放給簽約主播
-enableForContractedStreamer: false
+enableForContractedStreamer: true
+# 所有簽約主播可用0點
+enableFreeForContractedStreamer: true
