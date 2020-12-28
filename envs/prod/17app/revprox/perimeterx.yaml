@@ -2,12 +2,13 @@ enable_perimeterx: true
 enable_log_block_info: true
 enable_log_block_user_id: true
 protected_routes_with_methods:
+  - route: "/apiGateWay.*"
   - route: "/auth/.*"
-  - route: "/cells.*"
+#   - route: "/cells.*"
   - route: "/lives/.*/laborReward$"
     methods: ["POST"]
   - route: "/redenvelopes/.*/pick$"
-  - route: "/sections.*"
+#   - route: "/sections.*"
   - route: "/version"
 sensitive_headers:
   - "nonce"
@@ -21,8 +22,9 @@ whitelist_routes: []
 enforced_routes:
   - "/api/v1/redenvelopes/.*/pick$"
 monitored_routes:
-  - "/api/v1/cells.*"
-  - "/api/v1/sections.*" 
+  - "/api/v1/apiGateWay.*"
+#   - "/api/v1/cells.*"
+#   - "/api/v1/sections.*" 
   - "/api/v1/auth/.*"
   - "/api/v1/lives/.*/laborReward$"
   - "/api/v1/version"
