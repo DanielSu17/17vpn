@@ -1,16 +1,26 @@
 #!/bin/bash
 
-REQUIREMENT="./circle/requirements.txt"
 CHECKER="circle/syntax_checker.py circle/check_providers.py circle/remote_check.py"
 ERROR_TAGGING=',{"type":"section","text":{"type":"mrkdwn","text":"@sre"}}'
-COMMITER_INFO=`git log  --pretty=format:'%an (%ae)' ${GIT_COMMIT}^! `
-COMMIT_MSG=`git log  --pretty=format:'%B' ${GIT_COMMIT}^! | head -n1`
+Author=$(git log  --pretty=format:'%an (%ae)' "${GIT_COMMIT}"^! | cut -d'(' -f 2 | cut -d')' -f 1)
+commit_message=$(git log  --pretty=format:'%B' "${GIT_COMMIT}"^! | head -n1 | cut -d'-' -f 1 | cut -d' ' -f 1)
+
+docker login -u "${DOCKER_USER}" -p "${DOCKER_PASS}"
+
+# If Author is empty, it'll fail
+if [[ "${Author}" == *"17.media"* ]]; then
+    COMMITER_INFO=${Author}
+else
+    COMMITER_INFO=${commit_message}
+fi
 
 main(){
     echo "--- start checking ---"
-    curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"Config commit:\n*<https://github.com/17media/configs/commit/$GIT_COMMIT | $GIT_COMMIT>*\"}},{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"*Build URL:*\n*<${BUILD_URL}|URL>*\"}},{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"*Test Started*\n*Commited By:*\n ${COMMITER_INFO}\n*Commit Message:*\n${COMMIT_MSG} \"}},{\"type\": \"divider\"}]}" ${SLACK}
+    HEADER="Authorization: Bearer ${SLACKTOKEN}"
+    USERID=$(curl -s -X GET --header "${HEADER}" https://slack.com/api/users.lookupByEmail?email="${COMMITER_INFO}" | jq -r .user.id)
+    curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"Config commit:\n*<https://github.com/17media/configs/commit/$GIT_COMMIT | $GIT_COMMIT>*\"}},{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"*Build URL:*\n*<${BUILD_URL}|URL>*\"}},{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"*Test Started*\n*Commited By:*\n ${COMMITER_INFO}\n*Commit Message:*\n${COMMIT_MSG} \"}},{\"type\": \"divider\"}]}" "${SLACK}"
     for SCRIPT in ${CHECKER}; do
-        docker run --rm -v $(pwd):/repo tig4605246/config-checker-python:latest /bin/sh -c "cd /repo && python3 /repo/${SCRIPT}"
+        docker run --rm -v "$(pwd)":/repo 17media/config-check:latest /bin/sh -c "cd /repo && python3 /repo/${SCRIPT}"
         ## get output status ##
         STATUS=$?
         ## take some decision ##
@@ -19,12 +29,13 @@ main(){
         then
             echo "${SCRIPT} command was successful" 
         else
-            curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"Config commit:\n*<https://github.com/17media/configs/commit/$GIT_COMMIT | $GIT_COMMIT>*\"}},{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"*Build URL:*\n*<${BUILD_URL}|URL>*\"}},{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"*Tests of ${SCRIPT} failed*\n*Commited By:*\n ${COMMITER_INFO}\n*Commit Message:*\n${COMMIT_MSG} \"},\"accessory\":{\"type\":\"image\",\"image_url\":\"https://api.slack.com/img/blocks/bkb_template_images/notificationsWarningIcon.png\",\"alt_text\":\"Warning\"}}${ERROR_TAGGING},{\"type\": \"divider\"}]}" ${SLACK}
-            exit -1
+            curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"Config commit:\n*<https://github.com/17media/configs/commit/$GIT_COMMIT | $GIT_COMMIT>*\"}},{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"*Build URL:*\n*<${BUILD_URL}|URL>*\"}},{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"*Tests of ${SCRIPT} failed*\n*Commited By:*\n <@${USERID}>\n*Commit Message:*\n${COMMIT_MSG} \"},\"accessory\":{\"type\":\"image\",\"image_url\":\"https://api.slack.com/img/blocks/bkb_template_images/notificationsWarningIcon.png\",\"alt_text\":\"Warning\"}}${ERROR_TAGGING},{\"type\": \"divider\"}]}" "${SLACK}"
+            exit 1
         fi
     done;
-    curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"Config commit:\n*<https://github.com/17media/configs/commit/$GIT_COMMIT | $GIT_COMMIT>*\"}},{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"*Build URL:*\n*<${BUILD_URL}|URL>*\"}},{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"*Tests Passed*\n*Commited By:*\n ${COMMITER_INFO}\n*Commit Message:*\n${COMMIT_MSG} \"}},{\"type\": \"divider\"}]}" ${SLACK} 
+    curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"Config commit:\n*<https://github.com/17media/configs/commit/$GIT_COMMIT | $GIT_COMMIT>*\"}},{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"*Build URL:*\n*<${BUILD_URL}|URL>*\"}},{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"*Tests Passed*\n*Commited By:*\n ${COMMITER_INFO}\n*Commit Message:*\n${COMMIT_MSG} \"}},{\"type\": \"divider\"}]}" "${SLACK}"
     echo "--- finish checking ---"
+    # TODO: Add push to etcd here
 }
 
-main $@
+main "$@"
