@@ -6,6 +6,30 @@ hostIDOnTV: "bbf85355-348d-45d4-6555-cf03881171e0" # 17q_jp
 hosts:
   TRIVIA:
   TRIVIA_ON_TV:
+    "92cfc4c4-f6cd-4d43-9cc4-b12c33092698": #社内専用、、、
+      pictures:
+        default: http://cdn.17app.co/31eb8ca9-3ef3-42cb-bc9d-123208b58428.png
+        prepare: http://cdn.17app.co/d9c8b768-effb-4d75-a04b-794cdb10e101.png
+        onLive: http://cdn.17app.co/fc0b2db7-6104-427e-b84c-8dd64b99533e.png
+        # default user picture for users without picture
+        user: 857dc12d-46c9-4c63-b3c4-ee8fd1a2eb57.png
+      showBannerTime:
+        weekdays: [0,1,2,3,4,5,6] # 0 ~ 6 means Sunday ~ Saturday
+        hourFrom: 0 # GMT+8
+        hourTo: 23 # GMT+8
+      showBannerPriority: 2
+      disclaimerTitle:
+        key: "trivia_disclaimer_title"
+      disclaimerText:
+        key: "trivia_disclaimer_text"
+      leaveGameToastText:
+        key: "trivia_gamer_leave_double_confirm_text"
+      shareWording:
+        key: "trivia_game_share_wording"
+      isMedalSupported:
+        Default: true
+        CorrectMost: true
+
     "c91df834-3279-4e89-a3d2-d8c79dceb70f": #jp17q_test1
       pictures:
         default: http://cdn.17app.co/31eb8ca9-3ef3-42cb-bc9d-123208b58428.png
