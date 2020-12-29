@@ -7,6 +7,8 @@ protected_routes_with_methods:
 #   - route: "/cells.*"
   - route: "/lives/.*/laborReward$"
     methods: ["POST"]
+  - route: "/liveStreams/suggestedLiveStreams$"
+  - route: "/liveStreams/hotOptSuggestedstreams$"
   - route: "/redenvelopes/.*/pick$"
 #   - route: "/sections.*"
   - route: "/version"
@@ -27,6 +29,8 @@ monitored_routes:
 #   - "/api/v1/sections.*" 
   - "/api/v1/auth/.*"
   - "/api/v1/lives/.*/laborReward$"
+  - "/api/v1/liveStreams/suggestedLiveStreams$"
+  - "/api/v1/liveStreams/hotOptSuggestedstreams$"
   - "/api/v1/version"
 s2s_timeout: 1000
 debug_mode: false
