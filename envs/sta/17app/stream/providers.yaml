@@ -17,6 +17,7 @@ rtmp_providers:
   expire_after_hours: 6
   weight: 0
   region_weights:
+    TW: 0
     US: 0
   users:
   - 37d9e764-5eef-44f8-8e60-a06f5ea7e001 # qaprogram1
@@ -36,6 +37,8 @@ rtmp_providers:
 - name: WANSU
   quality_support: 1
   weight: 0
+  region_weights:
+    TW: 0
   users:
   - caf2da0e-54cb-4058-4f1c-4056eb970161 # janet.w01
   - e3c4c804-8a9c-4b7c-8026-0a8ed602b42c # jen87go
@@ -147,6 +150,8 @@ rtmp_providers:
 - name: WANSU_LOW_LATENCY
   quality_support: 1
   weight: 50
+  region_weights:
+    TW: 0
   users:
   - 0e671b10-1660-419c-67f9-9983ebdbad38 # triviabot1
   - 48ca8e9e-0ca1-4d7f-6b2c-ffd21e5a4ff6 # triviabot2
