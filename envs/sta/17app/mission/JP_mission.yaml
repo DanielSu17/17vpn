@@ -1583,7 +1583,49 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-
+#新人No1（ハートがいっぱい2回）
+- ID: 26d60595-1633-4914-aa79-6c9d4449763e
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2101_jp_freshmanjan_bp_m
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_sendgift_jp_heartg2
+  i18nTitleParams:
+  - value: "2"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  - value: overflowing_heart
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_watch_jp_sinjinno12020
+  i18nDescriptionParams:
+  - value: "2"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  goalValue: 2
+  enableTimeRange:
+  - startTime: 2020-12-28 19:00:00 (GMT+0900)
+    endTime: 2021-01-31 21:24:59 (GMT+0900)
+  refIDs:
+  - overflowing_heart
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
 i18nMissionCompleteToast: baggage_mission_toast_claimed
 refreshHour: 5
 supportedVersion:
