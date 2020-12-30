@@ -1,9 +1,13 @@
 # | type | Value |
 # | --- | --- |
-# | Comment_In_Livestream | 5 |
-# | View_Stream_X_Seconds | 9 |
-# | Streamer_Live_X_Seconds| 14 |
-# | Streamer_Poke_X_Times | 15 |
+# | Comment_In_Livestream   | 5  | 在Ｘ個直播間留言
+# | View_Stream_X_Seconds   | 9  | 累計看播 X 分鐘
+# | Streamer_Live_X_Seconds | 14 | 累計開播 X 分鐘
+# | Streamer_Poke_X_Times   | 15 | 在直播間戳 X 位粉絲
+# | Streamer_Got_Comments   | 18 | 直播時被留言 X 次
+# | Streamer_New_Followers  | 19 | 直播時被追隨 X 次
+# | Streamer_Got_Sharings   | 20 | 直播時被分享 X 次
+# | Streamer_Got_BabyCoins  | 21 | 直播時累積被送 X 寶寶幣
 
 # | lifeCycle | Value |
 # | --- | --- |
@@ -597,6 +601,31 @@ missions: # mission list
     i18nDescriptionParams:
     i18nDisableDescription:
     goalValue: 1
+    withReminder: true
+  - id: 0d974127-f0ce-4a1f-800e-2da674827fcb
+    type: 21 # Type_Streamer_Got_BabyCoins
+    lifeCycle: 0
+    levelRange:
+      min: 1
+      max: 505
+    reward:
+      type: 5 # RewardType_ACHIEVEMENT
+      iconURL: https://cdn.17app.co/1a623a45-270b-4709-b45f-f6dba20b7c37.png
+      achievementValue: 1000
+      i18nDescription: streamer_mission_score
+      i18nDescriptionParams:
+        - value: "1000"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: "1000"
+          needMap: false
+      commentColorCode: "#FFFFFF"
+    i18nTitle: streamer_loyalty_streaming_performance_points
+    i18nDescription: 
+    i18nDescriptionParams:
+    i18nDisableDescription:
+    goalValue: 1000
     withReminder: true
 
 
