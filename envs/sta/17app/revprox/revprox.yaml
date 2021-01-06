@@ -33,6 +33,11 @@ regexConf:
       - ^/api/v1/event/subtabs$
       - ^/api/v1/event/banner$
       - ^/api/v1/event/info/
+  - url_key: "go_usersearch_url"
+    default_url_key: "go_url"
+    weight: 100
+    regex_paths:
+      - ^/api/v1/user/search$
 conf:
  - url_key: "go_trade_url"
    weight: 100
@@ -46,9 +51,6 @@ conf:
      gift: "getLiveStreamGiftLeaderboard,\
             getLiveStreamAllGifts,\
             getReceivedGiftLog"
- - url_key: "go_usersearch_url"	
-   white_list:	
-     apiv1: "user/search"
  - url_key: "go_url"
    white_list:
      liveStreams: "publishLiveStream,\
