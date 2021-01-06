@@ -48,6 +48,9 @@ conf:
             getReceivedGiftLog"
  - url_key: "go_url"
    white_list:
+     apiv1: "user/search"
+ - url_key: "go_url"
+   white_list:
      liveStreams: "publishLiveStream,\
             getLiveStreamViewers,keepLiveStream"
      liveStreams/admin: "pass,kill,hide,pintotop,cancelpintotop,\
