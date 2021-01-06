@@ -4,8 +4,6 @@ CHECKER="circle/syntax_checker.py circle/check_providers.py circle/remote_check.
 ERROR_TAGGING=',{"type":"section","text":{"type":"mrkdwn","text":"@sre"}}'
 COMMIT_MESSAGE=$(git log  --pretty=format:'%B' "${GIT_COMMIT}"^!)
 
-docker login -u "${DOCKER_USER}" -p "${DOCKER_PASS}"
-
 TMP=$(git log  --pretty=format:'%an (%ae)' "${GIT_COMMIT}"^!)
 # If Author is empty, it'll fail
 if [[ "${TMP}" == *"17.media"* ]]; then

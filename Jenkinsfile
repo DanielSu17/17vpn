@@ -186,7 +186,7 @@ node('gcp') { timestamps { ansiColor('xterm') {
         // force exit if job execution time over 600 seconds
         timeout(time: 600, unit: 'SECONDS') {
           // post slack message before job start
-          postNotification(message_started, 'good')
+          //postNotification(message_started, 'good')
 
           try {
             sh("docker version")
@@ -194,12 +194,12 @@ node('gcp') { timestamps { ansiColor('xterm') {
             sh('./push_to_etcd.sh')
           } catch (e) {
             // post slack message if job failed
-            postNotification(message_failure, 'danger')
+            //postNotification(message_failure, 'danger')
             error "failed"
           }
 
           // post slack message after job completed
-          postNotification(message_success, 'good')
+          //postNotification(message_success, 'good')
         } // end of timeout
       }
     } // end of dir
