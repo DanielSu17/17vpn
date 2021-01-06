@@ -10,7 +10,7 @@ if [ -z "${REVISION}" ]; then
 fi
 
 COMMIT_ID="${REVISION}"
-COMMIT_MESSAGE=$(git log  --pretty=format:'%B' "${GIT_COMMIT}"^!)
+COMMIT_MESSAGE=$(git log  --pretty=format:'%B' "${GIT_COMMIT}"^! | head -n1)
 
 function push() {
   docker run --rm              \

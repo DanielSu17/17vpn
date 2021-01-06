@@ -2,7 +2,7 @@
 
 CHECKER="circle/syntax_checker.py circle/check_providers.py circle/remote_check.py"
 ERROR_TAGGING=',{"type":"section","text":{"type":"mrkdwn","text":"@sre"}}'
-COMMIT_MESSAGE=$(git log  --pretty=format:'%B' "${GIT_COMMIT}"^!)
+COMMIT_MESSAGE=$(git log  --pretty=format:'%B' "${GIT_COMMIT}"^! | head -n1)
 
 TMP=$(git log  --pretty=format:'%an (%ae)' "${GIT_COMMIT}"^!)
 # If Author is empty, it'll fail
