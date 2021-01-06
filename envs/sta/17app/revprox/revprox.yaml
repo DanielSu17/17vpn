@@ -46,6 +46,9 @@ conf:
      gift: "getLiveStreamGiftLeaderboard,\
             getLiveStreamAllGifts,\
             getReceivedGiftLog"
+ - url_key: "go_usersearch_url"	
+   white_list:	
+     apiv1: "user/search"
  - url_key: "go_url"
    white_list:
      liveStreams: "publishLiveStream,\
@@ -97,7 +100,6 @@ conf:
             getPayments,uploadPhoneNumbers,uploadFacebookFriends,\
             followAllAction,updateLiveStreamInfo,\
             getPointProductList,getPostByHashTag,readNotif,updateOpenID"
-     apiv1: "user/search"
  - url_key: "go_lives_url"
    white_list:
      # for api
