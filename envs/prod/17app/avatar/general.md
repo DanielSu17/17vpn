@@ -1,0 +1,1 @@
+# avatar 通用設定(GLOBAL)
