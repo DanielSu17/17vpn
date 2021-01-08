@@ -1,0 +1,45 @@
+# | type | Value |
+# | --- | --- |
+# | Comment_In_Livestream   | 5  | 在Ｘ個直播間留言
+# | View_Stream_X_Seconds   | 9  | 累計看播 X 分鐘
+# | Streamer_Live_X_Seconds | 14 | 累計開播 X 分鐘
+# | Streamer_Poke_X_Times   | 15 | 在直播間戳 X 位粉絲
+# | Streamer_Got_Comments   | 18 | 直播時被留言 X 次
+# | Streamer_New_Followers  | 19 | 直播時被追隨 X 次
+# | Streamer_Got_Sharings   | 20 | 直播時被分享 X 次
+# | Streamer_Got_BabyCoins  | 21 | 直播時累積被送 X 寶寶幣
+
+# | lifeCycle | Value |
+# | --- | --- |
+# | Daily | 0 |
+
+enable: false
+whiteList:
+
+i18nMissionEligibleDescription: streamer_mission_out_of_condition
+i18nCompleteComment: streamer_mission_button_go_stream
+
+refreshHour: 5 # timezone of Taiwan
+
+tagInfos:
+  0: # Daily
+    token:
+      key: "baggage_mission_daily_tag"
+    color: "#7483d6"
+
+remind:
+  remindSecs: 60
+  toastMsg:
+    key:
+  toastSecs: 10
+
+# completeAnimation:
+#   url: <string>
+#   webpUrl: <string>
+#   animationID: <string>
+#   MD5: <string>
+#   webpMD5: <string>
+#   androidType: <int32>
+#   iOSType: <int32>
+
+missions: # mission list

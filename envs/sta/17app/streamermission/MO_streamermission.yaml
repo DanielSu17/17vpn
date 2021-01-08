@@ -1,0 +1,78 @@
+# | type | Value |
+# | --- | --- |
+# | Comment_In_Livestream   | 5  | 在Ｘ個直播間留言
+# | View_Stream_X_Seconds   | 9  | 累計看播 X 分鐘
+# | Streamer_Live_X_Seconds | 14 | 累計開播 X 分鐘
+# | Streamer_Poke_X_Times   | 15 | 在直播間戳 X 位粉絲
+# | Streamer_Got_Comments   | 18 | 直播時被留言 X 次
+# | Streamer_New_Followers  | 19 | 直播時被追隨 X 次
+# | Streamer_Got_Sharings   | 20 | 直播時被分享 X 次
+# | Streamer_Got_BabyCoins  | 21 | 直播時累積被送 X 寶寶幣
+
+# | lifeCycle | Value |
+# | --- | --- |
+# | Daily | 0 |
+
+enable: true
+whiteList:
+  - c52c9260-119d-423c-afc8-a2c8aa3a7a02 # jameschou01 for testing
+
+i18nMissionDescription: streamer_mission_description
+i18nMissionDescriptionParams:
+  - value: "35"
+    needMap: false
+i18nMissionEligibleDescription: streamer_mission_out_of_condition
+i18nGoStreamDescription: streamer_mission_subtitle_go_stream
+
+refreshHour: 5 # timezone of Taiwan
+
+tagInfos:
+  0: # Daily
+    token:
+      key: "baggage_mission_daily_tag"
+    color: "#7483d6"
+
+remind:
+  remindSecs: 60
+  toastMsg:
+    key:
+  toastSecs: 10
+
+animation:
+  animationID: streamer_mission_reward
+  url: https://cdn.17app.co/ea7ff116-0c8c-4e0d-9943-2cab68d2fef3.zip
+  MD5: e651647ef9628dc524597d0d721661d7
+  webpUrl: https://cdn.17app.co/09118ce9-7c46-4c70-8e26-6b31fd77dbcc-q90-s1.webp
+  webpMD5: f48ab05266acbed79811aa597663f7d4
+  androidType: 0 # default
+  iOSType: 2 # webp
+
+missions: # mission list
+  - id: 8df1fefc-5ddb-447a-aff1-9cd5bdc1cddc
+    type: 14 # Type_STREAMER_LIVE_X_SECONDS 累計開播 X 分鐘
+    lifeCycle: 0
+    levelRange:
+      min: 1
+      max: 20
+    reward:
+      type: 5 # RewardType_ACHIEVEMENT
+      iconURL: https://cdn.17app.co/cb1ad5ea-986e-4d02-ac76-9d1e9a06c099.png
+      achievementValue: 8000
+      i18nDescription: streamer_mission_score
+      i18nDescriptionParams:
+        - value: "8000"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: "8000"
+          needMap: false
+      commentColorCode: "#FFFFFF"
+    i18nTitle: streamer_mission_stream_title
+    i18nTitleParams:
+      - value: "30" # 單位為分鐘，顯示到標題
+        needMap: false
+    i18nDescription: streamer_mission_stream_subtitle
+    i18nDescriptionParams:
+    i18nDisableDescription:
+    goalValue: 1800 # 單位為秒，反映進度條
+    withReminder: true
