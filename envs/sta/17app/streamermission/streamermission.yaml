@@ -248,9 +248,6 @@ missions: # mission list
   - id: da00ace4-1020-4367-88b5-d654e237345e
     type: 14 # Type_STREAMER_LIVE_X_SECONDS
     lifeCycle: 0
-    levelRange:
-      min: 1
-      max: 505
     reward:
       type: 5 # RewardType_ACHIEVEMENT
       iconURL: https://cdn.17app.co/13267fcd-cfa5-4871-a6df-71d057d18131.png
@@ -275,14 +272,11 @@ missions: # mission list
     i18nDisableDescription:
     goalValue: 600 #單位為秒，反映進度條
     withReminder: true
-    StreamerDay: 0 // D0 mission, live 600 seconds
+    StreamerDay: 0 # D0 mission, live 600 seconds
 
   - id: 20eecdb8-d25b-4ccb-a76d-b486a7e993a9
     type: 15 # Type_STREAMER_POKE_X_TIMES
     lifeCycle: 0
-    levelRange:
-      min: 1
-      max: 505
     reward:
       type: 5 # RewardType_ACHIEVEMENT
       iconURL: https://cdn.17app.co/1cfc1cdb-a9ad-4820-8781-effe238c6e10.png
@@ -307,14 +301,11 @@ missions: # mission list
     i18nDisableDescription:
     goalValue: 2
     withReminder: true
-    StreamerDay: 1 // D1 mission, poke 2 times
+    StreamerDay: 1 # D1 mission, poke 2 times
     
   - id: c757822b-6f66-4dd3-8e00-5e123add79f0
     type: 21 # Type_Streamer_Got_BabyCoins
     lifeCycle: 0
-    levelRange:
-      min: 1
-      max: 505
     reward:
       type: 5 # RewardType_ACHIEVEMENT
       iconURL: https://cdn.17app.co/1a623a45-270b-4709-b45f-f6dba20b7c37.png
@@ -336,14 +327,11 @@ missions: # mission list
     i18nDisableDescription:
     goalValue: 1000
     withReminder: true
-    StreamerDay: 2 // D2 mission, got 1000 baby coins
+    StreamerDay: 2 # D2 mission, got 1000 baby coins
 
   - id: 8344b4c8-a746-47b3-ac36-8400230d057d
     type: 19 # Streamer_New_Followers
     lifeCycle: 0
-    levelRange:
-      min: 1
-      max: 505
     reward:
       type: 5 # RewardType_ACHIEVEMENT
       iconURL: https://cdn.17app.co/1a623a45-270b-4709-b45f-f6dba20b7c37.png
@@ -365,14 +353,11 @@ missions: # mission list
     i18nDisableDescription:
     goalValue: 2
     withReminder: true
-    StreamerDay: 3 // D3 mission, got 2 new followers
+    StreamerDay: 3 # D3 mission, got 2 new followers
 
   - id: d8dbf865-fc91-463a-906e-94d4c0c44bcd
     type: 18 # Streamer_Got_Comments
     lifeCycle: 0
-    levelRange:
-      min: 1
-      max: 505
     reward:
       type: 5 # RewardType_ACHIEVEMENT
       iconURL: https://cdn.17app.co/1a623a45-270b-4709-b45f-f6dba20b7c37.png
@@ -394,4 +379,110 @@ missions: # mission list
     i18nDisableDescription:
     goalValue: 3
     withReminder: true
-    StreamerDay: 4 // D4 mission, got 3 comments
+    StreamerDay: 4 # D4 mission, got 3 comments
+
+  - id: d6a2c581-3fe6-490a-baab-348de8397eb5
+    type: 21 # Type_Streamer_Got_BabyCoins
+    lifeCycle: 0
+    reward:
+      type: 5 # RewardType_ACHIEVEMENT
+      iconURL: https://cdn.17app.co/1a623a45-270b-4709-b45f-f6dba20b7c37.png
+      achievementValue: 1000
+      i18nDescription: streamer_mission_score
+      i18nDescriptionParams:
+        - value: "1000"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: "經驗值"
+          needMap: false
+        - value: "1000"
+          needMap: false
+      commentColorCode: "#FFFFFF"
+    i18nTitle: streamer_loyalty_streaming_performance_points
+    i18nDescription: 
+    i18nDescriptionParams:
+    i18nDisableDescription:
+    goalValue: 1100
+    withReminder: true
+    StreamerDay: 5 # D5 mission, got 1100 baby coins
+
+  - id: b4d72ac1-e05d-452b-92f5-9e8d7decb1d8
+    type: 21 # Type_Streamer_Got_BabyCoins
+    lifeCycle: 0
+    reward:
+      type: 5 # RewardType_ACHIEVEMENT
+      iconURL: https://cdn.17app.co/1a623a45-270b-4709-b45f-f6dba20b7c37.png
+      achievementValue: 1000
+      i18nDescription: streamer_mission_score
+      i18nDescriptionParams:
+        - value: "1000"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: "經驗值"
+          needMap: false
+        - value: "1000"
+          needMap: false
+      commentColorCode: "#FFFFFF"
+    i18nTitle: streamer_loyalty_streaming_performance_points
+    i18nDescription: 
+    i18nDescriptionParams:
+    i18nDisableDescription:
+    goalValue: 1200
+    withReminder: true
+    StreamerDay: 6 # D6 mission, got 1200 baby coins
+
+  - id: d8f88df9-ab56-4f6d-9879-fcd063db94ca
+    type: 21 # Type_Streamer_Got_BabyCoins
+    lifeCycle: 0
+    reward:
+      type: 5 # RewardType_ACHIEVEMENT
+      iconURL: https://cdn.17app.co/1a623a45-270b-4709-b45f-f6dba20b7c37.png
+      achievementValue: 1000
+      i18nDescription: streamer_mission_score
+      i18nDescriptionParams:
+        - value: "1000"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: "經驗值"
+          needMap: false
+        - value: "1000"
+          needMap: false
+      commentColorCode: "#FFFFFF"
+    i18nTitle: streamer_loyalty_streaming_performance_points
+    i18nDescription: 
+    i18nDescriptionParams:
+    i18nDisableDescription:
+    goalValue: 1300
+    withReminder: true
+    StreamerDay: 7 # D7 mission, got 1300 baby coins
+
+  - id: 8ab303ca-001d-4b10-845e-d4a192df1668
+    type: 21 # Type_Streamer_Got_BabyCoins
+    lifeCycle: 0
+    levelRange:
+      min: 1
+      max: 20
+    reward:
+      type: 5 # RewardType_ACHIEVEMENT
+      iconURL: https://cdn.17app.co/1a623a45-270b-4709-b45f-f6dba20b7c37.png
+      achievementValue: 1000
+      i18nDescription: streamer_mission_score
+      i18nDescriptionParams:
+        - value: "1000"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: "經驗值"
+          needMap: false
+        - value: "1000"
+          needMap: false
+      commentColorCode: "#FFFFFF"
+    i18nTitle: streamer_loyalty_streaming_performance_points
+    i18nDescription: 
+    i18nDescriptionParams:
+    i18nDisableDescription:
+    goalValue: 1300
+    withReminder: true
