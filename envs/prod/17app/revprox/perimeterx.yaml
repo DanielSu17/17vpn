@@ -24,13 +24,13 @@ sensitive_routes: []
 whitelist_routes: []
 enforced_routes:
   - "/api/v1/auth/goodnight/register"
-  - "/api/v1/cells.*"
-  - "/api/v1/sections.*" 
   - "/api/v1/lives/.*/laborReward$"
   - "/api/v1/redenvelopes/.*/pick$"
 monitored_routes:
   - "/api/v1/apigateway.*"
   - "/api/v1/auth/.*"
+  - "/api/v1/cells.*"
+  - "/api/v1/sections.*"   
   - "/api/v1/lives/.*/enter$"
   - "/api/v1/liveStreams/suggestedLiveStreams$"
   - "/api/v1/liveStreams/hotOptSuggestedstreams$"
