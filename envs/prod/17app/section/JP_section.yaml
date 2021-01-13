@@ -1,9 +1,9 @@
 # sections
 #   - id: TopBanner|OffcRecomm|Suggestion|Label|RedEnvelope|Show|Vod|TodayHotTopic|CrazyZoo
-#     enable: false|true
-#     dedup:  false|true
+#     enable: false|true　falseにすると非表示
+#     dedup:  false|true　falseにすると非表示
 #     more:   false|true
-#     minGrids: <int>
+#     minGrids: <int>　表示のための最小ライバー数
 #     style: <int> 1: BillboardStyle, 2: StoryTrayStyle, 3: DefaultShelfStyle, 4: CoverFlowStyle, 5: VodShelfStyle, 6: DefaultLabelShelfStyle (猜你可能會喜歡)
 #     name:
 #       key: <string>
@@ -143,7 +143,7 @@ sections:
     name:
       key: streamer_jp_label_fresh
     enable: true
-    dedup: true
+    dedup: false
     minGrids: 1
     style: 3
     more: true
