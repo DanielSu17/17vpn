@@ -53,7 +53,7 @@ for config_path in ${config_paths}; do
   config_app=$(echo "${config_path}" | cut -d'/' -f3)
 
   # support prod/sta only
-  if [ "${config_env}" = "sta" ]  || [ "${config_env}" = "prod" ] || [ "${config_env}" = "uat" ]; then
+  if [ "${config_env}" = "sta" ]  || [ "${config_env}" = "prod" ]]; then
     curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":muscle:Push to ETCD Started. (${config_env}):etcd:\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Message*:${COMMIT_MESSAGE}\n*Lastest Commit*:${GIT_COMMIT}  *Job*: <${BUILD_URL}|URL>\"}]},{\"type\":\"divider\"}]}" "${SLACK}"    
     # naming rule: ENDPOINTS_{{ APP_NAME }}_{{ CONFIG_ENV }}
     dynamic_endpoints="ENDPOINTS_$(echo "${config_app}" | tr '[:lower:]' '[:upper:]')_$(echo "${config_env}" | tr '[:lower:]' '[:upper:]')"
