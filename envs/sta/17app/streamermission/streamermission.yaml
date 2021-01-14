@@ -240,6 +240,34 @@ missions: # mission list
     i18nDisableDescription:
     goalValue: 1000
     withReminder: true
+    
+  - id: 322db98c-51ed-4723-9627-3e9c550e15ec
+    type: 20 # Type_Streamer_Got_Sharings
+    lifeCycle: 0
+    levelRange:
+      min: 1
+      max: 505
+    reward:
+      type: 2 # RewardTypePoint
+      iconURL: https://cdn.17app.co/1a623a45-270b-4709-b45f-f6dba20b7c37.png
+      achievementValue: 0
+      value: 100
+      i18nDescription: streamer_mission_score
+      i18nDescriptionParams:
+        - value: "100"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: "POINT"
+          mapOption: 1
+        - value: "100"
+      commentColorCode: "#FFFFFF"
+    i18nTitle: streamer_growth_dailytask_metrics_sharings
+    i18nDescription: 
+    i18nDescriptionParams:
+    i18nDisableDescription:
+    goalValue: 5
+    withReminder: true
 
   - id: da00ace4-1020-4367-88b5-d654e237345e
     type: 14 # Type_STREAMER_LIVE_X_SECONDS
