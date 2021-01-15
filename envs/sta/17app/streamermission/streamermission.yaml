@@ -97,33 +97,30 @@ animation:
 
 missions: # mission list
   - id: dd4dbf3a-0641-44d1-a8e5-85ab0e080e2d
-    type: 14 # Type_STREAMER_LIVE_X_SECONDS
+    type: 14
     lifeCycle: 0
     levelRange:
       min: 1
       max: 505
     reward:
-      type: 5 # RewardType_ACHIEVEMENT
+      type: 5
       iconURL: https://cdn.17app.co/13267fcd-cfa5-4871-a6df-71d057d18131.png
       achievementValue: 8000
-      i18nDescription: streamer_mission_score
+      i18nDescription: streamer_growth_dailytask_rewards_achievementscore
       i18nDescriptionParams:
         - value: "8000"
           needMap: false
       i18nComment: streamer_mission_score_comment
       i18nCommentParam:
-        - value: "POINT"
+        - value: streamer_growth_achievementscore
           mapOption: 1
         - value: "8000"
       commentColorCode: "#FFFFFF"
-    i18nTitle: streamer_mission_stream_title
-    i18nTitleParams:
-      - value: "10" #單位為分鐘，顯示到標題
-        needMap: false
-    i18nDescription: streamer_mission_stream_subtitle
-    i18nDescriptionParams:
-    i18nDisableDescription:
-    goalValue: 600 #單位為秒，反映進度條
+    i18nTitle: streamer_growth_risingstar_metrics_streamedtime
+    i18nDescription: streamer_growth_streaming_viewer_risingstar_reminder1
+    i18nDescriptionParams: null
+    i18nDisableDescription: null
+    goalValue: 600
     withReminder: true
 
   - id: fcff6c4b-d168-4af5-b3ac-643f1a1c2ceb
