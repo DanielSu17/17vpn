@@ -1,6 +1,5 @@
 # Every service belongs to a type (go, nodejs, webapp, or spinnaker)
 # Every type has its own settings like Jenkins endpoints which base on environments
-
 groups:
   backend:
     aggr-gateway:       "go"
@@ -19,6 +18,7 @@ groups:
     gocells:            "go"
     gotrade:            "go"
     goplatform:         "go"
+    gousersearch:       "go"
     eventory:           "go"
     eventory-worker:    "go"
     data-stream-worker: "go"
@@ -35,6 +35,7 @@ groups:
     skyeyewall:      "webapp"
     17live:          "webapp"
     admin-v2:        "webapp"
+    skyeye-v2:       "webapp"
   event:
     event-server:    "go"
     event-web:       "webapp"
@@ -85,6 +86,7 @@ batchDeploy:
       - "gocells"
       - "gotrade"
       - "goplatform"
+      - "gousersearch"
       - "exchange"
       - "slackbot"
       - "alfred"
@@ -105,6 +107,7 @@ batchDeploy:
       - "gocells"
       - "gotrade"
       - "goplatform"
+      - "gousersearch"
       - "exchange"
       - "slackbot"
       - "alfred"

@@ -17,6 +17,7 @@ rtmp_providers:
   expire_after_hours: 6
   weight: 0
   region_weights:
+    TW: 0
     US: 0
   users:
   - 37d9e764-5eef-44f8-8e60-a06f5ea7e001 # qaprogram1
@@ -29,6 +30,7 @@ rtmp_providers:
 #  - ce1527f1-9498-4055-876e-16b72b1e5d50 # wani_belle
   - e3284f88-884f-46f4-512b-490525c34df8 # androidtest5
   - 14285db8-de44-47d5-b3e6-429d3b6e9d38 # aaqqaatw02
+  - b2523d4e-f221-4eb8-8748-9d6a68a3c935 # amyshen171
 
 - name: QCLOUD
   quality_support: 0
@@ -36,6 +38,8 @@ rtmp_providers:
 - name: WANSU
   quality_support: 1
   weight: 0
+  region_weights:
+    TW: 0
   users:
   - caf2da0e-54cb-4058-4f1c-4056eb970161 # janet.w01
   - e3c4c804-8a9c-4b7c-8026-0a8ed602b42c # jen87go
@@ -146,7 +150,9 @@ rtmp_providers:
   
 - name: WANSU_LOW_LATENCY
   quality_support: 1
-  weight: 0
+  weight: 50
+  region_weights:
+    TW: 0
   users:
   - 0e671b10-1660-419c-67f9-9983ebdbad38 # triviabot1
   - 48ca8e9e-0ca1-4d7f-6b2c-ffd21e5a4ff6 # triviabot2
@@ -158,6 +164,7 @@ rtmp_providers:
   - 91ce0188-caed-4fb1-95cb-98e0d84fa5e1 # 17x華視午間新聞
   - 49ce4402-f72b-4537-6f91-4f81c815bcf8 # androidtest3
   - 1f71f63c-ce03-411b-4534-93d42cd5d49c # androidtest10
+  - 2d072c73-4dd9-41ee-9e84-b3f61219ebbe # amyshen172
 
 - name: WANSU_SPECIFIED_IP
   quality_support: 1
@@ -178,14 +185,19 @@ rtmp_providers:
   
 - name: AWS
   quality_support: 0
-  weight: 100
+  weight: 50
   region_weights:
     TW: 100
     HK: 0
     US: 0
+  levelRestriction:
+    minLevel: 0
+    maxLevel: 50
+  timeRestriction:
+    enabledAtUTCHour: 0
+    disabledAtUTCHour: 23
   users:
   - 73f2de03-5cd3-4167-924d-1f4b6ef7080b # qacontractor7
-  - ce1527f1-9498-4055-876e-16b72b1e5d50 # wani_belle
   - 73e8b839-a1ca-4b08-a51d-2b02ffdea153 # bellayayaya
   - 7b8acc99-44e3-44ac-b702-f58c536d241a # teddypk002
   - 60ea1878-0fc4-4077-a09b-8dafffb690a5 # amy.program1
