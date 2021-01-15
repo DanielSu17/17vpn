@@ -30,6 +30,39 @@
 # | NON_IAP | 2 |
 
 missions:
+- ID: fa0c1f6c-5715-11eb-ae93-0242ac130002
+  type: 8
+  category: 0
+  lifeCycle: 1
+  targetAudience: 0
+  levelRange:
+    min: 2
+    max: 15
+  reward:
+    rewardType: 1
+    rewardID: gift_texture_gesture_gingerbread_bag
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "15"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 900
+  enableTimeRange:
+  - startTime: 2020-12-19 00:00:00 (GMT+0900)
+    endTime: 2020-12-20 23:59:59 (GMT+0900)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
 - ID: cbd3655c-af04-403d-921a-4605ee8a9882
   type: 9
   category: 0
