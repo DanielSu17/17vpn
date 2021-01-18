@@ -517,7 +517,7 @@ missions: # mission list
       value: 9999
       i18nDescription: streamer_growth_dailytask_rewards_babycoins
       i18nDescriptionParams:
-        - value: "777"
+        - value: "9999"
           needMap: false
       i18nComment: streamer_mission_score_comment
       i18nCommentParam:
@@ -532,3 +532,30 @@ missions: # mission list
     goalValue: 20
     withReminder: true
     
+  - id: d8f88df9-ab56-4f6d-9879-fcd063daaaaa
+    type: 21 # Type_Streamer_Got_BabyCoins
+    lifeCycle: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      type: 2 # RewardTypePoint
+      iconURL: 
+      achievementValue: 0
+      value: 3333
+      i18nDescription: streamer_growth_dailytask_rewards_babycoins
+      i18nDescriptionParams:
+        - value: "3333"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: "POINT"
+          mapOption: 1
+        - value: "3333"
+      commentColorCode: "#FFFFFF"
+    i18nTitle: streamer_loyalty_streaming_performance_points
+    i18nDescription: 
+    i18nDescriptionParams:
+    i18nDisableDescription:
+    goalValue: 33
+    withReminder: true
