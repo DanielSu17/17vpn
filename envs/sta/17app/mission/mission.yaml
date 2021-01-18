@@ -11,7 +11,10 @@
 # | View_Stream_X_Seconds | 9 |
 # | IAP_X_Points | 10 |
 # | Share_Twitter | 11 |
+# | TypePhoneBinding | 12 |
 # | View_Stream_X_Different_Days | 13 |
+# | TypeCreateAvatar | 16 |
+# | TypeCommentInNewestLivestream | 17 |
 
 # | category | Value |
 # | --- | --- |
@@ -28,6 +31,11 @@
 # | REGIONAL | 0 |
 # | IAP | 1 |
 # | NON_IAP | 2 |
+
+# | rewardType | Value |
+# | --- | --- |
+# | RewardCategoryBaggageGift | 1 |
+# | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
 - ID: c73ea458-5377-4a9c-b965-94f99168ac98
@@ -181,6 +189,221 @@ missions:
   enableTimeRange:
   - startTime: 2020-07-07 00:00:00 (GMT+0800)
     endTime: 2021-07-17 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: e3ff99aa-ccb5-4745-bfd5-f17b5c5caa33
+  type: 2
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 2
+    rewardID: alex-test-1
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_trivia_night_reward_title
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_trivia_night_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2021-01-10 18:00:00 (GMT+0800)
+    endTime: 2021-02-27 23:59:29 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: f471de95-eb45-4912-8015-028939ba654f
+  type: 5
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 2
+    rewardID: alex-test-2
+    amount: 4
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_leave_comment_reward_title
+  i18nTitleParams:
+  - value: "1"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_leave_comment_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2021-01-10 18:00:00 (GMT+0800)
+    endTime: 2021-02-27 23:59:29 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: 46723846-f347-48cc-9cb8-ea0868870071
+  type: 6
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 2
+    rewardID: alex-test-3
+    amount: 6
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_participate_trivia_reward_title
+  i18nTitleParams:
+  - value: "1"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_participate_trivia_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2021-01-10 18:00:00 (GMT+0800)
+    endTime: 2021-02-27 23:59:29 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: false
+- ID: 9890768d-7422-4b77-bf92-4adbe0bf48b6
+  type: 8
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 2
+    rewardID: alex-test-4
+    amount: 8
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_weekly_first_time_IAP_reward_jp_title
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_weekly_first_time_IAP_reward_jp_des
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2021-01-10 18:00:00 (GMT+0800)
+    endTime: 2021-02-27 23:59:29 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: 7b6ac0ad-8ae0-4b1c-abbe-726687a8426d
+  type: 10
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 2
+    rewardID: alex-test-5
+    amount: 10
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_first_time_IAP_point_event_title
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2021-01-10 18:00:00 (GMT+0800)
+    endTime: 2021-02-27 23:59:29 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: f5baf08a-976e-4371-ab8f-df8557e865f2
+  type: 13
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 2
+    rewardID: alex-test-6
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_day_in_total_reward_title
+  i18nTitleParams:
+  - value: "1"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_day_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2021-01-10 18:00:00 (GMT+0800)
+    endTime: 2021-02-27 23:59:29 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: 6c2f70cb-6522-4f09-9411-f0a6ad929e18
+  type: 17
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 2
+    rewardID: alex-test-6
+    amount: 5
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_leave_comment_new_streamer_title
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_leave_comment_new_streamer_description
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2021-01-10 18:00:00 (GMT+0800)
+    endTime: 2021-02-27 23:59:29 (GMT+0800)
   refIDs: []
   platforms:
   - android
