@@ -31,7 +31,7 @@ for commit in ${commits}; do
   echo "[debug] diff commit ${commit}"
   tmp=$(git diff-tree --no-commit-id --name-only -r "${commit}" | grep -E -o '^envs\/(sta|prod|uat)/[^\/]+' ||true;)
   if [ -n "${tmp}" ];then
-    config_paths=$(printf "%s %s" "${config_paths}" "${tmp}")
+    config_paths=$(printf "%s\n%s" "${config_paths}" "${tmp}")
     short_msg=$(git log  --pretty=format:'(%an) %B' "${commit}"^! | head -n1)
     commit_list=$(printf "%s\n%s - %s" "${commit_list}" "${commit}" "${short_msg}")
   fi
