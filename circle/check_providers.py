@@ -74,12 +74,11 @@ def check_message_providers(input_file):
         message_check_fail += 1
 
     for name, users in message_general.items():
-        if message_general[name] is not None and message_dynamic[name] is not None:
-            if len(message_general[name]) != len(message_dynamic[name]):
-                print(COLOR_YELLOW, end="")
-                print("* Warning: users length for \"{0}\" not match".format(name))
-                print(COLOR_RESET, end="")
-                message_check_fail += 1
+        if len(message_general[name]) != len(message_dynamic[name]):
+            print(COLOR_YELLOW, end="")
+            print("* Warning: users length for \"{0}\" not match".format(name))
+            print(COLOR_RESET, end="")
+            message_check_fail += 1
 
     if message_check_fail > 0:
         print(COLOR_RED + "[FAIL]" + COLOR_RESET)
