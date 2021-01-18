@@ -225,7 +225,7 @@ missions:
   requirePhoneBinding: false
   withReminder: false
 - ID: f471de95-eb45-4912-8015-028939ba654f
-  type: 5
+  type: 4
   category: 0
   lifeCycle: 0
   targetAudience: 0
@@ -333,7 +333,11 @@ missions:
     amount: 10
     expireTimeSecs: 86400
   i18nTitle: baggage_mission_first_time_IAP_point_event_title
-  i18nTitleParams: []
+  i18nTitleParams: 
+    - value: "1"
+      needMap: false
+      mapOption: 0
+      fontAttribute: null
   i18nContent: ""
   i18nContentParams: []
   i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
