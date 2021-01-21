@@ -1,6 +1,5 @@
 # Every service belongs to a type (go, nodejs, webapp, or spinnaker)
 # Every type has its own settings like Jenkins endpoints which base on environments
-
 groups:
   backend:
     aggr-gateway:       "go"
@@ -64,6 +63,8 @@ settings:
       endpoint: '17App/job/awssta-deployment-goapi/buildWithParameters?token=WPZgd7ag4Q7ksL3nSqLW2QVq6aaDK5apguCvR23M'
     awsprod:
       endpoint: '17App/job/awsprod-deployment-goapi/buildWithParameters?token=WPZgd7ag4Q7ksL3nSqLW2QVq6aaDK5apguCvR23M'
+    k8suat:
+      endpoint: 'Test/job/uat-test/buildWithParameters?token=qLnZFhgbtDwYHq3bpqdsfHkXqEbMS7VAuTshkBrQ'
   nodejs:
     k8ssta:
       endpoint: 'k8ssta-deployment-nodejs/buildWithParameters?token=ZQuygxVpytYgnanavuVkEdQsccQKr36RyLWNhgjY'
@@ -97,6 +98,27 @@ batchDeploy:
       - "ml-host"
       - "snapshot"
     k8ssta:
+      - "goapi"
+      - "aggr-gateway"
+      - "bbrich"
+      - "revprox"
+      - "worker"
+      - "data-middleware"
+      - "go-cron"
+      - "golives"
+      - "gocells"
+      - "gotrade"
+      - "goplatform"
+      - "gousersearch"
+      - "exchange"
+      - "slackbot"
+      - "alfred"
+      - "eventory"
+      - "eventory-worker"
+      - "data-stream-worker"
+      - "ml-host"
+      - "snapshot"
+    k8suat:
       - "goapi"
       - "aggr-gateway"
       - "bbrich"
