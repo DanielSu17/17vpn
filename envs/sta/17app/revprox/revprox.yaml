@@ -33,6 +33,12 @@ regexConf:
       - ^/api/v1/event/subtabs$
       - ^/api/v1/event/banner$
       - ^/api/v1/event/info/
+  - url_key: "go_platform_url"
+    default_url_key: "go_url"
+    weight: 100
+    regex_paths:
+      - ^/debug/useMemory$
+
 conf:
  - url_key: "go_usersearch_url"
    weight: 100
@@ -129,7 +135,3 @@ conf:
    weight: 100
    white_list:
      apiv1: "bbrich"
- - url_key: "go_platform_url"
-   weight: 100
-   white_list:
-     debug: "debug"
