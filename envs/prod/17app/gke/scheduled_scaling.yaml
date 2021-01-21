@@ -5,9 +5,35 @@
   - name: example-target-hpa
     minReplicas: 20
 
-# 1/15 JP GACKT
+# 1/22 JP GACKT & AKB
 - startTime: "2021-01-22 17:50:00 (GMT+0800)"
-  endTime: "2021-01-22 20:05:00 (GMT+0800)"
+  endTime: "2021-01-22 22:05:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 80
+  - name: k8sprod-golives-main
+    minReplicas: 80
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 30
+
+# 1/23 AKB
+- startTime: "2021-01-23 12:55:00 (GMT+0800)"
+  endTime: "2021-01-23 21:05:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 80
+  - name: k8sprod-golives-main
+    minReplicas: 80
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 30
+
+# 1/24 AKB
+- startTime: "2021-01-24 12:55:00 (GMT+0800)"
+  endTime: "2021-01-24 21:05:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 80
