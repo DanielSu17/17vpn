@@ -17,7 +17,8 @@
 #   scope: by_access_token
 
 rate_limits:
-- {url: "/api/v1/legacy/unfollowUserAction",                 method: "POST",    flow_per_second: 3,       reservoir_size: 3,    scope: by_access_token}
+- {url: "/api/v1/legacy/followUserAction",                   method: "POST",    flow_per_second: 0.083,   reservoir_size: 5,    scope: by_access_token}
+- {url: "/api/v1/legacy/unfollowUserAction",                 method: "POST",    flow_per_second: 0.083,   reservoir_size: 5,    scope: by_access_token}
 
 #app/api/api/clip/clip.go:62:		apis.AddRateLimit(rl, apis.RateLimitClipLike, ratelimiter.Second, clipQPS,          apis.ByUser),
 #app/api/api/clip/clip.go:67:		apis.AddRateLimit(rl, apis.RateLimitClipView, ratelimiter.Second, clipQPS, 			apis.ByUser),
