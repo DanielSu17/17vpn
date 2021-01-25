@@ -38,6 +38,41 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
+- ID: fadce436-570b-4795-ae86-13db73d578b5 #測試節目帳號觀看x秒
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2101_jpvip_testbag
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "2"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 120
+  enableTimeRange:
+  - startTime: 2021-01-14 18:00:00 (GMT+0800)
+    endTime: 2021-02-27 23:59:29 (GMT+0800)
+  refIDs:
+    - e3c4c804-8a9c-4b7c-8026-0a8ed602b42c #jen87go
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+
 - ID: 07667eca-86b7-4995-bdbb-7f85b59f5e27
   type: 9
   category: 0
@@ -339,7 +374,7 @@ missions:
   - startTime: 2021-01-14 18:00:00 (GMT+0800)
     endTime: 2021-02-27 23:59:29 (GMT+0800)
   refIDs:
-    - e3c4c804-8a9c-4b7c-8026-0a8ed602b42c #jen87go
+  #  - e3c4c804-8a9c-4b7c-8026-0a8ed602b42c #jen87go
   platforms:
   - android
   - ios
