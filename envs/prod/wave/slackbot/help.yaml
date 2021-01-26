@@ -216,3 +216,18 @@ commandHelp:
         title: "`[取消主播底薪合約]`"
         description: |
           > 刪除指定主播的底薪合約
+  post:
+    title: "Post 相關"
+    commandsHelp:
+      pin:
+        title: "`[pin post]`"
+        description: |
+          > 將指定 postID 置頂，其結束時間為指定日期的 23:59:59 (UTC+8)
+      unpin:
+        title: "`[unpin post]`"
+        description: |
+          > 將指定 postID 從置頂移除
+      list:
+        title: "`[list post]`"
+        description: |
+          > 列出指定 userID 最近三則 posts，若要置頂 post，可用此指令獲取 postID

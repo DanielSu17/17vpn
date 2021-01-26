@@ -189,3 +189,45 @@ commandHelp:
         title: "`[執行 pprof]`"
         description: |
           > 取得指定 pod 的 profiling 資料，只有 backend 能使用此指令
+  bdcontract:
+    title: "底薪簽約主播相關"
+    commandsHelp:
+      add-agent:
+        title: "`[新增經紀人/經紀公司]`"
+        description: |
+          > 新增經紀人/經紀公司，需指定經紀人分類與經紀人名稱`
+      delete-agent:
+        title: "`[刪除經紀人/經紀公司]`"
+        description: |
+          > 刪除指定的經紀人/經紀公司
+      list-agent:
+        title: "`[列出經紀人/經紀公司]`"
+        description: |
+          > 列出經紀人/經紀公司列表
+      approve:
+        title: "`[核准主播底薪合約]`"
+        description: |
+          > 核准主播底薪合約，需輸入經紀人/經紀公司名稱
+      edit:
+        title: "`[修改主播底薪合約]`"
+        description: |
+          > 修改已核准主播底薪合約之經紀人/經紀公司 或 簽訂日期
+      delete:
+        title: "`[取消主播底薪合約]`"
+        description: |
+          > 刪除指定主播的底薪合約
+  post:
+    title: "Post 相關"
+    commandsHelp:
+      pin:
+        title: "`[pin post]`"
+        description: |
+          > 將指定 postID 置頂，其結束時間為指定日期的 23:59:59 (UTC+8)
+      unpin:
+        title: "`[unpin post]`"
+        description: |
+          > 將指定 postID 從置頂移除
+      list:
+        title: "`[list post]`"
+        description: |
+          > 列出指定 userID 最近三則 posts，若要置頂 post，可用此指令獲取 postID
