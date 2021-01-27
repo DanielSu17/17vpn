@@ -38,42 +38,6 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
-- ID: fadce436-570b-4795-ae86-13db73d578b5 #測試節目帳號觀看x秒
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2101_jpvip_testbag
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "2"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 120
-  enableTimeRange:
-  - startTime: 2021-01-14 18:00:00 (GMT+0800)
-    endTime: 2021-02-27 23:59:29 (GMT+0800)
-  refIDs:
-    - 567e0b5d-1516-4ce0-b4e8-bec4e756d5ae #kevinmh
-  #  - e3c4c804-8a9c-4b7c-8026-0a8ed602b42c #jen87go
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-
 - ID: 07667eca-86b7-4995-bdbb-7f85b59f5e27
   type: 9
   category: 0
@@ -347,7 +311,121 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-- ID: 7837e229-526a-44f6-a4b9-c8b6238613d7
+- ID: d1c8e730-c61f-43f6-998e-3c39949bfdc2
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2002_tw_weekend_bp
+    amount: 1
+    expireTimeSecs: 604800
+  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+  i18nTitleParams:
+  - value: "1"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  - value: 2002_tw_weekend_bp
+    needMap: false
+    mapOption: 2
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2021-01-29 18:00:00 (GMT+0800)
+    endTime: 2021-01-31 23:59:59 (GMT+0800)
+  refIDs:
+  - 2001_tw_weekend_l
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: false
+- ID: 190ffb20-e755-4a62-8a93-eb9e210e58fd
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2002_tw_weekend_bp
+    amount: 1
+    expireTimeSecs: 604800
+  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+  i18nTitleParams:
+  - value: "2"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  - value: 2002_tw_weekend_bp
+    needMap: false
+    mapOption: 2
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 2
+  enableTimeRange:
+  - startTime: 2021-01-29 18:00:00 (GMT+0800)
+    endTime: 2021-01-31 23:59:59 (GMT+0800)
+  refIDs:
+  - 2001_tw_weekend_l
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: false
+- ID: dd7cb33a-d19c-475d-a435-432726a77b24
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2002_tw_weekend_bp
+    amount: 1
+    expireTimeSecs: 604800
+  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+  i18nTitleParams:
+  - value: "3"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  - value: 2002_tw_weekend_bp
+    needMap: false
+    mapOption: 2
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 3
+  enableTimeRange:
+  - startTime: 2021-01-29 18:00:00 (GMT+0800)
+    endTime: 2021-01-31 23:59:59 (GMT+0800)
+  refIDs:
+  - 2001_tw_weekend_l
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: false
+- ID: fadce436-570b-4795-ae86-13db73d578b5
   type: 9
   category: 0
   lifeCycle: 0
@@ -375,13 +453,45 @@ missions:
   - startTime: 2021-01-14 18:00:00 (GMT+0800)
     endTime: 2021-02-27 23:59:29 (GMT+0800)
   refIDs:
-  #  - e3c4c804-8a9c-4b7c-8026-0a8ed602b42c #jen87go
+  - 567e0b5d-1516-4ce0-b4e8-bec4e756d5ae
   platforms:
   - android
   - ios
   requirePhoneBinding: false
   withReminder: false
-
+- ID: 7837e229-526a-44f6-a4b9-c8b6238613d7
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2101_jpvip_testbag
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "2"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 120
+  enableTimeRange:
+  - startTime: 2021-01-14 18:00:00 (GMT+0800)
+    endTime: 2021-02-27 23:59:29 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
 - ID: afe549c7-e69c-4012-b38f-b83ac82dd6f1
   type: 1
   category: 0
