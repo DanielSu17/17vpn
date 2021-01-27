@@ -52,7 +52,7 @@ for config_path in ${config_paths}; do
   config_env=$(echo "${config_path}" | cut -d'/' -f2)
   config_app=$(echo "${config_path}" | cut -d'/' -f3)
 
-  if [ "${config_env}" = "uat" ]  ||  [ "${config_app}" = "wave" ] ; then
+  if [ "${config_env}" = "uat" ]  &&  [ "${config_app}" = "wave" ] ; then
     continue
   fi
 
