@@ -171,6 +171,7 @@ animations:
 animationID: streamer_growth_daily_task_completion
 
 missions: # mission list
+# For Dx missions, i.e., missions with streamerDay field, do NOT add levelRange field; otherwise, extra missions will be displayed for streamers more than D8.
   - id: dd4dbf3a-0641-44d1-a8e5-85ab0e080e2d
     type: 14 # Type_STREAMER_LIVE_X_SECONDS
     lifeCycle: 0
@@ -1120,6 +1121,7 @@ missions: # mission list
     goalValue: 8
     streamerDay: 7
 
+# For level missions, set streamerDay to -1; otherwise, extra missions will be displayed for streamers within level range.
   - id: 3383e0c1-13d6-4de1-be63-4e19ce9660e1
     type: 14 # Type_STREAMER_LIVE_X_SECONDS
     lifeCycle: 0
