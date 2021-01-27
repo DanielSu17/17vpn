@@ -23,7 +23,7 @@ rate_limits:
 #app/api/api/clip/clip.go:67:		apis.AddRateLimit(rl, apis.RateLimitClipView, ratelimiter.Second, clipQPS, 			apis.ByUser),
 #app/api/api/clip/clip.go:72:		apis.AddRateLimit(rl, apis.RateLimitClipVote, ratelimiter.Second, clipQPS, 			apis.ByUser),
 - {url: "/api/v1/clips/[A-Za-z0-9-]+/like",                  method: "POST",    flow_per_second: 20,      reservoir_size: 20,   scope: by_access_token}
-- {url: "/api/v1/clips/[A-Za-z0-9-]+/view",                  method: "POST",    flow_per_second: 20,      reservoir_size: 20,   scope: by_access_token}
+- {url: "/api/v1/clips/[A-Za-z0-9-]+/view",                  method: "POST",    flow_per_second: 20,      reservoir_size: 20,   scope: by_ip}
 - {url: "/api/v1/clips/[A-Za-z0-9-]+/vote",                  method: "POST",    flow_per_second: 20,      reservoir_size: 20,   scope: by_access_token}
 
 #app/api/api/live/live.go:242:	apis.Handle(grg, "POST", "/qiniu/notification", apis.AddRateLimit(rl, apis.RateLimitQiniuNotif, ratelimiter.Minute, qiniuNotificationLimit, apis.ByUser), lh.qiniuNotif)
