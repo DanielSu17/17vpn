@@ -26,20 +26,6 @@ config_paths=""
 commit_list=""
 echo "[debug] commits: ${commits}"
 
-# set conditions
-if [ "${JOB_BASE_NAME}" = "17media-config-checker-prod" ]; then
-  FILTER="prod"
-elif [ "${JOB_BASE_NAME}" = "17media-config-checker-sta" ]; then
-  FILTER="sta"
-elif [ "${JOB_BASE_NAME}" = "17media-config-checker-uat" ]; then
-  FILTER="uat"
-else 
-  echo "No matching job names, abort with 1"
-  exit 1
-fi
-echo "Set FILTER ${FILTER}"
-
-
 # Get all change between lastest commit and previously successful commit
 for commit in ${commits}; do
   echo "[debug] diff commit ${commit}"
@@ -66,8 +52,12 @@ for config_path in ${config_paths}; do
   config_env=$(echo "${config_path}" | cut -d'/' -f2)
   config_app=$(echo "${config_path}" | cut -d'/' -f3)
 
+  if [ "${config_env}" = "uat" ]  &&  [ "${config_app}" = "wave" ] ; then
+    continue
+  fi
+
   # support prod/sta only
-  if [ "${config_env}" = "${FILTER}" ] ; then
+  if [ "${config_env}" = "sta" ]  || [ "${config_env}" = "prod" ] ; then
     curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":muscle:Push to ETCD Started. (${config_env}):etcd:\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Message*:${COMMIT_MESSAGE}\n*Lastest Commit*:${GIT_COMMIT}  *Job*: <${BUILD_URL}|URL>\"}]},{\"type\":\"divider\"}]}" "${SLACK}"    
     # naming rule: ENDPOINTS_{{ APP_NAME }}_{{ CONFIG_ENV }}
     dynamic_endpoints="ENDPOINTS_$(echo "${config_app}" | tr '[:lower:]' '[:upper:]')_$(echo "${config_env}" | tr '[:lower:]' '[:upper:]')"
@@ -83,7 +73,7 @@ for config_path in ${config_paths}; do
     fi
     curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":white_check_mark:Push to ETCD Successfully. (${config_env}):etcd:\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Message*:${COMMIT_MESSAGE}\n*Lastest Commit*:${GIT_COMMIT}  *Job*: <${BUILD_URL}|URL>\"}]},{\"type\":\"divider\"}]}" "${SLACK}"
   else
-    echo "[debug] unsupported config_env ${config_env}, skipped" 
+    echo "[debug] unsupported config_env, skipped" 
     continue
   fi
 done
