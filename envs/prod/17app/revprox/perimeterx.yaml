@@ -5,6 +5,10 @@ protected_routes_with_methods:
   - route: "/apigateway.*"
   - route: "/auth/.*"
   - route: "/cells.*"
+  - route: "/legacy/followUserAction"
+    methods: ["POST"]
+  - route: "/legacy/unfollowUserAction"
+    methods: ["POST"]
   - route: "/lives/.*/enter$"
   - route: "/lives/.*/laborReward$"
     methods: ["POST"]
@@ -24,6 +28,8 @@ sensitive_routes: []
 whitelist_routes: []
 enforced_routes:
   - "/api/v1/auth/goodnight/register"
+  - "/api/v1/legacy/followUserAction"
+  - "/api/v1/legacy/unfollowUserAction"
   - "/api/v1/lives/.*/laborReward$"
   - "/api/v1/redenvelopes/.*/pick$"
 monitored_routes:
