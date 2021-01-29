@@ -11,7 +11,10 @@
 # | View_Stream_X_Seconds | 9 |
 # | IAP_X_Points | 10 |
 # | Share_Twitter | 11 |
+# | TypePhoneBinding | 12 |
 # | View_Stream_X_Different_Days | 13 |
+# | TypeCreateAvatar | 16 |
+# | TypeCommentInNewestLivestream | 17 |
 
 # | category | Value |
 # | --- | --- |
@@ -29,6 +32,11 @@
 # | IAP | 1 |
 # | NON_IAP | 2 |
 
+# | rewardType | Value |
+# | --- | --- |
+# | RewardCategoryBaggageGift | 1 |
+# | RewardCategoryAvatarGrabBag | 2 |
+
 missions:
 - ID: 2ceb4a8b-78a6-42d6-8505-d44f408586ad
   type: 16
@@ -44,19 +52,19 @@ missions:
     amount: 1
     expireTimeSecs: 86400
   i18nTitle: avatar_mission_create_avatar_title
-  i18nTitleParams:
-  i18nContent: 
+  i18nTitleParams: []
+  i18nContent: ""
   i18nContentParams: []
   i18nDescription: avatar_mission_create_avatar_descr
   i18nDescriptionParams: []
   goalValue: 1
   enableTimeRange:
-    - startTime: 2020-01-14 17:00:00 (GMT+0800)
-      endTime: 2099-12-31 23:59:59 (GMT+0800)
-  refIDs:
+  - startTime: 2020-01-14 17:00:00 (GMT+0800)
+    endTime: 2099-12-31 23:59:59 (GMT+0800)
+  refIDs: []
   platforms:
-    - android
-    - ios
+  - android
+  - ios
   requirePhoneBinding: false
   withReminder: false
 - ID: 33dae081-690a-49db-90b4-f94fd55dc1fb
@@ -91,6 +99,148 @@ missions:
   - startTime: 2020-06-26 12:00:00 (GMT+0900)
     endTime: 2021-06-26 23:59:59 (GMT+0900)
   refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: c81eede0-2a35-42b2-926a-66a0cc80e2a4
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2101_us_newbiedec_bp
+    amount: 5
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "30"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 1800
+  enableTimeRange:
+  - startTime: 2021-02-01 09:00:00 (GMT+0800)
+    endTime: 2021-02-28 11:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: e2ed33e7-0307-4245-b3fc-3b05321617ae
+  type: 5
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2101_us_newbiedec_bp
+    amount: 5
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_leave_comment_reward_title
+  i18nTitleParams:
+  - value: "10"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_leave_comment_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 10
+  enableTimeRange:
+  - startTime: 2021-02-01 09:00:00 (GMT+0800)
+    endTime: 2021-02-28 11:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: 2fdba35d-1495-4dfb-9701-debd60077ff9
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2101_us_newbiedec_bp
+    amount: 5
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+  i18nTitleParams:
+  - value: "2"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  - value: 2102_us_newbies_1
+    needMap: false
+    mapOption: 2
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 2
+  enableTimeRange:
+  - startTime: 2021-02-01 09:00:00 (GMT+0800)
+    endTime: 2021-02-28 11:59:59 (GMT+0800)
+  refIDs:
+  - 2102_us_newbies_1
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: c41d8db6-7066-43e0-91e8-a0857cda4f11
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2102_us_tetris_bp
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+  i18nTitleParams:
+  - value: "80"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  - value: 2102_us_newbies_1
+    needMap: false
+    mapOption: 2
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 80
+  enableTimeRange:
+  - startTime: 2021-02-01 09:00:00 (GMT+0800)
+    endTime: 2021-02-28 11:59:59 (GMT+0800)
+  refIDs:
+  - 2102_us_newbies_1
   platforms:
   - android
   - ios
@@ -189,105 +339,6 @@ missions:
   enableTimeRange:
   - startTime: 2021-01-01 09:00:00 (GMT+0800)
     endTime: 2021-01-31 11:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: b6208e2a-7e35-45f7-abb7-0d57864234d6
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2012_us_newbiedec_bp
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "30"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 1800
-  enableTimeRange:
-  - startTime: 2020-12-01 09:00:00 (GMT+0800)
-    endTime: 2020-12-31 11:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: de4eb177-db03-4ab1-9288-9028e729358b
-  type: 5
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2012_us_newbiedec_bp
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_leave_comment_reward_title
-  i18nTitleParams:
-  - value: "10"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_leave_comment_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 10
-  enableTimeRange:
-  - startTime: 2020-12-01 09:00:00 (GMT+0800)
-    endTime: 2020-12-31 11:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 0c8b5269-3aea-429c-8ac7-f0f4d870835a
-  type: 5
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2012_us_newbiedec_bp
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_leave_comment_reward_title
-  i18nTitleParams:
-  - value: "30"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_leave_comment_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 30
-  enableTimeRange:
-  - startTime: 2020-12-01 09:00:00 (GMT+0800)
-    endTime: 2020-12-31 11:59:59 (GMT+0800)
   refIDs: []
   platforms:
   - android
