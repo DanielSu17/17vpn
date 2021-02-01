@@ -81,7 +81,7 @@ rate_limits:
 
 - {url: "/api/v1/gift/giftbox/unread",                          method: "GET",    flow_per_second: 0.083,           reservoir_size:  5,    scope: by_global}
 
-- {url: "/api/v1/recommendation/metrics/user",                  method: "POST",    flow_per_second: 1,         reservoir_size: 5,     scope: by_global}
-- {url: "/api/v1/recommendation/metrics/stream",                method: "POST",    flow_per_second: 1,         reservoir_size: 5,     scope: by_global}
-- {url: "/api/v1/recommendation/setting",                       method: "PUT",     flow_per_second: 1,         reservoir_size: 5,     scope: by_global}
-- {url: "/api/v1/recommendation/metrics/user",                  method: "GET",     flow_per_second: 1,         reservoir_size: 5,     scope: by_global}
+- {url: "/api/v1/recommendation/metrics/user",                  method: "POST",    flow_per_second: 0.2,         reservoir_size: 5,     scope: by_global}
+- {url: "/api/v1/recommendation/metrics/stream",                method: "POST",    flow_per_second: 0.2,         reservoir_size: 5,     scope: by_global}
+- {url: "/api/v1/recommendation/setting",                       method: "PUT",     flow_per_second: 0.2,         reservoir_size: 5,     scope: by_global}
+- {url: "/api/v1/recommendation/metrics/user",                  method: "GET",     flow_per_second: 0.2,         reservoir_size: 5,     scope: by_global}
