@@ -11,7 +11,10 @@
 # | View_Stream_X_Seconds | 9 |
 # | IAP_X_Points | 10 |
 # | Share_Twitter | 11 |
+# | TypePhoneBinding | 12 |
 # | View_Stream_X_Different_Days | 13 |
+# | TypeCreateAvatar | 16 |
+# | TypeCommentInNewestLivestream | 17 |
 
 # | category | Value |
 # | --- | --- |
@@ -28,6 +31,11 @@
 # | REGIONAL | 0 |
 # | IAP | 1 |
 # | NON_IAP | 2 |
+
+# | rewardType | Value |
+# | --- | --- |
+# | RewardCategoryBaggageGift | 1 |
+# | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
 - ID: ccca5024-c0d5-405c-b0e4-479a1f2d2600
@@ -59,154 +67,7 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-- ID: 4b75b049-5711-4c2d-b3cc-29b6eaa981be
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2101_hk_sleepyjan_bp
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2101_hk_sleepyjan_s
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2021-01-16 18:00:00 (GMT+0800)
-    endTime: 2021-01-31 23:59:59 (GMT+0800)
-  refIDs:
-  - 2101_hk_sleepyjan_s
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 572812d8-1fe7-40e0-b707-acececd70d21
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2101_hk_sleepyjan_bp
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2101_hk_sleepyjan_m
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2021-01-16 18:00:00 (GMT+0800)
-    endTime: 2021-01-31 23:59:59 (GMT+0800)
-  refIDs:
-  - 2101_hk_sleepyjan_m
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 630a1c52-5ae6-45f7-8351-bd67da0f7d43
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2101_hk_sleepyjan_bp
-    amount: 10
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2101_hk_sleepyjan_l
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2021-01-16 18:00:00 (GMT+0800)
-    endTime: 2021-01-31 23:59:59 (GMT+0800)
-  refIDs:
-  - 2101_hk_sleepyjan_l
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 7be5d7d3-4b4a-4c30-a7bf-85ed3593dd95
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2101_hk_sleepyjan_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "5"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 300
-  enableTimeRange:
-  - startTime: 2021-01-16 18:00:00 (GMT+0800)
-    endTime: 2021-01-31 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 9d574303-04c7-43e9-8f7b-d82ff651ecfe
+- ID: b40fd630-1d51-450c-b31f-11359529ba3b
   type: 5
   category: 0
   lifeCycle: 0
@@ -216,7 +77,7 @@ missions:
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2101_hk_sleepyjan_bp
+    rewardID: 2102_hk_rice_a_bp
     amount: 1
     expireTimeSecs: 86400
   i18nTitle: baggage_mission_leave_comment_reward_title
@@ -231,9 +92,364 @@ missions:
   i18nDescriptionParams: []
   goalValue: 2
   enableTimeRange:
-  - startTime: 2021-01-16 18:00:00 (GMT+0800)
-    endTime: 2021-01-31 23:59:59 (GMT+0800)
+  - startTime: 2021-02-01 18:00:00 (GMT+0800)
+    endTime: 2021-02-23 23:59:59 (GMT+0800)
   refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: 67bbd537-72c9-4b13-bc47-cf23c50757ba
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2102_hk_rice_b_bp
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+  i18nTitleParams:
+  - value: "5"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  - value: 2102_hk_rice_s
+    needMap: false
+    mapOption: 2
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 5
+  enableTimeRange:
+  - startTime: 2021-02-01 18:00:00 (GMT+0800)
+    endTime: 2021-02-23 23:59:59 (GMT+0800)
+  refIDs:
+  - 2102_hk_rice_s
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: 7563cbb1-6ad7-4787-b6ef-94ed0eb5fe5f
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2102_hk_rice_b_bp
+    amount: 5
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+  i18nTitleParams:
+  - value: "1"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  - value: 2102_hk_rice_l
+    needMap: false
+    mapOption: 2
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2021-02-01 18:00:00 (GMT+0800)
+    endTime: 2021-02-23 23:59:59 (GMT+0800)
+  refIDs:
+  - 2102_hk_rice_l
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: 3bf19023-c0b3-4a41-a0eb-0103b3e0ee28
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2102_hk_pray_bag_2
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "10"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 600
+  enableTimeRange:
+  - startTime: 2021-02-01 18:00:00 (GMT+0800)
+    endTime: 2021-02-28 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: d1ca0bb4-33de-4949-968e-7ed572dda88b
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2102_hk_pray_bag_2
+    amount: 3
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "30"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 1800
+  enableTimeRange:
+  - startTime: 2021-02-01 18:00:00 (GMT+0800)
+    endTime: 2021-02-28 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: 6df79a50-de5e-4f5e-b220-01cb619d6014
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2102_hk_pray_bag_2
+    amount: 5
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "60"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 3600
+  enableTimeRange:
+  - startTime: 2021-02-01 18:00:00 (GMT+0800)
+    endTime: 2021-02-28 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: 3fa3ad78-c394-4af9-9644-2c736764f000
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2102_hk_pray_bag_2
+    amount: 10
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "120"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 7200
+  enableTimeRange:
+  - startTime: 2021-02-01 18:00:00 (GMT+0800)
+    endTime: 2021-02-28 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: 2ff52abb-5b7a-4848-98fa-8ec138c45523
+  type: 5
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2102_hk_love_bp
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_leave_comment_reward_title
+  i18nTitleParams:
+  - value: "2"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_leave_comment_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 2
+  enableTimeRange:
+  - startTime: 2021-02-16 18:00:00 (GMT+0800)
+    endTime: 2021-02-28 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: a88a92c0-d656-41a6-8b07-c57899d47cab
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2102_hk_love_bp
+    amount: 3
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+  i18nTitleParams:
+  - value: "1"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  - value: 2102_hk_love_s
+    needMap: false
+    mapOption: 2
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2021-02-16 18:00:00 (GMT+0800)
+    endTime: 2021-02-28 23:59:59 (GMT+0800)
+  refIDs:
+  - 2102_hk_love_s
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: 24fcf731-4217-4531-85a0-eff6efbcc9b8
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2102_hk_love_bp
+    amount: 5
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+  i18nTitleParams:
+  - value: "1"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  - value: 2102_hk_love_m
+    needMap: false
+    mapOption: 2
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2021-02-16 18:00:00 (GMT+0800)
+    endTime: 2021-02-28 23:59:59 (GMT+0800)
+  refIDs:
+  - 2102_hk_love_m
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: ccf95f5b-5324-49ec-9416-d2e9ab6ecdba
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2102_hk_love_bp
+    amount: 10
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+  i18nTitleParams:
+  - value: "1"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  - value: 2102_hk_love_l
+    needMap: false
+    mapOption: 2
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2021-02-16 18:00:00 (GMT+0800)
+    endTime: 2021-02-28 23:59:59 (GMT+0800)
+  refIDs:
+  - 2102_hk_love_l
   platforms:
   - android
   - ios
