@@ -5,36 +5,6 @@
   - name: example-target-hpa
     minReplicas: 20
 
-# 1/30 Taiwan offline event
-- startTime: "2021-01-30 18:00:00 (GMT+0800)"
-  endTime: "2021-01-30 21:30:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 100
-  - name: k8sprod-golives-main
-    minReplicas: 80
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 30
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 1/31 Japan offline event 
-- startTime: "2021-01-31 18:20:00 (GMT+0800)"
-  endTime: "2021-01-31 21:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 100
-  - name: k8sprod-golives-main
-    minReplicas: 80
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 30
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
 # 2/2 Japan event
 - startTime: "2021-02-02 17:45:00 (GMT+0800)"
   endTime: "2021-02-02 22:30:00 (GMT+0800)"
