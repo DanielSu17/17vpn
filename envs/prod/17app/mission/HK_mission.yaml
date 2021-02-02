@@ -13,8 +13,9 @@
 # | Share_Twitter | 11 |
 # | TypePhoneBinding | 12 |
 # | View_Stream_X_Different_Days | 13 |
-# | TypeCreateAvatar | 16 |
-# | TypeCommentInNewestLivestream | 17 |
+# | CreateAvatar | 16 |
+# | CommentInNewestLivestream | 17 |
+# | CheckIn | 24 |
 
 # | category | Value |
 # | --- | --- |
@@ -25,6 +26,7 @@
 # | --- | --- |
 # | Daily | 0 |
 # | OneTime | 1 |
+# | ConsecutiveDays | 2 |
 
 # | targetAudience | Value |
 # | --- | --- |
@@ -38,39 +40,6 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
-- ID: 733facb6-6bcd-4c56-9c6d-6ca446d17f28
-  type: 9
-  category: 0
-  lifeCycle: 1
-  targetAudience: 0
-  levelRange:
-    min: 5
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2022_diu_live1
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "60"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 3600
-  enableTimeRange:
-  - startTime: 2021-02-03 18:00:00 (GMT+0800)
-    endTime: 2021-02-11 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: false
 - ID: cd5fb2f4-cf72-4b30-a187-788554bea8d7
   type: 9
   category: 0
@@ -96,7 +65,7 @@ missions:
   i18nDescriptionParams: []
   goalValue: 3600
   enableTimeRange:
-  - startTime: 2021-02-12 18:00:00 (GMT+0800)
+  - startTime: 2021-02-12 00:00:00 (GMT+0800)
     endTime: 2021-02-15 23:59:59 (GMT+0800)
   refIDs: []
   platforms:
@@ -129,7 +98,7 @@ missions:
   i18nDescriptionParams: []
   goalValue: 3600
   enableTimeRange:
-  - startTime: 2021-02-16 18:00:00 (GMT+0800)
+  - startTime: 2021-02-16 00:00:00 (GMT+0800)
     endTime: 2021-02-28 23:59:59 (GMT+0800)
   refIDs: []
   platforms:
@@ -163,7 +132,40 @@ missions:
   goalValue: 20
   enableTimeRange:
   - startTime: 2021-02-03 18:00:00 (GMT+0800)
-    endTime: 2021-02-28 23:59:59 (GMT+0800)
+    endTime: 2021-02-15 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: false
+- ID: 733facb6-6bcd-4c56-9c6d-6ca446d17f28
+  type: 9
+  category: 0
+  lifeCycle: 1
+  targetAudience: 0
+  levelRange:
+    min: 5
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2022_diu_live1
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "60"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 3600
+  enableTimeRange:
+  - startTime: 2021-02-03 18:00:00 (GMT+0800)
+    endTime: 2021-02-11 23:59:59 (GMT+0800)
   refIDs: []
   platforms:
   - android
