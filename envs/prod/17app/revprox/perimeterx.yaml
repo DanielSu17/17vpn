@@ -14,6 +14,8 @@ protected_routes_with_methods:
     methods: ["POST"]
   - route: "/liveStreams/suggestedLiveStreams$"
   - route: "/liveStreams/hotOptSuggestedstreams$"
+  - route: "/redenvelopes/pick$"
+    methods: ["POST"]
   - route: "/redenvelopes/.*/pick$"
   - route: "/sections.*"
   - route: "/version"
@@ -31,6 +33,7 @@ enforced_routes:
   - "/api/v1/legacy/followUserAction"
   - "/api/v1/legacy/unfollowUserAction"
   - "/api/v1/lives/.*/laborReward$"
+  - "/api/v1/redenvelopes/pick$"
   - "/api/v1/redenvelopes/.*/pick$"
 monitored_routes:
   - "/api/v1/apigateway.*"
