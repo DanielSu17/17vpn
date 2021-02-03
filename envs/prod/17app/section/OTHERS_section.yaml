@@ -1,0 +1,16 @@
+# sections
+#   - id: TopBanner|OffcRecomm|Suggestion|Label|RedEnvelope|Show|Vod|TodayHotTopic|CrazyZoo
+#     enable: false|true 是否顯示該section在第三版熱門頁
+#     dedup:  false|true 檢查上面的section是否已經有相同的主播了，如果重複就不再顯示
+#     more:   false|true 右上角是否顯示more按鈕
+#     minGrids: <int> 最少要有多少個主播才顯示section
+#     style: <int> 1: BillboardStyle, 2: StoryTrayStyle, 3: DefaultShelfStyle, 4: CoverFlowStyle, 5: VodShelfStyle, 6: DefaultLabelShelfStyle (猜你可能會喜歡)
+#     name:
+#       key: <string>
+#     labelID: <string> (optional if id is `Label`)
+
+# 其他區域目前不開放V3分類頁 (control by feature and tab), 但suggestion是追蹤頁推薦列表的共用設定，需要保留
+# spec: https://docs.google.com/document/d/13EiakZF8mIbGFpr7ljK1YwDovMMJDFy1Zl2eiOojNCE/edit#heading=h.h7dnqmcr6ilx
+sections:
+  - id: Suggestion # 猜你可能喜歡
+    minGrids: 5
