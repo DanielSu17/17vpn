@@ -5,12 +5,12 @@
   - name: example-target-hpa
     minReplicas: 20
 
-# 2/2 Japan event
-- startTime: "2021-02-02 17:45:00 (GMT+0800)"
-  endTime: "2021-02-02 22:30:00 (GMT+0800)"
+# 2/5 Japan event
+- startTime: "2021-02-05 16:45:00 (GMT+0800)"
+  endTime: "2021-02-05 19:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
-    minReplicas: 100
+    minReplicas: 80
   - name: k8sprod-golives-main
     minReplicas: 80
   - name: k8sprod-gotrade-main
