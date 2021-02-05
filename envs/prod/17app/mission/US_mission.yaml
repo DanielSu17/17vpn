@@ -13,8 +13,9 @@
 # | Share_Twitter | 11 |
 # | TypePhoneBinding | 12 |
 # | View_Stream_X_Different_Days | 13 |
-# | TypeCreateAvatar | 16 |
-# | TypeCommentInNewestLivestream | 17 |
+# | CreateAvatar | 16 |
+# | CommentInNewestLivestream | 17 |
+# | CheckIn | 24 |
 
 # | category | Value |
 # | --- | --- |
@@ -25,6 +26,7 @@
 # | --- | --- |
 # | Daily | 0 |
 # | OneTime | 1 |
+# | ConsecutiveDays | 2 |
 
 # | targetAudience | Value |
 # | --- | --- |
@@ -98,6 +100,39 @@ missions:
   enableTimeRange:
   - startTime: 2020-06-26 12:00:00 (GMT+0900)
     endTime: 2021-06-26 23:59:59 (GMT+0900)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: bca50385-89ff-4432-8670-d2e028c0559f
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2102_us_snake_bp
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: "baggage_mission_watch_streams_time_in_total_reward_title\r"
+  i18nTitleParams:
+  - value: "30"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_content_desc
+  i18nDescriptionParams: []
+  goalValue: 1800
+  enableTimeRange:
+  - startTime: 2021-02-08 09:00:00 (GMT+0800)
+    endTime: 2021-02-14 11:59:59 (GMT+0800)
   refIDs: []
   platforms:
   - android
@@ -246,105 +281,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-- ID: cb7600f9-e85e-4bd5-8817-7de6143b7bb2
-  type: 5
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2101_us_newbiedec_bp
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_leave_comment_reward_title
-  i18nTitleParams:
-  - value: "30"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_leave_comment_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 30
-  enableTimeRange:
-  - startTime: 2021-01-01 09:00:00 (GMT+0800)
-    endTime: 2021-01-31 11:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: c30085b5-65cb-4116-a6f3-2782ee82ca6a
-  type: 5
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2101_us_newbiedec_bp
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_leave_comment_reward_title
-  i18nTitleParams:
-  - value: "30"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_leave_comment_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 10
-  enableTimeRange:
-  - startTime: 2021-01-01 09:00:00 (GMT+0800)
-    endTime: 2021-01-31 11:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: f1fc21f7-a4b8-41f4-a1c9-10c22f0c785e
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2101_us_newbiedec_bp
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "30"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 1800
-  enableTimeRange:
-  - startTime: 2021-01-01 09:00:00 (GMT+0800)
-    endTime: 2021-01-31 11:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
 i18nMissionCompleteToast: baggage_mission_toast_claimed
 refreshHour: 5
 supportedVersion:
@@ -369,7 +305,6 @@ tagInfos:
       params: []
       fontAttribute: null
     color: '#F6696C'
-    
 remind:
   remindSecs: 60
   toastMsg:
