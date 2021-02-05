@@ -16,7 +16,23 @@
       - should test the UI changes for Android/IOS/Web in DEV/STAG environment
 03. Engineer generate a report in JSON format in DEV/STAG environment
     - endpoint to generate report:   ```GET /api/v1/config/redenvelope```
-04. PM review the report and approve the change
+04. PM review the related fields in the report and approve the change
+    - [shut down & restart all red envelopes](#show-&-hide-all-red-envelopes)
+      - region_mode
+      - region
+      - startTime
+      - enfTime
+    - [change red envelope styles for Chrismas or New Year, etc](#show-&-hide-a-single-redenvelope)
+      - redenvelopes (setting for single redenvelope)
+        - id
+        - region_mode
+        - region
+        - startTime
+        - endTime
+    - [change fraud prevention setting](#fraud-prevention-2)
+      - pickProbabilityThreshold
+      - dailySumOfPickedRefreshHour
+      - userLockPickedSecs
 05. Engineer deploy the config to PROD
 06. TODO: Configuration Notification via google calendar (before 2021/3/31)
 
