@@ -23,6 +23,11 @@ DEFAULT:
   #rtmpPushSrs: "rtmp://35.221.149.110:1935/app"
   rtmpPushSrs: "rtmp://streaming.17app.co:1935/app"
   msgPushWansu: "17mts1.8686c.com:4000"
+  live17:
+    serviceName: "dev"
+    apiPath: "http://17live-streaming-api.17app.co"
+    pushURL: "rtmp://17live-push-rtmp.17app.co"
+    pullURL: "http://17live-pull-rtmp.17app.co"
 CN:
   ## ending with "/" for client side
   api: "http://dev.api.17app.co:8001/"
@@ -48,3 +53,8 @@ CN:
   #rtmpPushSrs: "rtmp://35.221.149.110:1935/app"
   rtmpPushSrs: "rtmp://streaming.17app.co:1935/app"
   msgPushWansu: "35.247.55.231:4000"
+  live17:
+    serviceName: "dev"
+    apiPath: "http://17live-streaming-api.17app.co"
+    pushURL: "rtmp://17live-push-rtmp.17app.co"
+    pullURL: "http://17live-pull-rtmp.17app.co"
