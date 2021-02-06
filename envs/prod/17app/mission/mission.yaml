@@ -13,8 +13,9 @@
 # | Share_Twitter | 11 |
 # | TypePhoneBinding | 12 |
 # | View_Stream_X_Different_Days | 13 |
-# | TypeCreateAvatar | 16 |
-# | TypeCommentInNewestLivestream | 17 |
+# | CreateAvatar | 16 |
+# | CommentInNewestLivestream | 17 |
+# | CheckIn | 24 |
 
 # | category | Value |
 # | --- | --- |
@@ -25,6 +26,7 @@
 # | --- | --- |
 # | Daily | 0 |
 # | OneTime | 1 |
+# | ConsecutiveDays | 2 |
 
 # | targetAudience | Value |
 # | --- | --- |
@@ -71,7 +73,6 @@ missions:
   - ios
   requirePhoneBinding: true
   withReminder: false
-
 - ID: cd7fb1ff-9fb0-4088-8656-74b15830b453
   type: 9
   category: 0
