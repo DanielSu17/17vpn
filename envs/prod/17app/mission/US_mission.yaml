@@ -106,6 +106,39 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
+- ID: e0b5fc89-88d0-4f1e-ab66-f5654193f606
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2102_us_minions_bp
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "30"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_content_desc
+  i18nDescriptionParams: []
+  goalValue: 1800
+  enableTimeRange:
+  - startTime: 2021-02-15 18:00:00 (GMT-0800)
+    endTime: 2021-02-28 21:00:00 (GMT-0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
 - ID: bca50385-89ff-4432-8670-d2e028c0559f
   type: 9
   category: 0
@@ -238,44 +271,6 @@ missions:
     endTime: 2021-02-28 11:59:59 (GMT+0800)
   refIDs:
   - 2102_us_newbies_1
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: c41d8db6-7066-43e0-91e8-a0857cda4f11
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2102_us_tetris_bp
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
-  i18nTitleParams:
-  - value: "80"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: Square (XS)
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 80
-  enableTimeRange:
-  - startTime: 2021-02-01 09:00:00 (GMT+0800)
-    endTime: 2021-02-07 11:59:59 (GMT+0800)
-  refIDs:
-  - 2102_us_tetris_xs
   platforms:
   - android
   - ios
