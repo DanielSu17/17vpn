@@ -104,6 +104,19 @@ styleSets:
   countBackgroundColor: "#98002E"
   buttonTextColor: "#FFFFFF"
   additionalTextAndButtonColor: "#225987"
+- id: redenvelope_rising_star
+  marqueeAnimationID: marquee_redenvelope
+  redenvelopeDialogURL: https://cdn.17app.co/faf1cf8d-d38e-4727-8aaa-721ca2f15240.png
+  buttonDecorationURL: https://cdn.17app.co/5ced91c6-1667-49b5-9c42-551699d6961e.png
+  resultSuccessDialogURL: https://cdn.17app.co/299fae50-ce4d-4a9c-9449-2d1c8d6b25a2.png
+  resultFailDialogURL: https://cdn.17app.co/b5d81163-3d48-4e35-8e06-e38b2d4f0413.png
+  resultAlreadyPickDialogURL: https://cdn.17app.co/299fae50-ce4d-4a9c-9449-2d1c8d6b25a2.png
+  winnerDialogURL: https://cdn.17app.co/faf1cf8d-d38e-4727-8aaa-721ca2f15240.png
+  countdownIconURL: https://cdn.17app.co/923b96d6-92e0-4e60-a7a9-fe8230c10234.png
+  entryIconURL: https://cdn.17app.co/923b96d6-92e0-4e60-a7a9-fe8230c10234.png
+  countBackgroundColor: "#fe1831"
+  buttonTextColor: "#fe444c"
+  additionalTextAndButtonColor: "#fdd500"
 pointSets:
 - id: pointset_888888
   point: 888888
@@ -346,6 +359,28 @@ pointSets:
       point: 1
 
 redenvelopes:
+- id: redenvelope_no_rising_star
+  startTime: 1614528000  # March 1, 2021 00:00:00 GMT+08:00
+  endTime:
+  img_URL: https://cdn.17app.co/923b96d6-92e0-4e60-a7a9-fe8230c10234.png
+  zip_url: https://cdn.17app.co/3d21bc54-99b5-40a9-886c-517963af5823.zip
+  zip_md5: 4c52ae24d533c5ad801001b4afbd3203
+  webp_url: https://cdn.17app.co/a490bb20-30ad-46b5-839d-c6e8716feecc.webp
+  webp_md5: acd43abd3e29262245f03ab0abd67716
+  name_token: streamer_growth_risingstar_rewards_redenvelope
+  pointSetID: pointset_888
+  style: redenvelope_rising_star
+  announceable: true
+  announce_threshold: -1
+  countdown_time: 30
+  event_time: 10
+  theme: 1 # normal theme
+  type: 3 # system red envelope
+  marqueeRate: 50
+  is_offline: false
+  region_mode: 2
+  regions: [TW, ID, TH, HK, MO, SG, MY]
+
 - id: redenvelope_no_superstar
   startTime: 1608912000  # December 26, 2020 00:00:00 GMT+08:00
   endTime:
