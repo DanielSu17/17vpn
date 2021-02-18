@@ -19,7 +19,7 @@ groups:
     gotrade:            "go"
     goplatform:         "go"
     gousersearch:       "go"
-    live17-streaming-service: "go"
+    live17-streaming-api: "go"
     eventory:           "go"
     eventory-worker:    "go"
     data-stream-worker: "go"
@@ -98,7 +98,7 @@ batchDeploy:
       - "data-stream-worker"
       - "ml-host"
       - "snapshot"
-      - "live17-streaming-service"
+      - "live17-streaming-api"
     k8ssta:
       - "goapi"
       - "aggr-gateway"
@@ -120,7 +120,7 @@ batchDeploy:
       - "data-stream-worker"
       - "ml-host"
       - "snapshot"
-      - "live17-streaming-service"
+      - "live17-streaming-api"
     k8suat:
       - "goapi"
       - "aggr-gateway"
@@ -142,7 +142,7 @@ batchDeploy:
       - "data-stream-worker"
       - "ml-host"
       - "snapshot"
-      - "live17-streaming-service"
+      - "live17-streaming-api"
     awsprod:
       - "goapi"
       - "revprox"
