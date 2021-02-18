@@ -1,9 +1,9 @@
 responseCacheIntervalSec: 300
-defaultTimeoutSec: 5
+defaultTimeoutSec: 2
 cacheDisabledUserTokens:
 
 apiConfigs:
   - apiPrefix: /api/v1/cells
-    paramExclusions: [cursor, count, countv2]
+    paramExclusions: [cursor, count, countv2, beforeTime, userID]
   - apiPrefix: /api/v1/sections
     paramExclusions: [cursor]
