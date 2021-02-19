@@ -5,54 +5,9 @@
   - name: example-target-hpa
     minReplicas: 20
 
-# 2/5 Japan event
-- startTime: "2021-02-05 16:45:00 (GMT+0800)"
-  endTime: "2021-02-05 19:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 80
-  - name: k8sprod-golives-main
-    minReplicas: 80
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 30
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 2/12 AKB
-- startTime: "2021-02-12 16:15:00 (GMT+0800)"
-  endTime: "2021-02-12 19:30:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 80
-  - name: k8sprod-golives-main
-    minReplicas: 80
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 30
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 2/13 AKB
-- startTime: "2021-02-13 10:45:00 (GMT+0800)"
-  endTime: "2021-02-13 18:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 80
-  - name: k8sprod-golives-main
-    minReplicas: 80
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 30
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 2/14 AKB & offline event
-- startTime: "2021-02-14 10:45:00 (GMT+0800)"
-  endTime: "2021-02-14 20:00:00 (GMT+0800)"
+# 2/19 Koda Kumi
+- startTime: "2021-02-19 17:45:00 (GMT+0800)"
+  endTime: "2021-02-19 20:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 80
@@ -64,3 +19,4 @@
     minReplicas: 20
   - name: k8sprod-gousersearch-main
     minReplicas: 10
+
