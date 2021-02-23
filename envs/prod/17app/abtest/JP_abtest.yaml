@@ -593,7 +593,7 @@
     "f": "a"
 
 - testName: removeDefaultComment
-  enableABtest: true
+  enableABtest: false
 #  startTime: "2020-12-03T12:00:00+08:00"
 #  endTime: "2020-12-18T12:00:00+08:00"
   lastCharGroup:
@@ -734,3 +734,45 @@
     "d": "a"
     "e": "a"
     "f": "a"
+
+- testName: recommendationSystem
+  enableABtest: true
+  startTime: "2021-02-09T12:00:00+08:00"
+  endTime: "2021-03-16T17:30:00+08:00"
+  lastCharGroup:
+    "0": "b"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
+  extraNewbieABtest:
+    startTime: "2021-02-09T12:00:00+08:00"
+    endTime: "2021-03-16T17:30:00+08:00"
+    lastCharGroup:
+        "0": "b"
+        "1": "b"
+        "2": "b"
+        "3": "b"
+        "4": "b"
+        "5": "b"
+        "6": "b"
+        "7": "b"
+        "8": "a"
+        "9": "a"
+        "a": "a"
+        "b": "a"
+        "c": "a"
+        "d": "a"
+        "e": "a"
+        "f": "a"

@@ -20,16 +20,20 @@ recommend_ios_support_version: 3.0.0
 recommend_android_support_version: 2.3.10
 handleUnfinishedBufferMins: 10
 handleUnfinishedMaxDays: 5
-sumOfPickedTTLHours: 2 # 多少時間完全沒搶到點數才會reset, 人會休息但電腦不會 所以設定3小時
-pickedSleepPenaltyMsecs: 200 # 處罰基本單位
-maxPenaltyMsecs: 2500 # 最多被處罰的時間
-sumOfPickedThreshold: 300 # 超過多少點才會被處罰
-# pickProbabilityThresholds: # 每日累積搶到點數，對應的搶紅包機率限制(百分比)
-#   100: 99
-#   500: 50
-#   1000: 1
-# dailySumOfPickedRefreshHour: 17 # 每日累積點數的重置時間，台灣時間5點。
-# userLockPickedSecs: 120 # 使用者搶到紅包後，多少秒內搶紅包會失敗
+sumOfPickedTTLHours: 6 # 多少時間完全沒搶到點數才會reset, 人會休息但電腦不會 所以設定6小時
+pickedSleepPenaltyMsecs: 250 # 處罰基本單位
+maxPenaltyMsecs: 3000 # 最多被處罰的時間
+sumOfPickedThreshold: 250 # 超過多少點才會被處罰
+pickProbabilityThresholds: # 每日累積搶到點數，對應的搶紅包機率限制(百分比)
+  15350: 40
+  18000: 20
+  20000: 10
+  20350: 7
+  30350: 5
+  40350: 2
+  50000: 0
+dailySumOfPickedRefreshHour: 5 # 每日累積點數的重置時間，台灣時間5點。
+userLockPickedSecs: 45 # 使用者搶到紅包後，多少秒內搶紅包會失敗
 whiteListUserIDs:
  - "d1cd5a6a-3346-4263-85ef-c9f3a600de39"  # ryanmachi
  - "5cbbcca2-b412-4872-8555-4c0f1aeed6ff"  # finn
@@ -63,12 +67,12 @@ whiteListUserIDs:
 styleSets:
 - id: redenvelope_normal
   marqueeAnimationID: marquee_redenvelope
-  redenvelopeDialogURL: https://cdn.17app.co/af250e87-bf7f-4fb9-8db6-786cc802989d.png
+  redenvelopeDialogURL: https://cdn.17app.co/2f0024b7-e6e1-4da2-b13b-5d27aad242df.png
   buttonDecorationURL: https://cdn.17app.co/5ced91c6-1667-49b5-9c42-551699d6961e.png
-  resultSuccessDialogURL: https://cdn.17app.co/87cdd9d0-c8af-41e9-ac72-e645f4c12634.png
-  resultFailDialogURL: https://cdn.17app.co/f7ff5ff3-22c3-4cee-a5de-73bcdcfa0281.png
-  resultAlreadyPickDialogURL: https://cdn.17app.co/87cdd9d0-c8af-41e9-ac72-e645f4c12634.png
-  winnerDialogURL: https://cdn.17app.co/af250e87-bf7f-4fb9-8db6-786cc802989d.png
+  resultSuccessDialogURL: https://cdn.17app.co/152db19b-4bad-4e9c-8108-a84321e22b8b.png
+  resultFailDialogURL: https://cdn.17app.co/6b4fda8f-c019-4745-a312-c4fa18277622.png
+  resultAlreadyPickDialogURL: https://cdn.17app.co/152db19b-4bad-4e9c-8108-a84321e22b8b.png
+  winnerDialogURL: https://cdn.17app.co/2f0024b7-e6e1-4da2-b13b-5d27aad242df.png
   countdownIconURL: https://cdn.17app.co/3b92ce62-6e5c-405b-8766-9066a7ee0254.png
   entryIconURL: https://cdn.17app.co/14df2a0e-483a-4370-aa39-9dc54140a60b.png
   countBackgroundColor: "#fe1831"
@@ -76,17 +80,43 @@ styleSets:
   additionalTextAndButtonColor: "#fdd500"
 - id: treasure_normal
   marqueeAnimationID: marquee_treasurebox
-  redenvelopeDialogURL: https://cdn.17app.co/e32ce3df-7a92-412e-b181-7766c15ec580.png
+  redenvelopeDialogURL: https://cdn.17app.co/44192906-58b4-4fb0-979b-190ba5252098.png
   buttonDecorationURL: https://cdn.17app.co/5ced91c6-1667-49b5-9c42-551699d6961e.png
-  resultSuccessDialogURL: https://cdn.17app.co/baac6176-8eaf-4652-a446-c3ad8ed25507.png
-  resultFailDialogURL: https://cdn.17app.co/2e495a1e-9f14-4278-8e8c-ac0fc32c15c5.png
-  resultAlreadyPickDialogURL: https://cdn.17app.co/baac6176-8eaf-4652-a446-c3ad8ed25507.png
-  winnerDialogURL: https://cdn.17app.co/e32ce3df-7a92-412e-b181-7766c15ec580.png
+  resultSuccessDialogURL: https://cdn.17app.co/a9d017cc-efeb-4c8a-9a34-410dfc00b431.png
+  resultFailDialogURL: https://cdn.17app.co/9dc1f760-ead1-4d4a-8c4c-f84b86327151.png
+  resultAlreadyPickDialogURL: https://cdn.17app.co/a9d017cc-efeb-4c8a-9a34-410dfc00b431.png
+  winnerDialogURL: https://cdn.17app.co/44192906-58b4-4fb0-979b-190ba5252098.png
   countdownIconURL: https://cdn.17app.co/ae1bcb73-65a6-4a3f-9305-0d7c1ca5f2fc.png
   entryIconURL: https://cdn.17app.co/4709e8ae-4251-40a2-be44-0d38792011fa.png
   countBackgroundColor: "#bd5200"
   buttonTextColor: "#ffffff"
   additionalTextAndButtonColor: "#b53c25"
+- id: 2020_xmas_redenvelope
+  marqueeAnimationID: marquee_2020_xmas_redenvelope
+  redenvelopeDialogURL: https://cdn.17app.co/d0442ff0-f7bc-475b-8e9a-13b7f5235e1b.png
+  buttonDecorationURL: https://cdn.17app.co/5ced91c6-1667-49b5-9c42-551699d6961e.png
+  resultSuccessDialogURL: https://cdn.17app.co/54387919-53ca-454a-9e60-dc82bebe9c93.png
+  resultFailDialogURL: https://cdn.17app.co/2db46ff4-6b2b-4ef7-94c9-ab6496ff8d80.png
+  resultAlreadyPickDialogURL: https://cdn.17app.co/54387919-53ca-454a-9e60-dc82bebe9c93.png
+  winnerDialogURL: https://cdn.17app.co/d0442ff0-f7bc-475b-8e9a-13b7f5235e1b.png
+  countdownIconURL: https://cdn.17app.co/e5837499-f118-42bf-996f-df1e7af3f642.png
+  entryIconURL: https://cdn.17app.co/e9da92f1-7689-420e-b8b1-3e2074a1b752.png
+  countBackgroundColor: "#98002E"
+  buttonTextColor: "#FFFFFF"
+  additionalTextAndButtonColor: "#225987"
+- id: redenvelope_rising_star
+  marqueeAnimationID: marquee_redenvelope
+  redenvelopeDialogURL: https://cdn.17app.co/f1fab521-c6cb-4b5e-9769-92698c01a1b2.png
+  buttonDecorationURL: https://cdn.17app.co/5ced91c6-1667-49b5-9c42-551699d6961e.png
+  resultSuccessDialogURL: https://cdn.17app.co/da19a347-df2f-4bee-b2b5-42d9605136e1.png
+  resultFailDialogURL: https://cdn.17app.co/03f69cc1-5ca3-4be2-b131-04f50b339949.png
+  resultAlreadyPickDialogURL: https://cdn.17app.co/da19a347-df2f-4bee-b2b5-42d9605136e1.png
+  winnerDialogURL: https://cdn.17app.co/da19a347-df2f-4bee-b2b5-42d9605136e1.png
+  countdownIconURL: https://cdn.17app.co/634e89a6-4bc5-4bd4-9582-faf901e90430.png
+  entryIconURL: https://cdn.17app.co/f32b6318-1288-4ae2-80e7-ea2ecb979450.png
+  countBackgroundColor: "#758efc"
+  buttonTextColor: "#baffc8"
+  additionalTextAndButtonColor: "#1a4ba1"
 pointSets:
 - id: pointset_888888
   point: 888888
@@ -147,7 +177,15 @@ pointSets:
   fee: 44
   package_list:
     - amount: 1
-      point: 577
+      point: 102
+    - amount: 1
+      point: 74
+    - amount: 1
+      point: 67
+    - amount: 6
+      point: 50
+    - amount: 1
+      point: 34
 - id: pointset_52099
   point: 52099
   revenuePoint: 15630
@@ -239,7 +277,15 @@ pointSets:
   fee: 44
   package_list:
     - amount: 1
-      point: 476
+      point: 102
+    - amount: 1
+      point: 74
+    - amount: 1
+      point: 67
+    - amount: 4
+      point: 50
+    - amount: 1
+      point: 33
 - id: pointset_666
   point: 666
   revenuePoint: 200
@@ -278,7 +324,7 @@ pointSets:
       point: 25
 - id: pointset_superstar
   point: 666
-  fee: 350
+  fee: 452
   package_list:
     - amount: 1
       point: 89
@@ -286,10 +332,10 @@ pointSets:
       point: 44
     - amount: 1
       point: 33
-    - amount: 9
-      point: 5
-    - amount: 35
-      point: 3
+    - amount: 7
+      point: 4
+    - amount: 10
+      point: 2
 - id: pointset_288
   point: 288
   package_list:
@@ -313,27 +359,52 @@ pointSets:
       point: 1
 
 redenvelopes:
+- id: redenvelope_no_rising_star
+  startTime: 1612108800  # Feb 1, 2021 00:00:00 GMT+08:00
+  endTime:
+  img_URL: https://cdn.17app.co/923b96d6-92e0-4e60-a7a9-fe8230c10234.png
+  zip_url: https://cdn.17app.co/3d21bc54-99b5-40a9-886c-517963af5823.zip
+  zip_md5: 4c52ae24d533c5ad801001b4afbd3203
+  webp_url: https://cdn.17app.co/a490bb20-30ad-46b5-839d-c6e8716feecc.webp
+  webp_md5: acd43abd3e29262245f03ab0abd67716
+  name_token: streamer_growth_risingstar_rewards_redenvelope
+  pointSetID: pointset_888
+  style: redenvelope_rising_star
+  announceable: true
+  announce_threshold: -1
+  countdown_time: 30
+  event_time: 10
+  theme: 1 # normal theme
+  type: 3 # system red envelope
+  marqueeRate: 50
+  is_offline: false
+  region_mode: 1 # all region
+  regions: []
+
 - id: redenvelope_no_superstar
+  startTime: 1608912000  # December 26, 2020 00:00:00 GMT+08:00
+  endTime:
   img_URL: http://cdn.17app.co/a30cf4a7-9867-4a4c-9acc-a808ed14f3c5.png
   name_token: redenvelope_system_bonus
-  style: redenvelope_normal
   pointSetID: pointset_superstar
-  announceable: true
+  style: redenvelope_normal
+  announceable: false
   announce_threshold: 2500
-  countdown_time: 30
+  countdown_time: 150
   event_time: 10
   theme: 3
   type: 3
   is_offline: false
   region_mode: 2
-  regions: ["TW"]
-
+  regions: ["TW", "ID", "TH"]
 - id: redenvelope_no_superstar_HK
+  startTime:
+  endTime:
   img_URL: http://cdn.17app.co/a30cf4a7-9867-4a4c-9acc-a808ed14f3c5.png
   name_token: redenvelope_system_bonus
-  style: redenvelope_normal
   pointSetID: pointset_288
-  announceable: true
+  style: redenvelope_normal
+  announceable: false
   announce_threshold: 2500
   countdown_time: 150
   event_time: 10
@@ -343,12 +414,74 @@ redenvelopes:
   region_mode: 2
   regions: ["HK"]
 
+- id: redenvelope_no_6
+  img_URL: https://cdn.17app.co/3c9ab094-83c0-4d2a-ae9f-d802b1069866.png
+  zip_url: https://cdn.17app.co/7233f47a-a0f8-48bc-a5d0-7c3ea4fb79da.zip
+  zip_md5: 288f9154e9ef334c4fcfa753c1ed6bd4
+  webp_url: https://cdn.17app.co/8294b516-395a-4b41-a3fa-d707e3a97a51-q90-s1.webp
+  webp_md5: 52fbdf80bd66aeeceaba45e89e5b3f65
+  name_token: redenvelope_no_6
+  style: redenvelope_normal
+  pointSetID: pointset_777
+  announceable: false
+  announce_threshold: 2500
+  countdown_time: 15
+  event_time: 10
+  theme: 1
+  type: 1
+  marqueeRate: 0
+  is_offline: false
+  region_mode: 2
+  regions: []
+
+- id: redenvelope_no_5
+  img_URL: https://assets-17app.akamaized.net/d4a71b3a-1a3c-4c69-ae69-6a622095b4ea.png
+  zip_url: https://assets-17app.akamaized.net/99ac9db2-e9e8-4cfa-8ee2-69cc3dc9ca94.zip
+  zip_md5: c73111ad548717e12465696b322e74ad
+  webp_url: https://assets-17app.akamaized.net/b1fcf1c3-7118-4fdb-90c2-f08a08f5bb7e-q90-s1.webp
+  webp_md5: 2903b45a0427d75e6f6ea2555689e725
+  name_token: redenvelope_name_no_5
+  pointSetID: pointset_666
+  style: redenvelope_normal
+  announceable: false
+  announce_threshold: 2500
+  countdown_time: 15
+  event_time: 10
+  theme: 1
+  type: 1
+  marqueeRate: 0
+  is_offline: false
+  region_mode: 2
+  regions: []
+
+- id: redenvelope_no_5_JP
+  img_URL: https://assets-17app.akamaized.net/d4a71b3a-1a3c-4c69-ae69-6a622095b4ea.png
+  zip_url: https://assets-17app.akamaized.net/99ac9db2-e9e8-4cfa-8ee2-69cc3dc9ca94.zip
+  zip_md5: c73111ad548717e12465696b322e74ad
+  webp_url: https://assets-17app.akamaized.net/b1fcf1c3-7118-4fdb-90c2-f08a08f5bb7e-q90-s1.webp
+  webp_md5: 2903b45a0427d75e6f6ea2555689e725
+  name_token: redenvelope_name_no_5
+  style: redenvelope_normal
+  pointSetID: pointset_666
+  announceable: false
+  announce_threshold: 2500
+  countdown_time: 15
+  event_time: 10
+  theme: 1
+  type: 1
+  marqueeRate: 0
+  is_offline: false
+  region_mode: 2
+  regions: []
+
 - id: redenvelope_no_recommend
+  startTime: 1608912000  # December 26, 2020 00:00:00 GMT+08:00
+  endTime:
   img_URL: http://cdn.17app.co/8d27f90a-3419-4bc4-af6a-3b6a462e5aad.png
   name_token: red_envelope_promote_name
-  style: redenvelope_normal
   pointSetID: pointset_5000
-  announceable: true
+  style: redenvelope_normal
+  announceable: false
   announce_threshold: 2500
   countdown_time: 30
   event_time: 10
@@ -356,14 +489,18 @@ redenvelopes:
   type: 4
   is_offline: false
   region_mode: 2
-  regions: ["TW", "SG"]
+  regions: ["TW", "ID", "TH", "SG"]
 
 - id: redenvelope_no_custom
+  startTime: 1608912000  # December 26, 2020 00:00:00 GMT+08:00
+  endTime:
   img_URL: http://cdn.17app.co/203fb9b5-9d97-4b15-bcdf-2dcb2cc76b1a.png
   zip_url: https://assets-17app.akamaized.net/595b6425-a4cc-491c-bc81-2acce956fee8.zip
   zip_md5: 7a24a00a4473ba7bf566e2acfcc793fd
   webp_url: http://cdn.17app.co/redenvelope_no_custom.webp
   webp_md5: 8e40537c775b436b6e0a5e54b5888f95
+  webm_url: https://cdn.17app.co/0a62b135-fee7-4f5a-a47f-1f318ca6f451.webm
+  webm_md5: 23a0e1e513398b1129f85ef55b515a31
   name_token: redenvelope_customize_name
   style: redenvelope_normal
   point: 0 # unchangeable
@@ -372,14 +509,14 @@ redenvelopes:
   max_point: 9999999
   announceable: true
   announce_threshold: 2500
-  countdown_time: 30
+  countdown_time: 60
   event_time: 10
   fee: 50 # workaround, it is percentage * 10
   theme: 1
   type: 2
   is_offline: false
   region_mode: 2
-  regions: ["TW", "SG", "MY"]
+  regions: ["TW", "ID", "TH", "SG", "MY", "HK"]
   package_list:
     - amount: 1
       point: 100 # workaround, it is percentage * 10
@@ -397,37 +534,43 @@ redenvelopes:
       point: 5
 
 - id: redenvelope_no_1
-  img_URL: http://cdn.17app.co/fb3bd824-1f79-4e9d-bc7d-9fcc7c3dc4f1.png
-  zip_url: https://assets-17app.akamaized.net/348f589c-e13b-43e0-bf89-90ef5b17e7de.zip
-  zip_md5: 88fa113a065d19e19166a9a355ac617b
-  webp_url: http://cdn.17app.co/redenvelope_no_1.webp
-  webp_md5: 9c2480cd580ceddf8f098d6884451468
-  name_token: redenvelope_name_no_1
-  style: redenvelope_normal
-  pointSetID: pointset_888888
-  announceable: true
-  announce_threshold: 2500
-  countdown_time: 30
-  event_time: 60
-  theme: 1
-  type: 1
-  is_offline: false
-  region_mode: 2
-  regions: [TW, HK, MO, SG, MY]
-
-- id: redenvelope_no_1_JP
-  startTime: 1580482800 # January 31, 2020 23:00:00 GMT+08:00
+  startTime: 1608912000  # December 26, 2020 00:00:00 GMT+08:00
   endTime:
   img_URL: http://cdn.17app.co/fb3bd824-1f79-4e9d-bc7d-9fcc7c3dc4f1.png
   zip_url: https://assets-17app.akamaized.net/348f589c-e13b-43e0-bf89-90ef5b17e7de.zip
   zip_md5: 88fa113a065d19e19166a9a355ac617b
   webp_url: http://cdn.17app.co/redenvelope_no_1.webp
   webp_md5: 9c2480cd580ceddf8f098d6884451468
+  webm_url: https://cdn.17app.co/e167c0a3-cc8c-479f-aa87-22423d1c33df.webm
+  webm_md5: 9e689f096c9cb9a6064ded983b0ef33c
   name_token: redenvelope_name_no_1
-  style: redenvelope_normal
   pointSetID: pointset_888888
+  style: redenvelope_normal
   announceable: true
-  announce_threshold: 2500
+  announce_threshold: -1
+  countdown_time: 60
+  event_time: 10
+  theme: 1
+  type: 1
+  is_offline: false
+  region_mode: 2
+  regions: [TW, ID, TH, HK, MO, SG, MY]
+
+- id: redenvelope_no_1_JP
+  startTime: 1608908400 # December 26, 2020 00:00:00 GMT+09:00
+  endTime: 1609469999 # January 01, 2020 11:59:59 GMT+09:00
+  img_URL: http://cdn.17app.co/fb3bd824-1f79-4e9d-bc7d-9fcc7c3dc4f1.png
+  zip_url: https://assets-17app.akamaized.net/348f589c-e13b-43e0-bf89-90ef5b17e7de.zip
+  zip_md5: 88fa113a065d19e19166a9a355ac617b
+  webp_url: http://cdn.17app.co/redenvelope_no_1.webp
+  webp_md5: 9c2480cd580ceddf8f098d6884451468
+  webm_url: https://cdn.17app.co/e167c0a3-cc8c-479f-aa87-22423d1c33df.webm
+  webm_md5: 9e689f096c9cb9a6064ded983b0ef33c
+  name_token: redenvelope_name_no_1
+  pointSetID: pointset_888888
+  style: redenvelope_normal
+  announceable: true
+  announce_threshold: -1
   countdown_time: 60
   event_time: 10
   theme: 1
@@ -437,39 +580,43 @@ redenvelopes:
   regions: [JP]
 
 - id: redenvelope_no_2
-  startTime: 1581177600 # February 9, 2020 00:00:00 GMT+08:00
+  startTime: 1608912000  # December 26, 2020 00:00:00 GMT+08:00
   endTime:
   img_URL: http://cdn.17app.co/970fe736-1bb5-4bd2-9041-a0f14e057278.png
   zip_url: https://assets-17app.akamaized.net/31101f1d-d3f8-4d04-8b0f-d8a2dc32e298.zip
   zip_md5: 94e997e2a8560f501d177a496b533263
   webp_url: http://cdn.17app.co/redenvelope_no_2.webp
   webp_md5: 4a6a3ef899c2ca4f68a8f48110f38c1b
+  webm_url: https://cdn.17app.co/0e38dc96-3399-4d97-b3d6-d79a51dfb592.webm
+  webm_md5: 80f2c6f758d9d903a665a0fb962e1e96
   name_token: redenvelope_name_no_2
-  style: redenvelope_normal
   pointSetID: pointset_88888
+  style: redenvelope_normal
   announceable: true
-  announce_threshold: 2500
+  announce_threshold: -1
   countdown_time: 30
   event_time: 10
   theme: 1
   type: 1
   is_offline: false
   region_mode: 2
-  regions: [TW, HK, MO, SG, MY]
+  regions: [TW, ID, TH, HK, MO, SG, MY]
 
 - id: redenvelope_no_2_JP
-  startTime: 1580482800 # January 31, 2020 23:00:00 GMT+08:00
-  endTime:
+  startTime: 1608908400 # December 26, 2020 00:00:00 GMT+09:00
+  endTime: 1609469999 # January 01, 2020 11:59:59 GMT+09:00
   img_URL: http://cdn.17app.co/970fe736-1bb5-4bd2-9041-a0f14e057278.png
   zip_url: https://assets-17app.akamaized.net/31101f1d-d3f8-4d04-8b0f-d8a2dc32e298.zip
   zip_md5: 94e997e2a8560f501d177a496b533263
   webp_url: http://cdn.17app.co/redenvelope_no_2.webp
   webp_md5: 4a6a3ef899c2ca4f68a8f48110f38c1b
+  webm_url: https://cdn.17app.co/0e38dc96-3399-4d97-b3d6-d79a51dfb592.webm
+  webm_md5: 80f2c6f758d9d903a665a0fb962e1e96
   name_token: redenvelope_name_no_2
-  style: redenvelope_normal
   pointSetID: pointset_88888
+  style: redenvelope_normal
   announceable: true
-  announce_threshold: 2500
+  announce_threshold: -1
   countdown_time: 30
   event_time: 10
   theme: 1
@@ -479,39 +626,43 @@ redenvelopes:
   regions: [JP]
 
 - id: redenvelope_no_3
-  startTime: 1581177600 # February 9, 2020 00:00:00 GMT+08:00
+  startTime: 1608912000  # December 26, 2020 00:00:00 GMT+08:00
   endTime:
   img_URL: http://cdn.17app.co/7d0fd036-3869-42a7-9168-057388f9e232.png
   zip_url: https://assets-17app.akamaized.net/ccd8086b-ac89-47fa-9f7c-7784f8396f79.zip
   zip_md5: 0b80dd14c01df0def2e5d2304acfba98
   webp_url: http://cdn.17app.co/redenvelope_no_3.webp
   webp_md5: 1d25a18ad504375c05c8da768faa0edf
+  webm_url: https://cdn.17app.co/848e84e0-62fe-4a82-85c4-1bc60ab5906d.webm
+  webm_md5: 611346debd26a35af587d234c424e4f1
   name_token: redenvelope_name_no_3
-  style: redenvelope_normal
   pointSetID: pointset_8888
+  style: redenvelope_normal
   announceable: true
-  announce_threshold: 2500
+  announce_threshold: -1
   countdown_time: 30
   event_time: 10
   theme: 1
   type: 1
   is_offline: false
   region_mode: 2
-  regions: [TW, HK, MO, SG, MY]
+  regions: [TW, ID, TH, HK, MO, SG, MY]
 
 - id: redenvelope_no_3_JP
-  startTime: 1580482800 # January 31, 2020 23:00:00 GMT+08:00
-  endTime:
+  startTime: 1608908400 # December 26, 2020 00:00:00 GMT+09:00
+  endTime: 1609469999 # January 01, 2020 11:59:59 GMT+09:00
   img_URL: http://cdn.17app.co/7d0fd036-3869-42a7-9168-057388f9e232.png
   zip_url: https://assets-17app.akamaized.net/ccd8086b-ac89-47fa-9f7c-7784f8396f79.zip
   zip_md5: 0b80dd14c01df0def2e5d2304acfba98
   webp_url: http://cdn.17app.co/redenvelope_no_3.webp
   webp_md5: 1d25a18ad504375c05c8da768faa0edf
+  webm_url: https://cdn.17app.co/848e84e0-62fe-4a82-85c4-1bc60ab5906d.webm
+  webm_md5: 611346debd26a35af587d234c424e4f1
   name_token: redenvelope_name_no_3
-  style: redenvelope_normal
   pointSetID: pointset_8888
+  style: redenvelope_normal
   announceable: true
-  announce_threshold: 2500
+  announce_threshold: -1
   countdown_time: 30
   event_time: 10
   theme: 1
@@ -521,39 +672,43 @@ redenvelopes:
   regions: [JP]
 
 - id: redenvelope_no_4
-  startTime: 1581177600 # February 9, 2020 00:00:00 GMT+08:00
+  startTime: 1608912000  # December 26, 2020 00:00:00 GMT+08:00
   endTime:
   img_URL: http://cdn.17app.co/a30cf4a7-9867-4a4c-9acc-a808ed14f3c5.png
   zip_url: https://assets-17app.akamaized.net/10354987-e72c-41d8-99c5-2f8a9fa3d3b3.zip
   zip_md5: 7af8585a2d77e42252d82483ab71834c
   webp_url: http://cdn.17app.co/redenvelope_no_4.webp
   webp_md5: 8a677e8f5115c738f0936791099df4a6
+  webm_url: https://cdn.17app.co/1f82cfb5-c5c8-4712-8db8-091bb12b544e.webm
+  webm_md5: 3649f252f90b7d18163b1b78551b976
   name_token: redenvelope_name_no_4
-  style: redenvelope_normal
   pointSetID: pointset_888
-  announceable: false
-  announce_threshold: 2500
-  countdown_time: 30
+  style: redenvelope_normal
+  announceable: true
+  announce_threshold: -1
+  countdown_time: 10
   event_time: 10
   theme: 1
   type: 1
-  marqueeRate: 0
+  marqueeRate: 100
   is_offline: false
   region_mode: 2
-  regions: [TW, HK, MO, SG, MY]
+  regions: [TW, ID, TH, HK, MO, SG, MY]
 
 - id: redenvelope_no_4_JP
-  startTime: 1580482800 # January 31, 2020 23:00:00 GMT+08:00
-  endTime:
+  startTime: 1608908400 # December 26, 2020 00:00:00 GMT+09:00
+  endTime: 1609469999 # January 01, 2020 11:59:59 GMT+09:00
   img_URL: http://cdn.17app.co/a30cf4a7-9867-4a4c-9acc-a808ed14f3c5.png
   zip_url: https://assets-17app.akamaized.net/10354987-e72c-41d8-99c5-2f8a9fa3d3b3.zip
   zip_md5: 7af8585a2d77e42252d82483ab71834c
   webp_url: http://cdn.17app.co/redenvelope_no_4.webp
   webp_md5: 8a677e8f5115c738f0936791099df4a6
+  webm_url: https://cdn.17app.co/1f82cfb5-c5c8-4712-8db8-091bb12b544e.webm
+  webm_md5: 3649f252f90b7d18163b1b78551b976
   name_token: redenvelope_name_no_4
-  style: redenvelope_normal
   pointSetID: pointset_888
-  announceable: true
+  style: redenvelope_normal
+  announceable: false
   announce_threshold: 2500
   countdown_time: 30
   event_time: 10
@@ -566,11 +721,15 @@ redenvelopes:
 
 # US redenvelope
 - id: redenvelope_s_US
-  img_URL: https://cdn.17app.co/365cab61-61b1-41da-803d-c7a5975bdde2.png
-  zip_url: https://cdn.17app.co/6f4f710d-a281-473e-970a-ef485582493d.zip
-  zip_md5: 3de740f74dfb0adc374e64f1440bd42e
-  webp_url: https://cdn.17app.co/c8da563d-6016-4218-b72f-1ab9b34b2cd6-q90-s1.webp
-  webp_md5: cbbc9cd12f5a843b68e73a29a399bb11
+  startTime: 1608966000  # December 26, 2020 00:00:00 GMT-07:00
+  endTime:
+  img_URL: https://cdn.17app.co/4703288e-8eba-4b03-9a97-9dbb10a401c9.png
+  zip_url: http://cdn.17app.co/7bc31064-94db-4144-9dba-cec1799ccbb1.zip
+  zip_md5: c9d886f25c928b25557c545620dc0265
+  webp_url: https://cdn.17app.co/6084fa99-b6da-4053-b89e-6f412c4caa00-q90-s1.webp
+  webp_md5: 25bb135e2e6ce14a24e9856223c2dd21
+  webm_url: https://cdn.17app.co/8887e907-6bfb-4415-ae12-bba84a25684a.webm
+  webm_md5: 1cc18429b9c40d96ec7bf3f126227cb5
   name_token: redenvelope_customize_name
   style: treasure_normal
   point: 0 # unchangeable
@@ -604,16 +763,20 @@ redenvelopes:
       point: 5
 
 - id: redenvelope_l_US
-  img_URL: https://cdn.17app.co/9178fc26-1896-4e1c-a2aa-3c8d6193206f.png
-  zip_url: https://cdn.17app.co/37e4f580-f99c-4eb2-9ecd-a714536d84a4.zip
-  zip_md5: 37266dd3f93a9918cf8b72139f26748b
-  webp_url: https://cdn.17app.co/c50d8e36-2035-432d-aceb-b60aa2b8448a-q90-s1.webp
-  webp_md5: f74e7cb3fcc4cbea72c914bdc254367c
+  startTime: 1608966000  # December 26, 2020 00:00:00 GMT-07:00
+  endTime:
+  img_URL: https://cdn.17app.co/a0a989e7-6243-43cf-af7a-3c116f2c5787.png
+  zip_url: http://cdn.17app.co/7301e7b6-2a83-4d03-a68a-97e718a26579.zip
+  zip_md5: 6ed10dba75a306620a978d7fa6b5e866
+  webp_url: https://cdn.17app.co/cd2930c6-b54f-4a12-a9d4-901bba5ea3ce-q90-s1.webp
+  webp_md5: 4a15da4bea178730701cf949c6618ad4
+  webm_url: https://cdn.17app.co/c1b4355b-b10f-49c5-89a8-237c19339c7a.webm
+  webm_md5: 2a68268a0e1a84b17e24675d1167d686
   name_token: redenvelope_name_no_2
-  style: treasure_normal
   pointSetID: pointset_77777
+  style: treasure_normal
   announceable: true
-  announce_threshold: 2500
+  announce_threshold: -1
   countdown_time: 60
   event_time: 10
   theme: 1
@@ -623,16 +786,20 @@ redenvelopes:
   regions: [US, DZ, BH, DJ, EG, IR, IQ, IL, JO, KW, LB, LY, MT, MA, OM, QA, SA, SY, TN, AE, PS, YE, ET, SD]
 
 - id: redenvelope_m_US
-  img_URL: https://cdn.17app.co/bee1e71c-7e38-40ec-966b-07ed43daabfa.png
-  zip_url: https://cdn.17app.co/7a886e6f-cfdf-4da2-b84c-4834e0e1246e.zip
-  zip_md5: f1b95d7968c566c43e03d0fd9c75c610
-  webp_url: https://cdn.17app.co/4e69231e-0e1a-4044-b3e7-a529ab073a0e-q90-s1.webp
-  webp_md5: 8d7908f0a508b05d2648338afa41ebea
+  startTime: 1608966000  # December 26, 2020 00:00:00 GMT-07:00
+  endTime:
+  img_URL: https://cdn.17app.co/93dbfdae-f78c-47a1-81b5-7994334b21d3.png
+  zip_url: http://cdn.17app.co/5edbfab5-acec-4035-b826-87522b43c55e.zip
+  zip_md5: f5555123c7b2ebf5d10c81a1cd45cf69
+  webp_url: https://cdn.17app.co/e5a6293b-e6f6-40d5-9b5d-0f6e5b17911b-q90-s1.webp
+  webp_md5: a01102366591a93aa083a35b0825fc6d
+  webm_url: https://cdn.17app.co/0a62b135-fee7-4f5a-a47f-1f318ca6f451.webm
+  webm_md5: 23a0e1e513398b1129f85ef55b515a31
   name_token: redenvelope_name_no_3
-  style: treasure_normal
   pointSetID: pointset_7777
+  style: treasure_normal
   announceable: true
-  announce_threshold: 2500
+  announce_threshold: -1
   countdown_time: 30
   event_time: 10
   theme: 1
@@ -642,15 +809,19 @@ redenvelopes:
   regions: [US, DZ, BH, DJ, EG, IR, IQ, IL, JO, KW, LB, LY, MT, MA, OM, QA, SA, SY, TN, AE, PS, YE, ET, SD]
 
 - id: redenvelope_xs_US
-  img_URL: https://cdn.17app.co/193aca24-0f4c-4cc8-b7ca-d3766322d84f.png
-  zip_url: https://cdn.17app.co/1f01ee74-a9dd-412f-9881-5f65bbfc2526.zip
-  zip_md5: 50b74be02f75bded6ac0eab46f532df0
-  webp_url: https://cdn.17app.co/4b5b93fa-c427-4f42-87f5-d1dbef49eb1c-q90-s1.webp
-  webp_md5: a25389b882e41dbeef09f1e9f620a9df
+  startTime: 1608966000  # December 26, 2020 00:00:00 GMT-07:00
+  endTime:
+  img_URL: https://cdn.17app.co/8ab5e4a4-080d-42ca-8ea0-1104b66de4ee.png
+  zip_url: http://cdn.17app.co/76a5508a-95d3-4044-b1b0-97c1f5b67be2.zip
+  zip_md5: 4dbe24519e049ceca47990f9b4c1b4e4
+  webp_url: https://cdn.17app.co/042e1186-e053-4c0b-8118-1e907caa09c2-q90-s1.webp
+  webp_md5: f20d5f5595e1a0534a04497a6d1db549
+  webm_url: https://cdn.17app.co/78264234-a4b9-4c5b-a8cd-04f18e2d92f4.webm
+  webm_md5: 194784b052b318f7a2dc28a084dd2656
   name_token: redenvelope_name_no_4
   style: treasure_normal
   pointSetID: pointset_777_US
-  announceable: true
+  announceable: false
   announce_threshold: 2500
   countdown_time: 30
   event_time: 10
@@ -660,223 +831,16 @@ redenvelopes:
   region_mode: 2
   regions: [US, DZ, BH, DJ, EG, IR, IQ, IL, JO, KW, LB, LY, MT, MA, OM, QA, SA, SY, TN, AE, PS, YE, ET, SD]
 
-- id: redenvelope_2020newyear_l_JP
-  startTime: 1577847600 # January 1, 2020 11:00:00 GMT+08:00
-  endTime: 1580482800 # January 31, 2020 23:00:00 GMT+08:00
-  img_URL: https://cdn.17app.co/5eb38719-65e8-4716-bce6-4e2d549bacea.png
-  zip_url: https://cdn.17app.co/2f0be7a6-1086-4192-972c-8dd6272f76af.zip
-  zip_md5: 28e58db09fc5b1e7746c897aed3a7398
-  webp_url: https://cdn.17app.co/136375d8-0871-4069-b3a3-6571962097db-q90-s1.webp
-  webp_md5: 3169792d652a4237002e82aa24b856d4
-  name_token: redenvelope_2020newyear_l_JP
-  style: redenvelope_normal
-  pointSetID: pointset_88888
-  announceable: true
-  announce_threshold: 2500
-  countdown_time: 30
-  event_time: 10
-  theme: 1
-  type: 1
-  is_offline: false
-  region_mode: 2
-  regions: [JP]
-
-- id: redenvelope_2020newyear_m_JP
-  startTime: 1577847600 # January 1, 2020 11:00:00 GMT+08:00
-  endTime: 1580482800 # January 31, 2020 23:00:00 GMT+08:00
-  img_URL: https://cdn.17app.co/62a55ec5-381f-4245-83af-92d336dde2d9.png
-  zip_url: https://cdn.17app.co/d41db866-81f7-492e-b458-1c13f49c9388.zip
-  zip_md5: c4a469ca23de390c0a3a921b7c4bb815
-  webp_url: https://cdn.17app.co/9f49979f-d12b-420f-a718-556032c02a53-q90-s1.webp
-  webp_md5: 3169792d652a4237002e82aa24b856d4
-  name_token: redenvelope_2020newyear_m_JP
-  style: redenvelope_normal
-  pointSetID: pointset_8888
-  announceable: true
-  announce_threshold: 2500
-  countdown_time: 30
-  event_time: 10
-  theme: 1
-  type: 1
-  is_offline: false
-  region_mode: 2
-  regions: [JP]
-
-- id: redenvelope_2020newyear_s_JP
-  startTime: 1577847600 # January 1, 2020 11:00:00 GMT+08:00
-  endTime: 1580482800 # January 31, 2020 23:00:00 GMT+08:00
-  img_URL: https://cdn.17app.co/3f6aee31-7680-433c-b4fa-8edd2c7902eb.png
-  zip_url: https://cdn.17app.co/2457f46b-c328-4d1c-9fff-ed9a9ae67fa0.zip
-  zip_md5: 59ac8492f8dacbd915c488ee126a3a98
-  webp_url: https://cdn.17app.co/469fc67f-3861-440f-8e8b-eaa442defde5-q90-s1.webp
-  webp_md5: 6a21bbb7ba0848ca5c335eade2580d58
-  name_token: redenvelope_2020newyear_s_JP
-  style: redenvelope_normal
-  pointSetID: pointset_888
-  announceable: true
-  announce_threshold: 2500
-  countdown_time: 30
-  event_time: 10
-  theme: 1
-  type: 1
-  marqueeRate: 0
-  is_offline: false
-  region_mode: 2
-  regions: [JP]
-
-- id: redenvelope_2020newyear_l_tw
-  startTime: 1579665600 # January 22, 2020 12:00:00 GMT+08:00
-  endTime: 1581177600 # February 9, 2020 00:00:00 GMT+08:00
-  img_URL: https://cdn.17app.co/171fdc50-c8e2-4127-bf2f-3bf96b177b5d.png
-  zip_url: https://cdn.17app.co/7fc99b62-875e-4dd0-b8e3-69eada9f74eb.zip
-  zip_md5: fbe8d7805bc3556c76def426dd6ff5aa
-  webp_url: https://cdn.17app.co/c2b16651-327c-40d1-8eff-ed59d7cd9b10-q90-s1.webp
-  webp_md5: ae71ef0c9a0e217cf1b6105d04f6d146
-  name_token: redenvelope_2020newyear_l_tw
-  style: redenvelope_normal
-  pointSetID: pointset_88888
-  announceable: true
-  announce_threshold: 2500
-  countdown_time: 30
-  event_time: 10
-  theme: 1
-  type: 1
-  is_offline: false
-  region_mode: 2
-  regions: [TW, HK, MO, SG, MY]
-
-- id: redenvelope_2020newyear_m_tw
-  startTime: 1579665600 # January 22, 2020 12:00:00 GMT+08:00
-  endTime: 1581177600 # February 9, 2020 00:00:00 GMT+08:00
-  img_URL: https://cdn.17app.co/fa435708-f878-4db3-b545-c7bd96057423.png
-  zip_url: https://cdn.17app.co/3a6c230c-5102-4c7f-a5b9-98d270e8c621.zip
-  zip_md5: 4f94fb122cba3d37b2f9a335c0a79330
-  webp_url: https://cdn.17app.co/24daef8f-6623-467b-9345-726a429ca60c-q90-s1.webp
-  webp_md5: 3945b929683f2102c33c67cdd8642f2f
-  name_token: redenvelope_2020newyear_m_tw
-  style: redenvelope_normal
-  pointSetID: pointset_8888
-  announceable: true
-  announce_threshold: 2500
-  countdown_time: 30
-  event_time: 10
-  theme: 1
-  type: 1
-  is_offline: false
-  region_mode: 2
-  regions: [TW, HK, MO, SG, MY]
-
-- id: redenvelope_2020newyear_s_tw
-  startTime: 1579665600 # January 22, 2020 12:00:00 GMT+08:00
-  endTime: 1581177600 # February 9, 2020 00:00:00 GMT+08:000
-  img_URL: https://cdn.17app.co/2380d3f2-10b2-4308-8cdc-69a4501ac439.png
-  zip_url: https://cdn.17app.co/72985927-471a-4e5d-9334-9a47d1101747.zip
-  zip_md5: 7175d7431ddda664f1fd184362ae7790
-  webp_url: https://cdn.17app.co/a34108ef-7091-485c-a328-5c166eb7ecce-q90-s1.webp
-  webp_md5: b2ea11e489024fbe887159eb312a17d1
-  name_token: redenvelope_2020newyear_s_tw
-  style: redenvelope_normal
-  pointSetID: pointset_888
-  announceable: true
-  announce_threshold: 2500
-  countdown_time: 30
-  event_time: 10
-  theme: 1
-  type: 1
-  is_offline: false
-  region_mode: 2
-  regions: [TW, HK, MO, SG, MY]
-
-- id: redenvelope_valentinesday_52099_tw
-  startTime: 1580486400 # February 1, 2020 00:00:00 GMT+08:0
-  endTime: 1582992000 # March 1, 2020 00:00:00 GMT+08:00
-  img_URL: https://cdn.17app.co/503ccc14-f049-4967-9d3f-67307d06e6a6.png
-  zip_url: https://cdn.17app.co/da081c47-d138-46d7-92c5-3dfd40242988.zip
-  zip_md5: 215a7d31e07bc3612bd032687bbed5c1
-  webp_url: https://cdn.17app.co/6bac9dc2-b8bb-4b49-93d1-19986babba57-q90-s1.webp
-  webp_md5: 6d2d54533fbaff45b99a3d0406fa0f28
-  name_token: redenvelope_valentinesday_52099_tw
-  style: redenvelope_normal
-  pointSetID: pointset_52099
-  announceable: true
-  announce_threshold: 2500
-  countdown_time: 30
-  event_time: 10
-  theme: 1
-  type: 1
-  is_offline: false
-  region_mode: 2
-  regions: [TW, HK, MO, SG, MY, JP]
-
-- id: redenvelope_valentinesday_2099_tw
-  startTime: 1580486400 # February 1, 2020 00:00:00 GMT+08:00
-  endTime: 1582992000 # March 1, 2020 00:00:00 GMT+08:00
-  img_URL: https://cdn.17app.co/91cdfa1e-51c0-422a-a563-2a5827aae577.png
-  zip_url: https://cdn.17app.co/e76eec2f-791c-4b8b-b6e2-3e85abb37a54.zip
-  zip_md5: de69a255cb83c5f7e87794cd8bc418b0
-  webp_url: https://cdn.17app.co/8bd9fbf1-4ef6-4e94-b1fc-5d40376994fe-q90-s1.webp
-  webp_md5: 83e64dbe159dd18d87f5ac586116cee3
-  name_token: redenvelope_valentinesday_2099_tw
-  style: redenvelope_normal
-  pointSetID: pointset_2099
-  announceable: false
-  announce_threshold: 2500
-  countdown_time: 30
-  event_time: 10
-  theme: 1
-  type: 1
-  is_offline: false
-  region_mode: 2
-  regions: [TW, HK, MO, SG, MY, JP]
-
-- id: redenvelope_custom_valentine_ver
-  startTime:
-  endTime: 1582988400 # February 29, 2020 23:00:00 GMT+08:00
-  img_URL: https://cdn.17app.co/91cdfa1e-51c0-422a-a563-2a5827aae577.png
-  zip_url: https://cdn.17app.co/e76eec2f-791c-4b8b-b6e2-3e85abb37a54.zip
-  zip_md5: de69a255cb83c5f7e87794cd8bc418b0
-  webp_url: https://cdn.17app.co/8bd9fbf1-4ef6-4e94-b1fc-5d40376994fe-q90-s1.webp
-  webp_md5: 83e64dbe159dd18d87f5ac586116cee3
-  name_token: redenvelope_custom_valentine_ver
-  style: redenvelope_normal
-  point: 0 # unchangeable
-  revenuePoint: 300
-  min_point: 1000
-  max_point: 50000
-  announceable: true
-  announce_threshold: 2500
-  countdown_time: 30
-  event_time: 10
-  fee: 50 # workaround, it is percentage * 10
-  theme: 1
-  type: 2
-  is_offline: false
-  region_mode: 2
-  regions: [TW]
-  package_list:
-    - amount: 1
-      point: 100 # workaround, it is percentage * 10
-    - amount: 1
-      point: 65
-    - amount: 1
-      point: 50
-    - amount: 2
-      point: 35
-    - amount: 3
-      point: 25
-    - amount: 8
-      point: 15
-    - amount: 34
-      point: 5
-
 - id: redenvelope_no_custom_JP
-  startTime:
-  endTime:
+  startTime: 1608908400 # December 26, 2020 00:00:00 GMT+09:00
+  endTime: 1609469999 # January 01, 2020 11:59:59 GMT+09:00
   img_URL: http://cdn.17app.co/203fb9b5-9d97-4b15-bcdf-2dcb2cc76b1a.png
   zip_url: https://assets-17app.akamaized.net/595b6425-a4cc-491c-bc81-2acce956fee8.zip
   zip_md5: 7a24a00a4473ba7bf566e2acfcc793fd
   webp_url: http://cdn.17app.co/redenvelope_no_custom.webp
   webp_md5: 8e40537c775b436b6e0a5e54b5888f95
+  webm_url: https://cdn.17app.co/0a62b135-fee7-4f5a-a47f-1f318ca6f451.webm
+  webm_md5: 23a0e1e513398b1129f85ef55b515a31
   name_token: redenvelope_customize_name
   style: redenvelope_normal
   point: 0 # unchangeable
@@ -885,14 +849,14 @@ redenvelopes:
   max_point: 9999999
   announceable: true
   announce_threshold: 2500
-  countdown_time: 30
+  countdown_time: 60
   event_time: 10
   fee: 50 # workaround, it is percentage * 10
   theme: 1
   type: 2
   is_offline: false
   region_mode: 2
-  regions: [TW]
+  regions: [JP]
   package_list:
     - amount: 1
       point: 100 # workaround, it is percentage * 10
@@ -908,3 +872,737 @@ redenvelopes:
       point: 15
     - amount: 34
       point: 5
+
+- id: redenvelope_pk_leaderboard
+  startTime: 1608912000  # December 26, 2020 00:00:00 GMT+08:00
+  endTime:
+  img_URL: http://cdn.17app.co/a30cf4a7-9867-4a4c-9acc-a808ed14f3c5.png
+  name_token: redenvelope_system_bonus
+  pointSetID: pointset_superstar
+  style: redenvelope_normal
+  announceable: false
+  announce_threshold: 2500
+  countdown_time: 150
+  event_time: 10
+  theme: 3
+  type: 3
+  is_offline: false
+  region_mode: 2
+  regions: ["TW", "ID", "TH"]
+
+- id: redenvelope_pk_leaderboard_HK
+  startTime:
+  endTime:
+  img_URL: http://cdn.17app.co/a30cf4a7-9867-4a4c-9acc-a808ed14f3c5.png
+  name_token: redenvelope_system_bonus
+  pointSetID: pointset_888
+  style: redenvelope_normal
+  announceable: false
+  announce_threshold: 2500
+  countdown_time: 150
+  event_time: 10
+  theme: 3
+  type: 3
+  is_offline: false
+  region_mode: 2
+  regions: ["HK"]
+
+- id: redenvelope_no_1_xmas
+  startTime: 1608109200 # December 16, 2020 17:00:00 GMT+08:00
+  endTime: 1608911999  # December 25, 2020 23:59:59 GMT+08:00
+  img_URL: https://cdn.17app.co/3eef47db-b08a-4a8f-9574-a81f5a20c812.png
+  zip_url: https://cdn.17app.co/1bc7585d-8439-42a3-8798-0d4a3e0b249c.zip
+  zip_md5: 51a0c4ba6d0df63669a3abff37e5f3f9
+  webp_url: https://cdn.17app.co/237dbbea-5b72-4721-bfcd-aaa3ad338055-q90-s1.webp
+  webp_md5: 3b4ae72b76d58fadc15c417f13d6b157
+  webm_url: https://cdn.17app.co/1a7696d4-9d99-4781-8a84-52f936ae707a.webm
+  webm_md5: 84aef469386732d1883751fe17276eaf
+  name_token: christmas_socking_1
+  pointSetID: pointset_888888
+  style: 2020_xmas_redenvelope
+  announceable: true
+  announce_threshold: -1
+  countdown_time: 60
+  event_time: 10
+  theme: 1
+  type: 1
+  is_offline: false
+  region_mode: 2
+  regions: [TW, ID, TH, HK, MO, SG, MY]
+
+- id: redenvelope_no_1_JP_xmas
+  startTime: 1608109200 # December 16, 2020 17:00:00 GMT+08:00
+  endTime: 1608908399 # December 25, 2020 23:59:59 GMT+09:00
+  img_URL: https://cdn.17app.co/3eef47db-b08a-4a8f-9574-a81f5a20c812.png
+  zip_url: https://cdn.17app.co/1bc7585d-8439-42a3-8798-0d4a3e0b249c.zip
+  zip_md5: 51a0c4ba6d0df63669a3abff37e5f3f9
+  webp_url: https://cdn.17app.co/237dbbea-5b72-4721-bfcd-aaa3ad338055-q90-s1.webp
+  webp_md5: 3b4ae72b76d58fadc15c417f13d6b157
+  webm_url: https://cdn.17app.co/1a7696d4-9d99-4781-8a84-52f936ae707a.webm
+  webm_md5: 84aef469386732d1883751fe17276eaf
+  name_token: christmas_socking_1
+  pointSetID: pointset_888888
+  style: 2020_xmas_redenvelope
+  announceable: true
+  announce_threshold: -1
+  countdown_time: 60
+  event_time: 10
+  theme: 1
+  type: 1
+  is_offline: false
+  region_mode: 2
+  regions: [JP]
+
+- id: redenvelope_no_2_xmas
+  startTime: 1608109200 # December 16, 2020 17:00:00 GMT+08:00
+  endTime: 1608911999  # December 25, 2020 23:59:59 GMT+08:00
+  img_URL: https://cdn.17app.co/e20f59d6-5da9-491b-960d-bbb9cf138597.png
+  zip_url: https://cdn.17app.co/ec69f31b-29d4-4370-97e9-31ea8b0533bc.zip
+  zip_md5: 180714a698990c5811fd6d802f8445a7
+  webp_url: https://cdn.17app.co/2b2d767e-b740-4741-ad4d-8fbf2928e9e1-q90-s1.webp
+  webp_md5: 7f8d48ab2a42230cdefd56364abce720
+  webm_url: https://cdn.17app.co/fd4e0824-efb8-4945-9a1f-7eb37683165f.webm
+  webm_md5: 2033a1b2918d12a619c9b4ec3926818e
+  name_token: christmas_socking_2
+  pointSetID: pointset_88888
+  style: 2020_xmas_redenvelope
+  announceable: true
+  announce_threshold: -1
+  countdown_time: 30
+  event_time: 10
+  theme: 1
+  type: 1
+  is_offline: false
+  region_mode: 2
+  regions: [TW, ID, TH, HK, MO, SG, MY]
+
+- id: redenvelope_no_2_JP_xmas
+  startTime: 1608109200 # December 16, 2020 17:00:00 GMT+08:00
+  endTime: 1608908399 # December 25, 2020 23:59:59 GMT+09:00
+  img_URL: https://cdn.17app.co/e20f59d6-5da9-491b-960d-bbb9cf138597.png
+  zip_url: https://cdn.17app.co/ec69f31b-29d4-4370-97e9-31ea8b0533bc.zip
+  zip_md5: 180714a698990c5811fd6d802f8445a7
+  webp_url: https://cdn.17app.co/2b2d767e-b740-4741-ad4d-8fbf2928e9e1-q90-s1.webp
+  webp_md5: 7f8d48ab2a42230cdefd56364abce720
+  webm_url: https://cdn.17app.co/fd4e0824-efb8-4945-9a1f-7eb37683165f.webm
+  webm_md5: 2033a1b2918d12a619c9b4ec3926818e
+  name_token: christmas_socking_2
+  pointSetID: pointset_88888
+  style: 2020_xmas_redenvelope
+  announceable: true
+  announce_threshold: -1
+  countdown_time: 30
+  event_time: 10
+  theme: 1
+  type: 1
+  is_offline: false
+  region_mode: 2
+  regions: [JP]
+
+- id: redenvelope_no_3_xmas
+  startTime: 1608109200 # December 16, 2020 17:00:00 GMT+08:00
+  endTime: 1608911999  # December 25, 2020 23:59:59 GMT+08:00
+  img_URL: https://cdn.17app.co/a33abe08-e575-452d-93ee-5d6673906f5a.png
+  zip_url: https://cdn.17app.co/5b208bc5-1980-4ed6-9599-3f98cdd751f5.zip
+  zip_md5: c5c3e349ca70cf9c4900a5a395efc2c5
+  webp_url: https://cdn.17app.co/27aca5d0-c444-428c-8bae-c71f89b076e8-q90-s1.webp
+  webp_md5: 731c2714d8409f5795682cc5db0925f4
+  webm_url: https://cdn.17app.co/b457995f-6445-4541-81e3-58dbc0961fc2.webm
+  webm_md5: ae03ba2b974d41d1278bd4784dead8e1
+  name_token: christmas_socking_3
+  pointSetID: pointset_8888
+  style: 2020_xmas_redenvelope
+  announceable: true
+  announce_threshold: -1
+  countdown_time: 30
+  event_time: 10
+  theme: 1
+  type: 1
+  is_offline: false
+  region_mode: 2
+  regions: [TW, ID, TH, HK, MO, SG, MY]
+
+- id: redenvelope_no_3_JP_xmas
+  startTime: 1608109200 # December 16, 2020 17:00:00 GMT+08:00
+  endTime: 1608908399 # December 25, 2020 23:59:59 GMT+09:00
+  img_URL: https://cdn.17app.co/a33abe08-e575-452d-93ee-5d6673906f5a.png
+  zip_url: https://cdn.17app.co/5b208bc5-1980-4ed6-9599-3f98cdd751f5.zip
+  zip_md5: c5c3e349ca70cf9c4900a5a395efc2c5
+  webp_url: https://cdn.17app.co/27aca5d0-c444-428c-8bae-c71f89b076e8-q90-s1.webp
+  webp_md5: 731c2714d8409f5795682cc5db0925f4
+  webm_url: https://cdn.17app.co/b457995f-6445-4541-81e3-58dbc0961fc2.webm
+  webm_md5: ae03ba2b974d41d1278bd4784dead8e1
+  name_token: christmas_socking_3
+  pointSetID: pointset_8888
+  style: 2020_xmas_redenvelope
+  announceable: true
+  announce_threshold: -1
+  countdown_time: 30
+  event_time: 10
+  theme: 1
+  type: 1
+  is_offline: false
+  region_mode: 2
+  regions: [JP]
+
+- id: redenvelope_no_4_xmas
+  startTime: 1608109200 # December 16, 2020 17:00:00 GMT+08:00
+  endTime: 1608911999  # December 25, 2020 23:59:59 GMT+08:00
+  img_URL: https://cdn.17app.co/c5f6650b-e921-4bf2-bdd5-2d534cc87265.png
+  zip_url: https://cdn.17app.co/b1eb16d6-3da6-4d5a-876f-a03d941a6ec0.zip
+  zip_md5: 67764f1134e3c26a08d279dc09e21406
+  webp_url: https://cdn.17app.co/2b88c16b-9af8-4748-8641-3e0cf802c241-q90-s1.webp
+  webp_md5: 33e7ac8ce21c61156433c09f2495d12b
+  webm_url: https://cdn.17app.co/a04bf986-3bfb-4dda-bfaf-ba3082d53934.webm
+  webm_md5: 74d90df8259ad5cc13597fe707e3990f
+  name_token: christmas_socking_4
+  pointSetID: pointset_888
+  style: 2020_xmas_redenvelope
+  announceable: false
+  announce_threshold: 2500
+  countdown_time: 30
+  event_time: 10
+  theme: 1
+  type: 1
+  marqueeRate: 0
+  is_offline: false
+  region_mode: 2
+  regions: [TW, ID, TH, HK, MO, SG, MY]
+
+- id: redenvelope_no_4_JP_xmas
+  startTime: 1608109200 # December 16, 2020 17:00:00 GMT+08:00
+  endTime: 1608908399 # December 25, 2020 23:59:59 GMT+09:00
+  img_URL: https://cdn.17app.co/c5f6650b-e921-4bf2-bdd5-2d534cc87265.png
+  zip_url: https://cdn.17app.co/b1eb16d6-3da6-4d5a-876f-a03d941a6ec0.zip
+  zip_md5: 67764f1134e3c26a08d279dc09e21406
+  webp_url: https://cdn.17app.co/2b88c16b-9af8-4748-8641-3e0cf802c241-q90-s1.webp
+  webp_md5: 33e7ac8ce21c61156433c09f2495d12b
+  webm_url: https://cdn.17app.co/a04bf986-3bfb-4dda-bfaf-ba3082d53934.webm
+  webm_md5: 74d90df8259ad5cc13597fe707e3990f
+  name_token: christmas_socking_4
+  pointSetID: pointset_888
+  style: 2020_xmas_redenvelope
+  announceable: false
+  announce_threshold: 2500
+  countdown_time: 30
+  event_time: 10
+  theme: 1
+  type: 1
+  marqueeRate: 0
+  is_offline: false
+  region_mode: 2
+  regions: ['JP']
+
+# US redenvelope
+- id: redenvelope_s_US_xmas
+  startTime: 1608109200 # December 16, 2020 17:00:00 GMT+08:00
+  endTime: 1608965999  # December 25, 2020 23:59:59 GMT-07:00
+  img_URL: https://cdn.17app.co/21b9dc05-41ef-408a-a5a1-07279bc6e11f.png
+  zip_url: https://cdn.17app.co/93d111bc-344e-49b8-b256-9fcbdc2b3a71.zip
+  zip_md5: 4b1be2785235b2ce3d5d367f409e6efc
+  webp_url: https://cdn.17app.co/a70e2576-fa69-4314-bef5-8b2c27cf5938-q90-s1.webp
+  webp_md5: bd048eb35eabcca399307b42e94f3a7e
+  webm_url: https://cdn.17app.co/c321fa2e-9df8-446d-acdc-4fde94ed0394.webm
+  webm_md5: ffe2c3a436f09ffa88129c54e813e806
+  name_token: christmas_socking_customized
+  style: 2020_xmas_redenvelope
+  point: 0 # unchangeable
+  revenuePoint: 300
+  min_point: 1000
+  max_point: 9999999
+  announceable: true
+  announce_threshold: 2500
+  countdown_time: 60
+  event_time: 10
+  fee: 50 # workaround, it is percentage * 10
+  theme: 1
+  type: 2
+  is_offline: false
+  region_mode: 2
+  regions: [US, DZ, BH, DJ, EG, IR, IQ, IL, JO, KW, LB, LY, MT, MA, OM, QA, SA, SY, TN, AE, PS, YE, ET, SD]
+  package_list:
+    - amount: 1
+      point: 100 # workaround, it is percentage * 10
+    - amount: 1
+      point: 65
+    - amount: 1
+      point: 50
+    - amount: 2
+      point: 35
+    - amount: 3
+      point: 25
+    - amount: 8
+      point: 15
+    - amount: 34
+      point: 5
+
+- id: redenvelope_l_US_xmas
+  startTime: 1608109200 # December 16, 2020 17:00:00 GMT+08:00
+  endTime: 1608965999  # December 25, 2020 23:59:59 GMT-07:00
+  img_URL: https://cdn.17app.co/e20f59d6-5da9-491b-960d-bbb9cf138597.png
+  zip_url: https://cdn.17app.co/ec69f31b-29d4-4370-97e9-31ea8b0533bc.zip
+  zip_md5: 180714a698990c5811fd6d802f8445a7
+  webp_url: https://cdn.17app.co/2b2d767e-b740-4741-ad4d-8fbf2928e9e1-q90-s1.webp
+  webp_md5: 7f8d48ab2a42230cdefd56364abce720
+  webm_url: https://cdn.17app.co/fd4e0824-efb8-4945-9a1f-7eb37683165f.webm
+  webm_md5: 2033a1b2918d12a619c9b4ec3926818e
+  name_token: christmas_socking_2
+  pointSetID: pointset_77777
+  style: 2020_xmas_redenvelope
+  announceable: true
+  announce_threshold: -1
+  countdown_time: 60
+  event_time: 10
+  theme: 1
+  type: 1
+  is_offline: false
+  region_mode: 2
+  regions: [US, DZ, BH, DJ, EG, IR, IQ, IL, JO, KW, LB, LY, MT, MA, OM, QA, SA, SY, TN, AE, PS, YE, ET, SD]
+
+- id: redenvelope_m_US_xmas
+  startTime: 1608109200 # December 16, 2020 17:00:00 GMT+08:00
+  endTime: 1608965999  # December 25, 2020 23:59:59 GMT-07:00
+  img_URL: https://cdn.17app.co/a33abe08-e575-452d-93ee-5d6673906f5a.png
+  zip_url: https://cdn.17app.co/5b208bc5-1980-4ed6-9599-3f98cdd751f5.zip
+  zip_md5: c5c3e349ca70cf9c4900a5a395efc2c5
+  webp_url: https://cdn.17app.co/27aca5d0-c444-428c-8bae-c71f89b076e8-q90-s1.webp
+  webp_md5: 731c2714d8409f5795682cc5db0925f4
+  webm_url: https://cdn.17app.co/b457995f-6445-4541-81e3-58dbc0961fc2.webm
+  webm_md5: ae03ba2b974d41d1278bd4784dead8e1
+  name_token: christmas_socking_3
+  pointSetID: pointset_7777
+  style: 2020_xmas_redenvelope
+  announceable: true
+  announce_threshold: -1
+  countdown_time: 30
+  event_time: 10
+  theme: 1
+  type: 1
+  is_offline: false
+  region_mode: 2
+  regions: [US, DZ, BH, DJ, EG, IR, IQ, IL, JO, KW, LB, LY, MT, MA, OM, QA, SA, SY, TN, AE, PS, YE, ET, SD]
+
+- id: redenvelope_xs_US_xmas
+  startTime: 1608109200 # December 16, 2020 17:00:00 GMT+08:00
+  endTime: 1608965999  # December 25, 2020 23:59:59 GMT-07:00
+  img_URL: https://cdn.17app.co/c5f6650b-e921-4bf2-bdd5-2d534cc87265.png
+  zip_url: https://cdn.17app.co/b1eb16d6-3da6-4d5a-876f-a03d941a6ec0.zip
+  zip_md5: 67764f1134e3c26a08d279dc09e21406
+  webp_url: https://cdn.17app.co/2b88c16b-9af8-4748-8641-3e0cf802c241-q90-s1.webp
+  webp_md5: 33e7ac8ce21c61156433c09f2495d12b
+  webm_url: https://cdn.17app.co/a04bf986-3bfb-4dda-bfaf-ba3082d53934.webm
+  webm_md5: 74d90df8259ad5cc13597fe707e3990f
+  name_token: christmas_socking_4
+  style: 2020_xmas_redenvelope
+  pointSetID: pointset_777_US
+  announceable: false
+  announce_threshold: 2500
+  countdown_time: 30
+  event_time: 10
+  theme: 1
+  type: 1
+  is_offline: false
+  region_mode: 2
+  regions: [US, DZ, BH, DJ, EG, IR, IQ, IL, JO, KW, LB, LY, MT, MA, OM, QA, SA, SY, TN, AE, PS, YE, ET, SD]
+
+- id: redenvelope_no_recommend_xmas
+  startTime: 1608109200 # December 16, 2020 17:00:00 GMT+08:00
+  endTime: 1608911999  # December 25, 2020 23:59:59 GMT+08:00
+  img_URL: https://cdn.17app.co/873cae33-5f1c-4d4c-9130-bb0d355f53e5.png
+  name_token: christmas_socking_promote
+  pointSetID: pointset_5000
+  style: 2020_xmas_redenvelope
+  announceable: false
+  announce_threshold: 2500
+  countdown_time: 30
+  event_time: 10
+  theme: 1
+  type: 4
+  is_offline: false
+  region_mode: 2
+  regions: ["TW", "ID", "TH", "SG"]
+
+- id: redenvelope_no_custom_xmas
+  startTime: 1608109200 # December 16, 2020 17:00:00 GMT+08:00
+  endTime: 1608911999  # December 25, 2020 23:59:59 GMT+08:00
+  img_URL: https://cdn.17app.co/21b9dc05-41ef-408a-a5a1-07279bc6e11f.png
+  zip_url: https://cdn.17app.co/93d111bc-344e-49b8-b256-9fcbdc2b3a71.zip
+  zip_md5: 4b1be2785235b2ce3d5d367f409e6efc
+  webp_url: https://cdn.17app.co/a70e2576-fa69-4314-bef5-8b2c27cf5938-q90-s1.webp
+  webp_md5: bd048eb35eabcca399307b42e94f3a7e
+  webm_url: https://cdn.17app.co/c321fa2e-9df8-446d-acdc-4fde94ed0394.webm
+  webm_md5: ffe2c3a436f09ffa88129c54e813e806
+  name_token: christmas_socking_customized
+  style: 2020_xmas_redenvelope
+  point: 0 # unchangeable
+  revenuePoint: 300
+  min_point: 1000
+  max_point: 9999999
+  announceable: true
+  announce_threshold: 2500
+  countdown_time: 60
+  event_time: 10
+  fee: 50 # workaround, it is percentage * 10
+  theme: 1
+  type: 2
+  is_offline: false
+  region_mode: 2
+  regions: ["TW", "ID", "TH", "SG", "MY", "HK"]
+  package_list:
+    - amount: 1
+      point: 100 # workaround, it is percentage * 10
+    - amount: 1
+      point: 65
+    - amount: 1
+      point: 50
+    - amount: 2
+      point: 35
+    - amount: 3
+      point: 25
+    - amount: 8
+      point: 15
+    - amount: 34
+      point: 5
+
+- id: redenvelope_no_custom_JP_xmas
+  startTime: 1608109200 # December 16, 2020 17:00:00 GMT+08:00
+  endTime: 1608908399 # December 25, 2020 23:59:59 GMT+09:00
+  img_URL: https://cdn.17app.co/21b9dc05-41ef-408a-a5a1-07279bc6e11f.png
+  zip_url: https://cdn.17app.co/93d111bc-344e-49b8-b256-9fcbdc2b3a71.zip
+  zip_md5: 4b1be2785235b2ce3d5d367f409e6efc
+  webp_url: https://cdn.17app.co/a70e2576-fa69-4314-bef5-8b2c27cf5938-q90-s1.webp
+  webp_md5: bd048eb35eabcca399307b42e94f3a7e
+  webm_url: https://cdn.17app.co/c321fa2e-9df8-446d-acdc-4fde94ed0394.webm
+  webm_md5: ffe2c3a436f09ffa88129c54e813e806
+  name_token: christmas_socking_customized
+  style: 2020_xmas_redenvelope
+  point: 0 # unchangeable
+  revenuePoint: 300
+  min_point: 1000
+  max_point: 9999999
+  announceable: true
+  announce_threshold: 2500
+  countdown_time: 60
+  event_time: 10
+  fee: 50 # workaround, it is percentage * 10
+  theme: 1
+  type: 2
+  is_offline: false
+  region_mode: 2
+  regions: [JP]
+  package_list:
+    - amount: 1
+      point: 100 # workaround, it is percentage * 10
+    - amount: 1
+      point: 65
+    - amount: 1
+      point: 50
+    - amount: 2
+      point: 35
+    - amount: 3
+      point: 25
+    - amount: 8
+      point: 15
+    - amount: 34
+      point: 5
+
+- id: redenvelope_no_superstar_xmas
+  startTime: 1608109200 # December 16, 2020 17:00:00 GMT+08:00
+  endTime: 1608911999  # December 25, 2020 23:59:59 GMT+08:00
+  img_URL: http://cdn.17app.co/a30cf4a7-9867-4a4c-9acc-a808ed14f3c5.png
+  name_token: redenvelope_system_bonus
+  pointSetID: pointset_superstar
+  style: 2020_xmas_redenvelope
+  announceable: false
+  announce_threshold: 2500
+  countdown_time: 150
+  event_time: 10
+  theme: 3
+  type: 3
+  is_offline: false
+  region_mode: 2
+  regions: ["TW", "ID", "TH"]
+
+- id: redenvelope_pk_leaderboard_xmas
+  startTime: 1608109200 # December 16, 2020 17:00:00 GMT+08:00
+  endTime: 1608911999  # December 25, 2020 23:59:59 GMT+08:00
+  img_URL: http://cdn.17app.co/a30cf4a7-9867-4a4c-9acc-a808ed14f3c5.png
+  name_token: redenvelope_system_bonus
+  pointSetID: pointset_superstar
+  style: 2020_xmas_redenvelope
+  announceable: false
+  announce_threshold: 2500
+  countdown_time: 150
+  event_time: 10
+  theme: 3
+  type: 3
+  is_offline: false
+  region_mode: 2
+  regions: ["TW", "ID", "TH"]
+
+- id: redenvelope_2021newyear_l_JP
+  # startTime: 1609470000 # January 01, 2020 12:00:00 GMT+09:00
+  # endTime: 1612105199 # January 31, 2020 23:59:59 GMT+09:00
+  img_URL: https://cdn.17app.co/ba38934d-6c7c-4fc7-9f66-f40f47621114.png
+  zip_url: http://cdn.17app.co/9d52080e-6e2f-4027-a623-b536f57a5a07.zip
+  zip_md5: 7310c1d7d6bf4e2a898d01984e074ca8
+  webp_url: https://cdn.17app.co/6af8b980-9d10-4497-b296-ed3cd24f6277-q90-s1.webp
+  webp_md5: 3169792d652a4237002e82aa24b856d4
+  webm_url: https://cdn.17app.co/a637fa78-4e39-47cd-a2d7-b33e087cb643.webm
+  webm_md5: 34e5167b39299940d35339e275243255
+  name_token: redenvelope_2020newyear_l_JP
+  pointSetID: pointset_88888
+  style: redenvelope_normal
+  announceable: true
+  announce_threshold: -1
+  countdown_time: 30
+  event_time: 10
+  theme: 1
+  type: 1
+  is_offline: false
+  region_mode: 2
+  regions: [JP, 'TW']
+
+- id: rredenvelope_2021newyear_m_JP
+  # startTime: 1609470000 # January 01, 2020 12:00:00 GMT+09:00
+  # endTime: 1612105199 # January 31, 2020 23:59:59 GMT+09:00
+  img_URL: https://cdn.17app.co/f115641d-ac58-4bc7-82f6-2fd6c60a14f0.png
+  zip_url: http://cdn.17app.co/5ffc7c7b-4f8d-4aeb-bf30-6b5410c453dc.zip
+  zip_md5: c318f5cfe8809e395e9824e04c5037f3
+  webp_url: https://cdn.17app.co/6f6256b2-f6b3-451a-bd0b-de576e947f82-q90-s1.webp
+  webp_md5: 3169792d652a4237002e82aa24b856d4
+  webm_url: https://cdn.17app.co/f5ae8799-14bd-4b3a-84f7-ec11850cd9c8.webm
+  webm_md5: 16e3e202c73b14015fefb38bf7b9d26c
+  name_token: redenvelope_2020newyear_m_JP
+  pointSetID: pointset_8888
+  style: redenvelope_normal
+  announceable: true
+  announce_threshold: -1
+  countdown_time: 30
+  event_time: 10
+  theme: 1
+  type: 1
+  is_offline: false
+  region_mode: 2
+  regions: [JP, 'TW']
+
+- id: redenvelope_2021newyear_s_JP
+  # startTime: 1609470000 # January 01, 2020 12:00:00 GMT+09:00
+  # endTime: 1612105199 # January 31, 2020 23:59:59 GMT+09:00
+  img_URL: https://cdn.17app.co/77ee05e1-ee8c-461e-aa85-a0cc236d8ef5.png
+  zip_url: http://cdn.17app.co/8afb7979-c933-4f8d-a8fe-a1a9d59df2eb.zip
+  zip_md5: c42f00f28deef62258c5e7d4294c3ea7
+  webp_url: https://cdn.17app.co/61391d64-26cc-45e7-ab31-3c8001d1f2f7-q90-s1.webp
+  webp_md5: 6a21bbb7ba0848ca5c335eade2580d58
+  webm_url: https://cdn.17app.co/f623d5bf-0a5e-428a-a879-3fb63b84de74.webm
+  webm_md5: fef191ac45f34506c196ad57d39ff799
+  name_token: redenvelope_2020newyear_s_JP
+  pointSetID: pointset_888
+  style: redenvelope_normal
+  announceable: false
+  announce_threshold: 2500
+  countdown_time: 30
+  event_time: 10
+  theme: 1
+  type: 1
+  marqueeRate: 0
+  is_offline: false
+  region_mode: 2
+  regions: ['JP', 'TW']
+
+- id: redenvelope_no_custom_JP
+  # startTime: 1609470000 # January 01, 2020 12:00:00 GMT+09:00
+  # endTime: 1612105199 # January 31, 2020 23:59:59 GMT+09:00
+  img_URL: https://cdn.17app.co/180037e9-118d-4fb5-afd3-5390f2ca46ea.png
+  zip_url: http://cdn.17app.co/8afb7979-c933-4f8d-a8fe-a1a9d59df2eb.zip
+  zip_md5: c42f00f28deef62258c5e7d4294c3ea7
+  webp_url: https://cdn.17app.co/61391d64-26cc-45e7-ab31-3c8001d1f2f7-q90-s1.webp
+  webp_md5: 6a21bbb7ba0848ca5c335eade2580d58
+  webm_url: https://cdn.17app.co/f623d5bf-0a5e-428a-a879-3fb63b84de74.webm
+  webm_md5: fef191ac45f34506c196ad57d39ff799
+  name_token: redenvelope_2020newyear_mylucky_JP
+  style: redenvelope_normal
+  point: 0 # unchangeable
+  revenuePoint: 300
+  min_point: 1000
+  max_point: 9999999
+  announceable: true
+  announce_threshold: 2500
+  countdown_time: 60
+  event_time: 10
+  fee: 50 # workaround, it is percentage * 10
+  theme: 1
+  type: 2
+  is_offline: false
+  region_mode: 2
+  regions: [JP, 'TW']
+  package_list:
+    - amount: 1
+      point: 100 # workaround, it is percentage * 10
+    - amount: 1
+      point: 65
+    - amount: 1
+      point: 50
+    - amount: 2
+      point: 35
+    - amount: 3
+      point: 25
+    - amount: 8
+      point: 15
+    - amount: 34
+      point: 5
+
+- id: redenvelope_2021newyear_no_1
+  startTime:
+  endTime:
+  img_URL: https://cdn.17app.co/27e71242-4bd3-40a7-b077-08773f7d42a8.png
+  zip_url: http://cdn.17app.co/abd6a3a1-869c-437c-9201-6d3555063df6.zip
+  zip_md5: 4364d215f1f7c179ea737ca10285fdbf
+  webp_url: https://cdn.17app.co/719e81a9-49e4-4421-aeb5-135c9a364791-q90-s1.webp
+  webp_md5: 7171f4f5838adbe9feb4afc691884d79
+  webm_url: https://cdn.17app.co/f39f4ef6-992f-4279-b8c9-afa2cb582121.webm
+  webm_md5: 16cea0ff4e5b89b2ff30e378f47be743
+  name_token: red_envelope_2021_888888
+  pointSetID: pointset_888888
+  style: redenvelope_normal
+  announceable: true
+  announce_threshold: -1
+  countdown_time: 60
+  event_time: 10
+  theme: 1
+  type: 1
+  is_offline: false
+  region_mode: 2
+  regions: [TW, ID, TH, HK, MO, SG, MY]
+
+
+- id: redenvelope_2021newyear_no_2
+  startTime:
+  endTime:
+  img_URL: https://cdn.17app.co/fd9ecc2b-2703-4b5e-96db-af9ca9798e7c.png
+  zip_url: http://cdn.17app.co/88c9ca3e-4b4f-40d2-a194-ed489b6a0671.zip
+  zip_md5: 3a075ff47fc38fd23ebe111f67146b66
+  webp_url: https://cdn.17app.co/d139c3aa-4675-449d-8893-97e92cc7112a-q90-s1.webp
+  webp_md5: 51a19a66797de5aa86f226115b111266
+  webm_url: https://cdn.17app.co/bd21a360-9518-4d2c-9bb6-0893b9deedd6.webm
+  webm_md5: 8c4f6b359987ac090c59f339ce661801
+  name_token: red_envelope_2021_88888
+  pointSetID: pointset_88888
+  style: redenvelope_normal
+  announceable: true
+  announce_threshold: -1
+  countdown_time: 30
+  event_time: 10
+  theme: 1
+  type: 1
+  is_offline: false
+  region_mode: 2
+  regions: [TW, ID, TH, HK, MO, SG, MY]
+
+
+- id: redenvelope_2021newyear_no_3
+  startTime:
+  endTime:
+  img_URL: https://cdn.17app.co/17218a67-8e50-4407-9589-38ea68a6b798.png
+  zip_url: http://cdn.17app.co/4b07c81b-2365-4849-8d1d-53dd8a59465d.zip
+  zip_md5: 38b9394da28cec71f570bd7fd8895629
+  webp_url: https://cdn.17app.co/8645a67a-6483-4e33-b7a4-a2c0460561b2-q90-s1.webp
+  webp_md5: 8058b88ae2911bd3d9f2155c4aba7f05
+  webm_url: https://cdn.17app.co/4f131ba6-a331-4679-9e4e-87b71ffa8773.webm
+  webm_md5: 5a33be01954be87d6a91b56b62a91b3f
+  name_token: red_envelope_2021_8888
+  pointSetID: pointset_8888
+  style: redenvelope_normal
+  announceable: true
+  announce_threshold: -1
+  countdown_time: 30
+  event_time: 10
+  theme: 1
+  type: 1
+  is_offline: false
+  region_mode: 2
+  regions: [TW, ID, TH, HK, MO, SG, MY]
+
+
+- id: redenvelope_2021newyear_no_4
+  startTime:
+  endTime:
+  img_URL: https://cdn.17app.co/385d2b1a-4116-4326-89d2-d464979c466d.png
+  zip_url: http://cdn.17app.co/24770a9a-62d0-473d-aef8-fa4faa695b6d.zip
+  zip_md5: 61e32d25575a4d9ec35d2422a5d63742
+  webp_url: https://cdn.17app.co/baa3bbde-3965-4996-ba2d-039adc5087c9-q90-s1.webp
+  webp_md5: 3f1d33db26ab04dd185596520afbec7d
+  webm_url: https://cdn.17app.co/363547dd-5ef8-4a6f-b512-5f57908a3879.webm
+  webm_md5: 21d9b8edb1387063e066c23f52c8da05
+  name_token: red_envelope_2021_888
+  pointSetID: pointset_888
+  style: redenvelope_normal
+  announceable: false
+  announce_threshold: 2500
+  countdown_time: 30
+  event_time: 10
+  theme: 1
+  type: 1
+  marqueeRate: 0
+  is_offline: false
+  region_mode: 2
+  regions: [TW, ID, TH, HK, MO, SG, MY]
+
+- id: redenvelope_2021newyear_custom
+  startTime:
+  endTime:
+  img_URL: https://cdn.17app.co/0cb20c84-afe2-45f5-b0de-4ba9b228be53.png
+  zip_url: http://cdn.17app.co/78c0286e-518c-445c-9f63-8f9a1615a581.zip
+  zip_md5: b5bb323fc278735962d2612425e9bdeb
+  webp_url: https://cdn.17app.co/de956d0a-fd6e-4eaa-a0ff-1fb88ae3b11b-q90-s1.webp
+  webp_md5: 9218df920a0ee590ca63c373858726d5
+  webm_url: https://cdn.17app.co/9cceb396-8fa5-4c38-9fd1-4d43613aa37f.webm
+  webm_md5: 27cb1b845e6412d34dabac5e55fdd83d
+  name_token: red_envelope_2021_customized
+  style: redenvelope_normal
+  point: 0 # unchangeable
+  revenuePoint: 300
+  min_point: 1000
+  max_point: 9999999
+  announceable: true
+  announce_threshold: 2500
+  countdown_time: 60
+  event_time: 10
+  fee: 50 # workaround, it is percentage * 10
+  theme: 1
+  type: 2
+  is_offline: false
+  region_mode: 2
+  regions: ["TW", "ID", "TH", "SG", "MY", "HK"]
+  package_list:
+    - amount: 1
+      point: 100 # workaround, it is percentage * 10
+    - amount: 1
+      point: 65
+    - amount: 1
+      point: 50
+    - amount: 2
+      point: 35
+    - amount: 3
+      point: 25
+    - amount: 8
+      point: 15
+    - amount: 34
+      point: 5
+
+- id: redenvelope_2021newyear_recommend
+  startTime:
+  endTime:
+  img_URL: https://cdn.17app.co/91f90227-b8e4-40b8-b6ad-650a78103a4f.png
+  name_token: red_envelope_2021_recommend
+  pointSetID: pointset_5000
+  style: redenvelope_normal
+  announceable: false
+  announce_threshold: 2500
+  countdown_time: 30
+  event_time: 10
+  theme: 1
+  type: 4
+  is_offline: false
+  region_mode: 2
+  regions: ["TW", "ID", "TH", "SG"]

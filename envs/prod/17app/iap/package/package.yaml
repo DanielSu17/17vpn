@@ -3,6 +3,146 @@
 #type受眾群體: 1判斷時間區段沒有購買過; 2判斷時間區段有購買過; 3生涯沒有購買過(任何購買記錄都算); 4生涯有購買過
 
 merchandises:
+#2021新年禮包Part1_Android 2021-02-09 ~ 2021-02-19 02:00:00
+  - intervalID:  MINV-1oEQXgSfGCPbiXrQnlo3Dxot3xR
+    merchandiseID: media17_giftpackage_tier8_202012_tw #對google play / app store的id
+    productsOrder: #product的順序，product不可為0
+      - barrage_normal_10
+    bonusesOrder: #bonus的順序，如果只有bouns請移至productOrder
+      - gift_2101_newyear_divination_block_1_30
+      - gift_2013_b2b_luckybag_9_30
+      - gift_2008_b2b_redenvelope_2_30
+    addons:
+      displayCountdown: true #要不要顯示倒數計時
+      countdownSecs: 86400
+      #距離結束時間多少以前開始 highlight
+      title:
+        key: iap_store_giftpackage_newyear
+      titleImageURL: https://cdn.17app.co/392ead48-62dc-4321-9a86-923458ce19ab.png
+      discountImageURL: 
+      description:
+        - imageURL: https://cdn.17app.co/8cab3332-2e53-48e2-a588-dc469b091641.png
+          text:
+            key: iap_store_giftpackage_dialog_barrage_desc
+        - imageURL:
+          text:
+            key: iap_store_giftpackage_dialog_gift_desc_newyear
+    purchaseType: 2
+    taInfo: #受眾
+#        registerRange:
+#          dayStart: 0
+          #若為0則不受限制
+#          dayEnd: 0
+        type: 
+#        startTime: #受眾的判斷時間開始時間, 不是禮包的有效時間,若沒有值則不受限制
+#        endTime: #受眾的判斷時間結束時間, 不是禮包的結束時間,若沒有值則不受限制
+    abtestName: "" #禮包測試相關的abtest名稱, 需要 abtest.yaml也做相關的設定
+
+#2021新年禮包Part1_iOS 2021-02-09 ~ 2021-02-19 02:00:00
+  - intervalID:  MINV-1oEQXcNLq2jxo4z7K77o11Qbpi7
+    merchandiseID: media17_giftpackage_tier8_202012_tw #對google play / app store的id
+    productsOrder: #product的順序，product不可為0
+      - barrage_normal_10
+    bonusesOrder: #bonus的順序，如果只有bouns請移至productOrder
+      - gift_2101_newyear_divination_block_1_30
+      - gift_2013_b2b_luckybag_9_30
+      - gift_2008_b2b_redenvelope_2_30
+    addons:
+      displayCountdown: true #要不要顯示倒數計時
+      countdownSecs: 86400
+      #距離結束時間多少以前開始 highlight
+      title:
+        key: iap_store_giftpackage_newyear
+      titleImageURL: https://cdn.17app.co/392ead48-62dc-4321-9a86-923458ce19ab.png
+      discountImageURL: 
+      description:
+        - imageURL: https://cdn.17app.co/8cab3332-2e53-48e2-a588-dc469b091641.png
+          text:
+            key: iap_store_giftpackage_dialog_barrage_desc
+        - imageURL:
+          text:
+            key: iap_store_giftpackage_dialog_gift_desc_newyear
+    purchaseType: 2
+    taInfo: #受眾
+#        registerRange:
+#          dayStart: 0
+          #若為0則不受限制
+#          dayEnd: 0
+        type: 
+#        startTime: #受眾的判斷時間開始時間, 不是禮包的有效時間,若沒有值則不受限制
+#        endTime: #受眾的判斷時間結束時間, 不是禮包的結束時間,若沒有值則不受限制
+    abtestName: "" #禮包測試相關的abtest名稱, 需要 abtest.yaml也做相關的設定
+
+#2021新年禮包Part2_Android 2021-02-19 04:00:00 ~ 2021-02-28
+  - intervalID:  MINV-1oEPx4REBimSR1X5i04XmT4o0yb
+    merchandiseID: media17_giftpackage_tier8_202012_tw #對google play / app store的id
+    productsOrder: #product的順序，product不可為0
+      - barrage_normal_10
+    bonusesOrder: #bonus的順序，如果只有bouns請移至productOrder
+      - gift_2101_newyear_fortune_1_30
+      - gift_2013_b2b_luckybag_7_30
+      - gift_2008_b2b_redenvelope_1_30
+    addons:
+      displayCountdown: true #要不要顯示倒數計時
+      countdownSecs: 86400
+      #距離結束時間多少以前開始 highlight
+      title:
+        key: iap_store_giftpackage_newyear
+      titleImageURL: https://cdn.17app.co/392ead48-62dc-4321-9a86-923458ce19ab.png
+      discountImageURL: 
+      description:
+        - imageURL: https://cdn.17app.co/8cab3332-2e53-48e2-a588-dc469b091641.png
+          text:
+            key: iap_store_giftpackage_dialog_barrage_desc
+        - imageURL:
+          text:
+            key: iap_store_giftpackage_dialog_gift_desc_newyear
+    purchaseType: 2
+    taInfo: #受眾
+#        registerRange:
+#          dayStart: 0
+          #若為0則不受限制
+#          dayEnd: 0
+        type: 
+#        startTime: #受眾的判斷時間開始時間, 不是禮包的有效時間,若沒有值則不受限制
+#        endTime: #受眾的判斷時間結束時間, 不是禮包的結束時間,若沒有值則不受限制
+    abtestName: "" #禮包測試相關的abtest名稱, 需要 abtest.yaml也做相關的設定
+
+#2021新年禮包Part2_iOS 2021-02-19 04:00:00 ~ 2021-02-28
+  - intervalID:  MINV-1oEPx1HVnrMRcMkdBuHe8rgbDG4
+    merchandiseID: media17_giftpackage_tier8_202012_tw #對google play / app store的id
+    productsOrder: #product的順序，product不可為0
+      - barrage_normal_10
+    bonusesOrder: #bonus的順序，如果只有bouns請移至productOrder
+      - gift_2101_newyear_fortune_1_30
+      - gift_2013_b2b_luckybag_7_30
+      - gift_2008_b2b_redenvelope_1_30
+    addons:
+      displayCountdown: true #要不要顯示倒數計時
+      countdownSecs: 86400
+      #距離結束時間多少以前開始 highlight
+      title:
+        key: iap_store_giftpackage_newyear
+      titleImageURL: https://cdn.17app.co/392ead48-62dc-4321-9a86-923458ce19ab.png
+      discountImageURL: 
+      description:
+        - imageURL: https://cdn.17app.co/8cab3332-2e53-48e2-a588-dc469b091641.png
+          text:
+            key: iap_store_giftpackage_dialog_barrage_desc
+        - imageURL:
+          text:
+            key: iap_store_giftpackage_dialog_gift_desc_newyear
+    purchaseType: 2
+    taInfo: #受眾
+#        registerRange:
+#          dayStart: 0
+          #若為0則不受限制
+#          dayEnd: 0
+        type: 
+#        startTime: #受眾的判斷時間開始時間, 不是禮包的有效時間,若沒有值則不受限制
+#        endTime: #受眾的判斷時間結束時間, 不是禮包的結束時間,若沒有值則不受限制
+    abtestName: "" #禮包測試相關的abtest名稱, 需要 abtest.yaml也做相關的設定
+
 #B2B-#330新手禮包_iOS 2021-02-01 ~ 2021-02-28
   - intervalID: MINV-1njvCs5wF5KprlwFoXXK6gWftKF
     merchandiseID: media17_giftpackage_tier10_202101_tw #對google play / app store的id

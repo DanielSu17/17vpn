@@ -4,6 +4,10 @@
 #textureGift: texture gift
 #texture: texture for streamer
 #coupon: coupon 2.0
+
+# TW region group: [TW, TH, ID]
+# US region group: [US, AU, CA, DE, FR, GB, IE, MX, NL, NZ, PH]
+# MENA region group: [DZ, BH, DJ, EG, IR, IQ, IL, JO, KW, LB, LY, MT, MA, OM, QA, SA, SY, TN, AE, PS, YE, ET, SD]
 accompany:
   availableRegion: []
   controlBy: region
@@ -254,7 +258,7 @@ follower_only_comment_mode:
   availableRegion: [ALL]
   controlBy: region
 avatar:
-  availableRegion: [TW, US]
+  availableRegion: [ALL]
   controlBy: Register
   versionControl:
     enable: true
@@ -264,9 +268,13 @@ user_style_page:
   availableRegion: [ALL]
   controlBy: region
 recommendation_system:
-    availableRegion: [TW, ID, TH, JP, US]
-    controlBy: region
+  availableRegion: [TW, ID, TH, JP, US]
+  controlBy: region
 streamer_grow_up_system:
-  availableRegion: [ALL]
+  availableRegion: []
   controlBy: region
   startTime: 1612495800 # 2021年2月5日星期五 11:30:00 GMT+08:00
+  versionControl:
+    enable: true
+    ios: "3.118.0"
+    android: "2.33.0"

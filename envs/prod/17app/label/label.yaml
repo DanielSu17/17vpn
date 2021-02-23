@@ -453,6 +453,14 @@ labelInfos:
     order: 93
     isHide: true
 
+  - id: "17_newyear_2021" # 17來拜年
+    type: 1
+    label:
+      key: "streamer_label_17_newyear"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+    featured: true
+    order: 91
+    isHide: true
 
   - id: "formosa_tv" #民視鳳凰星
     type: 2
@@ -527,6 +535,7 @@ typeCheckAndroidVersion: 2.3.92
 
 # 探索頁面會出現的label，要有4個以上的主播至少有3則貼文(按more才能顯示)
 exploreLabels:
+  - 17_newyear_2021
   - sing_paradise
   - the_voice_of_17
   - dj_night_out
@@ -553,6 +562,41 @@ topicTabLabels:
 
 # labelWhiteList defines relation between label and user list
 labelWhiteList:
+  17_newyear_2021: #17來拜年
+  - 93b20a6e-de53-410c-8aaa-345f29dcda23  #氣直小瑜丸🎣
+  - 3e01cfe3-fd9a-44ea-b653-9b7ed651f47a  #潮帥小車🎹Billy🚗
+#  - e0f23c4f-e6aa-4499-9701-a4bd17ddaf7e  #布洛斯Brose🎸🎤
+  - 8dd91cfa-a95e-4605-bd76-9561cde6309a  #小蝸💭
+  - 529b4131-5472-42a9-bb40-c7ebb7f30419  #BLOOMING_花花🌹
+#  - 414f8f3f-f093-45ad-ba23-b12a50b1f7a3  #木偶Muou🤤🎵
+  - df2df9f7-c38b-4c46-9b1c-0072aa549e45  #八寶粥🥣
+#  - 44a39492-df7d-497c-906c-31ea11ce2d29  #Sonia🦋🦋末末
+#  - 376caf5c-6786-43a8-9cbb-ba122ed3e766  #侯侯🙊
+  - d117f20c-8de6-4068-b593-76eafb851403  #Joyce喬喬🌸
+  - 43fc2cd0-afb0-4e37-9476-d9a8df11b638  #陳樂樂🍀
+  - 01d94dc7-5d99-420a-8822-b14dabec6c5a  #寶倪🌸Baoni
+  - d4773240-6c97-4549-a41e-3b5aef40d6a1  #夢卜兒Phoebe🥕
+  - 4f4d5462-4a9f-483e-b620-9df9c13ec840  #小歐拉💛
+  - b59c7506-6554-40d1-6b3d-f5d4597ed04a  #李泥🌸🌸Jenny
+  - 9a3b9532-a630-4a07-46ce-5260395aed35  #巧庭👑
+#  - 璇璇Alyse🧜‍♀🤿
+  - 42da9ef6-1b1f-4a5d-b26d-45010efb8183  #電玩少女🍁波妮妮
+  - 1e8f0fdf-60ed-4701-9bad-c09afab5defe  #優米🌻Yumey
+#  - b3584a44-f354-4c1e-bca2-76beeeea3d03  #露寶💗
+  - 9d4ac31c-ab42-4ce1-bab2-113a65df5bd7  #雨璇Vanessa
+  - f7502af5-a780-4fcf-abe2-4aba353cd755  #Cindyyyy盟萌👻
+#  - ebdb8b56-bbb1-4e77-ac0a-2d9962dba22a  #冰熙❄BingShi
+#  - 張小于
+#  - 98732bb6-973e-4c58-8299-963bc0b937ef  #凱恩🐻
+#  - 3a76629c-c4f5-4e64-9945-a0a05b7a9f8a  #🌟魚魚公主🌟
+#  - c8d37de7-35de-4567-b46b-e0e6adb5b8b7  #睿睿💜
+  - 33b92014-4da9-4469-981e-c3e4b01efe19  #林昀Yunyun💋
+#  - 0902dbf3-dae8-493d-8f22-a7bb01205d7c  #鳥神
+#  - e5e33b80-b5bd-4a2f-8b1f-bb1e47a5068f  #小藍莓🎀
+  - c9a677c1-c439-446b-b2c9-352e72c1895e  #梓豪Eric👻👻
+  - 0812a536-13e6-438b-5889-ca1ce655dcb9  #允妍🐰YuNa
+#  - 6086140b-3ab3-40b1-b18e-e8f78f369222  #小c瓜🍉_俏喜
+
 
   sing_paradise: #夢想Sing樂園
     - d17ae2f6-544c-4b52-bcd3-d1662ac34b03	#Odori👺
@@ -1727,6 +1771,7 @@ labelWhiteList:
 
 
   fortune_teller: # 命理小舖
+    - 6172b2ec-dd28-4884-75fc-5415c85ba241  #艾莉絲IRIS
   #  - 58fabfe6-958a-415a-a51b-a56e9f045507 # 命運17玩
     - c0754794-5d6d-4b50-916d-c5f82abec5d8	#神算Boss_Mr.德冠
     - 2fbdc276-b4dc-433e-5080-119a69f8d644	#大風神占卜師☀️鐵板神算☯

@@ -10,21 +10,21 @@ levels:
       - id: f4b94347-2674-4f3d-aec3-cd8ee83062dc
         type: 14
         title: "streamer_loyalty_streaming_performance_validstreamedhours"
-        threshold: 20
+        threshold: 72000 # 20 hours
       - id: b86cad4d-ff6e-46cf-ae9c-a18cf6ea00fa
         type: 22
         title: "streamer_growth_risingstar_metrics_scheduletime"
         threshold: 2
       - id: fdb9bc01-8d71-4b36-96bc-c6a678aedf38
-        type: 3
+        type: 25
         title: "streamer_loyalty_streaming_performance_uniquegiftsender"
         threshold: 50
       - id: 9d230e92-7ff2-4756-b3c6-cefc9e713f47
-        type: 21
+        type: 19
         title: "streamer_growth_risingstar_metrics_accumfollowers"
         threshold: 1000
       - id: dc0148e2-8a1f-40cf-8219-66c7e9f2f1f4
-        type: 19
+        type: 21
         title: "streamer_loyalty_streaming_performance_points"
         threshold: 30000
       - id: e84d2bb0-195e-43f7-b706-02f15e7ca57b
@@ -42,11 +42,11 @@ levels:
       - type: 10 # Stickers
         iconURL: https://cdn.17app.co/e2c2a3b5-dded-4e5a-a367-2a4461dd9e51.png
         value:
-        id: StickersID
+        id: 900000
         i18nName: streamer_growth_risingstar_rewards_stickers
         i18nDescription:
         i18nDescriptionParams:
-      - type: 4 # Score
+      - type: 5 # Score
         iconURL: https://cdn.17app.co/83c8256f-0e37-422f-b416-3ccb1071343f.png
         value: 10000
         id:
@@ -82,21 +82,21 @@ levels:
       - id: f4b94347-2674-4f3d-aec3-cd8ee83062dc
         type: 14
         title: "streamer_loyalty_streaming_performance_validstreamedhours"
-        threshold: 25
+        threshold: 90000 # 25 hours
       - id: b86cad4d-ff6e-46cf-ae9c-a18cf6ea00fa
         type: 22
         title: "streamer_growth_risingstar_metrics_scheduletime"
         threshold: 5
       - id: fdb9bc01-8d71-4b36-96bc-c6a678aedf38
-        type: 3
+        type: 25
         title: "streamer_loyalty_streaming_performance_uniquegiftsender"
         threshold: 200
       - id: 9d230e92-7ff2-4756-b3c6-cefc9e713f47
-        type: 21
+        type: 19
         title: "streamer_growth_risingstar_metrics_accumfollowers"
         threshold: 30000
       - id: dc0148e2-8a1f-40cf-8219-66c7e9f2f1f4
-        type: 19
+        type: 21
         title: "streamer_loyalty_streaming_performance_points"
         threshold: 300000
       - id: e84d2bb0-195e-43f7-b706-02f15e7ca57b
@@ -114,11 +114,11 @@ levels:
       - type: 10 # Stickers
         iconURL: https://cdn.17app.co/e2c2a3b5-dded-4e5a-a367-2a4461dd9e51.png
         value:
-        id: StickersID
+        id: 900000
         i18nName: streamer_growth_risingstar_rewards_stickers
         i18nDescription:
         i18nDescriptionParams:
-      - type: 4 # Score
+      - type: 5 # Score
         iconURL: https://cdn.17app.co/83c8256f-0e37-422f-b416-3ccb1071343f.png
         value: 20000
         id:
@@ -148,21 +148,21 @@ levels:
       - id: f4b94347-2674-4f3d-aec3-cd8ee83062dc
         type: 14
         title: "streamer_loyalty_streaming_performance_validstreamedhours"
-        threshold: 30
+        threshold: 108000 # 30 hours
       - id: b86cad4d-ff6e-46cf-ae9c-a18cf6ea00fa
         type: 22
         title: "streamer_growth_risingstar_metrics_scheduletime"
         threshold: 10
       - id: fdb9bc01-8d71-4b36-96bc-c6a678aedf38
-        type: 3
+        type: 25
         title: "streamer_loyalty_streaming_performance_uniquegiftsender"
         threshold: 300
       - id: 9d230e92-7ff2-4756-b3c6-cefc9e713f47
-        type: 21
-        title: "streamer_growth_risingstar_metrics_accumfollowers"
-        threshold: 300000
-      - id: dc0148e2-8a1f-40cf-8219-66c7e9f2f1f4
         type: 19
+        title: "streamer_growth_risingstar_metrics_accumfollowers"
+        threshold: 100000
+      - id: dc0148e2-8a1f-40cf-8219-66c7e9f2f1f4
+        type: 21
         title: "streamer_loyalty_streaming_performance_points"
         threshold: 1000000
       - id: e84d2bb0-195e-43f7-b706-02f15e7ca57b
@@ -180,11 +180,11 @@ levels:
       - type: 10 # Stickers
         iconURL: https://cdn.17app.co/e2c2a3b5-dded-4e5a-a367-2a4461dd9e51.png
         value:
-        id: StickersID
+        id: 900000
         i18nName: streamer_growth_risingstar_rewards_stickers
         i18nDescription:
         i18nDescriptionParams:
-      - type: 4 # Score
+      - type: 5 # Score
         iconURL: https://cdn.17app.co/83c8256f-0e37-422f-b416-3ccb1071343f.png
         value: 30000
         id:
@@ -201,7 +201,7 @@ levels:
       - type: 11 # RedEnvelope
         iconURL: https://cdn.17app.co/923b96d6-92e0-4e60-a7a9-fe8230c10234.png
         value:
-        id: RedEnvelopeID
+        id: redenvelope_no_rising_star  # refer to redenvelope/config.yaml
         i18nName: streamer_growth_risingstar_rewards_redenvelope
         i18nDescription:
         i18nDescriptionParams:
@@ -219,21 +219,21 @@ levels:
       - id: f4b94347-2674-4f3d-aec3-cd8ee83062dc
         type: 14
         title: "streamer_loyalty_streaming_performance_validstreamedhours"
-        threshold: 35
+        threshold: 126000 # 35 hours
       - id: b86cad4d-ff6e-46cf-ae9c-a18cf6ea00fa
         type: 22
         title: "streamer_growth_risingstar_metrics_scheduletime"
         threshold: 15
       - id: fdb9bc01-8d71-4b36-96bc-c6a678aedf38
-        type: 3
+        type: 25
         title: "streamer_loyalty_streaming_performance_uniquegiftsender"
         threshold: 400
       - id: 9d230e92-7ff2-4756-b3c6-cefc9e713f47
-        type: 21
-        title: "streamer_growth_risingstar_metrics_accumfollowers"
-        threshold: 800000
-      - id: dc0148e2-8a1f-40cf-8219-66c7e9f2f1f4
         type: 19
+        title: "streamer_growth_risingstar_metrics_accumfollowers"
+        threshold: 200000
+      - id: dc0148e2-8a1f-40cf-8219-66c7e9f2f1f4
+        type: 21
         title: "streamer_loyalty_streaming_performance_points"
         threshold: 20000000
       - id: e84d2bb0-195e-43f7-b706-02f15e7ca57b
@@ -251,11 +251,11 @@ levels:
       - type: 10 # Stickers
         iconURL: https://cdn.17app.co/e2c2a3b5-dded-4e5a-a367-2a4461dd9e51.png
         value:
-        id: StickersID
+        id: 900001
         i18nName: streamer_growth_risingstar_rewards_stickers
         i18nDescription:
         i18nDescriptionParams:
-      - type: 4 # Score
+      - type: 5 # Score
         iconURL: https://cdn.17app.co/83c8256f-0e37-422f-b416-3ccb1071343f.png
         value: 40000
         id:
@@ -272,14 +272,14 @@ levels:
       - type: 11 # RedEnvelope
         iconURL: https://cdn.17app.co/923b96d6-92e0-4e60-a7a9-fe8230c10234.png
         value:
-        id: RedEnvelopeID
+        id: redenvelope_no_rising_star  # refer to redenvelope/config.yaml
         i18nName: streamer_growth_risingstar_rewards_redenvelope
         i18nDescription:
         i18nDescriptionParams:
       - type: 7 # DirectGift
         iconURL: https://cdn.17app.co/31328f42-0409-4b2b-a186-24b2b5125c5d.png
         value:
-        id: DirectGiftID
+        id: streamer_growth_rising_star_gift_lv4
         i18nName: streamer_growth_risingstar_rewards_gift
         i18nDescription:
         i18nDescriptionParams:
@@ -299,21 +299,21 @@ levels:
       - id: f4b94347-2674-4f3d-aec3-cd8ee83062dc
         type: 14
         title: "streamer_loyalty_streaming_performance_validstreamedhours"
-        threshold: 40
+        threshold: 144000 # 40 hours
       - id: b86cad4d-ff6e-46cf-ae9c-a18cf6ea00fa
         type: 22
         title: "streamer_growth_risingstar_metrics_scheduletime"
         threshold: 20
       - id: fdb9bc01-8d71-4b36-96bc-c6a678aedf38
-        type: 3
+        type: 25
         title: "streamer_loyalty_streaming_performance_uniquegiftsender"
         threshold: 500
       - id: 9d230e92-7ff2-4756-b3c6-cefc9e713f47
-        type: 21
-        title: "streamer_growth_risingstar_metrics_accumfollowers"
-        threshold: 1200000
-      - id: dc0148e2-8a1f-40cf-8219-66c7e9f2f1f4
         type: 19
+        title: "streamer_growth_risingstar_metrics_accumfollowers"
+        threshold: 500000
+      - id: dc0148e2-8a1f-40cf-8219-66c7e9f2f1f4
+        type: 21
         title: "streamer_loyalty_streaming_performance_points"
         threshold: 60000000
       - id: e84d2bb0-195e-43f7-b706-02f15e7ca57b
@@ -331,11 +331,11 @@ levels:
       - type: 10 # Stickers
         iconURL: https://cdn.17app.co/e2c2a3b5-dded-4e5a-a367-2a4461dd9e51.png
         value:
-        id: StickersID
+        id: 900001
         i18nName: streamer_growth_risingstar_rewards_stickers
         i18nDescription:
         i18nDescriptionParams:
-      - type: 4 # Score
+      - type: 5 # Score
         iconURL: https://cdn.17app.co/83c8256f-0e37-422f-b416-3ccb1071343f.png
         value: 50000
         id:
@@ -352,14 +352,14 @@ levels:
       - type: 11 # RedEnvelope
         iconURL: https://cdn.17app.co/923b96d6-92e0-4e60-a7a9-fe8230c10234.png
         value:
-        id: RedEnvelopeID
+        id: redenvelope_no_rising_star  # refer to redenvelope/config.yaml
         i18nName: streamer_growth_risingstar_rewards_redenvelope
         i18nDescription:
         i18nDescriptionParams:
       - type: 7 # DirectGift
         iconURL: https://cdn.17app.co/31328f42-0409-4b2b-a186-24b2b5125c5d.png
         value:
-        id: DirectGiftID
+        id: streamer_growth_rising_star_gift_lv5
         i18nName: streamer_growth_risingstar_rewards_gift
         i18nDescription:
         i18nDescriptionParams:
@@ -370,6 +370,7 @@ levels:
         i18nName: streamer_growth_risingstar_rewards_marquee
         i18nDescription: streamer_growth_risingstar_marquee_wording
         i18nDescriptionParams:
+        animationID: streamer_growth_rising_star_marquee_lv5
     coinsProbability:
       - value: 8000
         weight: 150
