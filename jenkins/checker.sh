@@ -9,7 +9,7 @@ for commit in ${commits};do
     COMMIT_MESSAGE=$(printf "%s\n%s" "${COMMIT_MESSAGE}" "${message}")
 done
 changed_files=$(git log  --name-only --pretty=format: "${GIT_PREVIOUS_SUCCESSFUL_COMMIT}".."${GIT_COMMIT}")
-config_env=$(git log  --name-only --pretty=format: "${GIT_PREVIOUS_SUCCESSFUL_COMMIT}".."${GIT_COMMIT}" | awk -F "/" 'if ($1 == "envs") {print $2}' | sort -u)
+config_env=$(git log  --name-only --pretty=format: "${GIT_PREVIOUS_SUCCESSFUL_COMMIT}".."${GIT_COMMIT}" | awk -F "/" '$1=="envs" {print $2}' | sort -u)
 
 TMP=$(git log  --pretty=format:'%an (%ae)' "${GIT_COMMIT}"^!)
 
