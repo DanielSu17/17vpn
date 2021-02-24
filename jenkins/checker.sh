@@ -51,7 +51,7 @@ main(){
       if [[ "${env}" == "dev" ]]; then
         continue
       fi
-      env_files=$(echo "${changed_files}" | grep ${env} | grep -v md$ | grep -v json$ | tr '\n' ',')
+      env_files=$(echo "${changed_files}" | grep ${env} | grep yaml$ | tr '\n' ',')
       # we use k8s{env} to check configs for {env}
       echo "${env} : ${env_files}"
       docker run --rm -v "$(pwd)":/repo/configs 17media/config-checker:k8s${env} -config_root="/repo/configs" -check_configs="${env_files}"
