@@ -8,8 +8,8 @@ for commit in ${commits};do
     message=$(git log  --pretty=format:'%B' "${commit}"^! | head -n1)
     COMMIT_MESSAGE=$(printf "%s\n%s" "${COMMIT_MESSAGE}" "${message}")
 done
-changed_files=$(git log  --name-only --pretty=format: "${GIT_PREVIOUS_SUCCESSFUL_COMMIT}".."${GIT_COMMIT}")
-config_env=$(git log  --name-only --pretty=format: "${GIT_PREVIOUS_SUCCESSFUL_COMMIT}".."${GIT_COMMIT}" | awk -F "/" '$1=="envs" {print $2}' | sort -u)
+changed_files=$(git log  --name-only --pretty=format: "${GIT_PREVIOUS_SUCCESSFUL_COMMIT}".."${GIT_COMMIT}" | grep yaml$)
+config_env=$(git log  --name-only --pretty=format: "${GIT_PREVIOUS_SUCCESSFUL_COMMIT}".."${GIT_COMMIT}" | grep yaml$ | awk -F "/" '$1=="envs" {print $2}' | sort -u)
 
 TMP=$(git log  --pretty=format:'%an (%ae)' "${GIT_COMMIT}"^!)
 
@@ -51,7 +51,7 @@ main(){
       if [[ "${env}" == "dev" ]]; then
         continue
       fi
-      env_files=$(echo "${changed_files}" | grep ${env} | grep yaml$ | tr '\n' ',')
+      env_files=$(echo "${changed_files}" | grep ${env} | tr '\n' ',')
       # we use k8s{env} to check configs for {env}
       echo "${env} : ${env_files}"
       docker run --rm -v "$(pwd)":/repo/configs 17media/config-checker:k8s${env} -config_root="/repo/configs" -check_configs="${env_files}"
