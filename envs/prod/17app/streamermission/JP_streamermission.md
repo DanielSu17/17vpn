@@ -1,1 +1,1 @@
-# 主播任務 區域設定 JP
+# dailytask mission JP
