@@ -47,8 +47,6 @@ main(){
         fi
     done;
     # local config checker
-    echo "$(pwd)"
-    ls "$(pwd)"
     for env in ${config_env}; do
       if [[ "${env}" == "dev" ]]; then
         continue
@@ -56,6 +54,7 @@ main(){
       env_files=$(echo "${changed_files}" | grep ${env} | tr '\n' ',')
       # we use k8s{env} to check configs for {env}
       echo "${env} : ${env_files}"
+      docker pull "17media/config-checker:k8s${env}"
       docker run --rm -v "$(pwd)":/repo/configs "17media/config-checker:k8s${env}" -config_root="/repo/configs" -check_configs="${env_files}"
     done
     ## get output status ##
