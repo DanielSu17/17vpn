@@ -1,8 +1,18 @@
+# |         mission type        | Value |
+# | -------------------------   | ----- |
+# | TypeStreamerLiveXSeconds    | 14    | 累計開播 X 分鐘
+# | TypeRisingStarScheduleCount | 22    | 開播預告 X 次
+# | TypeReceiveGift             | 25    | 被送禮 X 位
+# | TypeMaxFollowers            | 26    | 最高追蹤數 X 位
+# | TypeStreamerGotBabyCoins    | 21    | 直播時累積被送 X 寶寶幣
+# | TypeRisingStarNewPostCount  | 23    | 新增貼文 X 篇
+
 # control rising star page appearance
 risingStarEnable: false
 
 # rank up animation ID
 animationID: streamer_growth_rising_star_rank_up
+animationDelay: 10 # delay seconds between rank up and reward animations
 
 levels:
   - level: 1
@@ -20,7 +30,7 @@ levels:
         title: "streamer_loyalty_streaming_performance_uniquegiftsender"
         threshold: 50
       - id: 9d230e92-7ff2-4756-b3c6-cefc9e713f47
-        type: 19
+        type: 26 # TypeMaxFollowers
         title: "streamer_growth_risingstar_metrics_accumfollowers"
         threshold: 1000
       - id: dc0148e2-8a1f-40cf-8219-66c7e9f2f1f4
@@ -92,7 +102,7 @@ levels:
         title: "streamer_loyalty_streaming_performance_uniquegiftsender"
         threshold: 200
       - id: 9d230e92-7ff2-4756-b3c6-cefc9e713f47
-        type: 19
+        type: 26 # TypeMaxFollowers
         title: "streamer_growth_risingstar_metrics_accumfollowers"
         threshold: 30000
       - id: dc0148e2-8a1f-40cf-8219-66c7e9f2f1f4
@@ -158,7 +168,7 @@ levels:
         title: "streamer_loyalty_streaming_performance_uniquegiftsender"
         threshold: 300
       - id: 9d230e92-7ff2-4756-b3c6-cefc9e713f47
-        type: 19
+        type: 26 # TypeMaxFollowers
         title: "streamer_growth_risingstar_metrics_accumfollowers"
         threshold: 100000
       - id: dc0148e2-8a1f-40cf-8219-66c7e9f2f1f4
@@ -229,7 +239,7 @@ levels:
         title: "streamer_loyalty_streaming_performance_uniquegiftsender"
         threshold: 400
       - id: 9d230e92-7ff2-4756-b3c6-cefc9e713f47
-        type: 19
+        type: 26 # TypeMaxFollowers
         title: "streamer_growth_risingstar_metrics_accumfollowers"
         threshold: 200000
       - id: dc0148e2-8a1f-40cf-8219-66c7e9f2f1f4
@@ -309,7 +319,7 @@ levels:
         title: "streamer_loyalty_streaming_performance_uniquegiftsender"
         threshold: 500
       - id: 9d230e92-7ff2-4756-b3c6-cefc9e713f47
-        type: 19
+        type: 26 # TypeMaxFollowers
         title: "streamer_growth_risingstar_metrics_accumfollowers"
         threshold: 500000
       - id: dc0148e2-8a1f-40cf-8219-66c7e9f2f1f4
