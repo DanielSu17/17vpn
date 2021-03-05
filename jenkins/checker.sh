@@ -55,7 +55,7 @@ main(){
       # we use k8s{env} to check configs for {env}
       echo "${env} : ${env_files}"
       docker pull "17media/config-checker:k8s${env}"
-      docker run --rm -v "$(pwd)":/repo/configs "17media/config-checker:k8s${env}" -config_root="/repo/configs" -check_configs="${env_files}"
+      docker run --rm -v "$(pwd)":/repo/configs "17media/config-checker:k8s${env}" -config_root="/repo/configs" -check_configs="${env_files}" -notif_user="${USERID}"
     done
     ## get output status ##
     LOCAL_CHECKER_STATUS=$?
