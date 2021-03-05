@@ -1,5 +1,6 @@
 #!/bin/bash
-#  circle/remote_check.py
+# removed
+# circle/remote_check.py
 CHECKER="circle/syntax_checker.py circle/check_providers.py"
 ERROR_TAGGING=',{"type":"section","text":{"type":"mrkdwn","text":"@sre"}}'
 #COMMIT_MESSAGE=$(git log  --pretty=format:'%B' "${GIT_COMMIT}"^! | head -n1)
