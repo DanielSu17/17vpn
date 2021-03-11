@@ -152,7 +152,7 @@ rtmp_providers:
   
 - name: WANSU_LOW_LATENCY
   quality_support: 1
-  weight: 0
+  weight: 100
   region_weights:
     TW: 0
   users:
@@ -189,7 +189,7 @@ rtmp_providers:
   quality_support: 0
   weight: 0
   region_weights:
-    TW: 0
+    TW: 100
     HK: 0
     US: 0
   levelRestriction:
@@ -246,7 +246,7 @@ rtmp_providers:
 - name: LIVE17
   quality_support: 0
   expire_after_hours: 6
-  weight: 100
+  weight: 0
   levelRestriction:
     minLevel: 0
     maxLevel: 0
