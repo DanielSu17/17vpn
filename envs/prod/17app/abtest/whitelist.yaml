@@ -1,3 +1,8 @@
+# this config is for QA test only
+# when enableABtest is false,
+# the users still follow the config grouping logics if their userID/deviceID/ip is in the whitelist
+# note: some of the abtest might not support deviceWhitelist/ipWhitelist,
+# please check with RD if you need to use deviceWhitelist/ipWhitelist
 userWhitelist:
 - a4e565c0-3bc9-4feb-8c32-0570281c4cbb # va.p201105
 - c1468fdc-9c5e-4e86-9b0f-3fae2be374ce # va.p201107
