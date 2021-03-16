@@ -27,6 +27,7 @@ groups:
     snapshot:           "go"
     spinnaker:          "spinnaker"
     17app:              "spinnaker"
+    17app-canary:       "canary"
   frontend:
     skyeye:          "go"
     admin:           "nodejs"
@@ -66,7 +67,8 @@ settings:
       endpoint: '17App/job/awsprod-deployment-goapi/buildWithParameters?token=WPZgd7ag4Q7ksL3nSqLW2QVq6aaDK5apguCvR23M'
     k8suat:
       endpoint: 'k8suat-deployment/buildWithParameters?token=qLnZFhgbtDwYHq3bpqdsfHkXqEbMS7VAuTshkBrQ'
-    k8ssta-canary:
+  canary:
+    k8ssta:
       endpoint: 'k8ssta-canary-deployment/buildWithParameters?token=qLnZFhgbtDwYHq3bpqdsfHkXqEbMS7VAuTshkBrQ'
   nodejs:
     k8ssta:
@@ -147,6 +149,25 @@ batchDeploy:
     awssta:
       - "goapi"
       - "revprox"
+  17app-canary:
+    k8ssta:
+      - "goapi"
+      - "aggr-gateway"
+      - "bbrich"
+      - "revprox"
+      - "worker"
+      - "data-middleware"
+      - "go-cron"
+      - "golives"
+      - "gocells"
+      - "gotrade"
+      - "goplatform"
+      - "gousersearch"
+      - "exchange"
+      - "slackbot"
+      - "eventory"
+      - "eventory-worker"
+      - "snapshot"
 
 # abstractEnvs is designed for cross cloud environment,
 # deploying using allprod stands for deploying to both
