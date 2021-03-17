@@ -335,6 +335,8 @@ func mergePush() {
 
 	execCommand("./", "git", []string{"checkout", "master"})
 
+	execCommand("./", "git", []string{"pull", "origin", "master"})
+
 	execCommand("./", "git", []string{"merge", branchName})
 
 	execCommand("./", "git", []string{"push", "origin", "master"})
