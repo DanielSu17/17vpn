@@ -1,6 +1,6 @@
 # StreamProfile Restrictions
 
-- `regionRestrict`: the default is set to 540p
+- `regionRestrict`: the default is set to 360p
 - `providerRestrict`: the default is set to 360p
 
 
