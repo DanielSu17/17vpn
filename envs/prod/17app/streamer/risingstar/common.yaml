@@ -3,6 +3,14 @@ risingStarRewardPinMinutes: 10 # 10min indicates the stream room starts to check
 
 dailyStreamLimitSec: 7200 # 2 hours a day
 
+# 0: MigrationStageMongo
+# 1: MigrationStageHybrid
+# 2: MigrationStageRedis
+migrationInfo: 
+  defaultStage: 0
+  newStageStartTime: 2021-04-01 00:00:00 (GMT+0800)
+  newStage: 2
+
 # animation list for rising star
 animationList:
   - animationID: streamer_growth_rising_star_rank_up
