@@ -109,10 +109,10 @@ monsters:
   - id: monster_babyrobot_coin #寶寶機器人挖到金幣
     hit_consume: 10
     duration: 60s
-    stream_alive_threshold: 1m00s
+    stream_alive_threshold: 0m30s
     animation: "babyrobotcoin"
     available_dates:
-    - start_date: "2020-07-28T18:00:00+08:00"
+    - start_date: "2021-03-19T16:00:00+08:00"
       end_date: "2021-09-01T18:00:00+08:00"
     appear_durations:
     - start_time: 00h00m00s
@@ -121,7 +121,7 @@ monsters:
     share_ratio: 50 # percentage
     profit_ratio: 35 # percentage
     bonus: 336
-    weight: 1
+    weight: 0.6
     infoPageiconURL: https://cdn.17app.co/fb329dbe-9c30-4b40-af34-8d6479a8e3ec.png
     winnerPageiconURL: https://cdn.17app.co/d110ee5c-34a1-47ca-9319-49a2a381b3e8.png
     hintToken: {key: monster_battle_hint_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
@@ -135,7 +135,7 @@ monsters:
     marqueeToken: {key: monster_battle_marquee_babyrobot}
     summonGifts: # 招喚怪獸才需要填
     - giftID: "life3d_gbye"
-      probability: 10000 # n / 10000 * 100%
+      probability: 100 # n / 10000 * 100%
 
 #- id: monster_babyrobot_shit #寶寶機器人挖到便便
 #  hit_consume: 10
