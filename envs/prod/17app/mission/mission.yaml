@@ -40,41 +40,6 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
-- ID: llll0f-d1b1-44cr-9a74-8z2bbb070igg
-  type: 10
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2015_b2b_sakura
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_first_time_IAP_point_event_title
-  i18nTitleParams:
-  - value: “3540”
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: “”
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
-  i18nDescriptionParams: []
-  goalValue: 3540
-  enableTimeRange:
-  - startTime: 2021-03-16 00:00:00 (GMT+0800)
-    endTime: 2021-03-31 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: false
-
-
 - ID: a16274a3-dda9-40ad-af2f-f400e418daa8
   type: 9
   category: 0
@@ -235,6 +200,68 @@ missions:
   - android
   - ios
   requirePhoneBinding: false
+  withReminder: false
+- ID: 9b7b3b8a-15d5-4857-be4b-3cc788850d6f
+  type: 24
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2007_tw_marketing_bp
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_daily_checkin_title
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_daily_checkin_descr
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2021-04-01 18:00:00 (GMT+0800)
+    endTime: 2021-04-10 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: llll0f-d1b1-44cr-9a74-8z2bbb070igg
+  type: 10
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2015_b2b_sakura
+    amount: 3
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_first_time_IAP_point_event_title
+  i18nTitleParams:
+  - value: “3540”
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: “”
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
+  i18nDescriptionParams: []
+  goalValue: 3540
+  enableTimeRange:
+  - startTime: 2021-03-16 00:00:00 (GMT+0800)
+    endTime: 2021-03-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
   withReminder: false
 - ID: 3120dad5-591d-488c-b749-f9150b1961e5
   type: 9
