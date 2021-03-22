@@ -201,6 +201,39 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
+- ID: 6455e0fe-07c1-47ec-a322-46bba6a6e3b6
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 5
+  reward:
+    rewardType: 1
+    rewardID: 2103_tw_social_distance
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "60"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 3600
+  enableTimeRange:
+  - startTime: 2021-03-22 18:00:00 (GMT+0800)
+    endTime: 2021-03-24 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: true
 - ID: 37e0bb22-71f2-4819-9ea3-758f774d5ad6
   type: 13
   category: 0
@@ -228,39 +261,6 @@ missions:
   enableTimeRange:
   - startTime: 2021-03-21 18:00:00 (GMT+0800)
     endTime: 2021-03-22 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: true
-- ID: 6455e0fe-07c1-47ec-a322-46bba6a6e3b6
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 5
-  reward:
-    rewardType: 1
-    rewardID: 2103_tw_social_distance
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "30"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 1800
-  enableTimeRange:
-  - startTime: 2021-03-22 18:00:00 (GMT+0800)
-    endTime: 2021-03-24 23:59:59 (GMT+0800)
   refIDs: []
   platforms:
   - android
