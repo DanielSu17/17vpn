@@ -139,6 +139,69 @@ monsters:
     - giftID: "life3d_gbye"
       probability: 10000 # n / 10000 * 100%
 
+  - id: monster_circus_monkey #猴子騎單輪車
+    hit_consume: 10
+    duration: 60s
+    stream_alive_threshold: 0m30s
+    animation: "monkey"
+    available_dates:
+    - start_date: "2021-03-19T16:00:00+08:00"
+      end_date: "2021-09-01T18:00:00+08:00"
+    appear_durations:
+    - start_time: 00h00m00s
+      end_time: 23h59m59s
+    type: 1
+    share_ratio: 50 # percentage
+    profit_ratio: 35 # percentage
+    bonus: 336
+    weight: 1
+    infoPageiconURL: https://cdn.17app.co/fb329dbe-9c30-4b40-af34-8d6479a8e3ec.png
+    winnerPageiconURL: https://cdn.17app.co/d110ee5c-34a1-47ca-9319-49a2a381b3e8.png
+    hintToken: {key: monster_battle_hint_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+    rule1Token: {key: monster_battle_rule1_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+    rule2Token: {key: monster_battle_rule2_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+    rule3Token: {key: monster_battle_rule3_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+    rule4Token: {key: monster_battle_rule4_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+    countdownToken: {key: monster_battle_countdown_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+    failureToken: {key: monster_battle_failure_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+    successToken: {key: monster_battle_success_coin,fontAttribute: {textColor: "#FFFFFF"}}
+    marqueeToken: {key: monster_battle_marquee_babyrobot}
+    summonGifts: # 招喚怪獸才需要填
+    - giftID: "life3d_gbye"
+      probability: 10000 # n / 10000 * 100%
+
+  - id: monster_circus_elephant #大象踩球
+    hit_consume: 10
+    duration: 60s
+    stream_alive_threshold: 0m30s
+    animation: "elephant"
+    available_dates:
+    - start_date: "2021-03-19T16:00:00+08:00"
+      end_date: "2021-09-01T18:00:00+08:00"
+    appear_durations:
+    - start_time: 00h00m00s
+      end_time: 23h59m59s
+    type: 1
+    share_ratio: 50 # percentage
+    profit_ratio: 35 # percentage
+    bonus: 336
+    weight: 1
+    infoPageiconURL: https://cdn.17app.co/fb329dbe-9c30-4b40-af34-8d6479a8e3ec.png
+    winnerPageiconURL: https://cdn.17app.co/d110ee5c-34a1-47ca-9319-49a2a381b3e8.png
+    hintToken: {key: monster_battle_hint_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+    rule1Token: {key: monster_battle_rule1_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+    rule2Token: {key: monster_battle_rule2_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+    rule3Token: {key: monster_battle_rule3_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+    rule4Token: {key: monster_battle_rule4_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+    countdownToken: {key: monster_battle_countdown_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+    failureToken: {key: monster_battle_failure_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+    successToken: {key: monster_battle_success_coin,fontAttribute: {textColor: "#FFFFFF"}}
+    marqueeToken: {key: monster_battle_marquee_babyrobot}
+    summonGifts: # 招喚怪獸才需要填
+    - giftID: "life3d_gbye"
+      probability: 10000 # n / 10000 * 100%
+
+
 #- id: monster_babyrobot_shit #寶寶機器人挖到便便
 #  hit_consume: 10
 #  duration: 60s
@@ -915,6 +978,62 @@ animationLoader:
     MD5: c2bff95eabe243c53a593890d91ab1f3
     webpUrl: https://cdn.17app.co/705b02c5-6148-4dad-9153-3b3970863f17-q90-s1.webp
     webMD5: 2971dc411bef27f762211dd8b7b38045
+
+#猴子騎單輪車  monster_circus_monkey
+  - animationID: monkey_attack
+    url: http://cdn.17app.co/528560ec-62ba-4bb4-86cc-ec713fc8d1e4.zip
+    MD5: 55d9a99902c8af683e093f9bc65c4e26
+    webpUrl: https://cdn.17app.co/a3323a91-579e-49c0-a15c-95d1a2dba634-q90-s1.webp
+    webpMD5: 1defe2d2f80cd910cdff97c21c5bc5a1
+  - animationID: monkey_enter
+    url: http://cdn.17app.co/71baf236-0633-4213-8111-a4eb2b4a3991.zip
+    MD5: f805da6265bbcaa6001883ae0bd108aa
+    webpUrl: https://cdn.17app.co/56233885-3684-4af2-b844-f2a990eedf8f-q90-s1.webp
+    webMD5: de15f3cd82815d15cac3b10ad758354f
+  - animationID: monkey_failure
+    url: http://cdn.17app.co/2abfa806-05e7-41e1-acc2-fc04eba19b30.zip
+    MD5: e61ae1b8f51e23594325404084e1fd9c
+    webpUrl: https://cdn.17app.co/f700d3f3-4825-46d0-b7f2-674664f23e2a-q90-s1.webp
+    webMD5: 6cb8c2f2e688574ba5e752f032ac8dff
+  - animationID: monkey_idle
+    url: http://cdn.17app.co/d42052e9-c074-466d-b9ba-14a1e6d74c62.zip
+    MD5:  1f1e749b747df73191db4f41646a983e
+    webpUrl: https://cdn.17app.co/e0a4082a-2d10-436b-b598-d747fde0e0af-q90-s1.webp
+    webpMD5: a09724ec5251bb67ca37d3262ba57c70
+  - animationID: monkey_coin
+    url: http://cdn.17app.co/b0753b40-9796-449c-aa63-c46791aacd41.zip
+    MD5: c2bff95eabe243c53a593890d91ab1f3
+    webpUrl: https://cdn.17app.co/705b02c5-6148-4dad-9153-3b3970863f17-q90-s1.webp
+    webMD5: 2971dc411bef27f762211dd8b7b38045
+
+#大象踩球  monster_circus_elephant
+  - animationID: elephant_attack
+    url: http://cdn.17app.co/528560ec-62ba-4bb4-86cc-ec713fc8d1e4.zip
+    MD5: 55d9a99902c8af683e093f9bc65c4e26
+    webpUrl: https://cdn.17app.co/a3323a91-579e-49c0-a15c-95d1a2dba634-q90-s1.webp
+    webpMD5: 1defe2d2f80cd910cdff97c21c5bc5a1
+  - animationID: elephant_enter
+    url: http://cdn.17app.co/71baf236-0633-4213-8111-a4eb2b4a3991.zip
+    MD5: f805da6265bbcaa6001883ae0bd108aa
+    webpUrl: https://cdn.17app.co/56233885-3684-4af2-b844-f2a990eedf8f-q90-s1.webp
+    webMD5: de15f3cd82815d15cac3b10ad758354f
+  - animationID: elephant_failure
+    url: http://cdn.17app.co/2abfa806-05e7-41e1-acc2-fc04eba19b30.zip
+    MD5: e61ae1b8f51e23594325404084e1fd9c
+    webpUrl: https://cdn.17app.co/f700d3f3-4825-46d0-b7f2-674664f23e2a-q90-s1.webp
+    webMD5: 6cb8c2f2e688574ba5e752f032ac8dff
+  - animationID: elephant_idle
+    url: http://cdn.17app.co/d42052e9-c074-466d-b9ba-14a1e6d74c62.zip
+    MD5:  1f1e749b747df73191db4f41646a983e
+    webpUrl: https://cdn.17app.co/e0a4082a-2d10-436b-b598-d747fde0e0af-q90-s1.webp
+    webpMD5: a09724ec5251bb67ca37d3262ba57c70
+  - animationID: elephant_coin
+    url: http://cdn.17app.co/b0753b40-9796-449c-aa63-c46791aacd41.zip
+    MD5: c2bff95eabe243c53a593890d91ab1f3
+    webpUrl: https://cdn.17app.co/705b02c5-6148-4dad-9153-3b3970863f17-q90-s1.webp
+    webMD5: 2971dc411bef27f762211dd8b7b38045
+
+
 
   - animationID: ugly_attack
     url: https://cdn.17app.co/8abe41f3-596a-4f6e-b857-d90c6c887624.zip
