@@ -171,21 +171,21 @@ monsters:
       probability: 10000 # n / 10000 * 100%
 
   - id: monster_circus_elephant #大象踩球
-    hit_consume: 10
+    hit_consume: 20
     duration: 60s
-    stream_alive_threshold: 0m30s
-    animation: "babyrobotshit"
+    stream_alive_threshold: 1m00s
+    animation: "circuselephant"
     available_dates:
-    - start_date: "2021-03-19T16:00:00+08:00"
-      end_date: "2021-09-01T18:00:00+08:00"
+    - start_date: "2021-04-10T00:00:00+08:00"
+      end_date: "2021-04-16T23:59:59+08:00"
     appear_durations:
     - start_time: 00h00m00s
       end_time: 23h59m59s
-    type: 1
+    type: 1 
     share_ratio: 50 # percentage
     profit_ratio: 35 # percentage
     bonus: 336
-    weight: 1
+    weight: 0.6
     infoPageiconURL: https://cdn.17app.co/fb329dbe-9c30-4b40-af34-8d6479a8e3ec.png
     winnerPageiconURL: https://cdn.17app.co/d110ee5c-34a1-47ca-9319-49a2a381b3e8.png
     hintToken: {key: monster_battle_hint_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
@@ -198,8 +198,8 @@ monsters:
     successToken: {key: monster_battle_success_coin,fontAttribute: {textColor: "#FFFFFF"}}
     marqueeToken: {key: monster_battle_marquee_babyrobot}
     summonGifts: # 招喚怪獸才需要填
-    - giftID: "2011_jp_gameooh_m_2"
-      probability: 10000 # n / 10000 * 100%
+    - giftID: "2103_tw_circus_ticket_bp"
+      probability: 1500 # n / 10000 * 100%
 
 
 #- id: monster_babyrobot_shit #寶寶機器人挖到便便
