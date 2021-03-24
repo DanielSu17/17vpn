@@ -40,7 +40,7 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
-- ID: d0dc0a5c-492a-4544-9234-ee0fbe9b4210
+- ID: 0a5e5054-8287-442c-b7ea-89ec3947055f
   type: 24
   category: 0
   lifeCycle: 2
@@ -50,7 +50,7 @@ missions:
     max: 999
   reward:
     rewardType: 2
-    rewardID: avatar-mission-reward-1
+    rewardID: 202101-en-outerwears
     amount: 15
     expireTimeSecs: 86400
   i18nTitle: baggage_mission_7d_checkin_title
@@ -61,8 +61,8 @@ missions:
   i18nDescriptionParams: []
   goalValue: 7
   enableTimeRange:
-  - startTime: 2021-02-25 14:00:00 (GMT+0900)
-    endTime: 2021-03-18 14:00:00 (GMT+0900)
+  - startTime: 2021-03-24 18:00:00 (GMT+0800)
+    endTime: 2021-03-31 00:00:00 (GMT+0800)
   refIDs: []
   platforms:
   - android
@@ -98,7 +98,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-#new payer mission
 - ID: 33dae081-690a-49db-90b4-f94fd55dc1fb
   type: 8
   category: 0
@@ -136,7 +135,7 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-- ID: aaf36a9d-c47b-41af-bf57-0a39d21b05f9
+- ID: 06ccc35c-d0e5-408a-a0f6-9aeeccfe826a
   type: 9
   category: 0
   lifeCycle: 0
@@ -146,7 +145,7 @@ missions:
     max: 999
   reward:
     rewardType: 2
-    rewardID: avatar-mission-reward-1
+    rewardID: 202101-en-outerwears
     amount: 1
     expireTimeSecs: 86400
   i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
@@ -161,15 +160,15 @@ missions:
   i18nDescriptionParams: []
   goalValue: 1800
   enableTimeRange:
-  - startTime: 2021-02-25 14:00:00 (GMT+0900)
-    endTime: 2021-03-18 14:00:00 (GMT+0900)
+  - startTime: 2021-03-24 18:00:00 (GMT+0800)
+    endTime: 2021-03-31 00:00:00 (GMT+0800)
   refIDs: []
   platforms:
   - android
   - ios
   requirePhoneBinding: false
   withReminder: false
-- ID: 3bbe5ab3-ae3a-4b7c-92df-b0d116a67baa
+- ID: d2568d03-54e5-40a3-9f74-42c3c29159ed
   type: 9
   category: 0
   lifeCycle: 0
@@ -179,7 +178,7 @@ missions:
     max: 999
   reward:
     rewardType: 2
-    rewardID: avatar-mission-reward-1
+    rewardID: 202101-en-outerwears
     amount: 1
     expireTimeSecs: 86400
   i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
@@ -194,15 +193,15 @@ missions:
   i18nDescriptionParams: []
   goalValue: 3600
   enableTimeRange:
-  - startTime: 2021-02-25 14:00:00 (GMT+0900)
-    endTime: 2021-03-18 14:00:00 (GMT+0900)
+  - startTime: 2021-03-24 18:00:00 (GMT+0800)
+    endTime: 2021-03-31 00:00:00 (GMT+0800)
   refIDs: []
   platforms:
   - android
   - ios
   requirePhoneBinding: false
   withReminder: false
-- ID: 30dd2a92-e66b-4e30-acaa-445222524201
+- ID: 89119e35-6e16-45e3-8f2e-9a7372ba5da2
   type: 9
   category: 0
   lifeCycle: 0
@@ -212,7 +211,7 @@ missions:
     max: 999
   reward:
     rewardType: 2
-    rewardID: avatar-mission-reward-1
+    rewardID: 202101-en-outerwears
     amount: 1
     expireTimeSecs: 86400
   i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
@@ -227,8 +226,37 @@ missions:
   i18nDescriptionParams: []
   goalValue: 4800
   enableTimeRange:
-  - startTime: 2021-02-25 14:00:00 (GMT+0900)
-    endTime: 2021-03-18 14:00:00 (GMT+0900)
+  - startTime: 2021-03-24 18:00:00 (GMT+0800)
+    endTime: 2021-03-31 00:00:00 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: df5fe798-b7de-4f2c-982f-22fbbd50876d
+  type: 24
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 2
+    rewardID: 202101-en-outerwears
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_daily_checkin_title
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_daily_checkin_descr
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2021-03-24 18:00:00 (GMT+0800)
+    endTime: 2021-03-31 00:00:00 (GMT+0800)
   refIDs: []
   platforms:
   - android
@@ -334,172 +362,6 @@ missions:
     endTime: 2021-03-31 21:00:00 (GMT-0800)
   refIDs:
   - 2103_us_newbies_1
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 777f777e-42df-4de5-9311-d2b6de1ac265
-  type: 24
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 2
-    rewardID: avatar-mission-reward-1
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_daily_checkin_title
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_daily_checkin_descr
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2021-02-25 14:00:00 (GMT+0900)
-    endTime: 2021-03-18 14:00:00 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: e0b5fc89-88d0-4f1e-ab66-f5654193f606
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2102_us_minions_bp
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "30"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_content_desc
-  i18nDescriptionParams: []
-  goalValue: 1800
-  enableTimeRange:
-  - startTime: 2021-02-15 18:00:00 (GMT-0800)
-    endTime: 2021-02-28 21:00:00 (GMT-0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: c81eede0-2a35-42b2-926a-66a0cc80e2a4
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2102_us_newbies_bp
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "30"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 1800
-  enableTimeRange:
-  - startTime: 2021-02-01 09:00:00 (GMT+0800)
-    endTime: 2021-02-28 11:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: e2ed33e7-0307-4245-b3fc-3b05321617ae
-  type: 5
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2102_us_newbies_bp
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_leave_comment_reward_title
-  i18nTitleParams:
-  - value: "10"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_leave_comment_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 10
-  enableTimeRange:
-  - startTime: 2021-02-01 09:00:00 (GMT+0800)
-    endTime: 2021-02-28 11:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 2fdba35d-1495-4dfb-9701-debd60077ff9
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2102_us_newbies_bp
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
-  i18nTitleParams:
-  - value: "2"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: Welcome Ceremony
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 2
-  enableTimeRange:
-  - startTime: 2021-02-01 09:00:00 (GMT+0800)
-    endTime: 2021-02-28 11:59:59 (GMT+0800)
-  refIDs:
-  - 2102_us_newbies_1
   platforms:
   - android
   - ios
