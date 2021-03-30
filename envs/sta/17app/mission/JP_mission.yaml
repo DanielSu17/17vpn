@@ -2593,6 +2593,49 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
+#裏シャイニング 小ギフト
+- ID: 40c7d6af-5e91-47ec-8f95-9e560649890f
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 7
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2103_jp_thedarkshiningmar_bp_a
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_sendgift_jp_urashining1
+  i18nTitleParams:
+  - value: "1"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  - value: 2103_jp_thedarkshiningmar_s
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_sendgift_jp_urashininga
+  i18nDescriptionParams:
+  - value: "14"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  goalValue: 14
+  enableTimeRange:
+  - startTime: 2021-02-14 00:00:00 (GMT+0900)
+    endTime: 2021-04-16 23:59:59 (GMT+0900)
+  refIDs:
+  - 2103_jp_thedarkshiningmar_s
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
 i18nMissionCompleteToast: baggage_mission_toast_claimed
 refreshHour: 5
 supportedVersion:
