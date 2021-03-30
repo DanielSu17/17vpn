@@ -7,6 +7,11 @@
 # | TypeStreamerGotBabyCoins    | 21    | 直播時累積被送 X 寶寶幣
 # | TypeRisingStarNewPostCount  | 23    | 新增貼文 X 篇
 
+#Rising star: The config can only be changed at 00:00(GMT+8) or after a few mins and the first date of the month (reset date) manually.
+#Please avoid changing the setting in the middle of the month, will effect all streamers’ metrics record
+#Please note that if you want to change the value of the metrics, you will need to change the "Streamer grow up instruction info page" as well (info page)
+
+
 # control rising star page appearance
 risingStarEnable: true
 startTime: 2021-03-01 00:00:00 (GMT+0800)
@@ -24,13 +29,14 @@ whiteList:
   - "a6197cb7-4677-46fc-9012-4e037cd1eaed" # critic___
   - "a9b23cbe-8960-4f98-988e-90b9f6eeb86e" # erictest2
 
+# Below are the metrics logic calulated by Backend, you can change the related threshold
 levels:
   - level: 1
     metrics:
       - id: f4b94347-2674-4f3d-aec3-cd8ee83062dc
         type: 14
         title: "streamer_loyalty_streaming_performance_validstreamedhours"
-        threshold: 72000 # 20 hours
+        threshold: 72000 # 20 hours #validstreamedhours(here 72000 means 72000 mins) # 有效開播小時
       - id: b86cad4d-ff6e-46cf-ae9c-a18cf6ea00fa
         type: 22
         title: "streamer_growth_risingstar_metrics_scheduletime"
@@ -38,19 +44,21 @@ levels:
       - id: fdb9bc01-8d71-4b36-96bc-c6a678aedf38
         type: 25
         title: "streamer_loyalty_streaming_performance_uniquegiftsender"
-        threshold: 50
+        threshold: 50 #uniquegiftsender # 不重複送禮人數
       - id: 9d230e92-7ff2-4756-b3c6-cefc9e713f47
         type: 26 # TypeMaxFollowers
         title: "streamer_growth_risingstar_metrics_accumfollowers"
-        threshold: 1000
+        threshold: 1000 #Maxaccumfollowers #累積粉絲人數
       - id: dc0148e2-8a1f-40cf-8219-66c7e9f2f1f4
         type: 21
         title: "streamer_loyalty_streaming_performance_points"
-        threshold: 30000
+        threshold: 30000 #Receivedbabycoins # 寶寶幣總額
       - id: e84d2bb0-195e-43f7-b706-02f15e7ca57b
         type: 23
         title: "streamer_loyalty_streaming_performance_newpost"
-        threshold: 2
+        threshold: 2 #newpostcount # 新貼文數
+    
+    # Below are the settings of reward on the info page, don't adjust it, if you want to change it, please check with PM
     rewards:
       - type: 9 # Badge
         iconURL: https://cdn.17app.co/85c45c9d-7c90-4d89-b363-1ce70f3dd747.png
