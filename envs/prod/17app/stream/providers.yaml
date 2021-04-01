@@ -13,9 +13,9 @@ rtmp_providers:
   quality_support: 0
   weight: 0
 - name: QINIU
-  weight: 15
+  weight: 5
   region_weights:
-    TW: 5
+    TW: 3
     EG: 0
     HK: 5
     JP: 1
@@ -142,10 +142,10 @@ rtmp_providers:
   quality_support: 1
   weight: 60
   region_weights:
-    TW: 65
+    TW: 67
     HK: 95
-    JP: 3
-    US: 40
+    JP: 58
+    US: 70
     EG: 0
   users:
   - 87614b98-d226-4cd8-7ef3-a6dafd15ecf6 # 17q_test
@@ -197,11 +197,11 @@ rtmp_providers:
   - 4d9b0752-f90c-4b03-b565-f9c9e51f25fa # garyshii (for CHT testing)
 - name: AWS
   quality_support: 0
-  weight: 10
+  weight: 0
   region_weights:
     TW: 0
-    JP: 55
-    US: 30
+    JP: 0
+    US: 0
     EG: 0
     HK: 0
   levelRestriction:
@@ -274,7 +274,7 @@ rtmp_providers:
 - name: LIVE17
   quality_support: 0
   expire_after_hours: 6
-  weight: 0
+  weight: 5
   region_weights:
     TW: 30
     JP: 40
