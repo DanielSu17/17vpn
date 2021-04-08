@@ -465,6 +465,39 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
+- ID: 5c4baa01-c27b-4494-841a-c202f037d43c
+  type: 10
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 21
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2103_tw_circus_ticket_bp
+    amount: 3
+    expireTimeSecs: 259200
+  i18nTitle: baggage_mission_first_time_IAP_point_tw_event_title_event
+  i18nTitleParams:
+  - value: "1720"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
+  i18nDescriptionParams: []
+  goalValue: 1720
+  enableTimeRange:
+  - startTime: 2021-03-27 00:00:00 (GMT+0800)
+    endTime: 2021-04-23 20:14:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: false
 - ID: 5faebc1a-65aa-4a59-a560-cac301a4398c
   type: 3
   category: 0
@@ -696,39 +729,6 @@ missions:
   - 2103_tw_circus_l
   - 2103_tw_circus_l_bag
   - 2103_tw_circus_m_bag
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: false
-- ID: 5c4baa01-c27b-4494-841a-c202f037d43c
-  type: 10
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 21
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2103_tw_circus_ticket_bp
-    amount: 3
-    expireTimeSecs: 259200
-  i18nTitle: baggage_mission_first_time_IAP_point_tw_event_title
-  i18nTitleParams:
-  - value: "1720"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
-  i18nDescriptionParams: []
-  goalValue: 1720
-  enableTimeRange:
-  - startTime: 2021-03-27 00:00:00 (GMT+0800)
-    endTime: 2021-04-23 20:14:59 (GMT+0800)
-  refIDs: []
   platforms:
   - android
   - ios
