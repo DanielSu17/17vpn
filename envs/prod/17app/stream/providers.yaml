@@ -198,14 +198,14 @@ rtmp_providers:
   quality_support: 0
   weight: 0
   region_weights:
-    TW: 0
-    JP: 0
+    TW: 10
+    JP: 5
     US: 0
     EG: 0
     HK: 0
   levelRestriction:
     minLevel: 0
-    maxLevel: 300
+    maxLevel: 50
   timeRestriction:
     enabledAtUTCHour: 0
     disabledAtUTCHour: 23
@@ -275,8 +275,8 @@ rtmp_providers:
   expire_after_hours: 6
   weight: 5
   region_weights:
-    TW: 30
-    JP: 40
+    TW: 20
+    JP: 35
     US: 0
     EG: 0
     HK: 0
