@@ -69,7 +69,7 @@ for config_path in ${config_paths}; do
     else
       echo "abort, no endpoint defined"
       curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":warning:Push to ETCD Failed. (${config_env}):red_thinking::etcd:\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Message*:${COMMIT_MESSAGE}\n*Lastest Commit*:${GIT_COMMIT}  *Job*: <${BUILD_URL}|URL> @sre\"}]},{\"type\":\"divider\"}]}" "${SLACK}"
-      exit 1
+      # exit 1 ignore error if endpoint not found
     fi
     curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":white_check_mark:Push to ETCD Successfully. (${config_env}):etcd:\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Message*:${COMMIT_MESSAGE}\n*Lastest Commit*:${GIT_COMMIT}  *Job*: <${BUILD_URL}|URL>\"}]},{\"type\":\"divider\"}]}" "${SLACK}"
   else
