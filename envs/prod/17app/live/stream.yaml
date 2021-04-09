@@ -2,14 +2,14 @@ pnCheckNotif: 300 # 5 mins
 minAndroidCaptionBlockVersion: "3.13.0"
 minIOSCaptionBlockVersion: "4.101.0"
 
-captionBlockConf: 
+captionBlockConf:
   oldClientEnable: false
   newClientEnable: true
   minIOSVersionRequired: "3.13.0"
   minAndroidVersionRequired: "4.101.0"
 
 forcePromoteVirtualStream: false
-enableExtInfoTypeEvent: true
+enableExtInfoTypeEvent: false
 
 followerCountTriggerEvent: 100000
 
@@ -108,7 +108,7 @@ hotCellOrder:
     - regions: ["DEFAULT"]
     - regions: ["US"]
     - regions: ["OTHERS"]
-    
+
 birthdayComment:
   contentColor: "#28232D"
   backgroundColor: "#FFFFFF"
@@ -211,7 +211,7 @@ programComments: # 指定 program 預設留言
         - content: "我為17Q而存在💘"
           contentColor: "#FFFFFF"
           backgroundColor: "#b228232d"
-  
+
   950afd4f-658e-4bc7-8675-aa6dbacbaa1a: # 這是 明星製作人
     - commentsInfo:
         - content: "分享+追蹤是好寶寶💕"
