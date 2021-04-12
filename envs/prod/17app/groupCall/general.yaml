@@ -1,11 +1,21 @@
-maxMembersCount: 6
-toastNotificationSeconds: 10
-invitationExpiredInSeconds: 20
-hangupCountDownSeconds: 10
-kickoutCountDownSeconds: 10
-rejectionNoDisturbSeconds: 600
+maxMemberCount: 6
+noGuestToastRemindSeconds: 10
+raiseHandToastRemindSeconds: 180
+invitationDisplaySeconds: 300
+onHoldPageDisplaySeconds: 10
+hangupDisplaySeconds: 10
+kickoutDisplaySeconds: 10
+addConfirmDisplaySeconds: 20
+rejectionNoDisturbSeconds: 300
 timeoutSeconds: 30
 readyTimeoutSeconds: 15
+connectingTimeoutSeconds: 30 
+reservedTimeoutSeconds: 30
+maxInvitationCount: 50
+maxReceivedInvitationCount: 50
+maxRaiseHandCount: 50
+maxGroupCallEventCount: 100
+maxInvitationListLength: 100
 streamerGetAPIIntervalMilliSeconds: 1000
 viewerGetAPIIntervalMilliSeconds: 5000
 onlineStreamerDefaultAccept: true
@@ -16,3 +26,10 @@ supportedVersion:
   ios: ""
 whitelist:
 blacklist:
+
+# Outdated Configs
+maxMembersCount: 9
+toastNotificationSeconds: 10
+invitationExpiredInSeconds: 20
+hangupCountDownSeconds: 10
+kickoutCountDownSeconds: 10
