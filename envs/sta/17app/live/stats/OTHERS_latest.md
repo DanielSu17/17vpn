@@ -1,3 +1,3 @@
-# first live stream time of streamer(OTHERS)
+# new streamer tab (OTHERS)
 
 This yaml config is used to define the first live stream time of streamer
