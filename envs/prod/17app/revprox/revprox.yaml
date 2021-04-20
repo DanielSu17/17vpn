@@ -136,10 +136,15 @@ conf:
    white_list:
      apiv1: "cells,sections"
  - url_key: "go_platform_url"
-   weight: 100
+   weight: 95
    white_list:
      apiv1: "logs"
  - url_key: "bbrich_url"
    weight: 100
    white_list:
      apiv1: "bbrich"
+ - url_key: "go_logs_url"
+   default_url_key: "go_platform_url"
+   weight: 5
+   white_list:
+     apiv1: "logs"
