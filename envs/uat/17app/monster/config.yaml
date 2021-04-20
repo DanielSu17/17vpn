@@ -1,4 +1,4 @@
-max: 1 # 0 means disable feature
+max: 20 # 0 means disable feature
 check_interval: 1m00s
 big_brother_prefix: "give_me_five"
 nian_prefix: "nian"
@@ -9,71 +9,71 @@ alertChannels: ["testformonsteralert"]
 animations: ["yeti"]
 
 monsters:
-  - id: monster_anniversary5 # 寶寶五週年
-    type: 1 # 0: 一般怪獸, 1: 招喚怪獸
-    hit_consume: 10
-    duration: 60s
-    stream_alive_threshold: 1m00s
-    animation: "anniversary5"
-    available_dates: # 一般怪獸才會看時間
-      - start_date: "2020-06-10T18:00:00+08:00"
-        end_date: "2020-07-17T23:59:59+08:00"
-    appear_durations: # 一般怪獸才會看時間
-      - start_time: 00h00m00s
-        end_time: 23h59m59s
-
-    share_ratio: 50 # percentage
-    profit_ratio: 35 # percentage
-    bonus: 336
-    weight: 0.6
-    infoPageiconURL: https://cdn.17app.co/220e7aea-b6be-46bd-8f13-1026deea5fe8.png
-    winnerPageiconURL: https://cdn.17app.co/531aba5b-972d-40f7-b2cf-6304277e4bfb.png
-    hintToken:
-      {
-        key: monster_battle_hint_anniversary5,
-        fontAttribute: { textColor: "#FFFFFF" },
-      }
-    rule1Token:
-      {
-        key: monster_battle_rule1_anniversary5,
-        fontAttribute: { textColor: "#FFFFFF" },
-      }
-    rule2Token:
-      {
-        key: monster_battle_rule2_anniversary5,
-        fontAttribute: { textColor: "#FFFFFF" },
-      }
-    rule3Token:
-      {
-        key: monster_battle_rule3_anniversary5,
-        fontAttribute: { textColor: "#FFFFFF" },
-      }
-    rule4Token:
-      {
-        key: monster_battle_rule4_anniversary5,
-        fontAttribute: { textColor: "#FFFFFF" },
-      }
-    countdownToken:
-      {
-        key: monster_battle_countdown_anniversary5,
-        fontAttribute: { textColor: "#FFFFFF" },
-      }
-    failureToken:
-      {
-        key: monster_battle_failure_anniversary5,
-        fontAttribute: { textColor: "#FFFFFF" },
-      }
-    successToken:
-      {
-        key: monster_battle_success_anniversary5,
-        fontAttribute: { textColor: "#FFFFFF" },
-      }
-    marqueeToken: { key: monster_battle_marquee_babyrobot }
-    summonGifts: # 招喚怪獸才需要填
-      - giftID: "ring"
-        probability: 10000 # n / 10000 * 100%
-      - giftID: "gift_lightstick_b"
-        probability: 10000 # n / 10000 * 100%
+#  - id: monster_anniversary5 # 寶寶五週年
+#    type: 1 # 0: 一般怪獸, 1: 招喚怪獸
+#    hit_consume: 10
+#    duration: 60s
+#    stream_alive_threshold: 1m00s
+#    animation: "anniversary5"
+#    available_dates: # 一般怪獸才會看時間
+#      - start_date: "2020-06-10T18:00:00+08:00"
+#        end_date: "2020-07-17T23:59:59+08:00"
+#    appear_durations: # 一般怪獸才會看時間
+#      - start_time: 00h00m00s
+#        end_time: 23h59m59s
+#
+#    share_ratio: 50 # percentage
+#    profit_ratio: 35 # percentage
+#    bonus: 336
+#    weight: 0.6
+#    infoPageiconURL: https://cdn.17app.co/220e7aea-b6be-46bd-8f13-1026deea5fe8.png
+#    winnerPageiconURL: https://cdn.17app.co/531aba5b-972d-40f7-b2cf-6304277e4bfb.png
+#    hintToken:
+#      {
+#        key: monster_battle_hint_anniversary5,
+#        fontAttribute: { textColor: "#FFFFFF" },
+#      }
+#    rule1Token:
+#      {
+#        key: monster_battle_rule1_anniversary5,
+#        fontAttribute: { textColor: "#FFFFFF" },
+#      }
+#    rule2Token:
+#      {
+#        key: monster_battle_rule2_anniversary5,
+#        fontAttribute: { textColor: "#FFFFFF" },
+#      }
+#    rule3Token:
+#      {
+#        key: monster_battle_rule3_anniversary5,
+#        fontAttribute: { textColor: "#FFFFFF" },
+#      }
+#    rule4Token:
+#      {
+#        key: monster_battle_rule4_anniversary5,
+#        fontAttribute: { textColor: "#FFFFFF" },
+#      }
+#    countdownToken:
+#      {
+#        key: monster_battle_countdown_anniversary5,
+#        fontAttribute: { textColor: "#FFFFFF" },
+#      }
+#    failureToken:
+#      {
+#        key: monster_battle_failure_anniversary5,
+#        fontAttribute: { textColor: "#FFFFFF" },
+#      }
+#    successToken:
+#      {
+#        key: monster_battle_success_anniversary5,
+#        fontAttribute: { textColor: "#FFFFFF" },
+#      }
+#    marqueeToken: { key: monster_battle_marquee_babyrobot }
+#    summonGifts: # 招喚怪獸才需要填
+#      - giftID: "ring"
+#        probability: 10000 # n / 10000 * 100%
+#      - giftID: "gift_lightstick_b"
+#        probability: 10000 # n / 10000 * 100%
 
   - id: monster_babyrobot_petroleum #寶寶機器人挖到石油
     hit_consume: 10
@@ -82,7 +82,7 @@ monsters:
     animation: "babyrobotpetroleum"
     available_dates:
     - start_date: "2020-07-28T18:00:00+08:00"
-      end_date: "2020-09-01T18:00:00+08:00"
+      end_date: "2021-09-01T18:00:00+08:00"
     appear_durations:
     - start_time: 00h00m00s
       end_time: 23h59m59s
@@ -90,7 +90,7 @@ monsters:
     share_ratio: 50 # percentage
     profit_ratio: 35 # percentage
     bonus: 336
-    weight: 0.2
+    weight: 1
     infoPageiconURL: https://cdn.17app.co/fb329dbe-9c30-4b40-af34-8d6479a8e3ec.png
     winnerPageiconURL: https://cdn.17app.co/d110ee5c-34a1-47ca-9319-49a2a381b3e8.png
     hintToken: {key: monster_battle_hint_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
@@ -103,8 +103,104 @@ monsters:
     successToken: {key: monster_battle_success_babyrobot_petroleum,fontAttribute: {textColor: "#FFFFFF"}}
     marqueeToken: {key: monster_battle_marquee_babyrobot}
     summonGifts: # 招喚怪獸才需要填
-    - giftID: "ring"
+    - giftID: "guardian_tw_16_ring"
       probability: 10000 # n / 10000 * 100%
+
+
+
+#  - id: gloria_coin #寶寶機器人挖到金幣
+#    hit_consume: 10
+#    duration: 60s
+#    stream_alive_threshold: 0m30s
+#    animation: "gloria_coin"
+#    available_dates:
+#    - start_date: "2021-03-19T16:00:00+08:00"
+#      end_date: "2021-09-01T18:00:00+08:00"
+#    appear_durations:
+#    - start_time: 00h00m00s
+#      end_time: 23h59m59s
+#    type: 1
+#    share_ratio: 50 # percentage
+#    profit_ratio: 35 # percentage
+#    bonus: 336
+#    weight: 1
+#    infoPageiconURL: https://cdn.17app.co/fb329dbe-9c30-4b40-af34-8d6479a8e3ec.png
+#    winnerPageiconURL: https://cdn.17app.co/d110ee5c-34a1-47ca-9319-49a2a381b3e8.png
+#    hintToken: {key: monster_battle_hint_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#    rule1Token: {key: monster_battle_rule1_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#    rule2Token: {key: monster_battle_rule2_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#    rule3Token: {key: monster_battle_rule3_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#    rule4Token: {key: monster_battle_rule4_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#    countdownToken: {key: monster_battle_countdown_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#    failureToken: {key: monster_battle_failure_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#    successToken: {key: monster_battle_success_coin,fontAttribute: {textColor: "#FFFFFF"}}
+#    marqueeToken: {key: monster_battle_marquee_babyrobot}
+#    summonGifts: # 招喚怪獸才需要填
+#    - giftID: "guardian_tw_16_ring"
+#      probability: 10000 # n / 10000 * 100%
+
+  - id: monster_circus_monkey #猴子騎單輪車
+    hit_consume: 20
+    duration: 60s
+    stream_alive_threshold: 1m00s
+    animation: "monkey"
+    available_dates:
+    - start_date: "2021-03-17T00:00:00+08:00"
+      end_date: "2021-04-23T20:14:59+08:00"
+    appear_durations:
+    - start_time: 00h00m00s
+      end_time: 23h59m59s
+    type: 1
+    share_ratio: 50 # percentage
+    profit_ratio: 35 # percentage
+    bonus: 296
+    weight: 0.6
+    infoPageiconURL: https://cdn.17app.co/86542794-b5a5-4def-b3b8-abe51362fa38.png
+    winnerPageiconURL: https://cdn.17app.co/86542794-b5a5-4def-b3b8-abe51362fa38.png
+    hintToken: {key: monster_battle_hint_circus1,fontAttribute: {textColor: "#FFFFFF"}}
+    rule1Token: {key: monster_battle_rule1_circus1,fontAttribute: {textColor: "#FFFFFF"}}
+    rule2Token: {key: monster_battle_rule2_circus1,fontAttribute: {textColor: "#FFFFFF"}}
+    rule3Token: {key: monster_battle_rule3_circus1,fontAttribute: {textColor: "#FFFFFF"}}
+    rule4Token: {key: monster_battle_rule4_circus,fontAttribute: {textColor: "#FFFFFF"}}
+    countdownToken: {key: monster_battle_countdown_circus,fontAttribute: {textColor: "#FFFFFF"}}
+    failureToken: {key: monster_battle_failure_circus,fontAttribute: {textColor: "#FFFFFF"}}
+    successToken: {key: circusmonster_battle_success_coin,fontAttribute: {textColor: "#FFFFFF"}}
+    marqueeToken: {key: monster_battle_marquee_circus}
+    summonGifts: # 招喚怪獸才需要填
+    - giftID: "2103_tw_circus_ticket_bp"
+      probability: 5000 # n / 10000 * 100%
+
+  - id: monster_circus_elephant #大象踩球
+    hit_consume: 20
+    duration: 60s
+    stream_alive_threshold: 1m00s
+    animation: "elephant"
+    available_dates:
+    - start_date: "2021-03-10T00:00:00+08:00"
+      end_date: "2021-04-16T23:59:59+08:00"
+    appear_durations:
+    - start_time: 00h00m00s
+      end_time: 23h59m59s
+    type: 1 
+    share_ratio: 50 # percentage
+    profit_ratio: 35 # percentage
+    bonus: 296
+    weight: 0.6
+    infoPageiconURL: https://cdn.17app.co/4f76a87f-13ab-471a-8f8f-c539ec87df46.png
+    winnerPageiconURL: https://cdn.17app.co/4f76a87f-13ab-471a-8f8f-c539ec87df46.png
+    hintToken: {key: monster_battle_hint_circus1,fontAttribute: {textColor: "#FFFFFF"}}
+    rule1Token: {key: monster_battle_rule1_circus1,fontAttribute: {textColor: "#FFFFFF"}}
+    rule2Token: {key: monster_battle_rule2_circus1,fontAttribute: {textColor: "#FFFFFF"}}
+    rule3Token: {key: monster_battle_rule3_circus1,fontAttribute: {textColor: "#FFFFFF"}}
+    rule4Token: {key: monster_battle_rule4_circus,fontAttribute: {textColor: "#FFFFFF"}}
+    countdownToken: {key: monster_battle_countdown_circus,fontAttribute: {textColor: "#FFFFFF"}}
+    failureToken: {key: monster_battle_failure_circus,fontAttribute: {textColor: "#FFFFFF"}}
+    successToken: {key: circusmonster_battle_success_coin,fontAttribute: {textColor: "#FFFFFF"}}
+    marqueeToken: {key: monster_battle_marquee_circus}
+    summonGifts: # 招喚怪獸才需要填
+    - giftID: "2103_tw_circus_ticket_bp"
+      probability: 5000 # n / 10000 * 100%
+
 
 #- id: monster_babyrobot_shit #寶寶機器人挖到便便
 #  hit_consume: 10
@@ -371,6 +467,7 @@ monsters:
 #   countdownToken: {key: monster_battle_countdown_princess,fontAttribute: {textColor: "#FFFFFF"}}
 #   failureToken: {key: monster_battle_failure_princess,fontAttribute: {textColor: "#FFFFFF"}}
 #   successToken: {key: monster_battle_success_princess,fontAttribute: {textColor: "#FFFFFF"}}
+
 
 # - id: monster_monster_princess2
 #   hit_consume: 10
@@ -721,31 +818,33 @@ animationLoader:
     webpMD5: 7967f69607d88a4583dca68f1c7a6f15
 
   #寶寶機器人挖到金幣 baby robot coint
-  - animationID: babyrobotcoin_attack
-    url: http://cdn.17app.co/3fe0ffcb-8922-46b1-8249-9ec3151964d2.zip
-    MD5: 26ad74eb472e45df856442eeb087cfd2
-    webpUrl: https://cdn.17app.co/48054aaf-3194-4a06-a8a3-9d70e527fc56-q90-s1.webp
-    webpMD5: 1defe2d2f80cd910cdff97c21c5bc5a1
-  - animationID: babyrobotcoin_enter
-    url: http://cdn.17app.co/89c036c1-ebc6-4598-beae-672fe2086217.zip
-    MD5: 7a52513be0629a691f6500d69e8f3394
-    webpUrl: https://cdn.17app.co/24c9c86f-f5b3-4abe-970e-4a83e70e7bd6-q90-s1.webp
-    webMD5: de15f3cd82815d15cac3b10ad758354f
-  - animationID: babyrobotcoin_failure
-    url: http://cdn.17app.co/90c95af3-1a3a-40b8-8c7a-848ee9bf3448.zip
-    MD5: 603dce5de0c3081f4d67285b34b9cd10
-    webpUrl: https://cdn.17app.co/abaeec92-b5aa-4d27-916f-751b04a8d000-q90-s1.webp
-    webMD5: 6cb8c2f2e688574ba5e752f032ac8dff
-  - animationID: babyrobotcoin_idle
-    url: http://cdn.17app.co/0322ec3b-e090-4a12-a9a1-bdb82ff2a1c5.zip
-    MD5: 23b1a87fd9d4876e07805fcc1d30dea1
-    webpUrl: https://cdn.17app.co/08459de4-f75f-44fa-bdbf-4ebc8da4aa75-q90-s1.webp
-    webpMD5: a09724ec5251bb67ca37d3262ba57c70
-  - animationID: babyrobotcoin_success
-    url: http://cdn.17app.co/56350234-0833-4931-85cc-0e7acc98feed.zip
-    MD5: 41b78ed7d217264c323e68d998b597d4
-    webpUrl: https://cdn.17app.co/2b3898bc-66d2-4f84-80a0-e964f7951217-q90-s1.webp
-    webMD5: 2971dc411bef27f762211dd8b7b38045
+#  - animationID: babyrobotcoin_attack
+#    url: http://cdn.17app.co/3fe0ffcb-8922-46b1-8249-9ec3151964d2.zip
+#    MD5: 26ad74eb472e45df856442eeb087cfd2
+#    webpUrl: https://cdn.17app.co/48054aaf-3194-4a06-a8a3-9d70e527fc56-q90-s1.webp
+#    webpMD5: 1defe2d2f80cd910cdff97c21c5bc5a1
+#  - animationID: babyrobotcoin_enter
+#    url: http://cdn.17app.co/89c036c1-ebc6-4598-beae-672fe2086217.zip
+#    MD5: 7a52513be0629a691f6500d69e8f3394
+#    webpUrl: https://cdn.17app.co/24c9c86f-f5b3-4abe-970e-4a83e70e7bd6-q90-s1.webp
+#    webMD5: de15f3cd82815d15cac3b10ad758354f
+#  - animationID: babyrobotcoin_failure
+#    url: http://cdn.17app.co/90c95af3-1a3a-40b8-8c7a-848ee9bf3448.zip
+#    MD5: 603dce5de0c3081f4d67285b34b9cd10
+#    webpUrl: https://cdn.17app.co/abaeec92-b5aa-4d27-916f-751b04a8d000-q90-s1.webp
+#    webMD5: 6cb8c2f2e688574ba5e752f032ac8dff
+#  - animationID: babyrobotcoin_idle
+#    url: http://cdn.17app.co/0322ec3b-e090-4a12-a9a1-bdb82ff2a1c5.zip
+#    MD5: 23b1a87fd9d4876e07805fcc1d30dea1
+#    webpUrl: https://cdn.17app.co/08459de4-f75f-44fa-bdbf-4ebc8da4aa75-q90-s1.webp
+#    webpMD5: a09724ec5251bb67ca37d3262ba57c70
+#  - animationID: babyrobotcoin_success
+#    url: http://cdn.17app.co/56350234-0833-4931-85cc-0e7acc98feed.zip
+#    MD5: 41b78ed7d217264c323e68d998b597d4
+#    webpUrl: https://cdn.17app.co/2b3898bc-66d2-4f84-80a0-e964f7951217-q90-s1.webp
+#    webMD5: 2971dc411bef27f762211dd8b7b38045
+
+
 
   #寶寶機器人挖到石油 baby robot petroleum
   - animationID: babyrobotpetroleum_attack
@@ -852,6 +951,89 @@ animationLoader:
     MD5: c678951dd0b551201ec22aef39c3b6ea
     webpUrl: https://cdn.17app.co/75d5edae-03d1-4a2a-97d7-2720292698a1-q90-s1.webp
     webMD5: ca4959e9e9057c308ab7d42f29b142d7
+
+#寶寶機器人挖金幣  gloriaQAtest
+#  - animationID: gloria_attack
+#    url: http://cdn.17app.co/528560ec-62ba-4bb4-86cc-ec713fc8d1e4.zip
+#    MD5: 55d9a99902c8af683e093f9bc65c4e26
+#    webpUrl: https://cdn.17app.co/a3323a91-579e-49c0-a15c-95d1a2dba634-q90-s1.webp
+#    webpMD5: 1defe2d2f80cd910cdff97c21c5bc5a1
+#  - animationID: gloria_enter
+#    url: http://cdn.17app.co/71baf236-0633-4213-8111-a4eb2b4a3991.zip
+#    MD5: f805da6265bbcaa6001883ae0bd108aa
+#    webpUrl: https://cdn.17app.co/56233885-3684-4af2-b844-f2a990eedf8f-q90-s1.webp
+#    webMD5: de15f3cd82815d15cac3b10ad758354f
+#  - animationID: gloria_failure
+#    url: http://cdn.17app.co/2abfa806-05e7-41e1-acc2-fc04eba19b30.zip
+#    MD5: e61ae1b8f51e23594325404084e1fd9c
+#    webpUrl: https://cdn.17app.co/f700d3f3-4825-46d0-b7f2-674664f23e2a-q90-s1.webp
+#    webMD5: 6cb8c2f2e688574ba5e752f032ac8dff
+#  - animationID: gloria_idle
+#    url: http://cdn.17app.co/d42052e9-c074-466d-b9ba-14a1e6d74c62.zip
+#    MD5:  1f1e749b747df73191db4f41646a983e
+#    webpUrl: https://cdn.17app.co/e0a4082a-2d10-436b-b598-d747fde0e0af-q90-s1.webp
+#    webpMD5: a09724ec5251bb67ca37d3262ba57c70
+#  - animationID: gloria_success
+#    url: http://cdn.17app.co/b0753b40-9796-449c-aa63-c46791aacd41.zip
+#    MD5: c2bff95eabe243c53a593890d91ab1f3
+#    webpUrl: https://cdn.17app.co/705b02c5-6148-4dad-9153-3b3970863f17-q90-s1.webp
+#    webMD5: 2971dc411bef27f762211dd8b7b38045
+
+#猴子騎單輪車  monster_circus_monkey
+  - animationID: monkey_attack
+    url: http://cdn.17app.co/eeef2620-c8a8-4562-a72d-88b62eb2302a.zip
+    MD5: b856420ff5504d05f0a5c58921b354a4
+    webpUrl: https://cdn.17app.co/ec8f9f8d-a04a-4329-a02a-b5931466e145-q90-s1.webp
+    webpMD5: 405c292a1c2c5690ddac8836d3017073
+  - animationID: monkey_enter
+    url: http://cdn.17app.co/887135ed-8a26-40e9-95ff-c190ebb37277.zip
+    MD5: 291b5195c88d476a87636ea5dd9f1a68
+    webpUrl: https://cdn.17app.co/07d54ac8-db3f-42df-8935-90d391727e4a-q90-s1.webp
+    webMD5: 504c61e0e0b32f090c91edf56f361624
+  - animationID: monkey_failure
+    url: http://cdn.17app.co/982ec1bd-30ff-4cfe-84b2-ab592180de45.zip
+    MD5: cdf8347d8a6a2e97cfa71e7baefe30dd
+    webpUrl: https://cdn.17app.co/8f28a70a-30af-400d-a2f7-b72722827caa-q90-s1.webp
+    webMD5: 5f6db538b8d7ae768adedde1580f8e94
+  - animationID: monkey_idle
+    url: http://cdn.17app.co/85c039ae-6493-40ea-8a4d-097b499a5fbe.zip
+    MD5:  093edc8f7fd01979800ddd3451066c15
+    webpUrl: https://cdn.17app.co/dc95d1d6-6e76-484e-b72a-509978bcc4e9-q90-s1.webp
+    webpMD5:  63200abc4e39dfa85473b0490f105dbf
+  - animationID: monkey_success
+    url: http://cdn.17app.co/d87c3672-6d40-4089-a775-4f16ac4f5ce1.zip
+    MD5: 481b68098fd7c925a1a79d51341fcd97
+    webpUrl: https://cdn.17app.co/31066365-9a79-47e5-a6f0-6ba100d5dc60-q90-s1.webp
+    webMD5: dbdf32f1f6a32f1070f0c7276aea0270
+
+#大象踩球  monster_circus_elephant
+  - animationID: elephant_attack
+    url: http://cdn.17app.co/cdaba002-4d42-4383-95d6-e90998f14760.zip
+    MD5: 02efc45e34983f3135bd0ebafe1bc5c0
+    webpUrl: https://cf24a0b6-eec2-462e-9893-056414611e4a-q90-s1.webp
+    webpMD5:  51d8c82d5f4eb3a756984f10b2c25e7f
+  - animationID: elephant_enter
+    url: http://cdn.17app.co/1f54321e-39d6-4551-8719-3635a0d80bfd.zip
+    MD5: 225e1ab09cd77eaa12489c1961dc969e
+    webpUrl: https://cdn.17app.co/7d626ac4-3702-47ea-9c9b-c21be9f40d6a-q90-s1.webp
+    webMD5: 443c8f6d83e4c8abc8c477077d209a58
+  - animationID: elephant_failure
+    url: http://cdn.17app.co/d1e57594-f249-4af6-8d5c-9f15415c3089.zip
+    MD5: 826d494828aa83c06ff11572c7c463c2
+    webpUrl: https://cdn.17app.co/47176472-f309-4d66-bcd8-4aa9c020f4d9-q90-s1.webp
+    webMD5: 6a0bf220c188324eaf8c7226d013204a
+  - animationID: elephant_idle
+    url: http://cdn.17app.co/720ba828-132a-41ef-ae70-68ed76efab9c.zip
+    MD5:  c39786924d43a2075fbd187baf361c5e
+    webpUrl: https://cdn.17app.co/6fb82da4-23e4-4e55-b501-eb66d10869dc-q90-s1.webp
+    webpMD5: 1547ebb3794a591d9fe98bbc90fe53de
+  - animationID: elephant_success
+    url: http://cdn.17app.co/cd4bf227-f3e9-4f59-ac97-2f822744001d.zip
+    MD5: 5c5f180d31be3a99eaef7ea229a18e2f
+    webpUrl: https://cdn.17app.co/0c711e03-8de5-42d7-b461-035379ad8e20-q90-s1.webp
+    webMD5: 95a48f44a22a740b989f43bb9d19cd0e
+
+
 
   - animationID: ugly_attack
     url: https://cdn.17app.co/8abe41f3-596a-4f6e-b857-d90c6c887624.zip

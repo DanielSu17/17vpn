@@ -12,6 +12,10 @@ forcePromoteVirtualStream: false
 enableExtInfoTypeEvent: true
 
 followerCountTriggerEvent: 100000
+# PROD-4634
+organicStreamer:
+  autoPass: false
+  autoPassUserLevel: 0
 
 defaultComments:
   - specificTimeFrame: true
@@ -154,4 +158,6 @@ layoutGiftNotif:
 
 programCommentPin:
   enable: true
+
+showRockArea: true
 followerOnlyOptionMins: [0, 1, 5, 10]

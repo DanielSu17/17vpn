@@ -1,0 +1,23 @@
+# These are settings for mongo endpoint transition
+#
+# Available values of target are
+# 1. src: nothing will happen
+# 2. dst: mongo access will be transferred to dst from src
+# 3. bak: mongo access will be transferred to bak from dst
+#
+# If target is dst and srcSessionEnd and dstSessionStart are valid ISO8601 format,
+# then goapi will use srcSession before srcSessionEnd and dstSession after dstSessionStart,
+# respectively.
+#
+# The time between srcSessionEnd and dstSessionStart is transition period. All mongo
+# access will be rejected.
+#
+# bakSession is for backup in case dstSession has major issues after migration.
+
+target: src
+
+srcSessionEnd:   2018-04-01T00:00:00+08:00
+dstSessionStart: 2018-04-01T00:00:10+08:00
+
+dstSessionEnd:   2018-04-01T00:05:20+08:00
+bakSessionStart: 2018-04-01T00:05:30+08:00

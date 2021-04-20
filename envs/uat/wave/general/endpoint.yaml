@@ -1,0 +1,15 @@
+# https://github.com/17media/wiki/blob/master/pages/Backend/service-endpoints.md
+#
+# type is enum to distinguish the environments
+#   0: dev
+#   1: staging
+#   2: production
+- name: prod
+  url: https://api.wave.com.tw
+  type: 2
+- name: stag
+  url: https://sta-api.wave.com.tw
+  type: 1
+- name: dev
+  url: http://35.229.83.8
+  type: 0

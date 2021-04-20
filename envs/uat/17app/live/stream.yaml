@@ -1,8 +1,8 @@
 # 看直播Ｘ秒，會跳PN dialog
 pnCheckNotif: 120 # 2 mins
 # 開標題
-minAndroidCaptionBlockVersion: "2.13.0" 
-minIOSCaptionBlockVersion: "3.101.0"
+minAndroidCaptionBlockVersion: "3.13.0" #enable empty caption for testing
+minIOSCaptionBlockVersion: "4.101.0"
 
 captionBlockConf: 
   oldClientEnable: false
@@ -14,6 +14,10 @@ forcePromoteVirtualStream: true
 enableExtInfoTypeEvent: true
 
 followerCountTriggerEvent: 100000
+# PROD-4634
+organicStreamer:
+  autoPass: true
+  autoPassUserLevel: 0
 
 # porn detection
 pornDetection:
@@ -194,4 +198,6 @@ programCommentPin:
 pkFrameID: "pk_winner_frame"
 pkFrameURL: "https://cdn.17app.co/6ae73d06-4010-4696-80a2-d20640709ccf.png"
 pkIOSFrameURL: "https://cdn.17app.co/7d5dd83d-8b8f-4acf-abdd-fb04717af49f.png"
+
+showRockArea: true
 followerOnlyOptionMins: [0, 1, 5, 10]
