@@ -337,23 +337,101 @@ signInRewards:
       intervalSec: 28800
 
 continuousSignInEvent:                        #只能有一段參數，無法多個時間段，且每天開始時間只能為00:00 (GMT+8)
-  startTime: "2020-10-14 17:00:00 (GMT+0800)" #天天看17 MKT Joyce
-  endTime: "2020-11-01 23:59:59 (GMT+0800)"
-  butlerImageURL: "https://cdn.17app.co/3e60ad72-8871-4579-bc0b-96991623c88c.png"
+  startTime: "2021-04-21 00:00:00 (GMT+0800)" #PR with VOGUE
+  endTime: "2021-05-01 23:59:59 (GMT+0800)"
+  butlerImageURL: "https://cdn.17app.co/3fce0d3e-4ec7-4943-be84-05f43ec63077.png"
   #小幫手key: daily_continuous_login_dialog
   rewards:
-    - ID: "tw-mktevent-reward1"  #活動上線後就不能改，因為會看這個ID來判斷用戶是否領過獎，同時間ID不能重複，如果活動時間已過就可以
+    - ID: "tw-pr-reward1"  #活動上線後就不能改，因為會看這個ID來判斷用戶是否領過獎，同時間ID不能重複，如果活動時間已過就可以
       dayMin: 1 # 連續登入幾天
-      dayMax: 7 # 連續登入幾天
-      giftID: "2009_tw_mkt2_bp"
+      dayMax: 2 # 連續登入幾天
+      giftID: "2007_tw_marketing_bp"
       amount: 1 # 幾個
       expireSecs: 86400 # 有效秒數
-    - ID: "tw-mktevent-reward2"
-      dayMin: 8 # 連續登入幾天
-      dayMax: 99999 # 連續登入幾天, 99999 = 273years
-      giftID: "2009_tw_mkt2_bp"
+    - ID: "tw-pr-reward2"
+      dayMin: 2 # 連續登入幾天
+      dayMax: 3 # 連續登入幾天
+      giftID: "2007_tw_marketing_bp"
       amount: 1 # 幾個
-      expireSecs: 43200 # 有效秒數
+      expireSecs: 86400 # 有效秒數
+    - ID: "tw-pr-reward3"
+      dayMin: 3 # 連續登入幾天
+      dayMax: 4 # 連續登入幾天
+      giftID: "2007_tw_marketing_bp"
+      amount: 1 # 幾個
+      expireSecs: 86400 # 有效秒數
+    - ID: "tw-pr-reward4"
+      dayMin: 4 # 連續登入幾天
+      dayMax: 5 # 連續登入幾天
+      giftID: "2007_tw_marketing_bp"
+      amount: 1 # 幾個
+      expireSecs: 86400 # 有效秒數
+    - ID: "tw-pr-reward5"
+      dayMin: 5 # 連續登入幾天
+      dayMax: 6 # 連續登入幾天
+      giftID: "2007_tw_marketing_bp"
+      amount: 1 # 幾個
+      expireSecs: 86400 # 有效秒數
+    - ID: "tw-pr-reward6"
+      dayMin: 6 # 連續登入幾天
+      dayMax: 7 # 連續登入幾天
+      giftID: "2007_tw_marketing_bp"
+      amount: 1 # 幾個
+      expireSecs: 86400 # 有效秒數
+    - ID: "tw-pr-reward7"
+      dayMin: 7 # 連續登入幾天
+      dayMax: 8 # 連續登入幾天
+      giftID: "2007_tw_marketing_bp"
+      amount: 1 # 幾個
+      expireSecs: 86400 # 有效秒數
+    - ID: "tw-pr-reward8"
+      dayMin: 8 # 連續登入幾天
+      dayMax: 9 # 連續登入幾天
+      giftID: "2007_tw_marketing_bp"
+      amount: 1 # 幾個
+      expireSecs: 86400 # 有效秒數
+    - ID: "tw-pr-reward9"
+      dayMin: 9 # 連續登入幾天
+      dayMax: 10 # 連續登入幾天
+      giftID: "2007_tw_marketing_bp"
+      amount: 1 # 幾個
+      expireSecs: 86400 # 有效秒數
+    - ID: "tw-pr-reward10"
+      dayMin: 10 # 連續登入幾天
+      dayMax: 11 # 連續登入幾天
+      giftID: "2007_tw_marketing_bp"
+      amount: 1 # 幾個
+      expireSecs: 86400 # 有效秒數
+    - ID: "tw-pr-reward11"
+      dayMin: 11 # 連續登入幾天
+      dayMax: 12 # 連續登入幾天
+      giftID: "2007_tw_marketing_bp"
+      amount: 1 # 幾個
+      expireSecs: 86400 # 有效秒數
+    - ID: "tw-pr-reward12"
+      dayMin: 12 # 連續登入幾天
+      dayMax: 13 # 連續登入幾天
+      giftID: "2007_tw_marketing_bp"
+      amount: 1 # 幾個
+      expireSecs: 86400 # 有效秒數
+    - ID: "tw-pr-reward13"
+      dayMin: 13 # 連續登入幾天
+      dayMax: 14 # 連續登入幾天
+      giftID: "2007_tw_marketing_bp"
+      amount: 1 # 幾個
+      expireSecs: 86400 # 有效秒數
+    - ID: "tw-pr-reward14"
+      dayMin: 14 # 連續登入幾天
+      dayMax: 15 # 連續登入幾天
+      giftID: "2007_tw_marketing_bp"
+      amount: 1 # 幾個
+      expireSecs: 86400 # 有效秒數
+    - ID: "tw-pr-reward15"
+      dayMin: 15 # 連續登入幾天
+      dayMax: 99999 # 連續登入幾天, 99999 = 273years
+      giftID: "2007_tw_marketing_bp"
+      amount: 1 # 幾個
+      expireSecs: 86400 # 有效秒數
 
 #原文
 #Congratulations you have logged in for $1 consecutive days. You got free $2 x $3. Go check your baggage in the live stream and send the gift to your favorite streamer!
