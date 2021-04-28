@@ -1,2 +1,2 @@
-# [Wave][TW] Replay Choice
+# [Wave][ID] Replay Choice
 Recommended users in replay page.
