@@ -645,13 +645,16 @@
     "e": "b"
     "f": "b"
 
-# a組 false, b組 true
+# group A does NOT SHOW the prompt
+# group B SHOWS the prompt
 - testName: attPrompt
   enableABtest: true
   byDeviceID: true
+  startTime: "2021-04-28T13:00:00+08:00"
+  endTime: "2021-04-28T17:00:00+08:00"
   lastCharGroup:
-    "0": "a"
-    "1": "a"
+    "0": "b"
+    "1": "b"
     "2": "a"
     "3": "a"
     "4": "a"
