@@ -1,5 +1,5 @@
 # sections
-#   - id: TopBanner|OffcRecomm|Suggestion|Label|RedEnvelope|Show|Vod|TodayHotTopic|CrazyZoo
+#   - id: TopBanner|OffcRecomm|Suggestion|Label|RedEnvelope|Show|Vod|TodayHotTopic|CrazyZoo|GroupCall
 #     enable: false|true
 #     dedup:  false|true
 #     more:   false|true
@@ -17,6 +17,8 @@
 # style 6: (猜你可能會喜歡) showing label as possible than DefaultShelfStyle
 # style 7: (新手任務)
 # style 8: (PK) used in more page
+# style 9: GroupCall
+# style 10: GroupCall empty style. Client will show the groupCall entry button even if the grids are less than minGrids.
 
 sections:
   - id: TopBanner # Banner + super promote
@@ -146,6 +148,14 @@ sections:
     dedup: false  #重複
     minGrids: 1
     style: 3
+    more: true
+  - id: GroupCall # GroupCall 
+    name:
+      key: group_stream_v3hotpage
+    enable: true
+    dedup: false  #重複
+    minGrids: 1
+    style: 9 
     more: true
 
 officialRecommendedStreamers:
