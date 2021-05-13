@@ -16,9 +16,9 @@ rtmp_providers:
   quality_support: 0
   weight: 0
 - name: QINIU
-  weight: 5
+  weight: 80
   region_weights:
-    TW: 3
+    TW: 50
     EG: 0
     HK: 5
     JP: 1
@@ -74,7 +74,7 @@ rtmp_providers:
   quality_support: 0
   weight: 0
 - name: WANSU
-  weight: 15
+  weight: 0
   region_weights:
     TW: 0
     EG: 100
@@ -145,9 +145,9 @@ rtmp_providers:
   - 58326bbc-0c7b-48e5-bc6d-f3e2df3729b5 # AKB48_official
 - name: WANSU_LOW_LATENCY
   quality_support: 1
-  weight: 60
+  weight: 0
   region_weights:
-    TW: 47
+    TW: 0
     HK: 25
     JP: 73
     US: 45
