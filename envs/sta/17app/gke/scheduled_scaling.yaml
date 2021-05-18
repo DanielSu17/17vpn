@@ -11,16 +11,18 @@
   HPAConfigs:
   - name: k8ssta-worker-main
     minReplicas: 8
-# shon test schedules
-- startTime: "2021-04-22 15:30:00 (GMT+0800)"
-  endTime: "2021-04-22 15:40:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8ssta-goapi-main
-    minReplicas: 4
 
-# brent test schedules
-- startTime: "2021-04-23 14:30:00 (GMT+0800)"
-  endTime: "2021-04-23 14:40:00 (GMT+0800)"
+# schedules for PreProd QA stress test
+- startTime: "2021-05-18 14:00:00 (GMT+0800)"
+  endTime: "2021-05-18 20:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8ssta-goapi-main
-    minReplicas: 4
+    minReplicas: 80
+  - name: k8ssta-golives-main
+    minReplicas: 80
+  - name: k8ssta-gotrade-main
+    minReplicas: 12
+  - name: k8ssta-gocells-main
+    minReplicas: 20
+  - name: k8ssta-gousersearch-main
+    minReplicas: 10
