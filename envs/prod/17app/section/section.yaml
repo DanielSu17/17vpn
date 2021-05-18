@@ -152,15 +152,15 @@ sections:
     style: 3
     more: true
   - id: Label # 聊天, 對應到v1 sub-tab
-    labelID: twchat
+    labelID: tw_t_chat
     name:
-      key: tab_hot_chat_subtab
+      key: streamer_label_chat
     enable: true
     dedup: false
-    minGrids: 1
+    minGrids: 5
     style: 3
     more: true
-    category: normal
+    category: normal #normal代表可以在開播類別被選擇；exclusive則不能被選擇，不填寫則默認exclusive
 
 #以下是草稿 
   - id: Label #聊天
