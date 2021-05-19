@@ -33,11 +33,15 @@ regexConf:
       - ^/api/v1/event/subtabs$
       - ^/api/v1/event/banner$
       - ^/api/v1/event/info/
+  - url_key: "group_call_url"
+    weight: 100
+    regex_paths:
+      - ^/api/v1/groupCalls/group/[A-Za-z0-9-]+/keepChannelAlive$
 
 conf:
  - url_key: "go_usersearch_url"
    weight: 100
-   white_list:		
+   white_list:
      apiv1: "user/search"
  - url_key: "go_trade_url"
    weight: 100
