@@ -37,10 +37,10 @@ regexConf:
     weight: 100
     regex_paths:
       - ^/api/v1/groupCalls$
-#       - ^/api/v1/groupCalls/group/[A-Za-z0-9-]+/keepChannelAlive$
-#       - ^/api/v1/groupCalls/invitations$
-#       - ^/api/v1/groupCalls/invite/.+
-#       - ^/api/v1/groupCalls/group/[A-Za-z0-9-]+/users/[A-Za-z0-9-]+/action/[A-Za-z]+$
+      - ^/api/v1/groupCalls/group/[A-Za-z0-9-]+/keepChannelAlive$
+      - ^/api/v1/groupCalls/group/[A-Za-z0-9-]+/users/[A-Za-z0-9-]+/action/[A-Za-z]+$
+      - ^/api/v1/groupCalls/invitations$
+      - ^/api/v1/groupCalls/invite/.+
 
 conf:
  - url_key: "go_usersearch_url"
