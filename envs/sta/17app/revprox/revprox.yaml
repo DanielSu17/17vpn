@@ -41,8 +41,9 @@ regexConf:
       - ^/api/v1/groupCalls/group/[A-Za-z0-9-]+/users/[A-Za-z0-9-]+/action/[A-Za-z]+$
       - ^/api/v1/groupCalls/invitations$
       - ^/api/v1/groupCalls/invite/.+
-#       - ^/api/v1/groupCalls/group/[A-Za-z0-9-]+/invitationList$
-#       - ^/api/v1/groupCalls/group/[A-Za-z0-9-]+/viewers
+      - ^/api/v1/groupCalls/group/[A-Za-z0-9-]+/invitationList$
+      - ^/api/v1/groupCalls/group/[A-Za-z0-9-]+/viewers$
+      - ^/api/v1/groupCalls/group/[A-Za-z0-9-]+/users/search$
 conf:
  - url_key: "go_usersearch_url"
    weight: 100
