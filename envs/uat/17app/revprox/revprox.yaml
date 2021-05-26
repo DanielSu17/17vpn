@@ -37,7 +37,7 @@ regexConf:
 conf:
  - url_key: "go_usersearch_url"
    weight: 100
-   white_list:		
+   white_list:
      apiv1: "user/search"
  - url_key: "go_trade_url"
    weight: 100
@@ -138,3 +138,7 @@ conf:
    weight: 100
    white_list:
      apiv1: "logs"
+ - url_key: "group_call_url"
+   weight: 100
+   white_list:
+     apiv1: "groupCalls"
