@@ -23,6 +23,7 @@ groups:
     live17-streaming-api: "go"
     eventory:           "go"
     eventory-worker:    "go"
+    eventory-replay:    "go"
     data-stream-worker: "go"
     ml-host:            "go"
     snapshot:           "go"
@@ -101,6 +102,7 @@ batchDeploy:
       - "alfred"
       - "eventory"
       - "eventory-worker"
+      - "eventory-replay"
       - "data-stream-worker"
       - "ml-host"
       - "snapshot"
@@ -124,6 +126,7 @@ batchDeploy:
       - "alfred"
       - "eventory"
       - "eventory-worker"
+      - "eventory-replay"
       - "data-stream-worker"
       - "ml-host"
       - "snapshot"
@@ -146,6 +149,7 @@ batchDeploy:
       - "slackbot"
       - "eventory"
       - "eventory-worker"
+      - "eventory-replay"
       - "snapshot"
     awsprod:
       - "goapi"
@@ -172,6 +176,7 @@ batchDeploy:
       - "slackbot"
       - "eventory"
       - "eventory-worker"
+      - "eventory-replay"
       - "snapshot"
 
 # abstractEnvs is designed for cross cloud environment,
