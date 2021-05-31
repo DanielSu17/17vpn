@@ -1,4 +1,4 @@
-# sections
+# sections 
 #   - id: TopBanner|OffcRecomm|Suggestion|Label|RedEnvelope|Show|Vod|TodayHotTopic|CrazyZoo
 #     enable: false|true　falseにすると非表示
 #     dedup:  false|true　
@@ -38,7 +38,7 @@ sections:
     name:
       key: tab_hot_2019q4_follow_suggestion
     enable: true
-    dedup: true
+    dedup: true 
     style: 6
     minGrids: 5
     more: true
@@ -51,21 +51,10 @@ sections:
     style: 3
     more: true
 
-#  - id: Label
-#    labelID: jp_music
-#    name:
-#      key: explore_jp_label_music
-#    enable: true
-#    dedup: true
-#    minGrids: 5
-#    style: 3
-#    more: true
-#    category: normal
-
-  - id: Label # 歌
-    labelID: jp_singer
+  - id: Label
+    labelID: jp_music
     name:
-      key: streamer_jp_label_singer
+      key: explore_jp_label_music
     enable: true
     dedup: true
     minGrids: 5
@@ -73,18 +62,7 @@ sections:
     more: true
     category: normal
 
-  - id: Label # 楽器演奏
-    labelID: jp_instrument
-    name:
-      key: streamer_jp_label_instrument
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    category: normal
-
-  - id: Label # タレント
+  - id: Label
     labelID: jp_talent
     name:
       key: streamer_jp_label_talent
@@ -93,7 +71,6 @@ sections:
     minGrids: 0
     style: 3
     more: true
-    category: normal
 
   - id: PK
     name:
@@ -115,17 +92,6 @@ sections:
     more: true
     category: normal
 
-  - id: Label
-    labelID: jp_V-LIVER
-    name:
-      key: explore_jp_label_vliver
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    category: normal
-
   - id: Vod # 熱門影音
     name:
       key: tab_hot_2019q4_vod
@@ -134,19 +100,55 @@ sections:
     style: 5
     more: false
 
-  - id: Label # ラジオ配信
-    labelID: jp_audiostream
+  - id: Label
+    labelID: jp_vliver
     name:
-      key: streamer_jp_label_audiostream
+      key: explore_jp_label_vliver
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+  - id: Label
+    labelID: jp_fashion
+    name:
+      key: streamer_jp_label_fashion
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+  - id: Label
+    labelID: jp_performer
+    name:
+      key: streamer_jp_label_performer
     enable: true
     dedup: true
     minGrids: 5
     style: 3
     more: true
     category: normal
-
-  - id: Label # 雑談
-    labelID: jp_freetalk1
+  - id: Label
+    labelID: jp_hobby
+    name:
+      key: streamer_jp_label_hobby
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+  - id: Label
+    labelID: jp_variety
+    name:
+      key: streamer_jp_label_variety
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+  - id: Label
+    labelID: jp_freetalk
     name:
       key: streamer_jp_label_freetalk
     enable: true
@@ -155,106 +157,6 @@ sections:
     style: 3
     more: true
     category: normal
-
-  - id: Label # 占い
-    labelID: jp_fortune
-    name:
-      key: streamer_jp_label_fortune
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    category: normal
-
-  - id: Label # 初見さん歓迎
-    labelID: jp_welcome
-    name:
-      key: streamer_jp_label_welcome
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    category: normal
-
-  - id: Label # DJ
-    labelID: jp_DJ
-    name:
-      key: streamer_jp_label_DJ
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    category: normal
-
-  - id: Label # クリエイター
-    labelID: jp_creator
-    name:
-      key: streamer_jp_label_creator
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    category: normal
-
-  - id: Label # lv10以下
-    labelID: jp_lv10
-    name:
-      key: streamer_jp_label_lv10
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    category: normal
-
-  - id: Label # lv20以下
-    labelID: jp_lv20
-    name:
-      key: streamer_jp_label_lv20
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    category: normal
-
-  - id: Label # lv30以下
-    labelID: jp_lv30
-    name:
-      key: streamer_jp_label_lv30
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    category: normal
-
-  - id: Label # 男子
-    labelID: jp_boys
-    name:
-      key: streamer_jp_label_boys
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    category: normal
-
-  - id: Label # 女子
-    labelID: jp_girls
-    name:
-      key: streamer_jp_label_girls
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    category: normal
-
   - id: Label
     labelID: jp_show
     name:
@@ -282,4 +184,3 @@ newbieStreamGuideGroupingRules:
         minLevel: 65
       - maxViewerCount: 40
       - minViewerCount: 40
-
