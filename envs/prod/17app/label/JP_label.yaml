@@ -1,6 +1,6 @@
 # JP label config
 
-labelInfos: 
+labelInfos:
  
   - id: "jp_recommend" # レコメンド,推薦
     type: 1
@@ -10,27 +10,27 @@ labelInfos:
     order: 8
     iconURL: "h"
     isHide: true
-  - id: "jp_music" # 音楽,音樂
+  - id: "jp_singer" # 歌
     type: 1
-    labelID: 366
-    label: {key: explore_jp_label_music}
+    labelID:
+    label: {key: streamer_jp_label_singer}
+    featured: true
+    order: 10
+    iconURL: "h"
+    isHide: true
+  - id: "jp_instrument" # 楽器演奏
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_instrument}
     featured: true
     order: 11
     iconURL: "h"
     isHide: true
-  - id: "jp_potential" # ポテンシャル,潛力
+  - id: "jp_talent" # タレント（現状ホリプロ用）
     type: 1
-    labelID:  
-    label: {key: explore_jp_label_potential}
-    order: 9
-    iconURL: "h"
-    isHide: true
-  - id: "jp_vliver" # Vライバー,V-Liver
-    type: 2
-    labelID: 368
-    label: {key: explore_jp_label_vliver}
-    featured: true
-    order: 13
+    labelID: 
+    label: {key: streamer_jp_label_talent}
+    order: 12
     iconURL: "h"
     isHide: true
   - id: "jp_game" # ゲーム,遊戲
@@ -38,7 +38,125 @@ labelInfos:
     labelID: 367
     label: {key: explore_jp_label_game}
     featured: true
-    order: 12
+    order: 13
+    iconURL: "h"
+    isHide: true
+  - id: "jp_V-LIVER" # Vライバー,V-Liver
+    type: 2
+    labelID: 368
+    label: {key: explore_jp_label_vliver}
+    featured: true
+    order: 14
+    iconURL: "h"
+    isHide: true
+  - id: "jp_audiostream" # ラジオ配信
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_audiostream}
+    featured: true
+    order: 15
+    iconURL: "h"
+    isHide: true
+  - id: "jp_freetalk1" # 雑談
+    type: 1
+#    labelID: 365
+    label: {key: streamer_jp_label_freetalk}
+    order: 16
+    iconURL: "h"
+    isHide: true
+  - id: "jp_fortune" # 占い
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_fortune}
+    featured: true
+    order: 17
+    iconURL: "h"
+    isHide: true
+  - id: "jp_welcome" # 初見さん歓迎
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_welcome}
+    featured: true
+    order: 18
+    iconURL: "h"
+    isHide: true
+  - id: "jp_DJ" # DJ
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_DJ}
+    featured: true
+    order: 19
+    iconURL: "h"
+    isHide: true
+  - id: "jp_creator" # クリエイター
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_creator}
+    featured: true
+    order: 20
+    iconURL: "h"
+    isHide: true
+  - id: "jp_lv10" # lv10以下
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_lv10}
+    featured: true
+    order: 21
+    iconURL: "h"
+    isHide: true
+  - id: "jp_lv20" # lv20以下
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_lv20}
+    featured: true
+    order: 22
+    iconURL: "h"
+    isHide: true
+  - id: "jp_lv30" # lv30以下
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_lv30}
+    featured: true
+    order: 23
+    iconURL: "h"
+    isHide: true
+  - id: "jp_boys" # 男子
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_boys}
+    featured: true
+    order: 24
+    iconURL: "h"
+    isHide: true
+  - id: "jp_girls" # 女子
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_girls}
+    featured: true
+    order: 25
+    iconURL: "h"
+    isHide: true
+  - id: "jp_show"  #熱門節目
+    type: 2
+    label:
+      key: "streamer_label_show"
+    iconURL: "h"
+    isHide: true
+
+
+  - id: "jp_music" # 音楽,音樂
+    type: 1
+#    labelID: 366
+    label: {key: explore_jp_label_music}
+    featured: true
+    order: 111
+    iconURL: "h"
+    isHide: true
+  - id: "jp_potential" # ポテンシャル,潛力
+    type: 1
+    labelID:  
+    label: {key: explore_jp_label_potential}
+    order: 109
     iconURL: "h"
     isHide: true
   - id: "jp_pickup" # パタパタ２
@@ -46,55 +164,7 @@ labelInfos:
     labelID: 
     label: {key: explore_jp_label_pickup}
     featured: true
-    order: 10
-    iconURL: "h"
-    isHide: true
-  - id: "jp_fashion" # ファッション,时尚
-    type: 1
-    labelID: 371
-    label: {key: streamer_jp_label_fashion}
-    order: 14
-    iconURL: "h"
-    isHide: true
-  - id: "jp_performer" # パフォーマー,表演
-    type: 1
-    labelID: 369
-    label: {key: streamer_jp_label_performer}
-    order: 15
-    iconURL: "h"
-    isHide: true
-  - id: "jp_hobby" # ホビー,嗜好
-    type: 1
-    labelID: 370
-    label: {key: streamer_jp_label_hobby}
-    order: 16
-    iconURL: "h"
-    isHide: true
-  - id: "jp_variety" # バラエティ,综艺
-    type: 1
-    labelID: 372
-    label: {key: streamer_jp_label_variety}
-    order: 17
-    iconURL: "h"
-    isHide: true
-  - id: "jp_freetalk1" # 雑談（タレント）,闲聊
-    type: 1
-    labelID: 365
-    label: {key: streamer_jp_label_freetalk}
-    order: 18
-    iconURL: "h"
-    isHide: true
-  - id: "jp_talent" # タレント（現状ホリプロ用）
-    type: 1
-    labelID: 
-    label: {key: streamer_jp_label_talent}
-    order: 19
-    iconURL: "h"
-    isHide: true
-  - id: "jp_show"  #熱門節目
-    type: 2
-    label:
-      key: "streamer_label_show"
+    order: 110
     iconURL: "h"
     isHide: true
   - id: "exclusive" # 付費解鎖, 獨家內容
@@ -104,15 +174,42 @@ labelInfos:
     iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
     order: 2001
     isHide: true   
+  - id: "jp_fashion" # ファッション,时尚
+    type: 1
+#    labelID: 371
+    label: {key: streamer_jp_label_fashion}
+    order: 114
+    iconURL: "h"
+    isHide: true
+  - id: "jp_performer" # パフォーマー,表演
+    type: 1
+#    labelID: 369
+    label: {key: streamer_jp_label_performer}
+    order: 115
+    iconURL: "h"
+    isHide: true
+  - id: "jp_hobby" # ホビー,嗜好
+    type: 1
+#    labelID: 370
+    label: {key: streamer_jp_label_hobby}
+    order: 116
+    iconURL: "h"
+    isHide: true
+  - id: "jp_variety" # バラエティ,综艺
+    type: 1
+#    labelID: 372
+    label: {key: streamer_jp_label_variety}
+    order: 117
+    iconURL: "h"
+    isHide: true
 
-
-# 探索頁面會出現的label
+# 探索頁面會出現的label 
 exploreLabels:
   - jp_pickup        # パタパタ２
   - jp_recommend     # レコメンド,推薦
   - jp_music         # 音楽,音樂
   - jp_potential     # ポテンシャル,潛力
-  - jp_vliver        # Vライバー,V-Liver
+  - jp_V-LIVER        # Vライバー,V-Liver
   - jp_game          # ゲーム,遊戲
 
 
@@ -197,7 +294,7 @@ labelWhiteList:
   #jp_pickup:
    # - 16226683-73a4-4055-a536-d3bb317cb3c7 # 17japan
     #- 1001c909-355b-47c6-8e46-632bf05a453e # あみゅね
-    #- a3251943-fe02-4425-8f89-573edf423e86 # れい_reichannel	
+    #- a3251943-fe02-4425-8f89-573edf423e86 # れい_reichannel 
     #- 5cd24ae7-481d-40e5-8a53-49b12dac7b78 # MIKI.entertainer
     #- 25f04237-8bd9-415e-4380-afcf558114bc # kana_.jp
     #- 119d02a6-3346-41d6-a313-0491a25ee542 # Yin_Ghibli0716
@@ -258,7 +355,14 @@ labelWhiteList:
     - 9236a1f1-e315-4a8c-ac23-5ac5b1f3d6b1
 
   jp_potential:
-
+    - fa9a686c-15f1-4762-9190-5ba52adf1f30 # ぐちこ🐷🍼
+    - 4ee03619-ef34-4662-af6b-424f1c9a81d6 # まみこ100.percent
+    - 90d2a217-5380-4ba6-a252-5e9070709feb # てんちぃ_ch
+    - 13e97657-0d58-46df-9844-1e91acc616ea # ゆう💍yuu✨
+    - 06480937-72de-43e5-8486-8930e0153366 # みくぴよ🐰🏹
+    - 1f1f2329-efff-4523-8d35-bfe65fb8d059 # mone_もね
+    - ce63ebed-f967-4d08-aa74-aa53df347564 # きす🤍Kis🐡🍀
+    - 24eb6eb6-6117-4418-9188-9f84d5474367 # ゆーか💊💙choco🍫
 
   jp_game:
     - f35f856a-d667-44ef-8fc5-30950eade04e # 猫无🐱れおてゃん🗽🔥
@@ -289,7 +393,7 @@ labelWhiteList:
     - b8697599-fbb1-4468-9cee-579fd44b8b46 # Qoo_pro_con
 #    - a3a5634d-1686-4855-bd26-a1ece94ad546 # 豚汁test1
 
-  jp_vliver:  
+  jp_V-LIVER:  
     - 853f451b-f428-4645-b647-311827b89f60 # ガブ
     - fa398096-c554-4ccb-8a57-3e5c21607079 # 狐狐音の前🈁VLiver
     - 7257f6c5-6784-4c77-a8fa-8a48afdbfcba # 満点花丸
