@@ -36,14 +36,7 @@ sections:
     enable: true
     style: 2
     more: false
-  - id: GroupCall # GroupCall 
-    name:
-      key: group_stream_v3hotpage
-    enable: false
-    dedup: false
-    minGrids: 1
-    style: 9 
-    more: true
+  
   - id: Suggestion # 猜你可能喜歡
     name:
       key: tab_hot_2019q4_follow_suggestion
@@ -58,6 +51,14 @@ sections:
     dedup: false
     minGrids: 1
     style: 3
+    more: true
+  - id: GroupCall # GroupCall 
+    name:
+      key: group_stream_v3hotpage
+    enable: true
+    dedup: false
+    minGrids: 2
+    style: 9 
     more: true
   - id: PK # pk
     name:
