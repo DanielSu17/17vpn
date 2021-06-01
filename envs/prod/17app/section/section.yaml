@@ -33,7 +33,7 @@ sections:
     style: 6
     minGrids: 5
     more: true 
-  - id: NewestStreamer # D0 new streamer
+  - id: NewestStreamer # D0 new streamer 首日新手
     name:
       key: tab_hot_d0streamer
     enable: true
@@ -59,6 +59,36 @@ sections:
     minGrids: 5
     style: 3
     more: true
+  - id: Label #音樂
+    labelID: tw_t_music
+    name: 
+      key: streamer_label_music
+    enable: true
+    dedup: true  
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+  - id: Label #遊戲玩家
+    labelID: tw_t_game
+    name: 
+      key: streamer_label_game
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+  - id: Label #繪畫達人
+    labelID: visual_artists
+    name: 
+      key: streamer_label_highlight_visual_artists
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
   - id: Music # legacy Music tab
     name:
       key: tab_hot_2019q4_music
@@ -117,36 +147,6 @@ sections:
       key: streamer_label_stay_at_home_subtab
     enable: true
     dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    category: normal
-  - id: Label #遊戲
-    labelID: tw_t_game
-    name: 
-      key: streamer_label_game
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    category: normal
-  - id: Label #繪畫達人
-    labelID: visual_artists
-    name: 
-      key: streamer_label_highlight_visual_artists
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    category: normal
-  - id: Label #音樂
-    labelID: tw_t_music
-    name: 
-      key: streamer_label_music
-    enable: true
-    dedup: true  
     minGrids: 5
     style: 3
     more: true
