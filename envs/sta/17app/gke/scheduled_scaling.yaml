@@ -13,17 +13,17 @@
     minReplicas: 8
     
 # schedules for PreProd QA stress test
-- startTime: "2021-05-25 14:00:00 (GMT+0800)"
-  endTime: "2021-05-25 20:00:00 (GMT+0800)"
+- startTime: "2021-06-01 14:00:00 (GMT+0800)"
+  endTime: "2021-06-01 20:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8ssta-goapi-main
-    minReplicas: 80
+    minReplicas: 120
   - name: k8ssta-golives-main
-    minReplicas: 80
+    minReplicas: 85
   - name: k8ssta-gotrade-main
     minReplicas: 12
   - name: k8ssta-gocells-main
-    minReplicas: 20
+    minReplicas: 25
   - name: k8ssta-gousersearch-main
     minReplicas: 10
 
