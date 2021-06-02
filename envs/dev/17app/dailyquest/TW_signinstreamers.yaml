@@ -1,0 +1,19 @@
+# sign in to specified streamers in regions in time range.
+# be awared that you can defined more than one settings,
+# but the time range can not overlap.
+# if no any valid settings or you remove out this structure,
+# it'll fallback to and leverage disableSignInHottest setting.
+# a complete setting is like:
+# - userID:
+#   timeSlots:
+#     - startTime:
+#       endTime:
+#
+# "disableSignInHottest" setting is under "dailyquest.yaml"
+#
+- userID: defaultID
+  timeSlots:
+    - startTime: 2019-02-20 00:00:00 (GMT+0800)
+      endTime: 2019-02-20 01:00:00 (GMT+0800)
+    - startTime: 2019-02-25 12:00:00 (GMT+0800)
+      endTime: 2019-03-25 23:30:00 (GMT+0800)
