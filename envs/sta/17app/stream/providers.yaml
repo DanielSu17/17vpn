@@ -6,7 +6,7 @@ rtmp_providers_secondary: # AWS/CHT will create ChannelID/secretKey so we should
 - WANSU_LOW_LATENCY
 - QINIU
 rtmp_providers_groupCall:
-- WANSU_LOW_LATENCY
+#- WANSU_LOW_LATENCY
 - QINIU
 rtmp_providers:
 - name: DEFAULT
@@ -20,7 +20,7 @@ rtmp_providers:
   expire_after_hours: 6
   weight: 0
   region_weights:
-    TW: 0
+    TW: 100
     US: 0
   users:
   - 37d9e764-5eef-44f8-8e60-a06f5ea7e001 # qaprogram1
@@ -192,7 +192,7 @@ rtmp_providers:
   quality_support: 0
   weight: 0
   region_weights:
-    TW: 100
+    TW: 50
     HK: 0
     US: 0
   levelRestriction:
