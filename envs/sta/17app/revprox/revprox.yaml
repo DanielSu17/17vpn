@@ -12,7 +12,7 @@ record:
 
 access_mode: 1
 access_whitelist:
- - 61.216.89.10
+  - 61.216.89.10
 access_blacklist:
  - 61.216.89.9
 allowed_origins:
@@ -32,36 +32,35 @@ regexConf:
       - ^/api/v1/event$
       - ^/api/v1/event/subtabs$
       - ^/api/v1/event/banner$
-      - ^/api/v1/event/info/
-
 conf:
- - url_key: "go_usersearch_url"
-   weight: 100
-   white_list:
-     apiv1: "user/search"
- - url_key: "go_trade_url"
-   weight: 100
-   white_list:
-     apiv1: "gift/giftbox,gift/goods,gift/internal,gift/sync,gift/levelUp,gift/gifted-producers"
-     redenvelopes: "redenvelopes"
-     sportscar: "sportscar"
-     monster: "monsters"
-     baggage: "baggage"
-     # legacy
-     gift: "getLiveStreamGiftLeaderboard,\
+  - url_key: "go_usersearch_url"
+    weight: 100
+    white_list:
+      apiv1: "user/search"
+  - url_key: "go_trade_url"
+    weight: 100
+    white_list:
+      apiv1: "gift/giftbox,gift/goods,gift/internal,gift/sync,gift/levelUp,gift/gifted-producers"
+      redenvelopes: "redenvelopes"
+      sportscar: "sportscar"
+      monster: "monsters"
+      baggage: "baggage"
+      # legacy
+      gift: "getLiveStreamGiftLeaderboard,\
             getLiveStreamAllGifts,\
             getReceivedGiftLog"
- - url_key: "go_url"
-   white_list:
-     liveStreams: "publishLiveStream,\
+  - url_key: "go_url"
+    white_list:
+      liveStreams: "publishLiveStream,\
             getLiveStreamViewers,keepLiveStream"
-     liveStreams/admin: "pass,kill,hide,pintotop,cancelpintotop,\
+      liveStreams/admin: "pass,kill,hide,pintotop,cancelpintotop,\
             killLiveStreamAction,passLiveStream,hideLiveStream,\
             promoteLiveStream,getLiveStreamsForReview,\
             removePromotedLiveStream,promoteTopLiveStream,\
             cancelPromoteTopLiveStream,hideHotLivestreamAction"
-     feed: "getPostFeed,celebrities/all,celebrities"
-     legacy: "getUserInfo,getUserInfoByUserID,\
+      api: "api"
+      feed: "getPostFeed,celebrities/all,celebrities"
+      legacy: "getUserInfo,getUserInfoByUserID,\
             getSelfInfo,unblockUserAction,blockUserAction,adminBlockUserAction,\
             getBlockUserList,followUserAction,unfollowUserAction,\
             sendFollowRequest,rejectFollowRequest,\
@@ -74,9 +73,9 @@ conf:
             getFriendNotif,adminDeleteProfilePictureAction,\
             reportUserAction,getUserLikers,adOnAction,adOffAction,getCountry,\
             choiceUserAction,verifyUserAction,removeVerifiedUserAction,adminBlockDirtyWordAction"
-     event: "getEventBanners"
-     pay: "purchaseProduct"
-     auth: "loginAction,loginAction2,registerAction,registerAction2,\
+      event: "getEventBanners"
+      pay: "purchaseProduct"
+      auth: "loginAction,loginAction2,registerAction,registerAction2,\
             checkFacebookIDAvailable,checkOpenIDAvailable,\
             registerByPhoneAction,sendPhoneVerificationCode,\
             checkNeedHumanTest,isPhoneNumberUsed,verifyUserIdentity,\
@@ -84,8 +83,8 @@ conf:
             isPhoneNumberOpenIDPaired,\
             eraseInternationalPhoneNumber,\
             getResetPasswordToken,resetPassword"
-     official: "getVersionStatus"
-     post: "publishPost,viewPost,commentPost,getUserPost,unlikePost,\
+      official: "getVersionStatus"
+      post: "publishPost,viewPost,commentPost,getUserPost,unlikePost,\
             deleteComment,likePostBatchUpdate,updatePost,deletePost,\
             getExplorePicturesForReview,passExplorePicture,\
             hideExplorePicture,hidePostAction,adminDeletePostAction,\
@@ -93,54 +92,53 @@ conf:
             reportCommentAction,reportPostAction,getHotPost,\
             recoverPostAction,searchHashTag,getPostLikers,\
             getReportPost,processReportedPostAction"
-     money: "getPointUsageLog,getPointGainLog,getRevenueReport"
-     follow: "getFriendSuggestion"
-     deadlegacy: "eventTracking,getNewestAppVersion,getSuggestedUsers,\
+      money: "getPointUsageLog,getPointGainLog,getRevenueReport"
+      follow: "getFriendSuggestion"
+      deadlegacy: "eventTracking,getNewestAppVersion,getSuggestedUsers,\
             findFriends,getExploreSuggestedUsers,getLikeLeaderboard,\
             getSystemNotif,getHotLiveStreams,getHotLiveStreams2,likePost,\
             getLikedPost,getLiveStreamComments,recoverPassword,\
             getPayments,uploadPhoneNumbers,uploadFacebookFriends,\
             followAllAction,updateLiveStreamInfo,\
             getPointProductList,getPostByHashTag,readNotif,updateOpenID"
- - url_key: "go_lives_url"
-   white_list:
-     # for api
-     apiv1: "liveStreams,lives"
-     # for legacy api
-     liveStreams: "getSuggestedLiveStreams,liveStreams/getSuggestedLiveStreams,\
+  - url_key: "go_lives_url"
+    weight: 100  # (0, 100]
+    white_list:
+      # v1 api
+      apiv1: "liveStreams,lives"
+  - url_key: "go_lives_url"
+    white_list:
+      # for legacy api
+      liveStreams: "getSuggestedLiveStreams,liveStreams/getSuggestedLiveStreams,\
             getLatestLiveStreams,liveStreams/getLatestLiveStreams,\
             getLiveStreamInfo,liveStreams/getLiveStreamInfo,\
-            enterLiveStream,\
-            quitViewLiveStream,\
-            isUserOnLiveStream,\
-            getUserLiveStreams,\
-            likeLivestreamBatchUpdate,\
+            enterLiveStream,liveStreams/enterLiveStream,\
+            quitViewLiveStream,liveStreams/quitViewLiveStream,\
+            isUserOnLiveStream,liveStreams/isUserOnLiveStream,\
+            getUserLiveStreams,liveStreams/getUserLiveStreams,\
+            likeLivestreamBatchUpdate,liveStreams/likeLivestreamBatchUpdate,\
             getLiveStreamHotCountryList,\
             reportLiveAction,\
             restreamLiveStream,\
             hasRestreamedLiveStream,\
             endLiveStream,\
-            commentLiveStream"
- - url_key: "aggr_gateway_url"
-   default_url_key: "go_cells_url"
-   weight: 100
-   white_list:
-     apiv1: "cells,sections"
- - url_key: "go_platform_url"
-   weight: 100
-   white_list:
-     apiv1: "stamp/list"
- - url_key: "bbrich_url"
-   weight: 100
-   white_list:
-     apiv1: "bbrich"
- - url_key: "go_logs_url"
-   default_url_key: "go_platform_url"
-   weight: 100
-   white_list:
-     apiv1: "logs"
- - url_key: "group_call_url"
-   weight: 100
-   white_list:
-     apiv1: "groupCalls"
+            commentLiveStream,liveStreams/commentLiveStream"
+  - url_key: "aggr_gateway_url"
+    default_url_key: "go_cells_url"
+    weight: 100
+    white_list:
+      apiv1: "cells,sections"
+  - url_key: "bbrich_url"
+    weight: 100
+    white_list:
+      apiv1: "bbrich"
+  - url_key: "go_logs_url"
+    default_url_key: "go_platform_url"
+    weight: 10
+    white_list:
+      apiv1: "logs"
+  - url_key: "group_call_url"
+    weight: 100
+    white_list:
+      apiv1: "groupCalls"
 
