@@ -8,6 +8,9 @@
 #     name:
 #       key: <string>
 #     labelID: <string> (optional if id is `Label`)
+#     orderModel: 1|2
+#If orderModel: 1, it means the order is based on achievement scores
+#If orderModel: 2, it means the order is based on ML recommendations
 
 sections:
   - id: TopBanner # Banner + super promote
@@ -34,7 +37,7 @@ sections:
     minGrids: 5
     style: 3
     more: true
-    orderModel: 1
+    orderModel: 2
   - id: Suggestion # 猜你可能喜歡
     name:
       key: tab_hot_2019q4_follow_suggestion
@@ -43,6 +46,7 @@ sections:
     style: 6
     minGrids: 5
     more: true
+    orderModel: 2
   - id: Latest # 新人(和『最新』同邏輯)
     name:
       key: tab_hot_2019q4_newstreamer
@@ -86,6 +90,7 @@ sections:
     style: 3
     more: true
     category: normal
+    orderModel: 2
 
   - id: Label # タレント
     labelID: jp_talent
@@ -97,6 +102,7 @@ sections:
     style: 3
     more: true
     category: normal
+    orderModel: 2
 
   - id: PK
     name:
@@ -117,6 +123,7 @@ sections:
     style: 3
     more: true
     category: normal
+    orderModel: 2
 
   - id: Label
     labelID: jp_V-LIVER
@@ -128,6 +135,7 @@ sections:
     style: 3
     more: true
     category: normal
+    orderModel: 2
 
   - id: Vod # 熱門影音
     name:
@@ -147,6 +155,7 @@ sections:
     style: 3
     more: true
     category: normal
+    orderModel: 2
 
   - id: Label # 雑談
     labelID: jp_freetalk1
@@ -158,6 +167,7 @@ sections:
     style: 3
     more: true
     category: normal
+    orderModel: 2
 
   - id: Label # 占い
     labelID: jp_fortune
@@ -169,6 +179,7 @@ sections:
     style: 3
     more: true
     category: normal
+    orderModel: 2
 
   - id: Label # 初見さん歓迎
     labelID: jp_welcome
@@ -180,6 +191,7 @@ sections:
     style: 3
     more: true
     category: normal
+    orderModel: 2
 
   - id: Label # DJ
     labelID: jp_DJ
@@ -215,6 +227,7 @@ sections:
     style: 3
     more: true
     category: normal
+    orderModel: 2
 
   - id: Label # lv20以下
     labelID: jp_lv20
@@ -226,7 +239,7 @@ sections:
     style: 3
     more: true
     category: normal
-    orderModel: 1
+    orderModel: 2
 
   - id: Label # lv30以下
     labelID: jp_lv30
@@ -238,6 +251,7 @@ sections:
     style: 3
     more: true
     category: normal
+    orderModel: 2
 
   - id: Label # 男子
     labelID: jp_boys
@@ -249,6 +263,7 @@ sections:
     style: 3
     more: true
     category: normal
+    orderModel: 2
 
   - id: Label # 女子
     labelID: jp_girls
@@ -260,6 +275,7 @@ sections:
     style: 3
     more: true
     category: normal
+    orderModel: 2
 
   - id: Label
     labelID: jp_show
@@ -270,6 +286,7 @@ sections:
     minGrids: 3
     style: 4
     more: true
+    orderModel: 2
 
 
 
