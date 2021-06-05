@@ -3,10 +3,10 @@ default_provider:
   message_provider_general: 0
   message_provider_17q: 0
 rtmp_providers_secondary: # AWS/CHT will create ChannelID/secretKey so we should not set here
-# - WANSU_LOW_LATENCY
+- WANSU_LOW_LATENCY
 - QINIU
 rtmp_providers_groupCall:
-#- WANSU_LOW_LATENCY
+- WANSU_LOW_LATENCY
 - QINIU
 rtmp_providers:
 - name: DEFAULT
@@ -20,7 +20,7 @@ rtmp_providers:
   expire_after_hours: 6
   weight: 0
   region_weights:
-    TW: 100
+    TW: 50
     US: 0
   users:
   - 37d9e764-5eef-44f8-8e60-a06f5ea7e001 # qaprogram1
@@ -159,7 +159,7 @@ rtmp_providers:
   quality_support: 1
   weight: 50
   region_weights:
-    TW: 0
+    TW: 50
   users:
   - 0e671b10-1660-419c-67f9-9983ebdbad38 # triviabot1
   - 48ca8e9e-0ca1-4d7f-6b2c-ffd21e5a4ff6 # triviabot2
@@ -194,7 +194,7 @@ rtmp_providers:
   quality_support: 0
   weight: 0
   region_weights:
-    TW: 50
+    TW: 0
     HK: 0
     US: 0
   levelRestriction:
@@ -254,6 +254,8 @@ rtmp_providers:
   quality_support: 0
   expire_after_hours: 6
   weight: 0
+  region_weights:
+    TW: 0
   levelRestriction:
     minLevel: 0
     maxLevel: 0
