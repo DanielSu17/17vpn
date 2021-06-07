@@ -823,11 +823,11 @@
 # group B is ordered by ML scores
 #         [ Existing users ]       |      [ New users ]      |
 # ---------------------------------|-------------------------|
-#                                  ^ 2021-06-07 14:00        ^ 2021-06-21 14:00
+#                                  ^ 2021-06-07 16:00        ^ 2021-06-21 16:00
 - testName: mlSectionOrder
-  enableABtest: false
-  startTime: "2021-06-07T14:00:00+08:00"
-  endTime: "2021-06-21T14:00:00+08:00"
+  enableABtest: true
+  startTime: "2021-06-07T16:00:00+08:00"
+  endTime: "2021-06-21T16:00:00+08:00"
   lastCharGroup: # existing users
     "0": "b"
     "1": "a"
@@ -846,8 +846,8 @@
     "e": "a"
     "f": "a"
   extraNewbieABtest:
-    startTime: "2021-06-07T14:00:00+08:00"
-    endTime: "2021-06-21T14:00:00+08:00"
+    startTime: "2021-06-07T16:00:00+08:00"
+    endTime: "2021-06-21T16:00:00+08:00"
     lastCharGroup: # new users
         "0": "b"
         "1": "b"
