@@ -5,19 +5,25 @@ onHoldPageDisplaySeconds: 10
 addConfirmDisplaySeconds: 20
 rejectionNoDisturbSeconds: 300
 timeoutSeconds: 30
-readyTimeoutSeconds: 5
+readyTimeoutSeconds: 15
 connectingTimeoutSeconds: 60
 reservedTimeoutSeconds: 30
 viewerTimeoutSeconds: 30
 statusInitSkipCheckSeconds: 15
 maxInvitationCount: 200
-maxReceivedInvitationCount: 50
+maxReceivedInvitationCount: 1
 maxRaiseHandCount: 200
-maxGroupCallEventCount: 100
+maxGroupCallEventCount: 3000
 maxInvitationListLength: 100
 streamerGetAPIIntervalMilliSeconds: 1000
 viewerGetAPIIntervalMilliSeconds: 5000
 queuingDefaultAccept: true
+animationLoader:
+  - animationID: groupcall_opening
+    url: http://cdn.17app.co/65c707a7-e47a-48f7-ae21-e3b62c1cafc3.zip
+    MD5: d25f3621a1b3d6d361c384057be165a8
+    webpUrl: https://cdn.17app.co/3d916601-cfcc-4c78-9388-6148a0ff4861-q80-s1.webp
+    webpMD5: 21841825185782c010adeb8c4c47defb
 supportedVersion:
   android: ""
   ios: ""
