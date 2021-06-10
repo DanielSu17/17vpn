@@ -5,51 +5,6 @@
   - name: example-target-hpa
     minReplicas: 20
 
-# 0603 NishikawaTakanori For JP
-- startTime: "2021-06-03 20:00:00 (GMT+0900)"
-  endTime: "2021-06-03 22:00:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 0604 Gackt
-- startTime: "2021-06-04 20:00:00 (GMT+0800)"
-  endTime: "2021-06-04 23:30:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 0608 Yoshimoto For JP
-- startTime: "2021-06-08 17:00:00 (GMT+0900)"
-  endTime: "2021-06-08 19:00:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
 # 0610 17 MUSIC EVENT For TW
 - startTime: "2021-06-10 16:00:00 (GMT+0800)"
   endTime: "2021-06-10 19:00:00 (GMT+0800)"
@@ -68,21 +23,6 @@
 # 0610 NishikawaTakanori For JP
 - startTime: "2021-06-10 20:00:00 (GMT+0900)"
   endTime: "2021-06-10 22:00:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 0616 17 MUSIC EVENT For TW
-- startTime: "2021-06-16 16:00:00 (GMT+0800)"
-  endTime: "2021-06-16 19:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 120
@@ -128,6 +68,38 @@
 # 0624 NishikawaTakanori For JP
 - startTime: "2021-06-24 20:00:00 (GMT+0900)"
   endTime: "2021-06-24 22:00:00 (GMT+0900)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 120
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+
+# 0625 Big Event EVENT For TW
+# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit?ts=6080ccfd#gid=1709744959
+- startTime: "2021-06-25 14:30:00 (GMT+0800)"
+  endTime: "2021-06-25 19:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 120
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+
+# 0630 Big Event EVENT For TW
+# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit?ts=6080ccfd#gid=1709744959
+- startTime: "2021-06-30 15:00:00 (GMT+0800)"
+  endTime: "2021-06-30 19:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 120
