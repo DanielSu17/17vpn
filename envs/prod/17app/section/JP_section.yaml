@@ -28,18 +28,6 @@ sections:
  #   enable: true
  #   style: 2
  #   more: false
-  - id: Label # 時給チャレンジ！
-    labelID: jp_jikyu
-    name:
-      key: streamer_jp_label_jikyu
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
   - id: Label # 新人さん歓迎
     labelID: jp_welcome
     name:
@@ -52,6 +40,17 @@ sections:
     category: normal
     orderModel: 2
 
+  - id: Label # 時給チャレンジ！
+    labelID: jp_jikyu
+    name:
+      key: streamer_jp_label_jikyu
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
   - id: NewestStreamer # D0 new streamer
     name:
       key: tab_hot_d0streamer
