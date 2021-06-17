@@ -120,7 +120,7 @@ sections:
       key: streamer_jp_label_talent
     enable: true
     dedup: false
-    minGrids: 1
+    minGrids: 0
     style: 3
     more: true
     category: normal
@@ -166,6 +166,18 @@ sections:
     minGrids: 5
     style: 5
     more: false
+
+  - id: Label # アニマル
+    labelID: jp_animal
+    name:
+      key: streamer_jp_label_singer
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
 
   - id: Label # ラジオ配信
     labelID: jp_audiostream
