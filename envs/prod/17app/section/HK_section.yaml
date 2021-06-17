@@ -10,59 +10,69 @@
 #     labelID: <string> (optional if id is `Label`)
 
 sections:
-  - id: Label # 
-    labelID: chill
+  - id: Label # 新主播
+    labelID: new_streamers
     name:
-      key: Chill
+      key: hk_newbie
     enable: true
-    dedup: false
-    minGrids: 1
+    dedup: true
+    minGrids: 3
     style: 3
     more: true
   - id: Label # 
     labelID: kol_and_artist
     name:
-      key: KOL & Artist
+      key: hk_kol
     enable: true
-    dedup: false
-    minGrids: 1
-    style: 3
-    more: true
-  - id: Label # 
-    labelID: hobbies
-    name:
-      key: Hobbies
-    enable: true
-    dedup: false
-    minGrids: 1
+    dedup: true
+    minGrids: 3
     style: 3
     more: true
   - id: Label # 
     labelID: music
     name:
-      key: Music
+      key: hk_music
     enable: true
-    dedup: false
-    minGrids: 1
+    dedup: true
+    minGrids: 3
     style: 3
     more: true
   - id: Label # 
-    labelID: 17headline
+    labelID: chill
     name:
-      key: 17 Headline
+      key: hk_Chill
     enable: true
-    dedup: false
-    minGrids: 1
+    dedup: true
+    minGrids: 3
     style: 3
     more: true
   - id: Label # 
-    labelID: new_streamers
+    labelID: hobbies
     name:
-      key: New Streamers
+      key: hk_hobbies
     enable: true
-    dedup: false
-    minGrids: 1
+    dedup: true
+    minGrids: 3
     style: 3
     more: true
-    
+  - id: Label # 
+    labelID: FOHK2021
+    name:
+      key: hk_fohk
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+  - id: Label # 
+    labelID: 17LIVE HK
+    name:
+      key: hk_17live
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+
 officialRecommendedStreamers:
+
