@@ -5,36 +5,6 @@
   - name: example-target-hpa
     minReplicas: 20
 
-# 0610 17 MUSIC EVENT For TW
-- startTime: "2021-06-10 16:00:00 (GMT+0800)"
-  endTime: "2021-06-10 19:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 0610 NishikawaTakanori For JP
-- startTime: "2021-06-10 20:00:00 (GMT+0900)"
-  endTime: "2021-06-10 22:00:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
 # 0617 NishikawaTakanori For JP
 - startTime: "2021-06-17 20:00:00 (GMT+0900)"
   endTime: "2021-06-17 22:00:00 (GMT+0900)"
@@ -53,6 +23,21 @@
 # 0618 NOGOODTV For JP
 - startTime: "2021-06-18 18:00:00 (GMT+0900)"
   endTime: "2021-06-18 20:00:00 (GMT+0900)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 120
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+
+# 0618 Yes I DO For TW
+- startTime: "2021-06-18 17:30:00 (GMT+0800)"
+  endTime: "2021-06-18 21:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 120
