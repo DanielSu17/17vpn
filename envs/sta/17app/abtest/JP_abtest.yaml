@@ -1,5 +1,5 @@
 - testName: entryTitleTypeA # PROD-3617
-  enableABtest: true
+  enableABtest: false
   expiredSecond: 604800
   lastCharGroup:
     "0": "a"
@@ -19,7 +19,7 @@
     "e": "a"
     "f": "a"
 - testName: entryTitleTypeB # PROD-3617
-  enableABtest: true
+  enableABtest: false
   expiredSecond: 604800
   lastCharGroup:
     "0": "b"
@@ -60,7 +60,7 @@
     "e": "b"
     "f": "b"
 - testName: recommendFollow
-  enableABtest: true
+  enableABtest: false
   expiredSecond: 604800 # 7 day
   lastCharGroup:
     "0": "b"
@@ -100,7 +100,7 @@
     "e": "b"
     "f": "b"
 - testName: newbieGuidance # 新手引導(新手遮罩), a:關閉, b:打開
-  enableABtest: true
+  enableABtest: false
   expiredSecond: 259200 # 3 days
   lastCharGroup:
     "0": "b"
@@ -198,7 +198,7 @@
     "e": "b"
     "f": "b"
 - testName: newbieOnboard # 新手流程優化 (onboarding_flow_optimization)
-  enableABtest: true
+  enableABtest: false
   expiredSecond: 604800 # 7 day
   lastCharGroup:
     "0": "b"
@@ -219,7 +219,7 @@
     "f": "b"
 # 新手流程優化p5 (四頁walkthrough,Feature Guide), client只有當a才顯示 空的也是不顯示
 - testName: newbieGuide
-  enableABtest: true
+  enableABtest: false
   expiredSecond: 3600
   lastCharGroup:
     "0": "a"
@@ -261,7 +261,7 @@
     "f": "b"
 # 新手流程優化P10: 新手任務彈窗
 - testName: newbieP10MissionHint
-  enableABtest: true
+  enableABtest: false
   expiredSecond: 604800 # 7 day
   lastCharGroup:
     "0": "b"
@@ -282,7 +282,7 @@
     "f": "b"
 # 新手流程優化P10: 新手完成特定數量後PN檢查
 - testName: newbieP10CheckPNWhenReceivedReward
-  enableABtest: true
+  enableABtest: false
   expiredSecond: 604800 # 7 day
   lastCharGroup:
     "0": "b"
@@ -527,7 +527,7 @@
     "e": "b"
     "f": "b"
 - testName: newbieStreamGuide
-  enableABtest: true
+  enableABtest: false
   expiredSecond: 1800 # 2 days
   lastCharGroup:
     "0": "b"
