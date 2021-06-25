@@ -21,6 +21,10 @@ function push() {
 }
 
 # list of commits
+
+# If GIT_PREVIOUS_SUCCESSFUL_COMMIT is not aviable, using previous commit by default.
+GIT_PREVIOUS_SUCCESSFUL_COMMIT="${GIT_PREVIOUS_SUCCESSFUL_COMMIT:-$(git rev-parse HEAD~2 | tr -d '\n')}"
+
 commits=$(git log  --pretty=format:'%H' "${GIT_PREVIOUS_SUCCESSFUL_COMMIT}".."${GIT_COMMIT}")
 config_paths=""
 commit_list=""
