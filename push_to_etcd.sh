@@ -70,12 +70,6 @@ for config_path in ${config_paths}; do
     if [ -n "${endpoints}" ]; then
       echo "[debug] ${config_env} / ${config_app} / ${endpoints}"
       push "${config_env}" "${config_app}" "${endpoints}"
-    elif [ "$JOB_NAME" == "17media-config-checker-concert-stream" ]; then
-      # TODO (alexsu)
-      # This is a temporary fix for concert stream Jenkins job
-      # https://jenkins-gogo.17app.co/job/Configs/job/17media-config-checker-concert-stream/configure
-      echo "Do not send Slack meesage for $JOB_NAME"
-      continue
     else
       echo "abort, no endpoint defined"
       curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":warning:Push to ETCD Failed. (${config_env}):red_thinking::etcd:\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Message*:${COMMIT_MESSAGE}\n*Lastest Commit*:${GIT_COMMIT}  *Job*: <${BUILD_URL}|URL> @sre\"}]},{\"type\":\"divider\"}]}" "${SLACK}"
