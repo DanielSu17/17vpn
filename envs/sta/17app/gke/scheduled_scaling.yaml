@@ -41,3 +41,18 @@
     minReplicas: 20
   - name: k8ssta-gousersearch-main
     minReplicas: 10
+
+# Alex test for JP timezone
+- startTime: "2021-06-29 16:30:00 (GMT+0900)"
+  endTime: "2021-06-29 17:00:00 (GMT+0900)"
+  HPAConfigs:
+  - name: k8ssta-goapi-main
+    minReplicas: 80
+  - name: k8ssta-golives-main
+    minReplicas: 80
+  - name: k8ssta-gotrade-main
+    minReplicas: 12
+  - name: k8ssta-gocells-main
+    minReplicas: 20
+  - name: k8ssta-gousersearch-main
+    minReplicas: 10
