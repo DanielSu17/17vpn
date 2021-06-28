@@ -42,6 +42,50 @@ regexConf:
       - ^/api/v1/lives/15810239/viewers/alive # lcuconcert10
       - ^/api/v1/lives/15810239/comment # lcuconcert10
       - ^/api/v1/lives/15810239/giftTabs # lcuconcert10
+  - url_key: "concert_trade_url"
+    default_url_key: "go_trade_url"
+    weight: 100
+    regex_paths:
+      # lcuconcert10
+      - ^POST /api/v1/lives/15810239/gift
+      # kevinmh03
+      - ^POST /api/v1/lives/240924/gift
+      # qacontractor8
+      - ^POST /api/v1/lives/14661501/gift
+      # lcuconcert9
+      - ^POST /api/v1/lives/15809775/gift
+      # tristanconcert1
+      - ^POST /api/v1/lives/15687971/gift
+      # tristanconcert2
+      - ^POST /api/v1/lives/15804059/gift
+      # hanchang.
+      - ^POST /api/v1/lives/297806/gift
+      # blackalang
+      - ^POST /api/v1/lives/14566410/gift
+      # zelltest
+      - ^POST /api/v1/lives/14003419/gift
+      # jameschou02
+      - ^POST /api/v1/lives/9525379/gift
+      # rocka2
+      - ^POST /api/v1/lives/14661305/gift
+      # teamzconcert1
+      - ^POST /api/v1/lives/15687896/gift
+      # teamzconcert2
+      - ^POST /api/v1/lives/15687897/gift
+      # teamzconcert3
+      - ^POST /api/v1/lives/15687898/gift
+      # testsavvy2
+      - ^POST /api/v1/lives/14661333/gift
+      # jwconcert1
+      - ^POST /api/v1/lives/15687901/gift
+      # jwconcert2
+      - ^POST /api/v1/lives/15687902/gift
+      # jan_index3
+      - ^POST /api/v1/lives/14666745/gift
+      # caroconcert1
+      - ^POST /api/v1/lives/15816617/gift
+      # caroconcert2
+      - ^POST /api/v1/lives/15816618/gift
 conf:
   - url_key: "go_usersearch_url"
     weight: 100
