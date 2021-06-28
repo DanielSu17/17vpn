@@ -1,1 +1,1 @@
-# Group Stream regional config SG
+# Group Call (SG)
