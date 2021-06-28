@@ -1,18 +1,28 @@
 aggregateDuration: 10
 concerts:
-#  - userID: mockUserID
-#    roomID: 12345
-#    startTime: 2018-07-31 08:31:00 (GMT+0800)
-#    endTime: 2018-08-01 08:31:00 (GMT+0800)
   - userID: a2b43425-841f-4bdf-a76c-2a25e69cf2fa    #jerry_test_concert1
     roomID: 14675054
     startTime: 2021-06-21 08:31:00 (GMT+0800)
     endTime: 2021-12-31 08:31:00 (GMT+0800)
+  - userID: 2d54d42b-be2c-4dbf-8197-87e2655d45dc    #lcuconcert10
+    roomID: 15810239
+    startTime: 2021-06-28 00:00:00 (GMT+0800)
+    endTime: 2021-12-31 08:31:00 (GMT+0800)
+    giftIDs:
+      - shootin_stars
+      - heart_curtain
 regionProviderWeight:
-#  TW:
-#    - provider: 13 # wansuCDN
-#      weight: 60
-#      throttle: false
-#    - provider: 14 # googleCDN
-#      weight: 40
-#      throttle: false
+  TW:
+    - provider: 13 # wansuCDN
+      weight: 60
+      throttle: false
+    - provider: 14 # googleCDN
+      weight: 40
+      throttle: false
+  JP:
+    - provider: 13 # wansuCDN
+      weight: 60
+      throttle: false
+    - provider: 14 # googleCDN
+      weight: 40
+      throttle: false

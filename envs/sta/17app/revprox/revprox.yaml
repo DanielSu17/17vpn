@@ -32,6 +32,16 @@ regexConf:
       - ^/api/v1/event$
       - ^/api/v1/event/subtabs$
       - ^/api/v1/event/banner$
+  - url_key: "concert_stream_url"
+    default_url_key: "go_lives_url"
+    weight: 100
+    regex_paths:
+      - ^/api/v1/lives/15810239 # lcuconcert10
+      - ^/api/v1/lives/15810239/enter # lcuconcert10
+      - ^/api/v1/lives/15810239/quit # lcuconcert10
+      - ^/api/v1/lives/15810239/viewers/alive # lcuconcert10
+      - ^/api/v1/lives/15810239/comment # lcuconcert10
+      - ^/api/v1/lives/15810239/giftTabs # lcuconcert10
 conf:
   - url_key: "go_usersearch_url"
     weight: 100
