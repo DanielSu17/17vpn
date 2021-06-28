@@ -1,1 +1,1 @@
-# Group Stream regional config JP
+# Group Call (JP)
