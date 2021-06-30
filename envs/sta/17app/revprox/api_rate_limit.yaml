@@ -99,10 +99,6 @@ rate_limits:
   - {url: "/api/v1/recommendation/metric/user/[A-Za-z0-9-]+",     method: "GET",     flow_per_second: 30,        reservoir_size: 30,    scope: by_global}
   - {url: "/api/v1/recommendation/metric/stream/[A-Za-z0-9-]+",   method: "GET",     flow_per_second: 120,       reservoir_size: 200,   scope: by_global}
   - {url: "/api/v1/users/[A-Za-z0-9-]+/recommend",                method: "GET",     flow_per_second: 1,        reservoir_size: 1,    scope: by_global}
-  - {url: "/api/v1/users/[A-Za-z0-9-]+/followees",                method: "GET",     flow_per_second: 30,        reservoir_size: 30,    scope: by_global}
-  - {url: "/api/v1/gift/slots",                method: "GET",     flow_per_second: 1,        reservoir_size: 1,    scope: by_global}
-  - {url: "/api/v1/liveStreams/config/streamer",                method: "GET",     flow_per_second: 1,        reservoir_size: 1,    scope: by_global}
-  - {url: "/api/v1/announcement",                method: "GET",     flow_per_second: 100,        reservoir_size: 100,    scope: by_global}
   # - {url: "/api/v1/user/search",                                  method: "GET",     flow_per_second: 25,        reservoir_size: 25,    scope: by_global}
 
   # group call related
