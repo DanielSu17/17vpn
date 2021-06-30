@@ -10,7 +10,7 @@
 #Rising star: The config can only be changed at 00:00(GMT+8) or after a few mins and the first date of the month (reset date) manually.
 #Please avoid changing the setting in the middle of the month, will effect all streamers’ metrics record
 #Please note that if you want to change the value of the metrics, you will need to change the "Streamer grow up instruction info page" as well (info page)
-
+#Please note that if you want to change the animation of the reward, you have to set it in the list of "# Rising Star Common config"
 
 # control rising star page appearance
 risingStarEnable: true
@@ -36,7 +36,7 @@ levels:
       - id: f4b94347-2674-4f3d-aec3-cd8ee83062dc
         type: 14 # TypeStreamerLiveXSeconds
         title: "streamer_loyalty_streaming_performance_validstreamedhours"
-        threshold: 10800 # 20 hours
+        threshold: 3600 # 1 hours
       - id: b86cad4d-ff6e-46cf-ae9c-a18cf6ea00fa
         type: 22 # TypeRisingStarScheduleCount
         title: "streamer_growth_risingstar_metrics_scheduletime"
@@ -44,19 +44,19 @@ levels:
       - id: fdb9bc01-8d71-4b36-96bc-c6a678aedf38
         type: 25 # TypeReceiveGift
         title: "streamer_loyalty_streaming_performance_uniquegiftsender"
-        threshold: 10
+        threshold: 1
       - id: 9d230e92-7ff2-4756-b3c6-cefc9e713f47
         type: 26 # TypeMaxFollowers
         title: "streamer_growth_risingstar_metrics_accumfollowers"
-        threshold: 20
+        threshold: 1
       - id: dc0148e2-8a1f-40cf-8219-66c7e9f2f1f4
         type: 21 # TypeStreamerGotBabyCoins
         title: "streamer_loyalty_streaming_performance_points"
-        threshold: 4000
+        threshold: 750
       - id: e84d2bb0-195e-43f7-b706-02f15e7ca57b
         type: 23 # TypeRisingStarNewPostCount
         title: "streamer_loyalty_streaming_performance_newpost"
-        threshold: 2
+        threshold: 1
     rewards:
       - type: 9 # Badge
         iconURL: https://cdn.17app.co/85c45c9d-7c90-4d89-b363-1ce70f3dd747.png
@@ -94,27 +94,27 @@ levels:
       - id: f4b94347-2674-4f3d-aec3-cd8ee83062dc
         type: 14 # TypeStreamerLiveXSeconds
         title: "streamer_loyalty_streaming_performance_validstreamedhours"
-        threshold: 36000 # 10 hours
+        threshold: 18000 # 5 hours
       - id: b86cad4d-ff6e-46cf-ae9c-a18cf6ea00fa
         type: 22 # TypeRisingStarScheduleCount
         title: "streamer_growth_risingstar_metrics_scheduletime"
-        threshold: 3
+        threshold: 1
       - id: fdb9bc01-8d71-4b36-96bc-c6a678aedf38
         type: 25 # TypeReceiveGift
         title: "streamer_loyalty_streaming_performance_uniquegiftsender"
-        threshold: 50
+        threshold: 5
       - id: 9d230e92-7ff2-4756-b3c6-cefc9e713f47
         type: 26 # TypeMaxFollowers
         title: "streamer_growth_risingstar_metrics_accumfollowers"
-        threshold: 100
+        threshold: 5
       - id: dc0148e2-8a1f-40cf-8219-66c7e9f2f1f4
         type: 21 # TypeStreamerGotBabyCoins
         title: "streamer_loyalty_streaming_performance_points"
-        threshold: 40000
+        threshold: 3000
       - id: e84d2bb0-195e-43f7-b706-02f15e7ca57b
         type: 23 # TypeRisingStarNewPostCount
         title: "streamer_loyalty_streaming_performance_newpost"
-        threshold: 3
+        threshold: 1
     rewards:
       - type: 9 # Badge
         iconURL: https://cdn.17app.co/85c45c9d-7c90-4d89-b363-1ce70f3dd747.png
@@ -152,27 +152,27 @@ levels:
       - id: f4b94347-2674-4f3d-aec3-cd8ee83062dc
         type: 14 # TypeStreamerLiveXSeconds
         title: "streamer_loyalty_streaming_performance_validstreamedhours"
-        threshold: 72000 # 30 hours
+        threshold: 36000 # 10 hours
       - id: b86cad4d-ff6e-46cf-ae9c-a18cf6ea00fa
         type: 22 # TypeRisingStarScheduleCount
         title: "streamer_growth_risingstar_metrics_scheduletime"
-        threshold: 5
+        threshold: 1
       - id: fdb9bc01-8d71-4b36-96bc-c6a678aedf38
         type: 25 # TypeReceiveGift
         title: "streamer_loyalty_streaming_performance_uniquegiftsender"
-        threshold: 150
+        threshold: 25
       - id: 9d230e92-7ff2-4756-b3c6-cefc9e713f47
         type: 26 # TypeMaxFollowers
         title: "streamer_growth_risingstar_metrics_accumfollowers"
-        threshold: 500
+        threshold: 25
       - id: dc0148e2-8a1f-40cf-8219-66c7e9f2f1f4
         type: 21 # TypeStreamerGotBabyCoins
         title: "streamer_loyalty_streaming_performance_points"
-        threshold: 150000
+        threshold: 15000
       - id: e84d2bb0-195e-43f7-b706-02f15e7ca57b
         type: 23 # TypeRisingStarNewPostCount
         title: "streamer_loyalty_streaming_performance_newpost"
-        threshold: 5
+        threshold: 1
     rewards:
       - type: 9 # Badge
         iconURL: https://cdn.17app.co/85c45c9d-7c90-4d89-b363-1ce70f3dd747.png
@@ -210,27 +210,27 @@ levels:
       - id: f4b94347-2674-4f3d-aec3-cd8ee83062dc
         type: 14 # TypeStreamerLiveXSeconds
         title: "streamer_loyalty_streaming_performance_validstreamedhours"
-        threshold: 108000 # 30 hours
+        threshold: 72000 # 20 hours
       - id: b86cad4d-ff6e-46cf-ae9c-a18cf6ea00fa
         type: 22 # TypeRisingStarScheduleCount
         title: "streamer_growth_risingstar_metrics_scheduletime"
-        threshold: 7
+        threshold: 3
       - id: fdb9bc01-8d71-4b36-96bc-c6a678aedf38
         type: 25 # TypeReceiveGift
         title: "streamer_loyalty_streaming_performance_uniquegiftsender"
-        threshold: 300
+        threshold: 125
       - id: 9d230e92-7ff2-4756-b3c6-cefc9e713f47
         type: 26 # TypeMaxFollowers
         title: "streamer_growth_risingstar_metrics_accumfollowers"
-        threshold: 2000
+        threshold: 125
       - id: dc0148e2-8a1f-40cf-8219-66c7e9f2f1f4
         type: 21 # TypeStreamerGotBabyCoins
         title: "streamer_loyalty_streaming_performance_points"
-        threshold: 600000
+        threshold: 75000
       - id: e84d2bb0-195e-43f7-b706-02f15e7ca57b
         type: 23 # TypeRisingStarNewPostCount
         title: "streamer_loyalty_streaming_performance_newpost"
-        threshold: 7
+        threshold: 5
     rewards:
       - type: 9 # Badge
         iconURL: https://cdn.17app.co/85c45c9d-7c90-4d89-b363-1ce70f3dd747.png
@@ -286,23 +286,23 @@ levels:
       - id: b86cad4d-ff6e-46cf-ae9c-a18cf6ea00fa
         type: 22 # TypeRisingStarScheduleCount
         title: "streamer_growth_risingstar_metrics_scheduletime"
-        threshold: 12
+        threshold: 10
       - id: fdb9bc01-8d71-4b36-96bc-c6a678aedf38
         type: 25 # TypeReceiveGift
         title: "streamer_loyalty_streaming_performance_uniquegiftsender"
-        threshold: 500
+        threshold: 300
       - id: 9d230e92-7ff2-4756-b3c6-cefc9e713f47
         type: 26 # TypeMaxFollowers
         title: "streamer_growth_risingstar_metrics_accumfollowers"
-        threshold: 10000
+        threshold: 500
       - id: dc0148e2-8a1f-40cf-8219-66c7e9f2f1f4
         type: 21 # TypeStreamerGotBabyCoins
         title: "streamer_loyalty_streaming_performance_points"
-        threshold: 2500000
+        threshold: 300000
       - id: e84d2bb0-195e-43f7-b706-02f15e7ca57b
         type: 23 # TypeRisingStarNewPostCount
         title: "streamer_loyalty_streaming_performance_newpost"
-        threshold: 12
+        threshold: 10
     rewards:
       - type: 9 # Badge
         iconURL: https://cdn.17app.co/85c45c9d-7c90-4d89-b363-1ce70f3dd747.png
