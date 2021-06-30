@@ -1,46 +1,89 @@
-maxMemberCount: 6
+maxMemberCount: 2
 raiseHandToastRemindSeconds: 3
-invitationDisplaySeconds: 300
+invitationDisplaySeconds: 60
 onHoldPageDisplaySeconds: 10
 addConfirmDisplaySeconds: 20
-rejectionNoDisturbSeconds: 300
+rejectionNoDisturbSeconds: 60
 timeoutSeconds: 30
-readyTimeoutSeconds: 5
+readyTimeoutSeconds: 15
 connectingTimeoutSeconds: 60
 reservedTimeoutSeconds: 30
 viewerTimeoutSeconds: 30
 statusInitSkipCheckSeconds: 15
 maxInvitationCount: 200
-maxReceivedInvitationCount: 50
+maxReceivedInvitationCount: 1
 maxRaiseHandCount: 200
-maxGroupCallEventCount: 100
+maxGroupCallEventCount: 3000
 maxInvitationListLength: 100
 streamerGetAPIIntervalMilliSeconds: 1000
 viewerGetAPIIntervalMilliSeconds: 5000
 queuingDefaultAccept: true
 getInfoFailedCount: 5
+supportedVersion:
+  android: ""
+  ios: ""
+# temporary for avoiding v3 hot page crashed
+v3gHotPageSupportedVersion:
+  android: "2.56.0"
+  ios: ""
+
 animationLoader:
   - animationID: groupcall_opening
     url: http://cdn.17app.co/17aec550-4cdf-4661-b5ba-4bc046878b88.zip
     MD5: 46fa1b84a28edbcca0e48216fbe27c73
     webpUrl: https://cdn.17app.co/3d916601-cfcc-4c78-9388-6148a0ff4861-q80-s1.webp
     webpMD5: 21841825185782c010adeb8c4c47defb
-supportedVersion:
-  android: ""
-  ios: ""
-whitelist:
-  - c00c630b-7b70-481f-51e4-86583b781b3e # dc1
-  - 6ed790f6-a338-46d3-7a25-0ef9735d6c37 # dc2
-  - f5c49b59-4f73-47a9-5b32-9f96c9c39bb3 # dc3
-  - fc91a23f-5224-44d8-564e-656416713f7c # dc4
-  - c00c630b-7b70-481f-51e4-86583b781bbb # dc5
-  - c00c630b-7b70-481f-51e4-86583b781bcc # dc6
-  - c00c630b-7b70-481f-51e4-86583b781bdd # dc7
-  - c00c630b-7b70-481f-51e4-86583b781fee # dc8
-  - 3128adcd-ea2c-438d-93cf-00baf1d7374a # jen87
-  - 2c9ad019-2b31-4fb9-800d-fa518b51a74d # finn1
-  - 567e0b5d-1516-4ce0-b4e8-bec4e756d5ae # kevinmh
-  - 3799d926-2ae2-4942-a510-847a017921cc # kevinmh01
-  - 9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba # kevinmh03
-blacklist:
 
+whitelist:
+  - "2c9ad019-2b31-4fb9-800d-fa518b51a74d" # finn1
+  - "c9692e9a-d6af-4c3b-b2ba-9954f2fb748d" # momoiscool
+  - "b1e571ee-fce8-4ed2-add0-39f6a2844955" # momoisgood
+  - "c6e35e23-2018-47b2-afc8-adfd8ace1e22" # iron97
+  - "da47bb62-9374-4bbb-697f-57e0f1c96c75" # androidtest1
+  - "287ac024-c261-4bec-6da8-37165dd704f6" # androidtest2
+  - "49ce4402-f72b-4537-6f91-4f81c815bcf8" # androidtest3
+  - "5396b517-3670-417f-5337-4041149513c1" # androidtest4
+  - "e3284f88-884f-46f4-512b-490525c34df8" # androidtest5
+  - "77ed6aa0-7e46-4d06-495a-efe7cdb668ca" # androidtest6
+  - "5292f86c-88a1-45b4-9213-003dc1678b67" # 9balls
+  - "c00f530f-4e34-4e98-8a2e-61b2c822ea29" # jameschou02
+  - "67bcd38c-aa97-4b6b-813f-185cf7bcd03f" # hunter969800
+  - "9a0a66bb-b032-49a6-abd0-4c683aae5ac6" # blackalang
+  - "cb439984-1901-44e6-bfa9-1279b5f50831" # jenn34
+  - "f9e5df9a-339b-4694-a5d9-0fd0396c2fa9" # jenn33
+  - "31c75298-02a8-417e-4c1a-996a63399d8e" # tristan17
+  - "a8fec41b-220d-4d98-9912-39222ab87674" # jenn19
+  - "67bcd38c-aa97-4b6b-813f-185cf7bcd03f" # hunter969800
+  - "e0c410e7-75f8-47b5-8b27-138eabbf0970" # yucheng13579
+  - "6dfb9e95-3a7c-4369-a7d3-9ba618c20197" # hanchang.
+  - "4f2eec89-7ffe-438e-41fc-ec458c25c685" # yhkung
+  - "04c73ee9-8c47-4da1-bc98-609c5b6b2735" # pjm_test1
+  - "9a58c91a-ba7a-4bf7-80c7-7fc8724e9179" # pjm_test2
+  - "ce276237-67d9-40fc-b89c-d7dfa7d44bf4" # pjm_test3
+  - "a5c29509-d67c-4241-b54b-b290db7a2248" # pjm_test4
+  - "17a43b54-ba3e-4bc4-994f-763b6dfc8736" # pjm_test5
+  - "ec26785b-acd3-48ff-b0c5-33dc4355c250" # pjm_test6
+  - "7189fdbd-2cfd-4ef1-a5df-4e836da67906" # pjm_test7
+  - "e23d3c1d-d524-4143-8162-8760b44905f6" # pjm_test8
+  - "bb23fcc2-dc34-4822-973f-9ba6b7540604" # pjm_test9
+  - "26cd3fbf-4674-4312-b174-b62cbbc7e53e" # pjm_test10
+  - "1654dafc-0ea8-49b6-9651-f3b49959acfa" # jamestw1
+  - "a7d07395-8a5f-4c0e-8791-70a24c0c8c63" # jamestw2
+  - "30d609da-9797-45d6-928f-74c05a678c81" # jamestw3
+  - "75654670-3d16-449f-9173-1dfacf419157" # jamestw4
+  - "5bd5f8f5-e56e-4505-848b-1b28f7b3630e" # jamestw5
+  - "0f8f2e56-4be6-4218-aa01-73c4e2e9065f" # jamestw6
+  - "74c0de34-db8b-4151-b02b-4ee4adef2f70" # jamestw7
+  - "a4cb7b99-952a-4343-9e79-998e5d95db95" # jamestw8
+  - "fd06e28c-35e6-4ace-a3a0-c7e6fca629b1" # jamestw9
+  - "b509ed54-636b-4855-a9ae-4b48e42de9c5" # jamestw10
+  - "c8e0511e-2557-4e33-8544-949878bef704" # vvn_17
+  - "4b5a6e20-9a3b-4322-bb2b-5620d44d032f" # raydetest1
+  - "71d4fc23-8de1-4600-8ddc-286ff91f8c93" # pikaarmy1
+  - "fb58536a-f32c-46a9-a3c6-dac64a19b002" # pikaarmy2
+  - "9bb147b9-0609-4a8a-9424-bad618043a5f" # shyhaofb
+  
+blacklist:
+  - "4fcce7f3-77cc-4ead-ad8b-c4eca82c91af" # jamestw13
+  - "771e8a9e-2a5b-4e9b-9edc-bf4b3cc2b8b1" # melisaY10
+  - "53e8f020-8db0-47f1-ae63-67d7801ef17c" # carogonewild10

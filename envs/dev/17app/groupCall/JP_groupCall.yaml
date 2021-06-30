@@ -1,17 +1,52 @@
-enable: true
-enableAudioOnlyMode: true
-enableVideoMode: true
-enableSendAll: true
-minLevel: 0
-needContract: false
-topicOptions:
+# TopicList contains all the topics for user to choose in group stream setting page
+# There is no category of topics in phase 1 so all the topics should be listed in group "0"
+topicList:
+  0:
+    - "女子会"
+    - "男子会"
+    - "ダンス"
+    - "人間関係"
+    - "スポーツ"
+    - "恋愛相談"
+    - "旅行"
+    - "音楽"
+    - "映画"
+    - "テレビ"
+    - "趣味"
+    - "ゲーム"
+    - "ラジオ配信"
+    - "SNS"
+    - "インフルエンサー"
+    - "人に会う"
+    - "新人を歓迎します"
+    - "デート"
+    - "飲み会"
+    - "チャット"
+    - "コワーキング"
+    - "ニュース"
+    - "芸術"
+    - "文化"
+    - "テクノロジー"
+    - "教育"
+    - "投資"
+    - "未來"
+    - "お仕事"
 maxTopicCount: 2
 defaultStreamerConfig:
-  hashtags: ["チャットするだけ", "人に会う"]
-  subtabID:
-  eventID:
+  hashtags: ["チャットするだけ", "人に会う"] # the number of hashtags should not exceed 2
+  subtabID: 初見さん歓迎
+  eventID: # eventID is not used in phase 1
 butlerPicture: https://cdn.17app.co/7b155756-f837-41ac-adb2-f0f2413a1700.png
 
 # groupCall section shows groupCalls in different region
 # sectionRegionGroupList is the priority of regionGroups which is used to sort the groupCalls
 sectionRegionGroupList: ["JP", "HK", "TW", "SG", "MY", "MO", "US", "MENA", "Others"]
+
+# Don't modify infos below without discussing with PM and RD
+enable: true
+enableAudioOnlyMode: true
+enableVideoMode: true
+minLevel: 0
+needContract: false
+# Phase 2
+enableSendAll: true

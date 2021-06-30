@@ -1,15 +1,49 @@
-enable: true
-enableAudioOnlyMode: true
-enableVideoMode: true
-enableSendAll: true
-minLevel: 0
-needContract: false
-topicOptions:
+# TopicList contains all the topics for user to choose in group stream setting page
+# There is no category of topics in phase 1 so all the topics should be listed in group "0"
+#Please note that the topic shouldn't have space between the two words
+topicList:
+  0:
+    - "Beauty"
+    - "Men"
+    - "Dancing"
+    - "Relationships"
+    - "Sports"
+    - "Travel"
+    - "Music"
+    - "Movies"
+    - "TVprogram"
+    - "Fun"
+    - "Gaming"
+    - "Podcasts"
+    - "Socialmedia"
+    - "Influencers"
+    - "Meetpeople"
+    - "Welcomenewbies"
+    - "Dating"
+    - "Bringadrink"
+    - "Justchatting"
+    - "Work"
+    - "News"
+    - "Art"
+    - "Culture"
+    - "Tech"
+    - "Education"
+    - "Investment"
+    - "Thefuture"
 maxTopicCount: 2
 defaultStreamerConfig:
-  hashtags: ["Just chatting", "Meet people"]
-  subtabID:
-  eventID:
+  hashtags: ["Justchatting", "Meetpeople"] # the number of hashtags should not exceed 2
+  subtabID: Chatting
+  eventID: # eventID is not used in phase 1
 butlerPicture: https://cdn.17app.co/7b155756-f837-41ac-adb2-f0f2413a1700.png
 # sectionRegionGroupList is the priority of regionGroups which is used to sort the groupCalls
 sectionRegionGroupList: ["SG"]
+
+# Don't modify infos below without discussing with PM and RD
+enable: true
+enableAudioOnlyMode: true
+enableVideoMode: true
+minLevel: 0
+needContract: false
+# Phase 2
+enableSendAll: true
