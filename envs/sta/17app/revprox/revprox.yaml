@@ -45,6 +45,9 @@ regexConf:
       #   - POST /api/v1/lives/:roomID/quit
       #   - POST /api/v1/lives/:roomID/viewers/alive
       #   - POST /api/v1/lives/:roomID/comment
+      # ericconcert1
+      - ^GET /api/v1/lives/15816643(?:/giftTabs|/concertInfo)?$
+      - ^POST /api/v1/lives/15816643/(?:enter|quit|viewers/alive|comment)?$
       # lcuconcert6
       - ^GET /api/v1/lives/15810246(?:/giftTabs|/concertInfo)?$
       - ^POST /api/v1/lives/15810246/(?:enter|quit|viewers/alive|comment)?$
@@ -118,6 +121,8 @@ regexConf:
     default_url_key: "go_trade_url"
     weight: 100
     regex_paths:
+      # ericconcert1
+      - ^POST /api/v1/lives/15816643/gift
       # lcuconcert10
       - ^POST /api/v1/lives/15810239/gift
       # kevinmh03
