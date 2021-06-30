@@ -1,10 +1,10 @@
 default_provider:
-  rtmp_provider: 0
+  rtmp_provider: 0 
   message_provider_general: 0
   message_provider_17q: 0
 rtmp_providers_secondary: # AWS/CHT will create ChannelID/secretKey so we should not set here
+- WANSU_LOW_LATENCY
 - QINIU
-- WANSU
 rtmp_providers_groupCall:
 - WANSU_LOW_LATENCY
 - QINIU
@@ -12,6 +12,7 @@ rtmp_providers_HDMode:
 - WANSU
 - WANSU_LOW_LATENCY
 - AWS
+- LIVE17
 rtmp_providers:
 - name: DEFAULT
   quality_support: 0
@@ -21,11 +22,27 @@ rtmp_providers:
   weight: 0
 - name: QINIU
   quality_support: 0
-  weight: 50
-  expire_after_hours: 3
+  expire_after_hours: 6
+  weight: 0
+  region_weights:
+    TW: 50
+    US: 0
   users:
-  - ab713974-0018-4095-9f18-d98c41624004
-  - 7ca0983b-3fa3-4e2c-9ebf-093ea4b92d2a
+  - 37d9e764-5eef-44f8-8e60-a06f5ea7e001 # qaprogram1
+  - 82111219-2b6a-4898-ba41-3ee305f46de7 # androidtest
+#  - 6446c762-7d3e-4bb3-b921-da78e966c829 # vava.pp01
+  - 567e0b5d-1516-4ce0-b4e8-bec4e756d5ae # kevinmh
+#  - 3799d926-2ae2-4942-a510-847a017921cc # kevinmh01
+#  - 73e8b839-a1ca-4b08-a51d-2b02ffdea153 # bellayayaya
+# - 7b8acc99-44e3-44ac-b702-f58c536d241a # teddypk002
+#  - ce1527f1-9498-4055-876e-16b72b1e5d50 # wani_belle
+  - e3284f88-884f-46f4-512b-490525c34df8 # androidtest5
+  - 4b35d0f0-f7fe-4bb8-a43d-9966872dd3b5 # qacontractor3
+  - 9692933f-079c-455a-94c5-13f0336c5070 # qacontractor4
+  - 14285db8-de44-47d5-b3e6-429d3b6e9d38 # aaqqaatw02
+  - b2523d4e-f221-4eb8-8748-9d6a68a3c935 # amyshen171
+  - 8d6afb79-95cb-4971-8032-ec892b0d8ae7 # ray.de.test
+
 - name: QCLOUD
   quality_support: 0
   weight: 0
@@ -33,17 +50,160 @@ rtmp_providers:
   quality_support: 1
   weight: 50
   users:
-  - 6f9e06d9-7da6-4c09-a4f2-7d9b2e234000
-  - b1e571ee-fce8-4ed2-add0-39f6a2844955
+########## Concert mode ##########
+  - a2b43425-841f-4bdf-a76c-2a25e69cf2fa # jerry_test_concert1
+  - 9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba # kevinmh03
+  - 1cfa4d38-3911-40a1-926e-4a67a017695c # qacontractor8
+  - 514fd223-af64-4f3a-b3a7-afa86a1489ab # lcuconcert6
+  - 18c68e57-9f0a-4b88-9cb5-07085fad7b96 # lcuconcert7
+  - 872c163a-005d-4a55-909e-be30ffdf49b1 # lcuconcert8
+  - 174d9fdc-d290-4fad-9dbe-ae2a252fd23c # lcuconcert9
+  - 2d54d42b-be2c-4dbf-8197-87e2655d45dc # lcuconcert10
+  - 8f28025b-7c14-4ed3-8d6b-320c9ae1be2d # tristanconcert1
+  - 538f07c2-abc0-4318-ab89-53dec32c1791 # tristanconcert2
+  - 6dfb9e95-3a7c-4369-a7d3-9ba618c20197 # hanchang.
+  - 9a0a66bb-b032-49a6-abd0-4c683aae5ac6 # blackalang
+  - 695e5eca-8bf9-47d6-92a3-1768f1093ed7 # zelltest
+  - c00f530f-4e34-4e98-8a2e-61b2c822ea29 # jameschou02
+  - 867ed83c-8cfc-46d9-8ec7-057c5063d3b1 # rocka2
+  - 8722d87c-2e02-432b-861d-dbe3caf43cdd # teamzconcert1
+  - 866f3b08-6076-4477-9eef-8c438bb08a34 # teamzconcert2
+  - faee3589-3f6c-4244-bd4a-a8d0288a6556 # teamzconcert3
+  - a1e6decd-c0e9-43f7-a6d3-1939870b589f # testsavvy2
+  - c52fdc57-94da-494e-a978-61a786ea43b6 # jwconcert1
+  - 499120e4-c269-4dc2-a0dc-1ff411e223db # jwconcert2
+  - 1d68cb16-588f-467b-b5cd-9faad5d26fe0 # jan_index3
+  - b2574bfd-df6f-4e32-96d9-5ad433325e5b # caroconcert1
+  - 5a963de8-ec13-4b0b-8150-b0d6d7d0cb6d # caroconcert2
+########## Concert mode ##########
+  - caf2da0e-54cb-4058-4f1c-4056eb970161 # janet.w01
+  - e3c4c804-8a9c-4b7c-8026-0a8ed602b42c # jen87go
+  - e3a69570-6384-4161-4404-06d7f0680894 # 17演唱會
+  - 172f46da-017c-4926-b986-cb7014b2b503 # universe世界少年
+  - 97851fd4-13be-47cd-a6f1-ddd8ceb36fd5 # 17media
+  - 767c00d1-ffbc-4ace-8c3a-2bb7494862af # 17cinema
+  - bb1a8ff1-1558-4e25-b1ff-390748a1dcba # 浪人幫陳為民
+  - 014572d9-cdd4-4d34-87d3-0cc0508e126d # 完全娛樂
+  - c0140104-679d-4233-b38a-361875067a39 # erica_talkshow
+  - 40d40074-5478-4618-8319-cbd7451fd6ae # 來同居吧_官方帳號
+  - bdd13547-0c79-4048-bcdc-17d6e458e55b # kkbox台灣
+  - e0d68bc2-03c1-4a38-a149-ee65d0089036 # 當我們喇在一起
+  - ad9a4ee5-e7eb-47f0-8ef4-727b286aa48f # David’s Angels
+  - 9327c27e-72c3-4063-9408-8d6ac8751b6c # 17鏈戀車
+  - 8f95a285-104e-4ea5-ae58-00cca785247a # 17好聰明
+  - 25587e1b-9942-4166-ba92-de889bd9789f # 電獺少女電波塔
+  - 1064096b-6585-4dc3-aa85-218cb2e2a8fa # 誰來作客
+  - 5a656cfc-cdef-477b-ba46-56d43585039c # Cool Japan TV
+  - 4bf2d71b-b2eb-49f7-a953-28e79d0d9da1 # 美。這回事
+  - 4408d847-42dc-4ad5-8447-978aede1f0f4 # 電玩者們
+  - c0a3ae3a-9bc8-4e5f-89c9-3ffda0226e81 # 17開包廂
+  - 92fe1b07-b836-4068-8a72-c8abcff352ad # 爆料17追
+  - 6e9af721-55c5-41d7-91a4-387aceec94a6 # 17Q限時答題搶獎金
+  - 0684f899-6f7c-4bba-a37b-efc5927dbbd4 # 搶手主打星
+  - 2fdb9f0f-cdc3-4eb4-a8af-ff1c261a2369 # 趣你的娛樂
+  - 23bb2414-778f-4894-9c71-6aa4e9f1e244 # 女神KTV
+  - ff3c301a-feae-4241-9705-518b3ccab24a # 日韓音樂
+  - 20ab9b50-8d51-41a1-96fc-8012d2f3c122 # 星座糾察隊
+  - 4eabec20-5cee-4fd9-a043-9ff56a98cf6c # 星采星和愛漂亮
+  - 1d264e45-0c86-4c66-b9e0-dcac051100eb # 凹嗚～～狼來了
+  - e7f163f3-21d9-471f-9368-f223a81167c6 # 倪耐斯
+  - fa0c2a70-9774-4562-bdf1-b787949fe7db # 流行翎距離
+  - 6bb00bc8-7e10-4ff8-b307-ba8739ad6872 # 17娛樂台
+  - a633c75e-5ac2-4d31-8c74-c98b8ec6fb13 # andiofficial
+  - e4d1b665-89e4-44fd-8509-6f75b4493175 # 來同居吧
+  - a7f9c002-7d59-4ac7-9991-cd47bcc5041f # 玖壹壹
+  - 1943476d-7ee9-47db-5370-9d1cf4fcfda2 # gq紳士挑戰賽
+  - c0c39d6e-35c1-469a-4384-794488f51c0d # 中職livehouse
+  - e75f30cb-4160-4a65-aec3-757d250626c7 # 17698一起遛酒吧
+  - 04e99729-ea84-4ec8-711e-c60574cc2b04 # 馬妞報報
+  - d2c83a29-bb16-4722-6064-859743a43416 # 17Hero
+  - e9a1701b-02e0-4fb8-a75c-25ed5c3a9051 # momomi
+  - 0b32cef6-4bcf-4461-bd51-3e40b46562a9 # jenn31
+  - 6f9e06d9-7da6-4c09-a4f2-7d9b2e234000 # momoiscool5
+  - b1e571ee-fce8-4ed2-add0-39f6a2844955 # momoisgood
+  - f98fb8a2-101d-49e7-5cc4-441b1c1429bf # carlqq1浦島次郎
+  - 928f8548-ce4e-4fae-75a5-ee173b641358 # carlqq2
+  - eca8b9df-2dfb-429f-5dca-dc73fd170feb # carlqq3
+  - a02893a9-3b70-4988-5cdd-01f6433a1f00 # carlqq4
+  - 632e2dd3-7336-4165-4886-640d36e69a54 # carlqq5
+  - c719d8a9-31f6-460d-428b-0a7959798a09 # carlqq6
+  - c8d3376f-040f-4cd3-4f5f-f3c82004b980 # carlqq7
+  - ed0d4f20-0e64-4dc9-5124-77493692cbee # carlqq8
+  - b18259bb-77c1-4729-7636-aeface7e4d00 # carlqq9
+  - d17423ab-9bc0-43a1-74c3-7df6f45d47b9 # carlqq10
+  - 75f3fb0c-88c2-4288-67b8-d4f348626bdd # carlqq11
+  - 101e6bb0-2773-4b06-7e77-c66052ca2ab9 # carlqq12
+  - 405b9e90-60fc-4a17-435c-3b43a7090dbe # carlqq13
+  - 13c079f5-e539-4468-5cfd-52d908f80846 # carlqq14
+  - 1541b335-8ae0-4770-769c-ed5e47f1c849 # carlqq15
+  - 8849c0a4-9efa-47a4-4589-87b4b97979df # carlqq16
+  - ee878954-7961-44a8-734e-13f2fad05b67 # carlqq17
+  - 9ddaf7fa-e65b-4e90-4530-2d7c2a66eafc # carlqq18
+  - a4af23bf-a446-4dcc-6c3e-40784a042ac1 # carlqq19
+  - 1c6d13d5-1e70-4671-50d3-d83a96304f99 # carlqq20
+  - bbfea9a2-9e02-4f92-6754-4a0861d79fd6 # carlqq21
+  - 70f5af21-01e2-4e29-4ed2-e3eb493696b0 # carlqq22
+  - 82692979-93fb-4e3d-6c6f-2aa3cac45f35 # carlqq23
+  - 3dc51bd8-30d3-480c-66e7-2914760c44ab # carlqq24
+  - fa7f33d7-f281-4f68-51fe-43a8dce366b0 # carlqq25
+  - 769e3001-fece-4f14-5a5d-b28c9c743c69 # carlqq26
+  - a7e56e87-3e71-4efb-780d-a3f57c552087 # carlqq27
+  - 080c9ec6-4779-4368-4bbe-bb7c73051cb6 # carlqq28
+  - 8569b930-036f-419a-657d-3925b16881b3 # carlqq29
+  - 1866d654-c759-41b9-6a10-8fd9285f8949 # carlqq30
+  - dd888864-20ae-4d1a-64e0-ef0feedb8afe # carlqq31
+  - 3506b600-4eea-4dfa-62f8-3de543d8e064 # carlqq32
+  - 32721f7d-24b4-4864-6b11-2a186c45ec64 # carlqq33
+  - dcf8f2a5-f046-4fae-7bf3-c0afa9507c7f # carlqq34
+  - 9dc17fae-c4ce-4f60-4ecf-d424b93609db # carlqq35
+  - 3d036927-1644-4a40-4a1b-0f88973de6c7 # carlqq36
+  - f3da9d3e-8a47-4a3d-5082-eb4bc79364ac # carlqq37
+  - 05942f37-4529-4702-7ddb-bbf4eedf05b3 # carlqq38
+  - 4a72a717-df01-4444-7667-cfe287b5de4c # carlqq39
+  - c35e73ed-7851-4d79-4194-397f1b606dd6 # carlqq40
+  - 5925df31-617e-4462-68e9-a9c4f708d7dc # carlqq41
+  - eb8188ef-3f5e-4c1f-4908-74ab0b8f2732 # carlqq42
+  - 77290af0-8b06-4613-4491-54f9fa10b0a7 # carlqq43
+  - 855fc2a9-6c08-4fdd-5d66-6ab8ad630980 # carlqq44
+  - 1764d84c-a7ae-451b-5ec7-790179ee45a1 # carlqq45
+  - 5bf8973b-2194-4d69-4cd8-d6f34d6c46bd # carlqq46
+  - 206bafdd-74de-4d6b-50c1-4fc423e4e4f1 # carlqq47
+  - e7c3bd87-f5e7-4de7-6b48-055d54d1b053 # carlqq48
+  - 3d054c3c-7390-418a-798f-b134f611fab4 # carlqq49
+  - ccf94104-4a3f-4c6a-635d-e8a14d3acc11 # carlqq50
+  - 73f219e9-31ff-4bd2-6631-161eb047c53d # carlqq51
+  - 6b49c28b-dbfb-447e-73a6-e6d372271933 # carlqq52
+  - 7eb69798-615f-47a0-69c5-e651148ce8a8 # n7test
+  - a1c9ccbd-9f1b-44dc-a2ad-a85387489a96 # janjanispk1
+  - 6446c762-7d3e-4bb3-b921-da78e966c829 # vava.pp01
+  - 24c986a6-fed5-4c41-8c81-f926ecd005f1 # vava.pp03
+  - c6e35e23-2018-47b2-afc8-adfd8ace1e22 # iron97
+#  - 6dfb9e95-3a7c-4369-a7d3-9ba618c20197 # hanchang.
+  - 77ed6aa0-7e46-4d06-495a-efe7cdb668ca # androidtest6
+#  - ce1527f1-9498-4055-876e-16b72b1e5d50 # wani_belle
+  - b0694c38-3add-4a4a-9528-e32c198b6f90 # aaqqaatw
+  - 2a091777-b06d-4cad-9b02-70193365e1e3 # ftcy0118
+  - d7b3a3d0-e320-43f3-af80-59542f2280c9 # ycgroupcall021
+  - 82e4a15d-a7c5-49bf-83f4-7ee30e2b55d8 # bochiu.sta1
+  
 - name: WANSU_LOW_LATENCY
   quality_support: 1
-  weight: 0
+  weight: 50
+  region_weights:
+    TW: 50
   users:
-  - e69c177a-e393-4993-5f4c-b2e21d95ae16
-  - 1f413748-d33d-4e26-56ce-2c3285c02fd3
-  - 32580e4a-25e6-4f29-4a0d-e46c290aeece
-  - 48ca8e9e-0ca1-4d7f-6b2c-ffd21e5a4ff6
-  - 9ac835fa-0cb7-4bbc-71fe-f6e3dfa859d5
+  - 0e671b10-1660-419c-67f9-9983ebdbad38 # triviabot1
+  - 48ca8e9e-0ca1-4d7f-6b2c-ffd21e5a4ff6 # triviabot2
+  - c9945154-c474-44f4-533e-b14afbc36d02 # 17Q獎金密密送
+  - 1663e219-95e9-4d5f-4828-e49aeac21552 # triviabot3
+  - 9ac835fa-0cb7-4bbc-71fe-f6e3dfa859d5 # triviabot4
+  - 94b56df0-336b-4968-7c41-88ec85246024 # 17好聰明SKODA
+  - c21f1749-b48d-43fd-b3e3-32c5edf169e9 # triviaOuting1
+  - 91ce0188-caed-4fb1-95cb-98e0d84fa5e1 # 17x華視午間新聞
+  - 49ce4402-f72b-4537-6f91-4f81c815bcf8 # androidtest3
+  - 1f71f63c-ce03-411b-4534-93d42cd5d49c # androidtest10
+  - 2d072c73-4dd9-41ee-9e84-b3f61219ebbe # amyshen172
+
 - name: WANSU_SPECIFIED_IP
   quality_support: 1
   weight: 0
@@ -52,38 +212,98 @@ rtmp_providers:
   quality_support: 0
   weight: 0
   users:
-  - e257e914-5009-48d9-5e8b-3c6da3f2026f
-  - c6e35e23-2018-47b2-afc8-adfd8ace1e22
-  - 567e0b5d-1516-4ce0-b4e8-bec4e756d5ae
+  - 7ca0983b-3fa3-4e2c-9ebf-093ea4b92d2a # adventurer77
+  - e1c1f72e-d0e4-411d-b647-aebee235c316 # wtfstreamer1
+  - 52593de9-a4da-4372-687f-c24baa8e0504 # chensamson
 - name: CHT
   quality_support: 0
   weight: 0
   users:
-  - caf2da0e-54cb-4058-4f1c-4056eb970161 #janet.w01
+  - 67b7e093-ce57-45f3-9775-2826d23b3781 # readper_test1
+  
 - name: AWS
   quality_support: 0
   weight: 0
+  region_weights:
+    TW: 0
+    HK: 0
+    US: 0
+  levelRestriction:
+    minLevel: 0
+    maxLevel: 50
+  timeRestriction:
+    enabledAtUTCHour: 0
+    disabledAtUTCHour: 23
   users:
-  - 0b32cef6-4bcf-4461-bd51-3e40b46562a9 # jenn31
+#   - 8d6afb79-95cb-4971-8032-ec892b0d8ae7 # ray.de.test
+  - 73f2de03-5cd3-4167-924d-1f4b6ef7080b # qacontractor7
+  - 73e8b839-a1ca-4b08-a51d-2b02ffdea153 # bellayayaya
+  - 7b8acc99-44e3-44ac-b702-f58c536d241a # teddypk002
+  - 60ea1878-0fc4-4077-a09b-8dafffb690a5 # amy.program1
+  - 6a4e3d83-863f-432e-8369-5a9b6fba0e32 # carambola001
+  - 5617164b-c87b-4b17-8de3-89db4d182d80 # carambola002
+  - 3a26cb04-8d1b-48e4-8eb7-60318c833ebe # carambola003
+  - b56d7562-a180-43ca-9aaf-251da4d36404 # carambola0001
+  - d6a895b6-0b20-44bc-aa3a-7bcdbacc918a # carambola0002
+  - edc827f2-bc31-4e12-9baf-2970e03e1ef1 # carambola0003
+  - 56bdbae0-4713-4d38-8492-16a50ee063e6 # carambola0004
+  - 9ae0343a-b381-4c09-bcaa-cd1bfb263a49 # carambola0005
+  - 6d638085-05c9-4e8b-aa81-a786c6978ec1 # f2etest01
+#  - 287ac024-c261-4bec-6da8-37165dd704f6 # androidtest2
+#  - 86a1b2e9-112e-4121-8233-60b52f1d0f44 # carambola004 移除白名單用來測試原來的推拉流
+#  - d4f741de-e986-43a2-95da-3f8c07b63a1a # carambola005 移除白名單用來測試原來的推拉流
+  - a8d5dc87-6020-4baf-8ba7-b2734637a038 # yikaikao
+  - b1785cd1-8a91-4d36-ae6e-2af2391a8a8c # forestrick, Rick's test account
+  - da47bb62-9374-4bbb-697f-57e0f1c96c75 # androidtest1
+#  - 16538029-e8e6-4607-9233-51af92b3c978 # janjanispk2 移除白名單用來測試正常的 AWS+PK
+  - a80e9dea-efb4-43b7-970e-700a63d640de # shonwang
+  - 3799d926-2ae2-4942-a510-847a017921cc # kevinmh01
+  - ce1527f1-9498-4055-876e-16b72b1e5d50 # wani_belle
+#  - f0982912-a519-433f-b17e-c76fb1972f18 # bochiu 移除白名單用來測試正常的 AWS+PK
+  - 83423cc6-f4c0-48f1-9a7a-1db84219a63c # bochiu.sta2
 
 - name: QINIU_AUTH
   quality_support: 0
   expire_after_hours: 6
   weight: 0
-  users: []
+  users:
+  - ae7de094-f3ae-4de6-9037-e4f190acdbf1 # qacontractor9
+  - 26189510-d934-4928-8dd7-f1a5f9c39b4f # qaprogram2
 - name: WANSU_AUTH
   quality_support: 0
   weight: 0
   users: []
-
+  # - 2e95de40-7880-422b-7f3b-0af9405e3b4d # janet.w02
+  # - 287ac024-c261-4bec-6da8-37165dd704f6 # androidtest2
+  # - 51eac440-8d97-476b-97f8-05177806f6ea # alex.l17
+  # - 2e5c8de5-c860-452c-ade1-6193ca08a4d5 # vivianhuang85
+  # - cdeba055-0094-4bc9-84d4-a9893bb03a6b # qaprogram3
+  # - e3c4c804-8a9c-4b7c-8026-0a8ed602b42c # jen87go
+  # - 0386b538-24ed-4906-550d-cf378561e778 # KAYE_zaza
+  
 - name: LIVE17
   quality_support: 0
+  expire_after_hours: 6
   weight: 0
-  users: []
-  
-rtmp_provider_dynamic:
- users:
-   - a6b00344-8b2e-4d93-5799-6a80782a4f7b # abner568
+  region_weights:
+    TW: 0
+  levelRestriction:
+    minLevel: 0
+    maxLevel: 0
+  users:
+  - 711c7a4a-beb7-4d3c-90e6-dadf0a567b32 # teamz1
+  - 2c00c6d5-83d5-41ce-bc25-4ce646d5bca6 # teamz2
+  - 5ed2e9e4-fff4-4d2f-9b35-d117ec2b1aec # teamz3
+  - a1f0cbaf-3ab6-4828-9608-7c6efddb3a79 # teamz4
+  - ad8c1de1-2f16-4840-aa76-6bec0b52ce39 # teamz5
+  - 121b4840-64dc-4033-a6d6-72d163d02534 # teamz6
+  - 40708039-3fbf-47f7-b1d2-7f0dd50bceac # teamz7
+  - aa4edd52-efa8-450e-b1b6-c1ce0bdb60e0 # teamz8
+  - dd979ab1-9d34-4c47-80b7-974241e39ca2 # teamz9
+  - 4bfc8b30-be7e-4e91-9b25-d45f88d37a3b # teamz10
+  - 287ac024-c261-4bec-6da8-37165dd704f6 # androidtest2
+  - 3e96ad39-7849-4096-8b70-fdd1fe2a4803 # janjanispk3
+  #- f0982912-a519-433f-b17e-c76fb1972f18 # bochiu
 
 message_providers_17q:
 - name: PUBNUB_MESSAGE
@@ -92,43 +312,71 @@ message_providers_17q:
 - name: WANSU_MESSAGE
   weight: 100
   users: []
+- name: ABLY_MESSAGE
+  weight: 0
+  users: []
 message_providers_general:
 - name: PUBNUB_MESSAGE
   weight: 0
   users:
-  - fdf8f01d-3d64-4fc3-5e31-6a292f5c4ef2
-  - 30cfa38d-fb31-420c-8b15-3ec76aeca8bd
-  - 304a38cd-ad43-4df1-b0bb-6e62f39248d5
-  - 1f413748-d33d-4e26-56ce-2c3285c02fd3
-  - 94b56df0-336b-4968-7c41-88ec85246024
-  - 6e9af721-55c5-41d7-91a4-387aceec94a6
-  - 2e723e40-5ddf-438a-8d2d-4c0ad57c5921
-  - 625632ad-99a5-4257-bb2c-a2eeddcbaaed
+  - 9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba # kevinmh03
+  - 2e95de40-7880-422b-7f3b-0af9405e3b4d # janet.w02
+  - cfa48648-928e-410b-9af6-c24dd62f9c78 # sssssugo
+  - 94b56df0-336b-4968-7c41-88ec85246024 # 17好聰明SKODA
+  - 6e9af721-55c5-41d7-91a4-387aceec94a6 # 17Q限時答題搶獎金
+  - 2e723e40-5ddf-438a-8d2d-4c0ad57c5921 # james10121
+  - 625632ad-99a5-4257-bb2c-a2eeddcbaaed # jenn22
+  - da47bb62-9374-4bbb-697f-57e0f1c96c75 # androidtest1
+  - 30cfa38d-fb31-420c-8b15-3ec76aeca8bd # e2euser0118
+  - 304a38cd-ad43-4df1-b0bb-6e62f39248d5 # e2euser87
+  - fdf8f01d-3d64-4fc3-5e31-6a292f5c4ef2 # e2ebot1
   - 12dc14d7-1296-433b-9fc3-73b5f2b19f93 # e2ebot_program1, for e2e test
 - name: WANSU_MESSAGE
+  weight: 0
+  users:
+  - 913fb7e6-10b9-4c68-ab0b-41a84847be2e # momoisomom
+  - 9692933f-079c-455a-94c5-13f0336c5070 # qacontractor4
+  - b1e571ee-fce8-4ed2-add0-39f6a2844955 # momoisgood
+- name: ABLY_MESSAGE
   weight: 100
   users:
-  - 913fb7e6-10b9-4c68-ab0b-41a84847be2e
-  - d1cd5a6a-3346-4263-85ef-c9f3a600de39
-  - 3128adcd-ea2c-438d-93cf-00baf1d7374a
-  - 9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba
+  - 6dfb9e95-3a7c-4369-a7d3-9ba618c20197 # hanchang.
+  - 5292f86c-88a1-45b4-9213-003dc1678b67 # zack
+  - b0b7c527-d189-4b58-939a-2f9cca91ecfb # evan
+  - b1785cd1-8a91-4d36-ae6e-2af2391a8a8c # Rick
 message_providers_dynamic:
 - name: PUBNUB_MESSAGE
   weight: 0
   users:
-  - fdf8f01d-3d64-4fc3-5e31-6a292f5c4ef2
-  - 30cfa38d-fb31-420c-8b15-3ec76aeca8bd
-  - 304a38cd-ad43-4df1-b0bb-6e62f39248d5
-  - 1f413748-d33d-4e26-56ce-2c3285c02fd3
-  - 94b56df0-336b-4968-7c41-88ec85246024
-  - 6e9af721-55c5-41d7-91a4-387aceec94a6
-  - 2e723e40-5ddf-438a-8d2d-4c0ad57c5921
-  - 625632ad-99a5-4257-bb2c-a2eeddcbaaed
+  - 9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba # kevinmh03
+  - 2e95de40-7880-422b-7f3b-0af9405e3b4d # janet.w02
+  - cfa48648-928e-410b-9af6-c24dd62f9c78 # sssssugo
+  - 94b56df0-336b-4968-7c41-88ec85246024 # 17好聰明SKODA
+  - 6e9af721-55c5-41d7-91a4-387aceec94a6 # 17Q限時答題搶獎金
+  - 2e723e40-5ddf-438a-8d2d-4c0ad57c5921 # james10121
+  - 625632ad-99a5-4257-bb2c-a2eeddcbaaed # jenn22
+  - da47bb62-9374-4bbb-697f-57e0f1c96c75 # androidtest1
+  - 30cfa38d-fb31-420c-8b15-3ec76aeca8bd # e2euser0118
+  - 304a38cd-ad43-4df1-b0bb-6e62f39248d5 # e2euser87
+  - fdf8f01d-3d64-4fc3-5e31-6a292f5c4ef2 # e2ebot1
   - 12dc14d7-1296-433b-9fc3-73b5f2b19f93 # e2ebot_program1, for e2e test
 - name: WANSU_MESSAGE
-  weight: 100
+  weight: 0
   users:
-  - 913fb7e6-10b9-4c68-ab0b-41a84847be2e
-  - d1cd5a6a-3346-4263-85ef-c9f3a600de39
-  - 3128adcd-ea2c-438d-93cf-00baf1d7374a
-  - 9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba
+  - 913fb7e6-10b9-4c68-ab0b-41a84847be2e # momoisomom
+  - 9692933f-079c-455a-94c5-13f0336c5070 # qacontractor4
+  - b1e571ee-fce8-4ed2-add0-39f6a2844955 # momoisgood
+- name: ABLY_MESSAGE
+  weight: 0
+  users:
+  - 6dfb9e95-3a7c-4369-a7d3-9ba618c20197 # hanchang.
+  - 5292f86c-88a1-45b4-9213-003dc1678b67 # zack
+  - b0b7c527-d189-4b58-939a-2f9cca91ecfb # evan
+  - b1785cd1-8a91-4d36-ae6e-2af2391a8a8c # Rick
+rtmp_provider_dynamic:
+  users:
+  - a6b00344-8b2e-4d93-5799-6a80782a4f7b # abner568
+  - 6dfb9e95-3a7c-4369-a7d3-9ba618c20197 # hanchang.
+  - ce1527f1-9498-4055-876e-16b72b1e5d50 # wani_belle
+  - 73e8b839-a1ca-4b08-a51d-2b02ffdea153 # bellayayaya
+  #- 2e5c8de5-c860-452c-ade1-6193ca08a4d5 # vivianhuang85
