@@ -45,6 +45,18 @@ regexConf:
       #   - POST /api/v1/lives/:roomID/quit
       #   - POST /api/v1/lives/:roomID/viewers/alive
       #   - POST /api/v1/lives/:roomID/comment
+      # lcuconcert6
+      - ^GET /api/v1/lives/15810246(?:/giftTabs|/concertInfo)?$
+      - ^POST /api/v1/lives/15810246/(?:enter|quit|viewers/alive|comment)?$
+      # lcuconcert7
+      - ^GET /api/v1/lives/15810250(?:/giftTabs|/concertInfo)?$
+      - ^POST /api/v1/lives/15810250/(?:enter|quit|viewers/alive|comment)?$
+      # lcuconcert8
+      - ^GET /api/v1/lives/15809763(?:/giftTabs|/concertInfo)?$
+      - ^POST /api/v1/lives/15809763/(?:enter|quit|viewers/alive|comment)?$
+      # lcuconcert9
+      - ^GET /api/v1/lives/15809775(?:/giftTabs|/concertInfo)?$
+      - ^POST /api/v1/lives/15809775/(?:enter|quit|viewers/alive|comment)?$
       # lcuconcert10
       - ^GET /api/v1/lives/15810239(?:/giftTabs|/concertInfo)?$
       - ^POST /api/v1/lives/15810239/(?:enter|quit|viewers/alive|comment)?$
@@ -54,9 +66,6 @@ regexConf:
       # qacontractor8
       - ^GET /api/v1/lives/14661501(?:/giftTabs|/concertInfo)?$
       - ^POST /api/v1/lives/14661501/(?:enter|quit|viewers/alive|comment)?$
-      # lcuconcert9
-      - ^GET /api/v1/lives/15809775(?:/giftTabs|/concertInfo)?$
-      - ^POST /api/v1/lives/15809775/(?:enter|quit|viewers/alive|comment)?$
       # tristanconcert1
       - ^GET /api/v1/lives/15687971(?:/giftTabs|/concertInfo)?$
       - ^POST /api/v1/lives/15687971/(?:enter|quit|viewers/alive|comment)?$
