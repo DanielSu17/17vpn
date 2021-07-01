@@ -40,6 +40,35 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
+- ID: e74b0be1-2f4e-41e3-8228-f001804a8017
+  type: 10
+  category: 0
+  lifeCycle: 1
+  targetAudience: 2
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2107_us_welcomeoffer
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: Welcome Offer
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_IAP_reward_jp_npu_desc
+  i18nDescriptionParams: []
+  goalValue: 330
+  enableTimeRange:
+  - startTime: 2021-07-01 18:00:00 (GMT-7000)
+    endTime: 2021-07-31 21:00:00 (GMT-0700)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
 - ID: Welcome-Offer-20210607
   type: 10
   category: 0
