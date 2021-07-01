@@ -7,8 +7,17 @@
 - name: prod
   url: https://api-dsa.17app.co
   type: 2
-- name: stag
+- name: stag # This endpoint will go to different revprox depend on Route53 GeoDNS
   url: https://sta-api.17app.co
+  type: 1
+- name: stag-tw # revprox-tw
+  url: https://sta-api-tw.17app.co
+  type: 1
+- name: stag-jp # revprox-jp
+  url: https://sta-api-jp.17app.co
+  type: 1
+- name: stag-default # revprox
+  url: https://sta-api-default.17app.co
   type: 1
 - name: uat
   url: https://uat-api.17app.co
