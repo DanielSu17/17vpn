@@ -14,8 +14,8 @@ eventBasedIAP:
 #台灣生涯首次儲值活動 生涯首次儲值330點送330點
   - startTime: "2021-04-30T00:00:00+08:00"
     endTime: "2021-05-31T23:59:59+08:00"
-    showCountdownUnderSticker: true
-    showCountdownInPopUp: true
+    showCountdownUnderSticker: true #倒數計時，如果閃購快結束了
+    showCountdownInPopUp: true #跳倒數計時彈窗
     stickerURL: "https://cdn.17app.co/aa6def75-afaa-4d5f-9b7b-cfc892d07b32.png"
     stickerURLInGiftbox: "https://cdn.17app.co/f427a083-bb4b-49e8-8b28-f44528eb5b63.png"
     eventInfo:
@@ -626,9 +626,9 @@ eventBasedIAP:
     eventInfo:
       eventTitleI18nKey: ""
       eventURL: ""
-      bannerImageURL: "https://cdn.17app.co/639fbc94-47f1-4d31-855e-50054e18605a.png" 
+      bannerImageURL: "https://cdn.17app.co/639fbc94-47f1-4d31-855e-50054e18605a.png" #IAP頁面上的圖
     layoutInfo:
-      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png" #需要問工程師
       messageColor: "#6F6777"
       messageShadowColor: "#F5F5F5"
       messageI18nKey: ""
@@ -668,7 +668,7 @@ eventBasedIAP:
       registerRange:
         dayStart: 0 # 0 means no limit
         dayEnd: 0 # 0 means no limit
-    displayRewardInfo: true
+    displayRewardInfo: true #要問工程師
     abtestName:
 
   - startTime: "2021-05-30T18:00:00+08:00"
