@@ -4,197 +4,6 @@
   HPAConfigs:
   - name: example-target-hpa
     minReplicas: 20
-
-# 0624 ラストアイドル舞台配信 For JP
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit?ts=6080ccfd#gid=1709744959
-- startTime: "2021-06-24 16:00:00 (GMT+0900)"
-  endTime: "2021-06-24 19:00:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 0624 NishikawaTakanori For JP
-- startTime: "2021-06-24 20:00:00 (GMT+0900)"
-  endTime: "2021-06-24 22:00:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 0625 ラストアイドル舞台配信 For JP
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit?ts=6080ccfd#gid=1709744959
-- startTime: "2021-06-25 16:00:00 (GMT+0900)"
-  endTime: "2021-06-25 19:00:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 0625 Big Event EVENT For TW
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit?ts=6080ccfd#gid=1709744959
-- startTime: "2021-06-25 14:30:00 (GMT+0800)"
-  endTime: "2021-06-25 19:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 0626 AKB For JP
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit?ts=6080ccfd#gid=1709744959
-- startTime: "2021-06-26 19:00:00 (GMT+0800)"
-  endTime: "2021-06-26 21:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 0627 AKB For JP
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit?ts=6080ccfd#gid=1709744959
-- startTime: "2021-06-27 19:00:00 (GMT+0800)"
-  endTime: "2021-06-27 21:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 0628 AKB For JP
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit?ts=6080ccfd#gid=1709744959
-- startTime: "2021-06-28 19:00:00 (GMT+0800)"
-  endTime: "2021-06-28 21:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 0628 Oshikatsu For JP
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit?ts=6080ccfd#gid=1709744959
-- startTime: "2021-06-28 20:30:00 (GMT+0900)"
-  endTime: "2021-06-28 22:30:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 0629 AKB For JP
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit?ts=6080ccfd#gid=1709744959
-- startTime: "2021-06-29 19:00:00 (GMT+0800)"
-  endTime: "2021-06-29 21:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 0630 AKB For JP
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit?ts=6080ccfd#gid=1709744959
-- startTime: "2021-06-30 19:00:00 (GMT+0800)"
-  endTime: "2021-06-30 21:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 0630 Big Event EVENT For TW
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit?ts=6080ccfd#gid=1709744959
-- startTime: "2021-06-30 15:00:00 (GMT+0800)"
-  endTime: "2021-06-30 19:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
- 
-# 0701 MKT
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit?ts=6080ccfd#gid=1709744959
-- startTime: "2021-07-01 18:00:00 (GMT+0900)"
-  endTime: "2021-07-01 23:00:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
     
 # 0702 MKT
 # https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit?ts=6080ccfd#gid=1709744959
@@ -216,6 +25,54 @@
 # https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit?ts=6080ccfd#gid=1709744959
 - startTime: "2021-07-08 19:00:00 (GMT+0900)"
   endTime: "2021-07-08 22:00:00 (GMT+0900)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 120
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+    
+# 0709 - NOGOODTV + NMB
+# https://17media.slack.com/archives/C02209WMK3K/p1625193309087600
+- startTime: "2021-07-09 17:00:00 (GMT+0900)"
+  endTime: "2021-07-09 21:00:00 (GMT+0900)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 120
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+    
+# 0710 - NMB
+# https://17media.slack.com/archives/C02209WMK3K/p1625193309087600
+- startTime: "2021-07-10 12:00:00 (GMT+0900)"
+  endTime: "2021-07-10 21:00:00 (GMT+0900)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 120
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+    
+# 0711 - NMB
+# https://17media.slack.com/archives/C02209WMK3K/p1625193309087600
+- startTime: "2021-07-11 12:00:00 (GMT+0900)"
+  endTime: "2021-07-11 21:00:00 (GMT+0900)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 120
