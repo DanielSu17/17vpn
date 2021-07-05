@@ -1,32 +1,41 @@
-# Custom welcome messages
-# Template:
-# TW:                                       # the region this message is defined for
-#   - msgToken: TW_Custom_Welcome_1         # a Lokalise Token
-#     defaultLanguage: TW                   # fallback for in case no Lokalise token is configured for a region/language
-#     startTime: 2017-07-31T00:00:00+08:00  # start time in TW
-#     endTime: 2017-08-31T23:59:59+08:00    # end time in TW
-#   - msgToken: TW_Custom_Welcome_1         # a Lokalise Token
-#     defaultLanguage: TW                   # fallback for in case no Lokalise token is configured for a region/language
-#     startTime: 2017-07-31T00:00:00+08:00  # start time in TW
-#     endTime: 2017-08-31T23:59:59+08:00    # end time in TW
+# regionMap
+#   Maps one region to another. If a user is in a region that has a key in this map,
+#   they will be delivered the message from the region theirs is mapped to.
+regionMap:
+  MY: TW
+  SG: TW
 
-US:
-  - msgToken: US_custom_welcome_001
-    defaultLanguage: EN
-    startTime: 2017-07-31T00:00:00+08:00
-    endTime: 2022-07-25T00:00:00+08:00
-TW:
-  - msgToken: TW_custom_welcome_001
-    defaultLanguage: TW
-    startTime: 2017-07-31T00:00:00+08:00
-    endTime: 2022-07-25T00:00:00+08:00
-JP:
-  - msgToken: JP_custom_welcome_001
-    defaultLanguage: JP
-    startTime: 2017-07-31T00:00:00+08:00
-    endTime: 2022-07-25T00:00:00+08:00
-HK:
-  - msgToken: HK_custom_welcome_001
-    defaultLanguage: HK
-    startTime: 2017-07-31T00:00:00+08:00
-    endTime: 2022-07-25T00:00:00+08:00
+# regionMessages
+#   Defines messages for a region.
+#
+#   Example:
+#   TW:                                       # the region this message is defined for
+#     - msgToken: TW_Custom_Welcome_1         # a Lokalise Token
+#       defaultLanguage: TW                   # fallback for in case no Lokalise token is configured for a region/language
+#       startTime: 2017-07-31T00:00:00+08:00  # start time in TW
+#       endTime: 2017-08-31T23:59:59+08:00    # end time in TW
+#     - msgToken: TW_Custom_Welcome_1         # a Lokalise Token
+#       defaultLanguage: TW                   # fallback for in case no Lokalise token is configured for a region/language
+#       startTime: 2017-07-31T00:00:00+08:00  # start time in TW
+#       endTime: 2017-08-31T23:59:59+08:00    # end time in TW
+regionMessages:
+  US:
+    - msgToken: US_custom_welcome_001
+      defaultLanguage: EN
+      startTime: 2017-07-31T00:00:00+08:00
+      endTime: 2022-07-25T00:00:00+08:00
+  TW:
+    - msgToken: TW_custom_welcome_001
+      defaultLanguage: TW
+      startTime: 2017-07-31T00:00:00+08:00
+      endTime: 2022-07-25T00:00:00+08:00
+  JP:
+    - msgToken: JP_custom_welcome_001
+      defaultLanguage: JP
+      startTime: 2017-07-31T00:00:00+08:00
+      endTime: 2022-07-25T00:00:00+08:00
+  HK:
+    - msgToken: HK_custom_welcome_001
+      defaultLanguage: HK
+      startTime: 2017-07-31T00:00:00+08:00
+      endTime: 2022-07-25T00:00:00+08:00
