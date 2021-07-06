@@ -37,7 +37,16 @@ sections:
     enable: false
     style: 2
     more: false
-  - id: GroupCall # GroupCall 
+  - id: NewestStreamer # D0 new streamer 首日新手
+    name:
+      key: tab_hot_d0streamer
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    orderModel: 2
+  - id: GroupCall # GroupCall 派對
     name:
       key: group_stream_v3hotpage
     enable: true
@@ -53,15 +62,6 @@ sections:
     style: 6
     minGrids: 5
     more: true 
-  - id: NewestStreamer # D0 new streamer 首日新手
-    name:
-      key: tab_hot_d0streamer
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    orderModel: 2
   - id: Label # 超新星
     labelID: newbie
     name:
