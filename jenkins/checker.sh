@@ -3,22 +3,22 @@
 # circle/remote_check.py
 CHECKER="circle/syntax_checker.py circle/check_providers.py"
 
-commits=$(git log  --pretty=format:'%H' "${GIT_PREVIOUS_SUCCESSFUL_COMMIT}".."${GIT_COMMIT}")
-for commit in ${commits};do
-    message=$(git log  --pretty=format:'%B' "${commit}"^! | head -n1)
+commits=$(git log --pretty=format:'%H' "${GIT_PREVIOUS_SUCCESSFUL_COMMIT}".."${GIT_COMMIT}")
+for commit in ${commits}; do
+    message=$(git log --pretty=format:'%B' "${commit}"^! | head -n1)
     COMMIT_MESSAGE=$(printf "%s\n%s" "${COMMIT_MESSAGE}" "${message}")
 done
 
 AUTHOR_EMAIL=$(git --no-pager show -s --format='%ae' $GIT_COMMIT)
 # commit from admin page
 if [[ "${AUTHOR_EMAIL}" == *"tf-ig"* ]]; then
-    AUTHOR_EMAIL=$(git log  --pretty=format:'%B' "${GIT_COMMIT}"^! | head -n1 | cut -d'-' -f 1 | cut -d' ' -f 1)
+    AUTHOR_EMAIL=$(git log --pretty=format:'%B' "${GIT_COMMIT}"^! | head -n1 | cut -d'-' -f 1 | cut -d' ' -f 1)
 # commit from Jenkins
 elif [[ "${AUTHOR_EMAIL}" == "no-reply@17"* ]]; then
-    AUTHOR_EMAIL=$(git log  --pretty=format:'%B' "${GIT_COMMIT}"^! | head -n1 | cut -d'-' -f 2 | cut -d' ' -f 2)
+    AUTHOR_EMAIL=$(git log --pretty=format:'%B' "${GIT_COMMIT}"^! | head -n1 | cut -d'-' -f 2 | cut -d' ' -f 2)
 fi
 
-mention_author_in_slack(){
+mention_author_in_slack() {
     HEADER="Authorization: Bearer ${SLACKTOKEN}"
     USERID=$(curl -s -X GET --header "${HEADER}" https://slack.com/api/users.lookupByEmail?email="${AUTHOR_EMAIL}" | jq -r .user.id)
 
@@ -30,7 +30,7 @@ mention_author_in_slack(){
     fi
 }
 
-main(){
+main() {
     echo "--- start checking ---"
     curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":crossed_fingers: Check Started\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Author*:${AUTHOR_EMAIL}  *Commit*:<https://github.com/17media/configs/commit/${GIT_COMMIT}|${GIT_COMMIT}> *Build*:<${BUILD_URL}|URL> \"}]},{\"type\":\"divider\"}]}" "${SLACK}"
 
@@ -47,30 +47,31 @@ main(){
     done
 
     # local config checker
-    changed_files=$(git log  --name-only --pretty=format: "${GIT_PREVIOUS_SUCCESSFUL_COMMIT}".."${GIT_COMMIT}" | grep yaml$)
-    config_env=$(git log  --name-only --pretty=format: "${GIT_PREVIOUS_SUCCESSFUL_COMMIT}".."${GIT_COMMIT}" | grep yaml$ | awk -F "/" '$1=="envs" {print $2}' | sort -u)
+    changed_files=$(git log --name-only --pretty=format: "${GIT_PREVIOUS_SUCCESSFUL_COMMIT}".."${GIT_COMMIT}" | grep yaml$)
+    config_env=$(git log --name-only --pretty=format: "${GIT_PREVIOUS_SUCCESSFUL_COMMIT}".."${GIT_COMMIT}" | grep yaml$ | awk -F "/" '$1=="envs" {print $2}' | sort -u)
 
     for env in ${config_env}; do
-      if [[ "${env}" == "dev" ]]; then
-        continue
-      fi
-      env_files=$(echo "${changed_files}" | grep ${env} | tr '\n' ',')
-      # we use k8s{env} to check configs for {env}
-      echo "${env} : ${env_files}"
-      docker pull "17media/config-checker:k8s${env}"
-      docker run --rm -v "$(pwd)":/repo/configs "17media/config-checker:k8s${env}" -config_root="/repo/configs" -check_configs="${env_files}"
+        if [[ "${env}" == "dev" ]]; then
+            continue
+        fi
+        env_files=$(echo "${changed_files}" | grep ${env} | tr '\n' ',')
+        echo "${env} : ${env_files}"
+
+        # we use k8s{env} to check configs for {env}
+        docker pull "17media/config-checker:k8s${env}"
+        docker run --rm -v "$(pwd)":/repo/configs "17media/config-checker:k8s${env}" -config_root="/repo/configs" -check_configs="${env_files}"
+
+        LOCAL_CHECKER_STATUS=$?
+        if [ ${LOCAL_CHECKER_STATUS} -eq 0 ]; then
+            echo "[${env}] Local checker was successful"
+        else
+            mention_author_in_slack
+            exit 1
+        fi
     done
 
-    LOCAL_CHECKER_STATUS=$?
-    if [ ${LOCAL_CHECKER_STATUS} -eq 0 ]; then
-        echo "Local checker was successful"
-    else
-        mention_author_in_slack
-        exit 1
-    fi
     curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":white_check_mark: Check Passed\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Author*:${AUTHOR_EMAIL}  *Commit*:<https://github.com/17media/configs/commit/${GIT_COMMIT}|${GIT_COMMIT}> *Build*:<${BUILD_URL}|URL>\"}]},{\"type\":\"divider\"}]}" "${SLACK}"
     echo "--- finish checking ---"
-    # TODO: Add push to etcd here
 }
 
 main "$@"
