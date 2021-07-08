@@ -122,6 +122,9 @@ regexConf:
       # jerry_test_concert1
       - ^GET /api/v1/lives/14675054(?:/giftTabs)?$
       - ^POST /api/v1/lives/14675054/(?:enter|quit|viewers/alive|comment)?$
+      # pikaarmy3
+      - ^GET /api/v1/lives/14661251(?:/giftTabs)?$
+      - ^POST /api/v1/lives/14661251/(?:enter|quit|viewers/alive|comment)?$
   - url_key: "concert_trade_url"
     default_url_key: "go_trade_url"
     weight: 100
@@ -176,6 +179,8 @@ regexConf:
       - ^POST /api/v1/lives/15816618/gift
       # jerry_test_concert1
       - ^POST /api/v1/lives/14675054/gift
+      # pikaarmy3
+      - ^POST /api/v1/lives/14661251/gift
 conf:
   - url_key: "go_usersearch_url"
     weight: 100
