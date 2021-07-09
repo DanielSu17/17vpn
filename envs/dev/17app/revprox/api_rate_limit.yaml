@@ -81,6 +81,7 @@ rate_limits:
 - {url: "/api/v1/gift/giftbox",                                 method: "POST",    flow_per_second: 20,          reservoir_size: 20,    scope: by_access_token}
 - {url: "/api/v1/user/search",                                  method: "GET",     flow_per_second: 25,        reservoir_size: 25,    scope: by_global}
 - {url: "/api/v1/users/[A-Za-z0-9-]+/info",                     method: "GET",     flow_per_second: 245,         reservoir_size: 245,   scope: by_global}
+- {url: "/api/v1/lives/[A-Za-z0-9-]+/viewer/rockviewers/showme", method: "GET",     flow_per_second: 2000,        reservoir_size: 2000,    scope: by_global}
 
 
 # group call related
