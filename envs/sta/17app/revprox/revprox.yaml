@@ -128,6 +128,9 @@ regexConf:
       # jen87concert1
       - ^GET /api/v1/lives/15818736(?:/giftTabs)?$
       - ^POST /api/v1/lives/15818736/(?:enter|quit|viewers/alive|comment)?$
+      # qa_backend_monitor16
+      - ^GET /api/v1/lives/15816647(?:/giftTabs)?$
+      - ^POST /api/v1/lives/15816647/(?:enter|quit|viewers/alive|comment)?$
   - url_key: "concert_trade_url"
     default_url_key: "go_trade_url"
     weight: 100
@@ -186,6 +189,8 @@ regexConf:
       - ^POST /api/v1/lives/14661251/gift
       # jen87concert1
       - ^POST /api/v1/lives/15818736/gift
+      # qa_backend_monitor16
+      - ^POST /api/v1/lives/15816647/gift
 conf:
   - url_key: "go_usersearch_url"
     weight: 100
