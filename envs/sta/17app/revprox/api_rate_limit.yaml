@@ -65,6 +65,8 @@ rate_limits:
   - {url: "/api/v1/auth/ChangePhoneNumber",                       method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
   - {url: "/api/v1/auth/checkNeedHumanTest",                      method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
   - {url: "/api/v1/auth/phone/sendVerificationCode",              method: "POST",    flow_per_second: 30,          reservoir_size: 30,    scope: by_global}
+  - {url: "/api/v1/auth/registerAction2",                         method: "POST",    flow_per_second: 1000,        reservoir_size: 1000,  scope: by_global}
+  - {url: "/api/v1/auth/registerAction",                          method: "POST",    flow_per_second: 1000,        reservoir_size: 1000,  scope: by_global}
 
   #app/api/api/cryptocurrency/cryptocurrency.go:73:		apis.AddRateLimit(rl, apis.RateLimitMithSendPhoneVerificationCode, ratelimiter.Minute, 5, apis.ByIP),
   #app/api/api/cryptocurrency/cryptocurrency.go:78:		apis.AddRateLimit(rl, apis.RateLimitMithVerifySMSCode, ratelimiter.Minute, 10, apis.ByIP),
@@ -83,7 +85,7 @@ rate_limits:
   #app/api/api/gift/gift.go:126:		apis.AddRateLimit(rl, apis.RateLimitSendGift, ratelimiter.Second, sendGiftQPS, apis.ByUser),
   - {url: "/api/v1/gift/giftbox",                                 method: "POST",    flow_per_second: 20,          reservoir_size: 20,    scope: by_access_token}
 
-  - {url: "/api/v1/baggage/item/[A-Za-z0-9-]+",                   method: "POST",    flow_per_second: 30,          reservoir_size: 30,    scope: by_global}
+  - {url: "/api/v1/baggage/item/[A-Za-z0-9-]+",                   method: "POST",    flow_per_second: 60,          reservoir_size: 60,    scope: by_global}
 
   - {url: "/api/v1/users/[A-Za-z0-9-]+/activities/income/overview",     method: "GET",    flow_per_second: 50,     reservoir_size: 50,    scope: by_global}
 
@@ -99,6 +101,7 @@ rate_limits:
   - {url: "/api/v1/recommendation/metric/user/[A-Za-z0-9-]+",     method: "GET",     flow_per_second: 150,        reservoir_size: 150,    scope: by_global}
   - {url: "/api/v1/recommendation/metric/stream/[A-Za-z0-9-]+",   method: "GET",     flow_per_second: 120,       reservoir_size: 200,   scope: by_global}
   - {url: "/api/v1/users/[A-Za-z0-9-]+/recommend",                method: "GET",     flow_per_second: 250,        reservoir_size: 250,    scope: by_global}
+  - {url: "/api/v1/users/[A-Za-z0-9-]+/followees",                method: "GET",     flow_per_second: 50,        reservoir_size: 70,    scope: by_global}
   - {url: "/api/v1/user/search",                                  method: "GET",     flow_per_second: 25,        reservoir_size: 25,    scope: by_global}
   - {url: "/api/v1/users/[A-Za-z0-9-]+/info",                     method: "GET",     flow_per_second: 500,       reservoir_size: 500,   scope: by_global}
   - {url: "/api/v1/lives/[A-Za-z0-9-]+/viewer/rockviewers/showme", method: "GET",     flow_per_second: 2000,        reservoir_size: 2000,    scope: by_global}
@@ -107,12 +110,8 @@ rate_limits:
   - {url: "/api/v1/groupCalls/group/[A-Za-z0-9-]+/invitationList",                             method: "GET",     flow_per_second: 1,        reservoir_size: 5,    scope: by_access_token}
   - {url: "/api/v1/groupCalls/group/[A-Za-z0-9-]+/viewers",                                    method: "GET",     flow_per_second: 1,        reservoir_size: 5,    scope: by_access_token}
   - {url: "/api/v1/groupCalls/group/[A-Za-z0-9-]+/users/search",                               method: "GET",     flow_per_second: 5,        reservoir_size: 5,    scope: by_access_token}
-  - {url: "/api/v1/groupCalls/users/[A-Za-z0-9-]+/info",                                       method: "GET",     flow_per_second: 3,        reservoir_size: 5,    scope: by_access_token}
+  - {url: "/api/v1/groupCalls/users/[A-Za-z0-9-]+/info",                                       method: "GET",     flow_per_second: 1,        reservoir_size: 5,    scope: by_ip}
   - {url: "/api/v1/groupCalls/invitations",                                                    method: "GET",     flow_per_second: 1,        reservoir_size: 5,    scope: by_access_token}
   - {url: "/api/v1/groupCalls/invite/[A-Za-z0-9-]+",                                           method: "POST",    flow_per_second: 1,        reservoir_size: 5,    scope: by_access_token}
   - {url: "/api/v1/groupCalls/group/[A-Za-z0-9-]+/users/[A-Za-z0-9-]+/action/[A-Za-z0-9-]+",   method: "POST",    flow_per_second: 1,        reservoir_size: 5,    scope: by_access_token}
   - {url: "/api/v1/groupCalls/group/[A-Za-z0-9-]+/keepChannelAlive",                           method: "POST",    flow_per_second: 1,        reservoir_size: 5,    scope: by_access_token}
-  
-  # dailyquest related
-  #app/api/api/dailyquest/dailyquest.go:78: apis.AddRateLimit(rl, apis.RateLimitDailyQuestSignin, ratelimiter.Hour, signInQPS, apis.ByUser),
-  - {url: "/api/v1/dailyquest/signIn",                            method: "POST",     flow_per_second: 250,        reservoir_size: 250,    scope: by_access_token}
