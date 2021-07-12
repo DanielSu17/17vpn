@@ -101,6 +101,22 @@
   - name: k8sprod-gousersearch-main
     minReplicas: 10
     
+# 0716 Hello Kitty TW
+# https://17media.slack.com/archives/CPQ5VS71C/p1622514079139300
+- startTime: "2021-07-16 18:00:00 (GMT+0800)"
+  endTime: "2021-07-16 22:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 120
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+
 # 0722 MKT
 # https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit?ts=6080ccfd#gid=1709744959
 - startTime: "2021-07-22 20:00:00 (GMT+0900)"
