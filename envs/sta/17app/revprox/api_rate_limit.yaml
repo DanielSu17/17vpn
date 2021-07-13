@@ -101,8 +101,8 @@ rate_limits:
   - {url: "/api/v1/recommendation/metric/user/[A-Za-z0-9-]+",     method: "GET",     flow_per_second: 150,        reservoir_size: 150,    scope: by_global}
   - {url: "/api/v1/recommendation/metric/stream/[A-Za-z0-9-]+",   method: "GET",     flow_per_second: 120,       reservoir_size: 200,   scope: by_global}
   - {url: "/api/v1/users/[A-Za-z0-9-]+/recommend",                method: "GET",     flow_per_second: 250,        reservoir_size: 250,    scope: by_global}
-  - {url: "/api/v1/users/[A-Za-z0-9-]+/followees",                method: "GET",     flow_per_second: 50,        reservoir_size: 70,    scope: by_global}
-  - {url: "/api/v1/user/search",                                  method: "GET",     flow_per_second: 25,        reservoir_size: 25,    scope: by_global}
+  - {url: "/api/v1/users/[A-Za-z0-9-]+/followees",                method: "GET",     flow_per_second: 250,        reservoir_size: 270,    scope: by_global}
+  - {url: "/api/v1/user/search",                                  method: "GET",     flow_per_second: 100,        reservoir_size: 100,    scope: by_global}
   - {url: "/api/v1/users/[A-Za-z0-9-]+/info",                     method: "GET",     flow_per_second: 500,       reservoir_size: 500,   scope: by_global}
   - {url: "/api/v1/lives/[A-Za-z0-9-]+/viewer/rockviewers/showme", method: "GET",     flow_per_second: 2000,        reservoir_size: 2000,    scope: by_global}
 
