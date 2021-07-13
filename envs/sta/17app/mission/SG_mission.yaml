@@ -13,8 +13,9 @@
 # | Share_Twitter | 11 |
 # | TypePhoneBinding | 12 |
 # | View_Stream_X_Different_Days | 13 |
-# | TypeCreateAvatar | 16 |
-# | TypeCommentInNewestLivestream | 17 |
+# | CreateAvatar | 16 |
+# | CommentInNewestLivestream | 17 |
+# | CheckIn | 24 |
 
 # | category | Value |
 # | --- | --- |
@@ -25,6 +26,7 @@
 # | --- | --- |
 # | Daily | 0 |
 # | OneTime | 1 |
+# | ConsecutiveDays | 2 |
 
 # | targetAudience | Value |
 # | --- | --- |
@@ -38,8 +40,8 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
-- ID: d1c8e730-c61f-43f6-998e-3c39949bfdc2
-  type: 3
+- ID: 4cb6439a-2c30-440c-9b7c-3c4dddd950ab
+  type: 10
   category: 0
   lifeCycle: 0
   targetAudience: 0
@@ -47,110 +49,26 @@ missions:
     min: 1
     max: 999
   reward:
-    rewardType: 1
-    rewardID: 2002_tw_weekend_bp
+    rewardType: 2
+    rewardID: 2104-allgacha-login
     amount: 1
-    expireTimeSecs: 604800
-  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2002_tw_weekend_bp
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
+  i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
+  i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des_phone
   i18nDescriptionParams: []
-  goalValue: 1
+  goalValue: 330
   enableTimeRange:
-  - startTime: 2021-01-29 18:00:00 (GMT+0800)
-    endTime: 2021-01-31 23:59:59 (GMT+0800)
-  refIDs:
-  - 2001_tw_weekend_l
+  - startTime: 2021-07-12 18:00:00 (GMT+0800)
+    endTime: 2021-08-26 20:55:00 (GMT+0800)
+  refIDs: []
   platforms:
   - android
   - ios
-  requirePhoneBinding: true
-  withReminder: false
-- ID: 190ffb20-e755-4a62-8a93-eb9e210e58fd
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2002_tw_weekend_bp
-    amount: 1
-    expireTimeSecs: 604800
-  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
-  i18nTitleParams:
-  - value: "2"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2002_tw_weekend_bp
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 2
-  enableTimeRange:
-  - startTime: 2021-01-29 18:00:00 (GMT+0800)
-    endTime: 2021-01-31 23:59:59 (GMT+0800)
-  refIDs:
-  - 2001_tw_weekend_l
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: false
-- ID: dd7cb33a-d19c-475d-a435-432726a77b24
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2002_tw_weekend_bp
-    amount: 1
-    expireTimeSecs: 604800
-  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
-  i18nTitleParams:
-  - value: "3"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2002_tw_weekend_bp
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 3
-  enableTimeRange:
-  - startTime: 2021-01-29 18:00:00 (GMT+0800)
-    endTime: 2021-01-31 23:59:59 (GMT+0800)
-  refIDs:
-  - 2001_tw_weekend_l
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
+  - web
+  requirePhoneBinding: false
   withReminder: false
 i18nMissionCompleteToast: ""
 refreshHour: 5
@@ -176,7 +94,6 @@ tagInfos:
       params: []
       fontAttribute: null
     color: '#F6696C'
-
 remind:
   remindSecs: 60
   toastMsg:

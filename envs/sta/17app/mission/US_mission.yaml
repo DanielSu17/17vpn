@@ -40,35 +40,6 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
-- ID: 5b59ca58-725a-4690-8dfe-d66fa8949adf
-  type: 24
-  category: 0
-  lifeCycle: 2
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 2
-    rewardID: avatar-mission-reward-1
-    amount: 15
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_7d_checkin_title
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_7d_checkin_descr
-  i18nDescriptionParams: []
-  goalValue: 7
-  enableTimeRange:
-  - startTime: 2021-02-22 16:00:00 (GMT+0800)
-    endTime: 2021-03-15 00:00:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
 - ID: 5c55d42a-3278-4862-9786-230922aed999
   type: 16
   category: 0
@@ -98,8 +69,8 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-- ID: 31261996-94d1-4794-a2d8-518064e0ea51
-  type: 24
+- ID: 4cb6439a-2c30-440c-9b7c-3c4dddd950ab
+  type: 10
   category: 0
   lifeCycle: 0
   targetAudience: 0
@@ -108,56 +79,24 @@ missions:
     max: 999
   reward:
     rewardType: 2
-    rewardID: avatar-mission-reward-1
+    rewardID: 2104-allgacha-login
     amount: 1
     expireTimeSecs: 86400
-  i18nTitle: baggage_mission_daily_checkin_title
+  i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
   i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: baggage_mission_daily_checkin_descr
+  i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des_phone
   i18nDescriptionParams: []
-  goalValue: 1
+  goalValue: 330
   enableTimeRange:
-  - startTime: 2021-02-22 16:00:00 (GMT+0800)
-    endTime: 2021-03-15 00:00:00 (GMT+0800)
+  - startTime: 2021-07-12 18:00:00 (GMT+0800)
+    endTime: 2021-08-26 20:55:00 (GMT+0800)
   refIDs: []
   platforms:
   - android
   - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 5211358e-f2ec-458c-945b-570652c06824
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 2
-    rewardID: avatar-mission-reward-1
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "72"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: 'baggage_mission_opt_watch_streams_time_in_total_reward_content_desc '
-  i18nDescriptionParams: []
-  goalValue: 4320
-  enableTimeRange:
-  - startTime: 2021-02-22 16:00:00 (GMT+0800)
-    endTime: 2021-03-15 00:00:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
+  - web
   requirePhoneBinding: false
   withReminder: false
 i18nMissionCompleteToast: baggage_mission_toast_claimed
