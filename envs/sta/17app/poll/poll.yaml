@@ -1,7 +1,7 @@
 # Poll setting
 # MUST make sure that corresponding gift ids exist in gift database
 # In this case, they should be poll_option_{a|b|c|d|e}_{30|49|99|199|399|599|3999} by the value of giftIDTempalte
-minTTL: 6
+minTTL: 1
 maxTTL: 60
 maxTitleDescLen: 20
 maxOptDescLen: 10
@@ -15,7 +15,7 @@ freeVoteWhitelist:
   - "37d9e764-5eef-44f8-8e60-a06f5ea7e001" # qaprogram1
 availableLimit:
   mins: 1
-  count: 10
+  count: 200
 freeVoteAndroidVersion: 2.3.62
 freeVoteIOSVersion: 3.44.0
 defaultPrice: 99
@@ -53,6 +53,10 @@ userSettings:
     price: 5
     limitMins: 5
     limitCount: 30
+  46d46576-cd73-4f19-bd5f-1e65e9a62e85: # 17經典台
+    price: 0
+    limitMins: 1
+    limitCount: 200
 hotTopic: "today_hot_topic"
 topics:
   - tag: "時事"
