@@ -38,9 +38,10 @@ regexConf:
     regex_paths:
       # ^GET /api/v1/lives/\d+/concertInfo$ forward each request to concert stream service
       #   - GET /api/v1/lives/:roomID/concertInfo
-      # ^GET /api/v1/lives/:roomID(?:/giftTabs)?$ includes endpoint as follows
+      # ^GET /api/v1/lives/:roomID(?:/giftTabs|info)?$ includes endpoint as follows
       #   - GET /api/v1/lives/:roomID
       #   - GET /api/v1/lives/:roomID/giftTabs
+      #   - GET /api/v1/lives/:roomID/info
       # ^POST /api/v1/lives/:roomID/(?:enter|quit|viewers/alive|comment)?$ includes endpoint as follows
       #   - POST /api/v1/lives/:roomID/enter
       #   - POST /api/v1/lives/:roomID/quit
@@ -48,88 +49,88 @@ regexConf:
       #   - POST /api/v1/lives/:roomID/comment
       - ^GET /api/v1/lives/\d+/concertInfo$
       # ericconcert1
-      - ^GET /api/v1/lives/15816643(?:/giftTabs)?$
+      - ^GET /api/v1/lives/15816643(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/15816643/(?:enter|quit|viewers/alive|comment)?$
       # lcuconcert6
-      - ^GET /api/v1/lives/15810246(?:/giftTabs)?$
+      - ^GET /api/v1/lives/15810246(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/15810246/(?:enter|quit|viewers/alive|comment)?$
       # lcuconcert7
-      - ^GET /api/v1/lives/15810250(?:/giftTabs)?$
+      - ^GET /api/v1/lives/15810250(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/15810250/(?:enter|quit|viewers/alive|comment)?$
       # lcuconcert8
-      - ^GET /api/v1/lives/15809763(?:/giftTabs)?$
+      - ^GET /api/v1/lives/15809763(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/15809763/(?:enter|quit|viewers/alive|comment)?$
       # lcuconcert9
-      - ^GET /api/v1/lives/15809775(?:/giftTabs)?$
+      - ^GET /api/v1/lives/15809775(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/15809775/(?:enter|quit|viewers/alive|comment)?$
       # lcuconcert10
-      - ^GET /api/v1/lives/15810239(?:/giftTabs)?$
+      - ^GET /api/v1/lives/15810239(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/15810239/(?:enter|quit|viewers/alive|comment)?$
       # kevinmh03
-      - ^GET /api/v1/lives/240924(?:/giftTabs)?$
+      - ^GET /api/v1/lives/240924(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/240924/(?:enter|quit|viewers/alive|comment)?$
       # qacontractor8
-      - ^GET /api/v1/lives/14661501(?:/giftTabs)?$
+      - ^GET /api/v1/lives/14661501(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/14661501/(?:enter|quit|viewers/alive|comment)?$
       # tristanconcert1
-      - ^GET /api/v1/lives/15687971(?:/giftTabs)?$
+      - ^GET /api/v1/lives/15687971(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/15687971/(?:enter|quit|viewers/alive|comment)?$
       # tristanconcert2
-      - ^GET /api/v1/lives/15804059(?:/giftTabs)?$
+      - ^GET /api/v1/lives/15804059(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/15804059/(?:enter|quit|viewers/alive|comment)?$
       # hanchang.
-      - ^GET /api/v1/lives/297806(?:/giftTabs)?$
+      - ^GET /api/v1/lives/297806(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/297806/(?:enter|quit|viewers/alive|comment)?$
       # blackalang
-      - ^GET /api/v1/lives/14566410(?:/giftTabs)?$
+      - ^GET /api/v1/lives/14566410(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/14566410/(?:enter|quit|viewers/alive|comment)?$
       # zelltest
-      - ^GET /api/v1/lives/14003419(?:/giftTabs)?$
+      - ^GET /api/v1/lives/14003419(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/14003419/(?:enter|quit|viewers/alive|comment)?$
       # jameschou02
-      - ^GET /api/v1/lives/9525379(?:/giftTabs)?$
+      - ^GET /api/v1/lives/9525379(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/9525379/(?:enter|quit|viewers/alive|comment)?$
       # rocka2
-      - ^GET /api/v1/lives/14661305(?:/giftTabs)?$
+      - ^GET /api/v1/lives/14661305(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/14661305/(?:enter|quit|viewers/alive|comment)?$
       # teamzconcert1
-      - ^GET /api/v1/lives/15687896(?:/giftTabs)?$
+      - ^GET /api/v1/lives/15687896(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/15687896/(?:enter|quit|viewers/alive|comment)?$
       # teamzconcert2
-      - ^GET /api/v1/lives/15687897(?:/giftTabs)?$
+      - ^GET /api/v1/lives/15687897(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/15687897/(?:enter|quit|viewers/alive|comment)?$
       # teamzconcert3
-      - ^GET /api/v1/lives/15687898(?:/giftTabs)?$
+      - ^GET /api/v1/lives/15687898(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/15687898/(?:enter|quit|viewers/alive|comment)?$
       # testsavvy2
-      - ^GET /api/v1/lives/14661333(?:/giftTabs)?$
+      - ^GET /api/v1/lives/14661333(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/14661333/(?:enter|quit|viewers/alive|comment)?$
       # jwconcert1
-      - ^GET /api/v1/lives/15687901(?:/giftTabs)?$
+      - ^GET /api/v1/lives/15687901(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/15687901/(?:enter|quit|viewers/alive|comment)?$
       # jwconcert2
-      - ^GET /api/v1/lives/15687902(?:/giftTabs)?$
+      - ^GET /api/v1/lives/15687902(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/15687902/(?:enter|quit|viewers/alive|comment)?$
       # jan_index3
-      - ^GET /api/v1/lives/14666745(?:/giftTabs)?$
+      - ^GET /api/v1/lives/14666745(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/14666745/(?:enter|quit|viewers/alive|comment)?$
       # caroconcert1
-      - ^GET /api/v1/lives/15816617(?:/giftTabs)?$
+      - ^GET /api/v1/lives/15816617(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/15816617/(?:enter|quit|viewers/alive|comment)?$
       # caroconcert2
-      - ^GET /api/v1/lives/15816618(?:/giftTabs)?$
+      - ^GET /api/v1/lives/15816618(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/15816618/(?:enter|quit|viewers/alive|comment)?$
       # jerry_test_concert1
-      - ^GET /api/v1/lives/14675054(?:/giftTabs)?$
+      - ^GET /api/v1/lives/14675054(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/14675054/(?:enter|quit|viewers/alive|comment)?$
       # pikaarmy3
-      - ^GET /api/v1/lives/14661251(?:/giftTabs)?$
+      - ^GET /api/v1/lives/14661251(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/14661251/(?:enter|quit|viewers/alive|comment)?$
       # jen87concert1
-      - ^GET /api/v1/lives/15818736(?:/giftTabs)?$
+      - ^GET /api/v1/lives/15818736(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/15818736/(?:enter|quit|viewers/alive|comment)?$
       # qa_backend_monitor16
-      - ^GET /api/v1/lives/15816647(?:/giftTabs)?$
+      - ^GET /api/v1/lives/15816647(?:/giftTabs|info)?$
       - ^POST /api/v1/lives/15816647/(?:enter|quit|viewers/alive|comment)?$
   - url_key: "concert_trade_url"
     default_url_key: "go_trade_url"
