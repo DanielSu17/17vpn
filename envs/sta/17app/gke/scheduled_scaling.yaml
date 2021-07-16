@@ -27,7 +27,7 @@
   - name: k8ssta-gousersearch-main
     minReplicas: 10
 
-# Brent test for JP timezone
+# Example for CM stress test
 - startTime: "2021-05-24 16:30:00 (GMT+0900)"
   endTime: "2021-05-24 17:00:00 (GMT+0900)"
   HPAConfigs:
@@ -41,18 +41,10 @@
     minReplicas: 20
   - name: k8ssta-gousersearch-main
     minReplicas: 10
-
-# Alex test for JP timezone
-- startTime: "2021-06-29 16:30:00 (GMT+0900)"
-  endTime: "2021-06-29 17:00:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8ssta-goapi-main
-    minReplicas: 80
-  - name: k8ssta-golives-main
-    minReplicas: 80
-  - name: k8ssta-gotrade-main
-    minReplicas: 12
-  - name: k8ssta-gocells-main
+  - name: k8ssta-concert-trade-main
     minReplicas: 20
-  - name: k8ssta-gousersearch-main
+  - name: k8ssta-concert-stream-tw-main
     minReplicas: 10
+  - name: k8ssta-revprox-tw-main
+    minReplicas: 40
+
