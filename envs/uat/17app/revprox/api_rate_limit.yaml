@@ -118,5 +118,4 @@ rate_limits:
   - {url: "/api/v1/groupCalls/group/[A-Za-z0-9-]+/keepChannelAlive",                           method: "POST",    flow_per_second: 1,        reservoir_size: 5,    scope: by_access_token}
 
   # dailyquest related
-  #app/api/api/dailyquest/dailyquest.go:78: apis.AddRateLimit(rl, apis.RateLimitDailyQuestSignin, ratelimiter.Hour, signInQPS, apis.ByUser),
   - {url: "/api/v1/dailyquest/signIn",                            method: "POST",     flow_per_second: 0.00138,        reservoir_size: 5,    scope: by_access_token}
