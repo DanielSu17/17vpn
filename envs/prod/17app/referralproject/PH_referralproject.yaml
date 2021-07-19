@@ -1,0 +1,92 @@
+startTime: "2019-12-21 00:30:00 (GMT+0800)"
+endTime: "2019-12-31 23:59:59 (GMT+0800)"
+
+# --- referralMsg sample ---
+# Hi, I'm streamer $1 from 17!
+# Become a 17 member now and complete the following tasks to get a free gift and help me reach my goal!
+# 1. Enter the invitation code $2 on the day of registration
+# 2. Complete phone verification and watch $3 days of streams within $4 days of the task
+# It's super easy! Come support me on 17 if you like me!
+# Download 17 here:
+# --- end of sample ---
+referralMsg:
+  key: invite_code_text
+  params:
+      - value: "{referrerOpenID}"
+      - value: "{referralCode}"
+      - value: 5
+      - value: 2
+referralURL: https://17apps.onelink.me/i7CY/f25f848b
+
+ruleTitle:
+  key: invite_rule_title
+
+# --- rules sample ---
+# Event period: $1
+# During the event, you will earn NTD $2 for every new friend invited who downloads the app and complete the tasks. If they complete the tasks, they can get gifts as well!
+# Easy 3 Steps to Invitiation Rewards
+# Send invitation code
+# Remind them to complete the tasks
+# Upon completion you'll get your reward!
+# New Friend's Tasks
+# Complete phone verification
+# Watch $3 streams within $4 days of registration
+# --- end of sample ---
+rules:
+  - key: invite_rule_content_TW
+    params:
+      # event duration
+      - value: "2019-12-21 00:30:00 ~ 2020-01-01 00:00:00"
+      - value: 100
+      - value: 5
+      - value: 2
+
+# available ttl after register in hours
+missionTTLHrs: 120
+# follow referrer automatically when binding referral code
+followWhenBinding: true
+
+# award related
+award: 100
+currency: "NTD"
+
+# mode : defines what group is valid for this project
+#   0 no one
+#   1 whitelist
+#   2 all contracted streamers
+mode: 2
+whiteList:
+
+missions:
+  - ID: referral-project-phone-binding-tw
+    type: 12
+    reward:
+      rewardType: 1
+      rewardID: hello_2
+      amount: 5
+      expireTimeSecs: 86400
+    i18nTitle: invitation_mission_phone_title
+    i18nTitleParams:
+    i18nDescription: invitation_mission_phone_content
+    i18nDescriptionParams:
+    goalValue: 1
+    withReminder: false
+  - ID: referral-project-view-x-different-day-tw
+    type: 13
+    reward:
+      rewardType: 1
+      rewardID: missyou_2
+      amount: 5
+      expireTimeSecs: 86400
+    i18nTitle: invitation_mission_view_title
+    i18nTitleParams:
+      - needMap: false
+        mapOption: 0
+        value: 5
+      - needMap: false
+        mapOption: 0
+        value: 2
+    i18nDescription: invitation_mission_view_content
+    i18nDescriptionParams:
+    goalValue: 2
+    withReminder: false
