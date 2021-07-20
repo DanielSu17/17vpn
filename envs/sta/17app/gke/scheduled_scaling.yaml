@@ -28,11 +28,11 @@
     minReplicas: 10
 
 # Example for CM stress test
-- startTime: "2021-07-19 14:00:00 (GMT+0800)"
-  endTime: "2021-07-19 20:00:00 (GMT+0800)"
+- startTime: "2021-07-20 13:00:00 (GMT+0800)"
+  endTime: "2021-07-20 20:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8ssta-goapi-main
-    minReplicas: 120
+    minReplicas: 200
   - name: k8ssta-golives-main
     minReplicas: 85
   - name: k8ssta-gotrade-main
