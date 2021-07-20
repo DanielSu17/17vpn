@@ -1,0 +1,165 @@
+pnCheckNotif: 300 # 5 mins
+minAndroidCaptionBlockVersion: "2.13.0"
+minIOSCaptionBlockVersion: "3.101.0"
+
+captionBlockConf: 
+  oldClientEnable: false
+  newClientEnable: false
+  minAndroidVersionRequired: "3.13.0"
+  minIOSVersionRequired: "4.101.0"
+
+followerCountTriggerEvent: 100000
+
+forcePromoteVirtualStream: false
+enableExtInfoTypeEvent: true
+
+programDefaultComments: #全部 program 預設留言
+  - commentsInfo:
+      - content: "早上好~~~"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "大家~~~"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "我很好~~~"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "對不對~~~"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+
+defaultComments:
+  - specificTimeFrame: true
+    startTime: "00:00:00"
+    endTime: "03:59:59"
+    comments: ["晚上好👋", "👏👏👏", "😍", "😂", "要歐爸去換點黃金票券嗎😎"]
+    commentsInfo:
+      - content: "晚上好👋"
+        contentColor: "#FF0000"
+        backgroundColor: "#b228232d"
+      - content: "👏👏👏"
+        contentColor: "#FF0000"
+        backgroundColor: "#b228232d"
+      - content: "😍"
+        contentColor: "#FF0000"
+        backgroundColor: "#b228232d"
+      - content: "😂"
+        contentColor: "#FF0000"
+        backgroundColor: "#b228232d"
+      - content: "要歐爸去換點黃金票券嗎😎"
+        contentColor: "#FF0000"
+        backgroundColor: "#b228232d"
+  - specificTimeFrame: true
+    startTime: "04:00:00"
+    endTime: "11:59:59"
+    comments: ["早安～", "👏👏👏", "😍", "😂", "要歐爸去換點黃金票券嗎😎"]
+    commentsInfo:
+      - content: "早安～"
+        contentColor: "#FF0000"
+        backgroundColor: "#b228232d"
+      - content: "👏👏👏"
+        contentColor: "#FF0000"
+        backgroundColor: "#b228232d"
+      - content: "😍"
+        contentColor: "#FF0000"
+        backgroundColor: "#b228232d"
+      - content: "😂"
+        contentColor: "#FF0000"
+        backgroundColor: "#b228232d"
+      - content: "要歐爸去換點黃金票券嗎😎"
+        contentColor: "#FF0000"
+        backgroundColor: "#b228232d"
+  - specificTimeFrame: true
+    startTime: "12:00:00"
+    endTime: "17:59:59"
+    comments: ["主播好👋🏻", "👏👏👏", "😍", "😂", "要歐爸去換點黃金票券嗎😎"]
+    commentsInfo:
+      - content: "主播好👋🏻"
+        contentColor: "#FF0000"
+        backgroundColor: "#b228232d"
+      - content: "👏👏👏"
+        contentColor: "#FF0000"
+        backgroundColor: "#b228232d"
+      - content: "😍"
+        contentColor: "#FF0000"
+        backgroundColor: "#b228232d"
+      - content: "😂"
+        contentColor: "#FF0000"
+        backgroundColor: "#b228232d"
+      - content: "要歐爸去換點黃金票券嗎😎"
+        contentColor: "#FF0000"
+        backgroundColor: "#b228232d"
+  - specificTimeFrame: true
+    startTime: "18:00:00"
+    endTime: "23:59:59"
+    comments: ["晚上好👋", "👏👏👏", "😍", "😂", "要歐爸去換點黃金票券嗎😎"]
+    commentsInfo:
+      - content: "晚上好👋"
+        contentColor: "#FF0000"
+        backgroundColor: "#b228232d"
+      - content: "👏👏👏"
+        contentColor: "#FF0000"
+        backgroundColor: "#b228232d"
+      - content: "😍"
+        contentColor: "#FF0000"
+        backgroundColor: "#b228232d"
+      - content: "😂"
+        contentColor: "#FF0000"
+        backgroundColor: "#b228232d"
+      - content: "要歐爸去換點黃金票券嗎😎"
+        contentColor: "#FF0000"
+        backgroundColor: "#b228232d"
+hotListOrder: ["HK", "US", "OTHERS"]
+hotCellOrder:
+  regionGroups:
+    - regions: ["HK"]
+    - regions: ["US"]
+    - regions: ["OTHERS"]
+birthdayComment:
+  contentColor: "#28232D"
+  backgroundColor: "#FFFFFF"
+
+comment:
+  program:
+    enableLengthCheck: true
+    maxLength: 20
+
+entryIcons:
+  "REDENVELOPE":
+    iconURL: "https://assets-17app.akamaized.net/c8067d2b-f74f-4704-ab91-bec3ac550605.png"
+  "BIRTHDAY":
+    iconURL: "https://assets-17app.akamaized.net/2abf9755-e1a4-4c17-8d38-d2dabacecf40.png"
+  "MUSIC":
+    iconURL: "https://assets-17app.akamaized.net/94fdc45b-57d2-499d-80e0-d491ae0ceff3.png"
+  "ANNIVERSARY":
+    iconURL: "https://assets-17app.akamaized.net/caa36894-ec0a-4020-b982-dfc294ee9f27.png"
+
+baggageMissionNotif:
+  nthLive: 10
+  showUpSeconds: 5
+
+namecardNotif:
+  period: 30
+  times: 4
+
+levelUpGiftNotif:
+  # example:
+  # gifts:
+  #   - giftID: "test"
+  #     beginTime: 2019-01-02 15:04:05 (GMT+0800)
+  #     endTime: 2019-01-16 15:04:05 (GMT+0800)
+  gifts: []
+  period: 15
+  nthLive: 10
+
+programCommentPin:
+  enable: true
+
+showRockArea: true
+followerOnlyOptionMins: [0, 1, 5, 10]
+
+streamerTagging:
+  enable: true
+  startTime: 2021-04-28 00:00:00 (GMT+0800)
+  whiteList:
+    - "a087cb6f-de57-456d-96fe-c4521ce100b1" # David
