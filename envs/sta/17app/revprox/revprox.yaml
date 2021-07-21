@@ -132,6 +132,21 @@ regexConf:
       # qa_backend_monitor16
       - ^GET /api/v1/lives/15816647(?:/giftTabs|/info)?$
       - ^POST /api/v1/lives/15816647/(?:enter|quit|viewers/alive|comments)?$
+      # ct_qa_25hr
+      - ^GET /api/v1/lives/16544355(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/16544355/(?:enter|quit|viewers/alive|comments)?$
+      # ct_qa_live
+      - ^GET /api/v1/lives/16544358(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/16544358/(?:enter|quit|viewers/alive|comments)?$
+      # ct_qa_replay
+      - ^GET /api/v1/lives/16544395(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/16544395/(?:enter|quit|viewers/alive|comments)?$
+      # ct_qa_replayexpired
+      - ^GET /api/v1/lives/16544405(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/16544405/(?:enter|quit|viewers/alive|comments)?$
+      # ct_qa_ctexpired
+      - ^GET /api/v1/lives/16544441(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/16544441/(?:enter|quit|viewers/alive|comments)?$ 
   - url_key: "concert_trade_url"
     default_url_key: "go_trade_url"
     weight: 100
@@ -192,6 +207,16 @@ regexConf:
       - ^POST /api/v1/lives/15818736/gift
       # qa_backend_monitor16
       - ^POST /api/v1/lives/15816647/gift
+      # ct_qa_25hr
+      - ^POST /api/v1/lives/16544355/gift
+      # ct_qa_live
+      - ^POST /api/v1/lives/16544358/gift
+      # ct_qa_replay
+      - ^POST /api/v1/lives/16544395/gift
+      ## ct_qa_replayexpired
+      - ^POST /api/v1/lives/16544405/gift
+      # ct_qa_ctexpired
+      - ^POST /api/v1/lives/16544441/gift
 conf:
   - url_key: "go_usersearch_url"
     weight: 100
