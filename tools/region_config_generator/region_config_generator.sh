@@ -5,7 +5,7 @@ dirName=$2
 filePath=../../../../$3 #envs/prod/17app/dirName/fileName
 # $4 ~ regions 
 cd ../../envs
-for env in dev sta prod
+for env in dev sta prod uat
 do
     for a
     do
