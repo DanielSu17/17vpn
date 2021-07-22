@@ -35,6 +35,15 @@ allowedMakeupPurchasePayMethods:
 allowedMakeupPurchaseSellingChannels:
   - 29
 
+sellingChannelRedirectURLs:
+  # SPGMPG
+  29: https://sta.17.live/purchase/order?vendor=spgateway # SellingChannelWebTw17Live
+  32: https://sta.17.live/purchase/order?vendor=spgateway&group=1 # SellingChannelWebTwBabyVip
+  19: https://sta.17.live/purchase/order?vendor=spgateway&group=2 # SellingChannelWebTwSuperVip
+  # Gash
+  31: https://sta.17.live/purchase/order?paymethod=64&group=0 # SellingChannelWebTw17LiveGash
+  48: https://sta.17.live/purchase/order?paymethod=64&group=1 # SellingChannelWebTwBabyVipGash
+
 regionConfigs:
   TW:
     sellingChannelGroups:
