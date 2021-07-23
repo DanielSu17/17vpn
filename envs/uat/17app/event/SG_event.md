@@ -1,1 +1,1 @@
-# event, stream settings (pm-only)(SG)
+# event, stream settings (SG)

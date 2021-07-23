@@ -1,1 +1,1 @@
-# event, stream settings (pm-only)(TW)
+# event, stream settings (TW)

@@ -1,1 +1,1 @@
-# event, stream settings (pm-only)(HK)
+# event, stream settings (HK)

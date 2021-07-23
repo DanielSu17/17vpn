@@ -1,1 +1,1 @@
-# event, stream settings (pm-only)(MO)
+# event, stream settings (MO)

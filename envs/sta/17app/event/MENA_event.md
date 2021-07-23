@@ -1,1 +1,1 @@
-# event, stream settings (pm-only)(MENA)
+# event, stream settings (MENA)
