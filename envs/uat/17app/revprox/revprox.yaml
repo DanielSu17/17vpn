@@ -33,7 +33,12 @@ regexConf:
       - ^/api/v1/event/subtabs$
       - ^/api/v1/event/banner$
       - ^/api/v1/event/info/
-
+  - url_key: "go_trade_url"
+    default_url_key: "go_trade_url"
+    weight: 100
+    regex_paths:
+      # normal send gift: "api/v1/lives/:roomid/gift"
+      - ^POST /api/v1/lives/[0-9]+/gift$
 conf:
  - url_key: "go_usersearch_url"
    weight: 100
