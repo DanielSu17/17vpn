@@ -3,25 +3,41 @@
 # | promotionTypePointEvent | 1 |
 # | promotionTypePackage | 2 |
 
-dailyViewLiveXSecondsTotalForNewbies: 900
-dailyViewLiveXSecondsInSingleRoom: 10
+dailyViewLiveXSecondsTotalForNewbies: 0 #原本900
+dailyViewLiveXSecondsInSingleRoom: 0 #原本10
 
+# crazy zoo for IOS
 promotionIAPs:
-  # 禮包 - media17_giftpackage_tier1 for IOS
-  - id: "MINV-1hALPYLWAtHQzXmrmVW6kYdTA9D"
+  - id: "MINV-1vfj7tMl27EROeaQOWoqDJtApZ0"
     promotionType: 1
-    priority: 5
+    priority: 1
     maxPromoteCountPerMonth: 1
     topImageURL: "https://cdn.17app.co/7c7032c9-0c4e-4f0d-be92-078f194df9bb.png"
     bannerURL: "https://cdn.17app.co/1ed71419-e3f7-4072-a44e-4fa1315b1ccb.png"
 
-  # 禮包 - media17_giftpackage_tier1 for android
-  - id: "MINV-1hALPei2ql9d32xOemwWTTaRlkS"
-    promotionType: 2
+#crazy zoo for Android
+  - id: "MINV-1vfj7t7wNiVIDkLhJ5SipThE2ve"
+    promotionType: 1
     priority: 2
     maxPromoteCountPerMonth: 1
     topImageURL: "https://cdn.17app.co/7c7032c9-0c4e-4f0d-be92-078f194df9bb.png"
     bannerURL: "https://cdn.17app.co/1ed71419-e3f7-4072-a44e-4fa1315b1ccb.png"
+
+  # 禮包 - media17_giftpackage_tier1 for IOS
+  #- id: "MINV-1hALPYLWAtHQzXmrmVW6kYdTA9D"
+    #promotionType: 1
+    #priority: 5
+    #maxPromoteCountPerMonth: 1
+    #topImageURL: "https://cdn.17app.co/7c7032c9-0c4e-4f0d-be92-078f194df9bb.png"
+    #bannerURL: "https://cdn.17app.co/1ed71419-e3f7-4072-a44e-4fa1315b1ccb.png"
+
+  # 禮包 - media17_giftpackage_tier1 for android
+  #- id: "MINV-1hALPei2ql9d32xOemwWTTaRlkS"
+    #promotionType: 2
+    #priority: 2
+    #maxPromoteCountPerMonth: 1
+    #topImageURL: "https://cdn.17app.co/7c7032c9-0c4e-4f0d-be92-078f194df9bb.png"
+    #bannerURL: "https://cdn.17app.co/1ed71419-e3f7-4072-a44e-4fa1315b1ccb.png"
 
 # 直播間內的禮包貼紙，所有的禮包都看這個貼紙
 defaultPackageStickerURL: "https://cdn.17app.co/350e70cc-4a9d-42bc-b589-fef06aa7ffec.png"
