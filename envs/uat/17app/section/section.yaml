@@ -43,6 +43,22 @@ sections:
     style: 6
     minGrids: 1
     more: true
+  - id: GroupCall # GroupCall 
+    name:
+      key: group_stream_v3hotpage
+    enable: true
+    dedup: false  #重複
+    minGrids: 2
+    style: 9 
+    more: true
+  - id: AudioStream # AudioStream 聲播
+    name:
+      key: audio_stream_v3hotpage
+    enable: true
+    dedup: false
+    minGrids: 2
+    style: 3 
+    more: true
   - id: NewestStreamer # D0 new streamer
     name:
       key: tab_hot_d0streamer
