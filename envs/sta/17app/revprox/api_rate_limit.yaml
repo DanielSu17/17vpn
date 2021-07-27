@@ -124,4 +124,4 @@ rate_limits:
   - {url: "/api/v1/users/[A-Za-z0-9-]+/getFollowStatusV2", method: "POST", flow_per_second: 200, reservoir_size: 200, scope: by_global}
 
   # dailyquest related
-  - {url: "/api/v1/dailyquest/signIn",                            method: "POST",     flow_per_second: 0.00138,        reservoir_size: 5,    scope: by_access_token}
+#   - {url: "/api/v1/dailyquest/signIn",                            method: "POST",     flow_per_second: 0.00138,        reservoir_size: 5,    scope: by_access_token} # remark for STAG test daily signin
