@@ -18,7 +18,7 @@
     "e": "b"
     "f": "b"
 - testName: entryTitleTypeA # PROD-3617
-  enableABtest: false
+  enableABtest: true
   expiredSecond: 604800
   lastCharGroup:
     "0": "a"
@@ -38,7 +38,7 @@
     "e": "a"
     "f": "a"
 - testName: entryTitleTypeB # PROD-3617
-  enableABtest: false
+  enableABtest: true
   expiredSecond: 604800
   lastCharGroup:
     "0": "b"
@@ -69,16 +69,16 @@
     "5": "a"
     "6": "a"
     "7": "a"
-    "8": "a"
-    "9": "a"
-    "a": "a"
-    "b": "a"
-    "c": "a"
-    "d": "a"
-    "e": "a"
-    "f": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
 - testName: recommendFollow
-  enableABtest: false
+  enableABtest: true
   expiredSecond: 604800 # 7 day
   lastCharGroup:
     "0": "b"
@@ -109,16 +109,16 @@
     "5": "a"
     "6": "a"
     "7": "a"
-    "8": "a"
-    "9": "a"
-    "a": "a"
-    "b": "a"
-    "c": "a"
-    "d": "a"
-    "e": "a"
-    "f": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
 - testName: newbieGuidance # 新手引導(新手遮罩)
-  enableABtest: false
+  enableABtest: true
   expiredSecond: 259200 # 3 days
   lastCharGroup:
     "0": "b"
@@ -169,55 +169,35 @@
     "5": "a"
     "6": "a"
     "7": "a"
-    "8": "a"
-    "9": "a"
-    "a": "a"
-    "b": "a"
-    "c": "a"
-    "d": "a"
-    "e": "a"
-    "f": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
 - testName: streamRoomEntryTitle # 直播間入口標題
   enableABtest: false
   lastCharGroup:
     "0": "a"
-    "1": "a"
+    "1": "b"
     "2": "a"
-    "3": "a"
+    "3": "b"
     "4": "a"
-    "5": "a"
+    "5": "b"
     "6": "a"
-    "7": "a"
+    "7": "b"
     "8": "a"
-    "9": "a"
+    "9": "b"
     "a": "a"
-    "b": "a"
+    "b": "b"
     "c": "a"
-    "d": "a"
+    "d": "b"
     "e": "a"
-    "f": "a"
+    "f": "b"
 - testName: newbiePurchaseEvent # 新手首購活動
   enableABtest: false
-  lastCharGroup:
-    "0": "a"
-    "1": "a"
-    "2": "a"
-    "3": "a"
-    "4": "a"
-    "5": "a"
-    "6": "a"
-    "7": "a"
-    "8": "a"
-    "9": "a"
-    "a": "a"
-    "b": "a"
-    "c": "a"
-    "d": "a"
-    "e": "a"
-    "f": "a"
-- testName: newbieOnboard # 新手流程優化 (onboarding_flow_optimization)
-  enableABtest: false
-  expiredSecond: 604800 # 7 day
   lastCharGroup:
     "0": "b"
     "1": "b"
@@ -235,6 +215,26 @@
     "d": "b"
     "e": "b"
     "f": "b"
+- testName: newbieOnboard # 新手流程優化 (onboarding_flow_optimization)
+  enableABtest: true
+  expiredSecond: 604800 # 7 day
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
 # 新手流程優化p5 (Feature Guide), 四頁, client只有當a才顯示 空的也是不顯示
 - testName: newbieGuide
   enableABtest: false
@@ -270,14 +270,14 @@
     "5": "a"
     "6": "a"
     "7": "a"
-    "8": "a"
-    "9": "a"
-    "a": "a"
-    "b": "a"
-    "c": "a"
-    "d": "a"
-    "e": "a"
-    "f": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
 # Day 0 user filter cell, subtabs, banner and covergirl
 - testName: newbieSimplifyDay0UserPhase1
   enableABtest: false
@@ -290,18 +290,18 @@
     "5": "a"
     "6": "a"
     "7": "a"
-    "8": "a"
-    "9": "a"
-    "a": "a"
-    "b": "a"
-    "c": "a"
-    "d": "a"
-    "e": "a"
-    "f": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
 
 # 新手流程優化P10: 新手任務彈窗
 - testName: newbieP10MissionHint
-  enableABtest: false
+  enableABtest: true
   expiredSecond: 604800 # 7 day
   lastCharGroup:
     "0": "b"
@@ -322,7 +322,7 @@
     "f": "b"
 # 新手流程優化P10: 新手完成特定數量後PN檢查
 - testName: newbieP10CheckPNWhenReceivedReward
-  enableABtest: false
+  enableABtest: true
   expiredSecond: 604800 # 7 day
   lastCharGroup:
     "0": "b"
@@ -374,14 +374,14 @@
     "5": "a"
     "6": "a"
     "7": "a"
-    "8": "a"
-    "9": "a"
-    "a": "a"
-    "b": "a"
-    "c": "a"
-    "d": "a"
-    "e": "a"
-    "f": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
 # 熱門頁 hotOpt隱藏: group b強制關閉feature hotOpt
 - testName: newbieDismissHotOpt
   enableABtest: false
@@ -394,17 +394,17 @@
     "5": "a"
     "6": "a"
     "7": "a"
-    "8": "a"
-    "9": "a"
-    "a": "a"
-    "b": "a"
-    "c": "a"
-    "d": "a"
-    "e": "a"
-    "f": "a"
-#StreamerMission a/b test
-- testName: streamerMissionTest
-  enableABtest: true
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+#group b is enabled to show caption
+- testName: streamCaption
+  enableABtest: false
   lastCharGroup:
     "0": "a"
     "1": "a"
@@ -414,17 +414,17 @@
     "5": "a"
     "6": "a"
     "7": "a"
-    "8": "a"
-    "9": "a"
-    "a": "a"
-    "b": "a"
-    "c": "a"
-    "d": "a"
-    "e": "a"
-    "f": "a"
-#group b is enabled to show caption
-- testName: streamCaption
-  enableABtest: true # or false
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+#StreamerMission a/b test
+- testName: streamerMissionTest
+  enableABtest: false
   lastCharGroup:
     "0": "b"
     "1": "b"
@@ -434,14 +434,14 @@
     "5": "b"
     "6": "b"
     "7": "b"
-    "8": "b"
-    "9": "b"
-    "a": "b"
-    "b": "b"
-    "c": "b"
-    "d": "b"
-    "e": "b"
-    "f": "b"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
 # 開播前可設定直播間入口圖片: group b 可設定圖片
 - testName: streamThumbnail
   enableABtest: false
@@ -462,20 +462,20 @@
     "d": "b"
     "e": "b"
     "f": "b"
-# 登入獎勵: 0~4 group a
+# 登入獎勵: 0~7 group a, 8~f group b
 - testName: signInRewardAB
   enableABtest: true
-  startTime: "2020-10-01T00:00:00+08:00"
-  endTime: "2020-10-30T23:59:59+08:00"
+  startTime: "2020-10-12T12:00:00+08:00"
+  endTime: "2020-11-11T12:00:00+08:00"
   lastCharGroup:
-    "0": "b"
-    "1": "b"
-    "2": "b"
-    "3": "b"
-    "4": "b"
-    "5": "b"
-    "6": "b"
-    "7": "b"
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
     "8": "b"
     "9": "b"
     "a": "b"
@@ -484,11 +484,11 @@
     "d": "b"
     "e": "b"
     "f": "b"
-# 登入獎勵: 5~9 group b, a~f group c
+# 登入獎勵: 0~7 group a, 8~f group b
 - testName: signInRewardBC
   enableABtest: true
-  startTime: "2020-10-01T00:00:00+08:00"
-  endTime: "2020-10-30T23:59:59+08:00"
+  startTime: "2020-10-12T12:00:00+08:00"
+  endTime: "2020-11-11T12:00:00+08:00"
   lastCharGroup:
     "0": "a"
     "1": "a"
@@ -507,29 +507,29 @@
     "e": "a"
     "f": "a"
 
-- testName: iapPackageTest
-  enableABtest: true
-  startTime: "2020-07-01T00:00:00+08:00"
-  endTime: "2020-07-13T23:59:59+08:00"
-  lastCharGroup:
-    "0": "b"
-    "1": "b"
-    "2": "b"
-    "3": "b"
-    "4": "b"
-    "5": "b"
-    "6": "b"
-    "7": "b"
-    "8": "b"
-    "9": "b"
-    "a": "b"
-    "b": "b"
-    "c": "b"
-    "d": "b"
-    "e": "b"
-    "f": "b"
+# - testName: iapPackageTest
+#   enableABtest: true
+#   startTime: "2020-07-01T00:00:00+08:00"
+#   endTime: "2020-07-13T23:59:59+08:00"
+#   lastCharGroup:
+#     "0": "b"
+#     "1": "b"
+#     "2": "b"
+#     "3": "b"
+#     "4": "b"
+#     "5": "b"
+#     "6": "b"
+#     "7": "b"
+#     "8": "b"
+#     "9": "b"
+#     "a": "b"
+#     "b": "b"
+#     "c": "b"
+#     "d": "b"
+#     "e": "b"
+#     "f": "b"
 - testName: pushNotificationAfterRegistration
-  enableABtest: true
+  enableABtest: false
   byAdvertisementID: true
   lastCharGroup:
     "0": "a"
@@ -549,7 +549,7 @@
     "e": "b"
     "f": "b"
 - testName: pushNotificationNoFollowBanner
-  enableABtest: true
+  enableABtest: false
   byAdvertisementID: true
   lastCharGroup:
     "0": "a"
@@ -569,7 +569,7 @@
     "e": "b"
     "f": "b"
 - testName: pushNotificationFollowButton
-  enableABtest: true
+  enableABtest: false
   byAdvertisementID: true
   lastCharGroup:
     "0": "a"
@@ -608,28 +608,32 @@
     "d": "b"
     "e": "b"
     "f": "b"
-
+- testName: newPushNotificationLayout
+  enableABtest: false
+  startTime: "2020-10-12T10:00:00+08:00"
+  endTime: "2020-10-28T00:00:00+08:00"
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+# 付費點心
 - testName: laborRewardWithPremium
   enableABtest: true
-  lastCharGroup:
-    "0": "b"
-    "1": "b"
-    "2": "b"
-    "3": "b"
-    "4": "b"
-    "5": "b"
-    "6": "b"
-    "7": "b"
-    "8": "b"
-    "9": "b"
-    "a": "b"
-    "b": "b"
-    "c": "b"
-    "d": "b"
-    "e": "b"
-    "f": "b"
-- testName: newPushNotificationLayout
-  enableABtest: true
+  startTime: "2020-08-13T11:00:00+08:00"
+  endTime: "2020-08-28T11:00:00+08:00"
   lastCharGroup:
     "0": "a"
     "1": "a"
@@ -647,48 +651,30 @@
     "d": "b"
     "e": "b"
     "f": "b"
-- testName: uiRefresh2020Q3
-  enableABtest: true
-  lastCharGroup:
-    "0": "b"
-    "1": "b"
-    "2": "b"
-    "3": "b"
-    "4": "b"
-    "5": "b"
-    "6": "b"
-    "7": "b"
-    "8": "b"
-    "9": "b"
-    "a": "b"
-    "b": "b"
-    "c": "b"
-    "d": "b"
-    "e": "b"
-    "f": "b"
-
 - testName: removeDefaultComment
-  enableABtest: false
+  enableABtest: true
+#  startTime: "2020-12-03T12:00:00+08:00"
+#  endTime: "2020-12-18T12:00:00+08:00"
   lastCharGroup:
-    "0": "a"
-    "1": "a"
-    "2": "a"
-    "3": "a"
-    "4": "a"
-    "5": "a"
-    "6": "a"
-    "7": "a"
-    "8": "a"
-    "9": "a"
-    "a": "a"
-    "b": "a"
-    "c": "a"
-    "d": "a"
-    "e": "a"
-    "f": "a"
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
 # 留言關鍵字建議禮物
 - testName: contextualGifting
-  enableABtest: true
+  enableABtest: false
   lastCharGroup:
     "0": "a"
     "1": "a"
@@ -708,7 +694,7 @@
     "f": "b"
 # topic modeling
 - testName: topicModeling
-  enableABtest: true
+  enableABtest: false
   lastCharGroup:
     "0": "a"
     "1": "a"
@@ -726,48 +712,9 @@
     "d": "b"
     "e": "b"
     "f": "b"
-
-- testName: recommendationSystem
-  enableABtest: true
-  lastCharGroup:
-    "0": "b"
-    "1": "b"
-    "2": "b"
-    "3": "b"
-    "4": "b"
-    "5": "b"
-    "6": "a"
-    "7": "b"
-    "8": "b"
-    "9": "b"
-    "a": "b"
-    "b": "b"
-    "c": "b"
-    "d": "b"
-    "e": "b"
-    "f": "b"
-
-- testName: avatarPartialRelease
-  enableABtest: true
-  lastCharGroup:
-    "0": "b"
-    "1": "b"
-    "2": "b"
-    "3": "b"
-    "4": "b"
-    "5": "b"
-    "6": "b"
-    "7": "b"
-    "8": "b"
-    "9": "b"
-    "a": "b"
-    "b": "b"
-    "c": "b"
-    "d": "b"
-    "e": "b"
-    "f": "b"
-- testName: registerRecommendationSystem
-  enableABtest: true
+- testName: newbieStreamGuide
+  enableABtest: false
+  expiredSecond: 172800 # 2 days
   lastCharGroup:
     "0": "c"
     "1": "c"
@@ -785,6 +732,92 @@
     "d": "c"
     "e": "c"
     "f": "c"
+- testName: uiRefresh2020Q3
+  enableABtest: true
+  # startTime: "2020-12-03T12:00:00+08:00"
+  # endTime: "2021-04-28T12:00:00+08:00"
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
+- testName: recommendationSystem
+  enableABtest: true
+  startTime: "2021-02-09T12:00:00+08:00"
+  endTime: "2100-12-31T23:59:59+08:00"
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
+  extraNewbieABtest:
+    startTime: "2021-02-09T12:00:00+08:00"
+    endTime: "2100-12-31T23:59:59+08:00"
+    lastCharGroup:
+        "0": "b"
+        "1": "b"
+        "2": "b"
+        "3": "b"
+        "4": "b"
+        "5": "b"
+        "6": "b"
+        "7": "b"
+        "8": "a"
+        "9": "a"
+        "a": "a"
+        "b": "a"
+        "c": "a"
+        "d": "a"
+        "e": "a"
+        "f": "a"
+
+- testName: avatarPartialRelease
+  enableABtest: true
+  startTime: "2021-02-22T17:30:00+08:00"
+  endTime: "2022-12-31T23:59:59+08:00"
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
 - testName: uiRefreshStreamerConfig
   enableABtest: true
   lastCharGroup:
@@ -804,7 +837,7 @@
     "d": "b"
     "e": "b"
     "f": "b"
-
+    
 # group A does NOT SHOW the prompt
 # group B SHOWS the prompt
 - testName: attPrompt
@@ -829,28 +862,75 @@
     "d": "b"
     "e": "b"
     "f": "b"
+# - testName: registerRecommendationSystem
+#   enableABtest: true
+#   lastCharGroup:
+#     "0": "c"
+#     "1": "c"
+#     "2": "c"
+#     "3": "c"
+#     "4": "c"
+#     "5": "c"
+#     "6": "c"
+#     "7": "c"
+#     "8": "c"
+#     "9": "c"
+#     "a": "c"
+#     "b": "c"
+#     "c": "c"
+#     "d": "c"
+#     "e": "c"
+#     "f": "c"
+
 
 # group A is ordered by achievement
 # group B is ordered by ML scores
+#         [ Existing users ]       |      [ New users ]      |
+# ---------------------------------|-------------------------|
+#                                  ^ 2021-04-13 12:00        ^ 2021-06-21 16:00
 - testName: mlSectionOrder
   enableABtest: true
-  lastCharGroup:
-    "0": "b"
-    "1": "b"
-    "2": "b"
-    "3": "b"
-    "4": "b"
-    "5": "b"
-    "6": "b"
-    "7": "b"
-    "8": "b"
-    "9": "b"
-    "a": "b"
-    "b": "b"
-    "c": "b"
-    "d": "b"
-    "e": "b"
-    "f": "b"
+  # new users between the AB test
+  startTime: "2021-06-07T16:00:00+08:00"
+  endTime: "2100-12-31T23:59:59+08:00"
+  lastCharGroup: # existing users
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
+  extraNewbieABtest:
+    # existing users before the AB test
+    startTime: "2021-04-13T12:00:00+08:00"
+    endTime: "2100-12-31T23:59:59+08:00"
+    lastCharGroup: # new users
+      "0": "b"
+      "1": "b"
+      "2": "b"
+      "3": "b"
+      "4": "b"
+      "5": "b"
+      "6": "b"
+      "7": "b"
+      "8": "a"
+      "9": "a"
+      "a": "a"
+      "b": "a"
+      "c": "a"
+      "d": "a"
+      "e": "a"
+      "f": "a"
 
 # group A uses static register labels
 # group B uses dynamic register labels
