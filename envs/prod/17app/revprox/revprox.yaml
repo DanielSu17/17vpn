@@ -45,6 +45,28 @@ regexConf:
     regex_paths:
       # normal send gift: "api/v1/lives/:roomid/gift"
       - ^POST /api/v1/lives/[0-9]+/gift$
+  - url_key: "concert_stream_url"
+    default_url_key: "go_lives_url"
+    weight: 100
+    regex_paths:
+      # ^GET /api/v1/lives/\d+/concertInfo$ forward each request to concert stream service
+      #   - GET /api/v1/lives/:roomID/concertInfo
+      # ^GET /api/v1/lives/:roomID(?:/giftTabs|/info)?$ includes endpoint as follows
+      #   - GET /api/v1/lives/:roomID
+      #   - GET /api/v1/lives/:roomID/info
+      #   - GET /api/v1/lives/:roomID/giftTabs
+      # ^POST /api/v1/lives/:roomID/(?:enter|quit|viewers/alive|comments)?$ includes endpoint as follows
+      #   - POST /api/v1/lives/:roomID/enter
+      #   - POST /api/v1/lives/:roomID/quit
+      #   - POST /api/v1/lives/:roomID/viewers/alive
+      #   - POST /api/v1/lives/:roomID/comments
+      - ^GET /api/v1/lives/\d+/concertInfo$
+      # concert_prod1
+      - ^GET /api/v1/lives/15676294(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/15676294/(?:enter|quit|viewers/alive|comments)?$
+      # concert_prod2
+      - ^GET /api/v1/lives/15676296(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/15676296/(?:enter|quit|viewers/alive|comments)?$
 conf:
  - url_key: "go_usersearch_url"
    weight: 100
