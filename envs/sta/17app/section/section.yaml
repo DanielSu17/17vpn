@@ -43,7 +43,7 @@ sections:
       key: tab_hot_d0streamer
     enable: true
     dedup: true
-    minGrids: 5
+    minGrids: 1
     style: 3
     more: true
     orderModel: 2
@@ -52,7 +52,7 @@ sections:
       key: group_stream_v3hotpage
     enable: true
     dedup: false
-    minGrids: 2
+    minGrids: 1
     style: 9 
     more: true
   # - id: AudioStream # AudioStream 聲播
@@ -69,7 +69,7 @@ sections:
     enable: true
     dedup: true
     style: 6
-    minGrids: 5
+    minGrids: 1
     more: true 
   - id: Label # 超新星
     labelID: newbie
@@ -77,7 +77,7 @@ sections:
       key: tw_newbie
     enable: true
     dedup: true
-    minGrids: 5
+    minGrids: 1
     style: 3
     more: true
     category: normal
@@ -86,8 +86,8 @@ sections:
     name:
       key: tab_hot_2019q4_newstreamer
     enable: true
-    dedup: true
-    minGrids: 5
+    dedup: false
+    minGrids: 1
     style: 3
     more: true
     orderModel: 2
@@ -97,7 +97,7 @@ sections:
       key: event_unboxing_Hello_Kitty
     enable: true
     dedup: true
-    minGrids: 3
+    minGrids: 1
     style: 3
     more: true
     category: normal
@@ -108,7 +108,7 @@ sections:
       key: streamer_label_music
     enable: true
     dedup: true  
-    minGrids: 5
+    minGrids: 1
     style: 3
     more: true
     category: normal
@@ -119,7 +119,7 @@ sections:
       key: streamer_label_game
     enable: true
     dedup: true
-    minGrids: 5
+    minGrids: 1
     style: 3
     more: true
     category: normal
@@ -130,7 +130,7 @@ sections:
       key: streamer_label_highlight_visual_artists
     enable: true
     dedup: true
-    minGrids: 5
+    minGrids: 1
     style: 3
     more: true
     category: normal
@@ -141,7 +141,7 @@ sections:
       key: streamer_label_market
     enable: true
     dedup: true
-    minGrids: 3
+    minGrids: 1
     style: 3
     more: true
     category: normal
@@ -151,7 +151,7 @@ sections:
       key: tab_hot_2019q4_music
     enable: false
     dedup: true
-    minGrids: 5
+    minGrids: 1
     style: 3
     more: true
   - id: PK # pk
@@ -159,7 +159,7 @@ sections:
       key: tab_hot_2019q4_pk
     enable: true
     dedup: false  #重複
-    minGrids: 6 # 2個直播間一組PK，3組以上顯示
+    minGrids: 2 # 2個直播間一組PK，3組以上顯示
     style: 3
     more: true
   - id: Label #實力歌手
@@ -168,7 +168,7 @@ sections:
       key: streamer_label_singer
     enable: true
     dedup: true
-    minGrids: 5
+    minGrids: 1
     style: 3
     more: true
     orderModel: 2
@@ -178,7 +178,7 @@ sections:
       key: streamer_label_acoustic
     enable: true
     dedup: true
-    minGrids: 5
+    minGrids: 1
     style: 3
     more: true
     orderModel: 2
@@ -188,7 +188,7 @@ sections:
       key: streamer_label_player
     enable: true
     dedup: true
-    minGrids: 5
+    minGrids: 1
     style: 3
     more: true
     orderModel: 2
@@ -196,7 +196,7 @@ sections:
     name:
       key: tab_hot_2019q4_vod
     enable: true
-    minGrids: 5
+    minGrids: 1
     style: 5
     more: false
   - id: Label #全民開播
@@ -205,7 +205,7 @@ sections:
       key: streamer_label_stay_at_home_subtab
     enable: true
     dedup: true
-    minGrids: 5
+    minGrids: 1
     style: 3
     more: true
     category: normal
@@ -216,7 +216,7 @@ sections:
       key: streamer_label_professional
     enable: true
     dedup: true
-    minGrids: 5
+    minGrids: 1
     style: 3
     more: true
     orderModel: 2
@@ -226,7 +226,7 @@ sections:
       key: streamer_label_tutor
     enable: true
     dedup: false
-    minGrids: 3
+    minGrids: 1
     style: 3
     more: true
     category: normal
@@ -235,7 +235,7 @@ sections:
     name:
       key: tab_hot_2019q4_vote
     enable: true
-    minGrids: 4
+    minGrids: 1
     style: 3
     more: true
   - id: Label # 男生
@@ -244,7 +244,7 @@ sections:
       key: tab_hot_2019q4_male
     enable: true
     dedup: false
-    minGrids: 5
+    minGrids: 1
     style: 3
     more: true
   - id: Label # 女生
@@ -253,7 +253,7 @@ sections:
       key: tab_hot_2019q4_female
     enable: true
     dedup: false
-    minGrids: 5
+    minGrids: 1
     style: 3
     more: true
   - id: Label # 聊天, 對應到v1 sub-tab
@@ -262,7 +262,7 @@ sections:
       key: streamer_label_chat
     enable: true
     dedup: true
-    minGrids: 5
+    minGrids: 1
     style: 3
     more: true
     category: normal #normal代表可以在開播類別被選擇；exclusive則不能被選擇，不填寫則默認exclusive
