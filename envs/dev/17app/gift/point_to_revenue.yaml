@@ -9,8 +9,9 @@ regionRates:
   # - adjustRatio is 1.5 which let users think they have 1.5 times RevenueRatio
   # 	# - 99/(14000*1.5) is almost equal to 1/7/30.3 so finance department treats
   # 1/7 as PointToTWD and 30.3 is the system one USD to TWD ratio
-  # CEO office request to Modify the basic ratio in SG, PH and MY into 20, 20 and 8 respectively.
-  #   # MY: 1/7/8/2.5; SG: 1/7/20/2.5, PH: 1/7/20/2.5; active on 1, Aug, 2021 [1627747200]
+  # 1/2.5 is Currency depreciation in 17LIVE point in 2020 
+  # CEO office request to Modify the basic ratio in SG, PH and MY into 140, 350 and 350 respectively.
+  #   # MY: 1/140 MYRD; SG: 1/350 SGD, PH: 1/(350*1.568[USDToSGD]) USD; active on 1, Aug, 2021 [1627747200]
   DEFAULT:
     - activeMonth: 2015-01
       # 1/7(PointToTWD)/31.36(USDToTWD)
@@ -206,13 +207,13 @@ regionRates:
       rate: 0.001904761905
   PH:
     - activeTimestamp: 1627747200
-      # 1/7(PointToTWD)/20(Finance-Made ratio)/2.5
-      rate: 0.002857142857
+      # 1/7(PointToTWD)/31.36(USDToTWD)/2.5
+      rate: 0.001822157434
   MY:
     - activeTimestamp: 1627747200
-      # 1/7(PointToTWD)/8(RinggitToTWD)/2.5
-      rate: 0.007142857143
+      # 1/7(PointToTWD)/(31.36 [USDToTWD] * 1.12 [ratio from CEO office])/2.5
+      rate: 0.001626926281
   SG:
     - activeTimestamp: 1627747200
-      # 1/7(PointToTWD)/20(SGDToTWD)/2.5
-      rate: 0.002857142857
+      # 1/7(PointToTWD)/31.36(USDToTWD)/2.5
+      rate: 0.001822157434
