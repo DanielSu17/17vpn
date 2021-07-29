@@ -314,9 +314,9 @@ conf:
             hasRestreamedLiveStream,\
             endLiveStream,\
             commentLiveStream,liveStreams/commentLiveStream"
-  - url_key: "aggr_gateway_url"
+  - url_key: "go_cells_url"
     default_url_key: "go_cells_url"
-    weight: 0
+    weight: 100
     white_list:
       apiv1: "cells,sections"
   - url_key: "bbrich_url"
