@@ -55,6 +55,14 @@ sections:
     minGrids: 2
     style: 9 
     more: true
+  - id: PK # pk
+    name:
+      key: tab_hot_2019q4_pk
+    enable: true
+    dedup: false  #重複
+    minGrids: 6 # 2個直播間一組PK，3組以上顯示
+    style: 3
+    more: true
   # - id: AudioStream # AudioStream 聲播
   #   name:
   #     key: audio_stream_v3hotpage
@@ -152,14 +160,6 @@ sections:
     enable: false
     dedup: true
     minGrids: 5
-    style: 3
-    more: true
-  - id: PK # pk
-    name:
-      key: tab_hot_2019q4_pk
-    enable: true
-    dedup: false  #重複
-    minGrids: 6 # 2個直播間一組PK，3組以上顯示
     style: 3
     more: true
   - id: Label #實力歌手
