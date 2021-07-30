@@ -1,8 +1,8 @@
-enable: true
-enableAll: true
-enableContractedStreamer: true
-defaultAcceptChallenge: false
-maxPlayerAmount: 5000 #以人為單位
+enable: true # 整個功能的開關
+enableAll: true # 開放所有用戶使用
+enableContractedStreamer: true # 開放合約主播使用 
+defaultAcceptChallenge: false  # 配對倒數結束，預設加入或拒絕
+maxPlayerAmount: 5000 # 人數上限，以人為單位
 whiteList:
   -  9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba # kevinmh03
   -  b640f50e-ab98-45bd-8d71-64cd2700b405 # kevinmh04
@@ -45,7 +45,7 @@ whiteList:
   - 831ab0f8-c3f9-4d61-8eea-ab5aa7b6f1ce  #wanibelle
 
 
-silenceList:
+silenceList: # 不會收到PK邀請名單
   - 6ed74223-4466-4909-9104-12591f2deca8 # HotSpark女子鼓團
   - 1807ac60-6194-4026-95d3-7eae9f8ce3e3 # 高高心理師
   - 8471cde3-503d-4668-b2c0-cb4bb6f26242 # 俠醫楊智鈞
@@ -84,9 +84,19 @@ silenceList:
   - 2242e3b8-2ab9-4d7f-b0d1-f4743d31a9e5 # 台灣鯛民 廖彥朋
   - cea88f37-28c7-4f79-9d9c-732480a8b8e8 # 吳崢
   - f9546eee-c573-4a66-aa4b-b8071473557e # 陳楷
-displayIconType: 2
-displayInvitationPictures: 1
-matchingRules:
+displayIconType: 2 # 功能按紐 1.VS 2.PK
+displayInvitationPictures: 1 # 配對中隨機頭像圖片 1.TW 2.JP 3.US 4.MENA
+# 配對條件： 
+# 1. 開播選擇同活動，同分數> 活動分數 ± 1％ > 活動分數 ± 5％> 活動分數 ± 10％ > 所有同活動主播
+# 2. 同等級 > 等級 ± 10 > 等級 ± 20 
+# 3. 同勝率 > 勝率 ± 5% > 勝率 ± 10%
+# 4. 所有在線同區的主播 
+matchingRules: 
+  # sameEventMatchFirst: true #將相同活動配對在一起的開關
+  # eventScores:
+  #   - 1
+  #   - 5
+  #   - 10
   levelRange:
     - 10
     - 20
@@ -94,8 +104,8 @@ matchingRules:
     - 0
     - 0.05
     - 0.1
-minLevel: 1
-playList:
+minLevel: 1 # 參與最小等級
+playList: # PK 模式列表 （後來只有開發隨機配對）
   - id: normalOneVOne
     mode: 1
     match: 1
@@ -104,6 +114,9 @@ playList:
       key: "pk_menu_mode_title_random"
     description:
       key: "pk_menu_mode_description_random"
+
+# 選取該活動時，必須送該活動的禮物才會納入PK分數計算
+pkEvents: []
 
 ## for pk leaderboard
 pkHourLBLevel:
