@@ -42,16 +42,6 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: NewestStreamer # D0 new streamer
-    name:
-      key: tab_hot_d0streamer
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    orderModel: 2
-
   - id: Label # 夏の思い出
     labelID: 2108_jp_summer
     name:
@@ -62,6 +52,16 @@ sections:
     style: 3
     more: true
     category: normal
+    orderModel: 2
+
+  - id: NewestStreamer # D0 new streamer
+    name:
+      key: tab_hot_d0streamer
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
     orderModel: 2
 
   - id: GroupCall # GroupCall 
@@ -317,10 +317,10 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: Label # 女子
-    labelID: jp_girls
-    name: 
-      key: streamer_jp_label_girls
+  - id: Label # 男子
+    labelID: jp_boys
+    name:
+      key: streamer_jp_label_boys
     enable: true
     dedup: true
     minGrids: 5
@@ -329,10 +329,10 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: Label # 男子
-    labelID: jp_boys
-    name:
-      key: streamer_jp_label_boys
+  - id: Label # 女子
+    labelID: jp_girls
+    name: 
+      key: streamer_jp_label_girls
     enable: true
     dedup: true
     minGrids: 5
