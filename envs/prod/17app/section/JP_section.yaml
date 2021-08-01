@@ -30,6 +30,15 @@ sections:
  #   enable: true
  #   style: 2
  #   more: false
+  - id: NewestStreamer # D0 new streamer
+    name:
+      key: tab_hot_d0streamer
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    orderModel: 2
   - id: Label # 新人さん歓迎
     labelID: jp_welcome
     name:
@@ -72,15 +81,7 @@ sections:
   #   style: 3 
   #   more: true
 
-  - id: NewestStreamer # D0 new streamer
-    name:
-      key: tab_hot_d0streamer
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    orderModel: 2
+
   - id: Suggestion # 猜你可能喜歡
     name:
       key: tab_hot_2019q4_follow_suggestion
