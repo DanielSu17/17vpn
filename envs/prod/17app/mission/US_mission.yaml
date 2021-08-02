@@ -40,6 +40,35 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
+- ID: 8fa63cdc-580b-4323-af48-865e249c2adf
+  type: 10
+  category: 0
+  lifeCycle: 1
+  targetAudience: 2
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2108_us_welcomeoffer
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: Welcome Offer
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_IAP_reward_jp_npu_desc
+  i18nDescriptionParams: []
+  goalValue: 2
+  enableTimeRange:
+  - startTime: 2021-08-02 18:00:00 (GMT-7000)
+    endTime: 2021-08-31 21:00:00 (GMT-0700)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
 - ID: 6c331466-38ab-48d5-ab31-26b079c94b6f
   type: 3
   category: 0
@@ -78,64 +107,6 @@ missions:
   refIDs:
   - 2107_us_avatarsun
   - 2107_us_avatarsun_bag2
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 8fa63cdc-580b-4323-af48-865e249c2adf
-  type: 10
-  category: 0
-  lifeCycle: 1
-  targetAudience: 2
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2107_us_welcomeoffer
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: Welcome Offer
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_IAP_reward_jp_npu_desc
-  i18nDescriptionParams: []
-  goalValue: 330
-  enableTimeRange:
-  - startTime: 2021-07-01 18:00:00 (GMT-7000)
-    endTime: 2021-07-31 21:00:00 (GMT-0700)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: e74b0be1-2f4e-41e3-8228-f001804a8017
-  type: 10
-  category: 0
-  lifeCycle: 1
-  targetAudience: 2
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2107_us_welcomeoffer
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: Welcome Offer
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_IAP_reward_jp_npu_desc
-  i18nDescriptionParams: []
-  goalValue: 330
-  enableTimeRange:
-  - startTime: 2021-07-01 18:00:00 (GMT-7000)
-    endTime: 2021-07-31 21:00:00 (GMT-0700)
-  refIDs: []
   platforms:
   - android
   - ios
