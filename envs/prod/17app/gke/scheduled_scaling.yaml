@@ -4,11 +4,11 @@
   HPAConfigs:
   - name: example-target-hpa
     minReplicas: 20
-    
-# 0729 MKT
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit?ts=6080ccfd#gid=1709744959
-- startTime: "2021-07-29 20:00:00 (GMT+0900)"
-  endTime: "2021-07-29 23:00:00 (GMT+0900)"
+
+# 0813 NOGOODTV
+# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=HX9
+- startTime: "2021-08-13 18:00:00 (GMT+0900)"
+  endTime: "2021-08-13 21:00:00 (GMT+0900)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 120
@@ -21,9 +21,26 @@
   - name: k8sprod-gousersearch-main
     minReplicas: 10
 
-# 0730 [JP] 17夏祭offine, Kansai Collection, Real event
-- startTime: "2021-07-30 15:30:00 (GMT+0800)"
-  endTime: "2021-07-30 23:00:00 (GMT+0800)"
+# 0816 Big Event
+# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IA19
+- startTime: "2021-08-16 15:00:00 (GMT+0800)"
+  endTime: "2021-08-16 21:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 120
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+
+# 0827 NOGOODTV
+# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IL10
+- startTime: "2021-08-16 18:00:00 (GMT+0900)"
+  endTime: "2021-08-16 21:00:00 (GMT+0900)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 120
