@@ -7,6 +7,9 @@
 - name: prod
   url: https://api-dsa.17app.co
   type: 2
+- name: prod-cdn #This endpoint for QA test before move traffic to CDN
+  url: https://wap-api.17app.co
+  type: 2
 - name: stag # This endpoint will go to different revprox depend on Route53 GeoDNS
   url: https://sta-api.17app.co
   type: 1
