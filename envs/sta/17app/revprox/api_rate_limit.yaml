@@ -129,3 +129,5 @@ rate_limits:
   # audio stream related
   - {url: "/api/v1/lives/[0-9]+/mode",                           method: "PUT",  flow_per_second: 0.2,  reservoir_size: 1,  scope: by_access_token}
   - {url: "/api/v1/liveStreams/config/streamer/backgroundImage", method: "POST", flow_per_second: 1,    reservoir_size: 1,  scope: by_access_token}
+
+  - {url: "/api/v1/feed/live",                             method: "GET", flow_per_second: 30, reservoir_size: 30, scope: by_global}
