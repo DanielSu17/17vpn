@@ -192,8 +192,11 @@
    },
    "apm" : {
     "apply_version" : 2609,
-    "sampling" : "9AB"
-  }, 
+    "sampling" : "9AB",
+    "anr_timeout" : 5000,
+    "max_acceptable_drop_frame" : 50,
+    "collect_cpu_usage_interval" : 3000
+   }, 
   "group_stream_black_list":{
       "models":[
          "HTC_X9u"
