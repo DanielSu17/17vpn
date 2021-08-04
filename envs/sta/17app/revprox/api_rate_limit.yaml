@@ -93,17 +93,17 @@ rate_limits:
 
   - {url: "/api/v1/logs",                                 method: "POST",    flow_per_second: 1250000,          reservoir_size: 1250000,    scope: by_global}
 
-  - {url: "/api/v1/recommendation/metrics/user",                  method: "POST",    flow_per_second: 10,         reservoir_size: 50,     scope: by_global}
+  - {url: "/api/v1/recommendation/metrics/user",                  method: "POST",    flow_per_second: 100,         reservoir_size: 500,     scope: by_global}
   - {url: "/api/v1/recommendation/metrics/stream",                method: "POST",    flow_per_second: 1,         reservoir_size: 5,     scope: by_global}
   - {url: "/api/v1/recommendation/setting",                       method: "PUT",     flow_per_second: 1,         reservoir_size: 5,     scope: by_global}
-  - {url: "/api/v1/recommendation/metrics/user",                  method: "GET",     flow_per_second: 10,         reservoir_size: 50,     scope: by_global}
+  - {url: "/api/v1/recommendation/metrics/user",                  method: "GET",     flow_per_second: 100,         reservoir_size: 500,     scope: by_global}
   - {url: "/api/v1/recommendation/metric/user/[A-Za-z0-9-]+",     method: "POST",    flow_per_second: 120,       reservoir_size: 200,   scope: by_global}
   - {url: "/api/v1/recommendation/metric/user/[A-Za-z0-9-]+",     method: "GET",     flow_per_second: 150,        reservoir_size: 150,    scope: by_global}
   - {url: "/api/v1/recommendation/metric/stream/[A-Za-z0-9-]+",   method: "GET",     flow_per_second: 120,       reservoir_size: 200,   scope: by_global}
   - {url: "/api/v1/users/[A-Za-z0-9-]+/recommend",                method: "GET",     flow_per_second: 350,        reservoir_size: 350,    scope: by_global}
   - {url: "/api/v1/users/[A-Za-z0-9-]+/followees",                method: "GET",     flow_per_second: 350,        reservoir_size: 370,    scope: by_global}
   - {url: "/api/v1/user/search",                                  method: "GET",     flow_per_second: 100,        reservoir_size: 100,    scope: by_global}
-  - {url: "/api/v1/users/[A-Za-z0-9-]+/info",                     method: "GET",     flow_per_second: 500,       reservoir_size: 500,   scope: by_global}
+  - {url: "/api/v1/users/[A-Za-z0-9-]+/info",                     method: "GET",     flow_per_second: 600,       reservoir_size: 600,   scope: by_global}
   - {url: "/api/v1/lives/[A-Za-z0-9-]+/viewer/rockviewers/showme", method: "GET",     flow_per_second: 2000,        reservoir_size: 2000,    scope: by_global}
 
   # group call related
@@ -118,7 +118,7 @@ rate_limits:
 
   # cdn cache new apis, see TECH-1677
   - {url: "/api/v1/army/overview/[A-Za-z0-9-]+",           method: "GET",  flow_per_second: 480, reservoir_size: 480, scope: by_global}
-  - {url: "/api/v1/army/relation/[A-Za-z0-9-]+",           method: "GET",  flow_per_second: 480, reservoir_size: 480, scope: by_global}
+  - {url: "/api/v1/army/relation/[A-Za-z0-9-]+",           method: "GET",  flow_per_second: 580, reservoir_size: 580, scope: by_global}
   - {url: "/api/v1/event/customEventV2/gifts",             method: "GET",  flow_per_second: 130, reservoir_size: 130, scope: by_global}
   - {url: "/api/v1/event/personalBanners",                 method: "GET",  flow_per_second: 410, reservoir_size: 410, scope: by_global}
   - {url: "/api/v1/users/[A-Za-z0-9-]+/getFollowStatusV2", method: "POST", flow_per_second: 200, reservoir_size: 200, scope: by_global}
