@@ -92,11 +92,11 @@ displayInvitationPictures: 1 # 配對中隨機頭像圖片 1.TW 2.JP 3.US 4.MENA
 # 3. 同勝率 > 勝率 ± 5% > 勝率 ± 10%
 # 4. 所有在線同區的主播 
 matchingRules: 
-  # sameEventMatchFirst: true #將相同活動配對在一起的開關
-  # eventScores:
-  #   - 1
-  #   - 5
-  #   - 10
+  sameEventMatchFirst: true #將相同活動配對在一起的開關
+  eventScores:
+    - 1
+    - 5
+    - 10
   levelRange:
     - 10
     - 20
