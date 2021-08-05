@@ -299,3 +299,88 @@
     "d": "b"
     "e": "b"
     "f": "b"
+- testName: uiRefreshStreamerConfig
+  enableABtest: true
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
+# a組 false, b組 true
+- testName: attPrompt
+  enableABtest: true
+  byDeviceID: true
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
+# group A is ordered by achievement
+# group B is ordered by ML scores
+- testName: mlSectionOrder
+  enableABtest: false
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
+
+# group A uses static register labels
+# group B uses dynamic register labels
+- testName: dynamicSectionOrder
+  enableABtest: false
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"

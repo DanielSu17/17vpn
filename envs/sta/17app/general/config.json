@@ -1,5 +1,8 @@
 {
   "enable_api_protobuf": true,
+  "unsupported_overlay_publish_providers": {
+    "providers": [9]
+  },
   "videoBitRateQuality" : {
     "low" : {
         "encodedVideoWidth" : 360,
@@ -21,15 +24,20 @@
     }
   },
   "matomo_event_grpc" : {
-    "ios_apply_version" : "3.128.0",
-    "android_apply_version" : 2584
+    "ios_apply_version" : "",
+    "android_apply_version" : 9999,
+    "web_matomo_version": "v2"
+  },
+  "matomo_event_general" : {
+    "android_apply_version": "2000",
+    "ios_apply_version": "3.136.0"
   },
   "live_atmos_v2" : {
     "ios_apply_version" : "3.115.0",
-    "android_apply_version":2496,
+    "android_apply_version":99999999,
     "snow" : {
       "ios_apply_version" : "3.115.0",
-      "android_apply_version":2496,
+      "android_apply_version":99999999,
       "apply_region" : ["ALL"],
       "trigger_message" : [
           "Xmas",
@@ -70,7 +78,7 @@
       },
     "box" : {
       "ios_apply_version" : "3.115.0",
-      "android_apply_version":2496,
+      "android_apply_version":99999999,
       "apply_region" : ["TW","HK","SG","MY"],
       "trigger_message" : [
          "情人節快樂",
@@ -120,10 +128,86 @@
   "stream_profile_config": {
     "ios_apply_version": "3.120.0",
     "android_apply_version": 2496,
+    "apply_region": ["TW", "US"],
     "min_stream_duration": 60,
     "unstable_network_ratio_for_upgrade": 0.01,
     "unstable_network_ratio_for_downgrade": 0.05,
     "reverse_quality_wait_time": 60,
     "max_reverse_quality_count": 3
+  },
+  "concert_mode_datadog_log" : {
+    "ios_apply_version" : "3.136.0",
+    "android_apply_version" : 2000
+  },
+  "concert_mode_pull_stream_mechanism" : {
+    "ios_apply_version" : "3.136.0",
+    "android_apply_version" : 2000,
+    "buffering_check_period_sec" : 30.0,
+    "lower_down_threshold_for_buffering_sec" : 20.0,
+    "max_buffering_record_count" : 30,
+    "check_frequency_sec": 5,
+    "log_buffering_frequency_sec": 30,
+    "ping_host": "8.8.8.8",
+    "ping_count": 5,
+    "ping_high_latency_threshold_ms": 100
+  },
+  "unity_game": {
+    "ios_apply_version": "3.140.0",
+    "android_apply_version": 2589,
+    "apply_region": ["ALL"],
+    "games": [
+      {
+        "ios_apply_version": "3.140.0",
+        "android_apply_version": 2589,
+        "apply_region": ["ALL"],
+        "gameType": 1,
+        "name": "Jenga",
+        "iconURL": "https://cdn.17app.co/081d85df-9a3f-405f-a483-baab9de0f399.png"
+      }
+    ],
+    "black_list": {
+      "android": {
+        "models": []
+      }
+    }
+  },
+  "groupCallStreamProfile" : {
+    "ladderings" : [
+    	{
+    		"maxPeople" : 3,
+    		"width" : 360,
+    		"height" : 640,
+    		"lowQualityBitRate" : 400,
+    		"highQualityBitRate" : 600,
+    		"defaultBitRate" : 600,
+    		"fps" : 24
+    	},
+    	{
+    		"maxPeople" : 6,
+    		"width" : 240,
+    		"height" : 424,
+    		"lowQualityBitRate" : 300,
+    		"highQualityBitRate" : 400,
+    		"defaultBitRate" : 400,
+    		"fps" : 24
+    	},
+    	{
+    		"maxPeople" : 9,
+    		"width" : 240,
+    		"height" : 424,
+    		"lowQualityBitRate" : 200,
+    		"highQualityBitRate" : 300,
+    		"defaultBitRate" : 300,
+    		"fps" : 24
+    	}
+    ]
+  },
+  "audioStreamProfile" : {
+    "width" : 360,
+    "height" : 640,
+    "lowQualityBitRate" : 300,
+    "highQualityBitRate" : 400,
+    "defaultBitRate" : 400,
+    "fps" : 24
   }
 }

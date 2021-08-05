@@ -1,0 +1,1713 @@
+# # example
+#
+# leaderboard `id` ang `giftTag` can be empty strings if you just want to add an event
+# type 0: normal event, 1: newDJ, 2: midChallenge (cm)
+#
+# events:
+#   - id: "1"
+#     type: 0
+#     order: 1
+#     webUrl: "https://www.google.com"
+#     iconUrl: "https://cdn.wave.com.tw/v1/bot/1572240696479361_6641065527006100_60127559978620363061947399539737_hs.png"
+#     startTime: "2019-12-01 15:04:05 (GMT+0800)"
+#     endTime: "2019-12-31 15:04:05 (GMT+0800)"
+#     entranceDisplayAfterEnd: 120 # second
+#     emphasizeThreshold: 5
+#     blacklist:
+#       - de96b212-a25c-40e7-b570-061302d234e3 # 我又出現了:microphone::heart:
+#       - aaf6d088-672e-4ba0-852a-07174e3fa6b9 # 你喜不喜歡我
+#     whitelist:
+#       - ae0f890b-7a38-4010-8565-87a2bc4b37ad # 村姑工作摸:fish:
+#       - 9c0dbdf1-8496-4255-9597-465782605556 # 霸氣~奇哥
+#     leaderboard:
+#       id: "event:wave-kungfusecret"
+#       giftTag: "event_gift_kungfusecret"
+#       startTime: "2019-12-01 15:04:05 (GMT+0800)"
+#       endTime: "2019-12-31 15:04:05 (GMT+0800)"
+events:
+  - id: "newdj-20210430"
+    type: 1
+    order: 1
+    webUrl: "https://event.wave.com.tw/11647-wave-20210401-newdj/0/5"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1616727912264811_5320305949757654_42550777407722757333947717133453_sa.png"
+    startTime: "2021-03-26 00:00:00 (GMT+0800)"
+    endTime: "2021-04-04 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 5
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210430-newdj"
+      giftTag: "newdj"
+      startTime: "2021-04-01 00:00:00 (GMT+0800)"
+      endTime: "2021-04-30 23:59:59 (GMT+0800)"
+  - id: "newdj-20210405"
+    type: 1
+    order: 1
+    webUrl: "https://event.wave.com.tw/11647-wave-20210401-newdj/0/1"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1616727912264811_5320305949757654_42550777407722757333947717133453_sa.png"
+    startTime: "2021-04-05 00:00:00 (GMT+0800)"
+    endTime: "2021-04-11 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210405-newdj"
+      giftTag: "newdj"
+      startTime: "2021-04-05 00:00:00 (GMT+0800)"
+      endTime: "2021-04-11 23:59:59 (GMT+0800)"
+  - id: "newdj-20210412"
+    type: 1
+    order: 1
+    webUrl: "https://event.wave.com.tw/11647-wave-20210401-newdj/0/2"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1616727912264811_5320305949757654_42550777407722757333947717133453_sa.png"
+    startTime: "2021-04-12 00:00:00 (GMT+0800)"
+    endTime: "2021-04-18 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210412-newdj"
+      giftTag: "newdj"
+      startTime: "2021-04-12 00:00:00 (GMT+0800)"
+      endTime: "2021-04-18 23:59:59 (GMT+0800)"
+  - id: "newdj-20210419"
+    type: 1
+    order: 1
+    webUrl: "https://event.wave.com.tw/11647-wave-20210401-newdj/0/3"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1616727912264811_5320305949757654_42550777407722757333947717133453_sa.png"
+    startTime: "2021-04-19 00:00:00 (GMT+0800)"
+    endTime: "2021-04-25 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210419-newdj"
+      giftTag: "newdj"
+      startTime: "2021-04-19 00:00:00 (GMT+0800)"
+      endTime: "2021-04-25 23:59:59 (GMT+0800)"
+  - id: "newdj-20210426"
+    type: 1
+    order: 1
+    webUrl: "https://event.wave.com.tw/11647-wave-20210401-newdj/0/4"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1616727912264811_5320305949757654_42550777407722757333947717133453_sa.png"
+    startTime: "2021-04-26 00:00:00 (GMT+0800)"
+    endTime: "2021-04-30 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210426-newdj"
+      giftTag: "newdj"
+      startTime: "2021-04-26 00:00:00 (GMT+0800)"
+      endTime: "2021-04-30 23:59:59 (GMT+0800)"
+  - id: "20210430-midchallenge"
+    type: 2
+    order: 1
+    webUrl: "https://event.wave.com.tw/11652-wave-20210401-midchallenge/0/5"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1616729309434012_6771870028960787_28724662487562185045653150474419_cx.png"
+    startTime: "2021-03-26 00:00:00 (GMT+0800)"
+    endTime: "2021-04-04 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 5
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210430-midchallenge"
+      giftTag: "eventgift_midchallenge"
+      startTime: "2021-04-01 00:00:00 (GMT+0800)"
+      endTime: "2021-04-30 23:59:59 (GMT+0800)"
+  - id: "20210405-midchallenge"
+    type: 2
+    order: 1
+    webUrl: "https://event.wave.com.tw/11652-wave-20210401-midchallenge/0/1"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1616729309434012_6771870028960787_28724662487562185045653150474419_cx.png"
+    startTime: "2021-04-05 00:00:00 (GMT+0800)"
+    endTime: "2021-04-11 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 5
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210405-midchallenge"
+      giftTag: "eventgift_midchallenge"
+      startTime: "2021-04-05 00:00:00 (GMT+0800)"
+      endTime: "2021-04-11 23:59:59 (GMT+0800)"
+  - id: "20210412-midchallenge"
+    type: 2
+    order: 1
+    webUrl: "https://event.wave.com.tw/11652-wave-20210401-midchallenge/0/2"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1616729309434012_6771870028960787_28724662487562185045653150474419_cx.png"
+    startTime: "2021-04-12 00:00:00 (GMT+0800)"
+    endTime: "2021-04-18 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 5
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210412-midchallenge"
+      giftTag: "eventgift_midchallenge"
+      startTime: "2021-04-12 00:00:00 (GMT+0800)"
+      endTime: "2021-04-18 23:59:59 (GMT+0800)"
+  - id: "20210419-midchallenge"
+    type: 2
+    order: 1
+    webUrl: "https://event.wave.com.tw/11652-wave-20210401-midchallenge/0/3"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1616729309434012_6771870028960787_28724662487562185045653150474419_cx.png"
+    startTime: "2021-04-19 00:00:00 (GMT+0800)"
+    endTime: "2021-04-25 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 5
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210419-midchallenge"
+      giftTag: "eventgift_midchallenge"
+      startTime: "2021-04-19 00:00:00 (GMT+0800)"
+      endTime: "2021-04-25 23:59:59 (GMT+0800)"
+  - id: "20210426-midchallenge"
+    type: 2
+    order: 1
+    webUrl: "https://event.wave.com.tw/11652-wave-20210401-midchallenge/0/4"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1616729309434012_6771870028960787_28724662487562185045653150474419_cx.png"
+    startTime: "2021-04-26 00:00:00 (GMT+0800)"
+    endTime: "2021-04-30 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 5
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210426-midchallenge"
+      giftTag: "eventgift_midchallenge"
+      startTime: "2021-04-26 00:00:00 (GMT+0800)"
+      endTime: "2021-04-30 23:59:59 (GMT+0800)"
+  - id: "20210112-musicfestival-open"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11152-wave-20210112-musicfestival/0"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1610690698356942_3098866837846907_89727139002484674631425363666983_go.png"
+    startTime: "2021-01-12 00:00:00 (GMT+0800)"
+    endTime: "2021-01-18 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 36
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210112-musicfestival-open"
+      giftTag: "eventgift_musicfestival"
+      startTime: "2021-01-12 00:00:00 (GMT+0800)"
+      endTime: "2021-01-18 23:59:59 (GMT+0800)"
+  - id: "20210112-musicfestival-pre1"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11152-wave-20210112-musicfestival/1/0"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1610357596548597_7049253848507302_65985001547947627004404654771463_fv.png"
+    startTime: "2021-01-20 21:00:00 (GMT+0800)"
+    endTime: "2021-01-20 21:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210112-musicfestival-pre1"
+      giftTag: "eventgift_musicfestival"
+      startTime: "2021-01-20 21:00:00 (GMT+0800)"
+      endTime: "2021-01-20 21:49:59 (GMT+0800)"
+  - id: "20210112-musicfestival-pre2"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11152-wave-20210112-musicfestival/1/1"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1610357596548597_7049253848507302_65985001547947627004404654771463_fv.png"
+    startTime: "2021-01-20 22:00:00 (GMT+0800)"
+    endTime: "2021-01-20 22:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210112-musicfestival-pre2"
+      giftTag: "eventgift_musicfestival"
+      startTime: "2021-01-20 22:00:00 (GMT+0800)"
+      endTime: "2021-01-20 22:49:59 (GMT+0800)"
+  - id: "20210112-musicfestival-pre3"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11152-wave-20210112-musicfestival/1/2"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1610357596548597_7049253848507302_65985001547947627004404654771463_fv.png"
+    startTime: "2021-01-20 23:00:00 (GMT+0800)"
+    endTime: "2021-01-20 23:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210112-musicfestival-pre3"
+      giftTag: "eventgift_musicfestival"
+      startTime: "2021-01-20 23:00:00 (GMT+0800)"
+      endTime: "2021-01-20 23:49:59 (GMT+0800)"
+  - id: "20210112-musicfestival-pre4"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11152-wave-20210112-musicfestival/1/3"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1610357596548597_7049253848507302_65985001547947627004404654771463_fv.png"
+    startTime: "2021-01-21 21:00:00 (GMT+0800)"
+    endTime: "2021-01-21 21:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210112-musicfestival-pre4"
+      giftTag: "eventgift_musicfestival"
+      startTime: "2021-01-21 21:00:00 (GMT+0800)"
+      endTime: "2021-01-21 21:49:59 (GMT+0800)"
+  - id: "20210112-musicfestival-pre5"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11152-wave-20210112-musicfestival/1/4"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1610357596548597_7049253848507302_65985001547947627004404654771463_fv.png"
+    startTime: "2021-01-21 22:00:00 (GMT+0800)"
+    endTime: "2021-01-21 22:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210112-musicfestival-pre5"
+      giftTag: "eventgift_musicfestival"
+      startTime: "2021-01-21 22:00:00 (GMT+0800)"
+      endTime: "2021-01-21 22:49:59 (GMT+0800)"
+  - id: "20210112-musicfestival-pre6"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11152-wave-20210112-musicfestival/1/5"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1610357596548597_7049253848507302_65985001547947627004404654771463_fv.png"
+    startTime: "2021-01-21 23:00:00 (GMT+0800)"
+    endTime: "2021-01-21 23:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210112-musicfestival-pre6"
+      giftTag: "eventgift_musicfestival"
+      startTime: "2021-01-21 23:00:00 (GMT+0800)"
+      endTime: "2021-01-21 23:49:59 (GMT+0800)"
+  - id: "20210112-musicfestival-re1"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11152-wave-20210112-musicfestival/2/1"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1610357596548597_7049253848507302_65985001547947627004404654771463_fv.png"
+    startTime: "2021-01-25 21:00:00 (GMT+0800)"
+    endTime: "2021-01-25 21:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210112-musicfestival-re1"
+      giftTag: "eventgift_musicfestival"
+      startTime: "2021-01-25 21:00:00 (GMT+0800)"
+      endTime: "2021-01-25 21:49:59 (GMT+0800)"
+  - id: "20210112-musicfestival-re2"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11152-wave-20210112-musicfestival/2/2"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1610357596548597_7049253848507302_65985001547947627004404654771463_fv.png"
+    startTime: "2021-01-25 22:00:00 (GMT+0800)"
+    endTime: "2021-01-25 22:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210112-musicfestival-re2"
+      giftTag: "eventgift_musicfestival"
+      startTime: "2021-01-25 22:00:00 (GMT+0800)"
+      endTime: "2021-01-25 22:49:59 (GMT+0800)"
+  - id: "20210112-musicfestival-re3"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11152-wave-20210112-musicfestival/2/3"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1610357596548597_7049253848507302_65985001547947627004404654771463_fv.png"
+    startTime: "2021-01-25 23:00:00 (GMT+0800)"
+    endTime: "2021-01-25 23:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210112-musicfestival-re3"
+      giftTag: "eventgift_musicfestival"
+      startTime: "2021-01-25 23:00:00 (GMT+0800)"
+      endTime: "2021-01-25 23:49:59 (GMT+0800)"
+  - id: "20210112-musicfestival-final"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11152-wave-20210112-musicfestival/3"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1610357596548597_7049253848507302_65985001547947627004404654771463_fv.png"
+    startTime: "2021-01-27 22:00:00 (GMT+0800)"
+    endTime: "2021-01-27 22:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210112-musicfestival-final"
+      giftTag: "eventgift_musicfestival"
+      startTime: "2021-01-27 22:00:00 (GMT+0800)"
+      endTime: "2021-01-27 22:49:59 (GMT+0800)"
+  - id: "20210209-lovesongfeb-open"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11354-Wave-20210209-lyricsong/0"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1612513860794041_6648360601102336_33495374983249447467229167912530_sf.png"
+    startTime: "2021-02-09 00:00:00 (GMT+0800)"
+    endTime: "2021-02-18 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 36
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210209-lovesongfeb-open"
+      giftTag: "eventgift_lovesongfeb"
+      startTime: "2021-02-09 00:00:00 (GMT+0800)"
+      endTime: "2021-02-18 23:59:59 (GMT+0800)"
+  - id: "20210209-lovesongfeb-pre1"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11354-Wave-20210209-lyricsong/1/0"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1612513860794041_6648360601102336_33495374983249447467229167912530_sf.png"
+    startTime: "2021-02-21 21:00:00 (GMT+0800)"
+    endTime: "2021-02-21 21:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210209-lovesongfeb-pre1"
+      giftTag: "eventgift_lovesongfeb"
+      startTime: "2021-02-21 21:00:00 (GMT+0800)"
+      endTime: "2021-02-21 21:49:59 (GMT+0800)"
+  - id: "20210209-lovesongfeb-pre2"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11354-Wave-20210209-lyricsong/1/1"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1612513860794041_6648360601102336_33495374983249447467229167912530_sf.png"
+    startTime: "2021-02-21 22:00:00 (GMT+0800)"
+    endTime: "2021-02-21 22:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210209-lovesongfeb-pre2"
+      giftTag: "eventgift_lovesongfeb"
+      startTime: "2021-02-21 22:00:00 (GMT+0800)"
+      endTime: "2021-02-21 22:49:59 (GMT+0800)"
+  - id: "20210209-lovesongfeb-pre3"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11354-Wave-20210209-lyricsong/1/2"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1612513860794041_6648360601102336_33495374983249447467229167912530_sf.png"
+    startTime: "2021-02-21 23:00:00 (GMT+0800)"
+    endTime: "2021-02-21 23:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210209-lovesongfeb-pre3"
+      giftTag: "eventgift_lovesongfeb"
+      startTime: "2021-02-21 23:00:00 (GMT+0800)"
+      endTime: "2021-02-21 23:49:59 (GMT+0800)"
+  - id: "20210209-lovesongfeb-pre4"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11354-Wave-20210209-lyricsong/1/3"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1612513860794041_6648360601102336_33495374983249447467229167912530_sf.png"
+    startTime: "2021-02-22 21:00:00 (GMT+0800)"
+    endTime: "2021-02-22 21:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210209-lovesongfeb-pre4"
+      giftTag: "eventgift_lovesongfeb"
+      startTime: "2021-02-22 21:00:00 (GMT+0800)"
+      endTime: "2021-02-22 21:49:59 (GMT+0800)"
+  - id: "20210209-lovesongfeb-pre5"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11354-Wave-20210209-lyricsong/1/4"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1612513860794041_6648360601102336_33495374983249447467229167912530_sf.png"
+    startTime: "2021-02-22 22:00:00 (GMT+0800)"
+    endTime: "2021-02-22 22:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210209-lovesongfeb-pre5"
+      giftTag: "eventgift_lovesongfeb"
+      startTime: "2021-02-22 22:00:00 (GMT+0800)"
+      endTime: "2021-02-22 22:49:59 (GMT+0800)"
+  - id: "20210209-lovesongfeb-pre6"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11354-Wave-20210209-lyricsong/1/5"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1612513860794041_6648360601102336_33495374983249447467229167912530_sf.png"
+    startTime: "2021-02-22 23:00:00 (GMT+0800)"
+    endTime: "2021-02-22 23:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210209-lovesongfeb-pre6"
+      giftTag: "eventgift_lovesongfeb"
+      startTime: "2021-02-22 23:00:00 (GMT+0800)"
+      endTime: "2021-02-22 23:49:59 (GMT+0800)"
+  - id: "20210209-lovesongfeb-re1"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11354-Wave-20210209-lyricsong/2/0"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1612513860794041_6648360601102336_33495374983249447467229167912530_sf.png"
+    startTime: "2021-02-24 21:00:00 (GMT+0800)"
+    endTime: "2021-02-24 21:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210209-lovesongfeb-re1"
+      giftTag: "eventgift_lovesongfeb"
+      startTime: "2021-02-24 21:00:00 (GMT+0800)"
+      endTime: "2021-02-24 21:49:59 (GMT+0800)"
+  - id: "20210209-lovesongfeb-re2"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11354-Wave-20210209-lyricsong/2/1"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1612513860794041_6648360601102336_33495374983249447467229167912530_sf.png"
+    startTime: "2021-02-24 22:00:00 (GMT+0800)"
+    endTime: "2021-02-24 22:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210209-lovesongfeb-re2"
+      giftTag: "eventgift_lovesongfeb"
+      startTime: "2021-02-24 22:00:00 (GMT+0800)"
+      endTime: "2021-02-24 22:49:59 (GMT+0800)"
+  - id: "20210209-lovesongfeb-re3"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11354-Wave-20210209-lyricsong/2/2"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1612513860794041_6648360601102336_33495374983249447467229167912530_sf.png"
+    startTime: "2021-02-24 23:00:00 (GMT+0800)"
+    endTime: "2021-02-24 23:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210209-lovesongfeb-re3"
+      giftTag: "eventgift_lovesongfeb"
+      startTime: "2021-02-24 23:00:00 (GMT+0800)"
+      endTime: "2021-02-24 23:49:59 (GMT+0800)"
+  - id: "20210209-lovesongfeb-final"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11354-Wave-20210209-lyricsong/3"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1612513860794041_6648360601102336_33495374983249447467229167912530_sf.png"
+    startTime: "2021-02-25 22:00:00 (GMT+0800)"
+    endTime: "2021-02-25 22:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210209-lovesongfeb-final"
+      giftTag: "eventgift_lovesongfeb"
+      startTime: "2021-02-25 22:00:00 (GMT+0800)"
+      endTime: "2021-02-25 22:49:59 (GMT+0800)"
+  - id: "20210213-wbshow_white"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11385-wave-20200212-wbshow/0/1"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1612861080799980_7637479194417981_05052053323053916333125223288337_cq.png"
+    startTime: "2021-02-13 21:00:00 (GMT+0800)"
+    endTime: "2021-02-14 00:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 20
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方 (pro)
+      - 1ae56b7e-5fe6-4c4f-ad15-160eb29077ae # 葵妮妮
+      - f4232ead-07b5-47c2-8f57-e97ed23f89ee # 莉莉安
+      - b5ec2f6b-cfd0-4305-bdc8-6f7f171a1672 # 08isbear
+      - 1b817070-536c-4eaf-81cf-d732bddcfa4b # miu666
+      - 5150cc3c-baa5-48a3-86b4-f3494b9a414e # BANJI
+      - 9e5a777e-39a5-426e-bd21-54a7780cf080 # 糾子
+      - 1d64b4da-33af-4ccb-b637-e2fef18683f0 # 是萱
+      - 35a6e8cb-496f-429b-bb6f-f2a5db83d65f # 巴特
+      - d14d0d92-904d-4c2d-9739-b1fdd3932460 # 傻真
+      - 2a11f635-9d00-4c2f-aa24-9d8699d27121 # 口罩俠
+    leaderboard:
+      id: "event:20210213-wbshow_white"
+      giftTag: "eventgift_wbshow_white"
+      startTime: "2021-02-13 21:00:00 (GMT+0800)"
+      endTime: "2021-02-14 00:59:59 (GMT+0800)"
+  - id: "20210213-wbshow_blue"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11385-wave-20200212-wbshow/0/1"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1612861080799980_7637479194417981_05052053323053916333125223288337_cq.png"
+    startTime: "2020-02-13 21:00:00 (GMT+0800)"
+    endTime: "2020-02-14 00:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 20
+    whitelist:
+      - 283d2e5b-6ac7-4bfc-b582-756955a7cc53 # homix
+      - 8baba137-1ae2-4387-b00a-0ca7d5db83e8 # 雲飛
+      - 4e6f7c43-0add-4820-8936-6caddbb4fa74 # 牛羊
+      - 96949ac0-62ca-469d-b7cf-a40206952060 # 的的
+      - cb46a35f-0ae6-487c-aad3-ea3ff5b8c838 # 晴天
+      - c7d83f74-63c9-4531-8231-ca00263d3c22 # 崔小迪
+      - 9b332376-b82a-4138-babf-f07e2ed41ee6 # 女王
+      - 867070bc-62c0-42c7-b841-49063fdbcf7d # 黑月亮
+      - 94a332aa-bcaa-4c7f-a867-4d802e0da5fe # 小柏
+      - 83d428ea-7bf0-476f-b405-194f40eb3bae # 拉
+    leaderboard:
+      id: "event:20210213-wbshow_blue"
+      giftTag: "eventgift_wbshow_blue"
+      startTime: "2021-02-13 21:00:00 (GMT+0800)"
+      endTime: "2021-02-14 00:59:59 (GMT+0800)"
+  - id: "20210308-talkshow-pre1-yes"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11439-wave-20210308-debate/0/1"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1614850496063037_3632092504654789_51456412106611872410360407382556_xp.png"
+    startTime: "2020-03-08 21:00:00 (GMT+0800)"
+    endTime: "2020-03-08 21:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 0
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方 (pro)
+      - d526595e-fbb2-446d-bbfd-b22e7f6f473c # 迪麗
+      - e1addcc3-641e-4dd8-83a7-e7f508298c36 # FiFi
+      - 9e5a777e-39a5-426e-bd21-54a7780cf080 # 糾子
+    leaderboard:
+      id: "event:20210308-talkshow-pre1-yes"
+      giftTag: "eventgift_talkshow_yes"
+      startTime: "2021-03-08 21:00:00 (GMT+0800)"
+      endTime: "2021-03-08 21:49:59 (GMT+0800)"
+  - id: "20210308-talkshow-pre1-no"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11439-wave-20210308-debate/0/1"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1614850496063037_3632092504654789_51456412106611872410360407382556_xp.png"
+    startTime: "2021-03-08 21:00:00 (GMT+0800)"
+    endTime: "2021-03-08 21:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 0
+    whitelist:
+      - 35a6e8cb-496f-429b-bb6f-f2a5db83d65f # 巴特
+      - 4038e36a-e23e-4069-a37b-c1b7778e3dc6 # 安東
+      - 4dcffe21-c7af-4f38-a66f-b38618e2c7c6 # 鮭魚
+    leaderboard:
+      id: "event:20210308-talkshow-pre1-no"
+      giftTag: "eventgift_talkshow_no"
+      startTime: "2021-03-08 21:00:00 (GMT+0800)"
+      endTime: "2021-03-08 21:49:59 (GMT+0800)"
+  - id: "20210308-talkshow-pre2-yes"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11439-wave-20210308-debate/0/2"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1614850496063037_3632092504654789_51456412106611872410360407382556_xp.png"
+    startTime: "2020-03-08 22:00:00 (GMT+0800)"
+    endTime: "2020-03-08 22:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 0
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方 (pro)
+      - 94a332aa-bcaa-4c7f-a867-4d802e0da5fe # 百無禁忌
+      - aecd53d3-c8e4-42f7-b5ab-3c4079703439 # Mr. Shark
+      - 7b2f1a52-a665-4dd0-b4cc-a551f29e7ad7 # MCSTTR
+    leaderboard:
+      id: "event:20210308-talkshow-pre2-yes"
+      giftTag: "eventgift_talkshow_yes"
+      startTime: "2021-03-08 22:00:00 (GMT+0800)"
+      endTime: "2021-03-08 22:49:59 (GMT+0800)"
+  - id: "20210308-talkshow-pre2-no"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11439-wave-20210308-debate/0/2"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1614850496063037_3632092504654789_51456412106611872410360407382556_xp.png"
+    startTime: "2021-03-08 22:00:00 (GMT+0800)"
+    endTime: "2021-03-08 22:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 0
+    whitelist:
+      - 1ae56b7e-5fe6-4c4f-ad15-160eb29077ae # 葵妮妮
+      - 1c65bebe-5ce8-46c9-8027-8574aa48fd48 # 阿潮
+      - 3253f053-50ff-4845-8e23-dde29ee878b8 # 小姐姐
+    leaderboard:
+      id: "event:20210308-talkshow-pre2-no"
+      giftTag: "eventgift_talkshow_no"
+      startTime: "2021-03-08 22:00:00 (GMT+0800)"
+      endTime: "2021-03-08 22:49:59 (GMT+0800)"
+  - id: "20210310-talkshow-pre3-yes"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11439-wave-20210308-debate/0/3"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1614850496063037_3632092504654789_51456412106611872410360407382556_xp.png"
+    startTime: "2020-03-10 21:00:00 (GMT+0800)"
+    endTime: "2020-03-10 21:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 0
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方 (pro)
+      - 96949ac0-62ca-469d-b7cf-a40206952060 # 德德
+      - 2a11f635-9d00-4c2f-aa24-9d8699d27121 # 口罩俠
+      - c7d83f74-63c9-4531-8231-ca00263d3c22 # 崔小迪
+    leaderboard:
+      id: "event:20210310-talkshow-pre3-yes"
+      giftTag: "eventgift_talkshow_yes"
+      startTime: "2021-03-10 21:00:00 (GMT+0800)"
+      endTime: "2021-03-10 21:49:59 (GMT+0800)"
+  - id: "20210310-talkshow-pre3-no"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11439-wave-20210308-debate/0/3"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1614850496063037_3632092504654789_51456412106611872410360407382556_xp.png"
+    startTime: "2021-03-10 21:00:00 (GMT+0800)"
+    endTime: "2021-03-10 21:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 0
+    whitelist:
+      - f4232ead-07b5-47c2-8f57-e97ed23f89ee # 莉莉安
+      - d8d22f87-1e13-4637-8cb7-7bc1a65959db # 子箋.
+      - 8176f755-5091-4ab4-9d10-388bdf8167d8 # 澄耶
+    leaderboard:
+      id: "event:20210310-talkshow-pre3-no"
+      giftTag: "eventgift_talkshow_no"
+      startTime: "2021-03-10 21:00:00 (GMT+0800)"
+      endTime: "2021-03-10 21:49:59 (GMT+0800)"
+  - id: "20210310-talkshow-pre4-yes"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11439-wave-20210308-debate/0/4"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1614850496063037_3632092504654789_51456412106611872410360407382556_xp.png"
+    startTime: "2020-03-10 22:00:00 (GMT+0800)"
+    endTime: "2020-03-10 22:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 0
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方 (pro)
+      - e38c3dbc-0e4e-4ffc-90dd-57c067d5561c # 羊魚
+      - 5a507819-58df-4dc9-b302-f26c441aaf8e # Silvia
+      - e12ed114-a5a7-4c9f-a06f-31f6cf27b850 # 安潔麗娜
+    leaderboard:
+      id: "event:20210310-talkshow-pre4-yes"
+      giftTag: "eventgift_talkshow_yes"
+      startTime: "2021-03-10 22:00:00 (GMT+0800)"
+      endTime: "2021-03-10 22:49:59 (GMT+0800)"
+  - id: "20210310-talkshow-pre4-no"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11439-wave-20210308-debate/0/4"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1614850496063037_3632092504654789_51456412106611872410360407382556_xp.png"
+    startTime: "2021-03-10 22:00:00 (GMT+0800)"
+    endTime: "2021-03-10 22:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 0
+    whitelist:
+      - 83d428ea-7bf0-476f-b405-194f40eb3bae # Lah
+      - 283d2e5b-6ac7-4bfc-b582-756955a7cc53 # Homix
+      - ed6a3bda-9ed4-4c3e-8faf-e8696d662d28 # AllenTalk
+    leaderboard:
+      id: "event:20210310-talkshow-pre4-no"
+      giftTag: "eventgift_talkshow_no"
+      startTime: "2021-03-10 22:00:00 (GMT+0800)"
+      endTime: "2021-03-10 22:49:59 (GMT+0800)"
+  - id: "20210315-talkshow-re1-yes"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11439-wave-20210308-debate/1/1"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1614850496063037_3632092504654789_51456412106611872410360407382556_xp.png"
+    startTime: "2020-03-15 21:00:00 (GMT+0800)"
+    endTime: "2020-03-15 21:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 0
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方 (pro)
+    leaderboard:
+      id: "event:20210315-talkshow-re1-yes"
+      giftTag: "eventgift_talkshow_yes"
+      startTime: "2021-03-15 21:00:00 (GMT+0800)"
+      endTime: "2021-03-15 21:49:59 (GMT+0800)"
+  - id: "20210315-talkshow-re1-no"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11439-wave-20210308-debate/1/1"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1614850496063037_3632092504654789_51456412106611872410360407382556_xp.png"
+    startTime: "2021-03-15 21:00:00 (GMT+0800)"
+    endTime: "2021-03-15 21:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 0
+    leaderboard:
+      id: "event:20210315-talkshow-re1-no"
+      giftTag: "eventgift_talkshow_no"
+      startTime: "2021-03-15 21:00:00 (GMT+0800)"
+      endTime: "2021-03-15 21:49:59 (GMT+0800)"
+  - id: "20210315-talkshow-re2-yes"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11439-wave-20210308-debate/1/2"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1614850496063037_3632092504654789_51456412106611872410360407382556_xp.png"
+    startTime: "2020-03-15 22:00:00 (GMT+0800)"
+    endTime: "2020-03-15 22:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 0
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方 (pro)
+    leaderboard:
+      id: "event:20210315-talkshow-re2-yes"
+      giftTag: "eventgift_talkshow_yes"
+      startTime: "2021-03-15 22:00:00 (GMT+0800)"
+      endTime: "2021-03-15 22:49:59 (GMT+0800)"
+  - id: "20210315-talkshow-re2-no"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11439-wave-20210308-debate/1/2"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1614850496063037_3632092504654789_51456412106611872410360407382556_xp.png"
+    startTime: "2021-03-15 22:00:00 (GMT+0800)"
+    endTime: "2021-03-15 22:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 0
+    leaderboard:
+      id: "event:20210315-talkshow-re2-yes"
+      giftTag: "eventgift_talkshow_yes"
+      startTime: "2021-03-15 22:00:00 (GMT+0800)"
+      endTime: "2021-03-15 22:49:59 (GMT+0800)"
+  - id: "20210317-talkshow-final-yes"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11439-wave-20210308-debate/2"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1614850496063037_3632092504654789_51456412106611872410360407382556_xp.png"
+    startTime: "2020-03-17 22:00:00 (GMT+0800)"
+    endTime: "2020-03-17 22:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 0
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方 (pro)
+    leaderboard:
+      id: "event:20210317-talkshow-fianl-yes"
+      giftTag: "eventgift_talkshow_yes"
+      startTime: "2021-03-17 22:00:00 (GMT+0800)"
+      endTime: "2021-03-17 22:49:59 (GMT+0800)"
+  - id: "20210317-talkshow-final-no"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11439-wave-20210308-debate/2"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1614850496063037_3632092504654789_51456412106611872410360407382556_xp.png"
+    startTime: "2021-03-17 22:00:00 (GMT+0800)"
+    endTime: "2021-03-17 22:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 0
+    leaderboard:
+      id: "event:20210317-talkshow-fianl-no"
+      giftTag: "eventgift_talkshow_no"
+      startTime: "2021-03-17 22:00:00 (GMT+0800)"
+      endTime: "2021-03-17 22:49:59 (GMT+0800)"
+  - id: "20210331-midchallenge"
+    type: 2
+    order: 1
+    webUrl: "https://event.wave.com.tw/11473-wave-20210301-midchallenge/0/5"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1609383951311080_7640490056968117_24497538554523650178761423820184_dg.png"
+    startTime: "2021-03-29 00:00:00 (GMT+0800)"
+    endTime: "2021-03-31 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 5
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210331-midchallenge"
+      giftTag: "eventgift_midchallenge"
+      startTime: "2021-03-01 00:00:00 (GMT+0800)"
+      endTime: "2021-03-31 23:59:59 (GMT+0800)"
+  - id: "20210301-midchallenge"
+    type: 2
+    order: 1
+    webUrl: "https://event.wave.com.tw/11473-wave-20210301-midchallenge/0/1"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1609383951311080_7640490056968117_24497538554523650178761423820184_dg.png"
+    startTime: "2021-03-01 00:00:00 (GMT+0800)"
+    endTime: "2021-03-07 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 5
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210301-midchallenge"
+      giftTag: "eventgift_midchallenge"
+      startTime: "2021-03-01 00:00:00 (GMT+0800)"
+      endTime: "2021-03-07 23:59:59 (GMT+0800)"
+  - id: "20210308-midchallenge"
+    type: 2
+    order: 1
+    webUrl: "https://event.wave.com.tw/11473-wave-20210301-midchallenge/0/2"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1609383951311080_7640490056968117_24497538554523650178761423820184_dg.png"
+    startTime: "2021-03-08 00:00:00 (GMT+0800)"
+    endTime: "2021-03-14 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 5
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210308-midchallenge"
+      giftTag: "eventgift_midchallenge"
+      startTime: "2021-03-08 00:00:00 (GMT+0800)"
+      endTime: "2021-03-14 23:59:59 (GMT+0800)"
+  - id: "20210315-midchallenge"
+    type: 2
+    order: 1
+    webUrl: "https://event.wave.com.tw/11473-wave-20210301-midchallenge/0/3"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1609383951311080_7640490056968117_24497538554523650178761423820184_dg.png"
+    startTime: "2021-03-15 00:00:00 (GMT+0800)"
+    endTime: "2021-03-21 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 5
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210315-midchallenge"
+      giftTag: "eventgift_midchallenge"
+      startTime: "2021-03-15 00:00:00 (GMT+0800)"
+      endTime: "2021-03-21 23:59:59 (GMT+0800)"
+  - id: "20210322-midchallenge"
+    type: 2
+    order: 1
+    webUrl: "https://event.wave.com.tw/11473-wave-20210301-midchallenge/0/4"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1609383951311080_7640490056968117_24497538554523650178761423820184_dg.png"
+    startTime: "2021-03-22 00:00:00 (GMT+0800)"
+    endTime: "2021-03-28 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 5
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210322-midchallenge"
+      giftTag: "eventgift_midchallenge"
+      startTime: "2021-03-22 00:00:00 (GMT+0800)"
+      endTime: "2021-03-28 23:59:59 (GMT+0800)"
+  - id: "newdj-20210331"
+    type: 1
+    order: 1
+    webUrl: "https://event.wave.com.tw/11485-wave-20210301-newdj/0/5"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1614325675228926_9889290917621376_08959256897034040499012488501002_me.png"
+    startTime: "2021-03-29 00:00:00 (GMT+0800)"
+    endTime: "2021-03-31 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 5
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210331-newdj"
+      giftTag: "newdj"
+      startTime: "2021-03-01 00:00:00 (GMT+0800)"
+      endTime: "2021-03-31 23:59:59 (GMT+0800)"
+  - id: "newdj-20210301"
+    type: 1
+    order: 1
+    webUrl: "https://event.wave.com.tw/11485-wave-20210301-newdj/0/1"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1614325675228926_9889290917621376_08959256897034040499012488501002_me.png"
+    startTime: "2021-03-01 00:00:00 (GMT+0800)"
+    endTime: "2021-03-07 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210301-newdj"
+      giftTag: "newdj"
+      startTime: "2021-03-01 00:00:00 (GMT+0800)"
+      endTime: "2021-03-07 23:59:59 (GMT+0800)"
+  - id: "newdj-20210308"
+    type: 1
+    order: 1
+    webUrl: "https://event.wave.com.tw/11485-wave-20210301-newdj/0/2"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1614325675228926_9889290917621376_08959256897034040499012488501002_me.png"
+    startTime: "2021-03-08 00:00:00 (GMT+0800)"
+    endTime: "2021-03-14 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210308-newdj"
+      giftTag: "newdj"
+      startTime: "2021-03-08 00:00:00 (GMT+0800)"
+      endTime: "2021-03-14 23:59:59 (GMT+0800)"
+  - id: "newdj-20210315"
+    type: 1
+    order: 1
+    webUrl: "https://event.wave.com.tw/11485-wave-20210301-newdj/0/3"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1614325675228926_9889290917621376_08959256897034040499012488501002_me.png"
+    startTime: "2021-03-15 00:00:00 (GMT+0800)"
+    endTime: "2021-03-21 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210315-newdj"
+      giftTag: "newdj"
+      startTime: "2021-03-15 00:00:00 (GMT+0800)"
+      endTime: "2021-03-21 23:59:59 (GMT+0800)"
+  - id: "newdj-20210322"
+    type: 1
+    order: 1
+    webUrl: "https://event.wave.com.tw/11485-wave-20210301-newdj/0/4"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1614325675228926_9889290917621376_08959256897034040499012488501002_me.png"
+    startTime: "2021-03-22 00:00:00 (GMT+0800)"
+    endTime: "2021-03-28 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 3
+    blacklist: []
+    whitelist: []
+    leaderboard:
+      id: "event:20210322-newdj"
+      giftTag: "newdj"
+      startTime: "2021-03-22 00:00:00 (GMT+0800)"
+      endTime: "2021-03-28 23:59:59 (GMT+0800)"
+  - id: "20210309-mask2021-open"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11523-wave-20210309-mask/0"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1615191137447185_9807163224366742_30867576966786761235549163059085_bp.png"
+    startTime: "2021-02-09 00:00:00 (GMT+0800)"
+    endTime: "2021-02-19 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 36
+    blacklist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    leaderboard:
+      id: "event:20210309-mask2021-open"
+      giftTag: "eventgift_mask2021"
+      startTime: "2021-02-09 00:00:00 (GMT+0800)"
+      endTime: "2021-02-19 23:59:59 (GMT+0800)"
+  - id: "20210309-mask2021-byebu"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11523-wave-20210309-mask/3/0"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1615191137447185_9807163224366742_30867576966786761235549163059085_bp.png"
+    startTime: "2021-03-20 00:00:00 (GMT+0800)"
+    endTime: "2021-03-28 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    blacklist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    leaderboard:
+      id: "event:20210309-mask2021-byebu"
+      giftTag: "eventgift_mask2021"
+      startTime: "2021-03-09 00:00:00 (GMT+0800)"
+      endTime: "2021-03-28 23:59:59 (GMT+0800)"
+  - id: "20210309-mask2021-pre1"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11523-wave-20210309-mask/1/0"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1615191137447185_9807163224366742_30867576966786761235549163059085_bp.png"
+    startTime: "2021-03-24 21:00:00 (GMT+0800)"
+    endTime: "2021-03-24 21:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    leaderboard:
+      id: "event:20210309-mask2021-pre1"
+      giftTag: "eventgift_mask2021"
+      startTime: "2021-03-24 21:00:00 (GMT+0800)"
+      endTime: "2021-03-24 21:49:59 (GMT+0800)"
+  - id: "20210309-mask2021-pre2"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11523-wave-20210309-mask/1/1"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1615191137447185_9807163224366742_30867576966786761235549163059085_bp.png"
+    startTime: "2021-03-24 22:00:00 (GMT+0800)"
+    endTime: "2021-03-24 22:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    leaderboard:
+      id: "event:20210309-mask2021-pre2"
+      giftTag: "eventgift_mask2021"
+      startTime: "2021-03-24 22:00:00 (GMT+0800)"
+      endTime: "2021-03-24 22:49:59 (GMT+0800)"
+  - id: "20210309-mask2021-pre3"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11523-wave-20210309-mask/1/2"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1615191137447185_9807163224366742_30867576966786761235549163059085_bp.png"
+    startTime: "2021-03-24 23:00:00 (GMT+0800)"
+    endTime: "2021-03-24 23:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    leaderboard:
+      id: "event:20210309-mask2021-pre3"
+      giftTag: "eventgift_mask2021"
+      startTime: "2021-03-24 23:00:00 (GMT+0800)"
+      endTime: "2021-03-24 23:49:59 (GMT+0800)"
+  - id: "20210309-mask2021-pre4"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11523-wave-20210309-mask/1/3"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1615191137447185_9807163224366742_30867576966786761235549163059085_bp.png"
+    startTime: "2021-03-25 21:00:00 (GMT+0800)"
+    endTime: "2021-03-25 21:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    leaderboard:
+      id: "event:20210309-mask2021-pre4"
+      giftTag: "eventgift_mask2021"
+      startTime: "2021-03-25 21:00:00 (GMT+0800)"
+      endTime: "2021-03-25 21:49:59 (GMT+0800)"
+  - id: "20210309-mask2021-pre5"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11523-wave-20210309-mask/1/4"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1615191137447185_9807163224366742_30867576966786761235549163059085_bp.png"
+    startTime: "2021-03-25 22:00:00 (GMT+0800)"
+    endTime: "2021-03-25 22:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    leaderboard:
+      id: "event:20210309-mask2021-pre5"
+      giftTag: "eventgift_mask2021"
+      startTime: "2021-03-25 22:00:00 (GMT+0800)"
+      endTime: "2021-03-25 22:49:59 (GMT+0800)"
+  - id: "20210309-mask2021-pre6"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11523-wave-20210309-mask/1/5"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1615191137447185_9807163224366742_30867576966786761235549163059085_bp.png"
+    startTime: "2021-03-25 23:00:00 (GMT+0800)"
+    endTime: "2021-03-25 23:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    leaderboard:
+      id: "event:20210309-mask2021-pre6"
+      giftTag: "eventgift_mask2021"
+      startTime: "2021-03-25 23:00:00 (GMT+0800)"
+      endTime: "2021-03-25 23:49:59 (GMT+0800)"
+  - id: "20210309-mask2021-re1"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11523-wave-20210309-mask/2/0"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1615191137447185_9807163224366742_30867576966786761235549163059085_bp.png"
+    startTime: "2021-03-28 21:00:00 (GMT+0800)"
+    endTime: "2021-03-28 21:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    leaderboard:
+      id: "event:20210309-mask2021-re1"
+      giftTag: "eventgift_mask2021"
+      startTime: "2021-03-28 21:00:00 (GMT+0800)"
+      endTime: "2021-03-28 21:49:59 (GMT+0800)"
+  - id: "20210309-mask2021-re2"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11523-wave-20210309-mask/2/1"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1615191137447185_9807163224366742_30867576966786761235549163059085_bp.png"
+    startTime: "2021-03-28 22:00:00 (GMT+0800)"
+    endTime: "2021-03-28 22:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    leaderboard:
+      id: "event:20210309-mask2021-re2"
+      giftTag: "eventgift_mask2021"
+      startTime: "2021-03-28 22:00:00 (GMT+0800)"
+      endTime: "2021-03-28 22:49:59 (GMT+0800)"
+  - id: "20210309-mask2021-re3"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11523-wave-20210309-mask/2/2"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1615191137447185_9807163224366742_30867576966786761235549163059085_bp.png"
+    startTime: "2021-03-28 23:00:00 (GMT+0800)"
+    endTime: "2021-03-28 23:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    leaderboard:
+      id: "event:20210309-mask2021-re3"
+      giftTag: "eventgift_mask2021"
+      startTime: "2021-03-28 23:00:00 (GMT+0800)"
+      endTime: "2021-03-28 23:49:59 (GMT+0800)"
+  - id: "20210309-mask2021-byebugame"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11523-wave-20210309-mask/3/1"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1615191137447185_9807163224366742_30867576966786761235549163059085_bp.png"
+    startTime: "2021-03-29 22:00:00 (GMT+0800)"
+    endTime: "2021-03-29 22:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    leaderboard:
+      id: "event:20210309-mask2021-byebugame"
+      giftTag: "eventgift_mask2021"
+      startTime: "2021-03-29 22:00:00 (GMT+0800)"
+      endTime: "2021-03-29 22:49:59 (GMT+0800)"
+  - id: "20210309-mask2021-final"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11523-wave-20210309-mask/4"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1615191137447185_9807163224366742_30867576966786761235549163059085_bp.png"
+    startTime: "2021-03-31 22:00:00 (GMT+0800)"
+    endTime: "2021-03-31 22:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    leaderboard:
+      id: "event:20210309-mask2021-final"
+      giftTag: "eventgift_mask2021"
+      startTime: "2021-03-31 22:00:00 (GMT+0800)"
+      endTime: "2021-03-31 22:49:59 (GMT+0800)"
+  - id: "20210322-spy-step1"
+    type: 0
+    order: 1
+    webUrl: "http://event.wave.com.tw/11576-wave-20210322-spy"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1616039228223153_5926614079955537_49871744511381837792765859313940_ag.png"
+    startTime: "2021-03-18 00:00:00 (GMT+0800)"
+    endTime: "2021-03-23 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 3
+    blacklist: 
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    whitelist: []
+    leaderboard:
+      id: "event:20210322-spy-step1"
+      giftTag: "eventgift_spy_2021"
+      startTime: "2021-03-22 00:00:00 (GMT+0800)"
+      endTime: "2021-03-23 23:59:59 (GMT+0800)"
+  - id: "20210322-spy-all"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11576-wave-20210322-spy/1"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1616039228223153_5926614079955537_49871744511381837792765859313940_ag.png"
+    startTime: "2021-03-24 00:00:00 (GMT+0800)"
+    endTime: "2021-03-28 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 15
+    blacklist: 
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    whitelist: []
+    leaderboard:
+      id: "event:20210322-spy-all"
+      giftTag: "eventgift_spy_2021"
+      startTime: "2021-03-22 00:00:00 (GMT+0800)"
+      endTime: "2021-03-28 23:59:59 (GMT+0800)"
+  - id: "20210329-game3-oneday"
+    type: 0
+    order: 1
+    webUrl: "http://event.wave.com.tw/11630-wave-20210329-videogame"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1616140537439216_6781181296057535_42356837564051383256273607881196_tf.png"
+    startTime: "2021-03-19 00:00:00 (GMT+0800)"
+    endTime: "2021-04-02 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 3
+    blacklist: 
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    whitelist: []
+    leaderboard:
+      id: "event:20210329-game3-oneday"
+      giftTag: "eventgift_game3"
+      startTime: "2021-04-02 00:00:00 (GMT+0800)"
+      endTime: "2021-04-02 23:59:59 (GMT+0800)"
+  - id: "20210329-game3-all"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11630-wave-20210329-videogame/1"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1616140537439216_6781181296057535_42356837564051383256273607881196_tf.png"
+    startTime: "2021-04-03 00:00:00 (GMT+0800)"
+    endTime: "2021-04-04 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 15
+    blacklist: 
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    whitelist: []
+    leaderboard:
+      id: "event:20210329-game3-all"
+      giftTag: "eventgift_game3"
+      startTime: "2021-03-29 00:00:00 (GMT+0800)"
+      endTime: "2021-04-04 23:59:59 (GMT+0800)"
+  - id: "20210325-test-all-1"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11666-wave-20210325-test/0"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1616661398105701_2638639282372893_83726003627771108095634252387100_ix.png"
+    startTime: "2021-03-25 00:00:00 (GMT+0800)"
+    endTime: "2021-03-31 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 15
+    blacklist: 
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    whitelist: []
+    leaderboard:
+      id: "event:20210325-test-all"
+      giftTag: "eventgift_test1-1"
+      startTime: "2021-03-25 00:00:00 (GMT+0800)"
+      endTime: "2021-03-31 23:59:59 (GMT+0800)"
+  - id: "20210325-test-all-2"
+    type: 0
+    order: 1
+    webUrl: "http://event.wave.com.tw/undefined-wave-20210325-test"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1616661398105701_2638639282372893_83726003627771108095634252387100_ix.png"
+    startTime: "2020-03-25 00:00:00 (GMT+0800)"
+    endTime: "2020-03-31 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 15
+    blacklist: 
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    whitelist: []
+    leaderboard:
+      id: "event:20210325-test-all"
+      giftTag: "eventgift_test1-2"
+      startTime: "2021-03-25 00:00:00 (GMT+0800)"
+      endTime: "2021-03-31 23:59:59 (GMT+0800)"
+  - id: "20210325-test-all-3"
+    type: 0
+    order: 1
+    webUrl: "http://event.wave.com.tw/undefined-wave-20210325-test"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1616661398105701_2638639282372893_83726003627771108095634252387100_ix.png"
+    startTime: "2020-03-25 00:00:00 (GMT+0800)"
+    endTime: "2020-03-31 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 15
+    blacklist: 
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    whitelist: []
+    leaderboard:
+      id: "event:20210325-test-all"
+      giftTag: "eventgift_test2-1"
+      startTime: "2021-03-25 00:00:00 (GMT+0800)"
+      endTime: "2021-03-31 23:59:59 (GMT+0800)"
+  - id: "20210325-test-all-4"
+    type: 0
+    order: 1
+    webUrl: "http://event.wave.com.tw/undefined-wave-20210325-test"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1616661398105701_2638639282372893_83726003627771108095634252387100_ix.png"
+    startTime: "2020-03-25 00:00:00 (GMT+0800)"
+    endTime: "2020-03-31 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 15
+    blacklist: 
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    whitelist: []
+    leaderboard:
+      id: "event:20210325-test-all"
+      giftTag: "eventgift_test2-2"
+      startTime: "2021-03-25 00:00:00 (GMT+0800)"
+      endTime: "2021-03-31 23:59:59 (GMT+0800)"
+  - id: "20210325-test-special1"
+    type: 0
+    order: 1
+    webUrl: "http://event.wave.com.tw/undefined-wave-20210325-test"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1616661398105701_2638639282372893_83726003627771108095634252387100_ix.png"
+    startTime: "2020-03-25 00:00:00 (GMT+0800)"
+    endTime: "2020-03-31 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 15
+    blacklist: 
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    whitelist: []
+    leaderboard:
+      id: "event:20210325-test-special"
+      giftTag: "eventgift_test1-1"
+      startTime: "2021-03-25 00:00:00 (GMT+0800)"
+      endTime: "2021-03-31 23:59:59 (GMT+0800)"
+  - id: "20210325-test-special2"
+    type: 0
+    order: 1
+    webUrl: "http://event.wave.com.tw/undefined-wave-20210325-test"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1616661398105701_2638639282372893_83726003627771108095634252387100_ix.png"
+    startTime: "2020-03-25 00:00:00 (GMT+0800)"
+    endTime: "2020-03-31 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 15
+    blacklist: 
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    whitelist: []
+    leaderboard:
+      id: "event:20210325-test-special"
+      giftTag: "eventgift_test2-1"
+      startTime: "2021-03-25 00:00:00 (GMT+0800)"
+      endTime: "2021-03-31 23:59:59 (GMT+0800)"
+  - id: "20210405-shine3"
+    type: 0
+    order: 2
+    webUrl: "https://event.wave.com.tw/11718-wave-20210405-shineapril/0"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1617182750745773_0111440978219347_50281316917781884108344454543235_ag.png"
+    startTime: "2021-04-07 00:00:00 (GMT+0800)"
+    endTime: "2021-04-08 17:00:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 10
+    blacklist: 
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    whitelist: []
+    leaderboard:
+      id: "event:20210405-shine3"
+      giftTag: "eventgift_shine3"
+      startTime: "2021-04-05 00:00:00 (GMT+0800)"
+      endTime: "2021-04-11 23:59:59 (GMT+0800)"
+  - id: "20210405-shine3"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11718-wave-20210405-shineapril/0"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1617182750745773_0111440978219347_50281316917781884108344454543235_ag.png"
+    startTime: "2021-04-07 10:30:00 (GMT+0800)"
+    endTime: "2021-04-07 12:00:00 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 10
+    blacklist: 
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    leaderboard:
+      id: "event:20210405-shine3"
+      giftTag: "eventgift_shine3"
+      startTime: "2021-04-02 00:00:00 (GMT+0800)"
+      endTime: "2021-04-02 23:59:59 (GMT+0800)"
+  - id: "20210409-musicfestivalapr-open"
+    type: 0
+    order: 3
+    webUrl: "https://event.wave.com.tw/11732-wave-20210409-musicfestivalapril/0"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1617764235527102_1450438766222787_79175277457676993678988862256850_tz.png"
+    startTime: "2021-04-09 00:00:00 (GMT+0800)"
+    endTime: "2021-04-19 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 36
+    blacklist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    leaderboard:
+      id: "event:20210409-musicfestivalapr-open"
+      giftTag: "eventgift_musicfestival_apr"
+      startTime: "2021-04-09 00:00:00 (GMT+0800)"
+      endTime: "2021-04-19 23:59:59 (GMT+0800)"
+  - id: "20210409-musicfestivalapr-pre1"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11732-wave-20210409-musicfestivalapril/1/0"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1617764235527102_1450438766222787_79175277457676993678988862256850_tz.png"
+    startTime: "2021-04-21 21:00:00 (GMT+0800)"
+    endTime: "2021-04-21 21:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    leaderboard:
+      id: "event:20210409-musicfestivalapr-pre1"
+      giftTag: "eventgift_musicfestival_apr"
+      startTime: "2021-04-21 21:00:00 (GMT+0800)"
+      endTime: "2021-04-21 21:49:59 (GMT+0800)"
+  - id: "20210409-musicfestivalapr-pre2"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11732-wave-20210409-musicfestivalapril/1/1"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1617764235527102_1450438766222787_79175277457676993678988862256850_tz.png"
+    startTime: "2021-04-21 22:00:00 (GMT+0800)"
+    endTime: "2021-04-21 22:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    leaderboard:
+      id: "event:20210409-musicfestivalapr-pre2"
+      giftTag: "eventgift_musicfestival_apr"
+      startTime: "2021-04-21 22:00:00 (GMT+0800)"
+      endTime: "2021-04-21 22:49:59 (GMT+0800)"
+  - id: "20210409-musicfestivalapr-pre3"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11732-wave-20210409-musicfestivalapril/1/2"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1617764235527102_1450438766222787_79175277457676993678988862256850_tz.png"
+    startTime: "2021-04-21 23:00:00 (GMT+0800)"
+    endTime: "2021-04-21 23:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    leaderboard:
+      id: "event:20210409-musicfestivalapr-pre3"
+      giftTag: "eventgift_musicfestival_apr"
+      startTime: "2021-04-21 23:00:00 (GMT+0800)"
+      endTime: "2021-04-21 23:49:59 (GMT+0800)"
+  - id: "20210409-musicfestivalapr-pre4"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11732-wave-20210409-musicfestivalapril/1/3"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1617764235527102_1450438766222787_79175277457676993678988862256850_tz.png"
+    startTime: "2021-04-22 21:00:00 (GMT+0800)"
+    endTime: "2021-04-22 21:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    leaderboard:
+      id: "event:20210409-musicfestivalapr-pre4"
+      giftTag: "eventgift_musicfestival_apr"
+      startTime: "2021-04-22 21:00:00 (GMT+0800)"
+      endTime: "2021-04-22 21:49:59 (GMT+0800)"
+  - id: "20210409-musicfestivalapr-pre5"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11732-wave-20210409-musicfestivalapril/1/4"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1617764235527102_1450438766222787_79175277457676993678988862256850_tz.png"
+    startTime: "2021-04-22 22:00:00 (GMT+0800)"
+    endTime: "2021-04-22 22:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    leaderboard:
+      id: "event:20210409-musicfestivalapr-pre5"
+      giftTag: "eventgift_musicfestival_apr"
+      startTime: "2021-04-22 22:00:00 (GMT+0800)"
+      endTime: "2021-04-22 22:49:59 (GMT+0800)"
+  - id: "20210409-musicfestivalapr-pre6"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11732-wave-20210409-musicfestivalapril/1/5"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1617764235527102_1450438766222787_79175277457676993678988862256850_tz.png"
+    startTime: "2021-04-22 23:00:00 (GMT+0800)"
+    endTime: "2021-04-22 23:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    leaderboard:
+      id: "event:20210409-musicfestivalapr-pre6"
+      giftTag: "eventgift_musicfestival_apr"
+      startTime: "2021-04-22 23:00:00 (GMT+0800)"
+      endTime: "2021-04-22 23:49:59 (GMT+0800)"
+  - id: "20210409-musicfestivalapr-re1"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11732-wave-20210409-musicfestivalapril/2/0"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1617764235527102_1450438766222787_79175277457676993678988862256850_tz.png"
+    startTime: "2021-04-26 21:00:00 (GMT+0800)"
+    endTime: "2021-04-26 21:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    leaderboard:
+      id: "event:20210409-musicfestivalapr-re1"
+      giftTag: "eventgift_musicfestival_apr"
+      startTime: "2021-04-26 21:00:00 (GMT+0800)"
+      endTime: "2021-04-26 21:49:59 (GMT+0800)"
+  - id: "20210409-musicfestivalapr-re2"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11732-wave-20210409-musicfestivalapril/2/1"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1617764235527102_1450438766222787_79175277457676993678988862256850_tz.png"
+    startTime: "2021-04-26 22:00:00 (GMT+0800)"
+    endTime: "2021-04-26 22:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    leaderboard:
+      id: "event:20210409-musicfestivalapr-re2"
+      giftTag: "eventgift_musicfestival_apr"
+      startTime: "2021-04-26 22:00:00 (GMT+0800)"
+      endTime: "2021-04-26 22:49:59 (GMT+0800)"
+  - id: "20210409-musicfestivalapr-re3"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11732-wave-20210409-musicfestivalapril/2/2"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1617764235527102_1450438766222787_79175277457676993678988862256850_tz.png"
+    startTime: "2021-04-26 23:00:00 (GMT+0800)"
+    endTime: "2021-04-26 23:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    leaderboard:
+      id: "event:20210409-musicfestivalapr-re3"
+      giftTag: "eventgift_musicfestival_apr"
+      startTime: "2021-04-26 23:00:00 (GMT+0800)"
+      endTime: "2021-04-26 23:49:59 (GMT+0800)"
+  - id: "20210409-musicfestivalapr-final"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11732-wave-20210409-musicfestivalapril/3"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1617764235527102_1450438766222787_79175277457676993678988862256850_tz.png"
+    startTime: "2021-04-28 22:00:00 (GMT+0800)"
+    endTime: "2021-04-28 22:49:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    whitelist:
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    leaderboard:
+      id: "event:20210409-musicfestivalapr-final"
+      giftTag: "eventgift_musicfestival_apr"
+      startTime: "2021-04-28 22:00:00 (GMT+0800)"
+      endTime: "2021-04-28 22:49:59 (GMT+0800)"
+  - id: "20210412-firework-step1"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11768-wave-20210412-firework/0"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1617879843511450_2034648690411131_35909808075934431892877846787746_ro.png"
+    startTime: "2021-04-08 00:00:00 (GMT+0800)"
+    endTime: "2021-04-13 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 3
+    blacklist: 
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    whitelist: []
+    leaderboard:
+      id: "event:20210412-firework-step1"
+      giftTag: "eventgift_firework"
+      startTime: "2021-04-12 00:00:00 (GMT+0800)"
+      endTime: "2021-04-13 23:59:59 (GMT+0800)"
+  - id: "20210412-firework-step2"
+    type: 0
+    order: 2
+    webUrl: "https://event.wave.com.tw/11768-wave-20210412-firework/1"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1617879843511450_2034648690411131_35909808075934431892877846787746_ro.png"
+    startTime: "2021-04-14 00:00:00 (GMT+0800)"
+    endTime: "2021-04-16 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 3
+    blacklist: 
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    whitelist: []
+    leaderboard:
+      id: "20210412-firework-step2"
+      giftTag: "eventgift_firework"
+      startTime: "2021-04-14 00:00:00 (GMT+0800)"
+      endTime: "2021-04-16 23:59:59 (GMT+0800)"
+  - id: "20210412-firework-all"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11768-wave-20210412-firework/2"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1617879843511450_2034648690411131_35909808075934431892877846787746_ro.png"
+    startTime: "2021-04-17 00:00:00 (GMT+0800)"
+    endTime: "2021-04-18 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 600 # second
+    emphasizeThreshold: 3
+    blacklist: 
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    whitelist: []
+    leaderboard:
+      id: "event:20210412-firework-all"
+      giftTag: "eventgift_firework"
+      startTime: "2021-04-12 00:00:00 (GMT+0800)"
+      endTime: "2021-04-18 23:59:59 (GMT+0800)"
+  - id: "20210417-oneday417"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11830-wave-20210417-oneday417/0"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1618545391087438_2172675171225078_71899410010307315158338156803146_tf.png"
+    startTime: "2021-04-16 00:00:00 (GMT+0800)"
+    endTime: "2021-04-17 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 3
+    blacklist: 
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    whitelist: []
+    leaderboard:
+      id: "event:20210417-oneday417"
+      giftTag: "eventgift_oneday417"
+      startTime: "2021-04-17 00:00:00 (GMT+0800)"
+      endTime: "2021-04-17 23:59:59 (GMT+0800)"
+  - id: "20210419-warmtime-step1"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11782-wave-20210419-warmtime/3"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1618556251583848_6537409579256683_04306058051981740616861663810400_nr.png"
+    startTime: "2021-04-19 00:00:00 (GMT+0800)"
+    endTime: "2021-04-20 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 5
+    blacklist: 
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    whitelist: []
+    leaderboard:
+      id: "event:20210419-warmtime-step1"
+      giftTag: "eventgift_warmtime"
+      startTime: "2021-04-19 00:00:00 (GMT+0800)"
+      endTime: "2021-04-20 23:59:59 (GMT+0800)"
+  - id: "20210419-warmtime-all"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11782-wave-20210419-warmtime/0"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1618556251583848_6537409579256683_04306058051981740616861663810400_nr.png"
+    startTime: "2021-04-21 00:00:00 (GMT+0800)"
+    endTime: "2021-04-25 23:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 15
+    blacklist: 
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    whitelist: []
+    leaderboard:
+      id: "event:20210419-warmtime-all"
+      giftTag: "eventgift_warmtime"
+      startTime: "2021-04-19 00:00:00 (GMT+0800)"
+      endTime: "2021-04-25 23:59:59 (GMT+0800)"
+  - id: "20210419-warmtime-step1-test"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11782-wave-20210419-warmtime/3"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1618556251583848_6537409579256683_04306058051981740616861663810400_nr.png"
+    startTime: "2021-04-19 00:00:00 (GMT+0800)"
+    endTime: "2021-04-20 22:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 5
+    blacklist: 
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    whitelist: []
+  - id: "20210419-warmtime-step1-test2"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11782-wave-20210419-warmtime/3"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1618556251583848_6537409579256683_04306058051981740616861663810400_nr.png"
+    startTime: "2021-04-19 00:00:00 (GMT+0800)"
+    endTime: "2021-04-20 21:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 5
+    blacklist: 
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    whitelist: []
+  - id: "20210419-warmtime-step1-test3"
+    type: 0
+    order: 1
+    webUrl: "https://event.wave.com.tw/11782-wave-20210419-warmtime/3"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1618556251583848_6537409579256683_04306058051981740616861663810400_nr.png"
+    startTime: "2021-04-19 00:00:00 (GMT+0800)"
+    endTime: "2021-04-20 20:59:59 (GMT+0800)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 5
+    blacklist: 
+      - 6a62daf2-7c81-4ff4-b341-89fa440ab688 # 官方
+    whitelist: []

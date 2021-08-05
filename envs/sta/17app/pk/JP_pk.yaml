@@ -28,12 +28,10 @@ playList:
 
 ## for pk leaderboard
 pkHourLBLevel:
-  min: 30
-  max: 70
+  # min: 30
+  # max: 70
 pkStarDurations:
-- startTime: 9h00m00s
-  endTime: 22h00m00s
-regularRuleTitle: 
+regularRuleTitle:
   key: pk_information_regular_title
 regularRules:
   - key: pk_information_regular_rule1
@@ -42,7 +40,7 @@ regularRules:
   - key: pk_information_regular_rule2
     params:
       - value: 3
-hourRuleTitle: 
+hourRuleTitle:
   key: pk_information_hourly_title
 hourRules:
   - key: pk_information_hourly_rule1
@@ -61,7 +59,7 @@ hourRules:
 # minimum points needed to count as lb win after specific time
 # if now is before earliest start, we use 3000 as defualt.
 # please dont clear this config until start is older than one month for data consistency
-pkLBMinPoints: 
+pkLBMinPoints:
   - start: "2020-08-12 18:00:00 (GMT+0800)"
     minPoint: 3000
   - start: "2020-08-14 18:00:00 (GMT+0800)"
@@ -81,4 +79,4 @@ pkLBMinPoints:
   - start: "2020-08-23 18:00:00 (GMT+0800)"
     minPoint: 3000
 
-showPKStarLB: true
+showPKStarLB: false

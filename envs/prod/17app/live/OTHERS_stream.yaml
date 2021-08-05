@@ -2,13 +2,19 @@ pnCheckNotif: 300 # 5 mins
 minAndroidCaptionBlockVersion: "3.13.0"
 minIOSCaptionBlockVersion: "4.101.0"
 
+captionBlockConf:
+  oldClientEnable: false
+  newClientEnable: false
+  minAndroidVersionRequired: "3.13.0"
+  minIOSVersionRequired: "4.101.0"
+
 forcePromoteVirtualStream: false
 enableExtInfoTypeEvent: true
 
 followerCountTriggerEvent: 100000
 # PROD-4634
 organicStreamer:
-  autoPass: false
+  autoPass: true
   autoPassUserLevel: 0
 
 defaultComments:
@@ -155,3 +161,15 @@ layoutGiftNotif:
 
 programCommentPin:
   enable: false
+
+showRockArea: true
+followerOnlyOptionMins: [0, 1, 5, 10]
+
+streamerTagging:
+  enable: true
+  startTime: 2021-05-17 14:00:00 (GMT+0800)
+  whiteList:
+    - "d255c081-473f-46d9-a444-04041cdc4db8" # 小衛17176
+    - "2e5c8de5-c860-452c-ade1-6193ca08a4d5" # vivianhuang85
+    - "1276c44e-dd76-48fb-8813-12bdfb63b727" # erickraz
+    - "c92f6b4f-acc6-4ea6-8057-dd7a9253c866" # jojowind

@@ -123,6 +123,11 @@ def main():
     else:
         result = 1
 
+    print(highlight("\n>>>>>>>> [{}]:".format(
+            "Author Email Checking"), 'green'))
+    author_info, err = system("git", "var", "GIT_AUTHOR_IDENT")
+    author_email_checker(author_info)
+
     # Unstash changes to the working tree that we had stashed
     subprocess.call(['git', 'reset', '--hard'], stdout=subprocess.PIPE,
                     stderr=subprocess.PIPE)
@@ -170,6 +175,17 @@ def remote_check_configs(env, app, files_list):
     jsonObject = json.loads(response.text)
     print(display_response(env, jsonObject))
     set_result(jsonObject)
+
+
+def author_email_checker(author_info):
+    global result
+    print(author_info)
+    if not re.match(r".*<.+@17\.(live|media)>.*", author_info):
+        print(highlight("Failed GIT_AUTHOR_IDENT: {}".format(author_info), 'red'))
+        print("You should use your slack email (xxx@17.media | xxx@17.live) to commit,")
+        print("in order to tag you in slack when build failed.")
+        print("Set your email by using: $ git config user.email xxx@17.media")
+        result = 1
 
 
 def skip_or_abort():

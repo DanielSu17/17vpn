@@ -9,60 +9,99 @@
 #       key: <string>
 #     labelID: <string> (optional if id is `Label`)
 
+preservedSectionID: Suggestion
+
 sections:
-  - id: Label # 
-    labelID: chill
+  - id: TopBanner # Banner + super promote
     name:
-      key: Chill
+      key: tab_hot_2019q4_topbanner
+    enable: true
+    style: 1
+    more: false
+  - id: Newbiequest
+    enable: true
+    style: 7
+    minGrids: 1
+    more: false
+  - id: Label # 新主播
+    labelID: new_streamers
+    name:
+      key: hk_newbie
     enable: true
     dedup: false
-    minGrids: 1
+    minGrids: 3
     style: 3
     more: true
   - id: Label # 
     labelID: kol_and_artist
     name:
-      key: KOL & Artist
+      key: hk_kol
+    enable: true
+    dedup: false
+    minGrids: 3
+    style: 3
+    more: true
+  - id: GroupCall # GroupCall 
+    name:
+      key: group_stream_v3hotpage
     enable: true
     dedup: false
     minGrids: 1
+    style: 9 
+    more: true
+  - id: Suggestion # 猜你可能喜歡
+    name:
+      key: tab_hot_2019q4_follow_suggestion
+    enable: true
+    dedup: false
+    style: 6
+    minGrids: 5
+    more: true
+  - id: Label # 
+    labelID: Music
+    name:
+      key: hk_music
+    enable: true
+    dedup: false
+    minGrids: 3
+    style: 3
+    more: true
+  - id: Label # 
+    labelID: chill
+    name:
+      key: hk_Chill
+    enable: true
+    dedup: false
+    minGrids: 3
     style: 3
     more: true
   - id: Label # 
     labelID: hobbies
     name:
-      key: Hobbies
+      key: hk_hobbies
     enable: true
     dedup: false
-    minGrids: 1
+    minGrids: 3
     style: 3
     more: true
   - id: Label # 
-    labelID: music
+    labelID: FOHK2021
     name:
-      key: Music
+      key: hk_fohk
     enable: true
     dedup: false
-    minGrids: 1
+    minGrids: 3
     style: 3
     more: true
   - id: Label # 
-    labelID: 17headline
+    labelID: 17LIVE HK
     name:
-      key: 17 Headline
+      key: hk_17live
     enable: true
     dedup: false
     minGrids: 1
     style: 3
     more: true
-  - id: Label # 
-    labelID: new_streamers
-    name:
-      key: New Streamers
-    enable: true
-    dedup: false
-    minGrids: 1
-    style: 3
-    more: true
-    
+
 officialRecommendedStreamers:
+

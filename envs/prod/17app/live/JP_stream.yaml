@@ -2,13 +2,19 @@ pnCheckNotif: 300 # 5 mins
 minAndroidCaptionBlockVersion: "2.13.0"
 minIOSCaptionBlockVersion: "3.101.0"
 
+captionBlockConf:
+  oldClientEnable: false
+  newClientEnable: false
+  minAndroidVersionRequired: "2.13.0"
+  minIOSVersionRequired: "3.101.0"
+
 forcePromoteVirtualStream: false
 enableExtInfoTypeEvent: true
 
 followerCountTriggerEvent: 100000
 # PROD-4634
 organicStreamer:
-  autoPass: false
+  autoPass: true
   autoPassUserLevel: 0
 
 defaultComments:
@@ -19,7 +25,7 @@ defaultComments:
       - content: "こんばんは！"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
-      - content: "初見です！"
+      - content: "イチナナ初めてです！"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
       - content: "つんつん👉"
@@ -38,7 +44,7 @@ defaultComments:
       - content: "おはよう！"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
-      - content: "初見です！"
+      - content: "イチナナ初めてです！"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
       - content: "つんつん👉"
@@ -57,7 +63,7 @@ defaultComments:
       - content: "こんにちは！"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
-      - content: "初見です！"
+      - content: "イチナナ初めてです！"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
       - content: "つんつん👉"
@@ -76,7 +82,7 @@ defaultComments:
       - content: "こんばんは！"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
-      - content: "初見です！"
+      - content: "イチナナ初めてです！"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
       - content: "つんつん👉"
@@ -92,9 +98,9 @@ defaultComments:
 hotCellOrder:
   regionGroups:
     - regions: ["JP"]
-    - regions: ["US"]
-    - regions: ["OTHERS"]
-    
+#    - regions: ["US"]
+#    - regions: ["OTHERS"]
+
 birthdayComment:
   contentColor: "#28232D"
   backgroundColor: "#FFFFFF"
@@ -152,5 +158,17 @@ programCommentPin:
   enable: true
 
 pkFrameID: "pk_winner_frame"
-pkFrameURL: "https://cdn.17app.co/4507c459-4edb-4536-9179-3bc45048d83a.png"
-pkIOSFrameURL: "https://cdn.17app.co/4507c459-4edb-4536-9179-3bc45048d83a.png"
+pkFrameURL: "https://cdn.17app.co/27d912fc-0061-4ab2-9acb-9520c4382451.png"
+pkIOSFrameURL: "https://cdn.17app.co/27d912fc-0061-4ab2-9acb-9520c4382451.png"
+
+showRockArea: true
+followerOnlyOptionMins: [0, 1, 5, 10]
+
+streamerTagging:
+  enable: true
+  startTime: 2021-05-17 14:00:00 (GMT+0800)
+  whiteList:
+    - "d255c081-473f-46d9-a444-04041cdc4db8" # 小衛17176
+    - "2e5c8de5-c860-452c-ade1-6193ca08a4d5" # vivianhuang85
+    - "1276c44e-dd76-48fb-8813-12bdfb63b727" # erickraz
+    - "c92f6b4f-acc6-4ea6-8057-dd7a9253c866" # jojowind

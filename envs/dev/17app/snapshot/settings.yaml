@@ -1,0 +1,14 @@
+### 
+#   The variable is to control the notify snapshot service method 
+#   when it is liver open/off stream.
+#
+#   notify value 0 uses PubSub.
+#   notify value 1 uses HTTP request.
+### 
+notifyMethod: 0
+
+###
+#   To do snapshot stream providers.
+###
+streamProviders:
+  - "aws"

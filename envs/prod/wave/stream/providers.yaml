@@ -5,6 +5,13 @@ default_provider:
 rtmp_providers_secondary:
 - WANSU
 - QINIU
+# rtmp_providers_groupCall is used to 17app
+rtmp_providers_groupCall:
+- WANSU
+- QINIU
+rtmp_providers_HDMode:
+- WANSU
+- WANSU_LOW_LATENCY
 rtmp_providers:
 - name: DEFAULT
   quality_support: 0

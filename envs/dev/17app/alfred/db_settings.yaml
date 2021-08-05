@@ -1,0 +1,23 @@
+# mysql config
+# preUsername => Add prefix string to username
+# defaultHostgroup => Set to the default_hostgroup row in the mysql_users table (ProxySQL)
+# destHostgroupR => Set user read permission to the destination_hostgroup row in the mysql_query_rules table (ProxySQL)
+# destHostgroupW => Set user read permission to the destination_hostgroup row in the mysql_query_rules table (ProxySQL)
+mysql:
+  prod:
+    preUsername: ""
+    defaultHostgroup: 10
+    destHostgroupR: 11
+    destHostgroupW: 10
+
+  pre-prod:
+    preUsername: "pre-"
+    defaultHostgroup: 20
+    destHostgroupR: 21
+    destHostgroupW: 20
+
+  stag:
+    preUsername: ""
+    defaultHostgroup: 10
+    destHostgroupR: 11
+    destHostgroupW: 10

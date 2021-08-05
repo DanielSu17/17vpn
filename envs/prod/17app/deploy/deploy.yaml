@@ -15,18 +15,23 @@ groups:
     data-middleware:    "go"
     go-cron:            "go"
     golives:            "go"
+    gologs:             "go"
     gocells:            "go"
     gotrade:            "go"
     goplatform:         "go"
     gousersearch:       "go"
+    groupcall:          "go"
     live17-streaming-api: "go"
     eventory:           "go"
     eventory-worker:    "go"
+    eventory-replay:    "go"
     data-stream-worker: "go"
     ml-host:            "go"
     snapshot:           "go"
+    log-worker:         "go"
     spinnaker:          "spinnaker"
     17app:              "spinnaker"
+    17app-canary:       "canary"
   frontend:
     skyeye:          "go"
     admin:           "nodejs"
@@ -65,7 +70,10 @@ settings:
     awsprod:
       endpoint: '17App/job/awsprod-deployment-goapi/buildWithParameters?token=WPZgd7ag4Q7ksL3nSqLW2QVq6aaDK5apguCvR23M'
     k8suat:
-      endpoint: 'Test/job/uat-test/buildWithParameters?token=qLnZFhgbtDwYHq3bpqdsfHkXqEbMS7VAuTshkBrQ'
+      endpoint: 'k8suat-deployment/buildWithParameters?token=qLnZFhgbtDwYHq3bpqdsfHkXqEbMS7VAuTshkBrQ'
+  canary:
+    k8ssta:
+      endpoint: 'k8ssta-canary-deployment/buildWithParameters?token=qLnZFhgbtDwYHq3bpqdsfHkXqEbMS7VAuTshkBrQ'
   nodejs:
     k8ssta:
       endpoint: 'k8ssta-deployment-nodejs/buildWithParameters?token=ZQuygxVpytYgnanavuVkEdQsccQKr36RyLWNhgjY'
@@ -90,11 +98,13 @@ batchDeploy:
       - "gotrade"
       - "goplatform"
       - "gousersearch"
+      - "groupcall"
       - "exchange"
       - "slackbot"
       - "alfred"
       - "eventory"
       - "eventory-worker"
+      - "eventory-replay"
       - "data-stream-worker"
       - "ml-host"
       - "snapshot"
@@ -112,11 +122,13 @@ batchDeploy:
       - "gotrade"
       - "goplatform"
       - "gousersearch"
+      - "groupcall"
       - "exchange"
       - "slackbot"
       - "alfred"
       - "eventory"
       - "eventory-worker"
+      - "eventory-replay"
       - "data-stream-worker"
       - "ml-host"
       - "snapshot"
@@ -134,21 +146,40 @@ batchDeploy:
       - "gotrade"
       - "goplatform"
       - "gousersearch"
+      - "groupcall"
       - "exchange"
       - "slackbot"
-      - "alfred"
       - "eventory"
       - "eventory-worker"
-      - "data-stream-worker"
-      - "ml-host"
+      - "eventory-replay"
       - "snapshot"
-      - "live17-streaming-api"
     awsprod:
       - "goapi"
       - "revprox"
     awssta:
       - "goapi"
       - "revprox"
+  17app-canary:
+    k8ssta:
+      - "goapi"
+      - "aggr-gateway"
+      - "bbrich"
+      - "revprox"
+      - "worker"
+      - "data-middleware"
+      - "go-cron"
+      - "golives"
+      - "gocells"
+      - "gotrade"
+      - "goplatform"
+      - "gousersearch"
+      - "groupcall"
+      - "exchange"
+      - "slackbot"
+      - "eventory"
+      - "eventory-worker"
+      - "eventory-replay"
+      - "snapshot"
 
 # abstractEnvs is designed for cross cloud environment,
 # deploying using allprod stands for deploying to both

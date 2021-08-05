@@ -1,7 +1,6 @@
 # barrage, 1 2 3 4 means different army rank, 1 for 士官長 for example
 # P30D means 1 month, P90D means 3 months, P180D means 6 months
 # for each rank with period, assign the correspond barrage count they can use. -1 means infinite
-# UAT config test
 
 enable: true
 enableArmyPromotion: true
@@ -10,8 +9,11 @@ enterAnimation:
   blackList:
     - userID: 3128adcd-ea2c-438d-93cf-00baf1d7374a
     - userID: 5463c8e2-7fbb-4936-761d-876540949149
+enablePayV2: true
+payV2AllowedUserIDs:
+  - "2a091777-b06d-4cad-9b02-70193365e1e3" # ftcy0118
 
-armyOnlyBroadcastLevel: 0
+armyOnlyBroadcastLevel: 1
 
 barrage:
     1: 

@@ -8,6 +8,11 @@
 #     name:
 #       key: <string>
 #     labelID: <string> (optional if id is `Label`)
+#     orderModel: 1|2
+#If orderModel: 1, it means the order is based on achievement scores
+#If orderModel: 2, it means the order is based on ML recommendations
+
+preservedSectionID: Suggestion
 
 sections:
   - id: TopBanner # Banner + super promote
@@ -25,14 +30,6 @@ sections:
  #   enable: true
  #   style: 2
  #   more: false
-  - id: Suggestion # 猜你可能喜歡
-    name:
-      key: tab_hot_2019q4_follow_suggestion
-    enable: true
-    dedup: true
-    style: 6
-    minGrids: 5
-    more: true
   - id: NewestStreamer # D0 new streamer
     name:
       key: tab_hot_d0streamer
@@ -41,6 +38,59 @@ sections:
     minGrids: 5
     style: 3
     more: true
+    orderModel: 2
+
+  - id: Label # 夏の思い出
+    labelID: 2108_jp_summer
+    name:
+      key: streamer_jp_label_summer
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: GroupCall # GroupCall 
+    name:
+      key: group_stream_v3hotpage
+    enable: true
+    dedup: false
+    minGrids: 2
+    style: 9 
+    more: true
+  
+  # - id: AudioStream # AudioStream 聲播
+  #   name:
+  #     key: audio_stream_v3hotpage
+  #   enable: false
+  #   dedup: false
+  #   minGrids: 2
+  #   style: 3 
+  #   more: true
+
+
+  - id: Suggestion # 猜你可能喜歡
+    name:
+      key: tab_hot_2019q4_follow_suggestion
+    enable: true
+    dedup: true
+    style: 6
+    minGrids: 5
+    more: true
+    orderModel: 2
+#  - id: Label # 時給チャレンジ！
+#    labelID: jp_jikyu
+#    name:
+#      key: streamer_jp_label_jikyu
+#    enable: true
+#    dedup: true
+#    minGrids: 5
+#    style: 3
+#    more: true
+#    category: normal
+#    orderModel: 2
   - id: Latest # 新人(和『最新』同邏輯)
     name:
       key: tab_hot_2019q4_newstreamer
@@ -49,18 +99,76 @@ sections:
     minGrids: 5
     style: 3
     more: true
+    orderModel: 2
 
-  - id: Label
-    labelID: jp_music
+  - id: Label # 新人さん歓迎
+    labelID: jp_welcome
     name:
-      key: explore_jp_label_music
+      key: streamer_jp_label_welcome
     enable: true
     dedup: true
     minGrids: 5
     style: 3
     more: true
+    category: normal
+    orderModel: 2
+#  - id: Label
+#    labelID: jp_music
+#    name:
+#      key: explore_jp_label_music
+#    enable: true
+#    dedup: true
+#    minGrids: 5
+#    style: 3
+#    more: true
+#    category: normal
 
-  - id: Label
+  - id: Label # 歌
+    labelID: jp_singer
+    name:
+      key: streamer_jp_label_singer
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # 楽器演奏
+    labelID: jp_instrument
+    name:
+      key: streamer_jp_label_instrument
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+  - id: Label # アニマル
+    labelID: jp_animal
+    name:
+      key: streamer_jp_label_animal
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+  - id: Label # 推し活
+    labelID: jp-oshikatsu
+    name:
+      key: streamer_jp_label_oshikatsu
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+  - id: Label # タレント
     labelID: jp_talent
     name:
       key: streamer_jp_label_talent
@@ -69,6 +177,8 @@ sections:
     minGrids: 0
     style: 3
     more: true
+    category: normal
+    orderModel: 2
 
   - id: PK
     name:
@@ -88,15 +198,11 @@ sections:
     minGrids: 5
     style: 3
     more: true
-  - id: Vod # 熱門影音
-    name:
-      key: tab_hot_2019q4_vod
-    enable: true
-    minGrids: 5
-    style: 5
-    more: false
+    category: normal
+    orderModel: 2
+
   - id: Label
-    labelID: jp_vliver
+    labelID: jp_V-LIVER
     name:
       key: explore_jp_label_vliver
     enable: true
@@ -104,44 +210,31 @@ sections:
     minGrids: 5
     style: 3
     more: true
-  - id: Label
-    labelID: jp_fashion
+    category: normal
+    orderModel: 2
+
+  - id: Vod # 熱門影音
     name:
-      key: streamer_jp_label_fashion
+      key: tab_hot_2019q4_vod
+    enable: true
+    minGrids: 5
+    style: 5
+    more: false
+
+  - id: Label # ラジオ配信
+    labelID: jp_audiostream
+    name:
+      key: streamer_jp_label_audiostream
     enable: true
     dedup: true
     minGrids: 5
     style: 3
     more: true
-  - id: Label
-    labelID: jp_performer
-    name:
-      key: streamer_jp_label_performer
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-  - id: Label
-    labelID: jp_hobby
-    name:
-      key: streamer_jp_label_hobby
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-  - id: Label
-    labelID: jp_variety
-    name:
-      key: streamer_jp_label_variety
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-  - id: Label
-    labelID: jp_freetalk
+    category: normal
+    orderModel: 2
+
+  - id: Label # 雑談
+    labelID: jp_freetalk1
     name:
       key: streamer_jp_label_freetalk
     enable: true
@@ -149,6 +242,105 @@ sections:
     minGrids: 5
     style: 3
     more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # 占い
+    labelID: jp_fortune
+    name:
+      key: streamer_jp_label_fortune
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # DJ
+    labelID: jp_DJ
+    name:
+      key: streamer_jp_label_DJ
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # クリエイター
+    labelID: jp_creator
+    name:
+      key: streamer_jp_label_creator
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # lv10以下
+    labelID: jp_lv10
+    name:
+      key: streamer_jp_label_lv10
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # lv20以下
+    labelID: jp_lv20
+    name:
+      key: streamer_jp_label_lv20
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # lv30以下
+    labelID: jp_lv30
+    name:
+      key: streamer_jp_label_lv30
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # 男子
+    labelID: jp_boys
+    name:
+      key: streamer_jp_label_boys
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # 女子
+    labelID: jp_girls
+    name: 
+      key: streamer_jp_label_girls
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
   - id: Label
     labelID: jp_show
     name:
@@ -159,6 +351,7 @@ sections:
     style: 4
     more: true
 
+officialRecommendedStreamers:
 
 
 newbieStreamGuideGroupingRules:
@@ -176,3 +369,4 @@ newbieStreamGuideGroupingRules:
         minLevel: 65
       - maxViewerCount: 40
       - minViewerCount: 40
+

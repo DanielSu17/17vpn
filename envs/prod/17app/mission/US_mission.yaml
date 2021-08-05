@@ -40,6 +40,78 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
+- ID: 8fa63cdc-580b-4323-af48-865e249c2adf
+  type: 8
+  category: 0
+  lifeCycle: 1
+  targetAudience: 2
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2108_us_welcomeoffer
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: Welcome Offer
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_IAP_reward_jp_npu_desc
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2021-08-02 18:00:00 (GMT-0700)
+    endTime: 2021-08-31 21:00:00 (GMT-0700)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: 6c331466-38ab-48d5-ab31-26b079c94b6f
+  type: 3
+  category: 0
+  lifeCycle: 1
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 2
+    rewardID: 2021-hk-legendary
+    amount: 5
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+  i18nTitleParams:
+  - value: "999"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  - value: 2107_us_avatarsun
+    needMap: false
+    mapOption: 2
+    fontAttribute: null
+  - value: 2107_us_avatarsun_bag2
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_onmyoji2
+  i18nDescriptionParams: []
+  goalValue: 999
+  enableTimeRange:
+  - startTime: 2021-07-22 18:00:00 (GMT-0700)
+    endTime: 2021-08-23 23:59:59 (GMT-0700)
+  refIDs:
+  - 2107_us_avatarsun
+  - 2107_us_avatarsun_bag2
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
 - ID: 2ceb4a8b-78a6-42d6-8505-d44f408586ad
   type: 16
   category: 0
@@ -69,44 +141,40 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-- ID: 33dae081-690a-49db-90b4-f94fd55dc1fb
-  type: 8
+- ID: a2978860-5889-4245-83ea-cdbe50b38c1e
+  type: 5
   category: 0
-  lifeCycle: 1
-  targetAudience: 2
+  lifeCycle: 0
+  targetAudience: 0
   levelRange:
     min: 1
     max: 999
   reward:
-    rewardType: 1
-    rewardID: gift_texture_us_iap_newbie
-    amount: 2
+    rewardType: 2
+    rewardID: 2107-us-summer
+    amount: 1
     expireTimeSecs: 86400
-  i18nTitle: baggage_mission_IAP_reward_jp_daily_xmas_name
+  i18nTitle: baggage_mission_leave_comment_reward_title2
   i18nTitleParams:
-  - value: "1"
+  - value: "15"
     needMap: false
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: baggage_mission_IAP_reward_jp_pigcatbeard_desc
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 1
+  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_onmyoji1
+  i18nDescriptionParams: []
+  goalValue: 15
   enableTimeRange:
-  - startTime: 2020-06-26 12:00:00 (GMT+0900)
-    endTime: 2021-06-26 23:59:59 (GMT+0900)
+  - startTime: 2021-07-22 18:00:00 (GMT-0700)
+    endTime: 2021-08-23 23:59:59 (GMT-0700)
   refIDs: []
   platforms:
   - android
   - ios
   requirePhoneBinding: false
   withReminder: false
-- ID: e0b5fc89-88d0-4f1e-ab66-f5654193f606
+- ID: fc5afc1e-4f9e-4b6c-a70c-fbcf1624e4c1
   type: 9
   category: 0
   lifeCycle: 0
@@ -115,64 +183,74 @@ missions:
     min: 1
     max: 999
   reward:
-    rewardType: 1
-    rewardID: 2102_us_minions_bp
+    rewardType: 2
+    rewardID: 2107-us-summer
     amount: 2
     expireTimeSecs: 86400
   i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "60"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_onmyoji1
+  i18nDescriptionParams: []
+  goalValue: 3600
+  enableTimeRange:
+  - startTime: 2021-07-22 18:00:00 (GMT-0700)
+    endTime: 2021-08-23 23:59:59 (GMT-0700)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: f22c08c0-ba7d-4573-b33a-3185bc7ccc11
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 2
+    rewardID: 2107-us-summer
+    amount: 3
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
   i18nTitleParams:
   - value: "30"
     needMap: false
     mapOption: 0
     fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_content_desc
-  i18nDescriptionParams: []
-  goalValue: 1800
-  enableTimeRange:
-  - startTime: 2021-02-15 18:00:00 (GMT-0800)
-    endTime: 2021-02-28 21:00:00 (GMT-0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: bca50385-89ff-4432-8670-d2e028c0559f
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2102_us_snake_bp
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "30"
+  - value: 2107_us_avatarsun
+    needMap: false
+    mapOption: 2
+    fontAttribute: null
+  - value: 2107_us_avatarsun_bag2
     needMap: false
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_content_desc
+  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_onmyoji1
   i18nDescriptionParams: []
-  goalValue: 1800
+  goalValue: 30
   enableTimeRange:
-  - startTime: 2021-02-08 09:00:00 (GMT+0800)
-    endTime: 2021-02-14 11:59:59 (GMT+0800)
-  refIDs: []
+  - startTime: 2021-07-22 18:00:00 (GMT-0700)
+    endTime: 2021-08-23 23:59:59 (GMT-0700)
+  refIDs:
+  - 2107_us_avatarsun
+  - 2107_us_avatarsun_bag2
   platforms:
   - android
   - ios
   requirePhoneBinding: false
   withReminder: false
-- ID: c81eede0-2a35-42b2-926a-66a0cc80e2a4
+- ID: d96cc43d-9d42-487d-84bf-6a62d4b0e976
   type: 9
   category: 0
   lifeCycle: 0
@@ -182,7 +260,7 @@ missions:
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2102_us_newbies_bp
+    rewardID: 2108_us_newbies_2
     amount: 5
     expireTimeSecs: 86400
   i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
@@ -197,15 +275,15 @@ missions:
   i18nDescriptionParams: []
   goalValue: 1800
   enableTimeRange:
-  - startTime: 2021-02-01 09:00:00 (GMT+0800)
-    endTime: 2021-02-28 11:59:59 (GMT+0800)
+  - startTime: 2021-08-01 18:00:00 (GMT-0700)
+    endTime: 2021-08-14 21:00:00 (GMT-0700)
   refIDs: []
   platforms:
   - android
   - ios
   requirePhoneBinding: false
   withReminder: false
-- ID: e2ed33e7-0307-4245-b3fc-3b05321617ae
+- ID: 49bfb665-c13d-4501-929e-5fc1861874e6
   type: 5
   category: 0
   lifeCycle: 0
@@ -215,10 +293,10 @@ missions:
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2102_us_newbies_bp
+    rewardID: 2108_us_newbies_2
     amount: 5
     expireTimeSecs: 86400
-  i18nTitle: baggage_mission_leave_comment_reward_title
+  i18nTitle: baggage_mission_leave_comment_reward_title2
   i18nTitleParams:
   - value: "10"
     needMap: false
@@ -230,15 +308,15 @@ missions:
   i18nDescriptionParams: []
   goalValue: 10
   enableTimeRange:
-  - startTime: 2021-02-01 09:00:00 (GMT+0800)
-    endTime: 2021-02-28 11:59:59 (GMT+0800)
+  - startTime: 2021-08-01 18:00:00 (GMT-0700)
+    endTime: 2021-08-14 21:00:00 (GMT-0700)
   refIDs: []
   platforms:
   - android
   - ios
   requirePhoneBinding: false
   withReminder: false
-- ID: 2fdba35d-1495-4dfb-9701-debd60077ff9
+- ID: 4a7929ff-2b0a-4987-bb06-291462671ed0
   type: 3
   category: 0
   lifeCycle: 0
@@ -248,7 +326,7 @@ missions:
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2102_us_newbies_bp
+    rewardID: 2108_us_newbies_2
     amount: 5
     expireTimeSecs: 86400
   i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
@@ -257,7 +335,7 @@ missions:
     needMap: false
     mapOption: 0
     fontAttribute: null
-  - value: Welcome Ceremony
+  - value: 2108_us_newbies_1
     needMap: false
     mapOption: 2
     fontAttribute: null
@@ -267,10 +345,10 @@ missions:
   i18nDescriptionParams: []
   goalValue: 2
   enableTimeRange:
-  - startTime: 2021-02-01 09:00:00 (GMT+0800)
-    endTime: 2021-02-28 11:59:59 (GMT+0800)
+  - startTime: 2021-08-01 18:00:00 (GMT-0700)
+    endTime: 2021-08-14 21:00:00 (GMT-0700)
   refIDs:
-  - 2102_us_newbies_1
+  - 2108_us_newbies_1
   platforms:
   - android
   - ios

@@ -2,6 +2,11 @@
 enable: true
 
 eventDailyRewards:
+# MKT施策ログボ(5/04-5/09)
+  - startTimestamp: 1620054000
+    endTimestamp: 1620572399
+    giftID: 2105_jp_dailymission3
+
 # AKBチョコログボ(2/12-2/14)
   - startTimestamp: 1613055600
     endTimestamp: 1613314799
@@ -14,7 +19,7 @@ eventDailyRewards:
 
 # 年始ログボ(1/1-1/7)
   - startTimestamp: 1609426800
-    endTimestamp: 1610031599
+    endTimestamp: 1610031599  
     giftID: 2101_jp_newyear_cp
 
 # 年末ログボ(12/28-12/31)
@@ -69,6 +74,7 @@ noAnimationTTLAfterRegister: 0
 
 # daily for sign-in reward for voucher version
 enableSignInReward: true
+
 signInRewards:
   - exp: 30
     url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
@@ -250,7 +256,8 @@ signInRewards:
       tokenName: "voucher_daily_reward_gift_hamster"
       amount: 1
       intervalSec: 28800
-abtestStartTime: 
+# remove this to prevent it influent ip collaboration (APP-20938, APP-20939)
+#abtestStartTime: 
 #  "2020-10-12 12:00:00 (GMT+0800)"
 signInRewardsV2:
   - exp: 30

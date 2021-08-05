@@ -21,6 +21,10 @@ function push() {
 }
 
 # list of commits
+
+# If GIT_PREVIOUS_SUCCESSFUL_COMMIT is not aviable, using previous commit by default.
+GIT_PREVIOUS_SUCCESSFUL_COMMIT="${GIT_PREVIOUS_SUCCESSFUL_COMMIT:-$(git rev-parse HEAD~2 | tr -d '\n')}"
+
 commits=$(git log  --pretty=format:'%H' "${GIT_PREVIOUS_SUCCESSFUL_COMMIT}".."${GIT_COMMIT}")
 config_paths=""
 commit_list=""
@@ -66,10 +70,13 @@ for config_path in ${config_paths}; do
     if [ -n "${endpoints}" ]; then
       echo "[debug] ${config_env} / ${config_app} / ${endpoints}"
       push "${config_env}" "${config_app}" "${endpoints}"
+    elif export | grep "$dynamic_endpoints="; then
+      # If variable is defined as empty string ""
+      echo "Endpoint ${dynamic_endpoints} is an empty string"
     else
       echo "abort, no endpoint defined"
       curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":warning:Push to ETCD Failed. (${config_env}):red_thinking::etcd:\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Message*:${COMMIT_MESSAGE}\n*Lastest Commit*:${GIT_COMMIT}  *Job*: <${BUILD_URL}|URL> @sre\"}]},{\"type\":\"divider\"}]}" "${SLACK}"
-      exit 1
+      # exit 1 ignore error if endpoint not found
     fi
     curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":white_check_mark:Push to ETCD Successfully. (${config_env}):etcd:\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Message*:${COMMIT_MESSAGE}\n*Lastest Commit*:${GIT_COMMIT}  *Job*: <${BUILD_URL}|URL>\"}]},{\"type\":\"divider\"}]}" "${SLACK}"
   else

@@ -5,6 +5,13 @@
          "synchornize_mode":false
       }
    },
+  "unity": {
+    "enabled": 1
+  },
+  "unity_config": {
+    "apply_version" : 2000,
+    "apply_region" : ["ALL"]
+  },
    "network_threshold":{
       "yellow":100,
       "red":50
@@ -23,12 +30,12 @@
    "gift_reminding_duration":20,
    "follow_reminder_duration":30,
    "rating":{
-      "open_app_count":5,
-      "watch_stream_total_time":60,
-      "total_open_app_day":1,
-      "total_follow_count":10,
-      "total_share_count":5,
-      "total_comment_count":5,
+      "open_app_count":3,
+      "watch_stream_total_time":0,
+      "total_open_app_day":0,
+      "total_follow_count":0,
+      "total_share_count":0,
+      "total_comment_count":0,
       "reset_all_rating_criteria_and_ask_again_day":7
    },
    "low_phone_streamers":[
@@ -87,6 +94,7 @@
       "media17_on"
    ],
    "testing_ijkPlayer":{
+      "toggleReleasedApplyVersion":2700,
       "logOn":false,
       "liveLogOn":true,
       "bannerLogOn":true,
@@ -133,14 +141,7 @@
    "software_encode_devices":[
       "d-02H",
       "SM-T285YD",
-      "SM-J320G",
-      "Pixel 3a",
-      "Pixel 3a XL",
-      "Pixel 3",
-      "Pixel 3 XL",
-      "Pixel 4",
-      "Pixel 4 XL",
-      "Pixel 5"
+      "SM-J320G"
    ],
    "crazy_zoo":{
       "free":{
@@ -264,5 +265,18 @@
       "chipsets":[
          "MT6795T"
       ]
-   }
+   },
+   "avatar_gift_animation":{
+      "enable": true,
+      "black_list":[
+         "CPH",
+         "HTC_X9u",
+         "CPH",
+         "MP1701"
+      ]
+   },
+   "apm" : {
+    "apply_version" : 2609,
+    "sampling" : "9AB"
+  }
 }

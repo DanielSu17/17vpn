@@ -24,12 +24,28 @@ supportedInvoiceTypes:
     - 1
     - 2
     - 4
+  46: # SellingChannelWebTwBabyVipJkos
+    - 1
+    - 2
+    - 4
 
 allowedMakeupPurchasePayMethods:
   - 60
 
 allowedMakeupPurchaseSellingChannels:
   - 29
+
+sellingChannelRedirectURLs:
+  # SPGMPG
+  29: http://localhost:3000/purchase/order?vendor=spgateway # SellingChannelWebTw17Live
+  32: http://localhost:3000/purchase/order?vendor=spgateway&group=1 # SellingChannelWebTwBabyVip
+  19: http://localhost:3000/purchase/order?vendor=spgateway&group=2 # SellingChannelWebTwSuperVip
+  # Gash: 64
+  31: https://sta.17.live/purchase/order?paymethod=64&group=0 # SellingChannelWebTw17LiveGash
+  48: https://sta.17.live/purchase/order?paymethod=64&group=1 # SellingChannelWebTwBabyVipGash
+  # Mycard: 67
+  30: https://sta.17.live/purchase/order?paymethod=67&group=0 # SellingChannelWebTw17LiveMyCard
+  47: https://sta.17.live/purchase/order?paymethod=67&group=1 # SellingChannelWebTwBabyVipMyCard
 
 regionConfigs:
   TW:
@@ -40,6 +56,7 @@ regionConfigs:
       2: # Baby VIP
         - 32 # SellingChannelWebTwBabyVip
         - 34 # SellingChannelWebTwBabyVipECPay
+        - 46 # SellingChannelWebTwBabyVipJkos
       3: # 17Live
         - 29 # SellingChannelWebTw17Live
         - 33 # SellingChannelWebTw17LiveECPay
@@ -106,16 +123,20 @@ regionConfigs:
         - 14 # SellingChannelVipDept (localVIPs)
         - 22 # SellingChannelWebJpSuperVipGMO (localVIPs)
         - 23 # SellingChannelWebJpSuperVipPayPal
+        - 44 # SellingChannelWebJpSuperVipGMOPayPay
       2: # Baby VIP
         - 21 # SellingChannelWebJpBabyVip
+        - 43 # SellingChannelWebJpBabyVipGMOPayPay
       3: # 17Live
         - 9  # SellingChannelWebJp17Live
+        - 42 # SellingChannelWebJp17LiveGMOPayPay
     payMethods:
       - 2
       - 8
       - 9
       - 10
       - 13
+      - 66
     currencies:
       - JPY
     localCurrency: JPY

@@ -1,0 +1,62 @@
+# TopicList contains all the topics for user to choose in group stream setting page
+# There is no category of topics in phase 1 so all the topics should be listed in group "0"
+# Please note that the topic shouldn't have space between the two words
+topicList:
+  0:
+    - "GroupCallで遊ぼう"
+    - "交流王決定戦"
+    - "初めてのGroup Call"
+    - "みんなでおしゃべり"
+    - "ゲスト募集中"
+    - "挙手大歓迎"
+    - "初配信を応援する会"
+    - "女子会"
+    - "男子会"
+    - "飲み会"
+    - "イチナナを語る会"
+    - "推しを語る会"
+    - "秘密の会議"
+    - "恋愛相談"
+    - "人生相談"
+    - "お仕事"
+    - "雑談"
+
+#    - "テレビ"
+#    - "趣味"
+#    - "ゲーム"
+#    - "ラジオ配信"
+#    - "SNS"
+#    - "インフルエンサー"
+#    - "人に会う"
+#    - "新人を歓迎します"
+#    - "デート"
+#    - "チャット"
+#    - "コワーキング"
+#    - "ニュース"
+#    - "芸術"
+#    - "文化"
+#    - "テクノロジー"
+#    - "教育"
+#    - "投資"
+#    - "未來"
+#    - "お仕事"
+maxTopicCount: 2
+defaultStreamerConfig:
+  hashtags: ["みんなでおしゃべり", "ゲスト募集中"] # the number of hashtags should not exceed 2
+  subtabID: jp_freetalk1
+  eventID: # eventID is not used in phase 1
+butlerPicture: https://cdn.17app.co/7b155756-f837-41ac-adb2-f0f2413a1700.png
+
+# groupCall section shows groupCalls in different region
+# sectionRegionGroupList is the priority of regionGroups which is used to sort the groupCalls
+# IF you don't want to show that region, just delete it "HK", "TW", "SG", "MY", "MO", "JP", "US", "MENA", "Others"
+sectionRegionGroupList: ["JP"]
+
+# Don't modify infos below without discussing with PM and RD
+enable: true
+enableAudioOnlyMode: false
+enableVideoMode: true
+minLevel: 0
+needContract: false
+# Phase 2
+enableSendAll: true

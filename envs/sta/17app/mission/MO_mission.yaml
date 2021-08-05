@@ -1,36 +1,143 @@
-missions:
+# | type | Value |
+# | --- | --- |
+# | Trivia_DayTime_Answer | 1 |
+# | Trivia_Night_Answer | 2 |
+# | Send_Gift | 3 |
+# | Comment_In_Program | 4 |
+# | Comment_In_Livestream | 5 |
+# | Trivia_On_TV_Play | 6 |
+# | Trivia_Play | 7 |
+# | IAP_Buy_Point | 8 |
+# | View_Stream_X_Seconds | 9 |
+# | IAP_X_Points | 10 |
+# | Share_Twitter | 11 |
+# | TypePhoneBinding | 12 |
+# | View_Stream_X_Different_Days | 13 |
+# | CreateAvatar | 16 |
+# | CommentInNewestLivestream | 17 |
+# | CheckIn | 24 |
 
-#tagInfos
+# | category | Value |
+# | --- | --- |
+# | Fixed | 0 |
+# | Ratio | 1 |
+
+# | lifeCycle | Value |
+# | --- | --- |
+# | Daily | 0 |
+# | OneTime | 1 |
+# | ConsecutiveDays | 2 |
+
+# | targetAudience | Value |
+# | --- | --- |
+# | REGIONAL | 0 |
+# | IAP | 1 |
+# | NON_IAP | 2 |
+
+# | rewardType | Value |
+# | --- | --- |
+# | RewardCategoryBaggageGift | 1 |
+# | RewardCategoryAvatarGrabBag | 2 |
+
+missions:
+- ID: c643fba8-5d32-4366-aaac-bf2e5edc5a19
+  type: 10
+  category: 0
+  lifeCycle: 1
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2108_jp_kansanaug_bp
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_IAP_reward_jp_monthly_title
+  i18nTitleParams:
+  - value: "330"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
+  i18nDescriptionParams: []
+  goalValue: 330
+  enableTimeRange:
+  - startTime: 2021-08-01 18:00:00 (GMT+0800)
+    endTime: 2021-08-15 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: 4cb6439a-2c30-440c-9b7c-3c4dddd950ab
+  type: 10
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 2
+    rewardID: 2104-allgacha-login
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des_phone
+  i18nDescriptionParams: []
+  goalValue: 330
+  enableTimeRange:
+  - startTime: 2021-07-12 18:00:00 (GMT+0800)
+    endTime: 2021-08-26 20:55:00 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: false
+i18nMissionCompleteToast: ""
+refreshHour: 5
+supportedVersion:
+  android: 2.3.17
+  ios: 3.8.0
 tagInfos:
-  0: # Daily
+  0:
     token:
-      key: "baggage_mission_daily_tag"
-    color: "#7483d6"
-  1: # ONETIME
+      key: baggage_mission_daily_tag
+      params: []
+      fontAttribute: null
+    color: '#7483d6'
+  1:
     token:
-      key: "baggage_mission_one_time_tag"
-    color: "#F6696C"
+      key: baggage_mission_one_time_tag
+      params: []
+      fontAttribute: null
+    color: '#F6696C'
   2:
     token:
       key: baggage_mission_checkin_tag
       params: []
       fontAttribute: null
     color: '#F6696C'
-
 remind:
   remindSecs: 60
   toastMsg:
     key: baggage_complete_toast
+    params: []
+    fontAttribute: null
   toastSecs: 10
-
-i18nMissionCompleteToast: ""
-refreshHour: 5 # 5:00AM(GMT+8)
-supportedVersion:
-  android: "2.3.17"
-  ios: "3.8.0"
-
-# checkPNAfterComplete defines how many missions be completed will request client to check PN
-checkPNAfterComplete: [1, 5, 20]
+checkPNAfterComplete:
+- 1
+- 5
+- 20
 checkPNSupportedVersion:
   android: "3.0"
   ios: "4.0"

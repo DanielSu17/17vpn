@@ -1,6 +1,16 @@
+## deprecate below after 17media/api#15608 deploy to prod
 newAppleIDLogicVersion: "3.115.0"
 
-registerAutoFollow: false
+loginFromMongoSecondary: true
+registerFromMongoSecondary: true
+## deprecate above
+
+registerAutoFollow: true
+recommendAutoFollow:
+  oldClientEnable: false # for device version less than or equal to the minimum required version
+  newClientEnable: true # for device version greater than the minimum required version
+  minIOSVersionRequired: "0"
+  minAndroidVersionRequired: "0"
 registerRecommend: true
 completeFollowUsers: []
 completeFollowUsersMap:

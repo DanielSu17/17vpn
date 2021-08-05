@@ -6,8 +6,9 @@ maxPlayerAmount: 100 #以人為單位
 
 #選取該活動時，必須送該活動的禮物才會納入PK分數計算
 pkEvents:
-  - 10240 
-  - 10246
+  - 12655
+#  - 10240
+#  - 10246
 
 whiteList:
   - "00c0bc02-c6df-448c-8385-114288e51d83" # 77_七七
@@ -45,7 +46,7 @@ silenceList:
   - "ae7de094-f3ae-4de6-9037-e4f190acdbf1" # qacontractor9
   - "2e95de40-7880-422b-7f3b-0af9405e3b4d" # janet.w02
 matchingRules:
-  #將相同活動配對在一起的開關  
+  #將相同活動配對在一起的開關
   sameEventMatchFirst: true
   levelRange:
     - 10
@@ -58,7 +59,7 @@ matchingRules:
     - 1
     - 5
     - 10
-minLevel: 10
+minLevel: 1
 playList:
   - id: normalOneVOne
     mode: 1
@@ -76,7 +77,7 @@ pkHourLBLevel:
 pkStarDurations:
 - startTime: 00h00m00s
   endTime: 24h00m00s
-regularRuleTitle: 
+regularRuleTitle:
   key: pk_information_regular_title
 regularRules:
   - key: pk_information_regular_rule1
@@ -85,7 +86,7 @@ regularRules:
   - key: pk_information_regular_rule2
     params:
       - value: 3
-hourRuleTitle: 
+hourRuleTitle:
   key: pk_information_hourly_title
 hourRules:
   - key: pk_information_hourly_rule1
@@ -107,7 +108,7 @@ hourRules:
 # minimum points needed to count as lb win after specific time
 # if now is before earliest start, we use 3000 as defualt.
 # please dont clear this config until start is older than one month for data consistency
-pkLBMinPoints: 
+pkLBMinPoints:
   - start: "2020-08-12 18:00:00 (GMT+0800)"
     minPoint: 3000
   - start: "2020-08-14 18:00:00 (GMT+0800)"
@@ -127,4 +128,4 @@ pkLBMinPoints:
   - start: "2020-08-23 18:00:00 (GMT+0800)"
     minPoint: 3000
 weeklyLBTopCount: 3
-showPKStarLB: true
+showPKStarLB: true #是否於直播間顯示pk小時榜

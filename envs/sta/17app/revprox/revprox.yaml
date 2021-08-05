@@ -12,7 +12,7 @@ record:
 
 access_mode: 1
 access_whitelist:
- - 61.216.89.10
+  - 61.216.89.10
 access_blacklist:
  - 61.216.89.9
 allowed_origins:
@@ -32,41 +32,226 @@ regexConf:
       - ^/api/v1/event$
       - ^/api/v1/event/subtabs$
       - ^/api/v1/event/banner$
-      - ^/api/v1/event/info/
-  - url_key: "go_platform_url"
-    default_url_key: "go_url"
+  - url_key: "concert_stream_url"
+    default_url_key: "go_lives_url"
     weight: 100
     regex_paths:
-      - ^/debug/useMemory$
-
+      # ^GET /api/v1/lives/\d+/concertInfo$ forward each request to concert stream service
+      #   - GET /api/v1/lives/:roomID/concertInfo
+      # ^GET /api/v1/lives/:roomID(?:/giftTabs|/info)?$ includes endpoint as follows
+      #   - GET /api/v1/lives/:roomID
+      #   - GET /api/v1/lives/:roomID/info
+      #   - GET /api/v1/lives/:roomID/giftTabs
+      # ^POST /api/v1/lives/:roomID/(?:enter|quit|viewers/alive|comments)?$ includes endpoint as follows
+      #   - POST /api/v1/lives/:roomID/enter
+      #   - POST /api/v1/lives/:roomID/quit
+      #   - POST /api/v1/lives/:roomID/viewers/alive
+      #   - POST /api/v1/lives/:roomID/comments
+      - ^GET /api/v1/lives/\d+/concertInfo$
+      # ericconcert1
+      - ^GET /api/v1/lives/15816643(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/15816643/(?:enter|quit|viewers/alive|comments)?$
+      # lcuconcert6
+      - ^GET /api/v1/lives/15810246(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/15810246/(?:enter|quit|viewers/alive|comments)?$
+      # lcuconcert7
+      - ^GET /api/v1/lives/15810250(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/15810250/(?:enter|quit|viewers/alive|comments)?$
+      # lcuconcert8
+      - ^GET /api/v1/lives/15809763(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/15809763/(?:enter|quit|viewers/alive|comments)?$
+      # lcuconcert9
+      - ^GET /api/v1/lives/15809775(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/15809775/(?:enter|quit|viewers/alive|comments)?$
+      # lcuconcert10
+      - ^GET /api/v1/lives/15810239(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/15810239/(?:enter|quit|viewers/alive|comments)?$
+      # kevinmh03
+      - ^GET /api/v1/lives/240924(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/240924/(?:enter|quit|viewers/alive|comments)?$
+      # qacontractor8
+      - ^GET /api/v1/lives/14661501(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/14661501/(?:enter|quit|viewers/alive|comments)?$
+      # tristanconcert1
+      - ^GET /api/v1/lives/15687971(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/15687971/(?:enter|quit|viewers/alive|comments)?$
+      # tristanconcert2
+      - ^GET /api/v1/lives/15804059(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/15804059/(?:enter|quit|viewers/alive|comments)?$
+      # hanchang.
+      - ^GET /api/v1/lives/297806(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/297806/(?:enter|quit|viewers/alive|comments)?$
+      # blackalang
+      - ^GET /api/v1/lives/14566410(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/14566410/(?:enter|quit|viewers/alive|comments)?$
+      # zelltest
+      - ^GET /api/v1/lives/14003419(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/14003419/(?:enter|quit|viewers/alive|comments)?$
+      # jameschou02
+      - ^GET /api/v1/lives/9525379(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/9525379/(?:enter|quit|viewers/alive|comments)?$
+      # rocka2
+      - ^GET /api/v1/lives/14661305(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/14661305/(?:enter|quit|viewers/alive|comments)?$
+      # teamzconcert1
+      - ^GET /api/v1/lives/15687896(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/15687896/(?:enter|quit|viewers/alive|comments)?$
+      # teamzconcert2
+      - ^GET /api/v1/lives/15687897(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/15687897/(?:enter|quit|viewers/alive|comments)?$
+      # teamzconcert3
+      - ^GET /api/v1/lives/15687898(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/15687898/(?:enter|quit|viewers/alive|comments)?$
+      # testsavvy2
+      - ^GET /api/v1/lives/14661333(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/14661333/(?:enter|quit|viewers/alive|comments)?$
+      # jwconcert1
+      - ^GET /api/v1/lives/15687901(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/15687901/(?:enter|quit|viewers/alive|comments)?$
+      # jwconcert2
+      - ^GET /api/v1/lives/15687902(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/15687902/(?:enter|quit|viewers/alive|comments)?$
+      # jan_index3
+      - ^GET /api/v1/lives/14666745(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/14666745/(?:enter|quit|viewers/alive|comments)?$
+      # caroconcert1
+      - ^GET /api/v1/lives/15816617(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/15816617/(?:enter|quit|viewers/alive|comments)?$
+      # caroconcert2
+      - ^GET /api/v1/lives/15816618(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/15816618/(?:enter|quit|viewers/alive|comments)?$
+      # jerry_test_concert1
+      - ^GET /api/v1/lives/14675054(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/14675054/(?:enter|quit|viewers/alive|comments)?$
+      # pikaarmy3
+      - ^GET /api/v1/lives/14661251(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/14661251/(?:enter|quit|viewers/alive|comments)?$
+      # jen87concert1
+      - ^GET /api/v1/lives/15818736(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/15818736/(?:enter|quit|viewers/alive|comments)?$
+      # qa_backend_monitor16
+      - ^GET /api/v1/lives/15816647(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/15816647/(?:enter|quit|viewers/alive|comments)?$
+      # ct_qa_25hr
+      - ^GET /api/v1/lives/16544355(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/16544355/(?:enter|quit|viewers/alive|comments)?$
+      # ct_qa_live
+      - ^GET /api/v1/lives/16544358(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/16544358/(?:enter|quit|viewers/alive|comments)?$
+      # ct_qa_replay
+      - ^GET /api/v1/lives/16544395(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/16544395/(?:enter|quit|viewers/alive|comments)?$
+      # ct_qa_replayexpired
+      - ^GET /api/v1/lives/16544405(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/16544405/(?:enter|quit|viewers/alive|comments)?$
+      # ct_qa_ctexpired
+      - ^GET /api/v1/lives/16544441(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/16544441/(?:enter|quit|viewers/alive|comments)?$ 
+  - url_key: "concert_trade_url"
+    default_url_key: "go_trade_url"
+    weight: 100
+    regex_paths:
+      # ericconcert1
+      - ^POST /api/v1/lives/15816643/gift
+      # lcuconcert6
+      - ^POST /api/v1/lives/15810246/gift
+      # lcuconcert7
+      - ^POST /api/v1/lives/15810250/gift
+      # lcuconcert8
+      - ^POST /api/v1/lives/15809763/gift
+      # lcuconcert9
+      - ^POST /api/v1/lives/15809775/gift
+      # lcuconcert10
+      - ^POST /api/v1/lives/15810239/gift
+      # kevinmh03
+      - ^POST /api/v1/lives/240924/gift
+      # qacontractor8
+      - ^POST /api/v1/lives/14661501/gift
+      # tristanconcert1
+      - ^POST /api/v1/lives/15687971/gift
+      # tristanconcert2
+      - ^POST /api/v1/lives/15804059/gift
+      # hanchang.
+      - ^POST /api/v1/lives/297806/gift
+      # blackalang
+      - ^POST /api/v1/lives/14566410/gift
+      # zelltest
+      - ^POST /api/v1/lives/14003419/gift
+      # jameschou02
+      - ^POST /api/v1/lives/9525379/gift
+      # rocka2
+      - ^POST /api/v1/lives/14661305/gift
+      # teamzconcert1
+      - ^POST /api/v1/lives/15687896/gift
+      # teamzconcert2
+      - ^POST /api/v1/lives/15687897/gift
+      # teamzconcert3
+      - ^POST /api/v1/lives/15687898/gift
+      # testsavvy2
+      - ^POST /api/v1/lives/14661333/gift
+      # jwconcert1
+      - ^POST /api/v1/lives/15687901/gift
+      # jwconcert2
+      - ^POST /api/v1/lives/15687902/gift
+      # jan_index3
+      - ^POST /api/v1/lives/14666745/gift
+      # caroconcert1
+      - ^POST /api/v1/lives/15816617/gift
+      # caroconcert2
+      - ^POST /api/v1/lives/15816618/gift
+      # jerry_test_concert1
+      - ^POST /api/v1/lives/14675054/gift
+      # pikaarmy3
+      - ^POST /api/v1/lives/14661251/gift
+      # jen87concert1
+      - ^POST /api/v1/lives/15818736/gift
+      # qa_backend_monitor16
+      - ^POST /api/v1/lives/15816647/gift
+      # ct_qa_25hr
+      - ^POST /api/v1/lives/16544355/gift
+      # ct_qa_live
+      - ^POST /api/v1/lives/16544358/gift
+      # ct_qa_replay
+      - ^POST /api/v1/lives/16544395/gift
+      ## ct_qa_replayexpired
+      - ^POST /api/v1/lives/16544405/gift
+      # ct_qa_ctexpired
+      - ^POST /api/v1/lives/16544441/gift
+  - url_key: "go_trade_url"
+    default_url_key: "go_trade_url"
+    weight: 100
+    regex_paths:
+      # normal send gift: "api/v1/lives/:roomid/gift"
+      - ^POST /api/v1/lives/[0-9]+/gift$
 conf:
- - url_key: "go_usersearch_url"
-   weight: 100
-   white_list:		
-     apiv1: "user/search"
- - url_key: "go_trade_url"
-   weight: 100
-   white_list:
-     apiv1: "gift/giftbox,gift/goods,gift/internal,gift/sync,gift/levelUp,gift/gifted-producers"
-     redenvelopes: "redenvelopes"
-     sportscar: "sportscar"
-     monster: "monsters"
-     baggage: "baggage"
-     # legacy
-     gift: "getLiveStreamGiftLeaderboard,\
+  - url_key: "go_usersearch_url"
+    weight: 100
+    white_list:
+      apiv1: "user/search"
+  - url_key: "go_trade_url"
+    weight: 100
+    white_list:
+      apiv1: "gift/giftbox,gift/goods,gift/internal,gift/sync,gift/levelUp,gift/gifted-producers"
+      redenvelopes: "redenvelopes"
+      sportscar: "sportscar"
+      monster: "monsters"
+      baggage: "baggage"
+      # legacy
+      gift: "getLiveStreamGiftLeaderboard,\
             getLiveStreamAllGifts,\
             getReceivedGiftLog"
- - url_key: "go_url"
-   white_list:
-     liveStreams: "publishLiveStream,\
+  - url_key: "go_url"
+    white_list:
+      liveStreams: "publishLiveStream,\
             getLiveStreamViewers,keepLiveStream"
-     liveStreams/admin: "pass,kill,hide,pintotop,cancelpintotop,\
+      liveStreams/admin: "pass,kill,hide,pintotop,cancelpintotop,\
             killLiveStreamAction,passLiveStream,hideLiveStream,\
             promoteLiveStream,getLiveStreamsForReview,\
             removePromotedLiveStream,promoteTopLiveStream,\
             cancelPromoteTopLiveStream,hideHotLivestreamAction"
-     feed: "getPostFeed,celebrities/all,celebrities"
-     legacy: "getUserInfo,getUserInfoByUserID,\
+      api: "api"
+      feed: "getPostFeed,celebrities/all,celebrities"
+      legacy: "getUserInfo,getUserInfoByUserID,\
             getSelfInfo,unblockUserAction,blockUserAction,adminBlockUserAction,\
             getBlockUserList,followUserAction,unfollowUserAction,\
             sendFollowRequest,rejectFollowRequest,\
@@ -79,9 +264,9 @@ conf:
             getFriendNotif,adminDeleteProfilePictureAction,\
             reportUserAction,getUserLikers,adOnAction,adOffAction,getCountry,\
             choiceUserAction,verifyUserAction,removeVerifiedUserAction,adminBlockDirtyWordAction"
-     event: "getEventBanners"
-     pay: "purchaseProduct"
-     auth: "loginAction,loginAction2,registerAction,registerAction2,\
+      event: "getEventBanners"
+      pay: "purchaseProduct"
+      auth: "loginAction,loginAction2,registerAction,registerAction2,\
             checkFacebookIDAvailable,checkOpenIDAvailable,\
             registerByPhoneAction,sendPhoneVerificationCode,\
             checkNeedHumanTest,isPhoneNumberUsed,verifyUserIdentity,\
@@ -89,8 +274,8 @@ conf:
             isPhoneNumberOpenIDPaired,\
             eraseInternationalPhoneNumber,\
             getResetPasswordToken,resetPassword"
-     official: "getVersionStatus"
-     post: "publishPost,viewPost,commentPost,getUserPost,unlikePost,\
+      official: "getVersionStatus"
+      post: "publishPost,viewPost,commentPost,getUserPost,unlikePost,\
             deleteComment,likePostBatchUpdate,updatePost,deletePost,\
             getExplorePicturesForReview,passExplorePicture,\
             hideExplorePicture,hidePostAction,adminDeletePostAction,\
@@ -98,40 +283,53 @@ conf:
             reportCommentAction,reportPostAction,getHotPost,\
             recoverPostAction,searchHashTag,getPostLikers,\
             getReportPost,processReportedPostAction"
-     money: "getPointUsageLog,getPointGainLog,getRevenueReport"
-     follow: "getFriendSuggestion"
-     deadlegacy: "eventTracking,getNewestAppVersion,getSuggestedUsers,\
+      money: "getPointUsageLog,getPointGainLog,getRevenueReport"
+      follow: "getFriendSuggestion"
+      deadlegacy: "eventTracking,getNewestAppVersion,getSuggestedUsers,\
             findFriends,getExploreSuggestedUsers,getLikeLeaderboard,\
             getSystemNotif,getHotLiveStreams,getHotLiveStreams2,likePost,\
             getLikedPost,getLiveStreamComments,recoverPassword,\
             getPayments,uploadPhoneNumbers,uploadFacebookFriends,\
             followAllAction,updateLiveStreamInfo,\
             getPointProductList,getPostByHashTag,readNotif,updateOpenID"
- - url_key: "go_lives_url"
-   white_list:
-     # for api
-     apiv1: "liveStreams,lives"
-     # for legacy api
-     liveStreams: "getSuggestedLiveStreams,liveStreams/getSuggestedLiveStreams,\
+  - url_key: "go_lives_url"
+    weight: 100  # (0, 100]
+    white_list:
+      # v1 api
+      apiv1: "liveStreams,lives"
+  - url_key: "go_lives_url"
+    white_list:
+      # for legacy api
+      liveStreams: "getSuggestedLiveStreams,liveStreams/getSuggestedLiveStreams,\
             getLatestLiveStreams,liveStreams/getLatestLiveStreams,\
             getLiveStreamInfo,liveStreams/getLiveStreamInfo,\
-            enterLiveStream,\
-            quitViewLiveStream,\
-            isUserOnLiveStream,\
-            getUserLiveStreams,\
-            likeLivestreamBatchUpdate,\
+            enterLiveStream,liveStreams/enterLiveStream,\
+            quitViewLiveStream,liveStreams/quitViewLiveStream,\
+            isUserOnLiveStream,liveStreams/isUserOnLiveStream,\
+            getUserLiveStreams,liveStreams/getUserLiveStreams,\
+            likeLivestreamBatchUpdate,liveStreams/likeLivestreamBatchUpdate,\
             getLiveStreamHotCountryList,\
             reportLiveAction,\
             restreamLiveStream,\
             hasRestreamedLiveStream,\
             endLiveStream,\
-            commentLiveStream"
- - url_key: "aggr_gateway_url"
-   default_url_key: "go_cells_url"
-   weight: 100
-   white_list:
-     apiv1: "cells,sections"
- - url_key: "bbrich_url"
-   weight: 100
-   white_list:
-     apiv1: "bbrich"
+            commentLiveStream,liveStreams/commentLiveStream"
+  - url_key: "aggr_gateway_url"
+    default_url_key: "go_cells_url"
+    weight: 100
+    white_list:
+      apiv1: "cells,sections"
+  - url_key: "bbrich_url"
+    weight: 100
+    white_list:
+      apiv1: "bbrich"
+  - url_key: "go_logs_url"
+    default_url_key: "go_platform_url"
+    weight: 100
+    white_list:
+      apiv1: "logs"
+  - url_key: "group_call_url"
+    weight: 100
+    white_list:
+      apiv1: "groupCalls"
+

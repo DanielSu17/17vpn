@@ -40,8 +40,8 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
-- ID: a7a34c02-3497-4352-89c8-221ee47a4b7e
-  type: 9
+- ID: c643fba8-5d32-4366-aaac-bf2e5edc5a19
+  type: 10
   category: 0
   lifeCycle: 1
   targetAudience: 0
@@ -49,24 +49,24 @@ missions:
     min: 1
     max: 999
   reward:
-    rewardType: 2
-    rewardID: avatar-mission-test
+    rewardType: 1
+    rewardID: 2108_jp_kansanaug_bp
     amount: 1
     expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitle: baggage_mission_IAP_reward_jp_monthly_title
   i18nTitleParams:
-  - value: "30"
+  - value: "330"
     needMap: false
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_content_desc
+  i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
   i18nDescriptionParams: []
-  goalValue: 99
+  goalValue: 330
   enableTimeRange:
-  - startTime: 2021-02-17 15:00:00 (GMT+0800)
-    endTime: 2021-02-18 15:00:00 (GMT+0800)
+  - startTime: 2021-08-01 18:00:00 (GMT+0800)
+    endTime: 2021-08-15 23:59:59 (GMT+0800)
   refIDs: []
   platforms:
   - android
@@ -129,6 +129,36 @@ missions:
   platforms:
   - android
   - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: 4cb6439a-2c30-440c-9b7c-3c4dddd950ab
+  type: 10
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 2
+    rewardID: 2104-allgacha-login
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des_phone
+  i18nDescriptionParams: []
+  goalValue: 330
+  enableTimeRange:
+  - startTime: 2021-07-12 18:00:00 (GMT+0800)
+    endTime: 2021-08-26 20:55:00 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
   requirePhoneBinding: false
   withReminder: false
 - ID: 21334f37-b9f2-4f59-b0dd-e767cae8e937

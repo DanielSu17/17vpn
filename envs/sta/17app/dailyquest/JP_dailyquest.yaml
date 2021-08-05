@@ -2,6 +2,10 @@
 enable: true
 
 eventDailyRewards:
+# MKT施策ログボ(5/04-5/09)
+  - startTimestamp: 1619967600
+    endTimestamp: 1620572399
+    giftID: 2105_jp_dailymission3
   - startTimestamp: 1605220274
     endTimestamp: 1605306674
     giftID: "jp_mkt_every17"
@@ -59,8 +63,7 @@ continuousSignInEvent:
 
 # daily for sign-in reward for voucher version
 enableSignInReward: true
-abtestStartTime: 
-  "2020-07-01 00:00:00 (GMT+0800)"
+
 signInRewardsV2:
   - exp: 30
     url: "https://cdn.17app.co/512be4d1-3ccd-49d5-894f-6f520218db18.png"
@@ -401,84 +404,26 @@ checkPNAfterComplete: 2
 #     requirePhoneBinding: false
 #     requireDeviceCheck: true
 newbieRewards:
-    - type: 1
-      point: 50
-      exp: 0
-      required: 2
-      requirePhoneBinding: false
-      requireDeviceCheck: true
     - type: 2
-      point: 20
-      exp: 0
-      required: 1
-      requirePhoneBinding: false
-      requireDeviceCheck: true
-    - type: 3
-      point: 20
-      exp: 0
-      required: 1
-      requirePhoneBinding: false
-      requireDeviceCheck: true
-    - type: 5
-      point: 30
-      exp: 0
-      required: 1
-      requirePhoneBinding: false
-      requireDeviceCheck: true
-#    - type: 8
-#      point: 20
-#      exp: 0
-#      required: 1
-#      requirePhoneBinding: false
-#      requireDeviceCheck: true
-    - type: 9
-      point: 20
-      exp: 0
-      required: 3
-      requirePhoneBinding: false
-      requireDeviceCheck: true
-    - type: 10
-      point: 30
-      exp: 0
-      required: 1
-      requirePhoneBinding: false
-      requireDeviceCheck: true
-#    - type: 11
-#      point: 100
-#      exp: 0
-#      required: 1
-#      requirePhoneBinding: false
-#      requireDeviceCheck: true
-    - type: 12
       point: 0
       exp: 0
-      required: 10
+      required: 1
       requirePhoneBinding: false
       requireDeviceCheck: true
       voucherReward:
         type: 3
-        itemID: "great"
+        itemID: "test_of_test"
         amount: 1
         intervalSec: 28800
-    - type: 13
+    - type: 9
       point: 0
       exp: 0
-      required: 30
+      required: 1
       requirePhoneBinding: false
       requireDeviceCheck: true
       voucherReward:
         type: 3
-        itemID: "bravo"
-        amount: 2
+        itemID: "test_of_test"
+        amount: 1
         intervalSec: 28800
-    - type: 14
-      point: 0
-      exp: 0
-      required: 2
-      requirePhoneBinding: false
-      requireDeviceCheck: true
-      voucherReward:
-        type: 3
-        itemID: "socute"
-        amount: 3
-        intervalSec: 28800
+

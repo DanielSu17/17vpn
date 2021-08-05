@@ -2,6 +2,12 @@ pnCheckNotif: 300 # 5 mins
 minAndroidCaptionBlockVersion: "2.13.0"
 minIOSCaptionBlockVersion: "3.101.0"
 
+captionBlockConf: 
+  oldClientEnable: false
+  newClientEnable: false
+  minAndroidVersionRequired: "3.13.0"
+  minIOSVersionRequired: "4.101.0"
+
 forcePromoteVirtualStream: false
 enableExtInfoTypeEvent: true
 
@@ -149,3 +155,12 @@ layoutGiftNotif:
 
 programCommentPin:
   enable: false
+
+showRockArea: true
+followerOnlyOptionMins: [0, 1, 5, 10]
+
+streamerTagging:
+  enable: true
+  startTime: 2021-04-28 00:00:00 (GMT+0800)
+  whiteList:
+    - "a087cb6f-de57-456d-96fe-c4521ce100b1" # David

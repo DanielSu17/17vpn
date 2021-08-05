@@ -5,6 +5,13 @@ default_provider:
 rtmp_providers_secondary: # AWS/CHT will create ChannelID/secretKey so we should not set here
 - WANSU_LOW_LATENCY
 - QINIU
+rtmp_providers_groupCall:
+- WANSU_LOW_LATENCY
+- QINIU
+rtmp_providers_HDMode:
+- WANSU
+- WANSU_LOW_LATENCY
+- AWS
 rtmp_providers:
 - name: DEFAULT
   quality_support: 0
@@ -13,13 +20,13 @@ rtmp_providers:
   quality_support: 0
   weight: 0
 - name: QINIU
-  weight: 15
+  weight: 5
   region_weights:
-    TW: 5
+    TW: 3
     EG: 0
     HK: 5
     JP: 1
-    US: 10
+    US: 5
   quality_support: 0
   expire_after_hours: 15
   users:
@@ -66,6 +73,8 @@ rtmp_providers:
   - 1bfbefc0-15d5-498f-a72f-bdf503dce3db # rokia_baby (Region: Egypt)
   - 6a2b2664-6ef1-4b43-76ff-87a20cfbb394 # 龍龍:dog2:Gina
   - 7f2b080e-575e-4ec9-b8ba-97d82f16602a # 4SAKE:bomb:琲叛
+  - a3bb4c2b-2a7a-4a29-ba5f-8e7b8ae1a70a # 陵聽內心的聲音
+  - f7502af5-a780-4fcf-abe2-4aba353cd755 # Cindyyyy盟萌:ghost: (china)
 - name: QCLOUD
   quality_support: 0
   weight: 0
@@ -76,7 +85,7 @@ rtmp_providers:
     EG: 100
     HK: 0
     JP: 1
-    US: 20
+    US: 10
   quality_support: 1
   users:
 #  - ad9a4ee5-e7eb-47f0-8ef4-727b286aa48f # David’s Angels
@@ -134,15 +143,20 @@ rtmp_providers:
   - 4353afc2-d727-44cc-a168-f3eac86faed4 # DAZZLING_秀蓁:t-rex:
   - 478444b8-df10-4db9-a46d-f18184b7e8c1 # aaqqaatw
   - 4aa6f1a4-6fa4-43de-8bb2-3899de5da95c # flawlessri, US celerity
+  - 753c4e1b-7007-4fdc-98e0-7f8f5f035561 # tofubae. (flawlessri test account)
   - 97851fd4-13be-47cd-a6f1-ddd8ceb36fd5 # 17LIVE
+  - 2e218aab-a4a5-451d-8478-1dd636fc7480 # julztocker_
+  - 2e577543-a25d-48df-a536-7f4b02f1aa8f # shortxstuff
+  - 58326bbc-0c7b-48e5-bc6d-f3e2df3729b5 # AKB48_official
+  - 0333f5d0-ac94-4091-926b-40c7bc7b8e1f # 17show+
 - name: WANSU_LOW_LATENCY
   quality_support: 1
   weight: 60
   region_weights:
-    TW: 65
-    HK: 95
-    JP: 3
-    US: 40
+    TW: 67
+    HK: 55
+    JP: 83
+    US: 65
     EG: 0
   users:
   - 87614b98-d226-4cd8-7ef3-a6dafd15ecf6 # 17q_test
@@ -171,7 +185,11 @@ rtmp_providers:
   - 5a6ebc11-1dfe-4fb8-90e8-f23240da3bd8 # まさみ様_baby.
   - e94d576d-14ff-4446-b3c6-ab070b8d3663 # 璇璇Alyse
   - 89dc3d08-8eca-42cb-aba9-849a8c271c53 # 妲妮芙:rose:君
-
+  - 276aaa21-8937-495d-8bc2-256cd13ff4c2 # sasami__baby
+  - 7f6dda88-e7e8-422b-bc7b-560b65c59a02 # fabianwind
+  - da47bb62-9374-4bbb-697f-57e0f1c96c75 # androidtest1
+  - cb11e2ac-e1fd-4bee-bb52-0b17ec151803 # 陽光教練SUN
+  - df0e4ec1-6d67-47af-96f6-50c29e4fdb74 # 俊安:four_leaf_clover:Andy
 - name: WANSU_SPECIFIED_IP
   quality_support: 1
   weight: 0
@@ -188,15 +206,14 @@ rtmp_providers:
   weight: 0
   users:
   - 231435b4-e97a-4916-ad84-b2bf8a1ac910 # sammylintw20
-  - da47bb62-9374-4bbb-697f-57e0f1c96c75 # androidtest1
   - 4d9b0752-f90c-4b03-b565-f9c9e51f25fa # garyshii (for CHT testing)
 - name: AWS
   quality_support: 0
-  weight: 10
+  weight: 0
   region_weights:
-    TW: 30
-    JP: 95
-    US: 30
+    TW: 10
+    JP: 5
+    US: 0
     EG: 0
     HK: 0
   levelRestriction:
@@ -220,12 +237,12 @@ rtmp_providers:
   - 93d2f9a5-3aba-42fd-a846-4f0ba5751828 # (電競) 豆頁有夠TONE
   - e5724951-7d00-4b27-a66b-3ba9d556e3cf # (電競) 7CT鑽石肝
   - 67f11267-905d-4131-99ec-38324d7f8f80 # (電競) 雷恩Chris🦊
-  - f6beee49-9b18-465b-b3a7-7eb7a79916cd # (電競) 電玩主播-佐佐🐒 
+  - f6beee49-9b18-465b-b3a7-7eb7a79916cd # (電競) 電玩主播-佐佐🐒
   - 7ef99021-5393-44c9-970d-d758447c9223 # (電競) 祥哥bib
   - 5184b83e-ff9f-4635-a702-c316cae9ecf0 # (電競) toy動不停
   - 4c147c5d-3c2c-437d-a1cb-4810c076fe97 # (電競) 可可小姐👑Ms.CoCo
   - 8dd3bbf5-f510-40d9-a9f9-d5cbb23dd595 # (電競) 檸葉
-  - ea9eee72-8db0-458a-b831-07b5f7da27f2 # (電競) Juju🐈啾寶 
+  - ea9eee72-8db0-458a-b831-07b5f7da27f2 # (電競) Juju🐈啾寶
   - a569e5ad-0011-4c3a-a2a2-b3d0e68ffce7 # (JP) 17LIVE_GAMES公式
   # - fd752959-bcf5-4473-99e5-7ed12cb556d5 # (虛擬) thedanisantana
   - 12b02914-253c-40ba-9773-2234b5761a88 # (RD) bellayayaya
@@ -266,6 +283,30 @@ rtmp_providers:
   - 14d613fc-018a-449e-8578-194a73fa1646 # MIYAVI_premiumlive
   # - 262ae878-651c-4ce1-87d6-56efee74dec1 # りすきーろあ
 
+- name: LIVE17
+  quality_support: 0
+  expire_after_hours: 6
+  weight: 0
+  region_weights:
+    TW: 20
+    JP: 10
+    US: 20
+    EG: 0
+    HK: 30
+  levelRestriction:
+    minLevel: 0
+    maxLevel: 0
+  users:
+  - 831ab0f8-c3f9-4d61-8eea-ab5aa7b6f1ce # wanibelle
+  - 7d051ebb-387a-4133-87a5-55f7ff7ee8fa # chia7_
+ # - 25d8e5a9-94da-43bf-a160-a74856ad5c16 # zoe_meat
+  - c6e35e23-2018-47b2-afc8-adfd8ace1e22 # iron97
+
+#   - c17274e2-f3df-442f-9dc7-afe3732a0b8f # 頗廢🌙孟璇🌏
+#   - 943ab93f-c1f6-4ad1-8b84-cc40d5852fb5 # 蠍女帝♏️Co兒
+#   - e39e6b42-9062-4f1e-b1c6-349f324615c7 # ❤️愛軒🎵🍑
+#   - 49a976ba-c8b6-4030-8560-a6af6a19b777 # Jazz爵士🥁鼓姬🥁
+
 message_providers_17q:
 - name: PUBNUB_MESSAGE
   weight: 30
@@ -279,7 +320,7 @@ message_providers_17q:
 
 message_providers_general:
 - name: PUBNUB_MESSAGE
-  weight: 30
+  weight: 0
   users:
   - 93e77d8a-c4b1-45f3-ae74-5ad68620e5a0 # 妖妖DanceQueen (CN)
   - 8f2b3270-6e19-4f19-b9b3-2fa8cc4f6d3f # 巴巴baba (CN)
@@ -288,8 +329,11 @@ message_providers_general:
   - 5f617a9e-0745-4786-b5d7-bce4741e59aa # 湘湘
   - 4da09aa5-5ece-4906-bf06-0a7dca60c2ff # _お手隙のasami Ref: https://17media.slack.com/archives/C0GPCSBSB/p1595207742092800
   - 68f2de64-7ec8-4696-ac67-71132d5fa4d8 # nana_kirakira Ref: https://17media.atlassian.net/browse/BUG-8063
+  - d712d885-eb58-4619-715d-32083c29d459 # 👩‍🍳ひで🛵🌸ゆりな🍚  Ref: https://17media.atlassian.net/browse/APP-20891
+  - 6c80fa8d-43f2-4404-9325-e0224805e1e4 # 🐉🐉龍🐉🐉       Ref: https://17media.atlassian.net/browse/APP-20891
+  - 3a81403f-7d3f-471a-9d08-0e34996d5950 # .💚🍋たむら🍋💚. Ref: https://17media.atlassian.net/browse/APP-20891
 - name: WANSU_MESSAGE
-  weight: 30
+  weight: 0
   users:
   - 677dd3e4-ca99-4f33-97fa-e6e4af0ef14c # tobby112
   - 1d264e45-0c86-4c66-b9e0-dcac051100eb # 明星製作人 (2019/09/22)
@@ -299,7 +343,7 @@ message_providers_general:
   - 3799d926-2ae2-4942-a510-847a017921cc # kevinmh01
   - 567e0b5d-1516-4ce0-b4e8-bec4e756d5ae # kevinmh
 - name: ABLY_MESSAGE
-  weight: 40
+  weight: 100
   users:
   - b1785cd1-8a91-4d36-ae6e-2af2391a8a8c # Rick
   - dea2178c-11a6-478b-807c-ab22744eb8f8 # マチコ先生:butterfly:Class:kiss: Ref: https://17media.slack.com/archives/C0GPCSBSB/p1595207742092800
@@ -318,6 +362,9 @@ message_providers_dynamic:
   - 5f617a9e-0745-4786-b5d7-bce4741e59aa # 湘湘
   - 4da09aa5-5ece-4906-bf06-0a7dca60c2ff # _お手隙のasami Ref: https://17media.slack.com/archives/C0GPCSBSB/p1595207742092800
   - 68f2de64-7ec8-4696-ac67-71132d5fa4d8 # nana_kirakira Ref: https://17media.atlassian.net/browse/BUG-8063
+  - d712d885-eb58-4619-715d-32083c29d459 # 👩‍🍳ひで🛵🌸ゆりな🍚  Ref: https://17media.atlassian.net/browse/APP-20891
+  - 6c80fa8d-43f2-4404-9325-e0224805e1e4 # 🐉🐉龍🐉🐉       Ref: https://17media.atlassian.net/browse/APP-20891
+  - 3a81403f-7d3f-471a-9d08-0e34996d5950 # .💚🍋たむら🍋💚. Ref: https://17media.atlassian.net/browse/APP-20891
 - name: WANSU_MESSAGE
   weight: 0
   users:

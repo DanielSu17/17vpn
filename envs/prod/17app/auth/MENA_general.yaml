@@ -12,6 +12,11 @@ openIDSuffix: # PROD-3213
   - "00000" # Special suffix
 
 registerAutoFollow: false
+recommendAutoFollow:
+  oldClientEnable: false # for device version less than or equal to the minimum required version
+  newClientEnable: false # for device version greater than the minimum required version
+  minIOSVersionRequired: "3.133.0"
+  minAndroidVersionRequired: "2.48.0"
 registerRecommend: false
 completeFollowUsers: []
 completeFollowUsersMap:

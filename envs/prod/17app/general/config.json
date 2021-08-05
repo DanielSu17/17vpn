@@ -1,5 +1,8 @@
 {
   "enable_api_protobuf": false,
+  "unsupported_overlay_publish_providers": {
+    "providers": [9]
+  },
   "videoBitRateQuality" : {
     "low" : {
         "encodedVideoWidth" : 360,
@@ -21,15 +24,20 @@
     }
   },
   "matomo_event_grpc" : {
-    "ios_apply_version" : "9.128.0",
-    "android_apply_version" : 9584
+    "ios_apply_version" : "3.136.0",
+    "android_apply_version" : 2000,
+    "web_matomo_version": "v2"
+  },
+  "matomo_event_general" : {
+    "android_apply_version": "2000",
+    "ios_apply_version": "3.136.0"
   },
   "live_atmos_v2" : {
     "ios_apply_version" : "3.116.0",
-    "android_apply_version": 2498,
+    "android_apply_version": 99999999,
     "snow" : {
       "ios_apply_version" : "",
-      "android_apply_version":9999,
+      "android_apply_version":99999999,
       "apply_region" : ["ALL"],
       "trigger_message" : [
           "Xmas",
@@ -70,7 +78,7 @@
       },
     "box" : {
       "ios_apply_version" : "",
-      "android_apply_version": 9999,
+      "android_apply_version": 99999999,
       "apply_region" : ["ALL"],
       "trigger_message" : [
          "萬聖節",
@@ -127,6 +135,34 @@
       "duration_sec" : 30,
       "max_total_count" : 20,
       "cooldown_sec" : 600
+    }
+  },
+  "stream_profile_config": {
+    "ios_apply_version": "3.132.0",
+    "android_apply_version": 2584,
+    "apply_region": ["TW", "US", "HK", "JP"],
+    "min_stream_duration": 1800,
+    "reverse_quality_wait_time": 600,
+    "max_reverse_quality_count": 3
+  },
+  "unity_game": {
+    "ios_apply_version": "4.147.0",
+    "android_apply_version": 16267717,
+    "apply_region": ["ALL"],
+    "games": [
+      {
+        "ios_apply_version": "4.147.0",
+        "android_apply_version": 16267717,
+        "apply_region": ["ALL"],
+        "gameType": 1,
+        "name": "Jenga",
+        "iconURL": "https://cdn.17app.co/081d85df-9a3f-405f-a483-baab9de0f399.png"
+      }
+    ],
+    "black_list": {
+      "android": {
+        "models": []
+      }
     }
   }
 }

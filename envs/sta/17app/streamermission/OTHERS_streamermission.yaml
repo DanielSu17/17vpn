@@ -56,11 +56,14 @@ remind:
   toastSecs: 10
 
 animationID: streamer_growth_daily_task_completion
+fancyAnimationID: streamer_growth_daily_task_completion_fancy
 
 missions: # mission list
 # For Dx missions, i.e., missions with streamerDay field, do NOT add levelRange field; otherwise, extra missions will be displayed for streamers more than D8.
   - id: dd4dbf3a-0641-44d1-a8e5-85ab0e080e2d
     type: 14 # Type_STREAMER_LIVE_X_SECONDS
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     reward:
       type: 5 # RewardType_ACHIEVEMENT
@@ -87,6 +90,8 @@ missions: # mission list
     streamerDay: 0
   - id: fcff6c4b-d168-4af5-b3ac-643f1a1c2ceb
     type: 14 # Type_STREAMER_LIVE_X_SECONDS
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     reward:
       type: 5 # RewardType_ACHIEVEMENT
@@ -113,6 +118,8 @@ missions: # mission list
     streamerDay: 1
   - id: f5712d0a-095f-452b-ae7d-88672f52fc96
     type: 14 # Type_STREAMER_LIVE_X_SECONDS
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     reward:
       type: 5 # RewardType_ACHIEVEMENT
@@ -139,6 +146,8 @@ missions: # mission list
     streamerDay: 2
   - id: 322db98c-51ed-4723-9627-3e9c550e15ec
     type: 14 # Type_STREAMER_LIVE_X_SECONDS
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     reward:
       type: 5 # RewardType_ACHIEVEMENT
@@ -165,6 +174,8 @@ missions: # mission list
     streamerDay: 3
   - id: d3965640-6acb-4de7-ab29-8597087640ec
     type: 14 # Type_STREAMER_LIVE_X_SECONDS
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     reward:
       type: 5 # RewardType_ACHIEVEMENT
@@ -191,6 +202,8 @@ missions: # mission list
     streamerDay: 4  
   - id: 0d974127-f0ce-4a1f-800e-2da674827fcb
     type: 14 # Type_STREAMER_LIVE_X_SECONDS
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     reward:
       type: 5 # RewardType_ACHIEVEMENT
@@ -217,6 +230,8 @@ missions: # mission list
     streamerDay: 5
   - id: 8982f63c-53f3-4667-8028-ea22c7aa1db8
     type: 14 # Type_STREAMER_LIVE_X_SECONDS
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     reward:
       type: 5 # RewardType_ACHIEVEMENT
@@ -243,6 +258,8 @@ missions: # mission list
     streamerDay: 6
   - id: da00ace4-1020-4367-88b5-d654e237345e
     type: 14 # Type_STREAMER_LIVE_X_SECONDS
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     reward:
       type: 5 # RewardType_ACHIEVEMENT
@@ -270,9 +287,11 @@ missions: # mission list
 
   - id: 20eecdb8-d25b-4ccb-a76d-b486a7e993a9
     type: 18 # Type_Streamer_Got_Comments
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     reward:
-      type: 4 # RewardType_EXPERIENCE
+      type: 4 # RewardTypeExp
       iconURL: https://cdn.17app.co/f8673d96-9d23-45a1-b82b-b42af829daa0.png
       value: 100
       i18nDescription: streamer_growth_dailytask_rewards_experience
@@ -293,9 +312,11 @@ missions: # mission list
     streamerDay: 0  
   - id: c757822b-6f66-4dd3-8e00-5e123add79f0
     type: 18 # Type_Streamer_Got_Comments
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     reward:
-      type: 4 # RewardType_EXPERIENCE
+      type: 4 # RewardTypeExp
       iconURL: https://cdn.17app.co/f8673d96-9d23-45a1-b82b-b42af829daa0.png
       value: 100
       i18nDescription: streamer_growth_dailytask_rewards_experience
@@ -316,9 +337,11 @@ missions: # mission list
     streamerDay: 1
   - id: 8344b4c8-a746-47b3-ac36-8400230d057d
     type: 18 # Type_Streamer_Got_Comments
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     reward:
-      type: 4 # RewardType_EXPERIENCE
+      type: 4 # RewardTypeExp
       iconURL: https://cdn.17app.co/f8673d96-9d23-45a1-b82b-b42af829daa0.png
       value: 100
       i18nDescription: streamer_growth_dailytask_rewards_experience
@@ -339,9 +362,11 @@ missions: # mission list
     streamerDay: 2
   - id: d8dbf865-fc91-463a-906e-94d4c0c44bcd
     type: 18 # Type_Streamer_Got_Comments
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     reward:
-      type: 4 # RewardType_EXPERIENCE
+      type: 4 # RewardTypeExp
       iconURL: https://cdn.17app.co/f8673d96-9d23-45a1-b82b-b42af829daa0.png
       value: 100
       i18nDescription: streamer_growth_dailytask_rewards_experience
@@ -362,9 +387,11 @@ missions: # mission list
     streamerDay: 3
   - id: d6a2c581-3fe6-490a-baab-348de8397eb5
     type: 18 # Type_Streamer_Got_Comments
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     reward:
-      type: 4 # RewardType_EXPERIENCE
+      type: 4 # RewardTypeExp
       iconURL: https://cdn.17app.co/f8673d96-9d23-45a1-b82b-b42af829daa0.png
       value: 100
       i18nDescription: streamer_growth_dailytask_rewards_experience
@@ -385,9 +412,11 @@ missions: # mission list
     streamerDay: 4
   - id: b4d72ac1-e05d-452b-92f5-9e8d7decb1d8
     type: 18 # Type_Streamer_Got_Comments
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     reward:
-      type: 4 # RewardType_EXPERIENCE
+      type: 4 # RewardTypeExp
       iconURL: https://cdn.17app.co/f8673d96-9d23-45a1-b82b-b42af829daa0.png
       value: 100
       i18nDescription: streamer_growth_dailytask_rewards_experience
@@ -408,9 +437,11 @@ missions: # mission list
     streamerDay: 5
   - id: d8f88df9-ab56-4f6d-9879-fcd063db94ca
     type: 18 # Type_Streamer_Got_Comments
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     reward:
-      type: 4 # RewardType_EXPERIENCE
+      type: 4 # RewardTypeExp
       iconURL: https://cdn.17app.co/f8673d96-9d23-45a1-b82b-b42af829daa0.png
       value: 100
       i18nDescription: streamer_growth_dailytask_rewards_experience
@@ -431,9 +462,11 @@ missions: # mission list
     streamerDay: 6
   - id: d8f88df9-ab56-4f6d-9879-fcd063db9fff
     type: 18 # Type_Streamer_Got_Comments
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     reward:
-      type: 4 # RewardType_EXPERIENCE
+      type: 4 # RewardTypeExp
       iconURL: https://cdn.17app.co/f8673d96-9d23-45a1-b82b-b42af829daa0.png
       value: 100
       i18nDescription: streamer_growth_dailytask_rewards_experience
@@ -455,6 +488,8 @@ missions: # mission list
 
   - id: d8f88df9-ab56-4f6d-9879-fcd063daaaaa
     type: 19 # Type_Streamer_New_Followers
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_go
     lifeCycle: 0
     reward:
       type: 2 # RewardTypePoint
@@ -479,6 +514,8 @@ missions: # mission list
     streamerDay: 0
   - id: fca9cd25-afee-40b1-bcaf-4f22293bc1b8
     type: 19 # Type_Streamer_New_Followers
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_go
     lifeCycle: 0
     reward:
       type: 2 # RewardTypePoint
@@ -503,6 +540,8 @@ missions: # mission list
     streamerDay: 1
   - id: 59a87630-cf59-489f-84ed-1445cc34aeb6
     type: 19 # Type_Streamer_New_Followers
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_go
     lifeCycle: 0
     reward:
       type: 2 # RewardTypePoint
@@ -527,6 +566,8 @@ missions: # mission list
     streamerDay: 2
   - id: 45d73599-961d-41cc-8097-a8a769b92587
     type: 19 # Type_Streamer_New_Followers
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_go
     lifeCycle: 0
     reward:
       type: 2 # RewardTypePoint
@@ -551,6 +592,8 @@ missions: # mission list
     streamerDay: 3
   - id: 036edf98-4996-40bf-b8c9-388706ba9dae
     type: 19 # Type_Streamer_New_Followers
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_go
     lifeCycle: 0
     reward:
       type: 2 # RewardTypePoint
@@ -575,6 +618,8 @@ missions: # mission list
     streamerDay: 4
   - id: 363a6155-14f2-4114-85ac-02a03c471c80
     type: 19 # Type_Streamer_New_Followers
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_go
     lifeCycle: 0
     reward:
       type: 2 # RewardTypePoint
@@ -599,6 +644,8 @@ missions: # mission list
     streamerDay: 5
   - id: a5174cfd-1bd4-4739-96d1-972b462eddbb
     type: 19 # Type_Streamer_New_Followers
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_go
     lifeCycle: 0
     reward:
       type: 2 # RewardTypePoint
@@ -623,6 +670,8 @@ missions: # mission list
     streamerDay: 6
   - id: d936ceb3-71fe-4531-ae30-3f1ea26a05c5
     type: 19 # Type_Streamer_New_Followers
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_go
     lifeCycle: 0
     reward:
       type: 2 # RewardTypePoint
@@ -648,6 +697,8 @@ missions: # mission list
 
   - id: 7a04b5df-3890-4b70-9686-15808e53c123
     type: 20 # Type_Streamer_Got_Sharings
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_share
     lifeCycle: 0
     reward:
       type: 7 # RewardTypeDirectGift
@@ -661,10 +712,24 @@ missions: # mission list
           needMap: false
       i18nComment: streamer_mission_score_comment
       i18nCommentParam:
-        - value: "POINT"
+        - value: "streamer_growth_dailytask_rewards_filter"
           mapOption: 1
-        - value: "1"
+        - value: ""
       animationID: streamer_growth_daily_task_completion_reward_gift_filter
+    altReward:
+      type: 4 # RewardTypeExp
+      iconURL: https://cdn.17app.co/f8673d96-9d23-45a1-b82b-b42af829daa0.png
+      value: 100
+      i18nDescription: streamer_growth_dailytask_rewards_experience
+      i18nDescriptionParams:
+        - value: "100"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: streamer_growth_experience
+          mapOption: 1
+        - value: "100"
+      animationID: streamer_growth_daily_task_completion_reward_exp
     i18nTitle: streamer_growth_dailytask_metrics_sharings
     i18nDescription: null
     i18nDescriptionParams: null
@@ -673,6 +738,8 @@ missions: # mission list
     streamerDay: 0
   - id: 71744a61-7b10-4291-8f00-650aa7bf9609
     type: 20 # Type_Streamer_Got_Sharings
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_share
     lifeCycle: 0
     reward:
       type: 7 # RewardTypeDirectGift
@@ -686,10 +753,24 @@ missions: # mission list
           needMap: false
       i18nComment: streamer_mission_score_comment
       i18nCommentParam:
-        - value: "POINT"
+        - value: "streamer_growth_dailytask_rewards_filter"
           mapOption: 1
-        - value: "1"
+        - value: ""
       animationID: streamer_growth_daily_task_completion_reward_gift_filter
+    altReward:
+      type: 4 # RewardTypeExp
+      iconURL: https://cdn.17app.co/f8673d96-9d23-45a1-b82b-b42af829daa0.png
+      value: 100
+      i18nDescription: streamer_growth_dailytask_rewards_experience
+      i18nDescriptionParams:
+        - value: "100"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: streamer_growth_experience
+          mapOption: 1
+        - value: "100"
+      animationID: streamer_growth_daily_task_completion_reward_exp
     i18nTitle: streamer_growth_dailytask_metrics_sharings
     i18nDescription: null
     i18nDescriptionParams: null
@@ -698,6 +779,8 @@ missions: # mission list
     streamerDay: 1
   - id: c7e737c0-1b78-4242-96b2-30e7515ee1c9
     type: 20 # Type_Streamer_Got_Sharings
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_share
     lifeCycle: 0
     reward:
       type: 7 # RewardTypeDirectGift
@@ -711,10 +794,24 @@ missions: # mission list
           needMap: false
       i18nComment: streamer_mission_score_comment
       i18nCommentParam:
-        - value: "POINT"
+        - value: "streamer_growth_dailytask_rewards_filter"
           mapOption: 1
-        - value: "1"
+        - value: ""
       animationID: streamer_growth_daily_task_completion_reward_gift_filter
+    altReward:
+      type: 4 # RewardTypeExp
+      iconURL: https://cdn.17app.co/f8673d96-9d23-45a1-b82b-b42af829daa0.png
+      value: 100
+      i18nDescription: streamer_growth_dailytask_rewards_experience
+      i18nDescriptionParams:
+        - value: "100"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: streamer_growth_experience
+          mapOption: 1
+        - value: "100"
+      animationID: streamer_growth_daily_task_completion_reward_exp
     i18nTitle: streamer_growth_dailytask_metrics_sharings
     i18nDescription: null
     i18nDescriptionParams: null
@@ -723,6 +820,8 @@ missions: # mission list
     streamerDay: 2
   - id: 9d266d97-88c1-495e-a4f3-c3511d1e633b
     type: 20 # Type_Streamer_Got_Sharings
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_share
     lifeCycle: 0
     reward:
       type: 7 # RewardTypeDirectGift
@@ -736,10 +835,24 @@ missions: # mission list
           needMap: false
       i18nComment: streamer_mission_score_comment
       i18nCommentParam:
-        - value: "POINT"
+        - value: "streamer_growth_dailytask_rewards_filter"
           mapOption: 1
-        - value: "1"
+        - value: ""
       animationID: streamer_growth_daily_task_completion_reward_gift_filter
+    altReward:
+      type: 4 # RewardTypeExp
+      iconURL: https://cdn.17app.co/f8673d96-9d23-45a1-b82b-b42af829daa0.png
+      value: 100
+      i18nDescription: streamer_growth_dailytask_rewards_experience
+      i18nDescriptionParams:
+        - value: "100"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: streamer_growth_experience
+          mapOption: 1
+        - value: "100"
+      animationID: streamer_growth_daily_task_completion_reward_exp
     i18nTitle: streamer_growth_dailytask_metrics_sharings
     i18nDescription: null
     i18nDescriptionParams: null
@@ -748,6 +861,8 @@ missions: # mission list
     streamerDay: 3
   - id: 2107f22f-7001-4199-8b07-6db4cee44003
     type: 20 # Type_Streamer_Got_Sharings
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_share
     lifeCycle: 0
     reward:
       type: 7 # RewardTypeDirectGift
@@ -761,10 +876,24 @@ missions: # mission list
           needMap: false
       i18nComment: streamer_mission_score_comment
       i18nCommentParam:
-        - value: "POINT"
+        - value: "streamer_growth_dailytask_rewards_filter"
           mapOption: 1
-        - value: "1"
+        - value: ""
       animationID: streamer_growth_daily_task_completion_reward_gift_filter
+    altReward:
+      type: 4 # RewardTypeExp
+      iconURL: https://cdn.17app.co/f8673d96-9d23-45a1-b82b-b42af829daa0.png
+      value: 100
+      i18nDescription: streamer_growth_dailytask_rewards_experience
+      i18nDescriptionParams:
+        - value: "100"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: streamer_growth_experience
+          mapOption: 1
+        - value: "100"
+      animationID: streamer_growth_daily_task_completion_reward_exp
     i18nTitle: streamer_growth_dailytask_metrics_sharings
     i18nDescription: null
     i18nDescriptionParams: null
@@ -773,6 +902,8 @@ missions: # mission list
     streamerDay: 4
   - id: 2bf6d81b-28da-4796-bd54-be20a5a3ad33
     type: 20 # Type_Streamer_Got_Sharings
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_share
     lifeCycle: 0
     reward:
       type: 7 # RewardTypeDirectGift
@@ -786,10 +917,24 @@ missions: # mission list
           needMap: false
       i18nComment: streamer_mission_score_comment
       i18nCommentParam:
-        - value: "POINT"
+        - value: "streamer_growth_dailytask_rewards_filter"
           mapOption: 1
-        - value: "1"
+        - value: ""
       animationID: streamer_growth_daily_task_completion_reward_gift_filter
+    altReward:
+      type: 4 # RewardTypeExp
+      iconURL: https://cdn.17app.co/f8673d96-9d23-45a1-b82b-b42af829daa0.png
+      value: 100
+      i18nDescription: streamer_growth_dailytask_rewards_experience
+      i18nDescriptionParams:
+        - value: "100"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: streamer_growth_experience
+          mapOption: 1
+        - value: "100"
+      animationID: streamer_growth_daily_task_completion_reward_exp
     i18nTitle: streamer_growth_dailytask_metrics_sharings
     i18nDescription: null
     i18nDescriptionParams: null
@@ -798,6 +943,8 @@ missions: # mission list
     streamerDay: 5
   - id: 7b50761b-bcc4-4417-a2ac-d0ac2ffe05c7
     type: 20 # Type_Streamer_Got_Sharings
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_share
     lifeCycle: 0
     reward:
       type: 7 # RewardTypeDirectGift
@@ -811,10 +958,24 @@ missions: # mission list
           needMap: false
       i18nComment: streamer_mission_score_comment
       i18nCommentParam:
-        - value: "POINT"
+        - value: "streamer_growth_dailytask_rewards_filter"
           mapOption: 1
-        - value: "1"
+        - value: ""
       animationID: streamer_growth_daily_task_completion_reward_gift_filter
+    altReward:
+      type: 4 # RewardTypeExp
+      iconURL: https://cdn.17app.co/f8673d96-9d23-45a1-b82b-b42af829daa0.png
+      value: 100
+      i18nDescription: streamer_growth_dailytask_rewards_experience
+      i18nDescriptionParams:
+        - value: "100"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: streamer_growth_experience
+          mapOption: 1
+        - value: "100"
+      animationID: streamer_growth_daily_task_completion_reward_exp
     i18nTitle: streamer_growth_dailytask_metrics_sharings
     i18nDescription: null
     i18nDescriptionParams: null
@@ -823,6 +984,8 @@ missions: # mission list
     streamerDay: 6
   - id: 9489b383-ac7f-4d45-9bd2-6c475e275854
     type: 20 # Type_Streamer_Got_Sharings
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_share
     lifeCycle: 0
     reward:
       type: 7 # RewardTypeDirectGift
@@ -836,10 +999,24 @@ missions: # mission list
           needMap: false
       i18nComment: streamer_mission_score_comment
       i18nCommentParam:
-        - value: "POINT"
+        - value: "streamer_growth_dailytask_rewards_filter"
           mapOption: 1
-        - value: "1"
+        - value: ""
       animationID: streamer_growth_daily_task_completion_reward_gift_filter
+    altReward:
+      type: 4 # RewardTypeExp
+      iconURL: https://cdn.17app.co/f8673d96-9d23-45a1-b82b-b42af829daa0.png
+      value: 100
+      i18nDescription: streamer_growth_dailytask_rewards_experience
+      i18nDescriptionParams:
+        - value: "100"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: streamer_growth_experience
+          mapOption: 1
+        - value: "100"
+      animationID: streamer_growth_daily_task_completion_reward_exp
     i18nTitle: streamer_growth_dailytask_metrics_sharings
     i18nDescription: null
     i18nDescriptionParams: null
@@ -849,6 +1026,8 @@ missions: # mission list
 
   - id: 5ef5e0b6-a5b9-4010-9dc2-7173b31d17e1
     type: 15 # Type_Streamer_Poke_X_Times
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     reward:
       type: 8 # RewardTypeLaborRewardValue
@@ -873,6 +1052,8 @@ missions: # mission list
     streamerDay: 0
   - id: 91429016-f5fc-45e9-8eba-5c1af34de0c0
     type: 15 # Type_Streamer_Poke_X_Times
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     reward:
       type: 8 # RewardTypeLaborRewardValue
@@ -897,6 +1078,8 @@ missions: # mission list
     streamerDay: 1
   - id: d1bf74b0-9881-4c1f-9f4b-58ff7a3bbe3a
     type: 15 # Type_Streamer_Poke_X_Times
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     reward:
       type: 8 # RewardTypeLaborRewardValue
@@ -921,6 +1104,8 @@ missions: # mission list
     streamerDay: 2
   - id: be6c2750-77bc-42c4-923f-844f962fbe8c
     type: 15 # Type_Streamer_Poke_X_Times
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     reward:
       type: 8 # RewardTypeLaborRewardValue
@@ -945,6 +1130,8 @@ missions: # mission list
     streamerDay: 3
   - id: 250ebdd8-8308-4612-9177-8807b9a35574
     type: 15 # Type_Streamer_Poke_X_Times
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     reward:
       type: 8 # RewardTypeLaborRewardValue
@@ -969,6 +1156,8 @@ missions: # mission list
     streamerDay: 4
   - id: 37016bce-c5b2-4320-9261-8ba80d000ff5
     type: 15 # Type_Streamer_Poke_X_Times
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     reward:
       type: 8 # RewardTypeLaborRewardValue
@@ -993,6 +1182,8 @@ missions: # mission list
     streamerDay: 5
   - id: 8c94e1be-03a0-4871-9824-acb68aa6409c
     type: 15 # Type_Streamer_Poke_X_Times
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     reward:
       type: 8 # RewardTypeLaborRewardValue
@@ -1017,6 +1208,8 @@ missions: # mission list
     streamerDay: 6
   - id: 13238846-a776-4301-9b3f-1a6e27cda665
     type: 15 # Type_Streamer_Poke_X_Times
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     reward:
       type: 8 # RewardTypeLaborRewardValue
@@ -1043,6 +1236,8 @@ missions: # mission list
 # For level missions, set streamerDay to -1; otherwise, extra missions will be displayed for streamers within level range.
   - id: 3383e0c1-13d6-4de1-be63-4e19ce9660e1
     type: 14 # Type_STREAMER_LIVE_X_SECONDS
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     levelRange:
       min: 1
@@ -1072,6 +1267,8 @@ missions: # mission list
     streamerDay: -1
   - id: 456e8565-f3d3-4b41-83a8-e18691815ffd
     type: 14 # Type_STREAMER_LIVE_X_SECONDS
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     levelRange:
       min: 11
@@ -1101,6 +1298,8 @@ missions: # mission list
     streamerDay: -1
   - id: bd4caf8c-f624-49a6-a397-f58d620a7219
     type: 14 # Type_STREAMER_LIVE_X_SECONDS
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     levelRange:
       min: 35
@@ -1130,6 +1329,8 @@ missions: # mission list
     streamerDay: -1
   - id: 352f9b6b-f524-492e-8495-953e98e88593
     type: 14 # Type_STREAMER_LIVE_X_SECONDS
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     levelRange:
       min: 80
@@ -1160,14 +1361,16 @@ missions: # mission list
 
   - id: 7a2e61ac-d46f-495d-bba0-c45279569cee
     type: 18 # Type_Streamer_Got_Comments
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     levelRange:
       min: 1
       max: 10
     reward:
-      type: 4 # RewardType_EXPERIENCE
+      type: 4 # RewardTypeExp
       iconURL: https://cdn.17app.co/f8673d96-9d23-45a1-b82b-b42af829daa0.png
-      achievementValue: 300
+      value: 300
       i18nDescription: streamer_growth_dailytask_rewards_experience
       i18nDescriptionParams:
         - value: "300"
@@ -1186,14 +1389,16 @@ missions: # mission list
     streamerDay: -1
   - id: fc552393-07e9-417e-bc16-3d8ac97d24d9
     type: 18 # Type_Streamer_Got_Comments
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     levelRange:
       min: 11
       max: 34
     reward:
-      type: 4 # RewardType_EXPERIENCE
+      type: 4 # RewardTypeExp
       iconURL: https://cdn.17app.co/f8673d96-9d23-45a1-b82b-b42af829daa0.png
-      achievementValue: 300
+      value: 300
       i18nDescription: streamer_growth_dailytask_rewards_experience
       i18nDescriptionParams:
         - value: "300"
@@ -1212,14 +1417,16 @@ missions: # mission list
     streamerDay: -1
   - id: 03220f66-1eaa-4869-8b75-7eb93edf3b60
     type: 18 # Type_Streamer_Got_Comments
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     levelRange:
       min: 35
       max: 79
     reward:
-      type: 4 # RewardType_EXPERIENCE
+      type: 4 # RewardTypeExp
       iconURL: https://cdn.17app.co/f8673d96-9d23-45a1-b82b-b42af829daa0.png
-      achievementValue: 300
+      value: 300
       i18nDescription: streamer_growth_dailytask_rewards_experience
       i18nDescriptionParams:
         - value: "300"
@@ -1238,14 +1445,16 @@ missions: # mission list
     streamerDay: -1
   - id: db2dbe24-1748-4da7-bcbd-280bcbb5c91f
     type: 18 # Type_Streamer_Got_Comments
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     levelRange:
       min: 80
       max: 999
     reward:
-      type: 4 # RewardType_EXPERIENCE
+      type: 4 # RewardTypeExp
       iconURL: https://cdn.17app.co/f8673d96-9d23-45a1-b82b-b42af829daa0.png
-      achievementValue: 300
+      value: 300
       i18nDescription: streamer_growth_dailytask_rewards_experience
       i18nDescriptionParams:
         - value: "300"
@@ -1265,6 +1474,8 @@ missions: # mission list
 
   - id: 12c37868-af81-4219-bb04-a62e40dcc50e
     type: 21 # Type_Streamer_Got_BabyCoins
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_sendgift
     lifeCycle: 0
     levelRange:
       min: 1
@@ -1292,6 +1503,8 @@ missions: # mission list
     streamerDay: -1
   - id: 89556643-062b-4881-85fa-5014513eb678
     type: 21 # Type_Streamer_Got_BabyCoins
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_sendgift
     lifeCycle: 0
     levelRange:
       min: 11
@@ -1319,6 +1532,8 @@ missions: # mission list
     streamerDay: -1
   - id: 00f272f6-a9d7-4dd6-a0ca-706707622426
     type: 21 # Type_Streamer_Got_BabyCoins
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_sendgift 
     lifeCycle: 0
     levelRange:
       min: 35
@@ -1336,7 +1551,7 @@ missions: # mission list
         - value: streamer_growth_achievementscore
           mapOption: 1
         - value: "3000"
-      animationID: streamer_growth_daily_task_completion_reward_exp
+      animationID: streamer_growth_daily_task_completion_reward_achievement
     i18nTitle: streamer_loyalty_streaming_performance_points
     i18nDescription: null
     i18nDescriptionParams: null
@@ -1345,6 +1560,8 @@ missions: # mission list
     streamerDay: -1
   - id: b980d57f-63e3-412d-a429-82437e698eaf
     type: 21 # Type_Streamer_Got_BabyCoins
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_sendgift
     lifeCycle: 0
     levelRange:
       min: 80
@@ -1362,7 +1579,7 @@ missions: # mission list
         - value: streamer_growth_achievementscore
           mapOption: 1
         - value: "3000"
-      animationID: streamer_growth_daily_task_completion_reward_exp
+      animationID: streamer_growth_daily_task_completion_reward_achievement
     i18nTitle: streamer_loyalty_streaming_performance_points
     i18nDescription: null
     i18nDescriptionParams: null
@@ -1372,6 +1589,8 @@ missions: # mission list
 
   - id: 16c3dd56-9d3e-4d70-bf4c-23b11cbfbba9
     type: 20 # Type_Streamer_Got_Sharings
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_share
     lifeCycle: 0
     levelRange:
       min: 1
@@ -1388,10 +1607,24 @@ missions: # mission list
           needMap: false
       i18nComment: streamer_mission_score_comment
       i18nCommentParam:
-        - value: "POINT"
+        - value: "streamer_growth_dailytask_rewards_filter"
           mapOption: 1
-        - value: "1"
+        - value: ""
       animationID: streamer_growth_daily_task_completion_reward_gift_filter
+    altReward:
+      type: 4 # RewardTypeExp
+      iconURL: https://cdn.17app.co/f8673d96-9d23-45a1-b82b-b42af829daa0.png
+      value: 100
+      i18nDescription: streamer_growth_dailytask_rewards_experience
+      i18nDescriptionParams:
+        - value: "100"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: streamer_growth_experience
+          mapOption: 1
+        - value: "100"
+      animationID: streamer_growth_daily_task_completion_reward_exp
     i18nTitle: streamer_growth_dailytask_metrics_sharings
     i18nDescription: null
     i18nDescriptionParams: null
@@ -1400,6 +1633,8 @@ missions: # mission list
     streamerDay: -1
   - id: 7e146f5a-9eec-4613-956e-a11bcf676359
     type: 20 # Type_Streamer_Got_Sharings
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_share
     lifeCycle: 0
     levelRange:
       min: 11
@@ -1416,10 +1651,24 @@ missions: # mission list
           needMap: false
       i18nComment: streamer_mission_score_comment
       i18nCommentParam:
-        - value: "POINT"
+        - value: "streamer_growth_dailytask_rewards_filter"
           mapOption: 1
-        - value: "1"
+        - value: ""
       animationID: streamer_growth_daily_task_completion_reward_gift_filter
+    altReward:
+      type: 4 # RewardTypeExp
+      iconURL: https://cdn.17app.co/f8673d96-9d23-45a1-b82b-b42af829daa0.png
+      value: 100
+      i18nDescription: streamer_growth_dailytask_rewards_experience
+      i18nDescriptionParams:
+        - value: "100"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: streamer_growth_experience
+          mapOption: 1
+        - value: "100"
+      animationID: streamer_growth_daily_task_completion_reward_exp
     i18nTitle: streamer_growth_dailytask_metrics_sharings
     i18nDescription: null
     i18nDescriptionParams: null
@@ -1428,6 +1677,8 @@ missions: # mission list
     streamerDay: -1
   - id: 9eead552-efab-4afb-8666-906d985f165c
     type: 20 # Type_Streamer_Got_Sharings
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_share
     lifeCycle: 0
     levelRange:
       min: 35
@@ -1444,10 +1695,24 @@ missions: # mission list
           needMap: false
       i18nComment: streamer_mission_score_comment
       i18nCommentParam:
-        - value: "POINT"
+        - value: "streamer_growth_dailytask_rewards_filter"
           mapOption: 1
-        - value: "1"
+        - value: ""
       animationID: streamer_growth_daily_task_completion_reward_gift_filter
+    altReward:
+      type: 4 # RewardTypeExp
+      iconURL: https://cdn.17app.co/f8673d96-9d23-45a1-b82b-b42af829daa0.png
+      value: 100
+      i18nDescription: streamer_growth_dailytask_rewards_experience
+      i18nDescriptionParams:
+        - value: "100"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: streamer_growth_experience
+          mapOption: 1
+        - value: "100"
+      animationID: streamer_growth_daily_task_completion_reward_exp
     i18nTitle: streamer_growth_dailytask_metrics_sharings
     i18nDescription: null
     i18nDescriptionParams: null
@@ -1456,6 +1721,8 @@ missions: # mission list
     streamerDay: -1
   - id: a6302b02-555b-45d5-94c5-44f81b178bce
     type: 20 # Type_Streamer_Got_Sharings
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_share
     lifeCycle: 0
     levelRange:
       min: 80
@@ -1472,10 +1739,24 @@ missions: # mission list
           needMap: false
       i18nComment: streamer_mission_score_comment
       i18nCommentParam:
-        - value: "POINT"
+        - value: "streamer_growth_dailytask_rewards_filter"
           mapOption: 1
-        - value: "1"
+        - value: ""
       animationID: streamer_growth_daily_task_completion_reward_gift_filter
+    altReward:
+      type: 4 # RewardTypeExp
+      iconURL: https://cdn.17app.co/f8673d96-9d23-45a1-b82b-b42af829daa0.png
+      value: 100
+      i18nDescription: streamer_growth_dailytask_rewards_experience
+      i18nDescriptionParams:
+        - value: "100"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: streamer_growth_experience
+          mapOption: 1
+        - value: "100"
+      animationID: streamer_growth_daily_task_completion_reward_exp
     i18nTitle: streamer_growth_dailytask_metrics_sharings
     i18nDescription: null
     i18nDescriptionParams: null
@@ -1485,6 +1766,8 @@ missions: # mission list
 
   - id: 175729ff-d775-4d03-8d5c-e179989b3526
     type: 15 # Type_Streamer_Poke_X_Times
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     levelRange:
       min: 1
@@ -1512,6 +1795,8 @@ missions: # mission list
     streamerDay: -1
   - id: 9ce43c3b-8b5a-4711-8f59-e249544e980a
     type: 15 # Type_Streamer_Poke_X_Times
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     levelRange:
       min: 11
@@ -1539,6 +1824,8 @@ missions: # mission list
     streamerDay: -1
   - id: e20e71d7-9130-49dc-b535-94fb48fc355a
     type: 15 # Type_Streamer_Poke_X_Times
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     levelRange:
       min: 35
@@ -1566,6 +1853,8 @@ missions: # mission list
     streamerDay: -1
   - id: 670857e3-8249-4913-90de-0f2c3521c364
     type: 15 # Type_Streamer_Poke_X_Times
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
     lifeCycle: 0
     levelRange:
       min: 80

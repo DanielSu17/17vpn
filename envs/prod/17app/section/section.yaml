@@ -9,6 +9,19 @@
 #       key: <string>
 #     labelID: <string> (optional if id is `Label`)
 
+# style 1: Top banner + super promote
+# style 2: IG 限時動態 style （官方推薦內容）
+# style 3: Netflix default style (時事話題, ...)
+# style 4: (熱播節目)
+# style 5: (熱門影音)
+# style 6: (猜你可能會喜歡) showing label as possible than DefaultShelfStyle
+# style 7: (新手任務)
+# style 8: (PK) used in more page
+# style 9: GroupCall
+# style 10: GroupCall empty style. Client will show the groupCall entry button even if the grids are less than minGrids.
+
+preservedSectionID: Suggestion
+
 sections:
   - id: TopBanner # Banner + super promote
     name:
@@ -25,6 +38,39 @@ sections:
     enable: false
     style: 2
     more: false
+  - id: NewestStreamer # D0 new streamer 首日新手
+    name:
+      key: tab_hot_d0streamer
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    orderModel: 2
+  - id: GroupCall # GroupCall 派對
+    name:
+      key: group_stream_v3hotpage
+    enable: true
+    dedup: false
+    minGrids: 2
+    style: 9 
+    more: true
+  - id: PK # pk
+    name:
+      key: tab_hot_2019q4_pk
+    enable: true
+    dedup: false  #重複
+    minGrids: 6 # 2個直播間一組PK，3組以上顯示
+    style: 3
+    more: true
+  # - id: AudioStream # AudioStream 聲播
+  #   name:
+  #     key: audio_stream_v3hotpage
+  #   enable: false
+  #   dedup: false
+  #   minGrids: 2
+  #   style: 3 
+  #   more: true
   - id: Suggestion # 猜你可能喜歡
     name:
       key: tab_hot_2019q4_follow_suggestion
@@ -33,7 +79,18 @@ sections:
     style: 6
     minGrids: 5
     more: true 
-  - id: Latest # 新人(和『最新』同邏輯)
+  - id: Label # 超新星
+    labelID: newbie
+    name:
+      key: tw_newbie
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+  - id: Latest # 新人(和『最新』同邏輯) 新星主播在這裡
     name:
       key: tab_hot_2019q4_newstreamer
     enable: true
@@ -41,20 +98,68 @@ sections:
     minGrids: 5
     style: 3
     more: true
+    orderModel: 2
+  - id: Label #HelloKitty
+    labelID: HelloKitty
+    name: 
+      key: event_unboxing_Hello_Kitty
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+  - id: Label #音樂
+    labelID: tw_t_music
+    name: 
+      key: streamer_label_music
+    enable: true
+    dedup: true  
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+  - id: Label #遊戲玩家
+    labelID: tw_t_game
+    name: 
+      key: streamer_label_game
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+  - id: Label #繪畫達人
+    labelID: visual_artists
+    name: 
+      key: streamer_label_highlight_visual_artists
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+  - id: Label #直播商城
+    labelID: market
+    name: 
+      key: streamer_label_market
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
   - id: Music # legacy Music tab
     name:
       key: tab_hot_2019q4_music
     enable: false
     dedup: true
     minGrids: 5
-    style: 3
-    more: true
-  - id: PK # pk
-    name:
-      key: tab_hot_2019q4_pk
-    enable: true
-    dedup: false  #重複
-    minGrids: 6 # 2個直播間一組PK，3組以上顯示
     style: 3
     more: true
   - id: Label #實力歌手
@@ -66,6 +171,7 @@ sections:
     minGrids: 5
     style: 3
     more: true
+    orderModel: 2
   - id: Label #彈唱歌手
     labelID: acoustic
     name: 
@@ -75,6 +181,7 @@ sections:
     minGrids: 5
     style: 3
     more: true
+    orderModel: 2
   - id: Label #演奏達人
     labelID: player
     name: 
@@ -83,25 +190,26 @@ sections:
     dedup: true
     minGrids: 5
     style: 3
-    more: true 
-  - id: Label #遊戲
-    labelID: tw_t_game
+    more: true
+    orderModel: 2
+  - id: Vod # 熱門影音
+    name:
+      key: tab_hot_2019q4_vod
+    enable: true
+    minGrids: 5
+    style: 5
+    more: false
+  - id: Label #全民開播
+    labelID: stayathome
     name: 
-      key: streamer_label_game
+      key: streamer_label_stay_at_home_subtab
     enable: true
     dedup: true
     minGrids: 5
     style: 3
     more: true
-  - id: Label #繪畫達人
-    labelID: visual_artists
-    name: 
-      key: streamer_label_highlight_visual_artists
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
+    category: normal
+    orderModel: 2
   - id: Label # T_職人
     labelID: professional
     name:
@@ -110,7 +218,19 @@ sections:
     dedup: true
     minGrids: 5
     style: 3
-    more: true 
+    more: true
+    orderModel: 2
+  - id: Label #線上課程
+    labelID: online_course
+    name: 
+      key: streamer_label_tutor
+    enable: true
+    dedup: false
+    minGrids: 3
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
   - id: TodayHotTopic # 投票
     name:
       key: tab_hot_2019q4_vote
@@ -136,7 +256,18 @@ sections:
     minGrids: 5
     style: 3
     more: true
- 
+  - id: Label # 聊天, 對應到v1 sub-tab
+    labelID: tw_t_chat
+    name:
+      key: streamer_label_chat
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal #normal代表可以在開播類別被選擇；exclusive則不能被選擇，不填寫則默認exclusive
+    orderModel: 2
+
 #以下是草稿 
   - id: Label #聊天
     labelID: tw_t_chat
@@ -222,13 +353,7 @@ sections:
     minGrids: 5
     style: 3
     more: true
-  - id: Vod # 熱門影音
-    name:
-      key: tab_hot_2019q4_vod
-    enable: false
-    minGrids: 5
-    style: 5
-    more: false
+
 
 
   - id: Show # 熱播節目

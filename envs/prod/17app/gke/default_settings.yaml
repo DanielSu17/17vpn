@@ -1,0 +1,23 @@
+default_min: 
+  backend: 
+    k8ssta-goapi-main: 9
+    k8ssta-gocells-main: 10
+    k8ssta-golives-main: 5
+    k8ssta-goplatform-main: 24
+    k8ssta-gotrade-main: 4
+    k8ssta-worker-main: 40
+  frontend: 
+    admin-v2-17app-services: 2
+    baobaofu-17app-services: 2
+    event-web-17app-services: 4
+    live17-17app-services: 10
+    skyeye-v2-17app-services: 2
+    skyeyewall-17app-services: 2
+    webapp-17app-services: 4
+settings: 
+  backend: 
+    fileName: "scheduled_scaling.yaml"
+    namespace: "k8ssta"
+  frontend: 
+    fileName: "scheduled_scaling_frontend.yaml"
+    namespace: "default"

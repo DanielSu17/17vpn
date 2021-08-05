@@ -1,3 +1,8 @@
+# this config is for QA test only
+# when enableABtest is false,
+# the users still follow the config grouping logics if their userID/deviceID/ip is in the whitelist
+# note: some of the abtest might not support deviceWhitelist/ipWhitelist,
+# please check with RD if you need to use deviceWhitelist/ipWhitelist
 userWhitelist:
 - a4e565c0-3bc9-4feb-8c32-0570281c4cbb # va.p201105
 - c1468fdc-9c5e-4e86-9b0f-3fae2be374ce # va.p201107
@@ -9,6 +14,26 @@ userWhitelist:
 - 015a3615-af0a-4a78-8486-5ee38bb41705 # va.p201106
 - 44bd44e2-e0db-4201-b82a-15cc95575370 # jamesrecommend1
 - fb76e822-6a81-42a7-9ab7-6accf1e7e554 # jamesrecommend2
+- d255c081-473f-46d9-a444-04041cdc4db8 # 小衛17176
+- 1276c44e-dd76-48fb-8813-12bdfb63b727 # erickraz
+- c92f6b4f-acc6-4ea6-8057-dd7a9253c866 # jojowind
+- feec8ba6-2c4a-4190-a723-b9b0a1ffe0ae # shyshyhao01
+- a6d13a30-8043-4568-a27e-7a6209b36c32 # youngyang@17.media
+- 1fc9c331-c4cf-445c-848a-b4f12a2067dd # mark377
+- 608011fd-579b-4e15-b154-3943f952c324 # Qoo_sushi
+- a1c1bf18-cecb-4a16-bb80-eda8305768de # joe_cra
+- 057013bc-dc4e-4f26-8c2a-894abc26106b # kokoknot
+- 52e0d16a-4b60-4a40-9321-9ff587a8e435 # Vincenzzoo
+- a8377b45-e78b-4a29-84cb-a3000fc03373 # kintan007
+- 57a85583-bb66-4bf7-9112-a0454a7ced68 # イチプロ
+- 0386b538-24ed-4906-550d-cf378561e778 # joyful_kaye
+- 762e1db3-d2f3-4602-84e0-5eeef6f0ae53 # OGK1
+- a0e182cd-81ae-4c1c-5003-30e12a47702e # 台湾好き
+- 32d3214f-5c02-49db-85db-a1235a401898 # れにまる
+- a67901a3-1b94-463f-6a2a-4a1598696d10 # ビールDAISUKI
+- b5ad21cb-b76e-4418-b93b-469291e20025 # cpaz
+- 275e9514-299f-4354-b3dc-9dfebb716b2f # treecity
+- c0c730c3-9e86-4264-a7cd-da34735b0b64 # mltester
 
 deviceWhitelist:
 # - cd21cb3d5abe4cd48cb11490f1c5ec32 # iPhone 7+ Black

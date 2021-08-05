@@ -1,4 +1,4 @@
-enable: true
+enable: true # 全部區域總開關
 senderMatchingSecond: 120 # 主動方隨機配對中等待的秒數, pk.match lock time
 receiverMatchingSecond: 30 # 被動方回應的時間
 gameDurationSecond: 300 # ＰＫ遊戲時間
@@ -13,7 +13,7 @@ rejectionUnPairSeconds: 60 # 拒絕後幾秒內不會被同一個人配對到
 minAndroidVersion: "2.10.1"
 minIOSVersion: "3.98.0"
 
-rules:
+rules: # 規則key
   - type: 1
     token: { key: pk_rule_title1 }
   - type: 2
@@ -47,7 +47,7 @@ winFilterAnimationID: filter_win
 loseFilterAnimationID: filter_lose
 animationPrefix: pk
 
-animationLoader:
+animationLoader: 
   - animationID: pk_opening
     url: https://cdn.17app.co/df0be831-4a3d-411b-976f-fc830d8aa99b.zip
     MD5: 0187a7175c29742e179ba3a03263818a

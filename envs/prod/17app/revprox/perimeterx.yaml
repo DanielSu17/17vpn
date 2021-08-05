@@ -4,10 +4,12 @@ enable_log_block_user_id: true
 protected_routes_with_methods:
   - route: "/apigateway.*"
   - route: "/auth/.*"
-  - route: "/cells.*"
+  #- route: "/cells.*"
   - route: "/legacy/followUserAction"
     methods: ["POST"]
   - route: "/legacy/unfollowUserAction"
+    methods: ["POST"]
+  - route: "/lives/.*/comments"
     methods: ["POST"]
   - route: "/lives/.*/enter$"
   - route: "/lives/.*/laborReward$"
@@ -38,8 +40,9 @@ enforced_routes:
 monitored_routes:
   - "/api/v1/apigateway.*"
   - "/api/v1/auth/.*"
-  - "/api/v1/cells.*"
+  #- "/api/v1/cells.*"
   - "/api/v1/sections.*"   
+  - "/api/v1/lives/.*/comments"
   - "/api/v1/lives/.*/enter$"
   - "/api/v1/liveStreams/suggestedLiveStreams$"
   - "/api/v1/liveStreams/hotOptSuggestedstreams$"

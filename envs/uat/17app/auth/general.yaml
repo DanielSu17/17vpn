@@ -1,5 +1,10 @@
+## deprecate below after 17media/api#15608 deploy to prod
 enableNewAppleIDLogic: true
 newAppleIDLogicVersion: "3.115.0"
+
+loginFromMongoSecondary: true
+registerFromMongoSecondary: true
+## deprecate above
   
 featuresRequirePhoneBinding:
   - MISSION
@@ -13,7 +18,12 @@ openIDSuffix: # PROD-3213
   - "0000"  # Special suffix
   - "00000" # Special suffix
 
-registerAutoFollow: true
+registerAutoFollow: false
+recommendAutoFollow:
+  oldClientEnable: true # for device version less than or equal to the minimum required version
+  newClientEnable: false # for device version greater than the minimum required version
+  minIOSVersionRequired: "3.133.0"
+  minAndroidVersionRequired: "2.48.0"
 registerRecommend: true
 completeFollowUsers: 
 completeFollowUsersNum: 3

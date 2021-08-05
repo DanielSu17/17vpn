@@ -1,7 +1,6 @@
 # JP label config
 
 labelInfos:
- 
   - id: "jp_recommend" # レコメンド,推薦
     type: 1
     labelID: 
@@ -10,27 +9,51 @@ labelInfos:
     order: 8
     iconURL: "h"
     isHide: true
-  - id: "jp_music" # 音楽,音樂
+  - id: "jp_jikyu" # 時給チャレンジ！
     type: 1
-    labelID: 366
-    label: {key: explore_jp_label_music}
+    labelID:
+    label: {key: streamer_jp_label_jikyu}
+    featured: true
+    order: 9
+    iconURL: "h"
+    isHide: true
+  - id: "jp_animal" # アニマル
+    type: 1
+    labelID: 
+    label: {key: streamer_jp_label_animal}
+    featured: true
+    order: 4
+    iconURL: "h"
+    isHide: true
+  - id: "jp-oshikatsu" # 推し活
+    type: 1
+    labelID: 
+    label: {key: streamer_jp_label_oshikatsu}
+    featured: true
+    order: 3
+    iconURL: "h"
+    isHide: true
+  - id: "jp_singer" # 歌
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_singer}
+    featured: true
+    order: 10
+    iconURL: "h"
+    isHide: true
+  - id: "jp_instrument" # 楽器演奏
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_instrument}
     featured: true
     order: 11
     iconURL: "h"
     isHide: true
-  - id: "jp_potential" # ポテンシャル,潛力
+  - id: "jp_talent" # タレント（現状ホリプロ用）
     type: 1
-    labelID:  
-    label: {key: explore_jp_label_potential}
-    order: 9
-    iconURL: "h"
-    isHide: true
-  - id: "jp_vliver" # Vライバー,V-Liver
-    type: 2
-    labelID: 368
-    label: {key: explore_jp_label_vliver}
-    featured: true
-    order: 13
+    labelID: 
+    label: {key: streamer_jp_label_talent}
+    order: 12
     iconURL: "h"
     isHide: true
   - id: "jp_game" # ゲーム,遊戲
@@ -38,7 +61,133 @@ labelInfos:
     labelID: 367
     label: {key: explore_jp_label_game}
     featured: true
-    order: 12
+    order: 13
+    iconURL: "h"
+    isHide: true
+  - id: "jp_V-LIVER" # Vライバー,V-Liver
+    type: 2
+    labelID: 368
+    label: {key: explore_jp_label_vliver}
+    featured: true
+    order: 14
+    iconURL: "h"
+    isHide: true
+  - id: "jp_audiostream" # ラジオ配信
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_audiostream}
+    featured: true
+    order: 15
+    iconURL: "h"
+    isHide: true
+  - id: "jp_freetalk1" # 雑談
+    type: 1
+#    labelID: 365
+    label: {key: streamer_jp_label_freetalk}
+    order: 16
+    iconURL: "h"
+    isHide: true
+  - id: "jp_fortune" # 占い
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_fortune}
+    featured: true
+    order: 17
+    iconURL: "h"
+    isHide: true
+  - id: "jp_welcome" # 新人さん歓迎
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_welcome}
+    featured: true
+    order: 18
+    iconURL: "h"
+    isHide: true
+  - id: "jp_DJ" # DJ
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_DJ}
+    featured: true
+    order: 19
+    iconURL: "h"
+    isHide: true
+  - id: "jp_creator" # クリエイター
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_creator}
+    featured: true
+    order: 20
+    iconURL: "h"
+    isHide: true
+  - id: "jp_lv10" # lv10以下
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_lv10}
+    featured: true
+    order: 21
+    iconURL: "h"
+    isHide: true
+  - id: "jp_lv20" # lv20以下
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_lv20}
+    featured: true
+    order: 22
+    iconURL: "h"
+    isHide: true
+  - id: "jp_lv30" # lv30以下
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_lv30}
+    featured: true
+    order: 23
+    iconURL: "h"
+    isHide: true
+  - id: "jp_boys" # 男子
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_boys}
+    featured: true
+    order: 24
+    iconURL: "h"
+    isHide: true
+  - id: "jp_girls" # 女子
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_girls}
+    featured: true
+    order: 25
+    iconURL: "h"
+    isHide: true
+  - id: "jp_show"  #熱門節目
+    type: 2
+    label:
+      key: "streamer_label_show"
+    iconURL: "h"
+    isHide: true
+  - id: "2108_jp_summer" # 夏の思い出
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_summer}
+    featured: true
+    order: 2
+    iconURL: "h"
+    isHide: true
+
+
+  - id: "jp_music" # 音楽,音樂
+    type: 1
+#    labelID: 366
+    label: {key: explore_jp_label_music}
+    featured: true
+    order: 111
+    iconURL: "h"
+    isHide: true
+  - id: "jp_potential" # ポテンシャル,潛力
+    type: 1
+    labelID:  
+    label: {key: explore_jp_label_potential}
+    order: 109
     iconURL: "h"
     isHide: true
   - id: "jp_pickup" # パタパタ２
@@ -46,55 +195,7 @@ labelInfos:
     labelID: 
     label: {key: explore_jp_label_pickup}
     featured: true
-    order: 10
-    iconURL: "h"
-    isHide: true
-  - id: "jp_fashion" # ファッション,时尚
-    type: 1
-    labelID: 371
-    label: {key: streamer_jp_label_fashion}
-    order: 14
-    iconURL: "h"
-    isHide: true
-  - id: "jp_performer" # パフォーマー,表演
-    type: 1
-    labelID: 369
-    label: {key: streamer_jp_label_performer}
-    order: 15
-    iconURL: "h"
-    isHide: true
-  - id: "jp_hobby" # ホビー,嗜好
-    type: 1
-    labelID: 370
-    label: {key: streamer_jp_label_hobby}
-    order: 16
-    iconURL: "h"
-    isHide: true
-  - id: "jp_variety" # バラエティ,综艺
-    type: 1
-    labelID: 372
-    label: {key: streamer_jp_label_variety}
-    order: 17
-    iconURL: "h"
-    isHide: true
-  - id: "jp_freetalk" # 雑談（タレント）,闲聊
-    type: 1
-    labelID: 365
-    label: {key: streamer_jp_label_freetalk}
-    order: 18
-    iconURL: "h"
-    isHide: true
-  - id: "jp_talent" # タレント（現状ホリプロ用）
-    type: 1
-    labelID: 
-    label: {key: streamer_jp_label_talent}
-    order: 19
-    iconURL: "h"
-    isHide: true
-  - id: "jp_show"  #熱門節目
-    type: 2
-    label:
-      key: "streamer_label_show"
+    order: 110
     iconURL: "h"
     isHide: true
   - id: "exclusive" # 付費解鎖, 獨家內容
@@ -104,15 +205,42 @@ labelInfos:
     iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
     order: 2001
     isHide: true   
+  - id: "jp_fashion" # ファッション,时尚
+    type: 1
+#    labelID: 371
+    label: {key: streamer_jp_label_fashion}
+    order: 114
+    iconURL: "h"
+    isHide: true
+  - id: "jp_performer" # パフォーマー,表演
+    type: 1
+#    labelID: 369
+    label: {key: streamer_jp_label_performer}
+    order: 115
+    iconURL: "h"
+    isHide: true
+  - id: "jp_hobby" # ホビー,嗜好
+    type: 1
+#    labelID: 370
+    label: {key: streamer_jp_label_hobby}
+    order: 116
+    iconURL: "h"
+    isHide: true
+  - id: "jp_variety" # バラエティ,综艺
+    type: 1
+#    labelID: 372
+    label: {key: streamer_jp_label_variety}
+    order: 117
+    iconURL: "h"
+    isHide: true
 
-
-# 探索頁面會出現的label
+# 探索頁面會出現的label 
 exploreLabels:
   - jp_pickup        # パタパタ２
   - jp_recommend     # レコメンド,推薦
   - jp_music         # 音楽,音樂
   - jp_potential     # ポテンシャル,潛力
-  - jp_vliver        # Vライバー,V-Liver
+  - jp_V-LIVER        # Vライバー,V-Liver
   - jp_game          # ゲーム,遊戲
 
 
@@ -184,148 +312,107 @@ labelWhiteList:
     - 5ccfd840-f66b-4b0b-860e-ab800885143b # 吉川プリアンカ
     - ad6a9116-a19e-4dd7-b230-01f339b5ed00 # わちみなみ
     - a91be970-2d12-488a-95f4-3b81aef8cc96 # Basco(チングーズ)
-  
+    - c92433c1-8a28-4898-b39a-c4696bba9ff2 # パパちゃん(おくだん家)
+    - 9212c586-2f55-4258-8808-8f3f538168b4 # 佐竹桃華
+    - 0bf4d766-b39d-48d0-90d4-094d531fe2f6 # 山内鈴蘭
+
+
   jp_show:
-    - bbf85355-348d-45d4-6555-cf03881171e0 #17Q
-    - ee1e88f8-932a-4b65-aaa9-792f0d38630d #Auditions
     - e1d193fd-0be8-449a-b462-72f7de55a46b #17LIVE+
+    - ee1e88f8-932a-4b65-aaa9-792f0d38630d #Auditions
     - 94b26e29-655e-475c-ab73-9287f496f4c8 #a-nation
 
   #jp_pickup:
    # - 16226683-73a4-4055-a536-d3bb317cb3c7 # 17japan
     #- 1001c909-355b-47c6-8e46-632bf05a453e # あみゅね
-    #- a3251943-fe02-4425-8f89-573edf423e86 # れい_reichannel	
+    #- a3251943-fe02-4425-8f89-573edf423e86 # れい_reichannel 
     #- 5cd24ae7-481d-40e5-8a53-49b12dac7b78 # MIKI.entertainer
     #- 25f04237-8bd9-415e-4380-afcf558114bc # kana_.jp
     #- 119d02a6-3346-41d6-a313-0491a25ee542 # Yin_Ghibli0716
 
   jp_recommend:
-    - 80d31e5a-40a3-40b1-a73e-4a17faea2c8a # みゆう🎀💕💓💗
-    - 127fc2a8-183e-4073-5492-615848a28efb #
-    - 42584c52-bd81-4746-4243-fac9567e2141 #
-    - fe4d32d3-5cf6-423a-87b1-b34d85039a2f #
-    - 811f9556-b97b-4a60-986c-8473df07bbe1 #
-    - 1925119b-768b-443c-b9e6-5969dd8c5ee1 #
-    - a7d02053-5815-4f7d-987d-3174c4430f17 #
-    - 75abdb3f-a74f-49ae-8ac3-ecb632c0622d #
-    - c64bc8a1-e528-4707-9763-99c83b45544b #
-    - f1f109af-0fb1-4858-9942-6eb63b80e2f1 #
-    - fd29b117-e911-484a-7d9b-b0a431eb36ed #
-    - f887f307-e568-439d-6051-2fe8b2cb4f9f #
-    - 748035bf-2376-4ea5-a36a-42c7cc5870a2 #
-    - df574cd5-7343-4c50-6933-a38647e14443 #
-    - 6c0332e3-4bbb-4f28-5614-2c30924a19fd #
-    - 63ea0948-9e69-46c7-6948-51c1f052e893 #
-    - ae598f0b-6741-4832-a3c8-22b2bcc5670d #
-    - 67316a32-5fb5-41e0-ae2f-112d02a61d76 #
-    - 4d7466f9-eb5b-41b0-7ebb-ecf81ca0231c #
-    - 27ab8aac-34e2-40d9-882a-c59a0716c84a #
-    - 79e436fe-b945-4c15-bafe-a17884dc94a2 #
-    - 7f70fae7-1290-4beb-5f1e-84e53100e02b #
-    - ca317b16-b357-4e8d-6ff2-4dbcbb45fc7f #
-    - 943f0d36-fc03-40d1-9a72-9f10635cb28f #
-    - ad1f665c-ad35-4562-87bc-24d94ec7b620 #
-    - a5633cbb-5364-4073-91cf-e6bbb123fcf2 #
-    - ee997ff9-f9fa-496d-9169-3f71e91aaa23 #
-    - 5ec1b1a2-65a2-4574-8441-4927408a4eca #
-    - 951ca7d4-8c4f-46bb-4d72-c0ac7677af77 #
-    - 9a64d68d-bce7-4a5a-baea-d041f3739549 #
+    - e398fbb8-6c15-45d0-8a19-f47832de9cca
+    - cc21bc34-7569-413c-a237-dd2006b22d0d
+    - 71719eb3-53a6-4b67-4a1f-24063776d12b
+    - a4074271-682e-4240-8336-ccf9d540ddec
+    - 811f9556-b97b-4a60-986c-8473df07bbe1
+    - 75abdb3f-a74f-49ae-8ac3-ecb632c0622d
+    - 11cfc6ff-1901-47d6-af96-5ac3d0a3ffc3
+    - a3d25dac-1d36-4ef1-6edc-389cd506d6f4
+    - 01454377-9300-4a74-a32e-b6efc17e849d
+    - 3f0865a9-bfea-4fe1-8858-74e7bd2d76a3
+    - 310fac30-ed6d-4f49-9dbf-446afc39c2c1
+    - df1f0eca-7782-4891-af83-294732d71b1e
+    - 41c61965-8033-4ab5-8767-0a3a92e0a56e
+    - 74ee37d4-4c7a-417c-a6dc-4ae1f546b95a
+    - 1e8ddbb0-dd1f-4147-8905-5aadc2ddb400
+    - be91f203-6777-466c-a117-15c8a6892bf4
+    - fd7867c6-3fb0-4ebf-9036-8bb5ece66687
+    - e0db4ca2-2c1c-48b9-a57e-99d16f79ecbb
+    - 9a64d68d-bce7-4a5a-baea-d041f3739549
+    - c140e954-90f1-4252-bad0-3fdfe47ad946
 
     
   jp_music:
-    - da681235-3655-4966-812b-7744f361a51b
-    - c53a513a-63ad-4f65-beea-2557bbaba459
-    - fa95a5a8-fb24-4c73-6af4-e7a48641e35f
-    - 13ca75b4-f3b7-4458-b99e-2045c43fa467
-    - 128320ff-42da-47ed-88c6-748f085440a6
-    - e26a490f-6eb3-4b8a-648e-0d544684de8b
-    - 1bba120f-97ae-43b8-6183-dea761889408
-    - 61bc502c-8a44-4ff6-a593-506cd6853ebc
+    - 9a64d68d-bce7-4a5a-baea-d041f3739549
+    - 01454377-9300-4a74-a32e-b6efc17e849d
     - cc2785f8-e369-4099-53f2-0852b74b63fe
-    - da1866f7-c10d-4eab-b875-6e35e2cc6793
-    - 74f49b6a-b6d0-4a10-81da-fbf183df7710
-    - 64bf678f-f150-46bf-81a6-f8de5defeaf6
-    - e9a11926-ae86-42e9-9993-a0efd67dcb62
-    - 28ed5ab8-0b1d-432e-831e-04568c84f985
-    - 96c227d7-57c5-4005-4b02-db1415caa509
-    - 017a77b5-0051-48f0-9089-0e187650455e
-    - febea57b-f0f7-4177-b2e5-c89f21cd2ad5
-    - 7d2756e1-75a2-4a14-54be-696f6f538233
-    - c2c173f0-803d-4a72-b53f-7a647a8feb51
-    - 9236a1f1-e315-4a8c-ac23-5ac5b1f3d6b1
+    - 152e60ec-3260-4575-872a-811a6684820c
+    - 52365a77-f8bc-4e60-9641-a1e5c36f7fed
+    - fcd6ddb1-a8a4-4fb3-a76c-56c941760894
+    - 135b599a-0d3e-44f6-9bf0-e78dd9841e04
+    - f7aa84d1-01f3-4245-ad19-3a544e28a83c
+    - 53561cb9-627f-4c3a-9d7f-dc9600deaa17
+    - 023c2d78-3dc9-4536-8a9c-7bf36cc725e7
+    - a3d25dac-1d36-4ef1-6edc-389cd506d6f4
+    - a70df288-dbcb-446b-9a2e-68d078452d6b
+    - 2913cb8f-a5be-4b03-ab9d-f375bf735a78
+    - fde5a686-7be1-4f85-9c85-5aab39313df0
+    - e7ab63c3-3481-428f-aa61-d519edb147a9
+    - a3fedc3c-93b2-4786-b085-ffa651c54bb3
+    - 64d5ec07-98fc-4ca4-afa2-d1d079762600
+    - 1ce49e4a-a879-4a1e-a3ae-a6421d667959
+    - 172daf33-4d70-436f-a23c-8112537ecd8d
+    - f2bc3bdf-ab00-4b77-ba0b-a0cd37164959
 
   jp_potential:
-    - 98b83ed8-baa1-4d63-8214-cb80344db3a5 # 夢夢🐈💐💓mumu
-    - 0224f1b4-6759-44ad-7ccf-f579c4e72206 # ルミナ🍪Rumina
-    - a2679e9f-b971-4fce-893e-b799c47e6c1d # みさ👠MISA🌹✨
-    - 37e89f92-02ee-4c03-a599-94a7ea8a4c2e # ちゃんなな🙊🍌Nana🍼
-    - ee3735ac-83a1-4c95-b53f-82e745404365 # ゆきぽぽ🌺💚yukino
-    - 86f2d52e-f28b-4bec-88ca-22f65e86f1a1 # minaちょす
-    - a7fd1d21-4228-4262-8d75-b0ed15b5ce9a # 澪🐳🐋miomio🐋🐳
-    - 8112c88f-dc2f-4340-b43a-341c1752314e # まいたん.🥂💍💕
-    - 6b0f246e-04ed-4444-9d44-7d8e2073ce52 # れいな🐶🍓💙REINA
-    - 5ad2899c-3571-47ca-aacc-3a1c4022879a # ほのぴす🐰👑
-    - 93555197-2d84-4f29-bb0e-3c79d781dd9d # るな🐈🍓🌸Luna
-    - 538f320b-4a4c-494f-a45b-0b4cde3dfd04 # yuzu_minami
-    - d61ab8da-e770-44e7-8d11-cf0777ae8e91 # asukaaa_87
-    - 2618817c-8b56-4e58-8051-998284750ce1 # れなたん_001
-    - fe05cc1e-e814-4039-ac5e-5bead37c6300 # どれみ.
-    - 5ef14593-f8ee-4f17-a504-b6f605981a26 # ポップコーンrina🍿🐶
-    - a290ff26-6006-4e02-b342-30f50f3a1287 # peach🍑hime💍🤍
-    - 4efc063f-f8cf-428a-b245-393f96370448 # きき._.kiki
-    - f11ef9ef-fe55-4efe-9b65-637db5511b26 # じゅーる🌙にんにん
-    - 368afeb0-cb41-44a7-834f-00ca22bd57e5 # 岡山🍑ももchan24🐶💋
-    - 212b34b1-9f98-4b86-851e-899ed0f69463 # CANA🍧🏖魚🐟
-    - 679b4df0-6dfe-4655-947a-fb6f6e787ca5 # _ゆんころ_
-    - d7444ad5-3cac-4e6a-a236-2a7b8be1eb2d # あーや🦈🐩acom55🐧🌷
-    - 7027c9c8-9bc7-4439-a0e4-2930ea6d3dfd # ありちゅ💋🦖🍼
-    - c50c53d9-965a-453e-9d3a-af21f0e1d1f2 # ふち🍭🐰💎
-    - c129bc56-4c34-42be-8de5-3a37dba8c517 # karu💜🦋⭐️star
-    - 2275ff74-8f4d-472b-90ce-e8f3457077ee # ひょうな🐆💎Hyona🍒
-    - 4da09aa5-5ece-4906-bf06-0a7dca60c2ff # _お手隙のasami
+    - 38f923c7-36f8-41be-b323-4d7b1200271b # aki105
+    - ee353f9c-349d-4445-888e-48859cb0d952 # アスカ🦋🌈asuka💖
+    - dc16abac-8050-4c12-9b8f-06b41abb10c3 # はらみ_29
+    - d800e74e-765c-47a4-b745-1458ef57e5ff # SEIICHI_G.U.M🎙🔥🦾
+    - 300d2ed0-b73d-4b17-b995-b1a6611aaeca # ゆいな💎Yuina🍒🧸
+    - fe7465aa-7af2-4917-a02c-718b2aca7c55 # kai🍻💕🐶
+    - 266ff288-93e9-4c4e-7f91-aa77fead3ad1 # あやころ🐿️Koro💝
 
   jp_game:
+    - fdddee29-19f5-4f25-a9bc-f91e41376866 # かりんが_1016
+    - b1460e51-b1ad-4ecf-ac23-326e5189c7d1 # こんぶ_morino
+    - 3bc6a336-d949-4dcb-86d7-849643e0d287 # みさき_95
+    - c127f3db-f0c0-4d81-80ee-987f4cfe70eb # lentorer
+    - 84d48441-b3d2-4dd0-8a9a-58e5417e9667 # .👻つぐちぃ.___.🎃🍭
+    - dc789a58-f236-418a-9cd5-33e76065522d # ふじもん🎮Japan🗻🌸
+    - 419deb5d-19fe-44a4-ad2c-1c05ea3a6bb2 # 茶柱tyavashira
+    - 62f6babc-d649-4e68-ad6e-1de1b48f64f6 # ほった🐱LIVE🎮🎧
+    - cebd79c4-0fbc-4488-b564-c9fa4013355d # AG🥂japan👻🍆
     - f35f856a-d667-44ef-8fc5-30950eade04e # 猫无🐱れおてゃん🗽🔥
-    - ef865a9a-9af6-41b5-8280-abefe277c1be # x💙🐰みひちゃ🐰💙x
-    - 14e1822f-85fe-4f9c-b43f-7134e7f22c06 # クルトワ_courtois
-    - 749c76ba-2f56-4c67-89b9-f1f15e4c21be # ちびたん🍙🐱tibitan
-    - 50d53a3c-4877-4e20-988d-d14370cbe4f8 # たつ乃_GameRoom
-    - 75fb1e2b-d4f3-4ced-af22-8fda7aa58f83 # じゃっく_inuu
-    - ffa0b6c9-426c-461a-be8b-6adf4f1dcd0d # じらふGames
-    - 3af2fd9c-841b-429c-ab06-080f0048a005 # コバッチ_gaming
-    - 924ab5ed-07ae-4a56-9c0a-51bbc0d50758 # toranosuke.77
+    - 4c923231-1de0-47bd-4b4f-c6b5fe744b7e # みぃたん🍓🎀mi-tan
     - bc90b653-392a-4697-ab6c-f4947194ef61 # s2はこs2🙉hako💥📢
     - 627e64ca-8e56-43d0-8e96-0b4ed896b8f1 # Maitv🐻🎈
-    - f6297fdb-2dab-4f5e-bb9c-4d3f35b367b1 # 兎乃はち.
-    - 3badb308-185a-4e0a-907b-1e33e77cee48 # りゅう1_ch
-    - 8caca8d4-f45a-46f2-95b7-c3f8e8a65440 # みあ🍟🍓🎮miamia
-    - 5251e6de-9517-4e8f-8478-e3ee8d3c6be2 # れとち_
-    - 789f0fca-2fc6-4ef3-b5f2-59765d7ccca9 # ぱい美👙🍌
-    - 55141922-e38e-48f8-ba10-bfcd65119ae3 # げげたん
-    - 4544df2d-011b-4eba-9de3-95f9178aab4d # kyamihei_baby
-    - 56d12d21-f7b8-45ce-bc8c-9da1438730b1 # leuas_erde
-    - cd7f7bf4-37bf-4742-61dd-e4db5ba21eaa # ヒロにゃん🐱🍀Hironyan🐱🍀
-    - 31ba2f2e-0b07-460a-a945-38947e8eda52 # ことみそ🎲🎙️🍺
-    - c539d34c-e3d2-4260-a929-28b5b8c52f15 # さら🎨Sarah🦊🌟
-    - 00e030c7-2b33-471f-9c15-9743af0ffed3 # 兵長⚔
-    - acf556a8-abec-4b4b-ad00-201a909488f2 # めのたろ🎮🤪🐍meno
-    - 4f346b9e-854e-4cf1-9127-5ea4d126d76e # ゆーとん･🐽･yu__ton
 
-  jp_vliver:  
-    - 853f451b-f428-4645-b647-311827b89f60 # ガブ
-    - fa398096-c554-4ccb-8a57-3e5c21607079 # 狐狐音の前🈁VLiver
-    - 7257f6c5-6784-4c77-a8fa-8a48afdbfcba # 満点花丸
-    - d36fb1df-1a83-4f67-bab6-26fd1ce89d40 # 菖蒲_Shoub_
-    - bba7f454-d95a-4160-a69e-02a17a6008fe # うーたん🧪🧬vliver
-    - 05724242-8d32-4202-9b9d-7e900a0cbc0c # 瑞無るく_0214
-    - f9f8db04-0a7e-4ab8-9484-07b847a10f7c # くまお🐻Kumao
-    - f6b0c54e-b545-4269-8266-a15cac8cadb3 # エマ🦋V-Liver💫
-    - 2ccc4f7d-8d87-4b47-aa35-9252f80c80bf # 🎀Ichika😺いちか🎀
-    - 6ca14851-646b-4b75-bd11-7c4bdb3d0e44 # takanashineiro_vlive
-    - fefe0d5f-90e5-4e03-9651-2ffdfa125d05 # 兎妃toki_vlive
-    - a07a1c94-2546-4b54-b5b5-e1b4e028f6c3 # genten_dayo
-    - ed14051a-0d2d-4a40-b6c1-590703184765 # 勇者まる
-    - 02d23a5f-263a-4fdc-827d-b6725c266e2b # 七色やば美🌈📇VLiver
-    - bd027b2b-3a52-4664-b613-2d7a106abeaf # はいぴんぐ🎮💚モナカ
+
+  jp_V-LIVER:  
+     - f3dbfa56-5ff9-4769-b7a7-ac05a1035361 # 雛乃こまる🐣💦VLiver
+     - ea3cac0a-ea67-47fa-8e09-ad18303224a8 # むらゆき🐈VLiver
+     - c5a33659-1aff-4d18-9a6d-739f2afe0cfa # 高野宮ぴよ🐣VLiver
+     - 3810b25c-e133-4c12-9b7f-8d0aae27c19e # ぐーしゃ💕VLiver🎧
+     - 697ef12f-c317-4bf7-a1b3-da763aa7f6d5 # むにひめ
+     - bd027b2b-3a52-4664-b613-2d7a106abeaf # はいぴんぐ🎮💚モナカ
+     - 95da979b-862a-48c4-b231-956c90609ccf # 揺眠ゆあ🦋VLiver🌙💜
+     - 8d6559ee-2f24-45ed-ab44-cd7ee247f974 # 音々レイ💟⚡️Vliver
+     - df1c97b0-3ba7-4a3f-af66-1516f828889d # 夢叶🐣るあ👑live💛🧡
+     - aa0214c5-8096-46fa-892f-9ec4c39b47d6 # 空彩🌈*♪VLiver
+
+
+
   jp_freetalk:
     - 8d8f7a87-b97b-4fa6-8a3a-f753e1c18d44 # かいひ🌏Kaihi🐠✨

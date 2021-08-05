@@ -1,0 +1,16 @@
+aggregateDuration: 10
+aggregateThreshold: 50
+cronPutDuration: 10
+concerts:
+#  - userID: mockUserID
+#    roomID: 12345
+#    startTime: 2018-07-31 08:31:00 (GMT+0800)
+#    endTime: 2018-08-01 08:31:00 (GMT+0800)
+regionProviderWeight:
+  TW:
+    - provider: 13 # wansuCDN
+      weight: 60
+      throttle: false
+    - provider: 14 # googleCDN
+      weight: 40
+      throttle: false

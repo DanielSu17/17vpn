@@ -5,6 +5,13 @@ default_provider:
 rtmp_providers_secondary: # AWS/CHT will create ChannelID/secretKey so we should not set here
 - WANSU_LOW_LATENCY
 - QINIU
+rtmp_providers_groupCall:
+- WANSU_LOW_LATENCY
+- QINIU
+rtmp_providers_HDMode:
+- WANSU
+- WANSU_LOW_LATENCY
+- AWS
 rtmp_providers:
 - name: DEFAULT
   quality_support: 0
@@ -29,6 +36,8 @@ rtmp_providers:
 # - 7b8acc99-44e3-44ac-b702-f58c536d241a # teddypk002
 #  - ce1527f1-9498-4055-876e-16b72b1e5d50 # wani_belle
   - e3284f88-884f-46f4-512b-490525c34df8 # androidtest5
+  - 4b35d0f0-f7fe-4bb8-a43d-9966872dd3b5 # qacontractor3
+  - 9692933f-079c-455a-94c5-13f0336c5070 # qacontractor4
   - 14285db8-de44-47d5-b3e6-429d3b6e9d38 # aaqqaatw02
   - b2523d4e-f221-4eb8-8748-9d6a68a3c935 # amyshen171
 
@@ -37,9 +46,7 @@ rtmp_providers:
   weight: 0
 - name: WANSU
   quality_support: 1
-  weight: 0
-  region_weights:
-    TW: 0
+  weight: 50
   users:
   - caf2da0e-54cb-4058-4f1c-4056eb970161 # janet.w01
   - e3c4c804-8a9c-4b7c-8026-0a8ed602b42c # jen87go
@@ -140,7 +147,7 @@ rtmp_providers:
   - 6b49c28b-dbfb-447e-73a6-e6d372271933 # carlqq52
   - 7eb69798-615f-47a0-69c5-e651148ce8a8 # n7test
   - a1c9ccbd-9f1b-44dc-a2ad-a85387489a96 # janjanispk1
-  #- 6446c762-7d3e-4bb3-b921-da78e966c829 # vava.pp01
+  - 6446c762-7d3e-4bb3-b921-da78e966c829 # vava.pp01
   - 24c986a6-fed5-4c41-8c81-f926ecd005f1 # vava.pp03
   - c6e35e23-2018-47b2-afc8-adfd8ace1e22 # iron97
   - 6dfb9e95-3a7c-4369-a7d3-9ba618c20197 # hanchang.
@@ -185,7 +192,7 @@ rtmp_providers:
   
 - name: AWS
   quality_support: 0
-  weight: 50
+  weight: 0
   region_weights:
     TW: 100
     HK: 0
@@ -197,6 +204,7 @@ rtmp_providers:
     enabledAtUTCHour: 0
     disabledAtUTCHour: 23
   users:
+  - 2b0c0bd1-203c-486e-8826-4f34d1960b01 # ray.de.test
   - 73f2de03-5cd3-4167-924d-1f4b6ef7080b # qacontractor7
   - 73e8b839-a1ca-4b08-a51d-2b02ffdea153 # bellayayaya
   - 7b8acc99-44e3-44ac-b702-f58c536d241a # teddypk002
@@ -220,7 +228,8 @@ rtmp_providers:
 #  - 16538029-e8e6-4607-9233-51af92b3c978 # janjanispk2 移除白名單用來測試正常的 AWS+PK
   - a80e9dea-efb4-43b7-970e-700a63d640de # shonwang
   - 3799d926-2ae2-4942-a510-847a017921cc # kevinmh01
-
+  - ce1527f1-9498-4055-876e-16b72b1e5d50 # wani_belle
+#  - f0982912-a519-433f-b17e-c76fb1972f18 # bochiu 移除白名單用來測試正常的 AWS+PK
 - name: QINIU_AUTH
   quality_support: 0
   expire_after_hours: 6
@@ -239,7 +248,28 @@ rtmp_providers:
   # - cdeba055-0094-4bc9-84d4-a9893bb03a6b # qaprogram3
   # - e3c4c804-8a9c-4b7c-8026-0a8ed602b42c # jen87go
   # - 0386b538-24ed-4906-550d-cf378561e778 # KAYE_zaza
-
+  
+- name: LIVE17
+  quality_support: 0
+  expire_after_hours: 6
+  weight: 0
+  levelRestriction:
+    minLevel: 0
+    maxLevel: 0
+  users:
+  - 496ab001-755b-40f0-a1d7-e8a828e740ba # teamz1
+  - 9df5ab12-67d9-4a53-b0af-a0c62511f20c # teamz2
+  - 92280891-cde7-4d23-999d-15e96675de87 # teamz3
+  - f2057707-4b15-4cf7-a5c3-df5df23fe1e2 # teamz4
+  - 7be57992-0f4f-4581-9c5b-d692bd748434 # teamz5
+  - e3500ac9-b6c8-4bf3-af62-04fd38afb0f0 # teamz6
+  - 54fa6bde-64cc-4de0-8c43-f00742719772 # teamz7
+  - 64ed5704-9d18-4cbd-88fa-9011a5b00104 # teamz8
+  - b201e7c1-b2bf-46a7-bff6-13fc0c5a38e0 # teamz9
+  #- 31ec8305-9917-4c4a-994b-414f689974c5 # teamz10
+  - 3e96ad39-7849-4096-8b70-fdd1fe2a4803 # janjanispk3
+  #- 49ce4402-f72b-4537-6f91-4f81c815bcf8 # androidtest3
+  #- f0982912-a519-433f-b17e-c76fb1972f18 # bochiu
 
 message_providers_17q:
 - name: PUBNUB_MESSAGE
@@ -255,7 +285,7 @@ message_providers_general:
 - name: PUBNUB_MESSAGE
   weight: 100
   users:
-  # - 9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba # kevinmh03
+  - 9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba # kevinmh03
   - 2e95de40-7880-422b-7f3b-0af9405e3b4d # janet.w02
   - cfa48648-928e-410b-9af6-c24dd62f9c78 # sssssugo
   - 94b56df0-336b-4968-7c41-88ec85246024 # 17好聰明SKODA
@@ -284,7 +314,7 @@ message_providers_dynamic:
 - name: PUBNUB_MESSAGE
   weight: 0
   users:
-  # - 9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba # kevinmh03
+  - 9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba # kevinmh03
   - 2e95de40-7880-422b-7f3b-0af9405e3b4d # janet.w02
   - cfa48648-928e-410b-9af6-c24dd62f9c78 # sssssugo
   - 94b56df0-336b-4968-7c41-88ec85246024 # 17好聰明SKODA

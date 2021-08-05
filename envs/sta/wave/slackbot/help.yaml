@@ -231,3 +231,14 @@ commandHelp:
         title: "`[list post]`"
         description: |
           > 列出指定 userID 最近三則 posts，若要置頂 post，可用此指令獲取 postID
+  cashout:
+    title: "Cashout 相關"
+    commandsHelp:
+      list:
+        title: "`[list cashout]`"
+        description: |
+          > EXAMPLE: !cashout list 2020/02/10 2020/02/11
+      reject:
+        title: "`[reject cashout]`"
+        description: |
+          > <reason> can be 1(銀行名稱), 2(銀行代碼), 3(分行名稱), 4(分行代碼), 5(銀行帳號), 6(銀行帳戶戶名)

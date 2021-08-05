@@ -1,5 +1,8 @@
 {
   "enable_api_protobuf": true,
+  "unsupported_overlay_publish_providers": {
+    "providers": [9, 12]
+  },
   "videoBitRateQuality" : {
     "low" : {
         "encodedVideoWidth" : 360,
@@ -21,8 +24,13 @@
     }
   },
   "matomo_event_grpc" : {
-    "ios_apply_version" : "3.128.0",
-    "android_apply_version" : 2584
+    "ios_apply_version" : "",
+    "android_apply_version" : 9999,
+    "web_matomo_version": "v1"
+  },
+  "matomo_event_general" : {
+    "android_apply_version": "2000",
+    "ios_apply_version": "3.136.0"
   },
   "live_atmos_v2" : {
     "ios_apply_version" : "3.115.0",
@@ -120,10 +128,11 @@
   "stream_profile_config": {
     "ios_apply_version": "3.120.0",
     "android_apply_version": 2496,
+    "apply_region": ["TW", "US"],
     "min_stream_duration": 60,
     "unstable_network_ratio_for_upgrade": 0.01,
     "unstable_network_ratio_for_downgrade": 0.05,
-    "reverse_quality_wait_time": 300,
+    "reverse_quality_wait_time": 60,
     "max_reverse_quality_count": 3
   }
 }

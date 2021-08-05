@@ -11,3 +11,50 @@
   HPAConfigs:
   - name: k8ssta-worker-main
     minReplicas: 8
+    
+# schedules for PreProd QA stress test
+- startTime: "2021-07-16 11:00:00 (GMT+0800)"
+  endTime: "2021-07-16 20:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8ssta-goapi-main
+    minReplicas: 120
+  - name: k8ssta-golives-main
+    minReplicas: 85
+  - name: k8ssta-gotrade-main
+    minReplicas: 12
+  - name: k8ssta-gocells-main
+    minReplicas: 25
+  - name: k8ssta-gousersearch-main
+    minReplicas: 10
+
+# Example for CM stress test
+- startTime: "2021-08-04 13:00:00 (GMT+0800)"
+  endTime: "2021-08-04 19:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8ssta-goapi-main
+    minReplicas: 200
+  - name: k8ssta-golives-main
+    minReplicas: 85
+  - name: k8ssta-gotrade-main
+    minReplicas: 12
+  - name: k8ssta-gocells-main
+    minReplicas: 25
+  - name: k8ssta-gousersearch-main
+    minReplicas: 10
+  - name: k8ssta-concert-trade-main
+    minReplicas: 45
+  - name: k8ssta-concert-stream-tw-main
+    minReplicas: 40
+  - name: k8ssta-revprox-tw-main
+    minReplicas: 36
+  - name: k8ssta-data-middleware-main
+    minReplicas: 50
+
+# Jennifer stress test
+- startTime: "2021-08-04 8:50:00 (GMT+0800)"
+  endTime: "2021-08-04 10:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8ssta-data-middleware-main
+    minReplicas: 5
+
+# How you doing

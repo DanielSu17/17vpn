@@ -2,7 +2,17 @@ pnCheckNotif: 300 # 5 mins
 minAndroidCaptionBlockVersion: "3.13.0"
 minIOSCaptionBlockVersion: "4.101.0"
 
+captionBlockConf:
+  oldClientEnable: false
+  newClientEnable: false
+  minAndroidVersionRequired: "3.13.0"
+  minIOSVersionRequired: "4.101.0"
+
 followerCountTriggerEvent: 100000
+# PROD-4634
+organicStreamer:
+  autoPass: true
+  autoPassUserLevel: 0
 
 forcePromoteVirtualStream: false
 enableExtInfoTypeEvent: true
@@ -39,7 +49,7 @@ defaultComments:
       - content: "你識咩潮語？🤔"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
-      - content: "Art is @live🎨"
+      - content: "做咗每日任務未？"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
       - content: "食咗早餐未啊？🤤"
@@ -77,7 +87,7 @@ defaultComments:
       - content: "你識咩潮語？🤔"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
-      - content: "Art is @live🎨"
+      - content: "做咗每日任務未？"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
       - content: "等咗你成日啦😚"
@@ -87,11 +97,11 @@ defaultComments:
 hotCellOrder:
   regionGroups:
     - regions: ["HK"]
+    - regions: ["TW"]
     - regions: ["JP"]
     - regions: ["US"]
-    - regions: ["TW"]
     - regions: ["OTHERS"]
-    
+
 birthdayComment:
   contentColor: "#28232D"
   backgroundColor: "#FFFFFF"
@@ -149,5 +159,17 @@ programCommentPin:
   enable: false
 
 pkFrameID: "pk_winner_frame"
-pkFrameURL: "https://cdn.17app.co/6ae73d06-4010-4696-80a2-d20640709ccf.png"
-pkIOSFrameURL: "https://cdn.17app.co/7d5dd83d-8b8f-4acf-abdd-fb04717af49f.png"
+pkFrameURL: "https://cdn.17app.co/27d912fc-0061-4ab2-9acb-9520c4382451.png"
+pkIOSFrameURL: "https://cdn.17app.co/27d912fc-0061-4ab2-9acb-9520c4382451.png"
+
+showRockArea: true
+followerOnlyOptionMins: [0, 1, 5, 10]
+
+streamerTagging:
+  enable: true
+  startTime: 2021-05-17 14:00:00 (GMT+0800)
+  whiteList:
+    - "d255c081-473f-46d9-a444-04041cdc4db8" # 小衛17176
+    - "2e5c8de5-c860-452c-ade1-6193ca08a4d5" # vivianhuang85
+    - "1276c44e-dd76-48fb-8813-12bdfb63b727" # erickraz
+    - "c92f6b4f-acc6-4ea6-8057-dd7a9253c866" # jojowind

@@ -5,6 +5,13 @@
          "synchornize_mode":false
       }
    },
+  "unity": {
+    "enabled": 1
+  },
+  "unity_config": {
+    "apply_version" : 2000,
+    "apply_region" : ["ALL"]
+  },
    "network_threshold":{
       "yellow":100,
       "red":50
@@ -23,12 +30,12 @@
    "gift_reminding_duration":20,
    "follow_reminder_duration":30,
    "rating":{
-      "open_app_count":5,
-      "watch_stream_total_time":60,
-      "total_open_app_day":1,
-      "total_follow_count":10,
-      "total_share_count":5,
-      "total_comment_count":5,
+      "open_app_count":3,
+      "watch_stream_total_time":0,
+      "total_open_app_day":0,
+      "total_follow_count":0,
+      "total_share_count":0,
+      "total_comment_count":0,
       "reset_all_rating_criteria_and_ask_again_day":7
    },
    "low_phone_streamers":[
@@ -87,6 +94,7 @@
       "media17_on"
    ],
    "testing_ijkPlayer":{
+      "toggleReleasedApplyVersion":2700,
       "logOn":false,
       "liveLogOn":true,
       "bannerLogOn":true,
@@ -133,14 +141,7 @@
    "software_encode_devices":[
       "d-02H",
       "SM-T285YD",
-      "SM-J320G",
-      "Pixel 3a",
-      "Pixel 3a XL",
-      "Pixel 3",
-      "Pixel 3 XL",
-      "Pixel 4",
-      "Pixel 4 XL",
-      "Pixel 5"
+      "SM-J320G"
    ],
    "crazy_zoo":{
       "free":{
@@ -158,39 +159,6 @@
          "mobile_pipe_index":-1
       }
    },
-   "live_atmos":{
-      "apply_version":2480,
-      "snow":{
-         "apply_version":2475,
-         "apply_region":["ALL"],
-         "trigger_message":[
-            "Xmas",
-            "聖誕快樂",
-            "🎄",
-            "メリクリ"
-         ],
-         "duration_sec":30
-      },
-      "boxes":{
-         "apply_version":2475,
-         "apply_region":["ALL"],
-         "trigger_message":[
-            "生日快樂",
-            "17生日快樂",
-            "happybirthday",
-            "happybday",
-            "🍰",
-            "🎂",
-            "Jan",
-            "Amy",
-            "Shirley",
-            "YC",
-            "Han"
-         ],
-         "duration_sec":30,
-         "max_total_count":35
-      }
-   },
    "push_url_array_apply_version":2452,
    "pk_log_enable":true,
    "starfruitLogApplyVersion":2450,
@@ -205,71 +173,35 @@
       "apply_version" : 2479
    },
    "matomo_queue_dispatch_interval": 30,
-   "live_atmos_v3" : {
-    "ios_apply_version" : "3.115.0",
-    "android_apply_version":9999,
-    "snow" : {
-      "ios_apply_version" : "3.115.0",
-      "android_apply_version":9999,
-      "apply_region" : ["ALL"],
-      "trigger_message" : [
-          "Xmas",
-          "聖誕快樂",
-          "🎄",
-          "メリクリ"
-      ],
-      "duration_sec" : 30
-      },
-    "box" : {
-      "ios_apply_version" : "3.115.0",
-      "android_apply_version":9999,
-      "apply_region" : ["TW","HK","SG","MY"],
-      "trigger_message" : [
-         "情人節快樂",
-         "1314520",
-         "❤️",
-         "1"
-      ],
-      "boxes" : [
-         {
-             "drop_rate": 10,
-             "image_urls": ["https://cdn.17app.co/bc47e240-0e8f-4162-a64b-d2bc9345f257.png"],
-             "type": 0
-         },
-         {
-             "drop_rate": 190,
-             "image_urls": [
-                 "https://daily.pokecommunity.com/wp-content/uploads/2016/11/sm_pokemon_073.png",
-                 "https://daily.pokecommunity.com/wp-content/uploads/2016/11/sm_pokemon_075.png",
-                 "https://daily.pokecommunity.com/wp-content/uploads/2016/11/sm_pokemon_077.png",
-                 "https://daily.pokecommunity.com/wp-content/uploads/2016/11/sm_pokemon_079.png"
-             ],
-             "type": 2
-         }
-      ],
-      "drop_count_distribution" : {
-          "3": 10,
-          "2": 25,
-          "1": 65
-      },
-      "duration_sec" : 30,
-      "max_total_count" : 35,
-      "cooldown_sec" : 600
-    }
-  },
-  "avatar_black_list":{
+   "avatar_black_list":{
       "models":[
          "HTC_X9u",
-         "Pixel 5"
+         "Pixel"
       ],
       "chipsets":[
          "MT6795T"
       ]
    },
    "avatar_gift_animation":{
-      "enable": false,
+      "enable": true,
       "black_list":[
-         "e0c410e7-75f8-47b5-8b27-138eabbf0970"
+         "CPH",
+         "HTC_X9u",
+         "CPH",
+         "MP1701"
       ]
-   }
+   },
+   "apm" : {
+    "apply_version" : 2609,
+    "sampling" : "9AB",
+    "anr_timeout" : 5000,
+    "max_acceptable_drop_frame" : 50,
+    "collect_cpu_usage_interval" : 3000
+   }, 
+  "group_stream_black_list":{
+      "models":[
+         "HTC_X9u"
+      ],
+      "chipsets":[]
+  } 
 }

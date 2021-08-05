@@ -1,4 +1,22 @@
-userWhitelist: ["9ea732d6-e7db-4f5c-8d34-64826732f12f"]
+# this config is for QA test only
+# when enableABtest is false,
+# the users still follow the config grouping logics if their userID/deviceID/ip is in the whitelist
+# note: some of the abtest might not support deviceWhitelist/ipWhitelist,
+# please check with RD if you need to use deviceWhitelist/ipWhitelist
+userWhitelist: 
+  - 9ea732d6-e7db-4f5c-8d34-64826732f12f  # fk.sta1
+  - 2e5c8de5-c860-452c-ade1-6193ca08a4d5  # vivianhuang85
+  - d20070f6-99b2-439f-8a8f-cbdf49b5eac5  # vvn_01
+  - 94118ca7-54a1-4040-b0e0-55abcbc8474d  # viviarmy01
+  - 5eb6d002-bef8-460c-9705-da4b677dad93  # noelletw1
+  - b84b2b85-ce77-4171-8fa3-065fff9973ff  # jamie.sta01
+  - 0fdcf83b-8f63-4993-4580-6543526e56b9  # ru6yhsieh
+  - 741f82c1-e431-426d-b93d-209be9ae85ae  # nealx1
+  - e00e3a5a-a24e-4218-a2d5-4f29cd77572e  # 青醬燉飯cclemon
+  - 08a2082b-be20-4838-818c-55710300c000  # Qoo_sushi
+  - c3dfff9d-b6a5-4732-8ac1-40321b8b67b6  # erictest2
+  - 5eee8b2b-5c11-4e81-b084-858b9a958653  # lucaslu1
+  - 2a091777-b06d-4cad-9b02-70193365e1e3  # ftcy0118
 
 deviceWhitelist: []
 

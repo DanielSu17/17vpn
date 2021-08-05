@@ -5,18 +5,50 @@
   - name: example-target-hpa
     minReplicas: 20
 
-# 2/19 Koda Kumi
-- startTime: "2021-02-19 17:45:00 (GMT+0800)"
-  endTime: "2021-02-19 20:00:00 (GMT+0800)"
+# 0813 NOGOODTV
+# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=HX9
+- startTime: "2021-08-13 18:00:00 (GMT+0900)"
+  endTime: "2021-08-13 21:00:00 (GMT+0900)"
   HPAConfigs:
   - name: k8sprod-goapi-main
-    minReplicas: 80
+    minReplicas: 120
   - name: k8sprod-golives-main
-    minReplicas: 80
+    minReplicas: 85
   - name: k8sprod-gotrade-main
     minReplicas: 12
   - name: k8sprod-gocells-main
-    minReplicas: 20
+    minReplicas: 25
   - name: k8sprod-gousersearch-main
     minReplicas: 10
 
+# 0816 Big Event
+# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IA19
+- startTime: "2021-08-16 15:00:00 (GMT+0800)"
+  endTime: "2021-08-16 21:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 120
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+
+# 0827 NOGOODTV
+# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IL10
+- startTime: "2021-08-16 18:00:00 (GMT+0900)"
+  endTime: "2021-08-16 21:00:00 (GMT+0900)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 120
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10

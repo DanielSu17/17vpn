@@ -1,0 +1,53 @@
+# TopicList contains all the topics for user to choose in group stream setting page
+# There is no category of topics in phase 1 so all the topics should be listed in group "0"
+# Please note that the topic shouldn't have space between the two words
+topicList:
+  0:
+    - "正妹"
+    - "型男"
+    - "跳舞"
+    - "人際關係"
+    - "運動/體育競賽"
+    - "談戀愛經驗"
+    - "旅行分享"
+    - "音樂"
+    - "電影"
+    - "電視節目"
+    - "趣味的事"
+    - "玩遊戲"
+    - "Podcast"
+    - "社群媒體"
+    - "KOL"
+    - "認識朋友"
+    - "新手上路"
+    - "約會"
+    - "來喝一杯吧"
+    - "隨便聊聊！"
+    - "工作"
+    - "新聞"
+    - "藝術"
+    - "文化"
+    - "科技"
+    - "教育"
+    - "投資"
+    - "未來"
+maxTopicCount: 2
+defaultStreamerConfig:
+  hashtags: ["聊天", "認識朋友"] # the number of hashtags should not exceed 2
+  subtabID: tw_t_chat
+  eventID: # eventID is not used in phase 1
+butlerPicture: https://cdn.17app.co/7b155756-f837-41ac-adb2-f0f2413a1700.png
+
+# groupCall section shows groupCalls in different region
+# sectionRegionGroupList is the priority of regionGroups which is used to sort the groupCalls
+# IF you don't want to show that region, just delete it, region includes "HK", "TW", "SG", "MY", "MO", "JP", "US", "MENA", "Others"
+sectionRegionGroupList: ["TW", "HK", "SG", "MY", "MO"]
+
+# Don't modify infos below without discussing with PM and RD
+enable: true
+enableAudioOnlyMode: false
+enableVideoMode: true
+minLevel: 0
+needContract: false
+# Phase 2
+enableSendAll: true

@@ -22,6 +22,7 @@ noAnimationTTLAfterRegister: 0
 
 # daily for sign-in reward for voucher version
 enableSignInReward: true
+
 signInRewards:
   - exp: 30
     url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
@@ -212,7 +213,8 @@ signInRewards:
       tokenName: "voucher_daily_reward_gift_hamster"
       amount: 1
       intervalSec: 28800
-abtestStartTime: 
+# remove this to prevent it influent ip collaboration (APP-20938, APP-20939)
+#abtestStartTime: 
 #  "2020-07-15 00:00:00 (GMT+0800)"
 signInRewardsV2:
   - exp: 30

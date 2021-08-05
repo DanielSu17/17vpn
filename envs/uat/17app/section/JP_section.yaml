@@ -9,6 +9,8 @@
 #       key: <string>
 #     labelID: <string> (optional if id is `Label`)
 
+preservedSectionID: Suggestion
+
 sections:
   - id: TopBanner # Banner + super promote
     name:
@@ -41,6 +43,22 @@ sections:
     style: 6
     minGrids: 1
     more: true
+  - id: GroupCall # GroupCall 
+    name:
+      key: group_stream_v3hotpage
+    enable: true
+    dedup: false  #重複
+    minGrids: 2
+    style: 9 
+    more: true
+  - id: AudioStream # AudioStream 聲播
+    name:
+      key: audio_stream_v3hotpage
+    enable: true
+    dedup: false
+    minGrids: 2
+    style: 3 
+    more: true
   - id: Latest # 新人(和『最新』同邏輯)
     name:
       key: tab_hot_2019q4_newstreamer
@@ -54,7 +72,7 @@ sections:
     name:
       key: explore_jp_label_music
     enable: true
-    dedup: true
+    dedup: false
     minGrids: 1
     style: 3
     more: true
@@ -83,11 +101,11 @@ sections:
     style: 5
     more: false
   - id: Label
-    labelID: jp_horipro 
+    labelID: jp_talent 
     name:
-      key: streamer_jp_label_horipro
+      key: streamer_jp_label_talent
     enable: true
-    dedup: true
+    dedup: false
     minGrids: 1
     style: 3
     more: true
