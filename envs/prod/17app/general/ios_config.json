@@ -44,7 +44,9 @@
   "matomo_queue_dispatch_interval": 20,
   "apm" : {
     "apply_version" : "",
-    "sampling" : "012"
+    "sampling" : "012",
+    "mainThreadHangs_threshold" : 3,
+    "pageEvent_threshold" : 5
   },
   "ios_features" : {
       "aws_workaround": {
