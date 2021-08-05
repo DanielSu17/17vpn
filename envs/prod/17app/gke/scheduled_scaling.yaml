@@ -37,6 +37,22 @@
   - name: k8sprod-gousersearch-main
     minReplicas: 10
 
+# 0826 2021 夏末妖怪祭典
+# https://17media.slack.com/archives/CPQ5VS71C/p1628059795040400
+- startTime: "2021-08-26 17:50:00 (GMT+0800)"
+  endTime: "2021-08-26 22:19:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 120
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+
 # 0827 NOGOODTV
 # https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IL10
 - startTime: "2021-08-16 18:00:00 (GMT+0900)"
