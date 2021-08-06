@@ -1,7 +1,7 @@
 # availableRegion: now supports "TW","JP", "ID", "PH", "SG"
 # "" means default, any region ip other than above regions will direct to default, but its not recommended to use this setting in prod
-aggregateDuration: 10
-aggregateThreshold: 50
+aggregateDuration: 20
+aggregateThreshold: 100
 cronPutDuration: 10
 concerts:
   - userID: a2b43425-841f-4bdf-a76c-2a25e69cf2fa
@@ -659,28 +659,28 @@ regionProviderWeight:
   TW:
     - provider: 13 # wansuCDN
       weight: 25
-      throttle: true
+      throttle: false
       resolution: "540x960_1600"
       resolutionLowQuality: "360x640_900"
       webResolution: "720x1280_3000"
       webResolutionLowQuality: "540x960_1600"
     - provider: 14 # googleCDN
       weight: 25
-      throttle: true
+      throttle: false
       resolution: "540x960_1600"
       resolutionLowQuality: "360x640_900"
       webResolution: "720x1280_3000"
       webResolutionLowQuality: "540x960_1600"
     - provider: 15 # akaamai
       weight: 25
-      throttle: false
+      throttle: true
       resolution: "540x960_1600"
       resolutionLowQuality: "360x640_900"
       webResolution: "720x1280_3000"
       webResolutionLowQuality: "540x960_1600"
     - provider: 16 # cloudfront
       weight: 25
-      throttle: true
+      throttle: false
       resolution: "540x960_1600"
       resolutionLowQuality: "360x640_900"
       webResolution: "720x1280_3000"
