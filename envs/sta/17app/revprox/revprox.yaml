@@ -138,6 +138,9 @@ regexConf:
       # ct_qa_live
       - ^GET /api/v1/lives/16544358(?:/giftTabs|/info)?$
       - ^POST /api/v1/lives/16544358/(?:enter|quit|viewers/alive|comments)?$
+      # ct_qa_vodOK
+      - ^GET /api/v1/lives/14661356(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/14661356/(?:enter|quit|viewers/alive|comments)?$ 
       # ct_qa_replay
       - ^GET /api/v1/lives/16544395(?:/giftTabs|/info)?$
       - ^POST /api/v1/lives/16544395/(?:enter|quit|viewers/alive|comments)?$
@@ -209,8 +212,10 @@ regexConf:
       - ^POST /api/v1/lives/15816647/gift
       # ct_qa_25hr
       - ^POST /api/v1/lives/16544355/gift
-      # ct_qa_live
+      # ct_qa_live 
       - ^POST /api/v1/lives/16544358/gift
+      # ct_qa_vodOK 
+      - ^POST /api/v1/lives/14661356/gift
       # ct_qa_replay
       - ^POST /api/v1/lives/16544395/gift
       ## ct_qa_replayexpired
