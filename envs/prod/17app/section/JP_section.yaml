@@ -40,17 +40,26 @@ sections:
     more: true
     orderModel: 2
 
-  - id: Label # 夏の思い出
-    labelID: 2108_jp_summer
+  - id: Suggestion # 猜你可能喜歡
     name:
-      key: streamer_jp_label_summer
+      key: tab_hot_2019q4_follow_suggestion
     enable: true
     dedup: true
+    style: 6
     minGrids: 5
-    style: 3
     more: true
-    category: normal
     orderModel: 2
+#  - id: Label # 夏の思い出
+#    labelID: 2108_jp_summer
+#    name:
+#      key: streamer_jp_label_summer
+#    enable: true
+#    dedup: true
+#    minGrids: 5
+#    style: 3
+#    more: true
+#    category: normal
+#    orderModel: 2
 
   - id: GroupCall # GroupCall 
     name:
@@ -71,15 +80,7 @@ sections:
   #   more: true
 
 
-  - id: Suggestion # 猜你可能喜歡
-    name:
-      key: tab_hot_2019q4_follow_suggestion
-    enable: true
-    dedup: true
-    style: 6
-    minGrids: 5
-    more: true
-    orderModel: 2
+
 #  - id: Label # 時給チャレンジ！
 #    labelID: jp_jikyu
 #    name:
@@ -91,16 +92,6 @@ sections:
 #    more: true
 #    category: normal
 #    orderModel: 2
-  - id: Latest # 新人(和『最新』同邏輯)
-    name:
-      key: tab_hot_2019q4_newstreamer
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    orderModel: 2
-
   - id: Label # 新人さん歓迎
     labelID: jp_welcome
     name:
@@ -112,6 +103,18 @@ sections:
     more: true
     category: normal
     orderModel: 2
+
+  - id: Latest # 新人(和『最新』同邏輯)
+    name:
+      key: tab_hot_2019q4_newstreamer
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    orderModel: 2
+
+
 #  - id: Label
 #    labelID: jp_music
 #    name:
