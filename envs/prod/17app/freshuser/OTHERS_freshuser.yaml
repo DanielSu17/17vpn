@@ -1,5 +1,5 @@
 # newbieHours defines the newbie period in hours
-newbieHours: 24
+newbieHours: 48
 pokeNewbieHours: 72
 
 # hideArmyPromote indciates hiding army promote msg from fresh user
@@ -8,11 +8,16 @@ pokeNewbieHours: 72
 hideArmyPromote:
   periodInHours: 0
 
-# the following two keep group A behavior as default
-# after a/b testing is over, set them as the observation result
-newbieEnhanceGuidanceStyle: 0 # default style
-newbieGuidanceFocusMissionEnable: false
+newbieGuidance:
+  newbieEnhanceGuidanceStyle: 1 # 0: default, 1: black, Guidance(新手進入直播間強調遮罩)
+  newbieGuidanceFocusMissionEnable: false # 點擊skip 則出現新手任務banner遮罩
 
+enableNewbieCellTabsFilter: true
+newbieCellTabs: [hot, hot_opt, 17k, topictab, latest]
+enableNewbieSubtabsFilter: true
+newbieSubtabs: [all, today_hot_topic, chat, talent, comedy]
+enableNewbieCellBannerFilter: true
+enableNewbieCoverGirlFilter: true
 displayGiftTabsToastDurationSecs: 30
 # https://17media.atlassian.net/browse/PROD-4045
 # If endTimeInHours is 0, it will be ignored
