@@ -1,9 +1,9 @@
 tabs: ["piepielatest"]
 exploreTabs: ["theme"]
-captionLengthChar: 50
-maxDurationSec: 60
+captionLengthChar: 50 #描述文字的字數限制
+maxDurationSec: 60 #影片長度
 minDurationSec: 5
-maxSizeMB: 50
+maxSizeMB: 50 #影片MB的大小限制
 
 #events zone
 demoKey:
@@ -21,10 +21,10 @@ maxClipsInEventBanner: 10
 events:
   - ID: "ceb4f2b7-1667-43c3-9317-e6944f3b415a" #從UUID產生一個
     hashtag: "#17LIVE #摩曼頓 #全民運動會"
-    description: "2021 直播生活節" #不知道顯示在哪邊，要問ENG
+    description: "2021 直播生活節" #不知道顯示在哪邊，要問ENG(可能是17.live)
     startDateTime: "2021-07-15 00:00:00 (GMT+0800)" 
     endDateTime: "2021-07-31 23:59:59 (GMT+0800)"
-    oneVoteInNSecs: 3600  #1小時
+    oneVoteInNSecs: 3600  #1小時，
   - ID: "8a87ea2c-3f6e-4a3e-a43f-e95095926212" #從UUID產生一個
     hashtag: "#17LIVE #hyphy #全民運動會"
     description: "2021 直播生活節" #不知道顯示在哪邊，要問ENG
@@ -135,7 +135,7 @@ events:
     endDateTime: "2019-09-19 23:59:59 (GMT+0800)"
     oneVoteInNSecs: 3600  #1小時
 
-clips:
+clips: #17.live的短影片 https://docs.google.com/document/d/1hmeW1dPCrsqM2_2Pe0tKgpihlt9b4L_QJAbVevpsWeg/edit#heading=h.afz1wbh4e6o6
   - "1ex64lSVUdjPEMmDUdRVdxpxFfn"
   - "1mmdL4KRGI386PcgJnwqJaUvJuV"
   - "1fAaE4XT9dfw2Q0kBHPV6L16KdP"
