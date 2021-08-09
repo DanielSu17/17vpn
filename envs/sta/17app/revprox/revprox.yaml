@@ -153,7 +153,10 @@ regexConf:
       - ^POST /api/v1/lives/16544405/(?:enter|quit|viewers/alive|comments)?$
       # ct_qa_ctexpired
       - ^GET /api/v1/lives/16544441(?:/giftTabs|/info)?$
-      - ^POST /api/v1/lives/16544441/(?:enter|quit|viewers/alive|comments)?$ 
+      - ^POST /api/v1/lives/16544441/(?:enter|quit|viewers/alive|comments)?$
+      # josephtest
+      - ^GET /api/v1/lives/15757093(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/15757093/(?:enter|quit|viewers/alive|comments)?$
   - url_key: "concert_trade_url"
     default_url_key: "go_trade_url"
     weight: 100
