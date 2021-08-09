@@ -24,6 +24,10 @@ allowed_origins:
  - "^http://17\\.local(:\\d+)?$"
  - "^http://localhost(:\\d+)?$"
  - "^http://172.16.5.10(:\\d+)?$" # frontend dev
+ - "^https://entry\\.17\\.live$" # frontend dev
+ - "^https://rc\\.17\\.live$" # frontend rc
+ - "^https://sta\\.17\\.live$" # frontend sta
+ - "^https://sta-entry\\.17\\.live$" # frontend sta
 regexConf:
   - url_key: "aggr_gateway_url"
     default_url_key: "go_url"
