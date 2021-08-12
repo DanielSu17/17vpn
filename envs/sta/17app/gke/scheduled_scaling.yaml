@@ -28,13 +28,13 @@
     minReplicas: 10
 
 # Example for CM stress test
-- startTime: "2021-08-09 14:00:00 (GMT+0800)"
-  endTime: "2021-08-09 19:00:00 (GMT+0800)"
+- startTime: "2021-08-12 13:00:00 (GMT+0800)"
+  endTime: "2021-08-12 19:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8ssta-goapi-main
     minReplicas: 200
   - name: k8ssta-golives-main
-    minReplicas: 85
+    minReplicas: 120
   - name: k8ssta-gotrade-main
     minReplicas: 12
   - name: k8ssta-gocells-main
@@ -44,11 +44,11 @@
   - name: k8ssta-concert-trade-main
     minReplicas: 45
   - name: k8ssta-concert-stream-tw-main
-    minReplicas: 40
+    minReplicas: 1000
   - name: k8ssta-revprox-tw-main
-    minReplicas: 36
+    minReplicas: 1400
   - name: k8ssta-data-middleware-main
-    minReplicas: 50
+    minReplicas: 75
 
 # Jennifer stress test
 - startTime: "2021-08-04 8:50:00 (GMT+0800)"
