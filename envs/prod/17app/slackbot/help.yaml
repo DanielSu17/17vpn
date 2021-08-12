@@ -118,6 +118,26 @@ commandHelp:
         title: "`[查詢某個用戶的最新一筆戰隊訂閱紀錄]`"
         description: |
           >
+  #===!avatar 虛擬人物===
+  avatar:
+    title: "虛擬人物"
+    commandsHelp:
+      revert-model:
+        title: "`[模組退回上次版本]`"
+        description: |
+          >
+      add-item:
+        title: "`[增加裝備等級(碎片)]`"
+        description: |
+          >
+      revert-addingitem:
+        title: "`[退回 add-item 的操作]`"
+        description: |
+          >
+      batch-add-item:
+        title: "`[批次增加裝備等級(碎片)]`"
+        description: |
+          >
   #===!badge===
   badge:
     title: "徽章"
@@ -441,6 +461,22 @@ commandHelp:
           > 2. 尚未支援MENA
           > 3. `endTime` 至少要跟現在時間間隔30分鐘
           > 4. 不支援 `24:00` 或 `25:00` 這類非正式時間表示
+  #===!file 上傳檔案===
+  file:
+    title: "上傳檔案"
+    commandsHelp:
+      upload:
+        title: "`[上傳檔案]`"
+        description: |
+          >
+      upload-with-name:
+        title: "`[上傳檔案(自訂檔名)]`"
+        description: |
+          >
+      android-zip-reformat:
+        title: "`[轉檔 Android 的動畫]`"
+        description: |
+          >
   #===!follow追蹤人數===
   follow:
     title: "追蹤人數"
@@ -855,6 +891,14 @@ commandHelp:
         title: "`[query]`"
         description: |
           >
+  #===!obs 開播軟體===
+  obs:
+    title: "開播軟體"
+    commandsHelp:
+      permission:
+        title: "`[查詢 OBS 權限]`"
+        description: |
+          >
   #===!oneSignal===
   oneSignal:
     title: ""
@@ -881,6 +925,14 @@ commandHelp:
           >
       get-config:
         title: "`[get-config]`"
+        description: |
+          >
+  #===!personalPrize 17GOGO===
+  personalPrize:
+    title: "17GOGO"
+    commandsHelp:
+      get-point-report:
+        title: "`[查詢收點(分數)]`"
         description: |
           >
   #===!point點數給收===
