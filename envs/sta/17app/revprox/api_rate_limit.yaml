@@ -17,8 +17,8 @@
 #   scope: by_access_token
 
 rate_limits:
-  - {url: "/api/v1/legacy/followUserAction",                   method: "POST",    flow_per_second: 20,      reservoir_size: 20,    scope: by_global}
-  - {url: "/api/v1/legacy/unfollowUserAction",                 method: "POST",    flow_per_second: 20,      reservoir_size: 20,    scope: by_global}
+#   - {url: "/api/v1/legacy/followUserAction",                   method: "POST",    flow_per_second: 20,      reservoir_size: 20,    scope: by_global}
+#   - {url: "/api/v1/legacy/unfollowUserAction",                 method: "POST",    flow_per_second: 20,      reservoir_size: 20,    scope: by_global}
   - {url: "/api/v1/legacy/followUserAction",                   method: "POST",    flow_per_second: 0.083,   reservoir_size: 5,    scope: by_access_token}
   - {url: "/api/v1/legacy/unfollowUserAction",                 method: "POST",    flow_per_second: 0.083,   reservoir_size: 5,    scope: by_access_token}
 
