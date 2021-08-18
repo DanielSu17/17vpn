@@ -1,7 +1,7 @@
 # sections
 #   - id: TopBanner|OffcRecomm|Suggestion|Label|RedEnvelope|Show|Vod|TodayHotTopic|CrazyZoo|GroupCall
 #     enable: false|true
-#     dedup:  false|true
+#     dedup:  false|true ,false(會出現重複的直播入口)
 #     more:   false|true
 #     minGrids: <int>
 #     style: <int> 1: BillboardStyle, 2: StoryTrayStyle, 3: DefaultShelfStyle, 4: CoverFlowStyle, 5: VodShelfStyle, 6: DefaultLabelShelfStyle (猜你可能會喜歡)
@@ -43,7 +43,7 @@ sections:
     name: 
       key: streamer_label_welcomenewfans_subtab
     enable: true
-    dedup: true
+    dedup: false
     minGrids: 1
     style: 3
     more: true
@@ -70,7 +70,7 @@ sections:
     name:
       key: audio_stream_v3hotpage
     enable: true
-    dedup: true
+    dedup: false
     minGrids: 1
     style: 3 
     more: true
@@ -78,7 +78,7 @@ sections:
     name:
       key: tab_hot_2019q4_follow_suggestion
     enable: true
-    dedup: true
+    dedup: false
     style: 6
     minGrids: 1
     more: true 
@@ -87,7 +87,7 @@ sections:
     name:
       key: tw_newbie
     enable: true
-    dedup: true
+    dedup: false
     minGrids: 1
     style: 3
     more: true
