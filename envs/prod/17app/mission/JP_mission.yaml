@@ -40,6 +40,36 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
+- ID: 04040ae5-5d1c-48fc-a6d2-aa2090d7fb44 #アニマル配信
+  type: 24
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2106_jp_animal
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_checkin_title_mkt
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_checkin_desc_mkt
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2021-08-23 00:00:00 (GMT+0900)
+    endTime: 2021-09-03 23:59:59 (GMT+0900)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+
 - ID: f2e463a5-0d80-4602-bb01-704e529030dd
   type: 10
   category: 0
