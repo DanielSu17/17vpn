@@ -18,6 +18,45 @@ allowed_origins:
  - "http://dev.api.17app.co"
  - "^http://172.16.5.10(:\\d+)?$" # frontend dev
  - "^http://34.80.221.101(:\\d+)?$" # for meme frontend
+regexConf:
+  - url_key: "aggr_gateway_url"
+    default_url_key: "go_url"
+    weight: 100
+    regex_paths:
+      - ^/api/v1/event$
+      - ^/api/v1/event/subtabs$
+      - ^/api/v1/event/banner$
+  - url_key: "concert_stream_url"
+    default_url_key: "go_lives_url"
+    weight: 100
+    regex_paths:
+      # ^GET /api/v1/lives/\d+/concertInfo$ forward each request to concert stream service
+      #   - GET /api/v1/lives/:roomID/concertInfo
+      # ^GET /api/v1/lives/:roomID(?:/giftTabs|/info)?$ includes endpoint as follows
+      #   - GET /api/v1/lives/:roomID
+      #   - GET /api/v1/lives/:roomID/info
+      #   - GET /api/v1/lives/:roomID/giftTabs
+      # ^POST /api/v1/lives/:roomID/(?:enter|quit|viewers/alive|comments)?$ includes endpoint as follows
+      #   - POST /api/v1/lives/:roomID/enter
+      #   - POST /api/v1/lives/:roomID/quit
+      #   - POST /api/v1/lives/:roomID/viewers/alive
+      #   - POST /api/v1/lives/:roomID/comments
+      - ^GET /api/v1/lives/\d+/concertInfo$
+      # kevinmh
+      - ^GET /api/v1/lives/237253(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/237253/(?:enter|quit|viewers/alive|comments)?$
+  - url_key: "concert_trade_url"
+    default_url_key: "go_trade_url"
+    weight: 100
+    regex_paths:
+      # ct_qa_ctexpired
+      - ^POST /api/v1/lives/237253/gift
+  - url_key: "go_trade_url"
+    default_url_key: "go_trade_url"
+    weight: 100
+    regex_paths:
+      # normal send gift: "api/v1/lives/:roomid/gift"
+      - ^POST /api/v1/lives/[0-9]+/gift$
 conf:
  - url_key: "go_url"
    white_list:
