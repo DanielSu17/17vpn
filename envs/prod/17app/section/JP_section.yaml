@@ -92,6 +92,7 @@ sections:
 #    more: true
 #    category: normal
 #    orderModel: 2
+
   - id: Label # 新人さん歓迎
     labelID: jp_welcome
     name:
@@ -99,6 +100,18 @@ sections:
     enable: true
     dedup: true
     minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # スタートダッシュ
+    labelID: 2108_jp_start
+    name:
+      key: streamer_jp_label_start
+    enable: true
+    dedup: false
+    minGrids: 0
     style: 3
     more: true
     category: normal
@@ -114,7 +127,6 @@ sections:
     more: true
     orderModel: 2
 
-
 #  - id: Label
 #    labelID: jp_music
 #    name:
@@ -125,18 +137,6 @@ sections:
 #    style: 3
 #    more: true
 #    category: normal
-
-  - id: Label # スタートダッシュ
-    labelID: 2108_jp_start
-    name:
-      key: streamer_jp_label_start
-    enable: true
-    dedup: false
-    minGrids: 0
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
 
   - id: Label # 歌
     labelID: jp_singer
