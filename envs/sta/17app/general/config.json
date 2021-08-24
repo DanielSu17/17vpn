@@ -171,6 +171,24 @@
       }
     }
   },
+  "cdn_m3u8_test": {
+	  "ios_apply_version" : "3.151.1",
+    "android_apply_version":1000,
+    "apply_region" : ["ALL"],
+	  "replace_domain_index" : 0,
+	  "domain_sources": [
+		  "https://ws-hls-pull.17app.co/vod/",
+		  "https://ws-gcp-hls-pull.17app.co/vod/",
+		  "https://ws-ak-hls-pull.17app.co/vod/",
+		  "https://ws-cf-hls-pull.17app.co/vod/"
+	  ],
+	  "subfix_index": 0,
+	  "subfix_sources": [
+		  "/playlist.m3u8",
+		  "_360x640_900/playlist.m3u8",
+		  "_540x960_1600/playlist.m3u8"
+	]
+},
   "groupCallStreamProfile" : {
     "ladderings" : [
     	{
