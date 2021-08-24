@@ -161,6 +161,24 @@
     "ping_count": 5,
     "ping_high_latency_threshold_ms": 100
   },
+  "cdn_m3u8_test": {
+	  "ios_apply_version" : "3.151.1",
+    "android_apply_version":1000,
+    "apply_region" : ["ALL"],
+    "domain_index" : 1,
+	    "domain_sources": [
+		    "https://ws-hls-pull.17app.co/vod/",
+		    "https://ws-gcp-hls-pull.17app.co/vod/",
+		    "https://ws-ak-hls-pull.17app.co/vod/",
+		    "https://ws-cf-hls-pull.17app.co/vod/"
+	    ],
+	    "suffix_index": 2,
+	    "suffix_sources": [
+		    "/playlist.m3u8",
+		    "_360x640_900/playlist.m3u8",
+		    "_540x960_1600/playlist.m3u8"
+	    ]
+  },  
   "unity_game": {
     "ios_apply_version": "3.150.1",
     "android_apply_version": 16267717,
