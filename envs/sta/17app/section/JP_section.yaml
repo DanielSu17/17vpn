@@ -35,15 +35,6 @@ sections:
     minGrids: 2
     style: 9 
     more: true
-  - id: Label
-    labelID: menutest0811
-    name:
-      key: streamer_jp_label_menutest0811
-    enable: true
-    dedup: false
-    minGrids: 1
-    style: 3
-    more: true
   - id: AudioStream # AudioStream 聲播
     name:
       key: audio_stream_v3hotpage
@@ -125,7 +116,7 @@ sections:
     name:
       key: explore_jp_label_vliver
     enable: true
-    dedup: true
+    dedup: false
     minGrids: 1
     style: 3
     more: true
@@ -183,7 +174,15 @@ sections:
     minGrids: 1
     style: 4
     more: true
-
+  - id: Label
+    labelID: menutest0811
+    name:
+      key: streamer_jp_label_menutest0811
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 3
+    more: true
     
   - id: Label # スタートテスト
     labelID: 2108_jp_starttest
