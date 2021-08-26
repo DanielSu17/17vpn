@@ -40,15 +40,27 @@ sections:
     more: true
     orderModel: 2
 
-  - id: Suggestion # 猜你可能喜歡
+  - id: GroupCall # GroupCall 
     name:
-      key: tab_hot_2019q4_follow_suggestion
+      key: group_stream_v3hotpage
     enable: true
-    dedup: true
-    style: 6
-    minGrids: 5
+    dedup: false
+    minGrids: 2
+    style: 9 
     more: true
+
+  - id: Label #menuでライブメシ
+    labelID: menu210826
+    name:
+      key: streamer_jp_label_menu210826
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
     orderModel: 2
+  
 #  - id: Label # 夏の思い出
 #    labelID: 2108_jp_summer
 #    name:
@@ -61,14 +73,7 @@ sections:
 #    category: normal
 #    orderModel: 2
 
-  - id: GroupCall # GroupCall 
-    name:
-      key: group_stream_v3hotpage
-    enable: true
-    dedup: false
-    minGrids: 2
-    style: 9 
-    more: true
+
   
   # - id: AudioStream # AudioStream 聲播
   #   name:
@@ -80,6 +85,15 @@ sections:
   #   more: true
 
 
+  - id: Suggestion # 猜你可能喜歡
+    name:
+      key: tab_hot_2019q4_follow_suggestion
+    enable: true
+    dedup: true
+    style: 6
+    minGrids: 5
+    more: true
+    orderModel: 2
 
 #  - id: Label # 時給チャレンジ！
 #    labelID: jp_jikyu
@@ -168,17 +182,6 @@ sections:
     enable: true
     dedup: true
     minGrids: 3
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-  - id: Label
-    labelID: menu210826
-    name:
-      key: streamer_jp_label_menu210826
-    enable: true
-    dedup: false
-    minGrids: 1
     style: 3
     more: true
     category: normal
