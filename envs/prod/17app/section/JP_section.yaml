@@ -40,14 +40,15 @@ sections:
     more: true
     orderModel: 2
 
-  - id: GroupCall # GroupCall 
+  - id: Suggestion # 猜你可能喜歡
     name:
-      key: group_stream_v3hotpage
+      key: tab_hot_2019q4_follow_suggestion
     enable: true
-    dedup: false
-    minGrids: 2
-    style: 9 
+    dedup: true
+    style: 6
+    minGrids: 5
     more: true
+    orderModel: 2
 
   - id: Label #menuでライブメシ
     labelID: menu210826
@@ -84,16 +85,14 @@ sections:
   #   style: 3 
   #   more: true
 
-
-  - id: Suggestion # 猜你可能喜歡
+  - id: GroupCall # GroupCall 
     name:
-      key: tab_hot_2019q4_follow_suggestion
+      key: group_stream_v3hotpage
     enable: true
-    dedup: true
-    style: 6
-    minGrids: 5
+    dedup: false
+    minGrids: 2
+    style: 9 
     more: true
-    orderModel: 2
 
 #  - id: Label # 時給チャレンジ！
 #    labelID: jp_jikyu
