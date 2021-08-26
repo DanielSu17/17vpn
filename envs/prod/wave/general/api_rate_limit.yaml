@@ -36,3 +36,8 @@ rate_limits:
   flow_per_second: 0.025
   reservoir_size: 1
   scope: by_access_token
+- url: "/api/v1/redenvelopes/info/.*/pick$"
+  method: "POST"
+  flow_per_second: 0.35
+  reservoir_size: 1
+  scope: by_access_token
