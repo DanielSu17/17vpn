@@ -3,6 +3,70 @@
 # type受眾群體: 1判斷時間區段沒有購買過; 2判斷時間區段有購買過; 3生涯沒有購買過(任何購買記錄都算); 4生涯有購買過
 
 merchandises:
+#Crazy_stair_Small_Package_Android
+  - intervalID: MINV-1xRAut6OwnJms6090PeK8VqCdrP
+    merchandiseID: media17_giftpackage_tier3_202108 #對google play / app store的id
+    productsOrder: #product的順序，product不可為0
+      - barrage_normal_5
+    bonusesOrder: #bonus的順序，如果只有bouns請移至productOrder
+      - gift_crazy_stairs_streamer_easy_1_30
+      - gift_crazy_stairs_viewer_easy_1_30
+      - gift_2108_crazy_zoo_1_30
+    addons:
+      displayCountdown: true #要不要顯示倒數計時
+      countdownSecs: 86400
+      title:
+        key: iap_store_giftpackage_crazy_zoo
+      titleImageURL: https://cdn.17app.co/042d0cc1-792f-4b3a-a2ce-1b777ad2f5d3.png
+      discountImageURL: https://cdn.17app.co/b336adc2-a31f-4088-b5c9-fcca0d03cc18.png
+      description:
+        - imageURL: https://cdn.17app.co/8cab3332-2e53-48e2-a588-dc469b091641.png
+          text:
+            key: iap_store_giftpackage_dialog_barrage_desc
+        - imageURL:
+          text:
+            key: iap_store_giftpackage_dialog_gift_desc_newyear
+    purchaseType: 2
+    taInfo: #受眾
+        registerRange:
+          dayStart: 0
+          #若為0則不受限制
+          dayEnd: 0
+        type:
+    abtestName: "" #禮包測試相關的abtest名稱, 需要 abtest.yaml也做相關的設定
+
+#Crazy_stair_Small_Package_iOS
+  - intervalID: MINV-1xRAuv1Y8mCqVSjHqr9Bi0zix7n
+    merchandiseID: media17_giftpackage_tier3_202108 #對google play / app store的id
+    productsOrder: #product的順序，product不可為0
+      - barrage_normal_5
+    bonusesOrder: #bonus的順序，如果只有bouns請移至productOrder
+      - gift_crazy_stairs_streamer_easy_1_30
+      - gift_crazy_stairs_viewer_easy_1_30
+      - gift_2108_crazy_zoo_1_30
+    addons:
+      displayCountdown: true #要不要顯示倒數計時
+      countdownSecs: 86400
+      title:
+        key: iap_store_giftpackage_crazy_zoo
+      titleImageURL: https://cdn.17app.co/042d0cc1-792f-4b3a-a2ce-1b777ad2f5d3.png
+      discountImageURL: https://cdn.17app.co/b336adc2-a31f-4088-b5c9-fcca0d03cc18.png
+      description:
+        - imageURL: https://cdn.17app.co/8cab3332-2e53-48e2-a588-dc469b091641.png
+          text:
+            key: iap_store_giftpackage_dialog_barrage_desc
+        - imageURL:
+          text:
+            key: iap_store_giftpackage_dialog_gift_desc_newyear
+    purchaseType: 2
+    taInfo: #受眾
+        registerRange:
+          dayStart: 0
+          #若為0則不受限制
+          dayEnd: 0
+        type:
+    abtestName: "" #禮包測試相關的abtest名稱, 需要 abtest.yaml也做相關的設定
+
 
 #Crazt_Stair_Android
   - intervalID: MINV-1xAniI2q8jxW8zBU6GqxXbssfvf
