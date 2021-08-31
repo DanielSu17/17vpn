@@ -5,11 +5,10 @@
   - name: example-target-hpa
     minReplicas: 20
 
-# 0823 跟我17玩 首播
-# https://17media.slack.com/archives/C026TKVL46Q/p1628669145001500
+# 0904 ラストアイドル Karaoke Battle 首播
 # https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IH10
-- startTime: "2021-08-23 17:00:00 (GMT+0800)"
-  endTime: "2021-08-23 23:30:00 (GMT+0800)"
+- startTime: "2021-09-04 10:00:00 (GMT+0900)"
+  endTime: "2021-09-04 22:30:00 (GMT+0900)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 120
@@ -22,10 +21,10 @@
   - name: k8sprod-gousersearch-main
     minReplicas: 10
 
-# 0824 GroupCall
+# 0907 クロちゃん GroupCall
 # https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=II10
-- startTime: "2021-08-24 19:00:00 (GMT+0900)"
-  endTime: "2021-08-24 22:00:00 (GMT+0900)"
+- startTime: "2021-09-07 19:00:00 (GMT+0900)"
+  endTime: "2021-09-07 21:30:00 (GMT+0900)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 120
@@ -38,11 +37,10 @@
   - name: k8sprod-gousersearch-main
     minReplicas: 10
 
-# 0826 2021 夏末妖怪祭典
-# https://17media.slack.com/archives/CPQ5VS71C/p1628059795040400
+# 0908 YouTuber企画
 # https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IK9
-- startTime: "2021-08-26 17:50:00 (GMT+0800)"
-  endTime: "2021-08-26 23:00:00 (GMT+0800)"
+- startTime: "2021-09-08 20:00:00 (GMT+0900)"
+  endTime: "2021-09-08 22:30:00 (GMT+0900)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 120
@@ -55,10 +53,10 @@
   - name: k8sprod-gousersearch-main
     minReplicas: 10
 
-# 0827 NOGOODTV
+# 0910 NOGOODTV
 # https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IL10
-- startTime: "2021-08-27 18:00:00 (GMT+0900)"
-  endTime: "2021-08-27 21:00:00 (GMT+0900)"
+- startTime: "2021-09-10 18:00:00 (GMT+0900)"
+  endTime: "2021-09-10 21:00:00 (GMT+0900)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 120
@@ -71,10 +69,10 @@
   - name: k8sprod-gousersearch-main
     minReplicas: 10
 
-# 0829 Karaoke Battle
+# 0911 ラストアイドル Karaoke Battle
 # https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IL10
-- startTime: "2021-08-29 10:00:00 (GMT+0900)"
-  endTime: "2021-08-29 23:30:00 (GMT+0900)"
+- startTime: "2021-09-11 10:00:00 (GMT+0900)"
+  endTime: "2021-09-11 22:30:00 (GMT+0900)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 120
@@ -87,10 +85,106 @@
   - name: k8sprod-gousersearch-main
     minReplicas: 10
 
-# 0830 Karaoke Battle
+# 0912 AKB 日比谷公会堂LIVE
 # https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IL10
-- startTime: "2021-08-30 19:00:00 (GMT+0900)"
-  endTime: "2021-08-30 22:00:00 (GMT+0900)"
+- startTime: "2021-09-12 16:00:00 (GMT+0900)"
+  endTime: "2021-09-12 20:00:00 (GMT+0900)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 120
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+
+# 0913 クロちゃん GroupCall
+# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IL10
+- startTime: "2021-09-13 19:00:00 (GMT+0900)"
+  endTime: "2021-09-13 21:30:00 (GMT+0900)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 120
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+
+# 0919 ラストアイドル Karaoke Battle & RIZIN
+# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IL10
+- startTime: "2021-09-19 10:00:00 (GMT+0900)"
+  endTime: "2021-09-19 23:30:00 (GMT+0900)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 120
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+
+# 0921 クロちゃん GroupCall
+# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IL10
+- startTime: "2021-09-21 19:00:00 (GMT+0900)"
+  endTime: "2021-09-21 21:30:00 (GMT+0900)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 120
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+
+# 0924 NOGOODTV
+# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IL10
+- startTime: "2021-09-24 18:00:00 (GMT+0900)"
+  endTime: "2021-09-24 21:00:00 (GMT+0900)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 120
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+
+# 0927 クロちゃん GroupCall
+# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IL10
+- startTime: "2021-09-27 19:00:00 (GMT+0900)"
+  endTime: "2021-09-27 21:30:00 (GMT+0900)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 120
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+
+# 0930 Big Event
+# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IL10
+- startTime: "2021-09-30 16:00:00 (GMT+0900)"
+  endTime: "2021-09-30 21:30:00 (GMT+0900)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 120
