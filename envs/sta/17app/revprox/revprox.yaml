@@ -163,6 +163,12 @@ regexConf:
       # josephtest
       - ^GET /api/v1/lives/15757093(?:/giftTabs|/info)?$
       - ^POST /api/v1/lives/15757093/(?:enter|quit|viewers/alive|comments)?$
+      # canadian1
+      - ^GET /api/v1/lives/21725362(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/21725362/(?:enter|quit|viewers/alive|comments)?$
+      # canadian2
+      - ^GET /api/v1/lives/21725363(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/21725363/(?:enter|quit|viewers/alive|comments)?$
   - url_key: "concert_trade_url"
     default_url_key: "go_trade_url"
     weight: 100
@@ -235,6 +241,10 @@ regexConf:
       - ^POST /api/v1/lives/16544405/gift
       # ct_qa_ctexpired
       - ^POST /api/v1/lives/16544441/gift
+      # canadian1
+      - ^POST /api/v1/lives/21725362/gift
+      # canadian2
+      - ^POST /api/v1/lives/21725363/gift
   - url_key: "go_trade_url"
     default_url_key: "go_trade_url"
     weight: 100
