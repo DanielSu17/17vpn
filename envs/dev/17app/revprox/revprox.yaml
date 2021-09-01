@@ -58,6 +58,10 @@ regexConf:
       # normal send gift: "api/v1/lives/:roomid/gift"
       - ^POST /api/v1/lives/[0-9]+/gift$
 conf:
+ - url_key: "go_usersearch_url"
+   weight: 100
+   white_list:
+     apiv1: "user/search"
  - url_key: "go_url"
    white_list:
      liveStreams: "getLatestLiveStreams,publishLiveStream,\
