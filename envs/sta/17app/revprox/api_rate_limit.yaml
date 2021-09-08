@@ -117,7 +117,7 @@ rate_limits:
   - {url: "/api/v1/groupCalls/group/[A-Za-z0-9-]+/keepChannelAlive",                           method: "POST",    flow_per_second: 1,        reservoir_size: 5,    scope: by_access_token}
 
   # cdn cache new apis, see TECH-1677
-  - {url: "/api/v1/army/overview/[A-Za-z0-9-]+",           method: "GET",  flow_per_second: 2, reservoir_size: 2, scope: by_global} #change for testing
+  - {url: "^/api/v1/army/overview/[A-Za-z0-9-]+$",           method: "GET",  flow_per_second: 2, reservoir_size: 2, scope: by_global} #change for testing
   - {url: "/api/v1/army/relation/[A-Za-z0-9-]+",           method: "GET",  flow_per_second: 580, reservoir_size: 580, scope: by_global}
   - {url: "/api/v1/event/customEventV2/gifts",             method: "GET",  flow_per_second: 130, reservoir_size: 130, scope: by_global}
   - {url: "/api/v1/event/personalBanners",                 method: "GET",  flow_per_second: 410, reservoir_size: 410, scope: by_global}
