@@ -21,7 +21,7 @@ rtmp_providers:
   quality_support: 0
   weight: 0
 - name: QINIU
-  weight: 5
+  weight: 10
   region_weights:
     TW: 3
     EG: 0
@@ -81,13 +81,13 @@ rtmp_providers:
   quality_support: 0
   weight: 0
 - name: WANSU
-  weight: 15
+  weight: 0
   region_weights:
     TW: 0
     EG: 100
     HK: 0
-    JP: 1
-    US: 10
+    JP: 0
+    US: 0
   quality_support: 1
   users:
 #  - ad9a4ee5-e7eb-47f0-8ef4-727b286aa48f # David’s Angels
@@ -153,7 +153,7 @@ rtmp_providers:
   - 0333f5d0-ac94-4091-926b-40c7bc7b8e1f # 17show+
 - name: WANSU_LOW_LATENCY
   quality_support: 1
-  weight: 60
+  weight: 90
   region_weights:
     TW: 50
     HK: 35
