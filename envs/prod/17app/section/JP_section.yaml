@@ -53,6 +53,25 @@ sections:
     more: true
     orderModel: 2
 
+  - id: Latest # 新人(和『最新』同邏輯)
+    name:
+      key: tab_hot_2019q4_newstreamer
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    orderModel: 2
+
+  - id: GroupCall # GroupCall 
+    name:
+      key: group_stream_v3hotpage
+    enable: true
+    dedup: true
+    minGrids: 2
+    style: 9 
+    more: true
+
   - id: Suggestion # 猜你可能喜歡
     name:
       key: tab_hot_2019q4_follow_suggestion
@@ -75,20 +94,6 @@ sections:
     category: normal
     orderModel: 2
   
-#  - id: Label # 夏の思い出
-#    labelID: 2108_jp_summer
-#    name:
-#      key: streamer_jp_label_summer
-#    enable: true
-#    dedup: true
-#    minGrids: 5
-#    style: 3
-#    more: true
-#    category: normal
-#    orderModel: 2
-
-
-  
   # - id: AudioStream # AudioStream 聲播
   #   name:
   #     key: audio_stream_v3hotpage
@@ -97,27 +102,6 @@ sections:
   #   minGrids: 2
   #   style: 3 
   #   more: true
-
-  - id: GroupCall # GroupCall 
-    name:
-      key: group_stream_v3hotpage
-    enable: true
-    dedup: true
-    minGrids: 2
-    style: 9 
-    more: true
-
-#  - id: Label # 時給チャレンジ！
-#    labelID: jp_jikyu
-#    name:
-#      key: streamer_jp_label_jikyu
-#    enable: true
-#    dedup: true
-#    minGrids: 5
-#    style: 3
-#    more: true
-#    category: normal
-#    orderModel: 2
 
   - id: Label # 新人さん歓迎
     labelID: jp_welcome
@@ -143,27 +127,6 @@ sections:
 #    category: normal
 #    orderModel: 2
 
-  - id: Latest # 新人(和『最新』同邏輯)
-    name:
-      key: tab_hot_2019q4_newstreamer
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    orderModel: 2
-
-#  - id: Label
-#    labelID: jp_music
-#    name:
-#      key: explore_jp_label_music
-#    enable: true
-#    dedup: true
-#    minGrids: 5
-#    style: 3
-#    more: true
-#    category: normal
-
   - id: Label # 歌
     labelID: jp_singer
     name:
@@ -187,6 +150,7 @@ sections:
     more: true
     category: normal
     orderModel: 2
+
   - id: Label # アニマル
     labelID: jp_animal
     name:
@@ -198,17 +162,7 @@ sections:
     more: true
     category: normal
     orderModel: 2
-  - id: Label # 推し活
-    labelID: jp-oshikatsu
-    name:
-      key: streamer_jp_label_oshikatsu
-    enable: true
-    dedup: true
-    minGrids: 3
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
+
   - id: Label # タレント
     labelID: jp_talent
     name:
@@ -403,6 +357,53 @@ sections:
     minGrids: 3
     style: 4
     more: true
+
+#  - id: Label
+#    labelID: jp_music
+#    name:
+#      key: explore_jp_label_music
+#    enable: true
+#    dedup: true
+#    minGrids: 5
+#    style: 3
+#    more: true
+#    category: normal
+
+#  - id: Label # 夏の思い出
+#    labelID: 2108_jp_summer
+#    name:
+#      key: streamer_jp_label_summer
+#    enable: true
+#    dedup: true
+#    minGrids: 5
+#    style: 3
+#    more: true
+#    category: normal
+#    orderModel: 2
+
+#  - id: Label # 時給チャレンジ！
+#    labelID: jp_jikyu
+#    name:
+#      key: streamer_jp_label_jikyu
+#    enable: true
+#    dedup: true
+#    minGrids: 5
+#    style: 3
+#    more: true
+#    category: normal
+#    orderModel: 2
+
+#  - id: Label # 推し活
+#    labelID: jp-oshikatsu
+#    name:
+#      key: streamer_jp_label_oshikatsu
+#    enable: true
+#    dedup: true
+#    minGrids: 3
+#    style: 3
+#    more: true
+#    category: normal
+#    orderModel: 2
 
 officialRecommendedStreamers:
 
