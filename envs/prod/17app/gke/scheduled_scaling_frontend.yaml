@@ -5,10 +5,26 @@
   - name: example-target-hpa
     minReplicas: 20
 
-# 0912 AKB 日比谷公会堂LIVE
+# 0915 SUPER SONIC前夜祭
 # https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IL10
-- startTime: "2021-09-12 16:00:00 (GMT+0900)"
-  endTime: "2021-09-12 21:30:00 (GMT+0900)"
+- startTime: "2021-09-15 20:00:00 (GMT+0900)"
+  endTime: "2021-09-15 22:30:00 (GMT+0900)"
+  HPAConfigs:
+  - name: live17-17app-services
+    minReplicas: 60
+
+# 0918 SUPER SONIC
+# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IL10
+- startTime: "2021-09-18 10:00:00 (GMT+0900)"
+  endTime: "2021-09-18 21:30:00 (GMT+0900)"
+  HPAConfigs:
+  - name: live17-17app-services
+    minReplicas: 60
+
+# 0919 SUPER SONIC
+# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IL10
+- startTime: "2021-09-19 06:00:00 (GMT+0900)"
+  endTime: "2021-09-20 00:30:00 (GMT+0900)"
   HPAConfigs:
   - name: live17-17app-services
     minReplicas: 60
