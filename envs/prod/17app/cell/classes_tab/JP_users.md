@@ -1,1 +1,1 @@
-# JP Classes users
+# JP Classes users (WIP, please use OTHERS until 9/20)
