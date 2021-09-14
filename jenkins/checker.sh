@@ -58,8 +58,16 @@ main() {
         echo "${env} : ${env_files}"
 
         # we use k8s{env} to check configs for {env}
-        docker pull "17media/config-checker:k8s${env}"
-        docker run --rm -v "$(pwd)":/repo/configs "17media/config-checker:k8s${env}" -config_root="/repo/configs" -check_configs="${env_files}"
+        # TODO(alexsu):
+        # remove it until joseph revert his commit
+        if [ "$env" == "sta" ]; then
+          workaround_tag="6e863c12fe1774b886bdff29a897931e4cdeb343"
+          docker pull "17media/config-checker:${workaround_tag}"
+          docker run --rm -v "$(pwd)":/repo/configs "17media/config-checker:${workaround_tag}" -config_root="/repo/configs" -check_configs="${env_files}"
+        else
+          docker pull "17media/config-checker:k8s${env}"
+          docker run --rm -v "$(pwd)":/repo/configs "17media/config-checker:k8s${env}" -config_root="/repo/configs" -check_configs="${env_files}"
+        fi
 
         LOCAL_CHECKER_STATUS=$?
         if [ ${LOCAL_CHECKER_STATUS} -eq 0 ]; then
