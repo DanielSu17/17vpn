@@ -169,10 +169,15 @@ regexConf:
       # canadian2
       - ^GET /api/v1/lives/21725363(?:/giftTabs|/info)?$
       - ^POST /api/v1/lives/21725363/(?:enter|quit|viewers/alive|comments)?$
+      # 17NightLive1
+      - ^GET /api/v1/lives/21725586(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/21725586/(?:enter|quit|viewers/alive|comments)?$
   - url_key: "concert_trade_url"
     default_url_key: "go_trade_url"
     weight: 100
     regex_paths:
+      # 17NightLive1
+      - ^POST /api/v1/lives/21725586/gift
       # ericconcert1
       - ^POST /api/v1/lives/15816643/gift
       # lcuconcert6
