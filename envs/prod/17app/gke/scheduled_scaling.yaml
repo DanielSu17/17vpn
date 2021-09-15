@@ -23,8 +23,24 @@
 
 # 0915 SUPER SONIC前夜祭(TBD)
 # https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IL10
-- startTime: "2021-09-15 20:00:00 (GMT+0900)"
+- startTime: "2021-09-15 12:00:00 (GMT+0900)"
   endTime: "2021-09-15 22:30:00 (GMT+0900)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 120
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+
+# 0916 コンサートモードテスト & NishikawaTakanori
+# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IL10
+- startTime: "2021-09-16 17:00:00 (GMT+0900)"
+  endTime: "2021-09-16 22:00:00 (GMT+0900)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 120
