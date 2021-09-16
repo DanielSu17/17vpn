@@ -108,13 +108,35 @@ concerts:
       - shootin_stars
       - heart_curtain
 regionProviderWeight:
-#  TW:
-#    - provider: 13 # wansuCDN
-#      weight: 60
-#      throttle: false
-#    - provider: 14 # googleCDN
-#      weight: 40
-#      throttle: false
+  JP:
+    - provider: 13 # wansuCDN
+      weight: 25
+      throttle: false
+      resolution: "540x960_1600"
+      resolutionLowQuality: "360x640_900"
+      webResolution: "720x1280_3000"
+      webResolutionLowQuality: "540x960_1600"
+    - provider: 14 # googleCDN
+      weight: 25
+      throttle: false
+      resolution: "540x960_1600"
+      resolutionLowQuality: "360x640_900"
+      webResolution: "720x1280_3000"
+      webResolutionLowQuality: "540x960_1600"
+    - provider: 15 # akamai
+      weight: 25
+      throttle: false
+      resolution: "540x960_1600"
+      resolutionLowQuality: "360x640_900"
+      webResolution: "720x1280_3000"
+      webResolutionLowQuality: "540x960_1600"
+    - provider: 16 # cloudfront
+      weight: 25
+      throttle: false
+      resolution: "540x960_1600"
+      resolutionLowQuality: "360x640_900"
+      webResolution: "720x1280_3000"
+      webResolutionLowQuality: "540x960_1600"
 
 # Skip onboarding during the defined period
 # - enable: ture on the function or not. value is true/false.  
