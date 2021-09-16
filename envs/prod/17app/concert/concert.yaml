@@ -60,7 +60,7 @@ concerts:
 #17 Night Live 
   - userID: 3fd3b324-ab36-4aa5-91a0-32fa0dd50ee9
     roomID: 4589532
-    startTime: 2021-09-16 00:00:01 (GMT+0900)
+    startTime: 2021-09-16 00:00:02 (GMT+0900)
     endTime: 2021-09-17 06:00:00 (GMT+0900)
     availableRegion: ["JP"]
     imageURL: https://cdn.17app.co/dc265c1d-5754-494f-a949-8c3405fb07e1.png
@@ -108,35 +108,13 @@ concerts:
       - shootin_stars
       - heart_curtain
 regionProviderWeight:
-  JP:
-    - provider: 13 # wansuCDN
-      weight: 25
-      throttle: false
-      resolution: "540x960_1600"
-      resolutionLowQuality: "360x640_900"
-      webResolution: "720x1280_3000"
-      webResolutionLowQuality: "540x960_1600"
-    - provider: 14 # googleCDN
-      weight: 25
-      throttle: false
-      resolution: "540x960_1600"
-      resolutionLowQuality: "360x640_900"
-      webResolution: "720x1280_3000"
-      webResolutionLowQuality: "540x960_1600"
-    - provider: 15 # akamai
-      weight: 25
-      throttle: false
-      resolution: "540x960_1600"
-      resolutionLowQuality: "360x640_900"
-      webResolution: "720x1280_3000"
-      webResolutionLowQuality: "540x960_1600"
-    - provider: 16 # cloudfront
-      weight: 25
-      throttle: false
-      resolution: "540x960_1600"
-      resolutionLowQuality: "360x640_900"
-      webResolution: "720x1280_3000"
-      webResolutionLowQuality: "540x960_1600"
+#  TW:
+#    - provider: 13 # wansuCDN
+#      weight: 60
+#      throttle: false
+#    - provider: 14 # googleCDN
+#      weight: 40
+#      throttle: false
 
 # Skip onboarding during the defined period
 # - enable: ture on the function or not. value is true/false.  
