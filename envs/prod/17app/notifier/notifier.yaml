@@ -1,6 +1,8 @@
 fcm:
   messageTypeWhitelist:
     - "NewLiveMessage"
+  forceBackup: true
+  backupBlacklist: 
 
 oneSignal:
   # when one signal faills in general, use fcm as backup
