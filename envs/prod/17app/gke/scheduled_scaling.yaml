@@ -53,6 +53,29 @@
   - name: k8sprod-gousersearch-main
     minReplicas: 10
 
+# 0917 Test stress test count
+- startTime: "2021-09-17 16:55:00 (GMT+0800)"
+  endTime: "2021-09-17 18:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8ssta-goapi-main
+    minReplicas: 400
+  - name: k8ssta-golives-main
+    minReplicas: 120
+  - name: k8ssta-gotrade-main
+    minReplicas: 12
+  - name: k8ssta-gocells-main
+    minReplicas: 25
+  - name: k8ssta-gousersearch-main
+    minReplicas: 10
+  - name: k8ssta-concert-trade-main
+    minReplicas: 45
+  - name: k8ssta-concert-stream-jp-main
+    minReplicas: 600
+  - name: k8ssta-revprox-jp-main
+    minReplicas: 600
+  - name: k8ssta-data-middleware-main
+    minReplicas: 75
+
 # 0917 FLARE CUP本戦
 # https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IL10
 - startTime: "2021-09-17 18:00:00 (GMT+0900)"
