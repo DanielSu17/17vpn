@@ -1,2 +1,8 @@
 pathBlacklist:
  - path: ^/api/v1/internal(/.*)?$
+ # internal APIs for poll service
+ - path: ^/api/v1/users/[A-Za-z0-9-]+/isAdmin$
+ - path: ^/api/v1/users/[A-Za-z0-9-]+/region$
+ - path: ^/api/v1/lives/[A-Za-z0-9-]+/streamID$
+ - path: ^/api/v1/lives/[A-Za-z0-9-]+/streamerID$
+ 
