@@ -5,57 +5,10 @@
   - name: example-target-hpa
     minReplicas: 20
 
-# 0913 クロちゃん GroupCall
+# 0918 ラストアイドル Karaoke Battle & SUPER SONIC
 # https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IL10
-- startTime: "2021-09-13 19:00:00 (GMT+0900)"
-  endTime: "2021-09-13 22:30:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 0915 SUPER SONIC前夜祭(TBD)
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IL10
-- startTime: "2021-09-15 12:00:00 (GMT+0900)"
-  endTime: "2021-09-15 22:30:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 0916 コンサートモードテスト & NishikawaTakanori
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IL10
-- startTime: "2021-09-16 17:00:00 (GMT+0900)"
-  endTime: "2021-09-16 22:00:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 0917 Test stress test count
-- startTime: "2021-09-17 16:55:00 (GMT+0800)"
-  endTime: "2021-09-17 18:00:00 (GMT+0800)"
+- startTime: "2021-09-18 10:00:00 (GMT+0900)"
+  endTime: "2021-09-18 21:30:00 (GMT+0900)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 400
@@ -76,53 +29,29 @@
   - name: k8sprod-data-middleware-main
     minReplicas: 75
 
-# 0917 FLARE CUP本戦
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IL10
-- startTime: "2021-09-17 18:00:00 (GMT+0900)"
-  endTime: "2021-09-17 24:00:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 0918 ラストアイドル Karaoke Battle & SUPER SONIC
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IL10
-- startTime: "2021-09-18 10:00:00 (GMT+0900)"
-  endTime: "2021-09-18 21:30:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
 # 0919 ラストアイドル Karaoke Battle & RIZIN & SUPER SONIC
 # https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IL10
 - startTime: "2021-09-19 06:00:00 (GMT+0900)"
   endTime: "2021-09-20 00:30:00 (GMT+0900)"
   HPAConfigs:
   - name: k8sprod-goapi-main
-    minReplicas: 120
+    minReplicas: 400
   - name: k8sprod-golives-main
-    minReplicas: 85
+    minReplicas: 120
   - name: k8sprod-gotrade-main
     minReplicas: 12
   - name: k8sprod-gocells-main
     minReplicas: 25
   - name: k8sprod-gousersearch-main
     minReplicas: 10
+  - name: k8sprod-concert-trade-main
+    minReplicas: 45
+  - name: k8sprod-concert-stream-jp-main
+    minReplicas: 600
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 600
+  - name: k8sprod-data-middleware-main
+    minReplicas: 75
 
 # 0920 ラストアイドル Karaoke Battle
 # https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IL10
