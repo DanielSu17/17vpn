@@ -56,7 +56,7 @@ function push() {
 function check(){
     echo "--- start checking ---"
     echo "0;starting;${commit_list}"
-    curl -X POST  -d"0;starting;${commit_list}" "${SLACK_ENDPOINT}"
+    # curl -X POST  -d"0;starting;${commit_list}" "${SLACK_ENDPOINT}"
     for SCRIPT in ${CHECKER}; do
         docker run --rm -v "$(pwd)":/repo 17media/config-check:latest /bin/sh -c "cd /repo && python3 /repo/${SCRIPT}"
         
@@ -72,7 +72,7 @@ function check(){
             exit 1
         fi
     done;
-    curl -X POST  -d"1;success;${commit_list}" "${SLACK_ENDPOINT}"
+    # curl -X POST  -d"1;success;${commit_list}" "${SLACK_ENDPOINT}"
     echo "--- finish checking ---"
 }
 
