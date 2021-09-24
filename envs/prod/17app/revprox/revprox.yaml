@@ -205,14 +205,12 @@ conf:
    weight: 100
    white_list:
      apiv1: "bbrich"
- - url_key: "go_logs_url"
-   default_url_key: "go_platform_url"
-   weight: 100
+ - url_key: "api_logs_url"
+   default_url_key: "go_logs_url"
+   weight: 50
    white_list:
      apiv1: "logs"
  - url_key: "group_call_url"
    weight: 100
    white_list:
      apiv1: "groupCalls"
-
-
