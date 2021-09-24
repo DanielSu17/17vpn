@@ -105,11 +105,6 @@ regexConf:
       # canadian prod test account B
       - ^GET /api/v1/lives/16056342(?:/giftTabs|/info)?$
       - ^POST /api/v1/lives/16056342/(?:enter|quit|viewers/alive|comments)?$
-  - url_key: "bbrichv2_url"
-    weight: 100
-    regex_paths:
-      - ^/api/v1/bbrich/dotmoney/.*
-
 conf:
  - url_key: "go_usersearch_url"
    weight: 100
@@ -206,7 +201,7 @@ conf:
    weight: 100
    white_list:
      apiv1: "cells,sections"
- - url_key: "bbrich_url"
+ - url_key: "bbrichv2_url"
    weight: 100
    white_list:
      apiv1: "bbrich"
