@@ -1,4 +1,4 @@
-# giftID means the giftID returned by poke(for old version)
+# giftID means the giftID returned by poke(for old version)，目前沒功用
 giftLv1ID: gift_pokepoke
 giftLv2ID: gift_pokepoke_lv2
 giftLv3ID: gift_pokepoke_lv3
@@ -21,11 +21,12 @@ i18nkeys:
 
 # NOTED: animation will be applied since config deployed
 # animtaionID for poke
-pokeAnimationID: poke_streamer_poke
+pokeAnimationID: poke_streamer_poke #PO給動畫檔(同進場動畫需要轉檔)，backend要改另一個config才能調整動畫
 
 # NOTED: pokeback menu will be applied since config deployed
 # client needs gift ids to get gift info for giftLV1/2/3
 # and requires i18nkeys to display option name for free pokes
+# 要改回戳動畫直接改以下區塊，因為有個人頁徽章無法更改config
 pokeBackMenu:
   giftLV3:
     ID: gift_pokepoke_lv3
@@ -42,9 +43,9 @@ pokeBackMenu:
   freePokeAndFollow:
     i18nKey: streamer_newbie_poke_follow
     imgURL: "https://cdn.17app.co/f9058f65-317b-4242-ad56-e093e176514a.png"
-  loyaltyEventID: 18
+  loyaltyEventID: 18 #成就系統，profile頁的我的成就(有稱號的)，會增加該EventID的數值
 
-timeLimitedMenus:
+timeLimitedMenus: #每年的同一個時間會自動換成情人節戳，因為有個人頁徽章無法更改config
   - giftLV3:
       ID: 2002_chocopoke_l_new
       imgURL: "https://cdn.17app.co/e45a1888-0403-411e-a52b-52297705b9f4.png"
@@ -62,7 +63,7 @@ timeLimitedMenus:
       imgURL: "https://cdn.17app.co/35e9ebe1-c6c0-4d56-a410-50f1e1b82db6.png"
     loyaltyEventID: 19
     timeRanges: # each time range [startTime, endTime](streamer timezone) is a recurrent period defined by MMdd and we encode it as an integer for quick comparison
-      - startTime: 211 # 0211 included
+      - startTime: 211 # 0211 included，日期2/11 - 2/14
         endTime: 215 # 0215 excluded
       - startTime: 310 # 0312
         endTime: 315 # 0315 excluded
