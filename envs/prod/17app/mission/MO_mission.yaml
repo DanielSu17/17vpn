@@ -40,8 +40,8 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
-- ID: 84331d4e-7755-4475-99cd-6c4f8d24adaa
-  type: 3
+- ID: 337cd686-e5ed-4f15-8c41-49ebd135e9fb
+  type: 9
   category: 0
   lifeCycle: 1
   targetAudience: 0
@@ -49,20 +49,123 @@ missions:
     min: 1
     max: 999
   reward:
-    rewardType: 2
-    rewardID: 2109-tw-knight-prize
-    amount: 99
+    rewardType: 1
+    rewardID: 2011_hk_halloween_bp_1
+    amount: 1
     expireTimeSecs: 86400
-  i18nTitle: 活動期間内送出「無止盡的旅途」活動禮477次，獲取滿級紅黑色至尊帽子！
-  i18nTitleParams: []
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "300"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: 【Avatar新裝第六彈】貓騎士&時之魔女活動！
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
   i18nDescriptionParams: []
-  goalValue: 477
+  goalValue: 300
   enableTimeRange:
-  - startTime: 2021-09-18 18:00:00 (GMT+0800)
-    endTime: 2021-09-28 23:59:59 (GMT+0800)
+  - startTime: 2021-10-01 18:00:00 (GMT+0800)
+    endTime: 2021-10-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: 19cdb99c-86f0-4aee-99b6-031ecaf6605e
+  type: 9
+  category: 0
+  lifeCycle: 1
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2011_hk_halloween_bp_1
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "600"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 600
+  enableTimeRange:
+  - startTime: 2021-10-01 18:00:00 (GMT+0800)
+    endTime: 2021-10-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: e7ba2e9d-00c3-4f67-a3bb-134fb204b014
+  type: 9
+  category: 0
+  lifeCycle: 1
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2011_hk_halloween_bp_2_view
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "1800"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 1800
+  enableTimeRange:
+  - startTime: 2021-10-01 18:00:00 (GMT+0800)
+    endTime: 2021-10-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: 62b33377-8da7-4225-adae-dbabc790d1b1
+  type: 9
+  category: 0
+  lifeCycle: 1
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2011_hk_halloween_bp_2_view
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "3600"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 3600
+  enableTimeRange:
+  - startTime: 2021-10-01 18:00:00 (GMT+0800)
+    endTime: 2021-10-31 23:59:59 (GMT+0800)
   refIDs: []
   platforms:
   - android
@@ -267,36 +370,7 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-- ID: 44c59267-af32-4bdb-bbce-5008bb101a3f
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 2
-    rewardID: 2109-knights
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: 每日送出觀看60分鐘，獲取3抽貓騎士&時之魔女套裝！
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: 【Avatar新裝第六彈】貓騎士&時之魔女活動！
-  i18nDescriptionParams: []
-  goalValue: 3600
-  enableTimeRange:
-  - startTime: 2021-09-18 18:00:00 (GMT+0800)
-    endTime: 2021-09-28 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 3a37c375-0208-4743-b84c-75ba97848f3b
+- ID: 07cbebe8-e81a-427c-abd1-0ed306c051e6
   type: 3
   category: 0
   lifeCycle: 0
@@ -305,21 +379,30 @@ missions:
     min: 1
     max: 999
   reward:
-    rewardType: 2
-    rewardID: 2109-knights
-    amount: 5
+    rewardType: 1
+    rewardID: 2011_hk_halloween_bp_3_gift
+    amount: 1
     expireTimeSecs: 86400
-  i18nTitle: 每日送出「無止盡的旅途」活動禮30次，獲取5抽貓騎士&時之魔女套裝！
-  i18nTitleParams: []
+  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+  i18nTitleParams:
+  - value: "1"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  - value: 2011_hk_halloween_bag
+    needMap: false
+    mapOption: 2
+    fontAttribute: null
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: 【Avatar新裝第六彈】貓騎士&時之魔女活動！
+  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
   i18nDescriptionParams: []
-  goalValue: 30
+  goalValue: 1
   enableTimeRange:
-  - startTime: 2021-09-18 18:00:00 (GMT+0800)
-    endTime: 2021-09-28 23:59:59 (GMT+0800)
-  refIDs: []
+  - startTime: 2021-10-01 18:00:00 (GMT+0800)
+    endTime: 2021-10-31 23:59:59 (GMT+0800)
+  refIDs:
+  - 2011_hk_halloween_bag
   platforms:
   - android
   - ios
