@@ -32,7 +32,34 @@ hosts:
         Default: true
         CorrectMost: true
       leftTopDisplayStyle: 1 #這個值改成1，會顯示成就值；改成0或不設定，會顯示觀看人數       
-      
+
+    "f3db2ae7-871c-4403-bc9a-cbb305c567a2": # twestest
+      pictures:
+        default: https://cdn.17app.co/e14ae635-271f-4489-9228-7eb118a6f6f4.jpg
+        prepare: https://cdn.17app.co/e14ae635-271f-4489-9228-7eb118a6f6f4.jpg
+        onLive: https://cdn.17app.co/e14ae635-271f-4489-9228-7eb118a6f6f4.jpg
+        # default user picture for users without picture
+        user: 857dc12d-46c9-4c63-b3c4-ee8fd1a2eb57.png
+      showBannerTime:
+        weekdays: [1] # 0 ~ 6 means Sunday ~ Saturday
+        hourFrom: 4 # GMT+8
+        hourTo: 5 # GMT+8
+      showBannerPriority: 9
+      disclaimerTitle:
+        key: "trivia_tv_disclaimer_title"
+      disclaimerText:
+        key: "trivia_tv_disclaimer_text"
+      leaveGameToastText:
+        key: "trivia_tv_gamer_leave_double_confirm_text"
+      voteTopic:
+        key: "trivia_tv_vote_topic"
+      shareWording:
+        key: "trivia_tv_share_wording"
+      isMedalSupported:
+        Default: false
+        CorrectMost: false
+      leftTopDisplayStyle: 1 #這個值改成1，會顯示成就值；改成0或不設定，會顯示觀看人數
+
     "8f95a285-104e-4ea5-ae58-00cca785247a": # 台視17Q,台視17唱,17估價王
       pictures:
         default: https://cdn.17app.co/2a4890fc-d08c-4f2d-90a3-6550946cdc9a.png
