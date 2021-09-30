@@ -1,0 +1,151 @@
+# Poll setting
+# MUST make sure that corresponding gift ids exist in gift database
+# In this case, they should be poll_option_{a|b|c|d|e}_{30|49|99|199|399|599|3999} by the value of giftIDTempalte
+minTTL: 1
+maxTTL: 60
+maxTitleDescLen: 20
+maxOptDescLen: 10
+minOptionCount: 2
+maxOptionCount: 5
+freeVoteEnable: true
+freeVoteWhitelist: []
+availableLimit:
+  mins: 1
+  count: 5
+freeVoteAndroidVersion: 2.3.67
+freeVoteIOSVersion: 3.44.0
+defaultPrice: 99
+enableFreePriceForOfficialTopics: true # 官方話題可選擇0點
+availablePrice:
+  5:
+  30:
+  49:
+  99:
+  199:
+  399:
+  599:
+  3999:
+availableOptionID:
+  - poll_option_a
+  - poll_option_b
+  - poll_option_c
+  - poll_option_d
+  - poll_option_e
+giftIDTemplate: '{{.OptionID}}_{{.Price}}'
+
+userSettings:
+  920e4588-d7b6-4c97-b953-19d26e9e96af: # ジャングルポケット_イチナナ1グランプリ
+    price: 0
+    limitMins: 10
+    limitCount: 1
+  c3fcd693-aa58-4611-b869-8bb6bddc73b8: # かまいたち_official
+    price: 0
+    limitMins: 10
+    limitCount: 1
+  6d41c4b3-4754-4b27-abcb-a28a68654502: # テスト先生
+    price: 0
+    limitMins: 10
+    limitCount: 1
+  58326bbc-0c7b-48e5-bc6d-f3e2df3729b5: # AKB48_official
+    price: 0
+    limitMins: 10
+    limitCount: 1
+  e3c4c804-8a9c-4b7c-8026-0a8ed602b42c: # jen87go
+    price: 0
+    limitMins: 10
+    limitCount: 1
+  ca8f67cd-e4db-40b8-aa0e-a3f45041a429: # 17originals
+    price: 0
+    limitMins: 5
+    limitCount: 1
+  721fc91c-49a2-4c51-55b7-a84ab233743e: # 17REALEVENT
+    price: 0
+    limitMins: 1
+    limitCount: 1
+  829675b8-9416-4f07-9b72-552924f4afd9: # 17クイズ王
+    price: 0
+    limitMins: 1
+    limitCount: 1
+  8e08af3d-3d03-4c9b-878d-cb5d84398305: # 春日の必殺仕掛け人
+    price: 0
+    limitMins: 1
+    limitCount: 1
+  9701e253-a8ae-491c-bc34-8fb8df8a693d: # イチナナ妄想シアター
+    price: 0
+    limitMins: 1
+    limitCount: 1
+  a0ba65f9-30b4-47f8-98bb-8e44e000c5a4: # 十人の女たち
+    price: 0
+    limitMins: 1
+    limitCount: 1
+  44d271e9-8742-4d97-b24f-b4b87b8e8685: # メッシーと呼ばないで
+    price: 0
+    limitMins: 1
+    limitCount: 1
+  dcc8479d-2c22-4e20-b986-c7022683e49d: # リモート生ドッキリ大作戦
+    price: 0
+    limitMins: 1
+    limitCount: 1
+  16537a68-897f-468e-aa36-c6b41b4fb402: # 17LiveMusicStudio
+    price: 0
+    limitMins: 1
+    limitCount: 1
+  ee1e88f8-932a-4b65-aaa9-792f0d38630d: # 17LIVE_MUSIC_AUDITIONS
+    price: 99
+    limitMins: 5
+    limitCount: 1000
+  16226683-73a4-4055-a536-d3bb317cb3c7: # イチナナ特別配信
+    price: 0
+    limitMins: 10
+    limitCount: 1
+  689c8f05-4cea-4f37-a32b-94ec2ce7c818: # 17LIVE+_PREMIUM
+    price: 0
+    limitMins: 10
+    limitCount: 1
+  e1d193fd-0be8-449a-b462-72f7de55a46b: # 17LIVE+
+    price: 599
+    limitMins: 1
+    limitCount: 1000
+  868ee60d-9c68-4109-8dc0-f3487b188c86: # ななイチ
+    price: 0
+    limitMins: 1
+    limitCount: 1
+  718df6ff-8852-49ad-8c5d-af30b23dca15: # ラストアイドル_official
+    price: 0
+    limitMins: 2
+    limitCount: 1
+  3b2fb9a8-e6f6-43a8-b725-fbd22158a0cc: # テスト先生99
+    price: 0
+    limitMins: 10
+    limitCount: 1
+
+hotTopic: "today_hot_topic"
+topics:
+  - tag: "食べ物"
+    title: "毎日食べるのなら？"
+    options: ["お家で食べる親の料理", "外で食べる高級料理"]
+  - tag: "趣味"
+    title: "休みの日にやることは？"
+    options: ["ゲームやインターネット", "ショッピングやアウトドア"]
+  - tag: "季節"
+    title: "出かけるならどっちに行きたい？"
+    options: ["山でキャンプ", "海で日光浴"]
+  - tag: "恋愛"
+    title: "告白されるならどっちがいい？"
+    options: ["直接言葉で！", "形に残る文章で！"]
+  - tag: "ゲーム"
+    title: "このゲームやったことある？"
+    options: ["ある", "ない"]
+  - tag: "ゲーム"
+    title: "どっちが好き？"
+    options: ["アクションゲーム", "RPG"]
+  - tag: "ゲーム"
+    title: "人にオススメしたい程大好きなゲームがある？"
+    options: ["ある", "ない"]
+  - tag: "ゲーム"
+    title: "ゲームのしすぎで家族に怒られたことがある？"
+    options: ["ある", "ない"]
+  - tag: "ゲーム"
+    title: "ゲームするときどっちが多い？"
+    options: ["テレビゲーム", "スマホゲーム"]
+    

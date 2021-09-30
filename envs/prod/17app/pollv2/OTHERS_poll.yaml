@@ -1,0 +1,41 @@
+# Poll setting
+# MUST make sure that corresponding gift ids exist in gift database
+# In this case, they should be poll_option_{a|b|c|d|e}_{30|49|99|199|399|599|3999} by the value of giftIDTempalte
+minTTL: 5
+maxTTL: 60
+maxTitleDescLen: 20
+maxOptDescLen: 10
+minOptionCount: 2
+maxOptionCount: 5
+freeVoteEnable: false
+freeVoteWhitelist: []
+availableLimit:
+  mins: 1
+  count: 5
+freeVoteAndroidVersion: 2.3.67
+freeVoteIOSVersion: 3.44.0
+defaultPrice: 99
+availablePrice:
+  5:
+  30:
+  49:
+  99:
+  199:
+  399:
+  599:
+  3999:
+availableOptionID:
+  - poll_option_a
+  - poll_option_b
+  - poll_option_c
+  - poll_option_d
+  - poll_option_e
+giftIDTemplate: '{{.OptionID}}_{{.Price}}'
+userSettings:
+  8d77ff99-e7a1-4937-60f4-aba679957b08: # 皇者殿堂 （香港）
+    price: 199
+  e0819230-bdbc-426e-45e5-91a267f7c7ab: # 17開飯 （香港）
+    price: 199
+  ffccd5d8-12c5-46af-97b1-6d0d590301ad: # 「17都市驚喜」實況對決 （香港）
+    price: 199
+topics: []
