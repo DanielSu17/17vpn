@@ -5,41 +5,9 @@
   - name: example-target-hpa
     minReplicas: 20
 
-# 0930 Big Event
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=IL10
-- startTime: "2021-09-30 15:00:00 (GMT+0900)"
-  endTime: "2021-09-30 21:30:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 1003 占いCPN
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=JW15
-- startTime: "2021-10-03 18:00:00 (GMT+0800)"
-  endTime: "2021-10-03 22:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 1008 ★NOGOODTV
+# 1008 JP,NOGOODTVテスト配信実施 + ★NOGOODTV + JP,NOGOODTV
 # https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=KB7
-- startTime: "2021-10-08 18:00:00 (GMT+0900)"
+- startTime: "2021-10-08 16:00:00 (GMT+0900)"
   endTime: "2021-10-08 22:00:00 (GMT+0900)"
   HPAConfigs:
   - name: k8sprod-goapi-main
@@ -73,6 +41,22 @@
 # https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=KK7
 - startTime: "2021-10-17 19:00:00 (GMT+0900)"
   endTime: "2021-10-17 22:00:00 (GMT+0900)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 120
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+
+# 1019 ★浜崎あゆみ
+# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=KM19
+- startTime: "2021-10-19 19:00:00 (GMT+0900)"
+  endTime: "2021-10-19 22:00:00 (GMT+0900)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 120
