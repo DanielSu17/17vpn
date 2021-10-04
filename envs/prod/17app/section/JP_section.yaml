@@ -168,6 +168,15 @@ sections:
     category: normal
     orderModel: 2
 
+  - id: AudioStream # AudioStream 聲播
+    name:
+      key: ラジオ配信 #audio_stream_v3hotpage
+    enable: true
+    dedup: false
+    minGrids: 2
+    style: 3 
+    more: true
+
   - id: Label # タレント
     labelID: jp_talent
     name:
@@ -220,18 +229,6 @@ sections:
     minGrids: 5
     style: 5
     more: false
-
-  - id: Label # ラジオ配信
-    labelID: jp_audiostream
-    name:
-      key: streamer_jp_label_audiostream
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
 
   - id: Label # 雑談
     labelID: jp_freetalk1
@@ -353,14 +350,17 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: AudioStream # AudioStream 聲播
+  - id: Label # ラジオ配信
+    labelID: jp_audiostream
     name:
-      key: ラジオ配信 #audio_stream_v3hotpage
+      key: streamer_jp_label_audiostream
     enable: true
-    dedup: false
-    minGrids: 2
-    style: 3 
+    dedup: true
+    minGrids: 5
+    style: 3
     more: true
+    category: normal
+    orderModel: 2
 
   - id: Label
     labelID: jp_show
