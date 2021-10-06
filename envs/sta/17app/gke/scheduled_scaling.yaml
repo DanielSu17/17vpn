@@ -29,7 +29,11 @@
 - startTime: "2021-10-06 22:00:00 (GMT+0800)"
   endTime: "2021-10-06 23:00:00 (GMT+0800)"
   HPAConfigs:
+  - name: k8ssta-goapi-main
+    minReplicas: 80
   - name: k8ssta-golives-main
+    minReplicas: 24
+  - name: k8ssta-gotrade-main
     minReplicas: 24
   - name: k8ssta-revprox-tw-main
     minReplicas: 36
