@@ -106,7 +106,7 @@ regexConf:
       - ^GET /api/v1/lives/16056342(?:/giftTabs|/info)?$
       - ^POST /api/v1/lives/16056342/(?:enter|quit|viewers/alive|comments)?$
 conf:
- - url_key: "go_usersearch_url"
+ - url_key: "api_usersearch_url"
    weight: 100
    white_list:
      apiv1: "user/search"
