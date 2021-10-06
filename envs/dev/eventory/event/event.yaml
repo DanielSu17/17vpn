@@ -7,6 +7,12 @@ pubsub:
     OP: true
     DATACAT: true
     STATECHANGE: false
+    FOLLOW: true
+    STREAM: true
+    VIEW: true
+    PKRESULT: true
+    SNACK: true
+    TABLEUPSERT: true
 
 # switches for writing to persistent storage
 persist:
@@ -15,8 +21,15 @@ persist:
     AGGREGATOR: false
     PK: true
     OP: true
-    DATACAT: false 
-    STATECHANGE: true 
+    DATACAT: false
+    STATECHANGE: true
+    FOLLOW: true
+    STREAM: true
+    VIEW: true
+    PKRESULT: true
+    SNACK: true
+    TABLEUPSERT: true
 
 # switches for separate topic
 separateTopic: true
+resendFailEventByFailretry: true
