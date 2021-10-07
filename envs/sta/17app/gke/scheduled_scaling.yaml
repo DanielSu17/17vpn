@@ -26,17 +26,17 @@
     minReplicas: 36
     
 # eventory-worker stress test
-- startTime: "2021-10-06 22:00:00 (GMT+0800)"
-  endTime: "2021-10-07 01:00:00 (GMT+0800)"
+- startTime: "2021-10-07 11:30:00 (GMT+0800)"
+  endTime: "2021-10-07 18:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8ssta-goapi-main
-    minReplicas: 80
+    minReplicas: 200
   - name: k8ssta-golives-main
-    minReplicas: 24
+    minReplicas: 100
   - name: k8ssta-gotrade-main
-    minReplicas: 24
+    minReplicas: 50
   - name: k8ssta-revprox-tw-main
-    minReplicas: 36
+    minReplicas: 64
 
 # Jennifer stress test
 - startTime: "2021-08-18 7:10:00 (GMT+0800)"
