@@ -5,26 +5,10 @@
   - name: example-target-hpa
     minReplicas: 20
 
-# 1008 JP,NOGOODTVテスト配信実施 + ★NOGOODTV + JP,NOGOODTV
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=KB7
-- startTime: "2021-10-08 16:00:00 (GMT+0900)"
-  endTime: "2021-10-08 22:00:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 1009 後藤萌咲配信
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=KC7
-- startTime: "2021-10-09 18:00:00 (GMT+0900)"
-  endTime: "2021-10-09 21:00:00 (GMT+0900)"
+# 1014 NishikawaTakanori
+# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=KH7
+- startTime: "2021-10-14 19:00:00 (GMT+0900)"
+  endTime: "2021-10-14 22:00:00 (GMT+0900)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 120
@@ -69,10 +53,42 @@
   - name: k8sprod-gousersearch-main
     minReplicas: 10
 
+# 1019 Next Big 頒獎典禮
+# On Calendar
+- startTime: "2021-10-19 09:00:00 (GMT+0900)"
+  endTime: "2021-10-19 12:00:00 (GMT+0900)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 120
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+
 # 1019 ★浜崎あゆみ
 # https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=KM19
 - startTime: "2021-10-19 19:00:00 (GMT+0900)"
   endTime: "2021-10-19 22:00:00 (GMT+0900)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 120
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+
+# 1020 FLARE CUP
+# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=KN15
+- startTime: "2021-10-20 18:00:00 (GMT+0900)"
+  endTime: "2021-10-21 00:00:00 (GMT+0900)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 120
@@ -103,8 +119,8 @@
 
 # 1021 ★NishikawaTakanori
 # https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=KO7
-- startTime: "2021-10-21 21:00:00 (GMT+0900)"
-  endTime: "2021-10-22 00:00:00 (GMT+0900)"
+- startTime: "2021-10-21 19:00:00 (GMT+0900)"
+  endTime: "2021-10-21 22:00:00 (GMT+0900)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 120
@@ -121,6 +137,22 @@
 # https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=KP7
 - startTime: "2021-10-22 18:00:00 (GMT+0900)"
   endTime: "2021-10-22 21:00:00 (GMT+0900)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 120
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+
+# 1028 NishikawaTakanori
+# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=KV7
+- startTime: "2021-10-28 19:00:00 (GMT+0900)"
+  endTime: "2021-10-28 22:00:00 (GMT+0900)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 120
