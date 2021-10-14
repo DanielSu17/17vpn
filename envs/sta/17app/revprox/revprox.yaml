@@ -52,6 +52,9 @@ regexConf:
       #   - POST /api/v1/lives/:roomID/viewers/alive
       #   - POST /api/v1/lives/:roomID/comments
       - ^GET /api/v1/lives/\d+/concertInfo$
+
+      - ^GET /api/v1/lives/11652820(?:/giftTabs|/info)?$
+      - ^POST /api/v1/lives/11652820/(?:enter|quit|viewers/alive|comments)?$
       # ericconcert1
       - ^GET /api/v1/lives/15816643(?:/giftTabs|/info)?$
       - ^POST /api/v1/lives/15816643/(?:enter|quit|viewers/alive|comments)?$
@@ -62,8 +65,8 @@ regexConf:
       - ^GET /api/v1/lives/15810250(?:/giftTabs|/info)?$
       - ^POST /api/v1/lives/15810250/(?:enter|quit|viewers/alive|comments)?$
       # lcuconcert8
-      - ^GET /api/v1/lives/15809763(?:/giftTabs|/info)?$
-      - ^POST /api/v1/lives/15809763/(?:enter|quit|viewers/alive|comments)?$
+      # - ^GET /api/v1/lives/15809763(?:/giftTabs|/info)?$
+      # - ^POST /api/v1/lives/15809763/(?:enter|quit|viewers/alive|comments)?$
       # lcuconcert9
       - ^GET /api/v1/lives/15809775(?:/giftTabs|/info)?$
       - ^POST /api/v1/lives/15809775/(?:enter|quit|viewers/alive|comments)?$
@@ -158,8 +161,8 @@ regexConf:
       - ^GET /api/v1/lives/16544405(?:/giftTabs|/info)?$
       - ^POST /api/v1/lives/16544405/(?:enter|quit|viewers/alive|comments)?$
       # ct_qa_ctexpired
-      - ^GET /api/v1/lives/16544441(?:/giftTabs|/info)?$
-      - ^POST /api/v1/lives/16544441/(?:enter|quit|viewers/alive|comments)?$
+      # - ^GET /api/v1/lives/16544441(?:/giftTabs|/info)?$
+      # - ^POST /api/v1/lives/16544441/(?:enter|quit|viewers/alive|comments)?$
       # josephtest
       - ^GET /api/v1/lives/15757093(?:/giftTabs|/info)?$
       - ^POST /api/v1/lives/15757093/(?:enter|quit|viewers/alive|comments)?$
@@ -167,17 +170,21 @@ regexConf:
       - ^GET /api/v1/lives/21725362(?:/giftTabs|/info)?$
       - ^POST /api/v1/lives/21725362/(?:enter|quit|viewers/alive|comments)?$
       # canadian2
-      - ^GET /api/v1/lives/21725363(?:/giftTabs|/info)?$
-      - ^POST /api/v1/lives/21725363/(?:enter|quit|viewers/alive|comments)?$
+      # - ^GET /api/v1/lives/21725363(?:/giftTabs|/info)?$
+      # - ^POST /api/v1/lives/21725363/(?:enter|quit|viewers/alive|comments)?$
       # 17NightLive1
-      - ^GET /api/v1/lives/21725586(?:/giftTabs|/info)?$
-      - ^POST /api/v1/lives/21725586/(?:enter|quit|viewers/alive|comments)?$
+      # - ^GET /api/v1/lives/21725586(?:/giftTabs|/info)?$
+      # - ^POST /api/v1/lives/21725586/(?:enter|quit|viewers/alive|comments)?$
   - url_key: "concert_trade_url"
     default_url_key: "go_trade_url"
     weight: 100
     regex_paths:
+      - ^POST /api/v1/lives/15757093/gift
+      - ^POST /api/v1/lives/11652820/gift
+      - ^POST /api/v1/lives/14661500/gift
+      - ^POST /api/v1/lives/237665/gift
       # 17NightLive1
-      - ^POST /api/v1/lives/21725586/gift
+      # - ^POST /api/v1/lives/21725586/gift
       # ericconcert1
       - ^POST /api/v1/lives/15816643/gift
       # lcuconcert6
@@ -185,7 +192,7 @@ regexConf:
       # lcuconcert7
       - ^POST /api/v1/lives/15810250/gift
       # lcuconcert8
-      - ^POST /api/v1/lives/15809763/gift
+      # - ^POST /api/v1/lives/15809763/gift
       # lcuconcert9
       - ^POST /api/v1/lives/15809775/gift
       # lcuconcert10
@@ -249,7 +256,7 @@ regexConf:
       # canadian1
       - ^POST /api/v1/lives/21725362/gift
       # canadian2
-      - ^POST /api/v1/lives/21725363/gift
+      # - ^POST /api/v1/lives/21725363/gift
   - url_key: "go_trade_url"
     default_url_key: "go_trade_url"
     weight: 100
