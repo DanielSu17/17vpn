@@ -40,6 +40,39 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
+- ID: 596c535e-fb4f-4b07-8f31-c468d5b941a5
+  type: 10
+  category: 0
+  lifeCycle: 1
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 202110_halloween_vote_us_lucky
+    amount: 3
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_first_time_IAP_point_event_title
+  i18nTitleParams:
+  - value: "330"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
+  i18nDescriptionParams: []
+  goalValue: 330
+  enableTimeRange:
+  - startTime: 2021-10-15 18:00:00 (GMT-0700)
+    endTime: 2021-10-31 23:59:59 (GMT-0700)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
 - ID: d8b3676c-16e6-49d0-9f2f-e64db64e2090
   type: 8
   category: 0
@@ -98,93 +131,22 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-- ID: 20840325-7295-4021-ba3f-8904ee63e1fe
-  type: 5
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 10
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2110_us_race_r
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_leave_comment_reward_title2
-  i18nTitleParams:
-  - value: "10"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_leave_comment_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 10
-  enableTimeRange:
-  - startTime: 2021-10-03 18:00:00 (GMT-0700)
-    endTime: 2021-10-10 21:00:00 (GMT-0700)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 5f7de626-c771-4e02-9b1b-00f78e5431a6
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 10
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2110_us_race_r
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
-  i18nTitleParams:
-  - value: "50"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2110_us_race_s
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 50
-  enableTimeRange:
-  - startTime: 2021-10-03 18:00:00 (GMT-0700)
-    endTime: 2021-10-10 21:00:00 (GMT-0700)
-  refIDs:
-  - 2110_us_race_s
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 9261a790-de37-4ced-b36c-55ff2b125847
+- ID: deec377a-082b-4d32-9e36-20d1a015297c
   type: 9
   category: 0
   lifeCycle: 0
   targetAudience: 0
   levelRange:
-    min: 10
+    min: 1
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2110_us_newbies_2
-    amount: 5
+    rewardID: 202110_halloween_vote_us_lucky
+    amount: 1
     expireTimeSecs: 86400
   i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
   i18nTitleParams:
-  - value: "30"
+  - value: "60"
     needMap: false
     mapOption: 0
     fontAttribute: null
@@ -194,80 +156,9 @@ missions:
   i18nDescriptionParams: []
   goalValue: 1800
   enableTimeRange:
-  - startTime: 2021-10-01 18:00:00 (GMT-0700)
-    endTime: 2021-10-14 21:00:00 (GMT-0700)
+  - startTime: 2021-10-15 18:00:00 (GMT-0700)
+    endTime: 2021-10-31 23:59:59 (GMT-0700)
   refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: f8f7c60f-89f9-40c2-b1b2-6d728731c9ba
-  type: 5
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 10
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2110_us_newbies_2
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_leave_comment_reward_title2
-  i18nTitleParams:
-  - value: "10"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_leave_comment_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 10
-  enableTimeRange:
-  - startTime: 2021-10-01 18:00:00 (GMT-0700)
-    endTime: 2021-10-14 21:00:00 (GMT-0700)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 695f7b71-fe9e-4dcc-ae97-f96c9142b783
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 10
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2110_us_newbies_2
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
-  i18nTitleParams:
-  - value: "2"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2110_us_newbies_1
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 2
-  enableTimeRange:
-  - startTime: 2021-10-01 18:00:00 (GMT-0700)
-    endTime: 2021-10-14 21:00:00 (GMT-0700)
-  refIDs:
-  - 2110_us_newbies_1
   platforms:
   - android
   - ios
