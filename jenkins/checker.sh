@@ -57,10 +57,8 @@ main() {
         env_files=$(echo "${changed_files}" | grep ${env} | tr '\n' ',')
         echo "${env} : ${env_files}"
 
-        # docker pull "17media/config-checker:k8s${env}"
-        # docker run --rm -v "$(pwd)":/repo/configs "17media/config-checker:k8s${env}" -config_root="/repo/configs" -check_configs="${env_files}"
-        docker pull "17media/config-checker:d946beaca2a71714dd40b06d43b0bd1a3223f12b"
-        docker run --rm -v "$(pwd)":/repo/configs "17media/config-checker:d946beaca2a71714dd40b06d43b0bd1a3223f12b" -config_root="/repo/configs" -check_configs="${env_files}"
+        docker pull "17media/config-checker:k8s${env}"
+        docker run --rm -v "$(pwd)":/repo/configs "17media/config-checker:k8s${env}" -config_root="/repo/configs" -check_configs="${env_files}"
 
         LOCAL_CHECKER_STATUS=$?
         if [ ${LOCAL_CHECKER_STATUS} -eq 0 ]; then
