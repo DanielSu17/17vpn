@@ -69,8 +69,8 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-- ID: 4cb6439a-2c30-440c-9b7c-3c4dddd950ab
-  type: 10
+- ID: b165f9a6-1183-4060-ae9c-45b5236d6bf0
+  type: 3
   category: 0
   lifeCycle: 0
   targetAudience: 0
@@ -78,25 +78,66 @@ missions:
     min: 1
     max: 999
   reward:
-    rewardType: 2
-    rewardID: 2104-allgacha-login
-    amount: 1
+    rewardType: 1
+    rewardID: 2104_us_wedance_j_a_5
+    amount: 2
     expireTimeSecs: 86400
-  i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
-  i18nTitleParams: []
+  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
+  i18nTitleParams:
+  - value: "2"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  - value: 2104_us_wedance_j_a_5
+    needMap: false
+    mapOption: 2
+    fontAttribute: null
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des_phone
+  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc
   i18nDescriptionParams: []
-  goalValue: 330
+  goalValue: 2
   enableTimeRange:
-  - startTime: 2021-07-12 18:00:00 (GMT+0800)
-    endTime: 2021-08-26 20:55:00 (GMT+0800)
+  - startTime: 2021-10-15 14:00:00 (GMT-0700)
+    endTime: 2021-10-31 21:00:00 (GMT-0700)
+  refIDs:
+  - 2104_us_wedance_j_l
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: 4b481452-8206-4fe2-83cd-a0b37f613127
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2104_us_wedance_j_a_5
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "30"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 1800
+  enableTimeRange:
+  - startTime: 2021-10-15 14:00:00 (GMT-0700)
+    endTime: 2021-10-31 21:00:00 (GMT-0700)
   refIDs: []
   platforms:
   - android
   - ios
-  - web
   requirePhoneBinding: false
   withReminder: false
 i18nMissionCompleteToast: baggage_mission_toast_claimed
