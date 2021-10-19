@@ -5,54 +5,6 @@
   - name: example-target-hpa
     minReplicas: 20
 
-# 1014 NishikawaTakanori
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=KH7
-- startTime: "2021-10-14 19:00:00 (GMT+0900)"
-  endTime: "2021-10-14 22:00:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 1015 APEX大会
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=KI15
-- startTime: "2021-10-15 18:00:00 (GMT+0900)"
-  endTime: "2021-10-16 00:00:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 1017 鬼越トマホーク
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=KK7
-- startTime: "2021-10-17 19:00:00 (GMT+0900)"
-  endTime: "2021-10-17 22:00:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
 # 1019 Next Big 頒獎典禮
 # On Calendar
 - startTime: "2021-10-19 09:00:00 (GMT+0900)"
@@ -165,9 +117,10 @@
   - name: k8sprod-gousersearch-main
     minReplicas: 10
 
-# 1029 楽天OB選手
+# 1029 楽天OB選手 + 17 Halloween Party 2021 
 # https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=KW16
-- startTime: "2021-10-29 18:30:00 (GMT+0900)"
+# https://17media.slack.com/archives/C466YU363/p1634626849352900
+- startTime: "2021-10-29 16:30:00 (GMT+0900)"
   endTime: "2021-10-29 22:00:00 (GMT+0900)"
   HPAConfigs:
   - name: k8sprod-goapi-main
