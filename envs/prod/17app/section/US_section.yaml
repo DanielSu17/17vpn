@@ -15,6 +15,64 @@
 preservedSectionID: Suggestion
 
 sections:
-  - id: Suggestion # 猜你可能喜歡
+  - id: TopBanner # Banner + super promote
+    name:
+      key: tab_hot_2019q4_topbanner
     enable: true
-    minGrids: 5
+    style: 1
+    more: false
+  - id: Newbiequest
+    enable: true
+    style: 7
+    minGrids: 1
+    more: false
+  - id: OffcRecomm # 官方推薦
+    enable: true
+    style: 2
+    more: false
+
+  - id: NewestStreamer # D0 new streamer
+    name:
+      key: tab_hot_d0streamer
+    enable: true
+    dedup: true
+    minGrids: 0
+    style: 3
+    more: true
+
+
+
+
+
+
+  - id: Music # legacy Music tab
+    name:
+      key: tab_hot_2019q4_music
+    enable: true
+    dedup: true #重複
+    minGrids: 0
+    style: 3
+    more: true
+
+
+
+  - id: GroupCall # GroupCall 
+    name:
+      key: group_stream_v3hotpage
+    enable: true
+    dedup: false  #重複
+    minGrids: 0
+    style: 9 
+    more: true
+  - id: AudioStream # AudioStream 聲播
+    name:
+      key: audio_stream_v3hotpage
+    enable: true
+    dedup: false
+    minGrids: 0
+    style: 3 
+    more: true
+officialRecommendedStreamers:
+
+
+suggestionGroupingRules:
