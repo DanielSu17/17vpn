@@ -360,70 +360,33 @@ checkPNAfterComplete: 2
 #     requirePhoneBinding: false
 #     requireDeviceCheck: true
 newbieRewards:
-    - type: 7
-      point: 2000
-      exp: 0
-      required: 1
-      requirePhoneBinding: false
-      requireDeviceCheck: false
-    - type: 2
-      point: 0
-      exp: 0
-      required: 1
-      requirePhoneBinding: false
-      requireDeviceCheck: false
-      voucherReward:
-        type: 3
-        itemID: 2012_jp_newcomer_bp
-        amount: 5
-        intervalSec: 604800
-    - type: 3
-      point: 0
-      exp: 0
-      required: 1
-      requirePhoneBinding: false
-      requireDeviceCheck: false
-      voucherReward:
-        type: 3
-        itemID: 2012_jp_newcomer_bp
-        amount: 60
-        intervalSec: 604800
-    - type: 8
-      point: 0
-      exp: 0
-      required: 1
-      requirePhoneBinding: false
-      requireDeviceCheck: false
-      voucherReward:
-        type: 3
-        itemID: 2012_jp_newcomer_bp
-        amount: 50
-        intervalSec: 604800
-    - type: 9
+    - type: 2 #ENTER_LIVE
       point: 20
       exp: 0
       required: 1
       requirePhoneBinding: false
       requireDeviceCheck: false
-      voucherReward:
-        type: 3
-        itemID: 2012_jp_newcomer_bp
-        amount: 300
-        intervalSec: 604800
-    - type: 10
-      point: 0
+    - type: 3 #FOLLOW_STREAMER
+      point: 30
+      exp: 0
+      required: 3
+      requirePhoneBinding: false
+      requireDeviceCheck: false
+    - type: 8 #LIKE_POST
+      point: 80
       exp: 0
       required: 1
       requirePhoneBinding: false
       requireDeviceCheck: false
-      voucherReward:
-        type: 3
-        itemID: 2012_jp_newcomer_bp
-        amount: 3000
-        intervalSec: 604800
-    - type: 6
-      point: 3465
+    - type: 9 #COMMENT_LIVE
+      point: 90
       exp: 0
       required: 3
+      requirePhoneBinding: false
+      requireDeviceCheck: false
+    - type: 10 #SEND_GIFT
+      point: 100
+      exp: 0
+      required: 1
       requirePhoneBinding: false
       requireDeviceCheck: false
