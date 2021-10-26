@@ -1,0 +1,63 @@
+# newbieHours defines the newbie period in hours
+newbieHours: 48
+pokeNewbieHours: 72
+
+# hideArmyPromote indciates hiding army promote msg from fresh user
+# periodInHours defines the period of fresh user
+# 0 indicates NOT hiding the msg from all users
+hideArmyPromote:
+  periodInHours: 0
+
+newbieGuidance:
+  newbieEnhanceGuidanceStyle: 1 # 0: default, 1: black, Guidance(新手進入直播間強調遮罩)
+  newbieGuidanceFocusMissionEnable: false # 點擊skip 則出現新手任務banner遮罩
+
+enableNewbieCellTabsFilter: true
+newbieCellTabs: [hot, hot_opt, 17k, topictab, latest]
+enableNewbieSubtabsFilter: true
+newbieSubtabs: [all, today_hot_topic, chat, talent, comedy]
+enableNewbieCellBannerFilter: true
+enableNewbieCoverGirlFilter: true
+displayGiftTabsToastDurationSecs: 30
+# https://17media.atlassian.net/browse/PROD-4045
+# If endTimeInHours is 0, it will be ignored
+"featureRules":
+  "ModalAd":
+    "startTimeInHours": 48
+    "endTimeInHours": 0
+  "CoverGirl":
+    "startTimeInHours": 48
+    "endTimeInHours": 0
+  "RacingCar":
+    "startTimeInHours": 48
+    "endTimeInHours": 0
+  "DynamicShareButton":
+    "startTimeInHours": 48
+    "endTimeInHours": 0
+  "Accompany":
+    "startTimeInHours": 48
+    "endTimeInHours": 0
+  "RoomComeToLifeForGiftBox":
+    "startTimeInHours": 48
+    "endTimeInHours": 0
+  "HandDrawSticker":
+    "startTimeInHours": 48
+    "endTimeInHours": 0
+  "LevelUpGift":
+    "startTimeInHours": 48
+    "endTimeInHours": 0
+  "HeavenlyGift":
+    "startTimeInHours": 48
+    "endTimeInHours": 0
+  "BirthdayGift":
+    "startTimeInHours": 48
+    "endTimeInHours": 0
+  "AudioGift":
+    "startTimeInHours": 48
+    "endTimeInHours": 0
+  "ArmyGift":
+    "startTimeInHours": 48
+    "endTimeInHours": 0
+  "LimitedGoodsGift":
+    "startTimeInHours": 48
+    "endTimeInHours": 0
