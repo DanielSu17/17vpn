@@ -1,2 +1,1 @@
 # Cover girl (ID)
-#
