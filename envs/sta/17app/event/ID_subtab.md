@@ -1,1 +1,1 @@
-# 活動頁subtab設定(ID)
+活動頁subtab設定(ID)
