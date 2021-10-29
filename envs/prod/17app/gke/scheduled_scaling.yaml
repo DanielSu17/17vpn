@@ -5,54 +5,6 @@
   - name: example-target-hpa
     minReplicas: 20
 
-# 1021 JP,ニシナナLIVE + ★NishikawaTakanori
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=KO7
-- startTime: "2021-10-21 18:00:00 (GMT+0900)"
-  endTime: "2021-10-21 22:00:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 1022 ★NOGOODTV
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=KP7
-- startTime: "2021-10-22 18:00:00 (GMT+0900)"
-  endTime: "2021-10-22 21:00:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 1028 NishikawaTakanori
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=KV7
-- startTime: "2021-10-28 19:00:00 (GMT+0900)"
-  endTime: "2021-10-28 22:00:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
 # 1029 楽天OB選手 + 17 Halloween Party 2021 
 # https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=KW16
 # https://17media.slack.com/archives/C466YU363/p1634626849352900
@@ -84,5 +36,21 @@
     minReplicas: 25
   - name: k8sprod-gousersearch-main
     minReplicas: 10
+
+# 1031 JP,案件名富樫勇樹選手配信
+- startTime: "2021-10-31 13:00:00 (GMT+0800)"
+  endTime: "2021-10-31 16:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 120
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+
 
 # How you doing
