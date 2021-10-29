@@ -38,15 +38,38 @@ sections:
 #    style: 3
 #    more: true
 
-  - id: Label
+#  - id: Label
+#    labelID: jp_supersonic
+#    name:
+#      key: streamer_jp_label_myhobby
+#    enable: true
+#    dedup: false
+#    minGrids: 1
+#    style: 3
+#    more: true
+  - id: Label #私こんな趣味あります
     labelID: jp_supersonic
     name:
       key: streamer_jp_label_myhobby
     enable: true
-    dedup: false
+    dedup: true
     minGrids: 1
     style: 3
     more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label #　古墳フェス
+    labelID: 2108_jp_starttest
+    name:
+      key: streamer_jp_label_kohun
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
 
   - id: Label # ファイナンス
     labelID: 2110_jp_finance1
