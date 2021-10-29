@@ -673,43 +673,6 @@ newbieRewards:
 #      amount: 1 # 幾個
 #      expireSecs: 86400 # 有效秒數
 
-continuousSignInEvent:                        #只能有一段參數，無法多個時間段，且每天開始時間只能為00:00 (GMT+8)
-startTime: "2021-10-28 17:00:00 (GMT-0700)" #2週年登入測試
-endTime: "2021-11-30 17:00:00 (GMT-0700)"
-butlerImageURL: "https://cdn.17app.co/e614a416-bfe0-4632-a412-fd7935cbaf78.png"
-小幫手key: daily_continuous_login_dialog
-rewards:
-- ID: "US-reward1"  #活動上線後就不能改，因為會看這個ID來判斷用戶是否領過獎，同時間ID不能重複，如果活動時間已過就可以
-  dayMin: 1 # 連續登入幾天
-  dayMax: 7 # 連續登入幾天
-  giftID: "2111_us_2annilogin_1"
-  amount: 1 # 幾個
-  expireSecs: 3 # 有效秒數
-- ID: "US-reward2"  #活動上線後就不能改，因為會看這個ID來判斷用戶是否領過獎，同時間ID不能重複，如果活動時間已過就可以
-  dayMin: 8 # 連續登入幾天
-  dayMax: 14 # 連續登入幾天
-  giftID: "2111_us_2annilogin_2"
-  amount: 1 # 幾個
-  expireSecs: 3 # 有效秒數
-- ID: "US-reward3"  #活動上線後就不能改，因為會看這個ID來判斷用戶是否領過獎，同時間ID不能重複，如果活動時間已過就可以
-  dayMin: 15 # 連續登入幾天
-  dayMax: 21 # 連續登入幾天
-  giftID: "2111_us_2annilogin_3"
-  amount: 1 # 幾個
-  expireSecs: 3 # 有效秒數
-- ID: "US-reward4"  #活動上線後就不能改，因為會看這個ID來判斷用戶是否領過獎，同時間ID不能重複，如果活動時間已過就可以
-  dayMin: 22 # 連續登入幾天
-  dayMax: 28 # 連續登入幾天
-  giftID: "2111_us_2annilogin_4"
-  amount: 1 # 幾個
-  expireSecs: 3 # 有效秒數
-- ID: "US-reward5"  #活動上線後就不能改，因為會看這個ID來判斷用戶是否領過獎，同時間ID不能重複，如果活動時間已過就可以
-  dayMin: 29 # 連續登入幾天
-  dayMax: 30 # 連續登入幾天
-  giftID: "2111_us_2annilogin_5"
-  amount: 1 # 幾個
-  expireSecs: 3 # 有效秒數
-
 # US 2nd Anniversary
 signInRewardsTheme:
   background: "https://cdn.17app.co/f6c3a347-b6ea-4260-97bb-7fe15c768965.png" 
