@@ -38,9 +38,67 @@
 # | --- | --- |
 # | RewardCategoryBaggageGift | 1 |
 # | RewardCategoryAvatarGrabBag | 2 |
-#1
+
 missions:
-- ID: 11
+- ID: a1940b2b-834c-49a0-ad81-4eed8c793561
+  type: 9
+  category: 0
+  lifeCycle: 1
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2111_hk_princess_bp
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: 211101-211120-HK-mission-title-1
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: 211101-211120-HK-mission-gift-desc-1
+  i18nDescriptionParams: []
+  goalValue: 600
+  enableTimeRange:
+  - startTime: 2021-11-01 18:00:00 (GMT+0800)
+    endTime: 2021-11-20 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 00405f5c-103a-42e8-b37b-df0c327053c8
+  type: 9
+  category: 0
+  lifeCycle: 1
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2111_hk_princess_bp
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: 211101-211120-HK-mission-title-2
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: 211101-211120-HK-mission-gift-desc-2
+  i18nDescriptionParams: []
+  goalValue: 1800
+  enableTimeRange:
+  - startTime: 2021-11-01 18:00:00 (GMT+0800)
+    endTime: 2021-11-20 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: "11"
   type: 8
   category: 0
   lifeCycle: 1
@@ -69,243 +127,7 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: true
-#2
-- ID: 22
-  type: 24
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 5
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: gift_cat_2_ops
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: hk_mission_35
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: hk_mission_36
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2021-10-29 00:00:00 (GMT+0800)
-    endTime: 2021-11-10 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-#3
-- ID: 33
-  type: 5
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 5
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2010_sg_diamond
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: hk_mission_37
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: hk_mission_38
-  i18nDescriptionParams: []
-  goalValue: 3
-  enableTimeRange:
-  - startTime: 2021-10-29 00:00:00 (GMT+0800)
-    endTime: 2021-11-10 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-#4
-- ID: 44
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 5
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2015_b2b_sakura
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: hk_mission_39
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: hk_mission_40
-  i18nDescriptionParams: []
-  goalValue: 300
-  enableTimeRange:
-  - startTime: 2021-10-29 00:00:00 (GMT+0800)
-    endTime: 2021-11-10 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-#5
-- ID: 55
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 5
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2019_jp_share_twitter
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: hk_mission_41
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: hk_mission_42
-  i18nDescriptionParams: []
-  goalValue: 1200
-  enableTimeRange:
-  - startTime: 2021-10-29 00:00:00 (GMT+0800)
-    endTime: 2021-11-10 23:59:59 (GMT+0800)
-  refIDs:
-  - "9b4a4683-5276-45f0-8390-220ee02c67af"
-  - "83497bb2-291f-4553-a133-97944f5ab70a"
-  - "891580c4-1f6e-487a-9da6-5f3cc3fe690c"
-  - "3d626a21-a1fd-4965-7fd1-9dfa51971bc3"
-  - "47d9bcfc-cb96-46f3-9042-517661dfc8f6"
-  - 065bff40-ebe0-47e7-7eee-90470a383bef
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-#6
-- ID: 66
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 5
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2101_tw_detective_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: hk_mission_43
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: hk_mission_44
-  i18nDescriptionParams: []
-  goalValue: 5
-  enableTimeRange:
-  - startTime: 2021-10-29 00:00:00 (GMT+0800)
-    endTime: 2021-11-10 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-#7
-- ID: 77
-  type: 5
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 5
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: socute
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: hk_mission_45
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: hk_mission_46
-  i18nDescriptionParams: []
-  goalValue: 2
-  enableTimeRange:
-  - startTime: 2021-10-29 00:00:00 (GMT+0800)
-    endTime: 2021-11-10 23:59:59 (GMT+0800)
-  refIDs:
-  - "3bacb300-3200-4683-aa95-458cd602c347"
-  - "39e50f4c-a154-4904-97c7-eb4d6ce258be"
-  - "c46870bc-df52-4bca-90a8-510bcf51903a"
-  - "3846921f-d3cc-4c86-a7da-292689dd23fa"
-  - "a162d529-8f52-4f3b-8a84-7458ec104cca"
-  - "b39c9dfa-5364-4bbc-b02e-6c188844503a"
-  - "864c0ebb-8df1-4e55-bf8d-1affd935c2d0"
-  - "9fd6bc2a-68e6-48e4-b979-119eda7e0ed0"
-  - "4d006619-86fd-45de-a15c-a29d8ce8e544"
-  - "2e027a0a-ed24-44f5-b076-79c9c4a86aeb"
-  - "7bd9b88e-8f98-4eb3-957d-878bec8d820f"
-  - "c85a0253-191c-4444-b7c9-0e3ba8a1ef46"
-  - "69c1fb45-c01c-4255-49d6-e5b8338c1c43"
-  - "1d002257-17b9-46c0-bfda-ec777f767544"
-  - "d3efe742-3441-4d25-9d85-3e2c2d421301"
-  - "d709d8e1-ba57-4732-97a0-44aeab193d87"
-  - "d65ffcf3-4007-49f5-902f-1dd3e76bfee7"
-  - "678d3633-9230-40e0-be3e-67011d1a6fab"
-  - "54726a0e-90a8-4609-a10c-9bbe678d217c"
-  - "a75b250e-c3ee-47fa-bc25-a51f57db96fb"
-  - "faf3f4d6-f803-4a4d-99aa-2f16bef09077"
-  - "a49b9a56-ea32-4454-8f8b-ad24935a0f06"
-  - "09cbb9fd-cf04-4156-b4b6-9ca3ba163a0b"
-  - "380be4b1-ed34-4406-890b-297a0ce957b5"
-  - "704ae5a9-aed6-4d16-adc9-28fb5c89c667"
-  - "6b9f4a22-1ae3-4bd2-a8ed-2a56ebd69fc8"
-  - "3889009e-d146-482d-6374-e9d1adf7b295"
-  - "4638d3f1-fcb8-4db4-ab61-fabfac9f7ca5"
-  - "cc8c6f2e-d258-4812-96e6-2cb2c733fb88"
-  - "b9029191-2bb1-4110-a63f-c9f42b5f7560"
-  - "01add58f-9bcb-412d-aa14-402d1558fcfd"
-  - "daa7cdb5-859b-459d-b87e-d9ae7ffa7452"
-  - "8c4a36c2-ee20-4d2d-b351-6dd716e421e4"
-  - "f415982b-4251-4990-b480-9c6a6a1dd49e"
-  - "3549f16c-a42e-4f79-bb2f-355581f01a08"
-  - "9b8bb508-2ef9-493d-ad59-3528d979f594"
-  - "8ea9472d-0959-4c16-bfd8-9287f712c06f"
-  - "85454805-0a07-4196-b768-28648c67f645"
-  - "e44f593b-784f-46d4-9ba6-8f70f311b37f"
-  - "92d974d0-1d26-48e3-b720-33cc13dba689"
-  - "4880492d-d392-48ae-a830-8538fbe114d7"
-  - "784c02e5-30d5-4545-aad1-8e4afd0334ce"
-  - "243301e6-63f2-49a2-9ced-1037f9e4b67a"
-  - "e4c1c65a-fdc7-47e3-858c-6a1b60554ae1"
-  - "edf919ab-68ea-4ce8-a331-605c16901ce1"
-  - "b7e27d78-766b-410c-8021-dfd6e5de3829"
-  - "3ad31659-7eb4-46a0-b8f8-10f5211137b4"
-  - "658b5712-f699-4212-81b3-64a7b62bc776"
-  - "c4a600a9-dac0-4dda-94ab-7210a0015c94"
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-#8
-- ID: 88
+- ID: "88"
   type: 24
   category: 0
   lifeCycle: 2
@@ -334,405 +156,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: true
-#9
-- ID: 99
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 5
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: heart_bubble
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: hk_mission_49
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: hk_mission_50
-  i18nDescriptionParams: []
-  goalValue: 3
-  enableTimeRange:
-  - startTime: 2021-10-29 00:00:00 (GMT+0800)
-    endTime: 2021-11-10 23:59:59 (GMT+0800)
-  refIDs:
-  - 2103_jp_emojithemar_bag_4d5760bd
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-#10
-- ID: 100
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 5
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 1903_hk_starrysky_bp_1
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: hk_mission_51
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: hk_mission_52
-  i18nDescriptionParams: []
-  goalValue: 5
-  enableTimeRange:
-  - startTime: 2021-10-29 00:00:00 (GMT+0800)
-    endTime: 2021-11-10 23:59:59 (GMT+0800)
-  refIDs:
-  - 2103_jp_emojithemar_bag_4d5760bd
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-#11
-- ID: 110
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 5
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2110_jp_bag_magical_06_5d1db33c
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: hk_mission_53
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: hk_mission_54
-  i18nDescriptionParams: []
-  goalValue: 3
-  enableTimeRange:
-  - startTime: 2021-10-29 00:00:00 (GMT+0800)
-    endTime: 2021-11-10 23:59:59 (GMT+0800)
-  refIDs:
-  - 2104_tw_magic_a_bag
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-#12
-- ID: 120
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 5
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2104_jp_dailymission
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: hk_mission_55
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: hk_mission_56
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2021-10-29 00:00:00 (GMT+0800)
-    endTime: 2021-11-10 23:59:59 (GMT+0800)
-  refIDs:
-  - 2009_jp_upgrade_seiryu
-  - 2009_jp_upgrade_seiryu_01
-  - 2009_jp_upgrade_seiryu_02
-  - 2009_jp_upgrade_seiryu_03
-  - 2009_jp_upgrade_seiryu_04
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-#13
-- ID: 130
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 80
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2106_jp_charge_01
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: hk_mission_57
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: hk_mission_58
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2021-10-29 00:00:00 (GMT+0800)
-    endTime: 2021-11-10 23:59:59 (GMT+0800)
-  refIDs:
-  - 2009_jp_upgrade_seiryu_04
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-#14
-- ID: 140
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 80
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2108_jp_charge_02
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: hk_mission_59
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: hk_mission_60
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2021-10-29 00:00:00 (GMT+0800)
-    endTime: 2021-11-10 23:59:59 (GMT+0800)
-  refIDs:
-  - 2021_levelup_kirin_lv4
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-#15
-- ID: 150
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 80
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2104_jp_charge_02
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: hk_mission_61
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: hk_mission_62
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2021-10-29 00:00:00 (GMT+0800)
-    endTime: 2021-11-10 23:59:59 (GMT+0800)
-  refIDs:
-  - 2007_jp_upgrade_gembu_04
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-#16
-- ID: 160
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 80
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2107_jp_charge_01
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: hk_mission_63
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: hk_mission_64
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2021-10-29 00:00:00 (GMT+0800)
-    endTime: 2021-11-10 23:59:59 (GMT+0800)
-  refIDs:
-  - 2021_rhaegal_lv4
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-#halloween
-- ID: 1
-  type: 8
-  category: 0
-  lifeCycle: 1
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 202110_halloween_vote_hk
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_IAP_reward_title
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2021-10-25 12:00:00 (GMT+0800)
-    endTime: 2021-10-31 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 337cd686-e5ed-4f15-8c41-49ebd135e9fb
-  type: 9
-  category: 0
-  lifeCycle: 1
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2011_hk_halloween_bp_1
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: hk_mission_21
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: hk_mission_26
-  i18nDescriptionParams: []
-  goalValue: 300
-  enableTimeRange:
-  - startTime: 2021-10-05 18:00:00 (GMT+0800)
-    endTime: 2021-10-31 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 2
-  type: 9
-  category: 0
-  lifeCycle: 1
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2011_hk_halloween_bp_1
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: hk_mission_22
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: hk_mission_27
-  i18nDescriptionParams: []
-  goalValue: 600
-  enableTimeRange:
-  - startTime: 2021-10-05 18:00:00 (GMT+0800)
-    endTime: 2021-10-31 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-###############3
-- ID: e7ba2e9d-00c3-4f67-a3bb-134fb204b014
-  type: 9
-  category: 0
-  lifeCycle: 1
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2011_hk_halloween_bp_2_view
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: hk_mission_23
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: hk_mission_28
-  i18nDescriptionParams: []
-  goalValue: 1800
-  enableTimeRange:
-  - startTime: 2021-10-05 18:00:00 (GMT+0800)
-    endTime: 2021-10-31 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 62b33377-8da7-4225-adae-dbabc790d1b1
-  type: 9
-  category: 0
-  lifeCycle: 1
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2011_hk_halloween_bp_2_view
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: hk_mission_24
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: hk_mission_29
-  i18nDescriptionParams: []
-  goalValue: 3600
-  enableTimeRange:
-  - startTime: 2021-10-05 18:00:00 (GMT+0800)
-    endTime: 2021-10-31 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
 - ID: 5d2aae83-08e0-4636-ae02-d0eadb55e3c5
   type: 9
   category: 0
@@ -824,19 +247,8 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-
-
-
-
-
-
-
-
-
-
-
-- ID: 4bdac032-f2de-4eaf-98ea-96933589c03c
-  type: 9
+- ID: b2ba6466-0067-4b99-8568-3562676b1313
+  type: 3
   category: 0
   lifeCycle: 0
   targetAudience: 0
@@ -845,179 +257,136 @@ missions:
     max: 999
   reward:
     rewardType: 1
-    rewardID: 202110_halloween_vote_hk
+    rewardID: 2111_hk_princess_bp
     amount: 1
     expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title_halloween_2021
-  i18nTitleParams:
-  - value: "30"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
+  i18nTitle: 211101-211120-HK-mission-title-3
+  i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescription: 211101-211120-HK-mission-gift-desc-3
   i18nDescriptionParams: []
-  goalValue: 1800
+  goalValue: 1
   enableTimeRange:
-  - startTime: 2021-10-25 12:00:00 (GMT+0800)
-    endTime: 2021-10-31 23:59:59 (GMT+0800)
+  - startTime: 2021-11-01 18:00:00 (GMT+0800)
+    endTime: 2021-11-20 23:59:59 (GMT+0800)
+  refIDs:
+  - 2111_hk_princess_bag_a
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: "22"
+  type: 24
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 5
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: gift_cat_2_ops
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: hk_mission_35
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: hk_mission_36
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2021-10-29 00:00:00 (GMT+0800)
+    endTime: 2021-11-10 23:59:59 (GMT+0800)
   refIDs: []
   platforms:
   - android
   - ios
   requirePhoneBinding: false
   withReminder: true
-- ID: c1e6f36d-3045-462c-9621-98bc32824774
-  type: 8
+- ID: "33"
+  type: 5
   category: 0
   lifeCycle: 0
-  targetAudience: 2
+  targetAudience: 0
   levelRange:
-    min: 1
+    min: 5
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2110_jp_charge_01
-    amount: 3
+    rewardID: 2010_sg_diamond
+    amount: 1
     expireTimeSecs: 86400
-  i18nTitle: hk_mission_01
+  i18nTitle: hk_mission_37
   i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: 211022-HK-daily-mission-gift-desc
-  i18nDescriptionParams:
-  - value: "3"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2110_jp_charge_01
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2021-10-22 00:00:00 (GMT+0800)
-    endTime: 2021-10-28 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 1132ab03-d451-48be-8eae-cd7d65c74c17
-  type: 5
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 1812_jp_weeklymission3_1
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: 211022-HK-daily-mission-comment-title
-  i18nTitleParams:
-  - value: "3"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: 211022-HK-daily-mission-gift-desc
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 1812_jp_weeklymission3_1
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
+  i18nDescription: hk_mission_38
+  i18nDescriptionParams: []
   goalValue: 3
   enableTimeRange:
-  - startTime: 2021-10-22 00:00:00 (GMT+0800)
-    endTime: 2021-10-28 23:59:59 (GMT+0800)
+  - startTime: 2021-10-29 00:00:00 (GMT+0800)
+    endTime: 2021-11-10 23:59:59 (GMT+0800)
   refIDs: []
   platforms:
   - android
   - ios
   requirePhoneBinding: false
-  withReminder: false
-- ID: 7a0a7a56-d1b8-4d69-8e75-2330684a6d38
-  type: 5
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2011_hk_challengenov_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: 211022-HK-daily-mission-comment-title
-  i18nTitleParams:
-  - value: "5"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: 211022-HK-daily-mission-gift-desc
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2011_hk_challengenov_bp
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  goalValue: 5
-  enableTimeRange:
-  - startTime: 2021-10-22 00:00:00 (GMT+0800)
-    endTime: 2021-10-28 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: fc3116e7-7058-4e1f-9f03-de52d227a68e
+  withReminder: true
+- ID: "44"
   type: 9
   category: 0
   lifeCycle: 0
   targetAudience: 0
   levelRange:
-    min: 1
+    min: 5
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2107_hk_musteat_bp_2
+    rewardID: 2015_b2b_sakura
     amount: 1
     expireTimeSecs: 86400
-  i18nTitle: hk_mission_19
+  i18nTitle: hk_mission_39
   i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: 211022-HK-daily-mission-gift-desc
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2107_hk_musteat_bp_2
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
+  i18nDescription: hk_mission_40
+  i18nDescriptionParams: []
+  goalValue: 300
+  enableTimeRange:
+  - startTime: 2021-10-29 00:00:00 (GMT+0800)
+    endTime: 2021-11-10 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: "55"
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 5
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2019_jp_share_twitter
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: hk_mission_41
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: hk_mission_42
+  i18nDescriptionParams: []
   goalValue: 1200
   enableTimeRange:
-  - startTime: 2021-10-22 00:00:00 (GMT+0800)
-    endTime: 2021-10-28 23:59:59 (GMT+0800)
+  - startTime: 2021-10-29 00:00:00 (GMT+0800)
+    endTime: 2021-11-10 23:59:59 (GMT+0800)
   refIDs:
   - 9b4a4683-5276-45f0-8390-220ee02c67af
   - 83497bb2-291f-4553-a133-97944f5ab70a
@@ -1029,460 +398,358 @@ missions:
   - android
   - ios
   requirePhoneBinding: false
-  withReminder: false
-- ID: 210609b6-ba07-4d06-96eb-52b0fdf50aa1
+  withReminder: true
+- ID: "66"
   type: 3
   category: 0
   lifeCycle: 0
   targetAudience: 0
   levelRange:
-    min: 1
+    min: 5
     max: 999
   reward:
     rewardType: 1
-    rewardID: 1812_jp_weeklymission6_1
+    rewardID: 2101_tw_detective_bp
     amount: 1
     expireTimeSecs: 86400
-  i18nTitle: 211022-HK-daily-mission-general-gift-title
-  i18nTitleParams:
-  - value: "5"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
+  i18nTitle: hk_mission_43
+  i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: 211022-HK-daily-mission-gift-desc
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 1812_jp_weeklymission6_1
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
+  i18nDescription: hk_mission_44
+  i18nDescriptionParams: []
   goalValue: 5
   enableTimeRange:
-  - startTime: 2021-10-22 00:00:00 (GMT+0800)
-    endTime: 2021-10-28 23:59:59 (GMT+0800)
+  - startTime: 2021-10-29 00:00:00 (GMT+0800)
+    endTime: 2021-11-10 23:59:59 (GMT+0800)
   refIDs: []
   platforms:
   - android
   - ios
   requirePhoneBinding: false
-  withReminder: false
-- ID: a95f2382-265d-4014-b2df-2d71f7031425
+  withReminder: true
+- ID: "77"
+  type: 5
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 5
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: socute
+    amount: 3
+    expireTimeSecs: 86400
+  i18nTitle: hk_mission_45
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: hk_mission_46
+  i18nDescriptionParams: []
+  goalValue: 2
+  enableTimeRange:
+  - startTime: 2021-10-29 00:00:00 (GMT+0800)
+    endTime: 2021-11-10 23:59:59 (GMT+0800)
+  refIDs:
+  - 3bacb300-3200-4683-aa95-458cd602c347
+  - 39e50f4c-a154-4904-97c7-eb4d6ce258be
+  - c46870bc-df52-4bca-90a8-510bcf51903a
+  - 3846921f-d3cc-4c86-a7da-292689dd23fa
+  - a162d529-8f52-4f3b-8a84-7458ec104cca
+  - b39c9dfa-5364-4bbc-b02e-6c188844503a
+  - 864c0ebb-8df1-4e55-bf8d-1affd935c2d0
+  - 9fd6bc2a-68e6-48e4-b979-119eda7e0ed0
+  - 4d006619-86fd-45de-a15c-a29d8ce8e544
+  - 2e027a0a-ed24-44f5-b076-79c9c4a86aeb
+  - 7bd9b88e-8f98-4eb3-957d-878bec8d820f
+  - c85a0253-191c-4444-b7c9-0e3ba8a1ef46
+  - 69c1fb45-c01c-4255-49d6-e5b8338c1c43
+  - 1d002257-17b9-46c0-bfda-ec777f767544
+  - d3efe742-3441-4d25-9d85-3e2c2d421301
+  - d709d8e1-ba57-4732-97a0-44aeab193d87
+  - d65ffcf3-4007-49f5-902f-1dd3e76bfee7
+  - 678d3633-9230-40e0-be3e-67011d1a6fab
+  - 54726a0e-90a8-4609-a10c-9bbe678d217c
+  - a75b250e-c3ee-47fa-bc25-a51f57db96fb
+  - faf3f4d6-f803-4a4d-99aa-2f16bef09077
+  - a49b9a56-ea32-4454-8f8b-ad24935a0f06
+  - 09cbb9fd-cf04-4156-b4b6-9ca3ba163a0b
+  - 380be4b1-ed34-4406-890b-297a0ce957b5
+  - 704ae5a9-aed6-4d16-adc9-28fb5c89c667
+  - 6b9f4a22-1ae3-4bd2-a8ed-2a56ebd69fc8
+  - 3889009e-d146-482d-6374-e9d1adf7b295
+  - 4638d3f1-fcb8-4db4-ab61-fabfac9f7ca5
+  - cc8c6f2e-d258-4812-96e6-2cb2c733fb88
+  - b9029191-2bb1-4110-a63f-c9f42b5f7560
+  - 01add58f-9bcb-412d-aa14-402d1558fcfd
+  - daa7cdb5-859b-459d-b87e-d9ae7ffa7452
+  - 8c4a36c2-ee20-4d2d-b351-6dd716e421e4
+  - f415982b-4251-4990-b480-9c6a6a1dd49e
+  - 3549f16c-a42e-4f79-bb2f-355581f01a08
+  - 9b8bb508-2ef9-493d-ad59-3528d979f594
+  - 8ea9472d-0959-4c16-bfd8-9287f712c06f
+  - 85454805-0a07-4196-b768-28648c67f645
+  - e44f593b-784f-46d4-9ba6-8f70f311b37f
+  - 92d974d0-1d26-48e3-b720-33cc13dba689
+  - 4880492d-d392-48ae-a830-8538fbe114d7
+  - 784c02e5-30d5-4545-aad1-8e4afd0334ce
+  - 243301e6-63f2-49a2-9ced-1037f9e4b67a
+  - e4c1c65a-fdc7-47e3-858c-6a1b60554ae1
+  - edf919ab-68ea-4ce8-a331-605c16901ce1
+  - b7e27d78-766b-410c-8021-dfd6e5de3829
+  - 3ad31659-7eb4-46a0-b8f8-10f5211137b4
+  - 658b5712-f699-4212-81b3-64a7b62bc776
+  - c4a600a9-dac0-4dda-94ab-7210a0015c94
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: "99"
   type: 3
   category: 0
   lifeCycle: 0
   targetAudience: 0
   levelRange:
-    min: 1
+    min: 5
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: heart_bubble
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: hk_mission_49
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: hk_mission_50
+  i18nDescriptionParams: []
+  goalValue: 3
+  enableTimeRange:
+  - startTime: 2021-10-29 00:00:00 (GMT+0800)
+    endTime: 2021-11-10 23:59:59 (GMT+0800)
+  refIDs:
+  - 2103_jp_emojithemar_bag_4d5760bd
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: "100"
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 5
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 1903_hk_starrysky_bp_1
+    amount: 3
+    expireTimeSecs: 86400
+  i18nTitle: hk_mission_51
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: hk_mission_52
+  i18nDescriptionParams: []
+  goalValue: 5
+  enableTimeRange:
+  - startTime: 2021-10-29 00:00:00 (GMT+0800)
+    endTime: 2021-11-10 23:59:59 (GMT+0800)
+  refIDs:
+  - 2103_jp_emojithemar_bag_4d5760bd
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: "110"
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 5
     max: 999
   reward:
     rewardType: 1
     rewardID: 2110_jp_bag_magical_06_5d1db33c
     amount: 1
     expireTimeSecs: 86400
-  i18nTitle: 211022-HK-daily-mission-specific-gift-title
-  i18nTitleParams:
-  - value: "3"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2104_tw_magic_a_bag
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  - value: 隨機禮
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
+  i18nTitle: hk_mission_53
+  i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: 211022-HK-daily-mission-gift-desc
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2110_jp_bag_magical_06_5d1db33c
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
+  i18nDescription: hk_mission_54
+  i18nDescriptionParams: []
   goalValue: 3
   enableTimeRange:
-  - startTime: 2021-10-22 00:00:00 (GMT+0800)
-    endTime: 2021-10-28 23:59:59 (GMT+0800)
+  - startTime: 2021-10-29 00:00:00 (GMT+0800)
+    endTime: 2021-11-10 23:59:59 (GMT+0800)
   refIDs:
   - 2104_tw_magic_a_bag
   platforms:
   - android
   - ios
   requirePhoneBinding: false
-  withReminder: false
-- ID: 8d3ee9f0-ca54-460f-b0a8-a9c141905555
+  withReminder: true
+- ID: "120"
   type: 3
   category: 0
   lifeCycle: 0
   targetAudience: 0
   levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: bravo
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: 211022-HK-daily-mission-specific-gift-title
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: firework_new
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  - value: 經典
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: 211022-HK-daily-mission-gift-desc
-  i18nDescriptionParams:
-  - value: "5"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: bravo
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2021-10-22 00:00:00 (GMT+0800)
-    endTime: 2021-10-28 23:59:59 (GMT+0800)
-  refIDs:
-  - firework_new
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 2871213f-c4e4-454c-87b9-9e72621ae95f
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
+    min: 5
     max: 999
   reward:
     rewardType: 1
     rewardID: 2104_jp_dailymission
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: 211022-HK-daily-mission-specific-gift-title
-  i18nTitleParams:
-  - value: "2"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2105_performance_bubble
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  - value: 舞台效果
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: 211022-HK-daily-mission-gift-desc
-  i18nDescriptionParams:
-  - value: "3"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2104_jp_dailymission
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  goalValue: 2
-  enableTimeRange:
-  - startTime: 2021-10-22 00:00:00 (GMT+0800)
-    endTime: 2021-10-28 23:59:59 (GMT+0800)
-  refIDs:
-  - 2105_performance_bubble
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: c8d09e8d-396a-4b5a-b3d5-eb79d8db06e1
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: island_vip
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: 211022-HK-daily-mission-specific-gift-title
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: gift_luckybag_protect
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  - value: 隨機禮
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: 211022-HK-daily-mission-gift-desc
-  i18nDescriptionParams:
-  - value: "2"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: island_vip
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2021-10-22 00:00:00 (GMT+0800)
-    endTime: 2021-10-28 23:59:59 (GMT+0800)
-  refIDs:
-  - gift_luckybag_protect
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 205572f8-62e5-4b6f-849d-baf31e977aea
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2105_jp_vip_premium_l_vol4
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: 211022-HK-daily-mission-specific-gift-title
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: star_rain
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  - value: 奢華
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: 211022-HK-daily-mission-gift-desc
-  i18nDescriptionParams:
-  - value: "3"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2105_jp_vip_premium_l_vol4
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2021-10-22 00:00:00 (GMT+0800)
-    endTime: 2021-10-28 23:59:59 (GMT+0800)
-  refIDs:
-  - star_rain
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 936763aa-66e3-48eb-8000-66bf11cad371
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 2
-    max: 15
-  reward:
-    rewardType: 1
-    rewardID: crazy_stairs_viewer_easy_bag
     amount: 1
     expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "60"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 3600
-  enableTimeRange:
-  - startTime: 2021-10-25 14:00:00 (GMT+0800)
-    endTime: 2021-10-29 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: c9c0aab8-8f5f-4fa2-a5ed-7c51621f0e9b
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 2
-    max: 15
-  reward:
-    rewardType: 1
-    rewardID: crazy_stairs_streamer_easy_bag
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "30"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 1800
-  enableTimeRange:
-  - startTime: 2021-10-30 14:00:00 (GMT+0800)
-    endTime: 2021-10-31 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 515bd918-9efb-4498-b19b-df1c2e72f2c9
-  type: 10
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: crazy_stairs_viewer_easy_bag
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_first_time_IAP_point_event_title
-  i18nTitleParams:
-  - value: "330"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
-  i18nDescriptionParams: []
-  goalValue: 330
-  enableTimeRange:
-  - startTime: 2021-10-25 14:00:00 (GMT+0800)
-    endTime: 2021-10-29 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: ee08ba58-be61-4171-ac0e-80d222be4816
-  type: 10
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: crazy_stairs_streamer_easy_bag
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_first_time_IAP_point_event_title
-  i18nTitleParams:
-  - value: "1720"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
-  i18nDescriptionParams: []
-  goalValue: 1720
-  enableTimeRange:
-  - startTime: 2021-10-30 14:00:00 (GMT+0800)
-    endTime: 2021-10-31 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 07cbebe8-e81a-427c-abd1-0ed306c051e6
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2011_hk_halloween_bp_3_gift
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: hk_mission_25
+  i18nTitle: hk_mission_55
   i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: hk_mission_30
+  i18nDescription: hk_mission_56
   i18nDescriptionParams: []
   goalValue: 1
   enableTimeRange:
-  - startTime: 2021-10-05 18:00:00 (GMT+0800)
-    endTime: 2021-10-31 23:59:59 (GMT+0800)
+  - startTime: 2021-10-29 00:00:00 (GMT+0800)
+    endTime: 2021-11-10 23:59:59 (GMT+0800)
   refIDs:
-  - 2011_hk_halloween_bag
+  - 2009_jp_upgrade_seiryu
+  - 2009_jp_upgrade_seiryu_01
+  - 2009_jp_upgrade_seiryu_02
+  - 2009_jp_upgrade_seiryu_03
+  - 2009_jp_upgrade_seiryu_04
   platforms:
   - android
   - ios
   requirePhoneBinding: false
-  withReminder: false
+  withReminder: true
+- ID: "130"
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 80
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2106_jp_charge_01
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: hk_mission_57
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: hk_mission_58
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2021-10-29 00:00:00 (GMT+0800)
+    endTime: 2021-11-10 23:59:59 (GMT+0800)
+  refIDs:
+  - 2009_jp_upgrade_seiryu_04
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: "140"
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 80
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2108_jp_charge_02
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: hk_mission_59
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: hk_mission_60
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2021-10-29 00:00:00 (GMT+0800)
+    endTime: 2021-11-10 23:59:59 (GMT+0800)
+  refIDs:
+  - 2021_levelup_kirin_lv4
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: "150"
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 80
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2104_jp_charge_02
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: hk_mission_61
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: hk_mission_62
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2021-10-29 00:00:00 (GMT+0800)
+    endTime: 2021-11-10 23:59:59 (GMT+0800)
+  refIDs:
+  - 2007_jp_upgrade_gembu_04
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: "160"
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 80
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2107_jp_charge_01
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: hk_mission_63
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: hk_mission_64
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2021-10-29 00:00:00 (GMT+0800)
+    endTime: 2021-11-10 23:59:59 (GMT+0800)
+  refIDs:
+  - 2021_rhaegal_lv4
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
 i18nMissionCompleteToast: baggage_mission_toast_claimed
 refreshHour: 5
 supportedVersion:
