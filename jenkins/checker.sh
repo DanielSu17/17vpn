@@ -66,7 +66,7 @@ main() {
         echo "${env} : ${env_files}"
 
         docker pull "17media/config-checker:k8s${env}"
-        docker run --rm -v "$(pwd)":/repo/configs "17media/config-checker:k8s${env}" -config_root="/repo/configs" -check_configs="${env_files}" -config_env="${env}"
+        docker run --rm -v "$(pwd)":/repo/configs "17media/config-checker:k8s${env}" -config_root="/repo/configs" -check_configs="${env_files}"
 
         LOCAL_CHECKER_STATUS=$?
         if [ ${LOCAL_CHECKER_STATUS} -eq 0 ]; then
