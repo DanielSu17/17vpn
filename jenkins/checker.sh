@@ -1,6 +1,9 @@
 #!/bin/bash
-# removed
-# circle/remote_check.py
+
+if [ -n "$1" ]; then
+    ENV=$1
+fi
+
 CHECKER="circle/syntax_checker.py circle/check_providers.py"
 
 commits=$(git log --pretty=format:'%H' "${GIT_PREVIOUS_SUCCESSFUL_COMMIT}".."${GIT_COMMIT}")
@@ -54,6 +57,11 @@ main() {
         if [[ "${env}" == "dev" ]]; then
             continue
         fi
+        
+        if [[ -n "$ENV" && "${env}" != "$ENV" ]]; then
+            continue
+        fi
+        
         env_files=$(echo "${changed_files}" | grep ${env} | tr '\n' ',')
         echo "${env} : ${env_files}"
 
