@@ -4,11 +4,6 @@ if [ -n "$1" ]; then
     ENV=$1
 fi
 
-if [ "${ENV}" = "prod"  ];then
-    rm -rf "envs/sta"
-elif [ "${ENV}" = "sta"  ];then
-    rm -rf "envs/prod"
-
 CHECKER="circle/syntax_checker.py circle/check_providers.py"
 
 commits=$(git log --pretty=format:'%H' "${GIT_PREVIOUS_SUCCESSFUL_COMMIT}".."${GIT_COMMIT}")
