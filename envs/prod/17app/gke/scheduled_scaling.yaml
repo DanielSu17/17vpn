@@ -5,55 +5,8 @@
   - name: example-target-hpa
     minReplicas: 20
 
-# 1029 楽天OB選手 + 17 Halloween Party 2021 
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit#gid=1709744959&range=KW16
-# https://17media.slack.com/archives/C466YU363/p1634626849352900
-- startTime: "2021-10-29 16:30:00 (GMT+0900)"
-  endTime: "2021-10-29 22:00:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# 1030 【萬聖大活動】官播支援
-- startTime: "2021-10-30 17:30:00 (GMT+0800)"
-  endTime: "2021-10-30 22:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
 ## November (alexsu)
 # https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit?usp=sharing
-# AKB48 regular program
-- startTime: "2021-11-02 19:00:00 (GMT+0900)"
-  endTime: "2021-11-02 22:00:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
 # AKB48 卒コン情報解禁番組
 # NishikawaTakanori
 - startTime: "2021-11-04 18:00:00 (GMT+0900)"
