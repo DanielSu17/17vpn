@@ -238,39 +238,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: true
-- ID: fdc35268-0c5b-48fe-9eb4-c172b6419536
-  type: 13
-  category: 0
-  lifeCycle: 1
-  targetAudience: 0
-  levelRange:
-    min: 2
-    max: 15
-  reward:
-    rewardType: 1
-    rewardID: 2004_tw_weeklymission_iap
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_day_in_total_reward_title
-  i18nTitleParams:
-  - value: "3"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_day_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 3
-  enableTimeRange:
-  - startTime: 2021-10-27 16:20:00 (GMT+0800)
-    endTime: 2021-11-02 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
 - ID: f748f6bb-058a-48df-9844-53398368b28b
   type: 16
   category: 0
@@ -300,6 +267,49 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
+- ID: 087878a7-0c22-4da2-8a6c-3e8b0d85fb68
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 5
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2007_tw_monthly_bp
+    amount: 3
+    expireTimeSecs: 86400
+  i18nTitle: tw_mission_01
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: 211022-HK-daily-mission-gift-desc
+  i18nDescriptionParams:
+  - value: "3"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  - value: 2007_tw_monthly_bp
+    needMap: false
+    mapOption: 2
+    fontAttribute: null
+  goalValue: 3
+  enableTimeRange:
+  - startTime: 2021-11-04 18:30:00 (GMT+0800)
+    endTime: 2021-11-17 14:59:00 (GMT+0800)
+  refIDs:
+  - duck
+  - duck_s
+  - duck_m
+  - duck_l
+  - gift_3dduck_lv4
+  - gift_3dduck_lv5
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
 - ID: 834f1942-a7ba-4cf1-b693-dca4bf174c73
   type: 5
   category: 0
@@ -640,126 +650,6 @@ missions:
     endTime: 2021-11-10 23:59:59 (GMT+0800)
   refIDs:
   - lovegif
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 70f08765-fb3e-445d-8a45-83ec7e731340
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 16
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: island_vip
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: 211022-HK-daily-mission-specific-gift-title
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: star_rain
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  - value: 奢華
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: 211022-HK-daily-mission-gift-desc
-  i18nDescriptionParams:
-  - value: "3"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: island_vip
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2021-10-27 16:20:00 (GMT+0800)
-    endTime: 2021-11-02 23:59:59 (GMT+0800)
-  refIDs:
-  - star_rain
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 96ae60f6-ee88-4677-aa6b-49e63a0644fb
-  type: 5
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 2
-    max: 15
-  reward:
-    rewardType: 1
-    rewardID: 2004_tw_weeklymission_comment
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_leave_comment_reward_title2
-  i18nTitleParams:
-  - value: "10"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_leave_comment_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 10
-  enableTimeRange:
-  - startTime: 2021-10-27 16:20:00 (GMT+0800)
-    endTime: 2021-11-02 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 1e872a85-77f7-45bb-8f0a-34fcefbe565c
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 2
-    max: 15
-  reward:
-    rewardType: 1
-    rewardID: socute
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "30"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: baggage_mission_watch_streams_time_in_total_reward_desc
-  i18nContentParams:
-  - value: gift_1907_us_weekend_warrior
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 1800
-  enableTimeRange:
-  - startTime: 2021-10-27 16:20:00 (GMT+0800)
-    endTime: 2021-11-02 23:59:59 (GMT+0800)
-  refIDs: []
   platforms:
   - android
   - ios
