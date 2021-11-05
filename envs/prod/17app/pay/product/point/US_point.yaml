@@ -12,16 +12,16 @@
 
 eventBasedIAP:
 # Welcome Offer November
-  - startTime: "2021-11-01T18:00:00-07:00"
-    endTime: "2021-11-30T21:00:00-07:00"
-    showCountdownUnderSticker: false
-    showCountdownInPopUp: false
+  - startTime: "2021-11-01T18:00:00-07:00" #Remember to change 
+    endTime: "2021-11-30T21:00:00-07:00" #Remember to change 
+    showCountdownUnderSticker: false #If you need countdown set it to true
+    showCountdownInPopUp: false #If you need countdown set it to true
     stickerURL: "https://cdn.17app.co/b4366e0c-9dd8-41f7-bd33-65da94343929.png"
     stickerURLInGiftbox: "https://cdn.17app.co/b4366e0c-9dd8-41f7-bd33-65da94343929.png"
     eventInfo:
       eventTitleI18nKey: ""
       eventURL: ""
-      bannerImageURL: "https://cdn.17app.co/0f1a968d-c250-4590-bd29-d4bee50a61f6.png"
+      bannerImageURL: "https://cdn.17app.co/0f1a968d-c250-4590-bd29-d4bee50a61f6.png" #change if need
     layoutInfo:
       titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
       messageColor: "#6F6777"
@@ -58,7 +58,7 @@ eventBasedIAP:
       - productID: "media17_points_35980"
         bonusPoint: 0
         shouldHighlight:  false
-    firstPurchaseType: 1
+    firstPurchaseType: 1 #Flash sale change it to 0, first time purchase to 1
     taInfo:
       registerRange:
         dayStart: 0 # 0 means no limit
