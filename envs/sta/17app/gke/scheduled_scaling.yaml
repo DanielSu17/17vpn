@@ -53,11 +53,11 @@
     minReplicas: 36
 
 # weekly stress test
-- startTime: "2021-11-02 18:00:00 (GMT+0800)"
-  endTime: "2021-11-02 18:45:00 (GMT+0800)"
+- startTime: "2021-11-08 17:00:00 (GMT+0800)"
+  endTime: "2021-11-08 19:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8ssta-goapi-main
-    minReplicas: 50
+    minReplicas: 80
   - name: k8ssta-golives-main
     minReplicas: 48
   - name: k8ssta-gotrade-main
