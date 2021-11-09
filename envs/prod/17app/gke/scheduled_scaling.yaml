@@ -7,38 +7,7 @@
 
 ## November (alexsu)
 # https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit?usp=sharing
-# AKB48 卒コン情報解禁番組
-# NishikawaTakanori
-- startTime: "2021-11-04 18:00:00 (GMT+0900)"
-  endTime: "2021-11-04 22:00:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# ★NOGOODTV
-# ★NightLive
-- startTime: "2021-11-05 17:00:00 (GMT+0900)"
-  endTime: "2021-11-06 01:00:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
+# JP,案件名:AKB48 レギュラー番組
 # AKB48 regular program
 - startTime: "2021-11-09 19:00:00 (GMT+0900)"
   endTime: "2021-11-09 22:00:00 (GMT+0900)"
@@ -130,7 +99,8 @@
     minReplicas: 10
 
 # ★NOGOODTV
-- startTime: "2021-11-19 18:00:00 (GMT+0900)"
+# ★Big Event
+- startTime: "2021-11-19 15:30:00 (GMT+0900)"
   endTime: "2021-11-20 01:00:00 (GMT+0900)"
   HPAConfigs:
   - name: k8sprod-goapi-main
@@ -175,17 +145,18 @@
     minReplicas: 10
 
 # GFA
+# scaling to reach maxReplicas
 - startTime: "2021-11-24 17:00:00 (GMT+0800)"
   endTime: "2021-11-24 22:30:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
-    minReplicas: 120
+    minReplicas: 200
   - name: k8sprod-golives-main
-    minReplicas: 85
+    minReplicas: 100
   - name: k8sprod-gotrade-main
-    minReplicas: 12
+    minReplicas: 130
   - name: k8sprod-gocells-main
-    minReplicas: 25
+    minReplicas: 200
   - name: k8sprod-gousersearch-main
     minReplicas: 10
 
