@@ -1,1 +1,1 @@
-# monster 設定
+# (ID) monster 設定

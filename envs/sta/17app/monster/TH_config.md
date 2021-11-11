@@ -1,1 +1,1 @@
-# monster 設定
+# (TH) monster 設定
