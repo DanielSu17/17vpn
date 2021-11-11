@@ -1,0 +1,16 @@
+FROM golang:1.16-alpine
+
+ENV GO111MODULE off
+RUN apk add --no-cache git && \
+    go get github.com/BurntSushi/cmd && \
+    go get github.com/ericfan17/configv2
+
+# TODO: change path
+WORKDIR $GOPATH/src/github.com/ericfan17/configv2/pusher
+RUN go build -o /opt/pusher
+
+FROM alpine:3.9
+RUN apk add --no-cache git
+COPY --from=0 /opt/pusher /opt/
+COPY docker-entrypoint.sh /
+ENTRYPOINT ["/docker-entrypoint.sh"]
