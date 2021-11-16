@@ -1,12 +1,45 @@
 # position example: <type>_<tab>
+# position:
+#   # index start from 1
+#   # Tab : hot
+#   program_hot: [2,6,10,15,20,25]
+#   beltBanner_hot: 5
+#   virtualStreamer_hot: 0
+#   beltBannerLatest: 1
+#   carouselBannerLatest: 2
+
+#   # index start from 0
+#   banner_tv: [2]
+#   banner_clip: [0]
+# # this is for setting position priority in hot cell
+# priority:
+#   - name: 1 # TVSHOW 
+#   - name: 2 # TRIVIA_ON_TV
+#   - name: 3 # TVBANNER
+#   - name: 4 # TRIVIA
+#   - name: 5 # WEREWOLVES
+
+# # Expand the cell size to 2x2 if the number of cells less/equal than the number
+# enableExpandCellSize: false
+# expandCellSizeThreshold: 5
+
+# # Fill streams in other region to fit the page limit in hot
+# supplyOtherRegionInHot: true
+
+# # the setting of the available duration when they complete the first stream as the qualified D0 new streamer; in hour
+# qualifiedFirstStreamDuration: 24
+# # the setting of the minimum duration for the qualified D0 new streamer; in minute
+# firstStreamForMinimumDuration: 10
+
+# position example: <type>_<tab>
 position:
   # index start from 1
   # Tab : hot
-  program_hot: [2,6,10,15,20,25]
-  beltBanner_hot: 5
-  virtualStreamer_hot: 0
-  beltBannerLatest: 1
-  carouselBannerLatest: 2
+  program_hot: []
+  beltBanner_hot: 6
+  carouselBannerHot: 3
+  beltBannerLatest: 4
+  carouselBannerLatest: 1
 
   # index start from 0
   banner_tv: [2]
@@ -14,9 +47,7 @@ position:
 # this is for setting position priority in hot cell
 priority:
   - name: 1 # TVSHOW 
-  - name: 2 # TRIVIA_ON_TV
   - name: 3 # TVBANNER
-  - name: 4 # TRIVIA
   - name: 5 # WEREWOLVES
 
 # Expand the cell size to 2x2 if the number of cells less/equal than the number
@@ -26,7 +57,17 @@ expandCellSizeThreshold: 5
 # Fill streams in other region to fit the page limit in hot
 supplyOtherRegionInHot: true
 
-# the setting of the available duration when they complete the first stream as the qualified D0 new streamer; in hour
+# VodlistPosition means 0: Highlight上, 1-n: 第1-n個highlight下, n+1: 腰帶Banner下
+vodlistPosition: 1
+vodlist: #筆記：超過第15個可能就沒人看
+  - 0414229d-6039-47fa-b209-e7914908f3d3 #鍾林大戰EP1
+  - 737c6001-d811-4bbf-a23f-ff7d1af21299 #鍾林大戰EP2
+  - 01d91129-3e0e-4c2c-9b4b-b996c4f9d2fc #鍾林大戰EP3
+  - c36e380b-4054-4222-b086-33cef757bb77 #Another Round EP1+
+  - a3698374-7282-47c1-bf29-f6968cad29fa #地獄餓媽家姐 EP1
+  - 3d9d1153-a499-4987-b4df-45d33f69e2ba #地獄餓媽家姐 EP2
+  - f976ee2c-5145-4051-8b89-887bd6d6cd16 #趙展彤 & 莫凱謙 - Music Live
+  # the setting of the available duration when they complete the first stream as the qualified D0 new streamer; in hour
 qualifiedFirstStreamDuration: 24
 # the setting of the minimum duration for the qualified D0 new streamer; in minute
 firstStreamForMinimumDuration: 10
