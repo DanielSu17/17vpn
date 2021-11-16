@@ -78,7 +78,7 @@ node('gcp') { timestamps { ansiColor('xterm') {
                 // download binary.exe from storage
                 def storage = "http://cdn.17app.co"
                 // version tag for avoiding cdn cache to get old binary
-                def missionBinary = "227a1b94-3c7c-4326-8a34-d0c875d3d437.gz"
+                def missionBinary = "6e86c24c-b68b-4a60-99d3-b320b46b232a.gz"
                 sh("wget ${storage}/${missionBinary}")
                 sh("tar zxvf ${missionBinary}")
             }
@@ -89,7 +89,7 @@ node('gcp') { timestamps { ansiColor('xterm') {
         sshagent(["3dc01492-01f6-4be5-8073-8de5f458ed1e"]) {
             dir("gowork") {
                 def slackChannel = "C018MHC10TW"
-                sh("./main \
+                sh("./generator \
                         -env=${params.ENV} \
                         -slackUserID=${params.SLACK_USER_ID} \
                         -slackUserEmail=${params.SLACK_USER_EMAIL} \
