@@ -122,7 +122,9 @@ conf:
      gift: "getLiveStreamGiftLeaderboard,\
             getLiveStreamAllGifts,\
             getReceivedGiftLog"
- - url_key: "go_platform_url"
+ - url_key: "go_url"
+   default_url_key: "go_platform_url"
+   weight: 50
    white_list:
      liveStreams: "publishLiveStream,\
             getLiveStreamViewers,keepLiveStream"
