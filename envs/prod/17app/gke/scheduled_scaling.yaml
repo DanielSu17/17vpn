@@ -6,83 +6,7 @@
     minReplicas: 20
 
 ## November (alexsu)
-# https://docs.google.com/spreadsheets/d/1jGs7s9PJp-clDDkv_2jepoNDxuButTtjfCb4ZERX9h0/edit?usp=sharing
-# JP,案件名:AKB48 レギュラー番組
-# AKB48 regular program
-- startTime: "2021-11-09 19:00:00 (GMT+0900)"
-  endTime: "2021-11-09 22:00:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# NishikawaTakanori
-- startTime: "2021-11-11 19:00:00 (GMT+0900)"
-  endTime: "2021-11-11 22:00:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# AKB48 卒コン煽り番組
-- startTime: "2021-11-13 19:00:00 (GMT+0900)"
-  endTime: "2021-11-13 22:00:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# JP,はじめしゃちょー
-- startTime: "2021-11-15 17:00:00 (GMT+0900)"
-  endTime: "2021-11-15 22:30:00 (GMT+0900)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# AKB48 regular program
 # 70 pods can hold around 37k users
-- startTime: "2021-11-16 18:00:00 (GMT+0800)"
-  endTime: "2021-11-17 01:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70 
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
 
 # NishikawaTakanori
 - startTime: "2021-11-18 18:00:00 (GMT+0800)"
@@ -116,7 +40,7 @@
     minReplicas: 10
 
 # AKB48 卒コン煽り番組
-- startTime: "2021-11-20 18:00:00 (GMT+0800)"
+- startTime: "2021-11-20 11:45:00 (GMT+0800)"
   endTime: "2021-11-21 01:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
@@ -131,7 +55,7 @@
     minReplicas: 10
 
 # AKB48 regular program
-- startTime: "2021-11-23 18:00:00 (GMT+0800)"
+- startTime: "2021-11-23 19:00:00 (GMT+0800)"
   endTime: "2021-11-24 01:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
@@ -147,8 +71,8 @@
 
 # GFA
 # scaling to reach maxReplicas
-- startTime: "2021-11-24 17:00:00 (GMT+0800)"
-  endTime: "2021-11-24 22:30:00 (GMT+0800)"
+- startTime: "2021-11-24 16:20:00 (GMT+0800)"
+  endTime: "2021-11-25 01:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 200
@@ -160,13 +84,21 @@
     minReplicas: 200
   - name: k8sprod-gousersearch-main
     minReplicas: 10
+  - name: k8sprod-revprox-main
+    minReplicas: 36
+  - name: k8sprod-revprox-tw-main
+    minReplicas: 36
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+  - name: k8sprod-revprox-hk-main
+    minReplicas: 36
 
 # NishikawaTakanori
-- startTime: "2021-11-25 19:00:00 (GMT+0900)"
-  endTime: "2021-11-25 22:00:00 (GMT+0900)"
+- startTime: "2021-11-25 18:00:00 (GMT+0800)"
+  endTime: "2021-11-25 21:30:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
-    minReplicas: 120
+    minReplicas: 70
   - name: k8sprod-golives-main
     minReplicas: 85
   - name: k8sprod-gotrade-main
@@ -176,4 +108,47 @@
   - name: k8sprod-gousersearch-main
     minReplicas: 10
 
-# (TODO)11/27 AKB_横山由依卒コン
+# AKB横山由依Concert
+- startTime: "2021-11-27 15:00:00 (GMT+0800)"
+  endTime: "2021-11-27 20:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+
+# AKB横山由依Concert Aftertalk
+- startTime: "2021-11-27 19:15:00 (GMT+0800)"
+  endTime: "2021-11-27 22:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+
+# JP,案件名:AKB48 レギュラー番組
+- startTime: "2021-11-30 17:45:00 (GMT+0800)"
+  endTime: "2021-11-30 21:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10

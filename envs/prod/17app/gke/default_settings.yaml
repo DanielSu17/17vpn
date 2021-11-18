@@ -1,5 +1,5 @@
-default_min: 
-  backend: 
+default_min:
+  backend:
     k8sprod-goapi-main: 9
     k8sprod-gocells-main: 10
     k8sprod-golives-main: 5
@@ -18,10 +18,11 @@ default_min:
     k8sprod-revprox-tw-main: 18
     k8sprod-revprox-id-main: 18
     k8sprod-revprox-jp-main: 18
+    k8sprod-revprox-hk-main: 18
     k8sprod-revprox-sg-main: 18
     k8sprod-revprox-ph-main: 18
     k8sprod-data-middleware-main: 14
-  frontend: 
+  frontend:
     admin-v2-17app-services: 2
     baobaofu-17app-services: 2
     event-web-17app-services: 4
@@ -29,10 +30,10 @@ default_min:
     skyeye-v2-17app-services: 2
     skyeyewall-17app-services: 2
     webapp-17app-services: 4
-settings: 
-  backend: 
+settings:
+  backend:
     fileName: "scheduled_scaling.yaml"
     namespace: "k8sprod"
-  frontend: 
+  frontend:
     fileName: "scheduled_scaling_frontend.yaml"
     namespace: "default"
