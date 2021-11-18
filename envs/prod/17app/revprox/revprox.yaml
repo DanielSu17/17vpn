@@ -32,6 +32,10 @@ allowed_origins:
  - "^http://usskyeye\\.s3-website-us-west-2\\.amazonaws\\.com$" # for US skyeye
  - "^http://172.16.5.10(:\\d+)?$" # frontend dev
 regexConf:
+  - url_key: "api_logs_url"
+    weight: 100
+    regex_paths:
+      - ^GET /api/v1/eventSpecDebug
   - url_key: "aggr_gateway_url"
     default_url_key: "go_url"
     weight: 100
@@ -210,7 +214,7 @@ conf:
  - url_key: "api_logs_url"
    weight: 100
    white_list:
-     apiv1: "logs,rdEvents,eventSpecDebug"
+     apiv1: "logs"
  - url_key: "group_call_url"
    weight: 100
    white_list:
