@@ -1,4 +1,4 @@
-# sections
+  # sections
 #   - id: TopBanner|OffcRecomm|Suggestion|Label|RedEnvelope|Show|Vod|TodayHotTopic|CrazyZoo
 #     enable: false|true
 #     dedup:  false|true
@@ -123,6 +123,8 @@ sections:
     minGrids: 3
     style: 3
     more: true
+
+
 ###### moved to top on Thurs and bottom on Fri, by Barton
   - id: Label #
     labelID: 17live_hk
@@ -141,7 +143,24 @@ sections:
     minGrids: 1
     style: 5
     more: false
-
+  - id: Label # 2111-officehourABtest-Male
+    labelID: officeHourMale
+    name:
+      key: suggest_streamers_category_male
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 3
+    more: true
+  - id: Label # 2111-officehourABtest-Female
+    labelID: officeHourFemale
+    name:
+      key: suggest_streamers_category_female
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 3
+    more: true
 #  - id: AudioStream # AudioStream 聲播
 #    name:
 #      key: audio_stream_v3hotpage
