@@ -40,39 +40,6 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
-- ID: 69ed6cf8-39d2-4c3a-bf3f-00634899e05d
-  type: 10
-  category: 0
-  lifeCycle: 1
-  targetAudience: 0
-  levelRange:
-    min: 3
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 1909_upgrade_boat_bag
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_first_time_IAP_point_tw_event_title_event
-  i18nTitleParams:
-  - value: "35980"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
-  i18nDescriptionParams: []
-  goalValue: 35980
-  enableTimeRange:
-  - startTime: 2021-11-18 00:00:00 (GMT+0800)
-    endTime: 2021-11-19 23:59:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
 - ID: 56152779-c550-451b-9122-172d51ccedfb
   type: 10
   category: 0
@@ -134,59 +101,6 @@ missions:
   - startTime: 2021-11-29 00:00:00 (GMT+0800)
     endTime: 2021-11-30 23:59:00 (GMT+0800)
   refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 60a175bb-d7e7-43f1-add4-9ad6bd3a1748
-  type: 5
-  category: 0
-  lifeCycle: 1
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 10
-  reward:
-    rewardType: 1
-    rewardID: star
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: 211022-HK-daily-mission-gift-desc
-  i18nDescriptionParams:
-  - value: "3"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: star
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  goalValue: 3
-  enableTimeRange:
-  - startTime: 2021-11-10 18:00:00 (GMT+0800)
-    endTime: 2021-11-17 22:00:00 (GMT+0800)
-  refIDs:
-  - c8fec8ea-9f82-41fb-b26d-d0a031d994ee
-  - 4fe64d3d-6cd3-4b5f-85a5-0e200c4bb399
-  - 241d202c-c845-425d-89f6-1f132968f4ac
-  - 09551a7a-77f1-48d4-959c-2a6fedd9b135
-  - 8ab9523b-6493-40f8-a3a9-adeb8b03937b
-  - d1f8da8b-4c5e-4dc9-bd8e-d895e231468c
-  - b114ef2e-c7a1-43d7-5259-53e016466bbf
-  - 4fe64d3d-6cd3-4b5f-85a5-0e200c4bb399
-  - b114ef2e-c7a1-43d7-5259-53e016466bbf
-  - 03fc4690-a7a5-48ef-6c11-1125b40211ca
-  - af131025-a272-4695-a00c-4a4bc7d0f4cf
-  - b30ddc71-6a42-49b2-8dc4-673c89678c38
-  - 276c5d4d-bfdc-4386-b247-8b3e4a30ef2c
-  - 58fc4757-736a-49b2-86f0-6b0058c83bd1
-  - 01b537d1-a2dc-44d0-4176-dd8f0ef39041
-  - 4fe64d3d-6cd3-4b5f-85a5-0e200c4bb399
   platforms:
   - android
   - ios
@@ -254,6 +168,39 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
+- ID: 7d114a39-3a10-411d-91da-e8ca8758c9d4
+  type: 5
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 21
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2111_tw_voice_a_bp
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_leave_comment_reward_title2
+  i18nTitleParams:
+  - value: "10"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_leave_comment_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 10
+  enableTimeRange:
+  - startTime: 2021-11-28 18:00:00 (GMT+0800)
+    endTime: 2021-12-16 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: true
 - ID: a23ace6b-61da-4541-bcb5-461c59793b4b
   type: 8
   category: 0
@@ -776,56 +723,6 @@ missions:
   - startTime: 2021-11-03 00:00:00 (GMT+0800)
     endTime: 2021-11-30 23:59:59 (GMT+0800)
   refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 0342b316-ceb6-48de-9fe4-10d52fd34944
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 16
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: island_vip
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: 211022-HK-daily-mission-specific-gift-title
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: star_rain
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  - value: 奢華
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: 211022-HK-daily-mission-gift-desc
-  i18nDescriptionParams:
-  - value: "3"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: island_vip
-    needMap: false
-    mapOption: 2
-    fontAttribute: null
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2021-11-03 00:00:00 (GMT+0800)
-    endTime: 2021-11-17 23:59:59 (GMT+0800)
-  refIDs:
-  - star_rain
   platforms:
   - android
   - ios
