@@ -4,6 +4,9 @@
 set -o nounset
 set -o errexit
 
+ETCD_PUSH_IMAGE="17media/pusher:v19.4.25"
+ETCD_PUSH_V3_IMAGE="17media/pusherv2:v21.11.23"
+
 if [ -z "${REVISION}" ]; then
   echo "abort, REVISION not defined"
   exit 1
@@ -12,12 +15,21 @@ fi
 COMMIT_MESSAGE=$(git log  --pretty=format:'%B' "${GIT_COMMIT}"^! | head -n1)
 
 function push() {
-  docker run --rm              \
-    -e ENVIRONMENT="${1}"        \
-    -e APPLICATION="${2}"        \
-    -e ENDPOINTS="${3}"          \
-    -v "$(pwd)":/configs:ro      \
-    -t 17media/pusher:v19.4.25
+  image=${ETCD_PUSH_IMAGE}
+  for app in $(echo ${V3_APP_LIST} | tr ";" "\n")
+  do
+    if [[ "${2}" == ${app} ]]; then
+      image=${ETCD_PUSH_V3_IMAGE}
+      break
+    fi
+  done
+  echo "[debug] ${image} / ${config_env} / ${config_app} / ${endpoints}"
+  docker run --rm                  \
+      -e ENVIRONMENT="${1}"        \
+      -e APPLICATION="${2}"        \
+      -e ENDPOINTS="${3}"          \
+      -v "$(pwd)":/configs:ro      \
+      -t ${image}
 }
 
 # list of commits

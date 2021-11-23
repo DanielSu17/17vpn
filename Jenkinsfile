@@ -55,6 +55,14 @@ def etcdServiceEndpointsProdEventory = [
     'http://35.230.16.11:2379',
 ]
 
+def etcdServiceEndpointsStagApisix = [
+    'http://34.81.106.64:2379',
+]
+
+def etcdServiceV3ApplicationList = [
+    'apisix',
+]
+
 properties([
     buildDiscarder(
         logRotator(
@@ -115,6 +123,18 @@ properties([
             defaultValue: etcdServiceEndpointsProdEventory.join(','),
             description: 'ETCD Service Endpoints List for the Eventory Service (Production)',
             name: 'ENDPOINTS_EVENTORY_PROD',
+            trim: true
+        ),
+        string(
+            defaultValue: etcdServiceEndpointsStagApisix.join(','),
+            description: 'ETCD Service Endpoints List for the Apisix Service (Staging)',
+            name: 'ENDPOINTS_APISIX_STA',
+            trim: true
+        ),
+        string(
+            defaultValue: etcdServiceV3ApplicationList.join(','),
+            description: 'ETCD V3 Application List',
+            name: 'V3_APP_LIST',
             trim: true
         ),
         booleanParam(
