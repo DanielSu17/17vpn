@@ -1,97 +1,18 @@
+#############################################
+# Importance!!!!
+#  - Pre-scheduled time slots are based on the event calendar
+#  - https://calendar.google.com/calendar/embed?src=c_grv1cks9ch1a59kdlnq80b77t4%40group.calendar.google.com&ctz=Asia%2FTaipei
+#
+#  - Please check Capacit Tracking to avoid production issues
+#  - https://17media.atlassian.net/wiki/spaces/SRE/pages/634749065/Important+Capacity+Tracking
+##############################################
+
 # Example
 - startTime: "2018-12-05 18:00:00 (GMT+0800)"
   endTime: "2018-12-05 19:00:00 (GMT+0800)"
   HPAConfigs:
   - name: example-target-hpa
     minReplicas: 20
-
-## November (alexsu)
-# 70 pods can hold around 37k users
-
-# NishikawaTakanori
-- startTime: "2021-11-18 18:00:00 (GMT+0800)"
-  endTime: "2021-11-19 01:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# ★NOGOODTV
-# ★Big Event
-- startTime: "2021-11-19 14:30:00 (GMT+0800)"
-  endTime: "2021-11-20 01:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# AKB48 卒コン煽り番組
-- startTime: "2021-11-20 11:45:00 (GMT+0800)"
-  endTime: "2021-11-21 01:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# AKB48 regular program
-- startTime: "2021-11-23 19:00:00 (GMT+0800)"
-  endTime: "2021-11-24 01:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 120
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-
-# GFA
-# scaling to reach maxReplicas
-- startTime: "2021-11-24 16:20:00 (GMT+0800)"
-  endTime: "2021-11-25 01:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 180
-  - name: k8sprod-golives-main
-    minReplicas: 100
-  - name: k8sprod-gotrade-main
-    minReplicas: 100
-  - name: k8sprod-gocells-main
-    minReplicas: 200
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-main
-    minReplicas: 36
-  - name: k8sprod-revprox-tw-main
-    minReplicas: 36
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-  - name: k8sprod-revprox-hk-main
-    minReplicas: 36
 
 # NishikawaTakanori
 - startTime: "2021-11-25 18:00:00 (GMT+0800)"
@@ -110,7 +31,7 @@
 
 # AKB横山由依Concert
 - startTime: "2021-11-27 15:00:00 (GMT+0800)"
-  endTime: "2021-11-27 20:00:00 (GMT+0800)"
+  endTime: "2021-11-27 22:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 70
@@ -123,9 +44,9 @@
   - name: k8sprod-gousersearch-main
     minReplicas: 10
 
-# AKB横山由依Concert Aftertalk
-- startTime: "2021-11-27 19:15:00 (GMT+0800)"
-  endTime: "2021-11-27 22:00:00 (GMT+0800)"
+# JP,濱崎歩(ayumi hamasaki), (UV：20,000)
+- startTime: "2021-11-28 17:45:00 (GMT+0800)"
+  endTime: "2021-11-28 21:30:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 70
