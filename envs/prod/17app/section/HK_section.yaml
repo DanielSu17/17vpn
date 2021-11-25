@@ -32,22 +32,17 @@ sections:
   minGrids: 3
   style: 3
   more: true
-- id: Label # 2111-officehourABtest-Female
-  labelID: officeHourFemale
+###### moved to top on Thurs and bottom on Fri, by Barton
+- id: Label #
+  labelID: 17live_hk
   name:
-    key: suggest_streamers_category_female
+    key: hk_17live
   enable: true
-  dedup: false
+  dedup: true
   minGrids: 1
   style: 3
   more: true
-- id: Vod # 熱門影音
-  name:
-    key: tab_hot_2019q4_vod
-  enable: true
-  minGrids: 1
-  style: 5
-  more: false
+######
 - id: Label #
   labelID: Music
   name:
@@ -58,33 +53,6 @@ sections:
   style: 3
   more: true
 - id: Label #
-  labelID: chill
-  name:
-    key: hk_Chill
-  enable: true
-  dedup: false
-  minGrids: 3
-  style: 3
-  more: true
-- id: Label # 2111-officehourABtest-Male
-  labelID: officeHourMale
-  name:
-    key: suggest_streamers_category_male
-  enable: true
-  dedup: false
-  minGrids: 1
-  style: 3
-  more: true
-- id: Label #
-  labelID: hobbies
-  name:
-    key: hk_hobbies
-  enable: true
-  dedup: false
-  minGrids: 3
-  style: 3
-  more: true
-- id: Label #DJ
   labelID: HKDJ
   name:
     key: DJ
@@ -110,6 +78,32 @@ sections:
   minGrids: 1
   style: 9
   more: true
+- id: Suggestion # 猜你可能喜歡
+  name:
+    key: tab_hot_2019q4_follow_suggestion
+  enable: true
+  dedup: false
+  style: 6
+  minGrids: 5
+  more: true
+- id: Label #
+  labelID: chill
+  name:
+    key: hk_Chill
+  enable: true
+  dedup: false
+  minGrids: 3
+  style: 3
+  more: true
+- id: Label #
+  labelID: hobbies
+  name:
+    key: hk_hobbies
+  enable: true
+  dedup: false
+  minGrids: 3
+  style: 3
+  more: true
 - id: Label #
   labelID: FOHK2021
   name:
@@ -119,19 +113,13 @@ sections:
   minGrids: 3
   style: 3
   more: true
-
-
-###### moved to top on Thurs and bottom on Fri, by Barton
-- id: Label #
-  labelID: 17live_hk
+- id: Vod # 熱門影音
   name:
-    key: hk_17live
+    key: tab_hot_2019q4_vod
   enable: true
-  dedup: true
   minGrids: 1
-  style: 3
-  more: true
-######
+  style: 5
+  more: false
 #  - id: AudioStream # AudioStream 聲播
 #    name:
 #      key: audio_stream_v3hotpage
@@ -140,13 +128,4 @@ sections:
 #    minGrids: 1
 #    style: 3
 #    more: true
-- id: Suggestion # 猜你可能喜歡
-  name:
-    key: tab_hot_2019q4_follow_suggestion
-  enable: true
-  dedup: false
-  style: 6
-  minGrids: 5
-  more: true
-
 officialRecommendedStreamers:
