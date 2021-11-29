@@ -1,0 +1,13 @@
+{
+    "id": "root",
+    "status": 1,
+    "upstream": {
+        "type": "roundrobin",
+        "nodes": {
+            "k8sprod-bbrichv2-main.k8sprod.svc.cluster.local:80": 1
+        },
+        "scheme": "http"
+    },
+    "uri": "/*",
+    "priority": 0
+}
