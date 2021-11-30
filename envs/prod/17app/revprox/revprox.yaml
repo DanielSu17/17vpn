@@ -47,18 +47,6 @@ regexConf:
       - ^POST /api/v1/lives/15676294/gift
       # concert_prod2
       - ^POST /api/v1/lives/15676296/gift
-      # 17NightLive
-      # - ^POST /api/v1/lives/4589532/gift
-      # 17NightLive_2
-      - ^POST /api/v1/lives/15461139/gift
-      # SUPERSONIC_Official
-      - ^POST /api/v1/lives/16126503/gift
-      # SUPERSONIC_WatchParty
-      - ^POST /api/v1/lives/16126502/gift
-      #canadian prod test account A
-      - ^POST /api/v1/lives/16056343/gift
-      #canadian prod test account B
-      - ^POST /api/v1/lives/16056342/gift
   - url_key: "go_trade_url"
     default_url_key: "go_trade_url"
     weight: 100
@@ -87,24 +75,6 @@ regexConf:
       # concert_prod2
       - ^GET /api/v1/lives/15676296(?:/giftTabs|/info)?$
       - ^POST /api/v1/lives/15676296/(?:enter|quit|viewers/alive|comments)?$
-      # 17NightLive
-      #- ^GET /api/v1/lives/4589532(?:/giftTabs|/info)?$
-      #- ^POST /api/v1/lives/4589532/(?:enter|quit|viewers/alive|comments)?$
-      # 17NightLive_2
-      - ^GET /api/v1/lives/15461139(?:/giftTabs|/info)?$
-      - ^POST /api/v1/lives/15461139/(?:enter|quit|viewers/alive|comments)?$
-      # SUPERSONIC_Official
-      - ^GET /api/v1/lives/16126503(?:/giftTabs|/info)?$
-      - ^POST /api/v1/lives/16126503/(?:enter|quit|viewers/alive|comments)?$
-      # SUPERSONIC_WatchParty
-      - ^GET /api/v1/lives/16126502(?:/giftTabs|/info)?$
-      - ^POST /api/v1/lives/16126502/(?:enter|quit|viewers/alive|comments)?$
-      # canadian prod test account A
-      - ^GET /api/v1/lives/16056343(?:/giftTabs|/info)?$
-      - ^POST /api/v1/lives/16056343/(?:enter|quit|viewers/alive|comments)?$
-      # canadian prod test account B
-      - ^GET /api/v1/lives/16056342(?:/giftTabs|/info)?$
-      - ^POST /api/v1/lives/16056342/(?:enter|quit|viewers/alive|comments)?$
 conf:
  - url_key: "api_usersearch_url"
    weight: 100
