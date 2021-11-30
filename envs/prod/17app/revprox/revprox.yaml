@@ -75,6 +75,17 @@ regexConf:
       # concert_prod2
       - ^GET /api/v1/lives/15676296(?:/giftTabs|/info)?$
       - ^POST /api/v1/lives/15676296/(?:enter|quit|viewers/alive|comments)?$
+  - url_key: "go_url"
+    default_url_key: "go_url"
+    weight: 100
+    regex_paths:
+      - ^GET /api/v1/auth/nexmoCallback
+      - ^POST /api/v1/auth/goodnight/register
+      - ^POST /api/v1/auth/changeOpenID
+      - ^POST /api/v1/auth/checkNeedHumanTest
+      - ^POST /api/v1/auth/register/complete
+      - ^POST /api/v1/auth/eraseInternationalPhoneNumber
+      - ^POST /api/v1/auth/refreshMigrate
 conf:
  - url_key: "api_usersearch_url"
    weight: 100
@@ -120,14 +131,10 @@ conf:
             choiceUserAction,verifyUserAction,removeVerifiedUserAction,adminBlockDirtyWordAction"
      event: "getEventBanners"
      pay: "purchaseProduct"
-     auth: "loginAction,loginAction2,registerAction,registerAction2,\
-            checkFacebookIDAvailable,checkOpenIDAvailable,\
-            registerByPhoneAction,sendPhoneVerificationCode,\
+     auth: "registerByPhoneAction,sendPhoneVerificationCode,\
             checkNeedHumanTest,isPhoneNumberUsed,verifyUserIdentity,\
-            changePassword,changePhoneNumber,ChangePhoneNumber,\
-            isPhoneNumberOpenIDPaired,\
-            eraseInternationalPhoneNumber,\
-            getResetPasswordToken,resetPassword"
+            changePhoneNumber,ChangePhoneNumber,\
+            eraseInternationalPhoneNumber"
      official: "getVersionStatus"
      post: "publishPost,viewPost,commentPost,getUserPost,unlikePost,\
             deleteComment,likePostBatchUpdate,updatePost,deletePost,\
@@ -185,3 +192,12 @@ conf:
    weight: 100
    white_list:
      apiv1: "groupCalls"
+ - url_key: "go_auth_url"
+   weight: 100
+   white_list:
+      apiv1: "auth"
+      auth: "loginAction,loginAction2,registerAction,registerAction2,\
+            checkFacebookIDAvailable,checkOpenIDAvailable,\
+            changePassword,\
+            isPhoneNumberOpenIDPaired,\
+            getResetPasswordToken,resetPassword"
