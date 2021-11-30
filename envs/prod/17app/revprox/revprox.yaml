@@ -201,3 +201,7 @@ conf:
             changePassword,\
             isPhoneNumberOpenIDPaired,\
             getResetPasswordToken,resetPassword"
+ - url_key: "poll_url"
+   weight: 100
+   white_list:
+     apiv1: "polls,vote"
