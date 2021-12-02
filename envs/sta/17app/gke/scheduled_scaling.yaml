@@ -72,7 +72,7 @@
 # Judy Dai stress test
 # gift-worker stress test
 - startTime: "2021-12-02 16:00:00 (GMT+0800)"
-  endTime: "2021-12-02 19:30:00 (GMT+0800)"
+  endTime: "2021-12-02 20:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8ssta-goapi-main
     minReplicas: 10
@@ -83,7 +83,7 @@
   - name: k8ssta-revprox-tw-main
     minReplicas: 36
   - name: k8ssta-gift-worker-main
-    minReplicas: 20
+    minReplicas: 8
 
 # Andrew stress test
 # Test for RedisV2 persist migration
