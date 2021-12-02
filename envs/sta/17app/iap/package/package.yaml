@@ -1268,3 +1268,67 @@ merchandises:
           text:
             key: iap_store_giftpackage_dialog_gift_desc
     purchaseType: 1
+
+# 新手首儲大禮包_iOS
+  - intervalID: MINV-21j7LJaKbbonRwnB3AOcVS4TSa9
+    merchandiseID: media17_giftpackage_tier1
+    productsOrder:
+      - gift_2108_crazy_zoo_nose_13_10_30
+      - premiumbaby_72_hrs
+    addons:
+      displayCountdown: false
+      countdownSecs: 86400
+      title:
+        key: iap_store_giftpackage_newbie
+      titleImageURL: https://cdn.17app.co/392ead48-62dc-4321-9a86-923458ce19ab.png
+      discountImageURL: https://cdn.17app.co/79a3c57d-e3ad-4de8-a3c0-eadb12025e48.png
+      description:
+        - imageURL: https://cdn.17app.co/829a6a48-ab1a-4f06-bc96-80630aa13083.png
+          text:
+            key: iap_store_giftpackage_dialog_premium_desc
+        - imageURL: https://cdn.17app.co/8cab3332-2e53-48e2-a588-dc469b091641.png
+          text:
+            key: iap_store_giftpackage_dialog_barrage_desc
+        - imageURL:
+          text:
+            key: iap_store_giftpackage_dialog_gift_desc
+    purchaseType: 1
+    taInfo: #受眾
+      registerRange:
+        dayStart: 0
+        dayEnd: 0
+      type: 3
+      startTime: #受眾的判斷時間開始時間, 不是禮包的有效時間,若沒有值則不受限制
+      endTime: #受眾的判斷時間結束時間, 不是禮包的結束時間,若沒有值則不受限制
+    abtestName: "" #禮包測試相關的abtest名稱, 需要 abtest.yaml也做相關的設定
+
+# 新手首儲大禮包_Android
+  - intervalID: MINV-21j7LOqD0opbslcl1YT77RKC0zq
+    merchandiseID: media17_giftpackage_tier1
+    productsOrder:
+      - gift_2108_crazy_zoo_nose_13_10_30
+      - premiumbaby_72_hrs
+    addons:
+      displayCountdown: false
+      countdownSecs: 86400
+      title:
+        key: iap_store_giftpackage_newbie
+      titleImageURL: https://cdn.17app.co/392ead48-62dc-4321-9a86-923458ce19ab.png
+      discountImageURL: https://cdn.17app.co/79a3c57d-e3ad-4de8-a3c0-eadb12025e48.png
+      description:
+        - imageURL: https://cdn.17app.co/829a6a48-ab1a-4f06-bc96-80630aa13083.png
+          text:
+            key: iap_store_giftpackage_dialog_premium_desc
+        - imageURL: https://cdn.17app.co/8cab3332-2e53-48e2-a588-dc469b091641.png
+          text:
+            key: iap_store_giftpackage_dialog_barrage_desc
+        - imageURL:
+          text:
+            key: iap_store_giftpackage_dialog_gift_desc
+    purchaseType: 1
+    taInfo:
+        registerRange:
+          dayStart: 0
+          dayEnd: 0
+        type: 3
+    abtestName: ""
