@@ -98,3 +98,10 @@
     minReplicas: 24
   - name: k8ssta-revprox-tw-main
     minReplicas: 36
+
+# Eventory test
+- startTime: "2021-12-06 14:00:00 (GMT+0800)"
+  endTime: "2021-12-06 20:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8ssta-eventory-worker-main
+    minReplicas: 2
