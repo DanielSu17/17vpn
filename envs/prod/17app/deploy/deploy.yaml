@@ -4,7 +4,6 @@ groups:
   backend:
     aggr-gateway:       "go"
     alfred:             "go"
-    bbrich:             "go"
     revprox:            "go"
     goapi:              "go"
     cronjob:            "go"
@@ -103,7 +102,6 @@ batchDeploy:
     k8sprod:
       - "goapi"
       - "aggr-gateway"
-      - "bbrich"
       - "revprox"
       - "worker"
       - "data-middleware"
@@ -140,7 +138,6 @@ batchDeploy:
     k8ssta:
       - "goapi"
       - "aggr-gateway"
-      - "bbrich"
       - "revprox"
       - "worker"
       - "data-middleware"
@@ -177,7 +174,6 @@ batchDeploy:
     k8suat:
       - "goapi"
       - "aggr-gateway"
-      - "bbrich"
       - "revprox"
       - "worker"
       - "data-middleware"
@@ -217,7 +213,6 @@ batchDeploy:
     k8ssta:
       - "goapi"
       - "aggr-gateway"
-      - "bbrich"
       - "revprox"
       - "worker"
       - "data-middleware"
