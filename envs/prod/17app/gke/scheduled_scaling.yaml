@@ -3,7 +3,7 @@
 #  - Pre-scheduled time slots are based on the event calendar
 #  - https://calendar.google.com/calendar/embed?src=c_grv1cks9ch1a59kdlnq80b77t4%40group.calendar.google.com&ctz=Asia%2FTaipei
 #
-#  - Please check Capacit Tracking to avoid production issues
+#  - Please check Capacity Tracking to avoid production issues
 #  - https://17media.atlassian.net/wiki/spaces/SRE/pages/634749065/Important+Capacity+Tracking
 #
 #  - Timing standard:
@@ -120,6 +120,29 @@
     minReplicas: 10
   - name: k8sprod-revprox-jp-main
     minReplicas: 36
+    
+# JP,案件名:SUPERSONIC (UV：30,000）
+- startTime: "2021-12-08 19:00:00 (GMT+0800)"
+  endTime: "2021-12-08 22:50:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 100
+  - name: k8sprod-golives-main
+    minReplicas: 120
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-concert-trade-main
+    minReplicas: 45
+  - name: k8sprod-concert-stream-jp-main
+    minReplicas: 600
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 600
+  - name: k8sprod-data-middleware-main
+    minReplicas: 75
 
 # JP,西川貴教のニシナナLIVE,（UV：8000）
 - startTime: "2021-12-09 18:30:00 (GMT+0800)"
