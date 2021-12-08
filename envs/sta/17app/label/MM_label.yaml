@@ -5,24 +5,36 @@
 
 labelInfos:
 
-  - id: "model" # 模特兒
-    type: 3
+#  - id: "model" # 模特兒
+#    type: 3
+#    label:
+#      key: "streamer_label_model"
+#    iconURL: "https://assets-17app.akamaized.net/c42127e4-db4f-4e98-938d-05f3afcb8b82.png"
+#    featured: true
+#    labelID: 103
+#    order: 50
+#    isHide: true
+  - id: "player" # 演奏達人
+    type: 1
     label:
-      key: "streamer_label_model"
-    iconURL: "https://assets-17app.akamaized.net/c42127e4-db4f-4e98-938d-05f3afcb8b82.png"
-    featured: true
-    labelID: 103
-    order: 50
-    isHide: true
-
+      key: "streamer_label_player"
+    iconURL: "https://assets-17app.akamaized.net/517c138d-54d9-4713-a931-06c9af7e53b9.png"
+    labelID: 106
+    order: 997
   - id: "acoustic" # 彈唱歌手
     type: 1
     label:
       key: "streamer_label_acoustic"
-    iconURL: "https://assets-17app.akamaized.net/17f615f4-5883-42b7-9204-d5761cebc9b2.png"
-    labelID: 16
-    order: 70
-    isHide: true
+    iconURL: "https://assets-17app.akamaized.net/5d8e75a0-37a7-472b-a8b5-dd8aef279e0c.png"
+    labelID: 105
+    order: 996
+  - id: "tw_t_game" # T_遊戲
+    type: 3
+    labelID: 0
+    label:
+      key: "streamer_label_game"
+    iconURL: "https://assets-17app.akamaized.net/e8f5b958-9962-4ca6-92b9-67ee7004330f.png"
+    order: 999
 
 typeCheckIOSVersion: 3.61.0
     
@@ -30,15 +42,20 @@ typeCheckAndroidVersion: 2.3.92
 
 # 探索頁面會出現的label，要有4個以上的主播至少有3則貼文(按more才能顯示)
 exploreLabels:
-#  - visualartists
-
+  - acoustic
+  - player
 
 # 時事話題直播列表會出現的label
 topicTabLabels:
-#    - tw_t_game
+   - tw_t_game
 
 # labelWhiteList defines relation between label and user list
 labelWhiteList:
 
   HelloKitty:
-  - 275e9514-299f-4354-b3dc-9dfebb716b2f #treecity(Kai for testing)
+  - 69a59ca5-112e-4f61-b33d-d151ec5597f0 # azimi_stage
+  acoustic:
+  - 69a59ca5-112e-4f61-b33d-d151ec5597f0 # azimi_stage
+  player:
+  - 69a59ca5-112e-4f61-b33d-d151ec5597f0 # azimi_stage
+
