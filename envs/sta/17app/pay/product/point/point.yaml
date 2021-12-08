@@ -421,11 +421,11 @@ eventBasedIAP:
     displayRewardInfo: false
     abtestName:
 
-  #台灣閃購活動 生涯首次儲值330點送330點
-  - startTime: "2020-06-17T17:00:00+09:00"
-    endTime: "2021-06-30T23:59:59+09:00"
-    showCountdownUnderSticker: false
-    showCountdownInPopUp: false
+  #台灣閃購活動 生涯首次儲值330點送330點 35980＋10% & 送尊榮寶寶13天
+  - startTime: "2021-11-17T17:00:00+09:00"
+    endTime: "2021-12-20T23:59:59+09:00"
+    showCountdownUnderSticker: true
+    showCountdownInPopUp: true
     stickerURL: "https://assets-17app.akamaized.net/30feb803-3274-42e2-8e41-187274f2314b.png"
     eventInfo:
       eventTitleI18nKey: ""
@@ -465,8 +465,11 @@ eventBasedIAP:
         bonusPoint: 0
         shouldHighlight: false
       - productID: "media17_points_35980"
-        bonusPoint: 0
-        shouldHighlight: false
+        bonusPoint: 3598
+        shouldHighlight: true
+        reward:
+          type: 1
+          refCount: 13
     firstPurchaseType: 1
     taInfo:
       registerRange:
