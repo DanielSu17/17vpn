@@ -502,7 +502,7 @@ eventBasedIAP:
         shouldHighlight: false
       - productID: "media17_points_15420"
         bonusPoint: 1542
-        shouldHighlight: true
+        shouldHighlight: false
       - productID: "media17_points_8550"
         bonusPoint: 855
         shouldHighlight: false
@@ -510,12 +510,12 @@ eventBasedIAP:
         bonusPoint: 354
         shouldHighlight: false
       - productID: "media17_points_1720"
-        bonusPoint: 172
-        shouldHighlight: false
-      - productID: "media17_points_330"
-        bonusPoint: 330
+        bonusPoint: 271
         shouldHighlight: true
-    firstPurchaseType: 0
+      - productID: "media17_points_330"
+        bonusPoint: 33
+        shouldHighlight: true
+    firstPurchaseType: 2
     taInfo:
       registerRange:
         dayStart: 0 # 0 means no limit
@@ -536,10 +536,10 @@ defaultIAP:
   pointProducts:
     - productID: "media17_points_35980"
       bonusPoint: 0
-      shouldHighlight: true
-    - productID: "media17_points_15420"
-      bonusPoint: 0
       shouldHighlight: false
+    - productID: "media17_points_15420"
+      bonusPoint: 1542
+      shouldHighlight: true
     - productID: "media17_points_8550"
       bonusPoint: 0
       shouldHighlight: false
@@ -547,8 +547,8 @@ defaultIAP:
       bonusPoint: 0
       shouldHighlight: false
     - productID: "media17_points_1720"
-      bonusPoint: 0
-      shouldHighlight: false
+      bonusPoint: 172
+      shouldHighlight: true
     - productID: "media17_points_330"
       bonusPoint: 0
       shouldHighlight: false
