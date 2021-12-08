@@ -106,3 +106,12 @@
   HPAConfigs:
   - name: k8ssta-eventory-worker-main
     minReplicas: 2
+
+# Bear bbrichv2 stress test
+- startTime: "2021-12-08 14:00:00 (GMT+0800)"
+  endTime: "2021-12-08 15:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8ssta-bbrichv2-main
+    minReplicas: 60
+  - name: k8ssta-apisix-bbrich-main
+    minReplicas: 2
