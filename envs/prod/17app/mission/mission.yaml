@@ -73,39 +73,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: true
-- ID: 71e20e48-5aaa-4dc3-bee8-f9aeb6f4f7c6
-  type: 10
-  category: 0
-  lifeCycle: 1
-  targetAudience: 0
-  levelRange:
-    min: 3
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 1909_upgrade_boat_bag
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_weekday_IAP_point_tw_event_title_event
-  i18nTitleParams:
-  - value: "35980"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
-  i18nDescriptionParams: []
-  goalValue: 35980
-  enableTimeRange:
-  - startTime: 2021-12-02 16:10:00 (GMT+0800)
-    endTime: 2021-12-03 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
 - ID: b9f43825-91d9-4765-b22d-420fc77a6006
   type: 10
   category: 0
@@ -267,6 +234,72 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
+- ID: 650f2c81-30bf-4217-9e09-73044f312bce
+  type: 10
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2112_tw_hotpot_a_bp
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_first_time_IAP_point_tw_event_title_event
+  i18nTitleParams:
+  - value: "3000"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
+  i18nDescriptionParams: []
+  goalValue: 3000
+  enableTimeRange:
+  - startTime: 2021-12-13 18:00:00 (GMT+0800)
+    endTime: 2021-12-27 00:00:00 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: true
+- ID: 7e73cff2-3115-422b-afc5-9d99bf8aceaa
+  type: 10
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2112_tw_hotpot_a_bp
+    amount: 3
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_first_time_IAP_point_tw_event_title_event
+  i18nTitleParams:
+  - value: "10000"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
+  i18nDescriptionParams: []
+  goalValue: 10000
+  enableTimeRange:
+  - startTime: 2021-12-13 18:00:00 (GMT+0800)
+    endTime: 2021-12-27 00:00:00 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: true
 - ID: 69f627fb-0fcf-46d5-a694-56cbf0cd80da
   type: 5
   category: 0
@@ -385,39 +418,6 @@ missions:
   enableTimeRange:
   - startTime: 2021-12-02 14:00:00 (GMT+0800)
     endTime: 2021-12-31 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: e4865585-b98a-4735-84f6-78b3796eefe3
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 3
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2101_tw_detective_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_weekly_send_any_gifts_reward_jp_title
-  i18nTitleParams:
-  - value: "5"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_weekly_send_any_gifts_reward_jp_desc
-  i18nDescriptionParams: []
-  goalValue: 5
-  enableTimeRange:
-  - startTime: 2021-12-02 14:00:00 (GMT+0800)
-    endTime: 2021-12-07 23:59:59 (GMT+0800)
   refIDs: []
   platforms:
   - android
@@ -844,35 +844,6 @@ missions:
   - 6c01ef19-7e66-4fa9-a2bd-a48c901b15de
   - 5d8b0f14-2ac0-4a62-bc07-25f798567e12
   - 3e4b8d72-9143-49c3-8e8b-459a33f5784e
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: af241d89-82a3-4255-91f4-9e4d18f3cab5
-  type: 10
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2111_jp_charge_02
-    amount: 3
-    expireTimeSecs: 604800
-  i18nTitle: tw_mission_02
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_mission_03
-  i18nDescriptionParams: []
-  goalValue: 330
-  enableTimeRange:
-  - startTime: 2021-12-01 00:00:00 (GMT+0800)
-    endTime: 2021-12-05 23:59:59 (GMT+0800)
-  refIDs: []
   platforms:
   - android
   - ios
