@@ -47,8 +47,6 @@ regexConf:
       - ^POST /api/v1/lives/15676294/gift
       # concert_prod2
       - ^POST /api/v1/lives/15676296/gift
-      # SUPERSONIC_Official
-      - ^POST /api/v1/lives/16126503/gift
   - url_key: "go_trade_url"
     default_url_key: "go_trade_url"
     weight: 100
@@ -77,9 +75,6 @@ regexConf:
       # concert_prod2
       - ^GET /api/v1/lives/15676296(?:/giftTabs|/info)?$
       - ^POST /api/v1/lives/15676296/(?:enter|quit|viewers/alive|comments)?$
-      # SUPERSONIC_Official
-      - ^GET /api/v1/lives/16126503(?:/giftTabs|/info)?$
-      - ^POST /api/v1/lives/16126503/(?:enter|quit|viewers/alive|comments)?$
   - url_key: "go_url"
     default_url_key: "go_url"
     weight: 100
