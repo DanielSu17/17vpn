@@ -382,3 +382,75 @@
     "d": "a"
     "e": "a"
     "f": "a"
+
+# group A keep default behavior
+# group B skip auto-follow page during onboarding flow
+# JIRA: APP-29027
+- testName: removeOnboardingAutoFollow
+  enableABtest: true
+  byDeviceID: true
+  lastCharGroup:
+    "0": "b"
+    "1": "a"
+    "2": "b"
+    "3": "b"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "a"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "a"
+    "f": "a"
+
+# group A keep default behavior
+# group B suppress display of the Daily Quest sign-in popup
+# JIRA: APP-29028
+- testName: suppressDailyQuestSignInPopup
+  enableABtest: true
+  byDeviceID: true
+  lastCharGroup:
+    "0": "b"
+    "1": "a"
+    "2": "b"
+    "3": "b"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "a"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "a"
+    "f": "a"
+
+# group A keep default behavior
+# group B Disable newbie missions
+# JIRA: APP-29029
+- testName: disableNewbieMissions
+  enableABtest: true
+  byDeviceID: true
+  lastCharGroup:
+    "0": "b"
+    "1": "a"
+    "2": "b"
+    "3": "b"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "a"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "a"
+    "f": "a"
