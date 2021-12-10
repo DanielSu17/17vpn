@@ -144,6 +144,24 @@
   - name: k8sprod-data-middleware-main
     minReplicas: 75
 
+# JP,案件名:SUPERSONIC (UV：20,000）
+# JP,PARK STAGE Watch Party（UV：1,000）
+- startTime: "2021-12-10 19:30:00 (GMT+0800)"
+  endTime: "2021-12-10 23:10:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
 # JP,西川貴教のニシナナLIVE,（UV：8000）
 - startTime: "2021-12-09 18:30:00 (GMT+0800)"
   endTime: "2021-12-09 21:30:00 (GMT+0800)"
@@ -162,8 +180,9 @@
     minReplicas: 36
 
 # TW,T1賽事轉播 DAY3
+# TW,獅紫軍點點名
 - startTime: "2021-12-11 14:30:00 (GMT+0800)"
-  endTime: "2021-12-11 20:30:00 (GMT+0800)"
+  endTime: "2021-12-11 21:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 70
@@ -179,8 +198,9 @@
     minReplicas: 36
 
 # TW,T1賽事轉播 DAY4
+# TW,獅紫軍點點名
 - startTime: "2021-12-12 14:30:00 (GMT+0800)"
-  endTime: "2021-12-12 20:30:00 (GMT+0800)"
+  endTime: "2021-12-12 21:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 70
