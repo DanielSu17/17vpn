@@ -2,13 +2,6 @@
   "id": "1",
   "plugins": {
     "datadog": {},
-    "tcp-logger": {
-      "host": "${{fluentd_addr}}",
-      "port": "${{fluentd_port}}",
-      "tls": false,
-      "batch_max_size": 3000,
-      "is_fluentd": true
-    },
     "real-ip": {
       "source": "http_x_forwarded_for"
     },
