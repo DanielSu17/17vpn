@@ -3236,7 +3236,7 @@ secretIAP:
   - ID: "retentionRewardIap"
     condition:
       dailySignInValidDays: []
-      retentionUserOnly: false
+      retentionUserOnly: true
     displayHours: 120 # 5days
     iapInfo:
       startTime: "2021-12-13T00:00:00+08:00"
@@ -3273,24 +3273,36 @@ secretIAP:
             type: 1
             refCount: 5
         - productID: "media17_points_1720"
-          bonusPoint: 172
+          bonusPoint: 200
           shouldHighlight:  false
-        - productID: "media17_points_3540"
-          bonusPoint: 354
-          shouldHighlight:  false
-        - productID: "media17_points_8550"
-          bonusPoint: 855
-          shouldHighlight:  false
-        - productID: "media17_points_15420"
-          bonusPoint: 1542
-          shouldHighlight:  false
-        - productID: "media17_points_35980"
-          bonusPoint: 3598
-          shouldHighlight:  true
           reward:
             type: 1
             refCount: 5
-      firstPurchaseType: 2
+        - productID: "media17_points_3540"
+          bonusPoint: 400
+          shouldHighlight:  false
+          reward:
+            type: 1
+            refCount: 5
+        - productID: "media17_points_8550"
+          bonusPoint: 600
+          shouldHighlight:  false
+          reward:
+            type: 1
+            refCount: 5
+        - productID: "media17_points_15420"
+          bonusPoint: 800
+          shouldHighlight:  false
+          reward:
+            type: 1
+            refCount: 5
+        - productID: "media17_points_35980"
+          bonusPoint: 1000
+          shouldHighlight:  false
+          reward:
+            type: 1
+            refCount: 5
+      firstPurchaseType: 0
       taInfo:
         registerRange:
           dayStart: 0 # 0 means no limit
