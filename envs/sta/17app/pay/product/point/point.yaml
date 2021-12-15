@@ -14,15 +14,15 @@
 eventBasedIAP:
 #12/11 ~ 12/15 IAP任務展示Banner用 無閃購送點- Ethan
   - startTime: "2021-12-10T00:00:00+08:00"
-    endTime: "2021-12-15T23:59:59+08:00"
-    showCountdownUnderSticker: true
-    showCountdownInPopUp: true
+    endTime: "2021-12-31T23:59:59+08:00"
+    showCountdownUnderSticker: false
+    showCountdownInPopUp: false
     stickerURL: "https://cdn.17app.co/89b62d23-588a-4c49-aa1c-50a38e4c5042.png" 
     stickerURLInGiftbox: "https://cdn.17app.co/89b62d23-588a-4c49-aa1c-50a38e4c5042.png" #好像壞掉了
     eventInfo: #don't change  (Ask ENG if there are any new changes? ENG-17 channel)
       eventTitleI18nKey: ""
       eventURL: ""
-      bannerImageURL: "https://cdn.17app.co/5321fd8a-db20-4124-82d1-9e62fcf17177.png" #IAP頁面上的圖
+      bannerImageURL: "https://cdn.17app.co/26bf5c29-36f2-4e69-80d7-34f0f21c7ae4.png" #IAP頁面上的圖
     layoutInfo: #don't change 
       titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png" #需要問工程師
       messageColor: "#6F6777"
@@ -43,7 +43,7 @@ eventBasedIAP:
     pointProducts:
       - productID: "media17_points_330"
         bonusPoint: 0
-        shouldHighlight:  true
+        shouldHighlight:  false
       - productID: "media17_points_1720"
         bonusPoint: 0
         shouldHighlight:  false
@@ -57,8 +57,8 @@ eventBasedIAP:
         bonusPoint: 0
         shouldHighlight: false
       - productID: "media17_points_35980"
-        bonusPoint: 0
-        shouldHighlight: false
+        bonusPoint: 10794
+        shouldHighlight: true
     firstPurchaseType: 0
     taInfo:
       registerRange:
