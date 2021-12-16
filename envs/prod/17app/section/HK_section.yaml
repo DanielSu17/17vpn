@@ -32,95 +32,6 @@ sections:
   minGrids: 3
   style: 3
   more: true
-- id: Label # 2111-officehourABtest-Female
-  labelID: officeHourFemale
-  name:
-    key: suggest_streamers_category_female
-  enable: true
-  dedup: false
-  minGrids: 1
-  style: 3
-  more: true
-- id: Vod # 熱門影音
-  name:
-    key: tab_hot_2019q4_vod
-  enable: true
-  minGrids: 1
-  style: 5
-  more: false
-- id: Label #
-  labelID: Music
-  name:
-    key: hk_music
-  enable: true
-  dedup: false
-  minGrids: 3
-  style: 3
-  more: true
-- id: Label #
-  labelID: chill
-  name:
-    key: hk_Chill
-  enable: true
-  dedup: false
-  minGrids: 3
-  style: 3
-  more: true
-- id: Label # 2111-officehourABtest-Male
-  labelID: officeHourMale
-  name:
-    key: suggest_streamers_category_male
-  enable: true
-  dedup: false
-  minGrids: 1
-  style: 3
-  more: true
-- id: Label #
-  labelID: hobbies
-  name:
-    key: hk_hobbies
-  enable: true
-  dedup: false
-  minGrids: 3
-  style: 3
-  more: true
-- id: Label #DJ
-  labelID: HKDJ
-  name:
-    key: DJ
-  enable: true
-  dedup: false
-  minGrids: 1
-  style: 3
-  more: true
-- id: Label #
-  labelID: kol_and_artist
-  name:
-    key: hk_kol
-  enable: true
-  dedup: false
-  minGrids: 3
-  style: 3
-  more: true
-- id: GroupCall # GroupCall
-  name:
-    key: group_stream_v3hotpage
-  enable: true
-  dedup: false
-  minGrids: 1
-  style: 9
-  more: true
-- id: Label #
-  labelID: FOHK2021
-  name:
-    key: hk_fohk
-  enable: true
-  dedup: false
-  minGrids: 3
-  style: 3
-  more: true
-
-
 ###### moved to top on Thurs and bottom on Fri, by Barton
 - id: Label #
   labelID: 17live_hk
@@ -132,14 +43,63 @@ sections:
   style: 3
   more: true
 ######
-#  - id: AudioStream # AudioStream 聲播
+
+#########################
+#  - id: Label # PO萬聖節變裝活動
+#    labelID: Halloween1
 #    name:
-#      key: audio_stream_v3hotpage
+#      key: section_halloweenhk2
 #    enable: true
 #    dedup: false
 #    minGrids: 1
 #    style: 3
 #    more: true
+#  - id: Label # PO萬聖節變裝活動
+#    labelID: Halloween2
+#    name:
+#      key: section_halloweenhk
+#    enable: true
+#    dedup: false
+#    minGrids: 1
+#    style: 3
+#    more: true
+#    category: normal
+##########################
+- id: Label #
+  labelID: Music
+  name:
+    key: hk_music
+  enable: true
+  dedup: false
+  minGrids: 3
+  style: 3
+  more: true
+- id: Label #
+  labelID: kol_and_artist
+  name:
+    key: hk_kol
+  enable: true
+  dedup: false
+  minGrids: 3
+  style: 3
+  more: true
+- id: Label #
+  labelID: HKDJ
+  name:
+    key: DJ
+  enable: true
+  dedup: false
+  minGrids: 1
+  style: 3
+  more: true
+- id: GroupCall # GroupCall
+  name:
+    key: group_stream_v3hotpage
+  enable: true
+  dedup: false
+  minGrids: 1
+  style: 9
+  more: true
 - id: Suggestion # 猜你可能喜歡
   name:
     key: tab_hot_2019q4_follow_suggestion
@@ -148,5 +108,47 @@ sections:
   style: 6
   minGrids: 5
   more: true
+- id: Label #
+  labelID: chill
+  name:
+    key: hk_Chill
+  enable: true
+  dedup: false
+  minGrids: 3
+  style: 3
+  more: true
+- id: Label #
+  labelID: hobbies
+  name:
+    key: hk_hobbies
+  enable: true
+  dedup: false
+  minGrids: 3
+  style: 3
+  more: true
+- id: Label #
+  labelID: FOHK2021
+  name:
+    key: hk_fohk
+  enable: true
+  dedup: false
+  minGrids: 3
+  style: 3
+  more: true
 
+- id: Vod # 熱門影音
+  name:
+    key: tab_hot_2019q4_vod
+  enable: true
+  minGrids: 1
+  style: 5
+  more: false
+#  - id: AudioStream # AudioStream 聲播
+#    name:
+#      key: audio_stream_v3hotpage
+#    enable: true
+#    dedup: false
+#    minGrids: 1
+#    style: 3
+#    more: true
 officialRecommendedStreamers:
