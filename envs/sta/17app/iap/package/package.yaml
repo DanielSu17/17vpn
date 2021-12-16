@@ -68,19 +68,25 @@ merchandises:
     abtestName: "" #禮包測試相關的abtest名稱, 需要 abtest.yaml也做相關的設定
 
 
-#Crazt_Stair_Android_new year testing 
-  - intervalID: MINV-21OV75Nmf4zCpZqGoS6uKwYL28s
-    merchandiseID: media17_giftpackage_tier14_202108 #對google play / app store的id
+#New year testing- Android 
+  - intervalID: MINV-22MJ8oa0QTnbFQNuQcDJ86BPv8P
+    merchandiseID: media17_giftpackage_tier10_202101_tw #對google play / app store的id
     productsOrder: #product的順序，product不可為0
       - barrage_normal_20
     bonusesOrder: #bonus的順序，如果只有bouns請移至productOrder
-      - gift_2110_us_newhalloween_bp_1_30
+      - gift_2201_tw_performance_lantern_1_30
+      - gift_2201_tw_performance_red_envelope_1_30
+      - gift_2201_tw_performance_lion_dance_1_30
+      - gift_gift_texture_liondance_1_30
+      - gift_gift_texture_springcouplet_1_30
+      - gift_gift_texture_tigerface_1_30
+      - gift_2201_new_year_divination_block_tiger_1_30
     addons:
       displayCountdown: true #要不要顯示倒數計時
       countdownSecs: 86400
       #距離結束時間多少以前開始 highlight
       title:
-        key: iap_store_giftpackage_crazy_zoo
+        key: iap_store_giftpackage_2022_chinese_newyear
       titleImageURL: https://cdn.17app.co/8621ddef-4f7a-4173-a0b4-ccd237f6f764.png
       discountImageURL: https://cdn.17app.co/b336adc2-a31f-4088-b5c9-fcca0d03cc18.png
       description:
@@ -102,18 +108,24 @@ merchandises:
     abtestName: "" #禮包測試相關的abtest名稱, 需要 abtest.yaml也做相關的設定
 
 #Crazt_Stair_iOS new year testing
-  - intervalID: MINV-21OV72cQfJt3Ww02eVgksL67hM7
-    merchandiseID: media17_giftpackage_tier14_202108 #對google play / app store的id
+  - intervalID: MINV-22MJ8qOwMgv71H43mVoBghoGyse
+    merchandiseID: media17_giftpackage_tier10_202101_tw #對google play / app store的id
     productsOrder: #product的順序，product不可為0
       - barrage_normal_20
     bonusesOrder: #bonus的順序，如果只有bouns請移至productOrder
-      - gift_2110_us_newhalloween_bp_1_30
+      - gift_2201_tw_performance_lantern_1_30
+      - gift_2201_tw_performance_red_envelope_1_30
+      - gift_2201_tw_performance_lion_dance_1_30
+      - gift_gift_texture_liondance_1_30
+      - gift_gift_texture_springcouplet_1_30
+      - gift_gift_texture_tigerface_1_30
+      - gift_2201_new_year_divination_block_tiger_1_30
     addons:
       displayCountdown: true #要不要顯示倒數計時
       countdownSecs: 86400
       #距離結束時間多少以前開始 highlight
       title:
-        key: iap_store_giftpackage_crazy_zoo
+        key: iap_store_giftpackage_2022_chinese_newyear
       titleImageURL: https://cdn.17app.co/8621ddef-4f7a-4173-a0b4-ccd237f6f764.png
       discountImageURL: https://cdn.17app.co/b336adc2-a31f-4088-b5c9-fcca0d03cc18.png
       description:
