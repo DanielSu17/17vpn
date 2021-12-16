@@ -59,60 +59,61 @@ properties([
     )
 ])
 
+timeout(30) {
+    node('gcp') { timestamps { ansiColor('xterm') {
+      // setup environment variables
+      env.GOPATH = "${WORKSPACE}/gowork"
+      env.PATH = "${WORKSPACE}/go/bin:${env.GOPATH}/bin:${WORKSPACE}/bin:${env.PATH}"
 
-node('gcp') { timestamps { ansiColor('xterm') {
-  // setup environment variables
-  env.GOPATH = "${WORKSPACE}/gowork"
-  env.PATH = "${WORKSPACE}/go/bin:${env.GOPATH}/bin:${WORKSPACE}/bin:${env.PATH}"
+      stage('Setup Environment') {
+        // Cleanup workspace before job start
+        deleteDir()
 
-  stage('Setup Environment') {
-    // Cleanup workspace before job start
-    deleteDir()
+        // setup binary output directory
+        sh("mkdir -p ${WORKSPACE}/bin")
+        sh("mkdir -p ${env.GOPATH}")
 
-    // setup binary output directory
-    sh("mkdir -p ${WORKSPACE}/bin")
-    sh("mkdir -p ${env.GOPATH}")
-
-    // setup environment for golang
-    def goVersion = "1.11.13"
-    def goBinary = "go${goVersion}.linux-amd64.tar.gz"
-    def goURL = "https://storage.googleapis.com/golang/${goBinary}"
-    sh("curl ${goURL} | tar zxf - -C ${WORKSPACE}")
-    sh("go version")
-    sshagent(['3dc01492-01f6-4be5-8073-8de5f458ed1e']) { // Using SSH Agent if cloning through SSH
-      // setup govendor
-      sh("go get -u github.com/kardianos/govendor")
-    }
-  } // end of stage
-
-  stage('Git Checkout') {
-    sh("mkdir -p gowork/src/configs")
-    dir("gowork/src/configs") {
-      git url: 'git@github.com:17media/configs.git',
-          credentialsId: '3dc01492-01f6-4be5-8073-8de5f458ed1e',
-          branch: 'master'
-    }
-    sshagent(['3dc01492-01f6-4be5-8073-8de5f458ed1e']) { // Using SSH Agent if cloning through SSH
-      dir("gowork/src/configs/tools/diffToSlack") {
-          sh("govendor sync")
-      }
-    }
-  } // end of stage
-
-  stage('Command Execute') {
-    sshagent(['3dc01492-01f6-4be5-8073-8de5f458ed1e']) {
-      dir('gowork/src/configs') {
-        // enable pyenv
-        virtualEnvDirectory = env.WORKSPACE + '/venv'
-        def enterPyEnvCmd = 'source ' + virtualEnvDirectory + '/bin/activate'
-        def setupRequirementsCmd = 'pip install -U pip && pip install -r tools/pip.require'
-        sh('virtualenv ' + virtualEnvDirectory)
-        retry(3) {
-          sh(enterPyEnvCmd + " && " + setupRequirementsCmd)
+        // setup environment for golang
+        def goVersion = "1.11.13"
+        def goBinary = "go${goVersion}.linux-amd64.tar.gz"
+        def goURL = "https://storage.googleapis.com/golang/${goBinary}"
+        sh("curl ${goURL} | tar zxf - -C ${WORKSPACE}")
+        sh("go version")
+        sshagent(['3dc01492-01f6-4be5-8073-8de5f458ed1e']) { // Using SSH Agent if cloning through SSH
+          // setup govendor
+          sh("go get -u github.com/kardianos/govendor")
         }
+      } // end of stage
 
-        sh(enterPyEnvCmd + " && go run tools/diffToSlack/diffToSlack.go")
-      } // end of dir
-    }
-  } // end of stage
-} /* end of ansiColor */ } /* end of timestamps */ } /* end of node */
+      stage('Git Checkout') {
+        sh("mkdir -p gowork/src/configs")
+        dir("gowork/src/configs") {
+          git url: 'git@github.com:17media/configs.git',
+              credentialsId: '3dc01492-01f6-4be5-8073-8de5f458ed1e',
+              branch: 'master'
+        }
+        sshagent(['3dc01492-01f6-4be5-8073-8de5f458ed1e']) { // Using SSH Agent if cloning through SSH
+          dir("gowork/src/configs/tools/diffToSlack") {
+              sh("govendor sync")
+          }
+        }
+      } // end of stage
+
+      stage('Command Execute') {
+        sshagent(['3dc01492-01f6-4be5-8073-8de5f458ed1e']) {
+          dir('gowork/src/configs') {
+            // enable pyenv
+            virtualEnvDirectory = env.WORKSPACE + '/venv'
+            def enterPyEnvCmd = 'source ' + virtualEnvDirectory + '/bin/activate'
+            def setupRequirementsCmd = 'pip install -U pip && pip install -r tools/pip.require'
+            sh('virtualenv ' + virtualEnvDirectory)
+            retry(3) {
+              sh(enterPyEnvCmd + " && " + setupRequirementsCmd)
+            }
+
+            sh(enterPyEnvCmd + " && go run tools/diffToSlack/diffToSlack.go")
+          } // end of dir
+        }
+      } // end of stage
+    } /* end of ansiColor */ } /* end of timestamps */ } /* end of node */
+}
