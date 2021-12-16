@@ -232,7 +232,7 @@
   - name: k8sprod-revprox-jp-main
     minReplicas: 36
 
-# JP,西川貴教のニシナナLIVE,（UV：8000）
+# JP,西川貴教のニシナナLIVE,（UV：10000-20000）
 - startTime: "2021-12-16 18:30:00 (GMT+0800)"
   endTime: "2021-12-16 21:30:00 (GMT+0800)"
   HPAConfigs:
@@ -300,8 +300,26 @@
   - name: k8sprod-revprox-tw-main
     minReplicas: 36
 
+# JP,ラストアイドル4周年コンサート(1部),（UV：6,000）
+- startTime: "2021-12-21 10:00:00 (GMT+0800)"
+  endTime: "2021-12-21 15:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+# JP,ラストアイドル4周年コンサート(2部),（UV：6,000）
 # JP,案件名:AKB48 レギュラー番組,（UV：5000-7000)
-- startTime: "2021-12-21 18:15:00 (GMT+0800)"
+- startTime: "2021-12-21 16:00:00 (GMT+0800)"
   endTime: "2021-12-21 21:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
