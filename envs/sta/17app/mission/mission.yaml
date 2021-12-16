@@ -40,35 +40,6 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
-- ID: 4b5b7f9d-d204-4ded-8a51-57ec6a5dfe20
-  type: 10
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2102_jp_charge_01
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: tw_mission_02
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_mission_03
-  i18nDescriptionParams: []
-  goalValue: 330
-  enableTimeRange:
-  - startTime: 2021-12-10 00:00:00 (GMT+0800)
-    endTime: 2021-12-26 00:00:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
 - ID: 44e28895-0802-48cc-92ce-abfa1fedf8d0
   type: 24
   category: 0
@@ -127,6 +98,97 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
+- ID: 78bfe3be-d610-4e66-83a1-7d13517b1b43
+  type: 24
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2201_new_year_divination_block_tiger
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_daily_checkin_title
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_daily_checkin_descr
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2021-12-16 18:00:00 (GMT-0800)
+    endTime: 2021-12-31 21:00:00 (GMT-0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 888dda1e-3907-45d2-a880-e971c27120a8
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2201_new_year_divination_block_tiger
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "10"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 600
+  enableTimeRange:
+  - startTime: 2021-12-16 18:00:00 (GMT-0800)
+    endTime: 2021-12-31 21:00:00 (GMT-0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 4b5b7f9d-d204-4ded-8a51-57ec6a5dfe20
+  type: 10
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2102_jp_charge_01
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: tw_mission_02
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: tw_mission_03
+  i18nDescriptionParams: []
+  goalValue: 330
+  enableTimeRange:
+  - startTime: 2021-12-10 00:00:00 (GMT+0800)
+    endTime: 2021-12-26 00:00:00 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
 - ID: 2fb01b01-b007-45d5-a5b4-ee3fefccf6db
   type: 9
   category: 0
@@ -1059,68 +1121,6 @@ missions:
   enableTimeRange:
   - startTime: 2021-02-01 10:00:00 (GMT+0800)
     endTime: 2021-12-31 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 6491a392-1d5e-47cf-bce8-b089f67814c7
-  type: 17
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2020q4_jp_comment
-    amount: 1
-    expireTimeSecs: 604800
-  i18nTitle: baggage_mission_leave_comment_new_streamer_title
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_leave_comment_new_streamer_description
-  i18nDescriptionParams: []
-  goalValue: 3
-  enableTimeRange:
-  - startTime: 2020-12-01 00:00:00 (GMT+0800)
-    endTime: 2021-12-01 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: true
-- ID: 6491a392-1d5e-47cf-bce8-b089f67814ff
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 2
-    rewardID: bag-id-3
-    amount: 5
-    expireTimeSecs: 604800
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "180"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 3
-  enableTimeRange:
-  - startTime: 2020-12-01 00:00:00 (GMT+0800)
-    endTime: 2021-12-01 23:59:59 (GMT+0800)
   refIDs: []
   platforms:
   - android
