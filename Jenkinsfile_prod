@@ -1,0 +1,80 @@
+node('gcp') { timestamps { ansiColor('xterm') {
+    // setup environment variables
+    env.SLACK = "https://hooks.slack.com/services/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"
+
+    stage('Git checkout') {
+        def scmVars = checkout scm
+        env.GIT_COMMIT=scmVars.GIT_COMMIT
+        env.REVISION=scmVars.GIT_COMMIT
+    } // end of stage Git checkout
+
+    stage('Check Configs') {
+        withCredentials([
+          usernamePassword(
+              credentialsId: 'f2c9dec6-bad6-4f91-a21d-327c8c547954',
+              passwordVariable: 'DOCKER_PASS',
+              usernameVariable: 'DOCKER_USER'
+          )
+        ]) {
+            sh("docker version")
+            sh("docker login -u ${DOCKER_USER} -p ${DOCKER_PASS}")
+
+            def check_status = sh(script: 'jenkins/checker.sh prod', returnStatus:true)
+            echo 'check_status: ' + check_status
+            if (check_status != 0) {
+                currentBuild.result = 'FAILURE'
+            }
+        }
+    } // end of stage Check Configs
+
+    stage('Push Changes to ETCD Clusters') {
+        withCredentials([
+          usernamePassword(
+              credentialsId: 'f2c9dec6-bad6-4f91-a21d-327c8c547954',
+              passwordVariable: 'DOCKER_PASS',
+              usernameVariable: 'DOCKER_USER'
+          )
+        ]) {
+            sh("docker version")
+            sh("docker login -u ${DOCKER_USER} -p ${DOCKER_PASS}")
+            
+
+            def stages = [:]
+
+            stages["prod_general"] = {
+                withEnv([
+                    "ENDPOINTS_17APP_PROD=http://34.145.9.88:2379,http://34.105.4.214:2379,http://34.105.62.126:2379",
+                    "ENDPOINTS_WAVE_PROD=http://35.221.189.46:2379,http://104.199.161.59:2379,http://34.80.98.223:2379",
+                    "ENDPOINTS_EVENTORY_PROD=http://34.145.9.88:2379,http://34.105.4.214:2379,http://34.105.62.126:2379",
+                    "ENDPOINTS_STREAMING_PROD=",
+                    "ENDPOINTS_APISIX_PROD=http://34.145.19.108:2379,http://34.83.11.174:2379,http://34.82.20.35:2379",
+                    "V3_APP_LIST=apisix"
+                ]) {
+                    sh('./push_to_etcd.sh')
+                }
+            } // end of stage
+            stages["prod_concert"] = {
+                withEnv([
+                    "ENDPOINTS_17APP_PROD=http://34.83.167.34:2379,http://34.82.177.43:2379,http://35.185.213.91:2379",
+                    "ENDPOINTS_WAVE_PROD=",
+                    "ENDPOINTS_EVENTORY_PROD=",
+                    "ENDPOINTS_STREAMING_PROD="
+                ]) {
+                    sh('./push_to_etcd.sh')
+                }
+            } // end of stage
+            stages["prod_lokalise"] = {
+                withEnv([
+                    "ENDPOINTS_17APP_PROD=http://34.127.123.182:2379,http://34.105.121.164:2379,http://35.230.86.235:2379",
+                    "ENDPOINTS_WAVE_PROD=",
+                    "ENDPOINTS_EVENTORY_PROD=",
+                    "ENDPOINTS_STREAMING_PROD=",
+                    "ENDPOINTS_STREAMING="
+                ]) {
+                    sh('./push_to_etcd.sh')
+                }
+            } // end of stage
+            parallel(stages)
+        }
+    } // end of stage Push Changes to ETCD Clusters
+} /* end of ansiColor */ } /* end of timestamps */ } /* end of node */

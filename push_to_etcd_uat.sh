@@ -75,7 +75,7 @@ for config_path in ${config_paths}; do
 
   # support prod/sta only
   if [ "${config_env}" = "sta" ]  || [ "${config_env}" = "prod" ] || [ "${config_env}" = "uat" ] ; then
-    curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":muscle:Push to ETCD Started. (${config_env}):etcd:\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Message*:${COMMIT_MESSAGE}\n*Lastest Commit*:${GIT_COMMIT}  *Job*: <${BUILD_URL}|URL>\"}]},{\"type\":\"divider\"}]}" "${SLACK}"    
+    curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":muscle:Push to ETCD Started. (${config_env} ${ETCD_CLUSTER}):etcd:\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Message*:${COMMIT_MESSAGE}\n*Lastest Commit*:${GIT_COMMIT}  *Job*: <${BUILD_URL}|URL>\"}]},{\"type\":\"divider\"}]}" "${SLACK}"    
     # naming rule: ENDPOINTS_{{ APP_NAME }}_{{ CONFIG_ENV }}
     dynamic_endpoints="ENDPOINTS_$(echo "${config_app}" | tr '[:lower:]' '[:upper:]')_$(echo "${config_env}" | tr '[:lower:]' '[:upper:]')"
     echo "[debug] dynamic_endpoints: ${dynamic_endpoints}"
@@ -94,12 +94,12 @@ for config_path in ${config_paths}; do
         echo "Endpoint ${dynamic_endpoints} is an empty string"
       else
         echo "abort, no endpoint defined"
-        curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":warning:Push to ETCD Failed. (${config_env}):red_thinking::etcd:\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Message*:${COMMIT_MESSAGE}\n*Lastest Commit*:${GIT_COMMIT}  *Job*: <${BUILD_URL}|URL> @sre\"}]},{\"type\":\"divider\"}]}" "${SLACK}"
+        curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":warning:Push to ETCD Failed. (${config_env} ${ETCD_CLUSTER}):red_thinking::etcd:\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Message*:${COMMIT_MESSAGE}\n*Lastest Commit*:${GIT_COMMIT}  *Job*: <${BUILD_URL}|URL> @sre\"}]},{\"type\":\"divider\"}]}" "${SLACK}"
         # exit 1 ignore error if endpoint not found
       fi
     fi
 
-    curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":white_check_mark:Push to ETCD Successfully. (${config_env}):etcd:\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Message*:${COMMIT_MESSAGE}\n*Lastest Commit*:${GIT_COMMIT}  *Job*: <${BUILD_URL}|URL>\"}]},{\"type\":\"divider\"}]}" "${SLACK}"
+    curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":white_check_mark:Push to ETCD Successfully. (${config_env} ${ETCD_CLUSTER}):etcd:\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Message*:${COMMIT_MESSAGE}\n*Lastest Commit*:${GIT_COMMIT}  *Job*: <${BUILD_URL}|URL>\"}]},{\"type\":\"divider\"}]}" "${SLACK}"
   else
     echo "[debug] unsupported config_env, skipped" 
     continue
