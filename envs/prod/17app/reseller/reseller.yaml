@@ -1,0 +1,52 @@
+pointPerCurrenciesByRegion:
+  TW:
+    - currency: "TWD"
+      ratio: "12.6"
+    - currency: "TWD"
+      ratio: "12.9"
+    - currency: "TWD"
+      ratio: "13.1"
+  SG:
+    - currency: "SGD"
+      ratio: "295"
+  HK:
+    - currency: "HKD"
+      ratio: "43.90"
+    - currency: "HKD"
+      ratio: "43.98"
+    - currency: "HKD"
+      ratio: "44.26"
+    - currency: "HKD"
+      ratio: "44.56"
+    - currency: "HKD"
+      ratio: "44.62"
+    - currency: "HKD"
+      ratio: "45.25"
+    - currency: "HKD"
+      ratio: "45.34"
+    - currency: "HKD"
+      ratio: "45.63"
+    - currency: "HKD"
+      ratio: "45.94"
+    - currency: "HKD"
+      ratio: "46.00"
+  
+# must contains TWD
+supportedCurrencies:
+  - TWD
+  - SGD
+  - HKD
+
+# must contains TW
+supportedRegions:
+  - TW
+  - SG
+  - HK
+
+supportedPayMethods:
+  - 3  # payModel.MethodSPG
+  - 56 # payModel.MethodECPay
+  - 31 # payModel.MethodTWBankA
+  - 13 # payModel.MethodCash
+  - 55 # payModel.MethodSCBankHK, let TW admin can handle SG reseller
+  - 65 # payModel.MethodHK7ELEVEN
