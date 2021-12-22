@@ -1,5 +1,5 @@
 - testName: entryTitleTypeA # PROD-3617
-  enableABtest: true
+  enableABtest: false 
   expiredSecond: 604800
   lastCharGroup:
     "0": "a"
@@ -385,7 +385,7 @@
     "f": "b"
 # 登入獎勵: 0~4 group a
 - testName: signInRewardAB
-  enableABtest: true
+  enableABtest: false #changed for removal A/B testing
   startTime: "2020-07-01T00:00:00+08:00"
   endTime: "2020-07-13T23:59:59+08:00"
   lastCharGroup:
@@ -407,7 +407,7 @@
     "f": "b"
 # 登入獎勵: 5~9 group b, a~f group c
 - testName: signInRewardBC
-  enableABtest: true
+  enableABtest: false #debug changed for removal A/B testing
   startTime: "2020-07-01T00:00:00+08:00"
   endTime: "2020-07-13T23:59:59+08:00"
   lastCharGroup:
@@ -429,7 +429,7 @@
     "f": "b"
 
 - testName: laborRewardWithPremium
-  enableABtest: true
+  enableABtest: false #debug changed for removal A/B testing
   lastCharGroup:
     "0": "a"
     "1": "a"
