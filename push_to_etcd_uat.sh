@@ -13,7 +13,6 @@ if [ -z "${REVISION}" ]; then
 fi
 
 COMMIT_MESSAGE=$(git log  --pretty=format:'%B' "${GIT_COMMIT}"^! | head -n1)
-GIT_PREVIOUS_SUCCESSFUL_COMMIT="c11a5131a5658c56bdee53dcfaffa8ac8c7d718b"
 
 function push() {
   image=${ETCD_PUSH_IMAGE}
