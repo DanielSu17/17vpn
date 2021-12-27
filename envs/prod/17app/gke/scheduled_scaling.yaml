@@ -295,11 +295,155 @@
   - name: k8sprod-revprox-tw-main
     minReplicas: 36
 
-# 1/1 (时间未确定)【MKT】NMB48
-# UV：30000-50000
-# 最大同時視聴数：
-# Peak予測：
-# Account： Program
-# Account ID：NMB48_official
-# 機能：
-# 担当：Kodai/Ran
+# 1/1 (时间未确定)【MKT】NMB48, (UV：30000-50000)
+- startTime: "2022-01-01 15:30:00 (GMT+0800)"
+  endTime: "2022-01-01 11:05:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+# 1/4【important!!】JP,案件名:AKB48 レギュラー番組,（UV：5000-7000）
+- startTime: "2021-01-04 18:15:00 (GMT+0800)"
+  endTime: "2021-01-04 21:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+# 1/6【important!!】JP,西川貴教のニシナナLIVE,（UV：8000）
+- startTime: "2021-01-06 18:00:00 (GMT+0800)"
+  endTime: "2021-01-06 21:30:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+# 1/11【important!!】JP,案件名:AKB48 レギュラー番組,（UV：5000-7000）
+- startTime: "2021-01-11 18:15:00 (GMT+0800)"
+  endTime: "2021-01-11 21:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+# 1/13【important!!】JP,西川貴教のニシナナLIVE,（UV：8000）
+- startTime: "2021-01-13 18:00:00 (GMT+0800)"
+  endTime: "2021-01-13 21:30:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+# 1/18【important!!】JP,案件名:AKB48 レギュラー番組,（UV：5000-7000）
+- startTime: "2021-01-18 18:15:00 (GMT+0800)"
+  endTime: "2021-01-18 21:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+# 1/20【important!!】JP,西川貴教のニシナナLIVE,（UV：8000）
+- startTime: "2021-01-20 18:00:00 (GMT+0800)"
+  endTime: "2021-01-20 21:30:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+# 1/25【important!!】JP,案件名:AKB48 レギュラー番組,（UV：5000-7000）
+- startTime: "2021-01-25 18:15:00 (GMT+0800)"
+  endTime: "2021-01-25 21:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+# 1/27【important!!】JP,西川貴教のニシナナLIVE,（UV：8000）
+- startTime: "2021-01-27 18:00:00 (GMT+0800)"
+  endTime: "2021-01-27 21:30:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
