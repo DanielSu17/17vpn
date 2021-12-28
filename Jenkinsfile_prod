@@ -14,7 +14,8 @@ node('gcp') { timestamps { ansiColor('xterm') {
               credentialsId: 'f2c9dec6-bad6-4f91-a21d-327c8c547954',
               passwordVariable: 'DOCKER_PASS',
               usernameVariable: 'DOCKER_USER'
-          )
+          ),
+          string(credentialsId: 'config-checker-bot-oauth', variable: 'SLACKTOKEN')
         ]) {
             sh("docker version")
             sh("docker login -u ${DOCKER_USER} -p ${DOCKER_PASS}")
@@ -33,7 +34,8 @@ node('gcp') { timestamps { ansiColor('xterm') {
               credentialsId: 'f2c9dec6-bad6-4f91-a21d-327c8c547954',
               passwordVariable: 'DOCKER_PASS',
               usernameVariable: 'DOCKER_USER'
-          )
+          ),
+          string(credentialsId: 'config-checker-bot-oauth', variable: 'SLACKTOKEN')
         ]) {
             sh("docker version")
             sh("docker login -u ${DOCKER_USER} -p ${DOCKER_PASS}")
