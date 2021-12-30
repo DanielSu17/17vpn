@@ -1005,16 +1005,16 @@
 # group B skip auto-follow page during onboarding flow
 # JIRA: APP-29027
 - testName: onboardingStreamerRecommendFlowType
-  enableABtest: false
+  enableABtest: true
   lastCharGroup:
     "0": "a"
     "1": "a"
     "2": "a"
     "3": "a"
-    "4": "a"
-    "5": "a"
-    "6": "a"
-    "7": "a"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
     "8": "a"
     "9": "a"
     "a": "a"
@@ -1028,7 +1028,7 @@
 # group B suppress display of the Daily Quest sign-in popup
 # JIRA: APP-29028
 - testName: suppressDailyQuestSignInPopup
-  enableABtest: false
+  enableABtest: true
   lastCharGroup:
     "0": "a"
     "1": "a"
@@ -1042,16 +1042,16 @@
     "9": "a"
     "a": "a"
     "b": "a"
-    "c": "a"
-    "d": "a"
-    "e": "a"
-    "f": "a"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
 
 # group A keep default behavior
 # group B Disable newbie missions
 # JIRA: APP-29029
 - testName: disableNewbieMissions
-  enableABtest: false
+  enableABtest: true
   lastCharGroup:
     "0": "a"
     "1": "a"
@@ -1061,10 +1061,10 @@
     "5": "a"
     "6": "a"
     "7": "a"
-    "8": "a"
-    "9": "a"
-    "a": "a"
-    "b": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
     "c": "a"
     "d": "a"
     "e": "a"
