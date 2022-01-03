@@ -17,26 +17,6 @@
     minReplicas: 24
   - name: k8ssta-revprox-tw-main
     minReplicas: 36
-
-# Followings are actual schedules
-- startTime: "2019-12-23 09:00:00 (GMT+0800)"
-  endTime: "2019-12-23 20:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8ssta-worker-main
-    minReplicas: 8
-
-# Example for CM stress test
-- startTime: "2021-10-14 10:00:00 (GMT+0800)"
-  endTime: "2021-10-14 19:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8ssta-goapi-main
-    minReplicas: 80
-  - name: k8ssta-golives-main
-    minReplicas: 48
-  - name: k8ssta-gotrade-main
-    minReplicas: 24
-  - name: k8ssta-revprox-tw-main
-    minReplicas: 36
     
 # eventory-worker stress test
 - startTime: "2021-10-07 11:30:00 (GMT+0800)"
@@ -68,21 +48,6 @@
     minReplicas: 10
   - name: k8ssta-goapi-main
     minReplicas: 10
-    
-# scheduled_scaling multiple timeblock test 1
-- startTime: "2021-12-20 17:50:00 (GMT+0800)"
-  endTime: "2021-12-20 18:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8ssta-goapi-main
-    minReplicas: 2
-
-# scheduled_scaling multiple timeblock test 2
-- startTime: "2021-12-20 17:50:00 (GMT+0800)"
-  endTime: "2021-12-20 18:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8ssta-goapi-main
-    minReplicas: 3
-
 
 # Judy Dai stress test
 # poll service stress test
@@ -100,20 +65,6 @@
     minReplicas: 36
   - name: k8ssta-gift-worker-main
     minReplicas: 10
-
-# Andrew stress test
-# Test for cross-year
-- startTime: "2021-12-27 19:20:00 (GMT+0800)"
-  endTime: "2021-12-27 20:30:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8ssta-goapi-main
-    minReplicas: 80
-  - name: k8ssta-golives-main
-    minReplicas: 48
-  - name: k8ssta-gotrade-main
-    minReplicas: 24
-  - name: k8ssta-revprox-tw-main
-    minReplicas: 36
 
 # Eventory test
 - startTime: "2021-12-10 14:00:00 (GMT+0800)"
