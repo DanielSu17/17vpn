@@ -5,6 +5,19 @@
   - name: example-target-hpa
     minReplicas: 20
 
+# weekly stress test
+- startTime: "2022-01-05 07:00:00 (GMT+0800)"
+  endTime: "2022-01-05 16:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8ssta-goapi-main
+    minReplicas: 80
+  - name: k8ssta-golives-main
+    minReplicas: 48
+  - name: k8ssta-gotrade-main
+    minReplicas: 24
+  - name: k8ssta-revprox-tw-main
+    minReplicas: 36
+
 # Followings are actual schedules
 - startTime: "2019-12-23 09:00:00 (GMT+0800)"
   endTime: "2019-12-23 20:00:00 (GMT+0800)"
@@ -55,19 +68,6 @@
     minReplicas: 10
   - name: k8ssta-goapi-main
     minReplicas: 10
-
-# weekly stress test
-- startTime: "2021-12-29 07:00:00 (GMT+0800)"
-  endTime: "2021-12-29 16:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8ssta-goapi-main
-    minReplicas: 80
-  - name: k8ssta-golives-main
-    minReplicas: 48
-  - name: k8ssta-gotrade-main
-    minReplicas: 24
-  - name: k8ssta-revprox-tw-main
-    minReplicas: 36
     
 # scheduled_scaling multiple timeblock test 1
 - startTime: "2021-12-20 17:50:00 (GMT+0800)"
