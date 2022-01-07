@@ -1,7 +1,7 @@
 ## SOP to deploy change of red envelopes
 #### Steps:
 01. PM defines change required for red envelopes and provides necessary resources
-    - reference: https://docs.google.com/spreadsheets/d/1pknu-cqXg4WbBiPa8tuXBjJvMvSLMJoM8LKuGrqDk90/edit#gid=1316320567
+    - [Red Envelope List](https://docs.google.com/spreadsheets/d/1pknu-cqXg4WbBiPa8tuXBjJvMvSLMJoM8LKuGrqDk90/edit#gid=1316320567)
 02. Engineer updates the config
     - change redenvelope functionality with global scope
       - cases:
@@ -13,7 +13,7 @@
         - change red envelope styles for Chrismas or New Year, etc.
         - launch new redenvelopes
       - should update [redenvelope settings](#Redenvelope-Settings)
-      - should test the UI changes for Android/IOS/Web in DEV/STAG environment
+      - should test the UI changes for Android/IOS/Web in PRE-PROD environment by OPS
 03. Engineer generate a report in JSON format in DEV/STAG environment
     - endpoint to generate report:   ```GET /api/v1/config/redenvelope```
 04. PM review the related fields in the report and approve the change
@@ -34,7 +34,6 @@
       - dailySumOfPickedRefreshHour
       - userLockPickedSecs
 05. Engineer deploy the config to PROD
-06. TODO: Configuration Notification via google calendar (before 2021/3/31)
 
 ## Introduction of Red Envelope Config
 ### General Settings
