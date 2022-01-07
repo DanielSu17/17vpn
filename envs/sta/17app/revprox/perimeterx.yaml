@@ -12,11 +12,17 @@ protected_routes_with_methods:
   - route: "/sections.*"
   - route: "/version"
   - route: "/users/.*/info"
+    methods: ["GET"]
   - route: "/users/.*/guardian"
+    methods: ["GET"]
   - route: "/user/search"
+    methods: ["GET"]
   - route: "/army/overview/.*/viewer"
+    methods: ["GET"]
   - route: "/leaderboards"
+    methods: ["GET"]
   - route: "/liveStreams/areUsersOnlive"
+    methods: ["POST"]
 sensitive_headers:
   - "nonce"
   - "accesstoken"
