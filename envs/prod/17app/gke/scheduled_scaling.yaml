@@ -19,336 +19,9 @@
   - name: example-target-hpa
     minReplicas: 20
 
-# JP,ラストアイドル4周年コンサート(1部),（UV：6,000）
-- startTime: "2021-12-21 10:00:00 (GMT+0800)"
-  endTime: "2021-12-21 15:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-# JP,ラストアイドル4周年コンサート(2部),（UV：6,000）
-# JP,案件名:AKB48 レギュラー番組,（UV：5000-7000)
-- startTime: "2021-12-21 16:00:00 (GMT+0800)"
-  endTime: "2021-12-21 21:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-# TW,【聖誕大活動】線下活動支援
-# JP,西川貴教のニシナナLIVE,（UV：8000）
-- startTime: "2021-12-23 17:30:00 (GMT+0800)"
-  endTime: "2021-12-23 22:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-  - name: k8sprod-revprox-tw-main
-    minReplicas: 36
-
-# 12/23 13:30~ 12/24 00:00 pre-scale
-# JP, クリスマス爆裂王決定戦(VIP)
-# JP,西川貴教のニシナナLIVE,（UV：8000）
-# TW, 【聖誕大活動】線下活動支援
-# eventory min 12 max 20
-# worker 升到 40
-# https://17media.slack.com/archives/C466YU363/p1639537872079700
-- startTime: "2021-12-23 13:30:00 (GMT+0800)"
-  endTime: "2021-12-24 00:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-eventory-main
-    minReplicas: 12
-  - name: k8sprod-eventory-worker-main
-    minReplicas: 40
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-  - name: k8sprod-revprox-tw-main
-    minReplicas: 36
-
-# JP VIP 活動 12/23 go-trade only
-# JP, クリスマス爆裂王決定戦(VIP)
-# https://17media.slack.com/archives/C466YU363/p1639967399188400
-- startTime: "2021-12-23 18:00:00 (GMT+0800)"
-  endTime: "2021-12-24 00:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-gotrade-main
-    minReplicas: 30
-
-# JP,ラストアイドルウォッチパーティ,（UV：6,000）
-- startTime: "2021-12-24 16:15:00 (GMT+0800)"
-  endTime: "2021-12-24 20:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-# JP, クリスマス爆裂王決定戦(VIP)
-# go-trade+eventory+goapi
-# https://17media.slack.com/archives/C466YU363/p1639967399188400
-- startTime: "2021-12-24 20:00:00 (GMT+0800)"
-  endTime: "2021-12-25 00:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-  - name: k8sprod-gotrade-main
-    minReplicas: 30
-  - name: k8sprod-eventory-main
-    minReplicas: 12
-  - name: k8sprod-eventory-worker-main
-    minReplicas: 40
-
-# TW, T1賽事轉播 DAY7
-# TW, 獅紫軍點點名
-- startTime: "2021-12-25 14:30:00 (GMT+0800)"
-  endTime: "2021-12-25 21:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-tw-main
-    minReplicas: 36
-
-# JP VIP 活動 go-trade, eventory, goapi
-# https://17media.slack.com/archives/C466YU363/p1639967399188400
-# --- NEED JAN or teamx REVIEW ---
-- startTime: "2021-12-25 20:00:00 (GMT+0800)"
-  endTime: "2021-12-26 00:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-  - name: k8sprod-gotrade-main
-    minReplicas: 30
-  - name: k8sprod-eventory-main
-    minReplicas: 12
-  - name: k8sprod-eventory-worker-main
-    minReplicas: 40
-
-# TW,T1賽事轉播 DAY8
-- startTime: "2021-12-26 14:30:00 (GMT+0800)"
-  endTime: "2021-12-26 20:30:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-tw-main
-    minReplicas: 36
-
-# JP,Man WIth A Mission,（UV：10,000）
-- startTime: "2021-12-26 18:20:00 (GMT+0800)"
-  endTime: "2021-12-26 21:10:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-# JP, 17LIVE_REALEVENT（UV：8,000-10,000)
-- startTime: "2021-12-27 15:00:00 (GMT+0800)"
-  endTime: "2021-12-27 19:50:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-# JP,案件名:AKB48 レギュラー番組,（UV：5000-7000)
-- startTime: "2021-12-28 18:15:00 (GMT+0800)"
-  endTime: "2021-12-28 21:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-# JP,西川貴教のニシナナLIVE,（UV：8000）
-- startTime: "2021-12-30 18:30:00 (GMT+0800)"
-  endTime: "2021-12-30 21:30:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-# TW,T1賽事轉播 DAY9
-- startTime: "2021-12-31 14:30:00 (GMT+0800)"
-  endTime: "2021-12-31 18:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-tw-main
-    minReplicas: 36
-
-# 1/4【important!!】JP,案件名:AKB48 レギュラー番組,（UV：5000-7000）
-- startTime: "2021-01-04 18:15:00 (GMT+0800)"
-  endTime: "2021-01-04 21:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-# 1/6【important!!】JP,西川貴教のニシナナLIVE,（UV：8000）
-- startTime: "2021-01-06 18:00:00 (GMT+0800)"
-  endTime: "2021-01-06 21:30:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-# 1/11【important!!】JP,案件名:AKB48 レギュラー番組,（UV：5000-7000）
-- startTime: "2021-01-11 18:15:00 (GMT+0800)"
-  endTime: "2021-01-11 21:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
 # 1/13【important!!】JP,西川貴教のニシナナLIVE,（UV：8000）
-- startTime: "2021-01-13 18:00:00 (GMT+0800)"
-  endTime: "2021-01-13 21:30:00 (GMT+0800)"
+- startTime: "2022-01-13 18:00:00 (GMT+0800)"
+  endTime: "2022-01-13 21:30:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 70
@@ -364,8 +37,8 @@
     minReplicas: 36
 
 # 1/18【important!!】JP,案件名:AKB48 レギュラー番組,（UV：5000-7000）
-- startTime: "2021-01-18 18:15:00 (GMT+0800)"
-  endTime: "2021-01-18 21:00:00 (GMT+0800)"
+- startTime: "2022-01-18 18:15:00 (GMT+0800)"
+  endTime: "2022-01-18 21:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 70
@@ -381,8 +54,8 @@
     minReplicas: 36
 
 # 1/20【important!!】JP,西川貴教のニシナナLIVE,（UV：8000）
-- startTime: "2021-01-20 18:00:00 (GMT+0800)"
-  endTime: "2021-01-20 21:30:00 (GMT+0800)"
+- startTime: "2022-01-20 18:00:00 (GMT+0800)"
+  endTime: "2022-01-20 21:30:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 70
@@ -398,8 +71,8 @@
     minReplicas: 36
 
 # 1/25【important!!】JP,案件名:AKB48 レギュラー番組,（UV：5000-7000）
-- startTime: "2021-01-25 18:15:00 (GMT+0800)"
-  endTime: "2021-01-25 21:00:00 (GMT+0800)"
+- startTime: "2022-01-25 18:15:00 (GMT+0800)"
+  endTime: "2022-01-25 21:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 70
@@ -415,8 +88,8 @@
     minReplicas: 36
 
 # 1/27【important!!】JP,西川貴教のニシナナLIVE,（UV：8000）
-- startTime: "2021-01-27 18:00:00 (GMT+0800)"
-  endTime: "2021-01-27 21:30:00 (GMT+0800)"
+- startTime: "2022-01-27 18:00:00 (GMT+0800)"
+  endTime: "2022-01-27 21:30:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 70
