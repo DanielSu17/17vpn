@@ -20,8 +20,8 @@ fcm:
 
 oneSignal:
   # when one signal faills in general, use fcm as backup
-  enableBackup: true
+  enableBackup: false
   # when one signal fail to update new players, use fcm as backup (case not included in enableBackup)
   enableBackupForFailUpdate: false
   # simluate one signal fail to update new players. option for qa testing, not allowed in prod
-  forceFailUpdate: false
+  forceFailUpdate: true
