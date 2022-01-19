@@ -1,0 +1,71 @@
+{
+  "id": "1",
+  "plugins": {
+    "datadog": {},
+    "real-ip": {
+      "source": "http_x_forwarded_for"
+    },
+    "ip-restriction": {
+      "ip_source": "true-client-ip",
+      "blacklist": [
+        "39.13.166.207",
+        "34.97.119.52",
+        "39.10.9.49",
+        "27.52.133.152",
+        "39.13.167.140",
+        "110.30.153.33",
+        "182.167.84.101",
+        "119.247.9.131",
+        "47.88.159.151",
+        "46.19.85.234",
+        "46.19.85.241",
+        "123.241.74.41",
+        "54.219.217.84",
+        "220.136.142.149",
+        "107.178.200.217",
+        "107.178.200.192",
+        "107.178.200.201",
+        "107.178.239.201",
+        "182.20.143.208",
+        "126.142.78.85",
+        "118.169.12.122",
+        "59.149.253.134",
+        "59.149.253.146",
+        "59.149.253.159",
+        "114.42.209.11",
+        "112.139.229.197",
+        "103.5.140.167",
+        "101.102.202.77",
+        "126.161.8.20",
+        "210.138.222.140",
+        "103.5.140.185",
+        "153.198.250.85",
+        "60.158.216.30",
+        "123.208.13.213",
+        "137.25.26.98",
+        "42.3.101.77"
+      ],
+      "message": "server is down for maintenance temporarily"
+    },
+    "cors": {
+      "allow_origins": "https://17.live",
+      "allow_credential": true,
+      "allow_methods": "GET,POST,PATCH,PUT,DELETE",
+      "allow_headers": "Content-Type,accessToken,deviceType,language,version,deviceID,X-Requested-With,skip-throttling,debug-level,Authorization,Trace-Id,Force-Region,userSelectedRegion,userIpRegion,17media-Custom-Host",
+      "expose_headers": "**",
+      "allow_origins_by_regex": [
+        "^https://17\\.live$",
+        "^https://[-\\w]+--17live\\.netlify\\.com$",
+        "^https://[-\\w]+--17livef2e\\.netlify\\.com$",
+        "^https://[-\\w]+\\.17\\.live$",
+        "^https?://17\\.media$",
+        "^https?://[-\\w]+\\.17\\.media$",
+        "^https?://[-\\w]+\\.17app\\.co(:\\d+)?$",
+        "^http://17\\.local(:\\d+)?$",
+        "^http://localhost(:\\d+)?$",
+        "^http://usskyeye\\.s3-website-us-west-2\\.amazonaws\\.com$",
+        "^http://172.16.5.10(:\\d+)?$"
+      ]
+    }
+  }
+}
