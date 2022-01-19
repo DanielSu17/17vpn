@@ -4,10 +4,10 @@
     "upstream": {
         "type": "roundrobin",
         "nodes": {
-            "k8suat-goiso-main.k8suat.svc.cluster.local:80": 1
+            "goiso:8001": 1
         },
         "scheme": "http"
     },
-    "uri": "/*",
+    "uri": "/api/v1/articles/*",
     "priority": 0
 }
