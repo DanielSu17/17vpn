@@ -1,4 +1,4 @@
-max: 0 # 0 means disable feature
+max: 1 # 0 means disable feature
 check_interval: 1m00s
 big_brother_prefix: "give_me_five"
 nian_prefix: "nian"
@@ -139,38 +139,38 @@ monsters:
 #      - giftID: "gift_lightstick_b"
 #        probability: 10000 # n / 10000 * 100%
 
-  - id: monster_babyrobot_petroleum #寶寶機器人挖到石油
-    hit_consume: 10
-    duration: 60s
-    stream_alive_threshold: 1m00s
-    animation: "babyrobotpetroleum"
-    available_dates:
-    - start_date: "2020-07-28T18:00:00+08:00"
-      end_date: "2021-09-01T18:00:00+08:00"
-    appear_durations:
-    - start_time: 00h00m00s
-      end_time: 18h59m59s
-    type: 1
-    share_ratio: 50 # percentage
-    profit_ratio: 35 # percentage
-    bonus: 336
-    weight: 1
-    infoPageiconURL: https://cdn.17app.co/fb329dbe-9c30-4b40-af34-8d6479a8e3ec.png
-    winnerPageiconURL: https://cdn.17app.co/d110ee5c-34a1-47ca-9319-49a2a381b3e8.png
-    hintToken: {key: monster_battle_hint_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
-    rule1Token: {key: monster_battle_rule1_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
-    rule2Token: {key: monster_battle_rule2_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
-    rule3Token: {key: monster_battle_rule3_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
-    rule4Token: {key: monster_battle_rule4_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
-    countdownToken: {key: monster_battle_countdown_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
-    failureToken: {key: monster_battle_failure_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
-    successToken: {key: monster_battle_success_babyrobot_petroleum,fontAttribute: {textColor: "#FFFFFF"}}
-    marqueeToken: {key: monster_battle_marquee_babyrobot}
-    summonGifts: # 招喚怪獸才需要填
-    - giftID: "guardian_tw_16_ring"
-      probability: 10000 # n / 10000 * 100%
-    - giftID: "gift_happycake99"
-      probability: 5000
+#  - id: monster_babyrobot_petroleum #寶寶機器人挖到石油
+#    hit_consume: 10
+#    duration: 60s
+#    stream_alive_threshold: 1m00s
+#    animation: "babyrobotpetroleum"
+#    available_dates:
+#    - start_date: "2020-07-28T18:00:00+08:00"
+#      end_date: "2021-09-01T18:00:00+08:00"
+#    appear_durations:
+#    - start_time: 00h00m00s
+#      end_time: 18h59m59s
+#    type: 1
+#    share_ratio: 50 # percentage
+#    profit_ratio: 35 # percentage
+#    bonus: 336
+#    weight: 1
+#    infoPageiconURL: https://cdn.17app.co/fb329dbe-9c30-4b40-af34-8d6479a8e3ec.png
+#    winnerPageiconURL: https://cdn.17app.co/d110ee5c-34a1-47ca-9319-49a2a381b3e8.png
+#    hintToken: {key: monster_battle_hint_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#    rule1Token: {key: monster_battle_rule1_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#    rule2Token: {key: monster_battle_rule2_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#    rule3Token: {key: monster_battle_rule3_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#    rule4Token: {key: monster_battle_rule4_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#    countdownToken: {key: monster_battle_countdown_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#    failureToken: {key: monster_battle_failure_babyrobot,fontAttribute: {textColor: "#FFFFFF"}}
+#    successToken: {key: monster_battle_success_babyrobot_petroleum,fontAttribute: {textColor: "#FFFFFF"}}
+#    marqueeToken: {key: monster_battle_marquee_babyrobot}
+#    summonGifts: # 招喚怪獸才需要填
+#    - giftID: "guardian_tw_16_ring"
+#      probability: 10000 # n / 10000 * 100%
+#    - giftID: "gift_happycake99"
+#      probability: 5000
 
 
 
@@ -205,74 +205,74 @@ monsters:
 #    - giftID: "guardian_tw_16_ring"
 #      probability: 10000 # n / 10000 * 100%
 
-  - id: monster_circus_monkey #猴子騎單輪車
-    hit_consume: 20
-    duration: 60s
-    stream_alive_threshold: 1m00s
-    animation: "monkey"
-    available_dates:
-    - start_date: "2021-03-17T00:00:00+08:00"
-      end_date: "2022-04-23T20:14:59+08:00"
-    appear_durations:
-    - start_time: 00h00m00s
-      end_time: 18h59m59s
-    type: 1
-    share_ratio: 50 # percentage
-    profit_ratio: 35 # percentage
-    bonus: 296
-    weight: 0.6
-    infoPageiconURL: https://cdn.17app.co/86542794-b5a5-4def-b3b8-abe51362fa38.png
-    winnerPageiconURL: https://cdn.17app.co/86542794-b5a5-4def-b3b8-abe51362fa38.png
-    hintToken: {key: monster_battle_hint_circus1,fontAttribute: {textColor: "#FFFFFF"}}
-    rule1Token: {key: monster_battle_rule1_circus1,fontAttribute: {textColor: "#FFFFFF"}}
-    rule2Token: {key: monster_battle_rule2_circus1,fontAttribute: {textColor: "#FFFFFF"}}
-    rule3Token: {key: monster_battle_rule3_circus1,fontAttribute: {textColor: "#FFFFFF"}}
-    rule4Token: {key: monster_battle_rule4_circus,fontAttribute: {textColor: "#FFFFFF"}}
-    countdownToken: {key: monster_battle_countdown_circus,fontAttribute: {textColor: "#FFFFFF"}}
-    failureToken: {key: monster_battle_failure_circus,fontAttribute: {textColor: "#FFFFFF"}}
-    successToken: {key: circusmonster_battle_success_coin,fontAttribute: {textColor: "#FFFFFF"}}
-    marqueeToken: {key: monster_battle_marquee_circus}
-    summonGifts: # 招喚怪獸才需要填
-    - giftID: "gift_lightstick_pu"
-      probability: 10000 # n / 10000 * 100%
-    - giftID: "gift_lightstick_g"
-      probability: 10000 # n / 10000 * 100%
-    - giftID: "gift_happycake99"
-      probability: 5000
-    - giftID: "heart_curtain"
-      probability: 10000 # n / 10000 * 100%
+#  - id: monster_circus_monkey #猴子騎單輪車
+#    hit_consume: 20
+#    duration: 60s
+#    stream_alive_threshold: 1m00s
+#    animation: "monkey"
+#    available_dates:
+#    - start_date: "2021-03-17T00:00:00+08:00"
+#      end_date: "2022-04-23T20:14:59+08:00"
+#    appear_durations:
+#    - start_time: 00h00m00s
+#      end_time: 18h59m59s
+#    type: 1
+#    share_ratio: 50 # percentage
+#    profit_ratio: 35 # percentage
+#    bonus: 296
+#    weight: 0.6
+#    infoPageiconURL: https://cdn.17app.co/86542794-b5a5-4def-b3b8-abe51362fa38.png
+#    winnerPageiconURL: https://cdn.17app.co/86542794-b5a5-4def-b3b8-abe51362fa38.png
+#    hintToken: {key: monster_battle_hint_circus1,fontAttribute: {textColor: "#FFFFFF"}}
+#    rule1Token: {key: monster_battle_rule1_circus1,fontAttribute: {textColor: "#FFFFFF"}}
+#    rule2Token: {key: monster_battle_rule2_circus1,fontAttribute: {textColor: "#FFFFFF"}}
+#    rule3Token: {key: monster_battle_rule3_circus1,fontAttribute: {textColor: "#FFFFFF"}}
+#    rule4Token: {key: monster_battle_rule4_circus,fontAttribute: {textColor: "#FFFFFF"}}
+#    countdownToken: {key: monster_battle_countdown_circus,fontAttribute: {textColor: "#FFFFFF"}}
+#    failureToken: {key: monster_battle_failure_circus,fontAttribute: {textColor: "#FFFFFF"}}
+#    successToken: {key: circusmonster_battle_success_coin,fontAttribute: {textColor: "#FFFFFF"}}
+#    marqueeToken: {key: monster_battle_marquee_circus}
+#    summonGifts: # 招喚怪獸才需要填
+#    - giftID: "gift_lightstick_pu"
+#      probability: 10000 # n / 10000 * 100%
+#    - giftID: "gift_lightstick_g"
+#      probability: 10000 # n / 10000 * 100%
+#    - giftID: "gift_happycake99"
+#      probability: 5000
+#    - giftID: "heart_curtain"
+#      probability: 10000 # n / 10000 * 100%
 
 
-  - id: monster_circus_elephant #大象踩球
-    hit_consume: 20
-    duration: 60s
-    stream_alive_threshold: 1m00s
-    animation: "elephant"
-    available_dates:
-    - start_date: "2021-03-10T00:00:00+08:00"
-      end_date: "2021-04-16T23:59:59+08:00"
-    appear_durations:
-    - start_time: 00h00m00s
-      end_time: 23h59m59s
-    type: 1 
-    share_ratio: 50 # percentage
-    profit_ratio: 35 # percentage
-    bonus: 296
-    weight: 0.6
-    infoPageiconURL: https://cdn.17app.co/4f76a87f-13ab-471a-8f8f-c539ec87df46.png
-    winnerPageiconURL: https://cdn.17app.co/4f76a87f-13ab-471a-8f8f-c539ec87df46.png
-    hintToken: {key: monster_battle_hint_circus1,fontAttribute: {textColor: "#FFFFFF"}}
-    rule1Token: {key: monster_battle_rule1_circus1,fontAttribute: {textColor: "#FFFFFF"}}
-    rule2Token: {key: monster_battle_rule2_circus1,fontAttribute: {textColor: "#FFFFFF"}}
-    rule3Token: {key: monster_battle_rule3_circus1,fontAttribute: {textColor: "#FFFFFF"}}
-    rule4Token: {key: monster_battle_rule4_circus,fontAttribute: {textColor: "#FFFFFF"}}
-    countdownToken: {key: monster_battle_countdown_circus,fontAttribute: {textColor: "#FFFFFF"}}
-    failureToken: {key: monster_battle_failure_circus,fontAttribute: {textColor: "#FFFFFF"}}
-    successToken: {key: circusmonster_battle_success_coin,fontAttribute: {textColor: "#FFFFFF"}}
-    marqueeToken: {key: monster_battle_marquee_circus}
-    summonGifts: # 招喚怪獸才需要填
-    - giftID: "2103_tw_circus_ticket_bp"
-      probability: 5000 # n / 10000 * 100%
+#  - id: monster_circus_elephant #大象踩球
+#    hit_consume: 20
+#    duration: 60s
+#    stream_alive_threshold: 1m00s
+#    animation: "elephant"
+#    available_dates:
+#    - start_date: "2021-03-10T00:00:00+08:00"
+#      end_date: "2021-04-16T23:59:59+08:00"
+#    appear_durations:
+#    - start_time: 00h00m00s
+#      end_time: 23h59m59s
+#    type: 1 
+#    share_ratio: 50 # percentage
+#    profit_ratio: 35 # percentage
+#    bonus: 296
+#    weight: 0.6
+#    infoPageiconURL: https://cdn.17app.co/4f76a87f-13ab-471a-8f8f-c539ec87df46.png
+#    winnerPageiconURL: https://cdn.17app.co/4f76a87f-13ab-471a-8f8f-c539ec87df46.png
+#    hintToken: {key: monster_battle_hint_circus1,fontAttribute: {textColor: "#FFFFFF"}}
+#    rule1Token: {key: monster_battle_rule1_circus1,fontAttribute: {textColor: "#FFFFFF"}}
+#    rule2Token: {key: monster_battle_rule2_circus1,fontAttribute: {textColor: "#FFFFFF"}}
+#    rule3Token: {key: monster_battle_rule3_circus1,fontAttribute: {textColor: "#FFFFFF"}}
+#    rule4Token: {key: monster_battle_rule4_circus,fontAttribute: {textColor: "#FFFFFF"}}
+#    countdownToken: {key: monster_battle_countdown_circus,fontAttribute: {textColor: "#FFFFFF"}}
+#    failureToken: {key: monster_battle_failure_circus,fontAttribute: {textColor: "#FFFFFF"}}
+#    successToken: {key: circusmonster_battle_success_coin,fontAttribute: {textColor: "#FFFFFF"}}
+#    marqueeToken: {key: monster_battle_marquee_circus}
+#    summonGifts: # 招喚怪獸才需要填
+#    - giftID: "2103_tw_circus_ticket_bp"
+#      probability: 5000 # n / 10000 * 100%
 
 
 #- id: monster_babyrobot_shit #寶寶機器人挖到便便
@@ -703,36 +703,36 @@ monsters:
 #   successToken: {key: monster_battle_summon_success_zombie,fontAttribute: {textColor: "#FFFFFF"}}
 #   marqueeToken: {key: ：monster_battle_summon_marquee_zombie}
 
-  - id: monster_1
-    hit_consume: 10
-    duration: 30s
-    stream_alive_threshold: 10m00s
-    available_dates:
-    - start_date: "2019-06-11T9:00:00+08:00"
-      end_date: "2022-06-01T00:00:00+08:00"
-    appear_durations:
-    - start_time: 00h00m00s
-      end_time: 2h00m00s
-    - start_time: 12h00m00s
-      end_time: 14h30m00s
-    - start_time: 17h00m00s
-      end_time: 24h00m00s
-    type: 0
-    share_ratio: 50 # percentage
-    profit_ratio: 35 # percentage
-    bonus: 3000
-    weight: 0.4
-    infoPageiconURL: https://assets-17app.akamaized.net/d1d67cab-3f7b-439f-86d8-aed1cf327fdb.png
-    winnerPageiconURL: https://assets-17app.akamaized.net/9b0cf5bc-8289-4af0-b7d4-41869506db6a.png
-    hintToken: {key: monster_battle_hint, fontAttribute: {textColor: "#FFFFFF"}}
-    rule1Token: {key: monster_battle_rule1, fontAttribute: {textColor: "#FFFFFF"}}
-    rule2Token: {key: monster_battle_rule2, fontAttribute: {textColor: "#FFFFFF"}}
-    rule3Token: {key: monster_battle_rule3, fontAttribute: {textColor: "#FFFFFF"}}
-    rule4Token: {key: monster_battle_rule4, fontAttribute: {textColor: "#FFFFFF"}}
-    countdownToken: {key: monster_battle_countdown, fontAttribute: {textColor: "#FFFFFF"}}
-    failureToken: {key: monster_battle_failure, fontAttribute: {textColor: "#FFFFFF"}}
-    successToken: {key: monster_battle_success,fontAttribute: {textColor: "#FFFFFF"}}
-    animation: "yeti"
+#  - id: monster_1
+#    hit_consume: 10
+#    duration: 30s
+#    stream_alive_threshold: 10m00s
+#    available_dates:
+#    - start_date: "2019-06-11T9:00:00+08:00"
+#      end_date: "2022-06-01T00:00:00+08:00"
+#    appear_durations:
+#    - start_time: 00h00m00s
+#      end_time: 2h00m00s
+#    - start_time: 12h00m00s
+#      end_time: 14h30m00s
+#    - start_time: 17h00m00s
+#      end_time: 24h00m00s
+#    type: 0
+#    share_ratio: 50 # percentage
+#    profit_ratio: 35 # percentage
+#    bonus: 3000
+#    weight: 0.4
+#    infoPageiconURL: https://assets-17app.akamaized.net/d1d67cab-3f7b-439f-86d8-aed1cf327fdb.png
+#    winnerPageiconURL: https://assets-17app.akamaized.net/9b0cf5bc-8289-4af0-b7d4-41869506db6a.png
+#    hintToken: {key: monster_battle_hint, fontAttribute: {textColor: "#FFFFFF"}}
+#    rule1Token: {key: monster_battle_rule1, fontAttribute: {textColor: "#FFFFFF"}}
+#    rule2Token: {key: monster_battle_rule2, fontAttribute: {textColor: "#FFFFFF"}}
+#    rule3Token: {key: monster_battle_rule3, fontAttribute: {textColor: "#FFFFFF"}}
+#    rule4Token: {key: monster_battle_rule4, fontAttribute: {textColor: "#FFFFFF"}}
+#    countdownToken: {key: monster_battle_countdown, fontAttribute: {textColor: "#FFFFFF"}}
+#    failureToken: {key: monster_battle_failure, fontAttribute: {textColor: "#FFFFFF"}}
+#    successToken: {key: monster_battle_success,fontAttribute: {textColor: "#FFFFFF"}}
+#    animation: "yeti"
 
 # - id: monster_2
 #   hit_consume: 10
