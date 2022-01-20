@@ -676,8 +676,11 @@
 
 # group A uses static register labels
 # group B uses dynamic register labels
+# Utilize this abtest for APP-30224: Onboarding interest selector
+# group A uses original skin
+# group B uses new interest selector skin
 - testName: dynamicSectionOrder
-  enableABtest: false
+  enableABtest: true
   lastCharGroup:
     "0": "a"
     "1": "a"
