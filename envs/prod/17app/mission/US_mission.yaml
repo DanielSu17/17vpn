@@ -40,6 +40,35 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
+- ID: de6a7a3b-0d79-4078-b8bd-9a6f78d70865
+  type: 8
+  category: 0
+  lifeCycle: 1
+  targetAudience: 2
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2202_us_welcomeoffer
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: us_february_welcome_offer
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_IAP_reward_jp_npu_desc
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2022-02-01 18:00:00 (GMT-0800)
+    endTime: 2022-02-28 21:00:00 (GMT-0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
 - ID: 2ceb4a8b-78a6-42d6-8505-d44f408586ad
   type: 16
   category: 0
@@ -69,35 +98,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-- ID: de6a7a3b-0d79-4078-b8bd-9a6f78d70865
-  type: 8
-  category: 0
-  lifeCycle: 0
-  targetAudience: 2
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2202_us_welcomeoffer
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: us_february_welcome_offer
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_IAP_reward_jp_npu_desc
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-02-01 18:00:00 (GMT-0800)
-    endTime: 2022-02-28 21:00:00 (GMT-0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
 - ID: 50caa9d7-49d4-4c24-9ebb-231107481cce
   type: 9
   category: 0
