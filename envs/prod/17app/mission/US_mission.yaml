@@ -69,6 +69,35 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
+- ID: de6a7a3b-0d79-4078-b8bd-9a6f78d70865
+  type: 8
+  category: 0
+  lifeCycle: 0
+  targetAudience: 2
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2202_us_welcomeoffer
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: us_february_welcome_offer
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_IAP_reward_jp_npu_desc
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2022-02-01 18:00:00 (GMT-0800)
+    endTime: 2022-02-28 21:00:00 (GMT-0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
 - ID: 50caa9d7-49d4-4c24-9ebb-231107481cce
   type: 9
   category: 0
@@ -230,105 +259,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: true
-- ID: e697a64f-5aa4-4561-8848-6c498089c0cd
-  type: 10
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2201_us_pinkbubbles
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_first_time_IAP_point_tw_event_title_event
-  i18nTitleParams:
-  - value: "330"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
-  i18nDescriptionParams: []
-  goalValue: 330
-  enableTimeRange:
-  - startTime: 2022-01-01 00:00:00 (GMT-0800)
-    endTime: 2022-01-15 23:59:59 (GMT-0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 3c8195f9-04e2-4e66-9a5d-4dfac7b45378
-  type: 10
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2201_us_pinkbubbles_m
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_first_time_IAP_point_tw_event_title_event
-  i18nTitleParams:
-  - value: "3540"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
-  i18nDescriptionParams: []
-  goalValue: 3540
-  enableTimeRange:
-  - startTime: 2022-01-01 00:00:00 (GMT-0800)
-    endTime: 2022-01-15 23:59:59 (GMT-0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 39200226-875e-4773-a7b3-a0f698472646
-  type: 10
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2201_us_pinkbubbles_l
-    amount: 7
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_first_time_IAP_point_tw_event_title_event
-  i18nTitleParams:
-  - value: "8550"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
-  i18nDescriptionParams: []
-  goalValue: 8550
-  enableTimeRange:
-  - startTime: 2022-01-01 00:00:00 (GMT-0800)
-    endTime: 2022-01-15 23:59:59 (GMT-0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
 - ID: 3e77eac7-7ace-41f0-b8d7-e66097c3db47
   type: 3
   category: 0
@@ -389,35 +319,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: true
-- ID: e45d75bd-1e6d-4e33-a237-222fbf06ce59
-  type: 24
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 10
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2201_us_fair
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: us_mission_daily_login
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: us_mission_daily_login_reward_happynewyear
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-01-01 00:00:00 (GMT-0800)
-    endTime: 2022-01-15 23:59:59 (GMT-0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
 - ID: 110cb2be-eb36-43c0-a054-3442bb103ade
   type: 24
   category: 0
@@ -441,39 +342,6 @@ missions:
   enableTimeRange:
   - startTime: 2022-01-16 00:00:00 (GMT-0800)
     endTime: 2022-01-31 23:59:59 (GMT-0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 72886738-30f7-4543-b9dc-2079fc91f375
-  type: 5
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 10
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2201_us_park
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_leave_comment_reward_title2
-  i18nTitleParams:
-  - value: "10"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_leave_comment_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 10
-  enableTimeRange:
-  - startTime: 2022-01-01 00:00:00 (GMT-0800)
-    endTime: 2022-01-15 23:59:59 (GMT-0800)
   refIDs: []
   platforms:
   - android
@@ -513,39 +381,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: true
-- ID: 7790e636-a497-4cb7-a7f6-5102e0faf72d
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 10
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2201_us_bedtime
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_send_gifts
-  i18nTitleParams:
-  - value: "5"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_us_5times
-  i18nDescriptionParams: []
-  goalValue: 5
-  enableTimeRange:
-  - startTime: 2022-01-01 00:00:00 (GMT-0800)
-    endTime: 2022-01-15 23:59:59 (GMT-0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
 - ID: 1567e6b6-e801-4b7f-9b29-eccc7ccc3ed8
   type: 3
   category: 0
@@ -573,39 +408,6 @@ missions:
   enableTimeRange:
   - startTime: 2022-01-16 00:00:00 (GMT-0800)
     endTime: 2022-01-31 23:59:59 (GMT-0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 305e02da-8cca-4c49-b71d-7b1307b2acf5
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 10
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2201_us_arcade
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_send_gifts
-  i18nTitleParams:
-  - value: "7"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_us_7times
-  i18nDescriptionParams: []
-  goalValue: 7
-  enableTimeRange:
-  - startTime: 2022-01-01 00:00:00 (GMT-0800)
-    endTime: 2022-01-15 23:59:59 (GMT-0800)
   refIDs: []
   platforms:
   - android
@@ -645,39 +447,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: true
-- ID: 34133cc8-de80-4baf-9937-e9e205a8e5bc
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 10
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2201_us_fireworks
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "5"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 300
-  enableTimeRange:
-  - startTime: 2022-01-01 00:00:00 (GMT-0800)
-    endTime: 2022-01-15 23:59:59 (GMT-0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
 - ID: f2b163a0-6d5e-4a04-91e0-bb93b86e131d
   type: 9
   category: 0
@@ -706,98 +475,6 @@ missions:
   - startTime: 2022-01-16 00:00:00 (GMT-0800)
     endTime: 2022-01-31 23:59:59 (GMT-0800)
   refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 09467871-4e99-4ad8-b501-58b488c9b25f
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 10
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2201_us_jannewbies_2
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: us_league_baggage_mission_ WatchStreamfor30 mins
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: us_baggage_mission_newbie
-  i18nDescriptionParams: []
-  goalValue: 1800
-  enableTimeRange:
-  - startTime: 2022-01-01 18:00:00 (GMT-0800)
-    endTime: 2022-01-15 21:00:00 (GMT-0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 6f173d30-e8f1-43d0-8976-2a2f7405e786
-  type: 5
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 10
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2201_us_jannewbies_2
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_leave_comment_reward_title2
-  i18nTitleParams:
-  - value: "10"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: us_baggage_mission_newbie
-  i18nDescriptionParams: []
-  goalValue: 10
-  enableTimeRange:
-  - startTime: 2022-01-01 18:00:00 (GMT-0800)
-    endTime: 2022-01-15 21:00:00 (GMT-0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 319c5c2b-6ced-4b69-88e2-e77fa4f6393b
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 10
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2201_us_jannewbies_2
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: us_newbie_baggage_mission
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: us_baggage_mission_newbie
-  i18nDescriptionParams: []
-  goalValue: 2
-  enableTimeRange:
-  - startTime: 2022-01-01 18:00:00 (GMT-0800)
-    endTime: 2022-01-15 21:00:00 (GMT-0800)
-  refIDs:
-  - 2201_us_jannewbies_1
   platforms:
   - android
   - ios
