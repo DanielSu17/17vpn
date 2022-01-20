@@ -30,7 +30,14 @@ sections:
     enable: false
     style: 2
     more: false
-
+  - id: Label # Recommended
+    labelID: Recommended
+    name:
+      key: us_streamer_label_event_Recommended
+    enable: true
+    dedup: false
+    minGrids: 3
+    style: 3
   - id: NewestStreamer # D0 new streamer
     name:
       key: tab_hot_d0streamer
@@ -49,14 +56,7 @@ sections:
     minGrids: 3
     style: 3
     category: normal
-  - id: Label # Recommended
-    labelID: Recommended
-    name:
-      key: Recommended
-    enable: true
-    dedup: false
-    minGrids: 3
-    style: 3
+
   - id: Label # Gaming
     labelID: Gaming
     name:
