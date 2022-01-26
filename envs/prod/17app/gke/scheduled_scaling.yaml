@@ -19,108 +19,6 @@
   - name: example-target-hpa
     minReplicas: 20
 
-# 1/13【important!!】JP,西川貴教のニシナナLIVE,（UV：8000）
-- startTime: "2022-01-13 18:00:00 (GMT+0800)"
-  endTime: "2022-01-13 21:30:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-# 1/18【important!!】JP,案件名:AKB48 レギュラー番組,（UV：5000-7000）
-- startTime: "2022-01-18 18:15:00 (GMT+0800)"
-  endTime: "2022-01-18 21:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-# 1/19【BD】TuneCore オープニング配信
-- startTime: "2022-01-19 18:30:00 (GMT+0800)"
-  endTime: "2022-01-19 21:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-# 1/20【important!!】JP,西川貴教のニシナナLIVE,（UV：8000）
-- startTime: "2022-01-20 20:30:00 (GMT+0800)"
-  endTime: "2022-01-20 23:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-# 1/24 【important!!】JP, 17LIVE_REALEVENT、【EV】BIG EVENT
-- startTime: "2022-01-24 15:30:00 (GMT+0800)"
-  endTime: "2022-01-24 21:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-# 1/25【important!!】JP,案件名:AKB48 レギュラー番組,（UV：5000-7000）
-- startTime: "2022-01-25 18:15:00 (GMT+0800)"
-  endTime: "2022-01-25 21:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
 # 1/27【important!!】JP,西川貴教のニシナナLIVE,（UV：8000）
 - startTime: "2022-01-27 18:00:00 (GMT+0800)"
   endTime: "2022-01-27 21:30:00 (GMT+0800)"
@@ -155,7 +53,7 @@
   - name: k8sprod-revprox-jp-main
     minReplicas: 36
 
-# 1/30 【BD】Game配信
+# 1/30 【BD】Game配信 && 【EV】BIG EVENT
 - startTime: "2022-01-30 16:30:00 (GMT+0800)"
   endTime: "2022-01-30 22:05:00 (GMT+0800)"
   HPAConfigs:
@@ -172,9 +70,94 @@
   - name: k8sprod-revprox-jp-main
     minReplicas: 36
 
-# 1/30 【EV】BIG EVENT
-- startTime: "2022-01-30 17:30:00 (GMT+0800)"
-  endTime: "2022-01-30 21:05:00 (GMT+0800)"
+# 2/1 【important!!】JP,案件名:AKB48 レギュラー番組,（UV：5000-7000）
+- startTime: "2022-02-01 18:15:00 (GMT+0800)"
+  endTime: "2022-02-01 21:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+# 2/3 西川貴教ニシナナLIVE
+- startTime: "2022-02-03 18:30:00 (GMT+0800)"
+  endTime: "2022-02-03 21:30:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+# 2/5 【EV】Music Event
+- startTime: "2022-02-05 15:30:00 (GMT+0800)"
+  endTime: "2022-02-05 20:05:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+# 2/6 【MKT】2/6五堅情派對直播
+- startTime: "2022-02-06 21:30:00 (GMT+0800)"
+  endTime: "2022-02-07 00:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-tw-main
+    minReplicas: 36
+
+# 2/7 【MKT】マンウィズ#3
+- startTime: "2022-02-07 19:30:00 (GMT+0800)"
+  endTime: "2022-02-07 22:05:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+# 2/10 【important!!】JP,西川貴教のニシナナLIVE,（UV：8000）
+- startTime: "2022-02-10 18:30:00 (GMT+0800)"
+  endTime: "2022-02-10 21:30:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 70
