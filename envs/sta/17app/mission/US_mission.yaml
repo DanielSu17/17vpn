@@ -40,30 +40,93 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
-- ID: fe764e01-c664-4c39-a513-2cae2ef08bda
-  type: 8
+- ID: 615eb230-bddb-4a1c-b6e5-1777210cc5e8
+  type: 9
   category: 0
   lifeCycle: 0
   targetAudience: 0
   levelRange:
-    min: 1
+    min: 10
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2202_us_welcomeoffer
-    amount: 1
+    rewardID: 211217_newbies_b_bp
+    amount: 5
     expireTimeSecs: 86400
-  i18nTitle: us_february_welcome_offer
+  i18nTitle: us_league_baggage_mission_ WatchStreamfor30 mins
   i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: baggage_mission_IAP_reward_jp_npu_desc
+  i18nDescription: us_baggage_mission_newbie
   i18nDescriptionParams: []
-  goalValue: 1
+  goalValue: 1800
   enableTimeRange:
-  - startTime: 2022-01-20 10:00:00 (GMT-0800)
-    endTime: 2022-01-22 10:00:00 (GMT-0800)
+  - startTime: 2022-01-26 11:00:00 (GMT-0800)
+    endTime: 2022-01-31 11:00:00 (GMT-0800)
   refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: a13235a7-2f17-424a-8828-2c8977d1b1e5
+  type: 5
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 10
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 211217_newbies_b_bp
+    amount: 5
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_leave_comment_reward_title2
+  i18nTitleParams:
+  - value: "10"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: us_baggage_mission_newbie
+  i18nDescriptionParams: []
+  goalValue: 10
+  enableTimeRange:
+  - startTime: 2022-01-26 11:00:00 (GMT-0800)
+    endTime: 2022-01-31 11:00:00 (GMT-0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: cb28bfa4-adaf-4f92-9fdf-389f6aec64ed
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 10
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 211217_newbies_b_bp
+    amount: 5
+    expireTimeSecs: 86400
+  i18nTitle: us_newbie_baggage_mission
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: us_baggage_mission_newbie
+  i18nDescriptionParams: []
+  goalValue: 2
+  enableTimeRange:
+  - startTime: 2022-01-26 11:00:00 (GMT-0800)
+    endTime: 2022-01-31 11:00:00 (GMT-0800)
+  refIDs:
+  - 2103_us_newbies_1
   platforms:
   - android
   - ios
