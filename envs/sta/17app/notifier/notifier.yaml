@@ -1,3 +1,6 @@
+# To prevent sending PN to real users in non-production environment, only whitelist users can be send PN
+whitelist:
+
 fcm:
   userWhitelist:
     - 760c0399-d394-4188-81cd-038ade79fd4f # thpk01
@@ -20,8 +23,8 @@ fcm:
 
 oneSignal:
   # when one signal faills in general, use fcm as backup
-  enableBackup: false
+  enableBackup: true
   # when one signal fail to update new players, use fcm as backup (case not included in enableBackup)
   enableBackupForFailUpdate: false
   # simluate one signal fail to update new players. option for qa testing, not allowed in prod
-  forceFailUpdate: true
+  forceFailUpdate: false
