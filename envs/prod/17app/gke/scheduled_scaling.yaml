@@ -70,23 +70,6 @@
   - name: k8sprod-revprox-jp-main
     minReplicas: 36
 
-# 2/1 【important!!】JP,案件名:AKB48 レギュラー番組,（UV：5000-7000）
-- startTime: "2022-02-01 18:15:00 (GMT+0800)"
-  endTime: "2022-02-01 21:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
 # 2/3 西川貴教ニシナナLIVE
 - startTime: "2022-02-03 18:30:00 (GMT+0800)"
   endTime: "2022-02-03 21:30:00 (GMT+0800)"
