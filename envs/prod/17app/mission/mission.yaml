@@ -131,39 +131,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: true
-- ID: 5331290e-24e8-497b-906a-a21a50311a50
-  type: 10
-  category: 0
-  lifeCycle: 1
-  targetAudience: 0
-  levelRange:
-    min: 3
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 1909_upgrade_boat_bag
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_weekday_IAP_point_tw_event_title_event
-  i18nTitleParams:
-  - value: "35980"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
-  i18nDescriptionParams: []
-  goalValue: 35980
-  enableTimeRange:
-  - startTime: 2022-01-21 00:00:00 (GMT+0800)
-    endTime: 2022-01-27 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
 - ID: f55a4a0e-7bfd-45c2-97fc-256d476bb9ab
   type: 10
   category: 0
@@ -225,6 +192,39 @@ missions:
   - android
   - ios
   requirePhoneBinding: false
+  withReminder: false
+- ID: 75cca381-9652-4b36-874d-9a369fbee48c
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 21
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2202_tw_hikari_a_bp
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "5"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 300
+  enableTimeRange:
+  - startTime: 2022-02-04 18:00:00 (GMT+0800)
+    endTime: 2022-02-28 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
   withReminder: false
 - ID: 272e32f1-4e58-4780-93e2-ee5f444cc2c9
   type: 5
@@ -325,96 +325,6 @@ missions:
   - ios
   requirePhoneBinding: true
   withReminder: false
-- ID: 972603e3-9752-4df2-a971-aa92c14cf822
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: twvipbaby_tiger02
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: vipbaby_1
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: vipbaby_01
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-01-24 18:00:00 (GMT+0800)
-    endTime: 2022-01-27 23:59:00 (GMT+0800)
-  refIDs:
-  - twvipbaby_tiger04
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 2ae7bf67-3765-485b-a5b1-e57f051d259c
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: twvipbaby_tiger02
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: vipbaby_3
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: vipbaby_03
-  i18nDescriptionParams: []
-  goalValue: 3
-  enableTimeRange:
-  - startTime: 2022-01-24 18:00:00 (GMT+0800)
-    endTime: 2022-01-27 23:59:00 (GMT+0800)
-  refIDs:
-  - twvipbaby_tiger04
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 71dbefb8-42c5-4667-9f25-f7a7590ce5b3
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: twvipbaby_tiger02
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: vipbaby_5
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: vipbaby_05
-  i18nDescriptionParams: []
-  goalValue: 5
-  enableTimeRange:
-  - startTime: 2022-01-24 18:00:00 (GMT+0800)
-    endTime: 2022-01-27 23:59:00 (GMT+0800)
-  refIDs:
-  - twvipbaby_tiger04
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
 - ID: 282e7589-99ec-411d-8241-fd07d025b9ce
   type: 10
   category: 0
