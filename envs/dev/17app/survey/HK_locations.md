@@ -1,5 +1,5 @@
 # HK Survey Locations
 This the In-App Survey "locations" config for the HK region.
 
-envs/dev/17app/survey/HK_locations.yaml
+Visit https://github.com/17media/configs/tree/master/envs/dev/17app/survey to learn more.
 
