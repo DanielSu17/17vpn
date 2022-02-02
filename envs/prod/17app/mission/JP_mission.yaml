@@ -40,6 +40,35 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
+- ID: ef74d63d-48ed-4b33-b73d-867a8b2ebb92
+  type: 24
+  category: 0
+  lifeCycle: 2
+  targetAudience: 0
+  levelRange:
+    min: 3
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2202_global_gem_bag_2
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: po_mission_title_9
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: po_mission_desc_9
+  i18nDescriptionParams: []
+  goalValue: 2
+  enableTimeRange:
+  - startTime: 2022-02-02 00:00:00 (GMT+0900)
+    endTime: 2022-02-15 23:59:59 (GMT+0900)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
 - ID: 6828a76a-5757-4a0d-a794-33e197be3196
   type: 10
   category: 0
@@ -73,1437 +102,743 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-
-
-- ID: 55ba216b-ba2a-4efb-88c8-2b34096067f7
+- ID: d8dc1879-5d5a-44fe-a063-0189c326516b
   type: 10
   category: 0
-  lifeCycle: 1
-  targetAudience: 2
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2201_jp_pdt_02
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_IAP_reward_jp_daily_charge_name
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_IAP_reward_jp_charge_desc_02
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-01-17 12:00:00 (GMT+0900)
-    endTime: 2022-01-31 23:59:59 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-
-- ID: b52eaca1-898d-440b-9570-2a6a9744cf60
-  type: 10
-  category: 0
-  lifeCycle: 1
+  lifeCycle: 0
   targetAudience: 0
   levelRange:
     min: 1
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2201_jp_pdt_01
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_IAP_reward_jp_daily_charge_name
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_IAP_reward_jp_charge_desc
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-01-07 12:00:00 (GMT+0900)
-    endTime: 2022-01-16 23:59:59 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-
-- ID: 20065556-a64f-4a20-a29e-26e76f1a06fb
-  type: 10
-  category: 0
-  lifeCycle: 1
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2112_jp_charge_hukubukuro
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_IAP_reward_jp_daily_charge_name
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_IAP_reward_jp_charge_desc
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2021-12-29 12:00:00 (GMT+0900)
-    endTime: 2022-01-05 23:59:59 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-
-- ID: 9e2c93db-38a7-4e9f-8f53-48173116095f
-  type: 10
-  category: 0
-  lifeCycle: 1
-  targetAudience: 2
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2112_jp_charge_butou
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_IAP_reward_jp_daily_charge_name
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_IAP_reward_jp_charge_desc
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2021-12-22 12:00:00 (GMT+0900)
-    endTime: 2021-12-26 23:59:59 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 33b412cb-14b4-4707-b8c9-aa3217b15413
-  type: 24
-  category: 0
-  lifeCycle: 2
-  targetAudience: 0
-  levelRange:
-    min: 2
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2112_jp_christmas_bag
+    rewardID: 2202_global_gem_bag_1
     amount: 2
     expireTimeSecs: 86400
-  i18nTitle: jp_mission_09
+  i18nTitle: po_mission_title_1
   i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: jp_mission_10
-  i18nDescriptionParams: []
-  goalValue: 2
-  enableTimeRange:
-  - startTime: 2021-12-13 18:00:00 (GMT+0900)
-    endTime: 2021-12-24 00:00:00 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 03455c97-2f60-40b5-96f1-3e313b10d5eb
-  type: 10
-  category: 0
-  lifeCycle: 1
-  targetAudience: 2
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2104_jp_charge_02
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_IAP_reward_jp_daily_charge_name
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_IAP_reward_jp_charge_desc
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2021-12-08 12:00:00 (GMT+0900)
-    endTime: 2021-12-19 23:59:59 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: a228382b-762d-482e-9e59-627365e27be5 #gameliver0
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2103_jp_gameliver
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_view_stream_reward_gameliver
-  i18nTitleParams:
-  - value: "10"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_view_stream_reward_desc_gameliver
-  i18nDescriptionParams: []
-  goalValue: 600
-  enableTimeRange:
-  - startTime: 2022-01-07 15:00:00 (GMT+0900)
-    endTime: 2022-01-13 23:59:59 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: e6e3568c-9dd6-4101-aa35-3796c9e27289
-  type: 9
-  category: 0
-  lifeCycle: 1
-  targetAudience: 0
-  levelRange:
-    min: 10
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2111_jp_xmas2021xxx_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_jp_artist17
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: jp_xmas2021_watchandgetgift
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 10
-  enableTimeRange:
-  - startTime: 2021-12-17 18:05:00 (GMT+0900)
-    endTime: 2021-12-17 18:19:59 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: a161b7a1-0b08-4976-95d5-b49c0f58f25b
-  type: 9
-  category: 0
-  lifeCycle: 1
-  targetAudience: 0
-  levelRange:
-    min: 10
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2112_jp_wrg_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_jp_artist17
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: 2112_jp_winterroseg
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 10
-  enableTimeRange:
-  - startTime: 2021-12-27 19:00:00 (GMT+0900)
-    endTime: 2021-12-27 19:14:59 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 9f975ff5-f3df-40c1-8e9e-cce445f6c487
-  type: 24
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 2
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2112_jp_christmas_bag
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: jp_mission_01
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: jp_mission_02
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2021-12-13 18:00:00 (GMT+0900)
-    endTime: 2021-12-24 00:00:00 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: cbd183e3-e205-4650-90a0-4656771dc5ff
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 2
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2112_jp_christmas_bag
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: jp_mission_03
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: jp_mission_04
-  i18nDescriptionParams: []
-  goalValue: 300
-  enableTimeRange:
-  - startTime: 2021-12-13 18:00:00 (GMT+0900)
-    endTime: 2021-12-24 00:00:00 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: e7b23f11-a6a2-4efe-aac2-6f005bb2d2cf
-  type: 5
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 2
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2112_jp_christmas_bag
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: jp_mission_05
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: jp_mission_06
-  i18nDescriptionParams: []
-  goalValue: 2
-  enableTimeRange:
-  - startTime: 2021-12-13 18:00:00 (GMT+0900)
-    endTime: 2021-12-24 00:00:00 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: e11b65e8-1c97-4430-9e01-51c169bdb349
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 2
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2112_jp_christmas_bag
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: jp_mission_07
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: jp_mission_08
-  i18nDescriptionParams: []
-  goalValue: 3
-  enableTimeRange:
-  - startTime: 2021-12-13 18:00:00 (GMT+0900)
-    endTime: 2021-12-24 00:00:00 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: aa545dfb-0b5b-4c76-8bcb-a5cd261e7e43
-  type: 10
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 2
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2112_jp_christmas_bag
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: jp_mission_11
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: jp_mission_12
+  i18nDescription: po_mission_desc_1
   i18nDescriptionParams: []
   goalValue: 330
   enableTimeRange:
-  - startTime: 2021-12-13 18:00:00 (GMT+0900)
-    endTime: 2021-12-24 00:00:00 (GMT+0900)
+  - startTime: 2022-02-02 00:00:00 (GMT+0900)
+    endTime: 2022-02-15 23:59:59 (GMT+0900)
   refIDs: []
   platforms:
   - android
   - ios
   requirePhoneBinding: false
   withReminder: true
-- ID: 6b01500b-ce3e-4f11-9f31-944a2860ac42
+- ID: d21e50d0-543f-46c4-af60-f8d1136f6466
+  type: 10
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 3
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2202_global_gem_bag_high_2
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: po_mission_title_2
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: po_mission_desc_2
+  i18nDescriptionParams: []
+  goalValue: 1720
+  enableTimeRange:
+  - startTime: 2022-02-02 00:00:00 (GMT+0900)
+    endTime: 2022-02-15 23:59:59 (GMT+0900)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 9d1033f4-c61d-4d6b-af8b-d1a588c4099d
+  type: 24
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 3
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2202_global_gem_sapphire_1
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: po_mission_title_3
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: po_mission_desc_3
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2022-02-02 00:00:00 (GMT+0900)
+    endTime: 2022-02-15 23:59:59 (GMT+0900)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 909767a6-6610-44fe-8218-14131877937b
   type: 5
   category: 0
   lifeCycle: 0
   targetAudience: 0
   levelRange:
-    min: 1
+    min: 3
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2112_jp_creator
+    rewardID: 2202_global_gem_ruby_1
     amount: 1
     expireTimeSecs: 86400
-  i18nTitle: baggage_mission_leave_comment_reward_creatorcollection
-  i18nTitleParams:
-  - value: "3"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
+  i18nTitle: po_mission_title_4
+  i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: baggage_mission_opt_leave_comment_reward_desc_creatorcollection
+  i18nDescription: po_mission_desc_4
   i18nDescriptionParams: []
   goalValue: 3
   enableTimeRange:
-  - startTime: 2021-12-13 12:00:00 (GMT+0900)
-    endTime: 2022-01-10 23:59:59 (GMT+0900)
+  - startTime: 2022-02-02 00:00:00 (GMT+0900)
+    endTime: 2022-02-15 23:59:59 (GMT+0900)
   refIDs: []
   platforms:
   - android
   - ios
   requirePhoneBinding: false
-  withReminder: false
-#- ID: eb78aedf-22ec-41ec-bea2-07a59193c6e9
-#  type: 9
-#  category: 0
-#  lifeCycle: 0
-#  targetAudience: 0
-#  levelRange:
-#    min: 0
-#    max: 0
-#  reward:
-#    rewardType: 1
-#    rewardID: 1811_jp_dailymission2_1
-#    amount: 1
-#    expireTimeSecs: 86400
-#  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_jp_title
-#  i18nTitleParams:
-#  - value: "5"
-#    needMap: false
-#    mapOption: 0
-#    fontAttribute: null
-#  i18nContent: baggage_mission_watch_streams_time_in_total_reward_jp_desc
-#  i18nContentParams:
-#  - value: gift_1811_jp_dailymission2_1
-#    needMap: true
-#    mapOption: 1
-#    fontAttribute: null
-#  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_jp_desc
-#  i18nDescriptionParams: []
-#  goalValue: 300
-#  enableTimeRange:
-#  - startTime: 2021-04-26 00:00:00 (GMT+0900)
-#    endTime: 2030-12-31 23:59:59 (GMT+0900)
-#  refIDs: []
-#  platforms:
-#  - android
-#  - ios
-#  requirePhoneBinding: false
-#  withReminder: false
-#- ID: abdf5e44-2b7a-4b18-86a6-4e3cc8575b7d
-#  type: 9
-#  category: 0
-#  lifeCycle: 0
-#  targetAudience: 0
-#  levelRange:
-#    min: 0
-#    max: 0
-#  reward:
-#    rewardType: 1
-#    rewardID: 2019_jp_share_3streamers
-#    amount: 10
-#    expireTimeSecs: 86400
-#  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_jp_title
-#  i18nTitleParams:
-#  - value: "30"
-#    needMap: false
-#    mapOption: 0
-#    fontAttribute: null
-#  i18nContent: ""
-#  i18nContentParams:
-#  - value: gift_2019_jp_share_3streamers
-#    needMap: true
-#    mapOption: 1
-#    fontAttribute: null
-#  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_content_desc
-#  i18nDescriptionParams: []
-#  goalValue: 1800
-#  enableTimeRange:
-#  - startTime: 2021-04-26 00:00:00 (GMT+0900)
-#    endTime: 2030-12-31 23:59:59 (GMT+0900)
-#  refIDs: []
-#  platforms:
-#  - android
-#  - ios
-#  requirePhoneBinding: false
-#  withReminder: false
-#- ID: b028c6eb-a0ac-4636-9a8c-9bb4cad1815a
-#  type: 9
-#  category: 0
-#  lifeCycle: 0
-#  targetAudience: 0
-#  levelRange:
-#    min: 0
-#    max: 0
-#  reward:
-#    rewardType: 1
-#    rewardID: 2019_jp_share_twitter
-#    amount: 1
-#    expireTimeSecs: 86400
-#  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_jp_title
-#  i18nTitleParams:
-#  - value: "1"
-#    needMap: false
-#    mapOption: 0
-#    fontAttribute: null
-#  i18nContent: ""
-#  i18nContentParams:
-#  - value: gift_2019_jp_share_twitter
-#    needMap: true
-#    mapOption: 1
-#    fontAttribute: null
-#  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_content_desc
-#  i18nDescriptionParams: []
-#  goalValue: 60
-#  enableTimeRange:
-#  - startTime: 2021-04-26 00:00:00 (GMT+0900)
-#    endTime: 2030-12-31 23:59:59 (GMT+0900)
-#  refIDs: []
-#  platforms:
-#  - android
-#  - ios
-#  requirePhoneBinding: false
-#  withReminder: false
-- ID: 7fcb8151-a124-4d97-9eb0-2b4705333a2c
+  withReminder: true
+- ID: fe8a91e2-937e-48a6-a8c7-7e1369799439
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 3
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2202_global_gem_amber_1
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: po_mission_title_5
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: po_mission_desc_5
+  i18nDescriptionParams: []
+  goalValue: 300
+  enableTimeRange:
+  - startTime: 2022-02-02 00:00:00 (GMT+0900)
+    endTime: 2022-02-15 23:59:59 (GMT+0900)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 0c0618da-69a8-48d4-a452-7a8dc4ba25aa
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 3
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2202_global_gem_ruby_2
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: po_mission_title_6
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: po_mission_desc_6
+  i18nDescriptionParams: []
+  goalValue: 600
+  enableTimeRange:
+  - startTime: 2022-02-02 00:00:00 (GMT+0900)
+    endTime: 2022-02-15 23:59:59 (GMT+0900)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 0fc0d35f-e370-467c-93ad-52014feb3cca
   type: 3
   category: 0
   lifeCycle: 0
   targetAudience: 0
   levelRange:
-    min: 10
+    min: 3
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2111_jp_xmas2021xxx_bp_bag
+    rewardID: 2202_global_gem_amber_2
     amount: 1
     expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_jp_xmas1
-  i18nTitleParams:
-  - value: "2"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2111_jp_xmas2021xxx_l
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
+  i18nTitle: po_mission_title_7
+  i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: jp_xmas2021_getspecialgift
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
+  i18nDescription: po_mission_desc_7
+  i18nDescriptionParams: []
+  goalValue: 5
+  enableTimeRange:
+  - startTime: 2022-02-02 00:00:00 (GMT+0900)
+    endTime: 2022-02-15 23:59:59 (GMT+0900)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: e35709d6-1577-4f47-bc13-d917e5a1f528
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 3
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2202_global_gem_sapphire_2
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: po_mission_title_8
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: po_mission_desc_8
+  i18nDescriptionParams: []
+  goalValue: 7
+  enableTimeRange:
+  - startTime: 2022-02-02 00:00:00 (GMT+0900)
+    endTime: 2022-02-15 23:59:59 (GMT+0900)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 9f6a7219-3838-4903-9f7a-e08827a95f12
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 5
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2202_global_gem_emerald_1
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: po_mission_title_10
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: po_mission_desc_10
+  i18nDescriptionParams: []
   goalValue: 2
   enableTimeRange:
-  - startTime: 2021-12-11 00:00:00 (GMT+0900)
-    endTime: 2021-12-16 23:59:59 (GMT+0900)
+  - startTime: 2022-02-02 00:00:00 (GMT+0900)
+    endTime: 2022-02-15 23:59:59 (GMT+0900)
   refIDs:
-  - 2111_jp_xmas2021xxx_l
+  - 2105_performance_bubble
   platforms:
   - android
   - ios
   requirePhoneBinding: false
-  withReminder: false
-- ID: 142c82c3-be4d-4879-bc7e-01fddf906e06
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 7
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2112_jp_organic2_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: watch_for_170_seconds
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: jp_chotoreal_22
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 170
-  enableTimeRange:
-  - startTime: 2021-12-17 15:00:00 (GMT+0900)
-    endTime: 2021-12-31 23:59:59 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 776647de-6543-4f7e-80aa-11cf1bbabb24
-  type: 8
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2112_jp_newlivd_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_first_time_IAP_reward_jp_event_title
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_reward_jp_event_des
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2021-12-01 15:00:00 (GMT+0900)
-    endTime: 2021-12-16 23:59:59 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 81afd346-28c5-41a2-9a8c-7ae44c83cba1
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 17
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2112_jp_breakwall_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_jp_artist17
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_kabe_watching_reward_jp_desc
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 10
-  enableTimeRange:
-  - startTime: 2021-12-01 15:00:00 (GMT+0900)
-    endTime: 2021-12-15 23:59:59 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 2a1b04ca-fc68-4b14-bd45-ebb95d0813cf
+  withReminder: true
+- ID: 1254f960-8a17-4e61-a35c-b59f93428c98
   type: 3
   category: 0
   lifeCycle: 0
   targetAudience: 0
   levelRange:
-    min: 10
+    min: 5
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2112_jp_beautybeast_bp
-    amount: 1
+    rewardID: 2202_global_gem_emerald_2
+    amount: 2
     expireTimeSecs: 86400
-  i18nTitle: 2111_jp_beautybeast_title2
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2112_jp_beautybeast_b_bag_s
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
+  i18nTitle: po_mission_title_11
+  i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: 2111_jp_beautybeast_desc
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 1
+  i18nDescription: po_mission_desc_11
+  i18nDescriptionParams: []
+  goalValue: 3
   enableTimeRange:
-  - startTime: 2021-12-10 00:00:00 (GMT+0900)
-    endTime: 2021-12-16 23:59:59 (GMT+0900)
+  - startTime: 2022-02-02 00:00:00 (GMT+0900)
+    endTime: 2022-02-15 23:59:59 (GMT+0900)
   refIDs:
-  - 2112_jp_beautybeast_b_bag_s
+  - 2202_jp_magic
   platforms:
   - android
   - ios
   requirePhoneBinding: false
-  withReminder: false
-- ID: 0df188bf-16ba-458c-bd51-57f0f229bc8a
+  withReminder: true
+- ID: f8f4cebd-bec5-4f58-aed0-4cd2c7fcd6c2
   type: 3
   category: 0
   lifeCycle: 0
   targetAudience: 0
   levelRange:
-    min: 10
+    min: 5
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2112_jp_beautybeast_bp
-    amount: 1
+    rewardID: 2202_global_gem_amethyst_1
+    amount: 2
     expireTimeSecs: 86400
-  i18nTitle: 2111_jp_beautybeast_title3
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2112_jp_beautybeast_c_bag_s
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
+  i18nTitle: po_mission_title_12
+  i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: 2111_jp_beautybeast_desc
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
+  i18nDescription: po_mission_desc_12
+  i18nDescriptionParams: []
   goalValue: 1
   enableTimeRange:
-  - startTime: 2021-12-17 00:00:00 (GMT+0900)
-    endTime: 2021-12-26 23:59:59 (GMT+0900)
+  - startTime: 2022-02-02 00:00:00 (GMT+0900)
+    endTime: 2022-02-15 23:59:59 (GMT+0900)
   refIDs:
-  - 2112_jp_beautybeast_c_bag_s
+  - 2021_whitedeer
+  - 2021_whitedeer_lv1
+  - 2021_whitedeer_lv2
+  - 2021_whitedeer_lv3
+  - 2021_whitedeer_lv4
   platforms:
   - android
   - ios
   requirePhoneBinding: false
-  withReminder: false
-- ID: 8e6d65ad-15f7-414f-88f5-e5da2ed05f2f
-  type: 9
+  withReminder: true
+- ID: d4948944-b17a-4bb1-893e-e2f3f1f8f14b
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 5
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2202_global_gem_amethyst_2
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: po_mission_title_13
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: po_mission_desc_13
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2022-02-02 00:00:00 (GMT+0900)
+    endTime: 2022-02-15 23:59:59 (GMT+0900)
+  refIDs:
+  - gift_bag_fallinlove
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: c72a72cc-53e0-4f84-83ad-fd14dac2ec36
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 30
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2202_global_gem_obsidian_1
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: po_mission_title_14
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: po_mission_desc_14
+  i18nDescriptionParams: []
+  goalValue: 3
+  enableTimeRange:
+  - startTime: 2022-02-02 00:00:00 (GMT+0900)
+    endTime: 2022-02-15 23:59:59 (GMT+0900)
+  refIDs:
+  - 2021_nine_tailed_fox_demon
+  - 2021_nine_tailed_fox_demon_lv1
+  - 2021_nine_tailed_fox_demon_lv2
+  - 2021_nine_tailed_fox_demon_lv3
+  - 2021_nine_tailed_fox_demon_lv4
+  - 2021_nine_tailed_fox_mystery
+  - 2021_nine_tailed_fox_mystery_lv1
+  - 2021_nine_tailed_fox_mystery_lv2
+  - 2021_nine_tailed_fox_mystery_lv3
+  - 2021_nine_tailed_fox_mystery_lv4
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 13e3aac6-e87e-48ef-a5be-5909af46b932
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 30
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2202_global_gem_diamond_1
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: po_mission_title_15
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: po_mission_desc_15
+  i18nDescriptionParams: []
+  goalValue: 3
+  enableTimeRange:
+  - startTime: 2022-02-02 00:00:00 (GMT+0900)
+    endTime: 2022-02-15 23:59:59 (GMT+0900)
+  refIDs:
+  - gift_bag_fallinlove
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 83e4f926-7cbe-4bef-9d29-32206436870b
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 60
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2202_global_gem_obsidian_2
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: po_mission_title_16
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: po_mission_desc_16
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2022-02-02 00:00:00 (GMT+0900)
+    endTime: 2022-02-15 23:59:59 (GMT+0900)
+  refIDs:
+  - 2021_nine_tailed_fox_mystery_lv4
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: b1debe61-8f6d-40fb-94db-bcac79a7c73e
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 60
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2202_global_gem_obsidian_3
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: po_mission_title_17
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: po_mission_desc_17
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2022-02-02 00:00:00 (GMT+0900)
+    endTime: 2022-02-15 23:59:59 (GMT+0900)
+  refIDs:
+  - 2021_nine_tailed_fox_demon_lv4
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: d59e66b5-acae-46df-b6a0-e69b2cda16db
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 60
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2202_global_gem_diamond_2
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: po_mission_title_18
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: po_mission_desc_18
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2022-02-02 00:00:00 (GMT+0900)
+    endTime: 2022-02-15 23:59:59 (GMT+0900)
+  refIDs:
+  - 2021_whitedeer_lv4
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 504b42c4-04e3-46b9-a7f5-d1f7f3c9b7b5
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 60
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2202_global_gem_diamond_3
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: po_mission_title_19
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: po_mission_desc_19
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2022-02-02 00:00:00 (GMT+0900)
+    endTime: 2022-02-15 23:59:59 (GMT+0900)
+  refIDs:
+  - 2009_jp_upgrade_seiryu_04
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 1ae9fd86-1886-44fe-a9ed-e1913fa217fb
+  type: 3
   category: 0
   lifeCycle: 0
   targetAudience: 0
   levelRange:
     min: 3
-    max: 999
+    max: 4
   reward:
     rewardType: 1
-    rewardID: 2112_jp_organic1_bp_bag
+    rewardID: 2202_global_gem_bag_3
     amount: 2
     expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_jp_artist17
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
+  i18nTitle: po_mission_title_20
+  i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: 2112_jp_wakuwakudraw
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 10
+  i18nDescription: po_mission_desc_20
+  i18nDescriptionParams: []
+  goalValue: 5
   enableTimeRange:
-  - startTime: 2021-12-14 15:00:00 (GMT+0900)
-    endTime: 2021-12-26 23:59:59 (GMT+0900)
-  refIDs: []
+  - startTime: 2022-02-02 00:00:00 (GMT+0900)
+    endTime: 2022-02-15 23:59:59 (GMT+0900)
+  refIDs:
+  - 2202_global_gem_amber_1
+  - 2202_global_gem_amber_2
+  - 2202_global_gem_amethyst_1
+  - 2202_global_gem_amethyst_2
+  - 2202_global_gem_bag_1
+  - 2202_global_gem_bag_2
+  - 2202_global_gem_bag_high_1
+  - 2202_global_gem_diamond_1
+  - 2202_global_gem_diamond_2
+  - 2202_global_gem_diamond_3
+  - 2202_global_gem_emerald_1
+  - 2202_global_gem_emerald_2
+  - 2202_global_gem_obsidian_1
+  - 2202_global_gem_obsidian_2
+  - 2202_global_gem_obsidian_3
+  - 2202_global_gem_ruby_1
+  - 2202_global_gem_ruby_2
+  - 2202_global_gem_sapphire_1
+  - 2202_global_gem_sapphire_2
   platforms:
   - android
   - ios
   requirePhoneBinding: false
-  withReminder: false
-- ID: d330a3ad-fa26-45b0-9b68-01e7b353cb1d
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 3
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2112_jp_tgc12_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_jp_annmi
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: 2112_jp_duotgc
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 180
-  enableTimeRange:
-  - startTime: 2021-12-18 15:00:00 (GMT+0900)
-    endTime: 2021-12-31 23:59:59 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 6a303213-3ffb-4b1d-be68-79b92d53e067
-  type: 8
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2112_jp_dragon_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_first_time_IAP_reward_jp_event_title
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_reward_jp_event_des
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2021-12-16 15:00:00 (GMT+0900)
-    endTime: 2021-12-31 23:59:59 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 0eb5982a-945f-4521-9e89-0be2f71441e9
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 17
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2112_jp_topstreamerstar_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_jp_17real
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_comment_jp_topstr
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 1020
-  enableTimeRange:
-  - startTime: 2021-12-17 15:00:00 (GMT+0900)
-    endTime: 2021-12-29 23:59:59 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 726d1e77-88f9-49ab-afe7-cb78c243b86d
+  withReminder: true
+- ID: f9c246f0-9129-4d80-b50e-79793eefb2ab
   type: 3
   category: 0
   lifeCycle: 0
   targetAudience: 0
   levelRange:
-    min: 7
-    max: 999
+    min: 5
+    max: 30
   reward:
     rewardType: 1
-    rewardID: 2112_jp_train3_bp_a
-    amount: 2
+    rewardID: 2202_global_gem_bag_4
+    amount: 5
     expireTimeSecs: 86400
-  i18nTitle: jp_train_heartcurtain
-  i18nTitleParams:
-  - value: "3"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: heart_curtain
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
+  i18nTitle: po_mission_title_21
+  i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: 2112_jp_train3_desc
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 3
+  i18nDescription: po_mission_desc_21
+  i18nDescriptionParams: []
+  goalValue: 11
   enableTimeRange:
-  - startTime: 2021-12-13 15:00:00 (GMT+0900)
-    endTime: 2021-12-27 23:59:59 (GMT+0900)
+  - startTime: 2022-02-02 00:00:00 (GMT+0900)
+    endTime: 2022-02-15 23:59:59 (GMT+0900)
   refIDs:
-  - heart_curtain
+  - 2202_global_gem_amber_1
+  - 2202_global_gem_amber_2
+  - 2202_global_gem_amethyst_1
+  - 2202_global_gem_amethyst_2
+  - 2202_global_gem_bag_1
+  - 2202_global_gem_bag_2
+  - 2202_global_gem_bag_high_1
+  - 2202_global_gem_diamond_1
+  - 2202_global_gem_diamond_2
+  - 2202_global_gem_diamond_3
+  - 2202_global_gem_emerald_1
+  - 2202_global_gem_emerald_2
+  - 2202_global_gem_obsidian_1
+  - 2202_global_gem_obsidian_2
+  - 2202_global_gem_obsidian_3
+  - 2202_global_gem_ruby_1
+  - 2202_global_gem_ruby_2
+  - 2202_global_gem_sapphire_1
+  - 2202_global_gem_sapphire_2
   platforms:
   - android
   - ios
   requirePhoneBinding: false
-  withReminder: false
-- ID: 99850a17-f221-478d-8c10-bf6ab5f3f2d1
+  withReminder: true
+- ID: 1ff7de01-1c78-41fd-8f4f-292572f805a0
   type: 3
   category: 0
   lifeCycle: 0
   targetAudience: 0
   levelRange:
-    min: 7
-    max: 999
+    min: 31
+    max: 59
   reward:
     rewardType: 1
-    rewardID: 2112_jp_train3_bp_b
-    amount: 4
+    rewardID: 2202_global_gem_bag_high_2
+    amount: 3
     expireTimeSecs: 86400
-  i18nTitle: jp_train_treasure17
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: gift_bag_17treasures
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
+  i18nTitle: po_mission_title_22
+  i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: 2112_jp_train3_desc
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 1
+  i18nDescription: po_mission_desc_22
+  i18nDescriptionParams: []
+  goalValue: 17
   enableTimeRange:
-  - startTime: 2021-12-13 15:00:00 (GMT+0900)
-    endTime: 2021-12-27 23:59:59 (GMT+0900)
+  - startTime: 2022-02-02 00:00:00 (GMT+0900)
+    endTime: 2022-02-15 23:59:59 (GMT+0900)
   refIDs:
-  - gift_bag_17treasures
+  - 2202_global_gem_amber_1
+  - 2202_global_gem_amber_2
+  - 2202_global_gem_amethyst_1
+  - 2202_global_gem_amethyst_2
+  - 2202_global_gem_bag_1
+  - 2202_global_gem_bag_2
+  - 2202_global_gem_bag_high_1
+  - 2202_global_gem_diamond_1
+  - 2202_global_gem_diamond_2
+  - 2202_global_gem_diamond_3
+  - 2202_global_gem_emerald_1
+  - 2202_global_gem_emerald_2
+  - 2202_global_gem_obsidian_1
+  - 2202_global_gem_obsidian_2
+  - 2202_global_gem_obsidian_3
+  - 2202_global_gem_ruby_1
+  - 2202_global_gem_ruby_2
+  - 2202_global_gem_sapphire_1
+  - 2202_global_gem_sapphire_2
   platforms:
   - android
   - ios
   requirePhoneBinding: false
-  withReminder: false
-- ID: 99545f13-65ae-468f-8782-7ee167606784
+  withReminder: true
+- ID: 94646fe5-2606-425e-bc2f-2a1f162a0e2a
   type: 3
   category: 0
   lifeCycle: 0
   targetAudience: 0
   levelRange:
-    min: 7
+    min: 60
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2112_jp_train3_bp_d
-    amount: 40
+    rewardID: 2202_global_gem_bag_high_4
+    amount: 7
     expireTimeSecs: 86400
-  i18nTitle: JP_shinjin_ginga
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: gift_galaxy_bag
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
+  i18nTitle: po_mission_title_23
+  i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: 2112_jp_train3_desc
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 1
+  i18nDescription: po_mission_desc_23
+  i18nDescriptionParams: []
+  goalValue: 24
   enableTimeRange:
-  - startTime: 2021-12-13 15:00:00 (GMT+0900)
-    endTime: 2021-12-27 23:59:59 (GMT+0900)
+  - startTime: 2022-02-02 00:00:00 (GMT+0900)
+    endTime: 2022-02-15 23:59:59 (GMT+0900)
   refIDs:
-  - gift_galaxy_bag
+  - 2202_global_gem_amber_1
+  - 2202_global_gem_amber_2
+  - 2202_global_gem_amethyst_1
+  - 2202_global_gem_amethyst_2
+  - 2202_global_gem_bag_1
+  - 2202_global_gem_bag_2
+  - 2202_global_gem_bag_high_1
+  - 2202_global_gem_diamond_1
+  - 2202_global_gem_diamond_2
+  - 2202_global_gem_diamond_3
+  - 2202_global_gem_emerald_1
+  - 2202_global_gem_emerald_2
+  - 2202_global_gem_obsidian_1
+  - 2202_global_gem_obsidian_2
+  - 2202_global_gem_obsidian_3
+  - 2202_global_gem_ruby_1
+  - 2202_global_gem_ruby_2
+  - 2202_global_gem_sapphire_1
+  - 2202_global_gem_sapphire_2
   platforms:
   - android
   - ios
   requirePhoneBinding: false
-  withReminder: false
-#2021下半期新人No1決定戦
-- ID: 9ef2a471-94a2-473f-a6e0-afa15543827c
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2201_jp_newlivd_bp_a
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_sendgift_jp_heartg
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: heart_curtain
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: 2201_jp_shinjinno1
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-01-01 15:00:00 (GMT+0900)
-    endTime: 2022-01-31 23:59:59 (GMT+0900)
-  refIDs:
-  - heart_curtain
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-#2021下半期新人No1決定戦
-- ID: bbffd6a8-53f0-461d-8230-f0be7179eafe
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2201_jp_newlivd_bp_b
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: JP_shinjin_ainopurezento
-  i18nTitleParams:
-  - value: "3"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: lovegif
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: 2201_jp_shinjinno1
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 3
-  enableTimeRange:
-  - startTime: 2022-01-01 15:00:00 (GMT+0900)
-    endTime: 2022-01-31 23:59:59 (GMT+0900)
-  refIDs:
-  - lovegif
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-#2021下半期新人No1決定戦
-- ID: be71318a-ef7d-4af1-98fe-18d4f580ba36
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2201_jp_newlivd_bp_c
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: JP_shinjin_ginga
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: gift_galaxy_bag
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: 2201_jp_shinjinno1
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-01-01 15:00:00 (GMT+0900)
-    endTime: 2022-01-31 23:59:59 (GMT+0900)
-  refIDs:
-  - gift_galaxy_bag
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-#新人ライバーの進撃vol.53
-- ID: 2c5d12cc-5506-4957-b310-dd0d5722455c
-  type: 8
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2201_jp_newlivd2_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_first_time_IAP_reward_jp_event_title
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_reward_jp_event_des
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-01-01 15:00:00 (GMT+0900)
-    endTime: 2022-01-16 23:59:59 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-#ぶち破れ、新人ライバーの壁 vol.44
-- ID: 19bb0343-d75e-4529-afde-d4bbe9b8f5d7
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 17
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2201_jp_breakwall_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_jp_artist17
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_kabe_watching_reward_jp_desc
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 10
-  enableTimeRange:
-  - startTime: 2022-01-01 15:00:00 (GMT+0900)
-    endTime: 2022-01-15 23:59:59 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-#新春！初夢王決定戦2022
-- ID: df7604ff-2670-426c-b823-fde47fa4b1b7
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 10
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2201_jp_dreamking_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: 2201_jp_hatsuyume
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2201_jp_dreamking_bag_s
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: 2201_jp_hatsuyume_desc
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-01-02 15:00:00 (GMT+0900)
-    endTime: 2022-01-26 23:59:59 (GMT+0900)
-  refIDs:
-  - 2201_jp_dreamking_bag_s
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-#ゆけ、トップライバーへの登竜門！vol.39
-- ID: f159b584-48c5-4be2-8927-49ccb67df8ca
-  type: 8
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2201_jp_dragon_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_first_time_IAP_reward_jp_event_title
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_reward_jp_event_des
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-01-16 15:00:00 (GMT+0900)
-    endTime: 2022-01-31 23:59:59 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-#手を伸ばせ！輝くトップライバーの星 vol.20
-- ID: 62956d4d-8c2a-4842-b313-4ed701706c01
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 17
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2201_jp_topstreamerstar_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_jp_17real
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_comment_jp_topstr
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 1020
-  enableTimeRange:
-  - startTime: 2022-01-17 15:00:00 (GMT+0900)
-    endTime: 2022-01-29 23:59:59 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-  #VALENTINE PARTY 2022〜薔薇の花束を貴方に〜
+  withReminder: true
 - ID: c1c9149e-72ff-4517-9990-41b43ba1d2be
   type: 3
   category: 0
@@ -1546,7 +881,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-#VALENTINE PARTY 2022〜薔薇の花束を貴方に〜
 - ID: cc112747-c622-4d54-8e12-d91ec45259be
   type: 3
   category: 0
@@ -1589,7 +923,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-#VALENTINE PARTY 2022〜薔薇の花束を貴方に〜
 - ID: 41711cca-46f4-416d-94dc-6a6177140dcd
   type: 3
   category: 0
@@ -1632,7 +965,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-#新人ライバーの進撃vol.54
 - ID: ab432b30-6626-4ab4-8a41-d541e1e74cd0
   type: 8
   category: 0
@@ -1670,7 +1002,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-#ぶち破れ、新人ライバーの壁 vol.45
 - ID: aaf4ffed-ef20-4923-ad73-95423a8fb46e
   type: 9
   category: 0
@@ -1708,7 +1039,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-#春の花まつり〜花を咲かせてぬいぐるみをGET！
 - ID: 688ca585-9403-4d1b-a132-9ec9188c0f9c
   type: 3
   category: 0
@@ -1751,7 +1081,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-#春の花まつり〜花を咲かせてぬいぐるみをGET！
 - ID: 069cfcc6-21e8-4315-a2c6-4b17ee6a7489
   type: 3
   category: 0
@@ -1794,7 +1123,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-#春の花まつり〜花を咲かせてぬいぐるみをGET！
 - ID: 48e18a68-7840-4a43-898a-fb3e7711d6ec
   type: 3
   category: 0
@@ -1837,7 +1165,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-#裏・VALENTINE PARTY 2022
 - ID: 23dec62f-f94a-4391-b4e9-7f62bf1420c9
   type: 9
   category: 0
@@ -1875,7 +1202,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-#裏・VALENTINE PARTY 2022
 - ID: f337667a-a9b8-4c93-a505-a714c0022b09
   type: 3
   category: 0
@@ -1918,7 +1244,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-#裏・VALENTINE PARTY 2022
 - ID: 4f7303c1-2610-4e2d-928b-7e78c6d202ef
   type: 3
   category: 0
@@ -1961,7 +1286,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-#裏・VALENTINE PARTY 2022
 - ID: 11d94bd0-06cb-4e00-9f2f-6938dba4d993
   type: 3
   category: 0
@@ -2004,7 +1328,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-#裏・VALENTINE PARTY 2022
 - ID: edd98c09-9b50-4787-a1af-27f87d90873e
   type: 3
   category: 0
@@ -2047,7 +1370,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-#裏・VALENTINE PARTY 2022
 - ID: ff9e7e80-62b0-4c91-90b6-1416ff5379f7
   type: 3
   category: 0
@@ -2090,7 +1412,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-  #チュートリアル（dont delete)
 - ID: 4f5615be-b3f1-4fc7-81e5-edc32d56bac2
   type: 9
   category: 0
