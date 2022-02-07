@@ -19,108 +19,6 @@
   - name: example-target-hpa
     minReplicas: 20
 
-# 1/27【important!!】JP,西川貴教のニシナナLIVE,（UV：8000）
-- startTime: "2022-01-27 18:00:00 (GMT+0800)"
-  endTime: "2022-01-27 21:30:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-# 1/28 【MKT】マンウィズ#2
-- startTime: "2022-01-28 18:30:00 (GMT+0800)"
-  endTime: "2022-01-28 23:05:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-# 1/30 【BD】Game配信 && 【EV】BIG EVENT
-- startTime: "2022-01-30 16:30:00 (GMT+0800)"
-  endTime: "2022-01-30 22:05:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-# 2/3 西川貴教ニシナナLIVE
-- startTime: "2022-02-03 18:30:00 (GMT+0800)"
-  endTime: "2022-02-03 21:30:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-# 2/5 【EV】Music Event
-- startTime: "2022-02-05 15:30:00 (GMT+0800)"
-  endTime: "2022-02-05 20:05:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-# 2/6 【MKT】2/6五堅情派對直播
-- startTime: "2022-02-06 21:30:00 (GMT+0800)"
-  endTime: "2022-02-07 00:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-tw-main
-    minReplicas: 36
-
 # 2/7 【MKT】マンウィズ#3
 - startTime: "2022-02-07 19:30:00 (GMT+0800)"
   endTime: "2022-02-07 22:05:00 (GMT+0800)"
@@ -141,6 +39,125 @@
 # 2/10 【important!!】JP,西川貴教のニシナナLIVE,（UV：8000）
 - startTime: "2022-02-10 18:30:00 (GMT+0800)"
   endTime: "2022-02-10 21:30:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+# 2/14 【EV】BIG EVENT, 【MKT】ラストアイドル
+- startTime: "2022-02-14 15:30:00 (GMT+0800)"
+  endTime: "2022-02-14 21:05:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+# # 2/15 (未定)【EV】DAMカラオケグランプリ公式配信 
+# - startTime: "2022-02-15 15:30:00 (GMT+0800)"
+#   endTime: "2022-02-15 21:05:00 (GMT+0800)"
+#   HPAConfigs:
+#   - name: k8sprod-goapi-main
+#     minReplicas: 70
+#   - name: k8sprod-golives-main
+#     minReplicas: 85
+#   - name: k8sprod-gotrade-main
+#     minReplicas: 12
+#   - name: k8sprod-gocells-main
+#     minReplicas: 25
+#   - name: k8sprod-gousersearch-main
+#     minReplicas: 10
+#   - name: k8sprod-revprox-jp-main
+#     minReplicas: 36
+
+# 2/17 【important!!】JP,西川貴教のニシナナLIVE,（UV：8000）
+- startTime: "2022-02-17 18:30:00 (GMT+0800)"
+  endTime: "2022-02-17 21:30:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+# 2/18 【MKT】マンウィズ#4
+- startTime: "2022-02-18 18:30:00 (GMT+0800)"
+  endTime: "2022-02-18 21:05:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+# 2/21 【MKT】ラストアイドル
+- startTime: "2022-02-21 18:30:00 (GMT+0800)"
+  endTime: "2022-02-21 21:05:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+# 2/24 【important!!】JP,西川貴教のニシナナLIVE,（UV：8000）
+- startTime: "2022-02-24 18:30:00 (GMT+0800)"
+  endTime: "2022-02-24 21:30:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+# 2/28 【MKT】ラストアイドル
+- startTime: "2022-02-28 18:30:00 (GMT+0800)"
+  endTime: "2022-02-28 21:05:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 70
