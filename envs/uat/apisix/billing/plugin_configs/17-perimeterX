@@ -17,6 +17,7 @@ plugins:
       - route: "/api/v1/lives/.*/laborReward$"
         methods: ["POST"]
       - route: "/api/v1/redenvelopes/pick$"
+        methods: ["POST"]
       - route: "/api/v1/redenvelopes/.*/pick$"
       - route: "/api/v1/sections.*"
       - route: "/api/v1/version"
@@ -31,6 +32,7 @@ plugins:
     enforce_routes:
       - "/api/v1/redenvelopes/.*/pick$"
       - "/api/v1/lives/.*/laborReward$"
+      - "/api/v1/redenvelopes/pick$"
     s2s_timeout: 1000
     px_debug: false
     send_page_requested_activity: true

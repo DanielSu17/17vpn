@@ -1,3 +1,9 @@
+# To prevent sending PN to real users in non-production environment, only whitelist users can be send PN
+whitelist:
+  - 6a27c5d7-6c85-4247-9925-c010b138a0d0  #tw_user_web
+  - c52c9260-119d-423c-afc8-a2c8aa3a7a02  #jameschou01
+  - b6a91c5c-aeb7-4e19-9b29-c3c6823a53eb  #OKPAPAYA
+
 fcm:
   userWhitelist:
     - 760c0399-d394-4188-81cd-038ade79fd4f # thpk01
@@ -6,6 +12,15 @@ fcm:
     - 1d352aad-bc42-418e-b910-9d10f149699d # bellapk0021
     - 05e0175d-4321-4b3e-a648-c0ef79204aed # bella.tt.1020
     - 32d9c13b-eba2-4f2e-b836-5017c0f47490 # bb.tt.1026
+    - f7854ebc-692a-4227-862d-552b858278c3 # carogonewild1
+    - e5b239ca-1fba-44c5-a64c-d9247ac58638 # carogonewild2
+    - 0b287bbc-e5d4-47ce-9ae5-8d641a83c196 # carogonewild3
+    - 43333201-e20e-4111-b5ba-2664c9513c6b # carogonewild6
+    - 53dfee07-3961-48df-a3e4-5fad4e998d60 # caro17
+    - 3fe6d5fc-bb44-4036-83da-a802fe3d5fe6 # nealx1
+    - 5ff138c8-551d-47e4-9df5-f904fc70b424 # nealx2
+    - 5d27335d-f119-42c1-9706-6613368dc178 # josephtest
+    - 567e0b5d-1516-4ce0-b4e8-bec4e756d5ae # kevinmh
   messageTypeWhitelist:
     - "NewLiveMessage"
 

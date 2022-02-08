@@ -1,5 +1,5 @@
 - testName: entryTitleTypeA # PROD-3617
-  enableABtest: true
+  enableABtest: false 
   expiredSecond: 604800
   lastCharGroup:
     "0": "a"
@@ -19,7 +19,7 @@
     "e": "a"
     "f": "a"
 - testName: entryTitleTypeB # PROD-3617
-  enableABtest: true
+  enableABtest: false
   expiredSecond: 604800
   lastCharGroup:
     "0": "b"
@@ -100,7 +100,7 @@
     "e": "b"
     "f": "b"
 - testName: newbieGuidance # 新手引導(新手遮罩), a:關閉, b:打開
-  enableABtest: true
+  enableABtest: false
   expiredSecond: 259200 # 3 days
   lastCharGroup:
     "0": "b"
@@ -198,7 +198,7 @@
     "e": "b"
     "f": "b"
 - testName: newbieOnboard # 新手流程優化 (onboarding_flow_optimization)
-  enableABtest: true
+  enableABtest: false
   expiredSecond: 604800 # 7 day
   lastCharGroup:
     "0": "b"
@@ -219,7 +219,7 @@
     "f": "b"
 # 新手流程優化p5 (四頁walkthrough,Feature Guide), client只有當a才顯示 空的也是不顯示
 - testName: newbieGuide
-  enableABtest: true
+  enableABtest: false
   expiredSecond: 3600
   lastCharGroup:
     "0": "a"
@@ -261,7 +261,7 @@
     "f": "b"
 # 新手流程優化P10: 新手任務彈窗
 - testName: newbieP10MissionHint
-  enableABtest: true
+  enableABtest: false
   expiredSecond: 604800 # 7 day
   lastCharGroup:
     "0": "b"
@@ -282,7 +282,7 @@
     "f": "b"
 # 新手流程優化P10: 新手完成特定數量後PN檢查
 - testName: newbieP10CheckPNWhenReceivedReward
-  enableABtest: true
+  enableABtest: false
   expiredSecond: 604800 # 7 day
   lastCharGroup:
     "0": "b"
@@ -302,18 +302,39 @@
     "e": "b"
     "f": "b"
 # 新手流程優化P10: group b時取消新手直播間內蓋板教學
+# - testName: newbieP10DisableEnterLivePrompt
+#  enableABtest: false
+# expiredSecond: 604800 # 7 day
+# lastCharGroup:
+#   "0": "b"
+#   "1": "b"
+#   "2": "b"
+#   "3": "b"
+#   "4": "b"
+#   "5": "b"
+#   "6": "b"
+#   "7": "b"
+#   "8": "b"
+#   "9": "b"
+#   "a": "b"
+#   "b": "b"
+#   "c": "b"
+#   "d": "b"
+#   "e": "b"
+#   "f": "b"
+# 新手流程優化P10: group b時取消新手直播間內蓋板教學 (with stream toast removal a/b)
 - testName: newbieP10DisableEnterLivePrompt
-  enableABtest: false
-  expiredSecond: 604800 # 7 day
+  enableABtest: true
+  expiredSecond: 1209600 # 14 day
   lastCharGroup:
-    "0": "b"
-    "1": "b"
-    "2": "b"
-    "3": "b"
-    "4": "b"
-    "5": "b"
-    "6": "b"
-    "7": "b"
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
     "8": "b"
     "9": "b"
     "a": "b"
@@ -364,7 +385,7 @@
     "f": "b"
 # 登入獎勵: 0~4 group a
 - testName: signInRewardAB
-  enableABtest: true
+  enableABtest: false #changed for removal A/B testing
   startTime: "2020-07-01T00:00:00+08:00"
   endTime: "2020-07-13T23:59:59+08:00"
   lastCharGroup:
@@ -386,7 +407,7 @@
     "f": "b"
 # 登入獎勵: 5~9 group b, a~f group c
 - testName: signInRewardBC
-  enableABtest: true
+  enableABtest: false #debug changed for removal A/B testing
   startTime: "2020-07-01T00:00:00+08:00"
   endTime: "2020-07-13T23:59:59+08:00"
   lastCharGroup:
@@ -408,7 +429,7 @@
     "f": "b"
 
 - testName: laborRewardWithPremium
-  enableABtest: true
+  enableABtest: false #debug changed for removal A/B testing
   lastCharGroup:
     "0": "a"
     "1": "a"
@@ -510,14 +531,14 @@
 - testName: uiRefresh2020Q3
   enableABtest: true
   lastCharGroup:
-    "0": "a"
-    "1": "a"
-    "2": "a"
-    "3": "a"
-    "4": "a"
-    "5": "a"
-    "6": "a"
-    "7": "a"
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
     "8": "b"
     "9": "b"
     "a": "b"
@@ -527,7 +548,7 @@
     "e": "b"
     "f": "b"
 - testName: newbieStreamGuide
-  enableABtest: true
+  enableABtest: false
   expiredSecond: 1800 # 2 days
   lastCharGroup:
     "0": "b"
@@ -626,7 +647,7 @@
     "e": "c"
     "f": "c"
 - testName: uiRefreshStreamerConfig
-  enableABtest: false
+  enableABtest: true
   lastCharGroup:
     "0": "b"
     "1": "b"
@@ -645,13 +666,16 @@
     "e": "b"
     "f": "b"
 
-# a組 false, b組 true
+# group A does NOT SHOW the prompt
+# group B SHOWS the prompt
 - testName: attPrompt
   enableABtest: true
   byDeviceID: true
+  startTime: "2021-04-28T13:00:00+08:00"
+  endTime: "2021-04-28T14:00:00+08:00"
   lastCharGroup:
-    "0": "a"
-    "1": "a"
+    "0": "b"
+    "1": "b"
     "2": "a"
     "3": "a"
     "4": "a"
@@ -692,7 +716,7 @@
 # group A uses static register labels
 # group B uses dynamic register labels
 - testName: dynamicSectionOrder
-  enableABtest: false
+  enableABtest: true
   lastCharGroup:
     "0": "a"
     "1": "a"
@@ -702,14 +726,14 @@
     "5": "a"
     "6": "a"
     "7": "a"
-    "8": "a"
-    "9": "a"
-    "a": "a"
-    "b": "a"
-    "c": "a"
-    "d": "a"
-    "e": "a"
-    "f": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
 
 - testName: newUserWelcome
   enableABtest: true
@@ -731,6 +755,51 @@
     "e": "b"
     "f": "b"
 
+# group A go to original registration flow
+# group B go to new registration flow
+- testName: newRegistrationFlow
+  enableABtest: true
+  byDeviceID: true
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
+# group A: Enable newbie toast in the Stream Room
+# group B: Disable newbie toast in the Stream Room
+- testName: newbieFriendly
+  enableABtest: true
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
 # group A: Disable streamline navigation circle section
 # group B: Enable streamline navigation circle section
 - testName: streamlineNavigationCircleSection
@@ -740,14 +809,129 @@
     "1": "b"
     "2": "b"
     "3": "b"
-    "4": "a"
-    "5": "a"
-    "6": "a"
-    "7": "a"
-    "8": "a"
-    "9": "a"
-    "a": "a"
-    "b": "a"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
+# group A disable value prop intro
+# group B enable value prop intro
+- testName: valuePropIntro
+  enableABtest: false
+  byDeviceID: true
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
+# group A keep default behavior
+# group B skip auto-follow page during onboarding flow
+# JIRA: APP-29027
+- testName: onboardingStreamerRecommendFlowType
+  enableABtest: false
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
+# group A keep default behavior
+# group B suppress display of the Daily Quest sign-in popup
+# JIRA: APP-29028
+- testName: suppressDailyQuestSignInPopup
+  enableABtest: false
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
+# group A keep default behavior
+# group B Disable newbie missions
+# JIRA: APP-29029
+- testName: disableNewbieMissions
+  enableABtest: false
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
+# for APP-30224: Onboarding interest selector
+# group A uses original skin
+# group B uses new interest selector skin
+- testName: onboardingInterestSelector
+  enableABtest: true
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
     "c": "b"
     "d": "b"
     "e": "b"

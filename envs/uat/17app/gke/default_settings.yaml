@@ -1,0 +1,43 @@
+default_min: 
+  backend: 
+    k8ssta-goapi-main: 1
+    k8ssta-gocells-main: 1
+    k8ssta-golives-main: 1
+    k8ssta-goplatform-main: 1
+    k8ssta-gotrade-main: 1
+    k8ssta-worker-main: 1
+    k8ssta-gousersearch-main: 1
+    k8ssta-concert-trade-main: 1
+    k8ssta-concert-stream-id-main: 1
+    k8ssta-concert-stream-jp-main: 1
+    k8ssta-concert-stream-main: 1
+    k8ssta-concert-stream-ph-main: 1
+    k8ssta-concert-stream-sg-main: 1
+    k8ssta-concert-stream-tw-main: 1
+    k8ssta-revprox-id-main: 1
+    k8ssta-revprox-jp-main: 1
+    k8ssta-revprox-main: 1
+    k8ssta-revprox-ph-main: 1
+    k8ssta-revprox-sg-main: 1
+    k8ssta-revprox-tw-main: 1
+    k8ssta-data-middleware-main: 1
+    k8ssta-snapshot-main: 1
+    k8ssta-eventory-worker-main: 1
+    k8ssta-gift-worker-main: 1
+    k8ssta-bbrichv2-main: 1
+    k8ssta-apisix-bbrich-main: 1
+  frontend: 
+    admin-v2-17app-services: 2
+    baobaofu-17app-services: 2
+    event-web-17app-services: 4
+    live17-17app-services: 2
+    skyeye-v2-17app-services: 2
+    skyeyewall-17app-services: 2
+    webapp-17app-services: 4
+settings: 
+  backend: 
+    fileName: "scheduled_scaling.yaml"
+    namespace: "k8ssta"
+  frontend: 
+    fileName: "scheduled_scaling_frontend.yaml"
+    namespace: "default"

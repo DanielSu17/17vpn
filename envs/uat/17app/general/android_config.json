@@ -82,7 +82,7 @@
          "xiaomi"
       ]
    },
-   "latest_app_version":9999,
+   "latest_app_version":99999999,
    "debug_info":{
       "bugsee":1
    },
@@ -159,39 +159,6 @@
          "mobile_pipe_index":-1
       }
    },
-   "live_atmos":{
-      "apply_version":2480,
-      "snow":{
-         "apply_version":2475,
-         "apply_region":["ALL"],
-         "trigger_message":[
-            "Xmas",
-            "聖誕快樂",
-            "🎄",
-            "メリクリ"
-         ],
-         "duration_sec":30
-      },
-      "boxes":{
-         "apply_version":2475,
-         "apply_region":["ALL"],
-         "trigger_message":[
-            "生日快樂",
-            "17生日快樂",
-            "happybirthday",
-            "happybday",
-            "🍰",
-            "🎂",
-            "Jan",
-            "Amy",
-            "Shirley",
-            "YC",
-            "Han"
-         ],
-         "duration_sec":30,
-         "max_total_count":35
-      }
-   },
    "push_url_array_apply_version":2452,
    "pk_log_enable":true,
    "starfruitLogApplyVersion":2450,
@@ -200,70 +167,29 @@
       "buffering_check_period_sec" : 30.0,
       "lower_down_threshold_for_buffering_sec" : 20.0,
       "max_buffering_record_count" : 30,
-      "check_frequency_sec": 5
+      "check_frequency_sec": 2,
+      "ping_host": "8.8.8.8",
+      "ping_count": 5,
+      "ping_high_latency_threshold_ms": 150,
+      "upper_threshold_for_buffering_free_sec" : 300,
+      "upper_retry_times" : 2
    },
    "painter" : {
       "apply_version" : 2479
    },
    "matomo_queue_dispatch_interval": 30,
-   "live_atmos_v3" : {
-    "ios_apply_version" : "3.115.0",
-    "android_apply_version":9999,
-    "snow" : {
-      "ios_apply_version" : "3.115.0",
-      "android_apply_version":9999,
-      "apply_region" : ["ALL"],
-      "trigger_message" : [
-          "Xmas",
-          "聖誕快樂",
-          "🎄",
-          "メリクリ"
-      ],
-      "duration_sec" : 30
-      },
-    "box" : {
-      "ios_apply_version" : "3.115.0",
-      "android_apply_version":9999,
-      "apply_region" : ["TW","HK","SG","MY"],
-      "trigger_message" : [
-         "情人節快樂",
-         "1314520",
-         "❤️",
-         "1"
-      ],
-      "boxes" : [
-         {
-             "drop_rate": 10,
-             "image_urls": ["https://cdn.17app.co/bc47e240-0e8f-4162-a64b-d2bc9345f257.png"],
-             "type": 0
-         },
-         {
-             "drop_rate": 190,
-             "image_urls": [
-                 "https://daily.pokecommunity.com/wp-content/uploads/2016/11/sm_pokemon_073.png",
-                 "https://daily.pokecommunity.com/wp-content/uploads/2016/11/sm_pokemon_075.png",
-                 "https://daily.pokecommunity.com/wp-content/uploads/2016/11/sm_pokemon_077.png",
-                 "https://daily.pokecommunity.com/wp-content/uploads/2016/11/sm_pokemon_079.png"
-             ],
-             "type": 2
-         }
-      ],
-      "drop_count_distribution" : {
-          "3": 10,
-          "2": 25,
-          "1": 65
-      },
-      "duration_sec" : 30,
-      "max_total_count" : 35,
-      "cooldown_sec" : 600
-    }
-  },
-  "avatar_black_list":{
+   "avatar_black_list":{
       "models":[
          "HTC_X9u"
       ],
       "chipsets":[
          "MT6795T"
+      ],
+      "black_user_ids":[
+         {
+            "user_id":"e0c410e7-75f8-47b5-8b27-138eabbf0970",
+            "model":"Redmi Note 8 Pro"
+         }
       ]
    },
    "avatar_gift_animation":{
@@ -273,10 +199,58 @@
          "HTC_X9u",
          "CPH",
          "MP1701"
+      ],
+      "black_user_ids":[
+         {
+            "user_id":"e0c410e7-75f8-47b5-8b27-138eabbf0970",
+            "model":"Redmi Note 8 Pro"
+         },
+         {
+            "user_id":"9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba",
+            "model":"G8142"
+         }
       ]
    },
    "apm" : {
     "apply_version" : 2609,
-    "sampling" : "9AB"
-  }
+    "sampling" : "9AB",
+    "anr_timeout" : 5000,
+    "max_acceptable_drop_frame" : 50,
+    "collect_cpu_usage_interval" : 3000
+   }, 
+   "group_stream_black_list":{
+      "models":[
+         "HTC_X9u"
+      ],
+      "chipsets":[]
+   },
+   "database_dispatcher_service":{
+      "apply_version_code": 16293600
+   },
+   "gift_file_keep_days":7,
+   "apply_new_comment_module":true,
+   "apply_new_gift_animation_module":false,
+   "matomo" : {
+      "matomo_alert_update_version" : 124,
+      "matomo_log_to_firebase":[
+         "registration_status"
+      ]
+   },
+   "matomo_log_to_firebase":[
+      "registration_status"
+   ],
+   "gpu_poor_performance":{
+      "bitrate_mode_vbr":{
+         "blacklist_user_devices":[
+            {
+               "user_id":"6c09dcb5-f529-4673-9ef8-970f0c78bcda",
+               "model":"vivo 1935"
+            },
+            {
+               "user_id":"0f8f2e56-4be6-4218-aa01-73c4e2e9065f",
+               "model":"CPH1831"
+            }
+         ]
+      }
+   }
 }

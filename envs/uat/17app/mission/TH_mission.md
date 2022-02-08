@@ -1,1 +1,1 @@
-# 背包任務設定 pm-only (TH)
+背包任務設定 pm-only (TH)

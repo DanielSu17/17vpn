@@ -18,8 +18,11 @@
     "enabled": 1 
   },
   "unity_config": {
-    "apply_version" : "3.000.0",
-    "apply_region" : ["ALL"]
+    "apply_version" : "3.0.0",
+    "games": [1]    
+  },
+  "agora_engine_logger": {
+    "apply_version" : "3.141.0"
   },
   "pull_info": {
     "heartbeats_interval": 5.0,
@@ -56,16 +59,29 @@
 	  "bugsee": 1
   },
   "apm" : {
-    "apply_version" : "3.136.0",
-    "sampling" : "015abc"
+    "apply_version" : "3.172.0",
+    "sampling" : "015abc",
+    "mainThreadHangs_threshold" : 3,
+    "pageEvent_threshold" : 5,
+    "enableFPS": 1
   },
   "ios_features": {
+    "pull_stream_core" : {
+      "normal_apply_version" : "3.171.0",
+      "concert_apply_version" : "3.171.0",
+      "trivia_apply_version" : "3.171.0"
+      },
+      "pubnub_cache": {
+        "keepTimeTokenOnListChange" : 0,
+        "catchUpOnSubscriptionRestore" : 0
+      },
       "aws_workaround": {
          "apply_version" : "3.300.0",
          "duration": 30
       },
       "matomo": {
-        "interval": 30
+        "interval": 30,
+        "lowest_spec_version_trigger_error_alert": 124
       },
       "painter": {
         "apply_version": "3.104.0"
@@ -100,7 +116,7 @@
         "apply_version": "3.70.1"
       },
       "ensure_av_key_frame_sent_first": {
-        "apply_version": "3.82.0"
+        "apply_version": ""
       },
       "swift" : {
         "cancel_apply" : 0
@@ -156,6 +172,8 @@
             "apply_version" : "3.106.0",
             "buffering_check_period" : 30.0,
             "lower_down_threshold_for_buffering_time" : 20.0,
+	    "upper_threshold_for_buffering_free_time" : 300,
+            "upper_retry_times" : 2,
             "max_buffering_record_count" : 30
           },
           "min_frames_to_stop_preread" : 120,
@@ -235,6 +253,21 @@
 	        "external_user_id": {
 		        "retry_count" : 3
 	        }
-        }
+      },
+      "cpu_info" : {
+	        "apply_version" : "3.151.0",
+	        "max_usage_threshold" : 80,
+	        "thermal_threshold" : 3,
+	        "interval" : 5,
+	        "capacity" : 12
+      },
+      "event_tracker_setting": {
+          "enable_preload_file": "3.172.0",
+          "enable_event_log": "3.172.0"
       }
+  },
+  "gift_file_keep_days":7,
+  "registerLogger" : {
+    "apply_version" : ""
+  }
 }

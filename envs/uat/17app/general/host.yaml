@@ -1,6 +1,6 @@
 DEFAULT:
   # ending with "/" for client side
-  api: "https://sta-api.17app.co/"
+  api: "https://sta-wap-api.17app.co/"
   # ending with "/" for client side
   cdn: "http://cdn.17app.co/"
   # the followings are server side used only
@@ -32,9 +32,13 @@ DEFAULT:
     pullURL: "http://prod-17media.cdn.hinet.net/17media-prod"
   live17:
     serviceName: "sta"
-    apiPath: "http://17live-streaming-api-stag.17app.co"
-    pushURL: "rtmp://17live-push-rtmp-stag.17app.co"
-    pullURL: "http://17live-pull-rtmp-stag.17app.co"
+    apiPath: "http://17live-api-tw-stag.17app.co"
+    pushURL: "rtmp://17live-push-rtmp-tw-stag.17app.co"
+    pullURL: "http://17live-pull-rtmp-tw-stag.17app.co"
+  ivs:
+    serviceName: "sta"
+    apiPath: "http://17live-api-tw-stag.17app.co"
+    pullURL: "https://f878e43effa7.us-west-2.playback.livit.cn"
 
 CN:
   ## ending with "/" for client side
@@ -68,6 +72,10 @@ CN:
     pullURL: "http://prod-17media.cdn.hinet.net/17media-prod"
   live17:
     serviceName: "sta"
-    apiPath: "http://17live-streaming-api-stag.17app.co"
-    pushURL: "rtmp://17live-push-rtmp.17app-stag.co"
-    pullURL: "http://17live-pull-rtmp.17app-stag.co"
+    apiPath: "http://17live-api-tw-stag.17app.co"
+    pushURL: "rtmp://17live-push-rtmp-tw-stag.17app.co"
+    pullURL: "https://17live-pull-RTMP-hk.livit.cn"
+  ivs:
+    serviceName: "sta"
+    apiPath: "http://17live-api-tw-stag.17app.co"
+    pullURL: "https://f878e43effa7.us-west-2.playback.livit.cn"

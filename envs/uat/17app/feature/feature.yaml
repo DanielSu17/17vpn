@@ -5,7 +5,7 @@
 #texture: texture for streamer
 #coupon: coupon 2.0
 
-# TW region group: [TW, TH, ID]
+# TW region group: [TW]
 # US region group: [US, AU, CA, DE, FR, GB, IE, MX, NL, NZ, PH]
 # MENA region group: [DZ, BH, DJ, EG, IR, IQ, IL, JO, KW, LB, LY, MT, MA, OM, QA, SA, SY, TN, AE, PS, YE, ET, SD]
 accompany:
@@ -78,10 +78,10 @@ decoSticker:
   availableRegion: [ALL]
   controlBy: region
 goods:
-  availableRegion: [TW, ID, TH, PH, VN, MM]
+  availableRegion: [TW]
   controBy: region
 royalty:
-  availableRegion: [TW, ID, TH, HK, MO, CN, MY, SG, AU, KR, JP, US, PH, VN, MM]
+  availableRegion: [ALL]
   controlBy: region
 cellLiveStream:
   availableRegion: [ALL]
@@ -116,7 +116,7 @@ followReminder:
 freshUserEnterMsg:
   availableRegion: [HK, MO, CN, MY, SG, AU, US, KR, JP]
 viewHistory:
-  availableRegion: [ALL]
+  availableRegion: [TW]
   controlBy: region
 apnSetting:
   availableRegion: []
@@ -125,7 +125,7 @@ gloryRoad:
   availableRegion: [ALL]
   controlBy: region
 videoChat:
-  availableRegion: [TW, TH, JP, AE, BH, DJ, DZ, EG, ET, IL, IQ, IR, JO, KW, LB, LY, MA, MT, OM, PS, QA, SA, SD, SY, TN, YE, PH]
+  availableRegion: []
   controlBy: region
 piepie:
   availableRegion: [TW, ID, TH, SG, PH, VN, MM]
@@ -164,10 +164,10 @@ sendGiftAskFollow:
   availableRegion: [TW, ID, TH, HK, MO, CN, MY, SG, AU, US, KR, DZ, BH, DJ, EG, IR, IQ, IL, JO, KW, LB, LY, MT, MA, OM, QA, SA, SY, TN, AE, PS, YE, ET, SD, PH, VN, MM]
   controlBy: region
 hot_2019q4:
-  availableRegion: [TW, JP, PH, ID, TH, VN, MM]
+  availableRegion: [TW, JP, TH, PH, MY, ID, VN, MM]
   controlBy: region
 hot_opt:
-  availableRegion: [TW, ID, TH, JP, HK, MO, CN, MY, SG, AU, US, KR, DZ, BH, DJ, EG, IR, IQ, IL, JO, KW, LB, LY, MT, MA, OM, QA, SA, SY, TN, AE, PS, YE, ET, SD, PH, VN, MM]
+  availableRegion: [TW, ID, TH, JP, HK, MO, CN, MY, SG, AU, KR, DZ, BH, DJ, EG, IR, IQ, IL, JO, KW, LB, LY, MT, MA, OM, QA, SA, SY, TN, AE, PS, YE, ET, SD, PH, VN, MM]
   controlBy: region
 hot:
   availableRegion: [TW, ID, TH, JP, HK, MO, CN, MY, SG, AU, US, KR, DZ, BH, DJ, EG, IR, IQ, IL, JO, KW, LB, LY, MT, MA, OM, QA, SA, SY, TN, AE, PS, YE, ET, SD, PH, VN, MM]
@@ -209,7 +209,7 @@ create_rtmp_verification:
   availableRegion: [ALL]
   controlBy: region
 17_games:
-  availableRegion: [TW, ID, TH, JP, US, HK, SG, MY, PH, VN, MM]
+  availableRegion: []
   controlBy: region
 musicJP:
   availableRegion: [JP]
@@ -235,7 +235,7 @@ show_hashtag_in_live_room:
   availableRegion: [JP]
   controlBy: region
 guest_mode:
-  availableRegion: [ALL]
+  availableRegion: []
   controlBy: IP
 category_suggestion:
   availableRegion: [ALL]
@@ -258,7 +258,7 @@ follower_only_comment_mode:
   availableRegion: [ALL]
   controlBy: region
 avatar:
-  availableRegion: [TW, PH]
+  availableRegion: [AU, CA, DE, FR, GB, IE, MX, NL, NZ, HK]
   controlBy: Register
   versionControl:
     enable: true
@@ -284,33 +284,37 @@ streamer_grow_up_system:
 ui_refresh_streamer_config:
   availableRegion: [ALL]
   controlBy: region
+  versionControl:
+    enable: true
+    ios: "3.140.0"
+    android: "2.55.80"
 dynamic_section_order:
-    availableRegion: []
-    controlBy: "region"
+  availableRegion: [ALL]
+  controlBy: "region"
 audiostream:
-  availableRegion: []
+  availableRegion: [TW, US, JP]
   controlBy: region
   versionControl:
     enable: true
-    ios: "1.0.0"
-    android: "1.0.0"
+    ios: "3.153.0"
+    android: "2.70.0"
 can_use_obs:
-  availableRegion: [TW]
+  availableRegion: [ALL]
   controlBy: region
 new_user_welcome:
   availableRegion: [TW, JP, HK, US]
   controlBy: region
 game:
-  availableRegion: [TW, JP]
+  availableRegion: [JP, TW, US]
   controlBy: region
 streamline_navigation_circle_section:
-  availableRegion: [TW, JP]
+  availableRegion: [JP, TW]
   controlBy: region
   startTime: 1614528000 # 2021年3月1日星期一 00:00:00 GMT+08:00
   versionControl:
     enable: true
-    ios: "3.131.2"
-    android: "2.46.1"
+    ios: "3.161.0"
+    android: "2.43.1"
 show_stream_regulation_hint:
   availableRegion: [TW, JP, HK, US]
   controlBy: region

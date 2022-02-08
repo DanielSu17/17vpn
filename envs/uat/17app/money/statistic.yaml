@@ -28,10 +28,10 @@ partitionPlan:
   switchInsertTimeMs: 1586491200000
 
 pointReceiverLogsPlan:
-  enableCache: true
-  cachingLimitQPS: 20
+  enableCache: false
+  cachingLimitQPS: 100
   maxCachingWindowSec: 2592000 # 30 days
-  dayOffset: -2
+  dayOffset: -16
   migrateState: 2 # 0: disable, 1: mysql, 2: mongo
   syncPlans:
     - name: latest
@@ -71,3 +71,4 @@ updateRevenueCron:
   enableAllUser: true
 
 enableOptimisedSettle: true
+enableGivingPointWithPrice: true

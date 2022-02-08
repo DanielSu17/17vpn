@@ -5,9 +5,115 @@
   - name: example-target-hpa
     minReplicas: 20
 
-# Followings are actual schedules
-- startTime: "2019-12-23 09:00:00 (GMT+0800)"
-  endTime: "2019-12-23 20:00:00 (GMT+0800)"
+# weekly stress test
+- startTime: "2022-02-09 07:00:00 (GMT+0800)"
+  endTime: "2022-02-09 16:00:00 (GMT+0800)"
   HPAConfigs:
-  - name: k8ssta-worker-main
-    minReplicas: 8
+  - name: k8ssta-goapi-main
+    minReplicas: 80
+  - name: k8ssta-golives-main
+    minReplicas: 80
+  - name: k8ssta-gotrade-main
+    minReplicas: 24
+  - name: k8ssta-revprox-tw-main
+    minReplicas: 36
+  - name: k8ssta-gocells-main
+    minReplicas: 24
+  - name: k8ssta-concert-stream-tw-main
+    minReplicas: 30
+  - name: k8ssta-concert-trade-main
+    minReplicas: 10
+    
+# eventory-worker stress test
+- startTime: "2021-10-07 11:30:00 (GMT+0800)"
+  endTime: "2021-10-07 18:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8ssta-goapi-main
+    minReplicas: 200
+  - name: k8ssta-golives-main
+    minReplicas: 100
+  - name: k8ssta-gotrade-main
+    minReplicas: 50
+  - name: k8ssta-revprox-tw-main
+    minReplicas: 64
+
+# Jennifer stress test
+- startTime: "2021-11-16 17:15:00 (GMT+0800)"
+  endTime: "2021-11-16 19:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8ssta-goapi-main
+    minReplicas: 9
+  - name: k8ssta-data-middleware-main
+    minReplicas: 12
+
+# Ray Lee stress test
+- startTime: "2021-12-01 14:00:00 (GMT+0800)"
+  endTime: "2021-12-01 17:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8ssta-revprox-tw-main
+    minReplicas: 10
+  - name: k8ssta-goapi-main
+    minReplicas: 10
+
+# Judy Dai stress test
+# poll service stress test
+# gift-worker stress test
+- startTime: "2021-12-06 16:30:00 (GMT+0800)"
+  endTime: "2021-12-06 19:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8ssta-goapi-main
+    minReplicas: 10
+  - name: k8ssta-golives-main
+    minReplicas: 10
+  - name: k8ssta-gotrade-main
+    minReplicas: 24
+  - name: k8ssta-revprox-tw-main
+    minReplicas: 36
+  - name: k8ssta-gift-worker-main
+    minReplicas: 10
+
+# Eventory test
+- startTime: "2021-12-10 14:00:00 (GMT+0800)"
+  endTime: "2021-12-10 17:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8ssta-eventory-worker-main
+    minReplicas: 30
+
+# Bear bbrichv2 stress test
+- startTime: "2021-12-08 14:00:00 (GMT+0800)"
+  endTime: "2021-12-08 15:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8ssta-bbrichv2-main
+    minReplicas: 60
+  - name: k8ssta-apisix-bbrich-main
+    minReplicas: 2
+
+# weekly stress test
+- startTime: "2022-01-14 16:00:00 (GMT+0800)"
+  endTime: "2022-01-14 19:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8ssta-goapi-main
+    minReplicas: 20
+  - name: k8ssta-golives-main
+    minReplicas: 12
+  - name: k8ssta-gotrade-main
+    minReplicas: 6
+  - name: k8ssta-revprox-tw-main
+    minReplicas: 10
+  - name: k8ssta-gocells-main
+    minReplicas: 6
+
+# stress test for ccu
+- startTime: "2022-01-17 11:30:00 (GMT+0800)"
+  endTime: "2022-01-17 14:30:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8ssta-goapi-main
+    minReplicas: 100
+  - name: k8ssta-golives-main
+    minReplicas: 100
+  - name: k8ssta-gotrade-main
+    minReplicas: 24
+  - name: k8ssta-revprox-tw-main
+    minReplicas: 36
+  - name: k8ssta-gocells-main
+    minReplicas: 24

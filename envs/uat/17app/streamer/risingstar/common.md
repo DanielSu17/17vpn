@@ -1,3 +1,3 @@
-# HR - Rising Star Common config
+# Rising Star Common config
 
 non regional settings

@@ -1,4 +1,174 @@
 # HK label config
+# labelInfos defines all label related infos including type, label(i18n), iconURL
+# - type: 1(music/creator), 2(talk/chat/kol/famous), 3(others)
+# - featured: true / false (default)
+# - labelID: mapping for labels table id
+
+labelInfos:
+  - id: "chill" # Chill
+    type: 2
+    label:
+      key: "hk_Chill"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    order: 601
+    isHide: true
+  - id: "kol_and_artist" # KOL & Artist
+    type: 2
+    label:
+      key: "hk_kol"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    featured: true
+    order: 602
+  - id: "female" # female
+    type: 3
+    label:
+      key: female_tab
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    order: 603
+    isHide: true
+  - id: "male" # Hobbies
+    type: 3
+    label:
+      key: male_tab
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    order: 603
+    isHide: true
+  - id: "music" # Music
+    type: 1
+    label:
+      key: "hk_music"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    order: 604
+    isHide: true
+  - id: "17headline" # 17headline
+    type: 3
+    label:
+      key: "17headline"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    order: 605
+    isHide: true
+  - id: "new_streamers" # New Streamers
+    type: 3
+    label:
+      key: "hk_newbie"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    order: 606
+    isHide: true
+#  - id: "FOHK2021" # FOHK2021
+#    type: 3
+#    label:
+#      key: "hk_fohk"
+#    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+#    order: 607
+#    isHide: true
+  - id: "17live_hk" # 17LIVE HK
+    type: 3
+    label:
+      key: "hk_17live"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    order: 608
+    isHide: true
+  - id: "new_streamer" # 活躍新主播
+    type: 3
+    label:
+      key: "streamer_label_new_comer"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    labelID: 107
+    order: 609
+  - id: "Music" # 音樂
+    type: 1
+    label:
+      key: "streamer_label_music_hk"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+    labelID: 107
+    order: 610
+  - id: "artist" # 藝人
+    type: 1
+    label:
+      key: "streamer_label_artist_hk"
+    iconURL: "https://assets-17app.akamaized.net/0b888fc8-9d1f-4e05-8393-e1b946b554d4.png"
+  - id: "gamer" # 打機達人
+    type: 3
+    label:
+      key: "streamer_label_gamer"
+    iconURL: "https://assets-17app.akamaized.net/e8f5b958-9962-4ca6-92b9-67ee7004330f.png"
+  - id: "creator" # 藝術達人
+    type: 1
+    label:
+      key: "streamer_label_creator"
+    iconURL: "https://cdn.17app.co/1eb53753-d23a-4f7a-913b-b87f41cb57b5.png"
+  - id: "kol" #kol
+    type: 2
+    label:
+      key: "streamer_label_kol"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+  - id: "player" # 演奏達人
+    type: 1
+    label:
+      key: "streamer_label_player"
+    iconURL: "https://assets-17app.akamaized.net/517c138d-54d9-4713-a931-06c9af7e53b9.png"
+    labelID: 107
+    order: 611
+  - id: "fortune_teller" # 命理小舖
+    type: 3
+    label:
+      key: "streamer_label_fortune_teller"
+    iconURL: "https://assets-17app.akamaized.net/7d40b28d-5d6b-4332-b8d7-5d6f088837e4.png"
+    labelID: 109
+  - id: "exclusive" # 付費解鎖, 獨家內容
+    type: 3
+    label:
+      key: "streamer_label_exclusive"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    order: 2001
+    isHide: true    
+  - id: "HKDJ" # 付費解鎖, 獨家內容
+    type: 1
+    label:
+      key: "DJ"
+    iconURL: "https://assets-17app.akamaized.net/517c138d-54d9-4713-a931-06c9af7e53b9.png"
+    order: 2002
+    isHide: true    
+  - id: "market" #直播商城
+    label:
+      key: "streamer_label_market"
+    iconURL: " "
+    isHide: true
+    order: 2003
+#########################
+#  - id: "Halloween1" #PO萬聖節變裝活動
+#    type: 3
+#    label:
+#      key: "section_halloweenhk2"
+#    iconURL: "h"
+#    isHide: true
+#    order: 9001
+#  - id: "Halloween2" #PO萬聖節變裝活動
+#    type: 3
+#    label:
+#      key: "section_halloweenhk2"
+#    iconURL: "h"
+#    isHide: true
+#    order: 9002
+#########################
+
+# 探索頁面會出現的label
+exploreLabels:
+  - artist
+  - kol 
+  - Music
+  - creator
+  - gamer
+  - new_streamer
+  - fortune_teller
+  - HKDJ
+  - market
+# labelWhiteList defines relation between label and user list
+labelWhiteList:
+  market:
+    - "af000548-997f-4533-b817-9eb2ddf45757"
+  Shopping:
+    - "af000548-997f-4533-b817-9eb2ddf45757"
 
 typeCheckIOSVersion: 3.61.0
 typeCheckAndroidVersion: 2.3.92

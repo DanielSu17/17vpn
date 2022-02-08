@@ -1,6 +1,15 @@
 #連續簽到小幫手訊息
 #daily_continuous_login_dialog
 
+eventDailyRewards:
+  - startTimestamp: 1582015847
+    endTimestamp: 1640399411 #2021/12/25
+    giftID: "e_500"
+#  - startTimestamp: 1600041600 #2020/09/14 00:00:00 (GMT+8)
+#    endTimestamp: 1600128000 #2020/09/15 00:00:00 (GMT+8)
+#    butlerImageURL: "https://cdn.17app.co/3e60ad72-8871-4579-bc0b-96991623c88c.png"
+#    giftID: "2008_jp_niaq_bp"
+
 # switch for daily sign-in reward
 enable: true
 
@@ -523,7 +532,7 @@ signInRewardsV3: # group c rewards point
 
 continuousSignInEvent:                        #只能有一段參數，無法多個時間段，且每天開始時間只能為00:00 (GMT+8)
   startTime: "2021-04-24 00:00:00 (GMT+0800)" #PR with VOGUE
-  endTime: "2021-05-07 23:59:59 (GMT+0800)"
+  endTime: "2021-12-25 23:59:59 (GMT+0800)"
   butlerImageURL: "https://cdn.17app.co/3fce0d3e-4ec7-4943-be84-05f43ec63077.png"
   #小幫手key: daily_continuous_login_dialog
   rewards:

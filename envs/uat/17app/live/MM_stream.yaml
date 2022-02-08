@@ -1,8 +1,6 @@
-# 看直播Ｘ秒，會跳PN dialog
-pnCheckNotif: 120 # 2 mins
-# 開標題
-minAndroidCaptionBlockVersion: "3.13.0" #enable empty caption for testing
-minIOSCaptionBlockVersion: "4.101.0"
+pnCheckNotif: 300 # 5 mins
+minAndroidCaptionBlockVersion: "2.13.0"
+minIOSCaptionBlockVersion: "3.101.0"
 
 captionBlockConf: 
   oldClientEnable: false
@@ -10,7 +8,7 @@ captionBlockConf:
   minAndroidVersionRequired: "3.13.0"
   minIOSVersionRequired: "4.101.0"
 
-forcePromoteVirtualStream: true
+forcePromoteVirtualStream: false
 enableExtInfoTypeEvent: true
 
 followerCountTriggerEvent: 100000
@@ -18,22 +16,6 @@ followerCountTriggerEvent: 100000
 organicStreamer:
   autoPass: true
   autoPassUserLevel: 0
-
-# porn detection
-pornDetection:
-  enable: true
-  intervalMS: 30000
-  modelVersion: 2
-  modelLink: "https://cdn.17app.co/nsfw/model.tflite"
-  labelLink: "https://cdn.17app.co/nsfw/dict.txt"
-  threshold: 1 # PROD: 5, STAG: 3, DEV: 3
-  labels:
-    - label: "unsafe"
-      confidence: 14.87 # low threshold for test
-    - label: "safe"
-      confidence: 14.87 # low threshold for test
-    - label: "empty"
-      confidence: 14.87 # low threshold for test
 
 programDefaultComments: #全部 program 預設留言
   - commentsInfo:
@@ -53,12 +35,34 @@ programDefaultComments: #全部 program 預設留言
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
 
+programComments: # 指定 program 預設留言
+  2b4c0f16-98f8-446e-8bc3-d819f7aea6d8: # 這是 programID
+    - commentsInfo:
+        - content: "😀"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "😂😂😂"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "👏👏"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "👍👍👍"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "🙌🙌"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+
 defaultComments:
   - specificTimeFrame: true
     startTime: "00:00:00"
     endTime: "03:59:59"
-    comments: ["晚上好👋", "👏👏👏", "😍", "😂", "要歐爸去換點黃金票券嗎😎"]
+    comments: ["region:HK", "晚上好👋", "👏👏👏", "😍", "😂", "要歐爸去換點黃金票券嗎😎"]
     commentsInfo:
+      - content: "region:HK"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
       - content: "晚上好👋"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
@@ -77,8 +81,11 @@ defaultComments:
   - specificTimeFrame: true
     startTime: "04:00:00"
     endTime: "11:59:59"
-    comments: ["早安～", "👏👏👏", "😍", "😂", "要歐爸去換點黃金票券嗎😎"]
+    comments: ["region:HK", "早安～", "👏👏👏", "😍", "😂", "要歐爸去換點黃金票券嗎😎"]
     commentsInfo:
+      - content: "region:HK"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
       - content: "早安～"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
@@ -97,8 +104,11 @@ defaultComments:
   - specificTimeFrame: true
     startTime: "12:00:00"
     endTime: "17:59:59"
-    comments: ["主播好👋🏻", "👏👏👏", "😍", "😂", "要歐爸去換點黃金票券嗎😎"]
+    comments: ["region:HK", "主播好👋🏻", "👏👏👏", "😍", "😂", "要歐爸去換點黃金票券嗎😎"]
     commentsInfo:
+      - content: "region:HK"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
       - content: "主播好👋🏻"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
@@ -117,8 +127,11 @@ defaultComments:
   - specificTimeFrame: true
     startTime: "18:00:00"
     endTime: "23:59:59"
-    comments: ["晚上好👋", "👏👏👏", "😍", "😂", "要歐爸去換點黃金票券嗎😎"]
+    comments: ["region:HK", "晚上好👋", "👏👏👏", "😍", "😂", "要歐爸去換點黃金票券嗎😎"]
     commentsInfo:
+      - content: "region:HK"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
       - content: "晚上好👋"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
@@ -134,12 +147,17 @@ defaultComments:
       - content: "要歐爸去換點黃金票券嗎😎"
         contentColor: "#FFFFFF"
         backgroundColor: "#b228232d"
-hotListOrder: ["DEFAULT", "US", "OTHERS"]
+hotListOrder: ["HK", "US", "OTHERS"]
+
 hotCellOrder:
   regionGroups:
-    - regions: ["DEFAULT"]
-    - regions: ["US"]
+    - regions: ["MM"]
+    - regions: ["PH"]
+    - regions: ["MY"]
+    - regions: ["SG"]
+    - regions: ["TW"]
     - regions: ["OTHERS"]
+
 birthdayComment:
   contentColor: "#28232D"
   backgroundColor: "#FFFFFF"
@@ -180,7 +198,7 @@ levelUpGiftNotif:
   gifts:
     - giftID: "qaarpk"
       beginTime: 2019-01-28 01:04:05 (GMT+0800)
-      endTime: 2019-04-30 15:04:05 (GMT+0800)
+      endTime: 2019-02-10 15:04:05 (GMT+0800)
   period: 15
   nthLive: 10
 
@@ -195,11 +213,7 @@ layoutGiftNotif:
 programCommentPin:
   enable: true
 
-pkFrameID: "pk_winner_frame"
-pkFrameURL: "https://cdn.17app.co/6ae73d06-4010-4696-80a2-d20640709ccf.png"
-pkIOSFrameURL: "https://cdn.17app.co/7d5dd83d-8b8f-4acf-abdd-fb04717af49f.png"
-
-showRockArea: true
+showRockArea: false
 followerOnlyOptionMins: [0, 1, 5, 10]
 
 streamerTagging:

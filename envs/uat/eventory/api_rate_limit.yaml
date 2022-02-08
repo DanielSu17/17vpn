@@ -17,6 +17,4 @@
 #   scope: by_access_token
 
 rate_limits:
-- {url: "/api/v1/eventory/leaderboards/[A-Za-z0-9-]+/satisfy", method: "POST", flow_per_second: 3000, reservoir_size: 3000, scope: by_global}
-
-
+- {url: "/api/v1/eventory/leaderboards/[A-Za-z0-9-]+/satisfy", method: "POST", flow_per_second: 1, reservoir_size: 3, scope: by_global}
