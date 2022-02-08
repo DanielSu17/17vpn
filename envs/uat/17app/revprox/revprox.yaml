@@ -39,6 +39,17 @@ regexConf:
     regex_paths:
       # normal send gift: "api/v1/lives/:roomid/gift"
       - ^POST /api/v1/lives/[0-9]+/gift$
+  - url_key: "go_url"
+    default_url_key: "go_url"
+    weight: 100
+    regex_paths:
+      - ^GET /api/v1/auth/nexmoCallback
+      - ^POST /api/v1/auth/goodnight/register
+      - ^POST /api/v1/auth/changeOpenID
+      - ^POST /api/v1/auth/checkNeedHumanTest
+      - ^POST /api/v1/auth/register/complete
+      - ^POST /api/v1/auth/eraseInternationalPhoneNumber
+      - ^POST /api/v1/auth/refreshMigrate
 conf:
  - url_key: "api_usersearch_url"
    weight: 100
@@ -151,3 +162,12 @@ conf:
    weight: 100
    white_list:
      apiv1: "official"
+ - url_key: "go_auth_url"
+   weight: 100
+   white_list:
+     apiv1: "auth,oauth"
+     auth: "loginAction,loginAction2,registerAction,registerAction2,\
+            checkFacebookIDAvailable,checkOpenIDAvailable,\
+            changePassword,\
+            isPhoneNumberOpenIDPaired,\
+            getResetPasswordToken,resetPassword"
