@@ -40,36 +40,7 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
-- ID: 44e28895-0802-48cc-92ce-abfa1fedf8d0
-  type: 24
-  category: 0
-  lifeCycle: 2
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 2
-    rewardID: alex-test-3
-    amount: 10
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_7d_checkin_title
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_7d_checkin_descr
-  i18nDescriptionParams: []
-  goalValue: 7
-  enableTimeRange:
-  - startTime: 2021-02-01 10:00:00 (GMT+0800)
-    endTime: 2021-12-31 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: d4330e3a-a64e-4bd0-b421-ec0bc46cf721
+- ID: 1dc79f3e-df7c-42a5-bb24-d1f1fc6df67f
   type: 24
   category: 0
   lifeCycle: 0
@@ -79,26 +50,26 @@ missions:
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2201_new_year_divination_block_tiger
-    amount: 1
+    rewardID: 2202_lovebirds_0
+    amount: 5
     expireTimeSecs: 86400
-  i18nTitle: baggage_mission_daily_checkin_title
+  i18nTitle: us_mission_daily_login
   i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: baggage_mission_daily_checkin_descr
+  i18nDescription: us_baggage_mission_newbie
   i18nDescriptionParams: []
   goalValue: 1
   enableTimeRange:
-  - startTime: 2021-12-19 20:30:00 (GMT+0800)
-    endTime: 2021-12-31 23:59:00 (GMT+0800)
+  - startTime: 2022-02-08 16:00:00 (GMT+0800)
+    endTime: 2022-02-18 23:59:59 (GMT+0800)
   refIDs: []
   platforms:
   - android
   - ios
   requirePhoneBinding: false
   withReminder: true
-- ID: 237676b5-078a-49a0-82dd-26c590e47dd3
+- ID: 12927e78-3663-447e-8193-7f0f6702f013
   type: 9
   category: 0
   lifeCycle: 0
@@ -108,12 +79,12 @@ missions:
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2201_new_year_divination_block_tiger
-    amount: 1
+    rewardID: 2202_lovebirds_0
+    amount: 5
     expireTimeSecs: 86400
   i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
   i18nTitleParams:
-  - value: "10"
+  - value: "1"
     needMap: false
     mapOption: 0
     fontAttribute: null
@@ -121,18 +92,18 @@ missions:
   i18nContentParams: []
   i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
   i18nDescriptionParams: []
-  goalValue: 600
+  goalValue: 60
   enableTimeRange:
-  - startTime: 2021-12-19 20:30:00 (GMT+0800)
-    endTime: 2021-12-31 23:59:00 (GMT+0800)
+  - startTime: 2022-02-08 16:00:00 (GMT+0800)
+    endTime: 2022-02-18 23:59:59 (GMT+0800)
   refIDs: []
   platforms:
   - android
   - ios
   requirePhoneBinding: false
   withReminder: true
-- ID: ef5adc4a-7031-4646-aeea-133e8e900808
-  type: 8
+- ID: 507ccdb4-f296-4126-9d8e-d712f489418c
+  type: 3
   category: 0
   lifeCycle: 0
   targetAudience: 0
@@ -141,27 +112,32 @@ missions:
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2201_tw_lunaryear_a_bp
-    amount: 1
+    rewardID: 2202_lovebirds_0
+    amount: 5
     expireTimeSecs: 86400
-  i18nTitle: baggage_mission_first_time_IAP_reward_tw_event_title
-  i18nTitleParams: []
+  i18nTitle: baggage_mission_send_gifts
+  i18nTitleParams:
+  - value: "5"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
+  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_us_5times
   i18nDescriptionParams: []
-  goalValue: 1
+  goalValue: 5
   enableTimeRange:
-  - startTime: 2021-12-16 18:00:00 (GMT-0800)
-    endTime: 2021-12-31 21:00:00 (GMT-0800)
-  refIDs: []
+  - startTime: 2022-02-08 16:00:00 (GMT+0800)
+    endTime: 2022-02-18 23:59:59 (GMT+0800)
+  refIDs:
+  - soundtest
   platforms:
   - android
   - ios
   requirePhoneBinding: false
-  withReminder: false
-- ID: a07cc1f8-da50-4786-b2f8-e50ea4848ee8
-  type: 11
+  withReminder: true
+- ID: 91e4e0cf-d239-4b33-adb1-66b30f2be2e2
+  type: 10
   category: 0
   lifeCycle: 0
   targetAudience: 0
@@ -170,25 +146,62 @@ missions:
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2112_jp_hanabi
-    amount: 1
+    rewardID: 2202_lovebirds_0
+    amount: 30
     expireTimeSecs: 86400
-  i18nTitle: hk_mission_47
-  i18nTitleParams: []
+  i18nTitle: baggage_mission_first_time_IAP_point_tw_event_title_event
+  i18nTitleParams:
+  - value: "7320"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: 2112-hk-dailymission-gift-desc-1
+  i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
   i18nDescriptionParams: []
-  goalValue: 1
+  goalValue: 7320
   enableTimeRange:
-  - startTime: 2021-12-09 18:00:00 (GMT+0800)
-    endTime: 2021-12-27 00:00:00 (GMT+0800)
+  - startTime: 2022-02-08 16:00:00 (GMT+0800)
+    endTime: 2022-02-18 23:59:59 (GMT+0800)
   refIDs: []
   platforms:
   - android
   - ios
   requirePhoneBinding: false
-  withReminder: false
+  withReminder: true
+- ID: 3845ed91-9b71-4393-b21a-f3ac6da97166
+  type: 10
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2202_lovebirds_0
+    amount: 45
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_first_time_IAP_point_tw_event_title_event
+  i18nTitleParams:
+  - value: "20000"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
+  i18nDescriptionParams: []
+  goalValue: 20000
+  enableTimeRange:
+  - startTime: 2022-02-08 16:00:00 (GMT+0800)
+    endTime: 2022-02-18 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
 - ID: 2fb01b01-b007-45d5-a5b4-ee3fefccf6db
   type: 9
   category: 0
@@ -1093,35 +1106,6 @@ missions:
   - e8597343-03c7-453f-7d37-0f6ca7648fbc
   - 5248fa49-4fed-4665-94dc-5ffc8007dbb1
   - eea2cdab-c8af-42de-87b7-e9b5d8846130
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 21334f37-b9f2-4f59-b0dd-e767cae8e937
-  type: 24
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 2
-    rewardID: alex-test-3
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_daily_checkin_title
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_daily_checkin_descr
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2021-02-01 10:00:00 (GMT+0800)
-    endTime: 2021-12-31 23:59:59 (GMT+0800)
-  refIDs: []
   platforms:
   - android
   - ios
