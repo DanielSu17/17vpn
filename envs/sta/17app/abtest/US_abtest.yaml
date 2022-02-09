@@ -765,7 +765,7 @@
 # group B enable value prop intro
 - testName: valuePropIntro
   enableABtest: true
-  byDeviceID: true
+  byAdvertisementID: true
   lastCharGroup:
     "0": "b"
     "1": "b"
@@ -881,6 +881,29 @@
 # group B uses new interest selector skin
 - testName: onboardingInterestSelector
   enableABtest: true
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
+
+# Image set selector for value prop intro
+# JIRA: APP-33257
+- testName: valuePropIntroImageSet
+  enableABtest: true
+  byAdvertisementID: true
   lastCharGroup:
     "0": "a"
     "1": "a"
