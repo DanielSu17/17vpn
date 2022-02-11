@@ -40,6 +40,39 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
+- ID: 1227be25-b9bc-4621-ac5c-7f448c3c84ed
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2202_lovebirds_0
+    amount: 3
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_opt_send_specific_gifts_reward_us_3times_mirrorball
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_send_gifts
+  i18nDescriptionParams:
+  - value: "3"
+    mapOption: 0
+    fontAttribute: null
+  goalValue: 3
+  enableTimeRange:
+  - startTime: 2022-02-10 17:00:00 (GMT+0800)
+    endTime: 2022-02-18 23:59:59 (GMT+0800)
+  refIDs:
+  - soundtest
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
 - ID: 1dc79f3e-df7c-42a5-bb24-d1f1fc6df67f
   type: 24
   category: 0
@@ -85,7 +118,6 @@ missions:
   i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
   i18nTitleParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
@@ -118,7 +150,6 @@ missions:
   i18nTitle: baggage_mission_send_gifts
   i18nTitleParams:
   - value: "5"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
@@ -152,7 +183,6 @@ missions:
   i18nTitle: baggage_mission_first_time_IAP_point_tw_event_title_event
   i18nTitleParams:
   - value: "7320"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
@@ -185,7 +215,6 @@ missions:
   i18nTitle: baggage_mission_first_time_IAP_point_tw_event_title_event
   i18nTitleParams:
   - value: "20000"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
