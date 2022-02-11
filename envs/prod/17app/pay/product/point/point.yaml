@@ -202,16 +202,17 @@ eventBasedIAP:
 #7/15 閃購 已被8/22 閃購取代
 #8/22 閃購 已被8/29 閃購取代
 #8/29 閃購
-  - startTime: "2021-08-29T00:00:00+08:00"
-    endTime: "2021-08-29T23:59:59+08:00"
-    showCountdownUnderSticker: true
-    showCountdownInPopUp: true
-    stickerURL: "https://cdn.17app.co/90b74a62-1bf6-440b-9c9e-2ad89197ad94.png" 
-    stickerURLInGiftbox: "https://cdn.17app.co/90b74a62-1bf6-440b-9c9e-2ad89197ad94.png" #好像壞掉了
+#2/14 ~ 2/16 IAP比翼鳥 Banner - Willie
+  - startTime: "2022-02-14T13:00:00+08:00"
+    endTime: "2022-02-16T23:59:59+08:00"
+    showCountdownUnderSticker: false
+    showCountdownInPopUp: false
+    stickerURL: "https://cdn.17app.co/89b4ade1-c754-4701-a425-2ac41885f8e6.png"
+    stickerURLInGiftbox: "https://cdn.17app.co/89b4ade1-c754-4701-a425-2ac41885f8e6.png"
     eventInfo: #don't change  (Ask ENG if there are any new changes? ENG-17 channel)
       eventTitleI18nKey: ""
       eventURL: ""
-      bannerImageURL: "https://cdn.17app.co/694f5085-56b5-4ec7-aee9-09cf9c6cb6ae.png" #IAP頁面上的圖
+      bannerImageURL: "https://cdn.17app.co/955434dd-eabb-418a-8d10-0f2ea10afa2c.png" #IAP頁面上的圖
     layoutInfo: #don't change 
       titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png" #需要問工程師
       messageColor: "#6F6777"
@@ -240,15 +241,15 @@ eventBasedIAP:
         bonusPoint: 0
         shouldHighlight:  false
       - productID: "media17_points_8550"
-        bonusPoint: 300
-        shouldHighlight:  true
+        bonusPoint: 0
+        shouldHighlight:  false
       - productID: "media17_points_15420"
         bonusPoint: 0
         shouldHighlight: false
       - productID: "media17_points_35980"
-        bonusPoint: 1500
-        shouldHighlight: true
-    firstPurchaseType: 0
+        bonusPoint: 0
+        shouldHighlight: false
+    firstPurchaseType: 2
     taInfo:
       registerRange:
         dayStart: 0 # 0 means no limit
@@ -256,16 +257,17 @@ eventBasedIAP:
     displayRewardInfo: true  #要問工程師
     abtestName:
 #7/16 閃購
-  - startTime: "2021-07-16T00:00:00+08:00"
-    endTime: "2021-07-16T23:59:59+08:00"
-    showCountdownUnderSticker: false
-    showCountdownInPopUp: false
-    stickerURL: "https://cdn.17app.co/90b74a62-1bf6-440b-9c9e-2ad89197ad94.png" 
-    stickerURLInGiftbox: "https://cdn.17app.co/90b74a62-1bf6-440b-9c9e-2ad89197ad94.png" #好像壞掉了
+#2/17 IAP比翼鳥 閃購 - Willie
+  - startTime: "2022-02-17T00:00:00+08:00"
+    endTime: "2022-02-18T00:00:00+08:00"
+    showCountdownUnderSticker: true
+    showCountdownInPopUp: true
+    stickerURL: "https://cdn.17app.co/89b4ade1-c754-4701-a425-2ac41885f8e6.png"
+    stickerURLInGiftbox: "https://cdn.17app.co/89b4ade1-c754-4701-a425-2ac41885f8e6.png"
     eventInfo: #don't change  (Ask ENG if there are any new changes? ENG-17 channel)
       eventTitleI18nKey: ""
       eventURL: ""
-      bannerImageURL: "https://cdn.17app.co/043ba762-be33-47b8-be9b-3d903f473a21.png" #IAP頁面上的圖
+      bannerImageURL: "https://cdn.17app.co/955434dd-eabb-418a-8d10-0f2ea10afa2c.png" #IAP頁面上的圖
     layoutInfo: #don't change 
       titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png" #需要問工程師
       messageColor: "#6F6777"
@@ -291,17 +293,17 @@ eventBasedIAP:
         bonusPoint: 0
         shouldHighlight:  false
       - productID: "media17_points_3540"
-        bonusPoint: 0
-        shouldHighlight:  false
+        bonusPoint: 110
+        shouldHighlight:  true
       - productID: "media17_points_8550"
-        bonusPoint: 0
-        shouldHighlight:  false
+        bonusPoint: 430
+        shouldHighlight:  true
       - productID: "media17_points_15420"
         bonusPoint: 0
         shouldHighlight: false
       - productID: "media17_points_35980"
-        bonusPoint: 0
-        shouldHighlight: false
+        bonusPoint: 2520
+        shouldHighlight: true
     firstPurchaseType: 0
     taInfo:
       registerRange:
