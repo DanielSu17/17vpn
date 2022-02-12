@@ -65,6 +65,12 @@ labelInfos:
     featured: true
     labelID: 107
     order: 610
+  - id: "be_my_valentine" # 2022-02 情人節活動
+    type: 1
+    label:
+      key: "streamer_label_be_my_valentine"
+    iconURL: "https://assets-17app.akamaized.net/0b888fc8-9d1f-4e05-8393-e1b946b554d4.png"
+    featured: true
   - id: "artist" # 藝人
     type: 1
     label:
@@ -139,6 +145,7 @@ labelInfos:
 
 # 探索頁面會出現的label
 exploreLabels:
+  #- bemyvalentine #2022-02-13 情人節活動
   - artist
   - kol 
   - Music
@@ -150,6 +157,7 @@ exploreLabels:
 
 # labelWhiteList defines relation between label and user list
 labelWhiteList:
+  #be_my_valentine:
   HKDJ:
     - 9b4a4683-5276-45f0-8390-220ee02c67af
     - 83497bb2-291f-4553-a133-97944f5ab70a
