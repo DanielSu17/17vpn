@@ -85,7 +85,6 @@ missions:
   i18nTitle: baggage_mission_IAP_reward_jp_daily_charge_name
   i18nTitleParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
@@ -102,8 +101,141 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-
-
+- ID: bb9b904a-50af-4612-8e54-d8d8a1f61d53
+  type: 3
+  category: 0
+  lifeCycle: 1
+  targetAudience: 0
+  levelRange:
+    min: 10
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2202_jp_horse_bp
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: 2202_jp_pakapakauma_titile
+  i18nTitleParams:
+  - value: "1"
+    mapOption: 0
+    fontAttribute: null
+  - value: 2202_jp_horse_bag_s
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: 2202_jp_pakapakauma_desc
+  i18nDescriptionParams:
+  - value: "1"
+    mapOption: 0
+    fontAttribute: null
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2022-03-03 00:00:00 (GMT+0900)
+    endTime: 2022-03-03 23:59:59 (GMT+0900)
+  refIDs:
+  - 2202_jp_horse_bag_s
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: 1ba78d37-77cc-4a2b-bb65-52a6ae72d1be
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 1811_jp_dailymission2_1
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "5"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 300
+  enableTimeRange:
+  - startTime: 2022-02-16 00:00:00 (GMT+0900)
+    endTime: 2024-02-15 23:59:59 (GMT+0900)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 935640ae-8dc1-4bda-8710-f1c90d8dd3a3
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2019_jp_share_3streamers
+    amount: 10
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "30"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 1800
+  enableTimeRange:
+  - startTime: 2022-02-16 00:00:00 (GMT+0900)
+    endTime: 2024-02-15 23:59:59 (GMT+0900)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: e38bb85e-77cc-4f89-a194-560d56e9908b
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2019_jp_share_twitter
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "1"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 60
+  enableTimeRange:
+  - startTime: 2022-02-16 00:00:00 (GMT+0900)
+    endTime: 2024-02-15 23:59:59 (GMT+0900)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
 - ID: dcdea822-8976-496b-b04d-1f22afacb2ad
   type: 9
   category: 0
@@ -120,7 +252,6 @@ missions:
   i18nTitle: baggage_mission_IAP_reward_jp_nmb
   i18nTitleParams:
   - value: ""
-    needMap: false
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
@@ -132,13 +263,12 @@ missions:
   - startTime: 2022-02-09 19:00:00 (GMT+0900)
     endTime: 2022-02-21 23:59:59 (GMT+0900)
   refIDs:
-  - 5a948003-8754-40eb-a1aa-8b95c38eee13 # NMB48_official
+  - 5a948003-8754-40eb-a1aa-8b95c38eee13
   platforms:
   - android
   - ios
   requirePhoneBinding: false
   withReminder: false
-
 - ID: 840e4604-261f-449f-b219-2bb60cad7b30
   type: 9
   category: 0
@@ -155,7 +285,6 @@ missions:
   i18nTitle: baggage_mission_IAP_reward_jp_nmb
   i18nTitleParams:
   - value: ""
-    needMap: false
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
@@ -167,14 +296,12 @@ missions:
   - startTime: 2022-02-23 00:00:00 (GMT+0900)
     endTime: 2022-03-18 23:59:59 (GMT+0900)
   refIDs:
-  - 5a948003-8754-40eb-a1aa-8b95c38eee13 # NMB48_official
+  - 5a948003-8754-40eb-a1aa-8b95c38eee13
   platforms:
   - android
   - ios
   requirePhoneBinding: false
   withReminder: false
-
-
 - ID: d8dc1879-5d5a-44fe-a063-0189c326516b
   type: 10
   category: 0
@@ -912,132 +1039,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: true
-- ID: c1c9149e-72ff-4517-9990-41b43ba1d2be
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 10
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2201_jp_valenparty_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: 2201_jp_valenparty_biglove
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2201_jp_valenparty_m
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: 2201_jp_valenparty_desc
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-02-08 00:00:00 (GMT+0900)
-    endTime: 2022-02-13 23:59:59 (GMT+0900)
-  refIDs:
-  - 2201_jp_valenparty_m
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: cc112747-c622-4d54-8e12-d91ec45259be
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 10
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2201_jp_valenparty_bp
-    amount: 12
-    expireTimeSecs: 86400
-  i18nTitle: 2201_jp_valenparty_vlove
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2201_jp_valenparty_l
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: 2201_jp_valenparty_desc
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-02-08 00:00:00 (GMT+0900)
-    endTime: 2022-02-13 23:59:59 (GMT+0900)
-  refIDs:
-  - 2201_jp_valenparty_l
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 41711cca-46f4-416d-94dc-6a6177140dcd
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 10
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2201_jp_valenparty_bp
-    amount: 50
-    expireTimeSecs: 86400
-  i18nTitle: 2201_jp_valenparty_splove
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2201_jp_valenparty_xl
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: 2201_jp_valenparty_desc
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-02-08 00:00:00 (GMT+0900)
-    endTime: 2022-02-13 23:59:59 (GMT+0900)
-  refIDs:
-  - 2201_jp_valenparty_xl
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
 - ID: ab432b30-6626-4ab4-8a41-d541e1e74cd0
   type: 8
   category: 0
@@ -1054,7 +1055,6 @@ missions:
   i18nTitle: baggage_mission_first_time_IAP_reward_jp_event_title
   i18nTitleParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
@@ -1062,7 +1062,6 @@ missions:
   i18nDescription: baggage_mission_opt_first_time_IAP_reward_jp_event_des
   i18nDescriptionParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   goalValue: 1
@@ -1091,7 +1090,6 @@ missions:
   i18nTitle: baggage_mission_watch_jp_artist17
   i18nTitleParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
@@ -1099,7 +1097,6 @@ missions:
   i18nDescription: baggage_mission_kabe_watching_reward_jp_desc
   i18nDescriptionParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   goalValue: 10
@@ -1107,48 +1104,6 @@ missions:
   - startTime: 2022-02-01 15:00:00 (GMT+0900)
     endTime: 2022-02-15 23:59:59 (GMT+0900)
   refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 688ca585-9403-4d1b-a132-9ec9188c0f9c
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 10
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2202_jp_springflower_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: 2202_jp_springflower_a_new
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2202_jp_springflower_a_bag_s
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: 2202_jp_springflower_desc_new
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-02-02 15:00:00 (GMT+0900)
-    endTime: 2022-02-09 23:59:59 (GMT+0900)
-  refIDs:
-  - 2202_jp_springflower_a_bag_s
   platforms:
   - android
   - ios
@@ -1170,11 +1125,9 @@ missions:
   i18nTitle: 2202_jp_springflower_b_new
   i18nTitleParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   - value: 2202_jp_springflower_b_bag_s
-    needMap: false
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
@@ -1182,7 +1135,6 @@ missions:
   i18nDescription: 2202_jp_springflower_desc_new
   i18nDescriptionParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   goalValue: 1
@@ -1212,11 +1164,9 @@ missions:
   i18nTitle: 2202_jp_springflower_c_new
   i18nTitleParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   - value: 2202_jp_springflower_c_bag_s
-    needMap: false
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
@@ -1224,7 +1174,6 @@ missions:
   i18nDescription: 2202_jp_springflower_desc_new
   i18nDescriptionParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   goalValue: 1
@@ -1233,43 +1182,6 @@ missions:
     endTime: 2022-02-26 23:59:59 (GMT+0900)
   refIDs:
   - 2202_jp_springflower_c_bag_s
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 23dec62f-f94a-4391-b4e9-7f62bf1420c9
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 17
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2202_jp_darkvanlentine_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_jp_17real
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: 2202_jp_uravalenparty_desc_1
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 1020
-  enableTimeRange:
-  - startTime: 2022-02-01 15:00:00 (GMT+0900)
-    endTime: 2022-02-13 23:59:59 (GMT+0900)
-  refIDs: []
   platforms:
   - android
   - ios
@@ -1291,11 +1203,9 @@ missions:
   i18nTitle: 2202_jp_uravalenparty_title1
   i18nTitleParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   - value: 2202_jp_darkvanlentine_m
-    needMap: false
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
@@ -1303,7 +1213,6 @@ missions:
   i18nDescription: 2202_jp_uravalenparty_desc_2
   i18nDescriptionParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   goalValue: 1
@@ -1333,11 +1242,9 @@ missions:
   i18nTitle: jp_train_treasure17
   i18nTitleParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   - value: gift_bag_17treasures
-    needMap: false
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
@@ -1345,7 +1252,6 @@ missions:
   i18nDescription: 2202_jp_uravalenparty_desc_2
   i18nDescriptionParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   goalValue: 1
@@ -1375,11 +1281,9 @@ missions:
   i18nTitle: 2202_jp_uravalenparty_title2
   i18nTitleParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   - value: 2202_jp_darkvanlentine_l
-    needMap: false
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
@@ -1387,7 +1291,6 @@ missions:
   i18nDescription: 2202_jp_uravalenparty_desc_2
   i18nDescriptionParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   goalValue: 1
@@ -1417,11 +1320,9 @@ missions:
   i18nTitle: 2202_jp_uravalenparty_title3
   i18nTitleParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   - value: star_rain
-    needMap: false
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
@@ -1429,7 +1330,6 @@ missions:
   i18nDescription: 2202_jp_uravalenparty_desc_2
   i18nDescriptionParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   goalValue: 1
@@ -1459,11 +1359,9 @@ missions:
   i18nTitle: JP_shinjin_ginga
   i18nTitleParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   - value: gift_galaxy_bag
-    needMap: false
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
@@ -1471,7 +1369,6 @@ missions:
   i18nDescription: 2202_jp_uravalenparty_desc_2
   i18nDescriptionParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   goalValue: 1
@@ -1485,7 +1382,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-#ゆけ、トップライバーへの登竜門！vol.40
 - ID: 32e899db-857c-4797-b993-988f60a35fc4
   type: 8
   category: 0
@@ -1502,7 +1398,6 @@ missions:
   i18nTitle: baggage_mission_first_time_IAP_reward_jp_event_title
   i18nTitleParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
@@ -1510,7 +1405,6 @@ missions:
   i18nDescription: baggage_mission_opt_first_time_IAP_reward_jp_event_des
   i18nDescriptionParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   goalValue: 1
@@ -1523,7 +1417,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-#手を伸ばせ！輝くトップライバーの星 vol.21
 - ID: 2fe802b7-0217-49ce-b99d-f69024cfe7c2
   type: 9
   category: 0
@@ -1540,7 +1433,6 @@ missions:
   i18nTitle: baggage_mission_watch_jp_17real
   i18nTitleParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
@@ -1548,7 +1440,6 @@ missions:
   i18nDescription: baggage_mission_comment_jp_topstr
   i18nDescriptionParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   goalValue: 1020
@@ -1556,49 +1447,6 @@ missions:
   - startTime: 2022-02-17 15:00:00 (GMT+0900)
     endTime: 2022-02-27 23:59:59 (GMT+0900)
   refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-#わたしが優勝！ぱかぱかウマベイビー
-- ID: bb9b904a-50af-4612-8e54-d8d8a1f61d53
-  type: 3
-  category: 0
-  lifeCycle: 1
-  targetAudience: 0
-  levelRange:
-    min: 10
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2202_jp_horse_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: 2202_jp_pakapakauma_titile
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  - value: 2202_jp_horse_bag_s
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: 2202_jp_pakapakauma_desc
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-03-03 00:00:00 (GMT+0900)
-    endTime: 2022-03-03 23:59:59 (GMT+0900)
-  refIDs:
-  - 2202_jp_horse_bag_s
   platforms:
   - android
   - ios
@@ -1620,7 +1468,6 @@ missions:
   i18nTitle: jp_watch_streaming_30s
   i18nTitleParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
@@ -1628,7 +1475,6 @@ missions:
   i18nDescription: jp_chotoreal_11
   i18nDescriptionParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   goalValue: 30
