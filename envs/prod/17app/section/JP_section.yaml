@@ -30,14 +30,16 @@ sections:
  #   style: 2
  #   more: false
 
-  - id: NewestStreamer # D0 new streamer
+  - id: Label # 新人さん歓迎
+    labelID: jp_welcome
     name:
-      key: tab_hot_d0streamer
+      key: streamer_jp_label_welcome
     enable: true
     dedup: true
     minGrids: 5
     style: 3
     more: true
+    category: normal
     orderModel: 2
 
   - id: Label #　音楽メイキング配信
@@ -52,19 +54,6 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: Label #　17LIVE GAME DAY
-    labelID: 2201_jp_gameday
-    name:
-      key: streamer_jp_label_gameday
-    enable: true
-    dedup: true
-    minGrids: 3
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
-
   - id: Suggestion # 猜你可能喜歡
     name:
       key: tab_hot_2019q4_follow_suggestion
@@ -73,43 +62,6 @@ sections:
     style: 6
     minGrids: 5
     more: true
-    orderModel: 2
-
-
-  - id: Label # 楽器演奏
-    labelID: jp_instrument
-    name:
-      key: streamer_jp_label_instrument
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
-  - id: Label # 新人さん歓迎
-    labelID: jp_welcome
-    name:
-      key: streamer_jp_label_welcome
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
-  - id: Label
-    labelID: jp_game
-    name:
-      key: explore_jp_label_game
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    category: normal
     orderModel: 2
 
   - id: Label # 歌
@@ -136,6 +88,30 @@ sections:
     category: normal
     orderModel: 2
 
+  - id: Label
+    labelID: jp_game
+    name:
+      key: explore_jp_label_game
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # 楽器演奏
+    labelID: jp_instrument
+    name:
+      key: streamer_jp_label_instrument
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
   - id: Label # 占い
     labelID: jp_fortune
     name:
@@ -148,7 +124,6 @@ sections:
     category: normal
     orderModel: 2
 
-
   - id: PK
     name:
       key: tab_hot_2019q4_pk
@@ -157,7 +132,6 @@ sections:
     minGrids: 6 # 2個直播間一組PK，3組以上顯示
     style: 3
     more: true
-
 
   - id: GroupCall # GroupCall 
     name:
@@ -168,23 +142,20 @@ sections:
     style: 9 
     more: true
 
+  - id: NewestStreamer # D0 new streamer
+    name:
+      key: tab_hot_d0streamer
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    orderModel: 2
 
   - id: Label # 創作・制作
     labelID: 2111_jp_sousaku
     name:
       key: streamer_jp_label_sousaku
-    enable: true
-    dedup: true
-    minGrids: 3
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
-  - id: Label # お絵かき
-    labelID: 2111_jp_oekaki
-    name:
-      key: streamer_jp_label_oekaki
     enable: true
     dedup: true
     minGrids: 3
@@ -205,13 +176,13 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: Label
-    labelID: jp_V-LIVER
+  - id: Label # お絵かき
+    labelID: 2111_jp_oekaki
     name:
-      key: explore_jp_label_vliver
+      key: streamer_jp_label_oekaki
     enable: true
     dedup: true
-    minGrids: 5
+    minGrids: 3
     style: 3
     more: true
     category: normal
@@ -229,15 +200,6 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: AudioStream # AudioStream 聲播
-    name:
-      key: ラジオ配信 #audio_stream_v3hotpage
-    enable: true
-    dedup: false
-    minGrids: 2
-    style: 3 
-    more: true
-
   - id: Latest # 新人(和『最新』同邏輯)
     name:
       key: tab_hot_2019q4_newstreamer
@@ -247,6 +209,27 @@ sections:
     style: 3
     more: true
     orderModel: 2
+
+  - id: Label
+    labelID: jp_V-LIVER
+    name:
+      key: explore_jp_label_vliver
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: AudioStream # AudioStream 聲播
+    name:
+      key: ラジオ配信 #audio_stream_v3hotpage
+    enable: true
+    dedup: false
+    minGrids: 2
+    style: 3 
+    more: true
 
   - id: Vod # 熱門影音
     name:
@@ -315,7 +298,6 @@ sections:
     more: true
     category: normal
     orderModel: 2
-
 
 
 
