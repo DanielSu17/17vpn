@@ -1,5 +1,5 @@
 - testName: entryTitleTypeA # PROD-3617
-  enableABtest: false 
+  enableABtest: false
   expiredSecond: 604800
   lastCharGroup:
     "0": "a"
@@ -803,6 +803,28 @@
 # group A: Disable streamline navigation circle section
 # group B: Enable streamline navigation circle section
 - testName: streamlineNavigationCircleSection
+  enableABtest: true
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
+# group A: Disable genreLive page promotion area
+# group B: Enable genreLive page promotion area
+- testName: genreLivePromotionArea
   enableABtest: true
   lastCharGroup:
     "0": "b"
