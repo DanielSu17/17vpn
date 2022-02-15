@@ -12,4 +12,9 @@ defaultSort: recommended
 refreshSecond: 300 # 60 * 5
 
 withSubcategory:
-  categories: ["Label:tw_t_game","Label:tw_music"]
+  categories: ["Label:tw_t_game"] # to be deprecate
+  regionCategories: 
+    "TW":
+      - "Label:tw_t_game"
+    "JP":
+      - "Label:jp_game"
