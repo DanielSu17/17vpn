@@ -40,6 +40,38 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
+- ID: 9cfbda30-9a6f-4af3-aa47-bc0bd792baa1
+  type: 9
+  category: 0
+  lifeCycle: 1
+  targetAudience: 0
+  levelRange:
+    min: 3
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2202_tw_springparty_a_bp
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "5"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 300
+  enableTimeRange:
+  - startTime: 2022-02-15 18:00:00 (GMT+0800)
+    endTime: 2022-02-17 17:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: false
 - ID: 5da1b0fc-4cc5-423f-802e-00bb642f34e2
   type: 24
   category: 0
@@ -819,38 +851,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: true
-- ID: 9cfbda30-9a6f-4af3-aa47-bc0bd792baa1
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 3
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2202_tw_springparty_a_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "5"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 300
-  enableTimeRange:
-  - startTime: 2022-02-15 18:00:00 (GMT+0800)
-    endTime: 2022-02-17 17:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: false
 - ID: d3041e81-864a-4020-bc2f-dab7be1d46ea
   type: 5
   category: 0
