@@ -1,4 +1,4 @@
-max: 3 # 0 means disable feature
+max: 10 # 0 means disable feature
 check_interval: 1m00s
 big_brother_prefix: "give_me_five"
 nian_prefix: "nian"
@@ -70,8 +70,8 @@ monsters:
       }
     marqueeToken: { key: monster_battle_marquee_puppet }
     summonGifts: # 招喚怪獸才需要填
-      - giftID:
-        probability:
+      - giftID: lovegif
+        probability: 10000
 
 #  - id: monster_anniversary5 # 寶寶五週年
 #    type: 1 # 0: 一般怪獸, 1: 招喚怪獸
