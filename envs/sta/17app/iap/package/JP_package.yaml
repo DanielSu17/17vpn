@@ -13,12 +13,13 @@
 # // | barrage      | 3     | baby, normal, rocket, spaceship
 merchandises:
 #shiin test for iOS 日本
-  - intervalID: MINV-1gCqlJ5pqRG50gdSKkXft6H9f3a
-    merchandiseID: media17_giftpackage_tier4_202008_us
-    productsOrder:
-      - gift_beer_3_7
-      - gift_kiss_3_7
+  - intervalID: MINV-25Dhn0rUvIvJASsdrgcvzEFY1M3
+    merchandiseID: media17_giftpackage_tier1_202202_jp
+    productsOrder: 
+      - gift_2202_jp_startdash2_3_30
+      - gift_2202_jp_startdash1_3_30
     bonusesOrder:
+      - premiumbaby_720_hrs
     addons:
       displayCountdown: true
       countdownSecs: 86400
@@ -31,6 +32,37 @@ merchandises:
           text:
             key: iap_store_giftpackage_dialog_gift_desc
     purchaseType: 1
+    taInfo: 
+        registerRange:
+          dayStart: 0
+          dayEnd: 7
+        type:
+
+#shiin test for Android 日本
+  - intervalID: MINV-25Dhn4Hn8cBoQwFi64nJalfyhpE
+    merchandiseID: media17_giftpackage_tier1_202202_jp
+    productsOrder: 
+      - gift_2202_jp_startdash2_3_30
+      - gift_2202_jp_startdash1_3_30
+    bonusesOrder:
+      - premiumbaby_720_hrs
+    addons:
+      displayCountdown: true
+      countdownSecs: 86400
+      title:
+        key: iap_store_giftpackage_summer_us
+      titleImageURL: https://cdn.17app.co/392ead48-62dc-4321-9a86-923458ce19ab.png
+      discountImageURL:
+      description:
+        - imageURL:
+          text:
+            key: iap_store_giftpackage_dialog_gift_desc
+    purchaseType: 1
+    taInfo: 
+        registerRange:
+          dayStart: 0
+          dayEnd: 7
+        type:
 
 #shiin test for Android 日本
   - intervalID: MINV-1gCqlPM66GKEfYy46uhG1iZCs8p
@@ -83,7 +115,40 @@ merchandises:
         registerRange:
           dayStart: 0
           dayEnd: 0
-        type: 3
+        type:
+
+#shirley test for iOS 日本
+  - intervalID: MINV-1ef5HjUfeASnP1HwbOKFVCDHkut
+    merchandiseID: media17_giftpackage_tier4
+    productsOrder:
+      - gift_giftpack_3d_welcome_17_30
+      - gift_giftpack_jetcoaster_17_30
+      - gift_gift_texture_rabbit_hat_17_30
+      - gift_2007_us_supa_bp_17_30
+    bonusesOrder:
+    addons:
+      displayCountdown: true
+      countdownSecs: 86400
+      title:
+        key: iap_store_giftpackage_newbie
+      titleImageURL: https://cdn.17app.co/392ead48-62dc-4321-9a86-923458ce19ab.png
+      discountImageURL: https://cdn.17app.co/3070b436-9fd0-4e72-8036-193a3317751c.png
+      description:
+        - imageURL: https://cdn.17app.co/829a6a48-ab1a-4f06-bc96-80630aa13083.png
+          text:
+            key: iap_store_giftpackage_dialog_premium_desc
+        - imageURL: https://cdn.17app.co/8cab3332-2e53-48e2-a588-dc469b091641.png
+          text:
+            key: iap_store_giftpackage_dialog_barrage_desc
+        - imageURL:
+          text:
+            key: iap_store_giftpackage_dialog_gift_desc
+    purchaseType: 1
+    taInfo:
+        registerRange:
+          dayStart: 0
+          dayEnd: 0
+        type:
 
 #shirley test for Android 日本
   - intervalID: MINV-1ef5HaG7n5yWj2vCTnROqzab69M
