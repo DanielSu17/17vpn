@@ -103,17 +103,13 @@
   - name: k8ssta-gocells-main
     minReplicas: 6
 
-# stress test for ccu
-- startTime: "2022-01-17 11:30:00 (GMT+0800)"
-  endTime: "2022-01-17 14:30:00 (GMT+0800)"
+# stress test for sections max count
+- startTime: "2022-02-17 17:00:00 (GMT+0800)"
+  endTime: "2022-02-17 19:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8ssta-goapi-main
-    minReplicas: 100
-  - name: k8ssta-golives-main
-    minReplicas: 100
-  - name: k8ssta-gotrade-main
-    minReplicas: 24
+    minReplicas: 80
   - name: k8ssta-revprox-tw-main
     minReplicas: 36
   - name: k8ssta-gocells-main
-    minReplicas: 24
+    minReplicas: 40
