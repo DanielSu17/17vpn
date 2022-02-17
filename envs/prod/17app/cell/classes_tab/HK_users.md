@@ -1,1 +1,1 @@
-# HK Classes users (WIP, please use OTHERS until 9/20)
+# HK Classes users
