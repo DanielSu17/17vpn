@@ -6,8 +6,8 @@
     minReplicas: 20
 
 # weekly stress test
-- startTime: "2022-02-16 07:00:00 (GMT+0800)"
-  endTime: "2022-02-16 16:00:00 (GMT+0800)"
+- startTime: "2022-02-23 07:00:00 (GMT+0800)"
+  endTime: "2022-02-23 16:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8ssta-goapi-main
     minReplicas: 80
@@ -18,7 +18,7 @@
   - name: k8ssta-revprox-tw-main
     minReplicas: 36
   - name: k8ssta-gocells-main
-    minReplicas: 24
+    minReplicas: 30
   - name: k8ssta-concert-stream-tw-main
     minReplicas: 30
   - name: k8ssta-concert-trade-main
