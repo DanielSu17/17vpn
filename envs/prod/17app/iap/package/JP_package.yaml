@@ -131,7 +131,7 @@ merchandises:
 #    abtestName: ""
 
 #20222-02-22 スタートダッシュパック for iOS 日本
-  - intervalID: MINV-25DtwSi60A10Rxy5V37ujAsJYfp
+  - intervalID: MINV-25Dhn0rUvIvJASsdrgcvzEFY1M3
     merchandiseID: media17_giftpackage_tier1_202202_jp
     productsOrder:
       - premiumbaby_720_hrs
@@ -142,10 +142,13 @@ merchandises:
       displayCountdown: true
       countdownSecs: 86400
       title:
-        key: iap_store_giftpackage_summer_us
+        key: iap_store_giftpackage_summer_us #should fix the gift package name ( top banner)
       titleImageURL: https://cdn.17app.co/392ead48-62dc-4321-9a86-923458ce19ab.png
-      discountImageURL: https://cdn.17app.co/cf2ed6d7-36fc-4f4b-88ad-555e0e68eca7.png
+      discountImageURL:
       description:
+        - imageURL: https://cdn.17app.co/829a6a48-ab1a-4f06-bc96-80630aa13083.png
+          text:
+            key: iap_store_giftpackage_dialog_premium_desc
         - imageURL:
           text:
             key: iap_store_giftpackage_dialog_gift_desc
@@ -155,10 +158,10 @@ merchandises:
           dayStart: 0
           dayEnd: 0
         type: 3
-    abtestName: "" #禮包測試相關的abtest名稱, 需要 abtest.yaml也做相關的設定        
+    abtestName: "" #禮包測試相關的abtest名稱, 需要 abtest.yaml也做相關的設定
 
 #20222-02-22 スタートダッシュパック for Android 日本
-  - intervalID: MINV-25DtwQDTzo2PGI7qDKR9RVSFpCa
+  - intervalID: MINV-25Dhn4Hn8cBoQwFi64nJalfyhpE
     merchandiseID: media17_giftpackage_tier1_202202_jp
     productsOrder:
       - premiumbaby_720_hrs
@@ -169,11 +172,14 @@ merchandises:
       displayCountdown: true
       countdownSecs: 86400
       title:
-        key: iap_store_giftpackage_summer_us
+        key: iap_store_giftpackage_summer_us #should fix the gift package name ( top banner)
       titleImageURL: https://cdn.17app.co/392ead48-62dc-4321-9a86-923458ce19ab.png
       discountImageURL:
       description:
-        - imageURL: https://cdn.17app.co/8cab3332-2e53-48e2-a588-dc469b091641.png
+        - imageURL: https://cdn.17app.co/829a6a48-ab1a-4f06-bc96-80630aa13083.png
+          text:
+            key: iap_store_giftpackage_dialog_premium_desc
+        - imageURL:
           text:
             key: iap_store_giftpackage_dialog_gift_desc
     purchaseType: 1
@@ -182,6 +188,6 @@ merchandises:
           dayStart: 0
           dayEnd: 0
         type: 3
-    abtestName: "" #禮包測試相關的abtest名稱, 需要 abtest.yaml也做相關的設定        
+    abtestName: "" #禮包測試相關的abtest名稱, 需要 abtest.yaml也做相關的設定
 
 
