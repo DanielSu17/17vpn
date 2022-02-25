@@ -1,6 +1,23 @@
+# Diamond Mission Main Setting
 start_time: "2022-02-13 21:00:00 (GMT+0530)" # 2022-02-13 21:00:00 (GMT+0530)
 end_time: "2022-03-13 21:00:00 (GMT+0530)" # 2022-03-13 21:00:00 (GMT+0530)
 enable: false # true or false
 url: "https://www.google.com"
-diamond_duration_min: 259200 # 180 days = 180 * 24 * 60 mins = 259200 mins
 monthly_diamond_upperlimit: 200000
+
+# Diamonds Per Action
+shared_links_diamonds_per_action: 2
+viewers_diamonds_per_action: 5
+comments_diamonds_per_action: 1
+hearts_diamonds_per_action: 0.05
+
+# Max Daily Acquire Diamonds
+shared_links_max_daily_acquire_diamonds: 20 # N * shared_links_diamonds_per_action
+viewers_max_daily_acquire_diamonds: 60 # N * viewers_diamonds_per_action
+comments_max_daily_acquire_diamonds: 60 # N * comments_diamonds_per_action
+hearts_max_daily_acquire_diamonds: 10 # N * hearts_diamonds_per_action
+
+# Others
+diamond_duration_min: 259200 # 180 days = 180 * 24 * 60 mins = 259200 mins
+viewers_count_threshold: 10
+comments_unique_users_threshold: 5
