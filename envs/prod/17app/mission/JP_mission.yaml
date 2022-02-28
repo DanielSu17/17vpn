@@ -102,7 +102,7 @@ missions:
   requirePhoneBinding: false
   withReminder: false
 - ID: 738796fe-b24b-4994-87af-3beb9a069191
-  type: 8
+  type: 10
   category: 0
   lifeCycle: 1
   targetAudience: 2
@@ -116,14 +116,14 @@ missions:
     expireTimeSecs: 864000
   i18nTitle: baggage_mission_IAP_reward_jp_menu
   i18nTitleParams:
-  - value: "120"
+  - value: "1"
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
   i18nContentParams: []
   i18nDescription: baggage_mission_IAP_reward_jp_menu_desc
   i18nDescriptionParams: []
-  goalValue: 120
+  goalValue: 1
   enableTimeRange:
   - startTime: 2022-03-14 15:00:00 (GMT+0900)
     endTime: 2022-04-04 23:59:59 (GMT+0900)
@@ -1001,6 +1001,59 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: true
+- ID: e68cbf5c-c7c3-41dd-97fa-2a0eb2f87721
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2203_jp_osusume_liver
+    amount: 3
+    expireTimeSecs: 86400
+  i18nTitle: 「今週のおすすめ」タブのライバーを5分以上視聴しよう！
+  i18nTitleParams:
+  - value: "5"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: 「今週のおすすめ」タブで配信しているライバーを累計で5分以上視聴して、無料ギフトをゲットしよう！
+  i18nDescriptionParams: []
+  goalValue: 300
+  enableTimeRange:
+  - startTime: 2022-02-28 12:00:00 (GMT+0900)
+    endTime: 2022-12-31 23:59:59 (GMT+0900)
+  refIDs:
+  - 608011fd-579b-4e15-b154-3943f952c324
+  - a5633cbb-5364-4073-91cf-e6bbb123fcf2
+  - e994d758-c8c3-4ecf-8675-fe1b36d63e44
+  - 56b203c3-dc86-44e1-9484-6ca5abaf8e49
+  - de7dff62-7c20-403f-a076-ca56093b87aa
+  - 635e04ac-9008-4b96-a1df-2ebfb64966fe
+  - 94502084-c166-4328-928b-7e89b2c15f56
+  - c85fdb26-60a3-464f-a1ab-ffb0c6372ad1
+  - d9b03ec7-8e61-40d3-a8f6-484dcd29943b
+  - da39795b-0cc1-494d-aabf-2d4e7c49f374
+  - 3ba76611-5030-4738-b003-51db715d0b4f
+  - 71b74dc6-de09-4d24-80af-c7f8bf3a4a81
+  - feaf2ba1-7f2c-4d76-b083-815c3994e9e5
+  - 1e4ccaeb-5419-4e86-b4b7-379e4b2fd29f
+  - d4782b75-f1c5-4d81-a698-d8ff43dba72e
+  - 4f32b603-4fc9-4d26-ad2f-5d5cbb3b777e
+  - 0cb0daa8-8cdd-4eab-98b6-aca6dabcc5a8
+  - ea44b63f-0764-48db-9c16-dc63a4b64b6a
+  - 05467aad-f3e2-4c88-858a-a7bcb15910fc
+  - 403e4dd6-4657-4600-9b8c-34fbb3375ac7
+  - 598e245c-c933-4f9d-8efb-ee522ba6af45
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
 - ID: 1ba78d37-77cc-4a2b-bb65-52a6ae72d1be
   type: 9
   category: 0
