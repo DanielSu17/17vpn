@@ -1,0 +1,14 @@
+id: nakama
+status: 1
+upstream:
+  type: roundrobin
+  nodes:
+    nakama-main.nakama.svc.cluster.local:7350: 1
+  scheme: http
+uri: "/nakama/*"
+plugins:
+  proxy-rewrite:
+    regex_uri: 
+      - "^/nakama/(.*)"
+      - "/$1"
+priority: 0

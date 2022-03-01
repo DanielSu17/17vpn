@@ -1,9 +1,0 @@
-id: auth
-status: 0
-upstream:
-  type: roundrobin
-  nodes:
-    k8ssta-revprox-main.k8ssta.svc.cluster.local:80: 1
-  scheme: http
-uri: "/api/v1/auth/*"
-priority: 0
