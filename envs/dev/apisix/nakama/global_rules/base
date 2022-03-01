@@ -1,0 +1,27 @@
+id: '1'
+plugins:
+  tcp-logger:
+    host: "${{fluentd_addr}}"
+    port: "${{fluentd_port}}"
+    tls: false
+    batch_max_size: 3000
+    is_fluentd: true
+  real-ip:
+    source: http_x_forwarded_for
+  cors:
+    allow_origins: https://17.live
+    allow_credential: true
+    allow_methods: GET,POST,PATCH,PUT,DELETE
+    allow_headers: Content-Type,accessToken,deviceType,language,version,deviceID,X-Requested-With,skip-throttling,debug-level,Authorization,Trace-Id,Force-Region,userSelectedRegion,userIpRegion,17media-Custom-Host
+    expose_headers: "**"
+    allow_origins_by_regex:
+      - "^https://[-\\w]+\\.17\\.live$"
+      - "^https://[-\\w]+--17live\\.netlify\\.com$"
+      - "^https://[-\\w]+--17livef2e\\.netlify\\.com$"
+      - "^https?://[-\\w]+\\.17\\.media(:\\d+)?$"
+      - "^https?://[-\\w]+\\.17app\\.co(:\\d+)?$"
+      - "^http://17\\.local(:\\d+)?$"
+      - "^http://localhost(:\\d+)?$"
+      - http://dev.api.17app.co
+      - "^http://172.16.5.10(:\\d+)?$" # frontend dev
+      - "^http://34.80.221.101(:\\d+)?$" # for meme frontend

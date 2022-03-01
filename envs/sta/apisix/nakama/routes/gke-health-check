@@ -1,0 +1,9 @@
+id: gke-health-check
+status: 1
+plugins:
+  uri-blocker:
+    block_rules:
+    - "/"
+    rejected_code: 200
+uri: "/"
+priority: 0

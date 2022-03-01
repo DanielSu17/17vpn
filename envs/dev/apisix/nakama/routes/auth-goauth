@@ -1,0 +1,63 @@
+id: auth-goauth
+status: 1
+upstream:
+  type: roundrobin
+  nodes:
+    goauth:8001: 1
+  scheme: http
+uris: 
+  - /api/v1/auth*
+  - /api/v1/oauth*
+priority: 0
+plugin_config_id: 17-perimeterX
+plugins:
+  limit-count:
+    limiters:
+      - url: /api/v1/auth/phone/isInUse
+        method: POST
+        count: 5
+        time_window: 60
+        scope: by_ip
+      - url: /api/v1/auth/isPhoneNumberOpenIDPaired
+        method: POST
+        count: 5
+        time_window: 60
+        scope: by_ip
+      - url: /api/v1/auth/phone/sendVerificationCode
+        method: POST
+        count: 5
+        time_window: 60
+        scope: by_ip
+      - url: /api/v1/auth/sms/verify
+        method: POST
+        count: 5
+        time_window: 60
+        scope: by_ip
+      - url: /api/v1/auth/phone/register
+        method: POST
+        count: 5
+        time_window: 60
+        scope: by_ip
+      - url: /api/v1/auth/phone/change
+        method: POST
+        count: 5
+        time_window: 60
+        scope: by_ip
+      - url: /api/v1/auth/checkNeedHumanTest
+        method: POST
+        count: 5
+        time_window: 60
+        scope: by_ip
+      - url: /api/v1/auth/phone/sendVerificationCode
+        method: POST
+        count: 30
+        time_window: 60
+        scope: by_global
+    count: 0 # must, but unuse value
+    policy: redis
+    redis_host: ${{redis_host}}
+    redis_port: ${{redis_port}}
+    redis_password: ${{redis_pwd}}
+    redis_database: 0
+    redis_timeout: 1000
+    rejected_code: 522

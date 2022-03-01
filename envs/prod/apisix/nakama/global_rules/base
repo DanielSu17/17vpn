@@ -1,0 +1,150 @@
+id: '1'
+plugins:
+  datadog: {}
+  real-ip:
+    source: http_x_forwarded_for
+  ip-restriction:
+    ip_source: true-client-ip
+    blacklist:
+      - 39.13.166.207
+      #description: Blocked on https://17media.atlassian.net/browse/BUG-8906
+      #expire: 2021-11-27T00:00:00Z
+      - 34.97.119.52
+      #description: Blocked on 2020-12-22 https://17media.atlassian.net/browse/BUG-9130
+      #expire: 2021-06-22T00:00:00Z
+      - 39.10.9.49
+      #description: Blocked on 2020-10-19 https://17media.atlassian.net/browse/BUG-8578
+      #expire: 2021-04-19T00:00:00Z
+      - 27.52.133.152
+      #description: Blocked on 2020-08-26 https://17media.atlassian.net/browse/BUG-8228
+      #expire: 2021-02-26T00:00:00Z
+      - 39.13.167.140
+      #description: Blocked on 2020-08-26 https://17media.atlassian.net/browse/BUG-8228
+      #expire: 2021-02-26T00:00:00Z
+      - 110.30.153.33
+      #description: Blocked on 2020-08-26 https://17media.atlassian.net/browse/BUG-8228
+      #expire: 2021-02-26T00:00:00Z
+      - 182.167.84.101
+      #description: Blocked on 2020-08-24 https://17media.atlassian.net/browse/BUG-8101
+      #expire: 2021-02-24T00:00:00Z
+      - 119.247.9.131
+      #description: Blocked on 2020-08-24 https://17media.atlassian.net/browse/BUG-8101
+      #expire: 2021-02-24T00:00:00Z
+      - 47.88.159.151
+      #description: API robot
+      #expire: 9999-12-31T00:00:00Z
+      - 46.19.85.234
+      #description: https://17media.slack.com/archives/C466YU363/p1588055783463700
+      #expire: 9999-12-31T00:00:00Z
+      - 46.19.85.241
+      #description: https://17media.slack.com/archives/C466YU363/p1588055783463700
+      #expire: 9999-12-31T00:00:00Z
+      - 123.241.74.41
+      #description: bot
+      #expire: 9999-12-31T00:00:00Z
+      - 54.219.217.84
+      #description: bot
+      #expire: 9999-12-31T00:00:00Z
+      - 220.136.142.149
+      #description: bot
+      #expire: 9999-12-31T00:00:00Z
+      - 107.178.200.217
+      #description: bot
+      #expire: 9999-12-31T00:00:00Z
+      - 107.178.200.192
+      #description: bot
+      #expire: 9999-12-31T00:00:00Z
+      - 107.178.200.201
+      #description: bot
+      #expire: 9999-12-31T00:00:00Z
+      - 107.178.239.201
+      #description: bot
+      #expire: 9999-12-31T00:00:00Z
+      - 182.20.143.208
+      #description: Blocked on 2020-09-02 https://17media.atlassian.net/browse/BUG-8208
+      #expire: 2021-03-02T00:00:00Z
+      - 126.142.78.85
+      #description: Blocked on 2020-09-02 https://17media.atlassian.net/browse/BUG-8854
+      #expire: 2021-06-14T00:00:00Z
+      - 118.169.12.122
+      #description: loginbot
+      #expire: 9999-12-31T00:00:00Z
+      - 59.149.253.134
+      #description: followBot
+      #expire: 9999-12-31T00:00:00Z
+      - 59.149.253.146
+      #description: followBot
+      #expire: 9999-12-31T00:00:00Z
+      - 59.149.253.159
+      #description: followBot
+      #expire: 9999-12-31T00:00:00Z
+      - 114.42.209.11
+      #description: followBot
+      #expire: 9999-12-31T00:00:00Z
+      - 112.139.229.197
+      #description: Blocked on 2021-02-15
+      #expire: 9999-12-31T00:00:00Z
+      - 103.5.140.167
+      #description: Blocked on 2021-02-15
+      #expire: 9999-12-31T00:00:00Z
+      - 101.102.202.77
+      #description: Blocked on 2021-02-15
+      #expire: 9999-12-31T00:00:00Z
+      - 126.161.8.20
+      #description: Blocked on 2021-02-15
+      #expire: 9999-12-31T00:00:00Z
+      - 210.138.222.140
+      #description: Blocked on 2021-02-15
+      #expire: 9999-12-31T00:00:00Z
+      - 103.5.140.185
+      #description: Blocked on 2021-02-15
+      #expire: 9999-12-31T00:00:00Z
+      - 153.198.250.85
+      #description: Blocked on 2021-02-15
+      #expire: 9999-12-31T00:00:00Z
+      - 60.158.216.30
+      #description: Blocked on 2021-02-15
+      #expire: 9999-12-31T00:00:00Z
+      - 123.208.13.213
+      #description: Blocked on 2020-09-02 https://17media.atlassian.net/browse/APP-18601
+      #expire: 9999-12-31T00:00:00Z
+      - 137.25.26.98
+      #description: JIRA:APP-21745
+      #expire: 9999-12-31T00:00:00Z
+      - 42.3.101.77
+      #description: Blocked on 2021-08-21 for bot voting on Last Idol show
+      #expire: 2022-08-31T00:00:00Z
+      - 45.77.131.21
+      #description: access usersearch api from external, https://17live.online
+      #expire: 9999-12-31T00:00:00Z
+      - 167.179.113.215
+      #description: access usersearch api from external, https://17live.online
+      #expire: 9999-12-31T00:00:00Z
+      - 107.191.61.222
+      #description: access usersearch api from external, https://17live.online
+      #expire: 9999-12-31T00:00:00Z
+      - 198.13.32.222
+      #description: access usersearch api from external, https://17live.online
+      #expire: 9999-12-31T00:00:00Z
+      - 207.148.92.14
+      #description: access usersearch api from external, https://17live.online
+      #expire: 9999-12-31T00:00:00Z
+    message: server is down for maintenance temporarily
+  cors:
+    allow_origins: https://17.live
+    allow_credential: true
+    allow_methods: GET,POST,PATCH,PUT,DELETE
+    allow_headers: Content-Type,accessToken,deviceType,language,version,deviceID,X-Requested-With,skip-throttling,debug-level,Authorization,Trace-Id,Force-Region,userSelectedRegion,userIpRegion,17media-Custom-Host
+    expose_headers: "**"
+    allow_origins_by_regex:
+      - "^https://17\\.live$"
+      - "^https://[-\\w]+--17live\\.netlify\\.com$"
+      - "^https://[-\\w]+--17livef2e\\.netlify\\.com$"
+      - "^https://[-\\w]+\\.17\\.live$"
+      - "^https?://17\\.media$"
+      - "^https?://[-\\w]+\\.17\\.media$"
+      - "^https?://[-\\w]+\\.17app\\.co(:\\d+)?$"
+      - "^http://17\\.local(:\\d+)?$"
+      - "^http://localhost(:\\d+)?$"
+      - "^http://usskyeye\\.s3-website-us-west-2\\.amazonaws\\.com$" # for US skyeye
+      - "^http://172.16.5.10(:\\d+)?$" # frontend dev

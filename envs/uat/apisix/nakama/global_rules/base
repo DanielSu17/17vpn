@@ -1,0 +1,35 @@
+id: '1'
+plugins:
+  datadog: {}
+  real-ip:
+    source: http_x_forwarded_for
+  ip-restriction:
+    ip_source: true-client-ip
+    blacklist:
+      - 112.78.66.207
+      # description: Blocked for testing ericsta1
+      # expire: 2021-11-27T00:00:00Z
+      - 114.36.134.177
+      # description: Blocked for testing ericsta1
+      # expire: 2021-11-27T00:00:00Z
+    message: server is down for maintenance temporarily
+  cors:
+    allow_origins: https://17.live
+    allow_credential: true
+    allow_methods: GET,POST,PATCH,PUT,DELETE
+    allow_headers: Content-Type,accessToken,deviceType,language,version,deviceID,X-Requested-With,skip-throttling,debug-level,Authorization,Trace-Id,Force-Region,userSelectedRegion,userIpRegion,17media-Custom-Host
+    expose_headers: "**"
+    allow_origins_by_regex:
+      - "^https://[-\\w]+\\.17\\.live$"
+      - "^https://[-\\w]+--17live\\.netlify\\.com$"
+      - "^https://[-\\w]+--17livef2e\\.netlify\\.com$"
+      - "^https?://[-\\w]+\\.17\\.media(:\\d+)?$"
+      - "^https?://[-\\w]+\\.17app\\.co(:\\d+)?$"
+      - "^http://17\\.local(:\\d+)?$"
+      - "^http://localhost(:\\d+)?$"
+      - "^http://172.16.5.10(:\\d+)?$" # frontend dev
+      - "^http://34.81.122.93(:\\d+)?$" # frontend dev machine for Michael Hsu
+      - "^https://entry\\.17\\.live$" # frontend dev
+      - "^https://rc\\.17\\.live$" # frontend rc
+      - "^https://sta\\.17\\.live$" # frontend sta
+      - "^https://sta-entry\\.17\\.live$" # frontend sta

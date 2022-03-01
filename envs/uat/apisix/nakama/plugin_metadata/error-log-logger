@@ -1,0 +1,14 @@
+id: error-log-logger
+tcp:
+  host: "${{fluentd_addr}}"
+  port: "${{fluentd_port}}"
+  tls: false
+  is_fluentd: true
+level: WARN
+timeout: 3
+keepalive: 180
+batch_max_size: 1000
+max_retry_count: 0
+retry_delay: 1
+buffer_duration: 60
+inactive_timeout: 3

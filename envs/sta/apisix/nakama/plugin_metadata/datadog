@@ -1,0 +1,8 @@
+id: datadog
+namespace: apisix
+host: "${{HOSTIP}}"
+port: "${{datadog_port}}"
+constant_tags:
+  - pod_name:${{PODNAME}}
+  - dd_env:${{ENV_NAME}}
+  - dd_service:${{SERVICE_NAME}}

@@ -1,0 +1,64 @@
+# When the condition met protected_routes_with_methods call px api,
+# but only enforce_routes will be blocked.
+# The golang version have monitor_routes but it is actually redundant,
+# monitor_routes = protected_routes_with_methods - enforce_routes
+
+id: 17-perimeterX
+desc: perimeterX
+plugins:
+  perimeterX:
+    px_appId: "${{px_app_id}}"
+    cookie_secret: "${{px_cookie_secert}}"
+    auth_token: "${{px_auth_token}}"
+    px_enabled: true
+    protected_routes_with_methods:
+      # - route: "/api/v1/apigateway.*" invalid url
+      - route: "/api/v1/auth/.*"
+      - route: "/api/v1/legacy/followUserAction"
+        methods: ["POST"]
+      - route: "/api/v1/legacy/unfollowUserAction"
+        methods: ["POST"]
+      - route: "/api/v1/lives/.*/comments"
+        methods: ["POST"]
+      - route: "/api/v1/lives/.*/enter$"
+      - route: "/api/v1/liveStreams/suggestedLiveStreams$"
+      - route: "/api/v1/liveStreams/hotOptSuggestedstreams$"
+      - route: "/api/v1/redenvelopes/pick$"
+        methods: ["POST"]
+      - route: "/api/v1/redenvelopes/.*/pick$"
+      - route: "/api/v1/sections.*"
+      - route: "/api/v1/version"
+      - route: "/users/.*/info"
+        methods: ["GET"]
+      - route: "/users/.*/guardian"
+        methods: ["GET"]
+      - route: "/user/search"
+        methods: ["GET"]
+      - route: "/army/overview/.*/viewer"
+        methods: ["GET"]
+      - route: "/leaderboards"
+        methods: ["GET"]
+      - route: "/liveStreams/areUsersOnlive"
+        methods: ["POST"]
+    sensitive_headers:
+      - nonce
+      - accesstoken
+      - authorization
+    ip_headers:
+      - X-Forwarded-For
+    blocking_score: 100
+    block_enabled: true
+    enforce_routes:
+      - "/api/v1/auth/goodnight/register"
+      - "/api/v1/legacy/followUserAction"
+      - "/api/v1/legacy/unfollowUserAction"
+      - "/api/v1/lives/.*/laborReward$"
+      - "/api/v1/redenvelopes/pick$"
+      - "/api/v1/redenvelopes/.*/pick$"
+    s2s_timeout: 1000
+    px_debug: false
+    send_page_requested_activity: true
+    first_party_enabled: false
+    custom_logo: https://cdn.17app.co/perimeterx/blockLogo.png
+    css_ref: https://cdn.17app.co/perimeterx/block.css
+    js_ref: https://cdn.17app.co/perimeterx/block.js
