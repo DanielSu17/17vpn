@@ -1,9 +1,21 @@
+# HK Survey Location (Android)
 hotpagev3_slot1:
-  surveyID: "CSAT-20220304"
-  campaignID: "73a689ae-94ad-11ec-b909-0242ac120002"
+  surveyID: "CSAT-20220301-Formal"
+  campaignID: "a08164e8-9549-11ec-b909-0242ac120002"
   enabled: true
-  startTime: "2022-01-21T16:15:00+08:00"
+  startTime: "2022-03-01T00:00:00+08:00"
   endTime: "2022-03-31T23:59:59+08:00"
-  displayFrequency: 60 #2592000 # Seconds. 2592000 = 1 month
-  displayDuration: 50 #648000 # Seconds. 2592000/4 = 1 week
+  displayFrequency: 90 # 1.5 minutes for testing # Seconds. 2592000 = 30 days
+  displayDuration: 60 # 1 minute for testing # Seconds. 60*60*24*7= 1 week
+  userPercentage: 100
+
+# HK Survey Location (iOS)
+hotpagev3_slot1_ios:
+  surveyID: "CSAT-20220301-Formal-iOS"
+  campaignID: "a08164e8-9549-11ec-b909-0242ac120002"
+  enabled: true
+  startTime: "2022-03-01T00:00:00+08:00"
+  endTime: "2022-03-31T23:59:59+08:00"
+  displayFrequency: 90 # 1.5 minutes for testing # Seconds. 2592000 = 30 days
+  displayDuration: 60 # 1 minute for testing # Seconds. 60*60*24*7= 1 week
   userPercentage: 100
