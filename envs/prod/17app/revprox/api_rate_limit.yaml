@@ -60,7 +60,7 @@ rate_limits:
 - {url: "/api/v1/auth/sendPhoneVerificationCode",               method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
 - {url: "/api/v1/auth/sms/verify",                              method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
 - {url: "/api/v1/auth/registerByPhoneAction",                   method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
-- {url: "/api/v1/auth/phone/register",                          method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
+#- {url: "/api/v1/auth/phone/register",                          method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
 - {url: "/api/v1/auth/changePhoneNumber",                       method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
 - {url: "/api/v1/auth/ChangePhoneNumber",                       method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
 - {url: "/api/v1/auth/checkNeedHumanTest",                      method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
