@@ -3,7 +3,9 @@ status: 1
 plugins:
   uri-blocker:
     block_rules:
-    - "/"
+    - "/*"
     rejected_code: 200
-uri: "/"
+uris:
+  - "/"
+  - "/readiness"
 priority: 0
