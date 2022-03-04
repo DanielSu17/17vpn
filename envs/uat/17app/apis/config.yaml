@@ -1,1 +1,5 @@
 enableProtobuf: true
+removeGuestIgnoredFieldAPIs:
+  - GET/api/v1/users/:userid/info
+  - GET/api/v1/users/:userid/guardian
+  - GET/api/v1/users/user/search
