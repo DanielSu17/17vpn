@@ -17,7 +17,6 @@
 #       gift_id: "mission_1_reward_gift_id_1"
 #       amount: 1
 #       expireTime: "2022-03-01 23:59:59 (GMT+0800)"
-#       validTime: 20160 (minutes)
 #     condition:
 #       type: 1
 #       gift_id: "mission_1_send_gift_id_1"
@@ -34,7 +33,6 @@ missions:
       gift_id: "event_gift_newking_7"
       amount: 1
       expireTime: "2022-03-07 15:00:00 (GMT+0800)"
-      validTime: 20160
     condition:
       type: 1
       gift_id: "event_gift_newking_7"
@@ -50,7 +48,6 @@ missions:
       gift_id: "event_gift_newking_5"
       amount: 2
       expireTime: "2022-03-07 15:00:00 (GMT+0800)"
-      validTime: 20160
     condition:
       type: 1
       gift_id: "event_gift_newking_5"
@@ -66,7 +63,21 @@ missions:
       gift_id: "event_gift_newking_4"
       amount: 3
       expireTime: "2022-03-07 15:00:00 (GMT+0800)"
-      validTime: 20160
+    condition:
+      type: 1
+      gift_id: "event_gift_newking_4"
+      amount: 2
+  - id: "4"
+    name: "春酒祝我抽到大獎"
+    order: 4
+    startTime: "2022-01-01 05:00:00 (GMT+0800)"
+    endTime: "2022-03-23 01:00:00 (GMT+0800)"
+    comment: "for test"
+    reward:
+      type: 1
+      gift_id: "free_lotteryshare_3"
+      amount: 3
+      expireTime: "2022-03-07 15:00:00 (GMT+0800)"
     condition:
       type: 1
       gift_id: "event_gift_newking_4"
