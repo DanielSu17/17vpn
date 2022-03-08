@@ -1,8 +1,7 @@
 name: Configure Prescaling
 on:
   schedule:
-    - cron: '*/10 * * * *' # every 10 minutes (testing)
-    #- cron: '* 1 * * *' # 9AM UTC+8
+    - cron: '0 1 * * *' # 9AM UTC+8
 jobs:
   configure_prescaling:
     name: Configure prescaling

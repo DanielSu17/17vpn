@@ -72,7 +72,7 @@ then
   git commit -am "[Infra] GKE prescaling for Google Calendar events [skip ci]"
   git push --set-upstream origin $branch
   pr_url=$(gh pr create --title "[Infra] GKE prescaling" --body $today)
-  curl -X POST --data-urlencode "payload={\"channel\": \"#eng-sre-log\", \"username\": \"prescaling\", \"text\": \"PR Created\n $pr_url \", \"icon_emoji\": \":jp:\"}" "$SLACK_WEBHOOK_URI"
+  curl -X POST --data-urlencode "payload={\"channel\": \"#eng-sre-log\", \"text\": \"Prescaling PR Created\n $pr_url \"}" "$SLACK_WEBHOOK_URI"
 else
   echo 'Calendar unchanged.'
 fi
