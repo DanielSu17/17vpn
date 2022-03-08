@@ -1,0 +1,22 @@
+name: Configure Prescaling
+on:
+  schedule:
+    - cron: '*/10 * * * *' # every 10 minutes (testing)
+    #- cron: '* 1 * * *' # 9AM UTC+8
+jobs:
+  configure_prescaling:
+    name: Configure prescaling
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+      - id: plan
+        env:
+          GITHUB_TOKEN: ${{ secrets.SRE_GITHUB_TOKEN }}
+          GCALCLI_OAUTH: ${{ secrets.GCALCLI_OAUTH }}
+          SLACK_WEBHOOK_URI: ${{ secrets.SLACK_WEBHOOK_URI }}
+        run: |-
+          echo $GCALCLI_OAUTH > ~/.gcalcli_oauth
+          ./prescaling.sh
