@@ -13,6 +13,7 @@
 #If orderModel: 2, it means the order is based on ML recommendations
 
 preservedSectionID: Latest
+
 sections:
   - id: TopBanner # Banner + super promote
     name:
@@ -222,7 +223,7 @@ sections:
     name:
       key: tab_hot_2019q4_pk
     enable: true
-    dedup: false  #重複
+    dedup: false
     minGrids: 6 # 2個直播間一組PK，3組以上顯示
     style: 3
     more: true
@@ -308,10 +309,10 @@ sections:
 
   - id: AudioStream # AudioStream 聲播
     name:
-      key: ラジオ配信 #audio_stream_v3hotpage
+      key: audio_stream_v3hotpage
     enable: true
     dedup: false
-    minGrids: 2
+    minGrids: 3
     style: 3 
     more: true
 
