@@ -11,10 +11,12 @@ roles:
     alias: "ABTester"
   - name: "PrizeControl"
     alias: "PrizeControl"
+  - name: "ToolsControl"
+    alias: "ToolsControl"
 
 accessControlType:
   # able to use debug features
-  - "Debug" 
+  - "Debug"
   # all unrelease functionalities
   - Alpha
   # able to use Layout template features
@@ -40,6 +42,8 @@ accessControlType:
   - CampaignBaseMission
   # able to check tester boxing
   - Tester
+  # able to use tools simulator
+  - Simulator
 
 accessControlGroup:
   - name: unreleased
@@ -69,6 +73,7 @@ roleAccessControl:
     - ReplayContainer
     - PrizeAvatarItem
     - Tester
+    - Simulator
     accessControlGroupType:
     - unreleased
     - common
@@ -98,6 +103,11 @@ roleAccessControl:
     - PrizeDecoStickerItem
     - PrizeGift
     - PrizeSetting
+    accessControlGroupType:
+    - common
+  - Role: ToolsControl
+    accessControlType:
+    - Simulator
     accessControlGroupType:
     - common
 
