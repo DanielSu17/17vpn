@@ -185,6 +185,38 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
+- ID: f828282a-8dad-4de1-a2c7-484cd96d2f37
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 2
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2203_tw_lovepeace_a_bp
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "10"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 600
+  enableTimeRange:
+  - startTime: 2022-03-09 18:00:00 (GMT+0800)
+    endTime: 2022-03-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: true
 - ID: 66100803-6069-4f81-bfe8-9b25e903a5c6
   type: 3
   category: 0
@@ -348,38 +380,6 @@ missions:
   - android
   - ios
   requirePhoneBinding: false
-  withReminder: true
-- ID: d3041e81-864a-4020-bc2f-dab7be1d46ea
-  type: 5
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 21
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2202_tw_tailand_a_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_leave_comment_reward_title2
-  i18nTitleParams:
-  - value: "10"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_leave_comment_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 10
-  enableTimeRange:
-  - startTime: 2022-02-10 18:00:00 (GMT+0800)
-    endTime: 2022-03-03 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
   withReminder: true
 i18nMissionCompleteToast: baggage_mission_toast_claimed
 refreshHour: 5
