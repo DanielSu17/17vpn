@@ -40,6 +40,38 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
+- ID: c780a48c-ceef-428a-b1bb-6573b984093a
+  type: 10
+  category: 0
+  lifeCycle: 1
+  targetAudience: 2
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: performance_sakura_pink
+    amount: 5
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_first_time_IAP_point_event_title
+  i18nTitleParams:
+  - value: "330"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
+  i18nDescriptionParams: []
+  goalValue: 330
+  enableTimeRange:
+  - startTime: 2022-03-14 13:00:00 (GMT+0800)
+    endTime: 2022-03-18 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
 - ID: ea977ffd-d24e-457c-b874-c5357323ad7b
   type: 24
   category: 0
