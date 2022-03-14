@@ -13,6 +13,7 @@ notifyMethod: 0
 streamProviders:
   - "aws"
 
-maxRetryCount: 5
-
 timeout: "10s"
+pullRetry: 3
+# pullDelay (unit: seconds)
+pullDelay: 10
