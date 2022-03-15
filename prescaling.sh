@@ -20,12 +20,12 @@ if [ -z $start_date ];
 then
   echo "Skip empty line."
 else
-# start_time - 30m
-_start=$(TZ=Asia/Taipei date -d "$start_date $start_time" +%s)
-start=$(TZ=Asia/Taipei date -d @$(($_start - 30 * 60)) '+%F %T')
-# end_time + 1hr
-_end=$(TZ=Asia/Taipei date -d "$end_date $end_time" +%s)
-end=$(TZ=Asia/Taipei date -d @$(($_end + 1 * 60 * 60)) '+%F %T')
+# start_time - 30m + GMT+8 hr
+_start=$(date -d "$start_date $start_time" +%s)
+start=$(date -d @$(($_start - 30 * 60 + 8 * 60 * 60)) '+%F %T')
+# end_time + 1hr + GMT+8 hr
+_end=$(date -d "$end_date $end_time" +%s)
+end=$(date -d @$(($_end + 1 * 60 * 60 + 8 * 60 * 60)) '+%F %T')
 
 cat << EOF >> $tmp_file
 # $name
@@ -49,7 +49,7 @@ EOF
 fi
 done < events.txt
 
-branch="prescaling_$today"
+branch="prescaling"
 
 if [ -f "$tmp_file" ];
 then
@@ -70,9 +70,13 @@ then
   git config --global user.email "no-reply@17.media"
   git config --global user.name "github-actions-bot"
   git commit -am "[Infra] GKE prescaling for Google Calendar events [skip ci]"
-  git push --set-upstream origin $branch
-  pr_url=$(gh pr create --title "[Infra] GKE prescaling" --body $today)
-  curl -X POST --data-urlencode "payload={\"channel\": \"#eng-sre-log\", \"text\": \"Prescaling PR Created\n $pr_url \"}" "$SLACK_WEBHOOK_URI"
+  git push -f --set-upstream origin $branch
+  current_branch_pr_status=$(gh pr view --json 'state' -q '.state' | xargs)
+  if [[ $current_branch_pr_status != 'OPEN' ]];
+  then
+    pr_url=$(gh pr create --title "[Infra] GKE prescaling" --body $today)
+    curl -X POST --data-urlencode "payload={\"channel\": \"#eng-sre-log\", \"text\": \"<!subteam^S4Y7W93V1> Prescaling PR Created\n $pr_url \"}" "$SLACK_WEBHOOK_URI"
+  fi
 else
   echo 'Calendar unchanged.'
 fi
