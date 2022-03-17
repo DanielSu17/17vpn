@@ -1,128 +1,22 @@
-#############################################
-# Importance!!!!
-#  - Pre-scheduled time slots are based on the event calendar
-#  - https://calendar.google.com/calendar/embed?src=c_grv1cks9ch1a59kdlnq80b77t4%40group.calendar.google.com&ctz=Asia%2FTaipei
-#
-#  - Please check Capacity Tracking to avoid production issues
-#  - https://17media.atlassian.net/wiki/spaces/SRE/pages/634749065/Important+Capacity+Tracking
-#
-#  - Timing standard:
-#  - at least 30 min before the event starts
-#  - at least 60 min after the event over
-#
-##############################################
-
-# Example
-- startTime: "2018-12-05 18:00:00 (GMT+0800)"
-  endTime: "2018-12-05 19:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: example-target-hpa
-    minReplicas: 20
-
-# 3/9 NMB48 NAMBATTLE2_劇場公演
-- startTime: "2022-03-09 17:00:00 (GMT+0800)"
-  endTime: "2022-03-09 20:05:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-# 3/10 NMB48 NAMBATTLE2_劇場公演
-- startTime: "2022-03-10 17:00:00 (GMT+0800)"
-  endTime: "2022-03-10 20:05:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-# 3/10 【MKT】ニシナナ西川貴教
-- startTime: "2022-03-10 20:30:00 (GMT+0800)"
-  endTime: "2022-03-10 23:05:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-# 3/11 NMB48 NAMBATTLE2_劇場公演
-- startTime: "2022-03-11 17:00:00 (GMT+0800)"
-  endTime: "2022-03-11 20:05:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-# 3/14 NMB48 NAMBATTLE2_劇場公演
-- startTime: "2022-03-14 17:00:00 (GMT+0800)"
-  endTime: "2022-03-14 21:05:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-# 3/16 NMB48 NAMBATTLE2_劇場公演
-- startTime: "2022-03-16 17:00:00 (GMT+0800)"
-  endTime: "2022-03-16 20:05:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-# 3/17 NMB48 NAMBATTLE2_劇場公演
+#     NMB48 NAMBATTLE2_劇場公演 合計UV：8000
 - startTime: "2022-03-17 17:00:00 (GMT+0800)"
+  endTime: "2022-03-17 20:05:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+#     【MKT】ニシナナ西川貴教
+- startTime: "2022-03-17 18:30:00 (GMT+0800)"
   endTime: "2022-03-17 21:05:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
@@ -138,9 +32,9 @@
   - name: k8sprod-revprox-jp-main
     minReplicas: 36
 
-# 3/18 NMB48 NAMBATTLE2_劇場公演
+#     BIG EVENT UV:8000
 - startTime: "2022-03-18 15:30:00 (GMT+0800)"
-  endTime: "2022-03-18 22:20:00 (GMT+0800)"
+  endTime: "2022-03-18 21:05:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 70
@@ -155,7 +49,24 @@
   - name: k8sprod-revprox-jp-main
     minReplicas: 36
 
-# 3/21 【MKT】Last Idol
+#     NMB48 NAMBATTLE2_劇場公演 合計UV：10000
+- startTime: "2022-03-18 17:00:00 (GMT+0800)"
+  endTime: "2022-03-18 20:05:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+#     【MKT】Last Idol
 - startTime: "2022-03-21 18:30:00 (GMT+0800)"
   endTime: "2022-03-21 21:05:00 (GMT+0800)"
   HPAConfigs:
@@ -172,7 +83,7 @@
   - name: k8sprod-revprox-jp-main
     minReplicas: 36
 
-# 3/24 JP,西川貴教のニシナナLIVE
+#     【MKT】ニシナナ西川貴教
 - startTime: "2022-03-24 18:30:00 (GMT+0800)"
   endTime: "2022-03-24 21:30:00 (GMT+0800)"
   HPAConfigs:
@@ -189,7 +100,58 @@
   - name: k8sprod-revprox-jp-main
     minReplicas: 36
 
-# 3/31 JP,西川貴教のニシナナLIVE
+#     ManWith #6
+- startTime: "2022-03-24 20:00:00 (GMT+0800)"
+  endTime: "2022-03-24 23:20:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+#     【17LIVE x MeMe 春酒大活動】線下活動支援
+- startTime: "2022-03-28 16:30:00 (GMT+0800)"
+  endTime: "2022-03-28 22:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-tw-main
+    minReplicas: 36
+
+#     【MKT】Last Idol
+- startTime: "2022-03-28 18:30:00 (GMT+0800)"
+  endTime: "2022-03-28 21:05:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+#     【MKT】ニシナナ西川貴教
 - startTime: "2022-03-31 18:30:00 (GMT+0800)"
   endTime: "2022-03-31 21:30:00 (GMT+0800)"
   HPAConfigs:
@@ -205,3 +167,106 @@
     minReplicas: 10
   - name: k8sprod-revprox-jp-main
     minReplicas: 36
+
+#     【MKT】ニシナナ西川貴教
+- startTime: "2022-04-07 18:30:00 (GMT+0800)"
+  endTime: "2022-04-07 21:30:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+#     【MKT】ニシナナ西川貴教
+- startTime: "2022-04-14 18:30:00 (GMT+0800)"
+  endTime: "2022-04-14 21:30:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+#     【MKT】ニシナナ西川貴教
+- startTime: "2022-04-21 18:30:00 (GMT+0800)"
+  endTime: "2022-04-21 21:30:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+#     【MKT】ニシナナ西川貴教
+- startTime: "2022-04-28 18:30:00 (GMT+0800)"
+  endTime: "2022-04-28 21:30:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+#     【MKT】ニシナナ西川貴教
+- startTime: "2022-05-05 18:30:00 (GMT+0800)"
+  endTime: "2022-05-05 21:30:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+#     【MKT】ニシナナ西川貴教
+- startTime: "2022-05-12 18:30:00 (GMT+0800)"
+  endTime: "2022-05-12 21:30:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
