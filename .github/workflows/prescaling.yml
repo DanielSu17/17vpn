@@ -11,6 +11,7 @@ jobs:
   configure_prescaling:
     name: Configure prescaling
     runs-on: ubuntu-latest
+    if: github.repository == '17media/configs'
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
