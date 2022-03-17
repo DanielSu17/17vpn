@@ -3,10 +3,10 @@ FROM golang:1.16-alpine
 ENV GO111MODULE off
 RUN apk add --no-cache git && \
     go get github.com/BurntSushi/cmd && \
-    go get github.com/ericfan17/configv2
+    go get github.com/17media/configv3
 
 # TODO: change path
-WORKDIR $GOPATH/src/github.com/ericfan17/configv2/pusher
+WORKDIR $GOPATH/src/github.com/17media/configv3/pusher
 RUN go build -o /opt/pusher
 
 FROM alpine:3.9
