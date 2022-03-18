@@ -27,7 +27,29 @@ start=$(date -d @$(($_start - 30 * 60 + 8 * 60 * 60)) '+%F %T')
 _end=$(date -d "$end_date $end_time" +%s)
 end=$(date -d @$(($_end + 1 * 60 * 60 + 8 * 60 * 60)) '+%F %T')
 
-if [[ $name =~ .*"線下活動支援".* || $name =~ .*"官播支援".* || $name =~ .*"台灣線下活動支援".* ]];
+if [[ $name =~ .*"香港活動支援".* ]];
+then
+  echo "HK event"
+cat << EOF >> $tmp_file
+# $name
+- startTime: "$start (GMT+0800)"
+  endTime: "$end (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-main
+    minReplicas: 36
+
+EOF
+elif [[ $name =~ .*"台灣活動支援".* ]];
 then
   echo "TW event"
 cat << EOF >> $tmp_file
