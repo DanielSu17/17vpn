@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 IMAGE_ORG="17media"
-IMAGE_REPO="pusherv2"
+IMAGE_REPO="pusherv3"
 IMAGE_TAG="v$(date +%y.%-m.%-d)"
 
 docker build -t ${IMAGE_ORG}/${IMAGE_REPO}:${IMAGE_TAG} .

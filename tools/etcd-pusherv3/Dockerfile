@@ -5,7 +5,6 @@ RUN apk add --no-cache git && \
     go get github.com/BurntSushi/cmd && \
     go get github.com/17media/configv3
 
-# TODO: change path
 WORKDIR $GOPATH/src/github.com/17media/configv3/pusher
 RUN go build -o /opt/pusher
 
