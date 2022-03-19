@@ -1,71 +1,3 @@
-#     NMB48 NAMBATTLE2_劇場公演 合計UV：8000
-- startTime: "2022-03-17 17:00:00 (GMT+0800)"
-  endTime: "2022-03-17 20:05:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-#     【MKT】ニシナナ西川貴教
-- startTime: "2022-03-17 18:30:00 (GMT+0800)"
-  endTime: "2022-03-17 21:05:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-#     BIG EVENT UV:8000
-- startTime: "2022-03-18 15:30:00 (GMT+0800)"
-  endTime: "2022-03-18 21:05:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-#     NMB48 NAMBATTLE2_劇場公演 合計UV：10000
-- startTime: "2022-03-18 17:00:00 (GMT+0800)"
-  endTime: "2022-03-18 20:05:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 12
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
 #     【MKT】Last Idol
 - startTime: "2022-03-21 18:30:00 (GMT+0800)"
   endTime: "2022-03-21 21:05:00 (GMT+0800)"
@@ -117,7 +49,7 @@
   - name: k8sprod-revprox-jp-main
     minReplicas: 36
 
-#     【17LIVE x MeMe 春酒大活動】線下活動支援
+#     台灣活動支援【17LIVE x MeMe 春酒線下大活動】
 - startTime: "2022-03-28 16:30:00 (GMT+0800)"
   endTime: "2022-03-28 22:00:00 (GMT+0800)"
   HPAConfigs:
@@ -149,6 +81,23 @@
   - name: k8sprod-gousersearch-main
     minReplicas: 10
   - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+#     香港活動支援 - 十八區爭霸戰
+- startTime: "2022-03-28 23:00:00 (GMT+0800)"
+  endTime: "2022-03-29 01:30:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-main
     minReplicas: 36
 
 #     【MKT】ニシナナ西川貴教
