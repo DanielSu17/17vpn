@@ -40,38 +40,6 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
-- ID: c780a48c-ceef-428a-b1bb-6573b984093a
-  type: 10
-  category: 0
-  lifeCycle: 1
-  targetAudience: 2
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: performance_sakura_pink
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_first_time_IAP_point_event_title
-  i18nTitleParams:
-  - value: "330"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
-  i18nDescriptionParams: []
-  goalValue: 330
-  enableTimeRange:
-  - startTime: 2022-03-14 13:00:00 (GMT+0800)
-    endTime: 2022-03-18 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
 - ID: 2a0bd1d9-3faf-4e1c-9238-6c0c81f18cb4
   type: 10
   category: 0
@@ -165,8 +133,8 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-- ID: 0d21a4b6-e6bd-41c2-b48a-e28aa77c8a56
-  type: 10
+- ID: f2acb6e4-b169-4795-90ca-965ac5b80a0d
+  type: 3
   category: 0
   lifeCycle: 0
   targetAudience: 0
@@ -175,87 +143,81 @@ missions:
     max: 999
   reward:
     rewardType: 1
-    rewardID: performance_sakura_pink
+    rewardID: twvipbaby_tiger02
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: vipbaby_1
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: vipbaby_01
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2022-03-21 12:00:00 (GMT+0800)
+    endTime: 2022-03-31 23:59:59 (GMT+0800)
+  refIDs:
+  - twvipbaby_tiger04
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 6fec7be3-6f23-4a8d-8625-413577868903
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: twvipbaby_tiger02
+    amount: 3
+    expireTimeSecs: 86400
+  i18nTitle: vipbaby_3
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: vipbaby_03
+  i18nDescriptionParams: []
+  goalValue: 3
+  enableTimeRange:
+  - startTime: 2022-03-21 12:00:00 (GMT+0800)
+    endTime: 2022-03-31 23:59:59 (GMT+0800)
+  refIDs:
+  - twvipbaby_tiger04
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 6cf7ea45-9032-4ea2-b672-5ca7954a96c5
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: twvipbaby_tiger02
     amount: 5
     expireTimeSecs: 86400
-  i18nTitle: baggage_mission_first_time_IAP_point_event_title
-  i18nTitleParams:
-  - value: "5000"
-    mapOption: 0
-    fontAttribute: null
+  i18nTitle: vipbaby_5
+  i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
+  i18nDescription: vipbaby_05
   i18nDescriptionParams: []
-  goalValue: 5000
+  goalValue: 5
   enableTimeRange:
-  - startTime: 2022-03-18 00:00:00 (GMT+0800)
-    endTime: 2022-03-18 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 9af023d6-58da-4773-9f96-143ddad6d08f
-  type: 10
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: performance_sakura_pink
-    amount: 10
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_first_time_IAP_point_event_title
-  i18nTitleParams:
-  - value: "10000"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
-  i18nDescriptionParams: []
-  goalValue: 10000
-  enableTimeRange:
-  - startTime: 2022-03-18 00:00:00 (GMT+0800)
-    endTime: 2022-03-18 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 68a90d3c-a67e-48d3-bcb7-148aacb2ba76
-  type: 10
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: performance_sakura_white
-    amount: 15
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_first_time_IAP_point_event_title
-  i18nTitleParams:
-  - value: "30000"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_reward_tw_des
-  i18nDescriptionParams: []
-  goalValue: 30000
-  enableTimeRange:
-  - startTime: 2022-03-18 00:00:00 (GMT+0800)
-    endTime: 2022-03-18 23:59:59 (GMT+0800)
-  refIDs: []
+  - startTime: 2022-03-21 12:00:00 (GMT+0800)
+    endTime: 2022-03-31 23:59:59 (GMT+0800)
+  refIDs:
+  - twvipbaby_tiger04
   platforms:
   - android
   - ios
@@ -453,38 +415,6 @@ missions:
   - ios
   requirePhoneBinding: true
   withReminder: true
-- ID: f99ad7c0-2eeb-4a47-a83d-b25a4afad3b9
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 21
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2202_tw_dubai_a_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "5"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 300
-  enableTimeRange:
-  - startTime: 2022-02-26 18:00:00 (GMT+0800)
-    endTime: 2022-03-18 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: false
 - ID: a51ce5c8-ef29-4f4f-893f-1848fa2840e2
   type: 9
   category: 0
