@@ -114,8 +114,20 @@
   - name: k8ssta-gocells-main
     minReplicas: 40
 
-- startTime: "2022-03-16 14:30:00 (GMT+0800)"
-  endTime: "2022-03-16 16:00:00 (GMT+0800)"
+- startTime: "2022-03-21 12:30:00 (GMT+0800)"
+  endTime: "2022-03-21 13:40:00 (GMT+0800)"
   HPAConfigs:
+  - name: k8ssta-goapi-main
+    minReplicas: 80
   - name: k8ssta-golives-main
     minReplicas: 100
+  - name: k8ssta-gotrade-main
+    minReplicas: 24
+  - name: k8ssta-revprox-tw-main
+    minReplicas: 36
+  - name: k8ssta-gocells-main
+    minReplicas: 40
+  - name: k8ssta-concert-stream-tw-main
+    minReplicas: 30
+  - name: k8ssta-concert-trade-main
+    minReplicas: 10
