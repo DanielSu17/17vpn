@@ -32,6 +32,27 @@
   - name: k8sprod-revprox-jp-main
     minReplicas: 36
 
+#     【MKT】NAMBATTLE2後夜祭
+- startTime: "2022-03-27 19:00:00 (GMT+0800)"
+  endTime: "2022-03-27 21:35:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 600
+  - name: k8sprod-concert-trade-main
+    minReplicas: 45
+  - name: k8sprod-concert-stream-jp-main
+    minReplicas: 600
+
 #     台灣活動支援【17LIVE x MeMe 春酒線下大活動】
 - startTime: "2022-03-28 16:30:00 (GMT+0800)"
   endTime: "2022-03-28 22:00:00 (GMT+0800)"
@@ -81,6 +102,40 @@
   - name: k8sprod-gousersearch-main
     minReplicas: 10
   - name: k8sprod-revprox-main
+    minReplicas: 36
+
+#     【MKT】Man with a Mission #7
+- startTime: "2022-03-30 18:30:00 (GMT+0800)"
+  endTime: "2022-03-30 21:05:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+#     【EV】BIG EVENT
+- startTime: "2022-03-31 15:30:00 (GMT+0800)"
+  endTime: "2022-03-31 21:05:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 12
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
     minReplicas: 36
 
 #     【MKT】ニシナナ西川貴教
