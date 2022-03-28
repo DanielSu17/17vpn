@@ -33,6 +33,9 @@ pickProbabilityThresholds: # 每日累積搶到點數，對應的搶紅包機率
   1000: 0
 dailySumOfPickedRefreshHour: 5 # 每日累積點數的重置時間，台灣時間5點。
 userLockPickedSecs: 45 # 使用者搶到紅包後，多少秒內搶紅包會失敗
+enableBatchUpsertForPurge: true
+batchUpsertStartTime: 1648447200 # 2022/3/28 1400 GMT+8
+
 styleSets:
 - id: redenvelope_normal
   marqueeAnimationID: marquee_redenvelope
