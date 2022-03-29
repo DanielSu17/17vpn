@@ -1,3 +1,5 @@
+def check_status = 0
+
 node('gcp') { timestamps { ansiColor('xterm') {
     // setup environment variables
     env.SLACK = "https://hooks.slack.com/services/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"
@@ -20,15 +22,17 @@ node('gcp') { timestamps { ansiColor('xterm') {
             sh("docker version")
             sh("docker login -u ${DOCKER_USER} -p ${DOCKER_PASS}")
 
-            def check_status = sh(script: 'jenkins/checker.sh sta', returnStatus:true)
+            check_status = sh(script: 'jenkins/checker.sh sta', returnStatus:true)
             echo 'check_status: ' + check_status
-            if (check_status != 0) {
-                currentBuild.result = 'FAILURE'
-            }
         }
     } // end of stage Check Configs
-
+    if (check_status != 0) {
+        currentBuild.result = 'FAILURE'
+        return
+    }
     stage('Push Changes to ETCD Clusters') {
+        
+
         withCredentials([
           usernamePassword(
               credentialsId: 'f2c9dec6-bad6-4f91-a21d-327c8c547954',
