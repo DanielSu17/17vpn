@@ -74,8 +74,7 @@ for config_path in ${config_paths}; do
   fi
 
   # support prod/sta only
-  if [ "${config_env}" = "sta" ]  || [ "${config_env}" = "prod" ] || [ "${config_env}" = "uat" ] ; then
-    curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":muscle:Push to ETCD Started. (${config_env} ${ETCD_CLUSTER}):etcd:\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Message*:${COMMIT_MESSAGE}\n*Lastest Commit*:${GIT_COMMIT}  *Job*: <${BUILD_URL}|URL>\"}]},{\"type\":\"divider\"}]}" "${SLACK}"    
+  if [ "${config_env}" = "uat" ] ; then
     # naming rule: ENDPOINTS_{{ APP_NAME }}_{{ CONFIG_ENV }}
     dynamic_endpoints="ENDPOINTS_$(echo "${config_app}" | tr '[:lower:]' '[:upper:]')_$(echo "${config_env}" | tr '[:lower:]' '[:upper:]')"
     echo "[debug] dynamic_endpoints: ${dynamic_endpoints}"
@@ -84,11 +83,13 @@ for config_path in ${config_paths}; do
     if [ -z $(eval echo "\$${dynamic_endpoints}") ]; then
       echo "[debug] variable ${dynamic_endpoints} is not defined, skip"
     else 
+      curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":muscle:Push to ETCD Started. (${config_env} ${ETCD_CLUSTER}):etcd:\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Message*:${COMMIT_MESSAGE}\n*Lastest Commit*:${GIT_COMMIT}  *Job*: <${BUILD_URL}|URL>\"}]},{\"type\":\"divider\"}]}" "${SLACK}"    
       endpoints=$(eval echo "\$${dynamic_endpoints}")
 
       if [ -n "${endpoints}" ]; then
         echo "[debug] ${config_env} / ${config_app} / ${endpoints}"
         push "${config_env}" "${config_app}" "${endpoints}"
+        curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":white_check_mark:Push to ETCD Successfully. (${config_env} ${ETCD_CLUSTER}):etcd:\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Message*:${COMMIT_MESSAGE}\n*Lastest Commit*:${GIT_COMMIT}  *Job*: <${BUILD_URL}|URL>\"}]},{\"type\":\"divider\"}]}" "${SLACK}"
       elif export | grep "$dynamic_endpoints="; then
         # If variable is defined as empty string ""
         echo "Endpoint ${dynamic_endpoints} is an empty string"
@@ -99,7 +100,6 @@ for config_path in ${config_paths}; do
       fi
     fi
 
-    curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":white_check_mark:Push to ETCD Successfully. (${config_env} ${ETCD_CLUSTER}):etcd:\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Message*:${COMMIT_MESSAGE}\n*Lastest Commit*:${GIT_COMMIT}  *Job*: <${BUILD_URL}|URL>\"}]},{\"type\":\"divider\"}]}" "${SLACK}"
   else
     echo "[debug] unsupported config_env, skipped" 
     continue
