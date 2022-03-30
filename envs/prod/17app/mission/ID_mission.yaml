@@ -40,122 +40,6 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
-- ID: 5a462510-3972-4b6d-9e1c-8cba4680d30f
-  type: 24
-  category: 0
-  lifeCycle: 2
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2203_ph_panagbenga_b_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_daily_checkin_title
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_daily_checkin_descr
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-03-01 00:00:00 (GMT+0800)
-    endTime: 2022-03-13 23:30:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 4b37f7d1-ab34-4d5c-b15c-3b617cd1020d
-  type: 24
-  category: 0
-  lifeCycle: 2
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2203_ph_panagbenga_b_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_3d_checkin_title
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_5d_checkin_descr
-  i18nDescriptionParams: []
-  goalValue: 5
-  enableTimeRange:
-  - startTime: 2022-03-01 00:00:00 (GMT+0800)
-    endTime: 2022-03-13 23:30:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: bfa1fd55-b8ba-40dd-baff-de695ae80f3a
-  type: 24
-  category: 0
-  lifeCycle: 2
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2203_ph_panagbenga_b_bp
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_5d_checkin_title
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_7d_checkin_descr
-  i18nDescriptionParams: []
-  goalValue: 7
-  enableTimeRange:
-  - startTime: 2022-03-01 00:00:00 (GMT+0800)
-    endTime: 2022-03-13 23:30:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 20a81e0a-ead5-46d2-8af4-5f625be4fa66
-  type: 24
-  category: 0
-  lifeCycle: 2
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2203_ph_panagbenga_b_bp
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_10d_checkin_title
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_10d_checkin_descr
-  i18nDescriptionParams: []
-  goalValue: 10
-  enableTimeRange:
-  - startTime: 2022-03-01 00:00:00 (GMT+0800)
-    endTime: 2022-03-13 23:30:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
 - ID: f748f6bb-058a-48df-9844-53398368b28b
   type: 16
   category: 0
@@ -185,6 +69,114 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
+- ID: b2fb9439-6da9-4ac3-822e-406df4b38790
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: sea_aprilsfool_bomb_face
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_send_specific_gifts_reward_title
+  i18nTitleParams:
+  - value: "1"
+    mapOption: 0
+    fontAttribute: null
+  - value: sea_aprilsfool_01
+    mapOption: 2
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2022-03-30 12:00:00 (GMT+0800)
+    endTime: 2022-04-02 22:00:00 (GMT+0800)
+  refIDs:
+  - ' sea_aprilsfool_01'
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 716c4f53-b6ae-407c-8166-fdf6a5a884d2
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: sea_aprilsfool_uncle
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_send_specific_gifts_reward_title
+  i18nTitleParams:
+  - value: "1"
+    mapOption: 0
+    fontAttribute: null
+  - value: sea_aprilsfool_01
+    mapOption: 2
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
+  i18nDescriptionParams: []
+  goalValue: 3
+  enableTimeRange:
+  - startTime: 2022-03-30 12:00:00 (GMT+0800)
+    endTime: 2022-04-02 22:00:00 (GMT+0800)
+  refIDs:
+  - ' sea_aprilsfool_01'
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 82c3f4ef-4823-48b4-98ca-7c2429b836d4
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: sea_aprilsfool_kabuki
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_send_specific_gifts_reward_title
+  i18nTitleParams:
+  - value: "1"
+    mapOption: 0
+    fontAttribute: null
+  - value: sea_aprilsfool_01
+    mapOption: 2
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
+  i18nDescriptionParams: []
+  goalValue: 5
+  enableTimeRange:
+  - startTime: 2022-03-30 12:00:00 (GMT+0800)
+    endTime: 2022-04-02 22:00:00 (GMT+0800)
+  refIDs:
+  - ' sea_aprilsfool_01'
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
 - ID: f828282a-8dad-4de1-a2c7-484cd96d2f37
   type: 9
   category: 0
@@ -216,170 +208,6 @@ missions:
   - android
   - ios
   requirePhoneBinding: true
-  withReminder: true
-- ID: 788cba3c-b79a-47f9-9f16-856e985d2b91
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2203_ph_panagbenga_d_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_send_specific_gifts_reward_title_one
-  i18nTitleParams:
-  - value: "1"
-    mapOption: 0
-    fontAttribute: null
-  - value: 2203_ph_panagbenga_c
-    mapOption: 2
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-03-01 00:00:00 (GMT+0800)
-    endTime: 2022-03-13 23:30:00 (GMT+0800)
-  refIDs:
-  - 2203_ph_panagbenga_c
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: b1b0dfd8-2b24-4005-bea0-60aab3f110a5
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2203_ph_panagbenga_a_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "5"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 300
-  enableTimeRange:
-  - startTime: 2022-03-01 00:00:00 (GMT+0800)
-    endTime: 2022-03-13 23:30:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 4966af83-56d3-4ea8-b9fb-93df973100c9
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2203_ph_panagbenga_a_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "10"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 600
-  enableTimeRange:
-  - startTime: 2022-03-01 00:00:00 (GMT+0800)
-    endTime: 2022-03-13 23:30:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: d36c732e-94dc-46d2-8edb-747ae5a07d19
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2203_ph_panagbenga_a_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "15"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 900
-  enableTimeRange:
-  - startTime: 2022-03-01 00:00:00 (GMT+0800)
-    endTime: 2022-03-13 23:30:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 1654cd53-f649-4275-a3cf-ce64c3cb0393
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2203_ph_panagbenga_a_bp
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "30"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 1800
-  enableTimeRange:
-  - startTime: 2022-03-01 00:00:00 (GMT+0800)
-    endTime: 2022-03-13 23:30:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
   withReminder: true
 i18nMissionCompleteToast: ""
 refreshHour: 0
