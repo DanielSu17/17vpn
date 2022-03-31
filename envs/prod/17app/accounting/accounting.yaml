@@ -202,6 +202,8 @@ createManualBillV2: true
 enableMarkContractsAsPaidOffJob: true
 engNotifChannels:
   - "C021ABKGQ78" # eng-payout-notif
-unpaidRevenueReportBatchWorkerNum: 10
+unpaidRevenueReportBatchWorkerNum: 20
 unpaidRevenueReportBatchSize: 1000 
-checkPrevContractUnpaidBatchWorkerNum: 2
+checkPrevContractUnpaidBatchWorkerNum: 10
+enableExecuteRevenueBillJobWorker: true
+executeRevenueBillJobBatchSize: 50
