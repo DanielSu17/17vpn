@@ -544,23 +544,28 @@ checkPNAfterComplete: 2
 #     requireDeviceCheck: true
 newbieRewards:
     - type: 2
-      point: 100
-      exp: 0
-      required: 3
-      requirePhoneBinding: false
-      requireDeviceCheck: false
-    - type: 3
       point: 0
       exp: 0
-      required: 3
+      required: 1
+      requirePhoneBinding: false
+      requireDeviceCheck: false
+      voucherReward:
+        type: 3
+        itemID: 2204_jp_newlivd1_bp
+        amount: 1
+        intervalSec: 604800
+    - type: 12
+      point: 0
+      exp: 0
+      required: 5
       requirePhoneBinding: false
       requireDeviceCheck: false
       voucherReward:
         type: 3
         itemID: 2112_jp_breakwall_bp
-        amount: 6
+        amount: 1
         intervalSec: 604800
-    - type: 8
+    - type: 9
       point: 0
       exp: 0
       required: 1
@@ -569,18 +574,7 @@ newbieRewards:
       voucherReward:
         type: 3
         itemID: 2112_jp_breakwall_bp
-        amount: 5
-        intervalSec: 604800
-    - type: 9
-      point: 0
-      exp: 0
-      required: 3
-      requirePhoneBinding: false
-      requireDeviceCheck: false
-      voucherReward:
-        type: 3
-        itemID: 2204_jp_newlivd1_bp
-        amount: 3
+        amount: 1
         intervalSec: 604800
     - type: 10
       point: 0
@@ -590,8 +584,19 @@ newbieRewards:
       requireDeviceCheck: false
       voucherReward:
         type: 3
+        itemID: 2204_jp_newlivd1_bp
+        amount: 1
+        intervalSec: 604800
+    - type: 3
+      point: 0
+      exp: 0
+      required: 1
+      requirePhoneBinding: false
+      requireDeviceCheck: false
+      voucherReward:
+        type: 3
         itemID: 2112_jp_breakwall_bp
-        amount: 3
+        amount: 1
         intervalSec: 604800
     - type: 14
       point: 0
@@ -603,5 +608,17 @@ newbieRewards:
       voucherReward:
         type: 3
         itemID: 2112_jp_breakwall_bp
-        amount: 6
+        amount: 1
+        intervalSec: 604800
+    - type: 7
+      point: 0
+      exp: 0
+      required: 2
+      requirePhoneBinding: false
+      requireDeviceCheck: true
+      withReminder: true
+      voucherReward:
+        type: 3
+        itemID: 2112_jp_breakwall_bp
+        amount: 1
         intervalSec: 604800
