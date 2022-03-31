@@ -40,6 +40,39 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
+- ID: e68cbf5c-c7c3-41dd-97fa-2a0eb2f87721 #おすすめライバー施策
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2203_jp_osusume_liver
+    amount: 3
+    expireTimeSecs: 86400
+  i18nTitle: 「今週のおすすめ」タブのライバーを5分以上視聴しよう！
+  i18nTitleParams:
+  - value: "5"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: 「今週のおすすめ」タブで配信しているライバーを累計で5分以上視聴して、無料ギフトをゲットしよう！
+  i18nDescriptionParams: []
+  goalValue: 300
+  enableTimeRange:
+  - startTime: 2022-04-07 12:00:00 (GMT+0900)
+    endTime: 2022-12-31 23:59:59 (GMT+0900)
+  refIDs:
+  - 608011fd-579b-4e15-b154-3943f952c324
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
 - ID: ea6887fe-90a6-42a8-af8c-6b908e254613
   type: 10
   category: 0
