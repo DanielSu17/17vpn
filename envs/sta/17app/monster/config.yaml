@@ -10,25 +10,25 @@ animations: ["yeti"]
 
 monsters:
 
-  - id: puppet # 素還真
+  - id: windyboys # 新竹攻城獅
     type: 1  # 0: 一般怪獸, 1: 招喚怪獸
-    hit_consume: 1
+    hit_consume: 20
     duration: 60s
     stream_alive_threshold: 1m00s
-    animation: "puppet"
+    animation: "windyboys"
     available_dates: # 一般怪獸才會看時間
-      - start_date: "2022-01-19T15:30:00+08:00"
-        end_date: "2022-04-01T23:59:59+08:00"
+      - start_date: "2022-04-01T19:30:00+08:00"
+        end_date: "2022-04-30T23:59:59+08:00"
     appear_durations: # 一般怪獸才會看時間
       - start_time: 00h00m00s
         end_time: 23h59m59s
 
     share_ratio: 50 # percentage
     profit_ratio: 35 # percentage
-    bonus: 132
+    bonus: 400
     weight: 1
-    infoPageiconURL: https://cdn.17app.co/b5c6692a-6f22-4829-b614-8eebe720b0d1.png
-    winnerPageiconURL: https://cdn.17app.co/b5c6692a-6f22-4829-b614-8eebe720b0d1.png
+    infoPageiconURL: https://cdn.17app.co/a5a589dd-63a9-4eb4-9a65-b1f556986995.png
+    winnerPageiconURL: https://cdn.17app.co/a5a589dd-63a9-4eb4-9a65-b1f556986995.png
     hintToken:
       {
         key: monster_battle_hint_puppet,
@@ -71,7 +71,7 @@ monsters:
       }
     marqueeToken: { key: monster_battle_marquee_puppet }
     summonGifts: # 招喚怪獸才需要填
-      - giftID: gift_lightstick_g
+      - giftID:
         probability: 10000
 
   # - id: puppet # 素還真
