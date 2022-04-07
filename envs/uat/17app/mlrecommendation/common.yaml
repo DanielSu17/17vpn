@@ -12,3 +12,6 @@ skipPagingList:
 version: v2
 # force return 200 on recommendation/metric/stream endpoint
 disableGetStreamMetric: true
+# https://17media.atlassian.net/browse/APP-37195 direct all online streams as ml recommend
+# should only be used in testing env
+enableDirectOnlineStreamIDs: false
