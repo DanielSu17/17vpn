@@ -1,0 +1,29 @@
+thumbnailSimplification:
+  enabled: true
+  startTime: 1648526400 # 2022/03/29 12:00:00 UTC+8
+
+bannerMapping:
+  - category: Label:tw_t_game
+    tab: GAME
+  - category: Label:jp_game
+    tab: GAME
+  - category: Label:tw_music
+    tab: KKMUSIC
+  - category: Label:jp_music
+    tab: MUSIC_JP
+  - category: Label:newbie
+    tab: NEW
+  - category: Label:jp_V-LIVER
+    tab: VIRTUAL_STREAMER
+
+
+defaultSort: recommended
+refreshSecond: 300 # 60 * 5
+engagementLimit: 10
+
+withSubcategory:
+  regionCategories:
+    "JP":
+      - "Label:jp_game"
+
+enableNewSuperPromotion: false # remove it after migrate completed
