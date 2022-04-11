@@ -67,16 +67,6 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: Suggestion # 猜你可能喜歡
-    name:
-      key: tab_hot_2019q4_follow_suggestion
-    enable: true
-    dedup: true
-    style: 6
-    minGrids: 5
-    more: true
-    orderModel: 2
-
   - id: NewestStreamer # D0 new streamer
     name:
       key: tab_hot_d0streamer
@@ -87,17 +77,14 @@ sections:
     more: true
     orderModel: 2
 
-
-  - id: Label # 占い
-    labelID: jp_fortune
+  - id: Suggestion # 猜你可能喜歡
     name:
-      key: streamer_jp_label_fortune
+      key: tab_hot_2019q4_follow_suggestion
     enable: true
     dedup: true
-    minGrids: 3
-    style: 3
+    style: 6
+    minGrids: 5
     more: true
-    category: normal
     orderModel: 2
 
   - id: Label # 歌
@@ -160,14 +147,17 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: GroupCall # GroupCall 
+  - id: Label # 占い
+    labelID: jp_fortune
     name:
-      key: group_stream_v3hotpage
+      key: streamer_jp_label_fortune
     enable: true
     dedup: true
-    minGrids: 2
-    style: 9 
+    minGrids: 3
+    style: 3
     more: true
+    category: normal
+    orderModel: 2
 
   - id: PK
     name:
@@ -178,13 +168,13 @@ sections:
     style: 3
     more: true
 
-  - id: AudioStream # AudioStream 聲播
+  - id: GroupCall # GroupCall 
     name:
-      key: audio_stream_v3hotpage
+      key: group_stream_v3hotpage
     enable: true
-    dedup: false
-    minGrids: 3
-    style: 3 
+    dedup: true
+    minGrids: 2
+    style: 9 
     more: true
 
   - id: Label # 創作・制作
@@ -257,17 +247,14 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: Label # lv10以下
-    labelID: jp_lv10
+  - id: AudioStream # AudioStream 聲播
     name:
-      key: streamer_jp_label_lv10
+      key: audio_stream_v3hotpage
     enable: true
-    dedup: true
+    dedup: false
     minGrids: 3
-    style: 3
+    style: 3 
     more: true
-    category: normal
-    orderModel: 2
 
   - id: Vod # 熱門影音
     name:
@@ -325,7 +312,20 @@ sections:
     category: normal
     orderModel: 2
 
+  - id: Label # lv10以下
+    labelID: jp_lv10
+    name:
+      key: streamer_jp_label_lv10
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
 
+
+#以下、過去分
 
 #  - id: Label # タレント
 #    labelID: jp_talent
