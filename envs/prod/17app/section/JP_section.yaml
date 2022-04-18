@@ -31,18 +31,6 @@ sections:
  #   style: 2
  #   more: false
 
-  - id: Label # はじめての視聴はここから！
-    labelID: 2204_jp_firstview_01
-    name:
-      key: streamer_jp_label_firstview
-    enable: true
-    dedup: false
-    minGrids: 3
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
   - id: Label # Lv100以上
     labelID: 2203_jp_lv100
     name:
@@ -55,17 +43,29 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: Label #　#推し探し
-    labelID: 2204_jp_oshi
+  - id: Label # はじめての視聴はここから！
+    labelID: 2204_jp_firstview_01
     name:
-      key: streamer_jp_label_oshi_sagashi
+      key: streamer_jp_label_firstview
     enable: true
-    dedup: true
+    dedup: false
     minGrids: 3
     style: 3
     more: true
     category: normal
     orderModel: 2
+
+#  - id: Label #　#推し探し
+#    labelID: 2204_jp_oshi
+#    name:
+#      key: streamer_jp_label_oshi_sagashi
+#    enable: true
+#    dedup: true
+#    minGrids: 3
+#    style: 3
+#    more: true
+#    category: normal
+#    orderModel: 2
 
   - id: NewestStreamer # D0 new streamer
     name:
