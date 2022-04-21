@@ -5,3 +5,9 @@ musicIconsURL:
     music_jp_approved: https://cdn.17app.co/83722fe1-2719-4546-91c8-2bf0915ed388.png
 newbieThreshold: 30
 newbieEndTime: 2021-02-24 19:15:00 (GMT+0800)
+
+# If enable emailApprovalDialog, you need to set ignoreDisapprovalBeforeTime to ignore default&empty value.
+# We will check if ((enable is true) and (emailApproval is 0) and (emailApprovalModifyTime is less than ignoreDisapprovalBeforeTime)).
+emailApprovalDialog:
+    enable: true
+    ignoreDisapprovalBeforeTime: 2022-04-21 18:45:00 (GMT+0800)
