@@ -13,8 +13,8 @@ references:
   tag_filter_pr_build: &tag_filter_pr_build
     filters:
       branches:
-        only:
-          - /^pull\/.*$/
+        ignore:
+          - master
   tag_filter_master_build: &tag_filter_master_build
     filters:
       branches:
