@@ -1,8 +1,13 @@
+# if users's region is not in typeByRegion, use type as default
 useConfig: true
 versionStatus:
   - deviceType: ios
     versionLessThan: 3.175.0
     type: "notice"
+    typeByRegion:
+      TW: "none"
+      CN: "notice"
+      JP: "none"
     img: "c3213da5-9a4f-4f6d-85c9-981bf1c24921.png"
     defaultLink: "https://itunes.apple.com/app/id988259048"
     startTime: "2022-02-18 12:00:00 (GMT+0800)"
@@ -19,6 +24,10 @@ versionStatus:
   - deviceType: android
     versionLessThan: 2.91.0
     type: "notice"
+    typeByRegion:
+      TW: "none"
+      CN: "notice"
+      JP: "none"
     img: "c3213da5-9a4f-4f6d-85c9-981bf1c24921.png"
     defaultLink: "https://play.google.com/store/apps/details?id=com.machipopo.media17"
     startTime: "2022-02-18 12:00:00 (GMT+0800)"
