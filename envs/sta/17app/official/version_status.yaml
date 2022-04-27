@@ -1,15 +1,9 @@
 # if users's region is not in typeByRegion, use type as default
-# normal use case
-# set type: none/notice/update/forceUpdate/serverDown
-# advanced use case (only notice CN region)
-# set type: "none"
-# set typeWithRegion:
-#       CN: "notice"
 useConfig: true
 versionStatus:
   - deviceType: ios
     versionLessThan: 3.175.0
-    type: "none"
+    type: "notice"
     typeByRegion:
       TW: "none"
       CN: "notice"
@@ -29,7 +23,7 @@ versionStatus:
 
   - deviceType: android
     versionLessThan: 2.91.0
-    type: "none"
+    type: "notice"
     typeByRegion:
       TW: "none"
       CN: "notice"
