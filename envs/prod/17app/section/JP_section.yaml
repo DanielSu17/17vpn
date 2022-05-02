@@ -31,13 +31,13 @@ sections:
  #   style: 2
  #   more: false
 
-  - id: Label # Lv100以上
-    labelID: 2203_jp_lv100
+  - id: Label # 遊び方解説中！
+    labelID: 2204_jp_play
     name:
-      key: streamer_jp_label_lv100
+      key: streamer_jp_label_play
     enable: true
-    dedup: true
-    minGrids: 3
+    dedup: false
+    minGrids: 1
     style: 3
     more: true
     category: normal
@@ -77,17 +77,18 @@ sections:
     more: true
     orderModel: 2
 
-  - id: Label # 遊び方解説中！
-    labelID: 2204_jp_play
+  - id: Label # Lv100以上
+    labelID: 2203_jp_lv100
     name:
-      key: streamer_jp_label_play
+      key: streamer_jp_label_lv100
     enable: true
-    dedup: false
-    minGrids: 1
+    dedup: true
+    minGrids: 3
     style: 3
     more: true
     category: normal
     orderModel: 2
+
 
   - id: Suggestion # 猜你可能喜歡
     name:
