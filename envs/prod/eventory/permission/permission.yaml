@@ -1,116 +1,5 @@
-roles:
-  - name: "Developer"
-    alias: "developer"
-  - name: "User"
-    alias: "user"
-  - name: "LayoutControl"
-    alias: "LayoutControl"
-  - name: "ContainerControl"
-    alias: "ContainerControl"
-  - name: "ABTester"
-    alias: "ABTester"
-  - name: "PrizeControl"
-    alias: "PrizeControl"
-
-accessControlType:
-  # able to use debug features
-  - "Debug" 
-  # all unrelease functionalities
-  - Alpha
-  # able to use Layout template features
-  - LayoutConfiguration
-  # able to use tag features
-  - TagConfiguration
-  - CreateQuestionnaire
-  # able to replay container
-  - ReplayContainer
-  # prize setting
-  - PrizeSetting
-  - PrizeAvatarItem
-  - PrizeBadgeItem
-  - PrizeCommentFrameItem
-  - PrizeDecoStickerItem
-  - PrizeGift
-  - DynamicTimestamp
-  - ABTestGroup
-  - NewUserLevel
-  - MissionRoadmap
-  - LinkToCampaignDiagram
-  - LinkToCampaignInsight
-  - CampaignBaseMission
-  # able to check tester boxing
-  - Tester
-
-accessControlGroup:
-  - name: unreleased
-    accessControl:
-    - ABTestGroup
-    - LinkToCampaignDiagram
-    - LinkToCampaignInsight
-  - name: common
-    accessControl:
-    - PrizeSetting
-    - NewUserLevel
-    - PrizeBadgeItem
-    - PrizeCommentFrameItem
-    - PrizeDecoStickerItem
-    - PrizeGift
-    - CreateQuestionnaire
-    - DynamicTimestamp
-    - TagConfiguration
-    - CampaignBaseMission
-
-roleAccessControl:
-  - Role: Developer
-    accessControlType:
-    - Alpha
-    - Debug
-    - LayoutConfiguration
-    - ReplayContainer
-    - PrizeAvatarItem
-    - Tester
-    accessControlGroupType:
-    - unreleased
-    - common
-  - Role: LayoutControl
-    accessControlType:
-    - LayoutConfiguration
-    accessControlGroupType:
-    - common
-  - Role: ContainerControl
-    accessControlType:
-    - ReplayContainer
-    accessControlGroupType:
-    - common
-  - Role: User
-    accessControlGroupType:
-    - common
-  - Role: ABTester
-    accessControlType:
-    - ABTestGroup
-    accessControlGroupType:
-    - common
-  - Role: PrizeControl
-    accessControlType:
-    - PrizeAvatarItem
-    - PrizeBadgeItem
-    - PrizeCommentFrameItem
-    - PrizeDecoStickerItem
-    - PrizeGift
-    - PrizeSetting
-    accessControlGroupType:
-    - common
-
 userpermissions:
   aaronchen@17.media:
-  - developer
-  aaronjen@17.media:
-  - developer
-  alexlee@17.media:
-  - developer
-  alexliao@17.media:
-  - developer
-  andykuo@17.media:
   - developer
   angelahsu@17.media:
   - developer
@@ -118,13 +7,7 @@ userpermissions:
   - LayoutControl
   - ContainerControl
   - PrizeControl
-  anniekao@17.media:
-  - developer
   billkao@17.media:
-  - developer
-  callahan@17.media:
-  - LayoutControl
-  charlie@17.media:
   - developer
   chavezliu@17.media:
   - developer
@@ -139,23 +22,17 @@ userpermissions:
   - developer
   chrishuang6733@gmail.com:
   - developer
-  chrisyo@17.media:
-  - developer
   cindyleung@17.live:
   - LayoutControl
   - ContainerControl
   - PrizeControl
   davidhung@17.media:
   - developer
-  dolphinlin@17.media:
-  - developer
   duke.r@17.media:
   - developer
   dylan@17.media:
   - ContainerControl
   - ABTester
-  emma.w@17.media:
-  - developer
   ethan.q@17.media:
   - developer
   ethandai@17.media:
@@ -174,14 +51,10 @@ userpermissions:
   - PrizeControl
   hansenwu@17.media:
   - developer
-  henry.c@17.media:
-  - developer
   holden@17.media:
   - developer
   holdenchu@17.media:
   - developer
-  j@17.media:
-  - LayoutControl
   jamel.foster@17.media:
   - ABTester
   - ContainerControl
@@ -195,11 +68,7 @@ userpermissions:
   - developer
   jeffkuo@17.media:
   - developer
-  jimmyweng@17.media:
-  - developer
   jonas@17.media:
-  - developer
-  jt@17.media:
   - developer
   kavenlin0121tw@gmail.com:
   - developer
@@ -209,23 +78,13 @@ userpermissions:
   - developer
   kevinhu@17.media:
   - developer
-  kewei@17.media:
-  - developer
-  kiya@17.media:
-  - ContainerControl
-  - ABTester
-  - PrizeControl
   kouki.h@17.media:
   - ABTester
   - ContainerControl
   - PrizeControl
   leo.m@17.media:
   - ContainerControl
-  lynnchao@17.media:
-  - developer
   mikeshih@17.media:
-  - developer
-  paulyang@17.media:
   - developer
   qoo.m@17.media:
   - developer
@@ -235,18 +94,7 @@ userpermissions:
   - PrizeControl
   rachel.h@17.media:
   - PrizeControl
-  raylee@17.media:
-  - developer
-  raymond.t@17.media:
-  - developer
   ruby@17.media:
-  - developer
-  ruruie@17.media:
-  - LayoutControl
-  - ContainerControl
-  - ABTester
-  - PrizeControl
-  shiin@17.media:
   - developer
   slashtu@17.media:
   - developer
@@ -256,16 +104,10 @@ userpermissions:
   - LayoutControl
   - PrizeControl
   - ContainerControl
-  steph@17.media:
-  - LayoutControl
   sunnyfu@17.media:
   - developer
   taisho@17.media:
   - developer
-  tenten.s@17.media:
-  - LayoutControl
-  - ContainerControl
-  - PrizeControl
   terrychen@17.media:
   - developer
   unato@17.media:
@@ -303,10 +145,6 @@ userpermissions:
     - ABTester
     - PrizeControl
   warrenhsiao@17.media:
-    - LayoutControl
-    - ABTester
-    - PrizeControl
-  amberliu@17.media:
     - LayoutControl
     - ABTester
     - PrizeControl
