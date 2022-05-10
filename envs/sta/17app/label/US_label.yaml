@@ -1,16 +1,149 @@
 # US label config
+# labelInfos defines all label related infos including type, label(i18n), iconURL
+# - type: 1(music,pink), 2(politics,yellow), 3(others,blue)
+# - featured: true / false (default) #會不會在探索頁出現
+# - labelID: mapping for labels table id
 
 labelInfos:
-  - id: "new_streamer" # 新手主播簽到！
+  - id: "exclusive" # 付費解鎖, 獨家內容
     type: 2
     label:
-      key: "streamer_label_new_streamer"
+      key: "streamer_label_exclusive"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    order: 2001
+    isHide: true    
+  - id: "new_streamer_event" # Welcome Newbies to LIVIT!!- Event
+    type: 2
+    label:
+      key: "us_streamer_label_event_newstreamer"
     iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
     isHide: false
     order: 1
 
+#  - id: "Thanksgiving" #2021 Thanksgiving
+#    type: 2
+#    label:
+#      key: "us_streamer_label_event_newstreamer"
+#    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+#    isHide: false
+#    order: 2
+
+  - id: "Holiday" # 2021 dec holiday season
+    type: 2
+    label:
+      key: "us_streamer_label_event_holiday"
+    iconURL: "https://cdn.17app.co/ba6b6d1f-8a76-4a52-8ab6-af4453b3e139.png"
+    isHide: false
+    order: 2
+
+  - id: "Food"
+    type: 2
+    label:
+      key: "Other"
+    iconURL: "https://cdn.17app.co/ba6b6d1f-8a76-4a52-8ab6-af4453b3e139.png"
+    isHide: false
+    order: 2
+
+  - id: "Fitness" 
+    type: 3
+    label:
+      key: "Health & Fitness"
+    iconURL: "https://cdn.17app.co/ba6b6d1f-8a76-4a52-8ab6-af4453b3e139.png"
+    isHide: false
+    order: 2
+
+  - id: "Art"
+    type: 2
+    label:
+      key: "uCreativity"
+    iconURL: "https://cdn.17app.co/ba6b6d1f-8a76-4a52-8ab6-af4453b3e139.png"
+    isHide: false
+    order: 2
+
+  - id: "Beauty" 
+    type: 2
+    label:
+      key: "Beauty"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    isHide: false
+    order: 3
+
+  - id: "Music" 
+    type: 2
+    label:
+      key: "Live Music"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    isHide: false
+    order: 4
+
+  - id: "Chatting" 
+    type: 2
+    label:
+      key: "Chat & Chill"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    isHide: false
+    order: 5
+
+  - id: "Gaming" 
+    type: 2
+    label:
+      key: "Gaming"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    isHide: false
+    order: 6
+
+  - id: "Recommended" 
+    type: 2
+    label:
+      key: "Recommended"
+    iconURL: "https://assets-17app.akamaized.net/cc56df27-da39-44b8-9992-a85aa925f85f.png"
+    isHide: false
+    order: 7
+
+  - id: "Easter" 
+    type: 1
+    label:
+      key: "Easter"
+    iconURL: "https://assets-17app.akamaized.net/cc56df27-da39-44b8-9992-a85aa925f85f.png"
+    isHide: false
+    order: 7
+
+  - id: "Dance" 
+    type: 1
+    label:
+      key: "Podcast"
+    iconURL: "https://assets-17app.akamaized.net/cc56df27-da39-44b8-9992-a85aa925f85f.png"
+    isHide: false
+    order: 7
+
+typeCheckIOSVersion: 3.61.0
+typeCheckAndroidVersion: 2.3.92
+
 # labelWhiteList defines relation between label and user list
 labelWhiteList:
   exclusive:
-  new_streamer:
-    - b2d39924-a491-4f10-9d4e-0b818ac3e33a	#shiin.xx
+  Beauty:
+    - f12ce10e-f252-48af-b526-3f86f402cbbe #angie
+  Food:
+    - f12ce10e-f252-48af-b526-3f86f402cbbe #angie
+  Easter:
+    - f12ce10e-f252-48af-b526-3f86f402cbbe #angie
+  Art:
+    - f12ce10e-f252-48af-b526-3f86f402cbbe #angie
+  Dance:
+    - f12ce10e-f252-48af-b526-3f86f402cbbe #angie
+  Music:
+    - f12ce10e-f252-48af-b526-3f86f402cbbe #angie
+  Chatting:
+    - f12ce10e-f252-48af-b526-3f86f402cbbe #angie
+  Gaming:
+    - f12ce10e-f252-48af-b526-3f86f402cbbe #angie
+  Thanksgiving:
+    - f12ce10e-f252-48af-b526-3f86f402cbbe #angie
+  Holiday: 
+    - f12ce10e-f252-48af-b526-3f86f402cbbe #angie
+  Fitness: 
+    - f12ce10e-f252-48af-b526-3f86f402cbbe #angie
+  Recommended:
+    - f12ce10e-f252-48af-b526-3f86f402cbbe #angie
+
