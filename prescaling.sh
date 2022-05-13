@@ -118,7 +118,7 @@ then
   git config --global user.email "no-reply@17.media"
   git config --global user.name "github-actions-bot"
   git add $yaml_path
-  git commit -m "[Infra] GKE prescaling for Google Calendar events [skip ci]"
+  git commit -m "[Infra] GKE prescaling for Google Calendar events"
   git push -f --set-upstream origin $branch
   current_branch_pr_status=$(gh pr view --json 'state' -q '.state' | xargs)
   if [[ $current_branch_pr_status != 'OPEN' ]];
