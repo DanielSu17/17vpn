@@ -1,1 +1,1 @@
-# [Wave] RedBlue Game Settings
+# [Wave] TW RedBlue Game Settings
