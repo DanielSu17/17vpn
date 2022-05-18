@@ -234,7 +234,35 @@
             "log_path_count": 10,
             "check_pages": ["Livestream_LiveScreen"]
           }
+      },
+      "network_module_support_ed": {
+      "af_network_module": {
+        "apply_version": ""
+      },
+      "ed_manager_module": {
+        "apply_version": "",
+        "decay_config": {
+          "1": {
+            "minDelayInterval": 1,
+            "maxDelayInterval": 4,
+            "multiplier": 1.25,
+            "evaluationPeriod": 30
+          },
+          "2": {
+            "minDelayInterval": 1,
+            "maxDelayInterval": 9,
+            "multiplier": 1.5,
+            "evaluationPeriod": 30
+          },
+          "3": {
+            "minDelayInterval": 1,
+            "maxDelayInterval": 16,
+            "multiplier": 1.75,
+            "evaluationPeriod": 30
+          }
+        }
       }
+    }
   },
   "error_handling": {
     "enable_point_not_enough": 1,
