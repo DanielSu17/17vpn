@@ -1,4 +1,5 @@
 # To prevent sending PN to real users in non-production environment, only whitelist users can be send PN
+# Do not set it in Prod
 whitelist:
   - 6a27c5d7-6c85-4247-9925-c010b138a0d0  #tw_user_web
   - 15abdf08-4119-49c8-aa44-f57226655ed6  #us_user_web
@@ -50,11 +51,6 @@ oneSignal:
   forceFailUpdate: false
 
 braze:
-  userWhitelist:
-    - 1dd3c360-dedc-4644-b6b7-0af4e5a88f02 # andrewsta
-    - a94f3e76-59a6-4cb4-9b82-fcbe765d2126 # braze Teresa 17LIVE
-    - 2f3dcf83-1fb4-43d5-9ecf-1390b5a5a22a # braze Tank 17LIVE
-
   messageTypeWhitelist:
     - NewLiveMessage
     - NewLiveScheduleMessage
@@ -72,4 +68,17 @@ braze:
     - NewPostPushMessage
     - NewUnreadPostBadgeCoun
     - NewPostCommentTagMessage
-    - NewLiveRemindingMessage  
+    - NewLiveRemindingMessage
+
+  # must be sent PN by Braze, ignoring the below ratio
+  userWhitelist:
+  - 1dd3c360-dedc-4644-b6b7-0af4e5a88f02 # andrewsta
+  - a94f3e76-59a6-4cb4-9b82-fcbe765d2126 # braze Teresa 17LIVE
+  - 2f3dcf83-1fb4-43d5-9ecf-1390b5a5a22a # braze Tank 17LIVE
+
+  # use Braze or OneSignal, max: 100, min: 0
+  # TODO: set to 100 after fully integrated Braze
+  ratio: 0
+  
+  # backup when Braze returns error, use OneSignal as backup
+  enableBackup: true
