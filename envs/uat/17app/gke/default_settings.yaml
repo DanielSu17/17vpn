@@ -1,31 +1,65 @@
+default_max: 
+  backend: 
+    k8suat-goapi-main: 10
+    k8suat-gocells-main: 2
+    k8suat-golives-main: 2
+    k8suat-goplatform-main: 10
+    k8suat-gotrade-main: 10
+    k8suat-worker-main: 10
+    k8suat-gousersearch-main: 10
+    k8suat-concert-trade-main: 10
+    k8suat-concert-stream-id-main: 10
+    k8suat-concert-stream-jp-main: 10
+    k8suat-concert-stream-main: 10
+    k8suat-concert-stream-ph-main: 10
+    k8suat-concert-stream-sg-main: 10
+    k8suat-concert-stream-tw-main: 10
+    k8suat-revprox-id-main: 10
+    k8suat-revprox-jp-main: 10
+    k8suat-revprox-main: 10
+    k8suat-revprox-ph-main: 10
+    k8suat-revprox-sg-main: 10
+    k8suat-revprox-tw-main: 10
+    k8suat-data-middleware-main: 10
+    k8suat-snapshot-main: 1
+    k8suat-gift-worker-main: 10
+    k8suat-bbrichv2-main: 2
+    k8suat-apisix-bbrich-main: 2
+  frontend: 
+    admin-v2-17app-services: 2
+    baobaofu-17app-services: 4
+    event-web-17app-services: 4
+    live17-17app-services: 900
+    skyeye-v2-17app-services: 4
+    skyeyewall-17app-services: 4
+    webapp-17app-services: 4
 default_min: 
   backend: 
-    k8ssta-goapi-main: 1
-    k8ssta-gocells-main: 1
-    k8ssta-golives-main: 1
-    k8ssta-goplatform-main: 1
-    k8ssta-gotrade-main: 1
-    k8ssta-worker-main: 1
-    k8ssta-gousersearch-main: 1
-    k8ssta-concert-trade-main: 1
-    k8ssta-concert-stream-id-main: 1
-    k8ssta-concert-stream-jp-main: 1
-    k8ssta-concert-stream-main: 1
-    k8ssta-concert-stream-ph-main: 1
-    k8ssta-concert-stream-sg-main: 1
-    k8ssta-concert-stream-tw-main: 1
-    k8ssta-revprox-id-main: 1
-    k8ssta-revprox-jp-main: 1
-    k8ssta-revprox-main: 1
-    k8ssta-revprox-ph-main: 1
-    k8ssta-revprox-sg-main: 1
-    k8ssta-revprox-tw-main: 1
-    k8ssta-data-middleware-main: 1
-    k8ssta-snapshot-main: 1
-    k8ssta-eventory-worker-main: 1
-    k8ssta-gift-worker-main: 1
-    k8ssta-bbrichv2-main: 1
-    k8ssta-apisix-bbrich-main: 1
+    k8suat-goapi-main: 2
+    k8suat-gocells-main: 2
+    k8suat-golives-main: 2
+    k8suat-goplatform-main: 2
+    k8suat-gotrade-main: 2
+    k8suat-worker-main: 2
+    k8suat-gousersearch-main: 2
+    k8suat-concert-trade-main: 2
+    k8suat-concert-stream-id-main: 2
+    k8suat-concert-stream-jp-main: 2
+    k8suat-concert-stream-main: 2
+    k8suat-concert-stream-ph-main: 2
+    k8suat-concert-stream-sg-main: 2
+    k8suat-concert-stream-tw-main: 2
+    k8suat-revprox-id-main: 1
+    k8suat-revprox-jp-main: 1
+    k8suat-revprox-main: 1
+    k8suat-revprox-ph-main: 1
+    k8suat-revprox-sg-main: 1
+    k8suat-revprox-tw-main: 1
+    k8suat-data-middleware-main: 3
+    k8suat-snapshot-main: 1
+    k8suat-gift-worker-main: 2
+    k8suat-bbrichv2-main: 2
+    k8suat-apisix-bbrich-main: 2
   frontend: 
     admin-v2-17app-services: 2
     baobaofu-17app-services: 2
@@ -37,7 +71,7 @@ default_min:
 settings: 
   backend: 
     fileName: "scheduled_scaling.yaml"
-    namespace: "k8ssta"
+    namespace: "k8suat"
   frontend: 
     fileName: "scheduled_scaling_frontend.yaml"
     namespace: "default"
