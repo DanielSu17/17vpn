@@ -33,6 +33,6 @@ rate_limits:
   scope: by_global
 - url: "/api/v1/lives$"
   method: "POST"
-  flow_per_second: 1
+  flow_per_second: 100
   reservoir_size: 1
   scope: by_access_token
