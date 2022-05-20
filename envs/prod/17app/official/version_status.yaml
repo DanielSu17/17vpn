@@ -1,3 +1,13 @@
+# if users's region is not in typeByRegion, use type as default
+# advanced use case (only notice CN region)
+# set type: "none"
+# set typeWithRegion:
+#       CN: "notice"
+# advanced use case (notice all regions without JP and TW)
+# set type: "notice"
+# set typeWithRegion:
+#       TW: "none"
+#       JP: "none"
 useConfig: true
 versionStatus:
   - deviceType: ios
