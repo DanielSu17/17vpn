@@ -260,17 +260,16 @@ sections:
     style: 6
     minGrids: 1
     more: true
-
-#  - id: Label
-#    labelID: jp_music
-#    name:
-#      key: NO GOOD TV LIVE  #explore_jp_label_music
-#    enable: true
-#    dedup: false
-#    minGrids: 1
-#    style: 3
-#    more: true
-#    category: normal
+   - id: Label
+    labelID: jp_music
+    name:
+    key: explore_jp_label_music
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
   - id: PK
     name:
       key: tab_hot_2019q4_pk
@@ -279,15 +278,15 @@ sections:
     minGrids: 6 # 2個直播間一組PK，3組以上顯示
     style: 3
     more: true
-#  - id: Label
-#    labelID: jp_game
-#    name:
-#      key: explore_jp_label_game
-#    enable: true
-#    dedup: true
-#    minGrids: 1
-#    style: 3
-#    more: true
+  - id: Label
+    labelID: jp_game
+    name:
+      key: explore_jp_label_game
+    enable: true
+    dedup: false
+    minGrids: 1
+    tyle: 3
+    more: true
 
   - id: Vod # 熱門影音
     name:
@@ -374,6 +373,15 @@ sections:
       key: streamer_jp_label_freetalk
     enable: true
     dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+  - id: Label
+    labelID: jp_freetalk1
+    name:
+      key: streamer_jp_label_freetalk
+    enable: true
+    dedup: false
     minGrids: 1
     style: 3
     more: true
