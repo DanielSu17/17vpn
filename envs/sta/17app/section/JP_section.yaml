@@ -151,17 +151,17 @@ sections:
     style: 3 
     more: true
 
-  - id: Label #私こんな趣味あります
-    labelID: jp_game
-    name:
-      key: streamer_jp_label_fortune_kaiun
-    enable: true
-    dedup: true
-    minGrids: 1
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
+# - id: Label #私こんな趣味あります
+#   labelID: jp_game
+#   name:
+#     key: streamer_jp_label_fortune_kaiun
+#   enable: true
+#   dedup: true
+#   minGrids: 1
+#   style: 3
+#   more: true
+#   category: normal
+#   orderModel: 2
 
   - id: Label # クリスマス Pre-Party（検証のためminGridsは１にしています）
     labelID: 2111_jp_sousaku
@@ -281,7 +281,7 @@ sections:
   - id: Label
     labelID: jp_game
     name:
-      key: explore_jp_label_game
+      key: streamer_jp_label_game
     enable: true
     dedup: false
     minGrids: 1
@@ -407,6 +407,15 @@ sections:
     labelID: jp_singer
     name:
       key: streamer_jp_label_music
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 3
+    more: true
+  - id: Label
+    labelID: jp_instrument
+    name:
+      key: streamer_jp_label_instrument
     enable: true
     dedup: false
     minGrids: 1
