@@ -1,3 +1,35 @@
+default_max:
+  backend:
+    k8sprod-goapi-main: 200
+    k8sprod-gocells-main: 200
+    k8sprod-golives-main: 140
+    k8sprod-goplatform-main: 100
+    k8sprod-gotrade-main: 130
+    k8sprod-worker-main: 100
+    k8sprod-gousersearch-main: 10
+    k8sprod-concert-trade-main: 10
+    k8sprod-concert-stream-main: 10
+    k8sprod-concert-stream-tw-main: 10
+    k8sprod-concert-stream-id-main: 10
+    k8sprod-concert-stream-jp-main: 10
+    k8sprod-concert-stream-sg-main: 10
+    k8sprod-concert-stream-ph-main: 10
+    k8sprod-revprox-main: 36
+    k8sprod-revprox-tw-main: 36
+    k8sprod-revprox-id-main: 36
+    k8sprod-revprox-jp-main: 36
+    k8sprod-revprox-hk-main: 36
+    k8sprod-revprox-sg-main: 36
+    k8sprod-revprox-ph-main: 36
+    k8sprod-data-middleware-main: 22
+  frontend:
+    admin-v2-17app-services: 2
+    baobaofu-17app-services: 4
+    event-web-17app-services: 20
+    live17-17app-services: 150
+    skyeye-v2-17app-services: 4
+    skyeyewall-17app-services: 10
+    webapp-17app-services: 20
 default_min:
   backend:
     k8sprod-goapi-main: 9
@@ -22,8 +54,6 @@ default_min:
     k8sprod-revprox-sg-main: 18
     k8sprod-revprox-ph-main: 18
     k8sprod-data-middleware-main: 14
-    k8sprod-eventory-main: 6
-    k8sprod-eventory-worker-main: 30
   frontend:
     admin-v2-17app-services: 2
     baobaofu-17app-services: 2
