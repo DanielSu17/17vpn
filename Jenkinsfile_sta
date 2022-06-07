@@ -2,7 +2,7 @@ def check_status = 0
 
 node('gcp') { timestamps { ansiColor('xterm') {
     // setup environment variables
-    env.SLACK = "https://hooks.slack.com/services/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"
+    env.SLACK = "https://hooks.slack.com/services/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"
 
     stage('Git checkout') {
         def scmVars = checkout scm
