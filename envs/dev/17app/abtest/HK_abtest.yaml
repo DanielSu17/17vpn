@@ -17,7 +17,7 @@
     "c": "b"
     "d": "b"
     "e": "b"
-    "f": "b" 
+    "f": "b"
 - testName: recommendFollow
   enableABtest: false
   expiredSecond: 604800 # 7 day
@@ -80,7 +80,7 @@
     "f": "b"
 - testName: completeRegistration
   enableABtest: false
-  expiredSecond: 10 # 10 second 
+  expiredSecond: 10 # 10 second
   lastCharGroup:
     "0": "a"
     "1": "a"
@@ -88,7 +88,7 @@
     "3": "a"
     "4": "a"
     "5": "a"
-    "6": "a" 
+    "6": "a"
     "7": "a"
     "8": "b"
     "9": "b"
@@ -456,6 +456,29 @@
 # JIRA: APP-29029
 - testName: disableNewbieMissions
   enableABtest: true
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
+# group A go to original registration flow
+# group B go to new registration flow
+- testName: newRegistrationFlow
+  enableABtest: true
+  byDeviceID: true
   lastCharGroup:
     "0": "b"
     "1": "b"
