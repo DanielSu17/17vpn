@@ -291,5 +291,33 @@
    },
    "braze": {
       "apply_version": 16518252
-   }
+   },
+   "aerobic": {
+    "apply_version": "2.100.0.0",
+    "endpoints_config": {
+      "apply_version": "2.100.0.0",
+      "endpoints": [
+        {
+          "path": "path/",
+          "method": "GET",
+          "scores": [
+            {
+              "duration": 1,
+              "score": 0.7
+            }
+          ]
+        },
+        {
+          "path": "path/upload/:id",
+          "method": "POST",
+          "scores": [
+            {
+              "duration": 1,
+              "score": 0.7
+            }
+          ]
+        }
+      ]
+    }
+  }
 }
