@@ -317,5 +317,33 @@
   "braze": {
     "apply_version": "3.183.0",
     "custom_event_enable_regions": ["TW","HK","JP","US"]
+  },
+  "aerobic": {
+    "apply_version": "3.183.0",
+    "endpoints_config": {
+      "apply_version": "3.190.0",
+      "endpoints": [
+        {
+          "path": "path/",
+          "method": "GET",
+          "scores": [
+            {
+              "duration": 1,
+              "score": 0.7
+            }
+          ]
+        },
+        {
+          "path": "path/upload/:id",
+          "method": "POST",
+          "scores": [
+            {
+              "duration": 1,
+              "score": 0.7
+            }
+          ]
+        }
+      ]
+    }
   }
 }
