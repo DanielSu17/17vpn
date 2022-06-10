@@ -86,7 +86,7 @@ node('gcp') { timestamps { ansiColor('xterm') {
                     "ENDPOINTS_WAVE_UAT=",
                     "ENDPOINTS_EVENTORY_UAT=",
                     "ENDPOINTS_STREAMING_UAT=",
-                    "ETCD_CLUSTER=dd"
+                    "ETCD_CLUSTER=dd",
                     "V3_APP_LIST=discovery"
                 ]) {
                     sh('./push_to_etcd_uat.sh')
