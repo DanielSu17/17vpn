@@ -35,20 +35,7 @@ mention_author_in_slack() {
 
 main() {
     echo "--- start checking ---"
-    curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":crossed_fingers: ${ENV} Config Check Started\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Author*:${AUTHOR_EMAIL}  *Commit*:<https://github.com/17media/configs/commit/${GIT_COMMIT}|${GIT_COMMIT}> *Build*:<${BUILD_URL}|URL> \"}]},{\"type\":\"divider\"}]}" "${SLACK}"
-
-    for SCRIPT in ${CHECKER}; do
-        docker run --rm -v "$(pwd)":/repo 17media/config-check:latest /bin/sh -c "cd /repo && python3 /repo/${SCRIPT}"
-
-        STATUS=$?
-        if [ ${STATUS} -eq 0 ]; then
-            echo "${SCRIPT} command was successful"
-        else
-            mention_author_in_slack
-            exit 1
-        fi
-    done
-
+    
     # local config checker
     changed_files=$(git log --name-only --pretty=format: "${GIT_PREVIOUS_SUCCESSFUL_COMMIT}".."${GIT_COMMIT}" | grep yaml$)
     config_env=$(git log --name-only --pretty=format: "${GIT_PREVIOUS_SUCCESSFUL_COMMIT}".."${GIT_COMMIT}" | grep yaml$ | awk -F "/" '$1=="envs" {print $2}' | sort -u)
@@ -61,7 +48,21 @@ main() {
         if [[ -n "$ENV" && "${env}" != "$ENV" ]]; then
             continue
         fi
+
+        curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":crossed_fingers: ${ENV} Config Check Started\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Author*:${AUTHOR_EMAIL}  *Commit*:<https://github.com/17media/configs/commit/${GIT_COMMIT}|${GIT_COMMIT}> *Build*:<${BUILD_URL}|URL> \"}]},{\"type\":\"divider\"}]}" "${SLACK}"
         
+        for SCRIPT in ${CHECKER}; do
+            docker run --rm -v "$(pwd)":/repo 17media/config-check:latest /bin/sh -c "cd /repo && python3 /repo/${SCRIPT}"
+
+            STATUS=$?
+            if [ ${STATUS} -eq 0 ]; then
+                echo "${SCRIPT} command was successful"
+            else
+                mention_author_in_slack
+                exit 1
+            fi
+        done
+
         env_files=$(echo "${changed_files}" | grep ${env} | tr '\n' ',')
         echo "${env} : ${env_files}"
 
@@ -71,13 +72,15 @@ main() {
         LOCAL_CHECKER_STATUS=$?
         if [ ${LOCAL_CHECKER_STATUS} -eq 0 ]; then
             echo "[${env}] Local checker was successful"
+            
         else
             mention_author_in_slack
             exit 1
         fi
+
+        curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":white_check_mark: ${ENV} Config Check Passed\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Author*:${AUTHOR_EMAIL}  *Commit*:<https://github.com/17media/configs/commit/${GIT_COMMIT}|${GIT_COMMIT}> *Build*:<${BUILD_URL}|URL>\"}]},{\"type\":\"divider\"}]}" "${SLACK}"
     done
 
-    curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":white_check_mark: ${ENV} Config Check Passed\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Author*:${AUTHOR_EMAIL}  *Commit*:<https://github.com/17media/configs/commit/${GIT_COMMIT}|${GIT_COMMIT}> *Build*:<${BUILD_URL}|URL>\"}]},{\"type\":\"divider\"}]}" "${SLACK}"
     echo "--- finish checking ---"
 }
 
