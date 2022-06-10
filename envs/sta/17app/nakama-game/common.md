@@ -9,3 +9,7 @@
 - actionTarget(`string`): The target of the action. Supported values: `game_center,fruitfarm`
 - regionMode(`string`): The region mode. Supported value: `all,include,exlude`
 - regions(`array of strings`): The IP regions.
+- versionControl:
+    - enable(`bool`): Enable version control or not. Supported value: `true,false`
+    - ios(`string`): The minimum iOS version support.
+    - android(`string`): The minimum Android version support.
