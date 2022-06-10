@@ -80,6 +80,18 @@ node('gcp') { timestamps { ansiColor('xterm') {
                     sh('./push_to_etcd_uat.sh')
                 }
             } // end of stage
+            stages["uat_dd"] = {
+                withEnv([
+                    "ENDPOINTS_DISCOVERY_UAT=http://35.229.245.70:2379,http://35.189.174.112:2379,http://34.81.213.159:2379",
+                    "ENDPOINTS_WAVE_UAT=",
+                    "ENDPOINTS_EVENTORY_UAT=",
+                    "ENDPOINTS_STREAMING_UAT=",
+                    "ETCD_CLUSTER=dd"
+                    "V3_APP_LIST=discovery"
+                ]) {
+                    sh('./push_to_etcd_uat.sh')
+                }
+            } // end of stage
             parallel(stages)
         }
     } // end of stage Push Changes to ETCD Clusters
