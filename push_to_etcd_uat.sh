@@ -5,7 +5,7 @@ set -o nounset
 set -o errexit
 
 ETCD_PUSH_IMAGE="17media/pusher:v19.4.25"
-ETCD_PUSH_V3_IMAGE="17media/pusherv3:v22.3.18"
+ETCD_PUSH_V3_IMAGE="17media/pusherv3:v22.6.14"
 
 if [ -z "${REVISION}" ]; then
   echo "abort, REVISION not defined"

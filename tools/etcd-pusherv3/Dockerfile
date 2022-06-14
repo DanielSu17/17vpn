@@ -1,15 +1,15 @@
-FROM golang:1.16-alpine
+FROM golang:1.17-alpine as builder
 
-ENV GO111MODULE off
-RUN apk add --no-cache git && \
-    go get github.com/BurntSushi/cmd && \
-    go get github.com/17media/configv3
+WORKDIR /
+RUN apk add --no-cache git 
+RUN git clone --depth 1 --branch v0.1.0 https://github.com/17media/configv3.git
 
-WORKDIR $GOPATH/src/github.com/17media/configv3/pusher
+WORKDIR /configv3/pusher
+RUN go mod download 
 RUN go build -o /opt/pusher
 
 FROM alpine:3.9
 RUN apk add --no-cache git
-COPY --from=0 /opt/pusher /opt/
+COPY --from=builder /opt/pusher /opt/
 COPY docker-entrypoint.sh /
 ENTRYPOINT ["/docker-entrypoint.sh"]
