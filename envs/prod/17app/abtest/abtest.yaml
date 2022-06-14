@@ -1238,9 +1238,11 @@
 # group B: Remove OpenID Setup for pre-registration
 # JIRA: APP-39379
 - testName: removeRegSetupOpenID
-  enableABtest: false
-  startTime: "2022-05-23T11:00:00+08:00"
-  endTime: "2100-12-31T23:59:59+08:00"
+  enableABtest: true
+  byDeviceID: true
+  startTime: "2022-06-14T11:00:00+08:00"
+  endTime: "2022-06-21T10:59:59+08:00"
+  configsAddOnsTrueGroup: "b"
   lastCharGroup:
     "0": "a"
     "1": "a"
@@ -1250,11 +1252,11 @@
     "5": "a"
     "6": "a"
     "7": "a"
-    "8": "a"
-    "9": "a"
-    "a": "a"
-    "b": "a"
-    "c": "a"
-    "d": "a"
-    "e": "a"
-    "f": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
