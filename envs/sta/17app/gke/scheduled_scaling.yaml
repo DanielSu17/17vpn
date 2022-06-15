@@ -112,3 +112,16 @@
   - name: k8ssta-gocells-main
     minReplicas: 40
 
+# 0615 giftbox stress test
+- startTime: "2022-06-15 12:30:00 (GMT+0800)"
+  endTime: "2022-06-15 16:00:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8ssta-goapi-main
+    minReplicas: 110
+  - name: k8ssta-golives-main
+    minReplicas: 110
+  - name: k8ssta-gotrade-main
+    minReplicas: 80
+  - name: k8ssta-revprox-tw-main
+    minReplicas: 36
+
