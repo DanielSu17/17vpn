@@ -8,6 +8,33 @@ minpod:
   eventory-worker-view: 1
   eventory-replay: 3
 
+
+#  schedules can help user to setup min pod number by datetime
+#  it is useful for disposable job such as offline campaign, replay requirement for at the end of month
+#
+#  timeslotSchedules can help user to setup min pod number by time of day
+#  it is useful to enlarge worker pods before leaderboarder is closed
+#  the endTime must be greater than startTime. The case 'startTime: 23h30m0s endTime: 0h30m0s" is not validated.
+#
+#  if schedules and timeslotSchedules is overlap, timeslotSchedules priority is higher than schedules
+#
+#  schedules example
+#    schedules:
+#    - startTime: "2022-06-08 10:20:00 (GMT+0800)"
+#      endTime: "2022-06-08 11:50:00 (GMT+0800)"
+#      minpod:
+#        eventory-worker-gift: 50
+#
+#  timeslotSchedules example
+#    timeslotSchedules:
+#      - startTime: "16h30m0s"
+#        endTime: "17h30m0s"
+#        minpod:
+#          eventory-worker-general: 3
+#          eventory-worker-gift: 4
+#          eventory-replay: 5
+#
+
 schedules:
 - startTime: "2022-06-08 10:20:00 (GMT+0800)"
   endTime: "2022-06-08 11:50:00 (GMT+0800)"
@@ -20,4 +47,4 @@ timeslotSchedules:
     minpod:
       eventory-worker-general: 3
       eventory-worker-gift: 4
-      eventory-replay: 5 
+      eventory-replay: 5
