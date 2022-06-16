@@ -6,23 +6,23 @@
     minReplicas: 20
 
 # weekly stress test
-- startTime: "2022-06-15 09:30:00 (GMT+0800)"
-  endTime: "2022-06-15 16:00:00 (GMT+0800)"
+- startTime: "2022-06-16 18:00:00 (GMT+0800)"
+  endTime: "2022-06-16 19:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8ssta-goapi-main
-    minReplicas: 80
+    minReplicas: 48
   - name: k8ssta-golives-main
-    minReplicas: 80
+    minReplicas: 48
   - name: k8ssta-gotrade-main
-    minReplicas: 40
+    minReplicas: 24
   - name: k8ssta-revprox-tw-main
     minReplicas: 36
   - name: k8ssta-gocells-main
-    minReplicas: 40
+    minReplicas: 24
   - name: k8ssta-concert-stream-tw-main
-    minReplicas: 30
+    minReplicas: 18
   - name: k8ssta-concert-trade-main
-    minReplicas: 30
+    minReplicas: 18
     
 # eventory-worker stress test
 - startTime: "2021-10-07 11:30:00 (GMT+0800)"
@@ -111,17 +111,4 @@
     minReplicas: 36
   - name: k8ssta-gocells-main
     minReplicas: 40
-
-# 0615 giftbox stress test
-- startTime: "2022-06-15 12:30:00 (GMT+0800)"
-  endTime: "2022-06-15 16:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8ssta-goapi-main
-    minReplicas: 110
-  - name: k8ssta-golives-main
-    minReplicas: 110
-  - name: k8ssta-gotrade-main
-    minReplicas: 80
-  - name: k8ssta-revprox-tw-main
-    minReplicas: 36
 
