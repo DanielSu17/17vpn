@@ -1,4 +1,4 @@
-dynamicUpdate: false
+dynamicUpdate: true
 maxRPS: 4000
 reservedPercentage: 30
 minpod:
@@ -36,14 +36,14 @@ minpod:
 #
 
 schedules:
-- startTime: "2022-06-17 11:10:00 (GMT+0800)"
-  endTime: "2022-06-17 11:30:00 (GMT+0800)"
+- startTime: "2022-06-17 11:40:00 (GMT+0800)"
+  endTime: "2022-06-17 12:00:00 (GMT+0800)"
   minpod:
     eventory-worker-gift: 7
 
 timeslotSchedules:
-  - startTime: "11h20m0s"
-    endTime: "11h40m0s"
+  - startTime: "11h45m0s"
+    endTime: "12h30m0s"
     minpod:
       eventory-worker-general: 4
       eventory-worker-gift: 4
