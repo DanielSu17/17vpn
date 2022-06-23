@@ -374,8 +374,28 @@
       "matomo_log_to_firebase":[]
    },
    "ed_manager":{
-      "factory" : false,
-      "data_dog_logger" : false
+      "factory":true,
+      "decay_policy": {
+         "level1": {
+            "minIntervalMillis": 1000,
+            "maxIntervalMillis": 4000,
+            "periodMillis": 30000,
+            "multiplier": 1.25
+         },
+         "level2": {
+            "minIntervalMillis": 1000,
+            "maxIntervalMillis": 9000,
+            "periodMillis": 30000,
+            "multiplier": 1.5
+         },
+         "level3": {
+            "minIntervalMillis": 1000,
+            "maxIntervalMillis": 16000,
+            "periodMillis": 30000,
+            "multiplier": 1.75
+         }
+      },
+      "enable_version":"2.100.0.0"
    },
    "gpu_poor_performance":{
       "bitrate_mode_vbr":{
