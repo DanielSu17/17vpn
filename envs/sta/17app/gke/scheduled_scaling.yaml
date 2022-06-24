@@ -101,22 +101,10 @@
   - name: k8ssta-gocells-main
     minReplicas: 6
 
-# stress test for sql connection upper bound
-- startTime: "2022-06-22 13:00:00 (GMT+0800)"
-  endTime: "2022-06-22 14:15:00 (GMT+0800)"
+# stress test for /api/v1/gifts
+- startTime: "2022-06-24 10:00:00 (GMT+0800)"
+  endTime: "2022-06-24 10:30:00 (GMT+0800)"
   HPAConfigs:
   - name: k8ssta-goapi-main
-    minReplicas: 100
-  - name: k8ssta-golives-main
-    minReplicas: 100
-  - name: k8ssta-gotrade-main
-    minReplicas: 50
-  - name: k8ssta-revprox-tw-main
-    minReplicas: 36
-  - name: k8ssta-gocells-main
-    minReplicas: 50
-  - name: k8ssta-concert-stream-tw-main
-    minReplicas: 50
-  - name: k8ssta-concert-trade-main
     minReplicas: 50
 
