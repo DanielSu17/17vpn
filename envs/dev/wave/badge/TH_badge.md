@@ -1,3 +1,3 @@
-# [Wave][TW] Badges
+# [Wave][TH] Badges
 
 List for badges. And the owner will be listed under each badge.
