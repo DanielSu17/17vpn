@@ -1,0 +1,88 @@
+## eventPopup example
+#
+#  Popoup anything you want 
+#  mode: 
+#        1: src =<URL> 
+#        2: src =<userID>
+#
+#
+#eventPopup:
+#- name: Event Popup1
+#  mode: 1
+#  src: https://google.com.tw
+#  imageUrl: https://dummyimage.com/300x500/0000ff/fff&text=MICK+WILLS
+#  startTime: 2019-12-01 00:00:00 (GMT+0800)
+#  endTime: 2119-12-31 23:59:59 (GMT+0800)
+#  imageSize:
+#    width: 300
+#    height: 500
+#- name: UserID Popup1
+#  mode: 2
+#  src: 302c5eb3-9c2c-4331-9653-f9cee2615dd5  # angiechang@17.media
+#  imageUrl: https://dummyimage.com/300x500/0000ff/fff&text=MICK+WILLS
+#  startTime: 2019-12-01 00:00:00 (GMT+0800)
+#  endTime: 2119-12-31 23:59:59 (GMT+0800)
+#  imageSize:
+#    width: 300
+#    height: 500
+eventPopup:
+  - name: Event Popup1
+    mode: 1
+    src: https://google.com.tw
+    imageUrl: https://dummyimage.com/300x500/0000ff/fff&text=MICK+WILLS
+    dynamicImageUrl: ''
+    startTime: 2019-12-01 00:00:00 (GMT+0800)
+    endTime: 2119-12-31 23:59:59 (GMT+0800)
+    imageSize:
+      width: 300
+      height: 500
+  - name: Event Popup2
+    mode: 1
+    src: https://yahoo.com.tw
+    imageUrl: https://dummyimage.com/300x500/00ff00/fff&text=MICK+WILLS
+    dynamicImageUrl: ''
+    startTime: 2019-12-01 00:00:00 (GMT+0800)
+    endTime: 2119-12-31 23:59:59 (GMT+0800)
+    imageSize:
+      width: 300
+      height: 500
+  - name: Event Popup3
+    mode: 1
+    src: https://bing.com
+    imageUrl: https://dummyimage.com/300x500/f9f900/fff&text=MICK+WILLS
+    dynamicImageUrl: ''
+    startTime: 2020-01-01 00:00:00 (GMT+0800)
+    endTime: 2020-01-31 23:59:59 (GMT+0800)
+    imageSize:
+      width: 300
+      height: 500
+  - name: UserID Popup1
+    mode: 2
+    src: 302c5eb3-9c2c-4331-9653-f9cee2615dd5  # angiechang@17.media
+    imageUrl: https://cdn.wave.com.tw/v1/bot/1580474002934624_4624472093308596_22422350548999592353885994948527_vu.png
+    dynamicImageUrl: ''
+    startTime: 2020-01-01 00:00:00 (GMT+0800)
+    endTime: 2119-02-01 23:59:59 (GMT+0800)
+    imageSize:
+      width: 300
+      height: 500
+  - name: UserID Popup2
+    mode: 2
+    src: 302c5eb3-9c2c-4331-9653-f9cee2615dd5  # angiechang@17.media
+    imageUrl: https://cdn.wave.com.tw/v1/bot/1578655218423537_4412997881488766_58072390645611344498037583023212_ib.png
+    dynamicImageUrl: ''
+    startTime: 2020-01-01 00:00:00 (GMT+0800)
+    endTime: 2119-01-31 23:59:59 (GMT+0800)
+    imageSize:
+      width: 300
+      height: 500
+  - name: UserID Popup3
+    mode: 2
+    src: 87c67c36-1a36-40c2-9d78-88ead54d622c  # matt.j@17.media
+    imageUrl: https://cdn.wave.com.tw/v1/bot/1580474002934624_4624472093308596_22422350548999592353885994948527_vu.png
+    dynamicImageUrl: ''
+    startTime: 2020-01-01 00:00:00 (GMT+0800)
+    endTime: 2119-01-31 23:59:59 (GMT+0800)
+    imageSize:
+      width: 300
+      height: 500
