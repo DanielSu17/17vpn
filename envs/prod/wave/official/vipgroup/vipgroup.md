@@ -1,1 +1,1 @@
-# [Wave] TW VIP Group Pop up setting
+# [Wave] [TW] VIP Group Pop up setting

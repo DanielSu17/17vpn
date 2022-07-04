@@ -1,4 +1,4 @@
-# Wave JP Popup
+# [Wave] [JP] Popup
 
 Popoup anything you want
 mode:

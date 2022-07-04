@@ -1,1 +1,1 @@
-# [Wave] TH IAP bonus
+# [Wave] [TH] IAP bonus

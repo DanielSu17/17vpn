@@ -1,1 +1,1 @@
-# [Wave] JP RedBlue Game Settings
+# [Wave] [JP] RedBlue Game Settings

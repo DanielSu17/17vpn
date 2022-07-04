@@ -1,1 +1,1 @@
-# [Wave] JP Diamond Mission
+# [Wave] [JP] Diamond Mission

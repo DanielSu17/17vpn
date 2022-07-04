@@ -1,1 +1,1 @@
-# [Wave] TH Diamond Mission
+# [Wave] [TH] Diamond Mission

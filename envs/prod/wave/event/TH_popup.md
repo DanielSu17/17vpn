@@ -1,4 +1,4 @@
-# Wave TH Popup
+# [Wave] [TH] Popup
 
 Popoup anything you want
 mode:

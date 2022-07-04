@@ -1,1 +1,1 @@
-# [Wave] TH Mission Setting
+# [Wave] [TH] Mission Setting

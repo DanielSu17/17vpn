@@ -1,3 +1,3 @@
-# [Wave] JP Dirtyword
+# [Wave] [JP] Dirtyword
 
 This file include the Wave JP dirtywords

@@ -1,3 +1,3 @@
-# [Wave] US Dirtyword
+# [Wave] [US] Dirtyword
 
 This file include the Wave US dirtywords

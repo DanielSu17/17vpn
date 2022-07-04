@@ -1,1 +1,1 @@
-# [Wave] JP Baggage Event Setting
+# [Wave] [JP] Baggage Event Setting

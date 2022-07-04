@@ -1,1 +1,1 @@
-# [Wave] JP IAP bonus
+# [Wave] [JP] IAP bonus

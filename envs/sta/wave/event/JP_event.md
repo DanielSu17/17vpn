@@ -1,1 +1,1 @@
-# [Wave] JP Event
+# [Wave] [JP] Event

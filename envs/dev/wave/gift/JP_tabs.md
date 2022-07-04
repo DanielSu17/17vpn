@@ -1,1 +1,1 @@
-# [Wave] JP Gift Tabs
+# [Wave] [JP] Gift Tabs

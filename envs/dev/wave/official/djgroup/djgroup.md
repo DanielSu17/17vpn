@@ -1,1 +1,1 @@
-# [Wave] TW DJ Group Pop up setting
+# [Wave] [TW] DJ Group Pop up setting

@@ -1,1 +1,1 @@
-# [Wave] TH Baggage Event Setting
+# [Wave] [TH] Baggage Event Setting

@@ -1,1 +1,1 @@
-# [Wave] TH Event
+# [Wave] [TH] Event

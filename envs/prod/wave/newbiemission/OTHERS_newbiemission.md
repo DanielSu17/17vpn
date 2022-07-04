@@ -1,2 +1,2 @@
-# [Wave] OTHERS 新手聽播任務
+# [Wave] [OTHERS] 新手聽播任務
 

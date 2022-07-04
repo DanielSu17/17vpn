@@ -1,1 +1,1 @@
-# [Wave] JP Mission Setting
+# [Wave] [JP] Mission Setting
