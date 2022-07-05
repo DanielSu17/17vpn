@@ -34,7 +34,7 @@ rate_limits:
 - url: "/api/v1/lives$"
   method: "POST"
   flow_per_second: 0.025
-  reservoir_size: 1
+  reservoir_size: 5
   scope: by_access_token
 - url: "/api/v1/redenvelopes/info/.*/pick$"
   method: "POST"
