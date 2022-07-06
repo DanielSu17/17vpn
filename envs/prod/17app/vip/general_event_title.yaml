@@ -21,7 +21,47 @@
 # "MonsterSettleTimes"
 # "ValentinePokeBackTimes"
 
-
 # regionMode supports: all, include, exclude
 
 eventTitles:
+
+# Example of configuration 設定參考
+ # - id: "event_title_21"
+  # badgeIcon represents the badge in achieved status(得到狀態),badgeGrayoutIcon represents the badge in unschieved status(未得到狀態).
+  # frameIcon represents the frame in achieved status(得到狀態),frameGrayoutIcon represents the frame in unschieved status(未得到狀態).
+    # badgeIconURL: "https://cdn.17app.co/cf565ff4-0407-4413-9db4-3208b1487e8d.png"
+    # badgeGrayoutIconURL: "https://cdn.17app.co/1e6ed73c-44e6-412b-a1f4-388e00dc2a5d.png"
+    # frameIconURL: "https://cdn.17app.co/bcfd0fe7-5e90-42c4-a63d-95ef930afb21.png"
+    # frameGrayoutIconURL: "https://cdn.17app.co/b55eba75-4d9f-4d3b-9c4c-c7e58cb8712b.png"
+  # nameToken represent the name of the title(封號名稱)，descriptionToken represents the short description of the event title.(短說明)
+  # please also udpate lokalise key file once you have the translation ready.
+    # nameToken: 
+    #   key: "i_am_mabao_event_ttile"
+    # descriptionToken:
+    #   key: "mothers_day_event_description"
+  # background represents the background of comment title，please dont change the setting!(留言封號底色樣式，請勿更動樣式！)
+    # backgroundType: 1
+  # if ctaEventID not set, user will not see call to action to event page(如果event id留為空白，則不會出現按鈕)
+    # ctaEventID: 14268
+  # user ID list will show the user who got assigned(得到此封號的用戶id)  
+    # userIDs:
+    #   - 47827368-6f05-44b2-8048-21204678f137
+    #   - 0812a536-13e6-438b-5889-ca1ce655dcb9
+    #   - 5965c0ec-60c8-419b-93f0-d96c5f800869
+    #   - f89ddb1c-a62d-436b-8c5b-fdd8d1217365
+    #   - 6086140b-3ab3-40b1-b18e-e8f78f369222
+    #   - 0b0e8644-8f15-402b-934f-fa5c745f5f5b
+    #   - 115851d0-d202-47c5-9079-71d3e7f704f7
+    #   - 637cab93-d805-48ab-9be8-dbfcd15b4439
+    #   - ba8af244-3f25-434f-4d92-7e816d07911c
+  # EventTimeRange is when user sees description of event(此活動封號顯示期間)
+    # eventTimeRange:
+    #   startTime: 2022-04-19 18:00:00 (GMT+0800)
+    #   endTime: 2022-06-26 18:00:00 (GMT+0800)
+  # TitleTimeRange means when above userIDs can start using their event titles(此活動封號得到用戶可以使用期間)
+    # titleTimeRange:
+    #   startTime: 2022-05-10 18:00:00 (GMT+0800)
+    #   endTime: 2022-06-26 18:00:00 (GMT+0800)
+  # Region mode and regions can be conmfigured to set up which region's user can see this title(此封號顯示區域)
+    # regionMode: exclude
+    # regions: ["TW","JP"]
