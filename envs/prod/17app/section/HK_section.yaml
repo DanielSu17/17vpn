@@ -23,16 +23,22 @@ sections:
   style: 7
   minGrids: 1
   more: false
+  ###### moved to top on Thurs and bottom on Fri, by Barton
+- id: Newbiequest
+  enable: true
+  style: 7
+  minGrids: 1
+  more: false
 - id: Label # 17LIVE x 2022 Asia Model Festival
   labelID: asia_model
   name:
-    key: hk_asia_model
-  enable: false
+    key: hk_asia
+  enable: true
   dedup: false
   minGrids: 1
   style: 3
   more: true
-  orderModel: 2
+
 - id: Label # 新主播
   labelID: new_streamers
   name:
@@ -131,6 +137,15 @@ sections:
   style: 3
   more: true
   orderModel: 2
+
+######
+- id: Vod # 熱門影音
+  name:
+    key: tab_hot_2019q4_vod
+  enable: true
+  minGrids: 1
+  style: 5
+  more: false
 - id: Label #
   labelID: 17live_hk
   name:
@@ -141,15 +156,6 @@ sections:
   style: 3
   more: true
   orderModel: 2
-######
-- id: Vod # 熱門影音
-  name:
-    key: tab_hot_2019q4_vod
-  enable: true
-  minGrids: 1
-  style: 5
-  more: false
-
 ######
 #  - id: AudioStream # AudioStream 聲播
 #    name:
