@@ -83,7 +83,6 @@ eventTitles:
     ctaEventID: 14206
     userIDs:
      # - c90a0797-509e-40ec-7f65-44a493cc332d
-     - ba8af244-3f25-434f-4d92-7e816d07911c
   # EventTimeRange is when user sees description of event
     eventTimeRange:
       startTime: 2022-07-07 15:00:00 (GMT+0800)
@@ -92,5 +91,31 @@ eventTitles:
     titleTimeRange:
       startTime: 2022-07-07 15:00:00 (GMT+0800)
       endTime: 2022-10-06 18:00:00 (GMT+0800)
+    regionMode: all
+    regions: []
+
+
+  - id: "2205-jp-vip-god"
+    badgeIconURL: "https://cdn.17app.co/e9ab6153-5658-41b2-ab30-a8b1d7c4c228.png"
+    badgeGrayoutIconURL: "https://cdn.17app.co/1cb52ba8-80a0-4805-88fe-2c64baa84232.png"
+    frameIconURL: "https://cdn.17app.co/49b632fe-9486-47c2-843a-e4da94bf0b59.png"
+    frameGrayoutIconURL: "https://cdn.17app.co/35449070-1d9b-4fa1-9852-48197f61563f.png"
+    nameToken: 
+      key: "vipevent_2022Q2_champion"
+    descriptionToken:
+      key: "vipevent_2022Q2_champion_description"
+    backgroundType: 1
+  # if ctaEventID not set, user will not see call to action to event page
+    ctaEventID: 14335
+    userIDs:
+      - ba8af244-3f25-434f-4d92-7e816d07911c
+  # EventTimeRange is when user sees description of event
+    eventTimeRange:
+      startTime: 2022-07-07 15:00:00 (GMT+0900)
+      endTime: 2099-10-06 18:00:00 (GMT+0900)
+  # TitleTimeRange means when above userIDs can start using their event titles
+    titleTimeRange:
+      startTime: 2022-07-07 15:00:00 (GMT+0900)
+      endTime: 2099-10-06 18:00:00 (GMT+0900)
     regionMode: all
     regions: []
