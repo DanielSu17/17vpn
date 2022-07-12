@@ -1,0 +1,1 @@
+# [Wave] [TH] KYC settings
