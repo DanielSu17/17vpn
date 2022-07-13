@@ -40,6 +40,64 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
+- ID: 0e2b2b37-19d6-4cdf-9b7f-39815b2903c2
+  type: 24
+  category: 0
+  lifeCycle: 2
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: crazy_stairs_viewer_easy_bag
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: po-crazy-stair-event-1
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: po-crazy-stair-gift-desc-1
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2022-07-18 12:00:00 (GMT-0700)
+    endTime: 2022-07-24 09:00:00 (GMT-0700)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: c4ea6c94-0d54-4ff4-bc7a-77d07357ce24
+  type: 13
+  category: 0
+  lifeCycle: 1
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: crazy_stairs_viewer_easy_bag
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: po-crazy-stair-event-2
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: po-crazy-stair-gift-desc-1
+  i18nDescriptionParams: []
+  goalValue: 6
+  enableTimeRange:
+  - startTime: 2022-07-18 12:00:00 (GMT-0700)
+    endTime: 2022-07-24 09:00:00 (GMT-0700)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
 - ID: 805f9f6a-8fff-44ce-9bd5-6499209a6133
   type: 8
   category: 0
@@ -63,64 +121,6 @@ missions:
   enableTimeRange:
   - startTime: 2022-07-01 18:00:00 (GMT-0700)
     endTime: 2022-07-14 21:00:00 (GMT-0700)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 1d06e12e-ef64-470d-aa3e-abb077682f81
-  type: 8
-  category: 0
-  lifeCycle: 1
-  targetAudience: 2
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2206_us_welcomeoffer_sechalf
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: usjunewelcomeoffer
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_IAP_reward_jp_npu_desc
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-06-16 18:00:00 (GMT-0700)
-    endTime: 2022-06-29 21:00:00 (GMT-0700)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: edfb3473-35a6-4532-bebf-d632defcd37a
-  type: 24
-  category: 0
-  lifeCycle: 2
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2206_us_gem_bag_high
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: po_mission_title_9
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: po_mission_desc_1_Gem Beast
-  i18nDescriptionParams: []
-  goalValue: 2
-  enableTimeRange:
-  - startTime: 2022-06-01 12:00:00 (GMT-0700)
-    endTime: 2022-06-30 23:59:59 (GMT-0700)
   refIDs: []
   platforms:
   - android
@@ -156,6 +156,154 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
+- ID: b560324b-3c97-445b-9ad2-e46e4d4863cb
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 2
+    max: 15
+  reward:
+    rewardType: 1
+    rewardID: crazy_stairs_viewer_easy_bag
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: po-crazy-stair-event-3
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: po-crazy-stair-gift-desc-2
+  i18nDescriptionParams: []
+  goalValue: 2
+  enableTimeRange:
+  - startTime: 2022-07-18 12:00:00 (GMT-0700)
+    endTime: 2022-07-24 09:00:00 (GMT-0700)
+  refIDs:
+  - crazy_stairs_viewer_easy
+  - crazy_stairs_streamer_easy
+  - 2108_crazy_zoo_en
+  - 2110_hw_performance_crazy_zoo_border
+  - 2110_hw_performance_crazy_zoo_cross
+  - 2110_hw_performance_crazy_zoo_dot
+  - 2110_hw_performance_crazy_zoo_three
+  - 2110_hw_performance_crazy_zoo_michael
+  - 2110_hw_performance_crazy_zoo_nose
+  - 2110_hw_performance_crazy_zoo_series
+  - gift_texture_crazy_zoo_border
+  - gift_texture_crazy_zoo_michael
+  - gift_texture_crazy_zoo_nose
+  - gift_texture_crazy_zoo_three
+  - gift_texture_crazy_zoo_dot
+  - gift_texture_crazy_zoo_cross
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 2476cd93-ae29-433f-8269-9bf5be1b37e5
+  type: 10
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 2
+    max: 15
+  reward:
+    rewardType: 1
+    rewardID: crazy_stairs_viewer_easy_bag
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: po-crazy-stair-event-4
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: po-crazy-stair-gift-desc-2
+  i18nDescriptionParams: []
+  goalValue: 1720
+  enableTimeRange:
+  - startTime: 2022-07-18 12:00:00 (GMT-0700)
+    endTime: 2022-07-24 09:00:00 (GMT-0700)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: a37140c5-7f82-4afa-a86e-bc673d600466
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 16
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: crazy_stairs_viewer_easy_bag
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: po-crazy-stair-event-5
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: po-crazy-stair-gift-desc-2
+  i18nDescriptionParams: []
+  goalValue: 4
+  enableTimeRange:
+  - startTime: 2022-07-18 12:00:00 (GMT-0700)
+    endTime: 2022-07-24 09:00:00 (GMT-0700)
+  refIDs:
+  - crazy_stairs_viewer_easy
+  - crazy_stairs_streamer_easy
+  - 2108_crazy_zoo_en
+  - 2110_hw_performance_crazy_zoo_border
+  - 2110_hw_performance_crazy_zoo_cross
+  - 2110_hw_performance_crazy_zoo_dot
+  - 2110_hw_performance_crazy_zoo_three
+  - 2110_hw_performance_crazy_zoo_michael
+  - 2110_hw_performance_crazy_zoo_nose
+  - 2110_hw_performance_crazy_zoo_series
+  - gift_texture_crazy_zoo_border
+  - gift_texture_crazy_zoo_michael
+  - gift_texture_crazy_zoo_nose
+  - gift_texture_crazy_zoo_three
+  - gift_texture_crazy_zoo_dot
+  - gift_texture_crazy_zoo_cross
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 3133bd42-7739-4a2e-ae9b-cf3ea769eaac
+  type: 10
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 16
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: crazy_stairs_viewer_easy_bag
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: po-crazy-stair-event-title-6
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: po-crazy-stair-gift-desc-2
+  i18nDescriptionParams: []
+  goalValue: 3540
+  enableTimeRange:
+  - startTime: 2022-07-18 12:00:00 (GMT-0700)
+    endTime: 2022-07-24 09:00:00 (GMT-0700)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
 - ID: 4ef66f8c-b44c-4cb5-8a20-08d50383566e
   type: 10
   category: 0
@@ -401,275 +549,6 @@ missions:
   - startTime: 2022-06-30 14:00:00 (GMT-0700)
     endTime: 2022-07-15 14:00:00 (GMT-0700)
   refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: f6c81e2a-ce55-467d-bbb1-6bedbd52b0c7
-  type: 10
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2206_us_gem_bag_high
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: po_mission_title_1
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: po_mission_desc_1_Gem Beast
-  i18nDescriptionParams: []
-  goalValue: 1500
-  enableTimeRange:
-  - startTime: 2022-06-01 12:00:00 (GMT-0700)
-    endTime: 2022-06-30 23:59:59 (GMT-0700)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 9ec7b534-6999-4fd4-bce9-3f794f1b184e
-  type: 24
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2202_us_gem_sapphire_1
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: po_mission_title_3
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: po_mission_desc_1_Gem Beast
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-06-01 12:00:00 (GMT-0700)
-    endTime: 2022-06-30 23:59:59 (GMT-0700)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 341a9d72-33a8-442d-88a2-35838e96f6ea
-  type: 5
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2202_us_gem_ruby_1
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: po_mission_title_4
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: po_mission_desc_1_Gem Beast
-  i18nDescriptionParams: []
-  goalValue: 4
-  enableTimeRange:
-  - startTime: 2022-06-01 12:00:00 (GMT-0700)
-    endTime: 2022-06-30 23:59:59 (GMT-0700)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 4cf9f9cb-a26c-49b1-b095-2b0113e5384f
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2202_us_gem_amber_1
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: po_mission_title_5
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: po_mission_desc_1_Gem Beast
-  i18nDescriptionParams: []
-  goalValue: 720
-  enableTimeRange:
-  - startTime: 2022-06-01 12:00:00 (GMT-0700)
-    endTime: 2022-06-30 23:59:59 (GMT-0700)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 7dc43c58-b355-4f6b-b9ff-e04978f3ece1
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2206_us_gem_bag_high
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: po_mission_title_8
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: po_mission_desc_1_Gem Beast
-  i18nDescriptionParams: []
-  goalValue: 5
-  enableTimeRange:
-  - startTime: 2022-06-01 12:00:00 (GMT-0700)
-    endTime: 2022-06-30 23:59:59 (GMT-0700)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 659399f5-2cc0-4aca-b566-ad189fb3d28f
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2206_us_gem_bag_high
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: po_mission_title_15
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: po_mission_desc_1_Gem Beast
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-06-01 12:00:00 (GMT-0700)
-    endTime: 2022-06-30 23:59:59 (GMT-0700)
-  refIDs:
-  - 2202_jp_magic
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: cf3ff4e9-550b-43ff-973b-431f721089ef
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2206_us_gem_bag_high
-    amount: 7
-    expireTimeSecs: 86400
-  i18nTitle: po_mission_title_13_copy
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: po_mission_desc_1_Gem Beast
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-06-01 12:00:00 (GMT-0700)
-    endTime: 2022-06-30 23:59:59 (GMT-0700)
-  refIDs:
-  - 2205_weekendfair_bag1
-  - 2205_partytime_bag1
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: f8086d02-62f0-4b7a-9e93-9999669eec00
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2206_us_gem_bag_high
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: po_mission_title_12
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: po_mission_desc_1_Gem Beast
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-06-01 12:00:00 (GMT-0700)
-    endTime: 2022-06-30 23:59:59 (GMT-0700)
-  refIDs:
-  - 2205_dessertshop_bag1
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 5793bc40-ae99-4c9f-811b-e95332771c07
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2206_us_gem_bag_high
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: po_mission_title_24
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: po_mission_desc_1_Gem Beast
-  i18nDescriptionParams: []
-  goalValue: 7
-  enableTimeRange:
-  - startTime: 2022-06-01 12:00:00 (GMT-0700)
-    endTime: 2022-06-30 23:59:59 (GMT-0700)
-  refIDs:
-  - 2202_us_gem_sapphire_1
-  - 2202_us_gem_ruby_1
-  - 2202_us_gem_amber_1
-  - 2206_us_gem_bag_high
   platforms:
   - android
   - ios
