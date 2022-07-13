@@ -11,7 +11,10 @@ protected_routes_with_methods:
   - route: "/redenvelopes/.*/pick$"
   - route: "/sections.*"
   - route: "/version"
-  - route: "/z20WRm97/init.js$"
+  - route: "/[a-zA-Z0-9]{8}/init.js$"
+    methods: ["GET"]
+  - route: "/[a-zA-Z0-9]{8}/xhr/.*"
+  - route: "/[a-zA-Z0-9]{8}/captcha/captcha.js$"
     methods: ["GET"]
 sensitive_headers:
   - "nonce"
