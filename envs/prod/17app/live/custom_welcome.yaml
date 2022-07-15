@@ -2,8 +2,8 @@
 #   Maps one region to another. If a user is in a region that has a key in this map,
 #   they will be delivered the message from the region theirs is mapped to.
 regionMap:
-  MY: TW
-  SG: TW
+#  MY: TW
+#  SG: TW
 
 # regionMessages
 #   Defines messages for a region.
@@ -19,6 +19,21 @@ regionMap:
 #       startTime: 2017-07-31T00:00:00+08:00  # start time in TW
 #       endTime: 2017-08-31T23:59:59+08:00    # end time in TW
 regionMessages:
+  MY:
+    - msgToken: SGMY_custom_welcome_001
+      defaultLanguage: TW
+      startTime: 2022-07-01T00:00:00+08:00
+      endTime: 2022-07-31T23:59:59+08:00
+  SG:
+    - msgToken: SGMY_custom_welcome_001
+      defaultLanguage: TW
+      startTime: 2022-07-01T00:00:00+08:00
+      endTime: 2022-07-31T23:59:59+08:00
+  PH:
+    - msgToken: PH_custom_welcome_001
+      defaultLanguage: EN
+      startTime: 2022-07-01T00:00:00+08:00
+      endTime: 2022-07-31T23:59:59+08:00
   US:
     - msgToken: US_custom_welcome_001
       defaultLanguage: EN
