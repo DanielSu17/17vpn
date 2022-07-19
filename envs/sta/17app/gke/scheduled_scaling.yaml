@@ -6,8 +6,8 @@
     minReplicas: 20
 
 # weekly stress test
-- startTime: "2022-07-13 09:45:00 (GMT+0800)"
-  endTime: "2022-07-13 12:30:00 (GMT+0800)"
+- startTime: "2022-07-20 09:45:00 (GMT+0800)"
+  endTime: "2022-07-20 12:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8ssta-goapi-main
     minReplicas: 80
@@ -23,7 +23,7 @@
     minReplicas: 30
   - name: k8ssta-concert-trade-main
     minReplicas: 30
-   
+
 # eventory-worker stress test
 - startTime: "2021-10-07 11:30:00 (GMT+0800)"
   endTime: "2021-10-07 18:00:00 (GMT+0800)"
