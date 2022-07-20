@@ -72,42 +72,101 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-
-
-- ID: b23a8006-6dcd-453d-a5e3-dcfe9db224d6
-  type: 10
+- ID: aef33999-6778-4e01-a014-fdf14ad1e388
+  type: 9
   category: 0
   lifeCycle: 1
   targetAudience: 0
   levelRange:
-    min: 1
+    min: 7
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2207_jp_pdt_charge_01
-    amount: 3
+    rewardID: 2207_jp_summerfest_bp
+    amount: 1
     expireTimeSecs: 86400
-  i18nTitle: baggage_mission_IAP_reward_jp_daily_charge_name
+  i18nTitle: baggage_mission_watch_jp_artist17
   i18nTitleParams:
   - value: "1"
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: baggage_mission_IAP_reward_jp_charge_desc
-  i18nDescriptionParams: []
-  goalValue: 1
+  i18nDescription: 2207_jp_summerparty_desc
+  i18nDescriptionParams:
+  - value: "1"
+    mapOption: 0
+    fontAttribute: null
+  goalValue: 10
   enableTimeRange:
-  - startTime: 2022-07-01 12:00:00 (GMT+0900)
-    endTime: 2022-07-14 23:59:59 (GMT+0900)
+  - startTime: 2022-08-01 19:40:00 (GMT+0900)
+    endTime: 2022-08-01 19:54:59 (GMT+0900)
   refIDs: []
   platforms:
   - android
   - ios
   requirePhoneBinding: false
   withReminder: false
-
-
+- ID: b2471d0f-fb25-4976-b7df-b2e32c907601
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2206_portal
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: po_mission_title_5
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: po_mission_desc_3
+  i18nDescriptionParams: []
+  goalValue: 10
+  enableTimeRange:
+  - startTime: 2022-07-21 00:00:00 (GMT+0900)
+    endTime: 2022-07-31 23:59:59 (GMT+0900)
+  refIDs:
+  - 2206_portal
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: fb183354-4509-4cd1-8c8e-bc623c04d080
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2206_portal
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: po_mission_title_6
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: po_mission_desc_3
+  i18nDescriptionParams: []
+  goalValue: 50
+  enableTimeRange:
+  - startTime: 2022-07-21 00:00:00 (GMT+0900)
+    endTime: 2022-07-31 23:59:59 (GMT+0900)
+  refIDs:
+  - 2206_portal
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
 - ID: 23accc8b-c1eb-46db-a711-4525d28a14e2
   type: 11
   category: 0
@@ -382,115 +441,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-- ID: 6be40b83-83cd-4d96-96f9-424aee691f44
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 17
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2207_jp_breakwall_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_jp_artist17
-  i18nTitleParams:
-  - value: "1"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_kabe_watching_reward_jp_desc
-  i18nDescriptionParams:
-  - value: "1"
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 10
-  enableTimeRange:
-  - startTime: 2022-07-01 15:00:00 (GMT+0900)
-    endTime: 2022-07-15 23:59:59 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-- ID: 0547aaf9-7f17-4dca-a013-0ed470e856b2
-  type: 8
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2207_jp_newlivd1_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_first_time_IAP_reward_jp_event_title
-  i18nTitleParams:
-  - value: "1"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: 2205_jp_chargepower_desc
-  i18nDescriptionParams:
-  - value: "1"
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-07-01 15:00:00 (GMT+0900)
-    endTime: 2022-07-16 23:59:59 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-#夏祭り2022
-- ID: aef33999-6778-4e01-a014-fdf14ad1e388
-  type: 9
-  category: 0
-  lifeCycle: 1
-  targetAudience: 0
-  levelRange:
-    min: 7
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2207_jp_summerfest_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_jp_artist17
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: 2207_jp_summerparty_desc
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 10
-  enableTimeRange:
-  - startTime: 2022-08-01 19:40:00 (GMT+0900)
-    endTime: 2022-08-01 19:54:59 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-#ゆけ、トップライバーへの登竜門！vol.45
 - ID: 9c26f96e-3e8b-4aee-a0ce-e110f5656610
   type: 8
   category: 0
@@ -507,7 +457,6 @@ missions:
   i18nTitle: baggage_mission_first_time_IAP_reward_jp_event_title
   i18nTitleParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
@@ -515,7 +464,6 @@ missions:
   i18nDescription: 2205_jp_chargepower_desc
   i18nDescriptionParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   goalValue: 1
@@ -528,7 +476,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-#手を伸ばせ！輝くトップライバーの星 vol.26
 - ID: c3a2389b-a9be-4a58-bed9-013d62e8525f
   type: 9
   category: 0
@@ -545,7 +492,6 @@ missions:
   i18nTitle: baggage_mission_watch_jp_17real
   i18nTitleParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
@@ -553,51 +499,12 @@ missions:
   i18nDescription: baggage_mission_comment_jp_topstr
   i18nDescriptionParams:
   - value: "1"
-    needMap: false
     mapOption: 0
     fontAttribute: null
   goalValue: 1020
   enableTimeRange:
   - startTime: 2022-07-17 15:00:00 (GMT+0900)
     endTime: 2022-07-29 23:59:59 (GMT+0900)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: false
-#集え!コスプレライバー〜ファンタジーコスプレ編〜
-- ID: 8b167c78-777c-42c8-9479-b06800ecb4db
-  type: 9
-  category: 0
-  lifeCycle: 1
-  targetAudience: 0
-  levelRange:
-    min: 10
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2207_jp_costume_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_jp_monthly_17Musicelection
-  i18nTitleParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: 2207_jp_cosplayfantasy_desc
-  i18nDescriptionParams:
-  - value: "1"
-    needMap: false
-    mapOption: 0
-    fontAttribute: null
-  goalValue: 600
-  enableTimeRange:
-  - startTime: 2022-07-18 00:00:00 (GMT+0900)
-    endTime: 2022-07-18 23:59:59 (GMT+0900)
   refIDs: []
   platforms:
   - android
