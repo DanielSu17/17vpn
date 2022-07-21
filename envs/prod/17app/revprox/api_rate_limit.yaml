@@ -128,3 +128,4 @@ rate_limits:
 - {url: "/api/v1/dailyquest/signIn",                            method: "POST",     flow_per_second: 0.00138,        reservoir_size: 5,    scope: by_access_token}
 
 - {url: "/api/v1/feed/live",                             method: "GET", flow_per_second: 70, reservoir_size: 70, scope: by_global}
+- {url: "/api/v1/army/pay/subscriptions/cancellation/[0-9]+",            method: "POST", flow_per_second: 1, reservoir_size: 5, scope: by_ip}
