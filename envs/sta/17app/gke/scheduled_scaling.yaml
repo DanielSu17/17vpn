@@ -24,18 +24,12 @@
   - name: k8ssta-concert-trade-main
     minReplicas: 30
 
-# eventory-worker stress test
-- startTime: "2021-10-07 11:30:00 (GMT+0800)"
-  endTime: "2021-10-07 18:00:00 (GMT+0800)"
+# eventory uv stress test
+- startTime: "2022-07-22 15:00:00 (GMT+0800)"
+  endTime: "2022-07-22 18:00:00 (GMT+0800)"
   HPAConfigs:
-  - name: k8ssta-goapi-main
-    minReplicas: 200
   - name: k8ssta-golives-main
-    minReplicas: 100
-  - name: k8ssta-gotrade-main
-    minReplicas: 50
-  - name: k8ssta-revprox-tw-main
-    minReplicas: 64
+    minReplicas: 25
 
 # Jennifer stress test
 - startTime: "2021-11-16 17:15:00 (GMT+0800)"
