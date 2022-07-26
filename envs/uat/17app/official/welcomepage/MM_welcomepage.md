@@ -1,1 +1,1 @@
-# Cover girl (MM)
+# Welcome page (MM)

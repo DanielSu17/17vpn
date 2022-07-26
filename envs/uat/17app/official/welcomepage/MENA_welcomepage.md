@@ -1,2 +1,2 @@
-# Cover girl (MENA)
+# Welcome page (MENA)
 #

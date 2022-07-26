@@ -1,1 +1,1 @@
-# Cover girl (TH)
+# Welcome page (TH)

@@ -1,1 +1,1 @@
-# Cover girl (VN)
+# Welcome page (VN)

@@ -1,1 +1,1 @@
-# Cover girl (ID)
+# Welcome page (ID)

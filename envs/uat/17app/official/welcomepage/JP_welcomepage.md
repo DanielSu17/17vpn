@@ -1,2 +1,2 @@
-# Cover girl (JP)
+# Welcome page (JP)
 #

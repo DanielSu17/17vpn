@@ -1,2 +1,2 @@
-# Cover girl (PH)
+# Welcome page (PH)
 #
