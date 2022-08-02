@@ -125,6 +125,9 @@ then
   then
     pr_url=$(gh pr create --title "[Infra] GKE prescaling" --body $today)
     curl -X POST --data-urlencode "payload={\"channel\": \"#eng-sre-log\", \"text\": \"<!subteam^S4Y7W93V1> Prescaling PR Created\n $pr_url \"}" "$SLACK_WEBHOOK_URI"
+  else
+    pr_exists_msg="PR already exists, just go to merge ${branch} branch directly."
+    curl -X POST --data-urlencode "payload={\"channel\": \"#eng-sre-log\", \"text\": \"<!subteam^S4Y7W93V1> ${pr_exists_msg}\"}" "$SLACK_WEBHOOK_URI"
   fi
 else
   echo 'Calendar unchanged.'
