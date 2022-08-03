@@ -69,39 +69,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: true
-- ID: eb06e1ea-f630-44cd-8951-022c050e3edf
-  type: 9
-  category: 0
-  lifeCycle: 1
-  targetAudience: 0
-  levelRange:
-    min: 2
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2205_game_barry
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "10"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 600
-  enableTimeRange:
-  - startTime: 2022-08-02 16:30:00 (GMT+0800)
-    endTime: 2022-08-02 18:30:00 (GMT+0800)
-  refIDs:
-  - 2aa97b5f-a7cb-460d-a762-f58f2c8a0165
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
 - ID: 641541d4-0412-4ebb-b3a6-537bedd9f3ac
   type: 9
   category: 0
@@ -280,6 +247,38 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
+- ID: 060938f5-2208-4348-a813-e4ab0055ccaa
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 21
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2208_tw_tanabata_a_bp
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "10"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 600
+  enableTimeRange:
+  - startTime: 2022-08-04 00:00:00 (GMT+0800)
+    endTime: 2022-08-04 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: false
 - ID: 529abd77-ae8a-4f23-8e3f-045c79b885b0
   type: 24
   category: 0
@@ -452,36 +451,6 @@ missions:
   - startTime: 2022-08-02 12:00:00 (GMT+0800)
     endTime: 2022-08-09 09:00:00 (GMT+0800)
   refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: f52c130f-4690-4feb-9107-0599190919b8
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 5
-  reward:
-    rewardType: 1
-    rewardID: newuser_onboarding
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_mission_welcomestream_rewards
-  i18nDescriptionParams: []
-  goalValue: 600
-  enableTimeRange:
-  - startTime: 2022-08-02 10:00:00 (GMT+0800)
-    endTime: 2022-08-02 21:15:00 (GMT+0800)
-  refIDs:
-  - f6448670-ba93-44cc-8bbe-1324537effe6
   platforms:
   - android
   - ios
