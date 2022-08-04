@@ -43,18 +43,6 @@ sections:
     category: normal
     orderModel: 2
 
-#  - id: Label # それスゴイ！ゲーム配信
-#    labelID: 2207_jp_soresugoi_game
-#    name:
-#      key: streamer_jp_label_soresugoi
-#    enable: true
-#    dedup: true
-#    minGrids: 3
-#    style: 3
-#    more: true
-#    category: normal
-#    orderModel: 2
-
   - id: PK
     name:
       key: tab_hot_2019q4_pk
@@ -63,6 +51,16 @@ sections:
     minGrids: 6 # 2個直播間一組PK，3組以上顯示
     style: 3
     more: true
+
+  - id: Suggestion # 猜你可能喜歡
+    name:
+      key: tab_hot_2019q4_follow_suggestion
+    enable: true
+    dedup: true
+    style: 6
+    minGrids: 5
+    more: true
+    orderModel: 2
 
   - id: Label # チート麻雀倶楽部会員
     labelID: 2207_jp_Mahjong_club
@@ -74,16 +72,6 @@ sections:
     style: 3
     more: true
     category: normal
-    orderModel: 2
-
-  - id: Suggestion # 猜你可能喜歡
-    name:
-      key: tab_hot_2019q4_follow_suggestion
-    enable: true
-    dedup: true
-    style: 6
-    minGrids: 5
-    more: true
     orderModel: 2
 
   - id: NewestStreamer # D0 new streamer
@@ -510,6 +498,18 @@ sections:
 #    labelID: 2206_jp_shortmovie
 #    name:
 #      key: streamer_jp_label_short_movie_challenge
+#    enable: true
+#    dedup: true
+#    minGrids: 3
+#    style: 3
+#    more: true
+#    category: normal
+#    orderModel: 2
+
+#  - id: Label # それスゴイ！ゲーム配信
+#    labelID: 2207_jp_soresugoi_game
+#    name:
+#      key: streamer_jp_label_soresugoi
 #    enable: true
 #    dedup: true
 #    minGrids: 3
