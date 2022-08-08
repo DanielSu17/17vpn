@@ -4,8 +4,24 @@
 # - labelID: mapping for labels table id
 
 labelInfos:
+  - id: "popularliver" #人氣LIVER推薦 (探索頁stream room)
+    type: 3
+    label:
+      key: "streamer_label_popularliver"
+    iconURL: "人氣LIVER推薦"
+    isHide: true
+    order: 515
 
-  - id: "musicstar" #官方音樂認證
+  - id: "musicprofessional" #音樂才藝 (探索頁stream room)
+    type: 1
+    label:
+      key: "streamer_label_musicprofessional"
+    iconURL: "音樂才藝"
+    isHide: true
+    order: 514
+
+  - id: "musicstar" #官方音樂認證 (探索頁stream room)
+    type: 1
     label:
       key: "streamer_label_musicstar"
     iconURL: "官方音樂認證"
@@ -814,18 +830,20 @@ exploreLabels:
   #- hiphop
   - show
   - musicstar
-  - singer
-  - player
-  - acoustic
-  - politics
+  - musicprofessional
   - fortune_teller
+  - politics
+  - popularliver
+  #- singer
+  #- player
+  #- acoustic
   #- campus
-  - street_artist
-  - tw_fashion
-  - tw_chat
-  - talent
-#  - tw_sport
-#  - smartlife
+  #- street_artist
+  #- tw_fashion
+  #- tw_chat
+  #- talent
+  #- tw_sport
+  #- smartlife
 
 # 時事話題直播列表會出現的label
 topicTabLabels:
@@ -833,12 +851,29 @@ topicTabLabels:
 
 # labelWhiteList defines relation between label and user list
 labelWhiteList:
+  popularliver: #人氣LIVER推薦
+    - 9a3b9532-a630-4a07-46ce-5260395aed35  #巧庭👑
+    - 004d63cb-facc-422b-8f1d-248fbc97ba6f  #優寶cawaiiun
+    - aab4bf1a-4fb2-4301-664a-312ab31b4a53  #晨晨🌹Reneeღ
+    - fc9bb29c-8625-4de7-bc57-952ebd14a47a  #橘子🍊姐姐
+    - 8d7fe26c-da3d-439f-a0f3-0e1d2a962329  #羊羊被欺負了🥺
+    - b8238e3c-0029-447e-9e33-91fa646ff8c6  #水果小公主🍍Lala
+    - dc91c7f4-c9a4-4026-93e6-dba4fd20cfb2  #🦄小魚Yuyu🌟
+    - 22840ef1-4e75-4898-8747-a12c8b88065d  #安希🖤
+
+  musicprofessional: #音樂才藝
+    - 58890578-8de6-4f75-5178-5e301cc31bd7  #衣喬Aki
+    - 38e5f400-650a-4d3f-bb94-b9439036fec0  #Annie苡宸🌱
+    - 4b95ab29-795e-48cf-9f6e-e15b66dd5155  #LISA麗莎姐姐
+    - 94728e88-feca-4ca9-9062-39e3d2f93467  #小沙kabalu
+    - 09cb94f0-b536-49d1-b539-311085b78df4  #Queeny昆霓🎵
+
   musicstar: #官方音樂認證
-  - "3ed53cb6-3eaa-4db5-b82b-bc6781ceb7a4" #孫苡琳🐸
-  - "030439ba-3c02-4496-ac51-70c1619af541" #辰辰醬🎸
-  - "b30ddc71-6a42-49b2-8dc4-673c89678c38" #妮霓🌶❤️
-  - "7ae0f323-8e1a-4e04-9f42-b43972ec70ca" #薇薇安🐾
-  - "ba3db3aa-9904-410b-95c0-f7d927612b28" #阿鈞🎤AGin
+    - 3ed53cb6-3eaa-4db5-b82b-bc6781ceb7a4  #孫苡琳🐸
+    - 030439ba-3c02-4496-ac51-70c1619af541  #辰辰醬🎸
+    - b30ddc71-6a42-49b2-8dc4-673c89678c38  #妮霓🌶❤️
+    - 7ae0f323-8e1a-4e04-9f42-b43972ec70ca  #薇薇安🐾
+    - ba3db3aa-9904-410b-95c0-f7d927612b28  #阿鈞🎤AGin
 
   halloween_make_party2021: #PO 2021萬聖節變裝Party
   - "a7fbf38e-b65b-4c93-9b8b-b7814fa66d10" #dora妍希
@@ -2525,23 +2560,23 @@ labelWhiteList:
 
 
   fortune_teller: # 命理小舖
-    - 6172b2ec-dd28-4884-75fc-5415c85ba241  #艾莉絲IRIS
-  #  - 58fabfe6-958a-415a-a51b-a56e9f045507 # 命運17玩
-    - c0754794-5d6d-4b50-916d-c5f82abec5d8	#神算Boss_Mr.德冠
-    - 2fbdc276-b4dc-433e-5080-119a69f8d644	#大風神占卜師☀️鐵板神算☯
-  #  - 1dff66c7-2c0c-43a7-b54d-a59e5bd00d77	#馨蒂寶🌸紫鉉🌹
-    - 48a38585-637e-486e-4853-4594a8fa3fab	#翎淇☀️Tarot🔮
-    - a0a672af-73ea-44dd-4bd1-3c61e9ab5bfd	#神占塔羅🔮仙仙
-    - 165a71b7-efbf-48f0-8cca-0d8060a21587	#潔西花朵塔羅
-    - f593c590-c4b8-43f3-9dc0-89db0ca8a436	#朱莉兔寶🐰八字命理
-  #  - 590b7379-792f-4f85-a75c-3bb0d0ddc657	#命運指導師🏆聖杯皇后愛麗卡
-    - 3fd5459a-e5f0-40c4-991e-1bc4e731a4df	#玫笛琳🔮塔羅⭐️命理
-    - c102d319-4ac8-4981-b518-b2c47af86209	#AuntJessie5818
-    - 1b4322af-9497-4f96-8467-26372381a87f	#軍師🐉靈魂占卜☯
-    - 26e403c2-de5e-46ed-9c6b-604c21b3a013	#依淇ichi
-    - 4db2e6c8-9683-4078-a6cf-43c6ca0c5318	#朱以恩
-    - d903da71-a345-4e8e-8858-fed72ca5838c	#幸運女神事務所
-
+    - c7bd76c6-e0a5-4abf-8c6c-0f92a248c830  #通靈者🌈DR👑
+#    - 6172b2ec-dd28-4884-75fc-5415c85ba241  #艾莉絲IRIS
+#    - 58fabfe6-958a-415a-a51b-a56e9f045507 # 命運17玩
+#    - c0754794-5d6d-4b50-916d-c5f82abec5d8	#神算Boss_Mr.德冠
+#    - 2fbdc276-b4dc-433e-5080-119a69f8d644	#大風神占卜師☀️鐵板神算☯
+#    - 1dff66c7-2c0c-43a7-b54d-a59e5bd00d77	#馨蒂寶🌸紫鉉🌹
+#    - 48a38585-637e-486e-4853-4594a8fa3fab	#翎淇☀️Tarot🔮
+#    - a0a672af-73ea-44dd-4bd1-3c61e9ab5bfd	#神占塔羅🔮仙仙
+#    - 165a71b7-efbf-48f0-8cca-0d8060a21587	#潔西花朵塔羅
+#    - f593c590-c4b8-43f3-9dc0-89db0ca8a436	#朱莉兔寶🐰八字命理
+#    - 590b7379-792f-4f85-a75c-3bb0d0ddc657	#命運指導師🏆聖杯皇后愛麗卡
+#    - 3fd5459a-e5f0-40c4-991e-1bc4e731a4df	#玫笛琳🔮塔羅⭐️命理
+#    - c102d319-4ac8-4981-b518-b2c47af86209	#AuntJessie5818
+#    - 1b4322af-9497-4f96-8467-26372381a87f	#軍師🐉靈魂占卜☯
+#    - 26e403c2-de5e-46ed-9c6b-604c21b3a013	#依淇ichi
+#    - 4db2e6c8-9683-4078-a6cf-43c6ca0c5318	#朱以恩
+#    - d903da71-a345-4e8e-8858-fed72ca5838c	#幸運女神事務所
 
   acoustic: # 彈唱歌手
     - 73c96f71-c149-423e-9f1c-3f6d842a0ad6 #Vivian🌟涵涵
