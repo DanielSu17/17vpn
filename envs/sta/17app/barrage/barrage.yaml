@@ -3,6 +3,11 @@
 # 2: 火箭彈幕 / 799點
 # 3: 飛船彈幕 / 1599點
 # 4: 場控彈幕
+# 5: 系統彈幕 / 不開放設定
+# 6: 遊戲補償彈幕-S / 100點
+# 7: 遊戲補償彈幕-M / 500點
+# 8: 遊戲補償彈幕-L / 1,000點
+# 9: 遊戲補償彈幕-XL / 10,000點
 # key: 翻譯的i18n字串
 barrages:
   - type: 1
@@ -25,6 +30,22 @@ barrages:
     point: 0
     enabled: false
     key: streamer_assistant_barrage
+  - type: 6
+    point: 100
+    enabled: true
+    key: barrage_type_compensation_small
+  - type: 7
+    point: 500
+    enabled: true
+    key: barrage_type_compensation_medium
+  - type: 8
+    point: 1000
+    enabled: true
+    key: barrage_type_compensation_large
+  - type: 9
+    point: 10000
+    enabled: true
+    key: barrage_type_compensation_xl
 
 newLogicSupportedVersion:
   android: "2.4.35"
