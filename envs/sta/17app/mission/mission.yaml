@@ -170,6 +170,79 @@ missions:
   - web
   requirePhoneBinding: false
   withReminder: true
+- ID: 230d79e7-fa1c-4f8a-885d-3174bf8d77f2
+  type: 32
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: star
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_share_onetime_title
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_share_des
+  i18nDescriptionParams:
+    - value: "Facebook"
+      mapOption: 0
+      fontAttribute: null
+  goalValue: 1
+  enableTimeRange:
+    - startTime: 2022-04-01 12:00:00 (GMT+0800)
+      endTime: 2099-04-30 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+    - android
+    - ios
+    - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: e3f0e3e6-55ea-4641-b192-02d90620fd65
+  type: 35
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: star
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_share_title
+  i18nTitleParams:
+    - value: "LINE"
+      mapOption: 0
+      fontAttribute: null
+    - value: "5"
+      mapOption: 0
+      fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_share_des
+  i18nDescriptionParams:
+    - value: "LINE"
+      mapOption: 0
+      fontAttribute: null
+  goalValue: 5
+  enableTimeRange:
+    - startTime: 2022-04-01 12:00:00 (GMT+0800)
+      endTime: 2099-04-30 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+    - android
+    - ios
+    - web
+  requirePhoneBinding: false
+  withReminder: true
+
 i18nMissionCompleteToast: baggage_mission_toast_claimed
 refreshHour: 17
 supportedVersion:
