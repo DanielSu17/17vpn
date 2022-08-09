@@ -1,3 +1,14 @@
+# - thumbnail: //分割背景縮圖，為 cdn 的 link，僅限 .jpeg檔
+# nameI18n:    //需要加到Lokalise key
+# fps:         //靜態圖片必須為 0，動態圖片才要給 >0 的值
+# startTime:   //開始時間
+# endTime:     //結束時間
+# disabled:    //true|false，預設false
+# url:         //分割背景圖檔，為 cdn 的 link，僅限 .zip檔
+# md5:         //是用來確認 client 這邊收到的 zip 檔案跟雲端上的是否一致
+# 在 backend-bot 使用指令 !file upload，跟著要傳送的 .jpg / .zip 一起發送，backend-bot 會回傳 url / md5
+
+
 - thumbnail: "http://cdn.17app.co/65a4890c-1795-4003-9ced-e1d70b53cc56.jpeg"
   nameI18n: "streamer_greenscreen_dog"
   fps: 0
