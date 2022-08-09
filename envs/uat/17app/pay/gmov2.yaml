@@ -21,16 +21,21 @@ sandboxSetting:
 disableWhitelist: true
 whitelist: ["1935c91b-dee8-405f-8181-1fcbc5fc56aa","35782d4a-93cf-4019-7fe3-8969c5517598","4762c304-c8ec-4951-4a75-d0119759f3a1","ab13ab09-8df4-49e6-6850-077a01c76429","efabab5e-1b8a-4179-74c8-caa9b0775aac"]
 
-# If disableCvsWhitelist is false, only users in whitelist can use CVS paygate
+# (Deprecated) If disableCvsWhitelist is false, only users in whitelist can use CVS paygate
 disableCvsWhitelist: true
 cvsWhitelist: ["1935c91b-dee8-405f-8181-1fcbc5fc56aa","35782d4a-93cf-4019-7fe3-8969c5517598","4762c304-c8ec-4951-4a75-d0119759f3a1","ab13ab09-8df4-49e6-6850-077a01c76429","efabab5e-1b8a-4179-74c8-caa9b0775aac"]
 
-# If disablePayeasyWhitelist is false, only users in whitelist can use Payeasy paygate
+# (Deprecated) If disablePayeasyWhitelist is false, only users in whitelist can use Payeasy paygate
 disablePayeasyWhitelist: true
 payeasyWhitelist: ["1935c91b-dee8-405f-8181-1fcbc5fc56aa","35782d4a-93cf-4019-7fe3-8969c5517598","4762c304-c8ec-4951-4a75-d0119759f3a1","ab13ab09-8df4-49e6-6850-077a01c76429","efabab5e-1b8a-4179-74c8-caa9b0775aac"]
 
 # switch whether query the order when one time purchase
 enableQueryNotifOrder: true
+
+linkTypePlus:
+  enable: true
+  whiteListUserIDs:
+  configID: 17liveTestConfID
 
 # If errorInfo on this list, will suppress alert
 unretriableErrors: 
