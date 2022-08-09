@@ -4,10 +4,6 @@ applyTaskQueue: false
 sendTaskQueueRate: 100
 taskQueueWhitelist:
   - 04a780e1-c3bd-4736-b2df-4b14ab31158c
-bigQueryEnabled: false
-userNeedDirectBigquery:
-  #  - "81bb8d64-06d3-4365-bb57-1c223d6e09cd"  # 小雪
-  #  - "3128adcd-ea2c-438d-93cf-00baf1d7374a"  # jen87
 enableRetry: true
 retryCount: 10
 waitingCycle: 20
@@ -75,7 +71,7 @@ redisCounter:
   dayOfLifeCycle: 7
 
 # bigQueryTraceMode: 0 - off, 1 - whitelist, 2 - all
-bigQueryTraceMode: 1
+bigQueryTraceMode: 2
 bigQueryTraceList:
   - "2fbdc276-b4dc-433e-5080-119a69f8d644" # Mr.大風神♣️鐵板神算
   - "78ec94cd-242d-4557-a65f-c836d0e64dbd" # 夢浮_mw
@@ -92,5 +88,3 @@ bigQueryTraceList:
   - "32afdaac-a83b-481f-bc5a-1e85c3188c6f" # sheenalo動漫女神
   - "4f346b9e-854e-4cf1-9127-5ea4d126d76e" # ゆーとん･🐽･yu__ton
   - "3c3a32f2-538f-4569-4b51-0c3a93ab23f5" # melody淇淇🌹
-  
-enableLogPublishNotifTime: false
