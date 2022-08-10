@@ -10,22 +10,12 @@
 # | IAP_Buy_Point | 8 |
 # | View_Stream_X_Seconds | 9 |
 # | IAP_X_Points | 10 |
+# | Share_Twitter | 11 |
 # | TypePhoneBinding | 12 |
 # | View_Stream_X_Different_Days | 13 |
 # | CreateAvatar | 16 |
 # | CommentInNewestLivestream | 17 |
 # | CheckIn | 24 |
-# ============
-# Viewer share
-# | Share_Twitter | 11 |
-# | ShareInstagramStory | 29 |
-# | ShareInstagramDirect | 30 |
-# | ShareFacebookStory | 31 |
-# | ShareFacebookNewsFeed | 32 |
-# | ShareMessenger | 33 |
-# | ShareWhatsApp | 34 |
-# | ShareLine | 35 |
-# | Share17 | 36 |
 
 # | category | Value |
 # | --- | --- |
@@ -50,254 +40,29 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
-- ID: 63acca90-86e4-4e97-a25a-923997495ba2
-  type: 9
+- ID: b7b53842-1000-47a4-9f17-9b54b7143345
+  type: 8
   category: 0
-  lifeCycle: 0
+  lifeCycle: 1
   targetAudience: 0
   levelRange:
     min: 1
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2202_my_valentines_1_bp
+    rewardID: 2208_us_welcomeoffer_sechalf
     amount: 1
     expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "5"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_content_desc
-  i18nDescriptionParams: []
-  goalValue: 300
-  enableTimeRange:
-  - startTime: 2022-02-10 00:00:00 (GMT-0800)
-    endTime: 2022-02-20 23:59:59 (GMT-0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 3ff4e7f6-52ae-4ac3-9f53-e89c76027861
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2202_my_valentines_1_bp
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "15"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_content_desc
-  i18nDescriptionParams: []
-  goalValue: 900
-  enableTimeRange:
-  - startTime: 2022-02-10 00:00:00 (GMT-0800)
-    endTime: 2022-02-20 23:59:59 (GMT-0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 0455956c-3983-46b6-b9eb-21c446727494
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2202_my_valentines_1_bp
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "30"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_content_desc
-  i18nDescriptionParams: []
-  goalValue: 1800
-  enableTimeRange:
-  - startTime: 2022-02-10 00:00:00 (GMT-0800)
-    endTime: 2022-02-20 23:59:59 (GMT-0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 1dc79f3e-df7c-42a5-bb24-d1f1fc6df67f
-  type: 24
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2202_lovebirds_0
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: us_mission_daily_login
+  i18nTitle: usaugwelcomeoffer
   i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: us_baggage_mission_newbie
+  i18nDescription: baggage_mission_IAP_reward_jp_npu_desc
   i18nDescriptionParams: []
   goalValue: 1
   enableTimeRange:
-  - startTime: 2022-02-08 16:00:00 (GMT+0800)
-    endTime: 2022-02-18 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 12927e78-3663-447e-8193-7f0f6702f013
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2202_lovebirds_0
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "1"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 60
-  enableTimeRange:
-  - startTime: 2022-02-08 16:00:00 (GMT+0800)
-    endTime: 2022-02-18 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 507ccdb4-f296-4126-9d8e-d712f489418c
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2202_lovebirds_0
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_send_gifts
-  i18nTitleParams:
-  - value: "5"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_us_5times
-  i18nDescriptionParams: []
-  goalValue: 5
-  enableTimeRange:
-  - startTime: 2022-02-08 16:00:00 (GMT+0800)
-    endTime: 2022-02-18 23:59:59 (GMT+0800)
-  refIDs:
-  - soundtest
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 91e4e0cf-d239-4b33-adb1-66b30f2be2e2
-  type: 10
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2202_lovebirds_0
-    amount: 30
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_first_time_IAP_point_tw_event_title_event
-  i18nTitleParams:
-  - value: "7320"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
-  i18nDescriptionParams: []
-  goalValue: 7320
-  enableTimeRange:
-  - startTime: 2022-02-08 16:00:00 (GMT+0800)
-    endTime: 2022-02-18 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 3845ed91-9b71-4393-b21a-f3ac6da97166
-  type: 10
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2202_lovebirds_0
-    amount: 45
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_first_time_IAP_point_tw_event_title_event
-  i18nTitleParams:
-  - value: "20000"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
-  i18nDescriptionParams: []
-  goalValue: 20000
-  enableTimeRange:
-  - startTime: 2022-02-08 16:00:00 (GMT+0800)
-    endTime: 2022-02-18 23:59:59 (GMT+0800)
+  - startTime: 2022-08-10 12:00:00 (GMT-0700)
+    endTime: 2022-08-27 21:00:00 (GMT-0700)
   refIDs: []
   platforms:
   - android
