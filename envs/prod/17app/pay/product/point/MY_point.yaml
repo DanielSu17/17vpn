@@ -11,6 +11,60 @@
 # // |    UnLimit    |   2   | 限時不限次數
 
 eventBasedIAP:
+# Welcome Offer August H2
+  - startTime: "2022-08-16T18:00:00+08:00" #Remember to change 
+    endTime: "2022-09-01T00:00:00+08:00" #Remember to change 
+    showCountdownUnderSticker: false #If you need countdown set it to true
+    showCountdownInPopUp: false #If you need countdown set it to true
+    stickerURL: "https://cdn.17app.co/7ffb941f-2169-44c1-b916-c22912cd217f.png"
+    stickerURLInGiftbox: "https://cdn.17app.co/7ffb941f-2169-44c1-b916-c22912cd217f.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/149cb5be-6ff5-47e7-98cd-0cedf2212eec.png" #change if need
+    layoutInfo:
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_3540"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight:  true
+    firstPurchaseType: 1 #Flash sale change it to 0, first time purchase to 1
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true
+    abtestName:
 #2/14 ~ 2/18 IAP任務＋+比翼鳥- Willie
   - startTime: "2022-02-14T13:00:00+08:00"
     endTime: "2022-02-18T00:00:00+08:00"
