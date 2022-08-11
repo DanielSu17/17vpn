@@ -40,6 +40,39 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
+- ID: a0e4c73e-3142-408e-8fcc-b32644071467
+  type: 9
+  category: 0
+  lifeCycle: 1
+  targetAudience: 0
+  levelRange:
+    min: 2
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2205_game_barry
+    amount: 3
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "10"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 600
+  enableTimeRange:
+  - startTime: 2022-08-11 16:30:00 (GMT+0800)
+    endTime: 2022-08-11 18:30:00 (GMT+0800)
+  refIDs:
+  - 2aa97b5f-a7cb-460d-a762-f58f2c8a0165
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
 - ID: 166997cd-fe54-41fc-84f5-1f133d5b2622
   type: 24
   category: 0
@@ -373,66 +406,6 @@ missions:
   - android
   - ios
   requirePhoneBinding: true
-  withReminder: true
-- ID: 3a34d069-9c9b-4a3f-887b-2566fb590872
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 5
-  reward:
-    rewardType: 1
-    rewardID: newuser_onboarding
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_mission_welcomestream_rewards
-  i18nDescriptionParams: []
-  goalValue: 600
-  enableTimeRange:
-  - startTime: 2022-08-09 10:00:00 (GMT+0800)
-    endTime: 2022-08-09 21:15:00 (GMT+0800)
-  refIDs:
-  - f6448670-ba93-44cc-8bbe-1324537effe6
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 9cc9b021-e9d3-4e65-81df-f8afab49c804
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 5
-  reward:
-    rewardType: 1
-    rewardID: newuser_onboarding
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_mission_welcomestream_rewards
-  i18nDescriptionParams: []
-  goalValue: 600
-  enableTimeRange:
-  - startTime: 2022-08-10 10:00:00 (GMT+0800)
-    endTime: 2022-08-10 21:15:00 (GMT+0800)
-  refIDs:
-  - 8cf6f255-dbb0-4d9f-9944-fa7d5bc0a2a3
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
   withReminder: true
 - ID: c8606932-de38-4f36-be5f-175b55f80077
   type: 9
