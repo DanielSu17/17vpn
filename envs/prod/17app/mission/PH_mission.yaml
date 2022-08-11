@@ -40,6 +40,35 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
+- ID: eabf35ba-00f5-40ea-8ef4-6ccb8f94cc04
+  type: 8
+  category: 0
+  lifeCycle: 1
+  targetAudience: 2
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2208_sea_welcomeoffer_sechalf
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: usaugwelcomeoffer
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_IAP_reward_jp_npu_desc
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2022-08-16 18:00:00 (GMT+0800)
+    endTime: 2022-08-31 00:00:00 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
 - ID: f748f6bb-058a-48df-9844-53398368b28b
   type: 16
   category: 0
@@ -69,201 +98,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-- ID: c52568b6-45e0-46ba-bc67-6a8c7e602269
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2204_my_academy_5_bp
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "30"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 1800
-  enableTimeRange:
-  - startTime: 2022-07-15 00:00:00 (GMT+0800)
-    endTime: 2022-07-21 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: true
-- ID: a1b2e1c2-776a-4df9-bc3b-bfd28ebbbcef
-  type: 5
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2204_my_academy_5_bp
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_leave_comment_reward_title2
-  i18nTitleParams:
-  - value: "10"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_leave_comment_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 10
-  enableTimeRange:
-  - startTime: 2022-07-15 00:00:00 (GMT+0800)
-    endTime: 2022-07-21 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: true
-- ID: 516062e6-be92-49c9-a71a-4a4df4b91687
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2204_my_academy_5_bp
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_send_specific_gifts_reward_title
-  i18nTitleParams:
-  - value: "2"
-    mapOption: 0
-    fontAttribute: null
-  - value: 2207_my_trial_s
-    mapOption: 2
-    fontAttribute: null
-  - value: 2207_my_trial_m
-    mapOption: 2
-    fontAttribute: null
-  - value: 2207_my_trial_l
-    mapOption: 2
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
-  i18nDescriptionParams: []
-  goalValue: 2
-  enableTimeRange:
-  - startTime: 2022-07-15 00:00:00 (GMT+0800)
-    endTime: 2022-07-21 23:59:59 (GMT+0800)
-  refIDs:
-  - 2207_my_trial_s
-  - 2207_my_trial_m
-  - 2207_my_trial_l
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: true
-- ID: f7c994dd-432a-4689-85fa-898a341091e5
-  type: 24
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2207_sea_summerbaggage
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_daily_checkin_title
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_daily_checkin_descr
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-07-22 12:00:00 (GMT+0800)
-    endTime: 2022-07-31 23:30:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 173e4668-c1ad-4a75-862e-73d2608ce3fe
-  type: 24
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2207_sea_summerbaggage
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_3d_checkin_title
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_3d_checkin_descr
-  i18nDescriptionParams: []
-  goalValue: 3
-  enableTimeRange:
-  - startTime: 2022-07-22 12:00:00 (GMT+0800)
-    endTime: 2022-07-31 23:30:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: de36cb34-a342-4a92-8edd-cbb94efa0c62
-  type: 24
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2207_sea_summerbaggage
-    amount: 8
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_5d_checkin_title
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_5d_checkin_descr
-  i18nDescriptionParams: []
-  goalValue: 5
-  enableTimeRange:
-  - startTime: 2022-07-22 12:00:00 (GMT+0800)
-    endTime: 2022-07-31 23:30:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
 i18nMissionCompleteToast: baggage_mission_toast_claimed
 refreshHour: 5
 supportedVersion:
