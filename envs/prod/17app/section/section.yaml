@@ -89,9 +89,18 @@ sections:
       key: audio_stream_v3hotpage
     enable: true
     dedup: false
-    minGrids: 1
+    minGrids: 3
     style: 3
     more: true
+  - id: NewestStreamer # D0 new streamer 首日新手
+    name:
+      key: tab_hot_d0streamer
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    orderModel: 2
   - id: Label # 超新星
     labelID: newbie
     name:
@@ -102,15 +111,6 @@ sections:
     style: 3
     more: true
     category: normal
-    orderModel: 2
-  - id: NewestStreamer # D0 new streamer 首日新手
-    name:
-      key: tab_hot_d0streamer
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
     orderModel: 2
   - id: Latest # 新人(和『最新』同邏輯) 新星主播在這裡
     name:
@@ -132,17 +132,17 @@ sections:
     more: true
     category: normal
     orderModel: 2
-  - id: Label #HelloKitty
-    labelID: HelloKitty
-    name: 
-      key: event_unboxing_Hello_Kitty
-    enable: true
-    dedup: true
-    minGrids: 3
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
+  # - id: Label #HelloKitty
+  #   labelID: HelloKitty
+  #   name: 
+  #     key: event_unboxing_Hello_Kitty
+  #   enable: true
+  #   dedup: true
+  #   minGrids: 3
+  #   style: 3
+  #   more: true
+  #   category: normal
+  #   orderModel: 2
   - id: Label #音樂
     labelID: tw_t_music
     name: 
