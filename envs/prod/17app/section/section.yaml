@@ -60,15 +60,6 @@ sections:
 #    more: true
 #    category: normal
 #    orderModel: 2
-  - id: NewestStreamer # D0 new streamer 首日新手
-    name:
-      key: tab_hot_d0streamer
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    orderModel: 2
   - id: Suggestion # 猜你可能喜歡
     name:
       key: tab_hot_2019q4_follow_suggestion
@@ -77,17 +68,6 @@ sections:
     style: 6
     minGrids: 5
     more: true 
-  - id: Label # 名人開播 Celebrities
-    labelID: TWcelebrity
-    name: 
-      key: streamer_label_TWcelebrity
-    enable: true
-    dedup: true
-    minGrids: 1
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
   - id: GroupCall # GroupCall 派對
     name:
       key: group_stream_v3hotpage
@@ -122,6 +102,15 @@ sections:
     style: 3
     more: true
     category: normal
+    orderModel: 2
+  - id: NewestStreamer # D0 new streamer 首日新手
+    name:
+      key: tab_hot_d0streamer
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
     orderModel: 2
   - id: Latest # 新人(和『最新』同邏輯) 新星主播在這裡
     name:
@@ -340,6 +329,17 @@ sections:
     style: 3
     more: true
     category: normal #normal代表可以在開播類別被選擇；exclusive則不能被選擇，不填寫則默認exclusive
+    orderModel: 2
+  - id: Label # 名人開播 Celebrities
+    labelID: TWcelebrity
+    name: 
+      key: streamer_label_TWcelebrity
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
     orderModel: 2
 
 #以下是草稿 
