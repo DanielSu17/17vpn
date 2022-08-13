@@ -43,6 +43,16 @@ sections:
     category: normal
     orderModel: 2
 
+  - id: Latest # 新人(和『最新』同邏輯)
+    name:
+      key: tab_hot_2019q4_newstreamer
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    orderModel: 2
+
   - id: Label # Lv100以上
     labelID: 2203_jp_lv100
     name:
@@ -55,20 +65,10 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: Latest # 新人(和『最新』同邏輯)
+  - id: Label # チート麻雀倶楽部会員
+    labelID: 2207_jp_Mahjong_club
     name:
-      key: tab_hot_2019q4_newstreamer
-    enable: true
-    dedup: true
-    minGrids: 3
-    style: 3
-    more: true
-    orderModel: 2
-
-  - id: Label # 今日のご飯（料理長決定戦）
-    labelID: 2207_jp_Today_meal17
-    name:
-      key: streamer_jp_label_Today_meal17
+      key: streamer_jp_label_Mahjong_club
     enable: true
     dedup: true
     minGrids: 2
@@ -77,10 +77,10 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: Label # チート麻雀倶楽部会員
-    labelID: 2207_jp_Mahjong_club
+  - id: Label # 今日のご飯（料理長決定戦）
+    labelID: 2207_jp_Today_meal17
     name:
-      key: streamer_jp_label_Mahjong_club
+      key: streamer_jp_label_Today_meal17
     enable: true
     dedup: true
     minGrids: 2
