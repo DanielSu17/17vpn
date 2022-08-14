@@ -31,13 +31,25 @@ sections:
  #   style: 2
  #   more: false
 
-  - id: Label # ファン激推し
-    labelID: 2208_jp_enthusiastic_fan
+#  - id: Label # ファン激推し
+#    labelID: 2208_jp_enthusiastic_fan
+#    name:
+#      key: streamer_jp_label_enthusiastic_fan
+#    enable: true
+#    dedup: true
+#    minGrids: 1
+#    style: 3
+#    more: true
+#    category: normal
+#    orderModel: 2
+
+  - id: Label # Lv100以上
+    labelID: 2203_jp_lv100
     name:
-      key: streamer_jp_label_enthusiastic_fan
+      key: streamer_jp_label_lv100
     enable: true
     dedup: true
-    minGrids: 1
+    minGrids: 3
     style: 3
     more: true
     category: normal
@@ -53,13 +65,13 @@ sections:
     more: true
     orderModel: 2
 
-  - id: Label # Lv100以上
-    labelID: 2203_jp_lv100
+  - id: Label # 今日のご飯（料理長決定戦）
+    labelID: 2207_jp_Today_meal17
     name:
-      key: streamer_jp_label_lv100
+      key: streamer_jp_label_Today_meal17
     enable: true
     dedup: true
-    minGrids: 3
+    minGrids: 2
     style: 3
     more: true
     category: normal
@@ -69,18 +81,6 @@ sections:
     labelID: 2207_jp_Mahjong_club
     name:
       key: streamer_jp_label_Mahjong_club
-    enable: true
-    dedup: true
-    minGrids: 2
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
-  - id: Label # 今日のご飯（料理長決定戦）
-    labelID: 2207_jp_Today_meal17
-    name:
-      key: streamer_jp_label_Today_meal17
     enable: true
     dedup: true
     minGrids: 2
