@@ -43,23 +43,23 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: Latest # 新人(和『最新』同邏輯)
+  - id: Suggestion # 猜你可能喜歡
     name:
-      key: tab_hot_2019q4_newstreamer
+      key: tab_hot_2019q4_follow_suggestion
     enable: true
     dedup: true
-    minGrids: 3
-    style: 3
+    style: 6
+    minGrids: 5
     more: true
     orderModel: 2
 
-  - id: Label # 今日のご飯（料理長決定戦）
-    labelID: 2207_jp_Today_meal17
+  - id: Label # 広告出演中のライバー
+    labelID: 2206_jp_Ad_entry_streamer
     name:
-      key: streamer_jp_label_Today_meal17
+      key: streamer_jp_label_Ad_entry_streamer
     enable: true
     dedup: true
-    minGrids: 2
+    minGrids: 0
     style: 3
     more: true
     category: normal
@@ -77,28 +77,6 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: Label # 広告出演中のライバー
-    labelID: 2206_jp_Ad_entry_streamer
-    name:
-      key: streamer_jp_label_Ad_entry_streamer
-    enable: true
-    dedup: true
-    minGrids: 0
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
-  - id: Suggestion # 猜你可能喜歡
-    name:
-      key: tab_hot_2019q4_follow_suggestion
-    enable: true
-    dedup: true
-    style: 6
-    minGrids: 5
-    more: true
-    orderModel: 2
-
   - id: NewestStreamer # D0 new streamer
     name:
       key: tab_hot_d0streamer
@@ -107,6 +85,18 @@ sections:
     minGrids: 5
     style: 3
     more: true
+    orderModel: 2
+
+  - id: Label # 今日のご飯（料理長決定戦）
+    labelID: 2207_jp_Today_meal17
+    name:
+      key: streamer_jp_label_Today_meal17
+    enable: true
+    dedup: true
+    minGrids: 2
+    style: 3
+    more: true
+    category: normal
     orderModel: 2
 
   - id: Label # 歌
@@ -271,6 +261,16 @@ sections:
     category: normal
     orderModel: 2
 
+  - id: Latest # 新人(和『最新』同邏輯)
+    name:
+      key: tab_hot_2019q4_newstreamer
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    orderModel: 2
+
   - id: Label
     labelID: jp_V-LIVER
     name:
@@ -383,7 +383,6 @@ sections:
     more: true
     category: normal
     orderModel: 2
-
 
 
 #保留ジャンル
