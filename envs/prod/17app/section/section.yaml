@@ -143,58 +143,6 @@ sections:
   #   more: true
   #   category: normal
   #   orderModel: 2
-  - id: Label #音樂
-    labelID: tw_t_music
-    name: 
-      key: streamer_label_music
-    enable: true
-    dedup: true  
-    minGrids: 5
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-  - id: Label #遊戲玩家
-    labelID: tw_t_game
-    name: 
-      key: streamer_label_game
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-  - id: Label #繪畫達人
-    labelID: visual_artists
-    name: 
-      key: streamer_label_highlight_visual_artists
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-  - id: Label #直播商城
-    labelID: market
-    name: 
-      key: streamer_label_market
-    enable: true
-    dedup: true
-    minGrids: 3
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-  - id: Music # legacy Music tab
-    name:
-      key: tab_hot_2019q4_music
-    enable: false
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
   - id: Label #實力歌手
     labelID: singer
     name: 
@@ -225,6 +173,58 @@ sections:
     style: 3
     more: true
     orderModel: 2
+  - id: Label #音樂
+    labelID: tw_t_music
+    name: 
+      key: streamer_label_music
+    enable: true
+    dedup: true  
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+  - id: Label #繪畫達人
+    labelID: visual_artists
+    name: 
+      key: streamer_label_highlight_visual_artists
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+  - id: Label #遊戲玩家
+    labelID: tw_t_game
+    name: 
+      key: streamer_label_game
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+  - id: Label #直播商城
+    labelID: market
+    name: 
+      key: streamer_label_market
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+  # - id: Music # legacy Music tab
+  #   name:
+  #     key: tab_hot_2019q4_music
+  #   enable: false
+  #   dedup: true
+  #   minGrids: 5
+  #   style: 3
+  #   more: true
   - id: Label #熱門節目
     labelID: show
     name: 
@@ -315,7 +315,7 @@ sections:
     name: 
       key: streamer_label_TWcelebrity
     enable: true
-    dedup: true
+    dedup: false
     minGrids: 1
     style: 3
     more: true
