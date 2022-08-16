@@ -2,7 +2,6 @@
 
 ## Common setting
 enableIconAnimation(`bool`): Enable the icon animation or not. Supported value: `true,false`
-gameBetRecordsStartTime(`"YYYY-MM-DD hh:mm:ss (GMT+0800)"`): The time start to use GameBetRecords table
 
 ## Promotion Rule
 - enable(`bool`): Enable the promotion or not. Supported value: `true,false`
@@ -17,3 +16,4 @@ gameBetRecordsStartTime(`"YYYY-MM-DD hh:mm:ss (GMT+0800)"`): The time start to u
     - enable(`bool`): Enable version control or not. Supported value: `true,false`
     - ios(`string`): The minimum iOS version support.
     - android(`string`): The minimum Android version support.
+
