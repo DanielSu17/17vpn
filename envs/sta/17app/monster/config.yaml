@@ -74,69 +74,69 @@ monsters:
       - giftID: gift_lightstick_g
         probability: 10000
 
-  # - id: puppet # 素還真
-  #   type: 1  # 0: 一般怪獸, 1: 招喚怪獸
-  #   hit_consume: 1
-  #   duration: 60s
-  #   stream_alive_threshold: 1m00s
-  #   animation: "puppet"
-  #   available_dates: # 一般怪獸才會看時間
-  #     - start_date: "2022-01-19T15:30:00+08:00"
-  #       end_date: "2022-04-01T23:59:59+08:00"
-  #   appear_durations: # 一般怪獸才會看時間
-  #     - start_time: 00h00m00s
-  #       end_time: 23h59m59s
+  - id: puppet # 素還真
+    type: 1  # 0: 一般怪獸, 1: 招喚怪獸
+    hit_consume: 1
+    duration: 60s
+    stream_alive_threshold: 1m00s
+    animation: "puppet"
+    available_dates: # 一般怪獸才會看時間
+      - start_date: "2022-01-19T15:30:00+08:00"
+        end_date: "2022-04-01T23:59:59+08:00"
+    appear_durations: # 一般怪獸才會看時間
+      - start_time: 00h00m00s
+        end_time: 23h59m59s
 
-  #   share_ratio: 50 # percentage
-  #   profit_ratio: 35 # percentage
-  #   bonus: 132
-  #   weight: 1
-  #   infoPageiconURL: https://cdn.17app.co/b5c6692a-6f22-4829-b614-8eebe720b0d1.png
-  #   winnerPageiconURL: https://cdn.17app.co/b5c6692a-6f22-4829-b614-8eebe720b0d1.png
-  #   hintToken:
-  #     {
-  #       key: monster_battle_hint_puppet,
-  #       fontAttribute: { textColor: "#FFFFFF" },
-  #     }
-  #   rule1Token:
-  #     {
-  #       key: monster_battle_rule1_puppet,
-  #       fontAttribute: { textColor: "#FFFFFF" },
-  #     }
-  #   rule2Token:
-  #     {
-  #       key: monster_battle_rule2_puppet,
-  #       fontAttribute: { textColor: "#FFFFFF" },
-  #     }
-  #   rule3Token:
-  #     {
-  #       key: monster_battle_rule3_puppet,
-  #       fontAttribute: { textColor: "#FFFFFF" },
-  #     }
-  #   rule4Token:
-  #     {
-  #       key: monster_battle_rule4_puppet,
-  #       fontAttribute: { textColor: "#FFFFFF" },
-  #     }
-  #   countdownToken:
-  #     {
-  #       key: monster_battle_countdown_puppet,
-  #       fontAttribute: { textColor: "#FFFFFF" },
-  #     }
-  #   failureToken:
-  #     {
-  #       key: monster_battle_failure_puppet,
-  #       fontAttribute: { textColor: "#FFFFFF" },
-  #     }
-  #   successToken:
-  #     {
-  #       key: monster_battle_success_puppet_coin,
-  #       fontAttribute: { textColor: "#FFFFFF" },
-  #     }
-  #   marqueeToken: { key: monster_battle_marquee_puppet }
-  #   summonGifts: # 招喚怪獸才需要填
-  #     - giftID: gift_lightstick_g
-  #       probability: 10000
+    share_ratio: 50 # percentage
+    profit_ratio: 35 # percentage
+    bonus: 132
+    weight: 1
+    infoPageiconURL: https://cdn.17app.co/b5c6692a-6f22-4829-b614-8eebe720b0d1.png
+    winnerPageiconURL: https://cdn.17app.co/b5c6692a-6f22-4829-b614-8eebe720b0d1.png
+    hintToken:
+      {
+        key: monster_battle_hint_puppet,
+        fontAttribute: { textColor: "#FFFFFF" },
+      }
+    rule1Token:
+      {
+        key: monster_battle_rule1_puppet,
+        fontAttribute: { textColor: "#FFFFFF" },
+      }
+    rule2Token:
+      {
+        key: monster_battle_rule2_puppet,
+        fontAttribute: { textColor: "#FFFFFF" },
+      }
+    rule3Token:
+      {
+        key: monster_battle_rule3_puppet,
+        fontAttribute: { textColor: "#FFFFFF" },
+      }
+    rule4Token:
+      {
+        key: monster_battle_rule4_puppet,
+        fontAttribute: { textColor: "#FFFFFF" },
+      }
+    countdownToken:
+      {
+        key: monster_battle_countdown_puppet,
+        fontAttribute: { textColor: "#FFFFFF" },
+      }
+    failureToken:
+      {
+        key: monster_battle_failure_puppet,
+        fontAttribute: { textColor: "#FFFFFF" },
+      }
+    successToken:
+      {
+        key: monster_battle_success_puppet_coin,
+        fontAttribute: { textColor: "#FFFFFF" },
+      }
+    marqueeToken: { key: monster_battle_marquee_puppet }
+    summonGifts: # 招喚怪獸才需要填
+      - giftID: gift_lightstick_g
+        probability: 10000
 
 #  - id: monster_anniversary5 # 寶寶五週年
 #    type: 1 # 0: 一般怪獸, 1: 招喚怪獸
