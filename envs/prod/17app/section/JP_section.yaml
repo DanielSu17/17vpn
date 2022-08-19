@@ -43,13 +43,13 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: Suggestion # 猜你可能喜歡
+  - id: Latest # 新人(和『最新』同邏輯)
     name:
-      key: tab_hot_2019q4_follow_suggestion
+      key: tab_hot_2019q4_newstreamer
     enable: true
     dedup: true
-    style: 6
-    minGrids: 5
+    minGrids: 3
+    style: 3
     more: true
     orderModel: 2
 
@@ -97,6 +97,16 @@ sections:
     style: 3
     more: true
     category: normal
+    orderModel: 2
+
+  - id: Suggestion # 猜你可能喜歡
+    name:
+      key: tab_hot_2019q4_follow_suggestion
+    enable: true
+    dedup: true
+    style: 6
+    minGrids: 5
+    more: true
     orderModel: 2
 
   - id: Label # 歌
@@ -259,16 +269,6 @@ sections:
     style: 3
     more: true
     category: normal
-    orderModel: 2
-
-  - id: Latest # 新人(和『最新』同邏輯)
-    name:
-      key: tab_hot_2019q4_newstreamer
-    enable: true
-    dedup: true
-    minGrids: 3
-    style: 3
-    more: true
     orderModel: 2
 
   - id: Label
