@@ -1,91 +1,18 @@
-applyTaskQueue: false
 # Send notification by task queue probability
 # sendTaskQueueRate: 50 means send by task queue probability is 50/100
 sendTaskQueueRate: 100
-taskQueueWhitelist:
-  - 04a780e1-c3bd-4736-b2df-4b14ab31158c
 enableRetry: true
 retryCount: 10
 waitingCycle: 20
-batchSize: 8
+batchSize: 16
 # debug purpose
 redisCounter:
   enable: true
   targetUsers:
-    - "04a780e1-c3bd-4736-b2df-4b14ab31158c" # hdc331
-    - "3128adcd-ea2c-438d-93cf-00baf1d7374a" # jen87
-    - "81bb8d64-06d3-4365-bb57-1c223d6e09cd" # 小雪
-    - "19c2620c-d22a-4825-a01d-2c56c83e30e5" # 我是張摸摸
-    - "2eb18a35-e3f0-46b2-8de1-f3b53726eb87" # 張小壹
-    - "93e77d8a-c4b1-45f3-ae74-5ad68620e5a0" # 妖妖DanceQueen
-    - "1ec3e9b3-dd19-4c06-b659-96453d3ac4f9" # 張菁菁Arlena
-    - "bb7854c8-46ef-430b-85a5-e5333a58b5b9" # 甜心寶貝含含
-    - "62e01b86-cf8d-4e5d-ba18-52e609fa301d" # 小雞培培
-    - "890a59e3-1683-430f-b729-e7884170d1f4" # 芭樂公主薇薇兒
-    - "2fbdc276-b4dc-433e-5080-119a69f8d644" # 大風神～鐵板神算～
-    - "df574cd5-7343-4c50-6933-a38647e14443" # 石原彩香🌹AYAKA
-    - "811f9556-b97b-4a60-986c-8473df07bbe1" # 岸田直樹🌻Naoking
-    - "c7da8439-3a35-41a3-b4f0-ba685ae30372" # miss.egg蛋姐
-    - "47a35fbb-ce6b-4c82-9973-2a9391b6478d" # leonababy1223
-    - "5ea964e2-dd80-47d1-af8a-8a99f8650bef" # 劉子瑜_vickybaby💛
-    - "4eed4435-a0a9-4613-bd18-b014f5ba26ac" # 謝薇安🐶Vivian
-    - "86124bd0-1917-435a-67b6-cb1a5271afc8" # 熙恩Cheryl🍬
-    - "f0269935-bb11-42d5-aa8b-c3c8baf24b62" # james小白
-    - "a7fbf38e-b65b-4c93-9b8b-b7814fa66d10" # dora妍希
-    - "6a8e622f-083b-4057-9e06-a9da1bb8bd42" # mavis瑪啡
-    - "118a6968-c39f-426c-a865-5db387c2601d" # 溫溫寶貝兒💋
-    - "c765e406-90fa-402a-9e99-80f283ec3300" # Amber藍星蕾
-    - "88ecde10-95d2-4b67-a357-b29674ca796e" # 小貝Caca🎀
-    - "4a4fa658-78b7-4c88-8a66-117c88eecf9d" # 柔娜💋Zona
-    - "426cbc9a-6cee-41de-9dc7-4519a39b41f4" # 體操甜心💙霖霖
-    - "e028f3df-fb18-44ba-5602-13ea181caf96" # 熙媛🐼
-    - "96d20525-92ca-4c28-a0ca-72004fa19c4d" # 采依Kelly
-    - "fdc959cb-193e-4cc2-b2fa-ee2589e17a97" # 米奇歐逆🌟MiKi
-    - "a1eeebcb-b8d0-45b8-915a-a96bf01e4e85" # 陽光桑💛
-    - "31ac8b8b-acba-4185-9342-1673ed836ca4" # 虎牙茹茹🦁
-    - "c6b645e4-af11-4a36-78b1-9db79960c1ff" # 溱溱💙Jennifer 
-    - "bbe6bc84-d7fd-41b0-968f-530777b9c9fc" # 🔅小希🔅
-    - "6d2c0e55-7409-4d60-a439-64a099e9e19c" # kimi寶寶
-    - "d21d8573-b6dd-4620-b860-1c8b498e0377" # 冷家大公主歐潔兒
-    - "44e1f164-831d-4732-8e49-0cda24369000" # 言言言
-    - "5f617a9e-0745-4786-b5d7-bce4741e59aa" # 湘湘💕
-    - "63597a90-7e55-469b-892c-b811137971dc" # 趴趴🌻
-    - "a15bd10e-9f7b-4fd1-a757-70007b43e774" # 萱比比👸🏻
-    - "900a69aa-e0bc-464a-aac1-3a459cd1bb16" # 妍晨安🌸
-    - "9e3bb332-0546-4d7d-671e-799769f9685c" # 麗茲Liz
-    - "86124bd0-1917-435a-67b6-cb1a5271afc8" # 熙恩Cheryl🍬
-    - "2755452a-a0ec-4a3f-a83d-6db0634f62ae" # 胡利基
-    - "bbd77766-d064-4ad7-49b7-f94f0cabd4ab" # 湘楹
-    - "0b050cb2-48e7-49c9-b705-a15e7cc5cbb8" # 晶晶🐷Gigi
-    - "4c400666-4c22-4891-b1f5-416bb14edd03" # Fedora粉朵拉🌸
-    - "22840ef1-4e75-4898-8747-a12c8b88065d" # 安希🖤
-    - "33979fb3-bc03-4ca8-a79d-b27e5a81d64a" # 詹子瑜Edana
-    # had received issues about streamers below
-    - "4f4d5462-4a9f-483e-b620-9df9c13ec840"  # 小歐拉💛
-    - "0b0e8644-8f15-402b-934f-fa5c745f5f5b"  # 小佳兒330
-    - "e50736d0-27ec-4f5c-b15d-9d913dc15e16"  # aily🐰あいり🌸🍼
-    - "5673396a-0166-419e-686e-47419ac83e76"  # もも🍑💕Momo🐟
-    - "49cf25b2-fdd9-4082-8d4f-4c9d6379db16"  # まりか_clarinet
-    - "a4074271-682e-4240-8336-ccf9d540ddec"  # karapin
-    - "665e5657-4e65-42e0-8470-f719b75a7159"  # あやみん🦖🌈ayamin🌙
-    - "b7460e73-5952-426f-945b-3ca30f46fa1c"  # ."ponpon"🐶🍑
+#     - "3128adcd-ea2c-438d-93cf-00baf1d7374a" # jen87
   dayOfLifeCycle: 7
 
 # bigQueryTraceMode: 0 - off, 1 - whitelist, 2 - all
 bigQueryTraceMode: 2
 bigQueryTraceList:
-  - "2fbdc276-b4dc-433e-5080-119a69f8d644" # Mr.大風神♣️鐵板神算
-  - "78ec94cd-242d-4557-a65f-c836d0e64dbd" # 夢浮_mw
-  - "ba7b72bb-1cc1-4629-a5ee-376fa0c73eb0" # なる🎨🥀naruru
-  - "0b0e8644-8f15-402b-934f-fa5c745f5f5b" # 小佳兒330
-  - "4f4d5462-4a9f-483e-b620-9df9c13ec840" # 小歐拉💛
-  - "e38f8f65-e7cb-44d4-befd-1d3863dabd53" # 珈菲🌸Garfield🌸
-  - "f0269935-bb11-42d5-aa8b-c3c8baf24b62" # james小白
-  - "81bb8d64-06d3-4365-bb57-1c223d6e09cd" # 小雪
-  - "71719eb3-53a6-4b67-4a1f-24063776d12b" # 👨‍🏫💪金子賢💪👨‍🏫
-  - "811f9556-b97b-4a60-986c-8473df07bbe1" # 岸田直樹🌻Naoking
-  - "a6e7fc06-962d-4bf5-6ffd-73e276c331c6" # まき🐱🎀💨MaKi
-  - "5ea964e2-dd80-47d1-af8a-8a99f8650bef" # 劉子瑜_vickybaby💛
-  - "32afdaac-a83b-481f-bc5a-1e85c3188c6f" # sheenalo動漫女神
-  - "4f346b9e-854e-4cf1-9127-5ea4d126d76e" # ゆーとん･🐽･yu__ton
-  - "3c3a32f2-538f-4569-4b51-0c3a93ab23f5" # melody淇淇🌹
+#   - "2fbdc276-b4dc-433e-5080-119a69f8d644" # Mr.大風神♣️鐵板神算
