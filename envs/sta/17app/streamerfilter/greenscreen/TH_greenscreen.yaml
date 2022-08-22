@@ -1,47 +1,55 @@
-# - thumbnail: //分割背景縮圖，為 cdn 的 link，僅限 .jpeg檔
-# nameI18n:    //需要加到Lokalise key
-# fps:         //靜態圖片必須為 0，動態圖片才要給 >0 的值
+# - thumbnail: //分割背景縮圖，為 cdn 的 link，png or jpeg(This is the preview of the background filter.)
+# nameI18n:    //需要加到Lokalise key(This is the name displayed on the filter options, please add to lokalise first)
+# fps:         //靜態圖片必須為 0，動態圖片才要給 >0 的值(This is frame rate. Please have this number from desginer, and put 0 if the filter is static.)
 # startTime:   //開始時間
 # endTime:     //結束時間
 # disabled:    //true|false，預設false
-# url:         //分割背景圖檔，為 cdn 的 link，僅限 .zip檔
-# md5:         //是用來確認 client 這邊收到的 zip 檔案跟雲端上的是否一致
+# url:         //分割背景圖檔，為 cdn 的 link，僅限 .zip檔(Ths zip file of the pngs or a png. Not the zip of the file.)
+# md5:         //是用來確認 client 這邊收到的 zip 檔案跟雲端上的是否一致(md5 coming from backend-bot.)
 # 在 backend-bot 使用指令 !file upload，跟著要傳送的 .jpg / .zip 一起發送，backend-bot 會回傳 url / md5
 
 
-- thumbnail: "http://cdn.17app.co/65a4890c-1795-4003-9ced-e1d70b53cc56.jpeg"
-  nameI18n: "Streamer_filter_BG_test1"
+- thumbnail: "https://cdn.17app.co/e0d457d1-ef86-4510-b68e-8177c6db994c.png"
+  nameI18n: "Streamer_filter_BG_lofi"
+  fps: 11
+  startTime: "2021-02-22T17:30:00+08:00"
+  endTime: "2090-12-31T23:59:59+08:00"
+  disabled: false
+  url: "http://cdn.17app.co/4db17af6-ee41-4753-ae49-df54ce7c29a8.zip"
+  md5: " 43cefe92c7312840b17a2b1d0aaa48d7"
+  
+- thumbnail: "https://cdn.17app.co/267a1a58-3603-4d2b-bf28-b2c84b763757.png"
+  nameI18n: "Streamer_filter_BG_DiscoParty"
+  fps: 11
+  startTime: "2021-02-22T17:30:00+08:00"
+  endTime: "2090-12-31T23:59:59+08:00"
+  disabled: false
+  url: "http://cdn.17app.co/64174100-5dd7-4249-baff-6e5a470cbc5e.zip"
+  md5: "1cdbe04a7735d5390c5d2c1c00476924"
+  
+- thumbnail: "https://cdn.17app.co/1e25c63a-69bf-4362-81d0-94fb4c158ab5.png"
+  nameI18n: "Streamer_filter_BG_Trendy"
+  fps: 0
+  startTime: "2021-02-22T17:30:00+08:00"
+  endTime: "2090-12-31T23:59:59+08:00"
+  disabled: false
+  url: "http://cdn.17app.co/37fcf350-9ef5-44be-8da1-5e923bf6e99e.zip"
+  md5: "816a75e39185053fee0dc3a20c6598cf"
+  
+- thumbnail: "https://cdn.17app.co/b6e009b0-df21-4989-bc1a-224ee15ca7ea.png"
+  nameI18n: "Streamer_filter_BG_Universe"
+  fps: 16
+  startTime: "2021-02-22T17:30:00+08:00"
+  endTime: "2090-12-31T23:59:59+08:00"
+  disabled: false
+  url: "http://cdn.17app.co/dd1d1c67-356d-4c5a-8033-ee4d71c26e59.zip"
+  md5: "ade578e5a22f5068b8173d7f1cecfc0e"
+  
+- thumbnail: "http://cdn.17app.co/4509cd14-e184-43e0-9bf8-e2e36f74919a.png"
+  nameI18n: "Streamer_filter_BG_test5"
   fps: 0
   startTime: "2021-02-22T17:30:00+08:00"
   endTime: "2022-12-31T23:59:59+08:00"
-  disabled: false
-  url: "http://cdn.17app.co/71fe9f42-4e94-4b05-bba1-e9b8a1ee0329.zip"
-  md5: "6ea46839683684d137f9cb12f64fb6fe"
-  
-- thumbnail: "http://cdn.17app.co/9ded5451-82d3-4748-a106-6f2e98eb1fd5.jpeg"
-  nameI18n: "Streamer_filter_BG_test2"
-  fps: 0
-  startTime: "2021-02-22T17:30:00+08:00"
-  endTime: "2022-12-31T23:59:59+08:00"
-  disabled: false
-  url: "http://cdn.17app.co/5330cce7-4526-4448-9491-6adb9706e679.zip"
-  md5: "08b131dc0c37d1745d6b8927465ba75f"
-  
-- thumbnail: "http://cdn.17app.co/19bde8e7-58d6-447b-a3f4-8f047a1c3034.png"
-  nameI18n: "Streamer_filter_BG_test3"
-  fps: 10
-  startTime: "2021-02-22T17:30:00+08:00"
-  endTime: "2022-12-31T23:59:59+08:00"
-  disabled: false
-  url: "http://cdn.17app.co/1cbe4102-f68b-444a-9372-be55d8c82068.zip"
-  md5: "7a8fdf11e4c76a024d5abb45d808fa06"
-  
-- thumbnail: "http://cdn.17app.co/25657cf4-b0c7-4528-88f3-5d6a46b2cd7b.png"
-  nameI18n: "Streamer_filter_BG_test4"
-  fps: 0
-  startTime: "2021-02-22T17:30:00+08:00"
-  endTime: "2022-12-31T23:59:59+08:00"
-  disabled: false
-  url: "http://cdn.17app.co/449a2569-92b2-4bc4-a787-e643442de36c.zip"
-  md5: "277d04ce139e1e84b829edce2709ee5f"
-  
+  disabled: true
+  url: "http://cdn.17app.co/40b3d4f6-12bf-4e5b-827b-3fd9fd5a0319.zip"
+  md5: "9516579e85c2afc2e99732ebc6ca84bc"
