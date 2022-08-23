@@ -40,63 +40,71 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
-- ID: 525717c1-18bf-4f1f-907f-ff8225fe5399
-  type: 24
+- ID: 71dc0dc2-81d8-4b8e-b32f-4e88ffef142f
+  type: 9
   category: 0
-  lifeCycle: 2
+  lifeCycle: 1
   targetAudience: 0
   levelRange:
-    min: 1
+    min: 2
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2001_b2b_summer_m
-    amount: 5
+    rewardID: 2205_game_barry
+    amount: 3
     expireTimeSecs: 86400
-  i18nTitle: tw_aug_mission_1
-  i18nTitleParams: []
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "10"
+    mapOption: 0
+    fontAttribute: null
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: tw_aug_reward_2
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
   i18nDescriptionParams: []
-  goalValue: 3
+  goalValue: 600
   enableTimeRange:
-  - startTime: 2022-08-12 19:30:00 (GMT+0800)
-    endTime: 2022-08-21 23:59:59 (GMT+0800)
-  refIDs: []
+  - startTime: 2022-08-23 16:30:00 (GMT+0800)
+    endTime: 2022-08-23 18:30:00 (GMT+0800)
+  refIDs:
+  - 2aa97b5f-a7cb-460d-a762-f58f2c8a0165
   platforms:
   - android
   - ios
-  requirePhoneBinding: true
+  requirePhoneBinding: false
   withReminder: true
-- ID: bce87acf-c14b-48fd-9bc7-49f35cada0cf
-  type: 24
+- ID: 53c93cbd-b994-49fe-8562-20c49a530567
+  type: 9
   category: 0
-  lifeCycle: 2
+  lifeCycle: 1
   targetAudience: 0
   levelRange:
-    min: 1
+    min: 2
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2001_b2b_summer_l
-    amount: 10
+    rewardID: 2205_game_barry
+    amount: 3
     expireTimeSecs: 86400
-  i18nTitle: tw_aug_mission_2
-  i18nTitleParams: []
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "10"
+    mapOption: 0
+    fontAttribute: null
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: tw_aug_reward_3
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
   i18nDescriptionParams: []
-  goalValue: 7
+  goalValue: 600
   enableTimeRange:
-  - startTime: 2022-08-12 19:30:00 (GMT+0800)
-    endTime: 2022-08-21 23:59:59 (GMT+0800)
-  refIDs: []
+  - startTime: 2022-08-25 16:30:00 (GMT+0800)
+    endTime: 2022-08-25 18:30:00 (GMT+0800)
+  refIDs:
+  - 2aa97b5f-a7cb-460d-a762-f58f2c8a0165
   platforms:
   - android
   - ios
-  requirePhoneBinding: true
+  requirePhoneBinding: false
   withReminder: true
 - ID: ab1ee918-14c2-4871-8999-a92a366b9daf
   type: 10
@@ -559,38 +567,6 @@ missions:
   - ios
   requirePhoneBinding: true
   withReminder: false
-- ID: 20c096dd-0732-4a5c-bc57-13ae8c7b7326
-  type: 5
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 21
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2108_tw_plan_a
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_leave_comment_reward_title2
-  i18nTitleParams:
-  - value: "10"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_leave_comment_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 10
-  enableTimeRange:
-  - startTime: 2022-08-09 18:00:00 (GMT+0800)
-    endTime: 2022-08-18 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: true
 - ID: 078ee0a9-9288-4734-8fe7-840239fe8650
   type: 24
   category: 0
@@ -747,336 +723,6 @@ missions:
   - android
   - ios
   requirePhoneBinding: true
-  withReminder: true
-- ID: 6c4a1664-c911-461d-9a14-290b1e47e82d
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 5
-  reward:
-    rewardType: 1
-    rewardID: newuser_onboarding
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_mission_welcomestream_rewards
-  i18nDescriptionParams: []
-  goalValue: 600
-  enableTimeRange:
-  - startTime: 2022-08-12 10:00:00 (GMT+0800)
-    endTime: 2022-08-12 21:15:00 (GMT+0800)
-  refIDs:
-  - 0ea9db98-3755-4870-8556-faae73aa123a
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: bd0119e6-c647-4d82-bdf9-f5668f8f36e3
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 5
-  reward:
-    rewardType: 1
-    rewardID: newuser_onboarding
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_mission_welcomestream_rewards
-  i18nDescriptionParams: []
-  goalValue: 600
-  enableTimeRange:
-  - startTime: 2022-08-13 10:00:00 (GMT+0800)
-    endTime: 2022-08-13 21:15:00 (GMT+0800)
-  refIDs:
-  - fc9bb29c-8625-4de7-bc57-952ebd14a47a
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 2e18a128-53ea-4e7a-ae93-9bb6d11a451a
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 5
-  reward:
-    rewardType: 1
-    rewardID: newuser_onboarding
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_mission_welcomestream_rewards
-  i18nDescriptionParams: []
-  goalValue: 600
-  enableTimeRange:
-  - startTime: 2022-08-14 10:00:00 (GMT+0800)
-    endTime: 2022-08-14 21:15:00 (GMT+0800)
-  refIDs:
-  - c9b985ba-76a1-41b7-b302-62d200f22818
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: d39a2bf2-6076-4530-a086-75ba02d5d50c
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 5
-  reward:
-    rewardType: 1
-    rewardID: newuser_onboarding
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_mission_welcomestream_rewards
-  i18nDescriptionParams: []
-  goalValue: 600
-  enableTimeRange:
-  - startTime: 2022-08-15 10:00:00 (GMT+0800)
-    endTime: 2022-08-15 21:15:00 (GMT+0800)
-  refIDs:
-  - 4b95ab29-795e-48cf-9f6e-e15b66dd5155
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: ae7625ad-208d-4a25-93a8-d54cb827dcd2
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 5
-  reward:
-    rewardType: 1
-    rewardID: newuser_onboarding
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_mission_welcomestream_rewards
-  i18nDescriptionParams: []
-  goalValue: 600
-  enableTimeRange:
-  - startTime: 2022-08-16 10:00:00 (GMT+0800)
-    endTime: 2022-08-16 21:15:00 (GMT+0800)
-  refIDs:
-  - d1f8da8b-4c5e-4dc9-bd8e-d895e231468c
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 2cdd15f8-bb83-4e7d-b794-544abfe4caf2
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 5
-  reward:
-    rewardType: 1
-    rewardID: newuser_onboarding
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_mission_welcomestream_rewards
-  i18nDescriptionParams: []
-  goalValue: 600
-  enableTimeRange:
-  - startTime: 2022-08-17 10:00:00 (GMT+0800)
-    endTime: 2022-08-17 21:15:00 (GMT+0800)
-  refIDs:
-  - f6448670-ba93-44cc-8bbe-1324537effe6
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 7d907451-416d-4a95-b126-ff14b1652dba
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 5
-  reward:
-    rewardType: 1
-    rewardID: newuser_onboarding
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_mission_welcomestream_rewards
-  i18nDescriptionParams: []
-  goalValue: 600
-  enableTimeRange:
-  - startTime: 2022-08-18 10:00:00 (GMT+0800)
-    endTime: 2022-08-18 21:15:00 (GMT+0800)
-  refIDs:
-  - 9d510cfd-cb6f-48fa-b636-a1737e44b21f
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 188d560e-5e57-4050-9406-39bd22b74b6d
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 5
-  reward:
-    rewardType: 1
-    rewardID: newuser_onboarding
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_mission_welcomestream_rewards
-  i18nDescriptionParams: []
-  goalValue: 600
-  enableTimeRange:
-  - startTime: 2022-08-19 10:00:00 (GMT+0800)
-    endTime: 2022-08-19 21:15:00 (GMT+0800)
-  refIDs:
-  - 0ea9db98-3755-4870-8556-faae73aa123a
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: c5801385-4368-481e-b49f-9f61762d3bfa
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 5
-  reward:
-    rewardType: 1
-    rewardID: newuser_onboarding
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_mission_welcomestream_rewards
-  i18nDescriptionParams: []
-  goalValue: 600
-  enableTimeRange:
-  - startTime: 2022-08-20 10:00:00 (GMT+0800)
-    endTime: 2022-08-20 21:15:00 (GMT+0800)
-  refIDs:
-  - b30ddc71-6a42-49b2-8dc4-673c89678c38
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 0bc3d92c-6577-42a8-8a44-6fc4b2eede5c
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 5
-  reward:
-    rewardType: 1
-    rewardID: newuser_onboarding
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_mission_welcomestream_rewards
-  i18nDescriptionParams: []
-  goalValue: 600
-  enableTimeRange:
-  - startTime: 2022-08-21 10:00:00 (GMT+0800)
-    endTime: 2022-08-21 21:15:00 (GMT+0800)
-  refIDs:
-  - 4c8614e1-e26e-4ea9-ba8a-f29783175aea
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 018b5abd-171b-4941-b256-0bd3d5c24202
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 5
-  reward:
-    rewardType: 1
-    rewardID: newuser_onboarding
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_mission_welcomestream_rewards
-  i18nDescriptionParams: []
-  goalValue: 600
-  enableTimeRange:
-  - startTime: 2022-08-22 10:00:00 (GMT+0800)
-    endTime: 2022-08-22 21:15:00 (GMT+0800)
-  refIDs:
-  - 8bb6df11-6cfb-4c14-a0d0-ee9e04868aa5
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
   withReminder: true
 - ID: 770b7dc9-5e83-4cc0-b39b-86e5f532cadf
   type: 9
@@ -1348,38 +994,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: true
-- ID: 3c728889-e35d-41ae-8c05-4a8a1140bac0
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 21
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2201_tw_sonic_b_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "5"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 300
-  enableTimeRange:
-  - startTime: 2022-08-10 00:00:00 (GMT+0800)
-    endTime: 2022-08-17 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: false
 - ID: a8129983-bf21-4ff7-a191-ba6aae5bc530
   type: 9
   category: 0
