@@ -1,0 +1,17 @@
+enabled: true
+
+disabledUsers:
+  - "40fc6a91-ed38-4bed-a378-e6d55e2e1070"
+
+apis:
+  - path: "/api/v1/testing/:id"
+    enabled: true
+    cache:
+      banHeaders: []
+      banParams: []
+      banQueries: []
+      keyHeaders: []
+      keyParams: []
+      keyQueries: []
+      ttl: 24h
+      setInterval: 300s
