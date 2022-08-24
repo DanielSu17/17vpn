@@ -283,3 +283,6 @@ watchRankBonus:
 watchBonusVersionSwitchTime: 2022-05-18T19:30:00+08:00
 
 enableOverviewDBMaster: true
+
+timeoutSeting: # millisecond
+   readArmySubscriptionTable: 5000 # api/stores/army/impl.go userArmyInfoGetter getUserArmyInfo
