@@ -2,3 +2,7 @@
 enableMaster: true # this will only apply after pod re deploy
 
 cacheTTLSeconds: 86400 # this will only apply after pod re deploy
+
+# timeoutSetting set the timeout of reading database
+timeoutSetting: # millisecond
+   readGuardianTable: 5000

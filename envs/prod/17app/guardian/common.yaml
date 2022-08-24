@@ -1,2 +1,6 @@
 # enableMaster allow guardian to use high priority application sql
 enableMaster: true
+
+# timeoutSetting set the timeout of reading database
+timeoutSetting: # millisecond
+   readGuardianTable: 5000
