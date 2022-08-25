@@ -233,15 +233,3 @@ CSAT-20220321-Formal-iOS:
       optionToken: "iOS_inapp_csat_feature_survey_question_neveruse_027"
       
       
-# Q4 2022 Overall + Multiple Feature Follow-Up Questions_iOS Keys
-CSAT-20220829-Formal-iOS:
-  thanksToken: "iOS_inapp_csat_feature_survey_thankyou_toast"
-  mainQuestion: # Must be answered or skipped before follow questions are displayed
-    id: "CSAT-20220829-AAAA"
-    type: 0 # Rating 1-5
-    questionToken: "iOS_inapp_csat_overall_question"
-  followQuestions: # Can only be displayed after required questions answered or skipped
-    - id: "CSAT-20220829-A001"
-      type: 1 # Rating 1-5 + option toggle
-      questionToken: "iOS_inapp_csat_feature_survey_question_01"
-      optionToken: "iOS_inapp_csat_feature_survey_question_neveruse_001"
