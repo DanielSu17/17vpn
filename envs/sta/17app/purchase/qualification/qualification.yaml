@@ -1,5 +1,6 @@
 # This config control the whole purchase qualification store. 
 enablePurchaseQualification: true 
+
 underagedPurchase:
   enableUnderagedPurchaseLimitRegion:
     JP: true
@@ -8,3 +9,12 @@ underagedPurchase:
   limitationAmount: 200
   testStartTime: 2022-08-25T12:35:00+09:00
   testEndTime: 2022-09-15T23:59:59+09:00
+
+blacklist:
+  enableUserBlacklist: true
+  regionPayMethods:
+    TW:
+      - ECPAY
+    JP:
+      - BY_GMO
+      - PAIDY
