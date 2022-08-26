@@ -32,6 +32,14 @@ labelInfos:
     order: 4
     iconURL: "h"
     isHide: true
+  - id: "2209_jp_shortmovie" #　#ショートムービーチャレンジ
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_short_movie_challenge}
+    featured: true
+    order: 5
+    iconURL: "h"
+    isHide: true
   - id: "jp_singer" # 歌
     type: 1
     labelID:
@@ -303,10 +311,11 @@ labelInfos:
     order: 116
     iconURL: "h"
     isHide: true
-  - id: "jp_pickup" # ショートムービーチャレンジ
+  - id: "jp_pickup" 
     type: 3
     labelID: 
-    label: {key: ショートムービーチャレンジ} #explore_jp_label_pickup
+    label:
+      key: explore_jp_label_pickup
     featured: true
     order: 117
     iconURL: "h"
@@ -421,7 +430,7 @@ labelInfos:
 
 # 探索頁面會出現的label
 exploreLabels:
- # - jp_pickup        # ショートムービーチャレンジ
+ # - jp_pickup        # pickup
   - jp_recommend     # レコメンド,推薦
   - jp_music         # 音楽,音樂
   - jp_potential     # ポテンシャル,潛力
