@@ -40,6 +40,35 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
+- ID: d8a06177-e3ee-47c6-a818-983587d4d646
+  type: 8
+  category: 0
+  lifeCycle: 1
+  targetAudience: 2
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2209_us_welcomeoffer_firsthalf
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: ussepwelcomeoffer
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_IAP_reward_jp_npu_desc
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2022-09-01 18:00:00 (GMT-0700)
+    endTime: 2022-09-14 21:00:00 (GMT-0700)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
 - ID: d87bc490-ff15-448c-a30c-ccbd77c66fc3
   type: 8
   category: 0
@@ -63,64 +92,6 @@ missions:
   enableTimeRange:
   - startTime: 2022-08-16 18:00:00 (GMT-0700)
     endTime: 2022-08-31 00:00:00 (GMT-0700)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 32eb5b93-842e-4d73-b10b-b4c66bfb8e05
-  type: 24
-  category: 0
-  lifeCycle: 2
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: crazy_stairs_viewer_easy_bag
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: po-crazy-stair-event-title-1
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: po-crazy-stair-gift-desc-1
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-08-16 12:00:00 (GMT-0700)
-    endTime: 2022-08-23 09:00:00 (GMT-0700)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 4bd26907-4f9a-428e-a117-ef8aa23921dc
-  type: 13
-  category: 0
-  lifeCycle: 1
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: crazy_stairs_viewer_easy_bag
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: po-crazy-stair-event-title-2
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: po-crazy-stair-gift-desc-1
-  i18nDescriptionParams: []
-  goalValue: 6
-  enableTimeRange:
-  - startTime: 2022-08-16 12:00:00 (GMT-0700)
-    endTime: 2022-08-23 09:00:00 (GMT-0700)
   refIDs: []
   platforms:
   - android
@@ -156,154 +127,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-- ID: 7231318e-4b22-4aa9-a06b-546b2d512f98
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 2
-    max: 15
-  reward:
-    rewardType: 1
-    rewardID: crazy_stairs_viewer_easy_bag
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: po-crazy-stair-event-title-3
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: po-crazy-stair-gift-desc-2
-  i18nDescriptionParams: []
-  goalValue: 2
-  enableTimeRange:
-  - startTime: 2022-08-16 12:00:00 (GMT-0700)
-    endTime: 2022-08-23 09:00:00 (GMT-0700)
-  refIDs:
-  - crazy_stairs_viewer_easy
-  - crazy_stairs_streamer_easy
-  - 2108_crazy_zoo_en
-  - 2110_hw_performance_crazy_zoo_border
-  - 2110_hw_performance_crazy_zoo_cross
-  - 2110_hw_performance_crazy_zoo_dot
-  - 2110_hw_performance_crazy_zoo_three
-  - 2110_hw_performance_crazy_zoo_michael
-  - 2110_hw_performance_crazy_zoo_nose
-  - 2110_hw_performance_crazy_zoo_series
-  - gift_texture_crazy_zoo_border
-  - gift_texture_crazy_zoo_michael
-  - gift_texture_crazy_zoo_nose
-  - gift_texture_crazy_zoo_three
-  - gift_texture_crazy_zoo_dot
-  - gift_texture_crazy_zoo_cross
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 0a6752c2-8fcc-401b-84b7-73c526040bd6
-  type: 10
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 2
-    max: 15
-  reward:
-    rewardType: 1
-    rewardID: crazy_stairs_viewer_easy_bag
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: po-crazy-stair-event-title-4
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: po-crazy-stair-gift-desc-2
-  i18nDescriptionParams: []
-  goalValue: 1720
-  enableTimeRange:
-  - startTime: 2022-08-16 12:00:00 (GMT-0700)
-    endTime: 2022-08-23 09:00:00 (GMT-0700)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: dbdd8a49-fdd8-476c-93ae-df889f322432
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 16
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: crazy_stairs_viewer_easy_bag
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: po-crazy-stair-event-title-5
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: po-crazy-stair-gift-desc-2
-  i18nDescriptionParams: []
-  goalValue: 4
-  enableTimeRange:
-  - startTime: 2022-08-16 12:00:00 (GMT-0700)
-    endTime: 2022-08-23 09:00:00 (GMT-0700)
-  refIDs:
-  - crazy_stairs_viewer_easy
-  - crazy_stairs_streamer_easy
-  - 2108_crazy_zoo_en
-  - 2110_hw_performance_crazy_zoo_border
-  - 2110_hw_performance_crazy_zoo_cross
-  - 2110_hw_performance_crazy_zoo_dot
-  - 2110_hw_performance_crazy_zoo_three
-  - 2110_hw_performance_crazy_zoo_michael
-  - 2110_hw_performance_crazy_zoo_nose
-  - 2110_hw_performance_crazy_zoo_series
-  - gift_texture_crazy_zoo_border
-  - gift_texture_crazy_zoo_michael
-  - gift_texture_crazy_zoo_nose
-  - gift_texture_crazy_zoo_three
-  - gift_texture_crazy_zoo_dot
-  - gift_texture_crazy_zoo_cross
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 45a90067-a879-478f-a7c5-c3e587fe1e97
-  type: 10
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 16
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: crazy_stairs_viewer_easy_bag
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: po-crazy-stair-event-title-6
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: po-crazy-stair-gift-desc-2
-  i18nDescriptionParams: []
-  goalValue: 3540
-  enableTimeRange:
-  - startTime: 2022-08-16 12:00:00 (GMT-0700)
-    endTime: 2022-08-23 09:00:00 (GMT-0700)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
 - ID: d16dfc6b-dfe6-433c-a00e-2e20f429036c
   type: 10
   category: 0
