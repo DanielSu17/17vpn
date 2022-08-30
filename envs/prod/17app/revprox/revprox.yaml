@@ -56,6 +56,7 @@ regexConf:
     regex_paths:
       # normal send gift: "api/v1/lives/:roomid/gift"
       - ^POST /api/v1/lives/[0-9]+/gift$
+      - ^POST /api/v1/lives/[0-9]+/voteGift$
   - url_key: "concert_stream_url"
     default_url_key: "go_lives_url"
     weight: 100
