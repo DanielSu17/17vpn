@@ -132,3 +132,9 @@ rate_limits:
 
   - {url: "/api/v1/feed/live",                             method: "GET", flow_per_second: 70, reservoir_size: 70, scope: by_global}
   - {url: "/api/v1/lives/14665128/gift",                     method: "POST",    flow_per_second: 3,          reservoir_size: 3,    scope: by_global}
+
+  # send gift related
+  - {url: "/api/v1/lives/[A-Za-z0-9-]+/gift",                     method: "POST",    flow_per_second: 10,          reservoir_size: 10,    scope: by_access_token}
+  
+  # vote gift related
+  - {url: "/api/v1/lives/[A-Za-z0-9-]+/voteGift",                     method: "POST",    flow_per_second: 3,          reservoir_size: 10,    scope: by_access_token}

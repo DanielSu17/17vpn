@@ -96,3 +96,9 @@ rate_limits:
 
 # dailyquest related
 - {url: "/api/v1/dailyquest/signIn",                            method: "POST",     flow_per_second: 0.00138,        reservoir_size: 5,    scope: by_access_token}
+
+# send gift related
+- {url: "/api/v1/lives/[A-Za-z0-9-]+/gift",                     method: "POST",    flow_per_second: 10,          reservoir_size: 10,    scope: by_access_token}
+
+# vote gift related
+- {url: "/api/v1/lives/[A-Za-z0-9-]+/voteGift",                     method: "POST",    flow_per_second: 3,          reservoir_size: 10,    scope: by_access_token}
