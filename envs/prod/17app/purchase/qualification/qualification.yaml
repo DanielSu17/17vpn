@@ -1,18 +1,18 @@
-enableUnderagedPurchaseLimit: false # TODO remove it when blacklist was released
+enableUnderagedPurchaseLimit: true  # TODO remove it when blacklist was released
 enableOverLimitAlert: false         # TODO remove it when blacklist was released
-limitationAmount: 2000              # TODO remove it when blacklist was released
+limitationAmount: 210               # TODO remove it when blacklist was released
 enableCheckQualification:           # TODO remove it when blacklist was released
-  JP: false
+  JP: true
   OTHERS: false
 
 # This config control the whole purchase qualification store. 
-enablePurchaseQualification: false
+enablePurchaseQualification: true
 underagedPurchase:
   enableUnderagedPurchaseLimitRegion:
-    JP: false
+    JP: true
     OTHERS: false
   # underaged user purchase limitation amount (USD)
-  limitationAmount: 2000
+  limitationAmount: 210
 
 blacklist:
   enableUserBlacklist: false
