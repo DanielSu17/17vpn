@@ -1,1 +1,3 @@
-# Greenscreen (PH)
+# Background filter (PH)
+
+This is the configuration for Background filter (alias: Green screen)
