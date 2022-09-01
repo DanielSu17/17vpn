@@ -2,8 +2,8 @@ dynamicUpdate: true
 maxRPS: 4000
 reservedPercentage: 30
 minpod:
-  eventory-worker-general: 3
-  eventory-worker-gift: 5
+  eventory-worker-general: 2
+  eventory-worker-gift: 2
   eventory-worker-snack: 2
   eventory-worker-view: 2
   eventory-replay: 10
@@ -44,14 +44,6 @@ timeslotSchedules:
       eventory-worker-gift: 12
 
 schedules:
-- startTime: "2022-08-29 16:45:00 (GMT+0800)"
-  endTime: "2022-08-29 21:30:00 (GMT+0800)"
-  minpod:
-     eventory-worker-gift: 12
-- startTime: "2022-08-31 22:20:00 (GMT+0800)"
-  endTime: "2022-09-01 01:20:00 (GMT+0800)"
-  minpod:
-     eventory-replay: 20
 - startTime: "2022-09-30 22:20:00 (GMT+0800)"
   endTime: "2022-10-01 01:20:00 (GMT+0800)"
   minpod:
@@ -66,5 +58,17 @@ schedules:
      eventory-replay: 20
 - startTime: "2022-12-31 22:20:00 (GMT+0800)"
   endTime: "2023-01-01 01:20:00 (GMT+0800)"
+  minpod:
+     eventory-replay: 20
+- startTime: "2023-01-31 22:20:00 (GMT+0800)"
+  endTime: "2023-02-01 01:20:00 (GMT+0800)"
+  minpod:
+     eventory-replay: 20
+- startTime: "2023-02-28 22:20:00 (GMT+0800)"
+  endTime: "2023-03-01 01:20:00 (GMT+0800)"
+  minpod:
+     eventory-replay: 20
+- startTime: "2023-03-31 22:20:00 (GMT+0800)"
+  endTime: "2023-04-01 01:20:00 (GMT+0800)"
   minpod:
      eventory-replay: 20
