@@ -33,6 +33,11 @@ protected_routes_with_methods:
     methods: ["GET"]
   - route: "/liveStreams/areUsersOnlive"
     methods: ["POST"]
+  - route: "/[a-zA-Z0-9]{8}/init.js$"
+    methods: ["GET"]
+  - route: "/[a-zA-Z0-9]{8}/xhr/.*"
+  - route: "/[a-zA-Z0-9]{8}/captcha/captcha.js$"
+    methods: ["GET"]
 sensitive_headers:
   - "nonce"
   - "accesstoken"
