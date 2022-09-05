@@ -85,7 +85,7 @@ rate_limits:
   #app/api/api/gift/gift.go:126:		apis.AddRateLimit(rl, apis.RateLimitSendGift, ratelimiter.Second, sendGiftQPS, apis.ByUser),
   - {url: "/api/v1/gift/giftbox",                                 method: "POST",    flow_per_second: 20,          reservoir_size: 20,    scope: by_access_token}
   - {url: "/api/v1/lives/[A-Za-z0-9-]+/gift",                     method: "POST",    flow_per_second: 10,          reservoir_size: 10,    scope: by_access_token}
-  - {url: "/api/v1/lives/[A-Za-z0-9-]+/voteGift",                 method: "POST",    flow_per_second: 1,          reservoir_size: 1,    scope: by_access_token}
+  - {url: "/api/v1/lives/[A-Za-z0-9-]+/voteGift",                 method: "POST",    flow_per_second: 3,          reservoir_size: 3,    scope: by_access_token}
   - {url: "/api/v1/baggage/item/[A-Za-z0-9-]+",                   method: "POST",    flow_per_second: 60,          reservoir_size: 60,    scope: by_global}
 
   - {url: "/api/v1/users/[A-Za-z0-9-]+/activities/income/overview",     method: "GET",    flow_per_second: 50,     reservoir_size: 50,    scope: by_global}
