@@ -80,20 +80,12 @@
   - name: k8ssta-apisix-bbrich-main
     minReplicas: 2
 
-# weekly stress test
-- startTime: "2022-01-14 16:00:00 (GMT+0800)"
-  endTime: "2022-01-14 19:00:00 (GMT+0800)"
+# ed testing - 0906
+- startTime: "2022-09-06 11:50:00 (GMT+0800)"
+  endTime: "2022-09-06 14:30:00 (GMT+0800)"
   HPAConfigs:
-  - name: k8ssta-goapi-main
-    minReplicas: 20
-  - name: k8ssta-golives-main
-    minReplicas: 12
-  - name: k8ssta-gotrade-main
-    minReplicas: 6
   - name: k8ssta-revprox-tw-main
-    minReplicas: 10
-  - name: k8ssta-gocells-main
-    minReplicas: 6
+    minReplicas: 36
 
 # stress test for /api/v1/gifts
 - startTime: "2022-06-24 10:00:00 (GMT+0800)"
