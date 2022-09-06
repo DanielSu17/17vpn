@@ -8,6 +8,8 @@ silenceList: []
 displayIconType: 1
 displayInvitationPictures: 2
 matchingRules:
+  #將相同活動配對在一起的開關
+  sameEventMatchFirst: true
   levelRange:
   - 10
   - 20
@@ -15,6 +17,10 @@ matchingRules:
   - 0
   - 0.05
   - 0.1
+  eventScores:
+  - 1
+  - 5
+  - 10
 minLevel: 1
 playList:
   - id: normalOneVOne
