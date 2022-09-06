@@ -1,0 +1,20 @@
+# Archive
+
+maxDurationSecond: 28800 # 8 hours
+expiredSecond: 172800 #604800 7 day
+captionLengthChar: 50
+
+# supportLiveMode use bitmask to check if the live mode supports archive recording and messages
+# example:
+#   only support normal live stream: 1
+#   only support PK mode: 2
+#   only support groupcall: 4
+#   support normal + PK: 3 (= 1 + 2)
+#   support normal + groupcall: 5 (= 1 + 4)
+#   support normal, PK and groupcall: 7 (= 1 + 2 + 4)
+#   not support any mode: 0
+supportCommentLiveMode: 0  # TODO: To be removed after supportLiveMode applied
+supportLiveMode: 1
+
+# TODO: storeArchiveIDInLiveStreamV2 should be deprecated after ACM fix the response of RegisterArchiveJob
+storeArchiveIDInLiveStreamV2: true
