@@ -7,7 +7,8 @@ hotpagev3_slot1:
   endTime: "2025-12-31T23:59:59+08:00"
   displayFrequency: 2592000 # Seconds. 2592000 = 30 days
   displayDuration: 604800 # Seconds. 60*60*24*7 = 604800 = 1 week
-  userPercentage: 30
+  userPercentage: 30 # will depercate this field after all clients implement the new logic for 'displayGroupCount'
+  displayGroupCount: 3 # 3 means users are separated into 3 groups
 
 # HK Survey Location (iOS)
 hotpagev3_slot1_ios:
@@ -18,4 +19,5 @@ hotpagev3_slot1_ios:
   endTime: "2025-12-31T23:59:59+08:00"
   displayFrequency: 2592000 # Seconds. 2592000 = 30 days
   displayDuration: 604800 # Seconds. 60*60*24*7 = 604800 = 1 week
-  userPercentage: 30
+  userPercentage: 30 # will depercate this field after all clients implement the new logic for 'displayGroupCount'
+  displayGroupCount: 3 # 3 means users are separated into 3 groups
