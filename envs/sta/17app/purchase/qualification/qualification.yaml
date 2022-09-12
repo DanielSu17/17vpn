@@ -65,3 +65,33 @@ blacklist:
       - ECPAY
       - IOS
       - ANDROID
+
+merchandiseBlocker:
+  enable: true
+  rules:
+    - startTime: "2022-09-12T00:00:00+08:00"
+      errorCode: 71004
+      desc: "deprecated IAP packages"
+      payMethods:
+        - 36   # MethodIOS
+        - 37   # MethodAndroid
+      ipRegions:
+        - TW
+      merchandiseIDs:
+        - media17_points_330
+
+    - startTime: "2022-09-27T13:00:00+08:00"
+      errorCode: 71004
+      desc: "deprecated IAP packages"
+      payMethods:
+        - 36   # MethodIOS
+        - 37   # MethodAndroid
+      ipRegions:
+        - TW
+      merchandiseIDs:
+        - media17_points_330
+        - media17_points_1720
+        - media17_points_3540
+        - media17_points_8550
+        - media17_points_15420
+        - media17_points_35980
