@@ -1,3 +1,36 @@
+# meta 種類:
+#   0: 一般模式
+#   1: 顯示提醒字串在 tab 最下方
+#   2: 顯示提醒字串在最下方並可點擊到網頁
+#   3: 顯示 banner 圖片在最上方並點擊可到網頁
+# 
+# example
+# 
+# tabs:
+#  - id: general
+#    name: giftpanel_tab_general
+#    i18nKey: giftpanel_tab_general
+#    black_list:  # 以下主播不顯示此 tab
+#      - 6a62daf2-7c81-4ff4-b341-89fa440ab688  # Wave 官方節目
+#    white_list:  # 僅有以下主播顯示此 tab，優先權 > black_list
+#      - 6a62daf2-7c81-4ff4-b341-89fa440ab688  # Wave 官方節目
+#    meta:
+#      type: 3 # 顯示 banner 圖片在最上方並點擊可到網頁
+#      content: "https://cdn.wave.com.tw/v1/bot/1661960953628807_4171467728664164_42687064438891526346839274600270_qn.jpg"
+#      web_url: "https://event.wave.com.tw/15250-wave-20220901-midchallenge/0/5"
+#  - id: randomcapsule
+#    name: giftpanel_tab_randomcapsule
+#    i18nKey: giftpanel_tab_randomcapsule
+#    meta:
+#      type: 2 # 顯示提醒字串在最下方並可點擊到網頁
+#      content: giftpanel_tab_randomcapsule_info
+#      web_url: "https://event.wave.com.tw/15355-wave-capsule-20220912"
+#  - id: evolution
+#    name: giftpanel_tab_evolution
+#    i18nKey: giftpanel_tab_evolution
+#    meta:
+#      type: 1 # 顯示提醒字串在 tab 最下方
+#      content: giftpanel_tab_evolution_hint
 tabs:
   - id: general
     name: giftpanel_tab_general
