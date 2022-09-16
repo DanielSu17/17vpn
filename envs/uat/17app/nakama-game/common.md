@@ -39,7 +39,7 @@
     - startTime(`"YYYY-MM-DD hh:mm:ss (GMT+0800)"`): The start time of this promotion.
     - endTime(`"YYYY-MM-DD hh:mm:ss (GMT+0800)"`): The end time of this promotion.
 - msgI18nKey(`string`): The i18n key of the message.
-- actionTarget(`string`): The target of the action. Supported values: `gamecenter,fruitfarm`
+- actionTarget(`string`): The target of the action. Supported values: `gamecenter,fruitfarm,luxurydice`
 - regionMode(`string`): The region mode. Supported value: `all,include,exlude`
 - regions(`array of strings`): The IP regions. Would be good to use two-letter country code. e.g. `[TW, ID, TH, HK, SG, MO, MY, JP, PH, VN, MM]`
 - versionControl:
