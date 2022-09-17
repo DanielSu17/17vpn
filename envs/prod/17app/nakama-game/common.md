@@ -47,7 +47,7 @@
     - ios(`string`): The minimum iOS version support.
     - android(`string`): The minimum Android version support.
 
-## Region Promotion Rule
+## Region Promotion Rule (not on prod yet)
 - enable(`bool`): Enable the promotion or not. Supported value: `true,false`
 - enableTimeRange
     - startTime(`"YYYY-MM-DD hh:mm:ss (GMT+0800)"`): The start time of this promotion.
