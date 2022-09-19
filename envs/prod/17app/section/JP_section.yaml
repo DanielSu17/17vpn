@@ -31,16 +31,14 @@ sections:
  #   style: 2
  #   more: false
 
-  - id: Label # Lv100以上
-    labelID: 2203_jp_lv100
+  - id: Suggestion # 猜你可能喜歡
     name:
-      key: streamer_jp_label_lv100
+      key: tab_hot_2019q4_follow_suggestion
     enable: true
     dedup: true
-    minGrids: 3
-    style: 3
+    style: 6
+    minGrids: 5
     more: true
-    category: normal
     orderModel: 2
 
   - id: Latest # 新人(和『最新』同邏輯)
@@ -53,18 +51,6 @@ sections:
     more: true
     orderModel: 2
 
-  - id: Label # 広告出演中のライバー
-    labelID: 2206_jp_Ad_entry_streamer
-    name:
-      key: streamer_jp_label_Ad_entry_streamer
-    enable: true
-    dedup: true
-    minGrids: 0
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
   - id: Label # はじめての「占い配信」体験
     labelID: 2208_jp_fortunetelling_cp
     name:
@@ -72,6 +58,18 @@ sections:
     enable: true
     dedup: false
     minGrids: 2
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # Lv100以上
+    labelID: 2203_jp_lv100
+    name:
+      key: streamer_jp_label_lv100
+    enable: true
+    dedup: true
+    minGrids: 3
     style: 3
     more: true
     category: normal
@@ -96,16 +94,6 @@ sections:
     dedup: true
     minGrids: 3
     style: 3
-    more: true
-    orderModel: 2
-
-  - id: Suggestion # 猜你可能喜歡
-    name:
-      key: tab_hot_2019q4_follow_suggestion
-    enable: true
-    dedup: true
-    style: 6
-    minGrids: 5
     more: true
     orderModel: 2
 
@@ -384,48 +372,12 @@ sections:
     category: normal
     orderModel: 2
 
-#保留ジャンル
-
-#  - id: Label # 手品マジック
-#    labelID: 2207_jp_magic17
-#    name:
-#      key: streamer_jp_label_magic17
-#    enable: true
-#    dedup: true
-#    minGrids: 3
-#    style: 3
-#    more: true
-#    category: normal
-#    orderModel: 2
-
-#  - id: Label # 親子タイム
-#    labelID: 2207_jp_Parent_child_time17
-#    name:
-#      key: streamer_jp_label_Parent_child_time17
-#    enable: true
-#    dedup: true
-#    minGrids: 3
-#    style: 3
-#    more: true
-#    category: normal
-#    orderModel: 2
+#未使用ジャンル
 
 #  - id: Label # クッキング
 #    labelID: 2207_jp_cooking17
 #    name:
 #      key: streamer_jp_label_cooking17
-#    enable: true
-#    dedup: true
-#    minGrids: 3
-#    style: 3
-#    more: true
-#    category: normal
-#    orderModel: 2
-
-#  - id: Label # 私の悩み聞いて
-#    labelID: 2207_jp_Trouble_consultation17
-#    name:
-#      key: streamer_jp_label_Trouble_consultation17
 #    enable: true
 #    dedup: true
 #    minGrids: 3
@@ -450,6 +402,18 @@ sections:
 #    labelID: 2207_jp_entertainment17
 #    name:
 #      key: streamer_jp_label_entertainment17
+#    enable: true
+#    dedup: true
+#    minGrids: 3
+#    style: 3
+#    more: true
+#    category: normal
+#    orderModel: 2
+
+#  - id: Label # 親子タイム
+#    labelID: 2207_jp_Parent_child_time17
+#    name:
+#      key: streamer_jp_label_Parent_child_time17
 #    enable: true
 #    dedup: true
 #    minGrids: 3
@@ -493,18 +457,6 @@ sections:
 #    more: true
 #    category: normal
 
-#  - id: Label #　#推し探し
-#    labelID: 2205_jp_oshi
-#    name:
-#      key: streamer_jp_label_oshi_sagashi
-#    enable: true
-#    dedup: true
-#    minGrids: 3
-#    style: 3
-#    more: true
-#    category: normal
-#    orderModel: 2
-
 #  - id: Label # それスゴイ！ゲーム配信
 #    labelID: 2207_jp_soresugoi_game
 #    name:
@@ -524,6 +476,18 @@ sections:
 #    enable: true
 #    dedup: true
 #    minGrids: 2
+#    style: 3
+#    more: true
+#    category: normal
+#    orderModel: 2
+
+#  - id: Label # 広告出演中のライバー
+#    labelID: 2206_jp_Ad_entry_streamer
+#    name:
+#      key: streamer_jp_label_Ad_entry_streamer
+#    enable: true
+#    dedup: true
+#    minGrids: 0
 #    style: 3
 #    more: true
 #    category: normal
