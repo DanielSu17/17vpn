@@ -7,7 +7,7 @@ promotion:
     startTime: "2022-06-02 17:00:00 (GMT+0800)"
     endTime: "2022-12-25 23:59:59 (GMT+0800)"
   msgI18nKey: "Test_for_shortcut_game"
-  actionTarget: "fruitfarm"  # currently surrport "gamecenter" or "fruitfarm"
+  actionTarget: "fruitfarm" # currently surrport "gamecenter" or "fruitfarm"
   regionMode: "include"
   regions: ["US", "JP", "TW"]
   versionControl:
@@ -52,9 +52,12 @@ regionPromotion:
 games:
   fruitfarm:
     enable: true
-    icon: "http://cdn.17app.co/b509416d-c234-4f03-a4a7-f13c24939aef.png"
+    gameID: "fruitfarm"
+    icon: "https://cdn.17app.co/03a8b2b2-dbb3-4399-ac98-5997ae33a4da.png"
     url: "https://17live-game-sta/fruitfarm/"
     webViewBgColor: "#ffecba"
+    componentKeyword: "xxxxx"
+    eventNamePostfix: "fruit.farm"
     nameI18nkey: "ff_name_key"
     descI18nkey: "ff_desc_key"
     versionControl:
@@ -63,8 +66,11 @@ games:
       android: "2.41.0"
   fruitfarm2:
     enable: true
+    gameID: "fruitfarm"
     icon: "http://cdn.17app.co/b509416d-c234-4f03-a4a7-f13c24939aef.png"
     url: "https://17live-game-sta/fruitfarm/"
+    componentKeyword: "xxxxx"
+    eventNamePostfix: "fruit.farm"
     webViewBgColor: "#ffecba"
     nameI18nkey: "ff_name_key"
     descI18nkey: "ff_desc_key"
@@ -72,6 +78,20 @@ games:
       enable: true
       ios: "5.126.0"
       android: "5.41.0"
+  luxurydice:
+    enable: false
+    gameID: "luxurydice"
+    icon: "https://cdn.17app.co/7b9e8ada-8a55-4b90-8cb0-2dba6d4f9f82.png"
+    url: "https://17live-game-sta/luxurydice/"
+    componentKeyword: "xxxxx"
+    eventNamePostfix: "luxurydice"
+    webViewBgColor: "#ffecba"
+    nameI18nkey: "ld_name_key"
+    descI18nkey: "ld_desc_key"
+    versionControl:
+      enable: true
+      ios: "3.126.0"
+      android: "2.41.0"
 
 regionGameOrder:
   TW:
