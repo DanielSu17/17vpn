@@ -1,10 +1,3 @@
-enableUnderagedPurchaseLimit: true  # TODO remove it when blacklist was released
-enableOverLimitAlert: false         # TODO remove it when blacklist was released
-limitationAmount: 210               # TODO remove it when blacklist was released
-enableCheckQualification:           # TODO remove it when blacklist was released
-  JP: true
-  OTHERS: false
-
 # This config control the whole purchase qualification store. 
 enablePurchaseQualification: true
 underagedPurchase:
@@ -15,7 +8,60 @@ underagedPurchase:
   limitationAmount: 210
 
 blacklist:
-  enableUserBlacklist: false
+  enableUserBlacklist: true
+  regionPayMethods:
+    TW:
+      - ECPAY
+      - JKOPAY
+      - MYCARD
+      - GASH
+      - IOS
+      - ANDROID
+    GLOBAL:
+      - ECPAY
+      - IOS
+      - ANDROID
+    JP:
+      - GMO
+      - PAIDY
+      - IOS
+      - ANDROID
+    HK:
+      - FIRSTDATA
+      - IOS
+      - ANDROID
+    MY:
+      - ECPAY
+      - IOS
+      - ANDROID
+    US:
+      - STRIPE
+      - IOS
+      - ANDROID
+    SG:
+      - ECPAY
+      - IOS
+      - ANDROID
+    PH:
+      - ECPAY
+      - IOS
+      - ANDROID
+    ID:
+      - ECPAY
+      - IOS
+      - ANDROID
+    TH:
+      - ECPAY
+      - IOS
+      - ANDROID
+    VN:
+      - ECPAY
+      - IOS
+      - ANDROID
+    MM:
+      - ECPAY
+      - IOS
+      - ANDROID
 
 merchandiseBlocker:
   enable: false

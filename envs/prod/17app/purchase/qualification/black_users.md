@@ -1,6 +1,8 @@
 ## black_users.yaml
 This file is designed for credit crad blacklist
 
+**In order to avoid repetition. Please make sure the user isn't on this list before you add a new one.**
+
 ### YAML spec
 
 ```
