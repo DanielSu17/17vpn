@@ -9,6 +9,10 @@
 # 8: 遊戲補償彈幕-L / 1,000點
 # 9: 遊戲補償彈幕-XL / 10,000點
 # key: 翻譯的i18n字串
+# regions: # 這個是用來控制彈幕顯示的地區, 若要開放給全區, 直接不設定這個欄位即可
+# animationID: 彈幕動畫ID 對應到 files/animation.yaml
+# startTime (optional): 彈幕開始時間(00:00:00), 用來控制彈幕的開放時間, 例如: 2022-09-15 (GMT+0800)
+# endTime (optional): 彈幕結束時間(23:59:59), 用來控制彈幕的開放時間, 例如: 2022-09-30 (GMT+0800)
 barrages:
   - type: 1
     point: 79
@@ -73,6 +77,30 @@ barrages:
       ios: "3.201.0"
       android: "2.116.0"
     key: barrage_type_berryrocket
+  - type: 10
+    point: 100
+    enabled: true
+    startTime: 2022-09-15 (GMT+0800) # optional
+    endTime: 2022-10-15 (GMT+0800) # optional
+    regions: # optional. If not set, it will be available in all regions.
+      - TW
+    versionControl:
+      ios: "3.201.0"
+      android: "2.116.0"
+    key: barrage_type_berryship # FIXME: change to the correct key from PM
+    animationID: 2021Valentine_Castel # FIXME: change to the correct animationID from PM
+  - type: 11
+    point: 100
+    enabled: true
+    startTime: 2022-09-15 (GMT+0800) # optional
+    endTime: 2022-10-15 (GMT+0800) # optional
+    regions: # optional. If not set, it will be available in all regions.
+      - JP
+    versionControl:
+      ios: "3.201.0"
+      android: "2.116.0"
+    key: barrage_type_berryrocket # FIXME: change to the correct key from PM
+    animationID: cat_girlsandboys # FIXME: change to the correct animationID from PM
 
 newLogicSupportedVersion:
   android: "2.4.35"
