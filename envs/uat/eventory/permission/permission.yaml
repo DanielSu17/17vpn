@@ -1,284 +1,203 @@
-roles:
-  - name: "Developer"
-    alias: "developer"
-  - name: "User"
-    alias: "user"
-  - name: "LayoutControl"
-    alias: "LayoutControl"
-  - name: "ContainerControl"
-    alias: "ContainerControl"
-  - name: "ABTester"
-    alias: "ABTester"
-  - name: "PrizeControl"
-    alias: "PrizeControl"
-
-accessControlType:
-  # able to use debug features
-  - "Debug" 
-  # all unrelease functionalities
-  - Alpha
-  # able to use Layout template features
-  - LayoutConfiguration
-  # able to use tag features
-  - TagConfiguration
-  - CreateQuestionnaire
-  # able to replay container
-  - ReplayContainer
-  # prize setting
-  - PrizeSetting
-  - PrizeAvatarItem
-  - PrizeBadgeItem
-  - PrizeCommentFrameItem
-  - PrizeDecoStickerItem
-  - PrizeGift
-  - DynamicTimestamp
-  - ABTestGroup
-  - NewUserLevel
-  - MissionRoadmap
-  - LinkToCampaignDiagram
-  - LinkToCampaignInsight
-  - CampaignBaseMission
-  # able to check tester boxing
-  - Tester
-
-accessControlGroup:
-  - name: unreleased
-    accessControl:
-    - ABTestGroup
-    - LinkToCampaignDiagram
-    - LinkToCampaignInsight
-  - name: common
-    accessControl:
-    - PrizeSetting
-    - NewUserLevel
-    - PrizeBadgeItem
-    - PrizeCommentFrameItem
-    - PrizeDecoStickerItem
-    - PrizeGift
-    - CreateQuestionnaire
-    - DynamicTimestamp
-    - TagConfiguration
-    - CampaignBaseMission
-
-roleAccessControl:
-  - Role: Developer
-    accessControlType:
-    - Alpha
-    - Debug
-    - LayoutConfiguration
-    - ReplayContainer
-    - PrizeAvatarItem
-    - Tester
-    accessControlGroupType:
-    - unreleased
-    - common
-  - Role: LayoutControl
-    accessControlType:
-    - LayoutConfiguration
-    accessControlGroupType:
-    - common
-  - Role: ContainerControl
-    accessControlType:
-    - ReplayContainer
-    accessControlGroupType:
-    - common
-  - Role: User
-    accessControlGroupType:
-    - common
-  - Role: ABTester
-    accessControlType:
-    - ABTestGroup
-    accessControlGroupType:
-    - common
-  - Role: PrizeControl
-    accessControlType:
-    - PrizeAvatarItem
-    - PrizeBadgeItem
-    - PrizeCommentFrameItem
-    - PrizeDecoStickerItem
-    - PrizeGift
-    - PrizeSetting
-    accessControlGroupType:
-    - common
-
 userpermissions:
-  aaronchen@17.media:
+  ethandai@17.media:      # HQ ENG
   - developer
-  aaronjen@17.media:
+  angelahsu@17.media:     # HQ PJM
   - developer
-  alexlee@17.media:
+  evanhuang@17.media:     # HQ Websolution
   - developer
-  alexliao@17.media:
+  davidhung@17.media:     # HQ Eventory
   - developer
-  andykuo@17.media:
+  jeffkuo@17.media:       # HQ Eventory
   - developer
-  angelahsu@17.media:
+  kevinhu@17.media:       # HQ Eventory
   - developer
-  angie.hsu@17.media:
+  mikeshih@17.media:      # HQ Eventory
+  - developer
+  shawnchang@17.media:    # HQ Eventory
+  - developer
+  slashtu@17.media:       # HQ Eventory
+  - developer
+  terrychen@17.media:     # HQ Eventory
+  - developer
+  jeffchiu@17.media:      # HQ Outsourcing
+  - developer
+  kaichang@17.media:      # HQ Outsourcing
+  - developer
+  chavezliu@17.media:     # HQ QA
+  - developer
+  chiaweihsieh@17.media:  # HQ QA
+  - developer
+  chloechen@17.media:     # HQ QA
+  - developer
+  fabianlin@17.media:     # HQ QA
+  - developer
+  jameschou@17.media:     # HQ QA
+  - developer
+  kevin.c@17.media:       # HQ QA
+  - developer
+  sunnyfu@17.media:       # HQ QA
+  - developer
+  youngyang@17.media:     # HQ QA
+  - developer
+  ruby@17.media:          # HQ PM
+  - developer
+  taisho@17.media:        # JP BD
+  - developer
+  duke.r@17.media:        # PDT OPS
+  - developer
+  ethan.q@17.media:       # PDT OPS
+  - developer
+  holden@17.media:        # PDT OPS
+  - developer
+  holdenchu@17.media:     # PDT OPS
+  - developer
+  kaye@17.media:          # PDT OPS
+  - developer
+  qoo.m@17.media:         # PDT OPS
+  - developer
+  sonoko.k@17.media:      # PDT OPS
+  - developer
+  angie.hsu@17.media:     # PDT OPS
   - LayoutControl
   - ContainerControl
   - PrizeControl
-  anniekao@17.media:
-  - developer
-  billkao@17.media:
-  - developer
-  callahan@17.media:
-  - LayoutControl
-  charlie@17.media:
-  - developer
-  chavezliu@17.media:
-  - developer
-  chermo@17.media:
+  arito.n@17.media:       # HQ IP
+  - ContainerControl
+  chermo@17.media:        # HQ PM
   - ABTester
   - LayoutControl
   - ContainerControl
   - PrizeControl
-  chiaweihsieh@17.media:
-  - developer
-  chloechen@17.media:
-  - developer
-  chrishuang6733@gmail.com:
-  - developer
-  chrisyo@17.media:
-  - developer
-  cindyleung@17.live:
-  - LayoutControl
-  - ContainerControl
-  - PrizeControl
-  davidhung@17.media:
-  - developer
-  dolphinlin@17.media:
-  - developer
-  duke.r@17.media:
-  - developer
-  dylan@17.media:
-  - ContainerControl
-  - ABTester
-  emma.w@17.media:
-  - developer
-  ethan.q@17.media:
-  - developer
-  ethandai@17.media:
-  - developer
-  evanhuang@17.media:
-  - developer
-  fabianlin@17.media:
-  - developer
-  gary.f@17.media:
-  - LayoutControl
-  - ContainerControl
-  - PrizeControl
-  giselelin@17.media:
+  giselelin@17.media:     # HQ QA
   - user
-  gloria.c@17.media:
+  gloria.c@17.media:      # User Insights
   - PrizeControl
-  hansenwu@17.media:
-  - developer
-  henry.c@17.media:
-  - developer
-  holden@17.media:
-  - developer
-  holdenchu@17.media:
-  - developer
-  j@17.media:
-  - LayoutControl
-  jamel.foster@17.media:
-  - ABTester
-  - ContainerControl
-  - PrizeControl
-  jameschou@17.media:
-  - developer
-  jeff.ng@17.media:
-  - ContainerControl
-  - ABTester
-  jeffchiu@17.media:
-  - developer
-  jeffkuo@17.media:
-  - developer
-  jimmyweng@17.media:
-  - developer
-  jonas@17.media:
-  - developer
-  jt@17.media:
-  - developer
-  kavenlin0121tw@gmail.com:
-  - developer
-  kaye@17.media:
-  - developer
-  kevin.c@17.media:
-  - developer
-  kevinhu@17.media:
-  - developer
-  kewei@17.media:
-  - developer
-  kiya@17.media:
-  - ContainerControl
-  - ABTester
-  - PrizeControl
-  kouki.h@17.media:
-  - ABTester
-  - ContainerControl
-  - PrizeControl
-  leo.m@17.media:
-  - ContainerControl
-  lynnchao@17.media:
-  - developer
-  mikeshih@17.media:
-  - developer
-  paulyang@17.media:
-  - developer
-  qoo.m@17.media:
-  - developer
-  rachel.fu@17.media:
-  - ABTester
-  - ContainerControl
-  - PrizeControl
-  rachel.h@17.media:
-  - PrizeControl
-  raylee@17.media:
-  - developer
-  raymond.t@17.media:
-  - developer
-  ruby@17.media:
-  - developer
-  ruruie@17.media:
-  - LayoutControl
-  - ContainerControl
-  - ABTester
-  - PrizeControl
-  shiin@17.media:
-  - developer
-  slashtu@17.media:
-  - developer
-  sonoko.k@17.media:
-  - developer
-  sou@17.media:
-  - LayoutControl
-  - PrizeControl
-  - ContainerControl
-  steph@17.media:
-  - LayoutControl
-  sunnyfu@17.media:
-  - developer
-  taisho@17.media:
-  - developer
-  tenten.s@17.media:
+  cindyleung@17.live:     # HK Event
   - LayoutControl
   - ContainerControl
   - PrizeControl
-  terrychen@17.media:
-  - developer
-  unato@17.media:
+  jeff.ng@17.media:       # HK Event
+  - ContainerControl
+  - ABTester
+  unato@17.media:         # HK Event
   - LayoutControl
   - ContainerControl
   - ABTester
-  vic.l@17.media:
+  saya.i@17.media:        # JP BD
+  - LayoutControl
+  - ABTester
+  - PrizeControl
+  shizuka@17.media:       # JP BD
+  - LayoutControl
+  - ABTester
+  - PrizeControl
+  takamy@17.media:        # JP BD
+  - LayoutControl
+  - ABTester
+  - PrizeControl
+  gary.f@17.media:        # JP Event
+  - LayoutControl
+  - ContainerControl
+  - PrizeControl
+  mario.w@17.media:       # JP Event
+  - LayoutControl
+  - ContainerControl
+  - PrizeControl
+  kouki.h@17.media:       # JP Event
+  - ABTester
+  - ContainerControl
+  - PrizeControl
+  rachel.h@17.media:      # JP Event
+  - PrizeControl
+  ray.s@17.media:         # JP Event
+  - LayoutControl
+  - ContainerControl
+  - PrizeControl
+  sou@17.media:           # JP Event
+  - LayoutControl
+  - PrizeControl
+  - ContainerControl
+  tammy.t@17.media:       # JP Event
+  - LayoutControl
+  - ContainerControl
+  - PrizeControl
+  miwa.m@17.media:        # JP Event
+  - LayoutControl
+  - PrizeControl
+  ash.k@17.media:         # JP Event VIP
+  - LayoutControl
+  - PrizeControl
+  donny.a@17.media:       # JP Event VIP
+  - LayoutControl
+  - PrizeControl
+  leo.m@17.media:         # TW ES
+  - ContainerControl
+  berylwang@17.media:     # TW Event
+  - LayoutControl
+  leiacheng@17.media:     # TW Event
+  - ContainerControl
+  vic.l@17.media:         # TW Event
   - LayoutControl
   - ContainerControl
   - ABTester
-  zoe@17.media:
-  - developer
-  tammy.t@17.media:
+  evelyn.c@17.media:      # TW Gaming
+  - LayoutControl
+  kandyhuang@17.media:    # TW Gaming
+  - LayoutControl
+  shantaycheng@17.media:  # TW Gaming
+  - LayoutControl
+  alice.k@17.media:       # SEA
+  - ABTester
   - LayoutControl
   - ContainerControl
+  - PrizeControl
+  alicezheng@17.media:    # SEA
+  - LayoutControl
+  - ContainerControl
+  altanwu@17.media:       # SEA
+  - LayoutControl
+  blakesun@17.media:      # SEA
+  - LayoutControl
+  andylee@17.media:       # SEA/US
+  - LayoutControl
+  - ContainerControl
+  lana.larkin@17.media:   # US Event
+  - ContainerControl
+  darrenchen@17.media:    # HQ Data
+  - LayoutControl
+  - ABTester
+  - PrizeControl
+  erictseng@17.media:     # HQ Data
+  - LayoutControl
+  - ABTester
+  - PrizeControl
+  timothyhuang@17.media:  # HQ Data
+  - LayoutControl
+  - ABTester
+  - PrizeControl
+  warrenhsiao@17.media:   # HQ Data
+  - LayoutControl
+  - ABTester
+  - PrizeControl
+  michaelhsu@17.media:    # HQ WebApp only stag
+  - LayoutControl
+  debbyji@17.media:       # HQ WebApp only stag
+  - LayoutControl
+  jerrylin@17.media:      # HQ WebApp only stag
+  - LayoutControl
+  louisba@17.media:       # HQ WebApp only stag
+  - LayoutControl
+  scotthou@17.media:      # HQ WebApp only stag
+  - LayoutControl
+  tiffanychen@17.media:   # HQ WebApp only stag
+  - LayoutControl
+  estherlin@17.media:     # HQ WebApp only stag
+  - LayoutControl
+  lizyu@17.media:         # HQ WebApp only stag
+  - LayoutControl
+  shanechen@17.media:     # HQ WebApp only stag
+  - LayoutControl
+  amberliu@17.media:      # HQ PM only stag
+  - LayoutControl
+  - ABTester
   - PrizeControl
