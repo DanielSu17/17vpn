@@ -5,27 +5,6 @@
   - name: example-target-hpa
     minReplicas: 20
 
-# SRE rollback test
-- startTime: "2022-09-23 18:20:00 (GMT+0800)"
-  endTime: "2022-09-23 19:30:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8ssta-goapi-main
-    minReplicas: 80
-  - name: k8ssta-golives-main
-    minReplicas: 80
-  - name: k8ssta-gotrade-main
-    minReplicas: 40
-  - name: k8ssta-revprox-tw-main
-    minReplicas: 36
-  - name: k8ssta-gocells-main
-    minReplicas: 40
-  - name: k8ssta-concert-stream-tw-main
-    minReplicas: 30
-  - name: k8ssta-concert-trade-main
-    minReplicas: 30
-  - name: k8ssta-data-middleware-main
-    minReplicas: 12
-
 # weekly stress test
 - startTime: "2022-09-21 10:30:00 (GMT+0800)"
   endTime: "2022-09-21 14:30:00 (GMT+0800)"
