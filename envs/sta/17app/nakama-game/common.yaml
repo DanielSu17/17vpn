@@ -9,7 +9,7 @@ promotion:
   msgI18nKey: "Test_for_shortcut_game"
   actionTarget: "fruitfarm" # currently surrport "gamecenter" or "fruitfarm"
   regionMode: "include"
-  regions: ["US", "JP", "TW", "MO", "MY", "SG]
+  regions: ["US", "JP", "TW","MO","MY"]
   versionControl:
     enable: true
     ios: "3.190.0"
@@ -33,7 +33,7 @@ regionPromotion:
       startTime: "2022-06-02 17:00:00 (GMT+0800)"
       endTime: "2022-12-25 23:59:59 (GMT+0800)"
     msgI18nKey: "Test_for_shortcut_game"
-    actionTarget: "gamecenter"
+    actionTarget: "fruitfarm"
     versionControl:
       enable: true
       ios: "3.190.0"
@@ -44,7 +44,6 @@ regionPromotion:
       startTime: "2022-06-02 17:00:00 (GMT+0800)"
       endTime: "2022-09-30 23:59:59 (GMT+0800)"
     msgI18nKey: "Test_for_shortcut_game"
-    actionTarget: "fruitfarm"
     versionControl:
       enable: true
       ios: "3.190.0"
@@ -55,21 +54,10 @@ regionPromotion:
       startTime: "2022-06-02 17:00:00 (GMT+0800)"
       endTime: "2022-09-30 23:59:59 (GMT+0800)"
     msgI18nKey: "Test_for_shortcut_game"
-    actionTarget: "fruitfarm"
     versionControl:
       enable: true
       ios: "3.190.0"
       android: "2.106.0.0"
-  SG:
-    enable: true
-    enableTimeRange:
-      startTime: "2022-06-02 17:00:00 (GMT+0800)"
-      endTime: "2022-09-30 23:59:59 (GMT+0800)"
-    msgI18nKey: "Test_for_shortcut_game"
-    versionControl:
-      enable: true
-      ios: "4.190.0"
-      android: "3.106.0.0"
 games:
   fruitfarm:
     enable: true
@@ -118,13 +106,9 @@ regionGameOrder:
   TW:
     - "fruitfarm2"
     - "fruitfarm"
-    - "luxurydice"
   US:
     - "fruitfarm2"
     - "fruitfarm"
   JP:
-    - "luxurydice"
     - "fruitfarm"
     - "fruitfarm2"
-  MY:
-    - "fruitfarm"
