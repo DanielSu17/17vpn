@@ -17,6 +17,7 @@ platform:
           default: 0
           displayName: beautify_filter_face_smaller_head
           iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+          type: 1
         # 11 窄脸强度, [0,1.0], 默认值0.1, 0.0不做窄脸
         - id: narrowFace
           enable: true
@@ -25,6 +26,7 @@ platform:
           default: 0.1
           displayName: beautify_filter_face_narrow_face
           iconUrl: https://cdn.17app.co/8eebf0fc-e8a4-41c8-a2da-bcb4d2f2124b.png
+          type: 1
         # 7 小脸比例, [0,1.0], 默认值0.10, 0.0不做小脸效果
         - id: shrinkJaw
           enable: true
@@ -33,6 +35,7 @@ platform:
           default: 0.1
           displayName: beautify_filter_face_v_shape
           iconUrl: https://cdn.17app.co/54e9bae9-5f7e-4b95-bade-8a631db3aff8.png
+          type: 1
         # 6 瘦脸比例, [0,1.0], 默认值0.1, 0.0不做瘦脸效果
         - id: thinFace
           enable: true
@@ -41,6 +44,7 @@ platform:
           default: 0.1
           displayName: beautify_filter_face_thin_face
           iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+          type: 1
         # 25 发际线高低比例，[-1, 1], 默认值为0.0，[-1, 0]为低发际线，[0, 1]为高发际线
         - id: hairLineHeight
           enable: true
@@ -49,6 +53,7 @@ platform:
           default: 0
           displayName: beautify_filter_face_forehead
           iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+          type: 1
         # 13 瘦颧骨比例， [0, 1.0], 默认值0.0， 0.0不做瘦颧骨
         - id: cheekBone
           enable: true
@@ -57,6 +62,7 @@ platform:
           default: 0
           displayName: beautify_filter_face_cheek_bone
           iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+          type: 1
         # 26 瘦脸型比例， [0,1.0], 默认值0.0, 0.0不做瘦脸型效果
         - id: thinFaceShape
           enable: true
@@ -65,6 +71,7 @@ platform:
           default: 0
           displayName: beautify_filter_face_jawline
           iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+          type: 1
         # 22 下巴长短比例，[-1, 1], 默认值为0.0，[-1, 0]为短下巴，[0, 1]为长下巴
         - id: chinLength
           enable: true
@@ -73,6 +80,7 @@ platform:
           default: 0
           displayName: beautify_filter_face_chin
           iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+          type: 1
       - id: eyes
         enable: true
         displayName: beautify_filter_eyes
@@ -86,6 +94,7 @@ platform:
           default: 0.1
           displayName: beautify_filter_eyes_enlarge
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
         # 12 圆眼比例, [0,1.0], 默认值0.1, 0.0不做圆眼
         - id: roundEyes
           enable: true
@@ -94,6 +103,7 @@ platform:
           default: 0.1
           displayName: beautify_filter_eyes_round
           iconUrl: https://cdn.17app.co/ea67c4d7-098a-4c21-b802-2172dcc602c0.png
+          type: 1
         # 27 眼距比例，[-1, 1]，默认值为0.0，[-1, 0]为减小眼距，[0, 1]为增加眼距
         - id: eyeDistance
           enable: true
@@ -102,6 +112,7 @@ platform:
           default: 0
           displayName: beautify_filter_eyes_distance
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
         # 28 眼睛角度调整比例，[-1, 1]，默认值为0.0，[-1, 0]为左眼逆时针旋转，[0, 1]为左眼顺时针旋转，右眼与左眼相对
         - id: eyeAngle
           enable: true
@@ -110,6 +121,7 @@ platform:
           default: 0
           displayName: beautify_filter_eyes_angle
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
         # 29 开眼角比例，[0, 1.0]，默认值为0.0， 0.0不做开眼角
         - id: eyeOpenCanthus
           enable: true
@@ -118,6 +130,7 @@ platform:
           default: 0
           displayName: beautify_filter_eyes_inner_corner
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
         # 36 开外眼角比例，[0, 1.0]，默认值为0.0， 0.0不做开外眼角
         - id: eyeOpenExternalCanthus
           enable: true
@@ -126,6 +139,7 @@ platform:
           default: 0
           displayName: beautify_filter_eyes_outer_corner
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
         # 31 亮眼比例，[0, 1.0]，默认值为0.0，0.0不做亮眼
         - id: brightEye
           enable: true
@@ -134,6 +148,7 @@ platform:
           default: 0
           displayName: beautify_filter_eyes_brighten
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
       - id: nose
         enable: true
         displayName: beautify_filter_nose
@@ -147,6 +162,7 @@ platform:
           default: 0
           displayName: beautify_filter_nose_narrow
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
         # 21 鼻子长短比例，[-1, 1], 默认值为0.0, [-1, 0]为短鼻，[0, 1]为长鼻
         - id: noseLength
           enable: true
@@ -155,6 +171,7 @@ platform:
           default: 0
           displayName: beautify_filter_length
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
         # 30 侧脸隆鼻比例，[0, 1.0]，默认值为0.0，0.0不做侧脸隆鼻效果
         - id: heightNose
           enable: true
@@ -163,6 +180,7 @@ platform:
           default: 0
           displayName: beautify_filter_height
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
       - id: mouth
         enable: true
         displayName: beautify_filter_lips
@@ -176,6 +194,7 @@ platform:
           default: 0
           displayName: beautify_filter_lips_philtrum
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
         # 23 嘴型比例，[-1, 1]，默认值为0.0，[-1, 0]为放大嘴巴，[0, 1]为缩小嘴巴
         - id: mouthSize
           enable: true
@@ -184,6 +203,7 @@ platform:
           default: 0
           displayName: beautify_filter_lips_size
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
         # 34 白牙比例，[0, 1.0]，默认值为0.0，0.0不做白牙
         - id: whiteTeeth
           enable: true
@@ -192,6 +212,7 @@ platform:
           default: 0
           displayName: beautify_filter_lips_teeth_whiteness
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
       - id: skin
         enable: true
         displayName: beautify_filter_skin
@@ -205,6 +226,7 @@ platform:
           default: 0
           displayName: beautify_filter_skin_darkcircle
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
         # 33 去法令纹比例，[0, 1.0]，默认值为0.0，0.0不做去法令纹
         - id: removeNasolabialFolds
           enable: true
@@ -213,6 +235,7 @@ platform:
           default: 0
           displayName: beautify_filter_skin_firm
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
         # 3 磨皮强度, [0,1.0], 默认值0.ㄓ, 0.0不做磨皮
         - id: skinSoften
           enable: true
@@ -221,6 +244,7 @@ platform:
           default: 0.5
           displayName: beautify_filter_skin_smoothness
           iconUrl: https://cdn.17app.co/0dad32e5-a2b2-4902-8283-97cc8536f3ae.png
+          type: 1
         # 4 美白强度, [0,1.0], 默认值0.25, 0.0不做美白
         - id: skinWhitening
           enable: true
@@ -229,6 +253,7 @@ platform:
           default: 0.25
           displayName: beautify_filter_skin_brighten
           iconUrl: https://cdn.17app.co/db256af7-a3f4-4356-a830-70a626e65fe5.png
+          type: 1
         # 1 红润强度, [0,1.0], 默认值0.25, 0.0不做红润
         - id: skinRedden
           enable: true
@@ -237,6 +262,7 @@ platform:
           default: 0.25
           displayName: beautify_filter_skin_redden
           iconUrl: https://cdn.17app.co/beb59186-139f-4256-bc29-1b8790966239.png
+          type: 1
       - id: image
         enable: true
         displayName: beautify_filter_image
@@ -250,6 +276,7 @@ platform:
           default: 0.1
           displayName: beautify_filter_image_saturation
           iconUrl: https://cdn.17app.co/d651522f-0ad8-488f-8171-987404979ac0.png
+          type: 1
         # 8 对比度强度, [0,1.0], 默认值0.1, 0.0不做对比度处理
         - id: contrast
           enable: true
@@ -258,6 +285,7 @@ platform:
           default: 0.1
           displayName: beautify_filter_image_contrast
           iconUrl: https://cdn.17app.co/bbc788f5-c64b-4db3-b8fe-e44aebdf8620.png
+          type: 1
         # 锐化强度, [0, 1.0], 默认值0.1, 0.0不做锐化
         - id: sharpen
           enable: true
@@ -266,6 +294,7 @@ platform:
           default: 0.1
           displayName: beautify_filter_image_sharpness
           iconUrl: https://cdn.17app.co/04783f14-6049-4c96-80c9-043f6721f6f3.png
+          type: 1
   android:
     default:
       enable: true
@@ -283,6 +312,7 @@ platform:
           default: 0
           displayName: beautify_filter_face_smaller_head
           iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+          type: 1
         # 11 窄脸强度, [0,1.0], 默认值0.1, 0.0不做窄脸
         - id: narrowFace
           enable: true
@@ -291,6 +321,7 @@ platform:
           default: 0.1
           displayName: beautify_filter_face_narrow_face
           iconUrl: https://cdn.17app.co/8eebf0fc-e8a4-41c8-a2da-bcb4d2f2124b.png
+          type: 1
         # 7 小脸比例, [0,1.0], 默认值0.10, 0.0不做小脸效果
         - id: shrinkJaw
           enable: true
@@ -299,6 +330,7 @@ platform:
           default: 0.1
           displayName: beautify_filter_face_v_shape
           iconUrl: https://cdn.17app.co/54e9bae9-5f7e-4b95-bade-8a631db3aff8.png
+          type: 1
         # 6 瘦脸比例, [0,1.0], 默认值0.1, 0.0不做瘦脸效果
         - id: thinFace
           enable: true
@@ -307,6 +339,7 @@ platform:
           default: 0.1
           displayName: beautify_filter_face_thin_face
           iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+          type: 1
         # 25 发际线高低比例，[-1, 1], 默认值为0.0，[-1, 0]为低发际线，[0, 1]为高发际线
         - id: hairLineHeight
           enable: true
@@ -315,6 +348,7 @@ platform:
           default: 0
           displayName: beautify_filter_face_forehead
           iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+          type: 1
         # 13 瘦颧骨比例， [0, 1.0], 默认值0.0， 0.0不做瘦颧骨
         - id: cheekBone
           enable: true
@@ -323,6 +357,7 @@ platform:
           default: 0
           displayName: beautify_filter_face_cheek_bone
           iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+          type: 1
         # 26 瘦脸型比例， [0,1.0], 默认值0.0, 0.0不做瘦脸型效果
         - id: thinFaceShape
           enable: true
@@ -331,6 +366,7 @@ platform:
           default: 0
           displayName: beautify_filter_face_jawline
           iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+          type: 1
         # 22 下巴长短比例，[-1, 1], 默认值为0.0，[-1, 0]为短下巴，[0, 1]为长下巴
         - id: chinLength
           enable: true
@@ -339,6 +375,7 @@ platform:
           default: 0
           displayName: beautify_filter_face_chin
           iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+          type: 1
       - id: eyes
         enable: true
         displayName: beautify_filter_eyes
@@ -352,6 +389,7 @@ platform:
           default: 0.1
           displayName: beautify_filter_eyes_enlarge
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
         # 12 圆眼比例, [0,1.0], 默认值0.1, 0.0不做圆眼
         - id: roundEyes
           enable: true
@@ -360,6 +398,7 @@ platform:
           default: 0.1
           displayName: beautify_filter_eyes_round
           iconUrl: https://cdn.17app.co/ea67c4d7-098a-4c21-b802-2172dcc602c0.png
+          type: 1
         # 27 眼距比例，[-1, 1]，默认值为0.0，[-1, 0]为减小眼距，[0, 1]为增加眼距
         - id: eyeDistance
           enable: true
@@ -368,6 +407,7 @@ platform:
           default: 0
           displayName: beautify_filter_eyes_round
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
         # 28 眼睛角度调整比例，[-1, 1]，默认值为0.0，[-1, 0]为左眼逆时针旋转，[0, 1]为左眼顺时针旋转，右眼与左眼相对
         - id: eyeAngle
           enable: true
@@ -376,6 +416,7 @@ platform:
           default: 0
           displayName: beautify_filter_eyes_angle
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
         # 29 开眼角比例，[0, 1.0]，默认值为0.0， 0.0不做开眼角
         - id: eyeOpenCanthus
           enable: true
@@ -384,6 +425,7 @@ platform:
           default: 0
           displayName: beautify_filter_eyes_inner_corner
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
         # 36 开外眼角比例，[0, 1.0]，默认值为0.0， 0.0不做开外眼角
         - id: eyeOpenExternalCanthus
           enable: true
@@ -392,6 +434,7 @@ platform:
           default: 0
           displayName: beautify_filter_eyes_outer_corner
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
         # 31 亮眼比例，[0, 1.0]，默认值为0.0，0.0不做亮眼
         - id: brightEye
           enable: true
@@ -400,6 +443,7 @@ platform:
           default: 0
           displayName: beautify_filter_eyes_brighten
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
       - id: nose
         enable: true
         displayName: beautify_filter_nose
@@ -413,6 +457,7 @@ platform:
           default: 0
           displayName: beautify_filter_nose_narrow
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
         # 21 鼻子长短比例，[-1, 1], 默认值为0.0, [-1, 0]为短鼻，[0, 1]为长鼻
         - id: noseLength
           enable: true
@@ -421,6 +466,7 @@ platform:
           default: 0
           displayName: beautify_filter_length
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
         # 30 侧脸隆鼻比例，[0, 1.0]，默认值为0.0，0.0不做侧脸隆鼻效果
         - id: heightNose
           enable: true
@@ -429,6 +475,7 @@ platform:
           default: 0
           displayName: beautify_filter_height
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
       - id: mouth
         enable: true
         displayName: beautify_filter_lips
@@ -442,6 +489,7 @@ platform:
           default: 0
           displayName: beautify_filter_lips_philtrum
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
         # 23 嘴型比例，[-1, 1]，默认值为0.0，[-1, 0]为放大嘴巴，[0, 1]为缩小嘴巴
         - id: mouthSize
           enable: true
@@ -450,6 +498,7 @@ platform:
           default: 0
           displayName: beautify_filter_lips_size
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
         # 34 白牙比例，[0, 1.0]，默认值为0.0，0.0不做白牙
         - id: whiteTeeth
           enable: true
@@ -458,6 +507,7 @@ platform:
           default: 0
           displayName: beautify_filter_lips_teeth_whiteness
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
       - id: skin
         enable: true
         displayName: beautify_filter_skin
@@ -471,6 +521,7 @@ platform:
           default: 0
           displayName: beautify_filter_skin_darkcircle
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
         # 33 去法令纹比例，[0, 1.0]，默认值为0.0，0.0不做去法令纹
         - id: removeNasolabialFolds
           enable: true
@@ -479,6 +530,7 @@ platform:
           default: 0
           displayName: beautify_filter_skin_firm
           iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
         # 3 磨皮强度, [0,1.0], 默认值0.ㄓ, 0.0不做磨皮
         - id: skinSoften
           enable: true
@@ -487,6 +539,7 @@ platform:
           default: 0.5
           displayName: beautify_filter_skin_smoothness
           iconUrl: https://cdn.17app.co/0dad32e5-a2b2-4902-8283-97cc8536f3ae.png
+          type: 1
         # 4 美白强度, [0,1.0], 默认值0.25, 0.0不做美白
         - id: skinWhitening
           enable: true
@@ -495,6 +548,7 @@ platform:
           default: 0.25
           displayName: beautify_filter_skin_brighten
           iconUrl: https://cdn.17app.co/db256af7-a3f4-4356-a830-70a626e65fe5.png
+          type: 1
         # 1 红润强度, [0,1.0], 默认值0.25, 0.0不做红润
         - id: skinRedden
           enable: true
@@ -503,6 +557,7 @@ platform:
           default: 0.25
           displayName: beautify_filter_skin_redden
           iconUrl: https://cdn.17app.co/beb59186-139f-4256-bc29-1b8790966239.png
+          type: 1
       - id: image
         enable: true
         displayName: beautify_filter_image
@@ -516,6 +571,7 @@ platform:
           default: 0.1
           displayName: beautify_filter_image_saturation
           iconUrl: https://cdn.17app.co/d651522f-0ad8-488f-8171-987404979ac0.png
+          type: 1
         # 8 对比度强度, [0,1.0], 默认值0.1, 0.0不做对比度处理
         - id: contrast
           enable: true
@@ -524,6 +580,7 @@ platform:
           default: 0.1
           displayName: beautify_filter_image_contrast
           iconUrl: https://cdn.17app.co/bbc788f5-c64b-4db3-b8fe-e44aebdf8620.png
+          type: 1
         # 锐化强度, [0, 1.0], 默认值0.1, 0.0不做锐化
         - id: sharpen
           enable: true
@@ -532,3 +589,4 @@ platform:
           default: 0.1
           displayName: beautify_filter_image_sharpness
           iconUrl: https://cdn.17app.co/04783f14-6049-4c96-80c9-043f6721f6f3.png
+          type: 1
