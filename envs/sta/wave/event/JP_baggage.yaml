@@ -6,19 +6,18 @@
 # condition type 0: no condition, 1: daily mission gift, 2: once mission gift
 #
 # missions:
-#   - id: "1"
-#     name: "baggage_mission_title"
-#     order: 1
-#     start_time: "2022-01-01 05:00:00 (GMT+0900)"
-#     end_time: "2032-01-01 05:00:00 (GMT+0900)"
-#     comment: "for example"
-#     reward:
-#       type: 1
-#       gift_id: "mission_1_reward_gift_id_1"
-#       amount: 1
-#       valid_time: 20160 (minutes)
-#     condition:
-#       type: 1
-#       gift_id: "mission_1_send_gift_id_1"
-#       amount: 3
-missions: []
+   - id: "1"
+     name: "baggage_mission_title"
+     order: 1
+     start_time: "2022-01-01 05:00:00 (GMT+0900)"
+     end_time: "2032-01-01 05:00:00 (GMT+0900)"
+     comment: "for example"
+     reward:
+       type: 1
+       gift_id: "jp_gift_smallstar"
+       amount: 10
+       valid_time: 20160
+     condition:
+       type: 1
+       gift_id: "jp_gif_random_collision_fall"
+       amount: 3
