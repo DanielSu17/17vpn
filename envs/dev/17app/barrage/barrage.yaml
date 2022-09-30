@@ -88,7 +88,7 @@ barrages:
       ios: "3.201.0"
       android: "2.116.0"
     key: exclusive_barrage_test # FIXME: change to the correct key from PM
-    animationID: test_danmaku # FIXME: change to the correct animationID from PM
+    animationID: test_danmaku_amber # FIXME: change to the correct animationID from PM
   - type: 11
     point: 0
     enabled: true
@@ -101,7 +101,39 @@ barrages:
       android: "2.116.0"
     key: exclusive_barrage_test # FIXME: change to the correct key from PM
     animationID: test_danmaku # FIXME: change to the correct animationID from PM
+  - type: 12
+    point: 0
+    enabled: true
+    startTime: 2022-09-15 (GMT+0800) # optional
+    endTime: 2022-10-15 (GMT+0800) # optional
+    versionControl:
+      ios: "3.201.0"
+      android: "2.116.0"
+    key: exclusive_barrage_test # FIXME: change to the correct key from PM
+    animationID: test_danmaku_larry # FIXME: change to the correct animationID from PM
+
+  #please always use the new number for new type of exclusive barrage, please done use the number of 0-9 and make sure we dont duplicate the number of the type.
+  - type: 13
+    #keep the zero point if you want to add exclusive barrage
+    point: 0
+    enabled: true
+    #start time and end time is the time we allow use to send/use it, it is optional
+    startTime: 2022-09-15 (GMT+0800)
+    endTime: 2022-12-15 (GMT+0800)
+    #regions list determines the streamers stream from the regions allowed to receive the barrage.
+    regions:
+      - JP
+      - TW
+      - US
+      - HK
+    versionControl:
+      ios: "3.201.0"
+      android: "2.116.0"
+    #key is for the name of the barrage
+    key: exclusive_barrage_test
+    #animation ID is from the setting of animation
+    animationID: test_danmaku_amber
 
 newLogicSupportedVersion:
-  android: "2.4.39"
-  ios: "3.87.0"
+  android: "2.4.35"
+  ios: "3.85.0"
