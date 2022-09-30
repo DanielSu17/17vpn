@@ -134,6 +134,28 @@ barrages:
   #animation ID is from the setting of animation
     animationID: Barrage_testamber
 
+    #please always use the new number for new type of exclusive barrage, please done use the number of 0-9 and make sure we dont duplicate the number of the type.
+  - type: 14
+  #keep the zero point if you want to add exclusive barrage
+    point: 0
+    enabled: true
+  #start time and end time is the time we allow use to send/use it, it is optional
+    startTime: 2022-09-15 (GMT+0800)
+    endTime: 2022-12-15 (GMT+0800)
+  #regions list determines the streamers stream from the regions allowed to receive the barrage.
+    regions:
+      - JP
+      - TW
+      - US
+      - HK
+    versionControl:
+      ios: "3.201.0"
+      android: "2.116.0"
+  #key is for the name of the barrage
+    key: exclusive_barrage_test_01
+  #animation ID is from the setting of animation
+    animationID: Barrage_testvalerie
+
 newLogicSupportedVersion:
   android: "2.4.35"
   ios: "3.85.0"
