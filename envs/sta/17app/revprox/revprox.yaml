@@ -273,6 +273,7 @@ regexConf:
       # normal send gift: "api/v1/lives/:roomid/gift"
       - ^POST /api/v1/lives/[0-9]+/gift$
       - ^POST /api/v1/lives/[0-9]+/voteGift$
+      - ^POST /api/v1/lives/[0-9]+/sendGiftSplitTransacPOC$
   - url_key: "go_url"
     default_url_key: "go_url"
     weight: 100
