@@ -31,7 +31,7 @@ sections:
  #   style: 2
  #   more: false
 
-  - id: Label # ハロウィン 2022
+  - id: Label # ハロウィン2022
     labelID: 2210_jp_halloween
     name:
       key: streamer_jp_label_halloween2022
@@ -43,7 +43,7 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: Label # ハロウィンパーティー 仮装
+  - id: Label # ハロウィンパーティー仮装
     labelID: 2210_jp_halloween_cos
     name:
       key: streamer_jp_label_halloween2022_cosplay
@@ -55,7 +55,7 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: Label # ハロウィンパーティー 料理
+  - id: Label # ハロウィンパーティー料理
     labelID: 2210_jp_halloween_cook
     name:
       key: streamer_jp_label_halloween2022_cook
@@ -67,7 +67,7 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: Label # ハロウィンパーティー メイク
+  - id: Label # ハロウィンパーティーメイク
     labelID: 2210_jp_halloween_makeup
     name:
       key: streamer_jp_label_halloween2022_makeup
@@ -121,22 +121,10 @@ sections:
     more: true
     orderModel: 2
 
-  - id: Label # #ショートムービーチャレンジ
+  - id: Label # ショートムービーチャレンジ
     labelID: 2210_jp_shortmovie
     name:
       key: streamer_jp_label_shortmovie4
-    enable: true
-    dedup: true
-    minGrids: 3
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
-  - id: Label # 今日のご飯
-    labelID: 2207_jp_Today_meal17
-    name:
-      key: streamer_jp_label_Today_meal17
     enable: true
     dedup: true
     minGrids: 3
@@ -209,6 +197,30 @@ sections:
     labelID: jp_fortune
     name:
       key: streamer_jp_label_fortune
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # クッキング
+    labelID: 2207_jp_cooking17
+    name:
+      key: streamer_jp_label_cooking17
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # 恋愛トーク
+    labelID: 2207_jp_love_talk17
+    name:
+      key: streamer_jp_label_love_talk17
     enable: true
     dedup: true
     minGrids: 3
@@ -384,24 +396,12 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: Label # 恋愛トーク
-    labelID: 2207_jp_love_talk17
-    name:
-      key: streamer_jp_label_love_talk17
-    enable: true
-    dedup: true
-    minGrids: 3
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
 #未使用ジャンル
 
-#  - id: Label # クッキング
-#    labelID: 2207_jp_cooking17
+#  - id: Label # 今日のご飯
+#    labelID: 2207_jp_Today_meal17
 #    name:
-#      key: streamer_jp_label_cooking17
+#      key: streamer_jp_label_Today_meal17
 #    enable: true
 #    dedup: true
 #    minGrids: 3
@@ -493,18 +493,6 @@ sections:
 #    category: normal
 #    orderModel: 2
 
-#  - id: Label #　#ショートムービーチャレンジ
-#    labelID: 2209_jp_shortmovie
-#    name:
-#      key: streamer_jp_label_short_movie_challenge
-#    enable: true
-#    dedup: true
-#    minGrids: 2
-#    style: 3
-#    more: true
-#    category: normal
-#    orderModel: 2
-
 #  - id: Label # 広告出演中のライバー
 #    labelID: 2206_jp_Ad_entry_streamer
 #    name:
@@ -512,30 +500,6 @@ sections:
 #    enable: true
 #    dedup: true
 #    minGrids: 3
-#    style: 3
-#    more: true
-#    category: normal
-#    orderModel: 2
-
-#  - id: Label # ​​​​懐メロ
-#    labelID: 2208_jp_nostalgicmelody17
-#   name:
-#      key: streamer_jp_label_nostalgicmelody17
-#    enable: true
-#    dedup: true
-#    minGrids: 2
-#    style: 3
-#    more: true
-#    category: normal
-#    orderModel: 2
-
-#  - id: Label # アニソン
-#    labelID: 2208_jp_animesong17
-#    name:
-#      key: streamer_jp_label_animesong17
-#    enable: true
-#    dedup: true
-#    minGrids: 2
 #    style: 3
 #    more: true
 #    category: normal
@@ -552,7 +516,6 @@ sections:
 #    more: true
 #    category: normal
 #    orderModel: 2
-
 
 officialRecommendedStreamers:
 
@@ -571,5 +534,4 @@ newbieStreamGuideGroupingRules:
         minLevel: 65
       - maxViewerCount: 40
       - minViewerCount: 40
-
 
