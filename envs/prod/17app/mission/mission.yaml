@@ -40,35 +40,6 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
-- ID: 6847c2ac-00c6-465d-b4e7-ad528eaee176
-  type: 10
-  category: 0
-  lifeCycle: 1
-  targetAudience: 2
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: tw_love_firework
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_po_iap_mission
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_event_done
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-09-27 00:00:00 (GMT+0800)
-    endTime: 2022-09-30 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: true
 - ID: 9aad7720-d411-4b59-8872-94ec31f51282
   type: 10
   category: 0
@@ -127,64 +98,6 @@ missions:
   - ios
   requirePhoneBinding: true
   withReminder: true
-- ID: 2437f1d1-a1f4-480b-807f-0d1694c4a1ed
-  type: 24
-  category: 0
-  lifeCycle: 2
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2001_b2b_summer_m
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: tw_aug_mission_1
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_aug_reward_2
-  i18nDescriptionParams: []
-  goalValue: 3
-  enableTimeRange:
-  - startTime: 2022-09-20 11:00:00 (GMT+0800)
-    endTime: 2022-09-30 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: true
-- ID: 67b241d6-7ad4-4f37-baec-a7991633235f
-  type: 24
-  category: 0
-  lifeCycle: 2
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2001_b2b_summer_l
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: tw_aug_mission_2
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_aug_reward_3
-  i18nDescriptionParams: []
-  goalValue: 7
-  enableTimeRange:
-  - startTime: 2022-09-20 11:00:00 (GMT+0800)
-    endTime: 2022-09-30 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: true
 - ID: f748f6bb-058a-48df-9844-53398368b28b
   type: 16
   category: 0
@@ -214,6 +127,36 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
+- ID: c048d2cf-8016-450e-b721-fa81a3826951
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 10
+  reward:
+    rewardType: 1
+    rewardID: welcome_newbiespecial
+    amount: 5
+    expireTimeSecs: 86400
+  i18nTitle: tw_mission_welcomestream
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: tw_mission_welcomestream_rewards
+  i18nDescriptionParams: []
+  goalValue: 900
+  enableTimeRange:
+  - startTime: 2022-10-01 21:00:00 (GMT+0800)
+    endTime: 2022-10-01 22:15:00 (GMT+0800)
+  refIDs:
+  - f0a341ad-5ea4-46b5-88a7-a4e7005fa173
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
 - ID: 29c049e9-64b0-401c-a843-3ea6659d708e
   type: 9
   category: 0
@@ -903,35 +846,6 @@ missions:
   - android
   - ios
   requirePhoneBinding: false
-  withReminder: true
-- ID: 9779bad2-53a9-4b67-9d87-3dfb66546f8c
-  type: 24
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2001_b2b_summer_s
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: hk_mission_35
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_aug_reward_1
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-09-20 11:00:00 (GMT+0800)
-    endTime: 2022-09-30 23:59:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
   withReminder: true
 - ID: 31a87b28-4d2c-45fe-97b1-795643ea8f90
   type: 9
