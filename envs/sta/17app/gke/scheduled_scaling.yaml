@@ -94,21 +94,15 @@
   - name: k8ssta-goapi-main
     minReplicas: 50
 
-# 0917-0919 pre-stress
-- startTime: "2022-09-12 11:50:00 (GMT+0800)"
-  endTime: "2022-09-12 13:30:00 (GMT+0800)"
+# 1003 send gift to 2 transcations POC
+- startTime: "2022-10-03 11:40:00 (GMT+0800)"
+  endTime: "2022-10-03 14:30:00 (GMT+0800)"
   HPAConfigs:
   - name: k8ssta-goapi-main
-    minReplicas: 120
+    minReplicas: 110
   - name: k8ssta-golives-main
-    minReplicas: 120
+    minReplicas: 110
   - name: k8ssta-gotrade-main
-    minReplicas: 60
+    minReplicas: 80
   - name: k8ssta-revprox-tw-main
     minReplicas: 36
-  - name: k8ssta-gocells-main
-    minReplicas: 60
-  - name: k8ssta-concert-stream-tw-main
-    minReplicas: 30
-  - name: k8ssta-concert-trade-main
-    minReplicas: 30
