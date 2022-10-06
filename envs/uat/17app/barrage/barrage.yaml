@@ -17,6 +17,7 @@ barrages:
   - type: 1
     point: 79
     enabled: true
+    army: true
     versionControl:
       ios: "0.0.1"
       android: "0.0.1"
@@ -24,6 +25,7 @@ barrages:
   - type: 0
     point: 159
     enabled: true
+    army: true
     versionControl:
       ios: "0.0.1"
       android: "0.0.1"
@@ -31,6 +33,7 @@ barrages:
   - type: 2
     point: 799
     enabled: true
+    army: true
     versionControl:
       ios: "0.0.1"
       android: "0.0.1"
@@ -38,6 +41,7 @@ barrages:
   - type: 3
     point: 1599
     enabled: true
+    army: true
     versionControl:
       ios: "0.0.1"
       android: "0.0.1"
@@ -45,6 +49,7 @@ barrages:
   - type: 4
     point: 0
     enabled: false
+    army: true
     versionControl:
       ios: "0.0.1"
       android: "0.0.1"
@@ -52,6 +57,7 @@ barrages:
   - type: 6
     point: 100
     enabled: true
+    army: true
     versionControl:
       ios: "3.201.0"
       android: "2.116.0"
@@ -59,6 +65,7 @@ barrages:
   - type: 7
     point: 500
     enabled: true
+    army: true
     versionControl:
       ios: "3.201.0"
       android: "2.116.0"
@@ -66,6 +73,7 @@ barrages:
   - type: 8
     point: 1000
     enabled: true
+    army: true
     versionControl:
       ios: "3.201.0"
       android: "2.116.0"
@@ -73,6 +81,7 @@ barrages:
   - type: 9
     point: 10000
     enabled: true
+    army: true
     versionControl:
       ios: "3.201.0"
       android: "2.116.0"
@@ -80,6 +89,7 @@ barrages:
   - type: 10
     point: 0
     enabled: true
+    army: false
     startTime: 2022-09-15 (GMT+0800) # optional
     endTime: 2022-10-15 (GMT+0800) # optional
     regions: # optional. If not set, it will be available in all regions.
@@ -92,6 +102,7 @@ barrages:
   - type: 11
     point: 0
     enabled: true
+    army: false
     startTime: 2022-09-15 (GMT+0800) # optional
     endTime: 2022-10-15 (GMT+0800) # optional
     regions: # optional. If not set, it will be available in all regions.
@@ -104,19 +115,21 @@ barrages:
   - type: 12
     point: 0
     enabled: true
+    army: false
     startTime: 2022-09-15 (GMT+0800) # optional
-    endTime: 2022-10-15 (GMT+0800) # optional
+    endTime: 2022-12-15 (GMT+0800) # optional
     versionControl:
       ios: "3.201.0"
       android: "2.116.0"
     key: exclusive_barrage_test # FIXME: change to the correct key from PM
-    animationID: test_danmaku_larry # FIXME: change to the correct animationID from PM
+    animationID: danmaku_sta_test # FIXME: change to the correct animationID from PM
 
   #please always use the new number for new type of exclusive barrage, please done use the number of 0-9 and make sure we dont duplicate the number of the type.
   - type: 13
     #keep the zero point if you want to add exclusive barrage
     point: 0
     enabled: true
+    army: false
     #start time and end time is the time we allow use to send/use it, it is optional
     startTime: 2022-09-15 (GMT+0800)
     endTime: 2022-12-15 (GMT+0800)
@@ -132,7 +145,30 @@ barrages:
     #key is for the name of the barrage
     key: exclusive_barrage_test
     #animation ID is from the setting of animation
-    animationID: test_danmaku_amber
+    animationID: Barrage_testamber_larry
+
+    #please always use the new number for new type of exclusive barrage, please done use the number of 0-9 and make sure we dont duplicate the number of the type.
+  - type: 14
+    #keep the zero point if you want to add exclusive barrage
+    point: 0
+    enabled: true
+    army: false
+    #start time and end time is the time we allow use to send/use it, it is optional
+    startTime: 2022-10-02 (GMT+1700)
+    endTime: 2022-12-15 (GMT+0800)
+    #regions list determines the streamers stream from the regions allowed to receive the barrage.
+    regions:
+      - JP
+      - TW
+      - US
+      - HK
+    versionControl:
+      ios: "3.201.0"
+      android: "2.116.0"
+    #key is for the name of the barrage
+    key: exclusive_barrage_test_01
+    #animation ID is from the setting of animation
+    animationID: Barrage_testvalerie
 
 newLogicSupportedVersion:
   android: "2.4.35"

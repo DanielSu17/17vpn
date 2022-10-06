@@ -9,10 +9,15 @@
 # 8: 遊戲補償彈幕-L / 1,000點
 # 9: 遊戲補償彈幕-XL / 10,000點
 # key: 翻譯的i18n字串
+# regions: # 這個是用來控制彈幕顯示的地區, 若要開放給全區, 直接不設定這個欄位即可
+# animationID: 彈幕動畫ID 對應到 files/animation.yaml
+# startTime (optional): 彈幕開始時間(00:00:00), 用來控制彈幕的開放時間, 例如: 2022-09-15 (GMT+0800)
+# endTime (optional): 彈幕結束時間(23:59:59), 用來控制彈幕的開放時間, 例如: 2022-09-30 (GMT+0800)
 barrages:
   - type: 1
     point: 79
     enabled: true
+    army: true
     versionControl:
       ios: "0.0.1"
       android: "0.0.1"
@@ -20,6 +25,7 @@ barrages:
   - type: 0
     point: 159
     enabled: true
+    army: true
     versionControl:
       ios: "0.0.1"
       android: "0.0.1"
@@ -27,6 +33,7 @@ barrages:
   - type: 2
     point: 799
     enabled: true
+    army: true
     versionControl:
       ios: "0.0.1"
       android: "0.0.1"
@@ -34,6 +41,7 @@ barrages:
   - type: 3
     point: 1599
     enabled: true
+    army: true
     versionControl:
       ios: "0.0.1"
       android: "0.0.1"
@@ -41,6 +49,7 @@ barrages:
   - type: 4
     point: 0
     enabled: false
+    army: true
     versionControl:
       ios: "0.0.1"
       android: "0.0.1"
@@ -48,6 +57,7 @@ barrages:
   - type: 6
     point: 100
     enabled: true
+    army: true
     versionControl:
       ios: "3.201.0"
       android: "2.116.0"
@@ -55,6 +65,7 @@ barrages:
   - type: 7
     point: 500
     enabled: true
+    army: true
     versionControl:
       ios: "3.201.0"
       android: "2.116.0"
@@ -62,6 +73,7 @@ barrages:
   - type: 8
     point: 1000
     enabled: true
+    army: true
     versionControl:
       ios: "3.201.0"
       android: "2.116.0"
@@ -69,6 +81,7 @@ barrages:
   - type: 9
     point: 10000
     enabled: true
+    army: true
     versionControl:
       ios: "3.201.0"
       android: "2.116.0"
