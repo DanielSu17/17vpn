@@ -1,3 +1,10 @@
+# totalSizeInBytes must larger than preloadSizeInBytes
+giftStorage:
+  enableSizeLimit: true
+  totalSizeInBytes: 6442450944 # 6GB
+  preloadSizeInBytes: 5368709120 #5GB
+
+# TODO: Remove following enableSizeLimit and totalSizeInBytes after giftStorage above is applied.
 enableSizeLimit: true
 totalSizeInBytes: 6442450944 # 6GB
 #mustPreloadGifts:
