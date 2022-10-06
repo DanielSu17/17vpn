@@ -20,25 +20,10 @@ missions:
     condition:
       type: 1
       gift_id: "jp_gift_newbi_penlight"
-      amount: 100
+      amount: 50
   - id: "luckypunch2"
     name: "luckypunch"
     order: 2
-    start_time: "2022-10-06 00:00:00 (GMT+0900)"
-    end_time: "2022-10-09 23:59:59 (GMT+0900)"
-    comment: "stage"
-    reward:
-      type: 1
-      gift_id: "jp_gift_placequeen"
-      amount: 1
-      valid_time: 20160
-    condition:
-      type: 1
-      gift_id: "jp_gift_newbi_bob_2"
-      amount: 10
-  - id: "luckypunch3"
-    name: "luckypunch"
-    order: 3
     start_time: "2022-10-06 00:00:00 (GMT+0900)"
     end_time: "2022-10-09 23:59:59 (GMT+0900)"
     comment: "stage"
@@ -49,7 +34,22 @@ missions:
       valid_time: 20160
     condition:
       type: 1
-      gift_id: "jp_gift_newbi_bob_3"
+      gift_id: "jp_gift_newbi_bob"
+      amount: 10
+  - id: "luckypunch3"
+    name: "luckypunch"
+    order: 3
+    start_time: "2022-10-06 00:00:00 (GMT+0900)"
+    end_time: "2022-10-09 23:59:59 (GMT+0900)"
+    comment: "stage"
+    reward:
+      type: 1
+      gift_id: "jp_gift_placequeen"
+      amount: 10
+      valid_time: 20160
+    condition:
+      type: 1
+      gift_id: "jp_gift_newbi_bob_2"
       amount: 10
   - id: "luckypunch4"
     name: "luckypunch"
@@ -60,11 +60,11 @@ missions:
     reward:
       type: 1
       gift_id: "jp_gift_placequeen"
-      amount: 10
+      amount: 20
       valid_time: 20160
     condition:
       type: 1
-      gift_id: "jp_gift_newbi_king"
+      gift_id: "jp_gift_newbi_bob_3"
       amount: 10
   - id: "luckypunch5"
     name: "luckypunch"
@@ -75,24 +75,39 @@ missions:
     reward:
       type: 1
       gift_id: "jp_gift_placequeen"
-      amount: 10
+      amount: 22
       valid_time: 20160
     condition:
       type: 1
-      gift_id: "jp_gif_random_collision_fall"
-      amount: 10
+      gift_id: "jp_gift_newbi_king"
+      amount: 2
   - id: "luckypunch6"
     name: "luckypunch"
-    order: 5
+    order: 6
     start_time: "2022-10-06 00:00:00 (GMT+0900)"
     end_time: "2022-10-09 23:59:59 (GMT+0900)"
     comment: "stage"
     reward:
       type: 1
       gift_id: "jp_gift_placequeen"
+      amount: 15
+      valid_time: 20160
+    condition:
+      type: 1
+      gift_id: "jp_gif_random_collision_fall"
       amount: 10
+  - id: "luckypunch7"
+    name: "luckypunch"
+    order: 6
+    start_time: "2022-10-06 00:00:00 (GMT+0900)"
+    end_time: "2022-10-09 23:59:59 (GMT+0900)"
+    comment: "stage"
+    reward:
+      type: 1
+      gift_id: "jp_gift_placequeen"
+      amount: 30
       valid_time: 20160
     condition:
       type: 1
       gift_id: "jp_gif_random_anim_fall"
-      amount: 10
+      amount: 5
