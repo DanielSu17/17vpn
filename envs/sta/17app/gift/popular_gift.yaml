@@ -1,0 +1,12 @@
+# boardTTLDay control popular gifts' expire time, and it must larger than durationDay,
+#   otherwise it will be set to durationDay + 1.
+# durationDay means should count in boards created from today to (today - durationDay).
+# topRange means get top N popular gifts.
+# All values must be positive. If any parsing error happens, default setting will be applied.
+# default:
+#    boardTTLDay: 5
+#    durationDay: 3
+#    topRange: 100
+boardTTLDay: 5
+durationDay: 3
+topRange: 100
