@@ -21,7 +21,6 @@ Each region can have its own list of locations.
 | `endTime`           | `string`        | "2022-06-25T12:00:00+08:00"            | When the survey should stop at GMT+8. Formatting is the same as `startTime`                                                                                                                                                                                                                           |
 | `displayFrequency`  | `int` | 2592000                                | A length of time in Seconds. How much time should pass before showing a new Main Question and a new Follow Question for the defined `surveyID` (See: `survey.yaml`). Note: A month has 2592000 seconds.                                                                                               |
 | `displayDuration`   | `int` | 648000                                 | A length of time in Seconds. How many seconds between survey display runs. Note: 648000 = 2592000 (a month of seconds)/4 = a week                                                                                                                                                                     |
-| `userPercentage`    | `int` | 10                                     | A percentage represented as number between 0 and 100. A value of 10 means that 10% of users will be presented the survey if they are within the `displayDuration` window of an active survey run. This field will be deprecated after the new logic applied with `displayGroupCount`.                 |
 | `displayGroupCount` | `int` | 10                                     | A number to set how many groups the users separated. A value of 10 means that users will be separated into 10 groups and only the user with the display group matched the current display group will be presented the survey if they are within the `displayDuration` window of an active survey run. |
 
 
@@ -35,7 +34,7 @@ hotpagev3_slot1:
   endTime: "2022-06-25T12:00:00+08:00"
   displayFrequency: 1296000   # Time in Seconds. 2592000 = 1 month, so 2592000/2 = 2 weeks = Refresh the survey in 2 weeks
   displayDuration: 648000     # Time in Seconds. 2592000 = 1 month, so 2592000/4 = 1 week = Show the survey for the first week
-  userPercentage: 100         # Show the survey to 100% of users for the displayDuration period, a value we used for testing    
+  displayGroupCount: 1        # Separate users to only 1 group = Show the survey to all users, a value we used for testing
 
 my_other_location:
   surveyID: "CSAT-20220115"                             # A particular survey can be used in more than one location...
@@ -45,13 +44,15 @@ my_other_location:
   endTime: "2022-06-25T12:00:00+08:00"
   displayFrequency: 2592000   # Seconds. 2592000 = 1 month = Refresh the survey in 1 month
   displayDuration: 648000     # Seconds. 2592000/4 = 1 week = Show the survey for the first
-  userPercentage: 10          # Show the survey to 10% of users for the displayDuration period
+  displayGroupCount: 10       # Separate users to 10 groups = Show the survey to 10% of users for the displayFrequency period
 ```
 
 ### Timing Diagram
 Here's how the various config values are used to define a location's timing and display behavior.
 
-![How the location config defines timing behavior](https://cdn.17app.co/7bef450a-7535-4da2-9885-ff2ca9dccefd.png)
+![How the location config defines timing behavior](./csat_display_mechanism.png)
+
+See more detail: [CSAT Display Group Mechanism_2022.10.07](https://docs.google.com/presentation/d/1tipssVXlfDZQiFv37dE1Fd7K1PFBU60KjwJvSeLa524/edit#slide=id.p)
 
 ### Github Path
 envs/sta/17app/survey/locations.yaml
