@@ -67,7 +67,30 @@ eventTitles:
     # regions: ["TW","JP"]
 
 
-
+  - id: "2209-SEAHK-歌喉戰獲勝隊伍獎勵"
+    badgeIconURL: "https://cdn.17app.co/593b44f5-c938-4c0b-8808-d7ac08d48fd7.png"
+    badgeGrayoutIconURL: "https://cdn.17app.co/67c174dd-8d88-4384-a8e2-90015f8d8095.png"
+    frameIconURL: "https://cdn.17app.co/d6426f4f-d5ea-4113-9b9b-b6018739b7a0.png"
+    frameGrayoutIconURL: "https://cdn.17app.co/8c459e45-4dcd-449a-a11a-2252d51f181e.png"
+    nameToken: 
+      key: "202209_17歌喉戰冠軍隊伍"
+    descriptionToken:
+      key: "202209_17歌喉戰冠軍隊伍_description"
+    backgroundType: 1
+  # if ctaEventID not set, user will not see call to action to event page
+    ctaEventID: 00000
+    userIDs:
+      - 63cf8643-53d3-4fc6-b3e3-c7cb73d45cf3
+  # EventTimeRange is when user sees description of event
+    eventTimeRange:
+      startTime: 2022-10-11 18:00:00 (GMT+0800)
+      endTime: 2022-10-25 18:00:00 (GMT+0800)
+  # TitleTimeRange means when above userIDs can start using their event titles
+    titleTimeRange:
+      startTime: 2022-10-11 18:00:00 (GMT+0800)
+      endTime: 2099-10-25 18:00:00 (GMT+0800)
+    regionMode: include
+    regions: ["HK","SG","MY"]
 
   - id: "event_title_1"
     badgeIconURL: "https://cdn.17app.co/e9ab6153-5658-41b2-ab30-a8b1d7c4c228.png"
