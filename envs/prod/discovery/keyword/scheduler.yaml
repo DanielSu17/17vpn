@@ -1,0 +1,7 @@
+configs:
+  - cronSpec: "0 * * * *"
+    taskType: "keyword:calculateScore"
+    retry: 3
+  - cronSpec: "0 0 * * *"
+    taskType: "keyword:balanceScore"
+    retry: 3
