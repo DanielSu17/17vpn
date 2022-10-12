@@ -4,236 +4,776 @@
 # - labelID: mapping for labels table id
    
 labelInfos:
+
+  - id: "welcomenewfans" #歡迎新人
+    label:
+      key: "streamer_label_welcomenewfans_subtab"
+    iconURL: " "
+    isHide: true
+    order: 510
+
+  - id: "HelloKitty" #Hello Kitty Unboxing
+    label:
+      key: "event_unboxing_Hello_Kitty"
+    iconURL: " "
+    isHide: true
+    order: 509
+
+  - id: "market" #直播商城
+    label:
+      key: "streamer_label_market"
+    iconURL: " "
+    isHide: true
+    order: 508
+
+  - id: "2112_supersonic" # SUPERSONIC 2021, 17LIVE PARK STAGE on SUPERSONIC
+    type: 1
+    labelID: 
+    label: {key: 17LIVE PARK STAGE on SUPERSONIC}
+    featured: true
+    order: 1
+    iconURL: "h"
+    isHide: true
+
+  # - id: "tw_ok_challenge" #反正我都OK
+  #  type: 3
+  #  label:
+  #    key: "label_tw_ok_challenge"
+  #  iconURL: " "
+  #  isHide: true
+  #  order: 507
+  #  featured: true
+  - id: "Rainbow_Pride_Day" #彩虹主播驕傲開播！
+    type: 1
+    label:
+      key: "streamer_label_highlight_rainbowpride"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+    genreLiveIconURL: "https://cdn.17app.co/b226bba5-2e75-4bff-8359-aa0c2bfd31e9.png"
+    isHide: true
+    order: 507
+
+  - id: "Idol_Groups" #偶像團體陪你回味
+    type: 1
+    label:
+      key: "streamer_label_highlight_idolgroups"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+    genreLiveIconURL: "https://cdn.17app.co/b226bba5-2e75-4bff-8359-aa0c2bfd31e9.png"
+    isHide: true
+    order: 506
+
+  - id: "Halloween_Costume_Party" #萬聖變裝暖身派對
+    type: 1
+    label:
+      key: "streamer_label_highlight_HalloweenCostumeParty"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+    genreLiveIconURL: "https://cdn.17app.co/b226bba5-2e75-4bff-8359-aa0c2bfd31e9.png"
+    isHide: true
+    order: 505
+
+  - id: "Dancer" #舞蹈達人
+    type: 1
+    label:
+      key: "streamer_label_highlight_dancer"
+    iconURL: "https://cdn.17app.co/b618d81c-0dd1-4b54-b022-a8418557e16b.png"
+    genreLiveIconURL: "https://cdn.17app.co/ca94e9e4-c2e8-497f-a536-926d6f9dce56.png"
+    isHide: false
+    order: 504
+    labelID: 469
+
+  - id: "visual_artists" #繪畫達人
+    type: 3
+    label:
+      key: "streamer_label_highlight_visual_artists"
+    iconURL: "https://cdn.17app.co/15418ce0-7a08-449b-a742-fe416325ecaa.png"
+    genreLiveIconURL: "https://cdn.17app.co/c5f6d064-6c77-49c1-b18b-dc01d3a306ea.png"
+    labelID: 110
+    isHide: false
+    order: 503
+
+  - id: "DJ" #DJ
+    type: 1
+    label:
+      key: "streamer_label_highlight_dj"
+    iconURL: "https://cdn.17app.co/f8a9d45d-5a51-48e6-b3c5-ef44287f508f.png"
+    labelID: 471
+    isHide: false
+    order: 502
+
+  - id: "loveislove" #愛最大X彩虹之夜
+    type: 1
+    label:
+      key: "streamer_label_highlight_loveislove"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+    genreLiveIconURL: "https://cdn.17app.co/b226bba5-2e75-4bff-8359-aa0c2bfd31e9.png"
+    isHide: true
+    order: 501
+
+  - id: "romantic_songs" # 每月14情人歌曲
+    type: 1
+    label:
+      key: "streamer_label_highlight_romanticsongs"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+    genreLiveIconURL: "https://cdn.17app.co/b226bba5-2e75-4bff-8359-aa0c2bfd31e9.png"
+    isHide: true
+    order: 500
+
+  - id: "goldenmelodyawards" #致敬金曲獎神曲
+    type: 1
+    label:
+      key: "streamer_label_highlight_goldenmelody"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+    genreLiveIconURL: "https://cdn.17app.co/b226bba5-2e75-4bff-8359-aa0c2bfd31e9.png"
+    isHide: true
+    order: 499
+
+#  - id: "popthisweek" #本週排行流行歌曲
+#    type: 1
+#    label:
+#      key: "streamer_label_highlight_popthisweek"
+#    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+#    genreLiveIconURL: "https://cdn.17app.co/b226bba5-2e75-4bff-8359-aa0c2bfd31e9.png"
+#    isHide: true
+#    order: 498
+
+#  - id: "moonfes" #中秋烤肉必聽舞曲
+#    type: 1
+#    label:
+#      key: "streamer_label_highlight_moonfes"
+#    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+#    genreLiveIconURL: "https://cdn.17app.co/b226bba5-2e75-4bff-8359-aa0c2bfd31e9.png"
+#    isHide: true
+#    order: 497
+
+#  - id: "onesong" #一首金曲上月球
+#    type: 1
+#    label:
+#      key: "streamer_label_highlight_onesong"
+#    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+#    genreLiveIconURL: "https://cdn.17app.co/b226bba5-2e75-4bff-8359-aa0c2bfd31e9.png"
+#    isHide: true
+#    order: 496
+
+#  - id: "rbnight" #R&B 九九
+#    type: 1
+#    label:
+#      key: "streamer_label_highlight_rbnight"
+#    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+#    genreLiveIconURL: "https://cdn.17app.co/b226bba5-2e75-4bff-8359-aa0c2bfd31e9.png"
+#    isHide: true
+#    order: 495
+
+#  - id: "animalnight" #萬獸派對動物之夜
+#    type: 1
+#    label:
+#      key: "streamer_label_highlight_animalnight"
+#    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+#    genreLiveIconURL: "https://cdn.17app.co/b226bba5-2e75-4bff-8359-aa0c2bfd31e9.png"
+#    isHide: true
+#    order: 494
+
+#  - id: "maydaynight" #致敬五月天
+#    type: 1
+#    label:
+#      key: "streamer_label_highlight_maydaynight"
+#    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+#    genreLiveIconURL: "https://cdn.17app.co/b226bba5-2e75-4bff-8359-aa0c2bfd31e9.png"
+#    isHide: true
+#    order: 493
+
+#  - id: "jaychounight" #周杰倫經典情歌夜
+#    type: 1
+#    label:
+#      key: "streamer_label_highlight_jaychounight"
+#    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+#    genreLiveIconURL: "https://cdn.17app.co/b226bba5-2e75-4bff-8359-aa0c2bfd31e9.png"
+#    isHide: true
+#    order: 492
+
+#  - id: "edmparty" #舞動！電音派對！
+#    type: 1
+#    label:
+#      key: "streamer_label_highlight_edmparty"
+#    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+#    genreLiveIconURL: "https://cdn.17app.co/b226bba5-2e75-4bff-8359-aa0c2bfd31e9.png"
+#    isHide: true
+#    order: 491
+
+#  - id: "chinesesong" #聽膩中文歌了嗎
+#    type: 1
+#    label:
+#      key: "streamer_label_highlight_chinesesong"
+#    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+#    genreLiveIconURL: "https://cdn.17app.co/b226bba5-2e75-4bff-8359-aa0c2bfd31e9.png"
+#    isHide: true
+#    order: 490
+
+  - id: "dj_night_out" # dj
+    type: 1
+    label:
+      key: "streamer_label_dj_night_out"
+    iconURL: " "
+    isHide: true
+    order: 200
+  - id: "tw_t_music" # T_音樂
+    type: 1
+    labelID: 439 
+    label:
+      key: "streamer_label_music"
+    iconURL: " "
+    isHide: true
+    order: 200
+  - id: "tw_t_game" # T_遊戲
+    type: 3
+    labelID: 0
+    label:
+      key: "streamer_label_game"
+    iconURL: "https://assets-17app.akamaized.net/e8f5b958-9962-4ca6-92b9-67ee7004330f.png"
+    genreLiveIconURL: "https://cdn.17app.co/191c42d7-5d02-4e55-b37f-03db7f36c69a.png"
+    order: 999
+  - id: "tw_t_sport" #  T_運動
+    type: 3
+    labelID: 441
+    label:
+      key: "streamer_label_sport"
+    iconURL: " "
+    isHide: true
+    order: 203
+  - id: "tw_t_chat" # T_聊天
+    type: 2
+    labelID: 438
+    label:
+      key: "streamer_label_chat"
+    iconURL: " "
+    isHide: true
+    order: 202
+  - id: "tw_music" # onboarding2020Q2 音樂
+    type: 1
+    labelID: 432 
+    label:
+      key: "streamer_label_music"
+    iconURL: " "
+    isHide: true
+    order: 200
+  - id: "tw_fashion" # onboarding2020Q2 時尚
+    type: 3
+    labelID: 431
+    label:
+      key: "streamer_label_fashion"
+    iconURL: " "
+    isHide: true
+    order: 201
+  - id: "tw_chat" # onboarding2020Q2 聊天
+    type: 2
+    labelID: 428
+    label:
+      key: "streamer_label_chat"
+    iconURL: " "
+    isHide: true
+    order: 202
+  - id: "tw_sport" # onboarding2020Q2 運動
+    type: 3
+    labelID: 456
+    label:
+      key: "streamer_label_sport"
+    iconURL: " "
+    isHide: true
+    order: 203
+  - id: "tw_game" # onboarding2020Q2 遊戲, 對應遊戲玩家
+    type: 3
+    labelID: 453 
+    label:
+      key: "streamer_label_game"
+    iconURL: "https://assets-17app.akamaized.net/e8f5b958-9962-4ca6-92b9-67ee7004330f.png"
+    genreLiveIconURL: "https://cdn.17app.co/191c42d7-5d02-4e55-b37f-03db7f36c69a.png"
+    isHide: false
+    order: 204
+  - id: "vliver" #T_虛擬主播
+    type: 2
+    labelID: 446
+    label:
+      key: "virtual_streamer_title"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    genreLiveIconURL: "https://cdn.17app.co/035e6ed7-b0a6-4cdb-b1c2-c4662439b8dd.png"
+    
+  - id: "new_streamer" # 新手主播簽到！
+    type: 1
+    label:
+      key: "streamer_label_new_streamer"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    genreLiveIconURL: "https://cdn.17app.co/035e6ed7-b0a6-4cdb-b1c2-c4662439b8dd.png"
+    isHide: true
+    order: 1
+  - id: "taiwanese_speaking_streamer" # 台語歌王歌后到！
+    type: 1
+    label:
+      key: "streamer_label_taiwanese_speaking_streamer"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    genreLiveIconURL: "https://cdn.17app.co/035e6ed7-b0a6-4cdb-b1c2-c4662439b8dd.png"
+    isHide: true
+    order: 1
   - id: "famous_streamer" # 人氣主播
     type: 1
     label:
       key: "streamer_label_famous_streamer"
     iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
-#  - id: "17tv" # 17看節目
-#    type: 2
-#    label:
-#      key: "streamer_label_17tv"
-#    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
-  - id: "acoustic" # 彈唱歌手
-    type: 1
-    label:
-      key: "streamer_label_acoustic"
-    iconURL: "https://assets-17app.akamaized.net/17f615f4-5883-42b7-9204-d5761cebc9b2.png"
-    labelID: 16
-    order: 70
-    isHide: true
-  - id: "player" # 演奏達人
-    type: 1
-    label:
-      key: "streamer_label_player"
-    iconURL: "https://assets-17app.akamaized.net/7ffb7490-5294-4bf6-8826-ae60c55d9154.png"
-    labelID: 106
-    order: 80
-    isHide: true
+    genreLiveIconURL: "https://cdn.17app.co/035e6ed7-b0a6-4cdb-b1c2-c4662439b8dd.png"
+    order: 1
+
   - id: "singer" # 實力歌手
     type: 1
     label:
       key: "streamer_label_singer"
-    iconURL: "https://assets-17app.akamaized.net/730ee104-430c-4fd4-ad4c-df0572d14149.png"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+    genreLiveIconURL: "https://cdn.17app.co/b226bba5-2e75-4bff-8359-aa0c2bfd31e9.png"
     labelID: 107
-    order: 60
+    order: 998
+  - id: "pundit" # 時事評論
+    type: 2
+    label:
+      key: "streamer_label_pundit"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    genreLiveIconURL: "https://cdn.17app.co/035e6ed7-b0a6-4cdb-b1c2-c4662439b8dd.png"
+    labelID: 108
+    order: 110
+  - id: "politics" # 政治
+    type: 2
+    label:
+      key: "streamer_label_politics"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    genreLiveIconURL: "https://cdn.17app.co/035e6ed7-b0a6-4cdb-b1c2-c4662439b8dd.png"
+    labelID: 
+    order: 110
+  - id: "show" # 熱門節目
+    type: 2
+    label:
+      key: "streamer_label_show"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    genreLiveIconURL: "https://cdn.17app.co/035e6ed7-b0a6-4cdb-b1c2-c4662439b8dd.png"
+    order: 120
+  - id: "trivia" # 答題拿獎金
+    type: 2
+    label:
+      key: "streamer_label_trivia"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    genreLiveIconURL: "https://cdn.17app.co/035e6ed7-b0a6-4cdb-b1c2-c4662439b8dd.png"
+    order: 121
     isHide: true
+  - id: "tw_t_fortune_teller" # T_命理
+    type: 2
+    label:
+      key: "命理"
+    iconURL: "https://assets-17app.akamaized.net/7d40b28d-5d6b-4332-b8d7-5d6f088837e4.png"
+    genreLiveIconURL: "https://cdn.17app.co/bed4f5b3-bca1-475f-8b3b-3ae7054addb2.png"
+    labelID: 442
+    isHide: false
+  - id: "tw_t_others" # T_其他未分類
+    type: 2
+    label:
+      key: "其他未分類"
+    iconURL: "https://assets-17app.akamaized.net/7d40b28d-5d6b-4332-b8d7-5d6f088837e4.png"
+    genreLiveIconURL: "https://cdn.17app.co/bed4f5b3-bca1-475f-8b3b-3ae7054addb2.png"
+    labelID: 448
+    isHide: true
+  - id: "fortune_teller" # 命理小舖
+    type: 2
+    label:
+      key: "streamer_label_twfortune_teller"
+    iconURL: "https://assets-17app.akamaized.net/7d40b28d-5d6b-4332-b8d7-5d6f088837e4.png"
+    genreLiveIconURL: "https://cdn.17app.co/bed4f5b3-bca1-475f-8b3b-3ae7054addb2.png"
+    labelID: 452
+    order: 
   - id: "campus" # 青春校園
     type: 2
     label:
       key: "streamer_label_campus"
     iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
-    order: 2
-    isHide: true
-  - id: "pundit" # 政治名嘴
+    genreLiveIconURL: "https://cdn.17app.co/035e6ed7-b0a6-4cdb-b1c2-c4662439b8dd.png"
+    order: 140
+  - id: "campus_shu" # 世新17上課啦
     type: 2
     label:
-      key: "streamer_label_pundit"
-    iconURL: "https://assets-17app.akamaized.net/2afd57a8-aa73-4102-82fb-bb7e133c1432.png"
-    labelID: 11
-    order: 100
-    isHide: false
-  - id: "street_artist" # 街頭藝人
-    type: 3
-    label:
-      key: "streamer_label_street_artist"
-    iconURL: "https://assets-17app.akamaized.net/0b888fc8-9d1f-4e05-8393-e1b946b554d4.png"
-    featured: true
-    labelID: 52
-    order: 90
-    isHide: true
-  - id: "model" # 模特兒
-    type: 3
-    label:
-      key: "streamer_label_model"
-    iconURL: "https://assets-17app.akamaized.net/c42127e4-db4f-4e98-938d-05f3afcb8b82.png"
-    featured: true
-    labelID: 103
-    order: 50
-    isHide: true
-  - id: "dj"
-    type: 1
-    label:
-      key: "streamer_label_dj"
-    iconURL: "https://assets-17app.akamaized.net/1cc12ae2-31ef-4fac-88b7-542baf881995.png"
-    labelID: 85
-    order: 40
-    isHide: true
-  - id: "cheerleader" # 啦啦隊
-    type: 3
-    label:
-      key: "streamer_label_cheerleader"
-    iconURL: "https://assets-17app.akamaized.net/ef100b65-96bc-45e4-8f61-d91fd979b4fa.png"
-    labelID: 80
-    order: 30
-    isHide: true
-  - id: "show" # 熱播節目
-    type: 2
-    label:
-      key: "tab_hot_2019q4_program"
-    iconURL: "https://assets-17app.akamaized.net/2afd57a8-aa73-4102-82fb-bb7e133c1432.png"
-    labelID: 0
-    order: 30
-    isHide: false
-  - id: "jp_freetalk" # 雑談
-    labelID: 20
-    label: {key: streamer_jp_label_freetalk}
-    order: 8
-    iconURL: "h"
-    isHide: true
-  - id: "jp_music" # 音樂
-    labelID: 13
-    label: {key: streamer_jp_label_music}
-    order: 7
-    iconURL: "h"
-    isHide: true
-  - id: "jp_game" # ゲーム,遊戲
-    labelID: 26
-    label: {key: streamer_jp_label_game}
-    order: 6
-    iconURL: "h"
-    isHide: true
-  - id: "jp_vliver" # Vライバー,V-Liver
-    labelID: 222
-    label: {key: streamer_jp_label_vliver}
-    order: 5
-    iconURL: "h"
-    isHide: true
-  - id: "jp_performer" # パフォーマー, 表演
-    labelID: 19
-    label: {key: streamer_jp_label_performer}
-    order: 4
-    iconURL: "h"
-    isHide: true
-  - id: "jp_hobby" # ホビー,嗜好
-    labelID: 17
-    label: {key: streamer_jp_label_hobby}
-    order: 3
-    iconURL: "h"
-    isHide: true
-  - id: "jp_fashion" # ファッション,時尚
-    labelID: 30
-    label: {key: streamer_jp_label_fashion}
-    order: 2
-    iconURL: "h"
-    isHide: true
-  - id: "jp_variety" # バラエティ,綜藝
-    labelID: 18
-    label: {key: streamer_jp_label_variety}
-    order: 1
-    iconURL: "h"
-    isHide: true
-  - id: "new_streamer_event" # Welcome Newbies to LIVIT!!- Event
-    type: 2
-    label:
-      key: "us_streamer_label_event_newstreamer"
+      key: "streamer_label_campus_shu"
     iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
-    isHide: false
-    order: 1
-  - id: "romantic_songs" # 每月14日情人系歌曲
+    genreLiveIconURL: "https://cdn.17app.co/035e6ed7-b0a6-4cdb-b1c2-c4662439b8dd.png"
+    order: 141
+  - id: "player" # 演奏達人
     type: 1
     label:
-      key: "streamer_label_highlight_romanticsongs"
-    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
-    isHide: true
-    order: 200
-  - id: "tutor" # 民辦教師
+      key: "streamer_label_player"
+    iconURL: "https://assets-17app.akamaized.net/517c138d-54d9-4713-a931-06c9af7e53b9.png"
+    genreLiveIconURL: "https://cdn.17app.co/79d3f5b2-16e9-4eb4-bbf8-497a856ba458.png"
+    labelID: 106
+    order: 997
+  - id: "acoustic" # 彈唱歌手
+    type: 1
+    label:
+      key: "streamer_label_acoustic"
+    iconURL: "https://assets-17app.akamaized.net/5d8e75a0-37a7-472b-a8b5-dd8aef279e0c.png"
+    genreLiveIconURL: "https://cdn.17app.co/f52ffa50-f16e-49fb-aad9-529590f00294.png"
+    labelID: 105
+    order: 996
+  - id: "online_course" # 線上課程
     type: 3
     label:
       key: "streamer_label_tutor"
-    iconURL: "https://cdn.17app.co/a22a6090-3dc8-4743-90c7-d6ad12831795.png"
-    isHide: false
-    order: 200
+    iconURL: "https://cdn.17app.co/d14af519-2bba-4efc-a5d3-e1144ebe680b.png"
+    genreLiveIconURL: "https://cdn.17app.co/672942bc-1097-4390-933a-7af945675f06.png"
+    order: 1000
   - id: "stayathome" # 全民開播
     type: 3
     label:
       key: "streamer_label_stay_at_home_subtab"
     iconURL: "https://cdn.17app.co/d14af519-2bba-4efc-a5d3-e1144ebe680b.png"
+    genreLiveIconURL: "https://cdn.17app.co/672942bc-1097-4390-933a-7af945675f06.png"
     order: 1001
-    isHide: false
-  - id: "tw_t_music" # music
+    isHide: true
+  - id: "street_artist" # 街頭藝人
     type: 3
     label:
-      key: "streamer_label_music"
-    iconURL: "https://cdn.17app.co/d14af519-2bba-4efc-a5d3-e1144ebe680b.png"
-    order: 1002
+      key: "streamer_label_street_artist"
+    iconURL: "https://assets-17app.akamaized.net/0b888fc8-9d1f-4e05-8393-e1b946b554d4.png"
+    genreLiveIconURL: "https://cdn.17app.co/a51caa6d-2eb9-4f1d-a80b-d7f37b2d3412.png"
+    featured: true
+    order: 70
+  - id: "model" # 模特兒
+    type: 3
+    label:
+      key: "streamer_label_model"
+    iconURL: "https://assets-17app.akamaized.net/c42127e4-db4f-4e98-938d-05f3afcb8b82.png"
+    genreLiveIconURL: "https://cdn.17app.co/2ef89b57-cfb3-466a-86a2-ec9735cb5477.png"
+    featured: true
+    order: 20
+    labelID: 103
     isHide: false
+  - id: "dj"
+    type: 1
+    label:
+      key: "streamer_label_dj"
+    iconURL: "https://cdn.17app.co/f8a9d45d-5a51-48e6-b3c5-ef44287f508f.png"
+    genreLiveIconURL: "https://cdn.17app.co/70bfd275-3755-4ab8-9408-0a5e9876eb20.png"
+    order: 10
+    labelID: 85
+    isHide: false
+  - id: "cheerleader" # 啦啦隊
+    type: 3
+    label:
+      key: "streamer_label_cheerleader"
+    iconURL: "https://assets-17app.akamaized.net/ef100b65-96bc-45e4-8f61-d91fd979b4fa.png"
+    genreLiveIconURL: "https://cdn.17app.co/763bd07e-e4c5-4617-bc00-bdb11b0c251a.png"
+    order: 50
+    labelID: 80
+    isHide: false
+  - id: "the_voice_of_17" # 好聲音
+    type: 1
+    label:
+      key: "streamer_the_voice_of_17"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"  
+    genreLiveIconURL: "https://cdn.17app.co/b226bba5-2e75-4bff-8359-aa0c2bfd31e9.png"  
+    featured: true
+    isHide: true
+    labelID: 253
+    order: 5
+  - id: "hiphop" # 嗆辣嘻哈
+    type: 1
+    label:
+      key: "streamer_label_hiphop"
+    iconURL: "https://cdn.17app.co/f8a9d45d-5a51-48e6-b3c5-ef44287f508f.png"
+    genreLiveIconURL: "https://cdn.17app.co/70bfd275-3755-4ab8-9408-0a5e9876eb20.png"
+    labelID: 289
+    order: 150
+  - id: "super_star" # 大明星
+    type: 2
+    label:
+      key: "streamer_label_superstar"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    genreLiveIconURL: "https://cdn.17app.co/035e6ed7-b0a6-4cdb-b1c2-c4662439b8dd.png"
+    order: 180
+  - id: "music_producer" # 音樂製作人
+    type: 1
+    label:
+      key: "streamer_label_musicproducer"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+    genreLiveIconURL: "https://cdn.17app.co/b226bba5-2e75-4bff-8359-aa0c2bfd31e9.png"
+    order: 190
+  - id: "comedian" # 搞笑達人
+    type: 2
+    label:
+      key: "streamer_label_comedian"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    genreLiveIconURL: "https://cdn.17app.co/035e6ed7-b0a6-4cdb-b1c2-c4662439b8dd.png"
+    labelID: 116
+    order: 30
+    isHide: false
+  - id: "famous_artist" # 名人
+    type: 2
+    label:
+      key: "streamer_label_famous_artist"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    genreLiveIconURL: "https://cdn.17app.co/035e6ed7-b0a6-4cdb-b1c2-c4662439b8dd.png"
+    labelID: 445 #T_名人
+    order: 170
+  - id: "mimic" # 模仿達人
+    type: 2
+    label:
+      key: "streamer_label_mimic"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    genreLiveIconURL: "https://cdn.17app.co/035e6ed7-b0a6-4cdb-b1c2-c4662439b8dd.png"
+    labelID: 291
+    order: 40
+    isHide: false
+  - id: "crazy_zoo" # 荒唐動物園
+    type: 3
+    label:
+      key: "streamer_crazy_zoo"
+    iconURL: "https://assets-17app.akamaized.net/e8f5b958-9962-4ca6-92b9-67ee7004330f.png"
+    genreLiveIconURL: "https://cdn.17app.co/191c42d7-5d02-4e55-b37f-03db7f36c69a.png"
+    featured: true
+    isHide: true
+    order: 1    
+  - id: "handsup" # 購物頻道
+    type: 3
+    label:
+      key: "streamer_handsup"
+    iconURL: "https://assets-17app.akamaized.net/e8f5b958-9962-4ca6-92b9-67ee7004330f.png"
+    genreLiveIconURL: "https://cdn.17app.co/191c42d7-5d02-4e55-b37f-03db7f36c69a.png"
+    isHide: true
+    order: 1 
+  - id: "smartlife" #智慧生活
+    type: 3
+    label:
+      key: "streamer_label_smartlife"
+    iconURL: "https://assets-17app.akamaized.net/e8f5b958-9962-4ca6-92b9-67ee7004330f.png"
+    genreLiveIconURL: "https://cdn.17app.co/191c42d7-5d02-4e55-b37f-03db7f36c69a.png"
+    order: 2000
+    isHide: true
+    labelID: 447 #T_生活
+  #- id: "newbie" # 超新星
+  #  type: 3
+  #  label:
+  #    key: "tw_newbie"
+  #  iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+  #  featured: true
+  #  order: 97
+  #  isHide: true
+  - id: "visualartists" # 繪畫
+    type: 3
+    label:
+      key: "streamer_label_visual_artists"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+    genreLiveIconURL: "https://cdn.17app.co/b226bba5-2e75-4bff-8359-aa0c2bfd31e9.png"
+    featured: true
+    order: 95
+    isHide: false
+  - id: "cooking" # 廚藝
+    type: 3
+    label:
+      key: "streamer_label_cooking"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+    genreLiveIconURL: "https://cdn.17app.co/b226bba5-2e75-4bff-8359-aa0c2bfd31e9.png"
+    featured: true
+    order: 96
+    isHide: true
+  - id: "sing_paradise" # 夢想Sing樂園
+    type: 1
+    label:
+      key: "streamer_label_sing_paradise"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+    genreLiveIconURL: "https://cdn.17app.co/b226bba5-2e75-4bff-8359-aa0c2bfd31e9.png"
+    featured: true
+    order: 93
+    isHide: true
+  - id: "somesing_fantasy" # 舍我盃
+    type: 1
+    label:
+      key: "streamer_label_somesing_fantasy"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+    genreLiveIconURL: "https://cdn.17app.co/b226bba5-2e75-4bff-8359-aa0c2bfd31e9.png"
+    featured: true
+    order: 94
+    isHide: true
 
+  - id: "17_newyear_2021" # 17來拜年
+    type: 1
+    label:
+      key: "streamer_label_17_newyear"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+    genreLiveIconURL: "https://cdn.17app.co/b226bba5-2e75-4bff-8359-aa0c2bfd31e9.png"
+    featured: false
+    order: 91
+    isHide: true
+
+  - id: "formosa_tv" #民視鳳凰星
+    type: 2
+    label:
+      key: "streamer_label_formosa_tv"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    genreLiveIconURL: "https://cdn.17app.co/035e6ed7-b0a6-4cdb-b1c2-c4662439b8dd.png"
+    order: 2001
+    labelID: 458
+
+  - id: "foreigner" # 外國人
+    type: 2
+    label:
+      key: "streamer_label_foreigner"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    genreLiveIconURL: "https://cdn.17app.co/035e6ed7-b0a6-4cdb-b1c2-c4662439b8dd.png"
+    order: 2001
+    isHide: true
+  - id: "exclusive" # 付費解鎖, 獨家內容
+    type: 2
+    label:
+      key: "streamer_label_exclusive"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    genreLiveIconURL: "https://cdn.17app.co/035e6ed7-b0a6-4cdb-b1c2-c4662439b8dd.png"
+    order: 2001
+    isHide: true    
+
+#  - id: "trendy_liver" # 潮人物開播不斷線
+#    type: 2
+#    label:
+#      key: "streamer_label_trendy_liver"
+#    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+#    genreLiveIconURL: "https://cdn.17app.co/035e6ed7-b0a6-4cdb-b1c2-c4662439b8dd.png"
+#    isHide: true
+
+#  - id: "whitedaywithyou" # 17過白色情人節
+#    type: 2
+#    label:
+#      key: "streamer_label_highlight_whitedaywithyou"
+#    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+#    genreLiveIconURL: "https://cdn.17app.co/035e6ed7-b0a6-4cdb-b1c2-c4662439b8dd.png"
+#    isHide: false
+
+#  - id: "whitedaygiftforyou" # 情人節禮物教學 
+#    type: 2
+#    label:
+#      key: "streamer_label_highlight_whitedaygiftforyou"
+#    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+#    genreLiveIconURL: "https://cdn.17app.co/035e6ed7-b0a6-4cdb-b1c2-c4662439b8dd.png"
+#    isHide: true     
+
+  
+
+  - id: "travel_expert" # 旅遊達人
+    type: 2
+    label:
+      key: "streamer_label_travel_expert"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    genreLiveIconURL: "https://cdn.17app.co/035e6ed7-b0a6-4cdb-b1c2-c4662439b8dd.png"
+    isHide: true    
+  - id: "famous_teacher" # 補教名師
+    type: 2
+    label:
+      key: "streamer_label_famous_teacher" #key已刪，需要重上
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    genreLiveIconURL: "https://cdn.17app.co/035e6ed7-b0a6-4cdb-b1c2-c4662439b8dd.png"
+    isHide: true    
+  - id: "professional" #職人
+    type: 2
+    label:
+      key: "streamer_label_professional"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    genreLiveIconURL: "https://cdn.17app.co/035e6ed7-b0a6-4cdb-b1c2-c4662439b8dd.png"
+    isHide: true
+    labelID: 443 #T_職人
+  - id: "talent" #才藝
+    type: 1
+    label:
+      key: "streamer_label_talent"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    genreLiveIconURL: "https://cdn.17app.co/035e6ed7-b0a6-4cdb-b1c2-c4662439b8dd.png"
+    isHide: true
+    labelID: 444 #T_才藝
+
+  - id: "Halloween_Party2020" #萬聖變裝主播派對
+    type: 1
+    label:
+      key: "streamer_label_highlight_HalloweenParty"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.pngg"
+    isHide: true
+    order: 1
+#########################
+  - id: "Halloween1" #PO萬聖節變裝活動
+    type: 3
+    label:
+      key: "section_halloweenhk2"
+    iconURL: "h"
+    isHide: true
+    order: 9001
+  - id: "Halloween2" #PO萬聖節變裝活動
+    type: 3
+    label:
+      key: "section_halloweenhk2"
+    iconURL: "h"
+    isHide: true
+    order: 9002
+#########################
+  - id: "Best_Bands" #樂團歌曲之夜
+    type: 1
+    label:
+      key: "streamer_label_highlight_bestbands"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+    genreLiveIconURL: "https://cdn.17app.co/b226bba5-2e75-4bff-8359-aa0c2bfd31e9.png"
+    isHide: true
+    order: 506
 
 typeCheckIOSVersion: 3.57.0
 typeCheckAndroidVersion: 2.3.88
 
 # 探索頁面會出現的label
 exploreLabels:
-#  - 17tv
-#  - halloween_make_party2021
-  - stayathome
-  - new_streamer_event
-  - tutor
-  - famous_streamer
-#  - 17handinhand
-  # - visualartists
-#  - cooking
-  # - somesing_fantasy
-  # - sing_paradise
-  # - tw_ok_challenge
-  # - the_voice_of_17
-  # - dj_night_out
-  #- famous_artist
-  #- formosa_tv
-  #- hiphop
-  # - show
-  # - musicstar
-  # - musicprofessional
-  # - painter
-  # - fortune_teller
-  # - politics
-  # - popularliver
-  #- singer
-  #- player
-  #- acoustic
-  #- campus
-  #- street_artist
-  #- tw_fashion
-  #- tw_chat
-  #- talent
-  #- tw_sport
-  #- smartlife
-
-
+  - acoustic
+  - player
+  - campus
+  - singer
+  - pundit
+  - street_artist
 
 # 時事話題直播列表會出現的label
 topicTabLabels:
-#  - pundit
+  - tw_t_game
 
 # labelWhiteList defines relation between label and user list
 labelWhiteList:
+
+  Halloween1: # PO萬聖節變裝活動
+  - "a6622cc8-4219-4da5-911f-4798d3ddf24b" #kevinmh
+ 
+  Halloween2: # PO萬聖節變裝活動
+  - "a6622cc8-4219-4da5-911f-4798d3ddf24b" #kevinmh
+  
+  
+  tw_t_game:
+    - "77f7fbd5-e895-4f18-b18c-43f2ddca4f58" #debbytest
+    - "a9b23cbe-8960-4f98-988e-90b9f6eeb86e" # erictest2
+    - "9d063e35-5314-4fd2-bcec-06f895a224f0" # melisaY5
+    - "f89d5634-fc94-4f01-a436-57933b59e5f0" # debbytest41
+    - "df2165f7-f451-48db-8155-2327a33029dc" # melisaY3
+    - "6ef087d9-5fb0-4569-ac37-cc08f556422e" # giselelin_02
+    - "277828c0-e0b5-4617-b45c-8078d5b59361" # seanhsu_stag1
+    - "ef9b2c4e-e29a-45b1-bd93-1171e3fca34d" # seanhsu_stag2
+    - "f9f7a056-e36d-4343-bd10-8b82613f6c23" # iris.1
+    - "1350dab1-6d50-4373-a11c-bd0708fff745" # iris.test
+    - "9fdbc3db-d6cc-4657-9159-6c00e0f5fa82" # lulu.sta01
+    - "f5bbd3a1-12d7-4a30-ab11-4f526fa54403" # lulu.sta02
+    - "4db50db1-2891-400b-9897-1141458c709d" # lulu.sta03
+    - "521be823-13f5-4495-b48a-f535f47ecd43" # lulu.sta04
+    - "f698233c-2d55-4369-99eb-ab7a3103dfa4" # iris_jp.test
+
   tw_t_music: # music
     - "567e0b5d-1516-4ce0-b4e8-bec4e756d5ae" #kevinmh
+    - "b83b1a83-1036-4597-bede-536f4279d4f9" # iris.5
+    - "78e6ced0-4fcb-47f5-a676-2d2cf0c647f2" # iris_jp.1
+    - "6f538c10-9e6b-444f-bfcb-9ea561b3325d" # iris_jp.2
+    - "1350dab1-6d50-4373-a11c-bd0708fff745" # iris.test
+    - "a9b23cbe-8960-4f98-988e-90b9f6eeb86e" # erictest2
+    - "f698233c-2d55-4369-99eb-ab7a3103dfa4" # iris_jp.test
     
   stayathome: #全民開播
     - "567e0b5d-1516-4ce0-b4e8-bec4e756d5ae" #kevinmh
-    
+    - "9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba" #kevinmh03
+    - "e5b239ca-1fba-44c5-a64c-d9247ac58638" #carogonewild2
+  
   romantic_songs: # 每月14日情人系歌曲
     - "25f46a01-626a-43db-ab4b-cdbd668f75d8"
     - "e951c142-7524-450e-9d56-1e3da6ddf2da"
@@ -255,8 +795,10 @@ labelWhiteList:
     - "6dad9988-b27c-47a9-96a6-16831d142986"
     - "c57fba7e-38aa-43c1-867e-96e0fb6ae366"
     - "0aa2f43a-0484-4a29-8cc1-a43e6438e1cd"
+    
   new_streamer_event:
     - "00c0bc02-c6df-448c-8385-114288e51d83"    #77_七七
+    
   acoustic: # 彈唱歌手
     - "375fcf50-8168-416e-9fa2-c9702a5ec08a"    # 宋少騫Zustin
     - "558c7736-3677-4b17-8f94-1631a6870422"    # 吳金隆Gino
@@ -278,8 +820,12 @@ labelWhiteList:
     - "a8fec41b-220d-4d98-9912-39222ab87674"    # jenn19
     - "bc6295f3-84bb-4d6e-a46d-bd3f9134a140"    # ericsta1
     - "a9b23cbe-8960-4f98-988e-90b9f6eeb86e"    # erictest2
+    - "01cc5d7c-7ea1-4cd4-84e8-f7a1847e15b4"    # iris.9
+    - "1350dab1-6d50-4373-a11c-bd0708fff745"    # iris.test
+    - "f698233c-2d55-4369-99eb-ab7a3103dfa4"    # iris_jp.test
+
     
-  fortune_teller: 
+  fortune_teller: # 命理小舖
     - "25d8e5a9-94da-43bf-a160-a74856ad5c16"    # zoe_meat
     - "e257e914-5009-48d9-5e8b-3c6da3f2026f"    # lllt.summer
     - "c9692e9a-d6af-4c3b-b2ba-9954f2fb748d"    # momoiscool 
@@ -287,6 +833,7 @@ labelWhiteList:
     - "24c65a0b-2e5e-458a-aa3c-243fca4f2bd7"    # 沒是多喝水
     - "5435ae09-00d6-42a2-9a27-a173013a6eab"    # 多喝水沒事
     - "91ce0188-caed-4fb1-95cb-98e0d84fa5e1"    # 17x華視午間新聞
+    - "4746707f-331e-4b30-ad53-2e2f560806f9"    # iris.10
     
   player: # 演奏達人
     - "5435ae09-00d6-42a2-9a27-a173013a6eab"    # 多喝水沒事
@@ -295,8 +842,12 @@ labelWhiteList:
     - "b1e571ee-fce8-4ed2-add0-39f6a2844955"    # momoisgood 
     - "bc6295f3-84bb-4d6e-a46d-bd3f9134a140"    # ericsta1
     - "a9b23cbe-8960-4f98-988e-90b9f6eeb86e"    # erictest2
+    - "e9083fdc-7ff3-40c8-bad4-4375f86de2ab"    # ray.m031
+    - "b2f7d5ed-7d11-4abb-b6e8-0100902aee36"    # iris.8
+   
     
   singer: # 實力歌手
+    - "7f551340-c765-45f1-b5b8-ba69547884c2"    # iris.7
     - "115851d0-d202-47c5-9079-71d3e7f704f7"    # 亮金金
     - "21280e9c-e07d-4d1b-83b7-e591bc3b1056"    # 我叫易小魚🐟🎤
     - "2755452a-a0ec-4a3f-a83d-6db0634f62ae"    # 胡利基
@@ -315,7 +866,8 @@ labelWhiteList:
     - "179663b1-62a9-46b5-a4c3-ed5be8a670db"    # bellagroupcall5
     - "bc6295f3-84bb-4d6e-a46d-bd3f9134a140"    # ericsta1
     - "a9b23cbe-8960-4f98-988e-90b9f6eeb86e"    # erictest2
-    - "4fcce7f3-77cc-4ead-ad8b-c4eca82c91af"    # jamestw13
+ #  - "7f551340-c765-45f1-b5b8-ba69547884c2"    # iris.7
+    
    
   pundit: # 政治名嘴
     - "25d8e5a9-94da-43bf-a160-a74856ad5c16"    # zoe_meat
@@ -343,12 +895,13 @@ labelWhiteList:
     - "a8fec41b-220d-4d98-9912-39222ab87674"    # jenn19
     - "bc6295f3-84bb-4d6e-a46d-bd3f9134a140"    # ericsta1
     - "a9b23cbe-8960-4f98-988e-90b9f6eeb86e"    # erictest2
+    - "4494be4b-ad89-4e47-aa4a-5e47e66600a8"    # iris.6
 
   cheerleader: # 啦啦隊
     - "8afee182-1b9d-4673-b4c9-bd924f3d092e"    # 0122w8
     - "fa8ad315-b33b-4722-bdfd-ad4b4fc83695"    # 0122w17
     - "b2f9da8f-b2b6-4f06-bd28-6fbda98e4f43"    # qacontractor1 
-    
+    - "5de25692-7126-4e20-bd4a-39f797d17a32"    # iris.2
 
   dj: # DJ
     - "3ea7b40e-03bb-4127-a650-98af06de802c"    # 0122w5
@@ -365,6 +918,7 @@ labelWhiteList:
     - "1ed56903-ae12-4fe5-8aeb-d8feca559599"    # vava02
     - "aa49d1dc-05fc-42b0-9a40-89ef77e0b0df"    # vava3
     - "42231e32-bce5-45b4-af8b-769c22482e51"    # vava03
+    - "b23e82bd-b4d6-412c-bd25-21c92fb65547"    # iris.3
    
   male: # 型男
     - "e257e914-5009-48d9-5e8b-3c6da3f2026f"    # lllt.summer
@@ -400,6 +954,10 @@ labelWhiteList:
     - "3e7eb566-f22d-4674-bf97-85e43a11c27d"    # arwinpk002
     - "bc6295f3-84bb-4d6e-a46d-bd3f9134a140"    # ericsta1
     - "a9b23cbe-8960-4f98-988e-90b9f6eeb86e"    # erictest2
+    - "0f2595ad-e131-4610-a9e5-80ce5764454b"    # ray.m01
+    - "e3eec737-9f67-4720-b526-cf61ad8c36d7"    # ray.m3
+    - "e9083fdc-7ff3-40c8-bad4-4375f86de2ab"    # ray.m031
+   
 
   female: # 正妹
     - "73e8b839-a1ca-4b08-a51d-2b02ffdea153"    # bellayayaya
@@ -439,7 +997,9 @@ labelWhiteList:
     - "64260d37-07a4-4bdd-8f32-65de05ef245c"    # vava.pp05
     - "bc6295f3-84bb-4d6e-a46d-bd3f9134a140"    # ericsta1
     - "a9b23cbe-8960-4f98-988e-90b9f6eeb86e"    # erictest2
-  
+    - "9fdbc3db-d6cc-4657-9159-6c00e0f5fa82"    # lulu.sta01
+    - "f5bbd3a1-12d7-4a30-ab11-4f526fa54403"    # lulu.sta02
+
   
   17tv: #  17看節目
     - d4fa2189-be5b-4351-8dc6-3793b3e79593
@@ -464,6 +1024,43 @@ labelWhiteList:
     - "91ce0188-caed-4fb1-95cb-98e0d84fa5e1"    # 17x華視午間新聞
     - "a8fec41b-220d-4d98-9912-39222ab87674"    # jenn19
     - "2e95de40-7880-422b-7f3b-0af9405e3b4d"    # janet.w02
+    - "f5bbd3a1-12d7-4a30-ab11-4f526fa54403"    # lulu.sta02
 
   tutor: # 民辦教師
-    - "c3dfff9d-b6a5-4732-8ac1-40321b8b67b6"    # erictest2
+    - "a9b23cbe-8960-4f98-988e-90b9f6eeb86e"    # erictest2
+
+  market: #市集
+    - "af000548-997f-4533-b817-9eb2ddf45757" #barton
+    - "26a7d5ef-d231-4493-b7da-39632a2f3525" #ethandai
+
+  Shopping: #購物
+    - "af000548-997f-4533-b817-9eb2ddf45757" #barton
+    - "26a7d5ef-d231-4493-b7da-39632a2f3525" #ethandai
+
+  2112_supersonic:
+    - 46d46576-cd73-4f19-bd5f-1e65e9a62e85 #17經典台
+    - 4dca3762-c9e0-41d3-b26f-5e66e2c56acf #program_account1
+
+  visual_artists: #繪畫
+    - "1350dab1-6d50-4373-a11c-bd0708fff745" # iris.test
+    - "f698233c-2d55-4369-99eb-ab7a3103dfa4" # iris_jp.test
+    - "0bd967a7-143f-4130-9e72-06cbe704ae97" # iris.4
+    
+
+  model:  #模特兒
+    - "b83b1a83-1036-4597-bede-536f4279d4f9" # iris.5
+    - "9fdbc3db-d6cc-4657-9159-6c00e0f5fa82" # lulu.sta01
+    
+  online_course:  #線上課程
+    - "b23e82bd-b4d6-412c-bd25-21c92fb65547" # iris.3
+    - "4db50db1-2891-400b-9897-1141458c709d" # lulu.sta03
+
+  Dancer:  #舞蹈達人
+    - "f9f7a056-e36d-4343-bd10-8b82613f6c23" # iris.1
+    - "521be823-13f5-4495-b48a-f535f47ecd43" # lulu.sta04
+    - "1350dab1-6d50-4373-a11c-bd0708fff745" # iris.test
+
+  tw_t_fortune_teller: #命理
+   
+  tw_t_chat: #聊天
+    - "1350dab1-6d50-4373-a11c-bd0708fff745" # iris.test
