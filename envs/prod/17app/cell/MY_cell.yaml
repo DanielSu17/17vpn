@@ -1,0 +1,126 @@
+# virtual streamer region order
+virtualStreamRegionOrder: ["JP", "TW", "HK", "MY"]
+# position example: <type>_<tab>
+position:
+  # index start from 1
+  # Tab : hot
+  program_hot: []
+  beltBanner_hot: 6
+  carouselBannerHot: 3
+  beltBannerLatest: 4
+  carouselBannerLatest: 1
+
+  # index start from 0
+  banner_tv: [2]
+  banner_clip: [0]
+# this is for setting position priority in hot cell
+priority:
+  - name: 1 # TVSHOW
+  #  - name: 2 # TRIVIA_ON_TV
+  #  - name: 4 # TRIVIA
+  - name: 5 # WEREWOLVES
+#  - name: 3 # TVBANNER
+
+# Expand the cell size to 2x2 if the number of cells less/equal than the number
+enableExpandCellSize: true
+expandCellSizeThreshold: 5
+
+# Fill streams in other region to fit the page limit in hot
+supplyOtherRegionInHot: true
+
+# entrance room setting for cells with CellType_ENTRANCE_ROOM
+# - position >= 1
+# - minRoomsRequired >= 1
+# - start, end support two formats: "06:10:00" or "2019-04-01 08:22:00"
+# - topic: (全民話題 1), (PK 2)
+# - topicTitles: string array
+# - whitelist: userID array
+entranceRooms:
+  - enable: true
+    position: 5
+    minRoomsRequired: 7
+    title: "today_hot_topic_title"
+    description: "today_hot_topic_entrance_room_des_date"
+    caption: "vote_entry_title"
+    vipFrameID: "FRAME_ENTRANCEROOMV2"
+    vipFrameURL: "https://cdn.17app.co/29a31d62-4602-4a57-9d40-4a9fafaacf40.png"
+    iosFrameURL: "https://cdn.17app.co/9042f826-c53d-45ab-87a5-861844ccb0d4.png"
+    iconID: "ICON_ENTRANCEROOM"
+    iconURL: "https://assets-17app.akamaized.net/8fb28053-6a8e-453b-9a65-36d1009b6894.png"
+    start: "00:00:00"
+    end: "23:59:00"
+    topic: 1
+    topicTitles:
+    topics: # deprecate soon
+      1:
+    whitelist:
+      - 64960d5e-1631-4d55-9cd6-66c7ecfb6eef # 黃益中
+      - d62b9dcf-157f-4345-9c75-272f236573e8 # 3q陳柏惟
+      - 6172b2ec-dd28-4884-75fc-5415c85ba241 # astrocodeiris
+      - f72d13f1-59a4-4ac4-8958-2d64c569556f # 黃暐瀚17
+      - f488e6f8-4980-4fb7-9502-f1a4a075e8b8 # 視網膜Retina
+      - d4fa2189-be5b-4351-8dc6-3793b3e79593 # 嘴一波
+
+# labelInfos defines all label related infos including type, label(i18n), iconURL
+# - type: 1(music), 2(politics)
+# - featured: true / false (default)
+labelInfos:
+  - id: "17indemand" # 17 IN DEMAND 人氣旺旺旺!
+    type: 1
+    label:
+      key: "streamer_label_highlight_17demand"
+    iconURL: "https://assets-17app.akamaized.net/5d8e75a0-37a7-472b-a8b5-dd8aef279e0c.png"
+
+  - id: "acoustic" # 彈唱歌手
+    type: 1
+    label:
+      key: "streamer_label_acoustic"
+    iconURL: "https://assets-17app.akamaized.net/5d8e75a0-37a7-472b-a8b5-dd8aef279e0c.png"
+  - id: "player" # 演奏達人
+    type: 1
+    label:
+      key: "streamer_label_player"
+    iconURL: "https://assets-17app.akamaized.net/517c138d-54d9-4713-a931-06c9af7e53b9.png"
+  - id: "singer" # 實力歌手
+    type: 1
+    label:
+      key: "streamer_label_singer"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+  - id: "pundit" # 政治名嘴
+    type: 2
+    label:
+      key: "streamer_label_pundit"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+
+# labelWhiteList defines relation between label and user list
+labelWhiteList:
+  acoustic: # 彈唱歌手
+    - 375fcf50-8168-416e-9fa2-c9702a5ec08a # 宋少騫Zustin
+    - 558c7736-3677-4b17-8f94-1631a6870422 # 吳金隆Gino
+    - 671f4ff1-212a-4e7a-80e9-360103c3ab91 # 趙泓捷
+    - 4a771cdf-1fd6-4fcb-8186-73cc32ff5483 # 鍾鎮宇Justin
+    - 94728e88-feca-4ca9-9062-39e3d2f93467 # 小沙
+  player: # 演奏達人
+  singer: # 實力歌手
+    - 115851d0-d202-47c5-9079-71d3e7f704f7 # 亮金金
+    - 21280e9c-e07d-4d1b-83b7-e591bc3b1056 # 我叫易小魚🐟🎤
+    - 2755452a-a0ec-4a3f-a83d-6db0634f62ae # 胡利基
+    - 604ec832-4884-47d6-beed-cf178cad1caa # 篠崎泫🎤篠崎是姓泫是名
+    - 60602fef-d6ee-4fb6-a38c-1ffd15b16c6f # 張語噥sammy
+    - 83821902-75d0-4c7a-86c4-0cf8590cc7d8 # 張聖子-小露Lucia
+    - c9fafa51-ab41-407f-9bac-6b5c9e201cd5 # 徐凱希cathy
+    - 88f52a35-d951-4beb-822c-ad3d7e8f479b # 🎤鐵肺美金💰
+  pundit: # 政治名嘴
+    - 6172b2ec-dd28-4884-75fc-5415c85ba241 # astrocodeiris
+    - f72d13f1-59a4-4ac4-8958-2d64c569556f # 黃暐瀚17
+    - d62b9dcf-157f-4345-9c75-272f236573e8 # 3q陳柏惟
+    - f488e6f8-4980-4fb7-9502-f1a4a075e8b8 # 視網膜Retina
+    - 64960d5e-1631-4d55-9cd6-66c7ecfb6eef # 黃益中
+    - 799bdb57-9390-46b8-9cc6-0303b68a7cb6 # 羅友志
+    - 5168cc74-3f30-4106-bbf9-5722e6f5101c # 謝龍介
+
+# the setting of the available duration when they complete the first stream as the qualified D0 new streamer; in hour
+qualifiedFirstStreamDuration: 24
+# the setting of the minimum duration for the qualified D0 new streamer; in minute
+firstStreamForMinimumDuration: 10
+
