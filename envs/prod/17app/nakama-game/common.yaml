@@ -1,6 +1,6 @@
 enableIconAnimation: true
 
-# Deprecated: used on the initial version of promotion
+# Deprecated after 2022/10/19, use regionPromotion instead
 promotion:
   enable: true
   enableTimeRange:
@@ -9,7 +9,7 @@ promotion:
   msgI18nKey: "CTA_to_FFGame"
   actionTarget: "fruitfarm"
   regionMode: "include"
-  regions: ["TW", "HK", "MO", "SG", "MY","US","PH"]
+  regions: ["TW", "HK", "MO", "SG", "MY", "US", "PH"]
   versionControl:
     enable: true
     ios: "3.193.0"
@@ -61,6 +61,28 @@ regionPromotion:
       ios: "3.193.0"
       android: "2.108.0"
   MY:
+    enable: true
+    enableTimeRange:
+      startTime: "2022-07-15 15:10:00 (GMT+0800)"
+      endTime: "2022-10-31 23:59:59 (GMT+0800)"
+    msgI18nKey: "CTA_to_FFGame"
+    actionTarget: "fruitfarm"
+    versionControl:
+      enable: true
+      ios: "3.193.0"
+      android: "2.108.0"
+  US:
+    enable: true
+    enableTimeRange:
+      startTime: "2022-07-15 15:10:00 (GMT+0800)"
+      endTime: "2022-10-31 23:59:59 (GMT+0800)"
+    msgI18nKey: "CTA_to_FFGame"
+    actionTarget: "fruitfarm"
+    versionControl:
+      enable: true
+      ios: "3.193.0"
+      android: "2.108.0"
+  PH:
     enable: true
     enableTimeRange:
       startTime: "2022-07-15 15:10:00 (GMT+0800)"
