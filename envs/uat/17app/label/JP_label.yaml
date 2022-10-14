@@ -443,3 +443,217 @@ labelWhiteList:
 
   2201_jp_seijin:
     - b3048bcd-71e1-4805-bcc7-b6b0c37bc20d # davidsta1
+
+# newLabelWhiteList defines relation between label and user list
+# sample example
+# newLabelWhiteList:
+#   acoustic:
+#     - startTime: "2002-05-23 00:00:00 (GMT+0800)" (If you want to set the interval, the start time and end time must be set)
+#       endTime: "2003-12-31 23:59:59 (GMT+0800)" (If one is not set, this list will not take effect)
+#       userList:
+#       - userID0
+#     - userList: (If the start time and end time are not set, it will take effect directly without restriction)
+#       - userID0
+newLabelWhiteList:
+  exclusive:
+
+#  jp_supersonic:
+#    - 8abc9dfd-ece1-42b5-b445-7c0d7d446881 # canadian1
+#    - d0ca48b2-02f0-4d88-ba1f-791749282175
+#    - 9f388fa2-8d16-4d04-a9bc-bf59035b7d68 # canadian2
+#    - 1a8494f2-f45e-4519-9cff-95b60e29ca50
+#    - 608011fd-579b-4e15-b154-3943f952c324 # Qoo_sushi
+#    - 16226683-73a4-4055-a536-d3bb317cb3c7 # 17japan
+#    - 1001c909-355b-47c6-8e46-632bf05a453e # あみゅね
+#    - a3251943-fe02-4425-8f89-573edf423e86 # れい_reichannel	
+#    - 5cd24ae7-481d-40e5-8a53-49b12dac7b78 # MIKI.entertainer
+#    - 25f04237-8bd9-415e-4380-afcf558114bc # kana_.jp
+#    - 119d02a6-3346-41d6-a313-0491a25ee542 # Yin_Ghibli0716
+#    - 9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba # kevinmh03
+
+  jp_talent:
+    - userList:
+      - d5ae4e8f-e379-4aff-aa99-9663f745508b # ホリプロ１
+      - 1b296ea6-64cd-4811-a10b-ed96b3ed0ca9 # ホリプロ２
+      - 7d18450c-47ba-4f7b-bcca-470f5ba447af # ホリプロ3
+      - 3f97ed5b-4ed3-4cb5-9f1a-956b1b9b3eb8 # ホリプロ4
+      - 16f58d3c-d075-4adc-aec0-759fa10e556e # ホリプロ5
+      - ef7d2453-2608-443f-be68-f2e9673f9a0f # ホリプロ6
+      - 243042b8-f0c7-45d2-b05f-574e82085b74 # ホリプロ7
+      - 97fbd73a-0d67-424a-8403-a7f2a2fc6022 # ホリプロ8
+      - 495eb524-50fb-43a9-83d1-f1c974db2e46 # ホリプロ9
+      - 9fae1a71-fe54-46b2-8f77-53b166c10cfd # ホリプロ１0
+
+  jp_chat:
+    - userList:
+      - 8a8a5d48-6297-11ea-bc55-0242ac130003 # baas_e2e_bot_jp
+
+  jp_show:
+    - userList:
+      - ca8f67cd-e4db-40b8-aa0e-a3f45041a429 #チルナイト！
+      - 16537a68-897f-468e-aa36-c6b41b4fb402 #17LiveMusicStudio
+      - 829675b8-9416-4f07-9b72-552924f4afd9 #17クイズ王
+      - 69e1aedd-5f29-40c3-9df6-451d0d894009 #WAROTA
+      - cffc7d41-eb65-4023-b633-02992d36537d #ベストティーチャー
+      - cac4f927-0046-4ad8-be4b-5a9e18be6dcd #トランプコロシアム
+
+
+  jp_pickup:
+    - userList:
+      - 16226683-73a4-4055-a536-d3bb317cb3c7 # 17japan
+      - 1001c909-355b-47c6-8e46-632bf05a453e # あみゅね
+      - a3251943-fe02-4425-8f89-573edf423e86 # れい_reichannel	
+      - 5cd24ae7-481d-40e5-8a53-49b12dac7b78 # MIKI.entertainer
+      - 25f04237-8bd9-415e-4380-afcf558114bc # kana_.jp
+      - 119d02a6-3346-41d6-a313-0491a25ee542 # Yin_Ghibli0716
+
+  jp_recommend:
+    - userList:
+      - 80d31e5a-40a3-40b1-a73e-4a17faea2c8a # みゆう🎀💕💓💗
+      - 127fc2a8-183e-4073-5492-615848a28efb #
+      - 42584c52-bd81-4746-4243-fac9567e2141 #
+      - fe4d32d3-5cf6-423a-87b1-b34d85039a2f #
+      - 811f9556-b97b-4a60-986c-8473df07bbe1 #
+      - 1925119b-768b-443c-b9e6-5969dd8c5ee1 #
+      - a7d02053-5815-4f7d-987d-3174c4430f17 #
+      - 75abdb3f-a74f-49ae-8ac3-ecb632c0622d #
+      - c64bc8a1-e528-4707-9763-99c83b45544b #
+      - f1f109af-0fb1-4858-9942-6eb63b80e2f1 #
+      - fd29b117-e911-484a-7d9b-b0a431eb36ed #
+      - f887f307-e568-439d-6051-2fe8b2cb4f9f #
+      - 748035bf-2376-4ea5-a36a-42c7cc5870a2 #
+      - df574cd5-7343-4c50-6933-a38647e14443 #
+      - 6c0332e3-4bbb-4f28-5614-2c30924a19fd #
+      - 63ea0948-9e69-46c7-6948-51c1f052e893 #
+      - ae598f0b-6741-4832-a3c8-22b2bcc5670d #
+      - 67316a32-5fb5-41e0-ae2f-112d02a61d76 #
+      - 4d7466f9-eb5b-41b0-7ebb-ecf81ca0231c #
+      - 27ab8aac-34e2-40d9-882a-c59a0716c84a #
+      - 79e436fe-b945-4c15-bafe-a17884dc94a2 #
+      - 7f70fae7-1290-4beb-5f1e-84e53100e02b #
+      - ca317b16-b357-4e8d-6ff2-4dbcbb45fc7f #
+      - 943f0d36-fc03-40d1-9a72-9f10635cb28f #
+      - ad1f665c-ad35-4562-87bc-24d94ec7b620 #
+      - a5633cbb-5364-4073-91cf-e6bbb123fcf2 #
+      - ee997ff9-f9fa-496d-9169-3f71e91aaa23 #
+      - 5ec1b1a2-65a2-4574-8441-4927408a4eca #
+      - 951ca7d4-8c4f-46bb-4d72-c0ac7677af77 #
+      - 9a64d68d-bce7-4a5a-baea-d041f3739549 #
+
+    
+  jp_music:
+    - userList:
+      - d5ae4e8f-e379-4aff-aa99-9663f745508b 
+      - da681235-3655-4966-812b-7744f361a51b
+      - c53a513a-63ad-4f65-beea-2557bbaba459
+      - fa95a5a8-fb24-4c73-6af4-e7a48641e35f
+      - 13ca75b4-f3b7-4458-b99e-2045c43fa467
+      - 128320ff-42da-47ed-88c6-748f085440a6
+      - e26a490f-6eb3-4b8a-648e-0d544684de8b
+      - 1bba120f-97ae-43b8-6183-dea761889408
+      - 61bc502c-8a44-4ff6-a593-506cd6853ebc
+      - cc2785f8-e369-4099-53f2-0852b74b63fe
+      - da1866f7-c10d-4eab-b875-6e35e2cc6793
+      - 74f49b6a-b6d0-4a10-81da-fbf183df7710
+      - 64bf678f-f150-46bf-81a6-f8de5defeaf6
+      - e9a11926-ae86-42e9-9993-a0efd67dcb62
+      - 28ed5ab8-0b1d-432e-831e-04568c84f985
+      - 96c227d7-57c5-4005-4b02-db1415caa509
+      - 017a77b5-0051-48f0-9089-0e187650455e
+      - febea57b-f0f7-4177-b2e5-c89f21cd2ad5
+      - 7d2756e1-75a2-4a14-54be-696f6f538233
+      - c2c173f0-803d-4a72-b53f-7a647a8feb51
+      - 9236a1f1-e315-4a8c-ac23-5ac5b1f3d6b1
+      - e2f9adee-908d-4702-a0f6-bf164d14e763 # -> james.sta03
+      - cbdc2ef6-56f4-4196-9824-351d4d33a08d  # -> james.sta04#qatest用
+
+  jp_potential:
+    - userList:
+      - 98b83ed8-baa1-4d63-8214-cb80344db3a5 # 夢夢🐈💐💓mumu
+      - 0224f1b4-6759-44ad-7ccf-f579c4e72206 # ルミナ🍪Rumina
+      - a2679e9f-b971-4fce-893e-b799c47e6c1d # みさ👠MISA🌹✨
+      - 37e89f92-02ee-4c03-a599-94a7ea8a4c2e # ちゃんなな🙊🍌Nana🍼
+      - ee3735ac-83a1-4c95-b53f-82e745404365 # ゆきぽぽ🌺💚yukino
+      - 86f2d52e-f28b-4bec-88ca-22f65e86f1a1 # minaちょす
+      - a7fd1d21-4228-4262-8d75-b0ed15b5ce9a # 澪🐳🐋miomio🐋🐳
+      - 8112c88f-dc2f-4340-b43a-341c1752314e # まいたん.🥂💍💕
+      - 6b0f246e-04ed-4444-9d44-7d8e2073ce52 # れいな🐶🍓💙REINA
+      - 5ad2899c-3571-47ca-aacc-3a1c4022879a # ほのぴす🐰👑
+      - 93555197-2d84-4f29-bb0e-3c79d781dd9d # るな🐈🍓🌸Luna
+      - 8be81498-0f5c-498b-b937-7324328060ea # marichi_baby ↓6/12更新
+      - 32b906a8-fc6d-4976-9d98-f6ba65c38c1b # 12_airin_08
+      - ce9c3fa7-3fad-4c6e-6392-02aa041d9659 # JURI🎤💋🎧✨
+      - 5d25d33d-9a95-4178-8bd6-e0ce9b2664df # ヴァネ💎👠vanessa
+      - 5824751a-c586-43c9-8bf2-cebda7711558 # mayu_baby_1119
+      - 5a25be8e-cc3f-4b71-8b29-0b3cf6bf2c1c # もえもえ🐧💋moe🌕
+      - bfc6a3c0-48bb-4220-a594-5605b1c65ca6 # mitsubachi11
+
+  jp_game:
+    - userList:
+      - f35f856a-d667-44ef-8fc5-30950eade04e # 猫无🐱れおてゃん🗽🔥
+      - ef865a9a-9af6-41b5-8280-abefe277c1be # x💙🐰みひちゃ🐰💙x
+      - 14e1822f-85fe-4f9c-b43f-7134e7f22c06 # クルトワ_courtois
+      - 749c76ba-2f56-4c67-89b9-f1f15e4c21be # ちびたん🍙🐱tibitan
+      - 50d53a3c-4877-4e20-988d-d14370cbe4f8 # たつ乃_GameRoom
+      - 75fb1e2b-d4f3-4ced-af22-8fda7aa58f83 # じゃっく_inuu
+      - ffa0b6c9-426c-461a-be8b-6adf4f1dcd0d # じらふGames
+      - 3af2fd9c-841b-429c-ab06-080f0048a005 # コバッチ_gaming
+      - 924ab5ed-07ae-4a56-9c0a-51bbc0d50758 # toranosuke.77
+      - bc90b653-392a-4697-ab6c-f4947194ef61 # s2はこs2🙉hako💥📢
+      - 627e64ca-8e56-43d0-8e96-0b4ed896b8f1 # Maitv🐻🎈
+      - f6297fdb-2dab-4f5e-bb9c-4d3f35b367b1 # 兎乃はち.
+      - cd7f7bf4-37bf-4742-61dd-e4db5ba21eaa # ヒロにゃん🐱🍀Hironyan🐱🍀
+      - 3badb308-185a-4e0a-907b-1e33e77cee48 # りゅう1_ch
+      - 8caca8d4-f45a-46f2-95b7-c3f8e8a65440 # みあ🍟🍓🎮miamia
+      - 5251e6de-9517-4e8f-8478-e3ee8d3c6be2 # れとち_
+      - 789f0fca-2fc6-4ef3-b5f2-59765d7ccca9 # ぱい美👙🍌
+      - 55141922-e38e-48f8-ba10-bfcd65119ae3 # げげたん
+      - 4544df2d-011b-4eba-9de3-95f9178aab4d # kyamihei_baby
+      - 56d12d21-f7b8-45ce-bc8c-9da1438730b1 # leuas_erde
+      - e8886141-e84c-43da-9869-b8abc9a131be # 中本yui*🍶🐾　↓6/12更新
+      - 3f372b61-ea82-4f01-8d0e-6b8302af393c # melisaY8
+
+  jp_vliver:  
+    - userList:
+      - 853f451b-f428-4645-b647-311827b89f60 # ガブ
+      - fa398096-c554-4ccb-8a57-3e5c21607079 # 狐狐音の前🈁VLiver
+      - 7257f6c5-6784-4c77-a8fa-8a48afdbfcba # 満点花丸
+      - d36fb1df-1a83-4f67-bab6-26fd1ce89d40 # 菖蒲_Shoub_
+      - bba7f454-d95a-4160-a69e-02a17a6008fe # うーたん🧪🧬vliver
+      - bd027b2b-3a52-4664-b613-2d7a106abeaf # はいぴんぐ🎮💚モナカ
+      - 05724242-8d32-4202-9b9d-7e900a0cbc0c # 瑞無るく_0214
+      - f9f8db04-0a7e-4ab8-9484-07b847a10f7c # くまお🐻Kumao
+      - f6b0c54e-b545-4269-8266-a15cac8cadb3 # エマ🦋V-Liver💫
+      - 2ccc4f7d-8d87-4b47-aa35-9252f80c80bf # 🎀Ichika😺いちか🎀
+      - 6ca14851-646b-4b75-bd11-7c4bdb3d0e44 # takanashineiro_vlive
+      - fefe0d5f-90e5-4e03-9651-2ffdfa125d05 # 兎妃toki_vliver
+
+  jp_freetalk:
+    - userList:
+      - 8d8f7a87-b97b-4fa6-8a3a-f753e1c18d44 # かいひ🌏Kaihi🐠✨
+
+  2108_jp_starttest:
+    - userList:
+      - d5ae4e8f-e379-4aff-aa99-9663f745508b
+      - da681235-3655-4966-812b-7744f361a51b
+      - c53a513a-63ad-4f65-beea-2557bbaba459
+      - 6d41c4b3-4754-4b27-abcb-a28a68654502
+
+  2109_jp_NOGOODTV_LIVE:
+    - userList:
+      - d5ae4e8f-e379-4aff-aa99-9663f745508b
+      - da681235-3655-4966-812b-7744f361a51b
+      - c53a513a-63ad-4f65-beea-2557bbaba459 #え_い_ん
+
+  2110_jp_finance1:
+    - userList:
+      - 1001c909-355b-47c6-8e46-632bf05a453e # あみゅね
+      - a3251943-fe02-4425-8f89-573edf423e86 # れい_reichannel	
+      - 5cd24ae7-481d-40e5-8a53-49b12dac7b78 # MIKI.entertainer
+      - 25f04237-8bd9-415e-4380-afcf558114bc # kana_.jp
+      - 119d02a6-3346-41d6-a313-0491a25ee542 # Yin_Ghibli0716
+      - 9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba # kevinmh03
+
+  2201_jp_seijin:
+    - userList:
+      - b3048bcd-71e1-4805-bcc7-b6b0c37bc20d # davidsta1

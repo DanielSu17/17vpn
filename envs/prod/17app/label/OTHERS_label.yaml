@@ -18,3 +18,17 @@ typeCheckAndroidVersion: 2.3.92
 # labelWhiteList defines relation between label and user list
 labelWhiteList:
   exclusive:
+
+# newLabelWhiteList defines relation between label and user list
+# sample example
+# newLabelWhiteList:
+#   acoustic:
+#     - startTime: "2002-05-23 00:00:00 (GMT+0800)" (If you want to set the interval, the start time and end time must be set)
+#       endTime: "2003-12-31 23:59:59 (GMT+0800)" (If one is not set, this list will not take effect)
+#       userList:
+#       - userID0
+#     - userList: (If the start time and end time are not set, it will take effect directly without restriction)
+#       - userID0
+newLabelWhiteList:
+  exclusive:
+    - userList:

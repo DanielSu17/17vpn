@@ -14,3 +14,20 @@ labelWhiteList:
   exclusive:
   new_streamer:
     - b2d39924-a491-4f10-9d4e-0b818ac3e33a	#shiin.xx
+
+# newLabelWhiteList defines relation between label and user list
+# sample example
+# newLabelWhiteList:
+#   acoustic:
+#     - startTime: "2002-05-23 00:00:00 (GMT+0800)" (If you want to set the interval, the start time and end time must be set)
+#       endTime: "2003-12-31 23:59:59 (GMT+0800)" (If one is not set, this list will not take effect)
+#       userList:
+#       - userID0
+#     - userList: (If the start time and end time are not set, it will take effect directly without restriction)
+#       - userID0
+newLabelWhiteList:
+  exclusive:
+    - userList:
+  new_streamer:
+    - userList:
+      - b2d39924-a491-4f10-9d4e-0b818ac3e33a	#shiin.xx

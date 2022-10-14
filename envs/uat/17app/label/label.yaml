@@ -2,7 +2,7 @@
 # - type: 1(music), 2(politics), 3(others)
 # - featured: true / false (default)
 # - labelID: mapping for labels table id
-   
+
 labelInfos:
 
   - id: "welcomenewfans" #歡迎新人
@@ -966,3 +966,322 @@ labelWhiteList:
 
   tw_t_fortune_teller: #命理
     
+
+# newLabelWhiteList defines relation between label and user list
+# sample example
+# newLabelWhiteList:
+#   acoustic:
+#     - startTime: "2002-05-23 00:00:00 (GMT+0800)" (If you want to set the interval, the start time and end time must be set)
+#       endTime: "2003-12-31 23:59:59 (GMT+0800)" (If one is not set, this list will not take effect)
+#       userList:
+#       - userID0
+#     - userList: (If the start time and end time are not set, it will take effect directly without restriction)
+#       - userID0
+newLabelWhiteList:
+
+  Halloween1: # PO萬聖節變裝活動
+    - userList:
+      - "a6622cc8-4219-4da5-911f-4798d3ddf24b" #kevinmh
+  Halloween2: # PO萬聖節變裝活動
+    - userList:
+      - "a6622cc8-4219-4da5-911f-4798d3ddf24b" #kevinmh
+  
+  tw_t_game:
+    - userList:
+      - "77f7fbd5-e895-4f18-b18c-43f2ddca4f58" #debbytest
+      - "a9b23cbe-8960-4f98-988e-90b9f6eeb86e" # erictest2
+      - "9d063e35-5314-4fd2-bcec-06f895a224f0" # melisaY5
+      - "f89d5634-fc94-4f01-a436-57933b59e5f0" # debbytest41
+      - "df2165f7-f451-48db-8155-2327a33029dc" # melisaY3
+      - "6ef087d9-5fb0-4569-ac37-cc08f556422e" # giselelin_02
+      - "277828c0-e0b5-4617-b45c-8078d5b59361" # seanhsu_stag1
+      - "ef9b2c4e-e29a-45b1-bd93-1171e3fca34d" # seanhsu_stag2
+
+  tw_t_music: # music
+    - userList:
+      - "567e0b5d-1516-4ce0-b4e8-bec4e756d5ae" #kevinmh
+    
+  stayathome: #全民開播
+    - userList:
+      - "567e0b5d-1516-4ce0-b4e8-bec4e756d5ae" #kevinmh
+      - "9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba" #kevinmh03
+      - "e5b239ca-1fba-44c5-a64c-d9247ac58638" #carogonewild2
+  
+  romantic_songs: # 每月14日情人系歌曲
+    - userList:
+      - "25f46a01-626a-43db-ab4b-cdbd668f75d8"
+      - "e951c142-7524-450e-9d56-1e3da6ddf2da"
+      - "de328680-c746-41ff-9114-0609260d9a5c"
+      - "7d0ecead-e71f-4ddb-b64b-5b5c7ec56465"
+      - "80b779b3-0ebf-449c-8d9d-1d9a0cc68b8c"
+      - "b0f384ae-1ecc-4762-94a5-8ba8f6721bb3"
+      - "ed65ad88-eb65-45d1-a236-70f630dcd6aa"
+      - "e769498b-e3bc-452e-9864-4b2025476816"
+      - "37aa05ba-1e45-4d21-9399-0b2d08ba7427"
+      - "af08c730-832a-42e0-a124-bb4004ae6ba2"
+      - "e6941b96-0d51-44f5-6051-6e2ae3cf2696"
+      - "a6ec1265-d296-495f-a081-07d8b47f45e6"
+      - "4f249428-9b3c-4910-9286-8bc44834989b"
+      - "715bee79-5f40-4d44-8c0a-3cd4bc37cb21"
+      - "797a9442-348e-44b1-be5d-b85d9fd1802e"
+      - "e17d2792-67a1-412c-8009-741ca14e9de6"
+      - "b815b6cd-e98a-4a7b-9115-158915d186e6"
+      - "6dad9988-b27c-47a9-96a6-16831d142986"
+      - "c57fba7e-38aa-43c1-867e-96e0fb6ae366"
+      - "0aa2f43a-0484-4a29-8cc1-a43e6438e1cd"
+  new_streamer_event:
+    - userList:
+      - "00c0bc02-c6df-448c-8385-114288e51d83"    #77_七七
+  acoustic: # 彈唱歌手
+    - userList:
+      - "375fcf50-8168-416e-9fa2-c9702a5ec08a"    # 宋少騫Zustin
+      - "558c7736-3677-4b17-8f94-1631a6870422"    # 吳金隆Gino
+      - "671f4ff1-212a-4e7a-80e9-360103c3ab91"    # 趙泓捷
+      - "4a771cdf-1fd6-4fcb-8186-73cc32ff5483"    # 鍾鎮宇Justin
+      - "94728e88-feca-4ca9-9062-39e3d2f93467"    # 小沙
+      - "115851d0-d202-47c5-9079-71d3e7f704f7"    # 亮金金
+      - "21280e9c-e07d-4d1b-83b7-e591bc3b1056"    # 我叫易小魚🐟🎤
+      - "2755452a-a0ec-4a3f-a83d-6db0634f62ae"    # 胡利基
+      - "604ec832-4884-47d6-beed-cf178cad1caa"    # 篠崎泫🎤篠崎是姓泫是名
+      - "60602fef-d6ee-4fb6-a38c-1ffd15b16c6f"    # 張語噥sammy
+      - "83821902-75d0-4c7a-86c4-0cf8590cc7d8"    # 張聖子-小露Lucia
+      - "c9fafa51-ab41-407f-9bac-6b5c9e201cd5"    # 徐凱希cathy
+      - "88f52a35-d951-4beb-822c-ad3d7e8f479b"    # 🎤鐵肺美金💰
+      - "f188d0e6-0c70-49c4-8da1-e787f389bb4f"    # 劉子瑜的⛳任性父皇💛
+      - "2c9ad019-2b31-4fb9-800d-fa518b51a74d"    # finn1
+      - "500514df-d764-44dd-7883-e1966d2ff634"    # 小紫
+      - "2a091777-b06d-4cad-9b02-70193365e1e3"    # ftcy0118
+      - "a8fec41b-220d-4d98-9912-39222ab87674"    # jenn19
+      - "bc6295f3-84bb-4d6e-a46d-bd3f9134a140"    # ericsta1
+      - "a9b23cbe-8960-4f98-988e-90b9f6eeb86e"    # erictest2
+    
+  fortune_teller: 
+    - userList:
+      - "25d8e5a9-94da-43bf-a160-a74856ad5c16"    # zoe_meat
+      - "e257e914-5009-48d9-5e8b-3c6da3f2026f"    # lllt.summer
+      - "c9692e9a-d6af-4c3b-b2ba-9954f2fb748d"    # momoiscool 
+      - "b1e571ee-fce8-4ed2-add0-39f6a2844955"    # momoisgood 
+      - "24c65a0b-2e5e-458a-aa3c-243fca4f2bd7"    # 沒是多喝水
+      - "5435ae09-00d6-42a2-9a27-a173013a6eab"    # 多喝水沒事
+      - "91ce0188-caed-4fb1-95cb-98e0d84fa5e1"    # 17x華視午間新聞
+    
+  player: # 演奏達人
+    - userList:
+      - "5435ae09-00d6-42a2-9a27-a173013a6eab"    # 多喝水沒事
+      - "24c65a0b-2e5e-458a-aa3c-243fca4f2bd7"    # 沒是多喝水
+      - "c9692e9a-d6af-4c3b-b2ba-9954f2fb748d"    # momoiscool 
+      - "b1e571ee-fce8-4ed2-add0-39f6a2844955"    # momoisgood 
+      - "bc6295f3-84bb-4d6e-a46d-bd3f9134a140"    # ericsta1
+      - "a9b23cbe-8960-4f98-988e-90b9f6eeb86e"    # erictest2
+    
+  singer: # 實力歌手
+    - userList:
+      - "115851d0-d202-47c5-9079-71d3e7f704f7"    # 亮金金
+      - "21280e9c-e07d-4d1b-83b7-e591bc3b1056"    # 我叫易小魚🐟🎤
+      - "2755452a-a0ec-4a3f-a83d-6db0634f62ae"    # 胡利基
+      - "604ec832-4884-47d6-beed-cf178cad1caa"    # 篠崎泫🎤篠崎是姓泫是名
+      - "60602fef-d6ee-4fb6-a38c-1ffd15b16c6f"    # 張語噥sammy
+      - "83821902-75d0-4c7a-86c4-0cf8590cc7d8"    # 張聖子-小露Lucia
+      - "c9fafa51-ab41-407f-9bac-6b5c9e201cd5"    # 徐凱希cathy
+      - "88f52a35-d951-4beb-822c-ad3d7e8f479b"    # 🎤鐵肺美金💰
+      - "f188d0e6-0c70-49c4-8da1-e787f389bb4f"    # 劉子瑜的⛳任性父皇💛
+      - "e257e914-5009-48d9-5e8b-3c6da3f2026f"    # lllt.summer
+      - "2c9ad019-2b31-4fb9-800d-fa518b51a74d"    # finn1
+      - "500514df-d764-44dd-7883-e1966d2ff634"    # 小紫
+      - "9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba"    # kevinmh03
+      - "a8fec41b-220d-4d98-9912-39222ab87674"    # jenn19
+      - "b9d3b1db-e167-4b3b-b77b-bcb8e36f98dd"    # bellagroupcall1
+      - "179663b1-62a9-46b5-a4c3-ed5be8a670db"    # bellagroupcall5
+      - "bc6295f3-84bb-4d6e-a46d-bd3f9134a140"    # ericsta1
+      - "a9b23cbe-8960-4f98-988e-90b9f6eeb86e"    # erictest2
+      - "4fcce7f3-77cc-4ead-ad8b-c4eca82c91af"    # jamestw13
+
+  pundit: # 政治名嘴
+    - userList:
+      - "25d8e5a9-94da-43bf-a160-a74856ad5c16"    # zoe_meat
+      - "e257e914-5009-48d9-5e8b-3c6da3f2026f"    # lllt.summer
+      - "c9692e9a-d6af-4c3b-b2ba-9954f2fb748d"    # momoiscool 
+      - "b1e571ee-fce8-4ed2-add0-39f6a2844955"    # momoisgood 
+      - "e3c4c804-8a9c-4b7c-8026-0a8ed602b42c"    # jen87go
+      - "91ce0188-caed-4fb1-95cb-98e0d84fa5e1"    # 17x華視午間新聞
+      - "a8fec41b-220d-4d98-9912-39222ab87674"    # jenn19
+      - "f8b2ce67-5455-479b-9d8d-51217e0d98bb"    # 挑戰吧大神
+      - "2e95de40-7880-422b-7f3b-0af9405e3b4d"    # janet.w02
+      - "20a73bfc-eb7c-4a87-b2db-e9ede4663f17"    # bellagc1
+      - "2f047fcd-8495-4759-b604-e444a7df1559"    # bellagroupcall3
+      - "bc6295f3-84bb-4d6e-a46d-bd3f9134a140"    # ericsta1
+      - "a9b23cbe-8960-4f98-988e-90b9f6eeb86e"    # erictest2
+      - "71d4fc23-8de1-4600-8ddc-286ff91f8c93"    # pikaarmy1
+      - "a2b43425-841f-4bdf-a76c-2a25e69cf2fa"    # jerry_test_concert1
+
+  street_artist: # 街頭藝人
+    - userList:
+      - "91ce0188-caed-4fb1-95cb-98e0d84fa5e1"    # 17x華視午間新聞
+      - "5435ae09-00d6-42a2-9a27-a173013a6eab"    # 多喝水沒事
+      - "24c65a0b-2e5e-458a-aa3c-243fca4f2bd7"    # 沒是多喝水
+      - "c9692e9a-d6af-4c3b-b2ba-9954f2fb748d"    # momoiscool 
+      - "b1e571ee-fce8-4ed2-add0-39f6a2844955"    # momoisgood 
+      - "a8fec41b-220d-4d98-9912-39222ab87674"    # jenn19
+      - "bc6295f3-84bb-4d6e-a46d-bd3f9134a140"    # ericsta1
+      - "a9b23cbe-8960-4f98-988e-90b9f6eeb86e"    # erictest2
+
+  cheerleader: # 啦啦隊
+    - userList:
+      - "8afee182-1b9d-4673-b4c9-bd924f3d092e"    # 0122w8
+      - "fa8ad315-b33b-4722-bdfd-ad4b4fc83695"    # 0122w17
+      - "b2f9da8f-b2b6-4f06-bd28-6fbda98e4f43"    # qacontractor1 
+
+  dj: # DJ
+    - userList:
+      - "3ea7b40e-03bb-4127-a650-98af06de802c"    # 0122w5
+      - "d6927535-3dc3-4b7d-b311-4ba7f45ebc8d"    # 0122w19
+      - "12aecce0-f86f-44b6-a403-8c17f3e01a6b"    # 0122w13
+      - "0ee3f492-2b87-46fd-8050-ee0f5e85ef8c"    # qacontractor2
+      - "5435ae09-00d6-42a2-9a27-a173013a6eab"    # 多喝水沒事
+      - "24c65a0b-2e5e-458a-aa3c-243fca4f2bd7"    # 沒是多喝水
+      - "c9692e9a-d6af-4c3b-b2ba-9954f2fb748d"    # momoiscool 
+      - "b1e571ee-fce8-4ed2-add0-39f6a2844955"    # momoisgood 
+      - "552ebccd-889f-45c5-bb4c-9fa3cad3428d"    # vava1
+      - "ec4c45f4-19e6-4353-9dcf-db859368c186"    # vava01
+      - "6d097b16-b650-4848-9e72-030e8bf37776"    # vava2
+      - "1ed56903-ae12-4fe5-8aeb-d8feca559599"    # vava02
+      - "aa49d1dc-05fc-42b0-9a40-89ef77e0b0df"    # vava3
+      - "42231e32-bce5-45b4-af8b-769c22482e51"    # vava03
+
+  male: # 型男
+    - userList:
+      - "e257e914-5009-48d9-5e8b-3c6da3f2026f"    # lllt.summer
+      - "2c9ad019-2b31-4fb9-800d-fa518b51a74d"    # finn1
+      - "49375768-0685-4037-85e4-5ff1b572d19d"    # jessenice
+      - "ae7de094-f3ae-4de6-9037-e4f190acdbf1"    # qacontracot9
+      - "2a091777-b06d-4cad-9b02-70193365e1e3"    # ftcy0118
+      - "2c9ad019-2b31-4fb9-800d-fa518b51a74d"    # finn1
+      - "73e8b839-a1ca-4b08-a51d-2b02ffdea153"    # bellayayaya
+      - "092b249a-5984-45d1-47b4-b12c3f23f913"    # wtfv2
+      - "5435ae09-00d6-42a2-9a27-a173013a6eab"    # 多喝水沒事
+      - "24c65a0b-2e5e-458a-aa3c-243fca4f2bd7"    # 沒是多喝水
+      - "c9692e9a-d6af-4c3b-b2ba-9954f2fb748d"    # momoiscool 
+      - "b1e571ee-fce8-4ed2-add0-39f6a2844955"    # momoisgood 
+      - "552ebccd-889f-45c5-bb4c-9fa3cad3428d"    # vava1
+      - "ec4c45f4-19e6-4353-9dcf-db859368c186"    # vava01
+      - "6d097b16-b650-4848-9e72-030e8bf37776"    # vava2
+      - "1ed56903-ae12-4fe5-8aeb-d8feca559599"    # vava02
+      - "aa49d1dc-05fc-42b0-9a40-89ef77e0b0df"    # vava3
+      - "42231e32-bce5-45b4-af8b-769c22482e51"    # vava03
+      - "9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba"    # kevinmh03  
+      - "a8fec41b-220d-4d98-9912-39222ab87674"    # jenn19
+      - "e8ed5712-78e0-4ca2-ab89-bae47c90f461"    # bellapk001
+      - "1d352aad-bc42-418e-b910-9d10f149699d"    # bellapk002
+      - "55f0ac3a-48e3-4ee5-bc2a-9c04ebb5e1fb"    # teddypk001
+      - "7b8acc99-44e3-44ac-b702-f58c536d241a"    # teddypk002
+      - "779d6f53-74a4-4c23-bd82-921122dbd9e7"    # bellapk0031
+      - "760c0399-d394-4188-81cd-038ade79fd4f"    # thpk01
+      - "e0a39c23-d2ef-4c3c-897d-afa8f5a01266"    # thpk02
+      - "b3a4e768-cc55-4202-a6c1-60bf932827ef"    # thpk03
+      - "906f7897-51dd-40a6-aca8-4381905a9333"    # thpk04
+      - "9494cfd1-659f-4304-aebc-0d4c8f43c642"    # arwinpk001
+      - "3e7eb566-f22d-4674-bf97-85e43a11c27d"    # arwinpk002
+      - "bc6295f3-84bb-4d6e-a46d-bd3f9134a140"    # ericsta1
+      - "a9b23cbe-8960-4f98-988e-90b9f6eeb86e"    # erictest2
+
+  female: # 正妹
+    - userList:
+      - "73e8b839-a1ca-4b08-a51d-2b02ffdea153"    # bellayayaya
+      - "25d8e5a9-94da-43bf-a160-a74856ad5c16"    # zoe_meat
+      - "ac774ff4-2dc9-431b-b74e-0345fceb3b53"    # qacontracot10
+      - "2a091777-b06d-4cad-9b02-70193365e1e3"    # ftcy0118
+      - "2c9ad019-2b31-4fb9-800d-fa518b51a74d"    # finn1
+      - "73e8b839-a1ca-4b08-a51d-2b02ffdea153"    # bellayayaya
+      - "092b249a-5984-45d1-47b4-b12c3f23f913"    # wtfv2
+      - "5435ae09-00d6-42a2-9a27-a173013a6eab"    # 多喝水沒事
+      - "24c65a0b-2e5e-458a-aa3c-243fca4f2bd7"    # 沒是多喝水
+      - "c9692e9a-d6af-4c3b-b2ba-9954f2fb748d"    # momoiscool 
+      - "b1e571ee-fce8-4ed2-add0-39f6a2844955"    # momoisgood 
+      - "552ebccd-889f-45c5-bb4c-9fa3cad3428d"    # vava1
+      - "ec4c45f4-19e6-4353-9dcf-db859368c186"    # vava01
+      - "6d097b16-b650-4848-9e72-030e8bf37776"    # vava2
+      - "1ed56903-ae12-4fe5-8aeb-d8feca559599"    # vava02
+      - "aa49d1dc-05fc-42b0-9a40-89ef77e0b0df"    # vava3
+      - "42231e32-bce5-45b4-af8b-769c22482e51"    # vava03
+      - "9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba"    # kevinmh03
+      - "a8fec41b-220d-4d98-9912-39222ab87674"    # jenn19
+      - "e8ed5712-78e0-4ca2-ab89-bae47c90f461"    # bellapk001
+      - "1d352aad-bc42-418e-b910-9d10f149699d"    # bellapk002
+      - "55f0ac3a-48e3-4ee5-bc2a-9c04ebb5e1fb"    # teddypk001
+      - "7b8acc99-44e3-44ac-b702-f58c536d241a"    # teddypk002
+      - "779d6f53-74a4-4c23-bd82-921122dbd9e7"    # bellapk0031
+      - "760c0399-d394-4188-81cd-038ade79fd4f"    # thpk01
+      - "e0a39c23-d2ef-4c3c-897d-afa8f5a01266"    # thpk02
+      - "b3a4e768-cc55-4202-a6c1-60bf932827ef"    # thpk03
+      - "906f7897-51dd-40a6-aca8-4381905a9333"    # thpk04
+      - "9494cfd1-659f-4304-aebc-0d4c8f43c642"    # arwinpk001
+      - "3e7eb566-f22d-4674-bf97-85e43a11c27d"    # arwinpk002
+      - "6446c762-7d3e-4bb3-b921-da78e966c829"    # vava.pp01
+      - "1101de05-2386-48d3-a87d-a599d2c92a18"    # vava.pp02
+      - "24c986a6-fed5-4c41-8c81-f926ecd005f1"    # vava.pp03
+      - "e15d423e-4857-4f98-8c10-79f568167142"    # vava.pp04
+      - "64260d37-07a4-4bdd-8f32-65de05ef245c"    # vava.pp05
+      - "bc6295f3-84bb-4d6e-a46d-bd3f9134a140"    # ericsta1
+      - "a9b23cbe-8960-4f98-988e-90b9f6eeb86e"    # erictest2
+  
+  17tv: #  17看節目
+    - userList:
+      - d4fa2189-be5b-4351-8dc6-3793b3e79593
+      - 2fdb9f0f-cdc3-4eb4-a8af-ff1c261a2369
+      - 8f95a285-104e-4ea5-ae58-00cca785247a
+      - ad9a4ee5-e7eb-47f0-8ef4-727b286aa48f
+      - e0d68bc2-03c1-4a38-a149-ee65d0089036
+
+  campus: # 青春校園
+    - userList:
+      - "25d8e5a9-94da-43bf-a160-a74856ad5c16"    # zoe_meat
+      - "e257e914-5009-48d9-5e8b-3c6da3f2026f"    # lllt.summer
+      - "c9692e9a-d6af-4c3b-b2ba-9954f2fb748d"    # momoiscool 
+      - "b1e571ee-fce8-4ed2-add0-39f6a2844955"    # momoisgood 
+      - "24c65a0b-2e5e-458a-aa3c-243fca4f2bd7"    # 沒是多喝水
+      - "5435ae09-00d6-42a2-9a27-a173013a6eab"    # 多喝水沒事 
+      - "e3c4c804-8a9c-4b7c-8026-0a8ed602b42c"    # jen87go
+      - "91ce0188-caed-4fb1-95cb-98e0d84fa5e1"    # 17x華視午間新聞
+      - "329c8cec-f2bf-4f2a-bcea-5e8f470ee0fb"    # ptre
+      - "c21f1749-b48d-43fd-b3e3-32c5edf169e9"    # 17趣郊遊
+        
+  show: # 熱播節目
+    - userList:
+      - "91ce0188-caed-4fb1-95cb-98e0d84fa5e1"    # 17x華視午間新聞
+      - "a8fec41b-220d-4d98-9912-39222ab87674"    # jenn19
+      - "2e95de40-7880-422b-7f3b-0af9405e3b4d"    # janet.w02
+
+  tutor: # 民辦教師
+    - userList:
+      - "a9b23cbe-8960-4f98-988e-90b9f6eeb86e"    # erictest2
+
+  market: #市集
+    - userList:
+      - "af000548-997f-4533-b817-9eb2ddf45757" #barton
+      - "26a7d5ef-d231-4493-b7da-39632a2f3525" #ethandai
+
+  Shopping: #購物
+    - userList:
+      - "af000548-997f-4533-b817-9eb2ddf45757" #barton
+      - "26a7d5ef-d231-4493-b7da-39632a2f3525" #ethandai
+
+  2112_supersonic:
+    - userList:
+      - 46d46576-cd73-4f19-bd5f-1e65e9a62e85 #17經典台
+      - 4dca3762-c9e0-41d3-b26f-5e66e2c56acf #program_account1
+
+  visualartists: #繪畫
+    - userList:
+
+  model:  #模特兒
+    - userList: 
+    
+  online_course:  #線上課程
+    - userList:
+      - "0f2595ad-e131-4610-a9e5-80ce5764454b"    # ray.m01
+
+  Dancer:  #舞蹈達人
+    - userList:
+
+  tw_t_fortune_teller: #命理
+    - userList:

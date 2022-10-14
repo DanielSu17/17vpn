@@ -3,7 +3,7 @@
 # - type: 1(music), 2(politics), 3(others)
 # - featured: true / false (default)
 # - labelID: mapping for labels table id
-   
+
 labelInfos:
   - id: "tutor" # 民辦教師
     type: 3
@@ -23,3 +23,24 @@ labelWhiteList:
     - 'c643ce89-09fb-45f8-b162-791ce491ccea'    #james.mena3
     - '0927eeb8-a6ea-4d88-af4a-bd3828253b36'    #james.mena4
     - '52584635-e7e7-47d2-b7e2-2f051414b7c9'    #james.mena5
+
+# newLabelWhiteList defines relation between label and user list
+# sample example
+# newLabelWhiteList:
+#   acoustic:
+#     - startTime: "2002-05-23 00:00:00 (GMT+0800)" (If you want to set the interval, the start time and end time must be set)
+#       endTime: "2003-12-31 23:59:59 (GMT+0800)" (If one is not set, this list will not take effect)
+#       userList:
+#       - userID0
+#     - userList: (If the start time and end time are not set, it will take effect directly without restriction)
+#       - userID0
+newLabelWhiteList:
+
+  tutor: # 民辦教師
+    - userList:
+      - "c3dfff9d-b6a5-4732-8ac1-40321b8b67b6"    # erictest2
+      - 'feef279b-63d4-4228-8d20-a4058064febe'    #james.mena1
+      - 'cc8b1c5e-20c1-493b-aa00-6991a2d696c5'    #james.mena2
+      - 'c643ce89-09fb-45f8-b162-791ce491ccea'    #james.mena3
+      - '0927eeb8-a6ea-4d88-af4a-bd3828253b36'    #james.mena4
+      - '52584635-e7e7-47d2-b7e2-2f051414b7c9'    #james.mena5
