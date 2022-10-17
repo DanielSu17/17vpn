@@ -1,42 +1,62 @@
-gameServerHost: "https://luxurydice-stag.as-neast3-a.nakamacloud.io"
+#### Service Configs - Do NOT modify it unless you're RD and knowing what you are doing.
+gameServerHost: "https://luxurydice-stag.as-neast3-a.nakamacloud.io" # The host of the game server.
 
-gamePoolUserID: "0f8b70fd-e64e-48e0-9757-61f154854f8c"
+gamePoolUserID: "0f8b70fd-e64e-48e0-9757-61f154854f8c" # The user ID of the game pool user.
 
+#### Game Configs - PM can modify it according to the SPEC.
+## recognize the revenue from the game pool.
 overflow:
-  size: 15000000
-  sequence: 20
+  size: 15000000 # While the pool balance is over this value, the game will be overflowed - transfer difference from pool to the revenue.
+  sequence: 20 # Check overflow every N rounds.
 
-probabilityTable:
+## Risk Control System
+# A system to control the RTP of the game.
+# See the [SPEC](https://docs.google.com/presentation/d/1KV2bWTbb4_79rv82ldeLPcGRR3Ou4t-m-rn8eO4rubQ/edit#slide=id.g13a5eb8e6c5_0_192) for more details.
+# Notice:
+#  - The sum of the probability of each index must be 10000.
+#  - Item key in each index must be the same, and highly correlated to the game, e.g., `small`, `leopard`, `large` for LuxuryDice game.
+#  - There are 3 pool levels: `emergency`, `loaded`, `fair`. The tax of each level is defined in `tax` field.
+#  - The `safeline` and `loadedgate` fields affect the pool level. See the [mechanism](https://docs.google.com/presentation/d/1KV2bWTbb4_79rv82ldeLPcGRR3Ou4t-m-rn8eO4rubQ/edit#slide=id.g13baac2268b_0_14) for more details.
+probabilityTable: # Basic probability of each index.
+  # index 0
   - large: 4695
     leopard: 475
     small: 4830
+  # index 1
   - large: 4706
     leopard: 450
     small: 4844
+  # index 2
   - large: 4716
     leopard: 430
     small: 4854
+  # index 3
   - large: 4722
     leopard: 417
     small: 4861
 
-odds:
-  small: 2
-  leopard: 20
-  large: 2
+odds: # The odds of each item if a player win.
+  small: 2 # 2 times to payout.
+  leopard: 20 # 20 times to payout.
+  large: 2 # 2 times to payout.
 
-tax:
-  emergency: 0.025
-  loaded: 0.05
-  fair: 0.05
+tax: # The tax of each round - always transfer from game pool to revenue each round.
+  emergency: 0.025 # 2.5%
+  loaded: 0.05 # 5%
+  fair: 0.05 # 5%
 
 safeline: 4000000
 
 loadedgate: 10000
 
+## Compensation System
+# According to the policy in Japan, the game must compensate the player if they lose the money.
+# See the [SPEC](https://www.figma.com/file/04IdeQqQnuMMraHIV1VhjL/%5BStory-Map%5D-Fruit-Farm?node-id=4443%3A4979) for more details.
+# Notice:
+#  - The barrage type is defined in the barrage.yaml.
 compensation:
-  enabled: true
-  items:
+  enabled: true # Enable the compensation system.
+  items: # Calculate the compensation items by the settings below and the money player lose.
     - pointThreshold: 100
       barrageType: 6
       barrageCount: 1
