@@ -1,1 +1,1 @@
-# monster 設定
+# (SG) monster 設定
