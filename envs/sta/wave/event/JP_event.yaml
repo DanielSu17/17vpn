@@ -266,7 +266,7 @@ events:
       startTime: "2022-10-13 00:00:00 (GMT+0900)"
       endTime: "2022-10-31 23:59:59 (GMT+0900)"
 #    ----------------------------Wave Music Festival----------------------------
-  - id: "2210-jp-wave-music01"
+  - id: "2210-jp-wave-votepre01"
     type: 0
     order: 3
     webUrl: "https://event.17.live/15603-Karaoke2210/1"
@@ -275,13 +275,14 @@ events:
     endTime: "2022-10-24 23:59:59 (GMT+0900)"
     entranceDisplayAfterEnd: 0 # second
     emphasizeThreshold: 5
-    blacklist:
+    whitelist:
+    - 1353116a-bdda-421b-a95e-55aae622f831 # Nami
     leaderboard:
-      id: "event:2210-jp-wave-music01"
-      giftTag: "wavemusic"
+      id: "event:2210-jp-wave-votepre01"
+      giftTag: "musicvote"
       startTime: "2022-10-19 00:00:00 (GMT+0900)"
       endTime: "2022-10-24 23:59:59 (GMT+0900)"
-  - id: "2210-jp-wave-music02"
+  - id: "2210-jp-wave-votepre02"
     type: 0
     order: 3
     webUrl: "https://event.17.live/15603-Karaoke2210/1"
@@ -290,13 +291,14 @@ events:
     endTime: "2022-10-25 23:59:59 (GMT+0900)"
     entranceDisplayAfterEnd: 0 # second
     emphasizeThreshold: 5
-    blacklist:
+    whitelist:
+    - 1353116a-bdda-421b-a95e-55aae622f831 # Nami
     leaderboard:
-      id: "event:2210-jp-wave-music02"
-      giftTag: "wavemusic"
+      id: "event:2210-jp-wave-votepre02"
+      giftTag: "musicvote"
       startTime: "2022-10-25 00:00:00 (GMT+0900)"
       endTime: "2022-10-25 23:59:59 (GMT+0900)"
-  - id: "2210-jp-wave-music03"
+  - id: "2210-jp-wave-votesemi"
     type: 0
     order: 3
     webUrl: "https://event.17.live/15603-Karaoke2210/1"
@@ -305,13 +307,14 @@ events:
     endTime: "2022-10-27 23:59:59 (GMT+0900)"
     entranceDisplayAfterEnd: 0 # second
     emphasizeThreshold: 5
-    blacklist:
+    whitelist:
+    - 1353116a-bdda-421b-a95e-55aae622f831 # Nami
     leaderboard:
-      id: "event:2210-jp-wave-music03"
-      giftTag: "wavemusic"
+      id: "event:2210-jp-wave-votesemi"
+      giftTag: "musicvote"
       startTime: "2022-10-27 00:00:00 (GMT+0900)"
       endTime: "2022-10-27 23:59:59 (GMT+0900)"
-  - id: "2210-jp-wave-music04"
+  - id: "2210-jp-wave-votefinal"
     type: 0
     order: 3
     webUrl: "https://event.17.live/15603-Karaoke2210/1"
@@ -320,9 +323,25 @@ events:
     endTime: "2022-10-28 23:59:59 (GMT+0900)"
     entranceDisplayAfterEnd: 0 # second
     emphasizeThreshold: 5
-    blacklist:
+    whitelist:
+    - 1353116a-bdda-421b-a95e-55aae622f831 # Nami
     leaderboard:
-      id: "event:2210-jp-wave-music04"
-      giftTag: "wavemusic"
+      id: "event:2210-jp-wave-votefinal"
+      giftTag: "musicvote"
       startTime: "2022-10-28 00:00:00 (GMT+0900)"
+      endTime: "2022-10-28 23:59:59 (GMT+0900)"
+  - id: "2210-jp-wave-musicmood"
+    type: 0
+    order: 3
+    webUrl: "https://event.17.live/15603-Karaoke2210/1"
+    iconUrl: "https://cdn.wave.com.tw/v1/bot/1666107178682533_6260865173082976_78194755452738396383984226891074_wa.png"
+    startTime: "2022-10-18 00:00:00 (GMT+0900)"
+    endTime: "2022-10-28 23:59:59 (GMT+0900)"
+    entranceDisplayAfterEnd: 0 # second
+    emphasizeThreshold: 5
+    whitelist:
+    leaderboard:
+      id: "event:2210-jp-wave-musicmood"
+      giftTag: "musicmood"
+      startTime: "2022-10-18 00:00:00 (GMT+0900)"
       endTime: "2022-10-28 23:59:59 (GMT+0900)"
