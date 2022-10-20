@@ -84,14 +84,6 @@ sections:
     minGrids: 8 # 2個直播間一組PK，4組以上顯示
     style: 3
     more: true
-  - id: AudioStream # AudioStream 聲播
-    name:
-      key: audio_stream_v3hotpage
-    enable: true
-    dedup: false
-    minGrids: 4
-    style: 3
-    more: true
   - id: NewestStreamer # D0 new streamer 首日新手
     name:
       key: tab_hot_d0streamer
@@ -206,6 +198,14 @@ sections:
     more: true
     category: normal
     orderModel: 2
+  - id: AudioStream # AudioStream 聲播
+    name:
+      key: audio_stream_v3hotpage
+    enable: true
+    dedup: false
+    minGrids: 4
+    style: 3
+    more: true
   - id: Label #直播商城
     labelID: market
     name: 
