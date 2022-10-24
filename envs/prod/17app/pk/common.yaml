@@ -52,6 +52,17 @@ rules: # 規則key
   - type: 3
     token: { key: pk_rule_content4 }
 
+# friendPkRules will be appended in to rules if version supported
+friendPkRules:
+  - type: 1
+    token: { key: pk_friend_rule_title1 }
+  - type: 2
+    token: { key: pk_friend_rule_content1 }
+  - type: 2
+    token: { key: pk_friend_rule_content2 }
+  - type: 2
+    token: { key: pk_friend_rule_content3 }
+
 winFilterAnimationID: filter_win
 loseFilterAnimationID: filter_lose
 animationPrefix: pk
