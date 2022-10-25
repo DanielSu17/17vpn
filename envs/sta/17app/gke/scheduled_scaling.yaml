@@ -94,14 +94,14 @@
   - name: k8ssta-goapi-main
     minReplicas: 50
 
-# 1003 send gift to 2 transcations POC
-- startTime: "2022-10-25 11:40:00 (GMT+0800)"
-  endTime: "2022-10-25 14:30:00 (GMT+0800)"
+# send gift to 2 transcations POC
+- startTime: "2022-10-26 11:40:00 (GMT+0800)"
+  endTime: "2022-10-26 14:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8ssta-goapi-main
-    minReplicas: 70
+    minReplicas: 80
   - name: k8ssta-golives-main
-    minReplicas: 70
+    minReplicas: 80
   - name: k8ssta-gotrade-main
     minReplicas: 80
   - name: k8ssta-revprox-tw-main
