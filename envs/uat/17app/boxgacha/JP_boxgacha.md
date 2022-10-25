@@ -1,0 +1,1 @@
+# JP boxGoachaEVent 設定

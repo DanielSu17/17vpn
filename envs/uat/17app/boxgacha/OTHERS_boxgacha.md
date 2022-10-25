@@ -1,0 +1,1 @@
+# OTHERS boxGoachaEVent 設定

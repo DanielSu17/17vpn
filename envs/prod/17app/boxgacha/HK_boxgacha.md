@@ -1,0 +1,1 @@
+# HK boxGoachaEVent 設定

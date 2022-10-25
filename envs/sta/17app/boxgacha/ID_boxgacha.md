@@ -1,0 +1,1 @@
+# ID boxGoachaEVent 設定

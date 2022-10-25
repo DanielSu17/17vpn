@@ -1,0 +1,1 @@
+# MM boxGoachaEVent 設定

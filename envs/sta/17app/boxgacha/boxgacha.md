@@ -1,0 +1,1 @@
+# TW boxGoachaEVent 設定

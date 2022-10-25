@@ -1,0 +1,1 @@
+# US boxGoachaEVent 設定

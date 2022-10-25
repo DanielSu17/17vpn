@@ -1,0 +1,1 @@
+# SG boxGoachaEVent 設定

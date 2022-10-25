@@ -1,0 +1,1 @@
+# PH boxGoachaEVent 設定

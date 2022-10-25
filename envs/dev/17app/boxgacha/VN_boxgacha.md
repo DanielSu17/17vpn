@@ -1,0 +1,1 @@
+# VN boxGoachaEVent 設定
