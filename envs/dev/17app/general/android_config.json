@@ -1,10 +1,23 @@
 {
+   "giftbox": {
+    "enabled": 0
+   },
+   "gotolivemodel_parcelable": {
+    "enabled": true
+   },
    "event_queue":{
       "sqlite":{
          "enable":false,
          "synchornize_mode":false
       }
    },
+  "unity": {
+    "enabled": 1
+  },
+  "unity_config": {
+    "apply_version" : 2000,
+    "apply_region" : ["ALL"]
+  },
    "network_threshold":{
       "yellow":100,
       "red":50
@@ -21,14 +34,14 @@
    ],
    "gift_reminding_start_time":30,
    "gift_reminding_duration":20,
-   "follow_reminder_duration":180,
+   "follow_reminder_duration":30,
    "rating":{
-      "open_app_count":5,
-      "watch_stream_total_time":60,
-      "total_open_app_day":1,
-      "total_follow_count":10,
-      "total_share_count":5,
-      "total_comment_count":5,
+      "open_app_count":3,
+      "watch_stream_total_time":0,
+      "total_open_app_day":0,
+      "total_follow_count":0,
+      "total_share_count":0,
+      "total_comment_count":0,
       "reset_all_rating_criteria_and_ask_again_day":7
    },
    "low_phone_streamers":[
@@ -75,7 +88,7 @@
          "xiaomi"
       ]
    },
-   "latest_app_version":2366,
+   "latest_app_version":99999999,
    "debug_info":{
       "bugsee":1
    },
@@ -135,10 +148,8 @@
       "d-02H",
       "SM-T285YD",
       "SM-J320G",
-      "Pixel 3a",
-      "Pixel 3a XL",
-      "Pixel 3",
-      "Pixel 3 XL"
+      "Pixel 6 Pro",
+      "CPH1831"
    ],
    "crazy_zoo":{
       "free":{
@@ -156,34 +167,178 @@
          "mobile_pipe_index":-1
       }
    },
-   "live_atmos":{
-      "apply_version":2450,
-      "snow":{
-         "apply_version":9999,
-         "trigger_message":[
-            "Xmas",
-            "聖誕快樂",
-            "🎄",
-            "メリクリ"
-         ],
-         "duration_sec":30
-      },
-      "boxes":{
-         "apply_version":9999,
-         "trigger_message":[
-            "Zatmos",
-            "❤️",
-            "Happy Valentine's Day",
-            "love you",
-            "啾💋",
-            "好き",
-            "ドキドキ",
-            "情人節快樂",
-            "愛妳",
-            "愛你"
-         ],
-         "duration_sec":30,
-         "max_total_count":35
+   "push_url_array_apply_version":2452,
+   "pk_log_enable":true,
+   "starfruitLogApplyVersion":2450,
+   "low_quality_solution" : {
+      "apply_version" : 2450,
+      "buffering_check_period_sec" : 30.0,
+      "lower_down_threshold_for_buffering_sec" : 20.0,
+      "max_buffering_record_count" : 30,
+      "check_frequency_sec": 2,
+      "ping_host": "8.8.8.8",
+      "ping_count": 5,
+      "ping_high_latency_threshold_ms": 150,
+      "upper_threshold_for_buffering_free_sec" : 300,
+      "upper_retry_times" : 2
+   },
+   "painter" : {
+      "apply_version" : 2479
+   },
+   "matomo_queue_dispatch_interval": 30,
+   "avatar_black_list":{
+      "models":[
+         "HTC_X9u"
+      ],
+      "chipsets":[
+         "MT6795T"
+      ],
+      "black_user_ids":[
+         {
+            "user_id":"e0c410e7-75f8-47b5-8b27-138eabbf0970",
+            "model":"Redmi Note 8 Pro"
+         }
+      ]
+   },
+   "avatar_gift_animation":{
+      "enable": true,
+      "black_list":[
+         "CPH",
+         "HTC_X9u",
+         "CPH",
+         "MP1701"
+      ],
+      "black_user_ids":[
+         {
+            "user_id":"e0c410e7-75f8-47b5-8b27-138eabbf0970",
+            "model":"Redmi Note 8 Pro"
+         },
+         {
+            "user_id":"9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba",
+            "model":"G8142"
+         }
+      ]
+   },
+   "apm" : {
+    "apply_version" : 2609,
+    "sampling" : "9AB",
+    "anr_timeout" : 5000,
+    "max_acceptable_drop_frame" : 50,
+    "collect_cpu_usage_interval" : 3000,
+    "enable_request_info_event" : true
+   }, 
+   "group_stream_black_list":{
+      "models":[
+         "HTC_X9u"
+      ],
+      "chipsets":[]
+   },
+   "database_dispatcher_service":{
+      "apply_version_code": 16293600
+   },
+   "gift_file_keep_days":7,
+   "apply_new_comment_module":true,
+   "apply_new_gift_animation_module":false,
+   "matomo" : {
+      "matomo_alert_update_version" : 1,
+      "matomo_log_to_firebase":[
+         "registration_status"
+      ]
+   },
+   "matomo_events": {
+      "disabled_events": {
+         "ably" : {
+            "apply_version": 16657337
+         },
+         "pubnub" : {
+            "apply_version": 16657337
+         }
       }
+   },
+   "matomo_log_to_firebase":[],
+   "ed_manager":{
+      "factory":true,
+      "decay_policy": {
+         "level1Config": {
+            "minIntervalMillis": 1000,
+            "maxIntervalMillis": 4000,
+            "periodMillis": 30000,
+            "multiplier": 1.25
+         },
+         "level2Config": {
+            "minIntervalMillis": 1000,
+            "maxIntervalMillis": 9000,
+            "periodMillis": 30000,
+            "multiplier": 1.5
+         },
+         "level3Config": {
+            "minIntervalMillis": 1000,
+            "maxIntervalMillis": 16000,
+            "periodMillis": 30000,
+            "multiplier": 1.75
+         }
+      },
+      "enable_version":"2.102.0.0"
+   },
+   "gpu_poor_performance":{
+      "bitrate_mode_vbr":{
+         "models":[
+            "vivo 1935",
+            "CPH1831"
+         ],
+         "blacklist_user_devices":[
+            {
+               
+            }
+         ]
+      }
+   },
+   "system_pip": {
+      "apply_version": 13333334,
+      "black_model_list": [],
+      "force_redirect" : {
+        "brand_list" : [],
+        "model_list" : []
+      }
+   },
+   "braze": {
+      "apply_version": 16518252
+   },
+   "aerobic": {
+    "apply_version": "2.100.0.0",
+    "endpoints_config": {
+      "apply_version": "2.100.0.0",
+      "endpoints": [
+        {
+          "path": "path/",
+          "method": "GET",
+          "scores": [
+            {
+              "duration": 1,
+              "score": 0.7
+            }
+          ]
+        },
+        {
+          "path": "path/upload/:id",
+          "method": "POST",
+          "scores": [
+            {
+              "duration": 1,
+              "score": 0.7
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "home_v2_enable": true,
+  "player_process": {
+    "apply_version": 16663000,
+    "keepPlayerProcess": true,
+    "deviceId" : ["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"],
+    "alwaysKeepProcess": false},
+  "army_iap_test": {
+     "enabled": 1
    }
 }
