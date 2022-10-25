@@ -7,7 +7,7 @@ rewardSecond: 30
 readyWaitingSecond: 30
 timeoutSecond: 15 # changing [timeoutSecond] to a larger value may cause end-to-end tests to fail (please refer to api/app/api/e2e/pk_test.go)
 consecutiveRejectionPeriod: 3600
-consecutiveRejectionCount: 1
+consecutiveRejectionCount: 3
 consecutiveRejectionNoDisturbSecond: 180 # 連續拒絕後幾秒內不會參與任何配對
 rejectionUnPairSeconds: 10 # 拒絕後幾秒內不會被同一個人配對到
 minAndroidVersion: "2.10.1"
