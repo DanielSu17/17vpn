@@ -1,24 +1,24 @@
 # Diamond Mission Main Setting
 start_time: "2022-02-13 21:00:00 (GMT+0800)" # 2022-02-13 21:00:00 (GMT+0800)
-end_time: "2022-10-20 21:00:00 (GMT+0800)" # 2022-03-13 21:00:00 (GMT+0800)
+end_time: "2022-10-31 21:00:00 (GMT+0800)" # 2022-03-13 21:00:00 (GMT+0800)
 enable: true # true or false
 url: "https://event.wave.com.tw/13983-wave-20220308-diamondtask"
-monthly_diamond_upperlimit: 3100
+monthly_diamond_upperlimit: 31000
 
 # Unique users share live link once
-give_diamonds_share_link: 2
+give_diamonds_share_link: 10
 max_diamonds_received_share_link: 20
 # Users stay in live in a period
-how_many_users_inlive: 10
-stay_how_many_mins: 5
-give_diamonds_inlive: 5
+how_many_users_inlive: 2
+stay_how_many_mins: 2
+give_diamonds_inlive: 30
 max_diamonds_received_inlive: 60
 # Unique users leave a comment per minute
-how_many_users_comment: 5
-give_diamonds_comment: 1
+how_many_users_comment: 2
+give_diamonds_comment: 30
 max_diamonds_received_comment: 60
 # Users tap love once
-give_diamonds_taplove: 0.05
+give_diamonds_taplove: 2
 max_diamonds_received_taplove: 10
 
 # TODO: Remove old parameters after api deploy
@@ -38,4 +38,4 @@ hearts_max_daily_acquire_diamonds: 10 # N * hearts_diamonds_per_action
 diamond_duration_min: 259200 # 180 days = 180 * 24 * 60 mins = 259200 mins
 viewers_count_threshold: 10
 comments_unique_users_threshold: 5
-min_exchange_remain_threshold: 4500
+min_exchange_remain_threshold: 10
