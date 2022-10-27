@@ -1,6 +1,6 @@
 enable: true
 senderMatchingSecond: 120
-receiverMatchingSecond: 30
+receiverMatchingSecond: &receiverMatchingSecond 30
 gameDurationSecond: 90
 countdownSecond: 15
 rewardSecond: 30
@@ -59,7 +59,10 @@ friendPkRules:
   - type: 2
     token: { key: pk_friend_rule_content1 }
   - type: 2
-    token: { key: pk_friend_rule_content2 }
+    token:
+      key: pk_friend_rule_content2 
+      params: 
+        - value: *receiverMatchingSecond
   - type: 2
     token: { key: pk_friend_rule_content3 }
 
