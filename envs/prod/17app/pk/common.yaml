@@ -1,6 +1,6 @@
 enable: true # 全部區域總開關
 senderMatchingSecond: 120 # 主動方隨機配對中等待的秒數, pk.match lock time
-receiverMatchingSecond: 30 # 被動方回應的時間
+receiverMatchingSecond: &receiverMatchingSecond 30 # 被動方回應的時間
 gameDurationSecond: 300 # ＰＫ遊戲時間
 countdownSecond: 15 # 倒數時間閃爍icon
 rewardSecond: 30 # 遊戲結算完到最後關閉的時間
@@ -59,7 +59,10 @@ friendPkRules:
   - type: 2
     token: { key: pk_friend_rule_content1 }
   - type: 2
-    token: { key: pk_friend_rule_content2 }
+    token:
+      key: pk_friend_rule_content2 
+      params: 
+        - value: *receiverMatchingSecond
   - type: 2
     token: { key: pk_friend_rule_content3 }
 
