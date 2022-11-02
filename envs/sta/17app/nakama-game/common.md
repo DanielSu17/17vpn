@@ -23,8 +23,6 @@
                 icon: "http://cdn.17app.co/b509416d-c234-4f03-a4a7-f13c24939aef.png"
                 url: "https://17live-game-sta/fruitfarm/"
                 webViewBgColor: "#ffecba"
-                componentKeyword: "xxxxx"
-                eventNamePostfix: "fruit.farm"
                 nameI18nkey: "ff_name_key"
                 descI18nkey: "ff_desc_key"
                 versionControl:
@@ -53,8 +51,6 @@
 - icon(`string`): The url of the game icon.
 - url(`string`): The url of the game.
 - webViewBgColor(`string`): The background color of the webview for the game.
-- componentKeyword(`string`): The UI component keyword of the game center click matomo event.
-- eventNamePostfix(`string`): The postfix of the event name of the game center click matomo event.
 - nameI18nkey(`string`): The i18n key of the game name.
 - descI18nkey(`string`): The i18n key of the game description.
 - versionControl:
