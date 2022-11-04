@@ -21,14 +21,14 @@ See the [SPEC](https://docs.google.com/presentation/d/1KV2bWTbb4_79rv82ldeLPcGRR
 ```yaml
 probabilityTable: # Basic probability of each index.
   # index 0
-  - kamia: 3333
-    kamib: 3333
-    kamic: 3334
+  - kamileft: 3333
+    kamimid: 3333
+    kamiright: 3334
 
 odds: # The odds of each item if a player win.
-  kamia: 2.9 # 2.9 times to payout.
-  kamib: 2.9 # 2.9 times to payout.
-  kamic: 2.9 # 2.9 times to payout.
+  kamileft: 2.9 # 2.9 times to payout.
+  kamimid: 2.9 # 2.9 times to payout.
+  kamiright: 2.9 # 2.9 times to payout.
 
 tax: # The tax of each round - always transfer from game pool to revenue each round.
   emergency: 0.025 # 2.5%
