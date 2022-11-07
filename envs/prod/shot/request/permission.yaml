@@ -1,0 +1,61 @@
+# https://github.com/17media/shot/blob/master/docs/Permission.md
+# PermIdRead  = 1
+# PermIdWrite = 2
+# PermIdAdmin = 4
+
+# EnvProd = 1
+# EnvPreProd = 2
+# EnvUat = 3
+
+detail:
+  mongo:
+    scopeRangeStart: 1000
+    role:
+      read:
+        id: 1
+        approve: basic
+      readWrite:
+        id: 2
+        approve: advanced
+    env:
+      prod:
+        id: 1
+        approve: advanced
+      pre-prod:
+        id: 2
+        approve: basic
+      uat:
+        id: 3
+        approve: basic
+  datadog:
+    scopeRangeStart: 900
+    role:
+      Read:
+        id: 1
+        approve: basic
+      Standard:
+        id: 2
+        approve: basic
+      Admin:
+        id: 4
+        approve: advanced
+
+approveFlow:
+  basic:
+      - supervisor
+      - DBA
+  advanced:
+      - supervisor
+      - sreDirector
+      - DBA
+  level: [ basic, advanced]
+
+slackUser:
+  DBA: 
+    id: U03PP5RTMHA
+    email: desmondlin@17.media
+    name: desmondlin
+  sreDirector:
+    id: U416GNC1Z
+    email: sammy@17.media
+    name: sammy
