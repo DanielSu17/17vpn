@@ -6,9 +6,9 @@
 name: Configure Prescaling
 on:
   schedule:
-    - cron: '0 2 * * *' # 10AM UTC+8
-    - cron: '0 6 * * *' # 14PM UTC+8
-    - cron: '0 10 * * *' # 18PM UTC+8
+    - cron: '0 2 * * 1-5' # 10AM UTC+8
+    - cron: '0 6 * * 1-5' # 14PM UTC+8
+    - cron: '0 10 * * 1-5' # 18PM UTC+8
 jobs:
   configure_prescaling:
     name: Configure prescaling
