@@ -33,6 +33,53 @@ playList:
       key: "pk_menu_mode_title_random"
     description:
       key: ""
+      
+playListV2:
+  - id: schedulePK
+    mode: 1
+    match: 3
+    openUI:
+      url: ""
+      title:
+        key: "pk_menu_schedule_title"
+      description:
+        key: ""
+    closeUI:
+      url: ""
+      title:
+        key: ""
+      description:
+        key: ""
+  - id: friendPK
+    mode: 1
+    match: 2
+    openUI:
+      url: "https://cdn.17app.co/78e3a44e-6de1-4136-a7e8-5281e94f1416.png"
+      title:
+        key: "pk_menu_friend_title"
+      description:
+        key: ""
+    closeUI:
+      url: ""
+      title:
+        key: ""
+      description:
+        key: ""
+  - id: normalOneVOne
+    mode: 1
+    match: 1
+    openUI:
+      url: "https://cdn.17app.co/73138b43-4fee-42d6-95a5-e5ae0437f839.png"
+      title:
+        key: "pk_menu_mode_title_random"
+      description:
+        key: ""
+    closeUI:
+      url: ""
+      title:
+        key: ""
+      description:
+        key: ""
 
 # Determine whether to show friendPK option
 friendPK:
@@ -40,3 +87,9 @@ friendPK:
   versionControl:
     ios: "3.211.0"
     android: "2.126.0"
+# Determine whether to show schedulePK option
+schedulePK:
+  enable: true
+  versionControl:
+    ios: "9.211.0"
+    android: "9.126.0"
