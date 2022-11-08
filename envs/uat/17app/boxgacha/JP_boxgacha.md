@@ -1,1 +1,1 @@
-# JP boxGoachaEVent 設定
+# JP boxGoachaEvent

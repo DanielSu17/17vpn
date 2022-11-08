@@ -1,1 +1,1 @@
-# SG boxGoachaEVent 設定
+# SG boxGoachaEvent

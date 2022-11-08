@@ -1,1 +1,1 @@
-# VN boxGoachaEVent 設定
+# VN boxGoachaEvent

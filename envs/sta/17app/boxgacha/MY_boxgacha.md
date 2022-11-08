@@ -1,1 +1,1 @@
-# MY boxGoachaEVent 設定
+# MY boxGoachaEvent

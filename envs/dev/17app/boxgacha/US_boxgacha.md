@@ -1,1 +1,1 @@
-# US boxGoachaEVent 設定
+# US boxGoachaEvent

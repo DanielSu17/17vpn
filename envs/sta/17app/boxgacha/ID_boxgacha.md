@@ -1,1 +1,1 @@
-# ID boxGoachaEVent 設定
+# ID boxGoachaEvent

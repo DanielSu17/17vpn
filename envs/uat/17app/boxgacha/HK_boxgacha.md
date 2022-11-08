@@ -1,1 +1,1 @@
-# HK boxGoachaEVent 設定
+# HK boxGoachaEvent

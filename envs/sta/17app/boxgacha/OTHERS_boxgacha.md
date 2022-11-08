@@ -1,1 +1,1 @@
-# OTHERS boxGoachaEVent 設定
+# OTHERS boxGoachaEvent

@@ -1,1 +1,1 @@
-# TH boxGoachaEVent 設定
+# TH boxGoachaEvent

@@ -1,1 +1,1 @@
-# PH boxGoachaEVent 設定
+# PH boxGoachaEvent
