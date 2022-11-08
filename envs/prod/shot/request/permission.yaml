@@ -32,15 +32,20 @@ detail:
     role:
       Read:
         id: 1
-        approve: basic
+        approve: no-DBA-basic
       Standard:
         id: 2
-        approve: basic
+        approve: no-DBA-basic
       Admin:
         id: 4
-        approve: advanced
+        approve: no-DBA-advanced
 
 approveFlow:
+  no-DBA-basic:
+      - supervisor
+  no-DBA-advanced:
+      - supervisor
+      - sreDirector
   basic:
       - supervisor
       - DBA
@@ -48,7 +53,7 @@ approveFlow:
       - supervisor
       - sreDirector
       - DBA
-  level: [ basic, advanced]
+  level: [ no-DBA-basic,basic,no-DBA-advanced, advanced]
 
 slackUser:
   DBA: 
