@@ -87,12 +87,24 @@
   - name: k8ssta-revprox-tw-main
     minReplicas: 36
 
-# stress test for /api/v1/gifts
-- startTime: "2022-06-24 10:00:00 (GMT+0800)"
-  endTime: "2022-06-24 12:30:00 (GMT+0800)"
+# 11/09 ably experiment
+- startTime: "2022-11-11 10:50:00 (GMT+0800)"
+  endTime: "2022-11-11 14:30:00 (GMT+0800)"
   HPAConfigs:
   - name: k8ssta-goapi-main
-    minReplicas: 50
+    minReplicas: 80
+  - name: k8ssta-golives-main
+    minReplicas: 80
+  - name: k8ssta-gotrade-main
+    minReplicas: 40
+  - name: k8ssta-revprox-tw-main
+    minReplicas: 36
+  - name: k8ssta-gocells-main
+    minReplicas: 40
+  - name: k8ssta-concert-stream-tw-main
+    minReplicas: 30
+  - name: k8ssta-concert-trade-main
+    minReplicas: 30
 
 # send gift to 2 transcations POC
 - startTime: "2022-10-26 11:40:00 (GMT+0800)"
