@@ -1,1 +1,1 @@
-# VN boxGoachaEvent
+# VN boxGachaEvent

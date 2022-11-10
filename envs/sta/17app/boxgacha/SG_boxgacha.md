@@ -1,1 +1,1 @@
-# SG boxGoachaEvent
+# SG boxGachaEvent

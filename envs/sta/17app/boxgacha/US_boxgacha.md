@@ -1,1 +1,1 @@
-# US boxGoachaEvent
+# US boxGachaEvent

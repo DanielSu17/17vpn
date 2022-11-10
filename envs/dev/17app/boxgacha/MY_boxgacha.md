@@ -1,1 +1,1 @@
-# MY boxGoachaEvent
+# MY boxGachaEvent

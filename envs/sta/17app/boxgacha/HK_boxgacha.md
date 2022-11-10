@@ -1,1 +1,1 @@
-# HK boxGoachaEvent
+# HK boxGachaEvent

@@ -1,1 +1,1 @@
-# JP boxGoachaEvent
+# JP boxGachaEvent

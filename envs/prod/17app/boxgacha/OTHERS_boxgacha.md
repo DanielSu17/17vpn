@@ -1,1 +1,1 @@
-# OTHERS boxGoachaEvent
+# OTHERS boxGachaEvent

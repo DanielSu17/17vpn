@@ -1,1 +1,1 @@
-# TW boxGoachaEvent
+# TW boxGachaEvent
