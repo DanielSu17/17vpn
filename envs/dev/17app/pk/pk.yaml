@@ -33,53 +33,44 @@ playList:
       key: "pk_menu_mode_title_random"
     description:
       key: ""
-      
+
+# match: 1(random), 2(friend), 3(schedule)
 playListV2:
-  - id: schedulePK
-    mode: 1
-    match: 3
-    openUI:
-      url: ""
+  - match: 3
+    enableUI:
+      url: "TBD"
       title:
         key: "pk_menu_schedule_title"
       description:
-        key: ""
-    closeUI:
-      url: ""
+        key: "pk_menu_schedule_desc"
+    disableUI:
+      url: "TBD"
       title:
-        key: ""
+        key: "pk_menu_schedule_title"
       description:
-        key: ""
-  - id: friendPK
-    mode: 1
-    match: 2
-    openUI:
+        key: "pk_menu_schedule_desc"
+  - match: 2
+    enableUI:
       url: "https://cdn.17app.co/78e3a44e-6de1-4136-a7e8-5281e94f1416.png"
       title:
         key: "pk_menu_friend_title"
-      description:
-        key: ""
-    closeUI:
-      url: ""
+    disableUI:
+      url: "TBD"
       title:
-        key: ""
+        key: "pk_menu_friend_title"
       description:
-        key: ""
-  - id: normalOneVOne
-    mode: 1
-    match: 1
-    openUI:
+        key: "TBD"
+  - match: 1
+    enableUI:
       url: "https://cdn.17app.co/73138b43-4fee-42d6-95a5-e5ae0437f839.png"
       title:
         key: "pk_menu_mode_title_random"
-      description:
-        key: ""
-    closeUI:
-      url: ""
+    disableUI:
+      url: "TBD"
       title:
-        key: ""
+        key: "pk_menu_mode_title_random"
       description:
-        key: ""
+        key: "TBD"
 
 # Determine whether to show friendPK option
 friendPK:
