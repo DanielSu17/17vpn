@@ -40,35 +40,6 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
-- ID: 3a09b034-96d3-4e3c-9a00-b97aa1a6a514
-  type: 8
-  category: 0
-  lifeCycle: 1
-  targetAudience: 2
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2211_sea_welcomeoffer_firsthalf
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: usnovwelcomeoffer
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_IAP_reward_jp_npu_desc
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-11-01 18:00:00 (GMT+0800)
-    endTime: 2022-11-15 00:00:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
 - ID: c1c74726-bef4-4a35-a35e-3f8bee71460f
   type: 16
   category: 0
@@ -98,159 +69,120 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-- ID: 97c2efe7-a8b5-4b5a-83be-5fb1f7c529d8
-  type: 24
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 5
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2210_ops_halloween_missionreward
-    amount: 1
-    expireTimeSecs: 172800
-  i18nTitle: us_mission_daily_login
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: us_baggage_mission_newbie
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-10-17 05:00:00 (GMT+0800)
-    endTime: 2022-11-01 05:00:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: e65f649a-a9d5-44d5-a9c3-835c5772bf2a
+- ID: 08f6d832-f60f-44c8-b692-c408d5d14d83
   type: 9
   category: 0
   lifeCycle: 0
   targetAudience: 0
   levelRange:
-    min: 5
+    min: 1
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2210_ops_halloween_missionreward
-    amount: 1
-    expireTimeSecs: 172800
+    rewardID: 2211_my_newbiestrail_a
+    amount: 5
+    expireTimeSecs: 86400
   i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
   i18nTitleParams:
-  - value: "5"
+  - value: "30"
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: us_baggage_mission_newbie
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
   i18nDescriptionParams: []
-  goalValue: 300
+  goalValue: 1800
   enableTimeRange:
-  - startTime: 2022-10-17 05:00:00 (GMT+0800)
-    endTime: 2022-11-01 05:00:00 (GMT+0800)
+  - startTime: 2022-11-15 00:00:00 (GMT+0800)
+    endTime: 2022-11-21 23:59:59 (GMT+0800)
   refIDs: []
   platforms:
   - android
   - ios
-  requirePhoneBinding: false
+  requirePhoneBinding: true
   withReminder: true
-- ID: 6ae42a70-b3ec-4135-ace2-7f58f9bf7dfc
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 5
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2210_ops_halloween_missionreward
-    amount: 1
-    expireTimeSecs: 172800
-  i18nTitle: baggage_mission_send_gifts
-  i18nTitleParams:
-  - value: "2"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: us_baggage_mission_newbie
-  i18nDescriptionParams: []
-  goalValue: 2
-  enableTimeRange:
-  - startTime: 2022-10-17 05:00:00 (GMT+0800)
-    endTime: 2022-11-01 05:00:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: d1d03ad9-e844-4b49-9147-710a00be8056
+- ID: bb478a32-009a-44a5-8a9b-746589c2bb4b
   type: 5
   category: 0
   lifeCycle: 0
   targetAudience: 0
   levelRange:
-    min: 5
+    min: 1
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2210_ops_halloween_missionreward
-    amount: 1
-    expireTimeSecs: 172800
+    rewardID: 2211_my_newbiestrail_a
+    amount: 5
+    expireTimeSecs: 86400
   i18nTitle: baggage_mission_leave_comment_reward_title2
   i18nTitleParams:
-  - value: "5"
+  - value: "10"
     mapOption: 0
     fontAttribute: null
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: us_baggage_mission_newbie
+  i18nDescription: baggage_mission_opt_leave_comment_reward_desc
   i18nDescriptionParams: []
-  goalValue: 5
+  goalValue: 10
   enableTimeRange:
-  - startTime: 2022-10-17 05:00:00 (GMT+0800)
-    endTime: 2022-11-01 05:00:00 (GMT+0800)
+  - startTime: 2022-11-15 00:00:00 (GMT+0800)
+    endTime: 2022-11-21 23:59:59 (GMT+0800)
   refIDs: []
   platforms:
   - android
   - ios
-  requirePhoneBinding: false
+  requirePhoneBinding: true
   withReminder: true
-- ID: 3c151ea0-ee26-426e-855c-e9ff0a3d3506
-  type: 11
+- ID: 27d16b35-440e-4e0e-8a1d-cd700ba1e3d9
+  type: 3
   category: 0
   lifeCycle: 0
   targetAudience: 0
   levelRange:
-    min: 5
+    min: 1
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2210_ops_halloween_missionreward
-    amount: 1
-    expireTimeSecs: 172800
-  i18nTitle: baggage_mission_daily_share_reward_title
-  i18nTitleParams: []
+    rewardID: 2211_my_newbiestrail_a
+    amount: 5
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_send_specific_gifts_reward_title
+  i18nTitleParams:
+  - value: "2"
+    mapOption: 0
+    fontAttribute: null
+  - value: 2211_my_newbiestrail_s
+    mapOption: 2
+    fontAttribute: null
+  - value: 2211_my_newbiestrail_m
+    mapOption: 2
+    fontAttribute: null
+  - value: 2211_my_newbiestrail_l
+    mapOption: 2
+    fontAttribute: null
+  - value: 2208_my_trails_a
+    mapOption: 2
+    fontAttribute: null
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: baggage_mission_opt_daily_share_reward_des
+  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
   i18nDescriptionParams: []
-  goalValue: 1
+  goalValue: 2
   enableTimeRange:
-  - startTime: 2022-10-17 05:00:00 (GMT+0800)
-    endTime: 2022-11-01 05:00:00 (GMT+0800)
-  refIDs: []
+  - startTime: 2022-11-15 00:00:00 (GMT+0800)
+    endTime: 2022-11-21 23:59:59 (GMT+0800)
+  refIDs:
+  - 2211_my_newbiestrail_s
+  - 2211_my_newbiestrail_m
+  - 2211_my_newbiestrail_l
+  - 2208_my_trails_a
+  - 2208_my_trails_b
+  - 2208_my_trails_c
+  - 2208_my_trails_d
   platforms:
   - android
   - ios
-  requirePhoneBinding: false
+  requirePhoneBinding: true
   withReminder: true
 i18nMissionCompleteToast: baggage_mission_toast_claimed
 refreshHour: 5
