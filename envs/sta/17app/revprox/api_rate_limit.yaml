@@ -67,8 +67,8 @@ rate_limits:
   - {url: "/api/v1/auth/phone/sendVerificationCode",              method: "POST",    flow_per_second: 30,          reservoir_size: 30,    scope: by_global}
 #  - {url: "/api/v1/auth/registerAction2",                         method: "POST",    flow_per_second: 1000,        reservoir_size: 1000,  scope: by_global}
   - {url: "/api/v1/auth/registerAction",                          method: "POST",    flow_per_second: 1000,        reservoir_size: 1000,  scope: by_global}
-#   - {url: "/api/v1/auth/loginAction",                             method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
-#   - {url: "/api/v1/auth/loginAction2",                            method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
+  - {url: "/api/v1/auth/loginAction",                             method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
+  - {url: "/api/v1/auth/loginAction2",                            method: "POST",    flow_per_second: 0.083,       reservoir_size: 5,     scope: by_ip}
 
   #app/api/api/cryptocurrency/cryptocurrency.go:73:		apis.AddRateLimit(rl, apis.RateLimitMithSendPhoneVerificationCode, ratelimiter.Minute, 5, apis.ByIP),
   #app/api/api/cryptocurrency/cryptocurrency.go:78:		apis.AddRateLimit(rl, apis.RateLimitMithVerifySMSCode, ratelimiter.Minute, 10, apis.ByIP),
