@@ -3,6 +3,8 @@ enable_log_block_info: true
 enable_log_block_user_id: true
 protected_routes_with_methods:
   - route: "/apigateway.*"
+  - route: "/apiGateWay"
+    methods: ["POST"]
   - route: "/auth/.*"
   #- route: "/cells.*"
   - route: "/legacy/followUserAction"
