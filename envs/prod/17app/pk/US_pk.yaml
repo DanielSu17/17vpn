@@ -91,8 +91,13 @@ whiteList:
   - 22fccb33-8d7f-409b-8943-5d100e999a91 #shotbysham
   - 4aa6f1a4-6fa4-43de-8bb2-3899de5da95c #flawlessri
 silenceList: []
-displayIconType: 1
-displayInvitationPictures: 3
+displayIconType: 1 # 功能按紐 1.VS 2.PK
+displayInvitationPictures: 3 # 配對中隨機頭像圖片 1.TW 2.JP 3.US 4.MENA
+# 配對條件： 
+# 1. 開播選擇同活動，同分數> 活動分數 ± 1％ > 活動分數 ± 5％> 活動分數 ± 10％ > 所有同活動主播
+# 2. 同等級 > 等級 ± 10 > 等級 ± 20 
+# 3. 同勝率 > 勝率 ± 5% > 勝率 ± 10%
+# 4. 所有在線同區的主播 
 matchingRules:
   levelRange:
   - 10
