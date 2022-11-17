@@ -94,10 +94,34 @@ sections:
     more: true
     orderModel: 2
 
+  - id: Label # スポーツ
+    labelID: 2207_jp_sports17
+    name:
+      key: streamer_jp_label_sports17
+    enable: true
+    dedup: true
+    minGrids: 2
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
   - id: Label # 歌
     labelID: jp_singer
     name:
       key: streamer_jp_label_singer
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # 楽器演奏
+    labelID: jp_instrument
+    name:
+      key: streamer_jp_label_instrument
     enable: true
     dedup: true
     minGrids: 3
@@ -125,18 +149,6 @@ sections:
     enable: true
     dedup: true
     minGrids: 5
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
-  - id: Label # 楽器演奏
-    labelID: jp_instrument
-    name:
-      key: streamer_jp_label_instrument
-    enable: true
-    dedup: true
-    minGrids: 3
     style: 3
     more: true
     category: normal
@@ -189,7 +201,6 @@ sections:
     more: true
     category: normal
     orderModel: 2
-
 
   - id: GroupCall # GroupCall 
     name:
@@ -350,18 +361,6 @@ sections:
     orderModel: 2
 
 #未使用ジャンル
-
-#  - id: Label # スポーツ
-#    labelID: 2207_jp_sports17
-#    name:
-#      key: streamer_jp_label_sports17
-#    enable: true
-#    dedup: true
-#    minGrids: 3
-#    style: 3
-#    more: true
-#    category: normal
-#    orderModel: 2
 
 #  - id: Label # エンタメ
 #    labelID: 2207_jp_entertainment17
