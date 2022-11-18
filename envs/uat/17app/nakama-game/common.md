@@ -25,6 +25,20 @@
                 webViewBgColor: "#ffecba"
                 nameI18nkey: "ff_name_key"
                 descI18nkey: "ff_desc_key"
+                tippingGift:
+                  enable: true
+                  triggerPoint: 1000
+                  giftInfo:
+                    regular:
+                    - id: red_envelope
+                    - id: flower
+                    special:
+                      blueberry:
+                        id: va
+                      pineapple:
+                        id: gift_newyear_red_o
+                      strawberry:
+                        id: va2
                 versionControl:
                     enable: false
                     ios: "3.126.0"
@@ -53,6 +67,20 @@
 - webViewBgColor(`string`): The background color of the webview for the game.
 - nameI18nkey(`string`): The i18n key of the game name.
 - descI18nkey(`string`): The i18n key of the game description.
+- tippingGift:
+  - enable(`bool`): Enable tipping gift or not. Supported value: `true,false`
+  - triggerPoint(`number`): The threshold point for tipping gift dialog. If a user winning more than this point in a round, the tipping gift dialog will be shown.
+  - giftInfo:
+    - regular:
+      - id(`string`): The gift id for tipping gift regular items.
+      - id(`string`): The gift id for tipping gift regular items.
+    - special:
+      blueberry:
+      id(`string`): The gift id for tipping gift regular items.
+      pineapple:
+      id(`string`): The gift id for tipping gift regular items.
+      strawberry:
+      id(`string`): The gift id for tipping gift regular items.
 - versionControl:
     - enable(`bool`): Enable version control or not. Supported value: `true,false`
     - ios(`string`): The minimum iOS version support.
