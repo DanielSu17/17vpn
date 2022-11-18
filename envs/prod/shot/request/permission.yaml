@@ -39,6 +39,25 @@ detail:
       Admin:
         id: 4
         approve: no-DBA-advanced
+  mysql:
+    scopeRangeStart: 2000
+    role:
+        read:
+          id: 1
+          approve: basic
+        readWrite:
+          id: 2
+          approve: advanced
+    env:
+      prod:
+        id: 1
+        approve: advanced
+      pre-prod:
+        id: 2
+        approve: basic
+      uat:
+        id: 3
+        approve: basic
 
 approveFlow:
   no-DBA-basic:
