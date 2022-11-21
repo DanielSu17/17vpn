@@ -396,6 +396,35 @@ eventTitles:
     regionMode: Include
     regions: [US]
 
+  - id: "event_title_2211_usea_travel_battles"
+    badgeIconURL: "https://cdn.17app.co/2b7da34d-f685-4b04-83ae-4cf0abdb142e.png"
+    badgeGrayoutIconURL: "https://cdn.17app.co/1c587c89-4bb8-401f-b60e-8dcb72a0defd.png"
+    frameIconURL: "https://cdn.17app.co/b69bc894-93e8-477c-9fd8-75bb5135a250.png"
+    frameGrayoutIconURL: "https://cdn.17app.co/3e6731e7-49e2-4327-8689-e42ec9d90428.png"
+    nameToken:
+      key: "2211_us_travel_name"
+    descriptionToken:
+      key: "2211_us_travel_description"
+    backgroundType: 1
+ # if ctaEventID not set, user will not see call to action to event page
+    ctaEventID: 15743
+    userIDs:
+      - fc4ee60f-308b-45cb-be43-653cf2c268c9
+      - 961e28ec-487e-4a6a-82fe-764e60820e94
+      - 1a8492f3-ee12-49ad-9ca7-165b34c05697
+      - c8db340e-6587-45e8-8e59-6b2358d08329
+      - ddbfbfb3-dbc1-4a1e-8344-279ba0caf343
+ # EventTimeRange is when user sees description of event
+    eventTimeRange:
+      startTime: 2022-11-20 18:00:00 (GMT-0800)
+      endTime: 2022-12-31 18:00:00 (GMT-0800)
+ # TitleTimeRange means when above userIDs can start using their event titles
+    titleTimeRange:
+      startTime: 2022-11-21 18:00:00 (GMT-0800)
+      endTime: 2022-12-21 18:00:00 (GMT-0800)
+    regionMode: Include
+    regions: ["US","MY","PH","SG"]
+
   - id: "dcb4c111-5e5a-4760-a770-40669577948a"
     badgeIconURL:  "https://cdn.17app.co/45d889ad-75ac-4026-84d1-726261695f2f.png"
     badgeGrayoutIconURL: "https://cdn.17app.co/d215ee6f-7ff4-40ae-8267-668e3f1fe58e.png"
