@@ -12,35 +12,3 @@ oneSignal:
   enableBackupForFailUpdate: false
   # simluate one signal fail to update new players. option for qa testing, not allowed in prod
   forceFailUpdate: false
-
-braze:
-  messageTypeWhitelist:
-#     - NewLiveMessage
-    - NewLiveScheduleMessage
-    - ChurnUserMessage
-    - NewSystemMessage
-    - NewClanInviteMessage
-    - NewClanChatMessage
-    - NewPrivateChatMessage
-    - NewGuardianMessage
-    - NewGuardianStolenMessage
-    - NewFollowMessage
-    - NewFollowRequestMessage
-    - NewPostLikeMessage
-    - NewPostCommentMessage
-    - NewPostTagMessage
-    - NewPostPushMessage
-    - NewUnreadPostBadgeCount
-    - NewPostCommentTagMessage
-    - NewLiveRemindingMessage
-    - NewClipMessage
-    - NewArchiveCompletedMessage
-    - NewArchiveBannedMessage
-    - NewArchiveLikedMessage
-
-  # use Braze or OneSignal, max: 100, min: 0
-  # TODO: set to 100 after fully integrated Braze
-  ratio: 100
-  
-  # backup when Braze returns error, use OneSignal as backup
-  enableBackup: true
