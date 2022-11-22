@@ -40,6 +40,39 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
+- ID: 8a23ff55-e6ba-417a-b574-b643cc625485
+  type: 9
+  category: 0
+  lifeCycle: 1
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2211_po_missionrewards_bag
+    amount: 3
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "10"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 600
+  enableTimeRange:
+  - startTime: 2022-11-16 18:00:00 (GMT-0800)
+    endTime: 2022-11-30 21:00:00 (GMT-0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
 - ID: c131eaf6-046a-4888-9c16-a16b0ca1504b
   type: 8
   category: 0
@@ -176,7 +209,7 @@ missions:
   reward:
     rewardType: 1
     rewardID: 2211_po_missionrewards_bag
-    amount: 1
+    amount: 2
     expireTimeSecs: 86400
   i18nTitle: us_mission_daily_login
   i18nTitleParams: []
