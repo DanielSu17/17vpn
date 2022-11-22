@@ -1,0 +1,99 @@
+### makeup type
+# 0: lip 口紅 // EFFECT_BEAUTY_MAKEUP_LIP
+# 1: cheek 腮紅 // EFFECT_BEAUTY_MAKEUP_CHEEK
+# 2: nose 修容 // EFFECT_BEAUTY_MAKEUP_NOSE
+# 3: eyeBrow 眉毛 // EFFECT_BEAUTY_MAKEUP_EYE_BROW
+# 4: eyeShadow 眼影 // EFFECT_BEAUTY_MAKEUP_EYE_SHADOW
+# 5: eyeLine 眼線 // EFFECT_BEAUTY_MAKEUP_EYE_LINE
+# 6: eyeLash 眼睫毛 // EFFECT_BEAUTY_MAKEUP_EYE_LASH
+# 7: Packed 全臉 // EFFECT_BEAUTY_MAKEUP_PACKED
+
+
+features:
+- id: lip # 口紅
+  enable: true
+  displayName: makeup_filter_lip
+  iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+  type: 0
+  items:
+  - id: lip-shown
+    enable: true
+    startTime: "2021-02-22T17:30:00+08:00"
+    endTime: "2090-12-31T23:59:59+08:00"
+    displayName: makeup_filter_lip_shown
+    default: 0.35
+    iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+    contentUrl: "https://cdn.17app.co/75e9cffa-0302-4a99-90ae-6320a7a1c408.zip"
+    contentMd5: "2765b1b5c19120140f28eeb4862a3f77"
+  - id: lip2-outdated
+    enable: true
+    startTime: "2021-02-22T17:30:00+08:00"
+    endTime: "2021-12-31T23:59:59+08:00"
+    displayName: makeup_filter_lip_outdated
+    default: 0.35
+    iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+    contentUrl: "https://cdn.17app.co/75e9cffa-0302-4a99-90ae-6320a7a1c408.zip"
+    contentMd5: "2765b1b5c19120140f28eeb4862a3f77"
+  - id: lip-disable
+    enable: false
+    startTime: "2021-02-22T17:30:00+08:00"
+    endTime: "2090-12-31T23:59:59+08:00"
+    displayName: makeup_filter_lip_disable
+    default: 0.35
+    iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+    contentUrl: "https://cdn.17app.co/75e9cffa-0302-4a99-90ae-6320a7a1c408.zip"
+    contentMd5: "2765b1b5c19120140f28eeb4862a3f77"
+  - id: lip-predated
+    enable: true
+    startTime: "2030-02-22T17:30:00+08:00"
+    endTime: "2090-12-31T23:59:59+08:00"
+    displayName: makeup_filter_lip_predated
+    default: 0.35
+    iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+    contentUrl: "https://cdn.17app.co/75e9cffa-0302-4a99-90ae-6320a7a1c408.zip"
+    contentMd5: "2765b1b5c19120140f28eeb4862a3f77"
+- id: cheek # 腮紅
+  enable: true
+  displayName: makeup_filter_cheek
+  iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+  type: 1
+  items:
+  - id: cheek1
+    enable: true
+    startTime: "2021-02-22T17:30:00+08:00"
+    endTime: "2090-12-31T23:59:59+08:00"
+    displayName: makeup_filter_cheek1
+    default: 0.55
+    iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+    contentUrl: "https://cdn.17app.co/75e9cffa-0302-4a99-90ae-6320a7a1c408.zip"
+    contentMd5: "2765b1b5c19120140f28eeb4862a3f77"
+- id: nose # 修容
+  enable: false
+  displayName: makeup_filter_nose
+  iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+  type: 2
+  items:
+  - id: nose1
+    enable: true
+    startTime: "2021-02-22T17:30:00+08:00"
+    endTime: "2090-12-31T23:59:59+08:00"
+    displayName: makeup_filter_nose1
+    default: 0.35
+    iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+    contentUrl: "https://cdn.17app.co/75e9cffa-0302-4a99-90ae-6320a7a1c408.zip"
+    contentMd5: "2765b1b5c19120140f28eeb4862a3f77"
+- id: eyeBrow # 修容
+  enable: true
+  displayName: makeup_filter_eyeBrow
+  iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+  type: 2
+  items:
+  - id: eyeBrow_outdated
+    enable: true
+    startTime: "2021-02-22T17:30:00+08:00"
+    endTime: "2021-12-31T23:59:59+08:00"
+    displayName: makeup_filter_eyeBrow_outdated
+    default: 0.35
+    iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+    contentUrl: "https://cdn.17app.co/75e9cffa-0302-4a99-90ae-6320a7a1c408.zip"
+    contentMd5: "2765b1b5c19120140f28eeb4862a3f77"
