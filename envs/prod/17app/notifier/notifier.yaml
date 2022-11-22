@@ -15,7 +15,7 @@ oneSignal:
 
 braze:
   messageTypeWhitelist:
-#     - NewLiveMessage
+    - NewLiveMessage
     - NewLiveScheduleMessage
     - ChurnUserMessage
     - NewSystemMessage
@@ -41,7 +41,7 @@ braze:
 
   # use Braze or OneSignal, max: 100, min: 0
   # TODO: set to 100 after fully integrated Braze
-  ratio: 100
+  ratio: 50
 
   # backup when Braze returns error, use OneSignal as backup
   enableBackup: true
