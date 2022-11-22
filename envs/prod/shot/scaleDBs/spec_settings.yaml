@@ -63,4 +63,34 @@ redis:
     stressTestSpec: 
       memoryLimitInGb: 500
       throughput: 2250000
-mongo: []
+mongo: 
+  default:
+    env: "pre-prod"
+    usuallySpec:
+      instanceSizeName: "M40"
+    stressTestSpec:
+      instanceSizeName: "M50"
+  user:
+    env: "pre-prod"
+    usuallySpec:
+      instanceSizeName: "M30"
+    stressTestSpec:
+      instanceSizeName: "M40"
+  point:
+    env: "pre-prod"
+    usuallySpec:
+      instanceSizeName: "M30"
+    stressTestSpec:
+      instanceSizeName: "M50"
+  stream:
+    env: "pre-prod"
+    usuallySpec:
+      instanceSizeName: "M30"
+    stressTestSpec:
+      instanceSizeName: "M40"
+  eventory:
+    env: "pre-prod"
+    usuallySpec:
+      instanceSizeName: "M30"
+    stressTestSpec:
+      instanceSizeName: "M40"
