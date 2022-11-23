@@ -3,6 +3,13 @@
 # - 2: Whitelist-Only Mode
 # access_whitelist is a list of IP address can access on Whitelist-Only mode
 # allowed_origins is a list of regular expressions of all allowed origins for CORS
+# 
+# bypassUserAgents / bypassedHeaderValues mean you could add the userAgents or header kv you would like to pass
+# For example:
+# bypassedUserAgents:
+#   - testUA*
+# bypassedHeaderValues:
+#   testKey: testVal
 
 record:
   enable: true
@@ -418,3 +425,5 @@ conf:
     weight: 100
     white_list:
       apiv1: "keyword"
+bypassedUserAgents:
+  - ^runscope-radar.*
