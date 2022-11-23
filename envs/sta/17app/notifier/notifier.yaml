@@ -96,26 +96,6 @@ whitelist:
   - d1608fd7-da43-4f00-ae5f-d4140baf74ca # w122921_1
   - 884753c3-f77f-451b-90e5-71c07bd79a01 # AdminQATesting1_8
 
-fcm:
-  userWhitelist:
-    - 760c0399-d394-4188-81cd-038ade79fd4f # thpk01
-    - 552594f0-0732-4c96-9687-7c7baad33011 # teddystag50
-    - 45131173-fd6e-455d-8af5-20c18b74c48a # frankloll
-    - 1d352aad-bc42-418e-b910-9d10f149699d # bellapk0021
-    - 05e0175d-4321-4b3e-a648-c0ef79204aed # bella.tt.1020
-    - 32d9c13b-eba2-4f2e-b836-5017c0f47490 # bb.tt.1026
-    - f7854ebc-692a-4227-862d-552b858278c3 # carogonewild1
-    - e5b239ca-1fba-44c5-a64c-d9247ac58638 # carogonewild2
-    - 0b287bbc-e5d4-47ce-9ae5-8d641a83c196 # carogonewild3
-    - 43333201-e20e-4111-b5ba-2664c9513c6b # carogonewild6
-    - 53dfee07-3961-48df-a3e4-5fad4e998d60 # caro17
-    - 3fe6d5fc-bb44-4036-83da-a802fe3d5fe6 # nealx1
-    - 5ff138c8-551d-47e4-9df5-f904fc70b424 # nealx2
-    - 5d27335d-f119-42c1-9706-6613368dc178 # josephtest
-    - 567e0b5d-1516-4ce0-b4e8-bec4e756d5ae # kevinmh
-  messageTypeWhitelist:
-    - NewLiveMessage
-
 oneSignal:
   # when one signal faills in general, use fcm as backup
   enableBackup: true
@@ -170,5 +150,5 @@ braze:
   # TODO: set to 100 after fully integrated Braze
   ratio: 100
   
-  # backup when Braze returns error, use OneSignal as backup
+  # backup when Braze returns error, use FCM as backup
   enableBackup: true
