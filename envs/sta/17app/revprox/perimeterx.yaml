@@ -18,6 +18,14 @@ protected_routes_with_methods:
     methods: ["GET"]
   - route: "/apiGateWay"
     methods: ["POST"]
+  - route: "/lives/.*/enter"
+    methods: ["POST"]
+  - route: "/lives/.*/gift"
+    methods: ["POST"]
+  - route: "/lives/.*/comments"
+    methods: ["POST"]
+  - route: "/army/babycoin/orders"
+  - route: "/bbrich/wallet/withdrawal"
 sensitive_headers:
   - "nonce"
   - "accesstoken"
@@ -28,8 +36,14 @@ blocking_score: 100
 sensitive_routes: []
 whitelist_routes: []
 enforced_routes:
+  - "/apiGateWay"
   - "/api/v1/redenvelopes/.*/pick$"
   - "/api/v1/lives/.*/laborReward$"
+  - "/api/v1/lives/.*/enter"
+  - "/api/v1/lives/.*/gift"
+  - "/api/v1/lives/.*/comments"
+  - "/api/v1/army/babycoin/orders"
+  - "/api/v1/bbrich/wallet/withdrawal"
   - "/api/v1/redenvelopes/pick$"
   - "/api/v1/auth/phone/sendVerificationCode"
 monitored_routes:
