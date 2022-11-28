@@ -10,6 +10,70 @@ animations: ["yeti"]
 
 monsters:
 
+  - id: soccer # 2022世界盃
+    type: 0  # 0: 一般怪獸, 1: 招喚怪獸
+    hit_consume: 10
+    duration: 60s
+    stream_alive_threshold: 1m00s
+    animation: "soccer"
+    available_dates: # 一般怪獸才會看時間
+      - start_date: "2022-11-28T16:30:00+08:00"
+        end_date: "2022-12-25T23:59:59+08:00"
+    appear_durations: # 一般怪獸才會看時間
+      - start_time: 00h00m00s
+        end_time: 23h59m59s
+
+    share_ratio: 50 # percentage
+    profit_ratio: 35 # percentage
+    bonus: 132
+    weight: 1
+    infoPageiconURL: https://cdn.17app.co/5aac54dd-362a-490f-bab3-b699691dcf63.png
+    winnerPageiconURL: https://cdn.17app.co/5aac54dd-362a-490f-bab3-b699691dcf63.png
+    hintToken:
+      {
+        key: monster_battle_hint_soccer,
+        fontAttribute: { textColor: "#FFFFFF" },
+      }
+    rule1Token:
+      {
+        key: monster_battle_rule1_soccer,
+        fontAttribute: { textColor: "#FFFFFF" },
+      }
+    rule2Token:
+      {
+        key: monster_battle_rule2_soccer,
+        fontAttribute: { textColor: "#FFFFFF" },
+      }
+    rule3Token:
+      {
+        key: monster_battle_rule3_soccer,
+        fontAttribute: { textColor: "#FFFFFF" },
+      }
+    rule4Token:
+      {
+        key: monster_battle_rule4_soccer,
+        fontAttribute: { textColor: "#FFFFFF" },
+      }
+    countdownToken:
+      {
+        key: monster_battle_countdown_soccer,
+        fontAttribute: { textColor: "#FFFFFF" },
+      }
+    failureToken:
+      {
+        key: monster_battle_failure_soccer,
+        fontAttribute: { textColor: "#FFFFFF" },
+      }
+    successToken:
+      {
+        key: monster_battle_success_soccer_coin,
+        fontAttribute: { textColor: "#FFFFFF" },
+      }
+    marqueeToken: { key: monster_battle_marquee_soccer }
+    summonGifts: # 招喚怪獸才需要填
+      - giftID:
+        probability:
+
   - id: windyboys # 新竹攻城獅
     type: 0  # 0: 一般怪獸, 1: 招喚怪獸
     hit_consume: 20
@@ -992,6 +1056,33 @@ monsters:
 #   marqueeToken: {key: monster_battle_summon_marquee_llama}
 
 animationLoader:
+  # soccer 2022世界盃
+  - animationID: soccer_attack
+    url: http://cdn.17app.co/cb0734b0-30cd-4400-94c3-a71a2dade930.zip
+    MD5: 11758800993493028a705e45f94ffd61
+    webpUrl: https://cdn.17app.co/00f9853d-7357-4cbd-b62e-a58eb5298ed5-q90-s1.webp##
+    webpMD5: 969629808a1166257a002b730021e9d4##
+  - animationID: soccer_enter
+    url: http://cdn.17app.co/1d8ddc69-e085-4315-9a78-1d594acdd6be.zip
+    MD5: b909a452da5ddab201bdfd071295c0dd
+    webpUrl: https://cdn.17app.co/d4cd144f-adfa-4117-8955-be128861d66e-q90-s1.webp##
+    webpMD5: af4e5360cf6677cbfa192285a4839374##
+  - animationID: soccer_failure
+    url: http://cdn.17app.co/0847a880-32a8-4f08-9d4f-76796ebab1cc.zip
+    MD5: 7d715ebf470d7114593486616d619743
+    webpUrl: https://cdn.17app.co/8b896ed7-0ad6-4091-b8ca-1e7549e2414b-q90-s1.webp#
+    webpMD5: 99f5efe57464561ad744824c6ead43ab#
+  - animationID: soccer_idle
+    url: http://cdn.17app.co/2cf2bd05-ada4-42d5-9278-6277bc6dd842.zip
+    MD5: 18533ddbde5acb5d94c9feb521b370c0
+    webpUrl: https://cdn.17app.co/efd479a8-6d0a-436f-993e-02e662ecbbcc-q90-s1.webp#
+    webpMD5: 6b28e28191c7a6321dcb5de15542d99c#
+  - animationID: soccer_success
+    url: http://cdn.17app.co/68c47215-1573-4c5c-b1de-9911addfdb47.zip
+    MD5: 1d4a1fc461715acae2449ed161d3694a
+    webpUrl: https://cdn.17app.co/6b9dc1e7-f5ad-4b10-bb2a-05249bc9fb8f-q90-s1.webp#
+    webpMD5: 31259c462e1bfe225e8305e601dd0c80#
+
   # windyboys 新竹攻城獅
   - animationID: windyboys_attack
     url: http://cdn.17app.co/7ab2d970-bdf9-4955-808a-1b0314a0fc9a.zip
