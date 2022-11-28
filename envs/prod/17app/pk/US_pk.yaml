@@ -178,3 +178,33 @@ playListV2:
         key: "pk_schedule_menu_suspended1"
 
 showPKStarLB: true # control regional LB to show
+
+# pk leaderboard rules
+regularRuleTitle: 
+  key: pk_information_regular_title
+regularRules:
+  - key: pk_information_regular_rule1
+    params:
+      - value: 3000 # should be aligned to pkLBMinPoints for current time
+  - key: pk_information_regular_rule2
+    params:
+      - value: 3 # should be aligned to weeklyLBTopCount
+hourRuleTitle: 
+  key: pk_information_hourly_title
+hourRules:
+  - key: pk_information_hourly_rule1
+  - key: pk_information_hourly_rule2
+  - key: pk_information_regular_rule1
+    params:
+      - value: 3000 # should be aligned to pkLBMinPoints for current time
+  - key: pk_information_hourly_rule3
+    params:
+      - value: 10 # should be aligned to pkHourLBLevel
+      - value: 280
+  - key: pk_information_hourly_rule4
+    params:
+      - value: 10 # how many top rank streams are granted with red envelope, actual setting in superstar.yaml
+  - key: pk_information_hourly_rule5_tw
+    params:
+      - value: 20 # should see pkStarDurations
+      - value: 23
