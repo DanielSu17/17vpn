@@ -1,6 +1,6 @@
 - startTime: "2022-11-23 09:30:00 (GMT+0800)"
   endTime: "2022-11-23 14:00:00 (GMT+0800)"
-  redisDBName:
+  dbName:
     - pre-prod-aggrgateway-cache
     - pre-prod-dm-cache
     - pre-prod-eventory-cache
@@ -8,22 +8,14 @@
     - pre-prod-user-info-cache
     - gcp-pre-production-persist
     - gcp-pre-production-cache
-  mongoClusterName: []
 
 - startTime: "2022-11-23 17:00:00 (GMT+0800)"
   endTime: "2022-11-23 18:30:00 (GMT+0800)"
-  redisDBName: []
-#     - pre-prod-aggrgateway-cache
-#     - pre-prod-dm-cache
-#     - pre-prod-eventory-cache
-#     - pre-prod-eventory-persist
-#     - pre-prod-user-info-cache
-#     - gcp-pre-production-persist
-#     - gcp-pre-production-cache
-  mongoClusterName: 
-    - default
-    - user
-    - point
-    - stream
-    - eventory
-    - groupcall
+  dbName: 
+    - pre-prod-aggrgateway-cache
+    - pre-prod-dm-cache
+    - pre-prod-eventory-cache
+    - pre-prod-eventory-persist
+    - pre-prod-user-info-cache
+    - gcp-pre-production-persist
+    - gcp-pre-production-cache
