@@ -3,6 +3,10 @@
 # defaultHostgroup => Set to the default_hostgroup row in the mysql_users table (ProxySQL)
 # destHostgroupR => Set user read permission to the destination_hostgroup row in the mysql_query_rules table (ProxySQL)
 # destHostgroupW => Set user read permission to the destination_hostgroup row in the mysql_query_rules table (ProxySQL)
+
+# mongo config
+# preUsername => Add prefix string to username
+
 mysql:
   prod:
     preUsername: ""
@@ -21,3 +25,12 @@ mysql:
     defaultHostgroup: 10
     destHostgroupR: 11
     destHostgroupW: 10
+mongo:
+  prod:
+    preUsername: ""
+
+  pre-prod:
+    preUsername: "pre-"
+
+  uat:
+    preUsername: "uat-"
