@@ -18,72 +18,38 @@ overflow:
 #  - There are 3 pool levels: `emergency`, `loaded`, `fair`. The tax of each level is defined in `tax` field.
 #  - The `safeline` and `loadedgate` fields affect the pool level. See the [mechanism](https://docs.google.com/presentation/d/1KV2bWTbb4_79rv82ldeLPcGRR3Ou4t-m-rn8eO4rubQ/edit#slide=id.g13baac2268b_0_14) for more details.
 probabilityTable:
-  - commoner: 3000
-    noble: 6900
-    king: 100
-  - commoner: 3001
-    noble: 6898
-    king: 101
-  - commoner: 3002
-    noble: 6896
-    king: 102
-  - commoner: 3003
-    noble: 6894
-    king: 103
-  - commoner: 3504
-    noble: 6392
-    king: 104
-  - commoner: 3505
-    noble: 6390
-    king: 105
-  - commoner: 3506
-    noble: 6388
-    king: 106
-  - commoner: 4007
-    noble: 5886
-    king: 107
-  - commoner: 4008
-    noble: 5884
-    king: 108
-  - commoner: 4009
-    noble: 5882
-    king: 109
-  - commoner: 9980
-    noble: 10
-    king: 10
-
-#   # index 0
-#   - king: 6340
-#     noble: 2520
-#     commoner: 1140
-#   # index 1
-#   - king: 6360
-#     noble: 2500
-#     commoner: 1140
-#   # index 2
-#   - king: 6400
-#     noble: 2460
-#     commoner: 1140
-#   # index 3
-#   - king: 6500
-#     noble: 2420
-#     commoner: 1080
-#   # index 4
-#   - king: 6550
-#     noble: 2400
-#     commoner: 1050
-#   # index 5
-#   - king: 6550
-#     noble: 2420
-#     commoner: 1030
-#   # index 6
-#   - king: 6560
-#     noble: 2440
-#     commoner: 1000
-#   # index 7
-#   - king: 6590
-#     noble: 2460
-#     commoner: 950
+  # index 0
+  - king: 6340
+    noble: 2520
+    commoner: 1140
+  # index 1
+  - king: 6360
+    noble: 2500
+    commoner: 1140
+  # index 2
+  - king: 6400
+    noble: 2460
+    commoner: 1140
+  # index 3
+  - king: 6500
+    noble: 2420
+    commoner: 1080
+  # index 4
+  - king: 6550
+    noble: 2400
+    commoner: 1050
+  # index 5
+  - king: 6550
+    noble: 2420
+    commoner: 1030
+  # index 6
+  - king: 6560
+    noble: 2440
+    commoner: 1000
+  # index 7
+  - king: 6590
+    noble: 2460
+    commoner: 950
 
 odds: # The odds of each item if a player win.
   king: 1.5 # 1.5 times to payout.
