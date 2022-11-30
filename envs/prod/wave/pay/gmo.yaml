@@ -1,0 +1,41 @@
+# production shop setting
+productionSetting:
+  shopID: ""
+  shopPasswd: ""
+  apiPrefix: ""
+  contactInfo: ""
+  contactPhone: ""
+  businessHour: ""
+# sandbox shop setting
+sandboxSetting:
+  shopID: "tshop00004039"
+  shopPasswd: "mr5zgnub"
+  apiPrefix: "https://stg.link.smbc-gp.co.jp/link/"
+  contactInfo: ""
+  contactPhone: ""
+  businessHour: ""
+
+disableAutosales: false
+autosalesWhiteList: []
+
+linkTypePlus:
+  enable: true
+  whiteListUserIDs: []
+  configID: ""
+
+# If errorInfo on this list, will suppress alert
+unretriableErrors:
+  - "42G060000"  # デビットカードで口座の残高が不足
+  - "42G120000"
+  - "42G300000"
+  - "42G540000"
+  - "42G550000"  # カード限度額を超えている
+  - "42G560000"
+  - "42G600000"
+  - "42G610000"
+  - "42G650000"  # カード番号に誤りがある
+  - "42G680000"  # 金額に誤りがある
+  - "42G780000"  # 支払区分に誤りがある
+  - "42G830000"  # 有効期限に誤りがある
+  - "42G970000"
+  - "42G980000"
