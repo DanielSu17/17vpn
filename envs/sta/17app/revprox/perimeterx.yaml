@@ -22,6 +22,8 @@ protected_routes_with_methods:
     methods: ["POST"]
   - route: "/lives/.*/comments"
     methods: ["POST"]
+  - route: "/users/.*/guardian/bid"
+    methods: ["POST"]
   - route: "/army/babycoin/orders"
     methods: ["POST"]
   - route: "/bbrich/wallet/withdrawal"
@@ -42,6 +44,7 @@ enforced_routes:
   - "/api/v1/lives/.*/enter"
   - "/api/v1/lives/.*/gift"
   - "/api/v1/lives/.*/comments"
+  - "/api/v1/users/.*/guardian/bid"
   - "/api/v1/army/babycoin/orders"
   - "/api/v1/bbrich/wallet/withdrawal"
   - "/api/v1/redenvelopes/pick$"
