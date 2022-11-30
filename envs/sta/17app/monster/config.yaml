@@ -10,14 +10,14 @@ animations: ["yeti"]
 
 monsters:
 
-  - id: soccer # 2022世界盃
+  - id: worldcup # 2022世界盃
     type: 0  # 0: 一般怪獸, 1: 招喚怪獸
     hit_consume: 20
     duration: 60s
     stream_alive_threshold: 1m00s
-    animation: "soccer"
+    animation: "worldcup"
     available_dates: # 一般怪獸才會看時間
-      - start_date: "2022-11-29T09:30:00+08:00"
+      - start_date: "2022-11-30T12:35:00+08:00"
         end_date: "2022-12-25T23:59:59+08:00"
     appear_durations: # 一般怪獸才會看時間
       - start_time: 00h00m00s
@@ -1056,32 +1056,32 @@ monsters:
 #   marqueeToken: {key: monster_battle_summon_marquee_llama}
 
 animationLoader:
-  # soccer 2022世界盃
-  - animationID: soccer_attack
+  # worldcup 2022世界盃
+  - animationID: worldcup_attack
     url: http://cdn.17app.co/cb0734b0-30cd-4400-94c3-a71a2dade930.zip
     MD5: 11758800993493028a705e45f94ffd61
-    webpUrl: https://cdn.17app.co/e39cfe99-80a7-40ad-843d-ec55ade50098-q90-s1.webp
-    webpMD5: 3bfbfb21f99352b428979147f219bb25
-  - animationID: soccer_enter
+    webpUrl: https://cdn.17app.co/49e49260-6aee-4c70-bfa5-78c72a3ee558-q90-s1.webp
+    webpMD5: 7eb50cef66c5f9db93c64ab9d9552fb6
+  - animationID: worldcup_enter
     url: http://cdn.17app.co/1d8ddc69-e085-4315-9a78-1d594acdd6be.zip
     MD5: b909a452da5ddab201bdfd071295c0dd
-    webpUrl: https://cdn.17app.co/fc081eeb-9f0b-4d35-972f-552dcb548805-q90-s1.webp
-    webpMD5: d7da14372c7ed57909430be7efcfdb09
-  - animationID: soccer_failure
+    webpUrl: https://cdn.17app.co/4eeecef3-3dc4-403a-b682-e3d8fcd8e22d-q90-s1.webp
+    webpMD5: c1c93cc94c02b4233ea986f995b6c543
+  - animationID: worldcup_failure
     url: http://cdn.17app.co/0847a880-32a8-4f08-9d4f-76796ebab1cc.zip
     MD5: 7d715ebf470d7114593486616d619743
-    webpUrl: https://cdn.17app.co/9d62d6a9-bb90-4c6c-b224-6eb3c12d2323-q90-s1.webp
-    webpMD5: 9f4f278ef1c29c426c69e08b7b00e63f
-  - animationID: soccer_idle
+    webpUrl: https://cdn.17app.co/4c488448-874a-4ed6-9769-ae77cc41ebb0-q90-s1.webp
+    webpMD5: c94eec35da9c35d61aaf136a8cc415b5
+  - animationID: worldcup_idle
     url: http://cdn.17app.co/2cf2bd05-ada4-42d5-9278-6277bc6dd842.zip
     MD5: 18533ddbde5acb5d94c9feb521b370c0
-    webpUrl: https://cdn.17app.co/793933c1-a381-42c6-ab8d-09b3baad5551-q90-s1.webp
-    webpMD5: 45b4de269d096f138a67c283bcab2c16
-  - animationID: soccer_success
+    webpUrl: https://cdn.17app.co/d389fd33-1151-4daa-acb6-1fc67dc4aa93-q90-s1.webp
+    webpMD5: 415d98a82b8333af788f38ff99f5e60c
+  - animationID: worldcup_success
     url: http://cdn.17app.co/68c47215-1573-4c5c-b1de-9911addfdb47.zip
     MD5: 1d4a1fc461715acae2449ed161d3694a
-    webpUrl: https://cdn.17app.co/aaa95e02-fd8f-4140-9bb4-ecafd9220c5c-q90-s1.webp
-    webpMD5: 857b8a8095839ee586ed3fe0b40f758d
+    webpUrl: https://cdn.17app.co/378362cf-1e2b-43a6-b167-944e237fb4cb-q90-s1.webp
+    webpMD5: 13c16acb61a655ec900023f88b47a6eb
 
   # windyboys 新竹攻城獅
   - animationID: windyboys_attack
