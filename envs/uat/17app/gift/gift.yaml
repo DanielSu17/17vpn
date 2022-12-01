@@ -42,6 +42,7 @@ labelTypeToKey:
     random: "giftbox_label_random"
     redenvelope: "giftbox_label_redenvelop"
     combo: "giftbox_label_combo"
+    limited: "giftbox_label_limited"
 labelInfo:
   - labelI18nKey: "gift_tag_event"
     tagColor: "#FFFFFF"
@@ -113,6 +114,11 @@ labelInfo:
     anchorColor: "#6F6777"
     fontColor: "#525252"
     boarderColor: "#d2d2d7"
+  - labelI18nKey: "giftbox_label_limited"
+    tagColor: "#FFFFFF"
+    anchorColor: "#6F6777"
+    fontColor: "#525252"
+    boarderColor: "#d2d2d7"
 mlevelMapping:
     elite3: 3
     elite7: 7
@@ -144,6 +150,8 @@ giftTypeLabelAllow:
     labelType: [ "elite3", "elite7", "elite10" ]
   - type: 17 # non-realtime gift
     labelType: [ "event", "new"]
+  - type: 18 # limited
+    labelType: [ "event", "new", "face", "antiprofit", "random", "redenvelope", "combo", "boxgacha", "limited" ]
 extraAnimationList:
 - animationID: send_all_groupcall
   url: https://cdn.17app.co/d37f0593-2631-4fa6-8dc2-d8fcf1d0c393.zip
