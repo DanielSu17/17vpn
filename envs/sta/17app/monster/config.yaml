@@ -1,4 +1,4 @@
-max: 20 # 0 means disable feature
+max: 0 # 0 means disable feature
 check_interval: 1m00s
 big_brother_prefix: "give_me_five"
 nian_prefix: "nian"
@@ -9,7 +9,6 @@ alertChannels: ["testformonsteralert"]
 animations: ["yeti"]
 
 monsters:
-#如果有要更改worldcup，請聯絡PO Kai
   - id: worldcup # 2022世界盃
     type: 0  # 0: 一般怪獸, 1: 招喚怪獸
     hit_consume: 10
