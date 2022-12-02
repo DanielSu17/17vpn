@@ -1,4 +1,4 @@
-max: 1000	# 0 means disable feature
+max: 20	# 0 means disable feature
 check_interval: 1m00s
 big_brother_prefix: "give_me_five"
 nian_prefix: "nian"
@@ -9,6 +9,70 @@ alertChannels: ["testformonsteralert"]
 animations: ["yeti"]
 
 monsters:
+- id: worldcup # 2022世界盃
+  type: 0  # 0: 一般怪獸, 1: 招喚怪獸
+  hit_consume: 10
+  duration: 60s
+  stream_alive_threshold: 1m00s
+  animation: "worldcup"
+  available_dates: # 一般怪獸才會看時間
+    - start_date: "2022-12-02T12:12:00+08:00"
+      end_date: "2022-12-18T23:59:59+08:00"
+  appear_durations: # 一般怪獸才會看時間
+    - start_time: 00h00m00s
+      end_time: 23h59m59s
+
+  share_ratio: 50 # percentage
+  profit_ratio: 35 # percentage
+  bonus: 132
+  weight: 1
+  infoPageiconURL: https://cdn.17app.co/2e84f075-f077-4a01-95e3-a210a7b07457.png
+  winnerPageiconURL: https://cdn.17app.co/2e84f075-f077-4a01-95e3-a210a7b07457.png
+  hintToken:
+    {
+      key: monster_battle_hint_soccer,
+      fontAttribute: { textColor: "#FFFFFF" },
+    }
+  rule1Token:
+    {
+      key: monster_battle_rule1_soccer,
+      fontAttribute: { textColor: "#FFFFFF" },
+    }
+  rule2Token:
+    {
+      key: monster_battle_rule2_soccer,
+      fontAttribute: { textColor: "#FFFFFF" },
+    }
+  rule3Token:
+    {
+      key: monster_battle_rule3_soccer,
+      fontAttribute: { textColor: "#FFFFFF" },
+    }
+  rule4Token:
+    {
+      key: monster_battle_rule4_soccer,
+      fontAttribute: { textColor: "#FFFFFF" },
+    }
+  countdownToken:
+    {
+      key: monster_battle_countdown_soccer,
+      fontAttribute: { textColor: "#FFFFFF" },
+    }
+  failureToken:
+    {
+      key: monster_battle_failure_soccer,
+      fontAttribute: { textColor: "#FFFFFF" },
+    }
+  successToken:
+    {
+      key: monster_battle_success_soccer_coin,
+      fontAttribute: { textColor: "#FFFFFF" },
+    }
+  marqueeToken: { key: monster_battle_marquee_soccer }
+  summonGifts: # 招喚怪獸才需要填
+    - giftID:
+      probability:
+
 - id: skeleton # 南瓜骷髏
   type: 1  # 0: 一般怪獸, 1: 招喚怪獸
   hit_consume: 5
@@ -986,6 +1050,34 @@ monsters:
 #  marqueeToken: {key: monster_battle_summon_marquee_llama}
   
 animationLoader:
+
+# worldcup 2022世界盃
+- animationID: worldcup_attack
+  url: http://cdn.17app.co/0d144b20-504c-4687-85da-6cf601060046.zip
+  MD5: a270416b22e906b2614a77f27a56e53c
+  webpUrl: https://cdn.17app.co/49e49260-6aee-4c70-bfa5-78c72a3ee558-q90-s1.webp
+  webpMD5: 7eb50cef66c5f9db93c64ab9d9552fb6
+- animationID: worldcup_enter
+  url: http://cdn.17app.co/83a8b0e0-e0da-4ea6-bc34-b6c12673d0cd.zip
+  MD5: acd80ec250d4189eb0dafb781d25de4d
+  webpUrl: https://cdn.17app.co/4eeecef3-3dc4-403a-b682-e3d8fcd8e22d-q90-s1.webp
+  webpMD5: c1c93cc94c02b4233ea986f995b6c543
+- animationID: worldcup_failure
+  url: http://cdn.17app.co/d66a4418-6780-4cb6-b925-6e02dfa8aca1.zip
+  MD5: 3c507f7c974f66426550335c136b67ff
+  webpUrl: https://cdn.17app.co/4c488448-874a-4ed6-9769-ae77cc41ebb0-q90-s1.webp
+  webpMD5: c94eec35da9c35d61aaf136a8cc415b5
+- animationID: worldcup_idle
+  url: http://cdn.17app.co/040cbb07-f034-4754-8e32-26a8c7463b98.zip
+  MD5: b1d43a21c1636d50282c3f5ac8019ba1
+  webpUrl: https://cdn.17app.co/d389fd33-1151-4daa-acb6-1fc67dc4aa93-q90-s1.webp
+  webpMD5: 415d98a82b8333af788f38ff99f5e60c
+- animationID: worldcup_success
+  url: http://cdn.17app.co/fd2fc0e6-88c9-498e-a8d7-fbf1599a3bcb.zip
+  MD5: b8786111fae7d58712546e9ecd72767e
+  webpUrl: https://cdn.17app.co/378362cf-1e2b-43a6-b167-944e237fb4cb-q90-s1.webp
+  webpMD5: 13c16acb61a655ec900023f88b47a6eb
+
 
 # 南瓜骷髏
 - animationID: skeleton_attack
