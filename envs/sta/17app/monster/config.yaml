@@ -10,7 +10,7 @@ animations: ["yeti"]
 
 monsters:
   - id: worldcup # 2022世界盃
-    type: 0  # 0: 一般怪獸, 1: 招喚怪獸
+    type: 1  # 0: 一般怪獸, 1: 招喚怪獸
     hit_consume: 10
     duration: 60s
     stream_alive_threshold: 1m00s
@@ -69,9 +69,9 @@ monsters:
         fontAttribute: { textColor: "#FFFFFF" },
       }
     marqueeToken: { key: monster_battle_marquee_soccer }
-    summonGifts: # 招喚怪獸才需要填
-      - giftID:
-        probability:
+    summonGifts: # 招喚怪獸才需要填，請務必填入特定禮物，regression team 會需要用到，感謝
+      - giftID: gift_lightstick_g
+        probability: 1000
 
   # - id: windyboys # 新竹攻城獅
   #   type: 0  # 0: 一般怪獸, 1: 招喚怪獸
