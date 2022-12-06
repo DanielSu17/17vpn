@@ -27,8 +27,10 @@ linkTypePlus:
   - "6b5a4064-280e-4106-b442-83617a0c785b" # WanWan_Tsai
   configID: wbZmFgpW46TGaDJz
 
+unretriableErrors: []
+
 # If errorInfo on this list, will suppress alert
-unretriableErrors:
+suppressAlertErrors:
   - "42G060000"  # デビットカードで口座の残高が不足
   - "42G120000"
   - "42G300000"
@@ -43,3 +45,21 @@ unretriableErrors:
   - "42G830000"  # 有効期限に誤りがある
   - "42G970000"
   - "42G980000"
+
+contactCardOrgErrors:
+  - "42G650000"
+  - "42G670000"
+  - "42G680000"
+  - "42G690000"
+  - "42G700000"
+  - "42G710000"
+  - "42G720000"
+  - "42G730000"
+  - "42G740000"
+  - "42G750000"
+  - "42G760000"
+  - "42G770000"
+  - "42G780000"
+  - "42G790000"
+  - "42G800000"
+  - "42G810000"
