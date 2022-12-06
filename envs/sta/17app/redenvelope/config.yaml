@@ -13,7 +13,7 @@
 # - 4: recommend
 region_mode: 3
 regions: []
-startTime:
+startTime: 1612411200 # February 4, 2021 12:00:00 GMT+08:00
 endTime:
 event_time: 10 # for display in notice only
 creation_by_streamer: false
@@ -24,17 +24,17 @@ pickedSleepPenaltyMsecs: 250 # 處罰基本單位
 maxPenaltyMsecs: 3000 # 最多被處罰的時間
 sumOfPickedThreshold: 250 # 超過多少點才會被處罰
 pickProbabilityThresholds: # 每日累積搶到點數，對應的搶紅包機率限制(百分比)
-  10000: 50
-  500000: 25
-  600000: 13
-  700000: 7
-  800000: 5
-  900000: 2
-  1000000: 0
+  400: 50
+  500: 25
+  600: 13
+  700: 7
+  800: 5
+  900: 2
+  1000: 0
 dailySumOfPickedRefreshHour: 5 # 每日累積點數的重置時間，台灣時間5點。
 userLockPickedSecs: 45 # 使用者搶到紅包後，多少秒內搶紅包會失敗
 enableBatchUpsertForPurge: true
-batchUpsertStartTime: 1647568800 # 2022/3/18/ 1000 GMT+8
+batchUpsertStartTime: 1648447200 # 2022/3/28 1400 GMT+8
 bonusBoxSupportedVersionIOS: 99.99.99
 bonusBoxSupportedVersionAndroid: 99.99.99
 enableCountContinuousSameTypeEvent: true
