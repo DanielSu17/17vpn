@@ -1,18 +1,3 @@
-fcm:
-  messageTypeWhitelist:
-    - "NewLiveMessage"
-  forceBackup: false
-  backupBlacklist: 
-    
-
-oneSignal:
-  # when one signal faills in general, use fcm as backup
-  enableBackup: true
-  # when one signal fail to update new players, use fcm as backup (case not included in enableBackup)
-  enableBackupForFailUpdate: false
-  # simluate one signal fail to update new players. option for qa testing, not allowed in prod
-  forceFailUpdate: false
-
 braze:
   messageTypeWhitelist:
     - NewLiveMessage
@@ -39,9 +24,8 @@ braze:
     - NewArchiveBannedMessage
     - NewArchiveLikedMessage
 
-  # use Braze or OneSignal, max: 100, min: 0
-  # TODO: set to 100 after fully integrated Braze
+  # use Braze or FCM, max: 100, min: 0
   ratio: 100
 
-  # backup when Braze returns error, use OneSignal as backup
+  # backup when Braze returns error, use FCM as backup
   enableBackup: true
