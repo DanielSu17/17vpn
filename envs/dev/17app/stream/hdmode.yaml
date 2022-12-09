@@ -28,4 +28,22 @@ viewerWhitelist720p:
   # - b640f50e-ab98-45bd-8d71-64cd2700b405  #kevinmh04
 #  - caf2da0e-54cb-4058-4f1c-4056eb970161  #janet.w01
 #  - 2e95de40-7880-422b-7f3b-0af9405e3b4d  #janet.w02
+
+# enable HDMode by ip region and minLevel
+# contractUserOnly is true, this setting only effects contract users
+# streamerWhiteList720pFilter: 
+#   excludedUserIDs:
+#     - id1
+#     - id2
+#   regions:
+#     JP:
+#       contractUserOnly: false
+#       minLevel: 70
+streamerWhiteList720pFilter: 
+  regions:
+    JP:
+      contractUserOnly: false
+      minLevel: 70
+
 backToHDModeDuration: 60
+
