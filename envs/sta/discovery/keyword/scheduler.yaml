@@ -3,7 +3,7 @@ configs:
     taskType: "keyword:calculateScore"
     idSuffix: "202212081521"
     retry: 3
-  - cronSpec: "0 0 * * *"
+  - cronSpec: "*/10 * * * *"
     taskType: "keyword:balanceScore"
     idSuffix: "202212081521"
     retry: 3
