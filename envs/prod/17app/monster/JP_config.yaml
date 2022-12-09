@@ -10,74 +10,98 @@ animations: ["yeti"]
 
 
 monsters:
-- id: skeleton # ハロウィン
-  type: 1  # 0: 一般怪獸, 1: 招喚怪獸
-  hit_consume: 1
+- id: xmasthief #クリスマス泥棒
+  type: 0  # 0: 一般形式, 1: トリガー形式
+  hit_consume: 10
   duration: 60s
   stream_alive_threshold: 1m00s
-  animation: "skeleton"
+  animation: "xmasthief"
   available_dates: # 一般怪獸才會看時間
-    - start_date: "2022-10-31T00:00:00+09:00"
-      end_date: "2022-10-31T23:59:59+09:00"
+    - start_date: "2022-12-10T00:00:00+09:00"
+      end_date: "2022-12-11T23:59:59+09:00"
   appear_durations: # 一般怪獸才會看時間
     - start_time: 00h00m00s
       end_time: 23h59m59s
 
   share_ratio: 50 # percentage
   profit_ratio: 35 # percentage
-  bonus: 100
+  bonus: 400
   weight: 1
-  infoPageiconURL: https://cdn.17app.co/66f2728b-d25f-4c72-b9fc-6a070081a3a0.png
-  winnerPageiconURL: https://cdn.17app.co/66f2728b-d25f-4c72-b9fc-6a070081a3a0.png
+  infoPageiconURL: https://cdn.17app.co/77fcf4e2-673f-4fd7-aa04-6135e59425ad.png
+  winnerPageiconURL: https://cdn.17app.co/77fcf4e2-673f-4fd7-aa04-6135e59425ad.png
   hintToken:
     {
-      key: monster_battle_hint_skeleton,
+      key: monster_battle_hint_xmasthief_jp,
       fontAttribute: { textColor: "#FFFFFF" },
     }
   rule1Token:
     {
-      key: monster_battle_rule1_skeleton,
+      key: monster_battle_rule1_xmasthief_jp,
       fontAttribute: { textColor: "#FFFFFF" },
     }
   rule2Token:
     {
-      key: monster_battle_rule2_skeleton_jp,
+      key: monster_battle_rule2_xmasthief_jp,
       fontAttribute: { textColor: "#FFFFFF" },
     }
   rule3Token:
     {
-      key: monster_battle_rule3_skeleton,
+      key: monster_battle_rule3_xmasthief_jp,
       fontAttribute: { textColor: "#FFFFFF" },
     }
   rule4Token:
     {
-      key: monster_battle_rule4_skeleton,
+      key: monster_battle_rule4_xmasthief_jp,
       fontAttribute: { textColor: "#FFFFFF" },
     }
   countdownToken:
     {
-      key: monster_battle_countdown_skeleton,
+      key: monster_battle_countdown_xmasthief_jp,
       fontAttribute: { textColor: "#FFFFFF" },
     }
   failureToken:
     {
-      key: monster_battle_failure_skeleton,
+      key: monster_battle_failure_xmasthief_jp,
       fontAttribute: { textColor: "#FFFFFF" },
     }
   successToken:
     {
-      key: monster_battle_success_skeleton_coin,
+      key: monster_battle_success_xmasthief_coin_jp,
       fontAttribute: { textColor: "#FFFFFF" },
     }
-  marqueeToken: { key: monster_battle_marquee_skeleton }
-  summonGifts: # 招喚怪獸才需要填
-    - giftID: 2210_jphalloween_trigger_a
-      probability: 3333
-    - giftID: 2210_jphalloween_trigger_b
-      probability: 3333
+  marqueeToken: { key: monster_battle_marquee_xmasthief_jp }
+  summonGifts: # トリガー形式のみ記入が必要
+    - giftID: 2210_jphalloween_trigger
+      probability: 10000
 
 
 animationLoader:
+#クリスマスモンスター
+- animationID: xmasthief_attack
+  url: http://cdn.17app.co/7d68da63-44c2-4b98-81cf-9fc0f5463691.zip
+  MD5: 3fad7a38e69d0edda22110e17f1c13b6
+  webpUrl: https://cdn.17app.co/85fe189f-afd6-40ef-9461-a7c7c24790ab-q90-s1.webp
+  webpMD5: 4887633127f2053aeb872ee4064c1ced
+- animationID: xmasthief_enter
+  url: http://cdn.17app.co/af1e98d9-32fb-4c5f-943d-3eebeb688fe6.zip
+  MD5: 8867014e498f0836785419852ff56358
+  webpUrl: https://cdn.17app.co/15e917ec-636e-4c6e-9d90-6c1a5f359771-q90-s1.webp
+  webpMD5: f35d6fc4f86942eb5e1e7b614cf06b07
+- animationID: xmasthief_failure
+  url: http://cdn.17app.co/4c201ea3-6c25-4c7b-8a3f-0e9c42c2dcdf.zip
+  MD5: 09db65deffe9656d5bc88c6c99eae721
+  webpUrl: https://cdn.17app.co/ba30b9b0-8c28-4a58-bf14-11aa1ab7fdd5-q90-s1.webp
+  webpMD5: 4a89c021c4c484c28497d0ea83160dcf
+- animationID: xmasthief_idle
+  url: http://cdn.17app.co/37452bc6-a43d-4107-8195-db54be3400fa.zip
+  MD5: ce75e569145bacb92ff1e9530e39a4c6
+  webpUrl: https://cdn.17app.co/32ae5af7-86f5-475c-ba77-5f7276bd2e99-q90-s1.webp
+  webpMD5: ff1d0d674d951d128017d8e9842e7355
+- animationID: xmasthief_success
+  url: http://cdn.17app.co/28ad39b4-2c9a-4bcf-bcc6-0d6a67a822ea.zip
+  MD5: f73d7925dc5bf5839d2b1ed091d3bdd6
+  webpUrl: https://cdn.17app.co/91938e6e-515a-4eab-a249-92c8ac472d01-q90-s1.webp
+  webpMD5: e21bf2d25c68645b7170e5c8a673ebd9
 
 - animationID: skeleton_attack
   url: http://cdn.17app.co/22537d9b-709c-4690-9490-0f460021ee58.zip
