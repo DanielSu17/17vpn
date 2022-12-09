@@ -1,4 +1,4 @@
-max: 0 # 0 means disable feature
+max: 10 # 0 means disable feature
 check_interval: 1m00s
 big_brother_prefix: "give_me_five"
 nian_prefix: "nian"
@@ -9,15 +9,15 @@ alertChannels: ["testformonsteralert"]
 animations: ["yeti"]
 
 monsters:
-  - id: puppet # 素還真
-    type: 0 # 0: 一般怪獸, 1: 招喚怪獸
-    hit_consume: 1
+  - id: xmasthief # 聖誕小偷
+    type: 0  # 0: 一般怪獸, 1: 招喚怪獸
+    hit_consume: 10
     duration: 60s
     stream_alive_threshold: 1m00s
-    animation: "puppet"
+    animation: "xmasthief"
     available_dates: # 一般怪獸才會看時間
-      - start_date: "2022-02-19T15:30:00+08:00"
-        end_date: "2022-03-01T23:59:59+08:00"
+      - start_date: "2022-12-06T18:30:00+08:00"
+        end_date: "2023-12-25T23:59:59+08:00"
     appear_durations: # 一般怪獸才會看時間
       - start_time: 00h00m00s
         end_time: 23h59m59s
@@ -26,52 +26,116 @@ monsters:
     profit_ratio: 35 # percentage
     bonus: 132
     weight: 1
-    infoPageiconURL: https://cdn.17app.co/b5c6692a-6f22-4829-b614-8eebe720b0d1.png
-    winnerPageiconURL: https://cdn.17app.co/b5c6692a-6f22-4829-b614-8eebe720b0d1.png
+    infoPageiconURL: https://cdn.17app.co/77fcf4e2-673f-4fd7-aa04-6135e59425ad.png
+    winnerPageiconURL: https://cdn.17app.co/77fcf4e2-673f-4fd7-aa04-6135e59425ad.png
     hintToken:
       {
-        key: monster_battle_hint_puppet,
+        key: monster_battle_hint_xmasthief,
         fontAttribute: { textColor: "#FFFFFF" },
       }
     rule1Token:
       {
-        key: monster_battle_rule1_puppet,
+        key: monster_battle_rule1_xmasthief,
         fontAttribute: { textColor: "#FFFFFF" },
       }
     rule2Token:
       {
-        key: monster_battle_rule2_puppet,
+        key: monster_battle_rule2_xmasthief,
         fontAttribute: { textColor: "#FFFFFF" },
       }
     rule3Token:
       {
-        key: monster_battle_rule3_puppet,
+        key: monster_battle_rule3_xmasthief,
         fontAttribute: { textColor: "#FFFFFF" },
       }
     rule4Token:
       {
-        key: monster_battle_rule4_puppet,
+        key: monster_battle_rule4_xmasthief,
         fontAttribute: { textColor: "#FFFFFF" },
       }
     countdownToken:
       {
-        key: monster_battle_countdown_puppet,
+        key: monster_battle_countdown_xmasthief,
         fontAttribute: { textColor: "#FFFFFF" },
       }
     failureToken:
       {
-        key: monster_battle_failure_puppet,
+        key: monster_battle_failure_xmasthief,
         fontAttribute: { textColor: "#FFFFFF" },
       }
     successToken:
       {
-        key: monster_battle_success_puppet_coin,
+        key: monster_battle_success_xmasthief_coin,
         fontAttribute: { textColor: "#FFFFFF" },
       }
-    marqueeToken: { key: monster_battle_marquee_puppet }
-    summonGifts: # 招喚怪獸才需要填
-      - giftID:
-        probability:
+    marqueeToken: { key: monster_battle_marquee_soccer }
+    summonGifts: # 招喚怪獸才需要填，請務必填入特定禮物，regression team 會需要用到，感謝
+      - giftID: topic_crazy_over
+        probability: 10000
+
+  # - id: puppet # 素還真
+  #   type: 0 # 0: 一般怪獸, 1: 招喚怪獸
+  #   hit_consume: 1
+  #   duration: 60s
+  #   stream_alive_threshold: 1m00s
+  #   animation: "puppet"
+  #   available_dates: # 一般怪獸才會看時間
+  #     - start_date: "2022-02-19T15:30:00+08:00"
+  #       end_date: "2022-03-01T23:59:59+08:00"
+  #   appear_durations: # 一般怪獸才會看時間
+  #     - start_time: 00h00m00s
+  #       end_time: 23h59m59s
+
+  #   share_ratio: 50 # percentage
+  #   profit_ratio: 35 # percentage
+  #   bonus: 132
+  #   weight: 1
+  #   infoPageiconURL: https://cdn.17app.co/b5c6692a-6f22-4829-b614-8eebe720b0d1.png
+  #   winnerPageiconURL: https://cdn.17app.co/b5c6692a-6f22-4829-b614-8eebe720b0d1.png
+  #   hintToken:
+  #     {
+  #       key: monster_battle_hint_puppet,
+  #       fontAttribute: { textColor: "#FFFFFF" },
+  #     }
+  #   rule1Token:
+  #     {
+  #       key: monster_battle_rule1_puppet,
+  #       fontAttribute: { textColor: "#FFFFFF" },
+  #     }
+  #   rule2Token:
+  #     {
+  #       key: monster_battle_rule2_puppet,
+  #       fontAttribute: { textColor: "#FFFFFF" },
+  #     }
+  #   rule3Token:
+  #     {
+  #       key: monster_battle_rule3_puppet,
+  #       fontAttribute: { textColor: "#FFFFFF" },
+  #     }
+  #   rule4Token:
+  #     {
+  #       key: monster_battle_rule4_puppet,
+  #       fontAttribute: { textColor: "#FFFFFF" },
+  #     }
+  #   countdownToken:
+  #     {
+  #       key: monster_battle_countdown_puppet,
+  #       fontAttribute: { textColor: "#FFFFFF" },
+  #     }
+  #   failureToken:
+  #     {
+  #       key: monster_battle_failure_puppet,
+  #       fontAttribute: { textColor: "#FFFFFF" },
+  #     }
+  #   successToken:
+  #     {
+  #       key: monster_battle_success_puppet_coin,
+  #       fontAttribute: { textColor: "#FFFFFF" },
+  #     }
+  #   marqueeToken: { key: monster_battle_marquee_puppet }
+  #   summonGifts: # 招喚怪獸才需要填
+  #     - giftID:
+  #       probability:
 
 #  - id: monster_anniversary5 # 寶寶五週年
 #    type: 1 # 0: 一般怪獸, 1: 招喚怪獸
@@ -863,6 +927,33 @@ monsters:
 #   marqueeToken: {key: monster_battle_summon_marquee_llama}
 
 animationLoader:
+  # xmasthief 聖誕小偷
+  - animationID: xmasthief_attack
+    url: http://cdn.17app.co/7d68da63-44c2-4b98-81cf-9fc0f5463691.zip
+    MD5: 3fad7a38e69d0edda22110e17f1c13b6
+    webpUrl: https://cdn.17app.co/85fe189f-afd6-40ef-9461-a7c7c24790ab-q90-s1.webp
+    webpMD5: 4887633127f2053aeb872ee4064c1ced
+  - animationID: xmasthief_enter
+    url: http://cdn.17app.co/af1e98d9-32fb-4c5f-943d-3eebeb688fe6.zip
+    MD5: 8867014e498f0836785419852ff56358
+    webpUrl: https://cdn.17app.co/15e917ec-636e-4c6e-9d90-6c1a5f359771-q90-s1.webp
+    webpMD5: f35d6fc4f86942eb5e1e7b614cf06b07
+  - animationID: xmasthief_failure
+    url: http://cdn.17app.co/4c201ea3-6c25-4c7b-8a3f-0e9c42c2dcdf.zip
+    MD5: 09db65deffe9656d5bc88c6c99eae721
+    webpUrl: https://cdn.17app.co/ba30b9b0-8c28-4a58-bf14-11aa1ab7fdd5-q90-s1.webp
+    webpMD5: 4a89c021c4c484c28497d0ea83160dcf
+  - animationID: xmasthief_idle
+    url: http://cdn.17app.co/37452bc6-a43d-4107-8195-db54be3400fa.zip
+    MD5: ce75e569145bacb92ff1e9530e39a4c6
+    webpUrl: https://cdn.17app.co/32ae5af7-86f5-475c-ba77-5f7276bd2e99-q90-s1.webp
+    webpMD5: ff1d0d674d951d128017d8e9842e7355
+  - animationID: xmasthief_success
+    url: http://cdn.17app.co/28ad39b4-2c9a-4bcf-bcc6-0d6a67a822ea.zip
+    MD5: f73d7925dc5bf5839d2b1ed091d3bdd6
+    webpUrl: https://cdn.17app.co/91938e6e-515a-4eab-a249-92c8ac472d01-q90-s1.webp
+    webpMD5: e21bf2d25c68645b7170e5c8a673ebd9
+  
   # 素還真
   - animationID: puppet_attack
     url: http://cdn.17app.co/afa524e0-41d4-49b2-a92b-b1e9519e0609.zip
