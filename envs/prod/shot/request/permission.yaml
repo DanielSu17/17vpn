@@ -8,71 +8,71 @@
 # EnvUat = 3
 
 detail:
-  mongo:
-    scopeRangeStart: 1000
-    role:
-      read:
-        id: 1
-        approve: basic
-      readWrite:
-        id: 2
-        approve: advanced
-    env:
-      prod:
-        id: 1
-        approve: advanced
-      pre-prod:
-        id: 2
-        approve: basic
-      uat:
-        id: 3
-        approve: basic
   datadog:
     scopeRangeStart: 900
     role:
       Read:
         id: 1
-        approve: no-DBA-basic
+        approve: basic
       Standard:
         id: 2
-        approve: no-DBA-basic
+        approve: basic
       Admin:
         id: 4
-        approve: no-DBA-advanced
+        approve: advanced
+  mongo:
+    scopeRangeStart: 1000
+    role:
+      read:
+        id: 1
+        approve: DBA-basic
+      readWrite:
+        id: 2
+        approve: DBA-advanced
+    env:
+      prod:
+        id: 1
+        approve: DBA-advanced
+      pre-prod:
+        id: 2
+        approve: DBA-basic
+      uat:
+        id: 3
+        approve: DBA-basic
   mysql:
     scopeRangeStart: 2000
     role:
         read:
           id: 1
-          approve: basic
+          approve: DBA-basic
         readWrite:
           id: 2
-          approve: advanced
+          approve: DBA-advanced
     env:
       prod:
         id: 1
-        approve: advanced
+        approve: DBA-advanced
       pre-prod:
         id: 2
-        approve: basic
+        approve: DBA-basic
       uat:
         id: 3
-        approve: basic
+        approve: DBA-basic
 
 approveFlow:
-  no-DBA-basic:
-      - supervisor
-  no-DBA-advanced:
-      - supervisor
-      - sreDirector
   basic:
       - supervisor
-      - DBA
   advanced:
       - supervisor
       - sreDirector
+  DBA-basic:
+      - supervisor
       - DBA
-  level: [ no-DBA-basic,basic,no-DBA-advanced, advanced]
+  DBA-advanced:
+      - supervisor
+      - sreDirector
+      - DBA
+  level: [ basic, DBA-basic, advanced, DBA-advanced]
 
 slackUser:
   supervisor: 
