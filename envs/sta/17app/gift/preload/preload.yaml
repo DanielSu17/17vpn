@@ -1,10 +1,11 @@
 # totalSizeInBytes must larger than preloadSizeInBytes
 giftStorage:
-  enableSizeLimit: false
-  totalSizeInBytes: 5342880 # 7G
-  preloadSizeInBytes: 5242880 # 6G
+  enableSizeLimit: true
+  totalSizeInBytes: 5342880 # 5MB+
+  preloadSizeInBytes: 5242880 # 5MB
   minAndroidVersion: "2.131.0"
-  minIOSVersion: "9.999.0"
+  minIOSVersion: "3.217.0" #caro test tipping gift
+#   minIOSVersion: "9.999.0"
 
 #mustPreloadGifts:
 #  - giftID: gift_id_1
