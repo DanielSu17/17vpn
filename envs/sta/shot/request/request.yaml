@@ -1,47 +1,46 @@
 datadog:
-  type: DIALOG
+  type: dialog
   title: Request Datadog
   submitText: Submit
-  hasSupervisorBotMail: true
+  hasBotMail: true
   blocks:
     - item: SINGLE_SELECT
       name: Permission
-      value: [ Read, Standard, Admin]
+      value: [ Read, Standard, Admin ]
     - item: TEXT_INPUT
       name: Comment
       value: ~
 mongo:
-  type: MODAL
+  type: modal
   title: Request MongoDB
   submitText: Submit
   closeText: Close
-  hasSupervisorBotMail: true
   blocks:
     - item: SINGLE_SELECT
       name: Permission
-      value: [ read, readWrite]
+      value: [ read, readWrite ]
     - item: SINGLE_SELECT
       name: Env
-      value: [ prod, pre-prod, uat]
+      value: [ prod, pre-prod, uat ]
     - item: MULTI_SELECT
       name: Clusters
-      value: [ default, user, stream, point, eventory, poll, groupcall, message, keyword]
+      value: [ default, user, stream, point, eventory, poll, groupcall, message, keyword ]
     - item: TEXT_INPUT
       name: Comment
       value: ~
 mysql:
-  type: MODAL
+  type: modal
   title: Request MySQL
   submitText: Submit
   closeText: Close
-  hasSupervisorBotMail: true
   blocks:
     - item: SINGLE_SELECT
       name: Permission
-      value: [ read, readWrite]
+      value: [ read, readWrite ]
     - item: SINGLE_SELECT
       name: Env
-      value: [ prod, pre-prod, uat]
+      value: [ prod, pre-prod, uat ]
     - item: TEXT_INPUT
       name: Comment
       value: ~
+      
