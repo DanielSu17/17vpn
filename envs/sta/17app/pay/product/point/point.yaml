@@ -790,13 +790,13 @@ productBasedIAP:
         shouldHighlight: True
     userGroup:
       userIDDigits: ["1","2","3","4","a","b","c"]   # The last character of userID (1~9, a-f) 
-        iapInfo:
-          neverUse: true                            # The user has not used IAP in their career.
-          latestHalfMonthAmount: 
-            eq: 0                                  # amount = 0 USD 
-            gt: 15                                  # amount > 15 USD
-            gte: 15                                 # amount >= 15 USD
-            lt: 20.5                                # amount < 20.5 USD
+      iapInfo:
+        neverUse: true                            # The user has not used IAP in their career.
+        latestHalfMonthAmount: 
+          eq: 0                                  # amount = 0 USD 
+          gt: 15                                  # amount > 15 USD
+          gte: 15                                 # amount >= 15 USD
+          lt: 20.5                                # amount < 20.5 USD
     
 #台灣生涯首次儲值活動 生涯首次儲值330點送330點 NQ
   - startTime: "2021-12-12T10:00:00+08:00"
