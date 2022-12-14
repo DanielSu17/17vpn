@@ -20,7 +20,7 @@
 # //       gt: 15                                  # amount > 15 USD
 # //       gte: 15                                 # amount >= 15 USD
 # //       lt: 20.5                                # amount < 20.5 USD
-# //       lt: 20.5                                # amount <= 20.5 USD
+# //       lte: 20.5                               # amount <= 20.5 USD
 # // Examples iapInfo of userGroup 
 # // userGroup:
 # //   iapInfo:
@@ -48,7 +48,62 @@
 # //     latestHalfMonthAmount:
 # //       gt: 50
 
-eventBasedIAP:      
+eventBasedIAP:  
+#測試第二順位Type (Amy)
+  - startTime: "2022-12-14T18:00:00+08:00"
+    endTime: "2022-12-20T23:59:59+08:00"
+    showCountdownUnderSticker: true
+    showCountdownInPopUp: true
+    stickerURL: "https://assets-17app.akamaized.net/14fdef5a-f96a-40e8-b264-da420ea551fc.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/31aaccc2-a46e-4fed-ac4f-945ce9f7770d.png" 
+    layoutInfo:
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_25500"
+        bonusPoint: 0
+        shouldHighlight: false
+      - productID: "media17_points_10800"
+        bonusPoint: 0
+        shouldHighlight: false
+      - productID: "media17_points_6000"
+        bonusPoint: 0
+        shouldHighlight: false
+      - productID: "media17_points_2500"
+        bonusPoint: 0
+        shouldHighlight: false
+      - productID: "media17_points_1210"
+        bonusPoint: 525
+        shouldHighlight: True
+      - productID: "media17_points_230"
+        bonusPoint: 0
+        shouldHighlight: false
+    userGroup:
+      userIDDigits: ["1","2","3","4","a","b","c"]   # The last character of userID (1~9, a-f) 
+      iapInfo:
+        latestHalfMonthAmount:
+          gt: 0                 # amount > 0 USD
+          lte: 10               # amount >= 10 USD
+        
+        
+        
 #12/07 首儲 已被12/28 首儲取代
 #12/28 首儲 已被2/25 ~ 2/28 首儲取代
 #2/25 ~ 2/28 首儲
