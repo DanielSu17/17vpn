@@ -9,14 +9,15 @@ alertChannels: ["testformonsteralert"]
 animations: ["yeti"]
 
 monsters:
-- id: xmasthief3 #クリスマス泥棒
-  type: 0
+
+- id: xmasthieftrigger #クリスマス泥棒
+  type: 1
   hit_consume: 10
   duration: 60s
   stream_alive_threshold: 1m00s
   animation: "xmasthief"
   available_dates: # 一般怪獸才會看時間
-    - start_date: "2022-12-10T17:10:00+09:00"
+    - start_date: "2022-12-10T00:00:00+09:00"
       end_date: "2022-12-11T23:59:59+09:00"
   appear_durations: # 一般怪獸才會看時間
     - start_time: 00h00m00s
@@ -70,8 +71,72 @@ monsters:
     }
   marqueeToken: { key: monster_battle_marquee_xmasthief_jp }
   summonGifts: # トリガー形式のみ記入が必要
-    - giftID:
-      probability:
+    - giftID: 2212_po_xmas_thief
+      probability: 10000
+
+#- id: xmasthief3 #クリスマス泥棒
+#  type: 0
+#  hit_consume: 10
+#  duration: 60s
+#  stream_alive_threshold: 1m00s
+#  animation: "xmasthief"
+#  available_dates: # 一般怪獸才會看時間
+#    - start_date: "2022-12-10T17:10:00+09:00"
+#      end_date: "2022-12-11T23:59:59+09:00"
+#  appear_durations: # 一般怪獸才會看時間
+#    - start_time: 00h00m00s
+#     end_time: 23h59m59s
+
+#  share_ratio: 50 # percentage
+#  profit_ratio: 35 # percentage
+#  bonus: 400
+#  weight: 1
+#  infoPageiconURL: https://cdn.17app.co/77fcf4e2-673f-4fd7-aa04-6135e59425ad.png
+#  winnerPageiconURL: https://cdn.17app.co/77fcf4e2-673f-4fd7-aa04-6135e59425ad.png
+#  hintToken:
+#    {
+#      key: monster_battle_hint_xmasthief_jp,
+#      fontAttribute: { textColor: "#FFFFFF" },
+#    }
+#  rule1Token:
+#    {
+#      key: monster_battle_rule1_xmasthief_jp,
+#      fontAttribute: { textColor: "#FFFFFF" },
+#    }
+#  rule2Token:
+#    {
+#      key: monster_battle_rule2_xmasthief_jp,
+#      fontAttribute: { textColor: "#FFFFFF" },
+#    }
+#  rule3Token:
+#    {
+#      key: monster_battle_rule3_xmasthief_jp,
+#      fontAttribute: { textColor: "#FFFFFF" },
+#    }
+#  rule4Token:
+#    {
+#      key: monster_battle_rule4_xmasthief_jp,
+#      fontAttribute: { textColor: "#FFFFFF" },
+#    }
+#  countdownToken:
+#    {
+#      key: monster_battle_countdown_xmasthief_jp,
+#      fontAttribute: { textColor: "#FFFFFF" },
+#    }
+#  failureToken:
+#    {
+#      key: monster_battle_failure_xmasthief_jp,
+#      fontAttribute: { textColor: "#FFFFFF" },
+#    }
+#  successToken:
+#    {
+#      key: monster_battle_success_xmasthief_coin_jp,
+#      fontAttribute: { textColor: "#FFFFFF" },
+#    }
+#  marqueeToken: { key: monster_battle_marquee_xmasthief_jp }
+#  summonGifts: # トリガー形式のみ記入が必要
+#    - giftID:
+#      probability:
 
 animationLoader:
 #クリスマスモンスター
