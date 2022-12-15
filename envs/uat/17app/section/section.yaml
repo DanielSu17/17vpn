@@ -1,5 +1,5 @@
 # sections
-#   - id: TopBanner|OffcRecomm|Suggestion|Label|RedEnvelope|Show|Vod|TodayHotTopic|CrazyZoo|GroupCall
+#   - id: TopBanner|OffcRecomm|Suggestion|Label|RedEnvelope|Show|Vod|TodayHotTopic|CrazyZoo|GroupCall|ArchiveVideo
 #     enable: false|true
 #     dedup:  false|true ,false(會出現重複的直播入口)
 #     more:   false|true
@@ -19,6 +19,7 @@
 # style 8: (PK) used in more page
 # style 9: GroupCall
 # style 10: GroupCall empty style. Client will show the groupCall entry button even if the grids are less than minGrids.
+# style 11: ArchiveVideo (典藏直播) 
 
 preservedSectionID: Latest
 
@@ -66,6 +67,14 @@ sections:
     style: 3
     more: true
     orderModel: 2
+  # new tab ArchiveVideo. Initially sorted at seventh.
+  - id: ArchiveVideo # 典藏影片  
+    name:
+      - key: archives_homepage_title
+    enable: true
+    minGrids: 3
+    style: 11
+    more: true
 #########################
   - id: Label # PO萬聖節變裝活動
     labelID: Halloween1
