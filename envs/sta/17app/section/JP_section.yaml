@@ -19,12 +19,11 @@
 # style 8: (PK) used in more page
 # style 9: GroupCall
 # style 10: GroupCall empty style. Client will show the groupCall entry button even if the grids are less than minGrids.
-# style 11: ArchiveVideo (典藏直播) 
+# style 11: ArchiveVideo (典藏直播)
 
 preservedSectionID: Suggestion
 
 sections:
-
   - id: Label #プレミアムクリスマス
     labelID: 2212_jp_xmas_premium_fes
     name:
@@ -36,7 +35,7 @@ sections:
     more: true
     category: normal
     orderModel: 2
-  
+
   - id: Label # #ショートムービーチャレンジ
     labelID: 2210_jp_shortmovie
     name:
@@ -60,30 +59,30 @@ sections:
     style: 7
     minGrids: 1
     more: false
-#  - id: OffcRecomm # 官方推薦（circle機能）
-#    enable: true
-#    style: 2
-#    more: false
+  #  - id: OffcRecomm # 官方推薦（circle機能）
+  #    enable: true
+  #    style: 2
+  #    more: false
 
-#  - id: Label
-#    labelID: jp_supersonic
-#    name:
-#      key: SuperSonic
-#    enable: true
-#    dedup: false
-#    minGrids: 1
-#    style: 3
-#    more: true
+  #  - id: Label
+  #    labelID: jp_supersonic
+  #    name:
+  #      key: SuperSonic
+  #    enable: true
+  #    dedup: false
+  #    minGrids: 1
+  #    style: 3
+  #    more: true
 
-#  - id: Label
-#    labelID: jp_supersonic
-#    name:
-#      key: streamer_jp_label_myhobby
-#    enable: true
-#    dedup: false
-#    minGrids: 1
-#    style: 3
-#    more: true
+  #  - id: Label
+  #    labelID: jp_supersonic
+  #    name:
+  #      key: streamer_jp_label_myhobby
+  #    enable: true
+  #    dedup: false
+  #    minGrids: 1
+  #    style: 3
+  #    more: true
 
   - id: Label # ​​​​みんなで乾杯しよう！
     labelID: 2207_jp_toast_together
@@ -109,13 +108,13 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: ArchiveVideo
-    name:
-      key: archives_homepage_title
-    enable: true
-    minGrids: 0
-    style: 11
-    more: true
+  # - id: ArchiveVideo
+  #   name:
+  #     key: archives_homepage_title
+  #   enable: true
+  #   minGrids: 0
+  #   style: 11
+  #   more: true
 
   - id: Label # 広告出演中のライバー
     labelID: 2206_jp_Ad_entry_streamer
@@ -180,7 +179,7 @@ sections:
     enable: true
     dedup: false
     minGrids: 2
-    style: 3 
+    style: 3
     more: true
 
   - id: Label # 【ビーチから生配信】 夏を感じよう
@@ -195,29 +194,29 @@ sections:
     category: normal
     orderModel: 2
 
-#  - id: Label #新年の挑戦
-#    labelID: 2201_jp_newyear_challenge
-#    name:
-#      key: streamer_jp_label_newyear_challenge
-#    enable: true
-#    dedup: true
-#    minGrids: 0
-#    style: 3
-#    more: true
-#    category: normal
-#    orderModel: 2
+  #  - id: Label #新年の挑戦
+  #    labelID: 2201_jp_newyear_challenge
+  #    name:
+  #      key: streamer_jp_label_newyear_challenge
+  #    enable: true
+  #    dedup: true
+  #    minGrids: 0
+  #    style: 3
+  #    more: true
+  #    category: normal
+  #    orderModel: 2
 
-#  - id: Label #　古墳フェス
-#    labelID: jp_vliver
-#    name:
-#      key: streamer_jp_label_kohun
-#    enable: true
-#    dedup: true
-#    minGrids: 1
-#    style: 3
-#    more: true
-#    category: normal
-#    orderModel: 2
+  #  - id: Label #　古墳フェス
+  #    labelID: jp_vliver
+  #    name:
+  #      key: streamer_jp_label_kohun
+  #    enable: true
+  #    dedup: true
+  #    minGrids: 1
+  #    style: 3
+  #    more: true
+  #    category: normal
+  #    orderModel: 2
 
   - id: Label # ファイナンス
     labelID: 2110_jp_finance1
@@ -243,13 +242,13 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: GroupCall # GroupCall 
+  - id: GroupCall # GroupCall
     name:
       key: group_stream_v3hotpage
     enable: true
-    dedup: false  #重複
+    dedup: false #重複
     minGrids: 0
-    style: 9 
+    style: 9
     more: true
 
   - id: NewestStreamer # D0 new streamer
@@ -313,7 +312,7 @@ sections:
     more: false
 
   - id: Label
-    labelID: jp_talent 
+    labelID: jp_talent
     name:
       key: streamer_jp_label_talent
     enable: true
@@ -448,8 +447,6 @@ sections:
 #    style: 3
 #    more: true
 
-
-
 officialRecommendedStreamers:
   - "608011fd-579b-4e15-b154-3943f952c324" # Qoo_sushi
   - "1654dafc-0ea8-49b6-9651-f3b49959acfa" # jamestw1
@@ -486,4 +483,3 @@ suggestionGroupingRules:
         minLevel: 65
       - maxViewerCount: 80
       - minViewerCount: 80
-
