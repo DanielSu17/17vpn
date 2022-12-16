@@ -19,7 +19,7 @@
 # style 8: (PK) used in more page
 # style 9: GroupCall
 # style 10: GroupCall empty style. Client will show the groupCall entry button even if the grids are less than minGrids.
-# style 11: ArchiveVideo (典藏直播) 
+# style 11: ArchiveVideo (典藏直播)
 
 preservedSectionID: Latest
 
@@ -41,7 +41,7 @@ sections:
     more: false
   - id: Label # 歡迎新人 Welcome new fans
     labelID: welcomenewfans
-    name: 
+    name:
       key: streamer_label_welcomenewfans_subtab
     enable: true
     dedup: false
@@ -68,14 +68,14 @@ sections:
     more: true
     orderModel: 2
 
-  - id: ArchiveVideo
-    name:
-      key: archives_homepage_title
-    enable: true
-    minGrids: 3
-    style: 11
-    more: true
-#########################
+  # - id: ArchiveVideo
+  #   name:
+  #     key: archives_homepage_title
+  #   enable: true
+  #   minGrids: 3
+  #   style: 11
+  #   more: true
+  #########################
   - id: Label # PO萬聖節變裝活動
     labelID: Halloween1
     name:
@@ -95,14 +95,14 @@ sections:
     style: 3
     more: true
     category: normal
-#########################
+  #########################
   - id: GroupCall # GroupCall 派對
     name:
       key: group_stream_v3hotpage
     enable: true
     dedup: false
     minGrids: 1
-    style: 9 
+    style: 9
     more: true
   - id: AudioStream # AudioStream 聲播
     name:
@@ -110,7 +110,7 @@ sections:
     enable: true
     dedup: false
     minGrids: 1
-    style: 3 
+    style: 3
     more: true
   - id: Suggestion # 猜你可能喜歡
     name:
@@ -119,7 +119,7 @@ sections:
     dedup: false
     style: 6
     minGrids: 1
-    more: true 
+    more: true
   - id: Label # 超新星
     labelID: newbie
     name:
@@ -142,7 +142,7 @@ sections:
     orderModel: 2
   - id: Label #HelloKitty
     labelID: HelloKitty
-    name: 
+    name:
       key: event_unboxing_Hello_Kitty
     enable: true
     dedup: true
@@ -153,10 +153,10 @@ sections:
     orderModel: 2
   - id: Label #音樂
     labelID: tw_t_music
-    name: 
+    name:
       key: streamer_label_music
     enable: true
-    dedup: true  
+    dedup: true
     minGrids: 1
     style: 3
     more: true
@@ -164,7 +164,7 @@ sections:
     orderModel: 2
   - id: Label #遊戲玩家
     labelID: tw_t_game
-    name: 
+    name:
       key: streamer_label_game
     enable: true
     dedup: true
@@ -188,7 +188,7 @@ sections:
 
   - id: Label #繪畫達人
     labelID: visual_artists
-    name: 
+    name:
       key: streamer_label_highlight_visual_artists
     enable: true
     dedup: true
@@ -199,7 +199,7 @@ sections:
     orderModel: 2
   - id: Label #直播商城
     labelID: market
-    name: 
+    name:
       key: streamer_label_market
     enable: true
     dedup: true
@@ -220,13 +220,13 @@ sections:
     name:
       key: tab_hot_2019q4_pk
     enable: true
-    dedup: false  #重複
+    dedup: false #重複
     minGrids: 2 # 2個直播間一組PK，3組以上顯示
     style: 3
     more: true
   - id: Label #實力歌手
     labelID: singer
-    name: 
+    name:
       key: streamer_label_singer
     enable: true
     dedup: true
@@ -236,7 +236,7 @@ sections:
     orderModel: 2
   - id: Label #彈唱歌手
     labelID: acoustic
-    name: 
+    name:
       key: streamer_label_acoustic
     enable: true
     dedup: true
@@ -246,7 +246,7 @@ sections:
     orderModel: 2
   - id: Label #演奏達人
     labelID: player
-    name: 
+    name:
       key: streamer_label_player
     enable: true
     dedup: true
@@ -263,7 +263,7 @@ sections:
     more: false
   - id: Label #全民開播
     labelID: stayathome
-    name: 
+    name:
       key: streamer_label_stay_at_home_subtab
     enable: true
     dedup: false
@@ -284,7 +284,7 @@ sections:
     orderModel: 2
   - id: Label #線上課程
     labelID: online_course
-    name: 
+    name:
       key: streamer_label_tutor
     enable: true
     dedup: false
@@ -330,36 +330,35 @@ sections:
     category: normal #normal代表可以在開播類別被選擇；exclusive則不能被選擇，不填寫則默認exclusive
     orderModel: 2
 
-#以下是草稿 
+  #以下是草稿
   - id: Label #聊天
     labelID: tw_t_chat
-    name: 
+    name:
       key: streamer_label_chat
     enable: false
-    dedup: false  
+    dedup: false
     minGrids: 5
     style: 3
     more: true
   - id: Label #音樂
     labelID: tw_t_music
-    name: 
+    name:
       key: streamer_label_music
     enable: false
-    dedup: false  
+    dedup: false
     minGrids: 5
     style: 3
     more: true
 
   - id: Label #運動
     labelID: tw_t_sport
-    name: 
+    name:
       key: streamer_label_sport
     enable: false
-    dedup: false 
+    dedup: false
     minGrids: 5
     style: 3
     more: true
-
 
   - id: Label # 才藝
     labelID: talent
@@ -381,44 +380,40 @@ sections:
     more: true
   - id: Label #生活
     labelID: smartlife
-    name: 
+    name:
       key: streamer_label_smartlife
     enable: false
-    dedup: false  #重複
+    dedup: false #重複
     minGrids: 5
     style: 3
     more: true
   - id: Label #命理
     labelID: tw_t_fortune_teller
-    name: 
+    name:
       key: 命理
     enable: false
-    dedup: false  #重複
+    dedup: false #重複
     minGrids: 5
     style: 3
     more: true
   - id: Label #虛擬主播
     labelID: vliver
-    name: 
+    name:
       key: virtual_streamer_title
     enable: false
-    dedup: false  #重複
+    dedup: false #重複
     minGrids: 1
     style: 3
     more: true
   - id: Label #其他未分類
     labelID: tw_t_others
-    name: 
+    name:
       key: 其他未分類
     enable: false
-    dedup: false  #重複
+    dedup: false #重複
     minGrids: 5
     style: 3
     more: true
-
-
-
-
 
   - id: CrazyZoo # 荒唐動物園(遊戲類)
     name:
@@ -427,7 +422,6 @@ sections:
     minGrids: 5
     style: 3
     more: true
- 
 
   - id: RedEnvelope # 紅包
     name:
@@ -496,7 +490,6 @@ officialRecommendedStreamers:
   - "caf2da0e-54cb-4058-4f1c-4056eb970161" # janet.w01
   - "2e95de40-7880-422b-7f3b-0af9405e3b4d" # janet.w02
   - "cc15728a-654b-476c-8c2c-79962273c5f7" # rocka1
-  
 
 suggestionGroupingRules:
   e:
