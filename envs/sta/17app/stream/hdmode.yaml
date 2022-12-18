@@ -43,20 +43,21 @@ viewerWhitelist720p:
 
 # enable HDMode by ip region and minLevel
 # contractUserOnly is true, this setting only effects contract users
-# streamerWhiteList720pFilter: 
-#   excludedUserIDs:
-#     - id178e6ced0-4fcb-47f5-a676-2d2cf0c647f2 
+# streamerWhiteList720pFilter:         
+#   excludedUserIDs:                  // 例外名單
+#     - id1 
 #     - id2
 #   regions:
-#     JP:
-#       contractUserOnly: false
-#       minLevel: 70
+#     JP:                             // ip address開播地區(需VPN)
+#       contractUserOnly: false。     // 是否為簽約主播
+#       minLevel: 70                  // 主播等級達＿以上
+
 streamerWhiteList720pFilter: 
   excludedUserIDs:
      - 6a36ab84-c7da-4a59-aa9d-1d6368cfbde2 #iris_jp.3
   regions:
     JP:
-      contractUserOnly: false
+      contractUserOnly: true
       minLevel: 35
 
 backToHDModeDuration: 60
