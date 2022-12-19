@@ -10,22 +10,12 @@
 # | IAP_Buy_Point | 8 |
 # | View_Stream_X_Seconds | 9 |
 # | IAP_X_Points | 10 |
+# | Share_Twitter | 11 |
 # | TypePhoneBinding | 12 |
 # | View_Stream_X_Different_Days | 13 |
 # | CreateAvatar | 16 |
 # | CommentInNewestLivestream | 17 |
 # | CheckIn | 24 |
-# ============
-# Viewer share
-# | Share_Twitter | 11 |
-# | ShareInstagramStory | 29 |
-# | ShareInstagramDirect | 30 |
-# | ShareFacebookStory | 31 |
-# | ShareFacebookNewsFeed | 32 |
-# | ShareMessenger | 33 |
-# | ShareWhatsApp | 34 |
-# | ShareLine | 35 |
-# | Share17 | 36 |
 
 # | category | Value |
 # | --- | --- |
@@ -50,37 +40,8 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
-- ID: e961fba3-5a87-41d7-b865-c17453d86a69
-  type: 24
-  category: 0
-  lifeCycle: 2
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2207_jp_breakwall_bp
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: po-crazy-stair-event-title-2
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: po-crazy-stair-gift-streamer-1
-  i18nDescriptionParams: []
-  goalValue: 6
-  enableTimeRange:
-  - startTime: 2022-07-12 16:25:00 (GMT+0800)
-    endTime: 2022-07-31 09:00:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 84114e56-87f6-44ad-bc66-3e5279cfc8c5
-  type: 24
+- ID: e91c879e-775c-42af-925c-7d4ca85f9318
+  type: 9
   category: 0
   lifeCycle: 0
   targetAudience: 0
@@ -88,55 +49,27 @@ missions:
     min: 1
     max: 999
   reward:
-    rewardType: 1
-    rewardID: 2207_jp_breakwall_bp
-    amount: 1
+    rewardType: 2
+    rewardID: stag-clothes-test
+    amount: 20
     expireTimeSecs: 86400
-  i18nTitle: po-crazy-stair-event-title-2
+  i18nTitle: ETHAN
   i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: po-crazy-stair-gift-streamer-1
+  i18nDescription: ETHAN
   i18nDescriptionParams: []
-  goalValue: 6
+  goalValue: 10
   enableTimeRange:
-  - startTime: 2022-07-12 16:25:00 (GMT+0800)
-    endTime: 2022-07-31 09:00:00 (GMT+0800)
+  - startTime: 2022-12-18 00:00:00 (GMT+0800)
+    endTime: 2022-12-30 23:59:59 (GMT+0800)
   refIDs: []
   platforms:
   - android
   - ios
+  - web
   requirePhoneBinding: false
-  withReminder: true
-- ID: ff461357-4827-43fe-bea3-30b9533139b9
-  type: 24
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2207_jp_breakwall_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: po-crazy-stair-event-title-2
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: po-crazy-stair-gift-streamer-1
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-07-12 16:25:00 (GMT+0800)
-    endTime: 2022-07-31 09:00:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
+  withReminder: false
 - ID: e174084b-8206-410d-94e8-44bcf5bab7ee
   type: 9
   category: 0
@@ -251,25 +184,25 @@ missions:
     expireTimeSecs: 86400
   i18nTitle: baggage_mission_share_onetime_title
   i18nTitleParams:
-    - value: "Facebook"
-      mapOption: 0
-      fontAttribute: null
+  - value: Facebook
+    mapOption: 0
+    fontAttribute: null
   i18nContent: ""
   i18nContentParams: []
   i18nDescription: baggage_mission_share_des
   i18nDescriptionParams:
-    - value: "Facebook"
-      mapOption: 0
-      fontAttribute: null
+  - value: Facebook
+    mapOption: 0
+    fontAttribute: null
   goalValue: 1
   enableTimeRange:
-    - startTime: 2022-04-01 12:00:00 (GMT+0800)
-      endTime: 2099-04-30 23:59:59 (GMT+0800)
+  - startTime: 2022-04-01 12:00:00 (GMT+0800)
+    endTime: 2099-04-30 23:59:59 (GMT+0800)
   refIDs: []
   platforms:
-    - android
-    - ios
-    - web
+  - android
+  - ios
+  - web
   requirePhoneBinding: false
   withReminder: true
 - ID: e3f0e3e6-55ea-4641-b192-02d90620fd65
@@ -287,31 +220,30 @@ missions:
     expireTimeSecs: 86400
   i18nTitle: baggage_mission_share_title
   i18nTitleParams:
-    - value: "LINE"
-      mapOption: 0
-      fontAttribute: null
-    - value: "5"
-      mapOption: 0
-      fontAttribute: null
+  - value: LINE
+    mapOption: 0
+    fontAttribute: null
+  - value: "5"
+    mapOption: 0
+    fontAttribute: null
   i18nContent: ""
   i18nContentParams: []
   i18nDescription: baggage_mission_share_des
   i18nDescriptionParams:
-    - value: "LINE"
-      mapOption: 0
-      fontAttribute: null
+  - value: LINE
+    mapOption: 0
+    fontAttribute: null
   goalValue: 5
   enableTimeRange:
-    - startTime: 2022-04-01 12:00:00 (GMT+0800)
-      endTime: 2099-04-30 23:59:59 (GMT+0800)
+  - startTime: 2022-04-01 12:00:00 (GMT+0800)
+    endTime: 2099-04-30 23:59:59 (GMT+0800)
   refIDs: []
   platforms:
-    - android
-    - ios
-    - web
+  - android
+  - ios
+  - web
   requirePhoneBinding: false
   withReminder: true
-
 i18nMissionCompleteToast: baggage_mission_toast_claimed
 refreshHour: 17
 supportedVersion:
