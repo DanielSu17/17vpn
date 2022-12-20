@@ -96,7 +96,7 @@ eventBasedIAP:
         bonusPoint: 0
         shouldHighlight: false
     userGroup:
-      userIDDigits: ["1","2","3","4","a","b","c"]   # The last character of userID (1~9, a-f) 
+      userIDDigits: ["5","7","3","4","a","b","c"]   # The last character of userID (1~9, a-f) 
       iapInfo:
         latestHalfMonthAmount:
           gt: 0                 # amount > 0 USD
@@ -805,7 +805,13 @@ productBasedIAP:
         latestHalfMonthAmount:
           gt: 10
           lte: 50
-       
+  
+    userGroup:
+      userIDDigits: ["2","3","9","7","d","e","f"]   # The last character of userID (1~9, a-f) 
+      iapInfo:
+        latestHalfMonthAmount:
+          gt: 50
+
     
 #台灣生涯首次儲值活動 生涯首次儲值330點送330點 NQ
   - startTime: "2021-12-12T10:00:00+08:00"
