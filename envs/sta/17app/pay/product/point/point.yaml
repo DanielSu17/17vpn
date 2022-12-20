@@ -101,6 +101,12 @@ eventBasedIAP:
         latestHalfMonthAmount:
           gt: 0                 # amount > 0 USD
           lte: 10               # amount >= 10 USD
+          
+    userGroup:
+      userIDDigits: ["1","8","9","5","d","e","f"]   # The last character of userID (1~9, a-f) 
+      iapInfo:
+        latestHalfMonthAmount:
+          eq: 0                 # amount - 0 USD
         
         
         
@@ -792,6 +798,13 @@ productBasedIAP:
       userIDDigits: ["1","2","3","4","a","b","c"]   # The last character of userID (1~9, a-f) 
       iapInfo:
         neverUse: true                            # The user has not used IAP in their career.
+        
+    userGroup:
+      userIDDigits: ["1","5","6","7","d","e","f"]   # The last character of userID (1~9, a-f) 
+      iapInfo:
+        latestHalfMonthAmount:
+          gt: 10
+          lte: 50
        
     
 #台灣生涯首次儲值活動 生涯首次儲值330點送330點 NQ
