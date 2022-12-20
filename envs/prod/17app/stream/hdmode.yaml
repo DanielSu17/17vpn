@@ -307,5 +307,21 @@ viewerWhitelist720p:
   # - 00c0bc02-c6df-448c-8385-114288e51d83 #77_七七
   # - d4fa2189-be5b-4351-8dc6-3793b3e79593 #17嘴一波
 
+# enable HDMode by ip region and minLevel
+# contractUserOnly is true, this setting only effects contract users
+# streamerWhiteList720pFilter:         
+#   excludedUserIDs:                  // 例外名單
+#     - id1 
+#     - id2
+#   regions:
+#     JP:                             // ip address開播地區(需VPN)
+#       contractUserOnly: false。     // 是否限簽約主播
+#       minLevel: 70                  // 主播等級達＿以上
+
+streamerWhiteList720pFilter: 
+  regions:
+    JP:
+      contractUserOnly: false
+      minLevel: 70
 
 backToHDModeDuration: 600
