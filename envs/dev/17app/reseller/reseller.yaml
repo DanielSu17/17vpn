@@ -44,18 +44,56 @@ pointPerCurrenciesByRegion:
       ratio: "45.94"
     - currency: "HKD"
       ratio: "46.00"
+  PH:
+    # open below 7 ratios when 17 PH starts to self-operated
+    # - currency: "PHP"
+    #   ratio: "6.00"
+    # - currency: "PHP"
+    #   ratio: "6.10"
+    # - currency: "PHP"
+    #   ratio: "6.20"
+    # - currency: "PHP"
+    #   ratio: "6.30"
+    # - currency: "PHP"
+    #   ratio: "6.40"
+    # - currency: "PHP"
+    #   ratio: "6.50"
+    # - currency: "PHP"
+    #   ratio: "6.60"
+    - currency: "PHP"
+      ratio: "7.00"
+    - currency: "PHP"
+      ratio: "7.03"
+    - currency: "PHP"
+      ratio: "7.06"
+    - currency: "PHP"
+      ratio: "7.10"
+    - currency: "PHP"
+      ratio: "7.13"
+    - currency: "PHP"
+      ratio: "7.16"
+    - currency: "PHP"
+      ratio: "7.20"
+    - currency: "PHP"
+      ratio: "7.23"
+    - currency: "PHP"
+      ratio: "7.25"
+    - currency: "PHP"
+      ratio: "7.30"
   
 # must contains TWD
 supportedCurrencies:
   - TWD
   - SGD
   - HKD
+  - PHP
 
 # must contains TW
 supportedRegions:
   - TW
   - SG
   - HK
+  - PH
 
 supportedPayMethods:
   - 3  # payModel.MethodSPG
@@ -65,3 +103,4 @@ supportedPayMethods:
   - 55 # payModel.MethodSCBankHK, let TW admin can handle SG reseller
   - 65 # payModel.MethodHK7ELEVEN
   - 69 # payModel.MethodResellerMeme
+  - 71 # payModel.MethodPHShopee
