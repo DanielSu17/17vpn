@@ -26,6 +26,9 @@ mongo:
     - item: MULTI_SELECT
       name: Clusters
       value: [ default, user, stream, point, eventory, poll, groupcall, message, keyword]
+      description: 
+        keyword: pre-prod, prod only
+        discovery: pre-prod only
     - item: TEXT_INPUT
       name: Comment
       value: ~
