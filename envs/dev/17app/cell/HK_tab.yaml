@@ -1,12 +1,28 @@
 tabs:
-# - follow
-- event
-- hot
-- 17k
-- latest
+  - hot_2019Q4
+  - hot_opt
+  - hot
+  - event
+  - 17tv_tab
+  - vipRecommend
+  - 17k
+  - clip
+  - male_tab
+  - female_tab
+  - latest
 
 # this is for setting default tab in tabs, abnormal case will lead to apply first tab as default tab in client side
-defaultTab: hot
+defaultTab: hot_2019Q4
 
+tabInfo:
+  17liveplus_tab:
+    textColor: "#f5487d"
+
+tabsCanBeChosen:
+  - name: handsUp
+    titleI18nKey: livestream_option_handsup
+
+hotOlderAndroidVersion: 2.4.41
+hotOlderIOSVersion: 3.90.0
 musicNewAndroidVersion: 2.29.0
-musicNewIOSVersion: 3.115.200
+musicNewIOSVersion: 3.115.0
