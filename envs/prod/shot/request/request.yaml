@@ -14,18 +14,18 @@ mongo:
   type: modal
   title: Request MongoDB
   submitText: Submit
-  closeText: Close
   hasBotMail: true
+  closeText: Close
   blocks:
     - item: SINGLE_SELECT
       name: Permission
-      value: [ read, readWrite ]
+      value: [ read, write ]
     - item: SINGLE_SELECT
       name: Env
       value: [ prod, pre-prod]
     - item: MULTI_SELECT
       name: Clusters
-      value: [ default, user, stream, point, eventory, poll, groupcall, message, keyword]
+      value: [ default, user, stream, point, eventory, poll, groupcall, message, keyword, discovery]
       description: 
         keyword: pre-prod, prod only
         discovery: pre-prod only
@@ -36,15 +36,16 @@ mysql:
   type: modal
   title: Request MySQL
   submitText: Submit
-  closeText: Close
   hasBotMail: true
+  closeText: Close
   blocks:
     - item: SINGLE_SELECT
       name: Permission
-      value: [ read, readWrite ]
+      value: [ read, write ]
     - item: SINGLE_SELECT
       name: Env
       value: [ prod, pre-prod, uat ]
     - item: TEXT_INPUT
       name: Comment
       value: ~
+      

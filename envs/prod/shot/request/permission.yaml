@@ -23,7 +23,7 @@ detail:
     scopeRangeStart: 1000
     role:
       read: 1
-      readWrite: 2
+      write: 2
     env:
       prod: 1
       pre-prod: 2
@@ -31,14 +31,14 @@ detail:
     approve:
       default: basic
       custom:
-        - role: readWrite
+        - role: write
           env: prod
           approveFlowKey: DBA-advanced
   mysql:
     scopeRangeStart: 2000
     role:
       read: 1
-      readWrite: 2
+      write: 2
     env:
       prod: 1
       pre-prod: 2
@@ -46,7 +46,7 @@ detail:
     approve:
       default: basic
       custom:
-        - role: readWrite
+        - role: write
           env: prod
           approveFlowKey: DBA-advanced
 

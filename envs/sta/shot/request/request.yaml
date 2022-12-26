@@ -19,7 +19,7 @@ mongo:
   blocks:
     - item: SINGLE_SELECT
       name: Permission
-      value: [ read, readWrite ]
+      value: [ read, write ]
     - item: SINGLE_SELECT
       name: Env
       value: [ prod, pre-prod]
@@ -41,7 +41,7 @@ mysql:
   blocks:
     - item: SINGLE_SELECT
       name: Permission
-      value: [ read, readWrite ]
+      value: [ read, write ]
     - item: SINGLE_SELECT
       name: Env
       value: [ prod, pre-prod, uat ]
