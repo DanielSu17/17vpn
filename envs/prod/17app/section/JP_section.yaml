@@ -32,18 +32,6 @@ sections:
  #   more: false
 
 
-  - id: Label # プレミアムクリスマス
-    labelID: 2212_jp_xmas_premium_fes
-    name:
-      key: streamer_jp_label_xmas_premium_2022
-    enable: true
-    dedup: true
-    minGrids: 3
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
   - id: Suggestion # 猜你可能喜歡
     name:
       key: tab_hot_2019q4_follow_suggestion
@@ -62,6 +50,18 @@ sections:
     minGrids: 6 # 2個直播間一組PK，3組以上顯示
     style: 3
     more: true
+
+  - id: Label # 初見さん歓迎
+    labelID: jp_welcome
+    name:
+      key: streamer_jp_label_welcome
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
 
   - id: Latest # 新人(和『最新』同邏輯)
     name:
@@ -138,18 +138,6 @@ sections:
     enable: true
     dedup: true
     minGrids: 5
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
-  - id: Label # 初見さん歓迎
-    labelID: jp_welcome
-    name:
-      key: streamer_jp_label_welcome
-    enable: true
-    dedup: true
-    minGrids: 3
     style: 3
     more: true
     category: normal
@@ -562,6 +550,18 @@ sections:
 #    category: normal
 #    orderModel: 2
 
+#  - id: Label # プレミアムクリスマス
+#    labelID: 2212_jp_xmas_premium_fes
+#    name:
+#      key: streamer_jp_label_xmas_premium_2022
+#    enable: true
+#    dedup: true
+#    minGrids: 3
+#    style: 3
+#    more: true
+#    category: normal
+#    orderModel: 2
+
 officialRecommendedStreamers:
 
 newbieStreamGuideGroupingRules:
@@ -579,5 +579,4 @@ newbieStreamGuideGroupingRules:
         minLevel: 65
       - maxViewerCount: 40
       - minViewerCount: 40
-
 
