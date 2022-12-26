@@ -1,6 +1,9 @@
 #!/bin/bash
 set -euxo pipefail
 
+SLACK_USER_TOKEN="${SLACK_USER_TOKEN:-SLACK_USER_TOKEN_NOT_FOUND}"
+OPSGENIE_TOKEN="${OPSGENIE_TOKEN:-OPSGENIE_TOKEN_NOT_FOUND}"
+
 sudo apt-get update
 sudo apt-get install gcalcli -y
 today=$(date +%F)
@@ -111,6 +114,20 @@ else
   exit 0
 fi
 
+oncaller_mail="$(curl \
+  --connect-timeout 60 \
+  --max-time 60 \
+  --request GET "https://api.opsgenie.com/v2/schedules/sre_team_schedule/on-calls?scheduleIdentifierType=name&flat=true" \
+  --header "Authorization: GenieKey ${OPSGENIE_TOKEN}" | jq -r .data.onCallRecipients[])"
+
+echo "Oncaller's email: ${oncaller_mail}"
+
+oncaller_slack_id="$(curl \
+  --connect-timeout 60 \
+  --max-time 60 \
+  --request GET "https://slack.com/api/users.lookupByEmail?email=${oncaller_mail}" \
+  --header "Authorization: Bearer ${SLACK_USER_TOKEN}" | jq -r .user.id)"
+
 if [[ $(git diff --stat) != '' ]];
 then
   sudo apt update
@@ -123,11 +140,12 @@ then
   current_branch_pr_status=$(gh pr view --json 'state' -q '.state' | xargs)
   if [[ $current_branch_pr_status != 'OPEN' ]];
   then
+    # oncall group team id: S4Y7W93V1
     pr_url=$(gh pr create --title "[Infra] GKE prescaling" --body $today)
-    curl -X POST --data-urlencode "payload={\"channel\": \"#eng-sre-log\", \"text\": \"<!subteam^S4Y7W93V1> Prescaling PR Created\n $pr_url \"}" "$SLACK_WEBHOOK_URI"
+    curl -X POST --data-urlencode "payload={\"channel\": \"#eng-sre-log\", \"text\": \"<@oncaller_slack_id> Prescaling PR Created c.c. <!subteam^S4Y7W93V1>\n $pr_url \"}" "$SLACK_WEBHOOK_URI"
   else
     pr_exists_msg="PR already exists, just go to merge ${branch} branch directly."
-    curl -X POST --data-urlencode "payload={\"channel\": \"#eng-sre-log\", \"text\": \"<!subteam^S4Y7W93V1> ${pr_exists_msg}\"}" "$SLACK_WEBHOOK_URI"
+    curl -X POST --data-urlencode "payload={\"channel\": \"#eng-sre-log\", \"text\": \"<@oncaller_slack_id> ${pr_exists_msg} c.c. <!subteam^S4Y7W93V1> \"}" "$SLACK_WEBHOOK_URI"
   fi
 else
   echo 'Calendar unchanged.'
