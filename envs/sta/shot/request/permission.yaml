@@ -33,7 +33,7 @@ detail:
       custom:
         - role: write
           env: prod
-          approveFlowKey: DBA-advanced
+          approveFlowKey: mongo-DBA-advanced
   mysql:
     scopeRangeStart: 2000
     role:
@@ -48,7 +48,7 @@ detail:
       custom:
         - role: write
           env: prod
-          approveFlowKey: DBA-advanced
+          approveFlowKey: mysql-DBA-advanced
 
 approveFlow:
   basic:
@@ -56,22 +56,30 @@ approveFlow:
   advanced:
       - supervisor
       - sreDirector
-  DBA-advanced:
+  mongo-DBA-advanced:
       - supervisor
       - sreDirector
-      - DBA
+      - mongoDBA
+  mysql-DBA-advanced:
+      - supervisor
+      - sreDirector
+      - mysqlDBA
 
 slackUser:
   supervisor: 
     division: 0
-  DBA: 
+  mongoDBA: 
     id: U03PP5RTMHA
     email: desmondlin@17.media
     name: desmondlin
     division: 1
+  mysqlDBA: 
+    id: U0326H1LLMB
+    email: billyhsu@17.media
+    name: billyhsu
+    division: 1
   sreDirector:
-    id: U040E6KAARL
-    email: skyetseng@17.media
-    name: skyetseng
+    id: U416GNC1Z
+    email: sammy@17.media
+    name: sammy
     division: 2
-    
