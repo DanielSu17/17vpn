@@ -5,6 +5,7 @@
 # SLACK_WEBHOOK_URI: incoming webhook by slackbot: `shot`
 name: Configure Prescaling
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 2 * * 1-5' # 10AM UTC+8
     - cron: '0 6 * * 1-5' # 14PM UTC+8
