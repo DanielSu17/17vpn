@@ -142,10 +142,10 @@ then
   then
     # oncall group team id: S4Y7W93V1
     pr_url=$(gh pr create --title "[Infra] GKE prescaling" --body $today)
-    curl -X POST --data-urlencode "payload={\"channel\": \"#eng-sre-log\", \"text\": \"<@oncaller_slack_id> Prescaling PR Created c.c. <!subteam^S4Y7W93V1>\n $pr_url \"}" "$SLACK_WEBHOOK_URI"
+    curl -X POST --data-urlencode "payload={\"channel\": \"#eng-sre-log\", \"text\": \"<@${oncaller_slack_id}> Prescaling PR Created c.c. <!subteam^S0280LZPHNF>\n $pr_url \"}" "$SLACK_WEBHOOK_URI"
   else
     pr_exists_msg="PR already exists, just go to merge ${branch} branch directly."
-    curl -X POST --data-urlencode "payload={\"channel\": \"#eng-sre-log\", \"text\": \"<@oncaller_slack_id> ${pr_exists_msg} c.c. <!subteam^S4Y7W93V1> \"}" "$SLACK_WEBHOOK_URI"
+    curl -X POST --data-urlencode "payload={\"channel\": \"#eng-sre-log\", \"text\": \"<@${oncaller_slack_id}> ${pr_exists_msg} c.c. <!subteam^S0280LZPHNF> \"}" "$SLACK_WEBHOOK_URI"
   fi
 else
   echo 'Calendar unchanged.'
