@@ -7,3 +7,7 @@ configs:
     taskType: "keyword:balanceScore"
     idSuffix: "202212281200"
     retry: 3
+  - cronSpec: "*/10 * * * *"
+    taskType: "keyword:cleanUpOldHistory"
+    idSuffix: "202212281130"
+    retry: 3
