@@ -24,6 +24,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.SRE_GITHUB_TOKEN }}
           GCALCLI_OAUTH: ${{ secrets.GCALCLI_OAUTH }}
           SLACK_WEBHOOK_URI: ${{ secrets.SLACK_WEBHOOK_URI }}
+          SLACK_USER_TOKEN: ${{ secrets.SLACK_USER_TOKEN }}
+          OPSGENIE_TOKEN: ${{ secrets.OPSGENIE_TOKEN }}          
         run: |-
           echo $GCALCLI_OAUTH > ~/.gcalcli_oauth
           ./prescaling.sh
