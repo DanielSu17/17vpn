@@ -10,6 +10,44 @@
 # // |    Career     |   1   | 限時生涯首儲
 # // |    UnLimit    |   2   | 限時不限次數
 
+# // example of userGroup (尚未relaase)
+# // userGroup:
+# //   userIDDigits: ["1","2","3","4","a","b","c"] # The last character of userID (1~9, a-f) 
+# //   iapInfo:
+# //     neverUse: true                            # The user has not used IAP in their career.
+# //     latestHalfMonthAmount: 
+# //       eq: 10                                  # amount = 10 USD 
+# //       gt: 15                                  # amount > 15 USD
+# //       gte: 15                                 # amount >= 15 USD
+# //       lt: 20.5                                # amount < 20.5 USD
+# //       lte: 20.5                               # amount <= 20.5 USD
+# // Examples iapInfo of userGroup 
+# // userGroup:
+# //   iapInfo:
+# //     neverUse: true
+# // 
+# // userGroup:
+# //   iapInfo:
+# //     latestHalfMonthAmount:
+# //       eq: 0
+# // 
+# // userGroup:
+# //   iapInfo:
+# //     latestHalfMonthAmount:
+# //       gt: 0
+# //       lte: 10
+# // 
+# // userGroup:
+# //   iapInfo:
+# //     latestHalfMonthAmount:
+# //       gt: 10
+# //       lte: 50
+# // 
+# // userGroup:
+# //   iapInfo:
+# //     latestHalfMonthAmount:
+# //       gt: 50
+
 eventBasedIAP:
 #0 < n <= 10 (Amy)
   - startTime: "2022-12-16T18:00:00+08:00"
