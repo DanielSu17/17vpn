@@ -1,0 +1,9 @@
+rule:
+  - service: publishably
+    regex: ".*"
+    msg: This is `publishabl` alert test
+  - service: GoLives
+    regex: High Latency by Path
+    msg: This is `GoLives` alert test
+channelID:
+  - C01FY7VFY6Q # eng-dev-alert
