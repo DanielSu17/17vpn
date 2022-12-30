@@ -1,18 +1,10 @@
 # device keeps in lowercase
 # region and provider keep in Uppercase
+# - regions: ["JP"]    # 可限制個別地區(JP、TW..)、ALL
+#   devices: ["ALL"]    # 禁止使用 replaykit、obs、ALL (除了前面兩個，加上iOS、Android) 開播
+#   providers: ["AWS"]   # 禁止使用指定的Provider (QINIU、WANSU、WANSU_LOW_LATENCY、AWS、LIVE17）
+#-----------------------------------------------------------------
 disableProviderProfiles:
   - regions: ["ALL"]
     devices: ["ALL"]
-    providers: ["QINIU"]
-  - regions: ["ALL"]
-    devices: ["ALL"]
-    providers: ["WANSU"]
-  - regions: ["ALL"]
-    devices: ["ALL"]
-    providers: ["AWS"]
-  - regions: ["ALL"]
-    devices: ["ALL"]
-    providers: ["WANSU_LOW_LATENCY"]
-  - regions: ["ALL"]
-    devices: ["ALL"]
-    providers: ["LIVE17"]    
+    providers: ["ALL"]
