@@ -92,22 +92,27 @@ whiteList:
   - 4aa6f1a4-6fa4-43de-8bb2-3899de5da95c #flawlessri
 silenceList: []
 displayIconType: 1 # 功能按紐 1.VS 2.PK
-displayInvitationPictures: 3 # 配對中隨機頭像圖片 1.TW 2.JP 3.US 4.MENA
+displayInvitationPictures: 1 # 配對中隨機頭像圖片 1.TW 2.JP 3.US 4.MENA
 # 配對條件： 
 # 1. 開播選擇同活動，同分數> 活動分數 ± 1％ > 活動分數 ± 5％> 活動分數 ± 10％ > 所有同活動主播
 # 2. 同等級 > 等級 ± 10 > 等級 ± 20 
 # 3. 同勝率 > 勝率 ± 5% > 勝率 ± 10%
 # 4. 所有在線同區的主播 
-matchingRules:
+matchingRules: 
+  sameEventMatchFirst: true #將相同活動配對在一起的開關
+  eventScores:
+    - 1
+    - 5
+    - 10
   levelRange:
-  - 10
-  - 20
+    - 10
+    - 20
   winRate:
-  - 0
-  - 0.05
-  - 0.1
+    - 0
+    - 0.05
+    - 0.1
 minLevel: 1
-playList:
+playList: # PK 模式列表
   - id: friendPK
     mode: 1
     match: 2
@@ -177,7 +182,32 @@ playListV2:
       description:
         key: "pk_schedule_menu_suspended1"
 
-showPKStarLB: true # control regional LB to show
+
+# 選取該活動時，必須送該活動的禮物才會納入PK分數計算
+
+pkEvents:
+  - 12396
+
+#pkEvents: [12396]
+
+## for pk leaderboard
+pkHourLBLevel:
+  min: 10
+  max: 280 # streamer higher than max level will not show pk leaderboard in their stream
+pkStarDurations: # [startTime, endTime) end time is opened
+# for example, startime: 20h00m00s and 24h00m00s means 20, 21, 22, 23 hrs will have red envelope
+- startTime: 20h00m00s
+  endTime: 24h00m00s
+
+weeklyLBTopCount: 3 # how many top streamers will be granted pk label
+showPKStarLB: true # control regional LB to show 
+
+# minimum points needed to count as lb win after specific time
+# if now is before earliest start, we use 3000 as defualt.
+# please dont clear this config until start is older than one month for data consistency
+pkLBMinPoints: 
+  - start: "2020-09-01 00:00:00 (GMT+0800)"
+    minPoint: 3000
 
 # pk leaderboard rules
 regularRuleTitle: 
