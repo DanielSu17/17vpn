@@ -66,7 +66,30 @@ eventTitles:
     # regionMode: exclude
     # regions: ["TW","JP"]
 
-
+  - id: "2212_ph_TheLastOneStanding"
+    badgeIconURL: "https://cdn.17app.co/7abac13c-360b-44a3-8fee-157ce4ccfb58.png"
+    badgeGrayoutIconURL: "https://cdn.17app.co/813f890d-a0dd-4b7a-bd1b-89f68dac3caf.png"
+    frameIconURL: "https://cdn.17app.co/6a7c2fc7-4533-4474-b62c-da11f2e0bc3a.png"
+    frameGrayoutIconURL: "https://cdn.17app.co/c24eb5fa-80ab-4248-b3f1-6fb9bca58395.png"
+    nameToken: 
+      key: "Last One Standing"
+    descriptionToken:
+      key: "'2022 PH Region - The Last One Standing' Event Winner"
+    backgroundType: 1
+  # if ctaEventID not set, user will not see call to action to event page
+    ctaEventID: 16003
+    userIDs:
+      - 791843a7-64db-41cd-a3c0-21880d51b428
+  # EventTimeRange is when user sees description of event
+    eventTimeRange:
+      startTime: 2023-01-03 12:00:00 (GMT+0800)
+      endTime: 2023-04-03 12:00:00 (GMT+0800)
+  # TitleTimeRange means when above userIDs can start using their event titles
+    titleTimeRange:
+      startTime: 2023-01-03 12:00:00 (GMT+0800)
+      endTime: 2023-04-03 12:00:00 (GMT+0800)
+    regionMode: Include
+    regions: []
 
   - id: "2212-hk-award-female-1"
     badgeIconURL: "https://cdn.17app.co/1374a296-81c5-439f-9d71-c6855d1c6784.png"
