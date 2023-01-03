@@ -1,5 +1,5 @@
 enable: true
-enableAll: false
+enableAll: true
 enableContractedStreamer: true
 defaultAcceptChallenge: false
 maxPlayerAmount: 5000 #以人為單位
@@ -130,18 +130,33 @@ playListV2:
 
 ## for pk leaderboard
 pkHourLBLevel:
-  min: 30
-  max: 70
-pkStarDurations:
+  min: 10
+  max: 280 # streamer higher than max level will not show pk leaderboard in their stream
+pkStarDurations: # [startTime, endTime) end time is opened
+# for example, startime: 20h00m00s and 24h00m00s means 20, 21, 22, 23 hrs will have red envelope
+- startTime: 20h00m00s
+  endTime: 24h00m00s
+
+weeklyLBTopCount: 3 # how many top streamers will be granted pk label
+showPKStarLB: true # control regional LB to show 
+
+# minimum points needed to count as lb win after specific time
+# if now is before earliest start, we use 3000 as defualt.
+# please dont clear this config until start is older than one month for data consistency
+pkLBMinPoints: 
+  - start: "2020-09-01 00:00:00 (GMT+0800)"
+    minPoint: 3000
+
+# pk leaderboard rules
 regularRuleTitle: 
   key: pk_information_regular_title
 regularRules:
   - key: pk_information_regular_rule1
     params:
-      - value: 3000
+      - value: 3000 # should be aligned to pkLBMinPoints for current time
   - key: pk_information_regular_rule2
     params:
-      - value: 3
+      - value: 3 # should be aligned to weeklyLBTopCount
 hourRuleTitle: 
   key: pk_information_hourly_title
 hourRules:
@@ -149,23 +164,18 @@ hourRules:
   - key: pk_information_hourly_rule2
   - key: pk_information_regular_rule1
     params:
-      - value: 3000
+      - value: 3000 # should be aligned to pkLBMinPoints for current time
   - key: pk_information_hourly_rule3
     params:
-      - value: 30
-      - value: 70
+      - value: 10 # should be aligned to pkHourLBLevel
+      - value: 280
   - key: pk_information_hourly_rule4
     params:
-      - value: 10
-  - key: pk_information_hourly_rule5
-# minimum points needed to count as lb win after specific time
-# if now is before earliest start, we use 3000 as defualt.
-# please dont clear this config until start is older than one month for data consistency
-pkLBMinPoints: 
-  - start: "2020-09-01 00:00:00 (GMT+0800)"
-    minPoint: 3000
-weeklyLBTopCount: 3
-showPKStarLB: false
+      - value: 10 # how many top rank streams are granted with red envelope, actual setting in superstar.yaml
+  - key: pk_information_hourly_rule5_tw
+    params:
+      - value: 20 # should see pkStarDurations
+      - value: 23
 
 gameDuration:
 # match: second
