@@ -104,10 +104,15 @@ playListV2:
         key: "pk_schedule_menu_suspended1"
 
 ## for pk leaderboard
+## for pk leaderboard
 pkHourLBLevel:
   min: 30
-  max: 70
-pkStarDurations:
+  max: 280
+pkStarDurations: # [startTime, endTime) end time is opened
+# for example, startime: 20h00m00s and 24h00m00s means 20, 21, 22, 23 hrs will have red envelope
+- startTime: 20h00m00s
+  endTime: 24h00m00s
+
 regularRuleTitle: 
   key: pk_information_regular_title
 regularRules:
@@ -140,7 +145,7 @@ pkLBMinPoints:
   - start: "2020-09-01 00:00:00 (GMT+0800)"
     minPoint: 3000
 weeklyLBTopCount: 3
-showPKStarLB: false
+showPKStarLB: true
 
 gameDuration:
 # match: second
