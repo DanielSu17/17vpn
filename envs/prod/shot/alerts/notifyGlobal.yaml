@@ -5,5 +5,8 @@ rule:
   - service: GoLives
     regex: High Latency by Path
     msg: This is `GoLives` alert test
+  - service: GKE
+    regex: "[GKE] [k8sprod] Container Restart Count for  is greater than 1.0!"
+    msg: This is `GKE` container restart alert test
 channelID:
   - C01FY7VFY6Q # eng-dev-alert
