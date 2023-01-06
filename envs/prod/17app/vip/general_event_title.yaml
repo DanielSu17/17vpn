@@ -72,7 +72,7 @@ eventTitles:
     frameIconURL: "https://cdn.17app.co/11cef32e-583c-4e51-8930-e770ed102934.png"
     frameGrayoutIconURL: "https://cdn.17app.co/a2d82eeb-7f04-4488-9f71-764faaa1a8ab.png"
     nameToken: 
-      key: "Thank You Giveaway"
+      key: "2022 Best Fan"
     descriptionToken:
       key: "2022 SEA - Thank You Giveaway Reward Winner"
     backgroundType: 1
@@ -81,13 +81,21 @@ eventTitles:
     userIDs:
       - 8d7b5fbf-b533-4f8e-8423-f14e095ee5de
       - 63cf8643-53d3-4fc6-b3e3-c7cb73d45cf3
+      - 8ad003a9-1620-413f-a45c-b265d61a17ff
+      - 48b6ae08-fd19-4b76-b4a9-a8ea1f4790f0
+      - 5a3563dc-71fe-4203-96cb-cd002eb43562
+      - f553b385-1751-444c-8536-6efd3ceb5fac
+      - 31ba1cab-88a7-450a-8357-45e6375b1ddd
+      - ab96947e-a79e-47f7-a232-8d5c60eb2cb8
+      - 233cda31-05ae-43d5-944f-e8e913819a40
+      - fc4ee60f-308b-45cb-be43-653cf2c268c9
   # EventTimeRange is when user sees description of event
     eventTimeRange:
-      startTime: 2023-01-06 19:00:00 (GMT+0800)
+      startTime: 2023-01-06 19:15:00 (GMT+0800)
       endTime: 2026-01-06 00:00:00 (GMT+0800)
   # TitleTimeRange means when above userIDs can start using their event titles
     titleTimeRange:
-      startTime: 2023-01-06 17:00:00 (GMT+0800)
+      startTime: 2023-01-06 19:15:00 (GMT+0800)
       endTime: 2026-01-06 00:00:00 (GMT+0800)
     regionMode: Include
     regions: ["PH","SG","MY"]
@@ -202,8 +210,35 @@ eventTitles:
     regionMode: Include
     regions: [HK,MO]
 
-
-  
+  - id: "2209-SEAHK-歌喉戰獲勝隊伍獎勵"
+    badgeIconURL: "https://cdn.17app.co/593b44f5-c938-4c0b-8808-d7ac08d48fd7.png"
+    badgeGrayoutIconURL: "https://cdn.17app.co/67c174dd-8d88-4384-a8e2-90015f8d8095.png"
+    frameIconURL: "https://cdn.17app.co/d6426f4f-d5ea-4113-9b9b-b6018739b7a0.png"
+    frameGrayoutIconURL: "https://cdn.17app.co/8c459e45-4dcd-449a-a11a-2252d51f181e.png"
+    nameToken: 
+      key: "202209_17歌喉戰冠軍隊伍"
+    descriptionToken:
+      key: "17歌喉戰冠軍隊伍"
+    backgroundType: 1
+  # if ctaEventID not set, user will not see call to action to event page
+    ctaEventID: 15253
+    userIDs:
+      - 63cf8643-53d3-4fc6-b3e3-c7cb73d45cf3
+      - ea16208a-a5e1-478f-4788-bbb3b06103da
+      - 92036b60-da4f-4c89-84e8-8df785c89667
+      - 348087f4-e085-4811-9820-f31bf02d9c65
+      - 8edf454f-2e00-4412-ba70-2720a4f6c47f
+      - ab008fd2-2f16-480a-bc87-082f2718ab5e
+  # EventTimeRange is when user sees description of event
+    eventTimeRange:
+      startTime: 2022-10-11 15:00:00 (GMT+0800)
+      endTime: 2022-10-25 18:00:00 (GMT+0800)
+  # TitleTimeRange means when above userIDs can start using their event titles
+    titleTimeRange:
+      startTime: 2022-10-11 15:00:00 (GMT+0800)
+      endTime: 2099-10-25 18:00:00 (GMT+0800)
+    regionMode: include
+    regions: ["HK","SG","MY"]
 
   - id: "event_title_1"
     badgeIconURL: "https://cdn.17app.co/e9ab6153-5658-41b2-ab30-a8b1d7c4c228.png"
