@@ -66,6 +66,31 @@ eventTitles:
     # regionMode: exclude
     # regions: ["TW","JP"]
 
+  - id: "2201_sea_ThankYouGiveaway"
+    badgeIconURL: "https://cdn.17app.co/fb2a6d2a-3eab-4ff5-851c-b284f98b08fc.png"
+    badgeGrayoutIconURL: "https://cdn.17app.co/a44a200e-09d9-4527-9a04-83a45b9eaeac.png"
+    frameIconURL: "https://cdn.17app.co/11cef32e-583c-4e51-8930-e770ed102934.png"
+    frameGrayoutIconURL: "https://cdn.17app.co/a2d82eeb-7f04-4488-9f71-764faaa1a8ab.png"
+    nameToken: 
+      key: "Thank You Giveaway"
+    descriptionToken:
+      key: "'2022 SEA - Thank You Giveaway Reward Winner"
+    backgroundType: 1
+  # if ctaEventID not set, user will not see call to action to event page
+    ctaEventID: 
+    userIDs:
+      - 8d7b5fbf-b533-4f8e-8423-f14e095ee5de
+  # EventTimeRange is when user sees description of event
+    eventTimeRange:
+      startTime: 2023-01-06 17:00:00 (GMT+0800)
+      endTime: 2026-01-06 00:00:00 (GMT+0800)
+  # TitleTimeRange means when above userIDs can start using their event titles
+    titleTimeRange:
+      startTime: 2023-01-06 17:00:00 (GMT+0800)
+      endTime: 2026-01-06 00:00:00 (GMT+0800)
+    regionMode: Include
+    regions: ["PH","SG","MY"]
+
   - id: "2212_ph_TheLastOneStanding"
     badgeIconURL: "https://cdn.17app.co/7abac13c-360b-44a3-8fee-157ce4ccfb58.png"
     badgeGrayoutIconURL: "https://cdn.17app.co/813f890d-a0dd-4b7a-bd1b-89f68dac3caf.png"
