@@ -1,0 +1,1 @@
+# Regional setting for limited gift
