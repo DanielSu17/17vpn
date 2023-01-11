@@ -40,6 +40,69 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
+- ID: 61f0b876-2b99-44e2-8010-e204b7ec6fb7
+  type: 13
+  category: 0
+  lifeCycle: 1
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2301_po_missionreward_4
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_day_in_total_reward_title
+  i18nTitleParams:
+  - value: "3"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: us_baggage_mission_newbie
+  i18nDescriptionParams: []
+  goalValue: 3
+  enableTimeRange:
+  - startTime: 2023-01-16 05:00:00 (GMT+0800)
+    endTime: 2023-02-01 05:00:00 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 43ab2d6e-0277-459b-bab3-47abaf2d4f4a
+  type: 8
+  category: 0
+  lifeCycle: 1
+  targetAudience: 2
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2301_sea_welcomeoffer_sechalf
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: usjanwelcomeoffer
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_IAP_reward_jp_npu_desc
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2023-01-16 18:00:00 (GMT+0800)
+    endTime: 2023-02-01 00:00:00 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
 - ID: 7d37d1fa-5ecd-41b6-8bac-81ef52bd9eac
   type: 13
   category: 0
@@ -103,69 +166,6 @@ missions:
   - web
   requirePhoneBinding: false
   withReminder: true
-- ID: 3a7cdc96-de98-4a57-aa81-664e115f96c4
-  type: 13
-  category: 0
-  lifeCycle: 1
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2212_po_missionreward_6
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_day_in_total_reward_title
-  i18nTitleParams:
-  - value: "3"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: us_baggage_mission_newbie
-  i18nDescriptionParams: []
-  goalValue: 3
-  enableTimeRange:
-  - startTime: 2022-12-26 00:00:00 (GMT+0800)
-    endTime: 2023-01-01 05:00:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  - web
-  requirePhoneBinding: false
-  withReminder: true
-- ID: c235a448-66f6-4794-a010-f6ffaef626fe
-  type: 8
-  category: 0
-  lifeCycle: 1
-  targetAudience: 2
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2212_sea_welcomeoffer_sechalf
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: usdecwelcomeoffer
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_IAP_reward_jp_npu_desc
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-12-16 18:00:00 (GMT+0800)
-    endTime: 2023-01-01 00:00:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  - web
-  requirePhoneBinding: false
-  withReminder: true
 - ID: f748f6bb-058a-48df-9844-53398368b28b
   type: 16
   category: 0
@@ -195,6 +195,324 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
+- ID: ca94df3a-559f-4658-913e-3488cf6ad62c
+  type: 24
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2301_po_missionreward_4
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: us_mission_daily_login
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: us_baggage_mission_newbie
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2023-01-16 05:00:00 (GMT+0800)
+    endTime: 2023-02-01 05:00:00 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: bf7e282d-da12-4a4d-9456-af29682ba548
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2301_po_missionreward_4
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "5"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 300
+  enableTimeRange:
+  - startTime: 2023-01-16 05:00:00 (GMT+0800)
+    endTime: 2023-02-01 05:00:00 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 3341bef3-2cf9-4f5c-bb17-32f8113eeb20
+  type: 5
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2301_po_missionreward_4
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_leave_comment_reward_title2
+  i18nTitleParams:
+  - value: "5"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_leave_comment_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 5
+  enableTimeRange:
+  - startTime: 2023-01-16 05:00:00 (GMT+0800)
+    endTime: 2023-02-01 05:00:00 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: b307005c-84ca-4a8f-ae17-eb815bf7491c
+  type: 11
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2301_po_missionreward_4
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_daily_share_reward_title
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_daily_share_reward_des
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2023-01-16 05:00:00 (GMT+0800)
+    endTime: 2023-02-01 05:00:00 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 634310bf-10fb-46b8-b5d3-6a4b662ed578
+  type: 11
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2301_po_missionreward_4
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_daily_share_reward_title_FBFeeds
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_daily_share_reward_des_FBFeeds
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2023-01-16 05:00:00 (GMT+0800)
+    endTime: 2023-02-01 05:00:00 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 9594a78e-0744-481b-9cc2-8f7d75acad41
+  type: 11
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2301_po_missionreward_4
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_daily_share_reward_title_WhatsApp
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_daily_share_reward_des_WhatsApp
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2023-01-16 05:00:00 (GMT+0800)
+    endTime: 2023-02-01 05:00:00 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 7bd38618-2939-4860-b004-a5c75b38e55a
+  type: 10
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2301_po_missionreward_3
+    amount: 5
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_first_time_IAP_point_tw_event_title_event
+  i18nTitleParams:
+  - value: "3540"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
+  i18nDescriptionParams: []
+  goalValue: 3540
+  enableTimeRange:
+  - startTime: 2023-01-16 05:00:00 (GMT+0800)
+    endTime: 2023-02-01 05:00:00 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 5831b07b-1ccf-4ea5-b892-7e2290aab549
+  type: 10
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2301_po_missionreward_3
+    amount: 3
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_first_time_IAP_point_tw_event_title_event
+  i18nTitleParams:
+  - value: "1720"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
+  i18nDescriptionParams: []
+  goalValue: 1720
+  enableTimeRange:
+  - startTime: 2023-01-16 05:00:00 (GMT+0800)
+    endTime: 2023-02-01 05:00:00 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: ff0fb9e4-66da-4a3d-9e1a-146ff0f311f3
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2301_po_missionreward_3
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_send_gifts
+  i18nTitleParams:
+  - value: "5"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: us_baggage_mission_newbie
+  i18nDescriptionParams: []
+  goalValue: 5
+  enableTimeRange:
+  - startTime: 2023-01-16 05:00:00 (GMT+0800)
+    endTime: 2023-02-01 05:00:00 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 9c9f4522-9497-43e0-8dbb-d41e9cbd2a91
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2301_po_missionreward_3
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_send_gifts
+  i18nTitleParams:
+  - value: "7"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: us_baggage_mission_newbie
+  i18nDescriptionParams: []
+  goalValue: 7
+  enableTimeRange:
+  - startTime: 2023-01-16 05:00:00 (GMT+0800)
+    endTime: 2023-02-01 05:00:00 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
 - ID: 83a3e6c9-9015-4f0a-9711-b69e7e7e33f7
   type: 24
   category: 0
@@ -506,438 +824,6 @@ missions:
   enableTimeRange:
   - startTime: 2023-01-01 05:00:00 (GMT+0800)
     endTime: 2023-01-16 05:00:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  - web
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 8229907e-e38e-42d3-9bfb-d5c8771afca5
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2212_us_newyork_b_bp
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "30"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 1800
-  enableTimeRange:
-  - startTime: 2022-12-24 01:00:00 (GMT+0800)
-    endTime: 2022-12-31 00:59:59  (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: true
-- ID: 44eef3fe-9b8e-492b-82e1-e08451c03e00
-  type: 5
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2212_us_newyork_b_bp
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_leave_comment_reward_title2
-  i18nTitleParams:
-  - value: "10"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_leave_comment_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 10
-  enableTimeRange:
-  - startTime: 2022-12-24 01:00:00 (GMT+0800)
-    endTime: 2022-12-31 00:59:59  (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: true
-- ID: 781cf91c-d164-43b9-b794-e4d9094e6d65
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2212_us_newyork_b_bp
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_send_specific_gifts_reward_title
-  i18nTitleParams:
-  - value: "2"
-    mapOption: 0
-    fontAttribute: null
-  - value: 2212_us_newyork_s
-    mapOption: 2
-    fontAttribute: null
-  - value: 2212_us_newyork_m
-    mapOption: 2
-    fontAttribute: null
-  - value: 2212_us_newyork_l
-    mapOption: 2
-    fontAttribute: null
-  - value: 2212_us_newyork_a_bag
-    mapOption: 2
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
-  i18nDescriptionParams: []
-  goalValue: 2
-  enableTimeRange:
-  - startTime: 2022-12-24 01:00:00 (GMT+0800)
-    endTime: 2022-12-31 00:59:59  (GMT+0800)
-  refIDs:
-  - ""
-  - 2212_us_newyork_s
-  - 2212_us_newyork_m
-  - 2212_us_newyork_l
-  - 2212_us_newyork_a_bag
-  - ""
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: true
-  withReminder: true
-- ID: 21e98dc0-5955-4e91-abe3-1dd0afd5bffb
-  type: 24
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2212_po_missionreward_5
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: us_mission_daily_login
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: us_baggage_mission_newbie
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-12-26 00:00:00 (GMT+0800)
-    endTime: 2023-01-01 05:00:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  - web
-  requirePhoneBinding: false
-  withReminder: true
-- ID: d7231907-977c-4c1b-ba10-7763a04781f1
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2212_po_missionreward_5
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
-  i18nTitleParams:
-  - value: "5"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 300
-  enableTimeRange:
-  - startTime: 2022-12-26 00:00:00 (GMT+0800)
-    endTime: 2023-01-01 05:00:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  - web
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 7e1cec27-0941-4cdc-b5c6-0fb8d3ba97e7
-  type: 5
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2212_po_missionreward_5
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_leave_comment_reward_title2
-  i18nTitleParams:
-  - value: "5"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_leave_comment_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 5
-  enableTimeRange:
-  - startTime: 2022-12-26 00:00:00 (GMT+0800)
-    endTime: 2023-01-01 05:00:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  - web
-  requirePhoneBinding: false
-  withReminder: true
-- ID: f3d4702e-5733-4eef-ab1f-3cfa00917076
-  type: 11
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2212_po_missionreward_5
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_daily_share_reward_title
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_daily_share_reward_des
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-12-26 00:00:00 (GMT+0800)
-    endTime: 2023-01-01 05:00:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  - web
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 30b40784-2229-4040-a360-9190a495abb6
-  type: 32
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2212_po_missionreward_5
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_daily_share_reward_title_FBFeeds
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_daily_share_reward_des_FBFeeds
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-12-26 00:00:00 (GMT+0800)
-    endTime: 2023-01-01 05:00:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  - web
-  requirePhoneBinding: false
-  withReminder: true
-- ID: d2e05c12-7f78-4d0f-b58b-084e4c76c419
-  type: 34
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2212_po_missionreward_5
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_daily_share_reward_title_WhatsApp
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_daily_share_reward_des_WhatsApp
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2022-12-26 00:00:00 (GMT+0800)
-    endTime: 2023-01-01 05:00:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  - web
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 6b8cbfd7-bd4b-4e46-916c-5a28d469f09b
-  type: 10
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2212_po_missionreward_6
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_first_time_IAP_point_tw_event_title_event
-  i18nTitleParams:
-  - value: "3540"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
-  i18nDescriptionParams: []
-  goalValue: 3540
-  enableTimeRange:
-  - startTime: 2022-12-26 00:00:00 (GMT+0800)
-    endTime: 2023-01-01 05:00:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  - web
-  requirePhoneBinding: false
-  withReminder: true
-- ID: c5384e0b-550e-4e79-a1a7-dd711a4c6fb8
-  type: 10
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2212_po_missionreward_6
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_first_time_IAP_point_tw_event_title_event
-  i18nTitleParams:
-  - value: "1720"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_first_time_IAP_point_tw_event_desc
-  i18nDescriptionParams: []
-  goalValue: 1720
-  enableTimeRange:
-  - startTime: 2022-12-26 00:00:00 (GMT+0800)
-    endTime: 2023-01-01 05:00:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  - web
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 5249d633-080f-4df1-926e-8cada78ebf6a
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2212_po_missionreward_6
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_send_gifts
-  i18nTitleParams:
-  - value: "5"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: us_baggage_mission_newbie
-  i18nDescriptionParams: []
-  goalValue: 5
-  enableTimeRange:
-  - startTime: 2022-12-26 00:00:00 (GMT+0800)
-    endTime: 2023-01-01 05:00:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  - web
-  requirePhoneBinding: false
-  withReminder: true
-- ID: feabfe43-a835-435e-91ac-494da7b8995d
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2212_po_missionreward_6
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_send_gifts
-  i18nTitleParams:
-  - value: "7"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: us_baggage_mission_newbie
-  i18nDescriptionParams: []
-  goalValue: 7
-  enableTimeRange:
-  - startTime: 2022-12-26 00:00:00 (GMT+0800)
-    endTime: 2023-01-01 05:00:00 (GMT+0800)
   refIDs: []
   platforms:
   - android
