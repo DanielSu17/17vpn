@@ -74,7 +74,7 @@ class I18nJsonWriter:
 
 
 class LokaliseClient:
-    api_url = "https://api.lokalise.co/api2/"
+    api_url = "https://api.lokalise.com/api2/"
 
     def __init__(self, api_token):
         self.api_token = api_token
