@@ -1,9 +1,8 @@
 enable: true
 senderMatchingSecond: 120
 receiverMatchingSecond: &receiverMatchingSecond 30
-# FIXME: deprecated
-gameDurationSecond: 90
-defaultGameDurationSecond: 90
+stateTimeoutSeconds: 700
+defaultGameDurationSecond: 90 # 若沒有在 region config 內設定 PK 遊戲時長, 會使用這個秒數
 countdownSecond: 15
 rewardSecond: 30
 readyWaitingSecond: 30
