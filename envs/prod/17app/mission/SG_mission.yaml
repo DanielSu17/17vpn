@@ -40,6 +40,36 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
+- ID: eda1f481-41f2-4f10-a416-93915e4bfa8c
+  type: 8
+  category: 0
+  lifeCycle: 1
+  targetAudience: 2
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2302_sea_welcomeoffer_firsthalf
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: usfebruarywelcome_offer
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_IAP_reward_jp_npu_desc
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2023-02-01 18:00:00 (GMT+0800)
+    endTime: 2023-02-16 00:00:00 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
 - ID: 43ab2d6e-0277-459b-bab3-47abaf2d4f4a
   type: 8
   category: 0
@@ -63,36 +93,6 @@ missions:
   enableTimeRange:
   - startTime: 2023-01-16 18:00:00 (GMT+0800)
     endTime: 2023-02-01 00:00:00 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  - web
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 643555b1-b751-44dd-878f-d19e1fe9e4e3
-  type: 8
-  category: 0
-  lifeCycle: 1
-  targetAudience: 2
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2301_sea_welcomeoffer_firsthalf
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: usjanwelcomeoffer
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_IAP_reward_jp_npu_desc
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2023-01-01 18:00:00 (GMT+0800)
-    endTime: 2023-01-16 00:00:00 (GMT+0800)
   refIDs: []
   platforms:
   - android
