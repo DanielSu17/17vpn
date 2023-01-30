@@ -31,6 +31,18 @@ sections:
  #   style: 2
  #   more: false
 
+  - id: Label
+    labelID: jp_V-LIVER
+    name:
+      key: explore_jp_label_vliver
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
   - id: Suggestion # 猜你可能喜歡
     name:
       key: tab_hot_2019q4_follow_suggestion
@@ -38,6 +50,16 @@ sections:
     dedup: true
     style: 6
     minGrids: 5
+    more: true
+    orderModel: 2
+
+  - id: Latest # 新人(和『最新』同邏輯)
+    name:
+      key: tab_hot_2019q4_newstreamer
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
     more: true
     orderModel: 2
 
@@ -49,16 +71,6 @@ sections:
     minGrids: 6 # 2個直播間一組PK，3組以上顯示
     style: 3
     more: true
-
-  - id: Latest # 新人(和『最新』同邏輯)
-    name:
-      key: tab_hot_2019q4_newstreamer
-    enable: true
-    dedup: true
-    minGrids: 3
-    style: 3
-    more: true
-    orderModel: 2
 
   - id: Label # Lv100以上
     labelID: 2203_jp_lv100
@@ -80,6 +92,18 @@ sections:
     minGrids: 3
     style: 3
     more: true
+    orderModel: 2
+
+  - id: Label
+    labelID: jp_game
+    name:
+      key: explore_jp_label_game
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
     orderModel: 2
 
   - id: Label # 歌
@@ -118,22 +142,22 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: Label
-    labelID: jp_game
+  - id: Label # 初見さん歓迎
+    labelID: jp_welcome
     name:
-      key: explore_jp_label_game
+      key: streamer_jp_label_welcome
     enable: true
     dedup: true
-    minGrids: 5
+    minGrids: 3
     style: 3
     more: true
     category: normal
     orderModel: 2
 
-  - id: Label # 初見さん歓迎
-    labelID: jp_welcome
+  - id: Label # 占い
+    labelID: jp_fortune
     name:
-      key: streamer_jp_label_welcome
+      key: streamer_jp_label_fortune
     enable: true
     dedup: true
     minGrids: 3
@@ -149,18 +173,6 @@ sections:
     minGrids: 3
     style: 11
     more: true
-
-  - id: Label # 占い
-    labelID: jp_fortune
-    name:
-      key: streamer_jp_label_fortune
-    enable: true
-    dedup: true
-    minGrids: 3
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
 
   - id: Label # クッキング
     labelID: 2207_jp_cooking17
@@ -243,18 +255,6 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: Label
-    labelID: jp_V-LIVER
-    name:
-      key: explore_jp_label_vliver
-    enable: true
-    dedup: true
-    minGrids: 3
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
   - id: AudioStream # AudioStream 聲播
     name:
       key: audio_stream_v3hotpage
@@ -287,14 +287,6 @@ sections:
     more: true
     category: normal
     orderModel: 2
-
-  - id: Vod # 熱門影音
-    name:
-      key: tab_hot_2019q4_vod
-    enable: true
-    minGrids: 5
-    style: 5
-    more: false
 
   - id: Label # 女子
     labelID: jp_girls
@@ -355,6 +347,15 @@ sections:
     more: true
     category: normal
     orderModel: 2
+
+  - id: Vod # 熱門影音
+    name:
+      key: tab_hot_2019q4_vod
+    enable: true
+    minGrids: 5
+    style: 5
+    more: false
+
 
 #未使用ジャンル
 #  - id: Label # エンタメ
