@@ -46,6 +46,40 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
+
+- ID: a54edd89-ff2f-4d93-9c25-cffd242ac0f2
+  type: 10
+  category: 0
+  lifeCycle: 1
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2302_jp_pdt_charge_01
+    amount: 3
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_IAP_reward_jp_daily_charge_name_02
+  i18nTitleParams:
+  - value: "1"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_IAP_reward_jp_charge_desc_02
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2023-02-01 12:00:00 (GMT+0900)
+    endTime: 2023-02-20 23:59:59 (GMT+0900)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+
 - ID: 15dfce5a-9f7d-473d-936d-168af468f388
   type: 10
   category: 0
