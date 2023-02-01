@@ -13,7 +13,6 @@ rtmp_providers_HDMode:
 - WANSU_LOW_LATENCY
 - AWS
 - LIVE17
-- TENCENT
 rtmp_providers:
 - name: DEFAULT
   quality_support: 0
@@ -308,26 +307,6 @@ rtmp_providers:
   - 287ac024-c261-4bec-6da8-37165dd704f6 # androidtest2
   - 3e96ad39-7849-4096-8b70-fdd1fe2a4803 # janjanispk3
   #- f0982912-a519-433f-b17e-c76fb1972f18 # bochiu
-
-- name: WANSU_CDN
-
-- name: GOOGLE_CDN
-
-- name: AKAMAI_CDN
-
-- name: CLOUDFRONT_CDN
-
-- name: TENCENT
-  quality_support: 0
-  expire_after_hours: 6
-  weight: 0
-  region_weights:
-    TW: 0
-  levelRestriction:
-    minLevel: 0
-    maxLevel: 0
-  users:
-  - 7a020216-a76f-4a54-aca7-a79dff4ca822 #kevinliu_test_1
 
 message_providers_17q:
 - name: PUBNUB_MESSAGE
