@@ -1,6 +1,5 @@
 defaultpermission:
-  - user
-  - BaseControl
+  - ViewOnly
 userpermissions:
   ethandai@17.media:        # HQ Billing
   - developer
@@ -22,6 +21,8 @@ userpermissions:
   - developer
   angelahsu@17.media:       # HQ PJM
   - developer
+  jerryhuang@17.media:      # HQ PM
+  - developer
   chavezliu@17.media:       # HQ QA
   - developer
   sunnyfu@17.media:         # HQ QA
@@ -31,10 +32,8 @@ userpermissions:
   evanhuang@17.media:       # HQ Websolution
   - developer
   
-  ##### ENG End #####
+  ##### Developer End #####
 
-  jerryhuang@17.media:      # HQ PM
-  - developer
   millyphua@17.media:       # HQ COO Office
   - BaseControl
   cindyleung@17.media:      # HK Event
@@ -183,133 +182,16 @@ userpermissions:
   - ToolsControl
   qoo.m@17.media:           # Product (OPS)
   - BaseControl
-  corylai@17.media:         # Wave
-  - BaseControl
-  - ToolsControl
-  michellehsu@17.media:     # Wave
-  - BaseControl
-  - ToolsControl
-  summerhsiao@17.media:     # Wave
-  - BaseControl
-  - ToolsControl
-  tenten.z@17.media:        # Wave
-  - BaseControl
-
-  ##### about to be abandoned #####
-  # evanhuang@17.media:       # HQ Websolution
-  # - developer
-
-  # slashtu@17.media:         # HQ Eventory
-  # - developer
-  jeffchiu@17.media:        # HQ PJM
-  - developer
-  chiaweihsieh@17.media:    # HQ QA
-  - developer
-  chloechen@17.media:       # HQ QA
-  - developer
-  jameschou@17.media:       # HQ QA
-  - developer
-  kevin.c@17.media:         # HQ QA
-  - developer
-  ruby@17.media:            # HQ PM
-  - developer
-  taisho@17.media:          # JP BD
-  - developer
-  duke.r@17.media:          # PDT OPS
-  - developer
-  holden@17.media:          # PDT OPS
-  - developer
-  holdenchu@17.media:       # PDT OPS
-  - developer
-  kaye@17.media:            # PDT OPS
-  - developer
-  # qoo.m@17.media:           # PDT OPS
-  # - developer
-  sonoko.k@17.media:        # PDT OPS
-  - developer
-  # angie.hsu@17.media:       # PDT OPS
-  # - LayoutControl
-  # - ReplayControl
-  # - PrizeControl
-  arito.n@17.media:         # HQ IP
-  - ReplayControl
-  chermo@17.media:          # HQ PM
-  - ABTester
-  - LayoutControl
-  - ReplayControl
-  - PrizeControl
-  haileyyang@17.media:      # HQ PM
-  - ABTester
-  - LayoutControl
-  giselelin@17.media:       # HQ QA
-  - user
-  gloria.c@17.media:        # User Insights
-  - PrizeControl
-  # cindyleung@17.live:       # HK Event
-  # - LayoutControl
-  # - ReplayControl
-  # - PrizeControl
-  # jeff.ng@17.media:         # HK Event
-  # - ReplayControl
-  # - ABTester
-  # unato@17.media:           # HK Event
-  # - LayoutControl
-  # - ReplayControl
-  # - ABTester
-  # gary.f@17.media:          # JP Event
-  # - LayoutControl
-  # - ReplayControl
-  # - PrizeControl
-  tammy.t@17.media:         # JP Event
-  - LayoutControl
-  - ReplayControl
-  - PrizeControl
-  # miwa.m@17.media:          # JP Event
-  # - LayoutControl
-  # - PrizeControl
-  donny.a@17.media:         # JP Event VIP
-  - LayoutControl
-  - PrizeControl
-  # takanori.a@17.media:      # JP Event VIP
-  # - LayoutControl
-  # jon.he@imaginato.com:     # JP Event Outsourcing
-  # - LayoutControl
-  # arthur.zou@imaginato.com: # JP Event Outsourcing
-  # - LayoutControl
-  # leo.m@17.media:           # TW ES
-  # - ReplayControl
-  awuhsu@17.media:          # TW ES
-  - LayoutControl
-  # berylwang@17.media:       # TW Event
-  # - LayoutControl
-  # leiacheng@17.media:       # TW Event
-  # - ReplayControl
-  # vic.l@17.media:           # TW Event
-  # - LayoutControl
-  # - ReplayControl
-  # - ABTester
-  kandyhuang@17.media:      # TW Gaming
-  - LayoutControl
-  # shantaycheng@17.media:    # TW Gaming
-  # - LayoutControl
-  garychu@17.media:         # TW MKT
-  - LayoutControl
-  amy.l@17.media:           # TW MKT
-  - LayoutControl
-  irenepan@17.media:        # TW MKT
-  - LayoutControl
   abbylin@17.media:         # SEA
   - BaseControl
-  alicezheng@17.media:      # SEA
-  - LayoutControl
-  - ReplayControl
   angelyu@17.media:         # SEA
   - BaseControl
   jennifertseng@17.media:   # SEA
-  - BaseControl
+  - BaseControl  
   altanwu@17.media:         # SEA/TW
   - BaseControl
   - LayoutControl
+  - ReplayControl
   beverlyhsu@17.media:      # SEA/TW
   - BaseControl
   blakesun@17.media:        # SEA/TW
@@ -323,54 +205,117 @@ userpermissions:
   - ViewOnly
   evonneliao@17.media:      # SEA/US
   - ViewOnly
-  # lana.larkin@17.media:     # US Event
+  corylai@17.media:         # Wave
+  - BaseControl
+  - ToolsControl
+  michellehsu@17.media:     # Wave
+  - BaseControl
+  - ToolsControl
+  summerhsiao@17.media:     # Wave
+  - BaseControl
+  - ToolsControl
+  tenten.z@17.media:        # Wave
+  - BaseControl
+
+  ##### about to be abandoned #####
+  # jeffchiu@17.media:        # HQ PJM
+  # - developer
+  # chiaweihsieh@17.media:    # HQ QA
+  # - developer
+  # chloechen@17.media:       # HQ QA
+  # - developer
+  # jameschou@17.media:       # HQ QA
+  # - developer
+  # kevin.c@17.media:         # HQ QA
+  # - developer
+  # ruby@17.media:            # HQ PM
+  # - developer
+  # taisho@17.media:          # JP BD
+  # - developer
+  # holden@17.media:          # PDT OPS
+  # - developer
+  # holdenchu@17.media:       # PDT OPS
+  # - developer
+  # sonoko.k@17.media:        # PDT OPS
+  # - developer
+  # arito.n@17.media:         # HQ IP
   # - ReplayControl
-  darrenchen@17.media:      # HQ Data
-  - LayoutControl
-  - ABTester
-  - PrizeControl
-  erictseng@17.media:       # HQ Data
-  - LayoutControl
-  - ABTester
-  - PrizeControl
-  forrestliao@17.media:     # HQ Data
-  - LayoutControl
-  - ABTester
-  - PrizeControl
-  garychen@17.media:        # HQ Data
-  - LayoutControl
-  - ABTester
-  - PrizeControl
-  timothyhuang@17.media:    # HQ Data
-  - LayoutControl
-  - ABTester
-  - PrizeControl
-  warrenhsiao@17.media:     # HQ Data
-  - LayoutControl
-  - ABTester
-  - PrizeControl
-  michaelhsu@17.media:      # HQ WebApp only stag
-  - LayoutControl
-  debbyji@17.media:         # HQ WebApp only stag
-  - LayoutControl
-  jerrylin@17.media:        # HQ WebApp only stag
-  - LayoutControl
-  louisba@17.media:         # HQ WebApp only stag
-  - LayoutControl
-  scotthou@17.media:        # HQ WebApp only stag
-  - LayoutControl
-  tiffanychen@17.media:     # HQ WebApp only stag
-  - LayoutControl
-  estherlin@17.media:       # HQ WebApp only stag
-  - LayoutControl
-  lizyu@17.media:           # HQ WebApp only stag
-  - LayoutControl
-  shanechen@17.media:       # HQ WebApp only stag
-  - LayoutControl
-  amberliu@17.media:        # HQ PM only stag
-  - LayoutControl
-  - ABTester
-  - PrizeControl
-  umiyang@17.media:         # HQ Design only stag
-  - LayoutControl
-  - PrizeControl
+  # chermo@17.media:          # HQ PM
+  # - ABTester
+  # - LayoutControl
+  # - ReplayControl
+  # - PrizeControl
+  # haileyyang@17.media:      # HQ PM
+  # - ABTester
+  # - LayoutControl
+  # giselelin@17.media:       # HQ QA
+  # - user
+  # gloria.c@17.media:        # User Insights
+  # - PrizeControl
+  # tammy.t@17.media:         # JP Event
+  # - LayoutControl
+  # - ReplayControl
+  # - PrizeControl
+  # donny.a@17.media:         # JP Event VIP
+  # - LayoutControl
+  # - PrizeControl
+  # kandyhuang@17.media:      # TW Gaming
+  # - LayoutControl
+  # garychu@17.media:         # TW MKT
+  # - LayoutControl
+  # amy.l@17.media:           # TW MKT
+  # - LayoutControl
+  # irenepan@17.media:        # TW MKT
+  # - LayoutControl
+  # alicezheng@17.media:      # SEA
+  # - LayoutControl
+  # - ReplayControl
+  # darrenchen@17.media:      # HQ Data
+  # - LayoutControl
+  # - ABTester
+  # - PrizeControl
+  # erictseng@17.media:       # HQ Data
+  # - LayoutControl
+  # - ABTester
+  # - PrizeControl
+  # forrestliao@17.media:     # HQ Data
+  # - LayoutControl
+  # - ABTester
+  # - PrizeControl
+  # garychen@17.media:        # HQ Data
+  # - LayoutControl
+  # - ABTester
+  # - PrizeControl
+  # timothyhuang@17.media:    # HQ Data
+  # - LayoutControl
+  # - ABTester
+  # - PrizeControl
+  # warrenhsiao@17.media:     # HQ Data
+  # - LayoutControl
+  # - ABTester
+  # - PrizeControl
+  # michaelhsu@17.media:      # HQ WebApp only stag
+  # - LayoutControl
+  # debbyji@17.media:         # HQ WebApp only stag
+  # - LayoutControl
+  # jerrylin@17.media:        # HQ WebApp only stag
+  # - LayoutControl
+  # louisba@17.media:         # HQ WebApp only stag
+  # - LayoutControl
+  # scotthou@17.media:        # HQ WebApp only stag
+  # - LayoutControl
+  # tiffanychen@17.media:     # HQ WebApp only stag
+  # - LayoutControl
+  # estherlin@17.media:       # HQ WebApp only stag
+  # - LayoutControl
+  # lizyu@17.media:           # HQ WebApp only stag
+  # - LayoutControl
+  # shanechen@17.media:       # HQ WebApp only stag
+  # - LayoutControl
+  # amberliu@17.media:        # HQ PM only stag
+  # - LayoutControl
+  # - ABTester
+  # - PrizeControl
+  # umiyang@17.media:         # HQ Design only stag
+  # - LayoutControl
+  # - PrizeControl
