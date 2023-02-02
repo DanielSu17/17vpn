@@ -9,69 +9,135 @@ alertChannels: ["testformonsteralert"]
 animations: ["yeti"]
 
 monsters:
-   - id: skeleton # 南瓜骷髏
-     type: 1  # 0: 一般怪獸, 1: 招喚怪獸
-     hit_consume: 5
-     duration: 60s
-     stream_alive_threshold: 1m00s
-     animation: "skeleton"
-     available_dates: # 一般怪獸才會看時間
-       - start_date: "2022-10-12T13:00:00+08:00"
-         end_date: "2022-10-30T23:59:59+08:00"
-     appear_durations: # 一般怪獸才會看時間
-       - start_time: 00h00m00s
-         end_time: 23h59m59s
 
-     share_ratio: 50 # percentage
-     profit_ratio: 35 # percentage
-     bonus: 132
-     weight: 1
-     infoPageiconURL: https://cdn.17app.co/66f2728b-d25f-4c72-b9fc-6a070081a3a0.png
-     winnerPageiconURL: https://cdn.17app.co/66f2728b-d25f-4c72-b9fc-6a070081a3a0.png
-     hintToken:
-       {
-         key: monster_battle_hint_skeleton,
-         fontAttribute: { textColor: "#FFFFFF" },
-       }
-     rule1Token:
-       {
-         key: monster_battle_rule1_skeleton,
-         fontAttribute: { textColor: "#FFFFFF" },
-       }
-     rule2Token:
-       {
-         key: monster_battle_rule2_skeleton,
-         fontAttribute: { textColor: "#FFFFFF" },
-       }
-     rule3Token:
-       {
-         key: monster_battle_rule3_skeleton,
-         fontAttribute: { textColor: "#FFFFFF" },
-       }
-     rule4Token:
-       {
-         key: monster_battle_rule4_skeleton,
-         fontAttribute: { textColor: "#FFFFFF" },
-       }
-     countdownToken:
-       {
-         key: monster_battle_countdown_skeleton,
-         fontAttribute: { textColor: "#FFFFFF" },
-       }
-     failureToken:
-       {
-         key: monster_battle_failure_skeleton,
-         fontAttribute: { textColor: "#FFFFFF" },
-       }
-     successToken:
-       {
-         key: monster_battle_success_skeleton_coin,
-         fontAttribute: { textColor: "#FFFFFF" },
-       }
-     marqueeToken: { key: monster_battle_marquee_skeleton }
-     summonGifts: # 招喚怪獸才需要填
-       - giftID: topic_crazy_over
-         probability: 8000
+ - id: lovebirds # 比翼鳥情人節
+   type: 0  # 0: 一般怪獸, 1: 招喚怪獸
+   hit_consume: 10
+   duration: 60s
+   stream_alive_threshold: 1m00s
+   animation: "lovebirds"
+   available_dates: # 一般怪獸才會看時間
+     - start_date: "2023-02-02T15:15:00+08:00"
+       end_date: "2023-02-15T23:59:59+08:00"
+   appear_durations: # 一般怪獸才會看時間
+     - start_time: 00h00m00s
+       end_time: 23h59m59s
+
+   share_ratio: 50 # percentage
+   profit_ratio: 35 # percentage
+   bonus: 132
+   weight: 1
+   infoPageiconURL: https://cdn.17app.co/76039ee1-2993-47f1-920b-e8c18e34e2d0.png
+   winnerPageiconURL: https://cdn.17app.co/76039ee1-2993-47f1-920b-e8c18e34e2d0.png
+   hintToken:
+     {
+       key: monster_battle_hint_lovebirds,
+       fontAttribute: { textColor: "#FFFFFF" },
+     }
+   rule1Token:
+     {
+       key: monster_battle_rule1_lovebirds,
+       fontAttribute: { textColor: "#FFFFFF" },
+     }
+   rule2Token:
+     {
+       key: monster_battle_rule2_lovebirds,
+       fontAttribute: { textColor: "#FFFFFF" },
+     }
+   rule3Token:
+     {
+       key: monster_battle_rule3_lovebirds,
+       fontAttribute: { textColor: "#FFFFFF" },
+     }
+   rule4Token:
+     {
+       key: monster_battle_rule4_lovebirds,
+       fontAttribute: { textColor: "#FFFFFF" },
+     }
+   countdownToken:
+     {
+       key: monster_battle_countdown_lovebirds,
+       fontAttribute: { textColor: "#FFFFFF" },
+     }
+   failureToken:
+     {
+       key: monster_battle_failure_lovebirds,
+       fontAttribute: { textColor: "#FFFFFF" },
+     }
+   successToken:
+     {
+       key: monster_battle_success_lovebirds_coin,
+       fontAttribute: { textColor: "#FFFFFF" },
+     }
+   marqueeToken: { key: monster_battle_marquee_lovebirds }
+   summonGifts: # 招喚怪獸才需要填，請務必填入特定禮物，regression team 會需要用到，感謝
+     - giftID: topic_crazy_over
+       probability: 10000
+
+
+  #  - id: skeleton # 南瓜骷髏
+  #    type: 1  # 0: 一般怪獸, 1: 招喚怪獸
+  #    hit_consume: 5
+  #    duration: 60s
+  #    stream_alive_threshold: 1m00s
+  #    animation: "skeleton"
+  #    available_dates: # 一般怪獸才會看時間
+  #      - start_date: "2022-10-12T13:00:00+08:00"
+  #        end_date: "2022-10-30T23:59:59+08:00"
+  #    appear_durations: # 一般怪獸才會看時間
+  #      - start_time: 00h00m00s
+  #        end_time: 23h59m59s
+
+  #    share_ratio: 50 # percentage
+  #    profit_ratio: 35 # percentage
+  #    bonus: 132
+  #    weight: 1
+  #    infoPageiconURL: https://cdn.17app.co/66f2728b-d25f-4c72-b9fc-6a070081a3a0.png
+  #    winnerPageiconURL: https://cdn.17app.co/66f2728b-d25f-4c72-b9fc-6a070081a3a0.png
+  #    hintToken:
+  #      {
+  #        key: monster_battle_hint_skeleton,
+  #        fontAttribute: { textColor: "#FFFFFF" },
+  #      }
+  #    rule1Token:
+  #      {
+  #        key: monster_battle_rule1_skeleton,
+  #        fontAttribute: { textColor: "#FFFFFF" },
+  #      }
+  #    rule2Token:
+  #      {
+  #        key: monster_battle_rule2_skeleton,
+  #        fontAttribute: { textColor: "#FFFFFF" },
+  #      }
+  #    rule3Token:
+  #      {
+  #        key: monster_battle_rule3_skeleton,
+  #        fontAttribute: { textColor: "#FFFFFF" },
+  #      }
+  #    rule4Token:
+  #      {
+  #        key: monster_battle_rule4_skeleton,
+  #        fontAttribute: { textColor: "#FFFFFF" },
+  #      }
+  #    countdownToken:
+  #      {
+  #        key: monster_battle_countdown_skeleton,
+  #        fontAttribute: { textColor: "#FFFFFF" },
+  #      }
+  #    failureToken:
+  #      {
+  #        key: monster_battle_failure_skeleton,
+  #        fontAttribute: { textColor: "#FFFFFF" },
+  #      }
+  #    successToken:
+  #      {
+  #        key: monster_battle_success_skeleton_coin,
+  #        fontAttribute: { textColor: "#FFFFFF" },
+  #      }
+  #    marqueeToken: { key: monster_battle_marquee_skeleton }
+  #    summonGifts: # 招喚怪獸才需要填
+  #      - giftID: topic_crazy_over
+  #        probability: 8000
 
 #  - id: xmasthief # 聖誕小偷
 #    type: 1  # 0: 一般怪獸, 1: 招喚怪獸
@@ -1119,6 +1185,33 @@ monsters:
 #   marqueeToken: {key: monster_battle_summon_marquee_llama}
 
 animationLoader:
+  # lovebirds 比翼鳥
+  - animationID: lovebirds_attack
+    url: http://cdn.17app.co/7d68da63-44c2-4b98-81cf-9fc0f5463691.zip
+    MD5: 3fad7a38e69d0edda22110e17f1c13b6
+    webpUrl: https://cdn.17app.co/85fe189f-afd6-40ef-9461-a7c7c24790ab-q90-s1.webp
+    webpMD5: 4887633127f2053aeb872ee4064c1ced
+  - animationID: lovebirds_enter
+    url: http://cdn.17app.co/af1e98d9-32fb-4c5f-943d-3eebeb688fe6.zip
+    MD5: 8867014e498f0836785419852ff56358
+    webpUrl: https://cdn.17app.co/15e917ec-636e-4c6e-9d90-6c1a5f359771-q90-s1.webp
+    webpMD5: f35d6fc4f86942eb5e1e7b614cf06b07
+  - animationID: lovebirds_failure
+    url: http://cdn.17app.co/4c201ea3-6c25-4c7b-8a3f-0e9c42c2dcdf.zip
+    MD5: 09db65deffe9656d5bc88c6c99eae721
+    webpUrl: https://cdn.17app.co/ba30b9b0-8c28-4a58-bf14-11aa1ab7fdd5-q90-s1.webp
+    webpMD5: 4a89c021c4c484c28497d0ea83160dcf
+  - animationID: lovebirds_idle
+    url: http://cdn.17app.co/37452bc6-a43d-4107-8195-db54be3400fa.zip
+    MD5: ce75e569145bacb92ff1e9530e39a4c6
+    webpUrl: https://cdn.17app.co/32ae5af7-86f5-475c-ba77-5f7276bd2e99-q90-s1.webp
+    webpMD5: ff1d0d674d951d128017d8e9842e7355
+  - animationID: lovebirds_success
+    url: http://cdn.17app.co/28ad39b4-2c9a-4bcf-bcc6-0d6a67a822ea.zip
+    MD5: f73d7925dc5bf5839d2b1ed091d3bdd6
+    webpUrl: https://cdn.17app.co/91938e6e-515a-4eab-a249-92c8ac472d01-q90-s1.webp
+    webpMD5: e21bf2d25c68645b7170e5c8a673ebd9
+
   # xmasthief 聖誕小偷
   - animationID: xmasthief_attack
     url: http://cdn.17app.co/7d68da63-44c2-4b98-81cf-9fc0f5463691.zip
