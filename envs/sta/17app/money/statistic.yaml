@@ -75,8 +75,8 @@ enableGetUserBalanceByTimeFromCTReport: true
 useBQCTYearAgo: 0
 enableGetCurrencyTransactionAggLogsUseBQ: true
 enableGetUserLeftPointInfoUseMongoDB: false
-indexNameOfGetUserLeftPointInfo: idx_userID_isCanceled
+indexNameOfGetUserLeftPointInfo: idx_timestamp_userID
 enableSeparateGiftAndArmyPoints: true
 
-leftPointUseMongoDaysAgo: 365
+leftPointUseMongoDaysAgo: 5
 enableGetUserLeftPointV2: true
