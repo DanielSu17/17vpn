@@ -3,7 +3,7 @@
 # service is publishably
 ### regex: you can add a (?i) at the beginning of the pattern to make it case insensitive.
 rule:
-  - service: TEST
+  - service: publishably
     regex: '.*'
     msg: |
       @here
@@ -25,5 +25,5 @@ rule:
       謝謝您的理解和配合。
     closeMsg: ably high latency alert closed
 channelID:
-  - C01FY7VFY6Q # eng-dev-alert
+  - C0GPCSBSB # global-dev-bugs
   - C0391PS2PE2 # shot_testing_ch
