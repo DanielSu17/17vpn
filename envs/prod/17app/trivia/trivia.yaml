@@ -6,6 +6,33 @@ hostIDOnTV: "8f95a285-104e-4ea5-ae58-00cca785247a" # 17好聰明
 hosts:
   TRIVIA:
   TRIVIA_ON_TV: #請使用TRIVIA_ON_TV(別再用TRIVIA了)
+    "1e257922-d6ce-4a65-a17d-33b967177195": #雄親福利社
+      pictures:
+        default: https://cdn.17app.co/dfdc9242-c7a4-4b19-bb62-f7dd0172373b.png
+        prepare: https://cdn.17app.co/dfdc9242-c7a4-4b19-bb62-f7dd0172373b.png
+        onLive: https://cdn.17app.co/dfdc9242-c7a4-4b19-bb62-f7dd0172373b.png
+        # default user picture for users without picture
+        user: https://cdn.17app.co/857dc12d-46c9-4c63-b3c4-ee8fd1a2eb57.png
+      showBannerTime:
+        weekdays: [0,6] # 0 ~ 6 means Sunday ~ Saturday
+        hourFrom: 4 # GMT+8
+        hourTo: 5 # GMT+8
+      showBannerPriority: 1
+      disclaimerTitle:
+        key: "trivia_tv_disclaimer_title"
+      disclaimerText:
+        key: "trivia_tv_disclaimer_text"
+      leaveGameToastText:
+        key: "trivia_tv_gamer_leave_double_confirm_text"
+      voteTopic:
+        key: "trivia_tv_vote_topic"
+      shareWording:
+        key: "trivia_tv_share_wording"
+      isMedalSupported:
+        Default: false
+        CorrectMost: false
+      leftTopDisplayStyle: 1 #這個值改成1，會顯示成就值；改成0或不設定，會顯示觀看人數
+      
     "6e9af721-55c5-41d7-91a4-387aceec94a6": # 17Q
       pictures: #熱門頁1*2顯示圖
         default: https://cdn.17app.co/f3c9c953-b3f4-45fb-8bba-ada8fbe4a4b2.jpg #非開播當天顯示
