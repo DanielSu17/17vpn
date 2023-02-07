@@ -1,0 +1,23 @@
+# GITHUB_TOKEN from GitHub account: 17media-sre-integration
+# SLACK_WEBHOOK_URI: incoming webhook by slackbot: `shot`
+# SLACK_USER_TOKEN ,OPSGENIE_TOKEN: get oncall person
+name: Switch Back To Ably
+on:
+  repository_dispatch:
+    types: switch_back_to_ably
+jobs:
+  configute_:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+      - id: plan
+        env:
+          GITHUB_TOKEN: ${{ secrets.SRE_GITHUB_TOKEN }}
+          SLACK_WEBHOOK_URI: ${{ secrets.SLACK_WEBHOOK_URI }}
+          SLACK_USER_TOKEN: ${{ secrets.SLACK_USER_TOKEN }}
+          OPSGENIE_TOKEN: ${{ secrets.OPSGENIE_TOKEN }}   
+        run: |-
+          ./switch_between_pubnub_and_ably.sh 50 50 0 0 ${{ github.event.action }} 
