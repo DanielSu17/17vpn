@@ -22,11 +22,11 @@ mongo:
       value: [ read, write ]
     - item: SINGLE_SELECT
       name: Env
-      value: [ prod, pre-prod]
+      value: [ uat, pre-prod, prod ]
     - item: MULTI_SELECT
       name: Clusters
       value: [ default, user, stream, point, eventory, poll, groupcall, message, keyword, discovery]
-      description: 
+      description:
         keyword: pre-prod, prod only
         discovery: pre-prod only
     - item: TEXT_INPUT
@@ -44,8 +44,9 @@ mysql:
       value: [ read, write ]
     - item: SINGLE_SELECT
       name: Env
-      value: [ prod, pre-prod, uat ]
+      value: [ uat, pre-prod, prod ]
     - item: TEXT_INPUT
       name: Comment
       value: ~
+      
       
