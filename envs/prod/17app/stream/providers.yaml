@@ -13,6 +13,7 @@ rtmp_providers_HDMode:
 - WANSU_LOW_LATENCY
 - AWS
 - LIVE17
+- TENCENT
 rtmp_providers:
 - name: DEFAULT
   quality_support: 0
@@ -381,13 +382,33 @@ rtmp_providers:
 #   - e39e6b42-9062-4f1e-b1c6-349f324615c7 # ❤️愛軒🎵🍑
 #   - 49a976ba-c8b6-4030-8560-a6af6a19b777 # Jazz爵士🥁鼓姬🥁
   - cb624461-996b-45e4-8aa7-83b9181859ef # andrewprod
-  - baf08c4c-594b-4b56-924e-2aa80dbb8349 # 轟轟大球
   - b3e565ed-d66f-405c-9396-609c1116ba6d # 轟轟小球
   - feec8ba6-2c4a-4190-a723-b9b0a1ffe0ae # shyshyhao01
   - 7d2284dd-411e-402c-a576-761c6a1dd63f # 妍寶:紅心:
   - 09b56702-3ff5-4095-8fb6-53d66bac00a3 # 啵啵豬仔(QA-iris測試）
   - 0b9d1a3c-9cfc-4f71-8fa9-1fb963cb5923 # concert_prod5(QA測試帳號)
   - cd1600d7-53d4-46be-9bb3-4fce3c0e9c6e # streaming_tester1
+
+- name: WANSU_CDN
+
+- name: GOOGLE_CDN
+
+- name: AKAMAI_CDN
+
+- name: CLOUDFRONT_CDN
+
+- name: TENCENT
+  quality_support: 0
+  expire_after_hours: 6
+  weight: 0
+  region_weights:
+    TW: 0
+  levelRestriction:
+    minLevel: 0
+    maxLevel: 0
+  users:
+  - 7a020216-a76f-4a54-aca7-a79dff4ca822 #kevinliu_test_1
+  - baf08c4c-594b-4b56-924e-2aa80dbb8349 # 轟轟大球
   
 message_providers_17q:
 - name: PUBNUB_MESSAGE
