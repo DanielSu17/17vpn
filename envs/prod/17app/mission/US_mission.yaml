@@ -40,6 +40,39 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
+- ID: 9edeb20c-5977-4e1b-8f6d-29dd1adeb0f2
+  type: 13
+  category: 0
+  lifeCycle: 1
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2302_po_missionreward_4
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_day_in_total_reward_title
+  i18nTitleParams:
+  - value: "3"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: us_baggage_mission_newbie
+  i18nDescriptionParams: []
+  goalValue: 3
+  enableTimeRange:
+  - startTime: 2023-02-16 14:00:00 (GMT-0800)
+    endTime: 2023-03-01 14:00:00 (GMT-0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
 - ID: 6f0f5c87-0022-4cfe-a859-5a9c5892e4d5
   type: 8
   category: 0
@@ -69,39 +102,6 @@ missions:
   - ios
   - web
   requirePhoneBinding: false
-  withReminder: true
-- ID: 195c59e8-4130-400a-b589-fdba42747cd2
-  type: 13
-  category: 0
-  lifeCycle: 1
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2302_po_missionrewards_3
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_streams_day_in_total_reward_title
-  i18nTitleParams:
-  - value: "3"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: us_baggage_mission_newbie
-  i18nDescriptionParams: []
-  goalValue: 3
-  enableTimeRange:
-  - startTime: 2023-02-06 18:00:00 (GMT-0800)
-    endTime: 2023-02-12 21:00:00 (GMT-0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  - web
-  requirePhoneBinding: true
   withReminder: true
 - ID: 00619b28-f0db-46cb-8f2d-02f0a9c01459
   type: 13
@@ -195,7 +195,7 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-- ID: 0d5695f2-99b2-45fa-ae65-7b597b6e37b4
+- ID: 4271a8d1-95d2-4a9c-ac8c-ab31f52e18be
   type: 10
   category: 0
   lifeCycle: 0
@@ -205,7 +205,7 @@ missions:
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2302_po_missionrewards_1
+    rewardID: 2302_po_missionreward_3
     amount: 5
     expireTimeSecs: 86400
   i18nTitle: baggage_mission_first_time_IAP_point_tw_event_title_event
@@ -219,16 +219,16 @@ missions:
   i18nDescriptionParams: []
   goalValue: 3540
   enableTimeRange:
-  - startTime: 2023-02-06 18:00:00 (GMT-0800)
-    endTime: 2023-02-12 21:00:00 (GMT-0800)
+  - startTime: 2023-02-16 14:00:00 (GMT-0800)
+    endTime: 2023-03-01 14:00:00 (GMT-0800)
   refIDs: []
   platforms:
   - android
   - ios
   - web
-  requirePhoneBinding: true
+  requirePhoneBinding: false
   withReminder: true
-- ID: 303e7c04-94b8-409e-aa37-cdd28a0b54ea
+- ID: f1ecc69e-78da-400b-bc14-b6456f2d5604
   type: 10
   category: 0
   lifeCycle: 0
@@ -238,7 +238,7 @@ missions:
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2302_po_missionrewards_2
+    rewardID: 2302_po_missionreward_3
     amount: 3
     expireTimeSecs: 86400
   i18nTitle: baggage_mission_first_time_IAP_point_tw_event_title_event
@@ -252,16 +252,16 @@ missions:
   i18nDescriptionParams: []
   goalValue: 1720
   enableTimeRange:
-  - startTime: 2023-02-06 18:00:00 (GMT-0800)
-    endTime: 2023-02-12 21:00:00 (GMT-0800)
+  - startTime: 2023-02-16 14:00:00 (GMT-0800)
+    endTime: 2023-03-01 14:00:00 (GMT-0800)
   refIDs: []
   platforms:
   - android
   - ios
   - web
-  requirePhoneBinding: true
+  requirePhoneBinding: false
   withReminder: true
-- ID: bdf5964e-e3aa-4525-9630-597a3f3b89cf
+- ID: ff72281c-c0f9-4623-a436-1e557a3e329c
   type: 3
   category: 0
   lifeCycle: 0
@@ -271,8 +271,8 @@ missions:
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2302_po_missionrewards_1
-    amount: 2
+    rewardID: 2302_po_missionreward_3
+    amount: 1
     expireTimeSecs: 86400
   i18nTitle: baggage_mission_send_gifts
   i18nTitleParams:
@@ -285,16 +285,16 @@ missions:
   i18nDescriptionParams: []
   goalValue: 5
   enableTimeRange:
-  - startTime: 2023-02-06 18:00:00 (GMT-0800)
-    endTime: 2023-02-12 21:00:00 (GMT-0800)
+  - startTime: 2023-02-16 14:00:00 (GMT-0800)
+    endTime: 2023-03-01 14:00:00 (GMT-0800)
   refIDs: []
   platforms:
   - android
   - ios
   - web
-  requirePhoneBinding: true
+  requirePhoneBinding: false
   withReminder: true
-- ID: d44c675c-4df7-46b1-9162-65eee1e0019b
+- ID: f40674d6-36c2-4fef-b0f8-71ddb92dfc86
   type: 3
   category: 0
   lifeCycle: 0
@@ -304,7 +304,7 @@ missions:
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2302_po_missionrewards_2
+    rewardID: 2302_po_missionreward_3
     amount: 2
     expireTimeSecs: 86400
   i18nTitle: baggage_mission_send_gifts
@@ -318,16 +318,16 @@ missions:
   i18nDescriptionParams: []
   goalValue: 7
   enableTimeRange:
-  - startTime: 2023-02-06 18:00:00 (GMT-0800)
-    endTime: 2023-02-12 21:00:00 (GMT-0800)
+  - startTime: 2023-02-16 14:00:00 (GMT-0800)
+    endTime: 2023-03-01 14:00:00 (GMT-0800)
   refIDs: []
   platforms:
   - android
   - ios
   - web
-  requirePhoneBinding: true
+  requirePhoneBinding: false
   withReminder: true
-- ID: 4f947fb2-9755-4eab-878f-4be9c50df4f6
+- ID: 9313cd12-c60a-454c-a4f8-6520e2ce3a83
   type: 24
   category: 0
   lifeCycle: 0
@@ -337,8 +337,8 @@ missions:
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2302_po_missionrewards_3
-    amount: 2
+    rewardID: 2302_po_missionreward_3
+    amount: 1
     expireTimeSecs: 86400
   i18nTitle: us_mission_daily_login
   i18nTitleParams: []
@@ -348,16 +348,16 @@ missions:
   i18nDescriptionParams: []
   goalValue: 1
   enableTimeRange:
-  - startTime: 2023-02-06 18:00:00 (GMT-0800)
-    endTime: 2023-02-12 21:00:00 (GMT-0800)
+  - startTime: 2023-02-16 14:00:00 (GMT-0800)
+    endTime: 2023-03-01 14:00:00 (GMT-0800)
   refIDs: []
   platforms:
   - android
   - ios
   - web
-  requirePhoneBinding: true
+  requirePhoneBinding: false
   withReminder: true
-- ID: 5616f9f3-a0c4-4dea-b71b-f00246c935f1
+- ID: 83db4e97-5bdc-44df-a33a-96c931e3b8b9
   type: 9
   category: 0
   lifeCycle: 0
@@ -367,8 +367,8 @@ missions:
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2302_po_missionrewards_4
-    amount: 2
+    rewardID: 2302_po_missionreward_3
+    amount: 1
     expireTimeSecs: 86400
   i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
   i18nTitleParams:
@@ -381,16 +381,16 @@ missions:
   i18nDescriptionParams: []
   goalValue: 300
   enableTimeRange:
-  - startTime: 2023-02-06 18:00:00 (GMT-0800)
-    endTime: 2023-02-12 21:00:00 (GMT-0800)
+  - startTime: 2023-02-16 14:00:00 (GMT-0800)
+    endTime: 2023-03-01 14:00:00 (GMT-0800)
   refIDs: []
   platforms:
   - android
   - ios
   - web
-  requirePhoneBinding: true
+  requirePhoneBinding: false
   withReminder: true
-- ID: 967ab2a1-1e81-4849-94fa-a1274b126e3f
+- ID: 24df5687-3387-4551-8ff9-454aef27ea1d
   type: 5
   category: 0
   lifeCycle: 0
@@ -400,8 +400,8 @@ missions:
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2302_po_missionrewards_1
-    amount: 2
+    rewardID: 2302_po_missionreward_3
+    amount: 1
     expireTimeSecs: 86400
   i18nTitle: baggage_mission_leave_comment_reward_title2
   i18nTitleParams:
@@ -414,16 +414,16 @@ missions:
   i18nDescriptionParams: []
   goalValue: 5
   enableTimeRange:
-  - startTime: 2023-02-06 18:00:00 (GMT-0800)
-    endTime: 2023-02-12 21:00:00 (GMT-0800)
+  - startTime: 2023-02-16 14:00:00 (GMT-0800)
+    endTime: 2023-03-01 14:00:00 (GMT-0800)
   refIDs: []
   platforms:
   - android
   - ios
   - web
-  requirePhoneBinding: true
+  requirePhoneBinding: false
   withReminder: true
-- ID: e10eee63-4835-4d73-8e22-63e6224fa9ca
+- ID: cc95672f-3392-40d0-b4d1-5a3c1e41b15f
   type: 11
   category: 0
   lifeCycle: 0
@@ -433,8 +433,8 @@ missions:
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2302_po_missionrewards_2
-    amount: 2
+    rewardID: 2302_po_missionreward_4
+    amount: 1
     expireTimeSecs: 86400
   i18nTitle: baggage_mission_daily_share_reward_title
   i18nTitleParams: []
@@ -444,17 +444,17 @@ missions:
   i18nDescriptionParams: []
   goalValue: 1
   enableTimeRange:
-  - startTime: 2023-02-06 18:00:00 (GMT-0800)
-    endTime: 2023-02-12 21:00:00 (GMT-0800)
+  - startTime: 2023-02-16 14:00:00 (GMT-0800)
+    endTime: 2023-03-01 14:00:00 (GMT-0800)
   refIDs: []
   platforms:
   - android
   - ios
   - web
-  requirePhoneBinding: true
+  requirePhoneBinding: false
   withReminder: true
-- ID: e6822081-8e92-48b8-a400-197ae6b39653
-  type: 32
+- ID: 470f9def-9bd9-414e-b3a1-d690e4a40cfb
+  type: 11
   category: 0
   lifeCycle: 0
   targetAudience: 0
@@ -463,8 +463,8 @@ missions:
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2302_po_missionrewards_3
-    amount: 2
+    rewardID: 2302_po_missionreward_4
+    amount: 1
     expireTimeSecs: 86400
   i18nTitle: baggage_mission_daily_share_reward_title_FBFeeds
   i18nTitleParams: []
@@ -474,17 +474,17 @@ missions:
   i18nDescriptionParams: []
   goalValue: 1
   enableTimeRange:
-  - startTime: 2023-02-06 18:00:00 (GMT-0800)
-    endTime: 2023-02-12 21:00:00 (GMT-0800)
+  - startTime: 2023-02-16 14:00:00 (GMT-0800)
+    endTime: 2023-03-01 14:00:00 (GMT-0800)
   refIDs: []
   platforms:
   - android
   - ios
   - web
-  requirePhoneBinding: true
+  requirePhoneBinding: false
   withReminder: true
-- ID: fc9a7a2c-a963-4f2c-a11b-71774f66a5d4
-  type: 34
+- ID: afe81f82-a28d-47c9-873b-f9e855361f36
+  type: 11
   category: 0
   lifeCycle: 0
   targetAudience: 0
@@ -493,8 +493,8 @@ missions:
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2302_po_missionrewards_4
-    amount: 2
+    rewardID: 2302_po_missionreward_4
+    amount: 1
     expireTimeSecs: 86400
   i18nTitle: baggage_mission_daily_share_reward_title_WhatsApp
   i18nTitleParams: []
@@ -504,14 +504,14 @@ missions:
   i18nDescriptionParams: []
   goalValue: 1
   enableTimeRange:
-  - startTime: 2023-02-06 18:00:00 (GMT-0800)
-    endTime: 2023-02-12 21:00:00 (GMT-0800)
+  - startTime: 2023-02-16 14:00:00 (GMT-0800)
+    endTime: 2023-03-01 14:00:00 (GMT-0800)
   refIDs: []
   platforms:
   - android
   - ios
   - web
-  requirePhoneBinding: true
+  requirePhoneBinding: false
   withReminder: true
 - ID: 88a88993-c19e-4670-bf12-7a9400efa4e9
   type: 10
