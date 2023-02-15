@@ -1,0 +1,22 @@
+iapFraud:
+  enable: true
+  rules:
+    # Accumulated IAP BBC purchase more than <newbie.maxPurchase> times within <newbie.minutes> minutes after 17LIVE account has created.
+    newBie:
+      minutes: 5
+      maxPurchase: 10
+    # Under same 17LIVE account, user has requested Apple/Google refund more than <refund.maxRefund> times during last <refund.countPeriod> period.
+    refund:
+      maxRefund: 5
+      countPeriod: P1Y  # ISO8601, format:PnYnMnDTnHnMnS, e.g: P1Y1M1D means last 1 year + 1 month + 1 day 
+  alert:
+    enable: true
+    notifChannels:
+      - C04PGAWRYAF  # sta-fraud-ops-skyeye
+    notifUsers:
+      - U01EC8F72A3  # Kaisuto
+    ccUsers:
+      - S04PJUX35L4  # kaisuto-test-group
+    message: "Please note that the following user has been detected as potential fraud refund user with the following reason, user has been prohibited to top up BBC via IAP. Kindly fill in the sheet if the user is needed to be freeze or ban and reply under this thread when completed for SkyEye to keep as record."
+
+  whitelist:
