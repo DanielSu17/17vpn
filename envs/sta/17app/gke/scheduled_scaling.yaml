@@ -107,12 +107,10 @@
     minReplicas: 30
 
 # send gift stress
-- startTime: "2023-01-09 14:30:00 (GMT+0800)"
-  endTime: "2023-01-09 16:00:00 (GMT+0800)"
+- startTime: "2023-02-16 14:30:00 (GMT+0800)"
+  endTime: "2023-02-16 16:00:00 (GMT+0800)"
   HPAConfigs:
-  - name: k8ssta-goapi-main
-    minReplicas: 80
-  - name: k8ssta-golives-main
-    minReplicas: 80
+  - name: k8ssta-gotrade-main
+    minReplicas: 15
   - name: k8ssta-revprox-tw-main
-    minReplicas: 36
+    minReplicas: 12
