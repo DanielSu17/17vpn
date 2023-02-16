@@ -9,7 +9,7 @@ import time
 import requests
 import argparse
 
-ENVS = ["dev", "sta", "prod"]
+ENVS = ["dev", "uat", "sta", "prod"]
 
 backend_internal_mapping = {
     "zh_TW":    "tw",
