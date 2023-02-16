@@ -11,6 +11,60 @@
 # // |    UnLimit    |   2   | 限時不限次數
 
 eventBasedIAP:
+#Presidents Day 閃購
+  - startTime: "2023-02-19T00:00:00-08:00"
+    endTime: "2023-02-22T00:00:00-08:00"
+    showCountdownUnderSticker: false
+    showCountdownInPopUp: false
+    stickerURL: "https://cdn.17app.co/58823a64-3cf6-4127-8f96-83c7dcf470e6.png"
+    stickerURLInGiftbox: "https://cdn.17app.co/58823a64-3cf6-4127-8f96-83c7dcf470e6.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/26fff7f3-a9bf-4255-9933-e0b9b83fd3ff.png"
+    layoutInfo:
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_3540"
+        bonusPoint: 180
+        shouldHighlight:  true
+      - productID: "media17_points_8550"
+        bonusPoint: 860
+        shouldHighlight:  true
+      - productID: "media17_points_15420"
+        bonusPoint: 2300
+        shouldHighlight:  true
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight:  false
+    firstPurchaseType: 0
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true
+    abtestName:
 # Welcome Offer Feb H2
   - startTime: "2023-02-16T18:00:00-08:00" #Remember to change 
     endTime: "2023-02-28T21:00:00-08:00" #Remember to change 
