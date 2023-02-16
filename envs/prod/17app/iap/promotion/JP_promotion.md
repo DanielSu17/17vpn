@@ -1,1 +1,1 @@
-# 台灣IAP導購設定 (PM only)
+# 日本IAP導購設定 (PM only)
