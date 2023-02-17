@@ -28,6 +28,19 @@ supportedInvoiceTypes:
     - 1
     - 2
     - 4
+  57: # SellingChannelWebTwBabyVipNewebpay
+    - 1
+    - 2
+    - 4
+  58: # SellingChannelWebTwSuperVipNewebpay
+    - 1
+    - 2
+    - 3
+    - 4
+  60: # SellingChannelWebTw17LiveNewebpay
+    - 1
+    - 2
+    - 4
 
 allowedMakeupPurchasePayMethods:
   - 60
@@ -46,7 +59,17 @@ sellingChannelRedirectURLs:
   # Mycard: 67
   30: https://sta.17.live/purchase/order?paymethod=67&group=0 # SellingChannelWebTw17LiveMyCard
   47: https://sta.17.live/purchase/order?paymethod=67&group=1 # SellingChannelWebTwBabyVipMyCard
-
+  # Newebpay
+  57: "https://uat.17.live/purchase/order?&group=1" # SellingChannelWebTwBabyVipNewebpay
+  58: "https://uat.17.live/purchase/order?&group=2" # SellingChannelWebTwSuperVipNewebpay
+  59: "https://uat.17.live/purchase/order?" # SellingChannelWebGlobal17LiveNewebpay
+  60: "https://uat.17.live/purchase/order?" # SellingChannelWebTw17LiveNewebpay
+  61: "https://uat.17.live/purchase/order?" # SellingChannelWebSea17LiveNewebpay
+  62: "https://uat.17.live/zh-Hant/army" # SellingChannelWebTwArmyNewebpay
+  63: "https://uat.17.live/zh-Hant/army" # SellingChannelWebGlobalArmyNewebpay
+  64: "https://uat.17.live/zh-Hant/army" # SellingChannelWebHkArmyNewebpay
+  65: "https://uat.17.live/zh-Hant/army" # SellingChannelWebMyArmyNewebpay
+  66: "https://uat.17.live/zh-Hant/army" # SellingChannelWebSeaArmyNewebpay
 
 regionConfigs:
   TW:
@@ -54,18 +77,21 @@ regionConfigs:
       1: # Super VIP
         - 14 # SellingChannelVipDept (localVIPs)
         - 19 # SellingChannelWebTwSuperVip (localVIPs)
+        - 58 # SellingChannelWebTwSuperVipNewebpay
       2: # Baby VIP
         - 32 # SellingChannelWebTwBabyVip
         - 34 # SellingChannelWebTwBabyVipECPay
         - 46 # SellingChannelWebTwBabyVipJkos
         - 47 # SellingChannelWebTwBabyVipMyCard
         - 48 # SellingChannelWebTwBabyVipGash
+        - 57 # SellingChannelWebTwBabyVipNewebpay
       3: # 17Live
         - 29 # SellingChannelWebTw17Live
         - 30 # SellingChannelWebTw17LiveMyCard
         - 31 # SellingChannelWebTw17LiveGash
         - 33 # SellingChannelWebTw17LiveECPay
         - 35 # SellingChannelWebTw17LiveJkos
+        - 60 # SellingChannelWebTw17LiveNewebpay
     payMethodsForDuplicateInvoice:
       - 1
       - 3
@@ -75,6 +101,7 @@ regionConfigs:
       - 54
       - 56
       - 60
+      - 72
     payMethodsForTriplicateInvoice:
       - 13
     payMethods:
@@ -100,6 +127,7 @@ regionConfigs:
       - 60
       - 64
       - 67
+      - 72
     currencies:
       - TWD
       - JPY
