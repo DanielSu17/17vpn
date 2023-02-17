@@ -37,6 +37,21 @@ missions:
       type: 1
       gift_id: "event_gift_hightrip_4"
       amount: 5
+  - id: "cctest2"
+    name: "條件一次獎勵測試"
+    order: 1
+    start_time: "2023-02-13 05:00:00 (GMT+0800)"
+    end_time: "2023-02-26 23:59:59 (GMT+0800)"
+    comment: "cctest2"
+    reward:
+      type: 1
+      gift_id: "event_gift_hightrip_3"
+      amount: 1
+      valid_time: 20160
+    condition:
+      type: 2
+      gift_id: "event_gift_hightrip_4"
+      amount: 5
   - id: "Jimmytest"
     name: "微醺餐酒館"
     order: 1
