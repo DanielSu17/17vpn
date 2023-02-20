@@ -48,5 +48,31 @@ mysql:
     - item: TEXT_INPUT
       name: Comment
       value: ~
-      
-      
+github:
+  type: modal
+  title: Request Github
+  submitText: Submit
+  closeText: Close
+  blocks:
+    - item: VALIDATE_TEXT_INPUT
+      name: Organization User
+      id: user
+    - item: VALIDATE_TEXT_INPUT
+      name: Repository
+      id: repo
+      optional: true
+    - item: SINGLE_SELECT
+      name: Repo Permission
+      value: [ read, write ]
+      optional: true
+    - item: VALIDATE_TEXT_INPUT
+      name: Team
+      id: team
+      optional: true
+    - item: SINGLE_SELECT
+      name: Team Permission
+      value: [ Member ]
+      optional: true
+    - item: TEXT_INPUT
+      name: Comment
+      value: ~
