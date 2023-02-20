@@ -3,103 +3,102 @@
   "unsupported_overlay_publish_providers": {
     "providers": [9]
   },
-  "videoBitRateQuality" : {
-    "low" : {
-        "encodedVideoWidth" : 360,
-        "encodedVideoHeight" : 640,
-        "lowQualityBitRate" : 400,
-        "highQualityBitRate" : 600
+  "videoBitRateQuality": {
+    "low": {
+      "encodedVideoWidth": 360,
+      "encodedVideoHeight": 640,
+      "lowQualityBitRate": 400,
+      "highQualityBitRate": 600
     },
-    "medium" : {
-        "encodedVideoWidth" : 540,
-        "encodedVideoHeight" : 960,
-        "lowQualityBitRate" : 800,
-        "highQualityBitRate" : 1200
+    "medium": {
+      "encodedVideoWidth": 540,
+      "encodedVideoHeight": 960,
+      "lowQualityBitRate": 800,
+      "highQualityBitRate": 1200
     },
-    "high" : {
-        "encodedVideoWidth" : 720,
-        "encodedVideoHeight" : 1280,
-        "lowQualityBitRate" : 1200,
-        "highQualityBitRate" : 1600
+    "high": {
+      "encodedVideoWidth": 720,
+      "encodedVideoHeight": 1280,
+      "lowQualityBitRate": 1200,
+      "highQualityBitRate": 1600
     }
   },
-  "matomo_event_grpc" : {
-    "ios_apply_version" : "3.136.0",
-    "android_apply_version" : 2000,
+  "matomo_event_grpc": {
+    "ios_apply_version": "3.136.0",
+    "android_apply_version": 2000,
     "web_matomo_version": "v2"
   },
-  "matomo_event_general" : {
+  "matomo_event_general": {
     "android_apply_version": 2147483647,
     "ios_apply_version": ""
   },
-  "live_atmos_v2" : {
-    "ios_apply_version" : "3.150.0",
-      "android_apply_version":16309920,
-    "snow" : {
-      "ios_apply_version" : "3.150.0",
-      "android_apply_version":16309920,
-      "apply_region" : ["ALL"],
-      "trigger_message" : [
-          "Zoe是小辣椒"
+  "live_atmos_v2": {
+    "ios_apply_version": "3.150.0",
+    "android_apply_version": 16309920,
+    "snow": {
+      "ios_apply_version": "3.150.0",
+      "android_apply_version": 16309920,
+      "apply_region": ["ALL"],
+      "trigger_message": [
+        "Zoe是小辣椒"
       ],
-      "duration_sec" : 30
+      "duration_sec": 30
+    },
+    "box": {
+      "ios_apply_version": "3.150.0",
+      "android_apply_version": 16309920,
+      "apply_region": ["TW", "HK", "MO", "SG", "MY", "US", "PH"],
+      "trigger_message": [
+        "Ice",
+        "Fire",
+        "Throne",
+        "Onmyoji",
+        "play",
+        "win",
+        "game",
+        "noble",
+        "king",
+        "commoner",
+        "spell",
+        "國王",
+        "貴族",
+        "平民",
+        "遊戲",
+        "陰陽師",
+        "狐嫁女",
+        "緣結神",
+        "般若",
+        "權力之爭"
+      ],
+      "boxes": [{
+          "drop_rate": 30,
+          "image_urls": ["https://cdn.17app.co/833eccd8-c724-4656-ab96-77900623779c.png"],
+          "type": 1
+        },
+        {
+          "drop_rate": 30,
+          "image_urls": ["https://cdn.17app.co/ef8f303d-be8c-4afc-9afe-add01cdc39e8.png"],
+          "type": 1
+        },
+        {
+          "drop_rate": 30,
+          "image_urls": ["https://cdn.17app.co/f486393a-01c4-4197-b3e9-763eb93f3f74.png"],
+          "type": 1
+        },
+        {
+          "drop_rate": 10,
+          "image_urls": ["https://cdn.17app.co/0f86979d-a02c-4f5a-b527-7c95cf7e1fdd.png"],
+          "type": 2
+        }
+      ],
+      "drop_count_distribution": {
+        "3": 65,
+        "2": 25,
+        "1": 10
       },
-    "box" : {
-      "ios_apply_version" : "3.150.0",
-      "android_apply_version":16309920,
-      "apply_region" :  ["TW", "HK", "MO", "SG", "MY", "US", "PH"],
-      "trigger_message" : [
-          "Ice",
-          "Fire",
-          "Throne",
-          "Onmyoji",
-          "play",
-          "win",
-          "game",
-          "noble",
-          "king",
-          "commoner",
-          "spell",
-          "國王",
-          "貴族",
-          "平民",
-          "遊戲",
-          "陰陽師",
-          "狐嫁女",
-          "緣結神",
-          "般若",
-          "權力之爭"
-      ],
-      "boxes" : [
-         {
-             "drop_rate": 30,
-             "image_urls": ["https://cdn.17app.co/833eccd8-c724-4656-ab96-77900623779c.png"],
-             "type": 1
-         },
-         {
-             "drop_rate": 30,
-             "image_urls": ["https://cdn.17app.co/ef8f303d-be8c-4afc-9afe-add01cdc39e8.png"],
-             "type": 1
-         },
-         {
-             "drop_rate": 30,
-             "image_urls": ["https://cdn.17app.co/f486393a-01c4-4197-b3e9-763eb93f3f74.png"],
-             "type": 1
-         },
-         {
-             "drop_rate": 10,
-             "image_urls": ["https://cdn.17app.co/0f86979d-a02c-4f5a-b527-7c95cf7e1fdd.png"],
-             "type": 2
-         }
-      ],
-      "drop_count_distribution" : {
-          "3": 65,
-          "2": 25,
-          "1": 10
-      },
-      "duration_sec" : 30,
-      "max_total_count" : 35,
-      "cooldown_sec" : 600
+      "duration_sec": 30,
+      "max_total_count": 35,
+      "cooldown_sec": 600
     }
   },
   "stream_profile_config": {
@@ -110,16 +109,16 @@
     "reverse_quality_wait_time": 600,
     "max_reverse_quality_count": 3
   },
-  "concert_mode_datadog_log" : {
-    "ios_apply_version" : "",
-    "android_apply_version" : 99999999
+  "concert_mode_datadog_log": {
+    "ios_apply_version": "",
+    "android_apply_version": 99999999
   },
-  "concert_mode_pull_stream_mechanism" : {
-    "ios_apply_version" : "3.150.1",
-    "android_apply_version" : 16292499,
-    "buffering_check_period_sec" : 30.0,
-    "lower_down_threshold_for_buffering_sec" : 15.0,
-    "max_buffering_record_count" : 30,
+  "concert_mode_pull_stream_mechanism": {
+    "ios_apply_version": "3.150.1",
+    "android_apply_version": 16292499,
+    "buffering_check_period_sec": 30.0,
+    "lower_down_threshold_for_buffering_sec": 15.0,
+    "max_buffering_record_count": 30,
     "check_frequency_sec": 2,
     "log_buffering_frequency_sec": 30,
     "ping_host": "8.8.8.8",
@@ -127,29 +126,28 @@
     "ping_high_latency_threshold_ms": 150
   },
   "cdn_m3u8_test": {
-    "ios_apply_version" : "",
-    "android_apply_version":99999999,
-    "apply_region" : ["ALL"],
-    "domain_index" : 0,
-	    "domain_sources": [
-		    "https://ws-hls-pull.17app.co/vod/",
-		    "https://ws-gcp-hls-pull.17app.co/vod/",
-		    "https://ws-ak-hls-pull.17app.co/vod/",
-		    "https://ws-cf-hls-pull.17app.co/vod/"
-	    ],
-	    "suffix_index": 0,
-	    "suffix_sources": [
-		    "/playlist.m3u8",
-		    "_360x640_900/playlist.m3u8",
-		    "_540x960_1600/playlist.m3u8"
-	    ]
-  },  
+    "ios_apply_version": "",
+    "android_apply_version": 99999999,
+    "apply_region": ["ALL"],
+    "domain_index": 0,
+    "domain_sources": [
+      "https://ws-hls-pull.17app.co/vod/",
+      "https://ws-gcp-hls-pull.17app.co/vod/",
+      "https://ws-ak-hls-pull.17app.co/vod/",
+      "https://ws-cf-hls-pull.17app.co/vod/"
+    ],
+    "suffix_index": 0,
+    "suffix_sources": [
+      "/playlist.m3u8",
+      "_360x640_900/playlist.m3u8",
+      "_540x960_1600/playlist.m3u8"
+    ]
+  },
   "unity_game": {
     "ios_apply_version": "3.150.1",
     "android_apply_version": 16267717,
     "apply_region": ["ALL"],
-    "games": [
-      {
+    "games": [{
         "ios_apply_version": "3.150.1",
         "android_apply_version": 16267717,
         "apply_region": ["ALL"],
@@ -192,87 +190,86 @@
     "ios_apply_version": "3.164.0",
     "android_apply_version": 16381608,
     "white_list_users": [
-	"fccec7c3-2bdf-45cb-96b8-706a98293e5f",
-	"b3e565ed-d66f-405c-9396-609c1116ba6d",
-	"baf08c4c-594b-4b56-924e-2aa80dbb8349",
-	"bf8cdbc8-a94a-4672-b6fe-d6d9c302523d"
+      "fccec7c3-2bdf-45cb-96b8-706a98293e5f",
+      "b3e565ed-d66f-405c-9396-609c1116ba6d",
+      "baf08c4c-594b-4b56-924e-2aa80dbb8349",
+      "bf8cdbc8-a94a-4672-b6fe-d6d9c302523d"
     ],
     "region_default_weight": 0,
     "region_weight": {
-        "TW": 70,
-        "JP": 70,
-	"US": 70,
-	"HK": 70
+      "TW": 70,
+      "JP": 70,
+      "US": 70,
+      "HK": 70
     },
     "hour_weight": [
-    	 50,  80, 100, 100, 100, 100,
-    	100, 100, 100, 100, 100, 100,
-    	100, 100, 100, 100, 100, 100,
-    	 80,  50,  45,  45,  45,  45
+      50, 80, 100, 100, 100, 100,
+      100, 100, 100, 100, 100, 100,
+      100, 100, 100, 100, 100, 100,
+      80, 50, 45, 45, 45, 45
     ]
   },
-  "groupCallStreamProfile" : {
-    "ladderings" : [
-    	{
-    		"maxPeople" : 3,
-    		"width" : 360,
-    		"height" : 640,
-    		"lowQualityBitRate" : 400,
-    		"highQualityBitRate" : 600,
-    		"defaultBitRate" : 600,
-    		"fps" : 24
-    	},
-    	{
-    		"maxPeople" : 6,
-    		"width" : 240,
-    		"height" : 424,
-    		"lowQualityBitRate" : 300,
-    		"highQualityBitRate" : 400,
-    		"defaultBitRate" : 400,
-    		"fps" : 24
-    	},
-    	{
-    		"maxPeople" : 9,
-    		"width" : 240,
-    		"height" : 424,
-    		"lowQualityBitRate" : 200,
-    		"highQualityBitRate" : 300,
-    		"defaultBitRate" : 300,
-    		"fps" : 24
-    	}
+  "groupCallStreamProfile": {
+    "ladderings": [{
+        "maxPeople": 3,
+        "width": 360,
+        "height": 640,
+        "lowQualityBitRate": 400,
+        "highQualityBitRate": 600,
+        "defaultBitRate": 600,
+        "fps": 24
+      },
+      {
+        "maxPeople": 6,
+        "width": 240,
+        "height": 424,
+        "lowQualityBitRate": 300,
+        "highQualityBitRate": 400,
+        "defaultBitRate": 400,
+        "fps": 24
+      },
+      {
+        "maxPeople": 9,
+        "width": 240,
+        "height": 424,
+        "lowQualityBitRate": 200,
+        "highQualityBitRate": 300,
+        "defaultBitRate": 300,
+        "fps": 24
+      }
     ]
   },
-  "audioStreamProfile" : {
-    "width" : 360,
-    "height" : 640,
-    "lowQualityBitRate" : 300,
-    "highQualityBitRate" : 400,
-    "defaultBitRate" : 400,
-    "fps" : 24
+  "audioStreamProfile": {
+    "width": 360,
+    "height": 640,
+    "lowQualityBitRate": 300,
+    "highQualityBitRate": 400,
+    "defaultBitRate": 400,
+    "fps": 24
   },
   "ping_v2": {
     "low_latency_threshold": 90,
     "high_latency_threshold": 100,
     "retry_times": 5,
     "streamer": {
-        "ios_apply_version": "3.167.0",
-        "android_apply_version": 16388493,
-        "interval": 20,
-        "host": "8.8.8.8"
+      "ios_apply_version": "3.167.0",
+      "android_apply_version": 16388493,
+      "interval": 20,
+      "host": "8.8.8.8"
     },
     "viewer": {
-        "ios_apply_version": "3.167.0",
-        "android_apply_version": 16388493,
-        "interval": 10,
-        "host": "8.8.8.8"
+      "ios_apply_version": "3.167.0",
+      "android_apply_version": 16388493,
+      "interval": 10,
+      "host": "8.8.8.8"
     }
   },
   "streamer_network_status_v2": {
     "ios_apply_version": "3.167.0",
     "android_apply_version": 16388493,
     "panel": {
-        "ios_apply_version": "3.167.0",
-        "android_apply_version": 16406178
+      "ios_apply_version": "3.167.0",
+      "android_apply_version": 16406178
     }
   },
   "viewer_network_status": {
@@ -289,8 +286,8 @@
     "android_apply_version": 99999999
   },
   "braze_sdk": {
-    "ios_apply_version" : "3.193.0",
-    "android_apply_version" : 16560731,
+    "ios_apply_version": "3.193.0",
+    "android_apply_version": 16560731,
     "custom_event_switch": {
       "Watched stream": true,
       "Stopped watching stream": true,
@@ -300,11 +297,11 @@
   "green_screen": {
     "ios_apply_version": "3.205.1",
     "android_apply_version": 16620040,
-    "android_black_model_list" : [],
-    "ios_should_handle_background_mode" : true
+    "android_black_model_list": [],
+    "ios_should_handle_background_mode": true
   },
   "pull_stream_log": {
-      "buffering_ratio": {
+    "buffering_ratio": {
       "ios_apply_version": "3.200.0",
       "android_apply_version": 16645284,
       "check_frequency": 30,
@@ -321,30 +318,30 @@
       "data_fetch_frequency": 8,
       "data_fetch_frequency_ios": 8,
       "quality_monitor": {
-         "ios_apply_version": "3.210.0",
-         "android_apply_version": 16637436,
-         "frequency": 30
-       },
-       "push_report": {
-         "ios_apply_version": "3.210.0",
-         "android_apply_version": 16637436
-       }
+        "ios_apply_version": "3.210.0",
+        "android_apply_version": 16637436,
+        "frequency": 30
+      },
+      "push_report": {
+        "ios_apply_version": "3.210.0",
+        "android_apply_version": 16637436
+      }
     },
     "viewer": {
       "ios_apply_version": "3.200.0",
       "android_apply_version": 16673540,
       "data_fetch_frequency": 8,
       "data_fetch_frequency_ios": 8,
-       "quality_monitor": {
-         "ios_apply_version": "3.200.0",
-         "android_apply_version": 16673540,
-         "frequency": 30,
-		     "time_period": 20
-       },
-       "pull_report": {
-         "ios_apply_version": "3.200.0",
-         "android_apply_version": 16673540
-       }
+      "quality_monitor": {
+        "ios_apply_version": "3.200.0",
+        "android_apply_version": 16673540,
+        "frequency": 30,
+        "time_period": 20
+      },
+      "pull_report": {
+        "ios_apply_version": "3.200.0",
+        "android_apply_version": 16673540
+      }
     }
   },
   "stream_viewed_detector": {
@@ -381,9 +378,15 @@
       }
     }
   },
-  "dirty_word_feature" : {
-      "ios_apply_version": "3.203.0",
-      "android_apply_version": 16704987,
-      "enable":true 
+  "dirty_word_feature": {
+    "ios_apply_version": "3.203.0",
+    "android_apply_version": 16704987,
+    "enable": true
+  },
+  "iap_restricted_region": {
+    "ios_apply_version": "3.224.0",
+    "android_apply_version": 16759971,
+    "country_code": ["EGY"],
+    "currency_code": ["EGP"]
   }
 }
