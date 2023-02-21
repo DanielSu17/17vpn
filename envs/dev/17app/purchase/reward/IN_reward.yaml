@@ -1,0 +1,150 @@
+# 範例(詳細說明在README.md):
+#  rewardEvents:
+#    - eventID: "event-01"
+#      startTime: "2018-12-24T15:00:00+08:00"
+#      endTime: "2019-02-25T23:59:59+08:00"
+#      eventRequirements:
+#        - sellingChannels:
+#            include:
+#              - 1
+#              - 2
+#          firstPurchase:
+#            timeRange:
+#              startTime: "2018-12-24T15:00:00+08:00"
+#            sellingChannels:
+#              exclude:
+#                - 2
+#            merchandiseID: "mockMerchandiseID"
+#        - registerDayRange:
+#            fromDayN: 0
+#            toDayN: 13
+#          sellingChannels:
+#            include:
+#              - 1
+#              - 2
+#        - firstPurchase:
+#            sellingChannels:
+#              exclude:
+#                - 2
+#            merchandiseID: "mockMerchandiseID"
+#          abtest:
+#            name: "abtest"
+#            groupID: "b"
+#          sellingChannels:
+#            include:
+#              - 1
+#              - 2
+#          legacyFirstPurchase:
+#            enableTimeRange: false
+#      rules:
+#        - reward:
+#            points: 1000
+#          requirements:
+#            - merchandiseID: "mockMerchandiseID"
+#        - reward:
+#            loyaltyPoints: 5
+#          requirements:
+#            - merchandiseID: "mockMerchandiseID1"
+#        - reward:
+#            premiumBaby:
+#              days: 3
+#          requirements:
+#            - merchandiseID: "mockMerchandiseID2"
+#        - reward:
+#            bonusRatio:
+#              priceRatio: 0.3
+#          requirements:
+#            - merchandiseID: "mockMerchandiseID3"
+#    - eventID: "event-02"
+#      eventRequirements:
+#        - onlyAvailableInSameRegion: true
+#          secretIAP:
+#            ID: "mockID"
+#          sellingChannels:
+#            include:
+#              - 1
+#              - 2
+#          legacyFirstPurchase:
+#            enableTimeRange: true
+#            timeRange:
+#              startTime: "2018-12-24T15:00:00+08:00"
+#      rules:
+#        - reward:
+#            points: 200
+#          requirements:
+#            - merchandiseID: "mockMerchandiseID"
+
+secretIAPConditions:
+
+rewardEvents:
+  # this rule is for e2e reward test, DO NOT REMOVE IT
+  - eventID: "e2eRewardEvent"
+    eventRequirements:
+      - sellingChannels:
+          include:
+            - 1
+    rules:
+      - reward:
+          points: 70
+          premiumBaby:
+            days: 1
+        requirements:
+          - merchandiseID: "media17_points_330"
+
+  - eventID: "devTestEvent-01"
+    startTime: "2018-12-24T15:00:00+08:00"
+    endTime: "2019-03-25T23:59:59+08:00"
+    eventRequirements:
+      - sellingChannels:
+          include:
+            - 1
+            - 2
+        legacyFirstPurchase:
+          enableTimeRange: true
+          timeRange:
+            startTime: "2018-12-24T15:00:00+08:00"
+        registerDayRange:
+          fromDayN: 0
+          toDayN: 13
+        onlyAvailableInSameRegion: true
+    rules:
+      - reward:
+          points: 1700
+        requirements:
+          - merchandiseID: "media17_points_14000"
+      - reward:
+          points: 1700
+        requirements:
+          - merchandiseID: "media17_points_6500"
+      - reward:
+          points: 1700
+        requirements:
+          - merchandiseID: "media17_points_2400"
+      - reward:
+          points: 170
+        requirements:
+          - merchandiseID: "media17_points_1100"
+      - reward:
+          points: 170
+        requirements:
+          - merchandiseID: "media17_points_500"
+      - reward:
+          points: 17
+        requirements:
+          - merchandiseID: "media17_points_100"
+
+  - eventID: "devTestEvent-02"
+    startTime: "2018-12-24T15:00:00+08:00"
+    endTime: "2020-02-25T23:59:59+08:00"
+    eventRequirements:
+      - sellingChannels:
+          include:
+            - 1
+            - 2
+        onlyAvailableInSameRegion: true
+    rules:
+      - reward:
+          premiumBaby:
+            days: 5
+        requirements:
+          - merchandiseID: "media17_points_330"

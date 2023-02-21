@@ -1,0 +1,71 @@
+# find all region board enum in models/leaderboard/leaderboard.go
+# boards shown in app leaderboard page
+# 1:收禮
+# 2:送禮
+# 23:榮耀之路
+# 18:開播時數
+# 15:戰隊
+# 16:陪伴
+# 5:愛心
+# 3:幫派
+# 54: Archive 收禮 Recieve Gif
+# 55: Archive 送禮 Send Gift
+boardsList: [1, 2, 54, 55, 51, 44, 45, 46, 43, 36, 23, 34, 35, 18, 15, 16, 5, 3, ]
+
+subBoards:
+  34:
+    # 33: 直播被看播時間
+    - type: 33
+      iconURL: https://assets-17app.akamaized.net/eedcccfd-e315-4306-a292-34a091fa7dc1.png
+      titleI18nKey: leaderboard_diversification_watchedstreamtime_title
+      layoutType: 4
+    # 29: 男主播
+    - type: 29
+      iconURL: https://assets-17app.akamaized.net/e319f0bb-201e-4edb-adb0-02ccff723cfa.png
+      titleI18nKey: leaderboard_diversification_male_title
+      layoutType: 1
+    # 30: 女主播
+    - type: 30
+      iconURL: https://assets-17app.akamaized.net/b9789abc-bc5f-4d92-b0fe-7b6223be189b.png
+      titleI18nKey: leaderboard_diversification_female_title
+      layoutType: 1
+    # 18: 開播時數
+    - type: 18
+      iconURL: https://assets-17app.akamaized.net/fba87ad5-c412-4793-80ad-3119d402fbe2.png
+      titleI18nKey: leaderboard_diversification_streamtime_title
+      layoutType: 3
+    # 31: 收禮次數
+    - type: 31
+      iconURL: https://assets-17app.akamaized.net/743de4b0-8eab-44aa-bd2f-4171170b1b78.png
+      titleI18nKey: leaderboard_diversification_giftcount_title
+      layoutType: 2
+    # 32: 禮物背包（簽到禮物、背包、新手任務）獲得pt
+    - type: 32
+      iconURL: https://assets-17app.akamaized.net/9a247c76-07a7-4298-b962-fa46211a3daa.png
+      titleI18nKey: leaderboard_diversification_giftboxpt_title
+      layoutType: 1
+    # 41: unique送禮人數
+    - type: 41
+      iconURL: https://cdn.17app.co/f2cb0848-fa1d-4048-87fe-59c56ab9eb77.png
+      titleI18nKey: leaderboard_diversification_uniquegifter_title
+      layoutType: 5
+    # 42: unique留言人數
+    - type: 42
+      iconURL: https://cdn.17app.co/30f6c9c4-1b25-40da-9987-d534303a58b2.png
+      titleI18nKey: leaderboard_diversification_uniquecomenter_title
+      layoutType: 5
+    # 39: 戳人次數
+    - type: 39
+      iconURL: https://cdn.17app.co/78cd2b5d-efc3-4f8f-97a2-f9cb3770b6ee.png
+      titleI18nKey: leaderboard_diversification_sentpokecount_title
+      layoutType: 2
+    # 40: 回戳次數
+    - type: 40
+      iconURL: https://cdn.17app.co/7c42e8b9-3388-48a4-88d5-ad8fc20f4cba.png
+      titleI18nKey: leaderboard_diversification_returnpokecount_title
+      layoutType: 2
+    # 38: 被分享次數
+    - type: 38
+      iconURL: https://cdn.17app.co/e61ae76d-b8ef-42ca-b2cf-798b6109ce2b.png
+      titleI18nKey: leaderboard_diversification_sharecount_title
+      layoutType: 2

@@ -1,0 +1,211 @@
+# NOTE:
+# `the order of ranks and levels` have to do with real business logic in app
+# `the value of rank and level` below have nothing to do with real business logic in app
+# they are just for easy to be read at first glance in config
+
+rankupAnimation:
+  url: "https://cdn.17app.co/794f7c0d-8145-4630-86cb-5fb9470d2fb2.zip"
+  webpUrl: "https://cdn.17app.co/427a09a7-2768-4cf8-a04e-12f5ba3c77d3-q90-s1.webp"
+  animationID: "laborreward_rank_up_20200103"
+  MD5: "32043896bdf0a7050da51a64786b07f7"
+  webpMD5: "03b15ef8504e9c0eea2f69524e988aa2"
+
+defaultDecoSticker: -1
+
+streamer:
+  ranks:
+    - rank: 1
+      min: 0
+      max: 999
+      earnAchievementValue: 4000
+      imageURL: "https://cdn.17app.co/575c1d47-7a2c-4cc9-a40a-e57f36333dda.png"
+      decoStickerStyle: -1
+    - rank: 2
+      min: 1000
+      max: 2999
+      earnAchievementValue: 8000
+      imageURL: "https://cdn.17app.co/497abb9a-74be-425a-ab5f-b7b1dce1d547.png"
+      decoStickerStyle: -1
+    - rank: 3
+      min: 3000
+      max: 9999
+      earnAchievementValue: 28000
+      imageURL: "https://cdn.17app.co/38c00c5b-4abc-4a45-914b-7b98be47806f.png"
+      decoStickerStyle: -1
+    - rank: 4
+      min: 10000
+      max: 200000
+      earnAchievementValue: 30000
+      imageURL: "https://cdn.17app.co/2922a319-417a-4d23-ae93-56e79cfe0ef5.png"
+      decoStickerStyle: -1
+
+viewer:
+  # snack with premium reward
+  levelsWithPremium:
+    - level: 1
+      type: 1
+      rewardValue: 200
+      rewardImageURL: "https://cdn.17app.co/e53589d2-f3bb-4904-b98e-c94d3fccfd77.png"
+      timerSecs: 0
+      incrExp: 1
+      animationID: "laborreward_normal_lv1"
+    - level: 2
+      type: 2
+      rewardValue: 200
+      rewardImageURL: "https://cdn.17app.co/c63251aa-983b-47fb-bf6e-144fb82e2a73.png"
+      timerSecs: 10
+      incrExp: 1
+      animationID: "laborreward_premium_lv1"
+      price: 10
+    - level: 3
+      type: 1
+      rewardValue: 200
+      rewardImageURL: "https://cdn.17app.co/b119a1e6-0e80-4d8f-8a17-aaf1c72b7b91.png"
+      timerSecs: 10
+      incrExp: 1
+      animationID: "laborreward_normal_lv2"
+    - level: 4
+      type: 2
+      rewardValue: 200
+      rewardImageURL: "https://cdn.17app.co/6bb52460-2344-4ff3-b792-afb5507fed30.png"
+      timerSecs: 10
+      incrExp: 1
+      animationID: "laborreward_premium_lv2"
+      price: 10
+    - level: 5
+      type: 1
+      rewardValue: 200
+      rewardImageURL: "https://cdn.17app.co/16d69295-cbb9-4f22-ae23-9a59639ba539.png"
+      timerSecs: 10
+      incrExp: 1
+      animationID: "laborreward_normal_lv3"
+    - level: 6
+      type: 2
+      rewardValue: 200
+      rewardImageURL: "https://cdn.17app.co/346eb4d2-992c-4382-af23-1f698a7369c2.png"
+      timerSecs: 10
+      incrExp: 1
+      animationID: "laborreward_premium_lv3"
+      price: 10
+    - level: 7
+      type: 1
+      rewardValue: 200
+      rewardImageURL: "https://cdn.17app.co/55e4716e-7dd3-4458-8859-b7425a5a0914.png"
+      timerSecs: 10
+      incrExp: 1
+      animationID: "laborreward_normal_lv4"
+    - level: 8
+      type: 2
+      rewardValue: 200
+      rewardImageURL: "https://cdn.17app.co/d422a25a-1e32-49dd-b744-fdcf9815c546.png"
+      timerSecs: 10
+      incrExp: 1
+      animationID: "laborreward_premium_lv4"
+      price: 10
+    - level: 9
+      type: 1
+      rewardValue: 200
+      rewardImageURL: "https://cdn.17app.co/44cbccd0-3848-407e-bd18-c8c4c334d93e.png"
+      timerSecs: 10
+      incrExp: 1
+      animationID: "laborreward_normal_lv5"
+    - level: 10
+      type: 2
+      rewardValue: 200
+      rewardImageURL: "https://cdn.17app.co/0d429ea5-8f74-4d31-832f-9c0a1abc9bcf.png"
+      timerSecs: 10
+      incrExp: 1
+      animationID: "laborreward_premium_lv5"
+      price: 10
+    - level: 11
+      type: 1
+      rewardValue: 200
+      rewardImageURL: "https://cdn.17app.co/ecec2261-e92c-4bf2-bfff-6c1ebe17922d.png"
+      timerSecs: 10
+      incrExp: 1
+      animationID: "laborreward_normal_lv6"
+    - level: 12
+      type: 2
+      rewardValue: 200
+      rewardImageURL: "https://cdn.17app.co/4df54ed7-6be9-46d5-8e4f-2c9a83cbd1c3.png"
+      timerSecs: 10
+      incrExp: 1
+      animationID: "laborreward_premium_lv6"
+      price: 10
+    - level: 13
+      type: 1
+      rewardValue: 500
+      rewardImageURL: "https://cdn.17app.co/65e3b767-a61d-4500-9750-b49536c11802.png"
+      timerSecs: 10
+      incrExp: 10
+      animationID: "laborreward_normal_lv7"
+    - level: 14
+      type: 2
+      rewardValue: 200
+      rewardImageURL: "https://cdn.17app.co/0cd4d869-2557-4f62-8db3-95295eb46337.png"
+      timerSecs: 10
+      incrExp: 1
+      animationID: "laborreward_premium_lv7"
+      price: 10
+    - level: 15
+      type: 2
+      rewardValue: 200
+      rewardImageURL: "https://cdn.17app.co/fdbf68c0-dffe-49ce-a0d6-b435c3916da2.png"
+      timerSecs: 10
+      incrExp: 1
+      animationID: "laborreward_premium_lv8"
+      price: 10
+    - level: 16
+      type: 2
+      rewardValue: 200
+      rewardImageURL: "https://cdn.17app.co/948c53f1-08c4-4477-873e-e3bcc915075a.png"
+      timerSecs: 10
+      incrExp: 1
+      animationID: "laborreward_premium_lv9"
+      price: 10
+    - level: 17
+      type: 3
+      rewardValue: 200
+      rewardImageURL: "https://cdn.17app.co/a22ed4e9-d59e-407e-b91d-c0d52b844047.png"
+      displayImageURL: "https://cdn.17app.co/253628ec-dcc8-4270-b5cf-1adb94429f5a.png"
+      timerSecs: 10
+      incrExp: 1
+      animationID: "laborreward_premium_lv10"
+      price: 10
+      giftID: "gift_bag_17treasures"
+  levels:
+    - level: 1
+      rewardValue: 200
+      rewardImageURL: "https://cdn.17app.co/e53589d2-f3bb-4904-b98e-c94d3fccfd77.png"
+      viewSecsRequired: 0
+      incrExp: 1
+    - level: 2
+      rewardValue: 200
+      rewardImageURL: "https://cdn.17app.co/b119a1e6-0e80-4d8f-8a17-aaf1c72b7b91.png"
+      viewSecsRequired: 10
+      incrExp: 1
+    - level: 3
+      rewardValue: 200
+      rewardImageURL: "https://cdn.17app.co/16d69295-cbb9-4f22-ae23-9a59639ba539.png"
+      viewSecsRequired: 10
+      incrExp: 1
+    - level: 4
+      rewardValue: 200
+      rewardImageURL: "https://cdn.17app.co/55e4716e-7dd3-4458-8859-b7425a5a0914.png"
+      viewSecsRequired: 10
+      incrExp: 1
+    - level: 5
+      rewardValue: 200
+      rewardImageURL: "https://cdn.17app.co/44cbccd0-3848-407e-bd18-c8c4c334d93e.png"
+      viewSecsRequired: 10
+      incrExp: 1
+    - level: 6
+      rewardValue: 200
+      rewardImageURL: "https://cdn.17app.co/ecec2261-e92c-4bf2-bfff-6c1ebe17922d.png"
+      viewSecsRequired: 10
+      incrExp: 1
+    - level: 7
+      rewardValue: 500
+      rewardImageURL: "https://cdn.17app.co/511a58f5-ad2b-41bb-8d56-a48cf5a12f9a.png"
+      viewSecsRequired: 10
+      incrExp: 10

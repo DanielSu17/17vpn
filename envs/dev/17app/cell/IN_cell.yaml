@@ -1,0 +1,112 @@
+# virtual streamer region order
+virtualStreamRegionOrder: ["JP", "TW", "HK", "MY"]
+
+# position example: <type>_<tab>
+position:
+  # index start from 1
+  # Tab : hot
+  program_hot: [2,6,10,15,20,25]
+  beltBanner_hot: 5
+  virtualStreamer_hot: 0
+  beltBannerLatest: 1
+  carouselBannerLatest: 2
+
+  # index start from 0
+  banner_tv: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+  banner_clip: [0]
+# this is for setting position priority in hot cell
+priority:
+  - name: 1 # TVSHOW
+  - name: 2 # TRIVIA_ON_TV
+  - name: 3 # TVBANNER
+  - name: 4 # TRIVIA
+  - name: 5 # WEREWOLVES
+
+# Expand the cell size to 2x2 if the number of cells less/equal than the number
+enableExpandCellSize: true
+expandCellSizeThreshold: 0
+
+# Fill streams in other region to fit the page limit in hot
+supplyOtherRegionInHot: true
+
+# entrance room setting for cells with CellType_ENTRANCE_ROOM
+# - position >= 1
+# - minRoomsRequired >= 1
+# - start, end support two formats: "06:10:00" or "2019-04-01 08:22:00"
+# - topic: (全民話題 1), (PK 2)
+# - topicTitles: string array
+# - whitelist: userID array
+entranceRooms:
+  - enable: true
+    position: 5
+    minRoomsRequired: 3
+    title: "today_hot_topic_title"
+    description: "today_hot_topic_entrance_room_des_date"
+    vipFrameID: "FRAME_ENTRANCEROOM"
+    vipFrameURL: "https://cdn.17app.co/29a31d62-4602-4a57-9d40-4a9fafaacf40.png"
+    iosFrameURL: "https://cdn.17app.co/9042f826-c53d-45ab-87a5-861844ccb0d4.png"
+    iconID: "ICON_ENTRANCEROOM"
+    iconURL: "https://assets-17app.akamaized.net/8fb28053-6a8e-453b-9a65-36d1009b6894.png"
+    start: "06:10:00"
+    end: "18:20:00"
+    topic: 1
+    topicTitles:
+    topics: # deprecate soon
+      1:
+    whitelist:
+      - "e1d8740e-2990-4532-8c7f-6a90e6d9b7e5"
+      - "e1147338-1fe7-4e60-9df0-4e1feea19880"
+
+hotOptTabs:
+  - id: label:male
+    name:
+      key: tab_opt_male
+  - id: label:female
+    name:
+      key: tab_opt_female
+  - id: label:acoustic
+    name:
+      key: streamer_label_acoustic
+  - id: label:singer
+    name:
+      key: streamer_label_singer
+  - id: label:fortune_teller
+    highlight: true
+    name:
+      key: streamer_label_fortune_teller
+  - id: label:pundit
+    highlight: true
+    name:
+      key: streamer_label_pundit
+  - id: web:music
+    name:
+      key: tab_opt_music
+  - id: 17tv_tab
+    name:
+      key: 17tv_entry_tab
+  - id: pk
+    name:
+      key: tab_opt_pk
+    minStreamRequired: 2 # 2個直播間一組PK
+
+hotOptSuperTopTabList:
+  - label:player
+  - label:female
+  - label:pundit
+  - label:street_artist
+
+hotOptSuperTopTabExtraList:
+  - web:music
+  - label:pundit
+  - label:female
+  - label:male
+  - label:acoustic
+
+hotOptSuperTopTabBlacklist: []
+
+hotOpt:
+  onlyWhitelist: false
+  whitelist: []
+
+# deduplicate streams from the same user in hot page
+enableHotDedup: true

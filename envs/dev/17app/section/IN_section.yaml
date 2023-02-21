@@ -1,0 +1,83 @@
+# sections
+#   - id: TopBanner|OffcRecomm|Suggestion|Label|RedEnvelope|Show|Vod|TodayHotTopic|CrazyZoo|GroupCall|ArchiveVideo
+#     enable: false|true
+#     dedup:  false|true ,false(會出現重複的直播入口)
+#     more:   false|true
+#     minGrids: <int>
+#     style: <int> 1: BillboardStyle, 2: StoryTrayStyle, 3: DefaultShelfStyle, 4: CoverFlowStyle, 5: VodShelfStyle, 6: DefaultLabelShelfStyle (猜你可能會喜歡)
+#     name:
+#       key: <string>
+#     labelID: <string> (optional if id is `Label`)
+
+# style 1: Top banner + super promote
+# style 2: IG 限時動態 style （官方推薦內容）
+# style 3: Netflix default style (時事話題, ...)
+# style 4: (熱播節目)
+# style 5: (熱門影音)
+# style 6: (猜你可能會喜歡) showing label as possible than DefaultShelfStyle
+# style 7: (新手任務)
+# style 8: (PK) used in more page
+# style 9: GroupCall
+# style 10: GroupCall empty style. Client will show the groupCall entry button even if the grids are less than minGrids.
+# style 11: ArchiveVideo (典藏直播) 
+
+typeTab:
+  displayTypeTab: true
+  typeTabs:
+    - typeTabID: 1 # general
+      typeTabNameI18n: "general_name_jp"
+    - typeTabID: 2 # vliver
+      typeTabNameI18n: "vliver_name_jp"
+
+preservedSectionID: Suggestion
+
+sections:
+  - id: TopBanner
+    name: 
+      key: tab_hot_2019q4_topbanner
+    enable: true
+    style: 1
+    dedup: false
+    minGrids: 0
+  - id: OffcRecomm
+    enable: true
+    style: 2
+    dedup: false
+    minGrids: 0
+  - id: Suggestion
+    name: 
+      key: tab_hot_2019q4_follow_suggestion
+    enable: true
+    style: 3
+    dedup: false
+    minGrids: 2
+  - id: GroupCall # GroupCall 
+    name:
+      key: group_stream_v3hotpage
+    enable: true
+    dedup: false  #重複
+    minGrids: 2
+    style: 9 
+    more: true
+  - id: AudioStream # AudioStream 聲播
+    name:
+      key: audio_stream_v3hotpage
+    enable: true
+    dedup: false
+    minGrids: 2
+    style: 3 
+    more: true
+  - id: NewestStreamer # D0 new streamer
+    name:
+      key: tab_hot_d0streamer
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+  - id: RedEnvelope # 熱播節目
+    name: 
+      key: tab_hot_2019q4_redenvelop
+    enable: true
+    minGrids: 2
+    style: 3

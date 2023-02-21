@@ -1,0 +1,253 @@
+
+# labelInfos defines all label related infos including type, label(i18n), iconURL
+# - type: 1(music), 2(politics)
+# - featured: true / false (default)
+# - labelID: mapping for labels table id
+
+labelInfos:
+  - id: "17tv" # 17看節目
+    type: 2
+    label:
+      key: "streamer_label_17tv"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+  - id: "acoustic" # 彈唱歌手
+    type: 1
+    label:
+      key: "streamer_label_acoustic"
+    iconURL: "https://assets-17app.akamaized.net/5d8e75a0-37a7-472b-a8b5-dd8aef279e0c.png"
+    labelID: 105
+    order: 70
+  - id: "player" # 演奏達人
+    type: 1
+    label:
+      key: "streamer_label_player"
+    iconURL: "https://assets-17app.akamaized.net/517c138d-54d9-4713-a931-06c9af7e53b9.png"
+    featured: true
+    labelID: 106
+    order: 80
+  - id: "singer" # 實力歌手
+    type: 1
+    label:
+      key: "streamer_label_singer"
+    iconURL: "https://assets-17app.akamaized.net/15244be5-38f1-4a31-b703-9a4d1402e5d4.png"
+    featured: true
+    labelID: 107
+    order: 60
+  - id: "pundit" # 政治名嘴
+    type: 2
+    label:
+      key: "streamer_label_pundit"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    labelID: 108
+    order: 100
+  - id: "street_artist" # 街頭藝人
+    type: 3
+    label:
+      key: "streamer_label_street_artist"
+    iconURL: "https://assets-17app.akamaized.net/0b888fc8-9d1f-4e05-8393-e1b946b554d4.png"
+    labelID: 52
+    order: 90
+  - id: "model" # 模特兒
+    type: 3
+    label:
+      key: "streamer_label_model"
+    iconURL: "https://assets-17app.akamaized.net/c42127e4-db4f-4e98-938d-05f3afcb8b82.png"
+    labelID: 103
+    order: 50
+  - id: "dj"
+    type: 3
+    label:
+      key: "streamer_label_dj"
+    iconURL: "https://assets-17app.akamaized.net/1cc12ae2-31ef-4fac-88b7-542baf881995.png"
+    labelID: 85
+    order: 40
+  - id: "cheerleader" # 啦啦隊
+    type: 3
+    label:
+      key: "streamer_label_cheerleader"
+    iconURL: "https://assets-17app.akamaized.net/ef100b65-96bc-45e4-8f61-d91fd979b4fa.png"
+    labelID: 80
+    order: 30
+  - id: "campus" # 青春校園
+    type: 2
+    label:
+      key: "streamer_label_campus"
+    iconURL: "https://assets-17app.akamaized.net/44c31e3c-c7a1-4393-9b4b-119163aa3dea.png"
+    order: 2
+    isHide: true
+
+typeCheckIOSVersion: 3.59.0
+typeCheckAndroidVersion: 2.3.90
+
+# 探索頁面會出現的label
+exploreLabels:
+  - 17tv
+  - acoustic
+  - player
+  - singer
+  - pundit
+
+# 時事話題直播列表會出現的label
+topicTabLabels: []
+
+# labelWhiteList defines relation between label and user list
+labelWhiteList:
+  acoustic: # 彈唱歌手
+    - 375fcf50-8168-416e-9fa2-c9702a5ec08a # 宋少騫Zustin
+    - 558c7736-3677-4b17-8f94-1631a6870422 # 吳金隆Gino
+    - 671f4ff1-212a-4e7a-80e9-360103c3ab91 # 趙泓捷
+    - 4a771cdf-1fd6-4fcb-8186-73cc32ff5483 # 鍾鎮宇Justin
+    - 94728e88-feca-4ca9-9062-39e3d2f93467 # 小沙
+    - 73e8b839-a1ca-4b08-a51d-2b02ffdea153 # bellayayaya
+    - 2e780a8e-6685-496b-824a-171a27e89613 # kevtest1
+    - 115851d0-d202-47c5-9079-71d3e7f704f7 # 亮金金
+    - 21280e9c-e07d-4d1b-83b7-e591bc3b1056 # 我叫易小魚🐟🎤
+    - 2755452a-a0ec-4a3f-a83d-6db0634f62ae # 胡利基
+    - 604ec832-4884-47d6-beed-cf178cad1caa # 篠崎泫🎤篠崎是姓泫是名
+    - 60602fef-d6ee-4fb6-a38c-1ffd15b16c6f # 張語噥sammy
+    - 83821902-75d0-4c7a-86c4-0cf8590cc7d8 # 張聖子-小露Lucia
+    - c9fafa51-ab41-407f-9bac-6b5c9e201cd5 # 徐凱希cathy
+    - 88f52a35-d951-4beb-822c-ad3d7e8f479b # 🎤鐵肺美金💰
+    - b1e571ee-fce8-4ed2-add0-39f6a2844955 # momoisgood
+    - 431720ad-470c-4c38-97c8-f195f5bddf4b # kevtest3
+    - f188d0e6-0c70-49c4-8da1-e787f389bb4f # 劉子瑜的⛳任性父皇💛
+    - e257e914-5009-48d9-5e8b-3c6da3f2026f # lllt.summer
+    - 73e8b839-a1ca-4b08-a51d-2b02ffdea153 # bellayayaya
+    - 2c9ad019-2b31-4fb9-800d-fa518b51a74d # finn1
+    - 500514df-d764-44dd-7883-e1966d2ff634 # 小紫
+  player: # 演奏達人
+    - c9692e9a-d6af-4c3b-b2ba-9954f2fb748d # momoiscool
+    - bdadc787-0174-4189-8da8-6edc3390ebcf # kevtest2 不符合 feature
+    - 2e780a8e-6685-496b-824a-171a27e89613 # kevtest1 不符合 feature
+    - 4b35d0f0-f7fe-4bb8-a43d-9966872dd3b5 # qacontractor3
+    - 9692933f-079c-455a-94c5-13f0336c5070 # qacontractor4
+    - ef473bc6-3232-4024-b2e1-0bb98ad5f94a # qacontractor5
+    - 24c65a0b-2e5e-458a-aa3c-243fca4f2bd7 # 沒是多喝水
+    - 5435ae09-00d6-42a2-9a27-a173013a6eab # 多喝水沒事
+
+  singer: # 實力歌手
+    - 115851d0-d202-47c5-9079-71d3e7f704f7 # 亮金金
+    - 21280e9c-e07d-4d1b-83b7-e591bc3b1056 # 我叫易小魚🐟🎤
+    - 2755452a-a0ec-4a3f-a83d-6db0634f62ae # 胡利基
+    - 604ec832-4884-47d6-beed-cf178cad1caa # 篠崎泫🎤篠崎是姓泫是名
+    - 60602fef-d6ee-4fb6-a38c-1ffd15b16c6f # 張語噥sammy
+    - 83821902-75d0-4c7a-86c4-0cf8590cc7d8 # 張聖子-小露Lucia
+    - c9fafa51-ab41-407f-9bac-6b5c9e201cd5 # 徐凱希cathy
+    - 88f52a35-d951-4beb-822c-ad3d7e8f479b # 🎤鐵肺美金💰
+    - b1e571ee-fce8-4ed2-add0-39f6a2844955 # momoisgood
+    - 431720ad-470c-4c38-97c8-f195f5bddf4b # kevtest3
+    - f188d0e6-0c70-49c4-8da1-e787f389bb4f # 劉子瑜的⛳任性父皇💛
+    - e257e914-5009-48d9-5e8b-3c6da3f2026f # lllt.summer
+    - 73e8b839-a1ca-4b08-a51d-2b02ffdea153 # bellayayaya
+    - 2c9ad019-2b31-4fb9-800d-fa518b51a74d # finn1
+    - 500514df-d764-44dd-7883-e1966d2ff634 # 小紫
+    - 5435ae09-00d6-42a2-9a27-a173013a6eab # 多喝水沒事
+
+  pundit: # 政治名嘴
+    - 6172b2ec-dd28-4884-75fc-5415c85ba241 # astrocodeiris
+    - f72d13f1-59a4-4ac4-8958-2d64c569556f # 黃暐瀚17
+    - d62b9dcf-157f-4345-9c75-272f236573e8 # 3q陳柏惟
+    - f488e6f8-4980-4fb7-9502-f1a4a075e8b8 # 視網膜Retina
+    - 64960d5e-1631-4d55-9cd6-66c7ecfb6eef # 黃益中
+    - 05443983-3a37-4348-9156-44a75a8af360 # wtfvc5
+    - e0bf404e-7d39-431d-93d1-868a44b324cc # kevtest4
+  
+  17tv: #  17看節目
+    - d4fa2189-be5b-4351-8dc6-3793b3e79593
+    - 2fdb9f0f-cdc3-4eb4-a8af-ff1c261a2369
+    - 8f95a285-104e-4ea5-ae58-00cca785247a
+    - ad9a4ee5-e7eb-47f0-8ef4-727b286aa48f
+    - cef2923e-cc43-4577-a33e-ef89e619a12a
+    - e0d68bc2-03c1-4a38-a149-ee65d0089036
+
+  campus: # 青春校園
+    - "565f824c-6cb4-11ea-bc55-0242ac130003"    # baas_e2e_bot_tw
+
+useNewLabelWhiteList: true
+# newLabelWhiteList defines relation between label and user list
+# sample example
+# newLabelWhiteList:
+#   acoustic:
+#     - startTime: "2002-05-23 00:00:00 (GMT+0800)" (If you want to set the interval, the start time and end time must be set)
+#       endTime: "2003-12-31 23:59:59 (GMT+0800)" (If one is not set, this list will not take effect)
+#       userList:
+#         - userID0
+#     - userList: (If the start time and end time are not set, it will take effect directly without restriction)
+#       - userID0
+newLabelWhiteList:
+  acoustic: # 彈唱歌手
+    - userList:
+      - 375fcf50-8168-416e-9fa2-c9702a5ec08a # 宋少騫Zustin
+      - 558c7736-3677-4b17-8f94-1631a6870422 # 吳金隆Gino
+      - 671f4ff1-212a-4e7a-80e9-360103c3ab91 # 趙泓捷
+      - 4a771cdf-1fd6-4fcb-8186-73cc32ff5483 # 鍾鎮宇Justin
+      - 94728e88-feca-4ca9-9062-39e3d2f93467 # 小沙
+      - 73e8b839-a1ca-4b08-a51d-2b02ffdea153 # bellayayaya
+      - 2e780a8e-6685-496b-824a-171a27e89613 # kevtest1
+      - 115851d0-d202-47c5-9079-71d3e7f704f7 # 亮金金
+      - 21280e9c-e07d-4d1b-83b7-e591bc3b1056 # 我叫易小魚🐟🎤
+      - 2755452a-a0ec-4a3f-a83d-6db0634f62ae # 胡利基
+      - 604ec832-4884-47d6-beed-cf178cad1caa # 篠崎泫🎤篠崎是姓泫是名
+      - 60602fef-d6ee-4fb6-a38c-1ffd15b16c6f # 張語噥sammy
+      - 83821902-75d0-4c7a-86c4-0cf8590cc7d8 # 張聖子-小露Lucia
+      - c9fafa51-ab41-407f-9bac-6b5c9e201cd5 # 徐凱希cathy
+      - 88f52a35-d951-4beb-822c-ad3d7e8f479b # 🎤鐵肺美金💰
+      - b1e571ee-fce8-4ed2-add0-39f6a2844955 # momoisgood
+      - 431720ad-470c-4c38-97c8-f195f5bddf4b # kevtest3
+      - f188d0e6-0c70-49c4-8da1-e787f389bb4f # 劉子瑜的⛳任性父皇💛
+      - e257e914-5009-48d9-5e8b-3c6da3f2026f # lllt.summer
+      - 73e8b839-a1ca-4b08-a51d-2b02ffdea153 # bellayayaya
+      - 2c9ad019-2b31-4fb9-800d-fa518b51a74d # finn1
+      - 500514df-d764-44dd-7883-e1966d2ff634 # 小紫
+  player: # 演奏達人
+    - userList:
+      - c9692e9a-d6af-4c3b-b2ba-9954f2fb748d # momoiscool
+      - bdadc787-0174-4189-8da8-6edc3390ebcf # kevtest2 不符合 feature
+      - 2e780a8e-6685-496b-824a-171a27e89613 # kevtest1 不符合 feature
+      - 4b35d0f0-f7fe-4bb8-a43d-9966872dd3b5 # qacontractor3
+      - 9692933f-079c-455a-94c5-13f0336c5070 # qacontractor4
+      - ef473bc6-3232-4024-b2e1-0bb98ad5f94a # qacontractor5
+      - 24c65a0b-2e5e-458a-aa3c-243fca4f2bd7 # 沒是多喝水
+      - 5435ae09-00d6-42a2-9a27-a173013a6eab # 多喝水沒事
+
+  singer: # 實力歌手
+    - userList:
+      - 115851d0-d202-47c5-9079-71d3e7f704f7 # 亮金金
+      - 21280e9c-e07d-4d1b-83b7-e591bc3b1056 # 我叫易小魚🐟🎤
+      - 2755452a-a0ec-4a3f-a83d-6db0634f62ae # 胡利基
+      - 604ec832-4884-47d6-beed-cf178cad1caa # 篠崎泫🎤篠崎是姓泫是名
+      - 60602fef-d6ee-4fb6-a38c-1ffd15b16c6f # 張語噥sammy
+      - 83821902-75d0-4c7a-86c4-0cf8590cc7d8 # 張聖子-小露Lucia
+      - c9fafa51-ab41-407f-9bac-6b5c9e201cd5 # 徐凱希cathy
+      - 88f52a35-d951-4beb-822c-ad3d7e8f479b # 🎤鐵肺美金💰
+      - b1e571ee-fce8-4ed2-add0-39f6a2844955 # momoisgood
+      - 431720ad-470c-4c38-97c8-f195f5bddf4b # kevtest3
+      - f188d0e6-0c70-49c4-8da1-e787f389bb4f # 劉子瑜的⛳任性父皇💛
+      - e257e914-5009-48d9-5e8b-3c6da3f2026f # lllt.summer
+      - 73e8b839-a1ca-4b08-a51d-2b02ffdea153 # bellayayaya
+      - 2c9ad019-2b31-4fb9-800d-fa518b51a74d # finn1
+      - 500514df-d764-44dd-7883-e1966d2ff634 # 小紫
+      - 5435ae09-00d6-42a2-9a27-a173013a6eab # 多喝水沒事
+
+  pundit: # 政治名嘴
+    - userList:
+      - 6172b2ec-dd28-4884-75fc-5415c85ba241 # astrocodeiris
+      - f72d13f1-59a4-4ac4-8958-2d64c569556f # 黃暐瀚17
+      - d62b9dcf-157f-4345-9c75-272f236573e8 # 3q陳柏惟
+      - f488e6f8-4980-4fb7-9502-f1a4a075e8b8 # 視網膜Retina
+      - 64960d5e-1631-4d55-9cd6-66c7ecfb6eef # 黃益中
+      - 05443983-3a37-4348-9156-44a75a8af360 # wtfvc5
+      - e0bf404e-7d39-431d-93d1-868a44b324cc # kevtest4
+  
+  17tv: #  17看節目
+    - userList:
+      - d4fa2189-be5b-4351-8dc6-3793b3e79593
+      - 2fdb9f0f-cdc3-4eb4-a8af-ff1c261a2369
+      - 8f95a285-104e-4ea5-ae58-00cca785247a
+      - ad9a4ee5-e7eb-47f0-8ef4-727b286aa48f
+      - cef2923e-cc43-4577-a33e-ef89e619a12a
+      - e0d68bc2-03c1-4a38-a149-ee65d0089036
+
+  campus: # 青春校園
+    - userList:
+      - "565f824c-6cb4-11ea-bc55-0242ac130003"    # baas_e2e_bot_tw

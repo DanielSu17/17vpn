@@ -1,0 +1,71 @@
+## deprecate below after 17media/api#15608 deploy to prod
+newAppleIDLogicVersion: "3.115.0"
+
+loginFromMongoSecondary: true
+registerFromMongoSecondary: true
+## deprecate above
+
+registerAutoFollow: true
+recommendAutoFollow:
+  oldClientEnable: false # for device version less than or equal to the minimum required version
+  newClientEnable: true # for device version greater than the minimum required version
+  minIOSVersionRequired: "0"
+  minAndroidVersionRequired: "0"
+registerRecommend: true
+completeFollowUsers: []
+completeFollowUsersMap:
+completeFollowUsersNum: 0
+# FACEBOOK: 1
+# TWITTER:  5
+# LINE:     6
+# GOOGLE:   7
+# APPLE:    8
+# PHONE:    10
+providers:
+  - 6
+  - 8
+  - 7
+  - 5
+  - 1
+  - 10
+androidProviders:
+  - 7
+  - 6
+  - 1
+  - 5
+  - 10
+iosProviders:
+  - 6
+  - 8
+  - 7
+  - 5
+  - 1
+  - 10
+
+# 1 - audienceIntro
+# 2 - streamerIntro
+# 3 - premiumContentIntro
+valuePropIntroImages:
+  1: https://cdn.17app.co/d9e1f9df-67cb-40f3-91ea-99fa9bb7ea23.png
+  2: https://cdn.17app.co/e0c09eb1-e8e8-42d2-ab9d-bb472fecb879.png
+  3: https://cdn.17app.co/fe3379b4-ebca-429f-88d0-bc08647bad3f.png
+
+valuePropIntroImagesOrdering:
+  - 1
+  - 2
+  - 3
+
+# 1 - audienceIntro
+# 2 - streamerIntro
+# 3 - premiumContentIntro
+valuePropIntroImageSets:
+  # groupA image set
+  a:
+    1: https://cdn.17app.co/d9e1f9df-67cb-40f3-91ea-99fa9bb7ea23.png
+    2: https://cdn.17app.co/e0c09eb1-e8e8-42d2-ab9d-bb472fecb879.png
+    3: https://cdn.17app.co/fe3379b4-ebca-429f-88d0-bc08647bad3f.png
+  # groupB image set
+  b:
+    1: https://cdn.17app.co/d9e1f9df-67cb-40f3-91ea-99fa9bb7ea23.png
+    2: https://cdn.17app.co/e0c09eb1-e8e8-42d2-ab9d-bb472fecb879.png
+    3: https://cdn.17app.co/fe3379b4-ebca-429f-88d0-bc08647bad3f.png

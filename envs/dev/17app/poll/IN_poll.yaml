@@ -1,0 +1,44 @@
+# Poll setting
+# MUST make sure that corresponding gift ids exist in gift database
+# In this case, they should be poll_option_{a|b|c|d|e}_{30|99|199|399|599|3999} by the value of giftIDTempalte
+minTTL: 1
+# maxTTL(minutes) should be smaller than maxDurationHour(hours) in the general.yaml
+maxTTL: 60
+maxTitleDescLen: 20
+maxOptDescLen: 10
+minOptionCount: 2
+maxOptionCount: 5
+freeVoteEnable: true
+freeVoteWhitelist: []
+availableLimit:
+  mins: 1
+  count: 5
+freeVoteAndroidVersion: 2.3.66
+freeVoteIOSVersion: 3.43.0
+defaultPrice: 99
+enableFreePriceForOfficialTopics: true # 官方話題可選擇0點
+availablePrice:
+  30:
+  99:
+  199:
+  399:
+  599:
+  3999:
+availableOptionID:
+  - poll_option_a
+  - poll_option_b
+  - poll_option_c
+  - poll_option_d
+  - poll_option_e
+giftIDTemplate: '{{.OptionID}}_{{.Price}}'
+hotTopic: "today_hot_topic"
+topics:
+  - tag: "男女"
+    title: "約會花費是否該平分？"
+    options: ["當然啊", "都我出"]
+  - tag: "男女"
+    title: "能接受另一半用交友軟體嗎？"
+    options: ["可以啊", "麥肖想"]
+  - tag: "價值觀"
+    title: "相不相信星座命理？"
+    options: ["我覺得很準", "自己的命運自己掌握"]

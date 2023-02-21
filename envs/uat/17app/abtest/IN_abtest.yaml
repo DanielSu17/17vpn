@@ -1,0 +1,1293 @@
+- testName: dailyPoker # DAU-Project
+  enableABtest: true
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: entryTitleTypeA # PROD-3617
+  enableABtest: true
+  expiredSecond: 604800
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
+- testName: entryTitleTypeB # PROD-3617
+  enableABtest: true
+  expiredSecond: 604800
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: autoEnterLive
+  enableABtest: false
+  expiredSecond: 604800 # 7 day
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: recommendFollow
+  enableABtest: true
+  expiredSecond: 604800 # 7 day
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: newbieFocus # 消除雜訊
+  enableABtest: false
+  expiredSecond: 86400 # 1 day
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: newbieGuidance # 新手引導(新手遮罩)
+  enableABtest: true
+  expiredSecond: 259200 # 3 days
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: completeRegistration
+  enableABtest: true
+  expiredSecond: 10 # 10 second
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: newbieIAP # 新手首購優惠
+  enableABtest: false
+  expiredSecond: 604800 # 7 days
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: streamRoomEntryTitle # 直播間入口標題
+  enableABtest: false
+  lastCharGroup:
+    "0": "a"
+    "1": "b"
+    "2": "a"
+    "3": "b"
+    "4": "a"
+    "5": "b"
+    "6": "a"
+    "7": "b"
+    "8": "a"
+    "9": "b"
+    "a": "a"
+    "b": "b"
+    "c": "a"
+    "d": "b"
+    "e": "a"
+    "f": "b"
+- testName: newbiePurchaseEvent # 新手首購活動
+  enableABtest: false
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: newbieOnboard # 新手流程優化 (onboarding_flow_optimization)
+  enableABtest: true
+  expiredSecond: 604800 # 7 day
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
+# 新手流程優化p5 (Feature Guide), 四頁, client只有當a才顯示 空的也是不顯示
+- testName: newbieGuide
+  enableABtest: false
+  expiredSecond: 604800 # 7 day
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
+# Phase 7: 台灣強化新用戶引導
+# Note: abtestNewbieGuidance必需是B 且newbieDismissDialog不能開
+- testName: newbiePhase7
+  enableABtest: false
+  expiredSecond: 600 # 10 mins, it should disappear soon.
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+# Day 0 user filter cell, subtabs, banner and covergirl
+- testName: newbieSimplifyDay0UserPhase1
+  enableABtest: false
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
+# 新手流程優化P10: 新手任務彈窗
+- testName: newbieP10MissionHint
+  enableABtest: true
+  expiredSecond: 604800 # 7 day
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+# 新手流程優化P10: 新手完成特定數量後PN檢查
+- testName: newbieP10CheckPNWhenReceivedReward
+  enableABtest: true
+  expiredSecond: 604800 # 7 day
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+# 新手流程優化P10: group b時取消新手直播間內蓋板教學
+#- testName: newbieP10DisableEnterLivePrompt
+#  enableABtest: false
+#  expiredSecond: 604800 # 7 day
+#  lastCharGroup:
+#    "0": "a"
+#    "1": "a"
+#    "2": "a"
+#    "3": "a"
+#    "4": "a"
+#    "5": "a"
+#    "6": "a"
+#    "7": "a"
+#    "8": "a"
+#    "9": "a"
+#    "a": "a"
+#    "b": "a"
+#    "c": "a"
+#    "d": "a"
+#    "e": "a"
+#    "f": "a"
+# 新手流程優化P10: group b時取消新手直播間內蓋板教學 (with stream toast removal a/b)
+- testName: newbieP10DisableEnterLivePrompt
+  enableABtest: true
+  expiredSecond: 1209600 # 14 day
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+# 熱門頁2019Q4新手: group b時將feature hot2019Q4打開
+- testName: newbieHot2019Q4Tab
+  enableABtest: false
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+# 熱門頁 hotOpt隱藏: group b強制關閉feature hotOpt
+- testName: newbieDismissHotOpt
+  enableABtest: false
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+#group b is enabled to show caption
+- testName: streamCaption
+  enableABtest: false
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+#StreamerMission a/b test
+- testName: streamerMissionTest
+  enableABtest: false
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
+# 開播前可設定直播間入口圖片: group b 可設定圖片
+- testName: streamThumbnail
+  enableABtest: false
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+# 登入獎勵: 0~7 group a, 8~f group b
+- testName: signInRewardAB
+  enableABtest: true
+  startTime: "2020-10-12T12:00:00+08:00"
+  endTime: "2020-11-11T12:00:00+08:00"
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+# 登入獎勵: 0~7 group a, 8~f group b
+- testName: signInRewardBC
+  enableABtest: true
+  startTime: "2020-10-12T12:00:00+08:00"
+  endTime: "2020-11-11T12:00:00+08:00"
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
+
+# - testName: iapPackageTest
+#   enableABtest: true
+#   startTime: "2020-07-01T00:00:00+08:00"
+#   endTime: "2020-07-13T23:59:59+08:00"
+#   lastCharGroup:
+#     "0": "b"
+#     "1": "b"
+#     "2": "b"
+#     "3": "b"
+#     "4": "b"
+#     "5": "b"
+#     "6": "b"
+#     "7": "b"
+#     "8": "b"
+#     "9": "b"
+#     "a": "b"
+#     "b": "b"
+#     "c": "b"
+#     "d": "b"
+#     "e": "b"
+#     "f": "b"
+- testName: pushNotificationAfterRegistration
+  enableABtest: false
+  byAdvertisementID: true
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: pushNotificationNoFollowBanner
+  enableABtest: false
+  byAdvertisementID: true
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: pushNotificationFollowButton
+  enableABtest: false
+  byAdvertisementID: true
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+# 直播間導購abtest: group b 有直播間導購彈窗、禮包貼紙
+- testName: iapPromotion
+  enableABtest: true
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: newPushNotificationLayout
+  enableABtest: false
+  startTime: "2020-10-12T10:00:00+08:00"
+  endTime: "2020-10-28T00:00:00+08:00"
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+# 付費點心
+- testName: laborRewardWithPremium
+  enableABtest: true
+  startTime: "2020-08-13T11:00:00+08:00"
+  endTime: "2022-08-28T11:00:00+08:00"
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: removeDefaultComment
+  enableABtest: true
+  #  startTime: "2020-12-03T12:00:00+08:00"
+  #  endTime: "2020-12-18T12:00:00+08:00"
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+# 留言關鍵字建議禮物
+- testName: contextualGifting
+  enableABtest: false
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+# topic modeling
+- testName: topicModeling
+  enableABtest: false
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+- testName: newbieStreamGuide
+  enableABtest: false
+  expiredSecond: 172800 # 2 days
+  lastCharGroup:
+    "0": "c"
+    "1": "c"
+    "2": "c"
+    "3": "c"
+    "4": "c"
+    "5": "c"
+    "6": "c"
+    "7": "c"
+    "8": "c"
+    "9": "c"
+    "a": "c"
+    "b": "c"
+    "c": "c"
+    "d": "c"
+    "e": "c"
+    "f": "c"
+- testName: uiRefresh2020Q3
+  enableABtest: true
+  # startTime: "2020-12-03T12:00:00+08:00"
+  # endTime: "2021-04-28T12:00:00+08:00"
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
+- testName: recommendationSystem
+  enableABtest: true
+  startTime: "2021-02-09T12:00:00+08:00"
+  endTime: "2100-12-31T23:59:59+08:00"
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+#   extraNewbieABtest:
+#     startTime: "2021-02-09T12:00:00+08:00"
+#     endTime: "2100-12-31T23:59:59+08:00"
+#     lastCharGroup:
+#         "0": "b"
+#         "1": "b"
+#         "2": "b"
+#         "3": "b"
+#         "4": "b"
+#         "5": "b"
+#         "6": "b"
+#         "7": "b"
+#         "8": "a"
+#         "9": "a"
+#         "a": "a"
+#         "b": "a"
+#         "c": "a"
+#         "d": "a"
+#         "e": "a"
+#         "f": "a"
+
+- testName: avatarPartialRelease
+  enableABtest: true
+  startTime: "2021-02-22T17:30:00+08:00"
+  endTime: "2022-12-31T23:59:59+08:00"
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
+- testName: uiRefreshStreamerConfig
+  enableABtest: true
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
+# group A does NOT SHOW the prompt
+# group B SHOWS the prompt
+- testName: attPrompt
+  enableABtest: true
+  byDeviceID: true
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+# - testName: registerRecommendationSystem
+#   enableABtest: true
+#   lastCharGroup:
+#     "0": "c"
+#     "1": "c"
+#     "2": "c"
+#     "3": "c"
+#     "4": "c"
+#     "5": "c"
+#     "6": "c"
+#     "7": "c"
+#     "8": "c"
+#     "9": "c"
+#     "a": "c"
+#     "b": "c"
+#     "c": "c"
+#     "d": "c"
+#     "e": "c"
+#     "f": "c"
+
+# group A is ordered by achievement
+# group B is ordered by ML scores
+#         [ Existing users ]       |      [ New users ]      |
+# ---------------------------------|-------------------------|
+#                                  ^ 2021-04-13 12:00        ^ 2021-06-21 16:00
+- testName: mlSectionOrder
+  enableABtest: true
+  # new users between the AB test
+  startTime: "2021-06-07T16:00:00+08:00"
+  endTime: "2100-12-31T23:59:59+08:00"
+  lastCharGroup: # existing users
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
+  extraNewbieABtest:
+    # existing users before the AB test
+    startTime: "2021-04-13T12:00:00+08:00"
+    endTime: "2100-12-31T23:59:59+08:00"
+    lastCharGroup: # new users
+      "0": "b"
+      "1": "b"
+      "2": "b"
+      "3": "b"
+      "4": "b"
+      "5": "b"
+      "6": "b"
+      "7": "b"
+      "8": "a"
+      "9": "a"
+      "a": "a"
+      "b": "a"
+      "c": "a"
+      "d": "a"
+      "e": "a"
+      "f": "a"
+
+# group A uses static register labels
+# group B uses dynamic register labels
+- testName: dynamicSectionOrder
+  enableABtest: true
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
+- testName: newUserWelcome
+  enableABtest: true
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
+# group A go to original registration flow
+# group B go to new registration flow
+- testName: newRegistrationFlow
+  enableABtest: true
+  byDeviceID: true
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
+# group A: Enable newbie toast in the Stream Room
+# group B: Disable newbie toast in the Stream Room
+- testName: newbieFriendly
+  enableABtest: true
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
+# group A: Disable streamline navigation circle section
+# group B: Enable streamline navigation circle section
+- testName: streamlineNavigationCircleSection
+  enableABtest: true
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
+# group A: Disable genreLive page
+# group B: Enable genreLive page
+- testName: genreLive
+  enableABtest: true
+  changeDefaultTab: true
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
+
+# group A: Disable genreLive page promotion area
+# group B: Enable genreLive page promotion area
+- testName: genreLivePromotionArea
+  enableABtest: true
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
+# group A disable value prop intro
+# group B enable value prop intro
+- testName: valuePropIntro
+  enableABtest: true
+  byAdvertisementID: true
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
+# group A keep default behavior
+# group B skip auto-follow page during onboarding flow
+# JIRA: APP-29027
+- testName: onboardingStreamerRecommendFlowType
+  enableABtest: true
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
+# group A keep default behavior
+# group B suppress display of the Daily Quest sign-in popup
+# JIRA: APP-29028
+- testName: suppressDailyQuestSignInPopup
+  enableABtest: true
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
+
+# group A keep default behavior
+# group B Disable newbie missions
+# JIRA: APP-29029
+- testName: disableNewbieMissions
+  enableABtest: true
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
+
+# for APP-30224: Onboarding interest selector
+# group A uses original skin
+# group B uses new interest selector skin
+- testName: onboardingInterestSelector
+  enableABtest: true
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
+# Image set selector for value prop intro
+# JIRA: APP-33257
+- testName: valuePropIntroImageSet
+  enableABtest: true
+  byAdvertisementID: true
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "a"
+    "9": "a"
+    "a": "a"
+    "b": "a"
+    "c": "a"
+    "d": "a"
+    "e": "a"
+    "f": "a"
+
+# group A: Keep old navigation and cell tab list
+# group B: NavigationReorganization and cell tab list("genre_live", "event", "17liveplus_tab")
+# JIRA: APP-35528
+- testName: navigationReorganization
+  enableABtest: false
+  startTime: "2022-04-06T11:00:00+08:00"
+  endTime: "2100-12-31T23:59:59+08:00"
+  lastCharGroup:
+    "0": "b"
+    "1": "b"
+    "2": "b"
+    "3": "b"
+    "4": "b"
+    "5": "b"
+    "6": "b"
+    "7": "b"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"
+
+# group A: Keep OpenID Setup for pre-registration
+# group B: Remove OpenID Setup for pre-registration
+# JIRA: APP-39379
+- testName: removeRegSetupOpenID
+  enableABtest: true
+  startTime: "2022-05-23T11:00:00+08:00"
+  endTime: "2100-12-31T23:59:59+08:00"
+  lastCharGroup:
+    "0": "a"
+    "1": "a"
+    "2": "a"
+    "3": "a"
+    "4": "a"
+    "5": "a"
+    "6": "a"
+    "7": "a"
+    "8": "b"
+    "9": "b"
+    "a": "b"
+    "b": "b"
+    "c": "b"
+    "d": "b"
+    "e": "b"
+    "f": "b"

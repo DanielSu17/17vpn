@@ -1,0 +1,26 @@
+# sign in to specified streamers in regions in time range.
+# be awared that you can defined more than one settings,
+# but the time range can not overlap.
+# if no any valid settings or you remove out this structure,
+# it'll fallback to and leverage disableSignInHottest setting.
+# a complete setting is like:
+# - userID:
+#   skipRewardUI: // if true, app will skip the rewardUI before entering liveStream
+#   timeSlots:
+#     - startTime:
+#       endTime:
+#
+# "disableSignInHottest" setting is under "dailyquest.yaml"
+#
+
+- userID: 2e8f17a3-1f90-4601-8949-ec3349ebcca2  #tubeking2
+  skipRewardUI: true
+  timeSlots:
+    - startTime: 2021-09-13 12:00:00 (GMT+0800)
+      endTime: 2021-09-17 23:30:00 (GMT+0800)
+
+- userID: ba6dfdc3-0c80-4a06-a7bc-364b5831565c  #holden12
+  skipRewardUI: true
+  timeSlots:
+    - startTime: 2020-06-09 19:00:00 (GMT+0800)
+      endTime: 2020-06-09 20:30:00 (GMT+0800)

@@ -1,0 +1,17 @@
+# - thumbnail: //分割背景縮圖，為 cdn 的 link，png or jpeg(This is the preview of the background filter.)
+# fps:         //靜態圖片必須為 0，動態圖片才要給 >0 的值(This is frame rate. Please have this number from desginer, and put 0 if the filter is static.)
+# startTime:   //開始時間
+# endTime:     //結束時間
+# disabled:    //true|false，預設false
+# url:         //分割背景圖檔，為 cdn 的 link，僅限 .zip檔(Ths zip file of the pngs or a png. Not the zip of the file.)
+# md5:         //是用來確認 client 這邊收到的 zip 檔案跟雲端上的是否一致(md5 coming from backend-bot.)
+# 在 backend-bot 使用指令 !file upload，跟著要傳送的 .jpg / .zip 一起發送，backend-bot 會回傳 url / md5
+
+
+- thumbnail: "https://cdn.17app.co/e0d457d1-ef86-4510-b68e-8177c6db994c.png"
+  fps: 11
+  startTime: "2021-02-22T17:30:00+08:00"
+  endTime: "2090-12-31T23:59:59+08:00"
+  disabled: false
+  url: "http://cdn.17app.co/4db17af6-ee41-4753-ae49-df54ce7c29a8.zip"
+  md5: "43cefe92c7312840b17a2b1d0aaa48d7"

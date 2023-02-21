@@ -1,0 +1,33 @@
+# - thumbnail: //分割背景縮圖，為 cdn 的 link，png or jpeg(This is the preview of the background filter.)
+# fps:         //靜態圖片必須為 0，動態圖片才要給 >0 的值(This is frame rate. Please have this number from desginer, and put 0 if the filter is static.)
+# startTime:   //開始時間
+# endTime:     //結束時間
+# disabled:    //true|false，預設false
+# url:         //分割背景圖檔，為 cdn 的 link，僅限 .zip檔(Ths zip file of the pngs or a png. Not the zip of the file.)
+# md5:         //是用來確認 client 這邊收到的 zip 檔案跟雲端上的是否一致(md5 coming from backend-bot.)
+# 在 backend-bot 使用指令 !file upload，跟著要傳送的 .jpg / .zip 一起發送，backend-bot 會回傳 url / md5
+
+
+- thumbnail: "https://cdn.17app.co/e65db39a-c622-4b48-8499-1476648652ff.png"
+  fps: 0
+  startTime: "2021-02-22T17:30:00+08:00"
+  endTime: "2090-12-31T23:59:59+08:00"
+  disabled: false
+  url: "https://cdn.17app.co/c7b411cf-bf2d-4cd7-a32c-409c81bba35f.zip"
+  md5: "c8ecc7bcc2891ff9f5bce1ffbf57b420"
+  
+- thumbnail: "https://cdn.17app.co/b151c71f-1e35-4b02-a9c1-9732646f6255.png"
+  fps: 0
+  startTime: "2021-02-22T17:30:00+08:00"
+  endTime: "2090-12-31T23:59:59+08:00"
+  disabled: false
+  url: "https://cdn.17app.co/bdf61e9d-188c-41a1-a87d-5a4127e6301e.zip"
+  md5: "02dff4d44a9ee36009fd8297b877d749"
+  
+- thumbnail: "https://cdn.17app.co/39fa193a-986c-4945-9dfb-acdb94f28552.png"
+  fps: 0
+  startTime: "2021-02-22T17:30:00+08:00"
+  endTime: "2090-12-31T23:59:59+08:00"
+  disabled: false
+  url: "https://cdn.17app.co/f9c9e946-4575-4fd7-ab6b-d452759b76e1.zip"
+  md5: "91ab02d555ebe236dc2e815830b494ab"

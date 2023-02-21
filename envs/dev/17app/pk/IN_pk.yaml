@@ -1,0 +1,87 @@
+enable: true
+enableAll: true
+enableContractedStreamer: true
+defaultAcceptChallenge: true
+maxPlayerAmount: 1000
+whiteList: []
+silenceList: []
+displayIconType: 2
+displayInvitationPictures: 1
+matchingRules:
+  levelRange:
+  - 10
+  - 20
+  winRate:
+  - 0
+  - 0.05
+  - 0.1
+minLevel: 0
+playList:
+  - id: friendPK
+    mode: 1
+    match: 2
+    url: "https://cdn.17app.co/78e3a44e-6de1-4136-a7e8-5281e94f1416.png"
+    title:
+      key: "pk_menu_friend_title"
+    description:
+      key: ""
+  - id: normalOneVOne
+    mode: 1
+    match: 1
+    url: "https://cdn.17app.co/73138b43-4fee-42d6-95a5-e5ae0437f839.png"
+    title:
+      key: "pk_menu_mode_title_random"
+    description:
+      key: ""
+
+# Determine whether to show friendPK option
+friendPK:
+  enable: true
+  versionControl:
+    ios: "3.211.0"
+    android: "2.126.0"
+
+schedulePK:
+  enable: true
+  versionControl:
+    ios: "3.214.1"
+    android: "2.129.1"
+
+revenge:
+  enable: true
+  versionControl:
+    ios: "3.214.1"
+    android: "2.129.1"
+
+# match: 1(random), 2(friend), 3(schedule)
+playListV2:
+  - match: 3
+    enableUI:
+      url: "https://cdn.17app.co/2b899af0-21f3-4908-b074-40ad342ce924.png"
+      title:
+        key: "pk_schedule_menu_title"
+      description:
+        key: "pk_schedule_menu_description"
+    disableUI:  # No disable UI
+  - match: 2
+    enableUI:
+      url: "https://cdn.17app.co/78e3a44e-6de1-4136-a7e8-5281e94f1416.png"
+      title:
+        key: "pk_menu_friend_title"
+    disableUI:
+      url: "https://cdn.17app.co/1c93ca00-68ca-44d2-8a81-ed09dc464168.png"
+      title:
+        key: "pk_menu_friend_title"
+      description:
+        key: "pk_schedule_menu_suspended1"
+  - match: 1
+    enableUI:
+      url: "https://cdn.17app.co/73138b43-4fee-42d6-95a5-e5ae0437f839.png"
+      title:
+        key: "pk_menu_mode_title_random"
+    disableUI:
+      url: "https://cdn.17app.co/63382c9c-5dab-411f-96d9-cc85666feb93.png"
+      title:
+        key: "pk_menu_mode_title_random"
+      description:
+        key: "pk_schedule_menu_suspended1"

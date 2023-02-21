@@ -1,0 +1,268 @@
+quiz:
+  bufferTime: 6
+hostID: "0e671b10-1660-419c-67f9-9983ebdbad38" # triviabot1
+hostIDOnTV: "94b56df0-336b-4968-7c41-88ec85246024" # 17好聰明SKODA
+
+hosts:
+  TRIVIA:
+  TRIVIA_ON_TV:
+    "f8b2ce67-5455-479b-9d8d-51217e0d98bb": # 挑戰吧大神
+      pictures:
+        default: http://cdn.17app.co/99bdc2d8-8178-413e-b9b0-50a76c5de476.png
+        prepare: http://cdn.17app.co/99bdc2d8-8178-413e-b9b0-50a76c5de476.png
+        onLive: http://cdn.17app.co/99bdc2d8-8178-413e-b9b0-50a76c5de476.png
+        # default user picture for users without picture
+        user: 857dc12d-46c9-4c63-b3c4-ee8fd1a2eb57.png
+      showBannerTime:
+        weekdays: [0,1,2,3,4,5,6] # 0 ~ 6 means Sunday ~ Saturday
+        hourFrom: 0 # GMT+8
+        hourTo: 23 # GMT+8
+      showBannerPriority: 0
+      disclaimerTitle:
+        key: "trivia_tv_disclaimer_title"
+      disclaimerText:
+        key: "trivia_tv_disclaimer_text"
+      leaveGameToastText:
+        key: "trivia_tv_gamer_leave_double_confirm_text"
+      voteTopic:
+        key: "trivia_tv_vote_topic"
+      shareWording:
+        key: "trivia_tv_share_wording"
+      leftTopDisplayStyle: 0 #這個值改成1，會顯示成就值；改成0或不設定，會顯示觀看人數       
+      isMedalSupported:
+        Default: true
+        CorrectMost: true
+
+    "6e9af721-55c5-41d7-91a4-387aceec94a6": #17Q限時答題搶獎金
+      pictures:
+        default: https://assets-17app.akamaized.net/62b6058b-b226-4ba1-aca7-f9aca43a80fb.jpg
+        prepare: https://assets-17app.akamaized.net/62b6058b-b226-4ba1-aca7-f9aca43a80fb.jpg
+        onLive: https://assets-17app.akamaized.net/62b6058b-b226-4ba1-aca7-f9aca43a80fb.jpg
+        # default user picture for users without picture
+        user: 857dc12d-46c9-4c63-b3c4-ee8fd1a2eb57.png
+      showBannerTime:
+        weekdays: [0,1,2,3,4,5,6] # 0 ~ 6 means Sunday ~ Saturday
+        hourFrom: 0 # GMT+8
+        hourTo: 23 # GMT+8
+      showBannerPriority: 1
+      disclaimerTitle:
+        key: "trivia_tv_cts_news_disclaimer_title"
+      disclaimerText:
+        key: "trivia_tv_cts_news_disclaimer_text"
+      leaveGameToastText:
+        key: "trivia_tv_cts_news_gamer_leave_double_confirm_text"
+      voteTopic:
+        key: "trivia_tv_cts_news_vote_topic"
+      shareWording:
+        key: "trivia_tv_cts_news_share_wording"
+      leftTopDisplayStyle: 1
+      isMedalSupported:
+        Default: true
+        CorrectMost: true
+
+    "8f95a285-104e-4ea5-ae58-00cca785247a": # 台視17Q,台視17唱,17估價王
+      pictures:
+        default: https://cdn.17app.co/2a4890fc-d08c-4f2d-90a3-6550946cdc9a.png
+        prepare: https://cdn.17app.co/2a4890fc-d08c-4f2d-90a3-6550946cdc9a.png
+        onLive: https://cdn.17app.co/2a4890fc-d08c-4f2d-90a3-6550946cdc9a.png
+        # default user picture for users without picture
+        user: 857dc12d-46c9-4c63-b3c4-ee8fd1a2eb57.png
+      showBannerTime:
+        weekdays: [0,1,2,3,4,5,6] # 0 ~ 6 means Sunday ~ Saturday
+        hourFrom: 0 # GMT+8
+        hourTo: 23 # GMT+8
+      showBannerPriority: 2
+      disclaimerTitle:
+        key: "trivia_tv_disclaimer_title"
+      disclaimerText:
+        key: "trivia_tv_disclaimer_text"
+      leaveGameToastText:
+        key: "trivia_tv_gamer_leave_double_confirm_text"
+      voteTopic:
+        key: "trivia_tv_vote_topic"
+      shareWording:
+        key: "trivia_tv_share_wording"
+      isMedalSupported:
+        Default: false
+        CorrectMost: false
+      leftTopDisplayStyle: 1 #這個值改成1，會顯示成就值；改成0或不設定，會顯示觀看人數
+
+    "91ce0188-caed-4fb1-95cb-98e0d84fa5e1": #17QHBL知識王
+      pictures:
+        default: https://assets-17app.akamaized.net/060e3bba-03bd-45ef-a718-ab3744b2aeb4.jpg
+        prepare: https://assets-17app.akamaized.net/060e3bba-03bd-45ef-a718-ab3744b2aeb4.jpg
+        onLive: https://assets-17app.akamaized.net/060e3bba-03bd-45ef-a718-ab3744b2aeb4.jpg
+        # default user picture for users without picture
+        user: 857dc12d-46c9-4c63-b3c4-ee8fd1a2eb57.png
+      showBannerTime:
+        weekdays: [0,1,2,3,4,5,6] # 0 ~ 6 means Sunday ~ Saturday
+        hourFrom: 0 # GMT+8
+        hourTo: 23 # GMT+8
+      showBannerPriority: 3
+      disclaimerTitle:
+        key: "trivia_tv_cti_travel_disclaimer_title"
+      disclaimerText:
+        key: "trivia_tv_cti_travel_disclaimer_text"
+      leaveGameToastText:
+        key: "trivia_tv_cti_travel_gamer_leave_double_confirm_text"
+      voteTopic:
+        key: "trivia_tv_cti_travel_vote_topic"
+      shareWording:
+        key: "trivia_tv_cti_travel_share_wording"
+      leftTopDisplayStyle: 0
+      isMedalSupported:
+        Default: true
+        CorrectMost: true
+        
+    "d4fa2189-be5b-4351-8dc6-3793b3e79593": #17嘴一波
+      pictures:
+        default: https://assets-17app.akamaized.net/b794d78d-8fbc-4aaf-a5c6-8926445e5bb2.jpg
+        prepare: https://assets-17app.akamaized.net/b794d78d-8fbc-4aaf-a5c6-8926445e5bb2.jpg
+        onLive:  https://assets-17app.akamaized.net/b794d78d-8fbc-4aaf-a5c6-8926445e5bb2.jpg
+        # default user picture for users without picture
+        user: 857dc12d-46c9-4c63-b3c4-ee8fd1a2eb57.png
+      showBannerTime:
+        weekdays: [1] # 0 ~ 6 means Sunday ~ Saturday
+        hourFrom: 4 # GMT+8
+        hourTo: 5 # GMT+8
+      showBannerPriority: 4
+      disclaimerTitle:
+        key: "trivia_tv_disclaimer_title"
+      disclaimerText:
+        key: "trivia_tv_disclaimer_text"
+      leaveGameToastText:
+        key: "trivia_tv_gamer_leave_double_confirm_text"
+      voteTopic:
+        key: "trivia_tv_vote_topic"
+      shareWording:
+        key: "trivia_tv_share_wording"
+      leftTopDisplayStyle: 1
+      isMedalSupported:
+        Default: true
+        CorrectMost: true
+        
+    "c21f1749-b48d-43fd-b3e3-32c5edf169e9": #17趣郊遊
+      pictures:
+        default: https://cdn.17app.co/00f2a636-07a7-4397-bc45-596aa4646723.png
+        prepare: https://cdn.17app.co/00f2a636-07a7-4397-bc45-596aa4646723.png
+        onLive: https://cdn.17app.co/00f2a636-07a7-4397-bc45-596aa4646723.png
+        # default user picture for users without picture
+        user: 857dc12d-46c9-4c63-b3c4-ee8fd1a2eb57.png
+      showBannerTime:
+        weekdays: [0,1,2,3,4,5,6] # 0 ~ 6 means Sunday ~ Saturday
+        hourFrom: 0 # GMT+8
+        hourTo: 23 # GMT+8
+      showBannerPriority: 5
+      disclaimerTitle:
+        key: "trivia_disclaimer_title"
+      disclaimerText:
+        key: "trivia_disclaimer_text"
+      leaveGameToastText:
+        key: "trivia_gamer_leave_double_confirm_text"
+      voteTopic:
+        key: "trivia_tv_vote_topic"
+      shareWording:
+        key: "trivia_game_share_wording"
+      leftTopDisplayStyle: 1
+      isMedalSupported:
+        Default: true
+        CorrectMost: true
+
+    "ff3c301a-feae-4241-9705-518b3ccab24a": #金牌17Q
+      pictures:
+        default: https://cdn.17app.co/00f2a636-07a7-4397-bc45-596aa4646723.png
+        prepare: https://cdn.17app.co/00f2a636-07a7-4397-bc45-596aa4646723.png
+        onLive: https://cdn.17app.co/00f2a636-07a7-4397-bc45-596aa4646723.png
+        # default user picture for users without picture
+        user: 857dc12d-46c9-4c63-b3c4-ee8fd1a2eb57.png
+      showBannerTime:
+        weekdays: [0,1,2,3,4,5,6] # 0 ~ 6 means Sunday ~ Saturday
+        hourFrom: 0 # GMT+8
+        hourTo: 23 # GMT+8
+      showBannerPriority: 6
+      disclaimerTitle:
+        key: "trivia_disclaimer_title"
+      disclaimerText:
+        key: "trivia_disclaimer_text"
+      leaveGameToastText:
+        key: "trivia_gamer_leave_double_confirm_text"
+      voteTopic:
+        key: "trivia_tv_vote_topic"
+      shareWording:
+        key: "trivia_game_share_wording"
+      leftTopDisplayStyle: 1
+      isMedalSupported:
+        Default: true
+        CorrectMost: true
+        
+    "0e671b10-1660-419c-67f9-9983ebdbad38": # triviabot1
+      pictures:
+        default: http://cdn.17app.co/db5fc998-e129-4a03-b640-9e6c06d3ddab.png
+        prepare: http://cdn.17app.co/775d8f29-dd23-4fe5-9320-9d708e77463b.png
+        onLive: http://cdn.17app.co/cb5419c5-97c4-45a6-b4b3-5f6a843ee827.png
+        # default user picture for users without picture
+        user: 857dc12d-46c9-4c63-b3c4-ee8fd1a2eb57.png
+      showBannerTime:
+        weekdays: [0,1,2,3,4,5,6] # 0 ~ 6 means Sunday ~ Saturday
+        hourFrom: 0 # GMT+8
+        hourTo: 23 # GMT+8
+      showBannerPriority: 7
+      disclaimerTitle:
+        key: "trivia_disclaimer_title"
+      disclaimerText:
+        key: "trivia_disclaimer_text"
+      leaveGameToastText:
+        key: "trivia_gamer_leave_double_confirm_text"
+      shareWording:
+        key: "trivia_game_share_wording"
+      leftTopDisplayStyle: 1
+      isMedalSupported:
+        Default: true
+        CorrectMost: true
+        
+    "94b56df0-336b-4968-7c41-88ec85246024": # 17好聰明SKODA (e2e test用)
+      pictures:
+        default: http://cdn.17app.co/db5fc998-e129-4a03-b640-9e6c06d3ddab.png
+        prepare: http://cdn.17app.co/775d8f29-dd23-4fe5-9320-9d708e77463b.png
+        onLive: http://cdn.17app.co/cb5419c5-97c4-45a6-b4b3-5f6a843ee827.png
+        # default user picture for users without picture
+        user: 857dc12d-46c9-4c63-b3c4-ee8fd1a2eb57.png
+      showBannerTime:
+        weekdays: [0,1,2,3,4,5,6] # 0 ~ 6 means Sunday ~ Saturday
+        hourFrom: 0 # GMT+8
+        hourTo: 23 # GMT+8
+      showBannerPriority: 8
+      disclaimerTitle:
+        key: "trivia_disclaimer_title"
+      disclaimerText:
+        key: "trivia_disclaimer_text"
+      leaveGameToastText:
+        key: "trivia_gamer_leave_double_confirm_text"
+      shareWording:
+        key: "trivia_game_share_wording"
+      leftTopDisplayStyle: 1
+      isMedalSupported:
+        Default: true
+        CorrectMost: true
+        
+referral:
+  registerDay: 3
+  quizNo: 4
+# avavil version to enter 17Q, else force udpate
+devices:
+  ios:
+    version: "3.74.0"
+  android:
+    version: "2.4.21"
+devicesOnTV:
+  ios:
+    version: "3.223.0"
+  android:
+    version: "2.138.0"
+# 防止用戶作弊的機制
+checkAnswerSign: false
+# 遊戲中發免死金牌的機制
+medalActivity:
+  countdown: 10 # 用戶幾秒內可拿免死金牌
+  sendRateLimit: 30 # 幾秒後才能發下個免死金牌
+  maxAcceptDelay: 30 # 容許用戶拿免死金牌的延遲

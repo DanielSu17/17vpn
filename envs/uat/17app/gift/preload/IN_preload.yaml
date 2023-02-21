@@ -1,0 +1,29 @@
+# totalSizeInBytes must larger than preloadSizeInBytes
+giftStorage:
+  enableSizeLimit: false
+  totalSizeInBytes: 0
+  preloadSizeInBytes: 0
+  minAndroidVersion: "9.999.0"
+  minIOSVersion: "9.999.0"
+
+#mustPreloadGifts:
+#  - giftID: gift_id_1
+#    startTime: 2021-12-01 00:00:00 (GMT+0800)
+#    endTime: 2022-01-01 00:00:00 (GMT+0800)
+
+mustPreloadGifts:
+#時間進行中：[隨機禮的子袋]
+  - giftID: 2201_new_year_divination_block_tiger_1
+    startTime: 2021-12-01 00:00:00 (GMT+0800)
+    endTime: 2022-01-01 00:00:00 (GMT+0800)
+
+#時間已過期：[隨機禮的子袋]
+  - giftID: 2201_new_year_divination_block_tiger_2
+    startTime: 2021-12-01 00:00:00 (GMT+0800)
+    endTime: 2021-12-02 00:00:00 (GMT+0800)  
+
+#時間尚未開始：[隨機禮的子袋]
+  - giftID: 2201_new_year_divination_block_tiger_3
+    startTime: 2021-12-28 00:00:00 (GMT+0800)
+    endTime: 2022-12-02 00:00:00 (GMT+0800) 
+

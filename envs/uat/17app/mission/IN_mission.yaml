@@ -1,0 +1,213 @@
+# | type | Value |
+# | --- | --- |
+# | Trivia_DayTime_Answer | 1 |
+# | Trivia_Night_Answer | 2 |
+# | Send_Gift | 3 |
+# | Comment_In_Program | 4 |
+# | Comment_In_Livestream | 5 |
+# | Trivia_On_TV_Play | 6 |
+# | Trivia_Play | 7 |
+# | IAP_Buy_Point | 8 |
+# | View_Stream_X_Seconds | 9 |
+# | IAP_X_Points | 10 |
+# | TypePhoneBinding | 12 |
+# | View_Stream_X_Different_Days | 13 |
+# | CreateAvatar | 16 |
+# | CommentInNewestLivestream | 17 |
+# | CheckIn | 24 |
+# ============
+# Viewer share
+# | Share_Twitter | 11 |
+# | ShareInstagramStory | 29 |
+# | ShareInstagramDirect | 30 |
+# | ShareFacebookStory | 31 |
+# | ShareFacebookNewsFeed | 32 |
+# | ShareMessenger | 33 |
+# | ShareWhatsApp | 34 |
+# | ShareLine | 35 |
+# | Share17 | 36 |
+
+# | category | Value |
+# | --- | --- |
+# | Fixed | 0 |
+# | Ratio | 1 |
+
+# | lifeCycle | Value |
+# | --- | --- |
+# | Daily | 0 |
+# | OneTime | 1 |
+# | ConsecutiveDays | 2 |
+
+# | targetAudience | Value |
+# | --- | --- |
+# | REGIONAL | 0 |
+# | IAP | 1 |
+# | NON_IAP | 2 |
+
+# | rewardType | Value |
+# | --- | --- |
+# | RewardCategoryBaggageGift | 1 |
+# | RewardCategoryAvatarGrabBag | 2 |
+
+missions:
+- ID: f4025c53-bca9-42a7-9d37-817594aef54a
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2202_lovebirds_0
+    amount: 3
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "5"
+    needMap: false
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 300
+  enableTimeRange:
+  - startTime: 2022-02-04 18:00:00 (GMT+0800)
+    endTime: 2023-02-27 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+- ID: 17ff0593-36cb-4b40-975a-0f4ccb10d250
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 3
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2202_my_valentines_1_bp
+    amount: 5
+    expireTimeSecs: 86400
+  i18nTitle: po_mission_title_7
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: po_mission_desc_7
+  i18nDescriptionParams: []
+  goalValue: 5
+  enableTimeRange:
+  - startTime: 2022-02-02 00:00:00 (GMT+0900)
+    endTime: 2023-02-15 23:59:59 (GMT+0900)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: d0dc3d90-a3aa-42ff-ade8-f2c092f98350
+  type: 10
+  category: 0
+  lifeCycle: 0
+  targetAudience: 2
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2201_jp_breakwall_bp
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: tw_mission_02
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: tw_mission_03
+  i18nDescriptionParams: []
+  goalValue: 100
+  enableTimeRange:
+  - startTime: 2022-01-12 14:30:00 (GMT+0800)
+    endTime: 2023-01-19 14:30:00 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 57b6a5d5-bd17-4a3b-9fda-d69d99d9600d
+  type: 10
+  category: 0
+  lifeCycle: 0
+  targetAudience: 1
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2201_jp_breakwall_bp
+    amount: 3
+    expireTimeSecs: 86400
+  i18nTitle: tw_mission_02
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: tw_mission_03
+  i18nDescriptionParams: []
+  goalValue: 1000
+  enableTimeRange:
+  - startTime: 2022-01-12 14:30:00 (GMT+0800)
+    endTime: 2023-01-19 14:30:00 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: true
+i18nMissionCompleteToast: baggage_mission_toast_claimed
+refreshHour: 17
+supportedVersion:
+  android: 2.3.17
+  ios: 3.8.0
+tagInfos:
+  0:
+    token:
+      key: baggage_mission_daily_tag
+      params: []
+      fontAttribute: null
+    color: '#7483d6'
+  1:
+    token:
+      key: baggage_mission_one_time_tag
+      params: []
+      fontAttribute: null
+    color: '#F6696C'
+  2:
+    token:
+      key: baggage_mission_checkin_tag
+      params: []
+      fontAttribute: null
+    color: '#F6696C'
+remind:
+  remindSecs: 60
+  toastMsg:
+    key: baggage_complete_toast
+    params: []
+    fontAttribute: null
+  toastSecs: 10
+checkPNAfterComplete:
+- 1
+- 2
+- 3
+- 4
+- 5
+- 10
+checkPNSupportedVersion:
+  android: 2.13.0
+  ios: 3.101.0

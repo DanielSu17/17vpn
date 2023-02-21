@@ -1,0 +1,151 @@
+# 範例(詳細說明在README.md):
+#  rewardEvents:
+#    - eventID: "event-01"
+#      startTime: "2018-12-24T15:00:00+08:00"
+#      endTime: "2019-02-25T23:59:59+08:00"
+#      eventRequirements:
+#        - sellingChannels:
+#            include:
+#              - 1
+#              - 2
+#          firstPurchase:
+#            timeRange:
+#              startTime: "2018-12-24T15:00:00+08:00"
+#            sellingChannels:
+#              exclude:
+#                - 2
+#            merchandiseID: "mockMerchandiseID"
+#        - registerDayRange:
+#            fromDayN: 0
+#            toDayN: 13
+#          sellingChannels:
+#            include:
+#              - 1
+#              - 2
+#        - firstPurchase:
+#            sellingChannels:
+#              exclude:
+#                - 2
+#            merchandiseID: "mockMerchandiseID"
+#          abtest:
+#            name: "abtest"
+#            groupID: "b"
+#          sellingChannels:
+#            include:
+#              - 1
+#              - 2
+#          legacyFirstPurchase:
+#            enableTimeRange: false
+#      rules:
+#        - reward:
+#            points: 1000
+#          requirements:
+#            - merchandiseID: "mockMerchandiseID"
+#        - reward:
+#            loyaltyPoints: 5
+#          requirements:
+#            - merchandiseID: "mockMerchandiseID1"
+#        - reward:
+#            premiumBaby:
+#              days: 3
+#          requirements:
+#            - merchandiseID: "mockMerchandiseID2"
+#        - reward:
+#            bonusRatio:
+#              priceRatio: 0.3
+#          requirements:
+#            - merchandiseID: "mockMerchandiseID3"
+#    - eventID: "event-02"
+#      eventRequirements:
+#        - onlyAvailableInSameRegion: true
+#          secretIAP:
+#            ID: "mockID"
+#          sellingChannels:
+#            include:
+#              - 1
+#              - 2
+#          legacyFirstPurchase:
+#            enableTimeRange: true
+#            timeRange:
+#              startTime: "2018-12-24T15:00:00+08:00"
+#      rules:
+#        - reward:
+#            points: 200
+#          requirements:
+#            - merchandiseID: "mockMerchandiseID"
+#
+
+secretIAPConditions:
+#符合每日登入天數1,3,5天的用戶看得到，顯示24小時
+  - ID: "QAKevinSecretIAP-1"
+    condition:
+      dailySignInValidDays:
+        - 1
+        - 3
+        - 5
+      retentionUserOnly: false
+    displayHours: 24
+
+#20200701 - 20210720期間購買15420方案多贈送50%寶寶幣+3天尊榮寶寶
+rewardEvents:
+  - eventID: "QAKevinReward-1"
+    startTime: "2020-07-01T00:00:00+08:00"
+    endTime: "2020-09-10T00:00:00+08:00"
+    eventRequirements:
+      - sellingChannels:
+          include:
+            - 1
+            - 2
+        onlyAvailableInSameRegion: true
+        legacyFirstPurchase:
+          enableTimeRange: false
+    rules:
+      - reward:
+          points: 7710
+          premiumBaby:
+            days: 3
+        requirements:
+          - merchandiseID: "media17_points_15420"
+    abtest:
+        name: "iapPromotion"
+        groupID: "b"
+
+#20200701 - 20210701生涯首儲330點送330點
+  - eventID: "QAKevinReward-2"
+    startTime: "2020-07-01T00:00:00+08:00"
+    endTime: "2020-07-01T00:00:00+08:00"
+    eventRequirements:
+      - sellingChannels:
+          include:
+            - 1
+            - 2
+        legacyFirstPurchase:
+          enableTimeRange: false
+    rules:
+      - reward:
+          points: 330
+        requirements:
+          - merchandiseID: "media17_points_330"
+    abtest:
+        name: "iapPromotion"
+        groupID: "b"
+
+#20200701 - 20210701首次儲值且符合secretIAP QAKevinSecretIAP-1的規則可購買35980方案+7天尊榮寶寶
+  - eventID: "QAKevinReward-3"
+    startTime: "2020-07-01T00:00:00+08:00"
+    endTime: "2020-07-01T00:00:00+08:00"
+    eventRequirements:
+      - sellingChannels:
+          include:
+            - 1
+            - 2
+        seretIAP:
+          ID: "QAKevinSecretIAP-1"
+        legacyFirstPurchase:
+          enableTimeRange: false
+    rules:
+      - reward:
+          premiumBaby:
+            days: 7
+        requirements:
+          - merchandiseID: "media17_points_35980"

@@ -1,0 +1,236 @@
+# https://hackmd.io/@gNH0A9jtQC6WsVrY4tI2Jg/rJP29VDNw
+# adjustMode: 
+#   0: toggle
+#   1: slider
+#
+# type: 
+#   0: 17
+#   1: third party
+
+platform:
+  ios:
+    default:
+      enable: true
+      features:
+        - id: 17skin # 原始美肌
+          enable: true
+          min: 0
+          max: 1
+          default: 1
+          adjustMode: 0
+          displayName: streamer_beautify_homemade
+          iconUrl: https://cdn.17app.co/9ec3a6ef-2b84-4222-9638-eb263f05f60c.png
+          type: 0
+        - id: thinFace # 瘦臉
+          enable: true
+          min: 0
+          max: 1
+          default: 0.1
+          adjustMode: 1
+          displayName: streamer_beautify_slimface
+          iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+          type: 1
+        - id: bigEye # 大眼
+          enable: true
+          min: 0
+          max: 1
+          default: 0.1
+          adjustMode: 1
+          displayName: streamer_beautify_bigeyes
+          iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
+        - id: skinRedden # 紅潤
+          enable: true
+          min: 0
+          max: 1
+          default: 0.25
+          adjustMode: 1
+          displayName: streamer_beautify_rosy
+          iconUrl: https://cdn.17app.co/beb59186-139f-4256-bc29-1b8790966239.png
+          type: 1
+        - id: skinWhitening #白皙
+          enable: true
+          min: 0
+          max: 1
+          default: 0.25
+          adjustMode: 1
+          displayName: streamer_beautify_whitening
+          iconUrl: https://cdn.17app.co/db256af7-a3f4-4356-a830-70a626e65fe5.png
+          type: 1
+        - id: skinSoften #磨皮
+          enable: true
+          min: 0
+          max: 1
+          default: 0.5
+          adjustMode: 1
+          displayName: streamer_beautify_scrub
+          iconUrl: https://cdn.17app.co/0dad32e5-a2b2-4902-8283-97cc8536f3ae.png
+          type: 1
+        - id: roundEyes # 圓眼
+          enable: true
+          min: 0
+          max: 1
+          default: 0.1
+          adjustMode: 1
+          displayName: streamer_beautify_roundeyes
+          iconUrl: https://cdn.17app.co/ea67c4d7-098a-4c21-b802-2172dcc602c0.png
+          type: 1
+        - id: shrinkJaw # 小臉
+          enable: true
+          min: 0
+          max: 1
+          default: 0.1
+          adjustMode: 1
+          displayName: streamer_beautify_smallface
+          iconUrl: https://cdn.17app.co/54e9bae9-5f7e-4b95-bade-8a631db3aff8.png
+          type: 1
+        - id: narrowFace # 窄臉
+          enable: true
+          min: 0
+          max: 1
+          default: 0.1
+          adjustMode: 1
+          displayName: streamer_beautify_slimerface
+          iconUrl: https://cdn.17app.co/8eebf0fc-e8a4-41c8-a2da-bcb4d2f2124b.png
+          type: 1
+        - id: contrast # 對比度
+          enable: true
+          min: 0
+          max: 1
+          default: 0.1
+          adjustMode: 1
+          displayName: streamer_beautify_contrast
+          iconUrl: https://cdn.17app.co/bbc788f5-c64b-4db3-b8fe-e44aebdf8620.png
+          type: 1
+        - id: saturation # 飽和度
+          enable: true
+          min: 0
+          max: 1
+          default: 0.1
+          adjustMode: 1
+          displayName: streamer_beautify_saturation
+          iconUrl: https://cdn.17app.co/d651522f-0ad8-488f-8171-987404979ac0.png
+          type: 1
+        - id: sharpen # 銳化
+          enable: true
+          min: 0
+          max: 1
+          default: 0.1
+          adjustMode: 1
+          displayName: streamer_beautify_sharpen
+          iconUrl: https://cdn.17app.co/04783f14-6049-4c96-80c9-043f6721f6f3.png
+          type: 1
+#    iPhone5,3:
+  android:
+    default:
+      enable: true
+      features:
+        - id: 17skin # 原始美肌
+          enable: true
+          min: 0
+          max: 1
+          default: 1
+          adjustMode: 0
+          displayName: streamer_beautify_homemade
+          iconUrl: https://cdn.17app.co/9ec3a6ef-2b84-4222-9638-eb263f05f60c.png
+          type: 0
+        - id: thinFace # 瘦臉
+          enable: true
+          min: 0
+          max: 1
+          default: 0.1
+          adjustMode: 1
+          displayName: streamer_beautify_slimface
+          iconUrl: https://cdn.17app.co/57265140-0a5c-49ed-9588-5c905fe6ed8d.png
+          type: 1
+        - id: bigEye # 大眼
+          enable: true
+          min: 0
+          max: 1
+          default: 0.1
+          adjustMode: 1
+          displayName: streamer_beautify_bigeyes
+          iconUrl: https://cdn.17app.co/bbd5ac3d-84a8-4367-9fb3-ec8bb809047c.png
+          type: 1
+        - id: skinRedden # 紅潤
+          enable: true
+          min: 0
+          max: 1
+          default: 0.25
+          adjustMode: 1
+          displayName: streamer_beautify_rosy
+          iconUrl: https://cdn.17app.co/beb59186-139f-4256-bc29-1b8790966239.png
+          type: 1
+        - id: skinWhitening #白皙
+          enable: true
+          min: 0
+          max: 1
+          default: 0.25
+          adjustMode: 1
+          displayName: streamer_beautify_whitening
+          iconUrl: https://cdn.17app.co/db256af7-a3f4-4356-a830-70a626e65fe5.png
+          type: 1
+        - id: skinSoften #磨皮
+          enable: true
+          min: 0
+          max: 1
+          default: 0.5
+          adjustMode: 1
+          displayName: streamer_beautify_scrub
+          iconUrl: https://cdn.17app.co/0dad32e5-a2b2-4902-8283-97cc8536f3ae.png
+          type: 1
+        - id: roundEyes # 圓眼
+          enable: true
+          min: 0
+          max: 1
+          default: 0.1
+          adjustMode: 1
+          displayName: streamer_beautify_roundeyes
+          iconUrl: https://cdn.17app.co/ea67c4d7-098a-4c21-b802-2172dcc602c0.png
+          type: 1
+        - id: shrinkJaw # 小臉
+          enable: true
+          min: 0
+          max: 1
+          default: 0.1
+          adjustMode: 1
+          displayName: streamer_beautify_smallface
+          iconUrl: https://cdn.17app.co/54e9bae9-5f7e-4b95-bade-8a631db3aff8.png
+          type: 1
+        - id: narrowFace # 窄臉
+          enable: true
+          min: 0
+          max: 1
+          default: 0.1
+          adjustMode: 1
+          displayName: streamer_beautify_slimerface
+          iconUrl: https://cdn.17app.co/8eebf0fc-e8a4-41c8-a2da-bcb4d2f2124b.png
+          type: 1
+        - id: contrast # 對比度
+          enable: true
+          min: 0
+          max: 1
+          default: 0.1
+          adjustMode: 1
+          displayName: streamer_beautify_contrast
+          iconUrl: https://cdn.17app.co/bbc788f5-c64b-4db3-b8fe-e44aebdf8620.png
+          type: 1
+        - id: saturation # 飽和度
+          enable: true
+          min: 0
+          max: 1
+          default: 0.1
+          adjustMode: 1
+          displayName: streamer_beautify_saturation
+          iconUrl: https://cdn.17app.co/d651522f-0ad8-488f-8171-987404979ac0.png
+          type: 1
+        - id: sharpen # 銳化
+          enable: true
+          min: 0
+          max: 1
+          default: 0.1
+          adjustMode: 1
+          displayName: streamer_beautify_sharpen
+          iconUrl: https://cdn.17app.co/04783f14-6049-4c96-80c9-043f6721f6f3.png
+          type: 1
+#    Pixel 2:

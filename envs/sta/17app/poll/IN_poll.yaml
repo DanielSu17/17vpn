@@ -1,0 +1,90 @@
+# Poll setting
+# MUST make sure that corresponding gift ids exist in gift database
+# In this case, they should be poll_option_{a|b|c|d|e}_{30|49|99|199|399|599|3999} by the value of giftIDTempalte
+minTTL: 1
+# maxTTL(minutes) should be smaller than maxDurationHour(hours) in the general.yaml
+maxTTL: 120
+maxTitleDescLen: 20
+maxOptDescLen: 10
+minOptionCount: 2
+maxOptionCount: 5
+freeVoteEnable: false
+freeVoteWhitelist:
+  - "567e0b5d-1516-4ce0-b4e8-bec4e756d5ae" # kevinmh
+  - "3799d926-2ae2-4942-a510-847a017921cc" # kevinmh01
+  - "91ce0188-caed-4fb1-95cb-98e0d84fa5e1" # 17x華視午間新聞
+  - "37d9e764-5eef-44f8-8e60-a06f5ea7e001" # qaprogram1
+availableLimit:
+  mins: 1
+  count: 200
+freeVoteAndroidVersion: 2.3.62
+freeVoteIOSVersion: 3.44.0
+defaultPrice: 99
+enableFreePriceForOfficialTopics: true # 官方話題可選擇0點
+availablePrice:
+  5:
+  30:
+  49:
+  99:
+  199:
+  399:
+  599:
+  3999:
+availableOptionID:
+  - poll_option_a
+  - poll_option_b
+  - poll_option_c
+  - poll_option_d
+  - poll_option_e
+giftIDTemplate: '{{.OptionID}}_{{.Price}}'
+userSettings:
+  4408d847-42dc-4ad5-8447-978aede1f0f4: # 17新樂園
+    price: 599
+  fa0c2a70-9774-4562-bdf1-b787949fe7db: # 粉絲福利社
+    price: 399
+  91ce0188-caed-4fb1-95cb-98e0d84fa5e1: # 17x華視午間新聞
+    price: 0
+    limitMins: 3
+    limitCount: 1
+  e3c4c804-8a9c-4b7c-8026-0a8ed602b42c: # jen87go
+    price: 5
+    limitMins: 1
+    limitCount: 15
+  37d9e764-5eef-44f8-8e60-a06f5ea7e001: # qaprogram1
+    price: 5
+    limitMins: 5
+    limitCount: 30
+  46d46576-cd73-4f19-bd5f-1e65e9a62e85: # 17經典台
+    price: 30
+    limitMins: 1
+    limitCount: 200
+  c21f1749-b48d-43fd-b3e3-32c5edf169e9: # 17趣郊遊
+    price: 0
+    limitMins: 1
+    limitCount: 200
+  2f611480-1078-4d6e-5daf-59fd595446fd: # 17寵星人
+    price: 0
+    limitMins: 1
+    limitCount: 2
+  6f5c856f-4b3a-4f8c-731e-ee396602ae75: # 17生活時尚
+    price: 30
+hotTopic: "today_hot_topic"
+topics:
+  - tag: "時事"
+    title: "新垣結衣跟星野源結婚？"
+    options: ["不能接受Ｑ＿Ｑ", "祝他們幸福"]
+  - tag: "男女"
+    title: "約會花費是否該平分？"
+    options: ["當然啊", "都我出"]
+  - tag: "男女"
+    title: "能接受另一半用交友軟體嗎？"
+    options: ["可以啊", "麥肖想"]
+  - tag: "價值觀"
+    title: "相不相信星座命理？"
+    options: ["我覺得很準", "自己的命運自己掌握"]
+  - tag: "政治,社會"
+    title: "哪個參選的理由比較合理？"
+    options: ["淡水阿罵的陳情", "媽祖托夢"]
+  - tag: "社會"
+    title: "三倍券好用嗎"
+    options: ["敲好用", "敲難用"]

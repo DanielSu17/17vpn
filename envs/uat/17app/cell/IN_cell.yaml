@@ -1,0 +1,181 @@
+# update cells yaml
+# virtual streamer region order
+virtualStreamRegionOrder: ["JP", "TW", "HK", "MY"]
+
+# position example: <type>_<tab>
+position:
+  # index start from 1
+  # Tab : hot
+  program_hot: [2, 5, 15, 20, 25]
+  beltBanner_hot: 3
+  carouselBannerHot: 6
+  virtualStreamer_hot: 0
+  beltBannerLatest: 3
+  carouselBannerLatest: 1
+
+  # index start from 0
+  banner_tv: [2]
+  banner_clip: [0]
+# this is for setting position priority in hot cell
+priority:
+#  - name: 1 # TVSHOW
+  - name: 2 # TRIVIA_ON_TV
+  - name: 3 # TVBANNER
+  - name: 4 # TRIVIA
+  - name: 5 # WEREWOLVES
+
+# Expand the cell size to 2x2 if the number of cells less/equal than the number
+enableExpandCellSize: true
+expandCellSizeThreshold: 5
+
+canKillZombies: true
+
+usingReducedResponse: true
+reducedResponseSupportedVersion:
+  ios: "3.120.0"
+  android: "2.34.0"
+
+# Fill streams in other region to fit the page limit in hot
+supplyOtherRegionInHot: true
+
+# entrance room setting for cells with CellType_ENTRANCE_ROOM
+# - position >= 1
+# - minRoomsRequired >= 1
+# - start, end support two formats: "06:10:00" or "2019-04-01 08:22:00"
+# - topic: (全民話題 1), (PK 2)
+# - topicTitles: string array
+# - whitelist: userID array
+entranceRooms:
+  - enable: true
+    position: 5
+    minRoomsRequired: 1
+    title: "today_hot_topic_title"
+    description: "today_hot_topic_entrance_room_des_date"
+    caption: "vote_entry_title"
+    vipFrameID: "FRAME_ENTRANCEROOMV2"
+    vipFrameURL: "https://cdn.17app.co/29a31d62-4602-4a57-9d40-4a9fafaacf40.png"
+    iosFrameURL: "https://cdn.17app.co/9042f826-c53d-45ab-87a5-861844ccb0d4.png"
+    iconID: "ICON_ENTRANCEROOM"
+    iconURL: "https://assets-17app.akamaized.net/8fb28053-6a8e-453b-9a65-36d1009b6894.png"
+    start: "06:10:00"
+    end: "19:50:00"
+    topic: 1
+    topicTitles:
+      - "約會花費是否該平分？"
+    topics: # deprecate soon
+      1: ["約會花費是否該平分？"]
+    whitelist:
+      - "bdadc787-0174-4189-8da8-6edc3390ebcf" # kevtest2
+      - "ae7de094-f3ae-4de6-9037-e4f190acdbf1" # qacontractor9
+      - "68f1e4a9-aff0-4253-a282-e2c775edd0c8" # qacontractor8
+      - "e3c4c804-8a9c-4b7c-8026-0a8ed602b42c" # jen87go
+      - "2c9ad019-2b31-4fb9-800d-fa518b51a74d" # finn1
+      - "e257e914-5009-48d9-5e8b-3c6da3f2026f" # lllt.summer
+  - enable: true
+    position: 6
+    minRoomsRequired: 1
+    start: "00:00:00"
+    end: "23:59:59"
+    topic: 2
+    caption: "PK_entry_title"
+
+#  - enable: true
+#    position: 6
+#    minRoomsRequired: 1
+#    title: "today_hot_topic_title"
+#    description: "today_hot_topic_entrance_room_des_date"
+#    vipFrameID: "FRAME_ENTRANCEROOM"
+#    vipFrameURL: "https://assets-17app.akamaized.net/ffc5a3ed-fb54-443f-b610-a12edea6fd52.png"
+#    iosFrameURL: "https://assets-17app.akamaized.net/07b017de-89ef-4b57-8bd5-1caa6fea6796.png"
+#    iconID: "ICON_ENTRANCEROOM"
+#    iconURL: "https://assets-17app.akamaized.net/8fb28053-6a8e-453b-9a65-36d1009b6894.png"
+#    start: "06:10:00"
+#    end: "18:20:00"
+#    topics:
+#      1:
+#    whitelist:
+#      - "bdadc787-0174-4189-8da8-6edc3390ebcf"
+#      - "73e8b839-a1ca-4b08-a51d-2b02ffdea153"
+
+hotOptTabs:
+  - id: romantic_songs
+    name:
+      key: streamer_label_highlight_romanticsongs
+    highlight: false
+  - id: latest
+    name:
+      key: tab_opt_newstreamer
+    minStreamsRequired: 1 # 最少幾個直播間才會出現
+    highlight: true
+  - id: label:male
+    name:
+      key: tab_opt_male
+  - id: label:female
+    name:
+      key: tab_opt_female
+  - id: label:acoustic
+    name:
+      key: streamer_label_acoustic
+  - id: label:singer
+    name:
+      key: streamer_label_singer
+  - id: label:fortune_teller
+    highlight: true
+    name:
+      key: streamer_label_fortune_teller
+  - id: label:pundit
+    highlight: true
+    name:
+      key: streamer_label_pundit
+  - id: music
+    highlight: true
+    name:
+      key: tab_opt_music
+  - id: 17tv_tab
+    name:
+      key: 17tv_entry_tab
+  - id: label:campus
+    highlight: true
+    name:
+      key: streamer_label_campus
+  - id: pk
+    name:
+      key: tab_opt_pk
+    minStreamsRequired: 4 # 2個直播間一組PK
+
+hotOptSuperTopTabList:
+  - label:show
+  - label:player
+  - label:female
+  - label:pundit
+
+
+hotOptSuperTopTabExtraList:
+  - web:music
+  - label:campus
+  - label:pundit
+  - label:female
+  - label:male
+  - label:acoustic
+
+hotOptSuperTopTabBlacklist: []
+
+hotOpt:
+  onlyWhitelist: false
+  whitelist: []
+# VodlistPosition means 0: Highlight上, 1-n: 第1-n個highlight下, n+1: 腰帶Banner下
+vodlistPosition: 1
+
+# 熱門頁 V2 精選影音 section
+vodlist:
+  - 196a119e-d05f-44e2-9025-0fbd513d6f15 # Hi Amber II
+  - ba6d0d26-c412-4493-8018-73d91279b0b8 # Hi Amber
+  - 09b2b7ff-8502-4e1b-9701-b73c52984112
+
+# the setting of the available duration when they complete the first stream as the qualified D0 new streamer; in hour
+qualifiedFirstStreamDuration: 24
+# the setting of the minimum duration for the qualified D0 new streamer; in minute
+firstStreamForMinimumDuration: 0
+
+# deduplicate streams from the same user in hot page
+enableHotDedup: true
