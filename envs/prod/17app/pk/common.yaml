@@ -8,8 +8,8 @@ rewardSecond: 30 # 遊戲結算完到最後關閉的時間
 readyWaitingSecond: 30 # 等待啟動合流sdk時間
 timeoutSecond: 30 # 主播多久沒打api判斷斷線用的時間, changing [timeoutSecond] to a larger value may cause end-to-end tests to fail (please refer to api/app/api/e2e/pk_test.go)
 consecutiveRejectionPeriod: 3600 #(累計時間) 這表示 "1" 小時內有超過3次，就會有30分鐘不會被配對到，超過一小時沒有拒絕 就會重0開始算
-consecutiveRejectionCount: 3 # 拒絕 "3" 次後，暫時不接受邀請
-consecutiveRejectionNoDisturbSecond: 1800 #(不能被配對的時間) 連續拒絕3次後，"1800"秒(半小時)內不會參與任何配對
+consecutiveRejectionCount: 1 # 拒絕 "1" 次後，暫時不接受邀請
+consecutiveRejectionNoDisturbSecond: 3600 #(不能被配對的時間) 連續拒絕1次後，"3600"秒(一小時)內不會參與任何配對
 rejectionUnPairSeconds: 60 # 拒絕後幾秒內不會被同一個人配對到
 revengeWaitingSecond: 20 # 等待對方是否同意Revenge
 minAndroidVersion: "2.10.1"
