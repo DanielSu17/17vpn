@@ -1,5 +1,5 @@
 # sections
-#   - id: TopBanner|OffcRecomm|Suggestion|Label|RedEnvelope|Show|Vod|TodayHotTopic|CrazyZoo
+#   - id: TopBanner|OffcRecomm|Suggestion|Label|RedEnvelope|Show|Vod|TodayHotTopic|CrazyZoo|GroupCall|ArchiveVideo
 #     enable: false|true　falseにすると非表示
 #     dedup:  false|true　
 #     more:   false|true
@@ -11,6 +11,18 @@
 #     orderModel: 1|2
 #If orderModel: 1, it means the order is based on achievement scores
 #If orderModel: 2, it means the order is based on ML recommendations
+
+# style 1: Top banner + super promote
+# style 2: IG 限時動態 style （官方推薦內容）
+# style 3: Netflix default style (時事話題, ...)
+# style 4: (熱播節目)
+# style 5: (熱門影音)
+# style 6: (猜你可能會喜歡) showing label as possible than DefaultShelfStyle
+# style 7: (新手任務)
+# style 8: (PK) used in more page
+# style 9: GroupCall
+# style 10: GroupCall empty style. Client will show the groupCall entry button even if the grids are less than minGrids.
+# style 11: ArchiveVideo (典藏直播)
 
 preservedSectionID: Latest
 
