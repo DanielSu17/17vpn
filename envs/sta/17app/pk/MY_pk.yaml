@@ -91,4 +91,29 @@ gameDuration:
   friend: 120
   schedule: 120
 
+# minimum points needed to count as lb win after specific time
+# if now is before earliest start, we use 3000 as defualt.
+# please dont clear this config until start is older than one month for data consistency
+pkLBMinPoints:
+  - start: "2020-08-12 18:00:00 (GMT+0800)"
+    minPoint: 3000
+  - start: "2020-08-14 18:00:00 (GMT+0800)"
+    minPoint: 2000
+  - start: "2020-08-17 18:00:00 (GMT+0800)"
+    minPoint: 3000
+  - start: "2020-08-18 18:00:00 (GMT+0800)"
+    minPoint: 2000
+  - start: "2020-08-19 18:00:00 (GMT+0800)"
+    minPoint: 3000
+  - start: "2020-08-20 18:00:00 (GMT+0800)"
+    minPoint: 2000
+  - start: "2020-08-21 18:00:00 (GMT+0800)"
+    minPoint: 3000
+  - start: "2020-08-22 18:00:00 (GMT+0800)"
+    minPoint: 2000
+  - start: "2020-08-23 18:00:00 (GMT+0800)"
+    minPoint: 3000
+weeklyLBTopCount: 3
 showPKStarLB: true #是否於直播間顯示pk小時榜
+
+maxPlayerAmount: 100 #以人為單位
