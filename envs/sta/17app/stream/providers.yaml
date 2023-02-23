@@ -17,9 +17,7 @@ rtmp_providers:
 - name: DEFAULT
   quality_support: 0
   weight: 0
-- name: UCLOUD
-  quality_support: 0
-  weight: 0
+  
 - name: QINIU
   quality_support: 0
   expire_after_hours: 6
@@ -65,9 +63,6 @@ rtmp_providers:
   - be832cab-fb5f-4ed5-ab8f-a07f020ef68f # kevint09271
   - 78e6ced0-4fcb-47f5-a676-2d2cf0c647f2 # iris_jp.1
   
-- name: QCLOUD
-  quality_support: 0
-  weight: 0
 - name: WANSU
   quality_support: 1
   weight: 20
@@ -250,7 +245,6 @@ rtmp_providers:
   - d0f5d380-068a-48b2-b281-8fba7bae8d0f # liamtest2
   - c00f530f-4e34-4e98-8a2e-61b2c822ea29 # jameschou02
   - c52c9260-119d-423c-afc8-a2c8aa3a7a02 # jameschou01
-
   
 - name: WANSU_LOW_LATENCY
   quality_support: 1
@@ -295,24 +289,11 @@ rtmp_providers:
   - e5680d32-e04f-4e58-9a31-dd160b4df67f # yunnnyunnyun
   - da47bb62-9374-4bbb-697f-57e0f1c96c75 # androidtest1
   - 12ef2e8d-b1f9-43c3-b1b6-29dcb45e4a7a # veratest1
-
   
 - name: WANSU_SPECIFIED_IP
   quality_support: 1
   weight: 0
   users: []
-- name: SRS
-  quality_support: 0
-  weight: 0
-  users:
-  - 7ca0983b-3fa3-4e2c-9ebf-093ea4b92d2a # adventurer77
-  - e1c1f72e-d0e4-411d-b647-aebee235c316 # wtfstreamer1
-  - 52593de9-a4da-4372-687f-c24baa8e0504 # chensamson
-- name: CHT
-  quality_support: 0
-  weight: 0
-  users:
-  - 67b7e093-ce57-45f3-9775-2826d23b3781 # readper_test1
   
 - name: AWS
   quality_support: 0
@@ -400,6 +381,7 @@ rtmp_providers:
   - 5a89e990-bbb8-451c-ad89-b0e96e9b6f89 # sac1
   - cf6b43c2-1e72-4a28-999f-d6f9bdc6851d # seanweng.sta1
   - a4242ea9-4f5d-4908-b2a0-61bae74465c9 # elliottest2
+  
 - name: WANSU_AUTH
   quality_support: 0
   weight: 0
@@ -487,14 +469,6 @@ rtmp_providers:
   - eb2bdeb5-4a24-4f3e-a746-8374e8ec06ca # qa.splus2
   - 7e68aa44-5d73-40de-82d7-8aa968647bf4 # qa.splus3
   - dbac216a-1a71-40ff-9475-1375ab45682e # qa.splus4
-
-- name: WANSU_CDN
-
-- name: GOOGLE_CDN
-
-- name: AKAMAI_CDN
-
-- name: CLOUDFRONT_CDN
 
 - name: TENCENT
   quality_support: 0
