@@ -321,6 +321,5 @@ enableGetCurrencyTransactionAggLogsUseBQ: true
 enableGetUserLeftPointInfoUseMongoDB: false
 indexNameOfGetUserLeftPointInfo: userID
 
-
-leftPointUseMongoDaysAgo: 30
-enableGetUserLeftPointV2: false
+leftPointUseMongoDaysAgo: 500 # 500 means use mysql only
+enableGetUserLeftPointV2: true
