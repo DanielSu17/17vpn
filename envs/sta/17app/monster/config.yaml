@@ -1,4 +1,4 @@
-max: 0 # 0 means disable feature
+max: 50 # 0 means disable feature
 check_interval: 1m00s
 big_brother_prefix: "give_me_five"
 nian_prefix: "nian"
@@ -11,9 +11,9 @@ animations: ["yeti"]
 monsters:
 
  - id: basketball # 高雄鋼鐵人
-   type: 1  # 0: 一般怪獸, 1: 招喚怪獸
+   type: 0  # 0: 一般怪獸, 1: 招喚怪獸
    hit_consume: 10
-   duration: 30s
+   duration: 3s
    stream_alive_threshold: 1m00s
    animation: "basketball"
    available_dates: # 一般怪獸才會看時間
