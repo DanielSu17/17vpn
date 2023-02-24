@@ -36,27 +36,21 @@ pointReceiverLogsPlan:
   syncPlans:
     - name: latest
       startID: 85620055 # 1584356836 Monday, March 16, 2020 7:07:16 PM GMT+08:00
-      intervals: 100000
-    - name: senderSync
-      startID: 0
-      intervals: 200000
+      intervals: 30000
 
 pointUsageLogsPlan:
   migrateState: 2
   syncPlans:
     - name: latest
       startID: 0 # 1584356836 Monday, March 16, 2020 7:07:16 PM GMT+08:00
-      intervals: 10000
-    - name: resync
-      startID: 37098934
-      intervals: 123456
+      intervals: 30000
 
 pointGainLogsPlan:
   migrateState: 2 # 0: disable, 1: mysql, 2: mongo
   syncPlans:
     - name: latest
       startID: 0
-      intervals: 100000
+      intervals: 30000
 
 updateRevenueCron:
   enable: true
