@@ -2,7 +2,7 @@ enable: true
 enableAll: true
 enableContractedStreamer: true
 defaultAcceptChallenge: true
-maxPlayerAmount: 5000 #以人為單位
+maxPlayerAmount: 100 #以人為單位
 
 whiteList: []
 silenceList: []
@@ -87,9 +87,68 @@ playListV2:
       description:
         key: "pk_schedule_menu_suspended1"
 
-showPKStarLB: true #是否於直播間顯示pk小時榜
 gameDuration:
 # match: second
   random: 120
   friend: 120
   schedule: 60
+
+## for pk leaderboard
+pkHourLBLevel:
+  min: 1
+  max: 280
+pkStarDurations:
+- startTime: 00h00m00s
+  endTime: 24h00m00s
+regularRuleTitle:
+  key: pk_information_regular_title
+regularRules:
+  - key: pk_information_regular_rule1
+    params:
+      - value: 3000
+  - key: pk_information_regular_rule2
+    params:
+      - value: 3
+hourRuleTitle:
+  key: pk_information_hourly_title
+hourRules:
+  - key: pk_information_hourly_rule1
+  - key: pk_information_hourly_rule2
+  - key: pk_information_regular_rule1
+    params:
+      - value: 2000
+  - key: pk_information_hourly_rule3
+    params:
+      - value: 1
+      - value: 280
+  - key: pk_information_hourly_rule4
+    params:
+      - value: 8
+  - key: pk_information_hourly_rule5_tw
+    params:
+      - value: 00
+      - value: 24
+# minimum points needed to count as lb win after specific time
+# if now is before earliest start, we use 3000 as defualt.
+# please dont clear this config until start is older than one month for data consistency
+pkLBMinPoints:
+  - start: "2020-08-12 18:00:00 (GMT+0800)"
+    minPoint: 3000
+  - start: "2020-08-14 18:00:00 (GMT+0800)"
+    minPoint: 2000
+  - start: "2020-08-17 18:00:00 (GMT+0800)"
+    minPoint: 3000
+  - start: "2020-08-18 18:00:00 (GMT+0800)"
+    minPoint: 2000
+  - start: "2020-08-19 18:00:00 (GMT+0800)"
+    minPoint: 3000
+  - start: "2020-08-20 18:00:00 (GMT+0800)"
+    minPoint: 2000
+  - start: "2020-08-21 18:00:00 (GMT+0800)"
+    minPoint: 3000
+  - start: "2020-08-22 18:00:00 (GMT+0800)"
+    minPoint: 2000
+  - start: "2020-08-23 18:00:00 (GMT+0800)"
+    minPoint: 3000
+weeklyLBTopCount: 3
+showPKStarLB: true #是否於直播間顯示pk小時榜
