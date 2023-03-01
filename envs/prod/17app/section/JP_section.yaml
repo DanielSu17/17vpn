@@ -55,35 +55,6 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: Suggestion # 猜你可能喜歡
-    name:
-      key: tab_hot_2019q4_follow_suggestion
-    enable: true
-    dedup: true
-    style: 6
-    minGrids: 5
-    more: true
-    orderModel: 2
-
-  - id: Latest # 新人(和『最新』同邏輯)
-    name:
-      key: tab_hot_2019q4_newstreamer
-    enable: true
-    dedup: true
-    minGrids: 3
-    style: 3
-    more: true
-    orderModel: 2
-
-  - id: PK
-    name:
-      key: tab_hot_2019q4_pk
-    enable: true
-    dedup: false
-    minGrids: 6 # 2個直播間一組PK，3組以上顯示
-    style: 3
-    more: true
-
   - id: Label # Lv100以上
     labelID: 2203_jp_lv100
     name:
@@ -96,6 +67,26 @@ sections:
     category: normal
     orderModel: 2
 
+  - id: Latest # 新人(和『最新』同邏輯)
+    name:
+      key: tab_hot_2019q4_newstreamer
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    orderModel: 2
+
+  - id: Suggestion # 猜你可能喜歡
+    name:
+      key: tab_hot_2019q4_follow_suggestion
+    enable: true
+    dedup: true
+    style: 6
+    minGrids: 5
+    more: true
+    orderModel: 2
+
   - id: NewestStreamer # D0 new streamer
     name:
       key: tab_hot_d0streamer
@@ -105,6 +96,27 @@ sections:
     style: 3
     more: true
     orderModel: 2
+
+  - id: Label # 初見さん歓迎
+    labelID: jp_welcome
+    name:
+      key: streamer_jp_label_welcome
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: PK
+    name:
+      key: tab_hot_2019q4_pk
+    enable: true
+    dedup: false
+    minGrids: 6 # 2個直播間一組PK，3組以上顯示
+    style: 3
+    more: true
 
   - id: Label
     labelID: jp_game
@@ -154,54 +166,10 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: Label # 初見さん歓迎
-    labelID: jp_welcome
-    name:
-      key: streamer_jp_label_welcome
-    enable: true
-    dedup: true
-    minGrids: 3
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
   - id: Label # 占い
     labelID: jp_fortune
     name:
       key: streamer_jp_label_fortune
-    enable: true
-    dedup: true
-    minGrids: 3
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
-  - id: ArchiveVideo # 典藏影片  
-    name:
-      key: archives_homepage_title
-    enable: true
-    minGrids: 3
-    style: 11
-    more: true
-
-  - id: Label # クッキング
-    labelID: 2207_jp_cooking17
-    name:
-      key: streamer_jp_label_cooking17
-    enable: true
-    dedup: true
-    minGrids: 3
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
-  - id: Label # 恋愛トーク
-    labelID: 2207_jp_love_talk17
-    name:
-      key: streamer_jp_label_love_talk17
     enable: true
     dedup: true
     minGrids: 3
@@ -217,6 +185,14 @@ sections:
     dedup: true
     minGrids: 2
     style: 9
+    more: true
+
+  - id: ArchiveVideo # 典藏影片  
+    name:
+      key: archives_homepage_title
+    enable: true
+    minGrids: 3
+    style: 11
     more: true
 
   - id: Label # 創作・制作
@@ -247,6 +223,30 @@ sections:
     labelID: 2111_jp_oekaki
     name:
       key: streamer_jp_label_oekaki
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # クッキング
+    labelID: 2207_jp_cooking17
+    name:
+      key: streamer_jp_label_cooking17
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # 恋愛トーク
+    labelID: 2207_jp_love_talk17
+    name:
+      key: streamer_jp_label_love_talk17
     enable: true
     dedup: true
     minGrids: 3
@@ -368,7 +368,7 @@ sections:
     style: 5
     more: false
 
-#未使用ジャンル
+#未使用ジャンルーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #  - id: Label # エンタメ
 #    labelID: 2207_jp_entertainment17
 #    name:
@@ -393,7 +393,7 @@ sections:
 #    category: normal
 #    orderModel: 2
 
-#以下、過去分
+#以下、過去分ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #  - id: Label # タレント
 #    labelID: jp_talent
 #    name:
@@ -426,30 +426,6 @@ sections:
 #    style: 3
 #    more: true
 #    category: normal
-
-#  - id: Label # それスゴイ！ゲーム配信
-#    labelID: 2207_jp_soresugoi_game
-#    name:
-#      key: streamer_jp_label_soresugoi
-#    enable: true
-#    dedup: true
-#    minGrids: 3
-#    style: 3
-#    more: true
-#    category: normal
-#    orderModel: 2
-
-#  - id: Label # 広告出演中のライバー
-#    labelID: 2206_jp_Ad_entry_streamer
-#    name:
-#      key: streamer_jp_label_Ad_entry_streamer
-#    enable: true
-#    dedup: true
-#    minGrids: 3
-#    style: 3
-#    more: true
-#    category: normal
-#    orderModel: 2
 
 #  - id: Label # はじめての「占い配信」体験
 #    labelID: 2208_jp_fortunetelling_cp
@@ -514,4 +490,3 @@ newbieStreamGuideGroupingRules:
         minLevel: 65
       - maxViewerCount: 40
       - minViewerCount: 40
-
