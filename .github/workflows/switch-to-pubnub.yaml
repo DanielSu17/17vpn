@@ -4,7 +4,7 @@
 name: Switch To Pubnub
 on:
   repository_dispatch:
-    types: switch_to_pubsub
+    types: switch_to_pubnub
 jobs:
   configute_:
     runs-on: ubuntu-latest
@@ -20,4 +20,4 @@ jobs:
           SLACK_USER_TOKEN: ${{ secrets.SLACK_USER_TOKEN }}
           OPSGENIE_TOKEN: ${{ secrets.OPSGENIE_TOKEN }}   
         run: |-
-          ./switch_between_pubnub_and_ably.sh 90 10 100 0 ${{ github.event.action}} 
+          ./switch_between_pubnub_and_ably.sh 100 0 100 0 ${{ github.event.action}} 
