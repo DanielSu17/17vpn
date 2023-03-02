@@ -5,7 +5,7 @@ SLACK_USER_TOKEN="${SLACK_USER_TOKEN:-SLACK_USER_TOKEN_NOT_FOUND}"
 OPSGENIE_TOKEN="${OPSGENIE_TOKEN:-OPSGENIE_TOKEN_NOT_FOUND}"
 #debug
 ENV=uat
-today=$(date "+%F %H:%M:%S")
+today=$(TZ=UTC-8 date "+%F %H:%M:%S")
 yaml_path=envs/"$ENV"/17app/stream/providers.yaml
 branch="switch_between_pubnub_and_ably"
 
@@ -92,6 +92,7 @@ then
     curl -X POST --data-urlencode "payload={\"channel\":  \"#eng-sre-log\", \"text\": \"<@${oncaller_slack_id}> `${pr_title}` PR Created c.c. <!subteam^${oncall_group_slack_id}>\n ${pr_url} \"}" "$SLACK_WEBHOOK_URI"
     echo "opened ${pr_title} PR"
   else
+    gh pr edit "${branch}" --title "${pr_title}" --body "${today} etcd updated and sync file"
     pr_exists_msg="`${pr_title}` PR already exists, just go to merge ${branch} branch directly."
     curl -X POST --data-urlencode "payload={\"channel\":  \"#eng-sre-log\", \"text\": \"<@${oncaller_slack_id}> ${pr_exists_msg} c.c. <!subteam^${oncall_group_slack_id}> \"}" "$SLACK_WEBHOOK_URI"
     echo "${pr_title} PR already exists"
