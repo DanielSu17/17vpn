@@ -1,0 +1,70 @@
+# missions:
+#   - id: stream-15-mins
+#     # 1: 開直播, 2: 收禮, 3: 新增粉絲, 4: 觀看直播
+#     type: 1
+#     i18n_key: pet_my_mission_1
+#     # 1: 時間以秒為單位, 2: 數量為單位
+#     unit_type: 1
+#     # feed id: 參閱 wave/pet/paid_items.yaml
+#     reward_feed_id: water
+#     # 單日獎勵領取上限，若無單日領取上限則填 0
+#     daily_reward_limit: 0
+#     # 達成任務的條件
+#     # 以 "當日直播 15 分鐘" 為例，unit_type 為 1 (時間以秒為單位)，則 threshold 應為 900 (15 分鐘 * 60 秒)
+#     # 以 "新增粉絲 1 位" 為例，unit type 為 (數量為單位)，則 threshold 應為 1
+#     threshold: 900
+#     extra_info:
+#       # type: 2 時需要該欄位
+#       gift_price_threshold: 30
+
+missions:
+  # 當日直播 15 分鐘
+  - id: stream-15-mins
+    type: 1
+    i18n_key: pet_my_mission_1
+    unit_type: 1
+    reward_feed_id: water
+    daily_reward_limit: 0
+    threshold: 900
+  # 當日直播滿 1 小時
+  - id: stream-1-hour
+    type: 1
+    i18n_key: pet_my_mission_2
+    unit_type: 1
+    reward_feed_id: milk
+    daily_reward_limit: 0
+    threshold: 3600
+  # 收禮 (Wave coins > 30 / 個） 當日上限 30 次
+  - id: receive-gift-price-over-30
+    type: 2
+    i18n_key: pet_my_mission_3
+    unit_type: 2
+    reward_feed_id: can
+    daily_reward_limit: 30
+    threshold: 1
+    extra_info:
+      gift_price_threshold: 30
+  # 新增粉絲數一位 當日上限 30 位
+  - id: add-30-fans
+    type: 3
+    i18n_key: pet_my_mission_4
+    unit_type: 2
+    reward_feed_id: can
+    daily_reward_limit: 30
+    threshold: 1
+  # 觀看直播滿 1 小時
+  - id: view-1-hour
+    type: 4
+    i18n_key: pet_my_mission_5
+    unit_type: 1
+    reward_feed_id: milk
+    daily_reward_limit: 0
+    threshold: 3600
+  # 觀看直播滿 2 小時
+  - id: view-2-hours
+    type: 4
+    i18n_key: pet_my_mission_6
+    unit_type: 1
+    reward_feed_id: can
+    daily_reward_limit: 0
+    threshold: 7200
