@@ -8,7 +8,6 @@ ENV=uat
 today=$(date "+%F %H:%M:%S")
 yaml_path=envs/"$ENV"/17app/stream/providers.yaml
 branch="switch_between_pubnub_and_ably"
-channel="#shot_testing_ch"
 
 # Check yq installed or not first, if not install it with v4.30.4
 FILE=/usr/bin/yq
@@ -89,13 +88,12 @@ then
   pr_title="[Infra] ${5}"
   if [[ $current_branch_pr_status != 'OPEN' ]];
   then
-    pr_url=$(gh pr create --title $pr_title --body "${today}
-    etcd已切換，這裡僅同步檔案")
-    curl -X POST --data-urlencode "payload={\"channel\": \"${channel}\", \"text\": \"<@${oncaller_slack_id}> `${pr_title}` PR Created c.c. <!subteam^${oncall_group_slack_id}>\n $pr_url \"}" "$SLACK_WEBHOOK_URI"
+    pr_url=$(gh pr create --title $pr_title --body "${today} etcd updated and sync file")
+    curl -X POST --data-urlencode "payload={\"channel\":  \"#eng-sre-log\", \"text\": \"<@${oncaller_slack_id}> `${pr_title}` PR Created c.c. <!subteam^${oncall_group_slack_id}>\n $pr_url \"}" "$SLACK_WEBHOOK_URI"
     echo "opened $pr_title PR"
   else
     pr_exists_msg="`${pr_title}` PR already exists, just go to merge ${branch} branch directly."
-    curl -X POST --data-urlencode "payload={\"channel\": \"${channel}\", \"text\": \"<@${oncaller_slack_id}> $pr_exists_msg c.c. <!subteam^${oncall_group_slack_id}> \"}" "$SLACK_WEBHOOK_URI"
+    curl -X POST --data-urlencode "payload={\"channel\":  \"#eng-sre-log\", \"text\": \"<@${oncaller_slack_id}> $pr_exists_msg c.c. <!subteam^${oncall_group_slack_id}> \"}" "$SLACK_WEBHOOK_URI"
     echo "$pr_title PR already exists"
   fi
 else

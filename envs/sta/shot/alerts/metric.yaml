@@ -1,0 +1,5 @@
+ably: 
+  enable: true
+  regex: "High Latency"
+  queryString: "sum:pubnub.ably.err{dd_env:k8sprod} by {internalcode,statuscode}.as_count()"
+  threshold: 0
