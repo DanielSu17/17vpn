@@ -88,7 +88,7 @@ then
   pr_title="[Infra] ${5}"
   if [[ $current_branch_pr_status != 'OPEN' ]];
   then
-    pr_url=$(gh pr create --title $pr_title --body "${today} etcd updated and sync file")
+    pr_url=$(gh pr create --title "${pr_title}" --body "${today} etcd updated and sync file")
     curl -X POST --data-urlencode "payload={\"channel\":  \"#eng-sre-log\", \"text\": \"<@${oncaller_slack_id}> `${pr_title}` PR Created c.c. <!subteam^${oncall_group_slack_id}>\n $pr_url \"}" "$SLACK_WEBHOOK_URI"
     echo "opened $pr_title PR"
   else
