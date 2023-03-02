@@ -4,6 +4,7 @@ set -euxo pipefail
 SLACK_USER_TOKEN="${SLACK_USER_TOKEN:-SLACK_USER_TOKEN_NOT_FOUND}"
 OPSGENIE_TOKEN="${OPSGENIE_TOKEN:-OPSGENIE_TOKEN_NOT_FOUND}"
 ENV=uat
+today=$(date +%F)
 yaml_path=envs/"$ENV"/17app/stream/providers.yaml
 branch="switch_between_pubnub_and_ably"
 channel="#shot_testing_ch"
