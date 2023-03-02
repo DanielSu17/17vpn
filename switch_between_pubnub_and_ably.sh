@@ -3,8 +3,9 @@ set -euxo pipefail
 
 SLACK_USER_TOKEN="${SLACK_USER_TOKEN:-SLACK_USER_TOKEN_NOT_FOUND}"
 OPSGENIE_TOKEN="${OPSGENIE_TOKEN:-OPSGENIE_TOKEN_NOT_FOUND}"
+#debug
 ENV=uat
-today=$(date +%F)
+today=$(date "+%F %H:%M:%S")
 yaml_path=envs/"$ENV"/17app/stream/providers.yaml
 branch="switch_between_pubnub_and_ably"
 channel="#shot_testing_ch"
@@ -54,19 +55,25 @@ else
   exit 0
 fi
 
-oncaller_mail="$(curl \
-  --connect-timeout 60 \
-  --max-time 60 \
-  --request GET "https://api.opsgenie.com/v2/schedules/sre_team_schedule/on-calls?scheduleIdentifierType=name&flat=true" \
-  --header "Authorization: GenieKey ${OPSGENIE_TOKEN}" | jq -r .data.onCallRecipients[])"
+# oncaller_mail="$(curl \
+#   --connect-timeout 60 \
+#   --max-time 60 \
+#   --request GET "https://api.opsgenie.com/v2/schedules/sre_team_schedule/on-calls?scheduleIdentifierType=name&flat=true" \
+#   --header "Authorization: GenieKey ${OPSGENIE_TOKEN}" | jq -r .data.onCallRecipients[])"
 
-echo "Oncaller's email: ${oncaller_mail}"
+# echo "Oncaller's email: ${oncaller_mail}"
 
-oncaller_slack_id="$(curl \
-  --connect-timeout 60 \
-  --max-time 60 \
-  --request GET "https://slack.com/api/users.lookupByEmail?email=${oncaller_mail}" \
-  --header "Authorization: Bearer ${SLACK_USER_TOKEN}" | jq -r .user.id)"
+# oncaller_slack_id="$(curl \
+#   --connect-timeout 60 \
+#   --max-time 60 \
+#   --request GET "https://slack.com/api/users.lookupByEmail?email=${oncaller_mail}" \
+#   --header "Authorization: Bearer ${SLACK_USER_TOKEN}" | jq -r .user.id)"
+
+# oncall_group_slack_id="S0280LZPHNF"
+
+#debug
+oncaller_slack_id="U040E6KAARL"
+oncall_group_slack_id="S04RL299DFZ"
 
 if [[ $(git diff --stat) != '' ]];
 then
@@ -75,22 +82,21 @@ then
   git config --global user.email "no-reply@17.media"
   git config --global user.name "github-actions-bot"
   git add $yaml_path
-  git commit -m "[Infra] Switch pubnub file sync"
+  git commit -m "[Infra] ${5} file sync"
   git push -f --set-upstream origin $branch
 
-  pr_url=$(gh pr create --title "[Infra] ${5}" --body $today)
-  curl -X POST --data-urlencode "payload={\"channel\": \"${channel}\", \"text\": \"<@${oncaller_slack_id}> Switch PR Created c.c. <!subteam^S0280LZPHNF>\n $pr_url \"}" "$SLACK_WEBHOOK_URI"
-
   current_branch_pr_status=$(gh pr view --json 'state' -q '.state' | xargs)
+  pr_title="[Infra] ${5}"
   if [[ $current_branch_pr_status != 'OPEN' ]];
   then
-    pr_url=$(gh pr create --title "[Infra] ${5}" --body $today)
-    curl -X POST --data-urlencode "payload={\"channel\": \"${channel}\", \"text\": \"<@${oncaller_slack_id}> Switch PR Created c.c. <!subteam^S0280LZPHNF>\n $pr_url \"}" "$SLACK_WEBHOOK_URI"
-    echo "opened PR"
+    pr_url=$(gh pr create --title $pr_title --body "${today}
+    etcd已切換，這裡僅同步檔案")
+    curl -X POST --data-urlencode "payload={\"channel\": \"${channel}\", \"text\": \"<@${oncaller_slack_id}> `${pr_title}` PR Created c.c. <!subteam^${oncall_group_slack_id}>\n $pr_url \"}" "$SLACK_WEBHOOK_URI"
+    echo "opened $pr_title PR"
   else
-    pr_exists_msg="PR already exists, just go to merge ${branch} branch directly."
-    curl -X POST --data-urlencode "payload={\"channel\": \"${channel}\", \"text\": \"<@${oncaller_slack_id}> ${pr_exists_msg} c.c. <!subteam^S0280LZPHNF> \"}" "$SLACK_WEBHOOK_URI"
-    echo "opened PR already exists"
+    pr_exists_msg="`${pr_title}` PR already exists, just go to merge ${branch} branch directly."
+    curl -X POST --data-urlencode "payload={\"channel\": \"${channel}\", \"text\": \"<@${oncaller_slack_id}> $pr_exists_msg c.c. <!subteam^${oncall_group_slack_id}> \"}" "$SLACK_WEBHOOK_URI"
+    echo "$pr_title PR already exists"
   fi
 else
   echo 'File unchanged.'

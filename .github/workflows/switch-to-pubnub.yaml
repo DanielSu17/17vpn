@@ -20,4 +20,4 @@ jobs:
           SLACK_USER_TOKEN: ${{ secrets.SLACK_USER_TOKEN }}
           OPSGENIE_TOKEN: ${{ secrets.OPSGENIE_TOKEN }}   
         run: |-
-          ./switch_between_pubnub_and_ably.sh 100 0 100 0 ${{ github.event.action}} 
+          ./switch_between_pubnub_and_ably.sh 100 0 100 0 ${{ github.workflow }} 
