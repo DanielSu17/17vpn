@@ -11,12 +11,66 @@
 # // | gift         | 1     | giftID
 # // | premiumbaby  | 2     | NaN
 # // | barrage      | 3     | baby, normal, rocket, spaceship
+
 merchandises:
-#shiin test for iOS 日本
+  - intervalID: MINV-2MROs6r7ilSC3W1YjWiX6be4DCM
+    merchandiseID: media17_giftpackage_tier1_202202_jp
+    productsOrder:
+      -
+    bonusesOrder:
+      - gift_small_dog_combo_1_10
+      - gift_2303_jp_pdt_charge_01_1_10
+    addons:
+      displayCountdown: true
+      countdownSecs: 86400
+      title:
+        key: iap_store_giftpackage_summer_us
+      titleImageURL: https://cdn.17app.co/392ead48-62dc-4321-9a86-923458ce19ab.png
+      discountImageURL: https://cdn.17app.co/cf2ed6d7-36fc-4f4b-88ad-555e0e68eca7.png
+      description:
+        - imageURL:
+          text:
+            key: iap_store_giftpackage_dialog_gift_desc
+    purchaseType: 1
+    # taInfo:
+    #     registerRange:
+    #       dayStart: 0
+    #       dayEnd: 7
+    #     type: 4
+    # abtestName: "" #禮包測試相關的abtest名稱, 需要 abtest.yaml也做相關的設定   
+
+#shiin test for Android 日本
+  - intervalID: MINV-2MROs51hYzzT3PlQ82yDMynGl6j
+    merchandiseID: media17_giftpackage_tier1_202202_jp
+    productsOrder:
+      -
+    bonusesOrder:
+      - gift_small_dog_combo_1_10
+      - gift_2303_jp_pdt_charge_01_1_10
+    addons:
+      displayCountdown: true
+      countdownSecs: 86400
+      title:
+        key: iap_store_giftpackage_summer_us
+      titleImageURL: https://cdn.17app.co/392ead48-62dc-4321-9a86-923458ce19ab.png
+      discountImageURL:
+      description:
+        - imageURL: https://cdn.17app.co/8cab3332-2e53-48e2-a588-dc469b091641.png
+          text:
+            key: iap_store_giftpackage_dialog_gift_desc
+    purchaseType: 1
+    # taInfo:
+    #     registerRange:
+    #       dayStart: 0
+    #       dayEnd: 7
+    #     type: 
+    # abtestName: "" #禮包測試相關的abtest名稱, 需要 abtest.yaml也做相關的設定
+
+# test for iOS 日本
   - intervalID: MINV-25DtwOs8RveQ4nYbQr25Upt1SZ9
     merchandiseID: media17_giftpackage_tier1_202202_jp
     productsOrder:
-      - premiumbaby_720_hrs
+      -
     bonusesOrder:
       - gift_2202_jp_startdash2_3_30
       - gift_2202_jp_startdash1_3_30
