@@ -44,7 +44,17 @@ regionPromotion:
       enable: true
       ios: "5.190.0"
       android: "5.106.0.0"
-
+  IN:
+    enable: true
+    enableTimeRange:
+      startTime: "2022-06-02 17:00:00 (GMT+0800)"
+      endTime: "2022-12-25 23:59:59 (GMT+0800)"
+    msgI18nKey: "Test_for_shortcut_game"
+    actionTarget: "onmyoji"
+    versionControl:
+      enable: true
+      ios: "3.190.0"
+      android: "2.106.0.0"
 
 games:
   fruitfarm:
@@ -354,3 +364,8 @@ regionGameOrder:
     - "iceandfire"    
     - "luxurydice"
     - "fruitfarm"
+  IN:
+    - "iceandfire"
+    - "onmyoji"
+    - "fruitfarm"
+    - "luxurydice"
