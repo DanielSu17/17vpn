@@ -19,10 +19,11 @@ else
     wget https://github.com/mikefarah/yq/releases/download/"$VERSION"/"$BINARY".tar.gz -O - | tar xz && sudo mv ${BINARY} /usr/bin/yq
 fi
 
+sudo apt install -y jq
 # call github api to get original yaml file
 gh api \
   -H "Accept: application/vnd.github+json" \
-  /repos/17media/configs/contents/"$yaml_path" > original.yaml
+  /repos/17media/configs/contents/"$yaml_path" | jq -r ".content" | base64 --decode > original.yaml
 echo "generate original.yaml"
 
 # copy the original yaml file to updated yaml file 
