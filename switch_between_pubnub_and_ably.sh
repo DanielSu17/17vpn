@@ -3,8 +3,7 @@ set -euxo pipefail
 
 SLACK_USER_TOKEN="${SLACK_USER_TOKEN:-SLACK_USER_TOKEN_NOT_FOUND}"
 OPSGENIE_TOKEN="${OPSGENIE_TOKEN:-OPSGENIE_TOKEN_NOT_FOUND}"
-#debug
-ENV=uat
+ENV=prod
 today=$(TZ=UTC-8 date "+%F %H:%M:%S")
 yaml_path=envs/"$ENV"/17app/stream/providers.yaml
 branch="switch_between_pubnub_and_ably"
@@ -54,25 +53,21 @@ else
   exit 0
 fi
 
-# oncaller_mail="$(curl \
-#   --connect-timeout 60 \
-#   --max-time 60 \
-#   --request GET "https://api.opsgenie.com/v2/schedules/sre_team_schedule/on-calls?scheduleIdentifierType=name&flat=true" \
-#   --header "Authorization: GenieKey ${OPSGENIE_TOKEN}" | jq -r .data.onCallRecipients[])"
+oncaller_mail="$(curl \
+  --connect-timeout 60 \
+  --max-time 60 \
+  --request GET "https://api.opsgenie.com/v2/schedules/sre_team_schedule/on-calls?scheduleIdentifierType=name&flat=true" \
+  --header "Authorization: GenieKey ${OPSGENIE_TOKEN}" | jq -r .data.onCallRecipients[])"
 
-# echo "Oncaller's email: ${oncaller_mail}"
+echo "Oncaller's email: ${oncaller_mail}"
 
-# oncaller_slack_id="$(curl \
-#   --connect-timeout 60 \
-#   --max-time 60 \
-#   --request GET "https://slack.com/api/users.lookupByEmail?email=${oncaller_mail}" \
-#   --header "Authorization: Bearer ${SLACK_USER_TOKEN}" | jq -r .user.id)"
+oncaller_slack_id="$(curl \
+  --connect-timeout 60 \
+  --max-time 60 \
+  --request GET "https://slack.com/api/users.lookupByEmail?email=${oncaller_mail}" \
+  --header "Authorization: Bearer ${SLACK_USER_TOKEN}" | jq -r .user.id)"
 
-# oncall_group_slack_id="S0280LZPHNF"
-
-#debug
-oncaller_slack_id="U040E6KAARL"
-oncall_group_slack_id="S04RL299DFZ"
+oncall_group_slack_id="S0280LZPHNF"
 
 if [[ $(git diff --stat) != '' ]];
 then
