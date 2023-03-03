@@ -425,5 +425,9 @@ conf:
     weight: 100
     white_list:
       apiv1: "keyword"
+  - url_key: "payment-notif-proxy_url"
+    weight: 100
+    white_list:
+      apiv1: "payment-notif-proxy"
 bypassedUserAgents:
   - ^runscope-radar.*
