@@ -8,7 +8,7 @@ iapFraud:
     # Under same 17LIVE account, user has requested Apple/Google refund more than <refund.maxRefund> times during last <refund.countPeriod> period.
     refund:
       maxRefund: 5
-      countPeriod: P1Y  # ISO8601, format:PnYnMnDTnHnMnS, e.g: P1Y1M1D means last 1 year + 1 month + 1 day 
+      countPeriod: P3M  # ISO8601, format:PnYnMnDTnHnMnS, e.g: P1Y1M1D means last 1 year + 1 month + 1 day 
   alert:
     enable: true
     notifChannels:
