@@ -89,10 +89,10 @@ then
   if [[ $current_branch_pr_status != 'OPEN' ]];
   then
     pr_url=$(gh pr create --title "${pr_title}" --body "${today} etcd updated and sync file")
-    curl -X POST --data-urlencode "payload={\"channel\":  \"#eng-sre-log\", \"text\": \"<@${oncaller_slack_id}> `${pr_title}` PR Created c.c. <!subteam^${oncall_group_slack_id}>\n ${pr_url} \"}" "$SLACK_WEBHOOK_URI"
+    curl -X POST --data-urlencode "payload={\"channel\":  \"#eng-sre-log\", \"text\": \"<@${oncaller_slack_id}> \`${pr_title}\` PR Created c.c. <!subteam^${oncall_group_slack_id}>\n ${pr_url} \"}" "$SLACK_WEBHOOK_URI"
     echo "opened ${pr_title} PR"
   else
-    pr_exists_msg="`${pr_title}` PR already exists, just go to merge ${branch} branch directly."
+    pr_exists_msg="\`${pr_title}\` PR already exists, just go to merge ${branch} branch directly."
     curl -X POST --data-urlencode "payload={\"channel\":  \"#eng-sre-log\", \"text\": \"<@${oncaller_slack_id}> ${pr_exists_msg} c.c. <!subteam^${oncall_group_slack_id}> \"}" "$SLACK_WEBHOOK_URI"
     echo "${pr_title} PR already exists"
   fi
