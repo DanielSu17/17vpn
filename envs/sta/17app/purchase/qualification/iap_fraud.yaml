@@ -3,8 +3,8 @@ iapFraud:
   rules:
     # Accumulated IAP BBC purchase more than <newbie.maxPurchase> times within <newbie.minutes> minutes after 17LIVE account has created.
     newBie:
-      minutes: 15
-      maxPurchase: 6
+      minutes: 600
+      maxPurchase: 10
     # Under same 17LIVE account, user has requested Apple/Google refund more than <refund.maxRefund> times during last <refund.countPeriod> period.
     refund:
       maxRefund: 7
