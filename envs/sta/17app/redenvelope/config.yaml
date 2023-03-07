@@ -22,17 +22,17 @@ handleUnfinishedMaxDays: 5
 sumOfPickedTTLHours: 6 # 多少時間完全沒搶到點數才會reset, 人會休息但電腦不會 所以設定6小時
 pickedSleepPenaltyMsecs: 250 # 處罰基本單位
 maxPenaltyMsecs: 3000 # 最多被處罰的時間
-sumOfPickedThreshold: 100000000 # 超過多少點才會被處罰
+sumOfPickedThreshold: 250 # 超過多少點才會被處罰
 pickProbabilityThresholds: # 每日累積搶到點數，對應的搶紅包機率限制(百分比)
-  400: 100 # 50
-  500: 100 # 25
-  600: 100 # 13
-  700: 100 # 7
-  800: 100 # 5
-  900: 100 # 2
-  1000: 100 # 0
+  400: 50 # 50
+  500: 25 # 25
+  600: 13 # 13
+  700: 7 # 7
+  800: 5 # 5
+  900: 2 # 2
+  1000: 0 # 0
 dailySumOfPickedRefreshHour: 5 # 每日累積點數的重置時間，台灣時間5點。
-userLockPickedSecs: 1 # 使用者搶到紅包後，多少秒內搶紅包會失敗
+userLockPickedSecs: 45 # 使用者搶到紅包後，多少秒內搶紅包會失敗
 enableBatchUpsertForPurge: true
 batchUpsertStartTime: 1648447200 # 2022/3/28 1400 GMT+8
 bonusBoxSupportedVersionIOS: "3.218.1" # 支援 bonusbox 的最低版號
