@@ -1,0 +1,85 @@
+inviterRewardLimitBBC: 2000 # limit of inviter rewards
+
+# type are defined as following (same as newbie rewards in dailyquest.yaml)
+# - 1: DAILY_CHECK_IN
+# - 2: ENTER_LIVE
+# - 3: FOLLOW_STREAMER
+# - 4: WATCH_CLIP
+# - 5: JOIN_17Q
+# - 6: LIVE_CHECK_IN_SIX, sing-in 6 days登入六天
+# - 7: LIVE_CHECK_IN_SEVEN, sing-in 7 days登入七天
+# - 8: LIKE_POST
+# - 9: COMMENT_LIVE , could only be exactly 3 times due to lokalise key
+# - 10: SEND_GIFT
+# - 11: BUY_POINT
+# - 12: DailyQuestType_WATCH_LIVE_10_CONTINUE, 連續看播10分鐘
+# - 13: DailyQuestType_WATCH_LIVE_30_TOTAL, 當日看播滿30分鐘
+# - 14: DailyQuestType_LIVE_CHECK_IN_TWO_TOTAL, 7天內有2天看播
+# ex:
+#   - type: 1
+#     point: 25
+#     exp: 0
+#     required: 1
+#     withReminder: false
+
+quests:
+  - version: 1 # version of this referral rewards setting
+    startTime: 2023-03-06 00:00:00 (GMT+0800)  # startTime of this version applied
+    inviterRewardBBC: 100 # reward for inviter when invitee finish all missions (in BBC)
+    missionDay: 7 # days that missions appear
+    missions:
+      - type: 2
+        point: 0
+        exp: 0
+        required: 1
+        voucherReward:
+          type: 3
+          itemID: 2112_jp_breakwall_bp
+          amount: 5
+          intervalSec: 604800
+      - type: 3
+        point: 0
+        exp: 0
+        required: 3
+        voucherReward:
+          type: 3
+          itemID: 2106_hk_angel_d_bp
+          amount: 6
+          intervalSec: 604800
+      - type: 8
+        point: 0
+        exp: 0
+        required: 1
+        voucherReward:
+          type: 3
+          itemID: 2102_hk_love_bp
+          amount: 5
+          intervalSec: 604800
+      - type: 9
+        point: 0
+        exp: 0
+        required: 3
+        voucherReward:
+          type: 3
+          itemID: 2106_hk_care_bp
+          amount: 3
+          intervalSec: 604800
+      - type: 10
+        point: 0
+        exp: 0
+        required: 1
+        voucherReward:
+          type: 3
+          itemID: 2106_hk_angel_c_bp
+          amount: 3
+          intervalSec: 604800
+      - type: 14
+        point: 0
+        exp: 0
+        required: 2
+        withReminder: true
+        voucherReward:
+          type: 3
+          itemID: 2003_tw_dance_bp
+          amount: 6
+          intervalSec: 604800
