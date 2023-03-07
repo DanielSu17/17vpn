@@ -1,0 +1,60 @@
+payMethods:
+  36: # applestore
+    enable: true
+    env:
+      prod:
+        notifUrl: "https://wap-api.17app.co/api/v1/pay/appstore/notif"
+      sta:
+        notifUrl: "https://sta-wap-api.17app.co/api/v1/pay/appstore/notif"
+      uat:
+        notifUrl: "https://uat-wap-api.17app.co/api/v1/pay/appstore/notif"
+      dev:
+        notifUrl: "https://dev-wap-api.17app.co/api/v1/pay/appstore/notif"
+  8: # gmo
+    enable: true
+    env:
+      prod:
+        notifUrl: "https://wap-api.17app.co/api/v1/pay/orders/gmo/notif"
+      sta:
+        notifUrl: "https://sta-wap-api.17app.co/api/v1/pay/orders/gmo/notif"
+      uat:
+        notifUrl: "https://uat-wap-api.17app.co/api/v1/pay/orders/gmo/notif"
+      dev:
+        notifUrl: "https://dev-wap-api.17app.co/api/v1/pay/orders/gmo/notif"
+  67: # mycard
+    enable: true
+    env:
+      prod:
+        makeupUrl: "https://wap-api.17app.co/api/v1/pay/orders/mycard/makeup"
+        queryUrl: "https://wap-api.17app.co/api/v1/pay/orders/mycard/query"
+      sta:
+        makeupUrl: "https://sta-wap-api.17app.co/api/v1/pay/orders/mycard/makeup"
+        queryUrl: "https://sta-wap-api.17app.co/api/v1/pay/orders/mycard/query"
+      uat:
+        makeupUrl: "https://uat-wap-api.17app.co/api/v1/pay/orders/mycard/makeup"
+        queryUrl: "https://uat-wap-api.17app.co/api/v1/pay/orders/mycard/query"
+      dev:
+        makeupUrl: "https://dev-wap-api.17app.co/api/v1/pay/orders/mycard/makeup"
+        queryUrl: "https://dev-wap-api.17app.co/api/v1/pay/orders/mycard/query"
+  70: # paidy
+    enable: true
+    env:
+      prod:
+        notifUrl: "https://wap-api.17app.co/api/v1/pay/orders/paidy/notif"
+      sta:
+        notifUrl: "https://sta-wap-api.17app.co/api/v1/pay/orders/paidy/notif"
+      uat:
+        notifUrl: "https://uat-wap-api.17app.co/api/v1/pay/orders/paidy/notif"
+      dev:
+        notifUrl: "https://dev-wap-api.17app.co/api/v1/pay/orders/paidy/notif"
+  62: # stripe
+    enable: true
+    env:
+      prod:
+        notifUrl: "https://wap-api.17app.co/api/v1/pay/orders/stripe/notif"
+      sta:
+        notifUrl: "https://sta-wap-api.17app.co/api/v1/pay/orders/stripe/notif"
+      uat:
+        notifUrl: "https://uat-wap-api.17app.co/api/v1/pay/orders/stripe/notif"
+      dev:
+        notifUrl: "https://dev-wap-api.17app.co/api/v1/pay/orders/stripe/notif"
