@@ -106,11 +106,21 @@
   - name: k8ssta-concert-trade-main
     minReplicas: 30
 
-# exp rockviewer
-- startTime: "2023-02-17 13:00:00 (GMT+0800)"
-  endTime: "2023-02-17 15:00:00 (GMT+0800)"
+# 0307 mysql operations
+- startTime: "2023-03-07 12:15:00 (GMT+0800)"
+  endTime: "2023-03-07 13:30:00 (GMT+0800)"
   HPAConfigs:
+  - name: k8ssta-goapi-main
+    minReplicas: 80
   - name: k8ssta-golives-main
-    minReplicas: 19
+    minReplicas: 80
+  - name: k8ssta-gotrade-main
+    minReplicas: 40
   - name: k8ssta-revprox-tw-main
-    minReplicas: 18
+    minReplicas: 36
+  - name: k8ssta-gocells-main
+    minReplicas: 40
+  - name: k8ssta-concert-stream-tw-main
+    minReplicas: 30
+  - name: k8ssta-concert-trade-main
+    minReplicas: 30
