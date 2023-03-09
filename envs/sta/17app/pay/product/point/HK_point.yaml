@@ -298,9 +298,39 @@ eventBasedIAP:
       iapInfo:  
         latestHalfMonthAmount: 
           gt: 0
-        
+
+
 defaultIAPs:
-  - layoutInfo:
+  - startTime: "2023-03-21T13:00:00+08:00"
+    layoutInfo:
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#F5487D"
+      priceColor: "#28232D"
+    pointProducts:
+      - productID: "media17_points_25500"
+        bonusPoint: 0
+        shouldHighlight: false
+      - productID: "media17_points_10800"
+        bonusPoint: 0
+        shouldHighlight: false
+      - productID: "media17_points_6000"
+        bonusPoint: 0
+        shouldHighlight: false
+      - productID: "media17_points_2500"
+        bonusPoint: 0
+        shouldHighlight: false
+      - productID: "media17_points_1210"
+        bonusPoint: 0
+        shouldHighlight: false
+      - productID: "media17_points_230"
+        bonusPoint: 0
+        shouldHighlight: true
+
+  - endTime: "2023-03-21T13:00:00+08:00"
+    layoutInfo:
       highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
       highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
     colorInfo:
@@ -325,23 +355,4 @@ defaultIAPs:
         shouldHighlight: false
       - productID: "media17_points_330"
         bonusPoint: 0
-        shouldHighlight: false
-    # pointProducts: #Barton - Test changing HK productID to TW productID (2022-11-15)
-    #   - productID: "media17_points_25500"
-    #     bonusPoint: 0
-    #     shouldHighlight: true
-    #   - productID: "media17_points_10800"
-    #     bonusPoint: 0
-    #     shouldHighlight: false
-    #   - productID: "media17_points_6000"
-    #     bonusPoint: 0
-    #     shouldHighlight: false
-    #   - productID: "media17_points_2500"
-    #     bonusPoint: 0
-    #     shouldHighlight: false
-    #   - productID: "media17_points_1210"
-    #     bonusPoint: 0
-    #     shouldHighlight: false
-    #   - productID: "media17_points_230"
-    #     bonusPoint: 0
-    #     shouldHighlight: true
+        shouldHighlight: true

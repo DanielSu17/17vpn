@@ -4,46 +4,2099 @@
 # // | VIP |  1  | x 天 尊榮寶寶 |
 
 # // example of firstPurchaseType
-# // | Type | Value | 
-# // | ---  | ----  | 
-# // | LimitedTime |  0  | 限時首儲
-# // | CareerFirstTime |  1  | 生涯首儲
-  
+# // |     Type      | Value | 
+# // |    -------    |  ---  | 
+# // |  LimitedTime  |   0   | 限時1次
+# // |    Career     |   1   | 限時生涯首儲
+# // |    UnLimit    |   2   | 限時不限次數
+
 eventBasedIAP:
+#amy首儲測試
+  - startTime: "2022-09-20T12:30:00+08:00"
+    endTime: "2022-09-27T11:59:59+08:00"
+    showCountdownUnderSticker: true
+    showCountdownInPopUp: true
+    stickerURL:
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/a5a797e8-505e-4403-8417-ec4612af9382.png"
+    layoutInfo:
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+        premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint:  0
+        shouldHighlight: false
+      - productID: "media17_points_6000"
+        bonusPoint:  666
+        shouldHighlight: true
+      - productID: "media17_points_3540"
+        bonusPoint:  0
+        shouldHighlight: false
+      - productID: "media17_points_8550"
+        bonusPoint:  1025
+        shouldHighlight: true
+      - productID: "media17_points_15420"
+        bonusPoint:  0
+        shouldHighlight: false
+      - productID: "media17_points_35980"
+        bonusPoint:  0
+        shouldHighlight: false
+    firstPurchaseType: 0
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: false
+    abtestName:
+    
+#7/29 ~ 7/31 七月首儲- Angie
+  - startTime: "2022-07-25T20:00:00-07:00"
+    endTime: "2022-12-01T00:00:00-07:00"
+    showCountdownUnderSticker: false
+    showCountdownInPopUp: false
+    stickerURL: "https://cdn.17app.co/e5d841fd-f6e0-4519-bd5d-edf12932a720.png"
+    stickerURLInGiftbox: "https://cdn.17app.co/e5d841fd-f6e0-4519-bd5d-edf12932a720.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/87953ae5-e053-439c-9ef7-8eb693bd5a8e.png"
+    layoutInfo:
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+        premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint:  0
+        shouldHighlight: false
+      - productID: "media17_points_1720"
+        bonusPoint:  0
+        shouldHighlight: false
+      - productID: "media17_points_3540"
+        bonusPoint:  110
+        shouldHighlight: true
+      - productID: "media17_points_8550"
+        bonusPoint:  430
+        shouldHighlight: true
+      - productID: "media17_points_15420"
+        bonusPoint:  1080
+        shouldHighlight: true
+      - productID: "media17_points_35980"
+        bonusPoint:  0
+        shouldHighlight: false
+    firstPurchaseType: 1
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: false
+    abtestName:
+#8/29 - 8/31 八月閃購 - Angie
+  - startTime: "2022-08-23T00:00:00-07:00"
+    endTime: "2022-08-26T00:00:00-07:00"
+    showCountdownUnderSticker: false
+    showCountdownInPopUp: false
+    stickerURL: "https://cdn.17app.co/cd5aef18-66ac-435b-8a00-61bef42954e7.png" 
+    stickerURLInGiftbox: "https://cdn.17app.co/cd5aef18-66ac-435b-8a00-61bef42954e7.png" 
+    eventInfo: #don't change  (Ask ENG if there are any new changes? ENG-17 channel)
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/2929765f-5ac4-4ec5-8f19-685051602e36.png" #IAP頁面上的圖
+    layoutInfo: #don't change 
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png" #需要問工程師
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo: #don't change
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint:  0
+        shouldHighlight: false
+      - productID: "media17_points_1720"
+        bonusPoint:  0
+        shouldHighlight: false
+      - productID: "media17_points_3540"
+        bonusPoint:  110
+        shouldHighlight: true
+      - productID: "media17_points_8550"
+        bonusPoint:  430
+        shouldHighlight: true
+      - productID: "media17_points_15420"
+        bonusPoint:  1080
+        shouldHighlight: true
+      - productID: "media17_points_35980"
+        bonusPoint:  0
+        shouldHighlight: false
+    firstPurchaseType: 0 #限時1次
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true  #要問工程師
+    abtestName:
+#7/2 - 7/4 七月閃購 - Angie
+  - startTime: "2022-06-24T14:00:00-07:00"
+    endTime: "2022-06-26T18:00:00-07:00"
+    showCountdownUnderSticker: false
+    showCountdownInPopUp: false
+    stickerURL: "https://cdn.17app.co/da38c60b-e042-4550-94b0-83c6bc210b35.png" 
+    stickerURLInGiftbox: "https://cdn.17app.co/da38c60b-e042-4550-94b0-83c6bc210b35.png" 
+    eventInfo: #don't change  (Ask ENG if there are any new changes? ENG-17 channel)
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/07b4083c-78e3-47ba-bb17-7a4c597f971a.png" #IAP頁面上的圖
+    layoutInfo: #don't change 
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png" #需要問工程師
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo: #don't change
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint:  0
+        shouldHighlight: false
+      - productID: "media17_points_1720"
+        bonusPoint:  0
+        shouldHighlight: false
+      - productID: "media17_points_3540"
+        bonusPoint:  180
+        shouldHighlight: true
+      - productID: "media17_points_8550"
+        bonusPoint:  860
+        shouldHighlight: true
+      - productID: "media17_points_15420"
+        bonusPoint:  2300
+        shouldHighlight: true
+      - productID: "media17_points_35980"
+        bonusPoint:  0
+        shouldHighlight: false
+    firstPurchaseType: 0 #限時1次
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true  #要問工程師
+    abtestName:
 
-productBasedIAP:
+#6/11 - 6/13 六月閃購 - Angie
+  - startTime: "2022-06-08T18:00:00-07:00"
+    endTime: "2022-06-09T18:00:00-07:00"
+    showCountdownUnderSticker: false
+    showCountdownInPopUp: false
+    stickerURL: "https://cdn.17app.co/61439e52-1490-4116-b38b-1a621695262f.png" 
+    stickerURLInGiftbox: "https://cdn.17app.co/61439e52-1490-4116-b38b-1a621695262f.png" 
+    eventInfo: #don't change  (Ask ENG if there are any new changes? ENG-17 channel)
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/5eeaa4cc-d1c0-42e9-a103-436b783cba59.png" #IAP頁面上的圖
+    layoutInfo: #don't change 
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png" #需要問工程師
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo: #don't change
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint:  0
+        shouldHighlight: false
+      - productID: "media17_points_1720"
+        bonusPoint:  0
+        shouldHighlight: false
+      - productID: "media17_points_3540"
+        bonusPoint:  350
+        shouldHighlight: true
+      - productID: "media17_points_8550"
+        bonusPoint:  1300
+        shouldHighlight: true
+      - productID: "media17_points_15420"
+        bonusPoint:  3100
+        shouldHighlight: true
+      - productID: "media17_points_35980"
+        bonusPoint:  0
+        shouldHighlight: false
+    firstPurchaseType: 0 #限時1次
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true  #要問工程師
+    abtestName:
+# Welcome Offer August H2
+  - startTime: "2022-08-10T15:00:00-07:00" #Remember to change 
+    endTime: "2022-08-20T21:00:00-07:00" #Remember to change 
+    showCountdownUnderSticker: false #If you need countdown set it to true
+    showCountdownInPopUp: false #If you need countdown set it to true
+    stickerURL: "https://cdn.17app.co/ce43a710-0717-419a-ad83-c1164a2f2090.png"
+    stickerURLInGiftbox: "https://cdn.17app.co/ce43a710-0717-419a-ad83-c1164a2f2090.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/ab134399-7903-4b2a-9786-f020c0c4f334.png" #change if need
+    layoutInfo:
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_3540"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight:  true
+    firstPurchaseType: 1 #Flash sale change it to 0, first time purchase to 1
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true
+    abtestName:
+# Welcome Offer August H1
+  - startTime: "2022-07-22T15:00:00-07:00" #Remember to change 
+    endTime: "2022-07-30T21:00:00-07:00" #Remember to change 
+    showCountdownUnderSticker: false #If you need countdown set it to true
+    showCountdownInPopUp: false #If you need countdown set it to true
+    stickerURL: "https://cdn.17app.co/7b890c87-1122-418d-83fa-a8a8258e4afc.png"
+    stickerURLInGiftbox: "https://cdn.17app.co/7b890c87-1122-418d-83fa-a8a8258e4afc.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/159e6e73-4aaf-4d58-bf2d-a99f23fa1fcd.png" #change if need
+    layoutInfo:
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_3540"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight:  true
+    firstPurchaseType: 1 #Flash sale change it to 0, first time purchase to 1
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true
+    abtestName:
+# Welcome Offer June H1
+  - startTime: "2022-05-25T16:00:00-07:00" #Remember to change 
+    endTime: "2022-05-30T21:00:00-07:00" #Remember to change 
+    showCountdownUnderSticker: false #If you need countdown set it to true
+    showCountdownInPopUp: false #If you need countdown set it to true
+    stickerURL: "https://cdn.17app.co/893d7f8e-f8f4-426c-bd72-98602532b2f4.png"
+    stickerURLInGiftbox: "https://cdn.17app.co/893d7f8e-f8f4-426c-bd72-98602532b2f4.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/338ce39e-3622-4b46-92ab-caa6e4de4ddd.png" #change if need
+    layoutInfo:
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_3540"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight:  false
+    firstPurchaseType: 1 #Flash sale change it to 0, first time purchase to 1
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true
+    abtestName:
 
-# Deprecated
-defaultIAP:
-  layoutInfo:
-    highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
-    highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
-  colorInfo:
-    pointColor: "#28232D"
-    bonusPointColor: "#F5487D"
-    priceColor: "#28232D"
-  pointProducts:
-    - productID: "media17_points_14000"
-      bonusPoint: 0
-      shouldHighlight:  true
-    - productID: "media17_points_6500"
-      bonusPoint: 0
-      shouldHighlight:  false
-    - productID: "media17_points_2400"
-      bonusPoint: 0
-      shouldHighlight:  false
-    - productID: "media17_points_1100"
-      bonusPoint: 0
-      shouldHighlight:  false
-    - productID: "media17_points_500"
-      bonusPoint: 0
-      shouldHighlight:  false
-    - productID: "media17_points_100"
-      bonusPoint: 0
-      shouldHighlight:  false
+# Welcome Offer June H2
+  - startTime: "2022-06-09T18:00:00-07:00" #Remember to change 
+    endTime: "2022-06-15T21:00:00-07:00" #Remember to change 
+    showCountdownUnderSticker: false #If you need countdown set it to true
+    showCountdownInPopUp: false #If you need countdown set it to true
+    stickerURL: "https://cdn.17app.co/2d3269ed-8983-40c3-9160-741fdf100ad1.png"
+    stickerURLInGiftbox: "https://cdn.17app.co/2d3269ed-8983-40c3-9160-741fdf100ad1.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/1f076fe3-34e9-48be-b797-3b9810165cad.png" #change if need
+    layoutInfo:
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_3540"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight:  false
+    firstPurchaseType: 1 #Flash sale change it to 0, first time purchase to 1
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true
+    abtestName:
+# Welcome Offer July H2
+  - startTime: "2022-07-14T16:00:00-07:00" #Remember to change 
+    endTime: "2022-07-20T21:00:00-07:00" #Remember to change 
+    showCountdownUnderSticker: false #If you need countdown set it to true
+    showCountdownInPopUp: false #If you need countdown set it to true
+    stickerURL: "https://cdn.17app.co/0b6eea02-2d18-439a-9eb1-30ffd2948014.png"
+    stickerURLInGiftbox: "https://cdn.17app.co/0b6eea02-2d18-439a-9eb1-30ffd2948014.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/c2ef36d5-541c-4f3b-b8b2-4477aa775a97.png" #change if need
+    layoutInfo:
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_3540"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight:  false
+    firstPurchaseType: 1 #Flash sale change it to 0, first time purchase to 1
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true
+    abtestName:
+# Welcome Offer May H2
+  - startTime: "2022-05-10T18:00:00-07:00" #Remember to change 
+    endTime: "2022-05-12T16:00:00-07:00" #Remember to change 
+    showCountdownUnderSticker: false #If you need countdown set it to true
+    showCountdownInPopUp: false #If you need countdown set it to true
+    stickerURL: "https://cdn.17app.co/da932f13-3eb1-4208-943c-efb347265f43.png"
+    stickerURLInGiftbox: "https://cdn.17app.co/da932f13-3eb1-4208-943c-efb347265f43.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/c698a5bc-404a-4873-9b38-b1030875b520.png" #change if need
+    layoutInfo:
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_3540"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight:  false
+    firstPurchaseType: 1 #Flash sale change it to 0, first time purchase to 1
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true
+    abtestName:
+#4/28 ~ 4/30 四月首儲- Angie
+  - startTime: "2022-04-21T13:00:00-07:00"
+    endTime: "2022-04-23T00:00:00-07:00"
+    showCountdownUnderSticker: false
+    showCountdownInPopUp: false
+    stickerURL: "https://cdn.17app.co/5b149c56-9748-4f54-a09c-9a32cfa6ef7b.png"
+    stickerURLInGiftbox: "https://cdn.17app.co/5b149c56-9748-4f54-a09c-9a32cfa6ef7b.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/c2c5ceb7-55f8-4983-ad31-533a6736f9ff.png"
+    layoutInfo:
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+        premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint:  0
+        shouldHighlight: false
+      - productID: "media17_points_1720"
+        bonusPoint:  210
+        shouldHighlight: true
+      - productID: "media17_points_3540"
+        bonusPoint:  0
+        shouldHighlight: false
+      - productID: "media17_points_8550"
+        bonusPoint:  1700
+        shouldHighlight: true
+      - productID: "media17_points_15420"
+        bonusPoint:  0
+        shouldHighlight: false
+      - productID: "media17_points_35980"
+        bonusPoint:  0
+        shouldHighlight: false
+    firstPurchaseType: 1
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: false
+    abtestName:
+
+#5/17 ~ 5/19 五月首儲- Angie
+  - startTime: "2022-05-12T16:00:00-07:00"
+    endTime: "2022-05-12T18:00:00-07:00"
+    showCountdownUnderSticker: false
+    showCountdownInPopUp: false
+    stickerURL: "https://cdn.17app.co/f1746fcf-dd8a-4d74-8d76-dea3dc029765.png"
+    stickerURLInGiftbox: "https://cdn.17app.co/f1746fcf-dd8a-4d74-8d76-dea3dc029765.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/0a497a83-4155-4dc7-98b6-c74d94fc9b0d.png"
+    layoutInfo:
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+        premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint:  0
+        shouldHighlight: false
+      - productID: "media17_points_1720"
+        bonusPoint:  0
+        shouldHighlight: false
+      - productID: "media17_points_3540"
+        bonusPoint:  430
+        shouldHighlight: true
+      - productID: "media17_points_8550"
+        bonusPoint:  1700
+        shouldHighlight: true
+      - productID: "media17_points_15420"
+        bonusPoint:  4600
+        shouldHighlight: true
+      - productID: "media17_points_35980"
+        bonusPoint:  0
+        shouldHighlight: false
+    firstPurchaseType: 1
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: false
+    abtestName:
+
+#6/28 ~ 6/30 六月首儲- Angie
+  - startTime: "2022-06-23T12:00:00-07:00"
+    endTime: "2022-06-23T18:00:00-07:00"
+    showCountdownUnderSticker: false
+    showCountdownInPopUp: false
+    stickerURL: "https://cdn.17app.co/da5242a8-3418-4fce-85d4-0c387a915657.png"
+    stickerURLInGiftbox: "https://cdn.17app.co/da5242a8-3418-4fce-85d4-0c387a915657.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/c79290be-6c8b-437d-bf92-479f3d5a3079.png"
+    layoutInfo:
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+        premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint:  0
+        shouldHighlight: false
+      - productID: "media17_points_1720"
+        bonusPoint:  0
+        shouldHighlight: false
+      - productID: "media17_points_3540"
+        bonusPoint:  110
+        shouldHighlight: true
+      - productID: "media17_points_8550"
+        bonusPoint:  430
+        shouldHighlight: true
+      - productID: "media17_points_15420"
+        bonusPoint:  1080
+        shouldHighlight: true
+      - productID: "media17_points_35980"
+        bonusPoint:  0
+        shouldHighlight: false
+    firstPurchaseType: 1
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: false
+    abtestName:
+# Welcome Offer July H1
+  - startTime: "2022-06-23T18:00:00-07:00" #Remember to change 
+    endTime: "2022-06-24T14:00:00-07:00" #Remember to change 
+    showCountdownUnderSticker: false #If you need countdown set it to true
+    showCountdownInPopUp: false #If you need countdown set it to true
+    stickerURL: "https://cdn.17app.co/f99376f5-448a-466d-a1ab-0b1ef341a3ef.png"
+    stickerURLInGiftbox: "https://cdn.17app.co/f99376f5-448a-466d-a1ab-0b1ef341a3ef.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/f14c679c-772e-46e6-83ae-c25c853a4e63.png" #change if need
+    layoutInfo:
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_3540"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight:  false
+    firstPurchaseType: 1 #Flash sale change it to 0, first time purchase to 1
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true
+    abtestName:
+
+#5/29 - 5/31 五月閃購 - Angie
+  - startTime: "2022-05-12T18:00:00-07:00"
+    endTime: "2022-05-15T18:00:00-07:00"
+    showCountdownUnderSticker: false
+    showCountdownInPopUp: false
+    stickerURL: "https://cdn.17app.co/9332b30a-85cb-4953-9721-53f750384f90.png" 
+    stickerURLInGiftbox: "https://cdn.17app.co/9332b30a-85cb-4953-9721-53f750384f90.png" 
+    eventInfo: #don't change  (Ask ENG if there are any new changes? ENG-17 channel)
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/c318ad65-bd8e-4154-afa5-079622e80eb8.png" #IAP頁面上的圖
+    layoutInfo: #don't change 
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png" #需要問工程師
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo: #don't change
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint:  0
+        shouldHighlight: false
+      - productID: "media17_points_1720"
+        bonusPoint:  0
+        shouldHighlight: false
+      - productID: "media17_points_3540"
+        bonusPoint:  350
+        shouldHighlight: true
+      - productID: "media17_points_8550"
+        bonusPoint:  1300
+        shouldHighlight: true
+      - productID: "media17_points_15420"
+        bonusPoint:  3100
+        shouldHighlight: true
+      - productID: "media17_points_35980"
+        bonusPoint:  0
+        shouldHighlight: false
+    firstPurchaseType: 0 #限時1次
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true  #要問工程師
+    abtestName:
+
+#3/17 ~ 3/20 St. Patrick's Day 閃購- Angie
+  - startTime: "2022-03-15T11:00:00-07:00"
+    endTime: "2022-03-18T00:00:00-07:00"
+    showCountdownUnderSticker: false
+    showCountdownInPopUp: false
+    stickerURL: "https://cdn.17app.co/718efc64-f741-4984-8637-6ba2d8d303d2.png" 
+    stickerURLInGiftbox: "https://cdn.17app.co/718efc64-f741-4984-8637-6ba2d8d303d2.png" 
+    eventInfo: #don't change  (Ask ENG if there are any new changes? ENG-17 channel)
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/31e326db-c4a6-4a37-ba05-08bc9d7c2ff0.png" #IAP頁面上的圖
+    layoutInfo: #don't change 
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png" #需要問工程師
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo: #don't change
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 10
+        shouldHighlight:  true
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_3540"
+        bonusPoint: 180
+        shouldHighlight:  true
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_15420"
+        bonusPoint: 1080
+        shouldHighlight: true
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight: false
+    firstPurchaseType: 0 #限時1次
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true  #要問工程師
+    abtestName:
+
+# March Welcome Offer March
+  - startTime: "2022-02-23T14:00:00-08:00" #Remember to change 
+    endTime: "2022-02-28T21:00:00-08:00" #Remember to change 
+    showCountdownUnderSticker: false #If you need countdown set it to true
+    showCountdownInPopUp: false #If you need countdown set it to true
+    stickerURL: "https://cdn.17app.co/e9af2326-cb63-4f23-ae23-e8de39790a9d.png"
+    stickerURLInGiftbox: "https://cdn.17app.co/e9af2326-cb63-4f23-ae23-e8de39790a9d.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/f5051999-07ce-40ff-9bc8-cc64a5fdb111.png" #change if need
+    layoutInfo:
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_3540"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight:  false
+    firstPurchaseType: 1 #Flash sale change it to 0, first time purchase to 1
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true
+    abtestName:
+
+# Welcome Offer December
+  - startTime: "2021-12-01T18:00:00-08:00" #Remember to change 
+    endTime: "2021-12-31T21:00:00-08:00" #Remember to change 
+    showCountdownUnderSticker: false #If you need countdown set it to true
+    showCountdownInPopUp: false #If you need countdown set it to true
+    stickerURL: "https://cdn.17app.co/d7ee074b-0069-4f21-9343-934ef7f1889b.jpg"
+    stickerURLInGiftbox: "https://cdn.17app.co/d7ee074b-0069-4f21-9343-934ef7f1889b.jpg"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/f7401726-5873-4203-bf75-ffe145a21a5b.png" #change if need
+    layoutInfo:
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_3540"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight:  false
+    firstPurchaseType: 1 #Flash sale change it to 0, first time purchase to 1
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true
+    abtestName:
+
+#2/14 ~ 2/18 IAP任務＋+比翼鳥- Angie
+  - startTime: "2022-02-14T13:00:00-08:00"
+    endTime: "2022-02-17T23:59:59-08:00"
+    showCountdownUnderSticker: false
+    showCountdownInPopUp: false
+    stickerURL: "https://cdn.17app.co/89b4ade1-c754-4701-a425-2ac41885f8e6.png" 
+    stickerURLInGiftbox: "https://cdn.17app.co/89b4ade1-c754-4701-a425-2ac41885f8e6.png" 
+    eventInfo: #don't change  (Ask ENG if there are any new changes? ENG-17 channel)
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/8f6c7488-12d5-4177-8095-c76d0b0e1718.png" #IAP頁面上的圖
+    layoutInfo: #don't change 
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png" #需要問工程師
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo: #don't change
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_3540"
+        bonusPoint: 110
+        shouldHighlight:  true
+      - productID: "media17_points_8550"
+        bonusPoint: 430
+        shouldHighlight:  true
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight: false
+      - productID: "media17_points_35980"
+        bonusPoint: 2520
+        shouldHighlight: true
+    firstPurchaseType: 2 #限時1次
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true  #要問工程師
+    abtestName:
+
+#Feb welcome offer- Angie
+  - startTime: "2022-02-01T18:00:00-08:00"
+    endTime: "2022-02-28T21:00:00-08:00"
+    showCountdownUnderSticker: false
+    showCountdownInPopUp: false
+    stickerURL: "https://cdn.17app.co/0b5f2f58-6344-45b6-8bef-0bc1074a087c.png" 
+    stickerURLInGiftbox: "https://cdn.17app.co/0b5f2f58-6344-45b6-8bef-0bc1074a087c.png" 
+    eventInfo: #don't change  (Ask ENG if there are any new changes? ENG-17 channel)
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/3edd5753-7b34-4613-81c5-6b6f9705f879.png" #IAP頁面上的圖
+    layoutInfo: #don't change 
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png" #需要問工程師
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo: #don't change
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_3540"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight: true
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight: false
+    firstPurchaseType: 1 #限時生涯首儲
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true  #要問工程師
+    abtestName:
+
+#12/29 ~ 01/04 三尾升級禮IAP任務展示Banner用 無閃購送點-Angie
+  - startTime: "2021-12-29T00:00:00-08:00"
+    endTime: "2022-01-04T23:59:59-08:00"
+    showCountdownUnderSticker: false #If you need countdown set it to true
+    showCountdownInPopUp: false #If you need countdown set it to true
+    stickerURL: "https://cdn.17app.co/7bcfe487-0645-4c97-b0cb-dee38595bf49.png"
+    stickerURLInGiftbox: "https://cdn.17app.co/7bcfe487-0645-4c97-b0cb-dee38595bf49.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/91078331-ba18-48fd-bf69-f0426888ff19.png" #change if need
+    layoutInfo: #don't change 
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png" #需要問工程師
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo: #don't change
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_3540"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight: false
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight: false
+    firstPurchaseType: 2
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true  #要問工程師
+    abtestName:
+
+#Jan welcome offer- Angie
+  - startTime: "2022-01-01T00:00:00-08:00"
+    endTime: "2022-01-31T23:59:59-08:00"
+    showCountdownUnderSticker: true
+    showCountdownInPopUp: true
+    stickerURL: "https://cdn.17app.co/e9cf5a52-5ab0-4697-9e11-059d80da11d6.png" 
+    stickerURLInGiftbox: "https://cdn.17app.co/e9cf5a52-5ab0-4697-9e11-059d80da11d6.png" #好像壞掉了
+    eventInfo: #don't change  (Ask ENG if there are any new changes? ENG-17 channel)
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/e87a787f-a24c-4316-8922-8cb1361fb26a.png" #IAP頁面上的圖
+    layoutInfo: #don't change 
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png" #需要問工程師
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo: #don't change
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_3540"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight: false
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight: false
+    firstPurchaseType: 1 #限時生涯首儲
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true  #要問工程師
+    abtestName:
+
+#1/16 ~ 1/31 IAP任務展示Banner用 無閃購送點- Angie 一月下半背包任務
+  - startTime: "2022-01-16T00:00:00-08:00"
+    endTime: "2022-01-31T23:59:59-08:00"
+    showCountdownUnderSticker: false
+    showCountdownInPopUp: false
+    stickerURL: "https://cdn.17app.co/bede72e2-f7df-4e0d-8a70-90eb64719f42.png" 
+    stickerURLInGiftbox: "https://cdn.17app.co/bede72e2-f7df-4e0d-8a70-90eb64719f42.png" #好像壞掉了
+    eventInfo: #don't change  (Ask ENG if there are any new changes? ENG-17 channel)
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/1ff838eb-6ba1-4546-afcb-2bf69dbeda39.png" #IAP頁面上的圖
+    layoutInfo: #don't change 
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png" #需要問工程師
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo: #don't change
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_3540"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight: true
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight: true
+    firstPurchaseType: 2
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true  #要問工程師
+    abtestName:
+
+#12/11 ~ 12/14 IAP任務展示Banner用 無閃購送點- Angie 踏雪尋梅
+  - startTime: "2021-12-11T00:00:00-08:00"
+    endTime: "2021-12-14T23:59:59-08:00"
+    showCountdownUnderSticker: false
+    showCountdownInPopUp: false
+    stickerURL: "https://cdn.17app.co/7a69acba-1388-4919-bd16-3a49b68ae597.png" 
+    stickerURLInGiftbox: "https://cdn.17app.co/7a69acba-1388-4919-bd16-3a49b68ae597.png" #好像壞掉了
+    eventInfo: #don't change  (Ask ENG if there are any new changes? ENG-17 channel)
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/e2b1844c-23be-48df-bfd7-89582aceea69.png" #IAP頁面上的圖
+    layoutInfo: #don't change 
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png" #需要問工程師
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo: #don't change
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_3540"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight: false
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight: false
+    firstPurchaseType: 0
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true  #要問工程師
+    abtestName:
+#12/15 ~ 12/24 IAP任務展示Banner用 無閃購送點- Angie Christmas Party聖誕活動
+  - startTime: "2021-12-15T00:00:00-08:00"
+    endTime: "2021-12-23T23:59:59-08:00"
+    showCountdownUnderSticker: false
+    showCountdownInPopUp: false
+    stickerURL: "https://cdn.17app.co/97703f68-e776-45bf-b8ae-507d23c94a9b.png" 
+    stickerURLInGiftbox: "https://cdn.17app.co/97703f68-e776-45bf-b8ae-507d23c94a9b.png" #好像壞掉了
+    eventInfo: #don't change  (Ask ENG if there are any new changes? ENG-17 channel)
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/1a83eada-b5f2-4749-b462-886db45093c9.png" #IAP頁面上的圖
+    layoutInfo: #don't change 
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png" #需要問工程師
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo: #don't change
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_3540"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight: false
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight: false
+    firstPurchaseType: 0
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true  #要問工程師
+    abtestName:
+#12/24 ~ 12/27 - Angie 聖誕IAP閃購
+  - startTime: "2021-12-24T00:00:00-08:00"
+    endTime: "2021-12-26T23:59:59-08:00"
+    showCountdownUnderSticker: false
+    showCountdownInPopUp: false
+    stickerURL: "https://cdn.17app.co/decad3c4-bf90-491c-b55f-43a1fc499a51.jpg" 
+    stickerURLInGiftbox: "https://cdn.17app.co/decad3c4-bf90-491c-b55f-43a1fc499a51.jpg" #好像壞掉了
+    eventInfo: #don't change  (Ask ENG if there are any new changes? ENG-17 channel)
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/03686798-3035-4e64-b597-2cead9e76087.jpg" #IAP頁面上的圖
+    layoutInfo: #don't change 
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png" #需要問工程師
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo: #don't change
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 10
+        shouldHighlight:  true
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_3540"
+        bonusPoint: 110
+        shouldHighlight:  true
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_15420"
+        bonusPoint: 465
+        shouldHighlight: true
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight: false
+    firstPurchaseType: 0
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true  #要問工程師
+    abtestName:
+#Labor Day Flash Sale
+  - startTime: "2021-09-03T18:00:00-07:00"
+    endTime: "2021-09-06T21:00:00-07:00"
+    showCountdownUnderSticker: false
+    showCountdownInPopUp: false
+    stickerURL: "https://cdn.17app.co/81312cdd-99d5-4fa9-b74c-7f24bdbf90be.png"
+    stickerURLInGiftbox: "https://cdn.17app.co/81312cdd-99d5-4fa9-b74c-7f24bdbf90be.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/c8e0af96-8b5e-47e7-b139-84967150c098.png"
+    layoutInfo:
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_3540"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_8550"
+        bonusPoint: 1710
+        shouldHighlight:  true
+      - productID: "media17_points_15420"
+        bonusPoint: 3880
+        shouldHighlight:  true
+      - productID: "media17_points_35980"
+        bonusPoint: 10800
+        shouldHighlight:  true
+    firstPurchaseType: 0
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true
+    abtestName:
+
+#Halloween Flash Sale
+  - startTime: "2021-10-28T18:00:00-07:00"
+    endTime: "2021-10-31T21:00:00-07:00"
+    showCountdownUnderSticker: false
+    showCountdownInPopUp: false
+    stickerURL: "https://cdn.17app.co/30060cd9-dd03-4fed-a168-75977e40b62f.jpg"
+    stickerURLInGiftbox: "https://cdn.17app.co/30060cd9-dd03-4fed-a168-75977e40b62f.jpg"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/afe189ff-2cc0-471b-91b1-98259c72718b.jpg"
+    layoutInfo:
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_3540"
+        bonusPoint: 106
+        shouldHighlight:  true
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_15420"
+        bonusPoint: 1080
+        shouldHighlight:  true
+      - productID: "media17_points_35980"
+        bonusPoint: 3600
+        shouldHighlight:  true
+    firstPurchaseType: 0
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true
+    abtestName:
+
+
+#Spring Flash Sale
+  - startTime: "2021-04-10T00:00:00-07:00"
+    endTime: "2021-04-14T12:59:59-07:00"
+    showCountdownUnderSticker: false
+    showCountdownInPopUp: false
+    stickerURL: "https://cdn.17app.co/1a9d7679-7ec4-4a25-9f81-7a3ae716d043.png"
+    stickerURLInGiftbox: "https://cdn.17app.co/1a9d7679-7ec4-4a25-9f81-7a3ae716d043.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/08f67689-3c9c-434c-ae9f-b08246330b01.png"
+    layoutInfo:
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 66
+        shouldHighlight:  true
+      - productID: "media17_points_1720"
+        bonusPoint: 660
+        shouldHighlight:  true
+      - productID: "media17_points_3540"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight:  false
+    firstPurchaseType: 2
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true
+    abtestName:
+    
+#12/01 ~ 12/05 IAP任務展示Banner用 無閃購送點- Angie波斯菊
+  - startTime: "2021-12-01T17:00:00-08:00" #Remember to change 
+    endTime: "2021-12-05T23:59:59-08:00" #Remember to change 
+    showCountdownUnderSticker: true
+    showCountdownInPopUp: true
+    stickerURL: "https://cdn.17app.co/8a2c6c6a-c9a7-40bd-b2dd-727ef70e7c87.png" 
+    stickerURLInGiftbox: "https://cdn.17app.co/8a2c6c6a-c9a7-40bd-b2dd-727ef70e7c87.png" #好像壞掉了
+    eventInfo: #don't change  (Ask ENG if there are any new changes? ENG-17 channel)
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/34609908-3111-4a55-b031-8e64c0e5c17d.png" #IAP頁面上的圖
+    layoutInfo: #don't change 
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png" #需要問工程師
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo: #don't change
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_3540"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight: false
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight: false
+    firstPurchaseType: 0
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true  #要問工程師
+    abtestName:
+
+#First time purchase_mission ver 
+#  - startTime: "2021-05-12T10:00:00+09:00"
+#    endTime: "2021-11-30T23:59:59-07:00"
+#    showCountdownUnderSticker: false
+#    showCountdownInPopUp: false
+#    stickerURL: "https://cdn.17app.co/2de9b967-c76b-4cc2-bd08-12147fe3f5b8.png"
+#    stickerURLInGiftbox: "https://cdn.17app.co/2de9b967-c76b-4cc2-bd08-12147fe3f5b8.png"
+#    eventInfo:
+#      eventTitleI18nKey: ""
+#      eventURL: ""
+#      bannerImageURL: "https://cdn.17app.co/a731349e-e890-4143-875c-ea258957fa16.png"
+#    layoutInfo:
+#      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
+#      messageColor: "#6F6777"
+#      messageShadowColor: "#F5F5F5"
+#      messageI18nKey: ""
+#      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+#      descLeftBottomURL: "test.png"
+#      descRightBottomURL: "test.png"
+#      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+#      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+#      rewardIconURL:
+#          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+#    colorInfo:
+#      pointColor: "#28232D"
+#      bonusPointColor: "#B36F6777"
+#      priceColor: "#28232D"
+#      rewardTextColor: "#F69355"
+#    pointProducts:
+#      - productID: "media17_points_330"
+#        bonusPoint: 0
+#        shouldHighlight:  true
+#      - productID: "media17_points_1720"
+#        bonusPoint: 0
+#        shouldHighlight:  false
+#      - productID: "media17_points_3540"
+#        bonusPoint: 0
+#        shouldHighlight:  false
+#      - productID: "media17_points_8550"
+#        bonusPoint: 0
+#        shouldHighlight:  false
+#      - productID: "media17_points_15420"
+#        bonusPoint: 0
+#        shouldHighlight:  false
+#      - productID: "media17_points_35980"
+#        bonusPoint: 0
+#        shouldHighlight:  false
+#    firstPurchaseType: 1
+#    taInfo:
+#      registerRange:
+#        dayStart: 0 # 0 means no limit
+#        dayEnd: 0 # 0 means no limit
+#    displayRewardInfo: true
+#    abtestName:
+
+#First time purchase_mission ver (sunglasses)
+  - startTime: "2021-01-01T12:00:00+09:00"
+    endTime: "2021-03-26T23:59:59+09:00"
+    showCountdownUnderSticker: false
+    showCountdownInPopUp: false
+    stickerURL: "https://cdn.17app.co/aee2fa76-f8d2-4351-8b7a-344fe005cb09.png"
+    stickerURLInGiftbox: "https://cdn.17app.co/aee2fa76-f8d2-4351-8b7a-344fe005cb09.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/3e00e080-c7ad-476b-a5ab-c4cffe212221.png"
+    layoutInfo:
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_3540"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight:  false
+    firstPurchaseType: 1
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: false
+    abtestName:
+
+#March promo 2021
+  - startTime: "2021-03-17T01:00:00-08:00"
+    endTime: "2021-03-21T23:59:59-08:00"
+    showCountdownUnderSticker: false
+    showCountdownInPopUp: false
+    stickerURL: "https://cdn.17app.co/bcd2eaaf-ed15-4a44-aafe-363a6e277ec8.png"
+    stickerURLInGiftbox: "https://cdn.17app.co/e7b08819-ee79-49a6-b0c1-833536678aa7.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/91228b68-179f-4863-9df1-810f2d880175.png"
+    layoutInfo:
+      titlePicURL: ""
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: ""
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#F5487D"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 66
+        shouldHighlight:  true
+        reward:
+          type: 1
+          refCount: 3
+      - productID: "media17_points_1720"
+        bonusPoint: 344
+        shouldHighlight:  true
+        reward:
+          type: 1
+          refCount: 6
+      - productID: "media17_points_3540"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight:  false
+    firstPurchaseType: 2
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true
+    abtestName:
+
+#Holiday sale 2020
+  - startTime: "2020-12-14T10:00:00-08:00"
+    endTime: "2020-12-31T23:59:59-08:00"
+    showCountdownUnderSticker: true
+    showCountdownInPopUp: true
+    stickerURL: "https://cdn.17app.co/cfb9ce8d-353c-4b8b-bab3-d8d6b87cf769.png"
+    stickerURLInGiftbox: "https://cdn.17app.co/cfb9ce8d-353c-4b8b-bab3-d8d6b87cf769.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/7b0b897d-2953-4c11-bab3-f5fab8658604.png"
+    layoutInfo:
+      titlePicURL: ""
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: ""
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#F5487D"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_3540"
+        bonusPoint: 600
+        shouldHighlight:  true
+        reward:
+          type: 1
+          refCount: 3
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  true
+        reward:
+          type: 1
+          refCount: 5
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight:  false
+    firstPurchaseType: 0
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true
+    abtestName:
+
+
+#Black Friday 2020
+  - startTime: "2020-11-26T18:00:00-07:00"
+    endTime: "2020-11-30T23:59:59-07:00"
+    showCountdownUnderSticker: true
+    showCountdownInPopUp: true
+    stickerURL: "https://cdn.17app.co/ae123a29-0792-4f6d-bfb7-b0b869aa2276.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/e8885526-4e7d-41b6-b76f-4d4221c61e4a.png"
+    layoutInfo:
+      titlePicURL: ""
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: ""
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#F5487D"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 66
+        shouldHighlight:  true
+        reward:
+          type: 1
+          refCount: 3
+      - productID: "media17_points_1720"
+        bonusPoint: 344
+        shouldHighlight:  true
+        reward:
+          type: 1
+          refCount: 4
+      - productID: "media17_points_3540"
+        bonusPoint: 600
+        shouldHighlight:  true
+        reward:
+          type: 1
+          refCount: 5
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight:  false
+    firstPurchaseType: 0
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true
+    abtestName:
+
+#Summer Sale
+  - startTime: "2020-08-27T06:00:00+08:00"
+    endTime: "2020-09-01T15:00:00+08:00"
+    showCountdownUnderSticker: true
+    showCountdownInPopUp: true
+    stickerURL: "https://cdn.17app.co/bff95527-2eb8-4e8d-8a80-afc4ba5c28bf.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/017d3343-1e44-4a16-847d-1fec329a8609.png"
+    layoutInfo:
+      titlePicURL: ""
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: ""
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#F5487D"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 330
+        shouldHighlight:  true
+      - productID: "media17_points_1720"
+        bonusPoint: 1720
+        shouldHighlight:  true
+      - productID: "media17_points_3540"
+        bonusPoint: 3540
+        shouldHighlight:  true
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight:  false
+    firstPurchaseType: 0
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: false
+    abtestName:
+
+# Welcome Offer May H1
+  - startTime: "2022-04-28T12:00:00-07:00" #Remember to change 
+    endTime: "2022-05-10T18:00:00-07:00" #Remember to change 
+    showCountdownUnderSticker: false #If you need countdown set it to true
+    showCountdownInPopUp: false #If you need countdown set it to true
+    stickerURL: "https://cdn.17app.co/53abd334-757d-441f-81f1-6ddecbaf8bfc.png"
+    stickerURLInGiftbox: "https://cdn.17app.co/53abd334-757d-441f-81f1-6ddecbaf8bfc.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/18ccc6c4-dc8a-4834-9817-1164c7575697.png" #change if need
+    layoutInfo:
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_330"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_3540"
+        bonusPoint: 0
+        shouldHighlight:  true
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight:  false
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight:  false
+    firstPurchaseType: 1 #Flash sale change it to 0, first time purchase to 1
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: true
+    abtestName:
+
 
 defaultIAPs:
-  - layoutInfo:
+  - startTime: "2023-03-21T13:00:00+08:00"
+    layoutInfo:
       highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
       highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
     colorInfo:
@@ -51,21 +2104,49 @@ defaultIAPs:
       bonusPointColor: "#F5487D"
       priceColor: "#28232D"
     pointProducts:
-      - productID: "media17_points_14000"
+      - productID: "media17_points_25500"
         bonusPoint: 0
-        shouldHighlight:  true
-      - productID: "media17_points_6500"
+        shouldHighlight: false
+      - productID: "media17_points_10800"
         bonusPoint: 0
-        shouldHighlight:  false
-      - productID: "media17_points_2400"
+        shouldHighlight: true
+      - productID: "media17_points_6000"
         bonusPoint: 0
-        shouldHighlight:  false
-      - productID: "media17_points_1100"
+        shouldHighlight: false
+      - productID: "media17_points_2500"
         bonusPoint: 0
-        shouldHighlight:  false
-      - productID: "media17_points_500"
+        shouldHighlight: false
+      - productID: "media17_points_1210"
         bonusPoint: 0
-        shouldHighlight:  false
-      - productID: "media17_points_100"
+        shouldHighlight: false
+      - productID: "media17_points_230"
         bonusPoint: 0
-        shouldHighlight:  false
+        shouldHighlight: false
+
+  - endTime: "2023-03-21T13:00:00+08:00"
+    layoutInfo:
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#F5487D"
+      priceColor: "#28232D"
+    pointProducts:
+      - productID: "media17_points_35980"
+        bonusPoint: 0
+        shouldHighlight: false
+      - productID: "media17_points_15420"
+        bonusPoint: 0
+        shouldHighlight: true
+      - productID: "media17_points_8550"
+        bonusPoint: 0
+        shouldHighlight: false
+      - productID: "media17_points_3540"
+        bonusPoint: 0
+        shouldHighlight: false
+      - productID: "media17_points_1720"
+        bonusPoint: 0
+        shouldHighlight: false
+      - productID: "media17_points_330"
+        bonusPoint: 0
+        shouldHighlight: false
