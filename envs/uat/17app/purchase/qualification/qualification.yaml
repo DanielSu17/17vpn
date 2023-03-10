@@ -92,7 +92,7 @@ merchandiseBlocker:
         - media17_points_12200
         - media17_points_29000
     
-    # Only allow JP to purchase media17_points_265 series
+    # Only allow JP to purchase media17_points_330 series
     - startTime: "2023-03-21T13:00:00+08:00"
       errorCode: 71004
       desc: "deprecated IAP packages"
@@ -126,6 +126,27 @@ merchandiseBlocker:
         - media17_points_6000
         - media17_points_10800
         - media17_points_25500
+    
+    # Block deprecated products (MY, SG region) in all regions
+    - startTime: "2023-03-21T13:00:00+08:00"
+      errorCode: 71004
+      desc: "deprecated IAP packages"
+      payMethods:
+        - 36   # MethodIOS
+        - 37   # MethodAndroid
+      merchandiseIDs:
+        # MY
+        - media17_points_275
+        - media17_points_1350
+        - media17_points_2850
+        - media17_points_7050
+        - media17_points_12700
+        - media17_points_29800
+        # SG
+        - media17_points_1570
+        - media17_points_3480
+        - media17_points_7970
+        - media17_points_14700
 
     - startTime: "2022-09-27T13:00:00+08:00"
       endTime: "2023-03-21T13:00:00+08:00"
