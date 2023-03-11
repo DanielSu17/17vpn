@@ -3,7 +3,7 @@
 # - 2: Whitelist-Only Mode
 # access_whitelist is a list of IP address can access on Whitelist-Only mode
 # allowed_origins is a list of regular expressions of all allowed origins for CORS
-# 
+#
 # bypassUserAgents / bypassedHeaderValues mean you could add the userAgents or header kv you would like to pass
 # For example:
 # bypassedUserAgents:
@@ -21,25 +21,25 @@ access_mode: 1
 access_whitelist:
   - 61.216.89.10
 access_blacklist:
- - 61.216.89.9
+  - 61.216.89.9
 allowed_origins:
- - "^https://[-\\w]+\\.17\\.live$"
- - "^https://[-\\w]+--17live\\.netlify\\.com$"
- - "^https://[-\\w]+--17livef2e\\.netlify\\.com$"
- - "^https?://[-\\w]+\\.17\\.media(:\\d+)?$"
- - "^https?://[-\\w]+\\.17app\\.co(:\\d+)?$"
- - "^http://17\\.local(:\\d+)?$"
- - "^http://localhost(:\\d+)?$"
- - "^http://client.perimeterx.net$" # frontend PX js
- - "^http://172.16.5.10(:\\d+)?$" # frontend dev
- - "^http://34.81.122.93(:\\d+)?$" # frontend dev machine for Michael Hsu
- - "^https://entry\\.17\\.live$" # frontend dev
- - "^https://rc\\.17\\.live$" # frontend rc
- - "^https://sta\\.17\\.live$" # frontend sta
- - "^https://sta-entry\\.17\\.live$" # frontend sta
- - "^https://sta-mkt\\.netlify\\.app$" # frontend sta mkt
- - "^https://mkt\\.17\\.live$" # frontend mkt
- - "^https://17live\\.netlify\\.app$" # frontend mkt
+  - "^https://[-\\w]+\\.17\\.live$"
+  - "^https://[-\\w]+--17live\\.netlify\\.com$"
+  - "^https://[-\\w]+--17livef2e\\.netlify\\.com$"
+  - "^https?://[-\\w]+\\.17\\.media(:\\d+)?$"
+  - "^https?://[-\\w]+\\.17app\\.co(:\\d+)?$"
+  - "^http://17\\.local(:\\d+)?$"
+  - "^http://localhost(:\\d+)?$"
+  - "^http://client.perimeterx.net$" # frontend PX js
+  - "^http://172.16.5.10(:\\d+)?$" # frontend dev
+  - "^http://34.81.122.93(:\\d+)?$" # frontend dev machine for Michael Hsu
+  - "^https://entry\\.17\\.live$" # frontend dev
+  - "^https://rc\\.17\\.live$" # frontend rc
+  - "^https://sta\\.17\\.live$" # frontend sta
+  - "^https://sta-entry\\.17\\.live$" # frontend sta
+  - "^https://sta-mkt\\.netlify\\.app$" # frontend sta mkt
+  - "^https://mkt\\.17\\.live$" # frontend mkt
+  - "^https://17live\\.netlify\\.app$" # frontend mkt
 regexConf:
   - url_key: "aggr_gateway_url"
     default_url_key: "go_url"
@@ -165,7 +165,7 @@ regexConf:
       - ^POST /api/v1/lives/16544358/(?:enter|quit|viewers/alive|comments)?$
       # ct_qa_6
       - ^GET /api/v1/lives/16544451(?:/giftTabs|/info)?$
-      - ^POST /api/v1/lives/16544451/(?:enter|quit|viewers/alive|comments)?$ 
+      - ^POST /api/v1/lives/16544451/(?:enter|quit|viewers/alive|comments)?$
       # ct_qa_replay
       - ^GET /api/v1/lives/16544395(?:/giftTabs|/info)?$
       - ^POST /api/v1/lives/16544395/(?:enter|quit|viewers/alive|comments)?$
@@ -258,9 +258,9 @@ regexConf:
       - ^POST /api/v1/lives/15816647/gift
       # ct_qa_25hr
       - ^POST /api/v1/lives/16544355/gift
-      # ct_qa_live 
+      # ct_qa_live
       - ^POST /api/v1/lives/16544358/gift
-      # ct_qa_6 
+      # ct_qa_6
       - ^POST /api/v1/lives/16544451/gift
       # ct_qa_replay
       - ^POST /api/v1/lives/16544395/gift
@@ -308,78 +308,79 @@ conf:
       baggage: "baggage"
       # legacy
       gift: "getLiveStreamGiftLeaderboard,\
-            getLiveStreamAllGifts,\
-            getReceivedGiftLog"
+        getLiveStreamAllGifts,\
+        getReceivedGiftLog"
   - url_key: "go_url"
     white_list:
       liveStreams: "publishLiveStream,\
-            getLiveStreamViewers,keepLiveStream"
+        getLiveStreamViewers,keepLiveStream"
       liveStreams/admin: "pass,kill,hide,pintotop,cancelpintotop,\
-            killLiveStreamAction,passLiveStream,hideLiveStream,\
-            promoteLiveStream,getLiveStreamsForReview,\
-            removePromotedLiveStream,promoteTopLiveStream,\
-            cancelPromoteTopLiveStream,hideHotLivestreamAction"
+        killLiveStreamAction,passLiveStream,hideLiveStream,\
+        promoteLiveStream,getLiveStreamsForReview,\
+        removePromotedLiveStream,promoteTopLiveStream,\
+        cancelPromoteTopLiveStream,hideHotLivestreamAction"
       api: "api"
       feed: "getPostFeed,celebrities/all,celebrities"
       legacy: "getUserInfo,getUserInfoByUserID,\
-            getSelfInfo,unblockUserAction,blockUserAction,adminBlockUserAction,\
-            getBlockUserList,followUserAction,unfollowUserAction,\
-            sendFollowRequest,rejectFollowRequest,\
-            cancelFollowRequests,acceptFollowRequest,\
-            getFollowRequests,getSearchUsers,getFollowing,\
-            getFollower,getHotUsers,getGiftLeaderboard,\
-            banUserAction,freezeUserAction,updateUserInfo,\
-            checkingSandBox,securityActions,getNotif,\
-            getReviewProfile,processProfilePictureReview,\
-            getFriendNotif,adminDeleteProfilePictureAction,\
-            reportUserAction,getUserLikers,adOnAction,adOffAction,getCountry,\
-            choiceUserAction,verifyUserAction,removeVerifiedUserAction,adminBlockDirtyWordAction"
+        getSelfInfo,unblockUserAction,blockUserAction,adminBlockUserAction,\
+        getBlockUserList,followUserAction,unfollowUserAction,\
+        sendFollowRequest,rejectFollowRequest,\
+        cancelFollowRequests,acceptFollowRequest,\
+        getFollowRequests,getSearchUsers,getFollowing,\
+        getFollower,getHotUsers,getGiftLeaderboard,\
+        banUserAction,freezeUserAction,updateUserInfo,\
+        checkingSandBox,securityActions,getNotif,\
+        getReviewProfile,processProfilePictureReview,\
+        getFriendNotif,adminDeleteProfilePictureAction,\
+        reportUserAction,getUserLikers,adOnAction,adOffAction,getCountry,\
+        choiceUserAction,verifyUserAction,removeVerifiedUserAction,adminBlockDirtyWordAction"
       event: "getEventBanners"
       pay: "purchaseProduct"
       auth: "registerByPhoneAction,sendPhoneVerificationCode,\
-            checkNeedHumanTest,isPhoneNumberUsed,verifyUserIdentity,\
-            changePhoneNumber,ChangePhoneNumber,\
-            eraseInternationalPhoneNumber"
+        checkNeedHumanTest,isPhoneNumberUsed,verifyUserIdentity,\
+        changePhoneNumber,ChangePhoneNumber,\
+        eraseInternationalPhoneNumber"
       official: "getVersionStatus"
       post: "publishPost,viewPost,commentPost,getUserPost,unlikePost,\
-            deleteComment,likePostBatchUpdate,updatePost,deletePost,\
-            getExplorePicturesForReview,passExplorePicture,\
-            hideExplorePicture,hidePostAction,adminDeletePostAction,\
-            getPostInfo,getComments,adminPromotePost,\
-            reportCommentAction,reportPostAction,getHotPost,\
-            recoverPostAction,searchHashTag,getPostLikers,\
-            getReportPost,processReportedPostAction"
+        deleteComment,likePostBatchUpdate,updatePost,deletePost,\
+        getExplorePicturesForReview,passExplorePicture,\
+        hideExplorePicture,hidePostAction,adminDeletePostAction,\
+        getPostInfo,getComments,adminPromotePost,\
+        reportCommentAction,reportPostAction,getHotPost,\
+        recoverPostAction,searchHashTag,getPostLikers,\
+        getReportPost,processReportedPostAction"
       money: "getPointUsageLog,getPointGainLog,getRevenueReport"
       follow: "getFriendSuggestion"
       deadlegacy: "eventTracking,getNewestAppVersion,getSuggestedUsers,\
-            findFriends,getExploreSuggestedUsers,getLikeLeaderboard,\
-            getSystemNotif,getHotLiveStreams,getHotLiveStreams2,likePost,\
-            getLikedPost,getLiveStreamComments,recoverPassword,\
-            getPayments,uploadPhoneNumbers,uploadFacebookFriends,\
-            followAllAction,updateLiveStreamInfo,\
-            getPointProductList,getPostByHashTag,readNotif,updateOpenID"
+        findFriends,getExploreSuggestedUsers,getLikeLeaderboard,\
+        getSystemNotif,getHotLiveStreams,getHotLiveStreams2,likePost,\
+        getLikedPost,getLiveStreamComments,recoverPassword,\
+        getPayments,uploadPhoneNumbers,uploadFacebookFriends,\
+        followAllAction,updateLiveStreamInfo,\
+        getPointProductList,getPostByHashTag,readNotif,updateOpenID"
   - url_key: "go_lives_url"
-    weight: 100  # (0, 100]
+    weight: 100 # (0, 100]
     white_list:
       # v1 api
       apiv1: "liveStreams,lives"
   - url_key: "go_lives_url"
     white_list:
       # for legacy api
-      liveStreams: "getSuggestedLiveStreams,liveStreams/getSuggestedLiveStreams,\
-            getLatestLiveStreams,liveStreams/getLatestLiveStreams,\
-            getLiveStreamInfo,liveStreams/getLiveStreamInfo,\
-            enterLiveStream,liveStreams/enterLiveStream,\
-            quitViewLiveStream,liveStreams/quitViewLiveStream,\
-            isUserOnLiveStream,liveStreams/isUserOnLiveStream,\
-            getUserLiveStreams,liveStreams/getUserLiveStreams,\
-            likeLivestreamBatchUpdate,liveStreams/likeLivestreamBatchUpdate,\
-            getLiveStreamHotCountryList,\
-            reportLiveAction,\
-            restreamLiveStream,\
-            hasRestreamedLiveStream,\
-            endLiveStream,\
-            commentLiveStream,liveStreams/commentLiveStream"
+      liveStreams:
+        "getSuggestedLiveStreams,liveStreams/getSuggestedLiveStreams,\
+        getLatestLiveStreams,liveStreams/getLatestLiveStreams,\
+        getLiveStreamInfo,liveStreams/getLiveStreamInfo,\
+        enterLiveStream,liveStreams/enterLiveStream,\
+        quitViewLiveStream,liveStreams/quitViewLiveStream,\
+        isUserOnLiveStream,liveStreams/isUserOnLiveStream,\
+        getUserLiveStreams,liveStreams/getUserLiveStreams,\
+        likeLivestreamBatchUpdate,liveStreams/likeLivestreamBatchUpdate,\
+        getLiveStreamHotCountryList,\
+        reportLiveAction,\
+        restreamLiveStream,\
+        hasRestreamedLiveStream,\
+        endLiveStream,\
+        commentLiveStream,liveStreams/commentLiveStream"
   - url_key: "aggr_gateway_url"
     default_url_key: "go_cells_url"
     weight: 100
@@ -410,10 +411,10 @@ conf:
     white_list:
       apiv1: "auth,oauth"
       auth: "loginAction,loginAction2,registerAction,registerAction2,\
-            checkFacebookIDAvailable,checkOpenIDAvailable,\
-            changePassword,\
-            isPhoneNumberOpenIDPaired,\
-            getResetPasswordToken,resetPassword"
+        checkFacebookIDAvailable,checkOpenIDAvailable,\
+        changePassword,\
+        isPhoneNumberOpenIDPaired,\
+        getResetPasswordToken,resetPassword"
   - url_key: "golokalise_url"
     weight: 100
     white_list:
@@ -426,9 +427,9 @@ conf:
     weight: 100
     white_list:
       apiv1: "keyword"
-  - url_key: "payment_notif_proxy_url"
-    weight: 100
-    white_list:
-      apiv1: "payment-notif-proxy"
+  # - url_key: "payment_notif_proxy_url"
+  #   weight: 100
+  #   white_list:
+  #     apiv1: "payment-notif-proxy"
 bypassedUserAgents:
   - ^runscope-radar.*

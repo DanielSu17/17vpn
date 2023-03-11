@@ -6,18 +6,18 @@
 # Dummy
 access_mode: 1
 access_whitelist:
- - 61.216.89.10
+  - 61.216.89.10
 allowed_origins:
- - "^https://[-\\w]+\\.17\\.live$"
- - "^https://[-\\w]+--17live\\.netlify\\.com$"
- - "^https://[-\\w]+--17livef2e\\.netlify\\.com$"
- - "^https?://[-\\w]+\\.17\\.media(:\\d+)?$"
- - "^https?://[-\\w]+\\.17app\\.co(:\\d+)?$"
- - "^http://17\\.local(:\\d+)?$"
- - "^http://localhost(:\\d+)?$"
- - "http://dev.api.17app.co"
- - "^http://172.16.5.10(:\\d+)?$" # frontend dev
- - "^http://34.80.221.101(:\\d+)?$" # for meme frontend
+  - "^https://[-\\w]+\\.17\\.live$"
+  - "^https://[-\\w]+--17live\\.netlify\\.com$"
+  - "^https://[-\\w]+--17livef2e\\.netlify\\.com$"
+  - "^https?://[-\\w]+\\.17\\.media(:\\d+)?$"
+  - "^https?://[-\\w]+\\.17app\\.co(:\\d+)?$"
+  - "^http://17\\.local(:\\d+)?$"
+  - "^http://localhost(:\\d+)?$"
+  - "http://dev.api.17app.co"
+  - "^http://172.16.5.10(:\\d+)?$" # frontend dev
+  - "^http://34.80.221.101(:\\d+)?$" # for meme frontend
 regexConf:
   - url_key: "aggr_gateway_url"
     default_url_key: "go_url"
@@ -59,109 +59,110 @@ regexConf:
       - ^POST /api/v1/lives/[0-9]+/gift$
       - ^POST /api/v1/lives/[0-9]+/voteGift$
 conf:
- - url_key: "api_usersearch_url"
-   weight: 100
-   white_list:
-     apiv1: "user/search"
- - url_key: "go_url"
-   white_list:
-     liveStreams: "getLatestLiveStreams,publishLiveStream,\
-            getLiveStreamViewers,keepLiveStream"
-     liveStreams/admin: "pass,kill,hide,pintotop,cancelpintotop,\
-            killLiveStreamAction,passLiveStream,hideLiveStream,\
-            promoteLiveStream,getLiveStreamsForReview,\
-            removePromotedLiveStream,promoteTopLiveStream,\
-            cancelPromoteTopLiveStream,hideHotLivestreamAction"
-     api: "api"
-     feed: "getPostFeed,celebrities/all,celebrities"
-     gift: "getLiveStreamGiftLeaderboard,sendGift,\
-            getLiveStreamGiftInfo,getUnreadReceivedGift,\
-            getLiveStreamAllGifts,readGift,getGiftList,\
-            getReceivedGiftLog"
-     legacy: "getUserInfo,getUserInfoByUserID,\
-            getSelfInfo,unblockUserAction,blockUserAction,adminBlockUserAction,\
-            getBlockUserList,followUserAction,unfollowUserAction,\
-            sendFollowRequest,rejectFollowRequest,\
-            cancelFollowRequests,acceptFollowRequest,\
-            getFollowRequests,getSearchUsers,getFollowing,\
-            getFollower,getHotUsers,getGiftLeaderboard,\
-            banUserAction,freezeUserAction,updateUserInfo,\
-            checkingSandBox,securityActions,getNotif,\
-            getReviewProfile,processProfilePictureReview,\
-            getFriendNotif,adminDeleteProfilePictureAction,\
-            reportUserAction,getUserLikers,adOnAction,adOffAction,getCountry,\
-            choiceUserAction,verifyUserAction,removeVerifiedUserAction,adminBlockDirtyWordAction"
-     event: "getEventBanners"
-     pay: "purchaseProduct"
-     auth: "loginAction,loginAction2,registerAction,registerAction2,\
-            checkFacebookIDAvailable,checkOpenIDAvailable,\
-            registerByPhoneAction,sendPhoneVerificationCode,\
-            checkNeedHumanTest,isPhoneNumberUsed,verifyUserIdentity,\
-            changePassword,changePhoneNumber,ChangePhoneNumber,\
-            isPhoneNumberOpenIDPaired,\
-            eraseInternationalPhoneNumber,\
-            getResetPasswordToken,resetPassword"
-     official: "getVersionStatus"
-     post: "publishPost,viewPost,commentPost,getUserPost,unlikePost,\
-            deleteComment,likePostBatchUpdate,updatePost,deletePost,\
-            getExplorePicturesForReview,passExplorePicture,\
-            hideExplorePicture,hidePostAction,adminDeletePostAction,\
-            getPostInfo,getComments,adminPromotePost,\
-            reportCommentAction,reportPostAction,getHotPost,\
-            recoverPostAction,searchHashTag,getPostLikers,\
-            getReportPost,processReportedPostAction"
-     money: "getPointUsageLog,getPointGainLog,getRevenueReport"
-     follow: "getFriendSuggestion"
-     deadlegacy: "eventTracking,getNewestAppVersion,getSuggestedUsers,\
-            findFriends,getExploreSuggestedUsers,getLikeLeaderboard,\
-            getSystemNotif,getHotLiveStreams,getHotLiveStreams2,likePost,\
-            getLikedPost,getLiveStreamComments,recoverPassword,\
-            getPayments,uploadPhoneNumbers,uploadFacebookFriends,\
-            followAllAction,updateLiveStreamInfo,\
-            getPointProductList,getPostByHashTag,readNotif,updateOpenID"
- - url_key: "go_url"
-   white_list:
-     # v1 api
-     apiv1: "liveStreams,lives"
-     # for legacy api
-     liveStreams: "getSuggestedLiveStreams,liveStreams/getSuggestedLiveStreams,\
-            getLiveStreamInfo,liveStreams/getLiveStreamInfo,\
-            enterLiveStream,\
-            quitViewLiveStream,\
-            isUserOnLiveStream,\
-            getUserLiveStreams,\
-            likeLivestreamBatchUpdate,\
-            getLiveStreamHotCountryList,\
-            reportLiveAction,\
-            restreamLiveStream,\
-            hasRestreamedLiveStream,\
-            endLiveStream,\
-            commentLiveStream"
- - url_key: "bbrich_url"
-   weight: 100
-   white_list:
-     apiv1: "bbrich"
-#  - url_key: "api_logs_url"
+  - url_key: "api_usersearch_url"
+    weight: 100
+    white_list:
+      apiv1: "user/search"
+  - url_key: "go_url"
+    white_list:
+      liveStreams: "getLatestLiveStreams,publishLiveStream,\
+        getLiveStreamViewers,keepLiveStream"
+      liveStreams/admin: "pass,kill,hide,pintotop,cancelpintotop,\
+        killLiveStreamAction,passLiveStream,hideLiveStream,\
+        promoteLiveStream,getLiveStreamsForReview,\
+        removePromotedLiveStream,promoteTopLiveStream,\
+        cancelPromoteTopLiveStream,hideHotLivestreamAction"
+      api: "api"
+      feed: "getPostFeed,celebrities/all,celebrities"
+      gift: "getLiveStreamGiftLeaderboard,sendGift,\
+        getLiveStreamGiftInfo,getUnreadReceivedGift,\
+        getLiveStreamAllGifts,readGift,getGiftList,\
+        getReceivedGiftLog"
+      legacy: "getUserInfo,getUserInfoByUserID,\
+        getSelfInfo,unblockUserAction,blockUserAction,adminBlockUserAction,\
+        getBlockUserList,followUserAction,unfollowUserAction,\
+        sendFollowRequest,rejectFollowRequest,\
+        cancelFollowRequests,acceptFollowRequest,\
+        getFollowRequests,getSearchUsers,getFollowing,\
+        getFollower,getHotUsers,getGiftLeaderboard,\
+        banUserAction,freezeUserAction,updateUserInfo,\
+        checkingSandBox,securityActions,getNotif,\
+        getReviewProfile,processProfilePictureReview,\
+        getFriendNotif,adminDeleteProfilePictureAction,\
+        reportUserAction,getUserLikers,adOnAction,adOffAction,getCountry,\
+        choiceUserAction,verifyUserAction,removeVerifiedUserAction,adminBlockDirtyWordAction"
+      event: "getEventBanners"
+      pay: "purchaseProduct"
+      auth: "loginAction,loginAction2,registerAction,registerAction2,\
+        checkFacebookIDAvailable,checkOpenIDAvailable,\
+        registerByPhoneAction,sendPhoneVerificationCode,\
+        checkNeedHumanTest,isPhoneNumberUsed,verifyUserIdentity,\
+        changePassword,changePhoneNumber,ChangePhoneNumber,\
+        isPhoneNumberOpenIDPaired,\
+        eraseInternationalPhoneNumber,\
+        getResetPasswordToken,resetPassword"
+      official: "getVersionStatus"
+      post: "publishPost,viewPost,commentPost,getUserPost,unlikePost,\
+        deleteComment,likePostBatchUpdate,updatePost,deletePost,\
+        getExplorePicturesForReview,passExplorePicture,\
+        hideExplorePicture,hidePostAction,adminDeletePostAction,\
+        getPostInfo,getComments,adminPromotePost,\
+        reportCommentAction,reportPostAction,getHotPost,\
+        recoverPostAction,searchHashTag,getPostLikers,\
+        getReportPost,processReportedPostAction"
+      money: "getPointUsageLog,getPointGainLog,getRevenueReport"
+      follow: "getFriendSuggestion"
+      deadlegacy: "eventTracking,getNewestAppVersion,getSuggestedUsers,\
+        findFriends,getExploreSuggestedUsers,getLikeLeaderboard,\
+        getSystemNotif,getHotLiveStreams,getHotLiveStreams2,likePost,\
+        getLikedPost,getLiveStreamComments,recoverPassword,\
+        getPayments,uploadPhoneNumbers,uploadFacebookFriends,\
+        followAllAction,updateLiveStreamInfo,\
+        getPointProductList,getPostByHashTag,readNotif,updateOpenID"
+  - url_key: "go_url"
+    white_list:
+      # v1 api
+      apiv1: "liveStreams,lives"
+      # for legacy api
+      liveStreams:
+        "getSuggestedLiveStreams,liveStreams/getSuggestedLiveStreams,\
+        getLiveStreamInfo,liveStreams/getLiveStreamInfo,\
+        enterLiveStream,\
+        quitViewLiveStream,\
+        isUserOnLiveStream,\
+        getUserLiveStreams,\
+        likeLivestreamBatchUpdate,\
+        getLiveStreamHotCountryList,\
+        reportLiveAction,\
+        restreamLiveStream,\
+        hasRestreamedLiveStream,\
+        endLiveStream,\
+        commentLiveStream"
+  - url_key: "bbrich_url"
+    weight: 100
+    white_list:
+      apiv1: "bbrich"
+  #  - url_key: "api_logs_url"
+  #    weight: 100
+  #    white_list:
+  #      apiv1: "logs"
+  - url_key: "group_call_url"
+    weight: 100
+    white_list:
+      apiv1: "groupCalls"
+  - url_key: "golokalise_url"
+    weight: 100
+    white_list:
+      apiv1: "lokalise"
+  - url_key: "category_url"
+    weight: 100
+    white_list:
+      apiv1: "category"
+  - url_key: "category_url"
+    weight: 100
+    white_list:
+      apiv1: "keyword"
+#  - url_key: "payment_notif_proxy_url"
 #    weight: 100
 #    white_list:
-#      apiv1: "logs"
- - url_key: "group_call_url"
-   weight: 100
-   white_list:
-     apiv1: "groupCalls"
- - url_key: "golokalise_url"
-   weight: 100
-   white_list:
-     apiv1: "lokalise"
- - url_key: "category_url"
-   weight: 100
-   white_list:
-     apiv1: "category"
- - url_key: "category_url"
-   weight: 100
-   white_list:
-     apiv1: "keyword"
- - url_key: "payment_notif_proxy_url"
-   weight: 100
-   white_list:
-     apiv1: "payment-notif-proxy"
+#      apiv1: "payment-notif-proxy"
