@@ -1,9 +1,9 @@
 tabs: ["piepielatest"]
-exploreTabs: ["theme"]
-captionLengthChar: 50
-maxDurationSec: 60
+exploreTabs: ["theme"] #1,2兩行加上去，navigation bar才會顯示探索頁，而非影音
+captionLengthChar: 150 #描述文字的字數限制
+maxDurationSec: 60 #影片長度
 minDurationSec: 5
-maxSizeMB: 50
+maxSizeMB: 50 #影片MB的大小限制
 
 #events zone
 demoKey:
@@ -19,29 +19,113 @@ rankingKeys:
 maxClipsInEventBanner: 10
 
 events:
+  - ID: "aa1f887b-37ef-4bdb-8733-60a3adcd0df0" #從UUID產生一個
+    hashtag: "#17萬聖節變裝Party"
+    description: "17LIVE萬聖節變裝" #不知道顯示在哪邊，要問ENG(可能是17.live)
+    startDateTime: "2021-10-15 00:00:00 (GMT+0800)" 
+    endDateTime: "2021-10-31 23:59:59 (GMT+0800)"
+    oneVoteInNSecs: 3600  #1小時，不用改已經無效
+  - ID: "ceb4f2b7-1667-43c3-9317-e6944f3b415a" #從UUID產生一個
+    hashtag: "#17LIVE #摩曼頓 #全民運動會"
+    description: "2021 直播生活節" #不知道顯示在哪邊，要問ENG(可能是17.live)
+    startDateTime: "2021-07-15 00:00:00 (GMT+0800)" 
+    endDateTime: "2021-07-31 23:59:59 (GMT+0800)"
+    oneVoteInNSecs: 3600  #1小時，不用改已經無效
+  - ID: "8a87ea2c-3f6e-4a3e-a43f-e95095926212" #從UUID產生一個
+    hashtag: "#17LIVE #hyphy #全民運動會"
+    description: "2021 直播生活節" #不知道顯示在哪邊，要問ENG
+    startDateTime: "2021-07-01 00:00:00 (GMT+0800)" 
+    endDateTime: "2021-07-14 23:59:59 (GMT+0800)"
+    oneVoteInNSecs: 3600  #1小時
+  - ID: "21c2a2ff-e556-469f-a145-64b1b2e5f953" #從UUID產生一個
+    hashtag: "#17LIVE #神操作電競王"
+    description: "2021 直播生活節" #不知道顯示在哪邊，要問ENG
+    startDateTime: "2021-06-01 00:00:00 (GMT+0800)" 
+    endDateTime: "2021-12-31 23:59:59 (GMT+0800)"
+    oneVoteInNSecs: 3600  #1小時
+  - ID: "17e6430d-7685-45d7-8740-675f8a08c170" #從UUID產生一個
+    hashtag: "#17LIVE #模型公仔大師"
+    description: "2021 直播生活節" #不知道顯示在哪邊，要問ENG
+    startDateTime: "2021-06-01 00:00:00 (GMT+0800)" 
+    endDateTime: "2021-12-31 23:59:59 (GMT+0800)"
+    oneVoteInNSecs: 3600  #1小時
+  - ID: "efb4ccb8-a7f5-11eb-bcbc-0242ac130002" #從UUID產生一個
+    hashtag: "#17LIVE # 17大藝術家"
+    description: "2021 直播生活節" #不知道顯示在哪邊，要問ENG
+    startDateTime: "2021-05-01 00:00:00 (GMT+0800)" 
+    endDateTime: "2021-12-31 23:59:59 (GMT+0800)"
+    oneVoteInNSecs: 3600  #1小時
+  - ID: "8900dfac-a7f5-11eb-bcbc-0242ac130002" #從UUID產生一個
+    hashtag: "#17LIVE #廚神出任務"
+    description: "2021 直播生活節" #不知道顯示在哪邊，要問ENG
+    startDateTime: "2021-05-01 00:00:00 (GMT+0800)" 
+    endDateTime: "2021-12-31 23:59:59 (GMT+0800)"
+    oneVoteInNSecs: 3600  #1小時
+  - ID: "446daf98-4e65-47e4-9cd1-ab729fca3dff" #從UUID產生一個
+    hashtag: "#防疫跟我這樣做"
+    description: "2021 防疫" #不知道顯示在哪邊，要問ENG
+    startDateTime: "2021-05-01 00:00:00 (GMT+0800)" 
+    endDateTime: "2021-12-31 23:59:59 (GMT+0800)"
+    oneVoteInNSecs: 3600  #1小時
+  - ID: "e621f877-3248-4631-b264-04214c9c832e" #從UUID產生一個
+    hashtag: "#用一支舞認識我"
+    description: "2021 跳舞" #不知道顯示在哪邊，要問ENG
+    startDateTime: "2021-04-23 15:00:00 (GMT+0800)" 
+    endDateTime: "2021-05-31 23:59:59 (GMT+0800)"
+    oneVoteInNSecs: 3600  #1小時
+  - ID: "699c0426-e30b-45bd-97fd-665f5c7fd40c" #從UUID產生一個
+    hashtag: "#貓咪大人"
+    description: "2021 貓咪大人" #不知道顯示在哪邊，要問ENG
+    startDateTime: "2021-04-09 15:00:00 (GMT+0800)" 
+    endDateTime: "2021-04-30 23:59:59 (GMT+0800)"
+    oneVoteInNSecs: 3600  #1小時
+  - ID: "cd70ae91-1682-4f74-8a9b-13b4e4fbbdec" #從UUID產生一個
+    hashtag: "#我的虛擬角色"
+    description: "2021 虛擬角色" #不知道顯示在哪邊，要問ENG
+    startDateTime: "2021-04-09 15:00:00 (GMT+0800)" 
+    endDateTime: "2021-04-30 23:59:59 (GMT+0800)"
+    oneVoteInNSecs: 3600  #1小時
+  - ID: "a2685278-9393-4230-a3fd-958ad4f75ea7" #從UUID產生一個
+    hashtag: "#反正我都OK"
+    description: "2021 反正我都OK 手勢挑戰" #不知道顯示在哪邊，要問ENG
+    startDateTime: "2021-04-09 15:00:00 (GMT+0800)" 
+    endDateTime: "2021-04-30 23:59:59 (GMT+0800)"
+    oneVoteInNSecs: 3600  #1小時
+  - ID: "f328f24f-bf43-42c3-968f-3ffda62fed07" #從UUID產生一個
+    hashtag: "VOGUE 風格舞台"
+    description: "2021 VOGUE 風格野餐日" #不知道顯示在哪邊，要問ENG
+    startDateTime: "2021-03-12 00:00:00 (GMT+0800)"
+    endDateTime: "2021-03-23 23:59:59 (GMT+0800)"
+    oneVoteInNSecs: 3600  #1小時
+  - ID: "e21da69c-f203-4599-b089-d71ef500e536"
+    hashtag: "#第18屆舍我盃"
+    description: "學生限定歌唱大賽" #不知道顯示在哪邊，要問ENG
+    startDateTime: "2021-03-01 00:00:00 (GMT+0800)"
+    endDateTime: "2021-03-26 16:00:00 (GMT+0800)"
+    oneVoteInNSecs: 3600  #1小時，不用改已經無效
+  - ID: "042d67b6-8ac9-476a-a8bc-209f74e98817" #從UUID產生一個
+    hashtag: "#夢想Sing樂園"
+    description: "2021最新音樂節目" #不知道顯示在哪邊，要問ENG
+    startDateTime: "2020-12-29 00:00:00 (GMT+0800)"
+    endDateTime: "2021-02-28 23:59:59 (GMT+0800)"
+    oneVoteInNSecs: 3600  #1小時，不用改已經無效
+  - ID: "becf160f-375c-4747-8c8a-aac94556340c" #從UUID產生一個
+    hashtag: "#Vogue FNO"
+    description: "Vogue FNO"
+    startDateTime: "2020-09-03 15:00:00 (GMT+0800)"
+    endDateTime: "2020-09-13 23:59:59 (GMT+0800)"
+    oneVoteInNSecs: 3600  #1小時
+  - ID: "480ea6c7-534d-4ab4-9481-d6e769653541"
+    hashtag: "#創星17LIVE"
+    description: "下一個巨星的誕生舞台！" #不知道顯示在哪邊，要問ENG
+    startDateTime: "2020-07-20 18:00:00 (GMT+0800)"
+    endDateTime: "2020-12-31 23:59:59 (GMT+0800)"
+    oneVoteInNSecs: 3600  #1小時，不用改已經無效
   - ID: "5cbdc3b5-b1e7-4c7a-bbb2-568f7b2de76f"
     hashtag: "#17來拜年"
     description: "穿上農曆過年風格的衣服、配件(以紅色系為主)，錄製你的拜年影片！"
     startDateTime: "2020-01-01 17:00:00 (GMT+0800)"
-    endDateTime: "2022-01-15 23:59:59 (GMT+0800)"
-    oneVoteInNSecs: 3600  #1小時
-  - ID: "699c0426-e30b-45bd-97fd-665f5c7fd40c"
-    hashtag: "#貓咪大人"
-    description: "2021 貓咪大人"
-    startDateTime: "2021-04-09 15:00:00 (GMT+0800)" 
-    endDateTime: "2022-01-15 23:59:59 (GMT+0800)"
-    oneVoteInNSecs: 3600  #1小時
-  - ID: "cd70ae91-1682-4f74-8a9b-13b4e4fbbdec"
-    hashtag: "#我的虛擬角色"
-    description: "2021 虛擬角色"
-    startDateTime: "2021-04-09 15:00:00 (GMT+0800)" 
-    endDateTime: "2022-01-15 23:59:59 (GMT+0800)"
-    oneVoteInNSecs: 3600  #1小時
-  - ID: "a2685278-9393-4230-a3fd-958ad4f75ea7"
-    hashtag: "#反正我都OK"
-    description: "2021 反正我都OK 手勢挑戰"
-    startDateTime: "2021-04-09 15:00:00 (GMT+0800)" 
-    endDateTime: "2022-01-15 23:59:59 (GMT+0800)"
+    endDateTime: "2020-01-15 23:59:59 (GMT+0800)"
     oneVoteInNSecs: 3600  #1小時
   - ID: "73c53c13-9c2f-4238-886e-5a367b9c4216"
     hashtag: "#17好聲音"
@@ -57,29 +141,9 @@ events:
     endDateTime: "2019-09-19 23:59:59 (GMT+0800)"
     oneVoteInNSecs: 3600  #1小時
 
-clips:
-  - "1sqvFO5gtWhltzGa4qxuRXKN43B"
-  - "1U6bD7dOBc2CtdxB4f4nMAn49FV"
-  - "1J5GqBytjqDREDqiABpENpr5rcH"
-  - "1Hkpi8JGm7P9laZjTjvYItskmTz"
-  - "1Hkkkb25AWzSaBx5kF4YFIpRkKN"
-  - "1HVeb3nFRRdq6VNHEOCUMKjvJRf"
-  - "1HTpvd3GQiAv8N0ruToVqMX61MB"
-  - "1HOTuRJpxOnMB1PYaMjcz1xwMqP"
-  - "1HIg1CPW4r9wFyeYp4qqNJk0iVH"
-  - "1HISuTN4Ce6WGRJPC6svkjt83st"
-  - "1HHNyNSQyEATTpR5KStAKpvdF2z"
-  - "1HGXWEn5OadPxW62MYy4mQbgFoE"
-  - "1H5hLSjuRdkTeQgpma5N9ImrjuV"
-  - "1H52MQ5Xk5Se1H1ltqdURlO6ZiV"
-  - "1H410FnDiH5g9x7xCNplYK1AXDG"
-  - "1GriVFU9bQWgjEgzJLyqyeogMRi"
-  - "1Greo5EVXQkIS70BBSEx1tTMK2N"
-  - "1GkP7RqV5ehWq8Ppd4ivpp1MFAW"
-  - "1GhlcPMT4yy74XU3lhaWJRDAJW3"
-  - "1GYp5LuGGdfUvQW30h0RwD7kD8N"
-  - "1GS4MPaq8uwfe4kWnruWyKgMGxg"
-  - "1G19batPCspux1jzB882uCyGZuN"
-  - "1D9qwrvtn1jGxFo04kRZ3BXbmCN"
-  - "1Cpi75vzZPz8lIJ8zd94IZE1G3w"
-  - "195DNmEyzUGMJKcKbjJGvDsDsdK"
+clips: #17.live的短影片 https://docs.google.com/document/d/1hmeW1dPCrsqM2_2Pe0tKgpihlt9b4L_QJAbVevpsWeg/edit#heading=h.afz1wbh4e6o6
+  - "1ex64lSVUdjPEMmDUdRVdxpxFfn"
+  - "1mmdL4KRGI386PcgJnwqJaUvJuV"
+  - "1fAaE4XT9dfw2Q0kBHPV6L16KdP"
+  - "1rAhB4cFebQ7cNI9GetZNh85GVK"
+  - "1mmlWFKJLYtGakQXTpx1vAKgj7H"

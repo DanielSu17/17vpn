@@ -1,37 +1,120 @@
-boxGachaEventID: "tw-boxgachaeventid-03"
-bannerImageURL: "https://cdn.17app.co/9ebd37bf-f070-4f7d-9e1d-bc778bfc03bf.png"
+# boxGachaEvent Example
+# ----------------------------------------------------------
+# boxGachaEventID: "boxgachaeventid123123" (low case alphabet a~z, numbers 0~9, Max 50 alphabet)
+# bannerImageURL: "BannerImageURL"
+# bannerURL: "BannerURL"
+# startTime: "2021-04-24 00:00:00 (GMT+0800)"
+# endTime: "2200-04-24 00:00:00 (GMT+0800)"
+# gachaEventNameI18n: "gachaEventNamei18n" #( lokalise channel at project 17.backend)
+# enable: true
+# boxGachaLevelGift:
+#   - level: 1
+#     giftList: 
+#       - giftID: "giftID1"
+#         receiveCount: 10
+#       - giftID: "giftID2"
+#         receiveCount: 10
+#     freeLuckBagGiftID: "GiftID9"
+#     prizeGiftID: "prizeGiftID"
+#     luckBagGiftIDs:
+#       - "GiftID4"
+#       - "GiftID4"
+#       - "GiftID4"
+#   - level: 2
+#     giftList: 
+#       - giftID: "giftID1"
+#         receiveCount: 10
+#       - giftID: "giftID2"
+#         receiveCount: 10
+#     freeLuckBagGiftID: "GiftID9"
+#     prizeGiftID: "prizeGiftID"
+#     luckBagGiftIDs:
+#       - "GiftID4"
+#       - "GiftID4"
+#       - "GiftID4"
+
+#### Event starting from below
+
+boxGachaEventID: "2212xmastw"
+bannerImageURL: "https://cdn.17app.co/46e5124e-14b1-4f28-a352-d6cbd48a2083.png"
 bannerURL: "BannerURL"
-startTime: "2022-11-17 00:00:00 (GMT+0800)"
-endTime: "2023-12-31 00:00:00 (GMT+0800)"
+startTime: "2022-12-19 12:00:00 (GMT+0800)"
+endTime: "2022-12-26 23:59:59 (GMT+0800)"
 gachaEventNameI18n: "gacha_gift_event_name_tw"
 enable: true
 boxGachaLevelGift:
-  - level: 1
-    giftList: 
-      - giftID: "2210_jphalloween_wk1_obake_test"
-        receiveCount: 2
-      - giftID: "2210_jphalloween_wk1_jk_test"
-        receiveCount: 1
-      - giftID: "2210_jphalloween_wk2_earthgummy"
-        receiveCount: 10
-    freeLuckBagGiftID: "2210_jphalloween_free"
-    prizeGiftID: "2208_jp_mkt_01"
-    luckBagGiftIDs:
-      - "2210_jphalloween_wk1_bag_test"
-      - "2210_jphalloween_wk2_bag_test"
-      - "2210_jphalloween_wk3_bag"
+ - level: 1
+   giftList: 
+     - giftID: "christmas_3_krampus_accident"
+       receiveCount: 2
+     - giftID: "christmas_6_ginger_reindeer"
+       receiveCount: 7
+     - giftID: "christmas_9_krampus_steal"
+       receiveCount: 10
+     - giftID: "2111_po_white_a_1"
+       receiveCount: 2
+     - giftID: "2111_po_white_a_2"
+       receiveCount: 2
+     - giftID: "2111_po_white_a_3"
+       receiveCount: 2
+     - giftID: "2111_po_white_a_4"
+       receiveCount: 2
+     - giftID: "2111_po_white_a_5"
+       receiveCount: 2
+   freeLuckBagGiftID: "2111_hk_white_a_bag_438b7932"
+   prizeGiftID: "2202_po_prize_1"
+   luckBagGiftIDs:
+     - "2022_xmas_gacha_box_1s"
+     - "2022_xmas_gacha_box_1m"
+     - "2022_xmas_gacha_box_1l"
 
-  - level: 2
-    giftList: 
-      - giftID: "2210_jphalloween_wk2_earthgummy"
-        receiveCount: 1
-      - giftID: "2210_jphalloween_wk1_obake_test"
-        receiveCount: 2
-      - giftID: "2210_jphalloween_wk1_jk_test"
-        receiveCount: 6
-    freeLuckBagGiftID: "2210_jphalloween_free"
-    prizeGiftID: "2207_tw_kyoto_m"
-    luckBagGiftIDs:
-      - "2210_jphalloween_wk1_bag_test"
-      - "2210_jphalloween_wk2_bag_test"
-      - "2210_jphalloween_wk3_bag"
+ - level: 2
+   giftList: 
+     - giftID: "christmas_2_santa_accident"
+       receiveCount: 5
+     - giftID: "christmas_5_reindeer_ginger"
+       receiveCount: 10
+     - giftID: "christmas_8_santa_krampus"
+       receiveCount: 13
+     - giftID: "2111_po_white_a_1"
+       receiveCount: 5
+     - giftID: "2111_po_white_a_2"
+       receiveCount: 5
+     - giftID: "2111_po_white_a_3"
+       receiveCount: 5
+     - giftID: "2111_po_white_a_4"
+       receiveCount: 5
+     - giftID: "2111_po_white_a_5"
+       receiveCount: 5
+   freeLuckBagGiftID: "2111_hk_white_a_bag_438b7932"
+   prizeGiftID: "2212_po_prize_2"
+   luckBagGiftIDs:
+     - "2022_xmas_gacha_box_2s"
+     - "2022_xmas_gacha_box_2m"
+     - "2022_xmas_gacha_box_2l"
+
+
+ - level: 3
+   giftList: 
+     - giftID: "christmas_1_santa_gift"
+       receiveCount: 9
+     - giftID: "christmas_4_ginger_accident"
+       receiveCount: 14
+     - giftID: "christmas_7_reindeer_fire"
+       receiveCount: 17
+     - giftID: "2111_po_white_a_1"
+       receiveCount: 9
+     - giftID: "2111_po_white_a_2"
+       receiveCount: 9
+     - giftID: "2111_po_white_a_3"
+       receiveCount: 9
+     - giftID: "2111_po_white_a_4"
+       receiveCount: 9
+     - giftID: "2111_po_white_a_5"
+       receiveCount: 9
+   freeLuckBagGiftID: "2111_hk_white_a_bag_438b7932"
+   prizeGiftID: "2212_po_prize_3"
+   luckBagGiftIDs:
+     - "2022_xmas_gacha_box_3s"
+     - "2022_xmas_gacha_box_3m"
+     - "2022_xmas_gacha_box_3l"

@@ -2,22 +2,22 @@
 enableNewAppleIDLogic: true
 newAppleIDLogicVersion: "3.115.0"
 
-loginFromMongoSecondary: true
-registerFromMongoSecondary: true
+loginFromMongoSecondary: false
+registerFromMongoSecondary: false
 ## deprecate above
-  
+
 featuresRequirePhoneBinding:
   - MISSION
+  - REDENVELOPE
   
 openIDSuffix: # PROD-3213
-  - "baby"
-  - "baobao"
-  - "bb"
-  - "MMDD"  # Special suffix
   - "000"   # Special suffix
   - "0000"  # Special suffix
   - "00000" # Special suffix
-
+  - "MMDD"  # Special suffix
+  - "baby"
+  - "baobao"
+  - "bb"
 registerAutoFollow: false
 recommendAutoFollow:
   oldClientEnable: true # for device version less than or equal to the minimum required version

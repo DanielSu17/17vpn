@@ -1,22 +1,19 @@
 tabs:
   - event
-  - 17tv_tab
+  - latest
+
   - hot
- # - hot_opt
+  #- hot_opt
   - hot_2019Q4
- # - hot_opt
-  - game
-  # - topictab
-  - accompany
   - handsUp
   - 17k
-  - male_tab
-  - female_tab
-  #- handsUp 
+  - clip #加上後該區域才能上傳短影片
+#  - topictab
+#  - handsUp
+ # - male_tab
+ # - female_tab
   - vipRecommend
-  - latest
-  - clip
-  - classes
+  - 17tv_tab
 
 # this is for setting default tab in tabs, abnormal case will lead to apply first tab as default tab in client side
 defaultTab: hot
@@ -24,18 +21,19 @@ defaultTab: hot
 tabInfo:
   17liveplus_tab:
     textColor: "#f5487d"
+  17tv_tab:
+    textColor: "#f5487d"
 
-tabsCanBeChosen:
+tabsCanBeChosen: #可以選擇的頻道，市集主播選了handsup才會出現在市集main tab
   - name: notSpecific
     titleI18nKey: livestream_option_none
-  - name: musicJP
-    titleI18nKey: livestream_option_17music
   - name: handsUp
     titleI18nKey: livestream_option_handsup
-hotOlderAndroidVersion: 2.4.40   #2.4.40
-hotOlderIOSVersion: 3.88.0       #3.90.0
+
+hotOlderAndroidVersion: 2.4.41
+hotOlderIOSVersion: 3.90.0
 musicNewAndroidVersion: 2.29.0
-musicNewIOSVersion: 3.115.200
+musicNewIOSVersion: 3.115.0
 
 # Before you change this part, please check you know what are you doing.
 # This is just for AB test to replace a tab to new tab.

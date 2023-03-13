@@ -1,23 +1,25 @@
 enabled: false
 
-sendNotifHour: 22
-notifTemplateID: "693b36b4-e2b1-4fb5-9eb8-6371e3000379"
-churnDays: 14
-minBaggageSent: 1
-maxRewardLimit: 3
+sendNotifHour: 22  #發送PN的台灣時間
+notifTemplateID: "693b36b4-e2b1-4fb5-9eb8-6371e3000379"  #onesignal上的template
+churnDays: 14  #第Ｘ天開始沒有再登入app
+minBaggageSent: 1  #用戶要送過最少X次的背包禮才列入對象（實際上沒有生效）
+maxRewardLimit: 3 #14天喚回輪迴最多Ｘ次
 
 rewards:
-  - titleI18nKey: "comeback_retention_dialog_gift_tag_1"
-    descI18nKey: "comeback_retention_dialog_gift_desc_1"
-    highlightI18nKey: "comeback_retention_dialog_highlight_1"
-    imgURL: "https://assets-17app.akamaized.net/9f8e542d-a080-4bee-a2e0-9d2b1a0e0890.png"
-    rewardType: "stamp"
-    rewardIdentity: "17baby_body"
-    days: 3
-  - titleI18nKey: "comeback_retention_dialog_gift_tag_2"
-    descI18nKey: "comeback_retention_dialog_gift_desc_2"
-    highlightI18nKey: "comeback_retention_dialog_highlight_2"
-    imgURL: "https://assets-17app.akamaized.net/5290465f-5e00-4ff9-93a2-8cb67d0d65a4.png"
-    rewardType: "iap"
-    rewardIdentity: "retentionRewardIap"
-    days: 5
+#貼圖
+  - titleI18nKey: "comeback_retention_dialog_gift_tag_1" #彈窗上的標題
+    descI18nKey: "comeback_retention_dialog_gift_desc_1" #彈窗上的描述
+    highlightI18nKey: "comeback_retention_dialog_highlight_1" #彈窗上的highlight文文字
+    imgURL: "https://assets-17app.akamaized.net/9f8e542d-a080-4bee-a2e0-9d2b1a0e0890.png" #彈窗上插圖
+    rewardType: "stamp" #only Stamp & IAP
+    rewardIdentity: "17baby_body" #對應到已上架的貼圖category
+    days: 3  #實際效期＋UI顯示效期
+#IAP優惠
+  - titleI18nKey: "comeback_retention_dialog_gift_tag_2" #彈窗上的標題
+    descI18nKey: "comeback_retention_dialog_gift_desc_2" #彈窗上的描述
+    highlightI18nKey: "comeback_retention_dialog_highlight_2" #彈窗上的highlight文文字
+    imgURL: "https://assets-17app.akamaized.net/5290465f-5e00-4ff9-93a2-8cb67d0d65a4.png" #彈窗上插圖
+    rewardType: "iap" #only Stamp & IAP
+    rewardIdentity: "retentionRewardIap" #對應到IAP閃購設定的secretIAP
+    days: 5  #UI顯示效期

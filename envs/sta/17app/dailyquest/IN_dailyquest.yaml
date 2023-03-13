@@ -1,20 +1,18 @@
+#連續簽到小幫手訊息
+#daily_continuous_login_dialog
+
 # switch for daily sign-in reward
 enable: true
-
-eventDailyRewards:
-  - startTimestamp: 1659913856
-    endTimestamp: 1660086656
-    giftID: "e_500"
-#  - startTimestamp: 1600041600 #2020/09/14 00:00:00 (GMT+8)
-#    endTimestamp: 1600128000 #2020/09/15 00:00:00 (GMT+8)
-#    butlerImageURL: "https://cdn.17app.co/3e60ad72-8871-4579-bc0b-96991623c88c.png"
-#    giftID: "2008_jp_niaq_bp"
 
 # 0: available for all level. Otherwise, apply it for users below the level
 level: 0
 
+# old daily sign-in reward for each day: [1st, 2nd, 3rd, 4th, 5th, 6th, 7th]
+rewards: [10, 15, 20, 25, 30, 35, 40]
+
 # disable auto sign in hottest
 disableSignInHottest: false
+skipSignInRewardsUI: false #測試中
 
 # can get sign-in reward and newbie reward simultaneously
 enableSignInAndNewbieRewardAtSameTime: true
@@ -22,127 +20,322 @@ enableSignInAndNewbieRewardAtSameTime: true
 # do not dailySignIn reward after register midnight
 noAnimationTTLAfterRegister: 0
 
-skipSignInRewardsUI: false
-
 # daily for sign-in reward for voucher version
 enableSignInReward: true
 
+signInRewards:
+######Origianl setting of daily sign in
+  - exp: 30
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://assets-17app.akamaized.net/4369bc0c-408d-4dd5-a7c2-b090e9591fb7.png"
+  - exp: 35
+    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
+    oldURL: "https://assets-17app.akamaized.net/0cc93db5-99ee-4731-a073-4cd47ccdde8b.png"
+    voucherReward:
+      type: 1
+      #itemID: "gift_wave_update_ops"
+      itemID: "2302_tw_steel_9"
+      #tokenName: "voucher_daily_reward12"
+      tokenName: "steel_01"
+      amount: 2
+      intervalSec: 28800
+  - exp: 40
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://assets-17app.akamaized.net/26ba0217-0a2a-43f8-a2a7-a4fd17b6a26b.png"
+  - exp: 45
+    url: "https://cdn.17app.co/b5b41643-def9-400d-bb08-90990d3ffd9b.png"
+    oldURL: "https://assets-17app.akamaized.net/c994d35d-78ae-4315-b00a-7b0dbd715fad.png" 
+    voucherReward:
+      type: 1
+      #itemID: "gift_cat_ops"
+      itemID: "2302_tw_steel_10"
+      #tokenName: "voucher_daily_reward_cat_1"
+      tokenName: "steel_02"
+      amount: 2
+      intervalSec: 28800
+  - exp: 50
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://assets-17app.akamaized.net/0c1e01c3-eb79-4e19-8bea-59272eff7a25.png"
+  - exp: 55
+    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
+    oldURL: "https://assets-17app.akamaized.net/942dd78f-7016-4978-abca-043f789ea111.png" 
+    voucherReward:
+      type: 1
+      #itemID: "gift_wave_update_ops"
+      itemID: "2302_tw_steel_11"
+      #tokenName: "voucher_daily_reward12"
+      tokenName: "steel_03"
+      amount: 2
+      intervalSec: 28800
+##  - exp: 60 下樓梯萬聖節
+##    url: "https://cdn.17app.co/0a942d42-7103-4e4e-8364-94a1de553937.png"
+##    oldURL: "https://cdn.17app.co/f908e91c-1878-48e2-b9bf-20bb33b800e5.png"
+##    voucherReward:
+##      type: 1
+##      itemID: "crazy_stairs_viewer_easy_bag"
+##      tokenName: "voucher_daily_reward_gift_crazy_stair_viewer"
+##      amount: 1
+##      intervalSec: 28800
+  - exp: 60
+    url: "https://cdn.17app.co/e87b658e-3cdf-4c45-97c5-9578b33c9959.png"
+    oldURL: "https://assets-17app.akamaized.net/879c28b7-5995-433a-9951-ca83f8b41e4e.png"  
+    voucherReward:
+      type: 1
+      #itemID: "gift_hedgehog_ops"
+      itemID: "2302_tw_steel_12"
+      #tokenName: "voucher_daily_reward_gift_hedgehog"
+      tokenName: "steel_04"
+      amount: 2
+      intervalSec: 28800
+  - exp: 30
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://assets-17app.akamaized.net/4369bc0c-408d-4dd5-a7c2-b090e9591fb7.png"
+  - exp: 35
+    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
+    oldURL: "https://assets-17app.akamaized.net/0cc93db5-99ee-4731-a073-4cd47ccdde8b.png"
+    voucherReward:
+      type: 1
+      #itemID: "gift_wave_update_ops"
+      itemID: "2302_tw_steel_9"
+      #tokenName: "voucher_daily_reward12"
+      tokenName: "steel_01"
+      amount: 2
+      intervalSec: 28800
+  - exp: 40
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://assets-17app.akamaized.net/26ba0217-0a2a-43f8-a2a7-a4fd17b6a26b.png"
+  - exp: 45
+    url: "https://cdn.17app.co/05e17421-568d-46d3-885e-ce21c24fa09f.png"
+    oldURL: "https://assets-17app.akamaized.net/3c8ac746-3fe3-464f-a2fd-d819da2b4631.png"
+    voucherReward:
+      type: 1
+      #itemID: "gift_cat_2_ops"
+      itemID: "2302_tw_steel_10"
+      #tokenName: "voucher_daily_reward_cat_2"
+      tokenName: "steel_02"
+      amount: 2
+      intervalSec: 28800
+  - exp: 50
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://assets-17app.akamaized.net/0c1e01c3-eb79-4e19-8bea-59272eff7a25.png"
+  - exp: 55
+    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
+    oldURL: "https://assets-17app.akamaized.net/942dd78f-7016-4978-abca-043f789ea111.png" 
+    voucherReward:
+      type: 1
+      #itemID: "gift_wave_update_ops"
+      itemID: "2302_tw_steel_11"
+      #tokenName: "voucher_daily_reward12"
+      tokenName: "steel_03"
+      amount: 2
+      intervalSec: 28800
+##  - exp: 60
+##    url: "https://cdn.17app.co/f943a0d6-13ef-472a-a37b-027bfee52ccb.png"
+##    oldURL: "https://cdn.17app.co/232fb9b5-aa33-4428-84b8-ef95e6baad62.png"
+##    voucherReward:
+##      type: 1
+##      itemID: "crazy_stairs_streamer_easy_bag"
+##      tokenName: "voucher_daily_reward_gift_crazy_stair_streamer"
+##      amount: 1
+##      intervalSec: 28800
+  - exp: 60
+    url: "https://cdn.17app.co/e87b658e-3cdf-4c45-97c5-9578b33c9959.png"
+    oldURL: "https://assets-17app.akamaized.net/879c28b7-5995-433a-9951-ca83f8b41e4e.png"
+    voucherReward:
+      type: 1
+      #itemID: "gift_hedgehog_ops"
+      itemID: "2302_tw_steel_12"
+      #tokenName: "voucher_daily_reward_gift_hedgehog"
+      tokenName: "steel_04"
+      amount: 2
+      intervalSec: 28800
+  - exp: 30
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://assets-17app.akamaized.net/4369bc0c-408d-4dd5-a7c2-b090e9591fb7.png"
+  - exp: 35
+    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
+    oldURL: "https://assets-17app.akamaized.net/0cc93db5-99ee-4731-a073-4cd47ccdde8b.png"
+    voucherReward:
+      type: 1
+      #itemID: "gift_wave_update_ops"
+      itemID: "2302_tw_steel_9"
+      #tokenName: "voucher_daily_reward12"
+      tokenName: "steel_01"
+      amount: 2
+      intervalSec: 28800
+  - exp: 40
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://assets-17app.akamaized.net/26ba0217-0a2a-43f8-a2a7-a4fd17b6a26b.png"
+  - exp: 45
+    url: "https://cdn.17app.co/8a8c8f86-230e-4c2f-a5ae-bbb52416b4ea.png"
+    oldURL: "https://assets-17app.akamaized.net/c73a872a-1732-4a56-b326-203d08da7c9d.png" 
+    voucherReward:
+      type: 1
+      #itemID: "gift_dog_ops"
+      itemID: "2302_tw_steel_10"
+      #tokenName: "voucher_daily_reward_gift_dog_ops"
+      tokenName: "steel_02"
+      amount: 2
+      intervalSec: 28800
+  - exp: 50
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://assets-17app.akamaized.net/0c1e01c3-eb79-4e19-8bea-59272eff7a25.png"
+  - exp: 55
+    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
+    oldURL: "https://assets-17app.akamaized.net/942dd78f-7016-4978-abca-043f789ea111.png"
+    voucherReward:
+      type: 1
+      #itemID: "gift_wave_update_ops"
+      itemID: "2302_tw_steel_11"
+      #tokenName: "voucher_daily_reward12"
+      tokenName: "steel_03"
+      amount: 2
+      intervalSec: 28800
+  - exp: 60
+    url: "https://cdn.17app.co/ffc1b509-2525-4eb1-bbcd-7d938da3d44b.png"
+    oldURL: "https://assets-17app.akamaized.net/930c1b3e-cf1e-40f3-8129-bdaa9bd9f8ca.png"
+    voucherReward:
+      type: 1
+      #itemID: "gift_rabbit_ops"
+      itemID: "2302_tw_steel_12"
+      #tokenName: "voucher_daily_reward_gift_hedgehog"
+      tokenName: "steel_04"
+      amount: 2
+      intervalSec: 28800
+  - exp: 30
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://assets-17app.akamaized.net/4369bc0c-408d-4dd5-a7c2-b090e9591fb7.png"
+  - exp: 35
+    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
+    oldURL: "https://assets-17app.akamaized.net/0cc93db5-99ee-4731-a073-4cd47ccdde8b.png"
+    voucherReward:
+      type: 1
+      #itemID: "gift_wave_update_ops"
+      itemID: "2302_tw_steel_9"
+      #tokenName: "voucher_daily_reward12"
+      tokenName: "steel_01"
+      amount: 2
+      intervalSec: 28800
+  - exp: 40
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://assets-17app.akamaized.net/26ba0217-0a2a-43f8-a2a7-a4fd17b6a26b.png"
+  - exp: 45
+    url: "https://cdn.17app.co/8a8c8f86-230e-4c2f-a5ae-bbb52416b4ea.png"
+    oldURL: "https://assets-17app.akamaized.net/c73a872a-1732-4a56-b326-203d08da7c9d.png"
+    voucherReward:
+      type: 1
+      #itemID: "gift_dog_ops"
+      itemID: "2302_tw_steel_10"
+      #tokenName: "voucher_daily_reward_gift_dog_ops"
+      tokenName: "steel_02"
+      amount: 2
+      intervalSec: 28800
+  - exp: 50
+    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+    oldURL: "https://assets-17app.akamaized.net/0c1e01c3-eb79-4e19-8bea-59272eff7a25.png"
+  - exp: 55
+    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
+    oldURL: "https://assets-17app.akamaized.net/942dd78f-7016-4978-abca-043f789ea111.png" 
+    voucherReward:
+      type: 1
+      #itemID: "gift_wave_update_ops"
+      itemID: "2302_tw_steel_11"
+      #tokenName: "voucher_daily_reward12"
+      tokenName: "steel_03"
+      amount: 2
+      intervalSec: 28800
+  - exp: 60
+    url: "https://cdn.17app.co/956ef8ca-ca74-4a0b-9aeb-836a04fba2e2.png"
+    oldURL: "https://assets-17app.akamaized.net/86b23f56-619a-4e64-b2d3-431ec55747f0.png"
+    voucherReward:
+      type: 1
+      #itemID: "gift_hamster_ops"
+      itemID: "2302_tw_steel_12"
+      #tokenName: "voucher_daily_reward_gift_hedgehog"
+      tokenName: "steel_04"
+      amount: 2
+      intervalSec: 28800
+## remove this to prevent it influent ip collaboration (APP-20938, APP-20939)
+##abtestStartTime: 
+##  "2020-10-12 12:00:00 (GMT+0800)"
+signInRewardsV2Whitelist:
+  - "c52c9260-119d-423c-afc8-a2c8aa3a7a02" #jameschou01
 signInRewardsV2:
-#  - exp: 30
-#    url: "https://cdn.17app.co/512be4d1-3ccd-49d5-894f-6f520218db18.png"
-#    oldURL: "https://cdn.17app.co/8467135a-fae7-4ce8-8951-3e399a5b475c.png"
-#    voucherReward:
-#      type: 1
-#      itemID: "2019newuser"
-#      tokenName: "voucher_daily_reward_d1"
-#      amount: 2
-#      intervalSec: 28800
-#- exp: 35
-#url: "https://cdn.17app.co/46ea7820-e2a4-48f0-b206-f08a7714df87.png"
-#oldURL: "https://cdn.17app.co/43f6e189-01e0-4522-b298-b44b2180c73a.png"
-# voucherReward:
-#  type: 1
-# itemID: "hello_2"
-#tokenName: "voucher_daily_reward_d2"
-#amount: 10
-#intervalSec: 28800
-#  - exp: 35
-#    url: "https://cdn.17app.co/46ea7820-e2a4-48f0-b206-f08a7714df87.png"
-#    oldURL: "https://cdn.17app.co/43f6e189-01e0-4522-b298-b44b2180c73a.png"
-#    voucherReward:
-#      type: 1
-#      itemID: "2106_tw_kitty_1"
-#      tokenName: "voucher_daily_kitty_1"
-#      amount: 10
-#      intervalSec: 28800
-#  - exp: 40
-#    url: "https://cdn.17app.co/5f645919-dbd9-4a60-a573-aef1d36015c9.png"
-#    oldURL: "https://cdn.17app.co/0e190bcd-ad1a-41f9-a46c-7537e3b9c75e.png"
-#    voucherReward:
-#      type: 1
-#      itemID: "friday_pink_party"
-#      tokenName: "voucher_daily_reward_d3"
-#      amount: 2
-#      intervalSec: 28800
-#- exp: 45
-#url: "https://cdn.17app.co/3e39b647-2ab4-425b-a087-bbdfbc367cf6.png"
-#oldURL: "https://cdn.17app.co/132c3535-ab25-476b-84e3-1f37ed78cd78.png"
-#voucherReward:
-#type: 1
-#itemID: "missyou_2"
-#tokenName: "voucher_daily_reward_d4"
-#amount: 10
-#intervalSec: 28800
-#  - exp: 45
-#    url: "https://cdn.17app.co/3e39b647-2ab4-425b-a087-bbdfbc367cf6.png"
-#    oldURL: "https://cdn.17app.co/132c3535-ab25-476b-84e3-1f37ed78cd78.png"
-#    voucherReward:
-#      type: 1
-#      itemID: "2106_tw_kitty_2"
-#      tokenName: "voucher_daily_kitty_2"
-#      amount: 10
-#      intervalSec: 28800
-#  - exp: 50
-#    url: "https://cdn.17app.co/ca8f334b-c736-4615-b210-fccee72d434b.png"
-#    oldURL: "https://cdn.17app.co/e7ed3cd6-322e-44bd-a430-b1617290c91c.png"
-#    voucherReward:
-#      type: 1
-#      itemID: "tw_daily_reward_poker"
-#      tokenName: "voucher_daily_reward_d5"
-#      amount: 2
-#      intervalSec: 28800
-#- exp: 55
-#url: "https://cdn.17app.co/46ea7820-e2a4-48f0-b206-f08a7714df87.png"
-#oldURL: "https://cdn.17app.co/006f315a-b3ea-4e74-a516-5af6720b0e77.png"
-#voucherReward:
-#type: 1
-#itemID: "hello_2"
-#tokenName: "voucher_daily_reward_d2"
-#amount: 10
-#intervalSec: 28800
-#  - exp: 55
-#    url: "https://cdn.17app.co/46ea7820-e2a4-48f0-b206-f08a7714df87.png"
-#    oldURL: "https://cdn.17app.co/006f315a-b3ea-4e74-a516-5af6720b0e77.png"
-#    voucherReward:
-#      type: 1
-#      itemID: "2106_tw_kitty_3"
-#      tokenName: "voucher_daily_kitty_3"
-#      amount: 10
-#      intervalSec: 28800
+  - exp: 30
+    url: "https://cdn.17app.co/512be4d1-3ccd-49d5-894f-6f520218db18.png"
+    oldURL: "https://cdn.17app.co/8467135a-fae7-4ce8-8951-3e399a5b475c.png"
+    voucherReward:
+      type: 1
+      itemID: "2019newuser"
+      tokenName: "voucher_daily_reward_d1"
+      amount: 2
+      intervalSec: 28800
+  - exp: 35
+    url: "https://cdn.17app.co/46ea7820-e2a4-48f0-b206-f08a7714df87.png"
+    oldURL: "https://cdn.17app.co/43f6e189-01e0-4522-b298-b44b2180c73a.png"
+    voucherReward:
+      type: 1
+      itemID: "hello_2"
+      tokenName: "voucher_daily_reward_d2"
+      amount: 10
+      intervalSec: 28800
+  - exp: 40
+    url: "https://cdn.17app.co/5f645919-dbd9-4a60-a573-aef1d36015c9.png"
+    oldURL: "https://cdn.17app.co/0e190bcd-ad1a-41f9-a46c-7537e3b9c75e.png"
+    voucherReward:
+      type: 1
+      itemID: "friday_pink_party"
+      tokenName: "voucher_daily_reward_d3"
+      amount: 2
+      intervalSec: 28800
+  - exp: 45
+    url: "https://cdn.17app.co/3e39b647-2ab4-425b-a087-bbdfbc367cf6.png"
+    oldURL: "https://cdn.17app.co/132c3535-ab25-476b-84e3-1f37ed78cd78.png"
+    voucherReward:
+      type: 1
+      itemID: "missyou_2"
+      tokenName: "voucher_daily_reward_d4"
+      amount: 10
+      intervalSec: 28800
+  - exp: 50
+    url: "https://cdn.17app.co/ca8f334b-c736-4615-b210-fccee72d434b.png"
+    oldURL: "https://cdn.17app.co/e7ed3cd6-322e-44bd-a430-b1617290c91c.png"
+    voucherReward:
+      type: 1
+      itemID: "tw_daily_reward_poker"
+      tokenName: "voucher_daily_reward_d5"
+      amount: 2
+      intervalSec: 28800
+  - exp: 55
+    url: "https://cdn.17app.co/46ea7820-e2a4-48f0-b206-f08a7714df87.png"
+    oldURL: "https://cdn.17app.co/006f315a-b3ea-4e74-a516-5af6720b0e77.png"
+    voucherReward:
+      type: 1
+      itemID: "hello_2"
+      tokenName: "voucher_daily_reward_d2"
+      amount: 10
+      intervalSec: 28800
 #  - exp: 60
-#    url: "https://cdn.17app.co/e87b658e-3cdf-4c45-97c5-9578b33c9959.png"
-#    oldURL: "https://cdn.17app.co/fc22a990-b55a-4b52-a8d0-997778097f8f.png"
+#    url: "https://cdn.17app.co/0a942d42-7103-4e4e-8364-94a1de553937.png"
+#    oldURL: "https://cdn.17app.co/f908e91c-1878-48e2-b9bf-20bb33b800e5.png"
 #    voucherReward:
 #      type: 1
-#      itemID: "gift_hedgehog_ops"
-#      tokenName: "voucher_daily_reward_gift_hedgehog"
+#      itemID: "crazy_stairs_viewer_easy_bag"
+#      tokenName: "voucher_daily_reward_gift_crazy_stair_viewer"
 #      amount: 1
 #      intervalSec: 28800
-
-#- exp: 60 #第一週的第7天  #Willie 修改
-#url: "https://cdn.17app.co/92e1d203-ee6f-4afb-82a2-3ecaf4e7fcec.png"
-#oldURL: "https://cdn.17app.co/f65ea95e-2b4b-486a-b368-d285a36350e0.png"
-#voucherReward:
-#type: 1
-#itemID: "daily_reward_love"
-#tokenName: "voucher_daily_reward_d6"
-#amount: 1
-#intervalSec: 28800
-#  - exp: 60 #第一週的第7天
-#    url: "https://cdn.17app.co/92e1d203-ee6f-4afb-82a2-3ecaf4e7fcec.png"
-#    oldURL: "https://cdn.17app.co/f65ea95e-2b4b-486a-b368-d285a36350e0.png"
-#    voucherReward:
-#      type: 1
-#      itemID: "2106_tw_kitty_4"
-#      tokenName: "voucher_daily_kitty_4"
-#      amount: 1
-#      intervalSec: 28800
+  - exp: 60
+    url: "https://cdn.17app.co/92e1d203-ee6f-4afb-82a2-3ecaf4e7fcec.png"
+    oldURL: "https://cdn.17app.co/f65ea95e-2b4b-486a-b368-d285a36350e0.png"
+    voucherReward:
+      type: 1
+      itemID: "daily_reward_love"
+      tokenName: "voucher_daily_reward_d6"
+      amount: 1
+      intervalSec: 28800
 signInRewardsV3Whitelist:
   - "567e0b5d-1516-4ce0-b4e8-bec4e756d5ae" #kevinmh
-  - "c1490c08-8f51-45aa-b0d8-6bf836d1eb3a" #james.sta01
-  - "bc6295f3-84bb-4d6e-a46d-bd3f9134a140" #ericsta1
-  - "c3dfff9d-b6a5-4732-8ac1-40321b8b67b6" #erictest2
-  - "5eee8b2b-5c11-4e81-b084-858b9a958653" #lucaslu1
+  - "c00f530f-4e34-4e98-8a2e-61b2c822ea29" #jameschou02
 signInRewardsV3: # group c rewards point
   - exp: 30
     url: "https://cdn.17app.co/d8348af8-991e-4196-99ff-703b26d691e4.png"
@@ -168,368 +361,270 @@ signInRewardsV3: # group c rewards point
     url: "https://cdn.17app.co/d8348af8-991e-4196-99ff-703b26d691e4.png"
     oldURL: "https://cdn.17app.co/312d959a-4c2b-4901-bc93-651050074c9b.png"
     point: 50
+#  - exp: 60
+#    url: "https://cdn.17app.co/e87b658e-3cdf-4c45-97c5-9578b33c9959.png"
+#    oldURL: "https://cdn.17app.co/fc22a990-b55a-4b52-a8d0-997778097f8f.png"
+#    voucherReward:
+#      type: 1
+#      itemID: "gift_hedgehog_ops"
+#      tokenName: "voucher_daily_reward_gift_hedgehog"
+#      amount: 1
+#      intervalSec: 28800
   - exp: 60
     url: "https://cdn.17app.co/d8348af8-991e-4196-99ff-703b26d691e4.png"
     oldURL: "https://cdn.17app.co/778de112-1141-414e-8124-28a499de2252.png"
     point: 100
-signInRewards:
-  - exp: 30
-    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
-    oldURL: "https://assets-17app.akamaized.net/4369bc0c-408d-4dd5-a7c2-b090e9591fb7.png"
-  - exp: 35
-    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
-    oldURL: "https://assets-17app.akamaized.net/0cc93db5-99ee-4731-a073-4cd47ccdde8b.png"
-    voucherReward:
-      type: 1
-      itemID: "2106_tw_kitty_1"
-      tokenName: "voucher_day2_hbd"
-      amount: 2
-      intervalSec: 28800
-  - exp: 40
-    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
-    oldURL: "https://assets-17app.akamaized.net/26ba0217-0a2a-43f8-a2a7-a4fd17b6a26b.png"
-  - exp: 45
-    url: "https://cdn.17app.co/b5b41643-def9-400d-bb08-90990d3ffd9b.png"
-    oldURL: "https://cdn.17app.co/c1d16b94-818e-4a5e-b6bc-99178a3dc097.png"
-    voucherReward:
-      type: 1
-      itemID: "2106_tw_kitty_2"
-      tokenName: "voucher_day4_celeb"
-      amount: 2
-      intervalSec: 28800
-  - exp: 50
-    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
-    oldURL: "https://cdn.17app.co/808dbc9a-19ec-42a4-a661-80ba8d340bd0.png"
-  - exp: 55
-    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
-    oldURL: "https://cdn.17app.co/c2b14c19-47d9-466b-bcc2-f94d8a4e52d8.png"
-    voucherReward:
-      type: 1
-      itemID: "2106_tw_kitty_3"
-      tokenName: "voucher_day6_fly"
-      #tokenName: "voucher_daily_sht_3"
-      amount: 2
-      intervalSec: 28800
-  - exp: 60
-    url: "https://cdn.17app.co/b050960c-4fc0-4aa0-a17f-b0e02ec6a7e8.png"
-    oldURL: "https://cdn.17app.co/9169c17a-5153-4ace-af93-3bcc3e5581a1.png"
-    voucherReward:
-      type: 1
-      itemID: "2106_tw_kitty_4"
-      tokenName: "voucher_day7_17hbd"
-      #tokenName: "voucher_daily_sht_4"
-      amount: 1
-      intervalSec: 28800
-  #  - exp: 60
-  #    url: "https://cdn.17app.co/e87b658e-3cdf-4c45-97c5-9578b33c9959.png"
-  #    oldURL: "https://cdn.17app.co/fc22a990-b55a-4b52-a8d0-997778097f8f.png"
-  #    voucherReward:
-  #      type: 1
-  #      itemID: "gift_hedgehog_ops"
-  #      tokenName: "voucher_daily_reward_gift_hedgehog"
-  #      amount: 1
-  #      intervalSec: 28800
-  - exp: 30
-    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
-    oldURL: "https://cdn.17app.co/405c44b2-2077-4f46-9dab-9bbd38ad6b46.png"
-  - exp: 35
-    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
-    oldURL: "https://cdn.17app.co/67e08710-3354-4c6d-b343-12075e46f3cb.png"
-    voucherReward:
-      type: 1
-      itemID: "gift_wave_update_ops"
-      tokenName: "voucher_day2_hbd"
-      #tokenName: "voucher_daily_sht_1"
-      amount: 2
-      intervalSec: 28800
-  - exp: 40
-    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
-    oldURL: "https://cdn.17app.co/029c0b86-9dc5-4e4f-8e3c-1e0bf66e8e05.png"
-  - exp: 45
-    url: "https://cdn.17app.co/05e17421-568d-46d3-885e-ce21c24fa09f.png"
-    oldURL: "https://cdn.17app.co/f075190d-9ed0-4b46-bba6-8638580c049f.png"
-    voucherReward:
-      type: 1
-      itemID: "gift_cat_2_ops"
-      tokenName: "voucher_day4_celeb"
-      amount: 2
-      intervalSec: 28800
-  - exp: 50
-    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
-    oldURL: "https://cdn.17app.co/808dbc9a-19ec-42a4-a661-80ba8d340bd0.png"
-  - exp: 55
-    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
-    oldURL: "https://cdn.17app.co/c2b14c19-47d9-466b-bcc2-f94d8a4e52d8.png"
-    voucherReward:
-      type: 1
-      itemID: "gift_wave_update_ops"
-      tokenName: "voucher_day6_fly"
-      amount: 2
-      intervalSec: 28800
-  #  - exp: 60
-  #    url: "https://cdn.17app.co/f943a0d6-13ef-472a-a37b-027bfee52ccb.png"
-  #    oldURL: "https://cdn.17app.co/232fb9b5-aa33-4428-84b8-ef95e6baad62.png"
-  #    voucherReward:
-  #      type: 1
-  #      itemID: "crazy_stairs_streamer_easy_bag"
-  #      tokenName: "voucher_daily_reward_gift_crazy_stair_streamer"
-  #      amount: 1
-  #      intervalSec: 28800
-  - exp: 60
-    url: "https://cdn.17app.co/e87b658e-3cdf-4c45-97c5-9578b33c9959.png"
-    oldURL: "https://cdn.17app.co/fc22a990-b55a-4b52-a8d0-997778097f8f.png"
-    voucherReward:
-      type: 1
-      itemID: "gift_hedgehog_ops"
-      tokenName: "voucher_day7_17hbd"
-      amount: 2
-      intervalSec: 28800
-  - exp: 30
-    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
-    oldURL: "https://cdn.17app.co/405c44b2-2077-4f46-9dab-9bbd38ad6b46.png"
-  - exp: 35
-    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
-    oldURL: "https://cdn.17app.co/67e08710-3354-4c6d-b343-12075e46f3cb.png"
-    voucherReward:
-      type: 1
-      itemID: "gift_wave_update_ops"
-      tokenName: "voucher_day2_hbd"
-      amount: 2
-      intervalSec: 28800
-  - exp: 40
-    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
-    oldURL: "https://cdn.17app.co/029c0b86-9dc5-4e4f-8e3c-1e0bf66e8e05.png"
-  - exp: 45
-    url: "https://cdn.17app.co/8a8c8f86-230e-4c2f-a5ae-bbb52416b4ea.png"
-    oldURL: "https://cdn.17app.co/87fabf3f-276d-4f7e-bff0-706c743e7269.png"
-    voucherReward:
-      type: 1
-      itemID: "gift_dog_ops"
-      tokenName: "voucher_day4_celeb"
-      amount: 2
-      intervalSec: 28800
-  - exp: 50
-    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
-    oldURL: "https://cdn.17app.co/808dbc9a-19ec-42a4-a661-80ba8d340bd0.png"
-  - exp: 55
-    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
-    oldURL: "https://cdn.17app.co/c2b14c19-47d9-466b-bcc2-f94d8a4e52d8.png"
-    voucherReward:
-      type: 1
-      itemID: "gift_wave_update_ops"
-      tokenName: "voucher_day6_fly"
-      amount: 2
-      intervalSec: 28800
-  - exp: 60
-    url: "https://cdn.17app.co/ffc1b509-2525-4eb1-bbcd-7d938da3d44b.png"
-    oldURL: "https://cdn.17app.co/884f1865-52f5-4529-968b-3f483c8e257a.png"
-    voucherReward:
-      type: 1
-      itemID: "gift_rabbit_ops"
-      tokenName: "voucher_day7_17hbd"
-      amount: 1
-      intervalSec: 28800
-  - exp: 30
-    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
-    oldURL: "https://cdn.17app.co/405c44b2-2077-4f46-9dab-9bbd38ad6b46.png"
-  - exp: 35
-    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
-    oldURL: "https://cdn.17app.co/67e08710-3354-4c6d-b343-12075e46f3cb.png"
-    voucherReward:
-      type: 1
-      itemID: "gift_wave_update_ops"
-      tokenName: "voucher_day2_hbd"
-      amount: 2
-      intervalSec: 28800
-  - exp: 40
-    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
-    oldURL: "https://cdn.17app.co/029c0b86-9dc5-4e4f-8e3c-1e0bf66e8e05.png"
-  - exp: 45
-    url: "https://cdn.17app.co/8a8c8f86-230e-4c2f-a5ae-bbb52416b4ea.png"
-    oldURL: "https://cdn.17app.co/87fabf3f-276d-4f7e-bff0-706c743e7269.png"
-    voucherReward:
-      type: 1
-      itemID: "gift_dog_ops"
-      tokenName: "voucher_day4_celeb"
-      amount: 2
-      intervalSec: 28800
-  - exp: 50
-    url: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
-    oldURL: "https://cdn.17app.co/808dbc9a-19ec-42a4-a661-80ba8d340bd0.png"
-  - exp: 55
-    url: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
-    oldURL: "https://cdn.17app.co/c2b14c19-47d9-466b-bcc2-f94d8a4e52d8.png"
-    voucherReward:
-      type: 1
-      itemID: "gift_wave_update_ops"
-      tokenName: "voucher_day6_fly"
-      amount: 2
-      intervalSec: 28800
-  - exp: 60
-    url: "https://cdn.17app.co/956ef8ca-ca74-4a0b-9aeb-836a04fba2e2.png"
-    oldURL: "https://cdn.17app.co/b016df61-0739-4e07-ae6e-8029fe5fc491.png"
-    voucherReward:
-      type: 1
-      itemID: "gift_hamster_ops"
-      tokenName: "voucher_day7_17hbd"
-      amount: 1
-      intervalSec: 28800
 
 continuousSignInEvent:                        #只能有一段參數，無法多個時間段，且每天開始時間只能為00:00 (GMT+8)
-  startTime: "2021-12-13 00:00:00 (GMT+0800)" #五堅情
-  endTime: "2021-12-16 22:01:00 (GMT+0800)"
-  # butlerImageURL: "https://cdn.17app.co/0ca97e35-ee52-4315-a875-2b7653875470.png"
-  butlerImageURL: "https://cdn.17app.co/3fce0d3e-4ec7-4943-be84-05f43ec63077.png"
+#  startTime: "2021-09-22 00:00:00 (GMT+0800)" #五堅情
+#  endTime: "2021-09-22 22:01:00 (GMT+0800)"
+#  butlerImageURL: "https://cdn.17app.co/0ca97e35-ee52-4315-a875-2b7653875470.png"
+#  #小幫手key: daily_continuous_login_dialog
+#  rewards:
+#    - ID: "mkt-reward1"  #活動上線後就不能改，因為會看這個ID來判斷用戶是否領過獎，同時間ID不能重複，如果活動時間已過就可以
+#      dayMin: 1 # 連續登入幾天
+#      dayMax: 3 # 連續登入幾天
+#      giftID: "2004_tw_weeklymission_watch"
+#      amount: 1 # 幾個
+#      expireSecs: 86400 # 有效秒數
+#    - ID: "mkt-reward2"
+#      dayMin: 4 # 連續登入幾天
+#      dayMax: 99999 # 連續登入幾天, 99999 = 273years
+#      giftID: "2004_tw_weeklymission_watch"
+#      amount: 1 # 幾個
+#      expireSecs: 86400 # 有效秒數
+
+#  startTime: "2020-10-24 00:00:00 (GMT+0800)" #荒唐下樓梯萬聖節版
+#  endTime: "2020-11-01 23:59:59 (GMT+0800)"
+#  butlerImageURL: "https://cdn.17app.co/e5c8a975-d2dd-4a2f-8ba3-60965f802ee5.png"
   #小幫手key: daily_continuous_login_dialog
-  rewards:
-    - ID: "mkt-reward1"  #活動上線後就不能改，因為會看這個ID來判斷用戶是否領過獎，同時間ID不能重複，如果活動時間已過就可以
-      dayMin: 1 # 連續登入幾天
-      dayMax: 3 # 連續登入幾天
-      giftID: "2004_tw_weeklymission_watch"
-      amount: 1 # 幾個
-      expireSecs: 86400 # 有效秒數
-    - ID: "mkt-reward2"
-      dayMin: 4 # 連續登入幾天
-      dayMax: 99999 # 連續登入幾天, 99999 = 273years
-      giftID: "2004_tw_weeklymission_watch"
-      amount: 1 # 幾個
-      expireSecs: 86400 # 有效秒數
+#  rewards:
+#    - ID: "tw-ops-reward1"  #活動上線後就不能改，因為會看這個ID來判斷用戶是否領過獎，同時間ID不能重複，如果活動時間已過就可以
+#      dayMin: 2 # 連續登入幾天
+#      dayMax: 3 # 連續登入幾天
+#      giftID: "crazy_stairs_viewer_easy_bag"
+#      amount: 1 # 幾個
+#      expireSecs: 86400 # 有效秒數
+#    - ID: "tw-ops-reward2"
+#      dayMin: 4 # 連續登入幾天
+#      dayMax: 5 # 連續登入幾天
+#      giftID: "crazy_stairs_viewer_easy_bag"
+#      amount: 2 # 幾個
+#      expireSecs: 86400 # 有效秒數
+#    - ID: "tw-ops-reward3"
+#      dayMin: 6 # 連續登入幾天
+#      dayMax: 7 # 連續登入幾天
+#      giftID: "crazy_stairs_streamer_easy_bag"
+#      amount: 1 # 幾個
+#      expireSecs: 86400 # 有效秒數
+#    - ID: "tw-ops-reward4"
+#      dayMin: 8 # 連續登入幾天
+#      dayMax: 99999 # 連續登入幾天
+#      giftID: "crazy_stairs_streamer_easy_bag"
+#      amount: 2 # 幾個
+#      expireSecs: 86400 # 有效秒數
 
-signInRewardsTheme:
-  background: "https://cdn.17app.co/2132aae1-5cdf-4636-8963-db422824486f.png"
-  CTA:
-    backgroundColor: "18D3AE"
-    shadowColor: "18D3AE"
-    textColor: "FFFFFF"
-    labelText:
-      key: "voucher_daily_reward4"
-  days:
-    - dayIdx: 0
-      backgroundOff: "https://cdn.17app.co/fc993e56-1100-4829-b522-31eedc1463ae.png" #無框
-      backgroundOn: "https://cdn.17app.co/28ee7818-ffd1-4470-9461-fbb004e934e0.png" #有匡
-      backgroundReward: "https://cdn.17app.co/fc993e56-1100-4829-b522-31eedc1463ae.png" #無框
-      icon: "https://cdn.17app.co/56f9b97d-7caa-4753-b759-d999c1a5955a.png"
-      doneIcon: "https://cdn.17app.co/9e255289-26c0-4b33-8909-55111b9101f0.png"
-      highlightAnimation:
-        animationID: "roll_call_marquee"
-        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
-        webpMD5: "1890abdf3a9649244548218ad05aae86"
-        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
-        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
-        frames: 24
-        duration: 0.8
-        repeatCount: 0
-    - dayIdx: 1
-      backgroundOff: "https://cdn.17app.co/c981e71b-48db-4782-927c-12b559f0e998.png"
-      backgroundOn: "https://cdn.17app.co/98cab295-e599-4d6d-8e34-a1f7a7faf4f3.png"
-      backgroundReward: "https://cdn.17app.co/c981e71b-48db-4782-927c-12b559f0e998.png"
-      #icon: "https://cdn.17app.co/c136e9a5-c4c8-479c-ba3b-ee433a4da924.png"
-      icon: "https://cdn.17app.co/48c21d3f-10a7-471c-b0f6-b91cfd49fdec.png"
-      doneIcon: "https://cdn.17app.co/9e255289-26c0-4b33-8909-55111b9101f0.png"
-      highlightAnimation:
-        animationID: "roll_call_marquee"
-        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
-        webpMD5: "1890abdf3a9649244548218ad05aae86"
-        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
-        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
-        frames: 24
-        duration: 0.8
-        repeatCount: 0
-    - dayIdx: 2
-      backgroundOff: "https://cdn.17app.co/fc993e56-1100-4829-b522-31eedc1463ae.png"
-      backgroundOn: "https://cdn.17app.co/28ee7818-ffd1-4470-9461-fbb004e934e0.png"
-      backgroundReward: "https://cdn.17app.co/fc993e56-1100-4829-b522-31eedc1463ae.png"
-      icon: "https://cdn.17app.co/56f9b97d-7caa-4753-b759-d999c1a5955a.png"
-      doneIcon: "https://cdn.17app.co/9e255289-26c0-4b33-8909-55111b9101f0.png"
-      highlightAnimation:
-        animationID: "roll_call_marquee"
-        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
-        webpMD5: "1890abdf3a9649244548218ad05aae86"
-        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
-        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
-        frames: 24
-        duration: 0.8
-        repeatCount: 0
-    - dayIdx: 3
-      backgroundOff: "https://cdn.17app.co/c981e71b-48db-4782-927c-12b559f0e998.png"
-      backgroundOn: "https://cdn.17app.co/98cab295-e599-4d6d-8e34-a1f7a7faf4f3.png"
-      backgroundReward: "https://cdn.17app.co/c981e71b-48db-4782-927c-12b559f0e998.png"
-      #icon: "https://cdn.17app.co/70d3474d-fd00-444b-8c1b-5cba04bb1b70.png"
-      icon: "https://cdn.17app.co/939940bc-07ab-4f59-bcd5-72c68bf3e62c.png"
-      doneIcon: "https://cdn.17app.co/9e255289-26c0-4b33-8909-55111b9101f0.png"
-      highlightAnimation:
-        animationID: "roll_call_marquee"
-        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
-        webpMD5: "1890abdf3a9649244548218ad05aae86"
-        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
-        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
-        frames: 24
-        duration: 0.8
-        repeatCount: 0
-    - dayIdx: 4
-      backgroundOff: "https://cdn.17app.co/fc993e56-1100-4829-b522-31eedc1463ae.png"
-      backgroundOn: "https://cdn.17app.co/28ee7818-ffd1-4470-9461-fbb004e934e0.png"
-      backgroundReward: "https://cdn.17app.co/fc993e56-1100-4829-b522-31eedc1463ae.png"
-      icon: "https://cdn.17app.co/56f9b97d-7caa-4753-b759-d999c1a5955a.png"
-      doneIcon: "https://cdn.17app.co/9e255289-26c0-4b33-8909-55111b9101f0.png"
-      highlightAnimation:
-        animationID: "roll_call_marquee"
-        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
-        webpMD5: "1890abdf3a9649244548218ad05aae86"
-        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
-        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
-        frames: 24
-        duration: 0.8
-        repeatCount: 0
-    - dayIdx: 5
-      backgroundOff: "https://cdn.17app.co/c981e71b-48db-4782-927c-12b559f0e998.png"
-      backgroundOn: "https://cdn.17app.co/98cab295-e599-4d6d-8e34-a1f7a7faf4f3.png"
-      backgroundReward: "https://cdn.17app.co/c981e71b-48db-4782-927c-12b559f0e998.png"
-      #icon: "https://cdn.17app.co/2259f629-9d5f-4d58-8347-827ed31bba69.png"
-      icon: "https://cdn.17app.co/51093a61-7f22-44a4-a811-7115b0101cb7.png"
-      doneIcon: "https://cdn.17app.co/9e255289-26c0-4b33-8909-55111b9101f0.png"
-      highlightAnimation:
-        animationID: "roll_call_marquee"
-        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
-        webpMD5: "1890abdf3a9649244548218ad05aae86"
-        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
-        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
-        frames: 24
-        duration: 0.8
-        repeatCount: 0
-    - dayIdx: 6
-      backgroundOff: "https://cdn.17app.co/3ff68431-5194-46b4-b1a4-31379689bd20.png"
-      backgroundOn: "https://cdn.17app.co/f65d8644-19a5-4611-aed2-146f370e3ef7.png"
-      backgroundReward: "https://cdn.17app.co/3ff68431-5194-46b4-b1a4-31379689bd20.png"
-      icon: "https://cdn.17app.co/589d81cb-a994-42f8-9b8f-fa779f0807dd.png"
-      doneIcon: "https://cdn.17app.co/87f135ac-d253-4065-b1af-88cd48220cf3.png"
-      highlightAnimation:
-        animationID: "roll_call_marquee"
-        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
-        webpMD5: "1890abdf3a9649244548218ad05aae86"
-        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
-        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
-        frames: 24
-        duration: 0.8
-        repeatCount: 0
 
-  #background: "https://cdn.17app.co/4a233282-18fa-447d-9a48-e551948dc912.png"
-#  background: "https://cdn.17app.co/4c13581a-2c28-4bd7-8471-dfb3249d401b.png" # CNY 
+#  startTime: "2020-07-02 00:00:00 (GMT+0800)"
+#  endTime: "2020-07-31 23:59:59 (GMT+0800)"
+#  butlerImageURL: "https://cdn.17app.co/f9996032-7af6-48a4-9cd8-691add634e50.png"
+#  rewards:
+#    - ID: "tw-event-reward1"
+#      dayMin: 1 # 連續登入幾天
+#      dayMax: 5 # 連續登入幾天
+#      giftID: "2007_tw_marketing_bp"
+#      amount: 2 # 幾個
+#      expireSecs: 43200 # 有效秒數
+#    - ID: "tw-event-reward2"
+#      dayMin: 6 # 連續登入幾天
+#      dayMax: 10 # 連續登入幾天
+#      giftID: "2007_tw_marketing_bp"
+#      amount: 1 # 幾個
+#      expireSecs: 43200 # 有效秒數
+#    - ID: "tw-event-reward3"
+#      dayMin: 11 # 連續登入幾天
+#      dayMax: 15 # 連續登入幾天
+#      giftID: "2007_tw_marketing_bp"
+#      amount: 3 # 幾個
+#      expireSecs: 43200 # 有效秒數
+#    - ID: "tw-event-reward4"
+#      dayMin: 16 # 連續登入幾天
+#      dayMax: 20 # 連續登入幾天
+#      giftID: "2007_tw_marketing_bp"
+#      amount: 4 # 幾個
+#      expireSecs: 43200 # 有效秒數
+#    - ID: "tw-event-reward5"
+#      dayMin: 21 # 連續登入幾天
+#      dayMax: 28 # 連續登入幾天
+#      giftID: "2007_tw_marketing_bp"
+#      amount: 5 # 幾個
+#      expireSecs: 43200 # 有效秒數
+#    - ID: "tw-event-reward6"
+#      dayMin: 29 # 連續登入幾天
+#      dayMax: 99999 # 連續登入幾天, 99999 = 273years
+#      giftID: "2007_tw_marketing_bp"
+#      amount: 10 # 幾個
+#      expireSecs: 43200 # 有效秒數
+
+# earliest version that implements new UI layout 
+# https://docs.google.com/document/d/1p1F9Wq999F63hXfXy52LIvtq3r7hgzTOgrT-nunhXKA/
+rewardURLIOSSupport: "3.106.200"
+rewardURLAndroidSupport: "2.20.0"
+
+# daily for showing bigRewards UI, must be 4 elements
+bigRewards:
+  - amount: 1
+    tokenName: "voucher_daily_reward_gift_hedgehog"
+    days: 7
+    url: "https://assets-17app.akamaized.net/6a4cfdaf-8e51-4c3b-92c5-7ac0e82dacb5.png"
+  - amount: 2
+    tokenName: "voucher_daily_reward_gift_hedgehog"
+    days: 14
+    url: "https://assets-17app.akamaized.net/6a4cfdaf-8e51-4c3b-92c5-7ac0e82dacb5.png"
+  - amount: 1
+    tokenName: "voucher_daily_reward_gift_rabbit"
+    days: 21
+    url: "https://assets-17app.akamaized.net/85a23fee-f3a3-4840-a3da-43cf20580802.png"
+  - amount: 1
+    tokenName: "voucher_daily_reward_gift_hamster"
+    days: 28
+    url: "https://assets-17app.akamaized.net/69eafbfc-6b6b-4a99-b329-1692c10852ea.png"
+
+# time interval for resetting daily quest counter
+questInterval: 86400
+
+# newbie_days defines who is newbie
+newbieDays: 7
+
+# idleHintSec defines how long will newbie quest dialog popup after being idle
+idleHintSec: 60
+
+# checkPNAfterComplete defines how much newbie missions be completed will request client to check PN
+checkPNAfterComplete: 2
+
+# newbie_rewards defines newbie quest rewards
+# type are defined as following
+# - 1: DAILY_CHECK_IN
+# - 2: ENTER_LIVE
+# - 3: FOLLOW_STREAMER
+# - 4: WATCH_CLIP
+# - 5: JOIN_17Q
+# - 6: LIVE_CHECK_IN_SIX, sing-in 6 days登入六天
+# - 7: LIVE_CHECK_IN_SEVEN, sing-in 7 days登入七天
+# - 8: LIKE_POST
+# - 9: COMMENT_LIVE , could only be exactly 3 times due to lokalise key
+# - 10: SEND_GIFT
+# - 11: BUY_POINT
+# - 12: DailyQuestType_WATCH_LIVE_10_CONTINUE, 連續看播10分鐘
+# - 13: DailyQuestType_WATCH_LIVE_30_TOTAL, 當日看播滿30分鐘
+# - 14: DailyQuestType_LIVE_CHECK_IN_TWO_TOTAL, 7天內有2天看播
+# ex:
+#   - type: 1
+#     point: 25
+#     exp: 0
+#     required: 1
+#     requirePhoneBinding: false
+#     requireDeviceCheck: false
+#     withReminder: false
+newbieRewards:
+    - type: 2
+      point: 0
+      exp: 0
+      required: 1
+      requirePhoneBinding: false
+      requireDeviceCheck: true
+      withReminder: true
+      voucherReward:
+        type: 3
+        itemID: tw_newuser_mission_watch
+        amount: 10
+        intervalSec: 604800
+    - type: 3
+      point: 0
+      exp: 0
+      required: 3
+      requirePhoneBinding: false
+      requireDeviceCheck: true
+      withReminder: true
+      voucherReward:
+        type: 3
+        itemID: tw_newuser_mission_follow
+        amount: 5
+        intervalSec: 604800
+    - type: 9
+      point: 0
+      exp: 0
+      required: 3
+      requirePhoneBinding: false
+      requireDeviceCheck: true
+      withReminder: true
+      voucherReward:
+        type: 3
+        itemID: tw_newuser_mission_comment
+        amount: 5
+        intervalSec: 604800
+    - type: 10
+      point: 0
+      exp: 0
+      required: 1
+      requirePhoneBinding: false
+      requireDeviceCheck: true
+      withReminder: true
+      voucherReward:
+        type: 3
+        itemID: tw_newuser_mission_gift
+        amount: 5
+        intervalSec: 604800
+    - type: 13
+      point: 0
+      exp: 0
+      required: 30
+      requirePhoneBinding: false
+      requireDeviceCheck: true
+      withReminder: true
+      voucherReward:
+        type: 3
+        itemID: bravo
+        amount: 50
+        intervalSec: 604800
+    - type: 1
+      point: 0
+      exp: 0
+      required: 2
+      requirePhoneBinding: false
+      requireDeviceCheck: true
+      withReminder: true
+      voucherReward:
+        type: 3
+        itemID: socute
+        amount: 10
+        intervalSec: 604800
+    - type: 14
+      point: 0
+      exp: 0
+      required: 2
+      requirePhoneBinding: false
+      requireDeviceCheck: true
+      withReminder: true
+      voucherReward:
+        type: 3
+        itemID: 2019newuser
+        amount: 10
+        intervalSec: 604800
+
+#signInRewardsTheme:
+#  background: "https://cdn.17app.co/4a233282-18fa-447d-9a48-e551948dc912.png"
 #  CTA:
-    #backgroundColor: "#7E48DF"
-#    backgroundColor: "#FAD583" # CNY 
-    #shadowColor: "#773EDE"
-#    shadowColor: "#E00025" # CNY 
-    #textColor: "#FFFFFF"
-#    textColor: "#5D491E" # CNY 
+#    backgroundColor: "#7E48DF"
+#    shadowColor: "#773EDE"
+#    textColor: "#FFFFFF"
 #    labelText:
 #      key: "voucher_daily_reward4"
 #  days:
 #    - dayIdx: 0
 #      backgroundOff: "https://cdn.17app.co/bde35d46-9990-4125-b448-eb3ebe88f44b.png"
 #      backgroundOn: "https://cdn.17app.co/dd145ecd-6ecd-4872-9df2-dc8de61c73db.png"
-#      backgroundReward: "https://cdn.17app.co/bde35d46-9990-4125-b448-eb3ebe88f44b.png"
-#      # icon: "https://cdn.17app.co/62ddbe0a-bdfb-4ece-9b6c-cff144f9626a.png" //Changed for testing
+#      backgroundReward: "https://cdn.17app.co/bde35d46-9990-4125-b448-eb3ebe88f44b.png" 
 #      icon: "https://cdn.17app.co/244a8a1e-7973-4aa8-962e-d2a127931ba5.png"
 #      doneIcon: "https://cdn.17app.co/cde574fe-f48c-4688-a49d-318a70035da0.png"
 #      highlightAnimation:
@@ -545,7 +640,6 @@ signInRewardsTheme:
 #      backgroundOff: "https://cdn.17app.co/419ed5d0-7460-420a-8ace-83497e78c3df.png"
 #      backgroundOn: "https://cdn.17app.co/1a90df9f-a2c1-4bf6-84c4-bd6c9a3f79eb.png"
 #      backgroundReward: "https://cdn.17app.co/419ed5d0-7460-420a-8ace-83497e78c3df.png"
-#      # https://cdn.17app.co/9ce7bdfc-67f9-4a14-8c59-cbd3bc6d0b79.png //changed for testing
 #      icon: "https://cdn.17app.co/9c4f8ce4-e552-496e-9d3e-42f07b116c63.png"
 #      doneIcon: "https://cdn.17app.co/cde574fe-f48c-4688-a49d-318a70035da0.png"
 #      highlightAnimation:
@@ -562,7 +656,6 @@ signInRewardsTheme:
 #      backgroundOn: "https://cdn.17app.co/dd145ecd-6ecd-4872-9df2-dc8de61c73db.png"
 #      backgroundReward: "https://cdn.17app.co/bde35d46-9990-4125-b448-eb3ebe88f44b.png"
 #      icon: "https://cdn.17app.co/244a8a1e-7973-4aa8-962e-d2a127931ba5.png"
-#      #  "https://cdn.17app.co/62ddbe0a-bdfb-4ece-9b6c-cff144f9626a.png" //changed for testing
 #      doneIcon: "https://cdn.17app.co/cde574fe-f48c-4688-a49d-318a70035da0.png"
 #      highlightAnimation:
 #        animationID: "roll_call_marquee"
@@ -577,9 +670,7 @@ signInRewardsTheme:
 #      backgroundOff: "https://cdn.17app.co/419ed5d0-7460-420a-8ace-83497e78c3df.png"
 #      backgroundOn: "https://cdn.17app.co/1a90df9f-a2c1-4bf6-84c4-bd6c9a3f79eb.png"
 #      backgroundReward: "https://cdn.17app.co/419ed5d0-7460-420a-8ace-83497e78c3df.png"
-#      # https://cdn.17app.co/0ac5932d-ec6f-43a4-9087-837ba8fc28d5.png
 #      icon: "https://cdn.17app.co/9c4f8ce4-e552-496e-9d3e-42f07b116c63.png"
-#      # https://cdn.17app.co/d96cc6b5-fd82-4c41-a20e-c506dfd4a815.png
 #      doneIcon: "https://cdn.17app.co/cde574fe-f48c-4688-a49d-318a70035da0.png"
 #      highlightAnimation:
 #        animationID: "roll_call_marquee"
@@ -594,7 +685,6 @@ signInRewardsTheme:
 #      backgroundOff: "https://cdn.17app.co/bde35d46-9990-4125-b448-eb3ebe88f44b.png"
 #      backgroundOn: "https://cdn.17app.co/dd145ecd-6ecd-4872-9df2-dc8de61c73db.png"
 #      backgroundReward: "https://cdn.17app.co/bde35d46-9990-4125-b448-eb3ebe88f44b.png"
-#      # https://cdn.17app.co/d8348af8-991e-4196-99ff-703b26d691e4.png
 #      icon: "https://cdn.17app.co/244a8a1e-7973-4aa8-962e-d2a127931ba5.png"
 #      doneIcon: "https://cdn.17app.co/cde574fe-f48c-4688-a49d-318a70035da0.png"
 #      highlightAnimation:
@@ -636,254 +726,591 @@ signInRewardsTheme:
 #        frames: 24
 #        duration: 0.8
 #        repeatCount: 0
+
+#7週年 連續簽到
+#signInRewardsTheme:
+#  background: "https://cdn.17app.co/2132aae1-5cdf-4636-8963-db422824486f.png"
+#  CTA:
+#    backgroundColor: "18D3AE"
+#    shadowColor: "18D3AE"
+#    textColor: "FFFFFF"
+#    labelText:
+#      key: "voucher_daily_reward4"
 #  days:
 #    - dayIdx: 0
-#      backgroundOff: "https://cdn.17app.co/8c0105d4-538a-49f0-b1ef-99fcbdedb4aa.png"
-#      backgroundOn: "https://cdn.17app.co/8dd225fc-583f-440e-9d15-5064cbb45e31.png"
-#      backgroundReward: "https://cdn.17app.co/8c0105d4-538a-49f0-b1ef-99fcbdedb4aa.png"
-      # icon: "https://cdn.17app.co/62ddbe0a-bdfb-4ece-9b6c-cff144f9626a.png" //Changed for testing
-#      icon: "https://cdn.17app.co/4b922179-b7be-4283-9674-c331e700a76d.png"
-#      doneIcon: "https://cdn.17app.co/5da0f59c-7c3e-41c6-a61d-742886118206.png"
+#      backgroundOff: "https://cdn.17app.co/fc993e56-1100-4829-b522-31eedc1463ae.png" #無框
+#      backgroundOn: "https://cdn.17app.co/28ee7818-ffd1-4470-9461-fbb004e934e0.png" #有匡
+#      backgroundReward: "https://cdn.17app.co/fc993e56-1100-4829-b522-31eedc1463ae.png" #無框
+#      icon: "https://cdn.17app.co/56f9b97d-7caa-4753-b759-d999c1a5955a.png"
+#      doneIcon: "https://cdn.17app.co/9e255289-26c0-4b33-8909-55111b9101f0.png"
 #      highlightAnimation:
 #        animationID: "roll_call_marquee"
 #        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
 #        webpMD5: "1890abdf3a9649244548218ad05aae86"
 #        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
-    #     zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
-    #     frames: 24
-    #     duration: 0.8
-    #     repeatCount: 0
-    # - dayIdx: 1
-    #   backgroundOff: "https://cdn.17app.co/b23e0edb-e4d6-494b-afa3-ef258edfdf65.png"
-    #   backgroundOn: "https://cdn.17app.co/dec3d810-632c-436a-9b82-65b5e6c7a81b.png"
-    #   backgroundReward: "https://cdn.17app.co/b23e0edb-e4d6-494b-afa3-ef258edfdf65.png"
-    #   # https://cdn.17app.co/9ce7bdfc-67f9-4a14-8c59-cbd3bc6d0b79.png //changed for testing
-    #   icon: "https://cdn.17app.co/4b922179-b7be-4283-9674-c331e700a76d.png"
-    #   doneIcon: "https://cdn.17app.co/5da0f59c-7c3e-41c6-a61d-742886118206.png"
-    #   highlightAnimation:
-    #     animationID: "roll_call_marquee"
-    #     webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
-    #     webpMD5: "1890abdf3a9649244548218ad05aae86"
-    #     zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
-    #     zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
-    #     frames: 24
-    #     duration: 0.8
-    #     repeatCount: 0
-    # - dayIdx: 2
-    #   backgroundOff: "https://cdn.17app.co/8c0105d4-538a-49f0-b1ef-99fcbdedb4aa.png"
-    #   backgroundOn: "https://cdn.17app.co/8dd225fc-583f-440e-9d15-5064cbb45e31.png"
-    #   backgroundReward: "https://cdn.17app.co/8c0105d4-538a-49f0-b1ef-99fcbdedb4aa.png"
-    #   icon: "https://cdn.17app.co/4b922179-b7be-4283-9674-c331e700a76d.png"
-    #   #  "https://cdn.17app.co/62ddbe0a-bdfb-4ece-9b6c-cff144f9626a.png" //changed for testing
-    #   doneIcon: "https://cdn.17app.co/5da0f59c-7c3e-41c6-a61d-742886118206.png"
-    #   highlightAnimation:
-    #     animationID: "roll_call_marquee"
-    #     webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
-    #     webpMD5: "1890abdf3a9649244548218ad05aae86"
-    #     zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
-    #     zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
-    #     frames: 24
-    #     duration: 0.8
-    #     repeatCount: 0
-    # - dayIdx: 3
-    #   backgroundOff: "https://cdn.17app.co/b23e0edb-e4d6-494b-afa3-ef258edfdf65.png"
-    #   backgroundOn: "https://cdn.17app.co/dec3d810-632c-436a-9b82-65b5e6c7a81b.png"
-    #   backgroundReward: "https://cdn.17app.co/b23e0edb-e4d6-494b-afa3-ef258edfdf65.png"
-    #   # https://cdn.17app.co/0ac5932d-ec6f-43a4-9087-837ba8fc28d5.png
-    #   icon: "https://cdn.17app.co/4b922179-b7be-4283-9674-c331e700a76d.png"
-    #   # https://cdn.17app.co/d96cc6b5-fd82-4c41-a20e-c506dfd4a815.png
-    #   doneIcon: "https://cdn.17app.co/5da0f59c-7c3e-41c6-a61d-742886118206.png"
-    #   highlightAnimation:
-    #     animationID: "roll_call_marquee"
-    #     webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
-    #     webpMD5: "1890abdf3a9649244548218ad05aae86"
-    #     zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
-    #     zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
-    #     frames: 24
-    #     duration: 0.8
-    #     repeatCount: 0
-    # - dayIdx: 4
-    #   backgroundOff: "https://cdn.17app.co/8c0105d4-538a-49f0-b1ef-99fcbdedb4aa.png"
-    #   backgroundOn: "https://cdn.17app.co/8dd225fc-583f-440e-9d15-5064cbb45e31.png"
-    #   backgroundReward: "https://cdn.17app.co/8c0105d4-538a-49f0-b1ef-99fcbdedb4aa.png"
-    #   # https://cdn.17app.co/d8348af8-991e-4196-99ff-703b26d691e4.png
-    #   icon: "https://cdn.17app.co/4b922179-b7be-4283-9674-c331e700a76d.png"
-    #   doneIcon: "https://cdn.17app.co/5da0f59c-7c3e-41c6-a61d-742886118206.png"
-    #   highlightAnimation:
-    #     animationID: "roll_call_marquee"
-    #     webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
-    #     webpMD5: "1890abdf3a9649244548218ad05aae86"
-    #     zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
-    #     zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
-    #     frames: 24
-    #     duration: 0.8
-    #     repeatCount: 0
-    # - dayIdx: 5
-    #   backgroundOff: "https://cdn.17app.co/b23e0edb-e4d6-494b-afa3-ef258edfdf65.png"
-    #   backgroundOn: "https://cdn.17app.co/dec3d810-632c-436a-9b82-65b5e6c7a81b.png"
-    #   backgroundReward: "https://cdn.17app.co/b23e0edb-e4d6-494b-afa3-ef258edfdf65.png"
-    #   icon: "https://cdn.17app.co/4b922179-b7be-4283-9674-c331e700a76d.png"
-    #   # https://cdn.17app.co/d8348af8-991e-4196-99ff-703b26d691e4.png
-    #   doneIcon: "https://cdn.17app.co/5da0f59c-7c3e-41c6-a61d-742886118206.png"
-    #   highlightAnimation:
-    #     animationID: "roll_call_marquee"
-    #     webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
-    #     webpMD5: "1890abdf3a9649244548218ad05aae86"
-    #     zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
-    #     zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
-    #     frames: 24
-    #     duration: 0.8
-    #     repeatCount: 0
-    # - dayIdx: 6
-    #   backgroundOff: "https://cdn.17app.co/347ab22d-cfc4-4e3d-ac31-c3c2d802b39a.png"
-    #   backgroundOn: "https://cdn.17app.co/5af90ae0-9685-4816-af04-a8c8a999346b.png"
-    #   backgroundReward: "https://cdn.17app.co/347ab22d-cfc4-4e3d-ac31-c3c2d802b39a.png"
-    #   icon: "https://cdn.17app.co/4b922179-b7be-4283-9674-c331e700a76d.png"
-    #   doneIcon: "https://cdn.17app.co/e0b66049-86d2-4e69-9e3d-dde85e0322de.png"
-    #   highlightAnimation:
-    #     animationID: "roll_call_marquee"
-    #     webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
-    #     webpMD5: "1890abdf3a9649244548218ad05aae86"
-    #     zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
-    #     zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
-    #     frames: 24
-    #     duration: 0.8
-    #     repeatCount: 0        
+#        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#        frames: 24
+#        duration: 0.8
+#        repeatCount: 0
+#    - dayIdx: 1
+#      backgroundOff: "https://cdn.17app.co/c981e71b-48db-4782-927c-12b559f0e998.png"
+#      backgroundOn: "https://cdn.17app.co/98cab295-e599-4d6d-8e34-a1f7a7faf4f3.png"
+#      backgroundReward: "https://cdn.17app.co/c981e71b-48db-4782-927c-12b559f0e998.png"
+#      #icon: "https://cdn.17app.co/c136e9a5-c4c8-479c-ba3b-ee433a4da924.png"
+#      icon: "https://cdn.17app.co/48c21d3f-10a7-471c-b0f6-b91cfd49fdec.png"
+#      doneIcon: "https://cdn.17app.co/9e255289-26c0-4b33-8909-55111b9101f0.png"
+#      highlightAnimation:
+#        animationID: "roll_call_marquee"
+#        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#        webpMD5: "1890abdf3a9649244548218ad05aae86"
+#        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#        frames: 24
+#        duration: 0.8
+#        repeatCount: 0
+#    - dayIdx: 2
+#      backgroundOff: "https://cdn.17app.co/fc993e56-1100-4829-b522-31eedc1463ae.png"
+#      backgroundOn: "https://cdn.17app.co/28ee7818-ffd1-4470-9461-fbb004e934e0.png"
+#      backgroundReward: "https://cdn.17app.co/fc993e56-1100-4829-b522-31eedc1463ae.png"
+#      icon: "https://cdn.17app.co/56f9b97d-7caa-4753-b759-d999c1a5955a.png"
+#      doneIcon: "https://cdn.17app.co/9e255289-26c0-4b33-8909-55111b9101f0.png"
+#      highlightAnimation:
+#        animationID: "roll_call_marquee"
+#        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#        webpMD5: "1890abdf3a9649244548218ad05aae86"
+#        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#        frames: 24
+#        duration: 0.8
+#        repeatCount: 0
+#    - dayIdx: 3
+#      backgroundOff: "https://cdn.17app.co/c981e71b-48db-4782-927c-12b559f0e998.png"
+#      backgroundOn: "https://cdn.17app.co/98cab295-e599-4d6d-8e34-a1f7a7faf4f3.png"
+#      backgroundReward: "https://cdn.17app.co/c981e71b-48db-4782-927c-12b559f0e998.png"
+#      #icon: "https://cdn.17app.co/70d3474d-fd00-444b-8c1b-5cba04bb1b70.png"
+#      icon: "https://cdn.17app.co/939940bc-07ab-4f59-bcd5-72c68bf3e62c.png"
+#      doneIcon: "https://cdn.17app.co/9e255289-26c0-4b33-8909-55111b9101f0.png"
+#      highlightAnimation:
+#        animationID: "roll_call_marquee"
+#        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#        webpMD5: "1890abdf3a9649244548218ad05aae86"
+#        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#        frames: 24
+#        duration: 0.8
+#        repeatCount: 0
+#    - dayIdx: 4
+#      backgroundOff: "https://cdn.17app.co/fc993e56-1100-4829-b522-31eedc1463ae.png"
+#      backgroundOn: "https://cdn.17app.co/28ee7818-ffd1-4470-9461-fbb004e934e0.png"
+#      backgroundReward: "https://cdn.17app.co/fc993e56-1100-4829-b522-31eedc1463ae.png"
+#      icon: "https://cdn.17app.co/56f9b97d-7caa-4753-b759-d999c1a5955a.png"
+#      doneIcon: "https://cdn.17app.co/9e255289-26c0-4b33-8909-55111b9101f0.png"
+#      highlightAnimation:
+#        animationID: "roll_call_marquee"
+#        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#        webpMD5: "1890abdf3a9649244548218ad05aae86"
+#        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#        frames: 24
+#        duration: 0.8
+#        repeatCount: 0
+#    - dayIdx: 5
+#      backgroundOff: "https://cdn.17app.co/c981e71b-48db-4782-927c-12b559f0e998.png"
+#      backgroundOn: "https://cdn.17app.co/98cab295-e599-4d6d-8e34-a1f7a7faf4f3.png"
+#      backgroundReward: "https://cdn.17app.co/c981e71b-48db-4782-927c-12b559f0e998.png"
+#      #icon: "https://cdn.17app.co/2259f629-9d5f-4d58-8347-827ed31bba69.png"
+#      icon: "https://cdn.17app.co/51093a61-7f22-44a4-a811-7115b0101cb7.png"
+#      doneIcon: "https://cdn.17app.co/9e255289-26c0-4b33-8909-55111b9101f0.png"
+#      highlightAnimation:
+#        animationID: "roll_call_marquee"
+#        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#        webpMD5: "1890abdf3a9649244548218ad05aae86"
+#        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#        frames: 24
+#        duration: 0.8
+#        repeatCount: 0
+#    - dayIdx: 6
+#      backgroundOff: "https://cdn.17app.co/3ff68431-5194-46b4-b1a4-31379689bd20.png"
+#      backgroundOn: "https://cdn.17app.co/f65d8644-19a5-4611-aed2-146f370e3ef7.png"
+#      backgroundReward: "https://cdn.17app.co/3ff68431-5194-46b4-b1a4-31379689bd20.png"
+#      icon: "https://cdn.17app.co/589d81cb-a994-42f8-9b8f-fa779f0807dd.png"
+#      doneIcon: "https://cdn.17app.co/87f135ac-d253-4065-b1af-88cd48220cf3.png"
+#      highlightAnimation:
+#        animationID: "roll_call_marquee"
+#        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#        webpMD5: "1890abdf3a9649244548218ad05aae86"
+#        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#        frames: 24
+#        duration: 0.8
+#        repeatCount: 0
+#新竹攻城獅活動
+#signInRewardsTheme:
+#  background: "https://cdn.17app.co/ae785b84-8abd-4f97-863c-22288edb95be.png"
+#  CTA:
+#    backgroundColor: "541788"
+#    shadowColor: "541788"
+#    textColor: "FFFFFF"
+#    labelText:
+#      key: "voucher_daily_reward4"
+#  days:
+#    - dayIdx: 0
+#      backgroundOff: "https://cdn.17app.co/dca40cf0-fe74-4c96-9c6f-9e608a941b12.png" #無框
+#      backgroundOn: "https://cdn.17app.co/776948d2-733e-4bfd-99b7-c5d5ddfcd7e3.png" #有匡
+#      backgroundReward: "https://cdn.17app.co/dca40cf0-fe74-4c96-9c6f-9e608a941b12.png" #無框
+#      icon: "https://cdn.17app.co/8656e1eb-9317-41ab-861f-0e166af519b4.png"
+#      doneIcon: "https://cdn.17app.co/ed705de6-fe8f-4335-86b4-97d9a2dbdc0d.png"
+#      highlightAnimation:
+#        animationID: "roll_call_marquee"
+#        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#        webpMD5: "1890abdf3a9649244548218ad05aae86"
+#        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#        frames: 24
+#        duration: 0.8
+#        repeatCount: 0
+#    - dayIdx: 1
+#      backgroundOff: "https://cdn.17app.co/32263be5-1606-4f7b-873d-e191110330b2.png"
+#      backgroundOn: "https://cdn.17app.co/65d1c85b-215d-484d-abaf-091efdcdd8e6.png"
+#      backgroundReward: "https://cdn.17app.co/32263be5-1606-4f7b-873d-e191110330b2.png"
+#      icon: "https://cdn.17app.co/ad912d32-def4-41eb-ada1-e6b617ec2b42.png"
+#      doneIcon: "https://cdn.17app.co/ed705de6-fe8f-4335-86b4-97d9a2dbdc0d.png"
+#      highlightAnimation:
+#        animationID: "roll_call_marquee"
+#        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#        webpMD5: "1890abdf3a9649244548218ad05aae86"
+#        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#        frames: 24
+#        duration: 0.8
+#        repeatCount: 0
+#    - dayIdx: 2
+#      backgroundOff: "https://cdn.17app.co/dca40cf0-fe74-4c96-9c6f-9e608a941b12.png"
+#      backgroundOn: "https://cdn.17app.co/776948d2-733e-4bfd-99b7-c5d5ddfcd7e3.png"
+#      backgroundReward: "https://cdn.17app.co/dca40cf0-fe74-4c96-9c6f-9e608a941b12.png"
+#      icon: "https://cdn.17app.co/d0738fcc-904b-46f7-be3c-1a35a2633aa3.png"
+#      doneIcon: "https://cdn.17app.co/ed705de6-fe8f-4335-86b4-97d9a2dbdc0d.png"
+#      highlightAnimation:
+#        animationID: "roll_call_marquee"
+#        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#        webpMD5: "1890abdf3a9649244548218ad05aae86"
+#        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#        frames: 24
+#        duration: 0.8
+#        repeatCount: 0
+#    - dayIdx: 3
+#      backgroundOff: "https://cdn.17app.co/32263be5-1606-4f7b-873d-e191110330b2.png"
+#      backgroundOn: "https://cdn.17app.co/65d1c85b-215d-484d-abaf-091efdcdd8e6.png"
+#      backgroundReward: "https://cdn.17app.co/32263be5-1606-4f7b-873d-e191110330b2.png"
+#      icon: "https://cdn.17app.co/b9406020-f8f1-4f00-91de-e49a6a856b40.png"
+#      doneIcon: "https://cdn.17app.co/ed705de6-fe8f-4335-86b4-97d9a2dbdc0d.png"
+#      highlightAnimation:
+#        animationID: "roll_call_marquee"
+#        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#        webpMD5: "1890abdf3a9649244548218ad05aae86"
+#        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#        frames: 24
+#        duration: 0.8
+#        repeatCount: 0
+#    - dayIdx: 4
+#      backgroundOff: "https://cdn.17app.co/dca40cf0-fe74-4c96-9c6f-9e608a941b12.png"
+#      backgroundOn: "https://cdn.17app.co/776948d2-733e-4bfd-99b7-c5d5ddfcd7e3.png"
+#      backgroundReward: "https://cdn.17app.co/dca40cf0-fe74-4c96-9c6f-9e608a941b12.png"
+#      icon: "https://cdn.17app.co/577cdaad-dca2-4a2b-9738-fd52edd6c6a4.png"
+#      doneIcon: "https://cdn.17app.co/ed705de6-fe8f-4335-86b4-97d9a2dbdc0d.png"
+#      highlightAnimation:
+#        animationID: "roll_call_marquee"
+#        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#        webpMD5: "1890abdf3a9649244548218ad05aae86"
+#        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#        frames: 24
+#        duration: 0.8
+#        repeatCount: 0
+#    - dayIdx: 5
+#      backgroundOff: "https://cdn.17app.co/32263be5-1606-4f7b-873d-e191110330b2.png"
+#      backgroundOn: "https://cdn.17app.co/65d1c85b-215d-484d-abaf-091efdcdd8e6.png"
+#      backgroundReward: "https://cdn.17app.co/32263be5-1606-4f7b-873d-e191110330b2.png"
+#      icon: "https://cdn.17app.co/3dae6975-858e-4b3b-b2fb-e874b1fe8a23.png"
+#      doneIcon: "https://cdn.17app.co/ed705de6-fe8f-4335-86b4-97d9a2dbdc0d.png"
+#      highlightAnimation:
+#        animationID: "roll_call_marquee"
+#        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#        webpMD5: "1890abdf3a9649244548218ad05aae86"
+#        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#        frames: 24
+#        duration: 0.8
+#        repeatCount: 0
+#    - dayIdx: 6
+#      backgroundOff: "https://cdn.17app.co/45be32c7-7193-4df9-9246-9df049c6b8c4.png"
+#      backgroundOn: "https://cdn.17app.co/4ddce4e0-c329-46ed-b7b1-b98a1e50027a.png"
+#      backgroundReward: "https://cdn.17app.co/45be32c7-7193-4df9-9246-9df049c6b8c4.png"
+#      icon: "https://cdn.17app.co/41efd7f5-0088-4f48-b369-d70c771086f0.png"
+#      doneIcon: "https://cdn.17app.co/4a3006bb-2e4c-4945-b5c4-4f13310aed2d.png"
+#      highlightAnimation:
+#        animationID: "roll_call_marquee"
+#        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#        webpMD5: "1890abdf3a9649244548218ad05aae86"
+#        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#        frames: 24
+#        duration: 0.8
+#        repeatCount: 0
+#Command + ? = add/delete all #
+# Chinese New Year
+# signInRewardsTheme:
+#   background: "https://cdn.17app.co/4c13581a-2c28-4bd7-8471-dfb3249d401b.png"
+#   CTA:
+#     backgroundColor: "#FAD583"
+#     shadowColor: "#E00025"
+#     textColor: "#5D491E"
+#     labelText:
+#       key: "voucher_daily_reward4"
+#   days:
+#     - dayIdx: 0
+#       backgroundOff: "https://cdn.17app.co/8c0105d4-538a-49f0-b1ef-99fcbdedb4aa.png"
+#       backgroundOn: "https://cdn.17app.co/8dd225fc-583f-440e-9d15-5064cbb45e31.png"
+#       backgroundReward: "https://cdn.17app.co/8c0105d4-538a-49f0-b1ef-99fcbdedb4aa.png"
+#       # icon: "https://cdn.17app.co/62ddbe0a-bdfb-4ece-9b6c-cff144f9626a.png" //Changed for testing
+#       icon: "https://cdn.17app.co/4b922179-b7be-4283-9674-c331e700a76d.png"
+#       doneIcon: "https://cdn.17app.co/5da0f59c-7c3e-41c6-a61d-742886118206.png"
+#       highlightAnimation:
+#         animationID: "roll_call_marquee"
+#         webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#         webpMD5: "1890abdf3a9649244548218ad05aae86"
+#         zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#         zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#         frames: 24
+#         duration: 0.8
+#         repeatCount: 0
+#     - dayIdx: 1
+#       backgroundOff: "https://cdn.17app.co/b23e0edb-e4d6-494b-afa3-ef258edfdf65.png"
+#       backgroundOn: "https://cdn.17app.co/dec3d810-632c-436a-9b82-65b5e6c7a81b.png"
+#       backgroundReward: "https://cdn.17app.co/b23e0edb-e4d6-494b-afa3-ef258edfdf65.png"
+#       # https://cdn.17app.co/9ce7bdfc-67f9-4a14-8c59-cbd3bc6d0b79.png //changed for testing
+#       icon: "https://cdn.17app.co/4b922179-b7be-4283-9674-c331e700a76d.png"
+#       doneIcon: "https://cdn.17app.co/5da0f59c-7c3e-41c6-a61d-742886118206.png"
+#       highlightAnimation:
+#         animationID: "roll_call_marquee"
+#         webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#         webpMD5: "1890abdf3a9649244548218ad05aae86"
+#         zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#         zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#         frames: 24
+#         duration: 0.8
+#         repeatCount: 0
+#     - dayIdx: 2
+#       backgroundOff: "https://cdn.17app.co/8c0105d4-538a-49f0-b1ef-99fcbdedb4aa.png"
+#       backgroundOn: "https://cdn.17app.co/8dd225fc-583f-440e-9d15-5064cbb45e31.png"
+#       backgroundReward: "https://cdn.17app.co/8c0105d4-538a-49f0-b1ef-99fcbdedb4aa.png"
+#       icon: "https://cdn.17app.co/4b922179-b7be-4283-9674-c331e700a76d.png"
+#       #  "https://cdn.17app.co/62ddbe0a-bdfb-4ece-9b6c-cff144f9626a.png" //changed for testing
+#       doneIcon: "https://cdn.17app.co/5da0f59c-7c3e-41c6-a61d-742886118206.png"
+#       highlightAnimation:
+#         animationID: "roll_call_marquee"
+#         webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#         webpMD5: "1890abdf3a9649244548218ad05aae86"
+#         zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#         zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#         frames: 24
+#         duration: 0.8
+#         repeatCount: 0
+#     - dayIdx: 3
+#       backgroundOff: "https://cdn.17app.co/b23e0edb-e4d6-494b-afa3-ef258edfdf65.png"
+#       backgroundOn: "https://cdn.17app.co/dec3d810-632c-436a-9b82-65b5e6c7a81b.png"
+#       backgroundReward: "https://cdn.17app.co/b23e0edb-e4d6-494b-afa3-ef258edfdf65.png"
+#       # https://cdn.17app.co/0ac5932d-ec6f-43a4-9087-837ba8fc28d5.png
+#       icon: "https://cdn.17app.co/4b922179-b7be-4283-9674-c331e700a76d.png"
+#       # https://cdn.17app.co/d96cc6b5-fd82-4c41-a20e-c506dfd4a815.png
+#       doneIcon: "https://cdn.17app.co/5da0f59c-7c3e-41c6-a61d-742886118206.png"
+#       highlightAnimation:
+#         animationID: "roll_call_marquee"
+#         webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#         webpMD5: "1890abdf3a9649244548218ad05aae86"
+#         zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#         zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#         frames: 24
+#         duration: 0.8
+#         repeatCount: 0
+#     - dayIdx: 4
+#       backgroundOff: "https://cdn.17app.co/8c0105d4-538a-49f0-b1ef-99fcbdedb4aa.png"
+#       backgroundOn: "https://cdn.17app.co/8dd225fc-583f-440e-9d15-5064cbb45e31.png"
+#       backgroundReward: "https://cdn.17app.co/8c0105d4-538a-49f0-b1ef-99fcbdedb4aa.png"
+#       # https://cdn.17app.co/d8348af8-991e-4196-99ff-703b26d691e4.png
+#       icon: "https://cdn.17app.co/4b922179-b7be-4283-9674-c331e700a76d.png"
+#       doneIcon: "https://cdn.17app.co/5da0f59c-7c3e-41c6-a61d-742886118206.png"
+#       highlightAnimation:
+#         animationID: "roll_call_marquee"
+#         webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#         webpMD5: "1890abdf3a9649244548218ad05aae86"
+#         zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#         zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#         frames: 24
+#         duration: 0.8
+#         repeatCount: 0
+#     - dayIdx: 5
+#       backgroundOff: "https://cdn.17app.co/b23e0edb-e4d6-494b-afa3-ef258edfdf65.png"
+#       backgroundOn: "https://cdn.17app.co/dec3d810-632c-436a-9b82-65b5e6c7a81b.png"
+#       backgroundReward: "https://cdn.17app.co/b23e0edb-e4d6-494b-afa3-ef258edfdf65.png"
+#       icon: "https://cdn.17app.co/4b922179-b7be-4283-9674-c331e700a76d.png"
+#       # https://cdn.17app.co/d8348af8-991e-4196-99ff-703b26d691e4.png
+#       doneIcon: "https://cdn.17app.co/5da0f59c-7c3e-41c6-a61d-742886118206.png"
+#       highlightAnimation:
+#         animationID: "roll_call_marquee"
+#         webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#         webpMD5: "1890abdf3a9649244548218ad05aae86"
+#         zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#         zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#         frames: 24
+#         duration: 0.8
+#         repeatCount: 0
+#     - dayIdx: 6
+#       backgroundOff: "https://cdn.17app.co/347ab22d-cfc4-4e3d-ac31-c3c2d802b39a.png"
+#       backgroundOn: "https://cdn.17app.co/5af90ae0-9685-4816-af04-a8c8a999346b.png"
+#       backgroundReward: "https://cdn.17app.co/347ab22d-cfc4-4e3d-ac31-c3c2d802b39a.png"
+#       icon: "https://cdn.17app.co/4b922179-b7be-4283-9674-c331e700a76d.png"
+#       doneIcon: "https://cdn.17app.co/e0b66049-86d2-4e69-9e3d-dde85e0322de.png"
+#       highlightAnimation:
+#         animationID: "roll_call_marquee"
+#         webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#         webpMD5: "1890abdf3a9649244548218ad05aae86"
+#         zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#         zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#         frames: 24
+#         duration: 0.8
+#         repeatCount: 0
 
-#原文
-#Congratulations you have logged in for $1 consecutive days. You got free $2 x $3. Go check your baggage in the live stream and send the gift to your favorite streamer!
-#恭喜你已经连续登入 $1 天，获得【$2礼物 $3 个】，快到直播间背包里送出礼物给主播，你就有機會抽中大獎
+#signInRewardsTheme: #World Cup theme
+#  background: "https://cdn.17app.co/f625a841-c017-4a0c-9384-e898fdc8415f.png"
+#  CTA:
+#    backgroundColor: "#B30D56"
+#    shadowColor: "#B30D56"
+#    textColor: "#F7D78C"
+#    labelText:
+#      key: "voucher_daily_reward4"
+#  days:
+#    - dayIdx: 0
+#      backgroundOff: "https://cdn.17app.co/b6e71311-1b51-4860-ba81-552f025e8823.png"
+#      backgroundOn: "https://cdn.17app.co/efe8bd60-ca2f-45c3-a3ec-6377bd1ec213.png"
+#      backgroundReward: "https://cdn.17app.co/b6e71311-1b51-4860-ba81-552f025e8823.png"
+#      icon: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+#      doneIcon: "https://cdn.17app.co/f0ba9388-04ee-4ce0-95a8-e19f6eb585fa.png"
+#      highlightAnimation:
+#        animationID: "roll_call_marquee"
+#        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#        webpMD5: "1890abdf3a9649244548218ad05aae86"
+#        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#        frames: 24
+#        duration: 0.8
+#        repeatCount: 0
+#    - dayIdx: 1
+#      backgroundOff: "https://cdn.17app.co/4502d40f-2289-40c7-9aed-4df39c64e81a.png"
+#      backgroundOn: "https://cdn.17app.co/1c1546b8-2fce-4a14-9b46-7742ae57b922.png"
+#      backgroundReward: "https://cdn.17app.co/4502d40f-2289-40c7-9aed-4df39c64e81a.png"
+#      icon: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
+#      doneIcon: "https://cdn.17app.co/f0ba9388-04ee-4ce0-95a8-e19f6eb585fa.png"
+#      highlightAnimation:
+#        animationID: "roll_call_marquee"
+#        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#        webpMD5: "1890abdf3a9649244548218ad05aae86"
+#        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#        frames: 24
+#        duration: 0.8
+#        repeatCount: 0
+#    - dayIdx: 2
+#      backgroundOff: "https://cdn.17app.co/b6e71311-1b51-4860-ba81-552f025e8823.png"
+#      backgroundOn: "https://cdn.17app.co/efe8bd60-ca2f-45c3-a3ec-6377bd1ec213.png"
+#      backgroundReward: "https://cdn.17app.co/b6e71311-1b51-4860-ba81-552f025e8823.png"
+#      icon: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+#      doneIcon: "https://cdn.17app.co/f0ba9388-04ee-4ce0-95a8-e19f6eb585fa.png"
+#      highlightAnimation:
+#        animationID: "roll_call_marquee"
+#        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#        webpMD5: "1890abdf3a9649244548218ad05aae86"
+#        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#        frames: 24
+#        duration: 0.8
+#        repeatCount: 0
+#    - dayIdx: 3
+#      backgroundOff: "https://cdn.17app.co/4502d40f-2289-40c7-9aed-4df39c64e81a.png"
+#      backgroundOn: "https://cdn.17app.co/1c1546b8-2fce-4a14-9b46-7742ae57b922.png"
+#      backgroundReward: "https://cdn.17app.co/4502d40f-2289-40c7-9aed-4df39c64e81a.png"
+#      icon: "https://cdn.17app.co/b5b41643-def9-400d-bb08-90990d3ffd9b.png"
+#      doneIcon: "https://cdn.17app.co/f0ba9388-04ee-4ce0-95a8-e19f6eb585fa.png"
+#      highlightAnimation:
+#        animationID: "roll_call_marquee"
+#        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#        webpMD5: "1890abdf3a9649244548218ad05aae86"
+#        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#        frames: 24
+#        duration: 0.8
+#        repeatCount: 0
+#    - dayIdx: 4
+#      backgroundOff: "https://cdn.17app.co/b6e71311-1b51-4860-ba81-552f025e8823.png"
+#      backgroundOn: "https://cdn.17app.co/efe8bd60-ca2f-45c3-a3ec-6377bd1ec213.png"
+#      backgroundReward: "https://cdn.17app.co/b6e71311-1b51-4860-ba81-552f025e8823.png"
+#      icon: "https://cdn.17app.co/69fec76e-fe32-465b-adef-84891f43cc05.png"
+#      doneIcon: "https://cdn.17app.co/f0ba9388-04ee-4ce0-95a8-e19f6eb585fa.png"
+#      highlightAnimation:
+#        animationID: "roll_call_marquee"
+#        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#        webpMD5: "1890abdf3a9649244548218ad05aae86"
+#        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#        frames: 24
+#        duration: 0.8
+#        repeatCount: 0
+#    - dayIdx: 5
+#      backgroundOff: "https://cdn.17app.co/4502d40f-2289-40c7-9aed-4df39c64e81a.png"
+#      backgroundOn: "https://cdn.17app.co/1c1546b8-2fce-4a14-9b46-7742ae57b922.png"
+#      backgroundReward: "https://cdn.17app.co/4502d40f-2289-40c7-9aed-4df39c64e81a.png"
+#      icon: "https://cdn.17app.co/e24acfbc-36f4-4e70-ad55-b231481037c5.png"
+#      doneIcon: "https://cdn.17app.co/f0ba9388-04ee-4ce0-95a8-e19f6eb585fa.png"
+#      highlightAnimation:
+#        animationID: "roll_call_marquee"
+#        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#        webpMD5: "1890abdf3a9649244548218ad05aae86"
+#        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#        frames: 24
+#        duration: 0.8
+#        repeatCount: 0
+#    - dayIdx: 6
+#      backgroundOff: "https://cdn.17app.co/46e17533-e394-460a-96ce-15f284b565ae.png"
+#      backgroundOn: "https://cdn.17app.co/4d3b44a5-1558-488f-90af-2a9c4c61de8b.png"
+#      backgroundReward: "https://cdn.17app.co/46e17533-e394-460a-96ce-15f284b565ae.png"
+#      icon: "https://cdn.17app.co/e87b658e-3cdf-4c45-97c5-9578b33c9959.png"
+#      doneIcon: "https://cdn.17app.co/1d51d21e-c712-4adb-8347-2c358010f74a.png"
+#      highlightAnimation:
+#        animationID: "roll_call_marquee"
+#        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+#        webpMD5: "1890abdf3a9649244548218ad05aae86"
+#        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+#        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+#        frames: 24
+#        duration: 0.8
+#        repeatCount: 0
 
-rewardLoopIOSSupport: "3.25.0"
-rewardLoopAndroidSupport: "2.3.38"
-# earliest version that implements new UI layout
-# https://docs.google.com/document/d/1p1F9Wq999F63hXfXy52LIvtq3r7hgzTOgrT-nunhXKA/
-rewardURLIOSSupport: "3.106.200"
-rewardURLAndroidSupport: "2.19.0"
-
-# daily for showing bigRewards UI, must be 4 elements
-bigRewards:
-  - amount: 1
-    tokenName: "voucher_daily_reward_gift_hedgehog"
-    days: 7
-    url: "https://assets-17app.akamaized.net/6a4cfdaf-8e51-4c3b-92c5-7ac0e82dacb5.png"
-  - amount: 2
-    tokenName: "voucher_daily_reward_gift_hedgehog"
-    days: 14
-    url: "https://assets-17app.akamaized.net/6a4cfdaf-8e51-4c3b-92c5-7ac0e82dacb5.png"
-  - amount: 1
-    tokenName: "voucher_daily_reward_gift_rabbit"
-    days: 21
-    url: "https://assets-17app.akamaized.net/85a23fee-f3a3-4840-a3da-43cf20580802.png"
-  - amount: 1
-    tokenName: "voucher_daily_reward_gift_hamster"
-    days: 28
-    url: "https://assets-17app.akamaized.net/69eafbfc-6b6b-4a99-b329-1692c10852ea.png"
-
-# time interval for resetting daily quest counter - default was 60
-questInterval: 120
-
-# newbie_days defines who is newbie
-newbieDays: 7
-
-# idleHintSec defines how long will newbie quest dialog popup after being idle - default was 01
-idleHintSec: 60
-
-# checkPNAfterComplete defines how much newbie missions be completed will request client to check PN
-checkPNAfterComplete: 2
-
-
-# newbie_rewards defines newbie quest rewards
-# type are defined as following
-# - 1: DAILY_CHECK_IN
-# - 2: ENTER_LIVE
-# - 3: FOLLOW_STREAMER
-# - 4: WATCH_CLIP
-# - 5: JOIN_17Q
-# - 6: LIVE_CHECK_IN_SIX
-# - 7: LIVE_CHECK_IN_SEVEN
-# - 8: LIKE_POST
-# - 9: COMMENT_LIVE , could only be exactly 3 times due to lokalise key
-# - 10: SEND_GIFT
-# - 11: BUY_POINT
-# - 12: DailyQuestType_WATCH_LIVE_10_CONTINUE
-# - 13: DailyQuestType_WATCH_LIVE_30_TOTAL
-# - 14: DailyQuestType_LIVE_CHECK_IN_TWO_TOTAL
-# ex:
-#   - type: 1
-#     point: 25
-#     exp: 0
-#     required: 1
-#     requirePhoneBinding: false
-#     requireDeviceCheck: true
-newbieRewards:
-   - type: 2
-     point: 50
-     exp: 0
-     required: 1
-     requirePhoneBinding: false
-     requireDeviceCheck: true
-     withReminder: true
-   - type: 3
-     point: 0
-     exp: 0
-     required: 1
-     requirePhoneBinding: false
-     requireDeviceCheck: true
-     withReminder: true
-     voucherReward:
-       type: 3
-       itemID: tw_newuser_mission_follow
-       amount: 5
-       intervalSec: 604800
-   - type: 9
-     point: 0
-     exp: 0
-     required: 3
-     requirePhoneBinding: false
-     requireDeviceCheck: true
-     withReminder: true
-     voucherReward:
-       type: 3
-       itemID: tw_newuser_mission_comment
-       amount: 5
-       intervalSec: 604800
-   - type: 10
-     point: 0
-     exp: 0
-     required: 1
-     requirePhoneBinding: false
-     requireDeviceCheck: true
-     withReminder: true
-     voucherReward:
-       type: 3
-       itemID: tw_newuser_mission_gift
-       amount: 5
-       intervalSec: 604800
-   - type: 1
-     point: 130
-     exp: 0
-     required: 2
-     requirePhoneBinding: false
-     requireDeviceCheck: true
-     withReminder: true
-   - type: 13
-     point: 0
-     exp: 0
-     required: 30
-     requirePhoneBinding: false
-     requireDeviceCheck: true
-     withReminder: true
-     voucherReward:
-       type: 3
-       itemID: bravo
-       amount: 50
-       intervalSec: 604800
-   - type: 14
-     point: 130
-     exp: 0
-     required: 2
-     requirePhoneBinding: false
-     requireDeviceCheck: true
-     withReminder: true
-
+#高雄鋼鐵人
+signInRewardsTheme:
+  background: "https://cdn.17app.co/01d4b765-cad8-46b9-84af-e3cfa0c074e5.png"
+  CTA:
+    backgroundColor: "D62034"
+    shadowColor: "D62034"
+    textColor: "FFFFFF"
+    labelText:
+      key: "voucher_daily_reward4"
+  days:
+    - dayIdx: 0
+      backgroundOff: "https://cdn.17app.co/7a929adf-4171-412a-baf9-5547fa78eba2.png" #無框
+      backgroundOn: "https://cdn.17app.co/8f1cc90f-fe8f-4744-a5b0-d88d15c522bd.png" #有框
+      backgroundReward: "https://cdn.17app.co/7a929adf-4171-412a-baf9-5547fa78eba2.png" #無框
+      icon: "https://cdn.17app.co/d494efaf-b352-4f48-9725-9278e6e0c723.png"
+      doneIcon: "https://cdn.17app.co/464ec5c4-5a54-4546-a45e-ed1ffbef2f5f.png"
+      highlightAnimation:
+        animationID: "roll_call_marquee"
+        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+        webpMD5: "1890abdf3a9649244548218ad05aae86"
+        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+        frames: 24
+        duration: 0.8
+        repeatCount: 0
+    - dayIdx: 1
+      backgroundOff: "https://cdn.17app.co/7fe20ede-e6b6-40e8-a205-d9bf89354e4d.png" #無框
+      backgroundOn: "https://cdn.17app.co/7d060412-08ec-4abc-928f-b091d842c750.png" #有框
+      backgroundReward: "https://cdn.17app.co/7fe20ede-e6b6-40e8-a205-d9bf89354e4d.png" #無框
+      icon: "https://cdn.17app.co/2ad80c23-a457-42e4-a362-406a1b6e8c46.png"
+      doneIcon: "https://cdn.17app.co/464ec5c4-5a54-4546-a45e-ed1ffbef2f5f.png"
+      highlightAnimation:
+        animationID: "roll_call_marquee"
+        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+        webpMD5: "1890abdf3a9649244548218ad05aae86"
+        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+        frames: 24
+        duration: 0.8
+        repeatCount: 0
+    - dayIdx: 2
+      backgroundOff: "https://cdn.17app.co/7a929adf-4171-412a-baf9-5547fa78eba2.png" #無框
+      backgroundOn: "https://cdn.17app.co/8f1cc90f-fe8f-4744-a5b0-d88d15c522bd.png" #有框
+      backgroundReward: "https://cdn.17app.co/7a929adf-4171-412a-baf9-5547fa78eba2.png" #無框
+      icon: "https://cdn.17app.co/a6e11365-8ad4-41ec-9c57-f417794505ca.png"
+      doneIcon: "https://cdn.17app.co/464ec5c4-5a54-4546-a45e-ed1ffbef2f5f.png"
+      highlightAnimation:
+        animationID: "roll_call_marquee"
+        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+        webpMD5: "1890abdf3a9649244548218ad05aae86"
+        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+        frames: 24
+        duration: 0.8
+        repeatCount: 0
+    - dayIdx: 3
+      backgroundOff: "https://cdn.17app.co/7fe20ede-e6b6-40e8-a205-d9bf89354e4d.png" #無框
+      backgroundOn: "https://cdn.17app.co/7d060412-08ec-4abc-928f-b091d842c750.png" #有框
+      backgroundReward: "https://cdn.17app.co/7fe20ede-e6b6-40e8-a205-d9bf89354e4d.png" #無框
+      icon: "https://cdn.17app.co/399bd297-6d6f-4fe0-afb4-25bed865d103.png"
+      doneIcon: "https://cdn.17app.co/464ec5c4-5a54-4546-a45e-ed1ffbef2f5f.png"
+      highlightAnimation:
+        animationID: "roll_call_marquee"
+        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+        webpMD5: "1890abdf3a9649244548218ad05aae86"
+        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+        frames: 24
+        duration: 0.8
+        repeatCount: 0
+    - dayIdx: 4
+      backgroundOff: "https://cdn.17app.co/7a929adf-4171-412a-baf9-5547fa78eba2.png" #無框
+      backgroundOn: "https://cdn.17app.co/8f1cc90f-fe8f-4744-a5b0-d88d15c522bd.png" #有框
+      backgroundReward: "https://cdn.17app.co/7a929adf-4171-412a-baf9-5547fa78eba2.png" #無框
+      icon: "https://cdn.17app.co/277c7146-e22b-46da-ae1a-c1919d8a19ac.png"
+      doneIcon: "https://cdn.17app.co/464ec5c4-5a54-4546-a45e-ed1ffbef2f5f.png"
+      highlightAnimation:
+        animationID: "roll_call_marquee"
+        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+        webpMD5: "1890abdf3a9649244548218ad05aae86"
+        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+        frames: 24
+        duration: 0.8
+        repeatCount: 0
+    - dayIdx: 5
+      backgroundOff: "https://cdn.17app.co/7fe20ede-e6b6-40e8-a205-d9bf89354e4d.png" #無框
+      backgroundOn: "https://cdn.17app.co/7d060412-08ec-4abc-928f-b091d842c750.png" #有框
+      backgroundReward: "https://cdn.17app.co/7fe20ede-e6b6-40e8-a205-d9bf89354e4d.png" #無框
+      icon: "https://cdn.17app.co/a6d5d81b-93bd-4ec5-8f8e-2c310d0541fd.png"
+      doneIcon: "https://cdn.17app.co/464ec5c4-5a54-4546-a45e-ed1ffbef2f5f.png"
+      highlightAnimation:
+        animationID: "roll_call_marquee"
+        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+        webpMD5: "1890abdf3a9649244548218ad05aae86"
+        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+        frames: 24
+        duration: 0.8
+        repeatCount: 0
+    - dayIdx: 6
+      backgroundOff: "https://cdn.17app.co/d28397bb-16f9-4abe-ad0b-1ef77cc05951.png"
+      backgroundOn: "https://cdn.17app.co/6ca8f3d2-9429-4594-a39a-2548890f8b11.png"
+      backgroundReward: "https://cdn.17app.co/d28397bb-16f9-4abe-ad0b-1ef77cc05951.png"
+      icon: "https://cdn.17app.co/e740c93d-a0f3-430b-b0d8-d9a5157c2f2f.png"
+      doneIcon: "https://cdn.17app.co/c9934db7-5dd9-43a2-a13b-e8699145ece9.png"
+      highlightAnimation:
+        animationID: "roll_call_marquee"
+        webpURL: "https://cdn.17app.co/6e8515ba-6d5d-4846-9bdf-4405b09ea83b-q90-s1.webp"
+        webpMD5: "1890abdf3a9649244548218ad05aae86"
+        zipPngURL: "http://cdn.17app.co/72e7e389-1b5a-433f-b01b-52da3e6ab4a9.zip"
+        zipPngMD5: "8f63e2a336558d2fefa783fc1c3841bf"
+        frames: 24
+        duration: 0.8
+        repeatCount: 0

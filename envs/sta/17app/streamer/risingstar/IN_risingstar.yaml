@@ -1,53 +1,41 @@
+# |         mission type        | Value |
+# | -------------------------   | ----- |
+# | TypeStreamerLiveXSeconds    | 14    | 累計開播 X 分鐘
+# | TypeRisingStarScheduleCount | 22    | 開播預告 X 次
+# | TypeReceiveGift             | 25    | 被送禮 X 位
+# | TypeMaxFollowers            | 26    | 最高追蹤數 X 位
+# | TypeStreamerGotBabyCoins    | 21    | 直播時累積被送 X 寶寶幣
+# | TypeRisingStarNewPostCount  | 23    | 新增貼文 X 篇
+
+#Rising star: The config can only be changed at 00:00(GMT+8) or after a few mins and the first date of the month (reset date) manually.
+#Please avoid changing the setting in the middle of the month, will effect all streamers’ metrics record
+#Please note that if you want to change the value of the metrics, you will need to change the "Streamer grow up instruction info page" as well (info page)
+#Please note that if you want to change the animation of the reward, you have to set it in the list of "# Rising Star Common config"
+
 # control rising star page appearance
 risingStarEnable: true
+startTime: 2021-03-01 00:00:00 (GMT+0800)
 
 # rank up animation ID
 animationID: streamer_growth_rising_star_rank_up
-animationDelay: 10
+animationDelay: 10 # delay seconds between rank up and reward animations
 
 whiteList:
-  - "fdf8f01d-3d64-4fc3-5e31-6a292f5c4ef2" # e2ebot1 , don't remove for e2e test
-  - "c3dfff9d-b6a5-4732-8ac1-40321b8b67b6" # erictest2
-  - "062d86c5-6e13-4210-8caf-6069a7b2355f" # noelletw1
-  - "741f82c1-e431-426d-b93d-209be9ae85ae" # nealx1
-  - "b3307c68-8326-4b64-8572-d4211c9a9de2" # jamie.sta02
-  - "e2f9adee-908d-4702-a0f6-bf164d14e763" # jamie.sta03
-  - "5eee8b2b-5c11-4e81-b084-858b9a958653" # lucaslu1
-  - "a087cb6f-de57-456d-96fe-c4521ce100b1" # david.chou.1
-  - "4c7726a5-c71d-4f6f-bb58-18fc1bd58b6b" # david.chou.2
-  - "bd7c4724-9144-49fb-8f49-4dfb61047184" # david.chou.3
-  - "8805502b-503f-464e-b76a-5a9e2ca60ada" # taisho918
-  - "08a2082b-be20-4838-818c-55710300c000" # Qoo_sushi
-  - "f0f49980-0f74-44a5-9086-a93a6471b42c" # Qoo_sta
-  - "a4343bc9-c4c1-4bbc-a45a-4fe33b0f65cf" # pikaarmy1
-  - "59a1b08a-68d5-4ed3-b4f6-ac5f7bb2d180" # pikagrowth1
-  - "89bb20bd-7e42-4aa4-a3dd-80e4289c5582" # pikagrowth2
-  - "f85cbb96-174e-4a2e-9cf4-7c2d859b1d07" # pikagrowth3
-  - "c0d02eb2-36dd-4f80-a08a-d5e675200eac" # pikagrowth4
-  - "efd91ee8-a7a6-4d68-af30-8e941d72bb85" # pikagrowth5
-  - "5344b32c-d208-46f4-aca8-80f7817ff842" # pikagrowth6
-  - "1a04898d-6d03-40c4-a20d-71f77d356d6b" # pikagrowth7
-  - "ae76fc38-33d3-468d-975c-ca868337c988" # pikagrowth8
-  - "54b8e058-e2a9-40bd-b0d0-6409d95a1317" # pikagrowth9
-  - "2cf112c0-2b86-4e58-a516-f5b5c6f378b6" # pikagrowth10
-  - "1d709854-fa5c-45ce-a378-f8ac479266a6" #dailyTaskD1
-  - "3e01df2b-ea75-425c-be8a-17981dfd6fcb" #dailyTaskD2
-  - "2d7152ab-2374-433c-b17e-6cd1d6dad1b2" #dailyTaskD3
-  - "a2c1eb1b-1ea1-47ac-974b-485b6214e8d4" #dailyTaskD4
-  - "9dd629d0-999e-439c-b345-3f29feeac7cc" #dailyTaskD5
-  - "10b8d998-ee1c-457f-891d-d57b3b451b45" #dailyTaskD6
-  - "d149c402-ef90-417a-b76a-33a6afd198e0" #dailyTaskD7
-  - "23a490db-1ab9-4d1c-8e7b-a58206f82a84" #dailyTaskD0
-  - "a04a6709-d8ae-42ff-91c9-c616338695cf" #robot_contract_tw
-  - "973547a6-d2e6-4207-9a73-8f8189db9349" #danielsu
+  - "567e0b5d-1516-4ce0-b4e8-bec4e756d5ae" # kevinmh
+  - "4af3f14d-a771-4bf5-a578-6ae8f00b4b98" # davidchou1119
+  - "603794c1-76eb-47cc-962f-4815bec702e3" # lynn_1211
+  - "2e5c8de5-c860-452c-ade1-6193ca08a4d5" # vivianhuang85
+  - "a6197cb7-4677-46fc-9012-4e037cd1eaed" # critic___
+  - "a9b23cbe-8960-4f98-988e-90b9f6eeb86e" # erictest2
 
+# Below are the metrics logic calulated by Backend, you can change the related threshold
 levels:
   - level: 1
     metrics:
       - id: f4b94347-2674-4f3d-aec3-cd8ee83062dc
         type: 14 # TypeStreamerLiveXSeconds
         title: "streamer_loyalty_streaming_performance_validstreamedhours"
-        threshold: 120 # 1 hours
+        threshold: 3600 # 1 hours
       - id: b86cad4d-ff6e-46cf-ae9c-a18cf6ea00fa
         type: 22 # TypeRisingStarScheduleCount
         title: "streamer_growth_risingstar_metrics_scheduletime"
@@ -163,7 +151,7 @@ levels:
       - id: f4b94347-2674-4f3d-aec3-cd8ee83062dc
         type: 14 # TypeStreamerLiveXSeconds
         title: "streamer_loyalty_streaming_performance_validstreamedhours"
-        threshold: 360000 # 10 hours
+        threshold: 36000 # 10 hours
       - id: b86cad4d-ff6e-46cf-ae9c-a18cf6ea00fa
         type: 22 # TypeRisingStarScheduleCount
         title: "streamer_growth_risingstar_metrics_scheduletime"
@@ -225,7 +213,7 @@ levels:
       - id: b86cad4d-ff6e-46cf-ae9c-a18cf6ea00fa
         type: 22 # TypeRisingStarScheduleCount
         title: "streamer_growth_risingstar_metrics_scheduletime"
-        threshold: 2
+        threshold: 3
       - id: fdb9bc01-8d71-4b36-96bc-c6a678aedf38
         type: 25 # TypeReceiveGift
         title: "streamer_loyalty_streaming_performance_uniquegiftsender"
@@ -361,4 +349,3 @@ levels:
     coinsProbability:
       - value: 2000
         weight: 1000
-

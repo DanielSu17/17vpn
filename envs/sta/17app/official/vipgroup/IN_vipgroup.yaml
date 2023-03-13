@@ -1,22 +1,11 @@
-# showInvitationDialog: true                  //popup開關
-# url: https://goo.gl/vnQtXq # deprecated     //不要動
-# params: 
-#   # baby vip group
-#   - vipGroupType: 1                         //1是VIP baby, 2是VIP
-#     threshold: 1000                         //儲值滿多少會跳彈窗(寶寶幣)
-#     url: https://goo.gl/vnQtXq              //彈窗會導的連結
-#     showCheckBoxThreshold: 2                //跳彈窗多少次之後就不再顯示
-#     msgToken:
-#       key: "babyvip_invitation_dialog_text" //彈窗內容
-#--------------------------------------------------------------------------
-
-showInvitationDialog: true  
-url: https://goo.gl/vnQtXq # deprecated 
+showInvitationDialog: false #popup開關
+url: https://goo.gl/vnQtXq # deprecated #不要動
 params:
   # baby vip group
-  - vipGroupType: 1 
-    threshold: 1000
-    url: https://goo.gl/vnQtXq 
-    showCheckBoxThreshold: 3
+  - vipGroupType: 1 #1是VIP baby, 2是VIP
+    threshold: 8550 #儲值滿多少會跳彈窗(寶寶幣)
+    url: https://event.17.live/15317-2209-tw-vipbaby
+    #url: https://goo.gl/vnQtXq #彈窗會導的連結
+    showCheckBoxThreshold: 10 #跳彈窗多少次之後就不再顯示
     msgToken:
-      key: "babyvip_invitation_dialog_text" 
+      key: "babyvip_invitation_dialog_text" #彈窗內容

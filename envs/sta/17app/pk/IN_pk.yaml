@@ -1,55 +1,102 @@
-enable: true
-enableAll: true
-enableContractedStreamer: true
-defaultAcceptChallenge: false
-maxPlayerAmount: 100 #以人為單位
+enable: true # 整個功能的開關
+enableAll: true # 開放所有用戶使用
+enableContractedStreamer: true # 開放簽約主播使用 
+defaultAcceptChallenge: false  # 配對倒數結束時，預設加入(true)或拒絕(false)
+maxPlayerAmount: 5000 # 人數上限，以人為單位
+whiteList: # 白名單，如果開放所有用戶使用則沒有用處
+  -  9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba # kevinmh03
+  -  b640f50e-ab98-45bd-8d71-64cd2700b405 # kevinmh04
+  -  8e6a1fbd-9dd4-4887-92d0-98fe116e3563 #PK紅隊
+  -  1d5f2db8-d2c0-4bd0-9ccd-a6a4ca3473dd #PK白隊
+ # - b2523d4e-f221-4eb8-8748-9d6a68a3c935 # amyshen171
+ # - 2d072c73-4dd9-41ee-9e84-b3f61219ebbe # amyshen172
+ # - 24c65a0b-2e5e-458a-aa3c-243fca4f2bd7 # 沒是多喝水
+ # - 5435ae09-00d6-42a2-9a27-a173013a6eab # 多喝水沒是
+  - 00c0bc02-c6df-448c-8385-114288e51d83 # 7794Q
+ # - 801e0da8-fb1a-481f-9af3-4ee1f34405b5 # 7794QQ
+  - 25d8e5a9-94da-43bf-a160-a74856ad5c16  #zoe_meat
+  - 4bb98c37-bc49-4080-ace7-77542beee311	#17beauty
+  - 5b9b2225-bcb0-47b9-6f52-9344318bb9f3	#Aggie芊芊
+  - ad824b20-5314-44f4-7cda-66c64f498a2b	#艾莉飽飽
+  - 28cae3ba-3787-4d8c-7252-42234b628f64	#April
+  - 8742fe8b-cfde-4ecc-b6d5-29b6f9f282a0	#艾文Arvin🦊
+  - 5b1e5915-fcee-405b-a6a6-621775a7f626	#Cora拉拉
+  - 34b1c4a1-bb2d-453d-a955-07c51d4ce1a3	#米恩Damien🦖
+  - 27de100d-f196-4b0a-aaf6-125b5fecab10	#DEBBY💙
+  - 300b236f-b899-450b-8792-f224557ac920	#飛天小女警
+  - 5898f63e-8734-432c-8fd1-a17e086789ae	#芳鬨Flora🍀
+  - 08dee76d-74f0-4ad9-935c-7e972f4a4695	#歡Huan🐼
+  - d53f9a93-ea6b-4781-9728-bde77bdf3c44	#黛西喬🧀Joe
+  - 014b7212-2d62-4bcc-b539-c38a139b9145	#🔥Yoshi🔥
+  - cad3241f-22cf-4cf3-aa8c-fafc52acb374	#KingMao🤙🏿
+  - 81817ad7-c8a4-44d0-b398-dc1b66c85e55  #櫻桃小丸子🍒
+  - 00887852-5bdb-4ba0-6231-36f4202c801c	#mo不挑🐼
+  - 764adbb5-ea72-4ee8-bbeb-62c6c53af099	#陳野
+  - c980f75e-57b5-47ed-5a93-d01cc8539b2e	#瑞奇🦈
+  - f6acb140-1b70-41b5-a48c-7a64812eb61a	#thereal__sam
+  - 214c8046-ce5d-4788-b12b-3cf300fafe5d	#賽門👦
+  - 061437bf-8276-467b-6f6f-9427c3aa1309	#開心果😜
+  - ea1eacf9-c6e3-403b-4e35-e21a6c59a8ba	#貪吃
+  - bc157c6c-c6e1-4cd3-6098-8c4284c063ca	#溫蒂漢堡🍔
+  - 5791d1cf-66bf-4e29-9807-7047289becea	#儀儀YiYi🐶
+  - 57bce189-6935-47f3-448d-1e4b38b32577	#克里斯小子
+  - 496174e0-000b-49b3-a1eb-8fcb18fae8bc	#汎kkkk
+  - 7d051ebb-387a-4133-87a5-55f7ff7ee8fa  #chia7_
+  - 831ab0f8-c3f9-4d61-8eea-ab5aa7b6f1ce  #wanibelle
 
-#選取該活動時，必須送該活動的禮物才會納入PK分數計算
-pkEvents:
-  - 13752
-  - 12406
-  - 14647
-#  - 10240
-#  - 10246
 
-whiteList:
-  - "00c0bc02-c6df-448c-8385-114288e51d83" # 77_七七
-  - "d41a9c27-e033-426a-9107-ec7eb8157574" # 7794暖
-  - "25d8e5a9-94da-43bf-a160-a74856ad5c16" # zoe_meat
-  - "6d097b16-b650-4848-9e72-030e8bf37776" # vava2
-  - "b2523d4e-f221-4eb8-8748-9d6a68a3c935" # amyshen171
-  - "4b35d0f0-f7fe-4bb8-a43d-9966872dd3b5" # qacontractor3
-  - "9692933f-079c-455a-94c5-13f0336c5070" # qacontractor4
-  - "39c139c4-cecf-401e-8d0e-e7b6eb9a1924" # chantal17
-  - "a2fb0a20-57ff-4740-b3cd-d7f34c8817c5" # chantalp20032701
-  - "b3a4e768-cc55-4202-a6c1-60bf932827ef" # thpk03
-  - "906f7897-51dd-40a6-aca8-4381905a9333" # thpk04
-  - "b9cc37f1-65fd-41c4-8370-8bb8b9e53e70" # loki17_z
-  - "652351ca-e94f-412e-4f0c-fc3d6f0f728e" # haru_pon
-  - "779d6f53-74a4-4c23-bd82-921122dbd9e7" # bellapk0031
-  - "e0991cff-6a7f-4b85-a9d4-7c9041ccb3f6" # jocelyn522072
-  - "ce1527f1-9498-4055-876e-16b72b1e5d50" # wani_belle
-  - "cf3e24cf-e05c-4b84-a047-b56044ad0588" # teddystag2
-  - b2523d4e-f221-4eb8-8748-9d6a68a3c935 # amyshen171
-  - 2d072c73-4dd9-41ee-9e84-b3f61219ebbe # amyshen172
-  - 24c65a0b-2e5e-458a-aa3c-243fca4f2bd7 # 沒是多喝水
-  - 5435ae09-00d6-42a2-9a27-a173013a6eab # 多喝水沒是
-  - 55f0ac3a-48e3-4ee5-bc2a-9c04ebb5e1fb # teddypk001
-  - 7b8acc99-44e3-44ac-b702-f58c536d241a # teddypk002
-  - 49f282f3-c37c-4e51-86f1-56d185decd3d # Jennifer02032
-  - 7f487580-404e-4ed6-a203-d88fcc3cf3b8 # Jennifer02041
-  - d7e2c1bb-08fe-42ae-bd31-632252119108 # bill.kao
-  - 18235c9a-89f1-4ac4-b145-71ff06d616e4 # vipvipvip1
-
-displayIconType: 2
-displayInvitationPictures: 1
-silenceList:
-  - "e257e914-5009-48d9-5e8b-3c6da3f2026f" # lllt.summer
-  - "ae7de094-f3ae-4de6-9037-e4f190acdbf1" # qacontractor9
-  - "2e95de40-7880-422b-7f3b-0af9405e3b4d" # janet.w02
-matchingRules:
-  #將相同活動配對在一起的開關
-  sameEventMatchFirst: true
+silenceList: # 不會收到PK邀請名單
+  - 6ed74223-4466-4909-9104-12591f2deca8 # HotSpark女子鼓團
+  - 1807ac60-6194-4026-95d3-7eae9f8ce3e3 # 高高心理師
+  - 8471cde3-503d-4668-b2c0-cb4bb6f26242 # 俠醫楊智鈞
+  - f05eeb90-314b-4f53-a79c-a7f0e95a9797 # 許凱皓LockingJack
+  - 64960d5e-1631-4d55-9cd6-66c7ecfb6eef # 黃益中
+  - 4318c259-95f1-40da-bfce-ab0f4523451b # 陳奕齊
+  - 8d182ed9-d02c-46c3-9dfb-bc102519f02c # 同志先生Henry
+  - e1248c81-a3a3-466b-9cd2-80d5e4f66448 # 徐乃麟
+  - 62695786-774b-46de-849f-944ba9548d35 # 韓國瑜
+  - d62b9dcf-157f-4345-9c75-272f236573e8 # 3q陳柏惟
+  - f488e6f8-4980-4fb7-9502-f1a4a075e8b8 # 視網膜Retina
+  - f547c951-d344-4d0f-9933-e340347271c5 # 大支Dwagie
+  - d91dce34-4d3a-4729-8322-0f270bb02c16 # 邱鋒澤fengze
+  - f72d13f1-59a4-4ac4-8958-2d64c569556f # 黃暐瀚
+  - 799bdb57-9390-46b8-9cc6-0303b68a7cb6 # 羅友志
+  - 95508326-e77e-4cb7-a5d4-3395e5946caa # 挑戰裘爺
+  - 2fdb9f0f-cdc3-4eb4-a8af-ff1c261a2369 # 趣你的娛樂
+  - ebc162ee-1235-4f6b-b0b6-d2e2e0d18721 # 學姊受不了
+  - de1d9848-121b-4bb6-a1f3-a5de35290d5d # 婁峻碩SHOU
+  - 452b29bc-99a5-4977-8e2a-68685e3f8c02 # 盧學叡
+  - 1bd499ff-34e1-4530-91ce-a9f523afac0c # DavidsAngels_小賴兒
+  - 58fabfe6-958a-415a-a51b-a56e9f045507 # 命運17玩
+  - f547c951-d344-4d0f-9933-e340347271c5 # 大支Dwagie
+  - d91dce34-4d3a-4729-8322-0f270bb02c16 # 邱鋒澤fengze
+  - f488e6f8-4980-4fb7-9502-f1a4a075e8b8 # 視網膜Retina
+  - 11bbac81-eea1-4b13-a4b4-83ca1c7eff15 # 陳零九ninechen
+  - d62b9dcf-157f-4345-9c75-272f236573e8 # 3q陳柏惟
+  - 87f7d2b1-25ec-4b09-8e36-a615b4dfd1b3 # 占星師艾薇
+  - ad62cc3e-96cb-4dac-b7d5-418fee2137fc # 周定緯
+  - 639ef382-e623-4bca-8614-5d6321786b00 # 顏銘緯
+  - a9834349-2d9f-4b4a-b839-16e1febd1689 # 陳思宇
+  - 64960d5e-1631-4d55-9cd6-66c7ecfb6eef # 黃益中
+  - aeccddf3-f8c6-4e1e-8758-4e250707bda0 # 詹為元
+  - 571fd70c-27b5-4f1f-a50f-9c5bf07c71a7 # 小任
+  - 6bc701d7-be42-439f-a003-8db74955536c # 蔡百祥心理師
+  - 2242e3b8-2ab9-4d7f-b0d1-f4743d31a9e5 # 台灣鯛民 廖彥朋
+  - cea88f37-28c7-4f79-9d9c-732480a8b8e8 # 吳崢
+  - f9546eee-c573-4a66-aa4b-b8071473557e # 陳楷
+displayIconType: 2 # 功能按紐 1.VS 2.PK
+displayInvitationPictures: 1 # 配對中隨機頭像圖片 1.TW 2.JP 3.US 4.MENA
+# 配對條件： 
+# 1. 開播選擇同活動，同分數> 活動分數 ± 1％ > 活動分數 ± 5％> 活動分數 ± 10％ > 所有同活動主播
+# 2. 同等級 > 等級 ± 10 > 等級 ± 20 
+# 3. 同勝率 > 勝率 ± 5% > 勝率 ± 10%
+# 4. 所有在線同區的主播 
+matchingRules: 
+  sameEventMatchFirst: true #將相同活動配對在一起的開關
+  eventScores:
+    - 1
+    - 5
+    - 10
   levelRange:
     - 10
     - 20
@@ -57,12 +104,8 @@ matchingRules:
     - 0
     - 0.05
     - 0.1
-  eventScores:
-    - 1
-    - 5
-    - 10
 minLevel: 1
-playList:
+playList: # PK 模式列表
   - id: friendPK
     mode: 1
     match: 2
@@ -132,68 +175,65 @@ playListV2:
       description:
         key: "pk_schedule_menu_suspended1"
 
+
+# 選取該活動時，必須送該活動的禮物才會納入PK分數計算
+
+pkEvents:
+  - 12396
+
+#pkEvents: [12396]
+
 ## for pk leaderboard
 pkHourLBLevel:
-  min: 1
-  max: 280
-pkStarDurations:
-- startTime: 00h00m00s
+  min: 10
+  max: 280 # streamer higher than max level will not show pk leaderboard in their stream
+pkStarDurations: # [startTime, endTime) end time is opened
+# for example, startime: 20h00m00s and 24h00m00s means 20, 21, 22, 23 hrs will have red envelope
+- startTime: 20h00m00s
   endTime: 24h00m00s
-regularRuleTitle:
+
+weeklyLBTopCount: 3 # how many top streamers will be granted pk label
+showPKStarLB: true # control regional LB to show 
+
+# minimum points needed to count as lb win after specific time
+# if now is before earliest start, we use 3000 as defualt.
+# please dont clear this config until start is older than one month for data consistency
+pkLBMinPoints: 
+  - start: "2020-09-01 00:00:00 (GMT+0800)"
+    minPoint: 3000
+
+# pk leaderboard rules
+regularRuleTitle: 
   key: pk_information_regular_title
 regularRules:
   - key: pk_information_regular_rule1
     params:
-      - value: 3000
+      - value: 3000 # should be aligned to pkLBMinPoints for current time
   - key: pk_information_regular_rule2
     params:
-      - value: 3
-hourRuleTitle:
+      - value: 3 # should be aligned to weeklyLBTopCount
+hourRuleTitle: 
   key: pk_information_hourly_title
 hourRules:
   - key: pk_information_hourly_rule1
   - key: pk_information_hourly_rule2
   - key: pk_information_regular_rule1
     params:
-      - value: 2000
+      - value: 3000 # should be aligned to pkLBMinPoints for current time
   - key: pk_information_hourly_rule3
     params:
-      - value: 1
+      - value: 10 # should be aligned to pkHourLBLevel
       - value: 280
   - key: pk_information_hourly_rule4
     params:
-      - value: 8
+      - value: 10 # how many top rank streams are granted with red envelope, actual setting in superstar.yaml
   - key: pk_information_hourly_rule5_tw
     params:
-      - value: 00
-      - value: 24
-# minimum points needed to count as lb win after specific time
-# if now is before earliest start, we use 3000 as defualt.
-# please dont clear this config until start is older than one month for data consistency
-pkLBMinPoints:
-  - start: "2020-08-12 18:00:00 (GMT+0800)"
-    minPoint: 3000
-  - start: "2020-08-14 18:00:00 (GMT+0800)"
-    minPoint: 2000
-  - start: "2020-08-17 18:00:00 (GMT+0800)"
-    minPoint: 3000
-  - start: "2020-08-18 18:00:00 (GMT+0800)"
-    minPoint: 2000
-  - start: "2020-08-19 18:00:00 (GMT+0800)"
-    minPoint: 3000
-  - start: "2020-08-20 18:00:00 (GMT+0800)"
-    minPoint: 2000
-  - start: "2020-08-21 18:00:00 (GMT+0800)"
-    minPoint: 3000
-  - start: "2020-08-22 18:00:00 (GMT+0800)"
-    minPoint: 2000
-  - start: "2020-08-23 18:00:00 (GMT+0800)"
-    minPoint: 3000
-weeklyLBTopCount: 3
-showPKStarLB: true #是否於直播間顯示pk小時榜
+      - value: 20 # should see pkStarDurations
+      - value: 23
 
 gameDuration:
 # match: second
-  random: 120
-  friend: 120
-  schedule: 60
+  random: 300
+  friend: 300
+  schedule: 600

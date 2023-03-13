@@ -3,237 +3,162 @@
 #  - id: subtab1
 #    name:
 #      key: "subtab1Token"
-#banners:
-#  subtab1:
-#    - id: banner1
-#      imageURL: https://cdn.17app.co/abcd.png
-#      order: 1
-#      sourceID: userID
-#      type: profile
-#      startTime: 2019-10-01T00:00:00+08:00
-#      endTime: 2019-11-01T00:00:00+08:00
+#    banners:
+#      - id: banner1
+#        imageURL: https://cdn.17app.co/abcd.png
+#        order: 1
+#        sourceID: userID
+#        type: profile
+#        startTime: 2019-10-01T00:00:00+08:00
+#        endTime: 2019-11-01T00:00:00+08:00
 
 subtabs:
-  - id: branded_content
+  - id: subtab_main
     name:
-      key: event_branded_content
+      key: event_subtab_main #每月大活動
     banners:
-      - id: userBanner1 #全家
-        imageURL: https://cdn.17app.co/c7c908e1-21e4-41af-85be-e8a85d7ef678.jpg
+      - id: linkBanner #尾牙
+        imageURL: https://cdn.17app.co/30c1befb-645a-49e7-abfc-01182b499535.png
         order: 1
-        sourceID: https://event.17.media/1910-tw-familymart/1
+        sourceID: https://event.17.media/11007-2012-tw-weiya/4/0
         type: link # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2021-11-01T00:00:00+08:00
-      - id: userBanner2 #天貓
-        imageURL: https://cdn.17app.co/fed66f2e-f506-4f47-be13-fc50c84fb29f.jpg
+        startTime: 2020-12-25T18:00:00+08:00
+        endTime: 2021-01-30T21:00:00+08:00
+      - id: linkBanner #主題月
+        imageURL: https://cdn.17app.co/25e69010-370f-4d66-becb-0fc908e53a4c.png
         order: 2
-        sourceID: https://event.17.media/1910-tw-tmall/0
+        sourceID: https://event.17.live/11095-2101-tw-monthly/1/0
         type: link # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2021-11-01T00:00:00+08:00
-      - id: userBanner3 #iherb
-        imageURL: https://cdn.17app.co/1213d03f-3cb4-41eb-bfdd-621f3faaacd9.jpg
+        startTime: 2021-01-01T00:00:00+08:00
+        endTime: 2021-02-01T00:00:00+08:00
+      - id: linkBanner #街頭
+        imageURL: https://cdn.17app.co/5b9e46ad-92ae-46f1-bb5c-05788f739298.png
         order: 3
-        sourceID: https://event.17.media/1910-tw-iherb/0
+        sourceID: https://event.17.live/11135-2101-tw-17live/2
         type: link # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2021-11-01T00:00:00+08:00
-      - id: userBanner4 #愛爾麗
-        imageURL: https://cdn.17app.co/52a2b695-171b-491a-903a-9251b4398e01.png
-        order: 4
-        sourceID: https://event.17.media/1911-tw-beauty-girl/0/0
-        type: link # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2021-11-01T00:00:00+08:00
-      - id: userBanner5 #新北耶誕城
-        imageURL: https://cdn.17app.co/bdf9ce1e-de86-43b5-aab9-4d92cc627043.jpg
-        order: 5
-        sourceID: https://event.17.media/1911-tw-newtaipei/1
-        type: link # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2021-11-01T00:00:00+08:00
-      - id: userBanner6 #voicetube
-        imageURL: https://cdn.17app.co/81ee024c-f347-45e8-97ff-d9f29bcf3808.jpg
-        order: 6
-        sourceID: https://event.17.media/1911-tw-voicetube/1
-        type: link # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2020-11-01T00:00:00+08:00
-      - id: userBanner7 #kkday
-        imageURL: https://cdn.17app.co/e00c531d-0015-4e4b-beaf-04a8a48d93d6.jpg
-        order: 7
-        sourceID: https://event.17.media/1912-tw-kkday/1
-        type: link # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2020-11-01T00:00:00+08:00
-      - id: userBanner8 #亞太電信
-        imageURL: https://cdn.17app.co/a9d30ec3-6ff4-4a58-979e-3cbc6c285f7c.jpg
-        order: 8
-        sourceID: https://event.17.media/1912-tw-cellphone/0
-        type: link # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2020-11-01T00:00:00+08:00
-      - id: userBanner9 #夏普
-        imageURL: https://cdn.17app.co/a0776c9b-8c83-4def-9557-8c066f52efbd.jpg
-        order: 9
-        sourceID: https://event.17.media/1911-tw-homegirl/0
-        type: link # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2020-11-01T00:00:00+08:00
-
-
-
-
-        
-  - id: subtab2
+        startTime: 2021-01-05T18:00:00+08:00
+        endTime: 2021-02-25T00:00:00+08:00
+  - id: subtab_point
     name:
-      key: subtab_live_stream_option1
+      key: event_subtab_point #點數分榜
     banners:
-      - id: kevinmh01_profile
-        imageURL: https://cdn.17app.co/e4d2fb26-5a6e-4a39-bff8-a75df3b1c742.png
+      - id: linkBanner #藝啟
+        imageURL: https://cdn.17app.co/62cabb56-e225-46c6-b902-4cbea3b44b40.png
         order: 1
-        sourceID: 3799d926-2ae2-4942-a510-847a017921cc # kevinmh01
-        type: profile # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2021-11-01T00:00:00+08:00
-      - id: kevinmh03_profile
-        imageURL: https://cdn.17app.co/aa087b3b-b204-4523-b902-938dbb46d68a.png
+        sourceID: https://event.17.live/11142-2101-tw-school/0/0
+        type: link # link, post, profile, clip, live
+        startTime: 2021-01-05T18:00:00+08:00
+        endTime: 2021-02-01T00:00:00+08:00
+      - id: linkBanner #藝術
+        imageURL: https://cdn.17app.co/c757e131-986c-422c-92e7-983cf985e56e.png
         order: 2
-        sourceID: 9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba # kevinmh03
-        type: profile # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2021-11-01T00:00:00+08:00
-      - id: kevinmh04_profile
-        imageURL: https://cdn.17app.co/194caa38-2de6-4b24-8ae7-ecd787687ed9.jpg
+        sourceID: https://event.17.media/11159-2101-tw-art/2
+        type: link # link, post, profile, clip, live
+        startTime: 2021-01-20T18:00:00+08:00
+        endTime: 2021-01-30T00:00:00+08:00
+      - id: linkBanner #唇
+        imageURL: https://cdn.17app.co/34ebbd0b-65c3-4988-b7ab-621af1882ccb.png
         order: 3
-        sourceID: b640f50e-ab98-45bd-8d71-64cd2700b405 # kevinmh04
-        type: profile # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2021-11-01T00:00:00+08:00
-      - id: qacontractor1_profile
-        imageURL: https://cdn.17app.co/f552d04d-45d6-4f49-b29d-66ac90949dfa.png
+        sourceID: https://event.17.live/11181-2101-tw-lip/3
+        type: link # link, post, profile, clip, live
+        startTime: 2021-01-21T18:00:00+08:00
+        endTime: 2021-02-04T00:00:00+08:00
+  - id: event_ad
+    name:
+      key: event_subtab_ad #曝光活動
+    banners:
+      - id: linkBanner #街頭
+        imageURL: https://cdn.17app.co/5b9e46ad-92ae-46f1-bb5c-05788f739298.png
+        order: 1
+        sourceID: https://event.17.live/11135-2101-tw-17live/2
+        type: link # link, post, profile, clip, live
+        startTime: 2021-01-05T18:00:00+08:00
+        endTime: 2021-02-25T00:00:00+08:00
+      - id: linkBanner #主題月
+        imageURL: https://cdn.17app.co/25e69010-370f-4d66-becb-0fc908e53a4c.png
+        order: 2
+        sourceID: https://event.17.live/11095-2101-tw-monthly/1/0
+        type: link # link, post, profile, clip, live
+        startTime: 2021-01-01T00:00:00+08:00
+        endTime: 2021-02-01T00:00:00+08:00
+      - id: linkBanner #西門
+        imageURL: https://cdn.17app.co/12a71979-2e1f-48d8-9aa4-bae440492d01.png
+        order: 3
+        sourceID: https://event.17.live/11175-2101-tw-ximen/0
+        type: link # link, post, profile, clip, live
+        startTime: 2021-01-11T18:00:00+08:00
+        endTime: 2021-01-23T00:00:00+08:00
+      - id: linkBanner #滿滿
+        imageURL: https://cdn.17app.co/f546fc7d-5353-4e03-bd99-315710bdb5d3.png
         order: 4
-        sourceID: b2f9da8f-b2b6-4f06-bd28-6fbda98e4f43 # qacontractor1
-        type: profile # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2021-11-01T00:00:00+08:00
-      - id: qacontractor2_profile
-        imageURL: https://cdn.17app.co/f552d04d-45d6-4f49-b29d-66ac90949dfa.png
+        sourceID: https://event.17.live/11213-2101-tw-tulip/2
+        type: link # link, post, profile, clip, live
+        startTime: 2021-01-19T18:00:00+08:00
+        endTime:  2021-01-29T00:00:00+08:00
+      - id: linkBanner #大車隊
+        imageURL: hhttps://cdn.17app.co/9c7f0e55-b68a-4930-b485-6d978fb40257.png
         order: 5
-        sourceID: b2f9da8f-b2b6-4f06-bd28-6fbda98e4f43 # qacontractor1
-        type: profile # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2021-11-01T00:00:00+08:00
-      - id: qacontractor3_profile
-        imageURL: https://cdn.17app.co/f552d04d-45d6-4f49-b29d-66ac90949dfa.png
+        sourceID: https://event.17.live/11259-2101-tw-car/2
+        type: link # link, post, profile, clip, live
+        startTime: 2021-01-23T18:00:00+08:00
+        endTime:  2021-02-06T00:00:00+08:00
+      - id: linkBanner #信義
+        imageURL: https://cdn.17app.co/ab210d81-12be-48f7-bedb-06f47be3bda3.png
         order: 6
-        sourceID: b2f9da8f-b2b6-4f06-bd28-6fbda98e4f43 # qacontractor1
-        type: profile # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2021-11-01T00:00:00+08:00
-      - id: qacontractor4_profile
-        imageURL: https://cdn.17app.co/f552d04d-45d6-4f49-b29d-66ac90949dfa.png
-        order: 7
-        sourceID: b2f9da8f-b2b6-4f06-bd28-6fbda98e4f43 # qacontractor1
-        type: profile # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2021-11-01T00:00:00+08:00
-      - id: qacontractor5_profile
-        imageURL: https://cdn.17app.co/f552d04d-45d6-4f49-b29d-66ac90949dfa.png
-        order: 8
-        sourceID: b2f9da8f-b2b6-4f06-bd28-6fbda98e4f43 # qacontractor1
-        type: profile # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2021-11-01T00:00:00+08:00
-      - id: qacontractor6_profile
-        imageURL: https://cdn.17app.co/f552d04d-45d6-4f49-b29d-66ac90949dfa.png
-        order: 9
-        sourceID: b2f9da8f-b2b6-4f06-bd28-6fbda98e4f43 # qacontractor1
-        type: profile # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2021-11-01T00:00:00+08:00
-      - id: qacontractor7_profile
-        imageURL: https://cdn.17app.co/f552d04d-45d6-4f49-b29d-66ac90949dfa.png
-        order: 10
-        sourceID: b2f9da8f-b2b6-4f06-bd28-6fbda98e4f43 # qacontractor1
-        type: profile # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2021-11-01T00:00:00+08:00
-      - id: qacontractor8_profile
-        imageURL: https://cdn.17app.co/f552d04d-45d6-4f49-b29d-66ac90949dfa.png
-        order: 11
-        sourceID: b2f9da8f-b2b6-4f06-bd28-6fbda98e4f43 # qacontractor1
-        type: profile # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2021-11-01T00:00:00+08:00
-      - id: qacontractor9_profile
-        imageURL: https://cdn.17app.co/f552d04d-45d6-4f49-b29d-66ac90949dfa.png
-        order: 12
-        sourceID: b2f9da8f-b2b6-4f06-bd28-6fbda98e4f43 # qacontractor1
-        type: profile # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2021-11-01T00:00:00+08:00 
-      - id: qacontractor10_profile
-        imageURL: https://cdn.17app.co/f552d04d-45d6-4f49-b29d-66ac90949dfa.png
-        order: 13
-        sourceID: b2f9da8f-b2b6-4f06-bd28-6fbda98e4f43 # qacontractor1
-        type: profile # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2021-11-01T00:00:00+08:00
-      - id: qacontractor11_profile
-        imageURL: https://cdn.17app.co/f552d04d-45d6-4f49-b29d-66ac90949dfa.png
-        order: 14
-        sourceID: b2f9da8f-b2b6-4f06-bd28-6fbda98e4f43 # qacontractor1
-        type: profile # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2021-11-01T00:00:00+08:00
-      - id: qacontractor12_profile
-        imageURL: https://cdn.17app.co/f552d04d-45d6-4f49-b29d-66ac90949dfa.png
-        order: 15
-        sourceID: b2f9da8f-b2b6-4f06-bd28-6fbda98e4f43 # qacontractor1
-        type: profile # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2021-11-01T00:00:00+08:00
-      - id: qacontractor13_profile
-        imageURL: https://cdn.17app.co/f552d04d-45d6-4f49-b29d-66ac90949dfa.png
-        order: 16
-        sourceID: b2f9da8f-b2b6-4f06-bd28-6fbda98e4f43 # qacontractor1
-        type: profile # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2021-11-01T00:00:00+08:00
-      - id: qacontractor14_profile
-        imageURL: https://cdn.17app.co/f552d04d-45d6-4f49-b29d-66ac90949dfa.png
-        order: 17
-        sourceID: b2f9da8f-b2b6-4f06-bd28-6fbda98e4f43 # qacontractor1
-        type: profile # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2021-11-01T00:00:00+08:00
-      - id: qacontractor15_profile
-        imageURL: https://cdn.17app.co/f552d04d-45d6-4f49-b29d-66ac90949dfa.png
-        order: 18
-        sourceID: b2f9da8f-b2b6-4f06-bd28-6fbda98e4f43 # qacontractor1
-        type: profile # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2021-11-01T00:00:00+08:00
-      - id: qacontractor16_profile
-        imageURL: https://cdn.17app.co/f552d04d-45d6-4f49-b29d-66ac90949dfa.png
-        order: 19
-        sourceID: b2f9da8f-b2b6-4f06-bd28-6fbda98e4f43 # qacontractor1
-        type: profile # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2021-11-01T00:00:00+08:00 
-      - id: qacontractor17_profile
-        imageURL: https://cdn.17app.co/f552d04d-45d6-4f49-b29d-66ac90949dfa.png
-        order: 20
-        sourceID: b2f9da8f-b2b6-4f06-bd28-6fbda98e4f43 # qacontractor1
-        type: profile # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2021-11-01T00:00:00+08:00
-      - id: qacontractor18_profile
-        imageURL: https://cdn.17app.co/f552d04d-45d6-4f49-b29d-66ac90949dfa.png
-        order: 21
-        sourceID: b2f9da8f-b2b6-4f06-bd28-6fbda98e4f43 # qacontractor1
-        type: profile # link, post, profile, clip, live
-        startTime: 2019-10-01T00:00:00+08:00
-        endTime: 2021-11-01T00:00:00+08:00 
+        sourceID: https://event.17.live/11184-2101-tw-star/2
+        type: link # link, post, profile, clip, live
+        startTime: 2021-01-24T18:00:00+08:00
+        endTime:  2021-02-05T00:00:00+08:00
+  - id: event_level
+    name:
+      key: event_subtab_level #分級
+    banners:
+      - id: linkBanner #新手村2
+        imageURL: https://cdn.17app.co/71769e60-8380-4705-8608-374b1ee97fd5.png
+        order: 1
+        sourceID: https://event.17.media/11118-2101-tw-new/0
+        type: link # link, post, profile, clip, live
+        startTime: 2021-01-14T18:00:00+08:00
+        endTime:  2021-01-27T00:00:00+08:00
+      - id: linkBanner #放鬆
+        imageURL: https://cdn.17app.co/5214741c-ea32-4b05-87e0-f59c27bd2141.png
+        order: 2
+        sourceID: https://event.17.media/11126-2101-tw-spring/0/0
+        type: link # link, post, profile, clip, live
+        startTime: 2021-01-13T18:00:00+08:00
+        endTime:  2021-01-20T00:00:00+08:00
+      - id: linkBanner #滿滿
+        imageURL: https://cdn.17app.co/f546fc7d-5353-4e03-bd99-315710bdb5d3.png
+        order: 3
+        sourceID: https://event.17.live/11213-2101-tw-tulip/2
+        type: link # link, post, profile, clip, live
+        startTime: 2021-01-19T18:00:00+08:00
+        endTime:  2021-01-29T00:00:00+08:00
+      - id: linkBanner #年貨
+        imageURL: https://cdn.17app.co/784e5d99-f8ae-4709-a9f3-44fcefd2f9df.png
+        order: 4
+        sourceID: https://event.17.live/11172-2101-tw-yearshop/2
+        type: link # link, post, profile, clip, live
+        startTime: 2021-01-21T18:00:00+08:00
+        endTime:  2021-02-02T00:00:00+08:00
+      - id: linkBanner #選物
+        imageURL: https://cdn.17app.co/dfa55ba9-1922-4028-9be4-9f559319d553.png
+        order: 5
+        sourceID: https://event.17.media/11160-2101-tw-3c/2
+        type: link # link, post, profile, clip, live
+        startTime: 2021-01-20T18:00:00+08:00
+        endTime:  2021-01-27T00:00:00+08:00
+  - id: event_Multiple
+    name:
+      key: event_subtab_Multiple #多元
+    banners:
+      - id: linkBanner #街頭
+        imageURL: https://cdn.17app.co/5b9e46ad-92ae-46f1-bb5c-05788f739298.png
+        order: 4
+        sourceID: https://event.17.live/11135-2101-tw-17live/2
+        type: link # link, post, profile, clip, live
+        startTime: 2021-01-05T18:00:00+08:00
+        endTime: 2021-02-25T00:00:00+08:00
+
+
+                
