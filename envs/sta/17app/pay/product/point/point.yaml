@@ -49,6 +49,64 @@
 # //       gt: 50
 
 eventBasedIAP:  
+#所有人都符合 (Amy)
+  - startTime: "2023-03-10T18:00:00+08:00"
+    endTime: "2023-12-31T23:59:59+08:00"
+    showCountdownUnderSticker: true
+    showCountdownInPopUp: true
+    stickerURL: "https://cdn.17app.co/ad8aa236-0ece-46f6-beec-3a3fefab355f.png"
+    stickerURLInGiftbox: "https://assets-17app.akamaized.net/14fdef5a-f96a-40e8-b264-da420ea551fc.png"
+    eventInfo:
+      eventTitleI18nKey: ""
+      eventURL: ""
+      bannerImageURL: "https://cdn.17app.co/31aaccc2-a46e-4fed-ac4f-945ce9f7770d.png" 
+    layoutInfo:
+      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
+      messageColor: "#6F6777"
+      messageShadowColor: "#F5F5F5"
+      messageI18nKey: ""
+      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
+      descLeftBottomURL: "test.png"
+      descRightBottomURL: "test.png"
+      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
+      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
+      rewardIconURL:
+          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
+    colorInfo:
+      pointColor: "#28232D"
+      bonusPointColor: "#B36F6777"
+      priceColor: "#28232D"
+      rewardTextColor: "#F69355"
+    pointProducts:
+      - productID: "media17_points_25500"
+        bonusPoint: 0
+        shouldHighlight: false
+      - productID: "media17_points_10800"
+        bonusPoint: 0
+        shouldHighlight: false
+      - productID: "media17_points_6000"
+        bonusPoint: 0
+        shouldHighlight: false
+      - productID: "media17_points_2500"
+        bonusPoint: 9453
+        shouldHighlight: True
+      - productID: "media17_points_1210"
+        bonusPoint: 0
+        shouldHighlight: false
+      - productID: "media17_points_230"
+        bonusPoint: 0
+        shouldHighlight: false
+    firstPurchaseType: 2
+    taInfo:
+      registerRange:
+        dayStart: 0 # 0 means no limit
+        dayEnd: 0 # 0 means no limit
+    displayRewardInfo: false
+    userGroup:
+      userIDDigits:                     # 沒數值表示所有人都符合 
+      iapInfo:
+        latestHalfMonthAmount:          # 沒數值表示所有人都符合    
+        
 #0 < n <= 10 (Amy)
   - startTime: "2022-12-16T18:00:00+08:00"
     endTime: "2022-12-31T23:59:59+08:00"
@@ -168,63 +226,7 @@ eventBasedIAP:
         latestHalfMonthAmount:
           eq: 0
  
-#所有人都符合 (Amy)
-  - startTime: "2023-03-10T18:00:00+08:00"
-    endTime: "2023-12-31T23:59:59+08:00"
-    showCountdownUnderSticker: true
-    showCountdownInPopUp: true
-    stickerURL: "https://cdn.17app.co/ad8aa236-0ece-46f6-beec-3a3fefab355f.png"
-    stickerURLInGiftbox: "https://assets-17app.akamaized.net/14fdef5a-f96a-40e8-b264-da420ea551fc.png"
-    eventInfo:
-      eventTitleI18nKey: ""
-      eventURL: ""
-      bannerImageURL: "https://cdn.17app.co/31aaccc2-a46e-4fed-ac4f-945ce9f7770d.png" 
-    layoutInfo:
-      titlePicURL: "https://assets-17app.akamaized.net/ab606b67-67e2-4c6a-9ec6-593c2f499508.png"
-      messageColor: "#6F6777"
-      messageShadowColor: "#F5F5F5"
-      messageI18nKey: ""
-      descBgURL: "https://assets-17app.akamaized.net/cb259911-8e1a-4e18-93c2-c699df64080a.png"
-      descLeftBottomURL: "test.png"
-      descRightBottomURL: "test.png"
-      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
-      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
-      rewardIconURL:
-          premiumBaby: https://cdn.17app.co/05134ee3-2d68-4308-b901-61a9fbf02948.png
-    colorInfo:
-      pointColor: "#28232D"
-      bonusPointColor: "#B36F6777"
-      priceColor: "#28232D"
-      rewardTextColor: "#F69355"
-    pointProducts:
-      - productID: "media17_points_25500"
-        bonusPoint: 0
-        shouldHighlight: false
-      - productID: "media17_points_10800"
-        bonusPoint: 0
-        shouldHighlight: false
-      - productID: "media17_points_6000"
-        bonusPoint: 0
-        shouldHighlight: false
-      - productID: "media17_points_2500"
-        bonusPoint: 9453
-        shouldHighlight: True
-      - productID: "media17_points_1210"
-        bonusPoint: 0
-        shouldHighlight: false
-      - productID: "media17_points_230"
-        bonusPoint: 0
-        shouldHighlight: false
-    firstPurchaseType: 2
-    taInfo:
-      registerRange:
-        dayStart: 0 # 0 means no limit
-        dayEnd: 0 # 0 means no limit
-    displayRewardInfo: false
-    userGroup:
-      userIDDigits:                     # 沒數值表示所有人都符合 
-      iapInfo:
-        latestHalfMonthAmount:          # 沒數值表示所有人都符合    
+
         
 #12/07 首儲 已被12/28 首儲取代
 #12/28 首儲 已被2/25 ~ 2/28 首儲取代
