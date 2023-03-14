@@ -23,13 +23,13 @@ fi
 
 mention_author_in_slack() {
     HEADER="Authorization: Bearer ${SLACKTOKEN}"
-    USERID=$(curl -s -X GET --header "${HEADER}" https://slack.com/api/users.lookupByEmail?email="${AUTHOR_EMAIL}" | jq -r .user.id)
+    USERID=$(curl --insecure -s -X GET --header "${HEADER}" https://slack.com/api/users.lookupByEmail?email="${AUTHOR_EMAIL}" | jq -r .user.id)
 
     if [[ -n ${USERID} && ${USERID} != "null" ]]; then
-        curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":warning: ${ENV} Config Check Failed :red_thinking:\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Author*:<@${USERID}>  *Commit*:<https://github.com/17media/configs/commit/${GIT_COMMIT}|${GIT_COMMIT}>\n*Build*:<${BUILD_URL}|URL>  *Message*:${COMMIT_MESSAGE}\"}]},{\"type\":\"divider\"}]}" "${SLACK}"
+        curl --insecure -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":warning: ${ENV} Config Check Failed :red_thinking:\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Author*:<@${USERID}>  *Commit*:<https://github.com/17media/configs/commit/${GIT_COMMIT}|${GIT_COMMIT}>\n*Build*:<${BUILD_URL}|URL>  *Message*:${COMMIT_MESSAGE}\"}]},{\"type\":\"divider\"}]}" "${SLACK}"
     else
         SRE_MENTION='{"type":"section","text":{"type":"mrkdwn","text":"<!subteam^S4Y7W93V1>"}}'
-        curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":warning: ${ENV} Config Check Failed :red_thinking:\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Author*:${AUTHOR_EMAIL}  *Commit*:<https://github.com/17media/configs/commit/${GIT_COMMIT}|${GIT_COMMIT}>\n*Build*:<${BUILD_URL}|URL>  *Message*:${COMMIT_MESSAGE}\"}]},${SRE_MENTION},{\"type\": \"divider\"}]}" "${SLACK}"
+        curl --insecure -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":warning: ${ENV} Config Check Failed :red_thinking:\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Author*:${AUTHOR_EMAIL}  *Commit*:<https://github.com/17media/configs/commit/${GIT_COMMIT}|${GIT_COMMIT}>\n*Build*:<${BUILD_URL}|URL>  *Message*:${COMMIT_MESSAGE}\"}]},${SRE_MENTION},{\"type\": \"divider\"}]}" "${SLACK}"
     fi
 }
 
@@ -49,7 +49,7 @@ main() {
             continue
         fi
 
-        curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":crossed_fingers: ${ENV} Config Check Started\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Author*:${AUTHOR_EMAIL}  *Commit*:<https://github.com/17media/configs/commit/${GIT_COMMIT}|${GIT_COMMIT}> *Build*:<${BUILD_URL}|URL> \"}]},{\"type\":\"divider\"}]}" "${SLACK}"
+        curl --insecure -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":crossed_fingers: ${ENV} Config Check Started\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Author*:${AUTHOR_EMAIL}  *Commit*:<https://github.com/17media/configs/commit/${GIT_COMMIT}|${GIT_COMMIT}> *Build*:<${BUILD_URL}|URL> \"}]},{\"type\":\"divider\"}]}" "${SLACK}"
         
         for SCRIPT in ${CHECKER}; do
             docker run --rm -v "$(pwd)":/repo 17media/config-check:latest /bin/sh -c "cd /repo && python3 /repo/${SCRIPT}"
@@ -78,7 +78,7 @@ main() {
             exit 1
         fi
 
-        curl -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":white_check_mark: ${ENV} Config Check Passed\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Author*:${AUTHOR_EMAIL}  *Commit*:<https://github.com/17media/configs/commit/${GIT_COMMIT}|${GIT_COMMIT}> *Build*:<${BUILD_URL}|URL>\"}]},{\"type\":\"divider\"}]}" "${SLACK}"
+        curl --insecure -X POST -H 'Content-type: application/json' --data "{\"blocks\":[{\"type\":\"section\",\"text\":{\"type\":\"plain_text\",\"text\":\":white_check_mark: ${ENV} Config Check Passed\",\"emoji\":true}},{\"type\":\"context\",\"elements\":[{\"type\":\"mrkdwn\",\"text\":\"*Author*:${AUTHOR_EMAIL}  *Commit*:<https://github.com/17media/configs/commit/${GIT_COMMIT}|${GIT_COMMIT}> *Build*:<${BUILD_URL}|URL>\"}]},{\"type\":\"divider\"}]}" "${SLACK}"
     done
 
     echo "--- finish checking ---"
