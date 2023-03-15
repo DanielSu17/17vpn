@@ -9,70 +9,70 @@ alertChannels: ["testformonsteralert"]
 animations: ["yeti"]
 
 monsters:
-- id: basketball # 高雄鋼鐵人
-  type: 0  # 0: 一般怪獸, 1: 招喚怪獸
-  hit_consume: 10
-  duration: 60s
-  stream_alive_threshold: 1m00s
-  animation: "basketball"
-  available_dates: # 一般怪獸才會看時間
-    - start_date: "2023-02-10T12:00:00+08:00"
-      end_date: "2023-03-31T23:59:59+08:00"
-  appear_durations: # 一般怪獸才會看時間
-    - start_time: 00h00m00s
-      end_time: 23h59m59s
+# - id: basketball # 高雄鋼鐵人
+#   type: 0  # 0: 一般怪獸, 1: 招喚怪獸
+#   hit_consume: 10
+#   duration: 60s
+#   stream_alive_threshold: 1m00s
+#   animation: "basketball"
+#   available_dates: # 一般怪獸才會看時間
+#     - start_date: "2023-02-10T12:00:00+08:00"
+#       end_date: "2023-03-31T23:59:59+08:00"
+#   appear_durations: # 一般怪獸才會看時間
+#     - start_time: 00h00m00s
+#       end_time: 23h59m59s
  
  
-  share_ratio: 50 # percentage
-  profit_ratio: 35 # percentage
-  bonus: 198
-  weight: 1
-  infoPageiconURL: https://cdn.17app.co/fe40bb17-6422-4fbe-8ee8-ce1e3b0f3307.png
-  winnerPageiconURL: https://cdn.17app.co/fe40bb17-6422-4fbe-8ee8-ce1e3b0f3307.png
-  hintToken:
-    {
-      key: monster_battle_hint_steelman,
-      fontAttribute: { textColor: "#FFFFFF" },
-    }
-  rule1Token:
-    {
-      key: monster_battle_rule1_steelman,
-      fontAttribute: { textColor: "#FFFFFF" },
-    }
-  rule2Token:
-    {
-      key: monster_battle_rule2_steelman,
-      fontAttribute: { textColor: "#FFFFFF" },
-    }
-  rule3Token:
-    {
-      key: monster_battle_rule3_steelman,
-      fontAttribute: { textColor: "#FFFFFF" },
-    }
-  rule4Token:
-    {
-      key: monster_battle_rule4_steelman,
-      fontAttribute: { textColor: "#FFFFFF" },
-    }
-  countdownToken:
-    {
-      key: monster_battle_countdown_steelman,
-      fontAttribute: { textColor: "#FFFFFF" },
-    }
-  failureToken:
-    {
-      key: monster_battle_failure_steelman,
-      fontAttribute: { textColor: "#FFFFFF" },
-    }
-  successToken:
-    {
-      key: monster_battle_success_steelman_coin,
-      fontAttribute: { textColor: "#FFFFFF" },
-    }
-  marqueeToken: { key: monster_battle_marquee_steelman }
-  summonGifts: # 招喚怪獸才需要填，請務必填入特定禮物，regression team 會需要用到，感謝
-    - giftID: max_love_qa
-      probability: 10000
+#   share_ratio: 50 # percentage
+#   profit_ratio: 35 # percentage
+#   bonus: 198
+#   weight: 1
+#   infoPageiconURL: https://cdn.17app.co/fe40bb17-6422-4fbe-8ee8-ce1e3b0f3307.png
+#   winnerPageiconURL: https://cdn.17app.co/fe40bb17-6422-4fbe-8ee8-ce1e3b0f3307.png
+#   hintToken:
+#     {
+#       key: monster_battle_hint_steelman,
+#       fontAttribute: { textColor: "#FFFFFF" },
+#     }
+#   rule1Token:
+#     {
+#       key: monster_battle_rule1_steelman,
+#       fontAttribute: { textColor: "#FFFFFF" },
+#     }
+#   rule2Token:
+#     {
+#       key: monster_battle_rule2_steelman,
+#       fontAttribute: { textColor: "#FFFFFF" },
+#     }
+#   rule3Token:
+#     {
+#       key: monster_battle_rule3_steelman,
+#       fontAttribute: { textColor: "#FFFFFF" },
+#     }
+#   rule4Token:
+#     {
+#       key: monster_battle_rule4_steelman,
+#       fontAttribute: { textColor: "#FFFFFF" },
+#     }
+#   countdownToken:
+#     {
+#       key: monster_battle_countdown_steelman,
+#       fontAttribute: { textColor: "#FFFFFF" },
+#     }
+#   failureToken:
+#     {
+#       key: monster_battle_failure_steelman,
+#       fontAttribute: { textColor: "#FFFFFF" },
+#     }
+#   successToken:
+#     {
+#       key: monster_battle_success_steelman_coin,
+#       fontAttribute: { textColor: "#FFFFFF" },
+#     }
+#   marqueeToken: { key: monster_battle_marquee_steelman }
+#   summonGifts: # 招喚怪獸才需要填，請務必填入特定禮物，regression team 會需要用到，感謝
+#     - giftID: max_love_qa
+#       probability: 10000
 
 - id: lovebirds # 比翼鳥情人節
   type: 0  # 0: 一般怪獸, 1: 招喚怪獸
