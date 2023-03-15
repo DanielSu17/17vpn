@@ -5,6 +5,11 @@
 #     i18n_key: pet_my_mission_1
 #     # 1: 時間以秒為單位, 2: 數量為單位
 #     unit_type: 1
+#     # 僅有數量型任務 (unit_type: 2) 才需要 unit_i18n_key，其餘為空字串
+#     # 目前只有兩種數量型任務分別為 新增粉絲 以及 收禮
+#     # pet_my_mission_fans_limit: 新增粉絲 (位)
+#     # pet_my_mission_gift_limit: 收禮 (個)
+#     unit_i18n_key: ""
 #     # feed id: 參閱 wave/pet/paid_items.yaml
 #     reward_feed_id: water
 #     # 單日獎勵領取上限，若無單日領取上限則填 0
@@ -19,7 +24,7 @@
 
 missions:
   # 當日直播 15 分鐘
-  - id: stream-15-mins
+  - id: pet_mission_start_live_min
     type: 1
     i18n_key: pet_my_mission_1
     unit_type: 1
@@ -27,7 +32,7 @@ missions:
     daily_reward_limit: 0
     threshold: 900
   # 當日直播滿 1 小時
-  - id: stream-1-hour
+  - id: pet_mission_start_live_hour
     type: 1
     i18n_key: pet_my_mission_2
     unit_type: 1
@@ -35,25 +40,27 @@ missions:
     daily_reward_limit: 0
     threshold: 3600
   # 收禮 (Wave coins > 30 / 個） 當日上限 30 次
-  - id: receive-gift-price-over-30
+  - id: pet_mission_reveive_coins
     type: 2
     i18n_key: pet_my_mission_3
     unit_type: 2
+    unit_i18n_key: pet_my_mission_gift_limit
     reward_feed_id: can
     daily_reward_limit: 30
     threshold: 1
     extra_info:
       gift_price_threshold: 30
   # 新增粉絲數一位 當日上限 30 位
-  - id: add-30-fans
+  - id: pet_mission_new_fans
     type: 3
     i18n_key: pet_my_mission_4
     unit_type: 2
+    unit_i18n_key: pet_my_mission_fans_limit
     reward_feed_id: can
     daily_reward_limit: 30
     threshold: 1
   # 觀看直播滿 1 小時
-  - id: view-1-hour
+  - id: pet_mission_watch_live_min
     type: 4
     i18n_key: pet_my_mission_5
     unit_type: 1
@@ -61,7 +68,7 @@ missions:
     daily_reward_limit: 0
     threshold: 3600
   # 觀看直播滿 2 小時
-  - id: view-2-hours
+  - id: pet_mission_watch_live_hour
     type: 4
     i18n_key: pet_my_mission_6
     unit_type: 1
