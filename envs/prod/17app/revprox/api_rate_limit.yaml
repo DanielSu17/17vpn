@@ -88,7 +88,7 @@ rate_limits:
 - {url: "/api/v1/gift/giftbox",                                 method: "POST",    flow_per_second: 20,          reservoir_size: 20,    scope: by_access_token}
 - {url: "/api/v1/lives/[A-Za-z0-9-]+/gift",                     method: "POST",    flow_per_second: 10,          reservoir_size: 10,    scope: by_access_token}
 - {url: "/api/v1/baggage/item/[A-Za-z0-9-]+",                   method: "POST",    flow_per_second: 150,          reservoir_size: 150,    scope: by_global}
-- {url: "/api/v1/lives/[A-Za-z0-9-]+/voteGift",                 method: "POST",    flow_per_second: 3,          reservoir_size: 3,    scope: by_jwt}
+- {url: "/api/v1/lives/[A-Za-z0-9-]+/voteGift",                 method: "POST",    flow_per_second: 2,          reservoir_size: 2,    scope: by_jwt}
 
 #- {url: "/api/v1/users/[A-Za-z0-9-]+/activities/income/overview",     method: "GET",    flow_per_second: 5,     reservoir_size: 5,    scope: by_global}
 
@@ -122,7 +122,8 @@ rate_limits:
 # cdn cache new apis, see TECH-1677
 - {url: "^/api/v1/army/overview/[A-Za-z0-9-]+$",           method: "GET",  flow_per_second: 480, reservoir_size: 480, scope: by_global}
 - {url: "/api/v1/army/relation/[A-Za-z0-9-]+",           method: "GET",  flow_per_second: 580, reservoir_size: 580, scope: by_global}
-- {url: "/api/v1/event/customEventV2/gifts",             method: "GET",  flow_per_second: 130, reservoir_size: 130, scope: by_global}
+- {url: "/api/v1/event/customEventV2/
+s",             method: "GET",  flow_per_second: 130, reservoir_size: 130, scope: by_global}
 - {url: "/api/v1/event/personalBanners",                 method: "GET",  flow_per_second: 410, reservoir_size: 410, scope: by_global}
 - {url: "/api/v1/users/[A-Za-z0-9-]+/getFollowStatusV2", method: "POST", flow_per_second: 200, reservoir_size: 200, scope: by_global}
 
