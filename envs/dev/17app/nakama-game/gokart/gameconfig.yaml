@@ -1,49 +1,49 @@
 goKart:
   version: 1.0.0
   obstacles:
-    - id: '0'
+    - id: "0"
       condition: EMPTY
       name: Empty
       description: This will be the primary empty slot for every incident.
       hitHpEffect: 0
       hitVibrationType: NONE
       size: 1
-    - id: '1'
+    - id: "1"
       condition: NORMAL
       name: TrafficCone_N_1_Yellow
       description: The standard traffic cone is in yellow.
       hitHpEffect: -2
       hitVibrationType: NORMAL
       size: 1
-    - id: '2'
+    - id: "2"
       condition: DESTROYED
       name: TrafficCone_D_1_Yellow
       description: The destroyed traffic cone is in yellow.
       hitHpEffect: 0
       hitVibrationType: NONE
       size: 1
-    - id: '3'
+    - id: "3"
       condition: DESTROYED
       name: TrafficCone_D_2_Yellow
       description: The destroyed yellow traffic cone with a bar in the middle.
       hitHpEffect: 0
       hitVibrationType: NONE
       size: 2
-    - id: '4'
+    - id: "4"
       condition: NORMAL
       name: TrafficCone_N_2_Yellow
       description: The Normal yellow traffic cone with a bar in the middle.
       hitHpEffect: -2
       hitVibrationType: NORMAL
       size: 2
-    - id: '5'
+    - id: "5"
       condition: NORMAL
       name: ConcretePier_N_1_gray
       description: Concrete Pier
       hitHpEffect: -3
       hitVibrationType: NORMAL
       size: 1
-    - id: '6'
+    - id: "6"
       condition: NORMAL
       name: Barrier_N_1_Yellow
       description: |
@@ -51,7 +51,7 @@ goKart:
       hitHpEffect: -2
       hitVibrationType: NORMAL
       size: 1
-    - id: '7'
+    - id: "7"
       condition: NORMAL
       name: Barrier_N_1_Red
       description: |
@@ -60,232 +60,232 @@ goKart:
       hitVibrationType: NORMAL
       size: 1
   incidents:
-    - id: '0'
+    - id: "0"
       name: Tutorial_Total Empty
       description: Nothing but nothing only for tutorial
       laneCount: 3
       generatorType: FIXED
       score: 0
       obstacles:
-        - entityId: '0'
+        - entityId: "0"
           minMaxRule:
             min: 0
             max: 0
-        - entityId: '0'
+        - entityId: "0"
           minMaxRule:
             min: 0
             max: 0
-        - entityId: '0'
+        - entityId: "0"
           minMaxRule:
             min: 0
             max: 0
-    - id: '1'
+    - id: "1"
       name: Tutorial_Fixed_Empty_Left
       description: Right+Mid_TrafficCone for Tutorial
       laneCount: 3
       generatorType: FIXED
       score: 0
       obstacles:
-        - entityId: '0'
+        - entityId: "0"
           minMaxRule:
             min: 0
             max: 0
-        - entityId: '1'
+        - entityId: "1"
           minMaxRule:
             min: 0
             max: 0
-        - entityId: '1'
+        - entityId: "1"
           minMaxRule:
             min: 0
             max: 0
-    - id: '2'
+    - id: "2"
       name: Tutorial_Fixed_Empty_Right
       description: Left+Mid_TrafficCone for Tutorial
       laneCount: 3
       generatorType: FIXED
       score: 0
       obstacles:
-        - entityId: '1'
+        - entityId: "1"
           minMaxRule:
             min: 0
             max: 0
-        - entityId: '1'
+        - entityId: "1"
           minMaxRule:
             min: 0
             max: 0
-        - entityId: '0'
+        - entityId: "0"
           minMaxRule:
             min: 0
             max: 0
-    - id: '3'
+    - id: "3"
       name: Tutorial_Fixed_Shield_Mixed
       description: Mixed obstacle for shield tutorial
       laneCount: 3
       generatorType: FIXED
       score: 0
       obstacles:
-        - entityId: '1'
+        - entityId: "1"
           minMaxRule:
             min: 0
             max: 0
-        - entityId: '5'
+        - entityId: "5"
           minMaxRule:
             min: 0
             max: 0
-        - entityId: '6'
+        - entityId: "6"
           minMaxRule:
             min: 0
             max: 0
-    - id: '4'
+    - id: "4"
       name: Tutorial_Fixed_Hammer_Mixed
       description: Mixed obstacles for hammer tutorial
       laneCount: 3
       generatorType: FIXED
       score: 0
       obstacles:
-        - entityId: '7'
+        - entityId: "7"
           minMaxRule:
             min: 0
             max: 0
-        - entityId: '7'
+        - entityId: "7"
           minMaxRule:
             min: 0
             max: 0
-        - entityId: '7'
+        - entityId: "7"
           minMaxRule:
             min: 0
             max: 0
-    - id: '5'
+    - id: "5"
       name: (R)2Em+1TC
       description: Randomly 2 Empty + 1 Yellow Traffic Cone
       laneCount: 3
       generatorType: RANDOM
       score: 10
       obstacles:
-        - entityId: '0'
+        - entityId: "0"
           minMaxRule:
             min: 2
             max: 2
-        - entityId: '1'
+        - entityId: "1"
           minMaxRule:
             min: 1
             max: 1
-    - id: '6'
+    - id: "6"
       name: (F)1Em_Mid+2Barrier
       description: Fixed middle empty with 2 barrier in yellow
       laneCount: 3
       generatorType: FIXED
       score: 10
       obstacles:
-        - entityId: '6'
+        - entityId: "6"
           minMaxRule:
             min: 0
             max: 0
-        - entityId: '0'
+        - entityId: "0"
           minMaxRule:
             min: 0
             max: 0
-        - entityId: '6'
+        - entityId: "6"
           minMaxRule:
             min: 0
             max: 0
-    - id: '7'
+    - id: "7"
       name: (F)1Em_Right+2Barrier
       description: Fixed right empty with 2 barriers in yellow
       laneCount: 3
       generatorType: FIXED
       score: 10
       obstacles:
-        - entityId: '6'
+        - entityId: "6"
           minMaxRule:
             min: 0
             max: 0
-        - entityId: '6'
+        - entityId: "6"
           minMaxRule:
             min: 0
             max: 0
-        - entityId: '0'
+        - entityId: "0"
           minMaxRule:
             min: 0
             max: 0
-    - id: '8'
+    - id: "8"
       name: (F)1Em_Left+2Barrier
       description: Fixed left empty with 2 barriers in yellow
       laneCount: 3
       generatorType: FIXED
       score: 10
       obstacles:
-        - entityId: '0'
+        - entityId: "0"
           minMaxRule:
             min: 0
             max: 0
-        - entityId: '6'
+        - entityId: "6"
           minMaxRule:
             min: 0
             max: 0
-        - entityId: '6'
+        - entityId: "6"
           minMaxRule:
             min: 0
             max: 0
-    - id: '9'
+    - id: "9"
       name: (R)1Em+2RedBarrier
       description: Random left empty with 2 barriers in red.
       laneCount: 3
       generatorType: RANDOM
       score: 10
       obstacles:
-        - entityId: '7'
+        - entityId: "7"
           minMaxRule:
             min: 2
             max: 2
-        - entityId: '0'
+        - entityId: "0"
           minMaxRule:
             min: 1
             max: 1
-    - id: '10'
+    - id: "10"
       name: (R)1Em+2CP
       description: Random empty with 2 concrete piers
       laneCount: 3
       generatorType: RANDOM
       score: 10
       obstacles:
-        - entityId: '5'
+        - entityId: "5"
           minMaxRule:
             min: 2
             max: 2
-        - entityId: '0'
+        - entityId: "0"
           minMaxRule:
             min: 1
             max: 1
-    - id: '11'
+    - id: "11"
       name: (R) All with 1 Empty
       description: Random 1 empty space with all obstacles.
       laneCount: 3
       generatorType: RANDOM
       score: 10
       obstacles:
-        - entityId: '0'
+        - entityId: "0"
           minMaxRule:
             min: 1
             max: 1
-        - entityId: '1'
+        - entityId: "1"
           minMaxRule:
             min: 1
             max: 1
-        - entityId: '5'
+        - entityId: "5"
           minMaxRule:
             min: 1
             max: 1
-        - entityId: '6'
+        - entityId: "6"
           minMaxRule:
             min: 1
             max: 1
-        - entityId: '7'
+        - entityId: "7"
           minMaxRule:
             min: 1
             max: 1
   sections:
-    - id: '0'
+    - id: "0"
       name: Tutorial
       type: TUTORIAL
       scoreMultiplier: 0
@@ -295,14 +295,14 @@ goKart:
       speedInCubesPerSecond: 20
       durationInSeconds: 15
       incidents:
-        - entityId: '0'
-        - entityId: '1'
-        - entityId: '2'
-        - entityId: '3'
-        - entityId: '4'
-        - entityId: '0'
+        - entityId: "0"
+        - entityId: "1"
+        - entityId: "2"
+        - entityId: "3"
+        - entityId: "4"
+        - entityId: "0"
       description: Tutorial testing.
-    - id: '1'
+    - id: "1"
       name: Flat
       type: NORMAL
       scoreMultiplier: 1
@@ -312,18 +312,18 @@ goKart:
       speedInCubesPerSecond: 25
       durationInSeconds: 10
       incidents:
-        - entityId: '5'
-        - entityId: '5'
-        - entityId: '5'
-        - entityId: '5'
-        - entityId: '5'
-        - entityId: '5'
-        - entityId: '5'
-        - entityId: '5'
-        - entityId: '5'
-        - entityId: '5'
+        - entityId: "5"
+        - entityId: "5"
+        - entityId: "5"
+        - entityId: "5"
+        - entityId: "5"
+        - entityId: "5"
+        - entityId: "5"
+        - entityId: "5"
+        - entityId: "5"
+        - entityId: "5"
       description: Easy Flat section.
-    - id: '2'
+    - id: "2"
       name: Alley
       type: NORMAL
       scoreMultiplier: 1.1
@@ -333,18 +333,18 @@ goKart:
       speedInCubesPerSecond: 30
       durationInSeconds: 10
       incidents:
-        - entityId: '8'
-        - entityId: '6'
-        - entityId: '7'
-        - entityId: '6'
-        - entityId: '8'
-        - entityId: '6'
-        - entityId: '7'
-        - entityId: '6'
-        - entityId: '7'
-        - entityId: '6'
+        - entityId: "8"
+        - entityId: "6"
+        - entityId: "7"
+        - entityId: "6"
+        - entityId: "8"
+        - entityId: "6"
+        - entityId: "7"
+        - entityId: "6"
+        - entityId: "7"
+        - entityId: "6"
       description: One unit at a time.
-    - id: '3'
+    - id: "3"
       name: Random Hard
       type: NORMAL
       scoreMultiplier: 1.5
@@ -354,20 +354,20 @@ goKart:
       speedInCubesPerSecond: 35
       durationInSeconds: 10
       incidents:
-        - entityId: '9'
-        - entityId: '9'
-        - entityId: '9'
-        - entityId: '9'
-        - entityId: '9'
-        - entityId: '9'
-        - entityId: '10'
-        - entityId: '10'
-        - entityId: '10'
-        - entityId: '10'
-        - entityId: '10'
-        - entityId: '10'
+        - entityId: "9"
+        - entityId: "9"
+        - entityId: "9"
+        - entityId: "9"
+        - entityId: "9"
+        - entityId: "9"
+        - entityId: "10"
+        - entityId: "10"
+        - entityId: "10"
+        - entityId: "10"
+        - entityId: "10"
+        - entityId: "10"
       description: 12 random hard obstacles.
-    - id: '4'
+    - id: "4"
       name: Endless
       type: INFINITE
       scoreMultiplier: 2
@@ -378,19 +378,19 @@ goKart:
       durationInSeconds: 10
       accelerationRate: 0.05
       incidents:
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
+        - entityId: "11"
+        - entityId: "11"
+        - entityId: "11"
+        - entityId: "11"
+        - entityId: "11"
+        - entityId: "11"
+        - entityId: "11"
+        - entityId: "11"
+        - entityId: "11"
+        - entityId: "11"
       description: Endless section with all obstacles.
   games:
-    - id: '0'
+    - id: "0"
       name: Test_tutorial_game_debug
       description: Testing with tutorial.
       debug: false
@@ -402,12 +402,12 @@ goKart:
       shieldStart: 0
       shieldMax: 99
       sections:
-        - entityId: '0'
-        - entityId: '1'
-        - entityId: '2'
-        - entityId: '3'
-        - entityId: '4'
-    - id: '1'
+        - entityId: "0"
+        - entityId: "1"
+        - entityId: "2"
+        - entityId: "3"
+        - entityId: "4"
+    - id: "1"
       name: Test_Normal_game_debug
       description: Testing normally.
       debug: true
@@ -419,11 +419,11 @@ goKart:
       shieldStart: 0
       shieldMax: 99
       sections:
-        - entityId: '1'
-        - entityId: '2'
-        - entityId: '3'
-        - entityId: '4'
-    - id: '2'
+        - entityId: "1"
+        - entityId: "2"
+        - entityId: "3"
+        - entityId: "4"
+    - id: "2"
       name: Normal_game_prod
       description: Testing normally without debug switch on.
       debug: false
@@ -435,7 +435,7 @@ goKart:
       shieldStart: 1
       shieldMax: 99
       sections:
-        - entityId: '2'
-        - entityId: '1'
-        - entityId: '3'
-        - entityId: '4'
+        - entityId: "2"
+        - entityId: "1"
+        - entityId: "3"
+        - entityId: "4"
