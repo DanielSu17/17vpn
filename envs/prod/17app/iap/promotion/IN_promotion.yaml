@@ -1,0 +1,164 @@
+# | promotionType | Value |
+# | --- | --- |
+# | promotionTypePointEvent | 1 |
+# | promotionTypePackage | 2 |
+
+dailyViewLiveXSecondsTotalForNewbies: 900 #14天新手用戶，跨直播間 累計觀看幾秒會跳彈窗
+dailyViewLiveXSecondsInSingleRoom: 1800 #所有用戶，單一直播間 至少觀看幾秒會跳彈窗
+
+# 要推薦的活動和禮包，
+# priority順序(數字愈小優先級愈高)
+# maxPromoteCountPerMonth 每個用戶每個月看到的最高顯示次數，達到次數會跳下一組
+
+promotionIAPs:
+# 正式 － Holden 新手禮包 2.99 iOS by Willie
+  - id: "MINV-26Bj1OpIgu17H2dcnG7bWVA8B4R"
+    promotionType: 2
+    priority: 1
+    maxPromoteCountPerMonth: 4
+    topImageURL: "https://cdn.17app.co/2003c565-1503-40dc-a7fb-de57a907b274.png"
+    bannerURL: "https://cdn.17app.co/6e27c8e5-e6b9-409c-a611-025742bce1b9.png"
+    giftBoxBannerURL: "https://cdn.17app.co/6e27c8e5-e6b9-409c-a611-025742bce1b9.png"
+
+# 正式 － Holden 新手禮包 2.99 Android by Willie
+  - id: "MINV-26Bj1OyT0ugZFCKxUfMks5VPrjv"
+    promotionType: 2
+    priority: 2
+    maxPromoteCountPerMonth: 4
+    topImageURL: "https://cdn.17app.co/2003c565-1503-40dc-a7fb-de57a907b274.png"
+    bannerURL: "https://cdn.17app.co/6e27c8e5-e6b9-409c-a611-025742bce1b9.png"
+    giftBoxBannerURL: "https://cdn.17app.co/6e27c8e5-e6b9-409c-a611-025742bce1b9.png"
+
+# 正式 － 首儲新年禮包 4.99 iOS by Willie
+#  - id: "MINV-24HARTpsEUAktQU4lsQf73K8BxP"
+#    promotionType: 2
+#    priority: 2
+#    maxPromoteCountPerMonth: 2
+#    topImageURL: "https://cdn.17app.co/2003c565-1503-40dc-a7fb-de57a907b274.png"
+#    bannerURL: "https://cdn.17app.co/c53bb4cf-eeb2-4ab6-be2f-38467aa7b61e.png"
+
+# 正式 － 首儲新年禮包 4.99 Android by Willie
+#  - id: "MINV-24HARO404fSjHNV8bHP6dMkoNgh"
+#    promotionType: 2
+#    priority: 4
+#    maxPromoteCountPerMonth: 2
+#    topImageURL: "https://cdn.17app.co/2003c565-1503-40dc-a7fb-de57a907b274.png"
+#    bannerURL: "https://cdn.17app.co/c53bb4cf-eeb2-4ab6-be2f-38467aa7b61e.png" 
+
+  # 2021-2754寶寶幣四月櫻花一般禮包 IOS 2021-04-12 ~ 2021-04-25
+  - id: "MINV-1r3r9tAYKfkxN9KICIFWVHI4lMl"
+    promotionType: 2
+    priority: 23
+    maxPromoteCountPerMonth: 4
+    topImageURL: "https://cdn.17app.co/2003c565-1503-40dc-a7fb-de57a907b274.png"
+    bannerURL: "https://cdn.17app.co/a4bac0d8-4acd-4d3b-a42f-f27ce50e8596.png"
+
+  # 2021-2754寶寶幣四月櫻花一般禮包 android 2021-04-12 ~ 2021-04-25
+  - id: "MINV-1r3r9s3Lw9i0rLYAGwjCQqrZqN4"
+    promotionType: 2
+    priority: 24
+    maxPromoteCountPerMonth: 4
+    topImageURL: "https://cdn.17app.co/2003c565-1503-40dc-a7fb-de57a907b274.png"
+    bannerURL: "https://cdn.17app.co/89a3c00a-21a6-40cd-8577-eb68cddf489a.png"
+
+  # 2021-$330四月新手禮包 IOS 2021-04-01 ~ 2021-04-30
+  - id: "MINV-1qQSxg1MmSzDdLm4JuH7p6QwZtL"
+    promotionType: 2
+    priority: 21
+    maxPromoteCountPerMonth: 4
+    topImageURL: "https://cdn.17app.co/2003c565-1503-40dc-a7fb-de57a907b274.png"
+    bannerURL: "https://cdn.17app.co/89a3c00a-21a6-40cd-8577-eb68cddf489a.png"
+
+  # 2021-$330四月新手禮包 Android 2021-04-01 ~ 2021-04-30
+  - id: "MINV-1qQSxdq7CKXQrvY9bkSUDi3KzBc"
+    promotionType: 2
+    priority: 22
+    maxPromoteCountPerMonth: 4
+    topImageURL: "https://cdn.17app.co/2003c565-1503-40dc-a7fb-de57a907b274.png"
+    bannerURL: "https://cdn.17app.co/a4bac0d8-4acd-4d3b-a42f-f27ce50e8596.png"
+
+
+# 2021-3月新手禮包禮包 IOS 2021-03-01 ~ 2021-03-31
+  - id: “MINV-1njvCqEcADqBXbRom968aNttlS2”
+    promotionType: 2
+    priority: 7
+    maxPromoteCountPerMonth: 4
+    topImageURL: "https://cdn.17app.co/2003c565-1503-40dc-a7fb-de57a907b274.png"
+    bannerURL: "https://cdn.17app.co/666b6ea5-1045-4336-845d-c5870ffe04f5.png"
+
+ # 2021-3月新手禮包禮包 Android 2021-03-01 ~ 2021-03-31
+  - id: “MINV-1p0ll5ayzIpC1OeodbKbLRJgKVg”
+    promotionType: 2
+    priority: 8
+    maxPromoteCountPerMonth: 4
+    topImageURL: "https://cdn.17app.co/2003c565-1503-40dc-a7fb-de57a907b274.png"
+    bannerURL: "https://cdn.17app.co/666b6ea5-1045-4336-845d-c5870ffe04f5.png"
+
+  # 2021-2754幣過年禮包 IOS
+  - id: "MINV-1oEQXcNLq2jxo4z7K77o11Qbpi7"
+    promotionType: 2
+    priority: 9
+    maxPromoteCountPerMonth: 4
+    topImageURL: "https://cdn.17app.co/2003c565-1503-40dc-a7fb-de57a907b274.png"
+    bannerURL: "https://cdn.17app.co/5ccee4ee-72c6-4ec5-99b7-59d7d89d8df6.png"
+
+  # 2021-2754幣過年禮包 ANDROID
+  - id: "MINV-1oEQXgSfGCPbiXrQnlo3Dxot3xR"
+    promotionType: 2
+    priority: 10
+    maxPromoteCountPerMonth: 4
+    topImageURL: "https://cdn.17app.co/2003c565-1503-40dc-a7fb-de57a907b274.png"
+    bannerURL: "https://cdn.17app.co/5ccee4ee-72c6-4ec5-99b7-59d7d89d8df6.png"
+
+
+
+  # 新手首儲大禮包_iOS
+  - id: "MINV-1eht3KdRJCDfOVg2n5G0NYR00oL"
+    promotionType: 2
+    priority: 11
+    maxPromoteCountPerMonth: 2
+    topImageURL: https://cdn.17app.co/60aed428-becb-4aea-a343-9044f6b5b1ed.png
+    bannerURL: https://cdn.17app.co/8df3cfe8-a08c-4525-8f1a-4dc2357d1f0c.png
+
+  # 新手首儲大禮包_Android
+  - id: "MINV-1eht3MEcbH3lxMzxrozgPWn3Jk2"
+    promotionType: 2
+    priority: 12
+    maxPromoteCountPerMonth: 2
+    topImageURL: https://cdn.17app.co/60aed428-becb-4aea-a343-9044f6b5b1ed.png
+    bannerURL: https://cdn.17app.co/8df3cfe8-a08c-4525-8f1a-4dc2357d1f0c.png
+
+  # 2020聖誕禮包 IOS
+#  - id: "MINV-1lj73IvuuabnjZIRmij3GZOCqZK"
+#    promotionType: 2
+#    priority: 5
+#    maxPromoteCountPerMonth: 4
+#    topImageURL: https://cdn.17app.co/dcda42d8-a1f9-4518-b5e7-eb539943b0c5.png
+#    bannerURL: "https://cdn.17app.co/66e2a5b1-65a6-4f19-bad4-672269ac3104.png"
+
+  # 2020聖誕禮包 ANDROID
+#  - id: "MINV-1lj73GXGmx0Qz4rEoKuBYIeItxR"
+#    promotionType: 2
+#    priority: 6
+#    maxPromoteCountPerMonth: 4
+#    topImageURL: https://cdn.17app.co/dcda42d8-a1f9-4518-b5e7-eb539943b0c5.png
+#    bannerURL: "https://cdn.17app.co/66e2a5b1-65a6-4f19-bad4-672269ac3104.png"
+
+
+# UI refresh A組，直播間側邊的禮包貼紙，所有的禮包都看這個貼紙
+defaultPackageStickerURL: #https://cdn.17app.co/8f7539ba-7045-4744-85b1-323f95015a40.png
+# UI refresh B組，禮物盒內的禮包貼紙，所有的禮包都看這個貼紙
+defaultPackageStickerURLInGiftBox: ""
+
+# UI refresh A組，直播間側邊的閃購貼紙，如果活動沒有自己設貼紙，才會顯示這個貼紙
+defaultPointStickerURL: ""
+# UI refresh B組，禮物盒內的閃購貼紙，如果活動沒有自己設貼紙，才會顯示這個貼紙
+defaultPointStickerURLInGiftBox: ""
+
+# 熱門頁的貼紙
+promotionStickerURL: #https://cdn.17app.co/8f7539ba-7045-4744-85b1-323f95015a40.png
+
+# 貼紙的版控，舊版不會顯示禮包貼紙
+promotionSupportedVersion:
+  android: "2.40.0"
+  ios: "3.180.0"

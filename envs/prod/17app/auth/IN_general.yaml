@@ -1,0 +1,195 @@
+## deprecate below after 17media/api#15608 deploy to prod
+enableNewAppleIDLogic: true
+newAppleIDLogicVersion: "3.115.0"
+
+loginFromMongoSecondary: false
+registerFromMongoSecondary: false
+## deprecate above
+
+featuresRequirePhoneBinding:
+  - MISSION
+  - REDENVELOPE
+  
+openIDSuffix: # PROD-3213
+  - "000"   # Special suffix
+  - "0000"  # Special suffix
+  - "00000" # Special suffix
+  - "MMDD"  # Special suffix
+  - "baby"
+  - "baobao"
+  - "bb"
+registerAutoFollow: false
+recommendAutoFollow:
+  oldClientEnable: true # for device version less than or equal to the minimum required version
+  newClientEnable: false # for device version greater than the minimum required version
+  minIOSVersionRequired: "3.133.0"
+  minAndroidVersionRequired: "2.48.0"
+registerRecommend: true
+completeFollowUsers: 
+completeFollowUsersNum: 3
+completeFollowUsersMap: 
+  cb30ad1b-d21a-472c-48eb-10a3e946cc57:
+  eb392cc5-ebf8-4b73-723f-7e5d9d8e97ba:
+  ee779048-1d39-42a8-51d7-62ba10f3882a:
+  2f316e39-6adb-456c-b8ba-c8d5bd5c2497:
+  709c6f2f-237b-4a65-5651-7f692d230c49:
+  963c7b75-49f7-4d2e-7489-b1241c9a0074:
+  0020c9f7-9f35-4d7f-8480-619e23faafb6:
+  2b4effcf-c284-43bd-aabf-e1359d872a06:
+  60ef2a4c-745e-49b1-9c84-a5a84459e1da:
+  d4e80edb-36b9-4b01-58cc-e43d0a2495c5:
+  acb7ab15-3394-4924-87e0-54caf85a36f2:
+  4691043b-b002-4806-7548-c10f183d7dd7:
+  241e5391-ddf6-4d52-a5a1-a23ceea750fe:
+  6bab35bf-ec39-46e5-443e-25260e6ee9e4:
+  8b3da03c-c0f4-45ef-b785-3325df37c22f:
+  cbec0440-27f4-457c-6c89-31da4a30fa4e:
+  24dd023c-1d96-4b0a-5f6c-f06f0358efed:
+  a6270ba0-738c-4882-5ab1-afa7d3b0ac93:
+  01b537d1-a2dc-44d0-4176-dd8f0ef39041:
+  ed8ae745-9c63-4795-9ae9-94b61a8ec063:
+  bde71815-f71f-43a2-bfc7-c1e5b978f632:
+  13fbdf60-5426-4745-5347-881d23dfb04f:
+  44a5aa57-0da4-4124-8861-fb4f344ca1f4:
+  47653f60-cfa2-4630-8870-bc931fcfcc2b:
+  d54d2c46-349a-41c0-bbe4-aa0e06094208:
+  a835bf7a-be28-4f34-573b-85197359d54c:
+  73bb3548-e8c3-4523-a543-173270177f65:
+  3101f881-ce43-45b7-aab0-67c17907ad76:
+  83b8dd00-8c88-4fe6-a11f-ff972330a493:
+  3e9fce44-2c3b-4636-a05e-b50d410bb773:
+  239daf5d-9369-4131-61b5-e10f5a6cb35d:
+  3b0ced9f-079e-4172-85c7-88ccf1187957:
+  f9c3e81d-9c74-4af1-8802-b04990cb0dff:
+  cfa1e378-f199-43fa-7571-e8e354ea6b88:
+  ed7587ad-ca29-4b19-6631-f8c05c9862eb:
+  05ae6795-ff9b-4642-81cd-bed6284ca022:
+  764ab898-8f2d-47e3-7e46-a8388390a3f5:
+  51365e81-f1aa-414f-8624-73fd865177f0:
+  5a03154c-8e8d-4324-5600-e6afa1b5f6f9:
+  3a5b6911-2b48-44c6-99fd-beecf6074e9d:
+  72207ec9-bc28-4e74-71d0-9d97a3c1e2c3:
+  24cddf69-cd70-43af-8d07-aa8bb7c24caf:
+  1bfcd74a-a173-4ebc-70f7-167bfbb19960:
+  cccaf476-070c-4b90-7a92-34c03946da1d:
+  5f71ba09-be35-463a-a22a-c13003d5f6c8:
+  45d308bb-55df-4020-8ae1-a604156bf6d5:
+  ffb3b9cd-f19b-422b-a2eb-757629033ef0:
+  62dc2190-efd2-4ac5-43c0-64a1feb51e6b:
+  eabcaa8a-f9d8-4df5-51bc-4708b42f8da3:
+  665eea42-cbf2-4491-62ea-3abf57c66202:
+  f61aa1ee-78d3-4c19-ad4b-c526ffb6d25a:
+  6a96cfa9-6ea4-4bd0-b7a5-6385105fc339:
+  da132553-8a4c-46f0-8d0f-74b342f6e06d:
+  a33b0d17-4e1f-4613-59c7-04c5349e77ad:
+  48f7d728-8045-4b6a-be0c-9609635bd13f:
+  fcdcc48a-fb62-4c82-b908-b0a39440c0f8:
+  3b2bd191-cdfd-481f-62bf-e5c75112828c:
+  d16a214e-537a-4d89-67e8-f38e96628606:
+  93d6e734-82c2-4825-9c60-b83975b34ef1:
+  74b73a8f-d8f4-425e-9454-c1ca52465b74:
+  b5e83cd6-61b3-4a83-8ea6-5c15ee60b479:
+  40504fa1-eec9-470d-55a6-b37a55cbccd0:
+  eb882915-12de-4177-9e82-603e13f01c2e:
+  80868f9f-015f-45ab-b912-afb837cd9e1e:
+  7104a99c-3ac2-4275-8b4c-60fa53e8429f:
+  ba9747df-f200-4174-99d8-f2c789012001:
+  df70c5cb-6285-4db5-4e78-b92910b1f7f9:
+  3d47a305-2baf-4b2e-9230-e737f2881d3c:
+  6f721b68-89bd-4b5b-78b0-43f397a64e5f:
+  f6af7a19-dc56-4cda-8b68-8e97f07af3c9:
+  d3faa288-3b98-43d5-b02d-3bb11013bfbf:
+  1b8188e6-9147-4739-8d33-8e69f482e170:
+  22e50363-0b53-4186-84c0-3c013c7f2b41:
+  237cf4eb-1c1f-4cee-7125-44950e9212f1:
+  6dd28ae0-59e8-448a-b4d3-df2e656330c2:
+  f93aba3f-38c4-4182-bc1c-d6d14cc3dfd1:
+  4eed4435-a0a9-4613-bd18-b014f5ba26ac:
+  0c57c876-a612-40a7-67fc-bf749b5a6e47:
+  55858b20-54fc-4b1a-aa09-fe7c1125b6d5:
+  86124bd0-1917-435a-67b6-cb1a5271afc8:
+  faa75abd-5fe8-4f02-b81d-6ace8d3344ae:
+  523b5cbe-b401-4335-8b14-a904b9835745:
+  b6947010-a07b-4fb3-8308-f745787388cb:
+  1ef3e011-63e4-47f5-bfe5-c2b92c2cdc74:
+  d1f3e3d1-3f80-41b2-895c-ceeb2a61fcfe:
+  57d5c6f6-40b7-4d57-98a1-9a40b72e61f6:
+  92bead40-2378-4e4c-9b61-ef9a9896e001:
+  bc2d373b-61b7-46dd-95e0-e8658e549132:
+  a161cfa1-200d-4f5f-b399-76ba528dec7c:
+  ff40bd92-71c7-48e3-5dac-004cceb28931:
+  1ec3e9b3-dd19-4c06-b659-96453d3ac4f9:
+  b82da302-2a4a-4053-8425-5c107a982dce:
+  97daf7ee-9aa7-402c-b8d9-e1c6c31097ce:
+  2d055efd-97ce-4528-9aae-2a70f3cb3f31:
+  115851d0-d202-47c5-9079-71d3e7f704f7:
+  637cab93-d805-48ab-9be8-dbfcd15b4439:
+  9bb3976b-c050-4396-9184-23ce86e8694e:
+  c84d363c-b4d4-47fa-b4a9-b096d052782e:
+  60602fef-d6ee-4fb6-a38c-1ffd15b16c6f:
+  604ec832-4884-47d6-beed-cf178cad1caa:
+  bb7854c8-46ef-430b-85a5-e5333a58b5b9:
+  7db24214-9067-4c32-887a-3cbc76f6b11a:
+  e02c7ccf-0adc-4717-aaf9-770a99688e0f:
+  5ea964e2-dd80-47d1-af8a-8a99f8650bef:
+  d21d8573-b6dd-4620-b860-1c8b498e0377:
+  7096a081-bd49-451f-b93a-d980ef1129b6:
+  3cefecdc-6006-4c4b-9424-15ec0d2a245c:
+  321187dc-4798-402d-926e-7d4a08eae9f0:
+  19c2620c-d22a-4825-a01d-2c56c83e30e5:
+  81bb8d64-06d3-4365-bb57-1c223d6e09cd:
+
+# FACEBOOK: 1
+# TWITTER:  5
+# LINE:     6
+# GOOGLE:   7
+# APPLE:    8
+# PHONE:    10
+providers:
+  - 6
+  - 8
+  - 7
+  - 5
+  - 1
+  - 10
+androidProviders:
+  - 7
+  - 6
+  - 1
+  - 5
+  - 10
+iosProviders:
+  - 6
+  - 8
+  - 7
+  - 5
+  - 1
+  - 10
+
+# 1 - audienceIntro
+# 2 - streamerIntro
+# 3 - premiumContentIntro
+valuePropIntroImages:
+  1: https://cdn.17app.co/d9e1f9df-67cb-40f3-91ea-99fa9bb7ea23.png
+  2: https://cdn.17app.co/e0c09eb1-e8e8-42d2-ab9d-bb472fecb879.png
+  3: https://cdn.17app.co/fe3379b4-ebca-429f-88d0-bc08647bad3f.png
+
+valuePropIntroImagesOrdering:
+  - 1
+  - 2
+  - 3
+
+# 1 - audienceIntro
+# 2 - streamerIntro
+# 3 - premiumContentIntro
+valuePropIntroImageSets:
+  # groupA image set
+  a:
+    1: https://cdn.17app.co/d9e1f9df-67cb-40f3-91ea-99fa9bb7ea23.png
+    2: https://cdn.17app.co/e0c09eb1-e8e8-42d2-ab9d-bb472fecb879.png
+    3: https://cdn.17app.co/fe3379b4-ebca-429f-88d0-bc08647bad3f.png
+  # groupB image set
+  b:
+    1: https://cdn.17app.co/d9e1f9df-67cb-40f3-91ea-99fa9bb7ea23.png
+    2: https://cdn.17app.co/e0c09eb1-e8e8-42d2-ab9d-bb472fecb879.png
+    3: https://cdn.17app.co/fe3379b4-ebca-429f-88d0-bc08647bad3f.png

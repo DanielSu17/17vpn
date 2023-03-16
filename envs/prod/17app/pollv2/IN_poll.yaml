@@ -1,0 +1,189 @@
+# Poll setting
+# MUST make sure that corresponding gift ids exist in gift database
+# In this case, they should be poll_option_{a|b|c|d|e}_{30|49|99|199|399|599|3999} by the value of giftIDTempalte
+minTTL: 1
+# maxTTL(minutes) should be smaller than maxDurationHour(hours) in the general.yaml
+maxTTL: 60
+maxTitleDescLen: 20
+maxOptDescLen: 10
+minOptionCount: 2
+maxOptionCount: 5
+freeVoteEnable: true
+freeVoteWhitelist:
+
+availableLimit:
+  mins: 1
+  count: 200
+freeVoteAndroidVersion: 2.3.67
+freeVoteIOSVersion: 3.44.0
+defaultPrice: 99
+enableFreePriceForOfficialTopics: true # 官方話題可選擇0點
+availablePrice:
+  5:
+  30:
+  49:
+  99:
+  199:
+  399:
+  599:
+  3999:
+availableOptionID:
+  - poll_option_a
+  - poll_option_b
+  - poll_option_c
+  - poll_option_d
+  - poll_option_e
+giftIDTemplate: '{{.OptionID}}_{{.Price}}'
+userSettings:
+  ad9a4ee5-e7eb-47f0-8ef4-727b286aa48f: # David’s Angel
+    price: 99
+  4cbcce6a-df9d-48be-780a-f04216268690: # 金光布袋戲
+    price: 30
+  ff3c301a-feae-4241-9705-518b3ccab24a: # 金麥克Rock_Live
+    price: 30
+  721fc91c-49a2-4c51-55b7-a84ab233743e: # we_are_17livers
+    price: 99
+  ebc162ee-1235-4f6b-b0b6-d2e2e0d18721: # 學姊受不了
+    price: 0
+    limitMins: 1
+    limitCount: 10
+  c06b396c-e1a8-4012-8033-dd0019467e32: # 17xB.Duck時裝派對
+    price: 199
+  2fdb9f0f-cdc3-4eb4-a8af-ff1c261a2369: # 趣你的娛樂
+    price: 0
+    limitMins: 1
+    limitCount: 10
+  bac3415c-f955-456e-b256-0fc653c33132: # 謝哲青
+    price: 0
+    limitMins: 1
+    limitCount: 20
+  d4fa2189-be5b-4351-8dc6-3793b3e79593: # 17嘴一波
+    price: 0
+    limitMins: 3
+    limitCount: 30
+  97471c81-2902-47c2-9170-7cd94cf4af05: # 味全龍隊
+    price: 0
+    limitMins: 3
+    limitCount: 10
+  6f0598e0-19a6-4609-7333-962b75d3f24a: # 中國達人秀
+    price: 0
+    limitMins: 3
+    limitCount: 20
+  1d264e45-0c86-4c66-b9e0-dcac051100eb: # 明星製作人
+    price: 0
+    limitMins: 3
+    limitCount: 50
+  436f66bd-feeb-4933-afd9-8169221412bf: # 鬼月特別企劃
+    price: 0
+    limitMins: 3
+    limitCount: 20
+  f488e6f8-4980-4fb7-9502-f1a4a075e8b8: # 視網膜
+    price: 0
+    limitMins: 3
+    limitCount: 20
+  cef2923e-cc43-4577-a33e-ef89e619a12a: # 決戰17唱
+    price: 99
+  80ce28d4-355b-4666-6af4-cafed6e3a07d: # 17瘋開箱
+    price: 49
+  093e2393-4701-4980-a27b-f053708ad02e: # willyding
+    price: 0
+    limitMins: 1
+    limitCount: 200
+  97851fd4-13be-47cd-a6f1-ddd8ceb36fd5: # 17LIVE
+    price: 30
+  fa0c2a70-9774-4562-bdf1-b787949fe7db: # 女神Camera
+    price: 99
+  1c24a180-5550-4b19-4124-1955db510942: # 17MasterChef廚神來也
+    price: 99
+  c0bc6264-3e28-4f45-97ab-bd92ceff1ab5: # Follow大明星
+    price: 99
+  f8b2ce67-5455-479b-9d8d-51217e0d98bb: # 開桌啦！寶寶
+    price: 99
+  d254aaad-df27-4f82-a77d-2ce50b3eadf9: # 夢想Sing樂園
+    price: 99
+  1fbea1f4-1284-4b83-bc95-0000638ab5eb: # 解憂砸惑舖
+    price: 49
+  b8d506b9-0d89-4680-86ca-6f1765c2294c: # 跟我17玩
+    price: 99
+  bfb528bf-3257-44df-9c31-7a79200209d3: # 火箭女孩知識+
+    price: 99
+  d781b10c-c016-49f1-b86d-0015e5e28766: # Wave
+    price: 0
+    limitMins: 1
+    limitCount: 200
+  46d46576-cd73-4f19-bd5f-1e65e9a62e85: # 17經典台
+    price: 0
+    limitMins: 1
+    limitCount: 200
+hotTopic: "today_hot_topic"
+topics:
+  - tag: "時事"
+    title: "新垣結衣跟星野源結婚？"
+    options: ["不能接受Ｑ＿Ｑ", "祝他們幸福"]
+ 
+  - tag: "時事"		
+    title: "情人節你會怎麼過？"
+    options: ["陪你一起過", "一個人過"]
+  - tag: "17特色"		
+    title: "遊戲直播你怎麼挑？"
+    options: ["挑有興趣的遊戲", "挑喜歡的主播"]
+  - tag: "廢問"		
+    title: "喜歡吃鹹的零食還是甜的？"
+    options: ["甜的！", "鹹的～"]
+  - tag: "17特色"		
+    title: "想試試看戰隊限定直播嗎？"
+    options: ["當然想！", "還好捏"]
+  - tag: "17特色"		
+    title: "今晚想來點？"
+    options: ["任意隨機袋", "找個活動來衝衝"]
+
+  - tag: "17特色"		
+    title: "去無人島會帶什麼？"
+    options: ["當然是帶糧食", "當然是帶你😘"]
+  - tag: "廢問"		
+    title: "比較喜歡哪種髮型？"
+    options: ["當然是最愛馬尾", "把頭髮放下來比較美"]
+  - tag: "17特色"		
+    title: "今天要PK嗎？"
+    options: ["來啊來啊！", "先不要，我準備準備"]
+   
+  - tag: "17特色"		
+    title: "有錢買房的話想住哪？"
+    options: ["市區豪宅啊", "常駐你心裡～😘"]
+  
+  - tag: "17特色"		
+    title: "覺得主播還缺什麼優點？"
+    options: ["缺少氣質", "缺少我😘"]
+ 
+
+  - tag: "17特色"		
+    title: "會去看其他國的直播嗎？"
+    options: ["會啊！練練外文", "不太會，只想看你"] 
+  - tag: "男女"		
+    title: "出去約會，怎麼付錢？"
+    options: ["AA制，沒有糾紛", "男生請客秀大方"]
+  - tag: "男女"		
+    title: "女生比較不會開車？"
+    options: ["沒這種事，根本偏見", "我認識的真的都不擅長"]
+
+  - tag: "廢問"		
+    title: "比較喜歡哪種類型的主播？"
+    options: ["才藝很強的那種", "會陪我聊聊的那種"]
+ 
+  - tag: "廢問"		
+    title: "男生還是女生容易要到Line？"
+    options: ["男生", "女生"]
+ 
+  - tag: "廢問"		
+    title: "喜歡女生哪種髮色？"
+    options: ["黑髮或自然色很氣質", "特殊色比較時尚"]
+  - tag: "17特色"		
+    title: "玩17多久了？"
+    options: ["不到一年，我新鮮人", "一年以上，我老骨頭"]	  
+
+  - tag: "廢問"		
+    title: "你會因為另一半整形就不愛他嗎？"
+    options: ["不會，他還是他", "會，代表價值觀不合了"]	 
+
+ 
+

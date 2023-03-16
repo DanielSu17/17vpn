@@ -1,0 +1,100 @@
+pointMinUnit: 100
+minPointPay: 100
+maxPointPay: 10000
+minLevelRequired: 1 # 用戶最少要有幾等才能申請 
+minPointRequired: 300 # 用戶最少要有多少點才能申請
+maxRequestConnectionNumber: 100
+minAndroidVersion: "2.10.1"
+minIOSdVersion: 3.44.0
+
+# videoChat SDK key, encrypted with AES256
+appKey: "/OhqKHHCyKr5fn2GWiB6ViYK074WgYc1pUObNhRcw0Dj+S/nhc3Fqjti9pbS8fyd"
+
+# client用來判斷視訊連線結束後多久該切回原本的sdk
+timeoutSeconds: 300
+
+
+whiteList: #在名單內的人可以使用視訊連線
+  - "567e0b5d-1516-4ce0-b4e8-bec4e756d5ae" # kevinmh
+  - "25d8e5a9-94da-43bf-a160-a74856ad5c16" # zoe_meat
+  - "12b02914-253c-40ba-9773-2234b5761a88" # bellayayaya
+  - "e473b841-ff9d-4b0e-8a3f-e17ed3ee9f74"
+  - "007454cd-b603-44bb-94d0-52d1c0039065"
+  - "50a16cdf-7fca-41b7-b900-38ecf5f94c55"
+  - "4b5f7389-afb2-4910-88ef-1c7d93232f30"
+  - "a91901e6-3a02-468e-bf59-968ccb68ae5b"
+  - "e11b2e84-2500-4298-a265-e5bd9d70a9d9"
+  - "48a95b1a-9163-45f1-88dc-b2f62876303a"
+  - "57bce189-6935-47f3-448d-1e4b38b32577" #克里斯小子
+  - "3fad0b50-44b3-409f-bff6-f9b4581b4546" #梁云菲Nana-情人節直播
+  - "dc2cfe7e-e275-4acf-a411-6e0f40594891" #東岸北極熊
+  - "3994f1e8-eb69-411f-80f5-643fbfb8849d" #尼傻你好
+  - "f233c2ca-bd6a-498a-be3e-493191c97800" #假鬼假怪-曹國舅媽
+  - "9d0d1d8f-9f2e-4b6e-b5ac-5338f3f39d5c" #f19860130
+  - "df78d43e-bcd7-4289-97f5-0e81bafe30b7" # 阿黑油油顆顆笑
+  - "d0523c72-8d7f-4d1e-a8cf-353537a18029" # 安卓油油顆顆笑
+  - "69dd602b-24b3-400b-a150-4fa350cb414a" #衝突男子marksha
+  - "ba6dfdc3-0c80-4a06-a7bc-364b5831565c" #holden12
+  - "6df32415-9a94-4e07-bb1c-93584732c556" #毓毓泥泥:pig
+  - a2bba33b-138d-4bdf-aa0a-d00e0c4e49df #sinasinachou
+  - 77e9bc93-0cd4-4ecb-bc6a-f3fd2d343d80 #garychu073073
+  - 4b5f7389-afb2-4910-88ef-1c7d93232f30 #Amylin_171717
+  - c438af9b-6417-47bd-8af8-2fa84b698cf7 #peaccee
+  - 266d572a-2f56-4c81-bb65-b4d6ef848b50 #ivyivy_chenchen
+  - 6944a912-f842-4389-a913-5c00540b0754 #pomelo0202
+  - 0225e824-71cb-414d-909d-4ff3425db6f9 #alicewuuuu_
+  - 6b63b7e2-de90-48ee-ba69-f54687b51774 #kyria1119
+  - 7b8d8074-14ef-4bb1-491d-bf1a1aaba154 #阿桃太郎:peach
+  - 60cf3837-37b2-435d-8453-42eef5dba130 #僑依姐姐:birthday
+  - 16c39e4b-ea0c-43fd-5597-fc0f72f5febc #查理:cookie
+  - b924f409-862d-492f-857b-1287c2f346a3 #飛飛肥扣:japanese_goblin
+  - e4ed1f60-1851-4c73-a306-5036666335d4 #小羽:fish:Irene
+  - 47c4d463-b98a-432a-a7a1-54c4f8d5edea #:two_hearts:芮芮vivi:two_hearts
+  - b2f67351-a62b-47c3-b995-8e92685ba290 #莎姐:feet:Sasa
+  - 22b2ae78-6169-43f8-9dac-4d891a852272 #球球:purple_heart
+
+freeWhiteList: #在名單內的人可以在使用視訊連線的時候開啟「免費連線」
+  - "69dd602b-24b3-400b-a150-4fa350cb414a" #衝突男子marksha
+  - "567e0b5d-1516-4ce0-b4e8-bec4e756d5ae" # kevinmh
+  - "25d8e5a9-94da-43bf-a160-a74856ad5c16" # zoe_meat
+  - "12b02914-253c-40ba-9773-2234b5761a88" # bellayayaya
+  - "e473b841-ff9d-4b0e-8a3f-e17ed3ee9f74"
+  - "007454cd-b603-44bb-94d0-52d1c0039065"
+  - "50a16cdf-7fca-41b7-b900-38ecf5f94c55"
+  - "4b5f7389-afb2-4910-88ef-1c7d93232f30"
+  - "a91901e6-3a02-468e-bf59-968ccb68ae5b"
+  - "e11b2e84-2500-4298-a265-e5bd9d70a9d9"
+  - "48a95b1a-9163-45f1-88dc-b2f62876303a"
+  - "57bce189-6935-47f3-448d-1e4b38b32577" #克里斯小子
+  - "3fad0b50-44b3-409f-bff6-f9b4581b4546" #梁云菲Nana-情人節直播
+  - "dc2cfe7e-e275-4acf-a411-6e0f40594891" #東岸北極熊
+  - "3994f1e8-eb69-411f-80f5-643fbfb8849d" #尼傻你好
+  - "f233c2ca-bd6a-498a-be3e-493191c97800" #假鬼假怪-曹國舅媽
+  - "9d0d1d8f-9f2e-4b6e-b5ac-5338f3f39d5c" #f19860130
+  - "ba6dfdc3-0c80-4a06-a7bc-364b5831565c" #holden12
+  - "6df32415-9a94-4e07-bb1c-93584732c556" #毓毓泥泥:pig
+  - a2bba33b-138d-4bdf-aa0a-d00e0c4e49df #sinasinachou
+  - 77e9bc93-0cd4-4ecb-bc6a-f3fd2d343d80 #garychu073073
+  - 4b5f7389-afb2-4910-88ef-1c7d93232f30 #Amylin_171717
+  - c438af9b-6417-47bd-8af8-2fa84b698cf7 #peaccee
+  - 266d572a-2f56-4c81-bb65-b4d6ef848b50 #ivyivy_chenchen
+  - 6944a912-f842-4389-a913-5c00540b0754 #pomelo0202
+  - 0225e824-71cb-414d-909d-4ff3425db6f9 #alicewuuuu_
+  - 6b63b7e2-de90-48ee-ba69-f54687b51774 #kyria1119
+  - 7b8d8074-14ef-4bb1-491d-bf1a1aaba154 #阿桃太郎:peach
+  - 60cf3837-37b2-435d-8453-42eef5dba130 #僑依姐姐:birthday
+  - 16c39e4b-ea0c-43fd-5597-fc0f72f5febc #查理:cookie
+  - b924f409-862d-492f-857b-1287c2f346a3 #飛飛肥扣:japanese_goblin
+  - e4ed1f60-1851-4c73-a306-5036666335d4 #小羽:fish:Irene
+  - 47c4d463-b98a-432a-a7a1-54c4f8d5edea #:two_hearts:芮芮vivi:two_hearts
+  - b2f67351-a62b-47c3-b995-8e92685ba290 #莎姐:feet:Sasa
+  - 22b2ae78-6169-43f8-9dac-4d891a852272 #球球:purple_heart
+
+# 開放給所有人
+enableAll: false
+# 所有人可用0點
+#enableFreeAll: true
+# 開放給簽約主播
+enableForContractedStreamer: true
+# 所有簽約主播可用0點
+enableFreeForContractedStreamer: true

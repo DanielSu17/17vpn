@@ -1,0 +1,646 @@
+# sections
+#   - id: TopBanner|OffcRecomm|Suggestion|Label|RedEnvelope|Show|Vod|TodayHotTopic|CrazyZoo
+#     enable: false|true 是否顯示該section在第三版熱門頁
+#     dedup:  false|true 檢查上面的section是否已經有相同的主播了，如果重複就不再顯示
+#     more:   false|true 右上角是否顯示more按鈕
+#     minGrids: <int> 最少要有多少個主播才顯示section
+#     style: <int> 1: BillboardStyle, 2: StoryTrayStyle, 3: DefaultShelfStyle, 4: CoverFlowStyle, 5: VodShelfStyle, 6: DefaultLabelShelfStyle (猜你可能會喜歡)
+#     name:
+#       key: <string>
+#     labelID: <string> (optional if id is `Label`)
+
+# style 1: Top banner + super promote
+# style 2: IG 限時動態 style （官方推薦內容）
+# style 3: Netflix default style (時事話題, ...)
+# style 4: (熱播節目)
+# style 5: (熱門影音)
+# style 6: (猜你可能會喜歡) showing label as possible than DefaultShelfStyle
+# style 7: (新手任務)
+# style 8: (PK) used in more page
+# style 9: GroupCall
+# style 10: GroupCall empty style. Client will show the groupCall entry button even if the grids are less than minGrids.
+
+preservedSectionID: Latest
+
+sections:
+  - id: TopBanner # Banner + super promote
+    name:
+      key: tab_hot_2019q4_topbanner
+    enable: true
+    style: 1
+    more: false
+  - id: Newbiequest
+    enable: true
+    style: 7
+    minGrids: 1
+    more: false
+  - id: OffcRecomm # 官方推薦
+    enable: false
+    style: 2
+    more: false
+#  - id: Label # 萬聖節變裝Party
+#    labelID: halloween_make_party2021
+#    name: 
+#      key: streamer_label_clip_halloween_makeup_party_2021
+#    enable: true
+#    dedup: true
+#    minGrids: 0
+#    style: 3
+#    more: true
+#    category: normal
+#    orderModel: 2
+  - id: Suggestion # 猜你可能喜歡
+    name:
+      key: tab_hot_2019q4_follow_suggestion
+    enable: true
+    dedup: true
+    style: 6
+    minGrids: 5
+    more: true 
+
+  - id: Label #Level 70+
+    labelID: level_70_plus
+    name: 
+      key: streamer_label_70_plus
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    orderModel: 2
+
+  - id: Label # 新手引導員 Welcome new fans
+    labelID: welcomenewfans
+    name: 
+      key: streamer_label_welcomenewfans_subtab
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 1
+  - id: GroupCall # GroupCall 派對
+    name:
+      key: group_stream_v3hotpage
+    enable: true
+    dedup: false
+    minGrids: 4
+    style: 9 
+    more: true
+
+  - id: PK # pk
+    name:
+      key: tab_hot_2019q4_pk
+    enable: true
+    dedup: false  #重複
+    minGrids: 8 # 2個直播間一組PK，4組以上顯示
+    style: 3
+    more: true
+  - id: NewestStreamer # D0 new streamer 首日新手
+    name:
+      key: tab_hot_d0streamer
+    enable: true
+    dedup: true
+    minGrids: 4
+    style: 3
+    more: true
+    orderModel: 2
+  - id: Label # 超新星
+    labelID: newbie
+    name:
+      key: tw_newbie
+    enable: true
+    dedup: true
+    minGrids: 4
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  # new tab ArchiveVideo. Initially sorted at seventh.
+  - id: ArchiveVideo # 典藏影片  
+    name:
+      key: archives_homepage_title
+    enable: true
+    minGrids: 3
+    style: 11
+    more: true
+  - id: Latest # 新人(和『最新』同邏輯) 新星主播在這裡
+    name:
+      key: tab_hot_2019q4_newstreamer
+    enable: true
+    dedup: true
+    minGrids: 4
+    style: 3
+    more: true
+    orderModel: 2
+  - id: Label # 新簽約主播 New Contracted LIVERs
+    labelID: newcontractlivers
+    name: 
+      key: streamer_label_newcontractlivers
+    enable: true
+    dedup: true
+    minGrids: 4
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+  - id: Label #新手最愛看
+    labelID: newbieparty
+    name: 
+      key: streamer_label_newbieparty
+    enable: true
+    dedup: false
+    minGrids: 3
+    style: 3
+    more: true
+    orderModel: 2
+  # - id: Label #HelloKitty
+  #   labelID: HelloKitty
+  #   name: 
+  #     key: event_unboxing_Hello_Kitty
+  #   enable: true
+  #   dedup: true
+  #   minGrids: 3
+  #   style: 3
+  #   more: true
+  #   category: normal
+  #   orderModel: 2
+  # - id: Label #Level 100+
+  #   labelID: level_100_plus
+  #   name: 
+  #     key: streamer_label_100_plus
+  #   enable: true
+  #   dedup: true
+  #   minGrids: 3
+  #   style: 3
+  #   more: true
+  #   orderModel: 2
+  - id: Label #實力歌手
+    labelID: singer
+    name: 
+      key: streamer_label_singer
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    orderModel: 2
+  - id: Label #彈唱歌手
+    labelID: acoustic
+    name: 
+      key: streamer_label_acoustic
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    orderModel: 2
+  - id: Label #演奏達人
+    labelID: player
+    name: 
+      key: streamer_label_player
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    orderModel: 2
+  - id: Label #音樂
+    labelID: tw_t_music
+    name: 
+      key: streamer_label_music
+    enable: true
+    dedup: true  
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+  - id: Label #繪畫達人
+    labelID: visual_artists
+    name: 
+      key: streamer_label_highlight_visual_artists
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+  - id: Label #遊戲玩家
+    labelID: tw_t_game
+    name: 
+      key: streamer_label_game
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+  - id: AudioStream # AudioStream 聲播
+    name:
+      key: audio_stream_v3hotpage
+    enable: true
+    dedup: false
+    minGrids: 4
+    style: 3
+    more: true
+  - id: Label #直播商城
+    labelID: market
+    name: 
+      key: streamer_label_market
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+  # - id: Music # legacy Music tab
+  #   name:
+  #     key: tab_hot_2019q4_music
+  #   enable: false
+  #   dedup: true
+  #   minGrids: 5
+  #   style: 3
+  #   more: true
+  - id: Label #熱門節目
+    labelID: show
+    name: 
+      key: streamer_label_show
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 3
+    more: true
+    orderModel: 2
+  - id: Vod # 熱門影音
+    name:
+      key: tab_hot_2019q4_vod
+    enable: true
+    minGrids: 5
+    style: 5
+    more: false
+  - id: Label #全民開播
+    labelID: stayathome
+    name: 
+      key: streamer_label_stay_at_home_subtab
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+  - id: Label # T_職人
+    labelID: professional
+    name:
+      key: streamer_label_professional
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    orderModel: 2
+  - id: Label #線上課程
+    labelID: online_course
+    name: 
+      key: streamer_label_tutor
+    enable: true
+    dedup: false
+    minGrids: 3
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+  - id: TodayHotTopic # 投票
+    name:
+      key: tab_hot_2019q4_vote
+    enable: true
+    minGrids: 4
+    style: 3
+    more: true
+  - id: Label # 男生
+    labelID: male
+    name:
+      key: tab_hot_2019q4_male
+    enable: true
+    dedup: false
+    minGrids: 5
+    style: 3
+    more: true
+  - id: Label # 女生
+    labelID: female
+    name:
+      key: tab_hot_2019q4_female
+    enable: true
+    dedup: false
+    minGrids: 5
+    style: 3
+    more: true
+  - id: Label # 聊天, 對應到v1 sub-tab
+    labelID: tw_t_chat
+    name:
+      key: streamer_label_chat
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal #normal代表可以在開播類別被選擇；exclusive則不能被選擇，不填寫則默認exclusive
+    orderModel: 2
+  - id: Label # 名人開播 Celebrities
+    labelID: TWcelebrity
+    name: 
+      key: streamer_label_TWcelebrity
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+  # - id: Label # 台北電玩展
+  #   labelID: tsgspecial
+  #   name: 
+  #     key: streamer_label_tsgspecial
+  #   enable: true
+  #   dedup: false
+  #   minGrids: 3
+  #   style: 3
+  #   more: true
+  #   category: normal
+  #   orderModel: 2
+  # - id: Label # Global LIVERs 全球精選主播
+  #   labelID: globalstreamer
+  #   name: 
+  #     key: streamer_label_globalstreamer
+  #   enable: true
+  #   dedup: false
+  #   minGrids: 1
+  #   style: 3
+  #   more: true
+  #   category: normal
+  #   orderModel: 2
+  # - id: Label #政治
+  #   labelID: politics
+  #   name: 
+  #     key: streamer_label_politics
+  #   enable: true
+  #   dedup: false
+  #   minGrids: 5
+  #   style: 3
+  #   more: true
+  #   orderModel: 2
+  # - id: Label #運動
+  #   labelID: tw_t_sport
+  #   name: 
+  #     key: streamer_label_sport
+  #   enable: true
+  #   dedup: false
+  #   minGrids: 1
+  #   style: 3
+  #   more: true
+  #   orderModel: 2
+  - id: Label #健身
+    labelID: fitness
+    name: 
+      key: streamer_label_fitness
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    orderModel: 2
+  - id: Label #吃播
+    labelID: eating
+    name: 
+      key: streamer_label_eating
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    orderModel: 2
+  - id: Label #廚藝
+    labelID: cooking
+    name: 
+      key: streamer_label_cooking
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    orderModel: 2
+  - id: Label #美妝
+    labelID: makeup
+    name: 
+      key: streamer_label_makeup
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    orderModel: 2
+
+#以下是草稿 
+  - id: Label #聊天
+    labelID: tw_t_chat
+    name: 
+      key: streamer_label_chat
+    enable: false
+    dedup: false  
+    minGrids: 5
+    style: 3
+    more: true
+  - id: Label #音樂
+    labelID: tw_t_music
+    name: 
+      key: streamer_label_music
+    enable: false
+    dedup: false  
+    minGrids: 5
+    style: 3
+    more: true
+
+#  - id: Label #運動
+#    labelID: tw_t_sport
+#    name: 
+#      key: streamer_label_sport
+#    enable: false
+#    dedup: false 
+#    minGrids: 5
+#    style: 3
+#    more: true
+
+  - id: Label # 才藝
+    labelID: talent
+    name:
+      key: streamer_label_talent
+    enable: false
+    dedup: false
+    minGrids: 5
+    style: 3
+    more: true
+  - id: Label # 名人
+    labelID: famous_artist
+    name:
+      key: streamer_label_famous_artist
+    enable: false
+    dedup: false
+    minGrids: 5
+    style: 3
+    more: true
+  - id: Label #生活
+    labelID: smartlife
+    name: 
+      key: streamer_label_smartlife
+    enable: false
+    dedup: false  #重複
+    minGrids: 5
+    style: 3
+    more: true
+  - id: Label #命理
+    labelID: tw_t_fortune_teller
+    name: 
+      key: 命理
+    enable: false
+    dedup: false  #重複
+    minGrids: 5
+    style: 3
+    more: true
+  - id: Label #虛擬主播
+    labelID: vliver
+    name: 
+      key: virtual_streamer_title
+    enable: false
+    dedup: false  #重複
+    minGrids: 1
+    style: 3
+    more: true
+  - id: Label #其他未分類
+    labelID: tw_t_others
+    name: 
+      key: 其他未分類
+    enable: false
+    dedup: false  #重複
+    minGrids: 5
+    style: 3
+    more: true
+
+
+
+  - id: Show # 熱播節目
+    name:
+      key: tab_hot_2019q4_program
+    enable: false
+    dedup: false
+    minGrids: 5
+    style: 4
+    more: false
+
+  - id: CrazyZoo # 荒唐動物園(遊戲類)
+    name:
+      key: tab_hot_2019q4_crazy_zoo
+    enable: false
+    minGrids: 5
+    style: 3
+    more: true
+ 
+
+  - id: RedEnvelope # 紅包
+    name:
+      key: tab_hot_2019q4_redenvelop
+    enable: false
+    minGrids: 5
+    style: 3
+    more: true
+
+officialRecommendedStreamers:
+  - e1248c81-a3a3-466b-9cd2-80d5e4f66448 # 乃哥
+  - 09e8aae9-03a8-4728-add8-3945ec77fe10 # 大熱門
+  - 9234ca66-3d54-461b-bff7-ccad1de5e0cc # 17搶先看
+  - e2f9021b-3fb6-40ae-8db5-5fe5e3e28e3c # 陳揮文
+  - 97851fd4-13be-47cd-a6f1-ddd8ceb36fd5 # 17media
+  - 80ce28d4-355b-4666-6af4-cafed6e3a07d # 17娛樂台
+  - d4fa2189-be5b-4351-8dc6-3793b3e79593 # 嘴一波
+  - 64960d5e-1631-4d55-9cd6-66c7ecfb6eef # 黃益中
+  - bac3415c-f955-456e-b256-0fc653c33132 # 謝哲青
+  - dc751561-d6aa-4e6b-b842-89ec07612311 # 沈志霖
+  - 2fdb9f0f-cdc3-4eb4-a8af-ff1c261a2369 # 趣你的娛樂
+  - ad9a4ee5-e7eb-47f0-8ef4-727b286aa48f # David’s Angels
+  - e0d68bc2-03c1-4a38-a149-ee65d0089036 # 當我們喇在一起
+  - f9546eee-c573-4a66-aa4b-b8071473557e # 陳楷
+  - 27536e64-2c87-49c4-9ed4-56ce58bf028f #🖤純愛系男孩-明杰🖤
+  - f90d4a37-659a-48aa-80a1-d8ead493dec3 # 黃光芹
+  - 1e978451-4438-48fa-96ab-d48575f56629 # 江啟臣
+  - 571fd70c-27b5-4f1f-a50f-9c5bf07c71a7 # ZAIN小任
+  - 1277bdf3-0418-48c0-8ca3-e747e5b28ad2 # 櫻慧StoryCare
+  - 84b8fdbd-96fe-4add-4c12-75c510987b13 # 土豪老師
+  - 87f7d2b1-25ec-4b09-8e36-a615b4dfd1b3 # 占星師艾薇
+  - de1d9848-121b-4bb6-a1f3-a5de35290d5d # 婁峻碩SHOU
+  - 1bd499ff-34e1-4530-91ce-a9f523afac0c # DavidsAngels_小賴兒
+  - 5b30705a-0070-4262-af4f-ab79c2fb32b2 # 廖泰翔
+  - a144f481-aab2-4500-a72f-fe9fda07a2be # 守夜人nightkeepers好
+  - 452b29bc-99a5-4977-8e2a-68685e3f8c02 # 盧學叡
+  - a9834349-2d9f-4b4a-b839-16e1febd1689 # 陳思宇
+  - cea88f37-28c7-4f79-9d9c-732480a8b8e8 # 吳崢
+  - 9855fc0f-6021-4520-a332-41980c4d043c # 眾點整理
+  - 6bc701d7-be42-439f-a003-8db74955536c # 蔡百祥心理師
+  - 234d2f1c-184a-4c8b-b127-516858dff292 # JJ林炳騰
+  - 0c5fd07b-472e-4b8c-8476-c8b4a76d8afc # 韓森professorh
+  - 0c11f70c-ddc8-4bbf-8734-3b8f1939a5fb # 1450粗乃玩
+  - 4318c259-95f1-40da-bfce-ab0f4523451b # 陳奕齊
+  - 30c7d3a0-8d15-4da5-bc69-d1a89dc88825 # 蕭敬嚴
+  - 639ef382-e623-4bca-8614-5d6321786b00 # 緯緯到來
+  - 62695786-774b-46de-849f-944ba9548d35 # 韓國瑜
+  - f72d13f1-59a4-4ac4-8958-2d64c569556f # 黃暐瀚17
+  - d62b9dcf-157f-4345-9c75-272f236573e8 # 3q陳柏惟
+  - f488e6f8-4980-4fb7-9502-f1a4a075e8b8 # 視網膜Retina
+  - 5168cc74-3f30-4106-bbf9-5722e6f5101c # 謝龍介
+  - 8d182ed9-d02c-46c3-9dfb-bc102519f02c # 同志先生Henry
+  - fa14dee9-299d-4480-b1a9-c892e79a0e8e # 黃士修
+  - 00e4a6bd-e106-4f5e-be67-0279705b4305 # 于美人
+  - 92c0e435-b7b3-453b-abf5-1f971db3e4ff # 李承曄
+  - 2242e3b8-2ab9-4d7f-b0d1-f4743d31a9e5 # 台灣鯛民
+  - dd80bb41-5657-46ee-8536-294f5438635f #哈啾INU醬
+  - 7512f490-adc6-4cd4-bfe5-8a86b235a94c #羅巧倫
+  - 179b9ca6-0d29-453c-b0ba-69278c8535b8 #林則希
+  - d6c42af6-db74-403b-bc69-3990502e541b #蔡力允
+  - dbaeef30-bf5e-4127-bd90-ce1356d7590f #于浩威
+  - 479bb4bd-1df8-47f0-931d-7884cce2f0dd	#GINO
+  - 6f6d94d7-668b-4167-84dc-9fdf7ab09920	#buty姐妹
+  - 5b68662d-f296-4c60-ae56-e12278fafd78	#我是方琦
+  - 7311739d-5f76-4749-6269-9f32187609e7	#iamotto1030
+  - 5c29ddca-afe9-4c62-9b60-bc4fe51ebf75	#蔡承翰Armani880101
+  - a5c0a7ca-a6af-43a8-bf99-f6706f5ae6bd	#王大熊1212
+  - 62a55060-c4a6-4e2c-a94c-85fdaab1a9ce	#陳彥嘉george
+  - a2486c5b-bb65-4377-8771-ae71df6c7dd3	#黃瑄venus
+  - 0c630560-c8e8-4f4e-a444-933281a4e87b	#夏宇禾lulu
+  - c4b752d8-3e12-4b8d-98c3-9dda228f5904	#顧子歆小紫
+  - 502d5839-59e8-4f84-9416-edbc4c3192d8	#依倫ellen
+  - f39ad4e1-ff13-4672-bc9d-c1f590590abb	#均_均Jiun
+  - 62fe6639-ac3d-45d4-85ff-33996d7290f0	#江俊翰ricky
+  - e829ce9b-2915-4a82-b5d5-49ceec6866bd	#yuanyuan.alexia.tang
+  - 7831f1b0-7363-4045-8b88-8287199c14d4 #錢君仲
+  - 2b68f94d-1af1-4e2a-b852-cf95dff645b9 #陳妍安rebecca
+  - 5942c1cd-24f1-4601-89f2-ebf24365ccaa #簡懿佳:two_hearts:1+
+  - 5bbed579-0abc-4d38-b284-a82638028fac #侯漢廷
+  - 7d9bb6fb-765f-40ff-9cdf-1f3e55787e71 #溜溜球達人楊元慶
+  - aff311f8-c827-499a-8aaa-0f5af5c3670f #車冠德A.W.C.
+  - 8d969b22-c288-4fe6-b8c9-bc59a402e53c #腦外科醫生安娜:brain:
+  - 8f604ec9-9d36-4c35-a18c-6cc4e633afd6 #吳志揚
+  - 03fc4690-a7a5-48ef-6c11-1125b40211ca #療癒女聲Angel楊淨宇
+  - d8e3c8d1-e4a2-455f-ac10-f3dc2fb43da4 #賴芊合Salem
+  - 54ef6c15-e23e-4e92-9267-fcbeb8d3847f #凹凹～韓忠羽:dog:
+  - ee18e7e1-0d79-4b9c-854e-09a97edcfe6d #陳盈燕Lucia:unicorn_face:️
+  - c6f858d5-34ae-4bf1-a93f-8b9f968e29d2 #蛋頭BG8LOCC
+  - 5c34b708-a3a3-4f4b-a4eb-1d9c5228ea46 #VigozChen
+  - f56d393e-c2e9-4ba7-8193-56ed7eebc332 #花響鼓樂團
+  - 6ad56889-70a0-4e16-9ed5-59d82c7df896 #成亮澄harry
+  - b3efca5c-e691-4f4b-9fe1-5876753a4e5d #紳士痞子xJNIF
+  - eab75542-7bce-4a45-b9bb-faad28e19c55 #胡怡萱醫師
+  - c481f42d-ba3e-454b-a142-f7250c9b2e25 #蒼藍鴿

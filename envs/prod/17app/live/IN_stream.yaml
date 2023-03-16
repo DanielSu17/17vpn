@@ -1,0 +1,302 @@
+pnCheckNotif: 300 # 5 mins
+minAndroidCaptionBlockVersion: "3.13.0"
+minIOSCaptionBlockVersion: "4.101.0"
+
+captionBlockConf:
+  oldClientEnable: false
+  newClientEnable: false
+  minAndroidVersionRequired: "3.13.0"
+  minIOSVersionRequired: "4.101.0"
+
+forcePromoteVirtualStream: false
+enableExtInfoTypeEvent: true
+
+followerCountTriggerEvent: 100000
+
+# PROD-4634
+organicStreamer:
+  autoPass: true
+  autoPassUserLevel: 0
+
+# porn detection
+pornDetection:
+  enable: false
+  intervalMS: 30000
+  modelVersion: 2
+  modelLink: "https://cdn.17app.co/nsfw/model.tflite"
+  labelLink: "https://cdn.17app.co/nsfw/dict.txt"
+  threshold: 5 # PROD: 5, STAG: 3, DEV: 3
+  labels:
+    - label: "unsafe"
+      confidence: 54.87 # low threshold for test
+    - label: "safe"
+      confidence: 54.87 # low threshold for test
+    - label: "empty"
+      confidence: 54.87 # low threshold for test
+
+defaultComments:
+  - specificTimeFrame: true
+    startTime: "00:00:00"
+    endTime: "03:59:59"
+    commentsInfo:
+      - content: "初次見面😃"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "一路睡好🌙"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+
+      - content: "Night~"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "Hi~~~"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+
+  - specificTimeFrame: true
+    startTime: "04:00:00"
+    endTime: "11:59:59"
+    commentsInfo:
+      - content: "初次見面😁"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "早安✨"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "歐嗨唷~"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "估摸擰"
+
+  - specificTimeFrame: true
+    startTime: "12:00:00"
+    endTime: "17:59:59"
+    commentsInfo:
+      - content: "初次見面😃"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "空你基哇~"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "午安！"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "甲壩沒"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+
+
+  - specificTimeFrame: true
+    startTime: "18:00:00"
+    endTime: "23:59:59"
+    commentsInfo:
+      - content: "初次見面😁"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "晚上好😆"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "空幫挖~"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "哩後！"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+
+hotCellOrder:
+  regionGroups:
+    - regions: ["TW"]
+    - regions: ["HK"]
+    - regions: ["SG"]
+    - regions: ["MY"]
+    - regions: ["US"]
+    - regions: ["JP"]
+    - regions: ["OTHERS"]
+
+birthdayComment:
+  contentColor: "#28232D"
+  backgroundColor: "#FFFFFF"
+
+comment:
+  program:
+    enableLengthCheck: true
+    maxLength: 35
+
+programDefaultComments: #全部 program 預設留言
+  - commentsInfo:
+      - content: "😂😂"
+        contentColor: "#000000"
+        backgroundColor: "#b228232d"
+      - content: "👏👏"
+        contentColor: "#000000"
+        backgroundColor: "#b228232d"
+      - content: "鼠勾以捏👍👍"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+      - content: "🙌🙌"
+        contentColor: "#000000"
+        backgroundColor: "#b228232d"
+      - content: "😍"
+        contentColor: "#FFFFFF"
+        backgroundColor: "#b228232d"
+
+programComments: # 指定 program 預設留言
+  5ca7d63b-2b07-40cd-a11a-d0ce1f162fda: # 這是 programID
+    - commentsInfo:
+        - content: "晚上好"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "好聽👏"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "👍👍"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "加油🙌"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "耳朵懷孕了😳"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "我來守護你🤴"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+  2f519817-e741-4c15-7364-b0f783ede4e4: # 這是 programID
+    - commentsInfo:
+        - content: "晚上好"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "哈囉～"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "耳朵懷孕了😳"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "好聽👏"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "我來守護你🤴"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+  5ba19bf2-6f65-43a5-9a35-10ca91b4c9a5: # 這是 17嘴一波
+    - commentsInfo:
+        - content: "哈囉～"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "😂😂"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "加油👍👍"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "神扯..."
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "強耶👏👏"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "傻眼"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+  b8ac41f9-5263-442a-8689-0cd763941760: # 這是 17Q限時答題搶獎金
+    - commentsInfo:
+        - content: "分享+追蹤抽福袋🎁"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "#我的天啊！BBrich好好用👍🏻"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "主持人我老婆😍"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "賺到不要不要的🤑"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "我為17Q而存在💘"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+
+  950afd4f-658e-4bc7-8675-aa6dbacbaa1a: # 這是 明星製作人
+    - commentsInfo:
+        - content: "分享+追蹤是好寶寶💕"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "鎖定明星製作人🎬"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "吼～氣氣氣氣氣"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "投票就可決定節目走向😎"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+        - content: "陪伴小編過今夜"
+          contentColor: "#FFFFFF"
+          backgroundColor: "#b228232d"
+# Don't modify infos below
+entryIcons:
+  "REDENVELOPE":
+    iconURL: "https://assets-17app.akamaized.net/c8067d2b-f74f-4704-ab91-bec3ac550605.png"
+  "BIRTHDAY":
+    iconURL: "https://assets-17app.akamaized.net/2abf9755-e1a4-4c17-8d38-d2dabacecf40.png"
+  "MUSIC":
+    iconURL: "https://assets-17app.akamaized.net/94fdc45b-57d2-499d-80e0-d491ae0ceff3.png"
+  "ANNIVERSARY":
+    iconURL: "https://assets-17app.akamaized.net/caa36894-ec0a-4020-b982-dfc294ee9f27.png"
+  "GAMING":
+    iconURL: "https://assets-17app.akamaized.net/56b8b37d-d801-4cb9-8f37-ef32e46fe48b.png"
+  "MUSICJP":
+    iconURL: "https://cdn.17app.co/92d4cab8-8be7-4e2d-85ce-009f970fa280.png"
+
+baggageMissionNotif:
+  nthLive: 10
+  showUpSeconds: 5
+
+namecardNotif:
+  period: 30
+  times: 1
+
+levelUpGiftNotif:
+  # example:
+  # gifts:
+  #   - giftID: "test"
+  #     beginTime: 2019-01-02 15:04:05 (GMT+0800)
+  #     endTime: 2019-01-16 15:04:05 (GMT+0800)
+  gifts:
+    - giftID: "arpk4"
+      beginTime: 2019-03-08 14:00:00 (GMT+0800)
+      endTime: 2019-03-22 23:59:59 (GMT+0800)
+  period: 15
+  nthLive: 10
+
+layoutGiftNotif:
+  gifts:
+    - giftID: "gift_layout_like"
+      beginTime: 2019-09-15 08:31:00 (GMT+0800)
+      endTime: 2019-09-30 08:31:00 (GMT+0800)
+  period: 15
+  nthLive: 10
+
+programCommentPin:
+  enable: true
+
+pkFrameID: "pk_winner_frame"
+pkFrameURL: "https://cdn.17app.co/27d912fc-0061-4ab2-9acb-9520c4382451.png"
+pkIOSFrameURL: "https://cdn.17app.co/27d912fc-0061-4ab2-9acb-9520c4382451.png"
+
+showRockArea: true
+followerOnlyOptionMins: [0, 1, 5, 10]
+
+streamerTagging:
+  enable: true
+  startTime: 2021-05-17 14:00:00 (GMT+0800)
+  whiteList:
+    - "d255c081-473f-46d9-a444-04041cdc4db8" # 小衛17176
+    - "2e5c8de5-c860-452c-ade1-6193ca08a4d5" # vivianhuang85
+    - "c92f6b4f-acc6-4ea6-8057-dd7a9253c866" # jojowind
+
+enableUniqueViewCountEvent: true
+
+rejoin:
+  resumableSeconds: 570 # 9m30s
+  reviveChance: 20 # revive per 30s, 20 times is 10 mins

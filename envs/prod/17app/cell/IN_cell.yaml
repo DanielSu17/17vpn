@@ -1,0 +1,379 @@
+# virtual streamer region order
+virtualStreamRegionOrder: ["JP", "TW", "HK", "MY"]
+# position example: <type>_<tab>
+position:
+  # index start from 1
+  # Tab : hot
+  program_hot: [8, 11, 14, 17, 20, 23]
+  beltBanner_hot: 5
+  virtualStreamer_hot: 7
+  beltBannerLatest: 6
+  carouselBannerLatest: 4
+
+  # index start from 0
+  banner_tv: [6]
+  banner_clip: [0]
+# this is for setting position priority in hot cell
+priority:
+  - name: 2 # TRIVIA_ON_TV
+  - name: 4 # TRIVIA
+  - name: 1 # TVSHOW
+  - name: 5 # WEREWOLVES
+  - name: 3 # TVBANNER
+
+# Expand the cell size to 2x2 if the number of cells less/equal than the number
+enableExpandCellSize: true
+expandCellSizeThreshold: 5
+
+canKillZombies: true
+
+usingReducedResponse: false
+reducedResponseSupportedVersion:
+  ios: "3.120.0"
+  android: "2.34.0"
+
+# Fill streams in other region to fit the page limit in hot
+supplyOtherRegionInHot: true
+
+# entrance room setting for cells with CellType_ENTRANCE_ROOM
+# - position >= 1
+# - minRoomsRequired >= 1
+# - start, end support two formats: "06:10:00" or "2019-04-01 08:22:00"
+# - topic: (全民話題 1), (PK 2)
+# - topicTitles: string array
+# - whitelist: userID array
+entranceRooms:
+  - enable: true
+    position: 5
+    minRoomsRequired: 10
+    title: "today_hot_topic_title"
+    description: "today_hot_topic_entrance_room_des_date"
+    caption: "vote_entry_title"
+    vipFrameID: "FRAME_ENTRANCEROOMV2"
+    vipFrameURL: "https://cdn.17app.co/29a31d62-4602-4a57-9d40-4a9fafaacf40.png"
+    iosFrameURL: "https://cdn.17app.co/9042f826-c53d-45ab-87a5-861844ccb0d4.png"
+    iconID: "ICON_ENTRANCEROOM"
+    iconURL: "https://assets-17app.akamaized.net/8fb28053-6a8e-453b-9a65-36d1009b6894.png"
+    start: "00:00:00"
+    end: "23:59:59"
+    topic: 1
+    topicTitles:
+    topics: # deprecate soon
+      1:
+    whitelist:
+  - enable: true
+    position: 6
+    minRoomsRequired: 6
+    start: "00:00:00"
+    end: "23:59:59"
+    topic: 2 # PK
+    caption: "PK_entry_title"
+
+hotOptTabs:
+#  - id: label:trendy_liver
+#    name:
+#      key: streamer_label_trendy_liver
+#    highlight: true
+
+#  - id: label:famous_teacher
+#    name:
+#      key: streamer_label_famous_teacher
+#   # highlight: true
+#  - id: label:travel_expert
+#    name:
+#     key: streamer_label_travel_expert
+#    highlight: true
+ 
+#  - id: label:Rainbow_Pride_Day #彩虹主播驕傲開播！ 11/01 20:00~21:00
+#    name:
+#      key: streamer_label_highlight_rainbowpride
+#    highlight: false
+
+#  - id: label:whitedaywithyou #17過白色情人節 
+#    name:
+#      key: streamer_label_highlight_whitedaywithyou
+#    highlight: false
+
+#  - id: label:whitedaygiftforyou # 情人節禮物教學 
+#    name:
+#      key: streamer_label_highlight_whitedaygiftforyou
+#    highlight: false
+
+
+#  - id: label:Idol_Groups #偶像團體陪你回味 10/30 20:00~21:00
+#    name:
+#      key: streamer_label_highlight_idolgroups
+#    highlight: false
+
+#  - id: label:Halloween_Costume_Party #萬聖變裝暖身派對 10/28 20:00~21:00
+#    name:
+#      key: streamer_label_highlight_HalloweenCostumeParty
+#    highlight: false
+
+#  - id: label:Halloween_Party2020 #萬聖變裝主播派對 10/23 20:00~22:00
+#    name:
+#      key: streamer_label_highlight_HalloweenParty
+#    highlight: false 
+
+#  - id: label:Best_Bands #樂團歌曲之夜 10/23 21:00~22:00
+#    name:
+#      key: streamer_label_highlight_bestbands
+#    highlight: false
+
+#  - id: label:romantic_songs #每月14情人歌曲 10/14 21:00~22:00
+#    name:
+#      key: streamer_label_highlight_romanticsongs
+#    highlight: false
+
+#  - id: label:loveislove #愛最大X彩虹之夜 10/16 21:00~22:00
+#    name:
+#      key: streamer_label_highlight_loveislove
+#    highlight: false
+
+#  - id: label:goldenmelodyawards #致敬金曲獎神曲 10/9 21:00
+#    name:
+#      key: streamer_label_highlight_goldenmelody
+#    highlight: false
+
+#  - id: label:popthisweek #本週排行流行歌曲
+#    name:
+#      key: streamer_label_highlight_popthisweek
+#    highlight: false
+
+#  - id: label:moonfes #中秋烤肉必聽舞曲
+#    name:
+#      key: streamer_label_highlight_moonfes
+#    highlight: false
+
+#  - id: label:onesong #一首金曲上月球
+#    name:
+#      key: streamer_label_highlight_onesong
+#    highlight: false
+
+#  - id: label:rbnight #R&B 九九
+#    name:
+#      key: streamer_label_highlight_rbnight
+#    highlight: false
+
+#  - id: label:animalnight #萬獸派對動物之夜
+#    name:
+#      key: streamer_label_highlight_animalnight
+#    highlight: false
+
+#  - id: label:maydaynight #致敬五月天
+#    name:
+#      key: streamer_label_highlight_maydaynight
+#    highlight: false
+
+#  - id: label:jaychounight #周杰倫經典情歌夜
+#    name:
+#      key: streamer_label_highlight_jaychounight
+#    highlight: false
+
+#  - id: label:edmparty #舞動！電音派對！
+#    name:
+#      key: streamer_label_highlight_edmparty
+#    highlight: false
+
+#  - id: label:chinesesong #聽膩中文歌了嗎
+#    name:
+#      key: streamer_label_highlight_chinesesong
+#    highlight: false
+
+
+#  - id: label:band #心目中的神團
+#    name:
+#      key: streamer_label_highlight_band
+#    highlight: false
+
+#  - id: label:hotsong #網路神曲串燒
+#    name:
+#      key: streamer_label_highlight_hotsong
+#    highlight: false
+
+#  - id: label:westernmusicradio # 17西洋音樂電台
+#    name:
+#      key: streamer_label_highlight_westernmr
+#    highlight: false
+
+#職人
+  - id: label:Professional
+    name:
+      key: streamer_label_professional
+  - id: latest
+    name:
+      key: tab_opt_newest
+    minStreamsRequired: 5
+    highlight: true
+#民視鳳凰星
+#  - id: label:formosa_tv
+#    name:
+#      key: streamer_label_formosa_tv
+#    highlight: false
+#  - id: label:singer
+#    name:
+#      key: streamer_label_singer
+#時事評論
+#  - id: label:pundit
+#    name:
+#      key: streamer_label_pundit
+  - id: pk
+    name:
+      key: tab_opt_pk
+    minStreamsRequired: 6 # 2個直播間一組PK，3組以上顯示
+  - id: label:acoustic
+    name:
+      key: streamer_label_acoustic
+  - id: label:player
+    name:
+      key: streamer_label_player
+  - id: label:fortune_teller
+    name:
+      key: streamer_label_twfortune_teller
+  - id: music
+    name:
+      key: tab_opt_music
+    highlight: true
+  - id: label:show
+    name:
+      key: streamer_label_show
+#  - id: label:male
+#    name:
+#      key: tab_opt_male
+#  - id: label:female
+#    name:
+#      key: tab_opt_female
+
+#-----------過去的主播曝光計畫--------------------
+  # - id: label:campus_special_plan
+  #name:
+  #  key: streamer_label_campus_special_plan
+  #highlight: true
+  # - id: label:foreigner
+  #  name:
+  #    key: streamer_label_foreigner
+  # highlight: true
+  #- id: label:mother_day
+  #  name:
+  #    key: streamer_label_mother_day
+  #  highlight: true
+  #- id: label:play_and_sing_special_plan
+  #  name:
+  #    key: streamer_label_play_and_sing_special_plan
+  # highlight: true
+  # - id: label:taiwanese_speaking_streamer
+  #name:
+  #  key: streamer_label_taiwanese_speaking_streamer
+  #highlight: true
+
+#-----------以下skyeye可動--------------------
+
+hotOptSuperTopTabList: #這邊一定要有四個分類，會從每個分類拿熱一出來排。如果不想設定四個分類，可以設定不存在的label:a,label:b等即可。另外要注意，不能設定兩個以上一樣的分類。
+  - label:show
+  - label:a
+  - label:c
+  - label:b
+
+#  - label:fortune_teller
+
+hotOptSuperTopTabExtraList: #這邊不要把男生女生拿掉。這裡會按順序，把每個分類拿光，才拿下一個
+  - label:show
+  - label:pundit
+  - label:acoustic
+  - label:player
+  - label:singer
+  - label:male
+  - label:female
+  - label:singer
+  - label:fortune_teller
+#  - web:music
+hotOptSuperTopTabBlacklist:
+  - a23d424f-f16c-4058-9d61-0e4fd99654e4 #友騎士
+  - 11e2a0c4-87ea-4c15-8e16-517575ec14b4 #鋼之塔羅🔮萊納Ryner
+  - dfc2a063-b566-4edd-8881-bee21fd1c5e1 #罕病主播-小甯
+  - 6a96cfa9-6ea4-4bd0-b7a5-6385105fc339 #西卡👑女王陛下⚜️
+  - bd818fae-cae4-486a-8caf-64d910442680 #王隆龍
+  - dc9266a9-e229-42e1-8aa0-56073a9003e9 #哈尼爾森♊Nelson
+  - 82c4b6c5-1b27-438c-ada8-630544af96a6 #🎤FB愛唱歌的魏陽陽
+  - a90d6a72-a897-4f64-4b13-552404c06c0d #胖虎🐯Robert
+  - 2fbdc276-b4dc-433e-5080-119a69f8d644 #大風神～鐵板神算～
+  - 0b2b42ca-838c-4faa-5518-299233983e87 #🍔Hello喬治哥🍇
+  - e7f163f3-21d9-471f-9368-f223a81167c6 #倪耐斯
+  - 8522b3d8-9aa1-45fc-8da2-4f7c8aadf319 #元楷YuanKai
+  - 98be12ee-1325-4655-8f50-13a55175b137 #🐷豬哥會社🐷銘爸❤️
+  - acc9aeaf-b0a0-4f48-b359-07aa50efef0c #瓦歷斯🎤
+  - 373399cd-c746-4287-8314-c501a8417b74 #庭軒
+  - 19cd299b-2f48-4b4b-b97e-5e92d94ccd9c #嗨咖公主小咩
+  - dcac64e5-88fe-49ea-8a47-1ef5ef6cd473 #sandy_peiyu
+  - 5864f322-ac07-4bca-a71e-e9a453529e53 #陳泑伶yoyo
+  - 17452fbe-d7a6-47d6-a885-14e3857b8245 #love_881126
+  - a4e8307b-0c96-40e9-4b98-67408f550418 #琳達Oni🍰
+  - 6cb6c9bd-6b6d-46a3-4536-ce4f4989558c #胖醬酪梨🥑🎤
+  - 0687b172-7521-4f00-6ba1-33bd062b9f8d #大阪燒容容💜
+  - e50a9b62-74ce-4d64-87c2-dbbebb519882 #開心果Melody🌻🌸🌸
+  - 61d957d8-71ef-4342-be65-fcd1fcfc97b6 #黃美fanny
+  - 1028552f-29de-4cd3-aa45-cd6fcc955652 #芊芊_Sia
+  - cb84d4ce-97a5-4724-4631-6635b9cc4759 #紫色泡泡
+  - 2f655bb9-be7c-49a7-8243-674b30e2b051 #波姐🦊杜蕾絲
+  - 09c6f4c4-fd7d-4e75-bb6c-68d585f518d5 #NJ🖤恩潔
+  - 8c4b5982-72e4-4cf6-9c22-5e919d5e998e #艾瑪兒Emma
+  - f5a95a4d-d68f-4902-6a02-3083a572f75b #恐龍系少女🦖淇淇🦕
+  - a8babfd5-e88a-400c-88fd-edfc1e6adff3 #郭璿RayKuo
+  - 78ba990a-e1ba-4078-a590-20760d581c01 #17主持人-蜆仔🎤喇啊🎤
+#-----------以上skyeye可動--------------------
+
+hotOpt:
+  onlyWhitelist: false
+  whitelist:
+
+# VodlistPosition means 0: Highlight上, 1-n: 第1-n個highlight下, n+1: 腰帶Banner下
+vodlistPosition: 1
+vodlist: #筆記：超過第15個可能就沒人看
+  - bc016c63-ea39-4ad7-9407-7cdf38b55caf #夢想Sing樂園
+  - 74f02b28-e8f5-4db2-8f69-5f22083fb6a0 #17瘋開箱
+  - 5c4f0b87-35e4-4adb-890f-a82b54ea099a #新竹攻城獅
+  - 4212d371-4acf-4d8c-b3b8-9e409925676a #女神promo
+  - 5f070585-059d-441b-9d34-96be114462b5 #艾莉絲x女神
+  - 5baff8ac-6936-439c-9145-3e449cadf56f #愛覺醒
+  - b25581e0-bfaa-48d5-b23c-1021f3bc1816 #功能介紹EP1－美顏功能
+  - 0ab8585f-a675-4c4d-bee4-8dfe6187f57b #想和你
+
+  # - 15ad349d-72f9-4a77-8340-939a3146e63f #趣你的娛樂｜大來賓：吳姍儒Sandy、鼓鼓呂思緯
+  # - a60e426c-3696-4898-927f-c9b8937594e2 #趣你的娛樂｜大來賓：柯佳嬿、許光漢
+  # - 543d5ae3-f105-4b87-9906-1650f3f34c3c #艾莉兒~觀眾點播，你們點我來唱!
+  # - 36c3633b-541b-4960-840b-72988397ec0f #台視17唱|情歌王子黃品源 演唱多首經典好歌 讓你一次聽讓你一次聽個夠！
+  # - aa7abb64-dc17-4df0-8d56-1dab3ad7e694 #WHO偏袒中國 甚至稱台灣為「中國台灣」？
+  #- c55669d7-f60a-4583-8f60-a37ecfb3aa71 #風田納豆配飯吃 聊起日本近況
+  #-be550109-cb05-40cc-ab21-67f2668b581c #口罩日生產數量減少? 俠醫來告訴你為甚麼
+  #- acb324ad-7965-4317-a915-078c5383e3aa #郭書瑤的哲學小教室 愛自己是接受自己的不
+  # - d37fb2b6-d736-431c-ab0e-c469fabdc0f8 #真理女神美麗妄娜 現場絲襪穿脫好性感
+  # - 5d8f0b71-1b39-40c1-8353-e5689a5c9242 #杜力不搞笑 超神靈魂歌聲嚇死你
+  #- d568f336-23c8-463a-b0ce-f2c5d66865dc #前主播吳怡萱初次登場
+  #- 91dc56ea-b823-45fe-b2b0-b55f54e41258 #David's Angels｜全新遊戲獎勵上線啦！兩隊將擦出什麼火花
+  # - fa327c58-f58f-4b17-ad68-fb85f9cdb7a4 #唱到累，那就一起與風田聊天吧
+  # - c9e935ef-d036-41d1-ad79-84b63b79c176 #武漢肺炎病毒量的多寡
+  # - fae5aa3e-7a45-47a0-956c-23f450712264 #大年初二快看九澤CP來跟寶寶們拜年囉❤️
+  #-e50159c4-04a4-4044-8ae2-4c6c23f49190 #美麗的特派主播們，為電影《殺不了的他與死不了的她》拍攝宣傳短片
+  #- 9d7dd748-fc8d-4338-9b12-28124fca0442 #吳崢晨報，台灣防疫不停歇!
+  #- 07e059d0-2fec-4d6c-b864-11eccd7b0c1d #三原慧悟上節目搞怪 熨斗燙蛋卷給大家吃？
+  #- c306913c-6098-49aa-b59a-959e557b1e47 #談戀愛最雷星座是天蠍？紳士痞子告訴你
+  #- c4df52bb-b108-46b0-8056-ecbe8a62447e #肺炎橫掃義大利造成900死！跟你公布五大原因
+  #- f2ee6966-e737-48c0-bda4-5e00b2b128df #紅軍勢力滲透公廟 信徒阿公阿嬤被洗腦？
+  #- d9102b7c-81dc-47ab-993c-771665fbd8fa #趣你的娛樂｜大來賓：阿Ken x 紀培慧、康茵茵
+  #- e62fae90-ec8c-41a4-867a-8852cba81d3f #健保費升至12000元 為抵制「黃安」們？！
+  #- c0e6c26a-d1f7-4657-bba0-d0bee30ab08e #酬庸升級成「慈庸」？ 洪慈庸進軍立院賺飽飽！
+  #- 1443aac7-0794-43b7-aa39-0721cb856d1e #小賴的新歌上線！「下次我會把你抓緊 」~小賴Lai
+  #- d568f336-23c8-463a-b0ce-f2c5d66865dc #前主播吳怡萱初次登場~一起看看專業的表現吧!
+  #- 8de198ab-8095-448d-b3b4-6002f517515b #零九尷尬了 自創品牌英文名子不會唸？
+  #- 528c0c2e-f61e-482d-b4cb-abb710c38e79 #邱鋒澤動人神曲三連發 唱進你心底
+  #- 7195bcd9-0e4e-4bec-9bfa-b9789bc4b1b4 #視網膜被反鎖在飯店陽台!?爆笑百出
+  #- 6396708a-bef0-44d9-a2ae-db05575771b9 #趣你的娛樂｜大來賓：三原慧悟
+  #- 3c0ebc88-a46a-4698-a0d5-7fd27d60bd88 #飛機上活春宮？ 天菜小姐告訴你
+
+# the setting of the available duration when they complete the first stream as the qualified D0 new streamer; in hour
+qualifiedFirstStreamDuration: 24
+# the setting of the minimum duration for the qualified D0 new streamer; in minute
+firstStreamForMinimumDuration: 0
+
+# deduplicate streams from the same user in hot page
+enableHotDedup: true
