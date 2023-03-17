@@ -4,6 +4,16 @@
 # - labelID: mapping for labels table id
 
 labelInfos:
+
+  - id: "data_team_recommendation" #大家都在看(data_team_recommendation)
+    type: 3
+    label:
+      key: "streamer_label_explorepage_subtab"
+    featured: true
+    iconURL: " "
+    isHide: true
+    order: 20
+
   - id: "tsgspecial" # 台北電玩展
     type: 3
     label:
@@ -877,6 +887,7 @@ typeCheckAndroidVersion: 2.3.92
 
 # 探索頁面會出現的label，要有4個以上的主播至少有3則貼文(按more才能顯示)
 exploreLabels:
+  - data_team_recommendation
 #  - halloween_make_party2021
 #  - livefestival
   - 17newstar
@@ -3117,6 +3128,20 @@ useNewLabelWhiteList: false
 #     - userList: (If the start time and end time are not set, it will take effect directly without restriction)
 #       - userID0
 newLabelWhiteList:
+
+  data_team_recommendation:
+    - userList:
+      - "42c5b4be-4b43-46cc-b612-4bc53f370eb0" #甜莘Catherine
+      - "6a2eb71a-aa2e-4813-a9dd-7b75e32ee9a5" # 旻旻:crystal_ball:nicole
+      - "833a936a-717e-4957-832b-fba1e817588e" # 小鹿:deer:_lu
+      - "13012fee-6848-467d-7098-4858802eb20a" # 心動跳跳糖
+      - "8f06ea15-e512-4d71-81c0-b059a260e4fd" # 買一箱送易薌:package
+      - "030439ba-3c02-4496-ac51-70c1619af541" # 辰辰醬:guitar
+      - "90809b2c-26f7-4408-942a-505042a6c1c4" # ws大美珊
+      - "c184476b-4752-4e62-82fa-77ff3bd97fe8" # 辛巴阿貝:lion_face
+      - "175387b2-35ed-4ff3-8d25-258abc5e0118" # 南宫韵雪
+      - "6b7ea879-a467-44d9-a87c-36019ce2c8b1" # 主啵波波:sparkles
+
   tsgspecial:
     - startTime: "2023-02-01 18:35:00 (GMT+0800)"
       endTime: "2023-02-05 23:59:59 (GMT+0800)"
