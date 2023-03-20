@@ -21,10 +21,7 @@ rtmp_providers:
 - name: QINIU
   quality_support: 0
   expire_after_hours: 6
-  weight: 10
-  region_weights:
-    TW: 10
-    US: 0
+  weight: 0
   users:
   - 37d9e764-5eef-44f8-8e60-a06f5ea7e001 # qaprogram1
   - 82111219-2b6a-4898-ba41-3ee305f46de7 # androidtest
@@ -66,7 +63,7 @@ rtmp_providers:
   
 - name: WANSU
   quality_support: 1
-  weight: 20
+  weight: 0
   region_weights:
     CN: 100
   users:
