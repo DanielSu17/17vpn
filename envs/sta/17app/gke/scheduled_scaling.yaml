@@ -106,18 +106,12 @@
   - name: k8ssta-concert-trade-main
     minReplicas: 30
 
-# 0313 redis exp
-- startTime: "2023-03-16 11:30:00 (GMT+0800)"
-  endTime: "2023-03-16 14:00:00 (GMT+0800)"
+# 0321 exp
+- startTime: "2023-03-21 11:30:00 (GMT+0800)"
+  endTime: "2023-03-21 14:00:00 (GMT+0800)"
   HPAConfigs:
-  - name: k8ssta-goapi-main
-    minReplicas: 80
-  - name: k8ssta-golives-main
-    minReplicas: 80
   - name: k8ssta-gotrade-main
-    minReplicas: 40
+    minReplicas: 20
   - name: k8ssta-revprox-tw-main
     minReplicas: 36
-  - name: k8ssta-gocells-main
-    minReplicas: 40
 
