@@ -66,12 +66,88 @@ blacklist:
 merchandiseBlocker:
   enable: true
   rules:
-    - startTime: "2022-09-27T13:00:00+08:00"
+    # Only allow PH to purchase media17_points_265 series
+    - startTime: "2023-03-21T13:00:00+08:00"
       errorCode: 71004
       desc: "deprecated IAP packages"
       payMethods:
         - 36   # MethodIOS
         - 37   # MethodAndroid
+      allowIPRegions:
+        - PH
+      merchandiseIDs:
+        - media17_points_265
+        - media17_points_1360
+        - media17_points_2760
+        - media17_points_6650
+        - media17_points_12200
+        - media17_points_29000
+
+    # Only allow JP to purchase media17_points_330 series
+    - startTime: "2023-03-21T13:00:00+08:00"
+      errorCode: 71004
+      desc: "deprecated IAP packages"
+      payMethods:
+        - 36   # MethodIOS
+        - 37   # MethodAndroid
+      allowIPRegions:
+        - JP
+      merchandiseIDs:
+        - media17_points_330
+        - media17_points_1720
+        - media17_points_3540
+        - media17_points_8550
+        - media17_points_15420
+        - media17_points_35980
+
+    # Only block JP, PH to purchase media17_points_230 series
+    - startTime: "2023-03-21T13:00:00+08:00"
+      errorCode: 71004
+      desc: "deprecated IAP packages"
+      payMethods:
+        - 36   # MethodIOS
+        - 37   # MethodAndroid
+      blockIPRegions:
+        - JP
+        - PH
+      merchandiseIDs:
+        - media17_points_230
+        - media17_points_1210
+        - media17_points_2500
+        - media17_points_6000
+        - media17_points_10800
+        - media17_points_25500
+
+    # Block deprecated products (MY, SG region) in all regions
+    - startTime: "2023-03-21T13:00:00+08:00"
+      errorCode: 71004
+      desc: "deprecated IAP packages"
+      payMethods:
+        - 36   # MethodIOS
+        - 37   # MethodAndroid
+      merchandiseIDs:
+        # MY
+        - media17_points_275
+        - media17_points_1350
+        - media17_points_2850
+        - media17_points_7050
+        - media17_points_12700
+        - media17_points_29800
+        # SG
+        - media17_points_1570
+        - media17_points_3480
+        - media17_points_7970
+        - media17_points_14700
+
+    - startTime: "2022-09-27T13:00:00+08:00"
+      endTime: "2023-03-21T13:00:00+08:00"
+      errorCode: 71004
+      desc: "deprecated IAP packages"
+      payMethods:
+        - 36   # MethodIOS
+        - 37   # MethodAndroid
+      blockIPRegions:
+        - TW
       ipRegions:
         - TW
       merchandiseIDs:
