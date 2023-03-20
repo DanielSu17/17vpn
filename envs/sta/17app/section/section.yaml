@@ -121,6 +121,16 @@ sections:
     style: 3
     minGrids: 1
     more: true
+  - id: Label #實力歌手
+    labelID: singer
+    name:
+      key: streamer_label_singer
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 3
+    more: true
+    orderModel: 2
   - id: Suggestion # 猜你可能喜歡
     name:
       key: tab_hot_2019q4_follow_suggestion
@@ -233,16 +243,6 @@ sections:
     minGrids: 2 # 2個直播間一組PK，3組以上顯示
     style: 3
     more: true
-  - id: Label #實力歌手
-    labelID: singer
-    name:
-      key: streamer_label_singer
-    enable: true
-    dedup: true
-    minGrids: 1
-    style: 3
-    more: true
-    orderModel: 2
   - id: Label #彈唱歌手
     labelID: acoustic
     name:
