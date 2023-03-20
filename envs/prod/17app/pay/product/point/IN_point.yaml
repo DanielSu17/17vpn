@@ -4,11 +4,49 @@
 # // | VIP |  1  | x 天 尊榮寶寶 |
 
 # // example of firstPurchaseType
-# // |     Type      | Value | 
-# // |    -------    |  ---  | 
+# // |     Type      | Value |
+# // |    -------    |  ---  |
 # // |  LimitedTime  |   0   | 限時1次
 # // |    Career     |   1   | 限時生涯首儲
 # // |    UnLimit    |   2   | 限時不限次數
+
+# // example of userGroup
+# // userGroup:
+# //   userIDDigits: ["1","2","3","4","a","b","c"] # The last character of userID (1~9, a-f) 
+# //   iapInfo:
+# //     neverUse: true                            # The user has not used IAP in their career.
+# //     latestHalfMonthAmount: 
+# //       eq: 10                                  # amount = 10 USD 
+# //       gt: 15                                  # amount > 15 USD
+# //       gte: 15                                 # amount >= 15 USD
+# //       lt: 20.5                                # amount < 20.5 USD
+# //       lte: 20.5                               # amount <= 20.5 USD
+# // Examples iapInfo of userGroup 
+# // userGroup:
+# //   iapInfo:
+# //     neverUse: true
+# // 
+# // userGroup:
+# //   iapInfo:
+# //     latestHalfMonthAmount:
+# //       eq: 0
+# // 
+# // userGroup:
+# //   iapInfo:
+# //     latestHalfMonthAmount:
+# //       gt: 0
+# //       lte: 10
+# // 
+# // userGroup:
+# //   iapInfo:
+# //     latestHalfMonthAmount:
+# //       gt: 10
+# //       lte: 50
+# // 
+# // userGroup:
+# //   iapInfo:
+# //     latestHalfMonthAmount:
+# //       gt: 50
 
 eventBasedIAP:
 #TW_2023_CNY_AB_TEST_1A
@@ -3497,34 +3535,7 @@ defaultIAPs:
     pointProducts:
       - productID: "media17_points_25500"
         bonusPoint: 0
-        shouldHighlight: true
-      - productID: "media17_points_10800"
-        bonusPoint: 0
         shouldHighlight: false
-      - productID: "media17_points_6000"
-        bonusPoint: 0
-        shouldHighlight: false
-      - productID: "media17_points_2500"
-        bonusPoint: 0
-        shouldHighlight: false
-      - productID: "media17_points_1210"
-        bonusPoint: 0
-        shouldHighlight: false
-      - productID: "media17_points_230"
-        bonusPoint: 0
-        shouldHighlight: false
-  - endTime: "2022-09-27T13:00:00+08:00"
-    layoutInfo:
-      highlightBgURL: "https://cdn.17app.co/b505d3b8-994d-42cd-a86f-304ac491040c.png"
-      highlightIconURL: "https://assets-17app.akamaized.net/eeae83cf-ae8b-48a8-b465-a5180f87b8f9.png"
-    colorInfo:
-      pointColor: "#28232D"
-      bonusPointColor: "#F5487D"
-      priceColor: "#28232D"
-    pointProducts:
-      - productID: "media17_points_25500"
-        bonusPoint: 0
-        shouldHighlight: true
       - productID: "media17_points_10800"
         bonusPoint: 0
         shouldHighlight: false
