@@ -40,8 +40,8 @@ merchandises:
     # abtestName: "" #禮包測試相關的abtest名稱, 需要 abtest.yaml也做相關的設定   
 
 #shiin test for Android 日本
-  - intervalID: MINV-2MROs51hYzzT3PlQ82yDMynGl6j
-    merchandiseID: media17_giftpackage_tier1_202202_jp
+  - intervalID: MINV-2NGAu0cK8ZCc1UfNqa41lbC2nwG
+    merchandiseID: media17_giftpackage_tier1_2023_jp
     productsOrder:
       -
     bonusesOrder:
@@ -51,23 +51,50 @@ merchandises:
       displayCountdown: true
       countdownSecs: 86400
       title:
-        key: iap_store_giftpackage_summer_us
-      titleImageURL: https://cdn.17app.co/392ead48-62dc-4321-9a86-923458ce19ab.png
+        key: iap_store_giftpackage_populargift
+      titleImageURL: https://cdn.17app.co/399f2dbe-5000-4a28-ac2b-dad236145f94.png
       discountImageURL:
       description:
         - imageURL: https://cdn.17app.co/8cab3332-2e53-48e2-a588-dc469b091641.png
           text:
-            key: iap_store_giftpackage_dialog_gift_desc
+            key: iap_store_giftpackage_dialog_gift_desc_populargift
     purchaseType: 3
     # taInfo:
     #     registerRange:
     #       dayStart: 0
-    #       dayEnd: 7
-    #     type: 
-    # abtestName: "" #禮包測試相關的abtest名稱, 需要 abtest.yaml也做相關的設定
+    #       dayEnd: 0
+    #     type: 3
+    # abtestName: ""
+
+#shiin test for iOs 日本
+  - intervalID: MINV-2NGAu1LE6Pl7OTqc3ODmElaEnPV
+    merchandiseID: media17_giftpackage_tier1_2023_jp
+    productsOrder:
+      -
+    bonusesOrder:
+      - gift_small_dog_combo_1_10
+      - gift_2303_jp_pdt_charge_01_1_10
+    addons:
+      displayCountdown: true
+      countdownSecs: 86400
+      title:
+        key: iap_store_giftpackage_populargift
+      titleImageURL: https://cdn.17app.co/399f2dbe-5000-4a28-ac2b-dad236145f94.png
+      discountImageURL:
+      description:
+        - imageURL: https://cdn.17app.co/8cab3332-2e53-48e2-a588-dc469b091641.png
+          text:
+            key: iap_store_giftpackage_dialog_gift_desc_populargift
+    purchaseType: 3
+    # taInfo:
+    #     registerRange:
+    #       dayStart: 0
+    #       dayEnd: 0
+    #     type: 3
+    # abtestName: ""
 
 # test for iOS 日本
-  - intervalID: MINV-25DtwOs8RveQ4nYbQr25Upt1SZ9
+  - intervalID: MINV-2NGAu1LE6Pl7OTqc3ODmElaEnPV
     merchandiseID: media17_giftpackage_tier1_202202_jp
     productsOrder:
       -
