@@ -43,7 +43,7 @@ cat << EOF >> $tmp_file
   - name: k8sprod-golives-main
     minReplicas: 85
   - name: k8sprod-gotrade-main
-    minReplicas: 12
+    minReplicas: 30
   - name: k8sprod-gocells-main
     minReplicas: 25
   - name: k8sprod-gousersearch-main
@@ -65,7 +65,7 @@ cat << EOF >> $tmp_file
   - name: k8sprod-golives-main
     minReplicas: 85
   - name: k8sprod-gotrade-main
-    minReplicas: 12
+    minReplicas: 30
   - name: k8sprod-gocells-main
     minReplicas: 25
   - name: k8sprod-gousersearch-main
@@ -86,7 +86,7 @@ cat << EOF >> $tmp_file
   - name: k8sprod-golives-main
     minReplicas: 85
   - name: k8sprod-gotrade-main
-    minReplicas: 12
+    minReplicas: 30
   - name: k8sprod-gocells-main
     minReplicas: 25
   - name: k8sprod-gousersearch-main
