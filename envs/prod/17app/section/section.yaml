@@ -56,18 +56,49 @@ sections:
     dedup: true
     style: 6
     minGrids: 5
-    more: true 
+    more: true
 
-  - id: Label #Level 70+
-    labelID: level_70_plus
+  - id: Label #實力歌手
+    labelID: singer
     name: 
-      key: streamer_label_70_plus
+      key: streamer_label_singer
     enable: true
     dedup: true
-    minGrids: 3
+    minGrids: 5
     style: 3
     more: true
     orderModel: 2
+  - id: Label #彈唱歌手
+    labelID: acoustic
+    name: 
+      key: streamer_label_acoustic
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    orderModel: 2
+  - id: Label #演奏達人
+    labelID: player
+    name: 
+      key: streamer_label_player
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    orderModel: 2
+  - id: Label #音樂
+    labelID: tw_t_music
+    name: 
+      key: streamer_label_music
+    enable: true
+    dedup: true  
+    minGrids: 5
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2 
 
   - id: Label # 新手引導員 Welcome new fans
     labelID: welcomenewfans
@@ -177,47 +208,18 @@ sections:
   #   style: 3
   #   more: true
   #   orderModel: 2
-  - id: Label #實力歌手
-    labelID: singer
+
+  - id: Label #Level 70+
+    labelID: level_70_plus
     name: 
-      key: streamer_label_singer
+      key: streamer_label_70_plus
     enable: true
     dedup: true
-    minGrids: 5
+    minGrids: 3
     style: 3
     more: true
     orderModel: 2
-  - id: Label #彈唱歌手
-    labelID: acoustic
-    name: 
-      key: streamer_label_acoustic
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    orderModel: 2
-  - id: Label #演奏達人
-    labelID: player
-    name: 
-      key: streamer_label_player
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    orderModel: 2
-  - id: Label #音樂
-    labelID: tw_t_music
-    name: 
-      key: streamer_label_music
-    enable: true
-    dedup: true  
-    minGrids: 5
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
+
   - id: Label #繪畫達人
     labelID: visual_artists
     name: 
