@@ -12,17 +12,20 @@
 # // | premiumbaby  | 2     | NaN 
 # // | barrage      | 3     | baby, normal, rocket, spaceship
 merchandises:
-#Holden新手大禮包 2.99 -Android
-  - intervalID: MINV-26Bj1OyT0ugZFCKxUfMks5VPrjv
-    merchandiseID: media17_giftpackage_tier3_202203
+#Barton 新手大禮包 8.99 -Android
+  - intervalID: MINV-2N2b0dVNIKAgsyWIzkiPECn1skE
+    merchandiseID: media17_giftpackage_tier1_2023_global
     productsOrder: #product的順序，product不可為0
       - barrage_normal_10
-      - premiumbaby_720_hrs
     bonusesOrder: #bonus的順序，如果只有bouns請移至productOrder
-      - gift_giftpack_3d_welcome_3_30
-      - gift_level_up_gift_3_tailed_0_1_30
-      - gift_poker_3_30
-      - gift_gift_texture_cat_1_30
+      - gift_2202_global_magic_5_30
+      - gift_2021_nine_tailed_fox_sakura_lv1_1_30
+      - gift_2202_lovebirds_0_1_30
+      - gift_gift_texture_fingerheart_waveoflove_1_30
+      - gift_2105_performance_bubble_1_30
+      - gift_2209_bubblymermaid_1_30
+      - gift_heart_curtain_1_30
+      - gift_voucher_daily_reward_newyearcat_1_30
     addons:
       displayCountdown: false #要不要顯示倒數計時
       countdownSecs: 86400
@@ -30,7 +33,7 @@ merchandises:
       title:
         key: iap_store_giftpackage_newbie
       titleImageURL: https://cdn.17app.co/392ead48-62dc-4321-9a86-923458ce19ab.png
-      discountImageURL: https://cdn.17app.co/ad90cea6-cb25-4d0c-881e-cae8eca70f6c.png
+      discountImageURL: https://cdn.17app.co/8ba40b8a-16cc-4432-9ded-ad0271d89507.png
       description:
         - imageURL: https://cdn.17app.co/8cab3332-2e53-48e2-a588-dc469b091641.png
           text:
@@ -47,25 +50,28 @@ merchandises:
         type: 3
     abtestName: "" #禮包測試相關的abtest名稱, 需要 abtest.yaml也做相關的設定
 
-#Holden新手大禮包 2.99 - iOS
-  - intervalID: MINV-26Bj1OpIgu17H2dcnG7bWVA8B4R
-    merchandiseID: media17_giftpackage_tier3_202203
+#Barton 新手大禮包 8.99 - iOS
+  - intervalID: MINV-2N2b0fpkymMt6rFpADYm3blr6LB
+    merchandiseID: media17_giftpackage_tier1_2023_global
     productsOrder: #product的順序，product不可為0
       - barrage_normal_10
-      - premiumbaby_720_hrs
     bonusesOrder: #bonus的順序，如果只有bouns請移至productOrder
-      - gift_giftpack_3d_welcome_3_30
-      - gift_level_up_gift_3_tailed_0_1_30
-      - gift_poker_3_30
-      - gift_gift_texture_cat_1_30
+      - gift_2202_global_magic_5_30
+      - gift_2021_nine_tailed_fox_sakura_lv1_1_30
+      - gift_2202_lovebirds_0_1_30
+      - gift_gift_texture_fingerheart_waveoflove_1_30
+      - gift_2105_performance_bubble_1_30
+      - gift_2209_bubblymermaid_1_30
+      - gift_heart_curtain_1_30
+      - gift_voucher_daily_reward_newyearcat_1_30
     addons:
       displayCountdown: false #要不要顯示倒數計時
       countdownSecs: 86400
       #距離結束時間多少以前開始 highlight
       title:
-        key: iap_store_giftpackage_newbie
+        key: iap_store_giftpackage_newbie #done change
       titleImageURL: https://cdn.17app.co/392ead48-62dc-4321-9a86-923458ce19ab.png
-      discountImageURL: https://cdn.17app.co/ad90cea6-cb25-4d0c-881e-cae8eca70f6c.png
+      discountImageURL: https://cdn.17app.co/8ba40b8a-16cc-4432-9ded-ad0271d89507.png
       description:
         - imageURL: https://cdn.17app.co/8cab3332-2e53-48e2-a588-dc469b091641.png
           text:
@@ -81,6 +87,77 @@ merchandises:
           dayEnd: 0
         type: 3
     abtestName: "" #禮包測試相關的abtest名稱, 需要 abtest.yaml也做相關的設定
+
+#Holden新手大禮包 2.99 -Android
+#  - intervalID: MINV-26Bj1OyT0ugZFCKxUfMks5VPrjv
+#    merchandiseID: media17_giftpackage_tier3_202203
+#    productsOrder: #product的順序，product不可為0
+#      - barrage_normal_10
+#      - premiumbaby_720_hrs
+#    bonusesOrder: #bonus的順序，如果只有bouns請移至productOrder
+#      - gift_giftpack_3d_welcome_3_30
+#      - gift_level_up_gift_3_tailed_0_1_30
+#      - gift_poker_3_30
+#      - gift_gift_texture_cat_1_30
+#    addons:
+#      displayCountdown: false #要不要顯示倒數計時
+#      countdownSecs: 86400
+#      #距離結束時間多少以前開始 highlight
+#      title:
+#        key: iap_store_giftpackage_newbie
+#      titleImageURL: https://cdn.17app.co/392ead48-62dc-4321-9a86-923458ce19ab.png
+#      discountImageURL: https://cdn.17app.co/ad90cea6-cb25-4d0c-881e-cae8eca70f6c.png
+#      description:
+#        - imageURL: https://cdn.17app.co/8cab3332-2e53-48e2-a588-dc469b091641.png
+#          text:
+#            key: iap_store_giftpackage_dialog_barrage_desc
+#        - imageURL:
+#          text:
+#            key: iap_store_giftpackage_new_year_first_purchase
+#    purchaseType: 1
+#    taInfo: #受眾
+#        registerRange:
+#          dayStart: 0
+#          #若為0則不受限制
+#          dayEnd: 0
+#        type: 3
+#    abtestName: "" #禮包測試相關的abtest名稱, 需要 abtest.yaml也做相關的設定
+
+#Holden新手大禮包 2.99 - iOS
+#  - intervalID: MINV-26Bj1OpIgu17H2dcnG7bWVA8B4R
+#    merchandiseID: media17_giftpackage_tier3_202203
+#    productsOrder: #product的順序，product不可為0
+#      - barrage_normal_10
+#      - premiumbaby_720_hrs
+#    bonusesOrder: #bonus的順序，如果只有bouns請移至productOrder
+#      - gift_giftpack_3d_welcome_3_30
+#      - gift_level_up_gift_3_tailed_0_1_30
+#      - gift_poker_3_30
+#      - gift_gift_texture_cat_1_30
+#    addons:
+#      displayCountdown: false #要不要顯示倒數計時
+#      countdownSecs: 86400
+#      #距離結束時間多少以前開始 highlight
+#      title:
+#        key: iap_store_giftpackage_newbie
+#      titleImageURL: https://cdn.17app.co/392ead48-62dc-4321-9a86-923458ce19ab.png
+#      discountImageURL: https://cdn.17app.co/ad90cea6-cb25-4d0c-881e-cae8eca70f6c.png
+#      description:
+#        - imageURL: https://cdn.17app.co/8cab3332-2e53-48e2-a588-dc469b091641.png
+#          text:
+#            key: iap_store_giftpackage_dialog_barrage_desc
+#        - imageURL:
+#          text:
+#            key: iap_store_giftpackage_new_year_first_purchase
+#    purchaseType: 1
+#    taInfo: #受眾
+#        registerRange:
+#          dayStart: 0
+#          #若為0則不受限制
+#          dayEnd: 0
+#        type: 3
+#    abtestName: "" #禮包測試相關的abtest名稱, 需要 abtest.yaml也做相關的設定
+
 #新年禮包 5.99 -Android
 #  - intervalID: MINV-24JHf8nAhP95xNfRuEWGPMy7ZJ7
 #    merchandiseID: media17_giftpackage_tier6_202201_hk
