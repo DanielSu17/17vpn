@@ -30,7 +30,7 @@ missions:
     unit_type: 1
     reward_feed_id: feed_water
     daily_reward_limit: -1
-    threshold: 900
+    threshold: 300
   # 當日直播滿 1 小時
   - id: pet_mission_start_live_hour
     type: 1
@@ -38,7 +38,7 @@ missions:
     unit_type: 1
     reward_feed_id: feed_milk
     daily_reward_limit: -1
-    threshold: 3600
+    threshold: 600
   # 收禮 (Wave coins > 30 / 個） 當日上限 30 次
   - id: pet_mission_receive_coins
     type: 2
@@ -57,7 +57,7 @@ missions:
     unit_type: 2
     unit_i18n_key: pet_my_mission_fans_limit
     reward_feed_id: feed_cans
-    daily_reward_limit: 30
+    daily_reward_limit: 10
     threshold: 1
   # 觀看直播滿 1 小時
   - id: pet_mission_watch_live_hour1
@@ -66,7 +66,7 @@ missions:
     unit_type: 1
     reward_feed_id: feed_milk
     daily_reward_limit: -1
-    threshold: 3600
+    threshold: 300
   # 觀看直播滿 2 小時
   - id: pet_mission_watch_live_hour2
     type: 4
@@ -74,4 +74,4 @@ missions:
     unit_type: 1
     reward_feed_id: feed_cans
     daily_reward_limit: -1
-    threshold: 7200
+    threshold: 600
