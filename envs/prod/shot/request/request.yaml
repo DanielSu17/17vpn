@@ -48,31 +48,45 @@ mysql:
     - item: TEXT_INPUT
       name: Comment
       value: ~
-github:
+github-repos:
   type: modal
-  title: Request Github
+  title: Request Github Repos
   submitText: Submit
+  hasBotMail: false
   closeText: Close
   blocks:
     - item: VALIDATE_TEXT_INPUT
-      name: Organization User
+      name: UserID
       id: user
     - item: VALIDATE_TEXT_INPUT
-      name: Repository
+      name: Repositories
       id: repo
-      optional: true
     - item: SINGLE_SELECT
-      name: Repo Permission
+      name: Repositories Permission
       value: [ read, write ]
-      optional: true
-    - item: VALIDATE_TEXT_INPUT
-      name: Team
-      id: team
-      optional: true
-    - item: SINGLE_SELECT
-      name: Team Permission
-      value: [ Member ]
-      optional: true
+      id: repoPerm
     - item: TEXT_INPUT
       name: Comment
       value: ~
+      id: comment
+github-teams:
+  type: modal
+  title: Request Github Teams
+  submitText: Submit
+  hasBotMail: false
+  closeText: Close
+  blocks:
+    - item: VALIDATE_TEXT_INPUT
+      name: UserID
+      id: user
+    - item: VALIDATE_TEXT_INPUT
+      name: Team
+      id: team
+    - item: SINGLE_SELECT
+      name: Team Permission
+      value: [ member ]
+      id: teamPerm
+    - item: TEXT_INPUT
+      name: Comment
+      value: ~
+      id: comment
