@@ -42,6 +42,24 @@ sections:
     enable: true
     style: 1
     more: false
+  - id: Latest # 新人(和『最新』同邏輯) 新星主播在這裡
+    name:
+      key: tab_hot_2019q4_newstreamer
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 3
+    more: true
+    orderModel: 2
+  - id: NewestStreamer # D0 new streamer 首日新手
+    name:
+      key: tab_hot_d0streamer
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    orderModel: 2
   - id: Label #遊戲玩家
     labelID: tw_t_game
     name:
@@ -77,16 +95,6 @@ sections:
     minGrids: 1
     style: 4
     more: false
-  - id: NewestStreamer # D0 new streamer 首日新手
-    name:
-      key: tab_hot_d0streamer
-    enable: true
-    dedup: true
-    minGrids: 1
-    style: 3
-    more: true
-    orderModel: 2
-
   - id: ArchiveVideo
     name:
       key: archives_homepage_title
@@ -160,15 +168,6 @@ sections:
     style: 3
     more: true
     category: normal
-    orderModel: 2
-  - id: Latest # 新人(和『最新』同邏輯) 新星主播在這裡
-    name:
-      key: tab_hot_2019q4_newstreamer
-    enable: true
-    dedup: false
-    minGrids: 1
-    style: 3
-    more: true
     orderModel: 2
   - id: Label #HelloKitty
     labelID: HelloKitty
