@@ -20,18 +20,22 @@ mongo:
     - item: SINGLE_SELECT
       name: Permission
       value: [ read, write ]
+      id: permission
     - item: SINGLE_SELECT
       name: Env
       value: [ uat, pre-prod, prod ]
+      id: env
     - item: MULTI_SELECT
       name: Clusters
       value: [ default, user, stream, point, eventory, poll, groupcall, message, keyword, discovery]
       description:
         keyword: pre-prod, prod only
         discovery: pre-prod only
+      id: cluster
     - item: TEXT_INPUT
       name: Comment
       value: ~
+      id: comment
 mysql:
   type: modal
   title: Request MySQL
@@ -42,12 +46,15 @@ mysql:
     - item: SINGLE_SELECT
       name: Permission
       value: [ read, write ]
+      id: permission
     - item: SINGLE_SELECT
       name: Env
       value: [ uat, pre-prod, prod ]
+      id: env
     - item: TEXT_INPUT
       name: Comment
       value: ~
+      id: comment
 github-repos:
   type: modal
   title: Request Github Repos
