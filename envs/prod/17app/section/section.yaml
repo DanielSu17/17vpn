@@ -58,6 +58,14 @@ sections:
     minGrids: 5
     more: true
 
+  - id: RedEnvelope # 紅包
+    name:
+      key: tab_hot_2019q4_redenvelop
+    enable: false
+    minGrids: 3
+    style: 3
+    more: true
+
   - id: Label #音樂
     labelID: tw_t_music
     name: 
@@ -69,37 +77,6 @@ sections:
     more: true
     category: normal
     orderModel: 2 
-
-  - id: Label #實力歌手
-    labelID: singer
-    name: 
-      key: streamer_label_singer
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    orderModel: 2
-  - id: Label #彈唱歌手
-    labelID: acoustic
-    name: 
-      key: streamer_label_acoustic
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    orderModel: 2
-  - id: Label #演奏達人
-    labelID: player
-    name: 
-      key: streamer_label_player
-    enable: true
-    dedup: true
-    minGrids: 5
-    style: 3
-    more: true
-    orderModel: 2
 
   - id: Label # 新手引導員 Welcome new fans
     labelID: welcomenewfans
@@ -217,6 +194,37 @@ sections:
     enable: true
     dedup: true
     minGrids: 3
+    style: 3
+    more: true
+    orderModel: 2
+
+  - id: Label #實力歌手
+    labelID: singer
+    name: 
+      key: streamer_label_singer
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    orderModel: 2
+  - id: Label #彈唱歌手
+    labelID: acoustic
+    name: 
+      key: streamer_label_acoustic
+    enable: true
+    dedup: true
+    minGrids: 5
+    style: 3
+    more: true
+    orderModel: 2
+  - id: Label #演奏達人
+    labelID: player
+    name: 
+      key: streamer_label_player
+    enable: true
+    dedup: true
+    minGrids: 5
     style: 3
     more: true
     orderModel: 2
@@ -355,17 +363,18 @@ sections:
     more: true
     category: normal #normal代表可以在開播類別被選擇；exclusive則不能被選擇，不填寫則默認exclusive
     orderModel: 2
-  - id: Label # 名人開播 Celebrities
-    labelID: TWcelebrity
-    name: 
-      key: streamer_label_TWcelebrity
-    enable: true
-    dedup: false
-    minGrids: 1
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
+
+  # - id: Label # 名人開播 Celebrities
+  #   labelID: TWcelebrity
+  #   name: 
+  #     key: streamer_label_TWcelebrity
+  #   enable: true
+  #   dedup: false
+  #   minGrids: 1
+  #   style: 3
+  #   more: true
+  #   category: normal
+  #   orderModel: 2
   # - id: Label # 台北電玩展
   #   labelID: tsgspecial
   #   name: 
@@ -558,7 +567,7 @@ sections:
     name:
       key: tab_hot_2019q4_redenvelop
     enable: false
-    minGrids: 5
+    minGrids: 3
     style: 3
     more: true
 
