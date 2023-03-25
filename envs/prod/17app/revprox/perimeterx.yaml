@@ -51,7 +51,6 @@ sensitive_routes: []
 whitelist_routes: []
 enforced_routes:
   - "/api/v1/auth/goodnight/register"
-  - "/api/v1/legacy/followUserAction"
   - "/api/v1/legacy/unfollowUserAction"
   - "/api/v1/lives/.*/laborReward$"
   - "/api/v1/redenvelopes/pick$"
@@ -60,6 +59,7 @@ enforced_routes:
 monitored_routes:
   - "/api/v1/apigateway.*"
   - "/api/v1/auth/.*"
+  - "/api/v1/legacy/followUserAction" # https://17media.slack.com/archives/C466YU363/p1679713540604529
   #- "/api/v1/cells.*"
   - "/api/v1/sections.*"   
   - "/api/v1/lives/.*/comments"
