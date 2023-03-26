@@ -69,10 +69,11 @@ odds: # The odds of each item if a player win.
   strawberry: 2 # 2 times to payout.
 
 tax: # The tax of each round - always transfer from game pool to revenue each round.
-  emergency: 0.00 # 0%
+  emergency: 0.01 # 1%
   loaded: 0.06 # 6%
   fair: 0.06 # 6%
   # 3/22 Switch from 2.5/5/5 to 0/6/6
+  # 3/26 change tax from 0% to 1% to avoid logic error during Emergency 
 
 safeline: 12000000
 
