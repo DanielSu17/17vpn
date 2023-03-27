@@ -1,5 +1,5 @@
 goKart:
-  version: 1.0.0
+  version: 1.0.4
   obstacles:
     - id: '0'
       condition: EMPTY
@@ -22,20 +22,6 @@ goKart:
       hitHpEffect: 0
       hitVibrationType: NONE
       size: 1
-    - id: '3'
-      condition: DESTROYED
-      name: TrafficCone_D_2_Yellow
-      description: The destroyed yellow traffic cone with a bar in the middle.
-      hitHpEffect: 0
-      hitVibrationType: NONE
-      size: 2
-    - id: '4'
-      condition: NORMAL
-      name: TrafficCone_N_2_Yellow
-      description: The Normal yellow traffic cone with a bar in the middle.
-      hitHpEffect: -2
-      hitVibrationType: NORMAL
-      size: 2
     - id: '5'
       condition: NORMAL
       name: ConcretePier_N_1_gray
@@ -58,6 +44,34 @@ goKart:
         Red normal barrier
       hitHpEffect: -2
       hitVibrationType: NORMAL
+      size: 1
+    - id: '6'
+      condition: NORMAL
+      name: TrafficCone_N_1_Red
+      description: TC
+      hitHpEffect: -2
+      hitVibrationType: NORMAL
+      size: 1
+    - id: '7'
+      condition: DESTROYED
+      name: ConcretePier_D_1_gray
+      description: CP destroy
+      hitHpEffect: 0
+      hitVibrationType: NONE
+      size: 1
+    - id: '8'
+      condition: DESTROYED
+      name: Barrier_D_1_Yellow
+      description: Barrier destroy
+      hitHpEffect: 0
+      hitVibrationType: NONE
+      size: 1
+    - id: '9'
+      condition: EMPTY
+      name: Snack
+      description: +10 Points for Player
+      hitHpEffect: 0
+      hitVibrationType: NONE
       size: 1
   incidents:
     - id: '0'
@@ -284,6 +298,215 @@ goKart:
           minMaxRule:
             min: 1
             max: 1
+    - id: '12'
+      name: QA_mid_empty
+      description: Mid always empty with snacks and Traffic cone
+      laneCount: 3
+      generatorType: FIXED
+      score: 10
+      obstacles:
+        - entityId: '0'
+          minMaxRule:
+            min: 0
+            max: 0
+        - entityId: '9'
+          minMaxRule:
+            min: 0
+            max: 0
+        - entityId: '1'
+          minMaxRule:
+            min: 0
+            max: 0
+    - id: '13'
+      name: (R)2Em+1 Barrier
+      description: Randomly 2 Empty + 1 Yellow Barrier
+      laneCount: 3
+      generatorType: RANDOM
+      score: 10
+      obstacles:
+        - entityId: '0'
+          minMaxRule:
+            min: 1
+            max: 2
+        - entityId: '6'
+          minMaxRule:
+            min: 0
+            max: 1
+    - id: '14'
+      name: (R)2Em+1 CP
+      description: Randomly 2 Empty + 1 Concrete Pier
+      laneCount: 3
+      generatorType: RANDOM
+      score: 10
+      obstacles:
+        - entityId: '0'
+          minMaxRule:
+            min: 1
+            max: 2
+        - entityId: '7'
+          minMaxRule:
+            min: 1
+            max: 1
+    - id: '15'
+      name: (R)1Em+2 TC
+      description: Randomly 2 Empty + 1 TC
+      laneCount: 3
+      generatorType: RANDOM
+      score: 10
+      obstacles:
+        - entityId: '1'
+          minMaxRule:
+            min: 1
+            max: 1
+        - entityId: '0'
+          minMaxRule:
+            min: 2
+            max: 2
+    - id: '16'
+      name: (R) All without empty
+      description: All obstacles without empty
+      laneCount: 3
+      generatorType: RANDOM
+      score: 10
+      obstacles:
+        - entityId: '1'
+          minMaxRule:
+            min: 1
+            max: 1
+        - entityId: '5'
+          minMaxRule:
+            min: 1
+            max: 1
+        - entityId: '6'
+          minMaxRule:
+            min: 1
+            max: 1
+    - id: '17'
+      name: (R) All w/o empty 25%
+      description: All obstacles without empty 25%
+      laneCount: 3
+      generatorType: RANDOM
+      score: 10
+      obstacles:
+        - entityId: '0'
+          minMaxRule:
+            min: 0
+            max: 1
+        - entityId: '2'
+          minMaxRule:
+            min: 0
+            max: 1
+        - entityId: '5'
+          minMaxRule:
+            min: 0
+            max: 1
+        - entityId: '6'
+          minMaxRule:
+            min: 0
+            max: 1
+    - id: '18'
+      name: (R) Concretes w/o empty 20%
+      description: All obstacles without empty 25%
+      laneCount: 3
+      generatorType: RANDOM
+      score: 10
+      obstacles:
+        - entityId: '0'
+          minMaxRule:
+            min: 0
+            max: 1
+        - entityId: '5'
+          minMaxRule:
+            min: 0
+            max: 1
+        - entityId: '5'
+          minMaxRule:
+            min: 0
+            max: 1
+        - entityId: '5'
+          minMaxRule:
+            min: 0
+            max: 1
+        - entityId: '5'
+          minMaxRule:
+            min: 0
+            max: 1
+    - id: '19'
+      name: '(R) Concretes + Barrier without empty '
+      description: All obstacles without empty 25%
+      laneCount: 3
+      generatorType: RANDOM
+      score: 10
+      obstacles:
+        - entityId: '0'
+          minMaxRule:
+            min: 0
+            max: 1
+        - entityId: '5'
+          minMaxRule:
+            min: 1
+            max: 2
+        - entityId: '6'
+          minMaxRule:
+            min: 1
+            max: 2
+    - id: '20'
+      name: (F)1Em_Mid + 2 CP
+      description: Middle Empty with 2 CP
+      laneCount: 3
+      generatorType: FIXED
+      score: 10
+      obstacles:
+        - entityId: '5'
+          minMaxRule:
+            min: 0
+            max: 0
+        - entityId: '0'
+          minMaxRule:
+            min: 0
+            max: 0
+        - entityId: '5'
+          minMaxRule:
+            min: 0
+            max: 0
+    - id: '21'
+      name: (F)1Em_Left + 2 CP
+      description: Left Empty with 2 CP
+      laneCount: 3
+      generatorType: FIXED
+      score: 10
+      obstacles:
+        - entityId: '0'
+          minMaxRule:
+            min: 0
+            max: 0
+        - entityId: '5'
+          minMaxRule:
+            min: 0
+            max: 0
+        - entityId: '5'
+          minMaxRule:
+            min: 0
+            max: 0
+    - id: '22'
+      name: (F)1Em_Right + 2 CP
+      description: Right Empty with 2 CP
+      laneCount: 3
+      generatorType: FIXED
+      score: 10
+      obstacles:
+        - entityId: '5'
+          minMaxRule:
+            min: 0
+            max: 0
+        - entityId: '5'
+          minMaxRule:
+            min: 0
+            max: 0
+        - entityId: '0'
+          minMaxRule:
+            min: 0
+            max: 0
   sections:
     - id: '0'
       name: Tutorial
@@ -294,6 +517,7 @@ goKart:
       lengthInCubes: 300
       speedInCubesPerSecond: 20
       durationInSeconds: 15
+      accelerationRate: 0.05
       incidents:
         - entityId: '0'
         - entityId: '1'
@@ -311,6 +535,7 @@ goKart:
       lengthInCubes: 250
       speedInCubesPerSecond: 25
       durationInSeconds: 10
+      accelerationRate: 0.05
       incidents:
         - entityId: '5'
         - entityId: '5'
@@ -332,6 +557,7 @@ goKart:
       lengthInCubes: 300
       speedInCubesPerSecond: 30
       durationInSeconds: 10
+      accelerationRate: 0.05
       incidents:
         - entityId: '8'
         - entityId: '6'
@@ -353,6 +579,7 @@ goKart:
       lengthInCubes: 350
       speedInCubesPerSecond: 35
       durationInSeconds: 10
+      accelerationRate: 0.05
       incidents:
         - entityId: '9'
         - entityId: '9'
@@ -389,11 +616,254 @@ goKart:
         - entityId: '11'
         - entityId: '11'
       description: Endless section with all obstacles.
+    - id: '5'
+      name: QA_Mid_empty
+      type: INFINITE
+      scoreMultiplier: 10
+      laneCount: 3
+      generatorType: RANDOM
+      lengthInCubes: 150
+      speedInCubesPerSecond: 15
+      durationInSeconds: 10
+      accelerationRate: 0.1
+      incidents:
+        - entityId: '12'
+        - entityId: '12'
+        - entityId: '12'
+        - entityId: '12'
+        - entityId: '12'
+      description: For_QA
+    - id: '6'
+      name: Model_lv.1_easy
+      type: NORMAL
+      scoreMultiplier: 1
+      laneCount: 3
+      generatorType: RANDOM
+      lengthInCubes: 300
+      speedInCubesPerSecond: 30
+      durationInSeconds: 10
+      incidents:
+        - entityId: '5'
+        - entityId: '5'
+        - entityId: '5'
+        - entityId: '5'
+        - entityId: '15'
+        - entityId: '15'
+        - entityId: '15'
+        - entityId: '5'
+        - entityId: '5'
+        - entityId: '5'
+      description: Markov 1-10
+    - id: '7'
+      name: Model_lv.2_easy
+      type: NORMAL
+      scoreMultiplier: 1
+      laneCount: 3
+      generatorType: RANDOM
+      lengthInCubes: 350
+      speedInCubesPerSecond: 35
+      durationInSeconds: 10
+      incidents:
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '10'
+        - entityId: '10'
+        - entityId: '10'
+        - entityId: '10'
+        - entityId: '10'
+      description: Markov 10-20
+    - id: '8'
+      name: Model_lv.3_medium
+      type: NORMAL
+      scoreMultiplier: 1.2
+      laneCount: 3
+      generatorType: RANDOM
+      lengthInCubes: 400
+      speedInCubesPerSecond: 40
+      durationInSeconds: 10
+      incidents:
+        - entityId: '9'
+        - entityId: '9'
+        - entityId: '9'
+        - entityId: '9'
+        - entityId: '9'
+        - entityId: '17'
+        - entityId: '17'
+        - entityId: '17'
+        - entityId: '17'
+        - entityId: '11'
+        - entityId: '11'
+      description: Markov 20-30
+    - id: '9'
+      name: Model_lv.4_medium-
+      type: NORMAL
+      scoreMultiplier: 1.4
+      laneCount: 3
+      generatorType: RANDOM
+      lengthInCubes: 400
+      speedInCubesPerSecond: 40
+      durationInSeconds: 10
+      incidents:
+        - entityId: '15'
+        - entityId: '15'
+        - entityId: '15'
+        - entityId: '5'
+        - entityId: '5'
+        - entityId: '5'
+        - entityId: '11'
+        - entityId: '11'
+        - entityId: '11'
+        - entityId: '11'
+        - entityId: '11'
+      description: Markov 30-40
+    - id: '10'
+      name: Model_lv.5_hard-
+      type: NORMAL
+      scoreMultiplier: 1.4
+      laneCount: 3
+      generatorType: RANDOM
+      lengthInCubes: 500
+      speedInCubesPerSecond: 50
+      durationInSeconds: 10
+      incidents:
+        - entityId: '10'
+        - entityId: '10'
+        - entityId: '10'
+        - entityId: '10'
+        - entityId: '10'
+        - entityId: '10'
+        - entityId: '18'
+        - entityId: '18'
+        - entityId: '18'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '18'
+      description: Markov 40-50
+    - id: '11'
+      name: Model_lv.6_hard
+      type: NORMAL
+      scoreMultiplier: 1.6
+      laneCount: 3
+      generatorType: RANDOM
+      lengthInCubes: 550
+      speedInCubesPerSecond: 55
+      durationInSeconds: 10
+      incidents:
+        - entityId: '17'
+        - entityId: '17'
+        - entityId: '17'
+        - entityId: '17'
+        - entityId: '16'
+        - entityId: '11'
+        - entityId: '11'
+        - entityId: '11'
+        - entityId: '11'
+        - entityId: '17'
+        - entityId: '17'
+        - entityId: '11'
+      description: Markov 50-60
+    - id: '12'
+      name: Model_lv.7_medium
+      type: NORMAL
+      scoreMultiplier: 1.6
+      laneCount: 3
+      generatorType: RANDOM
+      lengthInCubes: 550
+      speedInCubesPerSecond: 55
+      durationInSeconds: 10
+      incidents:
+        - entityId: '13'
+        - entityId: '13'
+        - entityId: '13'
+        - entityId: '16'
+        - entityId: '13'
+        - entityId: '9'
+        - entityId: '9'
+        - entityId: '9'
+        - entityId: '9'
+        - entityId: '13'
+        - entityId: '13'
+      description: Markov 60-70
+    - id: '13'
+      name: Model_lv.8_Hard+
+      type: NORMAL
+      scoreMultiplier: 1.8
+      laneCount: 3
+      generatorType: RANDOM
+      lengthInCubes: 600
+      speedInCubesPerSecond: 60
+      durationInSeconds: 10
+      incidents:
+        - entityId: '18'
+        - entityId: '18'
+        - entityId: '18'
+        - entityId: '18'
+        - entityId: '18'
+        - entityId: '18'
+        - entityId: '10'
+        - entityId: '10'
+        - entityId: '10'
+        - entityId: '10'
+        - entityId: '10'
+        - entityId: '10'
+        - entityId: '10'
+      description: Markov 70-80
+    - id: '14'
+      name: Model_lv.9_Hard+
+      type: NORMAL
+      scoreMultiplier: 1.8
+      laneCount: 3
+      generatorType: RANDOM
+      lengthInCubes: 650
+      speedInCubesPerSecond: 65
+      durationInSeconds: 10
+      incidents:
+        - entityId: '6'
+        - entityId: '7'
+        - entityId: '8'
+        - entityId: '7'
+        - entityId: '8'
+        - entityId: '7'
+        - entityId: '6'
+        - entityId: '8'
+        - entityId: '6'
+        - entityId: '7'
+        - entityId: '8'
+        - entityId: '7'
+      description: Markov 80-90
+    - id: '15'
+      name: Model_lv.10_Hard_INF
+      type: INFINITE
+      scoreMultiplier: 2
+      laneCount: 3
+      generatorType: RANDOM
+      lengthInCubes: 700
+      speedInCubesPerSecond: 70
+      durationInSeconds: 10
+      accelerationRate: 0.1
+      incidents:
+        - entityId: '11'
+        - entityId: '11'
+        - entityId: '18'
+        - entityId: '18'
+        - entityId: '18'
+        - entityId: '18'
+        - entityId: '17'
+        - entityId: '17'
+        - entityId: '17'
+        - entityId: '11'
+        - entityId: '11'
+        - entityId: '18'
+      description: Markov 90-100
   games:
     - id: '0'
       name: Test_tutorial_game_debug
       description: Testing with tutorial.
-      debug: false
+      debug: true
       type: TUTORIAL
       angleStart: 0
       angleMax: 99
@@ -428,6 +898,22 @@ goKart:
       description: Testing normally without debug switch on.
       debug: false
       type: NORMAL
+      angleStart: 0
+      angleMax: 99
+      hpStart: 6
+      hpMax: 6
+      shieldStart: 0
+      shieldMax: 99
+      sections:
+        - entityId: '2'
+        - entityId: '1'
+        - entityId: '3'
+        - entityId: '4'
+    - id: '3'
+      name: QA_mid_empty
+      description: Endless QA
+      debug: true
+      type: NORMAL
       angleStart: 1
       angleMax: 99
       hpStart: 6
@@ -435,7 +921,99 @@ goKart:
       shieldStart: 1
       shieldMax: 99
       sections:
-        - entityId: '2'
+        - entityId: '5'
+    - id: '4'
+      name: unlock_2games_game
+      description: Unlocked when playing 2 games (3rd game activated)
+      debug: true
+      type: NORMAL
+      angleStart: 0
+      angleMax: 99
+      hpStart: 6
+      hpMax: 6
+      shieldStart: 1
+      shieldMax: 99
+      sections:
         - entityId: '1'
-        - entityId: '3'
-        - entityId: '4'
+        - entityId: '5'
+    - id: '5'
+      name: unlock_200points_game
+      description: Unlocked when reaching 200 point history high score >=200
+      debug: true
+      type: NORMAL
+      angleStart: 1
+      angleMax: 99
+      hpStart: 6
+      hpMax: 6
+      shieldStart: 0
+      shieldMax: 99
+      sections:
+        - entityId: '2'
+        - entityId: '5'
+    - id: '6'
+      name: Model_game_prod
+      description: |-
+        Based on Jay's Markov model. Sections and incidents are all random.
+        ver.1
+      debug: false
+      type: NORMAL
+      angleStart: 0
+      angleMax: 99
+      hpStart: 6
+      hpMax: 6
+      shieldStart: 0
+      shieldMax: 99
+      sections:
+        - entityId: '6'
+        - entityId: '6'
+        - entityId: '7'
+        - entityId: '7'
+        - entityId: '8'
+        - entityId: '8'
+        - entityId: '9'
+        - entityId: '9'
+        - entityId: '10'
+        - entityId: '10'
+        - entityId: '11'
+        - entityId: '11'
+        - entityId: '12'
+        - entityId: '12'
+        - entityId: '13'
+        - entityId: '13'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '15'
+    - id: '7'
+      name: Model_game_Tutorial_prod
+      description: |-
+        Based on Jay's Markov model. Sections and incidents are all random.
+        ver.1_with tutorial
+      debug: false
+      type: TUTORIAL
+      angleStart: 0
+      angleMax: 99
+      hpStart: 6
+      hpMax: 6
+      shieldStart: 0
+      shieldMax: 99
+      sections:
+        - entityId: '0'
+        - entityId: '6'
+        - entityId: '6'
+        - entityId: '7'
+        - entityId: '7'
+        - entityId: '8'
+        - entityId: '8'
+        - entityId: '9'
+        - entityId: '9'
+        - entityId: '10'
+        - entityId: '10'
+        - entityId: '11'
+        - entityId: '11'
+        - entityId: '12'
+        - entityId: '12'
+        - entityId: '13'
+        - entityId: '13'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '15'
