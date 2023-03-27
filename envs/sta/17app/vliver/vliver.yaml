@@ -1,4 +1,5 @@
 # see https://17media.atlassian.net/wiki/spaces/InStream/pages/861471431/BE+V-Liver+config#config
+# get devices hardware names by using !live log 10 {openID} command in slackbot 
 # 關於 vliver 的設定
 virtualModels:
   - model: 1 # live2D
@@ -8,10 +9,13 @@ virtualModels:
       android: "2.144.0"
     # 不支援該vliver model 的裝置清單
     unsupportedDevices: 
-    - iPhone12
-    - Pixel 3a XL
+    - iPhone12,2
+    - iPhone14,5
+    - G020C
+    - G020G
+    - SM-F7110
     - iphone13,2
-    - iphone13
+    - iphone13,4
   - model: 2 # VRM
     enabled: false
     versionControl:
