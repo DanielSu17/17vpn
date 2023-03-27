@@ -97,3 +97,24 @@ github-teams:
       name: Comment
       value: ~
       id: comment
+github-team-repos:
+  type: modal
+  title: Request Github Team
+  submitText: Submit
+  hasBotMail: false
+  closeText: Close
+  blocks:
+    - item: VALIDATE_TEXT_INPUT
+      name: Team
+      id: team
+    - item: VALIDATE_TEXT_INPUT
+      name: Repositories
+      id: repo
+    - item: SINGLE_SELECT
+      name: Repositories Permission
+      value: [ read, write ]
+      id: repoPerm
+    - item: TEXT_INPUT
+      name: Comment
+      value: ~
+      id: comment
