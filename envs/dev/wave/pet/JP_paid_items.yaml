@@ -1,3 +1,11 @@
+# !!! IMPORTANT !!!
+# 『下架背景』的流程
+# 1. 將欲下架背景 is_online 更改為 0
+#
+# 『下架飼料』的流程
+# 1. 需先至任務設定 (missions.yaml) 確認每個任務的 reward_feed_id 不包含欲下架飼料
+# 2. 將欲下架飼料 is_online 更改為 0
+
 # backgrounds:
 #   - id: golden
 #     price: 300
@@ -57,7 +65,7 @@ feeds:
     i18n_key: pet_food_cans
     exp_weight: 20
   - id: feed_fish
-    price: 1000
+    price: 600
     icon_url: "https://cdn.wave.com.tw/v1/bot/1678861379381896_6477193191580230_21001768670875585077280479612123_hm.png"
     is_online: 2
     i18n_key: pet_food_fish
