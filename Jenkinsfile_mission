@@ -78,7 +78,7 @@ node('gcp') { timestamps { ansiColor('xterm') {
                 // download binary.exe from storage
                 def storage = "http://cdn.17app.co"
                 // version tag for avoiding cdn cache to get old binary
-                def missionBinary = "39947ff2-d521-4316-ad01-72d2c3182d25.gz"
+                def missionBinary = "489d9992-6427-4456-a838-8327714b1baf.gz"
                 sh("wget ${storage}/${missionBinary}")
                 sh("tar zxvf ${missionBinary}")
             }
