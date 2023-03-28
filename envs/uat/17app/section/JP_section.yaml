@@ -1,7 +1,7 @@
 # sections
 #   - id: TopBanner|OffcRecomm|Suggestion|Label|RedEnvelope|Show|Vod|TodayHotTopic|CrazyZoo|GroupCall|ArchiveVideo
 #     enable: false|true
-#     dedup:  false|true ,false(會出現重複的直播入口)
+#     dedup:  false|true
 #     more:   false|true
 #     minGrids: <int>
 #     style: <int> 1: BillboardStyle, 2: StoryTrayStyle, 3: DefaultShelfStyle, 4: CoverFlowStyle, 5: VodShelfStyle, 6: DefaultLabelShelfStyle (猜你可能會喜歡)
@@ -32,6 +32,42 @@ typeTab:
 preservedSectionID: Suggestion
 
 sections:
+  - id: Label #VS 国際マッチ
+    labelID: 2212_jp_globalpk
+    name:
+      key: streamer_jp_label_globalpk
+    enable: true
+    dedup: true
+    minGrids: 0
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label #プレミアムクリスマス
+    labelID: 2212_jp_xmas_premium_fes
+    name:
+      key: streamer_jp_label_xmas_premium_2022
+    enable: true
+    dedup: true
+    minGrids: 0
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # #ショートムービーチャレンジ
+    labelID: 2210_jp_shortmovie
+    name:
+      key: streamer_jp_label_shortmovie4
+    enable: true
+    dedup: true
+    minGrids: 0
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
   - id: TopBanner # Banner + super promote
     name:
       key: tab_hot_2019q4_topbanner
@@ -68,34 +104,10 @@ sections:
   #    style: 3
   #    more: true
 
-  #  - id: Label # お絵かき
-  #    labelID: 2111_jp_oekaki
-  #    name:
-  #      key: streamer_jp_label_oekaki
-  #    enable: true
-  #    dedup: true
-  #    minGrids: 0
-  #    style: 3
-  #    more: true
-  #    category: normal
-  #    orderModel: 2
-
-  #  - id: Label # 毎日配信挑戦中！
-  #    labelID: 2112_jp_winter_everyday
-  #    name:
-  #      key: streamer_jp_label_winter_everyday
-  #    enable: true
-  #    dedup: true
-  #    minGrids: 0
-  #    style: 3
-  #    more: true
-  #    category: normal
-  #    orderModel: 2
-
-  - id: Label ##音楽メイキング配信
-    labelID: 2201_jp_musicmaking
+  - id: Label # ​​​​みんなで乾杯しよう！
+    labelID: 2207_jp_toast_together
     name:
-      key: streamer_jp_label_musicmaking
+      key: streamer_jp_label_toast_together
     enable: true
     dedup: true
     minGrids: 0
@@ -104,10 +116,54 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: Label ##推し探し
-    labelID: 2202_jp_oshi_sagashi
+  - id: Label # 閲覧注意！怪談話してるよ
+    labelID: 2207_jp_ghost_story
     name:
-      key: streamer_jp_label_oshi_sagashi
+      key: streamer_jp_label_ghost_story
+    enable: true
+    dedup: true
+    minGrids: 0
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: ArchiveVideo
+    name:
+      key: archives_homepage_title
+    enable: true
+    minGrids: 3
+    style: 11
+    more: true
+
+  - id: Label # 広告出演中のライバー
+    labelID: 2206_jp_Ad_entry_streamer
+    name:
+      key: 広告出演中のライバー #streamer_jp_label_Ad_entry_streamer
+    enable: true
+    dedup: true
+    minGrids: 0
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label #　NMB48応援キャンペーン3/9~3/11
+    labelID: 2203_jp_nmb48support
+    name:
+      key: streamer_jp_label_nmb48support
+    enable: true
+    dedup: true
+    minGrids: 0
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label ##音楽メイキング配信
+    labelID: 2201_jp_musicmaking
+    name:
+      key: streamer_jp_label_musicmaking
     enable: true
     dedup: true
     minGrids: 0
@@ -128,6 +184,15 @@ sections:
     category: normal
     orderModel: 2
 
+  - id: Latest # 新人(和『最新』同邏輯)
+    name:
+      key: tab_hot_2019q4_newstreamer
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 3
+    more: true
+
   - id: AudioStream # AudioStream 聲播
     name:
       key: audio_stream_v3hotpage
@@ -137,49 +202,17 @@ sections:
     style: 3
     more: true
 
-  - id: ArchiveVideo
+  - id: Label # 【ビーチから生配信】 夏を感じよう
+    labelID: 2202_jp_oshi_sagashi
     name:
-      key: archives_homepage_title
-    enable: true
-    minGrids: 3
-    style: 11
-    more: true
-
-  - id: Label #私こんな趣味あります
-    labelID: jp_game
-    name:
-      key: streamer_jp_label_fortune_kaiun
+    key: streamer_jp_label_star
     enable: true
     dedup: true
-    minGrids: 1
+    minGrids: 0
     style: 3
     more: true
     category: normal
     orderModel: 2
-
-  - id: Label # クリスマス Pre-Party（検証のためminGridsは１にしています）
-    labelID: 2111_jp_sousaku
-    name:
-      key: streamer_jp_label_fortune_kaiun
-    enable: true
-    dedup: true
-    minGrids: 1
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
-  #  - id: Label #推しを見つけよう
-  #    labelID: 2112_jp_oshi2
-  #    name:
-  #    key: streamer_jp_label_oshi
-  #    enable: true
-  #    dedup: true
-  #    minGrids: 0
-  #    style: 3
-  #    more: true
-  #    category: normal
-  #    orderModel: 2
 
   #  - id: Label #新年の挑戦
   #    labelID: 2201_jp_newyear_challenge
@@ -217,24 +250,24 @@ sections:
     category: normal
     orderModel: 2
 
-  #  - id: Label # 創作・制作
-  #    labelID: 2111_jp_sousaku
-  #    name:
-  #      key: streamer_jp_label_sousaku
-  #    enable: true
-  #    dedup: true
-  #    minGrids: 0
-  #    style: 3
-  #    more: true
-  #    category: normal
-  #    orderModel: 2
+  - id: Label # 創作・制作
+    labelID: 2111_jp_sousaku
+    name:
+      key: streamer_jp_label_sousaku
+    enable: true
+    dedup: false
+    minGrids: 0
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
 
   - id: GroupCall # GroupCall
     name:
       key: group_stream_v3hotpage
     enable: true
     dedup: false #重複
-    minGrids: 2
+    minGrids: 0
     style: 9
     more: true
 
@@ -243,7 +276,7 @@ sections:
       key: tab_hot_d0streamer
     enable: true
     dedup: true
-    minGrids: 5
+    minGrids: 0
     style: 3
     more: true
   - id: Suggestion # 猜你可能喜歡
@@ -252,36 +285,35 @@ sections:
     enable: true
     dedup: true
     style: 6
-    minGrids: 1
+    minGrids: 0
     more: true
-
-  #  - id: Label
-  #    labelID: jp_music
-  #    name:
-  #      key: NO GOOD TV LIVE  #explore_jp_label_music
-  #    enable: true
-  #    dedup: false
-  #    minGrids: 1
-  #    style: 3
-  #    more: true
-  #    category: normal
+  - id: Label
+    labelID: jp_music
+    name:
+      key: explore_jp_label_music
+    enable: true
+    dedup: false
+    minGrids: 0
+    style: 3
+    more: true
+    category: normal
   - id: PK
     name:
       key: tab_hot_2019q4_pk
     enable: true
     dedup: false #重複
     minGrids: 6 # 2個直播間一組PK，3組以上顯示
-    style: 3
+    style: 0
     more: true
-  #  - id: Label
-  #    labelID: jp_game
-  #    name:
-  #      key: explore_jp_label_game
-  #    enable: true
-  #    dedup: true
-  #    minGrids: 1
-  #    style: 3
-  #    more: true
+  - id: Label
+    labelID: jp_game
+    name:
+      key: streamer_jp_label_game
+    enable: true
+    dedup: false
+    minGrids: 0
+    tyle: 3
+    more: true
 
   - id: Vod # 熱門影音
     name:
@@ -372,6 +404,15 @@ sections:
     style: 3
     more: true
   - id: Label
+    labelID: jp_freetalk1
+    name:
+      key: streamer_jp_label_freetalk
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 3
+    more: true
+  - id: Label
     labelID: jp_show
     name:
       key: streamer_label_show
@@ -384,6 +425,24 @@ sections:
     labelID: menutest0811
     name:
       key: streamer_jp_label_menutest0811
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 3
+    more: true
+  - id: Label
+    labelID: jp_singer
+    name:
+      key: streamer_jp_label_music
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 3
+    more: true
+  - id: Label
+    labelID: jp_instrument
+    name:
+      key: streamer_jp_label_instrument
     enable: true
     dedup: false
     minGrids: 1

@@ -1,12 +1,410 @@
 sections:
-  - id: Label
+  - id: OffcRecomm # 官方推薦
+    enable: false
+    style: 2
+    more: false
+  - id: TopBanner # Banner + super promote
+    name:
+      key: tab_hot_2019q4_topbanner
+    enable: true
+    style: 1
+    more: false
+  - id: Newbiequest
+    enable: true
+    style: 7
+    minGrids: 1
+    more: false
+  - id: Label # 歡迎新人 Welcome new fans
     labelID: welcomenewfans
-    name: 
+    name:
       key: streamer_label_welcomenewfans_subtab
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+  - id: Show # 熱播節目
+    name:
+      key: tab_hot_2019q4_program
+    enable: false
+    dedup: false
+    minGrids: 1
+    style: 4
+    more: false
+  - id: NewestStreamer # D0 new streamer 首日新手
+    name:
+      key: tab_hot_d0streamer
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    orderModel: 2
+
+  - id: ArchiveVideo
+    name:
+      key: archives_homepage_title
+    enable: true
+    minGrids: 3
+    style: 11
+    more: true
+
+  #########################
+  - id: Label # PO萬聖節變裝活動
+    labelID: Halloween2
+    name:
+      key: section_halloweenhk
+    enable: true
+    dedup: false
+    minGrids: 0
+    style: 3
+    more: true
+    category: normal
+  - id: Label # PO萬聖節變裝活動
+    labelID: Halloween1
+    name:
+      key: section_halloweenhk2
+    enable: true
+    dedup: false
+    minGrids: 0
+    style: 3
+    more: true
+  #########################
+  - id: GroupCall # GroupCall 派對
+    name:
+      key: group_stream_v3hotpage
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 9
+    more: true
+  - id: AudioStream # AudioStream 聲播
+    name:
+      key: audio_stream_v3hotpage
+    enable: true
+    dedup: false
+    style: 3
+    minGrids: 1
+    more: true
+  - id: Label #實力歌手
+    labelID: singer
+    name:
+      key: streamer_label_singer
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 3
+    more: true
+    orderModel: 2
+  - id: Label #遊戲玩家
+    labelID: tw_t_game
+    name:
+      key: streamer_label_game
     enable: true
     dedup: true
     minGrids: 1
     style: 3
     more: true
     category: normal
-    orderModel: 1
+    orderModel: 2
+  - id: Suggestion # 猜你可能喜歡
+    name:
+      key: tab_hot_2019q4_follow_suggestion
+    enable: true
+    dedup: false
+    style: 6
+    minGrids: 1
+    more: true
+  - id: Label # 超新星
+    labelID: newbie
+    name:
+      key: tw_newbie
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+  - id: Latest # 新人(和『最新』同邏輯) 新星主播在這裡
+    name:
+      key: tab_hot_2019q4_newstreamer
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 3
+    more: true
+    orderModel: 2
+  - id: Label #HelloKitty
+    labelID: HelloKitty
+    name:
+      key: event_unboxing_Hello_Kitty
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+  - id: Label #音樂
+    labelID: tw_t_music
+    name:
+      key: streamer_label_music
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # SUPERSONIC 2021, 17LIVE PARK STAGE on SUPERSONIC
+    labelID: 2112_supersonic
+    name:
+      key: 17LIVE PARK STAGE on SUPERSONIC
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label #繪畫達人
+    labelID: visual_artists
+    name:
+      key: streamer_label_highlight_visual_artists
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: false
+    category: normal
+    orderModel: 2
+  - id: Label #直播商城
+    labelID: market
+    name:
+      key: streamer_label_market
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+  - id: Music # legacy Music tab
+    name:
+      key: tab_hot_2019q4_music
+    enable: false
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+  - id: PK # pk
+    name:
+      key: tab_hot_2019q4_pk
+    enable: true
+    dedup: false #重複
+    minGrids: 2 # 2個直播間一組PK，3組以上顯示
+    style: 3
+    more: true
+  - id: Label #彈唱歌手
+    labelID: acoustic
+    name:
+      key: streamer_label_acoustic
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    orderModel: 2
+  - id: Label #演奏達人
+    labelID: player
+    name:
+      key: streamer_label_player
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    orderModel: 2
+  - id: Vod # 熱門影音
+    name:
+      key: tab_hot_2019q4_vod
+    enable: true
+    minGrids: 1
+    style: 5
+    more: false
+  - id: Label #全民開播
+    labelID: stayathome
+    name:
+      key: streamer_label_stay_at_home_subtab
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+  - id: Label # T_職人
+    labelID: professional
+    name:
+      key: streamer_label_professional
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    orderModel: 2
+  - id: Label #線上課程
+    labelID: online_course
+    name:
+      key: streamer_label_tutor
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+  - id: TodayHotTopic # 投票
+    name:
+      key: tab_hot_2019q4_vote
+    enable: true
+    minGrids: 1
+    style: 3
+    more: true
+  - id: Label # 男生
+    labelID: male
+    name:
+      key: tab_hot_2019q4_male
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 3
+    more: true
+  - id: Label # 女生
+    labelID: female
+    name:
+      key: tab_hot_2019q4_female
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 3
+    more: true
+
+  - id: Label # 聊天, 對應到v1 sub-tab
+    labelID: tw_t_chat
+    name:
+      key: streamer_label_chat
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal #normal代表可以在開播類別被選擇；exclusive則不能被選擇，不填寫則默認exclusive
+    orderModel: 2
+
+  #以下是草稿
+  - id: Label #聊天
+    labelID: tw_t_chat
+    name:
+      key: streamer_label_chat
+    enable: false
+    dedup: false
+    minGrids: 5
+    style: 3
+    more: true
+
+  - id: Label #音樂
+    labelID: tw_t_music
+    name:
+      key: streamer_label_music
+    enable: false
+    dedup: false
+    minGrids: 5
+    style: 3
+    more: true
+
+  - id: Label #運動
+    labelID: tw_t_sport
+    name:
+      key: streamer_label_sport
+    enable: false
+    dedup: false
+    minGrids: 5
+    style: 3
+    more: true
+
+  - id: Label # 才藝
+    labelID: talent
+    name:
+      key: streamer_label_talent
+    enable: false
+    dedup: false
+    minGrids: 5
+    style: 3
+    more: true
+  - id: Label # 名人
+    labelID: famous_artist
+    name:
+      key: streamer_label_famous_artist
+    enable: false
+    dedup: false
+    minGrids: 5
+    style: 3
+    more: true
+  - id: Label #生活
+    labelID: smartlife
+    name:
+      key: streamer_label_smartlife
+    enable: false
+    dedup: false #重複
+    minGrids: 5
+    style: 3
+    more: true
+  - id: Label #命理
+    labelID: tw_t_fortune_teller
+    name:
+      key: 命理
+    enable: false
+    dedup: false #重複
+    minGrids: 5
+    style: 3
+    more: true
+  - id: Label #虛擬主播
+    labelID: vliver
+    name:
+      key: virtual_streamer_title
+    enable: false
+    dedup: false #重複
+    minGrids: 1
+    style: 3
+    more: true
+  - id: Label #其他未分類
+    labelID: tw_t_others
+    name:
+      key: 其他未分類
+    enable: false
+    dedup: false #重複
+    minGrids: 5
+    style: 3
+    more: true
+
+  - id: CrazyZoo # 荒唐動物園(遊戲類)
+    name:
+      key: tab_hot_2019q4_crazy_zoo
+    enable: false
+    minGrids: 5
+    style: 3
+    more: true
+
+  - id: RedEnvelope # 紅包
+    name:
+      key: tab_hot_2019q4_redenvelop
+    enable: false
+    minGrids: 5
+    style: 3
+    more: true

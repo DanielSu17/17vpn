@@ -74,7 +74,7 @@ sections:
     minGrids: 1
     style: 3
     more: true
-    orderModel: 2
+    orderModel: 1
 
   - id: ArchiveVideo
     name:
@@ -83,16 +83,8 @@ sections:
     minGrids: 3
     style: 11
     more: true
+
   #########################
-  - id: Label # PO萬聖節變裝活動
-    labelID: Halloween1
-    name:
-      key: section_halloweenhk2
-    enable: true
-    dedup: false
-    minGrids: 0
-    style: 3
-    more: true
   - id: Label # PO萬聖節變裝活動
     labelID: Halloween2
     name:
@@ -103,6 +95,15 @@ sections:
     style: 3
     more: true
     category: normal
+  - id: Label # PO萬聖節變裝活動
+    labelID: Halloween1
+    name:
+      key: section_halloweenhk2
+    enable: true
+    dedup: false
+    minGrids: 0
+    style: 3
+    more: true
   #########################
   - id: GroupCall # GroupCall 派對
     name:
@@ -117,9 +118,30 @@ sections:
       key: audio_stream_v3hotpage
     enable: true
     dedup: false
+    style: 3
+    minGrids: 1
+    more: true
+  - id: Label #實力歌手
+    labelID: singer
+    name:
+      key: streamer_label_singer
+    enable: true
+    dedup: false
     minGrids: 1
     style: 3
     more: true
+    orderModel: 2
+  - id: Label #遊戲玩家
+    labelID: tw_t_game
+    name:
+      key: streamer_label_game
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
   - id: Suggestion # 猜你可能喜歡
     name:
       key: tab_hot_2019q4_follow_suggestion
@@ -147,7 +169,7 @@ sections:
     minGrids: 1
     style: 3
     more: true
-    orderModel: 2
+    orderModel: 1
   - id: Label #HelloKitty
     labelID: HelloKitty
     name:
@@ -163,17 +185,6 @@ sections:
     labelID: tw_t_music
     name:
       key: streamer_label_music
-    enable: true
-    dedup: true
-    minGrids: 1
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-  - id: Label #遊戲玩家
-    labelID: tw_t_game
-    name:
-      key: streamer_label_game
     enable: true
     dedup: true
     minGrids: 1
@@ -232,16 +243,6 @@ sections:
     minGrids: 2 # 2個直播間一組PK，3組以上顯示
     style: 3
     more: true
-  - id: Label #實力歌手
-    labelID: singer
-    name:
-      key: streamer_label_singer
-    enable: true
-    dedup: true
-    minGrids: 1
-    style: 3
-    more: true
-    orderModel: 2
   - id: Label #彈唱歌手
     labelID: acoustic
     name:
@@ -326,12 +327,13 @@ sections:
     minGrids: 1
     style: 3
     more: true
+
   - id: Label # 聊天, 對應到v1 sub-tab
     labelID: tw_t_chat
     name:
       key: streamer_label_chat
     enable: true
-    dedup: true
+    dedup: false
     minGrids: 1
     style: 3
     more: true
@@ -348,6 +350,7 @@ sections:
     minGrids: 5
     style: 3
     more: true
+
   - id: Label #音樂
     labelID: tw_t_music
     name:
