@@ -1,6 +1,19 @@
 # JP label config
+# labelInfos defines all label related infos including type, label(i18n), iconURL
+# - type: 1(music), 2(politics), 3(others)
+# - featured: true / false (default)
+# - labelID: mapping for labels table id
 
 labelInfos:
+
+  - id: "data_team_recommendation" #大家都在看(data_team_recommendation)
+    type: 3
+    label:
+      key: "streamer_label_explorepage_subtab"
+    iconURL: " "
+    isHide: true
+    order: 20
+
   - id: "2212_jp_globalpk" # VS 国際マッチ
     type: 1
     labelID: 
@@ -298,6 +311,7 @@ labelInfos:
 
 # 探索頁面會出現的label
 exploreLabels:
+  - data_team_recommendation
   - jp_pickup        # パタパタ２
   - jp_recommend     # レコメンド,推薦
   - jp_music         # 音楽,音樂
@@ -307,26 +321,11 @@ exploreLabels:
 #  - jp_supersonic
 
 
-
 typeCheckIOSVersion: 3.57.0
 typeCheckAndroidVersion: 2.3.88
 
 labelWhiteList:
   exclusive:
-
-#  jp_supersonic:
-#    - 8abc9dfd-ece1-42b5-b445-7c0d7d446881 # canadian1
-#    - d0ca48b2-02f0-4d88-ba1f-791749282175
-#    - 9f388fa2-8d16-4d04-a9bc-bf59035b7d68 # canadian2
-#    - 1a8494f2-f45e-4519-9cff-95b60e29ca50
-#    - 608011fd-579b-4e15-b154-3943f952c324 # Qoo_sushi
-#    - 16226683-73a4-4055-a536-d3bb317cb3c7 # 17japan
-#    - 1001c909-355b-47c6-8e46-632bf05a453e # あみゅね
-#    - a3251943-fe02-4425-8f89-573edf423e86 # れい_reichannel	
-#    - 5cd24ae7-481d-40e5-8a53-49b12dac7b78 # MIKI.entertainer
-#    - 25f04237-8bd9-415e-4380-afcf558114bc # kana_.jp
-#    - 119d02a6-3346-41d6-a313-0491a25ee542 # Yin_Ghibli0716
-#    - 9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba # kevinmh03
 
   jp_talent:
     - d5ae4e8f-e379-4aff-aa99-9663f745508b # ホリプロ１
@@ -342,7 +341,6 @@ labelWhiteList:
 
   jp_chat:
     - 8a8a5d48-6297-11ea-bc55-0242ac130003 # baas_e2e_bot_jp
-    - 
 
   jp_show:
     - ca8f67cd-e4db-40b8-aa0e-a3f45041a429 #チルナイト！
@@ -351,7 +349,6 @@ labelWhiteList:
     - 69e1aedd-5f29-40c3-9df6-451d0d894009 #WAROTA
     - cffc7d41-eb65-4023-b633-02992d36537d #ベストティーチャー
     - cac4f927-0046-4ad8-be4b-5a9e18be6dcd #トランプコロシアム
-
 
   jp_pickup:
     - 16226683-73a4-4055-a536-d3bb317cb3c7 # 17japan
@@ -393,7 +390,6 @@ labelWhiteList:
     - 951ca7d4-8c4f-46bb-4d72-c0ac7677af77 #
     - 9a64d68d-bce7-4a5a-baea-d041f3739549 #
 
-    
   jp_music:
     - d5ae4e8f-e379-4aff-aa99-9663f745508b 
     - da681235-3655-4966-812b-7744f361a51b
@@ -419,9 +415,6 @@ labelWhiteList:
     - 78e6ced0-4fcb-47f5-a676-2d2cf0c647f2 # iris_jp.1
     - 6f538c10-9e6b-444f-bfcb-9ea561b3325d # iris_jp.2
 
-    
-    
-
   jp_potential:
     - 98b83ed8-baa1-4d63-8214-cb80344db3a5 # 夢夢🐈💐💓mumu
     - 0224f1b4-6759-44ad-7ccf-f579c4e72206 # ルミナ🍪Rumina
@@ -441,7 +434,6 @@ labelWhiteList:
     - 5824751a-c586-43c9-8bf2-cebda7711558 # mayu_baby_1119
     - 5a25be8e-cc3f-4b71-8b29-0b3cf6bf2c1c # もえもえ🐧💋moe🌕
     - bfc6a3c0-48bb-4220-a594-5605b1c65ca6 # mitsubachi11
-
 
   jp_game:
     - f35f856a-d667-44ef-8fc5-30950eade04e # 猫无🐱れおてゃん🗽🔥
@@ -507,37 +499,6 @@ labelWhiteList:
     - c53a513a-63ad-4f65-beea-2557bbaba459
     - 6d41c4b3-4754-4b27-abcb-a28a68654502
 
-  2109_jp_NOGOODTV_LIVE:
-    - d5ae4e8f-e379-4aff-aa99-9663f745508b
-    - da681235-3655-4966-812b-7744f361a51b
-    - c53a513a-63ad-4f65-beea-2557bbaba459 #え_い_ん
-
-  2110_jp_finance1:
-    - 1001c909-355b-47c6-8e46-632bf05a453e # あみゅね
-    - a3251943-fe02-4425-8f89-573edf423e86 # れい_reichannel	
-    - 5cd24ae7-481d-40e5-8a53-49b12dac7b78 # MIKI.entertainer
-    - 25f04237-8bd9-415e-4380-afcf558114bc # kana_.jp
-    - 119d02a6-3346-41d6-a313-0491a25ee542 # Yin_Ghibli0716
-    - 9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba # kevinmh03
-
-  2201_jp_seijin:
-    - b3048bcd-71e1-4805-bcc7-b6b0c37bc20d # davidsta1
-
-  2203_jp_nmb48support:
-    - 6d41c4b3-4754-4b27-abcb-a28a68654502 #テスト先生
-    - 57a85583-bb66-4bf7-9112-a0454a7ced68 # イチプロ
-
-  2111_jp_sousaku:
-    - 57a85583-bb66-4bf7-9112-a0454a7ced68 #イチプロ
-    - 6d41c4b3-4754-4b27-abcb-a28a68654502 #テスト先生
-    - f698233c-2d55-4369-99eb-ab7a3103dfa4 # iris_jp.test
-
-  2206_jp_Ad_entry_streamer:
-    - 4b40971a-79ee-43be-b6a5-a596d4122815 #コーラ００１
-    - 6d41c4b3-4754-4b27-abcb-a28a68654502 #テスト先生
-
-  2212_jp_globalpk:
-    - 2c94f74a-ed52-41df-8d8c-0c7be251e99b #Pan
 
 useNewLabelWhiteList: true
 # newLabelWhiteList defines relation between label and user list
@@ -551,21 +512,18 @@ useNewLabelWhiteList: true
 #     - userList: (If the start time and end time are not set, it will take effect directly without restriction)
 #       - userID0
 newLabelWhiteList:
-  exclusive:
 
-#  jp_supersonic:
-#    - 8abc9dfd-ece1-42b5-b445-7c0d7d446881 # canadian1
-#    - d0ca48b2-02f0-4d88-ba1f-791749282175
-#    - 9f388fa2-8d16-4d04-a9bc-bf59035b7d68 # canadian2
-#    - 1a8494f2-f45e-4519-9cff-95b60e29ca50
-#    - 608011fd-579b-4e15-b154-3943f952c324 # Qoo_sushi
-#    - 16226683-73a4-4055-a536-d3bb317cb3c7 # 17japan
-#    - 1001c909-355b-47c6-8e46-632bf05a453e # あみゅね
-#    - a3251943-fe02-4425-8f89-573edf423e86 # れい_reichannel	
-#    - 5cd24ae7-481d-40e5-8a53-49b12dac7b78 # MIKI.entertainer
-#    - 25f04237-8bd9-415e-4380-afcf558114bc # kana_.jp
-#    - 119d02a6-3346-41d6-a313-0491a25ee542 # Yin_Ghibli0716
-#    - 9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba # kevinmh03
+  # data team auto update start version 1, please don't copy it
+  data_team_recommendation:
+    - userList:
+      - "8b40feb2-d37f-4bc5-9888-1f22a3f1057f" # こけし_kokec
+      - "b4411fd3-f5f7-4b0a-b937-d99bf290032c" # まーさん0320
+      - "26f67784-5205-43d4-b593-c7e666bd7250" # コウコウ︎koko
+      - "8b15504b-fb6f-4d7d-8170-ce6f9c1b40f2" # きんたman
+      - "0d7f3f15-fcd9-49ce-8d82-eb509979fc1f" # かわいい神部日龍
+  # data team auto update end version 1, please don't copy it
+
+  exclusive:
 
   jp_talent:
     - userList:
@@ -592,7 +550,7 @@ newLabelWhiteList:
       - 69e1aedd-5f29-40c3-9df6-451d0d894009 #WAROTA
       - cffc7d41-eb65-4023-b633-02992d36537d #ベストティーチャー
       - cac4f927-0046-4ad8-be4b-5a9e18be6dcd #トランプコロシアム
-      
+
   jp_pickup:
     - userList:
       - 16226683-73a4-4055-a536-d3bb317cb3c7 # 17japan
@@ -635,7 +593,6 @@ newLabelWhiteList:
       - 951ca7d4-8c4f-46bb-4d72-c0ac7677af77 #
       - 9a64d68d-bce7-4a5a-baea-d041f3739549 #
 
-    
   jp_music:
     - userList:
       - 3387f7ec-ea12-485f-b301-894406a8a094 #giselelin_03
@@ -662,9 +619,6 @@ newLabelWhiteList:
       - 78e6ced0-4fcb-47f5-a676-2d2cf0c647f2 # iris_jp.1
       - 6f538c10-9e6b-444f-bfcb-9ea561b3325d # iris_jp.2
 
-    
-    
-
   jp_potential:
     - userList:
       - 98b83ed8-baa1-4d63-8214-cb80344db3a5 # 夢夢🐈💐💓mumu
@@ -685,7 +639,6 @@ newLabelWhiteList:
       - 5824751a-c586-43c9-8bf2-cebda7711558 # mayu_baby_1119
       - 5a25be8e-cc3f-4b71-8b29-0b3cf6bf2c1c # もえもえ🐧💋moe🌕
       - bfc6a3c0-48bb-4220-a594-5605b1c65ca6 # mitsubachi11
-
 
   jp_game:
     - userList:
@@ -741,54 +694,19 @@ newLabelWhiteList:
 
   jp_freetalk1:
 #   - userList:
-#     - f698233c-2d55-4369-99eb-ab7a3103dfa4 # iris_jp.test  
-    
+#     - f698233c-2d55-4369-99eb-ab7a3103dfa4 # iris_jp.test
+
   jp_instrument:
     - userList:
       - f698233c-2d55-4369-99eb-ab7a3103dfa4 # iris_jp.test
-    
+
   jp_singer:
     - userList:
       - f698233c-2d55-4369-99eb-ab7a3103dfa4 # iris_jp.test
-    
+
   2108_jp_starttest:
     - userList:
       - d5ae4e8f-e379-4aff-aa99-9663f745508b
       - da681235-3655-4966-812b-7744f361a51b
       - c53a513a-63ad-4f65-beea-2557bbaba459
       - 6d41c4b3-4754-4b27-abcb-a28a68654502
-
-  2109_jp_NOGOODTV_LIVE:
-    - userList:
-      - d5ae4e8f-e379-4aff-aa99-9663f745508b
-      - da681235-3655-4966-812b-7744f361a51b
-      - c53a513a-63ad-4f65-beea-2557bbaba459 #え_い_ん
-
-  2110_jp_finance1:
-    - userList:
-      - 1001c909-355b-47c6-8e46-632bf05a453e # あみゅね
-      - a3251943-fe02-4425-8f89-573edf423e86 # れい_reichannel	
-      - 5cd24ae7-481d-40e5-8a53-49b12dac7b78 # MIKI.entertainer
-      - 25f04237-8bd9-415e-4380-afcf558114bc # kana_.jp
-      - 119d02a6-3346-41d6-a313-0491a25ee542 # Yin_Ghibli0716
-      - 9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba # kevinmh03
-
-  2201_jp_seijin:
-    - userList:
-      - b3048bcd-71e1-4805-bcc7-b6b0c37bc20d # davidsta1
-
-  2203_jp_nmb48support:
-    - userList:
-      - 6d41c4b3-4754-4b27-abcb-a28a68654502 #テスト先生
-      - 57a85583-bb66-4bf7-9112-a0454a7ced68 # イチプロ
-
-  2111_jp_sousaku:
-    - userList:
-      - 57a85583-bb66-4bf7-9112-a0454a7ced68 #イチプロ
-      - 6d41c4b3-4754-4b27-abcb-a28a68654502 #テスト先生
-      - f698233c-2d55-4369-99eb-ab7a3103dfa4 # iris_jp.test
-
-  2206_jp_Ad_entry_streamer:
-    - userList:
-      - 4b40971a-79ee-43be-b6a5-a596d4122815 #コーラ００１
-      - 6d41c4b3-4754-4b27-abcb-a28a68654502 #テスト先生
