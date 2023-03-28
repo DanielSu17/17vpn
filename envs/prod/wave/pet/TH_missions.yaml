@@ -1,0 +1,82 @@
+# !!! IMPORTANT !!!
+# 『新增任務』或『替換任務獎勵飼料』的流程
+# 1. 若任務獎勵飼料未上架至飼料 config，則需先上架飼料 (paid_items.yaml)
+# 2. 於下方『新增任務』或『更新任務獎勵 (reward_feed_id)』
+
+# missions:
+#   - id: stream-15-mins
+#     # 1: 開直播, 2: 收禮, 3: 新增粉絲, 4: 觀看直播
+#     type: 1
+#     i18n_key: pet_my_mission_1
+#     # 1: 時間以秒為單位, 2: 數量為單位
+#     unit_type: 1
+#     # 僅有數量型任務 (unit_type: 2) 才需要 unit_i18n_key，其餘為空字串
+#     # 目前只有兩種數量型任務分別為 新增粉絲 以及 收禮
+#     # pet_my_mission_fans_limit: 新增粉絲 (位)
+#     # pet_my_mission_gift_limit: 收禮 (個)
+#     unit_i18n_key: ""
+#     # feed id: 參閱 wave/pet/paid_items.yaml
+#     reward_feed_id: water
+#     # 單日獎勵領取上限，若無單日領取上限則填 -1
+#     daily_reward_limit: -1
+#     # 達成任務的條件
+#     # 以 "當日直播 15 分鐘" 為例，unit_type 為 1 (時間以秒為單位)，則 threshold 應為 900 (15 分鐘 * 60 秒)
+#     # 以 "新增粉絲 1 位" 為例，unit type 為 (數量為單位)，則 threshold 應為 1
+#     threshold: 900
+#     extra_info:
+#       # type: 2 時需要該欄位
+#       gift_price_threshold: 30
+
+missions:
+  # 當日直播 15 分鐘
+  - id: pet_mission_start_live_min
+    type: 1
+    i18n_key: pet_my_mission_1
+    unit_type: 1
+    reward_feed_id: feed_water
+    daily_reward_limit: -1
+    threshold: 900
+  # 當日直播滿 1 小時
+  - id: pet_mission_start_live_hour
+    type: 1
+    i18n_key: pet_my_mission_2
+    unit_type: 1
+    reward_feed_id: feed_milk
+    daily_reward_limit: -1
+    threshold: 3600
+  # 收禮 (Wave coins > 30 / 個） 當日上限 30 次
+  - id: pet_mission_receive_coins
+    type: 2
+    i18n_key: pet_my_mission_3
+    unit_type: 2
+    unit_i18n_key: pet_my_mission_gift_limit
+    reward_feed_id: feed_cans
+    daily_reward_limit: 30
+    threshold: 1
+    extra_info:
+      gift_price_threshold: 30
+  # 新增粉絲數一位 當日上限 30 位
+  - id: pet_mission_new_fans
+    type: 3
+    i18n_key: pet_my_mission_4
+    unit_type: 2
+    unit_i18n_key: pet_my_mission_fans_limit
+    reward_feed_id: feed_cans
+    daily_reward_limit: 30
+    threshold: 1
+  # 觀看直播滿 1 小時
+  - id: pet_mission_watch_live_hour1
+    type: 4
+    i18n_key: pet_my_mission_5
+    unit_type: 1
+    reward_feed_id: feed_milk
+    daily_reward_limit: -1
+    threshold: 3600
+  # 觀看直播滿 2 小時
+  - id: pet_mission_watch_live_hour2
+    type: 4
+    i18n_key: pet_my_mission_6
+    unit_type: 1
+    reward_feed_id: feed_cans
+    daily_reward_limit: -1
+    threshold: 7200
