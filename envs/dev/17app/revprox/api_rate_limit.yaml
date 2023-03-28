@@ -32,6 +32,10 @@ rate_limits:
 - {url: "/api/v1/liveStreams/qiniu/notification",            method: "POST",    flow_per_second: 0.05,    reservoir_size: 3,    scope: by_access_token}
 - {url: "/api/v1/liveStreams/[A-Za-z0-9-]+/alive",           method: "POST",    flow_per_second: 1,       reservoir_size: 1,    scope: by_access_token}
 - {url: "/api/v1/liveStreams/suspicious",                    method: "GET",     flow_per_second: 0.0166,  reservoir_size: 1,    scope: by_access_token}
+- {url: "/api/v1/lives/[A-Za-z0-9-]+/streamer/rockviewers",  method: "GET",     flow_per_second: 180,     reservoir_size: 180,  scope: by_global}
+- {url: "/api/v1/lives/[A-Za-z0-9-]+/streamer/rockviewers",  method: "GET",     flow_per_second: 0.333,   reservoir_size: 1,    scope: by_jwt}
+- {url: "/api/v1/lives/[A-Za-z0-9-]+/viewer/rockviewers",    method: "GET",     flow_per_second: 3000,    reservoir_size: 3000, scope: by_global}
+- {url: "/api/v1/lives/[A-Za-z0-9-]+/viewer/rockviewers",    method: "GET",     flow_per_second: 0.333,   reservoir_size: 1,    scope: by_jwt}
 
 #app/api/api/vote/vote.go:45:		apis.AddRateLimit(rl, apis.RateLimitVote,     ratelimiter.Second, doVoteQPS, 		apis.ByUser),
 - {url: "/api/v1/vote",                                      method: "POST",    flow_per_second: 5,       reservoir_size: 5,    scope: by_access_token}
