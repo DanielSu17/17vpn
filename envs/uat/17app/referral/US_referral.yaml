@@ -28,13 +28,38 @@ quests:
     inviterRewardBBC: 100 # reward for inviter when invitee finish all missions (in BBC)
     missionDay: 7 # days that missions appear
     missions:
-      - type: 2
+      - type: 4
         point: 0
         exp: 0
-        required: 1
+        required: 5
         withReminder: false
         voucherReward:
           type: 1
           itemID: "gift_wave_update_ops"
           amount: 2
           intervalSec: 28800
+      - type: 6
+        point: 300
+        exp: 0
+        required: 1
+        withReminder: false
+      - type: 7
+        point: 400
+        exp: 0
+        required: 1
+        withReminder: false
+      - type: 8
+        point: 35
+        exp: 0
+        required: 7
+        withReminder: false
+      - type: 11
+        point: 50
+        exp: 0
+        required: 1
+        withReminder: false
+      - type: 12
+        point: 75
+        exp: 0
+        required: 1
+        withReminder: false
