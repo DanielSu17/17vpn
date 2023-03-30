@@ -1,120 +1,149 @@
-datadog:
-  type: dialog
-  title: Request Datadog
-  submitText: Submit
-  hasBotMail: true
-  blocks:
-    - item: SINGLE_SELECT
-      name: Permission
-      value: [ Read, Standard, Admin ]
-    - item: TEXT_INPUT
-      name: Comment
-      value: ~
-mongo:
-  type: modal
-  title: Request MongoDB
-  submitText: Submit
-  hasBotMail: true
-  closeText: Close
-  blocks:
-    - item: SINGLE_SELECT
-      name: Permission
-      value: [ read, write ]
-      id: permission
-    - item: SINGLE_SELECT
-      name: Env
-      value: [ uat, pre-prod, prod ]
-      id: env
-    - item: MULTI_SELECT
-      name: Clusters
-      value: [ default, user, stream, point, eventory, poll, groupcall, message, keyword, discovery]
-      description:
-        keyword: pre-prod, prod only
-        discovery: pre-prod only
-      id: cluster
-    - item: TEXT_INPUT
-      name: Comment
-      value: ~
-      id: comment
-mysql:
-  type: modal
-  title: Request MySQL
-  submitText: Submit
-  hasBotMail: true
-  closeText: Close
-  blocks:
-    - item: SINGLE_SELECT
-      name: Permission
-      value: [ read, write ]
-      id: permission
-    - item: SINGLE_SELECT
-      name: Env
-      value: [ uat, pre-prod, prod ]
-      id: env
-    - item: TEXT_INPUT
-      name: Comment
-      value: ~
-      id: comment
-github-repos:
-  type: modal
-  title: Request Github Repos
-  submitText: Submit
-  hasBotMail: false
-  closeText: Close
-  blocks:
-    - item: VALIDATE_TEXT_INPUT
-      name: UserID
-      id: user
-    - item: VALIDATE_TEXT_INPUT
-      name: Repositories
-      id: repo
-    - item: SINGLE_SELECT
-      name: Repositories Permission
-      value: [ read, write ]
-      id: repoPerm
-    - item: TEXT_INPUT
-      name: Comment
-      value: ~
-      id: comment
-github-teams:
-  type: modal
-  title: Request Github Teams
-  submitText: Submit
-  hasBotMail: false
-  closeText: Close
-  blocks:
-    - item: VALIDATE_TEXT_INPUT
-      name: UserID
-      id: user
-    - item: VALIDATE_TEXT_INPUT
-      name: Team
-      id: team
-    - item: SINGLE_SELECT
-      name: Team Permission
-      value: [ member ]
-      id: teamPerm
-    - item: TEXT_INPUT
-      name: Comment
-      value: ~
-      id: comment
-github-team-repos:
-  type: modal
-  title: Request Github Team
-  submitText: Submit
-  hasBotMail: false
-  closeText: Close
-  blocks:
-    - item: VALIDATE_TEXT_INPUT
-      name: Team
-      id: team
-    - item: VALIDATE_TEXT_INPUT
-      name: Repositories
-      id: repo
-    - item: SINGLE_SELECT
-      name: Repositories Permission
-      value: [ read, write ]
-      id: repoPerm
-    - item: TEXT_INPUT
-      name: Comment
-      value: ~
-      id: comment
+request:
+  datadog:
+    type: dialog
+    title: Request Datadog
+    submitText: Submit
+    hasBotMail: true
+    blocks:
+      - item: SINGLE_SELECT
+        name: Permission
+        value:
+          - Read
+          - Standard
+          - Admin
+      - item: TEXT_INPUT
+        name: Comment
+        value: null
+  mongo:
+    type: modal
+    title: Request MongoDB
+    submitText: Submit
+    hasBotMail: true
+    closeText: Close
+    blocks:
+      - item: SINGLE_SELECT
+        name: Permission
+        value:
+          - read
+          - write
+        id: permission
+      - item: SINGLE_SELECT
+        name: Env
+        value:
+          - uat
+          - pre-prod
+          - prod
+        id: env
+      - item: MULTI_SELECT
+        name: Clusters
+        value:
+          - default
+          - user
+          - stream
+          - point
+          - eventory
+          - poll
+          - groupcall
+          - message
+          - keyword
+          - discovery
+        description:
+          keyword: 'pre-prod, prod only'
+          discovery: pre-prod only
+        id: cluster
+      - item: TEXT_INPUT
+        name: Comment
+        value: null
+        id: comment
+  mysql:
+    type: modal
+    title: Request MySQL
+    submitText: Submit
+    hasBotMail: true
+    closeText: Close
+    blocks:
+      - item: SINGLE_SELECT
+        name: Permission
+        value:
+          - read
+          - write
+        id: permission
+      - item: SINGLE_SELECT
+        name: Env
+        value:
+          - uat
+          - pre-prod
+          - prod
+        id: env
+      - item: TEXT_INPUT
+        name: Comment
+        value: null
+        id: comment
+  github-repos:
+    type: modal
+    title: Request Github Repos
+    submitText: Submit
+    hasBotMail: false
+    closeText: Close
+    blocks:
+      - item: VALIDATE_TEXT_INPUT
+        name: UserID
+        id: user
+      - item: VALIDATE_TEXT_INPUT
+        name: Repositories
+        id: repo
+      - item: SINGLE_SELECT
+        name: Repositories Permission
+        value:
+          - read
+          - write
+        id: repoPerm
+      - item: TEXT_INPUT
+        name: Comment
+        value: null
+        id: comment
+  github-teams:
+    type: modal
+    title: Request Github Teams
+    submitText: Submit
+    hasBotMail: false
+    closeText: Close
+    blocks:
+      - item: VALIDATE_TEXT_INPUT
+        name: UserID
+        id: user
+      - item: VALIDATE_TEXT_INPUT
+        name: Team
+        id: team
+      - item: SINGLE_SELECT
+        name: Team Permission
+        value:
+          - member
+        id: teamPerm
+      - item: TEXT_INPUT
+        name: Comment
+        value: null
+        id: comment
+  github-team-repos:
+    type: modal
+    title: Request Github Team
+    submitText: Submit
+    hasBotMail: false
+    closeText: Close
+    blocks:
+      - item: VALIDATE_TEXT_INPUT
+        name: Team
+        id: team
+      - item: VALIDATE_TEXT_INPUT
+        name: Repositories
+        id: repo
+      - item: SINGLE_SELECT
+        name: Repositories Permission
+        value:
+          - read
+          - write
+        id: repoPerm
+      - item: TEXT_INPUT
+        name: Comment
+        value: null
+        id: comment
