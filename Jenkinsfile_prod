@@ -63,7 +63,9 @@ node('gcp') { timestamps { ansiColor('xterm') {
                     "ENDPOINTS_17APP_PROD=http://34.83.167.34:2379,http://34.82.177.43:2379,http://35.185.213.91:2379",
                     "ENDPOINTS_WAVE_PROD=",
                     "ENDPOINTS_EVENTORY_PROD=",
-                    "ENDPOINTS_STREAMING_PROD="
+                    "ENDPOINTS_STREAMING_PROD=",
+                    "ENDPOINTS_SHOT_PROD=http://34.83.167.34:2379,http://34.82.177.43:2379,http://35.185.213.91:2379",
+                    "ENDPOINTS_AIOPS_PROD=http://34.83.167.34:2379,http://34.82.177.43:2379,http://35.185.213.91:2379"
                 ]) {
                     sh('./push_to_etcd.sh')
                 }
