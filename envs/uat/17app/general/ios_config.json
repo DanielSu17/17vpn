@@ -59,18 +59,34 @@
 	  "bugsee": 1
   },
   "apm" : {
-    "apply_version" : "3.172.0",
-    "sampling" : "015abc",
+    "apply_version" : "",
+    "sampling" : "",
+    "whitelist_user_id" : [],
     "mainThreadHangs_threshold" : 3,
     "pageEvent_threshold" : 5,
-    "enableFPS": 1
+    "enableFPS": 0,
+    "enableReq": 0,
+    "datadog_apply_version": "",
+    "crash_apply_version": ""
   },
   "ios_features": {
+    "onelink_deep_link": {
+      "apply_legacy_api": 0
+    },
+    "api_common_error_handling": {
+      "phone_verification_required": 1
+    },
     "pull_stream_core" : {
-      "normal_apply_version" : "3.171.0",
-      "concert_apply_version" : "3.171.0",
-      "trivia_apply_version" : "3.171.0"
-      },
+      "normal_apply_version" : "3.179.720",
+      "concert_apply_version" : "3.179.720",
+      "trivia_apply_version" : "",
+      "pip_device_blacklist":[
+         "iPhone 6s",
+         "iPhone 6s Plus"
+      ],
+      "pip_apply_version" : "3.179.720",
+      "concert_pip_apply_version" : "3.179.720"
+    },
       "pubnub_cache": {
         "keepTimeTokenOnListChange" : 0,
         "catchUpOnSubscriptionRestore" : 0
@@ -81,7 +97,17 @@
       },
       "matomo": {
         "interval": 30,
-        "lowest_spec_version_trigger_error_alert": 124
+        "lowest_spec_version_trigger_error_alert": 1
+      },
+      "matomo_events": {
+        "disabled_events": {
+          "ably" : {
+            "apply_version":"3.0.0"
+          },
+          "pubnub" : {
+            "apply_version":"3.0.0"
+          }
+        }
       },
       "painter": {
         "apply_version": "3.104.0"
@@ -169,7 +195,8 @@
           ],
           "dump_ijk_debug_info_apply_version" : "3.89.0",
           "low_quality_solution" : {
-            "apply_version" : "3.106.0",
+            "apply_version" : "",
+	    "buffering_check_frequency" : 2,
             "buffering_check_period" : 30.0,
             "lower_down_threshold_for_buffering_time" : 20.0,
 	    "upper_threshold_for_buffering_free_time" : 300,
@@ -234,7 +261,7 @@
       },
       "live_refactor" : {
         "comment" : {
-          "apply_version" : "3.220.0"
+          "apply_version" : "3.999.0"
         },
         "header" : {
           "enabled" : 0
@@ -257,38 +284,121 @@
       "cpu_info" : {
 	        "apply_version" : "3.151.0",
 	        "max_usage_threshold" : 80,
-	        "thermal_threshold" : 3,
+	        "thermal_threshold" : 2,
+	        "overheat_duration_threshould" : 10,
 	        "interval" : 5,
 	        "capacity" : 12
       },
       "event_tracker_setting": {
-          "enable_preload_file": "3.172.0",
-          "enable_event_log": "3.172.0"
+          "enable_preload_file": "",
+          "enable_event_log": "3.172.0",
+          "page_key_error": {
+            "apply_version": "3.172.0",
+            "log_path_count": 20,
+            "check_pages": ["Livestream_LiveScreen"]
+          },
+          "enable_separated_event_queue" : 1
+      },
+      "enable_api_client": {
+          "apply_version" : "3.190.0"
+      },
+      "network_module_support_ed": {
+          "af_network_module": {
+            "apply_version" : "3.190.0"
+          },
+          "ed_manager_module": {
+            "apply_version" : "3.190.0",
+            "decay_config" : {
+              "0": {
+                "minDelayInterval": 1.0,
+                "maxDelayInterval": 4.0,
+                "multiplier": 1.25,
+                "evaluationPeriod": 30.0
+              },
+              "1": {
+                "minDelayInterval": 3.0,
+                "maxDelayInterval": 9.0,
+                "multiplier": 1.5,
+                "evaluationPeriod": 30.0
+              },
+              "2": {
+                "minDelayInterval": 5.0,
+                "maxDelayInterval": 16.0,
+                "multiplier": 1.75,
+                "evaluationPeriod": 30.0
+              }
+            }
+          }
       },
       "stream_room_rejoin": {
-          "apply_version" : "3.224.0",
-          "apply_region" : ["ALL"]
+          "apply_version": "3.224.0",
+          "apply_region": ["ALL"],
+          "rejoin_duration": 600.0,
+          "duration_threshold": 30.0
       }
+  },
+  "error_handling": {
+    "enable_point_not_enough": 1,
+    "enable_token_unauthorized": 1
   },
   "gift_file_keep_days":7,
   "registerLogger" : {
     "apply_version" : ""
   },
-  "condition_simulators": {
-    "memory": {
-      "oom": [
+  "twitter_new_sdk": {
+    "apply_version": "3.184.0"
+  },
+  "braze": {
+    "apply_version": "3.193.0",
+    "custom_event_enable_regions": ["TW","HK","JP","US"]
+  },
+  "enable_JJException": {
+    "apply_version": "3.204.0"
+  },
+  "facebook_share": {
+    "mode": 4
+  },
+  "aerobic": {
+    "apply_version": "3.183.0",
+    "endpoints_config": {
+      "apply_version": "3.190.0",
+      "endpoints": [
         {
-          "size": 1000,
-          "devices": [
-            "5e86e1d4b12045a38408b021084aeb9e"
+          "path": "path/",
+          "method": "GET",
+          "scores": [
+            {
+              "duration": 1,
+              "score": 0.7
+            }
+          ]
+        },
+        {
+          "path": "path/upload/:id",
+          "method": "POST",
+          "scores": [
+            {
+              "duration": 1,
+              "score": 0.7
+            }
           ]
         }
       ]
-    },
-    "force_crash_devices": [
-      "5e86e1d4b12045a38408b021084aeb9e",
-      "4873837fe0cb47549b23c06cc09e493c",
-      "828d07187b254730970089be738a2de7"
-    ]
+    }
+  },
+  "firebase": {
+    "performance": {
+      "apply_version":"4.0.0"
+    }
+  },
+  "read_combo_gift": {
+    "apply_version":"3.216.0"
+  },
+  "render_in_display_layer": {
+    "apply_version": "3.229.0"
+  },
+  "video_toolbox_bitrate_data_rate_unlimit": {
+    "start_ios_version": "16.4",
+    "end_ios_version": "20.0"
   }
 }
