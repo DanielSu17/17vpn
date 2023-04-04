@@ -12,7 +12,6 @@
 #※save（Submit）する前に、他の作業者と重複してないか要チェックです！
 #※他の作業者と同時間帯に同時に設定を行うと、上書きや削除されることにご注意ください。
 
-
 # - id: "sample"
 #   startTime: "2020-01-11 08:00:00 (GMT+0800)"
 #   endTime: "2020-01-11 16:00:00 (GMT+0800)"
@@ -22,9 +21,39 @@
 #     - "567e0b5d-1516-4ce0-b4e8-bec4e756d5ae" # kevinmh
 #     - "caf2da0e-54cb-4058-4f1c-4056eb970161" # janet.w01
 
-
 frames:
 
+  - id: JP_2023_test
+    startTime: "2023-01-01 00:00:00 (GMT+0900)"
+    endTime: "2023-04-04 18:59:59 (GMT+0900)"
+    priority: 5 # bigger number means higher priority, should greater equal than 0
+    imgURL: "https://cdn.17app.co/ce8879b8-8ff4-44d6-b931-b4ba724f969e.png"
+    userIDs:
+      - "d69bffc8-8623-405e-8063-462a6066958c"
+
+  - id: JP_2023_Easter_0407_0417
+    startTime: "2023-04-07 15:00:00 (GMT+0900)"
+    endTime: "2023-04-17 14:59:59 (GMT+0900)"
+    priority: 5 # bigger number means higher priority, should greater equal than 0
+    imgURL: "https://cdn.17app.co/ce8879b8-8ff4-44d6-b931-b4ba724f969e.png"
+    userIDs:
+      - "f108c753-515b-45eb-a416-5089469db091"
+      - "a257c29c-93b3-44cd-adb6-54cf775cf3b2"
+      - "4ea1b9f3-c74b-445c-a7f1-8e3cf3d944d1"
+      - "9abc901e-b1f8-4c92-95ce-514b9d4a8578"
+      - "f17a9b0c-77e2-4bc3-bfc2-ff1851074eda"
+      - "3be9b411-e112-4dd9-8b68-3a59ed07d0c4"
+      - "9307bc99-4e92-44f6-bf3c-c0544cbae410"
+      - "2a19a61a-db88-432a-b3c9-1095034a510a"
+      - "b8d463ee-d67d-47e4-bb64-87313f0b17cd"
+      - "e487df90-377a-40c4-ae14-0bd38ecc8049"
+      - "c45c46cb-3362-4ccd-9120-5c1cf30bf03a"
+      - "aa2f6d09-9886-4070-bc25-b272e3e68a28"
+      - "4e14d247-26c5-4090-44d6-a81ae9ab013a"
+      - "4b223421-a9c1-40e9-ae33-1acb28c830ef"
+      - "02605b92-fdbd-4973-84ee-72b32da15d59"
+      - "621bc25f-803a-4653-b870-961f5706acce"
+      - "70d2fea6-9108-4817-bc4e-a713118065fe"
 
   - id: TW-2302-tw-covergirl
     startTime: "2023-03-10 18:00:00 (GMT+0800)"
@@ -39,7 +68,6 @@ frames:
       - "c7b98a80-6c59-4022-98d6-e77b4982060d"
       - "6a7cfdd6-9730-43af-9e24-c473b7cb416a"
       - "98175ca5-06f6-4577-be5b-d08f035d67fe"
-
 
   - id: US_2303_Mining_21
     startTime: "2023-03-01 18:00:00 (GMT-0800)"
