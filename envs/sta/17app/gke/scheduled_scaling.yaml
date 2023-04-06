@@ -106,23 +106,9 @@
   - name: k8ssta-concert-trade-main
     minReplicas: 30
 
-# 0328 mysql exp
-- startTime: "2023-03-28 11:30:00 (GMT+0800)"
-  endTime: "2023-03-28 13:30:00 (GMT+0800)"
+# 0406 votegift exp
+- startTime: "2023-04-06 11:30:00 (GMT+0800)"
+  endTime: "2023-04-06 13:30:00 (GMT+0800)"
   HPAConfigs:
-  - name: k8ssta-goapi-main
-    minReplicas: 80
-  - name: k8ssta-golives-main
-    minReplicas: 80
-  - name: k8ssta-gotrade-main
-    minReplicas: 12
   - name: k8ssta-revprox-tw-main
-    minReplicas: 36
-  - name: k8ssta-gocells-main
-    minReplicas: 40
-
-- startTime: "2023-03-28 12:30:00 (GMT+0800)"
-  endTime: "2023-03-28 13:30:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8ssta-goapi-main
-    minReplicas: 85
+    minReplicas: 18
