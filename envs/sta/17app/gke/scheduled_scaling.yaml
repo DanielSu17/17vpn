@@ -24,91 +24,13 @@
   - name: k8ssta-concert-trade-main
     minReplicas: 30
 
-# eventory uv stress test
-- startTime: "2022-07-22 15:00:00 (GMT+0800)"
-  endTime: "2022-07-22 18:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8ssta-golives-main
-    minReplicas: 25
-
-# Jennifer stress test
-- startTime: "2021-11-16 17:15:00 (GMT+0800)"
-  endTime: "2021-11-16 19:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8ssta-goapi-main
-    minReplicas: 9
-  - name: k8ssta-data-middleware-main
-    minReplicas: 12
-
-# Alex Su's test
-- startTime: "2022-12-06 19:20:00 (GMT+0800)"
-  endTime: "2022-12-06 20:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8ssta-goapi-main
-    minReplicas: 2
-
-# Judy Dai stress test
-# poll service stress test
-# gift-worker stress test
-- startTime: "2021-12-06 16:30:00 (GMT+0800)"
-  endTime: "2021-12-06 19:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8ssta-goapi-main
-    minReplicas: 10
-  - name: k8ssta-golives-main
-    minReplicas: 10
-  - name: k8ssta-gotrade-main
-    minReplicas: 24
-  - name: k8ssta-revprox-tw-main
-    minReplicas: 36
-  - name: k8ssta-gift-worker-main
-    minReplicas: 10
-
-# Eventory test
-- startTime: "2021-12-10 14:00:00 (GMT+0800)"
-  endTime: "2021-12-10 17:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8ssta-eventory-worker-main
-    minReplicas: 30
-
-# Bear bbrichv2 stress test
-- startTime: "2021-12-08 14:00:00 (GMT+0800)"
-  endTime: "2021-12-08 15:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8ssta-bbrichv2-main
-    minReplicas: 60
-  - name: k8ssta-apisix-bbrich-main
-    minReplicas: 2
-
-# ed testing - 0906
-- startTime: "2022-09-13 11:50:00 (GMT+0800)"
-  endTime: "2022-09-13 14:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8ssta-revprox-tw-main
-    minReplicas: 36
-
-# 1118 ksniff exp
-- startTime: "2022-11-18 12:00:00 (GMT+0800)"
-  endTime: "2022-11-18 14:00:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8ssta-goapi-main
-    minReplicas: 80
-  - name: k8ssta-golives-main
-    minReplicas: 80
-  - name: k8ssta-gotrade-main
-    minReplicas: 40
-  - name: k8ssta-revprox-tw-main
-    minReplicas: 36
-  - name: k8ssta-gocells-main
-    minReplicas: 40
-  - name: k8ssta-concert-stream-tw-main
-    minReplicas: 30
-  - name: k8ssta-concert-trade-main
-    minReplicas: 30
-
 # 0406 votegift exp
 - startTime: "2023-04-06 11:30:00 (GMT+0800)"
   endTime: "2023-04-06 13:30:00 (GMT+0800)"
   HPAConfigs:
+  - name: k8ssta-goapi-main
+    minReplicas: 9
+  - name: k8ssta-gotrade-main
+    minReplicas: 4
   - name: k8ssta-revprox-tw-main
     minReplicas: 18
