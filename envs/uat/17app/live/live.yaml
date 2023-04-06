@@ -88,3 +88,8 @@ followerOnlyCommentVersionControl:
 
 # for event sticker ranking interval
 liveInfoInterval: 10
+
+#for client, they call end live api after how many times keepStream api fail
+clientEndStreamCount: 60
+#for client, send matomo event with keepStream status for users in this whitelist
+matomoLogWhiteList: ["3a4b6a11-c988-4f05-a054-caf0091d0444"]
