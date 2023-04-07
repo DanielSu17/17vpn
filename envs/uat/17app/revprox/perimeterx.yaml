@@ -20,10 +20,9 @@ ip_headers:
 blocking_score: 100
 sensitive_routes: []
 whitelist_routes: []
-enforced_routes: []
-monitored_routes:
-  - "/api/v1/apigateway.*"
-  - "/api/v1/auth/.*"
+enforced_routes:
+  - "/api/v1/auth/goodnight/register"
+monitored_routes: []
 debug_routes: []
 s2s_timeout: 1000
 activities_timeout: 3000
