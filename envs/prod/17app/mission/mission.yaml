@@ -40,37 +40,65 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
-- ID: b3daadbc-486b-4203-ade7-8f62c2956ce1
-  type: 9
+- ID: 72254fb7-446b-4ded-a4d7-8093ee27cf2e
+  type: 24
   category: 0
-  lifeCycle: 1
+  lifeCycle: 2
   targetAudience: 0
   levelRange:
     min: 1
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2304_tw_yan_a_bp
+    rewardID: 2302_tw_steel_17
     amount: 1
     expireTimeSecs: 86400
-  i18nTitle: tw_mission_happybirthday_1
+  i18nTitle: tw_2_days_login
   i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: baggage_mission_event_done
+  i18nDescription: us_baggage_mission_newbie
   i18nDescriptionParams: []
-  goalValue: 300
+  goalValue: 2
   enableTimeRange:
-  - startTime: 2023-04-09 00:00:00 (GMT+0800)
-    endTime: 2023-04-09 23:59:59 (GMT+0800)
-  refIDs:
-  - 7350d080-8f2f-4cd9-a63e-619d60a28dca
-  - 7999f107-9d03-4fbc-a688-bb45d9e416fe
+  - startTime: 2023-04-10 14:00:00 (GMT+0800)
+    endTime: 2023-05-31 23:59:59 (GMT+0800)
+  refIDs: []
   platforms:
   - android
   - ios
   - web
-  requirePhoneBinding: true
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 4bd7fc4a-b4a8-41bc-8055-057230e0b5a8
+  type: 24
+  category: 0
+  lifeCycle: 2
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2302_tw_steel_18
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: tw_3_days_login
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: us_baggage_mission_newbie
+  i18nDescriptionParams: []
+  goalValue: 3
+  enableTimeRange:
+  - startTime: 2023-04-10 14:00:00 (GMT+0800)
+    endTime: 2023-05-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
   withReminder: true
 - ID: 92afd967-b02d-4d8b-9cb1-8f4c7e3d04a1
   type: 13
@@ -333,124 +361,787 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-- ID: 60992f19-c897-40e9-9551-8e03f8516d91
-  type: 9
+- ID: aacc060e-821c-42e9-aa92-55e5b2233b26
+  type: 11
   category: 0
   lifeCycle: 0
   targetAudience: 0
   levelRange:
     min: 1
-    max: 10
+    max: 999
   reward:
     rewardType: 1
-    rewardID: welcome_kiwisister
-    amount: 5
+    rewardID: 2302_tw_steel_13
+    amount: 2
     expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream_2
+  i18nTitle: baggage_mission_daily_share_reward_title_FBFeeds
   i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: tw_mission_welcomestream_rewards
+  i18nDescription: baggage_mission_opt_daily_share_reward_des_FBFeeds
   i18nDescriptionParams: []
-  goalValue: 1200
+  goalValue: 1
   enableTimeRange:
-  - startTime: 2023-04-06 21:00:00 (GMT+0800)
-    endTime: 2023-04-06 22:30:00 (GMT+0800)
-  refIDs:
-  - 09cb94f0-b536-49d1-b539-311085b78df4
+  - startTime: 2023-04-10 14:00:00 (GMT+0800)
+    endTime: 2023-05-31 23:59:59 (GMT+0800)
+  refIDs: []
   platforms:
   - android
   - ios
+  - web
   requirePhoneBinding: false
   withReminder: true
-- ID: 8406ca0c-a2db-4316-a2ed-6ba8c9ac6fdc
+- ID: 12850c80-631a-49bb-8c9b-7ad89f9f3b85
   type: 9
   category: 0
   lifeCycle: 0
   targetAudience: 0
   levelRange:
     min: 1
-    max: 10
+    max: 999
   reward:
     rewardType: 1
-    rewardID: welcome_kiwisister
-    amount: 5
+    rewardID: 2302_tw_steel_13
+    amount: 1
     expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream_2
-  i18nTitleParams: []
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "5"
+    mapOption: 0
+    fontAttribute: null
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: tw_mission_welcomestream_rewards
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
   i18nDescriptionParams: []
-  goalValue: 1200
+  goalValue: 300
   enableTimeRange:
-  - startTime: 2023-04-07 21:00:00 (GMT+0800)
-    endTime: 2023-04-07 22:30:00 (GMT+0800)
-  refIDs:
-  - e7858f3b-2ee9-4450-bb4c-f30aa5360d8f
+  - startTime: 2023-04-10 14:00:00 (GMT+0800)
+    endTime: 2023-05-31 23:59:59 (GMT+0800)
+  refIDs: []
   platforms:
   - android
   - ios
+  - web
   requirePhoneBinding: false
   withReminder: true
-- ID: b6b6233f-eefb-44b9-bb20-5eee89dda167
+- ID: 3d557873-2902-4c4c-9c67-809815f7f709
   type: 9
   category: 0
   lifeCycle: 0
   targetAudience: 0
   levelRange:
     min: 1
-    max: 10
+    max: 999
   reward:
     rewardType: 1
-    rewardID: welcome_kiwisister
-    amount: 5
+    rewardID: 2302_tw_steel_13
+    amount: 1
     expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream_2
-  i18nTitleParams: []
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "20"
+    mapOption: 0
+    fontAttribute: null
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: tw_mission_welcomestream_rewards
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
   i18nDescriptionParams: []
   goalValue: 1200
   enableTimeRange:
-  - startTime: 2023-04-08 21:00:00 (GMT+0800)
-    endTime: 2023-04-08 22:30:00 (GMT+0800)
-  refIDs:
-  - 137b5175-62b5-44e0-b9c2-f4b14cac7bdd
+  - startTime: 2023-04-10 14:00:00 (GMT+0800)
+    endTime: 2023-05-31 23:59:59 (GMT+0800)
+  refIDs: []
   platforms:
   - android
   - ios
+  - web
   requirePhoneBinding: false
   withReminder: true
-- ID: 61eb9f28-a718-473b-a954-8ed1965198ae
+- ID: 2324d6dd-0bed-40af-b2b4-07174ad9f46a
   type: 9
   category: 0
   lifeCycle: 0
   targetAudience: 0
   levelRange:
     min: 1
-    max: 10
+    max: 999
   reward:
     rewardType: 1
-    rewardID: welcome_kiwisister
-    amount: 5
+    rewardID: 2302_tw_steel_13
+    amount: 1
     expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream_2
-  i18nTitleParams: []
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "35"
+    mapOption: 0
+    fontAttribute: null
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: tw_mission_welcomestream_rewards
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
   i18nDescriptionParams: []
-  goalValue: 1200
+  goalValue: 2100
   enableTimeRange:
-  - startTime: 2023-04-09 21:00:00 (GMT+0800)
-    endTime: 2023-04-09 22:30:00 (GMT+0800)
-  refIDs:
-  - aba2085b-3345-474b-a4c5-662e03ac4911
+  - startTime: 2023-04-10 14:00:00 (GMT+0800)
+    endTime: 2023-05-31 23:59:59 (GMT+0800)
+  refIDs: []
   platforms:
   - android
   - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 2dc9c34d-b61d-424b-a5a9-f997001ac9af
+  type: 5
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2302_tw_steel_14
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_leave_comment_reward_title2
+  i18nTitleParams:
+  - value: "3"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_leave_comment_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 3
+  enableTimeRange:
+  - startTime: 2023-04-10 14:00:00 (GMT+0800)
+    endTime: 2023-05-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 7701449a-d787-4597-84bb-1404b8e768df
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2302_tw_steel_14
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "10"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 600
+  enableTimeRange:
+  - startTime: 2023-04-10 14:00:00 (GMT+0800)
+    endTime: 2023-05-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: dab1132e-a554-4bae-95f0-b40a9d5960f9
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2302_tw_steel_14
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "25"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 1500
+  enableTimeRange:
+  - startTime: 2023-04-10 14:00:00 (GMT+0800)
+    endTime: 2023-05-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: edfd173b-86d7-4717-a7dd-8a7c5d71a8c9
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2302_tw_steel_14
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "40"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 2400
+  enableTimeRange:
+  - startTime: 2023-04-10 14:00:00 (GMT+0800)
+    endTime: 2023-05-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 9ab2d7c1-a0e6-4417-a191-6f19e77c59e0
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2302_tw_steel_15
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "15"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 900
+  enableTimeRange:
+  - startTime: 2023-04-10 14:00:00 (GMT+0800)
+    endTime: 2023-05-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: f817d9c0-5c69-494a-b622-26d558c35127
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2302_tw_steel_15
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "30"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 1800
+  enableTimeRange:
+  - startTime: 2023-04-10 14:00:00 (GMT+0800)
+    endTime: 2023-05-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 1c6e1ed3-c436-4667-b01d-eaff56eedf99
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2302_tw_steel_15
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "50"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 3000
+  enableTimeRange:
+  - startTime: 2023-04-10 14:00:00 (GMT+0800)
+    endTime: 2023-05-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: d3a7def9-ea68-418d-aee9-eb0359a1fd68
+  type: 11
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2302_tw_steel_16
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_daily_share_reward_title_LINE
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_daily_share_reward_des_LINE
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2023-04-10 14:00:00 (GMT+0800)
+    endTime: 2023-05-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: df52b068-6ac3-40db-8f2d-0db456ae9884
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2302_tw_steel_16
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "20"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 1200
+  enableTimeRange:
+  - startTime: 2023-04-10 14:00:00 (GMT+0800)
+    endTime: 2023-05-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 79d3b271-1b68-43bc-b1c2-48488b6035f5
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2302_tw_steel_16
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "45"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 2700
+  enableTimeRange:
+  - startTime: 2023-04-10 14:00:00 (GMT+0800)
+    endTime: 2023-05-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: d5e0402d-02ee-4069-a7aa-a15f313057e9
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2302_tw_steel_17
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "25"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 1500
+  enableTimeRange:
+  - startTime: 2023-04-10 14:00:00 (GMT+0800)
+    endTime: 2023-05-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 782ab581-f9c2-427e-b94c-d061b9343595
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2302_tw_steel_17
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "55"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 3300
+  enableTimeRange:
+  - startTime: 2023-04-10 14:00:00 (GMT+0800)
+    endTime: 2023-05-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 02a22024-1bc6-47ac-9612-70e97da2f48f
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2302_tw_steel_18
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "30"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 1800
+  enableTimeRange:
+  - startTime: 2023-04-10 14:00:00 (GMT+0800)
+    endTime: 2023-05-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 1a9a066c-3c36-4cc1-9323-c021b6a0b423
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2302_tw_steel_18
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "60"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 3600
+  enableTimeRange:
+  - startTime: 2023-04-10 14:00:00 (GMT+0800)
+    endTime: 2023-05-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 37464dbd-c62c-4c06-a47d-c0cb7d9267e9
+  type: 11
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2302_tw_steel_13
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_daily_share_reward_title_FBFeeds
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_daily_share_reward_des_FBFeeds
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2023-04-10 14:00:00 (GMT+0800)
+    endTime: 2023-05-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 597debee-9f51-40bf-b5ec-c7bce6a9b226
+  type: 5
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2302_tw_steel_13
+    amount: 3
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_leave_comment_reward_title2
+  i18nTitleParams:
+  - value: "1"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_leave_comment_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2023-04-10 14:00:00 (GMT+0800)
+    endTime: 2023-05-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 8ebe6dfa-c57a-44b0-8d7a-920cfba2eed2
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2302_tw_steel_13
+    amount: 10
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "5"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 300
+  enableTimeRange:
+  - startTime: 2023-04-10 14:00:00 (GMT+0800)
+    endTime: 2023-05-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: a94d7f15-3da4-472b-a71c-8757ce05c391
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2302_tw_steel_13
+    amount: 5
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "7"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 420
+  enableTimeRange:
+  - startTime: 2023-04-10 14:00:00 (GMT+0800)
+    endTime: 2023-05-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 6c481ac3-ca3c-4794-823c-cf7bee919e64
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2302_tw_steel_13
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "20"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 1200
+  enableTimeRange:
+  - startTime: 2023-04-10 14:00:00 (GMT+0800)
+    endTime: 2023-05-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
+  requirePhoneBinding: false
+  withReminder: true
+- ID: 5e9a3b90-3103-49e9-8f5b-4f089d2f145e
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2302_tw_steel_13
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "35"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 1500
+  enableTimeRange:
+  - startTime: 2023-04-10 14:00:00 (GMT+0800)
+    endTime: 2023-05-31 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  - web
   requirePhoneBinding: false
   withReminder: true
 - ID: f594ecfd-589e-4d4a-a57a-40a1c3433719
@@ -1078,126 +1769,6 @@ missions:
     endTime: 2023-04-30 22:30:00 (GMT+0800)
   refIDs:
   - c9b985ba-76a1-41b7-b302-62d200f22818
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 53267528-9d04-4d87-b925-699101305752
-  type: 5
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 10
-  reward:
-    rewardType: 1
-    rewardID: welcome_newbiearrives
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream_1
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_mission_welcomestream_rewards
-  i18nDescriptionParams: []
-  goalValue: 5
-  enableTimeRange:
-  - startTime: 2023-04-06 21:00:00 (GMT+0800)
-    endTime: 2023-04-06 22:30:00 (GMT+0800)
-  refIDs:
-  - "1762833"
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 17918606-86b7-452b-a14f-0f5cee39c790
-  type: 5
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 10
-  reward:
-    rewardType: 1
-    rewardID: welcome_newbiearrives
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream_1
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_mission_welcomestream_rewards
-  i18nDescriptionParams: []
-  goalValue: 5
-  enableTimeRange:
-  - startTime: 2023-04-07 21:00:00 (GMT+0800)
-    endTime: 2023-04-07 22:30:00 (GMT+0800)
-  refIDs:
-  - "17530705"
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 9b120e91-b032-4eac-94bc-63b5fbed2fe7
-  type: 5
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 10
-  reward:
-    rewardType: 1
-    rewardID: welcome_newbiearrives
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream_1
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_mission_welcomestream_rewards
-  i18nDescriptionParams: []
-  goalValue: 5
-  enableTimeRange:
-  - startTime: 2023-04-08 21:00:00 (GMT+0800)
-    endTime: 2023-04-08 22:30:00 (GMT+0800)
-  refIDs:
-  - "17230462"
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 8a1005a4-c1fc-40b2-9bd0-06f0bd2116a6
-  type: 5
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 10
-  reward:
-    rewardType: 1
-    rewardID: welcome_newbiearrives
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream_1
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_mission_welcomestream_rewards
-  i18nDescriptionParams: []
-  goalValue: 5
-  enableTimeRange:
-  - startTime: 2023-04-09 21:00:00 (GMT+0800)
-    endTime: 2023-04-09 22:30:00 (GMT+0800)
-  refIDs:
-  - "18422607"
   platforms:
   - android
   - ios
@@ -1833,126 +2404,6 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: true
-- ID: 65d7e759-a19b-4f8b-b45d-509d93b82272
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 10
-  reward:
-    rewardType: 1
-    rewardID: welcome_newbiespecial
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_mission_welcomestream_rewards
-  i18nDescriptionParams: []
-  goalValue: 600
-  enableTimeRange:
-  - startTime: 2023-04-06 21:00:00 (GMT+0800)
-    endTime: 2023-04-06 22:30:00 (GMT+0800)
-  refIDs:
-  - 09cb94f0-b536-49d1-b539-311085b78df4
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 09d53152-5eb8-4b2b-bf52-be68e5982be7
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 10
-  reward:
-    rewardType: 1
-    rewardID: welcome_newbiespecial
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_mission_welcomestream_rewards
-  i18nDescriptionParams: []
-  goalValue: 600
-  enableTimeRange:
-  - startTime: 2023-04-07 21:00:00 (GMT+0800)
-    endTime: 2023-04-07 22:30:00 (GMT+0800)
-  refIDs:
-  - e7858f3b-2ee9-4450-bb4c-f30aa5360d8f
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: d8fc738b-3596-4bda-bcea-cab1d149271d
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 10
-  reward:
-    rewardType: 1
-    rewardID: welcome_newbiespecial
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_mission_welcomestream_rewards
-  i18nDescriptionParams: []
-  goalValue: 600
-  enableTimeRange:
-  - startTime: 2023-04-08 21:00:00 (GMT+0800)
-    endTime: 2023-04-08 22:30:00 (GMT+0800)
-  refIDs:
-  - 137b5175-62b5-44e0-b9c2-f4b14cac7bdd
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
-- ID: e736ab53-d728-4016-8c9e-dfd283907dc9
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 10
-  reward:
-    rewardType: 1
-    rewardID: welcome_newbiespecial
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: tw_mission_welcomestream
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: tw_mission_welcomestream_rewards
-  i18nDescriptionParams: []
-  goalValue: 600
-  enableTimeRange:
-  - startTime: 2023-04-09 21:00:00 (GMT+0800)
-    endTime: 2023-04-09 22:30:00 (GMT+0800)
-  refIDs:
-  - aba2085b-3345-474b-a4c5-662e03ac4911
-  platforms:
-  - android
-  - ios
-  requirePhoneBinding: false
-  withReminder: true
 - ID: 6b5e2b5a-d961-4ad5-a91c-41704b2a1215
   type: 9
   category: 0
@@ -2582,198 +3033,6 @@ missions:
   - android
   - ios
   requirePhoneBinding: false
-  withReminder: true
-- ID: 2e7e6466-fa89-4116-b623-4ba151808b3a
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 3
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2303_tw_athena_a_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_show_time_in_total_reward_title1
-  i18nTitleParams:
-  - value: "10"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 600
-  enableTimeRange:
-  - startTime: 2023-03-28 18:00:00 (GMT+0800)
-    endTime: 2023-04-06 23:59:59 (GMT+0800)
-  refIDs:
-  - e461ae02-f5e5-4433-972d-84d5f0e22713
-  - 80ce28d4-355b-4666-6af4-cafed6e3a07d
-  - 1e257922-d6ce-4a65-a17d-33b967177195
-  - eb37c363-8dc1-4cd7-6898-2deeb1ebee22
-  - 46d46576-cd73-4f19-bd5f-1e65e9a62e85
-  - 020efd34-8cd9-403d-8e52-b12f4fce9fe1
-  - cef2923e-cc43-4577-a33e-ef89e619a12a
-  platforms:
-  - android
-  - ios
-  - web
-  requirePhoneBinding: true
-  withReminder: true
-- ID: fd443feb-8b69-4202-b873-da40baa14c6e
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 3
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2303_tw_athena_a_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_show_time_in_total_reward_title2
-  i18nTitleParams:
-  - value: "20"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 1200
-  enableTimeRange:
-  - startTime: 2023-03-28 18:00:00 (GMT+0800)
-    endTime: 2023-04-06 23:59:59 (GMT+0800)
-  refIDs:
-  - f831acc0-af8d-4e3a-8531-c33894a9bf68
-  - 904da042-d0c1-422c-96f8-bf0700a2ff1f
-  - 3440b83f-5a04-4dc1-bc92-32491a00d0dd
-  - 954aa414-dfa6-4808-8562-4d75cde76c00
-  - 43a9d0c7-9a7d-41b8-b4d3-77f9979563fb
-  - 148589ac-5edc-4320-bfda-5656e4ea9c66
-  - eaaa9388-6351-4820-b385-388d0bbfcb29
-  - 96cf728d-1c05-4430-9f58-a258216a07ae
-  - c01723f5-6e59-46d1-6225-deafec3e1181
-  - 69c3dc0b-39d4-4fef-8cee-068cdc5bccf5
-  - 6086140b-3ab3-40b1-b18e-e8f78f369222
-  - 155d7046-df77-4c63-9f37-5a0ebcc68b24
-  - 92c58504-1476-4b70-8c59-c8caa497574e
-  - c75c62c3-9265-4bb5-add9-e3aa4db2ac9a
-  - 850bfcb4-083d-4e97-9d6c-2884e32c5e6f
-  - c6bf916d-21d7-4642-9472-30aab6844e75
-  - bf5ecb8c-7d80-40b7-8552-f1e73cb94266
-  - 72607660-57f5-42ec-937d-0232738e7764
-  - 493a4577-1f6f-45b6-8f00-bbc9c19521ae
-  - f6448670-ba93-44cc-8bbe-1324537effe6
-  - 686bfba5-feef-4319-9d89-7ab123ce0107
-  - b6669b4e-2680-4aa7-b7a2-98e5379c58ac
-  - d23811d0-d30f-4b67-7fa3-94bd11c6a6c9
-  platforms:
-  - android
-  - ios
-  - web
-  requirePhoneBinding: true
-  withReminder: true
-- ID: 7310a7fe-6bbe-4a86-a595-3974c74ca17d
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 3
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2303_tw_athena_a_bp
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_show_time_in_total_reward_title2
-  i18nTitleParams:
-  - value: "10"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 600
-  enableTimeRange:
-  - startTime: 2023-03-28 18:00:00 (GMT+0800)
-    endTime: 2023-04-06 23:59:59 (GMT+0800)
-  refIDs:
-  - f831acc0-af8d-4e3a-8531-c33894a9bf68
-  - 904da042-d0c1-422c-96f8-bf0700a2ff1f
-  - 3440b83f-5a04-4dc1-bc92-32491a00d0dd
-  - 954aa414-dfa6-4808-8562-4d75cde76c00
-  - 43a9d0c7-9a7d-41b8-b4d3-77f9979563fb
-  - 148589ac-5edc-4320-bfda-5656e4ea9c66
-  - eaaa9388-6351-4820-b385-388d0bbfcb29
-  - 96cf728d-1c05-4430-9f58-a258216a07ae
-  - c01723f5-6e59-46d1-6225-deafec3e1181
-  - 69c3dc0b-39d4-4fef-8cee-068cdc5bccf5
-  - 6086140b-3ab3-40b1-b18e-e8f78f369222
-  - 155d7046-df77-4c63-9f37-5a0ebcc68b24
-  - 92c58504-1476-4b70-8c59-c8caa497574e
-  - c75c62c3-9265-4bb5-add9-e3aa4db2ac9a
-  - 850bfcb4-083d-4e97-9d6c-2884e32c5e6f
-  - c6bf916d-21d7-4642-9472-30aab6844e75
-  - bf5ecb8c-7d80-40b7-8552-f1e73cb94266
-  - 72607660-57f5-42ec-937d-0232738e7764
-  - 493a4577-1f6f-45b6-8f00-bbc9c19521ae
-  - f6448670-ba93-44cc-8bbe-1324537effe6
-  - 686bfba5-feef-4319-9d89-7ab123ce0107
-  - b6669b4e-2680-4aa7-b7a2-98e5379c58ac
-  - d23811d0-d30f-4b67-7fa3-94bd11c6a6c9
-  platforms:
-  - android
-  - ios
-  - web
-  requirePhoneBinding: true
-  withReminder: true
-- ID: 634e8dc5-92db-4e3c-a36f-f9c0e48df818
-  type: 9
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 3
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2303_tw_athena_a_bp
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_watch_show_time_in_total_reward_title1
-  i18nTitleParams:
-  - value: "20"
-    mapOption: 0
-    fontAttribute: null
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
-  i18nDescriptionParams: []
-  goalValue: 1200
-  enableTimeRange:
-  - startTime: 2023-03-28 18:00:00 (GMT+0800)
-    endTime: 2023-04-06 23:59:59 (GMT+0800)
-  refIDs:
-  - e461ae02-f5e5-4433-972d-84d5f0e22713
-  - 80ce28d4-355b-4666-6af4-cafed6e3a07d
-  - 1e257922-d6ce-4a65-a17d-33b967177195
-  - eb37c363-8dc1-4cd7-6898-2deeb1ebee22
-  - 46d46576-cd73-4f19-bd5f-1e65e9a62e85
-  - 020efd34-8cd9-403d-8e52-b12f4fce9fe1
-  - cef2923e-cc43-4577-a33e-ef89e619a12a
-  platforms:
-  - android
-  - ios
-  - web
-  requirePhoneBinding: true
   withReminder: true
 - ID: d4d294ec-6e63-4ace-a18d-08d463e1f18c
   type: 10
