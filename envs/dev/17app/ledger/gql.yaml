@@ -242,11 +242,16 @@ regionConfigs:
   PH:
     sellingChannelGroups:
       3: # 17Live
+        - 33 # SellingChannelWebTw17LiveECPay
+        - 61 # SellingChannelWebSea17LiveNewebpay
         - 77 # SellingChannelWebPh17LivePayermax
     payMethods:
-      - 78
+      - 56 # ECPAY
+      - 72 # Newebpay
+      - 78 # PayerMax
     currencies:
       - PHP
+      - TWD
     localCurrency: PHP
     upperBoundOfDeltaRatioForExchangeRate: 0.02
     lowerBoundOfDeltaRatioForExchangeRate: 0.02
@@ -254,11 +259,16 @@ regionConfigs:
   MY:
     sellingChannelGroups:
       3: # 17Live
+        - 33 # SellingChannelWebTw17LiveECPay
+        - 61 # SellingChannelWebSea17LiveNewebpay
         - 78 # SellingChannelWebMy17LivePayermax
     payMethods:
-      - 78
+      - 56 # ECPAY
+      - 72 # Newebpay
+      - 78 # PayerMax
     currencies:
       - MYR
+      - TWD
     localCurrency: MYR
     upperBoundOfDeltaRatioForExchangeRate: 0.02
     lowerBoundOfDeltaRatioForExchangeRate: 0.02
@@ -266,11 +276,16 @@ regionConfigs:
   SG:
     sellingChannelGroups:
       3: # 17Live
-        - 79 # SellingChannelWebSg17LivePayermax
+       - 33 # SellingChannelWebTw17LiveECPay
+       - 61 # SellingChannelWebSea17LiveNewebpay
+       - 79 # SellingChannelWebSg17LivePayermax
     payMethods:
-      - 78
+      - 56 # ECPAY
+      - 72 # Newebpay
+      - 78 # PayerMax
     currencies:
       - SGD
+      - TWD
     localCurrency: SGD
     upperBoundOfDeltaRatioForExchangeRate: 0.02
     lowerBoundOfDeltaRatioForExchangeRate: 0.02
