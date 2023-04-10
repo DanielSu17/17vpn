@@ -1,11 +1,19 @@
 # JP label config
 labelInfos:
+  - id: "2204_jp_surge" # 運営おすすめ
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_surge}
+    featured: true
+    order: 1
+    iconURL: "h"
+    isHide: true
   - id: "jp_recommend" # レコメンド,推薦
     type: 1
     labelID: 
     label: {key: explore_jp_label_recommend}
     featured: true
-    order: 1
+    order: 2
     iconURL: "h"
     isHide: true
   - id: "2203_jp_lv100" #　Lv100以上
@@ -13,7 +21,7 @@ labelInfos:
     labelID:
     label: {key: streamer_jp_label_lv100}
     featured: true
-    order: 2
+    order: 3
     iconURL: "h"
     isHide: true
   - id: "2207_jp_sports17" #　スポーツ
@@ -21,7 +29,7 @@ labelInfos:
     labelID:
     label: {key: streamer_jp_label_sports17}
     featured: true
-    order: 3
+    order: 4
     iconURL: "h"
     isHide: true
   - id: "jp_singer" # 歌
@@ -189,14 +197,6 @@ labelInfos:
     order: 30
     iconURL: "h"
     isHide: true
-  - id: "2204_jp_surge" # 運営おすすめ
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_surge}
-    featured: true
-    order: 31
-    iconURL: "h"
-    isHide: true
   - id: "2303_jp_realevent" # 202303_リアルイベント
     type: 1
     labelID:
@@ -205,7 +205,6 @@ labelInfos:
     order: 32
     iconURL: "h"
     isHide: true
-
 
 #以下、未使用（過去分含む）------------------------------------------
   - id: "2207_jp_entertainment17" #　エンタメ
