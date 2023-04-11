@@ -24,16 +24,17 @@
   - name: k8ssta-concert-trade-main
     minReplicas: 30
 
-# mongo-tier-downgrade-exp
-- startTime: "2023-04-07 11:30:00 (GMT+0800)"
-  endTime: "2023-04-07 15:30:00 (GMT+0800)"
+# goapi-upgrade-exp
+# ref. https://github.com/17media/configs/blob/master/prescaling.sh#L55-L74
+- startTime: "2023-04-11 11:30:00 (GMT+0800)"
+  endTime: "2023-04-11 15:30:00 (GMT+0800)"
   HPAConfigs:
   - name: k8ssta-goapi-main
     minReplicas: 70
   - name: k8ssta-golives-main
     minReplicas: 85
   - name: k8ssta-gotrade-main
-    minReplicas: 12
+    minReplicas: 30
   - name: k8ssta-gocells-main
     minReplicas: 25
   - name: k8ssta-gousersearch-main
