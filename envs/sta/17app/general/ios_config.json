@@ -3,7 +3,11 @@
     "module": 1,
     "video_adaptive_min_bps": 300000,
     "video_key_frame_interval": 2,
-    "video_adaptive_fps": [24, 20, 15],
+    "video_adaptive_fps": [
+      24,
+      20,
+      15
+    ],
     "video_adaptive_bps": 800000,
     "video_non_adaptive_bps": 500000,
     "heartbeats_interval": 5.0,
@@ -15,14 +19,16 @@
   },
   "follow_reminder_duration": 30,
   "unity": {
-    "enabled": 1 
+    "enabled": 1
   },
   "unity_config": {
-    "apply_version" : "3.0.0",
-    "games": [1]    
+    "apply_version": "3.0.0",
+    "games": [
+      1
+    ]
   },
   "agora_engine_logger": {
-    "apply_version" : "3.141.0"
+    "apply_version": "3.141.0"
   },
   "pull_info": {
     "heartbeats_interval": 5.0,
@@ -41,7 +47,7 @@
     "bid_offset": 1000,
     "max_price": 1000000000
   },
-    "rating_info": {
+  "rating_info": {
     "day_threshold": 0,
     "launch_threshold": 3,
     "watching_minute_threshold": 0,
@@ -56,14 +62,14 @@
     "revenue_button_hidden": 0
   },
   "debug_info": {
-	  "bugsee": 1
+    "bugsee": 1
   },
-  "apm" : {
-    "apply_version" : "",
-    "sampling" : "",
-    "whitelist_user_id" : [],
-    "mainThreadHangs_threshold" : 3,
-    "pageEvent_threshold" : 5,
+  "apm": {
+    "apply_version": "",
+    "sampling": "",
+    "whitelist_user_id": [],
+    "mainThreadHangs_threshold": 3,
+    "pageEvent_threshold": 5,
     "enableFPS": 0,
     "enableReq": 0,
     "datadog_apply_version": "",
@@ -80,265 +86,312 @@
     "api_common_error_handling": {
       "phone_verification_required": 1
     },
-    "pull_stream_core" : {
-      "normal_apply_version" : "3.179.720",
-      "concert_apply_version" : "3.179.720",
-      "trivia_apply_version" : "",
-      "pip_device_blacklist":[
-         "iPhone 6s",
-         "iPhone 6s Plus"
+    "pull_stream_core": {
+      "normal_apply_version": "3.179.720",
+      "concert_apply_version": "3.179.720",
+      "trivia_apply_version": "",
+      "pip_device_blacklist": [
+        "iPhone 6s",
+        "iPhone 6s Plus"
       ],
-      "pip_apply_version" : "3.179.720",
-      "concert_pip_apply_version" : "3.179.720"
+      "pip_apply_version": "3.179.720",
+      "concert_pip_apply_version": "3.179.720"
     },
-      "pubnub_cache": {
-        "keepTimeTokenOnListChange" : 0,
-        "catchUpOnSubscriptionRestore" : 0
-      },
-      "aws_workaround": {
-         "apply_version" : "3.300.0",
-         "duration": 30
-      },
-      "matomo": {
-        "interval": 30,
-        "lowest_spec_version_trigger_error_alert": 1
-      },
-      "painter": {
-        "apply_version": "3.104.0"
-      },
-      "ext_filter": {
-          "apply_version": "3.97.0",
-          "filters" : {
-              "boxes" : {
-                "enable" : 1
-              },
-              "game" : {
-                "enable" : 1
-              },
-              "painter" : {
-                "enable" : 1
-              },
-              "watermark" : {
-                "enable" : 1
-              }
-          }
-      },
-      "pk_event_log": {
-        "apply_version": "3.97.0"
-      },
-      "pk_keep_alive_log": {
-        "apply_version": "3.97.0"
-      },
-      "stream_pull_config": {
-        "dump_debug_info": 0
-      },
-      "streamer_resignactive_wait_handle": {
-        "apply_version": "3.70.1"
-      },
-      "ensure_av_key_frame_sent_first": {
-        "apply_version": ""
-      },
-      "swift" : {
-        "cancel_apply" : 0
-      },
-      "pk_agora_config" : {
-        "apply_version" : "3.105.0",
-        "change_video_size" : 1
-      },
-      "streamEventLogger" : {
-        "apply_version" : "3.56.0",
-        "bitrate_threshold" : 300000,
-        "batch_update_apply_version" : "3.119.1",
-        "batch_update_interval" : 10,
-        "max_batch_update_size" : 10
-      },
-      "ping" : {
-          "streamer" : {
-              "apply_version" : "3.76.0",
-              "host" : "8.8.8.8",
-              "interval" : 10
-          },
-          "viewer" : {
-              "apply_version" : "",
-              "host" : "8.8.8.8",
-              "interval" : 10
-          },
-          "high_latency_threshold" : 200,
-          "low_latency_threshold" : 90,
-          "retry_times" : 5
-      },
-      "traceroute" : {
-          "streamer" : {
-              "apply_version" : "3.56.0",
-              "host" : "",
-              "interval" : 0
-          },
-          "viewer" : {
-              "apply_version" : "",
-              "host" : "",
-              "interval" : 0
-          }
-      },
-      "stream_push" : {
-          "gpu_image_apply_version" : "",
-          "push_url_array_apply_version" : "3.94.0"
-      },
-      "stream_pull" : {
-          "videotoolbox_blacklist" : [
-            "567e0b5d-1516-4ce0-b4e8-bec4e756d5ae", "9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba", "3799d926-2ae2-4942-a510-847a017921cc"
-          ],
-          "dump_ijk_debug_info_apply_version" : "3.89.0",
-          "low_quality_solution" : {
-            "apply_version" : "",
-	    "buffering_check_frequency" : 2,
-            "buffering_check_period" : 30.0,
-            "lower_down_threshold_for_buffering_time" : 20.0,
-	    "upper_threshold_for_buffering_free_time" : 300,
-            "upper_retry_times" : 2,
-            "max_buffering_record_count" : 30
-          },
-          "min_frames_to_stop_preread" : 120,
-          "weak_ijk_layer_apply_version" : "3.117.0"
-      },
-      "streamer_network_status" : {
-        "apply_version" : "3.59.0"
-      },
-      "customer_service_config" : {
-        "email_for_all" : 1
-      },
-      "live_atmos" : {
-        "apply_version" : "3.81.0",
-	      "snow" : {
-          "apply_version" : "3.81.0",
-          "apply_region" : ["ALL"],
-          "trigger_message" : ["Xmas", "聖誕快樂", "Belle", "🎄", "YH", "Bella", "剩誕快樂", "聖蛋快樂", "YC", "Zatmos", "Han"],
-		      "duration_sec" : 30
-	      },
-        "boxes" : {
-          "apply_version" : "3.91.1",
-          "apply_region" : ["ALL"],
-          "trigger_message" : ["生日快樂", "17生日快樂", "happybirthday", "happybday", "🍰", "🎂", "Jan", "Amy", "Shirley", "YC", "Han", "Belle"],
-		      "duration_sec" : 30,
-          "max_total_count" : 40,
-          "cooldown_sec" : 600
-        }
-      },
-      "crazy_zoo" : {
-          "free" : {
-              "level_pipe_indexes" : [
-              3, 4, 6 
-              ],
-              "mobile_pipe_index" : -1
-              },
-          "paid" : {
-             "level_pipe_indexes" : [
-               0, 0
-              ],
-             "mobile_pipe_index" : -1
-          }
-      },
-      "game" : {
-        "crazy_zoo" : {
-          "free" : {
-              "level_pipe_indexes" : [
-              3, 4, 6 
-              ],
-              "mobile_pipe_index" : -1
-              },
-          "paid" : {
-             "level_pipe_indexes" : [
-               0, 0
-              ],
-             "mobile_pipe_index" : -1
-          }
-        }
-      },
-      "live_refactor" : {
-        "comment" : {
-          "apply_version" : "3.999.0"
+    "pubnub_cache": {
+      "keepTimeTokenOnListChange": 0,
+      "catchUpOnSubscriptionRestore": 0
+    },
+    "aws_workaround": {
+      "apply_version": "3.300.0",
+      "duration": 30
+    },
+    "matomo": {
+      "interval": 30,
+      "lowest_spec_version_trigger_error_alert": 1
+    },
+    "painter": {
+      "apply_version": "3.104.0"
+    },
+    "ext_filter": {
+      "apply_version": "3.97.0",
+      "filters": {
+        "boxes": {
+          "enable": 1
         },
-        "header" : {
-          "enabled" : 0
+        "game": {
+          "enable": 1
         },
-        "leftCampaign" : {
-          "enabled" : 0
+        "painter": {
+          "enable": 1
         },
-        "rightCampaign" : {
-          "enabled" : 0
+        "watermark": {
+          "enable": 1
         }
-      },
-      "one_signal" : {
-	        "tags" : {
-		        "retry_count" : 3
-	        },
-	        "external_user_id": {
-		        "retry_count" : 3
-	        }
-      },
-      "cpu_info" : {
-	        "apply_version" : "3.151.0",
-	        "max_usage_threshold" : 80,
-	        "thermal_threshold" : 2,
-	        "overheat_duration_threshould" : 10,
-	        "interval" : 5,
-	        "capacity" : 12
-      },
-      "event_tracker_setting": {
-          "enable_preload_file": "",
-          "enable_event_log": "3.172.0",
-          "page_key_error": {
-            "apply_version": "3.172.0",
-            "log_path_count": 20,
-            "check_pages": ["Livestream_LiveScreen"]
-          },
-          "enable_separated_event_queue" : 1
-      },
-      "enable_api_client": {
-          "apply_version" : "3.190.0"
-      },
-      "network_module_support_ed": {
-          "af_network_module": {
-            "apply_version" : "3.190.0"
-          },
-          "ed_manager_module": {
-            "apply_version" : "3.190.0",
-            "decay_config" : {
-              "0": {
-                "minDelayInterval": 1.0,
-                "maxDelayInterval": 4.0,
-                "multiplier": 1.25,
-                "evaluationPeriod": 30.0
-              },
-              "1": {
-                "minDelayInterval": 3.0,
-                "maxDelayInterval": 9.0,
-                "multiplier": 1.5,
-                "evaluationPeriod": 30.0
-              },
-              "2": {
-                "minDelayInterval": 5.0,
-                "maxDelayInterval": 16.0,
-                "multiplier": 1.75,
-                "evaluationPeriod": 30.0
-              }
-            }
-          }
       }
+    },
+    "pk_event_log": {
+      "apply_version": "3.97.0"
+    },
+    "pk_keep_alive_log": {
+      "apply_version": "3.97.0"
+    },
+    "stream_pull_config": {
+      "dump_debug_info": 0
+    },
+    "streamer_resignactive_wait_handle": {
+      "apply_version": "3.70.1"
+    },
+    "ensure_av_key_frame_sent_first": {
+      "apply_version": ""
+    },
+    "swift": {
+      "cancel_apply": 0
+    },
+    "pk_agora_config": {
+      "apply_version": "3.105.0",
+      "change_video_size": 1
+    },
+    "streamEventLogger": {
+      "apply_version": "3.56.0",
+      "bitrate_threshold": 300000,
+      "batch_update_apply_version": "3.119.1",
+      "batch_update_interval": 10,
+      "max_batch_update_size": 10
+    },
+    "ping": {
+      "streamer": {
+        "apply_version": "3.76.0",
+        "host": "8.8.8.8",
+        "interval": 10
+      },
+      "viewer": {
+        "apply_version": "",
+        "host": "8.8.8.8",
+        "interval": 10
+      },
+      "high_latency_threshold": 200,
+      "low_latency_threshold": 90,
+      "retry_times": 5
+    },
+    "traceroute": {
+      "streamer": {
+        "apply_version": "3.56.0",
+        "host": "",
+        "interval": 0
+      },
+      "viewer": {
+        "apply_version": "",
+        "host": "",
+        "interval": 0
+      }
+    },
+    "stream_push": {
+      "gpu_image_apply_version": "",
+      "push_url_array_apply_version": "3.94.0"
+    },
+    "stream_pull": {
+      "videotoolbox_blacklist": [
+        "567e0b5d-1516-4ce0-b4e8-bec4e756d5ae",
+        "9db6b5c2-ab25-4b5f-bb9d-e01b2a3a5cba",
+        "3799d926-2ae2-4942-a510-847a017921cc"
+      ],
+      "dump_ijk_debug_info_apply_version": "3.89.0",
+      "low_quality_solution": {
+        "apply_version": "",
+        "buffering_check_frequency": 2,
+        "buffering_check_period": 30.0,
+        "lower_down_threshold_for_buffering_time": 20.0,
+        "upper_threshold_for_buffering_free_time": 300,
+        "upper_retry_times": 2,
+        "max_buffering_record_count": 30
+      },
+      "min_frames_to_stop_preread": 120,
+      "weak_ijk_layer_apply_version": "3.117.0"
+    },
+    "streamer_network_status": {
+      "apply_version": "3.59.0"
+    },
+    "customer_service_config": {
+      "email_for_all": 1
+    },
+    "live_atmos": {
+      "apply_version": "3.81.0",
+      "snow": {
+        "apply_version": "3.81.0",
+        "apply_region": [
+          "ALL"
+        ],
+        "trigger_message": [
+          "Xmas",
+          "聖誕快樂",
+          "Belle",
+          "🎄",
+          "YH",
+          "Bella",
+          "剩誕快樂",
+          "聖蛋快樂",
+          "YC",
+          "Zatmos",
+          "Han"
+        ],
+        "duration_sec": 30
+      },
+      "boxes": {
+        "apply_version": "3.91.1",
+        "apply_region": [
+          "ALL"
+        ],
+        "trigger_message": [
+          "生日快樂",
+          "17生日快樂",
+          "happybirthday",
+          "happybday",
+          "🍰",
+          "🎂",
+          "Jan",
+          "Amy",
+          "Shirley",
+          "YC",
+          "Han",
+          "Belle"
+        ],
+        "duration_sec": 30,
+        "max_total_count": 40,
+        "cooldown_sec": 600
+      }
+    },
+    "crazy_zoo": {
+      "free": {
+        "level_pipe_indexes": [
+          3,
+          4,
+          6
+        ],
+        "mobile_pipe_index": -1
+      },
+      "paid": {
+        "level_pipe_indexes": [
+          0,
+          0
+        ],
+        "mobile_pipe_index": -1
+      }
+    },
+    "game": {
+      "crazy_zoo": {
+        "free": {
+          "level_pipe_indexes": [
+            3,
+            4,
+            6
+          ],
+          "mobile_pipe_index": -1
+        },
+        "paid": {
+          "level_pipe_indexes": [
+            0,
+            0
+          ],
+          "mobile_pipe_index": -1
+        }
+      }
+    },
+    "live_refactor": {
+      "comment": {
+        "apply_version": "3.999.0"
+      },
+      "header": {
+        "enabled": 0
+      },
+      "leftCampaign": {
+        "enabled": 0
+      },
+      "rightCampaign": {
+        "enabled": 0
+      }
+    },
+    "one_signal": {
+      "tags": {
+        "retry_count": 3
+      },
+      "external_user_id": {
+        "retry_count": 3
+      }
+    },
+    "cpu_info": {
+      "apply_version": "3.151.0",
+      "max_usage_threshold": 80,
+      "thermal_threshold": 2,
+      "overheat_duration_threshould": 10,
+      "interval": 5,
+      "capacity": 12
+    },
+    "event_tracker_setting": {
+      "enable_preload_file": "",
+      "enable_event_log": "3.172.0",
+      "page_key_error": {
+        "apply_version": "3.172.0",
+        "log_path_count": 20,
+        "check_pages": [
+          "Livestream_LiveScreen"
+        ]
+      },
+      "enable_separated_event_queue": 1
+    },
+    "enable_api_client": {
+      "apply_version": "3.190.0"
+    },
+    "network_module_support_ed": {
+      "af_network_module": {
+        "apply_version": "3.190.0"
+      },
+      "ed_manager_module": {
+        "apply_version": "3.190.0",
+        "decay_config": {
+          "0": {
+            "minDelayInterval": 1.0,
+            "maxDelayInterval": 4.0,
+            "multiplier": 1.25,
+            "evaluationPeriod": 30.0
+          },
+          "1": {
+            "minDelayInterval": 3.0,
+            "maxDelayInterval": 9.0,
+            "multiplier": 1.5,
+            "evaluationPeriod": 30.0
+          },
+          "2": {
+            "minDelayInterval": 5.0,
+            "maxDelayInterval": 16.0,
+            "multiplier": 1.75,
+            "evaluationPeriod": 30.0
+          }
+        }
+      }
+    },
+    "downloader": {
+      "max_connection_count": 1
+    }
   },
   "error_handling": {
     "enable_point_not_enough": 1,
     "enable_token_unauthorized": 1
   },
-  "gift_file_keep_days":7,
-  "registerLogger" : {
-    "apply_version" : ""
+  "gift_file_keep_days": 7,
+  "registerLogger": {
+    "apply_version": ""
   },
   "twitter_new_sdk": {
     "apply_version": "3.184.0"
   },
   "braze": {
     "apply_version": "3.193.0",
-    "custom_event_enable_regions": ["TW","HK","JP","US"]
+    "custom_event_enable_regions": [
+      "TW",
+      "HK",
+      "JP",
+      "US"
+    ]
   },
   "enable_JJException": {
     "apply_version": "3.204.0"
@@ -376,11 +429,11 @@
   },
   "firebase": {
     "performance": {
-      "apply_version":"4.0.0"
+      "apply_version": "4.0.0"
     }
   },
   "read_combo_gift": {
-    "apply_version":"3.217.0"
+    "apply_version": "3.217.0"
   },
   "render_in_display_layer": {
     "apply_version": "3.229.0"
