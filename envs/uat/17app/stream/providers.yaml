@@ -22,9 +22,9 @@ rtmp_providers:
 - name: QINIU
   quality_support: 0
   expire_after_hours: 6
-  weight: 10
+  weight: 100
   region_weights:
-    TW: 50
+    TW: 0
     US: 0
   users:
   - 37d9e764-5eef-44f8-8e60-a06f5ea7e001 # qaprogram1
@@ -48,7 +48,7 @@ rtmp_providers:
   weight: 0
 - name: WANSU
   quality_support: 1
-  weight: 20
+  weight: 0
   region_weights:
     CN: 100
   users:
@@ -215,9 +215,9 @@ rtmp_providers:
   - 5597c571-3aeb-42c0-84cb-2852dad34e3b # beqa_uat_monitor25
 - name: WANSU_LOW_LATENCY
   quality_support: 1
-  weight: 50
+  weight: 0
   region_weights:
-    TW: 50
+    TW: 0
     CN: 0
   users:
   - 0e671b10-1660-419c-67f9-9983ebdbad38 # triviabot1
@@ -334,7 +334,7 @@ rtmp_providers:
   expire_after_hours: 6
   weight: 0
   region_weights:
-    TW: 30
+    TW: 0
   levelRestriction:
     minLevel: 0
     maxLevel: 0
