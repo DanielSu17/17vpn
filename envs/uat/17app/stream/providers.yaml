@@ -214,7 +214,7 @@ rtmp_providers:
   
 - name: WANSU_LOW_LATENCY
   quality_support: 1
-  weight: 80
+  weight: 0
   region_weights:
     TW: 0
     CN: 0
@@ -247,7 +247,7 @@ rtmp_providers:
   
 - name: AWS
   quality_support: 0
-  weight: 20
+  weight: 50
   region_weights:
     TW: 0
     HK: 0
@@ -324,9 +324,7 @@ rtmp_providers:
 - name: LIVE17
   quality_support: 0
   expire_after_hours: 6
-  weight: 0
-  region_weights:
-    TW: 0
+  weight: 50
   levelRestriction:
     minLevel: 0
     maxLevel: 0
