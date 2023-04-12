@@ -14,12 +14,37 @@ labelInfos:
     isHide: true
     order: 20
 
-  - id: "2212_jp_globalpk" # VS 国際マッチ
+  - id: "2304_jp_music" # 音楽
     type: 1
-    labelID: 
-    label: {key: streamer_jp_label_globalpk}
-    featured: true
+    labelID:
+    label: {key: streamer_jp_label_music}
+    order: 12
+    iconURL: "h"
+    isHide: true
+
+  - id: "2304_jp_chat" # 雑談
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_freetalk}
     order: 14
+    iconURL: "h"
+    isHide: true
+
+  - id: "jp_game" # ゲーム
+    type: 1
+    labelID:
+    label: {key: explore_jp_label_game}
+    featured: true
+    order: 6
+    iconURL: "h"
+    isHide: true
+
+  - id: "2304_jp_virtual" # バーチャル配信
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_virtual}
+    featured: true
+    order: 6
     iconURL: "h"
     isHide: true
 
@@ -42,19 +67,6 @@ labelInfos:
     iconURL: "h"
     isHide: true
 
-  - id: "jp_chat" # 雑談
-    labelID: 20
-    label: {key: streamer_jp_label_freetalk} #不確定
-    order: 14
-    iconURL: "h"
-    isHide: true
-  - id: "jp_game" # ゲーム(遊戲）
-    type: 1
-    labelID: 
-    label: {key: はじめての視聴はここから} #streamer_jp_label_game
-    order: 2
-    iconURL: "h"
-    isHide: true
   - id: "2111_jp_sousaku" # 創作・制作（Sta環境でのサブタブ権限がなかったため2111_jp_sousakuのサブタブと紐づけています）
     type: 1
     labelID: 
@@ -166,14 +178,7 @@ labelInfos:
 #    order: 5
 #    iconURL: "h"
 #    isHide: true
-#  - id: "jp_game" # ゲーム,遊戲
-#    type: 2
-#    labelID: 367
-#    label: {key: explore_jp_label_game}
-#    featured: true
-#    order: 6
-#    iconURL: "h"
-#    isHide: true
+
   - id: "jp_pickup" # パタパタ２
     type: 3
     labelID: 
@@ -300,13 +305,7 @@ labelInfos:
     order: 12
     iconURL: "h"
     isHide: true
-  - id: "jp_singer" # 音楽
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_music}
-    order: 12
-    iconURL: "h"
-    isHide: true
+
 
 
 # 探索頁面會出現的label
