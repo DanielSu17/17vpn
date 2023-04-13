@@ -92,4 +92,49 @@ quests:
           type: 3
           itemID: tw_newuser_mission_gift
           amount: 5
-          intervalSec: 604800
+          intervalSec: 604800  
+  - version: 3 # version of this referral rewards setting
+    startTime: 2023-04-13 00:00:00 (GMT+0800)  # startTime of this version applied
+    inviterRewardBBC: 199 # reward for inviter when invitee finish all missions (in BBC)
+    missionDay: 7 # days that missions appear
+    missions:
+      - type: 4
+        point: 44
+        exp: 0
+        required: 5
+        withReminder: false
+        voucherReward:
+          type: 1
+          itemID: "gift_wave_update_ops"
+          amount: 2
+          intervalSec: 28800
+      - type: 6
+        point: 66
+        exp: 0
+        required: 1
+        withReminder: false
+      - type: 7
+        point: 77
+        exp: 0
+        required: 1
+        withReminder: false
+      - type: 8
+        point: 88
+        exp: 0
+        required: 7
+        withReminder: false
+      - type: 11
+        point: 1111
+        exp: 0
+        required: 1
+        withReminder: false
+      - type: 12
+        point: 1212
+        exp: 0
+        required: 1
+        withReminder: false
+      - type: 15
+        point: 1515
+        exp: 0
+        required: 1
+        withReminder: false
