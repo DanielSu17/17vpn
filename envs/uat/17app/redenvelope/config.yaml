@@ -22,19 +22,21 @@ handleUnfinishedMaxDays: 5
 sumOfPickedTTLHours: 6 # 多少時間完全沒搶到點數才會reset, 人會休息但電腦不會 所以設定6小時
 pickedSleepPenaltyMsecs: 250 # 處罰基本單位
 maxPenaltyMsecs: 3000 # 最多被處罰的時間
-sumOfPickedThreshold: 100000000 # 超過多少點才會被處罰
+sumOfPickedThreshold: 250 # 超過多少點才會被處罰
 pickProbabilityThresholds: # 每日累積搶到點數，對應的搶紅包機率限制(百分比)
-  400: 100 # 50
-  500: 100 # 25
-  600: 100 # 13
-  700: 100 # 7
-  800: 100 # 5
-  900: 100 # 2
-  1000: 100 # 0
+  400: 50 # 50
+  500: 25 # 25
+  600: 13 # 13
+  700: 7 # 7
+  800: 5 # 5
+  900: 2 # 2
+  1000: 0 # 0
 dailySumOfPickedRefreshHour: 5 # 每日累積點數的重置時間，台灣時間5點。
-userLockPickedSecs: 1 # 使用者搶到紅包後，多少秒內搶紅包會失敗
+userLockPickedSecs: 45 # 使用者搶到紅包後，多少秒內搶紅包會失敗
 enableBatchUpsertForPurge: true
 batchUpsertStartTime: 1648447200 # 2022/3/28 1400 GMT+8
+bonusBoxSupportedVersionIOS: "3.218.1" # 支援 bonusbox 的最低版號
+bonusBoxSupportedVersionAndroid: "2.133.5" # 支援 bonusbox 的最低版號
 enableCountContinuousSameTypeEvent: true
 systemMsg:
   textColor: "#FFFFFFFF"
@@ -97,7 +99,7 @@ styleSets:
   buttonTextColor: "#baffc8"
   additionalTextAndButtonColor: "#1a4ba1"
 - id: bonusbox_normal
-  marqueeAnimationID: marquee_redenvelope
+  marqueeAnimationID: marquee_luckybag
   redenvelopeDialogURL: https://cdn.17app.co/8d460872-3d3f-4b54-9dd1-236fb89cee0b.png
   buttonDecorationURL: 
   resultSuccessDialogURL: https://cdn.17app.co/c3a17325-b431-44b5-b0db-6622725850cb.png
@@ -110,7 +112,7 @@ styleSets:
   buttonTextColor: "#FFFFFF"
   additionalTextAndButtonColor: "#23019F"
 - id: bonusbox_advanced
-  marqueeAnimationID: marquee_redenvelope
+  marqueeAnimationID: marquee_luckybag
   redenvelopeDialogURL: https://cdn.17app.co/8d460872-3d3f-4b54-9dd1-236fb89cee0b.png
   buttonDecorationURL: 
   resultSuccessDialogURL: https://cdn.17app.co/c3a17325-b431-44b5-b0db-6622725850cb.png
@@ -123,7 +125,7 @@ styleSets:
   buttonTextColor: "#FFFFFF"
   additionalTextAndButtonColor: "#23019F"
 - id: bonusbox_premium
-  marqueeAnimationID: marquee_redenvelope
+  marqueeAnimationID: marquee_luckybag
   redenvelopeDialogURL: https://cdn.17app.co/8d460872-3d3f-4b54-9dd1-236fb89cee0b.png
   buttonDecorationURL: 
   resultSuccessDialogURL: https://cdn.17app.co/c3a17325-b431-44b5-b0db-6622725850cb.png
@@ -542,6 +544,141 @@ pointSets:
     - amount: 100
       point: 200
       giftIDs: ["2108_crazy_zoo_three_10"]
+- id: pointset_bonusbox_777
+  point: 777
+  revenuePoint: 139
+  fee: 138
+  package_list:
+    - amount: 1
+      point: 200
+      giftIDs: ["2212_po_bb_tw_200_a", "2212_po_bb_tw_200_b", "2212_po_bb_tw_200_c", "2212_po_bb_tw_200_d", "2212_po_bb_tw_200_e", "2212_po_bb_tw_200_f"]
+    - amount: 3
+      point: 100
+      giftIDs: ["2212_po_bb_tw_100_a", "2212_po_bb_tw_100_b", "2212_po_bb_tw_100_c", "2212_po_bb_tw_100_d"]
+- id: pointset_bonusbox_7777
+  point: 7777
+  revenuePoint: 1389
+  fee: 1388
+  package_list:
+    - amount: 2
+      point: 500
+      giftIDs: ["2212_po_bb_tw_500_a", "2212_po_bb_tw_500_b", "2212_po_bb_tw_500_c", "2212_po_bb_tw_500_d", "2212_po_bb_tw_500_e", "2212_po_bb_tw_500_f"]
+    - amount: 5
+      point: 200
+      giftIDs: ["2212_po_bb_tw_200_a", "2212_po_bb_tw_200_b", "2212_po_bb_tw_200_c", "2212_po_bb_tw_200_d", "2212_po_bb_tw_200_e", "2212_po_bb_tw_200_f"]
+    - amount: 30
+      point: 100
+      giftIDs: ["2212_po_bb_tw_100_a", "2212_po_bb_tw_100_b", "2212_po_bb_tw_100_c", "2212_po_bb_tw_100_d"]
+- id: pointset_bonusbox_77777
+  point: 77777
+  revenuePoint: 13889
+  fee: 13888
+  package_list:
+    - amount: 2
+      point: 17000
+      giftIDs: ["2212_po_bb_tw_17000_a", "2212_po_bb_tw_17000_b", "2212_po_bb_tw_17000_c", "2212_po_bb_tw_17000_d"]
+    - amount: 5
+      point: 1000
+      giftIDs: ["2212_po_bb_tw_1000_a", "2212_po_bb_tw_1000_b", "2212_po_bb_tw_1000_c", "2212_po_bb_tw_1000_d"]
+    - amount: 10
+      point: 500
+      giftIDs: ["2212_po_bb_tw_500_a", "2212_po_bb_tw_500_b", "2212_po_bb_tw_500_c", "2212_po_bb_tw_500_d", "2212_po_bb_tw_500_e", "2212_po_bb_tw_500_f"]
+    - amount: 15
+      point: 200
+      giftIDs: ["2212_po_bb_tw_200_a", "2212_po_bb_tw_200_b", "2212_po_bb_tw_200_c", "2212_po_bb_tw_200_d", "2212_po_bb_tw_200_e", "2212_po_bb_tw_200_f"]
+    - amount: 30
+      point: 100
+      giftIDs: ["2212_po_bb_tw_100_a", "2212_po_bb_tw_100_b", "2212_po_bb_tw_100_c", "2212_po_bb_tw_100_d"]
+- id: pointset_bonusbox_777_JP
+  point: 777
+  revenuePoint: 139
+  fee: 138
+  package_list:
+    - amount: 1
+      point: 200
+      giftIDs: ["2212_po_bb_200_a", "2212_po_bb_200_b", "2212_po_bb_200_c", "2212_po_bb_200_d", "2212_po_bb_200_e", "2212_po_bb_200_f"]
+    - amount: 3
+      point: 100
+      giftIDs: ["2212_po_bb_100_a", "2212_po_bb_100_b", "2212_po_bb_100_c", "2212_po_bb_100_d"]
+- id: pointset_bonusbox_7777_JP
+  point: 7777
+  revenuePoint: 1389
+  fee: 1388
+  package_list:
+    - amount: 2
+      point: 500
+      giftIDs: ["2212_po_bb_500_a", "2212_po_bb_500_b", "2212_po_bb_500_c", "2212_po_bb_500_d", "2212_po_bb_500_e", "2212_po_bb_500_f"]
+    - amount: 5
+      point: 200
+      giftIDs: ["2212_po_bb_200_a", "2212_po_bb_200_b", "2212_po_bb_200_c", "2212_po_bb_200_d", "2212_po_bb_200_e", "2212_po_bb_200_f"]
+    - amount: 30
+      point: 100
+      giftIDs: ["2212_po_bb_100_a", "2212_po_bb_100_b", "2212_po_bb_100_c", "2212_po_bb_100_d"]
+- id: pointset_bonusbox_77777_JP
+  point: 77777
+  revenuePoint: 13889
+  fee: 13888
+  package_list:
+    - amount: 2
+      point: 17000
+      giftIDs: ["2212_po_bb_17000_a", "2212_po_bb_17000_b", "2212_po_bb_17000_c", "2212_po_bb_17000_d"]
+    - amount: 5
+      point: 1000
+      giftIDs: ["2212_po_bb_1000_a", "2212_po_bb_1000_b", "2212_po_bb_1000_c", "2212_po_bb_1000_d"]
+    - amount: 10
+      point: 500
+      giftIDs: ["2212_po_bb_500_a", "2212_po_bb_500_b", "2212_po_bb_500_c", "2212_po_bb_500_d", "2212_po_bb_500_e", "2212_po_bb_500_f"]
+    - amount: 15
+      point: 200
+      giftIDs: ["2212_po_bb_200_a", "2212_po_bb_200_b", "2212_po_bb_200_c", "2212_po_bb_200_d", "2212_po_bb_200_e", "2212_po_bb_200_f"]
+    - amount: 30
+      point: 100
+      giftIDs: ["2212_po_bb_100_a", "2212_po_bb_100_b", "2212_po_bb_100_c", "2212_po_bb_100_d"]
+- id: pointset_bonusbox_777_US
+  point: 777
+  revenuePoint: 139
+  fee: 138
+  package_list:
+    - amount: 1
+      point: 200
+      giftIDs: ["2212_po_bb_us_200_a", "2212_po_bb_us_200_b", "2212_po_bb_us_200_c", "2212_po_bb_us_200_d", "2212_po_bb_us_200_e", "2212_po_bb_us_200_f"]
+    - amount: 3
+      point: 100
+      giftIDs: ["2212_po_bb_us_100_a", "2212_po_bb_us_100_b", "2212_po_bb_us_100_c", "2212_po_bb_us_100_d"]
+- id: pointset_bonusbox_7777_US
+  point: 7777
+  revenuePoint: 1389
+  fee: 1388
+  package_list:
+    - amount: 2
+      point: 500
+      giftIDs: ["2212_po_bb_us_500_a", "2212_po_bb_us_500_b", "2212_po_bb_us_500_c", "2212_po_bb_us_500_d", "2212_po_bb_us_500_e", "2212_po_bb_us_500_f"]
+    - amount: 5
+      point: 200
+      giftIDs: ["2212_po_bb_us_200_a", "2212_po_bb_us_200_b", "2212_po_bb_us_200_c", "2212_po_bb_us_200_d", "2212_po_bb_us_200_e", "2212_po_bb_us_200_f"]
+    - amount: 30
+      point: 100
+      giftIDs: ["2212_po_bb_us_100_a", "2212_po_bb_us_100_b", "2212_po_bb_us_100_c", "2212_po_bb_us_100_d"]
+- id: pointset_bonusbox_77777_US
+  point: 77777
+  revenuePoint: 13889
+  fee: 13888
+  package_list:
+    - amount: 2
+      point: 17000
+      giftIDs: ["2212_po_bb_us_17000_a", "2212_po_bb_us_17000_b", "2212_po_bb_us_17000_c", "2212_po_bb_us_17000_d"]
+    - amount: 5
+      point: 1000
+      giftIDs: ["2212_po_bb_us_1000_a", "2212_po_bb_us_1000_b", "2212_po_bb_us_1000_c", "2212_po_bb_us_1000_d"]
+    - amount: 10
+      point: 500
+      giftIDs: ["2212_po_bb_us_500_a", "2212_po_bb_us_500_b", "2212_po_bb_us_500_c", "2212_po_bb_us_500_d", "2212_po_bb_us_500_e", "2212_po_bb_us_500_f"]
+    - amount: 15
+      point: 200
+      giftIDs: ["2212_po_bb_us_200_a", "2212_po_bb_us_200_b", "2212_po_bb_us_200_c", "2212_po_bb_us_200_d", "2212_po_bb_us_200_e", "2212_po_bb_us_200_f"]
+    - amount: 30
+      point: 100
+      giftIDs: ["2212_po_bb_us_100_a", "2212_po_bb_us_100_b", "2212_po_bb_us_100_c", "2212_po_bb_us_100_d"]
 
 redenvelopes:
 - id: redenvelope_no_rising_star
@@ -1467,17 +1604,19 @@ redenvelopes:
 #   regions: [JP]
 
 - id: bonusbox_no_1
-  startTime:
-  endTime:
+  # startTime: 1672135200 # 2022/12/27 18:00 +0800 prod 上線時間
+  # endTime: 1674835199   # 2023/1/27 23:59 +0800 prod 結束時間
+  startTime: 
+  endTime: 
   img_URL: https://cdn.17app.co/a069f4bb-a3b0-4685-b013-f0cf7b40b448.png
   zip_url: https://cdn.17app.co/589d2429-8351-4d84-8db7-9db87ae63db3.zip
   zip_md5: 9df187b86636f8d6563359697a755e7b
-  webp_url: https://cdn.17app.co/3f1b5018-27c4-4e59-ad73-a212502f184c-q90-s1.webp # dummy value, just for test
-  webp_md5: 27745e230da3c46189af528cd222beee # dummy value, just for test
+  webp_url: https://cdn.17app.co/3f1b5018-27c4-4e59-ad73-a212502f184c-q90-s1.webp
+  webp_md5: 27745e230da3c46189af528cd222beee
   webm_url: https://cdn.17app.co/b57f5956-0010-4cea-a7ad-cb45a1dbae79.webm
   webm_md5: dff0621757ef7fb8d68ba281c619324e
   name_token: bonusbox_name_no_1
-  pointSetID: pointset_bonusbox_6666
+  pointSetID: pointset_bonusbox_777
   style: bonusbox_normal
   announceable: false
   announce_threshold: 25000
@@ -1493,17 +1632,19 @@ redenvelopes:
   duration: 172800
 
 - id: bonusbox_no_2
+  # startTime: 1672135200 # 2022/12/27 18:00 +0800 prod 上線時間
+  # endTime: 1674835199   # 2023/1/27 23:59 +0800 prod 結束時間
   startTime:
   endTime:
   img_URL: https://cdn.17app.co/f5aed87b-6e98-4c1f-ae24-2b1b4a4c4076.png
-  zip_url: https://cdn.17app.co/e15a19fb-26c8-4539-a859-cc3cc0ed2498.zip
-  zip_md5: 009a7d8c855d28366c423ca604acd4a8
-  webp_url: https://cdn.17app.co/2b2d767e-b740-4741-ad4d-8fbf2928e9e1-q90-s1.webp # dummy value, just for test
-  webp_md5: 7f8d48ab2a42230cdefd56364abce720 # dummy value, just for test 
+  zip_url: https://cdn.17app.co/be9f0549-94e5-49d7-9116-947b82d28d17.zip
+  zip_md5: 25ae6123979f582c794183ca63edd6ba
+  webp_url: https://cdn.17app.co/a702a319-a7f7-4599-b8d2-462930a6a3c5.webp
+  webp_md5: 02eccd851160e747466aba2767c3d327
   webm_url: https://cdn.17app.co/ddc1dd95-478d-4bab-b5bd-4a42470ae417.webm
   webm_md5: ebb914ebc8a54789503496bd4930521d
   name_token: bonusbox_name_no_2
-  pointSetID: pointset_bonusbox_66666
+  pointSetID: pointset_bonusbox_7777
   style: bonusbox_advanced
   announceable: true
   announce_threshold: -1
@@ -1519,17 +1660,19 @@ redenvelopes:
   duration: 172800
 
 - id: bonusbox_no_3
+  # startTime: 1672135200 # 2022/12/27 18:00 +0800 prod 上線時間
+  # endTime: 1674835199   # 2023/1/27 23:59 +0800 prod 結束時間
   startTime:
   endTime:
   img_URL: https://cdn.17app.co/19711e7b-6686-4989-b194-be249e3eeb05.png
-  zip_url: https://cdn.17app.co/bc078721-97f1-45c3-8efb-22a005963d67.zip
-  zip_md5: dd46b0fc20d95b9885f1a780fc4b059d
-  webp_url: https://cdn.17app.co/2b2d767e-b740-4741-ad4d-8fbf2928e9e1-q90-s1.webp # dummy value, just for test
-  webp_md5: 7f8d48ab2a42230cdefd56364abce720 # dummy value, just for test
+  zip_url: https://cdn.17app.co/cd689cc4-1970-484d-a4b4-4a9ecf2d88c3.zip
+  zip_md5: 0c08cf5a30a87e9521b01ceb06f1d37e
+  webp_url: https://cdn.17app.co/eab49e36-d9bb-4b32-b90e-d256debc8f25.webp
+  webp_md5: f5898b80eecf9851ca3ecf623571f5b4
   webm_url: https://cdn.17app.co/f9316a3c-8197-4dac-973b-4e80f2f0029f.webm
   webm_md5: 9522546455eb77d0ba6046dc4104d14c
   name_token: bonusbox_name_no_3
-  pointSetID: pointset_bonusbox_666666
+  pointSetID: pointset_bonusbox_77777
   style: bonusbox_premium
   announceable: true
   announce_threshold: -1
@@ -1545,17 +1688,19 @@ redenvelopes:
   duration: 172800
 
 - id: bonusbox_no_1_JP
+  # startTime: 1672135200 # 2022/12/27 18:00 +0800 prod 上線時間
+  # endTime: 1674835199   # 2023/1/27 23:59 +0800 prod 結束時間
   startTime:
   endTime:
   img_URL: https://cdn.17app.co/a069f4bb-a3b0-4685-b013-f0cf7b40b448.png
-  zip_url: https://cdn.17app.co/6ebdb8fa-bef3-4eba-a17b-5edaaae23ec1.zip
-  zip_md5: 222ac39684db16a8ea31ea8debc371f4
-  webp_url: https://cdn.17app.co/2b2d767e-b740-4741-ad4d-8fbf2928e9e1-q90-s1.webp # dummy value, just for test
-  webp_md5: 7f8d48ab2a42230cdefd56364abce720 # dummy value, just for test
-  webm_url: https://cdn.17app.co/a99781d5-e847-4dab-b4a7-09152804e4a7.webm
-  webm_md5: b6de60c6fa927f60eef0b87564324a4b
+  zip_url: https://cdn.17app.co/d49225a2-5fa6-493f-afe7-d9f5bcf7753b.zip
+  zip_md5: f1021e616217e9f7043ef42435aaff1b
+  webp_url: https://cdn.17app.co/3f1b5018-27c4-4e59-ad73-a212502f184c-q90-s1.webp
+  webp_md5: 27745e230da3c46189af528cd222beee
+  webm_url: https://cdn.17app.co/b57f5956-0010-4cea-a7ad-cb45a1dbae79.webm
+  webm_md5: dff0621757ef7fb8d68ba281c619324e
   name_token: bonusbox_name_no_1
-  pointSetID: pointset_bonusbox_6666_JP
+  pointSetID: pointset_bonusbox_777_JP
   style: bonusbox_normal
   announceable: false
   announce_threshold: 25000
@@ -1571,17 +1716,19 @@ redenvelopes:
   duration: 172800
 
 - id: bonusbox_no_2_JP
+  # startTime: 1672135200 # 2022/12/27 18:00 +0800 prod 上線時間
+  # endTime: 1674835199   # 2023/1/27 23:59 +0800 prod 結束時間
   startTime:
   endTime:
   img_URL: https://cdn.17app.co/f5aed87b-6e98-4c1f-ae24-2b1b4a4c4076.png
-  zip_url: https://cdn.17app.co/e15a19fb-26c8-4539-a859-cc3cc0ed2498.zip
-  zip_md5: 009a7d8c855d28366c423ca604acd4a8
-  webp_url: https://cdn.17app.co/2b2d767e-b740-4741-ad4d-8fbf2928e9e1-q90-s1.webp # dummy value, just for test
-  webp_md5: 7f8d48ab2a42230cdefd56364abce720 # dummy value, just for test 
+  zip_url: https://cdn.17app.co/ad906805-583f-45ef-a737-09db3cbaa6e5.zip
+  zip_md5: 6df62aad7f44da1e386fac006dea9026
+  webp_url: https://cdn.17app.co/a702a319-a7f7-4599-b8d2-462930a6a3c5.webp
+  webp_md5: 02eccd851160e747466aba2767c3d327
   webm_url: https://cdn.17app.co/ddc1dd95-478d-4bab-b5bd-4a42470ae417.webm
   webm_md5: ebb914ebc8a54789503496bd4930521d
   name_token: bonusbox_name_no_2
-  pointSetID: pointset_bonusbox_66666_JP
+  pointSetID: pointset_bonusbox_7777_JP
   style: bonusbox_advanced
   announceable: true
   announce_threshold: -1
@@ -1597,17 +1744,19 @@ redenvelopes:
   duration: 172800
 
 - id: bonusbox_no_3_JP
+  # startTime: 1672135200 # 2022/12/27 18:00 +0800 prod 上線時間
+  # endTime: 1674835199   # 2023/1/27 23:59 +0800 prod 結束時間
   startTime:
   endTime:
   img_URL: https://cdn.17app.co/19711e7b-6686-4989-b194-be249e3eeb05.png
-  zip_url: https://cdn.17app.co/bc078721-97f1-45c3-8efb-22a005963d67.zip
-  zip_md5: dd46b0fc20d95b9885f1a780fc4b059d
-  webp_url: https://cdn.17app.co/2b2d767e-b740-4741-ad4d-8fbf2928e9e1-q90-s1.webp # dummy value, just for test
-  webp_md5: 7f8d48ab2a42230cdefd56364abce720 # dummy value, just for test
+  zip_url: https://cdn.17app.co/0229346b-0426-4e67-b99d-e7df7bbabe0b.zip
+  zip_md5: 0ece16771eb2363d1a9dde1a72c0f27e
+  webp_url: https://cdn.17app.co/eab49e36-d9bb-4b32-b90e-d256debc8f25.webp
+  webp_md5: f5898b80eecf9851ca3ecf623571f5b4
   webm_url: https://cdn.17app.co/f9316a3c-8197-4dac-973b-4e80f2f0029f.webm
   webm_md5: 9522546455eb77d0ba6046dc4104d14c
   name_token: bonusbox_name_no_3
-  pointSetID: pointset_bonusbox_666666_JP
+  pointSetID: pointset_bonusbox_77777_JP
   style: bonusbox_premium
   announceable: true
   announce_threshold: -1
@@ -1623,17 +1772,19 @@ redenvelopes:
   duration: 172800
 
 - id: bonusbox_no_1_US
+  # startTime: 1672135200 # 2022/12/27 18:00 +0800 prod 上線時間
+  # endTime: 1674835199   # 2023/1/27 23:59 +0800 prod 結束時間
   startTime:
   endTime:
   img_URL: https://cdn.17app.co/a069f4bb-a3b0-4685-b013-f0cf7b40b448.png
-  zip_url: https://cdn.17app.co/6ebdb8fa-bef3-4eba-a17b-5edaaae23ec1.zip
-  zip_md5: 222ac39684db16a8ea31ea8debc371f4
-  webp_url: https://cdn.17app.co/2b2d767e-b740-4741-ad4d-8fbf2928e9e1-q90-s1.webp # dummy value, just for test
-  webp_md5: 7f8d48ab2a42230cdefd56364abce720 # dummy value, just for test
-  webm_url: https://cdn.17app.co/a99781d5-e847-4dab-b4a7-09152804e4a7.webm
-  webm_md5: b6de60c6fa927f60eef0b87564324a4b
+  zip_url: https://cdn.17app.co/63db1dba-564c-4859-ad51-2130074e3503.zip
+  zip_md5: 7f6e332cfa5f1e3393f96928084e17f6
+  webp_url: https://cdn.17app.co/3f1b5018-27c4-4e59-ad73-a212502f184c-q90-s1.webp
+  webp_md5: 27745e230da3c46189af528cd222beee
+  webm_url: https://cdn.17app.co/b57f5956-0010-4cea-a7ad-cb45a1dbae79.webm
+  webm_md5: dff0621757ef7fb8d68ba281c619324e
   name_token: bonusbox_name_no_1
-  pointSetID: pointset_bonusbox_6666_US
+  pointSetID: pointset_bonusbox_777_US
   style: bonusbox_normal
   announceable: false
   announce_threshold: 25000
@@ -1649,17 +1800,19 @@ redenvelopes:
   duration: 172800
 
 - id: bonusbox_no_2_US
+  # startTime: 1672135200 # 2022/12/27 18:00 +0800 prod 上線時間
+  # endTime: 1674835199   # 2023/1/27 23:59 +0800 prod 結束時間
   startTime:
   endTime:
   img_URL: https://cdn.17app.co/f5aed87b-6e98-4c1f-ae24-2b1b4a4c4076.png
-  zip_url: https://cdn.17app.co/e15a19fb-26c8-4539-a859-cc3cc0ed2498.zip
-  zip_md5: 009a7d8c855d28366c423ca604acd4a8
-  webp_url: https://cdn.17app.co/2b2d767e-b740-4741-ad4d-8fbf2928e9e1-q90-s1.webp # dummy value, just for test
-  webp_md5: 7f8d48ab2a42230cdefd56364abce720 # dummy value, just for test 
+  zip_url: https://cdn.17app.co/2c0b4450-7333-4376-bb7d-d10cc78be981.zip
+  zip_md5: d05a0cb578b48fe2c660af36adc2079c
+  webp_url: https://cdn.17app.co/a702a319-a7f7-4599-b8d2-462930a6a3c5.webp
+  webp_md5: 02eccd851160e747466aba2767c3d327
   webm_url: https://cdn.17app.co/ddc1dd95-478d-4bab-b5bd-4a42470ae417.webm
   webm_md5: ebb914ebc8a54789503496bd4930521d
   name_token: bonusbox_name_no_2
-  pointSetID: pointset_bonusbox_66666_US
+  pointSetID: pointset_bonusbox_7777_US
   style: bonusbox_advanced
   announceable: true
   announce_threshold: -1
@@ -1675,17 +1828,19 @@ redenvelopes:
   duration: 172800
 
 - id: bonusbox_no_3_US
+  # startTime: 1672135200 # 2022/12/27 18:00 +0800 prod 上線時間
+  # endTime: 1674835199   # 2023/1/27 23:59 +0800 prod 結束時間
   startTime:
   endTime:
   img_URL: https://cdn.17app.co/19711e7b-6686-4989-b194-be249e3eeb05.png
-  zip_url: https://cdn.17app.co/bc078721-97f1-45c3-8efb-22a005963d67.zip
-  zip_md5: dd46b0fc20d95b9885f1a780fc4b059d
-  webp_url: https://cdn.17app.co/2b2d767e-b740-4741-ad4d-8fbf2928e9e1-q90-s1.webp # dummy value, just for test
-  webp_md5: 7f8d48ab2a42230cdefd56364abce720 # dummy value, just for test
+  zip_url: https://cdn.17app.co/e2924a9b-d39d-474f-bfa6-caa43043e853.zip
+  zip_md5: 118442d41771b878be62615737d1095c
+  webp_url: https://cdn.17app.co/eab49e36-d9bb-4b32-b90e-d256debc8f25.webp
+  webp_md5: f5898b80eecf9851ca3ecf623571f5b4
   webm_url: https://cdn.17app.co/f9316a3c-8197-4dac-973b-4e80f2f0029f.webm
   webm_md5: 9522546455eb77d0ba6046dc4104d14c
   name_token: bonusbox_name_no_3
-  pointSetID: pointset_bonusbox_666666_US
+  pointSetID: pointset_bonusbox_77777_US
   style: bonusbox_premium
   announceable: true
   announce_threshold: -1
