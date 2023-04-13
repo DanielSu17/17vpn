@@ -47,8 +47,15 @@ rtmp_providers:
 - name: WANSU
   quality_support: 1
   weight: 0
-  region_weights:
-    CN: 100
+#  region_weights:
+#    TW: 0
+#    HK: 0
+#    US: 0
+#    UK: 100
+#    MY: 100
+#  levelRestriction:
+#    minLevel: 0
+#    maxLevel: 50
   users:
   - bc8d75ba-01cb-45de-a951-cba8c426f04f # peter.y1
   - 71428c73-2f0d-4293-969f-f7f1d3640309 # alice.lin.01
@@ -217,9 +224,15 @@ rtmp_providers:
 - name: WANSU_LOW_LATENCY
   quality_support: 1
   weight: 0
-  region_weights:
-    TW: 0
-    CN: 0
+#  region_weights:
+#    TW: 0
+#    HK: 0
+#    US: 0
+#    UK: 100
+#    MY: 100
+#  levelRestriction:
+#    minLevel: 0
+#    maxLevel: 50
   users:
   - 0e671b10-1660-419c-67f9-9983ebdbad38 # triviabot1
   - 48ca8e9e-0ca1-4d7f-6b2c-ffd21e5a4ff6 # triviabot2
@@ -250,15 +263,15 @@ rtmp_providers:
 - name: AWS
   quality_support: 0
   weight: 0
-  region_weights:
-    TW: 0
-    HK: 0
-    US: 0
-    UK: 100
-    MY: 100
-  levelRestriction:
-    minLevel: 0
-    maxLevel: 50
+#  region_weights:
+#    TW: 0
+#    HK: 0
+#    US: 0
+#    UK: 100
+#    MY: 100
+#  levelRestriction:
+#    minLevel: 0
+#    maxLevel: 50
   timeRestriction:
     enabledAtUTCHour: 0
     disabledAtUTCHour: 23
