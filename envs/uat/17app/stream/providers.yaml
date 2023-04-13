@@ -248,7 +248,7 @@ rtmp_providers:
   
 - name: AWS
   quality_support: 0
-  weight: 51
+  weight: 0
   region_weights:
     TW: 0
     HK: 0
@@ -325,10 +325,7 @@ rtmp_providers:
 - name: LIVE17
   quality_support: 0
   expire_after_hours: 6
-  weight: 49
-  levelRestriction:
-    minLevel: 0
-    maxLevel: 0
+  weight: 51
   users:
   - 711c7a4a-beb7-4d3c-90e6-dadf0a567b32 # teamz1
   - 2c00c6d5-83d5-41ce-bc25-4ce646d5bca6 # teamz2
@@ -381,12 +378,7 @@ rtmp_providers:
 - name: TENCENT
   quality_support: 0
   expire_after_hours: 6
-  weight: 0
-  region_weights:
-    TW: 0
-  levelRestriction:
-    minLevel: 0
-    maxLevel: 0
+  weight: 49
   users:
   - 5de25692-7126-4e20-bd4a-39f797d17a32 #iris.2
   - 6f538c10-9e6b-444f-bfcb-9ea561b3325d #iris_jp.2
