@@ -1,9 +1,13 @@
+# 決定 viewer 取得的 stream type
+# app version < supported version -> 不支援，stream type 回傳 rtmp
+# app version >= supported version 或 supported version 為空字串 -> 支援，stream type 回傳 hls
 awsSupportedVersion:
   ios: "3.164.0"
   android: "2.70.0"
+# 決定 streamer 可推流至 AWS CDN 的最小 app version，空字串則所有 app version 皆支援
 streamerSupportedVersion:
   "AWS":
-    ios: "3.109.0"
+    ios: "3.330.0"
     android: "2.100.0"
   "LIVE17":
     ios: "3.134.0"
