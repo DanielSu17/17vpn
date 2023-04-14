@@ -21,7 +21,7 @@ rtmp_providers:
 - name: QINIU
   quality_support: 0
   expire_after_hours: 6
-  weight: 0
+  weight: 40
   users:
   - 37d9e764-5eef-44f8-8e60-a06f5ea7e001 # qaprogram1
   - 82111219-2b6a-4898-ba41-3ee305f46de7 # androidtest
@@ -293,7 +293,7 @@ rtmp_providers:
   
 - name: AWS
   quality_support: 0
-  weight: 60
+  weight: 100
   region_weights:
     TW: 100
     HK: 0
@@ -302,10 +302,10 @@ rtmp_providers:
     MY: 100
   levelRestriction:
     minLevel: 0
-    maxLevel: 300
-#  timeRestriction:
-#    enabledAtUTCHour: 0
-#    disabledAtUTCHour: 23
+    maxLevel: 200
+  timeRestriction:
+    enabledAtUTCHour: 0
+    disabledAtUTCHour: 23
   users:
 #   - 8d6afb79-95cb-4971-8032-ec892b0d8ae7 # ray.de.test
   - 73f2de03-5cd3-4167-924d-1f4b6ef7080b # qacontractor7
