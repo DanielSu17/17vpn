@@ -318,22 +318,10 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: Label # 女子
-    labelID: jp_girls
+  - id: Label # lv70以上
+    labelID: jp_lv70
     name:
-      key: streamer_jp_label_girls
-    enable: true
-    dedup: true
-    minGrids: 3
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
-  - id: Label # 男子
-    labelID: jp_boys
-    name:
-      key: streamer_jp_label_boys
+      key: Lv70以上 #streamer_jp_label_Lv70higher
     enable: true
     dedup: true
     minGrids: 3
@@ -366,10 +354,22 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: Label # lv10以下
-    labelID: jp_lv10
+  - id: Label # 女子
+    labelID: jp_girls
     name:
-      key: streamer_jp_label_lv10
+      key: streamer_jp_label_girls
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # 男子
+    labelID: jp_boys
+    name:
+      key: streamer_jp_label_boys
     enable: true
     dedup: true
     minGrids: 3
@@ -419,7 +419,6 @@ sections:
 #    more: true
 #    category: normal
 #    orderModel: 2
-
 #以下、過去分ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #  - id: Label # タレント
 #    labelID: jp_talent
@@ -454,22 +453,22 @@ sections:
 #    more: true
 #    category: normal
 
-#  - id: Label # アイドルを応援！SPARK2022
-#    labelID: 2212_jp_idlespark2022
+#  - id: Label # lv20以下
+#    labelID: jp_lv20
 #    name:
-#      key: streamer_jp_label_idlespark2022
+#      key: streamer_jp_label_lv20
 #    enable: true
 #    dedup: true
-#    minGrids: 20
+#    minGrids: 3
 #    style: 3
 #    more: true
 #    category: normal
 #    orderModel: 2
 
-#  - id: Label # lv20以下
-#    labelID: jp_lv20
+#  - id: Label # lv10以下
+#    labelID: jp_lv10
 #    name:
-#      key: streamer_jp_label_lv20
+#      key: streamer_jp_label_lv10
 #    enable: true
 #    dedup: true
 #    minGrids: 3
