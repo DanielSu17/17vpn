@@ -8,12 +8,20 @@ labelInfos:
     order: 1
     iconURL: "h"
     isHide: true
+  - id: "jp_V-LIVER" # Vライバー,V-Liver
+    type: 2
+    labelID: 368
+    label: {key: explore_jp_label_vliver}
+    featured: true
+    order: 2
+    iconURL: "h"
+    isHide: true
   - id: "jp_recommend" # レコメンド,推薦
     type: 1
     labelID: 
     label: {key: explore_jp_label_recommend}
     featured: true
-    order: 2
+    order: 4
     iconURL: "h"
     isHide: true
   - id: "2203_jp_lv100" #　Lv100以上
@@ -21,46 +29,7 @@ labelInfos:
     labelID:
     label: {key: streamer_jp_label_lv100}
     featured: true
-    order: 3
-    iconURL: "h"
-    isHide: true
-  - id: "2207_jp_sports17" #　スポーツ
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_sports17}
-    featured: true
-    order: 4
-    iconURL: "h"
-    isHide: true
-  - id: "jp_singer" # 歌
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_singer}
-    featured: true
-    order: 9
-    iconURL: "h"
-    isHide: true
-  - id: "jp_instrument" # 楽器演奏
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_instrument}
-    featured: true
-    order: 10
-    iconURL: "h"
-    isHide: true
-  - id: "jp_freetalk1" # 雑談
-    type: 1
-#    labelID: 365
-    label: {key: streamer_jp_label_freetalk}
-    order: 11
-    iconURL: "h"
-    isHide: true
-  - id: "jp_game" # ゲーム,遊戲
-    type: 2
-    labelID: 367
-    label: {key: explore_jp_label_game}
-    featured: true
-    order: 12
+    order: 6
     iconURL: "h"
     isHide: true
   - id: "jp_welcome" # 初見さん歓迎
@@ -68,7 +37,38 @@ labelInfos:
     labelID:
     label: {key: streamer_jp_label_welcome}
     featured: true
-    order: 13
+    order: 7
+    iconURL: "h"
+    isHide: true
+  - id: "jp_game" # ゲーム,遊戲
+    type: 2
+    labelID: 367
+    label: {key: explore_jp_label_game}
+    featured: true
+    order: 9
+    iconURL: "h"
+    isHide: true
+  - id: "jp_singer" # 歌
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_singer}
+    featured: true
+    order: 10
+    iconURL: "h"
+    isHide: true
+  - id: "jp_instrument" # 楽器演奏
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_instrument}
+    featured: true
+    order: 11
+    iconURL: "h"
+    isHide: true
+  - id: "jp_freetalk1" # 雑談
+    type: 1
+#    labelID: 365
+    label: {key: streamer_jp_label_freetalk}
+    order: 12
     iconURL: "h"
     isHide: true
   - id: "jp_fortune" # 占い
@@ -76,23 +76,7 @@ labelInfos:
     labelID:
     label: {key: streamer_jp_label_fortune}
     featured: true
-    order: 14
-    iconURL: "h"
-    isHide: true
-  - id: "2207_jp_cooking17" #　クッキング
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_cooking17}
-    featured: true
-    order: 15
-    iconURL: "h"
-    isHide: true
-  - id: "2207_jp_love_talk17" #　恋愛トーク
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_love_talk17}
-    featured: true
-    order: 16
+    order: 13
     iconURL: "h"
     isHide: true
   - id: "2111_jp_sousaku" # 創作・制作
@@ -100,7 +84,7 @@ labelInfos:
     labelID:
     label: {key: streamer_jp_label_sousaku}
     featured: true
-    order: 17
+    order: 16
     iconURL: "h"
     isHide: true
   - id: "jp_animal" # アニマル
@@ -108,7 +92,7 @@ labelInfos:
     labelID: 
     label: {key: streamer_jp_label_animal}
     featured: true
-    order: 18
+    order: 17
     iconURL: "h"
     isHide: true
   - id: "2111_jp_oekaki" # お絵かき
@@ -116,7 +100,23 @@ labelInfos:
     labelID:
     label: {key: streamer_jp_label_oekaki}
     featured: true
+    order: 18
+    iconURL: "h"
+    isHide: true
+  - id: "2207_jp_cooking17" #　クッキング
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_cooking17}
+    featured: true
     order: 19
+    iconURL: "h"
+    isHide: true
+  - id: "2207_jp_love_talk17" #　恋愛トーク
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_love_talk17}
+    featured: true
+    order: 20
     iconURL: "h"
     isHide: true
   - id: "jp_DJ" # DJ
@@ -124,15 +124,7 @@ labelInfos:
     labelID:
     label: {key: streamer_jp_label_DJ}
     featured: true
-    order: 20
-    iconURL: "h"
-    isHide: true
-  - id: "jp_V-LIVER" # Vライバー,V-Liver
-    type: 2
-    labelID: 368
-    label: {key: explore_jp_label_vliver}
-    featured: true
-    order: 22
+    order: 21
     iconURL: "h"
     isHide: true
   - id: "jp_audiostream" # ラジオ配信
@@ -140,7 +132,7 @@ labelInfos:
     labelID:
     label: {key: streamer_jp_label_audiostream}
     featured: true
-    order: 23
+    order: 22
     iconURL: "h"
     isHide: true
   - id: "2207_jp_dance17" #　ダンス
@@ -148,7 +140,55 @@ labelInfos:
     labelID:
     label: {key: streamer_jp_label_dance17}
     featured: true
+    order: 23
+    iconURL: "h"
+    isHide: true
+  - id: "2207_jp_sports17" #　スポーツ
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_sports17}
+    featured: true
     order: 24
+    iconURL: "h"
+    isHide: true
+  - id: "jp_lv70" #　Lv70以上
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_Lv70higher}
+    featured: true
+    order: 25
+    iconURL: "h"
+    isHide: true
+  - id: "jp_lv50" # lv50以下
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_lv50}
+    featured: true
+    order: 26
+    iconURL: "h"
+    isHide: true
+  - id: "jp_lv30" # lv30以下
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_lv30}
+    featured: true
+    order: 27
+    iconURL: "h"
+    isHide: true
+  - id: "jp_girls" # 女子
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_girls}
+    featured: true
+    order: 28
+    iconURL: "h"
+    isHide: true
+  - id: "jp_boys" # 男子
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_boys}
+    featured: true
+    order: 29
     iconURL: "h"
     isHide: true
   - id: "jp_show"  #熱門節目
@@ -157,52 +197,12 @@ labelInfos:
       key: "streamer_label_show"
     iconURL: "h"
     isHide: true
-  - id: "jp_girls" # 女子
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_girls}
-    featured: true
-    order: 26
-    iconURL: "h"
-    isHide: true
-  - id: "jp_boys" # 男子
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_boys}
-    featured: true
-    order: 27
-    iconURL: "h"
-    isHide: true
-  - id: "jp_lv50" # lv50以下
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_lv50}
-    featured: true
-    order: 28
-    iconURL: "h"
-    isHide: true
-  - id: "jp_lv30" # lv30以下
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_lv30}
-    featured: true
-    order: 29
-    iconURL: "h"
-    isHide: true
-  - id: "jp_lv10" # lv10以下
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_lv10}
-    featured: true
-    order: 30
-    iconURL: "h"
-    isHide: true
   - id: "2303_jp_realevent" # 202303_リアルイベント
     type: 1
     labelID:
     label: {key: streamer_jp_label_realevent}
     featured: true
-    order: 32
+    order: 30
     iconURL: "h"
     isHide: true
 
@@ -297,92 +297,12 @@ labelInfos:
     order: 120
     iconURL: "h"
     isHide: true
-  - id: "2111_jp_kohun" # 古墳フェス
-    type: 1
-    labelID: 
-    label: {key: streamer_jp_label_kohun}
-    featured: true
-    order: 121
-    iconURL: "h"
-    isHide: true
   - id: "2201_jp_gameday" #　17LIVE GAME DAY
     type: 1
     labelID:
     label: {key: streamer_jp_label_gameday}
     featured: true
     order: 122
-    iconURL: "h"
-    isHide: true
-  - id: "2206_jp_Ad_entry_streamer" #　広告出演中のライバー
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_Ad_entry_streamer}
-    featured: true
-    order: 123
-    iconURL: "h"
-    isHide: true
-  - id: "2208_jp_nostalgicmelody17" #懐メロ
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_nostalgicmelody17}
-    featured: true
-    order: 124
-    iconURL: "h"
-    isHide: true
-  - id: "2208_jp_animesong17" #アニソン
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_animesong17}
-    featured: true
-    order: 125
-    iconURL: "h"
-    isHide: true
-  - id: "2208_jp_fortunetelling_cp" #　はじめての「占い配信」体験
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_fortunetelling_cp}
-    featured: true
-    order: 126
-    iconURL: "h"
-    isHide: true
-  - id: "2207_jp_Today_meal17" #　今日のご飯
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_Today_meal17}
-    featured: true
-    order: 127
-    iconURL: "h"
-    isHide: true
-  - id: "2210_jp_halloween_cos" # ハロウィンパーティー 仮装
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_halloween2022_cosplay}
-    featured: true
-    order: 128
-    iconURL: "h"
-    isHide: true
-  - id: "2210_jp_halloween_cook" # ハロウィンパーティー 料理
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_halloween2022_cook}
-    featured: true
-    order: 129
-    iconURL: "h"
-    isHide: true
-  - id: "2210_jp_halloween_makeup" # ハロウィンパーティー メイク
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_halloween2022_makeup}
-    featured: true
-    order: 130
-    iconURL: "h"
-    isHide: true
-  - id: "2210_jp_halloween" # ハロウィン 2022
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_halloween2022}
-    featured: true
-    order: 131
     iconURL: "h"
     isHide: true
   - id: "jp_lv20" # lv20以下
@@ -393,28 +313,20 @@ labelInfos:
     order: 132
     iconURL: "h"
     isHide: true
-  - id: "2212_jp_globalpk" # VS 国際マッチ
-    type: 1
-    labelID: 
-    label: {key: streamer_jp_label_globalpk}
-    featured: true
-    order: 134
-    iconURL: "h"
-    isHide: true
-  - id: "2212_jp_idlespark2022" # アイドルを応援！SPARK2022
-    type: 1
-    labelID: 
-    label: {key: streamer_jp_label_idlespark2022}
-    featured: true
-    order: 135
-    iconURL: "h"
-    isHide: true
   - id: "2211_jp_vs_tournament2022" # 202303_VSトーナメント出場者
     type: 1
     labelID:
     label: {key: streamer_jp_label_vs_tournament2022}
     featured: true
     order: 136
+    iconURL: "h"
+    isHide: true
+  - id: "jp_lv10" # lv10以下
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_lv10}
+    featured: true
+    order: 30
     iconURL: "h"
     isHide: true
 
