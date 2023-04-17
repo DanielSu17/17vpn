@@ -19,6 +19,8 @@
 # style 8: (PK) used in more page
 # style 9: GroupCall
 # style 10: GroupCall empty style. Client will show the groupCall entry button even if the grids are less than minGrids.
+# style 11: ArchiveVideo (典藏直播)
+# style 12: Incentive
 
 preservedSectionID: Latest
 
@@ -558,6 +560,15 @@ sections:
     minGrids: 5
     style: 3
     more: true
+  - id: Incentive
+    name:
+      key: tab_hot_incentive_section  # FIXME: temp key name. Change key name if PM provides
+    enable: true
+    dedup: true
+    minGrids: 4
+    style: 12
+    more: true
+    orderModel: 2
 
 officialRecommendedStreamers:
   - e1248c81-a3a3-466b-9cd2-80d5e4f66448 # 乃哥
