@@ -1,1 +1,1 @@
-## referral (HK)
+## referral mission config (HK)

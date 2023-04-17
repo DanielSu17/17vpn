@@ -1,1 +1,1 @@
-## referral (US)
+## referral mission config (US)

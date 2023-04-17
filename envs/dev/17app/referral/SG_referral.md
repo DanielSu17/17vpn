@@ -1,1 +1,1 @@
-## referral (SG)
+## referral mission config (SG)

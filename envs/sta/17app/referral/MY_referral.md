@@ -1,1 +1,1 @@
-## referral (MY)
+## referral mission config (MY)

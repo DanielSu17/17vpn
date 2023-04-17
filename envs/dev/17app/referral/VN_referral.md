@@ -1,1 +1,1 @@
-## referral (VN)
+## referral mission config (VN)

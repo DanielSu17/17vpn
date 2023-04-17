@@ -1,1 +1,1 @@
-## referral (JP)
+## referral mission config (JP)
