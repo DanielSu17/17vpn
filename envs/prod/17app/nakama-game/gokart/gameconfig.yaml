@@ -1,5 +1,5 @@
 goKart:
-  version: 1.0.8
+  version: 1.0.9
   obstacles:
     - id: '0'
       condition: EMPTY
@@ -1007,8 +1007,8 @@ goKart:
       scoreMultiplier: 1.4
       laneCount: 3
       generatorType: RANDOM
-      lengthInCubes: 1300
-      speedInCubesPerSecond: 65
+      lengthInCubes: 1200
+      speedInCubesPerSecond: 60
       durationInSeconds: 20
       incidents:
         - entityId: '13'
@@ -1068,8 +1068,8 @@ goKart:
       scoreMultiplier: 1.6
       laneCount: 3
       generatorType: RANDOM
-      lengthInCubes: 1500
-      speedInCubesPerSecond: 75
+      lengthInCubes: 1300
+      speedInCubesPerSecond: 65
       durationInSeconds: 20
       incidents:
         - entityId: '9'
@@ -1139,8 +1139,8 @@ goKart:
       scoreMultiplier: 1.6
       laneCount: 3
       generatorType: RANDOM
-      lengthInCubes: 1500
-      speedInCubesPerSecond: 75
+      lengthInCubes: 1400
+      speedInCubesPerSecond: 70
       durationInSeconds: 20
       incidents:
         - entityId: '10'
@@ -1210,8 +1210,8 @@ goKart:
       scoreMultiplier: 1.8
       laneCount: 3
       generatorType: RANDOM
-      lengthInCubes: 1600
-      speedInCubesPerSecond: 80
+      lengthInCubes: 1500
+      speedInCubesPerSecond: 75
       durationInSeconds: 20
       incidents:
         - entityId: '10'
@@ -1281,8 +1281,8 @@ goKart:
       scoreMultiplier: 1.8
       laneCount: 3
       generatorType: RANDOM
-      lengthInCubes: 1800
-      speedInCubesPerSecond: 90
+      lengthInCubes: 1600
+      speedInCubesPerSecond: 80
       durationInSeconds: 20
       incidents:
         - entityId: '16'
@@ -1372,10 +1372,10 @@ goKart:
       scoreMultiplier: 2
       laneCount: 3
       generatorType: RANDOM
-      lengthInCubes: 1000
-      speedInCubesPerSecond: 100
-      durationInSeconds: 10
-      accelerationRate: 0.05
+      lengthInCubes: 1275
+      speedInCubesPerSecond: 85
+      durationInSeconds: 15
+      accelerationRate: 0.00
       incidents:
         - entityId: '11'
         - entityId: '11'
@@ -1587,10 +1587,12 @@ goKart:
       scoreMultiplier: 1.4
       laneCount: 3
       generatorType: FIXED
-      lengthInCubes: 650
-      speedInCubesPerSecond: 65
-      durationInSeconds: 10
+      lengthInCubes: 300
+      speedInCubesPerSecond: 60
+      durationInSeconds: 5
       incidents:
+        - entityId: '6'
+        - entityId: '6'
         - entityId: '6'
         - entityId: '6'
         - entityId: '6'
@@ -1604,10 +1606,11 @@ goKart:
       scoreMultiplier: 1.6
       laneCount: 3
       generatorType: FIXED
-      lengthInCubes: 750
-      speedInCubesPerSecond: 75
+      lengthInCubes: 650
+      speedInCubesPerSecond: 65
       durationInSeconds: 10
       incidents:
+        - entityId: '17'
         - entityId: '17'
         - entityId: '17'
         - entityId: '17'
@@ -1626,15 +1629,18 @@ goKart:
       scoreMultiplier: 1.8
       laneCount: 3
       generatorType: FIXED
-      lengthInCubes: 750
+      lengthInCubes: 375
       speedInCubesPerSecond: 75
-      durationInSeconds: 10
+      durationInSeconds: 5
       incidents:
         - entityId: '20'
         - entityId: '20'
         - entityId: '20'
         - entityId: '20'
         - entityId: '20'
+        - entityId: '20'
+        - entityId: '20'
+        - entityId: '30'
         - entityId: '29'
       description: Mayday
     - id: '26'
@@ -1643,8 +1649,8 @@ goKart:
       scoreMultiplier: 1.4
       laneCount: 3
       generatorType: RANDOM
-      lengthInCubes: 1100
-      speedInCubesPerSecond: 55
+      lengthInCubes: 1000
+      speedInCubesPerSecond: 50
       durationInSeconds: 20
       incidents:
         - entityId: '9'
@@ -1678,8 +1684,8 @@ goKart:
       scoreMultiplier: 1.6
       laneCount: 3
       generatorType: RANDOM
-      lengthInCubes: 1100
-      speedInCubesPerSecond: 55
+      lengthInCubes: 1000
+      speedInCubesPerSecond: 50
       durationInSeconds: 20
       incidents:
         - entityId: '13'
@@ -1713,8 +1719,8 @@ goKart:
       scoreMultiplier: 1.8
       laneCount: 3
       generatorType: RANDOM
-      lengthInCubes: 1100
-      speedInCubesPerSecond: 55
+      lengthInCubes: 1000
+      speedInCubesPerSecond: 50
       durationInSeconds: 20
       incidents:
         - entityId: '14'
@@ -1802,6 +1808,54 @@ goKart:
         - entityId: '33'
         - entityId: '33'
       description: Collectible Test
+    - id: '31'
+      name: Accelerating 60
+      type: NORMAL
+      scoreMultiplier: 1.6
+      laneCount: 3
+      generatorType: FIXED
+      lengthInCubes: 300
+      speedInCubesPerSecond: 60
+      durationInSeconds: 5
+      incidents:
+        - entityId: '5'
+        - entityId: '13'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '13'
+      description: incident for accelerating
+    - id: '32'
+      name: Accelerating 65
+      type: NORMAL
+      scoreMultiplier: 1.8
+      laneCount: 3
+      generatorType: FIXED
+      lengthInCubes: 325
+      speedInCubesPerSecond: 65
+      durationInSeconds: 5
+      incidents:
+        - entityId: '13'
+        - entityId: '13'
+        - entityId: '13'
+        - entityId: '14'
+        - entityId: '14'
+      description: incident for accelerating
+    - id: '33'
+      name: Accelerating 80
+      type: NORMAL
+      scoreMultiplier: 1.8
+      laneCount: 3
+      generatorType: FIXED
+      lengthInCubes: 350
+      speedInCubesPerSecond: 70
+      durationInSeconds: 5
+      incidents:
+        - entityId: '13'
+        - entityId: '13'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+      description: incident for accelerating
   games:
     - id: '6'
       name: Model_game_prod
@@ -1826,7 +1880,12 @@ goKart:
         - entityId: '2'
         - entityId: '10'
         - entityId: '23'
+        - entityId: '2'
+        - entityId: '10'
+        - entityId: '2'
+        - entityId: '23'
         - entityId: '26'
+        - entityId: '31'
         - entityId: '11'
         - entityId: '24'
         - entityId: '27'
@@ -1834,10 +1893,20 @@ goKart:
         - entityId: '12'
         - entityId: '25'
         - entityId: '28'
+        - entityId: '29'
+        - entityId: '32'
         - entityId: '13'
         - entityId: '28'
+        - entityId: '29'
+        - entityId: '32'
         - entityId: '14'
         - entityId: '28'
+        - entityId: '32'
+        - entityId: '29'
+        - entityId: '32'
+        - entityId: '14'
+        - entityId: '28'
+        - entityId: '33'
         - entityId: '15'
     - id: '7'
       name: Model_game_Tutorial_prod
