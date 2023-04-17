@@ -1,5 +1,5 @@
 #### Service Configs - Do NOT modify it unless you're RD and knowing what you are doing.
-gameServerHost: "https://17live-game.com" # The host of the game server.
+gameServerHost: "https://luxurydice-stag.as-neast3-a.nakamacloud.io" # The host of the game server.
 
 gamePoolUserID: "0f8b70fd-e64e-48e0-9757-61f154854f8c" # The user ID of the game pool user.
 
@@ -41,9 +41,10 @@ odds: # The odds of each item if a player win.
   large: 2 # 2 times to payout.
 
 tax: # The tax of each round - always transfer from game pool to revenue each round.
-  emergency: 0.025 # 2.5%
-  loaded: 0.05 # 5%
-  fair: 0.05 # 5%
+#3/13/2023 set tax to 6%
+  emergency: 0.000 # 0%
+  loaded: 0.06 # 6%
+  fair: 0.06 # 6%
 
 safeline: 4000000
 
@@ -55,7 +56,7 @@ loadedgate: 10000
 # Notice:
 #  - The barrage type is defined in the barrage.yaml.
 compensation:
-  enabled: false # Enable the compensation system.
+  enabled: true # Enable the compensation system.
   items: # Calculate the compensation items by the settings below and the money player lose.
     - pointThreshold: 100
       barrageType: 6

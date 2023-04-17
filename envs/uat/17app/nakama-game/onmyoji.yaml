@@ -19,9 +19,12 @@ overflow:
 #  - The `safeline` and `loadedgate` fields affect the pool level. See the [mechanism](https://docs.google.com/presentation/d/1KV2bWTbb4_79rv82ldeLPcGRR3Ou4t-m-rn8eO4rubQ/edit#slide=id.g13baac2268b_0_14) for more details.
 probabilityTable: # Basic probability of each index.
   # index 0
-  - kamileft: 3333
-    kamimid: 3333
-    kamiright: 3334
+  - kamileft: 8950
+    kamimid: 1000
+    kamiright: 50
+#   - kamileft: 3333
+#     kamimid: 3333
+#     kamiright: 3334
 
 odds: # The odds of each item if a player win.
   kamileft: 2.9 # 2.9 times to payout.
@@ -29,9 +32,10 @@ odds: # The odds of each item if a player win.
   kamiright: 2.9 # 2.9 times to payout.
 
 tax: # The tax of each round - always transfer from game pool to revenue each round.
-  emergency: 0.025 # 2.5%
-  loaded: 0.05 # 5%
-  fair: 0.05 # 5%
+#3/13/2023 set tax to 6%
+  emergency: 0.000 # 0%
+  loaded: 0.06 # 6%
+  fair: 0.06 # 6%
 
 safeline: 12000000
 

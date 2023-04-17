@@ -7,7 +7,50 @@ regionPromotion:
       startTime: "2022-06-02 17:00:00 (GMT+0800)"
       endTime: "2022-12-25 23:59:59 (GMT+0800)"
     msgI18nKey: "Test_for_shortcut_game"
+    actionTarget: "onmyoji"
+    versionControl:
+      enable: true
+      ios: "3.190.0"
+      android: "2.106.0.0"
+  US:
+    enable: true
+    enableTimeRange:
+      startTime: "2022-06-02 17:00:00 (GMT+0800)"
+      endTime: "2022-12-25 23:59:59 (GMT+0800)"
+    msgI18nKey: "Test_for_shortcut_game"
+    versionControl:
+      enable: true
+      ios: "3.190.0"
+      android: "2.106.0.0"
+  JP:
+    enable: true
+    enableTimeRange:
+      startTime: "2022-06-02 17:00:00 (GMT+0800)"
+      endTime: "2022-12-25 23:59:59 (GMT+0800)"
+    msgI18nKey: "Test_for_shortcut_game"
+    actionTarget: "onmyoji"
+    versionControl:
+      enable: true
+      ios: "3.190.0"
+      android: "2.106.0.0"
+  MY:
+    enable: true
+    enableTimeRange:
+      startTime: "2022-06-02 17:00:00 (GMT+0800)"
+      endTime: "2022-12-30 23:59:59 (GMT+0800)"
+    msgI18nKey: "Test_for_shortcut_game"
     actionTarget: "fruitfarm"
+    versionControl:
+      enable: true
+      ios: "5.190.0"
+      android: "5.106.0.0"
+  IN:
+    enable: true
+    enableTimeRange:
+      startTime: "2022-06-02 17:00:00 (GMT+0800)"
+      endTime: "2023-12-25 23:59:59 (GMT+0800)"
+    msgI18nKey: "Test_for_shortcut_game"
+    actionTarget: "iceandfire"
     versionControl:
       enable: true
       ios: "3.190.0"
@@ -18,7 +61,7 @@ games:
     enable: true
     gameID: "fruitfarm"
     icon: "https://cdn.17app.co/03a8b2b2-dbb3-4399-ac98-5997ae33a4da.png"
-    url: "https://17live-game-sta/fruitfarm/"
+    url: "https://17live-game-uat.17app.co/fruitfarm/"
     webViewBgColor: "#ffecba"
     nameI18nkey: "ff_name_key"
     descI18nkey: "ff_desc_key"
@@ -27,20 +70,302 @@ games:
       triggerPoint: 1000
       giftInfo:
         regular:
-          - id: 2003_rcm_mario_s
-          - id: 2008_rcm_sonic_s
+          - id: 2008_us_giftpack_01
+          - id: 2212_tipping_ff_1
         special:
           blueberry:
-            id: poll_option_a_199
+            id: 2212_tipping_ld_1
           pineapple:
-            id: gift_texture_bomb_face
+            id: 2212_tipping_ld_2
           strawberry:
-            id: poll_option_b_199
+            id: 2212_tipping_ld_3
     versionControl:
+      enable: true
+      ios: "3.126.0"
+      android: "2.41.0"
+  # fruitfarm2:
+  #  enable: true
+  #  gameID: "fruitfarm"
+  #  icon: "https://cdn.17app.co/e8fb3b26-ea41-4f7a-aea4-e746af204575.png"
+  #  url: "https://17live-game-uat.17app.co/fruitfarm/"
+  #  webViewBgColor: "#ffecba"
+  #  nameI18nkey: "ff_name_key"
+  #  descI18nkey: "ff_desc_key"
+  #  tippingGift:
+  #    enable: true
+  #    triggerPoint: 1000
+  #    giftInfo:
+  #      regular:
+  #        - id: 2008_us_giftpack_01
+  #       - id: 2212_tipping_ff_1
+  #      special:
+  #        blueberry:
+  #          id: 2212_tipping_ld_1
+  #        pineapple:
+  #          id: 2212_tipping_ld_2
+  #        strawberry:
+  #          id: 2212_tipping_ld_3
+  #  versionControl:
+  #    enable: true
+  #    ios: "3.126.0"
+  #    android: "2.41.0"
+
+
+  luxurydice:
+    enable: true
+    gameID: "luxurydice"
+    icon: "https://cdn.17app.co/7b9e8ada-8a55-4b90-8cb0-2dba6d4f9f82.png"
+    url: "https://17live-game-uat.17app.co/luxurydice/"
+    webViewBgColor: "#f14b9e"
+    nameI18nkey: "ld_name_key"
+    descI18nkey: "ld_desc_key"
+    tippingGift:
+      enable: true
+      triggerPoint: 1000
+      giftInfo:
+        regular:
+          - id: 2212_tipping_ld_1
+          - id: 2212_tipping_ld_2
+        special:
+          small:
+            id: 2212_tipping_ld_3
+          leopard:
+            id: 2212_tipping_ld_3
+          large:
+            id: 2212_tipping_ld_3
+# 測試是否可以跳相對應贏的禮物
+#         regular:
+#           - id: 2008_us_giftpack_01
+#           - id: 2212_tipping_ff_1
+#         special:
+#           small:
+#             id: 2212_tipping_ld_1
+#           leopard:
+#             id: 2212_tipping_ld_2
+#           large:
+#             id: 2212_tipping_ld_3
+    versionControl:
+      enable: true
+      ios: "3.126.0"
+      android: "2.41.0"
+  onmyoji3rd:
+    enable: false
+    gameID: "onmyoji"
+    icon: "http://cdn.17app.co/14da9b30-6cc9-4011-a8a8-5520c6f382a2.png"
+#     icon: "https://cdn.17app.co/dadbfe01-8980-40cc-bce2-b17f17b066f2.png" #original OMJ icon
+    url: "https://17live-game-uat.17app.co/onmyoji_3rd/"
+    webViewBgColor: "#192B40"
+    nameI18nkey: "Omj_name_key"
+    descI18nkey: "omj_desc_key"
+    tippingGift:
       enable: false
+      triggerPoint: 1000
+      giftInfo:
+        regular:
+          - id: 2008_us_giftpack_01
+          - id: 2212_tipping_ff_1
+        special:
+          kamileft:
+            id: 2212_tipping_ld_1
+          kamimid:
+            id: 2212_tipping_ld_2
+          kamiright:
+            id: 2212_tipping_ld_3
+    versionControl:
+      enable: true
+      ios: "3.209.0"
+      android: "2.124.0"
+  onmyoji:
+    enable: true
+    gameID: "onmyoji"
+#     icon: "http://cdn.17app.co/5251402d-09fd-49ba-a761-ff921590294b.png" #test icon
+    icon: "https://cdn.17app.co/dadbfe01-8980-40cc-bce2-b17f17b066f2.png" #original OMJ icon
+    url: "https://17live-game-uat.17app.co/onmyoji/"
+    webViewBgColor: "#192B40"
+    nameI18nkey: "Omj_name_key"
+    descI18nkey: "omj_desc_key"
+#     nameI18nkey: "exclusive_barrage_test"
+#     descI18nkey: "exclusive_barrage_test"
+    tippingGift:
+      enable: true
+      triggerPoint: 100
+      giftInfo:
+        regular:
+          - id: 2212_tipping_ld_1
+          - id: 2212_tipping_ld_2
+        special:
+          kamileft:
+            id: 2301_po_onmyoji_fox
+          kamimid:
+            id: 2301_po_onmyoji_en
+          kamiright:
+            id: 2301_po_onmyoji_hannya
+    versionControl:
+      enable: true
+      ios: "3.209.0"
+      android: "2.124.0"
+  iceandfire:
+    enable: true
+    gameID: "iceandfire"
+    icon: "https://cdn.17app.co/55b34a8b-b5e3-499d-82ff-e6dd875954f3.png"
+    url: "https://17live-game-uat.17app.co/iceandfire/"
+    webViewBgColor: "#231815"
+    nameI18nkey: "icefire_name_key"
+    descI18nkey: "icefire_desc_key"
+    tippingGift:
+      enable: true
+      triggerPoint: 1000
+      giftInfo:
+        regular:
+          - id: 2301_tipping_if_1
+          - id: 2301_tipping_if_2
+        special:
+          commoner:
+            id: 2301_tipping_if_5
+          king:
+            id: 2301_tipping_if_3
+          noble:
+            id: 2301_tipping_if_4
+    versionControl:
+      enable: true
+      ios: "3.209.0"
+      android: "2.124.0"
+  onmyojiAndy:
+    enable: true
+    gameID: "onmyojiAndy"
+    icon: "https://cdn.17app.co/a5f96f2f-6a0b-4668-b4d4-6549f0ac63b4.png"
+    url: "https://17live-game-uat.17app.co/onmyoji_Andy/"
+    webViewBgColor: "#231815"
+    nameI18nkey: "ld_name_key"
+    descI18nkey: "ld_name_key"
+    tippingGift:
+      enable: true
+      triggerPoint: 100
+      giftInfo:
+        regular:
+          - id: 2212_tipping_ld_1
+          - id: 2212_tipping_ld_2
+        special:
+          kamileft:
+            id: 2301_po_onmyoji_fox
+          kamimid:
+            id: 2301_po_onmyoji_en
+          kamiright:
+            id: 2301_po_onmyoji_hannya
+    versionControl:
+      enable: true
+      ios: "3.209.0"
+      android: "2.124.0"
+  luxurydiceDavid:
+    enable: true
+    gameID: "luxurydiceDavid"
+    icon: "https://cdn.17app.co/c15ee2c0-4f04-443f-8355-325050324920.png"
+    url: "https://17live-game-uat.17app.co/luxurydice_David/"
+    webViewBgColor: "#f14b9e"
+    nameI18nkey: "ld_name_key"
+    descI18nkey: "ld_desc_key"
+    tippingGift:
+      enable: true
+      triggerPoint: 1000
+      giftInfo:
+        regular:
+          - id: 2008_us_giftpack_01
+          - id: 2212_tipping_ff_1
+        special:
+          small:
+            id: 2212_tipping_ld_1
+          leopard:
+            id: 2212_tipping_ld_2
+          large:
+            id: 2212_tipping_ld_3
+    versionControl:
+      enable: true
+      ios: "3.126.0"
+      android: "2.41.0"
+  test1:
+    enable: true
+    gameID: "test1"
+    icon: "http://cdn.17app.co/1909dd6b-93d8-4a58-8ce4-085bd1da1fd3.png"
+    url: "https://17live-game-uat.17app.co/test1/"
+    webViewBgColor: "#f14b9e"
+    nameI18nkey: "ld_name_key"
+    descI18nkey: "ld_desc_key"
+    tippingGift:
+      enable: true
+      triggerPoint: 1000
+      giftInfo:
+        regular:
+          - id: 2008_us_giftpack_01
+          - id: 2212_tipping_ff_1
+        special:
+          small:
+            id: 2212_tipping_ld_1
+          leopard:
+            id: 2212_tipping_ld_2
+          large:
+            id: 2212_tipping_ld_3
+    versionControl:
+      enable: true
+      ios: "3.126.0"
+      android: "2.41.0"
+  test2:
+    enable: true
+    gameID: "test2"
+    icon: "http://cdn.17app.co/131fff98-d37a-44f8-acf1-0638f6de1c97.png"
+    url: "https://17live-game-uat.17app.co/test2/"
+    webViewBgColor: "#f14b9e"
+    nameI18nkey: "ld_name_key"
+    descI18nkey: "ld_desc_key"
+    versionControl:
+      enable: true
+      ios: "3.126.0"
+      android: "2.41.0"
+  test3:
+    enable: true
+    gameID: "test3"
+    icon: "http://cdn.17app.co/71d0482e-944b-48cb-a670-a1f414f195a6.png"
+    url: "https://17live-game-uat.17app.co/test3/"
+    webViewBgColor: "#f14b9e"
+    nameI18nkey: "ld_name_key"
+    descI18nkey: "ld_desc_key"
+    versionControl:
+      enable: true
       ios: "3.126.0"
       android: "2.41.0"
 
+
 regionGameOrder:
   TW:
+    - "onmyoji"
+    - "iceandfire"
+   # - "fruitfarm2"
     - "fruitfarm"
+    - "luxurydice"
+    - "onmyojiAndy"
+    - "luxurydiceDavid"
+    - "test1"
+    - "test2"
+    - "test3"
+#     - "onmyoji3rd"
+  US:
+    - "fruitfarm"
+    - "iceandfire"
+    - "luxurydice"
+    - "onmyoji"
+  JP:
+    - "iceandfire"
+    - "onmyoji"
+    - "fruitfarm"
+    - "luxurydice"
+  SG:
+    - "luxurydice"
+    - "fruitfarm"
+  MY:
+    - "iceandfire"
+    - "luxurydice"
+    - "fruitfarm"
+  IN:
+    - "iceandfire"
+    - "onmyoji"
+    - "fruitfarm"
+    - "luxurydice"
