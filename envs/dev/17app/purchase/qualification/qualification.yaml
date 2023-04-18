@@ -84,6 +84,38 @@ blacklist:
 merchandiseBlocker:
   enable: true
   rules:
+    # Block deprecated products (media17_points_330 series) in all regions
+    - startTime: "2023-04-18T13:00:00+08:00"
+      errorCode: 71004
+      desc: "deprecated IAP packages"
+      payMethods:
+        - 36   # MethodIOS
+        - 37   # MethodAndroid
+      merchandiseIDs:
+        - media17_points_330
+        - media17_points_1720
+        - media17_points_3540
+        - media17_points_8550
+        - media17_points_15420
+        - media17_points_35980
+
+    # Only block PH to purchase media17_points_230 series
+    - startTime: "2023-04-18T13:00:00+08:00"
+      errorCode: 71004
+      desc: "deprecated IAP packages"
+      payMethods:
+        - 36   # MethodIOS
+        - 37   # MethodAndroid
+      blockIPRegions:
+        - PH
+      merchandiseIDs:
+        - media17_points_230
+        - media17_points_1210
+        - media17_points_2500
+        - media17_points_6000
+        - media17_points_10800
+        - media17_points_25500
+
     # Only allow PH to purchase media17_points_265 series
     - startTime: "2023-03-21T13:00:00+08:00"
       errorCode: 71004
@@ -103,6 +135,7 @@ merchandiseBlocker:
     
     # Only allow JP to purchase media17_points_330 series
     - startTime: "2023-03-21T13:00:00+08:00"
+      endTime: "2023-04-18T13:00:00+08:00"
       errorCode: 71004
       desc: "deprecated IAP packages"
       payMethods:
@@ -120,6 +153,7 @@ merchandiseBlocker:
 
     # Only block JP, PH to purchase media17_points_230 series
     - startTime: "2023-03-21T13:00:00+08:00"
+      endTime: "2023-04-18T13:00:00+08:00"
       errorCode: 71004
       desc: "deprecated IAP packages"
       payMethods:
@@ -157,23 +191,5 @@ merchandiseBlocker:
         - media17_points_7970
         - media17_points_14700
 
-    - startTime: "2022-09-27T13:00:00+08:00"
-      endTime: "2023-03-21T13:00:00+08:00"
-      errorCode: 71004
-      desc: "deprecated IAP packages"
-      payMethods:
-        - 36   # MethodIOS
-        - 37   # MethodAndroid
-      blockIPRegions:
-        - TW
-      ipRegions:
-        - TW
-      merchandiseIDs:
-        - media17_points_330
-        - media17_points_1720
-        - media17_points_3540
-        - media17_points_8550
-        - media17_points_15420
-        - media17_points_35980
 
 enableArmyValidator: true
