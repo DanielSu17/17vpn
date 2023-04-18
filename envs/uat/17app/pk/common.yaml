@@ -2,6 +2,8 @@ enable: true
 senderMatchingSecond: 60 # 主動方隨機配對中等待的秒數, pk.match lock time
 receiverMatchingSecond: &receiverMatchingSecond 30 # 被動方回應的時間
 stateTimeoutSeconds: 700
+# FIXME: deprecated
+gameDurationSecond: 120 # ＰＫ遊戲時間
 defaultGameDurationSecond: 120 # 若沒有在 region config 內設定 PK 遊戲時長, 會使用這個秒數
 countdownSecond: 15 # 倒數時間閃爍icon
 rewardSecond: 15 # 遊戲結算完到最後關閉的時間
