@@ -1,2 +1,8 @@
 #### Service Configs - Do NOT modify it unless you're RD and knowing what you are doing.
 gamePoolUserID: "2c32ef57-c0b1-4f37-93be-f2cccef16151" # The user ID of the game pool user.
+
+#### Game Configs - PM can modify it according to the SPEC.
+## recognize the revenue from the game pool.
+overflow:
+  size: 30000000 # While the pool balance is over this value, the game will be overflowed - transfer difference from pool to the revenue.
+  sequence: 20 # Check overflow every N rounds.
