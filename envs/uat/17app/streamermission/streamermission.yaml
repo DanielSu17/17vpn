@@ -6,6 +6,9 @@
 # | TypeStreamerNewFollowers  | 19 | 直播時被追隨 X 次
 # | TypeStreamerGotSharings   | 20 | 直播時被分享 X 次
 # | TypeStreamerGotBabyCoins  | 21 | 直播時累積被送 X 寶寶幣
+# | ReceiveLeagueCustomEventGift | 39 | 參加自定聯盟活動，獲得 X 個禮物
+# | ReceiveLeagueCustomEventPoint | 40 | 參加自定聯盟活動，獲得 X 點積分
+
 
 enable: true
 whiteList:
@@ -1958,3 +1961,33 @@ missions: # mission list
     i18nDisableDescription: null
     goalValue: 40
     streamerDay: -1
+  - id: 970857e3-8249-4913-90de-0f2c3521c365
+    type: 39
+    i18nCTADescription:
+      key: baggage_mission_receive_league_event_gift_times_title
+    lifeCycle: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      type: 1
+      iconURL: https://cdn.17app.co/f9f25698-96b2-4ace-b033-f60875cf5b2d.png
+      achievementValue: 0
+      value: 20
+      i18nDescription: baggage_mission_receive_league_event_gift_times_desc
+      i18nDescriptionParams:
+        - value: "2048"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: "streamer_growth_snacks"
+          mapOption: 1
+        - value: "2048"
+      animationID: streamer_growth_daily_task_completion_reward_laborreward
+    i18nTitle: streamer_growth_dailytask_metrics_poke
+    i18nDescription: streamer_growth_streaming_viewer_risingstar_reminder2
+    i18nDescriptionParams: null
+    i18nDisableDescription: null
+    goalValue: 7
+    streamerDay: -1
+  
