@@ -1,5 +1,5 @@
 goKart:
-  version: 1.0.9
+  version: 1.1.2
   obstacles:
     - id: '0'
       condition: EMPTY
@@ -770,52 +770,6 @@ goKart:
         - entityId: '6'
         - entityId: '6'
       description: One unit at a time.
-    - id: '3'
-      name: Random Hard
-      type: NORMAL
-      scoreMultiplier: 1.5
-      laneCount: 3
-      generatorType: RANDOM
-      lengthInCubes: 350
-      speedInCubesPerSecond: 35
-      durationInSeconds: 10
-      accelerationRate: 0.05
-      incidents:
-        - entityId: '9'
-        - entityId: '9'
-        - entityId: '9'
-        - entityId: '9'
-        - entityId: '9'
-        - entityId: '9'
-        - entityId: '10'
-        - entityId: '10'
-        - entityId: '10'
-        - entityId: '10'
-        - entityId: '10'
-        - entityId: '10'
-      description: 12 random hard obstacles.
-    - id: '4'
-      name: Endless
-      type: INFINITE
-      scoreMultiplier: 2
-      laneCount: 3
-      generatorType: RANDOM
-      lengthInCubes: 400
-      speedInCubesPerSecond: 40
-      durationInSeconds: 10
-      accelerationRate: 0.05
-      incidents:
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-      description: Endless section with all obstacles.
     - id: '5'
       name: QA_Mid_empty
       type: INFINITE
@@ -906,7 +860,6 @@ goKart:
         - entityId: '15'
         - entityId: '15'
         - entityId: '15'
-        - entityId: '15'
         - entityId: '9'
         - entityId: '9'
         - entityId: '9'
@@ -917,8 +870,6 @@ goKart:
         - entityId: '13'
         - entityId: '13'
         - entityId: '13'
-        - entityId: '13'
-        - entityId: '13'
         - entityId: '15'
         - entityId: '15'
         - entityId: '15'
@@ -929,7 +880,6 @@ goKart:
         - entityId: '15'
         - entityId: '15'
         - entityId: '15'
-        - entityId: '9'
         - entityId: '9'
         - entityId: '9'
         - entityId: '9'
@@ -958,11 +908,6 @@ goKart:
         - entityId: '9'
         - entityId: '9'
         - entityId: '9'
-        - entityId: '9'
-        - entityId: '9'
-        - entityId: '13'
-        - entityId: '13'
-        - entityId: '13'
         - entityId: '13'
         - entityId: '13'
         - entityId: '13'
@@ -984,7 +929,6 @@ goKart:
         - entityId: '9'
         - entityId: '9'
         - entityId: '9'
-        - entityId: '13'
         - entityId: '13'
         - entityId: '13'
         - entityId: '13'
@@ -1034,13 +978,6 @@ goKart:
         - entityId: '9'
         - entityId: '9'
         - entityId: '9'
-        - entityId: '9'
-        - entityId: '9'
-        - entityId: '13'
-        - entityId: '13'
-        - entityId: '13'
-        - entityId: '13'
-        - entityId: '13'
         - entityId: '13'
         - entityId: '13'
         - entityId: '13'
@@ -1063,7 +1000,7 @@ goKart:
         - entityId: '9'
       description: Markov 40-50
     - id: '11'
-      name: Model_lv.6_hard
+      name: Model_lv.6_hard-
       type: NORMAL
       scoreMultiplier: 1.6
       laneCount: 3
@@ -1099,13 +1036,6 @@ goKart:
         - entityId: '14'
         - entityId: '14'
         - entityId: '14'
-        - entityId: '14'
-        - entityId: '14'
-        - entityId: '9'
-        - entityId: '9'
-        - entityId: '9'
-        - entityId: '9'
-        - entityId: '9'
         - entityId: '9'
         - entityId: '9'
         - entityId: '9'
@@ -1134,7 +1064,7 @@ goKart:
         - entityId: '9'
       description: Markov 50-60
     - id: '12'
-      name: Model_lv.7_medium
+      name: Model_lv.7_Hard
       type: NORMAL
       scoreMultiplier: 1.6
       laneCount: 3
@@ -1170,13 +1100,6 @@ goKart:
         - entityId: '14'
         - entityId: '14'
         - entityId: '14'
-        - entityId: '14'
-        - entityId: '14'
-        - entityId: '14'
-        - entityId: '10'
-        - entityId: '10'
-        - entityId: '10'
-        - entityId: '10'
         - entityId: '10'
         - entityId: '10'
         - entityId: '10'
@@ -1241,12 +1164,6 @@ goKart:
         - entityId: '14'
         - entityId: '14'
         - entityId: '14'
-        - entityId: '14'
-        - entityId: '14'
-        - entityId: '14'
-        - entityId: '10'
-        - entityId: '10'
-        - entityId: '10'
         - entityId: '10'
         - entityId: '10'
         - entityId: '10'
@@ -1285,26 +1202,6 @@ goKart:
       speedInCubesPerSecond: 80
       durationInSeconds: 20
       incidents:
-        - entityId: '16'
-        - entityId: '16'
-        - entityId: '16'
-        - entityId: '16'
-        - entityId: '16'
-        - entityId: '16'
-        - entityId: '16'
-        - entityId: '16'
-        - entityId: '16'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
         - entityId: '10'
         - entityId: '10'
         - entityId: '10'
@@ -1325,26 +1222,6 @@ goKart:
         - entityId: '10'
         - entityId: '10'
         - entityId: '10'
-        - entityId: '16'
-        - entityId: '16'
-        - entityId: '16'
-        - entityId: '16'
-        - entityId: '16'
-        - entityId: '16'
-        - entityId: '16'
-        - entityId: '16'
-        - entityId: '16'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
         - entityId: '10'
         - entityId: '10'
         - entityId: '10'
@@ -1358,6 +1235,39 @@ goKart:
         - entityId: '10'
         - entityId: '10'
         - entityId: '10'
+        - entityId: '10'
+        - entityId: '10'
+        - entityId: '10'
+        - entityId: '10'
+        - entityId: '10'
+        - entityId: '10'
+        - entityId: '10'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
+        - entityId: '14'
         - entityId: '10'
         - entityId: '10'
         - entityId: '10'
@@ -1375,14 +1285,8 @@ goKart:
       lengthInCubes: 1275
       speedInCubesPerSecond: 85
       durationInSeconds: 15
-      accelerationRate: 0.00
+      accelerationRate: 0
       incidents:
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '11'
-        - entityId: '14'
         - entityId: '14'
         - entityId: '14'
         - entityId: '14'
@@ -1415,6 +1319,13 @@ goKart:
         - entityId: '9'
         - entityId: '9'
         - entityId: '9'
+        - entityId: '10'
+        - entityId: '10'
+        - entityId: '10'
+        - entityId: '10'
+        - entityId: '10'
+        - entityId: '16'
+        - entityId: '17'
       description: Markov 90-100
     - id: '16'
       name: QA_Section_1
@@ -1649,14 +1560,10 @@ goKart:
       scoreMultiplier: 1.4
       laneCount: 3
       generatorType: RANDOM
-      lengthInCubes: 1000
+      lengthInCubes: 750
       speedInCubesPerSecond: 50
-      durationInSeconds: 20
+      durationInSeconds: 15
       incidents:
-        - entityId: '9'
-        - entityId: '13'
-        - entityId: '9'
-        - entityId: '13'
         - entityId: '9'
         - entityId: '13'
         - entityId: '9'
@@ -1684,9 +1591,9 @@ goKart:
       scoreMultiplier: 1.6
       laneCount: 3
       generatorType: RANDOM
-      lengthInCubes: 1000
+      lengthInCubes: 750
       speedInCubesPerSecond: 50
-      durationInSeconds: 20
+      durationInSeconds: 15
       incidents:
         - entityId: '13'
         - entityId: '9'
@@ -1702,10 +1609,6 @@ goKart:
         - entityId: '13'
         - entityId: '13'
         - entityId: '9'
-        - entityId: '9'
-        - entityId: '13'
-        - entityId: '9'
-        - entityId: '13'
         - entityId: '9'
         - entityId: '13'
         - entityId: '9'
@@ -1719,14 +1622,10 @@ goKart:
       scoreMultiplier: 1.8
       laneCount: 3
       generatorType: RANDOM
-      lengthInCubes: 1000
+      lengthInCubes: 750
       speedInCubesPerSecond: 50
-      durationInSeconds: 20
+      durationInSeconds: 15
       incidents:
-        - entityId: '14'
-        - entityId: '15'
-        - entityId: '14'
-        - entityId: '15'
         - entityId: '14'
         - entityId: '15'
         - entityId: '14'
@@ -1872,14 +1771,11 @@ goKart:
       shieldMax: 99
       sections:
         - entityId: '6'
-        - entityId: '21'
         - entityId: '7'
-        - entityId: '22'
         - entityId: '8'
         - entityId: '9'
         - entityId: '2'
         - entityId: '10'
-        - entityId: '23'
         - entityId: '2'
         - entityId: '10'
         - entityId: '2'
@@ -1887,14 +1783,14 @@ goKart:
         - entityId: '26'
         - entityId: '31'
         - entityId: '11'
-        - entityId: '24'
         - entityId: '27'
         - entityId: '29'
         - entityId: '12'
-        - entityId: '25'
         - entityId: '28'
         - entityId: '29'
+        - entityId: '12'
         - entityId: '32'
+        - entityId: '12'
         - entityId: '13'
         - entityId: '28'
         - entityId: '29'
@@ -1924,48 +1820,35 @@ goKart:
       sections:
         - entityId: '0'
         - entityId: '6'
-        - entityId: '21'
         - entityId: '7'
-        - entityId: '22'
         - entityId: '8'
         - entityId: '9'
         - entityId: '2'
         - entityId: '10'
+        - entityId: '2'
+        - entityId: '10'
+        - entityId: '2'
         - entityId: '23'
+        - entityId: '26'
+        - entityId: '31'
         - entityId: '11'
-        - entityId: '24'
+        - entityId: '27'
+        - entityId: '29'
         - entityId: '12'
-        - entityId: '25'
+        - entityId: '28'
+        - entityId: '29'
+        - entityId: '32'
+        - entityId: '12'
         - entityId: '13'
+        - entityId: '28'
+        - entityId: '29'
+        - entityId: '32'
         - entityId: '14'
+        - entityId: '28'
+        - entityId: '32'
+        - entityId: '29'
+        - entityId: '32'
+        - entityId: '14'
+        - entityId: '28'
+        - entityId: '33'
         - entityId: '15'
-    - id: '8'
-      name: QA_Test_0328
-      description: For QA 0328
-      debug: false
-      type: NORMAL
-      angleStart: 0
-      angleMax: 99
-      hpStart: 6
-      hpMax: 6
-      shieldStart: 0
-      shieldMax: 99
-      sections:
-        - entityId: '16'
-        - entityId: '17'
-        - entityId: '18'
-        - entityId: '19'
-        - entityId: '20'
-    - id: '9'
-      name: collectiable_test
-      description: collectiable_test
-      debug: false
-      type: NORMAL
-      angleStart: 0
-      angleMax: 99
-      hpStart: 6
-      hpMax: 6
-      shieldStart: 0
-      shieldMax: 99
-      sections:
-        - entityId: '30'
