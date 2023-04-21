@@ -10,25 +10,12 @@
 # | IAP_Buy_Point | 8 |
 # | View_Stream_X_Seconds | 9 |
 # | IAP_X_Points | 10 |
+# | Share_Twitter | 11 |
 # | TypePhoneBinding | 12 |
 # | View_Stream_X_Different_Days | 13 |
 # | CreateAvatar | 16 |
 # | CommentInNewestLivestream | 17 |
 # | CheckIn | 24 |
-# ============
-# Viewer share
-# | Share_Twitter | 11 |
-# | ShareInstagramStory | 29 |
-# | ShareInstagramDirect | 30 |
-# | ShareFacebookStory | 31 |
-# | ShareFacebookNewsFeed | 32 |
-# | ShareMessenger | 33 |
-# | ShareWhatsApp | 34 |
-# | ShareLine | 35 |
-# | Share17 | 36 |
-# ============
-# | SendLeagueCustomEventGift | 37 |
-# | SendLeagueCustomEventPoint | 38 |
 
 # | category | Value |
 # | --- | --- |
@@ -86,36 +73,6 @@ missions:
   - web
   requirePhoneBinding: true
   withReminder: true
-- ID: aece56a7-a74c-4fa5-807f-4a005b916cd4
-  type: 8
-  category: 0
-  lifeCycle: 1
-  targetAudience: 2
-  levelRange:
-    min: 1
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2304_us_welcomeoffer_firsthalf_1
-    amount: 1
-    expireTimeSecs: 86400
-  i18nTitle: usaprilwelcome_offer
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_IAP_reward_jp_npu_desc
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2023-04-01 18:00:00 (GMT-0700)
-    endTime: 2023-04-15 21:00:00 (GMT-0700)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  - web
-  requirePhoneBinding: false
-  withReminder: true
 - ID: b7dd2c9f-c89b-4453-9d25-05f4dff07249
   type: 16
   category: 0
@@ -145,6 +102,122 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
+- ID: a9a9bd01-85dd-4937-980b-e14931a5743e
+  type: 9
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2304_us_southern_a_bp
+    amount: 5
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_watch_streams_time_in_total_reward_title
+  i18nTitleParams:
+  - value: "30"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_watch_streams_time_in_total_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 1800
+  enableTimeRange:
+  - startTime: 2023-04-23 01:00:00 (GMT+0800)
+    endTime: 2023-05-02 00:59:59  (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: true
+- ID: d7f5ddd0-5d9b-46df-ba17-0d32294b8a71
+  type: 5
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2304_us_southern_a_bp
+    amount: 5
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_leave_comment_reward_title2
+  i18nTitleParams:
+  - value: "10"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_leave_comment_reward_desc
+  i18nDescriptionParams: []
+  goalValue: 10
+  enableTimeRange:
+  - startTime: 2023-04-23 01:00:00 (GMT+0800)
+    endTime: 2023-05-02 00:59:59  (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: true
+- ID: ef5318c8-0402-45b5-9478-32e1c7426eb1
+  type: 3
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2304_us_southern_a_bp
+    amount: 5
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_send_specific_gifts_reward_title
+  i18nTitleParams:
+  - value: "2"
+    mapOption: 0
+    fontAttribute: null
+  - value: 2304_us_southern_xs
+    mapOption: 2
+    fontAttribute: null
+  - value: 2304_us_southern_s
+    mapOption: 2
+    fontAttribute: null
+  - value: 2304_us_southern_m
+    mapOption: 2
+    fontAttribute: null
+  - value: 2304_us_southern_l
+    mapOption: 2
+    fontAttribute: null
+  - value: 2304_us_southern_b_bag
+    mapOption: 2
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_opt_send_specific_gifts_reward_desc_phone
+  i18nDescriptionParams: []
+  goalValue: 2
+  enableTimeRange:
+  - startTime: 2023-04-23 01:00:00 (GMT+0800)
+    endTime: 2023-05-02 00:59:59  (GMT+0800)
+  refIDs:
+  - 2304_us_southern_xs
+  - 2304_us_southern_s
+  - 2304_us_southern_m
+  - 2304_us_southern_l
+  - 2304_us_southern_b_bag
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: true
 - ID: b2e0e26c-0371-4d7a-8e01-935a9b7d16b7
   type: 3
   category: 0
