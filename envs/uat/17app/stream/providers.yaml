@@ -459,10 +459,12 @@ message_providers_dynamic:
   - 12dc14d7-1296-433b-9fc3-73b5f2b19f93 # e2ebot_program1, for e2e test
   - 3a9966da-d6c0-4860-be06-c784d514cdad # michaelx4
   - 2fb6dd5b-1a73-4067-b164-0c4a7d28c930 # tzuying.sta1
-  - 97749857-d91a-40f5-b058-9130fbedd002 # darrentest1
+
 - name: WANSU_MESSAGE
   weight: 0
-  users: []
+  users:
+  - 97749857-d91a-40f5-b058-9130fbedd002 # darrentest1
+  
 - name: ABLY_MESSAGE
   weight: 0
   users:
