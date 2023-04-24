@@ -1,4 +1,4 @@
-inviterRewardLimitBBC: 2000 # limit of inviter rewards
+inviterRewardLimitBBC: 300000 # limit of inviter rewards
 
 # mission type are defined as following (same as newbie rewards in dailyquest.yaml)
 # - 1: DAILY_CHECK_IN
@@ -23,73 +23,35 @@ inviterRewardLimitBBC: 2000 # limit of inviter rewards
 #     withReminder: false
 
 quests:
+#for release campaign
   - version: 1 # version of this referral rewards setting
-    startTime: 2023-03-06 00:00:00 (GMT+0800)  # startTime of this version applied
-    inviterRewardBBC: 100 # reward for inviter when invitee finish all missions (in BBC)
+    startTime: 2023-04-26 00:00:00 (GMT+0900)  # startTime of this version applied
+    inviterRewardBBC: 3000 # reward for inviter when invitee finish all missions (in BBC)
     missionDay: 7 # days that missions appear
     missions:
-      - type: 2
-        point: 0
+      - type: 3 # follow streamer
+        point: 500
         exp: 0
-        required: 1
-        voucherReward:
-          type: 3
-          itemID: 2204_jp_newlivd1_bp
-          amount: 1
-          intervalSec: 604800
-      - type: 12
-        point: 0
-        exp: 0
-        required: 5
-        voucherReward:
-          type: 3
-          itemID: 2112_jp_breakwall_bp
-          amount: 1
-          intervalSec: 604800
-      - type: 9
-        point: 0
-        exp: 0
-        required: 1
-        voucherReward:
-          type: 3
-          itemID: 2112_jp_breakwall_bp
-          amount: 1
-          intervalSec: 604800
-      - type: 10
-        point: 0
-        exp: 0
-        required: 1
-        voucherReward:
-          type: 3
-          itemID: 2204_jp_newlivd1_bp
-          amount: 1
-          intervalSec: 604800
-      - type: 3
-        point: 0
-        exp: 0
-        required: 5
-        voucherReward:
-          type: 3
-          itemID: 2112_jp_breakwall_bp
-          amount: 1
-          intervalSec: 604800
-      - type: 14
-        point: 0
+        required: 3
+        withReminder: true
+      - type: 14 # watch 2 days in one week
+        point: 500
         exp: 0
         required: 2
         withReminder: true
-        voucherReward:
-          type: 3
-          itemID: 2112_jp_breakwall_bp
-          amount: 1
-          intervalSec: 604800
-      - type: 1
-        point: 0
+#regular referral 
+  - version: 2 # version of this referral rewards setting
+    startTime: 2023-06-01 00:00:00 (GMT+0900)  # startTime of this version applied
+    inviterRewardBBC: 1500 # reward for inviter when invitee finish all missions (in BBC)
+    missionDay: 7 # days that missions appear
+    missions:
+      - type: 3 # follow streamer
+        point: 500
+        exp: 0
+        required: 3
+        withReminder: true
+      - type: 14 # watch 2 days in one week
+        point: 500
         exp: 0
         required: 2
         withReminder: true
-        voucherReward:
-          type: 3
-          itemID: 2112_jp_breakwall_bp
-          amount: 1
-          intervalSec: 604800
