@@ -202,6 +202,9 @@ regionConfigs:
     sellingChannelGroups:
       1: # Super VIP
         - 14 # SellingChannelVipDept (localVIPs)
+      3: # 17Live
+        - 33 # SellingChannelWebTw17LiveECPay
+        - 61 # SellingChannelWebSea17LiveNewebpay
     payMethods:
       - 14
     currencies:
@@ -240,7 +243,7 @@ regionConfigs:
     localCurrency: HKD
     upperBoundOfDeltaRatioForExchangeRate: 0.02
     lowerBoundOfDeltaRatioForExchangeRate: 0.02
-  
+
   IN:
     sellingChannelGroups:
       1: # Super VIP
@@ -269,6 +272,19 @@ regionConfigs:
       - PHP
       - TWD
     localCurrency: PHP
+    upperBoundOfDeltaRatioForExchangeRate: 0.02
+    lowerBoundOfDeltaRatioForExchangeRate: 0.02
+  
+  MM:
+    sellingChannelGroups:
+      3: # 17Live
+        - 33 # SellingChannelWebTw17LiveECPay
+        - 61 # SellingChannelWebSea17LiveNewebpay
+    payMethods:
+      - 14
+    currencies:
+      - TWD
+    localCurrency: TWD
     upperBoundOfDeltaRatioForExchangeRate: 0.02
     lowerBoundOfDeltaRatioForExchangeRate: 0.02
 
@@ -303,6 +319,32 @@ regionConfigs:
       - SGD
       - TWD
     localCurrency: SGD
+    upperBoundOfDeltaRatioForExchangeRate: 0.02
+    lowerBoundOfDeltaRatioForExchangeRate: 0.02
+
+  TH:
+    sellingChannelGroups:
+      3: # 17Live
+        - 33 # SellingChannelWebTw17LiveECPay
+        - 61 # SellingChannelWebSea17LiveNewebpay
+    payMethods:
+      - 14
+    currencies:
+      - TWD
+    localCurrency: TWD
+    upperBoundOfDeltaRatioForExchangeRate: 0.02
+    lowerBoundOfDeltaRatioForExchangeRate: 0.02
+
+  VN:
+    sellingChannelGroups:
+      3: # 17Live
+        - 33 # SellingChannelWebTw17LiveECPay
+        - 61 # SellingChannelWebSea17LiveNewebpay
+    payMethods:
+      - 14
+    currencies:
+      - TWD
+    localCurrency: TWD
     upperBoundOfDeltaRatioForExchangeRate: 0.02
     lowerBoundOfDeltaRatioForExchangeRate: 0.02
 
