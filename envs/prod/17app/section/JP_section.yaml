@@ -51,15 +51,6 @@ sections:
  #   style: 2
  #   more: false
 
-  - id: Label # 運営おすすめ
-    labelID: 2204_jp_surge
-    name:
-      key: streamer_jp_label_surge
-    enable: true
-    dedup: true
-    minGrids: 0
-    style: 3
-    more: true
 
   - id: Label
     labelID: jp_V-LIVER
@@ -73,6 +64,16 @@ sections:
     category: normal
     orderModel: 2
 
+  - id: Suggestion # 猜你可能喜歡
+    name:
+      key: tab_hot_2019q4_follow_suggestion
+    enable: true
+    dedup: true
+    style: 6
+    minGrids: 5
+    more: true
+    orderModel: 2
+
   - id: Latest # 新人(和『最新』同邏輯)
     name:
       key: tab_hot_2019q4_newstreamer
@@ -83,15 +84,15 @@ sections:
     more: true
     orderModel: 2
 
-  - id: Suggestion # 猜你可能喜歡
+  - id: Label # 運営おすすめ
+    labelID: 2204_jp_surge
     name:
-      key: tab_hot_2019q4_follow_suggestion
+      key: streamer_jp_label_surge
     enable: true
     dedup: true
-    style: 6
-    minGrids: 5
+    minGrids: 0
+    style: 3
     more: true
-    orderModel: 2
 
   - id: NewestStreamer # D0 new streamer
     name:
