@@ -49,17 +49,18 @@ detail:
         - role: write
           env: prod
           approveFlowKey: mysql-DBA-advanced
-  github-repos:
+  github-user-repos:
     scopeRangeStart: 800
     role:
       read: 1
       write: 2
+      maintain: 3
     approve:
       default: basic
-  github-teams:
+  github-user-teams:
     scopeRangeStart: 810
     role:
-      member: 5
+      member: 1
     approve:
       default: basic
   github-team-repos:
@@ -67,6 +68,7 @@ detail:
     role:
       read: 1
       write: 2
+      maintain: 3
     approve:
       default: basic
 

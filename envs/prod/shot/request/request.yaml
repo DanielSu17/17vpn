@@ -56,11 +56,12 @@ request:
         name: Comment
         value: ~
         id: comment
-  github-repos:
+  github-user-repos:
     type: modal
     title: Request Github Repos
     submitText: Submit
     hasBotMail: false
+    hasOutsourcing: false
     closeText: Close
     blocks:
       - item: VALIDATE_TEXT_INPUT
@@ -71,17 +72,21 @@ request:
         id: repo
       - item: SINGLE_SELECT
         name: Repositories Permission
-        value: [ read, write ]
+        value:
+          - read
+          - write
+          - maintain
         id: repoPerm
       - item: TEXT_INPUT
         name: Comment
-        value: ~
+        value: null
         id: comment
-  github-teams:
+  github-user-teams:
     type: modal
     title: Request Github Teams
     submitText: Submit
     hasBotMail: false
+    hasOutsourcing: true
     closeText: Close
     blocks:
       - item: VALIDATE_TEXT_INPUT
@@ -92,30 +97,44 @@ request:
         id: team
       - item: SINGLE_SELECT
         name: Team Permission
-        value: [ member ]
+        value:
+          - member
         id: teamPerm
       - item: TEXT_INPUT
         name: Comment
-        value: ~
+        value: null
         id: comment
   github-team-repos:
     type: modal
     title: Request Github Team
     submitText: Submit
     hasBotMail: false
+    hasOutsourcing: false
     closeText: Close
     blocks:
       - item: VALIDATE_TEXT_INPUT
         name: Team
         id: team
+      - item: SINGLE_SELECT
+        name: Do you want to create a new team ?
+        value:
+          - yes
+          - no
+        description:
+          yes: create a new team
+          no: join an existing team
+        id: teamNew
       - item: VALIDATE_TEXT_INPUT
         name: Repositories
         id: repo
       - item: SINGLE_SELECT
         name: Repositories Permission
-        value: [ read, write ]
+        value:
+          - read
+          - write
+          - maintain
         id: repoPerm
       - item: TEXT_INPUT
         name: Comment
-        value: ~
+        value: null
         id: comment
