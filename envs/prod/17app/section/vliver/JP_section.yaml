@@ -1,12 +1,96 @@
 sections:
-  - id: Label
-    labelID: welcomenewfans
-    name: 
-      key: streamer_label_welcomenewfans_subtab
+  - id: TopBanner # Banner + super promote
+    name:
+      key: tab_hot_2019q4_topbanner
+    enable: true
+    style: 1
+    more: false
+  - id: Newbiequest
+    enable: true
+    style: 7
+    minGrids: 1
+    more: false
+
+  - id: Label #認証Vライバー：歌
+    labelID: 2304_jp_vliver_singer
+    name:
+      key: streamer_jp_label_vliver_singer
     enable: true
     dedup: true
     minGrids: 1
     style: 3
     more: true
     category: normal
-    orderModel: 1
+    orderModel: 2
+
+  - id: Label #認証Vライバー：雑談
+    labelID: 2304_jp_vliver_chatting
+    name:
+      key: streamer_jp_label_vliver_chatting
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label #認証Vライバー：ゲーム
+    labelID: 2304_jp_vliver_game
+    name:
+      key: streamer_jp_label_vliver_game
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Suggestion # 猜你可能喜歡
+    name:
+      key: tab_hot_2019q4_follow_suggestion
+    enable: true
+    dedup: true
+    style: 6
+    minGrids: 1
+    more: true
+    orderModel: 2
+
+  - id: PK
+    name:
+      key: tab_hot_2019q4_pk
+    enable: true
+    dedup: false
+    minGrids: 2 # 2個直播間一組PK，3組以上顯示
+    style: 3
+    more: true
+
+  - id: GroupCall # コラボ配信（GroupCall）
+    name:
+      key: group_stream_v3hotpage
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 9
+    more: true
+
+  - id: Label #バーチャル配信
+    labelID: 2304_jp_virtual
+    name:
+      key: streamer_jp_label_virtual
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: ArchiveVideo # 典藏影片  
+    name:
+      key: archives_homepage_title
+    enable: true
+    minGrids: 1
+    style: 11
+    more: true
