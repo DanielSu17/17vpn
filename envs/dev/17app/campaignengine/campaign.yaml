@@ -7,6 +7,7 @@ campaignOperationRegions:
   - JP
   - HK
   - US
+  - IN
 #  - MY
 #  - SG
 #  - PH
@@ -26,7 +27,8 @@ campaignTargetUserRegions:
   - VN
   - TH
   - ID
-  - MM 
+  - MM
+  - IN
   - Other
   - Unknown
 
@@ -42,16 +44,28 @@ regionNameMap:
   TH: Tailand
   ID: Indonesia
   MM: Myanmar
+  IN: India
   Other: Other
   Unknown: Unknown
 
+regionCurrencyMap:
+  TW: TWD
+  JP: JPY
+  HK: HKD
+  US: USD
+  IN: INR
+
+# default rate for all regions 
 bonusLimit: 0.04 # 4%
+regionBonusLimit:
+  IN: 0.5 # 50%
 
 vipRegionSellingChannelMap:
   TW: [19, 34, 46, 47, 48, 57, 58]
   JP: [9, 21, 22, 51, 52, 53]
   HK: [27]
   US: [24]
+  IN: [69]
 
 armyRegionSellingChannelMap:
   TW: [37, 62]
@@ -70,3 +84,5 @@ sellingChannelVipTypeMap:
     0: [27]
   US:                    # TODO define
     0: [24]
+  IN:
+    0: [69]
