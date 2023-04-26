@@ -1,0 +1,16 @@
+# mission type are defined as following 
+# - 1: Comment in live
+# - 2: Share live
+# ex:
+# missions
+#   - type: 1            # mission comment
+#     required: 3        # viewer needs to comment 3 times in the streamer's live
+#     reduceSeconds: 60  # laborreward countdown time will reduce 60 seconds after this mission completed
+
+missions:
+  - type: 1
+    required: 3 
+    reduceSeconds: 60
+  - type: 2
+    required: 1
+    reduceSeconds: 30
