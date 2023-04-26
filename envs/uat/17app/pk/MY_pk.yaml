@@ -87,28 +87,6 @@ playListV2:
       description:
         key: "pk_schedule_menu_suspended1"
 
-gameDuration:
-# match: second
-  random: 120
-  friend: 120
-  schedule: 60
-
-gameDurationOptions:
-  - gameDuration: 180
-    name: {key: pk_game_duration_3_min}
-  - gameDuration: 300
-    name: {key: pk_game_duration_5_min}
-  - gameDuration: 600
-    name: {key: pk_game_duration_10_min}
-  - gameDuration: 900
-    name: {key: pk_game_duration_15_min}
-  - gameDuration: 1800
-    name: {key: pk_game_duration_30_min}
-  - gameDuration: -1
-    name: {key: pk_game_duration_customize}
-    min: 180
-    max: 7200
-  
 ## for pk leaderboard
 pkHourLBLevel:
   min: 1
@@ -168,3 +146,33 @@ pkLBMinPoints:
     minPoint: 3000
 weeklyLBTopCount: 3
 showPKStarLB: true #是否於直播間顯示pk小時榜
+
+gameDuration:
+# match: second
+  random: 120
+  friend: 120
+  schedule: 60
+
+gameDurationOptions:
+  - gameDuration: 180
+    name: {key: pk_game_duration_3_min}
+  - gameDuration: 300
+    name: {key: pk_game_duration_5_min}
+  - gameDuration: 600
+    name: {key: pk_game_duration_10_min}
+  - gameDuration: 900
+    name: {key: pk_game_duration_15_min}
+  - gameDuration: 1800
+    name: {key: pk_game_duration_30_min}
+  - gameDuration: -1
+    name: {key: pk_game_duration_customize}
+    min: 180
+    max: 7200
+
+maxTopicNum: 3
+defaultTopics: []
+topicOptions:
+  - id: sing
+    name: {key: pk_topic_sing}
+  - id: chat
+    name: {key: pk_topic_chat}
