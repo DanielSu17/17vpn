@@ -1,4 +1,4 @@
-inviterRewardLimitBBC: 2000 # limit of inviter rewards
+inviterRewardLimitBBC: 15000 # limit of inviter rewards
 
 # mission type are defined as following (same as newbie rewards in dailyquest.yaml)
 # - 1: DAILY_CHECK_IN
@@ -83,3 +83,38 @@ quests:
         exp: 0
         required: 2
         withReminder: true
+  - version: 2 # version of this referral rewards setting
+    startTime: 2023-05-02 14:00:00 (GMT+0800)  # startTime of this version applied
+    inviterRewardBBC: 1500 # reward for inviter when invitee finish all missions (in BBC)
+    missionDay: 7 # days that missions appear
+    missions:
+      - type: 14 # watch lives 2 days in one week
+        point: 0
+        exp: 0
+        required: 2
+        withReminder: true
+        voucherReward:
+          type: 3
+          itemID: tw_newuser_mission_comment
+          amount: 5
+          intervalSec: 604800
+      - type: 11 # IAP 1 time
+        point: 0
+        exp: 0
+        required: 1
+        withReminder: true
+        voucherReward:
+          type: 3
+          itemID: tw_newuser_mission_gift
+          amount: 5
+          intervalSec: 604800
+      - type: 15 # phone binding
+        point: 0
+        exp: 0
+        required: 1
+        withReminder: true
+        voucherReward:
+          type: 3
+          itemID: tw_newuser_mission_gift
+          amount: 5
+          intervalSec: 604800
