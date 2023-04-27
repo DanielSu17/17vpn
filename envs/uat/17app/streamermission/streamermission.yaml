@@ -1968,7 +1968,7 @@ missions: # mission list
     lifeCycle: 0
     levelRange:
       min: 1
-      max: 999
+      max: 11
     reward:
       type: 5 # RewardType_ACHIEVEMENT
       iconURL: https://cdn.17app.co/b74c7553-62cb-4eb2-ad91-6f8ee1aa5e08.png
@@ -1992,39 +1992,37 @@ missions: # mission list
     i18nDisableDescription: null
     goalValue: 3
     streamerDay: -1
-  # - id: 970857e3-8249-4913-90de-0f2c3521c366
-  #   type: 39
-  #   i18nCTADescription:
-  #     key: streamer_growth_streaming_viewer_dailytask_go
-  #   lifeCycle: 0
-  #   levelRange:
-  #     min: 11
-  #     max: 34
-  #   reward:
-  #     type: 5 # RewardType_ACHIEVEMENT
-  #     iconURL: https://cdn.17app.co/b74c7553-62cb-4eb2-ad91-6f8ee1aa5e08.png
-  #     achievementValue: 1000
-  #     i18nDescription: streamer_growth_dailytask_rewards_achievementscore
-  #     i18nDescriptionParams:
-  #       - value: "1000"
-  #         needMap: false
-  #     i18nComment: streamer_mission_score_comment
-  #     i18nCommentParam:
-  #       - value: streamer_growth_achievementscore
-  #         mapOption: 1
-  #       - value: "1000"
-  #     animationID: streamer_growth_daily_task_completion_reward_achievement
-  #   i18nTitle: baggage_mission_receive_league_event_gift_times_title
-  #   i18nTitleParams:
-  #     - value: "5" # 單位為禮物數量，顯示到標題
-  #       needMap: false
-  #   i18nDescription: baggage_mission_receive_league_event_gift_times_desc
-  #   i18nDescriptionParams:
-  #     - value: "5"
-  #       needMap: false
-  #   i18nDisableDescription: null
-  #   goalValue: 5
-  #   streamerDay: -1
+  - id: 970857e3-8249-4913-90de-0f2c3521c366
+    type: 39
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_go
+    lifeCycle: 0
+    levelRange:
+      min: 11
+      max: 999
+    reward:
+      type: 5 # RewardType_ACHIEVEMENT
+      iconURL: https://cdn.17app.co/b74c7553-62cb-4eb2-ad91-6f8ee1aa5e08.png
+      achievementValue: 1000
+      i18nDescription: streamer_growth_dailytask_rewards_achievementscore
+      i18nDescriptionParams: null
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: streamer_growth_achievementscore
+          mapOption: 1
+        - value: "1000"
+      animationID: streamer_growth_daily_task_completion_reward_achievement
+    i18nTitle: baggage_mission_receive_league_event_gift_times_title
+    i18nTitleParams:
+      - value: "5" # 單位為禮物數量，顯示到標題
+        needMap: false
+    i18nDescription: baggage_mission_receive_league_event_gift_times_desc
+    i18nDescriptionParams:
+      - value: "5"
+        needMap: false
+    i18nDisableDescription: null
+    goalValue: 5
+    streamerDay: -1
   - id: 120857e3-8249-4913-90de-0f2c3521c400
     type: 40
     i18nCTADescription:
@@ -2039,9 +2037,7 @@ missions: # mission list
       achievementValue: 0
       value: 10
       i18nDescription: streamer_growth_dailytask_rewards_babycoins
-      i18nDescriptionParams:
-        - value: "10"
-          needMap: false
+      i18nDescriptionParams: null
       i18nComment: streamer_mission_score_comment
       i18nCommentParam:
         - value: "POINT"
@@ -2066,16 +2062,46 @@ missions: # mission list
     lifeCycle: 0
     levelRange:
       min: 11
-      max: 34
+      max: 999
     reward:
       type: 2 # RewardTypePoint
       iconURL: https://cdn.17app.co/62f34247-adfb-4fe5-a331-7dae43059824.png
       achievementValue: 0
       value: 20
       i18nDescription: streamer_growth_dailytask_rewards_babycoins
-      i18nDescriptionParams:
+      i18nDescriptionParams: null
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: "POINT"
+          mapOption: 1
         - value: "20"
-          needMap: false
+      animationID: streamer_growth_daily_task_completion_reward_point
+    i18nTitle: baggage_mission_receive_league_event_gift_points_title
+    i18nTitleParams:
+      - value: "2000"
+        needMap: false
+    i18nDescription: baggage_mission_receive_league_event_gift_points_desc
+    i18nDescriptionParams:
+      - value: "2000"
+        needMap: false
+    i18nDisableDescription: null
+    goalValue: 2000
+    streamerDay: -1
+  - id: 120857e4-8249-4913-90de-0f2c3521c999
+    type: 40
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_go
+    lifeCycle: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      type: 2 # RewardTypePoint
+      iconURL: http://cdn.17app.co/2e354e54-b9c8-4f94-9513-cee6beb6988b.png
+      achievementValue: 0
+      value: 20
+      i18nDescription: streamer_growth_dailytask_rewards_babycoins
+      i18nDescriptionParams: null
       i18nComment: streamer_mission_score_comment
       i18nCommentParam:
         - value: "POINT"
