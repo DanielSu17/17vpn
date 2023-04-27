@@ -40,6 +40,12 @@ streamer:
       decoStickerStyle: 493
 
 viewer:
+  # topLevelValueMultiplier defines the multifier of value at the top level snack.
+  # The value of top laborreward level will be value of normal Level * topLevelValueMultiplier.
+  # Currently only snackValues in incentive project apply this multiplier.
+  # The range of valid multipler is [1, 100]. Multiplier lower than 1 will be set to 10 by default,
+  # and larger than 100 will be set to 100.
+  topLevelValueMultiplier: 10
   levels:
     - level: 1
       rewardValue: 1
