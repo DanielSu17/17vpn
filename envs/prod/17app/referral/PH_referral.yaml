@@ -1,4 +1,4 @@
-inviterRewardLimitBBC: 2000 # limit of inviter rewards
+inviterRewardLimitBBC: 15000 # limit of inviter rewards
 
 # mission type are defined as following (same as newbie rewards in dailyquest.yaml)
 # - 1: DAILY_CHECK_IN
@@ -24,77 +24,37 @@ inviterRewardLimitBBC: 2000 # limit of inviter rewards
 
 quests:
   - version: 1 # version of this referral rewards setting
-    startTime: 2023-03-06 00:00:00 (GMT+0800)  # startTime of this version applied
-    inviterRewardBBC: 100 # reward for inviter when invitee finish all missions (in BBC)
+    startTime: 2023-05-02 09:00:00 (GMT+0800)  # startTime of this version applied
+    inviterRewardBBC: 800 # reward for inviter when invitee finish all missions (in BBC)
     missionDay: 7 # days that missions appear
     missions:
-      - type: 2
-        point: 0
-        exp: 0
-        required: 1
-        withReminder: true
-        voucherReward:
-          type: 3
-          itemID: tw_newuser_mission_watch
-          amount: 10
-          intervalSec: 604800
-      - type: 3
-        point: 0
-        exp: 0
-        required: 3
-        withReminder: true
-        voucherReward:
-          type: 3
-          itemID: tw_newuser_mission_follow
-          amount: 5
-          intervalSec: 604800
-      - type: 9
-        point: 0
-        exp: 0
-        required: 3
-        withReminder: true
-        voucherReward:
-          type: 3
-          itemID: tw_newuser_mission_comment
-          amount: 5
-          intervalSec: 604800
-      - type: 10
-        point: 0
-        exp: 0
-        required: 1
-        withReminder: true
-        voucherReward:
-          type: 3
-          itemID: tw_newuser_mission_gift
-          amount: 5
-          intervalSec: 604800
-      - type: 13
-        point: 0
-        exp: 0
-        required: 30
-        withReminder: true
-        voucherReward:
-          type: 3
-          itemID: bravo
-          amount: 50
-          intervalSec: 604800
-      - type: 1
+      - type: 14 # watch lives 2 days in one week
         point: 0
         exp: 0
         required: 2
         withReminder: true
         voucherReward:
           type: 3
-          itemID: socute
-          amount: 10
+          itemID: giftpack_jetcoaster
+          amount: 5
           intervalSec: 604800
-      - type: 14
+      - type: 11 # IAP 1 time
         point: 0
         exp: 0
-        required: 2
+        required: 1
         withReminder: true
         voucherReward:
           type: 3
-          itemID: 2019newuser
-          amount: 10
+          itemID: 1909_upgrade_boat_bag
+          amount: 20
+          intervalSec: 604800
+      - type: 15 # phone binding
+        point: 0
+        exp: 0
+        required: 1
+        withReminder: true
+        voucherReward:
+          type: 3
+          itemID: fall_in_love_dinner_bag
+          amount: 5
           intervalSec: 604800
