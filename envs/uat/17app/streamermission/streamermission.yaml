@@ -2098,26 +2098,27 @@ missions: # mission list
   - id: 971857e3-8249-4913-90de-0f2c3521c367
     type: 39
     i18nCTADescription:
-      key: streamer_growth_streaming_viewer_dailytask_go
+      key: streamer_growth_streaming_viewer_dailytask_share
     lifeCycle: 0
     levelRange:
       min: 1
       max: 999
     reward:
-      type: 2 # RewardTypePoint
+      type: 7
       iconURL: http://cdn.17app.co/2e354e54-b9c8-4f94-9513-cee6beb6988b.png
       achievementValue: 0
-      value: 20
-      i18nDescription: streamer_growth_dailytask_rewards_babycoins
+      value: 1
+      giftID: gift_texture_dailytask_reward_babykiss
+      i18nDescription: baggage_mission_receive_league_event_gift_times_desc
       i18nDescriptionParams:
-        - value: "20"
+        - value: "1"
           needMap: false
       i18nComment: streamer_mission_score_comment
       i18nCommentParam:
-        - value: "POINT"
+        - value: "streamer_growth_dailytask_rewards_filter"
           mapOption: 1
-        - value: "20"
-      animationID: streamer_growth_daily_task_completion_reward_point
+        - value: ""
+      animationID: streamer_growth_daily_task_completion_reward_laborreward
     i18nTitle: baggage_mission_receive_league_event_gift_times_title
     i18nTitleParams:
       - value: "20"
