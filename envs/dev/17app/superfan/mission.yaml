@@ -5,12 +5,13 @@
 # missions
 #   - type: 1            # mission comment
 #     required: 3        # viewer needs to comment 3 times in the streamer's live
-#     reduceSeconds: 60  # laborreward countdown time will reduce 60 seconds after this mission completed
+#     reduceSeconds: 60  # Laborreward countdown time will reduce 60 seconds after this mission completed,
+#                        # It is recommended to set 60, 120, ... because the unit in lokalise key is minute.
 
 missions:
   - type: 1
     required: 3 
-    reduceSeconds: 60
+    reduceSeconds: 120
   - type: 2
     required: 1
-    reduceSeconds: 30
+    reduceSeconds: 60
