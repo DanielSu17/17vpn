@@ -1960,3 +1960,75 @@ missions: # mission list
     i18nDisableDescription: null
     goalValue: 40
     streamerDay: -1
+
+
+  - id: 970857e3-8249-4913-90de-0f2c3521c365
+    type: 39
+    i18nCTADescription:
+      key: streamer_mission_button_go_stream
+    lifeCycle: 0
+    levelRange:
+      min: 1
+      max: 10
+    reward:
+      type: 5 # RewardType_ACHIEVEMENT
+      iconURL: https://cdn.17app.co/b74c7553-62cb-4eb2-ad91-6f8ee1aa5e08.png
+      achievementValue: 500
+      i18nDescription: streamer_growth_dailytask_rewards_achievementscore
+      i18nDescriptionParams:
+        - value: "500"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: streamer_growth_achievementscore
+          mapOption: 1
+        - value: "500"
+      animationID: streamer_growth_daily_task_completion_reward_achievement
+    i18nTitle: baggage_mission_receive_league_event_gift_times_title
+    i18nTitleParams:
+      - value: "3" # 單位為禮物數量，顯示到標題
+        needMap: false
+    i18nDescription: baggage_mission_receive_league_event_gift_times_desc
+    i18nDescriptionParams:
+      - value: "3"
+        needMap: false
+    i18nDisableDescription: null
+    goalValue: 3
+    streamerDay: -1
+
+    
+  - id: 120857e3-8249-4913-90de-0f2c3521c400
+    type: 40
+    i18nCTADescription:
+      key: streamer_growth_streaming_viewer_dailytask_comment
+    lifeCycle: 0
+    levelRange:
+      min: 1
+      max: 999
+    reward:
+      type: 7
+      iconURL: http://cdn.17app.co/2e354e54-b9c8-4f94-9513-cee6beb6988b.png
+      achievementValue: 0
+      value: 1
+      giftID: gift_texture_dailytask_reward_babykiss
+      i18nDescription: baggage_mission_receive_league_event_gift_points_desc
+      i18nDescriptionParams:
+        - value: "1"
+          needMap: false
+      i18nComment: streamer_mission_score_comment
+      i18nCommentParam:
+        - value: "streamer_growth_dailytask_rewards_filter"
+          mapOption: 1
+        - value: ""
+      animationID: streamer_growth_daily_task_completion_reward_laborreward
+    i18nTitle: baggage_mission_receive_league_event_gift_points_title
+    i18nTitleParams:
+      - value: "2000"
+        needMap: false
+    i18nDescription: baggage_mission_receive_league_event_gift_points_desc
+    i18nDescriptionParams:
+      - value: "2000"
+        needMap: false
+    i18nDisableDescription: null
+    goalValue: 2000
+    streamerDay: -1
