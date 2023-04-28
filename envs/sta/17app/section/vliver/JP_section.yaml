@@ -47,6 +47,18 @@ sections:
     category: normal
     orderModel: 2
 
+#以下General tabからコピペ
+
+#  - id: Label # 202303_リアルイベント
+#    labelID: 2303_jp_realevent
+#    name:
+#      key: streamer_jp_label_realevent
+#    enable: true
+#    dedup: false
+#    minGrids: 0
+#    style: 3
+#    more: true
+
   - id: Suggestion # 猜你可能喜歡
     name:
       key: tab_hot_2019q4_follow_suggestion
@@ -55,6 +67,60 @@ sections:
     style: 6
     minGrids: 1
     more: true
+    orderModel: 2
+
+  - id: Latest # 新人(和『最新』同邏輯)
+    name:
+      key: tab_hot_2019q4_newstreamer
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    orderModel: 2
+
+  - id: Label # 運営おすすめ
+    labelID: 2204_jp_surge
+    name:
+      key: streamer_jp_label_surge
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+
+  - id: NewestStreamer # D0 new streamer
+    name:
+      key: tab_hot_d0streamer
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    orderModel: 2
+
+  - id: Label # Lv100以上
+    labelID: 2203_jp_lv100
+    name:
+      key: streamer_jp_label_lv100
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # 初見さん歓迎
+    labelID: jp_welcome
+    name:
+      key: streamer_jp_label_welcome
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
     orderModel: 2
 
   - id: PK
@@ -66,19 +132,10 @@ sections:
     style: 3
     more: true
 
-  - id: GroupCall # コラボ配信（GroupCall）
+  - id: Label
+    labelID: jp_game
     name:
-      key: group_stream_v3hotpage
-    enable: true
-    dedup: false
-    minGrids: 1
-    style: 9
-    more: true
-
-  - id: Label #バーチャル配信
-    labelID: 2304_jp_virtual
-    name:
-      key: streamer_jp_label_virtual
+      key: explore_jp_label_game
     enable: true
     dedup: true
     minGrids: 1
@@ -87,6 +144,63 @@ sections:
     category: normal
     orderModel: 2
 
+  - id: Label # 歌
+    labelID: jp_singer
+    name:
+      key: streamer_jp_label_singer
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # 楽器演奏
+    labelID: jp_instrument
+    name:
+      key: streamer_jp_label_instrument
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # 雑談
+    labelID: jp_freetalk1
+    name:
+      key: streamer_jp_label_freetalk
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # 占い
+    labelID: jp_fortune
+    name:
+      key: streamer_jp_label_fortune
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: GroupCall # コラボ配信（GroupCall）
+    name:
+      key: group_stream_v3hotpage
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 9
+    more: true
+
   - id: ArchiveVideo # 典藏影片  
     name:
       key: archives_homepage_title
@@ -94,3 +208,159 @@ sections:
     minGrids: 1
     style: 11
     more: true
+
+  - id: Label # 創作・制作
+    labelID: 2111_jp_sousaku
+    name:
+      key: streamer_jp_label_sousaku
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # アニマル
+    labelID: jp_animal
+    name:
+      key: streamer_jp_label_animal
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # お絵かき
+    labelID: 2111_jp_oekaki
+    name:
+      key: streamer_jp_label_oekaki
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # クッキング
+    labelID: 2207_jp_cooking17
+    name:
+      key: streamer_jp_label_cooking17
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # 恋愛トーク
+    labelID: 2207_jp_love_talk17
+    name:
+      key: streamer_jp_label_love_talk17
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # DJ
+    labelID: jp_DJ
+    name:
+      key: streamer_jp_label_DJ
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # ダンス
+    labelID: 2207_jp_dance17
+    name:
+      key: streamer_jp_label_dance17
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # スポーツ
+    labelID: 2207_jp_sports17
+    name:
+      key: スポーツ #streamer_jp_label_sports17
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # lv70以上
+    labelID: jp_lv70
+    name:
+      key: streamer_jp_label_Lv70higher
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # lv50以下
+    labelID: jp_lv50
+    name:
+      key: streamer_jp_label_lv50
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # lv30以下
+    labelID: jp_lv30
+    name:
+      key: streamer_jp_label_lv30
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # 女子
+    labelID: jp_girls
+    name:
+      key: streamer_jp_label_girls
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # 男子
+    labelID: jp_boys
+    name:
+      key: streamer_jp_label_boys
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
