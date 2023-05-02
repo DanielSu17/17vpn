@@ -1,5 +1,5 @@
 goKart:
-  version: 1.1.2
+  version: 1.1.5
   obstacles:
     - id: '0'
       condition: EMPTY
@@ -177,8 +177,10 @@ goKart:
             min: 0
             max: 0
     - id: '5'
-      name: (R)2Em+1TC
-      description: Randomly 2 Empty + 1 Yellow Traffic Cone
+      name: (R)2Em+1TC + Gummy
+      description: |-
+        Randomly 2 Empty + 1 Yellow Traffic Cone
+        +1 Random Gummy
       laneCount: 3
       generatorType: RANDOM
       score: 10
@@ -190,6 +192,10 @@ goKart:
         - entityId: '1'
           minMaxRule:
             min: 1
+            max: 1
+        - entityId: '9'
+          minMaxRule:
+            min: 0
             max: 1
     - id: '6'
       name: (F)1Em_Mid+2Barrier
@@ -305,6 +311,10 @@ goKart:
           minMaxRule:
             min: 1
             max: 1
+        - entityId: '9'
+          minMaxRule:
+            min: 1
+            max: 1
     - id: '12'
       name: QA_mid_empty
       description: Mid always empty with snacks and Traffic cone
@@ -325,34 +335,46 @@ goKart:
             min: 0
             max: 0
     - id: '13'
-      name: (R)2Em+1 Barrier
-      description: Randomly 2 Empty + 1 Yellow Barrier
+      name: (R)2Em+1 Barrier + Gummy
+      description: |-
+        Randomly 2 Empty + 1 Yellow Barrier
+        +1 Random Gummy
       laneCount: 3
       generatorType: RANDOM
       score: 10
       obstacles:
-        - entityId: '0'
-          minMaxRule:
-            min: 1
-            max: 2
         - entityId: '6'
           minMaxRule:
             min: 1
             max: 1
-    - id: '14'
-      name: (R)2Em+1 CP
-      description: Randomly 2 Empty + 1 Concrete Pier
-      laneCount: 3
-      generatorType: RANDOM
-      score: 10
-      obstacles:
+        - entityId: '9'
+          minMaxRule:
+            min: 0
+            max: 1
         - entityId: '0'
           minMaxRule:
             min: 1
             max: 2
+    - id: '14'
+      name: (R)2Em+1 CP + Gummy
+      description: |-
+        Randomly 2 Empty + 1 Concrete Pier
+        + 1 Random Gummy
+      laneCount: 3
+      generatorType: RANDOM
+      score: 10
+      obstacles:
         - entityId: '7'
           minMaxRule:
             min: 1
+            max: 1
+        - entityId: '0'
+          minMaxRule:
+            min: 1
+            max: 2
+        - entityId: '9'
+          minMaxRule:
+            min: 0
             max: 1
     - id: '15'
       name: (R)1Em+2 TC
@@ -370,16 +392,12 @@ goKart:
             min: 2
             max: 2
     - id: '16'
-      name: (R) All without empty
-      description: All obstacles without empty
+      name: (R) All without empty + Health Kit 25%
+      description: All obstacles without empty + Health Kit 25%
       laneCount: 3
       generatorType: RANDOM
       score: 10
       obstacles:
-        - entityId: '1'
-          minMaxRule:
-            min: 1
-            max: 1
         - entityId: '5'
           minMaxRule:
             min: 1
@@ -387,6 +405,22 @@ goKart:
         - entityId: '6'
           minMaxRule:
             min: 1
+            max: 1
+        - entityId: '1'
+          minMaxRule:
+            min: 0
+            max: 1
+        - entityId: '11'
+          minMaxRule:
+            min: 0
+            max: 1
+        - entityId: '4'
+          minMaxRule:
+            min: 0
+            max: 1
+        - entityId: '7'
+          minMaxRule:
+            min: 0
             max: 1
     - id: '17'
       name: (R) 33% w/o empty
@@ -688,6 +722,63 @@ goKart:
             min: 0
             max: 0
         - entityId: '11'
+          minMaxRule:
+            min: 0
+            max: 0
+    - id: '34'
+      name: HealthKit_MIddle
+      description: HealthKit_MIddle
+      laneCount: 3
+      generatorType: FIXED
+      score: 10
+      obstacles:
+        - entityId: '0'
+          minMaxRule:
+            min: 0
+            max: 0
+        - entityId: '0'
+          minMaxRule:
+            min: 0
+            max: 0
+        - entityId: '11'
+          minMaxRule:
+            min: 0
+            max: 0
+    - id: '35'
+      name: Gummy_Random
+      description: Gummy_Random Placed
+      laneCount: 3
+      generatorType: RANDOM
+      score: 10
+      obstacles:
+        - entityId: '9'
+          minMaxRule:
+            min: 1
+            max: 1
+        - entityId: '0'
+          minMaxRule:
+            min: 1
+            max: 1
+        - entityId: '0'
+          minMaxRule:
+            min: 1
+            max: 1
+    - id: '36'
+      name: QA_LongRun
+      description: For long run
+      laneCount: 3
+      generatorType: FIXED
+      score: 500
+      obstacles:
+        - entityId: '1'
+          minMaxRule:
+            min: 0
+            max: 0
+        - entityId: '0'
+          minMaxRule:
+            min: 0
+            max: 0
+        - entityId: '6'
           minMaxRule:
             min: 0
             max: 0
@@ -1324,8 +1415,9 @@ goKart:
         - entityId: '10'
         - entityId: '10'
         - entityId: '10'
-        - entityId: '16'
         - entityId: '17'
+        - entityId: '16'
+        - entityId: '16'
       description: Markov 90-100
     - id: '16'
       name: QA_Section_1
@@ -1334,7 +1426,7 @@ goKart:
       laneCount: 3
       generatorType: FIXED
       lengthInCubes: 1200
-      speedInCubesPerSecond: 85
+      speedInCubesPerSecond: 40
       durationInSeconds: 30
       incidents:
         - entityId: '23'
@@ -1358,7 +1450,7 @@ goKart:
       laneCount: 3
       generatorType: FIXED
       lengthInCubes: 1200
-      speedInCubesPerSecond: 85
+      speedInCubesPerSecond: 40
       durationInSeconds: 30
       incidents:
         - entityId: '23'
@@ -1382,7 +1474,7 @@ goKart:
       laneCount: 3
       generatorType: FIXED
       lengthInCubes: 1200
-      speedInCubesPerSecond: 85
+      speedInCubesPerSecond: 40
       durationInSeconds: 30
       incidents:
         - entityId: '23'
@@ -1406,7 +1498,7 @@ goKart:
       laneCount: 3
       generatorType: FIXED
       lengthInCubes: 1200
-      speedInCubesPerSecond: 85
+      speedInCubesPerSecond: 40
       durationInSeconds: 30
       incidents:
         - entityId: '23'
@@ -1430,7 +1522,7 @@ goKart:
       laneCount: 3
       generatorType: RANDOM
       lengthInCubes: 1200
-      speedInCubesPerSecond: 85
+      speedInCubesPerSecond: 40
       durationInSeconds: 30
       accelerationRate: 0.05
       incidents:
@@ -1595,6 +1687,7 @@ goKart:
       speedInCubesPerSecond: 50
       durationInSeconds: 15
       incidents:
+        - entityId: '34'
         - entityId: '13'
         - entityId: '9'
         - entityId: '9'
@@ -1626,6 +1719,7 @@ goKart:
       speedInCubesPerSecond: 50
       durationInSeconds: 15
       incidents:
+        - entityId: '34'
         - entityId: '14'
         - entityId: '15'
         - entityId: '14'
@@ -1755,6 +1849,64 @@ goKart:
         - entityId: '14'
         - entityId: '14'
       description: incident for accelerating
+    - id: '34'
+      name: Snack_section
+      type: NORMAL
+      scoreMultiplier: 1
+      laneCount: 3
+      generatorType: FIXED
+      lengthInCubes: 600
+      speedInCubesPerSecond: 60
+      durationInSeconds: 10
+      incidents:
+        - entityId: '35'
+        - entityId: '35'
+        - entityId: '35'
+        - entityId: '35'
+        - entityId: '35'
+        - entityId: '35'
+        - entityId: '35'
+        - entityId: '35'
+        - entityId: '35'
+        - entityId: '35'
+        - entityId: '35'
+        - entityId: '35'
+        - entityId: '35'
+        - entityId: '35'
+        - entityId: '35'
+      description: Snack_section
+    - id: '35'
+      name: QA_LongRun
+      type: INFINITE
+      scoreMultiplier: 10
+      laneCount: 3
+      generatorType: RANDOM
+      lengthInCubes: 360
+      speedInCubesPerSecond: 36
+      durationInSeconds: 10
+      accelerationRate: 0
+      incidents:
+        - entityId: '36'
+        - entityId: '36'
+        - entityId: '36'
+        - entityId: '36'
+        - entityId: '36'
+        - entityId: '36'
+        - entityId: '36'
+        - entityId: '36'
+        - entityId: '36'
+        - entityId: '36'
+        - entityId: '36'
+        - entityId: '36'
+        - entityId: '36'
+        - entityId: '36'
+        - entityId: '36'
+        - entityId: '36'
+        - entityId: '36'
+        - entityId: '36'
+        - entityId: '36'
+        - entityId: '36'
+      description: For QA Long Run
   games:
     - id: '6'
       name: Model_game_prod
@@ -1781,27 +1933,33 @@ goKart:
         - entityId: '2'
         - entityId: '23'
         - entityId: '26'
+        - entityId: '34'
         - entityId: '31'
         - entityId: '11'
         - entityId: '27'
+        - entityId: '34'
         - entityId: '29'
         - entityId: '12'
         - entityId: '28'
+        - entityId: '34'
         - entityId: '29'
         - entityId: '12'
         - entityId: '32'
         - entityId: '12'
         - entityId: '13'
         - entityId: '28'
+        - entityId: '34'
         - entityId: '29'
         - entityId: '32'
         - entityId: '14'
         - entityId: '28'
+        - entityId: '34'
         - entityId: '32'
         - entityId: '29'
         - entityId: '32'
         - entityId: '14'
         - entityId: '28'
+        - entityId: '34'
         - entityId: '33'
         - entityId: '15'
     - id: '7'
@@ -1830,26 +1988,33 @@ goKart:
         - entityId: '2'
         - entityId: '23'
         - entityId: '26'
+        - entityId: '34'
         - entityId: '31'
         - entityId: '11'
         - entityId: '27'
+        - entityId: '34'
         - entityId: '29'
         - entityId: '12'
         - entityId: '28'
+        - entityId: '34'
         - entityId: '29'
+        - entityId: '12'
         - entityId: '32'
         - entityId: '12'
         - entityId: '13'
         - entityId: '28'
+        - entityId: '34'
         - entityId: '29'
         - entityId: '32'
         - entityId: '14'
         - entityId: '28'
+        - entityId: '34'
         - entityId: '32'
         - entityId: '29'
         - entityId: '32'
         - entityId: '14'
         - entityId: '28'
+        - entityId: '34'
         - entityId: '33'
         - entityId: '15'
     - id: '8'
@@ -1882,3 +2047,29 @@ goKart:
       shieldMax: 99
       sections:
         - entityId: '30'
+    - id: '10'
+      name: Only InF section
+      description: Test for Inf Tuning.
+      debug: false
+      type: NORMAL
+      angleStart: 0
+      angleMax: 99
+      hpStart: 6
+      hpMax: 6
+      shieldStart: 0
+      shieldMax: 99
+      sections:
+        - entityId: '15'
+    - id: '11'
+      name: QA_Marathons
+      description: For QA LongRun
+      debug: false
+      type: NORMAL
+      angleStart: 1
+      angleMax: 99
+      hpStart: 1
+      hpMax: 6
+      shieldStart: 1
+      shieldMax: 99
+      sections:
+        - entityId: '35'
