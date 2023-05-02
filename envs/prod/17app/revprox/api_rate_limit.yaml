@@ -1,7 +1,7 @@
 # Usage:
 #     any request match the regular expression "/v1/abc/[0-9]*/def" will be under
 #     ratelimiting with QPS 100, and burst QPS = 200
-#     `scope` can be `by_global`, `by_ip` or `by_access_token` for now
+#     `scope` can be `by_global`, `by_ip` or `by_jwt` for now
 #
 # Remarks:
 #     reservoir_size must be non-zero. Otherwise the leakybucket algorithm will fail.
@@ -14,13 +14,17 @@
 #   method: "GET"
 #   flow_per_second: 100
 #   reservoir_size: 200
-#   scope: by_access_token
+#   scope: by_jwt
 
 rate_limits:
-- {url: "/api/v1/legacy/followUserAction",                   method: "POST",    flow_per_second: 20,      reservoir_size: 20,    scope: by_global}
-- {url: "/api/v1/legacy/unfollowUserAction",                 method: "POST",    flow_per_second: 20,      reservoir_size: 20,    scope: by_global}
-- {url: "/api/v1/legacy/followUserAction",                   method: "POST",    flow_per_second: 0.083,   reservoir_size: 5,    scope: by_access_token}
-- {url: "/api/v1/legacy/unfollowUserAction",                 method: "POST",    flow_per_second: 0.083,   reservoir_size: 5,    scope: by_access_token}
+- {url: "/api/v1/legacy/followUserAction",                   method: "POST",    flow_per_second: 40,   reservoir_size: 40,    scope: by_global}
+- {url: "/api/v1/legacy/unfollowUserAction",                 method: "POST",    flow_per_second: 40,   reservoir_size: 40,    scope: by_global}
+- {url: "/api/v1/legacy/followUserAction",                   method: "POST",    flow_per_second: 5,   reservoir_size: 5,    scope: by_jwt}
+- {url: "/api/v1/legacy/unfollowUserAction",                 method: "POST",    flow_per_second: 5,   reservoir_size: 5,    scope: by_jwt}
+- {url: "/api/v1/follow/users/[A-Za-z0-9-]+",                method: "POST",    flow_per_second: 40,   reservoir_size: 40,    scope: by_global}
+- {url: "/api/v1/follow/users/[A-Za-z0-9-]+",                method: "DELETE",  flow_per_second: 40,   reservoir_size: 40,    scope: by_global}
+- {url: "/api/v1/follow/users/[A-Za-z0-9-]+",                method: "POST",    flow_per_second: 5,   reservoir_size: 5,    scope: by_jwt}
+- {url: "/api/v1/follow/users/[A-Za-z0-9-]+",                method: "DELETE",  flow_per_second: 5,   reservoir_size: 5,    scope: by_jwt}
 
 #app/api/api/clip/clip.go:62:		apis.AddRateLimit(rl, apis.RateLimitClipLike, ratelimiter.Second, clipQPS,          apis.ByUser),
 #app/api/api/clip/clip.go:67:		apis.AddRateLimit(rl, apis.RateLimitClipView, ratelimiter.Second, clipQPS, 			apis.ByUser),
