@@ -5,10 +5,7 @@
       "matomoLogWhiteList":[
          "3a4b6a11-c988-4f05-a054-caf0091d0444",
          "e0c410e7-75f8-47b5-8b27-138eabbf0970",
-         "a138fce4-7e72-4e91-8c82-f5b6dfb350d9",
-         "a2a1542d-93d4-41d7-834f-9a4998646515",
-         "70529d55-891b-4d03-824b-2272dbd0410b",
-         "2c9ad019-2b31-4fb9-800d-fa518b51a74d"
+         "a138fce4-7e72-4e91-8c82-f5b6dfb350d9"
       ]
    },
   "enable_api_protobuf": true,
@@ -37,12 +34,12 @@
   },
   "matomo_event_grpc": {
     "ios_apply_version": "3.136.0",
-    "android_apply_version": 9999,
+    "android_apply_version": 2000,
     "web_matomo_version": "v2"
   },
   "matomo_event_general": {
-    "android_apply_version": "2000",
-    "ios_apply_version": "3.136.0"
+    "android_apply_version": 2147483647,
+    "ios_apply_version": ""
   },
   "live_atmos_v2": {
     "ios_apply_version": "3.150.0",
@@ -66,98 +63,51 @@
     "box": {
       "ios_apply_version": "3.150.0",
       "android_apply_version": 16309920,
-      "apply_region": ["TW", "HK", "SG", "MY"],
+      "apply_region": ["TW", "HK", "SG", "MY", "PH", "US", "JP"],
       "trigger_message": [
-        "過年",
-        "过年",
-        "新年",
-        "新年",
-        "New Year",
-        "Chinese New Year",
-        "Lunar New Year",
-        "新年快樂",
-        "新年快乐",
-        "Happy New Year",
-        "Happy Chinese New Year",
-        "Happy Lunar New Year",
-        "虎",
-        "Tiger",
-        "恭喜發財",
-        "恭喜发财",
-        "紅包",
-        "红包",
-        "紅包拿來",
-        "红包拿来",
-        "Red Envelope",
-        "除夕",
-        "初一",
-        "初二",
-        "年假",
-        "🐯",
-        "🧧",
-        "🧨",
-        "CNY"
+        "FF",
+        "Fruit",
+        "Fruits",
+        "パイナップル",
+        "いちご",
+        "ブルーベリー",
+        "バナナ",
+        "もも",
+        "すいか",
+        "スイカ",
+        "西瓜",
+        "水やり",
+        "みずやり",
+        "収穫",
+        "豊作",
+        "フルーツ",
+        "フルート",
+        "ファーム",
+        "🍑",
+        "🍉",
+        "🍇",
+        "🍓",
+        "🍍",
+        "🍌"
       ],
       "boxes": [{
-          "drop_rate": 15,
-          "image_urls": ["https://cdn.17app.co/a97c623b-6e84-43d0-82af-78402a15f2ca.png"],
-          "type": 0
-        },
-        {
-          "drop_rate": 15,
-          "image_urls": ["https://cdn.17app.co/a97c623b-6e84-43d0-82af-78402a15f2ca.png"],
-          "type": 0
-        },
-        {
           "drop_rate": 30,
-          "image_urls": ["https://cdn.17app.co/e131fda4-228d-41e7-b5c2-1d1ae171fd4c.png"],
-          "type": 0
-        },
-        {
-          "drop_rate": 30,
-          "image_urls": ["https://cdn.17app.co/29947bc9-c612-4136-a8fb-dc5f3b04f54a.png"],
-          "type": 0
-        },
-        {
-          "drop_rate": 10,
-          "image_urls": ["https://cdn.17app.co/ab51df27-6980-4817-8837-98b51d283f1f.png"],
+          "image_urls": ["https://cdn.17app.co/37dacbfe-8c40-4f6e-9dc2-b38ad1faa5e9.png"],
           "type": 1
-        }
-      ],
-      "drop_count_distribution": {
-        "3": 65,
-        "2": 25,
-        "1": 10
-      },
-      "duration_sec": 30,
-      "max_total_count": 35,
-      "cooldown_sec": 600
-    },
-    "cake": {
-      "ios_apply_version": "3.150.0",
-      "android_apply_version": 16309920,
-      "apply_region": ["US"],
-      "trigger_message": [
-        "17 HBD"
-      ],
-      "cakes": [{
-          "drop_rate": 30,
-          "image_urls": ["https://cdn.17app.co/060ddb86-0749-4c50-85b0-51a7ecabdf16.png"],
-          "type": 0
         },
         {
           "drop_rate": 30,
-          "image_urls": ["https://cdn.17app.co/b4072006-0c71-4ab3-950d-6ece66fe82b6.png"],
-          "type": 0
+          "image_urls": ["https://cdn.17app.co/c5e1e3c9-c6a8-4484-9f41-0be234d828fd.png"],
+          "type": 1
         },
         {
           "drop_rate": 30,
-          "image_urls": ["https://cdn.17app.co/9d2b40e5-78a3-4ab9-874b-3e54b71f8224.png"],
-          "type": 0
+          "image_urls": ["https://cdn.17app.co/b91135d5-d4e3-4b13-a9af-534cca94d256.png"],
+          "type": 1
         },
         {
           "drop_rate": 10,
-          "image_urls": ["https://cdn.17app.co/949e5806-1a5a-4605-a81d-890ab34ddd5b.png"],
+          "image_urls": ["https://cdn.17app.co/8cf32b7c-c0c4-4c64-b0de-f9faab7c8a7b.png"],
           "type": 2
         }
       ],
@@ -183,7 +133,7 @@
   },
   "concert_mode_datadog_log": {
     "ios_apply_version": "",
-    "android_apply_version": 2000
+    "android_apply_version": 99999999
   },
   "concert_mode_pull_stream_mechanism": {
     "ios_apply_version": "3.136.0",
@@ -193,7 +143,7 @@
     "upper_threshold_for_buffering_free_sec": 300,
     "upper_retry_times": 2,
     "max_buffering_record_count": 30,
-    "check_frequency_sec": 5,
+    "check_frequency_sec": 2,
     "log_buffering_frequency_sec": 30,
     "ping_host": "8.8.8.8",
     "ping_count": 5,
@@ -208,8 +158,8 @@
         "android_apply_version": 99999999,
         "apply_region": ["ALL"],
         "ios_min_playable_version": "",
-        "ios_device_blacklist": ["iPhone 6"],
         "android_min_playable_version": 99999999,
+        "ios_device_blacklist": ["iPhone 6"],
         "gameType": 1,
         "name": "Jenga",
         "iconURL": "https://cdn.17app.co/c1dfe1fa-7806-4214-b9df-65f3086393ad.png"
@@ -219,8 +169,8 @@
         "android_apply_version": 2589,
         "apply_region": ["ALL"],
         "ios_min_playable_version": "",
-        "ios_device_blacklist": ["iPhone 6"],
         "android_min_playable_version": 2589,
+        "ios_device_blacklist": ["iPhone 6"],
         "gameType": 2,
         "name": "Spinner",
         "iconURL": "https://cdn.17app.co/7e0db800-9b71-4bde-a32a-8057b25cee2c.png"
@@ -230,8 +180,8 @@
         "android_apply_version": 2589,
         "apply_region": ["ALL"],
         "ios_min_playable_version": "3.140.0",
-        "ios_device_blacklist": ["iPhone 6"],
         "android_min_playable_version": 2589,
+        "ios_device_blacklist": ["iPhone 6"],
         "gameType": 3,
         "name": "Match Game",
         "iconURL": "https://cdn.17app.co/1ecbe07a-c9c6-4478-afa6-037cdec1f0f3.png"
@@ -241,19 +191,19 @@
         "android_apply_version": 2589,
         "apply_region": ["ALL"],
         "ios_min_playable_version": "3.140.0",
-        "ios_device_blacklist": ["iPhone 6"],
         "android_min_playable_version": 2589,
+        "ios_device_blacklist": ["iPhone 6"],
         "gameType": 4,
         "name": "CrazyZoo",
         "iconURL": "https://cdn.17app.co/706f0179-b94c-498e-a946-8ebd22f7e4ef.png"
       },
       {
-        "ios_apply_version": "3.221.0",
-        "android_apply_version": 2589,
+        "ios_apply_version": "3.232.1",
+        "android_apply_version": 16817825,
         "apply_region": ["ALL"],
-        "ios_min_playable_version": "3.221.0",
-        "ios_device_blacklist": ["iPhone 6", "iPhone XS Max"],
-        "android_min_playable_version": 2589,
+        "ios_min_playable_version": "3.233.0",
+        "android_min_playable_version": 16817825,
+        "ios_device_blacklist": ["iPhone 6"],
         "gameType": 5,
         "name": "GoKart",
         "iconURL": "https://cdn.17app.co/ic_game_icon.png"
@@ -261,7 +211,7 @@
     ],
     "black_list": {
       "android": {
-        "models": []
+        "models": ["P028"]
       }
     }
   },
@@ -291,11 +241,13 @@
       "359c54be-be7a-414e-9cf1-bfb4cc51c155",
       "40a8533e-bb2e-4d58-aae6-f729385b8f41",
       "a6f50912-3350-45bb-836f-b483748b1c23",
-      "cf801fea-1e19-4971-9310-ad90d21d56d3"
+      "cf801fea-1e19-4971-9310-ad90d21d56d3",
+      "a7d07395-8a5f-4c0e-8791-70a24c0c8c63",
+      "9d063e35-5314-4fd2-bcec-06f895a224f0"
     ],
     "region_default_weight": 30,
     "region_weight": {
-      "TW": 30,
+      "TW": 100,
       "JP": 30,
       "US": 0
     },
@@ -346,7 +298,7 @@
   },
   "ping_v2": {
     "low_latency_threshold": 90,
-    "high_latency_threshold": 200,
+    "high_latency_threshold": 100,
     "retry_times": 5,
     "streamer": {
       "ios_apply_version": "3.158.0",
@@ -372,9 +324,126 @@
   "viewer_network_status": {
     "ios_apply_version": "3.163.0",
     "android_apply_version": 13333333,
-    "system_message_interval": 60,
-    "indicator_interval": 60,
-    "hint_buffering_percent": 50
+    "system_message_interval": 10,
+    "indicator_interval": 10,
+    "hint_buffering_percent": 10,
+    "is_enable_indicator": false,
+    "is_enable_system_message": false
+  },
+  "stream_debug_manager": {
+    "ios_apply_version": "3.174.0",
+    "android_apply_version": 99999999,
+    "users": [
+      "4390f383-ff88-4c2b-ab9a-125d07e01524",
+      "30d609da-9797-45d6-928f-74c05a678c81",
+      "aed2a503-5599-4e97-8c1a-740304be4879",
+      "5a5d1019-e849-4054-8765-3306f066ba65",
+      "3f372b61-ea82-4f01-8d0e-6b8302af393c",
+      "8f025ec4-f631-4039-8068-8cd13d19e563",
+      "7a5b1c30-64f8-4222-8d05-d3cfb70c0d52"
+    ]
+  },
+  "archive_hardware_decoding": {
+    "ios_apply_version": "3.193.0",
+    "android_apply_version": 99999999
+  },
+  "braze_sdk": {
+    "ios_apply_version": "3.190.0",
+    "android_apply_version": 16518252,
+    "custom_event_switch": {
+      "Watched stream": true,
+      "Stopped watching stream": true,
+      "Commented": true
+    }
+  },
+  "green_screen": {
+    "ios_apply_version": "3.202.703",
+    "android_apply_version": 16617889,
+    "android_black_model_list": [],
+    "ios_should_handle_background_mode": true
+  },
+  "pull_stream_log": {
+    "buffering_ratio": {
+      "ios_apply_version": "3.200.0",
+      "android_apply_version": 16637436,
+      "check_frequency": 30,
+      "time_period": 20
+    }
+  },
+  "ist_log": {
+    "ios_apply_version": "3.200.0",
+    "android_apply_version": 16637436,
+    "log_frequency": 30,
+    "streamer": {
+      "ios_apply_version": "3.200.0",
+      "android_apply_version": 16637436,
+      "data_fetch_frequency": 6,
+      "data_fetch_frequency_ios": 6,
+      "quality_monitor": {
+        "ios_apply_version": "3.200.0",
+        "android_apply_version": 16637436,
+        "frequency": 30
+      },
+      "push_report": {
+        "ios_apply_version": "3.200.0",
+        "android_apply_version": 16637436
+      }
+    },
+    "viewer": {
+      "ios_apply_version": "3.200.0",
+      "android_apply_version": 16637436,
+      "data_fetch_frequency": 6,
+      "data_fetch_frequency_ios": 6,
+      "quality_monitor": {
+        "ios_apply_version": "3.200.0",
+        "android_apply_version": 16637436,
+        "frequency": 20,
+        "time_period": 20
+      },
+      "pull_report": {
+        "ios_apply_version": "3.200.0",
+        "android_apply_version": 16637436
+      }
+    }
+  },
+  "stream_viewed_detector": {
+    "ios_apply_version": "3.203.0",
+    "android_apply_version": 99999999,
+    "detecting_interval": 30
+  },
+  "loyalty_point": {
+    "ios_apply_version": "3.200.0",
+    "android_apply_version": 16637436,
+    "apply_region": [
+      "TW",
+      "JP",
+      "US",
+      "HK"
+    ],
+    "region_data": {
+      "TW": {
+        "prize_url": "https://cdn.17app.co/c98ac7dd-5eb3-4b11-a4d0-e9e55161952c.png",
+        "hyperlink1": "https://liff.line.me/1645278921-kWRPP32q/?accountId=17vip"
+      },
+      "JP": {
+        "prize_url": "https://event.17.live/11608-2103-jp-vip-mileagebenefits/1",
+        "hyperlink1": "https://lin.ee/qDoBVG6"
+      },
+      "US": {
+        "prize_url": "https://cdn.17app.co/28769556-22a1-4222-ab48-872890c8b78b.png",
+        "hyperlink1": "https://bit.ly/3uNKWKh"
+      },
+      "HK": {
+        "prize_url": "https://event.17.live/12674-2021-hk-faq/0/3",
+        "hyperlink1": "https://bit.ly/3FPgyqd",
+        "hyperlink2": "https://bit.ly/3DC4xS5"
+      }
+    }
+  },
+  "dirty_word_feature": {
+    "ios_apply_version": "3.203.0",
+    "android_apply_version": 16704987,
+    "enable": true
   },
   "iap_restricted_region": {
     "ios_apply_version": "3.224.0",
@@ -390,5 +459,9 @@
     "isResetParam": true,
     "paramFadeTime": 0.01,
     "poseFadeTime": 0.01
+  },
+  "enable_twitter_share": {
+    "ios_apply_version": "3.233.960",
+    "android_apply_version": 16824750
   }
 }
