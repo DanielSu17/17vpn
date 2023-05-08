@@ -8,7 +8,7 @@ sudo apt-get update
 sudo apt-get install gcalcli -y
 today=$(date +%F)
 until=$(date -d "$today +2 month" +%F)
-gcalcli --calendar='ENG Support' --nocolor agenda $today $until --tsv --nostarted > events.txt
+gcalcli --calendar='ENG Support' --nocolor agenda $today $until --tsv > events.txt
 tmp_file=tmp.yaml
 
 while read -r line
