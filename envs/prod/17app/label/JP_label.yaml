@@ -1,5 +1,20 @@
 # JP label config
+# labelInfos defines all label related infos including type, label(i18n), iconURL
+# - type: 1(music), 2(politics), 3(others)
+# - featured: true / false (default)
+# - labelID: mapping for labels table id
+
 labelInfos:
+  - id: "data_team_recommendation" #大家都在看(data_team_recommendation)
+    type: 3
+    label:
+      key: "streamer_label_explorepage_subtab"
+    featured: true
+    iconURL: " "
+    isHide: true
+    order: 20
+#-------上記"data_team_recommendation"の8行は変更しないこと-------------------------------------------------
+# JP label config
   - id: "2204_jp_surge" # 運営おすすめ
     type: 1
     labelID:
@@ -116,7 +131,7 @@ labelInfos:
     labelID:
     label: {key: streamer_jp_label_love_talk17}
     featured: true
-    order: 20
+    order: 21
     iconURL: "h"
     isHide: true
   - id: "jp_DJ" # DJ
@@ -124,7 +139,7 @@ labelInfos:
     labelID:
     label: {key: streamer_jp_label_DJ}
     featured: true
-    order: 21
+    order: 22
     iconURL: "h"
     isHide: true
   - id: "jp_audiostream" # ラジオ配信
@@ -132,7 +147,7 @@ labelInfos:
     labelID:
     label: {key: streamer_jp_label_audiostream}
     featured: true
-    order: 22
+    order: 23
     iconURL: "h"
     isHide: true
   - id: "2207_jp_dance17" #　ダンス
@@ -140,7 +155,7 @@ labelInfos:
     labelID:
     label: {key: streamer_jp_label_dance17}
     featured: true
-    order: 23
+    order: 24
     iconURL: "h"
     isHide: true
   - id: "2207_jp_sports17" #　スポーツ
@@ -148,7 +163,7 @@ labelInfos:
     labelID:
     label: {key: streamer_jp_label_sports17}
     featured: true
-    order: 24
+    order: 25
     iconURL: "h"
     isHide: true
   - id: "jp_lv70" #　Lv70以上
@@ -156,7 +171,7 @@ labelInfos:
     labelID:
     label: {key: streamer_jp_label_Lv70higher}
     featured: true
-    order: 25
+    order: 26
     iconURL: "h"
     isHide: true
   - id: "jp_lv50" # lv50以下
@@ -164,7 +179,7 @@ labelInfos:
     labelID:
     label: {key: streamer_jp_label_lv50}
     featured: true
-    order: 26
+    order: 27
     iconURL: "h"
     isHide: true
   - id: "jp_lv30" # lv30以下
@@ -172,7 +187,7 @@ labelInfos:
     labelID:
     label: {key: streamer_jp_label_lv30}
     featured: true
-    order: 27
+    order: 28
     iconURL: "h"
     isHide: true
   - id: "jp_girls" # 女子
@@ -180,7 +195,7 @@ labelInfos:
     labelID:
     label: {key: streamer_jp_label_girls}
     featured: true
-    order: 28
+    order: 29
     iconURL: "h"
     isHide: true
   - id: "jp_boys" # 男子
@@ -188,7 +203,7 @@ labelInfos:
     labelID:
     label: {key: streamer_jp_label_boys}
     featured: true
-    order: 29
+    order: 30
     iconURL: "h"
     isHide: true
   - id: "jp_show"  #熱門節目
@@ -202,7 +217,7 @@ labelInfos:
     labelID:
     label: {key: streamer_jp_label_realevent}
     featured: true
-    order: 30
+    order: 32
     iconURL: "h"
     isHide: true
   - id: "2211_jp_vs_tournament2022" # 202304_VS本戦
@@ -210,7 +225,7 @@ labelInfos:
     labelID:
     label: {key: streamer_jp_label_vs_tournament2022}
     featured: true
-    order: 31
+    order: 33
     iconURL: "h"
     isHide: true
   - id: "2305_jp_kansai" # ミセス関西コレクション2023
@@ -218,9 +233,10 @@ labelInfos:
     labelID:
     label: {key: streamer_jp_label_virtual}
     featured: true
-    order: 32
+    order: 34
     iconURL: "h"
     isHide: true
+
 
 #以下、未使用（過去分含む）------------------------------------------
   - id: "2207_jp_entertainment17" #　エンタメ
@@ -373,6 +389,7 @@ labelInfos:
 
 # 探索頁面會出現的label------------------------------------------
 exploreLabels:
+  - data_team_recommendation        # トレンド
 #  - jp_pickup        # パタパタ２
   - jp_recommend     # レコメンド,推薦
   - jp_music         # 音楽,音樂
@@ -1421,9 +1438,6 @@ labelWhiteList:
     - 0e3b107a-9712-4d77-99d6-09e8c9f5e07f # sarapomeshacho
 
 
-
-
-
 #下記より、JPまだ使ってないーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #（下記「useNewLabelWhiteList（時限設定可能）」も使えるようになりました。）
 useNewLabelWhiteList: false
@@ -1438,6 +1452,15 @@ useNewLabelWhiteList: false
 #     - userList: (If the start time and end time are not set, it will take effect directly without restriction)
 #       - userID0
 newLabelWhiteList:
+  # data team auto update start version 1, please don't copy it
+  data_team_recommendation:
+    - userList:
+      - "a3251943-fe02-4425-8f89-573edf423e86" # れい_reichannel
+      - "25f04237-8bd9-415e-4380-afcf558114bc" # kana_.jp
+      - "5cd24ae7-481d-40e5-8a53-49b12dac7b78" # MIKI.entertainer
+      - "119d02a6-3346-41d6-a313-0491a25ee542" # Yin_Ghibli0716
+  # data team auto update end version 1, please don't copy it
+
   exclusive:
 
   jp_talent:
