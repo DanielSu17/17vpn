@@ -81,16 +81,6 @@ sections:
     more: true
     orderModel: 2
 
-#  - id: Label # ミセス関西コレクション2023
-#    labelID: 2305_jp_kansai
-#    name:
-#      key: streamer_jp_label_kansai
-#    enable: true
-#    dedup: false
-#    minGrids: 1
-#    style: 3
-#    more: true
-
   - id: Latest # 新人(和『最新』同邏輯)
     name:
       key: tab_hot_2019q4_newstreamer
@@ -100,6 +90,16 @@ sections:
     style: 3
     more: true
     orderModel: 2
+
+  - id: Label # ミセス関西コレクション2023
+    labelID: 2305_jp_kansai
+    name:
+      key: streamer_jp_label_kansai
+    enable: true
+    dedup: false
+    minGrids: 1
+    style: 3
+    more: true
 
 #  - id: Label # 運営おすすめ
 #    labelID: 2204_jp_surge
@@ -111,16 +111,6 @@ sections:
 #    style: 3
 #    more: true
 
-  - id: NewestStreamer # D0 new streamer
-    name:
-      key: tab_hot_d0streamer
-    enable: true
-    dedup: true
-    minGrids: 1
-    style: 3
-    more: true
-    orderModel: 2
-
   - id: Label # Lv100以上
     labelID: 2203_jp_lv100
     name:
@@ -131,6 +121,16 @@ sections:
     style: 3
     more: true
     category: normal
+    orderModel: 2
+
+  - id: NewestStreamer # D0 new streamer
+    name:
+      key: tab_hot_d0streamer
+    enable: true
+    dedup: true
+    minGrids: 1
+    style: 3
+    more: true
     orderModel: 2
 
   - id: Label # 初見さん歓迎
