@@ -6,7 +6,7 @@ gamePoolUserID: "0c9fce4b-0c47-41b1-8116-27c5cb63e9db"
 #### Game Configs - PM can modify it according to the SPEC.
 ## recognize the revenue from the game pool.
 overflow:
-  size: 25000000 # While the pool balance is over this value, the game will be overflowed - transfer difference from pool to the revenue.
+  size: 40000000 # While the pool balance is over this value, the game will be overflowed - transfer difference from pool to the revenue.
   sequence: 20 # Check overflow every N rounds.
 
 ## Risk Control System
@@ -47,7 +47,7 @@ tax: # The tax of each round - always transfer from game pool to revenue each ro
   # 3/22 Switch from 2.5/5/5 to 0/6/6
   # 3/26 change tax from 0% to 1% to avoid logic error during Emergency 
 
-safeline: 22000000
+safeline: 35000000
 
 loadedgate: 100000
 
