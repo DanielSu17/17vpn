@@ -138,24 +138,36 @@ gameDuration:
 
 gameDurationOptions:
   - gameDuration: 180
-    name: {key: pk_game_duration_3_min}
+    name: {key: pk_select_time_mins}
   - gameDuration: 300
-    name: {key: pk_game_duration_5_min}
+    name: {key: pk_select_time_mins}
   - gameDuration: 600
-    name: {key: pk_game_duration_10_min}
+    name: {key: pk_select_time_mins}
   - gameDuration: 900
-    name: {key: pk_game_duration_15_min}
+    name: {key: pk_select_time_mins}
   - gameDuration: 1800
-    name: {key: pk_game_duration_30_min}
+    name: {key: pk_select_time_mins}
   - gameDuration: -1
-    name: {key: pk_game_duration_customize}
+    name: {key: pk_select_time_customize_selected＿mins}
     min: 180
     max: 7200
 
 maxTopicNum: 3
-defaultTopics: []
+defaultTopics: [chat]
 topicOptions:
-  - id: sing
-    name: {key: pk_topic_sing}
   - id: chat
-    name: {key: pk_topic_chat}
+    name: {key: pk_select_topics_chat}
+  - id: talent
+    name: {key: pk_select_topics_talent}
+  - id: singing
+    name: {key: pk_select_topics_singing}
+  - id: dance
+    name: {key: pk_select_topics_dance}
+  - id: game
+    name: {key: pk_select_topics_game}
+  - id: sport
+    name: {key: pk_select_topics_sport}
+  - id: visual_artist
+    name: {key: pk_select_topics_visual_artist}
+  - id: debate
+    name: {key: pk_select_topics_debate}
