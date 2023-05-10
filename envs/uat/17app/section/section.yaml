@@ -70,14 +70,38 @@ sections:
     more: true
     category: normal
     orderModel: 2
+  - id: RedEnvelope # 紅包
+    name:
+      key: tab_hot_2019q4_redenvelop
+    enable: true
+    minGrids: 0
+    style: 3
+    more: true
+    orderModel: 1
   - id: Show # 熱播節目
     name:
       key: tab_hot_2019q4_program
-    enable: false
-    dedup: false
-    minGrids: 1
+    enable: true
+    minGrids: 0
     style: 4
-    more: false
+    more: true
+    orderModel: 1
+  - id: TodayHotTopic # 投票
+    name:
+      key: tab_hot_2019q4_vote
+    enable: true
+    minGrids: 0
+    style: 3
+    more: true
+    orderModel: 1
+  - id: CrazyZoo # 荒唐動物園(遊戲類)
+    name:
+      key: tab_hot_2019q4_crazy_zoo
+    enable: false
+    minGrids: 0
+    style: 3
+    more: true
+    orderModel: 1
   - id: NewestStreamer # D0 new streamer 首日新手
     name:
       key: tab_hot_d0streamer
@@ -314,13 +338,6 @@ sections:
     more: true
     category: normal
     orderModel: 2
-  - id: TodayHotTopic # 投票
-    name:
-      key: tab_hot_2019q4_vote
-    enable: true
-    minGrids: 1
-    style: 3
-    more: true
   - id: Label # 男生
     labelID: male
     name:
@@ -438,21 +455,6 @@ sections:
     style: 3
     more: true
 
-  - id: CrazyZoo # 荒唐動物園(遊戲類)
-    name:
-      key: tab_hot_2019q4_crazy_zoo
-    enable: false
-    minGrids: 5
-    style: 3
-    more: true
-
-  - id: RedEnvelope # 紅包
-    name:
-      key: tab_hot_2019q4_redenvelop
-    enable: false
-    minGrids: 5
-    style: 3
-    more: true
   - id: Incentive
     name:
       key: tab_hot_incentive_section  # FIXME: temp key name. Change key name if PM provides
