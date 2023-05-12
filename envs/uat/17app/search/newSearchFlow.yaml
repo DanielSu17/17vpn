@@ -1,3 +1,8 @@
 # supportRegionFilter region letter needs to be capitalized
 supportRegionFilter: [TW, JP, HK, US, GLOBAL]
 enableSendSuggestionsToML: true
+
+# filterOutRegex is also exists at 17app/user/search.yaml for web search in service `api-usersearch`
+filterOutRegex:
+  - 17\.media$
+  - 17\.live$
