@@ -1,0 +1,21 @@
+# type 1: 背包任務, 2: 收點, 3: 愛心
+missions:
+  # 同一位主播、同一天內開播之直播間主播跟聽眾共完成背包任務X次。
+  - id: live_mission_feverstage_1
+    type: 1
+    threshold: 3
+    gift_id: gift_pet_mission_1
+    extra_info:
+      baggage_mission_id: "shine2305"
+  # 同一位主播、同一天內開播之直播間，收點數累積 X
+  - id: live_mission_feverstage_2
+    type: 2
+    threshold: 50000
+    gift_id: gift_pet_mission_2
+  # 同一位主播、同一天內開播之直播間，愛心數累積 > X
+  - id: live_mission_feverstage_3
+    type: 3
+    threshold: 3
+    gift_id: gift_pet_mission_3
+# 重置任務時間 (ex: 6表示當地時間早上6點重置)
+reset_local_hour: 6
