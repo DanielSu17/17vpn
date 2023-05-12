@@ -264,11 +264,17 @@ regionConfigs:
     lowerBoundOfDeltaRatioForExchangeRate: 0.02
 
   PH:
+    regions:
+      - PH
+      - SG
+      - MY
     sellingChannelGroups:
       3: # 17Live
         - 33 # SellingChannelWebTw17LiveECPay
         - 61 # SellingChannelWebSea17LiveNewebpay
         - 77 # SellingChannelWebPh17LivePayermax
+        - 78 # SellingChannelWebMy17LivePayermax
+        - 79 # SellingChannelWebSg17LivePayermax
     payMethods:
       - 56 # ECPAY
       - 72 # Newebpay
@@ -276,6 +282,8 @@ regionConfigs:
     currencies:
       - PHP
       - TWD
+      - MYR
+      - SGD
     localCurrency: PHP
     upperBoundOfDeltaRatioForExchangeRate: 0.02
     lowerBoundOfDeltaRatioForExchangeRate: 0.02
@@ -294,11 +302,17 @@ regionConfigs:
     lowerBoundOfDeltaRatioForExchangeRate: 0.02
 
   MY:
+    regions:
+      - PH
+      - SG
+      - MY
     sellingChannelGroups:
       3: # 17Live
         - 33 # SellingChannelWebTw17LiveECPay
         - 61 # SellingChannelWebSea17LiveNewebpay
+        - 77 # SellingChannelWebPh17LivePayermax
         - 78 # SellingChannelWebMy17LivePayermax
+        - 79 # SellingChannelWebSg17LivePayermax
     payMethods:
       - 56 # ECPAY
       - 72 # Newebpay
@@ -306,15 +320,23 @@ regionConfigs:
     currencies:
       - MYR
       - TWD
+      - PHP
+      - SGD
     localCurrency: MYR
     upperBoundOfDeltaRatioForExchangeRate: 0.02
     lowerBoundOfDeltaRatioForExchangeRate: 0.02
 
   SG:
+    regions:
+      - PH
+      - SG
+      - MY
     sellingChannelGroups:
       3: # 17Live
        - 33 # SellingChannelWebTw17LiveECPay
        - 61 # SellingChannelWebSea17LiveNewebpay
+       - 77 # SellingChannelWebPh17LivePayermax
+       - 78 # SellingChannelWebMy17LivePayermax
        - 79 # SellingChannelWebSg17LivePayermax
     payMethods:
       - 56 # ECPAY
@@ -323,6 +345,8 @@ regionConfigs:
     currencies:
       - SGD
       - TWD
+      - PHP
+      - MYR
     localCurrency: SGD
     upperBoundOfDeltaRatioForExchangeRate: 0.02
     lowerBoundOfDeltaRatioForExchangeRate: 0.02
