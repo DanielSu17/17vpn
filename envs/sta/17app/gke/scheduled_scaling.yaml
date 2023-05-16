@@ -24,19 +24,14 @@
   - name: k8ssta-concert-trade-main
     minReplicas: 30
 
-# 0511 exp: vote
-- startTime: "2023-05-11 11:30:00 (GMT+0800)"
-  endTime: "2023-05-11 13:40:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8ssta-revprox-tw-main
-    minReplicas: 36
-
-# 0511 exp: /user/infoV2
+# 0516 gokart game stress testing
 # ref. TW Events prescaling.sh -> https://github.com/17media/configs/blob/master/prescaling.sh#L57-L74
-- startTime: "2023-05-11 13:50:00 (GMT+0800)"
-  endTime: "2023-05-11 15:30:00 (GMT+0800)"
+- startTime: "2023-05-16 16:30:00 (GMT+0800)"
+  endTime: "2023-05-16 18:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8ssta-goapi-main
     minReplicas: 70
+  - name: k8ssta-gotrade-main
+    minReplicas: 30
   - name: k8ssta-revprox-tw-main
     minReplicas: 36
