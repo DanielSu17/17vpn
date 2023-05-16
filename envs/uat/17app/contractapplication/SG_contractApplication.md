@@ -1,1 +1,1 @@
-#Contract Application Settings (SG)
+# [SG] Contract Application Settings

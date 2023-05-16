@@ -1,1 +1,1 @@
-#Contract Application Settings (Taiwan)
+# [TW] Contract Application Settings

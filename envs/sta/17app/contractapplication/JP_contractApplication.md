@@ -1,1 +1,1 @@
-#Contract Application Settings (Japan)
+# [JP] Contract Application Settings

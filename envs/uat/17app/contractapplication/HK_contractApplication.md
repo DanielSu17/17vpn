@@ -1,1 +1,1 @@
-#Contract Application Settings (Hong Kong)
+# [HK] Contract Application Settings

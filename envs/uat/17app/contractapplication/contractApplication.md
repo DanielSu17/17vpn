@@ -1,2 +1,1 @@
-#Contract Application Settings 
-#(TW)
+# [TW] Contract Application Settings

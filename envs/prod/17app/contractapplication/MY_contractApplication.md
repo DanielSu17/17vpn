@@ -1,1 +1,1 @@
-#Contract Application Settings (MY)
+# [MY] Contract Application Settings

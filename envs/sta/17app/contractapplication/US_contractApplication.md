@@ -1,1 +1,1 @@
-#Contract Application Settings (US)
+# [US] Contract Application Settings
