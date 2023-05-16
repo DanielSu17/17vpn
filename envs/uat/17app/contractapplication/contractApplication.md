@@ -1,1 +1,2 @@
-#Contract Application Settings (Taiwan)
+#Contract Application Settings 
+#(TW)
