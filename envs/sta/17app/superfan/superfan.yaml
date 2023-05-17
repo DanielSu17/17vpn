@@ -62,3 +62,6 @@ engagements:
 # and larger than 100 will be set to 100.
 topLevelValueMultiplier: 10
 enableDecay: false
+# injectLevelForFolloweesLimit defines the limit of number of injecting superfan level of followees in get-followees API.
+# The range of valid limit is [0, 100]. Higher limit will cause higher latency of get-followees API
+injectLevelForFolloweesLimit: 50
