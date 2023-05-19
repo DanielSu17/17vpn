@@ -28,7 +28,7 @@ partitionPlan:
   switchInsertTimeMs: 1586491200000
 
 pointReceiverLogsPlan:
-  enableCache: false
+  enableCache: true
   cachingLimitQPS: 100
   maxCachingWindowSec: 2592000 # 30 days
   dayOffset: -16
@@ -77,5 +77,5 @@ enableGivingPointWithPrice: true
 enableRefundTradeCommand: true
 
 pointRevenueRatio:
-  enableCache: false
+  enableCache: true
   enableLogInfoStartTime: "2023-05-01T13:00:00+08:00"
