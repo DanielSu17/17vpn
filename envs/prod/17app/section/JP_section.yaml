@@ -386,6 +386,30 @@ sections:
     style: 5
     more: false
 
+  - id: Label # 今月誕生日
+    labelID: jp_month_berthday
+    name:
+      key: streamer_jp_label_month_birthday
+    enable: true
+    dedup: false
+    minGrids: 3
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # レクチャー配信
+    labelID: jp_training_stream
+    name:
+      key: streamer_jp_label_training_stream
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
 #  - id: Label # 202303_リアルイベント
 #    labelID: 2303_jp_realevent
 #    name:
@@ -395,27 +419,6 @@ sections:
 #    minGrids: 0
 #    style: 3
 #    more: true
-
-#  - id: Label # 202304_VS本戦
-#    labelID: 2211_jp_vs_tournament2022
-#    name:
-#      key: streamer_jp_label_vs_tournament2022
-#    enable: true
-#    dedup: false
-#    minGrids: 0
-#    style: 3
-#    more: true
-
-#  - id: Label # 運営おすすめ
-#    labelID: 2204_jp_surge
-#    name:
-#      key: streamer_jp_label_surge
-#    enable: true
-#    dedup: true
-#    minGrids: 0
-#    style: 3
-#    more: true
-
 
 #未使用ジャンルーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #  - id: Label # エンタメ
@@ -505,6 +508,26 @@ sections:
 #    enable: true
 #    dedup: false
 #    minGrids: 100
+#    style: 3
+#    more: true
+
+#  - id: Label # 202304_VS本戦
+#    labelID: 2211_jp_vs_tournament2022
+#    name:
+#      key: streamer_jp_label_vs_tournament2022
+#    enable: true
+#    dedup: false
+#    minGrids: 0
+#    style: 3
+#    more: true
+
+#  - id: Label # 運営おすすめ
+#    labelID: 2204_jp_surge
+#    name:
+#      key: streamer_jp_label_surge
+#    enable: true
+#    dedup: true
+#    minGrids: 0
 #    style: 3
 #    more: true
 
