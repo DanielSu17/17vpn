@@ -1,0 +1,99 @@
+# developing
+missions:
+- id: "fe680c9a-b93c-4e55-8878-efc1f10dd559"
+  enabled: true
+  highlighted: true
+  regionGroups: ["TW", "US", "JP"]
+  targetGameID: "allgames"
+  goalValue: 3
+  # pipeline:
+  #   - action: "eventFilter" 
+  #     attribute:
+  #       eventName: "bet"
+  #       filters:
+  #         - "pineapple"
+  #         - "blueberry"
+  #       value: 0
+  #   - action: "aggregate"
+  #     attribute:        
+  #       groupBy: "day"
+  #       ops: "sum" 
+  #       target: "value"
+  #       threshold: 300000    
+  i18nDescription: "mission1Desc"
+  reward:
+    type: 1
+    id: "welcome_newbiespecial"
+    amount: 5
+    expiredTimeSecs: 86400  
+  selectedUserIDs:
+    - "235c60b5-3c62-4a9b-97e8-d849d16e0d21"
+    - "64283cb4-7d13-4ed1-98d9-d33070a7fe30"
+  category: "daily"
+- id: "an3423a-341a-4e55-8878-kkb1f10dd400"
+  enabled: true
+  highlighted: true
+  regionGroups: ["TW", "US", "JP"]
+  targetGameID: "allgames"
+  goalValue: 10
+  i18nDescription: "mission2Desc"
+  reward:
+    type: 1
+    id: "welcome_newbiespecial"
+    amount: 5
+    expiredTimeSecs: 86400  
+  selectedUserIDs:
+    - "235c60b5-3c62-4a9b-97e8-d849d16e0d21"
+    - "64283cb4-7d13-4ed1-98d9-d33070a7fe30"
+  category: "daily"
+
+# reward type:
+#  0: dummy
+#  1: baggage
+#  2: badge
+
+# categories:
+#   daily:
+#     nameI18nkey: "dailynamekey"
+#     startFrom: "2023-05-16 15:00:00 (GMT+0800)"
+#     endAt: "2023-12-31 23:59:59 (GMT+0800)"
+#     recurrence: 1
+#     type: "daily"
+#   achievement:
+#     nameI18nkey: "achievementnamekey"
+#     startFrom: "2023-05-16 15:00:00 (GMT+0800)"
+#     endAt: "2023-12-31 23:59:59 (GMT+0800)"
+#     recurrence: 0
+#     type: "lifetime"
+#   limited1:
+#     nameI18nkey: "limited1namekey"
+#     startFrom: "2023-05-16 15:00:00 (GMT+0800)"
+#     endAt: "2023-12-31 23:59:59 (GMT+0800)"
+#     recurrence: 0
+#     type: "limited"
+#   limited2:
+#     nameI18nkey: "limited2namekey"
+#     startFrom: "2023-05-16 15:00:00 (GMT+0800)"
+#     endAt: "2023-12-31 23:59:59 (GMT+0800)"
+#     recurrence: 0
+#     type: "limited"    
+    
+# recurrence:
+#  0: once
+#  1: daily
+
+# type:
+#  0: limited
+#  1: lifetime
+#  2: daily
+
+# regionGroupCategoriesOrder:
+#   TW:
+#   - "daily"
+#   - "achievement"
+#   - "limited1"  
+#   JP:
+#   - "limited1"
+#   - "limited2"
+#   - "daily"
+#   - "achievement"
