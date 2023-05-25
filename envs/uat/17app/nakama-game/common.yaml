@@ -356,15 +356,15 @@ games:
       enable: false
       ios: "3.126.0"
       android: "2.41.0"
-  test:
+  greedygame:
     provider: "xgps"
     enable: true
-    gameID: "ferriswheel"
+    gameID: "greedygame"
     icon: "https://png.pngtree.com/element_our/20190602/ourlarge/pngtree-cartoon-color-ferris-wheel-illustration-image_1418062.jpg"
     getGameUrl: "https://nakama-trade-api-uat.17app.co/api/v1/games/greedygame/gameUrl"
     webViewBgColor: "#ff4d7d"
-    nameI18nkey: "ferriswheel"
-    descI18nkey: "ferriswheel"
+    nameI18nkey: "ld_name_key"
+    descI18nkey: "ld_desc_key"
     versionControl:
       enable: false
       ios: "3.126.0"
@@ -374,6 +374,7 @@ games:
 regionGameOrder:
   TW:
     - "soccerxgps"
+    - "greedygame"
     - "onmyoji"
     - "iceandfire"
    # - "fruitfarm2"
