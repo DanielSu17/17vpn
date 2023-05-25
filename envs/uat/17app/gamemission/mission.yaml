@@ -1,35 +1,72 @@
-# developing
+
+
+# Reward structure:
+## type: type of reward, 0: dummy, 1: baggage, 2: badge (int)
+## id: ID of reward in this type, e.g. giftID, badgeID (string)
+## iconURL: iconURL of reward (string, optional for some type)
+## i18nDescription: description of reward (i18n, optional for some type)
+### key: i18n key (string)
+### params: parameters of i18n (array of Param)
+#### value: value of parameter (string)
+#### mapOption: map option of parameter 
+#### fontAttribute: font attribute of parameter (fontAttribute, optional)
+##### textColor: text color of font attribute (string)
+## value: value of reward (int, optional for some type)
+## quantity: quantity of reward (int, optional for some type)
+## expiredTimeSec: expired time of reward (int, optional for some type)
+
+# Reward example:
+# reward:
+#   type: 1
+#   id: "super_idol_gift"
+#   iconURL: "http://cdn.17app.co/2e354e54-b9c8-4f94-9513-cee6beb6988b.png"
+#   i18nDescription:
+#     key: "super_idol_gift_desc"
+#     params:
+#       - value: "5"
+#         mapOption: 0
+#         fontAttribute:
+#           textColor: "#FF0000"
+#       - value: "10"
+#   value: 5
+#   quantity: 10
+#   expiredTimeSec: 86400
+
+
+
+
+
 missions:
-- id: "fe680c9a-b93c-4e55-8878-efc1f10dd559"
-  enabled: true
-  highlighted: true
-  regionGroups: ["TW", "US", "JP"]
-  targetGameID: "allgames"
-  goalValue: 3
-  # pipeline:
-  #   - action: "eventFilter" 
-  #     attribute:
-  #       eventName: "bet"
-  #       filters:
-  #         - "pineapple"
-  #         - "blueberry"
-  #       value: 0
-  #   - action: "aggregate"
-  #     attribute:        
-  #       groupBy: "day"
-  #       ops: "sum" 
-  #       target: "value"
-  #       threshold: 300000    
-  i18nDescription: "mission1Desc"
-  reward:
-    type: 1
-    id: "welcome_newbiespecial"
-    amount: 5
-    expiredTimeSecs: 86400  
-  selectedUserIDs:
-    - "235c60b5-3c62-4a9b-97e8-d849d16e0d21"
-    - "64283cb4-7d13-4ed1-98d9-d33070a7fe30"
-  category: "daily"
+# - id: "fe680c9a-b93c-4e55-8878-efc1f10dd559"
+#   enabled: true
+#   highlighted: true
+#   regionGroups: ["TW", "US", "JP"]
+#   targetGameID: "allgames"
+#   goalValue: 3
+#   pipeline:
+#     - action: "eventFilter" 
+#       attribute:
+#         eventName: "bet"
+#         filters:
+#           - "pineapple"
+#           - "blueberry"
+#         value: 0
+#     - action: "aggregate"
+#       attribute:        
+#         groupBy: "day"
+#         ops: "sum" 
+#         target: "value"
+#         threshold: 300000    
+#   i18nDescription: "mission1Desc"
+#   reward:
+#     type: 1
+#     id: "welcome_newbiespecial"
+#     amount: 5
+#     expiredTimeSecs: 86400  
+#   selectedUserIDs:
+#     - "235c60b5-3c62-4a9b-97e8-d849d16e0d21"
+#     - "64283cb4-7d13-4ed1-98d9-d33070a7fe30"
+#   category: "daily"
 - id: "an3423a-341a-4e55-8878-kkb1f10dd400"
   enabled: true
   highlighted: true
@@ -39,18 +76,20 @@ missions:
   i18nDescription: "mission2Desc"
   reward:
     type: 1
-    id: "welcome_newbiespecial"
-    amount: 5
-    expiredTimeSecs: 86400  
-  selectedUserIDs:
-    - "235c60b5-3c62-4a9b-97e8-d849d16e0d21"
-    - "64283cb4-7d13-4ed1-98d9-d33070a7fe30"
-  category: "daily"
+    id: "super_idol_gift"
+    iconURL: "http://cdn.17app.co/2e354e54-b9c8-4f94-9513-cee6beb6988b.png"
+    i18nDescription:
+      key: "super_idol_gift_desc"
+      params:
+        - value: "5"
+          mapOption: 0
+          fontAttribute:
+            textColor: "#FF0000"
+        - value: "10"
+    value: 5
+    quantity: 10
+    expiredTimeSec: 86400
 
-# reward type:
-#  0: dummy
-#  1: baggage
-#  2: badge
 
 # categories:
 #   daily:
