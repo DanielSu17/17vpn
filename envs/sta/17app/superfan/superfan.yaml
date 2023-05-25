@@ -5,53 +5,53 @@ superfanLevels:
     badgeID: fanlevel_badge_0
     badgeIconURL: http://cdn.17app.co/7733f4b8-edbe-4b80-8556-1b05a858cafb.png
     decayInfos:
-      - decayPerMinute: 0
-        startTime: 2023-04-25 00:00:00 (GMT+0800)
+      - decayPerMinute: 5
+        startTime: 2023-05-06 00:00:00 (GMT+0800)
   - level: 1
-    requiredFanExp: 100
+    requiredFanExp: 350
     snackValue: 100
     badgeID: fanlevel_badge_1
     badgeIconURL: http://cdn.17app.co/7733f4b8-edbe-4b80-8556-1b05a858cafb.png
     animationID: superfan_levelup_lv1
     decayInfos:
-      - decayPerMinute: 1
-        startTime: 2023-04-25 00:00:00 (GMT+0800)
+      - decayPerMinute: 10
+        startTime: 2023-05-06 00:00:00 (GMT+0800)
   - level: 2
-    requiredFanExp: 400
+    requiredFanExp: 2100
     snackValue: 150
     badgeID: fanlevel_badge_2
     badgeIconURL: http://cdn.17app.co/7733f4b8-edbe-4b80-8556-1b05a858cafb.png
     animationID: superfan_levelup_lv2
     decayInfos:
-      - decayPerMinute: 2
-        startTime: 2023-04-25 00:00:00 (GMT+0800)
+      - decayPerMinute: 15
+        startTime: 2023-05-06 00:00:00 (GMT+0800)
   - level: 3
-    requiredFanExp: 1000
+    requiredFanExp: 5250
     snackValue: 200
     badgeID: fanlevel_badge_3
     badgeIconURL: http://cdn.17app.co/7733f4b8-edbe-4b80-8556-1b05a858cafb.png
     animationID: superfan_levelup_lv3
     decayInfos:
-      - decayPerMinute: 3
-        startTime: 2023-04-25 00:00:00 (GMT+0800)
+      - decayPerMinute: 20
+        startTime: 2023-05-06 00:00:00 (GMT+0800)
   - level: 4
-    requiredFanExp: 2000
+    requiredFanExp: 14000
     snackValue: 250
     badgeID: fanlevel_badge_4
     badgeIconURL: http://cdn.17app.co/7733f4b8-edbe-4b80-8556-1b05a858cafb.png
     animationID: superfan_levelup_lv4
     decayInfos:
-      - decayPerMinute: 4
-        startTime: 2023-04-25 00:00:00 (GMT+0800)
+      - decayPerMinute: 25
+        startTime: 2023-05-06 00:00:00 (GMT+0800)
   - level: 5
-    requiredFanExp: 6000
+    requiredFanExp: 35000
     snackValue: 300
     badgeID: fanlevel_badge_5
     badgeIconURL: http://cdn.17app.co/7733f4b8-edbe-4b80-8556-1b05a858cafb.png
     animationID: superfan_levelup_lv5
     decayInfos:
-      - decayPerMinute: 5
-        startTime: 2023-04-25 00:00:00 (GMT+0800)
+      - decayPerMinute: 30
+        startTime: 2023-05-06 00:00:00 (GMT+0800)
 engagements:
   - type: 1
     fanExp: 50
@@ -61,7 +61,7 @@ engagements:
 # The range of valid multipler is [1, 100]. Multiplier lower than 1 will be set to 10 by default,
 # and larger than 100 will be set to 100.
 topLevelValueMultiplier: 10
-enableDecay: false
+enableDecay: true
 # injectLevelForFolloweesLimit defines the limit of number of injecting superfan level of followees in get-followees API.
 # The range of valid limit is [0, 100]. Higher limit will cause higher latency of get-followees API
 injectLevelForFolloweesLimit: 50
