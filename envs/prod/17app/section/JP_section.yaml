@@ -93,6 +93,16 @@ sections:
     style: 3
     more: true
 
+  - id: NewestStreamer # D0 new streamer
+    name:
+      key: tab_hot_d0streamer
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    orderModel: 2
+
   - id: Label # スター（Lv100以上）
     labelID: 2203_jp_lv100
     name:
@@ -105,20 +115,34 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: NewestStreamer # D0 new streamer
+  - id: Label # ミドル（Lv70以上）
+    labelID: jp_lv70
     name:
-      key: tab_hot_d0streamer
+      key: streamer_jp_label_Lv70higher
+    enable: true
+    dedup: true
+    minGrids: 2
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: Label # ルーキー（Lv50以下）
+    labelID: jp_lv50
+    name:
+      key: streamer_jp_label_lv50
     enable: true
     dedup: true
     minGrids: 3
     style: 3
     more: true
+    category: normal
     orderModel: 2
 
-  - id: Label # 初見さん歓迎
-    labelID: jp_welcome
+  - id: Label # ビギナー（Lv30以下）
+    labelID: jp_lv30
     name:
-      key: streamer_jp_label_welcome
+      key: streamer_jp_label_lv30
     enable: true
     dedup: true
     minGrids: 3
@@ -196,23 +220,6 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: GroupCall # コラボ配信（GroupCall）
-    name:
-      key: group_stream_v3hotpage
-    enable: true
-    dedup: true
-    minGrids: 2
-    style: 9
-    more: true
-
-  - id: ArchiveVideo # 典藏影片  
-    name:
-      key: archives_homepage_title
-    enable: true
-    minGrids: 3
-    style: 11
-    more: true
-
   - id: Label # お絵描き・創作・制作
     labelID: 2111_jp_sousaku
     name:
@@ -225,46 +232,31 @@ sections:
     category: normal
     orderModel: 2
 
+  - id: Label # 今月誕生日
+    labelID: jp_month_birthday
+    name:
+      key: streamer_jp_label_month_birthday
+    enable: true
+    dedup: false
+    minGrids: 3
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
+  - id: GroupCall # コラボ配信（GroupCall）
+    name:
+      key: group_stream_v3hotpage
+    enable: true
+    dedup: true
+    minGrids: 2
+    style: 9
+    more: true
+
   - id: Label # アニマル
     labelID: jp_animal
     name:
       key: streamer_jp_label_animal
-    enable: true
-    dedup: true
-    minGrids: 3
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
-  - id: Label # お絵かき
-    labelID: 2111_jp_oekaki
-    name:
-      key: streamer_jp_label_oekaki
-    enable: true
-    dedup: true
-    minGrids: 3
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
-  - id: Label # クッキング
-    labelID: 2207_jp_cooking17
-    name:
-      key: streamer_jp_label_cooking17
-    enable: true
-    dedup: true
-    minGrids: 3
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
-  - id: Label # 恋愛トーク
-    labelID: 2207_jp_love_talk17
-    name:
-      key: streamer_jp_label_love_talk17
     enable: true
     dedup: true
     minGrids: 3
@@ -294,6 +286,18 @@ sections:
     style: 3 
     more: true
 
+  - id: Label # クッキング
+    labelID: 2207_jp_cooking17
+    name:
+      key: streamer_jp_label_cooking17
+    enable: true
+    dedup: true
+    minGrids: 3
+    style: 3
+    more: true
+    category: normal
+    orderModel: 2
+
   - id: Label # ダンス
     labelID: 2207_jp_dance17
     name:
@@ -318,58 +322,18 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: Label # ミドル（Lv70以上）
-    labelID: jp_lv70
+  - id: ArchiveVideo # 典藏影片  
     name:
-      key: streamer_jp_label_Lv70higher
+      key: archives_homepage_title
     enable: true
-    dedup: true
-    minGrids: 2
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
-  - id: Label # ルーキー（Lv50以下）
-    labelID: jp_lv50
-    name:
-      key: streamer_jp_label_lv50
-    enable: true
-    dedup: true
     minGrids: 3
-    style: 3
+    style: 11
     more: true
-    category: normal
-    orderModel: 2
 
-  - id: Label # ビギナー（Lv30以下）
-    labelID: jp_lv30
+  - id: Label # レクチャー配信
+    labelID: jp_training_stream
     name:
-      key: streamer_jp_label_lv30
-    enable: true
-    dedup: true
-    minGrids: 3
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
-  - id: Label # 女子
-    labelID: jp_girls
-    name:
-      key: streamer_jp_label_girls
-    enable: true
-    dedup: true
-    minGrids: 3
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
-  - id: Label # 男子
-    labelID: jp_boys
-    name:
-      key: streamer_jp_label_boys
+      key: streamer_jp_label_training_stream
     enable: true
     dedup: true
     minGrids: 3
@@ -386,30 +350,6 @@ sections:
     style: 5
     more: false
 
-  - id: Label # 今月誕生日
-    labelID: jp_month_birthday
-    name:
-      key: streamer_jp_label_month_birthday
-    enable: true
-    dedup: false
-    minGrids: 3
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
-  - id: Label # レクチャー配信
-    labelID: jp_training_stream
-    name:
-      key: streamer_jp_label_training_stream
-    enable: true
-    dedup: true
-    minGrids: 3
-    style: 3
-    more: true
-    category: normal
-    orderModel: 2
-
 #  - id: Label # 202303_リアルイベント
 #    labelID: 2303_jp_realevent
 #    name:
@@ -419,7 +359,6 @@ sections:
 #    minGrids: 0
 #    style: 3
 #    more: true
-
 
 #未使用ジャンルーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #  - id: Label # エンタメ
@@ -494,6 +433,66 @@ sections:
 #    labelID: jp_lv10
 #    name:
 #      key: streamer_jp_label_lv10
+#    enable: true
+#    dedup: true
+#    minGrids: 3
+#    style: 3
+#    more: true
+#    category: normal
+#    orderModel: 2
+
+#  - id: Label # 初見さん歓迎
+#    labelID: jp_welcome
+#    name:
+#      key: streamer_jp_label_welcome
+#    enable: true
+#    dedup: true
+#    minGrids: 3
+#    style: 3
+#    more: true
+#    category: normal
+#    orderModel: 2
+
+#  - id: Label # お絵かき
+#    labelID: 2111_jp_oekaki
+#    name:
+#      key: streamer_jp_label_oekaki
+#    enable: true
+#    dedup: true
+#    minGrids: 3
+#    style: 3
+#    more: true
+#    category: normal
+#    orderModel: 2
+
+#  - id: Label # 恋愛トーク
+#    labelID: 2207_jp_love_talk17
+#    name:
+#      key: streamer_jp_label_love_talk17
+#    enable: true
+#    dedup: true
+#    minGrids: 3
+#    style: 3
+#    more: true
+#    category: normal
+#    orderModel: 2
+
+#  - id: Label # 女子
+#    labelID: jp_girls
+#    name:
+#      key: streamer_jp_label_girls
+#    enable: true
+#    dedup: true
+#    minGrids: 3
+#    style: 3
+#    more: true
+#    category: normal
+#    orderModel: 2
+
+#  - id: Label # 男子
+#    labelID: jp_boys
+#    name:
+#      key: streamer_jp_label_boys
 #    enable: true
 #    dedup: true
 #    minGrids: 3
