@@ -1,7 +1,5 @@
-
-
 # Reward structure:
-## type: type of reward, 0: dummy, 1: baggage, 2: badge (int)
+## type: type of reward (int)
 ## id: ID of reward in this type, e.g. giftID, badgeID (string)
 ## iconURL: iconURL of reward (string, optional for some type)
 ## i18nDescription: description of reward (i18n, optional for some type)
@@ -17,24 +15,31 @@
 
 # Reward example:
 # reward:
-#   type: 1
-#   id: "super_idol_gift"
-#   iconURL: "http://cdn.17app.co/2e354e54-b9c8-4f94-9513-cee6beb6988b.png"
-#   i18nDescription:
-#     key: "super_idol_gift_desc"
-#     params:
-#       - value: "5"
-#         mapOption: 0
-#         fontAttribute:
-#           textColor: "#FF0000"
-#       - value: "10"
-#   value: 5
-#   quantity: 10
-#   expiredTimeSec: 86400
-
-
-
-
+#   type: 1 # baggage
+#   id: "super_idol_gift" # giftID
+#   # iconURL: (optional) default is gift icon URL
+#   # i18nDescription: (optional) default is gift description
+#   # value: 5 (optional) point of gift
+#   quantity: 10 # quantity of reward
+#   expiredTimeSec: 86400 # expired time of reward
+#
+# reward:
+#   type: 2 # badge
+#   id: "super_idol_badge" # badgeID
+#   # iconURL: (optional) default is badge icon URL
+#   # i18nDescription: (optional) default is badge description
+#   # value: (not use)
+#   # quantity: (not use)
+#   # expiredTimeSec: (not use)
+#
+# reward:
+#   type: 3 # exp
+#   # id: (not use)
+#   # iconURL: (not use)
+#   # i18nDescription: (optional) default is exp description
+#   value: 100 # exp value
+#   # quantity: (not use)
+#   # expiredTimeSec: (not use)
 
 missions:
 # - id: "fe680c9a-b93c-4e55-8878-efc1f10dd559"
