@@ -240,12 +240,13 @@ hourRules:
       - value: 23
 
 gameDuration:
-# match: second
+# match: second - default value
   random: 300
   friend: 300
   schedule: 600
 
 gameDurationOptions:
+# One of the options should be the default value.
   - gameDuration: 180
     name: {key: pk_select_time_mins}
   - gameDuration: 300

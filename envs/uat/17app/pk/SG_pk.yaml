@@ -152,12 +152,13 @@ weeklyLBTopCount: 3
 showPKStarLB: true #是否於直播間顯示pk小時榜
 
 gameDuration:
-# match: second
+# match: second - default value
   random: 120
   friend: 120
   schedule: 60
 
 gameDurationOptions:
+# One of the options should be the default value.
   - gameDuration: 60
     name: {key: pk_select_time_mins}
   - gameDuration: 120

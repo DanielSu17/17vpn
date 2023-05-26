@@ -30,6 +30,11 @@ rules:
   - type: 2
     token: { key: pk_rule_content1-1 }
   - type: 2
+    token: { key: pk_rule_content_random_topic_description }
+    versionControl:
+      ios: "3.238.0"
+      android: "2.153.0"
+  - type: 2
     token: { key: pk_rule_content1-2 }
   - type: 2
     token: { key: pk_rule_content1-3 }
@@ -48,6 +53,11 @@ rules:
   - type: 2
     token: { key: pk_rule_content3-2 }
   - type: 2
+    token: { key: pk_rule_content_other_rules_inappropriate }
+    versionControl:
+      ios: "3.238.0"
+      android: "2.153.0"
+  - type: 2
     token: { key: pk_rule_content3-3 }
   - type: 2
     token: { key: pk_rule_content3-4 }
@@ -62,11 +72,16 @@ friendPkRules:
     token: { key: pk_friend_rule_content1 }
   - type: 2
     token:
-      key: pk_friend_rule_content2 
+      key: pk_friend_rule_content2
       params: 
         - value: *receiverMatchingSecond
   - type: 2
     token: { key: pk_friend_rule_content3 }
+  - type: 2
+    token: { key: pk_friend_rule_content4}
+    versionControl:
+      ios: "3.238.0"
+      android: "2.153.0"
 
 winFilterAnimationID: filter_win
 loseFilterAnimationID: filter_lose
