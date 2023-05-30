@@ -461,7 +461,41 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-  
+
+  #6月チャージキャンペーン Ran
+- ID: 892907c4-bd3a-438f-8f0d-852f4e259d01
+  type: 10
+  category: 0
+  lifeCycle: 1
+  targetAudience: 0
+  levelRange:
+    min: 1
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2306_jp_pdt_charge_01
+    amount: 3
+    expireTimeSecs: 86400
+  i18nTitle: baggage_mission_IAP_reward_jp_daily_charge_name_02
+  i18nTitleParams:
+  - value: "1"
+    mapOption: 0
+    fontAttribute: null
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: baggage_mission_IAP_reward_jp_charge_desc_02
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2023-05-30 15:00:00 (GMT+0900)
+    endTime: 2023-06-20 23:59:59 (GMT+0900)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: false
+  withReminder: false
+
 #新人ライバーの進撃vol.67
 - ID: 0e42e86f-48cb-47da-a928-783fb7e1a26b
   type: 8
