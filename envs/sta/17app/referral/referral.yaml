@@ -105,7 +105,8 @@ quests:
         withReminder: true
         voucherReward:
           type: 3
-          itemID: 1909_upgrade_boat_bag
+          #itemID: 1909_upgrade_boat_bag 該禮物已不在，導致 sta 領取行為異常，修改成其他禮物ID
+          itemID: giftpack_jetcoaster
           amount: 20
           intervalSec: 604800
       - type: 15 # phone binding
@@ -115,6 +116,7 @@ quests:
         withReminder: true
         voucherReward:
           type: 3
-          itemID: fall_in_love_dinner_bag
+          #itemID: fall_in_love_dinner_bag 該禮物已不在，導致 sta 領取行為異常，修改成其他禮物ID
+          itemID: giftpack_jetcoaster
           amount: 5
           intervalSec: 604800
