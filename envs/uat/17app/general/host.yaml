@@ -40,8 +40,10 @@ DEFAULT:
     pullURL: "https://17live-pull-rtmp-stag.17app.co"
   ivs:
     serviceName: "sta"
+    #apiPath is deprecated
     apiPath: "http://17live-api-tw-stag.17app.co"
     pullURL: "https://f878e43effa7.us-west-2.playback.mememet.com"
+    recordingConfigurationArn: "arn:aws:ivs:us-west-2:704037906162:recording-configuration/2SagGVRjuwDr"
   tencent:
     apiDomain: "live.tencentcloudapi.com"
     pushDomain: "tencent-global-push-rtmp.17app.co"
@@ -88,5 +90,7 @@ CN:
     pullURL: "https://17live-pull-RTMP-hk.livit.cn"
   ivs:
     serviceName: "sta"
+    #apiPath is deprecated
     apiPath: "http://17live-api-tw-stag.17app.co"
     pullURL: "https://f878e43effa7.us-west-2.playback.livit.cn"
+    recordingConfigurationArn: "arn:aws:ivs:us-west-2:704037906162:recording-configuration/2SagGVRjuwDr"
