@@ -48,6 +48,11 @@ rules: # 規則key
   - type: 2
     token: { key: pk_rule_content3-2 }
   - type: 2
+    token: { key: pk_rule_content_other_rules_inappropriate }
+    versionControl:
+      ios: "3.238.0"
+      android: "2.153.0"
+  - type: 2
     token: { key: pk_rule_content3-3 }
   - type: 2
     token: { key: pk_rule_content3-4 }
@@ -67,6 +72,11 @@ friendPkRules:
         - value: *receiverMatchingSecond
   - type: 2
     token: { key: pk_friend_rule_content3 }
+  - type: 2
+    token: { key: pk_friend_rule_content4}
+    versionControl:
+      ios: "3.238.0"
+      android: "2.153.0"
 
 winFilterAnimationID: filter_win
 loseFilterAnimationID: filter_lose
@@ -132,4 +142,4 @@ animationLoader:
       MD5: ddbe28f1b1078da4e43af86db9624ee1
 
 # enablePreferenceMatch enable preference match feature
-enablePreferenceMatch: false
+enablePreferenceMatch: true
