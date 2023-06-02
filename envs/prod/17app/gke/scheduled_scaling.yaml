@@ -1,21 +1,4 @@
 #     【MKT】ニシナナ西川貴教
-- startTime: "2023-06-01 18:30:00 (GMT+0800)"
-  endTime: "2023-06-01 21:30:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 30
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-#     【MKT】ニシナナ西川貴教
 - startTime: "2023-06-08 18:30:00 (GMT+0800)"
   endTime: "2023-06-08 21:30:00 (GMT+0800)"
   HPAConfigs:
@@ -290,6 +273,23 @@
 #     【important】BIG EVENT 合計UV：8000
 - startTime: "2023-07-31 15:30:00 (GMT+0800)"
   endTime: "2023-07-31 22:20:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 30
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+#     【JP Event】MUSIC WAVE〜Summer Fes〜 UV:5000-7000
+- startTime: "2023-08-01 16:30:00 (GMT+0800)"
+  endTime: "2023-08-01 22:20:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 70
