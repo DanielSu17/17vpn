@@ -1,4 +1,4 @@
-inviterRewardLimitBBC: 300000 # limit of inviter rewards
+inviterRewardLimitBBC: 150000 # limit of inviter rewards
 
 # mission type are defined as following (same as newbie rewards in dailyquest.yaml)
 # - 1: DAILY_CHECK_IN
@@ -54,4 +54,24 @@ quests:
         point: 500
         exp: 0
         required: 2
+        withReminder: true
+  - version: 3 # version of this referral rewards setting
+    startTime: 2023-06-12 00:00:00 (GMT+0900)  # startTime of this version applied
+    inviterRewardBBC: 2000 # reward for inviter when invitee finish all missions (in BBC)
+    missionDay: 7 # days that missions appear
+    missions:
+      - type: 3 # follow streamer
+        point: 400
+        exp: 0
+        required: 3
+        withReminder: true
+      - type: 14 # watch 2 days in one week
+        point: 400
+        exp: 0
+        required: 2
+        withReminder: true
+      - type: 15 # phone binding
+        point: 200
+        exp: 0
+        required: 1
         withReminder: true
