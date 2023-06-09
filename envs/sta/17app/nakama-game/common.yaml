@@ -366,11 +366,39 @@ games:
       enable: false
       ios: "3.126.0"
       android: "2.41.0"
+  greedygame:
+    provider: "meme"
+    enable: true
+    gameID: "greedygame"
+    icon: "https://cdn.17app.co/d74a834f-55e1-4b7d-92e3-507010e9c593.png"
+    getGameUrl: "https://nakama-trade-api-uat.17app.co/api/v1/games/greedygame/gameUrl"
+    webViewBgColor: "#ff4d7d"
+    nameI18nkey: "GreedyGame_name_key"
+    descI18nkey: "GreedyGame_desc_key"
+    versionControl:
+      enable: false
+      ios: "3.126.0"
+      android: "2.41.0"
+  teenpatti:
+    provider: "meme"
+    enable: true
+    gameID: "teenpatti"
+    icon: "https://cdn.17app.co/fa60bec7-6fca-4515-9f51-977570898523.png"
+    getGameUrl: "https://nakama-trade-api-uat.17app.co/api/v1/games/teenpatti/gameUrl"
+    webViewBgColor: "#ff4d7d"
+    nameI18nkey: "Teenpatti_name_key"
+    descI18nkey: "Teenpatti_desc_key"
+    versionControl:
+      enable: false
+      ios: "3.126.0"
+      android: "2.41.0"
 
 
 regionGameOrder:
   TW:
     - "onmyoji"
+    - "greedygame"
+    - "teenpatti"
     - "soccerxgps"
     - "iceandfire"
    # - "fruitfarm2"
