@@ -24,21 +24,14 @@
   - name: k8ssta-concert-trade-main
     minReplicas: 30
 
-# 0606 NIS exp
+# 0609 NIS exp
 # ref. TW Events prescaling.sh -> https://github.com/17media/configs/blob/master/prescaling.sh#L57-L74
-- startTime: "2023-06-06 13:30:00 (GMT+0800)"
-  endTime: "2023-06-06 15:30:00 (GMT+0800)"
+- startTime: "2023-06-09 10:30:00 (GMT+0800)"
+  endTime: "2023-06-09 13:00:00 (GMT+0800)"
   HPAConfigs:
   - name: k8ssta-goapi-main
     minReplicas: 70
   - name: k8ssta-golives-main
     minReplicas: 85
-  - name: k8ssta-revprox-tw-main
-    minReplicas: 36
-
-# 0529 vote exp
-- startTime: "2023-05-29 11:30:00 (GMT+0800)"
-  endTime: "2023-05-29 14:00:00 (GMT+0800)"
-  HPAConfigs:
   - name: k8ssta-revprox-tw-main
     minReplicas: 36
