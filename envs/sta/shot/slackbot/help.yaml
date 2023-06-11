@@ -5,4 +5,5 @@ commandHelp:
     commandsHelp:
       send-items:
         title: "`[送特定用戶背包禮物]`"
-        description: ["\n<srcType ex: gift>", "\n<srcID ex: if srcType = gift, srcID = giftID>", "\n<amount (cannot be bigger than 10)>", "\n<startTime, format: now or 2018-05-20T00:00:00+08:00>", "\n<expiration, format: 600(seconds) or 2018-05-20T00:00:00+08:00>", "\n<openID1 or userID1>\n<openID2 or userID2>\n<openID3 or userID3>\n...\n\nFor example :\n!baggage send-items gift cake 5 now 600\ntestUser\n\n!baggage send-items gift cake 5 now 2018-05-20T00:00:00+08:00\ntestUser\n\n!baggage send-items gift cake 5 2018-05-10T00:00:00+08:00 600\ntestUser\n\n!baggage send-items gift cake 5 2018-05-10T00:00:00+08:00 2018-05-20T00:00:00+08:00\ntestUser"]
+        description: |
+          >
