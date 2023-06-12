@@ -29,10 +29,19 @@ characterSizeLimitMB: 35  # maximum: 200MB
 # 最大可保存數目
 maxSavedCharacters: 3
 
+# Note: will use this field for contract users setting after VRM launched
+# 優先用 vliver models 開播的使用者清單
+contractUsers: 
+  - model: 1 # live 2D
+    users: &live2DcontractUsers
+      - "319e4b84-bf19-48a6-b562-95ffdbb50238" #willyyy1
+      - "25b04ad9-770c-47f9-b5d5-57bb388368d1" #vava1
+      - "11c91ef3-01de-47dc-a5d2-77ea1f85c715" #vliver1
+      - "75654670-3d16-449f-9173-1dfacf419157" #jamestw4
+      - "d7aa5e04-c032-408d-8172-b356245320ad" # rogerfriend1
+  - model: 2 # VRM
+    users: []
+
+# Note: this field will be deprecated after VRM launched, make sure move the streamers setting to contractUsers (model:1) above
 # 優先用vliver models 開播的使用者清單
-vliverContractUsers: 
-  - "319e4b84-bf19-48a6-b562-95ffdbb50238" #willyyy1
-  - "25b04ad9-770c-47f9-b5d5-57bb388368d1" #vava1
-  - "11c91ef3-01de-47dc-a5d2-77ea1f85c715" #vliver1
-  - "75654670-3d16-449f-9173-1dfacf419157" #jamestw4
-#  - id2
+vliverContractUsers: *live2DcontractUsers

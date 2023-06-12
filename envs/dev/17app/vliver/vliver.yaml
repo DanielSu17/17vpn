@@ -24,5 +24,15 @@ virtualModels:
 characterSizeLimitMB: 35  # maximum: 200MB 
 # 最大可保存數目
 maxSavedCharacters: 3
+
+# Note: will use this field for contract users setting after VRM launched
+# 優先用 vliver models 開播的使用者清單
+contractUsers: 
+  - model: 1 # live 2D
+    users: []
+  - model: 2 # VRM
+    users: []
+
+# Note: this field will be deprecated after VRM launched, make sure move the streamers setting to contractUsers (model:1) above
 # 優先用vliver models 開播的使用者清單
 vliverContractUsers: []
