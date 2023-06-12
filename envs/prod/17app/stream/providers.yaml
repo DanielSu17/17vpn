@@ -107,7 +107,7 @@ rtmp_providers:
     US: 20
     EG: 0
     CN: 0
-    IN: 100
+    IN: 50
     PH: 50
   users:
   - 87614b98-d226-4cd8-7ef3-a6dafd15ecf6 # 17q_test
@@ -400,15 +400,15 @@ rtmp_providers:
 - name: TENCENT
   quality_support: 0
   expire_after_hours: 6
-  weight: 0
+  weight: 30
   region_weights:
-    TW: 0
-    JP: 0
-    US: 0
+    TW: 10
+    JP: 10
+    US: 20
     EG: 0
     HK: 0
     CN: 0
-    IN: 0
+    IN: 50
     PH: 0
   levelRestriction:
     minLevel: 0
