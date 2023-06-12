@@ -1,4 +1,8 @@
 energyRequired: 1500
 bbcRequired: 300
 guaranteeClickRewards: 10
-fanExpToEnergyMultiplier: 1 # float64, superfanExp * fanExpToEnergyMultiplier = spotlightEnergy
+ratioOfExpToEnergy: 10 # float64, superfanExp/ratioOfExpToEnergy = spotlightEnergy
+
+# decryped, fanExpToEnergyMultiplier is replaced by ratioOfExpToEnergy.
+# Remove fanExpToEnergyMultiplier after ratioOfExpToEnergy is applied. 
+fanExpToEnergyMultiplier: 1 
