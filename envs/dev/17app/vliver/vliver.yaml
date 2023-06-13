@@ -25,14 +25,16 @@ characterSizeLimitMB: 35  # maximum: 200MB
 # 最大可保存數目
 maxSavedCharacters: 3
 
-# Note: will use this field for contract users setting after VRM launched
 # 優先用 vliver models 開播的使用者清單
+# Whitelist of users whose default streaming mode is vliver mode
+# Note: This field is primarily used for setting contract users after the launch of VRM.
 contractUsers: 
   - model: 1 # live 2D
     users: []
   - model: 2 # VRM
     users: []
 
-# Note: this field will be deprecated after VRM launched, make sure move the streamers setting to contractUsers (model:1) above
-# 優先用vliver models 開播的使用者清單
+# Note: This field will be deprecated after VRM launched
+# Please set live2D contract users via `contractUsers` above
+# To support the current version and avoid redundant definitions, we use YAML anchors to keep the data in sync here
 vliverContractUsers: []
