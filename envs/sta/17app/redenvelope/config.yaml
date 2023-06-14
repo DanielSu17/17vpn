@@ -59,6 +59,19 @@ styleSets:
   countBackgroundColor: "#fe1831"
   buttonTextColor: "#fe444c"
   additionalTextAndButtonColor: "#fdd500"
+- id: redenvelope_vip
+  marqueeAnimationID: marquee_redenvelope
+  redenvelopeDialogURL: https://cdn.17app.co/94ae98f8-32be-4ff3-bfbe-f0e18bdc9f9f.png
+  buttonDecorationURL: https://cdn.17app.co/5ced91c6-1667-49b5-9c42-551699d6961e.png
+  resultSuccessDialogURL: https://cdn.17app.co/26539982-f400-4c8d-a45a-fda260a1805c.png
+  resultFailDialogURL: https://cdn.17app.co/b9bada1d-278d-4a0a-b31e-b94c5ff02c15.png
+  resultAlreadyPickDialogURL: https://cdn.17app.co/152db19b-4bad-4e9c-8108-a84321e22b8b.png
+  winnerDialogURL: https://cdn.17app.co/2f0024b7-e6e1-4da2-b13b-5d27aad242df.png
+  countdownIconURL: https://cdn.17app.co/c49ad13c-1c4d-4262-8f32-136f0e43117b.png
+  entryIconURL: https://cdn.17app.co/c49ad13c-1c4d-4262-8f32-136f0e43117b.png
+  countBackgroundColor: "#2d77fe"
+  buttonTextColor: "#ffe600"
+  additionalTextAndButtonColor: "#73ccff"
 - id: treasure_normal
   marqueeAnimationID: marquee_treasurebox
   redenvelopeDialogURL: https://cdn.17app.co/44192906-58b4-4fb0-979b-190ba5252098.png
@@ -1000,6 +1013,29 @@ redenvelopes:
   is_offline: false
   region_mode: 2
   regions: ['JP']
+
+- id: redenvelope_no_5
+  startTime:
+  endTime:
+  img_URL: https://cdn.17app.co/c49ad13c-1c4d-4262-8f32-136f0e43117b.png
+  zip_url: https://assets-17app.akamaized.net/31101f1d-d3f8-4d04-8b0f-d8a2dc32e298.zip
+  zip_md5: 94e997e2a8560f501d177a496b533263
+  webp_url: http://cdn.17app.co/redenvelope_no_2.webp
+  webp_md5: 4a6a3ef899c2ca4f68a8f48110f38c1b
+  webm_url: https://cdn.17app.co/0e38dc96-3399-4d97-b3d6-d79a51dfb592.webm
+  webm_md5: 80f2c6f758d9d903a665a0fb962e1e96
+  name_token: redenvelope_name_no_2 # keep name as no_2 currently since this RE is used for showing to vip team
+  pointSetID: pointset_88888
+  style: redenvelope_vip
+  announceable: true
+  announce_threshold: -1
+  countdown_time: 30
+  event_time: 10
+  theme: 1
+  type: 1
+  is_offline: false
+  region_mode: 2
+  regions: [TW, ID, TH, HK, MO, SG, MY, VN, MM, PH, IN]
 
 # US redenvelope
 - id: redenvelope_s_US
