@@ -10,25 +10,12 @@
 # | IAP_Buy_Point | 8 |
 # | View_Stream_X_Seconds | 9 |
 # | IAP_X_Points | 10 |
+# | Share_Twitter | 11 |
 # | TypePhoneBinding | 12 |
 # | View_Stream_X_Different_Days | 13 |
 # | CreateAvatar | 16 |
 # | CommentInNewestLivestream | 17 |
 # | CheckIn | 24 |
-# ============
-# Viewer share
-# | Share_Twitter | 11 |
-# | ShareInstagramStory | 29 |
-# | ShareInstagramDirect | 30 |
-# | ShareFacebookStory | 31 |
-# | ShareFacebookNewsFeed | 32 |
-# | ShareMessenger | 33 |
-# | ShareWhatsApp | 34 |
-# | ShareLine | 35 |
-# | Share17 | 36 |
-# ============
-# | SendLeagueCustomEventGift | 37 |
-# | SendLeagueCustomEventPoint | 38 |
 
 # | category | Value |
 # | --- | --- |
@@ -53,125 +40,440 @@
 # | RewardCategoryAvatarGrabBag | 2 |
 
 missions:
-- ID: d92bd304-06ac-4dc0-9a04-ffaf6630053c
-  type: 9
+- ID: a1126be2-37ae-47ec-94d2-5ea08fa253af
+  type: 24
   category: 0
-  lifeCycle: 1
+  lifeCycle: 2
   targetAudience: 0
   levelRange:
-    min: 1
-    max: 1000
+    min: 2
+    max: 999
   reward:
     rewardType: 1
-    rewardID: 2303_hk_easter_a_bp
+    rewardID: 2112_hk_baggage_1
     amount: 1
     expireTimeSecs: 86400
-  i18nTitle: hk-event-2-mission-title-1
+  i18nTitle: hk_login_days_1
   i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: hk-event-2-mission-gift-desc-1
+  i18nDescription: hk_login_days_rewards
   i18nDescriptionParams: []
-  goalValue: 300
+  goalValue: 1
   enableTimeRange:
-  - startTime: 2023-03-27 18:00:00 (GMT+0800)
-    endTime: 2023-04-18 23:59:59 (GMT+0800)
+  - startTime: 2023-06-17 00:00:00 (GMT+0800)
+    endTime: 2023-06-23 23:59:59 (GMT+0800)
   refIDs: []
   platforms:
   - android
   - ios
-  - web
-  requirePhoneBinding: false
+  requirePhoneBinding: true
   withReminder: true
-- ID: deb2951b-d882-4dd8-8dc5-9473c18273e3
-  type: 9
+- ID: c463d375-913f-4b3f-981e-b5846c468e52
+  type: 24
   category: 0
-  lifeCycle: 1
+  lifeCycle: 2
   targetAudience: 0
   levelRange:
-    min: 1
-    max: 1001
+    min: 2
+    max: 999
   reward:
     rewardType: 1
-    rewardID: 2303_hk_easter_a_bp
+    rewardID: 2112_hk_baggage_1
     amount: 2
     expireTimeSecs: 86400
-  i18nTitle: hk-event-2-mission-title-2
+  i18nTitle: hk_login_days_3
   i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: hk-event-2-mission-gift-desc-2
+  i18nDescription: hk_login_days_rewards
   i18nDescriptionParams: []
-  goalValue: 600
+  goalValue: 3
   enableTimeRange:
-  - startTime: 2023-03-27 18:00:00 (GMT+0800)
-    endTime: 2023-04-18 23:59:59 (GMT+0800)
+  - startTime: 2023-06-17 00:00:00 (GMT+0800)
+    endTime: 2023-06-23 23:59:59 (GMT+0800)
   refIDs: []
   platforms:
   - android
   - ios
-  - web
-  requirePhoneBinding: false
+  requirePhoneBinding: true
   withReminder: true
-- ID: 2ba522f4-aee5-425b-9a8b-a7c5448f86b0
-  type: 9
+- ID: 40674b29-f39f-42ef-b742-dfa42057f9b4
+  type: 24
   category: 0
-  lifeCycle: 1
+  lifeCycle: 2
   targetAudience: 0
   levelRange:
-    min: 1
-    max: 1002
+    min: 2
+    max: 999
   reward:
     rewardType: 1
-    rewardID: 2303_hk_easter_b_bp
+    rewardID: 2112_hk_baggage_1
+    amount: 3
+    expireTimeSecs: 86400
+  i18nTitle: hk_login_days_5
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: hk_login_days_rewards
+  i18nDescriptionParams: []
+  goalValue: 5
+  enableTimeRange:
+  - startTime: 2023-06-17 00:00:00 (GMT+0800)
+    endTime: 2023-06-23 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: true
+- ID: 73de9403-c96c-4497-99ff-edeae7b30949
+  type: 24
+  category: 0
+  lifeCycle: 2
+  targetAudience: 0
+  levelRange:
+    min: 2
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2112_hk_baggage_1
     amount: 1
     expireTimeSecs: 86400
-  i18nTitle: hk-event-2-mission-title-3
+  i18nTitle: hk_login_days_1
   i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: hk-event-2-mission-gift-desc-3
+  i18nDescription: hk_login_days_rewards
   i18nDescriptionParams: []
-  goalValue: 1800
+  goalValue: 1
   enableTimeRange:
-  - startTime: 2023-03-27 18:00:00 (GMT+0800)
-    endTime: 2023-04-18 23:59:59 (GMT+0800)
+  - startTime: 2023-06-24 00:00:00 (GMT+0800)
+    endTime: 2023-06-29 23:59:59 (GMT+0800)
   refIDs: []
   platforms:
   - android
   - ios
-  - web
-  requirePhoneBinding: false
+  requirePhoneBinding: true
   withReminder: true
-- ID: fa056b5c-cb83-475b-a3e2-9623c58bc21b
-  type: 9
+- ID: 1108a76b-4e6f-439f-8088-a0c7917e4e82
+  type: 24
   category: 0
-  lifeCycle: 1
+  lifeCycle: 2
   targetAudience: 0
   levelRange:
-    min: 1
-    max: 1003
+    min: 2
+    max: 999
   reward:
     rewardType: 1
-    rewardID: 2303_hk_easter_b_bp
+    rewardID: 2112_hk_baggage_1
     amount: 2
     expireTimeSecs: 86400
-  i18nTitle: hk-event-2-mission-title-4
+  i18nTitle: hk_login_days_3
   i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: hk-event-2-mission-gift-desc-4
+  i18nDescription: hk_login_days_rewards
   i18nDescriptionParams: []
-  goalValue: 3600
+  goalValue: 3
   enableTimeRange:
-  - startTime: 2023-03-27 18:00:00 (GMT+0800)
-    endTime: 2023-04-18 23:59:59 (GMT+0800)
+  - startTime: 2023-06-24 00:00:00 (GMT+0800)
+    endTime: 2023-06-29 23:59:59 (GMT+0800)
   refIDs: []
   platforms:
   - android
   - ios
-  - web
-  requirePhoneBinding: false
+  requirePhoneBinding: true
+  withReminder: true
+- ID: 7afe1965-c51f-4bf9-a3da-351ac5864cbf
+  type: 24
+  category: 0
+  lifeCycle: 2
+  targetAudience: 0
+  levelRange:
+    min: 2
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2112_hk_baggage_1
+    amount: 3
+    expireTimeSecs: 86400
+  i18nTitle: hk_login_days_5
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: hk_login_days_rewards
+  i18nDescriptionParams: []
+  goalValue: 5
+  enableTimeRange:
+  - startTime: 2023-06-24 00:00:00 (GMT+0800)
+    endTime: 2023-06-29 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: true
+- ID: 58ebe2b4-95d4-4dd8-834d-101200213772
+  type: 24
+  category: 0
+  lifeCycle: 2
+  targetAudience: 0
+  levelRange:
+    min: 2
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2112_hk_baggage_1
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: hk_login_days_1
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: hk_login_days_rewards
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2023-06-30 00:00:00 (GMT+0800)
+    endTime: 2023-07-06 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: true
+- ID: 8a3129c3-9b88-4c89-8fa5-e52fc14c0f88
+  type: 24
+  category: 0
+  lifeCycle: 2
+  targetAudience: 0
+  levelRange:
+    min: 2
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2112_hk_baggage_1
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: hk_login_days_3
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: hk_login_days_rewards
+  i18nDescriptionParams: []
+  goalValue: 3
+  enableTimeRange:
+  - startTime: 2023-06-30 00:00:00 (GMT+0800)
+    endTime: 2023-07-06 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: true
+- ID: 7eee7f2f-7fc5-48e7-90ad-9afd44571915
+  type: 24
+  category: 0
+  lifeCycle: 2
+  targetAudience: 0
+  levelRange:
+    min: 2
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2112_hk_baggage_1
+    amount: 3
+    expireTimeSecs: 86400
+  i18nTitle: hk_login_days_5
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: hk_login_days_rewards
+  i18nDescriptionParams: []
+  goalValue: 5
+  enableTimeRange:
+  - startTime: 2023-06-30 00:00:00 (GMT+0800)
+    endTime: 2023-07-06 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: true
+- ID: 46d6ea8c-0133-408c-b9ce-5d463cce95a3
+  type: 24
+  category: 0
+  lifeCycle: 2
+  targetAudience: 0
+  levelRange:
+    min: 2
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2112_hk_baggage_1
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: hk_login_days_1
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: hk_login_days_rewards
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2023-07-07 00:00:00 (GMT+0800)
+    endTime: 2023-07-13 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: true
+- ID: a3dfdff1-1e39-4328-8640-be9898c269f9
+  type: 24
+  category: 0
+  lifeCycle: 2
+  targetAudience: 0
+  levelRange:
+    min: 2
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2112_hk_baggage_1
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: hk_login_days_3
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: hk_login_days_rewards
+  i18nDescriptionParams: []
+  goalValue: 3
+  enableTimeRange:
+  - startTime: 2023-07-07 00:00:00 (GMT+0800)
+    endTime: 2023-07-13 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: true
+- ID: 152332f9-a899-4062-b6b3-0fc790e551d8
+  type: 24
+  category: 0
+  lifeCycle: 2
+  targetAudience: 0
+  levelRange:
+    min: 2
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2112_hk_baggage_1
+    amount: 3
+    expireTimeSecs: 86400
+  i18nTitle: hk_login_days_5
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: hk_login_days_rewards
+  i18nDescriptionParams: []
+  goalValue: 5
+  enableTimeRange:
+  - startTime: 2023-07-07 00:00:00 (GMT+0800)
+    endTime: 2023-07-13 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: true
+- ID: a0de1448-c651-4293-b0d7-574521983ad2
+  type: 24
+  category: 0
+  lifeCycle: 2
+  targetAudience: 0
+  levelRange:
+    min: 2
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2112_hk_baggage_1
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: hk_login_days_1
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: hk_login_days_rewards
+  i18nDescriptionParams: []
+  goalValue: 1
+  enableTimeRange:
+  - startTime: 2023-07-14 00:00:00 (GMT+0800)
+    endTime: 2023-07-20 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: true
+- ID: a478fcf9-81ef-4b52-89a0-c0e16f694222
+  type: 24
+  category: 0
+  lifeCycle: 2
+  targetAudience: 0
+  levelRange:
+    min: 2
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2112_hk_baggage_1
+    amount: 2
+    expireTimeSecs: 86400
+  i18nTitle: hk_login_days_3
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: hk_login_days_rewards
+  i18nDescriptionParams: []
+  goalValue: 3
+  enableTimeRange:
+  - startTime: 2023-07-14 00:00:00 (GMT+0800)
+    endTime: 2023-07-20 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: true
+- ID: cecb7ba1-3167-42e7-a1f4-0187a1d25b47
+  type: 24
+  category: 0
+  lifeCycle: 2
+  targetAudience: 0
+  levelRange:
+    min: 2
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2112_hk_baggage_1
+    amount: 3
+    expireTimeSecs: 86400
+  i18nTitle: hk_login_days_5
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: hk_login_days_rewards
+  i18nDescriptionParams: []
+  goalValue: 5
+  enableTimeRange:
+  - startTime: 2023-07-14 00:00:00 (GMT+0800)
+    endTime: 2023-07-20 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
   withReminder: true
 - ID: ccca5024-c0d5-405c-b0e4-479a1f2d2600
   type: 16
@@ -202,189 +504,64 @@ missions:
   - ios
   requirePhoneBinding: false
   withReminder: false
-- ID: d4ef46bb-c90e-411f-8995-883b17b845ae
-  type: 3
+- ID: 1ac44098-c279-4985-9962-6c6c9b34267d
+  type: 9
   category: 0
   lifeCycle: 0
   targetAudience: 0
   levelRange:
-    min: 1
+    min: 2
     max: 999
   reward:
     rewardType: 1
-    rewardID: 2302_hk_cover_a
+    rewardID: 2112_hk_baggage_2
     amount: 1
     expireTimeSecs: 86400
-  i18nTitle: hk-event-5-mission-title-1
+  i18nTitle: hk_watch_5
   i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: hk-event-5-mission-gift-desc-1
+  i18nDescription: hk_watch_rewards
+  i18nDescriptionParams: []
+  goalValue: 300
+  enableTimeRange:
+  - startTime: 2023-06-17 00:00:00 (GMT+0800)
+    endTime: 2023-07-20 23:59:59 (GMT+0800)
+  refIDs: []
+  platforms:
+  - android
+  - ios
+  requirePhoneBinding: true
+  withReminder: false
+- ID: f444443c-e1e2-4d18-9059-1ccc92ae36c7
+  type: 5
+  category: 0
+  lifeCycle: 0
+  targetAudience: 0
+  levelRange:
+    min: 2
+    max: 999
+  reward:
+    rewardType: 1
+    rewardID: 2112_hk_baggage_3
+    amount: 1
+    expireTimeSecs: 86400
+  i18nTitle: hk_comment_3
+  i18nTitleParams: []
+  i18nContent: ""
+  i18nContentParams: []
+  i18nDescription: hk_comment_rewards
   i18nDescriptionParams: []
   goalValue: 3
   enableTimeRange:
-  - startTime: 2023-03-19 18:00:00 (GMT+0800)
-    endTime: 2023-04-01 23:59:59 (GMT+0800)
-  refIDs:
-  - 2302_hk_cover_s
-  platforms:
-  - android
-  - ios
-  - web
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 6338ce2f-bb09-4f48-bfbf-de7ca8e37094
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 1000
-  reward:
-    rewardType: 1
-    rewardID: 2302_hk_cover_a
-    amount: 3
-    expireTimeSecs: 86400
-  i18nTitle: hk-event-5-mission-title-2
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: hk-event-5-mission-gift-desc-2
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2023-03-19 18:00:00 (GMT+0800)
-    endTime: 2023-04-01 23:59:59 (GMT+0800)
-  refIDs:
-  - 2302_hk_cover_m
-  platforms:
-  - android
-  - ios
-  - web
-  requirePhoneBinding: false
-  withReminder: true
-- ID: 8bf70aec-afed-488d-8955-183dff5bf66c
-  type: 3
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 1
-    max: 1001
-  reward:
-    rewardType: 1
-    rewardID: 2302_hk_cover_a
-    amount: 10
-    expireTimeSecs: 86400
-  i18nTitle: hk-event-5-mission-title-3
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: hk-event-5-mission-gift-desc-3
-  i18nDescriptionParams: []
-  goalValue: 1
-  enableTimeRange:
-  - startTime: 2023-03-19 18:00:00 (GMT+0800)
-    endTime: 2023-04-01 23:59:59 (GMT+0800)
-  refIDs:
-  - 2302_hk_cover_l
-  platforms:
-  - android
-  - ios
-  - web
-  requirePhoneBinding: false
-  withReminder: true
-- ID: d4d294ec-6e63-4ace-a18d-08d463e1f18c
-  type: 10
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 10
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2303_tw_springparty_b_bp
-    amount: 2
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_event_team_regular_1210
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_event_done
-  i18nDescriptionParams: []
-  goalValue: 1210
-  enableTimeRange:
-  - startTime: 2023-03-16 18:00:00 (GMT+0800)
-    endTime: 2023-04-25 20:39:59 (GMT+0800)
+  - startTime: 2023-06-17 00:00:00 (GMT+0800)
+    endTime: 2023-07-20 23:59:59 (GMT+0800)
   refIDs: []
   platforms:
   - android
   - ios
-  - web
   requirePhoneBinding: true
-  withReminder: true
-- ID: ef4b22e5-c25b-4865-8274-d5a33821b7c1
-  type: 10
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 10
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2303_tw_springparty_b_bp
-    amount: 4
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_event_team_regular_6000
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_event_done
-  i18nDescriptionParams: []
-  goalValue: 6000
-  enableTimeRange:
-  - startTime: 2023-03-16 18:00:00 (GMT+0800)
-    endTime: 2023-04-25 20:39:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  - web
-  requirePhoneBinding: true
-  withReminder: true
-- ID: c5586960-5b51-475d-9c2d-b564026d833a
-  type: 10
-  category: 0
-  lifeCycle: 0
-  targetAudience: 0
-  levelRange:
-    min: 10
-    max: 999
-  reward:
-    rewardType: 1
-    rewardID: 2303_tw_springparty_b_bp
-    amount: 12
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_event_team_regular_25500
-  i18nTitleParams: []
-  i18nContent: ""
-  i18nContentParams: []
-  i18nDescription: baggage_mission_event_done
-  i18nDescriptionParams: []
-  goalValue: 25500
-  enableTimeRange:
-  - startTime: 2023-03-16 18:00:00 (GMT+0800)
-    endTime: 2023-04-25 20:39:59 (GMT+0800)
-  refIDs: []
-  platforms:
-  - android
-  - ios
-  - web
-  requirePhoneBinding: true
-  withReminder: true
+  withReminder: false
 i18nMissionCompleteToast: baggage_mission_toast_claimed
 refreshHour: 5
 supportedVersion:
