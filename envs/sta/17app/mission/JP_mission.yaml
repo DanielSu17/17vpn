@@ -1243,7 +1243,7 @@ missions:
 - ID: ac9770a8-4378-4ffc-a555-460fc4822267
   type: 3
   category: 0
-  lifeCycle: 1
+  lifeCycle: 0
   targetAudience: 0
   levelRange:
     min: 1
@@ -1251,27 +1251,25 @@ missions:
   reward:
     rewardType: 1
     rewardID: test2306_jp_magic_return
-    amount: 5
-    expireTimeSecs: 86400
-  i18nTitle: baggage_mission_IAP_reward_jp_daily_charge_name_02
-  i18nTitleParams:
-  - value: "15"
-    mapOption: 0
-    fontAttribute: null
+    amount: 10
+    expireTimeSecs: 172800
+  i18nTitle: po_mission_title_15
+  i18nTitleParams: []
   i18nContent: ""
   i18nContentParams: []
-  i18nDescription: baggage_mission_IAP_reward_jp_charge_desc_02
+  i18nDescription: po_mission_desc_18
   i18nDescriptionParams: []
-  goalValue: 15
+  goalValue: 65
   enableTimeRange:
-  - startTime: 2023-06-16 23:45:00 (GMT+0900)
-    endTime: 2023-06-20 06:00:00 (GMT+0900)
-  refIDs: []
+  - startTime: 2023-06-19 14:15:00 (GMT+0900)
+    endTime: 2023-06-27 06:00:00 (GMT+0900)
+  refIDs:
+  - magic_1
   platforms:
   - android
   - ios
-  requirePhoneBinding: false
-  withReminder: false
+  requirePhoneBinding: true
+  withReminder: true
 
 #VIP UFOキャッチャー
 - ID: b300f080-4915-455a-86b1-fc8d5efa562f
