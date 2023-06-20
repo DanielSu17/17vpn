@@ -101,10 +101,10 @@ rtmp_providers:
   quality_support: 1
   weight: 50
   region_weights:
-    TW: 30
-    JP: 25
-    HK: 20
-    US: 20
+    TW: 40
+    JP: 40
+    HK: 30
+    US: 30
     EG: 0
     CN: 0
     IN: 50
@@ -270,16 +270,16 @@ rtmp_providers:
   - 4d9b0752-f90c-4b03-b565-f9c9e51f25fa # garyshii (for CHT testing)
 - name: AWS
   quality_support: 0
-  weight: 50
+  weight: 0
   region_weights:
-    TW: 47
-    JP: 57
-    US: 100
+    TW: 0
+    JP: 0
+    US: 0
     EG: 0
-    HK: 30
+    HK: 0
     CN: 0
     IN: 0
-    PH: 50
+    PH: 0
   #levelRestriction:
     #minLevel: 0
     #maxLevel: 100
@@ -359,11 +359,11 @@ rtmp_providers:
   expire_after_hours: 6
   weight: 40
   region_weights:
-    TW: 13
-    JP: 13
-    US: 10
+    TW: 23
+    JP: 23
+    US: 20
     EG: 0
-    HK: 20
+    HK: 30
     ID: 0
     PH: 0
     MY: 0
