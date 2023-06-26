@@ -1,37 +1,3 @@
-#     【MKT】ニシナナ西川貴教
-- startTime: "2023-06-22 18:30:00 (GMT+0800)"
-  endTime: "2023-06-22 21:30:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 30
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
-#     【JP EV】MIRAI STAGE UV:5000-7000
-- startTime: "2023-06-23 16:30:00 (GMT+0800)"
-  endTime: "2023-06-23 22:20:00 (GMT+0800)"
-  HPAConfigs:
-  - name: k8sprod-goapi-main
-    minReplicas: 70
-  - name: k8sprod-golives-main
-    minReplicas: 85
-  - name: k8sprod-gotrade-main
-    minReplicas: 30
-  - name: k8sprod-gocells-main
-    minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
-  - name: k8sprod-revprox-jp-main
-    minReplicas: 36
-
 #     【Event】台灣活動支援（線下）仲夏新娘 Shiny Wedding
 - startTime: "2023-06-29 16:30:00 (GMT+0800)"
   endTime: "2023-06-29 22:00:00 (GMT+0800)"
@@ -290,6 +256,23 @@
 #     【important】BIG EVENT 合計UV：8000
 - startTime: "2023-08-18 14:30:00 (GMT+0800)"
   endTime: "2023-08-18 21:20:00 (GMT+0800)"
+  HPAConfigs:
+  - name: k8sprod-goapi-main
+    minReplicas: 70
+  - name: k8sprod-golives-main
+    minReplicas: 85
+  - name: k8sprod-gotrade-main
+    minReplicas: 30
+  - name: k8sprod-gocells-main
+    minReplicas: 25
+  - name: k8sprod-gousersearch-main
+    minReplicas: 10
+  - name: k8sprod-revprox-jp-main
+    minReplicas: 36
+
+#     【MKT】ニシナナ西川貴教
+- startTime: "2023-08-24 18:30:00 (GMT+0800)"
+  endTime: "2023-08-24 21:30:00 (GMT+0800)"
   HPAConfigs:
   - name: k8sprod-goapi-main
     minReplicas: 70
