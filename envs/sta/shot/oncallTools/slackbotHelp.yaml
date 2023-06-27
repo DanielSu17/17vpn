@@ -6,7 +6,7 @@ commandHelp:
       send-items:
         title: "`[送特定用戶背包禮物]`"
         description: |
-          !baggage send-items 
+          /baggage send-items 
           <srcType ex: gift> 
           <srcID ex: if srcType = gift, srcID = giftID> 
           <amount (cannot be bigger than 10)> 
@@ -18,14 +18,14 @@ commandHelp:
           ...
 
           For example :
-          !baggage send-items gift cake 5 now 600
+          /baggage send-items gift cake 5 now 600
           testUser
 
-          !baggage send-items gift cake 5 now 2018-05-20T00:00:00+08:00
+          /baggage send-items gift cake 5 now 2018-05-20T00:00:00+08:00
           testUser
 
-          !baggage send-items gift cake 5 2018-05-10T00:00:00+08:00 600
+          /baggage send-items gift cake 5 2018-05-10T00:00:00+08:00 600
           testUser
 
-          !baggage send-items gift cake 5 2018-05-10T00:00:00+08:00 2018-05-20T00:00:00+08:00
+          /baggage send-items gift cake 5 2018-05-10T00:00:00+08:00 2018-05-20T00:00:00+08:00
           testUser
