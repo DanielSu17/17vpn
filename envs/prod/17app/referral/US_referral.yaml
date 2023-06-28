@@ -93,3 +93,23 @@ quests:
         exp: 0
         required: 1
         withReminder: true
+  - version: 4 # version of this referral rewards setting
+    startTime: 2023-07-01 12:00:00 (GMT+0800)  # startTime of this version applied
+    inviterRewardBBC: 3000 # reward for inviter when invitee finish all missions (in BBC)
+    missionDay: 7 # days that missions appear
+    missions:
+      - type: 14 # watch lives 2 days in one week
+        point: 200
+        exp: 0
+        required: 2
+        withReminder: true
+      - type: 15 # phone binding
+        point: 200
+        exp: 0
+        required: 1
+        withReminder: true
+      - type: 11 # IAP 1 time
+        point: 400
+        exp: 0
+        required: 1
+        withReminder: true
