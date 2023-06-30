@@ -12,18 +12,27 @@ categoryConfig:
     i18nKey: SenderName_Official.Notification
     image: sys_Avatar2.png
     withLiveInfo: false
+    defaultLayoutType: 0
+    # defaultLayoutType defined the layoutType used by client, supported value:
+    #   0: Default
+    #   1: Onlive
+    #   2: Revenue
+    #   3: Shop
   - type: 2
     i18nKey: SenderName_VIP.Notification
     image: a4fc5915-acc1-4431-a205-523ce491af78.png
     withLiveInfo: false
+    defaultLayoutType: 0
   - type: 3
     i18nKey: SenderName_Onlive.Notification
     image: 730fe2ba-4fe6-4071-beb2-f176e3b5387e.png
     withLiveInfo: true
+    defaultLayoutType: 1
   - type: 4
     i18nKey: Streamer_butler
     image: 563fde98-b886-43dd-b1ca-3f50744e3612.png
     withLiveInfo: false
+    defaultLayoutType: 2
 tags:
   - type: 1
     token: "butler_type_streamer"
