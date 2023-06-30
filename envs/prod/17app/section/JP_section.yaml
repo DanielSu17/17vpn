@@ -92,6 +92,15 @@ sections:
     more: true
     orderModel: 2
 
+  - id: PK
+    name:
+      key: tab_hot_2019q4_pk
+    enable: true
+    dedup: false
+    minGrids: 6 # 2個直播間一組PK，3組以上顯示
+    style: 3
+    more: true
+
   - id: Label # 202306イベント上位者、6/3015:00~7/714:59
     labelID: 2306_jp_eventtoprank
     name:
@@ -159,15 +168,6 @@ sections:
     more: true
     category: normal
     orderModel: 2
-
-  - id: PK
-    name:
-      key: tab_hot_2019q4_pk
-    enable: true
-    dedup: false
-    minGrids: 6 # 2個直播間一組PK，3組以上顯示
-    style: 3
-    more: true
 
   - id: Label
     labelID: jp_game
