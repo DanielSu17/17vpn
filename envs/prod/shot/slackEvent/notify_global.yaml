@@ -70,11 +70,11 @@ alertMsgRules:
     closeMsg: Send VoteGift API high latency alert closed
 
 metricRules:
-  - ably:
-      enable: true
-      regex: "High Latency"
-      queryString: "sum:pubnub.ably.err{dd_env:k8sprod} by {internalcode,statuscode}.as_count()"
-      threshold: 0
+  ably:
+    enable: true
+    regex: "High Latency"
+    queryString: "sum:pubnub.ably.err{dd_env:k8sprod} by {internalcode,statuscode}.as_count()"
+    threshold: 0
 
 channelID:
   - "C0GPCSBSB" # global-dev-bugs
