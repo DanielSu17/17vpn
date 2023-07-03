@@ -46,8 +46,6 @@ cat << EOF >> $tmp_file
     minReplicas: 30
   - name: k8sprod-gocells-main
     minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
   - name: k8sprod-revprox-main
     minReplicas: 36
 
@@ -68,8 +66,6 @@ cat << EOF >> $tmp_file
     minReplicas: 30
   - name: k8sprod-gocells-main
     minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
   - name: k8sprod-revprox-tw-main
     minReplicas: 36
 
@@ -89,8 +85,6 @@ cat << EOF >> $tmp_file
     minReplicas: 30
   - name: k8sprod-gocells-main
     minReplicas: 25
-  - name: k8sprod-gousersearch-main
-    minReplicas: 10
   - name: k8sprod-revprox-jp-main
     minReplicas: 36
 
