@@ -28,7 +28,15 @@ labelInfos:
     labelID: 
     label: {key: explore_jp_label_vliver}
     featured: true
-    order: 5
+    order: 1001
+    iconURL: "h"
+    isHide: true
+  - id: "2307_jp_bushilive" # 武士来舞 デビュー記念配信
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_bushilive}
+    featured: true
+    order: 1
     iconURL: "h"
     isHide: true
   - id: "jp_recommend" # レコメンド,推薦
@@ -212,16 +220,9 @@ labelInfos:
     order: 34
     iconURL: "h"
     isHide: true
-  - id: "2307_jp_bushilive" # 武士来舞 デビュー記念配信
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_bushilive}
-    featured: true
-    order: 1
-    iconURL: "h"
-    isHide: true
 
-#以下、5/26（初見さん歓迎〜男子までコメントアウトする）-------------------------------------------------
+
+#以下、5/26（初見さん歓迎〜男子までコメントアウトする）---------------------------------------------------
   - id: "jp_welcome" # 初見さん歓迎
     type: 1
     labelID:
@@ -263,7 +264,7 @@ labelInfos:
     iconURL: "h"
     isHide: true
 
-#以下、未使用（過去分含む）------------------------------------------------------------------
+#以下、未使用（過去分含む）-------------------------------------------------------------------------
   - id: "2207_jp_entertainment17" #　エンタメ
     type: 1
     labelID:
@@ -375,47 +376,7 @@ labelInfos:
     labelID:
     label: {key: streamer_jp_label_lv10}
     featured: true
-    order: 30
-    iconURL: "h"
-    isHide: true
-  - id: "2304_jp_vliver_singer" # 認証Vライバー：歌
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_vliver_singer}
-    featured: true
-    order: 1
-    iconURL: "h"
-    isHide: true
-  - id: "2304_jp_vliver_chatting" # 認証Vライバー：雑談
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_vliver_chatting}
-    featured: true
-    order: 2
-    iconURL: "h"
-    isHide: true
-  - id: "2304_jp_vliver_game" # 認証Vライバー：ゲーム
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_vliver_game}
-    featured: true
-    order: 3
-    iconURL: "h"
-    isHide: true
-  - id: "2304_jp_virtual" # バーチャル配信
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_virtual}
-    featured: true
-    order: 1000
-    iconURL: "h"
-    isHide: true
-  - id: "2204_jp_surge" # 運営おすすめ
-    type: 1
-    labelID:
-    label: {key: streamer_jp_label_surge}
-    featured: true
-    order: 1
+    order: 133
     iconURL: "h"
     isHide: true
   - id: "2211_jp_vs_tournament2022" # 202304_VS本戦
@@ -423,7 +384,15 @@ labelInfos:
     labelID:
     label: {key: streamer_jp_label_vs_tournament2022}
     featured: true
-    order: 33
+    order: 134
+    iconURL: "h"
+    isHide: true
+  - id: "2204_jp_surge" # 運営おすすめ
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_surge}
+    featured: true
+    order: 135
     iconURL: "h"
     isHide: true
   - id: "2305_jp_kansai" # ミセス関西コレクション2023
@@ -431,12 +400,44 @@ labelInfos:
     labelID:
     label: {key: streamer_jp_label_virtual}
     featured: true
-    order: 34
+    order: 136
+    iconURL: "h"
+    isHide: true
+  - id: "2304_jp_vliver_singer" # 認証Vライバー：歌
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_vliver_singer}
+    featured: true
+    order: 137
+    iconURL: "h"
+    isHide: true
+  - id: "2304_jp_vliver_chatting" # 認証Vライバー：雑談
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_vliver_chatting}
+    featured: true
+    order: 138
+    iconURL: "h"
+    isHide: true
+  - id: "2304_jp_vliver_game" # 認証Vライバー：ゲーム
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_vliver_game}
+    featured: true
+    order: 139
+    iconURL: "h"
+    isHide: true
+  - id: "2304_jp_virtual" # バーチャル配信
+    type: 1
+    labelID:
+    label: {key: streamer_jp_label_virtual}
+    featured: true
+    order: 140
     iconURL: "h"
     isHide: true
 
 
-# 探索頁面會出現的label------------------------------------------
+# 探索頁面會出現的label------------------------------------------------------------------------
 exploreLabels:
   - data_team_recommendation        # トレンド
 #  - jp_pickup        # パタパタ２
@@ -449,7 +450,7 @@ exploreLabels:
 typeCheckIOSVersion: 3.57.0
 typeCheckAndroidVersion: 2.3.88
 
-#Labelホワイトリスト------------------------------------------
+#Labelホワイトリスト-----------------------------------------------------------------------------
 labelWhiteList:
   # data team auto update start version 1, please don't copy it
   data_team_recommendation:
@@ -2796,6 +2797,7 @@ labelWhiteList:
 
 
 #下記より、JPまだ使ってないーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+#ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
 #（下記「useNewLabelWhiteList（時限設定可能）」も使えるようになりました。）
 useNewLabelWhiteList: false
 # newLabelWhiteList defines relation between label and user list
