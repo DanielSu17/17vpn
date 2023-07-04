@@ -1,3 +1,26 @@
+################################################################################################################################
+# Category represents a group ofnotification messages, and msgType represents the message type within that group. 
+#
+# 1. When adding a new category, you need to provide the corresponding information in the `categories` and `categoryConfig` sections.
+#    It is mandatory to specify a msgType for each category, as it classifies the messages under the respective category.
+# [Example]
+# categories:
+#   - 5
+# categoryConfig:
+#   - type: 5                                                         # category type
+#     i18nKey: shopping_notification                                  # category title
+#     image: Shop_Icon.png                                            # category icon
+#     withLiveInfo: false
+#     msgType: [12,13]               
+# 2. When adding a new msgType, please include the following details.
+# [Example]
+# msgTypeConfig:
+#   - type: 12                                                        # messagg type
+#     displayNameI18nKey: shopping_notification_approval_title        # message title
+#   - type: 13
+#     displayNameI18nKey: shopping_notification_order_created_title
+################################################################################################################################
+
 enableOnlive: true
 onliveHistory: true
 onliveActiveDays: 21
@@ -12,27 +35,64 @@ categoryConfig:
     i18nKey: SenderName_Official.Notification
     image: sys_Avatar2.png
     withLiveInfo: false
-    defaultLayoutType: 0
     # defaultLayoutType defined the layoutType used by client, supported value:
     #   0: Default
     #   1: Onlive
     #   2: Revenue
     #   3: Shop
+    defaultLayoutType: 0
+    msgType: [1,2,3,4,5]
   - type: 2
     i18nKey: SenderName_VIP.Notification
     image: a4fc5915-acc1-4431-a205-523ce491af78.png
     withLiveInfo: false
     defaultLayoutType: 0
+    msgType: [6]
   - type: 3
     i18nKey: SenderName_Onlive.Notification
     image: 730fe2ba-4fe6-4071-beb2-f176e3b5387e.png
     withLiveInfo: true
     defaultLayoutType: 1
+    msgType: [7]
   - type: 4
     i18nKey: Streamer_butler
     image: 563fde98-b886-43dd-b1ca-3f50744e3612.png
     withLiveInfo: false
     defaultLayoutType: 2
+    msgType: [8,9,10,11]
+  - type: 5
+    i18nKey: shopping_notification
+    image: Shop_Icon.png
+    withLiveInfo: false
+    defaultLayoutType: 3
+    msgType: [12,13]
+msgTypeConfig:
+  - type: 1
+    displayNameI18nKey: SenderName_Official.Notification
+  - type: 2
+    displayNameI18nKey: SenderName_Official.Notification
+  - type: 3
+    displayNameI18nKey: SenderName_Official.Notification
+  - type: 4
+    displayNameI18nKey: SenderName_Official.Notification
+  - type: 5
+    displayNameI18nKey: SenderName_Official.Notification
+  - type: 6
+    displayNameI18nKey: SenderName_VIP.Notification
+  - type: 7
+    displayNameI18nKey: SenderName_Onlive.Notification
+  - type: 8
+    displayNameI18nKey: Streamer_butler
+  - type: 9
+    displayNameI18nKey: Streamer_butler
+  - type: 10
+    displayNameI18nKey: Streamer_butler
+  - type: 11
+    displayNameI18nKey: Streamer_butler
+  - type: 12
+    displayNameI18nKey: shopping_notification_approval_title
+  - type: 13
+    displayNameI18nKey: shopping_notification_order_created_title
 tags:
   - type: 1
     token: "butler_type_streamer"
