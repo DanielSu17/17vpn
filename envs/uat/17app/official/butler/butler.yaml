@@ -1,3 +1,26 @@
+################################################################################################################################
+# Category represents a group ofnotification messages, and msgType represents the message type within that group. 
+#
+# 1. When adding a new category, you need to provide the corresponding information in the `categories` and `categoryConfig` sections.
+#    It is mandatory to specify a msgType for each category, as it classifies the messages under the respective category.
+# [Example]
+# categories:
+#   - 5
+# categoryConfig:
+#   - type: 5                                                         # category type
+#     i18nKey: shopping_notification                                  # category title
+#     image: Shop_Icon.png                                            # category icon
+#     withLiveInfo: false
+#     msgType: [12,13]               
+# 2. When adding a new msgType, please include the following details.
+# [Example]
+# msgTypeConfig:
+#   - type: 12                                                        # messagg type
+#     displayNameI18nKey: shopping_notification_approval_title        # message title
+#   - type: 13
+#     displayNameI18nKey: shopping_notification_order_created_title
+################################################################################################################################
+
 enableOnlive: true
 onliveHistory: true
 onliveActiveDays: 30
@@ -13,13 +36,13 @@ categoryConfig:
     i18nKey: SenderName_Official.Notification
     image: sys_Avatar2.png
     withLiveInfo: false
-    defaultLayoutType: 0
     # defaultLayoutType defined the layoutType used by client, supported value:
     #   0: Default
     #   1: Onlive
     #   2: Revenue
     #   3: Shop
-    msgType: [1,2,3,4,5]
+    defaultLayoutType: 0
+    # No need to set `msgType` for the `Official` category. The program will retrieve data that is not equal to other msgType.
   - type: 2
     i18nKey: SenderName_VIP.Notification
     image: a4fc5915-acc1-4431-a205-523ce491af78.png
