@@ -51,6 +51,15 @@ sections:
  #   style: 2
  #   more: false
 
+  - id: GroupCall # コラボ配信（GroupCall）
+    name:
+      key: group_stream_v3hotpage
+    enable: true
+    dedup: true
+    minGrids: 2
+    style: 9
+    more: true
+
   - id: Label #武士来舞 デビュー記念配信
     labelID: 2307_jp_bushilive
     name:
@@ -264,14 +273,14 @@ sections:
     category: normal
     orderModel: 2
 
-  - id: GroupCall # コラボ配信（GroupCall）
-    name:
-      key: group_stream_v3hotpage
-    enable: true
-    dedup: true
-    minGrids: 2
-    style: 9
-    more: true
+#  - id: GroupCall # コラボ配信（GroupCall）
+#    name:
+#      key: group_stream_v3hotpage
+#    enable: true
+#    dedup: true
+#    minGrids: 2
+#    style: 9
+#    more: true
 
   - id: Label # アニマル
     labelID: jp_animal
