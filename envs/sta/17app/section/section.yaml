@@ -20,6 +20,7 @@
 # style 9: GroupCall
 # style 10: GroupCall empty style. Client will show the groupCall entry button even if the grids are less than minGrids.
 # style 11: ArchiveVideo (典藏直播)
+# style 12: Incentive system
 
 typeTab:
   displayTypeTab: true
@@ -60,6 +61,11 @@ sections:
     more: true
     category: normal
     orderModel: 1
+  - id: IncentiveSpotlight
+    enable: true
+    style: 12
+    minGrids: 1
+    more: true
   - id: Label #高雄鋼鐵人
     labelID: kaohsiung_steelers
     name:
