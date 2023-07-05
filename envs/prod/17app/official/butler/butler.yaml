@@ -67,6 +67,12 @@ categoryConfig:
     withLiveInfo: false
     defaultLayoutType: 3
     msgType: [12,13]
+  - type: 6
+    i18nKey: SenderName_Violation.Notification
+    image: system_butler.png
+    withLiveInfo: false
+    defaultLayoutType: 4
+    msgType: [14]
 msgTypeConfig:
   - type: 1
     displayNameI18nKey: SenderName_Official.Notification
@@ -94,6 +100,8 @@ msgTypeConfig:
     displayNameI18nKey: shopping_notification_approval_title
   - type: 13
     displayNameI18nKey: shopping_notification_order_created_title
+  - type: 14
+    displayNameI18nKey: SenderName_Violation.Notification
 tags:
   - type: 1
     token: "butler_type_streamer"
