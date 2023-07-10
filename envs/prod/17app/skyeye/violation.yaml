@@ -15,18 +15,7 @@ livestream:
     - livestream_kill_private.information
     - livestream_kill_unauthorized.advertisements
   warn:
-    - livestream_warn_pornography
-    - livestream_warn_gore
-    - livestream_warn_intellectual.property.rights
-    - livestream_warn_illegal.content
     - livestream_warn_app.usage.rules
-    - livestream_warn_inactive
-    - livestream_warn_system
-    - livestream_warn_attire.policy
-    - livestream_warn_insults
-    - livestream_warn_violence
-    - livestream_warn_private.information
-    - livestream_warn_unauthorized.advertisements
 post:
   kill:
     - post_kill_pornography
@@ -84,3 +73,12 @@ archive_video:
     - archive.video_kill_violence
     - archive.video_kill_private.information
     - archive.video_kill_unauthorized.advertisements
+bio:
+  kill:
+    - bio_kill_app.usage.rules
+openID:
+  kill:
+    - openID_kill_app.usage.rules
+highlight:
+  kill:
+    - highlight_kill_app.usage.rules
