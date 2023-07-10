@@ -19,6 +19,25 @@
 # endTime (optional): 彈幕結束時間(23:59:59), 用來控制彈幕的開放時間, 例如: 2022-09-30 (GMT+0800)
 # versionControl: 控制 client 哪些版本可以在列表中看得到這些彈幕, 不設定代表全開放
 barrages:
+  - type: 502008 
+    point: 0
+    enabled: true
+    army: false
+    startTime: 2023-07-10 (GMT+0800)
+    endTime: 2099-05-24 (GMT+0800)
+    regions: 
+      - MY
+      - SG
+      - PH
+      - JP
+      - TW
+      - US
+    versionControl:
+      ios: "3.201.0"
+      android: "2.116.0"
+    key: 2307_sea_barrage
+    animationID: 2307_SEA_barrage2
+
   - type: 502307 
     point: 0
     enabled: true
