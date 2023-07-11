@@ -2,7 +2,7 @@
 # get devices hardware names by using !live log 10 {openID} command in slackbot 
 # 關於 vliver 的設定
 virtualModels:
-  - model: 1
+  - model: 1 #2D
     enabled: true
     versionControl:
       ios: "3.233.0"
@@ -11,19 +11,19 @@ virtualModels:
     unsupportedDevices: 
       - "iphone11,10"
       - "iphone12"
-  - model: 2
+  - model: 2 #3D
     enabled: true
     versionControl:
       ios: "3.235.0"
       android: "2.150.0"
     # 不支援該vliver model 的裝置清單
-    unsupportedDevices: []
-  - model: 3
-    enabled: true
-    # 不支援該vliver model 的裝置清單
     unsupportedDevices: 
       - "iPhone12,1" # vavadeiPhone 11
       - "SM-F7110" # vavadeGalaxy Z Flip3 5G
+  - model: 3
+    enabled: true
+    # 不支援該vliver model 的裝置清單
+    unsupportedDevices: []
 # 單一 vliver 角色檔案上傳大小限制
 characterSizeLimitMB: 20  # maximum: 200MB 
 # 最大可保存數目
