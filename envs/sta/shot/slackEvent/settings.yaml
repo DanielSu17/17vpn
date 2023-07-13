@@ -1,9 +1,15 @@
 watcher_channels:
-  - "C466YU363" # eng-sre
-  - "C13NQ5NKH" # eng-alert
+  - "C0391PS2PE2" # shot_testing_ch
 
 payment_maintain:
-  general_notice: "<@D0456MQ8S73> @eng-web-billing"
-  rules: 
+  general_notify: ""
+  notify_rules: 
     - regex: "維護" 
-      notice_slack_ids: "@skyeye"
+      slack_ids: ""
+
+third_party:
+  notify_rules: 
+    - regex: "Redis Scheduled Maintenance" 
+      slack_ids: ""
+    - regex: "Zendesk Maintenance"
+      slack_ids: ""
